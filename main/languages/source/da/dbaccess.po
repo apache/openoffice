@@ -1,0 +1,3616 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.String.Text
+msgid  "Tried to open the table $name$."
+msgstr "Forsøgte at åbne tabellen $name$."
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_INVALID.String.Text
+msgid  "No connection could be established."
+msgstr "Der kunne ikke etableres forbindelse."
+
+#: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
+msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
+msgstr "Tabellen $name$ findes allerede. Den er ikke synlig, da den er filtreret fra."
+
+#: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
+msgid  "You have no write access to the configuration data the object is based on."
+msgstr "Du har ikke skriveadgang til objektets konfigurationsdata."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
+msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgstr "Der kunne ikke oprettes forbindelse til den eksterne datakilde. Der opstod en ukendt fejl. Driveren er sandsynligvis defekt."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
+msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgstr "Der kunne ikke oprettes forbindelse til den eksterne datakilde. Der blev ikke fundet nogen SDBC-driver til den angivne URL."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
+msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgstr "Der kunne ikke oprettes forbindelse til den eksterne datakilde. SDBC-driverhåndteringen kunne ikke indlæses."
+
+#: source/core/resource/strings.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "Formular"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Rapport"
+
+#: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
+msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
+msgstr "Datakilden blev ikke gemt. Brug grænsefladen XStorable til at gemme datakilden."
+
+#: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr "Den givne kommando er ikke en SELECT-sætning.\nKun forespørgsler er tilladt."
+
+#: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
+msgid  "No values were modified."
+msgstr "Ingen værdier blev modificeret."
+
+#: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
+msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgstr "Værdier kunne ikke indsættes. XRowUpdate-grænsefladen er ikke understøttet af ResultSet."
+
+#: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
+msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgstr "Værdier kunne ikke indsættes. XResultSetUpdate-grænsefladen er ikke understøttet af ResultSet."
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
+msgid  "Values could not be modified, due to a missing condition statement."
+msgstr "Værdier kunne ikke ændres på grund af manglende betingelsessætning."
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_ADD.String.Text
+msgid  "The adding of columns is not supported."
+msgstr "Tilføjelse af kolonner er ikke understøttet."
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_DROP.String.Text
+msgid  "The dropping of columns is not supported."
+msgstr "Sletning af kolonner er ikke understøttet."
+
+#: source/core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.String.Text
+msgid  "The WHERE condition could not be created for the primary key."
+msgstr "WHERE-betingelsen kunne ikke oprettes for primærnøglen."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.String.Text
+msgid  "The column does not support the property '%value'."
+msgstr "Kolonnen understøtter ikke egenskaben '%value'."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.String.Text
+msgid  "The column is not searchable!"
+msgstr "Kolonnen er ikke søgbar!"
+
+#: source/core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.String.Text
+msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "Værdien af kolonnerne er ikke af typen Sequence<sal_Int8>."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.String.Text
+msgid  "The column is not valid."
+msgstr "Kolonnen er ikke gyldig."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.String.Text
+msgid  "The column '%name' must be visible as a column."
+msgstr "Kolonnen '%name' skal være synlig som en kolonne."
+
+#: source/core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.String.Text
+msgid  "The interface XQueriesSupplier is not available."
+msgstr "Grænsefladen XQueriesSupplier er ikke tilgængelig."
+
+#: source/core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.String.Text
+msgid  "The driver does not support this function."
+msgstr "Driveren understøtter ikke denne funktion."
+
+#: source/core/resource/strings.src#RID_STR_NO_ABS_ZERO.String.Text
+msgid  "An 'absolute(0)' call is not allowed."
+msgstr "Et 'absolute(0)'-kald er ikke tilladt."
+
+#: source/core/resource/strings.src#RID_STR_NO_RELATIVE.String.Text
+msgid  "Relative positioning is not allowed in this state."
+msgstr "Relativ placering er ikke tilladt i denne tilstand."
+
+#: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
+msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgstr "En række kan ikke opdateres, når ResultSet placeres efter sidste række."
+
+#: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
+msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgstr "En ny række kan ikke indsættes, når ResultSet ikke først er flyttet til den indsattte række."
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
+msgid  "A row cannot be modified in this state"
+msgstr "En række kan ikke ændres i denne tilstand"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETEROW.String.Text
+msgid  "A row cannot be deleted in this state."
+msgstr "En række kan ikke slettes i denne tilstand."
+
+#: source/core/resource/strings.src#RID_STR_NO_TABLE_RENAME.String.Text
+msgid  "The driver does not support table renaming."
+msgstr "Driveren understøtter ikke tabelomdøbning."
+
+#: source/core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.String.Text
+msgid  "The driver does not support the modification of column descriptions."
+msgstr "Driveren understøtter ikke ændring af kolonnebeskrivelser."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the name."
+msgstr "Driveren understøtter ikke ændring af kolonnebeskrivelser ved at ændre navnet."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the index."
+msgstr "Driveren understøtter ikke ændring af kolonnebeskrivelser ved at ændre indekset."
+
+#: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "Filen \"$file$\" findes ikke."
+
+#: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
+msgid  "There exists no table named \"$table$\"."
+msgstr "Der eksisterer ingen tabeller med navnet \"$tabel$\"."
+
+#: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
+msgid  "There exists no query named \"$table$\"."
+msgstr "Der eksisterer ingen forespørgsel med navnet \"$tabel$\"."
+
+#: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
+msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgstr "Der er tabeller i databasen, hvis navne er i konflikt med navnene på eksisterende forespørgsler. For at bruge alle forespørgsler og tabeller fuldt ud skal du være sikker på, at de har unikke navne."
+
+#: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr "SQL-kommandoen, der fører til denne fejl, er:\n\n$command$"
+
+#: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The SQL command does not describe a result set."
+msgstr "SQL-kommandoen beskriver ikke et resultatsæt."
+
+#: source/core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.String.Text
+msgid  "The name must not be empty."
+msgstr "Navnet må ikke være tomt."
+
+#: source/core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.String.Text
+msgid  "The container cannot contain NULL objects."
+msgstr "Containeren kan ikke indeholde NULL-objekter."
+
+#: source/core/resource/strings.src#RID_STR_NAME_ALREADY_USED.String.Text
+msgid  "There already is an object with the given name."
+msgstr "Der allerede er et objekt med det givne navn."
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.String.Text
+msgid  "This object cannot be part of this container."
+msgstr "Dette objekt kan ikke være del af denne container."
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.String.Text
+msgid  "The object already is, with a different name, part of the container."
+msgstr "Objektet er allerede, med et andet navn, del af containeren."
+
+#: source/core/resource/strings.src#RID_STR_NAME_NOT_FOUND.String.Text
+msgid  "Unable to find the document '$name$'."
+msgstr "Kan ikke finde dokumentet '$name$'."
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr "Kunne ikke gemme dokumentet i $location$: \n$message$"
+
+#: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
+msgid  "Error accessing data source '$name$':\\n$error$"
+msgstr "Fejl ved adgang til datakilde '$name$':\n$error$"
+
+#: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "Der eksisterer ingen mappe med navnet \"$folder$\"."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
+msgid  "Cannot delete the before-first or after-last row."
+msgstr "Kan ikke slette rækken før-første eller efter-sidste."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.String.Text
+msgid  "Cannot delete the insert-row."
+msgstr "Cannot slet den indsæt-Række."
+
+#: source/core/resource/strings.src#RID_STR_RESULT_IS_READONLY.String.Text
+msgid  "Result set is read only."
+msgstr "Resultatsættet er skrivebeskyttet."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.String.Text
+msgid  "DELETE privilege not available."
+msgstr "DELETE-privilegium er ikke til rådighed."
+
+#: source/core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.String.Text
+msgid  "Current row is already deleted."
+msgstr "Aktuel række er allerede slettet."
+
+#: source/core/resource/strings.src#RID_STR_UPDATE_FAILED.String.Text
+msgid  "Current row could not be updated."
+msgstr "Aktuel række kunne opdateres."
+
+#: source/core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.String.Text
+msgid  "INSERT privilege not available."
+msgstr "INSERT-privilegium er ikke til rådighed."
+
+#: source/core/resource/strings.src#RID_STR_INTERNAL_ERROR.String.Text
+msgid  "Internal error: no statement object provided by the database driver."
+msgstr "Intern fejl: Intet sætningsobjekt leveret af databasedriveren."
+
+#: source/core/resource/strings.src#RID_STR_EXPRESSION1.String.Text
+msgid  "Expression1"
+msgstr "Udtryk1"
+
+#: source/core/resource/strings.src#RID_STR_NO_SQL_COMMAND.String.Text
+msgid  "No SQL command was provided."
+msgstr "Ingen SQL-kommando blev givet."
+
+#: source/core/resource/strings.src#RID_STR_INVALID_INDEX.String.Text
+msgid  "Invalid column index."
+msgstr "Ugyldigt kolonneindeks."
+
+#: source/core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.String.Text
+msgid  "Invalid cursor state."
+msgstr "Ugyldig cursor-tilstand."
+
+#: source/core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.String.Text
+msgid  "The cursor points to before the first or after the last row."
+msgstr "Cursoren peger før den første eller efter den sidste række."
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.String.Text
+msgid  "The rows before the first and after the last row don't have a bookmark."
+msgstr "Rækkerne før den første og efter den sidste række har ikke et bogmærke."
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.String.Text
+msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgstr "Den aktuelle række er slettet og har derfor ikke et bogmærke."
+
+#: source/core/resource/strings.src#RID_STR_NO_EMBEDDING.String.Text
+msgid  "Embedding of database documents is not supported."
+msgstr "Indlejring af databasedokumenter er ikke understøttet."
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "Der blev bedt om en forbindelse for følgende URL: \"$name$\"."
+
+#: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
+msgid  "The extension is not installed."
+msgstr "Udvidelsen er ikke installeret."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+msgid  "Database ~name"
+msgstr "Database ~navn"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+msgid  "User settings"
+msgstr "Brugerindstillinger"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+msgid  "~Control user"
+msgstr "~Kontrolbruger"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+msgid  "~Administrator"
+msgstr "~Administrator"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+msgid  "~Domain user"
+msgstr "~Domænebruger"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+msgid  "P~assword..."
+msgstr "~Adgangskode..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+msgid  "~Password..."
+msgstr "~Adgangskode..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+msgid  "Passwo~rd..."
+msgstr "Adgangs~kode..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+msgid  "~Backup file"
+msgstr "~Sikkerhedskopifil"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+msgid  "Database settings"
+msgstr "Databaseindstillinger"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE"
+msgstr "S~YSDEVSPACE"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "TRANSACTI~ONLOG"
+msgstr "TRANSACTI~ONLOG"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE"
+msgstr "DATAD~EVSPACE"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+msgid  "Transaction ~file (MB)"
+msgstr "Transaktions~fil (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+msgid  "Data~base size (MB)"
+msgstr "Data~basestørrelse (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "Data~bufferstørrelse (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+msgid  "Backup file information"
+msgstr "Information om fil til sikkerhedskopiering"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+msgid  "Create New Adabas D Database"
+msgstr "Opret ny Adabas D-database"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+msgid  "No entry could be written in the configuration file."
+msgstr "Intet element kan skrives i konfigurationsfilen."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+msgid  "An error occurred as the DB files were being created."
+msgstr "Der opstod en fejl, mens DB-filerne blev oprettet."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+msgid  "An error occurred as the system tables were being created."
+msgstr "Der opstod en fejl, mens systemtabellerne blev oprettet."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+msgid  "The backup file entered does not exist."
+msgstr "Den indtastede sikkerhedskopifil findes ikke."
+
+#: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "Den fuldt kvalificerede fil må ikke være længere end \\'#\\' tegn."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+msgid  "The administrator and the control user cannot have the same name!"
+msgstr "Administratoren og kontrolbrugeren kan ikke have det samme navn!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+msgid  "No name has been entered for the $name$ file!"
+msgstr "Der er ikke blevet indtastet noget navn til $name$-filen!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+msgid  "You have to have administrator rights to create a new database!"
+msgstr "Du skal have administratorrettigheder for at oprette en ny database!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+msgid  "The specified file name or directory does not exist."
+msgstr "Det specificerede filnavn eller mappe findes ikke."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "Ingen ny database kan oprettes.\nKontroller venligst din  Adabas D Installation, specielt variablene \"DBROOT\" og \"DBWORK\"."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "Advarsel!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+msgid  "Creating database files."
+msgstr "Oprette databasefiler."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+msgid  "Creating database configuration file."
+msgstr "Opret fil for database konfiguration."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+msgid  "Starting database for the first time."
+msgstr "Start af en database for første gang."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+msgid  "The name entered already exists."
+msgstr "Det indtastede navn findes allerede."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+msgid  "No default names could be set for the database files. The total length is more than 40 characters."
+msgstr "Ingen standardnavne kunne indstilles for databasefilerne. Den totale længde er over 40 tegn."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+msgid  "No default names could be set for the database files. There is no write access."
+msgstr "Ingen standardnavne kunne indstilles for databasefilerne. Der er ingen skriveadgang."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+msgid  "The current database need to be converted. Please insert control user  and password."
+msgstr "Den aktuelle database skal konverteres. Indtast venligst brugernavn  og adgangskode."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgstr "Mellemrum er ikke tilladt i adgangskoden. Indtast en ny adgangskode."
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+msgid  "Database Document Macro Migration"
+msgstr "Database dokument makromigrering"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+msgid  "Prepare"
+msgstr "Forbered"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+msgid  "Backup Document"
+msgstr "Sikkerhedskopier dokument"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+msgid  "Migrate"
+msgstr "Flyt"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+msgid  "Summary"
+msgstr "Sammenfatning"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+msgid  "Welcome to the Database Macro Migration Wizard"
+msgstr "Velkommen til migreringsguiden for database-makro"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr "Denne guide vil lede dig gennem migreringen af dine makroer og scripts.\n\nNår du har færdiggjort guiden, vil alle makroer og scripts som tidligere var indlejret i dine formularer og rapporter være flyttet til databasedokumentet. I denne gennemgang vil biblioteker om nødvendigt blive omdøbt.\n\nHvis dine formularer og rapporter indeholder referencer til disse makroer og scripts, vil de blive justeret hvor det er muligt.\n\nFør denne migrering kan begynde, skal alle formularer, rapporter, forespørgsler og tabeller være lukket. Tryk 'Næste'  for at gøre det."
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgstr "Ikke alle objekter kunne lukkes. Luk dem manuelt og genstart guiden."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+msgid  "Backup your Document"
+msgstr "Sikkerhedskopier dit dokument"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgstr "For at muliggøre at man kan gå tilbage til tilstanden før migreringen, vil databasedokumentet blive sikkerhedskopieret til en placering efter dit valg. Enhver ændring, guiden foretager, vil ske i det originale originale dokument. Sikkerhedskopien vil forblive urørt."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+msgid  "Save To:"
+msgstr "Gem til:"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+msgid  "Browse ..."
+msgstr "Gennemse ..."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr "Tryk 'Næste' for at gemme en kopi af dit dokument, og  begynde flytningen."
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+msgid  "Migration Progress"
+msgstr "Migreringsfremgang"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgstr "Databasedokumentet indeholder $forms$ formularer og $report$ rapporter,som i øjeblikket behandles:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+msgid  "Current object:"
+msgstr "Aktuelle objekt:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+msgid  "Current progress:"
+msgstr "Aktuel fremgang:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+msgid  "Overall progress:"
+msgstr "Total fremgang:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+msgid  "document $current$ of $overall$"
+msgstr "dokument $current$ af $overall$"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgstr "Alle formularer og rapporter er behandlet. Tryk på 'Næste' for at vise en detaljeret opsummering."
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+msgid  "Summary"
+msgstr "Sammenfatning"
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
+msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgstr "Migreringen lykkedes. Herunder er en log med de handlinger, der er blevet udført i dit dokument."
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
+msgid  "The migration was not successful. Examine the migration log below for details."
+msgstr "Migreringen lykkedes ikke. Undersøg migreringsloggen forneden for detaljer."
+
+#: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+msgid  "Form '$name$'"
+msgstr "Formular '$name$'"
+
+#: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+msgid  "Report '$name$'"
+msgstr "Rapport '$name$'"
+
+#: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+msgid  "document $current$ of $overall$"
+msgstr "dokument $current$ af $overall$"
+
+#: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+msgid  "Database Document"
+msgstr "Databasedokument"
+
+#: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+msgid  "saved copy to $location$"
+msgstr "gemt kopi til $location$"
+
+#: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+msgid  "migrated $type$ library '$old$' to '$new$'"
+msgstr "flyttet $type$ bibliotek '$old$' til '$new$'"
+
+#: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
+msgid  "$type$ library '$library$'"
+msgstr "$type$ bibliotek '$library$'"
+
+#: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
+msgid  "migrating libraries ..."
+msgstr "migrerer biblioteker ..."
+
+#: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+msgid  "%PRODUCTNAME Basic"
+msgstr "%PRODUCTNAME Basic"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+msgid  "JavaScript"
+msgstr "JavaScript"
+
+#: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+msgid  "BeanShell"
+msgstr "BeanShell"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+msgid  "Java"
+msgstr "Java"
+
+#: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+msgid  "Python"
+msgstr "Python"
+
+#: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+msgid  "dialog"
+msgstr "dialog"
+
+#: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
+msgid  "Error(s)"
+msgstr "Fejl"
+
+#: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
+msgid  "Warnings"
+msgstr "Advarsler"
+
+#: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
+msgid  "caught exception: "
+msgstr "fandt undtagelse:"
+
+#: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
+msgid  "You need to choose a backup location other than the document location itself."
+msgstr "Du skal vælge en anden placering til sikkerhedskopien end filens egen placering."
+
+#: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
+msgid  "Invalid number of initialization arguments. Expected 1."
+msgstr "Ulovligt antal initialiseringsargumenter. Forventede 1."
+
+#: source/ext/macromigration/macromigration.src#STR_NO_DATABASE.String.Text
+msgid  "No database document found in the initialization arguments."
+msgstr "Intet databasedokument fundet i initialiseringsargumenterne."
+
+#: source/ext/macromigration/macromigration.src#STR_NOT_READONLY.String.Text
+msgid  "Not applicable to read-only documents."
+msgstr "Kan ikke anvendes til skrivebeskyttede dokumenter."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgstr "Du kan ikke give en tabel og en forespørgsel det samme navn. Brug et navn, som endnu ikke er brugt af en forespørgsel eller tabel."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+msgid  "Table"
+msgstr "Tabel"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+msgid  "Query"
+msgstr "Forespørgsel"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+msgid  "The given connection is no valid query and/or tables supplier."
+msgstr "Den givne forbindelse er ikke en gyldig forespørgsel- og/eller tabelleverandør."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+msgid  "The given object is no table object."
+msgstr "Det givne objekt er ikke et tabelobjekt."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgstr "Ugyldig kompositionstype - har brug for en værdi fra com.sun.star.sdb.tools.CompositionType"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
+msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgstr "Ugyldig kommandotype - kun TABLE og QUERY fra com.sun.star.sdb.CommandType er tilladt."
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+msgid  "Create Form in Design View..."
+msgstr "Opret formular i designvisning..."
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+msgid  "Use Wizard to Create Form..."
+msgstr "Brug guide til at oprette formular..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+msgid  "Use Wizard to Create Report..."
+msgstr "Brug guide til at oprette rapport..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+msgid  "Create Report in Design View..."
+msgstr "Opret rapport i designvisning..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+msgid  "Create Query in Design View..."
+msgstr "Opret forespørgsel i designvisning..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+msgid  "Create Query in SQL View..."
+msgstr "Opret forespørgsel i SQL-visning..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+msgid  "Use Wizard to Create Query..."
+msgstr "Brug guide til at oprette forespørgsel..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+msgid  "Create Table in Design View..."
+msgstr "Opret tabel i designvisning..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+msgid  "Use Wizard to Create Table..."
+msgstr "Brug guide til at oprette tabel..."
+
+#: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+msgid  "Create View..."
+msgstr "Opret visning..."
+
+#: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+msgid  "Forms"
+msgstr "Formularer"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+msgid  "Reports"
+msgstr "Rapporter"
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+msgid  "Form..."
+msgstr "Formular..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+msgid  "Report..."
+msgstr "Rapporter..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+msgid  "View (Simple)..."
+msgstr "Visning (simpel)..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+msgid  "Paste Special..."
+msgstr "Indsæt speciel..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+msgid  "Delete"
+msgstr "Slet"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+msgid  "Rename"
+msgstr "Omdøb"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+msgid  "Edit"
+msgstr "Rediger"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+msgid  "Edit in SQL View..."
+msgstr "Rediger i SQL-visning..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+msgid  "Open"
+msgstr "Åbn"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+msgid  "Create as View"
+msgstr "Opret som visning"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Form Wizard..."
+msgstr "Formularguide..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+msgid  "Report..."
+msgstr "Rapport..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Report Wizard..."
+msgstr "Rapportguide..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+msgid  "Select All"
+msgstr "Marker alt"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MenuItem.Text
+msgid  "~Database"
+msgstr "~Database"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MenuItem.Text
+msgid  "Properties..."
+msgstr "Egenskaber"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MenuItem.Text
+msgid  "Connection Type..."
+msgstr "Forbindelsestype"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MenuItem.Text
+msgid  "Advanced Settings..."
+msgstr "Avancerede indstillinger"
+
+#: source/ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.String.Text
+msgid  "Do you want to delete the data source '%1'?"
+msgstr "Vil du slette datakilden '%1'?"
+
+#: source/ui/app/app.src#STR_APP_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base"
+msgstr "- %PRODUCTNAME Base"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a report."
+msgstr "Guiden vil hjælpe dig gennem de nødvendige trin for at oprette en rapport."
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
+msgid  "Create a form by specifying the record source, controls, and control properties."
+msgstr "Opret en formular ved at angive datapostkilden, kontrolelementer og kontrolelementegenskaber."
+
+#: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
+msgid  "Create a report by specifying the record source, controls, and control properties."
+msgstr "Opret en rapport med ved at angive datakilden, kontrolelementerne og kontrolelementegenskaberne."
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a form."
+msgstr "Guiden vil hjælpe dig gennem de nødvendige trin for at oprette en formular."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
+msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgstr "Opret en forespørgsel ved at angive filtre, indtastningstabeller, feltnavne og egenskaber for sortering eller gruppering."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
+msgid  "Create a query  entering an SQL statement directly."
+msgstr "Opret en forespørgsel ved at indtaste en SQL-sætning direkte."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a query."
+msgstr "Guiden vil hjælpe dig gennem de nødvendige trin for at oprette en forespørgsel."
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a table by specifying the field names and properties, as well as the data types."
+msgstr "Opret en tabel ved at angive feltnavnene og egenskaber såvel som datatyper."
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
+msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgstr "Vælg fra et udvalg af prøvetabeller til personlig og forretningsbrug, og tilpas og opret en tabel udfra disse."
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a view by specifying the tables and field names you would like to have visible."
+msgstr "Opret en visning ved at angive tabel- og feltnavne, som skal være synlige."
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
+msgid  "Opens the view wizard"
+msgstr "Åbner Visningsguiden"
+
+#: source/ui/app/app.src#STR_DATABASE.String.Text
+msgid  "Database"
+msgstr "Database"
+
+#: source/ui/app/app.src#STR_TASKS.String.Text
+msgid  "Tasks"
+msgstr "Opgaver"
+
+#: source/ui/app/app.src#STR_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "Beskrivelse"
+
+#: source/ui/app/app.src#STR_PREVIEW.String.Text
+msgid  "Preview"
+msgstr "Forhåndsvisning"
+
+#: source/ui/app/app.src#STR_DISABLEPREVIEW.String.Text
+msgid  "Disable Preview"
+msgstr "Deaktiver forhåndsvisning"
+
+#: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
+msgid  "None"
+msgstr "Ingen"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MenuItem.Text
+msgid  "Document Information"
+msgstr "Dokumentinformation"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
+msgid  "Document"
+msgstr "Dokument"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "Formular"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Rapport"
+
+#: source/ui/app/app.src#STR_FRM_LABEL.String.Text
+msgid  "F~orm name"
+msgstr "Formular~navn"
+
+#: source/ui/app/app.src#STR_RPT_LABEL.String.Text
+msgid  "~Report name"
+msgstr "~Navn på rapport"
+
+#: source/ui/app/app.src#STR_FOLDER_LABEL.String.Text
+msgid  "F~older name"
+msgstr "~Mappenavn"
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.String.Text
+msgid  "The document contains forms or reports with embedded macros."
+msgstr "Dokumentet indeholder formularer eller rapporter med indlejrede makroer."
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr "Scripter og makroer bør fremover være indlejret  i databasedokumentet.\n\nDu kan fortsætte med at bruge dit dokument som hidtil, men det anbefales at migrere scripter og makroer. Menupunktet 'Funktioner - Migrer scripter og makroer ...' vil assistere dig med det.\n\n. Bemærk, at det ikke vil være muligt at indlejre makroer eller scripter i databasedokumentet før migreringen er gennemført."
+
+#: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
+msgid  "Embedded database"
+msgstr "Indlejret database"
+
+#: source/ui/app/app.src#RID_STR_NO_DIFF_CAT.String.Text
+msgid  "You cannot select different categories."
+msgstr "Du kan ikke markere forskellige kategorier."
+
+#: source/ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.String.Text
+msgid  "Unsupported object type found ($type$)."
+msgstr "Fundet objekttype, som ikke er understøttet: ($type$)."
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+msgid  "Do you want to delete the selected data?"
+msgstr "Skal de markerede data slettes?"
+
+#: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+msgid  "(filtered)"
+msgstr "(filtreret)"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "Fejl ved bestemmelse af sorteringskriterierne"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "Fejl ved bestemmelse af filtreringskriterierne"
+
+#: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+msgid  "Connection lost"
+msgstr "Forbindelsen blev afbrudt"
+
+#: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+msgid  "Queries"
+msgstr "Forespørgsler"
+
+#: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+msgid  "Tables"
+msgstr "Tabeller"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "Rediger ~databasefil..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "Registerede databaser ..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "A~fbryd forbindelse"
+
+#: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+msgid  "Confirm Deletion"
+msgstr "Bekræft sletning"
+
+#: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+msgid  "Do you want to delete the table '%1'?"
+msgstr "Skal tabellen '%1' slettes?"
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+msgid  "The query already exists. Do you want to delete it?"
+msgstr "Forespørgslen findes allerede. Skal den slettes?"
+
+#: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database has been lost. Do you want to reconnect?"
+msgstr "Forbindelsen til databasen er tabt! Skal den genoprettes?"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+msgid  "Warnings encountered"
+msgstr "Advarsler foreligger"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+msgid  "While retrieving the tables, warnings were reported by the database connection."
+msgstr "Ved modtagelse af tabellerne blev der modtaget advarsler fra databaseforbindelsen."
+
+#: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+msgid  "Connecting to \"$name$\" ..."
+msgstr "Opretter forbindelse til \"$name$\" ..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+msgid  "Loading query $name$ ..."
+msgstr "Indlæser forespørgslen $name$ ..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+msgid  "Loading table $name$ ..."
+msgstr "Indlæser tabellen $name$ ..."
+
+#: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+msgid  "No table format could be found."
+msgstr "Det var ikke muligt at finde noget tabelformat."
+
+#: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Der kunne ikke oprettes forbindelse til datakilden \"$name$\"."
+
+#: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+msgid  "Rebuild"
+msgstr "Genopbyg"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+msgid  "Column ~Format..."
+msgstr "Kolonne~format..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+msgid  "Copy Column D~escription"
+msgstr "Kopier kolonneb~eskrivelse"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+msgid  "Table Format..."
+msgstr "Tabelformatering..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+msgid  "Row Height..."
+msgstr "Rækkehøjde..."
+
+#: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+msgid  "Undo: Data Input"
+msgstr "Fortryd: Dataindtastning"
+
+#: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+msgid  "Save current record"
+msgstr "Gem aktuel datapost"
+
+#: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+msgid  "Query #"
+msgstr "Forespørgsel #"
+
+#: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "Tabel #"
+
+#: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+msgid  "View #"
+msgstr "Visning #"
+
+#: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+msgid  "The name \"#\" already exists."
+msgstr "Navnet \"#\" findes allerede."
+
+#: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+msgid  "No matching column names were found."
+msgstr "Der kunne ikke findes noget passende kolonnenavn!"
+
+#: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+msgid  "An error occurred. Do you want to continue copying?"
+msgstr "Der er opstået en fejl ! Vil du fortsætte kopieringen?"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+msgid  "Data source table view"
+msgstr "Tabeloversigt over datakilder"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+msgid  "Shows the selected table or query."
+msgstr "Viser den valgte tabel eller forespørgsel."
+
+#: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "Tabel #"
+
+#: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+msgid  "Modify SQL statement(s)"
+msgstr "Rediger SQL-sætning"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+msgid  "Table name"
+msgstr "Tabelnavn"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+msgid  "Insert data"
+msgstr "Indsæt data"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+msgid  "Delete data"
+msgstr "Slet data"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+msgid  "Modify data"
+msgstr "Modificer data"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+msgid  "Alter structure"
+msgstr "Modificer struktur"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+msgid  "Read data"
+msgstr "Læs data"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+msgid  "Modify references"
+msgstr "Modificer referencer"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+msgid  "Drop structure"
+msgstr "Slet struktur"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+msgid  "Sort Ascending"
+msgstr "Sorter stigende"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+msgid  "Sort Descending"
+msgstr "Sorter faldende"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr "Det var ikke muligt at oprette en forbindelse til SDBC driver håndteringen (#servicename#)."
+
+#: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+msgid  "A driver is not registered for the URL #connurl#."
+msgstr "Der er ikke registeret en driver for URL'en #connurl#!"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+msgid  "No connection could be established for the URL #connurl#."
+msgstr "Det var ikke muligt at oprette forbindelse til URL #connurl#."
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+msgid  "Please check the current settings, for example user name and password."
+msgstr "Kontroller venligst de aktuelle indstillinger for eksempel brugernavn og adgangskode."
+
+#: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+msgid  "Successfully connected, but information about database tables is not available."
+msgstr "Forbindelsen er blevet oprettet; men det var ikke muligt at hente informationer om tabeller i databasen."
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+msgid  "All tables"
+msgstr "Alle tabeller"
+
+#: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+msgid  "All views"
+msgstr "Alle tabelvisninger"
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+msgid  "All tables and views"
+msgstr "Alle tabeller og tabelvisninger"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.ModalDialog.Text
+msgid  "Indexes"
+msgstr "Indekser"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.ToolBoxItem.Text
+msgid  "New Index"
+msgstr "Nyt indeks"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.ToolBoxItem.Text
+msgid  "Delete Current Index"
+msgstr "Slet aktuelt indeks"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.ToolBoxItem.Text
+msgid  "Rename Current Index"
+msgstr "Omdøb aktuelt indeks"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.ToolBoxItem.Text
+msgid  "Save Current Index"
+msgstr "Gem aktuelt indeks"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.ToolBoxItem.Text
+msgid  "Reset Current Index"
+msgstr "Nulstil aktuelt indeks"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FixedLine.Text
+msgid  "Index details"
+msgstr "Indeksoplysninger"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FixedText.Text
+msgid  "Index identifier:"
+msgstr "Indeksidentifikator:"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CheckBox.Text
+msgid  "~Unique"
+msgstr "~Entydig"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FixedText.Text
+msgid  "Fields"
+msgstr "Felter"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PushButton.Text
+msgid  "~Close"
+msgstr "~Luk"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.String.Text
+msgid  "Sort order"
+msgstr "Sorteringsrækkefølge"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.String.Text
+msgid  "Index field"
+msgstr "Indeksfelt"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.String.Text
+msgid  "Ascending"
+msgstr "Stigende"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.String.Text
+msgid  "Descending"
+msgstr "Faldende"
+
+#: source/ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.String.Text
+msgid  "Do you really want to delete the index '$name$'?"
+msgstr "Er du sikker på, at du vil slette indekset '$name$'?"
+
+#: source/ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.String.Text
+msgid  "index"
+msgstr "indeks"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Title
+msgid  "Save Index"
+msgstr "Gem Indeks"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Message
+msgid  "The index must contain at least one field."
+msgstr "Indekset skal mindst indeholde ét felt."
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Title
+msgid  "Exit Index Design"
+msgstr "Afslut Indeks Design"
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Message
+msgid  "Do you want to save the changes made to the current index?"
+msgstr "Vil du stadig gemme ændringerne af det aktuelle indeks?"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
+msgid  "There is already another index named \"$name$\"."
+msgstr "Der findes allerede et andet indeks ved navn \"$name$\"."
+
+#: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "I en indeksdefinition må hver tabelkolonne højst forekomme en gang, men du har brugt kolonnen \"$name$\" to gange."
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
+msgid  "~Parameters"
+msgstr "~Parametre"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FixedText.Text
+msgid  "~Value"
+msgstr "~Værdi"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PushButton.Text
+msgid  "~Next"
+msgstr "~Næste"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.CancelButton.Text
+msgid  "Parameter Input"
+msgstr "Parameterindtastning"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "Indtastningen kunne ikke konverteres til en gyldig værdi for kolonnen \"$name$\""
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
+msgid  "%PRODUCTNAME Base"
+msgstr "%PRODUCTNAME Base"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
+msgid  "Details"
+msgstr "Detaljer"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
+msgid  "Error ~list:"
+msgstr "~Fejlliste:"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FixedText.Text
+msgid  "~Description:"
+msgstr "~Beskrivelse:"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.String.Text
+msgid  "SQL Status"
+msgstr "SQL-status"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.String.Text
+msgid  "Error code"
+msgstr "Fejlkode"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
+msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr "En hyppig årsag til denne fejl er en upassende indstilling af tegnsæt for databasens sprog. Kontroller indstillingen ved at vælge Rediger - Database - Egenskaber."
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
+msgid  "Error"
+msgstr "Fejl"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.String.Text
+msgid  "Warning"
+msgstr "Advarsel"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.String.Text
+msgid  "Information"
+msgstr "Information"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.String.Text
+msgid  "Details"
+msgstr "Detaljer"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.ModalDialog.Text
+msgid  "Standard Filter"
+msgstr "Standardfilter"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "OR"
+msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "OR"
+msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "Feltnavn"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FixedText.Text
+msgid  "Condition"
+msgstr "Betingelse"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FixedText.Text
+msgid  "Value"
+msgstr "Værdi"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FixedText.Text
+msgid  "Operator"
+msgstr "Operator"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FixedLine.Text
+msgid  "Criteria"
+msgstr "Kriterier"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.String.Text
+msgid  "- none -"
+msgstr "- ingen -"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
+msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;som;ikke som;tom;ikke tom"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
+msgid  "Relations"
+msgstr "Relationer"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "Involverede tabeller"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "Involverede felter"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FixedLine.Text
+msgid  "Update options"
+msgstr "Opdateringsindstillinger"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RadioButton.Text
+msgid  "~No action"
+msgstr "~Ingen handling"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RadioButton.Text
+msgid  "~Update cascade"
+msgstr "~Opdater kaskade"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "Angiv ~null (ingen værdi)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "Angiv ~standard"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
+msgid  "Delete options"
+msgstr "Sletningsindstillinger"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RadioButton.Text
+msgid  "~No action"
+msgstr "~Ingen handling"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RadioButton.Text
+msgid  "Delete ~cascade"
+msgstr "Slet ~kaskade"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "Angiv ~null (ingen værdi)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "Angiv ~standard"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.ModalDialog.Text
+msgid  "Sort Order"
+msgstr "Sorteringsrækkefølge"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "stigende"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "descending"
+msgstr "faldende"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "stigende"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "descending"
+msgstr "faldende"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "stigende"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "descending"
+msgstr "faldende"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "Feltnavn"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FixedText.Text
+msgid  "and then"
+msgstr "derefter"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FixedText.Text
+msgid  "and then"
+msgstr "derefter"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FixedText.Text
+msgid  "Operator"
+msgstr "Operator"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FixedText.Text
+msgid  "Order"
+msgstr "Rækkefølge"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FixedLine.Text
+msgid  "Sort order"
+msgstr "Sorteringsrækkefølge"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
+msgid  "<none>"
+msgstr "<intet>"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+msgid  "Options"
+msgstr "Indstillinger"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+msgid  "Use SQL92 naming constraints"
+msgstr "Brug SQL92-navnestandard"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+msgid  "Append the table alias name on SELECT statements"
+msgstr "Vedhæft tabellens aliasnavn på SELECT-sætninger"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+msgid  "Use keyword AS before table alias names"
+msgstr "Brug nøgleordet AS før tabelaliasnavne"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+msgid  "Use Outer Join syntax '{OJ }'"
+msgstr "Brug OUTER JOIN-syntaks '{OJ }'"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+msgid  "Ignore the privileges from the database driver"
+msgstr "Ignorer rettighederne fra databasedriveren"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+msgid  "Replace named parameters with '?'"
+msgstr "Erstat navngivne parametre med '?'"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+msgid  "Display version columns (when available)"
+msgstr "Vis versionskolonner (hvis de er tilgængelige)"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+msgid  "Use catalog name in SELECT statements"
+msgstr "Brug katalognavn i SELECT-sætninger"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+msgid  "Use schema name in SELECT statements"
+msgstr "Brug skemanavn i SELECT-sætninger"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+msgid  "Create index with ASC or DESC statement"
+msgstr "Opret indeks med ASC- eller DESC-sætning"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+msgid  "End text lines with CR+LF"
+msgstr "Afslut tekstlinjer med CR+LF"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+msgid  "Ignore currency field information"
+msgstr "Ignorer valutafeltinformation"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+msgid  "Form data input checks for required fields"
+msgstr "Formulardataindtastning kontrollerer obligatoriske felter"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
+msgid  "Use ODBC conformant date/time literals"
+msgstr "Brug dato/tid format der overholder ODBC standarden"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
+msgid  "Supports primary keys"
+msgstr "Understøtter primærnøgler"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CheckBox.Text
+msgid  "Respect the result set type from the database driver"
+msgstr "Respekter resultat type fra database driveren"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "Standard"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "Blandet"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "MS Access"
+msgstr "MS Access"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+msgid  "Comparison of Boolean values"
+msgstr "Sammenligning af logiske værdier"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FixedText.Text
+msgid  "Rows to scan column types"
+msgstr "Rækker til at scanne kolonne typer"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+msgid  "Settings"
+msgstr "Indstillinger"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+msgid  "Re~trieve generated values"
+msgstr "~Modtag genererede værdier"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+msgid  "~Auto-increment statement"
+msgstr "~'Auto-increment'-sætning"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+msgid  "~Query of generated values"
+msgstr "~Forespørgsel på genererede værdier"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+msgid  "Generated Values"
+msgstr "Genererede værdier"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+msgid  "Special Settings"
+msgstr "Specielle indstillinger"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.String.Text
+msgid  "Advanced Settings"
+msgstr "Avancerede indstillinger"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+msgid  "Save"
+msgstr "Gem"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+msgid  "Create New Directory"
+msgstr "Opret Ny Katalog"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+msgid  "Up One Level"
+msgstr "Et niveau op"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+msgid  "File ~name:"
+msgstr "Fil~navn:"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+msgid  "Save"
+msgstr "Gem"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+msgid  "~Path:"
+msgstr "~Sti:"
+
+#: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+msgid  "Folder"
+msgstr "Mappe"
+
+#: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+msgid  "The file already exists. Overwrite?"
+msgstr "Filen findes allerede. Skal den overskrives?"
+
+#: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "Forbindelsen til datakilden \"$name$\" kræver en adgangskode."
+
+#: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr "Kataloget\n\n$path$\n\nfindes ikke. Skal det oprettes?"
+
+#: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
+msgid  "The directory $name$ could not be created."
+msgstr "Kataloget $name$ kunne ikke oprettes."
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.ModalDialog.Text
+msgid  "Convert Database"
+msgstr "Konverter database"
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FixedLine.Text
+msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgstr "Indtast ~adgangskoden for brugeren 'DOMAIN'"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TabPage.Text
+msgid  "Tables Filter"
+msgstr "Tabelfilter"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "Tables and table filter"
+msgstr "Tabeller og tabelfilter"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FixedText.Text
+msgid  "Mark the tables that should be visible for the applications."
+msgstr "Marker de tabeller, som skal være synlige for programmerne."
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+msgid  "~Database name"
+msgstr "~Databasenavn"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+msgid  "Se~rver / Port"
+msgstr "Se~rver / Port"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+msgid  "~Server"
+msgstr "~Server"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+msgid  "~Port"
+msgstr "~Port"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+msgid  "Default: 3306"
+msgstr "Standard: 3306"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+msgid  "So~cket"
+msgstr "So~cket"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+msgid  "Named p~ipe"
+msgstr "Named p~ipe"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.String.Text
+msgid  "User Settings"
+msgstr "Brugerindstillinger"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.String.Text
+msgid  "User administration"
+msgstr "Brugeradministration"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+msgid  "Tables"
+msgstr "Tabeller"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+msgid  "Queries"
+msgstr "Forespørgsler"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+msgid  "~Add"
+msgstr "~Tilføj"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+msgid  "~Close"
+msgstr "~Luk"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+msgid  "Add Tables"
+msgstr "Tilføj tabeller"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+msgid  "Add Table or Query"
+msgstr "Tilføj tabel eller forespørgsel"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TabDialog.Text
+msgid  "Field Format"
+msgstr "Feltformatering"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.1.PushButton.Text
+msgid  "Bac~k"
+msgstr "~Tilbage"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.String.Text
+msgid  "Font"
+msgstr "Skrifttype"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.String.Text
+msgid  "Format"
+msgstr "Format"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "Justering"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.String.Text
+msgid  "Table Format"
+msgstr "Tabelformat"
+
+#: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+msgid  "Use catalog for file-based databases"
+msgstr "Anvend katalog ved filbaserede databaser"
+
+#: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "Forbindelseindstillinger"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "~Værtscomputerens navn"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "~Portnummer"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
+msgid  "Advanced Properties"
+msgstr "Avancerede egenskaber"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.String.Text
+msgid  "Additional Settings"
+msgstr "Yderligere indstillinger"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.String.Text
+msgid  "Connection settings"
+msgstr "Forbindelseindstillinger"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.String.Text
+msgid  "Database properties"
+msgstr "Databaseegenskaber"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TabControl.Text
+msgid  "Database properties"
+msgstr "Databaseegenskaber"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FixedText.Text
+msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "Velkommen til %PRODUCTNAME Databaseguide"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
+msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr "Brug Databaseguiden for at oprette en ny database, åbne en eksisterende databasefil eller for at forbinde til en database på en server."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
+msgid  "What do you want to do?"
+msgstr "Hvad vil du foretage dig?"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RadioButton.Text
+msgid  "Create a n~ew database"
+msgstr "Opret en ~ny database"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RadioButton.Text
+msgid  "Open an existing database ~file"
+msgstr "Åbn en eksisterende database~fil"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FixedText.Text
+msgid  "Recently used"
+msgstr "Senest anvendte"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RadioButton.Text
+msgid  "Connect to an e~xisting database"
+msgstr "Forbind til en ~eksisterende database"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
+msgid  "Select the type of database to which you want to establish a connection."
+msgstr "Vælg typen af database til hvilken du vil etablere en forbindelse."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
+msgid  "Database ~type "
+msgstr "Database~type "
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FixedText.Text
+msgid  "Database"
+msgstr "Database"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr "På de følgende sider kan du justere detaljerede indstillinger for forbindelsen.\n\nDe nye indstillinger vil overskrive dine eksisterende indstillinger."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
+msgid  "MySQL"
+msgstr "MySQL"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.String.Text
+msgid  "Data Source Properties: #"
+msgstr "Datakildeegenskaber: #"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
+msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr "Programbiblioteket #lib# kunne ikke indlæses eller er beskadiget. Den valgte ODBC-datakilde er ikke tilgængelig."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr "Denne datakildetype understøttes ikke på denne platform.\nDu kan ændre indstillingerne, men kan sandsynligvis ikke oprette forbindelse til databasen."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "Generelt"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional settings"
+msgstr "Valgfri indstillinger"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CheckBox.Text
+msgid  "Display deleted records as well"
+msgstr "Vis også slettede dataposter"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
+msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgstr "Bemærk: Når slettede og dermed inaktive dataposter vises, kan du ikke slette dataposter fra datakilden."
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
+msgid  "Indexes..."
+msgstr "Indekser..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional Settings"
+msgstr "Valgfri indstillinger"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FixedText.Text
+msgid  "ODBC ~options"
+msgstr "ODBC-~indstillinger"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "Forbindelseindstillinger"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "~Værtscomputerens navn"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "Data~bufferstørrelse (MB)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FixedText.Text
+msgid  "~Data increment (MB)"
+msgstr "Grad~vis forøgelse (MB)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FixedLine.Text
+msgid  "Administration"
+msgstr "Administration"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FixedText.Text
+msgid  "Control ~user name"
+msgstr "Kontroller ~brugernavn"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FixedText.Text
+msgid  "Control ~password"
+msgstr "Kontroller ~adgangskode"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CheckBox.Text
+msgid  "~Shut down service when closing %PRODUCTNAME"
+msgstr "Luk ~service ved lukning af %PRODUCTNAME"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PushButton.Text
+msgid  "E~xtended..."
+msgstr "U~dvidet..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "MySQL JDBC d~river class"
+msgstr "MySQL JDBC-~driverklasse"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "Test klasse"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr "Brugergodkendelse"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "~Brugernavn"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr "Adgangskode krævet"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "Oracle JDBC d~river class"
+msgstr "Oracle JDBC-~driverklasse"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "Test klasse"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "Forbindelseindstillinger"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FixedText.Text
+msgid  "~Base DN"
+msgstr "Ba~se DN"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CheckBox.Text
+msgid  "Use secure connection(SSL)"
+msgstr "Brug sikker forbindelse (SSL)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "~Portnummer"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
+msgid  "Maximum number of ~records"
+msgstr "Maks. antal ~dataposter"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FixedText.Text
+msgid  "~Hostname"
+msgstr "~Værtsnavn"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "~Portnummer"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FixedText.Text
+msgid  "~Driver settings"
+msgstr "Driverindstillinger"
+
+#: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
+msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgstr "Vælg 'Forbind til en eksisterende database' for at oprette en forbindelse til en eksisterende database i stedet."
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
+msgid  "Save As"
+msgstr "Gem som"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FixedText.Text
+msgid  "Please enter a name for the object to be created:"
+msgstr "Angiv et navn på det objekt, der skal oprettes:"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FixedText.Text
+msgid  "~Catalog"
+msgstr "~Katalog"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FixedText.Text
+msgid  "~Schema"
+msgstr "~Skema"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.String.Text
+msgid  "~Table Name"
+msgstr "~Tabelnavn"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.String.Text
+msgid  "~Name of table view"
+msgstr "~Navn på tabelvisning"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.String.Text
+msgid  "~Query name"
+msgstr "~Navn på forespørgsel"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.String.Text
+msgid  "Rename to"
+msgstr "Omdøb til"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.String.Text
+msgid  "Insert as"
+msgstr "Indsæt som"
+
+#: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+msgid  "Path to the dBASE files"
+msgstr "Sti til dBASE-filerne"
+
+#: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+msgid  "Path to the text files"
+msgstr "Sti til tekstfilerne"
+
+#: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+msgid  "Path to the spreadsheet document"
+msgstr "Sti til regnearkdokumentet"
+
+#: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+msgid  "Name of the ODBC data source on your system"
+msgstr "Navnet på ODBC-datakilden på dit system"
+
+#: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+msgid  "Name of the MySQL database"
+msgstr "Navnet på MySQL-databasen"
+
+#: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+msgid  "Name of the Oracle database"
+msgstr "Navnet på Oracle-databasen"
+
+#: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+msgid  "Name of the Adabas D database"
+msgstr "Navnet på Adabas D-databasen"
+
+#: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+msgid  "Microsoft Access database file"
+msgstr "Microsoft Access-databasefil"
+
+#: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgstr "Der er ikke behov for yderligere indstillinger. For at bekræfte at forbindelsen virker, klik på '%test'-knappen."
+
+#: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+msgid  "Datasource URL"
+msgstr "Datakilde-URL"
+
+#: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+msgid  "~Host name"
+msgstr "~Værtscomputerens navn"
+
+#: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+msgid  "~Mozilla profile name"
+msgstr "~Mozilla-profilnavn"
+
+#: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+msgid  "~Thunderbird profile name"
+msgstr "~Thunderbird-profilnavn"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.ModalDialog.Text
+msgid  "Data Source"
+msgstr "Datakilde"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FixedText.Text
+msgid  "Choose a data source:"
+msgstr "Vælg en datakilde:"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PushButton.Text
+msgid  "Organize..."
+msgstr "Administrer..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PushButton.Text
+msgid  "Create..."
+msgstr "Opret..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.String.Text
+msgid  "Local Databases"
+msgstr "Lokale databaser"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.String.Text
+msgid  "Choose a database"
+msgstr "Vælg en database"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "General"
+msgstr "Generelt"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "~Værtscomputerens navn"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr "Brugergodkendelse"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "~Brugernavn"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr "Adgangskode nødvendig"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
+msgid  "JDBC properties"
+msgstr "JDBC-egenskaber"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "~JDBC driver class"
+msgstr "~JDBC-driverklasse"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test Class"
+msgstr "Test klasse"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+msgid  "Test Connection"
+msgstr "Test forbindelse"
+
+#: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+msgid  "No Adabas D data sources were found on your system."
+msgstr "Ingen Adabas D-datakilder blev fundet på dit system."
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+msgid  "Connection Test"
+msgstr "Forbindelsestest"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+msgid  "The connection was established successfully."
+msgstr "Forbindelsen blev etableret."
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+msgid  "The connection could not be established."
+msgstr "Forbindelsen kunne ikke etableres."
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
+msgid  "The JDBC driver was loaded successfully."
+msgstr "JDBC-driveren blev indlæst."
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
+msgid  "The JDBC driver could not be loaded."
+msgstr "JDBC-driveren kunne ikke indlæses."
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
+msgid  "MS Access file"
+msgstr "MS Access-fil"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
+msgid  "MS Access 2007 file"
+msgstr "MS Access 2007-fil"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+msgid  "Database files"
+msgstr "Databasefiler"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "~TRANSACTIONLOG:"
+msgstr "~TRANSAKTIONSLOG:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+msgid  "Database sizes"
+msgstr "Databasestørrelser"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+msgid  "S~ize (MB):"
+msgstr "~Størrelse (MB):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+msgid  "~Free memory space (MB):"
+msgstr "~Ledig hukommelse (MB):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+msgid  "~Memory utilization (in %):"
+msgstr "~Hukommelsesbrug (i %):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+msgid  "Database Statistics"
+msgstr "Databasestatistik"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+msgid  "Contains the system tables"
+msgstr "Indeholder systemtabellerne"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+msgid  "Contains information about transaction"
+msgstr "Indeholder oplysninger om transaktioner"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+msgid  "Contains all data files"
+msgstr "Indeholder alle datafiler"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+msgid  "Total size of the database files"
+msgstr "Samlet størrelse på databasefilerne"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+msgid  "Currently available space before a new datadev file is created."
+msgstr "Harddiskplads til rådighed, før der oprettes en ny Datadev-fil."
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+msgid  "Currently used memory"
+msgstr "Anvendt hukommelse i øjeblikket"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+msgid  "No information could be displayed because no access rights exist for the required system tables."
+msgstr "Information kan ikke vises, da du ikke har adgangsrettigheder til de nødvendige systemtabeller!"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
+msgid  "SQL command"
+msgstr "SQL-kommando"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FixedText.Text
+msgid  "Command to execute"
+msgstr "Kommando, der skal udføres"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PushButton.Text
+msgid  "Execute"
+msgstr "Udfør"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FixedText.Text
+msgid  "Previous commands"
+msgstr "Forrige kommandoer"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FixedLine.Text
+msgid  "Status"
+msgstr "Status"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PushButton.Text
+msgid  "Close"
+msgstr "Luk"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PushButton.Text
+msgid  "Execute SQL Statement"
+msgstr "Udfør SQL-sætning"
+
+#: source/ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.String.Text
+msgid  "Command successfully executed."
+msgstr "Kommando gennemført."
+
+#: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
+msgid  "The connection to the database has been lost. This dialog will be closed."
+msgstr "Forbindelsen til databasen blev tabt. Denne dialog lukkes."
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
+msgid  "Indexes"
+msgstr "Indekser"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FixedText.Text
+msgid  "~Table"
+msgstr "Ta~bel"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FixedLine.Text
+msgid  "Assignment"
+msgstr "Tildeling"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FixedText.Text
+msgid  "T~able indexes"
+msgstr "~Tabelindekser"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FixedText.Text
+msgid  "~Free indexes"
+msgstr "~Frigør indekser"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FixedLine.Text
+msgid  "User selection"
+msgstr "Brugervalg"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FixedText.Text
+msgid  "Us~er:"
+msgstr "Brug~er:"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PushButton.Text
+msgid  "~Add User..."
+msgstr "~Tilføj bruger..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PushButton.Text
+msgid  "Change ~Password..."
+msgstr "Skift ~adgangskode..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PushButton.Text
+msgid  "~Delete User..."
+msgstr "Slet br~uger..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FixedLine.Text
+msgid  "Access rights for selected user"
+msgstr "Adgangsrettigheder for den valgte bruger"
+
+#: source/ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QueryBox.Message
+msgid  "Do you really want to delete the user?"
+msgstr "Er du sikker på, at du vil slette brugeren?"
+
+#: source/ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support user administration."
+msgstr "Databasen understøtter ikke brugeradministration."
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
+msgid  "User \"$name$:  $\""
+msgstr "Bruger \"$Name: $\""
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
+msgid  "Old p~assword"
+msgstr "Gammel a~dgangskode"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FixedText.Text
+msgid  "~Password"
+msgstr "~Adgangskode"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FixedText.Text
+msgid  "~Confirm  password"
+msgstr "~Bekræft adgangskode"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.HelpButton.Text
+msgid  "Change Password"
+msgstr "Skift adgangskode"
+
+#: source/ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+msgid  "The passwords do not match. Please enter the password again."
+msgstr "Adgangskoderne stemmer ikke overens. Prøv igen."
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
+msgid  "Database Wizard"
+msgstr "Databaseguide"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
+msgid  "Database Wizard"
+msgstr "Databaseguide"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.String.Text
+msgid  "Select database"
+msgstr "Vælg database"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.String.Text
+msgid  "Set up dBASE connection"
+msgstr "Opret dBASE-forbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "Opret en forbindelse til tekstfiler"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
+msgid  "Set up Microsoft Access connection"
+msgstr "Opret Microsoft Access-forbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.String.Text
+msgid  "Set up LDAP connection"
+msgstr "Opret LDAP-forbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.String.Text
+msgid  "Set up Adabas D connection"
+msgstr "Opret Adabas D-forbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.String.Text
+msgid  "Set up ADO connection"
+msgstr "Opret ADO-forbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.String.Text
+msgid  "Set up JDBC connection"
+msgstr "Opret JDBC-forbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.String.Text
+msgid  "Set up Oracle database connection"
+msgstr "Opret Oracle-databaseforbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.String.Text
+msgid  "Set up MySQL connection"
+msgstr "Opret MySQL-forbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.String.Text
+msgid  "Set up ODBC connection"
+msgstr "Opret ODBC-forbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.String.Text
+msgid  "Set up Spreadsheet connection"
+msgstr "Opret regnearksforbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.String.Text
+msgid  "Set up user authentication"
+msgstr "Opsæt brugergodkendelse"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.String.Text
+msgid  "Set up MySQL server data"
+msgstr "Opsætning af MySQL server data"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.String.Text
+msgid  "Save and proceed"
+msgstr "Gem og fortsæt"
+
+#: source/ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.String.Text
+msgid  "New Database"
+msgstr "Ny database"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to a MySQL database"
+msgstr "Opret en forbindelse til en MySQL-database"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Du kan forbinde til en MySQL-database ved brug af enten ODBC eller JDBC.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
+msgid  "How do you want to connect to your MySQL database?"
+msgstr "Hvordan vil du forbinde til din MySQL-database?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RadioButton.Text
+msgid  "Connect using ODBC (Open Database Connectivity)"
+msgstr "Forbind ved brug af ODBC (Open Database Connectivity)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RadioButton.Text
+msgid  "Connect using JDBC (Java Database Connectivity)"
+msgstr "Forbind ved brug af JDBC (Java Database Connectivity)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RadioButton.Text
+msgid  "Connect directly"
+msgstr "Forbind direkte"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FixedText.Text
+msgid  "Set up the user authentication"
+msgstr "Opsæt brugergodkendelsen"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FixedText.Text
+msgid  "Some databases require you to enter a user name."
+msgstr "Nogle databaser kræver, at du indtaster et brugernavn."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "~Brugernavn"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CheckBox.Text
+msgid  "Password re~quired"
+msgstr "Adgangskode ~nødvendig"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PushButton.Text
+msgid  "~Test Connection"
+msgstr "~Test forbindelse"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FixedText.Text
+msgid  "Decide how to proceed after saving the database"
+msgstr "Hvordan skal der fortsættes, når databasen er blevet gemt."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FixedText.Text
+msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "Skal guiden registrere databasen i %PRODUCTNAME?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RadioButton.Text
+msgid  "~Yes, register the database for me"
+msgstr "~Ja, registrer databasen for mig"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RadioButton.Text
+msgid  "N~o, do not register the database"
+msgstr "~Nej, registrer ikke databasen"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FixedText.Text
+msgid  "After the database file has been saved, what do you want to do?"
+msgstr "Hvad vil du da gøre, når databasefilen er blevet gemt?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CheckBox.Text
+msgid  "Open the database for editing"
+msgstr "Åbn databasen for redigering."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CheckBox.Text
+msgid  "Create tables using the table wizard"
+msgstr "Opret tabeller ved at bruge Tabelguiden."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FixedText.Text
+msgid  "Click 'Finish' to save the database."
+msgstr "Klik på 'Udfør' for at gemme databasen."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.String.Text
+msgid  "Set up connection to a MySQL database using JDBC"
+msgstr "Opsæt forbindelse til en MySQL-database ved brug af JDBC"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Indtast den nødvendige information for at forbinde til en MySQL-database ved brug af JDBC. Bemærk at en JDBC-driverklasse skal være installeret på dit system og registreret af %PRODUCTNAME.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
+msgid  "MySQL JDBC d~river class:"
+msgstr "MySQL JDBC-~driverklasse:"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.String.Text
+msgid  "Default: 3306"
+msgstr "Standard: 3306"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FixedText.Text
+msgid  "Set up connection to a MySQL database"
+msgstr "Opsæt forbindelse til en MySQL-database"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
+msgid  "Please enter the required information to connect to a MySQL database."
+msgstr "Indtast den nødvendige information for at forbinde til en MySQL-database."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
+msgid  "Set up a connection to dBASE files"
+msgstr "Opret en forbindelse til dBASE-filer"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.String.Text
+msgid  "Select the folder where the dBASE files are stored."
+msgstr "Vælg mappen, hvor dBASE-filerne er lagret."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "Opret en forbindelse til tekstfiler"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
+msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr "Vælg mappen, hvor CSV-tekstfilerne (Comma Separated Values) er lagret. %PRODUCTNAME Base vil åbne disse filer i skrivebeskyttet tilstand."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
+msgid  "Path to text files"
+msgstr "Sti til tekstfilerne"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.String.Text
+msgid  "Set up a connection to a Microsoft Access database"
+msgstr "Opret en forbindelse til en Microsoft Access-database"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
+msgid  "Please select the Microsoft Access file you want to access."
+msgstr "Vælg Microsoft Access-filen, som du vil tilgå."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to an LDAP directory"
+msgstr "Opret en forbindelse til et LDAP-katalog"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Indtast den nødvendige information for at forbinde til et LDAP-katalog.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
+msgid  "Default: 389"
+msgstr "Standard: 389"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CheckBox.Text
+msgid  "Use ~secure connection (SSL)"
+msgstr "Brug ~sikker forbindelse (SSL)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Adabas D database"
+msgstr "Opret en forbindelse til en Adabas D-database"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr "Indtast navnet på Adabas D-databasen, som du vil forbinde til.\nKlik på 'Gennemse...' for at vælge en Adabas D-database, der allerede er registreret i %PRODUCTNAME."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ADO database"
+msgstr "Opret en forbindelse til en ADO-database"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Indtast URL'en til ADO-datakilden, som du vil forbinde til.\nKlik på 'Gennemse' for at tilpasse udbyderspecifikke indstillinger.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ODBC database"
+msgstr "Opret en forbindelse til en ODBC-database"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Indtast navnet på ODBC-databasen, som du vil forbinde til.\nKlik på 'Gennemse...' for at vælge en ODBC-database, der allerede er registreret i %PRODUCTNAME.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to a JDBC database"
+msgstr "Opret en forbindelse til en JDBC-database"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Indtast den nødvendige information for at forbinde til en JDBC-database.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Oracle database"
+msgstr "Opret en forbindelse til en Oracle-database"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.String.Text
+msgid  "Default: 1521"
+msgstr "Standard: 1521"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.String.Text
+msgid  "Oracle JDBC ~driver class"
+msgstr "Oracle JDBC-driverklasse"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Indtast den nødvendige information for at forbinde til en Oracle-database. Bemærk at en JDBC-driverklasse skal være installeret på dit system og registreret med %PRODUCTNAME.\nKontakt din systemadministrator, hvis du er usikker på de følgende indstillinger."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
+msgid  "Set up a connection to spreadsheets"
+msgstr "Opret en forbindelse til regneark"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr "Klik på 'Gennemse...' for at vælge et %PRODUCTNAME-regneark eller Microsoft Excel-projektmappe.\n%PRODUCTNAME vil åbne denne fil i skrivebeskyttet tilstand."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
+msgid  "~Location and file name"
+msgstr "~Placering og filnavn"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CheckBox.Text
+msgid  "~Password required"
+msgstr "Adgangskode ~nødvendig"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FixedText.Text
+msgid  "~Height"
+msgstr "~Højde"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "~Automatisk"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HelpButton.Text
+msgid  "Row Height"
+msgstr "Rækkehøjde"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FixedText.Text
+msgid  "~Width"
+msgstr "~Bredde"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "~Automatisk"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.HelpButton.Text
+msgid  "Column Width"
+msgstr "Kolonnebredde"
+
+#: source/ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.ModalDialog.Text
+msgid  "Text Connection Settings"
+msgstr "Forbindelsesindstillinger for tekst "
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2).PB_AUTOBROWSEURL.PushButton.Text
+msgid  "Browse"
+msgstr "Gennemse"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTODATABASENAME.FixedText.Text
+msgid  "Database name"
+msgstr "Databasenavn"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOHOSTNAME.FixedText.Text
+msgid  "Server"
+msgstr "Server"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOBASEDN.FixedText.Text
+msgid  "Base ~DN"
+msgstr "Base ~DN"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOPORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "~Portnummer"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FL_DATACONVERT.FixedLine.Text
+msgid  "Data conversion"
+msgstr "Datakonvertering"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FT_CHARSET.FixedText.Text
+msgid  "~Character set"
+msgstr "~Tegnsæt"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FixedText.Text
+msgid  "Specify the type of files you want to access"
+msgstr "Angiv typen af filer, som du vil tilgå"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RadioButton.Text
+msgid  "Plain text files (*.txt)"
+msgstr "Simple tekstfiler (*.txt)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RadioButton.Text
+msgid  "'Comma separated value' files (*.csv)"
+msgstr "Filer med kommaseparerede værdier (*.csv)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RadioButton.Text
+msgid  "Custom:"
+msgstr "Brugerdefinerede:"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.Text
+msgid  "Custom: *.abc"
+msgstr "Brugerdefinerede: *.abc"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FixedLine.Text
+msgid  "Row Format"
+msgstr "Rækkeformat"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FixedText.Text
+msgid  "Field separator"
+msgstr "Feltskilletegn"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FixedText.Text
+msgid  "Text separator"
+msgstr "Tekstskilletegn"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FixedText.Text
+msgid  "Decimal separator"
+msgstr "Decimaltegn"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FixedText.Text
+msgid  "Thousands separator"
+msgstr "Tusindtalsskilletegn"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CheckBox.Text
+msgid  "~Text contains headers"
+msgstr "~Teksten indeholder overskrifter"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.String.Text
+msgid  "{None}"
+msgstr "{Intet}"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
+msgid  "#1 must be set."
+msgstr "#1 skal være angivet."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.String.Text
+msgid  "#1 and #2 must be different."
+msgstr "#1 og #2 skal være forskellige."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.String.Text
+msgid  "Wildcards such as ?,* are not allowed in #1."
+msgstr "Jokertegn som *,? er ikke tilladt i #1."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FixedText.Text
+msgid  "JDBC d~river class"
+msgstr "JDBC-~driverklasse"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "Test klasse"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FixedText.Text
+msgid  "Socket"
+msgstr "Socket"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "Opdater"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "Nyt ~visningsdesign"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "Nyt ~tabeldesign"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "Forespørgsel Autopilot..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "Ny ~forespørgsel (designvisning)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~Rediger forespørgsel"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "Ny forespørgsel (~SQL-visning)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "Rediger..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "~Kolonnebredde..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "Rapportguide..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "Formular Autopilot..."
+
+#: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+msgid  "System"
+msgstr "System"
+
+#: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+msgid  "Error during creation"
+msgstr "Fejl under oprettelsen"
+
+#: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+msgid  "An unexpected error occurred. The operation could not be performed."
+msgstr "Der er opstået en uventet fejl. Operationen kan ikke udføres."
+
+#: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+msgid  "The document \"$file$\" could not be opened."
+msgstr "Dokumentet \"$file$\" kunne ikke åbnes."
+
+#: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+msgid  "The table cannot be deleted because the database connection does not support this."
+msgstr "Tabellen kan ikke slettes, da databaseforbindelsen ikke understøtter den."
+
+#: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+msgid  "~All"
+msgstr "A~lle"
+
+#: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+msgid  "Undo:"
+msgstr "Fortryd:"
+
+#: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+msgid  "Redo:"
+msgstr "Gendan:"
+
+#: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+msgid  "No corresponding column type could be found for column '#1'."
+msgstr "Der kunne ikke findes en tilsvarende kolonnetype '#1'."
+
+#: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "Filen \"$file$\" findes ikke."
+
+#: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "Advarsler forekom under etablering af forbindelse til datakilden. Tryk \"$buttontext$\" for at vise dem."
+
+#: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr "Navnet '$#$' findes allerede.\nIndtast et andet navn."
+
+#: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "Rapporten \"$file$\", kræver udvidelsen Report Builder."
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
+msgid  "Apply columns"
+msgstr "Anvend kolonner"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
+msgid  "Type formatting"
+msgstr "Typeformatering"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr "Følgende felter er allerede valgt som primærnøgler:\n"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
+msgid  "Assign columns"
+msgstr "Tildel kolonner"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
+msgid  "Copy RTF Table"
+msgstr "Kopier RTF-tabel"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "~Hjælp"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+msgid  "~Cancel"
+msgstr "~Annuller"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
+msgid  "< ~Back"
+msgstr "< ~Tilbage"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
+msgid  "~Next>"
+msgstr "~Næste>"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+msgid  "C~reate"
+msgstr "~Opret"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
+msgid  "Existing columns"
+msgstr "Eksisterende kolonner"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
+msgid  "Column information"
+msgstr "Kolonneinformation"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
+msgid  "Automatic type recognition"
+msgstr "Automatisk typegenkendelse"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
+msgid  "Lines (ma~x)"
+msgstr "(maks.) ~linjer"
+
+#: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "Primærnøgle"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
+msgid  "Source table: \\n"
+msgstr "Kildetabel: \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
+msgid  "Destination table: \\n"
+msgstr "Destinations tabel:\n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+msgid  "~All"
+msgstr "~Alle"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+msgid  "Non~e"
+msgstr "~Ingen"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+msgid  "Ta~ble name"
+msgstr "~Tabelnavn"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+msgid  "Options"
+msgstr "Indstillinger"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
+msgid  "De~finition and data"
+msgstr "Definition og d~ata"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
+msgid  "Def~inition"
+msgstr "~Definition"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
+msgid  "A~s table view"
+msgstr "Som tabelvi~sning"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
+msgid  "Append ~data"
+msgstr "Tilknyt ~data"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
+msgid  "Use first ~line as column names"
+msgstr "Brug første ~linje som kolonnenavne"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
+msgid  "Crea~te primary key"
+msgstr "Opret ~primærnøgle"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+msgid  "Name"
+msgstr "Navn"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "Kopier tabel"
+
+#: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "Kopier tabel"
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
+msgid  "This table name is not valid in the current database."
+msgstr "Dette tabelnavn er ikke gyldigt i den aktuelle database."
+
+#: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
+msgstr "Vælg indstillingen 'Tilføj data' på den første side for at føje data til en eksisterende tabel."
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
+msgid  "Please change the table name. It is too long."
+msgstr "Ret tabelnavnet. Det er for langt."
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+msgid  "Options"
+msgstr "Indstillinger"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+msgid  "~Type"
+msgstr "~Type"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+msgid  "Inner join"
+msgstr "Inner join"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+msgid  "Left join"
+msgstr "Left join"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+msgid  "Right join"
+msgstr "Right join"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+msgid  "Full (outer) join"
+msgstr "Full (outer) join"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+msgid  "Cross join"
+msgstr "Cross join"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+msgid  "Natural"
+msgstr "Natural"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "Involverede tabeller"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "Involverede felter"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+msgid  "Join Properties"
+msgstr "Egenskaber for Join"
+
+#: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+msgid  "Please note that some databases may not support this join type."
+msgstr "Bemærk at nogle databaser ikke understøtter denne join-type."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+msgid  "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "Indeholder kun de dataposter, hvor indholdet i de kædede felter i de to tabeller er ens."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "Indeholder ALLE dataposter fra '%1' og kun de dataposter fra '%2', hvor indholdet i de relaterede felter i de to tabeller er ens."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+msgid  "Contains ALL records from '%1' and from '%2'."
+msgstr "Indeholder ALLE dataposter fra '%1' og '%2'."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "Indeholder det kartesiske produkt af ALLE dataposter fra '%1' og fra '%2'."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr "Indeholder kun en enkelt kolonne for hvert par af enslydende kolonner fra '%1' og fra '%2'."
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+msgid  "Add Table Window"
+msgstr "Tilføj tabelvindue"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+msgid  "Move table window"
+msgstr "Flyt tabelvindue"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+msgid  "Insert Join"
+msgstr "Indsæt Join"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+msgid  "Delete Join"
+msgstr "Slet Join"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+msgid  "Resize table window"
+msgstr "Tabelvindue - modificer størrelse"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+msgid  "Delete Column"
+msgstr "Slet kolonne"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+msgid  "Move column"
+msgstr "Flyt kolonne"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+msgid  "Add Column"
+msgstr "Tilføj kolonne"
+
+#: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, table '$name$' does not exist."
+msgstr "Udtrykket er ugyldigt, da der ikke findes nogen tabel med navnet '$name$'."
+
+#: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, field name '$name$' does not exist."
+msgstr "Udtrykket er ugyldigt, da feltnavnet '$name$' ikke findes."
+
+#: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgstr "Forespørgslen dækker #num# tabeller. Den valgte databasetype kan dog højst behandle #maxnum# tabeller pr. sætning."
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+msgid  "Delete Table Window"
+msgstr "Slet tabelvindue"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+msgid  "Edit Column Description"
+msgstr "Modificer kolonnebeskrivelse"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+msgid  "Adjust column width"
+msgstr "Modificer kolonnebredde"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+msgid  "(not sorted);ascending;descending"
+msgstr "(ikke sorteret);stigende;faldende"
+
+#: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+msgid  "(no function);Group"
+msgstr "(ingen funktion);Gruppe"
+
+#: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+msgid  "(no table)"
+msgstr "(ingen tabel)"
+
+#: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+msgid  "The database only supports sorting for visible fields."
+msgstr "Databasen understøtter kun sortering for synlige felter."
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+msgid  "Functions"
+msgstr "Funktioner"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+msgid  "Table Name"
+msgstr "Tabelnavn"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+msgid  "Alias"
+msgstr "Alias"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+msgid  "Distinct Values"
+msgstr "Entydige værdier"
+
+#: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "Felt;Alias;Tabel;Sortering;Synlig;Funktion;Kriterie;eller;eller"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+msgid  "There are too many columns."
+msgstr "Der er for mange kolonner."
+
+#: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+msgid  "A condition cannot be applied to field [*]"
+msgstr "En betingelse for felt [*] er ikke mulig"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+msgid  "The SQL statement created is too long."
+msgstr "Den frembragte SQL-sætning er for lang."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+msgid  "Query is too complex"
+msgstr "Forespørgslen er for kompleks"
+
+#: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+msgid  "Nothing has been selected."
+msgstr "Intet er markeret."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+msgid  "Too many search criteria"
+msgstr "For mange søgekriterier"
+
+#: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+msgid  "SQL syntax error"
+msgstr "SQL-syntaksfejl"
+
+#: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+msgid  "[*] cannot be used as a sort criterion."
+msgstr "Der kan ikke sorteres efter [*]."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+msgid  "There are too many tables."
+msgstr "Der er for mange tabeller."
+
+#: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+msgid  "The statement will not be applied when querying in the SQL dialect of the database."
+msgstr "Ved forespørgsel i databasens SQL-dialekt bliver sætningen ikke overtaget"
+
+#: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+msgid  "Field name not found or not unique"
+msgstr "Feltnavn ikke fundet eller ikke entydigt"
+
+#: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+msgid  "Join could not be processed"
+msgstr "Det var ikke muligt at oprette et Join"
+
+#: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+msgid  "Syntax error in SQL statement"
+msgstr "Syntaksfejl i SQL-sætning"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+msgid  "This database does not support table views."
+msgstr "Denne database understøtter ikke tabelvisninger."
+
+#: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+msgid  "This database does not support altering of existing table views."
+msgstr "Denne database understøtter ikke ændring af eksisterende tabelvisninger."
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+msgid  "Do you want to create a query instead?"
+msgstr "Vil du i stedet oprette en forespørgsel?"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+msgid  "No query could be created."
+msgstr "Det var ikke muligt at oprette nogen forespørgsel!"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+msgid  "No query could be created because no fields were selected."
+msgstr "Der kunne ikke oprettes nogen forespørgsel, da der ikke er udvalgt nogen felter!"
+
+#: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgstr "Den tilhørende datakilde er blevet slettet. Det er ikke muligt at gemme data med relation til denne."
+
+#: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+msgid  "The column '$name$' is unknown."
+msgstr "Kolonnenavnet '$name$ er ukendt"
+
+#: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+msgid  "Columns can only be compared using '='."
+msgstr "Kolonner kan kun sammenlignes med '='."
+
+#: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+msgid  "You must use a column name before 'LIKE'."
+msgstr "Du skal benytte et kolonnenavn på venstre side af 'LIKE'"
+
+#: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+msgid  "The column could not be found. Please note that the database is case-sensitive."
+msgstr "Kolonnen kunne ikke findes. Vær opmærksom på, at der i databasen skelnes mellem store og små bogstaver."
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Query Design"
+msgstr "- %PRODUCTNAME Base: Forespørgselsdesign"
+
+#: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: View Design"
+msgstr "- %PRODUCTNAME Base: Visningsdesign"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr "$object$ er blevet ændret.\nVil du gemme ændringerne?"
+
+#: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "SQL-kommandoen, som udgør $object$, kunne ikke fortolkes."
+
+#: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "$object$ vil blive åbnet i SQL-visning."
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+msgid  "The table view"
+msgstr "Tabelvisningen"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+msgid  "The query"
+msgstr "Forespørgslen"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+msgid  "The SQL statement"
+msgstr "SQL-sætningen"
+
+#: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The query does not create a result set, and thus cannot be part of another query."
+msgstr "Forespørgslen opretter ikke et resultatsæt og kan således ikke være del af en anden forespørgsel."
+
+#: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgstr "Både parameteren ActiveConnection og parameteren DataSourceName mangler eller er forkert - kan ikke starte forespørgseldesigneren."
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+msgid  "This relation already exists. Do you want to edit it or create a new one?"
+msgstr "Denne relation findes allerede. Vil du redigere den eller oprette en ny?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+msgid  "Edit..."
+msgstr "Rediger..."
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+msgid  "Create..."
+msgstr "Opret..."
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Relation design"
+msgstr "- %PRODUCTNAME Base: Relationsdesign"
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support relations."
+msgstr "Databasen understøtter ikke relationer!"
+
+#: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgstr "Hvis du sletter denne tabel, slettes også alle tilhørende relationer. Vil du fortsætte?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr "Databasen kunne ikke oprette relationen. Måske er fremmednøgler for denne type tabel ikke understøttet.\nKontroller venligst database dokumentationen."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr "Ukendt;Tekst;Tal;Dato/Klokkeslæt;Dato;Klokkeslæt;Ja/Nej;Valuta;Notat;Tæller;Billede;Tekst (fix);Decimal;Binært felt (fix);Binært felt;Stort heltal;Dobbelt;Decimal;Rationelt tal;Heltal;Lille heltal;Miniheltal;SQL Null;Objekt;Distinkt;Struktur;Felt;BLOB;CLOB;REF;ANDET;Bit (fix)"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "Indsæt/fjern primærnøgle"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+msgid  "Yes"
+msgstr "Ja"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+msgid  "No"
+msgstr "Nej"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+msgid  "Ascending"
+msgstr "Stigende"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+msgid  "Descending"
+msgstr "Faldende"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+msgid  "<none>"
+msgstr "<ingen>"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+msgid  "Field name"
+msgstr "Feltnavn"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+msgid  "Field Name"
+msgstr "Feltnavn"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+msgid  "Field ~type"
+msgstr "Felt~type"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+msgid  "Field Type"
+msgstr "Felttype"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+msgid  "Field length"
+msgstr "Feltlængde"
+
+#: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+msgid  "Description"
+msgstr "Beskrivelse"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
+msgid  "Column Description"
+msgstr "Kolonnebeskrivelse"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+msgid  "Input required"
+msgstr "Indtastning påkrævet"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+msgid  "~AutoValue"
+msgstr "~Automatisk værdi"
+
+#: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+msgid  "Field Properties"
+msgstr "Feltegenskaber"
+
+#: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "Generelt"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+msgid  "Description:"
+msgstr "Beskrivelse:"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+msgid  "Table properties"
+msgstr "Tabelegenskaber"
+
+#: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+msgid  "The text you entered is not a list element. "
+msgstr "Den indtastede tekst er ikke et element på listen."
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+msgid  "Insert Rows"
+msgstr "Indsæt rækker"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "Primærnøgle"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+msgid  "Modify cell"
+msgstr "Modificer celle"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+msgid  "Delete row"
+msgstr "Slet række"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+msgid  "Modify field type"
+msgstr "Modificer felttype"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+msgid  "Insert row"
+msgstr "Indsæt række"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+msgid  "Insert new row"
+msgstr "Indsæt ny række"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "Indsæt/fjern primærnøgle"
+
+#: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+msgid  "~Default value"
+msgstr "~Standardværdi"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+msgid  "~Entry required"
+msgstr "~Indtastning påkrævet"
+
+#: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+msgid  "~Length"
+msgstr "~Længde"
+
+#: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+msgid  "~Type"
+msgstr "~Type"
+
+#: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+msgid  "~Length"
+msgstr "~Længde"
+
+#: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+msgid  "Decimal ~places"
+msgstr "~Antal decimaler"
+
+#: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+msgid  "Format example"
+msgstr "Format-eksempel"
+
+#: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr "Vælg en værdi, der skal vises som standard i alle nyindsatte dataposter.\nVælg den tomme streng, hvis feltet ikke skal have en standardværdi."
+
+#: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr "Indtast en standardværdi til feltet her.\n\nNår du senere indtaster data i tabellen, anvendes denne streng til det aktuelle felt i alle nye dataposter. Den bør derfor svare til den celleformatering, der indtastes senere."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgstr "Aktiver denne indstilling, hvis NULL-værdier ikke er tilladt i dette felt, så brugeren altså altid skal indtaste data."
+
+#: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+msgid  "Enter the maximum text length permitted."
+msgstr "Indtast den maksimalt tilladte tekstlængde."
+
+#: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+msgid  "Enter the number format."
+msgstr "Definer her, hvilken type tallet skal have."
+
+#: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr "Angiv længden for data i dette felt.\n\nFor decimalfelter er dette den maksimale længde for det indtastede tal, for binære felter længden på datablokken.\nHvis værdien er større end den maksimale værdi for denne database, korrigeres den i overensstemmelse dermed."
+
+#: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+msgid  "Specify the number of decimal places permitted in this field."
+msgstr "Angiv hvor mange decimaler, som tal i dette felt skal indeholde."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgstr "Her ser du, hvordan dataene i den aktuelle kolonne ville komme til at se ud med det aktuelle format - som du kan ændre med knappen ved siden af."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+msgid  "This is where you determine the output format of the data."
+msgstr "På denne måde kan du definere, hvordan dataene i tabellen skal formateres ved udskrivningen."
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr "Vælg, om dette felt skal indeholde værdier til 'auto-increment'.\n\nDu kan ikke indtaste data direkte i feltet, men alle nye dataposter får automatisk dens egen værdi (som fremkommer ved at inkrementere den forudgående datapost)."
+
+#: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "Tabellen kan ikke gemmes, da kolonnenavnet \"$column$\" findes to gange."
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "Kolonnerne \"$column$\" hører til primærnøglen. Hvis denne kolonne slettes, slettes også primærnøglen. Er du sikker på, at du vil fortsætte?"
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+msgid  "Primary Key Affected"
+msgstr "Primærnøgle berørt"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+msgid  "Column"
+msgstr "Kolonne"
+
+#: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+msgid  "Continue anyway?"
+msgstr "Vil du fortsætte alligevel?"
+
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "Advarsel!"
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+msgid  "The table could not be saved due to problems connecting to the database."
+msgstr "Tabellen kunne ikke gemmes, da der ikke kunne oprettes forbindelse til databasen."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgstr "Tabelfiltret kunne ikke tilpasses, da datakilden blev slettet."
+
+#: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+msgid  "No primary key"
+msgstr "Ingen primærnøgle"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr "I denne database kræves et entydigt indeks eller en primærnøgle til datapostidentificering.\nDu kan først indtaste data i tabellen, når den opfylder en af disse to strukturbetingelser.\n\nVil du oprette en primærnøgle nu?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base: Table Design"
+msgstr "- %PRODUCTNAME Base: Tabeldesign"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "Kolonnen \"$column$\" kunne ikke ændres. Skal den i stedet slettes og det nye format vedhæftes?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+msgid  "Error while saving the table design"
+msgstr "Fejl under lagring af tabeldesignet"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+msgid  "The column $column$ could not be deleted."
+msgstr "Kolonnen $column$ kunne ikke slettes."
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr "Du forsøger at slette alle kolonner i databasen. En tabel kan ikke eksistere uden kolonner. Skal tabellen slettes helt fra databasen? Hvis ikke, vil tabellen forblive uændret i databasen"
+
+#: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+msgid  "A~uto-increment statement"
+msgstr "'~Auto-increment'-sætning"
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr "Indtast en SQL-sætning for 'auto-increment'-feltet.\n\nDenne sætning bliver automatisk overført til databasen, når tabellen bliver oprettet."
+
+#: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr "Ingen type information kunne modtages fra databasen.\nTabeldesign er ikke muligt for denne datakilde."
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+msgid  "change field name"
+msgstr "skift feltnavn"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+msgid  "change field type"
+msgstr "skift felttype"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+msgid  "change field description"
+msgstr "skift feltbeskrivelse"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+msgid  "change field attribute"
+msgstr "skift feltattribut"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+msgid  "~Remember password until end of session"
+msgstr "~Husk adgangskode til programmet lukkes"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+msgid  "~Remember password"
+msgstr "~Husk adgangskode"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+msgid  "The destination database does not support views."
+msgstr "Mål-databasen understøtter ikke visninger."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+msgid  "The destination database does not support primary keys."
+msgstr "Mål-databasen understøtter ikke primærnøgler."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgstr "Ingen data access descriptor fundet, eller ingen data access descriptor i stand til at forsyne de nødvendige informationer."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+msgid  "Only tables and queries are supported at the moment."
+msgstr "Kun tabeller og forespørgsler er understøttet i øjeblikket."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+msgid  "The copy source's result set must support bookmarks."
+msgstr "Kopikildens resultatsæt skal understøtte bogmærker."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgstr "Ikke understøttet kolonnetype ($type$) for kilden ved kolonneplacering $pos$."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+msgid  "Illegal number of initialization parameters."
+msgstr "Ugyldigt antal initialiseringsparametre."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+msgid  "An error occurred during initialization."
+msgstr "En fejl opstod under initialisering."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
+msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgstr "Unsupported indstilling i kopien kilde descriptor:$navn$."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
+msgid  "To copy a query, your connection must be able to provide queries."
+msgstr "At kopiere en forespørgsel,din forbindelse skal være i stand til forsyn Forespørgsler."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
+msgid  "The given interaction handler is invalid."
+msgstr "Den givet Interaktion håndtering er ugyldig."

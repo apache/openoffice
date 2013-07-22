@@ -1,0 +1,2592 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+msgid  "Address Book Data Source Wizard"
+msgstr "ವಿಳಾಸ ಪುಸ್ತಕ ದತ್ತ ಆಕರ ಗಾರುಡಿ"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
+msgid  "Address book type"
+msgstr "ವಿಳಾಸ ಪುಸ್ತಕದ ಬಗೆ"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
+msgid  "Connection Settings"
+msgstr "ಸಂಪರ್ಕದ ಸಿದ್ಧತೆಗಳು"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
+msgid  "Table selection"
+msgstr "ಕೋಷ್ಟಕ ಆಯ್ಕೆ"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
+msgid  "Field Assignment"
+msgstr "ವರ್ಗ ನಿಗದೀಕರಣ"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
+msgid  "Data Source Title"
+msgstr "ದತ್ತ ಆಕರ ಶೀರ್ಷಿಕೆ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr "ಈಗಾಗಲೆ ನಿಮ್ಮ ಗಣಕದಲ್ಲಿರುವ ವಿಳಾಸ ಪುಸ್ತಕವನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು %PRODUCTNAME ವು ನೆರವಾಗುತ್ತದೆ. ಹೀಗೆ ಮಾಡಲು,  ಕೋಷ್ಟಕದ ರೂಪದಲ್ಲಿರುವಂತಹ ನಿಮ್ಮ ವಿಳಾಸ ಪುಸ್ತಕವನ್ನು ಹೊಂದಿರುವ ಒಂದು %PRODUCTNAME ದತ್ತ ಆಕರವನ್ನು ರಚಿಸಲಾಗುವುದು.\n\nಈ ಗಾರುಡಿಯು ದತ್ತ ಆಕರವನ್ನು ರಚಿಸುವಲ್ಲಿ ನಿಮಗೆ ನೆರವಾಗುತ್ತದೆ."
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
+msgid  "Please select the type of your external address book:"
+msgstr "ದಯಮಾಡಿ ನಿಮಗೆ ಅಗತ್ಯವಾದ ಹೊರಗಿನ ವಿಳಾಸ ಪುಸ್ತಕದ ನಮೂನೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ:"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
+msgid  "Evolution"
+msgstr "ಇವಲ್ಯೂಶನ್"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
+msgid  "Groupwise"
+msgstr "ಗುಂಪುಕ್ರಮದಲ್ಲಿ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
+msgid  "Evolution LDAP"
+msgstr "ಇವಲ್ಯೂಶನ್ LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
+msgid  "Mozilla / Netscape"
+msgstr "ಮೋಝಿಲ್ಲಾ / ನೆಟ್‌ಸ್ಕೇಪ್"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
+msgid  "Thunderbird"
+msgstr "ತಂಡರ್ಬರ್ಡ್"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
+msgid  "KDE address book"
+msgstr "KDE ವಿಳಾಸ ಪುಸ್ತಕ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
+msgid  "Mac OS X address book"
+msgstr "Mac OS X ವಿಳಾಸ ಪುಸ್ತಕ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
+msgid  "LDAP address data"
+msgstr "LDAP ವಿಳಾಸ ದತ್ತಾಂಶ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
+msgid  "Outlook address book"
+msgstr "ಔಟ್ಲುಕ್‌ನ ವಿಳಾಸ ಪುಸ್ತಕ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
+msgid  "Windows system address book"
+msgstr "ವಿಂಡೋಸ್ ವ್ಯವಸ್ಥೆಯ ವಿಳಾಸ ಪುಸ್ತಕ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
+msgid  "Other external data source"
+msgstr "ಇತರೆ ಹೊರಗಿನ ದತ್ತ ಆಕರ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr "ಹೊಸ ದತ್ತ ಆಕರವನ್ನು ಸಿದ್ಧಪಡಿಸಲು, ಮತ್ತಷ್ಟು ಮಾಹಿತಿಯ ಅಗತ್ಯವಿದೆ. \n\nಮತ್ತೊಂದು ಸಂವಾದವನ್ನು ತೆರೆಯಲು ಕೆಳಗಿನ ಗುಂಡಿಯನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ ಹಾಗು ಅಲ್ಲಿ ನೀವು ಅಗತ್ಯವಾದ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಬಹುದು."
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
+msgid  "Settings"
+msgstr "ಸಿದ್ಧತೆಗಳು"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr "ದತ್ತ ಆಕರಕ್ಕೆ ಸಂಪರ್ಕವನ್ನು ಪಡೆಯಲಾಗಲಿಲ್ಲ.\nಮುಂದುವರಿಯುವುದಕ್ಕೆ ಮೊದಲು, ದಯಮಾಡಿ ನೀವು ಮಾಡಿರುವ ಸಿದ್ಧತೆಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ. ಅಥವಾ (ಹಿಂದಿನ ಪುಟದಲ್ಲಿ) ಬೇರೆ ದತ್ತ ಆಕರ ನಮೂನೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
+
+#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr "ನೀವು ಆಯ್ಕೆ ಮಾಡಿರುವ ಹೊರಗಿನ ದತ್ತ ಆಕರವು ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ವಿಳಾಸ ಪುಸ್ತಕವನ್ನು ಹೊಂದಿದೆ.\nದಯಮಾಡಿ ನೀವು ಮುಖ್ಯವಾಗಿ ಕೆಲಸ ಮಾಡುವುದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ:"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "ವಿಳಾಸ ದತ್ತವನ್ನು ನಿಮ್ಮ ಸಿದ್ಧವಿನ್ಯಾಸ ಪುಟದಲ್ಲಿ ಅಳವಡಿಸಲು,ಯಾವ ವರ್ಗದಲ್ಲಿ ಯಾವ ದತ್ತಾಂಶವಿದೆ ಎನ್ನುವುದು %PRODUCTNAME ಗೆ ತಿಳಿಯಬೇಕು\n. \nಉದಾಹರಣೆಗೆ ನಿಮ್ಮ ವಿ-ಅಂಚೆ ವಿಳಾಸಗಳನ್ನು \"email\" ಅಥವಾ \"E-mail\" ಅಥವಾ \"EM\" ಅಥವಾ ಪೂರ್ತಿ ಬೇರೆಯಾಗಿ ಉಳಿಸಿರಬಹುದು. \n\nಮತ್ತೊಂದು ಸಂವಾದವನ್ನು ತೆರೆಯಲು ಕೆಳಗಿನ ಗುಂಡಿಯನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ ಹಾಗು ಅಲ್ಲಿ ನಿಮ್ಮ ದತ್ತ ಆಕರಕ್ಕೆ ಸಿದ್ಧತೆಗಳನ್ನು ನಮೂದಿಸಬಹುದು."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
+msgid  "Field Assignment"
+msgstr "ವರ್ಗ ನಿಗದೀಕರಣ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr "%PRODUCTNAME ಜೊತೆ ನಿಮ್ಮ ವಿಳಾಸ ದತ್ತವನ್ನು ಸೇರಿಸಲು ಆ ಮಾಹಿತಿ ಮಾತ್ರವೇ ಅವಶ್ಯಕವಾಗಿತ್ತು.\n\nಈಗ %PRODUCTNAME ನಲ್ಲಿ ನೀವು ದತ್ತ ಆಕರವನ್ನು ನೋಂದಯಿಸ ಬೇಕಾದ ಹೆಸರನ್ನು ನಮೂದಿಸಿ."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
+msgid  "Location"
+msgstr "ಸ್ಥಳ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
+msgid  "Browse..."
+msgstr "ವೀಕ್ಷಿಸು..."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
+msgstr "ಈ ವಿಳಾಸ ಪುಸ್ತಕವನ್ನು %PRODUCTNAME ನಲ್ಲಿನ ಎಲ್ಲಾ ಘಟಕಗಳಿಗೂ ದೊರೆಯುವಂತೆ ಮಾಡು."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
+msgid  "Address book name"
+msgstr "ವಿಳಾಸ ಪುಸ್ತಕದ ಹೆಸರು"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr "ಮತ್ತೊಂದು ದತ್ತ ಆಕರವು ಈಗಾಗಲೇ ಈ ಹೆಸರನ್ನು ಹೊಂದಿದೆ. ದತ್ತ ಆಕರಗಳು ಸಮಗ್ರವಾಗಿ ವಿಶಿಷ್ಟ ಹೆಸರನ್ನು ಹೊಂದಿರಬೇಕು. ಆದ್ದರಿಂದ ನೀವು ಬೇರೆ ಹೆಸರನ್ನು ಆಯ್ಕೆ ಮಾಡಬೇಕಾಗುತ್ತದೆ."
+
+#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
+msgid  "Please select a type of address book."
+msgstr "ದಯಮಾಡಿ ವಿಳಾಸ ಪುಸ್ತಕದ ಬಗೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
+
+#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+msgid  "Addresses"
+msgstr "ವಿಳಾಸಗಳು"
+
+#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+msgid  "Create Address Data Source"
+msgstr "ವಿಳಾಸ ದತ್ತ ಆಕರವನ್ನು ತಯಾರಿಸಿ"
+
+#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+msgid  "The connection could not be established."
+msgstr "ಸಂಪರ್ಕವನ್ನು ಪಡೆಯಲಾಗಲಿಲ್ಲ."
+
+#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+msgid  "Please check the settings made for the data source."
+msgstr "ದಯಮಾಡಿ ದತ್ತ ಆಕರಕ್ಕೆ ಮಾಡಿದ ಸಿದ್ಧತೆಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ."
+
+#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+msgid  "Address Data - Field Assignment"
+msgstr "ವಿಳಾಸ ದತ್ತ - ವರ್ಗ ನಿಗದೀಕರಣ"
+
+#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr "ಪ್ರಸಕ್ತ ಯಾವುದೆ ವರ್ಗಗಳನ್ನು ನಿಯೋಜಿಸಲಾಗಿಲ್ಲ.\nನೀವು ಈಗಲೆ ವರ್ಗಗಳನ್ನು ನಿಯೋಜಿಸಬಹುದು ಅಥವ ಈ ಕೆಳಗಿನದನ್ನು ಅನುಸರಿಸಿಕೊಂಡು ಆಮೇಲೆಯೂ ಸಹ ನಿಯೋಜಿಸಬಹುದು:\n\"ಕಡತ - ನಮೂನೆ - ವಿಳಾಸ ಪುಸ್ತಕ ಆಕರ...\""
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
+msgid  "Table"
+msgstr "ಕೋಷ್ಟಕ"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
+msgid  "Search Key"
+msgstr "ಹುಡುಕು ಕೀಲಿ"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
+msgid  "AutoFilter"
+msgstr "ಸ್ವಯಂಶೋಧಕ"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
+msgid  "Standard Filter"
+msgstr "ಸಾಮಾನ್ಯವಾದ ಶೋಧಕ"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
+msgid  "Remove Filter"
+msgstr "ಶೋಧಕವನ್ನು ತೆಗೆದುಹಾಕು"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
+msgid  "Column Arrangement"
+msgstr "ಲಂಬಸಾಲು ಏರ್ಪಾಟು"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
+msgid  "Data Source"
+msgstr "ದತ್ತ ಆಕರ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
+msgid  "The following column names could not be assigned:\\n"
+msgstr "ಈ ಕೆಳಗಿನ ಲಂಬಸಾಲುಗಳ ಹೆಸರನ್ನು ನಿಗದಿ ಮಾಡಲಾಗಲಿಲ್ಲ:\n"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
+msgid  "Article"
+msgstr "ಲೇಖನ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
+msgid  "Book"
+msgstr "ಪುಸ್ತಕ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
+msgid  "Brochures"
+msgstr "ಕೈಪಿಡಿಗಳು"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
+msgid  "Conference proceedings"
+msgstr "ಸಮ್ಮೇಳನ ನಡಾವಳಿಗಳು"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
+msgid  "Book excerpt"
+msgstr "ಪುಸ್ತಕದಿಂದ ಆಯ್ದ ಭಾಗ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
+msgid  "Book excerpt with title"
+msgstr "ಶೀರ್ಷಿಕೆಯೊಂದಿಗಿನ ಪುಸ್ತಕದಿಂದ ಆಯ್ದ ಭಾಗ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "ಸಮ್ಮೇಳನ ನಡಾವಳಿಗಳು"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
+msgid  "Journal"
+msgstr "ವರ್ತಮಾನ ಪತ್ರಿಕೆ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
+msgid  "Techn. documentation"
+msgstr "ತಾಂತ್ರಿಕ ದಸ್ತಾವೇಜು"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
+msgid  "Thesis"
+msgstr "ಸಂಶೋಧನ ಪ್ರಬಂಧ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
+msgid  "Miscellaneous"
+msgstr "ಇತರೆ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
+msgid  "Dissertation"
+msgstr "ಪ್ರೌಢ ಪ್ರಬಂಧ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "ಸಮ್ಮೇಳನ ನಡಾವಳಿಗಳು"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
+msgid  "Research report"
+msgstr "ಸಂಶೋಧನಾ ವರದಿ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
+msgid  "Unpublished"
+msgstr "ಪ್ರಕಟಣೆಯಾಗದ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
+msgid  "e-mail"
+msgstr "ವಿ-ಅಂಚೆ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
+msgid  "WWW document"
+msgstr "WWW ದಸ್ತಾವೇಜು"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
+msgid  "User-defined1"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ೧"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
+msgid  "User-defined2"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ೨"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
+msgid  "User-defined3"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ೩"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
+msgid  "User-defined4"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ೪"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
+msgid  "User-defined5"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ೫"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
+msgid  "General"
+msgstr "ಸಾಮಾನ್ಯ"
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
+msgid  "Insert Section..."
+msgstr "ವಿಭಾಗವನ್ನು ಅಳವಡಿಸು..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
+msgid  "Delete Section..."
+msgstr "ವಿಭಾಗವನ್ನು ಅಳಿಸು..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
+msgid  "Modify Name..."
+msgstr "ಹೆಸರನ್ನು ಮಾರ್ಪಡಿಸು..."
+
+#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
+msgid  "~Short name"
+msgstr "ಸಂಕ್ಷಿಪ್ತ ಹೆಸರು(~S)"
+
+#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
+msgid  "~Type"
+msgstr "ಬಗೆ(~T)"
+
+#: source/bibliography/sections.src#ST_YEAR.String.Text
+msgid  "~Year"
+msgstr "ವರ್ಷ(~Y)"
+
+#: source/bibliography/sections.src#ST_AUTHOR.String.Text
+msgid  "Author(s)"
+msgstr "ಕರ್ತೃ(ಗಳು)"
+
+#: source/bibliography/sections.src#ST_TITLE.String.Text
+msgid  "Tit~le"
+msgstr "ಶೀರ್ಷಿಕೆ(~l)"
+
+#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
+msgid  "~Publisher"
+msgstr "ಪ್ರಕಾಶಕ(~P)"
+
+#: source/bibliography/sections.src#ST_ADDRESS.String.Text
+msgid  "A~ddress"
+msgstr "ವಿಳಾಸ(~d)"
+
+#: source/bibliography/sections.src#ST_ISBN.String.Text
+msgid  "~ISBN"
+msgstr "~ISBN"
+
+#: source/bibliography/sections.src#ST_CHAPTER.String.Text
+msgid  "~Chapter"
+msgstr "ಅಧ್ಯಾಯ(~C)"
+
+#: source/bibliography/sections.src#ST_PAGE.String.Text
+msgid  "Pa~ge(s)"
+msgstr "ಪುಟ(ಗಳು)(~g)"
+
+#: source/bibliography/sections.src#ST_EDITOR.String.Text
+msgid  "Editor"
+msgstr "ಸಂಪಾದಕ"
+
+#: source/bibliography/sections.src#ST_EDITION.String.Text
+msgid  "Ed~ition"
+msgstr "ಆವೃತ್ತಿ(~i)"
+
+#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
+msgid  "~Book title"
+msgstr "ಪುಸ್ತಕ ಶೀರ್ಷಿಕೆ(~B)"
+
+#: source/bibliography/sections.src#ST_VOLUME.String.Text
+msgid  "Volume"
+msgstr "ಸಂಪುಟ"
+
+#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
+msgid  "Publication t~ype"
+msgstr "ಪ್ರಕಟಣೆಯ ಬಗೆ(~y)"
+
+#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
+msgid  "Organi~zation"
+msgstr "ಸಂಘಟನೆ(~z)"
+
+#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
+msgid  "Instit~ution"
+msgstr "ಸಂಸ್ಥೆ(~u)"
+
+#: source/bibliography/sections.src#ST_SCHOOL.String.Text
+msgid  "University"
+msgstr "ವಿಶ್ವವಿದ್ಯಾಲಯ"
+
+#: source/bibliography/sections.src#ST_REPORT.String.Text
+msgid  "Type of re~port"
+msgstr "ವರದಿ ಬಗೆ(~p)"
+
+#: source/bibliography/sections.src#ST_MONTH.String.Text
+msgid  "~Month"
+msgstr "ತಿಂಗಳು(~M)"
+
+#: source/bibliography/sections.src#ST_JOURNAL.String.Text
+msgid  "~Journal"
+msgstr "ವರ್ತಮಾನ ಪತ್ರಿಕೆ(~J)"
+
+#: source/bibliography/sections.src#ST_NUMBER.String.Text
+msgid  "Numb~er"
+msgstr "ಅಂಕಿ(~e)"
+
+#: source/bibliography/sections.src#ST_SERIES.String.Text
+msgid  "Se~ries"
+msgstr "ಸರಣಿ(~r)"
+
+#: source/bibliography/sections.src#ST_ANNOTE.String.Text
+msgid  "Ann~otation"
+msgstr "ಟಿಪ್ಪಣಿ (~o)"
+
+#: source/bibliography/sections.src#ST_NOTE.String.Text
+msgid  "~Note"
+msgstr "ಟಿಪ್ಪಣಿ(~N)"
+
+#: source/bibliography/sections.src#ST_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
+msgid  "User-defined field ~1"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ವರ್ಗ ~1"
+
+#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
+msgid  "User-defined field ~2"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ವರ್ಗ ~2"
+
+#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
+msgid  "User-defined field ~3"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ವರ್ಗ ~3"
+
+#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
+msgid  "User-defined field ~4"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ವರ್ಗ ~4"
+
+#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
+msgid  "User-defined field ~5"
+msgstr "ಬಳಕೆದಾರ-ವ್ಯಾಖ್ಯಾನಿತ ವರ್ಗ ~5"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
+msgid  "Column names"
+msgstr "ಲಂಬಸಾಲಿನ ಹೆಸರುಗಳು"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
+msgid  "<none>"
+msgstr "<ಏನೂ ಇಲ್ಲ>"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
+msgid  "Column Layout for Table %1"
+msgstr "ಕೋಷ್ಟಕ %1 ಕ್ಕೆ ಲಂಬಸಾಲು ರೂಪರೇಷೆ"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
+msgid  "Choose Data Source"
+msgstr "ದತ್ತ ಆಕರವನ್ನು ಆಯ್ಕೆ ಮಾಡು"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
+msgid  "Entry"
+msgstr "ನಮೂದನೆ"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
+msgid  "Field selection:"
+msgstr "ವರ್ಗ ಆಯ್ಕೆ:"
+
+#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
+msgid  "Table;Query;Sql;Sql [Native]"
+msgstr "ಕೋಷ್ಟಕ;ಪ್ರಶ್ನೆ; Sql;Sql [ಸ್ಥಳೀಯ]"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
+msgid  "Bibliography Database"
+msgstr "ಗ್ರಂಥೆಋಣ ಪಟ್ಟಿ ದತ್ತಸಂಚಯ"
+
+#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
+msgid  "Do you want to edit the column arrangement?"
+msgstr "ಲಂಬಸಾಲು ಏರ್ಪಾಟನ್ನು ಸಂಪಾದಿಸಲು ನೀವು ಬಯಸುತ್ತೀರೆ?"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
+msgid  "Table Selection"
+msgstr "ಕೋಷ್ಟಕ ಆಯ್ಕೆ"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
+msgid  "Control"
+msgstr "ನಿಯಂತ್ರಣ"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr "ಬಲಗಡೆ, ಆ ನಮೂನೆಯ ದತ್ತ ಆಕರದ ಎಲ್ಲ ಕೋಷ್ಟಕಗಳನ್ನು ಕಾಣುತ್ತದೆ.\n\n\nಪಟ್ಟಿಯ ವಿಷಯಕ್ಕೆ ಆಧಾರವನ್ನು ಬಳಸಬೇಕಾದ ಕೋಷ್ಟಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ:"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
+msgid  "Field Selection"
+msgstr "ವರ್ಗ ಆಯ್ಕೆ"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ವರ್ಗಗಳು"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
+msgid  "Display field"
+msgstr "ವರ್ಗಗಳನ್ನು ತೋರಿಸು"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
+msgid  "The contents of the field selected will be shown in the combo box list."
+msgstr "ಆಯ್ಕೆ ಮಾಡಿದ ವರ್ಗಗಳ ವಿವರವನ್ನು ಕಾಂಬೋ ಚೌಕ ಪಟ್ಟಿಯಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgstr "ಸಂಪರ್ಕ ಪಡೆದ ವರ್ಗಗಳು ಸಮಾನರೂಪ ಹೊಂದಿದ್ದರೆ ಆಯ್ಕೆ ಮಾಡಿದ ವರ್ಗಗಳ ವಿವರವನ್ನು ಪಟ್ಟಿ ಚೌಕದಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
+msgid  "Field Link"
+msgstr "ವರ್ಗ ಸಂಪರ್ಕ"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgstr "ಈ ಜಾಗವೇ ನೀವು ಹೋಲಿಕೆಯುಳ್ಳ ವಿಷಯಗಳ ವರ್ಗಗಳನ್ನು ಆಯ್ಕೆಮಾಡ ಬಹುದಾದ ಜಾಗ ಮತ್ತು ಅದರ ಮೂಲಕ ಪ್ರದರ್ಶಕ ವರ್ಗದ ಮೌಲ್ಯವನ್ನು ತೋರಿಸಬಹುದಾಗಿದೆ."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
+msgid  "Field from the ~Value Table"
+msgstr "ಮೌಲ್ಯ ಕೋಷ್ಟಕದಿಂದ ವರ್ಗ(~V)"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
+msgid  "Field from the ~List Table"
+msgstr "ಪಟ್ಟಿ ಕೋಷ್ಟಕದಿಂದ ವರ್ಗ(~L)"
+
+#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr "ಸಂಯೋಜನಾ ಚೌಕದ  ಮೌಲ್ಯವನ್ನು ದತ್ತಸಂಚಯದಲ್ಲಿ ಉಳಿಸಬಹುದು ಅಥವಾ ಪ್ರದರ್ಶನ ಕಾರ್ಯಗಳಿಗೆ ಬಳಸಬಹುದು."
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
+msgid  "Field Selection"
+msgstr "ವರ್ಗ ಆಯ್ಕೆ"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
+msgid  "Table element"
+msgstr "ಕೋಷ್ಟಕದ ಅಂಗ"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "ಈಗಿರುವ ವರ್ಗಗಳು"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
+msgid  "Selected fields"
+msgstr "ಆಯ್ಕೆಮಾಡಿದ ವರ್ಗಗಳು"
+
+#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
+msgid  " (Date)"
+msgstr " (ದಿನಾಂಕ)"
+
+#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
+msgid  " (Time)"
+msgstr " (ಸಮಯ)"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
+msgid  "Group Element Wizard"
+msgstr "ಗುಂಪು ಅಂಗ ಗಾರುಡಿ"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
+msgid  "Table Element Wizard"
+msgstr "ಕೋಷ್ಟಕ ಅಂಗ ಗಾರುಡಿ"
+
+#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
+msgid  "List Box Wizard"
+msgstr "ಪಟ್ಟಿ ಚೌಕ ಗಾರುಡಿ"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
+msgid  "Combo Box Wizard"
+msgstr "ಕಾಂಬೋ ಚೌಕದ ಗಾರುಡಿ"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
+msgid  "The table connection to the data source could not be established."
+msgstr "ದತ್ತ ಆಕರಕ್ಕೆ ಕೋಷ್ಟಕ ಸಂಪರ್ಕವನ್ನು ಸ್ಥಾಪಿಸಲಾಗಲಿಲ್ಲ."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
+msgid  "Data"
+msgstr "ದತ್ತಾಂಶ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
+msgid  "Data"
+msgstr "ದತ್ತಾಂಶ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr "ಪ್ರಸ್ತುತ, ನಿಯಂತ್ರಣವು ಇರುವ ನಮೂನೆಯು (ಅಥವಾ ಪೂರ್ಣವಾಗಿ) ದತ್ತ ಆಕರಕ್ಕೆ ಬಂಧಿತವಾಗಿಲ್ಲ.\n\nದಯವಿಟ್ಟು ಒಂದು ದತ್ತ ಆಕರವನ್ನು ಮತ್ತು ಕೋಷ್ಟಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.\n\n\nಈ ಪುಟದಲ್ಲಿ ಮಾಡುವ ಸಿದ್ಧತೆಗಳು, ಪುಟದಿಂದ ಹೊರಬಂದ ಕೂಡಲೇ ಜಾರಿಗೆ ಬರುತ್ತವೆ ಎಂಬುದನ್ನು ದಯಮಾಡಿ ಗಮನಿಸಿ."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
+msgid  "~Data source:"
+msgstr "ದತ್ತ ಆಕರ(~D):"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
+msgid  "~Table / Query:"
+msgstr "ಕೋಷ್ಟಕ / ಪ್ರಶ್ನೆ(~T):"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
+msgid  "Database Field"
+msgstr "ದತ್ತಸಂಚಯದ ವರ್ಗ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
+msgid  "Do you want to save the value in a database field?"
+msgstr "ಮೌಲ್ಯವನ್ನು ದತ್ತಸಂಚಯ ವರ್ಗದಲ್ಲಿ ಉಳಿಸಬೇಕೇ?"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr "ಹೌದು, ನಾನು ಕೆಳಗಿನ ದತ್ತಸಂಚಯ ವರ್ಗದಲ್ಲಿ ಇದನ್ನು ಉಳಿಸಲು ಬಯಸುತ್ತೇನೆ(~Y):"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
+msgid  "~No, I only want to save the value in the form."
+msgstr "ಇಲ್ಲ, ನಾನು ಕೇವಲ ಮೌಲ್ಯವನ್ನು ಈ ನಮೂನೆಯಲ್ಲಿ ಉಳಿಸಲು ಬಯಸುತ್ತೇನೆ(~N)."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
+msgid  "Form"
+msgstr "ಫಾರ್ಮ್"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
+msgid  "Data source"
+msgstr "ದತ್ತ ಆಕರ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
+msgid  "Content type"
+msgstr "ವಿಷಯದ ಬಗೆ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
+msgid  "Content"
+msgstr "ವಿಷಯ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
+msgid  "Table"
+msgstr "ಕೋಷ್ಟಕ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
+msgid  "Query"
+msgstr "ಪ್ರಶ್ನೆ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
+msgid  "SQL command"
+msgstr "SQL ಆದೇಶ"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
+msgid  "Data"
+msgstr "ದತ್ತಾಂಶ"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
+msgid  "Which ~names do you want to give the option fields?"
+msgstr "ಆಯ್ಕೆ ವರ್ಗಗಳಿಗೆ ಯಾವ ಹೆಸರುಗಳನ್ನು ಕೊಡಲು ಬಯಸುತ್ತೀರಿ(~n)?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "ಆಯ್ಕೆಯ ವರ್ಗಗಳು(~O)"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
+msgid  "Default Field Selection"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ವರ್ಗ ಆಯ್ಕೆ"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
+msgid  "Should one option field be selected as a default?"
+msgstr "ಯಾವುದಾದರೂ ಆಯ್ಕೆ ವರ್ಗವನ್ನು ಪೂರ್ವನಿಯೋಜಿತವೆಂಬಂತೆ ಆರಿಸ ಬೇಕೇ?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
+msgid  "~Yes, the following:"
+msgstr "ಹೌದು, ಈ ಕೆಳಗೆ ಕಾಣಿಸುವವುಗಳನ್ನು(~Y):"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
+msgid  "No, one particular field is not going to be selected."
+msgstr "ಇಲ್ಲ, ಯಾವುದೇ ಒಂದು ನಿರ್ದಿಷ್ಟ ವರ್ಗವನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗುವುದಿಲ್ಲ."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
+msgid  "Field Values"
+msgstr "ವರ್ಗದ ಮೌಲ್ಯಗಳು"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
+msgid  "When you select an option, the option group is given a specific value."
+msgstr "ಒಂದು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿದರೆ, ಆಯ್ಕೆ ಮಾಡಿದ ಸಮೂಹಕ್ಕೆ ನಿರ್ದಿಷ್ಟ ಮೌಲ್ಯವನ್ನು ಕೊಡಲಾಗುತ್ತದೆ."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
+msgid  "Which ~value do you want to assign to each option?"
+msgstr "ಪ್ರತಿಯೊಂದು ವರ್ಗಕ್ಕೆ ಯಾವ ಮೌಲ್ಯವನ್ನು ಕೊಡಲು ಬಯಸುತ್ತೀರಿ(~v)?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "ಐಚ್ಛಿಕ ವರ್ಗಗಳು(~O)"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
+msgid  "Create Option Group"
+msgstr "ಐಚ್ಛಿಕ ಸಮೂಹವನ್ನು ತಯಾರಿಸು"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
+msgid  "Which ~caption is to be given to your option group?"
+msgstr "ನಿಮ್ಮ ಆಯ್ಕೆಯ ಗುಂಪಿಗೆ ಯಾವ ಶೀರ್ಷಿಕೆಯನ್ನು ಕೊಡಬೇಕು(~c)?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
+msgid  "These were all details needed to create the option group."
+msgstr "ಆಯ್ಕೆಯ ಗುಂಪನ್ನು ತಯಾರಿಸಲು ಈ ವಿವರಗಳೇ ಅವಶ್ಯಕವಾಗಿದ್ದವು."
+
+#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgstr "ಐಚ್ಛಿಕ ಸಮೂಹದ ಮೌಲ್ಯವನ್ನು ಒಂದು ದತ್ತಸಂಚಯ ವರ್ಗದಲ್ಲಿ ಉಳಿಸಬಹುದು ಅಥವಾ ಮುಂದಿನ ಕಾರ್ಯಗಳಲ್ಲಿ ಬಳಸಬಹುದು."
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
+msgid  "<< Back"
+msgstr "<< ಹಿಂದಕ್ಕೆ"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
+msgid  "Next >>"
+msgstr "ಮುಂದಕ್ಕೆ >>"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
+msgid  "Accept"
+msgstr "ಅಂಗೀಕರಿಸು"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
+msgid  "Finish"
+msgstr "ಮುಗಿಸು"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
+msgid  " - Software License Agreement"
+msgstr " - ತಂತ್ರಾಂಶ ಪರವಾನಗಿ ಒಪ್ಪಂದ"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
+msgid  "- User Data"
+msgstr "- ಬಳಕೆದಾರ ದತ್ತಾಂಶ"
+
+#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
+msgid  "Welcome"
+msgstr "ಸ್ವಾಗತ"
+
+#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr "%PRODUCTNAME %PRODUCTVERSION OEM ಗೆ ಸ್ವಾಗತ\n\n%PRODUCTNAME %PRODUCTVERSION OEM ಅನ್ನು ಆರಂಭಿಸಲು, ದಯವಿಟ್ಟು ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಪರವಾನಗಿ ಪಠ್ಯದ ನಂತರ ಕಾಣಿಸಿಕೊಳ್ಳುವ ಸಂವಾದದಲ್ಲಿ ನಮೂದಿಸಿ. ಪ್ರಮುಕವಾದ ಮಾಹಿತಿಯನ್ನು %PRODUCTNAME ಉತ್ಪನ್ನ ಕೋಶದಲ್ಲಿನ ರೀಡ್‌ಮಿ ಕಡತದಲ್ಲಿ ಇರುತ್ತದೆ . ದಯವಿಟ್ಟು ಈ ಕಡತಗಳನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಓದಿ. Oracle ಜಾಲತಾಣದ ಬಗೆಗಿನ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಯನ್ನೂ ಸಹ ನೀವು \n\nhttp://www.oracle.com/us/products/applications/open-office ನಲ್ಲಿ ನೋಡಬಹುದು."
+
+#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
+msgid  "License Agreement"
+msgstr "ಪರವಾನಗಿ ಒಪ್ಪಂದ"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation:"
+msgstr "ಅನುಸ್ಥಾಪನೆಯಲ್ಲಿ ಮುಂದಿವರೆಯಲು ದಯವಿಟ್ಟು ಈ ಕ್ರಮಗಳನ್ನು ಅನುಸರಿಸಿ:"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
+msgid  "1."
+msgstr "೧."
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr "ಸಂಪೂರ್ಣ ಪರವಾನಗಿ ಒಪ್ಪಂದವನ್ನು ನೋಡಿ. ಈ ಸಂವಾದದಲ್ಲಿ ಸಂಪೂರ್ಣ ಪರವಾನಗಿ ಪಠ್ಯವನ್ನು ನೋಡಲು ದಯವಿಟ್ಟು ಚಲನಪಟ್ಟಿಕೆ ಅಥವ '%PAGEDOWN' ಗುಂಡಿಯನ್ನು ಬಳಸಿ."
+
+#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
+msgid  "Page Down"
+msgstr "Page Down"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
+msgid  "2."
+msgstr "೨."
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
+msgid  "Accept the License Agreement."
+msgstr "ಪರವಾನಗಿ ಒಪ್ಪಂದವನ್ನು ಒಪ್ಪಿಕೊ."
+
+#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
+msgid  "I accept the terms of the Agreement."
+msgstr "ನಾನು ಒಪ್ಪಂದದ ನಿಯಮಗಳನ್ನು ಒಪ್ಪಿಕೊಳ್ಳುತ್ತೇನೆ."
+
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
+msgid  "~Accept"
+msgstr "ಅಂಗೀರಿಸು(~A)"
+
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
+msgid  "Decline"
+msgstr "ನಿರಾಕರಿಸು"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
+msgid  "Tab Order"
+msgstr "ಟ್ಯಾಬ್‌ನ ಸ್ತರ"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
+msgid  "Controls"
+msgstr "ನಿಯಂತ್ರಣಗಳು"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
+msgid  "Move Up"
+msgstr "ಮೇಲಕ್ಕೆ ಚಲಿಸು"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
+msgid  "Move Down"
+msgstr "ಕೆಳಕ್ಕೆ ಚಲಿಸು"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
+msgid  "Automatic Sort"
+msgstr "ಸ್ವಯಂಚಾಲಿತ ವಿಂಗಡಣೆ"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr "ಇವು $control_class$ $control_name$ ಗಳಿಗೆ ಲೇಬಲ್ ವರ್ಗಗಳಂತೆ ಬಳಸಬಹುದಾದ ನಿಯಂತ್ರಣ ವರ್ಗಗಳು."
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
+msgid  "~No assignment"
+msgstr "ಕಾರ್ಯ ನಿಗದಿಯಾಗಿಲ್ಲ್ಲ(~N)"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
+msgid  "Label Field Selection"
+msgstr "ಲೇಬಲ್ ವರ್ಗ ಆಯ್ಕೆ"
+
+#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
+msgid  "Forms"
+msgstr "ನಮೂನೆಗಳು"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr "ಮಾದರಿಯಿಂದ ನೀವು ದತ್ತಾಂಶದ ಬಗೆ '#type#' ಅನ್ನು ಅಳಿಸಿಹಾಕಲು ಬಯಸುತ್ತೀರೆ?\nಈ ದತ್ತಾಂಶ ಬಗೆಗೆ ಬದ್ಧವಾಗಿರುವ ಎಲ್ಲಾ ನಿಯಂತ್ರಣಗಳ ಮೇಲೆ ಇದು ಪರಿಣಾಮ ಬೀರುತ್ತದೆ ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ನೆನಪಿನಲ್ಲಿಡಿ."
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
+msgid  "Button"
+msgstr "ಗುಂಡಿ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
+msgid  "Option Button"
+msgstr "ಆಯ್ಕೆಗುಂಡಿ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
+msgid  "Check Box"
+msgstr "ಪರೀಕ್ಷಕ ಚೌಕ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label Field"
+msgstr "ಲೇಬಲ್ ವರ್ಗ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
+msgid  "Group Box"
+msgstr "ಗುಂಪು ಚೌಕ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
+msgid  "Text Box"
+msgstr "ಪಠ್ಯ ಚೌಕ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "ರಚನೆಯಾಗಿರುವ ವರ್ಗ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
+msgid  "List Box"
+msgstr "ಪಟ್ಟಿ ಚೌಕ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
+msgid  "Combo Box"
+msgstr "ಕಾಂಬೋ ಚೌಕ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
+msgid  "Image Button"
+msgstr "ಬಿಂಬದ ಗುಂಡಿ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
+msgid  "Hidden Control"
+msgstr "ಅಡಗಿಸಿರುವ ನಿಯಂತ್ರಣ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
+msgid  "Control (unknown type)"
+msgstr "ನಿಯಂತ್ರಣ(ಗೊತ್ತಿಲ್ಲದ ಬಗೆ)"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "ಬಿಂಬದ ನಿಯಂತ್ರಣ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
+msgid  "File Selection"
+msgstr "ಕಡತ ಆಯ್ಕೆ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
+msgid  "Date Field"
+msgstr "ದಿನಾಂಕ ವರ್ಗ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
+msgid  "Time Field"
+msgstr "ಸಮಯ ವರ್ಗ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
+msgid  "Numeric Field"
+msgstr "ಅಂಕಿಯ ವರ್ಗ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
+msgid  "Currency Field"
+msgstr "ಚಲಾವಣೆ ನಾಣ್ಯ ವರ್ಗ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
+msgid  "Pattern Field"
+msgstr "ಮಾದರಿ ವರ್ಗ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
+msgid  "Table Control "
+msgstr "ಕೋಷ್ಟಕ ನಿಯಂತ್ರಣ"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
+msgid  "Link fields"
+msgstr "ಜೋಡಣಾ ವರ್ಗಗಳು"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
+msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr "ಪ್ರಮುಖ ಫಾರ್ಮಿನ ಪ್ರಸಕ್ತ ದಾಖಲೆಯ ಬಗೆಗಿನ ವಿವರವಾದ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಲು ಉಪ ಫಾರ್ಮುಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಹೀಗೆ ಮಾಡಲು, ಉಪ ಫಾರ್ಮಿನಲ್ಲಿ ಯಾವ ಲಂಬಸಾಲುಗಳನ್ನು ಪ್ರಮುಖ ಫಾರ್ಮಿನ ಯಾವ ಲಂಬಸಾಲಿಗೆ ತಾಳೆಯಾಗಬೇಕು ಎಂದು ನೀವು ಸೂಚಿಸಬಹುದು."
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
+msgid  "Suggest"
+msgstr "ಸಲಹೆ ಮಾಡು"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
+msgid  "Sub Form"
+msgstr "ಉಪ ಫಾರ್ಮ್"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
+msgid  "Master Form"
+msgstr "ಪ್ರಮುಖ ಫಾರ್ಮ್"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
+msgid  "The columns of '#' could not be retrieved."
+msgstr "'#' ನ ಲಂಬಸಾಲನ್ನು ಹಿಂದಕ್ಕೆ ಪಡೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+
+#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
+msgid  "Default"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "ಸಾಮಾನ್ಯ"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "ದತ್ತ"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
+msgid  "No"
+msgstr "ಇಲ್ಲ"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
+msgid  "Yes"
+msgstr "ಹೌದು"
+
+#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
+msgid  "Help"
+msgstr "ಸಹಾಯ"
+
+#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
+msgid  "<Embedded-Image>"
+msgstr "<ಅಡಕಗೊಳಿಸಲಾದ-ಚಿತ್ರ>"
+
+#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
+msgid  "Text"
+msgstr "ಪಠ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
+msgid  "Edit mask"
+msgstr "ಕವಚವನ್ನು ಸಂಪಾದಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
+msgid  "Literal mask"
+msgstr "ವಾಸ್ತವವಾದ ಕವಚ"
+
+#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
+msgid  "Read-only"
+msgstr "ಓದು ಮಾತ್ರ"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
+msgid  "Enabled"
+msgstr "ಶಕ್ತಗೊಂಡಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "ಗೋಚರ"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
+msgid  "AutoFill"
+msgstr "ಸ್ವಯಂಚಾಲಿತ ಭರ್ತಿ"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
+msgid  "Line count"
+msgstr "ಸಾಲಿನ ಎಣಿಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
+msgid  "Max. text length"
+msgstr "ಪಠ್ಯದ ಗರಿಷ್ಠ ಉದ್ದ"
+
+#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
+msgid  "Spin Button"
+msgstr "ತಿರುಗಣೆ ಗುಂಡಿ"
+
+#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
+msgid  "Strict format"
+msgstr "ಕಟ್ಟುನಿಟ್ಟಾದ ರಚನೆ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
+msgid  "Thousands separator"
+msgstr "ಸಾವಿರದ ವಿಭಾಜಕ"
+
+#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
+msgid  "Printable"
+msgstr "ಮುದ್ರಿಸಬಹುದಾದ"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
+msgid  "Frame"
+msgstr "ಚೌಕಟ್ಟು"
+
+#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
+msgid  "Help text"
+msgstr "ಸಹಾಯಕ ಪಠ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
+msgid  "Help URL"
+msgstr "ಸಹಾಯಕ ಯುಆರ್‌ಎಲ್"
+
+#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
+msgid  "Additional information"
+msgstr "ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿ"
+
+#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
+msgid  "Password character"
+msgstr "ಗುಪ್ತಪದದ ಅಕ್ಷರ"
+
+#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
+msgid  "Tristate"
+msgstr "ಮೂರುಸ್ಥಿತಿಯುಳ್ಳ"
+
+#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
+msgid  "Empty string is NULL"
+msgstr "ಖಾಲಿಯಾದ ಅಕ್ಷರಪುಂಜವು NULL ಆಗಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
+msgid  "Decimal accuracy"
+msgstr "ದಶಮಾಂಶ ನಿಖರತೆ"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
+msgid  "Graphics"
+msgstr "ಚಿತ್ರಗಳು"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
+msgid  "Default selection"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಆಯ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
+msgid  "Default button"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಗುಂಡಿ"
+
+#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
+msgid  "Label Field"
+msgstr "ಲೇಬಲ್ ವರ್ಗ"
+
+#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
+msgid  "Label"
+msgstr "ಲೇಬಲ್"
+
+#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "ಹೊಂದಿಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr "ಲಂಬ ಹೊಂದಿಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
+msgid  "Top"
+msgstr "ಮೇಲೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
+msgid  "Middle"
+msgstr "ಮಧ್ಯ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
+msgid  "Bottom"
+msgstr "ಕೆಳಗೆ"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
+msgid  "Graphics alignment"
+msgstr "ಗ್ರಾಫಿಕ್ಸುಗಳ ಹೊಂದಿಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "ಅಕ್ಷರಶೈಲಿ"
+
+#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
+msgid  "Background color"
+msgstr "ಹಿನ್ನೆಲೆ ಬಣ್ಣ"
+
+#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
+msgid  "Border"
+msgstr "ಅಂಚು"
+
+#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
+msgid  "Icon size"
+msgstr "ಚಿಹ್ನೆಯ ಗಾತ್ರ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
+msgid  "Small"
+msgstr "ಚಿಕ್ಕದು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
+msgid  "Large"
+msgstr "ದೊಡ್ಡದು"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
+msgid  "Positioning"
+msgstr "ಸ್ಥಳದಲ್ಲಿ ಇರಿಸುವಿಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
+msgid  "Navigation"
+msgstr "ನೇವಿಗೇಶನ್"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
+msgid  "Acting on a record"
+msgstr "ಒಂದು ದಾಖಲೆಯ ಮೇಲೆ ಕೆಲಸ ಮಾಡುವಿಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
+msgid  "Filtering / Sorting"
+msgstr "ಶೋಧನೆ / ವಿಂಗಡಣೆ"
+
+#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
+msgid  "Horizontal scroll bar"
+msgstr "ಅಡ್ಡ ಚಲನಪಟ್ಟಿಕೆ "
+
+#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
+msgid  "Vertical scroll bar"
+msgstr "ಉದ್ದ ಚಲನಪಟ್ಟಿಕೆ "
+
+#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
+msgid  "Word break"
+msgstr "ಪದಗಳ ತಡೆ"
+
+#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
+msgid  "Multiline input"
+msgstr "ಬಹುಸಾಲು ಇನ್‌ಪುಟ್‌"
+
+#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
+msgid  "Multiselection"
+msgstr "ಬಹುಆಯ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
+msgid  "Name"
+msgstr "ಹೆಸರು"
+
+#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
+msgid  "Tab order"
+msgstr "ಟ್ಯಾಬ್‌ನ ಸ್ತರ"
+
+#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
+msgid  "Mouse wheel scroll"
+msgstr "ಮೌಸ್‌ನ ಚಕ್ರದ ಚಲನೆ"
+
+#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr "ಶೋಧಕ"
+
+#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
+msgid  "Sort"
+msgstr "ವಿಂಗಡಣೆ"
+
+#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
+msgid  "Record marker"
+msgstr "ದಾಖಲೆ ಗುರುತುಗಾರ"
+
+#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
+msgid  "Filter proposal"
+msgstr "ಶೋಧಕ ಪ್ರಸ್ತಾವನೆ"
+
+#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
+msgid  "Navigation bar"
+msgstr "ನೇವಿಗೇಶನ್ ಪಟ್ಟಿಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
+msgid  "Cycle"
+msgstr "ಚಕ್ರ"
+
+#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
+msgid  "Tabstop"
+msgstr "ಟ್ಯಾಬ್ ತಡೆ"
+
+#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
+msgid  "Data field"
+msgstr "ದತ್ತ ವರ್ಗ"
+
+#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
+msgid  "Dropdown"
+msgstr "ಕೆಳಕ್ಕೆ ಬೀಳಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
+msgid  "Bound field"
+msgstr "ಬಂಧಿತ ವರ್ಗ"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
+msgid  "List content"
+msgstr "ವಿಷಯ ಪಟ್ಟಿ"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
+msgid  "Type of list contents"
+msgstr "ಪಟ್ಟಿಯ ವಿಷಯಗಳ ಬಗೆ"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
+msgid  "Content"
+msgstr "ವಿಷಯ"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
+msgid  "Content type"
+msgstr "ವಿಷಯದ ಬಗೆ"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
+msgid  "Allow additions"
+msgstr "ಸೇರಿಸುವುದನ್ನು ಅನುಮತಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
+msgid  "Allow deletions"
+msgstr "ಅಳಿಸಿ ಹಾಕುವುದನ್ನು ಅನುಮತಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
+msgid  "Allow modifications"
+msgstr "ಮಾರ್ಪಾಡಿಸುವುದನ್ನು ಅನುಮತಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
+msgid  "Add data only"
+msgstr "ದತ್ತವನ್ನು ಮಾತ್ರ ಸೇರಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+msgid  "Data source"
+msgstr "ದತ್ತ ಆಕರ"
+
+#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
+msgstr "ಮುಖ್ಯ ವರ್ಗಗಳಲ್ಲಿ ಸಂಪರ್ಕ ಏರ್ಪಡಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
+msgid  "Link slave fields"
+msgstr "ಸೇವಕ ವರ್ಗಗಳಲ್ಲಿ ಸಂಪರ್ಕ ಏರ್ಪಡಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
+msgid  "Value min."
+msgstr "ಕನಿಷ್ಠ ಮೌಲ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
+msgid  "Value max."
+msgstr "ಗರಿಷ್ಠ ಮೌಲ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
+msgid  "Incr./decrement value"
+msgstr "ಮೌಲ್ಯ ಹೆಚ್ಚಿಸು/ಇಳಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
+msgid  "Currency symbol"
+msgstr "ಚಲಾಯಿತ ನಾಣ್ಯ ಚಿನ್ಹೆ"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
+msgid  "Date min."
+msgstr "ದಿನಾಂಕ ಕನಿಷ್ಠ"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
+msgid  "Date max."
+msgstr "ದಿನಾಂಕ ಗರಿಷ್ಠ"
+
+#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
+msgid  "Date format"
+msgstr "ದಿನಾಂಕ ರಚನೆ"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
+msgid  "Selection"
+msgstr "ಆಯ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
+msgid  "Time min."
+msgstr "ಸಮಯ ಕನಿಷ್ಠ"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
+msgid  "Time max."
+msgstr "ಸಮಯ ಗರಿಷ್ಠ"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
+msgid  "Time format"
+msgstr "ವೇಳೆಯ ರಚನೆ"
+
+#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
+msgid  "Prefix symbol"
+msgstr "ಪ್ರಾರಂಭದಲ್ಲಿ ಚಿಹ್ನೆಯನ್ನು ಸೇರಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
+msgid  "Value"
+msgstr "ಮೌಲ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
+msgid  "Formatting"
+msgstr "ಫಾರ್ಮಾಟು ಮಾಡಲಾಗುತ್ತಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
+msgid  "Class ID"
+msgstr "ವರ್ಗ ಗುರುತು"
+
+#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "ಎತ್ತರ"
+
+#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "ಅಗಲ"
+
+#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
+msgid  "List index"
+msgstr "ಸೂಚಿಪಟ್ಟಿಯನ್ನು ಪಟ್ಟಿ ಮಾಡು"
+
+#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
+msgid  "Row height"
+msgstr "ಅಡ್ಡಸಾಲಿನ ಎತ್ತರ"
+
+#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
+msgid  "Fill color"
+msgstr "ಬಣ್ಣವನ್ನು ತುಂಬು"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
+msgid  "Line color"
+msgstr "ಸಾಲಿನ ಬಣ್ಣ"
+
+#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
+msgid  "Reference value (on)"
+msgstr "ಉಲ್ಲೇಖ ಮೌಲ್ಯ (ಚಾಲಿತ)"
+
+#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
+msgid  "Reference value (off)"
+msgstr "ಉಲ್ಲೇಖ ಮೌಲ್ಯ (ಸ್ಥಗಿತ)"
+
+#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
+msgid  "List entries"
+msgstr "ನಮೂದುಗಳನ್ನು ಪಟ್ಟಿಮಾಡು"
+
+#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
+msgid  "Action"
+msgstr "ಕ್ರಿಯೆ"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
+msgid  "Type of submission"
+msgstr "ಸಲ್ಲಿಕೆಯ ಬಗೆ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
+msgid  "Default status"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಸ್ಥಿತಿ"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
+msgid  "Submission encoding"
+msgstr "ಸಲ್ಲಿಕೆಯ ಎನ್ಕೋಡಿಂಗ್"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
+msgid  "Default value"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
+msgid  "Default text"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಪಠ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
+msgid  "Default date"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ದಿನಾಂಕ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
+msgid  "Default time"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಸಮಯ"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
+msgid  "Frame"
+msgstr "ಚೌಕಟ್ಟು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
+msgid  "Without frame"
+msgstr "ಚೌಕಟ್ಟಿಲ್ಲದೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
+msgid  "3D look"
+msgstr "ಮೂರು ಆಯಾಮದ ನೋಟ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
+msgid  "Flat"
+msgstr "ಚಪ್ಪಟೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
+msgid  "Valuelist"
+msgstr "ಮೌಲ್ಯಪಟ್ಟಿ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+msgid  "Table"
+msgstr "ಕೋಷ್ಟಕ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+msgid  "Query"
+msgstr "ವಿಚಾರಣೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
+msgid  "Sql"
+msgstr "Sql"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
+msgid  "Sql [Native]"
+msgstr "Sql [ಸ್ಥಳೀಯ]"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
+msgid  "Tablefields"
+msgstr "ಕೋಷ್ಟಕವರ್ಗಗಳು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
+msgid  "Left"
+msgstr "ಎಡ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
+msgid  "Center"
+msgstr "ಮಧ್ಯ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
+msgid  "Right"
+msgstr "ಬಲ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
+msgid  "None"
+msgstr "ಏನೂ ಇಲ್ಲ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
+msgid  "Submit form"
+msgstr "ಫಾರ್ಮನ್ನು ಸಲ್ಲಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
+msgid  "Reset form"
+msgstr "ಫಾರ್ಮನ್ನು ಮರುಹೊಂದಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
+msgid  "Open document/web page"
+msgstr "ದಸ್ತಾವೇಜನ್ನು/ಜಾಲಪುಟವನ್ನು ತೆರೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
+msgid  "First record"
+msgstr "ಮೊದಲಿನ ದಾಖಲೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
+msgid  "Previous record"
+msgstr "ಹಿಂದಿನ ದಾಖಲೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
+msgid  "Next record"
+msgstr "ಮುಂದಿನ ದಾಖಲೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
+msgid  "Last record"
+msgstr "ಕೊನೆಯ ದಾಖಲೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
+msgid  "Save record"
+msgstr "ದಾಖಲೆಯನ್ನು ಉಳಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
+msgid  "Undo data entry"
+msgstr "ದತ್ತಾಂಶ ನಮೂದನ್ನು ರದ್ದುಪಡಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
+msgid  "New record"
+msgstr "ಹೊಸ ದಾಖಲೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
+msgid  "Delete record"
+msgstr "ದಾಖಲೆಯನ್ನು ಅಳಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
+msgid  "Refresh form"
+msgstr "ಫಾರ್ಮನ್ನು ಪುನಶ್ಚೇತನಗೊಳಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
+msgid  "Get"
+msgstr "ಪಡೆದುಕೊ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
+msgid  "Post"
+msgstr "ಅಂಟಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
+msgid  "Multipart"
+msgstr "ಬಹುಭಾಗ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
+msgid  "Text"
+msgstr "ಪಠ್ಯ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
+msgid  "Standard (short)"
+msgstr "ಮಾನಕ (ಚಿಕ್ಕದು)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
+msgid  "Standard (short YY)"
+msgstr "ಮಾನಕ (ಚಿಕ್ಕದುYY)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
+msgid  "Standard (short YYYY)"
+msgstr "ಮಾನಕ (ಚಿಕ್ಕದುYYYY)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
+msgid  "Standard (long)"
+msgstr "ಮಾನಕ (ದೊಡ್ಡದು)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
+msgid  "DD/MM/YY"
+msgstr "DD/MM/YY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
+msgid  "MM/DD/YY"
+msgstr "MM/DD/YY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
+msgid  "YY/MM/DD"
+msgstr "YY/MM/DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
+msgid  "DD/MM/YYYY"
+msgstr "DD/MM/YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
+msgid  "MM/DD/YYYY"
+msgstr "MM/DD/YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
+msgid  "YYYY/MM/DD"
+msgstr "YYYY/MM/DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
+msgid  "YY-MM-DD"
+msgstr "YY-MM-DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
+msgid  "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
+msgid  "13:45"
+msgstr "13:45"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
+msgid  "13:45:00"
+msgstr "13:45:00"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
+msgid  "01:45 PM"
+msgstr "01:45 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
+msgid  "01:45:00 PM"
+msgstr "01:45:00 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
+msgid  "Not Selected"
+msgstr "ಆರಿಸಲಾಗಿಲ್ಲ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
+msgid  "Selected"
+msgstr "ಆರಿಸಲಾದ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
+msgid  "Not Defined"
+msgstr "ಸೂಚಿಸದೆ ಇರುವ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
+msgid  "All records"
+msgstr "ಎಲ್ಲಾ ದಾಖಲೆಗಳು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
+msgid  "Active record"
+msgstr "ಸಕ್ರಿಯ ದಾಖಲೆಗಳು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
+msgid  "Current page"
+msgstr "ಪ್ರಸಕ್ತ ಪುಟ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
+msgid  "No"
+msgstr "ಇಲ್ಲ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
+msgid  "Yes"
+msgstr "ಹೌದು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
+msgid  "Parent Form"
+msgstr "ಮೂಲ ನಮೂನೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
+msgid  "None"
+msgstr "ಏನೂ ಇಲ್ಲ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
+msgid  "Single"
+msgstr "ಒಂದು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
+msgid  "Multi"
+msgstr "ಅನೇಕ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
+msgid  "Range"
+msgstr "ಶ್ರೇಣಿ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
+msgid  "Fill parameters"
+msgstr "ನಿಯತಾಂಕಗಳನ್ನು ಭರ್ತಿಮಾಡು"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
+msgid  "Execute action"
+msgstr "ಕ್ರಿಯೆಯನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
+msgid  "After updating"
+msgstr "ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾದ ನಂತರ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
+msgid  "Before updating"
+msgstr "ಅಪ್‌ಡೇಟ್ ಮಾಡುವ ಮುನ್ನ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
+msgid  "Before record action"
+msgstr "ದಾಖಲೆ ಕ್ರಿಯೆಗೆ ಮುಂಚೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
+msgid  "After record action"
+msgstr "ದಾಖಲೆ ಕ್ರಿಯೆಯ ನಂತರ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
+msgid  "Confirm deletion"
+msgstr "ಅಳಿಸುವುದನ್ನು ಖಚಿತಗೊಳಿಸಿ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
+msgid  "Error occurred"
+msgstr "ದೋಷ ಸಂಭವಿಸಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
+msgid  "When receiving focus"
+msgstr "ಗಮನವನ್ನು ಸ್ವೀಕರಿಸುವಾಗ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
+msgid  "When losing focus"
+msgstr "ಗಮನವನ್ನು ಕಳೆದುಕೊಳ್ಳುವಾಗ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
+msgid  "Item status changed"
+msgstr "ಅಂಶದ ಸ್ಥಿತಿ ಬದಲಾಗಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
+msgid  "Key pressed"
+msgstr "ಕೀಲಿ ಒತ್ತಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
+msgid  "Key released"
+msgstr "ಕೀಲಿ ಒತ್ತಿಲ್ಲ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
+msgid  "When loading"
+msgstr "ಲೋಡ್ ಮಾಡುವಾಗ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
+msgid  "Before reloading"
+msgstr "ಮರಳಿ ಲೋಡ್ ಮಾಡುವ ಮುನ್ನ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
+msgid  "When reloading"
+msgstr "ಮರಳಿ ಲೋಡ್ ಮಾಡುವಾಗ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
+msgid  "Mouse moved while key pressed"
+msgstr "ಕೀಲಿ ಒತ್ತಿರುವಾಗ ಮೌಸ್ ಚಲನೆಯಾಗಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
+msgid  "Mouse inside"
+msgstr "ಮೌಸ್ ಒಳಗೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
+msgid  "Mouse outside"
+msgstr "ಮೌಸ್ ಹೊರಗೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
+msgid  "Mouse moved"
+msgstr "ಮೌಸ್ ಚಲನೆಯಾಗಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
+msgid  "Mouse button pressed"
+msgstr "ಮೌಸ್ ಗುಂಡಿ ಒತ್ತಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
+msgid  "Mouse button released"
+msgstr "ಮೌಸ್ ಗುಂಡಿ ಒತ್ತಿಲ್ಲ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
+msgid  "Before record change"
+msgstr "ದಾಖಲಾತಿಯನ್ನು ಬದಲಿಸುವುದಕ್ಕೆ ಮುನ್ನ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
+msgid  "After record change"
+msgstr "ದಾಖಲಾತಿಯನ್ನು ಬದಲಿಸಿದ ನಂತರ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
+msgid  "After resetting"
+msgstr "ಮರುಸಿದ್ಧಗೊಳಿಸಿದ ನಂತರ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
+msgid  "Prior to reset"
+msgstr "ಮರುಸಿದ್ಧತೆಗೆ ಮುಂಚೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
+msgid  "Approve action"
+msgstr "ಒಪ್ಪಿಕೊಳ್ಳುವ ಕ್ರಿಯೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
+msgid  "Before submitting"
+msgstr "ಸಲ್ಲಿಸುವುದಕ್ಕೆ ಮುನ್ನ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
+msgid  "Text modified"
+msgstr "ಪಠ್ಯ ಮಾರ್ಪಟ್ಟಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
+msgid  "Before unloading"
+msgstr "ಅನ್‌ಲೋಡ್ ಮಾಡುವುದಕ್ಕೆ ಮುನ್ನ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
+msgid  "When unloading"
+msgstr "ಅನ್‌ಲೋಡ್ ಮಾಡುವಾಗ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
+msgid  "Changed"
+msgstr "ಬದಲಾಗಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
+msgid  "Events"
+msgstr "ಘಟನೆಗಳು"
+
+#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
+msgid  "Analyze SQL command"
+msgstr "SQL ಆಜ್ಞೆಯನ್ನು ವಿಶ್ಲೇಷಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
+msgid  "PositionX"
+msgstr "ಸ್ಥಾನX"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
+msgid  "PositionY"
+msgstr "ಸ್ಥಾನY"
+
+#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
+msgid  "Title"
+msgstr "ಶೀರ್ಷಿಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
+msgid  "Page (step)"
+msgstr "ಪುಟ(ಹಂತ)"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
+msgid  "Progress value"
+msgstr "ಪ್ರಗತಿ ಮೌಲ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
+msgid  "Progress value min."
+msgstr "ಪ್ರಗತಿ ಮೌಲ್ಯ ಕನಿಷ್ಠ"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
+msgid  "Progress value max."
+msgstr "ಪ್ರಗತಿ ಮೌಲ್ಯ ಗರಿಷ್ಠ"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
+msgid  "Scroll value"
+msgstr "ಚಾಲನೆಯ ಮೌಲ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
+msgid  "Scroll value max."
+msgstr "ಚಾಲನೆಯ ಮೌಲ್ಯ ಗರಿಷ್ಠ"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
+msgid  "Scroll value min."
+msgstr "ಚಾಲನೆಯ ಮೌಲ್ಯ ಗರಿಷ್ಠ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
+msgid  "Default scroll value"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಚಲನ ಮೌಲ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
+msgid  "Small change"
+msgstr "ಸಣ್ಣ ಬದಲಾವಣೆ"
+
+#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
+msgid  "Large change"
+msgstr "ದೊಡ್ಡ ಬದಲಾವಣೆ"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
+msgid  "Delay"
+msgstr "ವಿಳಂಬ"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
+msgid  "Repeat"
+msgstr "ಪುನರಾವರ್ತಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
+msgid  "Visible size"
+msgstr "ಕಾಣಿಸುವ ಗಾತ್ರ"
+
+#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
+msgid  "Orientation"
+msgstr "ಅಭಿಮುಖ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
+msgid  "Horizontal"
+msgstr "ಅಡ್ಡ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
+msgid  "Vertical"
+msgstr "ಉದ್ದ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
+msgid  "While adjusting"
+msgstr "ಸರಿಹೊಂದಿಸುವಾಗ"
+
+#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
+msgid  "Date"
+msgstr "ದಿನಾಂಕ"
+
+#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
+msgid  "State"
+msgstr "ಸ್ಥಿತಿ"
+
+#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
+msgid  "Time"
+msgstr "ಸಮಯ"
+
+#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
+msgid  "Scale"
+msgstr "ಮಾಪಕ"
+
+#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
+msgid  "Button type"
+msgstr "ಗುಂಡಿಯ ಬಗೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
+msgid  "Default"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
+msgid  "OK"
+msgstr "ಸರಿ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
+msgid  "Cancel"
+msgstr "ರದ್ದುಮಾಡು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
+msgid  "Help"
+msgstr "ಸಹಾಯ"
+
+#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "ದತ್ತ ಆಕರ \"$name$\"ಕ್ಕೆ ಸಂಪರ್ಕವನ್ನು ಸಾಧಿಸಲಾಗಲಿಲ್ಲ."
+
+#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
+msgid  "Text"
+msgstr "ಪಠ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
+msgid  "Linked cell"
+msgstr "ಸಂಪರ್ಕ ಹೊಂದಿದ ಸೆಲ್‌"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
+msgid  "Source cell range"
+msgstr "ಆಕರ ಸೆಲ್‌ ವ್ಯಾಪ್ತಿ"
+
+#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
+msgid  "Contents of the linked cell"
+msgstr "ಸಂಪರ್ಕ ಏರ್ಪಡಿಸಲಾದ ಕೋಶದಲ್ಲಿನ ವಿಷಯಗಳು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
+msgid  "The selected entry"
+msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ನಮೂದು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
+msgid  "Position of the selected entry"
+msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ನಮೂದಿಸ ಸ್ಥಳ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
+msgid  "Scrollbars"
+msgstr "ಚಲನಪಟ್ಟಿಕೆಗಳು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
+msgid  "Single-line"
+msgstr "ಒಂದು-ಸಾಲು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
+msgid  "Multi-line"
+msgstr "ಅನೇಕ-ಸಾಉ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
+msgid  "Multi-line with formatting"
+msgstr "ಫಾರ್ಮಾಟಿಂಗ್ ಅನ್ನು ಹೊಂದಿರುವ ಬಹು-ಸಾಲು"
+
+#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
+msgid  "Symbol color"
+msgstr "ಸಂಕೇತದ ಬಣ್ಣ"
+
+#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
+msgid  "Text lines end with"
+msgstr "ಪಠ್ಯದ ಸಾಲುಗಳು ಇದರಿಂದ ಕೊನೆಗೊಳ್ಳುತ್ತವೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
+msgid  "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
+msgid  "CR+LF (Windows)"
+msgstr "CR+LF (Windows)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
+msgid  "None"
+msgstr "ಏನೂ ಇಲ್ಲ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
+msgid  "Horizontal"
+msgstr "ಅಡ್ಡ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
+msgid  "Vertical"
+msgstr "ಉದ್ದ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
+msgid  "Both"
+msgstr "ಎರಡೂ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
+msgid  "Table"
+msgstr "ಕೋಷ್ಟಕ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
+msgid  "Query"
+msgstr "ವಿಚಾರಣೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+msgid  "SQL command"
+msgstr "SQL ಆಜ್ಞೆ"
+
+#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
+msgid  "Toggle"
+msgstr "ಟಾಗಲ್"
+
+#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
+msgid  "Take Focus on Click"
+msgstr "ಕ್ಲಿಕ್ಕಿಸಿದಾಗ ಗಮನ ಸೆಳೆ"
+
+#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
+msgid  "Hide selection"
+msgstr "ಆಯ್ಕೆಯನ್ನು ಅಡಗಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
+msgid  "Style"
+msgstr "ಶೈಲಿ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
+msgid  "3D"
+msgstr "ಮೂರು ಆಯಾಮ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
+msgid  "Flat"
+msgstr "ಚಪ್ಪಟೆ"
+
+#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
+msgid  "Border color"
+msgstr "ಅಂಚಿನ ಬಣ್ಣ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
+msgid  "Left top"
+msgstr "ಎಡ ಮೇಲಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
+msgid  "Left centered"
+msgstr "ಎಡ ಮಧ್ಯಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
+msgid  "Left bottom"
+msgstr "ಎಡ ಕೆಳಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
+msgid  "Right top"
+msgstr "ಬಲ ಮೇಲಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
+msgid  "Right centered"
+msgstr "ಬಲ ಮಧ್ಯಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
+msgid  "Right bottom"
+msgstr "ಬಲ ಕೆಳಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
+msgid  "Above left"
+msgstr "ಮೇಲೆ ಎಡಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
+msgid  "Above centered"
+msgstr "ಮೇಲೆ ಮಧ್ಯಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
+msgid  "Above right"
+msgstr "ಮೇಲೆ ಬಲಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
+msgid  "Below left"
+msgstr "ಕೆಗೆ ಎಡಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
+msgid  "Below centered"
+msgstr "ಕೆಳಗೆ ಮಧ್ಯದಲ್ಲಿ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
+msgid  "Below right"
+msgstr "ಕೆಳಗೆ ಬಲಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
+msgid  "Centered"
+msgstr "ಮಧ್ಯಕ್ಕೆ ಹೊಂದಿಸಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
+msgid  "Wrap text automatically"
+msgstr "ಪಠ್ಯವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಆವರಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
+msgid  "Text type"
+msgstr "ಪಠ್ಯದ ಬಗೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
+msgid  "Hide"
+msgstr "ಅಡಗಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
+msgid  "Show"
+msgstr "ತೋರಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
+msgid  "XML data model"
+msgstr "XML ದತ್ತಾಂಶ ಮಾದರಿ"
+
+#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
+msgid  "Binding expression"
+msgstr "ಬೈಂಡಿಂಗ್ ಎಕ್ಸ್‍ಪ್ರೆಶನ್"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
+msgid  "Required"
+msgstr "ಅಗತ್ಯವಾದ"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
+msgid  "List entry source"
+msgstr "ಪಟ್ಟಿ ನಮೂದಿನ ಆಕರ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
+msgid  "Relevant"
+msgstr "ಸೂಕ್ತ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
+msgid  "Read-only"
+msgstr "ಓದು ಮಾತ್ರ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
+msgid  "Constraint"
+msgstr "ನಿರ್ಬಂಧ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
+msgid  "Calculation"
+msgstr "ಲೆಕ್ಕಾಚಾರ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
+msgid  "Data type"
+msgstr "ದತ್ತಾಂಶದ ಬಗೆ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
+msgid  "Whitespaces"
+msgstr "ಖಾಲಿ ಜಾಗಗಳು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
+msgid  "Preserve"
+msgstr "ಕಾದಿರಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
+msgid  "Replace"
+msgstr "ಬದಲಿಸು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
+msgid  "Collapse"
+msgstr "ಇದ್ದಕ್ಕಿದ್ದಂತೆ ಬೀಳಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
+msgid  "Pattern"
+msgstr "ಮಾದರಿ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
+msgid  "Length"
+msgstr "ಉದ್ದ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
+msgid  "Length (at least)"
+msgstr "ಉದ್ದ (ಕನಿಷ್ಟ)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
+msgid  "Length (at most)"
+msgstr "ಉದ್ದ (ಗರಿಷ್ಟ)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
+msgid  "Digits (total)"
+msgstr "ಅಂಕಿಗಳು (ಒಟ್ಟು)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
+msgid  "Digits (fraction)"
+msgstr "ಅಂಕೆಗಳು (ಭಿನ್ನರಾಶಿ)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
+msgid  "Max. (inclusive)"
+msgstr "ಗರಿಷ್ಟ (ಸಹಿತ)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
+msgid  "Max. (exclusive)"
+msgstr "ಗರಿಷ್ಟ (ರಹಿತ)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
+msgid  "Min. (inclusive)"
+msgstr "ಕನಿಷ್ಟ (ಸಹಿತ)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
+msgid  "Min. (exclusive)"
+msgstr "ಕನಿಷ್ಟ (ರಹಿತ)"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
+msgid  "Submission"
+msgstr "ಸಲ್ಲಿಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "ಬೈಂಡಿಂಗ್"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
+msgid  "Selection type"
+msgstr "ಆಯ್ಕೆಯ ಬಗೆ"
+
+#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
+msgid  "Root displayed"
+msgstr "ಮೂಲವನ್ನು ತೋರಿಸಲಾಗಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
+msgid  "Show handles"
+msgstr "ಹ್ಯಾಂಡಲ್‌ಗಳನ್ನು ತೋರಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
+msgid  "Show root handles"
+msgstr "ಮೂಲ ಹ್ಯಾಂಡಲ್‌ಗಳನ್ನು ತೋರಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
+msgid  "Editable"
+msgstr "ಸಂಪಾದಿಸಬಹುದಾದ"
+
+#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
+msgid  "Invokes stop node editing"
+msgstr "ನೋಡ್‌ ಸಂಪಾದನೆಯನ್ನು ನಿಲ್ಲಿಸಲು ಕೋರುತ್ತದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
+msgid  "With title bar"
+msgstr "ಶೀರ್ಷಿಕೆ ಪಟ್ಟಿಯೊಂದಿಗೆ"
+
+#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
+msgid  "No Label"
+msgstr "ಯಾವುದೆ ಲೇಬಲ್ ಇಲ್ಲದ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
+msgid  "No"
+msgstr "ಇಲ್ಲ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
+msgid  "Keep Ratio"
+msgstr "ಪ್ರಮಾಣವನ್ನು ಇರಿಸಿಕೊ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
+msgid  "Fit to Size"
+msgstr "ಗಾತ್ರಕ್ಕೆ ಹೊಂದಿಸು"
+
+#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
+msgid  "Input required"
+msgstr "ಇನ್‌ಪುಟ್‌ನ ಅಗತ್ಯವಿದೆ"
+
+#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
+msgid  "Text direction"
+msgstr "ಪಠ್ಯದ ದಿಕ್ಕು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
+msgid  "Left-to-right"
+msgstr "ಎಡದಿಂದ-ಬಲಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
+msgid  "Right-to-left"
+msgstr "ಬಲದಿಂದ ಎಡಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
+msgid  "Use superordinate object settings"
+msgstr "ಸೂಪರ್ಆರ್ಡಿನೇಟ್ ವಸ್ತು ಸಿದ್ಧತೆಗಳನ್ನು ಬಳಸಿ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
+msgid  "Never"
+msgstr "ಎಂದೂ ಬೇಡ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
+msgid  "When focused"
+msgstr "ಗಮನ ಕೇಂದ್ರೀಕರಿಸಿದಾಗ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
+msgid  "Always"
+msgstr "ಯಾವಾಗಲೂ"
+
+#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
+msgid  "Anchor"
+msgstr "ಲಂಗರು"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
+msgid  "To Paragraph"
+msgstr "ಪ್ಯಾರಾಗ್ರಾಫಿಗೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
+msgid  "As Character"
+msgstr "ಅಕ್ಷರದಂತೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
+msgid  "To Page"
+msgstr "ಪುಟಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
+msgid  "To Frame"
+msgstr "ಚೌಕಟ್ಟಿಗೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
+msgid  "To Character"
+msgstr "ಅಕ್ಷರಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
+msgid  "To Page"
+msgstr "ಪುಟಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
+msgid  "To Cell"
+msgstr "ಕೋಶಕ್ಕೆ"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
+msgid  "Regular"
+msgstr "ಸಾಮಾನ್ಯ"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
+msgid  "Bold Italic"
+msgstr "ಬೋಲ್ಡ್‍ ಇಟಾಲಿಕ್"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
+msgid  "Italic"
+msgstr "ಇಟಾಲಿಕ್"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
+msgid  "Bold"
+msgstr "ಬೋಲ್ಡ್‍"
+
+#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
+msgid  "(Default)"
+msgstr "(ಪೂರ್ವನಿಯೋಜಿತ)"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+msgid  "Character"
+msgstr "ಅಕ್ಷರ"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+msgid  "Font"
+msgstr "ಅಕ್ಷರಶೈಲಿ"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+msgid  "Font Effects"
+msgstr "ಅಕ್ಷರಶೈಲಿ ಪರಿಣಾಮಗಳು"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
+msgid  "New Data Type"
+msgstr "ಹೊಸ ದತ್ತಾಂಶ ಬಗೆ"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
+msgid  "Type a name for the new data type:"
+msgstr "ಹೊಸ ದತ್ತಾಂಶ ಬಗೆಗಾಗಿ ಒಂದು ಹೆಸರನ್ನು ನಮೂದಿಸಿ:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
+msgid  "About\\n Dev~ice"
+msgstr "ಸಾಧನದ\n ಬಗ್ಗೆ(~i)"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
+msgid  "Create\\nPreview"
+msgstr "ಮುನ್ನೋಟವನ್ನು\nತಯಾರಿಸು"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
+msgid  "Preview"
+msgstr "ಮುನ್ನೋಟ"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
+msgid  "Scan area"
+msgstr "ಪರಿಶೋಧನೆಯ ಪ್ರದೇಶ"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
+msgid  "Left:"
+msgstr "ಎಡ:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
+msgid  "Top:"
+msgstr "ಮೇಲೆ:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
+msgid  "Right:"
+msgstr "ಬಲ:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
+msgid  "Bottom:"
+msgstr "ಕೆಳಗೆ:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
+msgid  "Device used:"
+msgstr "ಬಳಕೆಯಾದ ಸಾಧನ:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
+msgid  "Resolution [~DPI]"
+msgstr "ವಿಭಜನೆ [~DPI]"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
+msgid  "Show advanced options"
+msgstr "ಮುಂದುವರಿದ ಆಯ್ಕೆಗಳನ್ನು ತೋರಿಸು"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
+msgid  "Options:"
+msgstr "ಆಯ್ಕೆಗಳು:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
+msgid  "Vector element"
+msgstr "ಸದಿಶ ಅಂಗ"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
+msgid  "Set"
+msgstr "ಗಣ"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
+msgid  "Scanner"
+msgstr "ಪರಿಶೋಧಕ"
+
+#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr "ಸಾಧನ: %s\nಮಾರಾಟಗಾರ: %s\nಮಾದರಿ: %s\nಬಗೆ %s"
+
+#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
+msgid  "An error occurred while scanning."
+msgstr "ಪರಿಶೋಧನೆ ಮಾಡುವಾಗ ದೋಷ ಸಂಭವಿಸಿದೆ."
+
+#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr "ಈ ಸಾಧನವು ಮುನ್ನೋಟದ ಆಯ್ಕೆಯನ್ನು ಒದಗಿಸುವುದಿಲ್ಲ. ಆದ್ದರಿಂದ, ಮುನ್ನೋಟಕ್ಕೆ ಬದಲಾಗಿ ಸಾಮಾನ್ಯ ಪರಿಶೋಧನೆಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಇದು ಸಾಕಷ್ಟು ಸಮಯವನ್ನು ತೆಗೆದುಕೊಳ್ಳಬಹುದು."
+
+#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "SANE  ಸಂಪರ್ಕಸಾಧನವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗಲಿಲ್ಲ. ಪರಿಶೋಧನೆಯು (Scanning) ಸಾಧ್ಯವಿಲ್ಲ."
+
+#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
+msgid  "Set"
+msgstr "ಗಣ"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
+msgid  "Linear ascending"
+msgstr "ರೇಖಾತ್ಮಕ ಆರೋಹಣ"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
+msgid  "Linear descending"
+msgstr "ರೇಖಾತ್ಮಕ ಅವರೋಹಣ"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
+msgid  "Original values"
+msgstr "ಮೂಲ ಮೌಲ್ಯಗಳು"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
+msgid  "Exponential increasing"
+msgstr "ಘಾತೀಯ ಹೆಚ್ಚುವರಿ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
+msgid  "Checking..."
+msgstr "ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
+msgid  "Checking for an update failed."
+msgstr "ಒಂದು ಅಪ್‌ಡೇಟ್‌ಗಾಗಿ ಪರಿಶೀಲಿಸುವುದು ವಿಫಲಗೊಂಡಿದೆ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION ವು ಅಪ್‌ಡೇಟ್‌ ಆಗಿಲ್ಲ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr "%PRODUCTNAME %NEXTVERSION ಲಭ್ಯವಿದೆ.\n\nಅನುಸ್ಥಾಪಿತ ಆವೃತ್ತಿಯು %PRODUCTNAME %PRODUCTVERSION ಆಗಿದೆ.\n\nಸೂಚನೆ: ಒಂದು ಅಪ್‌ಡೇಟ್‌ ಅನ್ನು ಡೌನ್‌ಲೋಡ್‌ ಮಾಡಿಕೊಳ್ಳುವ ಮೊದಲು ನಿಮಗೆ ಅದನ್ನು ಅನುಸ್ಥಾಪಿಸಲು ಸಾಕಷ್ಟು ನಿಲುಕಣಾ ಹಕ್ಕುಗಳು ಇವೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.\nಒಂದು ಗುಪ್ತಪದ, ಸಾಮಾನ್ಯವಾಗಿ ವ್ಯವಸ್ಥಾಪಕ ಅಥವ ನಿರ್ವಾಹಕ ಗುಪ್ತಪದದ ಅಗತ್ಯವಿರುತ್ತದೆ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
+msgid  "Check for Updates"
+msgstr "ಅಪ್‌ಡೇಟ್‌ಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸು"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "%PRODUCTNAME %NEXTVERSION ನ ಡೌನ್‌ಲೋಡ್‌ ಇಲ್ಲಿ ತಾತ್ಕಾಲಿಕವಾಗಿ ನಿಂತಿದೆ..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "%PRODUCTNAME %NEXTVERSION ನ ಡೌನ್‌ಲೋಡ್‌ ಇಲ್ಲಿ ನಿಂತು ಹೋಗಿದೆ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr "ಡೌನ್‌ಲೋಡ್‌ ಸ್ಥಳ: %DOWNLOAD_PATH.\n\nಉಪಕರಣಗಳು – ಆಯ್ಕೆಗಳು... - %PRODUCTNAME – ಆನ್‌ಲೈನ್‌ ಅಪ್‌ಡೇಟ್‌ ಅಡಿಯಲ್ಲಿ ನೀವು ಡೌನ್‌ಲೋಡ್‌ ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಬಹುದು."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
+msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%FILE_NAME ಅನ್ನು %DOWNLOAD_PATH ಗೆ ಡೌನ್‌ಲೋಡ್‌ ಮಾಡಲಾಗಿದೆ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr "ಪ್ರಸಕ್ತ ಅಪ್‌ಡೇಟ್‌ನ ಸ್ವಯಂಚಾಲಿತ ಡೌನ್‌ಲೋಡ್‌ ಲಭ್ಯವಿಲ್ಲ.\n\n%PRODUCTNAME %NEXTVERSION ಅನ್ನು ಜಾಲ ತಾಣದಿಂದ ಕೈಯಾರೆ ಡೌನ್‌ಲೋಡ್‌ ಮಾಡಲು 'Download...' ಅನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "%PRODUCTNAME %NEXTVERSION ಅನ್ನು ಡೌನ್‌ಲೋಡ್‌ ಮಾಡಲಾಗುತ್ತಿದೆ..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
+msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr "%PRODUCTNAME %NEXTVERSION ಡೌನ್‌ಲೋಡ್‌ ಪೂರ್ಣಗೊಂಡಿದೆ. ಅನುಸ್ಥಾಪನೆಗೆ ಸಿದ್ಧಗೊಂಡಿದೆ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
+msgid  "Do you really want to cancel the download?"
+msgstr "ನೀವು ನಿಜವಾಗಿಯೂ ಡೌನ್‌ಲೋಡ್‌ ಅನ್ನು ರದ್ದುಗೊಳಿಸಲು ಬಯಸುತ್ತೀರೆ?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
+msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr "ಅಪ್‌ಡೇಟ್‌ ಅನ್ನು ಅನುಸ್ಥಾಪಿಸಲು, %PRODUCTNAME %PRODUCTVERSION ಅನ್ನು ಮುಚ್ಚಬೇಕಾಗುತ್ತದೆ. ನೀವು ಈಗಲೆ ಅಪ್‌ಡೇಟನ್ನು ಅನುಸ್ಥಾಪಿಸಲು ಬಯಸುತ್ತೀರೆ?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
+msgid  "Install ~now"
+msgstr "ಈಗಲೆ ಅನುಸ್ಥಾಪಿಸು(~n)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
+msgid  "Install ~later"
+msgstr "ಆಮೇಲೆ ಅನುಸ್ಥಾಪಿಸು(~l)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
+msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr "ಅನುಸ್ಥಾಪಕ ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ, ದಯವಿಟ್ಟು %FILE_NAME ಅನ್ನು %DOWNLOAD_PATH ನಲ್ಲಿ ಕೈಯಾರೆ ಚಲಾಯಿಸಿ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
+msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr "ಈ ಹೆಸರಿನ ಒಂದು ಕಡತವು ಈಗಾಗಲೆ ಲಭ್ಯವಿದೆ! ಈಗಿರುವ ಕಡತದ ಮೇಲೆಯೆ ನೀವು ತಿದ್ದಿ ಬರೆಯಲು ಬಯಸುತ್ತೀರೆ?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
+msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr "'%FILENAME' ಎಂಬ ಹೆಸರಿನ ಒಂದು ಕಡತವು ಈಗಾಗಲೆ '%DOWNLOAD_PATH' ನಲ್ಲಿದೆ! ನೀವು ಡೌನ್‌ಲೋಡ್‌ನೊಂದಿಗೆ ಮುಂದುವರೆಯಲು ಬಯಸುತ್ತೀರೆ ಅಥವ ಕಡತವನ್ನು ಅಳಿಸಿಹಾಕಿ ನಂತರ ಮರಳಿ ಲೋಡ್ ಮಾಡಲು ಬಯಸುತ್ತೀರೆ?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
+msgid  "Reload File"
+msgstr "ಕಡತವನ್ನು ಮರಳಿ ಲೋಡ್ ಮಾಡು"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
+msgid  "Continue"
+msgstr "ಮುಂದುವರಿಸು"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
+msgid  "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
+msgid  "Status"
+msgstr "ಸ್ಥಿತಿ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "ವಿವರಣೆ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
+msgid  "Close"
+msgstr "ಮುಚ್ಚು"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
+msgid  "~Download"
+msgstr "ಡೌನ್‌ಲೋಡ್‌ ಮಾಡು(~D)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
+msgid  "~Install"
+msgstr "ಅನುಸ್ಥಾಪಿಸು(~I)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
+msgid  "~Pause"
+msgstr "ತಾತ್ಕಾಲಿಕ ವಿರಮಿಸು(~P)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
+msgid  "~Resume"
+msgstr "ಮರಳಿ ಆರಂಭಿಸು(~R)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+msgid  "Cancel"
+msgstr "ವಜಾಮಾಡು"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME ನ ಅಪ್‌ಡೇಟ್‌ ಲಭ್ಯವಿದೆ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
+msgid  "Click here to start the download."
+msgstr "ಡೌನ್‌ಲೋಡ್‌ ಅನ್ನು ಆರಂಭಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್‌ ಮಾಡಿ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME ನ ಅಪ್‌ಡೇಟ್‌ ಲಭ್ಯವಿದೆ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
+msgid  "Click here for more information."
+msgstr "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಇಲ್ಲಿ ಕ್ಲಿಕ್ಕಿಸಿ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME ಅಪ್‌ಡೇಟ್‌ ಲಭ್ಯವಿದೆ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
+#, fuzzy
+msgid  "Download of update begins."
+msgstr "ಅಪ್‌ಡೇಟ್‌ನ ಡೌನ್‌ಲೋಡ್‌ ಆರಂಭಗೊಂಡಿದೆ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
+#, fuzzy
+msgid  "Download of update in progress"
+msgstr "ಅಪ್‌ಡೇಟ್‌ನ ಡೌನ್‌ಲೋಡ್‌ ಪ್ರಗತಿಯಲ್ಲಿದೆ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
+#, fuzzy
+msgid  "Download of update paused"
+msgstr "ಅಪ್‌ಡೇಟ್‌ನ ಡೌನ್‌ಲೋಡ್‌ ತಾತ್ಕಾಲಿಕವಾಗಿ ನಿಂತಿದೆ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
+#, fuzzy
+msgid  "Click here to resume."
+msgstr "ಮರಳಿ ಆರಂಭಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ಕಿಸಿ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
+#, fuzzy
+msgid  "Download of update stalled"
+msgstr "ಅಪ್‌ಡೇಟ್‌ನ ಡೌನ್‌ಲೋಡ್‌ ನಿಂತಿದೆ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
+#, fuzzy
+msgid  "Click here for more information."
+msgstr "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಇಲ್ಲಿ ಕ್ಲಿಕ್ಕಿಸಿ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
+#, fuzzy
+msgid  "Download of update completed"
+msgstr "ಅಪ್‌ಡೇಟ್‌ನ ಡೌನ್‌ಲೋಡ್‌ ಪೂರ್ಣಗೊಂಡಿದೆ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
+#, fuzzy
+msgid  "Click here to start the installation."
+msgstr "ಅನುಸ್ಥಾಪನೆಯನ್ನು ಆರಂಭಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ಕಿಸಿ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
+#, fuzzy
+msgid  "Updates for extensions available"
+msgstr "ವಿಸ್ತರಣೆಗಳಿಗೆ ಅಪ್‌ಡೇಟ್‌ಗಳು ಲಭ್ಯವಿವೆ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
+#, fuzzy
+msgid  "Click here for more information."
+msgstr "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಇಲ್ಲಿ ಕ್ಲಿಕ್ಕಿಸಿ."
+
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#, fuzzy
+msgid  "Check for ~Updates..."
+msgstr "ಅಪ್‌ಡೇಟ್‌ಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸು(~U)..."

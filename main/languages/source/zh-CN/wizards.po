@@ -1,0 +1,3712 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/euro/euro.src#STEP_ZERO.String.Text
+msgid  "~Cancel"
+msgstr "取消(~C)"
+
+#: source/euro/euro.src#STEP_ZERO + 1.String.Text
+msgid  "~Help"
+msgstr "帮助(~H)"
+
+#: source/euro/euro.src#STEP_ZERO + 2.String.Text
+msgid  "<<~Back"
+msgstr "<<返回(~B)"
+
+#: source/euro/euro.src#STEP_ZERO + 3.String.Text
+msgid  "~Convert"
+msgstr "转换(~C)"
+
+#: source/euro/euro.src#STEP_ZERO + 4.String.Text
+msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr "提示：无法转换引用外来数据的货币金额和公式中的货币换算系数。"
+
+#: source/euro/euro.src#STEP_ZERO + 5.String.Text
+msgid  "First, unprotect all sheets."
+msgstr "事先取消所有工作表保护"
+
+#: source/euro/euro.src#STEP_ZERO + 6.String.Text
+msgid  "Currencies:"
+msgstr "货币："
+
+#: source/euro/euro.src#STEP_ZERO + 7.String.Text
+msgid  "C~ontinue>>"
+msgstr "继续(~O) >>"
+
+#: source/euro/euro.src#STEP_ZERO + 8.String.Text
+msgid  "C~lose"
+msgstr "关闭(~L)"
+
+#: source/euro/euro.src#STEP_CONVERTER.String.Text
+msgid  "~Entire document"
+msgstr "整个文档(~E)"
+
+#: source/euro/euro.src#STEP_CONVERTER + 1.String.Text
+msgid  "Selection"
+msgstr "选中"
+
+#: source/euro/euro.src#STEP_CONVERTER + 2.String.Text
+msgid  "Cell S~tyles"
+msgstr "单元格样式(~T)"
+
+#: source/euro/euro.src#STEP_CONVERTER + 3.String.Text
+msgid  "Currency cells in the current ~sheet"
+msgstr "当前工作表中的货币单元格(~S)"
+
+#: source/euro/euro.src#STEP_CONVERTER + 4.String.Text
+msgid  "Currency cells in the entire ~document"
+msgstr "整个文档中的货币单元格(~D)"
+
+#: source/euro/euro.src#STEP_CONVERTER + 5.String.Text
+msgid  "~Selected range"
+msgstr "选中的区域(~S)"
+
+#: source/euro/euro.src#STEP_CONVERTER + 6.String.Text
+msgid  "Select Cell Styles"
+msgstr "选择单元格样式："
+
+#: source/euro/euro.src#STEP_CONVERTER + 7.String.Text
+msgid  "Select currency cells"
+msgstr "选择货币单元格："
+
+#: source/euro/euro.src#STEP_CONVERTER + 8.String.Text
+msgid  "Currency ranges:"
+msgstr "货币区域："
+
+#: source/euro/euro.src#STEP_CONVERTER + 9.String.Text
+msgid  "Templates:"
+msgstr "模板："
+
+#: source/euro/euro.src#STEP_AUTOPILOT.String.Text
+msgid  "Extent"
+msgstr "范围"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 1.String.Text
+msgid  "~Single %PRODUCTNAME Calc document"
+msgstr "单个 %PRODUCTNAME 文档(~S)"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 2.String.Text
+msgid  "Complete ~directory"
+msgstr "全部的目录(~D)"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 3.String.Text
+msgid  "Source Document:"
+msgstr "源文档："
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 4.String.Text
+msgid  "Source directory:"
+msgstr "源目录："
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 5.String.Text
+msgid  "~Including subfolders"
+msgstr "包括子目录(~I)"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 6.String.Text
+msgid  "Target directory:"
+msgstr "目标目录："
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 7.String.Text
+msgid  "Temporarily unprotect sheet without query"
+msgstr "不需确认直接暂时取消表格保护"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 10.String.Text
+msgid  "Also convert fields and tables in text documents"
+msgstr "同时转换文本文档中的字段和表格"
+
+#: source/euro/euro.src#STATUSLINE.String.Text
+msgid  "Conversion status: "
+msgstr "转换状态： "
+
+#: source/euro/euro.src#STATUSLINE + 1.String.Text
+msgid  "Conversion status of the cell templates:"
+msgstr "单元格样式的转换状态"
+
+#: source/euro/euro.src#STATUSLINE + 2.String.Text
+msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr "纳入换算的区域：工作簿 %2TotPageCount%2 内的 %1Number%1"
+
+#: source/euro/euro.src#STATUSLINE + 3.String.Text
+msgid  "Entry of the ranges to be converted..."
+msgstr "纳入换算的区域..."
+
+#: source/euro/euro.src#STATUSLINE + 4.String.Text
+msgid  "Sheet protection for each sheet will be restored..."
+msgstr "重新恢复每个表格的保护..."
+
+#: source/euro/euro.src#STATUSLINE + 5.String.Text
+msgid  "Conversion of the currency units in the cell templates..."
+msgstr "单元格样式中货币单位的转换..."
+
+#: source/euro/euro.src#MESSAGES.String.Text
+msgid  "~Finish"
+msgstr "完成(~F)"
+
+#: source/euro/euro.src#MESSAGES + 1.String.Text
+msgid  "Select directory"
+msgstr "请选择一个目录"
+
+#: source/euro/euro.src#MESSAGES + 2.String.Text
+msgid  "Select file"
+msgstr "请选择一个文件"
+
+#: source/euro/euro.src#MESSAGES + 3.String.Text
+msgid  "Select target directory"
+msgstr "请选择一个目标目录"
+
+#: source/euro/euro.src#MESSAGES + 4.String.Text
+msgid  "non-existant"
+msgstr "不存在"
+
+#: source/euro/euro.src#MESSAGES + 5.String.Text
+msgid  "Euro Converter"
+msgstr "欧元换算器"
+
+#: source/euro/euro.src#MESSAGES + 6.String.Text
+msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgstr "要对受保护的表格暂时取消保护吗？"
+
+#: source/euro/euro.src#MESSAGES + 7.String.Text
+msgid  "Enter the password to unprotect the table %1TableName%1"
+msgstr "请输入密码，取消表格%1TableName%1保护锁定"
+
+#: source/euro/euro.src#MESSAGES + 8.String.Text
+msgid  "Wrong Password!"
+msgstr "密码错误！"
+
+#: source/euro/euro.src#MESSAGES + 9.String.Text
+msgid  "Protected Sheet"
+msgstr "受保护的表格"
+
+#: source/euro/euro.src#MESSAGES + 10.String.Text
+msgid  "Warning!"
+msgstr "警告！"
+
+#: source/euro/euro.src#MESSAGES + 11.String.Text
+msgid  "Protection for the sheets will not be removed."
+msgstr "无法取消表格的保护！"
+
+#: source/euro/euro.src#MESSAGES + 12.String.Text
+msgid  "Sheet cannot be unprotected"
+msgstr "无法取消表格保护！"
+
+#: source/euro/euro.src#MESSAGES + 13.String.Text
+msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr "向导无法编辑这个文档，因为在文档内含有受保护的电子表格时无法修改其单元格样式。"
+
+#: source/euro/euro.src#MESSAGES + 14.String.Text
+msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr "请注意，如果不这样，欧元换算器将无法编辑此文档！"
+
+#: source/euro/euro.src#MESSAGES + 15.String.Text
+msgid  "Please choose a currency to be converted first!"
+msgstr "请首先选择一个要转换的货币！"
+
+#: source/euro/euro.src#MESSAGES + 16.String.Text
+msgid  "Password:"
+msgstr "密码："
+
+#: source/euro/euro.src#MESSAGES + 17.String.Text
+msgid  "OK"
+msgstr "确定"
+
+#: source/euro/euro.src#MESSAGES + 18.String.Text
+msgid  "Cancel"
+msgstr "取消"
+
+#: source/euro/euro.src#MESSAGES + 19.String.Text
+msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "请选择要编辑的 %PRODUCTNAME Calc 文档！"
+
+#: source/euro/euro.src#MESSAGES + 20.String.Text
+msgid  "'<1>' is not a directory!"
+msgstr "'<1>' 不是一个目录！"
+
+#: source/euro/euro.src#MESSAGES + 21.String.Text
+msgid  "Document is read-only!"
+msgstr "文档是防改写的！"
+
+#: source/euro/euro.src#MESSAGES + 22.String.Text
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "文件 '<1>' 已经存在。<CR>是否要改写这个文件？"
+
+#: source/euro/euro.src#MESSAGES + 23.String.Text
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "您真的要现在取消转换？"
+
+#: source/euro/euro.src#MESSAGES + 24.String.Text
+msgid  "Cancel Wizard"
+msgstr "取消向导"
+
+#: source/euro/euro.src#CURRENCIES.String.Text
+msgid  "Portuguese Escudo"
+msgstr "葡萄牙埃斯库多"
+
+#: source/euro/euro.src#CURRENCIES + 1.String.Text
+msgid  "Dutch Guilder"
+msgstr "荷兰盾"
+
+#: source/euro/euro.src#CURRENCIES + 2.String.Text
+msgid  "French Franc"
+msgstr "法国法郎"
+
+#: source/euro/euro.src#CURRENCIES + 3.String.Text
+msgid  "Spanish Peseta"
+msgstr "西班牙比塞塔"
+
+#: source/euro/euro.src#CURRENCIES + 4.String.Text
+msgid  "Italian Lira"
+msgstr "意大利里拉"
+
+#: source/euro/euro.src#CURRENCIES + 5.String.Text
+msgid  "German Mark"
+msgstr "德国马克"
+
+#: source/euro/euro.src#CURRENCIES + 6.String.Text
+msgid  "Belgian Franc"
+msgstr "比利时法郎"
+
+#: source/euro/euro.src#CURRENCIES + 7.String.Text
+msgid  "Irish Punt"
+msgstr "爱尔兰镑"
+
+#: source/euro/euro.src#CURRENCIES + 8.String.Text
+msgid  "Luxembourg Franc"
+msgstr "卢森堡法郎"
+
+#: source/euro/euro.src#CURRENCIES + 9.String.Text
+msgid  "Austrian Schilling"
+msgstr "奥地利先令"
+
+#: source/euro/euro.src#CURRENCIES + 10.String.Text
+msgid  "Finnish Mark"
+msgstr "芬兰马克"
+
+#: source/euro/euro.src#CURRENCIES + 11.String.Text
+msgid  "Greek Drachma"
+msgstr "希腊的德拉赫马"
+
+#: source/euro/euro.src#CURRENCIES + 12.String.Text
+msgid  "Slovenian Tolar"
+msgstr "斯洛文尼亚托勒"
+
+#: source/euro/euro.src#CURRENCIES + 13.String.Text
+msgid  "Cypriot Pound"
+msgstr "塞浦路斯磅"
+
+#: source/euro/euro.src#CURRENCIES + 14.String.Text
+msgid  "Maltese Lira"
+msgstr "马耳他里拉"
+
+#: source/euro/euro.src#CURRENCIES + 15.String.Text
+msgid  "Slovak Koruna"
+msgstr "斯洛伐克克朗"
+
+#: source/euro/euro.src#CURRENCIES + 16.String.Text
+msgid  "The currency set for the document is not a European currency!"
+msgstr "为文档设置的货币不是欧洲货币！"
+
+#: source/euro/euro.src#CURRENCIES + 17.String.Text
+msgid  "The language set for your operating system is not a language of the European Monetary Union."
+msgstr "为操作系统设置的语言不是欧洲货币联盟使用的语言。"
+
+#: source/euro/euro.src#STEP_LASTPAGE.String.Text
+msgid  "Progress"
+msgstr "已经完成"
+
+#: source/euro/euro.src#STEP_LASTPAGE + 1.String.Text
+msgid  "Retrieving the relevant documents..."
+msgstr "检索相关文档..."
+
+#: source/euro/euro.src#STEP_LASTPAGE + 2.String.Text
+msgid  "Converting the documents..."
+msgstr "转换文档..."
+
+#: source/euro/euro.src#STEP_LASTPAGE + 3.String.Text
+msgid  "Settings:"
+msgstr "设置："
+
+#: source/euro/euro.src#STEP_LASTPAGE + 4.String.Text
+msgid  "Sheet is always unprotected"
+msgstr "自动取消表格保护"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
+msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr "无法建立文件夹 '%1' 。<BR>可能您的硬盘没有可用空间！"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
+msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr "无法创建文本文档。<BR>请检查是否已经安装模块 'PRODUCTNAME Writer' 。"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
+msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr "无法创建电子表格。<BR>请检查是否已经安装模块 'PRODUCTNAME Calc' 。"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
+msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr "无法创建演示文稿。<BR>请检查是否已经安装模块 'PRODUCTNAME Impress' 。"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
+msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr "无法创建图形。<BR>请检查是否已经安装模块 'PRODUCTNAME Draw' 。"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
+msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr "无法创建公式。<BR>请检查是否已经安装模块 'PRODUCTNAME Math' 。"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
+msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr "没有找到所需的文件。<BR>请您启动 %PRODUCTNAME 安装程序，执行“修复”。"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
+msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgstr "文件 '<PATH>' 已经存在。<BR><BR>您要改写现存的文件？"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
+msgid  "Yes"
+msgstr "是"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 9.String.Text
+msgid  "Yes to All"
+msgstr "是，改写全部的"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 10.String.Text
+msgid  "No"
+msgstr "否"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 11.String.Text
+msgid  "Cancel"
+msgstr "取消"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 12.String.Text
+msgid  "~Finish"
+msgstr "完成(~F)"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 13.String.Text
+msgid  "< ~Back"
+msgstr "< 上一步(~B)"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 14.String.Text
+msgid  "~Next >"
+msgstr "下一步(~N)>"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 15.String.Text
+msgid  "~Help"
+msgstr "帮助(~H)"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 16.String.Text
+msgid  "Steps"
+msgstr "步骤"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 17.String.Text
+msgid  "Close"
+msgstr "关闭"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 18.String.Text
+msgid  "OK"
+msgstr "确定"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 19.String.Text
+msgid  "The file already exists. Do you want to overwrite it?"
+msgstr "该文件已存在。是否要覆盖它？"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 20.String.Text
+msgid  "Template created via <wizard_name> on <current_date>."
+msgstr "于 <current_date> 通过 <wizard_name> 创建的模板。"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr "由于未找到重要文件，因此向导无法运行。\n在“工具”-“选项”- %PRODUCTNAME -“路径”下，单击“默认”按钮，将路径重设为原来的默认设置。\n然后再次运行向导。"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
+msgid  "C~reate"
+msgstr "创建(~R)"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 1.String.Text
+msgid  "~Cancel"
+msgstr "取消(~C)"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 2.String.Text
+msgid  "<< ~Back"
+msgstr "<< 返回(~B)"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 3.String.Text
+msgid  "~Next >>"
+msgstr "继续(~N) >>"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 4.String.Text
+msgid  "~Database"
+msgstr "数据库(~D)"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 5.String.Text
+msgid  "~Table name"
+msgstr "表格名称(~T)"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
+msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgstr "运行向导时出错。向导将被终止。"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
+msgid  "No connection to the database could be established."
+msgstr "无法和数据库建立连接！"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 20.String.Text
+msgid  "~Help"
+msgstr "帮助(~H)"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 21.String.Text
+msgid  "~Stop"
+msgstr "暂停(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 30.String.Text
+msgid  "The document could not be saved."
+msgstr "无法保存这个文档。"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 33.String.Text
+msgid  "Exiting the wizard"
+msgstr "退出向导"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 34.String.Text
+msgid  "Connecting to data source..."
+msgstr "正在连接数据源..."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 35.String.Text
+msgid  "The connection to the data source could not be established."
+msgstr "无法和数据源连接！"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 36.String.Text
+msgid  "The file path entered is not valid."
+msgstr "您输入的文件路径无效！"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 37.String.Text
+msgid  "Please select a data source"
+msgstr "请选择一个数据源"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 38.String.Text
+msgid  "Please select a table or query"
+msgstr "请选择一个表格或查询"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 39.String.Text
+msgid  "Add field"
+msgstr "新增字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 40.String.Text
+msgid  "Remove field"
+msgstr "删除字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 41.String.Text
+msgid  "Add all fields"
+msgstr "新增全部的字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 42.String.Text
+msgid  "Remove all fields"
+msgstr "删除全部的字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 43.String.Text
+msgid  "Move field up"
+msgstr "上移字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 44.String.Text
+msgid  "Move field down"
+msgstr "下移字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 45.String.Text
+msgid  "The field names from '%NAME' could not be retrieved."
+msgstr "无法从 '%NAME' 检索字段名称。"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 0.String.Text
+msgid  "Form Wizard"
+msgstr "窗体向导"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 1.String.Text
+msgid  "Fields in ~the form"
+msgstr "窗体中的字段(~T)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr "二进制字段始终会在左侧的列表中列出并且可供选择。\n如有可能，这些字段还可以图像的形式显示。"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr "子窗体是插入另一窗体中的窗体。\n使用子窗体可以显示具有一对多关系的表格或查询中的数据。"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
+msgid  "~Add Subform"
+msgstr "添加子窗体(~A)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 5.String.Text
+msgid  "~Subform based on existing relation"
+msgstr "基于现有关系的子窗体(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 6.String.Text
+msgid  "Tables or queries"
+msgstr "表格或查询"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 7.String.Text
+msgid  "Subform based on ~manual selection of fields"
+msgstr "基于手动选择字段的子窗体(~M)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 8.String.Text
+msgid  "~Which relation do you want to add?"
+msgstr "要添加哪种关系(~W)？"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 9.String.Text
+msgid  "Fields in the ~subform"
+msgstr "子窗体中的字段(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 12.String.Text
+msgid  "~Available fields"
+msgstr "可用字段(~A)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 13.String.Text
+msgid  "Fields in form"
+msgstr "表单内的字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr "已两次选择 '<FIELDNAME1>' 和 '<FIELDNAME2>' 组合。\n组合仅可使用一次。"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
+msgid  "~First joined subform field"
+msgstr "第一次组合的子窗体字段(~F)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 21.String.Text
+msgid  "~Second joined subform field"
+msgstr "第二次组合的子窗体字段(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 22.String.Text
+msgid  "~Third joined subform field"
+msgstr "第三次组合的子窗体字段(~T)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 23.String.Text
+msgid  "~Fourth joined subform field"
+msgstr "第四次组合的子窗体字段(~F)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 24.String.Text
+msgid  "F~irst joined main form field"
+msgstr "第一次组合的主窗体字段(~I)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 25.String.Text
+msgid  "S~econd joined main form field"
+msgstr "第二次组合的主窗体字段(~E)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 26.String.Text
+msgid  "T~hird joined main form field"
+msgstr "第三次组合的主窗体字段(~H)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 27.String.Text
+msgid  "F~ourth joined main form field"
+msgstr "第四次组合的主窗体字段(~O)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 28.String.Text
+msgid  "Field border"
+msgstr "字段边框"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 29.String.Text
+msgid  "No border"
+msgstr "无边框"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 30.String.Text
+msgid  "3D look"
+msgstr "3 维外观"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 31.String.Text
+msgid  "Flat"
+msgstr "平型"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 32.String.Text
+msgid  "Label placement"
+msgstr "标签字段对齐"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 33.String.Text
+msgid  "Align left"
+msgstr "向左对齐"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 34.String.Text
+msgid  "Align right"
+msgstr "向右对齐"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 35.String.Text
+msgid  "Arrangement of DB fields"
+msgstr "对齐数据库字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 36.String.Text
+msgid  "Columnar - Labels Left"
+msgstr "在列内 - 标签向左"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 37.String.Text
+msgid  "Columnar - Labels on Top"
+msgstr "在列内 - 标签向上"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 38.String.Text
+msgid  "In Blocks - Labels Left"
+msgstr "在条块内 - 标签向左"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 39.String.Text
+msgid  "In Blocks - Labels Above"
+msgstr "在条块内 - 标签向上"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 40.String.Text
+msgid  "As Data Sheet"
+msgstr "当作数据表"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 41.String.Text
+msgid  "Arrangement of the main form"
+msgstr "主窗体的排列"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 42.String.Text
+msgid  "Arrangement of the subform"
+msgstr "子窗体的排列"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 44.String.Text
+msgid  "The form is to be ~used for entering new data only."
+msgstr "窗体仅用于输入新数据(~U)。"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 45.String.Text
+msgid  "Existing data will not be displayed "
+msgstr "现有数据将不显示"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 46.String.Text
+msgid  "T~he form is to display all data"
+msgstr "该窗体可显示所有数据(~H)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 47.String.Text
+msgid  "Do not allow ~modification of existing data"
+msgstr "不允许修改现有数据(~M)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 48.String.Text
+msgid  "Do not allow ~deletion of existing data"
+msgstr "不允许删除现有数据(~D)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 49.String.Text
+msgid  "Do not allow ~addition of new data"
+msgstr "不允许添加新数据(~A)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 50.String.Text
+msgid  "Name of ~the form"
+msgstr "窗体名称(~T)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 51.String.Text
+msgid  "How do you want to proceed after creating the form?"
+msgstr "创建窗体后如何继续？"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 52.String.Text
+msgid  "~Work with the form"
+msgstr "使用窗体(~W)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 53.String.Text
+msgid  "~Modify the form"
+msgstr "修改窗体(~M)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 55.String.Text
+msgid  "~Page Styles"
+msgstr "页面样式(~P)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
+msgid  "Field selection"
+msgstr "字段选择"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
+msgid  "Set up a subform"
+msgstr "设置子窗体"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 82.String.Text
+msgid  "Add subform fields"
+msgstr "添加子窗体字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 83.String.Text
+msgid  "Get joined fields"
+msgstr "获取组合字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 84.String.Text
+msgid  "Arrange controls"
+msgstr "排列控件"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 85.String.Text
+msgid  "Set data entry"
+msgstr "设置数据条目"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 86.String.Text
+msgid  "Apply styles"
+msgstr "应用样式"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 87.String.Text
+msgid  "Set name"
+msgstr "设置名称"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 88.String.Text
+msgid  "(Date)"
+msgstr "（日期）"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 89.String.Text
+msgid  "(Time)"
+msgstr "（时间）"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 90.String.Text
+msgid  "Select the fields of your form"
+msgstr "选择窗体的字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 91.String.Text
+msgid  "Decide if you want to set up a subform"
+msgstr "确定是否要设置子窗体"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 92.String.Text
+msgid  "Select the fields of your subform"
+msgstr "选择子窗体的字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 93.String.Text
+msgid  "Select the joins between your forms"
+msgstr "选择各窗体之间的组合"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 94.String.Text
+msgid  "Arrange the controls on your form"
+msgstr "在窗体上排列控件"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 95.String.Text
+msgid  "Select the data entry mode"
+msgstr "选择数据条目模式"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 96.String.Text
+msgid  "Apply the style of your form"
+msgstr "应用窗体的样式"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 97.String.Text
+msgid  "Set the name of the form"
+msgstr "设置窗体的名称"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr "名为 '%FORMNAME' 的窗体已存在。\n请选择其他名称。"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
+msgid  "Query Wizard"
+msgstr "查询向导"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 1.String.Text
+msgid  "Query"
+msgstr "查询"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 2.String.Text
+msgid  "Query Wizard"
+msgstr "查询向导"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 3.String.Text
+msgid  "~Tables"
+msgstr "表格(~T)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
+msgid  "A~vailable fields"
+msgstr "可用字段(~V)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
+msgid  "Name ~of the query"
+msgstr "查询名称(~O)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 6.String.Text
+msgid  "Display ~Query"
+msgstr "显示查询(~Q)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 7.String.Text
+msgid  "~Modify Query"
+msgstr "修改查询(~M)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 8.String.Text
+msgid  "~How do you want to proceed after creating the query?"
+msgstr "创建查询后要继续进行何种操作(~H)？"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 9.String.Text
+msgid  "Match ~all of the following"
+msgstr "匹配下列所有项(~A)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 10.String.Text
+msgid  "~Match any of the following"
+msgstr "匹配下列任一项(~M)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 11.String.Text
+msgid  "~Detailed query (Shows all records of the query.)"
+msgstr "详细查询（显示查询的所有记录。）(~D)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
+msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgstr "汇总查询（仅显示聚合函数的结果。）(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
+msgid  "Aggregate functions"
+msgstr "聚合函数"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 17.String.Text
+msgid  "Fields"
+msgstr "字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 18.String.Text
+msgid  "~Group by"
+msgstr "组合依据(~G)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 19.String.Text
+msgid  "Field"
+msgstr "字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 20.String.Text
+msgid  "Alias"
+msgstr "别名"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 21.String.Text
+msgid  "Table: "
+msgstr "表格: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 22.String.Text
+msgid  "Query: "
+msgstr "查询: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 24.String.Text
+msgid  "Condition"
+msgstr "条件"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 25.String.Text
+msgid  "Value"
+msgstr "值"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 26.String.Text
+msgid  "is equal to"
+msgstr "等于"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 27.String.Text
+msgid  "is not equal to"
+msgstr "不等于"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 28.String.Text
+msgid  "is smaller than"
+msgstr "小于"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 29.String.Text
+msgid  "is greater than"
+msgstr "大于"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 30.String.Text
+msgid  "is equal or less than "
+msgstr "等于或小于 "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 31.String.Text
+msgid  "is equal or greater than"
+msgstr "等于或大于"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 32.String.Text
+msgid  "like"
+msgstr "相似"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 33.String.Text
+msgid  "not like"
+msgstr "不等同"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 34.String.Text
+msgid  "is null"
+msgstr "为空"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 35.String.Text
+msgid  "is not null"
+msgstr "不为空"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 36.String.Text
+msgid  "true"
+msgstr "真"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 37.String.Text
+msgid  "false"
+msgstr "假"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 38.String.Text
+msgid  "and"
+msgstr "和"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 39.String.Text
+msgid  "or"
+msgstr "或"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 40.String.Text
+msgid  "get the sum of"
+msgstr "求和"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 41.String.Text
+msgid  "get the average of"
+msgstr "求平均值"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 42.String.Text
+msgid  "get the minimum of"
+msgstr "求最小值"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 43.String.Text
+msgid  "get the maximum of"
+msgstr "求最大值"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 44.String.Text
+msgid  "get the sum of <FIELD>"
+msgstr "求 <FIELD> 的和"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 45.String.Text
+msgid  "get the average of <FIELD>"
+msgstr "求 <FIELD> 的平均值"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 46.String.Text
+msgid  "get the minimum of <FIELD>"
+msgstr "求 <FIELD> 的最小值"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 47.String.Text
+msgid  "get the maximum of <FIELD>"
+msgstr "求 <FIELD> 的最大值"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 48.String.Text
+msgid  "(none)"
+msgstr "（无）"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 50.String.Text
+msgid  "Fie~lds in the Query: "
+msgstr "查询中的字段(~L):"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 51.String.Text
+msgid  "Sorting order: "
+msgstr "排序顺序: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 52.String.Text
+msgid  "No sorting fields were assigned."
+msgstr "未指定排序字段。"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 53.String.Text
+msgid  "Search conditions: "
+msgstr "搜索条件: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 54.String.Text
+msgid  "No conditions were assigned."
+msgstr "未指定条件。"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 55.String.Text
+msgid  "Aggregate functions: "
+msgstr "聚合函数: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 56.String.Text
+msgid  "No aggregate functions were assigned."
+msgstr "未指定聚合函数。"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 57.String.Text
+msgid  "Grouped by: "
+msgstr "组合依据: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 58.String.Text
+msgid  "No Groups were assigned."
+msgstr "未指定组合。"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 59.String.Text
+msgid  "Grouping conditions: "
+msgstr "组合条件："
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 60.String.Text
+msgid  "No grouping conditions were assigned."
+msgstr "未指定组合条件。"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 70.String.Text
+msgid  "Select the fields (columns) for your query"
+msgstr "选择要查询的字段（列）"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 71.String.Text
+msgid  "Select the sorting order"
+msgstr "选择排序顺序"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 72.String.Text
+msgid  "Select the search conditions"
+msgstr "选择搜索条件"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 73.String.Text
+msgid  "Select the type of query"
+msgstr "选择查询类型"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 74.String.Text
+msgid  "Select the groups"
+msgstr "选择组合"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 75.String.Text
+msgid  "Select the grouping conditions"
+msgstr "选择组合条件"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 76.String.Text
+msgid  "Assign aliases if desired"
+msgstr "需要时指定别名"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 77.String.Text
+msgid  "Check the overview and decide how to proceed"
+msgstr "检查概述并确定如何继续"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 80.String.Text
+msgid  "Field selection"
+msgstr "字段选择"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 81.String.Text
+msgid  "Sorting order"
+msgstr "排序顺序"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 82.String.Text
+msgid  "Search conditions"
+msgstr "搜索条件"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 83.String.Text
+msgid  "Detail or summary"
+msgstr "明细或汇总"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 84.String.Text
+msgid  "Grouping"
+msgstr "组合"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 85.String.Text
+msgid  "Grouping conditions"
+msgstr "组合条件"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 86.String.Text
+msgid  "Aliases"
+msgstr "别名"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 87.String.Text
+msgid  "Overview"
+msgstr "概述"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
+msgid  "A field that has not been assigned an aggregate function must be used in a group."
+msgstr "组合中必须使用一个未指定聚合函数的字段。"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
+msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr "条件 '<FIELDNAME> <LOGICOPERATOR> <VALUE>' 被选择了两次。每个条件只能选择一次"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
+msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr "聚合函数 <FUNCTION> 已被两次指定给字段名称 '<NUMERICFIELD>'."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
+msgid  ", "
+msgstr ", "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 92.String.Text
+msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 93.String.Text
+msgid  "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 94.String.Text
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 95.String.Text
+msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 96.String.Text
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 0.String.Text
+msgid  "Report Wizard"
+msgstr "报表向导"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 3.String.Text
+msgid  "~Table"
+msgstr "表格(~T)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 4.String.Text
+msgid  "Colu~mns"
+msgstr "列(~M)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 7.String.Text
+msgid  "Report_"
+msgstr "报表_"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 8.String.Text
+msgid  "- undefined -"
+msgstr "- 未定义 -"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 9.String.Text
+msgid  "~Fields in report"
+msgstr "报表中的字段(~F)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 11.String.Text
+msgid  "Grouping"
+msgstr "分组"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 12.String.Text
+msgid  "Sort options"
+msgstr "排序选项"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 13.String.Text
+msgid  "Choose layout"
+msgstr "选择版式"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 14.String.Text
+msgid  "Create report"
+msgstr "创建报表"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 15.String.Text
+msgid  "Layout of data"
+msgstr "数据版式"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 16.String.Text
+msgid  "Layout of headers and footers"
+msgstr "页眉和页脚版式"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 19.String.Text
+msgid  "Fields"
+msgstr "字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 20.String.Text
+msgid  "~Sort by"
+msgstr "排序依据(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 21.String.Text
+msgid  "T~hen by"
+msgstr "然后依据(~H)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 22.String.Text
+msgid  "Orientation"
+msgstr "方向"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 23.String.Text
+msgid  "Portrait"
+msgstr "纵向"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 24.String.Text
+msgid  "Landscape"
+msgstr "横向"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 28.String.Text
+msgid  "Which fields do you want to have in your report?"
+msgstr "您要在报表中包含哪些字段？"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 29.String.Text
+msgid  "Do you want to add grouping levels?"
+msgstr "是否要添加分组级别？"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 30.String.Text
+msgid  "According to which fields do you want to sort the data?"
+msgstr "您想要根据哪些字段对数据进行排序？"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 31.String.Text
+msgid  "How do you want your report to look?"
+msgstr "您希望您的报表使用什么样式？"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 32.String.Text
+msgid  "Decide how you want to proceed"
+msgstr "请决定如何继续"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 33.String.Text
+msgid  "Title of report"
+msgstr "报表标题"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 34.String.Text
+msgid  "Display report"
+msgstr "显示报表"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 35.String.Text
+msgid  "Create report"
+msgstr "创建报表"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 36.String.Text
+msgid  "Ascending"
+msgstr "升序"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 37.String.Text
+msgid  "Descending"
+msgstr "降序"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 40.String.Text
+msgid  "~Dynamic report"
+msgstr "动态报表(~D)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 41.String.Text
+msgid  "~Create report now"
+msgstr "立即创建报表(~C)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 42.String.Text
+msgid  "~Modify report layout"
+msgstr "修改报表版式(~M)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 43.String.Text
+msgid  "Static report"
+msgstr "固定式报表"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 44.String.Text
+msgid  "Save as"
+msgstr "另存为"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 50.String.Text
+msgid  "Groupings"
+msgstr "分组"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 51.String.Text
+msgid  "Then b~y"
+msgstr "然后依据(~Y)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 52.String.Text
+msgid  "~Then by"
+msgstr "然后依据(~T)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 53.String.Text
+msgid  "Asc~ending"
+msgstr "向上(~E)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 54.String.Text
+msgid  "Ascend~ing"
+msgstr "向上(~I)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 55.String.Text
+msgid  "Ascendin~g"
+msgstr "向上(~G)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 56.String.Text
+msgid  "De~scending"
+msgstr "向下(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 57.String.Text
+msgid  "Des~cending"
+msgstr "向下(~C)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 58.String.Text
+msgid  "De~scending"
+msgstr "向下(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 60.String.Text
+msgid  "Binary fields cannot be displayed in the report."
+msgstr "无法在报表之中显示二进制字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 61.String.Text
+msgid  "The table '<TABLENAME>' does not exist."
+msgstr "表格 '<TABLENAME>' 不存在。"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 62.String.Text
+msgid  "Creating Report..."
+msgstr "正在建立报表..."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 63.String.Text
+msgid  "Number of records inserted: <COUNT>"
+msgstr "插入数据条目的数目：<COUNT>"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 64.String.Text
+msgid  "The form '<REPORTFORM>' does not exist."
+msgstr "表单 '<REPORTFORM>' 不存在。"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
+msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr "无法执行含有陈述<BR>'<STATEMENT>' <BR>的查询命令。<BR>请检查所使用的数据源。"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
+msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr "无法读取以下隐藏在表单 '<REPORTFORM>' 之内的控制项：'<CONTROLNAME>'"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
+msgid  "Importing data..."
+msgstr "正在输入数据..."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 68.String.Text
+msgid  "Labeling fields"
+msgstr "标注字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 69.String.Text
+msgid  "How do you want to label the fields?"
+msgstr "您要如何注明字段名称？"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 70.String.Text
+msgid  "Label"
+msgstr "标签"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 71.String.Text
+msgid  "Field"
+msgstr "字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
+msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr "向导出错。<BR>模板 %PATH 可能有错误。<BR>所需区域或表格不存在，或位于错误的名称之下。<BR>有关详细信息，请参阅“帮助”。<BR>请选择其他模板。"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
+msgid  "There is an invalid user field in a table."
+msgstr "表格之内存在一个无效的自订字段！"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
+msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr "排序标准 ' <FIELDNAME>' 被选择了两次。每个标准只能选择一次。"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
+msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr "注意：在制作报表时示范文字会由数据库的文字内容取代。"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
+msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr "数据库中已存在报表 '%REPORTNAME'。请指定其他名称。"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
+msgid  "How do you want to proceed after creating the report?"
+msgstr "创建报表后要继续何种操作？"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 79.String.Text
+msgid  "What kind of report do you want to create?"
+msgstr "您要创建哪种类型的报表？"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 80.String.Text
+msgid  "Tabular"
+msgstr "表格式"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 81.String.Text
+msgid  "Columnar, single-column"
+msgstr "列格式，单列"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 82.String.Text
+msgid  "Columnar, two columns"
+msgstr "列格式，两列"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 83.String.Text
+msgid  "Columnar, three columns"
+msgstr "列格式，三列"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 84.String.Text
+msgid  "In blocks, labels left"
+msgstr "块格式，标签在左"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 85.String.Text
+msgid  "In blocks, labels above"
+msgstr "块格式，标签在上"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 86.String.Text
+msgid  "Title:"
+msgstr "标题:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 87.String.Text
+msgid  "Author:"
+msgstr "作者："
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 88.String.Text
+msgid  "Date:"
+msgstr "日期:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 89.String.Text
+msgid  "Page #page# of #count#"
+msgstr "第 #page# 页，共 #count# 页"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 90.String.Text
+msgid  "Page number:"
+msgstr "页码："
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 91.String.Text
+msgid  "Page count:"
+msgstr "页数："
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 92.String.Text
+msgid  "No valid report template was found."
+msgstr "未找到有效的报表模板。"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 1.String.Text
+msgid  "Table Wizard"
+msgstr "表格向导"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 2.String.Text
+msgid  "Select fields"
+msgstr "选择字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 3.String.Text
+msgid  "Set types and formats"
+msgstr "设置类型和格式"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 4.String.Text
+msgid  "Set primary key"
+msgstr "设置主关键字"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 5.String.Text
+msgid  "Create table"
+msgstr "创建表格"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 8.String.Text
+msgid  "Select fields for your table"
+msgstr "为表格选择字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 9.String.Text
+msgid  "Set field types and formats"
+msgstr "设置字段类型和格式"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 10.String.Text
+msgid  "Set primary key"
+msgstr "设置主关键字"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 11.String.Text
+msgid  "Create table"
+msgstr "创建表格"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
+msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr "此向导将帮助您为数据库创建一个表格。在选择表格类别和表格示例之后，选择要加到表格中的字段。可加入多个表格示例中的字段。"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
+msgid  "Ca~tegory"
+msgstr "类别(~T)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 16.String.Text
+msgid  "B~usiness"
+msgstr "企业(~U)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 17.String.Text
+msgid  "P~ersonal"
+msgstr "个人(~E)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 18.String.Text
+msgid  "~Sample tables"
+msgstr "表格示例(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 19.String.Text
+msgid  "A~vailable fields"
+msgstr "可用字段(~V)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 20.String.Text
+msgid  "Field information"
+msgstr "字段信息"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 21.String.Text
+msgid  "+"
+msgstr "+"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 23.String.Text
+msgid  "Field name"
+msgstr "字段名"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 24.String.Text
+msgid  "Field type"
+msgstr "字段类型"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 25.String.Text
+msgid  "~Selected fields"
+msgstr "选定字段(~S)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
+msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr "主关键字用于唯一标识数据库表格中的每条记录。通过主关键字可以方便地链接各个表格中的信息；我们建议在每个表格中都设置一个主关键字。如果没有主关键字，将无法在该表格中输入数据。"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
+msgid  "~Create a primary key"
+msgstr "创建主关键字(~C)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 28.String.Text
+msgid  "~Automatically add a primary key"
+msgstr "自动添加主关键字(~A)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 29.String.Text
+msgid  "~Use an existing field as a primary key"
+msgstr "使用现有字段作为主关键字(~U)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 30.String.Text
+msgid  "Define p~rimary key as a combination of several fields "
+msgstr "将主关键字定义为几个字段的组合(~R)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 31.String.Text
+msgid  "F~ieldname"
+msgstr "字段名称(~I)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 32.String.Text
+msgid  "~Primary key fields"
+msgstr "主关键字字段(~P)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 33.String.Text
+msgid  "Auto ~value"
+msgstr "自动取值(~V)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 34.String.Text
+msgid  "What do you want to name your table?"
+msgstr "您要为表格指定什么名称？"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
+msgid  "Congratulations. You have entered all the information needed to create your table."
+msgstr "恭喜。您已输入了创建表格所需的全部信息。"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
+msgid  "What do you want to do next?"
+msgstr "接下来您想做什么？"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
+msgid  "Modify the table design"
+msgstr "修改表格设计"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 38.String.Text
+msgid  "Insert data immediately"
+msgstr "立即插入数据"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 39.String.Text
+msgid  "C~reate a form based on this table"
+msgstr "基于此表格创建窗体(~R)"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 40.String.Text
+msgid  "The table you have created could not be opened."
+msgstr "无法打开您所创建的表格。"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
+msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "表格名 %TABLENAME 中可能包含数据库不支持的字符 (%SPECIALCHAR)。"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
+msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "字段名 %FIELDNAME 中可能包含数据库不支持的特殊字符 (%SPECIALCHAR)。"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
+msgid  "Field"
+msgstr "字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 44.String.Text
+msgid  "MyTable"
+msgstr "MyTable"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 45.String.Text
+msgid  "Add a Field"
+msgstr "添加字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 46.String.Text
+msgid  "Remove the selected Field"
+msgstr "删除选定字段"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
+msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr "字段无法插入，因为这将超过数据库表格中允许的最大 %COUNT 字段数"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr "名称 '%TABLENAME' 已经存在。\n请输入其他名称。"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
+msgid  "Catalog of the table"
+msgstr "表格目录"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 50.String.Text
+msgid  "Schema of the table"
+msgstr "表格模式"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 51.String.Text
+msgid  "The field '%FIELDNAME' already exists."
+msgstr "字段 '%FIELDNAME' 已存在。"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 1.String.Text
+msgid  "Letter Wizard"
+msgstr "信函向导"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 2.String.Text
+msgid  "Label9"
+msgstr "Label9"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 3.String.Text
+msgid  "~Business letter"
+msgstr "商务信函(~B)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 4.String.Text
+msgid  "~Formal personal letter"
+msgstr "正式私人信函(~F)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 5.String.Text
+msgid  "~Personal letter"
+msgstr "私人信函(~P)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 6.String.Text
+msgid  "~Use letterhead paper with pre-printed elements"
+msgstr "使用各项内容已预先印刷好的、有信头的信笺(~U)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 7.String.Text
+msgid  "~Logo"
+msgstr "徽标(~L)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
+msgid  "Return address"
+msgstr "回信地址"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 9.String.Text
+msgid  "~Include footer"
+msgstr "包括页脚(~I)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 10.String.Text
+msgid  "~Return address in envelope window"
+msgstr "信封窗口中的回信地址(~R)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
+msgid  "~Logo"
+msgstr "徽标(~L)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 12.String.Text
+msgid  "~Return address in envelope window"
+msgstr "信封窗口中的回信地址(~R)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 13.String.Text
+msgid  "Letter Signs"
+msgstr "信函签名"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
+msgid  "S~ubject line"
+msgstr "主题行(~U)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
+msgid  "Salu~tation"
+msgstr "信件开头称呼(~T)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 16.String.Text
+msgid  "Fold ~marks"
+msgstr "折叠标记(~M)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
+msgid  "~Complimentary close"
+msgstr "信尾客套语(~C)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
+msgid  "~Footer"
+msgstr "页脚(~F)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
+msgid  "~Use user data for return address"
+msgstr "使用用户数据作为回信地址(~U)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
+msgid  "~New sender address:"
+msgstr "新建发件人地址(~N):"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
+msgid  "Use placeholders for ~recipient's address"
+msgstr "将占位符用于收件人地址(~R)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
+msgid  "Use address database for ~mail merge"
+msgstr "将地址数据库用于邮件合并(~M)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
+msgid  "Include ~only on second and following pages"
+msgstr "只包含第二页及其后续的页面(~O)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
+msgid  "~Include page number"
+msgstr "包含页码(~I)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
+msgid  "Letter Template"
+msgstr "信函模板"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 26.String.Text
+msgid  "Create a ~letter from this template"
+msgstr "使用此模板创建信函(~L)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 27.String.Text
+msgid  "Make ~manual changes to this letter template"
+msgstr "手动修改此信函模板(~M)"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
+msgid  "Page design"
+msgstr "页面设计"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
+msgid  "Page design"
+msgstr "页面设计"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
+msgid  "Page design"
+msgstr "页面设计"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
+msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr "此向导将帮助您创建信函模板。然后便可根据需要随时在此模板基础上撰写信函。"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
+msgid  "~Height:"
+msgstr "高度(~H):"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 33.String.Text
+msgid  "~Width:"
+msgstr "宽度(~W):"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
+msgid  "S~pacing to left margin:"
+msgstr "到左边距的间距(~P):"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
+msgid  "Spacing ~to top margin:"
+msgstr "到顶边距的间距(~T):"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
+msgid  "Height:"
+msgstr "高度:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 37.String.Text
+msgid  "Width:"
+msgstr "宽度:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 38.String.Text
+msgid  "S~pacing to left margin:"
+msgstr "到左边距的间距(~P):"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 39.String.Text
+msgid  "Spacing ~to top margin:"
+msgstr "到顶边距的间距(~T):"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 40.String.Text
+msgid  "Height:"
+msgstr "高度:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 41.String.Text
+msgid  "Use a typical letter format for this country:"
+msgstr "使用此国家的典型信函格式:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 42.String.Text
+msgid  "Sender's address"
+msgstr "发件人地址"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
+msgid  "Name:"
+msgstr "名称："
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
+msgid  "Street:"
+msgstr "街道:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
+msgid  "ZIP code/State/City:"
+msgstr "邮政编码/省/市:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
+msgid  "Recipient's address"
+msgstr "收件人地址"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 47.String.Text
+msgid  "Footer"
+msgstr "页脚"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
+msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr "此向导将创建信函模板，使用它能够以相同的布局和设置创建多封信函。"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
+msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr "要使用模板创建另一封新信函，只需转至模板所在位置，然后双击它。"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
+msgid  "Template name:"
+msgstr "模板名称:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
+msgid  "Location and file name:"
+msgstr "位置和文件名："
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
+msgid  "How do you want to proceed?"
+msgstr "要继续进行何种操作？"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 53.String.Text
+msgid  "Please choose the type of letter and page design"
+msgstr "请选择信函类型和页面设计"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 54.String.Text
+msgid  "Select the items to be printed"
+msgstr "选择要打印的项目"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 55.String.Text
+msgid  "Specify items already on your letterhead paper"
+msgstr "指定信头纸上已有的内容"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 56.String.Text
+msgid  "Specify the sender and recipient information"
+msgstr "指定发件人和收件人信息"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 57.String.Text
+msgid  "Fill in the information you would like in the footer"
+msgstr "填入希望出现在页脚中的信息"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 58.String.Text
+msgid  "Please specify last settings"
+msgstr "请指定上次设置"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 1.String.Text
+msgid  "To Whom it May Concern"
+msgstr "致有关人员"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 2.String.Text
+msgid  "Dear Sir or Madam"
+msgstr "尊敬的先生/女士"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 3.String.Text
+msgid  "Hello"
+msgstr "您好"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 1.String.Text
+msgid  "Sincerely"
+msgstr "谨启"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 2.String.Text
+msgid  "Best regards"
+msgstr "诚挚问候"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 3.String.Text
+msgid  "Cheers"
+msgstr "祝您健康"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 1.String.Text
+msgid  "Page design"
+msgstr "页面设计"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 2.String.Text
+msgid  "Letterhead layout"
+msgstr "信头布局"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 3.String.Text
+msgid  "Printed items"
+msgstr "已打印项目"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 4.String.Text
+msgid  "Recipient and sender"
+msgstr "收件人和发件人"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 5.String.Text
+msgid  "Footer"
+msgstr "页脚"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 6.String.Text
+msgid  "Name and location"
+msgstr "姓名和地址"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 1.String.Text
+msgid  "Fax Wizard"
+msgstr "传真向导"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 2.String.Text
+msgid  "Label9"
+msgstr "Label9"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 3.String.Text
+msgid  "~Business Fax"
+msgstr "商务传真(~B)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 4.String.Text
+msgid  "~Personal Fax"
+msgstr "私人传真(~P)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 5.String.Text
+msgid  "~Logo"
+msgstr "徽标(~L)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 6.String.Text
+msgid  "S~ubject line"
+msgstr "主题行(~U)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 7.String.Text
+msgid  "S~alutation"
+msgstr "称呼(~A)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 8.String.Text
+msgid  "~Complimentary close"
+msgstr "信尾礼貌用语(~C)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 9.String.Text
+msgid  "~Footer"
+msgstr "页脚(~F)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 10.String.Text
+msgid  "~Use user data for return address"
+msgstr "使用用户数据作为回信地址(~U)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
+msgid  "~New return address"
+msgstr "新建回信地址(~N)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
+msgid  "My Fax Template"
+msgstr "我的传真模板"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 13.String.Text
+msgid  "Create a ~fax from this template"
+msgstr "使用此模板创建传真(~F)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 14.String.Text
+msgid  "Make ~manual changes to this fax template"
+msgstr "手动修改此传真模板(~M)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 15.String.Text
+msgid  "Page design"
+msgstr "页面设计"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 16.String.Text
+msgid  "Page design"
+msgstr "页面设计"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
+msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr "此向导将帮助您创建传真模板，然后便可根据需要随时使用该模板创建传真。"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
+msgid  "Return address"
+msgstr "回信地址"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 19.String.Text
+msgid  "Name:"
+msgstr "姓名:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 20.String.Text
+msgid  "Street:"
+msgstr "街道:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 21.String.Text
+msgid  "ZIP code/State/City:"
+msgstr "邮政编码/省/市:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 22.String.Text
+msgid  "Footer"
+msgstr "页脚"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
+msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr "此向导将创建传真模板，使用它能够以相同的布局和设置创建多封传真。"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
+msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr "要使用模板创建新传真，只需转至模板的保存位置，然后双击该文件。"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
+msgid  "Template Name:"
+msgstr "模板名称:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
+msgid  "Location and file name:"
+msgstr "位置与文件名:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
+msgid  "What do you want to do next?"
+msgstr "接下来您想做什么？"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
+msgid  "Choose the type of fax and a page design"
+msgstr "选择传真类型和页面设计"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 29.String.Text
+msgid  "Select items to include in the fax template"
+msgstr "选择要在传真模板中包含的项目"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 30.String.Text
+msgid  "Specify sender and recipient information"
+msgstr "指定发件人和收件人信息"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 31.String.Text
+msgid  "Enter text for the footer"
+msgstr "输入页脚文本"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
+msgid  "Choose a name and save the template"
+msgstr "选择名称并保存模板"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
+msgid  "Include ~only on second and following pages"
+msgstr "仅包括在第二页和后续页中(~O)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 34.String.Text
+msgid  "~Include page number"
+msgstr "包括页码(~I)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 35.String.Text
+msgid  "~Date"
+msgstr "日期(~D)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 36.String.Text
+msgid  "~Type of message"
+msgstr "消息类型(~T)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 37.String.Text
+msgid  "Fax Number:"
+msgstr "传真号码:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 38.String.Text
+msgid  "Use placeholders for ~recipient's address"
+msgstr "将占位符用于收件人地址(~R)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 39.String.Text
+msgid  "Use address database for ~mail merge"
+msgstr "将地址数据库用于邮件合并(~M)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 40.String.Text
+msgid  "~New return address"
+msgstr "新建回信地址(~N)"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 1.String.Text
+msgid  "Important Information!"
+msgstr "重要信息！"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 2.String.Text
+msgid  "For your information"
+msgstr "参考信息"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 3.String.Text
+msgid  "News!"
+msgstr "新闻！"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 1.String.Text
+msgid  "To whom it may concern,"
+msgstr "致相关人员，"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 2.String.Text
+msgid  "Dear Sir or Madam,"
+msgstr "尊敬的先生/女士，"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 3.String.Text
+msgid  "Hello,"
+msgstr "您好！"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 4.String.Text
+msgid  "Hi,"
+msgstr "你好！"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 1.String.Text
+msgid  "Sincerely"
+msgstr "谨致"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 2.String.Text
+msgid  "Yours faithfully"
+msgstr "谨致"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 3.String.Text
+msgid  "Regards"
+msgstr "致礼"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 4.String.Text
+msgid  "Love"
+msgstr "亲爱的"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 1.String.Text
+msgid  "Page design"
+msgstr "页面设计"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 2.String.Text
+msgid  "Items to include"
+msgstr "包含的项目"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 3.String.Text
+msgid  "Sender and Recipient"
+msgstr "发件人和收件人"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 4.String.Text
+msgid  "Footer"
+msgstr "页脚"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 5.String.Text
+msgid  "Name and location"
+msgstr "姓名和地址"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +1.String.Text
+msgid  "Web Wizard"
+msgstr "Web 向导"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr "此“Web 向导”用于帮助您在 Internet 上发布文档。\n\n它会转换文档以使其能够通过 Web 浏览器进行查看。此外，它还将生成目录页，其中带有便于访问相应文档的链接。“Web 向导”还允许自定义网站的设计和布局。\n\n您能够时刻更新发布到网上的文档，并随时添加或删除文档。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
+msgid  "~Delete"
+msgstr "删除(~D)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +5.String.Text
+msgid  "Introduction"
+msgstr "介绍"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +6.String.Text
+msgid  "Select the documents you want to publish"
+msgstr "选择要发布的文档"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +8.String.Text
+msgid  "Document information "
+msgstr "文档信息 "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +9.String.Text
+msgid  "~Title:"
+msgstr "标题(~T):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +10.String.Text
+msgid  "~Summary: "
+msgstr "摘要(~S):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +11.String.Text
+msgid  "Au~thor:"
+msgstr "作者(~T):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +12.String.Text
+msgid  "~Export to file format:"
+msgstr "导出文件格式(~E):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +13.String.Text
+msgid  "Enter general information for your web site"
+msgstr "输入网站的一般信息"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +14.String.Text
+msgid  "Title:"
+msgstr "标题:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +16.String.Text
+msgid  "Description:"
+msgstr "说明:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +18.String.Text
+msgid  "Created:"
+msgstr "创建:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +20.String.Text
+msgid  "E-mail:"
+msgstr "电子邮件:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +21.String.Text
+msgid  "Copyright notice:"
+msgstr "版权声明:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +22.String.Text
+msgid  "Modified:"
+msgstr "修改时间:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +24.String.Text
+msgid  "~Preview"
+msgstr "预览(~P)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +25.String.Text
+msgid  "Where do you want to publish your web site?"
+msgstr "您要在何处发布网站？"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +26.String.Text
+msgid  "Publish the new web site:"
+msgstr "发布新网站:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +27.String.Text
+msgid  "To a ~local folder"
+msgstr "到本地文件夹(~L)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +28.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +29.String.Text
+msgid  "To a ~web server via FTP"
+msgstr "通过 FTP 到 ~Web 服务器"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +31.String.Text
+msgid  "~Configure..."
+msgstr "配置(~C)..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +32.String.Text
+msgid  "To a ZIP ~archive"
+msgstr "到 ZIP 档案(~A)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +33.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +34.String.Text
+msgid  "~Save settings (recommended)"
+msgstr "保存设置（建议）(~S)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +35.String.Text
+msgid  "Save ~as:"
+msgstr "另存为(~A):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +36.String.Text
+msgid  "~Choose settings for the Web Wizard"
+msgstr "选择 Web 向导的设置(~C)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +37.String.Text
+msgid  "Web site content "
+msgstr "网站内容 "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +38.String.Text
+msgid  "~Add..."
+msgstr "添加(~A)..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +39.String.Text
+msgid  "Remo~ve"
+msgstr "删除(~V)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +40.String.Text
+msgid  "Choose a layout for the table of contents of your web site"
+msgstr "为网站的目录选择布局"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +41.String.Text
+msgid  "Select a style for the table of contents page"
+msgstr "为目录页选择样式"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +42.String.Text
+msgid  "~Style:"
+msgstr "样式(~S):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +48.String.Text
+msgid  "~Layouts: "
+msgstr "布局(~L):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +50.String.Text
+msgid  "~Description"
+msgstr "说明(~D)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +51.String.Text
+msgid  "~Author"
+msgstr "作者(~A)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +52.String.Text
+msgid  "Cr~eation date"
+msgstr "创建日期(~E)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +53.String.Text
+msgid  "~Last change date"
+msgstr "上次修改日期(~L)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +54.String.Text
+msgid  "~File name"
+msgstr "文件名(~F)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +55.String.Text
+msgid  "File forma~t"
+msgstr "文件格式(~T)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +56.String.Text
+msgid  "File format ~icon"
+msgstr "文件格式图标(~I)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +57.String.Text
+msgid  "Number ~of pages"
+msgstr "页数(~O)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +58.String.Text
+msgid  "~Size in KB"
+msgstr "以 KB 计大小(~S)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
+msgid  "Click 'Preview' to see a preview in your browser:"
+msgstr "单击“预览”在浏览器中预览："
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
+msgid  "Customize the selected layout"
+msgstr "自定义选定版式"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
+msgid  "Include the following information for each document in the table of contents:"
+msgstr "在目录中包含每个文档的下列信息:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
+msgid  "Optimize the layout for screen resolution:"
+msgstr "优化屏幕分辨率的设置:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +64.String.Text
+msgid  "~640x480"
+msgstr "~640x480(~6)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +65.String.Text
+msgid  "~800x600"
+msgstr "~800x600(~8)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +66.String.Text
+msgid  "~1024x768"
+msgstr "~1024x768(~1)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +70.String.Text
+msgid  "Generating Your Web Site"
+msgstr "生成网站"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +71.String.Text
+msgid  "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +72.String.Text
+msgid  "myWebsite"
+msgstr "我的网站"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +73.String.Text
+msgid  "FTP target '%FILENAME' is a file."
+msgstr "FTP 目标 %FILENAME 是一个文件。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +74.String.Text
+msgid  "The local target '%FILENAME' is a file."
+msgstr "本地目标 %FI00LENAME 是一个文件。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
+msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgstr "ZIP 目标 %FILENAME 已存在。是否要覆盖现有目标？ "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
+msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "FTP 目标目录 %FILENAME 非空。可能会覆盖某些文件，是否要继续？"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
+msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "本地目标目录 %FILENAME 非空。可能会覆盖某些文件，是否要继续？"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
+msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr "给定名称下已有设置。是否要覆盖现有设置？"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
+msgid  "Exporting documents..."
+msgstr "正在导出文档..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +80.String.Text
+msgid  "Preparing export..."
+msgstr "正在准备导出..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +81.String.Text
+msgid  "Copying layout files..."
+msgstr "正在复制版式文件..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +82.String.Text
+msgid  "Preparing table of contents generation..."
+msgstr "正在准备生成目录..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +83.String.Text
+msgid  "Generating table of contents..."
+msgstr "正在生成目录..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +84.String.Text
+msgid  "Initializing..."
+msgstr "正在初始化..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +86.String.Text
+msgid  "Preparing to publish..."
+msgstr "正在准备发布..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +87.String.Text
+msgid  "Publishing to local directory..."
+msgstr "正发布到本地目录..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +88.String.Text
+msgid  "Publishing to FTP destination..."
+msgstr "正发布到 FTP 目标..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +89.String.Text
+msgid  "Publishing to a ZIP archive..."
+msgstr "正发布到 ZIP 档案..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 90.String.Text
+msgid  "Finishing..."
+msgstr "正在完成..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 94.String.Text
+msgid  "Graphic files"
+msgstr "图形文件"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 95.String.Text
+msgid  "All files"
+msgstr "所有文件"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 96.String.Text
+msgid  "~ZIP archive files"
+msgstr "~ZIP 存档文件"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 98.String.Text
+msgid  "Background images"
+msgstr "背景图像"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 99.String.Text
+msgid  "Choose a background image: "
+msgstr "选择背景图像:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 100.String.Text
+msgid  "Icon sets"
+msgstr "图标集"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 101.String.Text
+msgid  "Choose an icon set:"
+msgstr "选择图标集:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +102.String.Text
+msgid  "Other..."
+msgstr "其他..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +103.String.Text
+msgid  "None"
+msgstr "无"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +104.String.Text
+msgid  "Your web site was created successfully into: %FILENAME"
+msgstr "您的网站成功创建于以下位置：%FILENAME"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +105.String.Text
+msgid  "One or more errors occurred when generating the web site."
+msgstr "生成网站时出现一个或多个错误。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
+msgid  "An error occurred while generating the table of contents page(s). "
+msgstr "生成目录页时出错。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +107.String.Text
+msgid  "An error occurred while copying the layout files. "
+msgstr "复制版式文件时出错。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
+msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgstr "收集 %FILENAME 的文档信息时出错。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
+msgid  "An error occurred while exporting the document '%FILENAME'."
+msgstr "导出文档 %FILENAME 时出错。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
+msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "为导出 %FILENAME 而创建目录时出错。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
+msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgstr "导出文档 '%FILENAME' 时出现安全性错误。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
+msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "导出文档 %FILENAME 时出现输入/输出错误。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
+msgid  "An error occurred while copying media files to the temporary directory."
+msgstr "将媒体文件复制到临时目录时出错。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
+msgid  "The web site could not be copied to the following destination: %URL"
+msgstr "网站不能复制到下列目标: %URL"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +115.String.Text
+msgid  "An unexpected error occurred: %ERROR"
+msgstr "出现意外错误: %ERROR"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
+msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "验证文件 %FILENAME 时发生意外错误"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
+msgid  "%FILENAME' is a folder."
+msgstr "%FILENAME 是一个文件夹。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +118.String.Text
+msgid  "Loading Web Wizard Settings..."
+msgstr "正在加载 Web 向导设置..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +119.String.Text
+msgid  "An unexpected error occurred."
+msgstr "出现意外错误。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +120.String.Text
+msgid  "Validating documents..."
+msgstr "正在验证文档..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +121.String.Text
+msgid  "My Archive"
+msgstr "我的存档文件"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +122.String.Text
+msgid  "Introduction "
+msgstr "介绍 "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +123.String.Text
+msgid  "Documents "
+msgstr "文档 "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +124.String.Text
+msgid  "Main layout"
+msgstr "主版式"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +125.String.Text
+msgid  "Layout details"
+msgstr "版式详细信息"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +126.String.Text
+msgid  "Style"
+msgstr "样式"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +127.String.Text
+msgid  "Web site information"
+msgstr "网站信息"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +128.String.Text
+msgid  "Preview"
+msgstr "预览"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr "将删除选定设置。\n\n是否确定要删除这些设置？"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
+msgid  "%NUMBER pages"
+msgstr "%NUMBER 页"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +132.String.Text
+msgid  "%NUMBER slides"
+msgstr "%NUMBER 张幻灯片"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +133.String.Text
+msgid  "Created: %DATE"
+msgstr "创建时间: %DATE"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +134.String.Text
+msgid  "Last modified: %DATE"
+msgstr "上次修改时间: %DATE"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +135.String.Text
+msgid  "Web Wizard Settings"
+msgstr "Web 向导设置"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +136.String.Text
+msgid  "Background image:"
+msgstr "背景图像:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +137.String.Text
+msgid  "Icon set:"
+msgstr "图标集:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +138.String.Text
+msgid  "The icon set is used for presentations in HTML format."
+msgstr "图标集用于 HTML 格式的演示文稿。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +139.String.Text
+msgid  "HTML Metadata"
+msgstr "HTML 元数据"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +140.String.Text
+msgid  "Choose..."
+msgstr "选择..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +141.String.Text
+msgid  "Choose..."
+msgstr "选择..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +142.String.Text
+msgid  "<default>"
+msgstr "<默认>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +143.String.Text
+msgid  "Publishing via FTP Proxy is not supported."
+msgstr "不支持通过 FTP 代理服务器发布。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +144.String.Text
+msgid  "<no background image>"
+msgstr "<无背景图像>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +145.String.Text
+msgid  "<no icon set>"
+msgstr "<无图标集>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +146.String.Text
+msgid  "The FTP directory '%FILENAME' could not be created."
+msgstr "无法创建 FTP 目录 %FILENAME。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr "FTP 目录 %FILENAME 不存在。\n是否现在创建目录？"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
+msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr "无法创建 Zip 文件 %FILENAME: 已存在相同名称的目录。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr "无法创建本地目录 %FILENAME。\n请检查您的写入权限。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr "本地目录 %FILENAME 不存在。\n是否现在创建目录？"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
+msgid  "Size: %NUMBERKB"
+msgstr "大小: %NUMBERKB"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +152.String.Text
+msgid  "File not found. Would you like to specify a new file location?"
+msgstr "文件未找到。是否要指定新的文件位置？"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +0.String.Text
+msgid  "FTP Connection"
+msgstr "FTP 连接"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +1.String.Text
+msgid  "~User name:"
+msgstr "用户名(~U):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +2.String.Text
+msgid  "~Password:"
+msgstr "密码(~P):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +3.String.Text
+msgid  "Connect"
+msgstr "连接"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +4.String.Text
+msgid  "1. Enter FTP connection information."
+msgstr "1. 输入 FTP 连接信息。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +5.String.Text
+msgid  "~Server name or IP address:"
+msgstr "服务器名或 IP 地址(~S):"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +6.String.Text
+msgid  "2. Connect to the server."
+msgstr "2. 连接到服务器。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +7.String.Text
+msgid  "3. ~Choose a remote directory (optional)."
+msgstr "3. 选择远程目录（可选）(~C)。"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +8.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +9.String.Text
+msgid  "Connection status is unknown"
+msgstr "连接状态未知"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +10.String.Text
+msgid  "Connection was established successfully"
+msgstr "已成功建立连接"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +11.String.Text
+msgid  "Username or password is wrong"
+msgstr "用户名或密码错误"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +12.String.Text
+msgid  "Could not resolve server name"
+msgstr "无法解析服务器名称"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +13.String.Text
+msgid  "You do not have sufficient user rights"
+msgstr "您没有足够的用户权限"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +14.String.Text
+msgid  "Cannot connect to server"
+msgstr "不能连接到服务器"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +15.String.Text
+msgid  "Unexpected error"
+msgstr "意外错误"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +16.String.Text
+msgid  "FTP publishing directory"
+msgstr "FTP 发布目录"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +17.String.Text
+msgid  "This is not an FTP folder"
+msgstr "这不是 FTP 文件夹"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +18.String.Text
+msgid  "Connecting..."
+msgstr "正在连接..."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +1.String.Text
+msgid  "Agenda Wizard"
+msgstr "会议议程向导"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +2.String.Text
+msgid  "Make ~manual changes to this agenda template"
+msgstr "手动修改此会议议程模板(~M)"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +3.String.Text
+msgid  "Template name:"
+msgstr "模板名称:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 4.String.Text
+msgid  "Location and file name:"
+msgstr "位置和文件名:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +5.String.Text
+msgid  "What do you want to do next?"
+msgstr "接下来您想做什么？"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +6.String.Text
+msgid  "Please choose the page design for the agenda"
+msgstr "请为会议议程选择页面设计"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
+msgid  "Please select the headings you wish to include in your agenda template"
+msgstr "请选择要包括在会议议程模板中的标题"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
+msgid  "Please enter general information for the event"
+msgstr "请输入事件的一般信息"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +9.String.Text
+msgid  "Please specify items for the agenda"
+msgstr "请指定会议议程项目"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +10.String.Text
+msgid  "Please select the names you wish to include in your agenda template"
+msgstr "请选择要包括在会议议程模板中的名称"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +11.String.Text
+msgid  "Choose a name and save the template"
+msgstr "选择名称并保存模板"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +12.String.Text
+msgid  "Include form for recording minutes"
+msgstr "包括用于记录会议记录的窗体"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
+msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr "此向导将帮助您创建会议议程模板，然后便可根据需要随时使用该模板创建议程。"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
+msgid  "Time:"
+msgstr "时间:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +15.String.Text
+msgid  "Name:"
+msgstr "姓名:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 16.String.Text
+msgid  "Location:"
+msgstr "地点:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
+msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr "空字段中将使用占位符。可在以后用文本替换占位符。"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +19.String.Text
+msgid  "Create an ~agenda from this template"
+msgstr "使用此模板创建会议议程(~A)"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
+msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr "要使用模板创建新会议议程，请转到该模板的保存位置，然后双击该文件。"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
+msgid  "Agenda item"
+msgstr "会议议程项目"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +22.String.Text
+msgid  "Responsible"
+msgstr "负责人"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +23.String.Text
+msgid  "Duration"
+msgstr "持续时间"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +24.String.Text
+msgid  "Meeting called by"
+msgstr "会议召集者"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
+msgid  "Chairperson"
+msgstr "主席"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
+msgid  "Minute keeper"
+msgstr "会议记录员"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
+msgid  "Moderator"
+msgstr "会议主持人"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +28.String.Text
+msgid  "Attendees"
+msgstr "出席人员"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
+msgid  "Observers"
+msgstr "旁听人员"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
+msgid  "Facility personnel"
+msgstr "服务人员"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
+msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr "会议议程模板将包括选定人名的占位符。利用模板创建会议议程时，可以用相应的名称替换这些占位符。"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
+msgid  "Type of meeting"
+msgstr "会议类型"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +33.String.Text
+msgid  "Please read"
+msgstr "请阅读"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +34.String.Text
+msgid  "Please bring"
+msgstr "请携带"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +35.String.Text
+msgid  "Notes"
+msgstr "注释"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
+msgid  "The agenda template will include placeholders for the selected items."
+msgstr "会议议程模板将包括选定项目的占位符。"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
+msgid  "Date:"
+msgstr "日期:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
+msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr "此向导将创建会议议程模板，使用它能够以相同的布局和设置创建多个议程。"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
+msgid  "Page design:"
+msgstr "页面设计:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +41.String.Text
+msgid  "myAgendaTemplate.stw"
+msgstr "myAgendaTemplate.stw"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +42.String.Text
+msgid  "My Agenda Template"
+msgstr "我的会议议程模板"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +43.String.Text
+msgid  "An unexpected error occurred while saving the agenda template."
+msgstr "保存会议议程模板时出现意外错误。"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +44.String.Text
+msgid  "Name"
+msgstr "名称"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +45.String.Text
+msgid  "Date"
+msgstr "日期"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +46.String.Text
+msgid  "Time"
+msgstr "时间"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 47.String.Text
+msgid  "Location"
+msgstr "地点"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +48.String.Text
+msgid  "Click to replace this text"
+msgstr "单击以替换此文本"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +50.String.Text
+msgid  "Page design"
+msgstr "页面设计"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +51.String.Text
+msgid  "General information"
+msgstr "一般信息"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +52.String.Text
+msgid  "Headings to include"
+msgstr "要包括的标题"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +53.String.Text
+msgid  "Names"
+msgstr "名称"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +54.String.Text
+msgid  "Agenda items"
+msgstr "会议议程项目"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +55.String.Text
+msgid  "Name and location"
+msgstr "姓名和地址"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +56.String.Text
+msgid  "An unexpected error occurred while opening the agenda template."
+msgstr "打开会议议程模板时出现意外错误。"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +57.String.Text
+msgid  "Type of meeting"
+msgstr "会议类型"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +58.String.Text
+msgid  "Please bring"
+msgstr "请携带"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +59.String.Text
+msgid  "Please read"
+msgstr "请阅读"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +60.String.Text
+msgid  "Notes"
+msgstr "注释"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +61.String.Text
+msgid  "Meeting called by"
+msgstr "会议召集者"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +62.String.Text
+msgid  "Chairperson"
+msgstr "主席"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +63.String.Text
+msgid  "Attendees"
+msgstr "出席人员"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +64.String.Text
+msgid  "Minute keeper"
+msgstr "会议记录员"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +65.String.Text
+msgid  "Moderator"
+msgstr "会议主持人"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +66.String.Text
+msgid  "Observers"
+msgstr "旁听人员"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +67.String.Text
+msgid  "Facility personnel"
+msgstr "服务人员"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +68.String.Text
+msgid  "Insert"
+msgstr "插入"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +69.String.Text
+msgid  "Remove"
+msgstr "删除"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +70.String.Text
+msgid  "Move up"
+msgstr "上移"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +71.String.Text
+msgid  "Move down"
+msgstr "下移"
+
+#: source/importwizard/importwi.src#sHelpButton.String.Text
+msgid  "~Help"
+msgstr "帮助(~H)"
+
+#: source/importwizard/importwi.src#sCancelButton.String.Text
+msgid  "~Cancel"
+msgstr "取消(~C)"
+
+#: source/importwizard/importwi.src#sBackButton.String.Text
+msgid  "<< ~Back"
+msgstr "<< 返回(~B)"
+
+#: source/importwizard/importwi.src#sNextButton.String.Text
+msgid  "Ne~xt >>"
+msgstr "继续(~X) >>"
+
+#: source/importwizard/importwi.src#sBeginButton.String.Text
+msgid  "~Convert"
+msgstr "转换(~C)"
+
+#: source/importwizard/importwi.src#sCloseButton.String.Text
+msgid  "~Close"
+msgstr "关闭(~C)"
+
+#: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr "此向导可以将 %PRODUCTNAME 格式的文档和 Microsoft Office 文档转换为新版的 OpenDocument 格式。"
+
+#: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr "请您注意在转换 Microsoft 文档时源文档内含 VBA 宏的功能就会丢失。"
+
+#: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+msgid  "Select the document type for conversion:"
+msgstr "请选择一个要转换的文档类型："
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+msgid  "Word templates"
+msgstr "Word 模板"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+msgid  "Excel templates"
+msgstr "Excel 模板"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+msgid  "PowerPoint templates"
+msgstr "PowerPoint 模板"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+msgid  "Word documents"
+msgstr "Word 文档"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+msgid  "Excel documents"
+msgstr "Excel 文档"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+msgid  "PowerPoint documents"
+msgstr "PowerPoint 文档"
+
+#: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+msgid  "Including subdirectories"
+msgstr "包括子目录"
+
+#: source/importwizard/importwi.src#sMSContainerName.String.Text
+msgid  "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: source/importwizard/importwi.src#sSummaryHeader.String.Text
+msgid  "Summary:"
+msgstr "概要："
+
+#: source/importwizard/importwi.src#sTextImportLabel.String.Text
+msgid  "Import from:"
+msgstr "输入来源："
+
+#: source/importwizard/importwi.src#sTextExportLabel.String.Text
+msgid  "Save to:"
+msgstr "保存到："
+
+#: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+msgid  "Imported_Templates"
+msgstr "导入的模板"
+
+#: source/importwizard/importwi.src#sProgressDesc1.String.Text
+msgid  "Progress: "
+msgstr "已经完成： "
+
+#: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+msgid  "Document"
+msgstr " 文档"
+
+#: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+msgid  "Documents"
+msgstr "文档"
+
+#: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+msgid  "Templates"
+msgstr "模板"
+
+#: source/importwizard/importwi.src#sNoDirCreation.String.Text
+msgid  "The '%1' directory cannot be created: "
+msgstr "无法创建这个目录 '%1' ： "
+
+#: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+msgid  "The '%1' directory does not exist."
+msgstr "目录 '%1' 不存在。"
+
+#: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+msgid  "Do you want to create it now?"
+msgstr "要建立这个目录？"
+
+#: source/importwizard/importwi.src#sFileExists.String.Text
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "文件 '<1>' 已经存在。<CR>是否要改写这个文件？"
+
+#: source/importwizard/importwi.src#sMorePathsError3.String.Text
+msgid  "Directories do not exist"
+msgstr "目录不存在"
+
+#: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+msgid  "Do you want to overwrite documents without being asked?"
+msgstr "您要省去询问而直接改写文档？"
+
+#: source/importwizard/importwi.src#sreeditMacro.String.Text
+msgid  "Document macro has to be revised."
+msgstr "必须重新编辑文档宏"
+
+#: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+msgid  "Document '<1>' could not be saved."
+msgstr "无法保存文档 '<1>'。"
+
+#: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+msgid  "Document '<1>' could not be opened."
+msgstr "无法打开文档 '<1>' "
+
+#: source/importwizard/importwi.src#sConvertError1.String.Text
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "您真要现在中断这个转换过程？"
+
+#: source/importwizard/importwi.src#sConvertError2.String.Text
+msgid  "Cancel Wizard"
+msgstr "取消向导"
+
+#: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+msgid  "An unexpected error has occurred in the wizard."
+msgstr "向导出现意外错误。"
+
+#: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+msgid  "Error"
+msgstr "错误"
+
+#: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+msgid  "Select a directory"
+msgstr "请您选择一个目录"
+
+#: source/importwizard/importwi.src#sDialogTitle.String.Text
+msgid  "Document Converter"
+msgstr "文档转换器"
+
+#: source/importwizard/importwi.src#sProgressPage1.String.Text
+msgid  "Progress"
+msgstr "已经完成"
+
+#: source/importwizard/importwi.src#sProgressPage2.String.Text
+msgid  "Retrieving the relevant documents:"
+msgstr "汇编相关的文档："
+
+#: source/importwizard/importwi.src#sProgressPage3.String.Text
+msgid  "Converting the documents"
+msgstr "转换文档"
+
+#: source/importwizard/importwi.src#sProgressFound.String.Text
+msgid  "Found:"
+msgstr "已经找到："
+
+#: source/importwizard/importwi.src#sProgressPage5.String.Text
+msgid  "%1 found"
+msgstr "%1 被找到。"
+
+#: source/importwizard/importwi.src#sReady.String.Text
+msgid  "Finished"
+msgstr "完成"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+msgid  "Text templates"
+msgstr "文本模板"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+msgid  "Spreadsheet templates"
+msgstr "电子表格模板"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+msgid  "Drawing/presentation templates"
+msgstr "绘图/演示文稿模板"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+msgid  "Master documents"
+msgstr "主控文档"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+msgid  "Text documents"
+msgstr "文本文档"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+msgid  "Spreadsheets"
+msgstr "电子表格文档"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+msgid  "Drawing/presentation documents"
+msgstr "绘图和演示文稿文档"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+msgid  "Master documents/formulas"
+msgstr "主控文档和公式"
+
+#: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+msgid  "Master documents"
+msgstr "主控文档"
+
+#: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+msgid  "Formulas"
+msgstr "公式"
+
+#: source/importwizard/importwi.src#sSourceDocuments.String.Text
+msgid  "Source documents"
+msgstr "源文档"
+
+#: source/importwizard/importwi.src#sTargetDocuments.String.Text
+msgid  "Target documents"
+msgstr "目标文档"
+
+#: source/importwizard/importwi.src#sCreateLogfile.String.Text
+msgid  "Create log file"
+msgstr "建立日志文件"
+
+#: source/importwizard/importwi.src#sLogfileSummary.String.Text
+msgid  "<COUNT> documents converted"
+msgstr "<COUNT> 文件已经转换"
+
+#: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+msgid  "A log file will be created in your work directory"
+msgstr "在您的工作目录内新建一个日志文件。"
+
+#: source/importwizard/importwi.src#sshowLogfile.String.Text
+msgid  "Show log file"
+msgstr "显示日志文件"
+
+#: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+msgid  "All subdirectories will be taken into account"
+msgstr "包括所有子目录"
+
+#: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+msgid  "These will be exported to the following directory:"
+msgstr "输出至下列目录："
+
+#: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 %PRODUCTNAME 文本文档："
+
+#: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 %PRODUCTNAME 电子表格文档："
+
+#: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 %PRODUCTNAME 绘图文档和演示文稿文档："
+
+#: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 %PRODUCTNAME 公式文档："
+
+#: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 %PRODUCTNAME 文本文档模板："
+
+#: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 %PRODUCTNAME 电子表格模板文档："
+
+#: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 %PRODUCTNAME 绘图模板文档和演示文稿模板文档："
+
+#: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 %PRODUCTNAME 主控文档："
+
+#: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+msgid  "All Word documents contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 Word 文档："
+
+#: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+msgid  "All Excel documents contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 Excel 文档："
+
+#: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 PowerPoint 文档："
+
+#: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+msgid  "All Word templates contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 Word 模板："
+
+#: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+msgid  "All Excel templates contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 Excel 模板："
+
+#: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgstr "将导入以下目录中的所有 PowerPoint 模板："
+
+#: source/schedule/schedule.src#dlgCalTitle.String.Text
+msgid  "%PRODUCTNAME Calendar"
+msgstr "%PRODUCTNAME 日历"
+
+#: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+msgid  "Back"
+msgstr "返回"
+
+#: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+msgid  "Personal Data"
+msgstr "个人数据"
+
+#: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+msgid  "Add Holidays to Calendar"
+msgstr "节假日计算"
+
+#: source/schedule/schedule.src#dlgOK.String.Text
+msgid  "Create"
+msgstr "完成"
+
+#: source/schedule/schedule.src#dlgCancel.String.Text
+msgid  "Cancel"
+msgstr "取消"
+
+#: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+msgid  "Calendar"
+msgstr "日历"
+
+#: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+msgid  "~Year Overview"
+msgstr "年检视图(~Y)"
+
+#: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+msgid  "~Month"
+msgstr "月(~M)"
+
+#: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+msgid  "Add holidays for"
+msgstr "计算节假日为"
+
+#: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+msgid  "USA"
+msgstr "中国"
+
+#: source/schedule/schedule.src#dlgTime.String.Text
+msgid  "Time Frame"
+msgstr "时间"
+
+#: source/schedule/schedule.src#dlgYear.String.Text
+msgid  "Year"
+msgstr "年"
+
+#: source/schedule/schedule.src#dlgCalMonth.String.Text
+msgid  "Month"
+msgstr "月"
+
+#: source/schedule/schedule.src#dlgCalOwnData.String.Text
+msgid  "Personal Data"
+msgstr "个人数据"
+
+#: source/schedule/schedule.src#dlgCalInsert.String.Text
+msgid  "~Insert"
+msgstr "插入(~I)"
+
+#: source/schedule/schedule.src#dlgCalDelete.String.Text
+msgid  "~Delete"
+msgstr "删除(~D)"
+
+#: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+msgid  "New Event"
+msgstr "重大事件"
+
+#: source/schedule/schedule.src#dlgCalEvent.String.Text
+msgid  "Event"
+msgstr "事件"
+
+#: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+msgid  "One-Time"
+msgstr "一次性"
+
+#: source/schedule/schedule.src#dlgCalEventDay.String.Text
+msgid  "Day"
+msgstr "天"
+
+#: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+msgid  "Month"
+msgstr "月"
+
+#: source/schedule/schedule.src#dlgCalEventYear.String.Text
+msgid  "Year"
+msgstr "年"
+
+#: source/schedule/schedule.src#dlgBitmapFile.String.Text
+msgid  "usa.bmp"
+msgstr "china.gif"
+
+#: source/schedule/schedule.src#dlgState.String.Text
+msgid  "Public holidays"
+msgstr "-"
+
+#: source/schedule/schedule.src#dlgMonth.String.Text
+msgid  "January"
+msgstr "一月"
+
+#: source/schedule/schedule.src#dlgMonth+1.String.Text
+msgid  "February"
+msgstr "二月"
+
+#: source/schedule/schedule.src#dlgMonth+2.String.Text
+msgid  "March"
+msgstr "三月"
+
+#: source/schedule/schedule.src#dlgMonth+3.String.Text
+msgid  "April"
+msgstr "四月"
+
+#: source/schedule/schedule.src#dlgMonth+4.String.Text
+msgid  "May"
+msgstr "五月"
+
+#: source/schedule/schedule.src#dlgMonth+5.String.Text
+msgid  "June"
+msgstr "六月"
+
+#: source/schedule/schedule.src#dlgMonth+6.String.Text
+msgid  "July"
+msgstr "七月"
+
+#: source/schedule/schedule.src#dlgMonth+7.String.Text
+msgid  "August"
+msgstr "八月"
+
+#: source/schedule/schedule.src#dlgMonth+8.String.Text
+msgid  "September"
+msgstr "九月"
+
+#: source/schedule/schedule.src#dlgMonth+9.String.Text
+msgid  "October"
+msgstr "十月"
+
+#: source/schedule/schedule.src#dlgMonth+10.String.Text
+msgid  "November"
+msgstr "十一月"
+
+#: source/schedule/schedule.src#dlgMonth+11.String.Text
+msgid  "December"
+msgstr "十二月"
+
+#: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+msgid  "Yearly / Monthly Calendar"
+msgstr "年历和月历"
+
+#: source/schedule/schedule.src#msgCalError.String.Text
+msgid  "An error occurred while creating the calendar."
+msgstr "在制作日历时出现了一个错误。"
+
+#: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+msgid  "Delete event entries"
+msgstr "删除事件条目"
+
+#: source/schedule/schedule.src#msgCalRemove.String.Text
+msgid  "Delete the selected entries?"
+msgstr "要删除选中的条目吗？"
+
+#: source/schedule/schedule.src#stlWorkday.String.Text
+msgid  "Workweek"
+msgstr "工作周"
+
+#: source/schedule/schedule.src#stlWeekend.String.Text
+msgid  "Weekend"
+msgstr "周末"
+
+#: source/schedule/schedule.src#nameCalYear.String.Text
+msgid  "Calendar"
+msgstr "日历"
+
+#: source/schedule/schedule.src#nameCalMonth.String.Text
+msgid  "Month"
+msgstr "月"
+
+#: source/schedule/schedule.src#sProgress.String.Text
+msgid  "Progress:"
+msgstr "已经完成："
+
+#: source/template/template.src#SAMPLES.String.Text
+msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr "只有首先借助这个模板新建一个文档，才能充分使用示例功能。"
+
+#: source/template/template.src#SAMPLES + 1.String.Text
+msgid  "Remarks"
+msgstr "提示"
+
+#: source/template/template.src#STYLES.String.Text
+msgid  "Theme Selection"
+msgstr "选择主题"
+
+#: source/template/template.src#STYLES + 1.String.Text
+msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr "将文档保存到剪贴板时发生错误！无法取消下列操作。"
+
+#: source/template/template.src#STYLES + 2.String.Text
+msgid  "~Cancel"
+msgstr "取消(~C)"
+
+#: source/template/template.src#STYLES + 3.String.Text
+msgid  "~OK"
+msgstr "确定(~O)"
+
+#: source/template/template.src#AgendaDlgName.String.Text
+msgid  "Minutes Template"
+msgstr "记录模板"
+
+#: source/template/template.src#AgendaDlgNoCancel.String.Text
+msgid  "An option must be confirmed."
+msgstr "必须选择一个选项。"
+
+#: source/template/template.src#AgendaDlgFrame.String.Text
+msgid  "Minutes Type"
+msgstr "记录类型"
+
+#: source/template/template.src#AgendaDlgButton1.String.Text
+msgid  "Results Minutes"
+msgstr "议程结果记录"
+
+#: source/template/template.src#AgendaDlgButton2.String.Text
+msgid  "Evaluation Minutes"
+msgstr "议程过程记录"
+
+#: source/template/template.src#CorrespondenceNoTextmark.String.Text
+msgid  "The bookmark 'Recipient' is missing."
+msgstr "书签 'Recipient' 不存在。"
+
+#: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+msgid  "Form letter fields can not be included."
+msgstr "无法插入邮件合并字段。"
+
+#: source/template/template.src#CorrespondenceMsgError.String.Text
+msgid  "An error has occurred."
+msgstr "发生错误"
+
+#: source/template/template.src#CorrespondenceDialog.String.Text
+msgid  "Addressee"
+msgstr "收件人"
+
+#: source/template/template.src#CorrespondenceDialog+1.String.Text
+msgid  "One recipient"
+msgstr "单一收件人"
+
+#: source/template/template.src#CorrespondenceDialog+2.String.Text
+msgid  "Several recipients (address database)"
+msgstr "多个收件人(通讯簿数据库)"
+
+#: source/template/template.src#CorrespondenceDialog+3.String.Text
+msgid  "Use of This Template"
+msgstr "使用模板"
+
+#: source/template/template.src#CorrespondenceFields.String.Text
+msgid  "Click placeholder and overwrite"
+msgstr "点击这里，开始输入文字。"
+
+#: source/template/template.src#CorrespondenceFields+1.String.Text
+msgid  "Company"
+msgstr "公司"
+
+#: source/template/template.src#CorrespondenceFields+2.String.Text
+msgid  "Department"
+msgstr "部门"
+
+#: source/template/template.src#CorrespondenceFields+3.String.Text
+msgid  "First Name"
+msgstr "名字"
+
+#: source/template/template.src#CorrespondenceFields+4.String.Text
+msgid  "Last Name"
+msgstr "姓氏"
+
+#: source/template/template.src#CorrespondenceFields+5.String.Text
+msgid  "Street"
+msgstr "街道"
+
+#: source/template/template.src#CorrespondenceFields+6.String.Text
+msgid  "Country"
+msgstr "国家"
+
+#: source/template/template.src#CorrespondenceFields+7.String.Text
+msgid  "ZIP/Postal Code"
+msgstr "邮政编码"
+
+#: source/template/template.src#CorrespondenceFields+8.String.Text
+msgid  "City"
+msgstr "城市"
+
+#: source/template/template.src#CorrespondenceFields+9.String.Text
+msgid  "Title"
+msgstr "称呼"
+
+#: source/template/template.src#CorrespondenceFields+10.String.Text
+msgid  "Position"
+msgstr "职位"
+
+#: source/template/template.src#CorrespondenceFields+11.String.Text
+msgid  "Form of Address"
+msgstr "收件人称呼"
+
+#: source/template/template.src#CorrespondenceFields+12.String.Text
+msgid  "Initials"
+msgstr "缩写"
+
+#: source/template/template.src#CorrespondenceFields+13.String.Text
+msgid  "Salutation"
+msgstr "信件开头称呼"
+
+#: source/template/template.src#CorrespondenceFields+14.String.Text
+msgid  "Home Phone"
+msgstr "私人电话"
+
+#: source/template/template.src#CorrespondenceFields+15.String.Text
+msgid  "Work Phone"
+msgstr "公务电话"
+
+#: source/template/template.src#CorrespondenceFields+16.String.Text
+msgid  "Fax"
+msgstr "传真"
+
+#: source/template/template.src#CorrespondenceFields+17.String.Text
+msgid  "E-Mail"
+msgstr "电子邮件"
+
+#: source/template/template.src#CorrespondenceFields+18.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/template/template.src#CorrespondenceFields+19.String.Text
+msgid  "Notes"
+msgstr "备注"
+
+#: source/template/template.src#CorrespondenceFields+20.String.Text
+msgid  "Alt. Field 1"
+msgstr "预备栏 1"
+
+#: source/template/template.src#CorrespondenceFields+21.String.Text
+msgid  "Alt. Field 2"
+msgstr "预备栏 2"
+
+#: source/template/template.src#CorrespondenceFields+22.String.Text
+msgid  "Alt. Field 3"
+msgstr "预备栏 3"
+
+#: source/template/template.src#CorrespondenceFields+23.String.Text
+msgid  "Alt. Field 4"
+msgstr "预备栏 4"
+
+#: source/template/template.src#CorrespondenceFields+24.String.Text
+msgid  "ID"
+msgstr "ID"
+
+#: source/template/template.src#CorrespondenceFields+25.String.Text
+msgid  "State"
+msgstr "省或直辖市"
+
+#: source/template/template.src#CorrespondenceFields+26.String.Text
+msgid  "Office Phone"
+msgstr "办公室电话"
+
+#: source/template/template.src#CorrespondenceFields+27.String.Text
+msgid  "Pager"
+msgstr "BP 机"
+
+#: source/template/template.src#CorrespondenceFields+28.String.Text
+msgid  "Mobile Phone"
+msgstr "手机"
+
+#: source/template/template.src#CorrespondenceFields+29.String.Text
+msgid  "Other Phone"
+msgstr "其他电话"
+
+#: source/template/template.src#CorrespondenceFields+30.String.Text
+msgid  "Calendar URL"
+msgstr "日历 URL"
+
+#: source/template/template.src#CorrespondenceFields+31.String.Text
+msgid  "Invite"
+msgstr "邀请"
+
+#: source/template/template.src#TextField.String.Text
+msgid  "User data field is not defined!"
+msgstr "未定义用户数据字段！"
+
+#: source/template/template.src#Newsletter.String.Text
+msgid  "General layout"
+msgstr "一般的版式"
+
+#: source/template/template.src#Newsletter + 1.String.Text
+msgid  "Default layout"
+msgstr "标准的版式"
+
+#: source/template/template.src#Newsletter + 2.String.Text
+msgid  "Commemorative publication layout"
+msgstr "纪念文"
+
+#: source/template/template.src#Newsletter + 3.String.Text
+msgid  "Brochure layout"
+msgstr "小手册的版式"
+
+#: source/template/template.src#Newsletter + 10.String.Text
+msgid  "Format"
+msgstr "格式"
+
+#: source/template/template.src#Newsletter + 11.String.Text
+msgid  "Single-sided"
+msgstr "单页"
+
+#: source/template/template.src#Newsletter + 12.String.Text
+msgid  "Double-sided"
+msgstr "双页"

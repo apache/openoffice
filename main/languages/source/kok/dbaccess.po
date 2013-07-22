@@ -1,0 +1,3616 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.String.Text
+msgid  "Tried to open the table $name$."
+msgstr " $name$ कोष्टक उगडुपाचो यत्न केलो."
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_INVALID.String.Text
+msgid  "No connection could be established."
+msgstr "जोडणी लागपाक शकना."
+
+#: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
+msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
+msgstr "$name$ कोष्टक पयलीसावन अस्तित्वांत आसा. गाळणी लायिल्ली आशिल्ल्यान ते दिसना."
+
+#: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
+msgid  "You have no write access to the configuration data the object is based on."
+msgstr "ज्या संरचनाय म्हायती चेर वस्त अवलंबून आसा, तिका बदलुपाचो अधिकार तुमका ना."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
+msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgstr "भायल्या म्हायती स्त्रोतांकडेन जोडणी लागपाक शकना. खबर नाशिल्ली त्रुटी घडल्या. चड करून चालक सदोश आस्तलो."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
+msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgstr "भायल्या म्हायती स्त्रोताकडेन जोडणी लागना. दिल्ल्या  URLखातीर SDBC चालक मेळना."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
+msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgstr "भायल्या म्हायती स्त्रोताकडेन जोडणी लागपाक शकना. SDBC चालक व्यवस्थापक लागू करपाक येना."
+
+#: source/core/resource/strings.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "अर्जी"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "अहवाल"
+
+#: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
+msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
+msgstr "म्हायती स्त्रोताची जतनाय करपाक जाली ना. उपकार करून म्हायती स्त्रोताची जतनाय करपाखातीर interface XStorable वापरात."
+
+#: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr "दिल्लो आदेश हे SELECT विधान न्ही.\nफक्त प्रस्न विचारूंक येतात."
+
+#: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
+msgid  "No values were modified."
+msgstr "मोलांत बदल करूंक ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
+msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgstr "मोल घालूंक शकले ना. XRowUpdate interface क ResultSet चे फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
+msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgstr "मोल घालूंक शकले ना. XResultSetUpdate interface क ResultSetचे फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
+msgid  "Values could not be modified, due to a missing condition statement."
+msgstr "शर्त विधान शेणिल्ल्या कारणान, मोलांत सुदार घडोवन हाडपाक आयलो ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_ADD.String.Text
+msgid  "The adding of columns is not supported."
+msgstr "स्तंभ घालपाक फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_DROP.String.Text
+msgid  "The dropping of columns is not supported."
+msgstr "स्तंभ काडून उडोवपाक फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.String.Text
+msgid  "The WHERE condition could not be created for the primary key."
+msgstr "WHERE शर्त मुळाव्या चावयेखातीर तयार करपाक येना."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.String.Text
+msgid  "The column does not support the property '%value'."
+msgstr " '%value' वैशिश्ट्याक स्तंभाचे फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.String.Text
+msgid  "The column is not searchable!"
+msgstr "स्तंभाचो सोद घेवपाक येना!"
+
+#: source/core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.String.Text
+msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "स्तंभाचे मोल <sal_Int8> ह्या type Sequenceचे ना."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.String.Text
+msgid  "The column is not valid."
+msgstr "स्तंभ वैध ना."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.String.Text
+msgid  "The column '%name' must be visible as a column."
+msgstr "'%name' स्तंभ हो  स्तंभासारको दिसपाक जाय."
+
+#: source/core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.String.Text
+msgid  "The interface XQueriesSupplier is not available."
+msgstr "XQueriesSupplier इंटरफेस उपलब्द ना."
+
+#: source/core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.String.Text
+msgid  "The driver does not support this function."
+msgstr "ह्या कामाक चालकाचे फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_ABS_ZERO.String.Text
+msgid  "An 'absolute(0)' call is not allowed."
+msgstr "absolute(0) उल्याक अनुमती ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_RELATIVE.String.Text
+msgid  "Relative positioning is not allowed in this state."
+msgstr "ह्या परिस्थितींत संबंदित स्थितीक अनुमती ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
+msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgstr "ResultSet  निमण्या वळीउपरांत दवरिल्लो आसत जाल्यार वळीक परतून ताजी करपाक मेळना."
+
+#: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
+msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgstr "ResultSet क पयली जर भीतर घालपाच्या वळींत हालयलो ना जाल्यार नवीन वळ घालपाक येना."
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
+msgid  "A row cannot be modified in this state"
+msgstr "अशे परिस्थितींत वळींत सुदार घडोवपाक येना."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETEROW.String.Text
+msgid  "A row cannot be deleted in this state."
+msgstr "अशे परिस्थितींत वळ काडून उडोवपाक मेळना."
+
+#: source/core/resource/strings.src#RID_STR_NO_TABLE_RENAME.String.Text
+msgid  "The driver does not support table renaming."
+msgstr "कोष्टकाचे नाव बदलुपाक चालकाचे फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.String.Text
+msgid  "The driver does not support the modification of column descriptions."
+msgstr "स्तंभ वर्णनांत बदल घडोवपाक चालकाचे फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the name."
+msgstr "नाव बदलून स्तंभाचे वर्णन बदलुपाक चालकाचे फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the index."
+msgstr "वळेरी बदलून स्तंभाचे वर्णन बदलुपाक चालकाचे फांटबळ ना."
+
+#: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr " \"$file$\" धारिका अस्तित्वांत ना."
+
+#: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
+msgid  "There exists no table named \"$table$\"."
+msgstr " \"$table$\" नावाचे कोष्टक अस्तित्वांत ना."
+
+#: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
+msgid  "There exists no query named \"$table$\"."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
+msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgstr "सद्याच्या प्रस्नांच्या नावाभशेनूच नावा आशिल्ली कोष्टका म्हायतीकोशांत आसात.सगळे प्रस्न आनिक कोष्टकांचो पुराय वापर करपाखातीर, खात्री करून घेयात की तांची नावा वेगळी आसात."
+
+#: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr "ही त्रुट घडोवपी SQL आदेश जावन् आसा:\n\n$command$"
+
+#: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The SQL command does not describe a result set."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.String.Text
+msgid  "The name must not be empty."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.String.Text
+msgid  "The container cannot contain NULL objects."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NAME_ALREADY_USED.String.Text
+msgid  "There already is an object with the given name."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.String.Text
+msgid  "This object cannot be part of this container."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.String.Text
+msgid  "The object already is, with a different name, part of the container."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NAME_NOT_FOUND.String.Text
+msgid  "Unable to find the document '$name$'."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
+msgid  "Error accessing data source '$name$':\\n$error$"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
+msgid  "There exists no folder named \"$folder$\"."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
+msgid  "Cannot delete the before-first or after-last row."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.String.Text
+msgid  "Cannot delete the insert-row."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_RESULT_IS_READONLY.String.Text
+msgid  "Result set is read only."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.String.Text
+msgid  "DELETE privilege not available."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.String.Text
+msgid  "Current row is already deleted."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_UPDATE_FAILED.String.Text
+msgid  "Current row could not be updated."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.String.Text
+msgid  "INSERT privilege not available."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_INTERNAL_ERROR.String.Text
+msgid  "Internal error: no statement object provided by the database driver."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_EXPRESSION1.String.Text
+msgid  "Expression1"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_SQL_COMMAND.String.Text
+msgid  "No SQL command was provided."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_INVALID_INDEX.String.Text
+msgid  "Invalid column index."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.String.Text
+msgid  "Invalid cursor state."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.String.Text
+msgid  "The cursor points to before the first or after the last row."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.String.Text
+msgid  "The rows before the first and after the last row don't have a bookmark."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.String.Text
+msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_EMBEDDING.String.Text
+msgid  "Embedding of database documents is not supported."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
+msgid  "The extension is not installed."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+msgid  "Database ~name"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+msgid  "User settings"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+msgid  "~Control user"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+msgid  "~Administrator"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+msgid  "~Domain user"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+msgid  "P~assword..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+msgid  "~Password..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+msgid  "Passwo~rd..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+msgid  "~Backup file"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+msgid  "..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+msgid  "Database settings"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "TRANSACTI~ONLOG"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+msgid  "..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+msgid  "..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+msgid  "..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+msgid  "Transaction ~file (MB)"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+msgid  "Data~base size (MB)"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+msgid  "Backup file information"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+msgid  "Create New Adabas D Database"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+msgid  "No entry could be written in the configuration file."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+msgid  "An error occurred as the DB files were being created."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+msgid  "An error occurred as the system tables were being created."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+msgid  "The backup file entered does not exist."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+msgid  "The administrator and the control user cannot have the same name!"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+msgid  "No name has been entered for the $name$ file!"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+msgid  "You have to have administrator rights to create a new database!"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+msgid  "The specified file name or directory does not exist."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+msgid  "Creating database files."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+msgid  "Creating database configuration file."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+msgid  "Starting database for the first time."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+msgid  "The name entered already exists."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+msgid  "No default names could be set for the database files. The total length is more than 40 characters."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+msgid  "No default names could be set for the database files. There is no write access."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+msgid  "The current database need to be converted. Please insert control user  and password."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+msgid  "Database Document Macro Migration"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+msgid  "Prepare"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+msgid  "Backup Document"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+msgid  "Migrate"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+msgid  "Summary"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+msgid  "Welcome to the Database Macro Migration Wizard"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+msgid  "Backup your Document"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+msgid  "Save To:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+msgid  "Browse ..."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+msgid  "Migration Progress"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+msgid  "Current object:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+msgid  "Current progress:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+msgid  "Overall progress:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+msgid  "document $current$ of $overall$"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+msgid  "Summary"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
+msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
+msgid  "The migration was not successful. Examine the migration log below for details."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+msgid  "Form '$name$'"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+msgid  "Report '$name$'"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+msgid  "document $current$ of $overall$"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+msgid  "Database Document"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+msgid  "saved copy to $location$"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+msgid  "migrated $type$ library '$old$' to '$new$'"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
+msgid  "$type$ library '$library$'"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
+msgid  "migrating libraries ..."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+msgid  "%PRODUCTNAME Basic"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+msgid  "JavaScript"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+msgid  "BeanShell"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+msgid  "Java"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+msgid  "Python"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+msgid  "dialog"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
+msgid  "Error(s)"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
+msgid  "Warnings"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
+msgid  "caught exception: "
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
+msgid  "You need to choose a backup location other than the document location itself."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
+msgid  "Invalid number of initialization arguments. Expected 1."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_NO_DATABASE.String.Text
+msgid  "No database document found in the initialization arguments."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_NOT_READONLY.String.Text
+msgid  "Not applicable to read-only documents."
+msgstr ""
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgstr "कोष्टक आनिक प्रस्नाक तुमी एकूच नाव दिवपाक शकना. उपकार करून कोष्टक वा प्रस्नान न वापरिल्ले अशे नाव वापरात."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+msgid  "Table"
+msgstr "कोष्टक"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+msgid  "Query"
+msgstr "प्रस्न"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+msgid  "The given connection is no valid query and/or tables supplier."
+msgstr ""
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+msgid  "The given object is no table object."
+msgstr ""
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgstr ""
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
+msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+msgid  "Create Form in Design View..."
+msgstr "डिजायन दृश्यांत अर्जी तयार करात..."
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+msgid  "Use Wizard to Create Form..."
+msgstr "अर्जी तयार करपाखातीर विझार्ड वापरात..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+msgid  "Use Wizard to Create Report..."
+msgstr "अहवाल तयार करपाखातीर विझार्ड वापरात..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+msgid  "Create Report in Design View..."
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+msgid  "Create Query in Design View..."
+msgstr "डिजायन दृश्यांत प्रस्न निर्माण करात..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+msgid  "Create Query in SQL View..."
+msgstr " SQL दृश्यांत प्रस्न निर्माण करात..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+msgid  "Use Wizard to Create Query..."
+msgstr "प्रस्न निर्माण करपाखातीर विझार्ड वापरात..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+msgid  "Create Table in Design View..."
+msgstr "डिजायन दृश्यांत कोष्टक निर्माण करात..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+msgid  "Use Wizard to Create Table..."
+msgstr "कोष्टक तयार करपाखातीर विझार्ड वापरात..."
+
+#: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+msgid  "Create View..."
+msgstr "दृश्य तयार करात..."
+
+#: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+msgid  "Forms"
+msgstr "अर्जीं"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+msgid  "Reports"
+msgstr "अहवाल"
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+msgid  "Form..."
+msgstr "अर्जी..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+msgid  "Report..."
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+msgid  "View (Simple)..."
+msgstr "दृश्य (सादें)... "
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+msgid  "Paste Special..."
+msgstr "खाशेले दसयात..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+msgid  "Delete"
+msgstr "काडून उडयात"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+msgid  "Rename"
+msgstr "नाव बदलात"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+msgid  "Edit"
+msgstr "सम्पादन"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+msgid  "Edit in SQL View..."
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+msgid  "Open"
+msgstr "उगडात"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+msgid  "Create as View"
+msgstr "दृश्य म्हण निर्माण करात"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Form Wizard..."
+msgstr "अर्जी विझार्ड..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+msgid  "Report..."
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Report Wizard..."
+msgstr "अहवाल विझार्ड..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+msgid  "Select All"
+msgstr "सगळ्याची निवड करात"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MenuItem.Text
+msgid  "~Database"
+msgstr "म्हायतीकोश"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MenuItem.Text
+msgid  "Properties..."
+msgstr "वैशिश्ट्यां"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MenuItem.Text
+msgid  "Connection Type..."
+msgstr "जोडणी प्रकार..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MenuItem.Text
+msgid  "Advanced Settings..."
+msgstr "अर्विल्ली स्थापितां..."
+
+#: source/ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.String.Text
+msgid  "Do you want to delete the data source '%1'?"
+msgstr "'%1' म्हायती स्त्रोत तुमी काडून उडोवपाक सोदतात?"
+
+#: source/ui/app/app.src#STR_APP_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base"
+msgstr " - %PRODUCTNAME पायो"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a report."
+msgstr "अहवाल तयार करपाखातीर गरजेची आशिल्ली पावलां उखलपाक विझार्ड तुमकां मार्गदर्शन करतले."
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
+msgid  "Create a form by specifying the record source, controls, and control properties."
+msgstr "अभिलेख स्त्रोत, नियंत्रणां आनिक नियंत्रण वैशिश्ट्यां स्पश्ट करून अर्जी तयार करात."
+
+#: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
+msgid  "Create a report by specifying the record source, controls, and control properties."
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a form."
+msgstr "अर्जी तयार करपाखातीर जांय आशिल्ली पावलां उखलपाक विझार्ड तुमकां मार्गदर्शन करतले."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
+msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgstr "गाळणी, आदान कोष्टकां, प्रक्षेत्र नावां, आनिक वर्गीकरण वा एकत्रीकरण करपाखातीरची वैशिश्ट्यां स्पश्ट करून प्रस्न तयार करात."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
+msgid  "Create a query  entering an SQL statement directly."
+msgstr "थेट SQL विधान घालून प्रस्न तयार करात."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a query."
+msgstr "प्रस्न तयार करपाखातीर जाय आशिल्ली पावला उखलपाक विझार्ड तुमका मार्गदर्शन करतले."
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a table by specifying the field names and properties, as well as the data types."
+msgstr "प्रक्षेत्रांची नावां आनिक वैशिश्ट्यां, तशेच म्हायतीचे प्रकार स्पश्ट करून कोष्टक तयार करात."
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
+msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgstr "कोष्टक तयार करपाखातीर व्यवसायिक आनिक वैयक्तिक कोष्टक नमुन्यांतल्यान निवड करात."
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a view by specifying the tables and field names you would like to have visible."
+msgstr "दिसपाक जाय त्या कोष्टकां आनिक प्रक्षेत्राची नावा स्पश्ट करून दृश्य तयार करात."
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
+msgid  "Opens the view wizard"
+msgstr "दृश्य विझार्ड उघडटा"
+
+#: source/ui/app/app.src#STR_DATABASE.String.Text
+msgid  "Database"
+msgstr "म्हायतीकोश"
+
+#: source/ui/app/app.src#STR_TASKS.String.Text
+msgid  "Tasks"
+msgstr "कामां"
+
+#: source/ui/app/app.src#STR_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "विवरण"
+
+#: source/ui/app/app.src#STR_PREVIEW.String.Text
+msgid  "Preview"
+msgstr "पूर्वदृश्य"
+
+#: source/ui/app/app.src#STR_DISABLEPREVIEW.String.Text
+msgid  "Disable Preview"
+msgstr "पूर्वदृश्य अपांगूळ करात"
+
+#: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
+msgid  "None"
+msgstr "कांय ना"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MenuItem.Text
+msgid  "Document Information"
+msgstr "दस्तावेज म्हायती"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
+msgid  "Document"
+msgstr "दस्तावेज"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "अर्जी"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "अहवाल"
+
+#: source/ui/app/app.src#STR_FRM_LABEL.String.Text
+msgid  "F~orm name"
+msgstr "अर्जेचे नाव"
+
+#: source/ui/app/app.src#STR_RPT_LABEL.String.Text
+msgid  "~Report name"
+msgstr "अहवाल नाव"
+
+#: source/ui/app/app.src#STR_FOLDER_LABEL.String.Text
+msgid  "F~older name"
+msgstr "धारक नाव"
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.String.Text
+msgid  "The document contains forms or reports with embedded macros."
+msgstr ""
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
+msgid  "Embedded database"
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_NO_DIFF_CAT.String.Text
+msgid  "You cannot select different categories."
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.String.Text
+msgid  "Unsupported object type found ($type$)."
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+msgid  "Do you want to delete the selected data?"
+msgstr "निवड केल्ली म्हायती तुमकां काडून उडोवपाक जाय?"
+
+#: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+msgid  "(filtered)"
+msgstr " (गाळील्लें)"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "वर्गीकरण मानक स्थापित करपांत त्रुटी"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "गाळणी मानक स्थापित करपांत त्रुटी"
+
+#: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+msgid  "Connection lost"
+msgstr "जोडणी  ना जाली"
+
+#: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+msgid  "Queries"
+msgstr "प्रस्न"
+
+#: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+msgid  "Tables"
+msgstr "कोष्टकां"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "म्हायतीकोश धारिकेचे संपादन करात..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "नोंद म्हायतीकोश"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "जोडणी ना करात"
+
+#: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+msgid  "Confirm Deletion"
+msgstr "काडून उडयले ताची खात्री करून घेयात"
+
+#: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+msgid  "Do you want to delete the table '%1'?"
+msgstr " '%1'कोष्टक तुमी काडून उडोवपाक सोदतात?"
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+msgid  "The query already exists. Do you want to delete it?"
+msgstr "प्रस्न पयलीसावन अस्तित्वांत आसा. तुमी ती काडून उडोवपाक सोदतात?"
+
+#: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database has been lost. Do you want to reconnect?"
+msgstr "म्हायतीकोशाची जोडणी शेणल्या. तुमी ती परतून जोडपाक सोदतात?"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+msgid  "Warnings encountered"
+msgstr "ताकीद मेळ्ळी"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+msgid  "While retrieving the tables, warnings were reported by the database connection."
+msgstr "कोष्टक परतून मेळयता आस्तना, म्हायतीकोश जोडणेन ताकीद दिली."
+
+#: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+msgid  "Connecting to \"$name$\" ..."
+msgstr "\"$name$\" क जोडटा..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+msgid  "Loading query $name$ ..."
+msgstr "$name$  प्रस्न विचारता..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+msgid  "Loading table $name$ ..."
+msgstr "$name$  कोष्टक चालू करता..."
+
+#: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+msgid  "No table format could be found."
+msgstr "कोष्टक रचना मेळना"
+
+#: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr " \"$name$\"म्हायती स्त्रोताकडेन जोडणी लागूंक शकना."
+
+#: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+msgid  "Rebuild"
+msgstr "परतून बांदात"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+msgid  "Column ~Format..."
+msgstr "स्तंभ स्वरुपांत..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+msgid  "Copy Column D~escription"
+msgstr "स्तंभाच्या वर्णनाची नक्कल करात"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+msgid  "Table Format..."
+msgstr "कोष्टक  रचना..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+msgid  "Row Height..."
+msgstr "वळीची  उंचाय..."
+
+#: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+msgid  "Undo: Data Input"
+msgstr "करू नाकात: म्हायती आदान"
+
+#: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+msgid  "Save current record"
+msgstr "चालू अभिलेखाची जतनाय करात"
+
+#: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+msgid  "Query #"
+msgstr "प्रस्न#"
+
+#: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "कोष्टक #"
+
+#: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+msgid  "View #"
+msgstr "दृश्य #"
+
+#: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+msgid  "The name \"#\" already exists."
+msgstr "\"#\" नांव पयलीसावन आसा"
+
+#: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+msgid  "No matching column names were found."
+msgstr "सारकिले स्तंभ मेळूंक ना."
+
+#: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+msgid  "An error occurred. Do you want to continue copying?"
+msgstr "त्रुटी जाली. तुमकां नकल करप चालू दवरुपाचे आसा?"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+msgid  "Data source table view"
+msgstr "म्हायती स्त्रोत कोष्टक दृश्य"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+msgid  "Shows the selected table or query."
+msgstr "निवड केल्ले कोष्टक वा प्रस्न दाखयता."
+
+#: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "कोष्टक #"
+
+#: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+msgid  "Modify SQL statement(s)"
+msgstr "SQL वाक्य (वाक्यां) सुदारात"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+msgid  "Table name"
+msgstr "कोष्टक नाव"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+msgid  "Insert data"
+msgstr "म्हायती  भरात"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+msgid  "Delete data"
+msgstr "म्हायती काडून उडयात"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+msgid  "Modify data"
+msgstr "म्हायती सुदारात"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+msgid  "Alter structure"
+msgstr "संरचनेंत बदल करात"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+msgid  "Read data"
+msgstr "म्हायती वाचात"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+msgid  "Modify references"
+msgstr "संदर्ब बदलात"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+msgid  "Drop structure"
+msgstr "संरचनेक काडून उडयात"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+msgid  "Sort Ascending"
+msgstr "चढत्या क्रमान वर्गीकरण"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+msgid  "Sort Descending"
+msgstr "उतरत्या क्रमान वर्गीकरण"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr "(#servicename#) SDBC चालक व्यवस्थापनाकडेन जोडपाक येना."
+
+#: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+msgid  "A driver is not registered for the URL #connurl#."
+msgstr "URL #connurl# खातीर चालकाची नोंद केल्ली ना."
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+msgid  "No connection could be established for the URL #connurl#."
+msgstr " URL #connurl#  खातीर जोडणी करपाक आयली ना."
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+msgid  "Please check the current settings, for example user name and password."
+msgstr "उपकार करून सद्याची स्थापितां तपासात, देखीक वापरप्याचे नाव आनिक गुप्त शब्द."
+
+#: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+msgid  "Successfully connected, but information about database tables is not available."
+msgstr "जोडणी सफळ, पुण म्हायतीकोश कोष्टकांविशीची म्हायती उपलब्द ना."
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+msgid  "All tables"
+msgstr "सगळी कोष्टकां"
+
+#: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+msgid  "All views"
+msgstr "सगळीं दृश्यां"
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+msgid  "All tables and views"
+msgstr "सगळी कोष्टकां आनिक दृश्यां"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.ModalDialog.Text
+msgid  "Indexes"
+msgstr "वळेरयो"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.ToolBoxItem.Text
+msgid  "New Index"
+msgstr "नवी  वळेरी"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.ToolBoxItem.Text
+msgid  "Delete Current Index"
+msgstr "सद्याची वळेरी  काडून उडयात"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.ToolBoxItem.Text
+msgid  "Rename Current Index"
+msgstr "चालू वळेरेक नवे नाव दियात"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.ToolBoxItem.Text
+msgid  "Save Current Index"
+msgstr "नव्या वळेरेची जतनाय करात"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.ToolBoxItem.Text
+msgid  "Reset Current Index"
+msgstr "चालू वळेरेक परतून लागू करात"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FixedLine.Text
+msgid  "Index details"
+msgstr "वळेरेचो तपशील"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FixedText.Text
+msgid  "Index identifier:"
+msgstr "वळेरी  वळखुपी:"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CheckBox.Text
+msgid  "~Unique"
+msgstr "अपूर्व"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FixedText.Text
+msgid  "Fields"
+msgstr "प्रक्षेत्रां"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PushButton.Text
+msgid  "~Close"
+msgstr "बंद"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.String.Text
+msgid  "Sort order"
+msgstr "वर्गीकरण "
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.String.Text
+msgid  "Index field"
+msgstr "वळेरी  प्रक्षेत्र"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.String.Text
+msgid  "Ascending"
+msgstr "वयल्यान सकयल"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.String.Text
+msgid  "Descending"
+msgstr "सकयल्यान वयर"
+
+#: source/ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.String.Text
+msgid  "Do you really want to delete the index '$name$'?"
+msgstr "तुमकां खरेंच  '$name$'वळेरी काडून उडोवपाची आसा हंय?"
+
+#: source/ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.String.Text
+msgid  "index"
+msgstr "वळेरी"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Title
+msgid  "Save Index"
+msgstr "नव्या वळेरेची जतनाय करात"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Message
+msgid  "The index must contain at least one field."
+msgstr "वळेरेंत किमान एक प्रक्षेत्र आसूंकूच जाय."
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Title
+msgid  "Exit Index Design"
+msgstr "वळेरी डिजायनातल्यान भायर वचात"
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Message
+msgid  "Do you want to save the changes made to the current index?"
+msgstr "चालू वळेरेंत केल्ल्या बदलांची तुमी जतनाय करपाक सोदतात हंय?"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
+msgid  "There is already another index named \"$name$\"."
+msgstr "\"$name$\" नावाची आनिक एक वळेरी पयलीसावन आसा"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "वळेरेच्या व्याख्येंत, कोष्टक स्तंभ एकापरस चडवेळ येवचेना. मात  \"$name$\" स्तंभ तुमी दोन फावट घाला."
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
+msgid  "~Parameters"
+msgstr "परिमाणां"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FixedText.Text
+msgid  "~Value"
+msgstr "मोल"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PushButton.Text
+msgid  "~Next"
+msgstr "फुडले"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.CancelButton.Text
+msgid  "Parameter Input"
+msgstr "परिमाण आदान"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "नोंदीचे रूपांतर  \"$name$\" स्तंभाखातीरच्या वैध मोलांत करपाक येवचे ना"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
+msgid  "%PRODUCTNAME Base"
+msgstr "%PRODUCTNAME  पायो"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
+msgid  "Details"
+msgstr "सविस्तर"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
+msgid  "Error ~list:"
+msgstr "त्रुटींची सूची"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FixedText.Text
+msgid  "~Description:"
+msgstr "वर्णन"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.String.Text
+msgid  "SQL Status"
+msgstr "SQL स्थिति"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.String.Text
+msgid  "Error code"
+msgstr "त्रुटी संकेत"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
+msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr "तुमच्या म्हायतीकोशांत अयोग्य अक्षरसंच स्थापित जाल्ल्याकारणान ही त्रुटी वारंवार घडटा. सम्पादन - म्हायतीकोश - वैशिश्ट्यां निवडून स्थापितां तपासात. "
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
+msgid  "Error"
+msgstr "त्रुटी"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.String.Text
+msgid  "Warning"
+msgstr "इशारो"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.String.Text
+msgid  "Information"
+msgstr "म्हायती"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.String.Text
+msgid  "Details"
+msgstr "सविस्तर"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.ModalDialog.Text
+msgid  "Standard Filter"
+msgstr "प्रमाणित गाळणी"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "OR"
+msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "OR"
+msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "प्रक्षेत्र नाव"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FixedText.Text
+msgid  "Condition"
+msgstr "शर्तं"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FixedText.Text
+msgid  "Value"
+msgstr "मोल"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FixedText.Text
+msgid  "Operator"
+msgstr "प्रवर्तक"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FixedLine.Text
+msgid  "Criteria"
+msgstr "निकश"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.String.Text
+msgid  "- none -"
+msgstr "कोण ना"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
+msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
+msgid  "Relations"
+msgstr "संबंध"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "घुस्पल्ली कोष्टकां"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "समाविश्ट प्रक्षेत्रां"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FixedLine.Text
+msgid  "Update options"
+msgstr "सुदार पर्याय"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RadioButton.Text
+msgid  "~No action"
+msgstr "कृती ना"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RadioButton.Text
+msgid  "~Update cascade"
+msgstr "कास्केड सुदारात"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "शून्य लागू करात"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "नित्यस्थितीभशेन लागू करात"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
+msgid  "Delete options"
+msgstr "पर्याय काडून उडयात"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RadioButton.Text
+msgid  "~No action"
+msgstr "कृती ना"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RadioButton.Text
+msgid  "Delete ~cascade"
+msgstr "कास्केड काडून उडयात"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "शून्य लागू करात"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "नित्यस्थितीभशेन लागू करात"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.ModalDialog.Text
+msgid  "Sort Order"
+msgstr "वर्गीकरण क्रम "
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "वयल्यान सकयल"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "descending"
+msgstr "सकयल्यान वयर"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "वयल्यान सकयल"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "descending"
+msgstr "सकयल्यान वयर"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "वयल्यान सकयल"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "descending"
+msgstr "सकयल्यान वयर"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "प्रक्षेत्र नाव"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FixedText.Text
+msgid  "and then"
+msgstr "आनिक तेन्ना"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FixedText.Text
+msgid  "and then"
+msgstr "आनिक तेन्ना"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FixedText.Text
+msgid  "Operator"
+msgstr "प्रवर्तक"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FixedText.Text
+msgid  "Order"
+msgstr "क्रम"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FixedLine.Text
+msgid  "Sort order"
+msgstr "वर्गीकरण "
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
+msgid  "<none>"
+msgstr "<कोण ना>"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+msgid  "Options"
+msgstr "पर्याय"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+msgid  "Use SQL92 naming constraints"
+msgstr " SQL92  naming constraints"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+msgid  "Append the table alias name on SELECT statements"
+msgstr "SELECT निवेदनात  कोष्टकाचे उर्फ नांव घालात"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+msgid  "Use keyword AS before table alias names"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+msgid  "Use Outer Join syntax '{OJ }'"
+msgstr "भायल्या जोड सिंटॅक्स '{OJ }' चो वापर करात"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+msgid  "Ignore the privileges from the database driver"
+msgstr "म्हायतीकोश चालकातल्या  वैयक्तिक अदिकारांकडेन दुर्लक्ष करात"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+msgid  "Replace named parameters with '?'"
+msgstr " '?' वांगडा दिल्ली परिमाणां बदलात"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+msgid  "Display version columns (when available)"
+msgstr "आवृत्ती स्तंभ दाखयात (जेन्ना आसा तेन्ना)"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+msgid  "Use catalog name in SELECT statements"
+msgstr "SELECT निवेदनात सूचींच्या नावांचो वापर करात"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+msgid  "Use schema name in SELECT statements"
+msgstr "SELECT निवेदनात स्किमा नावांचो वापर करात"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+msgid  "Create index with ASC or DESC statement"
+msgstr "ASC  अथवा  DESC  निवेदनावांगडा वळेरी तयार करात"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+msgid  "End text lines with CR+LF"
+msgstr "CR+LF न मजकूर वळींचो अंत करात"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+msgid  "Ignore currency field information"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+msgid  "Form data input checks for required fields"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
+msgid  "Use ODBC conformant date/time literals"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
+msgid  "Supports primary keys"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CheckBox.Text
+msgid  "Respect the result set type from the database driver"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "मूळ"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "मिश्रित"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "MS Access"
+msgstr "MS एक्सेस"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+msgid  "Comparison of Boolean values"
+msgstr "बूलियन मोलांची तुळा"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FixedText.Text
+msgid  "Rows to scan column types"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+msgid  "Settings"
+msgstr "स्थापितां"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+msgid  "Re~trieve generated values"
+msgstr "निर्मिल्ले मोल परतून मेळयात"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+msgid  "~Auto-increment statement"
+msgstr "आपसूक वाड निवेदन "
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+msgid  "~Query of generated values"
+msgstr "निर्मिल्ल्या मोलासंबंदी प्रस्न"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+msgid  "Generated Values"
+msgstr "थारायल्ले मोल"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+msgid  "Special Settings"
+msgstr "खाशेली स्थापितां"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.String.Text
+msgid  "Advanced Settings"
+msgstr "सुदारित वैशिश्ट्यां"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+msgid  "Save"
+msgstr "जतनाय करात"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+msgid  "Create New Directory"
+msgstr "नवी  निदेशिका तयार करात"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+msgid  "Up One Level"
+msgstr "एक पावल वयर"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+msgid  "File ~name:"
+msgstr "धारिकेचे नाव:"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+msgid  "Save"
+msgstr "जतनाय करात"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+msgid  "~Path:"
+msgstr "वाट:"
+
+#: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+msgid  "Folder"
+msgstr "धारक"
+
+#: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+msgid  "The file already exists. Overwrite?"
+msgstr "धारिका पयलीसावन आसा. वयर बरोवया?"
+
+#: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr " \"$name$\" म्हायती स्त्रोताक जोडपाखातीर गुप्त शब्दाची गरज आसा."
+
+#: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr "निदेशिका \n\n$path$\n\nअस्तित्वांत ना. तयार करूया?"
+
+#: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
+msgid  "The directory $name$ could not be created."
+msgstr "निदेशिका$name$ तयार करपाक येना."
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.ModalDialog.Text
+msgid  "Convert Database"
+msgstr "म्हायतीकोश रुपांतरीत करात"
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FixedLine.Text
+msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgstr "उपकार करून 'DOMAIN' वापरप्याखातीर गुप्त शब्द घालात"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TabPage.Text
+msgid  "Tables Filter"
+msgstr " कोष्टक गाळणी"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "Tables and table filter"
+msgstr "कोष्टकां आनिक  कोष्टक गाळणी"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FixedText.Text
+msgid  "Mark the tables that should be visible for the applications."
+msgstr "अनुप्रयोगांक दिश्टी पडपाक जाय, त्या कोष्टकांचेर खुण करात."
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+msgid  "~Database name"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+msgid  "Se~rver / Port"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+msgid  "~Server"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+msgid  "~Port"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+msgid  "Default: 3306"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+msgid  "So~cket"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+msgid  "Named p~ipe"
+msgstr ""
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.String.Text
+msgid  "User Settings"
+msgstr "वापर करप्याची स्थापितां"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.String.Text
+msgid  "User administration"
+msgstr "वापरप्यालें प्रशासन"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+msgid  "Tables"
+msgstr "कोष्टकां"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+msgid  "Queries"
+msgstr "प्रस्न"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+msgid  "~Add"
+msgstr " जोडात"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+msgid  "~Close"
+msgstr "बंद"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+msgid  "Add Tables"
+msgstr "कोष्टकां जोडात"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+msgid  "Add Table or Query"
+msgstr "कोष्टक वा प्रस्न जोडात"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TabDialog.Text
+msgid  "Field Format"
+msgstr "प्रक्षेत्र स्वरुपण"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.1.PushButton.Text
+msgid  "Bac~k"
+msgstr "फाटल्यान"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.String.Text
+msgid  "Font"
+msgstr "अक्षरसंच"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.String.Text
+msgid  "Format"
+msgstr "स्वरुपण"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "सारके करप"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.String.Text
+msgid  "Table Format"
+msgstr "कोष्टक रचना"
+
+#: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+msgid  "Use catalog for file-based databases"
+msgstr "धारिका - आदारित म्हायतीकोशांखातीर सूचीचो वापर करात"
+
+#: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "जुळणी स्थापितां"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "येजमानालें नाव"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "पोर्ट क्रमांक"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
+msgid  "Advanced Properties"
+msgstr "सुदारित वैशिश्ट्यां"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.String.Text
+msgid  "Additional Settings"
+msgstr "आनिक स्थापितां"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.String.Text
+msgid  "Connection settings"
+msgstr "जोडणी स्थापितां"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.String.Text
+msgid  "Database properties"
+msgstr "म्हायतीकोश वैशिश्ट्यां"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TabControl.Text
+msgid  "Database properties"
+msgstr "म्हायतीकोश वैशिश्ट्यां"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FixedText.Text
+msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "%PRODUCTNAME म्हायतीकोस विझार्डांत तुमका येवकार"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
+msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr "नवीन म्हायतीकोश तयार करपाखातीर म्हायतीकोश विझार्ड वापरात, आशिल्ली म्हायतीकोश धारिका उगडात, वा सर्वरान साठयल्ल्या म्हायतीकोशाक जोडात."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
+msgid  "What do you want to do?"
+msgstr "तुमी किते करपाक सोदतात?"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RadioButton.Text
+msgid  "Create a n~ew database"
+msgstr "नवीन म्हायतीकोश तयार करात"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RadioButton.Text
+msgid  "Open an existing database ~file"
+msgstr "अस्तित्वांत आशिल्ली  धारिका उगडात"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FixedText.Text
+msgid  "Recently used"
+msgstr "निकतेंच वापरिल्ले"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RadioButton.Text
+msgid  "Connect to an e~xisting database"
+msgstr "सद्याच्या म्हायतीकोशाक जोडात"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
+msgid  "Select the type of database to which you want to establish a connection."
+msgstr "तुमी जाका जोडूंक सोदतात, त्या म्हायतीकोशाचो प्रकार निवडात."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
+msgid  "Database ~type "
+msgstr "म्हायतीकोश  प्रकार"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FixedText.Text
+msgid  "Database"
+msgstr "म्हायतीकोश"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr "मुखावेल्या पानांर तुमी जोडणीखातीर सविस्तर स्थापितां करपाक शकतले.\n\nतुमी करतले ती नवी स्थापितां तुमच्या सद्याच्या स्थापितांचेर बरयली वतली."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
+msgid  "MySQL"
+msgstr "MySQL"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.String.Text
+msgid  "Data Source Properties: #"
+msgstr "म्हायती स्त्रोत वैशिश्ट्यां: #"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
+msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr "कार्यक्रम पुस्तकालय #lib#  लागू करपाक जमना वा ते पिड्ड्यार जाला. ODBCम्हायती स्त्रोत निवड उपलब्द ना."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr "ह्या फलाटार अशा तरेच्या म्हायती स्त्रोताक फांटबळ ना. \nतुमच्यान स्थापितां बदलूपाक येता, पुण  तुमकां चड करून म्हायतीकोशाकडेन जोडपाक शक्य जावचे ना."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "सर्वसादारण"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional settings"
+msgstr "पर्यायी स्थापितां"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CheckBox.Text
+msgid  "Display deleted records as well"
+msgstr "काडून उडयल्ले अभिलेखूय दाखयात"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
+msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgstr "टीप: जेन्ना काडून उडयतात, आनिक निश्क्रीय जाल्ले, अभिलेख दाखयतात, तेन्ना तुमका म्हायती स्त्रोतांतले अभिलेख काडून उडोवप शक्य जावचे ना."
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
+msgid  "Indexes..."
+msgstr "वळेरी..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional Settings"
+msgstr "पर्यायी स्थापितां"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FixedText.Text
+msgid  "ODBC ~options"
+msgstr "ODBC ~पर्याय"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "जुळणी स्थापितां"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "म्हायती बफर आकार(MB)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FixedText.Text
+msgid  "~Data increment (MB)"
+msgstr "म्हायती वाढ (MB)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FixedLine.Text
+msgid  "Administration"
+msgstr "प्रशासन"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FixedText.Text
+msgid  "Control ~user name"
+msgstr "नियंत्रण वापरप्याचे नांव"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FixedText.Text
+msgid  "Control ~password"
+msgstr "गुप्त शब्द नियंत्रण"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CheckBox.Text
+msgid  "~Shut down service when closing %PRODUCTNAME"
+msgstr " %PRODUCTNAME बंद करशात तेन्ना सेवा बंद करात"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PushButton.Text
+msgid  "E~xtended..."
+msgstr "वाडयल्ले"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "MySQL JDBC d~river class"
+msgstr "MySQL JDBC चालक वर्ग"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "चाचणी वर्ग"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "Oracle JDBC d~river class"
+msgstr "ओरॅकल JDBC चालक वर्ग"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "चाचणी वर्ग"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FixedText.Text
+msgid  "~Base DN"
+msgstr "मूळ DN "
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CheckBox.Text
+msgid  "Use secure connection(SSL)"
+msgstr "सुरक्षित जोडणी (SSL) वापरात"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "पोर्ट क्रमांक"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
+msgid  "Maximum number of ~records"
+msgstr "चडांत चड अभिलेख"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FixedText.Text
+msgid  "~Hostname"
+msgstr "येजमान"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FixedText.Text
+msgid  "~Driver settings"
+msgstr "चालक स्थापितां"
+
+#: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
+msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgstr ""
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
+msgid  "Save As"
+msgstr "अशी जतनाय करात"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FixedText.Text
+msgid  "Please enter a name for the object to be created:"
+msgstr "निर्माण करपाच्या वस्तीखातीर नाव घालात"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FixedText.Text
+msgid  "~Catalog"
+msgstr "यादी"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FixedText.Text
+msgid  "~Schema"
+msgstr "स्किमा"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.String.Text
+msgid  "~Table Name"
+msgstr "कोष्टक नाव"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.String.Text
+msgid  "~Name of table view"
+msgstr "कोष्टक दृश्याले नाव"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.String.Text
+msgid  "~Query name"
+msgstr "प्रस्न नाव"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.String.Text
+msgid  "Rename to"
+msgstr "नवे नाव दियात"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.String.Text
+msgid  "Insert as"
+msgstr "प्रमाण घालात"
+
+#: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+msgid  "Path to the dBASE files"
+msgstr "dBASE धारिकांमेरेनची वाट"
+
+#: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+msgid  "Path to the text files"
+msgstr "मजकूर धारिकांमेरेनची वाट"
+
+#: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+msgid  "Path to the spreadsheet document"
+msgstr "स्प्रेडशीट दस्तावेजांमेरेनची वाट"
+
+#: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+msgid  "Name of the ODBC data source on your system"
+msgstr "तुमच्या व्यवस्थेवयल्या ODBC म्हायती स्त्रोताचे नाव "
+
+#: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+msgid  "Name of the MySQL database"
+msgstr "MySQL म्हायतीकोशाचे नाव"
+
+#: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+msgid  "Name of the Oracle database"
+msgstr "ओरॅकल म्हायतीकोशाचे नाव"
+
+#: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+msgid  "Name of the Adabas D database"
+msgstr "Adabas D म्हायतीकोशाचे नाव"
+
+#: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+msgid  "Microsoft Access database file"
+msgstr "मायक्रोसॉफ्ट ऍक्सेस म्हायतीकोश धारिका"
+
+#: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgstr "आनिक स्थापितांची  गरज ना.  जोडणी चलता काय ना हे पळोवपाखातीर, '%test' कळी र क्लिक करात."
+
+#: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+msgid  "Datasource URL"
+msgstr " URL म्हायतीस्त्रोत"
+
+#: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+msgid  "~Host name"
+msgstr "येजमानालें नाव"
+
+#: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+msgid  "~Mozilla profile name"
+msgstr "मोझीला परिचय नाव"
+
+#: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+msgid  "~Thunderbird profile name"
+msgstr "~थंडरबर्ड परिचय नाव"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.ModalDialog.Text
+msgid  "Data Source"
+msgstr "म्हायती स्त्रोत"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FixedText.Text
+msgid  "Choose a data source:"
+msgstr "म्हायती स्त्रोत निवडात"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PushButton.Text
+msgid  "Organize..."
+msgstr "आयोजन"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PushButton.Text
+msgid  "Create..."
+msgstr "तयार करात"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.String.Text
+msgid  "Local Databases"
+msgstr "थळावें म्हायतीकोश"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.String.Text
+msgid  "Choose a database"
+msgstr "माहितीकोशाची निवड करात"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "General"
+msgstr "सर्वसादारण"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "येजमानालें नाव"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr "वापरप्याचे अधिकृतीकरण"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "वापर करप्याचें नाव"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr "गुप्तशब्दाची गरज"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
+msgid  "JDBC properties"
+msgstr "JDBC वैशिश्ट्यां"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "~JDBC driver class"
+msgstr "~JDBC चालक वर्ग"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test Class"
+msgstr "चाचणी वर्ग "
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+msgid  "Test Connection"
+msgstr "चाचणी जोडणी"
+
+#: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+msgid  "No Adabas D data sources were found on your system."
+msgstr "तुमच्या व्यवस्थेंत खंयचोय अडबॅस D म्हायतीस्त्रोत मेळूंक ना."
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+msgid  "Connection Test"
+msgstr "चाचणी जोडणी"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+msgid  "The connection was established successfully."
+msgstr "जोडणी सफळ जाली."
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+msgid  "The connection could not be established."
+msgstr "जोडणी सफळ जांवक ना"
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
+msgid  "The JDBC driver was loaded successfully."
+msgstr "JDBC चालक सफळ रीतीन लागू जालो"
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
+msgid  "The JDBC driver could not be loaded."
+msgstr "JDBC चालक लागू जांवक ना"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
+msgid  "MS Access file"
+msgstr "MS एक्सेस धारिका"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
+msgid  "MS Access 2007 file"
+msgstr ""
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+msgid  "Database files"
+msgstr "म्हायतीकोश धारिका"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "~TRANSACTIONLOG:"
+msgstr "~TRANSACTIONLOG:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+msgid  "Database sizes"
+msgstr "म्हायतीकोश आकार"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+msgid  "S~ize (MB):"
+msgstr "परिमाण (MB)"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+msgid  "~Free memory space (MB):"
+msgstr "मेकळे स्मृतीचो जागो (MB):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+msgid  "~Memory utilization (in %):"
+msgstr "स्मृतीचो वापर (% न):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+msgid  "Database Statistics"
+msgstr "म्हायतीकोश सांख्यिकी"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+msgid  "Contains the system tables"
+msgstr "व्यवस्था कोष्टका समाविश्ट आसात"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+msgid  "Contains information about transaction"
+msgstr "वेव्हाराविशीची म्हायती आसा"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+msgid  "Contains all data files"
+msgstr "सगळ्यो म्हायती धारिका आसात"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+msgid  "Total size of the database files"
+msgstr "म्हायतीकोश धारिकांचो एकूण आकार"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+msgid  "Currently available space before a new datadev file is created."
+msgstr "नवी  datadev धारिका तयार करपाआदीं सद्याक मेकळो आशिल्लो जागो"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+msgid  "Currently used memory"
+msgstr "सद्या वापरांत आशिल्ली स्मृती"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+msgid  "No information could be displayed because no access rights exist for the required system tables."
+msgstr "जाय आशिल्ल्या व्यवस्था कोष्टकांखातीर प्रवेस हक्क नाशिल्ल्यान म्हायती दाखोवपाक मेळना."
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
+msgid  "SQL command"
+msgstr "SQL आदेश"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FixedText.Text
+msgid  "Command to execute"
+msgstr "लागू करपाचो आदेश "
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PushButton.Text
+msgid  "Execute"
+msgstr "कार्यान्वीत"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FixedText.Text
+msgid  "Previous commands"
+msgstr "पयलीचे आदेश"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FixedLine.Text
+msgid  "Status"
+msgstr "स्थिती"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PushButton.Text
+msgid  "Close"
+msgstr "बंद"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PushButton.Text
+msgid  "Execute SQL Statement"
+msgstr "SQL निवेदन कार्यान्वीत करात"
+
+#: source/ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.String.Text
+msgid  "Command successfully executed."
+msgstr "आदेशाचे  येशस्वीपणान पालन जाले."
+
+#: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
+msgid  "The connection to the database has been lost. This dialog will be closed."
+msgstr "म्हायतीकोशाक जोडणी  ना जाल्या. हो संवाद बंद पडटलो."
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
+msgid  "Indexes"
+msgstr "वळेरयो"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FixedText.Text
+msgid  "~Table"
+msgstr "कोष्टक"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FixedLine.Text
+msgid  "Assignment"
+msgstr "नेमणूक"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FixedText.Text
+msgid  "T~able indexes"
+msgstr "कोष्टक वळेरी"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FixedText.Text
+msgid  "~Free indexes"
+msgstr "मेकळ्यो वळेरयो"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FixedLine.Text
+msgid  "User selection"
+msgstr "वापर करप्याची निवड"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FixedText.Text
+msgid  "Us~er:"
+msgstr "वापरपी"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PushButton.Text
+msgid  "~Add User..."
+msgstr "नवीन वापरपी जोडात"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PushButton.Text
+msgid  "Change ~Password..."
+msgstr "गुप्त शब्द बदलात"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PushButton.Text
+msgid  "~Delete User..."
+msgstr "वापरप्याक काडून उडयात"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FixedLine.Text
+msgid  "Access rights for selected user"
+msgstr "विशिश्ट वापरप्याक वापराचे हक्क"
+
+#: source/ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QueryBox.Message
+msgid  "Do you really want to delete the user?"
+msgstr "तुमकां वापरप्याक खरेंच काडून उडोवपाचे आसा?"
+
+#: source/ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support user administration."
+msgstr "वापरप्याल्या प्रशासनाक म्हायतीकोशाचे फांटबळ ना."
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
+msgid  "User \"$name$:  $\""
+msgstr "वापरपी \"$name$:  $\""
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
+msgid  "Old p~assword"
+msgstr "पोन्नो गुप्त शब्द"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FixedText.Text
+msgid  "~Password"
+msgstr "गुप्त शब्द"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FixedText.Text
+msgid  "~Confirm  password"
+msgstr "गुप्त शब्द परतून दियात"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.HelpButton.Text
+msgid  "Change Password"
+msgstr "गुप्त शब्द बदलात"
+
+#: source/ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+msgid  "The passwords do not match. Please enter the password again."
+msgstr "गुप्त शब्द जुळना. उपकार करून परतून गुप्त शब्द घालात."
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
+msgid  "Database Wizard"
+msgstr "म्हायतीकोश विझार्ड"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
+msgid  "Database Wizard"
+msgstr "म्हायतीकोश विझार्ड"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.String.Text
+msgid  "Select database"
+msgstr "माहितीकोशाची निवड करात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.String.Text
+msgid  "Set up dBASE connection"
+msgstr "dBASE जोडणी करात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "मजकूर धारिकांखातीर जोडणी करात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
+msgid  "Set up Microsoft Access connection"
+msgstr "मायक्रोसॉफ्ट एक्सेस जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.String.Text
+msgid  "Set up LDAP connection"
+msgstr "LDAP जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.String.Text
+msgid  "Set up Adabas D connection"
+msgstr "अडाबॅस D जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.String.Text
+msgid  "Set up ADO connection"
+msgstr "ADO जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.String.Text
+msgid  "Set up JDBC connection"
+msgstr "JDBC  जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.String.Text
+msgid  "Set up Oracle database connection"
+msgstr "ओरॅकल म्हायतीकोश जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.String.Text
+msgid  "Set up MySQL connection"
+msgstr " MySQL जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.String.Text
+msgid  "Set up ODBC connection"
+msgstr "ODBC जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.String.Text
+msgid  "Set up Spreadsheet connection"
+msgstr "स्प्रेडशीट जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.String.Text
+msgid  "Set up user authentication"
+msgstr "वापरप्यालें अधिकृतीकरण उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.String.Text
+msgid  "Set up MySQL server data"
+msgstr ""
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.String.Text
+msgid  "Save and proceed"
+msgstr "जतनाय करात आनिक फुडे वचात"
+
+#: source/ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.String.Text
+msgid  "New Database"
+msgstr "नवीन म्हायतीकोश"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to a MySQL database"
+msgstr " MySQL  म्हायतीकोशाक जोडणी उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "तुमीं  ODBC वा JDBC चो वापर करून MySQL म्हायतीकोशाक जोडूं येता. \nउपकार करून तुमका  मुखावेल्या स्थापितांविशी खात्री नासत जाल्यार तुमच्या व्यवस्था प्रशासकांकडेन संपर्क सादात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
+msgid  "How do you want to connect to your MySQL database?"
+msgstr "तुमकां तुमच्या MySQL म्हायतीकोशाकडेन कशी जोडणी करपाची आसा ?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RadioButton.Text
+msgid  "Connect using ODBC (Open Database Connectivity)"
+msgstr "ODBC चो उपयोग करून जोडणी करात. (मेकळीं म्हायतीकोश जोडणी)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RadioButton.Text
+msgid  "Connect using JDBC (Java Database Connectivity)"
+msgstr "JDBC चो उपयोग करून जोडणी करात (जावा म्हायतीकोश जोडणी)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RadioButton.Text
+msgid  "Connect directly"
+msgstr ""
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FixedText.Text
+msgid  "Set up the user authentication"
+msgstr "वापरप्यालें अधिकृतीकरण उबारात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FixedText.Text
+msgid  "Some databases require you to enter a user name."
+msgstr "कांय म्हायतीकोशांत तुमी वापरप्याचे नाव घालपाची गरज आसता."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "वापर करप्याचें नाव"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CheckBox.Text
+msgid  "Password re~quired"
+msgstr "गुप्त शब्द गरजेचो"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PushButton.Text
+msgid  "~Test Connection"
+msgstr "चाचणी जोडणी"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FixedText.Text
+msgid  "Decide how to proceed after saving the database"
+msgstr "म्हायतीकोशाची जतनाय केल्याउपरांत किदे करपाचे ते थारायात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FixedText.Text
+msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "%PRODUCTNAME न म्हायतीकोशाची नोंद करपाखातीर तुमकां विझार्ड जाय?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RadioButton.Text
+msgid  "~Yes, register the database for me"
+msgstr "होय. म्हजेखातीर म्हायतीकोशाची नोंदणी करात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RadioButton.Text
+msgid  "N~o, do not register the database"
+msgstr "नाका, म्हायतीकोशाची नोंदणी करू नाका"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FixedText.Text
+msgid  "After the database file has been saved, what do you want to do?"
+msgstr "म्हायतीकोश धारिका संचित केल्याउपरांत, तुमी किदें  करपाक सोदता?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CheckBox.Text
+msgid  "Open the database for editing"
+msgstr "सम्पादनाखातीर धारिका उगडात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CheckBox.Text
+msgid  "Create tables using the table wizard"
+msgstr "कोष्टक विझार्डचो वापर करून कोष्टकां तयार करात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FixedText.Text
+msgid  "Click 'Finish' to save the database."
+msgstr "म्हायतीकोशाची जतनाय करपाखातीर 'पुराय' चेर क्लिक करात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.String.Text
+msgid  "Set up connection to a MySQL database using JDBC"
+msgstr "JDBC चो उपयोग करून MySQL म्हायतीकोशाक जोडणी  लायात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "उपकार करून JDBC चो उपयोग करून MySQL म्हायतीकोशाक जोडपाखातीर जाय आशिल्ली म्हायती भरात.  हाची  नोंद घेयात की  JDBC चालकालें तुमच्या व्यवस्थेचेर प्रतिष्ठापन जाल्ले आसपाक जाय आनिक  %PRODUCTNAME वांगडा ताची नोंदणी जाल्ली आसपाक जाय. \nमुखावेल्या स्थापितांविशी तुमका खात्री नासत जाल्यार उपकार करून तुमच्या व्यवस्था प्रशासकाकडेन संपर्क सादात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
+msgid  "MySQL JDBC d~river class:"
+msgstr "MySQL JDBC चालक वर्ग:"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.String.Text
+msgid  "Default: 3306"
+msgstr "मुळावे: ३३०६"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FixedText.Text
+msgid  "Set up connection to a MySQL database"
+msgstr ""
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
+msgid  "Please enter the required information to connect to a MySQL database."
+msgstr ""
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
+msgid  "Set up a connection to dBASE files"
+msgstr "dBASE धारिकांखातीर जोडणी लायात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.String.Text
+msgid  "Select the folder where the dBASE files are stored."
+msgstr "ज्या धारकांत  dBASE  धारिका दवल्ल्यात ते निवडात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "मजकूर धारिकांखातीर जोडणी करात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
+msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr "ज्या धारकांत CSV (कॉमा सेपरेटेड मोल)  मजकूर धारिका दवल्ल्या, तो धारक निवडात. %PRODUCTNAME पायो ह्यो धारिका फकत वाचपाखातीरच्या स्थितींत उगडटलो."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
+msgid  "Path to text files"
+msgstr "मजकूर धारिकांमेरेनची वाट"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.String.Text
+msgid  "Set up a connection to a Microsoft Access database"
+msgstr "मायक्रोसॉफ्ट एक्सेस म्हायतीकोशाक जोडणी  लायात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
+msgid  "Please select the Microsoft Access file you want to access."
+msgstr "तुमकां जाय आशिल्ल्या मायक्रोसॉफ्ट  एक्सेस फायलींची निवड करात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to an LDAP directory"
+msgstr " LDAP निदेशिकांक जोडणी लायात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "उपकार करून  LDAP निदेशिकांक जोडपाखातीर जांय आशिल्ली म्हायती भरात.\nमुखावेल्या स्थापितांविशी तुमकां खात्री नासत जाल्यार तुमच्या व्यवस्था प्रशासकांकडेन संपर्क सादात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
+msgid  "Default: 389"
+msgstr "मुळावे: 389"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CheckBox.Text
+msgid  "Use ~secure connection (SSL)"
+msgstr "सुरक्षित जोडणी (SSL) चो वापर करात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Adabas D database"
+msgstr "अडबॅस D म्हायतीकोशाक जोडणी करात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr "ज्या अडबॅस D म्हायतीकोशाक तुमी जोडूंक सोदतात, ताचे नाव घालात.\n%PRODUCTNAME  मदी पयलीच नोंद आशिल्ल्या Adabas म्हायतीकोशाची निवड करपाखातीर  'ब्रावज्...'क्लिक करात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ADO database"
+msgstr " ADO म्हायतीकोशाक जोडणी करात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "ज्या ADO म्हायतीकडेन तुमका जोडपाचे आसा ताचो URL घालात.\nपुरोवपी- विशीच्या स्थापितांक लागू करपाखातीर 'ब्रावज्'क्लिक करात.\nमुखावेल्या स्थापितांविशी तुमका खात्री नासत जाल्यार उपकार करून तुमच्या व्यवस्था प्रशासकांकडेन संपर्क सादात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ODBC database"
+msgstr "ODBC म्हायतीकोशाक जोडणी लायात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "ज्या ODBC म्हायतीकोशाक तुमका जोडपाचे आसा ताचे नाव घालात\n%PRODUCTNAME मदीं  पयलीच नोंद आशिल्ल्या ODBC म्हायतीकोशाची  निवड करपाखातीर 'ब्राऊझ'चेर  क्लिक करात...\nमुखावेल्या स्थापितांविशी तुमका खात्री नासत जाल्यार उपकार करून तुमच्या व्यवस्था प्रशासकांकडेन संपर्क सादात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to a JDBC database"
+msgstr "JDBC म्हायतीकोशाक जोडणी लायात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "उपकार करून JDBC म्हायतीकोशाक जोडपाखातीर जाय आशिल्ली म्हायती भरात.\nमुखावेल्या स्थापितांविशी तुमका खात्री नासत जाल्यार उपकार करून तुमच्या व्यवस्था प्रशासकांकडेन संपर्क सादात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Oracle database"
+msgstr "ओरॅकल म्हायतीकोशाक जोडणी लायात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.String.Text
+msgid  "Default: 1521"
+msgstr "मुळावें: १५२१"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.String.Text
+msgid  "Oracle JDBC ~driver class"
+msgstr "JDBC ओरॅकल चालक वर्ग"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "उपकार करून  Oracle म्हायतीकोशाक जोडपाखातीर जाय आशिल्ली म्हायती भरात. हाची नोंद घेयात की  JDBC चालक वर्ग तुमच्या व्यवस्थेचेर प्रतिष्ठापन केल्लो आसपाक जाय आनिक ताची  %PRODUCTNAME कडेन नोंदणी जाल्ली आसूंक जाय.\nमुखावेल्या स्थापितांविशी तुमका खात्री नासत जाल्यार तुमच्या व्यवस्था प्रशासकांकडेन संपर्क सादात."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
+msgid  "Set up a connection to spreadsheets"
+msgstr "स्प्रेडशीटांक जोडणी  लायात"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr "%PRODUCTNAME स्प्रेडशीट किंवा मायक्रोसॉफ्ट एक्सेल वर्कबूक निवडपाखातीर  'ब्राउझ ' चेर क्लिक करात.\n%PRODUCTNAME  ही धारिका फकत वाचपाखातीरच्या स्थितींत उगडटली."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
+msgid  "~Location and file name"
+msgstr "ठिकाण आनिक धारिकेचे नाव "
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CheckBox.Text
+msgid  "~Password required"
+msgstr "गुप्तशब्दाची गरज"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FixedText.Text
+msgid  "~Height"
+msgstr "उंचाय"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "आपसूक "
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HelpButton.Text
+msgid  "Row Height"
+msgstr "रांग उंचाय"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FixedText.Text
+msgid  "~Width"
+msgstr "रुंदाय"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "आपसूक "
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.HelpButton.Text
+msgid  "Column Width"
+msgstr "स्तंभ रुंदाय"
+
+#: source/ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.ModalDialog.Text
+msgid  "Text Connection Settings"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2).PB_AUTOBROWSEURL.PushButton.Text
+msgid  "Browse"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTODATABASENAME.FixedText.Text
+msgid  "Database name"
+msgstr "म्हायतीकोशाचे नाव"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOHOSTNAME.FixedText.Text
+msgid  "Server"
+msgstr "सर्वर URL"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOBASEDN.FixedText.Text
+msgid  "Base ~DN"
+msgstr "मूळ DN "
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOPORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "पोर्ट क्रमांक"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FL_DATACONVERT.FixedLine.Text
+msgid  "Data conversion"
+msgstr "म्हायती रुपांतरण"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FT_CHARSET.FixedText.Text
+msgid  "~Character set"
+msgstr "अक्षर संच"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FixedText.Text
+msgid  "Specify the type of files you want to access"
+msgstr "तुमकां प्रवेश करपाक जाय त्या धारिकांचो प्रकार सांगात"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RadioButton.Text
+msgid  "Plain text files (*.txt)"
+msgstr "सामान्य मजकूर धारिका (*.txt)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RadioButton.Text
+msgid  "'Comma separated value' files (*.csv)"
+msgstr "'कॉमा विभाजित मोल' धारिका (*.csv)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RadioButton.Text
+msgid  "Custom:"
+msgstr "थारायल्ले:"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.Text
+msgid  "Custom: *.abc"
+msgstr "थारायल्ले: *.abc"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FixedLine.Text
+msgid  "Row Format"
+msgstr "वळ रचना"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FixedText.Text
+msgid  "Field separator"
+msgstr "प्रक्षेत्राचो  विभाजक"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FixedText.Text
+msgid  "Text separator"
+msgstr "मजकूर विभाजक"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FixedText.Text
+msgid  "Decimal separator"
+msgstr "दशमान विभाजक"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FixedText.Text
+msgid  "Thousands separator"
+msgstr "हजार विभाजक"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CheckBox.Text
+msgid  "~Text contains headers"
+msgstr "मजकूरांत मस्तकलेख आसात"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.String.Text
+msgid  "{None}"
+msgstr "{None}"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
+msgid  "#1 must be set."
+msgstr "#1 स्थापित करपाक जाय"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.String.Text
+msgid  "#1 and #2 must be different."
+msgstr "#1 आनिक #2 वेगळे आसपाक जाय"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.String.Text
+msgid  "Wildcards such as ?,* are not allowed in #1."
+msgstr " #1मदीं ?,* a सारकिल्यां वाईल्डकार्डसांक परवानगी ना."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FixedText.Text
+msgid  "JDBC d~river class"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FixedText.Text
+msgid  "Socket"
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "परतून ताजें"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "नवीन दृश्य डिजायन"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "नवीन कोष्टक डिजायन"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "आपसूक चलोवपी प्रस्न"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "नवीन प्रस्न (दृश्य डिजायन)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "प्रस्न सम्पादित करात"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "(SQL दृश्य) नवीन प्रस्न"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "सम्पादन"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "स्तंभ रुंदाय"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "अहवाल विझार्ड..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "आपसूक अर्जी चलोवपी"
+
+#: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+msgid  "System"
+msgstr "व्यवस्था"
+
+#: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+msgid  "Error during creation"
+msgstr "निर्माण करतास्तना त्रुटी"
+
+#: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+msgid  "An unexpected error occurred. The operation could not be performed."
+msgstr "अनपेक्षित त्रुटी सापडली. कारवाय जांवक पावली ना."
+
+#: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+msgid  "The document \"$file$\" could not be opened."
+msgstr ""
+
+#: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+msgid  "The table cannot be deleted because the database connection does not support this."
+msgstr "कोष्टक काडून उडोवपाक येना, कारण म्हायतीकोश जोडणीचे ताका फांटबळ ना."
+
+#: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+msgid  "~All"
+msgstr "सगळें"
+
+#: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+msgid  "Undo:"
+msgstr "करू नाकात:"
+
+#: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+msgid  "Redo:"
+msgstr "परतून करात:"
+
+#: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+msgid  "No corresponding column type could be found for column '#1'."
+msgstr " '#1' स्तंभाखातीर खंयचोय संबंदित स्तंभ प्रकार सापडूंक ना"
+
+#: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "धारिका \"$file$\"  अस्तित्वांत ना"
+
+#: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "म्हायती स्त्रोताकडेन जोडता आसत्ना शिटकावण्यो दिश्टी पडल्यो. त्यो पळोवपाक  \"$buttontext$\" दामात."
+
+#: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr " '$#$' हे नांव पयलीसावन आसा.\nउपकार करून दुसरे नाव दियात"
+
+#: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr ""
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
+msgid  "Apply columns"
+msgstr "स्तंभ लागू करात"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
+msgid  "Type formatting"
+msgstr "टंक रचना"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr "मुखावेली प्रक्षेत्रां पयलीच मुळाव्या चावयो म्हण लागू केल्यां:\n"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
+msgid  "Assign columns"
+msgstr "स्तंभांची  नेमणूक करात"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
+msgid  "Copy RTF Table"
+msgstr "RTF कोष्टकाची नक्कल करात"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "मदत"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+msgid  "~Cancel"
+msgstr "रद्द करात"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
+msgid  "< ~Back"
+msgstr "< फाटल्यान"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
+msgid  "~Next>"
+msgstr "फुडल्यान>"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+msgid  "C~reate"
+msgstr "तयार करात"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
+msgid  "Existing columns"
+msgstr "सद्याचे स्तंभ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
+msgid  "Column information"
+msgstr "स्तंभांची म्हायती"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
+msgid  "Automatic type recognition"
+msgstr "आपसूक टंक वळख"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
+msgid  "Lines (ma~x)"
+msgstr "वळी (कमाल)"
+
+#: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "मुळावी चावी"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
+msgid  "Source table: \\n"
+msgstr "स्तोत्र कोष्टक: \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
+msgid  "Destination table: \\n"
+msgstr "इष्टस्थळ कोष्टक : \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+msgid  "~All"
+msgstr "सगळें"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+msgid  "Non~e"
+msgstr "कोण ना"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+msgid  "Ta~ble name"
+msgstr "कोष्टकाचे नाव"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+msgid  "Options"
+msgstr "पर्याय"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
+msgid  "De~finition and data"
+msgstr "व्याख्या आनिक म्हायती"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
+msgid  "Def~inition"
+msgstr "व्याख्या"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
+msgid  "A~s table view"
+msgstr "कोष्टक दृश्यांवरी"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
+msgid  "Append ~data"
+msgstr "म्हायतींत भर घालात"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
+msgid  "Use first ~line as column names"
+msgstr ""
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
+msgid  "Crea~te primary key"
+msgstr "मुळावी चावी तयार करात"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+msgid  "Name"
+msgstr "नाव"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "कोष्टकाची नक्कल करात"
+
+#: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "कोष्टकाची नक्कल करात"
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
+msgid  "This table name is not valid in the current database."
+msgstr ""
+
+#: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
+msgstr "सद्याच्या कोष्टकाक म्हायती जोडपाखातीर पयल्या पानावेलो पर्याय 'म्हायती जोडात' निवडात."
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
+msgid  "Please change the table name. It is too long."
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+msgid  "Options"
+msgstr "पर्याय"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+msgid  "~Type"
+msgstr "प्रकार"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+msgid  "Inner join"
+msgstr "भितल्ली जोड"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+msgid  "Left join"
+msgstr "दावो जोड"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+msgid  "Right join"
+msgstr "उजवो जोड"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+msgid  "Full (outer) join"
+msgstr "सगळी  (भायली) जोड़"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+msgid  "Cross join"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+msgid  "Natural"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "समाविश्ट कोष्टकां"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "समाविश्ट प्रक्षेत्रां"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+msgid  "Join Properties"
+msgstr "जोड वैशिश्ट्यां"
+
+#: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+msgid  "Please note that some databases may not support this join type."
+msgstr "उपकार करून नोंद घेयात की कांय म्हायतीकोशांचे असल्या जोड प्रकारांक फांटबळ नासू येता."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+msgid  "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "दोनूय कोष्टकांच्या संबंदित प्रक्षेत्रांचो आशय सारको आसा अशांच्याच अभिलेखांचो आस्पाव करता."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "'%1' कोष्टकांतल्या ALL अभिलेखांचो , मात '%2'  कोष्टकांतल्या  संबंदित प्रक्षेत्रांतले मोल जुळटा, त्याच अभिलेखांचो आस्पाव आसा."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+msgid  "Contains ALL records from '%1' and from '%2'."
+msgstr "'%1'  आनिक  '%2' मदल्या ALL अभिलेखांचो आस्पाव आसा."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr ""
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+msgid  "Add Table Window"
+msgstr "कोष्टक जनेल जोडात."
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+msgid  "Move table window"
+msgstr "कोष्टक जनेल हालयात"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+msgid  "Insert Join"
+msgstr "जोड घालात"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+msgid  "Delete Join"
+msgstr "जोड काडून उडयात"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+msgid  "Resize table window"
+msgstr "तक्त्याच्या जनेलाक परतून आकार दियात"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+msgid  "Delete Column"
+msgstr "स्तंभ काडून उडयात"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+msgid  "Move column"
+msgstr "स्तंभ हालयात"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+msgid  "Add Column"
+msgstr "स्तंभ जोडात"
+
+#: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, table '$name$' does not exist."
+msgstr "अवैध सूत्र,  '$name$' कोष्टक अस्तित्वांत ना"
+
+#: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, field name '$name$' does not exist."
+msgstr "अवैध सूत्र,  '$name$'  हे प्रक्षेत्र नाव अस्तित्वांत ना"
+
+#: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgstr "प्रस्नांमजगती #num# कोष्टकांचो आस्पाव आसा. पुण निवड केल्लो म्हायतीकोश प्रकार, मात, दर विधानाफाटल्यान फकत चडांत चड  #maxnum#  कोष्टकांचेर प्रक्रिया करूंक शकता."
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+msgid  "Delete Table Window"
+msgstr "कोष्टक जनेल काडून उडयात"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+msgid  "Edit Column Description"
+msgstr "स्तंभ विवरणाचे सम्पादन करात"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+msgid  "Adjust column width"
+msgstr "स्तंभ रुंदाय जुळोवन घेयात"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+msgid  "(not sorted);ascending;descending"
+msgstr "(वर्गीकृत ना); वयल्यान;सकयल्यान"
+
+#: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+msgid  "(no function);Group"
+msgstr "(काम ना);गट"
+
+#: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+msgid  "(no table)"
+msgstr "(कोष्टक ना)"
+
+#: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+msgid  "The database only supports sorting for visible fields."
+msgstr "म्हायतीकोश फकत दृश्य प्रक्षेत्रांच्या वर्गीकरणाक फांटबळ दिता."
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+msgid  "Functions"
+msgstr "कामां"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+msgid  "Table Name"
+msgstr "कोष्टक नाव"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+msgid  "Alias"
+msgstr "ऊर्फ नांव"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+msgid  "Distinct Values"
+msgstr "थारायल्ले मोल"
+
+#: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "प्रक्षेत्र;उर्फ नांव;कोष्टक;वर्गीकरण;दृश्य;काम;निकश;किंवा;किंवा"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+msgid  "There are too many columns."
+msgstr "खूप स्तंभ आसात."
+
+#: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+msgid  "A condition cannot be applied to field [*]"
+msgstr " [*]प्रक्षेत्राक शर्त लागू करपाक येना."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+msgid  "The SQL statement created is too long."
+msgstr "तयार केल्ले SQL विधान खूप व्हड आसा."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+msgid  "Query is too complex"
+msgstr "प्रस्न खूप जटी ल आसा"
+
+#: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+msgid  "Nothing has been selected."
+msgstr "कसलीच निवड केल्ली  ना!"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+msgid  "Too many search criteria"
+msgstr "भरपूर सोद निकश"
+
+#: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+msgid  "SQL syntax error"
+msgstr "SQL व्याकरण त्रुटी"
+
+#: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+msgid  "[*] cannot be used as a sort criterion."
+msgstr "[*] चा उपयोग वर्गीकरण निकशाखातीर जांवक शकना."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+msgid  "There are too many tables."
+msgstr "कोष्टकां खूप आसात"
+
+#: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+msgid  "The statement will not be applied when querying in the SQL dialect of the database."
+msgstr "म्हायतीकोशाच्या SQL बोलींत प्रस्न विचारता आस्तना विधान लागू जावचे ना."
+
+#: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+msgid  "Field name not found or not unique"
+msgstr "प्रक्षेत्राचे नाव मेळूंक नाव वा ते वेगळे ना"
+
+#: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+msgid  "Join could not be processed"
+msgstr "जोड प्रक्रिया जांवपाक शकना"
+
+#: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+msgid  "Syntax error in SQL statement"
+msgstr "SQL विधानांत व्याकरणाची त्रुटी "
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+msgid  "This database does not support table views."
+msgstr "हो म्हायतीकोश कोष्टक दृश्यांक फांटबळ दिना!"
+
+#: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+msgid  "This database does not support altering of existing table views."
+msgstr ""
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+msgid  "Do you want to create a query instead?"
+msgstr "हाचेबदलाक तुमका प्रस्न विचारपाचो आसा हंय?"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+msgid  "No query could be created."
+msgstr "प्रस्न तयार करपाक जमले ना"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+msgid  "No query could be created because no fields were selected."
+msgstr "प्रक्षेत्रां निवडिल्ली नाशिल्ल्यान प्रस्न तयार करपाक जमले ना."
+
+#: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgstr "संबंधित म्हायती स्त्रोत काडून उडयला. ताकालागून त्या म्हायतीशी संबंदित म्हायती स्त्रोताली जतनाय करपाक जाली ना."
+
+#: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+msgid  "The column '$name$' is unknown."
+msgstr " '$name$' स्तंभ खबर नाशिल्लो आसा."
+
+#: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+msgid  "Columns can only be compared using '='."
+msgstr "फकत '=' चो वापर करून स्तंभांची तुळा जांव येता"
+
+#: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+msgid  "You must use a column name before 'LIKE'."
+msgstr " 'LIKE' पयली तुमी स्तंभ नावाचो वापर करपाक जाय"
+
+#: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+msgid  "The column could not be found. Please note that the database is case-sensitive."
+msgstr "स्तंभ  मेळना. उपकार करून नोंद घेयात की म्हायतीकोश हो case-sensitive आसा"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Query Design"
+msgstr " - %PRODUCTNAME पायो: प्रस्न डिजायन्"
+
+#: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: View Design"
+msgstr " - %PRODUCTNAME पायो: दृश्य डिजायन्"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr ""
+
+#: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr ""
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+msgid  "The table view"
+msgstr ""
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+msgid  "The query"
+msgstr ""
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+msgid  "The SQL statement"
+msgstr ""
+
+#: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The query does not create a result set, and thus cannot be part of another query."
+msgstr "प्रस्न निकाल संच तयार करीना, आनिक ताकालागून दुसरे प्रस्नाचो भाग जावपाक शकना."
+
+#: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+msgid  "This relation already exists. Do you want to edit it or create a new one?"
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+msgid  "Edit..."
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+msgid  "Create..."
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Relation design"
+msgstr " - %PRODUCTNAME पायो:संबंद डिजायन"
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support relations."
+msgstr "म्हायतीकोशाचे संबंदांक फांटबळ ना."
+
+#: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgstr "तुमीं जेन्ना हे कोष्टक काडून उडयतले तेन्ना वांगडचे संबंदूय काडून उडयले वतले? चालू दवरुपाचे?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr "खबर नाशिल्ले;मजकूर;क्रमांक;तारीक/वेळ;तारीक;वेळ;हय/ना;चलन;मेमो;काउंटर;प्रतिमा;मजकूर (निश्चित);दशमान;दुहेरी (निश्चित);दुहेरी;व्हड Int;दुप्पट;उफेता;खरे;पूर्णाक;ल्हान पूर्णांक;सान पूर्णांक;SQL ना;वस्त;वेगळो;रचना;प्रक्षेत्र;BLOB;CLOB;REF;OTHER"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "मुळावी चावी घालात / काडून उडयात"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+msgid  "Yes"
+msgstr "हय"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+msgid  "No"
+msgstr "ना"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+msgid  "Ascending"
+msgstr "वयल्यान सकयल"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+msgid  "Descending"
+msgstr "सकयल्यान वयर"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+msgid  "<none>"
+msgstr "<कोण ना>"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+msgid  "Field name"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+msgid  "Field Name"
+msgstr "प्रक्षेत्र नाव"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+msgid  "Field ~type"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+msgid  "Field Type"
+msgstr "प्रक्षेत्र प्रकार"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+msgid  "Field length"
+msgstr "प्रक्षेत्र लांबाय"
+
+#: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+msgid  "Description"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
+msgid  "Column Description"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+msgid  "Input required"
+msgstr "आदान गरज"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+msgid  "~AutoValue"
+msgstr "आपसूक मोल"
+
+#: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+msgid  "Field Properties"
+msgstr "प्रक्षेत्र वैशिश्ट्यां"
+
+#: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "सर्वसादारण"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+msgid  "Description:"
+msgstr "विवरण:"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+msgid  "Table properties"
+msgstr "कोष्टक वैशिश्ट्यां"
+
+#: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+msgid  "The text you entered is not a list element. "
+msgstr "तुमी भरील्लो मजकूर हो वळेरी चो घटक न्ही."
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+msgid  "Insert Rows"
+msgstr "वळी घालात"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "मुळावी चावी"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+msgid  "Modify cell"
+msgstr "कक्ष बदलात"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+msgid  "Delete row"
+msgstr "वळ काडून उडयात"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+msgid  "Modify field type"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+msgid  "Insert row"
+msgstr "वळ घालात"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+msgid  "Insert new row"
+msgstr "नवी वळ घालात"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "मुळावी चावी घालात / काडून उडयात"
+
+#: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+msgid  "~Default value"
+msgstr "मुळावे मोल"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+msgid  "~Entry required"
+msgstr "जाय आशिल्ली नोंद"
+
+#: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+msgid  "~Length"
+msgstr "लांबाय"
+
+#: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+msgid  "~Type"
+msgstr "प्रकार"
+
+#: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+msgid  "~Length"
+msgstr "लांबाय"
+
+#: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+msgid  "Decimal ~places"
+msgstr "दशमान स्थान"
+
+#: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+msgid  "Format example"
+msgstr "रचनेची देख"
+
+#: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr "अशे मोल निवडात जे सगळ्या नव्या अभिलेखांत मुळावे म्हण दिश्टी पडटले.\nजर प्रक्षेत्रांक मुळावे मोल ना, जाल्यार रिकामी स्ट्रींग निवडात."
+
+#: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr "ह्या प्रक्षेत्राखातीर मुळावे मोल घालात.\n\nतुमी जेन्ना कोष्टकांत मागीर म्हायती भरतात, ही स्ट्रींग निवड केल्ल्या प्रक्षेत्रांतल्या प्रत्येक नव्या अभिलेखांत वापल्ली वतली. ताका लागून ती, सकयल भरपाची गरज आशिल्ल्या कक्ष रचनेवरीच आसची पडटली."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgstr "या प्रक्षेत्रांत NULL मोलाचो आस्पाव जांवक शकना आसत जाल्यार हो पर्याय निवडात. देखीक वापरप्यान सदांच म्हायती भरपाक जाय."
+
+#: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+msgid  "Enter the maximum text length permitted."
+msgstr "मजकुराची परवानगी दिल्या त्या प्रमाणांत चडांत जड लांबाय भरात"
+
+#: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+msgid  "Enter the number format."
+msgstr "क्रमांक रचना भरात."
+
+#: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr "ह्या प्रक्षेत्रांत आसू येता तितल्या लांबायेची म्हायती भरात\n\nजर प्रक्षेत्र दशमान आसत, जाल्यार भरपाच्या क्रमांकाची चडांत चड लांबाय आसू येता, जर प्रक्षेत्र दुहेरी आसत, जाल्यार मजकुराच्या लांबायेक आडखळ येतली. \nजेन्ना ह्या म्हायतीकोशाच्या कमाल मर्यादेभायर वतले, तेन्ना मोल आपसूक सारके जातले."
+
+#: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+msgid  "Specify the number of decimal places permitted in this field."
+msgstr "ह्या प्रक्षेत्राखातीर परवानगी आशिल्ल्या दशमान अंकांची संख्या स्पश्ट करात."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgstr "सद्याच्या रचनेंत (रचना बदलुपाखातीर उजवेवटेनची कळ वापरात) म्हायती कशी दिसतली ते तुमका हांगा पळोवपाक मेळटले."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+msgid  "This is where you determine the output format of the data."
+msgstr "हांगा तुमी म्हायतीची प्रदान रचना स्पश्ट करपाक शकतात."
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr "ह्या प्रक्षेत्रांत आपसूक वाडपी मोल आसपाक जाय जाल्यार निवड करात.\n\nह्या प्रकारच्या प्रक्षेत्रांत तुमी म्हायती भरपाक शकनात.  प्रत्येक अभिलेखाक योग्य ते मोल आपसूक घालपांत येतले. (फांटल्या अभिलेखातल्या वाडीप्रमाण)"
+
+#: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+msgid  "~..."
+msgstr " ..."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "स्तंभ नाव \"$column$\" दोनदा दिल्ल्या कारणान ह्या कोष्टकाची जतनाय घेवपाक येना."
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "स्तंभ \"$column$\" मुळाव्या चावयेंत आसा. जर स्तंभ काडून उडयलो जाल्यार, मुळावी चावीलेगीत वतली. तुमका खरेच तशे करपाक जाय हंय?"
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+msgid  "Primary Key Affected"
+msgstr "मुळाव्या चावयेक बादा"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+msgid  "Column"
+msgstr "स्तंभ"
+
+#: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+msgid  "Continue anyway?"
+msgstr "तरीलेगित चालू दवरुया हंय?"
+
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "ताकीद!"
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+msgid  "The table could not be saved due to problems connecting to the database."
+msgstr "म्हायतीकोशाक जोडतास्तना समस्या आयिल्ल्यान ह्या कोष्टकाची जतनाय घेवपाक जाली ना."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgstr "म्हायतीस्त्रोत काडून उडयल्या कारणान कोष्टक गाळणी सारकी करपाक जाली ना."
+
+#: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+msgid  "No primary key"
+msgstr "मुळावी कळ न्ही"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr "ह्या म्हायतीकोशांत म्हायती अभिलेख वळखीखातीर वेगळे वळेरेची वा मुळाव्या चावयेची गरज आसा.\nजेन्ना दोनांतली एक आराखडो स्थिती जुळटा तेन्नाच तुमी ह्या कोष्टकांत म्हायती घालूंक शकतले. \n\nआता मुळावी चावी तयार करपाची हंय?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base: Table Design"
+msgstr " - %PRODUCTNAME पायो:कोष्टक डिजायन"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "स्तंभ \"$column$\" बदलूंक जालो ना. ताचे  बदलाक स्तंभ काडून उडोवया आनिक नव्या रचनेंत सुदार घडोवया?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+msgid  "Error while saving the table design"
+msgstr "कोष्टक डिजायन जतनाय करता आस्तना त्रुटी."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+msgid  "The column $column$ could not be deleted."
+msgstr "स्तंभ $column$  काडून उडोवपाक येना."
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr "तुमी कोष्टकातले सगळे स्तंभ काडून उडोवपाचो यत्न करतात. स्तंभांशिवाय कोष्टक रावूंकूच शकना. म्हायतीकोशांतल्यान  कोष्टक काडून उडोवया? नाका जाल्यार, कोष्टकांत बदल जावचो ना."
+
+#: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+msgid  "A~uto-increment statement"
+msgstr "आपसूक-वाडपी विधान"
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr "आपसूक वाडपी प्रक्षेत्राखातीर SQLविधान घालात.\n\nजेन्ना कोष्टक तयार जातले, तेन्ना हे विधान थेट स्थानांतरित जातले."
+
+#: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr "म्हायतीकोशातल्यान टंक म्हायती काडपाक जाले ना.\nह्या म्हायती स्त्रोताखातीर कोष्टक डिजायन स्थिती उपलब्द ना."
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+msgid  "change field name"
+msgstr "प्रक्षेत्र नाव बदलात"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+msgid  "change field type"
+msgstr "प्रक्षेत्र प्रकार बदलात"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+msgid  "change field description"
+msgstr "प्रक्षेत्र विवरण बदलात"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+msgid  "change field attribute"
+msgstr "प्रक्षेत्र गुणधर्म बदलात"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+msgid  "~Remember password until end of session"
+msgstr ""
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+msgid  "~Remember password"
+msgstr "गुप्त शब्द याद धरात"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+msgid  "The destination database does not support views."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+msgid  "The destination database does not support primary keys."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+msgid  "Only tables and queries are supported at the moment."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+msgid  "The copy source's result set must support bookmarks."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+msgid  "Illegal number of initialization parameters."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+msgid  "An error occurred during initialization."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
+msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
+msgid  "To copy a query, your connection must be able to provide queries."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
+msgid  "The given interaction handler is invalid."
+msgstr ""

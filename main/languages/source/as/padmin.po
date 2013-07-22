@@ -1,0 +1,844 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgstr "অনুগ্ৰহ কৰি ফ'ল্ডাৰটো নিৰ্বাচন কৰক য'ৰ পৰা আপুনি আখৰবোৰ আমদানি কৰিবলৈ বিচাৰে. OK বাটনটো ক্লিক কৰি নিৰ্বাচিত আখৰবোৰ যোগ কৰক."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+msgid  "Source directory"
+msgstr "উত্স নিৰ্দেশিকা"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+msgid  "Sea~rch Subdirectories"
+msgstr "উপনিৰ্দেশিকাবোৰ সন্ধান কৰক"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+msgid  "Target options"
+msgstr "লক্ষ্য বিকল্পবোৰ"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+msgid  "Create ~soft links only"
+msgstr "কেৱল কোমল সংযোগবোৰ সৃষ্টি কৰক"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "সকলোবোৰ নিৰ্বাচন কৰক"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+msgid  "Add fonts"
+msgstr "আখৰবোৰ যোগ কৰক"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr "আপুনি সঁচাকৈ আখৰৰ ফাইলটো পুনৰ লিখিব বিচাৰে নেকি?\n   %s"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+msgid  "All"
+msgstr "সকলো"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+msgid  "None"
+msgstr "কোনো নহয়"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr "আখৰটোৰ কাৰণে এটা ফৰমেট ফাইল (এটা .afm প্ৰসাৰণৰ সৈতে) বিচাৰি পোৱা নগ'ল \n%s\nসেইবাবে, আখৰটো ইনষ্টল কৰিব নোৱাৰি. ফৰমেট ফাইলবোৰ ঘ'ষ্টস্ক্ৰিপ্তৰ সৈতে সৃষ্টি কৰিব পৰা যাব, উদাহৰণ স্বৰূপে, আৰু একেখন নিৰ্দেশিকাত আখৰৰ ফাইল বা ইয়াৰ afm উপনিৰ্দেশিকা হিচাপে স্থান নিৰূপণ কৰিব লাগিব. "
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "আখৰৰ ফাইলটোৰ কাৰণে মেট্ৰিক ফাইল\n   %s\nপ্ৰতিলিপি কৰিব পৰা নগ'ল. আখৰটো ইনষ্টল কৰা নহ'ব. "
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "আখৰৰ ফাইলটো\n   %s\nপ্ৰতিলিপি কৰিব পৰা নগ'ল. আখৰটো ইনষ্টল কৰা নহ'ব. "
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr "এখন নিৰ্দেশিকাত থকা লিখিব পৰা fonts.dir ফাইল আখৰপথত অৱস্থিত নহয়. সেইবাবে, আখৰবোৰ ইলষ্টল কৰিব নোৱাৰি. "
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+msgid  "%d new fonts were added."
+msgstr "%d নতুন আখৰবোৰ যোগ কৰা হৈছিল. "
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+msgid  "Add Fonts"
+msgstr "আখৰবোৰ যোগ কৰক"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+msgid  "CUPS support"
+msgstr "CUPS support"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+msgid  "Disable CUPS Support"
+msgstr "CUPS Support নিষ্ক্ৰিয় কৰক"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+msgid  "Close"
+msgstr "বন্ধ কৰক"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
+msgid  "Installed ~printers"
+msgstr "ইনষ্টল কৰা মুদ্ৰক"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
+msgid  "Command:"
+msgstr "নির্দেশ:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
+msgid  "Driver:"
+msgstr "ড্রাইভাৰ:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
+msgid  "Location:"
+msgstr "স্থান:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
+msgid  "Comment:"
+msgstr "মন্তব্য:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
+msgid  "Properties..."
+msgstr "বৈশিষ্ট্যবোৰ..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
+msgid  "R~ename..."
+msgstr "পুনৰ নাম দিয়ক..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
+msgid  "~Default"
+msgstr "ডিফল্ট"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
+msgid  "Remo~ve..."
+msgstr "আঁতৰ কৰক..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
+msgid  "Test ~Page"
+msgstr "টেক্সটৰ পৃষ্ঠা"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
+msgid  "Fon~ts..."
+msgstr "আখৰবোৰ..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
+msgid  "New Printer..."
+msgstr "নতুন মুদ্ৰক..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
+msgid  "Default printer"
+msgstr "ডিফল্ট মুদ্ৰক"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
+msgid  "Rename"
+msgstr "পুনৰ নাম দিয়ক"
+
+#: source/padialog.src#RID_PADIALOG.String.Text
+msgid  "Printer Administration"
+msgstr "মুদ্ৰক প্ৰশাসন"
+
+#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
+msgid  "Could not open printer %s."
+msgstr " %s মুদ্ৰকটো খুলিব পৰা নগ'ল."
+
+#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr "বাছনী পৃষ্ঠাটো সফলভাৱে মুদ্ৰণ কৰা হৈছিল. অনুগ্ৰহ কৰি ফলাফল পৰীক্ষা কৰক. "
+
+#: source/padialog.src#RID_ERR_NOWRITE.String.Text
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
+msgstr ""
+
+#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+msgid  "~New printer name"
+msgstr "নতুন মুদ্ৰকৰ নাম"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+msgid  "Model"
+msgstr "আৰ্হি"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+msgid  "Name"
+msgstr "নাম"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+msgid  "Comment"
+msgstr "মন্তব্য"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+msgid  "Queue"
+msgstr "শাৰী"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+msgid  "Date"
+msgstr "তাৰিখ"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+msgid  "Time"
+msgstr "সময়"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "বন্ধ কৰক"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+msgid  "Re~name..."
+msgstr "পুনৰ নাম দিয়ক..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+msgid  "~Remove..."
+msgstr "আঁতৰ কৰক..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+msgid  "~Add..."
+msgstr "যোগ কৰক..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+msgid  "Note: The fonts are only available to the applications."
+msgstr "টিপ্পনি : আখৰবোৰ কেৱল প্ৰয়োগবোৰৰ কাৰণে মজুত আছে. "
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+msgid  "~New name for %s"
+msgstr "%s ৰ কাৰণে নতুন নাম"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr "%s (%d2 ৰ %d1) ৰ কাৰণে নতুন নাম"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr "হেৰোৱা লিখাৰ অনুমতিৰ বাবে %s আখৰটো পুনৰ নাম দিব পৰা নগ'ল."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+msgid  "Fonts"
+msgstr "আখৰবোৰ"
+
+#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+msgid  "Test page"
+msgstr "টেক্সটৰ পৃষ্ঠা"
+
+#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+msgid  "Wrong environment"
+msgstr "ভুল পৰিবেশ"
+
+#: source/padialog.src#RID_YOU_SURE.String.Text
+msgid  "Are you sure ?"
+msgstr "আপুনি নিশ্চিতনে ?"
+
+#: source/padialog.src#RID_AFMERROR_OK.String.Text
+msgid  "No error"
+msgstr "ভুল নাই"
+
+#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr "মেট্ৰিকটোত এটা 'আখৰৰ নাম' প্ৰৱিষ্টি নাই. "
+
+#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr "মেট্ৰিকটোত এটা 'সম্পূৰ্ণ নাম' প্ৰৱিষ্টি নাই. "
+
+#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr "মেট্ৰিকটোত এটা 'পৰিয়ালৰ নাম' প্ৰৱিষ্টি নাই. "
+
+#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+msgid  "The converted metric could not be written."
+msgstr "পৰিৱৰ্তিত মেট্ৰিকটো লিখিব পৰা নগ'ল. "
+
+#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+msgid  "The metric could not be read."
+msgstr "মেট্ৰিকটো পঢ়িব পৰা নগ'ল. "
+
+#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+msgid  "A temporary file could not be created."
+msgstr "সাময়িক ফাইল এটা সৃষ্টি কৰিব পৰা নগ'ল. "
+
+#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+msgid  "The file does not contain a metric."
+msgstr "ফাইলটোত এটা মেট্ৰিক নাই. "
+
+#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr "মেট্ৰিকটো\n\n%s\n\nতলৰ কাৰণবোৰৰ বাবে ৰূপান্তৰ কৰিব পৰা নগ'ল :\n\n"
+
+#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+msgid  "Progress"
+msgstr "অগ্ৰগতি"
+
+#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+msgid  "Please wait"
+msgstr "অনুগ্ৰহ কৰি অপেক্ষা কৰক"
+
+#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+msgid  "Font metrics conversion"
+msgstr "আখৰৰ মেট্ৰিক্সবোৰৰ ৰূপান্তৰ"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+msgid  "Dri~ver directory"
+msgstr "ড্ৰাইভাৰ নির্দেশিকা "
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+msgid  "Please select the driver directory."
+msgstr "অনুগ্ৰহ কৰি ড্ৰাইভাৰ নির্দেশিকাখন নিৰ্বাচন কৰক. "
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+msgid  "Browse..."
+msgstr "ব্রাউজ কৰক..."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+msgid  "~Selection of drivers"
+msgstr "ড্ৰাইভাবোৰৰ নিৰ্বাচন"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "অনুগ্ৰহ কৰি ইনষ্টল কৰিবলৈ ড্ৰাইভাৰ নিৰ্বাচন কৰক আৰু \"%s\" হেঁচক. "
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+msgid  "Searching for drivers"
+msgstr "ড্ৰাইভাবোৰৰ কাৰণে সন্ধান কৰি আছে"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+msgid  "Driver Installation"
+msgstr "ড্ৰাইভাৰ ইনষ্টলেশ্বন "
+
+#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "আপুনি সঁচাকৈ \"%s\" ড্ৰাইভাৰটো আঁতৰাব বিচাৰে নেকি?"
+
+#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+msgid  "Do you really want to remove this printer ?"
+msgstr "আপুনি সঁচাকৈ এই মুদ্ৰকটো আঁতৰাব বিচাৰে নেকি?"
+
+#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr "আপুনি সঁচাকৈ নিৰ্বাচিত আখৰবোৰ আঁতৰাব বিচাৰে নেকি?"
+
+#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "এতিয়াও\"%s\" ড্ৰাইভাৰটো ব্যৱহাৰ কৰি থকা মুদ্ৰক আছে. আপুনি সঁচাকৈ ইয়াক আঁতৰাব বিচাৰে নেকি? সদৃশ মুদ্ৰকবোৰো আঁতৰ কৰা হ'ব. "
+
+#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "\"%s\" ড্ৰাইভাৰটো সদায় প্ৰয়োজনীয় আৰু সেইবাবে আঁতৰাব নোৱাৰি. "
+
+#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr "\"%s1\"ড্ৰাইভাৰটো আঁতৰ কৰিব পৰা নগ'ল. ফাইলটো আঁতৰোৱা সম্ভৱ নাছিল\n\n%s2."
+
+#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "\"%s\" ড্ৰাইভাৰটো আপোনাৰ ডিফল্ট মুদ্ৰকৰ দ্বাৰা ব্যৱহৃত হৈছে. সেইবাবে, ইয়াক আঁতৰাব নোৱাৰি. "
+
+#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+msgid  "The printer %s cannot be removed."
+msgstr "%s মুদ্ৰকটো আঁতৰ কৰিব নোৱাৰি."
+
+#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "\"%s\" নামৰ মুদ্ৰকটো ইতিমধ্যে আছে.এই মুদ্ৰকটো আমদানি কৰা নহ'ব. "
+
+#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "\"%s\"মুদ্ৰকটোৰ কোনো বৈধ ৰূপৰেখা নাই আৰু সেইবাবে, মুদ্ৰকটো আমদানি কৰিব নোৱাৰি."
+
+#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "\"%s1\" (%s2) ৰ কাৰণে ড্ৰাইভাৰটো ইনষ্টল কৰা হোৱা নাই. সেইবাবে মুদ্ৰকটো আমদানি কৰিব নোৱাৰি."
+
+#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+msgid  "The printer \"%s\" could not be added."
+msgstr "\"%s\" মুদ্ৰকটো যোগ কৰিব পৰা নগ'ল."
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+msgid  "~Finish"
+msgstr "সমাপ্ত"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+msgid  "~Next >>"
+msgstr "পৰৱর্তী >>"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+msgid  "<< ~Back"
+msgstr "<<পাছত"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+msgid  "Add Printer"
+msgstr "মুদ্ৰক যোগ কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "ড্ৰাইভাৰ এটা নিৰ্বাচন কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+msgid  "Please select a s~uitable driver."
+msgstr "অনুগ্ৰহ কৰি এটা উপযুক্ত ড্ৰাইভাৰ নিৰ্বাচন কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+msgid  "~Import..."
+msgstr "আমদানি কৰক..."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "ডিলিট কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+msgid  "Delete driver"
+msgstr "ড্রাইভাৰ ডিলিট কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a device type"
+msgstr "সঁজুলি প্ৰকাৰ এটা বাছনী কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+msgid  "Do you want to"
+msgstr "আপুনি বিচাৰে নেকি"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+msgid  "Add a ~printer"
+msgstr "এটা মুদ্ৰক যোগ কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+msgid  "Connect a fa~x device"
+msgstr "ফেক্স সঁজুলি এটা সংযোগ কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+msgid  "Connect a P~DF converter"
+msgstr "PDF পৰিৱৰ্তক এটা সংযোগ কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+msgid  "~Import printers from a StarOffice installation"
+msgstr "ষ্টাৰঅফিচ ইনষ্টলেশ্বন এটাৰ পৰা মুদ্ৰক আনদানি কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a name"
+msgstr "এটা নাম বাছনী কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+msgid  "Please enter a name for the printer."
+msgstr "অনুগ্ৰহ কৰি মুদ্ৰকটোৰ কাৰণে এটা নাম ভৰাওক. "
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+msgid  "Please enter a name for the fax connection."
+msgstr "অনুগ্ৰহ কৰি ফেক্স সংযোগটোৰ কাৰণে এটা নাম ভৰাওক. "
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+msgid  "Please enter a name for the PDF connection."
+msgstr "অনুগ্ৰহ কৰি PDF সংযোগটোৰ কাৰণে এটা নাম ভৰাওক. "
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+msgid  "Fax printer"
+msgstr "ফেক্স মুদ্ৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+msgid  "PDF converter"
+msgstr "PDF পৰিৱৰ্তক"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+msgid  "~Use as default printer"
+msgstr "ডিফল্ট মুদ্ৰক হিচাপে ব্যৱহাৰ কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+msgid  "Remo~ve fax number from output"
+msgstr "ফেক্স নম্বৰ আউটপুটৰ পৰা আঁতৰ কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a command line"
+msgstr "নিৰ্দেশ শাৰী এটা বাছনী কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr "অনুগ্ৰহ কৰি এই সঁজুলিটোৰ কাৰণে উপযুক্ত এটা নিৰ্দেশ শাৰী ভৰাওক. "
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF ~target directory"
+msgstr "PDF লক্ষ্য নির্দেশিকা "
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "সহায় কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ফেক্স সংযোগবোৰৰ কাৰণে নিৰ্দেশ শাৰীটো তলত দিয়া ধৰণে কাৰ্য্যকৰী কৰা হৈছে: প্ৰতিটো পঠিওৱা ফেক্সৰ কাৰণে, নিৰ্দেশ শাৰীটোত \"(TMP)\" সাময়িক ফাইলৰ দ্বাৰা প্ৰতিস্থাপন কৰা হৈছে আৰু নিৰ্দেশ শাৰীটোত \"(PHONE)\"ফেক্স নম্বৰৰ দ্বাৰা প্ৰতিস্থাপন কৰা হৈছে. যদি \"(TMP)\" নিৰ্দেশ শাৰীটোত আবিৰ্ভাৱ হয়, প'ষ্টস্ক্ৰিপ্ত ক'ডটো এটা ফাইলৰ জৰিয়তে যোগান ধৰা হ'ব, অন্যথাই মানবিশিষ্ট ইনপুট হিচাপে পাৰ কৰা হয় (যেনে, এডাল পাইপ হিচাপে)."
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+msgid  "Import printers from old versions"
+msgstr "পুৰণি সংস্কৰণবোৰৰ পৰা মুদ্ৰকবোৰ আমদানি কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+msgid  "~These printers can be imported. Please select the ones you want to import."
+msgstr "এই মুদ্ৰকবোৰ আমদানি কৰিব পৰা যায়. অনুগ্ৰহ কৰি অপুনি আমদানি কৰিব বিচৰাটো নিৰ্বাচন কৰক. "
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "সকলোবোৰ নিৰ্বাচন কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "ড্ৰাইভাৰ এটা নিৰ্বাচন কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this fax connection"
+msgstr "এই ফেক্স সংযোগটোৰটোৰ কাৰণে তলৰ ড্ৰাইভাৰটো ব্যৱহাৰ কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "ডিফল্ট ড্ৰাইভাৰটো"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+msgid  "A speci~fic driver, to adapt the format to another printer"
+msgstr "এটা নিৰ্দিষ্ট ড্ৰাইভাৰ, আন এটা মুদ্ৰকলৈ ফৰমেটটো এডাপ্ট কৰিবলৈ"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "ড্ৰাইভাৰ এটা নিৰ্বাচন কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this PDF converter"
+msgstr "এই PDF পৰিৱৰ্তকটোৰ কাৰণে তলৰ ড্ৰাইভাৰটো ব্যৱহাৰ কৰক"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "ডিফল্ট ড্ৰাইভাৰটো"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+msgid  "The Adobe D~istiller(tm) driver"
+msgstr "এডোবে ডিষ্টিলাইজাৰ(tm) ড্ৰাইভাৰটো"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+msgid  "A spec~ific driver, to adapt the format to another printer"
+msgstr "এটা নিৰ্দিষ্ট ড্ৰাইভাৰ, আন এটা মুদ্ৰকলৈ ফৰমেটটো এডাপ্ট কৰিবলৈ"
+
+#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+msgid  "Italic"
+msgstr "ইটালিক"
+
+#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+msgid  "Oblique"
+msgstr "তির্যক"
+
+#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+msgid  "Thin"
+msgstr "পাতল"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+msgid  "Ultralight"
+msgstr "অতিপাতল"
+
+#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+msgid  "Semilight"
+msgstr "অৰ্ধপাতল"
+
+#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+msgid  "Light"
+msgstr "পাতল"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+msgid  "Semibold"
+msgstr "অৰ্ধস্পষ্ট"
+
+#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+msgid  "Bold"
+msgstr "ব'ল্ড"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+msgid  "Ultrabold"
+msgstr "অতিস্পষ্ট"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+msgid  "Ultracondensed"
+msgstr "অতিসংক্ষিপ্ত"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+msgid  "Extracondensed"
+msgstr "অতিৰিক্ত সংক্ষিপ্ত"
+
+#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+msgid  "Condensed"
+msgstr "সংক্ষিপ্ত"
+
+#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+msgid  "Semicondensed"
+msgstr "অৰ্ধসংক্ষিপ্ত"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+msgid  "Semiexpanded"
+msgstr "অৰ্ধপ্ৰসাৰিত"
+
+#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+msgid  "Expanded"
+msgstr "প্রসাৰিত "
+
+#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+msgid  "Extraexpanded"
+msgstr "অতিৰিক্ত প্ৰসাৰিত"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+msgid  "Ultraexpanded"
+msgstr "অতিপ্ৰসাৰিত"
+
+#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+msgid  "Regular"
+msgstr "নিয়মিত"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+msgid  "Command"
+msgstr "নির্দেশ"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+msgid  "Paper"
+msgstr "কাগজ"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+msgid  "Device"
+msgstr "ব্যৱহৃত সঁজুলি"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+msgid  "Font Replacement"
+msgstr "আখৰৰ প্রতিস্থাপন"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+msgid  "Other Settings"
+msgstr "অন্য ছেটিংবোৰ"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+msgid  "from driver"
+msgstr "ড্রাইভাৰৰ পৰা"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+msgid  "<ignore>"
+msgstr "<ignore>"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+msgid  "Properties of %s"
+msgstr "%s ৰ বৈশিষ্ট্যবোৰ"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+msgid  "~Paper size"
+msgstr "কাগজৰ আকাৰ"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+msgid  "~Orientation"
+msgstr "অনুস্থাপন"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+msgid  "~Duplex"
+msgstr "দুডলীয়া"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+msgid  "Paper tray"
+msgstr "কাগজৰ ট্ৰে"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+msgid  "Color"
+msgstr "ৰং"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+msgid  "Grayscale"
+msgstr "গ্রেস্কেল"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+msgid  "~Option"
+msgstr "বিকল্প "
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+msgid  "Current ~value"
+msgstr "বৰ্তমান মূল্য"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+msgid  "Printer ~Language type"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+msgid  "PostScript (Level from driver)"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+msgid  "PostScript Level 1"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+msgid  "PostScript Level 2"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+msgid  "PostScript Level 3"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+msgid  "PDF"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+msgid  "~Color"
+msgstr "ৰং"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+msgid  "Color ~depth"
+msgstr "ৰঙৰ গভীৰতা"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+msgid  "~Enable font replacement"
+msgstr "আখৰৰ প্ৰতিস্থাপন সক্ষম কৰক"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+msgid  "Replaced ~fonts"
+msgstr "প্ৰতিস্থাপিত আখৰবোৰ "
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+msgid  "~Add"
+msgstr "যোগ কৰক"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+msgid  "~Remove"
+msgstr "আঁতৰ কৰক"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+msgid  "Repla~ce font"
+msgstr "আখৰ প্ৰতিস্থাপন কৰক"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+msgid  "by ~printer font"
+msgstr "আখৰ মুদ্ৰকৰ দ্বাৰা"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr "system print dialog ব্যৱহাৰ কৰক, %PRODUCTNAME ৰ print dialog নিষ্ক্ৰিয় কৰক (~U)"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+msgid  "Command for quick printing without dialog (optional)"
+msgstr "সম্বাদ নোহোৱাকে quick printing ৰ আদেশ (বৈকল্পিক)"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+msgid  "Select command"
+msgstr "নির্দেশ নিৰ্বাচন কৰক"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+msgid  "Printer"
+msgstr "মুদ্ৰক"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+msgid  "Fax"
+msgstr "ফেক্স"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+msgid  "PDF converter"
+msgstr "PDF পৰিৱৰ্তক"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+msgid  "~Configure as"
+msgstr "... হিচাপে ৰূপৰেখা"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+msgid  "~Fax number will be removed from output"
+msgstr "ফেক্স নম্বৰ আউটপুটৰ পৰা আঁতৰোৱা হ'ব"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF target directory :"
+msgstr "PDF লক্ষ্য নির্দেশিকা :"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+msgid  "Command: "
+msgstr "নির্দেশ: "
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+msgid  "Printer"
+msgstr "মুদ্ৰক"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "সহায় কৰক"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "আঁতৰ কৰক"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "PDF converters ৰ কাৰণে আদেশ শাৰী এনেদৰে কাম কৰে: প্ৰত্যেক মূদ্ৰণৰ কাৰণে, \"(TMP)\" আদেশ শাৰীৰ থাইত অস্থায়ী ফাইল ব্যৱহাৰ কৰা হয় আৰু \"(OUTFILE)\" ৰ স্থানত লক্ষ্য PDF নথি দিয়া হয় ।আদেশ শাৰীত \"(TMP)\" থাকিলে, PostScript কোড এটা নথিৰে দিয়া হ'ব , ন'হ'ললে standard input (i.e. as a pipe) এৰে ।"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr "মুদ্ৰণৰ সঁজুলিবোৰৰ কাৰণে নিৰ্দেশ শাৰীটো তলত দিয়া ধৰণে কাৰ্য্যকৰী কৰা হৈছে: উত্পন্ন কৰা প'ষ্টস্ক্ৰিপ্ত ক'ডটো মানবিশিষ্ট ইনপুট (মানে, পাইপ হিচাপে) হিচাপে নিৰ্দেশ শাৰীটোলৈ যোগান ধৰা হৈছে."
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ফেক্স সঁজুলিবোৰৰ কাৰণে নিৰ্দেশ শাৰীটো তলত দিয়া ধৰণে কাৰ্যকৰী কৰা হৈছে: প্ৰতিটো পঠিওৱা ফেক্সৰ কাৰণে, নিৰ্দেশ শাৰীটোত \"(TMP)\" সাময়িক ফাইলৰ দ্বাৰা প্ৰতিস্থাপন কৰা হৈছে আৰু নিৰ্দেশ শাৰীটোত \"(PHONE)\" ফেক্স নম্বৰৰ দ্বাৰা প্ৰতিস্থাপন কৰা হৈছে. যদি \"(TMP)\" নিৰ্দেশ শাৰীটোত আবিৰ্ভাৱ হয়, প'ষ্টস্ক্ৰিপ্ত ক'ডটো এটা ফাইলৰ জৰিয়তে যোগান ধৰা হ'ব. (যেনে, এডাল পাইপ হিচাপে)."
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+msgid  "~Left margin"
+msgstr "বাওঁফালৰ সীমা"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+msgid  "~Top margin"
+msgstr "ওপৰৰ সীমা"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+msgid  "~Right margin"
+msgstr "সোঁফালৰ সীমা"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+msgid  "~Bottom margin"
+msgstr "তলৰ সীমা"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+msgid  "~Comment"
+msgstr "মন্তব্য"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+msgid  "~Default"
+msgstr "ডিফল্ট"
+
+#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+msgid  "Please enter the fax number."
+msgstr "অনুগ্ৰহ কৰি ফেক্স নম্বৰটো ভৰাওক. "
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+msgid  "Authentication request"
+msgstr "বিশ্বাসযোগ্যকৰণ অনুৰোধ "
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+msgid  "Please enter your authentication data for server %s"
+msgstr "অনুগ্ৰহ কৰি %s ছাৰ্ভাৰ কাৰণে আপোনাৰ বিশ্বাসযোগ্যকৰণ ডাটা ভৰাওক"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+msgid  "~User"
+msgstr "ব্যৱহাৰকৰ্তা"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+msgid  "~Password"
+msgstr "পাছৱৰ্ড"

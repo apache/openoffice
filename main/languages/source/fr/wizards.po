@@ -1,0 +1,3712 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/euro/euro.src#STEP_ZERO.String.Text
+msgid  "~Cancel"
+msgstr "~Annuler"
+
+#: source/euro/euro.src#STEP_ZERO + 1.String.Text
+msgid  "~Help"
+msgstr "~Aide"
+
+#: source/euro/euro.src#STEP_ZERO + 2.String.Text
+msgid  "<<~Back"
+msgstr "<<~Précédent"
+
+#: source/euro/euro.src#STEP_ZERO + 3.String.Text
+msgid  "~Convert"
+msgstr "~Convertir"
+
+#: source/euro/euro.src#STEP_ZERO + 4.String.Text
+msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr "Avertissement : Il est impossible de convertir les montants provenant de liens externes, de même que les facteurs de conversion inclus dans les formules."
+
+#: source/euro/euro.src#STEP_ZERO + 5.String.Text
+msgid  "First, unprotect all sheets."
+msgstr "Désactivez la protection des feuilles au préalable."
+
+#: source/euro/euro.src#STEP_ZERO + 6.String.Text
+msgid  "Currencies:"
+msgstr "Monnaies :"
+
+#: source/euro/euro.src#STEP_ZERO + 7.String.Text
+msgid  "C~ontinue>>"
+msgstr "~Suivant>>"
+
+#: source/euro/euro.src#STEP_ZERO + 8.String.Text
+msgid  "C~lose"
+msgstr "F~ermer"
+
+#: source/euro/euro.src#STEP_CONVERTER.String.Text
+msgid  "~Entire document"
+msgstr "Document ~entier"
+
+#: source/euro/euro.src#STEP_CONVERTER + 1.String.Text
+msgid  "Selection"
+msgstr "Sélection"
+
+#: source/euro/euro.src#STEP_CONVERTER + 2.String.Text
+msgid  "Cell S~tyles"
+msgstr "Styles de ~cellule"
+
+#: source/euro/euro.src#STEP_CONVERTER + 3.String.Text
+msgid  "Currency cells in the current ~sheet"
+msgstr "Cellules monétaires dans la ~feuille de calcul active"
+
+#: source/euro/euro.src#STEP_CONVERTER + 4.String.Text
+msgid  "Currency cells in the entire ~document"
+msgstr "Cellules monétaires dans le ~document entier"
+
+#: source/euro/euro.src#STEP_CONVERTER + 5.String.Text
+msgid  "~Selected range"
+msgstr "Plage ~sélectionnée"
+
+#: source/euro/euro.src#STEP_CONVERTER + 6.String.Text
+msgid  "Select Cell Styles"
+msgstr "Sélectionner les styles de cellule"
+
+#: source/euro/euro.src#STEP_CONVERTER + 7.String.Text
+msgid  "Select currency cells"
+msgstr "Sélectionner les cellules monétaires"
+
+#: source/euro/euro.src#STEP_CONVERTER + 8.String.Text
+msgid  "Currency ranges:"
+msgstr "Plages monétaires :"
+
+#: source/euro/euro.src#STEP_CONVERTER + 9.String.Text
+msgid  "Templates:"
+msgstr "Styles :"
+
+#: source/euro/euro.src#STEP_AUTOPILOT.String.Text
+msgid  "Extent"
+msgstr "Étendue"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 1.String.Text
+msgid  "~Single %PRODUCTNAME Calc document"
+msgstr "~Document unique %PRODUCTNAME Calc"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 2.String.Text
+msgid  "Complete ~directory"
+msgstr "Répertoire ~entier"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 3.String.Text
+msgid  "Source Document:"
+msgstr "Document source :"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 4.String.Text
+msgid  "Source directory:"
+msgstr "Répertoire source :"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 5.String.Text
+msgid  "~Including subfolders"
+msgstr "Sous-répertoires ~compris"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 6.String.Text
+msgid  "Target directory:"
+msgstr "Répertoire cible :"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 7.String.Text
+msgid  "Temporarily unprotect sheet without query"
+msgstr "Annulation provisoire de la protection de la feuille sans demande de confirmation"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 10.String.Text
+msgid  "Also convert fields and tables in text documents"
+msgstr "Convertir également les champs et les tableaux dans les documents texte"
+
+#: source/euro/euro.src#STATUSLINE.String.Text
+msgid  "Conversion status: "
+msgstr "Progression de la conversion : "
+
+#: source/euro/euro.src#STATUSLINE + 1.String.Text
+msgid  "Conversion status of the cell templates:"
+msgstr "Progression de la conversion des styles de cellule :"
+
+#: source/euro/euro.src#STATUSLINE + 2.String.Text
+msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr "Récupération des plages à convertir : page %1Number%1 de %2TotPageCount%2"
+
+#: source/euro/euro.src#STATUSLINE + 3.String.Text
+msgid  "Entry of the ranges to be converted..."
+msgstr "Récupération des plages à convertir..."
+
+#: source/euro/euro.src#STATUSLINE + 4.String.Text
+msgid  "Sheet protection for each sheet will be restored..."
+msgstr "Restauration des protections des feuilles..."
+
+#: source/euro/euro.src#STATUSLINE + 5.String.Text
+msgid  "Conversion of the currency units in the cell templates..."
+msgstr "Conversion des unités monétaires dans les styles de cellule en cours..."
+
+#: source/euro/euro.src#MESSAGES.String.Text
+msgid  "~Finish"
+msgstr "~Terminé"
+
+#: source/euro/euro.src#MESSAGES + 1.String.Text
+msgid  "Select directory"
+msgstr "Sélectionnez un répertoire"
+
+#: source/euro/euro.src#MESSAGES + 2.String.Text
+msgid  "Select file"
+msgstr "Sélectionnez un fichier"
+
+#: source/euro/euro.src#MESSAGES + 3.String.Text
+msgid  "Select target directory"
+msgstr "Sélectionnez le répertoire cible"
+
+#: source/euro/euro.src#MESSAGES + 4.String.Text
+msgid  "non-existant"
+msgstr "non existant"
+
+#: source/euro/euro.src#MESSAGES + 5.String.Text
+msgid  "Euro Converter"
+msgstr "Euro-Convertisseur"
+
+#: source/euro/euro.src#MESSAGES + 6.String.Text
+msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgstr "Souhaitez-vous éliminer temporairement la protection des feuilles ?"
+
+#: source/euro/euro.src#MESSAGES + 7.String.Text
+msgid  "Enter the password to unprotect the table %1TableName%1"
+msgstr "Mot de passe pour l'annulation de la protection de la table %1TableName%1"
+
+#: source/euro/euro.src#MESSAGES + 8.String.Text
+msgid  "Wrong Password!"
+msgstr "Mot de passe incorrect !"
+
+#: source/euro/euro.src#MESSAGES + 9.String.Text
+msgid  "Protected Sheet"
+msgstr "Feuille protégée"
+
+#: source/euro/euro.src#MESSAGES + 10.String.Text
+msgid  "Warning!"
+msgstr "Avertissement !"
+
+#: source/euro/euro.src#MESSAGES + 11.String.Text
+msgid  "Protection for the sheets will not be removed."
+msgstr "La protection des feuilles ne sera pas annulée."
+
+#: source/euro/euro.src#MESSAGES + 12.String.Text
+msgid  "Sheet cannot be unprotected"
+msgstr "La protection de la feuille ne peut pas être annulée"
+
+#: source/euro/euro.src#MESSAGES + 13.String.Text
+msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr "Impossible d'éditer ce document via l'assistant, car les formats de cellules ne peuvent pas être modifiés dans les documents contenant des feuilles de calcul protégées."
+
+#: source/euro/euro.src#MESSAGES + 14.String.Text
+msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr "Notez que, si tel n'est pas le cas, le Euro-Convertisseur n'est pas en mesure d'éditer le document !"
+
+#: source/euro/euro.src#MESSAGES + 15.String.Text
+msgid  "Please choose a currency to be converted first!"
+msgstr "Commencez par sélectionner la monnaie à convertir !"
+
+#: source/euro/euro.src#MESSAGES + 16.String.Text
+msgid  "Password:"
+msgstr "Mot de passe :"
+
+#: source/euro/euro.src#MESSAGES + 17.String.Text
+msgid  "OK"
+msgstr "OK"
+
+#: source/euro/euro.src#MESSAGES + 18.String.Text
+msgid  "Cancel"
+msgstr "Annuler"
+
+#: source/euro/euro.src#MESSAGES + 19.String.Text
+msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "Sélectionnez un document %PRODUCTNAME Calc pour l'édition !"
+
+#: source/euro/euro.src#MESSAGES + 20.String.Text
+msgid  "'<1>' is not a directory!"
+msgstr "'<1>' n'est pas un répertoire !"
+
+#: source/euro/euro.src#MESSAGES + 21.String.Text
+msgid  "Document is read-only!"
+msgstr "Le document est en lecture seule !"
+
+#: source/euro/euro.src#MESSAGES + 22.String.Text
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Le fichier '<1>' existe déjà.<CR>Voulez-vous l'écraser ?"
+
+#: source/euro/euro.src#MESSAGES + 23.String.Text
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Interrompre la conversion à ce stade ?"
+
+#: source/euro/euro.src#MESSAGES + 24.String.Text
+msgid  "Cancel Wizard"
+msgstr "Annuler l'assistant"
+
+#: source/euro/euro.src#CURRENCIES.String.Text
+msgid  "Portuguese Escudo"
+msgstr "Escudo Portugais"
+
+#: source/euro/euro.src#CURRENCIES + 1.String.Text
+msgid  "Dutch Guilder"
+msgstr "Florin Hollandais"
+
+#: source/euro/euro.src#CURRENCIES + 2.String.Text
+msgid  "French Franc"
+msgstr "Franc Français"
+
+#: source/euro/euro.src#CURRENCIES + 3.String.Text
+msgid  "Spanish Peseta"
+msgstr "Peseta Espagnole"
+
+#: source/euro/euro.src#CURRENCIES + 4.String.Text
+msgid  "Italian Lira"
+msgstr "Lire Italienne"
+
+#: source/euro/euro.src#CURRENCIES + 5.String.Text
+msgid  "German Mark"
+msgstr "Mark Allemand"
+
+#: source/euro/euro.src#CURRENCIES + 6.String.Text
+msgid  "Belgian Franc"
+msgstr "Franc Belge"
+
+#: source/euro/euro.src#CURRENCIES + 7.String.Text
+msgid  "Irish Punt"
+msgstr "Livre Irlandaise"
+
+#: source/euro/euro.src#CURRENCIES + 8.String.Text
+msgid  "Luxembourg Franc"
+msgstr "Franc Luxembourgeois"
+
+#: source/euro/euro.src#CURRENCIES + 9.String.Text
+msgid  "Austrian Schilling"
+msgstr "Schilling Autrichien"
+
+#: source/euro/euro.src#CURRENCIES + 10.String.Text
+msgid  "Finnish Mark"
+msgstr "Mark Finlandais"
+
+#: source/euro/euro.src#CURRENCIES + 11.String.Text
+msgid  "Greek Drachma"
+msgstr "Drachme Grecque"
+
+#: source/euro/euro.src#CURRENCIES + 12.String.Text
+msgid  "Slovenian Tolar"
+msgstr "Tolar slovène"
+
+#: source/euro/euro.src#CURRENCIES + 13.String.Text
+msgid  "Cypriot Pound"
+msgstr "Livre Chypriote"
+
+#: source/euro/euro.src#CURRENCIES + 14.String.Text
+msgid  "Maltese Lira"
+msgstr "Lire Maltaise"
+
+#: source/euro/euro.src#CURRENCIES + 15.String.Text
+msgid  "Slovak Koruna"
+msgstr "Couronne Slovaque"
+
+#: source/euro/euro.src#CURRENCIES + 16.String.Text
+msgid  "The currency set for the document is not a European currency!"
+msgstr "La monnaie définie pour le document ne correspond à aucun pays de l'Union Monétaire Européenne !"
+
+#: source/euro/euro.src#CURRENCIES + 17.String.Text
+msgid  "The language set for your operating system is not a language of the European Monetary Union."
+msgstr "La langue définie pour le système d'exploitation ne correspond à aucun pays de l'Union Monétaire Européenne."
+
+#: source/euro/euro.src#STEP_LASTPAGE.String.Text
+msgid  "Progress"
+msgstr "Progression"
+
+#: source/euro/euro.src#STEP_LASTPAGE + 1.String.Text
+msgid  "Retrieving the relevant documents..."
+msgstr "Récupération des documents importants..."
+
+#: source/euro/euro.src#STEP_LASTPAGE + 2.String.Text
+msgid  "Converting the documents..."
+msgstr "Conversion des documents..."
+
+#: source/euro/euro.src#STEP_LASTPAGE + 3.String.Text
+msgid  "Settings:"
+msgstr "Paramètres :"
+
+#: source/euro/euro.src#STEP_LASTPAGE + 4.String.Text
+msgid  "Sheet is always unprotected"
+msgstr "La feuille sera toujours non protégée"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
+msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr "Impossible de créer le dossier '%1' !<BR>Le disque dur est probablement plein."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
+msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr "Impossible de créer le document texte.<BR>Veuillez vérifier que le module 'PRODUCTNAME Writer' est bien installé."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
+msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr "Impossible de créer la feuille de calcul.<BR>Veuillez vérifier que le module 'PRODUCTNAME Calc' est bien installé."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
+msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr "Impossible de créer la présentation.<BR>Veuillez vérifier que le module 'PRODUCTNAME Impress' est bien installé."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
+msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr "Impossible de créer le dessin.<BR>Veuillez vérifier que le module 'PRODUCTNAME Draw' est bien installé."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
+msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr "Impossible de créer la formule.<BR>Veuillez vérifier que le module 'PRODUCTNAME Math' est bien installé."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
+msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr "Impossible de détecter les fichiers requis !<BR>Lancez le programme %PRODUCTNAME Setup et choisissez 'Réparer'."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
+msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgstr "Le fichier '<PATH>' existe déjà.<BR><BR>Écraser le fichier existant ?"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
+msgid  "Yes"
+msgstr "Oui"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 9.String.Text
+msgid  "Yes to All"
+msgstr "Oui pour tout"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 10.String.Text
+msgid  "No"
+msgstr "Non"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 11.String.Text
+msgid  "Cancel"
+msgstr "Annuler"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 12.String.Text
+msgid  "~Finish"
+msgstr "~Créer"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 13.String.Text
+msgid  "< ~Back"
+msgstr "< ~Précédent"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 14.String.Text
+msgid  "~Next >"
+msgstr "~Suivant >"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 15.String.Text
+msgid  "~Help"
+msgstr "~Aide"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 16.String.Text
+msgid  "Steps"
+msgstr "Étapes"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 17.String.Text
+msgid  "Close"
+msgstr "Fermer"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 18.String.Text
+msgid  "OK"
+msgstr "OK"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 19.String.Text
+msgid  "The file already exists. Do you want to overwrite it?"
+msgstr "Ce fichier existe déjà. Souhaitez-vous le remplacer ?"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 20.String.Text
+msgid  "Template created via <wizard_name> on <current_date>."
+msgstr "Modèle créé avec <wizard_name> le <current_date>."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr "L'assistant n'a pas pu être exécuté, car certains fichiers importants sont manquants.\nPour rétablir les chemins vers les paramètres d'origine par défaut, choisissez 'Outils - Options - %PRODUCTNAME - Chemins', cliquez sur le bouton 'Par défaut',\npuis relancez l'assistant."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
+msgid  "C~reate"
+msgstr "C~réer"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 1.String.Text
+msgid  "~Cancel"
+msgstr "~Annuler"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 2.String.Text
+msgid  "<< ~Back"
+msgstr "<< ~Précédent"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 3.String.Text
+msgid  "~Next >>"
+msgstr "~Suivant >>"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 4.String.Text
+msgid  "~Database"
+msgstr "~Base de données"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 5.String.Text
+msgid  "~Table name"
+msgstr "Nom de ~table"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
+msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgstr "Une erreur s'est produite lors de l'exécution de l'assistant. L'assistant va se fermer."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
+msgid  "No connection to the database could be established."
+msgstr "Impossible d'établir une connexion à la base de données."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 20.String.Text
+msgid  "~Help"
+msgstr "~Aide"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 21.String.Text
+msgid  "~Stop"
+msgstr "~Stop"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 30.String.Text
+msgid  "The document could not be saved."
+msgstr "Impossible d'enregistrer le document."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 33.String.Text
+msgid  "Exiting the wizard"
+msgstr "Fermeture de l'assistant"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 34.String.Text
+msgid  "Connecting to data source..."
+msgstr "Connexion à la source de données..."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 35.String.Text
+msgid  "The connection to the data source could not be established."
+msgstr "Impossible d'établir la connexion à la source de données."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 36.String.Text
+msgid  "The file path entered is not valid."
+msgstr "Le chemin de fichier saisi n'est pas valide."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 37.String.Text
+msgid  "Please select a data source"
+msgstr "Sélectionnez une source de données"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 38.String.Text
+msgid  "Please select a table or query"
+msgstr "Sélectionnez une table ou requête"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 39.String.Text
+msgid  "Add field"
+msgstr "Ajouter un champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 40.String.Text
+msgid  "Remove field"
+msgstr "Supprimer un champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 41.String.Text
+msgid  "Add all fields"
+msgstr "Ajouter tous les champs"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 42.String.Text
+msgid  "Remove all fields"
+msgstr "Supprimer tous les champs"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 43.String.Text
+msgid  "Move field up"
+msgstr "Déplacer le champ vers le haut"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 44.String.Text
+msgid  "Move field down"
+msgstr "Déplacer le champ vers le bas"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 45.String.Text
+msgid  "The field names from '%NAME' could not be retrieved."
+msgstr "Les noms de champs de '%NAME' n'ont pas pu être extraits."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 0.String.Text
+msgid  "Form Wizard"
+msgstr "Assistant Formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 1.String.Text
+msgid  "Fields in ~the form"
+msgstr "~Champs du formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr "Les champs binaires sont toujours répertoriés : vous pouvez les sélectionner dans la liste de gauche.\nLorsque cela est possible, ils sont interprétés comme des images."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr "Un sous-formulaire est un formulaire inséré dans un autre formulaire.\nVous pouvez utiliser les sous-formulaires pour afficher les données des tables ou des requêtes ayant une relation de type un à plusieurs."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
+msgid  "~Add Subform"
+msgstr "~Ajouter un sous-formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 5.String.Text
+msgid  "~Subform based on existing relation"
+msgstr "~Sous-formulaire basé sur une relation existante"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 6.String.Text
+msgid  "Tables or queries"
+msgstr "Tables ou requêtes"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 7.String.Text
+msgid  "Subform based on ~manual selection of fields"
+msgstr "Sous-formulaire basé sur la sélection ~manuelle des champs"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 8.String.Text
+msgid  "~Which relation do you want to add?"
+msgstr "~Quel type de relation voulez-vous ajouter ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 9.String.Text
+msgid  "Fields in the ~subform"
+msgstr "Champs du ~sous-formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 12.String.Text
+msgid  "~Available fields"
+msgstr "Ch~amps disponibles"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 13.String.Text
+msgid  "Fields in form"
+msgstr "Champs du formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr "Les jointures '<FIELDNAME1>' et '<FIELDNAME2>' ont été sélectionnées deux fois.\nOr, les jointures ne peuvent être utilisées qu'une seule fois."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
+msgid  "~First joined subform field"
+msgstr "Premier champ joint du sous-~formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 21.String.Text
+msgid  "~Second joined subform field"
+msgstr "Deuxième champ joint du ~sous-formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 22.String.Text
+msgid  "~Third joined subform field"
+msgstr "~Troisième champ joint du sous-formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 23.String.Text
+msgid  "~Fourth joined subform field"
+msgstr "Quatrième champ joint du sous-~formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 24.String.Text
+msgid  "F~irst joined main form field"
+msgstr "Prem~ier champ joint du formulaire principal"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 25.String.Text
+msgid  "S~econd joined main form field"
+msgstr "D~euxième champ joint du formulaire principal"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 26.String.Text
+msgid  "T~hird joined main form field"
+msgstr "Troisième c~hamp joint du formulaire principal"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 27.String.Text
+msgid  "F~ourth joined main form field"
+msgstr "Quatrième champ joint du f~ormulaire principal"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 28.String.Text
+msgid  "Field border"
+msgstr "Bordure de champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 29.String.Text
+msgid  "No border"
+msgstr "Sans bordure"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 30.String.Text
+msgid  "3D look"
+msgstr "3D"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 31.String.Text
+msgid  "Flat"
+msgstr "Plat"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 32.String.Text
+msgid  "Label placement"
+msgstr "Alignement des champs d'étiquette"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 33.String.Text
+msgid  "Align left"
+msgstr "Aligner à gauche"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 34.String.Text
+msgid  "Align right"
+msgstr "Aligner à droite"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 35.String.Text
+msgid  "Arrangement of DB fields"
+msgstr "Disposition des champs de BD"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 36.String.Text
+msgid  "Columnar - Labels Left"
+msgstr "Colonnes - Étiquettes à gauche"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 37.String.Text
+msgid  "Columnar - Labels on Top"
+msgstr "Colonnes - Étiquettes en haut"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 38.String.Text
+msgid  "In Blocks - Labels Left"
+msgstr "Blocs - Étiquettes à gauche"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 39.String.Text
+msgid  "In Blocks - Labels Above"
+msgstr "Blocs - Étiquettes en haut"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 40.String.Text
+msgid  "As Data Sheet"
+msgstr "Comme feuille de données"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 41.String.Text
+msgid  "Arrangement of the main form"
+msgstr "Disposition du formulaire principal"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 42.String.Text
+msgid  "Arrangement of the subform"
+msgstr "Disposition du sous-formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 44.String.Text
+msgid  "The form is to be ~used for entering new data only."
+msgstr "Le formulaire sert ~uniquement à saisir de nouvelles données."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 45.String.Text
+msgid  "Existing data will not be displayed "
+msgstr "Les données existantes ne s'affichent pas "
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 46.String.Text
+msgid  "T~he form is to display all data"
+msgstr "Le formulaire doit affic~her toutes les données"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 47.String.Text
+msgid  "Do not allow ~modification of existing data"
+msgstr "Ne pas autoriser la ~modification des données existantes"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 48.String.Text
+msgid  "Do not allow ~deletion of existing data"
+msgstr "Ne pas autoriser la suppression ~des données existantes"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 49.String.Text
+msgid  "Do not allow ~addition of new data"
+msgstr "Ne pas autoriser l'~ajout de nouvelles données"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 50.String.Text
+msgid  "Name of ~the form"
+msgstr "~Nom du formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 51.String.Text
+msgid  "How do you want to proceed after creating the form?"
+msgstr "Comment voulez-vous procéder après la création du formulaire ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 52.String.Text
+msgid  "~Work with the form"
+msgstr "~Utiliser le formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 53.String.Text
+msgid  "~Modify the form"
+msgstr "~Modifier le formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 55.String.Text
+msgid  "~Page Styles"
+msgstr "Styles de ~page"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
+msgid  "Field selection"
+msgstr "Sélection de champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
+msgid  "Set up a subform"
+msgstr "Paramétrer un sous-formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 82.String.Text
+msgid  "Add subform fields"
+msgstr "Ajouter des champs de sous-formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 83.String.Text
+msgid  "Get joined fields"
+msgstr "Obtenir des champs joints"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 84.String.Text
+msgid  "Arrange controls"
+msgstr "Positionner les contrôles"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 85.String.Text
+msgid  "Set data entry"
+msgstr "Définir la saisie de données"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 86.String.Text
+msgid  "Apply styles"
+msgstr "Appliquer les styles"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 87.String.Text
+msgid  "Set name"
+msgstr "Définir un nom"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 88.String.Text
+msgid  "(Date)"
+msgstr "(Date)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 89.String.Text
+msgid  "(Time)"
+msgstr "(Heure)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 90.String.Text
+msgid  "Select the fields of your form"
+msgstr "Sélectionner les champs du formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 91.String.Text
+msgid  "Decide if you want to set up a subform"
+msgstr "Indiquer si un sous-formulaire doit être paramétré"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 92.String.Text
+msgid  "Select the fields of your subform"
+msgstr "Sélectionner les champs du sous-formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 93.String.Text
+msgid  "Select the joins between your forms"
+msgstr "Sélectionner les jointures à inclure entre les formulaires"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 94.String.Text
+msgid  "Arrange the controls on your form"
+msgstr "Positionner les contrôles sur le formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 95.String.Text
+msgid  "Select the data entry mode"
+msgstr "Sélectionner le mode de saisie des données"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 96.String.Text
+msgid  "Apply the style of your form"
+msgstr "Appliquer le style au formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 97.String.Text
+msgid  "Set the name of the form"
+msgstr "Nommer le formulaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr "Un formulaire nommé '%FORMNAME' existe déjà.\nChoisissez un autre nom."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
+msgid  "Query Wizard"
+msgstr "Assistant Requête"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 1.String.Text
+msgid  "Query"
+msgstr "Requête"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 2.String.Text
+msgid  "Query Wizard"
+msgstr "Assistant Requête"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 3.String.Text
+msgid  "~Tables"
+msgstr "~Tables"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
+msgid  "A~vailable fields"
+msgstr "~Champs disponibles"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
+msgid  "Name ~of the query"
+msgstr "~Nom de la requête"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 6.String.Text
+msgid  "Display ~Query"
+msgstr "~Afficher la requête"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 7.String.Text
+msgid  "~Modify Query"
+msgstr "~Modifier la requête"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 8.String.Text
+msgid  "~How do you want to proceed after creating the query?"
+msgstr "~Comment souhaitez-vous procéder suite à la création de la requête ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 9.String.Text
+msgid  "Match ~all of the following"
+msgstr "Rechercher sur l~a base de tous ces critères"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 10.String.Text
+msgid  "~Match any of the following"
+msgstr "Rechercher ~sur la base d'un de ces critères"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 11.String.Text
+msgid  "~Detailed query (Shows all records of the query.)"
+msgstr "~Requête détaillée (affiche tous les enregistrements de la requête)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
+msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgstr "R~equête résumée (affiche uniquement les résultats des fonctions d'agrégat)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
+msgid  "Aggregate functions"
+msgstr "Fonctions d'agrégat"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 17.String.Text
+msgid  "Fields"
+msgstr "Champs"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 18.String.Text
+msgid  "~Group by"
+msgstr "~Grouper par"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 19.String.Text
+msgid  "Field"
+msgstr "Champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 20.String.Text
+msgid  "Alias"
+msgstr "Alias"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 21.String.Text
+msgid  "Table: "
+msgstr "Table : "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 22.String.Text
+msgid  "Query: "
+msgstr "Requête : "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 24.String.Text
+msgid  "Condition"
+msgstr "Condition"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 25.String.Text
+msgid  "Value"
+msgstr "Valeur"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 26.String.Text
+msgid  "is equal to"
+msgstr "est égal à"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 27.String.Text
+msgid  "is not equal to"
+msgstr "est différent de"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 28.String.Text
+msgid  "is smaller than"
+msgstr "est inférieur à"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 29.String.Text
+msgid  "is greater than"
+msgstr "est supérieur à"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 30.String.Text
+msgid  "is equal or less than "
+msgstr "est égal ou inférieur à "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 31.String.Text
+msgid  "is equal or greater than"
+msgstr "est égal ou supérieur à"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 32.String.Text
+msgid  "like"
+msgstr "comme"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 33.String.Text
+msgid  "not like"
+msgstr "différent de"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 34.String.Text
+msgid  "is null"
+msgstr "est vide"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 35.String.Text
+msgid  "is not null"
+msgstr "est non vide"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 36.String.Text
+msgid  "true"
+msgstr "vrai"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 37.String.Text
+msgid  "false"
+msgstr "faux"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 38.String.Text
+msgid  "and"
+msgstr "et"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 39.String.Text
+msgid  "or"
+msgstr "ou"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 40.String.Text
+msgid  "get the sum of"
+msgstr "obtenir la somme de"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 41.String.Text
+msgid  "get the average of"
+msgstr "obtenir la moyenne de"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 42.String.Text
+msgid  "get the minimum of"
+msgstr "obtenir le minimum de"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 43.String.Text
+msgid  "get the maximum of"
+msgstr "obtenir le maximum de"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 44.String.Text
+msgid  "get the sum of <FIELD>"
+msgstr "obtenir la somme de <FIELD>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 45.String.Text
+msgid  "get the average of <FIELD>"
+msgstr "obtenir la moyenne de <FIELD>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 46.String.Text
+msgid  "get the minimum of <FIELD>"
+msgstr "obtenir le minimum de <FIELD>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 47.String.Text
+msgid  "get the maximum of <FIELD>"
+msgstr "obtenir le maximum de <FIELD>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 48.String.Text
+msgid  "(none)"
+msgstr "(aucun)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 50.String.Text
+msgid  "Fie~lds in the Query: "
+msgstr "Champs dans ~la requête : "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 51.String.Text
+msgid  "Sorting order: "
+msgstr "Ordre de tri : "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 52.String.Text
+msgid  "No sorting fields were assigned."
+msgstr "Aucun champ de tri n'a été assigné."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 53.String.Text
+msgid  "Search conditions: "
+msgstr "Conditions de recherche : "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 54.String.Text
+msgid  "No conditions were assigned."
+msgstr "Aucune condition n'a été assignée."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 55.String.Text
+msgid  "Aggregate functions: "
+msgstr "Fonctions d'agrégat : "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 56.String.Text
+msgid  "No aggregate functions were assigned."
+msgstr "Aucune fonction d'agrégat n'a été assignée."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 57.String.Text
+msgid  "Grouped by: "
+msgstr "Groupé par : "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 58.String.Text
+msgid  "No Groups were assigned."
+msgstr "Aucun groupe n'a été assigné."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 59.String.Text
+msgid  "Grouping conditions: "
+msgstr "Conditions de groupement : "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 60.String.Text
+msgid  "No grouping conditions were assigned."
+msgstr "Aucune condition de groupement n'a été assignée."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 70.String.Text
+msgid  "Select the fields (columns) for your query"
+msgstr "Sélectionnez les champs (colonnes) de la requête"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 71.String.Text
+msgid  "Select the sorting order"
+msgstr "Sélectionnez l'ordre de tri"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 72.String.Text
+msgid  "Select the search conditions"
+msgstr "Sélectionnez les conditions de recherche"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 73.String.Text
+msgid  "Select the type of query"
+msgstr "Sélectionnez le type de requête"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 74.String.Text
+msgid  "Select the groups"
+msgstr "Sélectionnez les groupes"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 75.String.Text
+msgid  "Select the grouping conditions"
+msgstr "Sélectionnez les conditions de groupement"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 76.String.Text
+msgid  "Assign aliases if desired"
+msgstr "Si souhaité, définissez les alias"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 77.String.Text
+msgid  "Check the overview and decide how to proceed"
+msgstr "Revoyez la présentation et décidez de la suite"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 80.String.Text
+msgid  "Field selection"
+msgstr "Sélection de champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 81.String.Text
+msgid  "Sorting order"
+msgstr "Ordre de tri"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 82.String.Text
+msgid  "Search conditions"
+msgstr "Conditions de recherche"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 83.String.Text
+msgid  "Detail or summary"
+msgstr "Détails ou résumé"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 84.String.Text
+msgid  "Grouping"
+msgstr "Groupement"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 85.String.Text
+msgid  "Grouping conditions"
+msgstr "Conditions de groupement"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 86.String.Text
+msgid  "Aliases"
+msgstr "Alias"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 87.String.Text
+msgid  "Overview"
+msgstr "Présentation"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
+msgid  "A field that has not been assigned an aggregate function must be used in a group."
+msgstr "Un champ non assigné à une fonction d'agrégat doit être utilisé dans un groupe."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
+msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr "La condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' a été choisie deux fois. Les conditions ne peuvent être choisies qu'une seule fois"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
+msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr "La fonction d'agrégat <FUNCTION> a été assignée deux fois au nom de champ <NUMERICFIELD>."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
+msgid  ", "
+msgstr ", "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 92.String.Text
+msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 93.String.Text
+msgid  "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 94.String.Text
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 95.String.Text
+msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 96.String.Text
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 0.String.Text
+msgid  "Report Wizard"
+msgstr "Assistant Rapport"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 3.String.Text
+msgid  "~Table"
+msgstr "~Table"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 4.String.Text
+msgid  "Colu~mns"
+msgstr "~Colonnes"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 7.String.Text
+msgid  "Report_"
+msgstr "État_"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 8.String.Text
+msgid  "- undefined -"
+msgstr "- indéfini -"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 9.String.Text
+msgid  "~Fields in report"
+msgstr "~Champs du rapport"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 11.String.Text
+msgid  "Grouping"
+msgstr "Groupement"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 12.String.Text
+msgid  "Sort options"
+msgstr "Options de tri"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 13.String.Text
+msgid  "Choose layout"
+msgstr "Choisir une mise en page"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 14.String.Text
+msgid  "Create report"
+msgstr "Créer un rapport"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 15.String.Text
+msgid  "Layout of data"
+msgstr "Mise en page des données"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 16.String.Text
+msgid  "Layout of headers and footers"
+msgstr "Mise en page des en-têtes et pieds de page"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 19.String.Text
+msgid  "Fields"
+msgstr "Champs"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 20.String.Text
+msgid  "~Sort by"
+msgstr "~Trier par"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 21.String.Text
+msgid  "T~hen by"
+msgstr "Pu~is par"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 22.String.Text
+msgid  "Orientation"
+msgstr "Orientation"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 23.String.Text
+msgid  "Portrait"
+msgstr "Portrait"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 24.String.Text
+msgid  "Landscape"
+msgstr "Paysage"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 28.String.Text
+msgid  "Which fields do you want to have in your report?"
+msgstr "Quels champs souhaitez-vous ajouter au rapport ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 29.String.Text
+msgid  "Do you want to add grouping levels?"
+msgstr "Voulez-vous ajouter des niveaux de groupement ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 30.String.Text
+msgid  "According to which fields do you want to sort the data?"
+msgstr "Quels champs sont à prendre en compte pour le tri des données ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 31.String.Text
+msgid  "How do you want your report to look?"
+msgstr "Quelle apparence souhaitez-vous pour le rapport ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 32.String.Text
+msgid  "Decide how you want to proceed"
+msgstr "Choisissez l'action à exécuter"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 33.String.Text
+msgid  "Title of report"
+msgstr "Titre du rapport"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 34.String.Text
+msgid  "Display report"
+msgstr "Afficher le rapport"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 35.String.Text
+msgid  "Create report"
+msgstr "Créer un rapport"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 36.String.Text
+msgid  "Ascending"
+msgstr "Croissant"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 37.String.Text
+msgid  "Descending"
+msgstr "Décroissant"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 40.String.Text
+msgid  "~Dynamic report"
+msgstr "~Rapport dynamique"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 41.String.Text
+msgid  "~Create report now"
+msgstr "~Créer un rapport maintenant"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 42.String.Text
+msgid  "~Modify report layout"
+msgstr "~Modifier la mise en page du rapport"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 43.String.Text
+msgid  "Static report"
+msgstr "Rapport statique"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 44.String.Text
+msgid  "Save as"
+msgstr "Enregistrer sous"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 50.String.Text
+msgid  "Groupings"
+msgstr "Groupements"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 51.String.Text
+msgid  "Then b~y"
+msgstr "~Puis par"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 52.String.Text
+msgid  "~Then by"
+msgstr "P~uis par"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 53.String.Text
+msgid  "Asc~ending"
+msgstr "~Croissant"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 54.String.Text
+msgid  "Ascend~ing"
+msgstr "Cr~oissant"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 55.String.Text
+msgid  "Ascendin~g"
+msgstr "Croi~ssant"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 56.String.Text
+msgid  "De~scending"
+msgstr "~Décroissant"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 57.String.Text
+msgid  "Des~cending"
+msgstr "Décro~issant"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 58.String.Text
+msgid  "De~scending"
+msgstr "Décroiss~ant"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 60.String.Text
+msgid  "Binary fields cannot be displayed in the report."
+msgstr "Impossible d'afficher les champs binaires dans le rapport."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 61.String.Text
+msgid  "The table '<TABLENAME>' does not exist."
+msgstr "La table '<TABLENAME>' n'existe pas."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 62.String.Text
+msgid  "Creating Report..."
+msgstr "Création du rapport..."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 63.String.Text
+msgid  "Number of records inserted: <COUNT>"
+msgstr "Nombre d'enregistrements insérés : <COUNT>"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 64.String.Text
+msgid  "The form '<REPORTFORM>' does not exist."
+msgstr "Le formulaire '<REPORTFORM>' n'existe pas."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
+msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr "Impossible d'exécuter la requête avec l'expression <BR>'<STATEMENT>' <BR> ! <BR> Vérifiez la source de données."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
+msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr "Impossible de lire le contrôle suivant masqué dans le formulaire '<REPORTFORM>' : '<CONTROLNAME>'."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
+msgid  "Importing data..."
+msgstr "Import des données..."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 68.String.Text
+msgid  "Labeling fields"
+msgstr "Étiquetage des champs"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 69.String.Text
+msgid  "How do you want to label the fields?"
+msgstr "Quel type d'étiquetage des champs souhaitez-vous ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 70.String.Text
+msgid  "Label"
+msgstr "Étiquette"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 71.String.Text
+msgid  "Field"
+msgstr "Champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
+msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr "Une erreur s'est produite dans l'assistant.<BR>Le modèle '%PATH' est peut-être corrompu.<BR>Les sections ou les tables requises n'existent pas ou possèdent des noms différents.<BR>Pour des informations détaillées, reportez-vous à l'aide.<BR>Sélectionnez un autre modèle."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
+msgid  "There is an invalid user field in a table."
+msgstr "La table contient un champ utilisateur non valide."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
+msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr "Le critère de tri <FIELDNAME> a été sélectionné deux fois. Chaque critère ne peut être sélectionné qu'une seule fois."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
+msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr "Remarque : le texte factice sera remplacé par les données de la base au moment de la création du rapport."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
+msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr "Un rapport '%REPORTNAME' existe déjà dans la base de données. Veuillez choisir un autre nom."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
+msgid  "How do you want to proceed after creating the report?"
+msgstr "Voulez-vous continuer après la création du rapport ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 79.String.Text
+msgid  "What kind of report do you want to create?"
+msgstr "Quel type de rapport souhaitez-vous créer ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 80.String.Text
+msgid  "Tabular"
+msgstr "En tableau"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 81.String.Text
+msgid  "Columnar, single-column"
+msgstr "En colonne, une seule colonne"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 82.String.Text
+msgid  "Columnar, two columns"
+msgstr "En colonne, deux colonnes"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 83.String.Text
+msgid  "Columnar, three columns"
+msgstr "En colonne, trois colonnes"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 84.String.Text
+msgid  "In blocks, labels left"
+msgstr "Blocs, étiquettes à gauche"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 85.String.Text
+msgid  "In blocks, labels above"
+msgstr "Blocs, étiquettes au-dessus"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 86.String.Text
+msgid  "Title:"
+msgstr "Titre :"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 87.String.Text
+msgid  "Author:"
+msgstr "Auteur :"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 88.String.Text
+msgid  "Date:"
+msgstr "Date :"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 89.String.Text
+msgid  "Page #page# of #count#"
+msgstr "Page #page# de #count#"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 90.String.Text
+msgid  "Page number:"
+msgstr "Numéro de page :"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 91.String.Text
+msgid  "Page count:"
+msgstr "Nombre de pages :"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 92.String.Text
+msgid  "No valid report template was found."
+msgstr "Aucun modèle de rapport valide n'a été trouvé."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 1.String.Text
+msgid  "Table Wizard"
+msgstr "Assistant Table"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 2.String.Text
+msgid  "Select fields"
+msgstr "Sélectionner des champs"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 3.String.Text
+msgid  "Set types and formats"
+msgstr "Définir des types et des formats"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 4.String.Text
+msgid  "Set primary key"
+msgstr "Définir une clé primaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 5.String.Text
+msgid  "Create table"
+msgstr "Créer une table"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 8.String.Text
+msgid  "Select fields for your table"
+msgstr "Sélectionner les champs à inclure dans la table"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 9.String.Text
+msgid  "Set field types and formats"
+msgstr "Définir les types de champs et les formats"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 10.String.Text
+msgid  "Set primary key"
+msgstr "Définir une clé primaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 11.String.Text
+msgid  "Create table"
+msgstr "Créer une table"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
+msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr "Cet assistant vous aide à créer une table pour votre base de données. Après avoir sélectionné une catégorie et un exemple de table, choisissez les champs que vous souhaitez y inclure. Les champs inclus peuvent provenir de plusieurs exemples de table."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
+msgid  "Ca~tegory"
+msgstr "Ca~tégorie"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 16.String.Text
+msgid  "B~usiness"
+msgstr "~Professionnel"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 17.String.Text
+msgid  "P~ersonal"
+msgstr "P~ersonnel"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 18.String.Text
+msgid  "~Sample tables"
+msgstr "Exemple~s de table"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 19.String.Text
+msgid  "A~vailable fields"
+msgstr "~Champs disponibles"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 20.String.Text
+msgid  "Field information"
+msgstr "Infos champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 21.String.Text
+msgid  "+"
+msgstr "+"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 23.String.Text
+msgid  "Field name"
+msgstr "Nom de champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 24.String.Text
+msgid  "Field type"
+msgstr "Type de champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 25.String.Text
+msgid  "~Selected fields"
+msgstr "Champ~s sélectionnés"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
+msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr "Les clés primaires servent à identifier de manière unique les enregistrements dans une table de base de données. Les clés primaires facilitent l'association d'informations entre plusieurs tables. Nous vous recommandons d'insérer une clé primaire dans chaque table. Sans clé primaire, aucune saisie de données dans les tables n'est possible."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
+msgid  "~Create a primary key"
+msgstr "~Créer une clé primaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 28.String.Text
+msgid  "~Automatically add a primary key"
+msgstr "~Ajouter automatiquement une clé primaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 29.String.Text
+msgid  "~Use an existing field as a primary key"
+msgstr "~Utiliser un champ existant comme clé primaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 30.String.Text
+msgid  "Define p~rimary key as a combination of several fields "
+msgstr "Définir une clé p~rimaire comme combinaison de plusieurs champs "
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 31.String.Text
+msgid  "F~ieldname"
+msgstr "~Nom de champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 32.String.Text
+msgid  "~Primary key fields"
+msgstr "Champs de clé ~primaire"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 33.String.Text
+msgid  "Auto ~value"
+msgstr "~Valeur automatique"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 34.String.Text
+msgid  "What do you want to name your table?"
+msgstr "Quel nom souhaitez-vous donner à la table ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
+msgid  "Congratulations. You have entered all the information needed to create your table."
+msgstr "Félicitations ! Vous avez saisi toutes les informations nécessaires pour créer la table."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
+msgid  "What do you want to do next?"
+msgstr "Que voulez-vous faire ensuite ?"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
+msgid  "Modify the table design"
+msgstr "Modifier l'ébauche de table"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 38.String.Text
+msgid  "Insert data immediately"
+msgstr "Insérer des données immédiatement"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 39.String.Text
+msgid  "C~reate a form based on this table"
+msgstr "C~réer un formulaire basé sur cette table"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 40.String.Text
+msgid  "The table you have created could not be opened."
+msgstr "Impossible d'ouvrir la table créée."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
+msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Le nom de table '%TABLENAME' contient un caractère ('%SPECIALCHAR') qui semble ne pas être pris en charge par la base de données."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
+msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Le nom de champ '%FIELDNAME' contient un caractère ('%SPECIALCHAR') qui semble ne pas être pris en charge par la base de données."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
+msgid  "Field"
+msgstr "Champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 44.String.Text
+msgid  "MyTable"
+msgstr "MaTable"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 45.String.Text
+msgid  "Add a Field"
+msgstr "Ajouter un champ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 46.String.Text
+msgid  "Remove the selected Field"
+msgstr "Supprimer le champ sélectionné"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
+msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr "Le champ ne peut pas être inséré parce que la table de base de données contiendrait alors plus de %COUNT champs, ce qui n'est pas autorisé"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr "Le nom '%TABLENAME' existe déjà.\nVeuillez saisir un autre nom."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
+msgid  "Catalog of the table"
+msgstr "Catalogue de la table"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 50.String.Text
+msgid  "Schema of the table"
+msgstr "Schéma de la table"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 51.String.Text
+msgid  "The field '%FIELDNAME' already exists."
+msgstr "Le champ '%FIELDNAME' existe déjà."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 1.String.Text
+msgid  "Letter Wizard"
+msgstr "Assistant Lettre"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 2.String.Text
+msgid  "Label9"
+msgstr "Étiquette9"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 3.String.Text
+msgid  "~Business letter"
+msgstr "~Lettre professionnelle"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 4.String.Text
+msgid  "~Formal personal letter"
+msgstr "~Lettre privée officielle"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 5.String.Text
+msgid  "~Personal letter"
+msgstr "Lettre ~privée"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 6.String.Text
+msgid  "~Use letterhead paper with pre-printed elements"
+msgstr "~Utiliser du papier à en-tête"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 7.String.Text
+msgid  "~Logo"
+msgstr "~Logo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
+msgid  "Return address"
+msgstr "Adresse de l'expéditeur"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 9.String.Text
+msgid  "~Include footer"
+msgstr "~Inclure le pied de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 10.String.Text
+msgid  "~Return address in envelope window"
+msgstr "~Adresse de l'expéditeur dans la fenêtre de l'enveloppe"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
+msgid  "~Logo"
+msgstr "~Logo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 12.String.Text
+msgid  "~Return address in envelope window"
+msgstr "~Adresse de l'expéditeur dans la fenêtre de l'enveloppe"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 13.String.Text
+msgid  "Letter Signs"
+msgstr "Symboles littéraux"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
+msgid  "S~ubject line"
+msgstr "~Objet"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
+msgid  "Salu~tation"
+msgstr "~Salutations"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 16.String.Text
+msgid  "Fold ~marks"
+msgstr "~Repères pliure"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
+msgid  "~Complimentary close"
+msgstr "~Formule finale"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
+msgid  "~Footer"
+msgstr "~Pied de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
+msgid  "~Use user data for return address"
+msgstr "~Utiliser les données de l'utilisateur pour l'adresse d'expéditeur"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
+msgid  "~New sender address:"
+msgstr "~Nouvelle adresse d'expéditeur :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
+msgid  "Use placeholders for ~recipient's address"
+msgstr "Utiliser des ~substituants pour l'adresse du destinataire"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
+msgid  "Use address database for ~mail merge"
+msgstr "Utiliser une liste d'adresses pour le pu~blipostage"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
+msgid  "Include ~only on second and following pages"
+msgstr "Inclure à c~ompter de la seconde page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
+msgid  "~Include page number"
+msgstr "~Inclure les numéros de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
+msgid  "Letter Template"
+msgstr "Modèle de lettre"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 26.String.Text
+msgid  "Create a ~letter from this template"
+msgstr "~Créer une lettre à partir de ce modèle"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 27.String.Text
+msgid  "Make ~manual changes to this letter template"
+msgstr "Modifier ~manuellement ce modèle de lettre"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
+msgid  "Page design"
+msgstr "Modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
+msgid  "Page design"
+msgstr "Modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
+msgid  "Page design"
+msgstr "Modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
+msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr "Cet assistant vous aide à créer un modèle qui pourra vous servir de base pour la rédaction de vos lettres."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
+msgid  "~Height:"
+msgstr "~Hauteur :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 33.String.Text
+msgid  "~Width:"
+msgstr "~Largeur :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
+msgid  "S~pacing to left margin:"
+msgstr "Es~pacement de la marge gauche :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
+msgid  "Spacing ~to top margin:"
+msgstr "Espacemen~t de la marge supérieure :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
+msgid  "Height:"
+msgstr "Hauteur :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 37.String.Text
+msgid  "Width:"
+msgstr "Largeur :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 38.String.Text
+msgid  "S~pacing to left margin:"
+msgstr "Es~pacement de la marge gauche :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 39.String.Text
+msgid  "Spacing ~to top margin:"
+msgstr "Espacemen~t de la marge supérieure :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 40.String.Text
+msgid  "Height:"
+msgstr "Hauteur :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 41.String.Text
+msgid  "Use a typical letter format for this country:"
+msgstr "Utiliser un format de lettre typique pour ce pays :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 42.String.Text
+msgid  "Sender's address"
+msgstr "Adresse de l'expéditeur"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
+msgid  "Name:"
+msgstr "Nom :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
+msgid  "Street:"
+msgstr "Rue :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
+msgid  "ZIP code/State/City:"
+msgstr "C.P./État/Ville :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
+msgid  "Recipient's address"
+msgstr "Adresse du destinataire"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 47.String.Text
+msgid  "Footer"
+msgstr "Pied de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
+msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr "Cet assistant génère un modèle de lettre permettant de créer plusieurs lettres ayant une mise en page et des paramètres identiques."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
+msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr "Pour créer une autre lettre à partir du modèle, accédez à l'emplacement du modèle et double-cliquez sur ce dernier."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
+msgid  "Template name:"
+msgstr "Nom du modèle :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
+msgid  "Location and file name:"
+msgstr "Emplacement et nom de fichier :"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
+msgid  "How do you want to proceed?"
+msgstr "Comment voulez-vous procéder ?"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 53.String.Text
+msgid  "Please choose the type of letter and page design"
+msgstr "Choisissez un type de lettre et un modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 54.String.Text
+msgid  "Select the items to be printed"
+msgstr "Sélectionnez les éléments à imprimer"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 55.String.Text
+msgid  "Specify items already on your letterhead paper"
+msgstr "Spécifiez les éléments figurant déjà sur le papier à en-tête"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 56.String.Text
+msgid  "Specify the sender and recipient information"
+msgstr "Fournissez les informations concernant l'expéditeur et le destinataire"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 57.String.Text
+msgid  "Fill in the information you would like in the footer"
+msgstr "Indiquez les informations que vous souhaitez voir apparaître dans le pied de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 58.String.Text
+msgid  "Please specify last settings"
+msgstr "Spécifiez les derniers paramètres"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 1.String.Text
+msgid  "To Whom it May Concern"
+msgstr "À qui de droit"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 2.String.Text
+msgid  "Dear Sir or Madam"
+msgstr "Madame, Monsieur"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 3.String.Text
+msgid  "Hello"
+msgstr "Salut"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 1.String.Text
+msgid  "Sincerely"
+msgstr "Sincères salutations"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 2.String.Text
+msgid  "Best regards"
+msgstr "Bien cordialement"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 3.String.Text
+msgid  "Cheers"
+msgstr "À bientôt"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 1.String.Text
+msgid  "Page design"
+msgstr "Modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 2.String.Text
+msgid  "Letterhead layout"
+msgstr "Mise en page de l'en-tête"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 3.String.Text
+msgid  "Printed items"
+msgstr "Éléments imprimés"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 4.String.Text
+msgid  "Recipient and sender"
+msgstr "Destinataire et expéditeur"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 5.String.Text
+msgid  "Footer"
+msgstr "Pied de page"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 6.String.Text
+msgid  "Name and location"
+msgstr "Nom et emplacement"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 1.String.Text
+msgid  "Fax Wizard"
+msgstr "Assistant Fax"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 2.String.Text
+msgid  "Label9"
+msgstr "Étiquette9"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 3.String.Text
+msgid  "~Business Fax"
+msgstr "Fax p~rofessionnel"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 4.String.Text
+msgid  "~Personal Fax"
+msgstr "Fax ~personnel"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 5.String.Text
+msgid  "~Logo"
+msgstr "~Logo"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 6.String.Text
+msgid  "S~ubject line"
+msgstr "Obj~et"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 7.String.Text
+msgid  "S~alutation"
+msgstr "S~alutations"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 8.String.Text
+msgid  "~Complimentary close"
+msgstr "~Formule finale"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 9.String.Text
+msgid  "~Footer"
+msgstr "~Pied de page"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 10.String.Text
+msgid  "~Use user data for return address"
+msgstr "~Utiliser les données d'identité pour l'adresse de réponse"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
+msgid  "~New return address"
+msgstr "~Nouvelle adresse de l'expéditeur"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
+msgid  "My Fax Template"
+msgstr "Mon modèle de fax"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 13.String.Text
+msgid  "Create a ~fax from this template"
+msgstr "Créer un ~fax à partir de ce modèle"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 14.String.Text
+msgid  "Make ~manual changes to this fax template"
+msgstr "Modifier ~manuellement ce modèle de fax"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 15.String.Text
+msgid  "Page design"
+msgstr "Modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 16.String.Text
+msgid  "Page design"
+msgstr "Modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
+msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr "L'assitant vous aide lors du processus de création d'un modèle de fax. Ce modèle peut être utilisé pour créer un fax à tout moment."
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
+msgid  "Return address"
+msgstr "Adresse de l'expéditeur"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 19.String.Text
+msgid  "Name:"
+msgstr "Nom :"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 20.String.Text
+msgid  "Street:"
+msgstr "Rue :"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 21.String.Text
+msgid  "ZIP code/State/City:"
+msgstr "Code postal/Ville :"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 22.String.Text
+msgid  "Footer"
+msgstr "Pied de page"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
+msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr "Cet assistant génère un modèle de fax permettant de créer plusieurs fax ayant une mise en page et des paramètres identiques."
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
+msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Pour créer un autre fax à partir du modèle, sélectionnez le modèle enregistré et cliquez deux fois dessus."
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
+msgid  "Template Name:"
+msgstr "Nom du modèle :"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
+msgid  "Location and file name:"
+msgstr "Chemin et nom du fichier :"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
+msgid  "What do you want to do next?"
+msgstr "Que voulez-vous faire ensuite ?"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
+msgid  "Choose the type of fax and a page design"
+msgstr "Choisissez un type de fax et un modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 29.String.Text
+msgid  "Select items to include in the fax template"
+msgstr "Sélectionnez les éléments à inclure dans le modèle de fax"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 30.String.Text
+msgid  "Specify sender and recipient information"
+msgstr "Spécifiez les noms de l'expéditeur et du destinataire"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 31.String.Text
+msgid  "Enter text for the footer"
+msgstr "Saisissez le texte du pied de page"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
+msgid  "Choose a name and save the template"
+msgstr "Sélectionnez un nom et enregistrez le modèle"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
+msgid  "Include ~only on second and following pages"
+msgstr "Inclure ~uniquement sur la deuxième page et les pages suivantes"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 34.String.Text
+msgid  "~Include page number"
+msgstr "~Inclure le numéro de page"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 35.String.Text
+msgid  "~Date"
+msgstr "~Date"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 36.String.Text
+msgid  "~Type of message"
+msgstr "~Type de message"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 37.String.Text
+msgid  "Fax Number:"
+msgstr "Numéro de fax :"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 38.String.Text
+msgid  "Use placeholders for ~recipient's address"
+msgstr "Utiliser des substituants pour l'ad~resse du destinataire"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 39.String.Text
+msgid  "Use address database for ~mail merge"
+msgstr "Utiliser la base de données d'adresses pour la fusion des ~courriers"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 40.String.Text
+msgid  "~New return address"
+msgstr "~Nouvelle adresse de l'expéditeur"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 1.String.Text
+msgid  "Important Information!"
+msgstr "Informations importantes !"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 2.String.Text
+msgid  "For your information"
+msgstr "Pour information"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 3.String.Text
+msgid  "News!"
+msgstr "Nouvelles !"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 1.String.Text
+msgid  "To whom it may concern,"
+msgstr "À qui de droit"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 2.String.Text
+msgid  "Dear Sir or Madam,"
+msgstr "Madame, Monsieur,"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 3.String.Text
+msgid  "Hello,"
+msgstr "Bonjour"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 4.String.Text
+msgid  "Hi,"
+msgstr "Salut"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 1.String.Text
+msgid  "Sincerely"
+msgstr "Sincères salutations"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 2.String.Text
+msgid  "Yours faithfully"
+msgstr "Salutations distinguées"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 3.String.Text
+msgid  "Regards"
+msgstr "Cordialement"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 4.String.Text
+msgid  "Love"
+msgstr "Mes amitiés"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 1.String.Text
+msgid  "Page design"
+msgstr "Modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 2.String.Text
+msgid  "Items to include"
+msgstr "Éléments à inclure"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 3.String.Text
+msgid  "Sender and Recipient"
+msgstr "Expéditeur et destinataire"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 4.String.Text
+msgid  "Footer"
+msgstr "Pied de page"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 5.String.Text
+msgid  "Name and location"
+msgstr "Nom et emplacement"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +1.String.Text
+msgid  "Web Wizard"
+msgstr "Assistant Web"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr "Cet assistant Web vous guide tout au long de la publication de documents sur Internet\n\nIl convertit les documents afin qu'ils puissent s'afficher dans un navigateur Web. Il génère également une table des matières contenant des liens qui permettent d'accéder facilement aux documents. L'assistant Web permet également de personnaliser la conception et la mise en page de votre site Web.\nVous aurez ainsi la possibilité, à tout moment, de mettre à jour les documents publiés sur le Web, et d'ajouter ou de supprimer des documents."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
+msgid  "~Delete"
+msgstr "S~upprimer"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +5.String.Text
+msgid  "Introduction"
+msgstr "Introduction"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +6.String.Text
+msgid  "Select the documents you want to publish"
+msgstr "Sélectionnez les documents à publier"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +8.String.Text
+msgid  "Document information "
+msgstr "Informations document "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +9.String.Text
+msgid  "~Title:"
+msgstr "T~itre :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +10.String.Text
+msgid  "~Summary: "
+msgstr "~Résumé : "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +11.String.Text
+msgid  "Au~thor:"
+msgstr "~Auteur :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +12.String.Text
+msgid  "~Export to file format:"
+msgstr "~Exporter au format de fichier :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +13.String.Text
+msgid  "Enter general information for your web site"
+msgstr "Entrez les informations générales relatives à votre site Web"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +14.String.Text
+msgid  "Title:"
+msgstr "Titre :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +16.String.Text
+msgid  "Description:"
+msgstr "Description :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +18.String.Text
+msgid  "Created:"
+msgstr "Créé le :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +20.String.Text
+msgid  "E-mail:"
+msgstr "E-mail :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +21.String.Text
+msgid  "Copyright notice:"
+msgstr "Mention de copyright :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +22.String.Text
+msgid  "Modified:"
+msgstr "Modifié le :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +24.String.Text
+msgid  "~Preview"
+msgstr "~Aperçu"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +25.String.Text
+msgid  "Where do you want to publish your web site?"
+msgstr "Où souhaitez-vous publier le site web ?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +26.String.Text
+msgid  "Publish the new web site:"
+msgstr "Publication du nouveau site Web :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +27.String.Text
+msgid  "To a ~local folder"
+msgstr "~Dans un dossier local"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +28.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +29.String.Text
+msgid  "To a ~web server via FTP"
+msgstr "~Sur un serveur Web via FTP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +31.String.Text
+msgid  "~Configure..."
+msgstr "~Configurer..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +32.String.Text
+msgid  "To a ZIP ~archive"
+msgstr "~Dans une archive ZIP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +33.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +34.String.Text
+msgid  "~Save settings (recommended)"
+msgstr "Enregi~strer les paramètres (recommandé)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +35.String.Text
+msgid  "Save ~as:"
+msgstr "~Enregistrer sous :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +36.String.Text
+msgid  "~Choose settings for the Web Wizard"
+msgstr "~Choisir les paramètres de l'assistant Web"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +37.String.Text
+msgid  "Web site content "
+msgstr "Contenu du site Web "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +38.String.Text
+msgid  "~Add..."
+msgstr "~Ajouter..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +39.String.Text
+msgid  "Remo~ve"
+msgstr "~Supprimer"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +40.String.Text
+msgid  "Choose a layout for the table of contents of your web site"
+msgstr "Choisissez la mise en page pour la table des matières de votre site Web"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +41.String.Text
+msgid  "Select a style for the table of contents page"
+msgstr "Sélectionnez un style pour la page comportant la table des matières"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +42.String.Text
+msgid  "~Style:"
+msgstr "~Style :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +48.String.Text
+msgid  "~Layouts: "
+msgstr "~Mises en page : "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +50.String.Text
+msgid  "~Description"
+msgstr "~Description"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +51.String.Text
+msgid  "~Author"
+msgstr "~Auteur"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +52.String.Text
+msgid  "Cr~eation date"
+msgstr "Date de ~création"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +53.String.Text
+msgid  "~Last change date"
+msgstr "~Date de la dernière modification"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +54.String.Text
+msgid  "~File name"
+msgstr "~Nom de fichier"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +55.String.Text
+msgid  "File forma~t"
+msgstr "~Format de fichier"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +56.String.Text
+msgid  "File format ~icon"
+msgstr "~Icône de format de fichier"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +57.String.Text
+msgid  "Number ~of pages"
+msgstr "N~ombre de pages"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +58.String.Text
+msgid  "~Size in KB"
+msgstr "~Taille en Ko"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
+msgid  "Click 'Preview' to see a preview in your browser:"
+msgstr "Cliquez sur 'Aperçu' pour afficher un aperçu dans votre navigateur :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
+msgid  "Customize the selected layout"
+msgstr "Personnaliser la mise en page sélectionnée"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
+msgid  "Include the following information for each document in the table of contents:"
+msgstr "Inclure les informations suivantes pour chaque document de la table des matières :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
+msgid  "Optimize the layout for screen resolution:"
+msgstr "Optimiser la mise en page pour la résolution d'écran :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +64.String.Text
+msgid  "~640x480"
+msgstr "~640x480"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +65.String.Text
+msgid  "~800x600"
+msgstr "~800x600"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +66.String.Text
+msgid  "~1024x768"
+msgstr "~1024x768"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +70.String.Text
+msgid  "Generating Your Web Site"
+msgstr "Création de votre site Web"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +71.String.Text
+msgid  "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +72.String.Text
+msgid  "myWebsite"
+msgstr "monsiteWeb"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +73.String.Text
+msgid  "FTP target '%FILENAME' is a file."
+msgstr "La cible FTP '%FILENAME' est un fichier."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +74.String.Text
+msgid  "The local target '%FILENAME' is a file."
+msgstr "La cible locale '%FILENAME' est un fichier."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
+msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgstr "La cible ZIP '%FILENAME' existe déjà. Voulez-vous écraser la cible existante ? "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
+msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "Le répertoire de la cible FTP '%FILENAME' n'est pas vide. Certains fichiers pourraient être écrasés. Souhaitez-vous continuer ?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
+msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "Le répertoire de la cible locale '%FILENAME' n'est pas vide. Certains fichiers pourraient être écrasés. Souhaitez-vous continuer ?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
+msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr "Des paramètres en rapport avec ce nom existent déjà. Voulez-vous les écraser ? "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
+msgid  "Exporting documents..."
+msgstr "Export des document..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +80.String.Text
+msgid  "Preparing export..."
+msgstr "Préparation de l'export..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +81.String.Text
+msgid  "Copying layout files..."
+msgstr "Copie des fichiers de mise en page..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +82.String.Text
+msgid  "Preparing table of contents generation..."
+msgstr "Préparation pour la génération de la table des matières..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +83.String.Text
+msgid  "Generating table of contents..."
+msgstr "Génération de la table des matières..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +84.String.Text
+msgid  "Initializing..."
+msgstr "Initialisation..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +86.String.Text
+msgid  "Preparing to publish..."
+msgstr "Préparation pour la publication..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +87.String.Text
+msgid  "Publishing to local directory..."
+msgstr "Publication vers le répertoire local..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +88.String.Text
+msgid  "Publishing to FTP destination..."
+msgstr "Publication vers la destination FTP..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +89.String.Text
+msgid  "Publishing to a ZIP archive..."
+msgstr "Publication vers une archive ZIP..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 90.String.Text
+msgid  "Finishing..."
+msgstr "Phase finale..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 94.String.Text
+msgid  "Graphic files"
+msgstr "Fichiers graphiques"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 95.String.Text
+msgid  "All files"
+msgstr "Tous les fichiers"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 96.String.Text
+msgid  "~ZIP archive files"
+msgstr "Fichiers archives ~ZIP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 98.String.Text
+msgid  "Background images"
+msgstr "Images d'arrière-plan"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 99.String.Text
+msgid  "Choose a background image: "
+msgstr "Choisissez une image d'arrière-plan : "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 100.String.Text
+msgid  "Icon sets"
+msgstr "Jeux d'icônes"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 101.String.Text
+msgid  "Choose an icon set:"
+msgstr "Choisissez un jeu d'icônes :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +102.String.Text
+msgid  "Other..."
+msgstr "Autres..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +103.String.Text
+msgid  "None"
+msgstr "Aucun"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +104.String.Text
+msgid  "Your web site was created successfully into: %FILENAME"
+msgstr "Votre site Web a été créé dans : %FILENAME"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +105.String.Text
+msgid  "One or more errors occurred when generating the web site."
+msgstr "Des erreurs se sont produites durant le processus de génération du site Web."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
+msgid  "An error occurred while generating the table of contents page(s). "
+msgstr "Une erreur s'est produite durant le processus de génération des pages de la table des matières. "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +107.String.Text
+msgid  "An error occurred while copying the layout files. "
+msgstr "Une erreur s'est produite durant le processus de copie des fichiers de mise en page. "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
+msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgstr "Une erreur s'est produite durant la récupération des informations document pour '%FILENAME'. "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
+msgid  "An error occurred while exporting the document '%FILENAME'."
+msgstr "Une erreur s'est produite lors du processus d'export du document '%FILENAME'."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
+msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "Une erreur s'est produite durant la création d'un répertoire pour l'export de '%FILENAME'."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
+msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgstr "Une erreur de sécurité s'est produite lors de l'export du document '%FILENAME'."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
+msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "Une erreur d'entrée/sortie s'est produite durant le processus d'export du document '%FILENAME'."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
+msgid  "An error occurred while copying media files to the temporary directory."
+msgstr "Une erreur s'est produite durant le processus de copie des fichiers média vers le répertoire temporaire."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
+msgid  "The web site could not be copied to the following destination: %URL"
+msgstr "Impossible de copier le site Web vers la destination suivante : %URL"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +115.String.Text
+msgid  "An unexpected error occurred: %ERROR"
+msgstr "Une erreur imprévue s'est produite : %ERROR"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
+msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "Une erreur imprévue s'est produite durant le processus de validation du fichier : '%FILENAME'"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
+msgid  "%FILENAME' is a folder."
+msgstr "%FILENAME' est un dossier."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +118.String.Text
+msgid  "Loading Web Wizard Settings..."
+msgstr "Chargement des paramètres de l'assistant Web..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +119.String.Text
+msgid  "An unexpected error occurred."
+msgstr "Une erreur imprévue s'est produite."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +120.String.Text
+msgid  "Validating documents..."
+msgstr "Validation des documents..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +121.String.Text
+msgid  "My Archive"
+msgstr "Mon archive"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +122.String.Text
+msgid  "Introduction "
+msgstr "Introduction "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +123.String.Text
+msgid  "Documents "
+msgstr "Documents "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +124.String.Text
+msgid  "Main layout"
+msgstr "Mise en page principale"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +125.String.Text
+msgid  "Layout details"
+msgstr "Détails de la mise en page"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +126.String.Text
+msgid  "Style"
+msgstr "Style"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +127.String.Text
+msgid  "Web site information"
+msgstr "Information concernant le site Web"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +128.String.Text
+msgid  "Preview"
+msgstr "Aperçu"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr "Les paramètres sélectionnés vont être supprimés.\n\nVoulez-vous vraiment supprimer ces paramètres ? "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
+msgid  "%NUMBER pages"
+msgstr "%NUMBER pages"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +132.String.Text
+msgid  "%NUMBER slides"
+msgstr "%NUMBER diapos"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +133.String.Text
+msgid  "Created: %DATE"
+msgstr "Créé le : %DATE"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +134.String.Text
+msgid  "Last modified: %DATE"
+msgstr "Modifié le : %DATE"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +135.String.Text
+msgid  "Web Wizard Settings"
+msgstr "Paramètres de l'assistant Web"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +136.String.Text
+msgid  "Background image:"
+msgstr "Image d'arrière-plan :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +137.String.Text
+msgid  "Icon set:"
+msgstr "Jeu d'icônes :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +138.String.Text
+msgid  "The icon set is used for presentations in HTML format."
+msgstr "Le jeu d'icônes est utilisé pour les présentations au format HTML."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +139.String.Text
+msgid  "HTML Metadata"
+msgstr "Métadonnées HTML"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +140.String.Text
+msgid  "Choose..."
+msgstr "Choisir..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +141.String.Text
+msgid  "Choose..."
+msgstr "Choisir..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +142.String.Text
+msgid  "<default>"
+msgstr "<par défaut>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +143.String.Text
+msgid  "Publishing via FTP Proxy is not supported."
+msgstr "La publication par proxy FTP n'est pas prise en charge."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +144.String.Text
+msgid  "<no background image>"
+msgstr "<pas d'image d'arrière-plan>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +145.String.Text
+msgid  "<no icon set>"
+msgstr "<pas de jeu d'icônes>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +146.String.Text
+msgid  "The FTP directory '%FILENAME' could not be created."
+msgstr "Impossible de créer le répertoire FTP '%FILENAME'."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr "Le répertoire FTP '%FILENAME' n'existe pas. \nVoulez-vous le créer maintenant ?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
+msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr "Impossible de créer le fichier ZIP '%FILENAME' : un répertoire du même nom existe déjà."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr "Impossible de créer le répertoire local '%FILENAME'. \nVérifiez vos droits d'accès en écriture."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr "Le répertoire local '%FILENAME' n'existe pas. \nVoulez-vous le créer maintenant ?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
+msgid  "Size: %NUMBERKB"
+msgstr "Taille : %NUMBERKB"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +152.String.Text
+msgid  "File not found. Would you like to specify a new file location?"
+msgstr "Fichier introuvable. Voulez-vous choisir un autre emplacement de fichier ?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +0.String.Text
+msgid  "FTP Connection"
+msgstr "Connexion FTP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +1.String.Text
+msgid  "~User name:"
+msgstr "~Nom d'utilisateur :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +2.String.Text
+msgid  "~Password:"
+msgstr "~Mot de passe :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +3.String.Text
+msgid  "Connect"
+msgstr "Connecter"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +4.String.Text
+msgid  "1. Enter FTP connection information."
+msgstr "1. Saisissez les informations concernant la connexion FTP."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +5.String.Text
+msgid  "~Server name or IP address:"
+msgstr "~Nom du serveur ou adresse IP :"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +6.String.Text
+msgid  "2. Connect to the server."
+msgstr "2. Connectez-vous au serveur."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +7.String.Text
+msgid  "3. ~Choose a remote directory (optional)."
+msgstr "3. ~Choisissez un répertoire distant (facultatif)."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +8.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +9.String.Text
+msgid  "Connection status is unknown"
+msgstr "État de connexion inconnu"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +10.String.Text
+msgid  "Connection was established successfully"
+msgstr "Connexion établie"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +11.String.Text
+msgid  "Username or password is wrong"
+msgstr "Nom d'utilisateur ou mot de passe incorrect"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +12.String.Text
+msgid  "Could not resolve server name"
+msgstr "Impossible de résoudre le nom du serveur"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +13.String.Text
+msgid  "You do not have sufficient user rights"
+msgstr "Vous n'avez pas les droits d'accès requis"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +14.String.Text
+msgid  "Cannot connect to server"
+msgstr "Impossible de se connecter au serveur"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +15.String.Text
+msgid  "Unexpected error"
+msgstr "Erreur imprévue"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +16.String.Text
+msgid  "FTP publishing directory"
+msgstr "Répertoire de publication FTP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +17.String.Text
+msgid  "This is not an FTP folder"
+msgstr "Il ne s'agit pas d'un dossier FTP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +18.String.Text
+msgid  "Connecting..."
+msgstr "Connexion..."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +1.String.Text
+msgid  "Agenda Wizard"
+msgstr "Assistant Agenda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +2.String.Text
+msgid  "Make ~manual changes to this agenda template"
+msgstr "Modifier ~manuellement ce modèle d'agenda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +3.String.Text
+msgid  "Template name:"
+msgstr "Nom du modèle :"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 4.String.Text
+msgid  "Location and file name:"
+msgstr "Chemin et nom du fichier :"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +5.String.Text
+msgid  "What do you want to do next?"
+msgstr "Que voulez-vous faire ensuite ?"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +6.String.Text
+msgid  "Please choose the page design for the agenda"
+msgstr "Choisissez le modèle de page de votre agenda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
+msgid  "Please select the headings you wish to include in your agenda template"
+msgstr "Sélectionnez les en-têtes à inclure dans votre modèle d'agenda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
+msgid  "Please enter general information for the event"
+msgstr "Saisissez des informations générales concernant l'événement"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +9.String.Text
+msgid  "Please specify items for the agenda"
+msgstr "Spécifiez les points de l'ordre du jour"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +10.String.Text
+msgid  "Please select the names you wish to include in your agenda template"
+msgstr "Sélectionnez les noms à inclure dans votre modèle d'agenda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +11.String.Text
+msgid  "Choose a name and save the template"
+msgstr "Sélectionnez un nom et enregistrez le modèle"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +12.String.Text
+msgid  "Include form for recording minutes"
+msgstr "Inclure le formulaire de compte rendu"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
+msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr "L'assistant vous aide tout au long du processus de création d'un modèle d'agenda. Ce modèle peut servir à la création d'un agenda à tout moment."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
+msgid  "Time:"
+msgstr "Heure :"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +15.String.Text
+msgid  "Name:"
+msgstr "Nom :"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 16.String.Text
+msgid  "Location:"
+msgstr "Emplacement :"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
+msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr "Les substituants seront utilisés dans les champs vides. Vous pourrez remplacer ces substituants par du texte ultérieurement."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +19.String.Text
+msgid  "Create an ~agenda from this template"
+msgstr "Créer un ~agenda à partir de ce modèle"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
+msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Pour créer un autre agenda à partir du modèle, sélectionnez le modèle enregistré et double-cliquez dessus."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
+msgid  "Agenda item"
+msgstr "Point de l'ordre du jour"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +22.String.Text
+msgid  "Responsible"
+msgstr "Responsable"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +23.String.Text
+msgid  "Duration"
+msgstr "Durée"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +24.String.Text
+msgid  "Meeting called by"
+msgstr "Réunion convoquée par"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
+msgid  "Chairperson"
+msgstr "Président"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
+msgid  "Minute keeper"
+msgstr "Rédacteur"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
+msgid  "Moderator"
+msgstr "Modérateur"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +28.String.Text
+msgid  "Attendees"
+msgstr "Participants"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
+msgid  "Observers"
+msgstr "Observateurs"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
+msgid  "Facility personnel"
+msgstr "Personnel des installations"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
+msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr "Le modèle d'agenda ajoute des substituants aux noms des personnes sélectionnées. Lors de la création d'un agenda à partir d'un modèle, vous pouvez remplacer ces substituants par les noms correspondants."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
+msgid  "Type of meeting"
+msgstr "Type de réunion"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +33.String.Text
+msgid  "Please read"
+msgstr "Lire"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +34.String.Text
+msgid  "Please bring"
+msgstr "Apporter"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +35.String.Text
+msgid  "Notes"
+msgstr "Notes"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
+msgid  "The agenda template will include placeholders for the selected items."
+msgstr "Le modèle d'agenda ajoute des substituants aux éléments sélectionnés."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
+msgid  "Date:"
+msgstr "Date :"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
+msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr "Cet assistant génère un modèle d'agenda permettant de créer plusieurs agendas ayant une mise en page et des paramètres identiques."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
+msgid  "Page design:"
+msgstr "Modèle de page :"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +41.String.Text
+msgid  "myAgendaTemplate.stw"
+msgstr "MonModèleAgenda.stw"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +42.String.Text
+msgid  "My Agenda Template"
+msgstr "Mon modèle d'agenda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +43.String.Text
+msgid  "An unexpected error occurred while saving the agenda template."
+msgstr "Une erreur inattendue s'est produite lors de l'enregistrement du modèle d'agenda."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +44.String.Text
+msgid  "Name"
+msgstr "Nom"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +45.String.Text
+msgid  "Date"
+msgstr "Date"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +46.String.Text
+msgid  "Time"
+msgstr "Heure"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 47.String.Text
+msgid  "Location"
+msgstr "Emplacement"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +48.String.Text
+msgid  "Click to replace this text"
+msgstr "Cliquez ici pour remplacer ce texte"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +50.String.Text
+msgid  "Page design"
+msgstr "Modèle de page"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +51.String.Text
+msgid  "General information"
+msgstr "Informations générales"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +52.String.Text
+msgid  "Headings to include"
+msgstr "En-têtes à inclure"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +53.String.Text
+msgid  "Names"
+msgstr "Noms"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +54.String.Text
+msgid  "Agenda items"
+msgstr "Points de l'ordre du jour"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +55.String.Text
+msgid  "Name and location"
+msgstr "Nom et emplacement"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +56.String.Text
+msgid  "An unexpected error occurred while opening the agenda template."
+msgstr "Une erreur inattendue s'est produite lors de l'ouverture du modèle d'agenda."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +57.String.Text
+msgid  "Type of meeting"
+msgstr "Type de réunion"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +58.String.Text
+msgid  "Please bring"
+msgstr "Apporter"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +59.String.Text
+msgid  "Please read"
+msgstr "Lire"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +60.String.Text
+msgid  "Notes"
+msgstr "Notes"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +61.String.Text
+msgid  "Meeting called by"
+msgstr "Réunion convoquée par"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +62.String.Text
+msgid  "Chairperson"
+msgstr "Président"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +63.String.Text
+msgid  "Attendees"
+msgstr "Participants"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +64.String.Text
+msgid  "Minute keeper"
+msgstr "Rédacteur"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +65.String.Text
+msgid  "Moderator"
+msgstr "Modérateur"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +66.String.Text
+msgid  "Observers"
+msgstr "Observateurs"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +67.String.Text
+msgid  "Facility personnel"
+msgstr "Personnel des installations"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +68.String.Text
+msgid  "Insert"
+msgstr "Insérer"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +69.String.Text
+msgid  "Remove"
+msgstr "Supprimer"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +70.String.Text
+msgid  "Move up"
+msgstr "Vers le haut"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +71.String.Text
+msgid  "Move down"
+msgstr "Vers le bas"
+
+#: source/importwizard/importwi.src#sHelpButton.String.Text
+msgid  "~Help"
+msgstr "~Aide"
+
+#: source/importwizard/importwi.src#sCancelButton.String.Text
+msgid  "~Cancel"
+msgstr "~Annuler"
+
+#: source/importwizard/importwi.src#sBackButton.String.Text
+msgid  "<< ~Back"
+msgstr "<< ~Précédent"
+
+#: source/importwizard/importwi.src#sNextButton.String.Text
+msgid  "Ne~xt >>"
+msgstr "~Suivant >>"
+
+#: source/importwizard/importwi.src#sBeginButton.String.Text
+msgid  "~Convert"
+msgstr "~Convertir"
+
+#: source/importwizard/importwi.src#sCloseButton.String.Text
+msgid  "~Close"
+msgstr "~Fermer"
+
+#: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr "Cet assistant convertit les documents %PRODUCTNAME et Microsoft Office au nouveau format OpenDocument."
+
+#: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr "Notez que la conversion des documents Microsoft entraîne la perte de fonctionnalité des macros VBA attachées."
+
+#: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+msgid  "Select the document type for conversion:"
+msgstr "Sélectionnez les types de documents à convertir :"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+msgid  "Word templates"
+msgstr "Modèles Word"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+msgid  "Excel templates"
+msgstr "Modèles Excel"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+msgid  "PowerPoint templates"
+msgstr "Modèles PowerPoint"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+msgid  "Word documents"
+msgstr "Documents Word"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+msgid  "Excel documents"
+msgstr "Documents Excel"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+msgid  "PowerPoint documents"
+msgstr "Documents PowerPoint"
+
+#: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+msgid  "Including subdirectories"
+msgstr "Sous-répertoires compris"
+
+#: source/importwizard/importwi.src#sMSContainerName.String.Text
+msgid  "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: source/importwizard/importwi.src#sSummaryHeader.String.Text
+msgid  "Summary:"
+msgstr "Récapitulatif :"
+
+#: source/importwizard/importwi.src#sTextImportLabel.String.Text
+msgid  "Import from:"
+msgstr "Import depuis :"
+
+#: source/importwizard/importwi.src#sTextExportLabel.String.Text
+msgid  "Save to:"
+msgstr "Enregistrer dans :"
+
+#: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+msgid  "Imported_Templates"
+msgstr "Modèles_importés"
+
+#: source/importwizard/importwi.src#sProgressDesc1.String.Text
+msgid  "Progress: "
+msgstr "Progression : "
+
+#: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+msgid  "Document"
+msgstr " Document"
+
+#: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+msgid  "Documents"
+msgstr "Documents"
+
+#: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+msgid  "Templates"
+msgstr "Modèles"
+
+#: source/importwizard/importwi.src#sNoDirCreation.String.Text
+msgid  "The '%1' directory cannot be created: "
+msgstr "Impossible de créer le répertoire '%1' : "
+
+#: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+msgid  "The '%1' directory does not exist."
+msgstr "Le répertoire '%1' n'existe pas."
+
+#: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+msgid  "Do you want to create it now?"
+msgstr "Doit-il être créé ?"
+
+#: source/importwizard/importwi.src#sFileExists.String.Text
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Le fichier '<1>' existe déjà.<CR>Voulez-vous le remplacer ?"
+
+#: source/importwizard/importwi.src#sMorePathsError3.String.Text
+msgid  "Directories do not exist"
+msgstr "Répertoires inexistants"
+
+#: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+msgid  "Do you want to overwrite documents without being asked?"
+msgstr "Écraser les documents sans demande de confirmation ?"
+
+#: source/importwizard/importwi.src#sreeditMacro.String.Text
+msgid  "Document macro has to be revised."
+msgstr "Révision de la macro de document requise."
+
+#: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+msgid  "Document '<1>' could not be saved."
+msgstr "Impossible d'enregistrer le document '<1>'."
+
+#: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+msgid  "Document '<1>' could not be opened."
+msgstr "Impossible d'ouvrir le document '<1>'."
+
+#: source/importwizard/importwi.src#sConvertError1.String.Text
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Êtes-vous sûr de vouloir interrompre la conversion en cours ?"
+
+#: source/importwizard/importwi.src#sConvertError2.String.Text
+msgid  "Cancel Wizard"
+msgstr "Annuler l'assistant"
+
+#: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+msgid  "An unexpected error has occurred in the wizard."
+msgstr "Une erreur inattendue s'est produite dans l'assistant."
+
+#: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+msgid  "Error"
+msgstr "Erreur"
+
+#: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+msgid  "Select a directory"
+msgstr "Sélectionnez un répertoire"
+
+#: source/importwizard/importwi.src#sDialogTitle.String.Text
+msgid  "Document Converter"
+msgstr "Convertisseur de documents"
+
+#: source/importwizard/importwi.src#sProgressPage1.String.Text
+msgid  "Progress"
+msgstr "Progression"
+
+#: source/importwizard/importwi.src#sProgressPage2.String.Text
+msgid  "Retrieving the relevant documents:"
+msgstr "Récupération des documents importants :"
+
+#: source/importwizard/importwi.src#sProgressPage3.String.Text
+msgid  "Converting the documents"
+msgstr "Conversion des documents"
+
+#: source/importwizard/importwi.src#sProgressFound.String.Text
+msgid  "Found:"
+msgstr "Détecté(s) :"
+
+#: source/importwizard/importwi.src#sProgressPage5.String.Text
+msgid  "%1 found"
+msgstr "%1 détecté(s)"
+
+#: source/importwizard/importwi.src#sReady.String.Text
+msgid  "Finished"
+msgstr "Terminer"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+msgid  "Text templates"
+msgstr "Modèles de texte"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+msgid  "Spreadsheet templates"
+msgstr "Modèles de classeur"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+msgid  "Drawing/presentation templates"
+msgstr "Modèles de dessin / présentation"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+msgid  "Master documents"
+msgstr "Documents maîtres"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+msgid  "Text documents"
+msgstr "Documents texte"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+msgid  "Spreadsheets"
+msgstr "Classeurs"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+msgid  "Drawing/presentation documents"
+msgstr "Dessins / présentations"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+msgid  "Master documents/formulas"
+msgstr "Documents maîtres / formules"
+
+#: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+msgid  "Master documents"
+msgstr "Documents maîtres"
+
+#: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+msgid  "Formulas"
+msgstr "Formules"
+
+#: source/importwizard/importwi.src#sSourceDocuments.String.Text
+msgid  "Source documents"
+msgstr "Documents source"
+
+#: source/importwizard/importwi.src#sTargetDocuments.String.Text
+msgid  "Target documents"
+msgstr "Documents cible"
+
+#: source/importwizard/importwi.src#sCreateLogfile.String.Text
+msgid  "Create log file"
+msgstr "Créer un fichier journal"
+
+#: source/importwizard/importwi.src#sLogfileSummary.String.Text
+msgid  "<COUNT> documents converted"
+msgstr "<COUNT> Documents convertis"
+
+#: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+msgid  "A log file will be created in your work directory"
+msgstr "Un fichier journal va être créé dans votre dossier de travail"
+
+#: source/importwizard/importwi.src#sshowLogfile.String.Text
+msgid  "Show log file"
+msgstr "Afficher le journal"
+
+#: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+msgid  "All subdirectories will be taken into account"
+msgstr "Tous les sous-répertoires seront pris en compte"
+
+#: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+msgid  "These will be exported to the following directory:"
+msgstr "Ils seront exportés vers le répertoire suivant :"
+
+#: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr "Les documents texte %PRODUCTNAME contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr "Les classeurs %PRODUCTNAME contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr "Les dessins et présentations %PRODUCTNAME contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr "Les formules %PRODUCTNAME contenues dans le répertoire suivant vont être importées :"
+
+#: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr "Les modèles de texte %PRODUCTNAME contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr "Les modèles de classeur %PRODUCTNAME contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr "Les modèles de dessin et de présentation %PRODUCTNAME contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr "Les documents maîtres %PRODUCTNAME contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+msgid  "All Word documents contained in the following directory will be imported:"
+msgstr "Les documents Word contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+msgid  "All Excel documents contained in the following directory will be imported:"
+msgstr "Les documents Excel contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgstr "Les documents PowerPoint contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+msgid  "All Word templates contained in the following directory will be imported:"
+msgstr "Les modèles Word contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+msgid  "All Excel templates contained in the following directory will be imported:"
+msgstr "Les modèles Excel contenus dans le répertoire suivant vont être importés :"
+
+#: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgstr "Les modèles PowerPoint contenus dans le répertoire suivant vont être importés :"
+
+#: source/schedule/schedule.src#dlgCalTitle.String.Text
+msgid  "%PRODUCTNAME Calendar"
+msgstr "Calendrier %PRODUCTNAME"
+
+#: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+msgid  "Back"
+msgstr "Précédent"
+
+#: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+msgid  "Personal Data"
+msgstr "Mes données"
+
+#: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+msgid  "Add Holidays to Calendar"
+msgstr "Calcul des jours fériés"
+
+#: source/schedule/schedule.src#dlgOK.String.Text
+msgid  "Create"
+msgstr "Créer"
+
+#: source/schedule/schedule.src#dlgCancel.String.Text
+msgid  "Cancel"
+msgstr "Annuler"
+
+#: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+msgid  "Calendar"
+msgstr "Calendrier"
+
+#: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+msgid  "~Year Overview"
+msgstr "~Année"
+
+#: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+msgid  "~Month"
+msgstr "~Mois"
+
+#: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+msgid  "Add holidays for"
+msgstr "Calcul des jours fériés pour"
+
+#: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+msgid  "USA"
+msgstr "la France"
+
+#: source/schedule/schedule.src#dlgTime.String.Text
+msgid  "Time Frame"
+msgstr "Période"
+
+#: source/schedule/schedule.src#dlgYear.String.Text
+msgid  "Year"
+msgstr "Année"
+
+#: source/schedule/schedule.src#dlgCalMonth.String.Text
+msgid  "Month"
+msgstr "Mois"
+
+#: source/schedule/schedule.src#dlgCalOwnData.String.Text
+msgid  "Personal Data"
+msgstr "Mes données"
+
+#: source/schedule/schedule.src#dlgCalInsert.String.Text
+msgid  "~Insert"
+msgstr "~Insérer"
+
+#: source/schedule/schedule.src#dlgCalDelete.String.Text
+msgid  "~Delete"
+msgstr "~Supprimer"
+
+#: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+msgid  "New Event"
+msgstr "Nouvel événement"
+
+#: source/schedule/schedule.src#dlgCalEvent.String.Text
+msgid  "Event"
+msgstr "Événement"
+
+#: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+msgid  "One-Time"
+msgstr "Unique"
+
+#: source/schedule/schedule.src#dlgCalEventDay.String.Text
+msgid  "Day"
+msgstr "Jour"
+
+#: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+msgid  "Month"
+msgstr "Mois"
+
+#: source/schedule/schedule.src#dlgCalEventYear.String.Text
+msgid  "Year"
+msgstr "Année"
+
+#: source/schedule/schedule.src#dlgBitmapFile.String.Text
+msgid  "usa.bmp"
+msgstr "france.bmp"
+
+#: source/schedule/schedule.src#dlgState.String.Text
+msgid  "Public holidays"
+msgstr "Jours fériés généraux"
+
+#: source/schedule/schedule.src#dlgMonth.String.Text
+msgid  "January"
+msgstr "Janvier"
+
+#: source/schedule/schedule.src#dlgMonth+1.String.Text
+msgid  "February"
+msgstr "Février"
+
+#: source/schedule/schedule.src#dlgMonth+2.String.Text
+msgid  "March"
+msgstr "Mars"
+
+#: source/schedule/schedule.src#dlgMonth+3.String.Text
+msgid  "April"
+msgstr "Avril"
+
+#: source/schedule/schedule.src#dlgMonth+4.String.Text
+msgid  "May"
+msgstr "Mai"
+
+#: source/schedule/schedule.src#dlgMonth+5.String.Text
+msgid  "June"
+msgstr "Juin"
+
+#: source/schedule/schedule.src#dlgMonth+6.String.Text
+msgid  "July"
+msgstr "Juillet"
+
+#: source/schedule/schedule.src#dlgMonth+7.String.Text
+msgid  "August"
+msgstr "Août"
+
+#: source/schedule/schedule.src#dlgMonth+8.String.Text
+msgid  "September"
+msgstr "Septembre"
+
+#: source/schedule/schedule.src#dlgMonth+9.String.Text
+msgid  "October"
+msgstr "Octobre"
+
+#: source/schedule/schedule.src#dlgMonth+10.String.Text
+msgid  "November"
+msgstr "Novembre"
+
+#: source/schedule/schedule.src#dlgMonth+11.String.Text
+msgid  "December"
+msgstr "Décembre"
+
+#: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+msgid  "Yearly / Monthly Calendar"
+msgstr "Calendrier annuel/mensuel"
+
+#: source/schedule/schedule.src#msgCalError.String.Text
+msgid  "An error occurred while creating the calendar."
+msgstr "Erreur lors de la création du calendrier."
+
+#: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+msgid  "Delete event entries"
+msgstr "Supprimer les événements"
+
+#: source/schedule/schedule.src#msgCalRemove.String.Text
+msgid  "Delete the selected entries?"
+msgstr "Supprimer les entrées sélectionnées ?"
+
+#: source/schedule/schedule.src#stlWorkday.String.Text
+msgid  "Workweek"
+msgstr "Semaine ouvrée"
+
+#: source/schedule/schedule.src#stlWeekend.String.Text
+msgid  "Weekend"
+msgstr "Week-end"
+
+#: source/schedule/schedule.src#nameCalYear.String.Text
+msgid  "Calendar"
+msgstr "Calendrier"
+
+#: source/schedule/schedule.src#nameCalMonth.String.Text
+msgid  "Month"
+msgstr "Mois"
+
+#: source/schedule/schedule.src#sProgress.String.Text
+msgid  "Progress:"
+msgstr "Progression :"
+
+#: source/template/template.src#SAMPLES.String.Text
+msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr "Afin de pouvoir profiter de l'entière fonctionnalité de cet exemple, il vous faut créer un nouveau document basé sur ce modèle."
+
+#: source/template/template.src#SAMPLES + 1.String.Text
+msgid  "Remarks"
+msgstr "Remarque"
+
+#: source/template/template.src#STYLES.String.Text
+msgid  "Theme Selection"
+msgstr "Sélection de thème"
+
+#: source/template/template.src#STYLES + 1.String.Text
+msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr "Une erreur est survenue lors de l'enregistrement du document actif dans le presse-papiers ! Impossible d'annuler l'action suivante."
+
+#: source/template/template.src#STYLES + 2.String.Text
+msgid  "~Cancel"
+msgstr "~Annuler"
+
+#: source/template/template.src#STYLES + 3.String.Text
+msgid  "~OK"
+msgstr "~OK"
+
+#: source/template/template.src#AgendaDlgName.String.Text
+msgid  "Minutes Template"
+msgstr "Modèle de compte rendu"
+
+#: source/template/template.src#AgendaDlgNoCancel.String.Text
+msgid  "An option must be confirmed."
+msgstr "Confirmation d'une option requise."
+
+#: source/template/template.src#AgendaDlgFrame.String.Text
+msgid  "Minutes Type"
+msgstr "Type de compte rendu"
+
+#: source/template/template.src#AgendaDlgButton1.String.Text
+msgid  "Results Minutes"
+msgstr "Compte rendu des résultats"
+
+#: source/template/template.src#AgendaDlgButton2.String.Text
+msgid  "Evaluation Minutes"
+msgstr "Procès verbal"
+
+#: source/template/template.src#CorrespondenceNoTextmark.String.Text
+msgid  "The bookmark 'Recipient' is missing."
+msgstr "Le repère de texte 'Recipient' n'existe pas."
+
+#: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+msgid  "Form letter fields can not be included."
+msgstr "Impossible d'insérer des champs de lettre pour publipostage."
+
+#: source/template/template.src#CorrespondenceMsgError.String.Text
+msgid  "An error has occurred."
+msgstr "Une erreur s'est produite."
+
+#: source/template/template.src#CorrespondenceDialog.String.Text
+msgid  "Addressee"
+msgstr "Destinataire"
+
+#: source/template/template.src#CorrespondenceDialog+1.String.Text
+msgid  "One recipient"
+msgstr "Un destinataire"
+
+#: source/template/template.src#CorrespondenceDialog+2.String.Text
+msgid  "Several recipients (address database)"
+msgstr "Plusieurs destinataires (BD d'adresses)"
+
+#: source/template/template.src#CorrespondenceDialog+3.String.Text
+msgid  "Use of This Template"
+msgstr "Utilisation du modèle"
+
+#: source/template/template.src#CorrespondenceFields.String.Text
+msgid  "Click placeholder and overwrite"
+msgstr "Clic sur le substituant pour remplacement"
+
+#: source/template/template.src#CorrespondenceFields+1.String.Text
+msgid  "Company"
+msgstr "Société"
+
+#: source/template/template.src#CorrespondenceFields+2.String.Text
+msgid  "Department"
+msgstr "Service"
+
+#: source/template/template.src#CorrespondenceFields+3.String.Text
+msgid  "First Name"
+msgstr "Prénom"
+
+#: source/template/template.src#CorrespondenceFields+4.String.Text
+msgid  "Last Name"
+msgstr "Nom"
+
+#: source/template/template.src#CorrespondenceFields+5.String.Text
+msgid  "Street"
+msgstr "Rue"
+
+#: source/template/template.src#CorrespondenceFields+6.String.Text
+msgid  "Country"
+msgstr "Pays"
+
+#: source/template/template.src#CorrespondenceFields+7.String.Text
+msgid  "ZIP/Postal Code"
+msgstr "Code Postal"
+
+#: source/template/template.src#CorrespondenceFields+8.String.Text
+msgid  "City"
+msgstr "Ville"
+
+#: source/template/template.src#CorrespondenceFields+9.String.Text
+msgid  "Title"
+msgstr "Titre"
+
+#: source/template/template.src#CorrespondenceFields+10.String.Text
+msgid  "Position"
+msgstr "Fonction"
+
+#: source/template/template.src#CorrespondenceFields+11.String.Text
+msgid  "Form of Address"
+msgstr "Appellation"
+
+#: source/template/template.src#CorrespondenceFields+12.String.Text
+msgid  "Initials"
+msgstr "Initiales"
+
+#: source/template/template.src#CorrespondenceFields+13.String.Text
+msgid  "Salutation"
+msgstr "Formule d'ouverture"
+
+#: source/template/template.src#CorrespondenceFields+14.String.Text
+msgid  "Home Phone"
+msgstr "Tél. domicile"
+
+#: source/template/template.src#CorrespondenceFields+15.String.Text
+msgid  "Work Phone"
+msgstr "Tél. bureau 2"
+
+#: source/template/template.src#CorrespondenceFields+16.String.Text
+msgid  "Fax"
+msgstr "Fax"
+
+#: source/template/template.src#CorrespondenceFields+17.String.Text
+msgid  "E-Mail"
+msgstr "E-mail"
+
+#: source/template/template.src#CorrespondenceFields+18.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/template/template.src#CorrespondenceFields+19.String.Text
+msgid  "Notes"
+msgstr "Notes"
+
+#: source/template/template.src#CorrespondenceFields+20.String.Text
+msgid  "Alt. Field 1"
+msgstr "Champ facultatif 1"
+
+#: source/template/template.src#CorrespondenceFields+21.String.Text
+msgid  "Alt. Field 2"
+msgstr "Champ facultatif 2"
+
+#: source/template/template.src#CorrespondenceFields+22.String.Text
+msgid  "Alt. Field 3"
+msgstr "Champ facultatif 3"
+
+#: source/template/template.src#CorrespondenceFields+23.String.Text
+msgid  "Alt. Field 4"
+msgstr "Champ facultatif 4"
+
+#: source/template/template.src#CorrespondenceFields+24.String.Text
+msgid  "ID"
+msgstr "ID"
+
+#: source/template/template.src#CorrespondenceFields+25.String.Text
+msgid  "State"
+msgstr "État"
+
+#: source/template/template.src#CorrespondenceFields+26.String.Text
+msgid  "Office Phone"
+msgstr "Tél. bureau 2"
+
+#: source/template/template.src#CorrespondenceFields+27.String.Text
+msgid  "Pager"
+msgstr "Pager"
+
+#: source/template/template.src#CorrespondenceFields+28.String.Text
+msgid  "Mobile Phone"
+msgstr "Tél. portable"
+
+#: source/template/template.src#CorrespondenceFields+29.String.Text
+msgid  "Other Phone"
+msgstr "Tél. autre"
+
+#: source/template/template.src#CorrespondenceFields+30.String.Text
+msgid  "Calendar URL"
+msgstr "URL du calendrier"
+
+#: source/template/template.src#CorrespondenceFields+31.String.Text
+msgid  "Invite"
+msgstr "Invitation"
+
+#: source/template/template.src#TextField.String.Text
+msgid  "User data field is not defined!"
+msgstr "Ce champ de données d'identité n'est pas défini !"
+
+#: source/template/template.src#Newsletter.String.Text
+msgid  "General layout"
+msgstr "Mise en page universelle"
+
+#: source/template/template.src#Newsletter + 1.String.Text
+msgid  "Default layout"
+msgstr "Mide en page standard"
+
+#: source/template/template.src#Newsletter + 2.String.Text
+msgid  "Commemorative publication layout"
+msgstr "Mise en page Fête"
+
+#: source/template/template.src#Newsletter + 3.String.Text
+msgid  "Brochure layout"
+msgstr "Mise en page Prospectus"
+
+#: source/template/template.src#Newsletter + 10.String.Text
+msgid  "Format"
+msgstr "Format"
+
+#: source/template/template.src#Newsletter + 11.String.Text
+msgid  "Single-sided"
+msgstr "Une page"
+
+#: source/template/template.src#Newsletter + 12.String.Text
+msgid  "Double-sided"
+msgstr "Pages vis-à-vis"

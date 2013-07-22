@@ -1,0 +1,3616 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.String.Text
+msgid  "Tried to open the table $name$."
+msgstr "$name$ テーブルを開こうとしました。"
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_INVALID.String.Text
+msgid  "No connection could be established."
+msgstr "接続できませんでした。"
+
+#: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
+msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
+msgstr "テーブル $name$ はすでにあります。フィルタされているため、表示されません。"
+
+#: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
+msgid  "You have no write access to the configuration data the object is based on."
+msgstr "オブジェクトの設定データへの書き込み権はありません。"
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
+msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgstr "外部データソースへ接続できませんでした。不明なエラーが発生しました。ドライバにトラブルがある可能性があります。"
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
+msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgstr "外部データソースへ接続できませんでした。指定した URL アドレスの SDBC ドライバは見つかりませんでした。"
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
+msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgstr "外部データソースへ接続できませんでした。SDBC ドライバのマネージャーは読み込みできませんでした。"
+
+#: source/core/resource/strings.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "フォーム"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "レポート"
+
+#: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
+msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
+msgstr "データソースは保存されませんでした。XStorable インタフェースを使用してデータソースを保存してください。"
+
+#: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr "指定されたコマンドは SELECT ステートメントではありません。\n クエリーのみが使用できます。"
+
+#: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
+msgid  "No values were modified."
+msgstr "変更された値はありませんでした。"
+
+#: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
+msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgstr "値を挿入できませんでした。XRowUpdate インタフェースは ResultSet ではサポートされていません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
+msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgstr "値を挿入できませんでした。XResultSetUpdate インタフェースは ResultSet ではサポートされていません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
+msgid  "Values could not be modified, due to a missing condition statement."
+msgstr "条件ステートメントが見つからないため、値を変更できませんでした。"
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_ADD.String.Text
+msgid  "The adding of columns is not supported."
+msgstr "列の追加はサポートされていません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_DROP.String.Text
+msgid  "The dropping of columns is not supported."
+msgstr "列のドロップはサポートされていません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.String.Text
+msgid  "The WHERE condition could not be created for the primary key."
+msgstr "プライマリキーに対して WHERE 条件を作成できませんでした。"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.String.Text
+msgid  "The column does not support the property '%value'."
+msgstr "属性 '%value' をサポートしない列です。"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.String.Text
+msgid  "The column is not searchable!"
+msgstr "列を検索できません。"
+
+#: source/core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.String.Text
+msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "列の値の種類が Sequence<sal_Int8> ではありません。"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.String.Text
+msgid  "The column is not valid."
+msgstr "列は有効ではありません。"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.String.Text
+msgid  "The column '%name' must be visible as a column."
+msgstr "列 '%name' は列として表示する必要があります。"
+
+#: source/core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.String.Text
+msgid  "The interface XQueriesSupplier is not available."
+msgstr "インタフェース XQueriesSupplier は利用できません。"
+
+#: source/core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.String.Text
+msgid  "The driver does not support this function."
+msgstr "ドライバはこの機能をサポートしていません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_ABS_ZERO.String.Text
+msgid  "An 'absolute(0)' call is not allowed."
+msgstr "'absolute(0)' 呼び出しは使用できません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_RELATIVE.String.Text
+msgid  "Relative positioning is not allowed in this state."
+msgstr "この状態では相対位置は使用できません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
+msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgstr "ResultSet が最後の行のあとにある場合、行は更新できません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
+msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgstr "先に ResultSet が挿入行に移動されていない場合、新しい行は挿入できません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
+msgid  "A row cannot be modified in this state"
+msgstr "この状態では行は変更できません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETEROW.String.Text
+msgid  "A row cannot be deleted in this state."
+msgstr "この状態では行は削除できません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_TABLE_RENAME.String.Text
+msgid  "The driver does not support table renaming."
+msgstr "ドライバはテーブルの名前の変更をサポートしていません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.String.Text
+msgid  "The driver does not support the modification of column descriptions."
+msgstr "ドライバは列の説明の変更をサポートしていません。"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the name."
+msgstr "ドライバは、名前の変更による列の説明の変更をサポートしていません。"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the index."
+msgstr "このドライバは、インデックス変更による列の説明の変更をサポートしていません。"
+
+#: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "ファイル \"$file$\" は存在しません。"
+
+#: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
+msgid  "There exists no table named \"$table$\"."
+msgstr "「$table$」という名前の表がありません。"
+
+#: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
+msgid  "There exists no query named \"$table$\"."
+msgstr "「$table$」という名前のクエリーがありません。"
+
+#: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
+msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgstr "既存のクエリーの名前と、名前がコンフリクトするテーブルがデータベースに存在します。すべてのクエリーとテーブルをフルに使用するためには、それぞれに固有の名前を付けてください。"
+
+#: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr "このエラーの原因となった SQL コマンド: \n\n$command$"
+
+#: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The SQL command does not describe a result set."
+msgstr "SQL コマンドには結果セットが記述されていません。"
+
+#: source/core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.String.Text
+msgid  "The name must not be empty."
+msgstr "名前は空白ではいけません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.String.Text
+msgid  "The container cannot contain NULL objects."
+msgstr "コンテナには NULL オブジェクトは格納できません。"
+
+#: source/core/resource/strings.src#RID_STR_NAME_ALREADY_USED.String.Text
+msgid  "There already is an object with the given name."
+msgstr "指定された名前のオブジェクトはすでに存在しています。"
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.String.Text
+msgid  "This object cannot be part of this container."
+msgstr "このオブジェクトはこのコンテナには格納できません。"
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.String.Text
+msgid  "The object already is, with a different name, part of the container."
+msgstr "このオブジェクトは別の名前ですでにこのコンテナに格納されています。"
+
+#: source/core/resource/strings.src#RID_STR_NAME_NOT_FOUND.String.Text
+msgid  "Unable to find the document '$name$'."
+msgstr "ドキュメント '$name$' は見つかりません。"
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr "次のドキュメントが保存できませんでした:\n\n$except$:\n$message$"
+
+#: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
+msgid  "Error accessing data source '$name$':\\n$error$"
+msgstr "データソース'$name$'へのアクセスにエラー\n$error$"
+
+#: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "\"$table$\" という名前の表がありません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
+msgid  "Cannot delete the before-first or after-last row."
+msgstr "最初の行より前や最後の行より後の行は削除できません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.String.Text
+msgid  "Cannot delete the insert-row."
+msgstr "挿入行の削除はできません。"
+
+#: source/core/resource/strings.src#RID_STR_RESULT_IS_READONLY.String.Text
+msgid  "Result set is read only."
+msgstr "ResultSet が読み込み専用です。"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.String.Text
+msgid  "DELETE privilege not available."
+msgstr "DELETE 権限は利用できません。"
+
+#: source/core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.String.Text
+msgid  "Current row is already deleted."
+msgstr "現在の行は既に削除されています。"
+
+#: source/core/resource/strings.src#RID_STR_UPDATE_FAILED.String.Text
+msgid  "Current row could not be updated."
+msgstr "現在の行を更新できませんでした。"
+
+#: source/core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.String.Text
+msgid  "INSERT privilege not available."
+msgstr "INSERT 権限は利用できません。"
+
+#: source/core/resource/strings.src#RID_STR_INTERNAL_ERROR.String.Text
+msgid  "Internal error: no statement object provided by the database driver."
+msgstr "内部エラー：データベースドライバは、ステートメント・オブジェクトを出していません。"
+
+#: source/core/resource/strings.src#RID_STR_EXPRESSION1.String.Text
+msgid  "Expression1"
+msgstr "表現１"
+
+#: source/core/resource/strings.src#RID_STR_NO_SQL_COMMAND.String.Text
+msgid  "No SQL command was provided."
+msgstr "SQL コマンドが出されていません。"
+
+#: source/core/resource/strings.src#RID_STR_INVALID_INDEX.String.Text
+msgid  "Invalid column index."
+msgstr "列インデックスが無効です。"
+
+#: source/core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.String.Text
+msgid  "Invalid cursor state."
+msgstr "無効なカーソール状態"
+
+#: source/core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.String.Text
+msgid  "The cursor points to before the first or after the last row."
+msgstr "カーソールが、最初の行より前もしくは最後の行よりも後を指しています。"
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.String.Text
+msgid  "The rows before the first and after the last row don't have a bookmark."
+msgstr "最初よりも前の行と最後よりも後の行には、ブックマークがありません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.String.Text
+msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgstr "現在の行は削除されたので、ブックマークがありません。"
+
+#: source/core/resource/strings.src#RID_STR_NO_EMBEDDING.String.Text
+msgid  "Embedding of database documents is not supported."
+msgstr "データベースドキュメントの埋め込みは、サポートされていません。"
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "次のURLへの接続が必要です： \"$name$\" 。"
+
+#: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
+msgid  "The extension is not installed."
+msgstr "拡張機能がインストールされていません。"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+msgid  "Database ~name"
+msgstr "データベース名"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+msgid  "User settings"
+msgstr "ユーザー設定"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+msgid  "~Control user"
+msgstr "~Control ユーザー"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+msgid  "~Administrator"
+msgstr "アドミニストレータ(~A)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+msgid  "~Domain user"
+msgstr "ドメインユーザー(~D)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+msgid  "P~assword..."
+msgstr "パスワード(~P)..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+msgid  "~Password..."
+msgstr "パスワード(~P)..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+msgid  "Passwo~rd..."
+msgstr "パスワード(~R)..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+msgid  "~Backup file"
+msgstr "バックアップファイル(~B)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+msgid  "Database settings"
+msgstr "データベース設定"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE"
+msgstr "S~YSDEVSPACE"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "TRANSACTI~ONLOG"
+msgstr "TRANSACTI~ONLOG"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE"
+msgstr "DATAD~EVSPACE"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+msgid  "Transaction ~file (MB)"
+msgstr "トランザクションファイル(MB)(~F)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+msgid  "Data~base size (MB)"
+msgstr "データベースサイズ(MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "データバッファサイズ (M バイト)(~B)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+msgid  "Backup file information"
+msgstr "バックアップファイル情報"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+msgid  "Create New Adabas D Database"
+msgstr "Adabas D データベースの新規作成"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+msgid  "No entry could be written in the configuration file."
+msgstr "項目が設定ファイルに書き込めませんでした。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+msgid  "An error occurred as the DB files were being created."
+msgstr "データベースファイルの作成中にエラー発生。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+msgid  "An error occurred as the system tables were being created."
+msgstr "システムテーブルの作成中にエラー発生。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+msgid  "The backup file entered does not exist."
+msgstr "入力したバックアップファイルは存在しません。"
+
+#: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "絶対パスによるファイル名は、「#」文字以上にできません。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+msgid  "The administrator and the control user cannot have the same name!"
+msgstr "アドミニストレータと Control ユーザーは同じ名前を持てません。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+msgid  "No name has been entered for the $name$ file!"
+msgstr "$name$ ファイルに名前が設定されていません。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+msgid  "You have to have administrator rights to create a new database!"
+msgstr "新規データベースを作成するには、管理者権限が必要です。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+msgid  "The specified file name or directory does not exist."
+msgstr "指定したファイル名またはディレクトリは存在しません。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "新規データベースが作成できません。\nAdabas D インストールの特に変数「DBROOT」と「DBWORK」を確認してください。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "警告"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+msgid  "Creating database files."
+msgstr "データベースファイルを作成しています。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+msgid  "Creating database configuration file."
+msgstr "データベース設定ファイルを作成しています。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+msgid  "Starting database for the first time."
+msgstr "データベースを初めて起動しています。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+msgid  "The name entered already exists."
+msgstr "入力した名前はすでに存在しています。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+msgid  "No default names could be set for the database files. The total length is more than 40 characters."
+msgstr "データベースファイルのデフォルト名が設定できませんでした。長さが 40 文字以上です。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+msgid  "No default names could be set for the database files. There is no write access."
+msgstr "データベースファイルのデフォルト名が設定できませんでした。書き込み権がありません。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+msgid  "The current database need to be converted. Please insert control user  and password."
+msgstr "現在のデータベースは変換する必要があります。Control ユーザー名とパスワードを入力してください。"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgstr "パスワードにスペースは使用できません。新しいパスワードを入力してください。"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+msgid  "Database Document Macro Migration"
+msgstr "データベースドキュメントマクロ移行"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+msgid  "Prepare"
+msgstr "準備"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+msgid  "Backup Document"
+msgstr "バックアップドキュメント"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+msgid  "Migrate"
+msgstr "移行"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+msgid  "Summary"
+msgstr "摘要"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+msgid  "Welcome to the Database Macro Migration Wizard"
+msgstr "データベースマクロ移行ウィザードへようこそ"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr "このウィザードは、マクロを移行する手順を案内します。\n\nウィザードが終了すると、フォームとレポートに埋め込まれていたすべてのマクロがデータベースドキュメントに移されます。ウィザードでは、ライブラリの名前が必要に応じて変更されます。\n\nフォームとレポートがこれらのマクロへの参照を含んでいる場合、可能であれば参照が調整されます。\n\n移行の開始前に、フォーム、レポート、クエリー、およびテーブルはすべて閉じる必要があります。「次へ」をクリックして、移行を実行します。"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgstr "すべてのオブジェクトを閉じることはできませんでした。オブジェクトを手動で閉じてから、ウィザードを再起動してください。"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+msgid  "Backup your Document"
+msgstr "ドキュメントのバックアップ"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgstr "移行前の状態に戻れるように、データベースドキュメントは、選択した場所でバックアップされます。ウィザードによるすべての変更はオリジナルのドキュメントに加えられ、バックアップは変わりません。"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+msgid  "Save To:"
+msgstr "保存先:"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+msgid  "Browse ..."
+msgstr "ブラウズ..."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr "「次へ」をクリックして、ドキュメントのコピーを保存し、移行を開始します。"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+msgid  "Migration Progress"
+msgstr "移行の進捗状況"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgstr "データベースドキュメントには、現在処理中の $forms$ フォームと $reports$ レポートが含まれます。"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+msgid  "Current object:"
+msgstr "現在のドキュメント:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+msgid  "Current progress:"
+msgstr "現在の進捗状況:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+msgid  "Overall progress:"
+msgstr "全体の進捗状況:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+msgid  "document $current$ of $overall$"
+msgstr "$overall$ のドキュメント $current$"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgstr "すべてのフォームとレポートが正常に処理されました。「次へ」をクリックして、詳細な概要を表示します。"
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+msgid  "Summary"
+msgstr "摘要"
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
+msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgstr "移行に成功しました。下記はドキュメントに対して行われたアクションのログです。"
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
+msgid  "The migration was not successful. Examine the migration log below for details."
+msgstr "移行に失敗しました。詳細は、下記の移行ログを確認してください。"
+
+#: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+msgid  "Form '$name$'"
+msgstr "フォーム $name$"
+
+#: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+msgid  "Report '$name$'"
+msgstr "レポート $name$"
+
+#: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+msgid  "document $current$ of $overall$"
+msgstr "$overall$ のドキュメント $current$"
+
+#: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+msgid  "Database Document"
+msgstr "データベースドキュメント"
+
+#: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+msgid  "saved copy to $location$"
+msgstr "コピーを $location$ に保存"
+
+#: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+msgid  "migrated $type$ library '$old$' to '$new$'"
+msgstr "$type$ ライブラリ $old$ を $new$ に移行"
+
+#: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
+msgid  "$type$ library '$library$'"
+msgstr "$type$ ライブラリ '$library$'"
+
+#: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
+msgid  "migrating libraries ..."
+msgstr "ライブラリを移行しています..."
+
+#: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+msgid  "%PRODUCTNAME Basic"
+msgstr "%PRODUCTNAME Basic"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+msgid  "JavaScript"
+msgstr "JavaScript"
+
+#: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+msgid  "BeanShell"
+msgstr "BeanShell (Java)"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+msgid  "Java"
+msgstr "Java"
+
+#: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+msgid  "Python"
+msgstr "Python"
+
+#: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+msgid  "dialog"
+msgstr "ダイアログ"
+
+#: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
+msgid  "Error(s)"
+msgstr "エラー"
+
+#: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
+msgid  "Warnings"
+msgstr "警告"
+
+#: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
+msgid  "caught exception: "
+msgstr "キャッチされた例外: "
+
+#: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
+msgid  "You need to choose a backup location other than the document location itself."
+msgstr "このドキュメントがある場所以外のバックアップ場所を選ぶ必要があります。"
+
+#: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
+msgid  "Invalid number of initialization arguments. Expected 1."
+msgstr "初期化引数の数が不正です。１つでなくてはなりません。"
+
+#: source/ext/macromigration/macromigration.src#STR_NO_DATABASE.String.Text
+msgid  "No database document found in the initialization arguments."
+msgstr "初期化引数の中に、データベースドキュメントが見つかりません。"
+
+#: source/ext/macromigration/macromigration.src#STR_NOT_READONLY.String.Text
+msgid  "Not applicable to read-only documents."
+msgstr "読み込み専用ドキュメントには、適用できません。"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgstr "表とクエリーに同じ名前を付けることはできません。クエリーまたは表にまだ使用されていない名前を使用してください。"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+msgid  "Table"
+msgstr "表"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+msgid  "Query"
+msgstr "クエリー"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+msgid  "The given connection is no valid query and/or tables supplier."
+msgstr "指定した接続は、有効なクエリーまたはテーブルサプライヤではありません。"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+msgid  "The given object is no table object."
+msgstr "指定したオブジェクトは、テーブルオブジェクトではありません。"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgstr "無効な構成の種類です - com.sun.star.sdb.tools.CompositionType からの値が必要です。"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
+msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgstr "無効なコマンドの種類です - com.sun.star.sdb.CommandType からは TABLE および QUERY だけが許容されます。"
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+msgid  "Create Form in Design View..."
+msgstr "デザイン表示でフォームを作成..."
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+msgid  "Use Wizard to Create Form..."
+msgstr "ウィザードを使用してフォームを作成..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+msgid  "Use Wizard to Create Report..."
+msgstr "ウィザードを使用してレポートを作成..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+msgid  "Create Report in Design View..."
+msgstr "デザイン表示でレポートを作成..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+msgid  "Create Query in Design View..."
+msgstr "デザイン表示でクエリーを作成..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+msgid  "Create Query in SQL View..."
+msgstr "SQL 表示でクエリーを作成..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+msgid  "Use Wizard to Create Query..."
+msgstr "ウィザードを使用してクエリーを作成..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+msgid  "Create Table in Design View..."
+msgstr "デザイン表示でテーブルを作成..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+msgid  "Use Wizard to Create Table..."
+msgstr "ウィザードを使用してテーブルを作成..."
+
+#: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+msgid  "Create View..."
+msgstr "ビューを作成..."
+
+#: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+msgid  "Forms"
+msgstr "フォーム"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+msgid  "Reports"
+msgstr "レポート"
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+msgid  "Form..."
+msgstr "フォーム..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+msgid  "Report..."
+msgstr "レポート..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+msgid  "View (Simple)..."
+msgstr "ビュー (シンプル)..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+msgid  "Paste Special..."
+msgstr "形式を選択して貼り付け..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+msgid  "Delete"
+msgstr "削除"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+msgid  "Rename"
+msgstr "名前を変更"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+msgid  "Edit"
+msgstr "編集"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+msgid  "Edit in SQL View..."
+msgstr "SQL 表示で編集..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+msgid  "Open"
+msgstr "開く"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+msgid  "Create as View"
+msgstr "ビューとして作成"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Form Wizard..."
+msgstr "フォームウィザード..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+msgid  "Report..."
+msgstr "レポート..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Report Wizard..."
+msgstr "レポートウィザード..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+msgid  "Select All"
+msgstr "すべて選択"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MenuItem.Text
+msgid  "~Database"
+msgstr "データベース(~D)"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MenuItem.Text
+msgid  "Properties..."
+msgstr "プロパティー..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MenuItem.Text
+msgid  "Connection Type..."
+msgstr "接続タイプ..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MenuItem.Text
+msgid  "Advanced Settings..."
+msgstr "高度な設定..."
+
+#: source/ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.String.Text
+msgid  "Do you want to delete the data source '%1'?"
+msgstr "データソース '%1' を削除しますか。"
+
+#: source/ui/app/app.src#STR_APP_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base"
+msgstr "- %PRODUCTNAME Base:"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a report."
+msgstr "ウィザードがレポートを作成する手順を案内します。"
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
+msgid  "Create a form by specifying the record source, controls, and control properties."
+msgstr "レコードソース、コントロール、およびコントロール属性を指定することによりフォームを作成します。"
+
+#: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
+msgid  "Create a report by specifying the record source, controls, and control properties."
+msgstr "レコードソース、コントロール、およびコントロール属性を指定することによりレポートを作成します。"
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a form."
+msgstr "ウィザードがフォームを作成する手順を案内します。"
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
+msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgstr "フィルタ、入力テーブル、フィールド名、および並べ替えまたはグループ化のための属性を指定することによりクエリーを作成します。"
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
+msgid  "Create a query  entering an SQL statement directly."
+msgstr "SQL 文を直接入力してクエリーを作成します。"
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a query."
+msgstr "ウィザードがクエリーを作成する手順を案内します。"
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a table by specifying the field names and properties, as well as the data types."
+msgstr "フィールド名、属性、およびデータタイプを指定することによりテーブルを作成します。"
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
+msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgstr "ビジネス用および個人用テーブルのサンプルから選択し、それをカスタマイズしてテーブルを作成します。"
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a view by specifying the tables and field names you would like to have visible."
+msgstr "表示するテーブルとフィールド名を指定することによりビューを作成します。"
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
+msgid  "Opens the view wizard"
+msgstr "ビューウィザードを開きます。"
+
+#: source/ui/app/app.src#STR_DATABASE.String.Text
+msgid  "Database"
+msgstr "データベース"
+
+#: source/ui/app/app.src#STR_TASKS.String.Text
+msgid  "Tasks"
+msgstr "タスク"
+
+#: source/ui/app/app.src#STR_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "説明"
+
+#: source/ui/app/app.src#STR_PREVIEW.String.Text
+msgid  "Preview"
+msgstr "プレビュー"
+
+#: source/ui/app/app.src#STR_DISABLEPREVIEW.String.Text
+msgid  "Disable Preview"
+msgstr "プレビューを無効化"
+
+#: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
+msgid  "None"
+msgstr "なし"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MenuItem.Text
+msgid  "Document Information"
+msgstr "ドキュメント情報"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
+msgid  "Document"
+msgstr "ドキュメント"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "フォーム"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "レポート"
+
+#: source/ui/app/app.src#STR_FRM_LABEL.String.Text
+msgid  "F~orm name"
+msgstr "フォーム名(~O)"
+
+#: source/ui/app/app.src#STR_RPT_LABEL.String.Text
+msgid  "~Report name"
+msgstr "レポート名(~R)"
+
+#: source/ui/app/app.src#STR_FOLDER_LABEL.String.Text
+msgid  "F~older name"
+msgstr "フォルダ名(~O)"
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.String.Text
+msgid  "The document contains forms or reports with embedded macros."
+msgstr "ドキュメント内には、埋め込みマクロを含むフォームまたはレポートがあります。"
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr "マクロは、データベースドキュメントに埋め込まれているはずです。\n\n以前と同じようにドキュメントを使用できますが、マクロを移行することをお勧めします。メニュー項目「ツール」 → 「マクロの移行...」を使用すると、マクロが簡単に移行できます。\n\nこの移行が完了するまで、マクロのデータベースドキュメントへの埋め込みは実行できません。 "
+
+#: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
+msgid  "Embedded database"
+msgstr "埋め込みデータベース"
+
+#: source/ui/app/app.src#RID_STR_NO_DIFF_CAT.String.Text
+msgid  "You cannot select different categories."
+msgstr "違うカテゴリーは選択できません。"
+
+#: source/ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.String.Text
+msgid  "Unsupported object type found ($type$)."
+msgstr "サポートされていないオブジェクトのタイプが見つかりました ($type$)。"
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+msgid  "Do you want to delete the selected data?"
+msgstr "選択したデータを削除しますか。"
+
+#: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+msgid  "(filtered)"
+msgstr "(フィルタ済み)"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "並べ替え条件の設定時のエラー"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "フィルタ条件の設定時のエラー"
+
+#: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+msgid  "Connection lost"
+msgstr "接続は切断されました"
+
+#: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+msgid  "Queries"
+msgstr "クエリー"
+
+#: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+msgid  "Tables"
+msgstr "テーブル"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "データベースファイルを編集(~D)..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "登録されたデータベース..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "接続を切断する(~N)"
+
+#: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+msgid  "Confirm Deletion"
+msgstr "削除の確認"
+
+#: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+msgid  "Do you want to delete the table '%1'?"
+msgstr "表 '%1' を削除しますか。"
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+msgid  "The query already exists. Do you want to delete it?"
+msgstr "このクエリはすでに存在します。削除しますか。"
+
+#: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database has been lost. Do you want to reconnect?"
+msgstr "データベースへの接続が切断されました。再接続しますか。"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+msgid  "Warnings encountered"
+msgstr "警告が表示されました"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+msgid  "While retrieving the tables, warnings were reported by the database connection."
+msgstr "テーブルの取得中にデータベース接続により警告がレポートされました。"
+
+#: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+msgid  "Connecting to \"$name$\" ..."
+msgstr "\"$name$\"に接続しています ..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+msgid  "Loading query $name$ ..."
+msgstr "クエリ$name$を読み込んでいます..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+msgid  "Loading table $name$ ..."
+msgstr "テーブル$name$を読み込んでいます..."
+
+#: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+msgid  "No table format could be found."
+msgstr "テーブルフォーマットが見つかりません。"
+
+#: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "データソース \"$name$\" への接続が確立できませんでした。"
+
+#: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+msgid  "Rebuild"
+msgstr "再構築"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+msgid  "Column ~Format..."
+msgstr "列の書式(~F)..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+msgid  "Copy Column D~escription"
+msgstr "列の見出しをコピー(~E)"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+msgid  "Table Format..."
+msgstr "テーブルの書式..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+msgid  "Row Height..."
+msgstr "行の高さ..."
+
+#: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+msgid  "Undo: Data Input"
+msgstr "元に戻す:データ入力"
+
+#: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+msgid  "Save current record"
+msgstr "現在のレコードを保存"
+
+#: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+msgid  "Query #"
+msgstr "クエリー #"
+
+#: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "テーブル #"
+
+#: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+msgid  "View #"
+msgstr "ビュー #"
+
+#: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+msgid  "The name \"#\" already exists."
+msgstr "\"#\" という名前はすでに存在しています。"
+
+#: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+msgid  "No matching column names were found."
+msgstr "一致する列の名前はありません。"
+
+#: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+msgid  "An error occurred. Do you want to continue copying?"
+msgstr "エラーが発生しました。コピー処理を続行しますか。"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+msgid  "Data source table view"
+msgstr "データソースのテーブルビュー"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+msgid  "Shows the selected table or query."
+msgstr "選択したテーブルまたはクエリーを表示する。"
+
+#: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "テーブル #"
+
+#: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+msgid  "Modify SQL statement(s)"
+msgstr "SQL の変更"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+msgid  "Table name"
+msgstr "テーブル名"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+msgid  "Insert data"
+msgstr "データの挿入"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+msgid  "Delete data"
+msgstr "データの削除"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+msgid  "Modify data"
+msgstr "データの変更"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+msgid  "Alter structure"
+msgstr "構成の変更"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+msgid  "Read data"
+msgstr "データの読み取り"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+msgid  "Modify references"
+msgstr "参照の変更"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+msgid  "Drop structure"
+msgstr "構造体の削除"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+msgid  "Sort Ascending"
+msgstr "昇順に並べ替え"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+msgid  "Sort Descending"
+msgstr "降順に並べ替え"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr "SDBC ドライバマネジャー(#servicename#)へ接続できませんでした。"
+
+#: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+msgid  "A driver is not registered for the URL #connurl#."
+msgstr "URL #connurl# のドライバが登録されていません。"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+msgid  "No connection could be established for the URL #connurl#."
+msgstr "URL #connurl# へ接続できませんでした。"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+msgid  "Please check the current settings, for example user name and password."
+msgstr "ユーザー名やパスワードなど、現在設定されている内容を確認してください。"
+
+#: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+msgid  "Successfully connected, but information about database tables is not available."
+msgstr "正常に接続できましたが、データベースのテーブルに関する情報がありません。"
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+msgid  "All tables"
+msgstr "すべてのテーブル"
+
+#: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+msgid  "All views"
+msgstr "すべてのテーブルビュー"
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+msgid  "All tables and views"
+msgstr "すべてのテーブルとテーブルビュー"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.ModalDialog.Text
+msgid  "Indexes"
+msgstr "インデックス"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.ToolBoxItem.Text
+msgid  "New Index"
+msgstr "新規作成インデックス"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.ToolBoxItem.Text
+msgid  "Delete Current Index"
+msgstr "現在のインデックスの削除"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.ToolBoxItem.Text
+msgid  "Rename Current Index"
+msgstr "現在のインデックスの名前を変更"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.ToolBoxItem.Text
+msgid  "Save Current Index"
+msgstr "現在のインデックスの保存"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.ToolBoxItem.Text
+msgid  "Reset Current Index"
+msgstr "現在のインデックスを元に戻す"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FixedLine.Text
+msgid  "Index details"
+msgstr "インデックスの詳細"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FixedText.Text
+msgid  "Index identifier:"
+msgstr "インデックス ID:"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CheckBox.Text
+msgid  "~Unique"
+msgstr "固有(~U)"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FixedText.Text
+msgid  "Fields"
+msgstr "フィールド"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PushButton.Text
+msgid  "~Close"
+msgstr "閉じる(~C)"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.String.Text
+msgid  "Sort order"
+msgstr "並べ替え"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.String.Text
+msgid  "Index field"
+msgstr "インデックスフィールド"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.String.Text
+msgid  "Ascending"
+msgstr "昇順"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.String.Text
+msgid  "Descending"
+msgstr "降順"
+
+#: source/ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.String.Text
+msgid  "Do you really want to delete the index '$name$'?"
+msgstr "インデックス '$name$' を削除しますか。"
+
+#: source/ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.String.Text
+msgid  "index"
+msgstr "インデックス"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Title
+msgid  "Save Index"
+msgstr "インデックスの保存"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Message
+msgid  "The index must contain at least one field."
+msgstr "インデックスにはフィールドが最低１つは必要です。"
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Title
+msgid  "Exit Index Design"
+msgstr "インデックスのデザインを閉じる"
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Message
+msgid  "Do you want to save the changes made to the current index?"
+msgstr "現在のインデックスで行った変更を保存しますか。"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
+msgid  "There is already another index named \"$name$\"."
+msgstr "\"$name$\" のインデックス名はすでにあります。"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "インデックスの定義では、テーブルの列の見出しは各一回ずつしか使えません。列の見出し \"$name$\" は、二回目の入力です。"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
+msgid  "~Parameters"
+msgstr "パラメータ(~P)"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FixedText.Text
+msgid  "~Value"
+msgstr "値(~V)"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PushButton.Text
+msgid  "~Next"
+msgstr "次へ(~N)"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.CancelButton.Text
+msgid  "Parameter Input"
+msgstr "パラメータの入力"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "入力値は <$name$> 列で有効な値に変換できませんでした。"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
+msgid  "%PRODUCTNAME Base"
+msgstr "%PRODUCTNAME Base"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
+msgid  "Details"
+msgstr "詳細"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
+msgid  "Error ~list:"
+msgstr "エラーリスト(~L):"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FixedText.Text
+msgid  "~Description:"
+msgstr "説明(~D):"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.String.Text
+msgid  "SQL Status"
+msgstr "SQL ステータス"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.String.Text
+msgid  "Error code"
+msgstr "エラーコード"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
+msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr "このエラーは、不適切な文字セットをデータベースの言語に設定している場合によく発生します。編集 → データベース → プロパティー の順に選択して設定を確認してください。"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
+msgid  "Error"
+msgstr "エラー "
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.String.Text
+msgid  "Warning"
+msgstr "警告 "
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.String.Text
+msgid  "Information"
+msgstr "情報"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.String.Text
+msgid  "Details"
+msgstr "詳細"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.ModalDialog.Text
+msgid  "Standard Filter"
+msgstr "標準フィルタ"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "OR"
+msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "OR"
+msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "フィールド名"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FixedText.Text
+msgid  "Condition"
+msgstr "条件"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FixedText.Text
+msgid  "Value"
+msgstr "値"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FixedText.Text
+msgid  "Operator"
+msgstr "演算子"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FixedLine.Text
+msgid  "Criteria"
+msgstr "条件"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.String.Text
+msgid  "- none -"
+msgstr "-なし-"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
+msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;同じ;同じでない;null;null でない"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
+msgid  "Relations"
+msgstr "リレーション"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "含まれるテーブル"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "含まれるフィールド"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FixedLine.Text
+msgid  "Update options"
+msgstr "更新オプション"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RadioButton.Text
+msgid  "~No action"
+msgstr "アクションなし(~N)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RadioButton.Text
+msgid  "~Update cascade"
+msgstr "カスケードの更新(~U)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "null に設定(~S)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "デフォルトの設定(~D)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
+msgid  "Delete options"
+msgstr "削除オプション"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RadioButton.Text
+msgid  "~No action"
+msgstr "アクションなし(~N)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RadioButton.Text
+msgid  "Delete ~cascade"
+msgstr "カスケードの削除(~C)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "null に設定(~S)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "デフォルトの設定(~D)"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.ModalDialog.Text
+msgid  "Sort Order"
+msgstr "並べ替え"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "昇順"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "descending"
+msgstr "降順"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "昇順"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "descending"
+msgstr "降順"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "昇順"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "descending"
+msgstr "降順"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "フィールド名"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FixedText.Text
+msgid  "and then"
+msgstr "それから"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FixedText.Text
+msgid  "and then"
+msgstr "それから"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FixedText.Text
+msgid  "Operator"
+msgstr "演算子"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FixedText.Text
+msgid  "Order"
+msgstr "並べ替え順序"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FixedLine.Text
+msgid  "Sort order"
+msgstr "並べ替え"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
+msgid  "<none>"
+msgstr "<なし>"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+msgid  "Options"
+msgstr "オプション"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+msgid  "Use SQL92 naming constraints"
+msgstr "SQL92 命名制限に従う"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+msgid  "Append the table alias name on SELECT statements"
+msgstr "テーブル別名を SELECT ステートメントに追加します。"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+msgid  "Use keyword AS before table alias names"
+msgstr "テーブルのエイリアス名の前にキーワード AS を使用"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+msgid  "Use Outer Join syntax '{OJ }'"
+msgstr "外部結合シンタックス '{OJ }' を使用"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+msgid  "Ignore the privileges from the database driver"
+msgstr "データベースドライバの特権を無視"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+msgid  "Replace named parameters with '?'"
+msgstr "名前付きパラメータを '?' で置き換え"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+msgid  "Display version columns (when available)"
+msgstr "バージョンカラムを表示する (利用できる場合)"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+msgid  "Use catalog name in SELECT statements"
+msgstr "SELECT ステートメントでカタログ名を使用"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+msgid  "Use schema name in SELECT statements"
+msgstr "SELECT ステートメントでスキーマ名を使用"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+msgid  "Create index with ASC or DESC statement"
+msgstr "ASC または DESC ステートメントでインデックスを作成"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+msgid  "End text lines with CR+LF"
+msgstr "CR+LF でテキスト行を終了"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+msgid  "Ignore currency field information"
+msgstr "通貨フィールド情報を無視"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+msgid  "Form data input checks for required fields"
+msgstr "必須フィールドのフォームデータ入力確認"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
+msgid  "Use ODBC conformant date/time literals"
+msgstr "ODBC 準拠日付/時間表記を使用"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
+msgid  "Supports primary keys"
+msgstr "プライマリーキーをサポート"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CheckBox.Text
+msgid  "Respect the result set type from the database driver"
+msgstr "データベースドライバからの結果セットタイプを尊重"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "標準"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "混合"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "MS Access"
+msgstr "MS Access"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+msgid  "Comparison of Boolean values"
+msgstr "ブール値の比較"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FixedText.Text
+msgid  "Rows to scan column types"
+msgstr "カラム型を調べる行"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+msgid  "Settings"
+msgstr "設定"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+msgid  "Re~trieve generated values"
+msgstr "生成値の回復(~T)"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+msgid  "~Auto-increment statement"
+msgstr "オートインクリメント命令文(~A)"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+msgid  "~Query of generated values"
+msgstr "生成値のクエリー(~Q)"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+msgid  "Generated Values"
+msgstr "生成値"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+msgid  "Special Settings"
+msgstr "特殊設定"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.String.Text
+msgid  "Advanced Settings"
+msgstr "高度な設定"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+msgid  "Save"
+msgstr "保存"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+msgid  "Create New Directory"
+msgstr "ディレクトリの新規作成!"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+msgid  "Up One Level"
+msgstr "1 レベル上へ!"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+msgid  "File ~name:"
+msgstr "ファイル名(~N):"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+msgid  "Save"
+msgstr "保存"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+msgid  "~Path:"
+msgstr "パス(~P):"
+
+#: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+msgid  "Folder"
+msgstr "フォルダ"
+
+#: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+msgid  "The file already exists. Overwrite?"
+msgstr "そのファイルはすでに存在します。上書きしますか。"
+
+#: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "\"$name$\" データソースへの接続にはパスワードの入力が必要です。"
+
+#: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr "ディレクトリ \n\n$path$\n\n はありません。作成しますか。"
+
+#: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
+msgid  "The directory $name$ could not be created."
+msgstr "ディレクトリ $name$ は格納できませんでした。"
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.ModalDialog.Text
+msgid  "Convert Database"
+msgstr "データベースの変換"
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FixedLine.Text
+msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgstr "ユーザー DOMAIN のパスワードを入力してください(~P)。"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TabPage.Text
+msgid  "Tables Filter"
+msgstr "テーブルフィルタ"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "Tables and table filter"
+msgstr "テーブルとテーブルフィルタ"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FixedText.Text
+msgid  "Mark the tables that should be visible for the applications."
+msgstr "アプリケーションが認識できるようにテーブルにマークを付けます。"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+msgid  "~Database name"
+msgstr "データベース名(~D)"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+msgid  "Se~rver / Port"
+msgstr "サーバー / ポート(~R)"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+msgid  "~Server"
+msgstr "サーバー(~S)"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+msgid  "~Port"
+msgstr "ポート(~P)"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+msgid  "Default: 3306"
+msgstr "デフォルト: 3306"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+msgid  "So~cket"
+msgstr "ソケット(~C)"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+msgid  "Named p~ipe"
+msgstr "名前付きパイプ(~I)"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.String.Text
+msgid  "User Settings"
+msgstr "ユーザー設定"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.String.Text
+msgid  "User administration"
+msgstr "ユーザー管理"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+msgid  "Tables"
+msgstr "テーブル"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+msgid  "Queries"
+msgstr "クエリー"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+msgid  "~Add"
+msgstr "追加(~A)"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+msgid  "~Close"
+msgstr "閉じる(~C)"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+msgid  "Add Tables"
+msgstr "テーブルの追加"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+msgid  "Add Table or Query"
+msgstr "テーブルまたはクエリーの追加"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TabDialog.Text
+msgid  "Field Format"
+msgstr "フィールドの書式設定"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.1.PushButton.Text
+msgid  "Bac~k"
+msgstr "戻る(~K)"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.String.Text
+msgid  "Font"
+msgstr "フォント"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.String.Text
+msgid  "Format"
+msgstr "書式"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "配置"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.String.Text
+msgid  "Table Format"
+msgstr "テーブルの書式設定"
+
+#: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+msgid  "Use catalog for file-based databases"
+msgstr "ファイルベースのデータベース用のカタログを使用"
+
+#: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "接続設定"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "ホスト名(~H)"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "ポート番号(~P)"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
+msgid  "Advanced Properties"
+msgstr "高度なプロパティー"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.String.Text
+msgid  "Additional Settings"
+msgstr "追加設定"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.String.Text
+msgid  "Connection settings"
+msgstr "接続の設定"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.String.Text
+msgid  "Database properties"
+msgstr "データベースプロパティー"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TabControl.Text
+msgid  "Database properties"
+msgstr "データベースプロパティー"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FixedText.Text
+msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "%PRODUCTNAME データベースウィザードへようこそ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
+msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr "ウィザードを使って新しいデータベースの作成、既存データベースファイルへの接続、またはサーバー上のデータベースへの接続を行います。"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
+msgid  "What do you want to do?"
+msgstr "実行する処理を選択してください。"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RadioButton.Text
+msgid  "Create a n~ew database"
+msgstr "新規データベースの作成(~E)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RadioButton.Text
+msgid  "Open an existing database ~file"
+msgstr "既存のデータベースファイルを開く(~F)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FixedText.Text
+msgid  "Recently used"
+msgstr "最近使用されたもの"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RadioButton.Text
+msgid  "Connect to an e~xisting database"
+msgstr "既存のデータベースに接続(~X)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
+msgid  "Select the type of database to which you want to establish a connection."
+msgstr "接続を確立するデータベースのタイプを選択します。"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
+msgid  "Database ~type "
+msgstr "データベースの種類(~T)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FixedText.Text
+msgid  "Database"
+msgstr "データベース"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr "この後のページで、接続の詳細を設定できます。\n\n新しい設定は現在の設定を上書きします。"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
+msgid  "MySQL"
+msgstr "MySQL"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.String.Text
+msgid  "Data Source Properties: #"
+msgstr "データソース属性:#"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
+msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr "#lib# プログラムライブラリを読み込めなかったか、またはそれ自体にトラブルがあります。 ODBC データソースは選択できません。"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr "このデータソースの種類はこのデータソースでは支援されません。\n設定を変更してもかまいませんが、データベースへは接続できないかもしれません。"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "一般"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional settings"
+msgstr "オプションの設定"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CheckBox.Text
+msgid  "Display deleted records as well"
+msgstr "削除されたレコードも表示"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
+msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgstr "注:削除され、無効になると、データソースからレコードを削除することはできません。"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
+msgid  "Indexes..."
+msgstr "インデックス..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional Settings"
+msgstr "オプションの設定"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FixedText.Text
+msgid  "ODBC ~options"
+msgstr "ODBC オプション(~O)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "接続設定"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "ホスト名(~H)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "データバッファサイズ (M バイト)(~B)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FixedText.Text
+msgid  "~Data increment (MB)"
+msgstr "データの増分 (M バイト)(~D)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FixedLine.Text
+msgid  "Administration"
+msgstr "管理"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FixedText.Text
+msgid  "Control ~user name"
+msgstr "ユーザー名のコントロール(~U)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FixedText.Text
+msgid  "Control ~password"
+msgstr "パスワードのコントロール(~P)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CheckBox.Text
+msgid  "~Shut down service when closing %PRODUCTNAME"
+msgstr "%PRODUCTNAME を閉じるときにサービスを停止(~S)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PushButton.Text
+msgid  "E~xtended..."
+msgstr "拡張(~X)..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "MySQL JDBC d~river class"
+msgstr "MySQL JDBC ドライバクラス(~R)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "テストクラス"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr "ユーザー認証"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "ユーザー名(~U)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr "パスワードが必要です"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "Oracle JDBC d~river class"
+msgstr "Oracle JDBC ドライバクラス(~R)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "テストクラス"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "接続設定"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FixedText.Text
+msgid  "~Base DN"
+msgstr "~Base DN"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CheckBox.Text
+msgid  "Use secure connection(SSL)"
+msgstr "SSL を使用"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "ポート番号(~P)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
+msgid  "Maximum number of ~records"
+msgstr "レコードの最大数(~R)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FixedText.Text
+msgid  "~Hostname"
+msgstr "ホスト名(~H)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "ポート番号(~P)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FixedText.Text
+msgid  "~Driver settings"
+msgstr "ドライバの設定(~D)"
+
+#: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
+msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgstr "その代わりに「既存のデータベースに接続」を選択し、既存のデータベースに接続してください。"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
+msgid  "Save As"
+msgstr "名前を付けて保存"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FixedText.Text
+msgid  "Please enter a name for the object to be created:"
+msgstr "格納するオブジェクトの名前を入力してください:"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FixedText.Text
+msgid  "~Catalog"
+msgstr "カタログ(~C)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FixedText.Text
+msgid  "~Schema"
+msgstr "ひな型(~S)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.String.Text
+msgid  "~Table Name"
+msgstr "テーブル名(~T)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.String.Text
+msgid  "~Name of table view"
+msgstr "テーブルビューの名前(~N)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.String.Text
+msgid  "~Query name"
+msgstr "クエリー名(~Q)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.String.Text
+msgid  "Rename to"
+msgstr "次の名前に変更"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.String.Text
+msgid  "Insert as"
+msgstr "名前を付けて挿入"
+
+#: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+msgid  "Path to the dBASE files"
+msgstr "dBASE ファイルのパス"
+
+#: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+msgid  "Path to the text files"
+msgstr "テキストファイルのパス"
+
+#: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+msgid  "Path to the spreadsheet document"
+msgstr "表計算ドキュメントのパス"
+
+#: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+msgid  "Name of the ODBC data source on your system"
+msgstr "システム上の ODBC データソースの名前"
+
+#: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+msgid  "Name of the MySQL database"
+msgstr "MySQL データベースの名前"
+
+#: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+msgid  "Name of the Oracle database"
+msgstr "Oracle データベースの名前"
+
+#: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+msgid  "Name of the Adabas D database"
+msgstr "Adabas D データベースの名前"
+
+#: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+msgid  "Microsoft Access database file"
+msgstr "Microsoft Access データベースファイル"
+
+#: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgstr "これ以上の設定は不要です。接続が有効であるかどうかを確認するには、'%test' ボタンをクリックします。"
+
+#: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+msgid  "Datasource URL"
+msgstr "データソースの URL"
+
+#: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+msgid  "~Host name"
+msgstr "ホスト名(~H)"
+
+#: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+msgid  "~Mozilla profile name"
+msgstr "~Mozilla プロファイルの名前"
+
+#: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+msgid  "~Thunderbird profile name"
+msgstr "~Thunderbird プロファイルの名前"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.ModalDialog.Text
+msgid  "Data Source"
+msgstr "データソース"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FixedText.Text
+msgid  "Choose a data source:"
+msgstr "データソースを選択します:"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PushButton.Text
+msgid  "Organize..."
+msgstr "管理..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PushButton.Text
+msgid  "Create..."
+msgstr "作成..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.String.Text
+msgid  "Local Databases"
+msgstr "ローカルデータベース"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.String.Text
+msgid  "Choose a database"
+msgstr "データベースを選択"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "General"
+msgstr "一般"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "ホスト名(~H)"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr "ユーザー認証"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "ユーザー名(~U)"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr "パスワードが必要です"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
+msgid  "JDBC properties"
+msgstr "JDBC 属性"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "~JDBC driver class"
+msgstr "~JDBC ドライバクラス"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test Class"
+msgstr "テストクラス"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+msgid  "Test Connection"
+msgstr "テスト接続"
+
+#: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+msgid  "No Adabas D data sources were found on your system."
+msgstr "システム上に Adabas D データソースがありません。"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+msgid  "Connection Test"
+msgstr "接続テスト"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+msgid  "The connection was established successfully."
+msgstr "接続が正常に確立できました。"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+msgid  "The connection could not be established."
+msgstr "接続が確立できませんでした。"
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
+msgid  "The JDBC driver was loaded successfully."
+msgstr "JDBC ドライバが正常に読み込まれました。"
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
+msgid  "The JDBC driver could not be loaded."
+msgstr "JDBC ドライバは読み込まれませんでした。"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
+msgid  "MS Access file"
+msgstr "MS Access ファイル"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
+msgid  "MS Access 2007 file"
+msgstr "MS Access 2007 ファイル"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+msgid  "Database files"
+msgstr "データベースファイル"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "~TRANSACTIONLOG:"
+msgstr "~TRANSACTIONLOG:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+msgid  "Database sizes"
+msgstr "データベースサイズ"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+msgid  "S~ize (MB):"
+msgstr "全体のサイズ(MB)(~I):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+msgid  "~Free memory space (MB):"
+msgstr "空き容量(MB)(~F):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+msgid  "~Memory utilization (in %):"
+msgstr "ディスク使用量(%)(~M):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+msgid  "Database Statistics"
+msgstr "データベースの統計"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+msgid  "Contains the system tables"
+msgstr "システムテーブルを含む"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+msgid  "Contains information about transaction"
+msgstr "トランザクションの情報を含む"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+msgid  "Contains all data files"
+msgstr "データファイルを含む"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+msgid  "Total size of the database files"
+msgstr "データベースファイル全体のサイズ"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+msgid  "Currently available space before a new datadev file is created."
+msgstr "新しい datadev ファイルを作成する前の、使用可能なディスク空き容量。"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+msgid  "Currently used memory"
+msgstr "現在のディスク使用量"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+msgid  "No information could be displayed because no access rights exist for the required system tables."
+msgstr "要求したシステムテーブルへのアクセス権がないために、情報は表示されませんでした。"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
+msgid  "SQL command"
+msgstr "SQL コマンド"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FixedText.Text
+msgid  "Command to execute"
+msgstr "実行コマンド"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PushButton.Text
+msgid  "Execute"
+msgstr "実行"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FixedText.Text
+msgid  "Previous commands"
+msgstr "前のコマンド"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FixedLine.Text
+msgid  "Status"
+msgstr "ステータス"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PushButton.Text
+msgid  "Close"
+msgstr "閉じる"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PushButton.Text
+msgid  "Execute SQL Statement"
+msgstr "SQL ステートメントの実行"
+
+#: source/ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.String.Text
+msgid  "Command successfully executed."
+msgstr "コマンドは正常に実行されました。"
+
+#: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
+msgid  "The connection to the database has been lost. This dialog will be closed."
+msgstr "データベースへの接続は削除されています。このダイアログを閉じます。"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
+msgid  "Indexes"
+msgstr "インデックス"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FixedText.Text
+msgid  "~Table"
+msgstr "テーブル(~T)"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FixedLine.Text
+msgid  "Assignment"
+msgstr "適用"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FixedText.Text
+msgid  "T~able indexes"
+msgstr "テーブルのインデックス(~A)"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FixedText.Text
+msgid  "~Free indexes"
+msgstr "フリーインデックス(~F)"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FixedLine.Text
+msgid  "User selection"
+msgstr "ユーザーの選択"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FixedText.Text
+msgid  "Us~er:"
+msgstr "ユーザー(~E):"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PushButton.Text
+msgid  "~Add User..."
+msgstr "ユーザーの追加(~A)..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PushButton.Text
+msgid  "Change ~Password..."
+msgstr "パスワードの変更(~P)..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PushButton.Text
+msgid  "~Delete User..."
+msgstr "ユーザーの削除(~D)..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FixedLine.Text
+msgid  "Access rights for selected user"
+msgstr "選択したユーザーのアクセス権"
+
+#: source/ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QueryBox.Message
+msgid  "Do you really want to delete the user?"
+msgstr "本当にユーザーを削除しますか。"
+
+#: source/ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support user administration."
+msgstr "データベースはユーザーの管理をサポートしていません。"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
+msgid  "User \"$name$:  $\""
+msgstr "ユーザー \"$name$:$\""
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
+msgid  "Old p~assword"
+msgstr "旧パスワード(~A)"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FixedText.Text
+msgid  "~Password"
+msgstr "パスワード(~P)"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FixedText.Text
+msgid  "~Confirm  password"
+msgstr "パスワードの確認(~C)"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.HelpButton.Text
+msgid  "Change Password"
+msgstr "パスワードの変更"
+
+#: source/ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+msgid  "The passwords do not match. Please enter the password again."
+msgstr "入力した２つのパスワードは一致しません。もう一度入力しなおしてください。"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
+msgid  "Database Wizard"
+msgstr "データベースウィザード"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
+msgid  "Database Wizard"
+msgstr "データベースウィザード"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.String.Text
+msgid  "Select database"
+msgstr "データベースの選択"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.String.Text
+msgid  "Set up dBASE connection"
+msgstr "dBASE 接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "テキストファイルとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
+msgid  "Set up Microsoft Access connection"
+msgstr "Microsoft Access 接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.String.Text
+msgid  "Set up LDAP connection"
+msgstr "LDAP 接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.String.Text
+msgid  "Set up Adabas D connection"
+msgstr "Adabs D 接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.String.Text
+msgid  "Set up ADO connection"
+msgstr "ADO 接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.String.Text
+msgid  "Set up JDBC connection"
+msgstr "JDBC 接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.String.Text
+msgid  "Set up Oracle database connection"
+msgstr "Oracle データベース接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.String.Text
+msgid  "Set up MySQL connection"
+msgstr "MySQL 接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.String.Text
+msgid  "Set up ODBC connection"
+msgstr "ODBC 接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.String.Text
+msgid  "Set up Spreadsheet connection"
+msgstr "表計算接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.String.Text
+msgid  "Set up user authentication"
+msgstr "ユーザー認証のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.String.Text
+msgid  "Set up MySQL server data"
+msgstr "MySQL サーバーデータのセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.String.Text
+msgid  "Save and proceed"
+msgstr "保存して続行"
+
+#: source/ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.String.Text
+msgid  "New Database"
+msgstr "新規データベース"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to a MySQL database"
+msgstr "MySQL データベースとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "MySQL データベースとの接続には、ODBC または JDBC を使用します。\n以下の設定について不明な点がある場合は、システム管理者に問い合わせてください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
+msgid  "How do you want to connect to your MySQL database?"
+msgstr "MySQL データベースへの接続方法を選択してください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RadioButton.Text
+msgid  "Connect using ODBC (Open Database Connectivity)"
+msgstr "ODBC (Open Database Connectivity) を使って接続"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RadioButton.Text
+msgid  "Connect using JDBC (Java Database Connectivity)"
+msgstr "JDBC (Java Database Connectivity) を使って接続"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RadioButton.Text
+msgid  "Connect directly"
+msgstr "直接接続"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FixedText.Text
+msgid  "Set up the user authentication"
+msgstr "ユーザー認証のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FixedText.Text
+msgid  "Some databases require you to enter a user name."
+msgstr "一部のデータベースでは、ユーザー名を入力する必要があります。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "ユーザー名(~U)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CheckBox.Text
+msgid  "Password re~quired"
+msgstr "必須パスワード(~Q)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PushButton.Text
+msgid  "~Test Connection"
+msgstr "テスト接続(~T)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FixedText.Text
+msgid  "Decide how to proceed after saving the database"
+msgstr "データベースを保存したあとの処理を決定してください"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FixedText.Text
+msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "ウィザードを使って %PRODUCTNAME にデータベースを登録しますか。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RadioButton.Text
+msgid  "~Yes, register the database for me"
+msgstr "はい、登録します(~Y)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RadioButton.Text
+msgid  "N~o, do not register the database"
+msgstr "いいえ、データベースを登録しません(~O)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FixedText.Text
+msgid  "After the database file has been saved, what do you want to do?"
+msgstr "データベースファイルを保存したあとの処理を指定してください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CheckBox.Text
+msgid  "Open the database for editing"
+msgstr "データベースを開いて編集します"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CheckBox.Text
+msgid  "Create tables using the table wizard"
+msgstr "テーブルウィザードを使ってテーブルを作成します"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FixedText.Text
+msgid  "Click 'Finish' to save the database."
+msgstr "「完了」をクリックしてデータベースを保存します。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.String.Text
+msgid  "Set up connection to a MySQL database using JDBC"
+msgstr "JDBC を使って MySQL データベースとの接続をセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "JDBC を使って MySQL データベースに接続するために必要な情報を入力してください。システムに JDBC ドライバクラスをインストールし、%PRODUCTNAME に登録する必要があります。\n以下の設定について不明な点がある場合は、システム管理者に問い合わせてください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
+msgid  "MySQL JDBC d~river class:"
+msgstr "MySQL JDBC ドライバクラス:(~R)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.String.Text
+msgid  "Default: 3306"
+msgstr "デフォルト: 3306"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FixedText.Text
+msgid  "Set up connection to a MySQL database"
+msgstr "MySQL データベースとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
+msgid  "Please enter the required information to connect to a MySQL database."
+msgstr "要求された情報を入力して、MySQL データベースに接続してください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
+msgid  "Set up a connection to dBASE files"
+msgstr "dBASE ファイルとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.String.Text
+msgid  "Select the folder where the dBASE files are stored."
+msgstr "dBASE ファイルが格納されているフォルダを選択します。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "テキストファイルとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
+msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr "CSV テキストファイルが格納されているフォルダを選択します。%PRODUCTNAME Base は、これらのファイルを読み取り専用モードで開きます。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
+msgid  "Path to text files"
+msgstr "テキストファイルのパス"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.String.Text
+msgid  "Set up a connection to a Microsoft Access database"
+msgstr "Microsoft Access データベースとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
+msgid  "Please select the Microsoft Access file you want to access."
+msgstr "アクセスする Microsoft Access ファイルを選択します。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to an LDAP directory"
+msgstr "LDAP ディレクトリとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "LDAP ディレクトリに接続するために必要な情報を入力してください。\n以下の設定について不明な点がある場合は、システム管理者に問い合わせてください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
+msgid  "Default: 389"
+msgstr "標準: 389"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CheckBox.Text
+msgid  "Use ~secure connection (SSL)"
+msgstr "保護された接続 (~SSL) を使用"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Adabas D database"
+msgstr "Adabas D データベースとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr "接続する Adabas D データベースの名前を入力します。\n「ブラウズ」をクリックして、すでに %PRODUCTNAME に登録されている Adabas D データベースを選択します。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ADO database"
+msgstr "ADO データベースとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "接続する ADO データソースの URL を入力します。\n「ブラウズ」をクリックして、プロバイダ固有の設定を行います。\n以下の設定について不明な点がある場合は、システム管理者に問い合わせてください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ODBC database"
+msgstr "ODBC データベースとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "接続する ODBC データベースの名前を入力します。\n「ブラウズ」をクリックして、すでに %PRODUCTNAME に登録されている ODBC データベースを選択します。\n以下の設定について不明な点がある場合は、システム管理者に問い合わせてください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to a JDBC database"
+msgstr "JDBC データベースとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "JDBC データベースに接続するために必要な情報を入力してください。\n以下の設定について不明な点がある場合は、システム管理者に問い合わせてください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Oracle database"
+msgstr "Oracle データベースとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.String.Text
+msgid  "Default: 1521"
+msgstr "標準: 1521"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.String.Text
+msgid  "Oracle JDBC ~driver class"
+msgstr "Oracle JDBC ドライバクラス(~D)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Oracle データベースに接続するために必要な情報を入力してください。システムに JDBC ドライバクラスをインストールし、%PRODUCTNAME に登録する必要があります。\n以下の設定について不明な点がある場合は、システム管理者に問い合わせてください。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
+msgid  "Set up a connection to spreadsheets"
+msgstr "表計算ドキュメントとの接続のセットアップ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr "「ブラウズ」をクリックして、%PRODUCTNAME 表計算ドキュメントまたは Microsoft Excel ワークブックを選択します。\n%PRODUCTNAME はこのファイルを読み取り専用モードで開きます。"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
+msgid  "~Location and file name"
+msgstr "場所とファイル名(~L)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CheckBox.Text
+msgid  "~Password required"
+msgstr "パスワードを要求(~P)"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FixedText.Text
+msgid  "~Height"
+msgstr "高さ(~H)"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "自動(~A)"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HelpButton.Text
+msgid  "Row Height"
+msgstr "行の高さ"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FixedText.Text
+msgid  "~Width"
+msgstr "幅(~W)"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "自動(~A)"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.HelpButton.Text
+msgid  "Column Width"
+msgstr "列幅"
+
+#: source/ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.ModalDialog.Text
+msgid  "Text Connection Settings"
+msgstr "テキスト接続設定"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2).PB_AUTOBROWSEURL.PushButton.Text
+msgid  "Browse"
+msgstr "ブラウズ"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTODATABASENAME.FixedText.Text
+msgid  "Database name"
+msgstr "データベース名"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOHOSTNAME.FixedText.Text
+msgid  "Server"
+msgstr "サーバー"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOBASEDN.FixedText.Text
+msgid  "Base ~DN"
+msgstr "ベース ~DN"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOPORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "ポート番号(~P)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FL_DATACONVERT.FixedLine.Text
+msgid  "Data conversion"
+msgstr "データ変換"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FT_CHARSET.FixedText.Text
+msgid  "~Character set"
+msgstr "文字セット(~C)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FixedText.Text
+msgid  "Specify the type of files you want to access"
+msgstr "アクセスするファイルの種類を指定"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RadioButton.Text
+msgid  "Plain text files (*.txt)"
+msgstr "プレーンテキストファイル (*.txt)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RadioButton.Text
+msgid  "'Comma separated value' files (*.csv)"
+msgstr "「コンマ区切り形式」ファイル (*.csv)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RadioButton.Text
+msgid  "Custom:"
+msgstr "カスタム:"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.Text
+msgid  "Custom: *.abc"
+msgstr "カスタム:*.abc"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FixedLine.Text
+msgid  "Row Format"
+msgstr "row 形式"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FixedText.Text
+msgid  "Field separator"
+msgstr "フィールド区切り子"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FixedText.Text
+msgid  "Text separator"
+msgstr "テキスト区切り子"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FixedText.Text
+msgid  "Decimal separator"
+msgstr "10 進数区切り子"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FixedText.Text
+msgid  "Thousands separator"
+msgstr "3 桁ごとの区切り子"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CheckBox.Text
+msgid  "~Text contains headers"
+msgstr "テキストにヘッダーが含まれる(~T)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.String.Text
+msgid  "{None}"
+msgstr "{なし}"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
+msgid  "#1 must be set."
+msgstr "#1 は設定が必要です。"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.String.Text
+msgid  "#1 and #2 must be different."
+msgstr "#1 と #2 は異なる必要があります。"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.String.Text
+msgid  "Wildcards such as ?,* are not allowed in #1."
+msgstr "#1 では ? や * などのワイルドカードは使用できません。"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FixedText.Text
+msgid  "JDBC d~river class"
+msgstr "JDBC ドライバクラス(~R)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "テストクラス"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FixedText.Text
+msgid  "Socket"
+msgstr "ソケット"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "更新"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "新しい表示デザイン(~V)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "新しいテーブルデザイン(~T)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "クエリーウィザード..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "新しいクエリー (デザイン表示)(~Q)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "クエリーの編集(~E)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "新しいクエリー (~SQL 表示)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "編集..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "列幅(~W)..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "レポートウィザード..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "フォームウィザード..."
+
+#: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+msgid  "System"
+msgstr "システム"
+
+#: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+msgid  "Error during creation"
+msgstr "作成時エラー"
+
+#: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+msgid  "An unexpected error occurred. The operation could not be performed."
+msgstr "予期しないエラーが発生しました。操作の実行はできません。"
+
+#: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+msgid  "The document \"$file$\" could not be opened."
+msgstr "ドキュメント \"$file$\" を開くことができませんでした。"
+
+#: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+msgid  "The table cannot be deleted because the database connection does not support this."
+msgstr "テーブルはデータベースの接続がこれを支援しないため削除できません。"
+
+#: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+msgid  "~All"
+msgstr "すべて(~A)"
+
+#: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+msgid  "Undo:"
+msgstr "元に戻す:"
+
+#: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+msgid  "Redo:"
+msgstr "やり直し:"
+
+#: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+msgid  "No corresponding column type could be found for column '#1'."
+msgstr "列 '#1' に関連した列の種類は見つかりませんでした。"
+
+#: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "ファイル \"$file$\" は存在しません。"
+
+#: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "データソースへの接続中に警告が表示されました。警告を表示するには「$buttontext$」を押してください。"
+
+#: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr "'$#$' という名前はすでに存在します。\n別の名前を入力してください。"
+
+#: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "レポート \"$file$\" には Oracle Report Builder 拡張が必須です。"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
+msgid  "Apply columns"
+msgstr "列の適用"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
+msgid  "Type formatting"
+msgstr "タイプの書式設定"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr "以下のフィールドはすでにプライマリキーとして設定されています。\n"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
+msgid  "Assign columns"
+msgstr "列の割り当て"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
+msgid  "Copy RTF Table"
+msgstr "RTF テーブルのコピー"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "ヘルプ(~H)"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+msgid  "~Cancel"
+msgstr "キャンセル(~C)"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
+msgid  "< ~Back"
+msgstr "< 戻る(~B)"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
+msgid  "~Next>"
+msgstr "次へ(~N)>"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+msgid  "C~reate"
+msgstr "完了(~R)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
+msgid  "Existing columns"
+msgstr "既存の列"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
+msgid  "Column information"
+msgstr "列の情報"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
+msgid  "Automatic type recognition"
+msgstr "種類の自動認識"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
+msgid  "Lines (ma~x)"
+msgstr "最大行数(~X)"
+
+#: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "プライマリキー"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
+msgid  "Source table: \\n"
+msgstr "ソーステーブル: \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
+msgid  "Destination table: \\n"
+msgstr "ターゲットテーブル: \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+msgid  "~All"
+msgstr "すべて(~A)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+msgid  "Non~e"
+msgstr "なし(~E)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+msgid  "Ta~ble name"
+msgstr "テーブル名(~B)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+msgid  "Options"
+msgstr "オプション"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
+msgid  "De~finition and data"
+msgstr "定義とデータ(~F)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
+msgid  "Def~inition"
+msgstr "定義(~I)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
+msgid  "A~s table view"
+msgstr "テーブルビューとして(~S)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
+msgid  "Append ~data"
+msgstr "データの添付(~D)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
+msgid  "Use first ~line as column names"
+msgstr "第１行目をカラム名として使用(~L)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
+msgid  "Crea~te primary key"
+msgstr "プライマリキーの作成(~T)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+msgid  "Name"
+msgstr "名前"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "テーブルのコピー"
+
+#: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "テーブルのコピー"
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
+msgid  "This table name is not valid in the current database."
+msgstr "現在のデータベースでは、このテーブル名は無効です。"
+
+#: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
+msgstr "既存テーブルにデータを追加するには、最初のページの データの添付 オプションを選択します。"
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
+msgid  "Please change the table name. It is too long."
+msgstr "表名を変更してください。名前が長すぎます。"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+msgid  "Options"
+msgstr "オプション"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+msgid  "~Type"
+msgstr "種類(~T)"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+msgid  "Inner join"
+msgstr "内部結合"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+msgid  "Left join"
+msgstr "左結合"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+msgid  "Right join"
+msgstr "右結合"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+msgid  "Full (outer) join"
+msgstr "完全外部結合"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+msgid  "Cross join"
+msgstr "クロス結合"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+msgid  "Natural"
+msgstr "自然"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "含まれるテーブル"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "含まれるフィールド"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+msgid  "Join Properties"
+msgstr "結合属性"
+
+#: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+msgid  "Please note that some databases may not support this join type."
+msgstr "一部のデータベースではこの結合タイプをサポートしていない場合があることに注意してください。"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+msgid  "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "両方のテーブルでリンクされたフィールドの内容が一致するレコードだけを含みます。"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "'%1' のすべてのレコード、および両方のテーブルでリンクされたフィールドの内容が一致する '%2' のレコードだけを含みます。"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+msgid  "Contains ALL records from '%1' and from '%2'."
+msgstr "'%1' と '%2' のすべてのレコードを含みます。"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "'%1' と '%2' のすべてのレコードのデカルト積を含みます。"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr "'%1' と '%2' の同じ名前の列のペアごとに、1 列のみを含みます"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+msgid  "Add Table Window"
+msgstr "テーブルウィンドウの追加"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+msgid  "Move table window"
+msgstr "テーブルウィンドウの移動"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+msgid  "Insert Join"
+msgstr "結合の挿入"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+msgid  "Delete Join"
+msgstr "結合の削除"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+msgid  "Resize table window"
+msgstr "テーブルウィンドウのサイズ変更"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+msgid  "Delete Column"
+msgstr "列の削除"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+msgid  "Move column"
+msgstr "列の移動"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+msgid  "Add Column"
+msgstr "列の追加"
+
+#: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, table '$name$' does not exist."
+msgstr "'$name$' テーブルがないので、表現は無効です。"
+
+#: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, field name '$name$' does not exist."
+msgstr "フィールド名 '$name$' の分類ができないので、表現は無効です。"
+
+#: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgstr "クエリーに #num# テーブルが含まれています。現在のデータベースタイプでは、ステートメントごとに最大テーブル数 #maxnum# しか処理できません。"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+msgid  "Delete Table Window"
+msgstr "テーブルウィンドウの削除"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+msgid  "Edit Column Description"
+msgstr "列の見出しの変更"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+msgid  "Adjust column width"
+msgstr "列幅の変更"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+msgid  "(not sorted);ascending;descending"
+msgstr "(並べ替えなし);昇順;降順"
+
+#: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+msgid  "(no function);Group"
+msgstr "(関数なし);GROUP"
+
+#: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+msgid  "(no table)"
+msgstr "(テーブルなし)"
+
+#: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+msgid  "The database only supports sorting for visible fields."
+msgstr "データベースが支援する並べ替えの対象は、表示されたフィールドのみです。"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+msgid  "Functions"
+msgstr "関数"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+msgid  "Table Name"
+msgstr "テーブル名"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+msgid  "Alias"
+msgstr "エイリアス名"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+msgid  "Distinct Values"
+msgstr "明瞭値"
+
+#: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "フィールド;エイリアス;テーブル;並べ替え;表示;関数;条件;あるいは;あるいは"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+msgid  "There are too many columns."
+msgstr "列が多すぎます。"
+
+#: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+msgid  "A condition cannot be applied to field [*]"
+msgstr "[*] フィールドに条件は使えません。"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+msgid  "The SQL statement created is too long."
+msgstr "作成した SQL ステートメントが長すぎます。"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+msgid  "Query is too complex"
+msgstr "クエリーが複雑すぎます。"
+
+#: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+msgid  "Nothing has been selected."
+msgstr "選択されていません。"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+msgid  "Too many search criteria"
+msgstr "検索条件が多すぎます。"
+
+#: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+msgid  "SQL syntax error"
+msgstr "SQL シンタックスエラー"
+
+#: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+msgid  "[*] cannot be used as a sort criterion."
+msgstr "[*]で並べ替えはできません。"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+msgid  "There are too many tables."
+msgstr "テーブルの数が多すぎます。"
+
+#: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+msgid  "The statement will not be applied when querying in the SQL dialect of the database."
+msgstr "データベース SQL ダイアレクトのクエリーではステートメントは適用されません。"
+
+#: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+msgid  "Field name not found or not unique"
+msgstr "フィールド名が見つからないか、あるいは名前が明確でありません。"
+
+#: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+msgid  "Join could not be processed"
+msgstr "リンクできませんでした。"
+
+#: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+msgid  "Syntax error in SQL statement"
+msgstr "SQL 表現のシンタックスエラー"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+msgid  "This database does not support table views."
+msgstr "このデータベースはテーブルビューをサポートしていません。"
+
+#: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+msgid  "This database does not support altering of existing table views."
+msgstr "このデータベースは、既存のテーブルビューの変更をサポートしていません。"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+msgid  "Do you want to create a query instead?"
+msgstr "その代わりにクエリーを作成しますか。"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+msgid  "No query could be created."
+msgstr "クエリーは作成できませんでした。"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+msgid  "No query could be created because no fields were selected."
+msgstr "フィールドが選択されてなかったので、クエリーは作成できませんでした。"
+
+#: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgstr "従属するデータソースが削除されています。これに関連するデータは保存できません。"
+
+#: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+msgid  "The column '$name$' is unknown."
+msgstr "列 '$name$' は不明です。"
+
+#: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+msgid  "Columns can only be compared using '='."
+msgstr "列はイコール記号 '=' を使用することでのみ比較されます。"
+
+#: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+msgid  "You must use a column name before 'LIKE'."
+msgstr "'LIKE' の前に列名を記述する必要があります。"
+
+#: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+msgid  "The column could not be found. Please note that the database is case-sensitive."
+msgstr "列は見つかりませんでした。データベースでは大文字と小文字が区別されることに注意してください。"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Query Design"
+msgstr "- %PRODUCTNAME Base:クエリーデザイン"
+
+#: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: View Design"
+msgstr "- %PRODUCTNAME Base:表示デザイン"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr "$object$ は変更されました。\n変更を保存しますか。"
+
+#: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "$object$ は解析不能な SQL コマンドを元にしています。"
+
+#: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "$object$ は SQL ビューで開かれます。"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+msgid  "The table view"
+msgstr "テーブルビュー"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+msgid  "The query"
+msgstr "クエリー"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+msgid  "The SQL statement"
+msgstr "SQL ステートメント"
+
+#: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The query does not create a result set, and thus cannot be part of another query."
+msgstr "クエリーは結果セットを作成しなかったので、ほかのクエリーの一部になることはできません。"
+
+#: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgstr "ActiveConnection および DataSourceName パラメータが見つからないか、間違っています - クエリーデザイナを初期化できません。"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+msgid  "This relation already exists. Do you want to edit it or create a new one?"
+msgstr "このリレーションはすでに存在します。 このリレーションを編集しますか、それとも新しいリレーションを作成しますか ?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+msgid  "Edit..."
+msgstr "編集..."
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+msgid  "Create..."
+msgstr "作成..."
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Relation design"
+msgstr " - %PRODUCTNAME Base: リレーションデザイン"
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support relations."
+msgstr "このデータベースはリレーションをサポートしません。"
+
+#: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgstr "このテーブルを削除すると、これに属するすべてのリレーションも削除されます。続行しますか。"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr "データベースはリレーションを作成できませんでした。その種類のテーブルで外部キーがサポートされていない可能性があります。\nデータベースのドキュメントを確認してください。"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr "不明;テキスト;数値;日付/時刻;日付;時刻;はい/いいえ;通貨単位;メモ;カウンタ;イメージ;テキスト(固定);十進数;二進数(固定);二進数;長整数;倍精度浮動小数点;浮動小数点;実数;整数;短整数;最短整数;SQL Null;オブジェクト;DISTINCT;構造;フィールド;BLOB;CLOB;REF;その他"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "プライマリキーの挿入と削除"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+msgid  "Yes"
+msgstr "はい"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+msgid  "No"
+msgstr "いいえ"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+msgid  "Ascending"
+msgstr "昇順"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+msgid  "Descending"
+msgstr "降順"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+msgid  "<none>"
+msgstr "<なし>"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+msgid  "Field name"
+msgstr "フィールド名"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+msgid  "Field Name"
+msgstr "フィールド名"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+msgid  "Field ~type"
+msgstr "フィールドの種類(~T)"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+msgid  "Field Type"
+msgstr "フィールドタイプ"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+msgid  "Field length"
+msgstr "フィールドの長さ"
+
+#: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+msgid  "Description"
+msgstr "概要"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
+msgid  "Column Description"
+msgstr "列の説明"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+msgid  "Input required"
+msgstr "入力が必要"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+msgid  "~AutoValue"
+msgstr "自動入力値(~A)"
+
+#: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+msgid  "Field Properties"
+msgstr "フィールドの属性"
+
+#: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "全般"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+msgid  "Description:"
+msgstr "概要:"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+msgid  "Table properties"
+msgstr "テーブルの属性"
+
+#: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+msgid  "The text you entered is not a list element. "
+msgstr "入力したテキストはリストの要素ではありません。"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+msgid  "Insert Rows"
+msgstr "行の挿入"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "プライマリキー"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+msgid  "Modify cell"
+msgstr "セルの変更"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+msgid  "Delete row"
+msgstr "行の削除"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+msgid  "Modify field type"
+msgstr "フィールドの種類の変更"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+msgid  "Insert row"
+msgstr "行の挿入"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+msgid  "Insert new row"
+msgstr "新しい行の挿入"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "プライマリキーの挿入と削除"
+
+#: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+msgid  "~Default value"
+msgstr "標準値(~D)"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+msgid  "~Entry required"
+msgstr "入力が必要(~E)"
+
+#: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+msgid  "~Length"
+msgstr "長さ(~L)"
+
+#: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+msgid  "~Type"
+msgstr "種類(~T)"
+
+#: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+msgid  "~Length"
+msgstr "長さ(~L)"
+
+#: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+msgid  "Decimal ~places"
+msgstr "小数点以下の桁数(~P)"
+
+#: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+msgid  "Format example"
+msgstr "書式サンプル"
+
+#: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr "新しくレコードを挿入するときに表示される標準値を選択します。\nまたフィールドに標準値設定をしないときは、空白のままにしておきます。"
+
+#: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr "ここにフィールドの標準値を入力します。\n\nこの標準値は、データをテーブルに入力すると変更できます。標準値は、下で指定するセルの書式に対応している必要があります。"
+
+#: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgstr "このフィールドに NULL 値は使わず、常にユーザーがデータを入力するような場合は、このオプションをアクティブにします。"
+
+#: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+msgid  "Enter the maximum text length permitted."
+msgstr "入力できる最大文字数を指定します。"
+
+#: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+msgid  "Enter the number format."
+msgstr "数の書式を指定します。"
+
+#: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr "このフィールドに入力するデータの長さを指定します。\n\n十進法フィールドには入力値の最大桁数、二進法フィールドにはデータブロックの長さを指定します。\n入力値がこのデータベースの最大限を超えた場合は、修正されます。"
+
+#: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+msgid  "Specify the number of decimal places permitted in this field."
+msgstr "このフィールドで扱う小数点以下の桁数を入力します。"
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgstr "列のデータが、現在設定された書式でどう変わったか、ここで見れます。横にあるボタンを使うと、書式の変更ができます。"
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+msgid  "This is where you determine the output format of the data."
+msgstr "ここで、テーブルのデータを出力するときの書式を指定できます。"
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr "このフィールドを自動増加入力値にするか、選択します。\n\n選択すると、そこへ直接にデータを入力できなくなり、自動的に新しいレコードには前のレコードの数値を基に増加算出された結果値が入力されます。"
+
+#: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "\"$column$\" の列名が重複していて、テーブルの保存ができません。"
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "列 \"$column$\" はプライマリキーに属します。これを削除すると、プライマリキーも削除されてしまいます。削除してもかまいませんか。"
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+msgid  "Primary Key Affected"
+msgstr "プライマリキーに影響"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+msgid  "Column"
+msgstr "列"
+
+#: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+msgid  "Continue anyway?"
+msgstr "続行してかまいませんか。"
+
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "警告"
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+msgid  "The table could not be saved due to problems connecting to the database."
+msgstr "データベースへ接続できなかったため、テーブルを保存できませんでした。"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgstr "データソースが削除されてしまっているために、テーブルフィルタを適合できませんでした。"
+
+#: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+msgid  "No primary key"
+msgstr "プライマリキーがありません。"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr "このデータベースでは、レコード識別に一意なインデックスあるいはプライマリキーが必要です。\nこの構造条件のうちどちらかひとつが満たされると、テーブルにデータ入力できます。\n\nプライマリキーを作成しますか。"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base: Table Design"
+msgstr "- %PRODUCTNAME Base:テーブルデザイン"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "列 \"\\$column\\$\" は変更できませんでした。そのかわりに、削除して新しい書式を添付しますか。"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+msgid  "Error while saving the table design"
+msgstr "テーブルデザインの保存中にエラーが発生しました"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+msgid  "The column $column$ could not be deleted."
+msgstr "列 $column$ を削除できませんでした。"
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr "テーブルにあるすべての列を削除しようとしています。列がなくては、テーブルは存在しません。データベースからテーブルを削除しますか。削除しなければ、テーブルはそのまま残ります。"
+
+#: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+msgid  "A~uto-increment statement"
+msgstr "オートインクリメント命令文(~U)"
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr "オートインクリメントのフィールドに使う SQL ステートメントをここに入力します。\n\nこのステートメントは、テーブルを作成するときに直接データベースに転送されます。"
+
+#: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr "データベースからはタイプ情報は検索できませんでした。\nこのデータソースにはテーブルデザインモードは使用できません。"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+msgid  "change field name"
+msgstr "フィールド名の変更"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+msgid  "change field type"
+msgstr "フィールドの種類の変更"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+msgid  "change field description"
+msgstr "フィールドの説明の変更"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+msgid  "change field attribute"
+msgstr "フィールドの属性の変更"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+msgid  "~Remember password until end of session"
+msgstr "セッション終了時までパスワードを記憶(~R)"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+msgid  "~Remember password"
+msgstr "パスワードを記憶(~R)"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+msgid  "The destination database does not support views."
+msgstr "宛先データベースはビューをサポートしていません。"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+msgid  "The destination database does not support primary keys."
+msgstr "宛先データベースはプライマリキーをサポートしていません。"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgstr "データアクセス記述子が見つからないか、必要な情報をすべて提供できるデータアクセス記述子がありません"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+msgid  "Only tables and queries are supported at the moment."
+msgstr "現在サポートされているのは、テーブルとクエリーだけです。"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+msgid  "The copy source's result set must support bookmarks."
+msgstr "コピー元の結果セットがブックマークをサポートしている必要があります。"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgstr "列位置 $pos$ のソース列の種類 ($type$) はサポートされていません。"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+msgid  "Illegal number of initialization parameters."
+msgstr "初期化パラメータの数が正しくありません。"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+msgid  "An error occurred during initialization."
+msgstr "初期化中にエラーが発生しました。"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
+msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgstr "コピー元の記述子にサポートされていない設定があります: $name$"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
+msgid  "To copy a query, your connection must be able to provide queries."
+msgstr "クエリーをコピーするには、接続がクエリーを提供できるようになっている必要があります。"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
+msgid  "The given interaction handler is invalid."
+msgstr "指定されたインタラクションハンドラは無効です。"

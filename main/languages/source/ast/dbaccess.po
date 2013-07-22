@@ -1,0 +1,3616 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.String.Text
+msgid  "Tried to open the table $name$."
+msgstr "Tentó d'abrir la tabla $name$."
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_INVALID.String.Text
+msgid  "No connection could be established."
+msgstr "Nun pudo afitase una conexón."
+
+#: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
+msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
+msgstr "La tabla $name$ yá esiste. Nun ta visible porque ta filtrada."
+
+#: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
+msgid  "You have no write access to the configuration data the object is based on."
+msgstr "Nun tien accesu d'escritura a los datos de configuración nos que ta basáu l'oxetu."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
+msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgstr "Nun pudo afitase la conexón a la fonte de datos esterna. Ocurrió un error desconocíu. Pue que'l controlador sea defeutuosu."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
+msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgstr "Nun pudo afitase la conexón a la fonte de datos esterna. Nun s'atopó'l controlador SDBC nes señes URL que se dieron."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
+msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgstr "Nun pudo afitase la conexón a la fonte de datos esterna. Nun fue a cargase l'alministrador de controladores SDBC."
+
+#: source/core/resource/strings.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "Formulariu"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Informe"
+
+#: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
+msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
+msgstr "Nun se grabó la fonte de datos. Por favor, use la interfaz XStorable pa guardar la fonte de datos."
+
+#: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr "El comandu proporcionáu nun ye una instrucción SELECT.\nNamái se permiten consultes."
+
+#: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
+msgid  "No values were modified."
+msgstr "Nun se modificaron valores."
+
+#: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
+msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgstr "Nun pudieron enxertase valores. La interfaz XRowUpdate nun ta soportada por ResultSet."
+
+#: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
+msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgstr "Nun pudieron enxertase los valores. La interfaz XResultSetUpdate nun ta soportada por ResultSet."
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
+msgid  "Values could not be modified, due to a missing condition statement."
+msgstr "Nun pudieron modificase los valores porque faltaba una instrucción de condición."
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_ADD.String.Text
+msgid  "The adding of columns is not supported."
+msgstr "L'amiestu de columnes nun ta soportáu."
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_DROP.String.Text
+msgid  "The dropping of columns is not supported."
+msgstr "Nun ta soportao el desplazar columnes."
+
+#: source/core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.String.Text
+msgid  "The WHERE condition could not be created for the primary key."
+msgstr "Nun pudo crease la condición WHERE pa la clave primaria."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.String.Text
+msgid  "The column does not support the property '%value'."
+msgstr "La columna nun soporta la propiedá '%value'."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.String.Text
+msgid  "The column is not searchable!"
+msgstr "¡La columna nun ye restolable!"
+
+#: source/core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.String.Text
+msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "El valor de les columnes nun ye del tipu Sequence<sal_Int8>."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.String.Text
+msgid  "The column is not valid."
+msgstr "La columna nun ye válida."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.String.Text
+msgid  "The column '%name' must be visible as a column."
+msgstr "La columna '%name' tien de ser visible como una columna."
+
+#: source/core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.String.Text
+msgid  "The interface XQueriesSupplier is not available."
+msgstr "La interfaz XQueriesSupplier nun ta disponible."
+
+#: source/core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.String.Text
+msgid  "The driver does not support this function."
+msgstr "El controlador nun soporta esta función."
+
+#: source/core/resource/strings.src#RID_STR_NO_ABS_ZERO.String.Text
+msgid  "An 'absolute(0)' call is not allowed."
+msgstr "Nun ta permitida una llamada 'absolute(0)'."
+
+#: source/core/resource/strings.src#RID_STR_NO_RELATIVE.String.Text
+msgid  "Relative positioning is not allowed in this state."
+msgstr "Nesti estáu nun se permite un posicionamientu rellativu."
+
+#: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
+msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgstr "Nun pue anovase una filera cuando'l ResultSet ta posicionáu dempués de la cabera filera."
+
+#: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
+msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgstr "Nun pue enxertase una filera nueva si nun se mueve enantes ResultSet a la filera d'inserción."
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
+msgid  "A row cannot be modified in this state"
+msgstr "N'esti estáu nun pue modificase una filera"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETEROW.String.Text
+msgid  "A row cannot be deleted in this state."
+msgstr "Nesti estáu nun pue desaniciase una filera."
+
+#: source/core/resource/strings.src#RID_STR_NO_TABLE_RENAME.String.Text
+msgid  "The driver does not support table renaming."
+msgstr "El controlador nun soporta'l cambéu de nome de la tabla."
+
+#: source/core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.String.Text
+msgid  "The driver does not support the modification of column descriptions."
+msgstr "El controlador nun soporta'l la modificación de les descripciones de columna."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the name."
+msgstr "El controlador nun soporta'l la modificación de les descripciones de columna por cambéu de nome."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the index."
+msgstr "El controlador nun soporta'l la modificación de les descripciones de columna por cambéu d'índiz."
+
+#: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "Nun esiste'l ficheru \"$file$\"."
+
+#: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
+msgid  "There exists no table named \"$table$\"."
+msgstr "Nun hai denguna tabla denomada \"$table$\"."
+
+#: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
+msgid  "There exists no query named \"$table$\"."
+msgstr "Nun hai denguna consulta denomada \"$table$\"."
+
+#: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
+msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgstr "Hai tables de la base de datos, nes que los sos nomes entren en conflictu colos de les consultes. Pa poder usar al máximu toles consultes y les tables, cada una tien de tener el so propiu nome."
+
+#: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr "El comandu SQL que comporta esti fallu ye:\n\n$command$"
+
+#: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The SQL command does not describe a result set."
+msgstr "El comandu SQL nun describe un conxuntu de resultaos."
+
+#: source/core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.String.Text
+msgid  "The name must not be empty."
+msgstr "El nome nun tien de quedar ermu."
+
+#: source/core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.String.Text
+msgid  "The container cannot contain NULL objects."
+msgstr "El contenedor nun pue contener oxetos NULL."
+
+#: source/core/resource/strings.src#RID_STR_NAME_ALREADY_USED.String.Text
+msgid  "There already is an object with the given name."
+msgstr "Yá esiste un oxetu con esi nome."
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.String.Text
+msgid  "This object cannot be part of this container."
+msgstr "Esti oxetu nun pue ser parte d'esti contenedor."
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.String.Text
+msgid  "The object already is, with a different name, part of the container."
+msgstr "L'oxetu yá ye parte del contenedor con otru nome."
+
+#: source/core/resource/strings.src#RID_STR_NAME_NOT_FOUND.String.Text
+msgid  "Unable to find the document '$name$'."
+msgstr "Nun ye dable alcontrar el documentu '$name$'."
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr "Nun se pudo atroxar e'l documentu en $location$:\n$message$"
+
+#: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
+msgid  "Error accessing data source '$name$':\\n$error$"
+msgstr "Fallu al acceder a la fonte de datos '$name$':\n$error$"
+
+#: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "Nun hai denguna tabla denomada \"$folder$\"."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
+msgid  "Cannot delete the before-first or after-last row."
+msgstr "Nun puede desaniciase la filera anterior a la primera, nin la postrera a la última."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.String.Text
+msgid  "Cannot delete the insert-row."
+msgstr "Nun puede desaniciase la filera d'inxerción."
+
+#: source/core/resource/strings.src#RID_STR_RESULT_IS_READONLY.String.Text
+msgid  "Result set is read only."
+msgstr "El conxuntu de resultaos ye de namái llectura."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.String.Text
+msgid  "DELETE privilege not available."
+msgstr "Nun ta disponible'l privilexu pal desaniciu DELETE."
+
+#: source/core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.String.Text
+msgid  "Current row is already deleted."
+msgstr "La filera actual yá se desanició."
+
+#: source/core/resource/strings.src#RID_STR_UPDATE_FAILED.String.Text
+msgid  "Current row could not be updated."
+msgstr "La filera actual nun se pue anovar."
+
+#: source/core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.String.Text
+msgid  "INSERT privilege not available."
+msgstr "Nun ta disponible'l privilexu pa inxerción INSERT."
+
+#: source/core/resource/strings.src#RID_STR_INTERNAL_ERROR.String.Text
+msgid  "Internal error: no statement object provided by the database driver."
+msgstr "Hebo un fallu interno: el remanador de la base de datos nun proporcionó dengún oxetu de tipu instrucción."
+
+#: source/core/resource/strings.src#RID_STR_EXPRESSION1.String.Text
+msgid  "Expression1"
+msgstr "Espresión1"
+
+#: source/core/resource/strings.src#RID_STR_NO_SQL_COMMAND.String.Text
+msgid  "No SQL command was provided."
+msgstr "Nun se proporcionó dengún comandu SQL."
+
+#: source/core/resource/strings.src#RID_STR_INVALID_INDEX.String.Text
+msgid  "Invalid column index."
+msgstr "Índiz de columna non válidu."
+
+#: source/core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.String.Text
+msgid  "Invalid cursor state."
+msgstr "Estáu del cursor inválidu."
+
+#: source/core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.String.Text
+msgid  "The cursor points to before the first or after the last row."
+msgstr "El cursor apunta enantes de la primer filera, o dempués de la última."
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.String.Text
+msgid  "The rows before the first and after the last row don't have a bookmark."
+msgstr "La filera anterior a la primera y la postrera a la última nun tienen marcadores."
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.String.Text
+msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgstr "La filera actual desanicióse, poro, nun tien un marcador."
+
+#: source/core/resource/strings.src#RID_STR_NO_EMBEDDING.String.Text
+msgid  "Embedding of database documents is not supported."
+msgstr "Nun ye dable incrustar documentos de base de datos."
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "Solicitóse una conexón pal siguiente URL \"$name$\"."
+
+#: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
+msgid  "The extension is not installed."
+msgstr "La estensión nun ta instalada."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+msgid  "Database ~name"
+msgstr "~nome de la base de datos"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+msgid  "User settings"
+msgstr "Configuración d'usuariu"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+msgid  "~Control user"
+msgstr "~Control d'usuariu"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+msgid  "~Administrator"
+msgstr "~Alministrador"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+msgid  "~Domain user"
+msgstr "~Dominiu del usuariu"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+msgid  "P~assword..."
+msgstr "C~ontraseña..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+msgid  "~Password..."
+msgstr "~Contraseña..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+msgid  "Passwo~rd..."
+msgstr "Resume"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+msgid  "~Backup file"
+msgstr "~Ficheru de copia de seguridá"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+msgid  "Database settings"
+msgstr "Configurar base de datos"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE"
+msgstr "S~YSDEVSPACE"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "TRANSACTI~ONLOG"
+msgstr "TRANSACTI~ONLOG"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE"
+msgstr "DATAD~EVSPACE"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+msgid  "Transaction ~file (MB)"
+msgstr "~Ficheru de transaición (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+msgid  "Data~base size (MB)"
+msgstr "Tamañu de la ~Base de datos (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "Datos del tamañu de ~buffer (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+msgid  "Backup file information"
+msgstr "Información de ficheru de copia de seguridá"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+msgid  "Create New Adabas D Database"
+msgstr "Crear nueva base de datos Adabas D"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+msgid  "No entry could be written in the configuration file."
+msgstr "La entrada nun puede escribise nel ficheru configuración."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+msgid  "An error occurred as the DB files were being created."
+msgstr "Hebo un fallu nos ficheros DB cuando taben creándose."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+msgid  "An error occurred as the system tables were being created."
+msgstr "Hebo un fallu nes tables del sistema cuando taba creándose."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+msgid  "The backup file entered does not exist."
+msgstr "El ficheru de copia de seguridá inxertáu nun esiste."
+
+#: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "El ficheru cualificáu nun podrá ser superior a \\'# \\' caráuteres."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+msgid  "The administrator and the control user cannot have the same name!"
+msgstr "L'alministrador y el control d'usuariu nun pueden tener el mesmu nome!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+msgid  "No name has been entered for the $name$ file!"
+msgstr "Nun s'introduxo dengún nome pal ficheru $name$!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+msgid  "You have to have administrator rights to create a new database!"
+msgstr "Tien de tener drechos d'alministrador pa facer una nueva base de datos!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+msgid  "The specified file name or directory does not exist."
+msgstr "El nome del ficheru o direutoriu nun esiste."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "Nun puede crease una nueva base de datos.\nPor favor, verifica la instalación Adabas D, especialmente les variables \"DBROOT\" y \"DBWORK\"."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "¡Avisu!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+msgid  "Creating database files."
+msgstr "Crear ficheros de la base de datos."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+msgid  "Creating database configuration file."
+msgstr "Crear ficheru de configuración de la base de datos."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+msgid  "Starting database for the first time."
+msgstr "Aniciar la base de datos per primer vegada."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+msgid  "The name entered already exists."
+msgstr "El nome inxertáu yá esiste."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+msgid  "No default names could be set for the database files. The total length is more than 40 characters."
+msgstr "Nun pueden afitase nomes predeterminaos pa los ficheros de la base de datos. La llonxitú total ye de más de 40 caráuteres."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+msgid  "No default names could be set for the database files. There is no write access."
+msgstr "Nun pueden afitase nomes predeterminaos pa los ficheros de la base de datos. Nun hai accesu d'escritura."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+msgid  "The current database need to be converted. Please insert control user  and password."
+msgstr "La base de datos actual necesita convertise. Por favor, inxerte'l control d'usuariu y la contraseña"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgstr "Nun se permiten espacios na contraseña. Por favor, introduz una nueva contraseña."
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+msgid  "Database Document Macro Migration"
+msgstr "Migración pa macros de documentos de base de datos"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+msgid  "Prepare"
+msgstr "Tresnar"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+msgid  "Backup Document"
+msgstr "Respaldar documentu"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+msgid  "Migrate"
+msgstr "Migrar"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+msgid  "Summary"
+msgstr "Resume"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+msgid  "Welcome to the Database Macro Migration Wizard"
+msgstr "Bienllegáu al «Asistente pa la migración de macros de bases de datos»"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr "Esti asistente empobinarálu na xera de migración de les sos macros y scripts.\n\nDempués de finar, toles macros y los scripts que s'alcontraben incrustaos dientro de los formularios ya informes tendranse movío al documentu de la base de datos. Durante'l procesu, les llibreríes renomaránse cuando seya necesario.\n\nSi los formularios o los informes contienen referencies a estes macros y scripts, axustaránse cuando seya dable.\n\nEnantes d'aniciar la migración tienen de zarrase tolos formularios, informes, consultes y tables. Calque «Siguiente» pa zarralos."
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgstr "Nun pudieron zarrase tolos oxetos. Zárrelos manualmente, y reanicie l'asistente."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+msgid  "Backup your Document"
+msgstr "Respaldar el documentu"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgstr "Pa permiti-y regresar al estáu anterior a la migración, el documento de la base de datos va respaldase nel allugamientu qu'escueya. Los cambeos fechos pol asistente aplicaránse al documentu orixinal, y la copia de respaldu nun se camudará."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+msgid  "Save To:"
+msgstr "Guardar a:"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+msgid  "Browse ..."
+msgstr "Guetar ..."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr "Calque \"Siguiente\" p'atroxar una copia del so documentu, y pa entamar cola migración."
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+msgid  "Migration Progress"
+msgstr "Progresu de la migración"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgstr "El documentu de la base de datos contién $forms$ formulariu(os) y $reports$ informe(s), que se tán procesando nesti intre:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+msgid  "Current object:"
+msgstr "Oxetu actual:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+msgid  "Current progress:"
+msgstr "Progresu actual:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+msgid  "Overall progress:"
+msgstr "Progresu total:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+msgid  "document $current$ of $overall$"
+msgstr "documentu $current$ de $overall$"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgstr "Tolos documentos procesáronse satisfactoriamente. Calque en 'Siguiente' pa ver un resume detalláu."
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+msgid  "Summary"
+msgstr "Resume"
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
+msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgstr "La migración finó correcho. Debaxo alcuéntrase un rexistru de les aiciones que s'executaron nel so documentu."
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
+msgid  "The migration was not successful. Examine the migration log below for details."
+msgstr "La migración nun finó correchamente. Desamine'l rexistru de migración que s'alcuentra debaxo, pa los detalles."
+
+#: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+msgid  "Form '$name$'"
+msgstr "Formulariu «$name$»"
+
+#: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+msgid  "Report '$name$'"
+msgstr "Informe '$name$'"
+
+#: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+msgid  "document $current$ of $overall$"
+msgstr "documentu $current$ de $overall$"
+
+#: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+msgid  "Database Document"
+msgstr "Documentu de la base de datos"
+
+#: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+msgid  "saved copy to $location$"
+msgstr "atroxóse una copia en $location$"
+
+#: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+msgid  "migrated $type$ library '$old$' to '$new$'"
+msgstr "movióse la biblioteca $type$ de '$old$' a '$new$'"
+
+#: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
+msgid  "$type$ library '$library$'"
+msgstr "$type$ biblioteca '$library$'"
+
+#: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
+msgid  "migrating libraries ..."
+msgstr "moviendo biblioteques..."
+
+#: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+msgid  "%PRODUCTNAME Basic"
+msgstr "%PRODUCTNAME Basic"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+msgid  "JavaScript"
+msgstr "JavaScript"
+
+#: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+msgid  "BeanShell"
+msgstr "BeanShell"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+msgid  "Java"
+msgstr "Java"
+
+#: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+msgid  "Python"
+msgstr "Python"
+
+#: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+msgid  "dialog"
+msgstr "diálogu"
+
+#: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
+msgid  "Error(s)"
+msgstr "Error(es)"
+
+#: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
+msgid  "Warnings"
+msgstr "Alvertencies"
+
+#: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
+msgid  "caught exception: "
+msgstr "esceición tomada: "
+
+#: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
+msgid  "You need to choose a backup location other than the document location itself."
+msgstr "Pa la copia de seguridá, necesites escoyer un allugamientu distintu al allugamientu del documentu"
+
+#: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
+msgid  "Invalid number of initialization arguments. Expected 1."
+msgstr "La cantidá d'argumentos d'anicialización ye incorreuta. ESperábase 1."
+
+#: source/ext/macromigration/macromigration.src#STR_NO_DATABASE.String.Text
+msgid  "No database document found in the initialization arguments."
+msgstr "Nun s'alcontró un documentu de base de datos ente los argumentos d'aniciu."
+
+#: source/ext/macromigration/macromigration.src#STR_NOT_READONLY.String.Text
+msgid  "Not applicable to read-only documents."
+msgstr "Nun s'aplica a los documentos de namái llectura."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgstr "Nun pue asignar el mesmu nome a una tabla y una consulta. Use un nome que nun tea asignáu a una consulta o tabla."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+msgid  "Table"
+msgstr "Tabla"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+msgid  "Query"
+msgstr "Consulta"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+msgid  "The given connection is no valid query and/or tables supplier."
+msgstr "La conexón proporcionada nun correspuende a una consulta y/o tabla esistente."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+msgid  "The given object is no table object."
+msgstr "L'oxetu proporcionáu nun ye un oxetu de tipu tabla."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgstr "Tipu de composición inválidu - necesítase un valor de com.sun.star.sdb.tools.CompositionType."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
+msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgstr "Tipu de comandu inválidu - namái se permite TABLE o QUERY dende com.sun.star.sdb.CommandType"
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+msgid  "Create Form in Design View..."
+msgstr "Crear Formulariu en Vista de Diseñu..."
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+msgid  "Use Wizard to Create Form..."
+msgstr "Usar l'Asistente pa Crear un Formulariu..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+msgid  "Use Wizard to Create Report..."
+msgstr "Usar l'Asistente pa Crear un Informe..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+msgid  "Create Report in Design View..."
+msgstr "Crear informe en vista de diseñu..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+msgid  "Create Query in Design View..."
+msgstr "Crear Entruga en Vista de Diseñu..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+msgid  "Create Query in SQL View..."
+msgstr "Crear Encamientu en Vista SQL..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+msgid  "Use Wizard to Create Query..."
+msgstr "Usar Asistente pa Crear Encamientu..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+msgid  "Create Table in Design View..."
+msgstr "Crear Tabla en Vista de Diseñu..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+msgid  "Use Wizard to Create Table..."
+msgstr "Usar Asistente pa Crear Tabla..."
+
+#: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+msgid  "Create View..."
+msgstr "Crear Vista..."
+
+#: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+msgid  "Forms"
+msgstr "Formularios"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+msgid  "Reports"
+msgstr "Informes"
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+msgid  "Form..."
+msgstr "Formulariu..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+msgid  "Report..."
+msgstr "Informe..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+msgid  "View (Simple)..."
+msgstr "Vista (Cenciella)..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+msgid  "Paste Special..."
+msgstr "Apegar Especial..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+msgid  "Delete"
+msgstr "Desaniciar"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+msgid  "Rename"
+msgstr "Renomar"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+msgid  "Edit"
+msgstr "Editar"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+msgid  "Edit in SQL View..."
+msgstr "Remanar en vista SQL..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+msgid  "Open"
+msgstr "Abrir"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+msgid  "Create as View"
+msgstr "Crear como Vista"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Form Wizard..."
+msgstr "Asistente de Formularios..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+msgid  "Report..."
+msgstr "Informe..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Report Wizard..."
+msgstr "Asistente d'Informes..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+msgid  "Select All"
+msgstr "Esbillar Too"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MenuItem.Text
+msgid  "~Database"
+msgstr "~Base de datos"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MenuItem.Text
+msgid  "Properties..."
+msgstr "Propiedaes..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MenuItem.Text
+msgid  "Connection Type..."
+msgstr "Tipu de conexón..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MenuItem.Text
+msgid  "Advanced Settings..."
+msgstr "Configuración Avanzao..."
+
+#: source/ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.String.Text
+msgid  "Do you want to delete the data source '%1'?"
+msgstr "¿Quies desaniciar l'orixe de datos '%1'?"
+
+#: source/ui/app/app.src#STR_APP_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base"
+msgstr " - %PRODUCTNAME Base"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a report."
+msgstr "L'asistente empobínate pelos pasos necesarios pa crear un informe."
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
+msgid  "Create a form by specifying the record source, controls, and control properties."
+msgstr "Crea un formulariu especificando l'orixe de datos, los controles y les propiedaes de control."
+
+#: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
+msgid  "Create a report by specifying the record source, controls, and control properties."
+msgstr "Crea un informe especificando la fonte del rexistru, controles y propiedaes de control."
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a form."
+msgstr "L'asistente empobínate pelos pasos necesarios pa crear un formulariu."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
+msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgstr "Crea una consulta especificando los filtros, les tables d'entrada, los nomes de campu y les propiedaes pa organizar o aconceyar."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
+msgid  "Create a query  entering an SQL statement directly."
+msgstr "Crea una consulta especificando diréutamente una instrucción SQL."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a query."
+msgstr "L'asistente empobínate pelos pasos necesarios pa crear una consulta."
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a table by specifying the field names and properties, as well as the data types."
+msgstr "Crea una tabla especificando los nomes de campu y las propiedaes, y les tribes de datos."
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
+msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgstr "Escueyi una esbilla d'amueses de tables personales y comerciales, que puedes personalizar pa facer una tabla."
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a view by specifying the tables and field names you would like to have visible."
+msgstr "Crear una vista especificando les tables y nomes de campu que-y prestaría tener visibles."
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
+msgid  "Opens the view wizard"
+msgstr "Abre la vista del asistente"
+
+#: source/ui/app/app.src#STR_DATABASE.String.Text
+msgid  "Database"
+msgstr "Base de datos"
+
+#: source/ui/app/app.src#STR_TASKS.String.Text
+msgid  "Tasks"
+msgstr "Xeres"
+
+#: source/ui/app/app.src#STR_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "Descripción"
+
+#: source/ui/app/app.src#STR_PREVIEW.String.Text
+msgid  "Preview"
+msgstr "Entever"
+
+#: source/ui/app/app.src#STR_DISABLEPREVIEW.String.Text
+msgid  "Disable Preview"
+msgstr "Deshabilitar Entever"
+
+#: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
+msgid  "None"
+msgstr "Dengún"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MenuItem.Text
+msgid  "Document Information"
+msgstr "Información del documentu"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
+msgid  "Document"
+msgstr "Documentu"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "Formulariu"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Informe"
+
+#: source/ui/app/app.src#STR_FRM_LABEL.String.Text
+msgid  "F~orm name"
+msgstr "Nome del f~ormulariu"
+
+#: source/ui/app/app.src#STR_RPT_LABEL.String.Text
+msgid  "~Report name"
+msgstr "Nome del ~informe"
+
+#: source/ui/app/app.src#STR_FOLDER_LABEL.String.Text
+msgid  "F~older name"
+msgstr "Nome de la c~arpeta"
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.String.Text
+msgid  "The document contains forms or reports with embedded macros."
+msgstr "El documentu contién formularios o reportes con macros incrustaes."
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr "Les macros han de tar incrustaos nel propiu documentu de base de datos.\n\nPues siguir usando'l documentu comu enantes, sicasí, afalámoste a migrar les macros. La opción del menú \"Ferramientes / Migración de macros...\" ayudaráte nesto.\n\nDecátate que nun podrás integrar macros nel documentu de base de datos hasta qu'esta migración tea fecha. "
+
+#: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
+msgid  "Embedded database"
+msgstr "Base de datos incrustada"
+
+#: source/ui/app/app.src#RID_STR_NO_DIFF_CAT.String.Text
+msgid  "You cannot select different categories."
+msgstr "Nun puedes esbillar categoríes distintes."
+
+#: source/ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.String.Text
+msgid  "Unsupported object type found ($type$)."
+msgstr "Alcontróse un tipu d'oxetu non almitíu ($type$)."
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+msgid  "Do you want to delete the selected data?"
+msgstr "¿Quies desaniciar los datos esbillaos?"
+
+#: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+msgid  "(filtered)"
+msgstr "(filtráu)"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "Fallu al afitar el criteriu d'ordenar"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "Fallu al afitar el criteriu de peñera"
+
+#: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+msgid  "Connection lost"
+msgstr "Perdióse la conexón"
+
+#: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+msgid  "Queries"
+msgstr "Consultes"
+
+#: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+msgid  "Tables"
+msgstr "Tables"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "Editar Ficheru de ~Base de datos..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "Bases de datos rexistraes ..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "Desco~neutar"
+
+#: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+msgid  "Confirm Deletion"
+msgstr "Confirmar Desaniciar"
+
+#: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+msgid  "Do you want to delete the table '%1'?"
+msgstr "¿Quies desaniciar la tabla  '%1'?"
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+msgid  "The query already exists. Do you want to delete it?"
+msgstr "Yá esiste esa consulta. ¿Prestaría-y desaniciala?"
+
+#: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database has been lost. Do you want to reconnect?"
+msgstr "Perdióse la conexón a la base de datos. ¿Prestaría-y reconeutar?"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+msgid  "Warnings encountered"
+msgstr "Atopóse un Avisu"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+msgid  "While retrieving the tables, warnings were reported by the database connection."
+msgstr "La conexón a la base de datos unvió alvertencies durante la determinación de les tables."
+
+#: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+msgid  "Connecting to \"$name$\" ..."
+msgstr "Coneutando a \"$name$\" ..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+msgid  "Loading query $name$ ..."
+msgstr "Cargando consulta $name$ ..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+msgid  "Loading table $name$ ..."
+msgstr "Cargando tabla $name$ ..."
+
+#: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+msgid  "No table format could be found."
+msgstr "Nun ye a atopase un formatu de tabla."
+
+#: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Nun pudo afitase la conexón al orixe de datos \"$name$\"."
+
+#: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+msgid  "Rebuild"
+msgstr "Reconstruir"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+msgid  "Column ~Format..."
+msgstr "~Formatu de Columna..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+msgid  "Copy Column D~escription"
+msgstr "Copiar la D~escripción de la Columna"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+msgid  "Table Format..."
+msgstr "Formatu de Tabla..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+msgid  "Row Height..."
+msgstr "Altor de Filera..."
+
+#: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+msgid  "Undo: Data Input"
+msgstr "Desfacer: Entrada de Datos"
+
+#: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+msgid  "Save current record"
+msgstr "Guardar rexistru actual"
+
+#: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+msgid  "Query #"
+msgstr "Consulta #"
+
+#: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "Tabla #"
+
+#: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+msgid  "View #"
+msgstr "Ver #"
+
+#: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+msgid  "The name \"#\" already exists."
+msgstr "El nome \"#\" yá existe."
+
+#: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+msgid  "No matching column names were found."
+msgstr "Nun s'atoparon nomes de columna coincidentes."
+
+#: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+msgid  "An error occurred. Do you want to continue copying?"
+msgstr "Hebo un fallu. ¿Prestaría-y seguir copiando?"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+msgid  "Data source table view"
+msgstr "Vista de tabla de fonte de datos"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+msgid  "Shows the selected table or query."
+msgstr "Amuesa la tabla o consulta esbillada."
+
+#: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "Tabla #"
+
+#: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+msgid  "Modify SQL statement(s)"
+msgstr "Modificar declaración(es) SQL"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+msgid  "Table name"
+msgstr "Nome de tabla"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+msgid  "Insert data"
+msgstr "Inxertar datos"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+msgid  "Delete data"
+msgstr "Desaniciar datos"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+msgid  "Modify data"
+msgstr "Modificar datos"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+msgid  "Alter structure"
+msgstr "Alterar la cadarma"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+msgid  "Read data"
+msgstr "Lleer datos"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+msgid  "Modify references"
+msgstr "Modificar referencies"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+msgid  "Drop structure"
+msgstr "Quitar cadarma"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+msgid  "Sort Ascending"
+msgstr "Axeitar n'Ascendente"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+msgid  "Sort Descending"
+msgstr "Axeitar en Descendente"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr "Nun puede coneutase al alministrador del controlador SDBC (#servicename#)."
+
+#: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+msgid  "A driver is not registered for the URL #connurl#."
+msgstr "Hai un controlador que nun ta rexistráu pa la URL #connurl#."
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+msgid  "No connection could be established for the URL #connurl#."
+msgstr "Nun pudo afitase una conexón pa la URL #connurl#."
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+msgid  "Please check the current settings, for example user name and password."
+msgstr "Por favor, compruebe la configuración actual, por exemplu, nome d'usuariu y contraseña."
+
+#: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+msgid  "Successfully connected, but information about database tables is not available."
+msgstr "Furruló la conexón, pero nun ta afayadiza la información de les tables de bases de datos."
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+msgid  "All tables"
+msgstr "Toles tables"
+
+#: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+msgid  "All views"
+msgstr "Toles vistes"
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+msgid  "All tables and views"
+msgstr "Toles tables y vistes"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.ModalDialog.Text
+msgid  "Indexes"
+msgstr "Indices"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.ToolBoxItem.Text
+msgid  "New Index"
+msgstr "Índiz nuevu"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.ToolBoxItem.Text
+msgid  "Delete Current Index"
+msgstr "Desaniciar índiz actual"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.ToolBoxItem.Text
+msgid  "Rename Current Index"
+msgstr "Renomar índiz actual"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.ToolBoxItem.Text
+msgid  "Save Current Index"
+msgstr "Guardar índiz actual"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.ToolBoxItem.Text
+msgid  "Reset Current Index"
+msgstr "Reaniciar índiz actual"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FixedLine.Text
+msgid  "Index details"
+msgstr "Detalles del índiz"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FixedText.Text
+msgid  "Index identifier:"
+msgstr "Identificador del índiz:"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CheckBox.Text
+msgid  "~Unique"
+msgstr "Ú~nicu"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FixedText.Text
+msgid  "Fields"
+msgstr "Campos"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PushButton.Text
+msgid  "~Close"
+msgstr "~Zarrar"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.String.Text
+msgid  "Sort order"
+msgstr "Orde"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.String.Text
+msgid  "Index field"
+msgstr "Campu d'índiz"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.String.Text
+msgid  "Ascending"
+msgstr "Ascendente"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.String.Text
+msgid  "Descending"
+msgstr "Descendente"
+
+#: source/ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.String.Text
+msgid  "Do you really want to delete the index '$name$'?"
+msgstr "¿De verdá quies desaniciar l'índiz '$name$'?"
+
+#: source/ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.String.Text
+msgid  "index"
+msgstr "índiz"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Title
+msgid  "Save Index"
+msgstr "Guardar índiz"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Message
+msgid  "The index must contain at least one field."
+msgstr "L'índiz tien que tener polo menos un campu."
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Title
+msgid  "Exit Index Design"
+msgstr "Pesllar diseñu d'índiz"
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Message
+msgid  "Do you want to save the changes made to the current index?"
+msgstr "¿Quies grabar los cambios fechos nel índiz?"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
+msgid  "There is already another index named \"$name$\"."
+msgstr "Yá esiste otru índiz col nome \"$name$\"."
+
+#: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "Nuna definición d'índiz, cada columna de tabla puede apaecer como muncho una vegada, yá emplegaste la columna \"$name$\" dos vegaes."
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
+msgid  "~Parameters"
+msgstr "~Parámetros"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FixedText.Text
+msgid  "~Value"
+msgstr "~Valor"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PushButton.Text
+msgid  "~Next"
+msgstr "~Siguiente"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.CancelButton.Text
+msgid  "Parameter Input"
+msgstr "Entrada de parámetru"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "La entrada nun fue quien a convertir n'un valor válidu pa la columna \"$name$\""
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
+msgid  "%PRODUCTNAME Base"
+msgstr "Base %PRODUCTNAME"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
+msgid  "Details"
+msgstr "Detalles"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
+msgid  "Error ~list:"
+msgstr "L~lista de fallos:"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FixedText.Text
+msgid  "~Description:"
+msgstr "~Descripción:"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.String.Text
+msgid  "SQL Status"
+msgstr "Estáu SQL"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.String.Text
+msgid  "Error code"
+msgstr "Códigu de fallu"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
+msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr "Munches vegaes, esti fallu dalu por una mala configuración de tipos de lletra pal idioma de la base datos. Mira ver la configuración. Pa ello, escueyi: Remanar - Base datos - Propiedaes"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
+msgid  "Error"
+msgstr "Fallu"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.String.Text
+msgid  "Warning"
+msgstr "Avisu"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.String.Text
+msgid  "Information"
+msgstr "Información"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.String.Text
+msgid  "Details"
+msgstr "Detáis"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.ModalDialog.Text
+msgid  "Standard Filter"
+msgstr "Peñera estándar"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "Y"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "OR"
+msgstr "O"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "Y"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "OR"
+msgstr "O"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "Nome del campu"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FixedText.Text
+msgid  "Condition"
+msgstr "Condición"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FixedText.Text
+msgid  "Value"
+msgstr "Valor"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FixedText.Text
+msgid  "Operator"
+msgstr "Operador"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FixedLine.Text
+msgid  "Criteria"
+msgstr "Criterios"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.String.Text
+msgid  "- none -"
+msgstr "- dengún -"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
+msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;como;non como;vaciu;enllenu"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
+msgid  "Relations"
+msgstr "Rellaciones"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "Tables implicaes"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "Campos implicaos"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FixedLine.Text
+msgid  "Update options"
+msgstr "Anovar opciones..."
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RadioButton.Text
+msgid  "~No action"
+msgstr "Denguna a~ición"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RadioButton.Text
+msgid  "~Update cascade"
+msgstr "Ano~var cascada"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "Poner ~null"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "Pre~determinar"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
+msgid  "Delete options"
+msgstr "Quitar opciones"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RadioButton.Text
+msgid  "~No action"
+msgstr "~Nun facer res"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RadioButton.Text
+msgid  "Delete ~cascade"
+msgstr "Desaniciar ~cascada"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "Po~ner nulu"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "Establecer pre~determináu"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.ModalDialog.Text
+msgid  "Sort Order"
+msgstr "Orde de clasificación"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "ascendente"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "descending"
+msgstr "descendente"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "ascendente"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "descending"
+msgstr "descendente"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "ascendente"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "descending"
+msgstr "descendente"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "Nome de campu"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FixedText.Text
+msgid  "and then"
+msgstr "dempués"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FixedText.Text
+msgid  "and then"
+msgstr "y lluéu"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FixedText.Text
+msgid  "Operator"
+msgstr "Operador"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FixedText.Text
+msgid  "Order"
+msgstr "Orden"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FixedLine.Text
+msgid  "Sort order"
+msgstr "Orde"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
+msgid  "<none>"
+msgstr "<Nengún>"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+msgid  "Options"
+msgstr "Opciones"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+msgid  "Use SQL92 naming constraints"
+msgstr "Emplegar les restricciones del nome SQL92"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+msgid  "Append the table alias name on SELECT statements"
+msgstr "Axuntar alcuñu n'insturcciones SELECT"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+msgid  "Use keyword AS before table alias names"
+msgstr "Emplegar pallabra clave AS enantes d'alcuños de tabla"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+msgid  "Use Outer Join syntax '{OJ }'"
+msgstr "Emplegar sintaxis d'unión esterna '{OJ }'"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+msgid  "Ignore the privileges from the database driver"
+msgstr "Inorar los privilexos del controlador de la base de datos"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+msgid  "Replace named parameters with '?'"
+msgstr "Trocar los parámetros nomaos con '?'"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+msgid  "Display version columns (when available)"
+msgstr "Amosar les columnes de versión (si tán disponibles)"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+msgid  "Use catalog name in SELECT statements"
+msgstr "Emplegar nome de catálogu n'instrucciones SELECT"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+msgid  "Use schema name in SELECT statements"
+msgstr "Emplegar nome de cadarma n'instrucciones SELECT"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+msgid  "Create index with ASC or DESC statement"
+msgstr "Crear índiz con instrucciones ASC o DESC"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+msgid  "End text lines with CR+LF"
+msgstr "Acabar llinies de testu con CR+LF"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+msgid  "Ignore currency field information"
+msgstr "Inorar información del campu de moneda"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+msgid  "Form data input checks for required fields"
+msgstr "Verificación de datos ingresáu a la forma pa campos que se requieren"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
+msgid  "Use ODBC conformant date/time literals"
+msgstr "Usar formatu de data/hora  ODBC"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
+msgid  "Supports primary keys"
+msgstr "Almite claves primaries"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CheckBox.Text
+msgid  "Respect the result set type from the database driver"
+msgstr "Respetar el tipu del conxuntu de resultaos del controlador de base de datos"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "Predetermináu"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "Amestáu"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "MS Access"
+msgstr "MS Access"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+msgid  "Comparison of Boolean values"
+msgstr "Comparación de valores booleanos"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FixedText.Text
+msgid  "Rows to scan column types"
+msgstr "Fileres pa escanear les tribes de columna"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+msgid  "Settings"
+msgstr "Preferencies"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+msgid  "Re~trieve generated values"
+msgstr "Ga~rrar los valores xeneraos"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+msgid  "~Auto-increment statement"
+msgstr "Condición de ~Auto-incrementu"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+msgid  "~Query of generated values"
+msgstr "~Pidimientu de valores xeneraos"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+msgid  "Generated Values"
+msgstr "Valores Xeneraos"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+msgid  "Special Settings"
+msgstr "Configuración especial"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.String.Text
+msgid  "Advanced Settings"
+msgstr "Preferencies avanzaes"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+msgid  "Save"
+msgstr "Guardar"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+msgid  "Create New Directory"
+msgstr "Crear un direutoriu nuevu"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+msgid  "Up One Level"
+msgstr "Xubir un nivel"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+msgid  "File ~name:"
+msgstr "~Nome del ficheru:"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+msgid  "Save"
+msgstr "Guardar"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+msgid  "~Path:"
+msgstr "~Camín:"
+
+#: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+msgid  "Folder"
+msgstr "Carpeta"
+
+#: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+msgid  "The file already exists. Overwrite?"
+msgstr "Yá existe'l ficheru. ¿Reescribilu?"
+
+#: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "Necesítase una contraseña pa coneutase a la fonte de datos \"$name$\"."
+
+#: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr "La carpeta\n\n$path$\n\nnun existe. ¿Tendría de crease?"
+
+#: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
+msgid  "The directory $name$ could not be created."
+msgstr "Nun pudo crease la carpeta $name$."
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.ModalDialog.Text
+msgid  "Convert Database"
+msgstr "Convertir la base datos"
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FixedLine.Text
+msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgstr "Meti la ~contraseña pal usuariu 'DOMAIN'."
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TabPage.Text
+msgid  "Tables Filter"
+msgstr "Peñera de Tables"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "Tables and table filter"
+msgstr "Tables y peñera de tables"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FixedText.Text
+msgid  "Mark the tables that should be visible for the applications."
+msgstr "Marcar les tables que tienen de tar visibles pa les aplicaciones."
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+msgid  "~Database name"
+msgstr "~Nome Database"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+msgid  "Se~rver / Port"
+msgstr "Sir~vidor / Puertu"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+msgid  "~Server"
+msgstr "~Sirvidor"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+msgid  "~Port"
+msgstr "~Puertu"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+msgid  "Default: 3306"
+msgstr "Predetermináu: 3306"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+msgid  "So~cket"
+msgstr "So~cket"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+msgid  "Named p~ipe"
+msgstr "Named p~ipe"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.String.Text
+msgid  "User Settings"
+msgstr "Configuración d'usuariu"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.String.Text
+msgid  "User administration"
+msgstr "Alministración d'usuariu"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+msgid  "Tables"
+msgstr "Tables"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+msgid  "Queries"
+msgstr "Consultes"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+msgid  "~Add"
+msgstr "~Amestar"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+msgid  "~Close"
+msgstr "~Zarrar"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+msgid  "Add Tables"
+msgstr "Amestar Tables"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+msgid  "Add Table or Query"
+msgstr "Amestar tabla o consulta"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TabDialog.Text
+msgid  "Field Format"
+msgstr "Formatu de Campu"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.1.PushButton.Text
+msgid  "Bac~k"
+msgstr "Tornar"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.String.Text
+msgid  "Font"
+msgstr "Fonte"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.String.Text
+msgid  "Format"
+msgstr "Formatu"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "Alliniamientu"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.String.Text
+msgid  "Table Format"
+msgstr "Formatu Tabla"
+
+#: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+msgid  "Use catalog for file-based databases"
+msgstr "Emplegar el catálogu pa bases de datos basaes en ficheros"
+
+#: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "Configuración de conexón"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "Nome de güéspede"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "Númberu de ~puertu"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
+msgid  "Advanced Properties"
+msgstr "Propiedaes Avanzaes"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.String.Text
+msgid  "Additional Settings"
+msgstr "Parámetros adicionales"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.String.Text
+msgid  "Connection settings"
+msgstr "Configuración de conexón"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.String.Text
+msgid  "Database properties"
+msgstr "Propiedaes de la base de datos"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TabControl.Text
+msgid  "Database properties"
+msgstr "Propiedaes de la base de datos"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FixedText.Text
+msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "Bienveníu al Asistente de Base de Datos %PRODUCTNAME"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
+msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr "Emplegue l'Asistente de Bases de Datos pa crear una base de datos nueva, abrir un ficheru existente de base de datos, o coneutar a una base de datos guardada nel so ordenador."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
+msgid  "What do you want to do?"
+msgstr "¿Qué te prestaría facer?"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RadioButton.Text
+msgid  "Create a n~ew database"
+msgstr "Crear una base de datos nu~eva"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RadioButton.Text
+msgid  "Open an existing database ~file"
+msgstr "Abrir un ~ficheru de base de datos existente"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FixedText.Text
+msgid  "Recently used"
+msgstr "Usaos recientemente"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RadioButton.Text
+msgid  "Connect to an e~xisting database"
+msgstr "Coneutar a una base de datos e~xistente"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
+msgid  "Select the type of database to which you want to establish a connection."
+msgstr "Escueyi'l tipu de base de datos cola que quies coneutar."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
+msgid  "Database ~type "
+msgstr "~Triba de base de datos "
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FixedText.Text
+msgid  "Database"
+msgstr "Base de datos"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr "Nes páxines siguientes, puedes configurar les opciones concretes pa la conexón.\n\nLa nueva configuración sustituirá la que tienes."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
+msgid  "MySQL"
+msgstr "MySQL"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.String.Text
+msgid  "Data Source Properties: #"
+msgstr "Propiedaes de la Fonte de Datos: #"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
+msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr "Nun se foi a cargar la biblioteca del programa #lib#, a lo meyor ta frañada. La esbilla de fonte de datos ODBC nun s'atopa."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr "Esta plataforma nun aguanta por esti tipu de fonte de datos.\nPuedes camudar los datos, pero de xuro nun vas ser quien a coneutar cola base datos."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "Xeneral"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional settings"
+msgstr "Configuración opcional"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CheckBox.Text
+msgid  "Display deleted records as well"
+msgstr "Amosar tamién los datos desaniciaos"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
+msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgstr "Nota: Cuando apaecen rexistros desaniciaos y, poro, inactivos, nun se pueden desaniciar rexistros del orixe de datos."
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
+msgid  "Indexes..."
+msgstr "Índices..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional Settings"
+msgstr "Configuraciones Opcionales"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FixedText.Text
+msgid  "ODBC ~options"
+msgstr "~Opciones ODBC"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "Axustes de la conexón"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "Nome de güéspede"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "Tamañu del ~búffer de datos (MB)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FixedText.Text
+msgid  "~Data increment (MB)"
+msgstr "Incrementu de ~Datos (MB)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FixedLine.Text
+msgid  "Administration"
+msgstr "Alministración"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FixedText.Text
+msgid  "Control ~user name"
+msgstr "Nome d'~usuariu de control"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FixedText.Text
+msgid  "Control ~password"
+msgstr "C~ontraseña de control"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CheckBox.Text
+msgid  "~Shut down service when closing %PRODUCTNAME"
+msgstr "~Pesllar servicia al zarrar %PRODUCTNAME"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PushButton.Text
+msgid  "E~xtended..."
+msgstr "E~stendíu..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "MySQL JDBC d~river class"
+msgstr "Clase de cont~rolador MySQL JDBC"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "Clas de preba"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr "Autentificación d'usuariu"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "~Nome d'usuariu"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr "Necesítase contraseña"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "Oracle JDBC d~river class"
+msgstr "Clase de cont~rolador Oracle JDBC"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "Clas de preba"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "Configuración de conexón"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FixedText.Text
+msgid  "~Base DN"
+msgstr "~Base DN"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CheckBox.Text
+msgid  "Use secure connection(SSL)"
+msgstr "Emplegar una conexón segura (SSL)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "~Númberu de puertu"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
+msgid  "Maximum number of ~records"
+msgstr "Máximu númberu de re~xistros"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FixedText.Text
+msgid  "~Hostname"
+msgstr "Nome del ~güéspede"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "~Númberu de puertu"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FixedText.Text
+msgid  "~Driver settings"
+msgstr "Configuración ~del controlador"
+
+#: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
+msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgstr "Pa coneutase a una base de datos esistente, por favor escueyi 'Coneutase a una base de datos esistente'."
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
+msgid  "Save As"
+msgstr "Guardar como"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FixedText.Text
+msgid  "Please enter a name for the object to be created:"
+msgstr "Pon-y un nome al oxetu que se va crear:"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FixedText.Text
+msgid  "~Catalog"
+msgstr "~Catálogu"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FixedText.Text
+msgid  "~Schema"
+msgstr "~Cadarma"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.String.Text
+msgid  "~Table Name"
+msgstr "Nome de ~Tabla"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.String.Text
+msgid  "~Name of table view"
+msgstr "Nome del ~mou tabla"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.String.Text
+msgid  "~Query name"
+msgstr "Nome de la ~consulta"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.String.Text
+msgid  "Rename to"
+msgstr "Renomar a"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.String.Text
+msgid  "Insert as"
+msgstr "Inxertar como"
+
+#: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+msgid  "Path to the dBASE files"
+msgstr "Camín a los ficheros dBASE"
+
+#: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+msgid  "Path to the text files"
+msgstr "Camín a los ficheros de testu"
+
+#: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+msgid  "Path to the spreadsheet document"
+msgstr "Camín del documentu de fueya de cálculu"
+
+#: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+msgid  "Name of the ODBC data source on your system"
+msgstr "Nome de la fonte de datos ODBC nel so ordenador"
+
+#: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+msgid  "Name of the MySQL database"
+msgstr "Nome de la base de datos MySQL"
+
+#: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+msgid  "Name of the Oracle database"
+msgstr "Nome de la base de datos Oracle"
+
+#: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+msgid  "Name of the Adabas D database"
+msgstr "Nome de la base de datos Adabas D"
+
+#: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+msgid  "Microsoft Access database file"
+msgstr "Ficheru de base de datos Microsoft Access"
+
+#: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgstr "Nun se necesiten más parámetros. Pa comprobar si la conexón furrula, calque nel botón '%test'."
+
+#: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+msgid  "Datasource URL"
+msgstr "URL de fonte de datos"
+
+#: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+msgid  "~Host name"
+msgstr "Nome del ~host"
+
+#: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+msgid  "~Mozilla profile name"
+msgstr "Nome del perfil de ~Mozilla"
+
+#: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+msgid  "~Thunderbird profile name"
+msgstr "Nome del perfil de ~Thunderbird"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.ModalDialog.Text
+msgid  "Data Source"
+msgstr "Orixe de Datos"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FixedText.Text
+msgid  "Choose a data source:"
+msgstr "Esbilla una fonte de datos:"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PushButton.Text
+msgid  "Organize..."
+msgstr "Alministrar..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PushButton.Text
+msgid  "Create..."
+msgstr "Crear..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.String.Text
+msgid  "Local Databases"
+msgstr "Bases de datos llocales"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.String.Text
+msgid  "Choose a database"
+msgstr "Escueyi base de datos"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "General"
+msgstr "Xeneral"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "Nome de güéspede"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr "Autentificación d'usuariu"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "~Nome d'usuariu"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr "Necesítase contraseña"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
+msgid  "JDBC properties"
+msgstr "Propiedaes JBDC"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "~JDBC driver class"
+msgstr "Clase de controlador ~JDBC"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test Class"
+msgstr "Clase de Preba"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+msgid  "Test Connection"
+msgstr "Prebar conexón"
+
+#: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+msgid  "No Adabas D data sources were found on your system."
+msgstr "Nun s'atoparen fontes de datos Adabas D nel so ordenador."
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+msgid  "Connection Test"
+msgstr "Prueba de conexón"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+msgid  "The connection was established successfully."
+msgstr "Afitóse correchamente la conexón."
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+msgid  "The connection could not be established."
+msgstr "Nun pudo afitase la conexón."
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
+msgid  "The JDBC driver was loaded successfully."
+msgstr "El controlador JDBC cargóse bien."
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
+msgid  "The JDBC driver could not be loaded."
+msgstr "El controlador JDBC nun pudo cargase."
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
+msgid  "MS Access file"
+msgstr "Ficheru MS Access"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
+msgid  "MS Access 2007 file"
+msgstr "Ficheru de MS Access 2007"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+msgid  "Database files"
+msgstr "Ficheros de bases de datos"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "~TRANSACTIONLOG:"
+msgstr "~TRANSACTIONLOG:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+msgid  "Database sizes"
+msgstr "Tamañu de la base de datos"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+msgid  "S~ize (MB):"
+msgstr "T~amañu (MB):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+msgid  "~Free memory space (MB):"
+msgstr "Espaciu ~llibre en memoria (MB):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+msgid  "~Memory utilization (in %):"
+msgstr "Emplegu de ~Memoria (en %):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+msgid  "Database Statistics"
+msgstr "Estadístiques de la base de datos"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+msgid  "Contains the system tables"
+msgstr "Contién les tables del sistema"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+msgid  "Contains information about transaction"
+msgstr "Contién información de la transaición"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+msgid  "Contains all data files"
+msgstr "Contién tolos ficheros de datos"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+msgid  "Total size of the database files"
+msgstr "Tamañu total de los ficheros de la base de datos"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+msgid  "Currently available space before a new datadev file is created."
+msgstr "Espaciu afayadizu anguaño enantes de crear un nuevu datadev."
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+msgid  "Currently used memory"
+msgstr "Memoria emplegada anguaño"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+msgid  "No information could be displayed because no access rights exist for the required system tables."
+msgstr "Nun se ye quien a amosar denguna información porque nun esiste'l drechu d'accesu a les tables del sistema que se necesiten."
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
+msgid  "SQL command"
+msgstr "Comandu SQL"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FixedText.Text
+msgid  "Command to execute"
+msgstr "Comandu a executar"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PushButton.Text
+msgid  "Execute"
+msgstr "executar"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FixedText.Text
+msgid  "Previous commands"
+msgstr "Comandos anteriores"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FixedLine.Text
+msgid  "Status"
+msgstr "Estáu"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PushButton.Text
+msgid  "Close"
+msgstr "Pesllar"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PushButton.Text
+msgid  "Execute SQL Statement"
+msgstr "Executar comandu SQL"
+
+#: source/ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.String.Text
+msgid  "Command successfully executed."
+msgstr "Comandu bien executáu."
+
+#: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
+msgid  "The connection to the database has been lost. This dialog will be closed."
+msgstr "Perdióse la conexón a la base de datos. Esti diálogu va desapaecer."
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
+msgid  "Indexes"
+msgstr "Indices"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FixedText.Text
+msgid  "~Table"
+msgstr "~Tabla"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FixedLine.Text
+msgid  "Assignment"
+msgstr "Asignaciones"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FixedText.Text
+msgid  "T~able indexes"
+msgstr "Índices de ta~bla"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FixedText.Text
+msgid  "~Free indexes"
+msgstr "Índices llib~res"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FixedLine.Text
+msgid  "User selection"
+msgstr "Esbilla d'usuariu"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FixedText.Text
+msgid  "Us~er:"
+msgstr "Us~uariu:"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PushButton.Text
+msgid  "~Add User..."
+msgstr "~Amestar Usuariu..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PushButton.Text
+msgid  "Change ~Password..."
+msgstr "Camudar la C~ontraseña..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PushButton.Text
+msgid  "~Delete User..."
+msgstr "~Desaniciar Usuariu..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FixedLine.Text
+msgid  "Access rights for selected user"
+msgstr "Drechos d'accesu pal usuariu seleicionáu"
+
+#: source/ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QueryBox.Message
+msgid  "Do you really want to delete the user?"
+msgstr "¿De xuru que quies desaniciar l'usuariu?"
+
+#: source/ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support user administration."
+msgstr "La base de datos nun soporta l'alministración d'usuariu."
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
+msgid  "User \"$name$:  $\""
+msgstr "Usuariu \"$name$:  $\""
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
+msgid  "Old p~assword"
+msgstr "Contr~aseña antigua"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FixedText.Text
+msgid  "~Password"
+msgstr "~Contraseña"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FixedText.Text
+msgid  "~Confirm  password"
+msgstr "~Confirmar contraseña"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.HelpButton.Text
+msgid  "Change Password"
+msgstr "Camudar la Contraseña"
+
+#: source/ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+msgid  "The passwords do not match. Please enter the password again."
+msgstr "Les contraseñes nun coinciden. Meta otra vuelta la contraseña."
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
+msgid  "Database Wizard"
+msgstr "Asistente pa bases de datos"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
+msgid  "Database Wizard"
+msgstr "Asistente de Base de Datos"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.String.Text
+msgid  "Select database"
+msgstr "Escoyer base de datos"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.String.Text
+msgid  "Set up dBASE connection"
+msgstr "Afitar una conexón dBASE"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "Afitar una conexón con ficheros de testu"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
+msgid  "Set up Microsoft Access connection"
+msgstr "Afitar una conexón Microsoft Access"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.String.Text
+msgid  "Set up LDAP connection"
+msgstr "Afitar una conexón LDAP"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.String.Text
+msgid  "Set up Adabas D connection"
+msgstr "Afitar una conexón Adabas D"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.String.Text
+msgid  "Set up ADO connection"
+msgstr "Afitar una conexón ADO"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.String.Text
+msgid  "Set up JDBC connection"
+msgstr "Afitar una conexón JDBC"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.String.Text
+msgid  "Set up Oracle database connection"
+msgstr "Afitar una conexón base de datos Oracle"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.String.Text
+msgid  "Set up MySQL connection"
+msgstr "Configurar conexón de MySQL"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.String.Text
+msgid  "Set up ODBC connection"
+msgstr "Configurar conexón de ODBC"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.String.Text
+msgid  "Set up Spreadsheet connection"
+msgstr "Configurar conexón de Spreadsheet"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.String.Text
+msgid  "Set up user authentication"
+msgstr "Configurar autenticación del usuariu"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.String.Text
+msgid  "Set up MySQL server data"
+msgstr "Configurar MySQL server data"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.String.Text
+msgid  "Save and proceed"
+msgstr "Grabar y siguir"
+
+#: source/ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.String.Text
+msgid  "New Database"
+msgstr "Base de Datos Nueva"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to a MySQL database"
+msgstr "Configura una conexón con una base de datos MySQL"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Puedes coneutar con una base datos MySQL usando ODBC o JDBC.\nContauta col alministrador del sistema si nun tas seguru de la configuración."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
+msgid  "How do you want to connect to your MySQL database?"
+msgstr "¿Cómo quies coneutate a la base de datos MySQL?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RadioButton.Text
+msgid  "Connect using ODBC (Open Database Connectivity)"
+msgstr "Coneutar usando ODBC (Open Database Connectivity)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RadioButton.Text
+msgid  "Connect using JDBC (Java Database Connectivity)"
+msgstr "Coneutar usando JDBC (Java Database Connectivity)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RadioButton.Text
+msgid  "Connect directly"
+msgstr "Coneutar direutamente"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FixedText.Text
+msgid  "Set up the user authentication"
+msgstr "Establecer l'autentificación d'usuariu"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FixedText.Text
+msgid  "Some databases require you to enter a user name."
+msgstr "Dalgunes bases de datos requieren que pongas un nome d'usuariu."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "~Nome d'usuariu"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CheckBox.Text
+msgid  "Password re~quired"
+msgstr "Necesí~tase contraseña"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PushButton.Text
+msgid  "~Test Connection"
+msgstr "~Prebar Conexón"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FixedText.Text
+msgid  "Decide how to proceed after saving the database"
+msgstr "Decidi cómo siguir grabando la base de datos"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FixedText.Text
+msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "¿Prestaría-y usar l'asistente pa rexistrar la base de datos en %PRODUCTNAME?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RadioButton.Text
+msgid  "~Yes, register the database for me"
+msgstr "~Sí, rexistrar la base de datos por mí"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RadioButton.Text
+msgid  "N~o, do not register the database"
+msgstr "N~on, non rexistrar la base de datos"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FixedText.Text
+msgid  "After the database file has been saved, what do you want to do?"
+msgstr "Dempués d'atroxar el ficheru de la base de datos, ¿qué-y prestaría facer?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CheckBox.Text
+msgid  "Open the database for editing"
+msgstr "Abrir la base de datos pa remanar"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CheckBox.Text
+msgid  "Create tables using the table wizard"
+msgstr "Crear tables usando l'asistente de tables"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FixedText.Text
+msgid  "Click 'Finish' to save the database."
+msgstr "Calque 'Finar' pa guardar la base de datos."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.String.Text
+msgid  "Set up connection to a MySQL database using JDBC"
+msgstr "Configurar conexón con una base de datos MySQL usando JDBC"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Escribi la información necesaria pa coneutar con una base de datos MySQL usando JDBC. Ten en cuenta que'l sistema tien que tener una clase de controlador JDBC instalada y rexistrada con %PRODUCTNAME.\nContauta col alministrador del sistema si nun tas seguru de la configuración."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
+msgid  "MySQL JDBC d~river class:"
+msgstr "Cla~se de controlador MySQL JDBC:"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.String.Text
+msgid  "Default: 3306"
+msgstr "Predetermináu: 3306"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FixedText.Text
+msgid  "Set up connection to a MySQL database"
+msgstr "Configurar la conexón a una base de datos de MySQL"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
+msgid  "Please enter the required information to connect to a MySQL database."
+msgstr "Por favor introduz la información requería pa coneutar a una base de datos MySQL."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
+msgid  "Set up a connection to dBASE files"
+msgstr "Configura una conexón con ficheros dBASE"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.String.Text
+msgid  "Select the folder where the dBASE files are stored."
+msgstr "Escueyi la carpeta na que grabar los archivos dBASE"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "Afitar una conexón a ficheros de testu"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
+msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr "Escueyi la carpeta na que grabar los ficheros de testu CSV (Comma Separated Values o valores separaos por comes). %PRODUCTNAME Base abrirá estos ficheros en mou de sólo llectura."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
+msgid  "Path to text files"
+msgstr "Camín de los ficheros de testu"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.String.Text
+msgid  "Set up a connection to a Microsoft Access database"
+msgstr "Configura una conexón con una base de datos de Microsoft Access"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
+msgid  "Please select the Microsoft Access file you want to access."
+msgstr "Escueyi'l ficheru de Microsoft Access que quies abrir."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to an LDAP directory"
+msgstr "Configura una conexón con un directoriu LDAP"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Escribi la información necesaria pa coneutar con un directoriu LDAP.\nContauta col alministrador del sistema si nun tas seguru de la configuración."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
+msgid  "Default: 389"
+msgstr "Predetermináu: 389"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CheckBox.Text
+msgid  "Use ~secure connection (SSL)"
+msgstr "Usar ~conexón segura (SSL)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Adabas D database"
+msgstr "Configura una conexón con una base de datos Adabas D"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr "Escribi'l nome de la base datos Adabas D cola que quies coneutar.\nCalca en 'Examinar...' pa escoyer una base datos Adabas D yá rexistrada en %PRODUCTNAME."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ADO database"
+msgstr "Configura una conexón con una base de datos ADO"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Escribi l'URL del orixe de datos ADO col que quies coneutar.\nCalaca en 'Examinar' pa configurar los parámetros del proveedor.\nConsulta al alministrador del sistema si tienes duldes sobre los parámetros siguientes."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ODBC database"
+msgstr "Configura una conexón con una base de datos ODBC"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Escribi'l nome de la base de datos ODBC cola que quies coneutar.\nCalca 'Examinar...' pa escoyer una base de datos ODBC yá rexistrada en %PRODUCTNAME.\nContauta col alministrador del sistema si nun tas seguru de la configuración."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to a JDBC database"
+msgstr "Configura una conexón con una base de datos JDBC"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Escribi la información necesaria pa coneutar con un directoriu JDBC.\nContauta col alministrador del sistema si nun tas seguru de la configuración."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Oracle database"
+msgstr "Configura una conexón con una base de datos Oracle"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.String.Text
+msgid  "Default: 1521"
+msgstr "Predetermináu: 1521"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.String.Text
+msgid  "Oracle JDBC ~driver class"
+msgstr "~Clase de controlador Oracle JDBC"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Apurri los datos afayadizos pa coneutate con una base de datos Oracle. Ten en cuenta que'l sistema tien qu'instalar una clase de controlador JDBC y rexistrase con %PRODUCTNAME.\nConsulta al alministrador del sistema si tienes duldes sobre los parámetros siguientes."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
+msgid  "Set up a connection to spreadsheets"
+msgstr "Configura una conexón con fueyes de cálculu"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr "Calca en 'Examinar...' pa escoyer una fueya de cálculu de %PRODUCTNAME o un llibru de Microsoft Excel.\n%PRODUCTNAME abrirá esti ficheru en mou de sólo llectura."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
+msgid  "~Location and file name"
+msgstr "All~ugamientu y nome del ficheru"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CheckBox.Text
+msgid  "~Password required"
+msgstr "Necesítase co~ntraseña"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FixedText.Text
+msgid  "~Height"
+msgstr "~Altor"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "~Automaticu"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HelpButton.Text
+msgid  "Row Height"
+msgstr "Altor Filera"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FixedText.Text
+msgid  "~Width"
+msgstr "~Anchu"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "~Automáticu"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.HelpButton.Text
+msgid  "Column Width"
+msgstr "Anchu Columna"
+
+#: source/ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.ModalDialog.Text
+msgid  "Text Connection Settings"
+msgstr "Configuración de conexón"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2).PB_AUTOBROWSEURL.PushButton.Text
+msgid  "Browse"
+msgstr "Esplorar"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTODATABASENAME.FixedText.Text
+msgid  "Database name"
+msgstr "Nome Database"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOHOSTNAME.FixedText.Text
+msgid  "Server"
+msgstr "Sirvidor"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOBASEDN.FixedText.Text
+msgid  "Base ~DN"
+msgstr "~DN Base"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOPORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "Númberu de ~puertu"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FL_DATACONVERT.FixedLine.Text
+msgid  "Data conversion"
+msgstr "Conversión de datos"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FT_CHARSET.FixedText.Text
+msgid  "~Character set"
+msgstr "Xuegu de ~caráuteres"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FixedText.Text
+msgid  "Specify the type of files you want to access"
+msgstr "Especifica la triba de ficheros a los que quies acceder"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RadioButton.Text
+msgid  "Plain text files (*.txt)"
+msgstr "Ficheros de testu ensin formato (*.txt)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RadioButton.Text
+msgid  "'Comma separated value' files (*.csv)"
+msgstr "Ficheros de 'testu separtáu con comes' (*.csv)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RadioButton.Text
+msgid  "Custom:"
+msgstr "Personalizáu:"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.Text
+msgid  "Custom: *.abc"
+msgstr "Personalizáu: *.abc"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FixedLine.Text
+msgid  "Row Format"
+msgstr "Formatu Crudu"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FixedText.Text
+msgid  "Field separator"
+msgstr "Separtador de campu"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FixedText.Text
+msgid  "Text separator"
+msgstr "Separtador de testu"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FixedText.Text
+msgid  "Decimal separator"
+msgstr "Separtador de decimales"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FixedText.Text
+msgid  "Thousands separator"
+msgstr "Separtador de miles"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CheckBox.Text
+msgid  "~Text contains headers"
+msgstr "~El testu tien testeres"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.String.Text
+msgid  "{None}"
+msgstr "(Dengún)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
+msgid  "#1 must be set."
+msgstr "Hai que definir #1."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.String.Text
+msgid  "#1 and #2 must be different."
+msgstr "#1 y #2 han de ser distintos."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.String.Text
+msgid  "Wildcards such as ?,* are not allowed in #1."
+msgstr "Los comodines como ?,* nun se permiten en #1."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FixedText.Text
+msgid  "JDBC d~river class"
+msgstr "Cla~se de controlador JDBC"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "Clas de prueba"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FixedText.Text
+msgid  "Socket"
+msgstr "Socket"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "Anovar"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "Nuevu ~diseñu de visualización"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "Nuevu d~iseñu de tabla"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "Consulta Asistente..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "Nueva ~consulta (vista de diseñu)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~Editar consulta"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "Nueva consulta (~vista SQL)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "Editar..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "Anc~hor de columna..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "Asistente d'Informes..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "Formulariu AutoPilot..."
+
+#: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+msgid  "System"
+msgstr "Sistema"
+
+#: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+msgid  "Error during creation"
+msgstr "Fallu al crear"
+
+#: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+msgid  "An unexpected error occurred. The operation could not be performed."
+msgstr "Hebo un fallu imprevistu: imposible executar la operación"
+
+#: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+msgid  "The document \"$file$\" could not be opened."
+msgstr "Imposible abrir el documentu $file$ !"
+
+#: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+msgid  "The table cannot be deleted because the database connection does not support this."
+msgstr "Imposible desaniciar la tabla porque la conexón cola base de datos nun ye pa con ello."
+
+#: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+msgid  "~All"
+msgstr "~Too"
+
+#: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+msgid  "Undo:"
+msgstr "Desfacer:"
+
+#: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+msgid  "Redo:"
+msgstr "Refacer:"
+
+#: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+msgid  "No corresponding column type could be found for column '#1'."
+msgstr "Nun s'atopó denguna columna de la triba de columna '#1'."
+
+#: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "Nun esiste'l ficheru \"$file$\"."
+
+#: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "Xeneráronse alvertencies na conexón col orixe de datos. Calca \"$buttontext$\" pa veles."
+
+#: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr "El nome '$#$' yá existe.\nEscribi otru nome."
+
+#: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "L'informe, \"$file$\", requier la estensión Oracle Report Builder."
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
+msgid  "Apply columns"
+msgstr "Aplicar columnes"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
+msgid  "Type formatting"
+msgstr "Tipu formatu"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr "Yá se definieron los campos que vienen darréu como llaves primaries:\n"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
+msgid  "Assign columns"
+msgstr "Asignar columnes"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
+msgid  "Copy RTF Table"
+msgstr "Copiar tabla RTF"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "~Ayuda"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+msgid  "~Cancel"
+msgstr "~Encaboxar"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
+msgid  "< ~Back"
+msgstr "< ~Atrás"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
+msgid  "~Next>"
+msgstr "~Siguiente>"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+msgid  "C~reate"
+msgstr "~Crear"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
+msgid  "Existing columns"
+msgstr "Columnes existentes"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
+msgid  "Column information"
+msgstr "Información de columna"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
+msgid  "Automatic type recognition"
+msgstr "Autoreconocimientu de triba"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
+msgid  "Lines (ma~x)"
+msgstr "Llinies (ma~x)"
+
+#: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "Clave Primaria"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
+msgid  "Source table: \\n"
+msgstr "Tabla d'orixe: \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
+msgid  "Destination table: \\n"
+msgstr "Tabla de destín: \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+msgid  "~All"
+msgstr "~Too"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+msgid  "Non~e"
+msgstr "Den~gún"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+msgid  "Ta~ble name"
+msgstr "Nome de la ta~bla"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+msgid  "Options"
+msgstr "Opciones"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
+msgid  "De~finition and data"
+msgstr "~Definición y datos"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
+msgid  "Def~inition"
+msgstr "Defi~nición"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
+msgid  "A~s table view"
+msgstr "Como vi~sta de tabla"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
+msgid  "Append ~data"
+msgstr "~Axuntar datos"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
+msgid  "Use first ~line as column names"
+msgstr "Usar la primer ~llinia como nome de columna"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
+msgid  "Crea~te primary key"
+msgstr "~Crear llave primaria"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+msgid  "Name"
+msgstr "Nome"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "Copiar tabla"
+
+#: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "Copiar tabla"
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
+msgid  "This table name is not valid in the current database."
+msgstr "Esti nome de tabla nun val pa esta base datos."
+
+#: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
+msgstr "Escueyi la opción 'Amestar datos' de la primera páxina pa incorporar datos a una tabla."
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
+msgid  "Please change the table name. It is too long."
+msgstr "Camuda'l nome de la tabla. Ye enforma llargu."
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+msgid  "Options"
+msgstr "Opciones"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+msgid  "~Type"
+msgstr "~Triba"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+msgid  "Inner join"
+msgstr "JOIN internu"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+msgid  "Left join"
+msgstr "Xunir a manzorga"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+msgid  "Right join"
+msgstr "Xunir a mandrecha"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+msgid  "Full (outer) join"
+msgstr "JOIN (esternu) completu"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+msgid  "Cross join"
+msgstr "JOIN cruzáu"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+msgid  "Natural"
+msgstr "Natural"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "Tables implicaes"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "Campos implicaos"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+msgid  "Join Properties"
+msgstr "Propiedaes d'Accesu"
+
+#: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+msgid  "Please note that some databases may not support this join type."
+msgstr "Ten en cuenta que delles bases de datos pueden ser incompatibles con esta triba de combinación."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+msgid  "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "Contién sólo rexistros nos que los conteníos de los campos venceyaos de les dos tables son iguales."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "Contién TOLOS rexistros de datos de '%1' y sólo los rexistros de '%2' nos que los conteníos de los campos venceyaos de les dos tables son iguales."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+msgid  "Contains ALL records from '%1' and from '%2'."
+msgstr "Contién TOLOS rexistros de datos de '%1' y de '%2'"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "Contién el productu cartesianu de TOLOS rexistros de '%1' y de '%2'"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr "Contién sólo una columna pa cada par de columnes llamaes dende '%1' y dende '%2'."
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+msgid  "Add Table Window"
+msgstr "Amestar ventana de tabla"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+msgid  "Move table window"
+msgstr "Mover la ventana de tabla"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+msgid  "Insert Join"
+msgstr "Inxertar Xunión"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+msgid  "Delete Join"
+msgstr "Desaniciar Xunión"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+msgid  "Resize table window"
+msgstr "Ventana de tabla - Camudar tamañu"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+msgid  "Delete Column"
+msgstr "Desaniciar columna"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+msgid  "Move column"
+msgstr "Mover columna"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+msgid  "Add Column"
+msgstr "Amestar columna"
+
+#: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, table '$name$' does not exist."
+msgstr "Espresión non válida, la tabla '$name$' nun existe."
+
+#: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, field name '$name$' does not exist."
+msgstr "¡La espresión nun val porque nun se puede asignar el nome de campu '$name$'!"
+
+#: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgstr "La consulta abarca #num# tables. Por embargu, la triba de base de datos escoyida sólo puede procesar como máximu #maxnum# table(s) por instrucción."
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+msgid  "Delete Table Window"
+msgstr "Desaniciar ventana de tabla"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+msgid  "Edit Column Description"
+msgstr "Camudar descripción de columnes"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+msgid  "Adjust column width"
+msgstr "Axustar anchor de columnes"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+msgid  "(not sorted);ascending;descending"
+msgstr "(ensin axeitar);ascendente;descendente"
+
+#: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+msgid  "(no function);Group"
+msgstr "(ensin función);Aconceyar"
+
+#: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+msgid  "(no table)"
+msgstr "(nun hai tabla)"
+
+#: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+msgid  "The database only supports sorting for visible fields."
+msgstr "La base datos sólo tien por la clasificación pa campos visibles."
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+msgid  "Functions"
+msgstr "Funciones"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+msgid  "Table Name"
+msgstr "Nome de la tabla"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+msgid  "Alias"
+msgstr "Alcuñu"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+msgid  "Distinct Values"
+msgstr "Valores inequívocos"
+
+#: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "Campu;Alcuñu;Tabla;Orde;Visible;Función;Criteriu;o;o"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+msgid  "There are too many columns."
+msgstr "Hai abondes columnes."
+
+#: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+msgid  "A condition cannot be applied to field [*]"
+msgstr "Nun val una condición pal campu [*]"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+msgid  "The SQL statement created is too long."
+msgstr "La espresión SQL creada ye enforma llarga."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+msgid  "Query is too complex"
+msgstr "La consulta ye enforma enguedeyada"
+
+#: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+msgid  "Nothing has been selected."
+msgstr "Nun hai res esbillao."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+msgid  "Too many search criteria"
+msgstr "Abondos criterios de gueta"
+
+#: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+msgid  "SQL syntax error"
+msgstr "Fallu de sintaxis SQL"
+
+#: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+msgid  "[*] cannot be used as a sort criterion."
+msgstr "Nun se puede ordenar según [*]."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+msgid  "There are too many tables."
+msgstr "Hai abondes tables."
+
+#: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+msgid  "The statement will not be applied when querying in the SQL dialect of the database."
+msgstr "En casu de consultar nel dialeutu SQL de la base de datos, la instrucción nun s'aceutará."
+
+#: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+msgid  "Field name not found or not unique"
+msgstr "El nome del campu nun s'atopó nun ye únicu"
+
+#: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+msgid  "Join could not be processed"
+msgstr "Nun se foi a executar l'enllaz."
+
+#: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+msgid  "Syntax error in SQL statement"
+msgstr "Fallu de sintaxis na sentencia SQL"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+msgid  "This database does not support table views."
+msgstr "Esta base datos nun almite vistes de tables."
+
+#: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+msgid  "This database does not support altering of existing table views."
+msgstr "Esta base datos nun tien por l'alteración de la vista existente de tables."
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+msgid  "Do you want to create a query instead?"
+msgstr "¿Quies crear una consulta por ella?"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+msgid  "No query could be created."
+msgstr "Nun puedo crease denguna consulta"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+msgid  "No query could be created because no fields were selected."
+msgstr "¡Nun se puedo crear denguna consulta porque nun esbillasti dengún campu!"
+
+#: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgstr "Desanicióse la fonte de datos. Nun se pueden grabar datos d'ella."
+
+#: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+msgid  "The column '$name$' is unknown."
+msgstr "La columna '$name$' nun se conoz."
+
+#: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+msgid  "Columns can only be compared using '='."
+msgstr "Les columnes sólo se pueden comparar col signu de igual '='."
+
+#: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+msgid  "You must use a column name before 'LIKE'."
+msgstr "Tien qu'apaecer un nome de columna delantre de 'COMO'."
+
+#: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+msgid  "The column could not be found. Please note that the database is case-sensitive."
+msgstr "Nun s'atopó la columna. Comprueba que la base datos estrema entre mayúscules y minúscules."
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Query Design"
+msgstr " -Base de %PRODUCTNAME: Diseñu de consulta"
+
+#: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: View Design"
+msgstr " -Base de %PRODUCTNAME: Diseñu de vista"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr "$object$ camudó.\n¿Quies grabar los cambeos?"
+
+#: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "$object$ ta basáu nun comandu SQL que nun pudo analizase."
+
+#: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "El $object$ abriráse en vista SQL."
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+msgid  "The table view"
+msgstr "La vista de la tabla"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+msgid  "The query"
+msgstr "La consulta"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+msgid  "The SQL statement"
+msgstr "La sentencia SQL"
+
+#: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The query does not create a result set, and thus cannot be part of another query."
+msgstr "La consulta nun crea un conxuntu de resultaos, colo que nun puede ser parte d'otra consulta."
+
+#: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgstr "Tantu la ConexónActiva como'l NomedeDatosFonte son parámetros que falten o incorreutos - nun se puede arrancar el diseñador de consultes."
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+msgid  "This relation already exists. Do you want to edit it or create a new one?"
+msgstr "Ésta rellación yá esiste. Quies editala o facer una nueva?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+msgid  "Edit..."
+msgstr "Editar..."
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+msgid  "Create..."
+msgstr "Crear..."
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Relation design"
+msgstr " -Base de %PRODUCTNAME: Diseñu de rellacion"
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support relations."
+msgstr "La base de datos nun sofita denguna rellación."
+
+#: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgstr "Si desanicia esta tabla desaniciaránse tamién toles rellaciones correspondientes. ¿Deseya continuar?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr "La database nun pudo crear la rellación. Seique seyan tecles especiales que nun tán sofitaes por esta triba de teclaú.\nPor favor, comprueba la to documentación de la base de datos."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr "Desconocíu;Testu;Númberu;Data/Hora;Data;Hora;Sí/Non;Moneda;Nota;Cuntador;Imaxe;Testu (fixu);Decimal;Binariu(fixu);Binariu;Enteru grande;Doble precisión;Coma flotante;Real;Enteru;Enteru pequeñu;Enteru nanu;Valor nulu;Oxetu;Distintu;Cadarma;Campu;BLOB;CLOB;REF;OTHER (fixu)"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "Inxertar/desaniciar clave primaria"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+msgid  "Yes"
+msgstr "Sí"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+msgid  "No"
+msgstr "Non"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+msgid  "Ascending"
+msgstr "Ascendente"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+msgid  "Descending"
+msgstr "Descendente"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+msgid  "<none>"
+msgstr "<nengún>"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+msgid  "Field name"
+msgstr "Nome del campu"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+msgid  "Field Name"
+msgstr "Nome del Campu"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+msgid  "Field ~type"
+msgstr "~Tipu de campu"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+msgid  "Field Type"
+msgstr "Tipu de Campu"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+msgid  "Field length"
+msgstr "Llargor del campu"
+
+#: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+msgid  "Description"
+msgstr "Descripción"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
+msgid  "Column Description"
+msgstr "Descripción de la columna"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+msgid  "Input required"
+msgstr "Necesítase entrada"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+msgid  "~AutoValue"
+msgstr "~Valor automáticu"
+
+#: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+msgid  "Field Properties"
+msgstr "Propiedaes del Campu"
+
+#: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "Xeneral"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+msgid  "Description:"
+msgstr "Descripción:"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+msgid  "Table properties"
+msgstr "Propiedaes de la tabla"
+
+#: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+msgid  "The text you entered is not a list element. "
+msgstr "El testu inxertáu nun ye un elementu. "
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+msgid  "Insert Rows"
+msgstr "Inxertar Fileres"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "Clave Primaria"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+msgid  "Modify cell"
+msgstr "Camudar caxella"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+msgid  "Delete row"
+msgstr "Desaniciar filera"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+msgid  "Modify field type"
+msgstr "Tipu de campu modificáu"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+msgid  "Insert row"
+msgstr "Inxertar filera"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+msgid  "Insert new row"
+msgstr "Inxertar una filera nueva"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "Inxertar/desaniciar clave primaria"
+
+#: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+msgid  "~Default value"
+msgstr "~Valor predetermináu"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+msgid  "~Entry required"
+msgstr "~Necesítase una entrada"
+
+#: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+msgid  "~Length"
+msgstr "~Llonxitú"
+
+#: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+msgid  "~Type"
+msgstr "~Tipu"
+
+#: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+msgid  "~Length"
+msgstr "~Llargor"
+
+#: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+msgid  "Decimal ~places"
+msgstr "~Decimales"
+
+#: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+msgid  "Format example"
+msgstr "Exemplu de formatu"
+
+#: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr "Escueyi'l valor que tien d'apaecer como predetermináu en cada rexistru de datos que\ns'inxerte de nuevu. Escueyi la secuencia erma si'l campu nun tien de tener un valor predetermináu."
+
+#: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr "Pon equí un valor predetermináu pal campu\n\nSí dempués metes datos na tabla, en cada rexistru nuevu usaráse esta cadena de caráuteres pal campu actual. Por esto tien que corresponder al formatu de caxella a introducir más abaxo."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgstr "Activa esta opción si nun se permiten valores null nesti campu, ye dicir, si l'usuariu tien que meter datos siempre."
+
+#: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+msgid  "Enter the maximum text length permitted."
+msgstr "Meti'l llargor máximu de testu permitíu."
+
+#: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+msgid  "Enter the number format."
+msgstr "Meti'l formatu de númberu."
+
+#: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr "Indica'l llargor de los datos nesti tipu de campu.\n\nPa los campos decimales va ser el llargor másimu del númbero inxertáu; pa campos binarios, el llargor del bloque de datos.\nSi'l valor fuera mayor que'l másimu permitíu pa esta base de datos, va correxise d'acuerdu al valor máximu correspondiente."
+
+#: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+msgid  "Specify the number of decimal places permitted in this field."
+msgstr "Indique'l númberu de decimales que tienen de contener los númberos nesti campu."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgstr "Equí pue ver cómo van ser formateaos los datos de la columna actual col formatu definíu actualmente, que pue camudar col botón que s'asitia al llau."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+msgid  "This is where you determine the output format of the data."
+msgstr "Equí pue determinar el tipu de formateáu pa la salida de los datos de la tabla."
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr "Escueyi si esti campu tien de tener valores d'incrementu automáticu.\n\nNesti casu nun vas poder escribir datos directamente, sinón que a cada rexistru nuevu de datos va asignáse-y automáticamente un valor propiu (que sal del incrementu proveniente del rexistru anterior)."
+
+#: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "Nun se pue guardar la tabla porque'l nome de columna \"$column$\" asignóse dos veces."
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "La columna \"$column$\" pertenez a la clave primaria. En casu d'eliminala, va eliminar tamién la clave primaria. ¿Desea continuar?"
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+msgid  "Primary Key Affected"
+msgstr "Clave Principal Afeutada"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+msgid  "Column"
+msgstr "Columna"
+
+#: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+msgid  "Continue anyway?"
+msgstr "¿Quies siguir de toes maneres?"
+
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "¡Curiáu!"
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+msgid  "The table could not be saved due to problems connecting to the database."
+msgstr "Nun se pudo grabar la tabla porque nun se pudo coneutar cola base datos."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgstr "Nun se pudo axustar la peñera de tables porque desanicióse la fonte de datos."
+
+#: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+msgid  "No primary key"
+msgstr "Denguna llave primaria"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr "Pa identificar rexistros nesta base datos necesítase un índiz únicu o una clave primaria.\nCuando cumplas una de les dos condiciones estructurales, podras meter datos na tabla.\n\n¿Quies crear agora una clave primaria?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base: Table Design"
+msgstr " -Base de %PRODUCTNAME: Diseñu de tabla"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "Nun se pudo camudar la columna \"$column$\". ¿Prefieres desaniciala y aplicar el formatu nuevu?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+msgid  "Error while saving the table design"
+msgstr "Fallu al grabar el diseñu de tabla"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+msgid  "The column $column$ could not be deleted."
+msgstr "Nun se puede desaniciar la columna $column$."
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr "Intentes borrar toles columnes de la tabla. Una tabla nun puede existir ensin columnes. ¿Quies borra la tabla de la base datos? Si nun ye eso, la tabla quedará como ta."
+
+#: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+msgid  "A~uto-increment statement"
+msgstr "Espresión incrementu a~utomáticu"
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr "Meti una espresión SQL pal campu d'incrementu automáticu.\n\nEsta espresión importaráse direutamente a la base datos dende que la tabla se cree."
+
+#: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr "Nun se pudo sacar información relativa a la triba de la base datos.\nEl mou diseñu de tabla nun ta a mano pa esta fonte de datos."
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+msgid  "change field name"
+msgstr "Camudar nome de campu"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+msgid  "change field type"
+msgstr "Camudar tipu de campu"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+msgid  "change field description"
+msgstr "Camudar descripción de campu"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+msgid  "change field attribute"
+msgstr "Camudar atributu de campu"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+msgid  "~Remember password until end of session"
+msgstr "~Remembra la clave hasta'l final de sesión."
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+msgid  "~Remember password"
+msgstr "~Remembrar la contraseña"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+msgid  "The destination database does not support views."
+msgstr "La base de datos de destín nun aguanta por vistes."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+msgid  "The destination database does not support primary keys."
+msgstr "La base de datos de destín nun aguanta por claves primaries."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgstr "Nun s'atopó dengún descriptor d'accesu a datos, o dengún descriptor capaz d'apurrir la información necesaria."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+msgid  "Only tables and queries are supported at the moment."
+msgstr "Sólo tables y entrugues se soporten nesti momentu."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+msgid  "The copy source's result set must support bookmarks."
+msgstr "El conxuntu de resultaos de la fonte de copia tien que tener por los marcadores."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgstr "Tipu de columna fonte ($type$) nun se soporta en la posición de columna $pos$."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+msgid  "Illegal number of initialization parameters."
+msgstr "Númberu illegal d'entamu de parámetros."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+msgid  "An error occurred during initialization."
+msgstr "Asocedió un fallu mientres s'instalaba."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
+msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgstr "Nun s'almite la opción $name$ nel descriptor d'orixe pal copiáu."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
+msgid  "To copy a query, your connection must be able to provide queries."
+msgstr "Pa copiar una consulta, la conexón tien de ser quien a proporcionar consultes."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
+msgid  "The given interaction handler is invalid."
+msgstr "El remanador d'interaición proporcionáu ye inválidu."

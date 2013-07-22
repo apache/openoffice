@@ -1,0 +1,1272 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
+msgstr "تەپسىلاتى"
+
+#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
+msgstr "بەت قاشى"
+
+#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
+msgstr "بەت ئاستى"
+
+#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
+msgid  "Group Header"
+msgstr "بېرىكمە بەت قاشى"
+
+#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
+msgid  "Group Footer"
+msgstr "بېرىكمە بەت ئاستى"
+
+#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
+msgstr "دوكلات بەت قاشى"
+
+#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
+msgstr "دوكلات بەت ئاستى"
+
+#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
+msgid  "The name '#1' already exists and can not be asssigned again."
+msgstr "'#1' ئىسىم مەۋجۇد، قايتا تەقسىملىيەلمەيدۇ"
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgstr "سىز قانۇنسىز پارامېتىر تەڭشىمەكچى.  '#1' دىن پايدىلىنىپ ئىناۋەتلىك پارامېتىر تەڭشەڭ."
+
+#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
+msgid  "The element is invalid."
+msgstr "بۇ ئېلېمېنت ئىناۋەتسىز."
+
+#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
+msgid  "Label field"
+msgstr "بەلگە سۆز بۆلىكى"
+
+#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
+msgid  "Formatted field"
+msgstr "فورماتلانغان بۆلەك"
+
+#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
+msgid  "Image control"
+msgstr "سۈرەت كونترول"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "دوكلات"
+
+#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
+msgid  "Shape"
+msgstr "شەكىل"
+
+#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
+msgid  "Fixed line"
+msgstr "مۇقىم قۇر"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+msgid  "Sorting and Grouping"
+msgstr "تەرتىپلە ۋە گۇرۇپپىلا"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+msgid  "Groups"
+msgstr "گۇرۇپپا"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+msgid  "Group actions"
+msgstr "گۇرۇپپا مەشغۇلاتى"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+msgid  "Move up"
+msgstr "يۇقىرىغا"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+msgid  "Move down"
+msgstr "تۆۋەنگە"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+msgid  "~Delete"
+msgstr "ئۆچۈر(~D)"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
+msgid  "Properties"
+msgstr "خاسلىق"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+msgid  "Sorting"
+msgstr "تەرتىپلە"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+msgid  "Ascending"
+msgstr "ئۆسكۈچى"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+msgid  "Descending"
+msgstr "كېمەيگۈچى"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+msgid  "Group Header"
+msgstr "بېرىكمە بەت قاشى"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "ھازىر"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Not present"
+msgstr "ھازىر ئەمەس"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+msgid  "Group Footer"
+msgstr "بېرىكمە بەت ئاستى"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "ھازىر"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Not present"
+msgstr "ھازىر ئەمەس"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+msgid  "Group On"
+msgstr "گۇرۇپپا ئۇسۇلى"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+msgid  "Each Value"
+msgstr "ھەر بىر قىممەت"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+msgid  "Group Interval"
+msgstr "گۇرۇپپا ئارىلىقى"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+msgid  "Keep Together"
+msgstr "بىرگە قوي"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+msgid  "No"
+msgstr "ياق"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+msgid  "Whole Group"
+msgstr "بارلىق گۇرۇپپا"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+msgid  "With First Detail"
+msgstr "بىرىنچى تەپسىلات"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+msgid  "Help"
+msgstr "ياردەم"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+msgid  "Field/Expression"
+msgstr "سۆز بۆلىكى/ئىپادە"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+msgid  "Sort Order"
+msgstr "تەرتىپلەش تەرتىپى"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+msgid  "Prefix Characters"
+msgstr "ئالدى قوشۇلغۇچى ھەرپ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+msgid  "Year"
+msgstr "يىل"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+msgid  "Quarter"
+msgstr "پەسىل"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+msgid  "Month"
+msgstr "ئاي"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+msgid  "Week"
+msgstr "ھەپتە"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+msgid  "Day"
+msgstr "كۈن"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+msgid  "Hour"
+msgstr "سائەت"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+msgid  "Minute"
+msgstr "مىنۇت"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+msgid  "Interval"
+msgstr "ئارىلىق"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+msgid  "Select a field or type an expression to sort or group on."
+msgstr "سۆز بۆلىكى تاللاڭ ياكى ئىپادە كىرگۈزۈپ تەرتىپلەڭ ياكى گۇرۇپپىلاڭ."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+msgid  "Display a header for this group?"
+msgstr "بۇ گۇرۇپپىنىڭ بەت قاشىنى كۆرسىتەمدۇ؟"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+msgid  "Display a footer for this group?"
+msgstr "بۇ گۇرۇپپىنىڭ بەت ئاستىنى كۆرسىتەمدۇ؟"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+msgid  "Select the value or range of values that starts a new group."
+msgstr "يېڭى گۇرۇپپىنى قوزغىتىشقا ئىشلىتىدىغان قىممەت ياكى قىممەت دائىرىسىنى تاللاڭ."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+msgid  "Interval or number of characters to group on."
+msgstr "گۇرۇپپىلاشقا ئىشلىتىدىغان ئارىلىق ياكى سانى"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+msgid  "Keep group together on one page?"
+msgstr "گۇرۇپپىنى ئوخشاش بىر بەتكە قويسۇنمۇ؟"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgstr "ئۆسكۈچى ياكى كېمەيگۈچى تەرتىپنى تاللاڭ. ئۆسكۈچى تەرتىپ A دىن Z ياكى 0 دىن 9 غىچە."
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+msgid  "Page Numbers"
+msgstr "بەت نومۇرى"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+msgid  "Format"
+msgstr "فورمات"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+msgid  "Page N"
+msgstr "N- بەت"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+msgid  "Page N of M"
+msgstr "N-بەت جەمئى M بەت"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+msgid  "Position"
+msgstr "ئورنى"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+msgid  "Top of Page (Header)"
+msgstr "بەت ئۈستى (بەت ئۈستى ئىزاھات)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+msgid  "Bottom of Page (Footer)"
+msgstr "بەت ئاستى (بەت ئاستى ئىزاھات)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+msgid  "General"
+msgstr "ئادەتتىكى"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+msgid  "Alignment:"
+msgstr "توغرىلا:"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "سول"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "مەركەز"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Right"
+msgstr "ئوڭ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+msgid  "Show Number on First Page"
+msgstr "بىرىنچى بەتتە بەت نومۇرى كۆرسەت"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "ياردەم(~H)"
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Page \" & #PAGENUMBER#"
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" of \" & #PAGECOUNT#"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+msgid  "Page Setup"
+msgstr "بەت تەڭشەك"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+msgid  "Page"
+msgstr "بەت"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+msgid  "Background"
+msgstr "تەگلىك"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+msgid  "Return"
+msgstr "Return"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+msgid  "Page"
+msgstr "بەت"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+msgid  "Background"
+msgstr "تەگلىك"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+msgid  "Section Setup"
+msgstr "دائىرە تەڭشىكى"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+msgid  "Return"
+msgstr "Return"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+msgid  "Background"
+msgstr "تەگلىك"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+msgid  "Character Settings"
+msgstr "ھەرپ تەڭشەك"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+msgid  "Font"
+msgstr "خەت نۇسخا"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "خەت نۇسخا ئۈنۈمى"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+msgid  "Position"
+msgstr "ئورنى"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+msgid  "Asian Layout"
+msgstr "شەرقى ئاسىيا ئۇسلۇبى"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+msgid  "Background"
+msgstr "تەگلىك"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+msgid  "Alignment"
+msgstr "توغرىلا"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+msgid  "Return"
+msgstr "Return"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+msgid  "Character"
+msgstr "ھەرپ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+msgid  "Line"
+msgstr "سىزىق"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+msgid  "Line"
+msgstr "سىزىق"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+msgid  "Line Styles"
+msgstr "سىزىق ئۇسلۇبى"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+msgid  "Arrow Styles"
+msgstr "ئىسترېلكا ئۇسلۇبى"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+msgid  "Return"
+msgstr "Return"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+msgid  "Line"
+msgstr "سىزىق"
+
+#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+msgid  "Report navigator"
+msgstr "دوكلات يول باشچى"
+
+#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+msgid  "Functions"
+msgstr "فونكىسىيە"
+
+#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+msgid  "Groups"
+msgstr "گۇرۇپپا"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+msgid  "Sorting and Grouping..."
+msgstr "تەرتىپلە ۋە گۇرۇپپىلا…"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+msgid  "Page Header/Footer..."
+msgstr "بەت قاشى/ئاستى…"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+msgid  "Report Header/Footer..."
+msgstr "دوكلات قېشى/ئاستى…"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+msgid  "New Function"
+msgstr "يېڭى فونكسىيە"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+msgid  "Properties..."
+msgstr "خاسلىق…"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "سۆز بۆلەك قىممىتى"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Expression Is"
+msgstr "ئىپادە"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+msgid  "between"
+msgstr "ئارىسىدا"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+msgid  "not between"
+msgstr "ئارىسىدا ئەمەس"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+msgid  "equal to"
+msgstr "تەڭ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+msgid  "not equal to"
+msgstr "تەڭ ئەمەس"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+msgid  "greater than"
+msgstr "چوڭ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+msgid  "less than"
+msgstr "كىچىك"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+msgid  "greater than or equal to"
+msgstr "چوڭ ياكى تەڭ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+msgid  "less than or equal to"
+msgstr "كىچىك ياكى تەڭ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+msgid  "and"
+msgstr "ۋە"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+msgid  "Example"
+msgstr "مىسال"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+msgid  "Conditional Formatting"
+msgstr "شەرت فورمات"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "ياردەم(~H)"
+
+#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+msgid  "Condition $number$"
+msgstr "شەرت $number$"
+
+#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+msgid  "White"
+msgstr "ئاق"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+msgid  "Font color"
+msgstr "خەت رەڭگى"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+msgid  "Background"
+msgstr "تەگلىك"
+
+#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+msgid  "No Fill"
+msgstr "تولدۇرۇلمىغان"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+msgid  "Sort Ascending"
+msgstr "ئۆسكۈچى تەرتىپ"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+msgid  "Sort Descending"
+msgstr "كېمەيگۈچى تەرتىپ"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+msgid  "Remove sorting"
+msgstr "تەرتىپلەشنى چىقىرىۋەت"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+msgid  "Insert"
+msgstr "قىستۇر"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+msgid  "Help"
+msgstr "ياردەم"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr "سۆز بۆلەكنى قېلىپقا قىستۇرۇپ تاللانغان بۆلەكنى يورۇتۇپ كۆرسىتىپ، ئاندىن قىستۇرنى چېكىڭ ياكى Enter نى بېسىڭ."
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+msgid  "Date and Time"
+msgstr "چېسلا ۋە ۋاقىت"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+msgid  "Include Date"
+msgstr "ئىچىدىكى چېسلا"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+msgid  "Format"
+msgstr "فورمات"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+msgid  "Include Time"
+msgstr "ئىچىدىكى ۋاقىت"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+msgid  "Format"
+msgstr "فورمات"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "ياردەم(~H)"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "ئادەتتىكى"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "سانلىق مەلۇمات"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+msgid  "No"
+msgstr "ياق"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+msgid  "Yes"
+msgstr "ھەئە"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+msgid  "Force New Page"
+msgstr "مەجبۇرىي بەت ئالماشتۇر"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+msgid  "None"
+msgstr "يوق"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+msgid  "Before Section"
+msgstr "ئابزاستىن ئىلگىرى"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+msgid  "After Section"
+msgstr "ئابزاستىن كېيىن"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+msgid  "Before & After Section"
+msgstr "دائىرىدىن ئىلگىرى & كېيىن"
+
+#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+msgid  "New Row Or Column"
+msgstr "يېڭى قۇر ياكى ستون"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+msgid  "Keep Together"
+msgstr "بىرگە قوي"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+msgid  "No"
+msgstr "ياق"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+msgid  "Whole Group"
+msgstr "بارلىق گۇرۇپپا"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+msgid  "With First Detail"
+msgstr "بىرىنچى تەپسىلات"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+msgid  "Can Grow"
+msgstr "چوڭايت"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+msgid  "Can Shrink"
+msgstr "كىچىكلەت"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+msgid  "Repeat Section"
+msgstr "تەكرار ئورۇن"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+msgid  "Print repeated values"
+msgstr "تەكرار قىممەت باس"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+msgid  "Conditional Print Expression"
+msgstr "شەرتلىك بېسىش ئىپادىسى"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+msgid  "Start new column"
+msgstr "يېڭى ستون باشلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+msgid  "Start new page"
+msgstr "يېڭى بەت باشلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+msgid  "Reset page number"
+msgstr "بەت نومۇرىنى ئەسلىگە قايتۇر"
+
+#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+msgid  "Chart type"
+msgstr "دىئاگرامما تىپى"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+msgid  "Print When Group Change"
+msgstr "گۇرۇپپا ئۆزگەرگەندە باس"
+
+#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "كۆرۈنۈشچان"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+msgid  "Group keep together"
+msgstr "بىر يەرگە قوي"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+msgid  "Per Page"
+msgstr "ھەر بىر بەت"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+msgid  "Per Column"
+msgstr "ھەر بىر ستون"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+msgid  "None"
+msgstr "يوق"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+msgid  "Section"
+msgstr "دائىرە"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+msgid  "Automatic"
+msgstr "ئاپتوماتىك"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+msgid  "Page header"
+msgstr "بەت قاشى"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+msgid  "Page footer"
+msgstr "بەت ئاستى"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+msgid  "All Pages"
+msgstr "ھەممە بەت"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+msgid  "Not With Report Header"
+msgstr "دوكلات بەت قاشى بار بەتتە ئەمەس"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+msgid  "Not With Report Footer"
+msgstr "دوكلات بەت ئاستى بار بەتتە ئەمەس"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+msgid  "Not With Report Header/Footer"
+msgstr "دوكلات بەت قاشى/ئاستى  بار بەتتە ئەمەس"
+
+#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+msgid  "Deep traversing"
+msgstr "چوڭقۇر ئېردوگىيە"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+msgid  "Pre evaluation"
+msgstr "ئالدىن مۆلچەر"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+msgid  "Position X"
+msgstr "X ئورنى"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+msgid  "Position Y"
+msgstr "Y ئورنى"
+
+#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "كەڭلىك"
+
+#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "ئېگىزلىك"
+
+#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+msgid  "Initial value"
+msgstr "دەسلەپلەشتۈرۈش قىممىتى"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+msgid  "Preserve as Link"
+msgstr "ئۇلانما سۈپىتىدە قالدۇر"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+msgid  "Formula"
+msgstr "فورمۇلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+msgid  "Data field"
+msgstr "سانلىق مەلۇمات سۆز بۆلىكى"
+
+#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "خەت نۇسخا"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+msgid  "Background color"
+msgstr "تەگلىك رەڭگى"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+msgid  "Background Transparent"
+msgstr "سۈزۈك تەگلىك"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+msgid  "Background Transparent"
+msgstr "سۈزۈك تەگلىك"
+
+#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+msgid  "This operation is not allowed. The control overlaps with another one."
+msgstr "بۇ مەشغۇلات چەكلىنىدۇ. بۇ كونترول بىلەن يەنە بىر كونترول قاتلانغان."
+
+#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+msgid  "This position can not be set. It is invalid."
+msgstr "بۇ ئورۇنغا تەڭشىگىلى بولمايدۇ. مەشغۇلات ئىناۋەتسىز."
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+msgid  "Group: %1"
+msgstr "گۇرۇپپا: %1"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+msgid  "Function"
+msgstr "فۇنكسىيە"
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+msgid  "Scope"
+msgstr "تەسىر دائىرىسى"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+msgid  "Data Field Type"
+msgstr "سانلىق مەلۇمات سۆز بۆلىكى تىپى"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+msgid  "Field or Formula"
+msgstr "سۆز بۆلىكى ياكى فورمۇلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+msgid  "Function"
+msgstr "فۇنكسىيە"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+msgid  "Counter"
+msgstr "سانىغۇچ"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+msgid  "User defined Function"
+msgstr "ئىشلەتكۈچى ئېنىقلىما بەرگەن فونكسىيە"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
+msgstr "ئاساسىي سۆز بۆلىكىگە ئۇلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+msgid  "Link slave fields"
+msgstr "ئىككىنچى سۆز بۆلىكىگە ئۇلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr "دىئاگرامما دوكلاتنىڭ نۆۋەتتىكى خاتىرىسىنىڭ تەپسىلىي سانلىق مەلۇماتىنى كۆرسىتىشكە ئىشلىتىلىدۇ، شۇڭا سىز دىئاگراممىدىكى قايسى ستون بىلەن دوكلاتتىكى قايسى ستون بىلەن ماسلىشىدىغانلىقىنى بەلگىلىسىڭىز بولىدۇ."
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+msgid  "Chart"
+msgstr "دىئاگرامما"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+msgid  "Report"
+msgstr "دوكلات"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+msgid  "Preview Row(s)"
+msgstr "قۇر ئالدىن كۆزەت"
+
+#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+msgid  "Area"
+msgstr "دائىرە"
+
+#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+msgid  "Report Output Format"
+msgstr "دوكلات چىقىرىش فورماتى"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr "بويىغا توغرىلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+msgid  "Top"
+msgstr "ئۇستى"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+msgid  "Middle"
+msgstr "ئوتتۇرا"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+msgid  "Bottom"
+msgstr "ئاستى"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+msgid  "Horz. Alignment"
+msgstr "توغرىسىغا توغرىلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+msgid  "Left"
+msgstr "سول"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+msgid  "Right"
+msgstr "ئوڭ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+msgid  "Block"
+msgstr "بۆلەك"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+msgid  "Center"
+msgstr "مەركەز"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+msgid  "Counter"
+msgstr "سانىغۇچ"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+msgid  "Accumulation"
+msgstr "جەمئى"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+msgid  "Minimum"
+msgstr "ئەڭ كىچىك"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+msgid  "Maximum"
+msgstr "ئەڭ چوڭ"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+msgid  "Properties: "
+msgstr "خاسلىق: "
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+msgid  "No Control marked"
+msgstr "كونترول بۆلىكى تاللانمىدى"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+msgid  "Multiselection"
+msgstr "كۆپ تاللاش"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "سۈرەت كونترول"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label field"
+msgstr "بەلگە سۆز بۆلىكى"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+msgid  "Line"
+msgstr "سىزىق"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "فورمات بۆلىكى"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+msgid  "Shape"
+msgstr "شەكىل"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+msgid  "Report"
+msgstr "دوكلات"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+msgid  "Section"
+msgstr "دائىرە"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+msgid  "Function"
+msgstr "فۇنكسىيە"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+msgid  "Group"
+msgstr "گۇرۇپپا"
+
+#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+msgid  "Show ruler"
+msgstr "سىزغۇچ كۆرسەت"
+
+#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+msgid  "Show grid"
+msgstr "سېتكا كۆرسەت"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+msgid  "Change Object"
+msgstr "ئوبيېكت ئۆزگەرت"
+
+#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+msgid  "Move Group(s)"
+msgstr "گۇرۇپپا يۆتكە"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+msgid  "Conditional Formatting"
+msgstr "شەرت فورمات"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+msgid  "Remove report header / report footer"
+msgstr "دوكلات قېشى/دوكلات ئاستى چىقىرىۋەت"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+msgid  "Add report header / report footer"
+msgstr "دوكلات قېشى/دوكلات ئاستى قوش"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+msgid  "Remove page header / page footer"
+msgstr "بەت قاشى/بەت ئاستى چىقىرىۋەت"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+msgid  "Add page header / page footer"
+msgstr "بەت قاشى/بەت ئاستى قوش"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+msgid  "Change property '#'"
+msgstr "خاسلىق ئۆزگەرت '#'"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+msgid  "Add group header "
+msgstr "بېرىكمە بەت قاشى قوش "
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+msgid  "Remove group header "
+msgstr "بېرىكمە بەت قاشى چىقىرىۋەت "
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+msgid  "Add group footer "
+msgstr "بېرىكمە بەت ئاستى قوش "
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+msgid  "Remove group footer "
+msgstr "بېرىكمە بەت ئاستى چىقىرىۋەت "
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+msgid  "Add function"
+msgstr "فۇنكسىيە قوش"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+msgid  "Delete function"
+msgstr "فونكسىيە ئۆچۈر"
+
+#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+msgid  "Design"
+msgstr "لايىھە"
+
+#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+msgid  "Preview"
+msgstr "ئالدىن كۆزەت"
+
+#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+msgid  "Report #"
+msgstr "دوكلات #"
+
+#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+msgid  "~Report name"
+msgstr "دوكلات ئاتى(~R)"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+msgid  "Delete Group"
+msgstr "گۇرۇپپا ئۆچۈر"
+
+#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+msgid  "Add Group"
+msgstr "گۇرۇپپا قوش"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+msgid  "Delete Selection"
+msgstr "تاللىغاننى ئۆچۈرۈۋەت"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+msgid  "Delete Function"
+msgstr "فونكسىيە ئۆچۈر"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+msgid  "Change Size"
+msgstr "چوڭلۇقىنى ئۆزگەرت"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+msgid  "Paste"
+msgstr "چاپلا"
+
+#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+msgid  "Insert Control"
+msgstr "كونترول قىستۇر"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+msgid  "Delete Control"
+msgstr "كونترول ئۆچۈر"
+
+#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+msgid  "Insert Group"
+msgstr "گۇرۇپپا قىستۇر"
+
+#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+msgid  "Delete Group"
+msgstr "گۇرۇپپا ئۆچۈر"
+
+#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+msgid  "GroupHeader"
+msgstr "بىرلەشمە بەت قاشى"
+
+#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+msgid  "GroupFooter"
+msgstr "بىرلەشمە بەت ئاستى"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+msgid  "Sorting and Grouping..."
+msgstr "تەرتىپلە ۋە گۇرۇپپىلا…"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+msgid  "Background Color..."
+msgstr "تەگلىك رەڭگى…"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+msgid  "Ruler..."
+msgstr "سىزغۇچ…"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+msgid  "Grid..."
+msgstr "سېتكا…"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+msgid  "~Arrange"
+msgstr "تەرتىپلە(~A)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+msgid  "Bring ~Forward"
+msgstr "ئالدىغا بىر قەۋەت(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+msgid  "Send Back~ward"
+msgstr "ئارقىغا بىر قەۋەت(~W)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+msgid  "~Object Resizing"
+msgstr "ئوبيېكت چوڭلۇق تەڭشىكى(~O)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+msgid  "~Fit to smallest width"
+msgstr "ئەڭ قىسقا كەڭلىككە تەڭشە(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+msgid  "~Fit to greatest width"
+msgstr "ئەڭ ئۇزۇن كەڭلىككە تەڭشە(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+msgid  "~Fit to smallest height"
+msgstr "ئەڭ تۆۋەن ئېگىزلىككە تەڭشە(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+msgid  "~Fit to greatest height"
+msgstr "ئەڭ يۇقىرى ئېگىزلىككە تەڭشە(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+msgid  "Section"
+msgstr "دائىرە"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+msgid  "Shrink"
+msgstr "كىچىكلەت"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+msgid  "Shrink from top"
+msgstr "ئۈستىدىن كىچىكلەت"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+msgid  "Shrink from bottom"
+msgstr "ئاستىدىن كىچىكلەت"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+msgid  "Distribution..."
+msgstr "جايلاشتۇر…"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+msgid  "Properties..."
+msgstr "خاسلىق…"
+
+#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+msgid  "Add field:"
+msgstr "سۆز بۆلىكى قوش:"
+
+#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr "سۈزگۈچ"
+
+#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base Report"
+msgstr " - %PRODUCTNAME Base دوكلاتى"
+
+#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+msgid  "Untitled"
+msgstr "ماۋزۇسىز"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+msgid  "Change Alignment"
+msgstr "توغرىلىنىش ئۆزگەرت"
+
+#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+msgid  "# Header"
+msgstr "# بەت قاشى"
+
+#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+msgid  "# Footer"
+msgstr "# بەت ئاستى"
+
+#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "گرافىك قىستۇر"
+
+#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+msgid  "Delete"
+msgstr "ئۆچۈر"
+
+#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+msgid  "Function"
+msgstr "فۇنكسىيە"
+
+#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+msgid  "An error occurred while creating the report."
+msgstr "دوكلات ياسىغاندا خاتالىق يۈز بەردى."
+
+#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+msgid  "An exception of type $type$ was caught."
+msgstr "بىنورمال تىپ $type$ بايقالدى."
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+msgid  "Change font"
+msgstr "خەت نۇسخا ئۆزگەرت"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+msgid  "Change page attributes"
+msgstr "بەت خاسلىقى ئۆزگەرت"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Page Header/Footer"
+msgstr "بەت قاشى/بەت ئاستى قىستۇر"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Page Header/Footer"
+msgstr "بەت قاشى/بەت ئاستى ئۆچۈر"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Column Header/Footer"
+msgstr "ستون بەت قاشى/بەت ئاستى قىستۇر"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Column Header/Footer"
+msgstr "ستون بەت قاشى/بەت ئاستى ئۆچۈر"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Report Header/Footer"
+msgstr "دوكلات بەت قاشى/بەت ئاستى قىستۇر"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Report Header/Footer"
+msgstr "دوكلات بەت قاشى/بەت ئاستى ئۆچۈر"
+
+#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+msgid  "The report can not be executed unless it is bound to content."
+msgstr "مەزمۇنغا باغلانمىسا دوكلاتنى ئىجرا قىلالمايدۇ."
+
+#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+msgid  "The report can not be executed unless at least one object has been inserted."
+msgstr "ئاز دېگەندە بىر ئوبيېكت قىستۇرۇلمىسا بۇ دوكلاتنى ئىجرا قىلالمايدۇ."
+
+#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+msgid  "Shrink Section"
+msgstr "دائىرىنى كىچىكلەت"
+
+#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
+msgstr "تەپسىلاتى"
+
+#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
+msgstr "بەت قاشى"
+
+#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
+msgstr "بەت ئاستى"
+
+#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
+msgstr "دوكلات بەت قاشى"
+
+#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
+msgstr "دوكلات بەت ئاستى"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "قىستۇر"

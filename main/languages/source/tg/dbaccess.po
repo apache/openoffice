@@ -1,0 +1,3616 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.String.Text
+msgid  "Tried to open the table $name$."
+msgstr "Кӯшиши кушодани ҷадвали $name$ ҷой дошт"
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_INVALID.String.Text
+msgid  "No connection could be established."
+msgstr "Барқарор кардани алоқа имкон надод."
+
+#: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
+msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
+msgstr "Ҷадвали $name$ аллакай мавҷуд аст. Вай намоён нест, аз сабабе кӣ филтронида шудааст."
+
+#: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
+msgid  "You have no write access to the configuration data the object is based on."
+msgstr "Шумо ҳуқуқи иваз кардани конфигуратсияи объекти додашударо надоред."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
+msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgstr "Ба манбаи далелҳои беруна пайвастшави имкон надорад. Хатогии номуайян. Мумкин драйвером дуруст амал намекунад."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
+msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgstr "Ба манбаи далелҳои беруна пайвастшави имкон надорад. Барои URL додашуда драйвери SDBC пайдо нашуд."
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
+msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgstr "Ба манбаи далелҳои беруна пайвастшави имкон надорад. Диспетчери драйвери SDBC бор карда нашуд."
+
+#: source/core/resource/strings.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "Форма"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Ҳисобот"
+
+#: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
+msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
+msgstr "Манбаи далелҳо сабт карда нашуд. Аз интерфейси XStorable истифода карда манбаи далелҳоро сабт кунед."
+
+#: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr "Фармони додашуда ифодаи SELECT намебошад.\nТанҳо дархостҳо имкон доранд."
+
+#: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
+msgid  "No values were modified."
+msgstr "Ягон арзиш тағир наёфт."
+
+#: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
+msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgstr "Арзишҳо илова карда нашуданд. ResultSet интерфейси XRowUpdate-ро дастгири намекунад."
+
+#: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
+msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgstr "Арзишҳо илова карда нашуданд. ResultSet интерфейси XResultSetUpdate-ро дастгири намекунад."
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
+msgid  "Values could not be modified, due to a missing condition statement."
+msgstr "Арзишҳо тағир дода нашуданд, бо сабаби набудани ифодаи шартӣ."
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_ADD.String.Text
+msgid  "The adding of columns is not supported."
+msgstr "Иловакунии сутунҳо дастгирӣ карда намешавад."
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_DROP.String.Text
+msgid  "The dropping of columns is not supported."
+msgstr "Кӯркунии сутунҳо дастгирӣ карда намешавад."
+
+#: source/core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.String.Text
+msgid  "The WHERE condition could not be created for the primary key."
+msgstr "Сохтани ифодаи шартии WHERE барои калиди асосӣ имкон надорад."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.String.Text
+msgid  "The column does not support the property '%value'."
+msgstr "Сутун хосияти '%value' дастгирӣ намекунад."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.String.Text
+msgid  "The column is not searchable!"
+msgstr "Сутун дастнорас аст"
+
+#: source/core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.String.Text
+msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "Арзиши сутун аз типи Sequence<sal_Int8> намебошад."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.String.Text
+msgid  "The column is not valid."
+msgstr "Сутун ҷоиз намебошад."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.String.Text
+msgid  "The column '%name' must be visible as a column."
+msgstr "Сутуни '%name' бояд ҳамчун сутун намоён бошад."
+
+#: source/core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.String.Text
+msgid  "The interface XQueriesSupplier is not available."
+msgstr "Интерфейси XQueriesSupplier мавҷуд нест."
+
+#: source/core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.String.Text
+msgid  "The driver does not support this function."
+msgstr "Драйвер ин функтсияро дастгирӣ намекунад."
+
+#: source/core/resource/strings.src#RID_STR_NO_ABS_ZERO.String.Text
+msgid  "An 'absolute(0)' call is not allowed."
+msgstr "Талаби 'absolute(0)' иҷозат дода намешавад."
+
+#: source/core/resource/strings.src#RID_STR_NO_RELATIVE.String.Text
+msgid  "Relative positioning is not allowed in this state."
+msgstr "Ҷойгиркунии нисбӣ бар ин ҳолат имкон надорад."
+
+#: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
+msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgstr "Имкони ҷадидгардонии сатр нест, агар ResultSet баъд аз сатри охирон ҷойгир бошад."
+
+#: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
+msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgstr "Имкони иловакунии сатри нав нест, агар ResultSet ба сатри иловакунӣ оварда нашудабошад. "
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
+msgid  "A row cannot be modified in this state"
+msgstr "Тағир додани сатр дар ин ҳолат имконнопазир аст"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETEROW.String.Text
+msgid  "A row cannot be deleted in this state."
+msgstr "Кӯр кардани сатр дар ин ҳолат имконнопазир аст."
+
+#: source/core/resource/strings.src#RID_STR_NO_TABLE_RENAME.String.Text
+msgid  "The driver does not support table renaming."
+msgstr "Бо ин драйвер иваз кардани номи ҷадвал имконнопазир аст."
+
+#: source/core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.String.Text
+msgid  "The driver does not support the modification of column descriptions."
+msgstr "Бо ин драйвер иваз кардани номи сутун имконнопазир аст."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the name."
+msgstr "Бо ин драйвер иваз кардани шарҳи сутун имконнопазир аст бо иваз кардани ном."
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the index."
+msgstr "Бо ин драйвер иваз кардани шарҳи сутун имконнопазир аст бо иваз кардани индекс.."
+
+#: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "Дафтари \"$file$\" мавҷуд нест."
+
+#: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
+msgid  "There exists no table named \"$table$\"."
+msgstr "Ҷадвал бо номи \"$table$\" вуҷуд надорад."
+
+#: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
+msgid  "There exists no query named \"$table$\"."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
+msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgstr "Дар МД ҷадвалҳое мавҷуданд, ки номашон бо номи дархостҳои мавҷуда мувофиқ нестанд. Барои ба пуррагӣ истифода кардани ҷадвалҳо ва дархостҳо ба онҳо номҳои хос гузоред."
+
+#: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr "Фармони SQL ба ин хато овард:\n\n$command$"
+
+#: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The SQL command does not describe a result set."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.String.Text
+msgid  "The name must not be empty."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.String.Text
+msgid  "The container cannot contain NULL objects."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NAME_ALREADY_USED.String.Text
+msgid  "There already is an object with the given name."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.String.Text
+msgid  "This object cannot be part of this container."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.String.Text
+msgid  "The object already is, with a different name, part of the container."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NAME_NOT_FOUND.String.Text
+msgid  "Unable to find the document '$name$'."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
+msgid  "Error accessing data source '$name$':\\n$error$"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
+msgid  "There exists no folder named \"$folder$\"."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
+msgid  "Cannot delete the before-first or after-last row."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.String.Text
+msgid  "Cannot delete the insert-row."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_RESULT_IS_READONLY.String.Text
+msgid  "Result set is read only."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.String.Text
+msgid  "DELETE privilege not available."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.String.Text
+msgid  "Current row is already deleted."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_UPDATE_FAILED.String.Text
+msgid  "Current row could not be updated."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.String.Text
+msgid  "INSERT privilege not available."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_INTERNAL_ERROR.String.Text
+msgid  "Internal error: no statement object provided by the database driver."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_EXPRESSION1.String.Text
+msgid  "Expression1"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_SQL_COMMAND.String.Text
+msgid  "No SQL command was provided."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_INVALID_INDEX.String.Text
+msgid  "Invalid column index."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.String.Text
+msgid  "Invalid cursor state."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.String.Text
+msgid  "The cursor points to before the first or after the last row."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.String.Text
+msgid  "The rows before the first and after the last row don't have a bookmark."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.String.Text
+msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_NO_EMBEDDING.String.Text
+msgid  "Embedding of database documents is not supported."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
+msgid  "The extension is not installed."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+msgid  "Database ~name"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+msgid  "User settings"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+msgid  "~Control user"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+msgid  "~Administrator"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+msgid  "~Domain user"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+msgid  "P~assword..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+msgid  "~Password..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+msgid  "Passwo~rd..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+msgid  "~Backup file"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+msgid  "..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+msgid  "Database settings"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "TRANSACTI~ONLOG"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+msgid  "..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+msgid  "..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+msgid  "..."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+msgid  "Transaction ~file (MB)"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+msgid  "Data~base size (MB)"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+msgid  "Backup file information"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+msgid  "Create New Adabas D Database"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+msgid  "No entry could be written in the configuration file."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+msgid  "An error occurred as the DB files were being created."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+msgid  "An error occurred as the system tables were being created."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+msgid  "The backup file entered does not exist."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+msgid  "The administrator and the control user cannot have the same name!"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+msgid  "No name has been entered for the $name$ file!"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+msgid  "You have to have administrator rights to create a new database!"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+msgid  "The specified file name or directory does not exist."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+msgid  "Creating database files."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+msgid  "Creating database configuration file."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+msgid  "Starting database for the first time."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+msgid  "The name entered already exists."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+msgid  "No default names could be set for the database files. The total length is more than 40 characters."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+msgid  "No default names could be set for the database files. There is no write access."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+msgid  "The current database need to be converted. Please insert control user  and password."
+msgstr ""
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+msgid  "Database Document Macro Migration"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+msgid  "Prepare"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+msgid  "Backup Document"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+msgid  "Migrate"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+msgid  "Summary"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+msgid  "Welcome to the Database Macro Migration Wizard"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+msgid  "Backup your Document"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+msgid  "Save To:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+msgid  "Browse ..."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+msgid  "Migration Progress"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+msgid  "Current object:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+msgid  "Current progress:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+msgid  "Overall progress:"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+msgid  "document $current$ of $overall$"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+msgid  "Summary"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
+msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
+msgid  "The migration was not successful. Examine the migration log below for details."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+msgid  "Form '$name$'"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+msgid  "Report '$name$'"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+msgid  "document $current$ of $overall$"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+msgid  "Database Document"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+msgid  "saved copy to $location$"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+msgid  "migrated $type$ library '$old$' to '$new$'"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
+msgid  "$type$ library '$library$'"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
+msgid  "migrating libraries ..."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+msgid  "%PRODUCTNAME Basic"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+msgid  "JavaScript"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+msgid  "BeanShell"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+msgid  "Java"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+msgid  "Python"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+msgid  "dialog"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
+msgid  "Error(s)"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
+msgid  "Warnings"
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
+msgid  "caught exception: "
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
+msgid  "You need to choose a backup location other than the document location itself."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
+msgid  "Invalid number of initialization arguments. Expected 1."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_NO_DATABASE.String.Text
+msgid  "No database document found in the initialization arguments."
+msgstr ""
+
+#: source/ext/macromigration/macromigration.src#STR_NOT_READONLY.String.Text
+msgid  "Not applicable to read-only documents."
+msgstr ""
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgstr "Шумо ба ҷадвал ё дархост ҳамон як номро гузошта наметавонед. Номеро истифода баред, ки то ҳол истифода нашудааст."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+msgid  "Table"
+msgstr "Ҷадвал"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+msgid  "Query"
+msgstr "Дархост"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+msgid  "The given connection is no valid query and/or tables supplier."
+msgstr ""
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+msgid  "The given object is no table object."
+msgstr ""
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgstr ""
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
+msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+msgid  "Create Form in Design View..."
+msgstr "Сохтани Форма дар Нақшагоҳ..."
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+msgid  "Use Wizard to Create Form..."
+msgstr "Истифодаи Ёвар барои сохтани Форма..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+msgid  "Use Wizard to Create Report..."
+msgstr "Истифодаи Ёвар барои сохтани Ҳисобот..."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+msgid  "Create Report in Design View..."
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+msgid  "Create Query in Design View..."
+msgstr "Сохтани Дархост дар Нақшагоҳ..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+msgid  "Create Query in SQL View..."
+msgstr "Сохтани Дархост дар намуди SQL..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+msgid  "Use Wizard to Create Query..."
+msgstr "Истифодаи Ёвар барои сохтани Дархост..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+msgid  "Create Table in Design View..."
+msgstr "Сохтани Ҷадвал дар Нақшгоҳ..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+msgid  "Use Wizard to Create Table..."
+msgstr "Истифодаи Ёвар барои сохтани Ҷадвал..."
+
+#: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+msgid  "Create View..."
+msgstr "Сохтани Намуд..."
+
+#: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+msgid  "Forms"
+msgstr "Формаҳо"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+msgid  "Reports"
+msgstr "Ҳисобот"
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+msgid  "Form..."
+msgstr "Форма..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+msgid  "Report..."
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+msgid  "View (Simple)..."
+msgstr "Намуд (Содда)..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+msgid  "Paste Special..."
+msgstr "Нусхагузории махсус..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+msgid  "Delete"
+msgstr "Кӯркунӣ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+msgid  "Rename"
+msgstr "Азнавномгузорӣ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+msgid  "Edit"
+msgstr "Ислоҳкунӣ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+msgid  "Edit in SQL View..."
+msgstr "Ислоҳкунӣ дар намуди SQL..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+msgid  "Open"
+msgstr "Кушодан"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+msgid  "Create as View"
+msgstr "Сохтан ҳамчун Намуд"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Form Wizard..."
+msgstr "Ёвари Форма..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+msgid  "Report..."
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Report Wizard..."
+msgstr "Ёвари Ҳисобот..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+msgid  "Select All"
+msgstr "Интихоби ҳама"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MenuItem.Text
+msgid  "~Database"
+msgstr "~Махзани далелҳо"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MenuItem.Text
+msgid  "Properties..."
+msgstr "Хосиятҳо"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MenuItem.Text
+msgid  "Connection Type..."
+msgstr "Навъи пайвастагӣ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MenuItem.Text
+msgid  "Advanced Settings..."
+msgstr "Ҷӯрсозиҳои муфассал"
+
+#: source/ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.String.Text
+msgid  "Do you want to delete the data source '%1'?"
+msgstr "Шумо мехоҳед манбаи далелҳои '%1'-ро кӯр кунед?"
+
+#: source/ui/app/app.src#STR_APP_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base"
+msgstr " - %PRODUCTNAME Base"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a report."
+msgstr "Ёвар қадам ба қадам барои сохтани ҳисобот ба шумо кӯмак мекунад."
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
+msgid  "Create a form by specifying the record source, controls, and control properties."
+msgstr "Бо муқарракунии манбаи навишт, параметрҳо ва хосиятҳо форма созед."
+
+#: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
+msgid  "Create a report by specifying the record source, controls, and control properties."
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a form."
+msgstr "Ёвар қадам ба қадам барои сохтани форма ба шумо кӯмак мекунад."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
+msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgstr "Бо муқарарркунии филтр, ҷадвали истифодашаванда, номи майдонҳо, ва хосиятҳо барои низомноккунӣ ё гурӯҳбандӣ дархост созед."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
+msgid  "Create a query  entering an SQL statement directly."
+msgstr "Бе восита бо ифодаи SQL сохтани дархост."
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
+msgid  "The wizard will guide you through the steps necessary to create a query."
+msgstr "Ёвар қадам ба қадам барои сохтани дархост ба шумо кӯмак мекунад."
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a table by specifying the field names and properties, as well as the data types."
+msgstr "Бо муқарарркунии номи майдон ва хосиятҳояш, ҳамчунин типи далел ҷадвал созед."
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
+msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgstr "Аз намунаи ҷадвалҳои корӣ ва шахсӣ истифода баред, барои сохтани ҷадвали нав."
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
+msgid  "Create a view by specifying the tables and field names you would like to have visible."
+msgstr "Намудро бо муайянкунии ҷадвалҳо ва сутунҳое, ки мехоҳед намоён бошанд созед."
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
+msgid  "Opens the view wizard"
+msgstr "Кушодани ёвари намуд"
+
+#: source/ui/app/app.src#STR_DATABASE.String.Text
+msgid  "Database"
+msgstr "Махзани далелҳо"
+
+#: source/ui/app/app.src#STR_TASKS.String.Text
+msgid  "Tasks"
+msgstr "Вазифаҳо"
+
+#: source/ui/app/app.src#STR_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "Шарҳ"
+
+#: source/ui/app/app.src#STR_PREVIEW.String.Text
+msgid  "Preview"
+msgstr "Намоиши пешакӣ"
+
+#: source/ui/app/app.src#STR_DISABLEPREVIEW.String.Text
+msgid  "Disable Preview"
+msgstr "Бекоркунии Намоиши пешакӣ"
+
+#: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
+msgid  "None"
+msgstr "Ҳеҷ"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MenuItem.Text
+msgid  "Document Information"
+msgstr "Маълумот оиди Ҳуҷҷатгузорӣ"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
+msgid  "Document"
+msgstr "Ҳуҷҷат"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "Форма"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Ҳисобот"
+
+#: source/ui/app/app.src#STR_FRM_LABEL.String.Text
+msgid  "F~orm name"
+msgstr "Номи форма"
+
+#: source/ui/app/app.src#STR_RPT_LABEL.String.Text
+msgid  "~Report name"
+msgstr "Номи ҳисобот"
+
+#: source/ui/app/app.src#STR_FOLDER_LABEL.String.Text
+msgid  "F~older name"
+msgstr "Номи Ра~воқ"
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.String.Text
+msgid  "The document contains forms or reports with embedded macros."
+msgstr ""
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
+msgid  "Embedded database"
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_NO_DIFF_CAT.String.Text
+msgid  "You cannot select different categories."
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.String.Text
+msgid  "Unsupported object type found ($type$)."
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+msgid  "Do you want to delete the selected data?"
+msgstr "Далелҳои интихобкардаро кӯр карда шаванд?"
+
+#: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+msgid  "(filtered)"
+msgstr "(филтронидашуда)"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "Хатогии ҷӯрсозиҳои критерияҳои низомноккунӣ"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "Хатогии ҷӯрсозиҳои филтратсия"
+
+#: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+msgid  "Connection lost"
+msgstr "Алоқа канда шуд"
+
+#: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+msgid  "Queries"
+msgstr "Даъватҳо"
+
+#: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+msgid  "Tables"
+msgstr "Ҷадвалҳо"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "Ислоҳкунии дафтари ~Махзани Далелҳо..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "МДҳои бақайдгирифташуда ..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "Қатъ кардан"
+
+#: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+msgid  "Confirm Deletion"
+msgstr "Тадиқ кардани кӯркунӣ"
+
+#: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+msgid  "Do you want to delete the table '%1'?"
+msgstr "Ҷадвали '%1' кӯр карда шавад?"
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+msgid  "The query already exists. Do you want to delete it?"
+msgstr "Ин дархост аллакай мавҷуд аст. Кӯр карда шавад?"
+
+#: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database has been lost. Do you want to reconnect?"
+msgstr "Пайвастагӣ бо манбаи далелҳо гум шуд. Барқарор карда шавад?"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+msgid  "Warnings encountered"
+msgstr "Огоҳӣ рух дод"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+msgid  "While retrieving the tables, warnings were reported by the database connection."
+msgstr "Ҳангоми муайянкунии ҷадвалҳо аз махзани далелҳо, огоҳиҳо рух доданд."
+
+#: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+msgid  "Connecting to \"$name$\" ..."
+msgstr "Пайвастшави бо \"$name$\" ..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+msgid  "Loading query $name$ ..."
+msgstr "Боркунии даъвати $name$ ..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+msgid  "Loading table $name$ ..."
+msgstr "Боркунии ҷадвали $name$ ..."
+
+#: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+msgid  "No table format could be found."
+msgstr "Формати ҷадвал муайян нашуд."
+
+#: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Пайвастшавӣ бо манбаи далелҳои \"$name$\" имкон надорад."
+
+#: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+msgid  "Rebuild"
+msgstr "Азнавсохтан"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+msgid  "Column ~Format..."
+msgstr "Формати сутуни..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+msgid  "Copy Column D~escription"
+msgstr "Нусхагирии тасвири сутун"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+msgid  "Table Format..."
+msgstr "Формати ҷадвал..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+msgid  "Row Height..."
+msgstr "Баландии сутун..."
+
+#: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+msgid  "Undo: Data Input"
+msgstr "Инкоркунӣ: дохилкунии далелҳо"
+
+#: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+msgid  "Save current record"
+msgstr "Сабт кардани навишти ҷорӣ"
+
+#: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+msgid  "Query #"
+msgstr "Пурсиш #"
+
+#: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "Ҷадвал #"
+
+#: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+msgid  "View #"
+msgstr "Нишон додан #"
+
+#: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+msgid  "The name \"#\" already exists."
+msgstr "Номи \"#\" аллакай мавҷуд аст."
+
+#: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+msgid  "No matching column names were found."
+msgstr "Номҳои мувофиқи сутунҳо пайдо нашуданд."
+
+#: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+msgid  "An error occurred. Do you want to continue copying?"
+msgstr "Хатогӣ. Нусхагирӣ давом дода шавад?"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+msgid  "Data source table view"
+msgstr "Тамошои ҷадвали манбаи далелҳо."
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+msgid  "Shows the selected table or query."
+msgstr "Нишон додани ҷадвалҳо ё пурсишҳои ҷудокардашуда."
+
+#: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "Ҷадвал #"
+
+#: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+msgid  "Modify SQL statement(s)"
+msgstr "Дигаргунсозии инструктсияи SQL"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+msgid  "Table name"
+msgstr "Номи ҷадвал"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+msgid  "Insert data"
+msgstr "Иловакунии далелҳо"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+msgid  "Delete data"
+msgstr "Кӯркунии далелҳо"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+msgid  "Modify data"
+msgstr "Такмилдиҳии далелҳо"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+msgid  "Alter structure"
+msgstr "Такмилдиҳии сохтор"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+msgid  "Read data"
+msgstr "Хониш"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+msgid  "Modify references"
+msgstr "Такмилдиҳии ҳаволаҳо"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+msgid  "Drop structure"
+msgstr "Кӯр кардани сохтор"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+msgid  "Sort Ascending"
+msgstr "Банизомдарорӣ бо болоравӣ"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+msgid  "Sort Descending"
+msgstr "Банизомдарорӣ бо поёнравӣ"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr "Пайвастшавӣ бо менеҷери драйвери SDBC (#servicename#) имкон надорад."
+
+#: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+msgid  "A driver is not registered for the URL #connurl#."
+msgstr "Драйвер барои URL-и #connurl# бақайд гирифта нашудааст."
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+msgid  "No connection could be established for the URL #connurl#."
+msgstr "Пайвастшавӣ бо URL-и #connurl# имкон надорад."
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+msgid  "Please check the current settings, for example user name and password."
+msgstr "Ҷӯршавии ҷориро хабар гиред, мисоли номи истофодабар ва  парол."
+
+#: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+msgid  "Successfully connected, but information about database tables is not available."
+msgstr "Пайвастагӣ барқарор шуд, вале маълумот дар бораи ҷадвалҳои махзани далелҳо дастнорасанд."
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+msgid  "All tables"
+msgstr "Ҳама ҷадвалҳо"
+
+#: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+msgid  "All views"
+msgstr "Ҳама намоиши ҷадвалҳо"
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+msgid  "All tables and views"
+msgstr "Ҳама ҷадвалҳо ва намоши онҳо"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.ModalDialog.Text
+msgid  "Indexes"
+msgstr "Индексҳо"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.ToolBoxItem.Text
+msgid  "New Index"
+msgstr "Индекси нав"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.ToolBoxItem.Text
+msgid  "Delete Current Index"
+msgstr "Индекси ҷорӣ кӯр карда шавад"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.ToolBoxItem.Text
+msgid  "Rename Current Index"
+msgstr "Азнавномгузории индекси ҷорӣ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.ToolBoxItem.Text
+msgid  "Save Current Index"
+msgstr "Сабт кардани индекси ҷорӣ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.ToolBoxItem.Text
+msgid  "Reset Current Index"
+msgstr "Барқароркунии индекси ҷорӣ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FixedLine.Text
+msgid  "Index details"
+msgstr "Индекс"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FixedText.Text
+msgid  "Index identifier:"
+msgstr "Идентификатор:"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CheckBox.Text
+msgid  "~Unique"
+msgstr "Ягона (беҳамто)"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FixedText.Text
+msgid  "Fields"
+msgstr "Майдонҳо"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PushButton.Text
+msgid  "~Close"
+msgstr "~Пӯшонидан"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.String.Text
+msgid  "Sort order"
+msgstr "Низомноккунӣ"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.String.Text
+msgid  "Index field"
+msgstr "Майдони индекс"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.String.Text
+msgid  "Ascending"
+msgstr "Бо болоравӣ"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.String.Text
+msgid  "Descending"
+msgstr "Бо поёнравӣ"
+
+#: source/ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.String.Text
+msgid  "Do you really want to delete the index '$name$'?"
+msgstr "Шумо мехоҳед ки индекси '$name$' кӯр карда шавад?"
+
+#: source/ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.String.Text
+msgid  "index"
+msgstr "индекс"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Title
+msgid  "Save Index"
+msgstr "Save Index"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Message
+msgid  "The index must contain at least one field."
+msgstr "Индекс ҳадди ақал бояд як майдон дошта бошад."
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Title
+msgid  "Exit Index Design"
+msgstr "Exit Index Design"
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Message
+msgid  "Do you want to save the changes made to the current index?"
+msgstr "Дигаргуниҳо дар индекси ҷорӣ сабт карда наванд?"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
+msgid  "There is already another index named \"$name$\"."
+msgstr "Индекс бо номи \"$name$\" аллакай мавҷуд аст."
+
+#: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "Дар муайян кардани индекс сутуни ҷадвал набояд аз як маротиба зиёд истифода шавад. Шумо аллакай сутуни \"$name$\" -ро ду маротиба истифода кардед."
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
+msgid  "~Parameters"
+msgstr "~Параметрҳо"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FixedText.Text
+msgid  "~Value"
+msgstr "~Арзиш"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PushButton.Text
+msgid  "~Next"
+msgstr "~Навбатӣ"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.CancelButton.Text
+msgid  "Parameter Input"
+msgstr "Дохилкунии параметр"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "Дигаргунсозии навишт мувофиқи арзиши шартии сутуни \"$name$\" имкон надорад."
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
+msgid  "%PRODUCTNAME Base"
+msgstr "Махзани далелҳо %PRODUCTNAME"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
+msgid  "Details"
+msgstr "Муфассал"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
+msgid  "Error ~list:"
+msgstr "Рӯйхати хатогиҳо:"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FixedText.Text
+msgid  "~Description:"
+msgstr "Тасвир:"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.String.Text
+msgid  "SQL Status"
+msgstr "Ҳолати SQL"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.String.Text
+msgid  "Error code"
+msgstr "Коди хатогӣ"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
+msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr "Сабаби асосии рух додани ин хатогӣ дар номувофиқ будани ҳуруфот барои забони махзани далелҳо мебошад. Ҷӯрсозиҳоро санҷед бо интихоби Ислоҳкунӣ - Махзани Далелҳо - Хосиятҳо."
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
+msgid  "Error"
+msgstr "Хато"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.String.Text
+msgid  "Warning"
+msgstr "Огоҳӣ"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.String.Text
+msgid  "Information"
+msgstr "Маълумот"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.String.Text
+msgid  "Details"
+msgstr "Ҷузъҳо"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.ModalDialog.Text
+msgid  "Standard Filter"
+msgstr "Филтри стандартӣ"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "ВА"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "OR"
+msgstr "Ё"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "ВА"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "OR"
+msgstr "Ё"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "Номи майдон"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FixedText.Text
+msgid  "Condition"
+msgstr "Шарт"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FixedText.Text
+msgid  "Value"
+msgstr "Арзиш"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FixedText.Text
+msgid  "Operator"
+msgstr "Оператор"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FixedLine.Text
+msgid  "Criteria"
+msgstr "Критерияҳо"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.String.Text
+msgid  "- none -"
+msgstr "- ҳеҷ -"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
+msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;баробарӣ;нобаробарӣ;сифр;ғайри сифр"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
+msgid  "Relations"
+msgstr "Муносибатҳо"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "Ҷадвалҳои истифодакардашуда"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "Майдонҳои истифодакардашуда"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FixedLine.Text
+msgid  "Update options"
+msgstr "Параметрҳои азнавкунӣ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RadioButton.Text
+msgid  "~No action"
+msgstr "Бе амал"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RadioButton.Text
+msgid  "~Update cascade"
+msgstr "Азнавкунии каскад (силсила)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "Гузоштани сифр (нул)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "Ба ҳолати ибтидоӣ баргаштан"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
+msgid  "Delete options"
+msgstr "Параметрҳои нобудсозӣ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RadioButton.Text
+msgid  "~No action"
+msgstr "Бе амал"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RadioButton.Text
+msgid  "Delete ~cascade"
+msgstr "Нобудсозии каскад"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RadioButton.Text
+msgid  "~Set null"
+msgstr "Гузоштани сифр (нул)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RadioButton.Text
+msgid  "Set ~default"
+msgstr "Ба ҳолати ибтидоӣ баргаштан"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.ModalDialog.Text
+msgid  "Sort Order"
+msgstr "Тартиби низомноккунӣ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "бо зиёдшавӣ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "descending"
+msgstr "бо камшавӣ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "бо зиёдшавӣ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "descending"
+msgstr "бо камшавӣ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "бо зиёдшавӣ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "descending"
+msgstr "бо камшавӣ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FixedText.Text
+msgid  "Field name"
+msgstr "Номи майдон"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FixedText.Text
+msgid  "and then"
+msgstr "баъд аз он"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FixedText.Text
+msgid  "and then"
+msgstr "баъд аз он"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FixedText.Text
+msgid  "Operator"
+msgstr "Оператор"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FixedText.Text
+msgid  "Order"
+msgstr "Тартиб"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FixedLine.Text
+msgid  "Sort order"
+msgstr "Низомноккунӣ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
+msgid  "<none>"
+msgstr "<ҳеҷ>"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+msgid  "Options"
+msgstr "Параметрҳо"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+msgid  "Use SQL92 naming constraints"
+msgstr "Истифода кардани стандарти SQL92"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+msgid  "Append the table alias name on SELECT statements"
+msgstr "Илвакунии тахаллуси номи ҷадвал дар ифодаи SELECT"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+msgid  "Use keyword AS before table alias names"
+msgstr "Калиди AS-ро пеш аз номи ҷадвал истифода баред"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+msgid  "Use Outer Join syntax '{OJ }'"
+msgstr "Истифодаи синтаксиси Outer Join '{OJ }'"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+msgid  "Ignore the privileges from the database driver"
+msgstr "Инкор кардани афзалиятҳои драйвери махзани далелҳо дода"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+msgid  "Replace named parameters with '?'"
+msgstr "Ивазкунии параметҳои номӣ бо '?'"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+msgid  "Display version columns (when available)"
+msgstr "Нишон додани сутунҳои версия (агар дастрасанд)"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+msgid  "Use catalog name in SELECT statements"
+msgstr "Истифодаи номи каталог дар ифодаи SELECT"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+msgid  "Use schema name in SELECT statements"
+msgstr "Истифодаи номи схема дар ифодаи SELECT"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+msgid  "Create index with ASC or DESC statement"
+msgstr "Сохтани индекс бо ифодаи ASC ё DESC"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+msgid  "End text lines with CR+LF"
+msgstr "Хотимаи матн бо CR+LF"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+msgid  "Ignore currency field information"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+msgid  "Form data input checks for required fields"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
+msgid  "Use ODBC conformant date/time literals"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
+msgid  "Supports primary keys"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CheckBox.Text
+msgid  "Respect the result set type from the database driver"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "MS Access"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+msgid  "Comparison of Boolean values"
+msgstr "Муқоисаи арзишҳои Boolean"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FixedText.Text
+msgid  "Rows to scan column types"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+msgid  "Settings"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+msgid  "Re~trieve generated values"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+msgid  "~Auto-increment statement"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+msgid  "~Query of generated values"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+msgid  "Generated Values"
+msgstr "Арзишҳои сохташуда"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+msgid  "Special Settings"
+msgstr "Ҷӯрсозиҳои махсус"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.String.Text
+msgid  "Advanced Settings"
+msgstr "Хосиятҳои муфассал"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+msgid  "Save"
+msgstr "Сабткунӣ"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+msgid  "Create New Directory"
+msgstr "Create New Directory"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+msgid  "Up One Level"
+msgstr "Up One Level"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+msgid  "File ~name:"
+msgstr "Номи дафтар:"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+msgid  "Save"
+msgstr "Сабткунӣ"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+msgid  "~Path:"
+msgstr "Роҳ:"
+
+#: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+msgid  "Folder"
+msgstr "Раф"
+
+#: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+msgid  "The file already exists. Overwrite?"
+msgstr "Ин дафтар аллакай мавҷуд аст. Азнав нависам?"
+
+#: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "Бояд паролро дохил кард барои пайвастшавӣ ба манбаи далелҳои \"$name$\"."
+
+#: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr "Рафи\n\n$path$\n\nвуҷуд надорад. Сохта шавад?"
+
+#: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
+msgid  "The directory $name$ could not be created."
+msgstr "Сохтани равоқи (директорияи) $name$ имкон надорад."
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.ModalDialog.Text
+msgid  "Convert Database"
+msgstr "Конвертатсияи махзани далелҳо"
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FixedLine.Text
+msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgstr "Марҳамат карда ~пароли истифодабарандаи 'DOMAIN' дароред."
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TabPage.Text
+msgid  "Tables Filter"
+msgstr "Филтри ҷадвал"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "Tables and table filter"
+msgstr "Ҷадвалҳо ва филтри ҷадвал"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FixedText.Text
+msgid  "Mark the tables that should be visible for the applications."
+msgstr "Ҷадвалҳоеро интихоб кунед, ки дар барнома намоён бошанд."
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+msgid  "~Database name"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+msgid  "Se~rver / Port"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+msgid  "~Server"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+msgid  "~Port"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+msgid  "Default: 3306"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+msgid  "So~cket"
+msgstr ""
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+msgid  "Named p~ipe"
+msgstr ""
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.String.Text
+msgid  "User Settings"
+msgstr "Рухсати истифодабаранда"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.String.Text
+msgid  "User administration"
+msgstr "Идоракунии истифодабар"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+msgid  "Tables"
+msgstr "Ҷадвалҳо"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+msgid  "Queries"
+msgstr "Дархостҳо"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+msgid  "~Add"
+msgstr "~Иловакунӣ"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+msgid  "~Close"
+msgstr "~Пӯшонидан"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+msgid  "Add Tables"
+msgstr "Иловакунии ҷадвал"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+msgid  "Add Table or Query"
+msgstr "Иловакунии ҷадвал ва дврхост"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TabDialog.Text
+msgid  "Field Format"
+msgstr "Формати майдон"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.1.PushButton.Text
+msgid  "Bac~k"
+msgstr "Бозгашт"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.String.Text
+msgid  "Font"
+msgstr "Ҳуруфот"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.String.Text
+msgid  "Format"
+msgstr "Формат"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "Баробарсозӣ"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.String.Text
+msgid  "Table Format"
+msgstr "Формати ҷадвал"
+
+#: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+msgid  "Use catalog for file-based databases"
+msgstr "Истифода кардани Каталог"
+
+#: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "Ҷӯрсозиҳои пайвастагиҳо"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "~Номи мизбон"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "~Рақами порт"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
+msgid  "Advanced Properties"
+msgstr "Хосиятҳои муфассал"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.String.Text
+msgid  "Additional Settings"
+msgstr "Ҷӯрсозиҳои иловагӣ"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.String.Text
+msgid  "Connection settings"
+msgstr "Ҷӯрсозиҳои пайвастагиҳо"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.String.Text
+msgid  "Database properties"
+msgstr "Хосиятҳои махзани далелҳо"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TabControl.Text
+msgid  "Database properties"
+msgstr "Хосиятҳои махзани далелҳо"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FixedText.Text
+msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "Хуш омадед ба Ёвари Махзани далелҳои %PRODUCTNAME"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
+msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr "Бо истифода аз Ёвари Махзани Далелҳо МД-и нав созед, МД-и мавҷударо кушоед ё ба МД-и дар сервербуда пайваст шавед."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
+msgid  "What do you want to do?"
+msgstr "Шумо чӣ кор кардан мехоҳед?"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RadioButton.Text
+msgid  "Create a n~ew database"
+msgstr "Сохтани Махзани Далелҳои (МД) н~ав"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RadioButton.Text
+msgid  "Open an existing database ~file"
+msgstr "Кушодани ~дафтари МД-и савҷуда"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FixedText.Text
+msgid  "Recently used"
+msgstr "Дар наздики истифодашуда"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RadioButton.Text
+msgid  "Connect to an e~xisting database"
+msgstr "Пайвастшавӣ ба МД-и мав~ҷуда"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
+msgid  "Select the type of database to which you want to establish a connection."
+msgstr "Намуди МД-ро интихоб кунед, ки ба он пайваст шудан мехоҳед."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
+msgid  "Database ~type "
+msgstr "Намуди махзани далелҳо"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FixedText.Text
+msgid  "Database"
+msgstr "Махзани далелҳо"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr "Дар саҳифаҳои зерин шумо метавонед ҷӯрсозиҳои пайвастагиро ислоҳ кунед.\n\nИн амал ҷӯрсозиҳои пешинаро рӯйнавис мекунад."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
+msgid  "MySQL"
+msgstr "MySQL"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.String.Text
+msgid  "Data Source Properties: #"
+msgstr "Хосиятҳои манбаи далелҳо: #"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
+msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr "Боркунии китобхонаи барномаи #lib# имкон надорад (эҳтимол маҷрӯҳ аст). Интихоб кардани манбаи далелҳои ODBC имкон надорад."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr "Ин манбаи далелҳо дар ин платформа дастгирӣ нашудааст.\nШумо метавонед ҷӯрсозиҳоро иваз кунед, вале ба МД пайваст шуда наметавонед."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "Умумӣ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional settings"
+msgstr "Ҷӯрсозиҳои ихтиёрӣ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CheckBox.Text
+msgid  "Display deleted records as well"
+msgstr "Намоиши навиштҳои кӯркардашуда"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
+msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgstr "Эзоҳ: Агар навиштҳои кӯр карда шуда намоён бошанд, онгоҳ шумо онҳоро аз манбаи далелҳо кӯр карда наметавонед."
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
+msgid  "Indexes..."
+msgstr "Индексҳо..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FixedLine.Text
+msgid  "Optional Settings"
+msgstr "Ҷӯрсозиҳои ихтиёрӣ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FixedText.Text
+msgid  "ODBC ~options"
+msgstr " ~Ҷӯрсозиҳои ODBC"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "Ҷӯрсозиҳои пайвастагиҳо"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "Ҳаҷми буфери далелҳо (Мб):"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FixedText.Text
+msgid  "~Data increment (MB)"
+msgstr "~Бузургии зиёдшавӣ (Мб):"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FixedLine.Text
+msgid  "Administration"
+msgstr "Идоракунӣ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FixedText.Text
+msgid  "Control ~user name"
+msgstr "Идоракунии истифодабаранда"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FixedText.Text
+msgid  "Control ~password"
+msgstr "Парол"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CheckBox.Text
+msgid  "~Shut down service when closing %PRODUCTNAME"
+msgstr "Хизмат ҳангоми баромадан аз  %PRODUCTNAME қатъ карда шавад"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PushButton.Text
+msgid  "E~xtended..."
+msgstr "Иловагӣ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "MySQL JDBC d~river class"
+msgstr "Класси JDBC-драйвери MySQL"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "Класси санҷишӣ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "Oracle JDBC d~river class"
+msgstr "Д~райвери класси Oracle JDBC"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr "Класси санҷишӣ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FixedText.Text
+msgid  "~Base DN"
+msgstr "DN-и ~аслӣ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CheckBox.Text
+msgid  "Use secure connection(SSL)"
+msgstr "Истифодаи пайвастагии бехатари (SSL)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "~Рақами порт"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
+msgid  "Maximum number of ~records"
+msgstr "Шумораи максималии ~навиштҳо"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FixedText.Text
+msgid  "~Hostname"
+msgstr "~Мизбон"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr ""
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FixedText.Text
+msgid  "~Driver settings"
+msgstr "Ҷӯрсозиҳои ~драйвер"
+
+#: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
+msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgstr ""
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
+msgid  "Save As"
+msgstr "Сабт кардан ҳамчун"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FixedText.Text
+msgid  "Please enter a name for the object to be created:"
+msgstr "Номи объекти сохташавандаро дароред:"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FixedText.Text
+msgid  "~Catalog"
+msgstr "~Каталог"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FixedText.Text
+msgid  "~Schema"
+msgstr "~Схема"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.String.Text
+msgid  "~Table Name"
+msgstr "Номи ҷадвал"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.String.Text
+msgid  "~Name of table view"
+msgstr "Номи қиёфаи ҷадвал"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.String.Text
+msgid  "~Query name"
+msgstr "Номи дархост"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.String.Text
+msgid  "Rename to"
+msgstr "Ивази ном ба"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.String.Text
+msgid  "Insert as"
+msgstr "Дохил кардан ҳамҷун"
+
+#: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+msgid  "Path to the dBASE files"
+msgstr "Роҳ ба дафтари dBASE"
+
+#: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+msgid  "Path to the text files"
+msgstr "Роҳ ба дафтарҳои матнӣ"
+
+#: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+msgid  "Path to the spreadsheet document"
+msgstr "Роҳ ба ҳуҷҷатҳои ҷадвали электронӣ"
+
+#: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+msgid  "Name of the ODBC data source on your system"
+msgstr "Номи манбаи далелҳои ODBC дар системаи шумо"
+
+#: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+msgid  "Name of the MySQL database"
+msgstr "Номи МДи MySQL"
+
+#: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+msgid  "Name of the Oracle database"
+msgstr "Номи МДи Oracle"
+
+#: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+msgid  "Name of the Adabas D database"
+msgstr "Номи МДи Adabas D"
+
+#: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+msgid  "Microsoft Access database file"
+msgstr "Дафтари МДи Microsoft Access"
+
+#: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgstr "Ҷӯрсозиҳои иловагӣ лозим нестанд. Барои санҷидани пайвастагӣ тугмачаи '%test' ро пахш кунед."
+
+#: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+msgid  "Datasource URL"
+msgstr "URLи манбаи далелҳо"
+
+#: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+msgid  "~Host name"
+msgstr "~Номи мизбон"
+
+#: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+msgid  "~Mozilla profile name"
+msgstr "Номи профили ~Mozilla"
+
+#: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+msgid  "~Thunderbird profile name"
+msgstr "Номи профили ~Thunderbird"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.ModalDialog.Text
+msgid  "Data Source"
+msgstr "Манбаи далелҳо"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FixedText.Text
+msgid  "Choose a data source:"
+msgstr "Манбаи далелҳоро интихоб кунед:"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PushButton.Text
+msgid  "Organize..."
+msgstr "Омодасозӣ..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PushButton.Text
+msgid  "Create..."
+msgstr "Нав..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.String.Text
+msgid  "Local Databases"
+msgstr "МД-и худӣ"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.String.Text
+msgid  "Choose a database"
+msgstr "Интихоби МД"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "General"
+msgstr "Умумӣ"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "~Номи мизбон"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr "Тафтиши Истифодабар"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "~Номи истифодабаранда"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr "Дохил кардани парол ҳатмист"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
+msgid  "JDBC properties"
+msgstr "Хосиятҳои JDBC"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "~JDBC driver class"
+msgstr "Класси драйвери ~JDBC"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test Class"
+msgstr "Санҷиши класс"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+msgid  "Test Connection"
+msgstr "Санҷиши пайвастагӣ"
+
+#: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+msgid  "No Adabas D data sources were found on your system."
+msgstr "Манбаи далелҳои Adabas D дар системаи шумо пайдо нашуд."
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+msgid  "Connection Test"
+msgstr "Санҷиши пайвастагӣ"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+msgid  "The connection was established successfully."
+msgstr "Пайвастагӣ бомуваффақият барқарор карда шуд."
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+msgid  "The connection could not be established."
+msgstr "Пайвастагӣ бомуваффақият барқарор карда нашуд."
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
+msgid  "The JDBC driver was loaded successfully."
+msgstr "Драйвери JDBC бомуваффақият бор карда шуд."
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
+msgid  "The JDBC driver could not be loaded."
+msgstr "Драйвери JDBC бор карда нашуд."
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
+msgid  "MS Access file"
+msgstr "Дафтари MS Access"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
+msgid  "MS Access 2007 file"
+msgstr ""
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+msgid  "Database files"
+msgstr "Дафтарҳои махзани далелҳо"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "~TRANSACTIONLOG:"
+msgstr "~TRANSACTIONLOG:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+msgid  "Database sizes"
+msgstr "Ҳаҷми махзани далелҳо"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+msgid  "S~ize (MB):"
+msgstr "Ҳаҷм (Мб):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+msgid  "~Free memory space (MB):"
+msgstr "Хотираи озод (Мб):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+msgid  "~Memory utilization (in %):"
+msgstr "Хотираи ~машғул (дар %):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+msgid  "Database Statistics"
+msgstr "Омори махзани далелҳо"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+msgid  "Contains the system tables"
+msgstr "Дар дохилаш ҷадвалҳои системавӣ мавҷуданд"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+msgid  "Contains information about transaction"
+msgstr "Информация дар бораи транзактсияҳо дорад"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+msgid  "Contains all data files"
+msgstr "Дорои ҳама дафтарҳои далелҳо мебошад"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+msgid  "Total size of the database files"
+msgstr "Ҳаҷми умумии дафтарҳои махзани далелҳо"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+msgid  "Currently available space before a new datadev file is created."
+msgstr "Миқдори хотираи мавҷудбуда пеш аз сохтани дафтари нави datadev."
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+msgid  "Currently used memory"
+msgstr "Хотираи ҳозир даристифодабуда"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+msgid  "No information could be displayed because no access rights exist for the required system tables."
+msgstr "Аз сабаби набудани имтиёз барои истифодаи ҷадвалҳои системавӣ инъикоси информатсия имкон надорад."
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
+msgid  "SQL command"
+msgstr "Командаи SQL"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FixedText.Text
+msgid  "Command to execute"
+msgstr "Командаи иҷрошудаистода"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PushButton.Text
+msgid  "Execute"
+msgstr "Иҷро намо"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FixedText.Text
+msgid  "Previous commands"
+msgstr "Командаи пешина"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FixedLine.Text
+msgid  "Status"
+msgstr "Ҳолат"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PushButton.Text
+msgid  "Close"
+msgstr "Пӯшонидан"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PushButton.Text
+msgid  "Execute SQL Statement"
+msgstr "Иҷро кардани инструктсияи SQL"
+
+#: source/ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.String.Text
+msgid  "Command successfully executed."
+msgstr "Команда бомуваффақият иҷро шуд."
+
+#: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
+msgid  "The connection to the database has been lost. This dialog will be closed."
+msgstr "Пайвастагӣ бо махзани далелҳо канда шуд. Диалог пинҳон карда мешавад."
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
+msgid  "Indexes"
+msgstr "Индексҳо"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FixedText.Text
+msgid  "~Table"
+msgstr "Ҷадвал"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FixedLine.Text
+msgid  "Assignment"
+msgstr "Таъинот"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FixedText.Text
+msgid  "T~able indexes"
+msgstr "Индексҳои ҷадвалҳо"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FixedText.Text
+msgid  "~Free indexes"
+msgstr "Индексҳои озод"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FixedLine.Text
+msgid  "User selection"
+msgstr "Интихоби истифодабаранда"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FixedText.Text
+msgid  "Us~er:"
+msgstr "Истифодабаранда:"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PushButton.Text
+msgid  "~Add User..."
+msgstr "Иловакунии истифодабаранда..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PushButton.Text
+msgid  "Change ~Password..."
+msgstr "Паролро иваз кардан..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PushButton.Text
+msgid  "~Delete User..."
+msgstr "Нобудкунии истифодабаранда..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FixedLine.Text
+msgid  "Access rights for selected user"
+msgstr "Ҳуқуқҳои истифодабарандаи интихобшуда"
+
+#: source/ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QueryBox.Message
+msgid  "Do you really want to delete the user?"
+msgstr "Шумо ҳаққонӣ мехоҳед ки ин истифодабаранда нобуд карда шавад?"
+
+#: source/ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support user administration."
+msgstr "Махзани далелҳо идоракунии истифодабарро доро нест."
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
+msgid  "User \"$name$:  $\""
+msgstr "Истифодабарандаи \"$name$:  $\""
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
+msgid  "Old p~assword"
+msgstr "Пароли кӯҳна"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FixedText.Text
+msgid  "~Password"
+msgstr "Парол"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FixedText.Text
+msgid  "~Confirm  password"
+msgstr "~Тасдиқ кардани парол"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.HelpButton.Text
+msgid  "Change Password"
+msgstr "Ивазкунии парол"
+
+#: source/ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+msgid  "The passwords do not match. Please enter the password again."
+msgstr "Паролҳо мувофиқ нестанд . Такрор кунед."
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
+msgid  "Database Wizard"
+msgstr "Ёвари махзани далелҳо"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
+msgid  "Database Wizard"
+msgstr "Ёвари махзани далелҳо"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.String.Text
+msgid  "Select database"
+msgstr "Интихоби МД"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.String.Text
+msgid  "Set up dBASE connection"
+msgstr "Сохтани пайвастагии dBASE"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "Сохтани пайвастагӣ ба дафтари матнӣ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
+msgid  "Set up Microsoft Access connection"
+msgstr "Сохтани пайвастагии Microsoft Access"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.String.Text
+msgid  "Set up LDAP connection"
+msgstr "Сохтани пайвастагии LDAP"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.String.Text
+msgid  "Set up Adabas D connection"
+msgstr "Сохтани пайвастагии Adabas D"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.String.Text
+msgid  "Set up ADO connection"
+msgstr "Сохтани пайвастагии ADO"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.String.Text
+msgid  "Set up JDBC connection"
+msgstr "Сохтани пайвастагии JDBC"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.String.Text
+msgid  "Set up Oracle database connection"
+msgstr "Сохтани пайвастагии МД Oracle"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.String.Text
+msgid  "Set up MySQL connection"
+msgstr "Сохтани пайвастагии MySQL"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.String.Text
+msgid  "Set up ODBC connection"
+msgstr "Сохтани пайвастагии ODBC"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.String.Text
+msgid  "Set up Spreadsheet connection"
+msgstr "Сохтани пайвастагии Ҷадвали электронӣ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.String.Text
+msgid  "Set up user authentication"
+msgstr "Сохтани тафтиши истифодабар"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.String.Text
+msgid  "Set up MySQL server data"
+msgstr ""
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.String.Text
+msgid  "Save and proceed"
+msgstr "Сабт карда давом додан "
+
+#: source/ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.String.Text
+msgid  "New Database"
+msgstr "МД-и нав"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to a MySQL database"
+msgstr "Сохтани пайвастагии МД-и MySQL"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Шумо ба МДи MySQL ба воситаи ODBC ё JDBC пайваст мешавед.\nБа мудири система МДатон муроҷиат кунед, агар ба мушкилие рӯй овардед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
+msgid  "How do you want to connect to your MySQL database?"
+msgstr "Шумо ба MySQL чӣ гуна пайваст шудан мехоҳед?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RadioButton.Text
+msgid  "Connect using ODBC (Open Database Connectivity)"
+msgstr "Пайвастшавӣ бо ёрии ODBC (Open Database Connectivity)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RadioButton.Text
+msgid  "Connect using JDBC (Java Database Connectivity)"
+msgstr "Пайвастшавӣ бо ёрии JDBC (Java Database Connectivity)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RadioButton.Text
+msgid  "Connect directly"
+msgstr ""
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FixedText.Text
+msgid  "Set up the user authentication"
+msgstr "Сохтани тафтиши истифодабар"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FixedText.Text
+msgid  "Some databases require you to enter a user name."
+msgstr "Баъзе МД талаб мекунад кӣ номи истифодабар дохил карда шавад."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "~Номи истифодабаранда"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CheckBox.Text
+msgid  "Password re~quired"
+msgstr "Парол ло~зим аст"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PushButton.Text
+msgid  "~Test Connection"
+msgstr "~Санҷиши пайвастагӣ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FixedText.Text
+msgid  "Decide how to proceed after saving the database"
+msgstr "Барои истифода пас аз сабт кардан ба қароре биёед"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FixedText.Text
+msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "Шумо мехоҳед, ки Ёвар махзани далелҳоро дар %PRODUCTNAME ба қайд гирад?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RadioButton.Text
+msgid  "~Yes, register the database for me"
+msgstr "~Ҳа, махзани далелҳоро ба қайд гир"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RadioButton.Text
+msgid  "N~o, do not register the database"
+msgstr "Н~е, махзани далелҳоро ба қайд нагир"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FixedText.Text
+msgid  "After the database file has been saved, what do you want to do?"
+msgstr "~Пас аз он, ки махзани далелҳо сабт карда шуд, шумо чӣ кор кардан мехоҳед?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CheckBox.Text
+msgid  "Open the database for editing"
+msgstr "Кушодани МД барои ислоҳкунӣ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CheckBox.Text
+msgid  "Create tables using the table wizard"
+msgstr "Сохтани ҷадвал бо ёрии Ёвари Ҷадвал"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FixedText.Text
+msgid  "Click 'Finish' to save the database."
+msgstr "'Тайёр'-ро пахш кунед барои сабт кардани МД."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.String.Text
+msgid  "Set up connection to a MySQL database using JDBC"
+msgstr "Сохтани пайвастагӣ бо MySQL таввасути JDBC"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Маълумоти лозимаро барои пайвастшавӣ ба МДи MySQL бо JDBC дохил намоед. Бояд драйвери JDBC дар системаи шумо васл карда шуда ва дар %PRODUCTNAME ба қайд гирифта шуда бошад.\nБа мудири система МДатон муроҷиат кунед, агар ба мушкилие рӯй овардед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
+msgid  "MySQL JDBC d~river class:"
+msgstr "Кла~си драйвери MySQL JDBC:"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.String.Text
+msgid  "Default: 3306"
+msgstr "Аслӣ: 3306"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FixedText.Text
+msgid  "Set up connection to a MySQL database"
+msgstr ""
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
+msgid  "Please enter the required information to connect to a MySQL database."
+msgstr ""
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
+msgid  "Set up a connection to dBASE files"
+msgstr "Сохтани пайвастагӣ бо dBASE"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.String.Text
+msgid  "Select the folder where the dBASE files are stored."
+msgstr "Раферо кӣ дафтари dBASE онҷост, интихоб кунед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.String.Text
+msgid  "Set up a connection to text files"
+msgstr "Сохтани пайвастагӣ ба дафтари матнӣ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
+msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr "Раферо кӣ дафтари CSV (Comma Separated Values) онҷост, интихоб кунед. %PRODUCTNAME Base ин файлҳоро танҳо барои хондан мекушояд."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
+msgid  "Path to text files"
+msgstr "Раферо кӣ дафтари матнӣ онҷост, интихоб кунед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.String.Text
+msgid  "Set up a connection to a Microsoft Access database"
+msgstr "Сохтани пайвастагӣ бо Microsoft Access"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
+msgid  "Please select the Microsoft Access file you want to access."
+msgstr "МД-и Microsoft Access-ро, ки истифода кардан мехоҳед, интихоб намоед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
+msgid  "Set up a connection to an LDAP directory"
+msgstr "Сохтани пайвастагӣ бо LDAP"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Маълумоти лозимаро барои пайвастшавӣ ба Рафи LDAP дохил намоед.\nБа мудири система МДатон муроҷиат кунед, агар ба мушкилие рӯй овардед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
+msgid  "Default: 389"
+msgstr "Аслӣ: 389"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CheckBox.Text
+msgid  "Use ~secure connection (SSL)"
+msgstr ""
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Adabas D database"
+msgstr "Сохтани пайвастагӣ бо Adabas D"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr "Номи МДи Adabas D ро дохил кунед, ки ба он пайваст шудан мехоҳед.\nТугмачаи 'Намоиш...'ро пахш кунед барои интихоби МДи Adabas D, ки дар %PRODUCTNAME қайд шудааст."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ADO database"
+msgstr "Сохтани пайвастагӣ бо ADO"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "URLи манбаи далелҳои ADOро дохил кунед.\nТугмачаи 'Намоиш' ро пахш кунед то, ки ҷӯрсозиҳои провайдерро гузоред.\nБа мудири система МДатон муроҷиат кунед, агар ба мушкилие рӯй овардед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to an ODBC database"
+msgstr "Сохтани пайвастагӣ бо ODBC"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Номи мДи ODBCро дохил кунед, ки ба он пайваст шудан мехоҳед.\nТугмачаи 'Намоиш...'ро барои интихоби МДи ODBC, ки дар %PRODUCTNAME қайд шудааст, пахш кунед.\nБа мудири система МДатон муроҷиат кунед, агар ба мушкилие рӯй овардед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
+msgid  "Set up a connection to a JDBC database"
+msgstr "Сохтани пайвастагӣ бо JDBC"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Маълумоти лозимаро барои пайваст шудан ба МДи JDBC дохил кунед.\nБа мудири система МДатон муроҷиат кунед, агар ба мушкилие рӯй овардед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
+msgid  "Set up a connection to an Oracle database"
+msgstr "Сохтани пайвастагӣ бо Oracle"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.String.Text
+msgid  "Default: 1521"
+msgstr "Аслӣ: 1521"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.String.Text
+msgid  "Oracle JDBC ~driver class"
+msgstr "Класси драйвери Oracle JDBC"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Маълумоти лозимаро барои пайваст шудан ба МДи Oracle дохил кунед. Бояд драйвери JDBC Driver дар системаи шумо васл карда шуда ва дар %PRODUCTNAME қайд шуда бошад.\nБа мудири система МДатон муроҷиат кунед, агар ба мушкилие рӯй овардед."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
+msgid  "Set up a connection to spreadsheets"
+msgstr "Сохтани пайвастагӣ бо Ҷадвали электронӣ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr "Тугмачаи 'Намоиш...'-ро пахш кунед барои интихоби %PRODUCTNAME ҷадвали Microsoft Excel.\n%PRODUCTNAME ин дафтарро танҳо барои хониш мекушояд."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
+msgid  "~Location and file name"
+msgstr "~Ҷойгиршавӣ ва номи дафтар"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CheckBox.Text
+msgid  "~Password required"
+msgstr "~Парол лозим аст"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FixedText.Text
+msgid  "~Height"
+msgstr "Баландӣ"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "~Автоматӣ"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HelpButton.Text
+msgid  "Row Height"
+msgstr "Баландии сатр"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FixedText.Text
+msgid  "~Width"
+msgstr "Бар"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CheckBox.Text
+msgid  "~Automatic"
+msgstr "~Автоматӣ"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.HelpButton.Text
+msgid  "Column Width"
+msgstr "Бари сутун"
+
+#: source/ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.ModalDialog.Text
+msgid  "Text Connection Settings"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2).PB_AUTOBROWSEURL.PushButton.Text
+msgid  "Browse"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTODATABASENAME.FixedText.Text
+msgid  "Database name"
+msgstr "Номи МД"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOHOSTNAME.FixedText.Text
+msgid  "Server"
+msgstr "~URL-и сервер"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOBASEDN.FixedText.Text
+msgid  "Base ~DN"
+msgstr "~DN асосӣ"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOPORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "~Рақами порт"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FL_DATACONVERT.FixedLine.Text
+msgid  "Data conversion"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FT_CHARSET.FixedText.Text
+msgid  "~Character set"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FixedText.Text
+msgid  "Specify the type of files you want to access"
+msgstr "Намуди дафтареро кӣ истифода кардан мехоҳед интихоб кунед"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RadioButton.Text
+msgid  "Plain text files (*.txt)"
+msgstr "Дафтари матнӣ (*.txt)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RadioButton.Text
+msgid  "'Comma separated value' files (*.csv)"
+msgstr "Дафтари (*.csv)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RadioButton.Text
+msgid  "Custom:"
+msgstr "Ихтиёрӣ:"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.Text
+msgid  "Custom: *.abc"
+msgstr "Ихтиёрӣ: *.abc"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FixedLine.Text
+msgid  "Row Format"
+msgstr "Формати сатр"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FixedText.Text
+msgid  "Field separator"
+msgstr "Тақсимкунандаи майдон"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FixedText.Text
+msgid  "Text separator"
+msgstr "Тақсимкунандаи матн"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FixedText.Text
+msgid  "Decimal separator"
+msgstr "Тақсимкунандаи касри даҳӣ"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FixedText.Text
+msgid  "Thousands separator"
+msgstr "Аломати ҷудосозии ҳазорҳо"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CheckBox.Text
+msgid  "~Text contains headers"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.String.Text
+msgid  "{None}"
+msgstr "{Ҳеҷ}"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
+msgid  "#1 must be set."
+msgstr "#1 бояд гузошта шавад."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.String.Text
+msgid  "#1 and #2 must be different."
+msgstr "#1 ва #2 бояд фарқ кунанд."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.String.Text
+msgid  "Wildcards such as ?,* are not allowed in #1."
+msgstr "Рамзҳои қолаб, ба мисли *,? дар #1 манъ мебошанд."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FixedText.Text
+msgid  "JDBC d~river class"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PushButton.Text
+msgid  "Test class"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FixedText.Text
+msgid  "Socket"
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "Ҷадидсозӣ"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "Сохтани ~Намуди нав"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "Сохтани ~Ҷадвали нав"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "Ёвар Дархост ..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "Сохтани Дархост (Нақшгоҳ)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~Ислоҳкунии Дархост"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "Сохтани Дархости ~SQL "
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "Ислоҳкунӣ..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "Бари сутунҳо..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "Ёвари Ҳисобот..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "Ёвари форма..."
+
+#: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+msgid  "System"
+msgstr "Система"
+
+#: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+msgid  "Error during creation"
+msgstr "Хато ҳангоми сохтан"
+
+#: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+msgid  "An unexpected error occurred. The operation could not be performed."
+msgstr "Хатогии ғайричашмдошт рух дод. Иҷроиши оператсияи мазкур ғайриимкон аст."
+
+#: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+msgid  "The document \"$file$\" could not be opened."
+msgstr "Ҳуҷҷати\n\n$file$\n\nкушода нашуд."
+
+#: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+msgid  "The table cannot be deleted because the database connection does not support this."
+msgstr "Нобудсозии (Кӯр кардани) ҷадвал имкон надорад, аз сабаби он ки пайвастшави бо махзани далелҳо ин амалиётро дастгирӣ намекунад."
+
+#: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+msgid  "~All"
+msgstr "~Ҳама"
+
+#: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+msgid  "Undo:"
+msgstr "Мансуқгардонӣ"
+
+#: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+msgid  "Redo:"
+msgstr "Барқароркунӣ"
+
+#: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+msgid  "No corresponding column type could be found for column '#1'."
+msgstr "Типи мувофиқи сутун барои сутуни '#1' пайдо нашуд."
+
+#: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "Дафтари \"$file$\" вуҷуд надорад."
+
+#: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "Ҳангоми пайвастшавӣ ба манбаи далелҳо рух доданд. \"$buttontext$\"ро пахш кунед, то онҳоро бубинед."
+
+#: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr "Номи '$#$' аллакай мавҷуд аст.\nНоми дигарро илова кунед."
+
+#: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr ""
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
+msgid  "Apply columns"
+msgstr "Интихоби майдонҳо"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
+msgid  "Type formatting"
+msgstr "Намуди майдонҳо"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr "Майдонҳои зер аллакай ҳамчун калиди асосӣ интихоб шудаанд:\n"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
+msgid  "Assign columns"
+msgstr "Мувофиқати майдонҳо"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
+msgid  "Copy RTF Table"
+msgstr "Нусхагирии ҷадвали RTF"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "Кӯ~мак"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+msgid  "~Cancel"
+msgstr "~Бекоркунӣ"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
+msgid  "< ~Back"
+msgstr "<~Пас"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
+msgid  "~Next>"
+msgstr "~Пеш>"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+msgid  "C~reate"
+msgstr "~Сохтан"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
+msgid  "Existing columns"
+msgstr "Майдонҳои мавҷуда"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
+msgid  "Column information"
+msgstr "Маълумот дар бораи майдон"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
+msgid  "Automatic type recognition"
+msgstr "Автоматӣ муайянкунии тип (намуд)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
+msgid  "Lines (ma~x)"
+msgstr "Матрҳо (макс.)"
+
+#: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "Калиди асосӣ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
+msgid  "Source table: \\n"
+msgstr "Ҷадвали манбаӣ: \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
+msgid  "Destination table: \\n"
+msgstr "Ҷадвали интиҳоӣ: \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+msgid  "~All"
+msgstr "~Ҳама"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+msgid  "Non~e"
+msgstr "Ҳеҷ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+msgid  "Ta~ble name"
+msgstr "Номи ҷадвал"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+msgid  "Options"
+msgstr "Параметрҳо"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
+msgid  "De~finition and data"
+msgstr "Сохтор ва далелҳо"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
+msgid  "Def~inition"
+msgstr "Сохтор"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
+msgid  "A~s table view"
+msgstr "Ҳамчун тасвири ҷадвал"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
+msgid  "Append ~data"
+msgstr "Иловакунии далелҳо"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
+msgid  "Use first ~line as column names"
+msgstr ""
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
+msgid  "Crea~te primary key"
+msgstr "Сохтани калиди асосӣ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+msgid  "Name"
+msgstr "Ном"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "Нусхагирии ҷадвал"
+
+#: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
+msgid  "Copy table"
+msgstr "Нусхагирии ҷадвал"
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
+msgid  "This table name is not valid in the current database."
+msgstr ""
+
+#: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
+msgstr "Параметри 'Иловакунии далелҳо' ро пӯшонед, ко кӣ ба ҷадвали ҷорӣ далелҳоро илова кунед."
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
+msgid  "Please change the table name. It is too long."
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+msgid  "Options"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+msgid  "~Type"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+msgid  "Inner join"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+msgid  "Left join"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+msgid  "Right join"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+msgid  "Full (outer) join"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+msgid  "Cross join"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+msgid  "Natural"
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "Ҷадвалҳои истифодакардашуда"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "Майдонҳои истифодакардашуда"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+msgid  "Join Properties"
+msgstr "Хосиятҳои Пайванд"
+
+#: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+msgid  "Please note that some databases may not support this join type."
+msgstr "Дар хотир доред, ки на ҳама МД-ҳо ин гуна Пайвандро имкон медиҳанд."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+msgid  "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "Танҳо навиштҳоеро тартиб медиҳад, ки онҳо шарти як будани арзишҳои майдонҳои муносибатноки ҳарду ҷадвалро қонеъ гардонанд."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "Ҳамаи навиштҳои ҷадвали '%1', ва танҳо он навиштҳои ҷадвали '%2' -ро тартиб медиҳад, ки онҳо шарти як будани арзишҳои майдонҳои муносибатноки ҳарду ҷадвалро қонеъ гардонанд."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+msgid  "Contains ALL records from '%1' and from '%2'."
+msgstr "Ҳаммаи навиштҳои ҷадвалҳои  '%1' ва '%2' тартиб медиҳад."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr ""
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr ""
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+msgid  "Add Table Window"
+msgstr "Илова кардани равзанаи ҷадвал"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+msgid  "Move table window"
+msgstr "Кӯчонидани равзанаи ҷадвал"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+msgid  "Insert Join"
+msgstr "Дохилкунии қӯшагӣ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+msgid  "Delete Join"
+msgstr "Кӯр кардани қӯшагӣ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+msgid  "Resize table window"
+msgstr "Ҳаҷми равзанаи ҷадвалро тағир додан"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+msgid  "Delete Column"
+msgstr "Кӯркунии сутун"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+msgid  "Move column"
+msgstr "Кучонидани сутун"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+msgid  "Add Column"
+msgstr "Иловакардани сутун"
+
+#: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, table '$name$' does not exist."
+msgstr "Ифодаи ғалатӣ, номи '$name$' вуҷуд надорад."
+
+#: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, field name '$name$' does not exist."
+msgstr "Ифодаи нодуруст. Майдони '$name$' вуҷуд надорад"
+
+#: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgstr "Дархост #num# ҷадвалро дарбар мегирад. Вале МДи интихобшуда танҳо то #maxnum# ро барои як ифода истифода карда метавонад."
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+msgid  "Delete Table Window"
+msgstr "Кӯркунии равзанаи ҷадвал"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+msgid  "Edit Column Description"
+msgstr "Такмилдиҳии тавсифи сутун"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+msgid  "Adjust column width"
+msgstr "Такмилдиҳии бари сутун"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+msgid  "(not sorted);ascending;descending"
+msgstr "(бе низомдарорӣ);бо зиёдшавӣ;бо поёнравӣ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+msgid  "(no function);Group"
+msgstr "(бе функтсия);Миёна;Шумор;Maксимум;Mинимум;Сумма;Гурӯҳ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+msgid  "(no table)"
+msgstr "(бе ҷадвал)"
+
+#: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+msgid  "The database only supports sorting for visible fields."
+msgstr "Махзани далелҳо танҳо низомноккунии майдонҳои намоёнро дастгири мекунад."
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+msgid  "Functions"
+msgstr "Функтсияҳо"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+msgid  "Table Name"
+msgstr "Номи ҷадвал"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+msgid  "Alias"
+msgstr "Тахаллус"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+msgid  "Distinct Values"
+msgstr "Арзишҳои фарқкунанда "
+
+#: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "Майдон;Тахаллус;Ҷадвал;Низомноккунӣ;Намоён;Функтсия;Критерияҳо;ё;ё"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+msgid  "There are too many columns."
+msgstr "Шумораи хеле зиёди сутунҳо."
+
+#: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+msgid  "A condition cannot be applied to field [*]"
+msgstr "Истифодабарии ин шароит дар майдони [*] имкон надорад"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+msgid  "The SQL statement created is too long."
+msgstr "Ифодаи сохташудаи SQL хеле дароз мебошад."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+msgid  "Query is too complex"
+msgstr "дархост хеле мураккаб мебошад"
+
+#: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+msgid  "Nothing has been selected."
+msgstr "Ҳеҷ чиз интихоб нашудааст."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+msgid  "Too many search criteria"
+msgstr "Критерияҳои ҷустуҷӯ хеле зиёданд"
+
+#: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+msgid  "SQL syntax error"
+msgstr "Хатогӣ дар синтаксиси SQL"
+
+#: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+msgid  "[*] cannot be used as a sort criterion."
+msgstr "Истифодабарии [*] ба ҳайси критерия имкон надорад."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+msgid  "There are too many tables."
+msgstr "Шумораи ҷадвалҳо хеле калон мебошад."
+
+#: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+msgid  "The statement will not be applied when querying in the SQL dialect of the database."
+msgstr "Ҳангоми даъваткунӣ бо диалекти SQL инструктсия истифода карда намешавад."
+
+#: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+msgid  "Field name not found or not unique"
+msgstr "Номи майдон пайдо нашуд ё ягона намебошад"
+
+#: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+msgid  "Join could not be processed"
+msgstr "Пайванд амали карда нашуд"
+
+#: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+msgid  "Syntax error in SQL statement"
+msgstr "Хатогии синтаксисӣ дар дархости SQL"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+msgid  "This database does not support table views."
+msgstr "МД намуди ҷадвалҳоро дастгирӣ намекунад."
+
+#: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+msgid  "This database does not support altering of existing table views."
+msgstr ""
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+msgid  "Do you want to create a query instead?"
+msgstr "Ба ҷои ин дархост сохтан мехоҳед?"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+msgid  "No query could be created."
+msgstr "Сохтани даъвад имкон надорад"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+msgid  "No query could be created because no fields were selected."
+msgstr "Сохтани даъвад имкон надорад, аз сабаби он кӣ ягон майдон ҷудо карда нашудааст."
+
+#: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgstr "Манбаи далелҳои мувофиқ кӯр карда шудааннд. Аз ин лиҳоз далелҳои ба онҳо таалуқдошта сабт карда намешаванд."
+
+#: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+msgid  "The column '$name$' is unknown."
+msgstr "Сутуни '$name$' номаълум аст."
+
+#: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+msgid  "Columns can only be compared using '='."
+msgstr "Муқоисаи сутунҳо танҳо бо истифода аз аломати '=' имкон дорад."
+
+#: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+msgid  "You must use a column name before 'LIKE'."
+msgstr "Номи сутунро пеш аз 'LIKE' истифода кунед."
+
+#: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+msgid  "The column could not be found. Please note that the database is case-sensitive."
+msgstr "Сутун пайдо нашуд. Эҳтимол ҳаст ин махзани далелҳо ҳарфҳои хурду калонро дар ном фарқ кунад."
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Query Design"
+msgstr " - %PRODUCTNAME Base: Нақшгоҳи Дархост"
+
+#: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: View Design"
+msgstr " - %PRODUCTNAME Base: Нақшгоҳи Намуд"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr "$object$ тағир ёфт.\nТағирот сабт карда шавад?"
+
+#: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "Фармони SQL, ки дархостро ташкил медиҳад, таҳлил карда нашуд."
+
+#: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "Дархост дар намуди SQL кушода мешавад."
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+msgid  "The table view"
+msgstr "Дархост"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+msgid  "The query"
+msgstr "Намоиши ҷадвал"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+msgid  "The SQL statement"
+msgstr "Ифодаи SQL"
+
+#: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The query does not create a result set, and thus cannot be part of another query."
+msgstr "Дархост гурӯҳи натиҷаҳоро намесозад, аз ин лиҳоз қисми дигар клид шуда наметавонад."
+
+#: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+msgid  "This relation already exists. Do you want to edit it or create a new one?"
+msgstr "Ин муносибат аллакай вуҷуд дорад. Дигар кардан мехоҳед?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+msgid  "Edit..."
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+msgid  "Create..."
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Relation design"
+msgstr " - %PRODUCTNAME Base: Нақшбандии вобастагӣ"
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support relations."
+msgstr "Ин махзани далелҳо муносибатҳоро дастгирӣ наменамояд."
+
+#: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgstr "Кӯр кардани ин ҷадвал боиси кӯр кадани ҳамаи муносибатҳои бо ин ҷадвалбуда мегардад. Давом диҳам?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr "Номуайян;Матн;Рақам;Сана/Вақт;Сана;Вақт;Мантиқӣ;Арзӣ;Мемо;Шуморак;Расм;Матн (фикс.);Даҳҳӣ;Дуӣ (фикс.);Дуӣ;Бутуни дароз;Дукарата;Бо нуқтаи касрӣ;Ҳаққонӣ;Бутун;Бутуни кӯтоҳ;Бутуни майда;SQL Нул;Объект;Distinct;Сохтор;Майдон;BLOB;CLOB;REF;OTHER"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "Гузориш/кӯр кардани калиди асосӣ"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+msgid  "Yes"
+msgstr "Ҳа"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+msgid  "No"
+msgstr "Не"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+msgid  "Ascending"
+msgstr "Бо болоравӣ"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+msgid  "Descending"
+msgstr "Бо поёнравӣ"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+msgid  "<none>"
+msgstr "<ҳеҷ>"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+msgid  "Field name"
+msgstr "Номи майдон"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+msgid  "Field Name"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+msgid  "Field ~type"
+msgstr "Типи майдон"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+msgid  "Field Type"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+msgid  "Field length"
+msgstr "Дарозии майдон"
+
+#: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+msgid  "Description"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
+msgid  "Column Description"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+msgid  "Input required"
+msgstr "Дохилкунӣ лозим аст"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+msgid  "~AutoValue"
+msgstr "~Автоарзиш"
+
+#: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+msgid  "Field Properties"
+msgstr "Хосиятҳои майдон"
+
+#: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "Умумӣ"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+msgid  "Description:"
+msgstr "Шарҳ:"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+msgid  "Table properties"
+msgstr "Хосиятҳои ҷадвал"
+
+#: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+msgid  "The text you entered is not a list element. "
+msgstr "Матни шумодароварда элементи рӯйхат намебошад."
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+msgid  "Insert Rows"
+msgstr "Иловакунии сатрҳо"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "Калиди асосӣ"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+msgid  "Modify cell"
+msgstr "Такмилдиҳии чашмак"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+msgid  "Delete row"
+msgstr "Кӯр кардани сатр"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+msgid  "Modify field type"
+msgstr "Тағирдиҳии типи майдон"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+msgid  "Insert row"
+msgstr "Гузоштани сатр"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+msgid  "Insert new row"
+msgstr "Гузоштани сатри нав"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "Гузориш/кӯр кардани калиди асосӣ"
+
+#: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+msgid  "~Default value"
+msgstr "Арзиши аслӣ"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+msgid  "~Entry required"
+msgstr "Ҳатмӣ"
+
+#: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+msgid  "~Length"
+msgstr "Дарозӣ"
+
+#: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+msgid  "~Type"
+msgstr "Тип"
+
+#: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+msgid  "~Length"
+msgstr "Дарозӣ"
+
+#: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+msgid  "Decimal ~places"
+msgstr "Шумораи адади касрӣ"
+
+#: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+msgid  "Format example"
+msgstr "Мисоли формат"
+
+#: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr "Арзишро барои ба тарзи аслӣ ба ҳар навишти нав дохил кардан интихоб кунед.\nАгар майдон арзиши аслӣ нагирад, онро холӣ гузоред."
+
+#: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr "Арзиши ибтидоии ин майдонро дохил кунед.\n\nВақте, ки шумо навишти навро дохил мекунед, ин арзиш бар он майдон пайдо мешавад, бино барон ин арзиш формати он майдонро дошта бошад."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgstr "Ин параметрро интихоб кунед, агар арзиши ин майдон ба NULL баробар набошад (ин маънои онро дорад, ки майдон набояд холӣ бошад)."
+
+#: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+msgid  "Enter the maximum text length permitted."
+msgstr "Дарозии максималии иҷозатбудаи матнро дохил кунед."
+
+#: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+msgid  "Enter the number format."
+msgstr "Формати рақамро дохил кунед."
+
+#: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr "Дарозии арзиши ин майдонро муайян месозад.\n\nАгар адади даҳӣ бошад, онгоҳ дарозии адад, агар адад дуӣ бошад, онгоҳ дарозии блок.\nАрзиш автоматӣ ислоҳ карда мешавад дар доираи дарозӣ."
+
+#: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+msgid  "Specify the number of decimal places permitted in this field."
+msgstr "Шумораи ададҳои қисми касрии ин чашмакро дохил кунед."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgstr "Дар ин ҷо дидан мумкин аст, ки далелҳо чӣ гуна тарҳгузорӣ карда мешаванд мувофиқи формати ҷорӣ (бо ёрии тугмачаи дар тарафи рост буда форматро иваз кардан мумкин аст)."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+msgid  "This is where you determine the output format of the data."
+msgstr "Дар ин ҷо метавонед формати барориши далелҳоро муайян кунед."
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr "Интихоб кунед, ки арзиши ин майдон автоматӣ зиёд карда шавад.\n\nШумо ба ин гуна майдонҳо арзиш дохил карда наметавонед."
+
+#: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "Сабт кардани ҷадвал ғайриимкон аст, аз сабаби такроран истифода кардани номи сутуни \"$column$\"."
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "Сутуни \"$column$\" ба калиди асосӣ таалуқ дорад. Вайро кӯр карда шумо ҳамчунин калиди асосиро кӯр мекунед. Шумо ҳаққони мехоҳед ин сутунро кӯр кунед?"
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+msgid  "Primary Key Affected"
+msgstr "Калиди асосӣ халалдор шуд"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+msgid  "Column"
+msgstr "Сутун"
+
+#: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+msgid  "Continue anyway?"
+msgstr "Ба ин нигоҳ накарда давом диҳам?"
+
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "Огоҳӣ"
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+msgid  "The table could not be saved due to problems connecting to the database."
+msgstr "Сабт кардани ҷадвал ғайриимкон аст, то даме кӣ алоқа бо махзани далелҳо барқарор шавад."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgstr "Истифодабарии филтр имкон надорад, барои он ки манбаи далелҳо кӯр карда шудааст."
+
+#: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+msgid  "No primary key"
+msgstr "Бе калиди асосӣ"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr "Барои ин МД индекс ё калиди асосии ягона барои шинохтани навиштҳо лозим аст.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base: Table Design"
+msgstr " - %PRODUCTNAME Base: Нақшбандии Ҷадвал"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "Такмилдиҳии сутуни \"$column$\" ғайриимкон аст. Ӯро метавон кӯр кард ва сутуни нав бо формати дилхоҳ сохт. Давом диҳам?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+msgid  "Error while saving the table design"
+msgstr "Хато ҳангоми сабткунии нақшбандии ҷадвал"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+msgid  "The column $column$ could not be deleted."
+msgstr "Сутуни $column$ кӯр карда намешавад."
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr "Шумо кӯшиши кӯр кардани ҳамаи сутунҳои ҷадвалро доред. Ҷадвал бе сутун вуҷуд дошта наметавонад. Мехоҳед ҷадвалро кӯр кунед? Агар не, ҷадвал бетағир мемонад."
+
+#: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+msgid  "A~uto-increment statement"
+msgstr "Инструктсияи автоинкрементӣ"
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr "Ифордаи SQLро барои майдони автоматӣ дохил кунед.\n\nИн ифода ба МД гузошта мешавад, ҳангоме, ки ҷадвал сохта мешавад."
+
+#: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr "Маълумоти тип аз МД гирифта намешавад.\nБарои ин мандаи далелҳо Нақшабандии Ҷадвал вуҷуд надорад."
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+msgid  "change field name"
+msgstr "ивазкунии номи майдон"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+msgid  "change field type"
+msgstr "ивазкунии типи майдон"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+msgid  "change field description"
+msgstr "ивазкунии шарҳи майдон"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+msgid  "change field attribute"
+msgstr "ивазкунии атрибути майдон"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+msgid  "~Remember password until end of session"
+msgstr "Паролро то охири мавсим дар хотир дор"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+msgid  "~Remember password"
+msgstr "Парол дар хотир дошта шавад"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+msgid  "The destination database does not support views."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+msgid  "The destination database does not support primary keys."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+msgid  "Only tables and queries are supported at the moment."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+msgid  "The copy source's result set must support bookmarks."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+msgid  "Illegal number of initialization parameters."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+msgid  "An error occurred during initialization."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
+msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
+msgid  "To copy a query, your connection must be able to provide queries."
+msgstr ""
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
+msgid  "The given interaction handler is invalid."
+msgstr ""

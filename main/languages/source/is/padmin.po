@@ -1,0 +1,844 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgstr "Veldu möppuna þaðan sem þú vilt ná í letur. Bættu við leturgerðum með því að smella á \"Í lagi\" hnappinn."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+msgid  "Source directory"
+msgstr "Upprunamappa"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+msgid  "Sea~rch Subdirectories"
+msgstr "Leita í undi~rmöppum"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+msgid  "Target options"
+msgstr "Valkostir úttaks"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+msgid  "Create ~soft links only"
+msgstr "Einungis búa til tákntengi (~soft links)"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "~Velja allt"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+msgid  "Add fonts"
+msgstr "Bæta við leturgerðum"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr "Viltu í alvörunni skrifa yfir þessa leturskrá ?\n   %s"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+msgid  "All"
+msgstr "Allt"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+msgid  "None"
+msgstr "Ekkert"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr "Letursniðskrá (með .afm endingun) fannst ekki fyrir letrið\n%s\nþar með er ekki hægt að setja upp þetta letur. Hægt er að búa til letursniðskrár með t.d. ghostscript, en þær verða að vera í sömu möppu og letrurskrárnar sjálfar, eða í sérstakri afm undirmöppu."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "Skrána með leturmælieiningum leturskrárinnar\n   %s\ntókst ekki að afrita. Letrið verður ekki sett upp."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "Leturskrána\n   %s\ntókst ekki að afrita. Letrið verður ekki sett upp."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr "Engin mappa með skrifanlegri 'fonts.dir' skrá fannst á leturskóðinni (fontpath). Þar með er ekki hægt að setja upp neitt letur."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+msgid  "%d new fonts were added."
+msgstr "%d nýjum leturgerðum var bætt við."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+msgid  "Add Fonts"
+msgstr "Bæta við leturgerðum"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+msgid  "CUPS support"
+msgstr "CUPS stuðningur"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+msgid  "Disable CUPS Support"
+msgstr "Taka af CUPS stuðning"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+msgid  "Close"
+msgstr "Loka"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
+msgid  "Installed ~printers"
+msgstr "Insettir ~prentarar"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
+msgid  "Command:"
+msgstr "Skipun:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
+msgid  "Driver:"
+msgstr "Rekill:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
+msgid  "Location:"
+msgstr "Staðsetning:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
+msgid  "Comment:"
+msgstr "Athugasemd:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
+msgid  "Properties..."
+msgstr "Eiginleikar..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
+msgid  "R~ename..."
+msgstr "~Endurnefna..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
+msgid  "~Default"
+msgstr "~Sjálfgefið"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
+msgid  "Remo~ve..."
+msgstr "~Eyða..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
+msgid  "Test ~Page"
+msgstr "~Prófunarsíða"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
+msgid  "Fon~ts..."
+msgstr "~Letur..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
+msgid  "New Printer..."
+msgstr "Nýr prentari..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
+msgid  "Default printer"
+msgstr "Sjálfgefinn prentari"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
+msgid  "Rename"
+msgstr "Endurnefna"
+
+#: source/padialog.src#RID_PADIALOG.String.Text
+msgid  "Printer Administration"
+msgstr "Prentarastjórnun"
+
+#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
+msgid  "Could not open printer %s."
+msgstr "Gat ekki tengst prentaranum %s."
+
+#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr "Prufusíðan prentaðist rétt. Skoðaðu útkomuna."
+
+#: source/padialog.src#RID_ERR_NOWRITE.String.Text
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
+msgstr "Engir prentarar eru uppsettir, vegna þess að skráarkerfið er skrifvarið.\nHafðu samband við kerfisstjóra."
+
+#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+msgid  "~New printer name"
+msgstr "~Nýtt heiti á prentara"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+msgid  "Model"
+msgstr "Gerð"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+msgid  "Name"
+msgstr "Nafn"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+msgid  "Comment"
+msgstr "Athugasemd"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+msgid  "Queue"
+msgstr "Biðröð"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+msgid  "Date"
+msgstr "Dagsetning"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+msgid  "Time"
+msgstr "Tími"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "Loka"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+msgid  "Re~name..."
+msgstr "~Endurnefna..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+msgid  "~Remove..."
+msgstr "~Eyða..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+msgid  "~Add..."
+msgstr "~Bæta við..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+msgid  "Note: The fonts are only available to the applications."
+msgstr "Athugaðu: Letrið er aðeins tiltækt fyrir forritin."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+msgid  "~New name for %s"
+msgstr "~Nýtt heiti á %s"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr "~Nýtt heiti á %s (%d1 af %d2)"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr "Ekki var hægt að endurnefna letrið %s því það vantaði skrifheimildir."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+msgid  "Fonts"
+msgstr "Letur"
+
+#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+msgid  "Test page"
+msgstr "Prófunarsíða"
+
+#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+msgid  "Wrong environment"
+msgstr "Rangt stýrikerfi"
+
+#: source/padialog.src#RID_YOU_SURE.String.Text
+msgid  "Are you sure ?"
+msgstr "Ertu viss ?"
+
+#: source/padialog.src#RID_AFMERROR_OK.String.Text
+msgid  "No error"
+msgstr "Engin villa"
+
+#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr "Leturmælieiningarnar innihalda ekki færslu með heiti leturs (FontName)."
+
+#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr "Leturmælieiningarnar innihalda ekki færslu með öllu heiti leturs (FullName)."
+
+#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr "Leturmælieiningarnar innihalda ekki leturfjölskyldu færslu (FamilyName)."
+
+#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+msgid  "The converted metric could not be written."
+msgstr "Ekki var hægt að skrifa umbreyttu leturmælieiningarnar."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+msgid  "The metric could not be read."
+msgstr "Ekki var hægt að lesa leturmælieiningarnar."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+msgid  "A temporary file could not be created."
+msgstr "Ekki var hægt að búa til bráðabirgðaskrá."
+
+#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+msgid  "The file does not contain a metric."
+msgstr "Skráin inniheldur ekki leturmælieiningar."
+
+#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr "Leturmælieiningunum\n\n%s\n\nvar ekki hægt að umbreyta, af eftirfarandi ástæðume:\n\n"
+
+#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+msgid  "Progress"
+msgstr "Framvinda"
+
+#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+msgid  "Please wait"
+msgstr "Bíddu Aðeins"
+
+#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+msgid  "Font metrics conversion"
+msgstr "Umbreyting leturmælieininga"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+msgid  "Dri~ver directory"
+msgstr "~Reklamappa"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+msgid  "Please select the driver directory."
+msgstr "Veldu möppu fyrir rekilinn."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+msgid  "Browse..."
+msgstr "Velja..."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+msgid  "~Selection of drivers"
+msgstr "Úr~val rekla"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Vinsamlega veldu rekilinn sem á að nota og ýttu á \"%s\"."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+msgid  "Searching for drivers"
+msgstr "Leitað að reklum"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+msgid  "Driver Installation"
+msgstr "Uppsetning rekils"
+
+#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Viltu í alvörunni fjarlægja \"%s\" rekilinn?"
+
+#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+msgid  "Do you really want to remove this printer ?"
+msgstr "Viltu í alvörunni fjarlægja þennan prentara ?"
+
+#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr "Viltu í alvörunni fjarlægja valda letrið ?"
+
+#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Það eru ennþá inni prentarar sem nota \"%s\" rekilinn. Viltu í alvörunni fjarlægja hann ? Viðkomandi prentarar verða þá einnig fjarlægðir."
+
+#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "Rekillinn \"%s\" þarf alltaf að vera til staðar, þess vegna er ekki hægt að fjarlægja hann."
+
+#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr "Ekki var hægt að fjarlægja \"%s1\" rekilinn. Það tókst ekki að fjarlægja skrána\n\n%s2."
+
+#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Rekillinn \"%s\" er notaður af sjálfgefna prentaranum þínum. Þar með er ekki hægt að fjarlægja hann."
+
+#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+msgid  "The printer %s cannot be removed."
+msgstr "Ekki er hægt að fjarlægja %s prentarann."
+
+#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Prentari með heitinu \"%s\" er þegar til staðar. Þessi prentari verður því ekki fluttur inn."
+
+#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "Prentarinn \"%s\" er ekki með gilda uppsetningu og verður því ekki fluttur inn."
+
+#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "Rekill fyrir prentarann \"%s1\" (%s2) er ekki uppsettur. Þessi prentari verður því ekki fluttur inn."
+
+#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+msgid  "The printer \"%s\" could not be added."
+msgstr "Ekki var hægt að bæta við \"%s\" prentaranum."
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+msgid  "~Finish"
+msgstr "~Ljúka"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+msgid  "~Next >>"
+msgstr "Á~fram >>"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+msgid  "<< ~Back"
+msgstr "<< ~Til baka"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+msgid  "Add Printer"
+msgstr "Bæta við prentara"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Veldu rekil"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+msgid  "Please select a s~uitable driver."
+msgstr "Veld~u hentugan rekil."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+msgid  "~Import..."
+msgstr "~Flytja inn..."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Eyða"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+msgid  "Delete driver"
+msgstr "Eða rekli"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a device type"
+msgstr "Veldu gerð vélbúnaðar"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+msgid  "Do you want to"
+msgstr "Viltu"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+msgid  "Add a ~printer"
+msgstr "~Bæta við prentara"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+msgid  "Connect a fa~x device"
+msgstr "Tengdu fa~xtæki"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+msgid  "Connect a P~DF converter"
+msgstr "Tengdu P~DF umbreyti"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+msgid  "~Import printers from a StarOffice installation"
+msgstr "Flytja ~inn prentara frá StarOffice uppsetningu"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a name"
+msgstr "Veldu nafn"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+msgid  "Please enter a name for the printer."
+msgstr "Settu inn nafn fyrir prentarann."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+msgid  "Please enter a name for the fax connection."
+msgstr "Vinsamlega gefðu faxtengingunni nafn."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+msgid  "Please enter a name for the PDF connection."
+msgstr "Vinsamlega sláðu inn heiti á PDF- tenginguna."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+msgid  "Fax printer"
+msgstr "Fax prentari"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+msgid  "PDF converter"
+msgstr "PDF umbreytir"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+msgid  "~Use as default printer"
+msgstr "~Nota sem sjálfgefin prentara"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+msgid  "Remo~ve fax number from output"
+msgstr "~Fjarlægja faxnúmer úr útprenti"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a command line"
+msgstr "Veldu skipanalínu"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr "Vinsamlegast sláðu inn viðeigandi skipanalínu fyrir þetta tæki."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF ~target directory"
+msgstr "Ú~ttaksmappa fyrir PDF-skrár"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "~Hjálp"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Skipanalína fyrir PDF-umbreyta er framkvæmd á eftirfarandi hátt: fyrir hvert skjal sem er prentað, er \"(TMP)\" á skipanalínunni skipt út fyrir bráðabirgðaskrá og \"(OUTFILE)\" er skipt út fyrir heiti PDF-úttaksskrár. Ef \"(TMP)\" kemur fyrir í skipanalínunni, er PostScript kóði útvegaður í gegnum skrá, annars verður þetta sett fram sem staðalúttak (e. standard input, þ.e.a.s. sem pípa)."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Skipanalína fyrir faxtæki er framkvæmd á eftirfarandi hátt: fyrir hvert fax sem er sent, táknar \"(TMP)\" í skipun bráðabirgðaskrá og \"(PHONE)\" er skipt út fyrir faxnúmerið. Ef \"(TMP)\" kemur fyrir í skipanalínunni, er PostScript kóði útvegaður í gegnum skrá, annars verður þetta sett fram sem staðalúttak (e. standard input, þ.e.a.s. sem pípa)."
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+msgid  "Import printers from old versions"
+msgstr "Flytja inn prentara frá eldri útgáfum"
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+msgid  "~These printers can be imported. Please select the ones you want to import."
+msgstr "~Hægt er að flytja inn þessa prentara. Veldu þá sem þú vilt flytja inn."
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "~Velja allt"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Veldu rekil"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this fax connection"
+msgstr "Nota eftirfarandi rekil fyrir þessa faxtengingu"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "S~jálfgefinn rekill"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+msgid  "A speci~fic driver, to adapt the format to another printer"
+msgstr "Sérsta~kur rekill, notaður til að aðlaga sniðið að öðrum prentara"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Veldu rekil"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this PDF converter"
+msgstr "Nota eftirfarandi rekil fyrir þennan PDF-umbreyti"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "S~jálfgefinn rekill"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+msgid  "The Adobe D~istiller(tm) driver"
+msgstr "Adobe D~istiller(tm) rekillinn"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+msgid  "A spec~ific driver, to adapt the format to another printer"
+msgstr "Sérstakur rek~ill, notaður til að aðlaga sniðið að öðrum prentara"
+
+#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Skáletrað"
+
+#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+msgid  "Oblique"
+msgstr "Hallandi"
+
+#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+msgid  "Thin"
+msgstr "Mjótt"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+msgid  "Ultralight"
+msgstr "Verulega þunnt"
+
+#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+msgid  "Semilight"
+msgstr "Næstum-létt"
+
+#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+msgid  "Light"
+msgstr "Létt"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+msgid  "Semibold"
+msgstr "Næstum-feitletrað"
+
+#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+msgid  "Bold"
+msgstr "Feitletrað"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+msgid  "Ultrabold"
+msgstr "Verulega feitletrað"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+msgid  "Ultracondensed"
+msgstr "Verulega þjappað"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+msgid  "Extracondensed"
+msgstr "Meira þjappað"
+
+#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+msgid  "Condensed"
+msgstr "Þjappað"
+
+#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+msgid  "Semicondensed"
+msgstr "Næstum-þjappað"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+msgid  "Semiexpanded"
+msgstr "Næstum-vítt"
+
+#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+msgid  "Expanded"
+msgstr "Dregið sundur"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+msgid  "Extraexpanded"
+msgstr "Meira víkkað"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+msgid  "Ultraexpanded"
+msgstr "Verulega vítt"
+
+#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+msgid  "Regular"
+msgstr "Venjulegt"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+msgid  "Command"
+msgstr "Skipun"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+msgid  "Paper"
+msgstr "Pappír"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+msgid  "Device"
+msgstr "Tæki"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+msgid  "Font Replacement"
+msgstr "Útskipting leturs"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+msgid  "Other Settings"
+msgstr "Aðrar stillingar"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+msgid  "from driver"
+msgstr "frá rekli"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+msgid  "<ignore>"
+msgstr "<hunsa>"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+msgid  "Properties of %s"
+msgstr "Eiginleikar %s"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+msgid  "~Paper size"
+msgstr "~Pappírsstærð"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+msgid  "~Orientation"
+msgstr "~Stefna"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+msgid  "~Duplex"
+msgstr "~Tvíhliða"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+msgid  "Paper tray"
+msgstr "Pappírsbakki"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+msgid  "Color"
+msgstr "Litur"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+msgid  "Grayscale"
+msgstr "Gráskali"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+msgid  "~Option"
+msgstr "~Valkostur"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+msgid  "Current ~value"
+msgstr "~Núverandi Gildi"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+msgid  "Printer ~Language type"
+msgstr "Tegund prentaratungumá~ls"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+msgid  "PostScript (Level from driver)"
+msgstr "PostScript (Stig frá rekli)"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+msgid  "PostScript Level 1"
+msgstr "PostScript stig 1"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+msgid  "PostScript Level 2"
+msgstr "PostScript stig 2"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+msgid  "PostScript Level 3"
+msgstr "PostScript stig 3"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+msgid  "PDF"
+msgstr "PDF"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+msgid  "~Color"
+msgstr "~Litur"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+msgid  "Color ~depth"
+msgstr "~Litadýpt"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+msgid  "~Enable font replacement"
+msgstr "Virkja útskiptingu l~eturs"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+msgid  "Replaced ~fonts"
+msgstr "Útski~ptar leturgerðir"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+msgid  "~Add"
+msgstr "~Bæta við"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+msgid  "~Remove"
+msgstr "Fja~rlægja"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+msgid  "Repla~ce font"
+msgstr "~Skipta um leturgerð"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+msgid  "by ~printer font"
+msgstr "eftir ~prentaraletri"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr "~Nota prentglugga kerfisins, gerir %PRODUCTNAME prentglugga óvirka"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+msgid  "Command for quick printing without dialog (optional)"
+msgstr "Skipun til að prenta fljótt án valglugga (valmöguleiki)"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+msgid  "Select command"
+msgstr "Velja skipun"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+msgid  "Printer"
+msgstr "Prentari"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+msgid  "Fax"
+msgstr "Fax"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+msgid  "PDF converter"
+msgstr "PDF umbreytir"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+msgid  "~Configure as"
+msgstr "Stilla se~m"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+msgid  "~Fax number will be removed from output"
+msgstr "~Faxnúmer verður fjarlægt úr útprenti"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF target directory :"
+msgstr "Úttaksmappa fyrir PDF skrár :"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+msgid  "Command: "
+msgstr "Skipun: "
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+msgid  "Printer"
+msgstr "Prentari"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "~Hjálp"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "Fja~rlægja"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Skipanalína fyrir PDF-umbreyta er framkvæmd á eftirfarandi hátt: fyrir hvert skjal sem er prentað, er \"(TMP)\" á skipanalínunni skipt út fyrir bráðabirgðaskrá og \"(OUTFILE)\" er skipt út fyrir heiti PDF-úttaksskrár. Ef \"(TMP)\" kemur fyrir í skipanalínunni, er PostScript kóði útvegaður í gegnum skrá, annars verður þetta sett fram sem staðalúttak (e. standard input, þ.e.a.s. sem pípa)."
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr "Skipanalína fyrir prentara er framkvæmd á eftirfarandi hátt: tilbúinn PostScript kóði er settur fram sem staðalúttak (e. standard input, þ.e.a.s. sem pípa) á skipanalínunni."
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Skipanalína fyrir faxtæki er framkvæmd á eftirfarandi hátt: fyrir hvert fax sem er sent, táknar \"(TMP)\" í skipun bráðabirgðaskrá og \"(PHONE)\" er skipt út fyrir faxnúmerið. Ef \"(TMP)\" kemur fyrir í skipanalínunni, er PostScript kóði útvegaður í gegnum skrá, annars verður þetta sett fram sem staðalúttak (e. standard input, þ.e.a.s. sem pípa)."
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+msgid  "~Left margin"
+msgstr "~Vinstri spássía"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+msgid  "~Top margin"
+msgstr "~Efri spássía"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+msgid  "~Right margin"
+msgstr "~Hægri spássía"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+msgid  "~Bottom margin"
+msgstr "~Neðri spássía"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+msgid  "~Comment"
+msgstr "~Athugasemd"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+msgid  "~Default"
+msgstr "~Sjálfgefið"
+
+#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+msgid  "Please enter the fax number."
+msgstr "Settu inn faxnúmer."
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+msgid  "Authentication request"
+msgstr "Beiðni um auðkenningu"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+msgid  "Please enter your authentication data for server %s"
+msgstr "Settu inn auðkenningarupplýsingar fyrir miðlarann %s"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+msgid  "~User"
+msgstr "~Notandi"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+msgid  "~Password"
+msgstr "~Lykilorð"

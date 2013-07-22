@@ -1,0 +1,711 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.ModalDialog.Text
+#, fuzzy
+msgid  "Website Certified by an Unknown Authority"
+msgstr "ଅଜ୍ଞାତ ପ୍ରାଧିକାରୀଙ୍କ ଦ୍ୱାରା ୱେବସାଇଟ ପ୍ରମାଣପତ୍ର"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PushButton.Text
+#, fuzzy
+msgid  "Examine Certificate..."
+msgstr "ପ୍ରମାଣପତ୍ର ଯାଞ୍ଚକରନ୍ତୁ..."
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "Help"
+msgstr "ସହାୟତା"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PushButton.Text
+#, fuzzy
+msgid  "OK"
+msgstr "ଠିକ ଅଛି"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RadioButton.Text
+#, fuzzy
+msgid  "Accept this certificate temporarily for this session"
+msgstr "ଏହି ଅଧିବେଶନ ପାଇଁ ପ୍ରମାଣପତ୍ରକୁ ଅସ୍ଥାୟୀ ଭାବରେ ଗ୍ରହଣ କରନ୍ତୁ"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RadioButton.Text
+#, fuzzy
+msgid  "Do not accept this certificate and do not connect to this Web site"
+msgstr "ଏହି ପ୍ରମାଣପତ୍ରକୁ ଗ୍ରହଣ କରନ୍ତୁ ନାହିଁ ଏବଂ ଏହି ୱେବ ସାଇଟ ସହିତ ସଂଯୁକ୍ତ ହୁଅନ୍ତୁ ନାହିଁ"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FixedText.Text
+#, fuzzy
+msgid  "No Text"
+msgstr "ପାଠ୍ୟ ନାହିଁ"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
+msgid  "Enter password to open file: \\n"
+msgstr "ଫାଇଲକୁ ଖୋଲିବା ପାଇଁ ପ୍ରବେଶ ସଂକେତ ଭରଣ କରନ୍ତୁ: \n"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
+msgid  "Enter password to modify file: \\n"
+msgstr "ଫାଇଲକୁ ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ ପ୍ରବେଶ ସଂକେତ ଭରଣ କରନ୍ତୁ: \n"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
+#, fuzzy
+msgid  "Enter password: "
+msgstr "ପ୍ରବେଶ ସଂକେତ ଭରଣ କରନ୍ତୁ"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.String.Text
+msgid  "Confirm password: "
+msgstr ""
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.String.Text
+msgid  "Set Password"
+msgstr ""
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.String.Text
+#, fuzzy
+msgid  "Enter Password"
+msgstr "ପ୍ରବେଶ ସଂକେତ ଭରଣ କରନ୍ତୁ"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
+msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr ""
+
+#: source/trylater.src#STR_TRYLATER_TITLE.String.Text
+#, fuzzy
+msgid  "Document in Use"
+msgstr "ବ୍ୟବହାର ହେଉଥିବା ଦଲିଲ"
+
+#: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
+msgstr "ଦଲିଲ ଫାଇଲ '$(ARG1)'କୁ $(ARG2) ଦ୍ୱାରା ସମ୍ପାଦନ କରିବା ପାଇଁ:\n\nଅପରିବର୍ତ୍ତିତ ରଖାଯାଇଛି\n\nପରେ ପୁଣିଥରେ ଚେଷ୍ଟା କରନ୍ତୁ କିମ୍ବା ସେହି ଦଲିଲର ଗୋଟିଏ ନକଲକୁ ସଂରକ୍ଷଣ କରନ୍ତୁ।\n\n"
+
+#: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
+#, fuzzy
+msgid  "~Retry Saving"
+msgstr "ସଂରକ୍ଷଣକୁ ପୁଣିଚେଷ୍ଟା କରନ୍ତୁ (~R)"
+
+#: source/trylater.src#STR_TRYLATER_SAVEAS_BTN.String.Text
+#, fuzzy
+msgid  "~Save As..."
+msgstr "ଏହି ପରି ସଞ୍ଚୟ କରନ୍ତୁ (~S)"
+
+#: source/ids.src#RID_KEEP_PASSWORD.String.Text
+msgid  "~Remember password until end of session"
+msgstr "~ଅଧିବେଶନ ସମାପ୍ତ ହେବା ପର୍ଯ୍ୟନ୍ତ ପ୍ରବେଶ ସଂକେତ ମନେରଖନ୍ତୁ"
+
+#: source/ids.src#RID_SAVE_PASSWORD.String.Text
+msgid  "~Remember password"
+msgstr "ଗୁପ୍ତଶବ୍ଦ ମନେପକାଅ (~R)"
+
+#: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
+msgid  "Invalid Document Signature"
+msgstr "ଅବୈଧ ଦଲିଲ ହସ୍ତାକ୍ଷର"
+
+#: source/ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.String.Text
+msgid  "Non-Encrypted Streams"
+msgstr "ଅସଂଗୁପ୍ତ ଧାରାଗୁଡ଼ିକ"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
+msgid  "The operation executed on $(ARG1) was aborted."
+msgstr "$(ARG1)ରେ ନିଷ୍ପାଦିତ ପ୍ରୟୋଗକୁ ଅଗ୍ରାହ୍ୟ କରାଯାଇଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
+msgid  "Access to $(ARG1) was denied."
+msgstr "$(ARG1) ମଧ୍ଯକୁ ପ୍ରବେଶ ବାରଣ କରାଯାଇଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) already exists."
+msgstr "$(ARG1) ପୂର୍ବରୁ ଅବସ୍ଥିତ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "Target already exists."
+msgstr "ଲକ୍ଷ୍ଯ ପୂର୍ବରୁ ଅବସ୍ଥିତ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
+msgid  "You are about to save/export a password protected basic library containing module(s) \\n$(ARG1)\\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an incorrect checksum."
+msgstr "$(ARG1) ରୁ ତଥ୍ୟରେ ଭୁଲ ତଥ୍ୟ ଅଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
+msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "ବସ୍ତୁ $(ARG1) କୁ ଡ଼ିରେକ୍ଟୋରୀ $(ARG2)ରେ ନିର୍ମାଣ କରିହେବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
+msgid  "Data of $(ARG1) could not be read."
+msgstr "$(ARG1) ର ତଥ୍ୟକୁ ପଢ଼ିହେବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
+msgid  "The seek operation on $(ARG1) could not be performed."
+msgstr "$(ARG1)ରେ ଥିବା ସିକ ପ୍ରୟୋଗକୁ କାର୍ଯ୍ୟକାରୀ କରିହେବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
+msgid  "The tell operation on $(ARG1) could not be performed."
+msgstr "$(ARG1)ରେ ଥିବା ଟେଲ ପ୍ରୟୋଗକୁ କାର୍ଯ୍ୟକାରୀ କରିହେବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "Data for $(ARG1) could not be written."
+msgstr "$(ARG1) ପାଇଁ ତଥ୍ୟକୁ ଲେଖାଯାଇପାରିବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) is the current directory."
+msgstr "ଅସମ୍ଭବ କାର୍ଯ୍ୟ: $(ARG1) ଟି ହେଉଛି ପ୍ରଚଳିତ ଡ଼ିରେକ୍ଟୋରୀ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready."
+msgstr "$(ARG1) ଟି ପ୍ରସ୍ତୁତ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "ଅସମ୍ଭବ କାର୍ଯ୍ୟ: $(ARG1) ଏବଂ $(ARG2) ହେଉଛି ଭିନ୍ନ ଉପକରଣ (ଡ୍ରାଇଭ)।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
+msgid  "General input/output error while accessing $(ARG1)."
+msgstr "$(ARG1) ରେ ପ୍ରବେଶ କରିବା ସମୟରେ ସାଧାରଣ ନିବେଶ/ନିର୍ଗମ ତ୍ରୁଟି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
+msgid  "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "$(ARG1) କୁ ଅବୈଧ ଉପାୟରେ ପ୍ରବେଶ କରିବା ପାଇଁ ଥରେ ଚେଷ୍ଟା କରାଯାଇଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains invalid characters."
+msgstr "$(ARG1) ଅବୈଧ ଅକ୍ଷର ଧାରଣ କରିଥାଏ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "The device (drive) $(ARG1) is invalid."
+msgstr "ଉପକରଣ (ଡ୍ରାଇଭ) $(ARG1) ଟି ଅବୈଧ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an invalid length."
+msgstr "$(ARG1) ରୁ ତଥ୍ୟଟି ଅବୈଧ ଲମ୍ବା ଅଟେ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "$(ARG1) ଉପରେ ପ୍ରୟୋଗକୁ ଅବୈଧ ପ୍ରାଚଳ ମାଧ୍ଯମରେ ଆରମ୍ଭ କରାଯାଇଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
+msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr "ପ୍ରୟୋଗକୁ କାର୍ଯ୍ୟକାରୀ କରିହେବ ନାହିଁ କାରଣ $(ARG1) wildcardଗୁଡ଼ିକୁ ଧାରଣ କରିଅଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
+msgid  "Error during shared access to $(ARG1)."
+msgstr "$(ARG1)କୁ ଭାଗକରି ପ୍ରବେଶକରିବା ସମଯରେ ତୃଟି"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains misplaced characters."
+msgstr "$(ARG1) ସ୍ଥାନପରିବର୍ତ୍ତିତ ଅକ୍ଷରଗୁଡ଼ିକୁ ଧାରଣ କରିଅଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
+msgid  "The name $(ARG1) contains too many characters."
+msgstr "ନାମ $(ARG1) ରେ ଅତ୍ୟଧିକ ଅକ୍ଷର ଅଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) does not exist."
+msgstr "$(ARG1) ଅବସ୍ଥିତ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
+msgid  "The path $(ARG1) does not exist."
+msgstr "ପଥ $(ARG1) ଅବସ୍ଥିତ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgstr "$(ARG1) ରେ ପ୍ରୟୋଗକୁ ଏହି ପ୍ରଚାଳନ ତନ୍ତ୍ରରେ ସମର୍ଥନ କରାଯାଇପାରିବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a directory."
+msgstr "$(ARG1) ଟି ଗୋଟିଏ ଡ଼ିରେକ୍ଟୋରୀ ନୁହଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a file."
+msgstr "$(ARG1) ଟି ଗୋଟିଏ ଫାଇଲ ନୁହଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
+msgid  "There is no space left on device $(ARG1)."
+msgstr "ଉପକରଣ $(ARG1)ରେ କୌଣସି ସ୍ଥାନ ବଳିନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr "$(ARG1) ରେ ପ୍ରୟୋଗକୁ କାର୍ଯ୍ୟକାରୀ କରିହେବ ନାହିଁ କାରଣ ପୂର୍ବରୁ ଅତ୍ୟଧିକ ଫାଇଲ ଖୋଲାଅଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgstr "$(ARG1)ରେ ପ୍ରୟୋଗକୁ କାର୍ଯ୍ୟକାରୀ କରିହେବ ନାହିଁ କାରଣ ସେଠାରେ ବଳକା ସ୍ଥାନ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "$(ARG1) ରେ ପ୍ରୟୋଗକୁ ଆଗେଇ ହେବ ନାହିଁ କାରଣ ଅଧିକ ତଥ୍ୟ ବଳିଅଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) cannot be copied into itself."
+msgstr "$(ARG1) ଟି ନିଜ ମଧ୍ଯରେ ନକଲ ହୋଇପାରିବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
+msgid  "Unknown input/output error while accessing $(ARG1)."
+msgstr "$(ARG1)ରେ ପ୍ରବେଶ କରିବା ସମୟରେ ଅଜ୍ଞାତ ନିବେଶ/ଫଳାଫଳ ତ୍ରୁଟି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is write protected."
+msgstr "$(ARG1) ଟି ଲେଖା ପ୍ରତିବନ୍ଧିତ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not in the correct format."
+msgstr "$(ARG1) ଟି ସଠିକ ଶୈଳୀରେ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The version of $(ARG1) is not correct."
+msgstr "ସଂସ୍କରଣ $(ARG1) ଟି ସଠିକ ନୁହଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Drive $(ARG1) does not exist."
+msgstr "ଡ୍ରାଇଭ $(ARG1) ଅବସ୍ଥିତ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
+msgid  "Folder $(ARG1) does not exist."
+msgstr "ପୋଲଡର $(ARG1) ଅବସ୍ଥିତ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported."
+msgstr "ସ୍ଥାପିତ Java ସଂସ୍କରଣ ସମର୍ଥିତ ନୁହଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported."
+msgstr "ସ୍ଥାପିତ Java ସଂସ୍କରଣ $(ARG1) ସମର୍ଥିତ ନୁହଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr "ସ୍ଥାପିତ Java ସଂସ୍କରଣ ସମର୍ଥିତ ନୁହଁ, ଅତିକମରେ ସଂସ୍କରଣ $(ARG1) ଆବଶ୍ୟକ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr "ସ୍ଥାପିତ Java ସଂସ୍କରଣ $(ARG1) ସମର୍ଥିତ ନୁହଁ, ଅତିକମରେ ସଂସ୍କରଣ $(ARG2) ଆବଶ୍ୟକ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership is corrupted."
+msgstr "ଅଶୀଂଦାର ସହିତ ସପୃକ୍ତ ହୋଇ ଥିବା ତାରିଖ ଭ୍ରଷ୍ଟ ହୋଇଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "$(ARG1) ଅଶୀଂଦାର ସହିତ ସପୃକ୍ତ ହୋଇ ଥିବା ତାରିଖ ଭ୍ରଷ୍ଟ ହୋଇଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready."
+msgstr "ତିବ୍ରତା $(ARG1) ଟି ପ୍ରସ୍ତୁତ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgstr "$(ARG1) ଟି ପ୍ରସ୍ତୁତ ନାହିଁ; ଦୟାକରି ଗୋଟିଏ ଭଣ୍ଡାର ମାଧ୍ୟମ ଭର୍ତ୍ତିକରନ୍ତୁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "ତୀବ୍ରତା $(ARG1) ପ୍ରସ୍ତୁତ ନାହିଁ; ଦୟାକରି ଗୋଟିଏ ଭଣ୍ଡାର ମାଧ୍ୟମ ଭର୍ତ୍ତିକରନ୍ତୁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
+msgid  "Please insert disk $(ARG1)."
+msgstr "ଦୟାକରି ଡ଼ିସ୍କ $(ARG1)କୁ ଭର୍ତ୍ତିକରନ୍ତୁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
+msgid  "The object cannot be created in directory $(ARG1)."
+msgstr "ଡିରେକ୍ଟୋରୀ $(ARG1)ରେ ବସ୍ତୁକୁ ନିର୍ମାଣ କରିହେବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr "ଏହି ଟ୍ରାସମିସନ ପ୍ରୋଟୋକଲ ଉରୟୋଗହୋଇଥିବା ସମଯରେ ପୁନଃଲିଖନ ହୋଇ ଥିବା ଫାଇଲଗୁଡିକୁ %PRODUCTNAME ରଖିପାରିବ ନାହିଁ । ତୁମେ ୟେକୌଣସି ପ୍ରକାରରେ ଚାଲୁ ରଖିବାକୁ ଚାହୁଁଛ କି ?"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\\n\\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the repaired document.\\nExecution of macros is disabled for this document.\\n\\nShould %PRODUCTNAME repair the file?\\n"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr "ଏହି ଫାଇଲ '$(ARG1)' ମରାମତିହୋଇପାରିବ ନାହିଁ ଏବଂ ତେଣୁ ଖୋଲା ହୋଇ ପାରିବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr "'$(ARG1)'  କନଫିଗରେସନ ତଥ୍ଯ ମୂଳ ଉପଲବ୍ଧ ନାହିଁ।ଏହି ତଥ୍ଯ ବ୍ଯତିତ କେତେକ କାର୍ୟ୍ଯଗୁଡିକ ଭଲଭାବରେ କାର୍ୟ୍ଯକାରୀ ହୋଇ ନ ପାରେ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
+msgid  "The form contains invalid data. Do you still want to continue?"
+msgstr "ଫର୍ମରେ ଅମାନ୍ଯ ତଥ୍ଯ ଅଛି।ତୁମେ ଏପର୍ୟ୍ଯନ୍ତ ଚାଲୁ ରଖିବାକୁ ଚାହୁଁଛ କି?"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr "ଫାଇଲ $(ARG1) କୁ ଅନ୍ୟ ଏକ ଚାଳକ ଦ୍ୱାରା ଅପରିବର୍ତ୍ତନୀୟ କରାଯାଇଛି। ବର୍ତ୍ତମାନ, ସେହି ଫାଇଲ ପାଇଁ ଅନ୍ୟ ଏକ ଲିଖନ ଅନୁମତି ଦେଇହେବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr "ଫାଇଲ $(ARG1) କୁ ଅନ୍ୟ ଆପଣଙ୍କ ଦ୍ୱାରା ଅପରିବର୍ତ୍ତନୀୟ ହୋଇଛି। ବର୍ତ୍ତମାନ, ସେହି ଫାଇଲ ପାଇଁ ଅନ୍ୟ ଏକ ଲିଖନ ଅନୁମତି ଦେଇହେବ ନାହିଁ।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is currently not locked by yourself."
+msgstr "ଫାଇଲ $(ARG1) କୁ ଅନ୍ୟ ଆପଣଙ୍କ ଦ୍ୱାରା ଅପରିବର୍ତ୍ତନୀୟ ହୋଇଛି।"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
+msgid  "The previously obtained lock for file $(ARG1) has expired.\\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
+msgid  "Unable to verify the identity of $(ARG1) site.\\n\\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\\n\\nYou should check to make sure that your computer's time is correct."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\\n\\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\\n\\nWould you like to continue anyway?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\\n\\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
+msgid  "Security Warning: Domain Name Mismatch"
+msgstr "ସୁରକ୍ଷା ଚେତାବନୀ: ଡମେନ ନାମ ମେଳଖାଉନାହିଁ"
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
+msgid  "Security Warning: Server Certificate Expired"
+msgstr "ସୁରକ୍ଷା ଚେତାବନୀ: ସର୍ଭର ପ୍ରମାଣ ପତ୍ର ସମାପ୍ତ ହୋଇଛି"
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
+msgid  "Security Warning: Server Certificate Invalid"
+msgstr "ସୁରକ୍ଷା ଚେତାବନୀ: ସର୍ଭର ପ୍ରମାଣପତ୍ରଟି ଅବୈଧ"
+
+#: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
+msgid  "Filter Selection"
+msgstr "ଫିଲଟର ମନୋନଯନ"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.ModalDialog.Text
+msgid  "Authentication Required"
+msgstr "ବୈଧିକରଣ ଆବଶ୍ୟକ"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
+msgid  "Message from server:"
+msgstr "ସର୍ଭରରୁ ସଂଦେଶ:"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
+msgid  "Enter user name and password for: \\n%1"
+msgstr "ଏହା ପାଇଁ ଚାଳକନାମ ଏବଂ ପ୍ରବେଶ ସଂକେତ ଭରଣ କରନ୍ତୁ: \n%1"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
+msgid  "Enter user name and password for: \\n\"%2\" on %1"
+msgstr "ଏହା ପାଇଁ ଚାଳକନାମ ଏବଂ ପ୍ରବେଶ ସଂକେତ ଭରଣ କରନ୍ତୁ: \n\"%2\" %1 ଉପରେ"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
+msgid  "~Path"
+msgstr "ପଥ"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "ଉପୟୋଗକର୍ତ୍ତା ନାମ"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
+msgid  "Pass~word"
+msgstr "ଗୁପ୍ତଶବ୍ଦ"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
+msgid  "A~ccount"
+msgstr "ଆକାଉଣ୍ଟ"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
+msgid  "~Remember password"
+msgstr "ଗୁପ୍ତଶବ୍ଦ ମନେପକାଅ (~R)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CheckBox.Text
+msgid  "~Use system credentials"
+msgstr "ତନ୍ତ୍ର ପ୍ରମାଣପତ୍ରଗୁଡ଼ିକୁ ବ୍ୟବହାର କରନ୍ତୁ (~U)"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
+msgid  "~Send"
+msgstr "ପଠାନ୍ତୁ (~S)"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
+msgid  "I~gnore"
+msgstr "ଅବହେଳା କର"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
+msgid  "I~nteractive"
+msgstr "ପାରସ୍ପାରିକ କ୍ରିଯା"
+
+#: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
+msgid  "Future Cookie Handling"
+msgstr "କୁକିଜ ସେଟିଙ୍ଗ ହ୍ଯାଣ୍ଡଲିଙ୍କ"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
+msgid  "~Ignore"
+msgstr "ଅବହେଳା କର"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
+msgid  "~Send"
+msgstr "ପଠାନ୍ତୁ (~S)"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
+msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr "'${HOST}' ସରବର ଗୋଟିଏ କିମ୍ବା ଅଧିକ କୁକିଜ ସେଟ କରିବାକୁ ଇଚ୍ଛୁକ।\nକୁକିଜରେ ସୂଚନା ଅଛି ୟାହା ନିର୍ଦ୍ଦିଷ୍ଟ URL ଶ୍ରେଣୀଗୁଡିକ ସୂଚିତକରୁଛି। ୟଦି %PRODUCTNAME ଗୋଟିଏ ପୂର୍ବ ସେଟକରିବା କୁକିଜର ଶ୍ର୍ରେଣୀକୁ ଗୋଟିଏ URL ୟୋଗାୟୋଗକରିବା ସହିତ ଗୋଟିଏ ଦଲିଲକୁ ପଛରେ ଅନୁରୋଧ କରେ,%PRODUCTNAME ସରବରକୁ ଏହି ସୂଚନା ପଠାଇବ। ଏହା ଗୋଟିଏ ସରବରକୁ ଗୋଟିଏ WWW ପ୍ରଯୋଗର ସ୍ଥିତି ସହିତ ଚିହ୍ନଟକରିବା ପାଇଁ ସ୍ବୀକୃତ ଅଟେ,ଉଦାହରଣବଶତଃ,ଅନଲାଇନ କିଣାକିଣିକରିବା ସମଯରେ।\n\nନିମ୍ନ କୁକିଜ ସେଟ ହେବା ଉଚିତ:\n\n"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr "କ୍ଷେତ୍ର: ${DOMAIN}, ପଥ: ${PATH}, କୁକିଜ: ${COOKIE}.\n"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
+msgid  "Cookie Reception"
+msgstr "କୁକିଜ ସ୍ବାଗତ"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr "'${HOST}' ସରବର ପାଇଁ %PRODUCTNAME କୁକିଜକୁ ସଞ୍ଚିତକରିଛି ୟାହା ${PATH} ଦଲିଲ ଅନୁରୋଧକରିବା ସମଯରେ ପଠାହେବ।\nକୁକିଜରେ ସୂଚନା ଅଛି ୟାହା ନିର୍ଦ୍ଦିଷ୍ଟ URL ଶ୍ରେଣୀଗୁଡିକ ସୂଚିତକରେ। %PRODUCTNAMEକୁ ସେମାନେ କେତେକ ସରବରଗୁଡିକ ପାଠାଇଛନ୍ତି ୟେଉଁଠାରେ ନିର୍ଦ୍ଦିଷ୍ଟ ଦଲିଲଗୁଡିକର ପ୍ରବେଶ ହୋଇଥିବା ସମଯରେ ଏହା ସଞ୍ଚିତ ହୋଇଛି। ୟଦି %PRODUCTNAME ଗୋଟିଏ ଦଲିଲକୁ ଲୋଡ କରେ ତାହା,URL ଅନୁସାରେ,ପୂର୍ବରୁ ଗୃହିତ କୁକିଜ ମଧ୍ଯରୁ ଗୋଟିଏ ଶ୍ରେଣୀକୁ ୟୋଗାୟୋଗ କରେ,%PRODUCTNAME ସେହି ସରବରକୁ ଏହି ସୂଚନା ପଠାଇବ। ଏହା ଗୋଟିଏ WWW ପ୍ରଯୋଗର ସ୍ଥିତିର ଟ୍ରାକକୁ ରଖିବାକୁ ଗୋଟିଏ ସରବରକୁ ସକ୍ଷମ କରେ, ଉଦାହରଣବଶତଃ,ଅନଲାଇନ କିଣାକିଣିକରିବା ସମଯରେ।\n\nନିମ୍ନ କୁକିଜ ସେଟ ହେବା ଉଚିତ:\n\n"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr "କ୍ଷେତ୍ର: ${DOMAIN}, ପଥ: ${PATH}, କୁକିଜ: ${COOKIE}.\n"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
+msgid  "Send Cookies"
+msgstr "କୁକିଜ ପଠାଅ"
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.String.Text
+#, fuzzy
+msgid  "The password is incorrect. The file cannot be opened."
+msgstr "ଏହି ଗୁପ୍ତଶବ୍ଦ ଭୂଲ ଅଛି। ଏହି ଫାଇଲକୁ ଖୋଲି ପାରିବେ ନାହିଁ।"
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.String.Text
+#, fuzzy
+msgid  "The password is incorrect. The file cannot be modified."
+msgstr "ଏହି ଗୁପ୍ତଶବ୍ଦ ଭୂଲ ଅଛି। ଏହି ଫାଇଲକୁ ପରିବର୍ତ୍ତନ କରି ପାରିବେ ନାହିଁ।"
+
+#: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+#, fuzzy
+msgid  "The master password is incorrect."
+msgstr "ଭୁଲ ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତକୁ ଭରଣ କରାଯାଇଛି। %PRODUCTNAME ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତ ଦ୍ୱାରା ସୁରକ୍ଷିତ ୱେବ ଲଗଇନ ସୂଚନା ମଧ୍ୟରେ ପ୍ରବେଶ କରିପାରୁ ନାହିଁ।\n\nଟିପ୍ପଣୀ: ପ୍ରବେଶ ସଂକେତଟି ଅକ୍ଷର ନିର୍ଦ୍ଦିଷ୍ଟ ଏବଂ ପାଞ୍ଚ ସ୍ଥାନ ବିଶିଷ୍ଟ।"
+
+#: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+#, fuzzy
+msgid  "The password is incorrect."
+msgstr "ଭୁଲ ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତକୁ ଭରଣ କରାଯାଇଛି। %PRODUCTNAME ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତ ଦ୍ୱାରା ସୁରକ୍ଷିତ ୱେବ ଲଗଇନ ସୂଚନା ମଧ୍ୟରେ ପ୍ରବେଶ କରିପାରୁ ନାହିଁ।\n\nଟିପ୍ପଣୀ: ପ୍ରବେଶ ସଂକେତଟି ଅକ୍ଷର ନିର୍ଦ୍ଦିଷ୍ଟ ଏବଂ ପାଞ୍ଚ ସ୍ଥାନ ବିଶିଷ୍ଟ।"
+
+#: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+#, fuzzy
+msgid  "The password confirmation does not match."
+msgstr "ପ୍ରବେଶ ସଂକେତ ନିଶ୍ଚିତକରଣ ମେଳ ଖାଉନାହିଁ।"
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.ModalDialog.Text
+msgid  "File Exists"
+msgstr ""
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PushButton.Text
+msgid  "Replace"
+msgstr ""
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PushButton.Text
+msgid  "Rename"
+msgstr ""
+
+#: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
+msgid  "Document in Use"
+msgstr "ବ୍ୟବହାର ହେଉଥିବା ଦଲିଲ"
+
+#: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
+msgstr "ଦଲିଲ ଫାଇଲ '$(ARG1)' ଟି $(ARG2) ଦ୍ୱାରା ସମ୍ପାଦନ କରିବା ପାଇଁ:\n\nଅପରିବର୍ତ୍ତିତ ରଖାଯାଇଛି।\n\nକେବଳ ପଠନୀୟ ଦଲିଲକୁ ଖୋଲନ୍ତୁ କିମ୍ବା ସମ୍ପାଦନ କରିବା ପାଇଁ ନକଲ କରନ୍ତୁ।\n\n"
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "କେବଳ-ପଠନୀୟକୁ ଖୋଲନ୍ତୁ (~R)"
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
+msgid  "Open ~Copy"
+msgstr "ପ୍ରତିଲିପିକୁ ଖୋଲନ୍ତୁ (~C)"
+
+#: source/openlocked.src#STR_UNKNOWNUSER.String.Text
+msgid  "Unknown User"
+msgstr "ଅଜ୍ଞାତ ଚାଳକ"
+
+#: source/filechanged.src#STR_FILECHANGED_TITLE.String.Text
+msgid  "Document Has Been Changed by Others"
+msgstr ""
+
+#: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
+msgstr "%PRODUCTNAMEରେ ଖୋଲାହେବା ପରଠୁଁ ଏହି ଫାଇଲଟି ପରିବର୍ତ୍ତନ ହୋଇଛି।ଦଲିଲର ସଂସ୍କରଣକୁ ସଂରକ୍ଷଣ କରିବା ଦ୍ୱାରା ଅନ୍ୟ ପରିବର୍ତ୍ତନଗୁଡ଼ିକରେ ନବଲିଖନ କରିଥାଏ।\n\nଆପଣ ଯେକୌଣସି ଉପାୟରେ ସଂରକ୍ଷଣ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?\n\n"
+
+#: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
+msgid  "~Save Anyway"
+msgstr "ଯେକୌଣସି ଉପାୟରେ ସଞ୍ଚୟ କରନ୍ତୁ"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
+msgid  "%PRODUCTNAME Update Available"
+msgstr "%PRODUCTNAME ଅଦ୍ୟତନ ଉପଲବ୍ଧ"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr "%PRODUCTNAMEର ନୂତନ ସଂସ୍କରଣ ଦ୍ୱାରା ଏହି ଦଲିଲଟି ନିର୍ମିତ। ଏହା ଅନ୍ୟ ସଂସ୍କରଣ ଦ୍ୱାରା ଅସମର୍ଥିତ ଅଂଶ ଦ୍ୱାରା ସମର୍ଥିତ ହୋଇପାରେ।\n\n%PRODUCTNAMEର ନୂତନତମ ସଂସ୍କରଣ ପାଇବା ପାଇଁ ଅନଲାଇନ ଅଦ୍ୟତନକୁ ଚଲାଇବାକୁ 'ବର୍ତ୍ତମାନ ଅଦ୍ୟତନ କରନ୍ତୁ...'କୁ କ୍ଲିକ କରନ୍ତୁ।"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
+msgid  "~Update Now..."
+msgstr "ବର୍ତ୍ତମାନ ଅଦ୍ୟତନ କରନ୍ତୁ (~U)..."
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
+msgid  "~Later"
+msgstr "ପରେ (~L)"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.ModalDialog.Text
+#, fuzzy
+msgid  "Security Warning: "
+msgstr "ସୁରକ୍ଷା ଚେତାବନୀ:"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FixedText.Text
+#, fuzzy
+msgid  "No Text"
+msgstr "ପାଠ୍ୟ ନାହିଁ"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PushButton.Text
+#, fuzzy
+msgid  "View Certificate"
+msgstr "ପ୍ରମାଣପତ୍ର ଦେଖ"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "Cancel Connection"
+msgstr "ସଂଯୋଗ ବାତିଲ କରାଯାଇଛି"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PushButton.Text
+#, fuzzy
+msgid  "Continue"
+msgstr "ଚାଲୁରଖ"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.ModalDialog.Text
+#, fuzzy
+msgid  "%PRODUCTNAME - Security Warning"
+msgstr "%PRODUCTNAME - ସୁରକ୍ଷା ଚେତାବନୀ"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FixedText.Text
+#, fuzzy
+msgid  "The document contains document macros signed by:"
+msgstr "ଦ୍ୱାରା ହସ୍ତକୃତ ହୋଇଥିବା macro ଦଲିଲଗୁଡ଼ିକୁ ଏହି ଦଲିଲ ଧାରଣ କରିଥାଏ:"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FixedText.Text
+#, fuzzy
+msgid  "The document contains document macros."
+msgstr "ଏହି ଦଲିଲ macro ଦଲିଲଗୁଡ଼ିକୁ ଧାରଣ କରିଥାଏ।"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PushButton.Text
+#, fuzzy
+msgid  "View Signatures..."
+msgstr "ହସ୍ତାକ୍ଷରଗୁଡିକ ଦେଖ..."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+#, fuzzy
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr "ମାକ୍ରୋଗୁଡ଼ିକ ଭାଇରସ ଧାରଣ କରିଥାଇପାରିନ୍ତି। ଏହାକୁ ନିଷ୍କ୍ରିୟ ରଖିବା ସର୍ବଦା ସୁରକ୍ଷିତ।"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
+#, fuzzy
+msgid  "Always trust macros from this source"
+msgstr "ସର୍ବଦା ଏହି ସୂତ୍ରରୁ macroଗୁଡ଼ିକୁ ବିଶ୍ୱାସ କରନ୍ତୁ"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKButton.Text
+#, fuzzy
+msgid  "~Enable Macros"
+msgstr "ମାକ୍ରୋଗୁଡ଼ିକୁ ସକ୍ରିୟ କରନ୍ତୁ (~E)"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CancelButton.Text
+#, fuzzy
+msgid  "~Disable Macros"
+msgstr "ମାକ୍ରୋଗୁଡ଼ିକୁ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ (~D)"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
+msgid  "Enter password"
+msgstr "ପ୍ରବେଶ ସଂକେତ ଭରଣ କରନ୍ତୁ"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
+msgid  "Enter Master Password"
+msgstr "ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତ ଭରଣ କରନ୍ତୁ"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
+msgid  "Set Master Password"
+msgstr "ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତ ସେଟ କରନ୍ତୁ"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
+msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr "ୱେବ ସଂଯୋଗ ପାଇଁ ପ୍ରବେଶ ସଂକେତଟି ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତ ଦ୍ୱାରା ସୁରକ୍ଷିତ ଥାଏ। ଆପଣ ଏହାକୁ ପ୍ରତି ଅଧିବେଶନରେ ଥରେ ଭରଣ କରିପାରିବେ, ଯଦି %PRODUCTNAME ସୁରକ୍ଷିତ ପ୍ରବେଶ ସଂକେତ ତାଲିକାରୁ ପ୍ରବେଶ ସଂକେତକୁ କାଢ଼ିବାରେ ସକ୍ଷମ ହୁଏ।"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
+msgid  "~Enter password"
+msgstr "ଗୁପ୍ତଶବ୍ଦ ପ୍ରବେଶ କର"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
+msgid  "~Reenter password"
+msgstr "ପ୍ରବେଶ ସଂକେତ ପୁଣିଥରେ ଭରଣ କରନ୍ତୁ (~R)"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
+msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr "ଚେତାବନୀ: ଆପଣ ସେଟ କରିଥିବା ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତକୁ ମନେ ରଖନ୍ତୁ। ଅନ୍ୟଥା ଏହା ଦ୍ୱାରା ସୁରକ୍ଷିତ କୌଣସି ସୂଚନାକୁ ଆପଣ ବ୍ୟବହାର କରିପାରିବେ ନାହିଁ। ପ୍ରବେଶ ସଂକେତଟି ଅକ୍ଷର ନିର୍ଦ୍ଦିଷ୍ଟ ଏବଂ ପାଞ୍ଚ ସ୍ଥାନ ବିଶିଷ୍ଟ।"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
+msgstr "ଦଲିଲ ଫାଇଲ '$(ARG1)' କୁ ସମ୍ପାଦନ ପାଇଁ ନିଜ ଦ୍ୱାରା ଅପରିବର୍ତ୍ତନୀୟ ରଖାଯାଇଛି $(ARG2)\n\nକେବଳ-ପଠନୀୟ ଦଲିଲକୁ ଖୋଲନ୍ତୁ, କିମ୍ବା ନିଜର ଫାଇଲ ଅପରିବର୍ତ୍ତନୀୟତାକୁ ଅଗ୍ରାହ୍ୟ କରନ୍ତୁ ଏବଂ ସମ୍ପାଦନ ପାଇଁ ଦଲିଲ ଖୋଲନ୍ତୁ।\n\n"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "କେବଳ-ପଠନୀୟକୁ ଖୋଲନ୍ତୁ (~R)"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
+msgid  "~Open"
+msgstr "ଖୋଲ"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
+msgstr "ଦଲିଲ ଫାଇଲ '$(ARG1)' କୁ ସମ୍ପାଦନ ପାଇଁ ନିଜ ଦ୍ୱାରା ଅପରିବର୍ତ୍ତନୀୟ ରଖାଯାଇଛି $(ARG2)\n\nକେବଳ-ପଠନୀୟ ଦଲିଲକୁ ବନ୍ଦ କରନ୍ତୁ, କିମ୍ବା ନିଜର ଫାଇଲ ଅପରିବର୍ତ୍ତନୀୟତାକୁ ଅଗ୍ରାହ୍ୟ କରନ୍ତୁ ଏବଂ ସମ୍ପାଦନ ପାଇଁ ଦଲିଲ ଖୋଲନ୍ତୁ।\n\n"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
+msgid  "~Retry Saving"
+msgstr "ସଂରକ୍ଷଣକୁ ପୁଣିଚେଷ୍ଟା କରନ୍ତୁ (~R)"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
+msgid  "~Save"
+msgstr "ସଞ୍ଚଯ କର"
+
+#: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
+msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr "ଅନୁପସ୍ଥିତ ଅନୁମତି ହେତୁ ଫାଇଲ ସ୍ଥାନରେ ନିର୍ମାଣକୁ ଅପରିବର୍ତ୍ତନୀୟ କରିବା ପାଇଁ, %PRODUCTNAME ଦ୍ୱାରା ଫାଇଲଟି ଅପରିବର୍ତ୍ତିତ ହୋଇନାହିଁ।"

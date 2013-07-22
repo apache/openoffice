@@ -1,0 +1,2488 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.ModalDialog.Text
+#, fuzzy
+msgid  "Modify Link"
+msgstr "تغییر دادن پیوند"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FixedText.Text
+#, fuzzy
+msgid  "~Application:"
+msgstr "~برنامه"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FixedText.Text
+#, fuzzy
+msgid  "~File:"
+msgstr "~پرونده:"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FixedText.Text
+#, fuzzy
+msgid  "~Category:"
+msgstr "م~قوله:"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FixedLine.Text
+#, fuzzy
+msgid  "Modify link"
+msgstr "تغییر دادن پیوند"
+
+#: source/appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.String.Text
+msgid  "%PRODUCTNAME"
+msgstr ""
+
+#: source/appl/app.src#STR_NONAME.String.Text
+msgid  "Untitled"
+msgstr ""
+
+#: source/appl/app.src#STR_CLOSE.String.Text
+msgid  "Close"
+msgstr ""
+
+#: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
+msgid  "Automatic"
+msgstr ""
+
+#: source/appl/app.src#STR_STANDARD_SHORTCUT.String.Text
+msgid  "Standard"
+msgstr ""
+
+#: source/appl/app.src#STR_BYTES.String.Text
+msgid  "Bytes"
+msgstr ""
+
+#: source/appl/app.src#STR_KB.String.Text
+msgid  "KB"
+msgstr ""
+
+#: source/appl/app.src#STR_MB.String.Text
+msgid  "MB"
+msgstr ""
+
+#: source/appl/app.src#STR_GB.String.Text
+msgid  "GB"
+msgstr ""
+
+#: source/appl/app.src#MSG_QUERY_LASTVERSION.QueryBox.Message
+msgid  "Cancel all changes?"
+msgstr ""
+
+#: source/appl/app.src#RID_DOCALREADYLOADED_DLG.InfoBox.Message
+msgid  "Document already open."
+msgstr "نوشتار از قبل باز است."
+
+#: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr "%PRODUCTNAME نتوانست مرورگر وبی روی سیستم شما پیدا کند. لطفاً ترجیحات رومیزی خود را بررسی کنید یا یک مرورگر وب (مثلاً موزیلا) در محل پیش‌فرضی که هنگام نصب مرورگر درخواست می‌شود، نصب کنید."
+
+#: source/appl/app.src#GID_INTERN.String.Text
+msgid  "Internal"
+msgstr "داخلی"
+
+#: source/appl/app.src#GID_APPLICATION.String.Text
+msgid  "Application"
+msgstr "برنامه"
+
+#: source/appl/app.src#GID_VIEW.String.Text
+msgid  "View"
+msgstr "نما"
+
+#: source/appl/app.src#GID_DOCUMENT.String.Text
+msgid  "Documents"
+msgstr "نوشتارها"
+
+#: source/appl/app.src#GID_EDIT.String.Text
+msgid  "Edit"
+msgstr "ویرایش"
+
+#: source/appl/app.src#GID_MACRO.String.Text
+msgid  "BASIC"
+msgstr "بیسیک"
+
+#: source/appl/app.src#GID_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options"
+msgstr "گزینه‌ها"
+
+#: source/appl/app.src#GID_MATH.String.Text
+#, fuzzy
+msgid  "Math"
+msgstr "ریاضی"
+
+#: source/appl/app.src#GID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigate"
+msgstr "ناوش"
+
+#: source/appl/app.src#GID_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "درج"
+
+#: source/appl/app.src#GID_FORMAT.String.Text
+#, fuzzy
+msgid  "Format"
+msgstr "قالب"
+
+#: source/appl/app.src#GID_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "قالب‌ها"
+
+#: source/appl/app.src#GID_TEXT.String.Text
+#, fuzzy
+msgid  "Text"
+msgstr "متن"
+
+#: source/appl/app.src#GID_FRAME.String.Text
+#, fuzzy
+msgid  "Frame"
+msgstr "چارچوب"
+
+#: source/appl/app.src#GID_GRAPHIC.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "گرافیک"
+
+#: source/appl/app.src#GID_TABLE.String.Text
+#, fuzzy
+msgid  "Table"
+msgstr "جدول"
+
+#: source/appl/app.src#GID_ENUMERATION.String.Text
+#, fuzzy
+msgid  "Numbering"
+msgstr "شماره‌گذاری"
+
+#: source/appl/app.src#GID_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "داده‌ها"
+
+#: source/appl/app.src#GID_SPECIAL.String.Text
+#, fuzzy
+msgid  "Special Functions"
+msgstr "توابع خاص"
+
+#: source/appl/app.src#GID_IMAGE.String.Text
+#, fuzzy
+msgid  "Image"
+msgstr "تصویر"
+
+#: source/appl/app.src#GID_CHART.String.Text
+#, fuzzy
+msgid  "Chart"
+msgstr "نمودار"
+
+#: source/appl/app.src#GID_EXPLORER.String.Text
+#, fuzzy
+msgid  "Explorer"
+msgstr "اکسپلورر"
+
+#: source/appl/app.src#GID_CONNECTOR.String.Text
+#, fuzzy
+msgid  "Connector"
+msgstr "کانکتور"
+
+#: source/appl/app.src#GID_MODIFY.String.Text
+#, fuzzy
+msgid  "Modify"
+msgstr "تغییر"
+
+#: source/appl/app.src#GID_DRAWING.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "نقاشی"
+
+#: source/appl/app.src#GID_CONTROLS.String.Text
+#, fuzzy
+msgid  "Controls"
+msgstr "کنترل‌ها"
+
+#: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
+msgid  "The application cannot be terminated at the moment.\\nPlease wait until all print jobs and/or\\nOLE actions have finished and close all dialogs."
+msgstr ""
+
+#: source/appl/app.src#STR_ISMODIFIED.String.Text
+#, fuzzy
+msgid  "Do you want to save the changes to %1?"
+msgstr "آیا می‌خواهید تغییرات را در %1 ذخیره کنید؟"
+
+#: source/appl/app.src#STR_QUITAPP.String.Text
+#, fuzzy
+msgid  "E~xit"
+msgstr "~خروج"
+
+#: source/appl/app.src#RID_STR_HELP.String.Text
+#, fuzzy
+msgid  "Help"
+msgstr "راهنما"
+
+#: source/appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.String.Text
+msgid  "No automatic start at 'XX'"
+msgstr ""
+
+#: source/appl/app.src#RID_HELPBAR.String.Text
+#, fuzzy
+msgid  "Help Bar"
+msgstr "نوار راهنما"
+
+#: source/appl/app.src#RID_STR_HLPFILENOTEXIST.String.Text
+#, fuzzy
+msgid  "The help file for this topic is not installed."
+msgstr "پروندهٔ راهنما برای این موضوع نصب نشده است."
+
+#: source/appl/app.src#RID_ENVTOOLBOX.String.Text
+msgid  "Function Bar"
+msgstr ""
+
+#: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+#, fuzzy
+msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
+msgstr "خطایی در پیکربندی ویژه رخ داده اس.\nلطفاً با مدیر سیستم‌تان تماس بگیرید."
+
+#: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
+msgid  "Exit Quickstarter"
+msgstr ""
+
+#: source/appl/app.src#STR_QUICKSTART_TIP.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr ""
+
+#: source/appl/app.src#STR_QUICKSTART_FILEOPEN.String.Text
+#, fuzzy
+msgid  "Open Document..."
+msgstr "باز کردن نوشتار"
+
+#: source/appl/app.src#STR_QUICKSTART_FROMTEMPLATE.String.Text
+#, fuzzy
+msgid  "From Template..."
+msgstr "از قالب"
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH.String.Text
+#, fuzzy
+msgid  "Load %PRODUCTNAME During System Start-Up"
+msgstr "بار کردن %PRODUCTNAME در حین راه‌اندازی سیستم"
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+msgid  "Disable Quickstarter"
+msgstr ""
+
+#: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/appl/app.src#STR_QUICKSTART_FILE.String.Text
+msgid  "File"
+msgstr ""
+
+#: source/appl/app.src#STR_QUICKSTART_STARTCENTER.String.Text
+msgid  "Startcenter"
+msgstr ""
+
+#: source/appl/app.src#STR_QUICKSTART_RECENTDOC.String.Text
+msgid  "Recent Documents"
+msgstr ""
+
+#: source/appl/app.src#STR_QUERY_UPDATE_LINKS.String.Text
+#, fuzzy
+msgid  "Update all links?"
+msgstr "همهٔ پیوندها به‌هنگام شوند؟"
+
+#: source/appl/app.src#STR_DDE_ERROR.String.Text
+#, fuzzy
+msgid  "DDE link to % for % area % are not available."
+msgstr "پیوند DDE به % برای % ناحیهٔ % موجود نیست."
+
+#: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr ""
+
+#: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
+msgid  "For security reasons, the hyperlink cannot be executed.\\nThe stated address will not be opened."
+msgstr ""
+
+#: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
+#, fuzzy
+msgid  "Security Warning"
+msgstr "اخطار امنیتی"
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
+msgid  "Saving will remove all existing signatures.\\nDo you want to continue saving the document?"
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed.\\nDo you want to save the document?"
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
+#, fuzzy
+msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
+msgstr "پیش از آن که بتوان این نوشتار را به صورت دیجیتال امضا کرد، باید آن را در قالب پروندهٔ نوشتار باز ذخیره کرد."
+
+#: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
+#, fuzzy
+msgid  " (Signed)"
+msgstr "(امضا شده)"
+
+#: source/appl/app.src#STR_STANDARD.String.Text
+msgid  "Standard"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_FILELINK.String.Text
+#, fuzzy
+msgid  "Document"
+msgstr "نوشتارها"
+
+#: source/appl/app.src#STR_NONE.String.Text
+msgid  "- None -"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRAFIKLINK.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "گرافیک"
+
+#: source/appl/app.src#STR_SFX_FILTERNAME_ALL.String.Text
+msgid  "All files (*.*)"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_EDITGRFLINK.String.Text
+msgid  "Link graphics"
+msgstr ""
+
+#: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
+msgid  "Graphics file cannot be opened"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.String.Text
+msgid  "Graphics file cannot be read"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.String.Text
+msgid  "Unknown graphics format"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.String.Text
+msgid  "This version of the graphics file is not supported"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.String.Text
+msgid  "Graphics filter not found"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.String.Text
+msgid  "Not enough memory to insert graphic"
+msgstr ""
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PageItem.Text
+#, fuzzy
+msgid  "Contents"
+msgstr "مندرجات!"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PageItem.Text
+#, fuzzy
+msgid  "Index"
+msgstr "نمایه"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PageItem.Text
+#, fuzzy
+msgid  "Find"
+msgstr "پیدا کردن!"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PageItem.Text
+#, fuzzy
+msgid  "Bookmarks"
+msgstr "چوب‌الف‌ها"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FixedText.Text
+#, fuzzy
+msgid  "~Search term"
+msgstr "عبارت ~جستجو"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~نمایش"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "S~earch term"
+msgstr "~عبارت جستجو"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Find"
+msgstr "~پیدا شود"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Complete words only"
+msgstr "~فقط کلمه‌های کامل"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CheckBox.Text
+#, fuzzy
+msgid  "Find in ~headings only"
+msgstr "فقط در ~سرصفحه‌ها"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~نمایش"
+
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
+#, fuzzy
+msgid  "~Bookmarks"
+msgstr "~نشانک‌ها"
+
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~نمایش"
+
+#: source/appl/newhelp.src#STR_HELP_WINDOW_TITLE.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Help"
+msgstr "راهنمای %PRODUCTNAME"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.String.Text
+#, fuzzy
+msgid  "Show Navigation Pane"
+msgstr "نشان دادن قاب ناوش"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.String.Text
+#, fuzzy
+msgid  "Hide Navigation Pane"
+msgstr "مخفی کردن قاب ناوش"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_START.String.Text
+#, fuzzy
+msgid  "First Page"
+msgstr "صفحهٔ اول"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PREV.String.Text
+#, fuzzy
+msgid  "Previous Page"
+msgstr "صفحهٔ قبل"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_NEXT.String.Text
+#, fuzzy
+msgid  "Next Page"
+msgstr "صفحهٔ بعد"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PRINT.String.Text
+#, fuzzy
+msgid  "Print..."
+msgstr "چاپ..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.String.Text
+#, fuzzy
+msgid  "Add to Bookmarks..."
+msgstr "اضافه کردن به نشانک‌ها..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.String.Text
+#, fuzzy
+msgid  "Find on this Page..."
+msgstr "پیدا کردن در این صفحه..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.String.Text
+#, fuzzy
+msgid  "HTML Source"
+msgstr "مبدأ HTML"
+
+#: source/appl/newhelp.src#STR_HELP_FIRST_MESSAGE.String.Text
+#, fuzzy
+msgid  "The Help is being started..."
+msgstr "در حال آغاز راهنما..."
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.String.Text
+#, fuzzy
+msgid  "Select Text"
+msgstr "انتخاب متن"
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.String.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "~نسخه‌برداری"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.ModalDialog.Text
+#, fuzzy
+msgid  "Add to Bookmarks"
+msgstr "اضافه کردن به نشانک‌ها"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FixedText.Text
+#, fuzzy
+msgid  "Bookmark:"
+msgstr "نشانک:"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.String.Text
+#, fuzzy
+msgid  "Rename Bookmark"
+msgstr "تغییر نام نشانک"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MenuItem.Text
+#, fuzzy
+msgid  "Display"
+msgstr "نمایش"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MenuItem.Text
+#, fuzzy
+msgid  "Rename..."
+msgstr "تغییر نام..."
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "حذف"
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.InfoBox.Message
+#, fuzzy
+msgid  "No topics found."
+msgstr "موضوعی پیدا نشد."
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.InfoBox.Message
+#, fuzzy
+msgid  "The text you entered was not found."
+msgstr "متنی که وارد کردید پیدا نشد."
+
+#: source/appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.String.Text
+#, fuzzy
+msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "~نمایش راهنمای %PRODUCTNAME %MODULENAME هنگام راه‌اندازی"
+
+#: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
+msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
+msgstr ""
+
+#: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
+msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
+#, fuzzy
+msgid  "Reduce print data"
+msgstr "کم کردن داده‌های چاپ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FixedText.Text
+#, fuzzy
+msgid  "Settings for"
+msgstr "تنظیمات"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "~Printer"
+msgstr "~چاپگر"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "Print to ~file"
+msgstr "چاپ در ~پرونده"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Reduce transparency"
+msgstr "~کم کردن شفافیت"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RadioButton.Text
+#, fuzzy
+msgid  "Auto~matically"
+msgstr "به طور ~خودکار"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RadioButton.Text
+#, fuzzy
+msgid  "~No transparency"
+msgstr "~بدون شفافیت"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~gradients"
+msgstr "کم کردن ~هاشور"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RadioButton.Text
+msgid  "Gradient ~stripes"
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RadioButton.Text
+#, fuzzy
+msgid  "Intermediate ~color"
+msgstr "~رنگ متوسط"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~bitmaps"
+msgstr "کوچک کردن ~نقشه‌بیتی‌ها"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RadioButton.Text
+#, fuzzy
+msgid  "~High print quality"
+msgstr "کیفیت چاپ ~بالا"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RadioButton.Text
+#, fuzzy
+msgid  "N~ormal print quality"
+msgstr "کیفیت چاپ &عادی"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RadioButton.Text
+#, fuzzy
+msgid  "Reso~lution"
+msgstr "ت~فکیک‌پذیری"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "72 DPI"
+msgstr "۷۲ نقطه بر اینچ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "96 DPI"
+msgstr "۹۶ نقطه بر اینچ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "150 DPI (Fax)"
+msgstr "۱۵۰ نقطه بر اینچ (دورنگار)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "200 DPI (default)"
+msgstr "۲۰۰ نقطه بر اینچ (پیش‌فرض)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "300 DPI"
+msgstr "۳۰۰ نقطه بر اینچ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "600 DPI"
+msgstr "۶۰۰ نقطه بر اینچ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "Include transparent ob~jects"
+msgstr "به حساب آوردن ا~شیاء شفاف"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CheckBox.Text
+#, fuzzy
+msgid  "Con~vert colors to grayscale"
+msgstr "تبدیل رنگ‌ها به سایه‌خاکستری"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FixedLine.Text
+#, fuzzy
+msgid  "Printer warnings"
+msgstr "اخطارهای چاپگر"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CheckBox.Text
+#, fuzzy
+msgid  "P~aper size"
+msgstr "اندازهٔ ~کاغذ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CheckBox.Text
+#, fuzzy
+msgid  "Pap~er orientation"
+msgstr "جهت کا~غذ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Transparency"
+msgstr "~شفافیت"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.ModalDialog.Text
+#, fuzzy
+msgid  "Warning"
+msgstr "اخطار"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+#, fuzzy
+msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
+msgstr "نوشتار شما حاوی اشیاء شفاف است.\nاین مسأله ممکن است به افزایش زمان چاپ در بعضی چاپگرها\nبیانجامد. آیا نسبت شفافیت تغییر داده شود؟"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
+#, fuzzy
+msgid  "~Yes"
+msgstr "~بله"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PushButton.Text
+#, fuzzy
+msgid  "~No"
+msgstr "~نه"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "~Cancel"
+msgstr "ان~صراف"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
+#, fuzzy
+msgid  "~Do not show warning again"
+msgstr "این ا~خطار دیگر نشان داده نشود"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
+msgid  "Style Catalog"
+msgstr ""
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "~سازمان‌ده..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PushButton.Text
+#, fuzzy
+msgid  "~Delete..."
+msgstr "~حذف..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Modify..."
+msgstr "ت~غییر..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PushButton.Text
+#, fuzzy
+msgid  "~New..."
+msgstr "~جدید..."
+
+#: source/dialog/templdlg.src#STR_STYLE_ELEMTLIST.String.Text
+msgid  "Style List"
+msgstr ""
+
+#: source/dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.String.Text
+#, fuzzy
+msgid  "Hierarchical"
+msgstr "سلسله‌مراتبی"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.DockingWindow.Text
+msgid  "Styles and Formatting"
+msgstr ""
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Fill Format Mode"
+msgstr "حالت قالب پُرکنی"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Style from Selection"
+msgstr "سبک جدید از انتخاب"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Update Style"
+msgstr "به‌هنگام‌سازی سبک"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FixedLine.Text
+msgid  "File encryption password"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Enter password to open"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Reenter password to open"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FixedLine.Text
+msgid  "File sharing password"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Enter password to modify"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Reenter password to modify"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FixedLine.Text
+msgid  "File sharing options"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CheckBox.Text
+msgid  "~Open file read-only"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CheckBox.Text
+msgid  "Record ~changes"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.String.Text
+msgid  "~Protect..."
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.String.Text
+msgid  "~Unprotect..."
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
+msgid  "Protect Records"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.String.Text
+msgid  "Unprotect Records"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.String.Text
+msgid  "Incorrect password"
+msgstr ""
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "New versions"
+msgstr "نسخه‌های جدید"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PushButton.Text
+#, fuzzy
+msgid  "Save ~New Version"
+msgstr "ذخیرهٔ نسخهٔ ~جدید"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CheckBox.Text
+#, fuzzy
+msgid  "~Always save a version on closing"
+msgstr "~همیشه موقع بستن یک نسخه ذخیره شود"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "Existing versions"
+msgstr "نسخه‌های موجود"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time"
+msgstr "تاریخ و زمان"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by"
+msgstr "ذخیره شده توسط"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FixedText.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "توضیحات"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CancelButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "بستن"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PushButton.Text
+#, fuzzy
+msgid  "Open"
+msgstr "باز کردن"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PushButton.Text
+#, fuzzy
+msgid  "~Show..."
+msgstr "~نشان دادن..."
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~حذف"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PushButton.Text
+#, fuzzy
+msgid  "Compare"
+msgstr "مقایسه"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.HelpButton.Text
+#, fuzzy
+msgid  "Versions of"
+msgstr "نسخه‌های"
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time : "
+msgstr "تاریخ و زمان: "
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by "
+msgstr "ذخیره شده توسط "
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~بستن"
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.HelpButton.Text
+#, fuzzy
+msgid  "Insert Version Comment"
+msgstr "درج توضیح نسخه"
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.String.Text
+#, fuzzy
+msgid  "Version comment"
+msgstr "توضیح نسخه"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+#, fuzzy
+msgid  "~Name"
+msgstr "~نام"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+#, fuzzy
+msgid  "~AutoUpdate"
+msgstr "~به‌هنگام‌سازی خودکار"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+#, fuzzy
+msgid  "Ne~xt Style"
+msgstr "سبک ب~عدی"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
+#, fuzzy
+msgid  "Linked with"
+msgstr "پیوند داده شده با"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Category"
+msgstr "~مقوله"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
+#, fuzzy
+msgid  "Contains"
+msgstr "حاوی"
+
+#: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+#, fuzzy
+msgid  "Current version"
+msgstr "نسخهٔ فعلی"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "صدور"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "درج"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+#, fuzzy
+msgid  "~Insert"
+msgstr "~درج"
+
+#: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+#, fuzzy
+msgid  "<All formats>"
+msgstr "<همهٔ قالب‌ها>"
+
+#: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+#, fuzzy
+msgid  "~Automatic file name extension"
+msgstr "پسوندهای پروندهٔ ~خودکار"
+
+#: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+#, fuzzy
+msgid  "~Selection"
+msgstr "~انتخاب"
+
+#: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
+#, fuzzy
+msgid  "~Link"
+msgstr "~پیوند"
+
+#: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+#, fuzzy
+msgid  "Pr~eview"
+msgstr "پی~ش‌نمابش"
+
+#: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "~فقط‌خواندنی"
+
+#: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+#, fuzzy
+msgid  "Save with ~password"
+msgstr "ذخیره با ~گذرواژه"
+
+#: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+#, fuzzy
+msgid  "Edit ~filter settings"
+msgstr "ویرایش تنظیمات ~صافی"
+
+#: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+#, fuzzy
+msgid  "~Play"
+msgstr "~پخش"
+
+#: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+#, fuzzy
+msgid  "Sto~p"
+msgstr "توق~ف"
+
+#: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+#, fuzzy
+msgid  "~Open"
+msgstr "~باز کردن"
+
+#: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "~ذخیره"
+
+#: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Style:"
+msgstr "سبک:"
+
+#: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+#, fuzzy
+msgid  "~Templates:"
+msgstr "~قالب‌ها:"
+
+#: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+#, fuzzy
+msgid  "~Version:"
+msgstr "~نسخه:"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.ModelessDialog.Text
+#, fuzzy
+msgid  "Find on this Page"
+msgstr "پیدا کردن در همین صفحه"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "~Search for"
+msgstr "~جستجو به دنبال"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Whole words only"
+msgstr "~فقط کلمه‌های کامل"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CheckBox.Text
+#, fuzzy
+msgid  "~Match case"
+msgstr "~تطبیق بزرگی و کوچکی حروف"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CheckBox.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "~دور کامل"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CheckBox.Text
+#, fuzzy
+msgid  "~Backwards"
+msgstr "به ~عقب"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PushButton.Text
+#, fuzzy
+msgid  "~Find"
+msgstr "~پیدا کردن"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CancelButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~بستن"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.String.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "~دور کامل"
+
+#: source/dialog/passwd.src#DLG_PASSWD.ModalDialog.Text
+#, fuzzy
+msgid  "Enter Password"
+msgstr "گذرواژه را وارد کنید"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+#, fuzzy
+msgid  "~User"
+msgstr "~کاربر"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+#, fuzzy
+msgid  "~Password"
+msgstr "~گذرواژه"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+#, fuzzy
+msgid  "~Confirm"
+msgstr "~تصدیق"
+
+#: source/dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FixedLine.Text
+#, fuzzy
+msgid  "Password"
+msgstr "گذرواژه"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FixedText.Text
+#, fuzzy
+msgid  "P~assword"
+msgstr "گذرواژه"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FixedText.Text
+#, fuzzy
+msgid  "Confir~m"
+msgstr "~تصدیق"
+
+#: source/dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.String.Text
+#, fuzzy
+msgid  "Password"
+msgstr "گذرواژه"
+
+#: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+msgid  "%PRODUCTNAME document"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+msgid  "~Title"
+msgstr "~عنوان"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+msgid  "~Subject"
+msgstr "~موضوع"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+msgid  "~Keywords"
+msgstr "~کلیدواژه‌ها"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+msgid  "~Comments"
+msgstr "تو~ضیحات"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+msgid  "Type:"
+msgstr "نوع:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+msgid  "~Read-only"
+msgstr "~فقط‌خواندنی"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+msgid  "Location:"
+msgstr "مکان:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+msgid  "Size:"
+msgstr "اندازه:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+msgid  "Created:"
+msgstr "تاریخ زمان:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+msgid  "Modified:"
+msgstr "زمان تغییر:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+msgid  "Digitally signed:"
+msgstr "امضای دیجیتال:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+msgid  "Digital Signature..."
+msgstr "امضای دیجیتال..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+msgid  "Multiply signed document"
+msgstr "نوشتار چند بار امضا شده"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+msgid  "Last printed:"
+msgstr "زمان آخرین چاپ:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+msgid  "Total editing time:"
+msgstr "کل زمان ویرایش:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+msgid  "Revision number:"
+msgstr "شمارهٔ بازبینی:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+msgid  "Reset"
+msgstr "~حذف"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+msgid  "~Apply user data"
+msgstr "اِ~عمال داده‌های کاربر"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+msgid  "Template:"
+msgstr "قالب:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+msgid  "unknown"
+msgstr "نامعلوم"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.String.Text
+msgid  "File Name"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+msgid  "~Info fields..."
+msgstr "~فیلدهای اطلاعاتی..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+msgid  "Do not refresh automatically"
+msgstr "به طور خودکار نوسازی نشود"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+msgid  "Refresh this document"
+msgstr "نوسازی نوشتار"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+msgid  "every"
+msgstr "در هر"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+msgid  "seconds"
+msgstr "ثانیه"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+msgid  "Redirect from this document"
+msgstr "تغییر مسیر از این نوشتار"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+msgid  "after"
+msgstr "پس از"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+msgid  "seconds"
+msgstr "ثانیه"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+msgid  "to URL"
+msgstr "به نشانی اینترنتی"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+msgid  "to frame"
+msgstr "به چارچوب"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "اگر گزینهٔ «%PLACEHOLDER%» را انتخاب کنید باید یک نشانی اینترنتی وارد کنید."
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+msgid  "~Properties"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "نام‌ها"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+#, fuzzy
+msgid  "Type"
+msgstr "نوع:"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+msgid  "Value"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+msgid  "~Add"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+msgid  "Property Name"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+msgid  "Checked by"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+msgid  "Client"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+msgid  "Date completed"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+msgid  "Department"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+msgid  "Destinations"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+msgid  "Disposition"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+msgid  "Division"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+msgid  "Document number"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+msgid  "Editor"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+msgid  "E-Mail"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+msgid  "Forward to"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+msgid  "Group"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+msgid  "Info"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+msgid  "Language"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+msgid  "Mailstop"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+msgid  "Matter"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+msgid  "Office"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+msgid  "Owner"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+msgid  "Project"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+msgid  "Publisher"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+msgid  "Purpose"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+msgid  "Received from"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+msgid  "Recorded by"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+msgid  "Recorded date"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+msgid  "Reference"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+msgid  "Source"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+msgid  "Status"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+msgid  "Telephone number"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+msgid  "Typist"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+msgid  "URL"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+msgid  "Text"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+msgid  "DateTime"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+msgid  "Date"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+msgid  "Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+msgid  "Number"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+msgid  "Yes or no"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.String.Text
+msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "~بله"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+msgid  "No"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+msgid  "Remove Property"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
+msgid  "The value entered does not match the specified type.\\nThe value will be stored as text."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+#, fuzzy
+msgid  "Properties of "
+msgstr "ویژگی‌های "
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+#, fuzzy
+msgid  "General"
+msgstr "عمومی"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+#, fuzzy
+msgid  "Description"
+msgstr "شرح"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+msgid  "Custom Properties"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+#, fuzzy
+msgid  "Internet"
+msgstr "اینترنت"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
+msgid  "Security"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
+msgid  "Edit Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
+msgid  "Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
+msgid  "~Negative"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
+msgid  "~Years"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
+msgid  "~Months"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
+msgid  "~Days"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
+msgid  "H~ours"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
+msgid  "Min~utes"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+#, fuzzy
+msgid  "~Seconds"
+msgstr "ثانیه"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
+msgid  "Millise~conds"
+msgstr ""
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+#, fuzzy
+msgid  "Edit Field Names"
+msgstr "ویرایش فیلد نام‌ها"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+#, fuzzy
+msgid  "Names"
+msgstr "نام‌ها"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+#, fuzzy
+msgid  "Create Style"
+msgstr "به‌هنگام‌سازی سبک"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+#, fuzzy
+msgid  "Style name"
+msgstr "نام سبک"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+#, fuzzy
+msgid  "Style already exists. Overwrite?"
+msgstr "سبک از قبل وجود دارد. رونویسی شود؟"
+
+#: source/dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FloatingWindow.Text
+#, fuzzy
+msgid  "Record Macro"
+msgstr "ضبط ماکرو"
+
+#: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
+#, fuzzy
+msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr "آیا واقغاً می‌خواهید از ضبط صرف نظر کنید؟ همهٔ مراحل ضبط شده تا به این نقطه از دست خواهند رفت."
+
+#: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
+#, fuzzy
+msgid  "Cancel Recording"
+msgstr "انصراف از ضبط"
+
+#: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
+#, fuzzy
+msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
+msgstr "%PRODUCTNAME نتوانست پیکربندی پست الکترونیکی در حال کاری پیدا کند. لطفاً این نوشتار را به صورت محلی ذخیره کنید و از درون کارگیر پست الکترونیکی‌تان آن را پیوست کنید."
+
+#: source/dialog/dialog.src#STR_RESET.String.Text
+msgid  "~Reset"
+msgstr "~حالت اولیه"
+
+#: source/dialog/dialog.src#STR_APPLY.String.Text
+msgid  "Apply"
+msgstr "اِعمال"
+
+#: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+msgid  "Organizer"
+msgstr "سازمان‌ده"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+msgid  "This name is already in use."
+msgstr "این نام از قبل مورد استفاده است."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+msgid  "This Style does not exist."
+msgstr "این سبک وجود ندارد."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
+msgid  "This Style cannot be used as a base Style,\\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
+msgid  "Name already exists as a default Style.\\nPlease choose another name."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+msgid  "Do you really want to delete Style $1?"
+msgstr "واقعاً می‌خواهید سبک $1 را حذف کنید؟"
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
+msgid  "You are deleting an applied Style!\\n"
+msgstr "شما در حال حذف یک سبک اِمال شده هستید!\n"
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+msgid  "New..."
+msgstr "جدید..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+msgid  "Modify..."
+msgstr "تغییر..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+msgid  "Delete..."
+msgstr "حذف..."
+
+#: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+msgid  "Navigator"
+msgstr "ناوشگر"
+
+#: source/dialog/dialog.src#SID_TASKPANE.String.Text
+msgid  "Task Pane"
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+msgid  "Faulty password confirmation"
+msgstr "تصدیق ناموفق گذرواژه"
+
+#: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+msgid  "Send"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_DOCK.String.Text
+msgid  "Dock"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_UNDOCK.String.Text
+msgid  "Undock"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.String.Text
+msgid  "View"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_TASKS.String.Text
+msgid  "Tasks"
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr "این نوشتار حاوی قالب‌بندی یا محتویاتی است که نمی‌توان در قالب پرونده‌ی %FORMATNAME ذخیره کرد. آیا با این وجود می‌خواهید نوشتار را در این قالب ذخیره کنید؟\n\n‐ برای ذخیره‌ در قالب پرونده‌ی %FORMATNAME روی «بله» کلیک کنید.\n‐ برای استفاده از جدیدترین قالب پرونده‌ی نوشتارباز و اطمینان از درست ذخیره شدن همه‌ی قالب‌بندی و محتویات روی «نه» کلیک کنید."
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+msgid  "~Keep Current Format"
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+msgid  "~Save in ODF Format"
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+msgid  "~More Information..."
+msgstr "ا~طلاعات بیشتر..."
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+msgid  "~Ask when not saving in ODF format"
+msgstr "این اخطار دیگر نشان داده نشود"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
+#, fuzzy
+msgid  "My Templates"
+msgstr "قالب‌های من"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
+#, fuzzy
+msgid  "Business Correspondence"
+msgstr "نامهٔ کاری"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
+#, fuzzy
+msgid  "Other Business Documents"
+msgstr "نوشتارهای کاری دیگر"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
+#, fuzzy
+msgid  "Personal Correspondence and Documents"
+msgstr "نامه‌ها و نوشتارهای شخصی"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
+#, fuzzy
+msgid  "Forms and Contracts"
+msgstr "فرم‌ها و قراردادها"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
+#, fuzzy
+msgid  "Finances"
+msgstr "گزارش‌های مالی"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
+#, fuzzy
+msgid  "Education"
+msgstr "آموزشی"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
+#, fuzzy
+msgid  "Presentation Backgrounds"
+msgstr "پس‌زمینه‌های ارائه"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
+#, fuzzy
+msgid  "Presentations"
+msgstr "ارائه‌ها"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
+#, fuzzy
+msgid  "Miscellaneous"
+msgstr "گوناگون"
+
+#: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
+#, fuzzy
+msgid  "The templates are being initialized for first-time usage."
+msgstr "قالب‌ها در حال راه‌اندازی برای اولین بار استفاده هستند."
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+msgid  "Templates"
+msgstr "قالب‌ها"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+msgid  "New template"
+msgstr "قالب جدید"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "قالب‌ها"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+msgid  "~Categories"
+msgstr "~دسته‌ها"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+msgid  "~Templates"
+msgstr "~قالب‌ها"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~ویرایش"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+msgid  "~Organizer..."
+msgstr "~سازمان‌دهنده..."
+
+#: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
+msgid  "Saving in external formats may have caused\\n information loss. Do you still want to close?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
+msgid  "Name already in use.\\nDo you want to overwrite document template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_REGION.String.Text
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "آیا مطمئنید که می‌خواهید ناحیهٔ «$1» را حذف کنید؟"
+
+#: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "آیا مطمئنید که می‌خواهید مدخل «$1» را حذف کنید؟"
+
+#: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
+msgid  "The category is not empty.\\nDelete anyway?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
+msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
+msgstr "نوشتار «$(DOC)» تغییر کرده است.\nآیا می‌خواهید تغییرات شما ذخیره شود؟"
+
+#: source/doc/doc.src#STR_STYLES.String.Text
+msgid  "Styles"
+msgstr "سبک‌ها"
+
+#: source/doc/doc.src#STR_MACROS.String.Text
+msgid  "Macros"
+msgstr "ماکروها"
+
+#: source/doc/doc.src#STR_CONFIG.String.Text
+msgid  "Configuration"
+msgstr "پیکربندی"
+
+#: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
+msgid  "Styles in "
+msgstr "سبک‌ها در "
+
+#: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+msgid  "Printing Styles"
+msgstr "سبک‌های چاپ"
+
+#: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+msgid  "The print job could not be started."
+msgstr "آغاز چاپ ممکن نبود."
+
+#: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+msgid  "Copy"
+msgstr "نسخه‌برداری"
+
+#: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+msgid  "The template could not be opened."
+msgstr "باز کردن قالب ممکن نبود."
+
+#: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+msgid  "Document already open for editing."
+msgstr "نوشتار از قبل برای ویرایش باز است."
+
+#: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+msgid  "Error recording document "
+msgstr "خطا در ضبط نوشتار "
+
+#: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+msgid  "Templates"
+msgstr "قالب‌ها"
+
+#: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
+msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
+msgstr "خطا در نسخه‌برداری از قالب «$1». \nقالبی با این نام از قبل وجود دارد."
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+msgid  "The template \"$1\" can not be deleted."
+msgstr "نمی‌توان قالب «$1» را حذف کرد."
+
+#: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+msgid  "Error moving template \"$1\"."
+msgstr "خطا در جابه‌جا کردن قالب «$1»."
+
+#: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+msgid  "The update could not be saved."
+msgstr "نمی‌توان به‌هنگام‌سازی را ذخیره کرد."
+
+#: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "خطا در ذخیره کردن قالب "
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+msgid  "Error renaming template."
+msgstr "خطا در تغییر نام قالب "
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+msgid  "Error renaming template category."
+msgstr "خطا در تغییر نام دستهٔ قالب‌ها"
+
+#: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+msgid  "Please specify a name."
+msgstr "لطفاً یک نام مشخص کنید."
+
+#: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
+msgid  "Please specify a unique name.\\nEntries must not be case specific."
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "آیا قالب «$(TEXT)» قالب پیش‌فرض شود؟"
+
+#: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+msgid  "Do you want to reset the default template?"
+msgstr "آیا می‌خواهید قالب پیش‌فرض را به حالت اولیه برگردانید؟"
+
+#: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
+msgid  "Template directory\\n$(DIR)\\ndoes not exist."
+msgstr ""
+
+#: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+msgid  "Document info cannot be read."
+msgstr "نمی‌توان اطلاعات نوشتار را خواند."
+
+#: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+msgid  "The selected file has an incorrect format."
+msgstr "قالب پروندهٔ انتخاب شده نادرست است."
+
+#: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr "نمی‌توان نوشتار را در قالب $(FORMAT) ذخیره کرد. آیا می‌خواهید\nتغییرات شما با استفاده از قالب $(OWNFORMAT) ذخیره شود؟"
+
+#: source/doc/doc.src#STR_SAVEDOC.String.Text
+msgid  "~Save"
+msgstr "~ذخیره"
+
+#: source/doc/doc.src#STR_UPDATEDOC.String.Text
+msgid  "~Update"
+msgstr "~به‌هنگام‌سازی"
+
+#: source/doc/doc.src#STR_SAVEASDOC.String.Text
+msgid  "Save ~As..."
+msgstr "ذخیره ~به نام"
+
+#: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+msgid  "Save Copy ~as..."
+msgstr "ذخیرهٔ نسخه ~به نام..."
+
+#: source/doc/doc.src#STR_CLOSEDOC.String.Text
+msgid  "~Close"
+msgstr "~بستن"
+
+#: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
+msgid  "~Close & Return to "
+msgstr "~بستن و بازگشت به "
+
+#: source/doc/doc.src#STR_WIZARD.String.Text
+msgid  " AutoPilot"
+msgstr ""
+
+#: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+msgid  "Configurations"
+msgstr "پیکربندی‌ها"
+
+#: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+msgid  "%PRODUCTNAME Basic libraries"
+msgstr "کتاب‌خانه‌های اصلی %PRODUCTNAME"
+
+#: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "لازم است که سبک «$(ARG1)» جای‌گزین شود؟"
+
+#: source/doc/doc.src#STR_DOC_LOADING.String.Text
+msgid  "Loading Document"
+msgstr "در حال بار کردن نوشتار"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+msgid  "Connection to: $(HOST). Waiting for response..."
+msgstr "اتصال به: $(HOST). منتظر پاسخ..."
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
+msgid  "Opening $(TARGET) at $(HOST)"
+msgstr "در حال باز کردن $(TARGET) از $(HOST)"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
+msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "در حال بار کردن: $(TARGET) از $(HOST). بار شده: $(BYTE)"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+msgid  "Disconnected"
+msgstr "قطع شد"
+
+#: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
+msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-only?"
+msgstr ""
+
+#: source/doc/doc.src#STR_EDIT.String.Text
+msgid  "Edit"
+msgstr "ویرایش"
+
+#: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+msgid  "%PRODUCTNAME Documents"
+msgstr "نوشتارهای %PRODUCTNAME"
+
+#: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+msgid  "Propert~ies..."
+msgstr "ویژگی‌ها..."
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
+msgid  "HTML (FrameSet)"
+msgstr ""
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+msgid  "%PRODUCTNAME Frame Document"
+msgstr ""
+
+#: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr ""
+
+#: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "قالب «$(TEMPLATE)» پیدا نشد. آیا لازم است که دفعهٔ بعدی که نوشتار باز می‌شود به دنبال قالب جستجو شود؟"
+
+#: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+msgid  "Automatically saved version"
+msgstr "نسخهٔ به‌طور خودکار ذخیره‌شده"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+msgid  "Text Document"
+msgstr "نوشتار متنی"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+msgid  "HTML Document"
+msgstr "نوشتار HTML"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+msgid  "Master Document"
+msgstr "نوشتار اصلی"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+msgid  "Spreadsheet"
+msgstr "صفحه‌گسترده"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+msgid  "Presentation"
+msgstr "ارائه"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+msgid  "Drawing"
+msgstr "طرح"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+msgid  "Message"
+msgstr "پیغام"
+
+#: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+msgid  "~Discard"
+msgstr "دور انداختن"
+
+#: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
+msgid  "Access to the current data medium not possible."
+msgstr ""
+
+#: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
+msgid  "Insert the next data carrier and click OK."
+msgstr ""
+
+#: source/doc/doc.src#STR_OBJECT.String.Text
+msgid  "Object"
+msgstr "شیء"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+msgid  "Run Macro"
+msgstr "Run Macro"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+msgid  "This document contains macros. $(TEXT)"
+msgstr "این نوشتار شامل ماکرو است. $(TEXT)"
+
+#: source/doc/doc.src#BTN_OK.String.Text
+msgid  "Run"
+msgstr "اجرا شود"
+
+#: source/doc/doc.src#BTN_CANCEL.String.Text
+msgid  "Do Not Run"
+msgstr "اجرا نشود"
+
+#: source/doc/doc.src#FT_CANCEL.String.Text
+msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr "مطابق تنظیمات امنیتی، ماکروهای موجود در این نوشتار نباید اجرا شوند. با این وجود آیا می‌خواهید آنها را اجرا کنید؟"
+
+#: source/doc/doc.src#FT_OK.String.Text
+msgid  "Do you want to allow these macros to be run?"
+msgstr "آیا می‌خواهید اجازهٔ اجرا به این ماکروها داده شود؟"
+
+#: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+msgid  "Export as PDF"
+msgstr "صدور به صورت PDF"
+
+#: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+msgid  "Export..."
+msgstr "صدور..."
+
+#: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+msgid  "Export"
+msgstr "صدور"
+
+#: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+msgid  "Add this directory to the list of secure paths: "
+msgstr "اضافه کردن این شاخه به فهرست مسیرهای امن: "
+
+#: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+msgid  "File format:"
+msgstr "قالب پرونده:"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
+msgid  "This document contains:\\n\\n"
+msgstr "این نوشتار حاوی:\n\n"
+
+#: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
+msgid  "Recorded changes"
+msgstr "تغییرات ضبط شده"
+
+#: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+msgid  "Notes"
+msgstr "یادداشت‌ها"
+
+#: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+msgid  "Document versions"
+msgstr "نسخه‌های نوشتار"
+
+#: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+msgid  "Fields"
+msgstr "فیلدها"
+
+#: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
+msgid  "Linked data..."
+msgstr "داده‌های پیوند شده..."
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+msgid  "Do you want to continue saving the document?"
+msgstr "آیا می‌خواهید ذخیرهٔ نوشتار را ادامه دهید؟"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+msgid  "Do you want to continue printing the document?"
+msgstr "آیا می‌خواهید چاپ نوشتار را ادامه دهید؟"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+msgid  "Do you want to continue signing the document?"
+msgstr "آیا می‌خواهید امضا کردن نوشتار را ادامه دهید؟"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+msgid  "Do you want to continue creating a PDF file?"
+msgstr "آیا می‌خواهید ایجاد پروندهٔ PDF را ادامه دهید؟"
+
+#: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr "اکر نمی‌خواهید روی پروندهٔ اصلی بنویسید، باید کار خود را با یک نام پروندهٔ جدید ذخیره کنید."
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+msgid  "Some template files are protected and can not be deleted."
+msgstr ""
+
+#: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
+msgid  "Info %1"
+msgstr ""
+
+#: source/doc/doc.src#STR_SHARED.String.Text
+msgid  " (shared)"
+msgstr ""
+
+#: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr ""
+
+#: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\\nDo you want to save the document?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+msgid  "~Update Styles"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+msgid  "~Keep Old Styles"
+msgstr ""
+
+#: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
+msgid  "Template Management"
+msgstr ""
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "بستن"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
+#, fuzzy
+msgid  "~File..."
+msgstr "~پرونده..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
+#, fuzzy
+msgid  "~Address Book..."
+msgstr "~دفترچهٔ نشانی..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "قالب‌ها"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "نوشتارها"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "قالب‌ها"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "نوشتارها"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "فرمان‌ها"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
+#, fuzzy
+msgid  "~New"
+msgstr "~جدید"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~حذف"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "~ویرایش"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
+#, fuzzy
+msgid  "Import Template..."
+msgstr "وارد کردن قالب..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
+#, fuzzy
+msgid  "Export Template..."
+msgstr "صدور قالب..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
+#, fuzzy
+msgid  "~Print"
+msgstr "~چاپ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
+#, fuzzy
+msgid  "Printer Settings..."
+msgstr "تنظیمات چاپگر..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
+#, fuzzy
+msgid  "Update"
+msgstr "به‌هنگام‌سازی"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Set As Default Template"
+msgstr "تنظیم به عنوان قالب پیش‌فرض"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Reset Default Template"
+msgstr "تنظیم قالب پیش‌فرض به حالت اولیه"
+
+#: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
+#, fuzzy
+msgid  "New"
+msgstr "~جدید"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Categories"
+msgstr "~دسته‌ها"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
+#, fuzzy
+msgid  "T~emplates"
+msgstr "~قالب‌ها"
+
+#: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
+#, fuzzy
+msgid  "~More"
+msgstr "~بیشتر"
+
+#: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
+#, fuzzy
+msgid  "Pre~view"
+msgstr "پ~یش‌نمایش"
+
+#: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
+#, fuzzy
+msgid  "Description"
+msgstr "شرح"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "Te~xt"
+msgstr "~متن"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Frame"
+msgstr "چ~ارچوب"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Pages"
+msgstr "~صفحات"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "N~umbering"
+msgstr "~شماره‌گذاری"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Overwrite"
+msgstr "~رونویسی"
+
+#: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
+#, fuzzy
+msgid  "From File..."
+msgstr "از پروندهٔ..."
+
+#: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Load Styles"
+msgstr "بار کردن سبک‌ها"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "~عنوان"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "موضوع"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
+#, fuzzy
+msgid  "~Key words"
+msgstr "~کلیدواژه‌ها"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
+#, fuzzy
+msgid  "~Description"
+msgstr "~شرح"
+
+#: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+msgid  "Configuration Menu"
+msgstr "پیکربندی منو"
+
+#: source/menu/menu.src#STR_MENU_ADDONS.String.Text
+msgid  "~Add-Ons"
+msgstr "ا~فزودنی‌ها"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
+msgid  "Cu~t"
+msgstr ""
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
+msgid  "~Copy"
+msgstr ""
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
+msgid  "~Paste"
+msgstr ""
+
+#: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+msgid  "Leave Full-Screen Mode"
+msgstr "ترک حالت تمام‌صفحه"
+
+#: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
+msgid  "Add-~On Help"
+msgstr "راهنمای اف~زودنی‌ها"
+
+#: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
+msgid  "Synonyms"
+msgstr ""
+
+#: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
+msgid  "(none)"
+msgstr ""
+
+#: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
+msgid  "~Thesaurus..."
+msgstr ""
+
+#: source/view/view.src#STR_NODEFPRINTER.String.Text
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
+
+#: source/view/view.src#STR_NOSTARTPRINTER.String.Text
+msgid  "Could not start printer.\\nPlease check your printer configuration."
+msgstr ""
+
+#: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+msgid  "Options..."
+msgstr "گزینه‌ها..."
+
+#: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+msgid  "Printer Options"
+msgstr "گزینه‌های چاپگر"
+
+#: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+msgid  "Printer busy"
+msgstr ""
+
+#: source/view/view.src#STR_ERROR_PRINT.String.Text
+msgid  "Error while printing"
+msgstr ""
+
+#: source/view/view.src#STR_PRINTING.String.Text
+msgid  "Printing"
+msgstr ""
+
+#: source/view/view.src#STR_PAGE.String.Text
+msgid  "Page "
+msgstr ""
+
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr ""
+
+#: source/view/view.src#STR_READONLY.String.Text
+msgid  " (read-only)"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWORI.String.Text
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
+msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+
+#: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
+msgid  "The document cannot be closed because a\\n print job is being carried out."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
+msgid  "is being printed on"
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
+msgid  "is being prepared for printing"
+msgstr ""
+
+#: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+
+#: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
+msgstr ""
+
+#: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+msgid  " (repaired document)"
+msgstr ""
+
+#: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""

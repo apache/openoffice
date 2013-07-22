@@ -1,0 +1,76 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/solver/solver.src#RID_SOLVER_COMPONENT.String.Text
+msgid  "%PRODUCTNAME Linear Solver"
+msgstr "%PRODUCTNAME Linear Solver"
+
+#: source/solver/solver.src#RID_PROPERTY_NONNEGATIVE.String.Text
+msgid  "Assume variables as non-negative"
+msgstr "બિન-નકારાત્મક તરીકે ચલો ને ધારો"
+
+#: source/solver/solver.src#RID_PROPERTY_INTEGER.String.Text
+msgid  "Assume variables as integer"
+msgstr "ઇંટિજર તરીકે ચલો ને ધારો"
+
+#: source/solver/solver.src#RID_PROPERTY_TIMEOUT.String.Text
+msgid  "Solving time limit (seconds)"
+msgstr "સમય મર્યાદા (સેકન્ડો) માં ઉકેલી રહ્યા છે"
+
+#: source/solver/solver.src#RID_PROPERTY_EPSILONLEVEL.String.Text
+msgid  "Epsilon level (0-3)"
+msgstr "Epsilon સ્તર (૦-૩)"
+
+#: source/solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.String.Text
+msgid  "Limit branch-and-bound depth"
+msgstr "બ્રાન્ચ મર્યાદા અને બાઉન્ડની ઊંડાઇ"
+
+#: source/solver/solver.src#RID_ERROR_NONLINEAR.String.Text
+msgid  "The model is not linear."
+msgstr "મોડેલ એ સીધુ નથી."
+
+#: source/solver/solver.src#RID_ERROR_EPSILONLEVEL.String.Text
+msgid  "The epsilon level is invalid."
+msgstr "એપ્સીલોન સ્તર અયોગ્ય છે."
+
+#: source/solver/solver.src#RID_ERROR_INFEASIBLE.String.Text
+msgid  "The model is infeasible. Check limiting conditions."
+msgstr "મોડેલ એ સુસંગત નથી. મર્યાદાની શરતને ચકાસો."
+
+#: source/solver/solver.src#RID_ERROR_UNBOUNDED.String.Text
+msgid  "The model is unbounded."
+msgstr "મોડેલ એ બાઉન્ડેડ નથી."
+
+#: source/solver/solver.src#RID_ERROR_TIMEOUT.String.Text
+msgid  "The time limit was reached."
+msgstr "સમયની મર્યાદા પહોંચેલ હતી."

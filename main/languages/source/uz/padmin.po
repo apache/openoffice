@@ -1,0 +1,844 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgstr "Shriftlar import qilinadigan jildni koʻrsating. Tanlangan shriftlar OK tugmasini bosish yordamida qoʻshing."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+msgid  "Source directory"
+msgstr "Manba jildi"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+msgid  "Sea~rch Subdirectories"
+msgstr "Quyi jildlarda qi~dirish"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+msgid  "Target options"
+msgstr "Qabul qiluvchi parametrlari"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+msgid  "Create ~soft links only"
+msgstr "Faqat ~bogʻlama yaratish"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "Hamma~sini tanlash"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+msgid  "Add fonts"
+msgstr "Shriftlarni qoʻshish"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr "Rostdan ham ushbu shrift faylini almashtirmoqchimisiz?\n   %s"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+msgid  "All"
+msgstr "Hammasi"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+msgid  "None"
+msgstr "Yoʻq"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "Shrift fayli\n   %s dan\nnusxa olib boʻlmaydi. Shrift oʻrnatilmaydi."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "Shrift fayli\n   %s dan\nnusxa olib boʻlmaydi. Shrift oʻrnatilmaydi."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr "Shriftlarni oʻrnatib boʻlmaydi. koʻrsatilgan manzilda fonts.dir fayli topilmadi."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+msgid  "%d new fonts were added."
+msgstr "%d yangi shrift qoʻshildi."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+msgid  "Add Fonts"
+msgstr "Shriftlarni qoʻshish"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+msgid  "CUPS support"
+msgstr "CUPS qoʻllanuvi"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+msgid  "Disable CUPS Support"
+msgstr "CUPS qoʻllanuvini oʻchirish"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+msgid  "Close"
+msgstr "Yopish"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
+msgid  "Installed ~printers"
+msgstr "Oʻrnatilgan ~printerlar"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
+msgid  "Command:"
+msgstr "Buyruq:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
+msgid  "Driver:"
+msgstr "Drayver:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
+msgid  "Location:"
+msgstr "Manzil:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
+msgid  "Comment:"
+msgstr "Izoh:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
+msgid  "Properties..."
+msgstr "Xossalari"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
+msgid  "R~ename..."
+msgstr "~Nomini oʻzgartirish"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
+msgid  "~Default"
+msgstr "~Andoza"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
+msgid  "Remo~ve..."
+msgstr "O~lib tashlash..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
+msgid  "Test ~Page"
+msgstr "~Sinov sahifai"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
+msgid  "Fon~ts..."
+msgstr "~Shriftlar"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
+msgid  "New Printer..."
+msgstr "Yangi printer"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
+msgid  "Default printer"
+msgstr "Andoza printer"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
+msgid  "Rename"
+msgstr "Nomini oʻzgartirish"
+
+#: source/padialog.src#RID_PADIALOG.String.Text
+msgid  "Printer Administration"
+msgstr "Printerni boshqarish"
+
+#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
+msgid  "Could not open printer %s."
+msgstr "%s printerini ochib boʻlmadi."
+
+#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr "Sinov sahifai muvaffaqiyatli bosib chiqarildi. Iltimos natijani tekshirib koʻring."
+
+#: source/padialog.src#RID_ERR_NOWRITE.String.Text
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
+msgstr ""
+
+#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+msgid  "~New printer name"
+msgstr "Yan~gi printerning nomi"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+msgid  "Model"
+msgstr "Model"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+msgid  "Name"
+msgstr "Nomi"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+msgid  "Comment"
+msgstr "Izoh"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+msgid  "Queue"
+msgstr "Navbat"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+msgid  "Date"
+msgstr "Sana"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+msgid  "Time"
+msgstr "Vaqt"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "Yopish"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+msgid  "Re~name..."
+msgstr "No~mini oʻzgartirish..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+msgid  "~Remove..."
+msgstr "Olib ~tashlash"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+msgid  "~Add..."
+msgstr "Qoʻsh~ish"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+msgid  "Note: The fonts are only available to the applications."
+msgstr "Izoh: Ushbu shriftlar faqat dasturlar uchun."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+msgid  "~New name for %s"
+msgstr "%s uchun ya~ngi nom"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr "%s (%d1 of %d2) uchun ya~ngi nom"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr " %s shriftni huquq yoʻqligi sababli nomini oʻzgartirib boʻlmaydi."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+msgid  "Fonts"
+msgstr "Shriftlar"
+
+#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+msgid  "Test page"
+msgstr "Sinov sahifai"
+
+#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+msgid  "Wrong environment"
+msgstr "Xato muhit"
+
+#: source/padialog.src#RID_YOU_SURE.String.Text
+msgid  "Are you sure ?"
+msgstr "Ishonchingiz komilmi?"
+
+#: source/padialog.src#RID_AFMERROR_OK.String.Text
+msgid  "No error"
+msgstr "Xatosiz"
+
+#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr "Xarakteristikada 'FontName' yozuvi mavjud emas."
+
+#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr "Xarakteristikada 'FullName' yozuvi mavjud emas."
+
+#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr "Xarakteristikada 'FamilyName' yozuvi mavjud emas."
+
+#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+msgid  "The converted metric could not be written."
+msgstr "Aylantirilgan xarakteristikani yozib boʻlmadi."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+msgid  "The metric could not be read."
+msgstr "Xarakteristikani oʻqib boʻlmadi."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+msgid  "A temporary file could not be created."
+msgstr "Vaqtinchalik faylni yaratib boʻlmadi."
+
+#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+msgid  "The file does not contain a metric."
+msgstr "Ushbu faylda xarakteristikalar yoʻq."
+
+#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr "Xarakteristikalarni\n\n%s\n\naylantirib boʻlmasligini sababi:\n\n"
+
+#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+msgid  "Progress"
+msgstr "Jarayon"
+
+#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+msgid  "Please wait"
+msgstr "Iltimos kutib turing"
+
+#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+msgid  "Font metrics conversion"
+msgstr "Shrift xarakteristikalarini aylantirish"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+msgid  "Dri~ver directory"
+msgstr "Dra~yver jildi"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+msgid  "Please select the driver directory."
+msgstr "Iltimos drayver jildini tanlang."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+msgid  "Browse..."
+msgstr "Tanlash"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+msgid  "~Selection of drivers"
+msgstr "Drayverni ~tanlash"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Iltimos oʻrnatish uchun drayverni tanlang va \"%s\" tugmasini bosing."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+msgid  "Searching for drivers"
+msgstr "Drayver qidirilmoqda"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+msgid  "Driver Installation"
+msgstr "Drayverni oʻrnatish"
+
+#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "\"%s\" drayverini rostdan olib tashlashni istaysizmi?"
+
+#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+msgid  "Do you really want to remove this printer ?"
+msgstr "Ushbu printerni rostdan olib tashlashni istaysizmi?"
+
+#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr "Tanlangan shriftlarni rostdan olib tashlashni istaysizmi?"
+
+#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "\"%s\" drayveridan foydalanayotgan printer mavjud. Rostdan ham uni olib tashlamoqchimisiz? U bilan birga unga bogʻliq printer ham olib tashlanadi."
+
+#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "\"%s\" drayveridan doimo foydalaniladi va uni olib tashlab boʻlmaydi."
+
+#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr "\"%s1\" dayverini olib tashlab boʻlmadi. Faylni olib tashlab boʻlmaydi\n\n%s2."
+
+#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "\"%s\" drayveri andoza printer tomonidan foydalanilmoqda. Shu sababdan uni olib tashlab boʻlmaydi."
+
+#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+msgid  "The printer %s cannot be removed."
+msgstr " %s printerini olib tashlab boʻlmaydi."
+
+#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "\"%s\" nomli printer allaqachon mavjud. Ushbu printer import qilinmaydi."
+
+#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "\"%s\" printeri uchun moslama mavjud emas va uni iport qilib boʻlmaydi."
+
+#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "\"%s1\" (%s2) printeri uchun drayver oʻrnatilmagan. Shu sababli printerni import qilib boʻlmaydi."
+
+#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+msgid  "The printer \"%s\" could not be added."
+msgstr "\"%s\" printerini qoʻshib boʻlmaydi."
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+msgid  "~Finish"
+msgstr "~Tayyor"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+msgid  "~Next >>"
+msgstr "~Keyingi >>"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+msgid  "<< ~Back"
+msgstr "<< ~Orqaga"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+msgid  "Add Printer"
+msgstr "Printerni qoʻshish"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Drayverni tanlash"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+msgid  "Please select a s~uitable driver."
+msgstr "Iltimos mos keladigan ~drayverni tanlang."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+msgid  "~Import..."
+msgstr "Im~port qilish"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Olib tashlash"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+msgid  "Delete driver"
+msgstr "Drayverni oʻchirish"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a device type"
+msgstr "Uskunaning turini tanlash"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+msgid  "Do you want to"
+msgstr "Xohlaysizmi"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+msgid  "Add a ~printer"
+msgstr "~Printerni qoʻshish"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+msgid  "Connect a fa~x device"
+msgstr "Fa~ks uskunasiga ulanish"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+msgid  "Connect a P~DF converter"
+msgstr "P~DF konverterga ulanish"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+msgid  "~Import printers from a StarOffice installation"
+msgstr "printerni StarOffice oʻrnatishidan ~import qilish"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a name"
+msgstr "Nom tanlang"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+msgid  "Please enter a name for the printer."
+msgstr "Printer uchun nom kiriting."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+msgid  "Please enter a name for the fax connection."
+msgstr "Iltimos faksga ulanish uchun nom kiriting."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+msgid  "Please enter a name for the PDF connection."
+msgstr "Iltimos PDF ulanish uchun nom kiriting."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+msgid  "Fax printer"
+msgstr "Faks printeri"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+msgid  "PDF converter"
+msgstr "PDF konverter"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+msgid  "~Use as default printer"
+msgstr "Andoza printer sifatida ~qoʻllash"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+msgid  "Remo~ve fax number from output"
+msgstr "Faks raqamini olib ~tashlash"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a command line"
+msgstr "Buyruqlar qatorini tanlang"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr "Iltimos ushbu uskunaga mos keladigan b~uyruqlar qatorini tanlang."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF ~target directory"
+msgstr "PDF ~joylashadigan direktoriya"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "~Yordam"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+msgid  "Import printers from old versions"
+msgstr "Printerlarni eski versiyalardan import qilish"
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+msgid  "~These printers can be imported. Please select the ones you want to import."
+msgstr "~Ushbu printerlarni import qilib boʻladi. Buning uchun ulardan birini tanlang."
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "Hamma~sini tanlash"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Drayverni tanlash"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this fax connection"
+msgstr "Ushbu faks ulanishga quyidagi drayverdan foydalaning"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "Andoza ~drayver"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+msgid  "A speci~fic driver, to adapt the format to another printer"
+msgstr "Formatni boshqa printerga moslash uchun max~sus drayver"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Drayverni tanlash"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this PDF converter"
+msgstr "Ushbu PDF konverter uchun quyidagi drayverdan foydalaning"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "Andoza ~drayver"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+msgid  "The Adobe D~istiller(tm) driver"
+msgstr "Adobe D~istiller(tm) drayveri"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+msgid  "A spec~ific driver, to adapt the format to another printer"
+msgstr "Formatni boshqa printerga moslash uchun ~maxsus drayver"
+
+#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Qiya"
+
+#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+msgid  "Oblique"
+msgstr "Yarim qiya"
+
+#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+msgid  "Thin"
+msgstr "Ingichka"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+msgid  "Ultralight"
+msgstr "Oʻta yorqin"
+
+#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+msgid  "Semilight"
+msgstr "Yarim yorqin"
+
+#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+msgid  "Light"
+msgstr "Yorqin"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+msgid  "Semibold"
+msgstr "Yarim qalin"
+
+#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+msgid  "Bold"
+msgstr "Qalin"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+msgid  "Ultrabold"
+msgstr "Oʻta qalin"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+msgid  "Ultracondensed"
+msgstr "Ultra tor"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+msgid  "Extracondensed"
+msgstr "Ekstra tor"
+
+#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+msgid  "Condensed"
+msgstr "Tor"
+
+#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+msgid  "Semicondensed"
+msgstr "Yarim tor"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+msgid  "Semiexpanded"
+msgstr "Yoyilgan"
+
+#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+msgid  "Expanded"
+msgstr "Yoyilgan"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+msgid  "Extraexpanded"
+msgstr "Juda yoyilgan"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+msgid  "Ultraexpanded"
+msgstr "Oʻta keng yoyilgan"
+
+#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+msgid  "Regular"
+msgstr "Oddiy"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+msgid  "Command"
+msgstr "Buyruq"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+msgid  "Paper"
+msgstr "Qogʻoz"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+msgid  "Device"
+msgstr "Uskuna"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+msgid  "Font Replacement"
+msgstr "Shriftni almashtirish"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+msgid  "Other Settings"
+msgstr "Boshqa moslamalar"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+msgid  "from driver"
+msgstr "drayverdan"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+msgid  "<ignore>"
+msgstr "<eʼtibor berilmasin>"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+msgid  "Properties of %s"
+msgstr "%s xossalari"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+msgid  "~Paper size"
+msgstr "Qogʻo~zning oʻlchami"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+msgid  "~Orientation"
+msgstr "~Joylashishi"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+msgid  "~Duplex"
+msgstr "~Ikki taraflama"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+msgid  "Paper tray"
+msgstr "Qozogʻlarni uzatish joyi"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+msgid  "Color"
+msgstr "Rang"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+msgid  "Grayscale"
+msgstr "Oq-qora"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+msgid  "~Option"
+msgstr "~Parametr"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+msgid  "Current ~value"
+msgstr "Joriy ~qiymat"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+msgid  "Printer ~Language type"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+msgid  "PostScript (Level from driver)"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+msgid  "PostScript Level 1"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+msgid  "PostScript Level 2"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+msgid  "PostScript Level 3"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+msgid  "PDF"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+msgid  "~Color"
+msgstr "~Rang"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+msgid  "Color ~depth"
+msgstr "Rang~ning chuqurligi"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+msgid  "~Enable font replacement"
+msgstr "~Shriftni almashtirishni yoqish"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+msgid  "Replaced ~fonts"
+msgstr "Almashtirilgan ~shriftlar"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+msgid  "~Add"
+msgstr "Qoʻsh~ish"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+msgid  "~Remove"
+msgstr "~Olib tashlash"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+msgid  "Repla~ce font"
+msgstr "Shriftni al~mashtirish"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+msgid  "by ~printer font"
+msgstr "~printer shrifti bilan"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr "%PRODUCTNAME chop etish dialogi oʻrnida tizim bochib chiqarish dialogidan ~foydalanish."
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+msgid  "Command for quick printing without dialog (optional)"
+msgstr "Dialogsiz, tez chop etish buyrugʻi (muhim emas)"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+msgid  "Select command"
+msgstr "Buyruqni tanlash"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+msgid  "Printer"
+msgstr "Printer"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+msgid  "Fax"
+msgstr "Faks"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+msgid  "PDF converter"
+msgstr "PDF konverter"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+msgid  "~Configure as"
+msgstr "~Moslash"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+msgid  "~Fax number will be removed from output"
+msgstr "~Faks raqami koʻrsatilmasin"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF target directory :"
+msgstr "PDF moʻljal jildi :"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+msgid  "Command: "
+msgstr "Buyruq: "
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+msgid  "Printer"
+msgstr "Printer"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "~Yordam"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "~Olib tashlash"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+msgid  "~Left margin"
+msgstr "~Chapdan boʻsh joy"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+msgid  "~Top margin"
+msgstr "~Yuqoridan boʻsh joy"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+msgid  "~Right margin"
+msgstr "Oʻ~ngdan boʻsh joy"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+msgid  "~Bottom margin"
+msgstr "~Pastdan boʻsh joy"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+msgid  "~Comment"
+msgstr "~Izoh"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+msgid  "~Default"
+msgstr "~Andoza"
+
+#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+msgid  "Please enter the fax number."
+msgstr "Iltimos faks raqamini kiriting."
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+msgid  "Authentication request"
+msgstr "Tasdiqlash talab qilinadi"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+msgid  "Please enter your authentication data for server %s"
+msgstr "%s serveri uchun tasdiqlash maʼlumotlaringizni kiriting"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+msgid  "~User"
+msgstr "~Foydalanuvchi"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+msgid  "~Password"
+msgstr "Ma~xfiy soʻz"

@@ -1,0 +1,604 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+msgid  "Syntax error."
+msgstr "Sintaksfout."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+msgid  "Return without Gosub."
+msgstr "Return sonder Gosub."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect entry; please retry."
+msgstr "Verkeerde inskrywing; probeer asseblief weer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid procedure call."
+msgstr "Ongeldige prosedureroep."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Overflow."
+msgstr "Oorvloei."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough memory."
+msgstr "Onvoldoende geheue."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+msgid  "Array already dimensioned."
+msgstr "Skikking reeds gedimensioneer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+msgid  "Index out of defined range."
+msgstr "Indeks buite gedefinieerde reikwydte."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+msgid  "Duplicate definition."
+msgstr "Duplikaat definisie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+msgid  "Division by zero."
+msgstr "Deling deur nul."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable not defined."
+msgstr "Veranderlike nie gedefinieer nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+msgid  "Data type mismatch."
+msgstr "Datasoort pas nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid parameter."
+msgstr "Ongeldige parameter."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+msgid  "Process interrupted by user."
+msgstr "Proses deur gebruiker onderbreek."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+msgid  "Resume without error."
+msgstr "Hervat sonder fout."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough stack memory."
+msgstr "Onvoldoende stapelgeheue."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub-procedure or function procedure not defined."
+msgstr "Subprosedure of funksieprosedure nie gedefinieer nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading DLL file."
+msgstr "Kon nie DLL-lêer laai nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+msgid  "Wrong DLL call convention."
+msgstr "Verkeerde DLL-roepkonvensie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Internal error $(ARG1)."
+msgstr "Interne fout $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid file name or file number."
+msgstr "Ongeldige lêernaam of lêernommer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "File not found."
+msgstr "Lêer nie gevind nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect file mode."
+msgstr "Verkeerde lêermodus."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+msgid  "File already open."
+msgstr "Lêer reeds oop."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Device I/O error."
+msgstr "T/A-fout by toestel."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+msgid  "File already exists."
+msgstr "Lêer bestaan reeds."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record length."
+msgstr "Verkeerde rekordlengte."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+msgid  "Disk or hard drive full."
+msgstr "Skyf of hardeskyf vol."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+msgid  "Reading exceeds EOF."
+msgstr "Lesing oorskry EOF."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record number."
+msgstr "Verkeerde rekordnommer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many files."
+msgstr "Te veel lêers."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+msgid  "Device not available."
+msgstr "Toestel nie beskikbaar nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+msgid  "Access denied."
+msgstr "Toegang geweier."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+msgid  "Disk not ready."
+msgstr "Skyf nie gereed nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+msgid  "Not implemented."
+msgstr "Nie geïmplementeer nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+msgid  "Renaming on different drives impossible."
+msgstr "Hernoeming op verskillende aandrywers nie moontlik nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Path/File access error."
+msgstr "Pad-/lêertoegangsfout."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Path not found."
+msgstr "Pad nie gevind nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object variable not set."
+msgstr "Objekveranderlike nie gestel nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid string pattern."
+msgstr "Ongeldige stringpatroon."
+
+#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+msgid  "Use of zero not permitted."
+msgstr "Gebruik van nul nie toegelaat nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "DDE Error."
+msgstr "DDE-fout."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+msgid  "Awaiting response to DDE connection."
+msgstr "Wag op antwoord op DDE-verbinding."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+msgid  "No DDE channels available."
+msgstr "Geen DDE-kanale beskikbaar nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+msgid  "No application responded to DDE connect initiation."
+msgstr "Geen toepassing het op inisiëring van die DDE-verbinding gereageer nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many applications responded to DDE connect initiation."
+msgstr "Te veel toepassings het op inisiëring van die DDE-verbinding gereageer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE channel locked."
+msgstr "DDE-kanaal geblokkeer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+msgid  "External application cannot execute DDE operation."
+msgstr "Eksterne toepassing kan nie DDE-bewerking uitvoer nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+msgid  "Timeout while waiting for DDE response."
+msgstr "Tyd verstreke terwyl wag vir DDE-respons."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr "Gebruiker het ESCAPE gedruk tydens DDE-bedryf."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+msgid  "External application busy."
+msgstr "Eksterne toepassing besig."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+msgid  "DDE operation without data."
+msgstr "DDE-bewerking sonder data."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Data are in wrong format."
+msgstr "Data is in verkeerde formaat."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+msgid  "External application has been terminated."
+msgstr "Eksterne toepassing is beëindig."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE connection interrupted or modified."
+msgstr "DDE-verbinding onderbreek of gewysig."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "DDE method invoked with no channel open."
+msgstr "DDE-metode ingeroep met geen kanaal oop."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid DDE link format."
+msgstr "Ongeldige DDE-skakelformaat."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "DDE message has been lost."
+msgstr "DDE-boodskap het verlore gegaan."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+msgid  "Paste link already performed."
+msgstr "Plak skakel reeds uitgevoer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+msgid  "Link mode cannot be set due to invalid link topic."
+msgstr "Skakelmodus kan vanweë ongeldige skakelonderwerp nie opgestel word nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "DDE requires the DDEML.DLL file."
+msgstr "DDE benodig die DDEML.DLL-lêer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Module cannot be loaded; invalid format."
+msgstr "Module kan nie gelaai word nie; ongeldige formaat."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object index."
+msgstr "Ongeldige objekindeks."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not available."
+msgstr "Objek is nie beskikbaar nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect property value."
+msgstr "Verkeerde eienskapwaarde."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is read-only."
+msgstr "Hierdie eienskap is leesalleen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is write only."
+msgstr "Hierdie eienskap is skryfalleen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object reference."
+msgstr "Ongeldige objekverwysing."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "Property or method not found: $(ARG1)."
+msgstr "Eienskap of metode nie gevind nie: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object required."
+msgstr "Objek benodig."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid use of an object."
+msgstr "Ongeldige gebruik van 'n objek."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation is not supported by this object."
+msgstr "Hierdie objek werk nie met OLE-outomatisering nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "This property or method is not supported by the object."
+msgstr "Die objek werk nie met hierdie eienskap of metode nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation Error."
+msgstr "OLE-outomatiseringsfout."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+msgid  "This action is not supported by given object."
+msgstr "Die gegewe objek werk nie met hierdie aksie nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Named arguments are not supported by given object."
+msgstr "Die gegewe objek werk nie met genoemde argumente nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+msgid  "The current locale setting is not supported by the given object."
+msgstr "Die gegewe objek werk nie met die huidige locale-instelling nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Named argument not found."
+msgstr "Genoemde argument nie gevind nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+msgid  "Argument is not optional."
+msgstr "Argument is nie opsioneel nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "Ongeldige aantal argumente."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not a list."
+msgstr "Objek is nie 'n lys nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid ordinal number."
+msgstr "Ongeldige ordinaalgetal."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Specified DLL function not found."
+msgstr "Gespesifiseerde DLL-funksie nie gevind nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid clipboard format."
+msgstr "Ongeldige knipbordformaat."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this property."
+msgstr "Objek het nie hierdie eienskap nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this method."
+msgstr "Objekhet nie hierdie metode nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+msgid  "Required argument lacking."
+msgstr "Vereiste argument ontbreek."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "Ongeldige aantal argumente."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Error executing a method."
+msgstr "Kon nie 'n metode uitvoer nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to set property."
+msgstr "Kon nie eienskap opstel nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to determine property."
+msgstr "Kon nie eienskap bepaal nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr "Onverwagte simbool: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Expected: $(ARG1)."
+msgstr "Verwag: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol expected."
+msgstr "Simbool verwag."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable expected."
+msgstr "Veranderlike verwag."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Label expected."
+msgstr "Etiket verwag."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Value cannot be applied."
+msgstr "Waarde kan nie toegepas word nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) already defined."
+msgstr "Veranderlike $(ARG1) reeds gedefinieer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "Subprosedure of funksieprosedure $(ARG1) reeds gedefinieer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) already defined."
+msgstr "Etiket $(ARG1) reeds gedefinieer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) not found."
+msgstr "Veranderlike $(ARG1) nie gevind nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+msgid  "Array or procedure $(ARG1) not found."
+msgstr "Skikking of prosedure $(ARG1) nie gevind nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+msgid  "Procedure $(ARG1) not found."
+msgstr "Prosedure $(ARG1) nie gevind nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) undefined."
+msgstr "Etiket $(ARG1) ongedefinieer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown data type $(ARG1)."
+msgstr "Onbekende datasoort $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+msgid  "Exit $(ARG1) expected."
+msgstr "Afsluiting $(ARG1) verwag."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr "Stellingblok nog oop: $(ARG1) ontbreek."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+msgid  "Parentheses do not match."
+msgstr "Parenteses pas nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr "Simbool $(ARG1) reeds anders gedefinieer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+msgid  "Parameters do not correspond to procedure."
+msgstr "Parameters kom nie met prosedure ooreen nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid character in number."
+msgstr "Ongeldige karakter in getal."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Array must be dimensioned."
+msgstr "Skikking moet gedimensioneer wees."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+msgid  "Else/Endif without If."
+msgstr "Else/Endif sonder If."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) nie binne 'n prosedure toegelaat nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) nie buite 'n prosedure toegelaat nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Dimension specifications do not match."
+msgstr "Dimensiespesifikasies pas nie."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown option: $(ARG1)."
+msgstr "Onbekende opsie: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+msgid  "Constant $(ARG1) redefined."
+msgstr "Konstante $(ARG1) geherdefinieer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+msgid  "Program too large."
+msgstr "Program te groot."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+msgid  "Strings or arrays not permitted."
+msgstr "Stringe of skikkings nie toegelaat nie."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+msgid  "An exception occurred $(ARG1)."
+msgstr "'n Uitsondering het voorgekom $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+msgid  "This array is fixed or temporarily locked."
+msgstr "Hierdie skikking is vasgestel of tydelik gesluit."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Out of string space."
+msgstr "Onvoldoende stringruimte."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+msgid  "Expression Too Complex."
+msgstr "Uitdrukking te ingewikkeld."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+msgid  "Can't perform requested operation."
+msgstr "Kan nie aangevraagde bewerking uitvoer nie."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+msgid  "Too many DLL application clients."
+msgstr "Te veel DLL-toepassingkliënte."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+msgid  "For loop not initialized."
+msgstr "For-lus nie geïnisialiseer nie."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1)"
+msgstr ""
+
+#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+msgid  "The macro running has been interrupted"
+msgstr "Die makro wat loop, is onderbreek"
+
+#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+msgid  "Reference will not be saved: "
+msgstr "Verwysing sal nie gestoor word nie: "
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading library '$(ARG1)'."
+msgstr "Kon nie biblioteek '$(ARG1)' laai nie."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving library: '$(ARG1)'."
+msgstr "Kon nie biblioteek stoor nie: '$(ARG1)'."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "Die BASIC uit die lêer '$(ARG1)' kon nie geïnisialiseer word nie."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr "Kon nie BASIC stoor nie: '$(ARG1)'."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+msgid  "Error removing library."
+msgstr "Kon nie biblioteek verwyder nie."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+msgid  "The library could not be removed from memory."
+msgstr "Die biblioteek kon nie uit die geheue verwyder word nie."
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+msgid  "On"
+msgstr "Aan"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+msgid  "Off"
+msgstr "Af"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+msgid  "True"
+msgstr "Waar"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+msgid  "False"
+msgstr "Onwaar"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+msgid  "Yes"
+msgstr "Ja"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+msgid  "No"
+msgstr "Nee"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+msgid  "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $;@(0.00 $)"

@@ -1,0 +1,1465 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
+msgstr "Detalės"
+
+#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
+msgstr "Puslapinė antraštė"
+
+#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
+msgstr "Puslapinė poraštė"
+
+#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
+msgid  "Group Header"
+msgstr "Grupės puslapinė antraštė"
+
+#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
+msgid  "Group Footer"
+msgstr "Grupės puslapinė poraštė"
+
+#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
+msgstr "Ataskaitos puslapinė antraštė"
+
+#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
+msgstr "Ataskaitos puslapinė poraštė"
+
+#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
+msgid  "The name '#1' already exists and can not be asssigned again."
+msgstr "Vardas „#1“ jau egzistuoja ir dar kartą jo priskirti negalima."
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgstr "Bandote nustatyti neleistiną argumentą. Peržiūrėkite leistinus argumentus „#1“."
+
+#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
+msgid  "The element is invalid."
+msgstr "Elementas neleistinas."
+
+#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
+msgid  "Label field"
+msgstr "Žymės laukas"
+
+#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
+msgid  "Formatted field"
+msgstr "Formatuotas laukas"
+
+#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
+msgid  "Image control"
+msgstr "Paveikslo valdiklis"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Ataskaita"
+
+#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
+msgid  "Shape"
+msgstr "Figūra"
+
+#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
+msgid  "Fixed line"
+msgstr "Fiksuota eilutė"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+#, fuzzy
+msgid  "Sorting and Grouping"
+msgstr "Rikiavimas ir grupavimas"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "Groups"
+msgstr "Grupės"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+msgid  "Group actions"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+msgid  "Move up"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+msgid  "Move down"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+msgid  "~Delete"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
+#, fuzzy
+msgid  "Properties"
+msgstr "Savybės"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+#, fuzzy
+msgid  "Sorting"
+msgstr "Rikiavimas"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+#, fuzzy
+msgid  "Ascending"
+msgstr "Didėjančiai"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+#, fuzzy
+msgid  "Descending"
+msgstr "Mažėjančiai"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Group Header"
+msgstr "Grupės puslapinė antraštė"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "Yra"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
+msgid  "Not present"
+msgstr "Nėra"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+#, fuzzy
+msgid  "Group Footer"
+msgstr "Grupės puslapinė poraštė"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "Yra"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Not present"
+msgstr "Nėra"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+#, fuzzy
+msgid  "Group On"
+msgstr "Grupavimas įgalintas"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+#, fuzzy
+msgid  "Each Value"
+msgstr "Kiekviena reikšmė"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+#, fuzzy
+msgid  "Group Interval"
+msgstr "Grupės intervalas"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+#, fuzzy
+msgid  "Keep Together"
+msgstr "Laikyti kartu"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+#, fuzzy
+msgid  "No"
+msgstr "Ne"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+#, fuzzy
+msgid  "Whole Group"
+msgstr "Visa grupė"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+#, fuzzy
+msgid  "With First Detail"
+msgstr "Su pirmu elementu"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Help"
+msgstr "Žinynas"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+#, fuzzy
+msgid  "Field/Expression"
+msgstr "Laukas arba reiškinys"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+#, fuzzy
+msgid  "Sort Order"
+msgstr "Rikiavimo eilė"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+#, fuzzy
+msgid  "Prefix Characters"
+msgstr "Priešdėlio rašmenys"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+#, fuzzy
+msgid  "Year"
+msgstr "Metai"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+#, fuzzy
+msgid  "Quarter"
+msgstr "Ketvirtis"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+#, fuzzy
+msgid  "Month"
+msgstr "Mėnuo"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+#, fuzzy
+msgid  "Week"
+msgstr "Savaitė"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+#, fuzzy
+msgid  "Day"
+msgstr "Diena"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+#, fuzzy
+msgid  "Hour"
+msgstr "Valanda"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+#, fuzzy
+msgid  "Minute"
+msgstr "Minutė"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+#, fuzzy
+msgid  "Interval"
+msgstr "Intervalas"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+#, fuzzy
+msgid  "Select a field or type an expression to sort or group on."
+msgstr "Parinkite lauką arba surinkite reiškinį, pagal kurį rikiuosite arba grupuosite."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+#, fuzzy
+msgid  "Display a header for this group?"
+msgstr "Ar rodyti šios grupės puslapinę antraštę?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+#, fuzzy
+msgid  "Display a footer for this group?"
+msgstr "Ar rodyti šios grupės puslapinę poraštę?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+#, fuzzy
+msgid  "Select the value or range of values that starts a new group."
+msgstr "Parinkite reikšmę arba reikšmių sritį, kuria prasidės nauja grupė."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+#, fuzzy
+msgid  "Interval or number of characters to group on."
+msgstr "Intervalas arba rašmenų skaičius, pagal kurį bus grupuojama."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+#, fuzzy
+msgid  "Keep group together on one page?"
+msgstr "Laikyti grupę kartu viename puslapyje?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+#, fuzzy
+msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgstr "Parinkite didėjantį arba mažėjantį rikiavimą. Didėjantis rikiavimas yra nuo A iki Ž arba nuo 0 iki 9."
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+#, fuzzy
+msgid  "Page Numbers"
+msgstr "Puslapių numeriai"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "Format"
+msgstr "Formatas"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+#, fuzzy
+msgid  "Page N"
+msgstr "N puslapis"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+#, fuzzy
+msgid  "Page N of M"
+msgstr "Puslapis N iš M"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+#, fuzzy
+msgid  "Position"
+msgstr "Padėtis"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+#, fuzzy
+msgid  "Top of Page (Header)"
+msgstr "Puslapio viršus (puslapinė antraštė)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+#, fuzzy
+msgid  "Bottom of Page (Footer)"
+msgstr "Puslapio apačia (puslapinė poraštė)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+#, fuzzy
+msgid  "General"
+msgstr "Bendra"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+#, fuzzy
+msgid  "Alignment:"
+msgstr "Lygiuotė:"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Left"
+msgstr "Kairinė"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr "Centrinė"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Right"
+msgstr "Dešininė"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+#, fuzzy
+msgid  "Show Number on First Page"
+msgstr "Rodyti numerį pirmajame puslapyje"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "~Žinynas"
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+#, fuzzy
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "& #PAGENUMBER# \" puslapis\""
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+#, fuzzy
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" iš \" & #PAGECOUNT#"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+#, fuzzy
+msgid  "Page Setup"
+msgstr "Puslapio nuostatos"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+#, fuzzy
+msgid  "Page"
+msgstr "Puslapis"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#, fuzzy
+msgid  "Background"
+msgstr "Fonas"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "Grįžti"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+#, fuzzy
+msgid  "Page"
+msgstr "Puslapis"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+#, fuzzy
+msgid  "Background"
+msgstr "Fonas"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+#, fuzzy
+msgid  "Section Setup"
+msgstr "Sekcijos nuostatos"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "Grįžti"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+#, fuzzy
+msgid  "Background"
+msgstr "Fonas"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character Settings"
+msgstr "Rašmenų nuostatos"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "Šriftas"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "Rašmenų savybės"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Position"
+msgstr "Padėtis"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+#, fuzzy
+msgid  "Asian Layout"
+msgstr "Azijos kalbų schema"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+#, fuzzy
+msgid  "Background"
+msgstr "Fonas"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "Lygiuotė"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "Grįžti"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+#, fuzzy
+msgid  "Character"
+msgstr "Rašmuo"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+#, fuzzy
+msgid  "Line"
+msgstr "Linija"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+#, fuzzy
+msgid  "Line"
+msgstr "Eilutė"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+#, fuzzy
+msgid  "Line Styles"
+msgstr "Linijų stiliai"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+#, fuzzy
+msgid  "Arrow Styles"
+msgstr "Rodyklių stiliai"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "Grįžti"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+#, fuzzy
+msgid  "Line"
+msgstr "Eilutė"
+
+#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+#, fuzzy
+msgid  "Report navigator"
+msgstr "Ataskaitos žvalgiklis"
+
+#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+#, fuzzy
+msgid  "Functions"
+msgstr "Funkcijos"
+
+#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+#, fuzzy
+msgid  "Groups"
+msgstr "Grupės"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+#, fuzzy
+msgid  "Sorting and Grouping..."
+msgstr "Rikiavimas ir grupavimas..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+#, fuzzy
+msgid  "Page Header/Footer..."
+msgstr "Puslapinė antraštė ir poraštė..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+#, fuzzy
+msgid  "Report Header/Footer..."
+msgstr "Ataskaitos puslapinė antraštė ir poraštė..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+#, fuzzy
+msgid  "New Function"
+msgstr "Nauja funkcija"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "Savybės..."
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "Lauko reikšmė yra"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Expression Is"
+msgstr "Reiškinys yra"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+msgid  "between"
+msgstr "tarp"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+msgid  "not between"
+msgstr "ne tarp"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+msgid  "equal to"
+msgstr "lygus"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+msgid  "not equal to"
+msgstr "nelygus"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+msgid  "greater than"
+msgstr "didesnis už"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+msgid  "less than"
+msgstr "mažesnis už"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+msgid  "greater than or equal to"
+msgstr "didesnis arba lygus"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+msgid  "less than or equal to"
+msgstr "mažesnis arba lygus"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+msgid  "and"
+msgstr "ir"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+msgid  "Example"
+msgstr "Pavyzdys"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "Conditional Formatting"
+msgstr "Sąlyginis formatavimas"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "~Žinynas"
+
+#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+#, fuzzy
+msgid  "Condition $number$"
+msgstr "$number$ sąlyga"
+
+#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+#, fuzzy
+msgid  "White"
+msgstr "Balta"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+#, fuzzy
+msgid  "Font color"
+msgstr "Šrifto spalva"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+#, fuzzy
+msgid  "Background"
+msgstr "Fonas"
+
+#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+#, fuzzy
+msgid  "No Fill"
+msgstr "Jokio užpildo"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Sort Ascending"
+msgstr "Rikiuoti didėjančiai"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Sort Descending"
+msgstr "Rikiuoti mažėjančiai"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Remove sorting"
+msgstr "Atšaukti rikiavimą"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "Įterpti"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+#, fuzzy
+msgid  "Help"
+msgstr "Žinynas"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr ""
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+#, fuzzy
+msgid  "Date and Time"
+msgstr "Data ir laikas"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+#, fuzzy
+msgid  "Include Date"
+msgstr "Įterpti datą"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+#, fuzzy
+msgid  "Format"
+msgstr "Formatas"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+#, fuzzy
+msgid  "Include Time"
+msgstr "Įterpti laiką"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+#, fuzzy
+msgid  "Format"
+msgstr "Formatas"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "Žinynas"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "Bendra"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "Duomenys"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+msgid  "No"
+msgstr "Ne"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+msgid  "Yes"
+msgstr "Taip"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+msgid  "Force New Page"
+msgstr "Priverstinai pradėti naują puslapį"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+msgid  "None"
+msgstr "Jokio"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+msgid  "Before Section"
+msgstr "Prieš sekciją"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+msgid  "After Section"
+msgstr "Po sekcijos"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+msgid  "Before & After Section"
+msgstr "Prieš ir po sekcijos"
+
+#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+msgid  "New Row Or Column"
+msgstr "Nauja eilutė arba stulpelis"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+msgid  "Keep Together"
+msgstr "Laikyti kartu"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+msgid  "No"
+msgstr "Ne"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+msgid  "Whole Group"
+msgstr "Visą grupę"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+msgid  "With First Detail"
+msgstr "Su pirmąja detale"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+msgid  "Can Grow"
+msgstr "Gali augti"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+msgid  "Can Shrink"
+msgstr "Gali mažėti"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+msgid  "Repeat Section"
+msgstr "Kartoti sekciją"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+msgid  "Print repeated values"
+msgstr "Spausdinti kartojamas reikšmes"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+msgid  "Conditional Print Expression"
+msgstr "Sąlyginis spausdinimo reiškinys"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+msgid  "Start new column"
+msgstr "Pradėti naują stulpelį"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+msgid  "Start new page"
+msgstr "Pradėti naują puslapį"
+
+#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+msgid  "Reset page number"
+msgstr "Iš naujo numeruoti puslapius"
+
+#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+msgid  "Chart type"
+msgstr "Diagramos tipas"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+msgid  "Print When Group Change"
+msgstr "Spausdinti keičiantis grupei"
+
+#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "Matomas"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+msgid  "Group keep together"
+msgstr "Laikyti grupę kartu"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+msgid  "Per Page"
+msgstr "Puslapyje"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+msgid  "Per Column"
+msgstr "Stulpelyje"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+msgid  "None"
+msgstr "Jokio"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+msgid  "Section"
+msgstr "Sekcija"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+msgid  "Automatic"
+msgstr "Automatiškai"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+msgid  "Page header"
+msgstr "Puslapinė antraštė"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+msgid  "Page footer"
+msgstr "Puslapinė poraštė"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+msgid  "All Pages"
+msgstr "Visi puslapiai"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+msgid  "Not With Report Header"
+msgstr "Ne su ataskaitos puslapine antrašte"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+msgid  "Not With Report Footer"
+msgstr "Ne su ataskaitos puslapine porašte"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+msgid  "Not With Report Header/Footer"
+msgstr "Ne su ataskaitos puslapine antrašte arba porašte"
+
+#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+msgid  "Deep traversing"
+msgstr "Išsamus tikrinimas"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+msgid  "Pre evaluation"
+msgstr "Pirminis įvertinimas"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+msgid  "Position X"
+msgstr "X padėtis"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+msgid  "Position Y"
+msgstr "Y padėtis"
+
+#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "Plotis"
+
+#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "Aukštis"
+
+#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+msgid  "Initial value"
+msgstr "Pradinė reikšmė"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+msgid  "Preserve as Link"
+msgstr "Išlaikyti kaip saitą"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+msgid  "Formula"
+msgstr "Formulė"
+
+#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+msgid  "Data field"
+msgstr "Duomenų laukas"
+
+#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "Šriftas"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+msgid  "Background color"
+msgstr "Fono spalva"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+msgid  "Background Transparent"
+msgstr "Skaidrus fonas"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+msgid  "Background Transparent"
+msgstr "Skaidrus fonas"
+
+#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+msgid  "This operation is not allowed. The control overlaps with another one."
+msgstr "Ši operacija neleistina. Valdiklis persidengia su kitu valdikliu."
+
+#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+msgid  "This position can not be set. It is invalid."
+msgstr "Tokia padėtis neleistina, jos nustatyti negalima."
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+msgid  "Group: %1"
+msgstr "Grupė: %1"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+msgid  "Function"
+msgstr "Funkcija"
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+msgid  "Scope"
+msgstr "Apimtis"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+msgid  "Data Field Type"
+msgstr "Duomenų lauko tipas"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+msgid  "Field or Formula"
+msgstr "Laukas arba formulė"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+msgid  "Function"
+msgstr "Funkcija"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+#, fuzzy
+msgid  "Counter"
+msgstr "Skaitiklis"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+#, fuzzy
+msgid  "User defined Function"
+msgstr "Naudotojo aprašyta funkcija"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+#, fuzzy
+msgid  "Link master fields"
+msgstr "Susieti valdančiuosius laukus"
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+#, fuzzy
+msgid  "Link slave fields"
+msgstr "Susieti valdomuosius laukus"
+
+#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+#, fuzzy
+msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr "Diagramomis galima atvaizduoti išsamius dabartinio ataskaitos įrašo duomenis. Tam reikia nurodyti, kurie stulpeliai diagramoje kokius ataskaitos laukus atitinka."
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+#, fuzzy
+msgid  "Chart"
+msgstr "Diagrama"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "Ataskaita"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+#, fuzzy
+msgid  "Preview Row(s)"
+msgstr "Eilučių peržiūra"
+
+#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+#, fuzzy
+msgid  "Area"
+msgstr "Sritis"
+
+#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+#, fuzzy
+msgid  "Report Output Format"
+msgstr "Ataskaitos išvedimo formatas"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+msgid  "Top"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+msgid  "Middle"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+msgid  "Bottom"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+msgid  "Horz. Alignment"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+msgid  "Left"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+msgid  "Right"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+msgid  "Block"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+msgid  "Center"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+#, fuzzy
+msgid  "Counter"
+msgstr "Skaitiklis"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+msgid  "Accumulation"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+msgid  "Minimum"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+msgid  "Maximum"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+msgid  "Properties: "
+msgstr "Savybės:"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+msgid  "No Control marked"
+msgstr "Nepažymėtas valdiklis"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+msgid  "Multiselection"
+msgstr "Daugialypė atranka"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "Paveikslo valdiklis"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label field"
+msgstr "Žymės laukas"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+msgid  "Line"
+msgstr "Eilutė"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "Formatuotas laukas"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+msgid  "Shape"
+msgstr "Figūra"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+msgid  "Report"
+msgstr "Ataskaita"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+#, fuzzy
+msgid  "Section"
+msgstr "Sekcija"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "Funkcija"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+#, fuzzy
+msgid  "Group"
+msgstr "Grupė"
+
+#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+#, fuzzy
+msgid  "Show ruler"
+msgstr "Rodyti liniuotę"
+
+#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+#, fuzzy
+msgid  "Show grid"
+msgstr "Rodyti tinklelį"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+#, fuzzy
+msgid  "Change Object"
+msgstr "Keisti objektą"
+
+#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+#, fuzzy
+msgid  "Move Group(s)"
+msgstr "Perkelti grupę(-es)"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+#, fuzzy
+msgid  "Conditional Formatting"
+msgstr "Sąlyginis formatavimas"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Remove report header / report footer"
+msgstr "Šalinti ataskaitos puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Add report header / report footer"
+msgstr "Pridėti ataskaitos puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Remove page header / page footer"
+msgstr "Šalinti puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Add page header / page footer"
+msgstr "Pridėti puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+#, fuzzy
+msgid  "Change property '#'"
+msgstr "Keisti savybę „#“"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+#, fuzzy
+msgid  "Add group header "
+msgstr "Pridėti grupės puslapinę antraštę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+#, fuzzy
+msgid  "Remove group header "
+msgstr "Šalinti grupės puslapinę antraštę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+#, fuzzy
+msgid  "Add group footer "
+msgstr "Pridėti grupės puslapinę poraštę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+#, fuzzy
+msgid  "Remove group footer "
+msgstr "Šalinti grupės puslapinę poraštę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+#, fuzzy
+msgid  "Add function"
+msgstr "Pridėti funkciją"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+#, fuzzy
+msgid  "Delete function"
+msgstr "Šalinti funkciją"
+
+#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+#, fuzzy
+msgid  "Design"
+msgstr "Projektavimas"
+
+#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+#, fuzzy
+msgid  "Preview"
+msgstr "Peržiūra"
+
+#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+#, fuzzy
+msgid  "Report #"
+msgstr "Ataskaita #"
+
+#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+#, fuzzy
+msgid  "~Report name"
+msgstr "A~taskaitos pavadinimas"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+#, fuzzy
+msgid  "Delete Group"
+msgstr "Šalinti grupę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+#, fuzzy
+msgid  "Add Group"
+msgstr "Pridėti grupę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+#, fuzzy
+msgid  "Delete Selection"
+msgstr "Šalinti atranką"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+#, fuzzy
+msgid  "Delete Function"
+msgstr "Šalinti funkciją"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+#, fuzzy
+msgid  "Change Size"
+msgstr "Keisti dydį"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+#, fuzzy
+msgid  "Paste"
+msgstr "Įdėti"
+
+#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+#, fuzzy
+msgid  "Insert Control"
+msgstr "Įterpti valdiklį"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+#, fuzzy
+msgid  "Delete Control"
+msgstr "Šalinti valdiklį"
+
+#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+#, fuzzy
+msgid  "Insert Group"
+msgstr "Įterpti grupę"
+
+#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+#, fuzzy
+msgid  "Delete Group"
+msgstr "Šalinti grupę"
+
+#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+#, fuzzy
+msgid  "GroupHeader"
+msgstr "Grupės puslapinė antraštė"
+
+#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+#, fuzzy
+msgid  "GroupFooter"
+msgstr "Grupės puslapinė poraštė"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+#, fuzzy
+msgid  "Sorting and Grouping..."
+msgstr "Rikiavimas ir grupavimas..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+#, fuzzy
+msgid  "Background Color..."
+msgstr "Fono spalva..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+#, fuzzy
+msgid  "Ruler..."
+msgstr "Liniuotė..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+#, fuzzy
+msgid  "Grid..."
+msgstr "Tinklelis..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+#, fuzzy
+msgid  "~Arrange"
+msgstr "Iš~dėstyti"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
+msgid  "Bring ~Forward"
+msgstr "~Iškelti į priekį"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
+msgid  "Send Back~ward"
+msgstr "~Nukelti į pagrindą"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+#, fuzzy
+msgid  "~Object Resizing"
+msgstr "~Objekto dydžio keitimas"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to smallest width"
+msgstr "~Pritaikyti prie mažiausio pločio"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to greatest width"
+msgstr "~Pritaikyti prie didžiausio pločio"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to smallest height"
+msgstr "~Pritaikyti prie mažiausio aukščio"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to greatest height"
+msgstr "~Pritaikyti prie didžiausio aukščio"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+#, fuzzy
+msgid  "Section"
+msgstr "Sekcija"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+msgid  "Shrink"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+msgid  "Shrink from top"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+msgid  "Shrink from bottom"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+#, fuzzy
+msgid  "Distribution..."
+msgstr "I~šdėstymas vienodais atstumais"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "Savybės..."
+
+#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+#, fuzzy
+msgid  "Add field:"
+msgstr "Pridėti lauką:"
+
+#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "Filtras"
+
+#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+#, fuzzy
+msgid  " - %PRODUCTNAME Base Report"
+msgstr " - „%PRODUCTNAME Base“ ataskaita"
+
+#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+#, fuzzy
+msgid  "Untitled"
+msgstr "Be pavadinimo"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+#, fuzzy
+msgid  "Change Alignment"
+msgstr "Keisti lygiuotę"
+
+#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+#, fuzzy
+msgid  "# Header"
+msgstr "# puslapinė antraštė"
+
+#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+#, fuzzy
+msgid  "# Footer"
+msgstr "# puslapinė poraštė"
+
+#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+#, fuzzy
+msgid  "Insert graphics"
+msgstr "Įterpti paveikslą"
+
+#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "Šalinti"
+
+#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "Funkcija"
+
+#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+#, fuzzy
+msgid  "An error occurred while creating the report."
+msgstr "Kuriant ataskaitą įvyko klaida."
+
+#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+#, fuzzy
+msgid  "An exception of type $type$ was caught."
+msgstr "Įvyko „$type$“ tipo išimtinė situacija."
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+#, fuzzy
+msgid  "Change font"
+msgstr "Keisti šriftą"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+#, fuzzy
+msgid  "Change page attributes"
+msgstr "Keisti puslapio požymius"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+#, fuzzy
+msgid  "Insert Page Header/Footer"
+msgstr "Įterpti puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+#, fuzzy
+msgid  "Delete Page Header/Footer"
+msgstr "Šalinti puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+#, fuzzy
+msgid  "Insert Column Header/Footer"
+msgstr "Įterpti stulpelio puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+#, fuzzy
+msgid  "Delete Column Header/Footer"
+msgstr "Šalinti stulpelio puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+#, fuzzy
+msgid  "Insert Report Header/Footer"
+msgstr "Įterpti ataskaitos puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+#, fuzzy
+msgid  "Delete Report Header/Footer"
+msgstr "Šalinti ataskaitos puslapinę antraštę arba poraštę"
+
+#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+#, fuzzy
+msgid  "The report can not be executed unless it is bound to content."
+msgstr "Ataskaitos negalima paleisti kol ji nesusieta su turiniu."
+
+#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+#, fuzzy
+msgid  "The report can not be executed unless at least one object has been inserted."
+msgstr "Ataskaitos negalima paleisti kol neįterptas bent vienas objektas."
+
+#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+msgid  "Shrink Section"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+#, fuzzy
+msgid  "Detail"
+msgstr "Išsamiau"
+
+#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+#, fuzzy
+msgid  "Page Header"
+msgstr "Puslapinė antraštė"
+
+#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+#, fuzzy
+msgid  "Page Footer"
+msgstr "Puslapinė poraštė"
+
+#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+#, fuzzy
+msgid  "Report Header"
+msgstr "Ataskaitos puslapinė antraštė"
+
+#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+#, fuzzy
+msgid  "Report Footer"
+msgstr "Ataskaitos puslapinė poraštė"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "Įterpti"

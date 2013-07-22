@@ -1,0 +1,604 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+msgid  "Syntax error."
+msgstr "இலக்கணப் பிழை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+msgid  "Return without Gosub."
+msgstr "Gosub செய்யாமல் திரும்புக."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect entry; please retry."
+msgstr "தவறான உள்ளீடு; மீண்டும் முயல்க."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid procedure call."
+msgstr "செல்லாச் செயல்முறை அழைப்பு."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Overflow."
+msgstr "நிறைந்து வழிதல்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough memory."
+msgstr "நினைவகம் போதவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+msgid  "Array already dimensioned."
+msgstr "வரிசை ஏற்கனவே பரிமானங்களைக் கொண்டுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+msgid  "Index out of defined range."
+msgstr "வரையறுக்கப்பட்ட வரம்பின் வெளியுள்ள உள்ளடக்கம்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+msgid  "Duplicate definition."
+msgstr "நகல் வரையறை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+msgid  "Division by zero."
+msgstr "சுழியால் வகுத்தல்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable not defined."
+msgstr "மாறி வரையறுக்கப்படவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+msgid  "Data type mismatch."
+msgstr "தரவு வகை பொருந்தாமை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid parameter."
+msgstr "தவறான அளவுரு."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+msgid  "Process interrupted by user."
+msgstr "செயல்முறை பயனரால் தடுக்கப்பட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+msgid  "Resume without error."
+msgstr "பிழையுடன் தொடரவும்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough stack memory."
+msgstr "அடுக்கு நினைவகம் போதவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub-procedure or function procedure not defined."
+msgstr "துணை வழிமுறையோ அல்லது செயல்பாட்டு வழிமுறையோ வரையறுக்கப்படவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading DLL file."
+msgstr "DLL கோப்பை ஏற்றுவதில் பிழை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+msgid  "Wrong DLL call convention."
+msgstr "தவறான DLL அழைப்பு வழக்கம்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Internal error $(ARG1)."
+msgstr "உள்ளார்ந்த பிழை $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid file name or file number."
+msgstr "தவறான கோப்பு பெயர் அல்லது கோப்பு எண்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "File not found."
+msgstr "கோப்பைக் காணவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect file mode."
+msgstr "தவறான கோப்பு முறைமை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+msgid  "File already open."
+msgstr "கோப்பு ஏற்கனவே திறந்துள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Device I/O error."
+msgstr "சாதன I/O பிழை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+msgid  "File already exists."
+msgstr "கோப்பு ஏற்கனவே உள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record length."
+msgstr "தவறான பதிவு நீளம்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+msgid  "Disk or hard drive full."
+msgstr "வட்டு அல்லது வன்வட்டு நிறைந்துள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+msgid  "Reading exceeds EOF."
+msgstr "வாசிப்பு EOF ஐத் தாண்டிவிட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record number."
+msgstr "தவறான பதிவு எண்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many files."
+msgstr "அளவுக்கதிமான கோப்புக்கள்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+msgid  "Device not available."
+msgstr "சாதனம் கிடைக்கவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+msgid  "Access denied."
+msgstr "அனுமதி மறுக்கப்பட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+msgid  "Disk not ready."
+msgstr "வட்டு தயாராக இல்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+msgid  "Not implemented."
+msgstr "செயல்படுத்தப்படவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+msgid  "Renaming on different drives impossible."
+msgstr "பல்வேறு இயக்கிகளில் மறுபெயரிட வாய்ப்பில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Path/File access error."
+msgstr "பாதை/கோப்பு அணுகல் பிழை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Path not found."
+msgstr "பாதை காணப்படவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object variable not set."
+msgstr "பொருள் மாறி அமைக்கப்படவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid string pattern."
+msgstr "தவறான சர வடிவம்."
+
+#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+msgid  "Use of zero not permitted."
+msgstr "சுழியப் பயன்பாட்டிற்கு அனுமதி இல்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "DDE Error."
+msgstr "DDE பிழை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+msgid  "Awaiting response to DDE connection."
+msgstr "DDE இணைப்பு பதிலுக்காக காத்திருக்கிறது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+msgid  "No DDE channels available."
+msgstr "DDE தடங்கள் எதுவுமில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+msgid  "No application responded to DDE connect initiation."
+msgstr "DDE இணைப்பு துவக்குதலுக்கு எந்த பயன்பாடும் பதிலளிக்கவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many applications responded to DDE connect initiation."
+msgstr "DDE இணைப்பு துவக்கத்திற்கு அளவுக்கதிகமான செயலிகள் பதிலளித்தன."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE channel locked."
+msgstr "DDE தடம் பூட்டப்பட்டுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+msgid  "External application cannot execute DDE operation."
+msgstr "வெளி பயன்பாட்டால் DDE நடவடிக்கையைச் செயலாக்க முடியாது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+msgid  "Timeout while waiting for DDE response."
+msgstr "DDE பதிலுக்காக காத்திருக்கையில் நேரமாகிவிட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr "DDE செயலின் போது பயனர் ESCAPE ஐ அழுத்தினார்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+msgid  "External application busy."
+msgstr "வெளி பயன்பாடு ஓய்வில்லாமலுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+msgid  "DDE operation without data."
+msgstr "தரவில்லா DDE செயலாக்கம்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Data are in wrong format."
+msgstr "தரவு தவறான வடிவமைப்பிலுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+msgid  "External application has been terminated."
+msgstr "வெளி பயன்பாடு நிறுத்தப்பட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE connection interrupted or modified."
+msgstr "DDE இணைப்பு தடுக்கப்பட்டது அல்லது மாற்றப்பட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "DDE method invoked with no channel open."
+msgstr "எந்த தடம் திறக்கப்படாமலேயே DDE வழி கோரப்பட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid DDE link format."
+msgstr "தவறான DDE இணைப்பு வடிவமைப்பு."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "DDE message has been lost."
+msgstr "DDE தகவல் தொலைந்துவிட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+msgid  "Paste link already performed."
+msgstr "இணைப்பு ஒட்டுதல் ஏற்கனவே செய்யப்பட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+msgid  "Link mode cannot be set due to invalid link topic."
+msgstr "தவறான இணைப்பு தலைப்பாதலால் இணைப்பு முறையை அமைக்க முடியவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "DDE requires the DDEML.DLL file."
+msgstr "DDE க்கு DDEML.DLL கோப்பு தேவைப்படுகிறது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Module cannot be loaded; invalid format."
+msgstr "தொகுதி ஏற்ற முடியவில்லை; தவறான வடிவமைப்பு."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object index."
+msgstr "தவறான பொருள் உள்ளடக்கம்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not available."
+msgstr "பொருள் கிடைக்கவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect property value."
+msgstr "தவறான பண்பு மதிப்பு."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is read-only."
+msgstr "இப்பண்பு படிப்பதற்கு மட்டுமே."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is write only."
+msgstr "இப்பண்பு எழுதுவதற்கு மட்டுமே."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object reference."
+msgstr "தவறான பொருள் மேற்கோள்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "Property or method not found: $(ARG1)."
+msgstr "பண்பு அல்லது முறை காணப்படவில்லை: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object required."
+msgstr "பொருள் தேவைப்படுகிறது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid use of an object."
+msgstr "ஒரு பொருளின் தவறான பயன்பாடு."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation is not supported by this object."
+msgstr "OLE தானியக்கதிற்கு இப்பொருளின் ஆதரவு இல்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "This property or method is not supported by the object."
+msgstr "இப்பண்பிற்கும் வழிமுறைக்கும் பொருளின் ஆதரவு இல்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation Error."
+msgstr "OLE தானியக்க பிழை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+msgid  "This action is not supported by given object."
+msgstr "இச்செயலைக் கொடுக்கப்பட்ட பொருள் ஆதரிக்கவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Named arguments are not supported by given object."
+msgstr "பெயரிடப்பட்ட வாதங்களைக் கொடுக்கப்பட்ட பொருள் ஆதரிக்கவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+msgid  "The current locale setting is not supported by the given object."
+msgstr "நடப்பு இட அமைவை கொடுக்கப்பட்ட பொருள் ஆதரிக்கவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Named argument not found."
+msgstr "பெயரிடப்பட்ட வாதத்தைக் காணவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+msgid  "Argument is not optional."
+msgstr "வாதத்திற்கு விருப்புரிமையில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "தவறான வாத எண்ணிக்கைகள்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not a list."
+msgstr "பொருள் ஒரு பட்டியலில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid ordinal number."
+msgstr "தவறான வரிசை எண்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Specified DLL function not found."
+msgstr "குறிப்பிட்ட DLL செயல்பாட்டைக் காணவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid clipboard format."
+msgstr "செல்லாத பிடிப்புப்பலகை வடிவமைப்பு."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this property."
+msgstr "பொருள் இப்பண்பைக் கொண்டிருக்கவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this method."
+msgstr "பொருள் இம்முறையைக் கொண்டிருக்கவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+msgid  "Required argument lacking."
+msgstr "தேவையான வாதத்தைக் காணவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "செல்லாத வாத எண்ணிக்கைகள்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Error executing a method."
+msgstr "ஒரு வழியைச் செயலாக்குவதில் பிழை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to set property."
+msgstr "பண்பை அமைக்க இயலவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to determine property."
+msgstr "பண்பை தீர்மானிக்க இயலவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr "எதிர்பார்க்கப்படாத குறியீடு: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Expected: $(ARG1)."
+msgstr "எதிர்பார்க்கப்பட்டது: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol expected."
+msgstr "குறியீடு எதிர்பார்க்கப்படுகிறது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable expected."
+msgstr "மாறி எதிர்பார்க்கப்படுகிறது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Label expected."
+msgstr "விளக்கச்சீட்டு எதிர்பார்க்கப்படுகிறது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Value cannot be applied."
+msgstr "மதிப்பைப் பயன்படுத்த முடியவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) already defined."
+msgstr "$(ARG1) மாறி ஏற்கனவே வரையறுக்கப்பட்டுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "$(ARG1) துணை வழிமுறையோ அல்லது செயல்பாட்டு வழிமுறையோ ஏற்கனவே வரையறுக்கப்பட்டுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) already defined."
+msgstr "$(ARG1) விளக்கச்சீட்டு ஏற்கனவே வரையறுக்கப்பட்டுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) not found."
+msgstr "$(ARG1) மாறியைக் காணவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+msgid  "Array or procedure $(ARG1) not found."
+msgstr "$(ARG1) வரிசையோ அல்லது வழிமுறையோ காணவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+msgid  "Procedure $(ARG1) not found."
+msgstr "$(ARG1) செயல்முறையைக் காணவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) undefined."
+msgstr "$(ARG1) விளக்கச்சீட்டு வரையறுக்கப்படவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown data type $(ARG1)."
+msgstr "தெரியாத தரவு வகை $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+msgid  "Exit $(ARG1) expected."
+msgstr "$(ARG1) வெளியேற்றம் எதிர்பார்க்கப்படுகிறது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr "கூற்றுப்பலகை இன்னும் திறந்துள்ளது: $(ARG1) விடுப்பட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+msgid  "Parentheses do not match."
+msgstr "அடைப்புக்குறிகள் பொருந்தவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr "$(ARG1) குறியீடு வேறுவிதமாக வரையறுக்கப்பட்டுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+msgid  "Parameters do not correspond to procedure."
+msgstr "அளவுருக்கள் செயல்முறையுடன் ஒத்துபோகவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid character in number."
+msgstr "எண்ணில் தவறான எழுத்து."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Array must be dimensioned."
+msgstr "வரிசை பரிமானங்களைக் கொண்டிருக்க வேண்டும்."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+msgid  "Else/Endif without If."
+msgstr "Else/Endif ல் If இல்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr "ஒரு செயல்முறைக்குள் $(ARG1) க்கு அனுமதியில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr "ஒரு செயல்முறைக்கு வெளியே $(ARG1) க்கு அனுமதியில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Dimension specifications do not match."
+msgstr "பரிமானத்தின் விவரக்கூற்றுகள் பொருந்தவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown option: $(ARG1)."
+msgstr "தெரியாத விருப்பத்தேர்வு: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+msgid  "Constant $(ARG1) redefined."
+msgstr "$(ARG1) மாறிலி மறுவரையறுக்கப்பட்டது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+msgid  "Program too large."
+msgstr "நிரல் மிகப் பெரிதாகவுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+msgid  "Strings or arrays not permitted."
+msgstr "சரங்கள் அல்லது வரிசைகளுக்கு அனுமதியில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+msgid  "An exception occurred $(ARG1)."
+msgstr "ஒரு விதிவிளக்கு ஏற்பட்டது $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+msgid  "This array is fixed or temporarily locked."
+msgstr "இந்த வரிசை நிலையானது அல்லது தற்காலிகமாக பூட்டப்பட்டுள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Out of string space."
+msgstr "சரத்தின் இடத்திற்கு வெளியே."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+msgid  "Expression Too Complex."
+msgstr "சமன்பாடு மிக சிக்கலாக உள்ளது."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+msgid  "Can't perform requested operation."
+msgstr "கோரப்பட்ட செயலைச் செய்ய முடியவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+msgid  "Too many DLL application clients."
+msgstr "அளவுக்கதிகமான DLL துணை செயலிகள்."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+msgid  "For loop not initialized."
+msgstr "லூப் துவக்கப்படவில்லை."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1)"
+msgstr ""
+
+#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+msgid  "The macro running has been interrupted"
+msgstr "மேக்ரோ இயக்கம் தடைபட்டுள்ளது"
+
+#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+msgid  "Reference will not be saved: "
+msgstr "மேற்கோள் சேமிக்கப்படாது: "
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading library '$(ARG1)'."
+msgstr "நூலகத்தை ஏற்றுவதில் பிழை '$(ARG1)'."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving library: '$(ARG1)'."
+msgstr "நூலகத்தைச் சேமிப்பதில் பிழை '$(ARG1)'."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "'$(ARG1)' கோப்பிலுள்ள BASIC ஐ துவக்க முடியவில்லை."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr "BASIC ஐச் சேமிப்பதில் பிழை: '$(ARG1)'."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+msgid  "Error removing library."
+msgstr "நூலகத்தை நீக்குவதில் பிழை."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+msgid  "The library could not be removed from memory."
+msgstr "நூலகத்தை நினைவகத்திலிருந்து நீக்க முடியவில்லை."
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+msgid  "On"
+msgstr ""
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+msgid  "Off"
+msgstr ""
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+msgid  "True"
+msgstr ""
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+msgid  "False"
+msgstr ""
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+msgid  "Yes"
+msgstr ""
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+msgid  "No"
+msgstr ""
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+msgid  "@0.00 $;@(0.00 $)"
+msgstr ""

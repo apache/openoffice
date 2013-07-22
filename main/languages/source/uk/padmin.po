@@ -1,0 +1,844 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgstr "Виберіть теку з якої необхідно імпортувати шрифти. Додайте виділені шрифти, натиснувши кнопку \"Гаразд\"."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+msgid  "Source directory"
+msgstr "Первинний каталог"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+msgid  "Sea~rch Subdirectories"
+msgstr "~Шукати у підкаталогах"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+msgid  "Target options"
+msgstr "Параметри отримувача"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+msgid  "Create ~soft links only"
+msgstr "Створити лише ~посилання"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "Виді~лити все"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+msgid  "Add fonts"
+msgstr "Додати шрифти"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr "Ви дійсно хочете перезаписати файл шрифтів?\n %s"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+msgid  "All"
+msgstr "Все"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+msgid  "None"
+msgstr "Немає"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr "Для шрифтового файлу \n%s\n не знайдено файл формату (з розширенням .afm). Тому шрифт неможливо встановити. Файли формату можуть бути створені, наприклад, за допомогою ghostscript, та мають знаходитись у тому самому каталозі, що й файли шрифтів, або у його підкаталозі для afm-файлів."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "Не вдається скопіювати файл метрик шрифту\n   %s.\n Шрифт не буде встановлений."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "Не вдається скопіювати файл шрифту\n   %s.\n Шрифт не буде встановлений."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr "Не вдається встановити шрифти. Каталог, що містить файл записуваних шрифтів fonts.dir не знайдений за вказаним шляхом."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+msgid  "%d new fonts were added."
+msgstr "Додано %d нових шрифтів."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+msgid  "Add Fonts"
+msgstr "Додати шрифти"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+msgid  "CUPS support"
+msgstr "Підтримка CUPS"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+msgid  "Disable CUPS Support"
+msgstr "Вимкнути підтримку CUPS"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+msgid  "Close"
+msgstr "Закрити"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
+msgid  "Installed ~printers"
+msgstr "Встановлені ~принтери"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
+msgid  "Command:"
+msgstr "Команда:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
+msgid  "Driver:"
+msgstr "Драйвер:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
+msgid  "Location:"
+msgstr "Шлях:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
+msgid  "Comment:"
+msgstr "Коментар:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
+msgid  "Properties..."
+msgstr "Властивості..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
+msgid  "R~ename..."
+msgstr "Пере~йменувати..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
+msgid  "~Default"
+msgstr "~Типовий"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
+msgid  "Remo~ve..."
+msgstr "В~идалити..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
+msgid  "Test ~Page"
+msgstr "Т~естова сторінка"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
+msgid  "Fon~ts..."
+msgstr "~Шрифти..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
+msgid  "New Printer..."
+msgstr "Новий принтер..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
+msgid  "Default printer"
+msgstr "Типовий принтер"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
+msgid  "Rename"
+msgstr "Перейменувати"
+
+#: source/padialog.src#RID_PADIALOG.String.Text
+msgid  "Printer Administration"
+msgstr "Керування принтером"
+
+#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
+msgid  "Could not open printer %s."
+msgstr "Не вдається з'єднатись з принтером %s."
+
+#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr "Пробну сторінку надруковано. Будь-ласка, перевірте результат."
+
+#: source/padialog.src#RID_ERR_NOWRITE.String.Text
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
+msgstr ""
+
+#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+msgid  "~New printer name"
+msgstr "~Нова назва принтера"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+msgid  "Model"
+msgstr "Модель"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+msgid  "Name"
+msgstr "Назва"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+msgid  "Comment"
+msgstr "Коментар"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+msgid  "Queue"
+msgstr "Черга"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+msgid  "Date"
+msgstr "Дата"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+msgid  "Time"
+msgstr "Час"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "Закрити"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+msgid  "Re~name..."
+msgstr "Пере~йменувати..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+msgid  "~Remove..."
+msgstr "В~идалити..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+msgid  "~Add..."
+msgstr "~Додати..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+msgid  "Note: The fonts are only available to the applications."
+msgstr "Примітка: шрифти доступні тільки для цієї програми."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+msgid  "~New name for %s"
+msgstr "~Нова назва для %s"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr "~Нова назва для %s (%d1 з %d2)"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr "Не вдається перейменувати шрифт %s через відсутність прав на запис."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+msgid  "Fonts"
+msgstr "Шрифти"
+
+#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+msgid  "Test page"
+msgstr "Тестова сторінка"
+
+#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+msgid  "Wrong environment"
+msgstr "Неправильна конфігурація"
+
+#: source/padialog.src#RID_YOU_SURE.String.Text
+msgid  "Are you sure ?"
+msgstr "Ви впевнені?"
+
+#: source/padialog.src#RID_AFMERROR_OK.String.Text
+msgid  "No error"
+msgstr "Без помилок"
+
+#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr "Метрика не містить запис 'FontName'."
+
+#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr "Метрика не містить запис 'FullName'."
+
+#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr "Метрика не містить запис 'FamilyName'."
+
+#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+msgid  "The converted metric could not be written."
+msgstr "Не вдається записати перетворену метрику."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+msgid  "The metric could not be read."
+msgstr "Не вдається прочитати метрику."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+msgid  "A temporary file could not be created."
+msgstr "Не вдається створити тимчасовий файл."
+
+#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+msgid  "The file does not contain a metric."
+msgstr "Файл не містить метрик."
+
+#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr "Метрика\n\n%s\n\nне може бути перетворена по наступним причинам:\n\n"
+
+#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+msgid  "Progress"
+msgstr "Виконання"
+
+#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+msgid  "Please wait"
+msgstr "Будь-ласка, зачекайте"
+
+#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+msgid  "Font metrics conversion"
+msgstr "Перетворення метрик шрифтів"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+msgid  "Dri~ver directory"
+msgstr "Каталог д~райверів"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+msgid  "Please select the driver directory."
+msgstr "Виберіть каталог драйверів."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+msgid  "Browse..."
+msgstr "~Огляд..."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+msgid  "~Selection of drivers"
+msgstr "~Вибір драйверів"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Виберіть необхідний драйвер та натисніть \"%s\"."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+msgid  "Searching for drivers"
+msgstr "Пошук драйверів"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+msgid  "Driver Installation"
+msgstr "Встановлення драйвера"
+
+#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Ви дійсно хочете видалити драйвер \"%s\"?"
+
+#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+msgid  "Do you really want to remove this printer ?"
+msgstr "Ви дійсно хочете видалити цей принтер ?"
+
+#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr "Ви дійсно хочете видалити виділені шрифти ?"
+
+#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Деякі принтери досі використовують драйвер \"%s\". Ви дійсно хочете його видалити? При видалені драйвера будуть видалені відповідні принтери."
+
+#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "Драйвер \"%s\" потрібний завжди і тому не може бути видалений."
+
+#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr "Драйвер \"%s1\" не може бути видалений. Неможливо видалити файл\n\n%s2."
+
+#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Драйвер \"%s\" використовується типовим принтером. Тому його не можна видалити."
+
+#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+msgid  "The printer %s cannot be removed."
+msgstr "Не вдається видалити принтер %s."
+
+#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Принтер з назвою \"%s\" вже існує. Тому цей принтер не буде імпортований."
+
+#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "Неповна конфігурація принтера \"%s\". Не вдається імпортувати принтер."
+
+#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "Драйвер принтера \"%s1\" (%s2) не встановлений. Тому принтер неможливо імпортувати."
+
+#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+msgid  "The printer \"%s\" could not be added."
+msgstr "Принтер \"%s\" неможливо додати."
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+msgid  "~Finish"
+msgstr "Зав~ершити"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+msgid  "~Next >>"
+msgstr "Да~лі >>"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+msgid  "<< ~Back"
+msgstr "<< Н~азад"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+msgid  "Add Printer"
+msgstr "Додати принтер"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Вибрати драйвера"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+msgid  "Please select a s~uitable driver."
+msgstr "Виберіть ~відповідний драйвер."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+msgid  "~Import..."
+msgstr "~Імпорт..."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "В~идалити"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+msgid  "Delete driver"
+msgstr "Видалити драйвер"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a device type"
+msgstr "Вибрати типу пристрою"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+msgid  "Do you want to"
+msgstr "Чи хочете ви"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+msgid  "Add a ~printer"
+msgstr "Додати п~ринтер"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+msgid  "Connect a fa~x device"
+msgstr "Підключити ~факс"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+msgid  "Connect a P~DF converter"
+msgstr "Підключити конвертор P~DF"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+msgid  "~Import printers from a StarOffice installation"
+msgstr "~Імпорт принтера зі встановлення StarOffice"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a name"
+msgstr "Виберіть назву"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+msgid  "Please enter a name for the printer."
+msgstr "Введіть назву принтера."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+msgid  "Please enter a name for the fax connection."
+msgstr "Введіть назву факсу, який підключається."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+msgid  "Please enter a name for the PDF connection."
+msgstr "Введіть назву підключення PDF."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+msgid  "Fax printer"
+msgstr "Факс-принтер"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+msgid  "PDF converter"
+msgstr "Конвертер PDF"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+msgid  "~Use as default printer"
+msgstr "~Використовувати як типовий принтер"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+msgid  "Remo~ve fax number from output"
+msgstr "В~идалити номер факсу з виводу"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a command line"
+msgstr "Вибрати командний рядок"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr "Введіть ~команду, що відповідає цьому пристрою."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF ~target directory"
+msgstr "Каталог п~ризначення PDF"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "~Довідка"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Командний рядок для конвертерів PDF обробляється наступним чином: у кожному друкованому документі \"(TMP)\" у командному рядку замінюється тимчасовим файлом, а \"(OUTFILE)\" - файлом PDF, який потрібно створити. Якщо у командному рядку знаходиться \"(TMP)\", то код PostScript передається у файлі, інакше він передається стандартним чином (тобто як pipe)."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Командний рядок при підключення факсів обробляється наступним чином: під час передачі кожного факсу \"(TMP)\" замінюється тимчасовим файлом у командному рядку, а \"(PHONE)\" - номером факсу. Якщо у командному рядку вже є \"(TMP)\", то код PostScript передається у файлі, у іншому випадку він передається стандартним чином (тобто як pipe)."
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+msgid  "Import printers from old versions"
+msgstr "Імпорт принтерів з попередніх версій"
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+msgid  "~These printers can be imported. Please select the ones you want to import."
+msgstr "~Ці принтери можна імпортувати. Виберіть з них ті, які потрібно імпортувати."
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "Виді~лити все"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Вибрати драйвера"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this fax connection"
+msgstr "Для цього факсимільного підключення потрібно використовувати наступний драйвер"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "~Типовий драйвер"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+msgid  "A speci~fic driver, to adapt the format to another printer"
+msgstr "Спе~ціальний драйвер для узгодження формату з іншим принтером"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Вибрати драйвера"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this PDF converter"
+msgstr "Для цього конвертера PDF потрібно використовувати наступний драйвер"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "~Типовий драйвер"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+msgid  "The Adobe D~istiller(tm) driver"
+msgstr "~Драйвер Adobe Distiller(tm)"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+msgid  "A spec~ific driver, to adapt the format to another printer"
+msgstr "Спе~ціальний драйвер для узгодження формату з іншим принтером"
+
+#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Курсив"
+
+#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+msgid  "Oblique"
+msgstr "Похилий"
+
+#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+msgid  "Thin"
+msgstr "Тонкий"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+msgid  "Ultralight"
+msgstr "Ультрасвітлий"
+
+#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+msgid  "Semilight"
+msgstr "Надсвітлий"
+
+#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+msgid  "Light"
+msgstr "Світлий"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+msgid  "Semibold"
+msgstr "Напівжирний"
+
+#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+msgid  "Bold"
+msgstr "Жирний"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+msgid  "Ultrabold"
+msgstr "Наджирний"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+msgid  "Ultracondensed"
+msgstr "Надвузький"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+msgid  "Extracondensed"
+msgstr "Екстравузький"
+
+#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+msgid  "Condensed"
+msgstr "Вузький"
+
+#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+msgid  "Semicondensed"
+msgstr "Напіввузький"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+msgid  "Semiexpanded"
+msgstr "Напівширокий"
+
+#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+msgid  "Expanded"
+msgstr "Широкий"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+msgid  "Extraexpanded"
+msgstr "Екстраширокий"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+msgid  "Ultraexpanded"
+msgstr "Надширокий"
+
+#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+msgid  "Regular"
+msgstr "Звичайний"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+msgid  "Command"
+msgstr "Команда"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+msgid  "Paper"
+msgstr "Папір"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+msgid  "Device"
+msgstr "Пристрій"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+msgid  "Font Replacement"
+msgstr "Заміна шрифту"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+msgid  "Other Settings"
+msgstr "Інші параметри"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+msgid  "from driver"
+msgstr "з драйвера"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+msgid  "<ignore>"
+msgstr "<пропустити>"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+msgid  "Properties of %s"
+msgstr "Властивості %s"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+msgid  "~Paper size"
+msgstr "~Розмір паперу"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+msgid  "~Orientation"
+msgstr "~Орієнтація"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+msgid  "~Duplex"
+msgstr "~Дуплекс"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+msgid  "Paper tray"
+msgstr "~Лоток для паперу"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+msgid  "Color"
+msgstr "Кольоровий"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+msgid  "Grayscale"
+msgstr "Монохромний"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+msgid  "~Option"
+msgstr "~Параметр"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+msgid  "Current ~value"
+msgstr "Поточне ~значення"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+msgid  "Printer ~Language type"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+msgid  "PostScript (Level from driver)"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+msgid  "PostScript Level 1"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+msgid  "PostScript Level 2"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+msgid  "PostScript Level 3"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+msgid  "PDF"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+msgid  "~Color"
+msgstr "~Колір"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+msgid  "Color ~depth"
+msgstr "~Глибина кольору"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+msgid  "~Enable font replacement"
+msgstr "~Увімкнути заміну шрифтів"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+msgid  "Replaced ~fonts"
+msgstr "Замінені ~шрифти"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+msgid  "~Add"
+msgstr "~Додати"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+msgid  "~Remove"
+msgstr "В~идалити"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+msgid  "Repla~ce font"
+msgstr "За~мінити шрифт"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+msgid  "by ~printer font"
+msgstr "шрифтом ~принтера"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr "~Системний діалог друку, вимкнути діалог друку %PRODUCTNAME"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+msgid  "Command for quick printing without dialog (optional)"
+msgstr "Команда для швидкого друку без діалогу (необов'язково)"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+msgid  "Select command"
+msgstr "Вибрати команду"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+msgid  "Printer"
+msgstr "Принтер"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+msgid  "Fax"
+msgstr "Факс"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+msgid  "PDF converter"
+msgstr "Конвертер PDF"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+msgid  "~Configure as"
+msgstr "~Налаштувати"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+msgid  "~Fax number will be removed from output"
+msgstr "Не вказувати номер ~факсу"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF target directory :"
+msgstr "Каталог призначення PDF :"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+msgid  "Command: "
+msgstr "Команда: "
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+msgid  "Printer"
+msgstr "Принтер"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "~Довідка"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "В~идалити"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Командний рядок для конвертерів PDF обробляється наступним чином: у кожному друкованому документі \"(TMP)\" у командному рядку замінюється тимчасовим файлом, а \"(OUTFILE)\" - файлом PDF, який потрібно створити. Якщо у командному рядку знаходиться \"(TMP)\", то код PostScript передається у файлі, інакше він передається стандартним чином (тобто як pipe)."
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr "Командний рядок для принтерів обробляється наступним чином: створений код PostScript передається у командний рядок стандартним чином (тобто як pipe)."
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Командний рядок для факсів обробляється наступним чином: під час передачі кожного факсу \"(TMP)\" у командному рядку замінюється тимчасовим файлом, а \"(PHONE)\" - номером факсу. Якщо \"(TMP)\" вже існує у командному рядку, то код PostScript передається у файлі, у іншому разі він передається стандартним чином (тобто як pipe)."
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+msgid  "~Left margin"
+msgstr "Відступ ~ліворуч"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+msgid  "~Top margin"
+msgstr "Відступ з~гори"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+msgid  "~Right margin"
+msgstr "Відступ ~праворуч"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+msgid  "~Bottom margin"
+msgstr "Відступ з~низу"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+msgid  "~Comment"
+msgstr "~Коментар"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+msgid  "~Default"
+msgstr "~Типовий"
+
+#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+msgid  "Please enter the fax number."
+msgstr "Введіть номер факсу."
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+msgid  "Authentication request"
+msgstr "Вимагається аутентифікація"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+msgid  "Please enter your authentication data for server %s"
+msgstr "Введіть ваші ідентифікаційні дані на сервері %s "
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+msgid  "~User"
+msgstr "~Користувач"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+msgid  "~Password"
+msgstr "~Пароль"

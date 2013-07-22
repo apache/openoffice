@@ -1,0 +1,3712 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/euro/euro.src#STEP_ZERO.String.Text
+msgid  "~Cancel"
+msgstr "Pre~kliči"
+
+#: source/euro/euro.src#STEP_ZERO + 1.String.Text
+msgid  "~Help"
+msgstr "~Pomoč"
+
+#: source/euro/euro.src#STEP_ZERO + 2.String.Text
+msgid  "<<~Back"
+msgstr "<<N~azaj"
+
+#: source/euro/euro.src#STEP_ZERO + 3.String.Text
+msgid  "~Convert"
+msgstr "Pre~tvori"
+
+#: source/euro/euro.src#STEP_ZERO + 4.String.Text
+msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr "Opomba: Valutnih zneskov iz zunanjih povezav ter faktorjev za pretvorbo valut v formulah ni mogoče pretvoriti."
+
+#: source/euro/euro.src#STEP_ZERO + 5.String.Text
+msgid  "First, unprotect all sheets."
+msgstr "Najprej odstrani zaščito z vseh delovnih listov."
+
+#: source/euro/euro.src#STEP_ZERO + 6.String.Text
+msgid  "Currencies:"
+msgstr "Valute:"
+
+#: source/euro/euro.src#STEP_ZERO + 7.String.Text
+msgid  "C~ontinue>>"
+msgstr "~Nadaljuj>>"
+
+#: source/euro/euro.src#STEP_ZERO + 8.String.Text
+msgid  "C~lose"
+msgstr "Z~apri"
+
+#: source/euro/euro.src#STEP_CONVERTER.String.Text
+msgid  "~Entire document"
+msgstr "C~eloten dokument"
+
+#: source/euro/euro.src#STEP_CONVERTER + 1.String.Text
+msgid  "Selection"
+msgstr "Izbor"
+
+#: source/euro/euro.src#STEP_CONVERTER + 2.String.Text
+msgid  "Cell S~tyles"
+msgstr "S~logi celic"
+
+#: source/euro/euro.src#STEP_CONVERTER + 3.String.Text
+msgid  "Currency cells in the current ~sheet"
+msgstr "Celice z valutami na trenutnem delovnem li~stu"
+
+#: source/euro/euro.src#STEP_CONVERTER + 4.String.Text
+msgid  "Currency cells in the entire ~document"
+msgstr "Celice z valutami v celotnem ~dokumentu"
+
+#: source/euro/euro.src#STEP_CONVERTER + 5.String.Text
+msgid  "~Selected range"
+msgstr "I~zbrani obseg"
+
+#: source/euro/euro.src#STEP_CONVERTER + 6.String.Text
+msgid  "Select Cell Styles"
+msgstr "Izberi sloge celic"
+
+#: source/euro/euro.src#STEP_CONVERTER + 7.String.Text
+msgid  "Select currency cells"
+msgstr "Izberi celice z valutami"
+
+#: source/euro/euro.src#STEP_CONVERTER + 8.String.Text
+msgid  "Currency ranges:"
+msgstr "Obseg valut:"
+
+#: source/euro/euro.src#STEP_CONVERTER + 9.String.Text
+msgid  "Templates:"
+msgstr "Predloge:"
+
+#: source/euro/euro.src#STEP_AUTOPILOT.String.Text
+msgid  "Extent"
+msgstr "Obseg"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 1.String.Text
+msgid  "~Single %PRODUCTNAME Calc document"
+msgstr "~En sam dokument programa %PRODUCTNAME Calc"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 2.String.Text
+msgid  "Complete ~directory"
+msgstr "Celotna ~mapa"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 3.String.Text
+msgid  "Source Document:"
+msgstr "Izvorni dokument:"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 4.String.Text
+msgid  "Source directory:"
+msgstr "Izvorna mapa:"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 5.String.Text
+msgid  "~Including subfolders"
+msgstr "~Vključno s podmapami"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 6.String.Text
+msgid  "Target directory:"
+msgstr "Ciljna mapa:"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 7.String.Text
+msgid  "Temporarily unprotect sheet without query"
+msgstr "Začasno odstrani zaščito z delovnega lista brez poizvedbe"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 10.String.Text
+msgid  "Also convert fields and tables in text documents"
+msgstr "Pretvori tudi polja in tabele v dokumentih z besedilom"
+
+#: source/euro/euro.src#STATUSLINE.String.Text
+msgid  "Conversion status: "
+msgstr "Stanje pretvorbe: "
+
+#: source/euro/euro.src#STATUSLINE + 1.String.Text
+msgid  "Conversion status of the cell templates:"
+msgstr "Stanje pretvorbe predlog celic:"
+
+#: source/euro/euro.src#STATUSLINE + 2.String.Text
+msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr "Registracija pomembnih obsegov: delovni list %1Number%1 od %2TotPageCount%2"
+
+#: source/euro/euro.src#STATUSLINE + 3.String.Text
+msgid  "Entry of the ranges to be converted..."
+msgstr "Vnos obsegov za pretvorbo ..."
+
+#: source/euro/euro.src#STATUSLINE + 4.String.Text
+msgid  "Sheet protection for each sheet will be restored..."
+msgstr "Zaščita posameznih delovnih listov bo obnovljena ..."
+
+#: source/euro/euro.src#STATUSLINE + 5.String.Text
+msgid  "Conversion of the currency units in the cell templates..."
+msgstr "Pretvorba denarnih enot v predlogah celic ..."
+
+#: source/euro/euro.src#MESSAGES.String.Text
+msgid  "~Finish"
+msgstr "~Dokončaj"
+
+#: source/euro/euro.src#MESSAGES + 1.String.Text
+msgid  "Select directory"
+msgstr "Izberi mapo"
+
+#: source/euro/euro.src#MESSAGES + 2.String.Text
+msgid  "Select file"
+msgstr "Izberi datoteko"
+
+#: source/euro/euro.src#MESSAGES + 3.String.Text
+msgid  "Select target directory"
+msgstr "Izberi ciljno mapo"
+
+#: source/euro/euro.src#MESSAGES + 4.String.Text
+msgid  "non-existant"
+msgstr "neobstoječe"
+
+#: source/euro/euro.src#MESSAGES + 5.String.Text
+msgid  "Euro Converter"
+msgstr "Pretvornik za Evro"
+
+#: source/euro/euro.src#MESSAGES + 6.String.Text
+msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgstr "Ali želite zaščitenim preglednicam začasno odstraniti zaščito?"
+
+#: source/euro/euro.src#MESSAGES + 7.String.Text
+msgid  "Enter the password to unprotect the table %1TableName%1"
+msgstr "Vnesite geslo za odstranitev zaščite tabele %1TableName%1"
+
+#: source/euro/euro.src#MESSAGES + 8.String.Text
+msgid  "Wrong Password!"
+msgstr "Napačno geslo!"
+
+#: source/euro/euro.src#MESSAGES + 9.String.Text
+msgid  "Protected Sheet"
+msgstr "Zaščiten delovni list"
+
+#: source/euro/euro.src#MESSAGES + 10.String.Text
+msgid  "Warning!"
+msgstr "Opozorilo!"
+
+#: source/euro/euro.src#MESSAGES + 11.String.Text
+msgid  "Protection for the sheets will not be removed."
+msgstr "Zaščita delovnih listov ne bo odstranjena."
+
+#: source/euro/euro.src#MESSAGES + 12.String.Text
+msgid  "Sheet cannot be unprotected"
+msgstr "Zaščite delovnih listov ni mogoče odstraniti"
+
+#: source/euro/euro.src#MESSAGES + 13.String.Text
+msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr "Čarovnik tega dokumenta ne more urejati, saj v dokumentih, ki vsebujejo zaščitene preglednice, oblike celic ni mogoče spreminjati."
+
+#: source/euro/euro.src#MESSAGES + 14.String.Text
+msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr "V nasprotnem primeru pretvornik za Evro ne bo mogel urediti dokumenta!"
+
+#: source/euro/euro.src#MESSAGES + 15.String.Text
+msgid  "Please choose a currency to be converted first!"
+msgstr "Najprej izberite valuto, ki bo pretvorjena!"
+
+#: source/euro/euro.src#MESSAGES + 16.String.Text
+msgid  "Password:"
+msgstr "Geslo:"
+
+#: source/euro/euro.src#MESSAGES + 17.String.Text
+msgid  "OK"
+msgstr "V redu"
+
+#: source/euro/euro.src#MESSAGES + 18.String.Text
+msgid  "Cancel"
+msgstr "Prekliči"
+
+#: source/euro/euro.src#MESSAGES + 19.String.Text
+msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "Izberite dokument programa %PRODUCTNAME Calc za urejanje!"
+
+#: source/euro/euro.src#MESSAGES + 20.String.Text
+msgid  "'<1>' is not a directory!"
+msgstr "'<1>' ni mapa!"
+
+#: source/euro/euro.src#MESSAGES + 21.String.Text
+msgid  "Document is read-only!"
+msgstr "Dokument je samo za branje!"
+
+#: source/euro/euro.src#MESSAGES + 22.String.Text
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Datoteka '<1>' že obstaja.<CR>Ali jo želite prepisati?"
+
+#: source/euro/euro.src#MESSAGES + 23.String.Text
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Ali ste prepričani, da želite sedaj prekiniti pretvorbo?"
+
+#: source/euro/euro.src#MESSAGES + 24.String.Text
+msgid  "Cancel Wizard"
+msgstr "Prekliči čarovnika"
+
+#: source/euro/euro.src#CURRENCIES.String.Text
+msgid  "Portuguese Escudo"
+msgstr "portugalski eskudo"
+
+#: source/euro/euro.src#CURRENCIES + 1.String.Text
+msgid  "Dutch Guilder"
+msgstr "nizozemski gulden"
+
+#: source/euro/euro.src#CURRENCIES + 2.String.Text
+msgid  "French Franc"
+msgstr "francoski frank"
+
+#: source/euro/euro.src#CURRENCIES + 3.String.Text
+msgid  "Spanish Peseta"
+msgstr "španska pezeta"
+
+#: source/euro/euro.src#CURRENCIES + 4.String.Text
+msgid  "Italian Lira"
+msgstr "italijanska lira"
+
+#: source/euro/euro.src#CURRENCIES + 5.String.Text
+msgid  "German Mark"
+msgstr "nemška marka"
+
+#: source/euro/euro.src#CURRENCIES + 6.String.Text
+msgid  "Belgian Franc"
+msgstr "belgijski frank"
+
+#: source/euro/euro.src#CURRENCIES + 7.String.Text
+msgid  "Irish Punt"
+msgstr "irski funt"
+
+#: source/euro/euro.src#CURRENCIES + 8.String.Text
+msgid  "Luxembourg Franc"
+msgstr "luksemburški frank"
+
+#: source/euro/euro.src#CURRENCIES + 9.String.Text
+msgid  "Austrian Schilling"
+msgstr "avstrijski šiling"
+
+#: source/euro/euro.src#CURRENCIES + 10.String.Text
+msgid  "Finnish Mark"
+msgstr "finska marka"
+
+#: source/euro/euro.src#CURRENCIES + 11.String.Text
+msgid  "Greek Drachma"
+msgstr "grška drahma"
+
+#: source/euro/euro.src#CURRENCIES + 12.String.Text
+msgid  "Slovenian Tolar"
+msgstr "slovenski tolar"
+
+#: source/euro/euro.src#CURRENCIES + 13.String.Text
+msgid  "Cypriot Pound"
+msgstr "ciprski funt"
+
+#: source/euro/euro.src#CURRENCIES + 14.String.Text
+msgid  "Maltese Lira"
+msgstr "malteška lira"
+
+#: source/euro/euro.src#CURRENCIES + 15.String.Text
+msgid  "Slovak Koruna"
+msgstr "slovaška krona"
+
+#: source/euro/euro.src#CURRENCIES + 16.String.Text
+msgid  "The currency set for the document is not a European currency!"
+msgstr "Nastavljena valuta za dokument ni evropska valuta!"
+
+#: source/euro/euro.src#CURRENCIES + 17.String.Text
+msgid  "The language set for your operating system is not a language of the European Monetary Union."
+msgstr "Nastavljeni jezik za operacijski sistem ne spada med jezike Evropske denarne unije."
+
+#: source/euro/euro.src#STEP_LASTPAGE.String.Text
+msgid  "Progress"
+msgstr "Napredek"
+
+#: source/euro/euro.src#STEP_LASTPAGE + 1.String.Text
+msgid  "Retrieving the relevant documents..."
+msgstr "Iskanje pomembnih dokumentov ..."
+
+#: source/euro/euro.src#STEP_LASTPAGE + 2.String.Text
+msgid  "Converting the documents..."
+msgstr "Pretvarjanje dokumentov ..."
+
+#: source/euro/euro.src#STEP_LASTPAGE + 3.String.Text
+msgid  "Settings:"
+msgstr "Nastavitve:"
+
+#: source/euro/euro.src#STEP_LASTPAGE + 4.String.Text
+msgid  "Sheet is always unprotected"
+msgstr "Delovni list je vedno nezaščiten"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
+msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr "Mape '%1' ni mogoče ustvariti.<BR>Morda na disku primanjkuje prostega prostora."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
+msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr "Dokumenta z besedilom ni mogoče ustvariti.<BR>Preverite, ali je modul 'PRODUCTNAME Writer' nameščen."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
+msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr "Preglednice ni mogoče ustvariti.<BR>Preverite, ali je modul 'PRODUCTNAME Calc' nameščen."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
+msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr "Predstavitve ni mogoče ustvariti.<BR>Preverite, ali je modul 'PRODUCTNAME Impress' nameščen."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
+msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr "Risbe ni mogoče ustvariti.<BR>Preverite, ali je modul 'PRODUCTNAME Draw' nameščen."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
+msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr "Formule ni mogoče ustvariti.<BR>Preverite, ali je modul 'PRODUCTNAME Math' nameščen."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
+msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr "Zahtevanih datotek ni mogoče najti.<BR>Zaženite namestitveni program Setup za %PRODUCTNAME in izberite 'Popravi'."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
+msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgstr "Datoteka '<PATH>' že obstaja.<BR><BR>Ali želite prepisati obstoječo datoteko?"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
+msgid  "Yes"
+msgstr "Da"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 9.String.Text
+msgid  "Yes to All"
+msgstr "Da za vse"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 10.String.Text
+msgid  "No"
+msgstr "Ne"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 11.String.Text
+msgid  "Cancel"
+msgstr "Prekliči"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 12.String.Text
+msgid  "~Finish"
+msgstr "~Dokončaj"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 13.String.Text
+msgid  "< ~Back"
+msgstr "< N~azaj"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 14.String.Text
+msgid  "~Next >"
+msgstr "~Naprej >"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 15.String.Text
+msgid  "~Help"
+msgstr "~Pomoč"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 16.String.Text
+msgid  "Steps"
+msgstr "Koraki"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 17.String.Text
+msgid  "Close"
+msgstr "Zapri"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 18.String.Text
+msgid  "OK"
+msgstr "V redu"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 19.String.Text
+msgid  "The file already exists. Do you want to overwrite it?"
+msgstr "Datoteka že obstaja. Jo želite prepisati?"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 20.String.Text
+msgid  "Template created via <wizard_name> on <current_date>."
+msgstr "Predloga ustvarjena s čarovnikom <wizard_name> dne <current_date>."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr "Čarovnika ni mogoče zagnati, ker pomembnih datotek ni mogoče najti.\nKliknite 'Privzeto' v 'Orodja - Možnosti - %PRODUCTNAME - Poti', da ponastavite nastavitve.\nPotem znova zaženite čarovnika."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
+msgid  "C~reate"
+msgstr "Ustva~ri"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 1.String.Text
+msgid  "~Cancel"
+msgstr "Pre~kliči"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 2.String.Text
+msgid  "<< ~Back"
+msgstr "<< N~azaj"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 3.String.Text
+msgid  "~Next >>"
+msgstr "~Naprej >>"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 4.String.Text
+msgid  "~Database"
+msgstr "Zbirka pod~atkov"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 5.String.Text
+msgid  "~Table name"
+msgstr "Ime ~tabele"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
+msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgstr "Prišlo je do napake pri izvajanju čarovnika. Čarovnik bo prekinil z delom."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
+msgid  "No connection to the database could be established."
+msgstr "Povezave z zbirko podatkov ni mogoče vzpostaviti."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 20.String.Text
+msgid  "~Help"
+msgstr "~Pomoč"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 21.String.Text
+msgid  "~Stop"
+msgstr "~Ustavi"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 30.String.Text
+msgid  "The document could not be saved."
+msgstr "Dokumenta ni mogoče shraniti."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 33.String.Text
+msgid  "Exiting the wizard"
+msgstr "Izhod iz čarovnika"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 34.String.Text
+msgid  "Connecting to data source..."
+msgstr "Povezovanje z virom podatkov ..."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 35.String.Text
+msgid  "The connection to the data source could not be established."
+msgstr "Povezave z virom podatkov ni bilo mogoče vzpostaviti."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 36.String.Text
+msgid  "The file path entered is not valid."
+msgstr "Vnešena pot ni veljavna."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 37.String.Text
+msgid  "Please select a data source"
+msgstr "Izberite vir podatkov."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 38.String.Text
+msgid  "Please select a table or query"
+msgstr "Izberite tabelo ali poizvedbo"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 39.String.Text
+msgid  "Add field"
+msgstr "Dodaj polje"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 40.String.Text
+msgid  "Remove field"
+msgstr "Odstrani polje"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 41.String.Text
+msgid  "Add all fields"
+msgstr "Dodaj vsa polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 42.String.Text
+msgid  "Remove all fields"
+msgstr "Odstrani vsa polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 43.String.Text
+msgid  "Move field up"
+msgstr "Premakni polje navzgor"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 44.String.Text
+msgid  "Move field down"
+msgstr "Premakni polje navzdol"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 45.String.Text
+msgid  "The field names from '%NAME' could not be retrieved."
+msgstr "Imen polj iz '%NAME' ni mogoče pridobiti."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 0.String.Text
+msgid  "Form Wizard"
+msgstr "Čarovnik za obrazce"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 1.String.Text
+msgid  "Fields in ~the form"
+msgstr "Polja v ~obrazcu"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr "Binarna polja so vedno prikazana in jih lahko izberete v seznamu na levi strani.\nČe je mogoče, so predstavljena kot slike."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr "Podobrazec je obrazec, ki je vstavljen v drugi obrazec.\nUporabite podobrazce, da prikažete podatke iz tabel ali poizvedb z relacijo ena-proti-mnogo."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
+msgid  "~Add Subform"
+msgstr "~Dodaj podobrazec"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 5.String.Text
+msgid  "~Subform based on existing relation"
+msgstr "~Podobrazec temelji na obstoječem odnosu"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 6.String.Text
+msgid  "Tables or queries"
+msgstr "Tabele ali poizvedbe"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 7.String.Text
+msgid  "Subform based on ~manual selection of fields"
+msgstr "Podobrazec te~melji na ročni izbiri polj"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 8.String.Text
+msgid  "~Which relation do you want to add?"
+msgstr "~Kateri odnos želite dodati?"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 9.String.Text
+msgid  "Fields in the ~subform"
+msgstr "Polja v ~podobrazcu"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 12.String.Text
+msgid  "~Available fields"
+msgstr "Polja na ~voljo"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 13.String.Text
+msgid  "Fields in form"
+msgstr "Polja v obrazcu"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr "Spoj  '<FIELDNAME1>' in '<FIELDNAME2>' je bil izbran dvakrat.\nSpoji se lahko uporabijo samo enkrat."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
+msgid  "~First joined subform field"
+msgstr "~Prvo združeno polje podobrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 21.String.Text
+msgid  "~Second joined subform field"
+msgstr "~Drugo združeno polje podobrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 22.String.Text
+msgid  "~Third joined subform field"
+msgstr "~Tretje združeno polje podobrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 23.String.Text
+msgid  "~Fourth joined subform field"
+msgstr "~Četrto združeno polje podobrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 24.String.Text
+msgid  "F~irst joined main form field"
+msgstr "P~rvo združeno polje glavnega obrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 25.String.Text
+msgid  "S~econd joined main form field"
+msgstr "Dru~go združeno polje glavnega obrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 26.String.Text
+msgid  "T~hird joined main form field"
+msgstr "Tr~etje združeno polje glavnega obrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 27.String.Text
+msgid  "F~ourth joined main form field"
+msgstr "Četrt~o združeno polje glavnega obrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 28.String.Text
+msgid  "Field border"
+msgstr "Obroba polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 29.String.Text
+msgid  "No border"
+msgstr "Brez obrob"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 30.String.Text
+msgid  "3D look"
+msgstr "Videz 3D"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 31.String.Text
+msgid  "Flat"
+msgstr "Plosko"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 32.String.Text
+msgid  "Label placement"
+msgstr "Postavitev imena polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 33.String.Text
+msgid  "Align left"
+msgstr "Poravnaj levo"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 34.String.Text
+msgid  "Align right"
+msgstr "Poravnaj desno"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 35.String.Text
+msgid  "Arrangement of DB fields"
+msgstr "Razporeditev podatkovnih polj"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 36.String.Text
+msgid  "Columnar - Labels Left"
+msgstr "Stolpično - imena polj levo"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 37.String.Text
+msgid  "Columnar - Labels on Top"
+msgstr "Stolpično - imena polj na vrhu"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 38.String.Text
+msgid  "In Blocks - Labels Left"
+msgstr "V blokih - imena polj levo"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 39.String.Text
+msgid  "In Blocks - Labels Above"
+msgstr "V blokih - imena polj na vrhu"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 40.String.Text
+msgid  "As Data Sheet"
+msgstr "Kot podatkovni list"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 41.String.Text
+msgid  "Arrangement of the main form"
+msgstr "Razporeditev glavnega obrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 42.String.Text
+msgid  "Arrangement of the subform"
+msgstr "Razporeditev podobrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 44.String.Text
+msgid  "The form is to be ~used for entering new data only."
+msgstr "Obrazec bo ~uporabljen le za vnos novih podatkov."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 45.String.Text
+msgid  "Existing data will not be displayed "
+msgstr "Obstoječi podatki ne bodo prikazani"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 46.String.Text
+msgid  "T~he form is to display all data"
+msgstr "Obrazec naj prikaže ~vse podatke"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 47.String.Text
+msgid  "Do not allow ~modification of existing data"
+msgstr "Ne dovoli ~spreminjanja obstoječih podatkov"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 48.String.Text
+msgid  "Do not allow ~deletion of existing data"
+msgstr "Ne dovoli ~brisanja obstoječih podatkov"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 49.String.Text
+msgid  "Do not allow ~addition of new data"
+msgstr "Ne dovoli ~dodajanja novih podatkov"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 50.String.Text
+msgid  "Name of ~the form"
+msgstr "Ime ~obrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 51.String.Text
+msgid  "How do you want to proceed after creating the form?"
+msgstr "Kako želite nadaljevati po izdelavi obrazca?"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 52.String.Text
+msgid  "~Work with the form"
+msgstr "~Delo z obrazcem"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 53.String.Text
+msgid  "~Modify the form"
+msgstr "~Spremeni obrazec"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 55.String.Text
+msgid  "~Page Styles"
+msgstr "Slogi s~trani"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
+msgid  "Field selection"
+msgstr "Izbor polj"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
+msgid  "Set up a subform"
+msgstr "Nastavite podobrazec"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 82.String.Text
+msgid  "Add subform fields"
+msgstr "Dodajte polja podobrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 83.String.Text
+msgid  "Get joined fields"
+msgstr "Dobi združena polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 84.String.Text
+msgid  "Arrange controls"
+msgstr "Razporedi kontrolnike"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 85.String.Text
+msgid  "Set data entry"
+msgstr "Nastavi vnos podatkov"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 86.String.Text
+msgid  "Apply styles"
+msgstr "Uporabi sloge"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 87.String.Text
+msgid  "Set name"
+msgstr "Nastavi ime"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 88.String.Text
+msgid  "(Date)"
+msgstr "(Datum)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 89.String.Text
+msgid  "(Time)"
+msgstr "(Čas)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 90.String.Text
+msgid  "Select the fields of your form"
+msgstr "Izberite polja obrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 91.String.Text
+msgid  "Decide if you want to set up a subform"
+msgstr "Izberite, če želite nastaviti podobrazec"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 92.String.Text
+msgid  "Select the fields of your subform"
+msgstr "Izberite polja podobrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 93.String.Text
+msgid  "Select the joins between your forms"
+msgstr "Izberite povezave med obrazcema"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 94.String.Text
+msgid  "Arrange the controls on your form"
+msgstr "Razporedite kontrolnike po obrazcu"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 95.String.Text
+msgid  "Select the data entry mode"
+msgstr "Izberite način vnosa podatkov"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 96.String.Text
+msgid  "Apply the style of your form"
+msgstr "Uporabite slog obrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 97.String.Text
+msgid  "Set the name of the form"
+msgstr "Nastavi ime obrazca"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr "Obrazec z imenom %FORMNAME'že obstaja.\nIzberite drugo ime."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
+msgid  "Query Wizard"
+msgstr "Čarovnik za poizvedbe"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 1.String.Text
+msgid  "Query"
+msgstr "Poizvedba"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 2.String.Text
+msgid  "Query Wizard"
+msgstr "Čarovnik za poizvedbe"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 3.String.Text
+msgid  "~Tables"
+msgstr "~Tabele"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
+msgid  "A~vailable fields"
+msgstr "Polja na ~voljo"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
+msgid  "Name ~of the query"
+msgstr "Ime ~poizvedbe"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 6.String.Text
+msgid  "Display ~Query"
+msgstr "P~rikaži poizvedbo"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 7.String.Text
+msgid  "~Modify Query"
+msgstr "~Spremeni poizvedbo"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 8.String.Text
+msgid  "~How do you want to proceed after creating the query?"
+msgstr "~Kako želite nadaljevati po izdelavi poizvedbe?"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 9.String.Text
+msgid  "Match ~all of the following"
+msgstr "Ujemanje ~vseh naslednjih"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 10.String.Text
+msgid  "~Match any of the following"
+msgstr "Ujemanje vsaj ~enega od naslednjih"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 11.String.Text
+msgid  "~Detailed query (Shows all records of the query.)"
+msgstr "~Podrobna poizvedba (Prikaže vse zapise poizvedbe.)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
+msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgstr "Poizvedba pov~zetkov (Prikaže le rezultate sestavljenih funkcij.)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
+msgid  "Aggregate functions"
+msgstr "Sestavljene funkcije"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 17.String.Text
+msgid  "Fields"
+msgstr "Polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 18.String.Text
+msgid  "~Group by"
+msgstr "~Združi po"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 19.String.Text
+msgid  "Field"
+msgstr "Polje"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 20.String.Text
+msgid  "Alias"
+msgstr "Vzdevek"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 21.String.Text
+msgid  "Table: "
+msgstr "Tabela: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 22.String.Text
+msgid  "Query: "
+msgstr "Poizvedba: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 24.String.Text
+msgid  "Condition"
+msgstr "Pogoj"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 25.String.Text
+msgid  "Value"
+msgstr "Vrednost"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 26.String.Text
+msgid  "is equal to"
+msgstr "je enak"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 27.String.Text
+msgid  "is not equal to"
+msgstr "ni enak"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 28.String.Text
+msgid  "is smaller than"
+msgstr "je manjši kot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 29.String.Text
+msgid  "is greater than"
+msgstr "je večji kot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 30.String.Text
+msgid  "is equal or less than "
+msgstr "je enak ali manjši kot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 31.String.Text
+msgid  "is equal or greater than"
+msgstr "je enak ali večji kot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 32.String.Text
+msgid  "like"
+msgstr "kot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 33.String.Text
+msgid  "not like"
+msgstr "ni podobno"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 34.String.Text
+msgid  "is null"
+msgstr "je null"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 35.String.Text
+msgid  "is not null"
+msgstr "ni null"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 36.String.Text
+msgid  "true"
+msgstr "je resnično"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 37.String.Text
+msgid  "false"
+msgstr "ni resnično"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 38.String.Text
+msgid  "and"
+msgstr "in"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 39.String.Text
+msgid  "or"
+msgstr "ali"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 40.String.Text
+msgid  "get the sum of"
+msgstr "izračunaj vsoto vrednosti"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 41.String.Text
+msgid  "get the average of"
+msgstr "izračunaj povprečno vrednost"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 42.String.Text
+msgid  "get the minimum of"
+msgstr "najdi najmanjšo vrednost"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 43.String.Text
+msgid  "get the maximum of"
+msgstr "najdi največjo vrednost"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 44.String.Text
+msgid  "get the sum of <FIELD>"
+msgstr "izračunaj vsoto vrednosti <FIELD>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 45.String.Text
+msgid  "get the average of <FIELD>"
+msgstr "izračunaj povprečno vrednost <FIELD>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 46.String.Text
+msgid  "get the minimum of <FIELD>"
+msgstr "najdi najmanjšo vrednost <FIELD>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 47.String.Text
+msgid  "get the maximum of <FIELD>"
+msgstr "najdi največjo vrednost <FIELD>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 48.String.Text
+msgid  "(none)"
+msgstr "(brez)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 50.String.Text
+msgid  "Fie~lds in the Query: "
+msgstr "Po~lja v poizvedbi: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 51.String.Text
+msgid  "Sorting order: "
+msgstr "Vrstni red razvrščanja: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 52.String.Text
+msgid  "No sorting fields were assigned."
+msgstr "Polja za razvrščanje niso bila določena."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 53.String.Text
+msgid  "Search conditions: "
+msgstr "Iskalni pogoji: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 54.String.Text
+msgid  "No conditions were assigned."
+msgstr "Pogoji niso bilo določeni."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 55.String.Text
+msgid  "Aggregate functions: "
+msgstr "Sestavljene funkcije: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 56.String.Text
+msgid  "No aggregate functions were assigned."
+msgstr "Dodeljena ni bila nobena sestavljena funkcija."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 57.String.Text
+msgid  "Grouped by: "
+msgstr "Razvrščeni v skupine glede na: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 58.String.Text
+msgid  "No Groups were assigned."
+msgstr "Skupine niso bile določene."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 59.String.Text
+msgid  "Grouping conditions: "
+msgstr "Pogoji za razvrščanje v skupine: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 60.String.Text
+msgid  "No grouping conditions were assigned."
+msgstr "Pogoji za razvrščanje v skupine niso bili določeni."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 70.String.Text
+msgid  "Select the fields (columns) for your query"
+msgstr "Izberite polja (stolpce) za poizvedbo"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 71.String.Text
+msgid  "Select the sorting order"
+msgstr "Izberite vrstni red razvrščanja"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 72.String.Text
+msgid  "Select the search conditions"
+msgstr "Izberite pogoje iskanja"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 73.String.Text
+msgid  "Select the type of query"
+msgstr "Izberite vrsto poizvedbe"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 74.String.Text
+msgid  "Select the groups"
+msgstr "Izberite skupine"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 75.String.Text
+msgid  "Select the grouping conditions"
+msgstr "Izberite pogoje za skupine"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 76.String.Text
+msgid  "Assign aliases if desired"
+msgstr "Dodeli vzdevke po potrebi"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 77.String.Text
+msgid  "Check the overview and decide how to proceed"
+msgstr "Kliknite pregled in se odločite za nadaljevanje"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 80.String.Text
+msgid  "Field selection"
+msgstr "Izbor polj"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 81.String.Text
+msgid  "Sorting order"
+msgstr "Vrstni red razvrščanja"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 82.String.Text
+msgid  "Search conditions"
+msgstr "Iskalni pogoji"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 83.String.Text
+msgid  "Detail or summary"
+msgstr "Podrobnosti ali povzetek"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 84.String.Text
+msgid  "Grouping"
+msgstr "Združevanje"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 85.String.Text
+msgid  "Grouping conditions"
+msgstr "Pogoji za skupine"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 86.String.Text
+msgid  "Aliases"
+msgstr "Vzdevki"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 87.String.Text
+msgid  "Overview"
+msgstr "Pregled"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
+msgid  "A field that has not been assigned an aggregate function must be used in a group."
+msgstr "Polje, ki ni bilo dodeljeno sestavljeni funkciji, mora biti uporabljeno v skupini."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
+msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr "Pogoj  '<FIELDNAME> <LOGICOPERATOR> <VALUE>' je bil izbran dvakrat. Vsak pogoj je lahko izbran samo enkrat."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
+msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr "Sestavljena funkcija <FUNCTION> je bila dodeljena dvakrat v polju '<NUMERICFIELD>'."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
+msgid  ", "
+msgstr ","
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 92.String.Text
+msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 93.String.Text
+msgid  "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 94.String.Text
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 95.String.Text
+msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 96.String.Text
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 0.String.Text
+msgid  "Report Wizard"
+msgstr "Čarovnik za poročila"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 3.String.Text
+msgid  "~Table"
+msgstr "~Tabela"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 4.String.Text
+msgid  "Colu~mns"
+msgstr "Stolp~ci"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 7.String.Text
+msgid  "Report_"
+msgstr "Poročilo_"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 8.String.Text
+msgid  "- undefined -"
+msgstr "- nedefinirano -"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 9.String.Text
+msgid  "~Fields in report"
+msgstr "~Polja v poročilu"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 11.String.Text
+msgid  "Grouping"
+msgstr "Združevanje"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 12.String.Text
+msgid  "Sort options"
+msgstr "Možnosti razvrščanja"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 13.String.Text
+msgid  "Choose layout"
+msgstr "Izberite postavitev"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 14.String.Text
+msgid  "Create report"
+msgstr "Ustvari poročilo"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 15.String.Text
+msgid  "Layout of data"
+msgstr "Postavitev podatkov"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 16.String.Text
+msgid  "Layout of headers and footers"
+msgstr "Postavitev glav in nog"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 19.String.Text
+msgid  "Fields"
+msgstr "Polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 20.String.Text
+msgid  "~Sort by"
+msgstr "~Razvrsti po"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 21.String.Text
+msgid  "T~hen by"
+msgstr "I~n nato po"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 22.String.Text
+msgid  "Orientation"
+msgstr "Usmerjenost"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 23.String.Text
+msgid  "Portrait"
+msgstr "Pokončno"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 24.String.Text
+msgid  "Landscape"
+msgstr "Ležeče"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 28.String.Text
+msgid  "Which fields do you want to have in your report?"
+msgstr "Katera polja naj bodo v poročilu?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 29.String.Text
+msgid  "Do you want to add grouping levels?"
+msgstr "Ali želite dodati ravni združevanja v skupine?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 30.String.Text
+msgid  "According to which fields do you want to sort the data?"
+msgstr "Po katerih poljih želite razvrstiti podatke?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 31.String.Text
+msgid  "How do you want your report to look?"
+msgstr "Kako naj bo poročilo videti?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 32.String.Text
+msgid  "Decide how you want to proceed"
+msgstr "Izberite, kako želite nadaljevati"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 33.String.Text
+msgid  "Title of report"
+msgstr "Naslov poročila"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 34.String.Text
+msgid  "Display report"
+msgstr "Prikaži poročilo"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 35.String.Text
+msgid  "Create report"
+msgstr "Ustvari poročilo"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 36.String.Text
+msgid  "Ascending"
+msgstr "Naraščajoče"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 37.String.Text
+msgid  "Descending"
+msgstr "Padajoče"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 40.String.Text
+msgid  "~Dynamic report"
+msgstr "~Dinamično poročilo"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 41.String.Text
+msgid  "~Create report now"
+msgstr "~Ustvari poročilo"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 42.String.Text
+msgid  "~Modify report layout"
+msgstr "~Spremeni videz poročila"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 43.String.Text
+msgid  "Static report"
+msgstr "Statično poročilo"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 44.String.Text
+msgid  "Save as"
+msgstr "Shrani kot"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 50.String.Text
+msgid  "Groupings"
+msgstr "Združevanje"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 51.String.Text
+msgid  "Then b~y"
+msgstr "In na~to po"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 52.String.Text
+msgid  "~Then by"
+msgstr "In nato ~po"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 53.String.Text
+msgid  "Asc~ending"
+msgstr "Narašča~joče"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 54.String.Text
+msgid  "Ascend~ing"
+msgstr "Naraščaj~oče"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 55.String.Text
+msgid  "Ascendin~g"
+msgstr "Naraščajo~če"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 56.String.Text
+msgid  "De~scending"
+msgstr "Pa~dajoče"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 57.String.Text
+msgid  "Des~cending"
+msgstr "Pad~ajoče"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 58.String.Text
+msgid  "De~scending"
+msgstr "Pa~dajoče"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 60.String.Text
+msgid  "Binary fields cannot be displayed in the report."
+msgstr "Dvojiških polj ni mogoče prikazati v poročilu."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 61.String.Text
+msgid  "The table '<TABLENAME>' does not exist."
+msgstr "Tabela '<TABLENAME>' ne obstaja."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 62.String.Text
+msgid  "Creating Report..."
+msgstr "Ustvarjanje poročila ..."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 63.String.Text
+msgid  "Number of records inserted: <COUNT>"
+msgstr "Število vstavljenih zapisov: <COUNT>"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 64.String.Text
+msgid  "The form '<REPORTFORM>' does not exist."
+msgstr "Poročilo '<REPORTFORM>' ne obstaja."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
+msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr "Poizvedbe z izjavo <BR>'<STATEMENT>' <BR> ni mogoče zagnati. <BR> Preverite vir podatkov."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
+msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr "Naslednjega skritega kontrolnika v obrazcu '<REPORTFORM>' ni bilo mogoče prebrati: '<CONTROLNAME>'."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
+msgid  "Importing data..."
+msgstr "Uvoz podatkov ..."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 68.String.Text
+msgid  "Labeling fields"
+msgstr "Označevanje polj"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 69.String.Text
+msgid  "How do you want to label the fields?"
+msgstr "Kako želite označiti polja?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 70.String.Text
+msgid  "Label"
+msgstr "Oznaka"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 71.String.Text
+msgid  "Field"
+msgstr "Polje"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
+msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr "V čarovniku je prišlo do napake.<BR>Predloga '%PATH' bi lahko bila okvarjena.<BR>Ali zahtevani razdelki ali tabele ne obstajajo ali pa obstajajo pod drugim imenom.<BR>Oglejte si pomoč za bolj natančne napotke.<BR>Prosimo, izberite drugo predlogo."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
+msgid  "There is an invalid user field in a table."
+msgstr "V tabeli je neveljavno uporabniško polje."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
+msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr "Pogoj za razvrščanje '<FIELDNAME>' je bil izbran dvakrat. Pogoj lahko izberete samo enkrat."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
+msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr "Opomba: Ko bo poročilo ustvarjeno, bo lažno besedilo v ogradah zamenjano s podatki."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
+msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr "Poročilo '%REPORTNAME' že obstaja v zbirki podatkov. Prosimo, določite drugo ime."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
+msgid  "How do you want to proceed after creating the report?"
+msgstr "Kako želite nadaljevati po izdelavi poročila?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 79.String.Text
+msgid  "What kind of report do you want to create?"
+msgstr "Izberite vrsto poročila, ki ga želite ustvariti."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 80.String.Text
+msgid  "Tabular"
+msgstr "Tabelaren"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 81.String.Text
+msgid  "Columnar, single-column"
+msgstr "Stolpčni, z enim stolpcem"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 82.String.Text
+msgid  "Columnar, two columns"
+msgstr "Stolpčni, z dvema stolpcema"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 83.String.Text
+msgid  "Columnar, three columns"
+msgstr "Stolpčni, s tremi stolpci"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 84.String.Text
+msgid  "In blocks, labels left"
+msgstr "Bločni, z oznakami na levi"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 85.String.Text
+msgid  "In blocks, labels above"
+msgstr "Bločni, z oznakami zgoraj"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 86.String.Text
+msgid  "Title:"
+msgstr "Naslov:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 87.String.Text
+msgid  "Author:"
+msgstr "Avtor:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 88.String.Text
+msgid  "Date:"
+msgstr "Datum:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 89.String.Text
+msgid  "Page #page# of #count#"
+msgstr "Stran #page# od #count#"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 90.String.Text
+msgid  "Page number:"
+msgstr "Številka strani:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 91.String.Text
+msgid  "Page count:"
+msgstr "Število strani:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 92.String.Text
+msgid  "No valid report template was found."
+msgstr "Nobene veljavne predloge za poročila ni mogoče najti."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 1.String.Text
+msgid  "Table Wizard"
+msgstr "Čarovnik za tabele"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 2.String.Text
+msgid  "Select fields"
+msgstr "Izberite polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 3.String.Text
+msgid  "Set types and formats"
+msgstr "Nastavi vrste in oblike"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 4.String.Text
+msgid  "Set primary key"
+msgstr "Določi primarni ključ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 5.String.Text
+msgid  "Create table"
+msgstr "Ustvari tabelo"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 8.String.Text
+msgid  "Select fields for your table"
+msgstr "Izberite polja za tabelo"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 9.String.Text
+msgid  "Set field types and formats"
+msgstr "Nastavite vrste polj in oblike"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 10.String.Text
+msgid  "Set primary key"
+msgstr "Določi primarni ključ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 11.String.Text
+msgid  "Create table"
+msgstr "Ustvari tabelo"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
+msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr "Ta čarovnik vam pomaga ustvariti tabelo v zbirki podatkov. Po izbiri kategorije tabele in vzorčne tabele, izberite polja, ki jih želite vključiti v svojo tabelo. Vključite lahko polja iz več kot ene vzorčne tabele."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
+msgid  "Ca~tegory"
+msgstr "Ka~tegorija"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 16.String.Text
+msgid  "B~usiness"
+msgstr "~Poslovno"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 17.String.Text
+msgid  "P~ersonal"
+msgstr "~Zasebno"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 18.String.Text
+msgid  "~Sample tables"
+msgstr "~Vzorčne tabele"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 19.String.Text
+msgid  "A~vailable fields"
+msgstr "Polja na ~voljo"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 20.String.Text
+msgid  "Field information"
+msgstr "Podatki o polju"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 21.String.Text
+msgid  "+"
+msgstr "+"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 23.String.Text
+msgid  "Field name"
+msgstr "Ime polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 24.String.Text
+msgid  "Field type"
+msgstr "Vrsta polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 25.String.Text
+msgid  "~Selected fields"
+msgstr "~Izbrana polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
+msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr "Primarni ključ edinstveno identificira vsak zapis v tabeli zbirke podatkov. Primarni ključi poenostavijo povezovanje podatkov med posameznimi tabelami in priporočljivo je, da imate primarni ključ v vsaki tabeli. Brez primarnega ključa vnos v to tabelo ne bo možen."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
+msgid  "~Create a primary key"
+msgstr "Ustvari ~primarni ključ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 28.String.Text
+msgid  "~Automatically add a primary key"
+msgstr "~Samodejno dodaj primarni ključ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 29.String.Text
+msgid  "~Use an existing field as a primary key"
+msgstr "~Uporabi obstoječe polje kot primarni ključ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 30.String.Text
+msgid  "Define p~rimary key as a combination of several fields "
+msgstr "Določi p~rimarni ključ kot kombinacijo več polj "
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 31.String.Text
+msgid  "F~ieldname"
+msgstr "~Ime polja"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 32.String.Text
+msgid  "~Primary key fields"
+msgstr "~Polja primarnega ključa"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 33.String.Text
+msgid  "Auto ~value"
+msgstr "Samodejna ~vrednost"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 34.String.Text
+msgid  "What do you want to name your table?"
+msgstr "Kako želite poimenovati tabelo?"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
+msgid  "Congratulations. You have entered all the information needed to create your table."
+msgstr "Čestitamo. Vnesli ste vse podatke, potrebne za izdelavo tabele."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
+msgid  "What do you want to do next?"
+msgstr "Kaj želite zdaj storiti?"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
+msgid  "Modify the table design"
+msgstr "Spremeni oblikovanje tabele"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 38.String.Text
+msgid  "Insert data immediately"
+msgstr "Vstavi podatke nemudoma"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 39.String.Text
+msgid  "C~reate a form based on this table"
+msgstr "Ustva~ri obrazec na osnovi te tabele"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 40.String.Text
+msgid  "The table you have created could not be opened."
+msgstr "Tabele, ki ste jo ustvarili, ni mogoče odpreti."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
+msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Ime tabele '%TABLENAME' vsebuje znak ('%SPECIALCHAR'), ki ga zbirka podatkov morda ne podpira."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
+msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Ime polja '%FIELDNAME' vsebuje poseben znak ('%SPECIALCHAR'), ki ga zbirka podatkov morda ne podpira."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
+msgid  "Field"
+msgstr "Polje"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 44.String.Text
+msgid  "MyTable"
+msgstr "MojaTabela"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 45.String.Text
+msgid  "Add a Field"
+msgstr "Dodaj polje"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 46.String.Text
+msgid  "Remove the selected Field"
+msgstr "Odstrani izbrano polje"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
+msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr "Polja ni mogoče vstaviti, ker bi s tem prekoračili največje število možnih polj %COUNT v tabeli zbirke podatkov"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr "Ime tabele '%TABLENAME' že obstaja.\nVnesite drugo ime."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
+msgid  "Catalog of the table"
+msgstr "Katalog tabele"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 50.String.Text
+msgid  "Schema of the table"
+msgstr "Shema tabele"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 51.String.Text
+msgid  "The field '%FIELDNAME' already exists."
+msgstr "Polje %FIELDNAME' že obstaja."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 1.String.Text
+msgid  "Letter Wizard"
+msgstr "Čarovnik za pisma"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 2.String.Text
+msgid  "Label9"
+msgstr "Oznaka9"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 3.String.Text
+msgid  "~Business letter"
+msgstr "~Poslovno pismo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 4.String.Text
+msgid  "~Formal personal letter"
+msgstr "~Uradno zasebno pismo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 5.String.Text
+msgid  "~Personal letter"
+msgstr "Ose~bno pismo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 6.String.Text
+msgid  "~Use letterhead paper with pre-printed elements"
+msgstr "~Uporabi papir s prednatisnjeno glavo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 7.String.Text
+msgid  "~Logo"
+msgstr "~Logotip"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
+msgid  "Return address"
+msgstr "Povratni naslov"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 9.String.Text
+msgid  "~Include footer"
+msgstr "~Vključi nogo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 10.String.Text
+msgid  "~Return address in envelope window"
+msgstr "~Povratni naslov v okencu kuverte"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
+msgid  "~Logo"
+msgstr "~Logotip"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 12.String.Text
+msgid  "~Return address in envelope window"
+msgstr "~Povratni naslov v okencu kuverte"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 13.String.Text
+msgid  "Letter Signs"
+msgstr "Pisemske oznake"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
+msgid  "S~ubject line"
+msgstr "Pre~dmetna vrstica"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
+msgid  "Salu~tation"
+msgstr "Uvodni po~zdrav"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 16.String.Text
+msgid  "Fold ~marks"
+msgstr "~Oznake za prepogibanje"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
+msgid  "~Complimentary close"
+msgstr "~Vljudnostni zaključek"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
+msgid  "~Footer"
+msgstr "~Noga"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
+msgid  "~Use user data for return address"
+msgstr "~Uporabi podatke o uporabniku za povratni naslov"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
+msgid  "~New sender address:"
+msgstr "~Nov naslov pošiljatelja:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
+msgid  "Use placeholders for ~recipient's address"
+msgstr "Uporabi ograde za naslov ~prejemnika"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
+msgid  "Use address database for ~mail merge"
+msgstr "Za ~spajanje dokumentov uporabi zbirko podatkov adresarja"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
+msgid  "Include ~only on second and following pages"
+msgstr "Vključi ~le na drugi in naslednjih straneh"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
+msgid  "~Include page number"
+msgstr "~Vključi številke strani"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
+msgid  "Letter Template"
+msgstr "Predloga pisma"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 26.String.Text
+msgid  "Create a ~letter from this template"
+msgstr "Ustvari pismo iz te pred~loge"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 27.String.Text
+msgid  "Make ~manual changes to this letter template"
+msgstr "~Ročno spremeni to pisemsko predlogo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
+msgid  "Page design"
+msgstr "Oblikovanje strani"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
+msgid  "Page design"
+msgstr "Oblikovanje strani"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
+msgid  "Page design"
+msgstr "Oblikovanje strani"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
+msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr "Ta čarovnik vam pomaga ustvariti predlogo za pismo. Nato lahko predlogo uporabite kot osnovo za pisanje pisem, kadar želite."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
+msgid  "~Height:"
+msgstr "~Višina:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 33.String.Text
+msgid  "~Width:"
+msgstr "~Širina:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
+msgid  "S~pacing to left margin:"
+msgstr "Razmik do ~levega roba:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
+msgid  "Spacing ~to top margin:"
+msgstr "Razmik do ~gornjega roba:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
+msgid  "Height:"
+msgstr "Višina:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 37.String.Text
+msgid  "Width:"
+msgstr "Širina:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 38.String.Text
+msgid  "S~pacing to left margin:"
+msgstr "Razmik do ~levega roba:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 39.String.Text
+msgid  "Spacing ~to top margin:"
+msgstr "Razmik do ~gornjega roba:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 40.String.Text
+msgid  "Height:"
+msgstr "Višina:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 41.String.Text
+msgid  "Use a typical letter format for this country:"
+msgstr "Uporabi tipsko obliko pisma za to državo:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 42.String.Text
+msgid  "Sender's address"
+msgstr "Naslov pošiljatelja"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
+msgid  "Name:"
+msgstr "Ime:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
+msgid  "Street:"
+msgstr "Ulica:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
+msgid  "ZIP code/State/City:"
+msgstr "Poštna številka/Pokrajina/Kraj:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
+msgid  "Recipient's address"
+msgstr "Naslov prejemnika"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 47.String.Text
+msgid  "Footer"
+msgstr "Noga"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
+msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr "Ta čarovnik ustvari pisemsko predlogo, ki omogoča ustvarjanje več pisem z enako postavitvijo in nastavitvami."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
+msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr "Za ustvarjanje novega pisma iz predloge le poiščite predlogo in jo dvokliknite."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
+msgid  "Template name:"
+msgstr "Ime predloge:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
+msgid  "Location and file name:"
+msgstr "Mesto in ime datoteke:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
+msgid  "How do you want to proceed?"
+msgstr "Kako želite nadaljevati?"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 53.String.Text
+msgid  "Please choose the type of letter and page design"
+msgstr "Prosimo, izberite vrsto pisma in obliko strani"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 54.String.Text
+msgid  "Select the items to be printed"
+msgstr "Izberite dele za tiskanje"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 55.String.Text
+msgid  "Specify items already on your letterhead paper"
+msgstr "Določite dele, ki so že natisnjeni na papirju z glavo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 56.String.Text
+msgid  "Specify the sender and recipient information"
+msgstr "Navedite podatke o pošiljatelju in prejemniku"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 57.String.Text
+msgid  "Fill in the information you would like in the footer"
+msgstr "Vnesite podatke, ki jih želite v nogi"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 58.String.Text
+msgid  "Please specify last settings"
+msgstr "Prosimo, določite zadnje nastavitve"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 1.String.Text
+msgid  "To Whom it May Concern"
+msgstr "Kogar zadeva"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 2.String.Text
+msgid  "Dear Sir or Madam"
+msgstr "Dragi gospod ali gospa"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 3.String.Text
+msgid  "Hello"
+msgstr "Živjo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 1.String.Text
+msgid  "Sincerely"
+msgstr "Z iskrenimi pozdravi"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 2.String.Text
+msgid  "Best regards"
+msgstr "Z odličnimi pozdravi"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 3.String.Text
+msgid  "Cheers"
+msgstr "Čau"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 1.String.Text
+msgid  "Page design"
+msgstr "Oblikovanje strani"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 2.String.Text
+msgid  "Letterhead layout"
+msgstr "Postavitev glave pisma"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 3.String.Text
+msgid  "Printed items"
+msgstr "Natisnjeni elementi"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 4.String.Text
+msgid  "Recipient and sender"
+msgstr "Prejemnik in pošiljatelj"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 5.String.Text
+msgid  "Footer"
+msgstr "Noga"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 6.String.Text
+msgid  "Name and location"
+msgstr "Ime in lokacija"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 1.String.Text
+msgid  "Fax Wizard"
+msgstr "Čarovnik za faks"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 2.String.Text
+msgid  "Label9"
+msgstr "Oznaka9"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 3.String.Text
+msgid  "~Business Fax"
+msgstr "~Poslovni faks"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 4.String.Text
+msgid  "~Personal Fax"
+msgstr "~Zasebni faks"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 5.String.Text
+msgid  "~Logo"
+msgstr "~Logotip"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 6.String.Text
+msgid  "S~ubject line"
+msgstr "Pre~dmetna vrstica"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 7.String.Text
+msgid  "S~alutation"
+msgstr "Uvodni pozdr~av"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 8.String.Text
+msgid  "~Complimentary close"
+msgstr "~Vljudnostni zaključek"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 9.String.Text
+msgid  "~Footer"
+msgstr "~Noga"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 10.String.Text
+msgid  "~Use user data for return address"
+msgstr "~Uporabi podatke o uporabniku za povratni naslov"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
+msgid  "~New return address"
+msgstr "~Nov povratni naslov"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
+msgid  "My Fax Template"
+msgstr "Moja predloga za faks"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 13.String.Text
+msgid  "Create a ~fax from this template"
+msgstr "Ustvari ~faks iz te predloge"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 14.String.Text
+msgid  "Make ~manual changes to this fax template"
+msgstr "Opravi ~ročne spremembe te predloge za faks"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 15.String.Text
+msgid  "Page design"
+msgstr "Oblikovanje strani"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 16.String.Text
+msgid  "Page design"
+msgstr "Oblikovanje strani"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
+msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr "Ta čarovnik pomaga pri izdelavi predloge za faks. Predlogo lahko uporabite za ustvarjanje sporočil za faks, ko jih potrebujete."
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
+msgid  "Return address"
+msgstr "Povratni naslov"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 19.String.Text
+msgid  "Name:"
+msgstr "Ime:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 20.String.Text
+msgid  "Street:"
+msgstr "Ulica:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 21.String.Text
+msgid  "ZIP code/State/City:"
+msgstr "Poštna številka/Pokrajina/Kraj:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 22.String.Text
+msgid  "Footer"
+msgstr "Noga"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
+msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr "Ta čarovnik ustvari predlogo za faks, ki omogoča ustvarjanje več faksov z enako postavitvijo in nastavitvami."
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
+msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Če želite ustvariti še en nov faks po predlogi, pojdite na mesto, kjer ste shranili predlogo, in dvokliknite datoteko."
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
+msgid  "Template Name:"
+msgstr "Ime predloge:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
+msgid  "Location and file name:"
+msgstr "Mesto in ime datoteke:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
+msgid  "What do you want to do next?"
+msgstr "Kaj želite zdaj storiti?"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
+msgid  "Choose the type of fax and a page design"
+msgstr "Izberite vrsto faksa in oblikovanja strani"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 29.String.Text
+msgid  "Select items to include in the fax template"
+msgstr "Izberite vsebine za predlogo za faks"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 30.String.Text
+msgid  "Specify sender and recipient information"
+msgstr "Določite podatke o pošiljatelju in prejemniku"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 31.String.Text
+msgid  "Enter text for the footer"
+msgstr "Vnestite besedilo za nogo"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
+msgid  "Choose a name and save the template"
+msgstr "Izberite ime in shranite predlogo"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
+msgid  "Include ~only on second and following pages"
+msgstr "Vključi ~le na drugi in naslednjih straneh"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 34.String.Text
+msgid  "~Include page number"
+msgstr "~Vključi številke strani"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 35.String.Text
+msgid  "~Date"
+msgstr "~Datum"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 36.String.Text
+msgid  "~Type of message"
+msgstr "Vrs~ta sporočila"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 37.String.Text
+msgid  "Fax Number:"
+msgstr "Številka faksa:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 38.String.Text
+msgid  "Use placeholders for ~recipient's address"
+msgstr "Uporabi ograde za naslov ~prejemnika"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 39.String.Text
+msgid  "Use address database for ~mail merge"
+msgstr "Za ~spajanje dokumentov uporabi zbirko podatkov adresarja"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 40.String.Text
+msgid  "~New return address"
+msgstr "~Nov povratni naslov"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 1.String.Text
+msgid  "Important Information!"
+msgstr "Pomembne informacije!"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 2.String.Text
+msgid  "For your information"
+msgstr "V vednost"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 3.String.Text
+msgid  "News!"
+msgstr "Novice!"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 1.String.Text
+msgid  "To whom it may concern,"
+msgstr "Kogar zadeva,"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 2.String.Text
+msgid  "Dear Sir or Madam,"
+msgstr "Dragi gospod ali gospa"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 3.String.Text
+msgid  "Hello,"
+msgstr "Pozdravljeni,"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 4.String.Text
+msgid  "Hi,"
+msgstr "Živijo,"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 1.String.Text
+msgid  "Sincerely"
+msgstr "Z iskrenimi pozdravi"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 2.String.Text
+msgid  "Yours faithfully"
+msgstr "S spoštovanjem"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 3.String.Text
+msgid  "Regards"
+msgstr "S pozdravi"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 4.String.Text
+msgid  "Love"
+msgstr "Z ljubeznijo"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 1.String.Text
+msgid  "Page design"
+msgstr "Oblikovanje strani"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 2.String.Text
+msgid  "Items to include"
+msgstr "Vsebovani elementi"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 3.String.Text
+msgid  "Sender and Recipient"
+msgstr "Pošiljatelj in prejemnik"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 4.String.Text
+msgid  "Footer"
+msgstr "Noga"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 5.String.Text
+msgid  "Name and location"
+msgstr "Ime in lokacija"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +1.String.Text
+msgid  "Web Wizard"
+msgstr "Čarovnik za splet"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr "Čarovnik za objavo v spletu vam pomaga objaviti dokumente v spletu.\n\nDokumente bo pretvoril tako, da si jih bo mogoče ogledati s spletnim brskalnikom. Poleg tega bo ustvaril vsebinsko kazalo s povezavami za lažji dostop do dokumentov. Čarovnik za objavo v spletu vam bo dovolil tudi prilagoditev videza vaše spletne strani.\n\nOmogoča vam vzdrževanje zadnje različice dokumentov, objavljenih v spletu, ki jih lahko kadarkoli tudi dodate ali odstranite."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
+msgid  "~Delete"
+msgstr "~Izbriši"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +5.String.Text
+msgid  "Introduction"
+msgstr "Uvod"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +6.String.Text
+msgid  "Select the documents you want to publish"
+msgstr "Izberite dokumente, ki jih želite objaviti"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +8.String.Text
+msgid  "Document information "
+msgstr "Podatki o dokumentu"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +9.String.Text
+msgid  "~Title:"
+msgstr "~Naslov:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +10.String.Text
+msgid  "~Summary: "
+msgstr "Pov~zetek: "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +11.String.Text
+msgid  "Au~thor:"
+msgstr "Av~tor:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +12.String.Text
+msgid  "~Export to file format:"
+msgstr "~Izvozi v vrsto datotek:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +13.String.Text
+msgid  "Enter general information for your web site"
+msgstr "Vnestite splošne podakte o svojem spletnem mestu"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +14.String.Text
+msgid  "Title:"
+msgstr "Naslov:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +16.String.Text
+msgid  "Description:"
+msgstr "Opis:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +18.String.Text
+msgid  "Created:"
+msgstr "Ustvarjeno:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +20.String.Text
+msgid  "E-mail:"
+msgstr "E-pošta:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +21.String.Text
+msgid  "Copyright notice:"
+msgstr "Izjava o avtorski zaščiti:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +22.String.Text
+msgid  "Modified:"
+msgstr "Spremenjeno:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +24.String.Text
+msgid  "~Preview"
+msgstr "~Predogled"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +25.String.Text
+msgid  "Where do you want to publish your web site?"
+msgstr "Kje želite objaviti svoje spletno mesto?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +26.String.Text
+msgid  "Publish the new web site:"
+msgstr "Objavi novo spletno mesto:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +27.String.Text
+msgid  "To a ~local folder"
+msgstr "v ~krajevni mapi"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +28.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +29.String.Text
+msgid  "To a ~web server via FTP"
+msgstr "na ~spletnem strežniku prek FTP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +31.String.Text
+msgid  "~Configure..."
+msgstr "~Prilagodi ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +32.String.Text
+msgid  "To a ZIP ~archive"
+msgstr "v ~arhivu ZIP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +33.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +34.String.Text
+msgid  "~Save settings (recommended)"
+msgstr "~Shrani nastavitve (priporočeno)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +35.String.Text
+msgid  "Save ~as:"
+msgstr "Shrani ~kot:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +36.String.Text
+msgid  "~Choose settings for the Web Wizard"
+msgstr "~Izberite nastavitve za čarovnik za splet"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +37.String.Text
+msgid  "Web site content "
+msgstr "Vsebina spletnega mesta"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +38.String.Text
+msgid  "~Add..."
+msgstr "~Dodaj ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +39.String.Text
+msgid  "Remo~ve"
+msgstr "~Odstrani"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +40.String.Text
+msgid  "Choose a layout for the table of contents of your web site"
+msgstr "Izberite postavitev kazala vsebine za svoje spletno mesto"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +41.String.Text
+msgid  "Select a style for the table of contents page"
+msgstr "Izberite slog za stran kazala"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +42.String.Text
+msgid  "~Style:"
+msgstr "~Slog:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +48.String.Text
+msgid  "~Layouts: "
+msgstr "~Postavitve: "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +50.String.Text
+msgid  "~Description"
+msgstr "~Opis"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +51.String.Text
+msgid  "~Author"
+msgstr "~Avtor"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +52.String.Text
+msgid  "Cr~eation date"
+msgstr "Datum ~nastanka"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +53.String.Text
+msgid  "~Last change date"
+msgstr "Datum ~zadnje spremembe"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +54.String.Text
+msgid  "~File name"
+msgstr "Ime ~datoteke"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +55.String.Text
+msgid  "File forma~t"
+msgstr "Vrs~ta datoteke"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +56.String.Text
+msgid  "File format ~icon"
+msgstr "~Ikona vrste datoteke"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +57.String.Text
+msgid  "Number ~of pages"
+msgstr "Števil~o strani"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +58.String.Text
+msgid  "~Size in KB"
+msgstr "~Velikost v KB"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
+msgid  "Click 'Preview' to see a preview in your browser:"
+msgstr "Kliknite 'Predogled' za predogled v svojem brskalniku:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
+msgid  "Customize the selected layout"
+msgstr "Prilagoti izbrano postavitev"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
+msgid  "Include the following information for each document in the table of contents:"
+msgstr "Vključi naslednje podatke za vsak dokument v kazalu vsebine:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
+msgid  "Optimize the layout for screen resolution:"
+msgstr "Optimiziraj postavitev za ločljivost zaslona:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +64.String.Text
+msgid  "~640x480"
+msgstr "~640x480"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +65.String.Text
+msgid  "~800x600"
+msgstr "~800x600"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +66.String.Text
+msgid  "~1024x768"
+msgstr "~1024x768"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +70.String.Text
+msgid  "Generating Your Web Site"
+msgstr "Ustvarjanje vaših spletnih strani"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +71.String.Text
+msgid  "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +72.String.Text
+msgid  "myWebsite"
+msgstr "mojeSpletnoMesto"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +73.String.Text
+msgid  "FTP target '%FILENAME' is a file."
+msgstr "Cilj FTP '%FILENAME' je datoteka."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +74.String.Text
+msgid  "The local target '%FILENAME' is a file."
+msgstr "Krajevna tarča '%FILENAME' je datoteka."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
+msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgstr "Ciljna datoteka ZIP z imenom '%FILENAME' že obstaja. Jo želite prepisati?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
+msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "Ciljna mapa FTP '%FILENAME' ni prazna. Nekatere datoteke bodo morda prepisane. Želite nadaljevati?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
+msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "Lokalna ciljna mapa '%FILENAME' ni prazna. Nekatere datoteke bodo morda prepisane. Želite nadaljevati?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
+msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr "Pod danim imenom nastavitve že obstajajo. Želite prepisati obstoječe nastavitve?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
+msgid  "Exporting documents..."
+msgstr "Izvoz dokumentov ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +80.String.Text
+msgid  "Preparing export..."
+msgstr "Priprava na izvoz ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +81.String.Text
+msgid  "Copying layout files..."
+msgstr "Kopiranje datotek postavitve ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +82.String.Text
+msgid  "Preparing table of contents generation..."
+msgstr "Priprava tvorbe kazala vsebine ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +83.String.Text
+msgid  "Generating table of contents..."
+msgstr "Ustvarjanje kazala vsebine ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +84.String.Text
+msgid  "Initializing..."
+msgstr "Inicializacija ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +86.String.Text
+msgid  "Preparing to publish..."
+msgstr "Priprave na objavo ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +87.String.Text
+msgid  "Publishing to local directory..."
+msgstr "Objava v krajevni mapi ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +88.String.Text
+msgid  "Publishing to FTP destination..."
+msgstr "Objava na ciljnem FTP ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +89.String.Text
+msgid  "Publishing to a ZIP archive..."
+msgstr "Objava v arhivu ZIP ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 90.String.Text
+msgid  "Finishing..."
+msgstr "Zaključevanje ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 94.String.Text
+msgid  "Graphic files"
+msgstr "Slikovne datoteke"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 95.String.Text
+msgid  "All files"
+msgstr "Vse datoteke"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 96.String.Text
+msgid  "~ZIP archive files"
+msgstr "Arhivske datoteke ~ZIP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 98.String.Text
+msgid  "Background images"
+msgstr "Slike ozadja"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 99.String.Text
+msgid  "Choose a background image: "
+msgstr "Izberite sliko ozadja: "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 100.String.Text
+msgid  "Icon sets"
+msgstr "Nabor ikon"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 101.String.Text
+msgid  "Choose an icon set:"
+msgstr "Izberite nabor ikon:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +102.String.Text
+msgid  "Other..."
+msgstr "Drugo ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +103.String.Text
+msgid  "None"
+msgstr "Brez"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +104.String.Text
+msgid  "Your web site was created successfully into: %FILENAME"
+msgstr "Spletno mesto je bilo uspešno ustvarjeno v: %FILENAME"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +105.String.Text
+msgid  "One or more errors occurred when generating the web site."
+msgstr "Pri izdelavi spletnega mesta je prišlo do ene ali več napak."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
+msgid  "An error occurred while generating the table of contents page(s). "
+msgstr "Pri ustvarjanju strani s kazalom vsebine je prišlo do napake."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +107.String.Text
+msgid  "An error occurred while copying the layout files. "
+msgstr "Pri kopiranju datotek postavitve je prišlo do napake."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
+msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgstr "Pri zbiranju podatkov za '%FILENAME' je prišlo do napake. "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
+msgid  "An error occurred while exporting the document '%FILENAME'."
+msgstr "Pri izvozu dokumenta '%FILENAME' je prišlo do napake."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
+msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "Pri ustvarjanju mape za izvoz dokumenta '%FILENAME' je prišlo do napake."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
+msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgstr "Pri izvozu dokumenta '%FILENAME' je prišlo do varnostne napake."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
+msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "Pri izvozu dokumenta '%FILENAME' je prišlo do vhodno/izhodne napake."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
+msgid  "An error occurred while copying media files to the temporary directory."
+msgstr "Pri kopiranju medijskih datotek v začasno mapo je prišlo do napake."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
+msgid  "The web site could not be copied to the following destination: %URL"
+msgstr "Spletnega mesta ni bilo možno kopirati na sledeči cilj: %URL"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +115.String.Text
+msgid  "An unexpected error occurred: %ERROR"
+msgstr "Prišlo je do nepričakovane napake: %ERROR"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
+msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "Prišlo je do nepričakovane napake pri potrjevanju datoteke: '%FILENAME'"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
+msgid  "%FILENAME' is a folder."
+msgstr "%FILENAME' je mapa."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +118.String.Text
+msgid  "Loading Web Wizard Settings..."
+msgstr "Nalaganje nastavitev čarovnika za splet ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +119.String.Text
+msgid  "An unexpected error occurred."
+msgstr "Prišlo je do nepričakovane napake."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +120.String.Text
+msgid  "Validating documents..."
+msgstr "Potrjevanje dokumentov ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +121.String.Text
+msgid  "My Archive"
+msgstr "Moj arhiv"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +122.String.Text
+msgid  "Introduction "
+msgstr "Uvod"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +123.String.Text
+msgid  "Documents "
+msgstr "Dokumenti"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +124.String.Text
+msgid  "Main layout"
+msgstr "Glavna postavitev"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +125.String.Text
+msgid  "Layout details"
+msgstr "Podrobnosti postavitve"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +126.String.Text
+msgid  "Style"
+msgstr "Slog"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +127.String.Text
+msgid  "Web site information"
+msgstr "Podatki o spletnem mestu"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +128.String.Text
+msgid  "Preview"
+msgstr "Predogled"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr "Izbrane nastavitve bodo izbrisane.\n\nŽelite brisati te nastavitve?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
+msgid  "%NUMBER pages"
+msgstr "%NUMBER strani"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +132.String.Text
+msgid  "%NUMBER slides"
+msgstr "%NUMBER prosojnic"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +133.String.Text
+msgid  "Created: %DATE"
+msgstr "Ustvarjeno: %DATE"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +134.String.Text
+msgid  "Last modified: %DATE"
+msgstr "Zadnja sprememba: %DATE"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +135.String.Text
+msgid  "Web Wizard Settings"
+msgstr "Nastavitve čarovnika za splet"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +136.String.Text
+msgid  "Background image:"
+msgstr "Slika ozadja:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +137.String.Text
+msgid  "Icon set:"
+msgstr "Nabor ikon:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +138.String.Text
+msgid  "The icon set is used for presentations in HTML format."
+msgstr "Nabor ikon je uporabljen za predstavitve v zapisu HTML."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +139.String.Text
+msgid  "HTML Metadata"
+msgstr "Metapodatki HTML"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +140.String.Text
+msgid  "Choose..."
+msgstr "Izberi ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +141.String.Text
+msgid  "Choose..."
+msgstr "Izberi ..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +142.String.Text
+msgid  "<default>"
+msgstr "<privzeto>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +143.String.Text
+msgid  "Publishing via FTP Proxy is not supported."
+msgstr "Objavljanje prek posredovalnega strežnika za FTP ni podprto."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +144.String.Text
+msgid  "<no background image>"
+msgstr "<brez slike ozadja>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +145.String.Text
+msgid  "<no icon set>"
+msgstr "<brez nabora ikon>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +146.String.Text
+msgid  "The FTP directory '%FILENAME' could not be created."
+msgstr "Mape FTP '%FILENAME' ni mogoče ustvariti."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr "Mapa FTP '%FILENAME' ne obstaja.\nŽelite ustvariti mapo?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
+msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr "Datoteke Zip '%FILENAME' ni mogoče ustvariti: mapa z istim imenom že obstaja."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr "Krajevne mape '%FILENAME' no mogoče ustvariti.\nPreverite, ali imate dostop za pisanje."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr "Krajevna mapa '%FILENAME' ne obstaja.\nŽelite ustvariti mapo?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
+msgid  "Size: %NUMBERKB"
+msgstr "Velikost: %NUMBERKB"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +152.String.Text
+msgid  "File not found. Would you like to specify a new file location?"
+msgstr "Datoteke ni mogoče najti. Želite določiti novo mesto datoteke?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +0.String.Text
+msgid  "FTP Connection"
+msgstr "Povezava FTP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +1.String.Text
+msgid  "~User name:"
+msgstr "~Uporabniško ime:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +2.String.Text
+msgid  "~Password:"
+msgstr "~Geslo:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +3.String.Text
+msgid  "Connect"
+msgstr "Poveži"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +4.String.Text
+msgid  "1. Enter FTP connection information."
+msgstr "1. Vnesite podatke o povezavi FTP."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +5.String.Text
+msgid  "~Server name or IP address:"
+msgstr "Ime ~strežnika ali naslov IP:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +6.String.Text
+msgid  "2. Connect to the server."
+msgstr "2. Povežite se s strežnikom."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +7.String.Text
+msgid  "3. ~Choose a remote directory (optional)."
+msgstr "3. ~Izberite oddaljeno mapo (dodatno)."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +8.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +9.String.Text
+msgid  "Connection status is unknown"
+msgstr "Stanje povezave ni znano"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +10.String.Text
+msgid  "Connection was established successfully"
+msgstr "Povezava uspešno vzpostavljena"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +11.String.Text
+msgid  "Username or password is wrong"
+msgstr "Uporabniško ime ali geslo je napačno"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +12.String.Text
+msgid  "Could not resolve server name"
+msgstr "Imena strežnika ni možno razločiti"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +13.String.Text
+msgid  "You do not have sufficient user rights"
+msgstr "Nimate zadostnih uporabniških pravic"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +14.String.Text
+msgid  "Cannot connect to server"
+msgstr "Povezava s strežnikom ni uspela"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +15.String.Text
+msgid  "Unexpected error"
+msgstr "Nepričakovana napaka"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +16.String.Text
+msgid  "FTP publishing directory"
+msgstr "Mapa za objavo prek FTP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +17.String.Text
+msgid  "This is not an FTP folder"
+msgstr "To ni mapa FTP"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +18.String.Text
+msgid  "Connecting..."
+msgstr "Povezovanje ..."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +1.String.Text
+msgid  "Agenda Wizard"
+msgstr "Čarovnik za dnevni red"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +2.String.Text
+msgid  "Make ~manual changes to this agenda template"
+msgstr "Opravite ~ročne spremembe predloge dnevnega reda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +3.String.Text
+msgid  "Template name:"
+msgstr "Ime predloge:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 4.String.Text
+msgid  "Location and file name:"
+msgstr "Mesto in ime datoteke:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +5.String.Text
+msgid  "What do you want to do next?"
+msgstr "Kaj želite zdaj storiti?"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +6.String.Text
+msgid  "Please choose the page design for the agenda"
+msgstr "Prosimo, izberite oblikovanje strani za dnevni red"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
+msgid  "Please select the headings you wish to include in your agenda template"
+msgstr "Prosimo, izberite naslove, ki jih želite vključiti v svojo predlogo dnevnega reda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
+msgid  "Please enter general information for the event"
+msgstr "Prosimo, vnesite splošne podatke o dogodku"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +9.String.Text
+msgid  "Please specify items for the agenda"
+msgstr "Prosimo, navedite točke dnevnega reda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +10.String.Text
+msgid  "Please select the names you wish to include in your agenda template"
+msgstr "Prosimo, izberite imena, ki jih želite vključiti v svojo predlogo dnevnega reda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +11.String.Text
+msgid  "Choose a name and save the template"
+msgstr "Izberite ime in shranite predlogo"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +12.String.Text
+msgid  "Include form for recording minutes"
+msgstr "Vključi obrazec za beleženje zapiskov"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
+msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr "Čarovnik pomaga ustvariti predlogo dnevnega reda. Predlogo lahko nato uporabite za ustvarjanje dnevnega reda, kadar ga potrebujete."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
+msgid  "Time:"
+msgstr "Čas:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +15.String.Text
+msgid  "Name:"
+msgstr "Ime:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 16.String.Text
+msgid  "Location:"
+msgstr "Mesto:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
+msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr "Ograde bodo uporabljene v praznih poljih. Ograde lahko z besedilom nadomestite kasneje."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +19.String.Text
+msgid  "Create an ~agenda from this template"
+msgstr "Ustvari ~dnevni red iz te predloge"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
+msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Za ustvarjanje novega dnevnega reda iz predloge pojdite na mesto, kjer ste shranili predlogo in dvokliknite datoteko."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
+msgid  "Agenda item"
+msgstr "Točka dnevnega reda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +22.String.Text
+msgid  "Responsible"
+msgstr "Odgovoren"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +23.String.Text
+msgid  "Duration"
+msgstr "Trajanje"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +24.String.Text
+msgid  "Meeting called by"
+msgstr "Sklicatelj sestanka"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
+msgid  "Chairperson"
+msgstr "Predsedujoči"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
+msgid  "Minute keeper"
+msgstr "Zapisnikar"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
+msgid  "Moderator"
+msgstr "Povezovalec"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +28.String.Text
+msgid  "Attendees"
+msgstr "Udeleženci"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
+msgid  "Observers"
+msgstr "Opazovalci"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
+msgid  "Facility personnel"
+msgstr "Osebje mesta sestanka"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
+msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr "Predloga za dnevni red vključuje ograde za imena izbranih oseb. Ko ustvarjate dnevni red iz predloge, lahko te ograde zamenjate z ustreznimi imeni."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
+msgid  "Type of meeting"
+msgstr "Vrsta sestanka"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +33.String.Text
+msgid  "Please read"
+msgstr "Prosimo, preberite"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +34.String.Text
+msgid  "Please bring"
+msgstr "Prosimo, prinesite"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +35.String.Text
+msgid  "Notes"
+msgstr "Opombe"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
+msgid  "The agenda template will include placeholders for the selected items."
+msgstr "Predloga za dnevni red vključuje ograde za izbrane elemente."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
+msgid  "Date:"
+msgstr "Datum:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
+msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr "Ta čarovnik ustvari predlogo dnevnega reda, ki vam omogoča ustvarjanje več dnevnih redov z enako postavitvijo in nastavitvami."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
+msgid  "Page design:"
+msgstr "Oblikovanje strani:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +41.String.Text
+msgid  "myAgendaTemplate.stw"
+msgstr "mojaPredlogaDnevnegaReda.stw"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +42.String.Text
+msgid  "My Agenda Template"
+msgstr "Moja predloga dnevnega reda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +43.String.Text
+msgid  "An unexpected error occurred while saving the agenda template."
+msgstr "Pri shranjevanju predloge dnevnega reda je prišlo do nepričakovane napake."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +44.String.Text
+msgid  "Name"
+msgstr "Ime"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +45.String.Text
+msgid  "Date"
+msgstr "Datum"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +46.String.Text
+msgid  "Time"
+msgstr "Čas"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 47.String.Text
+msgid  "Location"
+msgstr "Mesto"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +48.String.Text
+msgid  "Click to replace this text"
+msgstr "Kliknite za zamenjavo tega besedila"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +50.String.Text
+msgid  "Page design"
+msgstr "Oblikovanje strani"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +51.String.Text
+msgid  "General information"
+msgstr "Splošni podatki"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +52.String.Text
+msgid  "Headings to include"
+msgstr "Vključeni naslovi"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +53.String.Text
+msgid  "Names"
+msgstr "Imena"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +54.String.Text
+msgid  "Agenda items"
+msgstr "Točke dnevnega reda"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +55.String.Text
+msgid  "Name and location"
+msgstr "Ime in lokacija"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +56.String.Text
+msgid  "An unexpected error occurred while opening the agenda template."
+msgstr "Pri odpiranju predloge dnevnega reda je prišlo do nepričakovane napake."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +57.String.Text
+msgid  "Type of meeting"
+msgstr "Vrsta sestanka"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +58.String.Text
+msgid  "Please bring"
+msgstr "Prosimo, prinesite"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +59.String.Text
+msgid  "Please read"
+msgstr "Prosimo, preberite"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +60.String.Text
+msgid  "Notes"
+msgstr "Opombe"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +61.String.Text
+msgid  "Meeting called by"
+msgstr "Sklicatelj sestanka"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +62.String.Text
+msgid  "Chairperson"
+msgstr "Predsedujoči"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +63.String.Text
+msgid  "Attendees"
+msgstr "Udeleženci"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +64.String.Text
+msgid  "Minute keeper"
+msgstr "Zapisnikar"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +65.String.Text
+msgid  "Moderator"
+msgstr "Povezovalec"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +66.String.Text
+msgid  "Observers"
+msgstr "Opazovalci"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +67.String.Text
+msgid  "Facility personnel"
+msgstr "Osebje mesta sestanka"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +68.String.Text
+msgid  "Insert"
+msgstr "Vstavi"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +69.String.Text
+msgid  "Remove"
+msgstr "Odstrani"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +70.String.Text
+msgid  "Move up"
+msgstr "Premakni navzgor"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +71.String.Text
+msgid  "Move down"
+msgstr "Premakni navzdol"
+
+#: source/importwizard/importwi.src#sHelpButton.String.Text
+msgid  "~Help"
+msgstr "~Pomoč"
+
+#: source/importwizard/importwi.src#sCancelButton.String.Text
+msgid  "~Cancel"
+msgstr "Pre~kliči"
+
+#: source/importwizard/importwi.src#sBackButton.String.Text
+msgid  "<< ~Back"
+msgstr "<< N~azaj"
+
+#: source/importwizard/importwi.src#sNextButton.String.Text
+msgid  "Ne~xt >>"
+msgstr "N~adaljuj >>"
+
+#: source/importwizard/importwi.src#sBeginButton.String.Text
+msgid  "~Convert"
+msgstr "Pre~tvori"
+
+#: source/importwizard/importwi.src#sCloseButton.String.Text
+msgid  "~Close"
+msgstr "Z~apri"
+
+#: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr "Ta čarovnik pretvori dokumente v zapisu %PRODUCTNAME in dokumente Microsoft Office v novi zapis OpenDocument."
+
+#: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr "Upoštevajte, da pri pretvarjanju Microsoftovih dokumentov postanejo pripeti VBA makri neuporabni."
+
+#: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+msgid  "Select the document type for conversion:"
+msgstr "Izberite vrsto dokumenta za pretvorbo:"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+msgid  "Word templates"
+msgstr "Predloge programa Word"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+msgid  "Excel templates"
+msgstr "Predloge programa Excel"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+msgid  "PowerPoint templates"
+msgstr "Predloge programa Powerpoint"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+msgid  "Word documents"
+msgstr "Dokumenti programa Word"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+msgid  "Excel documents"
+msgstr "Dokumenti programa Excel"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+msgid  "PowerPoint documents"
+msgstr "Dokumenti programa Powerpoint"
+
+#: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+msgid  "Including subdirectories"
+msgstr "Vključno s podmapami"
+
+#: source/importwizard/importwi.src#sMSContainerName.String.Text
+msgid  "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: source/importwizard/importwi.src#sSummaryHeader.String.Text
+msgid  "Summary:"
+msgstr "Povzetek:"
+
+#: source/importwizard/importwi.src#sTextImportLabel.String.Text
+msgid  "Import from:"
+msgstr "Uvozi iz:"
+
+#: source/importwizard/importwi.src#sTextExportLabel.String.Text
+msgid  "Save to:"
+msgstr "Shrani v:"
+
+#: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+msgid  "Imported_Templates"
+msgstr "Uvožene_predloge"
+
+#: source/importwizard/importwi.src#sProgressDesc1.String.Text
+msgid  "Progress: "
+msgstr "Napredek: "
+
+#: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+msgid  "Document"
+msgstr "Dokument"
+
+#: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+msgid  "Documents"
+msgstr "Dokumenti"
+
+#: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+msgid  "Templates"
+msgstr "Predloge"
+
+#: source/importwizard/importwi.src#sNoDirCreation.String.Text
+msgid  "The '%1' directory cannot be created: "
+msgstr "Mape '%1' ni mogoče ustvariti: "
+
+#: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+msgid  "The '%1' directory does not exist."
+msgstr "Mapa '%1' ne obstaja."
+
+#: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+msgid  "Do you want to create it now?"
+msgstr "Ali jo želite ustvariti sedaj?"
+
+#: source/importwizard/importwi.src#sFileExists.String.Text
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Datoteka '<1>' že obstaja.<CR>Ali jo želite prepisati?"
+
+#: source/importwizard/importwi.src#sMorePathsError3.String.Text
+msgid  "Directories do not exist"
+msgstr "Ni map"
+
+#: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+msgid  "Do you want to overwrite documents without being asked?"
+msgstr "Ali želite prepisati dokumente brez opozorila?"
+
+#: source/importwizard/importwi.src#sreeditMacro.String.Text
+msgid  "Document macro has to be revised."
+msgstr "Preglejte makro dokumenta."
+
+#: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+msgid  "Document '<1>' could not be saved."
+msgstr "Dokumenta '<1>' ni bilo mogoče shraniti."
+
+#: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+msgid  "Document '<1>' could not be opened."
+msgstr "Dokumenta '<1>' ni bilo mogoče odpreti."
+
+#: source/importwizard/importwi.src#sConvertError1.String.Text
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Ali ste prepričani, da želite sedaj prekiniti pretvorbo?"
+
+#: source/importwizard/importwi.src#sConvertError2.String.Text
+msgid  "Cancel Wizard"
+msgstr "Prekliči čarovnika"
+
+#: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+msgid  "An unexpected error has occurred in the wizard."
+msgstr "V čarovniku je prišlo do nepričakovane napake."
+
+#: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+msgid  "Error"
+msgstr "Napaka"
+
+#: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+msgid  "Select a directory"
+msgstr "Izberite mapo"
+
+#: source/importwizard/importwi.src#sDialogTitle.String.Text
+msgid  "Document Converter"
+msgstr "Pretvornik dokumentov"
+
+#: source/importwizard/importwi.src#sProgressPage1.String.Text
+msgid  "Progress"
+msgstr "Napredek"
+
+#: source/importwizard/importwi.src#sProgressPage2.String.Text
+msgid  "Retrieving the relevant documents:"
+msgstr "Iskanje pomembnih dokumentov:"
+
+#: source/importwizard/importwi.src#sProgressPage3.String.Text
+msgid  "Converting the documents"
+msgstr "Pretvarjanje dokumentov"
+
+#: source/importwizard/importwi.src#sProgressFound.String.Text
+msgid  "Found:"
+msgstr "Najdeno:"
+
+#: source/importwizard/importwi.src#sProgressPage5.String.Text
+msgid  "%1 found"
+msgstr "%1 najdenih"
+
+#: source/importwizard/importwi.src#sReady.String.Text
+msgid  "Finished"
+msgstr "Končano"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+msgid  "Text templates"
+msgstr "Predloge za besedilo"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+msgid  "Spreadsheet templates"
+msgstr "Predloge za preglednice"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+msgid  "Drawing/presentation templates"
+msgstr "Predloge za risbe/predstavitve"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+msgid  "Master documents"
+msgstr "Glavni dokumenti"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+msgid  "Text documents"
+msgstr "Dokumenti z besedilom"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+msgid  "Spreadsheets"
+msgstr "Preglednice"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+msgid  "Drawing/presentation documents"
+msgstr "Dokument z risbami/predstavitvami"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+msgid  "Master documents/formulas"
+msgstr "Glavni dokumenti/formule"
+
+#: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+msgid  "Master documents"
+msgstr "Glavni dokumenti"
+
+#: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+msgid  "Formulas"
+msgstr "Formule"
+
+#: source/importwizard/importwi.src#sSourceDocuments.String.Text
+msgid  "Source documents"
+msgstr "Izvorni dokumenti"
+
+#: source/importwizard/importwi.src#sTargetDocuments.String.Text
+msgid  "Target documents"
+msgstr "Ciljni dokumenti"
+
+#: source/importwizard/importwi.src#sCreateLogfile.String.Text
+msgid  "Create log file"
+msgstr "Ustvari dnevnik"
+
+#: source/importwizard/importwi.src#sLogfileSummary.String.Text
+msgid  "<COUNT> documents converted"
+msgstr "<COUNT> dokumentov pretvorjenih"
+
+#: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+msgid  "A log file will be created in your work directory"
+msgstr "Dnevnik bo ustvarjen v vaši delovni mapi"
+
+#: source/importwizard/importwi.src#sshowLogfile.String.Text
+msgid  "Show log file"
+msgstr "Pokaži dnevniško datoteko"
+
+#: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+msgid  "All subdirectories will be taken into account"
+msgstr "Upoštevane bodo vse podmape"
+
+#: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+msgid  "These will be exported to the following directory:"
+msgstr "Te datoteke bodo izvožene v naslednjo mapo:"
+
+#: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr "Uvoženi bodo vsi dokumenti z besedilom programa %PRODUCTNAME, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr "Uvožene bodo vse preglednice programa %PRODUCTNAME, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr "Uvoženi bodo vsi dokumenti z risbami in predstavitvami programa %PRODUCTNAME, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr "Uvoženi bodo vsi dokumenti s formulami programa %PRODUCTNAME, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr "Uvožene bodo vse predloge za besedilo programa %PRODUCTNAME, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr "Uvožene bodo vse predloge za tabele programa %PRODUCTNAME, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr "Uvožene bodo vse predloge za risbe in predstavitve programa %PRODUCTNAME, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr "Uvoženi bodo vsi glavni dokumenti programa %PRODUCTNAME, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+msgid  "All Word documents contained in the following directory will be imported:"
+msgstr "Uvoženi bodo vsi dokumenti programa Word, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+msgid  "All Excel documents contained in the following directory will be imported:"
+msgstr "Uvoženi bodo vsi dokumenti programa Excel, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgstr "Uvoženi bodo vsi dokumenti programa PowerPoint, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+msgid  "All Word templates contained in the following directory will be imported:"
+msgstr "Uvožene bodo vse predloge programa Word, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+msgid  "All Excel templates contained in the following directory will be imported:"
+msgstr "Uvožene bodo vse predloge programa Excel, ki so v mapi:"
+
+#: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgstr "Uvožene bodo vse predloge programa PowerPoint, ki so v mapi:"
+
+#: source/schedule/schedule.src#dlgCalTitle.String.Text
+msgid  "%PRODUCTNAME Calendar"
+msgstr "Koledar programa %PRODUCTNAME"
+
+#: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+msgid  "Back"
+msgstr "Nazaj"
+
+#: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+msgid  "Personal Data"
+msgstr "Osebni podatki"
+
+#: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+msgid  "Add Holidays to Calendar"
+msgstr "Na koledar dodaj praznike"
+
+#: source/schedule/schedule.src#dlgOK.String.Text
+msgid  "Create"
+msgstr "Ustvari"
+
+#: source/schedule/schedule.src#dlgCancel.String.Text
+msgid  "Cancel"
+msgstr "Prekliči"
+
+#: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+msgid  "Calendar"
+msgstr "Koledar"
+
+#: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+msgid  "~Year Overview"
+msgstr "~Letni pregled"
+
+#: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+msgid  "~Month"
+msgstr "~Mesec"
+
+#: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+msgid  "Add holidays for"
+msgstr "Dodaj praznike za"
+
+#: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+msgid  "USA"
+msgstr "ZDA"
+
+#: source/schedule/schedule.src#dlgTime.String.Text
+msgid  "Time Frame"
+msgstr "Časovni okvir"
+
+#: source/schedule/schedule.src#dlgYear.String.Text
+msgid  "Year"
+msgstr "Leto"
+
+#: source/schedule/schedule.src#dlgCalMonth.String.Text
+msgid  "Month"
+msgstr "Mesec"
+
+#: source/schedule/schedule.src#dlgCalOwnData.String.Text
+msgid  "Personal Data"
+msgstr "Osebni podatki"
+
+#: source/schedule/schedule.src#dlgCalInsert.String.Text
+msgid  "~Insert"
+msgstr "~Vstavi"
+
+#: source/schedule/schedule.src#dlgCalDelete.String.Text
+msgid  "~Delete"
+msgstr "~Izbriši"
+
+#: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+msgid  "New Event"
+msgstr "Nov dogodek"
+
+#: source/schedule/schedule.src#dlgCalEvent.String.Text
+msgid  "Event"
+msgstr "Dogodek"
+
+#: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+msgid  "One-Time"
+msgstr "Enkraten"
+
+#: source/schedule/schedule.src#dlgCalEventDay.String.Text
+msgid  "Day"
+msgstr "Dan"
+
+#: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+msgid  "Month"
+msgstr "Mesec"
+
+#: source/schedule/schedule.src#dlgCalEventYear.String.Text
+msgid  "Year"
+msgstr "Leto"
+
+#: source/schedule/schedule.src#dlgBitmapFile.String.Text
+msgid  "usa.bmp"
+msgstr "usa.bmp"
+
+#: source/schedule/schedule.src#dlgState.String.Text
+msgid  "Public holidays"
+msgstr "Državni prazniki"
+
+#: source/schedule/schedule.src#dlgMonth.String.Text
+msgid  "January"
+msgstr "Januar"
+
+#: source/schedule/schedule.src#dlgMonth+1.String.Text
+msgid  "February"
+msgstr "Februar"
+
+#: source/schedule/schedule.src#dlgMonth+2.String.Text
+msgid  "March"
+msgstr "Marec"
+
+#: source/schedule/schedule.src#dlgMonth+3.String.Text
+msgid  "April"
+msgstr "April"
+
+#: source/schedule/schedule.src#dlgMonth+4.String.Text
+msgid  "May"
+msgstr "Maj"
+
+#: source/schedule/schedule.src#dlgMonth+5.String.Text
+msgid  "June"
+msgstr "Junij"
+
+#: source/schedule/schedule.src#dlgMonth+6.String.Text
+msgid  "July"
+msgstr "Julij"
+
+#: source/schedule/schedule.src#dlgMonth+7.String.Text
+msgid  "August"
+msgstr "Avgust"
+
+#: source/schedule/schedule.src#dlgMonth+8.String.Text
+msgid  "September"
+msgstr "September"
+
+#: source/schedule/schedule.src#dlgMonth+9.String.Text
+msgid  "October"
+msgstr "Oktober"
+
+#: source/schedule/schedule.src#dlgMonth+10.String.Text
+msgid  "November"
+msgstr "November"
+
+#: source/schedule/schedule.src#dlgMonth+11.String.Text
+msgid  "December"
+msgstr "December"
+
+#: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+msgid  "Yearly / Monthly Calendar"
+msgstr "Letni / mesečni koledar"
+
+#: source/schedule/schedule.src#msgCalError.String.Text
+msgid  "An error occurred while creating the calendar."
+msgstr "Pri ustvarjanju koledarja je prišlo do napake."
+
+#: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+msgid  "Delete event entries"
+msgstr "Izbriši vnose dogodkov"
+
+#: source/schedule/schedule.src#msgCalRemove.String.Text
+msgid  "Delete the selected entries?"
+msgstr "Ali želite izbrisati izbrane vnose?"
+
+#: source/schedule/schedule.src#stlWorkday.String.Text
+msgid  "Workweek"
+msgstr "Delovni teden"
+
+#: source/schedule/schedule.src#stlWeekend.String.Text
+msgid  "Weekend"
+msgstr "Konec tedna"
+
+#: source/schedule/schedule.src#nameCalYear.String.Text
+msgid  "Calendar"
+msgstr "Koledar"
+
+#: source/schedule/schedule.src#nameCalMonth.String.Text
+msgid  "Month"
+msgstr "Mesec"
+
+#: source/schedule/schedule.src#sProgress.String.Text
+msgid  "Progress:"
+msgstr "Napredek:"
+
+#: source/template/template.src#SAMPLES.String.Text
+msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr "Če želite izkoristiti vse prednosti vzorca, ustvarite dokument, ki temelji na tej predlogi."
+
+#: source/template/template.src#SAMPLES + 1.String.Text
+msgid  "Remarks"
+msgstr "Pripombe"
+
+#: source/template/template.src#STYLES.String.Text
+msgid  "Theme Selection"
+msgstr "Izbor teme"
+
+#: source/template/template.src#STYLES + 1.String.Text
+msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr "Pri shranjevanju dokumenta v odložišče je prišlo do napake! Naslednjega dejanja ni mogoče razveljaviti."
+
+#: source/template/template.src#STYLES + 2.String.Text
+msgid  "~Cancel"
+msgstr "Pre~kliči"
+
+#: source/template/template.src#STYLES + 3.String.Text
+msgid  "~OK"
+msgstr "~V redu"
+
+#: source/template/template.src#AgendaDlgName.String.Text
+msgid  "Minutes Template"
+msgstr "Predloga zapisnika"
+
+#: source/template/template.src#AgendaDlgNoCancel.String.Text
+msgid  "An option must be confirmed."
+msgstr "Možnost morate potrditi."
+
+#: source/template/template.src#AgendaDlgFrame.String.Text
+msgid  "Minutes Type"
+msgstr "Vrsta zapisnika"
+
+#: source/template/template.src#AgendaDlgButton1.String.Text
+msgid  "Results Minutes"
+msgstr "Zapisnik o rezultatih"
+
+#: source/template/template.src#AgendaDlgButton2.String.Text
+msgid  "Evaluation Minutes"
+msgstr "Zapisnik o ocenah"
+
+#: source/template/template.src#CorrespondenceNoTextmark.String.Text
+msgid  "The bookmark 'Recipient' is missing."
+msgstr "Manjka zaznamek 'Prejemnik'."
+
+#: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+msgid  "Form letter fields can not be included."
+msgstr "Ni mogoče vključiti polj tipskih pisem."
+
+#: source/template/template.src#CorrespondenceMsgError.String.Text
+msgid  "An error has occurred."
+msgstr "Prišlo je do napake."
+
+#: source/template/template.src#CorrespondenceDialog.String.Text
+msgid  "Addressee"
+msgstr "Naslovnik"
+
+#: source/template/template.src#CorrespondenceDialog+1.String.Text
+msgid  "One recipient"
+msgstr "En prejemnik"
+
+#: source/template/template.src#CorrespondenceDialog+2.String.Text
+msgid  "Several recipients (address database)"
+msgstr "Več prejemnikov (adresar)"
+
+#: source/template/template.src#CorrespondenceDialog+3.String.Text
+msgid  "Use of This Template"
+msgstr "Uporaba te predloge"
+
+#: source/template/template.src#CorrespondenceFields.String.Text
+msgid  "Click placeholder and overwrite"
+msgstr "Klikni ogrado in prepiši"
+
+#: source/template/template.src#CorrespondenceFields+1.String.Text
+msgid  "Company"
+msgstr "Podjetje"
+
+#: source/template/template.src#CorrespondenceFields+2.String.Text
+msgid  "Department"
+msgstr "Oddelek"
+
+#: source/template/template.src#CorrespondenceFields+3.String.Text
+msgid  "First Name"
+msgstr "Ime"
+
+#: source/template/template.src#CorrespondenceFields+4.String.Text
+msgid  "Last Name"
+msgstr "Priimek"
+
+#: source/template/template.src#CorrespondenceFields+5.String.Text
+msgid  "Street"
+msgstr "Ulica"
+
+#: source/template/template.src#CorrespondenceFields+6.String.Text
+msgid  "Country"
+msgstr "Država"
+
+#: source/template/template.src#CorrespondenceFields+7.String.Text
+msgid  "ZIP/Postal Code"
+msgstr "Poštna številka"
+
+#: source/template/template.src#CorrespondenceFields+8.String.Text
+msgid  "City"
+msgstr "Mesto"
+
+#: source/template/template.src#CorrespondenceFields+9.String.Text
+msgid  "Title"
+msgstr "Naslov"
+
+#: source/template/template.src#CorrespondenceFields+10.String.Text
+msgid  "Position"
+msgstr "Položaj"
+
+#: source/template/template.src#CorrespondenceFields+11.String.Text
+msgid  "Form of Address"
+msgstr "Naziv"
+
+#: source/template/template.src#CorrespondenceFields+12.String.Text
+msgid  "Initials"
+msgstr "Začetnice"
+
+#: source/template/template.src#CorrespondenceFields+13.String.Text
+msgid  "Salutation"
+msgstr "Uvodni pozdrav"
+
+#: source/template/template.src#CorrespondenceFields+14.String.Text
+msgid  "Home Phone"
+msgstr "Domači telefon"
+
+#: source/template/template.src#CorrespondenceFields+15.String.Text
+msgid  "Work Phone"
+msgstr "Službeni telefon"
+
+#: source/template/template.src#CorrespondenceFields+16.String.Text
+msgid  "Fax"
+msgstr "Faks"
+
+#: source/template/template.src#CorrespondenceFields+17.String.Text
+msgid  "E-Mail"
+msgstr "E-pošta"
+
+#: source/template/template.src#CorrespondenceFields+18.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/template/template.src#CorrespondenceFields+19.String.Text
+msgid  "Notes"
+msgstr "Opombe"
+
+#: source/template/template.src#CorrespondenceFields+20.String.Text
+msgid  "Alt. Field 1"
+msgstr "Izb. polje 1"
+
+#: source/template/template.src#CorrespondenceFields+21.String.Text
+msgid  "Alt. Field 2"
+msgstr "Izb. polje 2"
+
+#: source/template/template.src#CorrespondenceFields+22.String.Text
+msgid  "Alt. Field 3"
+msgstr "Izb. polje 3"
+
+#: source/template/template.src#CorrespondenceFields+23.String.Text
+msgid  "Alt. Field 4"
+msgstr "Izb. polje 4"
+
+#: source/template/template.src#CorrespondenceFields+24.String.Text
+msgid  "ID"
+msgstr "ID"
+
+#: source/template/template.src#CorrespondenceFields+25.String.Text
+msgid  "State"
+msgstr "Pokrajina / zvezna država"
+
+#: source/template/template.src#CorrespondenceFields+26.String.Text
+msgid  "Office Phone"
+msgstr "Službeni telefon"
+
+#: source/template/template.src#CorrespondenceFields+27.String.Text
+msgid  "Pager"
+msgstr "Pozivnik"
+
+#: source/template/template.src#CorrespondenceFields+28.String.Text
+msgid  "Mobile Phone"
+msgstr "Mobilni telefon"
+
+#: source/template/template.src#CorrespondenceFields+29.String.Text
+msgid  "Other Phone"
+msgstr "Drug telefon"
+
+#: source/template/template.src#CorrespondenceFields+30.String.Text
+msgid  "Calendar URL"
+msgstr "URL koledarja"
+
+#: source/template/template.src#CorrespondenceFields+31.String.Text
+msgid  "Invite"
+msgstr "Povabilo"
+
+#: source/template/template.src#TextField.String.Text
+msgid  "User data field is not defined!"
+msgstr "Uporabniško podatkovno polje ni določeno!"
+
+#: source/template/template.src#Newsletter.String.Text
+msgid  "General layout"
+msgstr "Splošna postavitev"
+
+#: source/template/template.src#Newsletter + 1.String.Text
+msgid  "Default layout"
+msgstr "Privzeta postavitev"
+
+#: source/template/template.src#Newsletter + 2.String.Text
+msgid  "Commemorative publication layout"
+msgstr "Postavitev spominske izdaje"
+
+#: source/template/template.src#Newsletter + 3.String.Text
+msgid  "Brochure layout"
+msgstr "Postavitev brošure"
+
+#: source/template/template.src#Newsletter + 10.String.Text
+msgid  "Format"
+msgstr "Oblika"
+
+#: source/template/template.src#Newsletter + 11.String.Text
+msgid  "Single-sided"
+msgstr "Enostransko"
+
+#: source/template/template.src#Newsletter + 12.String.Text
+msgid  "Double-sided"
+msgstr "Dvostransko"

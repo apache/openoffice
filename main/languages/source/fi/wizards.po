@@ -1,0 +1,3712 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/euro/euro.src#STEP_ZERO.String.Text
+msgid  "~Cancel"
+msgstr "~Peruuta"
+
+#: source/euro/euro.src#STEP_ZERO + 1.String.Text
+msgid  "~Help"
+msgstr "~Ohje"
+
+#: source/euro/euro.src#STEP_ZERO + 2.String.Text
+msgid  "<<~Back"
+msgstr "<< ~Edellinen"
+
+#: source/euro/euro.src#STEP_ZERO + 3.String.Text
+msgid  "~Convert"
+msgstr "~Muunna"
+
+#: source/euro/euro.src#STEP_ZERO + 4.String.Text
+msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr "Huomautus: Ulkoisten linkkien valuuttamääriä ja kaavojen valuutanmuuntokertoimia ei voi muuntaa."
+
+#: source/euro/euro.src#STEP_ZERO + 5.String.Text
+msgid  "First, unprotect all sheets."
+msgstr "Poista kaikkien taulukoiden suojaus ensin."
+
+#: source/euro/euro.src#STEP_ZERO + 6.String.Text
+msgid  "Currencies:"
+msgstr "Valuutat:"
+
+#: source/euro/euro.src#STEP_ZERO + 7.String.Text
+msgid  "C~ontinue>>"
+msgstr "~Jatka>>"
+
+#: source/euro/euro.src#STEP_ZERO + 8.String.Text
+msgid  "C~lose"
+msgstr "S~ulje"
+
+#: source/euro/euro.src#STEP_CONVERTER.String.Text
+msgid  "~Entire document"
+msgstr "~Koko asiakirja"
+
+#: source/euro/euro.src#STEP_CONVERTER + 1.String.Text
+msgid  "Selection"
+msgstr "Valinta"
+
+#: source/euro/euro.src#STEP_CONVERTER + 2.String.Text
+msgid  "Cell S~tyles"
+msgstr "Solu~tyylit"
+
+#: source/euro/euro.src#STEP_CONVERTER + 3.String.Text
+msgid  "Currency cells in the current ~sheet"
+msgstr "Nykyisen ~taulukon valuuttasolut"
+
+#: source/euro/euro.src#STEP_CONVERTER + 4.String.Text
+msgid  "Currency cells in the entire ~document"
+msgstr "Koko ~asiakirjan valuuttasolut"
+
+#: source/euro/euro.src#STEP_CONVERTER + 5.String.Text
+msgid  "~Selected range"
+msgstr "~Valittu alue"
+
+#: source/euro/euro.src#STEP_CONVERTER + 6.String.Text
+msgid  "Select Cell Styles"
+msgstr "Valitse solutyylit"
+
+#: source/euro/euro.src#STEP_CONVERTER + 7.String.Text
+msgid  "Select currency cells"
+msgstr "Valitse valuuttasolut"
+
+#: source/euro/euro.src#STEP_CONVERTER + 8.String.Text
+msgid  "Currency ranges:"
+msgstr "Valuutta-alueet:"
+
+#: source/euro/euro.src#STEP_CONVERTER + 9.String.Text
+msgid  "Templates:"
+msgstr "Mallit:"
+
+#: source/euro/euro.src#STEP_AUTOPILOT.String.Text
+msgid  "Extent"
+msgstr "Rajaus"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 1.String.Text
+msgid  "~Single %PRODUCTNAME Calc document"
+msgstr "~Yksi %PRODUCTNAME Calc -asiakirja"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 2.String.Text
+msgid  "Complete ~directory"
+msgstr "Koko ~hakemisto"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 3.String.Text
+msgid  "Source Document:"
+msgstr "Lähdeasiakirja:"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 4.String.Text
+msgid  "Source directory:"
+msgstr "Lähdehakemisto:"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 5.String.Text
+msgid  "~Including subfolders"
+msgstr "My~ös alikansiot"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 6.String.Text
+msgid  "Target directory:"
+msgstr "Kohdehakemisto:"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 7.String.Text
+msgid  "Temporarily unprotect sheet without query"
+msgstr "Poista taulukoiden suojaus väliaikaisesti ilman kyselyä"
+
+#: source/euro/euro.src#STEP_AUTOPILOT + 10.String.Text
+msgid  "Also convert fields and tables in text documents"
+msgstr "Muunna myös tekstiasiakirjojen kentät ja taulukot"
+
+#: source/euro/euro.src#STATUSLINE.String.Text
+msgid  "Conversion status: "
+msgstr "Muunnon tila: "
+
+#: source/euro/euro.src#STATUSLINE + 1.String.Text
+msgid  "Conversion status of the cell templates:"
+msgstr "Solumallien muuntotila:"
+
+#: source/euro/euro.src#STATUSLINE + 2.String.Text
+msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr "Merkitsevien alueiden rekisteröinti: Taulukko %1Number%1 / %2TotPageCount%2"
+
+#: source/euro/euro.src#STATUSLINE + 3.String.Text
+msgid  "Entry of the ranges to be converted..."
+msgstr "Muunnettavien alueiden syöttäminen..."
+
+#: source/euro/euro.src#STATUSLINE + 4.String.Text
+msgid  "Sheet protection for each sheet will be restored..."
+msgstr "Kunkin taulukon suojaus palautetaan..."
+
+#: source/euro/euro.src#STATUSLINE + 5.String.Text
+msgid  "Conversion of the currency units in the cell templates..."
+msgstr "Solumallien valuuttayksikköjen muunto..."
+
+#: source/euro/euro.src#MESSAGES.String.Text
+msgid  "~Finish"
+msgstr "~Valmis"
+
+#: source/euro/euro.src#MESSAGES + 1.String.Text
+msgid  "Select directory"
+msgstr "Valitse hakemisto"
+
+#: source/euro/euro.src#MESSAGES + 2.String.Text
+msgid  "Select file"
+msgstr "Valitse tiedosto"
+
+#: source/euro/euro.src#MESSAGES + 3.String.Text
+msgid  "Select target directory"
+msgstr "Valitse kohdehakemisto"
+
+#: source/euro/euro.src#MESSAGES + 4.String.Text
+msgid  "non-existant"
+msgstr "ei olemassa"
+
+#: source/euro/euro.src#MESSAGES + 5.String.Text
+msgid  "Euro Converter"
+msgstr "Euromuunnin"
+
+#: source/euro/euro.src#MESSAGES + 6.String.Text
+msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgstr "Poistetaanko suojattujen laskentataulukoiden suojaus väliaikaisesti?"
+
+#: source/euro/euro.src#MESSAGES + 7.String.Text
+msgid  "Enter the password to unprotect the table %1TableName%1"
+msgstr "Anna taulukon %1TableName%1 suojauksen purun salasana"
+
+#: source/euro/euro.src#MESSAGES + 8.String.Text
+msgid  "Wrong Password!"
+msgstr "Väärä salasana!"
+
+#: source/euro/euro.src#MESSAGES + 9.String.Text
+msgid  "Protected Sheet"
+msgstr "Suojattu taulukko"
+
+#: source/euro/euro.src#MESSAGES + 10.String.Text
+msgid  "Warning!"
+msgstr "Varoitus!"
+
+#: source/euro/euro.src#MESSAGES + 11.String.Text
+msgid  "Protection for the sheets will not be removed."
+msgstr "Taulukoiden suojausta ei poisteta."
+
+#: source/euro/euro.src#MESSAGES + 12.String.Text
+msgid  "Sheet cannot be unprotected"
+msgstr "Taulukon suojausta ei voi purkaa"
+
+#: source/euro/euro.src#MESSAGES + 13.String.Text
+msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr "Ohjattu toiminto ei voi muokata tätä asiakirjaa, koska solujen muotoilua ei voi muokata suojattuja laskentataulukkoja sisältävissä asiakirjoissa."
+
+#: source/euro/euro.src#MESSAGES + 14.String.Text
+msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr "Euromuunnin ei muutoin pysty muokkaamaan tätä asiakirjaa!"
+
+#: source/euro/euro.src#MESSAGES + 15.String.Text
+msgid  "Please choose a currency to be converted first!"
+msgstr "Valitse ensin muunnettava valuutta!"
+
+#: source/euro/euro.src#MESSAGES + 16.String.Text
+msgid  "Password:"
+msgstr "Salasana:"
+
+#: source/euro/euro.src#MESSAGES + 17.String.Text
+msgid  "OK"
+msgstr "OK"
+
+#: source/euro/euro.src#MESSAGES + 18.String.Text
+msgid  "Cancel"
+msgstr "Peruuta"
+
+#: source/euro/euro.src#MESSAGES + 19.String.Text
+msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "Valitse %PRODUCTNAME Calc -asiakirja muokattavaksi!"
+
+#: source/euro/euro.src#MESSAGES + 20.String.Text
+msgid  "'<1>' is not a directory!"
+msgstr "<1> ei ole hakemisto!"
+
+#: source/euro/euro.src#MESSAGES + 21.String.Text
+msgid  "Document is read-only!"
+msgstr "Asiakirja on kirjoitussuojattu!"
+
+#: source/euro/euro.src#MESSAGES + 22.String.Text
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Tiedosto '<1>' on jo olemassa.<CR>Haluatko korvata tiedoston?"
+
+#: source/euro/euro.src#MESSAGES + 23.String.Text
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Haluatko varmasti lopettaa muunnoksen nyt?"
+
+#: source/euro/euro.src#MESSAGES + 24.String.Text
+msgid  "Cancel Wizard"
+msgstr "Peruuta ohjattu toiminto"
+
+#: source/euro/euro.src#CURRENCIES.String.Text
+msgid  "Portuguese Escudo"
+msgstr "Portugalin escudo"
+
+#: source/euro/euro.src#CURRENCIES + 1.String.Text
+msgid  "Dutch Guilder"
+msgstr "Hollannin guldeni"
+
+#: source/euro/euro.src#CURRENCIES + 2.String.Text
+msgid  "French Franc"
+msgstr "Ranskan frangi"
+
+#: source/euro/euro.src#CURRENCIES + 3.String.Text
+msgid  "Spanish Peseta"
+msgstr "Espanjan peseta"
+
+#: source/euro/euro.src#CURRENCIES + 4.String.Text
+msgid  "Italian Lira"
+msgstr "Italian liira"
+
+#: source/euro/euro.src#CURRENCIES + 5.String.Text
+msgid  "German Mark"
+msgstr "Saksan markka"
+
+#: source/euro/euro.src#CURRENCIES + 6.String.Text
+msgid  "Belgian Franc"
+msgstr "Belgian frangi"
+
+#: source/euro/euro.src#CURRENCIES + 7.String.Text
+msgid  "Irish Punt"
+msgstr "Irlannin punta"
+
+#: source/euro/euro.src#CURRENCIES + 8.String.Text
+msgid  "Luxembourg Franc"
+msgstr "Luxemburgin frangi"
+
+#: source/euro/euro.src#CURRENCIES + 9.String.Text
+msgid  "Austrian Schilling"
+msgstr "Itävallan shillinki"
+
+#: source/euro/euro.src#CURRENCIES + 10.String.Text
+msgid  "Finnish Mark"
+msgstr "Suomen markka"
+
+#: source/euro/euro.src#CURRENCIES + 11.String.Text
+msgid  "Greek Drachma"
+msgstr "Kreikan drakhma"
+
+#: source/euro/euro.src#CURRENCIES + 12.String.Text
+msgid  "Slovenian Tolar"
+msgstr "Slovenian tolar"
+
+#: source/euro/euro.src#CURRENCIES + 13.String.Text
+msgid  "Cypriot Pound"
+msgstr "Kyproksen punta"
+
+#: source/euro/euro.src#CURRENCIES + 14.String.Text
+msgid  "Maltese Lira"
+msgstr "Maltan liira"
+
+#: source/euro/euro.src#CURRENCIES + 15.String.Text
+msgid  "Slovak Koruna"
+msgstr "Slovakian kruunu"
+
+#: source/euro/euro.src#CURRENCIES + 16.String.Text
+msgid  "The currency set for the document is not a European currency!"
+msgstr "Asiakirjaan määritetty valuutta ei ole eurooppalainen valuutta!"
+
+#: source/euro/euro.src#CURRENCIES + 17.String.Text
+msgid  "The language set for your operating system is not a language of the European Monetary Union."
+msgstr "Käyttöjärjestelmän kielimääritys ei ole minkään EMU-alueen maan kieli."
+
+#: source/euro/euro.src#STEP_LASTPAGE.String.Text
+msgid  "Progress"
+msgstr "Tilanne"
+
+#: source/euro/euro.src#STEP_LASTPAGE + 1.String.Text
+msgid  "Retrieving the relevant documents..."
+msgstr "Haetaan asianmukaiset asiakirjat..."
+
+#: source/euro/euro.src#STEP_LASTPAGE + 2.String.Text
+msgid  "Converting the documents..."
+msgstr "Muunnetaan asiakirjat..."
+
+#: source/euro/euro.src#STEP_LASTPAGE + 3.String.Text
+msgid  "Settings:"
+msgstr "Asetukset:"
+
+#: source/euro/euro.src#STEP_LASTPAGE + 4.String.Text
+msgid  "Sheet is always unprotected"
+msgstr "Taulukko on aina suojaamaton"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
+msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr "Kansiota '%1' ei voitu luoda.<BR>Kiintolevyllä ei ehkä ole riittävästi vapaata levytilaa."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
+msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr "Tekstiasiakirjaa ei voitu luoda.<BR>Tarkista, että 'PRODUCTNAME Writer'-moduuli on asennettu."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
+msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr "Laskentataulukkoa ei voitu luoda.<BR>Tarkista, että 'PRODUCTNAME Calc'-moduuli on asennettu."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
+msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr "Esitystä ei voitu luoda.<BR>Tarkista, että 'PRODUCTNAME Impress'-moduuli on asennettu."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
+msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr "Piirrosta ei voitu luoda.<BR>Tarkista, että 'PRODUCTNAME Draw'-moduuli on asennettu."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
+msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr "Kaavaa ei voitu luoda.<BR>Tarkista, että 'PRODUCTNAME Math'-moduuli on asennettu."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
+msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr "Vaadittuja tiedostoja ei löytynyt.<BR>Käynnistä %PRODUCTNAME-asennus ja valitse 'Korjaa'."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
+msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgstr "Tiedosto '<PATH>' on jo olemassa.<BR><BR>Haluatko korvata olemassa olevan tiedoston?"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
+msgid  "Yes"
+msgstr "Kyllä"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 9.String.Text
+msgid  "Yes to All"
+msgstr "Kyllä kaikkiin"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 10.String.Text
+msgid  "No"
+msgstr "Ei"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 11.String.Text
+msgid  "Cancel"
+msgstr "Peruuta"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 12.String.Text
+msgid  "~Finish"
+msgstr "~Valmis"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 13.String.Text
+msgid  "< ~Back"
+msgstr "< ~Edellinen"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 14.String.Text
+msgid  "~Next >"
+msgstr "~Seuraava >"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 15.String.Text
+msgid  "~Help"
+msgstr "~Ohje"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 16.String.Text
+msgid  "Steps"
+msgstr "Vaiheet"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 17.String.Text
+msgid  "Close"
+msgstr "Sulje"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 18.String.Text
+msgid  "OK"
+msgstr "OK"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 19.String.Text
+msgid  "The file already exists. Do you want to overwrite it?"
+msgstr "Tiedosto on olemassa. Haluatko korvata sen sisällön?"
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 20.String.Text
+msgid  "Template created via <wizard_name> on <current_date>."
+msgstr "Malli on luotu toiminnolla <wizard_name> hetkellä <current_date>."
+
+#: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr "Ohjatun toiminnon aloittaminen epäonnistui, koska tärkeitä tiedostoja puuttui.\nNapsauta valikosta 'Työkalut - Asetukset - %PRODUCTNAME - Polut' painiketta 'Oletus' palauttaaksesi alkuperäiset asetukset.\nYritä sen jälkeen ohjattua toimintoa uudelleen."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
+msgid  "C~reate"
+msgstr "~Luo"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 1.String.Text
+msgid  "~Cancel"
+msgstr "~Peruuta"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 2.String.Text
+msgid  "<< ~Back"
+msgstr "<< ~Edellinen"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 3.String.Text
+msgid  "~Next >>"
+msgstr "~Seuraava >>"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 4.String.Text
+msgid  "~Database"
+msgstr "~Tietokanta"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 5.String.Text
+msgid  "~Table name"
+msgstr "~Taulun nimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
+msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgstr "Tapahtui virhe suoritettaessa ohjattua toimintoa. Ohjattu toiminto keskeytetään."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
+msgid  "No connection to the database could be established."
+msgstr "Yhteyden muodostaminen tietokantaan ei onnistunut."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 20.String.Text
+msgid  "~Help"
+msgstr "~Ohje"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 21.String.Text
+msgid  "~Stop"
+msgstr "~Pysäytä"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 30.String.Text
+msgid  "The document could not be saved."
+msgstr "Asiakirjan tallentaminen ei onnistunut."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 33.String.Text
+msgid  "Exiting the wizard"
+msgstr "Ohjattu toiminto lopetetaan"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 34.String.Text
+msgid  "Connecting to data source..."
+msgstr "Yhdistetään tietolähteeseen..."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 35.String.Text
+msgid  "The connection to the data source could not be established."
+msgstr "Yhteyden muodostaminen tietolähteeseen ei onnistunut."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 36.String.Text
+msgid  "The file path entered is not valid."
+msgstr "Annettu tiedostopolku ei ole kelvollinen."
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 37.String.Text
+msgid  "Please select a data source"
+msgstr "Valitse tietolähde"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 38.String.Text
+msgid  "Please select a table or query"
+msgstr "Valitse taulu tai kysely"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 39.String.Text
+msgid  "Add field"
+msgstr "Lisää kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 40.String.Text
+msgid  "Remove field"
+msgstr "Poista kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 41.String.Text
+msgid  "Add all fields"
+msgstr "Lisää kaikki kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 42.String.Text
+msgid  "Remove all fields"
+msgstr "Poista kaikki kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 43.String.Text
+msgid  "Move field up"
+msgstr "Siirrä kenttää ylöspäin"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 44.String.Text
+msgid  "Move field down"
+msgstr "Siirrä kenttää alaspäin"
+
+#: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 45.String.Text
+msgid  "The field names from '%NAME' could not be retrieved."
+msgstr "Kenttien nimiä ei löytynyt '%NAME':sta."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 0.String.Text
+msgid  "Form Wizard"
+msgstr "Ohjattu lomakkeen luonti"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 1.String.Text
+msgid  "Fields in ~the form"
+msgstr "Lomakkeen ~kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr "Binäärikentät näkyvät aina ja ovat valittavissa vasemmasta listasta.\nJos mahdollista, ne tulkitaan kuviksi."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr "Alilomake on toiseen lomakkeeseen sisällytetty lomake.\nVoit käyttää alilomakkeita näyttämään tietokannan tietoja tai tietokantahakujen tuloksia silloin, kun niillä on yksi-moneen suhde."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
+msgid  "~Add Subform"
+msgstr "~Lisää alilomake"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 5.String.Text
+msgid  "~Subform based on existing relation"
+msgstr "~Olemassa olevaan relaatioon pohjautuva alilomake"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 6.String.Text
+msgid  "Tables or queries"
+msgstr "Taulut tai kyselyt"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 7.String.Text
+msgid  "Subform based on ~manual selection of fields"
+msgstr "Alilomake ~manuaalisesti valituista kentistä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 8.String.Text
+msgid  "~Which relation do you want to add?"
+msgstr "~Minkä relaation haluat lisätä?"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 9.String.Text
+msgid  "Fields in the ~subform"
+msgstr "Alilomakkeen ~kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 12.String.Text
+msgid  "~Available fields"
+msgstr "~Mahdolliset kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 13.String.Text
+msgid  "Fields in form"
+msgstr "Lomakkeen kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr "Liitos '<FIELDNAME1>' ja '<FIELDNAME2>' on valittu kahdesti.\nLiitosta saa käyttää vain kerran."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
+msgid  "~First joined subform field"
+msgstr "1. liitettävä alilomakkeen kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 21.String.Text
+msgid  "~Second joined subform field"
+msgstr "2. liitettävä alilomakkeen kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 22.String.Text
+msgid  "~Third joined subform field"
+msgstr "3. liitettävä alilomakkeen kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 23.String.Text
+msgid  "~Fourth joined subform field"
+msgstr "4. liitettävä alilomakkeen kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 24.String.Text
+msgid  "F~irst joined main form field"
+msgstr "1. liitettävä ~päälomakkeen kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 25.String.Text
+msgid  "S~econd joined main form field"
+msgstr "2. liitettävä pää~lomakkeen kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 26.String.Text
+msgid  "T~hird joined main form field"
+msgstr "3. liitettävä pääl~omakkeen kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 27.String.Text
+msgid  "F~ourth joined main form field"
+msgstr "4. liitettävä päälo~makkeen kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 28.String.Text
+msgid  "Field border"
+msgstr "Kentän reunus"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 29.String.Text
+msgid  "No border"
+msgstr "Ei reunusta"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 30.String.Text
+msgid  "3D look"
+msgstr "Kolmiulotteinen ulkoasu"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 31.String.Text
+msgid  "Flat"
+msgstr "Litteä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 32.String.Text
+msgid  "Label placement"
+msgstr "Selitteiden sijoittelu"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 33.String.Text
+msgid  "Align left"
+msgstr "Tasaa vasemmalle"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 34.String.Text
+msgid  "Align right"
+msgstr "Tasaa oikealle"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 35.String.Text
+msgid  "Arrangement of DB fields"
+msgstr "Tietokantakenttien järjestys"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 36.String.Text
+msgid  "Columnar - Labels Left"
+msgstr "Sarakkeet - selitteet vasemmalla"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 37.String.Text
+msgid  "Columnar - Labels on Top"
+msgstr "Sarakkeet - selitteet ylhäällä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 38.String.Text
+msgid  "In Blocks - Labels Left"
+msgstr "Lohkot - selitteet vasemmalla"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 39.String.Text
+msgid  "In Blocks - Labels Above"
+msgstr "Lohkot - selitteet ylhäällä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 40.String.Text
+msgid  "As Data Sheet"
+msgstr "Ruudukkona"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 41.String.Text
+msgid  "Arrangement of the main form"
+msgstr "Päälomakkeen järjestely"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 42.String.Text
+msgid  "Arrangement of the subform"
+msgstr "Alilomakkeen järjestely"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 44.String.Text
+msgid  "The form is to be ~used for entering new data only."
+msgstr "Lomaketta käytetään ~vain uuden tiedon syöttöön."
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 45.String.Text
+msgid  "Existing data will not be displayed "
+msgstr "Olemassa olevia tietoja ei näytetä "
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 46.String.Text
+msgid  "T~he form is to display all data"
+msgstr "Lomaketta käytetään ~kaiken tiedon näyttämiseen"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 47.String.Text
+msgid  "Do not allow ~modification of existing data"
+msgstr "Lomakkeella ei voi ~muokata olemassa olevaa tietoa"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 48.String.Text
+msgid  "Do not allow ~deletion of existing data"
+msgstr "Lomakkeella ei voi ~poistaa olemassa olevaa tietoa"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 49.String.Text
+msgid  "Do not allow ~addition of new data"
+msgstr "Lomakkeella ei voi ~syöttää uutta tietoa"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 50.String.Text
+msgid  "Name of ~the form"
+msgstr "Lomakkeen ~nimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 51.String.Text
+msgid  "How do you want to proceed after creating the form?"
+msgstr "Kuinka haluat jatkaa lomakkeen valmistuttua?"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 52.String.Text
+msgid  "~Work with the form"
+msgstr "~Käyttää lomaketta"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 53.String.Text
+msgid  "~Modify the form"
+msgstr "~Muokata lomaketta"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 55.String.Text
+msgid  "~Page Styles"
+msgstr "~Sivutyylit"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
+msgid  "Field selection"
+msgstr "Kenttien valinta"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
+msgid  "Set up a subform"
+msgstr "Alilomakkeen teko"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 82.String.Text
+msgid  "Add subform fields"
+msgstr "Lisää alilomakkeen kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 83.String.Text
+msgid  "Get joined fields"
+msgstr "Valitse liitetyt kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 84.String.Text
+msgid  "Arrange controls"
+msgstr "Valitse lomakkeen syöttökenttien järjestys"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 85.String.Text
+msgid  "Set data entry"
+msgstr "Aseta tiedonsyötön asetukset"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 86.String.Text
+msgid  "Apply styles"
+msgstr "Käytä tyylejä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 87.String.Text
+msgid  "Set name"
+msgstr "Aseta nimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 88.String.Text
+msgid  "(Date)"
+msgstr "(Päivämäärä)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 89.String.Text
+msgid  "(Time)"
+msgstr "(Aika)"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 90.String.Text
+msgid  "Select the fields of your form"
+msgstr "Valitse lomakkeen kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 91.String.Text
+msgid  "Decide if you want to set up a subform"
+msgstr "Päätä tarvitsetko alilomaketta"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 92.String.Text
+msgid  "Select the fields of your subform"
+msgstr "Valitse kentät alilomakkeeseen"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 93.String.Text
+msgid  "Select the joins between your forms"
+msgstr "Valitse liitetyt kentät lomakkeiden välillä"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 94.String.Text
+msgid  "Arrange the controls on your form"
+msgstr "Järjestele lomakkeen syöttökentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 95.String.Text
+msgid  "Select the data entry mode"
+msgstr "Valitse lomakkeen käyttötapa"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 96.String.Text
+msgid  "Apply the style of your form"
+msgstr "Aseta lomakkeen tyyli"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 97.String.Text
+msgid  "Set the name of the form"
+msgstr "Aseta lomakkeen nimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr "Lomakkeen nimi '%FORMNAME' on jo käytössä.\nAnna toinen nimi."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
+msgid  "Query Wizard"
+msgstr "Ohjattu tietokantahaku"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 1.String.Text
+msgid  "Query"
+msgstr "Kysely"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 2.String.Text
+msgid  "Query Wizard"
+msgstr "Ohjattu tietokantahaku"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 3.String.Text
+msgid  "~Tables"
+msgstr "Ta~ulut"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
+msgid  "A~vailable fields"
+msgstr "Käytettävissä olevat kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
+msgid  "Name ~of the query"
+msgstr "~Haun nimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 6.String.Text
+msgid  "Display ~Query"
+msgstr "~Näytä haku"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 7.String.Text
+msgid  "~Modify Query"
+msgstr "~Muokkaa hakua"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 8.String.Text
+msgid  "~How do you want to proceed after creating the query?"
+msgstr "Kuinka haluat jatkaa haun ~valmistuttua?"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 9.String.Text
+msgid  "Match ~all of the following"
+msgstr "Pitää vastata ~kaikkia kriteerejä"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 10.String.Text
+msgid  "~Match any of the following"
+msgstr "Vastaa ~johonkin kriteeriin"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 11.String.Text
+msgid  "~Detailed query (Shows all records of the query.)"
+msgstr "~Yksityiskohtainen haku (näyttää kaikki tietueet)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
+msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgstr "~Laskentahaku (näyttää vain laskentafunktioiden tulokset)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
+msgid  "Aggregate functions"
+msgstr "Laskentafunktiot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 17.String.Text
+msgid  "Fields"
+msgstr "Kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 18.String.Text
+msgid  "~Group by"
+msgstr "~Ryhmittele"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 19.String.Text
+msgid  "Field"
+msgstr "Kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 20.String.Text
+msgid  "Alias"
+msgstr "Tunnus"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 21.String.Text
+msgid  "Table: "
+msgstr "Taulu: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 22.String.Text
+msgid  "Query: "
+msgstr "Haku: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 24.String.Text
+msgid  "Condition"
+msgstr "Ehto"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 25.String.Text
+msgid  "Value"
+msgstr "Arvo"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 26.String.Text
+msgid  "is equal to"
+msgstr "on yhtä suuri kuin"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 27.String.Text
+msgid  "is not equal to"
+msgstr "on eri suuri kuin"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 28.String.Text
+msgid  "is smaller than"
+msgstr "on pienempi kuin"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 29.String.Text
+msgid  "is greater than"
+msgstr "on suurempi kuin"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 30.String.Text
+msgid  "is equal or less than "
+msgstr "on yhtä suuri tai pienempi kuin "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 31.String.Text
+msgid  "is equal or greater than"
+msgstr "on yhtä suuri tai suurempi kuin"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 32.String.Text
+msgid  "like"
+msgstr "samanlainen kuin (like)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 33.String.Text
+msgid  "not like"
+msgstr "erilainen kuin (not like)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 34.String.Text
+msgid  "is null"
+msgstr "on tyhjä"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 35.String.Text
+msgid  "is not null"
+msgstr "ei ole tyhjä"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 36.String.Text
+msgid  "true"
+msgstr "tosi"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 37.String.Text
+msgid  "false"
+msgstr "epätosi"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 38.String.Text
+msgid  "and"
+msgstr "ja"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 39.String.Text
+msgid  "or"
+msgstr "tai"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 40.String.Text
+msgid  "get the sum of"
+msgstr "summa"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 41.String.Text
+msgid  "get the average of"
+msgstr "keskiarvo"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 42.String.Text
+msgid  "get the minimum of"
+msgstr "minimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 43.String.Text
+msgid  "get the maximum of"
+msgstr "maksimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 44.String.Text
+msgid  "get the sum of <FIELD>"
+msgstr "kentän <FIELD> summa"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 45.String.Text
+msgid  "get the average of <FIELD>"
+msgstr "kentän keskiarvo <FIELD>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 46.String.Text
+msgid  "get the minimum of <FIELD>"
+msgstr "kentän <FIELD> minimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 47.String.Text
+msgid  "get the maximum of <FIELD>"
+msgstr "kentän <FIELD> maksimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 48.String.Text
+msgid  "(none)"
+msgstr "(ei mitään)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 50.String.Text
+msgid  "Fie~lds in the Query: "
+msgstr "~Haun kentät: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 51.String.Text
+msgid  "Sorting order: "
+msgstr "Lajittelujärjestys: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 52.String.Text
+msgid  "No sorting fields were assigned."
+msgstr "Lajittelukenttiä ei käytössä."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 53.String.Text
+msgid  "Search conditions: "
+msgstr "Hakuehdot: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 54.String.Text
+msgid  "No conditions were assigned."
+msgstr "Hakuehtoja ei käytössä."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 55.String.Text
+msgid  "Aggregate functions: "
+msgstr "Laskentafunktiot: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 56.String.Text
+msgid  "No aggregate functions were assigned."
+msgstr "Laskentafunktioita ei käytössä."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 57.String.Text
+msgid  "Grouped by: "
+msgstr "Ryhmittely: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 58.String.Text
+msgid  "No Groups were assigned."
+msgstr "Ryhmittelykenttiä ei käytössä."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 59.String.Text
+msgid  "Grouping conditions: "
+msgstr "Ryhmittelyn ehdot: "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 60.String.Text
+msgid  "No grouping conditions were assigned."
+msgstr "Ryhmittelyn ehtoja ei käytössä."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 70.String.Text
+msgid  "Select the fields (columns) for your query"
+msgstr "Valitse haun kentät (sarakkeet)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 71.String.Text
+msgid  "Select the sorting order"
+msgstr "Valitse lajittelujärjestys"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 72.String.Text
+msgid  "Select the search conditions"
+msgstr "Valitse hakuehdot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 73.String.Text
+msgid  "Select the type of query"
+msgstr "Valitse haun tyyppi"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 74.String.Text
+msgid  "Select the groups"
+msgstr "Valitse ryhmittelyt"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 75.String.Text
+msgid  "Select the grouping conditions"
+msgstr "Valitse ryhmittelyn ehdot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 76.String.Text
+msgid  "Assign aliases if desired"
+msgstr "Aseta näytettäviä kenttien nimiä, jos haluat"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 77.String.Text
+msgid  "Check the overview and decide how to proceed"
+msgstr "Tarkista tiedot ja päätä jatkosta"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 80.String.Text
+msgid  "Field selection"
+msgstr "Kenttien valinta"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 81.String.Text
+msgid  "Sorting order"
+msgstr "Lajittelujärjestys"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 82.String.Text
+msgid  "Search conditions"
+msgstr "Hakuehdot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 83.String.Text
+msgid  "Detail or summary"
+msgstr "Haku näyttää kaikki tietueet tai vain laskentatulokset"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 84.String.Text
+msgid  "Grouping"
+msgstr "Rakenne"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 85.String.Text
+msgid  "Grouping conditions"
+msgstr "Ryhmittelyn ehdot"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 86.String.Text
+msgid  "Aliases"
+msgstr "Näytettävät kenttien nimet"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 87.String.Text
+msgid  "Overview"
+msgstr "Tiivistelmä"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
+msgid  "A field that has not been assigned an aggregate function must be used in a group."
+msgstr "Jos kentällä ei ole laskufunktiota, se pitää valita ryhmittelyyn."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
+msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr "Ehto '<FIELDNAME> <LOGICOPERATOR> <VALUE>' on valittu kahdesti. Sama ehto voidaan valita vain kerran"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
+msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr "Laskentafunktio <FUNCTION> on asetettu kaksi kertaa kentälle '<NUMERICFIELD>'."
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
+msgid  ", "
+msgstr ", "
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 92.String.Text
+msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 93.String.Text
+msgid  "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 94.String.Text
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 95.String.Text
+msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 96.String.Text
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 0.String.Text
+msgid  "Report Wizard"
+msgstr "Ohjattu raportin luonti"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 3.String.Text
+msgid  "~Table"
+msgstr "~Taulu"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 4.String.Text
+msgid  "Colu~mns"
+msgstr "Sarak~keet"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 7.String.Text
+msgid  "Report_"
+msgstr "Raportti_"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 8.String.Text
+msgid  "- undefined -"
+msgstr "(ei mitään)"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 9.String.Text
+msgid  "~Fields in report"
+msgstr "~Raportin kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 11.String.Text
+msgid  "Grouping"
+msgstr "Rakenne"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 12.String.Text
+msgid  "Sort options"
+msgstr "Lajittelun asetukset"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 13.String.Text
+msgid  "Choose layout"
+msgstr "Valitse raportin asettelu"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 14.String.Text
+msgid  "Create report"
+msgstr "Luo raportti"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 15.String.Text
+msgid  "Layout of data"
+msgstr "Tietojen asettelu"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 16.String.Text
+msgid  "Layout of headers and footers"
+msgstr "Ylä- ja alatunnisteiden asettelu"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 19.String.Text
+msgid  "Fields"
+msgstr "Kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 20.String.Text
+msgid  "~Sort by"
+msgstr "~Lajittelujärjestys"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 21.String.Text
+msgid  "T~hen by"
+msgstr "Lisälajittelu~ehto"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 22.String.Text
+msgid  "Orientation"
+msgstr "Suunta"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 23.String.Text
+msgid  "Portrait"
+msgstr "Pysty"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 24.String.Text
+msgid  "Landscape"
+msgstr "Vaaka"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 28.String.Text
+msgid  "Which fields do you want to have in your report?"
+msgstr "Mitkä kentät haluat valita raporttiisi?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 29.String.Text
+msgid  "Do you want to add grouping levels?"
+msgstr "Haluatko lisätä rakennetasoja?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 30.String.Text
+msgid  "According to which fields do you want to sort the data?"
+msgstr "Minkä mukaan haluat lajitella tiedot?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 31.String.Text
+msgid  "How do you want your report to look?"
+msgstr "Raportin ulkonäkö"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 32.String.Text
+msgid  "Decide how you want to proceed"
+msgstr "Päätä miten jatkat"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 33.String.Text
+msgid  "Title of report"
+msgstr "Raportin otsikko"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 34.String.Text
+msgid  "Display report"
+msgstr "Näytä raportti"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 35.String.Text
+msgid  "Create report"
+msgstr "Luo raportti"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 36.String.Text
+msgid  "Ascending"
+msgstr "Nouseva"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 37.String.Text
+msgid  "Descending"
+msgstr "Laskeva"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 40.String.Text
+msgid  "~Dynamic report"
+msgstr "~Päivittyvä raportti"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 41.String.Text
+msgid  "~Create report now"
+msgstr "~Luo raportti nyt"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 42.String.Text
+msgid  "~Modify report layout"
+msgstr "~Muokkaa raportin asettelua"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 43.String.Text
+msgid  "Static report"
+msgstr "Ennakoitu raportti"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 44.String.Text
+msgid  "Save as"
+msgstr "Tallenna nimellä"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 50.String.Text
+msgid  "Groupings"
+msgstr "Rakenteet"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 51.String.Text
+msgid  "Then b~y"
+msgstr "~Toinen lajitteluehto"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 52.String.Text
+msgid  "~Then by"
+msgstr "Lisälajitteluehto"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 53.String.Text
+msgid  "Asc~ending"
+msgstr "N~ouseva"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 54.String.Text
+msgid  "Ascend~ing"
+msgstr "No~useva"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 55.String.Text
+msgid  "Ascendin~g"
+msgstr "Nouse~va"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 56.String.Text
+msgid  "De~scending"
+msgstr "Laskeva"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 57.String.Text
+msgid  "Des~cending"
+msgstr "Las~keva"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 58.String.Text
+msgid  "De~scending"
+msgstr "Laskeva"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 60.String.Text
+msgid  "Binary fields cannot be displayed in the report."
+msgstr "Raportissa ei voida näyttää binaarisia kenttiä."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 61.String.Text
+msgid  "The table '<TABLENAME>' does not exist."
+msgstr "Taulua '<TABLENAME>' ei ole olemassa."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 62.String.Text
+msgid  "Creating Report..."
+msgstr "Luodaan raporttia..."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 63.String.Text
+msgid  "Number of records inserted: <COUNT>"
+msgstr "Lisättyjen tietueiden lukumäärä: <COUNT>"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 64.String.Text
+msgid  "The form '<REPORTFORM>' does not exist."
+msgstr "Lomaketta '<REPORTFORM>' ei ole olemassa."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
+msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr "Kyselyä, jonka lauseke on <BR>'<STATEMENT>', <BR> ei voitu suorittaa. <BR> Tarkista tietolähde."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
+msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr "Seuraavaa lomakkeessa '<REPORTFORM>' olevaa piilotettua ohjausobjektia ei saatu luettua: '<CONTROLNAME>'."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
+msgid  "Importing data..."
+msgstr "Tuodaan tietoja..."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 68.String.Text
+msgid  "Labeling fields"
+msgstr "Selitekentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 69.String.Text
+msgid  "How do you want to label the fields?"
+msgstr "Kuinka haluat merkitä kentät?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 70.String.Text
+msgid  "Label"
+msgstr "Selite"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 71.String.Text
+msgid  "Field"
+msgstr "Kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
+msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr "Ohjatussa toiminnossa tapahtui virhe.<BR>Malli '%PATH' saattaa olla virheellinen. <BR>Tarvittavat osiot tai taulut puuttuvat tai ovat väärällä nimellä.<BR>Valitse toinen malli."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
+msgid  "There is an invalid user field in a table."
+msgstr "Taulussa on virheellinen käyttäjäkenttä."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
+msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr "Lajittelukriteeri '<FIELDNAME>' valittiin kahdesti. Kukin kriteeri on valittavissa vain kerran."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
+msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr "Huomautus: esimerkkiteksti korvataan tietokannasta haettavilla tiedoilla kun raportti luodaan."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
+msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr "Raportti '%REPORTNAME' on jo olemassa. Valitse toinen nimi."
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
+msgid  "How do you want to proceed after creating the report?"
+msgstr "Kuinka haluat jatkaa raportin luonnin jälkeen?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 79.String.Text
+msgid  "What kind of report do you want to create?"
+msgstr "Minkälaisen raportin haluat luoda?"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 80.String.Text
+msgid  "Tabular"
+msgstr "Taulukkona"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 81.String.Text
+msgid  "Columnar, single-column"
+msgstr "Sarakkeet, yksi sarake"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 82.String.Text
+msgid  "Columnar, two columns"
+msgstr "Sarakkeet, kaksi saraketta"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 83.String.Text
+msgid  "Columnar, three columns"
+msgstr "Sarakkeet, kolme saraketta"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 84.String.Text
+msgid  "In blocks, labels left"
+msgstr "Lohkot, selitteet vasemmalla"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 85.String.Text
+msgid  "In blocks, labels above"
+msgstr "Lohkot, selitteet ylhäällä"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 86.String.Text
+msgid  "Title:"
+msgstr "Otsikko:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 87.String.Text
+msgid  "Author:"
+msgstr "Tekijä:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 88.String.Text
+msgid  "Date:"
+msgstr "Päivämäärä:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 89.String.Text
+msgid  "Page #page# of #count#"
+msgstr "Sivu #page#/#count#"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 90.String.Text
+msgid  "Page number:"
+msgstr "Sivunumero:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 91.String.Text
+msgid  "Page count:"
+msgstr "Sivujen määrä:"
+
+#: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 92.String.Text
+msgid  "No valid report template was found."
+msgstr "Kelvollista raporttimallia ei löytynyt."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 1.String.Text
+msgid  "Table Wizard"
+msgstr "Ohjattu taulun luonti"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 2.String.Text
+msgid  "Select fields"
+msgstr "Valitse kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 3.String.Text
+msgid  "Set types and formats"
+msgstr "Aseta tyypit ja muotoilut"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 4.String.Text
+msgid  "Set primary key"
+msgstr "Valitse pääavain"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 5.String.Text
+msgid  "Create table"
+msgstr "Luo taulukko"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 8.String.Text
+msgid  "Select fields for your table"
+msgstr "Valitse taulun kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 9.String.Text
+msgid  "Set field types and formats"
+msgstr "Aseta kenttien tyypit ja muotoilut"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 10.String.Text
+msgid  "Set primary key"
+msgstr "Valitse pääavain"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 11.String.Text
+msgid  "Create table"
+msgstr "Luo taulukko"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
+msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr "Tämä ohjattu toiminto auttaa luomaan tauluja tietokantaasi. Valitse ensin taulun luokka ja esimerkkitaulu. Kopioi sen jälkeen haluamasi kentät esimerkkitaulusta omaan tauluusi. Voit kopioida kenttiä useammasta kuin yhdestä esimerkkitaulusta."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
+msgid  "Ca~tegory"
+msgstr "L~uokka"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 16.String.Text
+msgid  "B~usiness"
+msgstr "~Työ"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 17.String.Text
+msgid  "P~ersonal"
+msgstr "~Henkilökohtainen"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 18.String.Text
+msgid  "~Sample tables"
+msgstr "~Esimerkkitaulut"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 19.String.Text
+msgid  "A~vailable fields"
+msgstr "Käytettävissä olevat kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 20.String.Text
+msgid  "Field information"
+msgstr "Kentän tiedot"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 21.String.Text
+msgid  "+"
+msgstr "+"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 23.String.Text
+msgid  "Field name"
+msgstr "Kentän nimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 24.String.Text
+msgid  "Field type"
+msgstr "Kenttätyyppi"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 25.String.Text
+msgid  "~Selected fields"
+msgstr "~Valitut kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
+msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr "Pääavain erottelee yksikäsitteisesti jokaisen tietueen tietokannan taulussa. Pääavain helpottaa eri taulujen tietojen yhdistelyä ja on suositeltavaa tehdä pääavain jokaiseen tauluun. Ilman pääavainta tauluun ei voi syöttää tietoa."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
+msgid  "~Create a primary key"
+msgstr "~Luo pääavain"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 28.String.Text
+msgid  "~Automatically add a primary key"
+msgstr "Lisää ~automaattisesti pääavain"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 29.String.Text
+msgid  "~Use an existing field as a primary key"
+msgstr "Käytä ~olemassa olevaa kenttää pääavaimena"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 30.String.Text
+msgid  "Define p~rimary key as a combination of several fields "
+msgstr "~Määritä pääavain usean kentän yhdistelmänä"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 31.String.Text
+msgid  "F~ieldname"
+msgstr "~Kentän nimi"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 32.String.Text
+msgid  "~Primary key fields"
+msgstr "~Pääavaimen kentät"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 33.String.Text
+msgid  "Auto ~value"
+msgstr "Automaattinen ar~vo"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 34.String.Text
+msgid  "What do you want to name your table?"
+msgstr "Minkä nimen haluat antaa taulullesi?"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
+msgid  "Congratulations. You have entered all the information needed to create your table."
+msgstr "Onnittelut. Olet nyt syöttänyt kaikki taulun luomiseen tarvittavat tiedot."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
+msgid  "What do you want to do next?"
+msgstr "Mitä haluat tehdä seuraavaksi?"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
+msgid  "Modify the table design"
+msgstr "Muokata taulua"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 38.String.Text
+msgid  "Insert data immediately"
+msgstr "Syöttää tietoja tauluun"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 39.String.Text
+msgid  "C~reate a form based on this table"
+msgstr "~Luoda lomakkeen tämän taulun käyttämiseen"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 40.String.Text
+msgid  "The table you have created could not be opened."
+msgstr "Luomaasi taulua ei voitu avata."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
+msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Taulun nimi '%TABLENAME' sisältää merkin ('%SPECIALCHAR'), jota tietokanta ei ehkä salli."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
+msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Kentän nimi '%FIELDNAME' sisältää merkin ('%SPECIALCHAR'), jota tietokanta ei ehkä salli."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
+msgid  "Field"
+msgstr "Kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 44.String.Text
+msgid  "MyTable"
+msgstr "OmaTauluni"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 45.String.Text
+msgid  "Add a Field"
+msgstr "Lisää kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 46.String.Text
+msgid  "Remove the selected Field"
+msgstr "Poista valittu kenttä"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
+msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr "Kenttää ei voi lisätä, koska tietokannan taulun kenttien maksimimäärä on %COUNT"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr "Taulun nimi '%TABLENAME' on jo käytössä.\nAnna uusi taulun nimi."
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
+msgid  "Catalog of the table"
+msgstr "Taulun luettelo"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 50.String.Text
+msgid  "Schema of the table"
+msgstr "Taulun kaavio"
+
+#: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 51.String.Text
+msgid  "The field '%FIELDNAME' already exists."
+msgstr "Kenttä '%FIELDNAME' on jo olemassa."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 1.String.Text
+msgid  "Letter Wizard"
+msgstr "Kirjeen ohjattu luonti"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 2.String.Text
+msgid  "Label9"
+msgstr "Selite9"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 3.String.Text
+msgid  "~Business letter"
+msgstr "~Liikekirje"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 4.String.Text
+msgid  "~Formal personal letter"
+msgstr "~Muodollinen yksityiskirje"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 5.String.Text
+msgid  "~Personal letter"
+msgstr "~Yksityiskirje"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 6.String.Text
+msgid  "~Use letterhead paper with pre-printed elements"
+msgstr "~Käytä logopaperia"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 7.String.Text
+msgid  "~Logo"
+msgstr "~Logo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
+msgid  "Return address"
+msgstr "Vastausosoite"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 9.String.Text
+msgid  "~Include footer"
+msgstr "~Sisällytä alatunniste"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 10.String.Text
+msgid  "~Return address in envelope window"
+msgstr "~Vastausosoite kirjekuoren ikkunan kohdalla"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
+msgid  "~Logo"
+msgstr "~Logo"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 12.String.Text
+msgid  "~Return address in envelope window"
+msgstr "~Vastausosoite kirjekuoren ikkunan kohdalla"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 13.String.Text
+msgid  "Letter Signs"
+msgstr "Viitteet muihin kirjeisiin"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
+msgid  "S~ubject line"
+msgstr "Aihe~rivi"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
+msgid  "Salu~tation"
+msgstr "~Tervehdys"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 16.String.Text
+msgid  "Fold ~marks"
+msgstr "Taitto~merkit"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
+msgid  "~Complimentary close"
+msgstr "~Kohtelias lopetus"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
+msgid  "~Footer"
+msgstr "~Alatunniste"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
+msgid  "~Use user data for return address"
+msgstr "Käytä ohjelmiston ~käyttäjän tietoja vastausosoitteena"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
+msgid  "~New sender address:"
+msgstr "~Uusi lähettäjän osoite:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
+msgid  "Use placeholders for ~recipient's address"
+msgstr "Käytä paikkamerkkejä ~vastaanottajan osoitteelle"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
+msgid  "Use address database for ~mail merge"
+msgstr "Käytä osoitetietokantaa ~joukkokirjeen tekoon"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
+msgid  "Include ~only on second and following pages"
+msgstr "Vasta ~toiselle ja seuraaville sivuille"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
+msgid  "~Include page number"
+msgstr "~Sisällytä sivunumero"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
+msgid  "Letter Template"
+msgstr "Mallikirje"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 26.String.Text
+msgid  "Create a ~letter from this template"
+msgstr "Luo ~kirje tästä mallista"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 27.String.Text
+msgid  "Make ~manual changes to this letter template"
+msgstr "Tee ~manuaalisia muutoksia tähän kirjemalliin"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
+msgid  "Page design"
+msgstr "Sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
+msgid  "Page design"
+msgstr "Sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
+msgid  "Page design"
+msgstr "Sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
+msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr "Tämä ohjattu toiminto auttaa luomaan kirjemallin, jota voidaan jatkossa käyttää samalla tavalla muotoiltujen kirjeiden luontiin."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
+msgid  "~Height:"
+msgstr "~Korkeus:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 33.String.Text
+msgid  "~Width:"
+msgstr "~Leveys:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
+msgid  "S~pacing to left margin:"
+msgstr "Etäisyys ~vasempaan marginaaliin:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
+msgid  "Spacing ~to top margin:"
+msgstr "Etäisyys ~ylämarginaaliin:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
+msgid  "Height:"
+msgstr "Korkeus:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 37.String.Text
+msgid  "Width:"
+msgstr "Leveys:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 38.String.Text
+msgid  "S~pacing to left margin:"
+msgstr "Etäisyys ~vasempaan marginaaliin:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 39.String.Text
+msgid  "Spacing ~to top margin:"
+msgstr "Etäisyys ~ylämarginaaliin:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 40.String.Text
+msgid  "Height:"
+msgstr "Korkeus:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 41.String.Text
+msgid  "Use a typical letter format for this country:"
+msgstr "Käytä maan tyypillistä kirjemallia:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 42.String.Text
+msgid  "Sender's address"
+msgstr "Lähettäjän osoite"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
+msgid  "Name:"
+msgstr "Nimi:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
+msgid  "Street:"
+msgstr "Katuosoite:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
+msgid  "ZIP code/State/City:"
+msgstr "Postinumero/Osavaltio/Postitoimipaikka:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
+msgid  "Recipient's address"
+msgstr "Vastaanottajan osoite"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 47.String.Text
+msgid  "Footer"
+msgstr "Alatunniste"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
+msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr "Tämä ohjattu toiminto luo kirjemallin, jota voidaan jatkossa käyttää samalla tavalla muotoiltujen kirjeiden luontiin."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
+msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr "Uusi kirje luodaan mallista kaksoisnapsauttamalla mallia."
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
+msgid  "Template name:"
+msgstr "Mallitiedoston nimi:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
+msgid  "Location and file name:"
+msgstr "Sijainti ja tiedoston nimi:"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
+msgid  "How do you want to proceed?"
+msgstr "Kuinka haluat jatkaa?"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 53.String.Text
+msgid  "Please choose the type of letter and page design"
+msgstr "Valitse kirjeen tyyppi ja sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 54.String.Text
+msgid  "Select the items to be printed"
+msgstr "Valitse sisällytettävät osat"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 55.String.Text
+msgid  "Specify items already on your letterhead paper"
+msgstr "Määrittele logopaperilla valmiina olevat painatukset"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 56.String.Text
+msgid  "Specify the sender and recipient information"
+msgstr "Määrittele lähettäjä ja vastaanottaja"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 57.String.Text
+msgid  "Fill in the information you would like in the footer"
+msgstr "Syötä alatunniste"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 58.String.Text
+msgid  "Please specify last settings"
+msgstr "Viimeiset asetukset"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 1.String.Text
+msgid  "To Whom it May Concern"
+msgstr "Hyvä vastaanottaja"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 2.String.Text
+msgid  "Dear Sir or Madam"
+msgstr "Terve"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 3.String.Text
+msgid  "Hello"
+msgstr "Hei"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 1.String.Text
+msgid  "Sincerely"
+msgstr "Vilpittömästi"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 2.String.Text
+msgid  "Best regards"
+msgstr "Parhain terveisin"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 3.String.Text
+msgid  "Cheers"
+msgstr "Terveydeksi"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 1.String.Text
+msgid  "Page design"
+msgstr "Sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 2.String.Text
+msgid  "Letterhead layout"
+msgstr "Logopaperin asettelu"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 3.String.Text
+msgid  "Printed items"
+msgstr "Sisällytettävät kohdat"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 4.String.Text
+msgid  "Recipient and sender"
+msgstr "Vastaanottaja ja lähettäjä"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 5.String.Text
+msgid  "Footer"
+msgstr "Alatunniste"
+
+#: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 6.String.Text
+msgid  "Name and location"
+msgstr "Tallennustiedot"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 1.String.Text
+msgid  "Fax Wizard"
+msgstr "Ohjattu faksin luonti"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 2.String.Text
+msgid  "Label9"
+msgstr "Selite9"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 3.String.Text
+msgid  "~Business Fax"
+msgstr "~Työfaksi"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 4.String.Text
+msgid  "~Personal Fax"
+msgstr "~Henkilökohtainen faksi"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 5.String.Text
+msgid  "~Logo"
+msgstr "~Logo"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 6.String.Text
+msgid  "S~ubject line"
+msgstr "Aihe~rivi"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 7.String.Text
+msgid  "S~alutation"
+msgstr "~Tervehdys"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 8.String.Text
+msgid  "~Complimentary close"
+msgstr "~Kohtelias lopetus"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 9.String.Text
+msgid  "~Footer"
+msgstr "~Alatunniste"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 10.String.Text
+msgid  "~Use user data for return address"
+msgstr "Käytä ohjelmiston ~käyttäjän tietoja vastausosoitteena"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
+msgid  "~New return address"
+msgstr "~Uusi vastausosoite"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
+msgid  "My Fax Template"
+msgstr "Oma Faksimallini"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 13.String.Text
+msgid  "Create a ~fax from this template"
+msgstr "~Luo faksi tästä mallista"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 14.String.Text
+msgid  "Make ~manual changes to this fax template"
+msgstr "~Muokkaa faksimallia manuaalisesti"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 15.String.Text
+msgid  "Page design"
+msgstr "Sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 16.String.Text
+msgid  "Page design"
+msgstr "Sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
+msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr "Tämä ohjattu toiminto auttaa faksimallin luonnissa. Voit jatkossa luoda faksimallista samalla tavalla muotoiltuja fakseja."
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
+msgid  "Return address"
+msgstr "Vastausosoite"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 19.String.Text
+msgid  "Name:"
+msgstr "Nimi:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 20.String.Text
+msgid  "Street:"
+msgstr "Katuosoite:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 21.String.Text
+msgid  "ZIP code/State/City:"
+msgstr "Postinumero/Osavaltio/Postitoimipaikka:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 22.String.Text
+msgid  "Footer"
+msgstr "Alatunniste"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
+msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr "Tämä ohjattu toiminto luon faksimallin, jonka avulla voit luoda useita samoin muotoiltuja fakseja."
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
+msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Faksin luonti faksimallista tehdään kaksoisnapsauttamalla faksimallia."
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
+msgid  "Template Name:"
+msgstr "Mallitiedoston nimi:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
+msgid  "Location and file name:"
+msgstr "Sijainti ja tiedoston nimi:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
+msgid  "What do you want to do next?"
+msgstr "Mitä haluat tehdä seuraavaksi?"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
+msgid  "Choose the type of fax and a page design"
+msgstr "Valitse faksin tyyppi ja sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 29.String.Text
+msgid  "Select items to include in the fax template"
+msgstr "Valitse faksimalliin sisällytettävät kohdat"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 30.String.Text
+msgid  "Specify sender and recipient information"
+msgstr "Anna lähettäjän ja vastaanottajan tiedot"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 31.String.Text
+msgid  "Enter text for the footer"
+msgstr "Syötä alatunniste"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
+msgid  "Choose a name and save the template"
+msgstr "Valitse nimi ja tallenna malli"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
+msgid  "Include ~only on second and following pages"
+msgstr "Vasta ~toiselle ja seuraaville sivuille"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 34.String.Text
+msgid  "~Include page number"
+msgstr "~Sisällytä sivunumero"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 35.String.Text
+msgid  "~Date"
+msgstr "~Päivämäärä"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 36.String.Text
+msgid  "~Type of message"
+msgstr "~Tyyppi"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 37.String.Text
+msgid  "Fax Number:"
+msgstr "Faksinumero:"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 38.String.Text
+msgid  "Use placeholders for ~recipient's address"
+msgstr "Käytä paikkamerkkejä ~vastaanottajan osoitteelle"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 39.String.Text
+msgid  "Use address database for ~mail merge"
+msgstr "Käytä osoitetietokantaa ~joukkokirjeen tekoon"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 40.String.Text
+msgid  "~New return address"
+msgstr "~Uusi vastausosoite"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 1.String.Text
+msgid  "Important Information!"
+msgstr "Tärkeää tietoa!"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 2.String.Text
+msgid  "For your information"
+msgstr "Tiedoksi"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 3.String.Text
+msgid  "News!"
+msgstr "Uutisia!"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 1.String.Text
+msgid  "To whom it may concern,"
+msgstr "Asiaa tunteville,"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 2.String.Text
+msgid  "Dear Sir or Madam,"
+msgstr "Hyvä herra tai rouva"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 3.String.Text
+msgid  "Hello,"
+msgstr "Hei,"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 4.String.Text
+msgid  "Hi,"
+msgstr "Hei,"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 1.String.Text
+msgid  "Sincerely"
+msgstr "Vilpittömästi"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 2.String.Text
+msgid  "Yours faithfully"
+msgstr "Uskollisesti"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 3.String.Text
+msgid  "Regards"
+msgstr "Terveisin"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 4.String.Text
+msgid  "Love"
+msgstr "Rakkaudella"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 1.String.Text
+msgid  "Page design"
+msgstr "Sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 2.String.Text
+msgid  "Items to include"
+msgstr "Sisällytettävät kohdat"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 3.String.Text
+msgid  "Sender and Recipient"
+msgstr "Lähettäjä ja vastaanottaja"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 4.String.Text
+msgid  "Footer"
+msgstr "Alatunniste"
+
+#: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 5.String.Text
+msgid  "Name and location"
+msgstr "Tallennustiedot"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +1.String.Text
+msgid  "Web Wizard"
+msgstr "Ohjattu verkkosivuston luonti"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr "Ohjattu verkkosivuston luonti auttaa julkaisemaan asiakirjoja internetissä.\n\nAsiakirjasi muunnetaan sellaisiksi, että niitä pystyy katselemaan selaimella. Lisäksi tehdään sisällysluettelo, josta pääsee helposti linkkien avulla asiakirjoihin. Voit myös muokata sivujen asettelua.\nPystyt päivittämään, lisäämään tai poistamaan julkaistuja asiakirjojasi tällä toiminnolla."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
+msgid  "~Delete"
+msgstr "~Poista"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +5.String.Text
+msgid  "Introduction"
+msgstr "Johdanto"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +6.String.Text
+msgid  "Select the documents you want to publish"
+msgstr "Valitse julkaistavat asiakirjat"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +8.String.Text
+msgid  "Document information "
+msgstr "Asiakirjan tiedot "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +9.String.Text
+msgid  "~Title:"
+msgstr "~Otsikko:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +10.String.Text
+msgid  "~Summary: "
+msgstr "~Yhteenveto: "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +11.String.Text
+msgid  "Au~thor:"
+msgstr "~Tekijä:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +12.String.Text
+msgid  "~Export to file format:"
+msgstr "~Vie muotoon:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +13.String.Text
+msgid  "Enter general information for your web site"
+msgstr "Yleiset tiedot verkkosivustostasi"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +14.String.Text
+msgid  "Title:"
+msgstr "Otsikko:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +16.String.Text
+msgid  "Description:"
+msgstr "Kuvaus:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +18.String.Text
+msgid  "Created:"
+msgstr "Luotu:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +20.String.Text
+msgid  "E-mail:"
+msgstr "Sähköposti:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +21.String.Text
+msgid  "Copyright notice:"
+msgstr "Copyright ilmoitus:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +22.String.Text
+msgid  "Modified:"
+msgstr "Muokattu:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +24.String.Text
+msgid  "~Preview"
+msgstr "~Esikatselu"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +25.String.Text
+msgid  "Where do you want to publish your web site?"
+msgstr "Minne haluat julkistaa verkkosivustosi?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +26.String.Text
+msgid  "Publish the new web site:"
+msgstr "Julkaise uusi verkkosivusto:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +27.String.Text
+msgid  "To a ~local folder"
+msgstr "~Paikalliseen kansioon"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +28.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +29.String.Text
+msgid  "To a ~web server via FTP"
+msgstr "~Web-palvelimelle FTP-siirtona"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +31.String.Text
+msgid  "~Configure..."
+msgstr "Kokoonpanom~ääritykset..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +32.String.Text
+msgid  "To a ZIP ~archive"
+msgstr "Pakatuksi ~ZIP-tiedostoksi"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +33.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +34.String.Text
+msgid  "~Save settings (recommended)"
+msgstr "~Tallenna asetukset (suositeltavaa)"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +35.String.Text
+msgid  "Save ~as:"
+msgstr "Tallenna ~nimellä:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +36.String.Text
+msgid  "~Choose settings for the Web Wizard"
+msgstr "~Valitse asetukset verkkosivuston luontiin"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +37.String.Text
+msgid  "Web site content "
+msgstr "Verkkosivuston sisältö "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +38.String.Text
+msgid  "~Add..."
+msgstr "~Lisää..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +39.String.Text
+msgid  "Remo~ve"
+msgstr "~Poista"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +40.String.Text
+msgid  "Choose a layout for the table of contents of your web site"
+msgstr "Valitse asettelu verkkosivuston sisällysluettelolle"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +41.String.Text
+msgid  "Select a style for the table of contents page"
+msgstr "Valitse tyyli verkkosivuston sisällysluettelolle"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +42.String.Text
+msgid  "~Style:"
+msgstr "~Tyyli:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +48.String.Text
+msgid  "~Layouts: "
+msgstr "~Asettelut: "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +50.String.Text
+msgid  "~Description"
+msgstr "Ku~vaus"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +51.String.Text
+msgid  "~Author"
+msgstr "~Tekijä"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +52.String.Text
+msgid  "Cr~eation date"
+msgstr "~Luontipäivämäärä"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +53.String.Text
+msgid  "~Last change date"
+msgstr "~Viimeisen muutoksen päivämäärä"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +54.String.Text
+msgid  "~File name"
+msgstr "~Tiedoston nimi"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +55.String.Text
+msgid  "File forma~t"
+msgstr "Tiedoston muoto"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +56.String.Text
+msgid  "File format ~icon"
+msgstr "Tiedostomuodon ~kuvake"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +57.String.Text
+msgid  "Number ~of pages"
+msgstr "~Sivujen lukumäärä"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +58.String.Text
+msgid  "~Size in KB"
+msgstr "~Koko kilotavuina"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
+msgid  "Click 'Preview' to see a preview in your browser:"
+msgstr "Napsauta 'Esikatselu' sivujen näyttämiseksi selaimessasi:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
+msgid  "Customize the selected layout"
+msgstr "Mukauta valittua asettelua"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
+msgid  "Include the following information for each document in the table of contents:"
+msgstr "Näytä seuraavat tiedot jokaisesta asiakirjasta sisällysluettelossa:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
+msgid  "Optimize the layout for screen resolution:"
+msgstr "Optimoi asettelu näyttötarkkuudelle:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +64.String.Text
+msgid  "~640x480"
+msgstr "~640x480"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +65.String.Text
+msgid  "~800x600"
+msgstr "~800x600"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +66.String.Text
+msgid  "~1024x768"
+msgstr "~1024x768"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +70.String.Text
+msgid  "Generating Your Web Site"
+msgstr "Verkkosivustoasi luodaan"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +71.String.Text
+msgid  "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +72.String.Text
+msgid  "myWebsite"
+msgstr "omaVerkkosivusto"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +73.String.Text
+msgid  "FTP target '%FILENAME' is a file."
+msgstr "FTP-kohde '%FILENAME' on tiedosto."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +74.String.Text
+msgid  "The local target '%FILENAME' is a file."
+msgstr "Paikallinen hakemisto '%FILENAME' on tiedosto."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
+msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgstr "Pakattu ZIP-tiedosto '%FILENAME' on jo olemassa. Haluatko korvata sen sisällön? "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
+msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "FTP-kohdekansio '%FILENAME' ei ole tyhjä. Joidenkin tiedostojen sisältö saatetaan korvata. Haluatko jatkaa?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
+msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "Paikallinen kohdekansio '%FILENAME' ei ole tyhjä. Joidenkin tiedostojen sisältö saatetaan korvata. Haluatko jatkaa?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
+msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr "Annetulla nimellä on jo tallennettu asetukset. Haluatko korvata asetukset nykyisillä? "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
+msgid  "Exporting documents..."
+msgstr "Asiakirjoja muunnetaan..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +80.String.Text
+msgid  "Preparing export..."
+msgstr "Asiakirjojen muunnosta valmistellaan..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +81.String.Text
+msgid  "Copying layout files..."
+msgstr "Kopioidaan asettelutiedostoja..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +82.String.Text
+msgid  "Preparing table of contents generation..."
+msgstr "Valmistellaan sisällysluettelon luontia..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +83.String.Text
+msgid  "Generating table of contents..."
+msgstr "Luodaan sisällysluetteloa..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +84.String.Text
+msgid  "Initializing..."
+msgstr "Alustetaan..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +86.String.Text
+msgid  "Preparing to publish..."
+msgstr "Valmistaudutaan julkaisuun..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +87.String.Text
+msgid  "Publishing to local directory..."
+msgstr "Julkaistaan paikalliseen kansioon..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +88.String.Text
+msgid  "Publishing to FTP destination..."
+msgstr "Julkaistaan FTP-kohteeseen..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +89.String.Text
+msgid  "Publishing to a ZIP archive..."
+msgstr "Julkaistaan pakattuun ZIP-tiedostoon..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 90.String.Text
+msgid  "Finishing..."
+msgstr "Viimeistely..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 94.String.Text
+msgid  "Graphic files"
+msgstr "Kuva tiedostot"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 95.String.Text
+msgid  "All files"
+msgstr "Kaikki tiedostot"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 96.String.Text
+msgid  "~ZIP archive files"
+msgstr "~Pakatut ZIP tiedostot"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 98.String.Text
+msgid  "Background images"
+msgstr "Taustakuvat"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 99.String.Text
+msgid  "Choose a background image: "
+msgstr "Valitse taustakuva: "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 100.String.Text
+msgid  "Icon sets"
+msgstr "Kuvakevalikoimat"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 101.String.Text
+msgid  "Choose an icon set:"
+msgstr "Valitse kuvakevalikoima:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +102.String.Text
+msgid  "Other..."
+msgstr "Muu..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +103.String.Text
+msgid  "None"
+msgstr "Ei mitään"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +104.String.Text
+msgid  "Your web site was created successfully into: %FILENAME"
+msgstr "Verkkosivustosi luotiin onnistuneesti kohteeseen: %FILENAME"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +105.String.Text
+msgid  "One or more errors occurred when generating the web site."
+msgstr "Tapahtui virheitä verkkosivuston luonnissa."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
+msgid  "An error occurred while generating the table of contents page(s). "
+msgstr "Tapahtui virhe sisällysluettelon luonnissa. "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +107.String.Text
+msgid  "An error occurred while copying the layout files. "
+msgstr "Tapahtui virhe asettelutiedostojen kopioinnissa. "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
+msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgstr "Tapahtui virhe asiakirjan '%FILENAME' tietojen luvussa. "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
+msgid  "An error occurred while exporting the document '%FILENAME'."
+msgstr "Tapahtui virhe asiakirjaa '%FILENAME' muunnettaessa."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
+msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "Tapahtui virhe kansion luonnissa, kun verkkosivustoa luotiin kohteeseen '%FILENAME'."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
+msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgstr "Tapahtui oikeusvirhe verkkosivuston luonnissa kohteeseen '%FILENAME'."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
+msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "Tapahtui I/O-virhe verkkosivuston luonnissa kohteeseen '%FILENAME'."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
+msgid  "An error occurred while copying media files to the temporary directory."
+msgstr "Tapahtui virhe tiedostojen kopioinnissa väliaikaiseen hakemistoon."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
+msgid  "The web site could not be copied to the following destination: %URL"
+msgstr "Verkkosivustoa ei voitu kopioida kohteeseen: %URL"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +115.String.Text
+msgid  "An unexpected error occurred: %ERROR"
+msgstr "Tapahtui yllättävä virhe: %ERROR"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
+msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "Yllättävä virhe tapahtui tarkistettaessa tiedostoa: '%FILENAME'"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
+msgid  "%FILENAME' is a folder."
+msgstr "%FILENAME on kansio."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +118.String.Text
+msgid  "Loading Web Wizard Settings..."
+msgstr "Luetaan ohjatun verkkosivuston luonnin asetuksia..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +119.String.Text
+msgid  "An unexpected error occurred."
+msgstr "Yllättävä virhe tapahtui."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +120.String.Text
+msgid  "Validating documents..."
+msgstr "Tarkistetaan asiakirjoja..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +121.String.Text
+msgid  "My Archive"
+msgstr "Arkistoni"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +122.String.Text
+msgid  "Introduction "
+msgstr "Johdanto "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +123.String.Text
+msgid  "Documents "
+msgstr "Asiakirjat "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +124.String.Text
+msgid  "Main layout"
+msgstr "Asettelu"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +125.String.Text
+msgid  "Layout details"
+msgstr "Asettelun yksityiskohdat"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +126.String.Text
+msgid  "Style"
+msgstr "Tyyli"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +127.String.Text
+msgid  "Web site information"
+msgstr "Verkkosivuston tiedot"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +128.String.Text
+msgid  "Preview"
+msgstr "Esikatselu"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr "Valitut asetukset poistetaan.\n\nHaluatko todella poistaa nämä asetukset? "
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
+msgid  "%NUMBER pages"
+msgstr "sivuja %NUMBER"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +132.String.Text
+msgid  "%NUMBER slides"
+msgstr "kalvoja %NUMBER"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +133.String.Text
+msgid  "Created: %DATE"
+msgstr "Luotu: %DATE"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +134.String.Text
+msgid  "Last modified: %DATE"
+msgstr "Päivitetty: %DATE"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +135.String.Text
+msgid  "Web Wizard Settings"
+msgstr "Ohjatun verkkosivuston luonnin asetukset"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +136.String.Text
+msgid  "Background image:"
+msgstr "Taustakuva:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +137.String.Text
+msgid  "Icon set:"
+msgstr "Kuvakevalikoima:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +138.String.Text
+msgid  "The icon set is used for presentations in HTML format."
+msgstr "Kuvakevalikoimaa käytetään esityksiin HTML-muodossa."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +139.String.Text
+msgid  "HTML Metadata"
+msgstr "HTML-metatiedot"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +140.String.Text
+msgid  "Choose..."
+msgstr "Valitse..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +141.String.Text
+msgid  "Choose..."
+msgstr "Valitse..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +142.String.Text
+msgid  "<default>"
+msgstr "<oletus>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +143.String.Text
+msgid  "Publishing via FTP Proxy is not supported."
+msgstr "Julkaisu FTP-välityspalvelimen läpi ei ole mahdollista."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +144.String.Text
+msgid  "<no background image>"
+msgstr "<ei taustakuvaa>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +145.String.Text
+msgid  "<no icon set>"
+msgstr "<ei kuvakevalikoimaa>"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +146.String.Text
+msgid  "The FTP directory '%FILENAME' could not be created."
+msgstr "FTP-kohdekansion '%FILENAME' luonti epäonnistui."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr "FTP-kohdekansiota '%FILENAME' ei ole olemassa.\nLuodaanko kansio nyt?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
+msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr "Pakattua ZIP-tiedostoa '%FILENAME' ei pystytä luomaan: kansio samalla nimellä on olemassa."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr "Paikallista kansiota '%FILENAME' ei pystytä luomaan.\nTarkista että sinulla on kirjoitusoikeudet."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr "Paikallista kansiota '%FILENAME' ei ole olemassa. \nLuodaanko kansio nyt?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
+msgid  "Size: %NUMBERKB"
+msgstr "Koko: %NUMBERKB"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +152.String.Text
+msgid  "File not found. Would you like to specify a new file location?"
+msgstr "Tiedostoa ei löydy. Haluatko antaa uuden sijainnin?"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +0.String.Text
+msgid  "FTP Connection"
+msgstr "FTP-yhteys"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +1.String.Text
+msgid  "~User name:"
+msgstr "~Käyttäjätunnus:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +2.String.Text
+msgid  "~Password:"
+msgstr "~Salasana:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +3.String.Text
+msgid  "Connect"
+msgstr "Muodosta yhteys"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +4.String.Text
+msgid  "1. Enter FTP connection information."
+msgstr "1. Syötä FTP-yhteyden tiedot."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +5.String.Text
+msgid  "~Server name or IP address:"
+msgstr "~Palvelimen nimi tai IP-osoite:"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +6.String.Text
+msgid  "2. Connect to the server."
+msgstr "2. Muodosta yhteys palvelimeen."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +7.String.Text
+msgid  "3. ~Choose a remote directory (optional)."
+msgstr "3. Valitse kansio palvelimella (ei pakollinen)."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +8.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +9.String.Text
+msgid  "Connection status is unknown"
+msgstr "Yhteyden tila on tuntematon"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +10.String.Text
+msgid  "Connection was established successfully"
+msgstr "Yhteyden muodostus onnistui"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +11.String.Text
+msgid  "Username or password is wrong"
+msgstr "Käyttäjätunnus tai salasana on väärin"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +12.String.Text
+msgid  "Could not resolve server name"
+msgstr "Palvelimen nimeä ei löytynyt"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +13.String.Text
+msgid  "You do not have sufficient user rights"
+msgstr "Oikeutesi eivät riitä palvelimella"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +14.String.Text
+msgid  "Cannot connect to server"
+msgstr "Yhteyden muodostus palvelimeen epäonnistui"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +15.String.Text
+msgid  "Unexpected error"
+msgstr "Yllättävä virhe"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +16.String.Text
+msgid  "FTP publishing directory"
+msgstr "FTP-julkaisukansio"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +17.String.Text
+msgid  "This is not an FTP folder"
+msgstr "Tämä ei ole FTP-kansio"
+
+#: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +18.String.Text
+msgid  "Connecting..."
+msgstr "Yhteyttä muodostetaan..."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +1.String.Text
+msgid  "Agenda Wizard"
+msgstr "Ohjattu esityslistan luonti"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +2.String.Text
+msgid  "Make ~manual changes to this agenda template"
+msgstr "Muokkaa ~manuaalisesti esityslistan mallia"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +3.String.Text
+msgid  "Template name:"
+msgstr "Mallitiedoston nimi:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 4.String.Text
+msgid  "Location and file name:"
+msgstr "Sijainti ja tiedoston nimi:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +5.String.Text
+msgid  "What do you want to do next?"
+msgstr "Mitä haluat tehdä seuraavaksi?"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +6.String.Text
+msgid  "Please choose the page design for the agenda"
+msgstr "Valitse sivun asettelu esityslistalle"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
+msgid  "Please select the headings you wish to include in your agenda template"
+msgstr "Valitse esityslistan malliin sisällytettävät otsikot"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
+msgid  "Please enter general information for the event"
+msgstr "Määritä tapahtuman yleiset tiedot"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +9.String.Text
+msgid  "Please specify items for the agenda"
+msgstr "Määritä esityslistan kohdat"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +10.String.Text
+msgid  "Please select the names you wish to include in your agenda template"
+msgstr "Valitse esityslistan malliin sisällytettävät nimet"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +11.String.Text
+msgid  "Choose a name and save the template"
+msgstr "Valitse nimi ja tallenna malli"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +12.String.Text
+msgid  "Include form for recording minutes"
+msgstr "Sisällytä lomake pöytäkirjaa varten"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
+msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr "Tämä toiminto ohjaa esityslistan mallin luonnissa. Voit jatkossa käyttää esityslistan mallia samanmuotoisten esityslistojen luonnissa."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
+msgid  "Time:"
+msgstr "Aika:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +15.String.Text
+msgid  "Name:"
+msgstr "Nimi:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 16.String.Text
+msgid  "Location:"
+msgstr "Sijainti:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
+msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr "Paikkamerkkejä käytetään tyhjien kenttien kohdalla. Voit myöhemmin korvata paikkamerkit tekstillä."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
+msgid  "..."
+msgstr "..."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +19.String.Text
+msgid  "Create an ~agenda from this template"
+msgstr "~Luo esityslista tästä mallista"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
+msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Esityslistan luonti mallista tehdään kaksoisnapsauttamalla mallia."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
+msgid  "Agenda item"
+msgstr "Esityslistan kohta"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +22.String.Text
+msgid  "Responsible"
+msgstr "Vastuussa"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +23.String.Text
+msgid  "Duration"
+msgstr "Kesto"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +24.String.Text
+msgid  "Meeting called by"
+msgstr "Kokoonkutsuja"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
+msgid  "Chairperson"
+msgstr "Puheenjohtaja"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
+msgid  "Minute keeper"
+msgstr "Pöytäkirjan pitäjä"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
+msgid  "Moderator"
+msgstr "Moderaattori"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +28.String.Text
+msgid  "Attendees"
+msgstr "Osallistujat"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
+msgid  "Observers"
+msgstr "Seuraajat"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
+msgid  "Facility personnel"
+msgstr "Paikan henkilökunta"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
+msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr "Esityslistan mallissa on paikkamerkit henkilöille. Nimet täytetään, kun mallista luodaan esityslista."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
+msgid  "Type of meeting"
+msgstr "Kokouksen tyyppi"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +33.String.Text
+msgid  "Please read"
+msgstr "Luettavaa"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +34.String.Text
+msgid  "Please bring"
+msgstr "Ota mukaan"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +35.String.Text
+msgid  "Notes"
+msgstr "Huomautukset"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
+msgid  "The agenda template will include placeholders for the selected items."
+msgstr "Esityslistan mallissa on paikkamerkit kohdille."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
+msgid  "Date:"
+msgstr "Päivämäärä:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
+msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr "Tämä ohjattu toiminto luo esityslistan mallin, josta voidaan tehdä samanmuotoisia esityslistoja."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
+msgid  "Page design:"
+msgstr "Sivun asettelu:"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +41.String.Text
+msgid  "myAgendaTemplate.stw"
+msgstr "omaEsityslistaMalli.stw"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +42.String.Text
+msgid  "My Agenda Template"
+msgstr "Oma esityslistamalli"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +43.String.Text
+msgid  "An unexpected error occurred while saving the agenda template."
+msgstr "Tapahtui odottamaton virhe esityslistan mallin tallennuksessa."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +44.String.Text
+msgid  "Name"
+msgstr "Nimi"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +45.String.Text
+msgid  "Date"
+msgstr "Päivämäärä"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +46.String.Text
+msgid  "Time"
+msgstr "Aika"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 47.String.Text
+msgid  "Location"
+msgstr "Sijainti"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +48.String.Text
+msgid  "Click to replace this text"
+msgstr "Napsauta muuttaaksesi tekstiä"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +50.String.Text
+msgid  "Page design"
+msgstr "Sivun asettelu"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +51.String.Text
+msgid  "General information"
+msgstr "Yleiset tiedot"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +52.String.Text
+msgid  "Headings to include"
+msgstr "Sisällytettävät otsikot"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +53.String.Text
+msgid  "Names"
+msgstr "Nimet"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +54.String.Text
+msgid  "Agenda items"
+msgstr "Esityslistan kohdat"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +55.String.Text
+msgid  "Name and location"
+msgstr "Tallennustiedot"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +56.String.Text
+msgid  "An unexpected error occurred while opening the agenda template."
+msgstr "Tapahtui odottamaton virhe avattaessa esityslistan mallia."
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +57.String.Text
+msgid  "Type of meeting"
+msgstr "Kokouksen tyyppi"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +58.String.Text
+msgid  "Please bring"
+msgstr "Ota mukaan"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +59.String.Text
+msgid  "Please read"
+msgstr "Luettavaa"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +60.String.Text
+msgid  "Notes"
+msgstr "Huomautukset"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +61.String.Text
+msgid  "Meeting called by"
+msgstr "Kokoonkutsuja"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +62.String.Text
+msgid  "Chairperson"
+msgstr "Puheenjohtaja"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +63.String.Text
+msgid  "Attendees"
+msgstr "Osallistujat"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +64.String.Text
+msgid  "Minute keeper"
+msgstr "Pöytäkirjan pitäjä"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +65.String.Text
+msgid  "Moderator"
+msgstr "Moderaattori"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +66.String.Text
+msgid  "Observers"
+msgstr "Seuraajat"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +67.String.Text
+msgid  "Facility personnel"
+msgstr "Paikan henkilökunta"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +68.String.Text
+msgid  "Insert"
+msgstr "Lisää"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +69.String.Text
+msgid  "Remove"
+msgstr "Poista"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +70.String.Text
+msgid  "Move up"
+msgstr "Siirrä ylös"
+
+#: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +71.String.Text
+msgid  "Move down"
+msgstr "Siirrä alas"
+
+#: source/importwizard/importwi.src#sHelpButton.String.Text
+msgid  "~Help"
+msgstr "~Ohje"
+
+#: source/importwizard/importwi.src#sCancelButton.String.Text
+msgid  "~Cancel"
+msgstr "~Peruuta"
+
+#: source/importwizard/importwi.src#sBackButton.String.Text
+msgid  "<< ~Back"
+msgstr "<< ~Edellinen"
+
+#: source/importwizard/importwi.src#sNextButton.String.Text
+msgid  "Ne~xt >>"
+msgstr "S~euraava >>"
+
+#: source/importwizard/importwi.src#sBeginButton.String.Text
+msgid  "~Convert"
+msgstr "~Muunna"
+
+#: source/importwizard/importwi.src#sCloseButton.String.Text
+msgid  "~Close"
+msgstr "~Sulje"
+
+#: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr "Tämä ohjattu toiminto muuntaa asiakirjoja vanhasta %PRODUCTNAME-muodosta ja Microsoft Office -asiakirjoista uuteen OpenDocument-muotoon."
+
+#: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr "Ota huomioon, että Microsoft-asiakirjojen VBA-makrot eivät enää toimi, jos ne muunnetaan."
+
+#: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+msgid  "Select the document type for conversion:"
+msgstr "Valitse muunnettava asiakirjatyyppi:"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+msgid  "Word templates"
+msgstr "Word-asiakirjamallit"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+msgid  "Excel templates"
+msgstr "Excel-asiakirjamallit"
+
+#: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+msgid  "PowerPoint templates"
+msgstr "PowerPoint-asiakirjamallit"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+msgid  "Word documents"
+msgstr "Word-asiakirjat"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+msgid  "Excel documents"
+msgstr "Excel-asiakirjat"
+
+#: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+msgid  "PowerPoint documents"
+msgstr "PowerPoint-asiakirjat"
+
+#: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+msgid  "Including subdirectories"
+msgstr "sisällytetään alikansiot"
+
+#: source/importwizard/importwi.src#sMSContainerName.String.Text
+msgid  "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: source/importwizard/importwi.src#sSummaryHeader.String.Text
+msgid  "Summary:"
+msgstr "Yhteenveto:"
+
+#: source/importwizard/importwi.src#sTextImportLabel.String.Text
+msgid  "Import from:"
+msgstr "Lähde:"
+
+#: source/importwizard/importwi.src#sTextExportLabel.String.Text
+msgid  "Save to:"
+msgstr "Tallenna:"
+
+#: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+msgid  "Imported_Templates"
+msgstr "Tuodut_mallit"
+
+#: source/importwizard/importwi.src#sProgressDesc1.String.Text
+msgid  "Progress: "
+msgstr "Tilanne: "
+
+#: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+msgid  "Document"
+msgstr "Asiakirja"
+
+#: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+msgid  "Documents"
+msgstr "Asiakirjat"
+
+#: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+msgid  "Templates"
+msgstr "Mallit"
+
+#: source/importwizard/importwi.src#sNoDirCreation.String.Text
+msgid  "The '%1' directory cannot be created: "
+msgstr "Hakemistoa %1 ei voi luoda: "
+
+#: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+msgid  "The '%1' directory does not exist."
+msgstr "Hakemistoa %1 ei ole olemassa."
+
+#: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+msgid  "Do you want to create it now?"
+msgstr "Haluatko luoda sen nyt?"
+
+#: source/importwizard/importwi.src#sFileExists.String.Text
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Tiedosto '<1>' on jo olemassa.<CR>Haluatko korvata tiedoston?"
+
+#: source/importwizard/importwi.src#sMorePathsError3.String.Text
+msgid  "Directories do not exist"
+msgstr "Hakemistoja ei ole"
+
+#: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+msgid  "Do you want to overwrite documents without being asked?"
+msgstr "Haluatko korvata asiakirjat ilman kysymistä?"
+
+#: source/importwizard/importwi.src#sreeditMacro.String.Text
+msgid  "Document macro has to be revised."
+msgstr "Asiakirjan makro täytyy tarkastaa."
+
+#: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+msgid  "Document '<1>' could not be saved."
+msgstr "Asiakirjaa '<1>' ei voitu tallentaa."
+
+#: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+msgid  "Document '<1>' could not be opened."
+msgstr "Asiakirjaa '<1>' ei voitu avata."
+
+#: source/importwizard/importwi.src#sConvertError1.String.Text
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Haluatko varmasti lopettaa muunnoksen nyt?"
+
+#: source/importwizard/importwi.src#sConvertError2.String.Text
+msgid  "Cancel Wizard"
+msgstr "P~eruuta"
+
+#: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+msgid  "An unexpected error has occurred in the wizard."
+msgstr "Yllättävä virhe tapahtui."
+
+#: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+msgid  "Error"
+msgstr "Virhe"
+
+#: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+msgid  "Select a directory"
+msgstr "Valitse hakemisto"
+
+#: source/importwizard/importwi.src#sDialogTitle.String.Text
+msgid  "Document Converter"
+msgstr "Asiakirjamuunnin"
+
+#: source/importwizard/importwi.src#sProgressPage1.String.Text
+msgid  "Progress"
+msgstr "Tilanne"
+
+#: source/importwizard/importwi.src#sProgressPage2.String.Text
+msgid  "Retrieving the relevant documents:"
+msgstr "Haetaan asianmukaiset asiakirjat:"
+
+#: source/importwizard/importwi.src#sProgressPage3.String.Text
+msgid  "Converting the documents"
+msgstr "Muunnetaan asiakirjat"
+
+#: source/importwizard/importwi.src#sProgressFound.String.Text
+msgid  "Found:"
+msgstr "Tulokset:"
+
+#: source/importwizard/importwi.src#sProgressPage5.String.Text
+msgid  "%1 found"
+msgstr "%1 löydetty"
+
+#: source/importwizard/importwi.src#sReady.String.Text
+msgid  "Finished"
+msgstr "Valmis"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+msgid  "Text templates"
+msgstr "Tekstimallit"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+msgid  "Spreadsheet templates"
+msgstr "Laskentataulukkomallit"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+msgid  "Drawing/presentation templates"
+msgstr "Piirros- tai esitysmallit"
+
+#: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+msgid  "Master documents"
+msgstr "Perusasiakirjat"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+msgid  "Text documents"
+msgstr "Tekstiasiakirjat"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+msgid  "Spreadsheets"
+msgstr "Laskentataulukot"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+msgid  "Drawing/presentation documents"
+msgstr "Piirros- tai esitysasiakirjat"
+
+#: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+msgid  "Master documents/formulas"
+msgstr "Perusasiakirjat tai kaavat"
+
+#: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+msgid  "Master documents"
+msgstr "Perusasiakirjat"
+
+#: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+msgid  "Formulas"
+msgstr "Kaavat"
+
+#: source/importwizard/importwi.src#sSourceDocuments.String.Text
+msgid  "Source documents"
+msgstr "Lähdeasiakirjat"
+
+#: source/importwizard/importwi.src#sTargetDocuments.String.Text
+msgid  "Target documents"
+msgstr "Kohdeasiakirjat"
+
+#: source/importwizard/importwi.src#sCreateLogfile.String.Text
+msgid  "Create log file"
+msgstr "Luo lokitiedosto"
+
+#: source/importwizard/importwi.src#sLogfileSummary.String.Text
+msgid  "<COUNT> documents converted"
+msgstr "<COUNT> asiakirjaa muunnettu"
+
+#: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+msgid  "A log file will be created in your work directory"
+msgstr "Lokitiedosto luodaan työhakemistoon"
+
+#: source/importwizard/importwi.src#sshowLogfile.String.Text
+msgid  "Show log file"
+msgstr "Näytä lokitiedosto"
+
+#: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+msgid  "All subdirectories will be taken into account"
+msgstr "Kaikki alihakemistot huomioidaan"
+
+#: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+msgid  "These will be exported to the following directory:"
+msgstr "Kohteet viedään seuraavaan hakemistoon:"
+
+#: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat %PRODUCTNAME-ohjelmiston tekstiasiakirjat tuodaan:"
+
+#: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat %PRODUCTNAME-ohjelmiston laskentataulukot tuodaan:"
+
+#: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat %PRODUCTNAME-ohjelmiston piirros- ja esitysasiakirjat tuodaan:"
+
+#: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat %PRODUCTNAME-ohjelmiston kaava-asiakirjat tuodaan:"
+
+#: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat %PRODUCTNAME-ohjelmiston tekstimallit tuodaan:"
+
+#: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat %PRODUCTNAME-ohjelmiston taulukkomallit tuodaan:"
+
+#: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat %PRODUCTNAME-ohjelmiston piirros- ja esitysmallit tuodaan:"
+
+#: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat %PRODUCTNAME-ohjelmiston perusasiakirjat tuodaan:"
+
+#: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+msgid  "All Word documents contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat Word-asiakirjat tuodaan:"
+
+#: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+msgid  "All Excel documents contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat Excel-asiakirjat tuodaan:"
+
+#: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat PowerPoint-asiakirjat tuodaan:"
+
+#: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+msgid  "All Word templates contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat Word-mallit tuodaan:"
+
+#: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+msgid  "All Excel templates contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat Excel-mallit tuodaan:"
+
+#: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgstr "Kaikki seuraavassa hakemistossa olevat PowerPoint-mallit tuodaan:"
+
+#: source/schedule/schedule.src#dlgCalTitle.String.Text
+msgid  "%PRODUCTNAME Calendar"
+msgstr "%PRODUCTNAME-kalenteri"
+
+#: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+msgid  "Back"
+msgstr "Edellinen"
+
+#: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+msgid  "Personal Data"
+msgstr "Henkilötiedot"
+
+#: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+msgid  "Add Holidays to Calendar"
+msgstr "Lisää lomat kalenteriin"
+
+#: source/schedule/schedule.src#dlgOK.String.Text
+msgid  "Create"
+msgstr "Luo"
+
+#: source/schedule/schedule.src#dlgCancel.String.Text
+msgid  "Cancel"
+msgstr "Peruuta"
+
+#: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+msgid  "Calendar"
+msgstr "Kalenteri"
+
+#: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+msgid  "~Year Overview"
+msgstr "~Vuoden yleiskuvaus"
+
+#: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+msgid  "~Month"
+msgstr "~Kuukausi"
+
+#: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+msgid  "Add holidays for"
+msgstr "Lisää lomat"
+
+#: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+msgid  "USA"
+msgstr "USA"
+
+#: source/schedule/schedule.src#dlgTime.String.Text
+msgid  "Time Frame"
+msgstr "Aikakehys"
+
+#: source/schedule/schedule.src#dlgYear.String.Text
+msgid  "Year"
+msgstr "Vuosi"
+
+#: source/schedule/schedule.src#dlgCalMonth.String.Text
+msgid  "Month"
+msgstr "Kuukausi"
+
+#: source/schedule/schedule.src#dlgCalOwnData.String.Text
+msgid  "Personal Data"
+msgstr "Henkilötiedot"
+
+#: source/schedule/schedule.src#dlgCalInsert.String.Text
+msgid  "~Insert"
+msgstr "~Lisää"
+
+#: source/schedule/schedule.src#dlgCalDelete.String.Text
+msgid  "~Delete"
+msgstr "~Poista"
+
+#: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+msgid  "New Event"
+msgstr "Uusi tapahtuma"
+
+#: source/schedule/schedule.src#dlgCalEvent.String.Text
+msgid  "Event"
+msgstr "Tapahtuma"
+
+#: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+msgid  "One-Time"
+msgstr "Kerran"
+
+#: source/schedule/schedule.src#dlgCalEventDay.String.Text
+msgid  "Day"
+msgstr "Päivä"
+
+#: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+msgid  "Month"
+msgstr "Kuukausi"
+
+#: source/schedule/schedule.src#dlgCalEventYear.String.Text
+msgid  "Year"
+msgstr "Vuosi"
+
+#: source/schedule/schedule.src#dlgBitmapFile.String.Text
+msgid  "usa.bmp"
+msgstr "usa.bmp"
+
+#: source/schedule/schedule.src#dlgState.String.Text
+msgid  "Public holidays"
+msgstr "Yleiset lomapäivät"
+
+#: source/schedule/schedule.src#dlgMonth.String.Text
+msgid  "January"
+msgstr "Tammikuu"
+
+#: source/schedule/schedule.src#dlgMonth+1.String.Text
+msgid  "February"
+msgstr "Helmikuu"
+
+#: source/schedule/schedule.src#dlgMonth+2.String.Text
+msgid  "March"
+msgstr "Maaliskuu"
+
+#: source/schedule/schedule.src#dlgMonth+3.String.Text
+msgid  "April"
+msgstr "Huhtikuu"
+
+#: source/schedule/schedule.src#dlgMonth+4.String.Text
+msgid  "May"
+msgstr "Toukokuu"
+
+#: source/schedule/schedule.src#dlgMonth+5.String.Text
+msgid  "June"
+msgstr "Kesäkuu"
+
+#: source/schedule/schedule.src#dlgMonth+6.String.Text
+msgid  "July"
+msgstr "Heinäkuu"
+
+#: source/schedule/schedule.src#dlgMonth+7.String.Text
+msgid  "August"
+msgstr "Elokuu"
+
+#: source/schedule/schedule.src#dlgMonth+8.String.Text
+msgid  "September"
+msgstr "Syyskuu"
+
+#: source/schedule/schedule.src#dlgMonth+9.String.Text
+msgid  "October"
+msgstr "Lokakuu"
+
+#: source/schedule/schedule.src#dlgMonth+10.String.Text
+msgid  "November"
+msgstr "Marraskuu"
+
+#: source/schedule/schedule.src#dlgMonth+11.String.Text
+msgid  "December"
+msgstr "Joulukuu"
+
+#: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+msgid  "Yearly / Monthly Calendar"
+msgstr "Vuosi-/kuukausikalenteri"
+
+#: source/schedule/schedule.src#msgCalError.String.Text
+msgid  "An error occurred while creating the calendar."
+msgstr "On ilmennyt virhe luotaessa kalenteria."
+
+#: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+msgid  "Delete event entries"
+msgstr "Poista tapahtumamerkinnät"
+
+#: source/schedule/schedule.src#msgCalRemove.String.Text
+msgid  "Delete the selected entries?"
+msgstr "Poistetaanko valitut merkinnät?"
+
+#: source/schedule/schedule.src#stlWorkday.String.Text
+msgid  "Workweek"
+msgstr "Työviikko"
+
+#: source/schedule/schedule.src#stlWeekend.String.Text
+msgid  "Weekend"
+msgstr "Viikonloppu"
+
+#: source/schedule/schedule.src#nameCalYear.String.Text
+msgid  "Calendar"
+msgstr "Kalenteri"
+
+#: source/schedule/schedule.src#nameCalMonth.String.Text
+msgid  "Month"
+msgstr "Kuukausi"
+
+#: source/schedule/schedule.src#sProgress.String.Text
+msgid  "Progress:"
+msgstr "Tilanne:"
+
+#: source/template/template.src#SAMPLES.String.Text
+msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr "Jotta voisit käyttää esimerkin toimintoja täysipainoisesti, luo asiakirja tämän mallin avulla."
+
+#: source/template/template.src#SAMPLES + 1.String.Text
+msgid  "Remarks"
+msgstr "Huomautukset"
+
+#: source/template/template.src#STYLES.String.Text
+msgid  "Theme Selection"
+msgstr "Teeman valinta"
+
+#: source/template/template.src#STYLES + 1.String.Text
+msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr "On ilmennyt virhe tallennettaessa asiakirjaa leikepöydälle! Seuraavaa toimintoa ei voi kumota."
+
+#: source/template/template.src#STYLES + 2.String.Text
+msgid  "~Cancel"
+msgstr "~Peruuta"
+
+#: source/template/template.src#STYLES + 3.String.Text
+msgid  "~OK"
+msgstr "~OK"
+
+#: source/template/template.src#AgendaDlgName.String.Text
+msgid  "Minutes Template"
+msgstr "Pöytäkirjamalli"
+
+#: source/template/template.src#AgendaDlgNoCancel.String.Text
+msgid  "An option must be confirmed."
+msgstr "Valinta on vahvistettava."
+
+#: source/template/template.src#AgendaDlgFrame.String.Text
+msgid  "Minutes Type"
+msgstr "Pöytäkirjatyyppi"
+
+#: source/template/template.src#AgendaDlgButton1.String.Text
+msgid  "Results Minutes"
+msgstr "Tulospöytäkirja"
+
+#: source/template/template.src#AgendaDlgButton2.String.Text
+msgid  "Evaluation Minutes"
+msgstr "Arviointipöytäkirja"
+
+#: source/template/template.src#CorrespondenceNoTextmark.String.Text
+msgid  "The bookmark 'Recipient' is missing."
+msgstr "Kirjanmerkki 'Vastaanottaja' puuttuu."
+
+#: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+msgid  "Form letter fields can not be included."
+msgstr "Joukkokirjekenttien liittäminen ei onnistu."
+
+#: source/template/template.src#CorrespondenceMsgError.String.Text
+msgid  "An error has occurred."
+msgstr "On ilmennyt virhe."
+
+#: source/template/template.src#CorrespondenceDialog.String.Text
+msgid  "Addressee"
+msgstr "Saaja"
+
+#: source/template/template.src#CorrespondenceDialog+1.String.Text
+msgid  "One recipient"
+msgstr "Yksi vastaanottaja"
+
+#: source/template/template.src#CorrespondenceDialog+2.String.Text
+msgid  "Several recipients (address database)"
+msgstr "Useita vastaanottajia (osoitetietokanta)"
+
+#: source/template/template.src#CorrespondenceDialog+3.String.Text
+msgid  "Use of This Template"
+msgstr "Mallin käyttö"
+
+#: source/template/template.src#CorrespondenceFields.String.Text
+msgid  "Click placeholder and overwrite"
+msgstr "Napsauta paikanninta ja kirjoita sen päälle"
+
+#: source/template/template.src#CorrespondenceFields+1.String.Text
+msgid  "Company"
+msgstr "Yritys"
+
+#: source/template/template.src#CorrespondenceFields+2.String.Text
+msgid  "Department"
+msgstr "Osasto"
+
+#: source/template/template.src#CorrespondenceFields+3.String.Text
+msgid  "First Name"
+msgstr "Etunimi"
+
+#: source/template/template.src#CorrespondenceFields+4.String.Text
+msgid  "Last Name"
+msgstr "Sukunimi"
+
+#: source/template/template.src#CorrespondenceFields+5.String.Text
+msgid  "Street"
+msgstr "Katuosoite"
+
+#: source/template/template.src#CorrespondenceFields+6.String.Text
+msgid  "Country"
+msgstr "Maa"
+
+#: source/template/template.src#CorrespondenceFields+7.String.Text
+msgid  "ZIP/Postal Code"
+msgstr "Postinumero"
+
+#: source/template/template.src#CorrespondenceFields+8.String.Text
+msgid  "City"
+msgstr "Postitoimipaikka"
+
+#: source/template/template.src#CorrespondenceFields+9.String.Text
+msgid  "Title"
+msgstr "Otsikko"
+
+#: source/template/template.src#CorrespondenceFields+10.String.Text
+msgid  "Position"
+msgstr "Sijainti"
+
+#: source/template/template.src#CorrespondenceFields+11.String.Text
+msgid  "Form of Address"
+msgstr "Osoitemuoto"
+
+#: source/template/template.src#CorrespondenceFields+12.String.Text
+msgid  "Initials"
+msgstr "Nimikirjaimet"
+
+#: source/template/template.src#CorrespondenceFields+13.String.Text
+msgid  "Salutation"
+msgstr "Arvo"
+
+#: source/template/template.src#CorrespondenceFields+14.String.Text
+msgid  "Home Phone"
+msgstr "Kotipuhelin"
+
+#: source/template/template.src#CorrespondenceFields+15.String.Text
+msgid  "Work Phone"
+msgstr "Työpuhelin"
+
+#: source/template/template.src#CorrespondenceFields+16.String.Text
+msgid  "Fax"
+msgstr "Faksi"
+
+#: source/template/template.src#CorrespondenceFields+17.String.Text
+msgid  "E-Mail"
+msgstr "Sähköposti"
+
+#: source/template/template.src#CorrespondenceFields+18.String.Text
+msgid  "URL"
+msgstr "URL-osoite"
+
+#: source/template/template.src#CorrespondenceFields+19.String.Text
+msgid  "Notes"
+msgstr "Huomautukset"
+
+#: source/template/template.src#CorrespondenceFields+20.String.Text
+msgid  "Alt. Field 1"
+msgstr "Vaihtoeht. kenttä 1"
+
+#: source/template/template.src#CorrespondenceFields+21.String.Text
+msgid  "Alt. Field 2"
+msgstr "Vaihtoeht. kenttä 2"
+
+#: source/template/template.src#CorrespondenceFields+22.String.Text
+msgid  "Alt. Field 3"
+msgstr "Vaihtoeht. kenttä 3"
+
+#: source/template/template.src#CorrespondenceFields+23.String.Text
+msgid  "Alt. Field 4"
+msgstr "Vaihtoeht. kenttä 4"
+
+#: source/template/template.src#CorrespondenceFields+24.String.Text
+msgid  "ID"
+msgstr "Tunnus"
+
+#: source/template/template.src#CorrespondenceFields+25.String.Text
+msgid  "State"
+msgstr "Osavaltio"
+
+#: source/template/template.src#CorrespondenceFields+26.String.Text
+msgid  "Office Phone"
+msgstr "Toimistopuhelin"
+
+#: source/template/template.src#CorrespondenceFields+27.String.Text
+msgid  "Pager"
+msgstr "Hakulaite"
+
+#: source/template/template.src#CorrespondenceFields+28.String.Text
+msgid  "Mobile Phone"
+msgstr "Matkapuhelin"
+
+#: source/template/template.src#CorrespondenceFields+29.String.Text
+msgid  "Other Phone"
+msgstr "Muu puhelin"
+
+#: source/template/template.src#CorrespondenceFields+30.String.Text
+msgid  "Calendar URL"
+msgstr "Kalenterin URL-osoite"
+
+#: source/template/template.src#CorrespondenceFields+31.String.Text
+msgid  "Invite"
+msgstr "Kutsu"
+
+#: source/template/template.src#TextField.String.Text
+msgid  "User data field is not defined!"
+msgstr "Käyttäjän tietokenttää ei ole määritetty!"
+
+#: source/template/template.src#Newsletter.String.Text
+msgid  "General layout"
+msgstr "Yleinen asettelu"
+
+#: source/template/template.src#Newsletter + 1.String.Text
+msgid  "Default layout"
+msgstr "Oletusasettelu"
+
+#: source/template/template.src#Newsletter + 2.String.Text
+msgid  "Commemorative publication layout"
+msgstr "Juhlajulkaisun asettelu"
+
+#: source/template/template.src#Newsletter + 3.String.Text
+msgid  "Brochure layout"
+msgstr "Esitteen asettelu"
+
+#: source/template/template.src#Newsletter + 10.String.Text
+msgid  "Format"
+msgstr "Muotoilu"
+
+#: source/template/template.src#Newsletter + 11.String.Text
+msgid  "Single-sided"
+msgstr "Yksipuolinen"
+
+#: source/template/template.src#Newsletter + 12.String.Text
+msgid  "Double-sided"
+msgstr "Kaksipuolinen"

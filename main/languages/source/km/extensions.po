@@ -1,0 +1,2580 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+msgid  "Address Book Data Source Wizard"
+msgstr "អ្នក​​​ជំនួយ​​​ការ​​​ប្រ​ភព​​​ទិន្នន័យ​​​​សៀវ​​ភៅ​​​អាសយ​​​ដ្ឋាន​​​"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
+msgid  "Address book type"
+msgstr "ប្រភេទ​សៀវភៅ​អាសយដ្ឋាន"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
+msgid  "Connection Settings"
+msgstr "​កំណត់ការ​​​​ត​ភ្ជាប់​"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
+msgid  "Table selection"
+msgstr "ជម្រើស​របស់​​តារាង"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
+msgid  "Field Assignment"
+msgstr "ការ​ផ្តល់​តម្លៃ​ឲ្យ​វាល​"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
+msgid  "Data Source Title"
+msgstr "​ចំណង​​​ជើង​របស់​​​​ប្រ​ភព​​​ទិន្នន័យ​​​"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr "%PRODUCTNAME អនុញ្ញាត​​​ឲ្យ​​​អ្នក​​​ចូល​​​ដំណើរ​​​ការ​​​ទិន្នន័យ​​អាសយ​​ដ្ឋាន​​​​​បច្ចុប្ប​ន្ន​ដែល​មាន​​ស្រាប់​​ក្នុង​​ប្រព័ន្ធ​​របស់​​អ្នក​​ ។​ ដើម្បី​​ធ្វើ​​​ដូច​​​នេះ​​​​​​ ប្រភព​​ទិន្នន័យ​ ​%PRODUCTNAME  ​នឹង​ត្រូវ​បាន​បង្កើត​ ក្នុង​​ករណី​ដែល​ទិន្នន័យ​អាសយ​ដ្ឋាន​របស់​អ្នក​ មាន​​ក្នុង​​​​សំណុំ​​បែប​បទ​​​ជា​តារាង​ ​។​ ​\n \nអ្នក​​​​ជំនួយ​​​​ការ​​​​នេះ​​​​​ជួយ​​​អ្នក ​​​បង្កើត​​​ប្រភព​​​ទិន្នន័យ​ ​។​​ "
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
+msgid  "Please select the type of your external address book:"
+msgstr "សូម​​​ជ្រើស​​ប្រភេទ​​សៀវភៅ​​អាសយ​ដ្ឋាន​​ខាង​ក្រៅ​​របស់​អ្នក ​៖"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
+msgid  "Evolution"
+msgstr "Evolution"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
+msgid  "Groupwise"
+msgstr "Groupwise"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
+msgid  "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
+msgid  "Mozilla / Netscape"
+msgstr "Mozilla / Netscape"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
+msgid  "Thunderbird"
+msgstr "មយូរា"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
+msgid  "KDE address book"
+msgstr "សៀវភៅ​អាសយដ្ឋាន KDE"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
+msgid  "Mac OS X address book"
+msgstr "សៀវភៅ​៿អាសយដ្ឋាន Mac OS X"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
+msgid  "LDAP address data"
+msgstr "ទិន្នន័យ​អាសយដ្ឋាន LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
+msgid  "Outlook address book"
+msgstr "សៀវភៅ​​អាសយ​ដ្ឋាន​ ​Outlook"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
+msgid  "Windows system address book"
+msgstr "សៀវភៅ​​​អាសយ​ដ្ឋាន​​​របស់​ប្រព័ន្ធ​វីនដូ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
+msgid  "Other external data source"
+msgstr "ប្រភព​​​​ទិន្នន័យ​​​​​ខាង​​ក្រៅ​​​​​ផ្សេង​​​​​​​ៗ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr "​ទាមទារ​ព័ត៌មាន​​បន្ថែម​​ ដើម្បី​​ដំឡើង​​ប្រភព​​ទិន្នន័យ​​ថ្មី ។\n\n​ចុច​​​ប៊ូតុង​​​ដូចខាងក្រោម​​នេះ​​​​ ដើម្បី​​​បើក​​​ប្រអប់​​​មួយ​​​ផ្សេង​​​ទៀត​ ​សម្រាប់​​​បញ្ចូល​​​ព័ត៌​មាន​​​ចាំបាច់​ ។​​"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
+msgid  "Settings"
+msgstr "ការ​កំណត់"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr "មិន​អាច​បង្កើត​ការ​តភ្ជាប់​ទៅ​ប្រភព​ទិន្នន័យ​បាន ។\nមុន​ពេល​អ្នក​ដំណើរការ សូម​ពិនិត្យ​មើល​ការ​កំណត់​ដែល​បាន​ធ្វើ​ឡើង ឬ​(នៅ​ទំព័រ​មុន) ជ្រើស​ប្រភេទ​ប្រភព​ទិន្នន័យ​អាសយដ្ឋាន​មួយ​ផ្សេង ។"
+
+#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr "ប្រ​ភព​​​​ទិន្នន័យ​​​​​ខាង​​ក្រៅ​​​​ដែល​​​​អ្នក​​​​បាន​​​​ជ្រើស ​​​​​មាន​​​​សៀវ​ភៅ​​​​អាសយ​​​ដ្ឋាន​​​​លើស​​​​ពី​មួយ​ ​​​។ ​​​​nសូម​​ជ្រើស​​ប្រភព​​ទិន្នន័យ​​មួយ​​ ដែល​​អ្ន​ក​​ចង់​​ធ្វើ​​​​ការ​​ជាមួយ​ ៖ ​​"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "ដើម្បី​​បញ្ចូល​​ទិន្នន័យ​​អាសយ​ដ្ឋាន​​ក្នុង​​ពុម្ព​​របស់​​អ្នក​ %PRODUCTNAME ត្រូវ​ដឹង​​វាល​​មួយ​ណា​ ​មាន​ទិន្នន័យ​​បែបណា ។\n\nឧទាហរណ៍​  អ្នក​​​អាច​​​រក្សា​​ទុក​​​អាសយ​ដ្ឋាន​​អ៊ីមែល​​ ក្នុង​វាល​​ដែល​មាន​ឈ្មោះ \"អ៊ីមែល\" ឬ​\"អ.ម.\" ​ឬ ​អ្វី​មួយ​​ដែល​​ខុស​​ពី​នេះ​ទាំង​ស្រុង ។​\n\nចុច​​ប៊ូតុង​​ខាងក្រោម​ ​ដើម្បី​​បើក​​ប្រអប់​​មួយ​​ផ្សេង​ទៀត​​​ ដែល​អ្នក​អាច​​បញ្ចូល​ការកំណត់​​​ សម្រាប់​​ប្រភព​​ទិន្នន័យ​​របស់​​អ្នក ។"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
+msgid  "Field Assignment"
+msgstr "ការ​ផ្តល់​តម្លៃ​ឲ្យ​វាល​"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr "នោះ​​គឺ​ជា​​ព័ត៌មាន​​ចាំបាច់ទាំងអស់​​ ​សម្រាប់​​រួម​​បញ្ចូល​​​ទិន្នន័យ​​​អាសយ​ដ្ឋាន​របស់​​អ្នក​​ទៅក្នុង %PRODUCTNAME ។\n\nឥឡូវ​  គ្រាន់​​តែ​​​បញ្ចូល​​ឈ្មោះ​​ដែល​​អ្នក​​ចង់​​ចុះ​ឈ្មោះ​​ប្រភព​ទិន្នន័យ​​ក្នុង​ %PRODUCTNAME ។"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
+msgid  "Location"
+msgstr "ទី​តាំង"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
+msgid  "Browse..."
+msgstr "រកមើល..."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
+msgstr "ធ្វើ​​ឲ្យ​​សៀវភៅ​​អាសយ​​ដ្ឋាន​​នេះ​​​ អាច​​ប្រើ​​បាន​ចំពោះ​​គ្រប់​​ម៉ូឌុល​​ទាំង​​អស់​​ក្នុង​​ %PRODUCTNAME ។"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
+msgid  "Address book name"
+msgstr "ឈ្មោះ​​សៀវ​ភៅ​​អាសយ​​ដ្ឋាន​​"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr "ប្រភព​​​ទិន្នន័យ​​​ផ្សេង​​​ទៀត​​​មាន​​ឈ្មោះ​​នេះ​​ហើយ ​។ ​ដោយ​​​សារ​​ប្រភព​​ទិន្នន័យ​​ត្រូវ​​មាន​​ឈ្មោះ​​តែ​មួយ​គត់​​ អ្នក​​ចាំ​បាច់​​ត្រូវ​​ជ្រើស​​ឈ្មោះ​​ថ្មី​​មួយ​​ទៀត​ ​។"
+
+#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
+msgid  "Please select a type of address book."
+msgstr "សូម​​ជ្រើស​​ប្រភេទ​​សៀវ​ភៅ​​អាសយ​ដ្ឋាន​​​មួយ ។​"
+
+#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+msgid  "Addresses"
+msgstr "អាសយ​ដ្ឋាន"
+
+#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+msgid  "Create Address Data Source"
+msgstr "បង្កើត​​ប្រភព​​ទិន្នន័យ​អាសយ​ដ្ឋាន"
+
+#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+msgid  "The connection could not be established."
+msgstr "មិន​​អាច​​បង្កើត​​ការ​​តភ្ជាប់​​បាន​​ទេ​ ។"
+
+#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+msgid  "Please check the settings made for the data source."
+msgstr "សូម​​​ពិនិត្យ​​​មើល​​​ការ​​​កំណត់​​​ដែល​​​បាន​​​បង្កើត​​​ ​សម្រាប់​​​​ប្រភព​​​​ទិន្នន័យ ​​។​​"
+
+#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+msgid  "Address Data - Field Assignment"
+msgstr "ទិន្នន័យ​​អាសយ​ដ្ឋាន - ​ការ​​ផ្តល់​​​តម្លៃ​​​ឲ្យ​​​វាល​"
+
+#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr "គ្មាន​​វាល​​​ត្រូវ​​បាន​​ផ្តល់​​​នៅ​​ពេល​​នេះ​ ។ ​\n​អ្នក​​អាច​​ផ្តល់​​​វាល​​​ឥឡូវនេះ​​ ​ឬ​ពេល​ក្រោយ​ ​ដោយ​​ដំបូងជ្រើស ៖ \n \"ឯកសារ - ពុម្ព - ប្រភព​សៀវភៅ​អា​សយ​ដ្ឋាន...\" "
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
+msgid  "Table"
+msgstr "តារាង"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
+msgid  "Search Key"
+msgstr "ពាក្យ​​​​​ស្វែង​​រក​​"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
+msgid  "AutoFilter"
+msgstr "តម្រង​ស្វ័យ​ប្រវត្តិ"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
+msgid  "Standard Filter"
+msgstr "តម្រង​ស្តង់ដារ"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
+msgid  "Remove Filter"
+msgstr "យក​តម្រង​ចេញ"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
+msgid  "Column Arrangement"
+msgstr "ការ​​​​រៀប​​​ចំ​​​​ជួរ​ឈរ​"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
+msgid  "Data Source"
+msgstr "ប្រភព​ទិន្នន័យ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
+msgid  "The following column names could not be assigned:\\n"
+msgstr "មិន​​អាច​​ផ្តល់​​​ឈ្មោះ​​​ជួរឈរ​​​ដូចខាងក្រោម​នេះ​បាន​ទេ​ ៖\n"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
+msgid  "Article"
+msgstr "អត្ថបទ​"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
+msgid  "Book"
+msgstr "សៀវភៅ​"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
+msgid  "Brochures"
+msgstr "ប័ណ្ណ​​ផ្សាយ​​ពាណិជ្ជ​កម្ម"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
+msgid  "Conference proceedings"
+msgstr "ការ​​​ដំណើរ​​​ការ​​ស​ន្និសីទ​​"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
+msgid  "Book excerpt"
+msgstr "សេចក្តី​​ដក​ស្រង់​​ពី​​សៀវភៅ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
+msgid  "Book excerpt with title"
+msgstr "សេចក្តី​​​ដក​ស្រង់​​​ពី​​សៀវភៅ​​​​ជា​មួយ​​​ចំណង​​​ជើង"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "ការ​​​ដំណើរ​​​ការ​​ស​ន្និសីទ​​"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
+msgid  "Journal"
+msgstr "ទិនា​នុ​ប្បវត្តិ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
+msgid  "Techn. documentation"
+msgstr "ឯកសារ​​​​​​បច្ចេក​ទេស"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
+msgid  "Thesis"
+msgstr "និក្ខេប​បទ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
+msgid  "Miscellaneous"
+msgstr "ផ្សេងៗ​"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
+msgid  "Dissertation"
+msgstr "បរមា​​ធិប្បាយ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "ការ​​​ដំណើរ​​​ការ​​ស​ន្និសីទ​​"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
+msgid  "Research report"
+msgstr "របាយការណ៍​​​ស្រាវ​ជ្រាវ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
+msgid  "Unpublished"
+msgstr "មិន​​បាន​​បោះ​​ពុម្ព​​ផ្សាយ​"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
+msgid  "e-mail"
+msgstr "អ៊ី​ម៉ែល"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
+msgid  "WWW document"
+msgstr "ឯកសារ​​ WWW"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
+msgid  "User-defined1"
+msgstr "​កំណត់​​​ដោយ​​​អ្នក​​ប្រើ ១"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
+msgid  "User-defined2"
+msgstr "​កំណត់​​​ដោយ​​​អ្នក​​ប្រើ ២"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
+msgid  "User-defined3"
+msgstr "​កំណត់​​ដោយ​​អ្នក​​ប្រើ ៣"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
+msgid  "User-defined4"
+msgstr "​កំណត់​​ដោយ​អ្នក​​ប្រើ ៤"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
+msgid  "User-defined5"
+msgstr "​កំណត់​​ដោយ​​អ្នក​​ប្រើ ៥"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
+msgid  "General"
+msgstr "ទូទៅ"
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
+msgid  "Insert Section..."
+msgstr "បញ្ចូល​​ភាគ​..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
+msgid  "Delete Section..."
+msgstr "លុប​ភាគ​..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
+msgid  "Modify Name..."
+msgstr "កែ​​ប្រែ​​​​​ឈ្មោះ​...​"
+
+#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
+msgid  "~Short name"
+msgstr "ឈ្មោះ​​ខ្លី ​"
+
+#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
+msgid  "~Type"
+msgstr "ប្រភេទ "
+
+#: source/bibliography/sections.src#ST_YEAR.String.Text
+msgid  "~Year"
+msgstr "ឆ្នាំ "
+
+#: source/bibliography/sections.src#ST_AUTHOR.String.Text
+msgid  "Author(s)"
+msgstr "អ្នក​​និពន្ធ"
+
+#: source/bibliography/sections.src#ST_TITLE.String.Text
+msgid  "Tit~le"
+msgstr "ចំណង​ជើង "
+
+#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
+msgid  "~Publisher"
+msgstr "អ្នក​​បោះ​ពុម្ព​ផ្សាយ "
+
+#: source/bibliography/sections.src#ST_ADDRESS.String.Text
+msgid  "A~ddress"
+msgstr "អាសយ​ដ្ឋាន "
+
+#: source/bibliography/sections.src#ST_ISBN.String.Text
+msgid  "~ISBN"
+msgstr "ISBN "
+
+#: source/bibliography/sections.src#ST_CHAPTER.String.Text
+msgid  "~Chapter"
+msgstr "ជំ​ពូក "
+
+#: source/bibliography/sections.src#ST_PAGE.String.Text
+msgid  "Pa~ge(s)"
+msgstr "ទំព័រ "
+
+#: source/bibliography/sections.src#ST_EDITOR.String.Text
+msgid  "Editor"
+msgstr "អ្នក​​​កែ​​សម្រួល​​"
+
+#: source/bibliography/sections.src#ST_EDITION.String.Text
+msgid  "Ed~ition"
+msgstr "ស្នា​ដៃ ​"
+
+#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
+msgid  "~Book title"
+msgstr "ចំណង​​ជើង​របស់​សៀវភៅ "
+
+#: source/bibliography/sections.src#ST_VOLUME.String.Text
+msgid  "Volume"
+msgstr "ភាគ​"
+
+#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
+msgid  "Publication t~ype"
+msgstr "ប្រ​ភេទ​​ការ​​បោះ​​ពុម្ព​​ផ្សាយ​​ "
+
+#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
+msgid  "Organi~zation"
+msgstr "អង្គការ "
+
+#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
+msgid  "Instit~ution"
+msgstr "ស្ថាប័ន ​"
+
+#: source/bibliography/sections.src#ST_SCHOOL.String.Text
+msgid  "University"
+msgstr "សកល​វិទ្យា​ល័យ"
+
+#: source/bibliography/sections.src#ST_REPORT.String.Text
+msgid  "Type of re~port"
+msgstr "ប្រភេទ​​​របាយ​​ការណ៍ "
+
+#: source/bibliography/sections.src#ST_MONTH.String.Text
+msgid  "~Month"
+msgstr "ខែ "
+
+#: source/bibliography/sections.src#ST_JOURNAL.String.Text
+msgid  "~Journal"
+msgstr "ទិនា​នុ​ប្បវត្តិ ​"
+
+#: source/bibliography/sections.src#ST_NUMBER.String.Text
+msgid  "Numb~er"
+msgstr "លេខ "
+
+#: source/bibliography/sections.src#ST_SERIES.String.Text
+msgid  "Se~ries"
+msgstr "ស៊េរី "
+
+#: source/bibliography/sections.src#ST_ANNOTE.String.Text
+msgid  "Ann~otation"
+msgstr "ចំណារ​​​ពន្យល់​​ "
+
+#: source/bibliography/sections.src#ST_NOTE.String.Text
+msgid  "~Note"
+msgstr "ចំណាំ "
+
+#: source/bibliography/sections.src#ST_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
+msgid  "User-defined field ~1"
+msgstr "វាល​​​​ដែល​​កំណត់​​ដោយ​អ្នក​​ប្រើ ១ ​"
+
+#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
+msgid  "User-defined field ~2"
+msgstr "វាល​​​ដែល​​កំណត់​​ដោយ​​អ្នក​​ប្រើ ២ "
+
+#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
+msgid  "User-defined field ~3"
+msgstr "វាល​​​ដែល​​កំណត់​​ដោយ​​អ្នក​ប្រើ​ ៣ "
+
+#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
+msgid  "User-defined field ~4"
+msgstr "វាល​​​ដែល​​កំណត់​​ដោយ​​អ្នក​​ប្រើ​ ៤ "
+
+#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
+msgid  "User-defined field ~5"
+msgstr "វាល​​​ដែល​​កំណត់​​ដោយ​​អ្នក​​ប្រើ ​៥ "
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
+msgid  "Column names"
+msgstr "ឈ្មោះ​​​​របស់​ជួរ​ឈរ"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
+msgid  "<none>"
+msgstr "<គ្មាន>"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
+msgid  "Column Layout for Table %1"
+msgstr "ប្លង់​​​ជួ​រ​​ឈរ ​​​សម្រាប់​​​តារាង​​ %1"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
+msgid  "Choose Data Source"
+msgstr "ជ្រើស​​ប្រភព​​​ទិន្នន័យ"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
+msgid  "Entry"
+msgstr "ធាតុ​​"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
+msgid  "Field selection:"
+msgstr "ជម្រើស​​​​​វាល​ ៖​"
+
+#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
+msgid  "Table;Query;Sql;Sql [Native]"
+msgstr "តារាង;សំណួរ;Sql;Sql [Native]"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
+msgid  "Bibliography Database"
+msgstr "មូល​ដ្ឋាន​​​​ទិន្នន័យ​​​​គន្ថ​និ​ទ្ទេស"
+
+#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
+msgid  "Do you want to edit the column arrangement?"
+msgstr "តើ​​អ្នក​​ចង់​​កែសម្រួល​​ការ​រៀប​ចំ​ជួរ​ឈរ​ឬទេ​ ?"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
+msgid  "Table Selection"
+msgstr "​ជម្រើស​របស់​​​​តារាង​​"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
+msgid  "Control"
+msgstr "វត្ថុ​​​​បញ្ជា"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr "នៅ​ផ្នែក​ខាងស្តាំ​ អ្នក​ឃើញ​តារាង​ទាំងអស់​ពី​ប្រភព​ទិន្នន័យ​របស់​សំណុំ​បែបបទ ។\n\n\nជ្រើស​​តារាង​ដែល​​ទិន្នន័យ​គួរ​ប្រើ​ជាគោល​​ សម្រាប់​មាតិកា​បញ្ជី ៖"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
+msgid  "Field Selection"
+msgstr "ជម្រើស​របស់​វាល​"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "វាល​​​​​ដែល​​​​មាន​​ស្រាប់"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
+msgid  "Display field"
+msgstr "បង្ហាញ​​​​វាល​"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
+msgid  "The contents of the field selected will be shown in the combo box list."
+msgstr "មាតិកា​​​របស់​​​វាល​​​ដែល​បាន​ជ្រើស ​នឹង​​​ត្រូវ​​បង្ហាញ​​ក្នុង​​បញ្ជី​​ប្រអប់បន្សំ ។"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgstr "មាតិកា​របស់​វាល​ដែល​បាន​ជ្រើស ​នឹង​ត្រូវ​​បាន​បង្ហាញ​​ក្នុង​​​ប្រអប់​បញ្ជី ​ប្រសិនបើ​វាល​​​ដែល​បាន​ត​ភ្ជាប់​​​​​​ដូចគ្នា ។"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
+msgid  "Field Link"
+msgstr "តំណ​​​វាល​"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgstr "នេះ​​គឺ​ជា​​កន្លែង​​ដែល​​អ្នក​​ជ្រើស​ក្រឡា​ទទឹង​​ ដែល​​មាន​​មាតិកា​​ដូចគ្នា​ ​ដូច្នេះ​​តម្លៃ​​ពី​​វាល​​​បង្ហាញ​​ នឹង​​ត្រូវ​​បាន​​បង្ហាញ ។"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
+msgid  "Field from the ~Value Table"
+msgstr "វាល​ពី​​តារាង​​តម្លៃ "
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
+msgid  "Field from the ~List Table"
+msgstr "វាល​ពី​​តារាង​​​បញ្ជី ​"
+
+#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr "អ្នក​អាច​​រក្សា​ទុក​​តម្លៃ​​របស់​​ប្រអប់បន្សំ ក្នុង​​វាល​មូល​ដ្ឋាន​​ទិន្នន័យ ឬ​ប្រើ​វា​ សម្រាប់​​គោល​បំណង​បង្ហាញ ។"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
+msgid  "Field Selection"
+msgstr "ជម្រើស​របស់​វាល​"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
+msgid  "Table element"
+msgstr "ធាតុ​​​​​​​​របស់​តារាង​"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "វាល​​​​​ដែល​​​​មាន​​ស្រាប់"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
+msgid  "Selected fields"
+msgstr "វាល​​​​ដែល​​​បាន​​​ជ្រើស​"
+
+#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
+msgid  " (Date)"
+msgstr "(កាល​បរិច្ឆេទ)"
+
+#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
+msgid  " (Time)"
+msgstr "(ពេល​វេលា)"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
+msgid  "Group Element Wizard"
+msgstr "អ្នក​​ជំនួយ​ការ​​ធាតុ​​របស់​​ក្រុម​​"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
+msgid  "Table Element Wizard"
+msgstr "អ្នក​​ជំនួយការ​​​ធាតុ​​របស់​​តារាង​​"
+
+#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
+msgid  "List Box Wizard"
+msgstr "អ្នក​​ជំនួយ​ការ​​ប្រអប់​​បញ្ជី​"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
+msgid  "Combo Box Wizard"
+msgstr "អ្នក​​ជំនួយ​កា​រ​​ប្រអប់​បន្សំ​"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
+msgid  "The table connection to the data source could not be established."
+msgstr "មិន​អាចបង្កើត​ការ​តភ្ជាប់​តារាង​ទៅ​ប្រភព​ទិន្នន័យ​ឡើយ ។"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
+msgid  "Data"
+msgstr "ទិន្នន័យ​"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
+msgid  "Data"
+msgstr "ទិន្នន័យ​"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr "បច្ចុប្បន្ន សំណុំ​បែប​បទ​ដែល​មាន​វត្ថុ​បញ្ជា​​នោះ​ ​មិន​ ( ឬ​មិន​ទាំងស្រុង) ចង​​ទៅ​ប្រភពទិន្នន័យ​ឡើយ ។​\n\nសូម​ជ្រើស​ប្រភព​ទិន្នន័យ​ និង​តារាង ។\n\n\nសូម​ចំណាំ​ថា​ ការ​កំណត់​ដែល​បាន​ធ្វើ​ឡើង​នៅ​ទំព័រ​នេះ នឹង​មាន​ប្រសិទ្ធិភាព​ភ្លាមៗ​ ពេល​ចាក​ចេញទំព័រ ។"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
+msgid  "~Data source:"
+msgstr "ប្រភព​​ទិន្នន័យ​ ៖ "
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
+msgid  "~Table / Query:"
+msgstr "តារាង​ / សំណួរ​ ៖ "
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
+msgid  "Database Field"
+msgstr "វាល​​​​មូល​ដ្ឋាន​​ទិន្នន័យ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
+msgid  "Do you want to save the value in a database field?"
+msgstr "តើ​​អ្នក​​ចង់​​រ​ក្សា​ទុក​​តម្លៃ​ ​ក្នុង​​វាល​​​មូលដ្ឋាន​​​ទិន្នន័យ​​ឬទេ ?"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr "​បាទ! ខ្ញុំ​ចង់​រក្សាទុក​វា​ ក្នុង​វាល​​មូលដ្ឋាន​ទិន្នន័យ​ដូច​ខាង​ក្រោម​ ៖ "
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
+msgid  "~No, I only want to save the value in the form."
+msgstr "ទេ !​​ ខ្ញុំ​​ចង់​រក្សាទុក​តម្លៃ តែ​​ក្នុង​សំណុំ​បែបបទ​ប៉ុណ្ណោះ ។"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
+msgid  "Form"
+msgstr "សំណុំ​បែបបទ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
+msgid  "Data source"
+msgstr "ប្រភព​ទិន្នន័យ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
+msgid  "Content type"
+msgstr "ប្រភេទ​​មាតិកា"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
+msgid  "Content"
+msgstr "មាតិកា​"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
+msgid  "Table"
+msgstr "តារាង"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
+msgid  "Query"
+msgstr "សំណួរ​"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
+msgid  "SQL command"
+msgstr "ពាក្យ​បញ្ជា SQL"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
+msgid  "Data"
+msgstr "ទិន្នន័យ​"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
+msgid  "Which ~names do you want to give the option fields?"
+msgstr "តើ​​​ឈ្មោះ​​​​ណា​មួ​យ​​​​ដែល​​​​អ្នក​​​​ចង់​​​ផ្តល់​ទៅ​​​​ឲ្យ​​​​វាល​ជម្រើស ? "
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "វាល​​​​ជម្រើស "
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
+msgid  "Default Field Selection"
+msgstr "ជម្រើស​​​​វាល​​​​លំនាំ​ដើម"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
+msgid  "Should one option field be selected as a default?"
+msgstr "តើ​​​វាល​​​​ជម្រើស​​​មួយ​ ​​គួរ​​តែ​​​ត្រូវ​​​បាន​​​ជ្រើស​​​ជា​​​លំនាំ​ដើម​​​ឬទេ ?​"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
+msgid  "~Yes, the following:"
+msgstr "បាទ ​ដូច​ខាង​ក្រោម​នេះ​ ៖ "
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
+msgid  "No, one particular field is not going to be selected."
+msgstr "ទេ​​ ​គ្មាន​​​វាល​​​​ពិសេស​​​ណា​​មួយ​​ ​នឹង​​​ត្រូវ​​​បាន​​​ជ្រើស​​​ឡើយ​ ។​​"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
+msgid  "Field Values"
+msgstr "តម្លៃ​របស់​វាល​"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
+msgid  "When you select an option, the option group is given a specific value."
+msgstr "ពេល​​អ្នក​​​ជ្រើស​​ជម្រើស​​មួយ  ក្រុម​​ជម្រើស​​ត្រូវ​​បាន​​ផ្តល់​​តម្លៃ​​ជាក់​លាក់​​មួយ​ ​​។"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
+msgid  "Which ~value do you want to assign to each option?"
+msgstr "តើ​​តម្លៃ​​ណា​មួយ​​ដែល​​អ្នក​​ចង់​​ផ្តល់​​ទៅ​​ជម្រើស​​នីមួយៗ ​?​ "
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "វាល​​​​ជម្រើស "
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
+msgid  "Create Option Group"
+msgstr "បង្កើត​​​​ក្រុម​​​​ជម្រើស"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
+msgid  "Which ~caption is to be given to your option group?"
+msgstr "តើ​​​ចំណង​​​​ជើង​​​ណា​​មួយ​​ ដែល​​​​ត្រូវ​​ផ្តល់ទៅ​​ឲ្យ​​ក្រុម​​ជម្រើស​​​របស់​​​អ្នក ? ​"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
+msgid  "These were all details needed to create the option group."
+msgstr "ទាំង​នេះ​​​គឺ​​​ជា​​​សេចក្តី​​​​លម្អិត​ទាំងអស់​​​ដែល​​​ចាំបាច់​​ ​ដើម្បី​បង្កើត​​ក្រុម​​ជម្រើស​ ។​"
+
+#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgstr "អ្នក​​អាច​​រក្សា​​ទុក​​តម្លៃ​​របស់​​ក្រុម​​ជម្រើស​​ក្នុង​​វាល​​​មូលដ្ឋាន​​ទិន្នន័យ​ ​ឬ​ ​ប្រើ​វា ​សម្រាប់​​​អំពើ​​​ពេល​​​ក្រោយ ។"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
+msgid  "<< Back"
+msgstr "<< ថយ​ក្រោយ"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
+msgid  "Next >>"
+msgstr "បន្ទាប់ >>​"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
+msgid  "Accept"
+msgstr "យល់​​​ព្រម​"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
+msgid  "Finish"
+msgstr "បញ្ចប់"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
+msgid  " - Software License Agreement"
+msgstr "កិច្ច​ព្រម​ព្រៀង​​​អាជ្ញាប័ណ្ណ​ផ្នែក​ទន់ ​"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
+msgid  "- User Data"
+msgstr "ទិន្នន័យ​អ្នក​​ប្រើ ​"
+
+#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
+msgid  "Welcome"
+msgstr "ស្វាគមន៍"
+
+#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr "សូម​ស្វាគមន៍​មក​កាន់ %PRODUCTNAME %PRODUCTVERSION OEM\n\nដើម្បី​ចាប់ផ្ដើម %PRODUCTNAME %PRODUCTVERSION OEM សូម​បញ្ចូល​ទិន្នន័យ​ផ្ទាល់ខ្លួន​នៅ​ក្នុង​ប្រអប់​អត្ថបទ​អាជ្ញាប័ណ្ណ​ដូចខាង​ក្រោម ។ ព័ត៌មាន​សំខាន់​មាន​នៅ​ក្នុង​ឯកសារ readme ដែល​ត្រូវបាន​ដាក់​នៅ​ក្នុង​ថត​ផលិតផល %PRODUCTNAME ។ សូម​អាន​ឯកសារ​ទាំង​នេះ​ដោយ​ប្រុងប្រយ័ត្ន ។ អ្នក​អាច​រក​ព័ត៌មានលម្អិត​នៅ​តំបន់បណ្ដាញ​របស់ Oracle\n\nhttp://www.oracle.com/us/products/applications/open-office."
+
+#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
+msgid  "License Agreement"
+msgstr "កិច្ចព្រមព្រៀង​អាជ្ញាបណ្ណ"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation:"
+msgstr "សូម​​ធ្វើ​តាម​​ជំហាន​​ទាំង​នេះ​​ ដើម្បី​ដំឡើង ​៖"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
+msgid  "1."
+msgstr "១."
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr "មើល​កិច្ច​​ព្រម​ព្រៀង​​​​អាជ្ញាប័ណ្ណ​​ទាំង​មូល ​។ ​សូម​​​ប្រើ​​​របារ​​​រមូរ​​ ឬ​​ប៊ូ​តុង '%PAGEDOWN' ក្នុង​ប្រអប់​នេះ ដើម្បី​មើល​​អត្ថបទ​​អាជ្ញាប័ណ្ណ​​ទាំងមូល ។​​​"
+
+#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
+msgid  "Page Down"
+msgstr "ទំព័រ​​ក្រោម"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
+msgid  "2."
+msgstr "២."
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
+msgid  "Accept the License Agreement."
+msgstr "យល់​ព្រម​នឹង​​​​​​​​​​កិច្ច​​ព្រម​​​​ព្រៀង​​​អាជ្ញាប័ណ្ណ ។"
+
+#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
+msgid  "I accept the terms of the Agreement."
+msgstr "ខ្ញុំ​​​យល់​​ព្រម​​​នឹង​​លក្ខខណ្ឌ​​នៃ​​កិច្ច​​ព្រម​ព្រៀង ។"
+
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
+msgid  "~Accept"
+msgstr "យល់ព្រម"
+
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
+msgid  "Decline"
+msgstr "បដិ​សេធ"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
+msgid  "Tab Order"
+msgstr "លំ​ដាប់​​​​​ផ្ទាំង"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
+msgid  "Controls"
+msgstr "វត្ថុ​​បញ្ជា​"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
+msgid  "Move Up"
+msgstr "​ឡើង​​លើ​"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
+msgid  "Move Down"
+msgstr "​​ចុះ​ក្រោម​"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
+msgid  "Automatic Sort"
+msgstr "តម្រៀប​​​ស្វ័យ​​ប្រវត្តិ​"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr "មាន​​វាល​​​វត្ថុ​បញ្ជា​​ដែល​អាច​​ត្រូវ​​បាន​​ប្រើ​​ ជា​​វាល​​​ស្លាក​​​សម្រាប់ ​$control_class$ $control_name$ ។"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
+msgid  "~No assignment"
+msgstr "គ្មាន​​ការ​​ផ្តល់​តម្លៃ"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
+msgid  "Label Field Selection"
+msgstr "ជម្រើស​​វាល​​​ស្លាក"
+
+#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
+msgid  "Forms"
+msgstr "សំណុំ​​បែបបទ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​ប្រភេទ​ទិន្នន័យ '#type#' ពី​​គំរូឬ ?\nសូម​ចំណាំ​ថា វា​​នឹង​មាន​ឥទ្ធិពល​លើ​វត្ថុ​បញ្ជា​ទាំងអស់​ដែល​ចង​ភ្ជាប់​ទៅ​ប្រភេទ​ទិន្នន័យ​នេះ ។។"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
+msgid  "Button"
+msgstr "ប៊ូតុង​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
+msgid  "Option Button"
+msgstr "ប៊ូតុង​ជម្រើស​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
+msgid  "Check Box"
+msgstr "ប្រអប់ធីក​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label Field"
+msgstr "វាល​ស្លាក"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
+msgid  "Group Box"
+msgstr "​ប្រអប់​​ក្រុម​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
+msgid  "Text Box"
+msgstr "ប្រអប់​​អក្សរ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "វាល​​​ដែល​​​​មាន​​​​ទ្រង់​​ទ្រាយ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
+msgid  "List Box"
+msgstr "ប្រអប់​បញ្ជី"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
+msgid  "Combo Box"
+msgstr "ប្រអប់​​បន្សំ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
+msgid  "Image Button"
+msgstr "ប៊ូតុង​​រូប​ភាព​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
+msgid  "Hidden Control"
+msgstr "វត្ថុ​​បញ្ជា​​​​លាក់"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
+msgid  "Control (unknown type)"
+msgstr "វត្ថុ​​បញ្ជា​ ( មិន​ស្គាល់​​ប្រ​ភេទ​)"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "វត្ថុ​​​​បញ្ជា​​រូប​ភាព​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
+msgid  "File Selection"
+msgstr "ជម្រើស​​​ឯកសារ​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
+msgid  "Date Field"
+msgstr "វាល​​​កាល​​បរិច្ឆេទ​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
+msgid  "Time Field"
+msgstr "វាល​​​ពេល​​វេលា​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
+msgid  "Numeric Field"
+msgstr "វាល​​​​​លេខ​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
+msgid  "Currency Field"
+msgstr "វាល​​​រូបិយ​វត្ថុ​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
+msgid  "Pattern Field"
+msgstr "វាល​​​លំនាំ​​"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
+msgid  "Table Control "
+msgstr "វត្ថុ​​​បញ្ជា​​​​តារាង ​"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
+msgid  "Link fields"
+msgstr "ភ្ជាប់​​​វាល​"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
+msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr "សំណុំ​បែបបទ​រង​អាច​ត្រូវ​បាន​ប្រើ ​ដើម្បី​បង្ហាញ​ទិន្នន័យ​លម្អិត​ អំពី​កំណត់​ត្រា​បច្ចុប្បន្ន​របស់​សំណុំ​បែបបទ​មេ​ ។ ដើម្បី​ធ្វើ​ដូច​នេះ​ អ្នក​អាច​​បញ្ជាក់​ថា​ ជួរឈរ​​ណាមួយ​ ក្នុង​​សំណុំ​​​បែបបទ​​រង​​ ​ត្រូវ​គ្នា​នឹង​ជួរ​ឈរ​ណា​មួយ ក្នុង​សំណុំ​បែប​បទ​មេ ។"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
+msgid  "Suggest"
+msgstr "ផ្តល់​​យោ​បល់​"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
+msgid  "Sub Form"
+msgstr "សំណុំ​​បែប​ប​ទ​​រង"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
+msgid  "Master Form"
+msgstr "សំណុំ​​​បែប​​បទ​​​មេ​"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
+msgid  "The columns of '#' could not be retrieved."
+msgstr "មិន​អាច​ទៅ​យក​ជួរ​ឈរ​នៃ '#' បាន​ទេ ។"
+
+#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
+msgid  "Default"
+msgstr "លំនាំដើម"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "ទូទៅ"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "ទិន្នន័យ​"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
+msgid  "No"
+msgstr "ទេ"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
+msgid  "Yes"
+msgstr "បាទ/ចាស"
+
+#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
+msgid  "Help"
+msgstr "ជំនួយ"
+
+#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
+msgid  "<Embedded-Image>"
+msgstr "<Embedded-Image>"
+
+#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
+msgid  "Text"
+msgstr "អត្ថបទ"
+
+#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
+msgid  "Edit mask"
+msgstr "កែ​​សម្រួល​​​របាំង"
+
+#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
+msgid  "Literal mask"
+msgstr "របាំង​​តម្លៃ​​​​ត្រង់"
+
+#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
+msgid  "Read-only"
+msgstr "បាន​តែ​​អាន"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
+msgid  "Enabled"
+msgstr "ប្រើបាន"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "មើលឃើញ"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
+msgid  "AutoFill"
+msgstr "បំពេញ​​​​ស្វ័យ​ប្រវត្តិ"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
+msgid  "Line count"
+msgstr "ចំនួន​​​បន្ទាត់​"
+
+#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
+msgid  "Max. text length"
+msgstr "ប្រវែង​​អត្ថបទ​​អតិបរមា"
+
+#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
+msgid  "Spin Button"
+msgstr "​ប៊ូតុង​​​​បង្កើន​​​​បន្ថយ"
+
+#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
+msgid  "Strict format"
+msgstr "ទ្រង់​ទ្រាយ​​តឹង​រ៉ឹង​"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
+msgid  "Thousands separator"
+msgstr "អ្នក​​បំបែក​​ខ្ទង់​​ពាន់"
+
+#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
+msgid  "Printable"
+msgstr "អាច​បោះពុម្ព​បាន"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
+msgid  "Frame"
+msgstr "ស៊ុម"
+
+#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
+msgid  "Help text"
+msgstr "អត្ថបទ​​ជំនួយ"
+
+#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
+msgid  "Help URL"
+msgstr "URL ​ជំនួយ"
+
+#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
+msgid  "Additional information"
+msgstr "ព័ត៌​​មាន​បន្ថែម​"
+
+#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
+msgid  "Password character"
+msgstr "តួអក្សរ​​ពាក្យ​​សម្ងាត់​"
+
+#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
+msgid  "Tristate"
+msgstr "ស្ថាន​ភាព​បី​"
+
+#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
+msgid  "Empty string is NULL"
+msgstr "ខ្សែ​​អក្សរ​​ទទេ​​គឺ ​NULL"
+
+#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
+msgid  "Decimal accuracy"
+msgstr "​កម្រិត​ត្រឹមត្រូវ​​របស់​​ទសភាគ"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
+msgid  "Graphics"
+msgstr "ក្រាហ្វិក"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
+msgid  "Default selection"
+msgstr "ជម្រើស​​លំនាំ​​ដើម"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
+msgid  "Default button"
+msgstr "​ប៊ូតុង​​​លំនាំ​​ដើម​"
+
+#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
+msgid  "Label Field"
+msgstr "វាល​ស្លាក"
+
+#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
+msgid  "Label"
+msgstr "ស្លាក​"
+
+#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "ការ​​តម្រឹម"
+
+#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr "ការ​តម្រឹម​បញ្ឈរ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
+msgid  "Top"
+msgstr "កំពូល"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
+msgid  "Middle"
+msgstr "កណ្ដាល"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
+msgid  "Bottom"
+msgstr "បាត"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
+msgid  "Graphics alignment"
+msgstr "ការ​​តម្រឹម​ក្រាហ្វិក​"
+
+#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "ពុម្ព​អក្សរ"
+
+#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
+msgid  "Background color"
+msgstr "ពណ៌​​​ផ្ទៃ​​ខាង​​ក្រោយ"
+
+#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
+msgid  "Border"
+msgstr "ស៊ុម"
+
+#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
+msgid  "Icon size"
+msgstr "ទំហំ​​​រូប​​តំណាង"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
+msgid  "Small"
+msgstr "តូច"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
+msgid  "Large"
+msgstr "ធំ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
+msgid  "Positioning"
+msgstr "កំណត់​​​​​ទីតាំង​"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
+msgid  "Navigation"
+msgstr "រុករក"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
+msgid  "Acting on a record"
+msgstr "​អំពើ​​​លើ​​​កំណត់​​​ត្រា​​មួយ​"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
+msgid  "Filtering / Sorting"
+msgstr "ត្រង​ / ​​តម្រៀប​"
+
+#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
+msgid  "Horizontal scroll bar"
+msgstr "របារ​​រមូរ​​​​ផ្ដេក"
+
+#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
+msgid  "Vertical scroll bar"
+msgstr "របារ​​រមូ​រ​​បញ្ឈរ​"
+
+#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
+msgid  "Word break"
+msgstr "បំបែក​​​​ពាក្យ​"
+
+#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
+msgid  "Multiline input"
+msgstr "ការ​បញ្ចូល​ច្រើន​បន្ទាត់"
+
+#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
+msgid  "Multiselection"
+msgstr "ពហុជម្រើស"
+
+#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
+msgid  "Name"
+msgstr "ឈ្មោះ"
+
+#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
+msgid  "Tab order"
+msgstr "លំដាប់​​ថេប​"
+
+#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
+msgid  "Mouse wheel scroll"
+msgstr "រមូរ​កង់​កណ្ដុរ"
+
+#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr "តម្រង"
+
+#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
+msgid  "Sort"
+msgstr "ត​ម្រៀប​"
+
+#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
+msgid  "Record marker"
+msgstr "អ្នក​​​សម្គាល់​​​កំណត់​​ត្រា"
+
+#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
+msgid  "Filter proposal"
+msgstr "សំណើ​​​របស់​​តម្រង"
+
+#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
+msgid  "Navigation bar"
+msgstr "របារ​​រុករក"
+
+#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
+msgid  "Cycle"
+msgstr "ខួប"
+
+#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
+msgid  "Tabstop"
+msgstr "ឈប់​​ថេប"
+
+#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
+msgid  "Data field"
+msgstr "វាល​ទិន្ន​ន័យ"
+
+#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
+msgid  "Dropdown"
+msgstr "ធ្លាក់​ចុះ​"
+
+#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
+msgid  "Bound field"
+msgstr "វាល​​​​ដែល​​​បាន​ចង"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
+msgid  "List content"
+msgstr "មាតិកា​​​បញ្ជី"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
+msgid  "Type of list contents"
+msgstr "ប្រភេទ​របស់​មាតិកា​បញ្ជី"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
+msgid  "Content"
+msgstr "មាតិកា​"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
+msgid  "Content type"
+msgstr "ប្រភេទ​​មាតិកា"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
+msgid  "Allow additions"
+msgstr "អនុញ្ញាត​ឲ្យ​បន្ថែម"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
+msgid  "Allow deletions"
+msgstr "អនុញ្ញាត​ឲ្យ​លុប​"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
+msgid  "Allow modifications"
+msgstr "អនុញ្ញាត​ឲ្យ​​កែប្រែ"
+
+#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
+msgid  "Add data only"
+msgstr "បន្ថែម​​តែ​​ទិន្នន័យ​"
+
+#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+msgid  "Data source"
+msgstr "ប្រភព​ទិន្នន័យ"
+
+#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
+msgstr "ត​ភ្ជាប់​វាល​​មេ"
+
+#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
+msgid  "Link slave fields"
+msgstr "ត​ភ្ជាប់​​​​​វាល​​​​​កូនចៅ"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
+msgid  "Value min."
+msgstr "អប្បបរមា​របស់​តម្លៃ"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
+msgid  "Value max."
+msgstr "អតិបរមា​របស់​តម្លៃ"
+
+#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
+msgid  "Incr./decrement value"
+msgstr "តម្លៃ​ ​បង្កើន​/បន្ថយ"
+
+#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
+msgid  "Currency symbol"
+msgstr "និមិត្ត​​សញ្ញា​​​រូបិយ​វត្ថុ​"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
+msgid  "Date min."
+msgstr "អប្បបរមា​របស់​កាល​បរិច្ឆេទ"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
+msgid  "Date max."
+msgstr "អតិបរមា​របស់​កាលបរិច្ឆេទ"
+
+#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
+msgid  "Date format"
+msgstr "ទ្រង់ទ្រាយ​​​កាល​បរិច្ឆេទ"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
+msgid  "Selection"
+msgstr "ជម្រើស"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
+msgid  "Time min."
+msgstr "​​អប្បបរមា​របស់​ពេល​វេលា"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
+msgid  "Time max."
+msgstr "​​អតិ​​បរមា​របស់​ពេល​​វេលា"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
+msgid  "Time format"
+msgstr "ទ្រង់​ទ្រាយ​​​​ពេល​​វេលា​"
+
+#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
+msgid  "Prefix symbol"
+msgstr "និមិត្ត​​​សញ្ញា​​​បុព្វបទ"
+
+#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
+msgid  "Value"
+msgstr "តម្លៃ"
+
+#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
+msgid  "Formatting"
+msgstr "​ទ្រង់​ទ្រាយ"
+
+#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
+msgid  "Class ID"
+msgstr "លេខ​សម្គាល់​ថ្នាក់"
+
+#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "កម្ពស់"
+
+#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "ទទឹង​"
+
+#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
+msgid  "List index"
+msgstr "លិបិ​ក្រម​​បញ្ជី"
+
+#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
+msgid  "Row height"
+msgstr "កម្ពស់​ជួរ​ដេក"
+
+#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
+msgid  "Fill color"
+msgstr "បំពេញ​​ពណ៌"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
+msgid  "Line color"
+msgstr "ពណ៌​​បន្ទាត់"
+
+#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
+msgid  "Reference value (on)"
+msgstr "តម្លៃ​សេចក្តី​យោង (បើក)"
+
+#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
+msgid  "Reference value (off)"
+msgstr "តម្លៃ​​សេចក្តី​យោង (បិទ)"
+
+#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
+msgid  "List entries"
+msgstr "​ធាតុ​របស់​​​​បញ្ជី​"
+
+#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
+msgid  "Action"
+msgstr "អំពើ​"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
+msgid  "Type of submission"
+msgstr "ប្រភេទ​​​​​ការ​​​​ដាក់​​ស្នើ​"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
+msgid  "Default status"
+msgstr "ស្ថានភាព​​លំនាំ​ដើម"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
+msgid  "Submission encoding"
+msgstr "សំណុំ​តួអក្សរ​"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
+msgid  "Default value"
+msgstr "តម្លៃ​​លំនាំ​​ដើម"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
+msgid  "Default text"
+msgstr "អត្ថបទ​​លំនាំ​ដើម​"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
+msgid  "Default date"
+msgstr "កាល​​បរិច្ឆេទ​​លំនាំ​ដើម​"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
+msgid  "Default time"
+msgstr "ពេល​​វេលា​​លំនាំ​​ដើម​"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
+msgid  "Frame"
+msgstr "ស៊ុម"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
+msgid  "Without frame"
+msgstr "គ្មាន​ស៊ុម"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
+msgid  "3D look"
+msgstr "រូបរាង​ត្រីមាត្រ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
+msgid  "Flat"
+msgstr "រាប​ស្មើ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
+msgid  "Valuelist"
+msgstr "បញ្ជី​តម្លៃ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+msgid  "Table"
+msgstr "តារាង"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+msgid  "Query"
+msgstr "សំណួរ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
+msgid  "Sql"
+msgstr "Sql"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
+msgid  "Sql [Native]"
+msgstr "Sql [ដើម]"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
+msgid  "Tablefields"
+msgstr "វាល​តារាង"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
+msgid  "Left"
+msgstr "ឆ្វេង"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
+msgid  "Center"
+msgstr "កណ្ដាល"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
+msgid  "Right"
+msgstr "ស្ដាំ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
+msgid  "None"
+msgstr "គ្មាន"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
+msgid  "Submit form"
+msgstr "ដាក់ស្នើ​សំណុំ​បែបបទ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
+msgid  "Reset form"
+msgstr "កំណត់​សំណុំបែប​បទ​ឡើងវិញ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
+msgid  "Open document/web page"
+msgstr "បើក​ឯកសារ​/​ទំព័រ​បណ្ដាញ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
+msgid  "First record"
+msgstr "កំណត់​ត្រា​ទីមួយ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
+msgid  "Previous record"
+msgstr "កំណត់​ត្រា​មុន"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
+msgid  "Next record"
+msgstr "កំណត់​ត្រា​បន្ទាប់"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
+msgid  "Last record"
+msgstr "កំណត់​ត្រា​ចុងក្រោយ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
+msgid  "Save record"
+msgstr "រក្សាទុក​កំណត់​ត្រា"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
+msgid  "Undo data entry"
+msgstr "មិន​ធ្វើ​ធាតុ​ទិន្នន័យ​វិញ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
+msgid  "New record"
+msgstr "កំណត់​ត្រា​ថ្មី"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
+msgid  "Delete record"
+msgstr "លុប​កំណត់​ត្រា"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
+msgid  "Refresh form"
+msgstr "ធ្វើ​ឲ្យ​សំណុំ​បែបបទ​ស្រស់"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
+msgid  "Get"
+msgstr "យក"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
+msgid  "Post"
+msgstr "ប្រកាស"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
+msgid  "Multipart"
+msgstr "ផ្នែក​ច្រើន"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
+msgid  "Text"
+msgstr "អត្ថបទ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
+msgid  "Standard (short)"
+msgstr "ស្តង់ដារ (ខ្លី)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
+msgid  "Standard (short YY)"
+msgstr "ស្តង់ដារ (YY ខ្លី)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
+msgid  "Standard (short YYYY)"
+msgstr "ស្តង់ដារ (YYYY ខ្លី)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
+msgid  "Standard (long)"
+msgstr "ស្តង់ដារ (វែង)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
+msgid  "DD/MM/YY"
+msgstr "DD/MM/YY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
+msgid  "MM/DD/YY"
+msgstr "MM/DD/YY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
+msgid  "YY/MM/DD"
+msgstr "YY/MM/DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
+msgid  "DD/MM/YYYY"
+msgstr "DD/MM/YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
+msgid  "MM/DD/YYYY"
+msgstr "MM/DD/YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
+msgid  "YYYY/MM/DD"
+msgstr "YYYY/MM/DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
+msgid  "YY-MM-DD"
+msgstr "YY-MM-DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
+msgid  "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
+msgid  "13:45"
+msgstr "13:45"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
+msgid  "13:45:00"
+msgstr "13:45:00"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
+msgid  "01:45 PM"
+msgstr "01:45 ល្ងាច"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
+msgid  "01:45:00 PM"
+msgstr "01:45:00 ល្ងាច"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
+msgid  "Not Selected"
+msgstr "មិន​បាន​ជ្រើស"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
+msgid  "Selected"
+msgstr "បាន​ជ្រើស"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
+msgid  "Not Defined"
+msgstr "មិន​បាន​កំណត់"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
+msgid  "All records"
+msgstr "កំណត់​ត្រា​ទាំងអស់"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
+msgid  "Active record"
+msgstr "កំណត់​ត្រា​សកម្ម"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
+msgid  "Current page"
+msgstr "ទំព័រ​បច្ចុប្បន្ន"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
+msgid  "No"
+msgstr "ទេ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
+msgid  "Yes"
+msgstr "បាទ/ចាស"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
+msgid  "Parent Form"
+msgstr "សំណុំ​បែបបទ​មេ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
+msgid  "None"
+msgstr "គ្មាន"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
+msgid  "Single"
+msgstr "តែ​មួយ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
+msgid  "Multi"
+msgstr "ច្រើន"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
+msgid  "Range"
+msgstr "ជួរ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
+msgid  "Fill parameters"
+msgstr "បំពេញ​​​ប៉ារ៉ា​ម៉ែត្រ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
+msgid  "Execute action"
+msgstr "ប្រតិបត្តិ​សកម្មភាព"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
+msgid  "After updating"
+msgstr "បន្ទាប់​​ពី ​​ធ្វើ​​ឲ្យ​ទាន់​​សម័យ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
+msgid  "Before updating"
+msgstr "មុន​​ពេល​ ​ធ្វើ​​ឲ្យ​​ទាន់​​សម័យ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
+msgid  "Before record action"
+msgstr "មុន​​ពេល​ ​អំពើ​​របស់​​កំណត់​ត្រា"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
+msgid  "After record action"
+msgstr "បន្ទាប់​​ពី​ ​អំពើ​​របស់​​កំណត់​​ត្រា"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
+msgid  "Confirm deletion"
+msgstr "អះអាង​​ការ​លុប"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
+msgid  "Error occurred"
+msgstr "កំហុស​​​​​បាន​​កើត​​​ឡើង"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
+msgid  "When receiving focus"
+msgstr "ពេល​ទទួល​ការ​ផ្តោត​អារម្មណ៍"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
+msgid  "When losing focus"
+msgstr "ពេល​បាត់​បង់​​ការ​ផ្តោត​អារម្មណ៍"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
+msgid  "Item status changed"
+msgstr "​បាន​ផ្លាស់ប្តូរ​ស្ថានភាព​​​​របស់​វត្ថុ​"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
+msgid  "Key pressed"
+msgstr "ចុច​​គ្រាប់​ចុច"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
+msgid  "Key released"
+msgstr "លែង​​គ្រាប់​​ចុច"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
+msgid  "When loading"
+msgstr "ពេល​​ផ្ទុក"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
+msgid  "Before reloading"
+msgstr "មុន​​ពេល ​​​ផ្ទុក​​​ឡើង​​វិញ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
+msgid  "When reloading"
+msgstr "ពេល​​​ផ្ទុក​​​ឡើង​វិញ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
+msgid  "Mouse moved while key pressed"
+msgstr "ផ្លាស់​ទី​​​កណ្តុរ​ ​ខ​ណៈពេល​​ចុច​​គ្រាប់​ចុច"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
+msgid  "Mouse inside"
+msgstr "កណ្តុរ​​ក្នុង"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
+msgid  "Mouse outside"
+msgstr "កណ្តុ​រ​ក្រៅ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
+msgid  "Mouse moved"
+msgstr "ផ្លាស់ទី​​​​​កណ្តុរ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
+msgid  "Mouse button pressed"
+msgstr "ចុច​​ប៊ូតុង​​កណ្តុរ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
+msgid  "Mouse button released"
+msgstr "​លែង​​​ប៊ូតុង​​​កណ្តុរ​"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
+msgid  "Before record change"
+msgstr "មុន​ពេល​ ​ផ្លាស់​ប្តូរ​​កំណត់ត្រា"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
+msgid  "After record change"
+msgstr "បន្ទាប់​​ពី ​​ផ្លាស់​ប្តូរ​​កំណត់​ត្រា"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
+msgid  "After resetting"
+msgstr "បន្ទាប់​​ពី​​ កំណត់​​ឡើង​វិញ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
+msgid  "Prior to reset"
+msgstr "មុន​​​ពេល​​​កំណត់​​​ឡើង​​​វិញ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
+msgid  "Approve action"
+msgstr "អនុម័ត​សកម្មភាព"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
+msgid  "Before submitting"
+msgstr "មុន​​ពេល ​​​ដាក់​​ស្នើ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
+msgid  "Text modified"
+msgstr "អត្ថបទ​ដែល​បាន​កែប្រែ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
+msgid  "Before unloading"
+msgstr "មុន​​​ពេល ​​​រើ​​ចេញ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
+msgid  "When unloading"
+msgstr "ពេល​​រើ​ចេញ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
+msgid  "Changed"
+msgstr "បាន​ផ្លាស់​ប្តូរ"
+
+#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
+msgid  "Events"
+msgstr "ព្រឹត្តិការណ៍"
+
+#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
+msgid  "Analyze SQL command"
+msgstr "វិភាគ​​ពាក្យ​​បញ្ជា ​SQL"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
+msgid  "PositionX"
+msgstr "ទីតាំង X"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
+msgid  "PositionY"
+msgstr "ទីតាំង​ Y"
+
+#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
+msgid  "Title"
+msgstr "ចំណង​ជើង"
+
+#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
+msgid  "Page (step)"
+msgstr "ទំព័រ​ (​ជំហាន)"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
+msgid  "Progress value"
+msgstr "តម្លៃ​​​វឌ្ឍន​​​​ភាព​​"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
+msgid  "Progress value min."
+msgstr "អប្បបរមា​របស់​តម្លៃ​វឌ្ឍនភាព"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
+msgid  "Progress value max."
+msgstr "អតិបរមា​របស់​តម្លៃ​វឌ្ឍនភាព"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
+msgid  "Scroll value"
+msgstr "តម្លៃ​រមូរ​"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
+msgid  "Scroll value max."
+msgstr "អតិបរមា​របស់​តម្លៃ​រមូរ"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
+msgid  "Scroll value min."
+msgstr "អប្បបរមា​របស់​តម្លៃ​រមូរ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
+msgid  "Default scroll value"
+msgstr "តម្លៃ​​រមូរ​​លំនាំ​ដើម​"
+
+#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
+msgid  "Small change"
+msgstr "ការ​ផ្លាស់​ប្តូរ​តូច​"
+
+#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
+msgid  "Large change"
+msgstr "ការ​​ផ្លាស់​​ប្តូរ​​ធំ​"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
+msgid  "Delay"
+msgstr "ពន្យារ​​ពេល"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
+msgid  "Repeat"
+msgstr "ចាក់​ឡើង​វិញ"
+
+#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
+msgid  "Visible size"
+msgstr "ទំហំ​​មើល​​ឃើញ​"
+
+#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
+msgid  "Orientation"
+msgstr "ទិស"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
+msgid  "Horizontal"
+msgstr "ផ្ដេក"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
+msgid  "Vertical"
+msgstr "បញ្ឈរ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
+msgid  "While adjusting"
+msgstr "ខណៈ​​ពេល​ ​​លៃ​តម្រូវ"
+
+#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
+msgid  "Date"
+msgstr "កាល​​បរិច្ឆេទ"
+
+#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
+msgid  "State"
+msgstr "ស្ថាន​​ភាព"
+
+#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
+msgid  "Time"
+msgstr "ពេល​វេលា​"
+
+#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
+msgid  "Scale"
+msgstr "មាត្រ​ដ្ឋាន​"
+
+#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
+msgid  "Button type"
+msgstr "ប្រភេទ​​ប៊ូតុង​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
+msgid  "Default"
+msgstr "លំនាំដើម"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
+msgid  "OK"
+msgstr "យល់ព្រម"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
+msgid  "Cancel"
+msgstr "បោះបង់"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
+msgid  "Help"
+msgstr "ជំនួយ"
+
+#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "មិន​អាច​បង្កើត​ការ​​ត​ភ្ចាប់​​ទៅ​​ប្រភព​​ទិន្នន័យ \"$name$\" ។"
+
+#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
+msgid  "Text"
+msgstr "អត្ថបទ"
+
+#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
+msgid  "Linked cell"
+msgstr "ក្រឡា​​​ដែល​​​បាន​​​ភ្ជាប់"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
+msgid  "Source cell range"
+msgstr "ជួរ​​របស់​​ក្រឡា​​​ប្រភព"
+
+#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
+msgid  "Contents of the linked cell"
+msgstr "មាតិកា​​​​​​ក្រឡា​​​ដែល​​​បាន​​​ភ្ជាប់"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
+msgid  "The selected entry"
+msgstr "ធាតុ​ដែល​បាន​ជ្រើស"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
+msgid  "Position of the selected entry"
+msgstr "ទីតាំង​របស់​ថត​ដែល​បាន​ជ្រើស"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
+msgid  "Scrollbars"
+msgstr "របារ​​​​​រមូរ​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
+msgid  "Single-line"
+msgstr "បន្ទាត់​មួយ​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
+msgid  "Multi-line"
+msgstr "ពហុ​​បន្ទាត់​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
+msgid  "Multi-line with formatting"
+msgstr "ពហុ​​បន្ទាត់​​ដែល​​មាន​​​ទ្រង់​ទ្រាយ​​"
+
+#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
+msgid  "Symbol color"
+msgstr "ពណ៌​​​របស់​និមិត្ត​​សញ្ញា​"
+
+#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
+msgid  "Text lines end with"
+msgstr "បន្ទាត់​​អត្ថបទ​​បញ្ចប់​​ដោយ​​​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
+msgid  "LF (Unix)"
+msgstr "LF (យូនីក)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
+msgid  "CR+LF (Windows)"
+msgstr "CR+LF (វីនដូ)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
+msgid  "None"
+msgstr "គ្មាន"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
+msgid  "Horizontal"
+msgstr "ផ្ដេក"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
+msgid  "Vertical"
+msgstr "បញ្ឈរ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
+msgid  "Both"
+msgstr "ទាំង​ពីរ​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
+msgid  "Table"
+msgstr "តារាង"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
+msgid  "Query"
+msgstr "សំណួរ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+msgid  "SQL command"
+msgstr "ពាក្យ​បញ្ជា SQL"
+
+#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
+msgid  "Toggle"
+msgstr "កន្លាស់"
+
+#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
+msgid  "Take Focus on Click"
+msgstr "ផ្តោត​​អារម្មណ៍​ ​ពេល​​​ចុច​​"
+
+#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
+msgid  "Hide selection"
+msgstr "លាក់​​​ជម្រើស​"
+
+#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
+msgid  "Style"
+msgstr "រចនាប័ទ្ម"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
+msgid  "3D"
+msgstr "ត្រីមាត្រ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
+msgid  "Flat"
+msgstr "រាប​ស្មើ"
+
+#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
+msgid  "Border color"
+msgstr "ពណ៌​​​របស់​ស៊ុម​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
+msgid  "Left top"
+msgstr "​ឆ្វេង កំពូល"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
+msgid  "Left centered"
+msgstr "ឆ្វេង​ កណ្តាល​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
+msgid  "Left bottom"
+msgstr "​ឆ្វេង បាត"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
+msgid  "Right top"
+msgstr "​ស្តាំ កំពូល"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
+msgid  "Right centered"
+msgstr "ស្តាំ​ កណ្តាល​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
+msgid  "Right bottom"
+msgstr "​ស្តាំ បាត"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
+msgid  "Above left"
+msgstr "លើ​ ឆ្វេង"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
+msgid  "Above centered"
+msgstr "​លើ​ កណ្តាល"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
+msgid  "Above right"
+msgstr "​​លើ​ ស្តាំ​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
+msgid  "Below left"
+msgstr "​ក្រោម ឆ្វេង"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
+msgid  "Below centered"
+msgstr "​​​ក្រោម​ កណ្តាល​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
+msgid  "Below right"
+msgstr "ក្រោម ស្តាំ​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
+msgid  "Centered"
+msgstr "កណ្តាល"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
+msgid  "Wrap text automatically"
+msgstr "រុំ​​អត្ថបទ​​ស្វ័យ​​ប្រវត្តិ​"
+
+#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
+msgid  "Text type"
+msgstr "ប្រភេទ​​អត្ថបទ​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
+msgid  "Hide"
+msgstr "លាក់"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
+msgid  "Show"
+msgstr "បង្ហាញ"
+
+#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
+msgid  "XML data model"
+msgstr "គំរូ​ទិន្នន័យ XML"
+
+#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
+msgid  "Binding expression"
+msgstr "កន្សោម​ចង"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
+msgid  "Required"
+msgstr "ទាមទារ"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
+msgid  "List entry source"
+msgstr "ប្រភព​នៃ​ធាតុ​​បញ្ជី"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
+msgid  "Relevant"
+msgstr "​ទាក់ទង"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
+msgid  "Read-only"
+msgstr "បាន​តែ​​អាន"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
+msgid  "Constraint"
+msgstr "បង្ខំ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
+msgid  "Calculation"
+msgstr "គណនា"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
+msgid  "Data type"
+msgstr "ប្រភេទ​ទិន្នន័យ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
+msgid  "Whitespaces"
+msgstr "ចន្លោះ​ស"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
+msgid  "Preserve"
+msgstr "បង្ការ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
+msgid  "Replace"
+msgstr "ជំនួស"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
+msgid  "Collapse"
+msgstr "វេញ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
+msgid  "Pattern"
+msgstr "លំនាំ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
+msgid  "Length"
+msgstr "ប្រវែង"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
+msgid  "Length (at least)"
+msgstr "ប្រវែង (យ៉ាង​ហោច​ណាស់)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
+msgid  "Length (at most)"
+msgstr "ប្រវែង (វែង​បំផុត​ត្រឹម)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
+msgid  "Digits (total)"
+msgstr "តួលេខ (សរុប)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
+msgid  "Digits (fraction)"
+msgstr "តួលេខ (ប្រភាគ)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
+msgid  "Max. (inclusive)"
+msgstr "អតិបរមា (រាប់បញ្ចូល)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
+msgid  "Max. (exclusive)"
+msgstr "អតិបរមា (មិន​រាប់​បញ្ចូល)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
+msgid  "Min. (inclusive)"
+msgstr "អប្បបរមា (រាប់បញ្ចូល)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
+msgid  "Min. (exclusive)"
+msgstr "អប្បបរមា (មិន​រាប់បញ្ចូល)"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
+msgid  "Submission"
+msgstr "​ដាក់ស្នើ"
+
+#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "​ចង"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
+msgid  "Selection type"
+msgstr "ប្រភេទ​ជម្រើស"
+
+#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
+msgid  "Root displayed"
+msgstr "បង្ហាញ​ជា Root"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
+msgid  "Show handles"
+msgstr "បង្ហាញ​​ចំណុច​ទាញ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
+msgid  "Show root handles"
+msgstr "បង្ហាញ​ចំណុច​ទាញ​ឬស"
+
+#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
+msgid  "Editable"
+msgstr "អាច​កែប្រែ​បាន"
+
+#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
+msgid  "Invokes stop node editing"
+msgstr "ហៅ​ការ​កែសម្រួល​ថ្នាំង​បញ្ឈប់"
+
+#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
+msgid  "With title bar"
+msgstr "មាន​របារ​ចំណង​ជើង"
+
+#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
+msgid  "No Label"
+msgstr "គ្មាន​ស្លាក"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
+msgid  "No"
+msgstr "ទេ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
+msgid  "Keep Ratio"
+msgstr "រក្សាទុក​សមាមាត្រ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
+msgid  "Fit to Size"
+msgstr "សម​ទៅ​នឹង​ទំហំ"
+
+#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
+msgid  "Input required"
+msgstr "តម្រូវការ​ព័ត៌មាន​បញ្ចូល"
+
+#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
+msgid  "Text direction"
+msgstr "ទិស​អត្ថបទ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
+msgid  "Left-to-right"
+msgstr "ពី​ឆ្វេងទៅ​ស្ដាំ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
+msgid  "Right-to-left"
+msgstr "ពី​ស្ដាំ​ទៅ​ឆ្វេង"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
+msgid  "Use superordinate object settings"
+msgstr "ប្រើ​ការ​កំណត់​វត្ថុ​លំដាប់​ខ្ពស់"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
+msgid  "Never"
+msgstr "កុំ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
+msgid  "When focused"
+msgstr "នៅពេល​ផ្ដោត"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
+msgid  "Always"
+msgstr "ជា​និច្ច"
+
+#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
+msgid  "Anchor"
+msgstr "យុថ្កា"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
+msgid  "To Paragraph"
+msgstr "ទៅ​កថាខណ្ឌ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
+msgid  "As Character"
+msgstr "ជា​តួ​​អក្សរ​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
+msgid  "To Page"
+msgstr "ទៅ​ទំព័រ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
+msgid  "To Frame"
+msgstr "ទៅ​ស៊ុម"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
+msgid  "To Character"
+msgstr "ទៅ​តួ​​អក្សរ​"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
+msgid  "To Page"
+msgstr "ទៅ​ទំព័រ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
+msgid  "To Cell"
+msgstr "ទៅក្រឡា"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
+msgid  "Regular"
+msgstr "ធម្មតា"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
+msgid  "Bold Italic"
+msgstr "ដិត ទ្រេត"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
+msgid  "Italic"
+msgstr "ទ្រេត"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
+msgid  "Bold"
+msgstr "ដិត"
+
+#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
+msgid  "(Default)"
+msgstr "(លំនាំដើម)"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+msgid  "Character"
+msgstr "តួ​​អក្សរ​"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+msgid  "Font"
+msgstr "ពុម្ព​អក្សរ"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+msgid  "Font Effects"
+msgstr "បែបផែន​​ពុម្ពអក្សរ"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
+msgid  "New Data Type"
+msgstr "ប្រភេទ​ទិន្នន័យ​ថ្មី"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
+msgid  "Type a name for the new data type:"
+msgstr "វាយ​បញ្ចូល​ឈ្មោះ​​ឲ្យ​ប្រភេទ​ទិន្នន័យ​ថ្មី ៖"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
+msgid  "About\\n Dev~ice"
+msgstr "អំពី\n ឧបករណ៍ "
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
+msgid  "Create\\nPreview"
+msgstr "បង្កើត\nមើល​ជា​​​​មុន"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
+msgid  "Preview"
+msgstr "មើល​ជា​​​មុន"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
+msgid  "Scan area"
+msgstr "ផ្ទៃ​ស្កេន"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
+msgid  "Left:"
+msgstr "ឆ្វេង ៖"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
+msgid  "Top:"
+msgstr "កំពូល ៖"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
+msgid  "Right:"
+msgstr "ស្តាំ ៖"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
+msgid  "Bottom:"
+msgstr "បាត ៖"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
+msgid  "Device used:"
+msgstr "ឧបករណ៍​​​ដែល​​​​ប្រើ ៖​​"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
+msgid  "Resolution [~DPI]"
+msgstr "គុណ​​​ភាព​​​បង្ហាញ ​[~DPI]"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
+msgid  "Show advanced options"
+msgstr "បង្ហាញ​​​ជម្រើស​​​កម្រិត​​​ខ្ពស់"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
+msgid  "Options:"
+msgstr "ជម្រើស ៖"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
+msgid  "Vector element"
+msgstr "ធាតុ​​​វ៉ិចទ័រ​"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
+msgid  "Set"
+msgstr "កំណត់"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
+msgid  "Scanner"
+msgstr "ម៉ាស៊ីន​ស្កេន"
+
+#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr "ឧបករណ៍ ៖ %s\nអ្នកលក់ ៖ %s\nគំរូ ៖ %s\nប្រភេទ ៖ %s"
+
+#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
+msgid  "An error occurred while scanning."
+msgstr "កំហុស​​​មួយ​​​បាន​​​​កើត​​ឡើង​​ ​ខណៈ​​​ពេល​​​​ស្កេន ។"
+
+#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr "ឧបករណ៍​​មិន​​ផ្តល់​ជម្រើស​​ \"មើល​ជាមុន\"​ ។ ដូច្នេះការ​​ស្កេន​​​ធម្មតា​​នឹង​​ត្រូវ​​បាន​​​ប្រើ​ជា​ ​\"​មើល​ជាមុន\"  ​​​ជំនួស​វិញ ។ វា​​​​អាច​​​ចំណាយ​​ពេល​​ច្រើន​​​គួរ​សម​ ។"
+
+#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "មិន​​អាច​​ចាប់​​ផ្តើមចំណុច​​ប្រទាក់​ SANE បានទេ ។ ស្កេន​​​​មិន​​​​អាច​​​​​​ធ្វើ​​​​​បាន​​ ។"
+
+#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
+msgid  "Set"
+msgstr "កំណត់"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
+msgid  "Linear ascending"
+msgstr "លំដាប់​​ឡើង​​​​លី​​នេ​អ៊ែរ"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
+msgid  "Linear descending"
+msgstr "លំដាប់​​​ចុះ​​​​លី​​​នេ​អ៊ែរ"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
+msgid  "Original values"
+msgstr "តម្លៃ​​ដើម"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
+msgid  "Exponential increasing"
+msgstr "កំណើន​​អិចស្ប៉ូណង់​ស្យែល"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
+msgid  "Checking..."
+msgstr "កំពុង​ពិនិត្យមើល​"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
+msgid  "Checking for an update failed."
+msgstr "បរាជ័យ​ក្នុង​ការ​ពិនិត្យ​រកមើល​បច្ចុប្បន្នភាព ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION គឺ​ទាន់សម័យ ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr "មាន %PRODUCTNAME %NEXTVERSION ។\n\nកំណែ​ដែល​បាន​ដំឡើង​គឺ %PRODUCTNAME %PRODUCTVERSION ។\n\nចំណាំ ៖ មុន​ពេល​ទាញយក​បច្ចុប្បន្នភាព​​ភាព គឺ​ត្រូវ​ប្រាកដ​ថា​អ្នក​មាន​សិទ្ធិ​ចូល​ដំណើរការ​ត្រឹមត្រូវ​ក្នុង​ការ​ដំឡើង​វា ។\nតាម​ធម្មតា គឺ​តម្រូវ​ឲ្យ​បញ្ចូល​​ពាក្យ​សម្ងាត់​របស់​អ្នក​គ្រប់គ្រង ឬ​ពាក្យសម្ងាត់​របស់ root ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
+msgid  "Check for Updates"
+msgstr "ពិនិត្យ​រក​មើលបច្ចុប្បន្នភាព"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "ការ​ទាញយក %PRODUCTNAME %NEXTVERSION បាន​ផ្អាក​នៅ..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "ការ​ទាញយក %PRODUCTNAME %NEXTVERSION បាន​អាក់​នៅ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr "ទីតាំង​ទាញយក​គឺ ៖ %DOWNLOAD_PATH ។\n\nនៅ​ក្នុង ឧបករណ៍ – ជម្រើស... - %PRODUCTNAME – បច្ចុប្បន្នភាព​​លើ​បណ្ដាញ អ្នក​អាច​ផ្លាស់ប្ដូរ​ទីតាំង​ទាញយក​បាន ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
+msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "បាន​ទាញយក %FILE_NAME ទៅ​កាន់ %DOWNLOAD_PATH ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr "បច្ចុប្បន្ន មិនមាន​ការ​ទាញយក​បច្ចុប្បន្ន​​ភាព​​ដោយ​ស្វ័យ​ប្រវត្តិ​​ទេ ។\n\nចុច 'ទាញយក...' ដើម្បី​ទាញយក %PRODUCTNAME %NEXTVERSION ពី​តំបន់​បណ្ដាញ​ដោយ​ដៃ ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "កំពុង​ទាញយក %PRODUCTNAME %NEXTVERSION..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
+msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr "បាន​បញ្ចប់​ការ​ទាញយក %PRODUCTNAME %NEXTVERSION ។ រួចរាល់​សម្រាប់​ការ​ដំឡើង ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
+msgid  "Do you really want to cancel the download?"
+msgstr "តើ​អ្នក​ពិត​ជា​ចង់​បោះបង់​ការ​ទាញយក​មែន​ឬ ?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
+msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr "ដើម្បី​ដំឡើង​បច្ចុប្បន្ន​​ភាព គឺ​ត្រូវ​បិទ %PRODUCTNAME %PRODUCTVERSION ជា​មុន​សិន ។ តើ​អ្នក​ចង់​ដំឡើង​បច្ចុប្បន្ន​​ភាព​​ឥឡូវដែរ​​ឬទេ ?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
+msgid  "Install ~now"
+msgstr "ដំឡើង​ឥឡូវ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
+msgid  "Install ~later"
+msgstr "ដំឡើង​នៅពេល​ក្រោយ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
+msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr "មិន​អាច​រត់​កម្មវិធី​ដំឡើង​បាន​ទេ សូម​រត់ %FILE_NAME នៅ​ក្នុង %DOWNLOAD_PATH ដោយ​ដៃ ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
+msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr "មាន​ឯកសារ​ឈ្មោះ​ដូចនោះ​រួចហើយ ! តើ​អ្នក​ចង់​សរសេរ​ជាន់លើ​ឯកសារ​ដែល​មាន​រួច​ឬទេ ?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
+msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr "មាន​ឯកសារ​ដែលមាន​ឈ្មោះ '%FILENAME' រួច​ហើយ​នៅ​ក្នុង '%DOWNLOAD_PATH'! តើ​អ្នក​ចង់​បន្ត​ជាមួយ​នឹង​ការ​ទាញយក ឬ​លុប​ និង​ផ្ទុក​ឯកសារ​ឡើងវិញ​បាន​ដែរឬទេ ?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
+msgid  "Reload File"
+msgstr "ផ្ទុក​ឯកសារ​ឡើង​វិញ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
+msgid  "Continue"
+msgstr "បន្ត"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
+msgid  "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
+msgid  "Status"
+msgstr "ស្ថានភាព"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "សេចក្ដី​ពណ៌នា"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
+msgid  "Close"
+msgstr "បិទ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
+msgid  "~Download"
+msgstr "ទាញយក"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
+msgid  "~Install"
+msgstr "ដំឡើង"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
+msgid  "~Pause"
+msgstr "ផ្អាក"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
+msgid  "~Resume"
+msgstr "ធ្វើ​បន្ត"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+msgid  "Cancel"
+msgstr "បោះបង់"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "មាន​បច្ចុប្បន្នភាព​​របស់ %PRODUCTNAME"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
+msgid  "Click here to start the download."
+msgstr "ចុច​ទីនេះ​ដើម្បី​ចាប់ផ្ដើម​ទាញយក ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "មាន​បច្ចុប្បន្នភាព​​របស់ %PRODUCTNAME"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
+msgid  "Click here for more information."
+msgstr "ចំពោះ​ព័ត៌មាន​បន្ថែម សូម​ចុច​ទី​នេះ ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "មាន​បច្ចុប្បន្នភាព​​របស់ %PRODUCTNAME"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
+msgid  "Download of update begins."
+msgstr "ចាប់ផ្ដើម​​ទាញយកបច្ចុប្បន្ន​​ភាព ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
+msgid  "Download of update in progress"
+msgstr "ការ​ទាញយក​បច្ចុប្បន្ន​​ភាព​កំពុង​ស្ថិត​ក្នុង​វឌ្ឍនភាព"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
+msgid  "Download of update paused"
+msgstr "បាន​ផ្អាក​ការ​ទាញយក​បច្ចុប្បន្ន​​ភាព"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
+msgid  "Click here to resume."
+msgstr "ចុច​ទីនេះ​ដើម្បី​ធ្វើ​បន្ត ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
+msgid  "Download of update stalled"
+msgstr "ការ​ទាញយក​​បច្ចុប្បន្ន​ភាព​​បាន​អាក់"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
+msgid  "Click here for more information."
+msgstr "ចំពោះ​ព័ត៌មាន​បន្ថែម សូម​ចុច​ទីនេះ ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
+msgid  "Download of update completed"
+msgstr "បាន​បញ្ចប់​ការ​ទាញយក​បច្ចុប្បន្ន​​ភាព"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
+msgid  "Click here to start the installation."
+msgstr "ចុច​ទីនេះ ដើម្បី​ចាប់ផ្ដើម​ដំឡើង ។"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
+msgid  "Updates for extensions available"
+msgstr "មាន​​បច្ចុប្បន្ន​ភាព​​​សម្រាប់​ផ្នែក​បន្ថែម"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
+msgid  "Click here for more information."
+msgstr "ចំពោះ​ព័ត៌មាន​បន្ថែម សូម​ចុច​ទីនេះ ។"
+
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+msgid  "Check for ~Updates..."
+msgstr "ពិនិត្យ​រកមើល​បច្ចុប្បន្ន​​ភាព..."

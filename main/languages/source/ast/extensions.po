@@ -1,0 +1,2580 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+msgid  "Address Book Data Source Wizard"
+msgstr "Asistente: Orixe de datos d'axenda"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
+msgid  "Address book type"
+msgstr "Triba d'axenda"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
+msgid  "Connection Settings"
+msgstr "Configuración de conexón"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
+msgid  "Table selection"
+msgstr "Esbilla de tabla"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
+msgid  "Field Assignment"
+msgstr "Asignación de campu"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
+msgid  "Data Source Title"
+msgstr "Títulu de orixe de datos"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr "%PRODUCTNAME dexa acceder a datos de direiciones del sistema. Pa ello, créase un orixe de datos pa %PRODUCTNAME que tien los datos de direiciones separtaos por tabuladores.\n\nEsti asistente facilita la creación del orixe de datos."
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
+msgid  "Please select the type of your external address book:"
+msgstr "Escueyi la triba d'axenda esterna:"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
+msgid  "Evolution"
+msgstr "Evolution"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
+msgid  "Groupwise"
+msgstr "GroupWise"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
+msgid  "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
+msgid  "Mozilla / Netscape"
+msgstr "Mozilla / Netscape"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
+msgid  "Thunderbird"
+msgstr "Thunderbird"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
+msgid  "KDE address book"
+msgstr "Axenda de KDE"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
+msgid  "Mac OS X address book"
+msgstr "Axenda de Mac OS X"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
+msgid  "LDAP address data"
+msgstr "Datos de les direcciones LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
+msgid  "Outlook address book"
+msgstr "Axenda d'Outlook"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
+msgid  "Windows system address book"
+msgstr "Axenda del sistema de Windows"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
+msgid  "Other external data source"
+msgstr "Otres fontes de datos esternes"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr "Pa configurar la fonte nueva de datos necesítase otra información.\n\nPa ello, namái calques el botón que ta embaxo va abrise otru diálogu. Meti n'elli la información que te piden."
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
+msgid  "Settings"
+msgstr "Preferencies"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr "Nun se pudo coneutar cola fonte de datos.\nEnantes de siguir, comprueba la configuración o escueyi (na ficha anterior) otra triba pa la fonte de datos de direiciones."
+
+#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr "L'orixe de datos esternos escoyíu contién más d'una axenda.\nEscueyi la que quies usar davezu:"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "Pa poder incorporar los datos de les direiciones nes plantíes, %PRODUCTNAME tienes que saber qué campos contienen qué datos.\n\nPor exemplu, puede ser que grabaras less direiciones eleutróniques nun campu col nome \"e-mail\", \"email\", \"EM\" o con otru nome perestremáu.\n\nSi calques el botón que s'atopa más embaxo, ábrese otru diálogu nel que puedes configurar la fonte de datos colos nuevos valores."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
+msgid  "Field Assignment"
+msgstr "Asignación de campu"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr "Agora tienes información abonda pa integrar los datos de les direiciones en %PRODUCTNAME.\n\nPon el nome col que quies rexistrar la fonte de datos en %PRODUCTNAME."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
+msgid  "Location"
+msgstr "Llocalización"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
+msgid  "Browse..."
+msgstr "Ñavegar..."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
+msgstr "Facer qu'esta axenda tea a mano pa tolos módulos de %PRODUCTNAME."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
+msgid  "Address book name"
+msgstr "Nome de l'axenda"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr "Yá hai otra fonte de datos con esti nome. Escueyi otru, porque'l nome de la fonte de datos tien que ser únicu."
+
+#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
+msgid  "Please select a type of address book."
+msgstr "Escueyi una triba d'axenda."
+
+#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+msgid  "Addresses"
+msgstr "direiciones"
+
+#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+msgid  "Create Address Data Source"
+msgstr "Crear fonte de datos de direiciones"
+
+#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+msgid  "The connection could not be established."
+msgstr "Nun se pudo coneutar."
+
+#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+msgid  "Please check the settings made for the data source."
+msgstr "Comprueba la configuración pa la fonte de datos."
+
+#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+msgid  "Address Data - Field Assignment"
+msgstr "Datos de direiciones - asignación de campu"
+
+#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr "Anguaño nun existen campos asignaos.\nSi nun puedes asignalos agora, pues facelo cuando te pete:\nMenú \"Ficheru - Plantíes - Fonte d'axenda...\""
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
+msgid  "Table"
+msgstr "Tabla"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
+msgid  "Search Key"
+msgstr "Clave de busca"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
+msgid  "AutoFilter"
+msgstr "Filtru automáticu"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
+msgid  "Standard Filter"
+msgstr "Filtru estándar"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
+msgid  "Remove Filter"
+msgstr "Eliminar filtru"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
+msgid  "Column Arrangement"
+msgstr "Disposición de les columnes"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
+msgid  "Data Source"
+msgstr "Orixe de datos"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
+msgid  "The following column names could not be assigned:\\n"
+msgstr "Los nomes de columna siguientes nun puen ser asignaos:\n"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
+msgid  "Article"
+msgstr "Artículu"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
+msgid  "Book"
+msgstr "Llibru"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
+msgid  "Brochures"
+msgstr "Folletos"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
+msgid  "Conference proceedings"
+msgstr "Informe de reunión"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
+msgid  "Book excerpt"
+msgstr "Esbilla del llibru"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
+msgid  "Book excerpt with title"
+msgstr "Esbilla del llibru con títulu"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "Informe de reunión"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
+msgid  "Journal"
+msgstr "Diariu"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
+msgid  "Techn. documentation"
+msgstr "Documentación téunica"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
+msgid  "Thesis"
+msgstr "Tesis"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
+msgid  "Miscellaneous"
+msgstr "Amestáu"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
+msgid  "Dissertation"
+msgstr "Disertación"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "Procedimientos de conferencia"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
+msgid  "Research report"
+msgstr "Informe d'investigación"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
+msgid  "Unpublished"
+msgstr "Non publicáu"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
+msgid  "e-mail"
+msgstr "corréu electrónicu"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
+msgid  "WWW document"
+msgstr "Documentu WWW"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
+msgid  "User-defined1"
+msgstr "Definíu pol Usuariu 1"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
+msgid  "User-defined2"
+msgstr "Definíu pol Usuariu 2"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
+msgid  "User-defined3"
+msgstr "Definíu pol Usuariu 3"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
+msgid  "User-defined4"
+msgstr "Definíu pol Usuariu 4"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
+msgid  "User-defined5"
+msgstr "Definíu pol Usuariu 5"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
+msgid  "General"
+msgstr "Xeneral"
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
+msgid  "Insert Section..."
+msgstr "Inxertar seición..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
+msgid  "Delete Section..."
+msgstr "Desaniciar seición..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
+msgid  "Modify Name..."
+msgstr "Camudar nome..."
+
+#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
+msgid  "~Short name"
+msgstr "Nome ~curtiu"
+
+#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
+msgid  "~Type"
+msgstr "~Triba"
+
+#: source/bibliography/sections.src#ST_YEAR.String.Text
+msgid  "~Year"
+msgstr "~Añu"
+
+#: source/bibliography/sections.src#ST_AUTHOR.String.Text
+msgid  "Author(s)"
+msgstr "Autor/es"
+
+#: source/bibliography/sections.src#ST_TITLE.String.Text
+msgid  "Tit~le"
+msgstr "Títu~lu"
+
+#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
+msgid  "~Publisher"
+msgstr "~Editor"
+
+#: source/bibliography/sections.src#ST_ADDRESS.String.Text
+msgid  "A~ddress"
+msgstr "~Direición"
+
+#: source/bibliography/sections.src#ST_ISBN.String.Text
+msgid  "~ISBN"
+msgstr "~ISBN"
+
+#: source/bibliography/sections.src#ST_CHAPTER.String.Text
+msgid  "~Chapter"
+msgstr "~Capítulu"
+
+#: source/bibliography/sections.src#ST_PAGE.String.Text
+msgid  "Pa~ge(s)"
+msgstr "Pá~xina(es)"
+
+#: source/bibliography/sections.src#ST_EDITOR.String.Text
+msgid  "Editor"
+msgstr "Editor"
+
+#: source/bibliography/sections.src#ST_EDITION.String.Text
+msgid  "Ed~ition"
+msgstr "Ed~ición"
+
+#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
+msgid  "~Book title"
+msgstr "~Títulu del llibru"
+
+#: source/bibliography/sections.src#ST_VOLUME.String.Text
+msgid  "Volume"
+msgstr "Volume"
+
+#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
+msgid  "Publication t~ype"
+msgstr "M~ena de publicación"
+
+#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
+msgid  "Organi~zation"
+msgstr "Organi~zación"
+
+#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
+msgid  "Instit~ution"
+msgstr "Instit~ución"
+
+#: source/bibliography/sections.src#ST_SCHOOL.String.Text
+msgid  "University"
+msgstr "Universidá"
+
+#: source/bibliography/sections.src#ST_REPORT.String.Text
+msgid  "Type of re~port"
+msgstr "Mena d'in~forme"
+
+#: source/bibliography/sections.src#ST_MONTH.String.Text
+msgid  "~Month"
+msgstr "~Mes"
+
+#: source/bibliography/sections.src#ST_JOURNAL.String.Text
+msgid  "~Journal"
+msgstr "~Revista"
+
+#: source/bibliography/sections.src#ST_NUMBER.String.Text
+msgid  "Numb~er"
+msgstr "Númb~eru"
+
+#: source/bibliography/sections.src#ST_SERIES.String.Text
+msgid  "Se~ries"
+msgstr "~Serie"
+
+#: source/bibliography/sections.src#ST_ANNOTE.String.Text
+msgid  "Ann~otation"
+msgstr "An~otación"
+
+#: source/bibliography/sections.src#ST_NOTE.String.Text
+msgid  "~Note"
+msgstr "~Nota"
+
+#: source/bibliography/sections.src#ST_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
+msgid  "User-defined field ~1"
+msgstr "Campu definíu por usuariu ~1"
+
+#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
+msgid  "User-defined field ~2"
+msgstr "Campu definíu por usuariu ~2"
+
+#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
+msgid  "User-defined field ~3"
+msgstr "Campu definíu por usuariu ~3"
+
+#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
+msgid  "User-defined field ~4"
+msgstr "Campu definíu por usuariu ~4"
+
+#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
+msgid  "User-defined field ~5"
+msgstr "Campu definíu por usuariu ~5"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
+msgid  "Column names"
+msgstr "Nomes de columna"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
+msgid  "<none>"
+msgstr "<Nengún>"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
+msgid  "Column Layout for Table %1"
+msgstr "Disposición de les columnes pa la tabla %1"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
+msgid  "Choose Data Source"
+msgstr "Escoyer fonte de datos"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
+msgid  "Entry"
+msgstr "Entrada"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
+msgid  "Field selection:"
+msgstr "Seleición de campu:"
+
+#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
+msgid  "Table;Query;Sql;Sql [Native]"
+msgstr "Tabla;Consulta;Sql;Sql [Native]"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
+msgid  "Bibliography Database"
+msgstr "Base de datos bibliográfica"
+
+#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
+msgid  "Do you want to edit the column arrangement?"
+msgstr "¿Quies editar la disposición de les columnes?"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
+msgid  "Table Selection"
+msgstr "Seleición de tabla"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
+msgid  "Control"
+msgstr "Control"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr "A mandrecha pues ver toles tables de la fonte de datos del formulariu.\n\n\nEscueyi la tabla de la que quies que los datos s'usen como base pal conteníu de la llista:"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
+msgid  "Field Selection"
+msgstr "Seleición de campos"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "Campos esistentes"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
+msgid  "Display field"
+msgstr "Campu de visualización"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
+msgid  "The contents of the field selected will be shown in the combo box list."
+msgstr "El conteníu del campu seleicionáu amosaráse na llista de la caxa combinada."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgstr "El conteníu del campu seleicionáu amosaráse na caxa de llista si los campos enllaciaos son idénticos."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
+msgid  "Field Link"
+msgstr "Enllaz de campu"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgstr "Equí ye onde seleiciones campos con conteníu coincidente col envís d'amosar el valor del campu de visualización."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
+msgid  "Field from the ~Value Table"
+msgstr "Campu de la tabla de ~valores"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
+msgid  "Field from the ~List Table"
+msgstr "Campu de la tabla de ~llista"
+
+#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr "Pues guardar el valor de la caxa combinada d'una base de datos o bien usalu pa propósitos de visualización."
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
+msgid  "Field Selection"
+msgstr "Seleición de campos"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
+msgid  "Table element"
+msgstr "Elementu de la tabla"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "Campos esistentes"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
+msgid  "Selected fields"
+msgstr "Campos seleicionaos"
+
+#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
+msgid  " (Date)"
+msgstr " (Data)"
+
+#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
+msgid  " (Time)"
+msgstr " (Hora)"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
+msgid  "Group Element Wizard"
+msgstr "Asistente d'elementos de grupu"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
+msgid  "Table Element Wizard"
+msgstr "Asistente d'elementos de tabla"
+
+#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
+msgid  "List Box Wizard"
+msgstr "Asistente de caxes de llistes"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
+msgid  "Combo Box Wizard"
+msgstr "Asistente de caxes combinaes"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
+msgid  "The table connection to the data source could not be established."
+msgstr "Nun pudo establecese la conexión de la tabla cola fonte de datos."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
+msgid  "Data"
+msgstr "Datos"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
+msgid  "Data"
+msgstr "Datos"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr "Anguaño'l formulariu al que pertenez el control nun ta (o non completamente) venceyáu a una fonte de datos.\n\nPor favor escueyi una fonte de datos y una tabla.\n\n\nTen en cuenta que los parámetros establecíos nesta páxina van tener efeutu en cuantes que salgas de la páxina."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
+msgid  "~Data source:"
+msgstr "Fonte de ~datos:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
+msgid  "~Table / Query:"
+msgstr "~Tabla / Consulta"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
+msgid  "Database Field"
+msgstr "Campu de la base de datos"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
+msgid  "Do you want to save the value in a database field?"
+msgstr "¿Quies guardar el valor nun campu de la base de datos?"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr "~Sí, quiero guardalu nel campu siguiente de la base de datos:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
+msgid  "~No, I only want to save the value in the form."
+msgstr "~Non, namái quiero guardar el valor nel formulariu."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
+msgid  "Form"
+msgstr "Formulariu"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
+msgid  "Data source"
+msgstr "Fonte de datos"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
+msgid  "Content type"
+msgstr "Triba de conteníu"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
+msgid  "Content"
+msgstr "Conteníu"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
+msgid  "Table"
+msgstr "Tabla"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
+msgid  "Query"
+msgstr "Consulta"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
+msgid  "SQL command"
+msgstr "Comandu SQL"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
+msgid  "Data"
+msgstr "Datos"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
+msgid  "Which ~names do you want to give the option fields?"
+msgstr "¿Qué ~nomes quies dar a los campos d'opción?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "~Campos d'opción"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
+msgid  "Default Field Selection"
+msgstr "Seleición del campu predetermináu"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
+msgid  "Should one option field be selected as a default?"
+msgstr "¿Quies que tea seleicionáu un campu d'opción de mou predetermináu?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
+msgid  "~Yes, the following:"
+msgstr "~Sí, el siguiente:"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
+msgid  "No, one particular field is not going to be selected."
+msgstr "Non, nun ha seleicionase dengún campu en concretu."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
+msgid  "Field Values"
+msgstr "Valores del campu"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
+msgid  "When you select an option, the option group is given a specific value."
+msgstr "Cuando seleiciones una opción, dáse-y un valor específicu al grupu d'opciones."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
+msgid  "Which ~value do you want to assign to each option?"
+msgstr "¿Qué ~valor quies asignar a cada opción?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "Campos d'~opción"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
+msgid  "Create Option Group"
+msgstr "Crear el grupu d'opciones"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
+msgid  "Which ~caption is to be given to your option group?"
+msgstr "¿Qué ~testu quies da-y al to grupu d'opciones?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
+msgid  "These were all details needed to create the option group."
+msgstr "Toos estos yeren detalles necesarios pa crear el grupu d'opciones."
+
+#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgstr "Pues guardar el valor del grupu d'opciones d'una base de datos o usalu pa una aición posterior."
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
+msgid  "<< Back"
+msgstr "<< Tornar"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
+msgid  "Next >>"
+msgstr "Siguir >>"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
+msgid  "Accept"
+msgstr "Aceutar"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
+msgid  "Finish"
+msgstr "Finar"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
+msgid  " - Software License Agreement"
+msgstr " - Contratu de llicencia de software"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
+msgid  "- User Data"
+msgstr "- Datos del usuariu"
+
+#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
+msgid  "Welcome"
+msgstr "Bienveníu"
+
+#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr "Bienaportaos a %PRODUCTNAME %PRODUCTVERSION OEM\n\nP'aniciar %PRODUCTNAME %PRODUCTVERSION OEM, escribi los tos datos personales nel diálogu darréu del testu de la llicencia. Hai información importante contenía nos ficheros readme que tán allugaos nel direutoriu del productu %PRODUCTNAME. Llei esos ficheros con procuru. Tamién pues alcontrar información detallada nel sitiu web d'Oracle \n\nhttp://www.oracle.com/us/products/applications/open-office."
+
+#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
+msgid  "License Agreement"
+msgstr "Llicencia d'Alcuerdu"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation:"
+msgstr "Sigui estos pasos pa facer la instalación:"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
+msgid  "1."
+msgstr "1."
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr "Llei'l contratu de Llicencia dafechu. Emplega la barra de desplazamientu o'l botón '%PAGEDOWN' d'esti diálogu pa ver el testu de la llicencia completu."
+
+#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
+msgid  "Page Down"
+msgstr "Retroceder páxina"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
+msgid  "2."
+msgstr "2."
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
+msgid  "Accept the License Agreement."
+msgstr "Aceutar el Contratu de Llicencia."
+
+#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
+msgid  "I accept the terms of the Agreement."
+msgstr "Aceuto los términos del Contratu."
+
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
+msgid  "~Accept"
+msgstr "~Aceutar"
+
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
+msgid  "Decline"
+msgstr "Refugar"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
+msgid  "Tab Order"
+msgstr "Orde de les llingüetes"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
+msgid  "Controls"
+msgstr "Controles"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
+msgid  "Move Up"
+msgstr "Mover p'arriba"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
+msgid  "Move Down"
+msgstr "Mover p'abaxo"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
+msgid  "Automatic Sort"
+msgstr "Ordenación automática"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr "Estos campos de control puen usase como campos d'etiqueta pal $control_class$ $control_name$."
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
+msgid  "~No assignment"
+msgstr "~Ensin asignación"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
+msgid  "Label Field Selection"
+msgstr "Seleición de campu d'etiqueta"
+
+#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
+msgid  "Forms"
+msgstr "Formularios"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr "¿Quies desaniciar la triba de datos '#type#' del modelu?\nCuenta qu'esto afeuta a tolos campos de control venceyaos a esta triba de datos."
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
+msgid  "Button"
+msgstr "Botón"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
+msgid  "Option Button"
+msgstr "Botón d'opción"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
+msgid  "Check Box"
+msgstr "Caxellu de verificación"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label Field"
+msgstr "Campu d'etiqueta"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
+msgid  "Group Box"
+msgstr "Caxa de grupu"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
+msgid  "Text Box"
+msgstr "Caxa de testu"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "Campu formatiáu"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
+msgid  "List Box"
+msgstr "Caxa de llista"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
+msgid  "Combo Box"
+msgstr "Caxa combinada"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
+msgid  "Image Button"
+msgstr "Botón d'imaxe"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
+msgid  "Hidden Control"
+msgstr "Control anubríu"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
+msgid  "Control (unknown type)"
+msgstr "Control (triba desconocida)"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "Control d'imaxe"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
+msgid  "File Selection"
+msgstr "Seleición de ficheru"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
+msgid  "Date Field"
+msgstr "Campu de data"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
+msgid  "Time Field"
+msgstr "Campu d'hora"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
+msgid  "Numeric Field"
+msgstr "Campu numbéricu"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
+msgid  "Currency Field"
+msgstr "Campu de moneda"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
+msgid  "Pattern Field"
+msgstr "Campu de patrón"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
+msgid  "Table Control "
+msgstr "Control de tabla "
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
+msgid  "Link fields"
+msgstr "Campos d'enllaz"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
+msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr "Puen usase subformularios p'amosar los detalles sobre'l rexistru activu del formulariu maestru. Pa ello, pue especificar les columnes del subformulariu que concasen coles columnes del formulariu maestru."
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
+msgid  "Suggest"
+msgstr "Suxerir"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
+msgid  "Sub Form"
+msgstr "Subformulariu"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
+msgid  "Master Form"
+msgstr "Formulariu maestru"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
+msgid  "The columns of '#' could not be retrieved."
+msgstr "Les columnes de '#' nun puen ser recuperaes."
+
+#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
+msgid  "Default"
+msgstr "Predetermináu"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "Xeneral"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "Datos"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
+msgid  "No"
+msgstr "Non"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
+msgid  "Yes"
+msgstr "Sí"
+
+#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
+msgid  "Help"
+msgstr "Ayuda"
+
+#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
+msgid  "<Embedded-Image>"
+msgstr "<Imaxe-incrustao>"
+
+#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
+msgid  "Text"
+msgstr "Testu"
+
+#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
+msgid  "Edit mask"
+msgstr "Editar mázcara"
+
+#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
+msgid  "Literal mask"
+msgstr "Máscara lliteral"
+
+#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
+msgid  "Read-only"
+msgstr "Namái-llectura"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
+msgid  "Enabled"
+msgstr "Habilitáu"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "Visible"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
+msgid  "AutoFill"
+msgstr "Autocompletar"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
+msgid  "Line count"
+msgstr "Cuntar llinies"
+
+#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
+msgid  "Max. text length"
+msgstr "Llonxitú máxima del testu"
+
+#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
+msgid  "Spin Button"
+msgstr "Botón xiratoriu"
+
+#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
+msgid  "Strict format"
+msgstr "Formatu estrictu"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
+msgid  "Thousands separator"
+msgstr "Separtador de miles"
+
+#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
+msgid  "Printable"
+msgstr "Imprentable"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
+msgid  "Frame"
+msgstr "Marcu"
+
+#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
+msgid  "Help text"
+msgstr "Testu d'ayuda"
+
+#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
+msgid  "Help URL"
+msgstr "URL d'ayuda"
+
+#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
+msgid  "Additional information"
+msgstr "Información adicional"
+
+#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
+msgid  "Password character"
+msgstr "Caráuter de la contraseña"
+
+#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
+msgid  "Tristate"
+msgstr "Estáu triple"
+
+#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
+msgid  "Empty string is NULL"
+msgstr "La cadena balera ye NULL"
+
+#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
+msgid  "Decimal accuracy"
+msgstr "Precisión decimal"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
+msgid  "Graphics"
+msgstr "Gráficos"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
+msgid  "Default selection"
+msgstr "Seleición predeterminada"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
+msgid  "Default button"
+msgstr "Botón predetermináu"
+
+#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
+msgid  "Label Field"
+msgstr "Campu d'etiqueta"
+
+#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
+msgid  "Label"
+msgstr "Etiqueta"
+
+#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "Alliniamientu"
+
+#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr "Alliniamientu vertical"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
+msgid  "Top"
+msgstr "Cimero"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
+msgid  "Middle"
+msgstr "Mediu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
+msgid  "Bottom"
+msgstr "Cabero"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
+msgid  "Graphics alignment"
+msgstr "Alliniamientu de gráficos"
+
+#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "Fonte"
+
+#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
+msgid  "Background color"
+msgstr "Color fondu"
+
+#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
+msgid  "Border"
+msgstr "Berbesu"
+
+#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
+msgid  "Icon size"
+msgstr "Tamañu d'Iconu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
+msgid  "Small"
+msgstr "Pequeñu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
+msgid  "Large"
+msgstr "Grande"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
+msgid  "Positioning"
+msgstr "Allugamientu"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
+msgid  "Navigation"
+msgstr "Restolar"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
+msgid  "Acting on a record"
+msgstr "Remanar n'un rexistru"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
+msgid  "Filtering / Sorting"
+msgstr "Filtráu / Ordenamientu"
+
+#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
+msgid  "Horizontal scroll bar"
+msgstr "Barra de movición horizontal"
+
+#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
+msgid  "Vertical scroll bar"
+msgstr "Barra de movición vertical"
+
+#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
+msgid  "Word break"
+msgstr "Dixebra de pallabra"
+
+#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
+msgid  "Multiline input"
+msgstr "Entrada multillinia"
+
+#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
+msgid  "Multiselection"
+msgstr "Seleición múltiple"
+
+#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
+msgid  "Name"
+msgstr "Nome"
+
+#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
+msgid  "Tab order"
+msgstr "Orde de les llingüetes"
+
+#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
+msgid  "Mouse wheel scroll"
+msgstr "Rueda d'eslizamientu del mur"
+
+#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr "Filtru"
+
+#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
+msgid  "Sort"
+msgstr "Axeitar"
+
+#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
+msgid  "Record marker"
+msgstr "Marcador de rexistros"
+
+#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
+msgid  "Filter proposal"
+msgstr "Propuesta de peñera"
+
+#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
+msgid  "Navigation bar"
+msgstr "Barra de ñavegación"
+
+#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
+msgid  "Cycle"
+msgstr "Ciclu"
+
+#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
+msgid  "Tabstop"
+msgstr "Tabstop"
+
+#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
+msgid  "Data field"
+msgstr "Campu de datos"
+
+#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
+msgid  "Dropdown"
+msgstr "Desplegable"
+
+#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
+msgid  "Bound field"
+msgstr "Campu venceyáu"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
+msgid  "List content"
+msgstr "Conteníu de la llista"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
+msgid  "Type of list contents"
+msgstr "Triba de conteníos de la llista"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
+msgid  "Content"
+msgstr "Conteníu"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
+msgid  "Content type"
+msgstr "Tipu de conteníu"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
+msgid  "Allow additions"
+msgstr "Permitir adiciones"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
+msgid  "Allow deletions"
+msgstr "Permitir eliminaciones"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
+msgid  "Allow modifications"
+msgstr "Permitir camudamientos"
+
+#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
+msgid  "Add data only"
+msgstr "Añader datos namái"
+
+#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+msgid  "Data source"
+msgstr "Fonte de datos"
+
+#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
+msgstr "Enllaz de"
+
+#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
+msgid  "Link slave fields"
+msgstr "Enllazar con"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
+msgid  "Value min."
+msgstr "Valor mín."
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
+msgid  "Value max."
+msgstr "Valor máx."
+
+#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
+msgid  "Incr./decrement value"
+msgstr "Valor d'incrementu/decrementu"
+
+#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
+msgid  "Currency symbol"
+msgstr "Símbolu de moneda"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
+msgid  "Date min."
+msgstr "Data mín."
+
+#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
+msgid  "Date max."
+msgstr "Data máx."
+
+#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
+msgid  "Date format"
+msgstr "Formatu de Data"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
+msgid  "Selection"
+msgstr "Seleición"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
+msgid  "Time min."
+msgstr "Hora mín."
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
+msgid  "Time max."
+msgstr "Hora máx."
+
+#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
+msgid  "Time format"
+msgstr "Formatu d'hora"
+
+#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
+msgid  "Prefix symbol"
+msgstr "Símbolu de prefixu"
+
+#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
+msgid  "Value"
+msgstr "Valor"
+
+#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
+msgid  "Formatting"
+msgstr "Formateando"
+
+#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
+msgid  "Class ID"
+msgstr "ID de clas"
+
+#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "Altor"
+
+#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "Anchu"
+
+#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
+msgid  "List index"
+msgstr "Índiz de la llista"
+
+#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
+msgid  "Row height"
+msgstr "Altor Filera"
+
+#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
+msgid  "Fill color"
+msgstr "Color de rellenu"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
+msgid  "Line color"
+msgstr "Color de la llinia"
+
+#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
+msgid  "Reference value (on)"
+msgstr "Valor de referencia (activao)"
+
+#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
+msgid  "Reference value (off)"
+msgstr "Valor de referencia (desactivao)"
+
+#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
+msgid  "List entries"
+msgstr "Entraes de la llista"
+
+#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
+msgid  "Action"
+msgstr "Aición"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
+msgid  "Type of submission"
+msgstr "Triba d'unvíu"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
+msgid  "Default status"
+msgstr "Estáu predetermináu"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
+msgid  "Submission encoding"
+msgstr "Codificación d'unviu"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
+msgid  "Default value"
+msgstr "Valor predetermináu"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
+msgid  "Default text"
+msgstr "Testu predetermináu"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
+msgid  "Default date"
+msgstr "Data predeterminada"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
+msgid  "Default time"
+msgstr "Hora predeterminada"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
+msgid  "Frame"
+msgstr "Marcu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
+msgid  "Without frame"
+msgstr "Ensin marcu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
+msgid  "3D look"
+msgstr "Aspeutu 3D"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
+msgid  "Flat"
+msgstr "Planu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
+msgid  "Valuelist"
+msgstr "Llista de valores"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+msgid  "Table"
+msgstr "Tabla"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+msgid  "Query"
+msgstr "Consulta"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
+msgid  "Sql"
+msgstr "Sql"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
+msgid  "Sql [Native]"
+msgstr "Sql [Native]"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
+msgid  "Tablefields"
+msgstr "Campos de tabla"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
+msgid  "Left"
+msgstr "Esquierda"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
+msgid  "Center"
+msgstr "Centrar"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
+msgid  "Right"
+msgstr "Drecha"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
+msgid  "None"
+msgstr "Dengún"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
+msgid  "Submit form"
+msgstr "Enviar formulariu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
+msgid  "Reset form"
+msgstr "Reaniciar formulariu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
+msgid  "Open document/web page"
+msgstr "Abrir un documentu o páxina web"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
+msgid  "First record"
+msgstr "Primer rexistru"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
+msgid  "Previous record"
+msgstr "Rexistru anterior"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
+msgid  "Next record"
+msgstr "Rexistru siguiente"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
+msgid  "Last record"
+msgstr "Últimu rexistru"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
+msgid  "Save record"
+msgstr "Grabar rexistru"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
+msgid  "Undo data entry"
+msgstr "Escaecer datos metíos"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
+msgid  "New record"
+msgstr "Nuevu rexistru"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
+msgid  "Delete record"
+msgstr "Desaniciar rexistru"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
+msgid  "Refresh form"
+msgstr "Anovar formulariu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
+msgid  "Get"
+msgstr "Garrar"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
+msgid  "Post"
+msgstr "Artículu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
+msgid  "Multipart"
+msgstr "Multiparte"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
+msgid  "Text"
+msgstr "Testu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
+msgid  "Standard (short)"
+msgstr "Estándar (cortu)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
+msgid  "Standard (short YY)"
+msgstr "Estándar (curtiu AA)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
+msgid  "Standard (short YYYY)"
+msgstr "Estándar (curtiu YYYY)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
+msgid  "Standard (long)"
+msgstr "Estándar (llargu)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
+msgid  "DD/MM/YY"
+msgstr "DD/MM/YY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
+msgid  "MM/DD/YY"
+msgstr "MM/DD/YY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
+msgid  "YY/MM/DD"
+msgstr "YY/MM/DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
+msgid  "DD/MM/YYYY"
+msgstr "DD/MM/YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
+msgid  "MM/DD/YYYY"
+msgstr "MM/DD/YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
+msgid  "YYYY/MM/DD"
+msgstr "DD/MM/YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
+msgid  "YY-MM-DD"
+msgstr "DD-MM-YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
+msgid  "YYYY-MM-DD"
+msgstr "AAAA-MM-DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
+msgid  "13:45"
+msgstr "13:45"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
+msgid  "13:45:00"
+msgstr "13:45:00"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
+msgid  "01:45 PM"
+msgstr "01:45 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
+msgid  "01:45:00 PM"
+msgstr "01:45:00 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
+msgid  "Not Selected"
+msgstr "Ensin escoyer"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
+msgid  "Selected"
+msgstr "Esbilláu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
+msgid  "Not Defined"
+msgstr "Ensin definir"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
+msgid  "All records"
+msgstr "Tolos rexistros"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
+msgid  "Active record"
+msgstr "Rexistru activu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
+msgid  "Current page"
+msgstr "Páxina actual"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
+msgid  "No"
+msgstr "Non"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
+msgid  "Yes"
+msgstr "Sí"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
+msgid  "Parent Form"
+msgstr "Formulariu cimeru"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
+msgid  "None"
+msgstr "Dengún"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
+msgid  "Single"
+msgstr "Simple"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
+msgid  "Multi"
+msgstr "Multi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
+msgid  "Range"
+msgstr "Rangu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
+msgid  "Fill parameters"
+msgstr "Rellenar parámetros"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
+msgid  "Execute action"
+msgstr "Executar aición"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
+msgid  "After updating"
+msgstr "Dempués d'anovar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
+msgid  "Before updating"
+msgstr "Enantes d'anovar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
+msgid  "Before record action"
+msgstr "Enantes de l'aición nel rexistru de datos"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
+msgid  "After record action"
+msgstr "Darréu de l'aición nel rexistru de datos"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
+msgid  "Confirm deletion"
+msgstr "Confirmar desaniciu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
+msgid  "Error occurred"
+msgstr "Hebo un fallu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
+msgid  "When receiving focus"
+msgstr "Recepción de focu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
+msgid  "When losing focus"
+msgstr "Al perder el focu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
+msgid  "Item status changed"
+msgstr "Elementu col estáu camudáu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
+msgid  "Key pressed"
+msgstr "Tecla calcada"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
+msgid  "Key released"
+msgstr "Tecla soltada"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
+msgid  "When loading"
+msgstr "Al cargar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
+msgid  "Before reloading"
+msgstr "Enantes de recargar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
+msgid  "When reloading"
+msgstr "Al recargar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
+msgid  "Mouse moved while key pressed"
+msgstr "Mover el mur pente'l tecláu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
+msgid  "Mouse inside"
+msgstr "Mur dientro"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
+msgid  "Mouse outside"
+msgstr "Mur fuera"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
+msgid  "Mouse moved"
+msgstr "Movimientu de mur"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
+msgid  "Mouse button pressed"
+msgstr "Botón del mur calcáu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
+msgid  "Mouse button released"
+msgstr "Botón del mur sueltu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
+msgid  "Before record change"
+msgstr "Enantes del cambiu de rexistros de datos"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
+msgid  "After record change"
+msgstr "Tres el cambiu de rexistru de datos"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
+msgid  "After resetting"
+msgstr "Dempués de resetear"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
+msgid  "Prior to reset"
+msgstr "Enantes de resetear"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
+msgid  "Approve action"
+msgstr "Aprobar aición"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
+msgid  "Before submitting"
+msgstr "Enantes d'unviar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
+msgid  "Text modified"
+msgstr "Testu camudáu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
+msgid  "Before unloading"
+msgstr "Enantes de descargar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
+msgid  "When unloading"
+msgstr "Al descargar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
+msgid  "Changed"
+msgstr "Modificaos"
+
+#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
+msgid  "Events"
+msgstr "Eventos"
+
+#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
+msgid  "Analyze SQL command"
+msgstr "Analizar comandu SQL"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
+msgid  "PositionX"
+msgstr "PosiciónX"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
+msgid  "PositionY"
+msgstr "PosiciónY"
+
+#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
+msgid  "Title"
+msgstr "Títulu"
+
+#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
+msgid  "Page (step)"
+msgstr "Páxina (Step)"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
+msgid  "Progress value"
+msgstr "Valor de progresu"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
+msgid  "Progress value min."
+msgstr "Valor mín. de progresu"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
+msgid  "Progress value max."
+msgstr "Valor máx. de progresu"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
+msgid  "Scroll value"
+msgstr "Valor"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
+msgid  "Scroll value max."
+msgstr "Valor máximu"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
+msgid  "Scroll value min."
+msgstr "Valor mín. desplazamientu"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
+msgid  "Default scroll value"
+msgstr "Valor predetermináu de desplazamientu"
+
+#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
+msgid  "Small change"
+msgstr "Cambiu pequeñu"
+
+#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
+msgid  "Large change"
+msgstr "Cambéu grande"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
+msgid  "Delay"
+msgstr "Retrasu"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
+msgid  "Repeat"
+msgstr "Repetir"
+
+#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
+msgid  "Visible size"
+msgstr "Tamañu visible"
+
+#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
+msgid  "Orientation"
+msgstr "Aldu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
+msgid  "Horizontal"
+msgstr "Horizontal"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
+msgid  "Vertical"
+msgstr "Vertical"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
+msgid  "While adjusting"
+msgstr "Al axustar"
+
+#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
+msgid  "Date"
+msgstr "Data"
+
+#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
+msgid  "State"
+msgstr "Estáu"
+
+#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
+msgid  "Time"
+msgstr "Tiempu"
+
+#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
+msgid  "Scale"
+msgstr "Escala"
+
+#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
+msgid  "Button type"
+msgstr "Triba de botón"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
+msgid  "Default"
+msgstr "Predetermináu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
+msgid  "OK"
+msgstr "Aceutar"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
+msgid  "Cancel"
+msgstr "Encaboxar"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
+msgid  "Help"
+msgstr "Ayuda"
+
+#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Nun pudo afitase la conexón al orixe de datos \"$name$\"."
+
+#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
+msgid  "Text"
+msgstr "Testu"
+
+#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
+msgid  "Linked cell"
+msgstr "Caxella enllazada"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
+msgid  "Source cell range"
+msgstr "Rangu de caxelles d'orixe"
+
+#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
+msgid  "Contents of the linked cell"
+msgstr "Conteníu de la caxella enllazada"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
+msgid  "The selected entry"
+msgstr "La entrada escoyida"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
+msgid  "Position of the selected entry"
+msgstr "Posición de la entrada escoyida"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
+msgid  "Scrollbars"
+msgstr "Barres de desplazamientu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
+msgid  "Single-line"
+msgstr "Una llinia"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
+msgid  "Multi-line"
+msgstr "Abondes llinies"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
+msgid  "Multi-line with formatting"
+msgstr "Abondes llines con formatu"
+
+#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
+msgid  "Symbol color"
+msgstr "Color de símbolu"
+
+#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
+msgid  "Text lines end with"
+msgstr "Les llinies de testu acaben con"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
+msgid  "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
+msgid  "CR+LF (Windows)"
+msgstr "CR+LF (Windows)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
+msgid  "None"
+msgstr "na"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
+msgid  "Horizontal"
+msgstr "Horizontal"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
+msgid  "Vertical"
+msgstr "Vertical"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
+msgid  "Both"
+msgstr "Dambos"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
+msgid  "Table"
+msgstr "Tabla"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
+msgid  "Query"
+msgstr "Consulta"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+msgid  "SQL command"
+msgstr "Comandu SQL"
+
+#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
+msgid  "Toggle"
+msgstr "Alternar"
+
+#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
+msgid  "Take Focus on Click"
+msgstr "Activar al calcar"
+
+#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
+msgid  "Hide selection"
+msgstr "Tapecer escoyeta"
+
+#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
+msgid  "Style"
+msgstr "Estilu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
+msgid  "3D"
+msgstr "3D"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
+msgid  "Flat"
+msgstr "Planu"
+
+#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
+msgid  "Border color"
+msgstr "Color del berbesu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
+msgid  "Left top"
+msgstr "Cimero izquierda"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
+msgid  "Left centered"
+msgstr "Centru izquierda"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
+msgid  "Left bottom"
+msgstr "Baxero izquierda"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
+msgid  "Right top"
+msgstr "Cimero drecha"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
+msgid  "Right centered"
+msgstr "Centru drecha"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
+msgid  "Right bottom"
+msgstr "Baxero drecha"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
+msgid  "Above left"
+msgstr "Enriba izquierda"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
+msgid  "Above centered"
+msgstr "Enriba centru"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
+msgid  "Above right"
+msgstr "Enriba drecha"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
+msgid  "Below left"
+msgstr "Debaxo izquierda"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
+msgid  "Below centered"
+msgstr "Debaxo centru"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
+msgid  "Below right"
+msgstr "Debaxo drecha"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
+msgid  "Centered"
+msgstr "Centráu"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
+msgid  "Wrap text automatically"
+msgstr "Axustar testu automáticamente"
+
+#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
+msgid  "Text type"
+msgstr "Triba de testu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
+msgid  "Hide"
+msgstr "Anubrir"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
+msgid  "Show"
+msgstr "Amosar"
+
+#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
+msgid  "XML data model"
+msgstr "Modelu de datos XML"
+
+#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
+msgid  "Binding expression"
+msgstr "Espresión d'enllaz"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
+msgid  "Required"
+msgstr "Necesítase"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
+msgid  "List entry source"
+msgstr "Orixe d'entrada de llista"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
+msgid  "Relevant"
+msgstr "Importante"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
+msgid  "Read-only"
+msgstr "sólo llectura"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
+msgid  "Constraint"
+msgstr "Restricción"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
+msgid  "Calculation"
+msgstr "Cálculu"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
+msgid  "Data type"
+msgstr "Triba de datos"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
+msgid  "Whitespaces"
+msgstr "Espacios en blancu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
+msgid  "Preserve"
+msgstr "Caltener"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
+msgid  "Replace"
+msgstr "Trocar"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
+msgid  "Collapse"
+msgstr "contrayer"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
+msgid  "Pattern"
+msgstr "Patrón"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
+msgid  "Length"
+msgstr "Duración"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
+msgid  "Length (at least)"
+msgstr "Llargor (como mínimu)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
+msgid  "Length (at most)"
+msgstr "Llargor (como máximu)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
+msgid  "Digits (total)"
+msgstr "Díxitos (total)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
+msgid  "Digits (fraction)"
+msgstr "Díxitos (fraición)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
+msgid  "Max. (inclusive)"
+msgstr "Máx. (incluyíu)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
+msgid  "Max. (exclusive)"
+msgstr "Máx. (ensin incluyir)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
+msgid  "Min. (inclusive)"
+msgstr "Mín. (incluyíu)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
+msgid  "Min. (exclusive)"
+msgstr "Mín. (ensin incluyir)"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
+msgid  "Submission"
+msgstr "Unvíu"
+
+#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "Enllaz"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
+msgid  "Selection type"
+msgstr "Triba d'escoyeta"
+
+#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
+msgid  "Root displayed"
+msgstr "Amuesa'l raigañu"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
+msgid  "Show handles"
+msgstr "Amosar manielles"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
+msgid  "Show root handles"
+msgstr "Amosar manielles de raigañu"
+
+#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
+msgid  "Editable"
+msgstr "Editable"
+
+#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
+msgid  "Invokes stop node editing"
+msgstr "Parar la edición del nodu"
+
+#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
+msgid  "With title bar"
+msgstr "Con barra de títulu"
+
+#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
+msgid  "No Label"
+msgstr "Ensin etiqueta"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
+msgid  "No"
+msgstr "Non"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
+msgid  "Keep Ratio"
+msgstr "Caltener razón"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
+msgid  "Fit to Size"
+msgstr "Axustar al tamañu"
+
+#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
+msgid  "Input required"
+msgstr "Requierse entrada"
+
+#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
+msgid  "Text direction"
+msgstr "Orientación del testu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
+msgid  "Left-to-right"
+msgstr "De manzorga a mandrecha"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
+msgid  "Right-to-left"
+msgstr "De mandrecha a manzorga"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
+msgid  "Use superordinate object settings"
+msgstr "Usar configuración d'oxetu superior"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
+msgid  "Never"
+msgstr "Enxamás"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
+msgid  "When focused"
+msgstr "When focused"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
+msgid  "Always"
+msgstr "Siempres"
+
+#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
+msgid  "Anchor"
+msgstr "Anchor"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
+msgid  "To Paragraph"
+msgstr "A párrafu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
+msgid  "As Character"
+msgstr "Como Caráuter"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
+msgid  "To Page"
+msgstr "A páxina"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
+msgid  "To Frame"
+msgstr "A marcu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
+msgid  "To Character"
+msgstr "A Caráuter"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
+msgid  "To Page"
+msgstr "A páxina"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
+msgid  "To Cell"
+msgstr "A caxella"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
+msgid  "Regular"
+msgstr "Regular"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
+msgid  "Bold Italic"
+msgstr "Negrina Cursiva"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Cursiva"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
+msgid  "Bold"
+msgstr "Negrina"
+
+#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
+msgid  "(Default)"
+msgstr "(Predetermináu)"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+msgid  "Character"
+msgstr "Caráuter"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+msgid  "Font"
+msgstr "Fonte"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+msgid  "Font Effects"
+msgstr "Efeutos Fonte"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
+msgid  "New Data Type"
+msgstr "Triba de datos nueva"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
+msgid  "Type a name for the new data type:"
+msgstr "Escribi un nome pa la triba de datos nueva:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
+msgid  "About\\n Dev~ice"
+msgstr "Información sobre'l\n ~preséu"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
+msgid  "Create\\nPreview"
+msgstr "Crear\nPrevisualización"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
+msgid  "Preview"
+msgstr "Entever"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
+msgid  "Scan area"
+msgstr "Área a escanear"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
+msgid  "Left:"
+msgstr "Izquierda:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
+msgid  "Top:"
+msgstr "Cimero"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
+msgid  "Right:"
+msgstr "Drecha:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
+msgid  "Bottom:"
+msgstr "Baxero"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
+msgid  "Device used:"
+msgstr "Preséu emplegáu:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
+msgid  "Resolution [~DPI]"
+msgstr "Resolución [~DPI]:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
+msgid  "Show advanced options"
+msgstr "Amosar opciones avanzaes"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
+msgid  "Options:"
+msgstr "Opciones:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
+msgid  "Vector element"
+msgstr "Elementu vectorial"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
+msgid  "Set"
+msgstr "Afitar"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
+msgid  "Scanner"
+msgstr "Escáner"
+
+#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr "Preséu: %s\nFabricante: %s\nModelu: %s\nTriba: %s"
+
+#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
+msgid  "An error occurred while scanning."
+msgstr "Hebo un fallu na esploración."
+
+#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr "El preséu nun puede ufiertar la opción de previsualización. Va facese una esploración normal, que puede tardar abondo más."
+
+#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "L'interface SANE nun pudo arrancar. Nun se puede dixitalizar nada."
+
+#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
+msgid  "Set"
+msgstr "Afitar"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
+msgid  "Linear ascending"
+msgstr "Llinial ascendente"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
+msgid  "Linear descending"
+msgstr "Llinial descendente"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
+msgid  "Original values"
+msgstr "Valores orixinales"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
+msgid  "Exponential increasing"
+msgstr "Exponencial aumentando"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
+msgid  "Checking..."
+msgstr "Comprobando…"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
+msgid  "Checking for an update failed."
+msgstr "Comprobando una anovación fallía."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION ta anováu."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr "%PRODUCTNAME %NEXTVERSION ta disponible.\n\nLa versión instalada de %PRODUCTNAME ye %PRODUCTVERSION.\n\nNota: Enantes de baxar un anovamientu, asegúrate de tener permisos abondo pa instalala.\nDe vezu, necesitarás la conseña del alministrador o del superusuariu."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
+msgid  "Check for Updates"
+msgstr "Comprobar anovamientos."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "La descarda de %PRODUCTNAME %NEXTVERSION posada en..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "Descargando %PRODUCTNAME %NEXTVERSION n'espera en"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr "L'allugamientu de la descarga ye: %DOWNLOAD_PATH.\n\nEn Ferramientes – Opciones... - %PRODUCTNAME – Anovamientu per Internet pue camudar el allugamientu de la descarga."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
+msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%FILE_NAME baxóse a %DOWNLOAD_PATH."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr "La descarga automática de los anovamientos nun ta disponible anguaño.\n\nFai clic en 'Descargar...' pa descargar %PRODUCTNAME %NEXTVERSION manualmente de la páxina web."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "Descargando %PRODUCTNAME %NEXTVERSION..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
+msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr "Descarga de %PRODUCTNAME %NEXTVERSION completada. Llisto pa la so instalación."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
+msgid  "Do you really want to cancel the download?"
+msgstr "¿Quies encaboxar la descarga?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
+msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr "Pa instalar l'anovamientu, %PRODUCTNAME %PRODUCTVERSION necesita tar zarráu. ¿Quies instalar l'anovamientu agora?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
+msgid  "Install ~now"
+msgstr "I~nstalar agora"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
+msgid  "Install ~later"
+msgstr "Insta~lar dempués"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
+msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr "Nun puede executase l'instalador de l'aplicación, execute %FILE_NAME en %DOWNLOAD_PATH manualmente."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
+msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr "Yá hai un ficheru con esi nome. ¿Quies sobrescribilu?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
+msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr "¡Yá esiste en '%DOWNLOAD_PATH' un ficheru denomáu '%FILENAME'! ¿Quies siguir cola descarga o desaniciar y volver a descargar el ficheru?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
+msgid  "Reload File"
+msgstr "Recargar ficheru"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
+msgid  "Continue"
+msgstr "Siguir"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
+msgid  "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
+msgid  "Status"
+msgstr "Estáu"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "Descripcion"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
+msgid  "Close"
+msgstr "Zarrar"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
+msgid  "~Download"
+msgstr "~Descargar"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
+msgid  "~Install"
+msgstr "~Instalar"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
+msgid  "~Pause"
+msgstr "~Posar"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
+msgid  "~Resume"
+msgstr "~Continuar"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+msgid  "Cancel"
+msgstr "Encaboxar"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "Anovamientu disponible de %PRODUCTNAME"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
+msgid  "Click here to start the download."
+msgstr "Fai clic equí pa entamar la descarga."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "Anovamientu disponible de %PRODUCTNAME"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
+msgid  "Click here for more information."
+msgstr "Fai clic equí pa más información."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "Anovamientu disponible de %PRODUCTNAME"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
+msgid  "Download of update begins."
+msgstr "Anició la descarga del anovamientu."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
+msgid  "Download of update in progress"
+msgstr "Descarga de l'actualización en marcha"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
+msgid  "Download of update paused"
+msgstr "Descarga del anovamientu posada"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
+msgid  "Click here to resume."
+msgstr "Fai clic equí pa reaniciar."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
+msgid  "Download of update stalled"
+msgstr "Descarga de l'actualización n'espera"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
+msgid  "Click here for more information."
+msgstr "Fai clic equí pa más información."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
+msgid  "Download of update completed"
+msgstr "Descarga de l'actualización completada"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
+msgid  "Click here to start the installation."
+msgstr "Fai clic equi pa entamar la instalación."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
+msgid  "Updates for extensions available"
+msgstr "Anovamientos pa estensiones disponibles"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
+msgid  "Click here for more information."
+msgstr "Fai clic equí pa más información."
+
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+msgid  "Check for ~Updates..."
+msgstr "Guetar ~anovamientos..."

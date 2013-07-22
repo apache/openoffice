@@ -1,0 +1,680 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.ModalDialog.Text
+msgid  "Website Certified by an Unknown Authority"
+msgstr "Tystysgrif Gwefan gan Awdurdod Anhysbys"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PushButton.Text
+msgid  "Examine Certificate..."
+msgstr "Archwilio Tystysgrif..."
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HelpButton.Text
+msgid  "Help"
+msgstr "Cymorth"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PushButton.Text
+msgid  "OK"
+msgstr "Iawn"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RadioButton.Text
+msgid  "Accept this certificate temporarily for this session"
+msgstr "Derbyn y dystysgrif dros dro ar gyfer y sesiwn"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RadioButton.Text
+msgid  "Do not accept this certificate and do not connect to this Web site"
+msgstr "Peidio derbyn y dystysgrif a pheidio cysylltu â'r wefan"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FixedText.Text
+msgid  "No Text"
+msgstr "Dim Testun"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
+msgid  "Enter password to open file: \\n"
+msgstr "Rhowch gyfrinair i agor ffeil. \n"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
+msgid  "Enter password to modify file: \\n"
+msgstr "Rhowch gyfrinair i ewid ffeil. \n"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
+msgid  "Enter password: "
+msgstr "Rhoi cyfrinair: "
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.String.Text
+msgid  "Confirm password: "
+msgstr "Cadarnhau cyfrinair: "
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.String.Text
+msgid  "Set Password"
+msgstr "Gosod Cyfrinair"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.String.Text
+msgid  "Enter Password"
+msgstr "Rhoi Cyfrinair"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
+msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr "Nid yw'r cyfrinair cadarnhau yn cyd-fynd â'r cyfrinair. Gosodwch y cyfrinair eto drwy osod yr un cyfrinair yn y ddau flwch."
+
+#: source/trylater.src#STR_TRYLATER_TITLE.String.Text
+msgid  "Document in Use"
+msgstr "Dogfen ar waith"
+
+#: source/trylater.src#STR_TRYLATER_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
+msgstr "Mae ffeil dogfen '$(ARG1)' wedi ei chloi ar gyfer golygu gan:\n\n$(ARG2)\n\nCeisiwch eto i gadw'r ddogfen neu gadw copi o'r ddogfen.\nMae ffeil dogfen '$(ARG\n\n\n\nCeisiwch eto i gadw'r ddogfen neu gadw copi o'r ddogfen.\n\n"
+
+#: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
+msgid  "~Retry Saving"
+msgstr "~Ceisio Cadw Eto"
+
+#: source/trylater.src#STR_TRYLATER_SAVEAS_BTN.String.Text
+msgid  "~Save As..."
+msgstr "Cadw ~Fel..."
+
+#: source/ids.src#RID_KEEP_PASSWORD.String.Text
+msgid  "~Remember password until end of session"
+msgstr "~Cofio'r cyfrinair tan ddiwedd y sesiwn"
+
+#: source/ids.src#RID_SAVE_PASSWORD.String.Text
+msgid  "~Remember password"
+msgstr "~Cofio cyfrinair"
+
+#: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
+msgid  "Invalid Document Signature"
+msgstr "Llofnod Dogfen Annilys"
+
+#: source/ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.String.Text
+msgid  "Non-Encrypted Streams"
+msgstr "Llif Heb eu Hamgryptio"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
+msgid  "The operation executed on $(ARG1) was aborted."
+msgstr "Terfynodd y weithred wnaed yn $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
+msgid  "Access to $(ARG1) was denied."
+msgstr "Gwrthodwyd mynediad i $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) already exists."
+msgstr "Mae $(ARG1)yn bodoli eisoes"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "Target already exists."
+msgstr "Targed yn bodoli eisoes"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
+msgid  "You are about to save/export a password protected basic library containing module(s) \\n$(ARG1)\\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an incorrect checksum."
+msgstr "Mae gan ddata o $(ARG1) checksum anghywir"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
+msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "Methu creu $(ARG1) yng nghyfeiriadur $(ARG2)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
+msgid  "Data of $(ARG1) could not be read."
+msgstr "Methu darllen data $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
+msgid  "The seek operation on $(ARG1) could not be performed."
+msgstr "Methu cyflawni'r weithred o ymholi ar $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
+msgid  "The tell operation on $(ARG1) could not be performed."
+msgstr "Methu cyflawni'r weithred dweud ar $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "Data for $(ARG1) could not be written."
+msgstr "Methu ysgrifennu data $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) is the current directory."
+msgstr "Gweithred amhosibl: $(ARG1) yw'r cyfeiriadur presennol"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready."
+msgstr "Nid yw $(ARG1) yn barod"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "Gweithred amhosibl: Mae $(ARG1) a $(ARG2) yn nyfeisiau (disgiau) gwahanol"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
+msgid  "General input/output error while accessing $(ARG1)."
+msgstr "Gwall mewnbwn/allbwn cyffredinol wrth gael mynediad i $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
+msgid  "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "Gwnaed ymgais i gael mynediad at $(ARG1) mewn ffordd annilys"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains invalid characters."
+msgstr "Mae $(ARG1) yn cynnwys nodau annilys"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "The device (drive) $(ARG1) is invalid."
+msgstr "Mae'r ddyfais (disg) $(ARG1) yn annilys"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an invalid length."
+msgstr "Mae i ddata o $(ARG1) hyd annilys"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "Cychwynnwyd gweithred ar $(ARG1) gyda pharamedr annilys"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
+msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr "Nid oes modd cyflawni'r weithred am fod $(ARG1) yn cynnwys cardiau gwyllt"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
+msgid  "Error during shared access to $(ARG1)."
+msgstr "Gwall yn ystod mynediad rhanedig i $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains misplaced characters."
+msgstr "Mae $(ARG1) yn cynnwys nodau o'u lle"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
+msgid  "The name $(ARG1) contains too many characters."
+msgstr "Mae'r enw $(ARG1) yn cynnwys gormod o nodau"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) does not exist."
+msgstr "Nid yw $(ARG1) yn bodoli"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
+msgid  "The path $(ARG1) does not exist."
+msgstr "Nid yw llwybr $(ARG1) yn bodoli"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgstr "Nid yw'r weithred ar $(ARG1) yn cael ei gynnal gan y system weithredu"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a directory."
+msgstr "Nid yw $(ARG1) yn gyfeiriadur"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a file."
+msgstr "Nid yw $(ARG1) yn ffeil"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
+msgid  "There is no space left on device $(ARG1)."
+msgstr "Nid oes gofod ar ôl ar ddyfais $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr "Nid oes posibl cyflawni'r weithred ar $(ARG1) am fod gormod o ffeiliau ar agor eisoes"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgstr "Nid oes posibl cyflawni'r weithred ar $(ARG1) am nad oes rhagor o gof ar gael"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "Nid oes posibl cyflawni'r weithred ar $(ARG1) am fod rhagor o ddata ar ei ffordd"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) cannot be copied into itself."
+msgstr "Methu copïo $(ARG1) iddo'i hun"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
+msgid  "Unknown input/output error while accessing $(ARG1)."
+msgstr "Gwall mewnbwn/allbwn anhysbys wrth gael mynediad i $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is write protected."
+msgstr "$(ARG1) wedi ei ddiogelu rhag ysgrifennu"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not in the correct format."
+msgstr "Nid yw $(ARG1) yn y fformat cywir"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The version of $(ARG1) is not correct."
+msgstr "Nid yw'r fersiwn o $(ARG1) yn gywir"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Drive $(ARG1) does not exist."
+msgstr "Nid yw gyrrwr $(ARG1) yn bodoli"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
+msgid  "Folder $(ARG1) does not exist."
+msgstr "Nid yw'r ffolder $(ARG1) yn bodoli"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported."
+msgstr "Nid yw'r fersiwn gosodedig o Java'n cael ei gynnal"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported."
+msgstr "Nid yw'r fersiwn gosodedig o Java $(ARG1) yn cael ei gynnal"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr "Nid yw'r fersiwn gosodedig o Java yn cael ei gynnal, mae angen o leiaf fersiwn $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr "Nid yw'r fersiwn gosodedig o Java $(ARG1) yn cael ei gynnal, mae angen o leiaf fersiwn $(ARG2)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership is corrupted."
+msgstr "Mae'r data sy'n gysylltiedig â'r bartneriaeth yn llygredig."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "Mae'r data sy'n gysylltiedig â phartneriaeth $(ARG1) yn llygredig."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready."
+msgstr "Nid yw cyfrol $(ARG1) yn barod"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgstr "Nid yw $(ARG1) yn barod: rhowch gyfrwng cof i mewn"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "Nid yw cyfrol $(ARG1) yn barod: rhowch gyfrwng cof i mewn"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
+msgid  "Please insert disk $(ARG1)."
+msgstr "Rhowch ddisg $(ARG1) i mewn"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
+msgid  "The object cannot be created in directory $(ARG1)."
+msgstr "Methu creu'r gwrthrych yng nghyfeiriadur $(ARG1)"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr "Nid yw %PRODUCTNAME yn gallu atal ffeiliau rhag cael eu tros ysgrifennu pan fydd y protocol darlledu hwn yn cael ei ddefnyddio. Hoffech chi barhau beth bynnag?"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\\n\\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the repaired document.\\nExecution of macros is disabled for this document.\\n\\nShould %PRODUCTNAME repair the file?\\n"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr "Methu trwsio ffeil '$(ARG1) ac felly methu ei hagor.."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr "Nid yw'r ffynhonnell data ffurfweddu '$(ARG1)' ar gael. Heb y data yma efallai na fydd rhai swyddogaethau'n gweithio'n iawn."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
+msgid  "The form contains invalid data. Do you still want to continue?"
+msgstr "Mae'r ffurflen yn cynnwys data annilys. Ydych chi am barhau?"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr "Mae'r ffeil $(ARG1) wedi ei chloi gan ddefnyddiwr arall. Ar hyn o bryd nid oes modd darparu mynediad ysgrifennu i'r ffeil."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr "Mae'r ffeil $(ARG1) wedi ei chloi gennych chi. Ar hyn o bryd nid oes modd darparu mynediad ysgrifennu i'r ffeil."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is currently not locked by yourself."
+msgstr "Nid yw'r ffeil $(ARG1) wedi ei chloi gennych chi."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
+msgid  "The previously obtained lock for file $(ARG1) has expired.\\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
+msgid  "Unable to verify the identity of $(ARG1) site.\\n\\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\\n\\nYou should check to make sure that your computer's time is correct."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\\n\\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\\n\\nWould you like to continue anyway?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\\n\\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
+msgid  "Security Warning: Domain Name Mismatch"
+msgstr "Rhybudd Diogelwch: Anghydweddiad Enw Parth"
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
+msgid  "Security Warning: Server Certificate Expired"
+msgstr "Rhybudd Diogelwch: Tystysgrif Gweinydd wedi dod i Ben"
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
+msgid  "Security Warning: Server Certificate Invalid"
+msgstr "Rhybudd Diogelwch: Tystysgrif Gweinydd Annilys"
+
+#: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
+msgid  "Filter Selection"
+msgstr "Dewis Ffeiliau"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.ModalDialog.Text
+msgid  "Authentication Required"
+msgstr "Angen Dilysiad"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
+msgid  "Message from server:"
+msgstr "Neges gan y gweinydd:"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
+msgid  "Enter user name and password for: \\n%1"
+msgstr "Rhowch enw defnyddiwr a chyfrinair ar gyfer : \n%1"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
+msgid  "Enter user name and password for: \\n\"%2\" on %1"
+msgstr "Rhowch enw defnyddiwr a chyfrinair ar gyfer : \n\"%2\" ar %1"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
+msgid  "~Path"
+msgstr "~Llwybr"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "~Enw defnyddiwr"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
+msgid  "Pass~word"
+msgstr "~Cyfrinair"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
+msgid  "A~ccount"
+msgstr "~Cyfrif"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
+msgid  "~Remember password"
+msgstr "~Cofio cyfrinair"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CheckBox.Text
+msgid  "~Use system credentials"
+msgstr "~Defnyddio cyflwyniadau'r system"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
+msgid  "~Send"
+msgstr "~Anfon"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
+msgid  "I~gnore"
+msgstr "A~nwybyddu"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
+msgid  "I~nteractive"
+msgstr "~Rhyngweithiol"
+
+#: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
+msgid  "Future Cookie Handling"
+msgstr "Trin Cookies yn y Dyfodol"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
+msgid  "~Ignore"
+msgstr "A~nwybyddu"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
+msgid  "~Send"
+msgstr "~Anfon"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
+msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr "Mae'r gweinydd '${HOST}' eisiau gosod un neu fwy o cookies.\nMae cookies yn cynnwys gwybodaeth sy'n cyfeirio at ddosbarthiadau URL penodol. Os fydd %PRODUCTNAME yn gofyn am ddogfen gydag URL sy'n cyfateb i ddosbarth cookie osodwyd ynghynt, bydd %PRODUCTNAME yn anfon gwybodaeth i'r gweinydd. Mae hyn yn caniatáu i'r gweinydd adnabod statws rhaglen Gwe Fyd Eang, ee wrth siopa ar-lein.\n\nDylid gosod y Cookies canlynol:\n\n"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr "Parth: ${DOMAIN}, Llwybr: ${PATH}, Cookie: ${COOKIE}.\n"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
+msgid  "Cookie Reception"
+msgstr "Derbyn Cookies"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr "Mae %PRODUCTNAME wedi cadw cookies ar gyfer y gweinydd '${HOST}' fydd yn cael ei anfon wrth ofyn am ddogfennau ${PATH}.\nMae cookies yn cynnwys gwybodaeth sy'n cyfeirio at ddosbarthiadau URL penodol. Maent yn cael eu hanfon gan rhai gweinyddion at %PRODUCTNAME lle cant eu cadw pan fydd rhai dogfennau penodol yn cael eu darllen. Os fydd %PRODUCTNAME yn gofyn am ddogfen gydag URL sy'n cyfateb i ddosbarth cookie osodwyd ynghynt, bydd %PRODUCTNAME yn anfon gwybodaeth i'r gweinydd. Mae hyn yn caniatáu i'r gweinydd adnabod statws rhaglen Gwe Fyd Eang, ee wrth siopa ar-lein.\n\nDylid gosod y Cookies canlynol:\n\n"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr "Parth: ${DOMAIN}, Llwybr: ${PATH}, Cookie: ${COOKIE}.\n"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
+msgid  "Send Cookies"
+msgstr "Anfon Cookies"
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.String.Text
+msgid  "The password is incorrect. The file cannot be opened."
+msgstr "Mae'r cyfrinair yn anghywir. Nid oes modd agor y ffeil."
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.String.Text
+msgid  "The password is incorrect. The file cannot be modified."
+msgstr "Mae'r cyfrinair yn anghywir. Nid oes modd newid y ffeil."
+
+#: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+msgid  "The master password is incorrect."
+msgstr "Mae'r prif gyfrinair yn anghywir."
+
+#: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+msgid  "The password is incorrect."
+msgstr "Mae'r cyfrinair yn anghywir."
+
+#: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+msgid  "The password confirmation does not match."
+msgstr "Nid oedd y cadarnhad cyfrinair yn cydweddu."
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.ModalDialog.Text
+msgid  "File Exists"
+msgstr "Mae'r Ffeil yn Bodoli"
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PushButton.Text
+msgid  "Replace"
+msgstr "Amnewid"
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PushButton.Text
+msgid  "Rename"
+msgstr "Ail-enwi"
+
+#: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
+msgid  "Document in Use"
+msgstr "Cronfeydd Data ar waith"
+
+#: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
+msgstr "Mae ffeil dogfen '$(ARG1)' wedi ei chloi ar gyfer golygu gan:\n\n$(ARG2)\n\nAgorwch y ddogfen fel darllen yn unig neu agor copi o'r ddogfen i'w golygu.\n\n"
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "Agor ~Dogfen darllen yn unig!"
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
+msgid  "Open ~Copy"
+msgstr "Agor ~Copi"
+
+#: source/openlocked.src#STR_UNKNOWNUSER.String.Text
+msgid  "Unknown User"
+msgstr "Defnyddiwr Anhysbys"
+
+#: source/filechanged.src#STR_FILECHANGED_TITLE.String.Text
+msgid  "Document Has Been Changed by Others"
+msgstr "Dogfen wedi ei Newid gan Eraill"
+
+#: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
+msgstr "Mae'r ffeil wedi newid ers iddi gael ei hagor ar gyfer ei golygu gan %PRODUCTNAME. Bydd cadw eich fersiwn yn ysgrifennu dros newidiadau wnaed gan eraill."
+
+#: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
+msgid  "~Save Anyway"
+msgstr "~Cadw Beth Bynnag"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
+msgid  "%PRODUCTNAME Update Available"
+msgstr "Mae Diweddariad o %PRODUCTNAME ar Gael"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr "Cafodd y ddogfen hon ei chreu gan fersiwn mwy diweddar o %PRODUCTNAME. Gall fod yn cynnal nodweddion nad ydynt ar gael yn eich fersiwn cyfredol.\n\nCliciwch 'Diweddaru Nawr...' i redeg y diweddaru ar-lein a derbyn y fersiwn diweddaraf o %PRODUCTNAME."
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
+msgid  "~Update Now..."
+msgstr "~Diweddaru Nawr..."
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
+msgid  "~Later"
+msgstr "~Hwyrach"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.ModalDialog.Text
+msgid  "Security Warning: "
+msgstr "Rhybudd Diogelwch:"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FixedText.Text
+msgid  "No Text"
+msgstr "Dim Testun"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PushButton.Text
+msgid  "View Certificate"
+msgstr "Darllen Tystysgrif"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CancelButton.Text
+msgid  "Cancel Connection"
+msgstr "Diddymu Cysylltiad"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PushButton.Text
+msgid  "Continue"
+msgstr "Parhau"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.ModalDialog.Text
+msgid  "%PRODUCTNAME - Security Warning"
+msgstr "%PRODUCTNAME -  Rhybudd Diogelwch"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FixedText.Text
+msgid  "The document contains document macros signed by:"
+msgstr "Mae'r ddogfen yn cynnwys macros dogfennau llofnodwyd gan:"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FixedText.Text
+msgid  "The document contains document macros."
+msgstr "Mae'r ddogfen yn cynnwys macros dogfen."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PushButton.Text
+msgid  "View Signatures..."
+msgstr "Edrych ar Lofnodau..."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr "Gall facros gynwys firwsau. Mae diffodd macros ar gyfer dogfen yn beth ddiogel. Os fyddwch yn diffodd macro gallwch golli swyddogaethau sy'n cael eu darparu ganddynt."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
+msgid  "Always trust macros from this source"
+msgstr "Gallu ymddiried mewn macro o fan hyn"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKButton.Text
+msgid  "~Enable Macros"
+msgstr "~Galluogi Macros"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CancelButton.Text
+msgid  "~Disable Macros"
+msgstr "~Analluogi Macros"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
+msgid  "Enter password"
+msgstr "Rhoi cyfrinair"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
+msgid  "Enter Master Password"
+msgstr "Rhoi'r Prif Gyfrinair"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
+msgid  "Set Master Password"
+msgstr "Rhoi'r Prif Gyfrinair"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
+msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr "Mae cyfrineiriau ar gyfer cysylltiadau gwe wedi eu diogelu gan brif gyfrinair. Bydd gofyn i chi ei roi unwaith y sesiwn, os bydd %PRODUCTNAME yn adfer cyfrinair o'r rhestr cyfrineiriau diogelwyd."
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
+msgid  "~Enter password"
+msgstr "~Rhoi cyfrinair"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
+msgid  "~Reenter password"
+msgstr "~Ail osod cyfrinair"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
+msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr "Rhybudd: Os fyddwch yn anghofio'r Prif Gyfrinair, ni fydd modd i chi gael mynediad ar wybodaeth mae'n ei ddiogelu. Mae cyfrineiriau yn ddibynnol ar lythrennau bach neu fawr."
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
+msgstr "Mae ffeil dogfen '$(ARG1)' wedi ei chloi ar gyfer golygu gennych chi ar system wahanol ers $(ARG2)\n\nAgorwch y ddogfen ym modd darllen yn unig neu anwybyddu'r clo ffeil ac agor copi o'r ddogfen ar gyfer ei golygu."
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "Agor ~Darllen yn Unig"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
+msgid  "~Open"
+msgstr "~Agor"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
+msgstr "Mae ffeil dogfen '$(ARG1)' wedi ei chloi gennych ar system wanhaol ers $(ARG2)\\n\n\\n\nAgorwch y ddogfen yn darllen a cheisiwch ei ail chadw neu anwybyddu cloi'r ffeil a chadw'r ffeil bresennol.Mae ffeil dogfen '$(ARG\n\\n\nAgorwch y ddogfen yn darllen a cheisiwch ei ail chadw neu anwybyddu cloi'r ffeil a chadw'r ffeil bresennol."
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
+msgid  "~Retry Saving"
+msgstr "~Ceisio Cadw Eto"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
+msgid  "~Save"
+msgstr "~Cadw"
+
+#: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
+msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr "Nid oedd modd cloi'r ffeil ar gyfer mynediad anghynhwysol gan %PRODUCTNAME, oherwydd caniatâd coll i greu'r ffeil cloi yn lleoliad y ffeil."

@@ -1,0 +1,604 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+msgid  "Syntax error."
+msgstr "Syntaxfel."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+msgid  "Return without Gosub."
+msgstr "Gå tillbaka utan Gosub."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect entry; please retry."
+msgstr "Fel post, försök igen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid procedure call."
+msgstr "Ogiltigt proceduranrop."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Overflow."
+msgstr "Spill."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough memory."
+msgstr "Otillräckligt minne."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+msgid  "Array already dimensioned."
+msgstr "Matrisen är redan dimensionerad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+msgid  "Index out of defined range."
+msgstr "Indexet ligger utanför definierat intervall."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+msgid  "Duplicate definition."
+msgstr "Dubblettdefinition."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+msgid  "Division by zero."
+msgstr "Division med noll."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable not defined."
+msgstr "Variabeln är inte definierad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+msgid  "Data type mismatch."
+msgstr "Fel datatyp."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid parameter."
+msgstr "Ogiltig parameter."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+msgid  "Process interrupted by user."
+msgstr "Processen avbröts av användaren."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+msgid  "Resume without error."
+msgstr "Fortsätt utan fel."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough stack memory."
+msgstr "Otillräckligt med stackminne."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub-procedure or function procedure not defined."
+msgstr "Underproceduren eller funktionsproceduren är inte definierad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading DLL file."
+msgstr "Ett fel uppstod när en DLL-fil laddades."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+msgid  "Wrong DLL call convention."
+msgstr "Fel konvention för DLL-anrop."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Internal error $(ARG1)."
+msgstr "Internt fel $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid file name or file number."
+msgstr "Ogiltigt filnamn eller filnummer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "File not found."
+msgstr "Det går inte att hitta filen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect file mode."
+msgstr "Fel filläge."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+msgid  "File already open."
+msgstr "Filen är redan öppen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Device I/O error."
+msgstr "Enhets-I/O-fel."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+msgid  "File already exists."
+msgstr "Filen finns redan."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record length."
+msgstr "Fel postlängd."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+msgid  "Disk or hard drive full."
+msgstr "Disken eller hårddisken är full."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+msgid  "Reading exceeds EOF."
+msgstr "Läsningen fortsätter efter filslutet."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record number."
+msgstr "Fel postnummer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many files."
+msgstr "För många filer."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+msgid  "Device not available."
+msgstr "Enheten är inte tillgänglig."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+msgid  "Access denied."
+msgstr "Åtkomst nekad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+msgid  "Disk not ready."
+msgstr "Disken är inte klar."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+msgid  "Not implemented."
+msgstr "Inte implementerad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+msgid  "Renaming on different drives impossible."
+msgstr "Det går inte att ändra namn på olika enheter."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Path/File access error."
+msgstr "Åtkomstfel till sökväg/fil."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Path not found."
+msgstr "Det går inte att hitta sökvägen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object variable not set."
+msgstr "Objektvariabeln är inte angiven."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid string pattern."
+msgstr "Ogiltigt strängmönster."
+
+#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+msgid  "Use of zero not permitted."
+msgstr "Det är inte tillåtet att använda noll."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "DDE Error."
+msgstr "DDE-fel."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+msgid  "Awaiting response to DDE connection."
+msgstr "Avvaktar svar i DDE-anslutning."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+msgid  "No DDE channels available."
+msgstr "Inga DDE-kanaler är tillgängliga."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+msgid  "No application responded to DDE connect initiation."
+msgstr "Inget program svarade på initieringen av DDE-anslutningen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many applications responded to DDE connect initiation."
+msgstr "För många program svarade på initieringen av DDE-anslutningen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE channel locked."
+msgstr "DDE-kanalen är låst."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+msgid  "External application cannot execute DDE operation."
+msgstr "Ett externt program kan inte köra en DDE-åtgärd."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+msgid  "Timeout while waiting for DDE response."
+msgstr "Timeout vid väntan på DDE-svar."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr "Användaren tryckte på ESCAPE under DDE-operationen"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+msgid  "External application busy."
+msgstr "Det externa programmet är upptaget."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+msgid  "DDE operation without data."
+msgstr "DDE-åtgärd utan data."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Data are in wrong format."
+msgstr "Data är i fel format."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+msgid  "External application has been terminated."
+msgstr "Det externa programmet har avbrutits."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE connection interrupted or modified."
+msgstr "DDE-anslutningen har avbrutits eller ändrats."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "DDE method invoked with no channel open."
+msgstr "DDE-metoden anropades utan öppen kanal."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid DDE link format."
+msgstr "Ogiltigt DDE-länkformat."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "DDE message has been lost."
+msgstr "DDE-meddelandet har försvunnit."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+msgid  "Paste link already performed."
+msgstr "Länken har redan klistrats in."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+msgid  "Link mode cannot be set due to invalid link topic."
+msgstr "Länkläget kan inte anges eftersom länkavsnittet är ogiltigt."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "DDE requires the DDEML.DLL file."
+msgstr "Filen DDEML.DLL måste användas för DDE."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Module cannot be loaded; invalid format."
+msgstr "Det går inte att ladda modulen på grund av ogiltigt format."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object index."
+msgstr "Ogiltigt objektindex."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not available."
+msgstr "Objektet är inte tillgängligt."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect property value."
+msgstr "Fel egenskapsvärde."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is read-only."
+msgstr "Den här egenskapen är skrivskyddad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is write only."
+msgstr "Den här egenskapen kan bara sparas."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object reference."
+msgstr "Ogiltig objektreferens."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "Property or method not found: $(ARG1)."
+msgstr "Det går inte att hitta egenskapen eller metoden: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object required."
+msgstr "Objekt krävs."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid use of an object."
+msgstr "Objektet används på ett ogiltigt sätt."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation is not supported by this object."
+msgstr "Det här objektet har inte stöd för OLE Automation."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "This property or method is not supported by the object."
+msgstr "Det här objektet har inte stöd för denna egenskap eller metod."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation Error."
+msgstr "OLE Automation-fel."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+msgid  "This action is not supported by given object."
+msgstr "Angivet objekt har inte stöd för den här åtgärden."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Named arguments are not supported by given object."
+msgstr "Angivet objekt har inte stöd för namngivna argument."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+msgid  "The current locale setting is not supported by the given object."
+msgstr "Angivet objekt har inte stöd för den aktuella språkinställningen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Named argument not found."
+msgstr "Det går inte att hitta namngivet argument."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+msgid  "Argument is not optional."
+msgstr "Argumentet är inte valfritt."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "Ogiltigt antal argument."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not a list."
+msgstr "Objektet är inte en lista."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid ordinal number."
+msgstr "Ogiltigt ordningstal."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Specified DLL function not found."
+msgstr "Det går inte att hitta angiven DLL-funktion."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid clipboard format."
+msgstr "Ogiltigt Urklipp-format."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this property."
+msgstr "Objektet har inte den här egenskapen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this method."
+msgstr "Objektet har inte den här metoden."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+msgid  "Required argument lacking."
+msgstr "Det saknas obligatoriska argument."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "Ogiltigt antal argument."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Error executing a method."
+msgstr "Ett fel uppstod när en metod kördes."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to set property."
+msgstr "Det går inte att ange en egenskap."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to determine property."
+msgstr "Det går inte att fastställa en egenskap."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr "Oväntad symbol: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Expected: $(ARG1)."
+msgstr "Förväntad: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol expected."
+msgstr "En symbol förväntas."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable expected."
+msgstr "En variabel förväntas."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Label expected."
+msgstr "En etikett förväntas."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Value cannot be applied."
+msgstr "Värdet kan inte användas."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) already defined."
+msgstr "Variabeln $(ARG1) är redan definierad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "Underproceduren eller funktionsproceduren $(ARG1) är redan definierad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) already defined."
+msgstr "Etiketten $(ARG1) är redan definierad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) not found."
+msgstr "Det går inte att hitta variabeln $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+msgid  "Array or procedure $(ARG1) not found."
+msgstr "Det går inte att hitta matrisen eller proceduren $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+msgid  "Procedure $(ARG1) not found."
+msgstr "Det går inte att hitta proceduren $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) undefined."
+msgstr "Etiketten $(ARG1) är inte definierad."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown data type $(ARG1)."
+msgstr "Datatypen $(ARG1) är okänd."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+msgid  "Exit $(ARG1) expected."
+msgstr "Det förväntas att $(ARG1) avslutas."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr "Satsblocket är fortfarande öppet: $(ARG1) saknas."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+msgid  "Parentheses do not match."
+msgstr "Parenteserna matchar inte."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr "Symbolen $(ARG1) är redan definierad på ett annat sätt."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+msgid  "Parameters do not correspond to procedure."
+msgstr "Parametrarna passar inte för proceduren."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid character in number."
+msgstr "Ogiltigt tecken i ett tal."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Array must be dimensioned."
+msgstr "Matrisen måste dimensioneras."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+msgid  "Else/Endif without If."
+msgstr "Else/Endif utan If."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) tillåts inte i en procedur."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) tillåts inte utanför en procedur."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Dimension specifications do not match."
+msgstr "Dimensionens specifikationer matchar inte."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown option: $(ARG1)."
+msgstr "Okänt alternativ: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+msgid  "Constant $(ARG1) redefined."
+msgstr "Konstanten $(ARG1) har definierats om."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+msgid  "Program too large."
+msgstr "Programmet är för stort."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+msgid  "Strings or arrays not permitted."
+msgstr "Strängarna eller matriserna tillåts inte."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+msgid  "An exception occurred $(ARG1)."
+msgstr "Ett undantag till $(ARG1) inträffade."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+msgid  "This array is fixed or temporarily locked."
+msgstr "Denna matris är fixerad eller temporärt låst."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Out of string space."
+msgstr "Det finns inget strängutrymme."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+msgid  "Expression Too Complex."
+msgstr "Uttrycket är alltför komplext."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+msgid  "Can't perform requested operation."
+msgstr "Det går inte att utföra begärd åtgärd."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+msgid  "Too many DLL application clients."
+msgstr "För många DLL-applikationsklienter."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+msgid  "For loop not initialized."
+msgstr "Inte initierad för loop."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1)"
+msgstr "$(ARG1)"
+
+#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+msgid  "The macro running has been interrupted"
+msgstr "Det aktuella makrot avbröts"
+
+#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+msgid  "Reference will not be saved: "
+msgstr "Referens sparas inte:  "
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading library '$(ARG1)'."
+msgstr "Ett fel uppstod när biblioteket \"$(ARG1)\" laddades."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving library: '$(ARG1)'."
+msgstr "Ett fel uppstod när följande bibliotek sparades: \"$(ARG1)\"."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "Det gick inte att initiera BASIC från filen \"$(ARG1)\"."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr "Ett fel uppstod när BASIC sparades: \"$(ARG1)\"."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+msgid  "Error removing library."
+msgstr "Ett fel uppstod när biblioteket togs bort."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+msgid  "The library could not be removed from memory."
+msgstr "Det gick inte att ta bort biblioteket från minnet."
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+msgid  "On"
+msgstr "På"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+msgid  "Off"
+msgstr "Av"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+msgid  "True"
+msgstr "Sann"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+msgid  "False"
+msgstr "Falsk"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+msgid  "Yes"
+msgstr "Ja"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+msgid  "No"
+msgstr "Nej"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+msgid  "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $;@(0.00 $)"

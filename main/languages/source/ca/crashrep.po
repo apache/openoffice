@@ -1,0 +1,208 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/all/crashrep.ulf#%WELCOME_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Eina d'informe d'errors de l'%PRODUCTNAME% %PRODUCTVERSION%"
+
+#: source/all/crashrep.ulf#%WELCOME_HEADER%
+msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Us donem la benvinguda a l'informe d'errors de l'%PRODUCTNAME% %PRODUCTVERSION%"
+
+#: source/all/crashrep.ulf#%WELCOME_BODY1%
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\\n\\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%WELCOME_BODY2%
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%WELCOME_BODY3%
+msgid  "Customer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%PRIVACY_URL%
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr ""
+
+#: source/all/crashrep.ulf#%NEXT_BUTTON%
+msgid  "~Next >>"
+msgstr "Següe~nt >>"
+
+#: source/all/crashrep.ulf#%CANCEL_BUTTON%
+msgid  "Cancel"
+msgstr "Cancel·la"
+
+#: source/all/crashrep.ulf#%OK_BUTTON%
+msgid  "OK"
+msgstr "D'acord"
+
+#: source/all/crashrep.ulf#%REPORT_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Eina d'informe d'errors de l'%PRODUCTNAME% %PRODUCTVERSION%"
+
+#: source/all/crashrep.ulf#%REPORT_HEADER%
+msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "S'ha produït un error mentre s'executava l'%PRODUCTNAME% %PRODUCTVERSION%"
+
+#: source/all/crashrep.ulf#%REPORT_BODY%
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%ENTER_TITLE%
+msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr "Quin tipus de document (p. ex. presentació) estàveu utilitzant quan s'ha produït l'error?"
+
+#: source/all/crashrep.ulf#%ALLOW_CONTACT%
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
+
+#: source/all/crashrep.ulf#%ENTER_EMAIL%
+msgid  "Please enter your e-mail address."
+msgstr "Introduïu la vostra adreça electrònica."
+
+#: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
+msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "~Com estàveu utilitzant l'%PRODUCTNAME% quan s'ha produït l'error?"
+
+#: source/all/crashrep.ulf#%BACK_BUTTON%
+msgid  " << ~Back"
+msgstr " << ~Enrere"
+
+#: source/all/crashrep.ulf#%SEND_BUTTON%
+msgid  "S~end"
+msgstr "En~via"
+
+#: source/all/crashrep.ulf#%DONOT_SEND_BUTTON%
+msgid  "Do ~Not Send"
+msgstr "~No enviïs"
+
+#: source/all/crashrep.ulf#%SHOW_REPORT_BUTTON%
+msgid  "Show ~Report..."
+msgstr "Most~ra l'informe..."
+
+#: source/all/crashrep.ulf#%SAVE_REPORT_BUTTON%
+msgid  "~Save Report..."
+msgstr "De~sa l'informe..."
+
+#: source/all/crashrep.ulf#%SAVE_REPORT_TITLE%
+msgid  "Save Report to"
+msgstr "Desa l'informe a"
+
+#: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\\n Please use a MAPI-compatible e-mail program."
+msgstr ""
+
+#: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
+msgid  "The error report could not be temporarily saved and could therefore not be sent."
+msgstr "L'informe d'errors no s'ha pogut desar temporalment i, per tant, no s'ha pogut enviar."
+
+#: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
+msgid  "The error report could not be sent because 'sendmail' could not be started.\\nPlease check the 'sendmail' settings."
+msgstr ""
+
+#: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
+msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr "L'informe d'errors no s'ha pogut enviar. Comproveu la configuració del servidor intermediari a \"Opcions\", dins l'eina d'informe d'errors."
+
+#: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
+msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr "L'informe d'errors no s'ha enviat perquè no hi ha connexió a Internet. Comproveu la vostra configuració d'Internet."
+
+#: source/all/crashrep.ulf#%OPTIONS_BUTTON%
+msgid  "~Options..."
+msgstr "~Opcions..."
+
+#: source/all/crashrep.ulf#%OPTIONS_TITLE%
+msgid  "Options"
+msgstr "Opcions"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_HEADER%
+msgid  "Proxy settings"
+msgstr "Configuració del servidor intermediari"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_SYSTEM%
+msgid  "Use ~system settings"
+msgstr "Utilitza els paràmetres del ~sistema"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DIRECT%
+msgid  "Use ~direct connection to the Internet"
+msgstr "Utilitza una connexió ~directa a Internet"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_MANUAL%
+msgid  "Use ~manual settings"
+msgstr "Utilitza els paràmetres ~manuals"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_ADDRESS%
+msgid  "HT~TP Proxy"
+msgstr "Servidor intermediari HT~TP"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_PORT%
+msgid  "~Port"
+msgstr "~Port"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\\n\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\n\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
+msgid  "Sending Error Report"
+msgstr "S'està enviant l'informe d'errors"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS%
+msgid  "Status: Sending error report"
+msgstr "Estat: S'està enviant l'informe d'errors"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS_FINISHED%
+msgid  "Status: The error report has been sent successfully."
+msgstr "Estat: L'informe d'errors s'ha enviat amb èxit."
+
+#: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\\nPlease enter your e-mail address."
+msgstr ""
+
+#: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
+msgid  "Usage:"
+msgstr "Ús:"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID%
+msgid  "-p <process ID>"
+msgstr "-p <ID del procés>"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
+msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "Assigna l'ID del procés (PID) de l'%PRODUCTNAME% a l'eina d'informe d'errors"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
+msgid  "Shows this help text.\\nDetailed information can be found in the Setup Guide."
+msgstr ""

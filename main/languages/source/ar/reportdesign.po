@@ -1,0 +1,1344 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
+msgstr "التفاصيل"
+
+#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
+msgstr "ترويسة الصفحة"
+
+#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
+msgstr "تذييل الصفحة"
+
+#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
+msgid  "Group Header"
+msgstr "رأس المجموعة"
+
+#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
+msgid  "Group Footer"
+msgstr "تذييل المجموعة"
+
+#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
+msgstr "ترويسة التقرير"
+
+#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
+msgstr "تذييل التقرير"
+
+#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
+msgid  "The name '#1' already exists and can not be asssigned again."
+msgstr "الاسم '#1' موجود بالفعل ولا يمكن تعيينه مرة أخرى."
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgstr "لقد حاولت تعيين وسيطة غير مسموح بها. الرجاء إلقاء نظرة على '#1' لمعرفة الوسائط الصالحة."
+
+#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
+msgid  "The element is invalid."
+msgstr "العنصر غير صالح."
+
+#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
+msgid  "Label field"
+msgstr "حقل تسمية"
+
+#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
+msgid  "Formatted field"
+msgstr "حقل منسق"
+
+#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
+msgid  "Image control"
+msgstr "التحكم بالصورة"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "التقرير"
+
+#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
+msgid  "Shape"
+msgstr "شكل"
+
+#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
+msgid  "Fixed line"
+msgstr "سطر ثابت"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+#, fuzzy
+msgid  "Sorting and Grouping"
+msgstr "فرز وتجميع"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "Groups"
+msgstr "المجموعات"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+#, fuzzy
+msgid  "Group actions"
+msgstr "إجراءات المجموعة"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Move up"
+msgstr "نقل لأعلى"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Move down"
+msgstr "نقل لأسفل"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "ح~ذف"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
+#, fuzzy
+msgid  "Properties"
+msgstr "خصائص"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+#, fuzzy
+msgid  "Sorting"
+msgstr "فرز"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+#, fuzzy
+msgid  "Ascending"
+msgstr "تصاعدي"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+#, fuzzy
+msgid  "Descending"
+msgstr "تنازلي"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Group Header"
+msgstr "رأس المجموعة"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "حاضر"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
+msgid  "Not present"
+msgstr "غير حاضر"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+#, fuzzy
+msgid  "Group Footer"
+msgstr "تذييل المجموعة"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "حاضر"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Not present"
+msgstr "غير حاضر"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+#, fuzzy
+msgid  "Group On"
+msgstr "تجميع في"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+#, fuzzy
+msgid  "Each Value"
+msgstr "كل قيمة"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+#, fuzzy
+msgid  "Group Interval"
+msgstr "فاصل المجموعة"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+#, fuzzy
+msgid  "Keep Together"
+msgstr "البقاء معًا"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+#, fuzzy
+msgid  "No"
+msgstr "لا"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+#, fuzzy
+msgid  "Whole Group"
+msgstr "كل المجموعة"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+#, fuzzy
+msgid  "With First Detail"
+msgstr "مع التفاصيل اﻷولى"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Help"
+msgstr "تعليمات"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+#, fuzzy
+msgid  "Field/Expression"
+msgstr "حقل/تعبير"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+#, fuzzy
+msgid  "Sort Order"
+msgstr "ترتيب الفرز"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+#, fuzzy
+msgid  "Prefix Characters"
+msgstr "حروف البادئة"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+#, fuzzy
+msgid  "Year"
+msgstr "السنة"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+#, fuzzy
+msgid  "Quarter"
+msgstr "ربع السنة"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+#, fuzzy
+msgid  "Month"
+msgstr "الشهر"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+#, fuzzy
+msgid  "Week"
+msgstr "الأسبوع"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+#, fuzzy
+msgid  "Day"
+msgstr "اليوم"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+#, fuzzy
+msgid  "Hour"
+msgstr "الساعة"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+#, fuzzy
+msgid  "Minute"
+msgstr "الدقيقة"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+#, fuzzy
+msgid  "Interval"
+msgstr "الفاصل الزمني"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+#, fuzzy
+msgid  "Select a field or type an expression to sort or group on."
+msgstr "حدد حقلاً، أو اكتب تعبيرًا للفرز أو التجميع وفقًا له"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+#, fuzzy
+msgid  "Display a header for this group?"
+msgstr "هل تريد عرض رأس لهذه المجموعة؟"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+#, fuzzy
+msgid  "Display a footer for this group?"
+msgstr "هل تريد عرض تذييل لهذه المجموعة؟"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+#, fuzzy
+msgid  "Select the value or range of values that starts a new group."
+msgstr "حدد قيمة أو نطاق قيم لتبدأ مجموعة جديدة."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+#, fuzzy
+msgid  "Interval or number of characters to group on."
+msgstr "الفاصل الزمني أو عدد الحروف التي سيتم تجميع الحروف وفقًا لها."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+#, fuzzy
+msgid  "Keep group together on one page?"
+msgstr "بقاء المجموعات معًا في صفحة واحدة؟"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+#, fuzzy
+msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgstr "حدد ترتيب فرز تصاعديًا أو تنازليًا. التصاعدي يعني من الألف إلى الياء أو من 0 إلى 9."
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+#, fuzzy
+msgid  "Page Numbers"
+msgstr "أرقام الصفحات"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "Format"
+msgstr "التنسيق"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+#, fuzzy
+msgid  "Page N"
+msgstr "الصفحة N"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+#, fuzzy
+msgid  "Page N of M"
+msgstr "الصفحة N من M"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+#, fuzzy
+msgid  "Position"
+msgstr "الموضع"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+#, fuzzy
+msgid  "Top of Page (Header)"
+msgstr "أعلى الصفحة (الرأس)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+#, fuzzy
+msgid  "Bottom of Page (Footer)"
+msgstr "أسفل الصفحة (التذييل)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+#, fuzzy
+msgid  "General"
+msgstr "عام"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+#, fuzzy
+msgid  "Alignment:"
+msgstr "المحاذاة:"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Left"
+msgstr "يسار"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr "وسط"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Right"
+msgstr "يمين"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+#, fuzzy
+msgid  "Show Number on First Page"
+msgstr "إظهار الرقم في الصفحة اﻷولى"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "~تعليمات"
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+#, fuzzy
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"الصفحة \" & #PAGENUMBER#"
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+#, fuzzy
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" من \" & #PAGECOUNT#"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+msgid  "Page Setup"
+msgstr "إعداد الصفحة"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+msgid  "Page"
+msgstr "الصفحة"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+msgid  "Background"
+msgstr "الخلفية"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+msgid  "Return"
+msgstr "عودة"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+msgid  "Page"
+msgstr "الصفحة"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+msgid  "Background"
+msgstr "الخلفية"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+msgid  "Section Setup"
+msgstr "إعداد القسم"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+msgid  "Return"
+msgstr "عودة"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+msgid  "Background"
+msgstr "الخلفية"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+msgid  "Character Settings"
+msgstr "إعدادات الحروف"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+msgid  "Font"
+msgstr "الخط"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "تأثيرات الخطوط"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+msgid  "Position"
+msgstr "الموضع"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+msgid  "Asian Layout"
+msgstr "تخطيط أسيوي"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+msgid  "Background"
+msgstr "الخلفية"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+msgid  "Alignment"
+msgstr "محاذاة"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+msgid  "Return"
+msgstr "رجوع"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+msgid  "Character"
+msgstr "الحرف"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+#, fuzzy
+msgid  "Line"
+msgstr "السطر"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+#, fuzzy
+msgid  "Line"
+msgstr "الخط"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+#, fuzzy
+msgid  "Line Styles"
+msgstr "أنماط الخطوط"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+#, fuzzy
+msgid  "Arrow Styles"
+msgstr "أنماط الأسهم"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "رجوع"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+#, fuzzy
+msgid  "Line"
+msgstr "السطر"
+
+#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+#, fuzzy
+msgid  "Report navigator"
+msgstr "مستكشف التقرير"
+
+#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+#, fuzzy
+msgid  "Functions"
+msgstr "الدوال"
+
+#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+#, fuzzy
+msgid  "Groups"
+msgstr "المجموعات"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+#, fuzzy
+msgid  "Sorting and Grouping..."
+msgstr "فرز وتجميع..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+#, fuzzy
+msgid  "Page Header/Footer..."
+msgstr "رأس/تذييل الصفحة..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+#, fuzzy
+msgid  "Report Header/Footer..."
+msgstr "رأس/تذييل التقرير..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+#, fuzzy
+msgid  "New Function"
+msgstr "دالة جديدة"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "خصائص..."
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "قيمة الحقل هي"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Expression Is"
+msgstr "التعبير هو "
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+msgid  "between"
+msgstr "بين"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+msgid  "not between"
+msgstr "ليس بين"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+msgid  "equal to"
+msgstr "يساوي"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+msgid  "not equal to"
+msgstr "لا يساوي"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+msgid  "greater than"
+msgstr "أكبر من"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+msgid  "less than"
+msgstr "أصغر من"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+msgid  "greater than or equal to"
+msgstr "أكبر من أو يساوي"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+msgid  "less than or equal to"
+msgstr "أصغر من أو يساوي"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+msgid  "and"
+msgstr "و"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+msgid  "Example"
+msgstr "مثال"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+msgid  "Conditional Formatting"
+msgstr "تنسيق شرطي"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "~تعليمات"
+
+#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+msgid  "Condition $number$"
+msgstr "الشرط $number$"
+
+#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+msgid  "White"
+msgstr "أبيض"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+msgid  "Font color"
+msgstr "لون الخط"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+msgid  "Background"
+msgstr "الخلفية"
+
+#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+msgid  "No Fill"
+msgstr "بدون تعبئة"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+msgid  "Sort Ascending"
+msgstr "فرز تصاعدي"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+msgid  "Sort Descending"
+msgstr "فرز تنازلي"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+msgid  "Remove sorting"
+msgstr "إزالة الفرز"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+msgid  "Insert"
+msgstr "إدراج"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+msgid  "Help"
+msgstr "تعليمات"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr "قم بتمييز الحقول لإدراجها في المقطع المحدد للقالب، ثم انقر فوق إدراج أو اضغط على Enter."
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+msgid  "Date and Time"
+msgstr "التاريخ والوقت"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+msgid  "Include Date"
+msgstr "تضمين التاريخ"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+msgid  "Format"
+msgstr "التنسيق"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+msgid  "Include Time"
+msgstr "تضمين الوقت"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+msgid  "Format"
+msgstr "التنسيق"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "~تعليمات"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "عام"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "البيانات"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+msgid  "No"
+msgstr "لا"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+msgid  "Yes"
+msgstr "نعم"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+msgid  "Force New Page"
+msgstr "فرض صفحة جديدة"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+msgid  "None"
+msgstr "بلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+msgid  "Before Section"
+msgstr "قبل القسم"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+msgid  "After Section"
+msgstr "بعد القسم"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+msgid  "Before & After Section"
+msgstr "قبل القسم وبعده"
+
+#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+msgid  "New Row Or Column"
+msgstr "صف أو عمود جديد"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+msgid  "Keep Together"
+msgstr "البقاء معًا"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+msgid  "No"
+msgstr "لا"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+msgid  "Whole Group"
+msgstr "كل المجموعة"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+msgid  "With First Detail"
+msgstr "مع التفاصيل اﻷولى"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+msgid  "Can Grow"
+msgstr "يمكن أن يزداد"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+msgid  "Can Shrink"
+msgstr "يمكن أن يتقلص"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+msgid  "Repeat Section"
+msgstr "تكرار القسم"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+msgid  "Print repeated values"
+msgstr "طباعة القيم المكررة"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+msgid  "Conditional Print Expression"
+msgstr "تعبير الطباعة الشرطي"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+msgid  "Start new column"
+msgstr "بدء عمود جديد"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+msgid  "Start new page"
+msgstr "بدء صفحة جديدة"
+
+#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+msgid  "Reset page number"
+msgstr "إعادة تعيين رقم الصفحة"
+
+#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+msgid  "Chart type"
+msgstr "نوع المخطط"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+msgid  "Print When Group Change"
+msgstr "الطباعة عند تغيير المجموعة"
+
+#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "مرئي"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+msgid  "Group keep together"
+msgstr "بقاء المجموعات معًا"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+msgid  "Per Page"
+msgstr "في الصفحة"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+msgid  "Per Column"
+msgstr "في العمود"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+msgid  "None"
+msgstr "بلا"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+msgid  "Section"
+msgstr "المقطع"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+msgid  "Automatic"
+msgstr "تلقائي"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+msgid  "Page header"
+msgstr "رأس الصفحة"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+msgid  "Page footer"
+msgstr "تذييل الصفحة"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+msgid  "All Pages"
+msgstr "كافة الصفحات"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+msgid  "Not With Report Header"
+msgstr "بدون رأس التقرير"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+msgid  "Not With Report Footer"
+msgstr "بدون تذييل التقرير"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+msgid  "Not With Report Header/Footer"
+msgstr "بدون رأس/تذييل التقرير"
+
+#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+msgid  "Deep traversing"
+msgstr "انتقال عميق"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+msgid  "Pre evaluation"
+msgstr "تقييم مسبق"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+msgid  "Position X"
+msgstr "الموضع س"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+msgid  "Position Y"
+msgstr "الموضع ص"
+
+#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "العرض"
+
+#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "الارتفاع"
+
+#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+msgid  "Initial value"
+msgstr "القيمة المبدئية"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+msgid  "Preserve as Link"
+msgstr "حفظ كارتباط"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+msgid  "Formula"
+msgstr "الصيغة"
+
+#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+msgid  "Data field"
+msgstr "حقل البيانات"
+
+#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "الخط"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+msgid  "Background color"
+msgstr "لون الخلفية"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+msgid  "Background Transparent"
+msgstr "خلفية شفافة"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+msgid  "Background Transparent"
+msgstr "خلفية شفافة"
+
+#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+msgid  "This operation is not allowed. The control overlaps with another one."
+msgstr "هذه العملية غير مسموح بها. عنصر التحكم هذا متداخل مع عنصر تحكم آخر."
+
+#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+msgid  "This position can not be set. It is invalid."
+msgstr "لا يمكن تعيين الموضع. فهو غير صالح."
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+msgid  "Group: %1"
+msgstr "مجموعة: %1 "
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+msgid  "Function"
+msgstr "الوظيفة"
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+msgid  "Scope"
+msgstr "المجال"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+msgid  "Data Field Type"
+msgstr "نوع حقل البيانات"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+msgid  "Field or Formula"
+msgstr "حقل أو صيغة"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+msgid  "Function"
+msgstr "الوظيفة"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+msgid  "Counter"
+msgstr "العداد"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+msgid  "User defined Function"
+msgstr "وظيفة معرفة من قبل المستخدم"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
+msgstr "ربط الحقول الرئيسية"
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+msgid  "Link slave fields"
+msgstr "ربط الحقول التابعة"
+
+#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr "يمكن استخدام المخططات لعرض بيانات تفصيلية حول السجل الحالي للنموذج. وللقيام بهذا، يمكنك تحديد الأعمدة الموجودة في المخطط التي تتطابق مع الأعمدة في النموذج."
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+msgid  "Chart"
+msgstr "المخطط البياني"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+msgid  "Report"
+msgstr "التقرير"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+msgid  "Preview Row(s)"
+msgstr "معاينة صف (صفوف)"
+
+#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+msgid  "Area"
+msgstr "المنطقة"
+
+#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+msgid  "Report Output Format"
+msgstr "تنسيق إخراج التقرير"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr "رأسي محاذاة"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+msgid  "Top"
+msgstr "الجزء العلوي"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+msgid  "Middle"
+msgstr "المنتصف"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+msgid  "Bottom"
+msgstr "الجزء السفلي"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+msgid  "Horz. Alignment"
+msgstr "أفقي محاذاة"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+msgid  "Left"
+msgstr "اليسار"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+msgid  "Right"
+msgstr "اليمين"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+msgid  "Block"
+msgstr "حظر"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+msgid  "Center"
+msgstr "مركز"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+msgid  "Counter"
+msgstr "العداد"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+msgid  "Accumulation"
+msgstr "تراكم"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+msgid  "Minimum"
+msgstr "الحد الأدنى"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+msgid  "Maximum"
+msgstr "الحد الأقصى"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+msgid  "Properties: "
+msgstr "الخصائص: "
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+msgid  "No Control marked"
+msgstr "لم يتم وضع علامة على عنصر تحكم"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+msgid  "Multiselection"
+msgstr "تحديد متعدد"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "التحكم بالصورة"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label field"
+msgstr "حقل تسمية"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+msgid  "Line"
+msgstr "الخط"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "حقل مُنسَّق"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+msgid  "Shape"
+msgstr "شكل"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+msgid  "Report"
+msgstr "التقرير"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+msgid  "Section"
+msgstr "تحديد"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+msgid  "Function"
+msgstr "الوظيفة"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+msgid  "Group"
+msgstr "تجميع"
+
+#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+msgid  "Show ruler"
+msgstr "إظهار المسطرة"
+
+#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+msgid  "Show grid"
+msgstr "إظهار الشبكة"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+msgid  "Change Object"
+msgstr "تغيير الكائن"
+
+#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+msgid  "Move Group(s)"
+msgstr "تحريك المجموعة(ات)"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+msgid  "Conditional Formatting"
+msgstr "تنسيق شرطي"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+msgid  "Remove report header / report footer"
+msgstr "إزالة رأس التقرير/تذييل التقرير"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+msgid  "Add report header / report footer"
+msgstr "إضافة رأس التقرير/تذييل التقرير"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+msgid  "Remove page header / page footer"
+msgstr "إزالة رأس الصفحة/تذييل الصفحة"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+msgid  "Add page header / page footer"
+msgstr "إضافة رأس الصفحة/تذييل الصفحة"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+msgid  "Change property '#'"
+msgstr "تغيير الخاصية '#'"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+msgid  "Add group header "
+msgstr "إضافة رأس المجموعة "
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+msgid  "Remove group header "
+msgstr "إزالة رأس المجموعة "
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+msgid  "Add group footer "
+msgstr "إضافة تذييل المجموعة "
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+msgid  "Remove group footer "
+msgstr "إزالة تذييل المجموعة "
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+msgid  "Add function"
+msgstr "إضافة دالة"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+msgid  "Delete function"
+msgstr "حذف دالة"
+
+#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+msgid  "Design"
+msgstr "تصميم"
+
+#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+msgid  "Preview"
+msgstr "معاينة"
+
+#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+msgid  "Report #"
+msgstr "تقرير #"
+
+#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+msgid  "~Report name"
+msgstr "ا~سم التقرير"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+msgid  "Delete Group"
+msgstr "حذف مجموعة"
+
+#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+msgid  "Add Group"
+msgstr "إضافة المجموعة"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+msgid  "Delete Selection"
+msgstr "حذف التحديد"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+msgid  "Delete Function"
+msgstr "حذف الدالة"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+msgid  "Change Size"
+msgstr "تغيير الحجم"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+msgid  "Paste"
+msgstr "لصق"
+
+#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+msgid  "Insert Control"
+msgstr "إدراج عنصر تحكم"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+msgid  "Delete Control"
+msgstr "حذف عنصر تحكم"
+
+#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+msgid  "Insert Group"
+msgstr "إدراج مجموعة"
+
+#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+msgid  "Delete Group"
+msgstr "حذف مجموعة"
+
+#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+msgid  "GroupHeader"
+msgstr "رأس المجموعة"
+
+#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+msgid  "GroupFooter"
+msgstr "تذييل المجموعة"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+msgid  "Sorting and Grouping..."
+msgstr "فرز وتجميع..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+msgid  "Background Color..."
+msgstr "لون الخلفية..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+msgid  "Ruler..."
+msgstr "المسطرة..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+msgid  "Grid..."
+msgstr "الشبكة..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+msgid  "~Arrange"
+msgstr "~ترتيب"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+msgid  "Bring ~Forward"
+msgstr "إحضار للأ~مام"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+msgid  "Send Back~ward"
+msgstr "إرسال لل~خلف"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+msgid  "~Object Resizing"
+msgstr "ت~غيير حجم الكائن"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+msgid  "~Fit to smallest width"
+msgstr "ت~ناسب ﻷصغر عرض"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+msgid  "~Fit to greatest width"
+msgstr "تناسب ﻷ~كبر عرض"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+msgid  "~Fit to smallest height"
+msgstr "تنا~سب لأصغر ارتفاع"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+msgid  "~Fit to greatest height"
+msgstr "~تناسب ﻷكبر ارتفاع"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+msgid  "Section"
+msgstr "تحديد"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+msgid  "Shrink"
+msgstr "تقليص"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+msgid  "Shrink from top"
+msgstr "تقليص من أعلى"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+msgid  "Shrink from bottom"
+msgstr "تقليص من أسفل"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+msgid  "Distribution..."
+msgstr "التوزيع..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+msgid  "Properties..."
+msgstr "خصائص..."
+
+#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+msgid  "Add field:"
+msgstr "إضافة حقل:"
+
+#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr "تصفية"
+
+#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base Report"
+msgstr " - تقرير قاعدة %PRODUCTNAME"
+
+#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+msgid  "Untitled"
+msgstr "بلا عنوان"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+msgid  "Change Alignment"
+msgstr "غير المحاذاة"
+
+#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+msgid  "# Header"
+msgstr "رأس #"
+
+#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+msgid  "# Footer"
+msgstr "تذييل #"
+
+#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "إدراج رسومات"
+
+#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+msgid  "Delete"
+msgstr "حذف"
+
+#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+msgid  "Function"
+msgstr "الوظيفة"
+
+#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+msgid  "An error occurred while creating the report."
+msgstr "حدث خطأ أثناء إنشاء التقرير."
+
+#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+msgid  "An exception of type $type$ was caught."
+msgstr "ظهر استثناء من النوع $type$."
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+msgid  "Change font"
+msgstr "تغيير الخط"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+msgid  "Change page attributes"
+msgstr "تغيير سمات الصفحة"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Page Header/Footer"
+msgstr "إدراج رأس/تذييل الصفحة"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Page Header/Footer"
+msgstr "حذف رأس/تذييل الصفحة"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Column Header/Footer"
+msgstr "إدراج رأس/تذييل العمود"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Column Header/Footer"
+msgstr "حذف رأس/تذييل العمود"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Report Header/Footer"
+msgstr "إدراج رأس/تذييل التقرير"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Report Header/Footer"
+msgstr "حذف رأس/تذييل التقرير"
+
+#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+msgid  "The report can not be executed unless it is bound to content."
+msgstr "لا يمكن تنفيذ التقرير إلا إذا كان مرتبطًا بالمحتوى."
+
+#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+msgid  "The report can not be executed unless at least one object has been inserted."
+msgstr "لا يمكن تنفيذ التقرير إلا إذا تم إدراج كائن واحد على الأقل."
+
+#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+msgid  "Shrink Section"
+msgstr "تقليص المقطع"
+
+#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
+msgstr "التفاصيل"
+
+#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
+msgstr "ترويسة الصفحة"
+
+#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
+msgstr "تذييل الصفحة"
+
+#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
+msgstr "ترويسة التقرير"
+
+#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
+msgstr "تذييل التقرير"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "إدراج"

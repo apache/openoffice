@@ -1,0 +1,820 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.ModalDialog.Text
+msgid  "%PRODUCTNAME Basic Macros"
+msgstr "„%PRODUCTNAME Basic“ makrokomandos"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FixedText.Text
+msgid  "Existing macros ~in:"
+msgstr "~Makrokomandos:"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FixedText.Text
+msgid  "~Macro name"
+msgstr "~Makrokomandos pavadinimas"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FixedText.Text
+msgid  "Macro ~from"
+msgstr "Makrokomanda ~iš"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FixedText.Text
+msgid  "Save m~acro in"
+msgstr "Įrašyti m~akrokomandą"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FixedText.Text
+msgid  "De~scription"
+msgstr "A~prašas"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PushButton.Text
+msgid  "R~un"
+msgstr "~Vykdyti"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "Užverti"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PushButton.Text
+msgid  "~Assign..."
+msgstr "P~arinkti..."
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Taisyti"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PushButton.Text
+msgid  "New ~Library"
+msgstr "Nauja ~biblioteka"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PushButton.Text
+msgid  "New M~odule"
+msgstr "Naujas m~odulis"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PushButton.Text
+msgid  "~Delete"
+msgstr "~Šalinti"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PushButton.Text
+msgid  "~Organizer..."
+msgstr "~Tvarkytuvė..."
+
+#: source/basicide/macrodlg.src#RID_STR_STDMACRONAME.String.Text
+msgid  "Macro"
+msgstr "Makrokomanda"
+
+#: source/basicide/macrodlg.src#RID_STR_BTNDEL.String.Text
+msgid  "~Delete"
+msgstr "~Šalinti"
+
+#: source/basicide/macrodlg.src#RID_STR_BTNNEW.String.Text
+msgid  "~New"
+msgstr "~Naujas"
+
+#: source/basicide/macrodlg.src#RID_STR_CLOSE.String.Text
+msgid  "Close"
+msgstr "Užverti"
+
+#: source/basicide/macrodlg.src#RID_STR_CHOOSE.String.Text
+msgid  "Choose"
+msgstr "Pasirinkti"
+
+#: source/basicide/macrodlg.src#RID_STR_RUN.String.Text
+msgid  "Run"
+msgstr "Vykdyti"
+
+#: source/basicide/macrodlg.src#RID_STR_RECORD.String.Text
+msgid  "~Save"
+msgstr "~Įrašyti"
+
+#: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
+msgid  "<All>"
+msgstr "<Viskas>"
+
+#: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
+msgid  "< No Module >"
+msgstr "< Nėra modulio >"
+
+#: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
+msgid  "Incorrect Password"
+msgstr "Neteisingas slaptažodis."
+
+#: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
+msgid  "Load"
+msgstr "Įkelti"
+
+#: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
+msgid  "Save"
+msgstr "Įrašyti"
+
+#: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr "Pirminis tekstas yra per ilgas ir jo negalima sukompiliuoti ar įrašyti.\nPašalinkite dalį komentarų arba perkelkite dalį metodų į kitą modulį."
+
+#: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
+msgid  "Error opening file"
+msgstr "Failo atvėrimo klaida"
+
+#: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
+msgid  "Error loading library"
+msgstr "Bibliotekos įkėlimo klaida"
+
+#: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
+msgid  "The file does not contain any BASIC libraries"
+msgstr "Faile nėra jokių „BASIC“ kalbos bibliotekų"
+
+#: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
+msgid  "Invalid Name"
+msgstr "Neteisingas pavadinimas"
+
+#: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
+msgid  "A library name can have up to 30 characters."
+msgstr "Bibliotekos pavadinime gali būti iki 30 rašmenų."
+
+#: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
+msgid  "Macros from other documents are not accessible."
+msgstr "Kitų dokumentų makrokomandos neprieinamos."
+
+#: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
+msgid  "This library is read-only."
+msgstr "Biblioteką galima tik skaityti."
+
+#: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
+msgid  "'XX' cannot be replaced."
+msgstr "„XX“ negalima pakeisti."
+
+#: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
+msgid  "'XX' cannot be added."
+msgstr "„XX“ negalima pridėti."
+
+#: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
+msgid  "'XX' was not added."
+msgstr "„XX“ nepridėtas."
+
+#: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
+msgid  "Enter password for 'XX'"
+msgstr "Įrašykite „XX“ slaptažodį"
+
+#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
+msgid  "Name already exists"
+msgstr "Toks pavadinimas jau yra"
+
+#: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
+msgid  "(Signed)"
+msgstr "(Pasirašytas)"
+
+#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
+msgid  "Object with same name already exists"
+msgstr "Objektas su tokiu pavadinimu jau yra"
+
+#: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
+msgid  "The 'XX' file already exists"
+msgstr "Failas „XX“ jau yra"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr "Saugumo sumetimais negalima vykdyti šios makrokomandos.\n\nDaugiau informacijos rasite saugumo nuostatose."
+
+#: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
+msgid  "Compile Error: "
+msgstr "Kompiliavimo klaida: "
+
+#: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
+msgid  "Runtime Error: #"
+msgstr "Vykdymo klaida: #"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
+msgid  "Search key not found"
+msgstr "Ieškinys nerastas"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
+msgid  "Search to last module complete. Continue at first module?"
+msgstr "Paieška atlikta iki paskutinio modulio. Ar tęsti paiešką nuo pirmo modulio?"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
+msgid  "Search key replaced XX times"
+msgstr "Ieškinys pakeistas XX kartų"
+
+#: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
+msgid  "The file could not be read"
+msgstr "Failo negalima perskaityti"
+
+#: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
+msgid  "The file could not be saved"
+msgstr "Failo negalima įrašyti"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
+msgid  "The name of the default library cannot be changed."
+msgstr "Numatytosios bibliotekos pavadinimo negalima pakeisti."
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
+msgid  "The name of a referenced library cannot be changed."
+msgstr "Nurodytos bibliotekos pavadinimo negalima pakeisti."
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
+msgid  "The default library cannot be deactivated"
+msgstr "Numatytosios bibliotekos negalima išjungti"
+
+#: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
+msgid  "Generating source"
+msgstr "Kuriami pradiniai duomenys"
+
+#: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
+msgid  "File name:"
+msgstr "Failo vardas:"
+
+#: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
+msgid  "Import Libraries"
+msgstr "Importuoti bibliotekas"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELMACRO.String.Text
+msgid  "Do you want to delete the macro XX?"
+msgstr "Ar norite pašalinti XX makrokomandą?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELDIALOG.String.Text
+msgid  "Do you want to delete the XX dialog?"
+msgstr "Ar norite pašalinti XX dialogo langą?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELLIB.String.Text
+msgid  "Do you want to delete the XX library?"
+msgstr "Ar norite pašalinti XX biblioteką?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELLIBREF.String.Text
+msgid  "Do you want to delete the reference to the XX library?"
+msgstr "Ar norite pašalinti nuorodą į XX biblioteką?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELMODULE.String.Text
+msgid  "Do you want to delete the XX module?"
+msgstr "Ar norite pašalinti XX modulį?"
+
+#: source/basicide/basidesh.src#RID_STR_OBJNOTFOUND.String.Text
+msgid  "Object or method not found"
+msgstr "Objektas arba metodas nerastas"
+
+#: source/basicide/basidesh.src#RID_STR_BASIC.String.Text
+msgid  "BASIC"
+msgstr "„BASIC“"
+
+#: source/basicide/basidesh.src#RID_STR_LINE.String.Text
+msgid  "Ln"
+msgstr "Eil."
+
+#: source/basicide/basidesh.src#RID_STR_COLUMN.String.Text
+msgid  "Col"
+msgstr "Stlp."
+
+#: source/basicide/basidesh.src#RID_STR_DOC.String.Text
+msgid  "Document"
+msgstr "Dokumentas"
+
+#: source/basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.String.Text
+msgid  "Macro Bar"
+msgstr "Makrokomandos juosta"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
+msgid  "The window cannot be closed while BASIC is running."
+msgstr "Lango negalima užverti, kol vykdoma „BASIC“ programa."
+
+#: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
+msgid  "The default library cannot be replaced."
+msgstr "Numatytosios bibliotekos negalima pakeisti."
+
+#: source/basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.String.Text
+msgid  "Reference to 'XX' not possible."
+msgstr "Nuoroda į „XX“ neįmanoma."
+
+#: source/basicide/basidesh.src#RID_STR_WATCHNAME.String.Text
+msgid  "Watch"
+msgstr "Stebimoji reikšmė"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHVARIABLE.String.Text
+msgid  "Variable"
+msgstr "Kintamasis"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHVALUE.String.Text
+msgid  "Value"
+msgstr "Reikšmė"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHTYPE.String.Text
+msgid  "Type"
+msgstr "Tipas"
+
+#: source/basicide/basidesh.src#RID_STR_STACKNAME.String.Text
+msgid  "Call Stack"
+msgstr "Saugyklos iškvietimas"
+
+#: source/basicide/basidesh.src#RID_STR_INITIDE.String.Text
+msgid  "BASIC Initialization"
+msgstr "Pradedama „BASIC“ programa"
+
+#: source/basicide/basidesh.src#RID_STR_STDMODULENAME.String.Text
+msgid  "Module"
+msgstr "Modulis"
+
+#: source/basicide/basidesh.src#RID_STR_STDDIALOGNAME.String.Text
+msgid  "Dialog"
+msgstr "Dialogo langas"
+
+#: source/basicide/basidesh.src#RID_STR_STDLIBNAME.String.Text
+msgid  "Library"
+msgstr "Biblioteka"
+
+#: source/basicide/basidesh.src#RID_STR_NEWLIB.String.Text
+msgid  "New Library"
+msgstr "Nauja biblioteka"
+
+#: source/basicide/basidesh.src#RID_STR_NEWMOD.String.Text
+msgid  "New Module"
+msgstr "Naujas modulis"
+
+#: source/basicide/basidesh.src#RID_STR_NEWDLG.String.Text
+msgid  "New Dialog"
+msgstr "Naujas dialogo langas"
+
+#: source/basicide/basidesh.src#RID_STR_ALL.String.Text
+msgid  "All"
+msgstr "Viską"
+
+#: source/basicide/basidesh.src#RID_STR_PAGE.String.Text
+msgid  "Page"
+msgstr "Puslapis"
+
+#: source/basicide/basidesh.src#RID_STR_MACRONAMEREQ.String.Text
+msgid  "A name must be entered."
+msgstr "Įrašykite pavadinimą."
+
+#: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr "Po šių pakeitimų reikės iš naujo paleisti programą.\nAr tęsti?"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
+msgid  "Do you want to replace the text in all active modules?"
+msgstr "Ar norite pakeisti tekstą visuose aktyviuose moduliuose?"
+
+#: source/basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.ButtonImage.QuickHelpText
+msgid  "Remove Watch"
+msgstr "Šalinti stebimąją reikšmę"
+
+#: source/basicide/basidesh.src#RID_STR_REMOVEWATCH.String.Text
+msgid  "Watch:"
+msgstr "Stebimoji reikšmė:"
+
+#: source/basicide/basidesh.src#RID_STR_STACK.String.Text
+msgid  "Calls: "
+msgstr "Iškvietimai: "
+
+#: source/basicide/basidesh.src#RID_STR_USERMACROS.String.Text
+msgid  "My Macros"
+msgstr "Naudotojo makrokomandos"
+
+#: source/basicide/basidesh.src#RID_STR_USERDIALOGS.String.Text
+msgid  "My Dialogs"
+msgstr "Naudotojo dialogo langai"
+
+#: source/basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.String.Text
+msgid  "My Macros & Dialogs"
+msgstr "Naudotojo makrokomandos ir dialogo langai"
+
+#: source/basicide/basidesh.src#RID_STR_SHAREMACROS.String.Text
+msgid  "%PRODUCTNAME Macros"
+msgstr "„%PRODUCTNAME“ makrokomandos"
+
+#: source/basicide/basidesh.src#RID_STR_SHAREDIALOGS.String.Text
+msgid  "%PRODUCTNAME Dialogs"
+msgstr "„%PRODUCTNAME“ dialogo langai"
+
+#: source/basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.String.Text
+msgid  "%PRODUCTNAME Macros & Dialogs"
+msgstr "„%PRODUCTNAME“ makrokomandos ir dialogo langai"
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.Menu.Text
+msgid  "Properties"
+msgstr "Savybės"
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MenuItem.Text
+msgid  "Active"
+msgstr "Aktyvusis"
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
+msgid  "Properties..."
+msgstr "Savybės..."
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.Menu.Text
+msgid  "Manage Breakpoints"
+msgstr "Tvarkyti stabdos taškus"
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MenuItem.Text
+msgid  "Manage Breakpoints..."
+msgstr "Stabdos taškai..."
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MenuItem.Text
+msgid  "Insert"
+msgstr "Įterpti"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MenuItem.Text
+msgid  "BASIC Module"
+msgstr "BASIC modulis"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MenuItem.Text
+msgid  "BASIC Dialog"
+msgstr "BASIC dialogo langas"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MenuItem.Text
+msgid  "Delete"
+msgstr "Šalinti"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MenuItem.Text
+msgid  "Rename"
+msgstr "Pervadinti"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MenuItem.Text
+msgid  "Hide"
+msgstr "Slėpti"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MenuItem.Text
+msgid  "Modules..."
+msgstr "Moduliai..."
+
+#: source/basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+msgid  "Properties..."
+msgstr "Savybės..."
+
+#: source/basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.String.Text
+msgid  "Do you want to overwrite the XX macro?"
+msgstr "Ar norite perrašyti „XX“ makrokomandą?"
+
+#: source/basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.String.Text
+msgid  "<Not localized>"
+msgstr "<Nelokalizuota>"
+
+#: source/basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.String.Text
+msgid  "[Default Language]"
+msgstr "[Numatytoji kalba]"
+
+#: source/basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.String.Text
+msgid  "Document Objects"
+msgstr "Dokumento objektai"
+
+#: source/basicide/basidesh.src#RID_STR_USERFORMS.String.Text
+msgid  "Forms"
+msgstr "Formos"
+
+#: source/basicide/basidesh.src#RID_STR_NORMAL_MODULES.String.Text
+msgid  "Modules"
+msgstr "Moduliai"
+
+#: source/basicide/basidesh.src#RID_STR_CLASS_MODULES.String.Text
+msgid  "Class Modules"
+msgstr "Klasių moduliai"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.String.Text
+msgid  "Rename"
+msgstr "Pervadinti"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.String.Text
+msgid  "Replace"
+msgstr "Pakeisti"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.String.Text
+msgid  "Dialog Import - Name already used"
+msgstr "Dialogo lango importavimas - toks pavadinimas jau yra"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
+msgstr "Bibliotekoje jau yra dialogo langas tokiu pavadinimu:\n\n$(ARG1)\n\nParinkite kitą dialogo lango pavadinimą, kad išsaugotumėte esamą dialogo langą, arba pakeiskite esamą dialogo langą naujuoju.\n "
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
+msgid  "Add"
+msgstr "Pridėti"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.String.Text
+msgid  "Omit"
+msgstr "Praleisti"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.String.Text
+msgid  "Dialog Import - Language Mismatch"
+msgstr "Dialogo lango importavimas - nesutampa kalbos"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
+msgstr "Importuojamas dialogo langas suderinamas su kitomis kalbomis, nei paskirties biblioteka.\n\nPridėkite šias kalbas į biblioteką, kad galėtumėte naudotis dialogo lango kalbomis, arba praleiskite jas, kad išlaikytumėte esamas bibliotekos kalbas.\n\nPastaba: Kalboms, nesuderinamoms su dialogo langu, bus naudojami numatytosios dialogo lango kalbos ištekliai.\n "
+
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
+msgid  "Print range"
+msgstr "Spausdinimo rėžiai"
+
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item2.ItemList.item
+msgid  "All ~Pages"
+msgstr "Vis~kas"
+
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item3.ItemList.item
+msgid  "Pa~ges"
+msgstr "P~uslapiai"
+
+#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.FloatingWindow.Text
+msgid  "Objects"
+msgstr "Objektai"
+
+#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.ToolBoxItem.Text
+msgid  "Show"
+msgstr "Rodyti"
+
+#: source/basicide/objdlg.src#RID_STR_TLB_MACROS.String.Text
+msgid  "Objects Tree"
+msgstr ""
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.ModalDialog.Text
+msgid  "Description"
+msgstr "Aprašas"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FixedText.Text
+msgid  "Description"
+msgstr "Aprašas"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FixedLine.Text
+msgid  "Help information"
+msgstr "Žinyno informacija"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FixedText.Text
+msgid  "Help ID"
+msgstr "Žinyno identifikatorius"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FixedText.Text
+msgid  "Help file name"
+msgstr "Žinyno failo vardas"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PushButton.Text
+msgid  "New"
+msgstr "Naujas"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PushButton.Text
+msgid  "Delete"
+msgstr "Šalinti"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CheckBox.Text
+msgid  "Active"
+msgstr "Aktyvusis"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FixedText.Text
+msgid  "Pass Count:"
+msgstr "Leidimų skaičius:"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FixedText.Text
+msgid  "Breakpoints"
+msgstr "Stabdos taškai"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NumericField.Text
+msgid  "Manage Breakpoints"
+msgstr "Tvarkyti stabdos taškus"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.TabDialog.Text
+msgid  "%PRODUCTNAME Basic Macro Organizer"
+msgstr "„%PRODUCTNAME Basic“ makrokomandų tvarkytuvė"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PageItem.Text
+msgid  "Modules"
+msgstr "Moduliai"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PageItem.Text
+msgid  "Dialogs"
+msgstr "Dialogo langai"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PageItem.Text
+msgid  "Libraries"
+msgstr "Bibliotekos"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FixedText.Text
+msgid  "M~odule"
+msgstr "Mo~dulis arba dialogo langas"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Taisyti"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "Užverti"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
+msgid  "~New..."
+msgstr "~Naujas..."
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
+msgid  "~New..."
+msgstr "~Naujas..."
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Šalinti"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FixedText.Text
+msgid  "Dialog"
+msgstr "Dialogo langas"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Taisyti"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "Užverti"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
+msgid  "~New..."
+msgstr "~Naujas..."
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
+msgid  "~New..."
+msgstr "~Naujas..."
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Šalinti"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FixedText.Text
+msgid  "L~ocation"
+msgstr "Programa arba do~kumentas"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FixedText.Text
+msgid  "~Library"
+msgstr "~Biblioteka"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Taisyti"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "Užverti"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PushButton.Text
+msgid  "~Password..."
+msgstr "~Slaptažodis..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PushButton.Text
+msgid  "~New..."
+msgstr "~Naujas..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PushButton.Text
+msgid  "~Import..."
+msgstr "~Importuoti..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PushButton.Text
+msgid  "E~xport..."
+msgstr "~Eksportuoti..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Šalinti"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FixedLine.Text
+msgid  "Options"
+msgstr "Parinktys"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CheckBox.Text
+msgid  "Insert as reference (read-only)"
+msgstr "Įterpti nuorodą (tik skaitymui)"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CheckBox.Text
+msgid  "Replace existing libraries"
+msgstr "Pakeisti esančias bibliotekas"
+
+#: source/basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FixedText.Text
+msgid  "~Name:"
+msgstr "~Pavadinimas:"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.ModalDialog.Text
+msgid  "Export Basic library"
+msgstr "Eksportuoti „Basic“ biblioteką"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RadioButton.Text
+msgid  "Export as ~extension"
+msgstr "E~ksportuoti kaip plėtinį"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RadioButton.Text
+msgid  "Export as BASIC library"
+msgstr "Eksportuoti kaip BASIC biblioteką"
+
+#: source/basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.String.Text
+msgid  "Export library as extension"
+msgstr "Eksportuoti biblioteką kaip plėtinį"
+
+#: source/basicide/moduldlg.src#RID_STR_EXPORTBASIC.String.Text
+msgid  "Export as BASIC library"
+msgstr "Eksportuoti kaip BASIC biblioteką"
+
+#: source/basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.String.Text
+msgid  "Extension"
+msgstr "Plėtinys"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
+msgid  "Manage User Interface Languages [$1]"
+msgstr "Naudotojo sąsajos kalbų tvarkymas [$1]"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
+msgid  "Present Languages"
+msgstr "Esamos kalbos"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
+msgid  "Add..."
+msgstr "Pridėti..."
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
+msgid  "Delete"
+msgstr "Šalinti"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
+msgid  "Default"
+msgstr "Numatytoji"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
+msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
+msgstr "Numatytoji kalba vartojama, jei nėra lokalizuotos sąsajos naudotojo lokalei. Visos numatytosios kalbos eilutės nukopijuojamos į naujai pridėtos kalbos išteklius."
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
+msgid  "~Close"
+msgstr "~Užverti"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
+msgid  "[Default Language]"
+msgstr "[Numatytoji kalba]"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
+msgid  "~Delete"
+msgstr "~Šalinti"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
+msgid  "<Press 'Add' to create language resources>"
+msgstr "<Spustelėkite „Pridėti“, jei norite sukurti kalbos išteklius>"
+
+#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
+msgid  "Delete Language Resources"
+msgstr "Šalinti kalbos išteklius"
+
+#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
+msgid  "Set Default User Interface Language"
+msgstr "Nustatyti numatytąją naudotojo sąsajos kalbą"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
+msgid  "Default language"
+msgstr "Numatytoji kalba"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
+msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
+msgstr "Parinkite numatytąją naudotojo sąsajos kalbą. Visos esamos eilutės bus priskirtos sukurtiems pasirinktos kalbos ištekliams."
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
+msgid  "Add User Interface Languages"
+msgstr "Pridėti naudojo sąsajos kalbas"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
+msgid  "Available Languages"
+msgstr "Galimos kalbos"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
+msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
+msgstr "Pasirinkite norimas pridėti kalbas. Bibliotekoje šioms kalboms bus sukurti ištekliai. Dabartinės numatytosios naudotojo sąsajos kalbos eilutės bus nukopijuotos į naujuosius išteklius."
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+msgid  "Properties: "
+msgstr "Savybės: "
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+msgid  "No Control marked"
+msgstr "Nepažymėtas valdiklis"
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+msgid  "Multiselection"
+msgstr "Daugkartinė atranka"

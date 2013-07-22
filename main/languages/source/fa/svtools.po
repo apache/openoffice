@@ -1,0 +1,3501 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.String.Text
+msgid  "Row: %1, Column: %2"
+msgstr "ردیف:‌%1 ستون %2"
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.String.Text
+msgid  ", Type: %1, URL: %2"
+msgstr "، نوع: %1 نشانی اینترنتی %2"
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_FOLDER.String.Text
+msgid  "Folder"
+msgstr "پوشه"
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_FILE.String.Text
+msgid  "File"
+msgstr "پرونده"
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.String.Text
+msgid  "Empty Field"
+msgstr "فیلد خالی"
+
+#: source/contnr/templwin.src#STR_SVT_NEWDOC.String.Text
+msgid  "New Document"
+msgstr "نوشتار جدید"
+
+#: source/contnr/templwin.src#STR_SVT_MYDOCS.String.Text
+msgid  "My Documents"
+msgstr "نوشتارهای من"
+
+#: source/contnr/templwin.src#STR_SVT_TEMPLATES.String.Text
+msgid  "Templates"
+msgstr "قالب‌ها"
+
+#: source/contnr/templwin.src#STR_SVT_SAMPLES.String.Text
+msgid  "Samples"
+msgstr "نمونه‌ها"
+
+#: source/contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.ToolBoxItem.Text
+msgid  "Back"
+msgstr "عقب"
+
+#: source/contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.ToolBoxItem.Text
+msgid  "Up One Level"
+msgstr "یک سطح به بالا"
+
+#: source/contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.ToolBoxItem.Text
+msgid  "Print"
+msgstr "چاپ"
+
+#: source/contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.ToolBoxItem.Text
+msgid  "Document Properties"
+msgstr "ویژگی‌های نوشتار"
+
+#: source/contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.ToolBoxItem.Text
+msgid  "Preview"
+msgstr "پیش‌نمایش"
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.ModalDialog.Text
+#, fuzzy
+msgid  "Templates and Documents"
+msgstr "قالب‌ها و نوشتارها"
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.FixedText.Text
+#, fuzzy
+msgid  "~Get more templates online..."
+msgstr "~دریافت بیشتر قالب‌های برخط..."
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.PushButton.Text
+#, fuzzy
+msgid  "Organi~ze..."
+msgstr "سا~زمان‌دهی"
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "~ویرایش"
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.OKButton.Text
+#, fuzzy
+msgid  "~Open"
+msgstr "~باز کردن"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_TITLE.ItemList.item
+#, fuzzy
+msgid  "Title"
+msgstr "عنوان"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_FROM.ItemList.item
+#, fuzzy
+msgid  "By"
+msgstr "توسط"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DATE.ItemList.item
+#, fuzzy
+msgid  "Date"
+msgstr "تاریخ"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_KEYWORDS.ItemList.item
+#, fuzzy
+msgid  "Keywords"
+msgstr "کلیدواژه‌ها"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DESCRIPTION.ItemList.item
+#, fuzzy
+msgid  "Description"
+msgstr "شرح"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MIMETYPE.ItemList.item
+#, fuzzy
+msgid  "Type"
+msgstr "نوع"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDDATE.ItemList.item
+#, fuzzy
+msgid  "Modified on"
+msgstr "تغییر در"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDBY.ItemList.item
+#, fuzzy
+msgid  "Modified by"
+msgstr "تغییر داده شده توسط"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTDATE.ItemList.item
+#, fuzzy
+msgid  "Printed on"
+msgstr "چاپ شده در"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTBY.ItemList.item
+#, fuzzy
+msgid  "Printed by"
+msgstr "چاپ شده توسط"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_THEME.ItemList.item
+#, fuzzy
+msgid  "Subject"
+msgstr "موضوع"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_SIZE.ItemList.item
+#, fuzzy
+msgid  "Size"
+msgstr "اندازه"
+
+#: source/contnr/templwin.src#STR_SVT_NEWDOC_HELP.String.Text
+#, fuzzy
+msgid  "Click here to create new documents."
+msgstr "برای ایجاد نوشتارهای جدید اینجا کلیک کنید."
+
+#: source/contnr/templwin.src#STR_SVT_MYDOCS_HELP.String.Text
+#, fuzzy
+msgid  "Contains your letters, reports and other documents"
+msgstr "حاوی نامه‌ها، گزارش‌ها و دیگر نوشتارهای شماست"
+
+#: source/contnr/templwin.src#STR_SVT_TEMPLATES_HELP.String.Text
+#, fuzzy
+msgid  "Contains templates for creating new documents"
+msgstr "حاوی قالب‌هایی برای ایجاد نوشتارهای جدید است"
+
+#: source/contnr/templwin.src#STR_SVT_SAMPLES_HELP.String.Text
+#, fuzzy
+msgid  "Contains a selection of sample letters, reports and other documents"
+msgstr "حاوی منتخبی از نامه‌ها، گزارش‌ها و دیگر نوشتارهای نمونه است"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.String.Text
+msgid  "Title"
+msgstr "عنوان"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.String.Text
+msgid  "Size"
+msgstr "اندازه"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.String.Text
+msgid  "Date modified"
+msgstr "تاریخ تغییر"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.String.Text
+msgid  "Type"
+msgstr "نوع"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.String.Text
+msgid  "Could not create the folder %1."
+msgstr "ایجاد پوشهٔ %1 ممکن نبود."
+
+#: source/contnr/fileview.src#STR_SVT_BYTES.String.Text
+msgid  "Bytes"
+msgstr "بایت"
+
+#: source/contnr/fileview.src#STR_SVT_KB.String.Text
+msgid  "KB"
+msgstr "کیلوبایت"
+
+#: source/contnr/fileview.src#STR_SVT_MB.String.Text
+msgid  "MB"
+msgstr "مگابایت"
+
+#: source/contnr/fileview.src#STR_SVT_GB.String.Text
+msgid  "GB"
+msgstr "گیگابایت"
+
+#: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MenuItem.Text
+msgid  "~Delete"
+msgstr "~حذف"
+
+#: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MenuItem.Text
+msgid  "~Rename"
+msgstr "~تغییرنام"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.ModalDialog.Text
+msgid  "Confirm Delete"
+msgstr "حذف شود"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.FixedText.Text
+msgid  "Entry:"
+msgstr "مدخل:"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FixedText.Text
+msgid  "Are you sure you want to delete the selected data?"
+msgstr "آیا مطمئنید که می‌خواهید داده‌های انتخاب شده را حذف کنید؟"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PushButton.Text
+msgid  "~Delete"
+msgstr "~حذف"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PushButton.Text
+msgid  "Delete ~All"
+msgstr "حذف ~همه"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.PushButton.Text
+msgid  "Do ~Not Delete"
+msgstr "حذف ~نشود"
+
+#: source/control/filectrl.src#STR_FILECTRL_BUTTONTEXT.String.Text
+#, fuzzy
+msgid  "Browse..."
+msgstr "مرور..."
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.String.Text
+msgid  "Move To Home"
+msgstr ""
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVELEFT.String.Text
+msgid  "Move Left"
+msgstr ""
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVERIGHT.String.Text
+msgid  "Move Right"
+msgstr ""
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVETOEND.String.Text
+msgid  "Move To End"
+msgstr ""
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_DAY.String.Text
+msgid  "Day"
+msgstr "روز"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_WEEK.String.Text
+msgid  "Week"
+msgstr "هفته"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_TODAY.String.Text
+msgid  "Today"
+msgstr "امروز"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_NONE.String.Text
+msgid  "None"
+msgstr "هیچ‌کدام"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_LIGHT.String.Text
+#, fuzzy
+msgid  "Light"
+msgstr "نازک"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.String.Text
+#, fuzzy
+msgid  "Light Italic"
+msgstr "نازک ایتالیک"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_NORMAL.String.Text
+#, fuzzy
+msgid  "Regular"
+msgstr "عادی"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.String.Text
+#, fuzzy
+msgid  "Italic"
+msgstr "ایتالیک"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BOLD.String.Text
+#, fuzzy
+msgid  "Bold"
+msgstr "سیاه"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.String.Text
+#, fuzzy
+msgid  "Bold Italic"
+msgstr "ایتالیک سیاه"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BLACK.String.Text
+#, fuzzy
+msgid  "Black"
+msgstr "مشکی"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.String.Text
+#, fuzzy
+msgid  "Black Italic"
+msgstr "مشکی ایتالیک"
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_BOTH.String.Text
+#, fuzzy
+msgid  "The same font will be used on both your printer and your screen."
+msgstr "یک قلم هم برای چاپگر و هم برای صفحهٔ نمایش شما استفاده خواهد شد."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.String.Text
+#, fuzzy
+msgid  "This is a printer font. The screen image may differ."
+msgstr "این قلم برای چاپگر است. تصویر روی صفحهٔ نمایش ممکن است متفاوت باشد."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.String.Text
+#, fuzzy
+msgid  "This is a screen font. The printer image may differ."
+msgstr "این قلم برای صفحهٔ نمایش است. تصویر چاپگر ممکن است متفاوت باشد."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.String.Text
+#, fuzzy
+msgid  "This font size has not been installed. The closest available size will be used."
+msgstr "این اندازهٔ قلم نصب نشده است. نزدیکترین اندازهٔ ممکن استفاده خواهد شد."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.String.Text
+#, fuzzy
+msgid  "This font style will be simulated or the closest matching style will be used."
+msgstr "این سبک قلم شبیه‌سازی خواهد شد یا مشابه‌ترین سبک استفاده خواهد شد."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.String.Text
+#, fuzzy
+msgid  "This font has not been installed. The closest available font will be used."
+msgstr "این قلم نصب نشده است. نزدیکترین قلم موجود استفاده خواهد شد."
+
+#: source/control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.String.Text
+msgid  "Automatic"
+msgstr "خودکار"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.String.Text
+msgid  "Alphanumeric"
+msgstr "الفباعددی"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.String.Text
+msgid  "Normal"
+msgstr "عادی"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.String.Text
+msgid  "Character set"
+msgstr "مجموعه نویسه"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.String.Text
+msgid  "Dictionary"
+msgstr "لغت‌نامه"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PINYIN.String.Text
+msgid  "Pinyin"
+msgstr ""
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_STROKE.String.Text
+msgid  "Stroke"
+msgstr ""
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_RADICAL.String.Text
+msgid  "Radical"
+msgstr ""
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.String.Text
+msgid  "Unicode"
+msgstr "یونی‌کد"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.String.Text
+msgid  "Zhuyin"
+msgstr ""
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.String.Text
+msgid  "Phone book"
+msgstr "دفتر تلفن"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.String.Text
+msgid  "Phonetic (alphanumeric first)"
+msgstr "آواشناختی (الفباعددی‌ها اول)"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.String.Text
+msgid  "Phonetic (alphanumeric last)"
+msgstr "آواشناختی (الفباعددی‌ها آخر)"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.String.Text
+msgid  "Alphanumeric"
+msgstr "الفباعددی"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.String.Text
+msgid  "Dictionary"
+msgstr "لغت‌نامه"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.String.Text
+msgid  "Pinyin"
+msgstr ""
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.String.Text
+msgid  "Radical"
+msgstr ""
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.String.Text
+msgid  "Stroke"
+msgstr ""
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.String.Text
+msgid  "Zhuyin"
+msgstr ""
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.String.Text
+msgid  "Phonetic (alphanumeric first, grouped by syllables)"
+msgstr "آواشناختی (الفباعددی‌ها اول، گروه شده بر اساس سیلاب)"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.String.Text
+#, fuzzy
+msgid  "Phonetic (alphanumeric first, grouped by consonants)"
+msgstr "آواشناختی (الفباعددی‌ها اول، گروه شده بر اساس سیلاب)"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.String.Text
+#, fuzzy
+msgid  "Phonetic (alphanumeric last, grouped by syllables)"
+msgstr "آواشناختی (الفباعددی‌ها آخر، گروه شده بر اساس سیلاب)"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.String.Text
+#, fuzzy
+msgid  "Phonetic (alphanumeric last, grouped by consonants)"
+msgstr "آواشناختی (الفباعددی‌ها آخر، گروه شده بر اساس سیلاب)"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_READY.String.Text
+#, fuzzy
+msgid  "Ready"
+msgstr "آماده"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAUSED.String.Text
+#, fuzzy
+msgid  "Paused"
+msgstr "در حال مکث"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PENDING.String.Text
+#, fuzzy
+msgid  "Pending deletion"
+msgstr "حذف معلق"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_BUSY.String.Text
+#, fuzzy
+msgid  "Busy"
+msgstr "مشغول"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.String.Text
+#, fuzzy
+msgid  "Initializing"
+msgstr "در حال راه‌اندازی"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_WAITING.String.Text
+#, fuzzy
+msgid  "Waiting"
+msgstr "در حال انتظار"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.String.Text
+#, fuzzy
+msgid  "Warming up"
+msgstr "در حال گرم کردن"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PROCESSING.String.Text
+#, fuzzy
+msgid  "Processing"
+msgstr "در حال پردازش"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PRINTING.String.Text
+#, fuzzy
+msgid  "Printing"
+msgstr "در حال چاپ"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_OFFLINE.String.Text
+#, fuzzy
+msgid  "Offline"
+msgstr "برون‌خط"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_ERROR.String.Text
+#, fuzzy
+msgid  "Error"
+msgstr "خطا"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.String.Text
+#, fuzzy
+msgid  "Unknown Server"
+msgstr "کارگزار نامعلوم"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.String.Text
+#, fuzzy
+msgid  "Paper jam"
+msgstr "کاغذ گیر کرده است"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.String.Text
+#, fuzzy
+msgid  "Not enough paper"
+msgstr "کاغذ کافی نیست"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.String.Text
+#, fuzzy
+msgid  "Manual feed"
+msgstr "تغذیه دستی"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.String.Text
+#, fuzzy
+msgid  "Paper problem"
+msgstr "کاغذ مشکل دارد"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.String.Text
+#, fuzzy
+msgid  "I/O active"
+msgstr "ورودی/خروجی فعال"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.String.Text
+#, fuzzy
+msgid  "Output bin full"
+msgstr "محفظهٔ خروجی پر شده است"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.String.Text
+#, fuzzy
+msgid  "Toner low"
+msgstr "تونر در حال تمام شدن است"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_NO_TONER.String.Text
+#, fuzzy
+msgid  "No toner"
+msgstr "تونر تمام شده است"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.String.Text
+#, fuzzy
+msgid  "Delete Page"
+msgstr "حذف صفحه"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.String.Text
+#, fuzzy
+msgid  "User intervention necessary"
+msgstr "مداخلهٔ کاربر لازم است"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.String.Text
+#, fuzzy
+msgid  "Insufficient memory"
+msgstr "حافظه کافی نیست"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.String.Text
+#, fuzzy
+msgid  "Cover open"
+msgstr "درپوش باز است"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.String.Text
+#, fuzzy
+msgid  "Power save mode"
+msgstr "حالت ذخیرهٔ انرژی"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.String.Text
+#, fuzzy
+msgid  "Default printer"
+msgstr "چاپگر پیش‌فرض"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.String.Text
+#, fuzzy
+msgid  "%d documents"
+msgstr "%Id نوشتار"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.ModalDialog.Text
+#, fuzzy
+msgid  "Printer Setup"
+msgstr "برپاسازی چاپگر"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.FixedLine.Text
+#, fuzzy
+msgid  "Printer"
+msgstr "چاپگر"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.FixedText.Text
+#, fuzzy
+msgid  "~Name"
+msgstr "~نام"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.PushButton.Text
+#, fuzzy
+msgid  "Propert~ies..."
+msgstr "ویژ~گی‌ها..."
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.FixedText.Text
+#, fuzzy
+msgid  "Status"
+msgstr "وضعیت"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.FixedText.Text
+#, fuzzy
+msgid  "Type"
+msgstr "نوع"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.FixedText.Text
+#, fuzzy
+msgid  "Location"
+msgstr "مکان"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.FixedText.Text
+#, fuzzy
+msgid  "Comment"
+msgstr "توضیح"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.PushButton.Text
+msgid  "~Options..."
+msgstr ""
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
+msgid  "Select Directory"
+msgstr "انتخاب شاخه"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.String.Text
+msgid  "Cannot change to directory"
+msgstr "نمی‌توان به شاخه رفت"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
+msgid  "Open"
+msgstr "باز کردن"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
+msgid  "~File"
+msgstr "~پرونده"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
+msgid  "~Directory"
+msgstr "~شاخه"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
+msgid  "File ~type"
+msgstr "~نوع پرونده"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
+msgid  "Can't open file"
+msgstr "پرونده باز نمی‌شود"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
+msgid  "Can't open directory"
+msgstr "شاخه باز نمی‌شود"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
+msgid  "This file already exists. \\nOverwrite ?"
+msgstr "این پرونده از قبل وجود دارد. \nرونویسی شود؟"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
+msgid  "Up One Level"
+msgstr "یک سطح به بالا"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
+msgid  "Save"
+msgstr "ذخیره"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
+msgid  "D~rive"
+msgstr "~دیسک‌گردان"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
+msgid  "User Directory"
+msgstr "شاخهٔ کاربر"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
+msgid  "Create Directory"
+msgstr "ایجاد شاخه"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
+msgid  "Do you want the directory %s to be created ?"
+msgstr "آیا می‌خواهید شاخهٔ %s ایجاد شود؟"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
+msgid  "Templates: Address Book Assignment"
+msgstr "قالب‌ها: تخصیص دفترچهٔ نشانی"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
+msgid  "Address Book Source"
+msgstr "منبع دفترچهٔ نشانی"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
+msgid  "Data source"
+msgstr "منبع داده"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PushButton.Text
+msgid  "~Address Data Source..."
+msgstr "~مدیریت..."
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
+msgid  "Table"
+msgstr "جدول"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
+msgid  "Field assignment"
+msgstr "تخصیص فیلد"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
+msgid  "<none>"
+msgstr "<هیچ‌کدام>"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
+msgid  "Company"
+msgstr "شرکت"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
+msgid  "Department"
+msgstr "بخش"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
+msgid  "First name"
+msgstr "نام"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
+msgid  "Last name"
+msgstr "نام خانوادگی"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
+msgid  "Street"
+msgstr "خیابان"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
+msgid  "Country"
+msgstr "کشور"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
+msgid  "ZIP Code"
+msgstr "کد پستی"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
+msgid  "City"
+msgstr "شهر"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
+msgid  "Title"
+msgstr "عنوان"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
+msgid  "Position"
+msgstr "موقعیت"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.String.Text
+msgid  "Addr. Form"
+msgstr "فرم نشانی"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.String.Text
+msgid  "Initials"
+msgstr "حرف اول نام وسط"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.String.Text
+msgid  "Complimentary close"
+msgstr ""
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
+msgid  "Tel: Home"
+msgstr "تلفن: خانه"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
+msgid  "Tel: Work"
+msgstr "تلفن: محل کار"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
+msgid  "FAX"
+msgstr "دورنگار"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
+msgid  "E-mail"
+msgstr "پست الکترونیکی"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
+msgid  "URL"
+msgstr "نشانی اینترنتی"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
+msgid  "Note"
+msgstr "یادداشت"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
+msgid  "User 1"
+msgstr "کاربر ۱"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
+msgid  "User 2"
+msgstr "کاربر ۲"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
+msgid  "User 3"
+msgstr "کاربر ۳"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
+msgid  "User 4"
+msgstr "کاربر ۴"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
+msgid  "ID"
+msgstr "شناسه"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.String.Text
+msgid  "State"
+msgstr "ایالت"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
+msgid  "Tel: Office"
+msgstr "تلفن: دفتر"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
+msgid  "Pager"
+msgstr "پی‌جو"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
+msgid  "Mobile"
+msgstr "تلفن همراه"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
+msgid  "Tel: Other"
+msgstr "تلفن: غیره"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
+msgid  "Calendar"
+msgstr "تقویم"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
+msgid  "Invite"
+msgstr "دعوت"
+
+#: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
+msgid  "Unformatted text"
+msgstr "متن بدون قالب"
+
+#: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
+msgid  "Bitmap"
+msgstr "نقشه‌نقطه‌ای"
+
+#: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
+msgid  "GDI metafile"
+msgstr "فراپروندهٔ GDI"
+
+#: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
+msgid  "Formatted text [RTF]"
+msgstr "متن قالب‌بندی شده [RTF]"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
+msgid  "Drawing format"
+msgstr "قالب نقاشی"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SVXB.String.Text
+msgid  "SVXB (StarView bitmap/animation)"
+msgstr "‏SVXB (نقشه‌بیتی/پویانمایی استارویو)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.String.Text
+msgid  "Status Info from Svx Internal Link"
+msgstr "اطلاعات وضعیت از پیوند اینترنتی Svx"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
+msgid  "SOLK (%PRODUCTNAME Link)"
+msgstr "‏SOLK (پیوند %PRODUCTNAME)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
+msgid  "Netscape Bookmark"
+msgstr "نشانک نت‌اسکیپ"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
+msgid  "Star server format"
+msgstr "قالب کارگزار استار"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
+msgid  "Star object format"
+msgstr "قالب شیء استار"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
+msgid  "Applet object"
+msgstr "شیء برنامک"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.String.Text
+msgid  "Plug-in object"
+msgstr "شیء متصل‌شونده"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
+msgid  "StarWriter 3.0 object"
+msgstr "شیء استاررایتر 3.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
+msgid  "StarWriter 4.0 object"
+msgstr "شیء استاررایتر 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
+msgid  "StarWriter 5.0 object"
+msgstr "شیء استاررایتر 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
+msgid  "StarWriter/Web 4.0 object"
+msgstr "شیء استاررایتر/وب 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
+msgid  "StarWriter/Web 5.0 object"
+msgstr "شیء استاررایتر/وب 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
+msgid  "StarWriter/Master 4.0 object"
+msgstr "شیء استاررایتر/مستر 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
+msgid  "StarWriter/Master 5.0 object"
+msgstr "شیء استاررایتر/مستر 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
+msgid  "StarDraw object"
+msgstr "شیء استاردرا"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
+msgid  "StarDraw 4.0 object"
+msgstr "شیء استاردرا 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
+msgid  "StarImpress 5.0 object"
+msgstr "شیء استارایمپرس 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
+msgid  "StarDraw 5.0 object"
+msgstr "شیء استاردرا 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
+msgid  "StarCalc object"
+msgstr "شیء استارکَلک"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
+msgid  "StarCalc  4.0 object"
+msgstr "شیء استارکَلک 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
+msgid  "StarCalc 5.0 object"
+msgstr "شیء استارکَلک 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
+msgid  "StarChart object"
+msgstr "شیء استارچارت"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
+msgid  "StarChart 4.0 object"
+msgstr "شیء استارچارت 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
+msgid  "StarChart 5.0 object"
+msgstr "شیء استارچارت 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
+msgid  "StarImage object"
+msgstr "شیء استارایمیج"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
+msgid  "StarImage 4.0 object"
+msgstr "شیء استارایمیج 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
+msgid  "StarImage 5.0 object"
+msgstr "شیء استارایمیج 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
+msgid  "StarMath object"
+msgstr "شیء استارمَت"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
+msgid  "StarMath 4.0 object"
+msgstr "شیء استارمَت 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
+msgid  "StarMath 5.0 object"
+msgstr "شیء استارمَت 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.String.Text
+msgid  "StarObject Paint object"
+msgstr ""
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
+msgid  "HTML (HyperText Markup Language)"
+msgstr "‏HTML (HyperText Markup Language)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
+msgid  "HTML format"
+msgstr "قالب HTML"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
+msgid  "Biff5 (Microsoft Excel 5.0/95)"
+msgstr "‏Biff5 (اِکسل مایکروسافت 5.0/95)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
+msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
+msgstr "‏Biff8 (اِکسل مایکروسافت 97/2000/XP)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SYLK.String.Text
+msgid  "Sylk"
+msgstr ""
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
+msgid  "DDE link"
+msgstr "پیوند DDE"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DIF.String.Text
+msgid  "DIF"
+msgstr ""
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
+msgid  "Microsoft Word object"
+msgstr "شیء وُرد مایکروسافت"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.String.Text
+msgid  "StarFrameSet object"
+msgstr ""
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
+msgid  "Office document object"
+msgstr "شیء نوشتاری آفیس"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.String.Text
+msgid  "Notes document info"
+msgstr ""
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
+msgid  "Sfx document"
+msgstr "نوشتار sfx"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
+msgid  "StarChart 5.0 object"
+msgstr "شیء استارچارت 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
+msgid  "Graphic object"
+msgstr "شیء گرافیکی"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
+msgstr "شیء نقاش %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
+msgstr "شیء کاتب/اصلی %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
+msgstr "شیء کاتب/اصلی %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
+msgstr "شیء نقاش %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
+msgstr "شیء جلوهٔ %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
+msgstr "شیء محاسب %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
+msgstr "شیء نمودار %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
+msgstr "شیء ریاضی %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
+#, fuzzy
+msgid  "Windows metafile"
+msgstr "فراپروندهٔ ویندوز"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.String.Text
+#, fuzzy
+msgid  "Data source object"
+msgstr "شیء منبع داده‌ای"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.String.Text
+#, fuzzy
+msgid  "Data source table"
+msgstr "جدول منبع داده‌ای"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.String.Text
+#, fuzzy
+msgid  "SQL query"
+msgstr "پرس و جوی SQL"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
+msgstr "محاوری‌ %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
+#, fuzzy
+msgid  "Link"
+msgstr "پیوند"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.String.Text
+#, fuzzy
+msgid  "HTML format without comments"
+msgstr "قالب HTML بدون توضیحات"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_FINISH.String.Text
+#, fuzzy
+msgid  "~Finish"
+msgstr "~پایان"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_NEXT.String.Text
+#, fuzzy
+msgid  "~Next >>"
+msgstr "~بعدی <<"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_PREVIOUS.String.Text
+#, fuzzy
+msgid  "<< Bac~k"
+msgstr ">> عق~ب"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.String.Text
+msgid  "Steps"
+msgstr ""
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR&S_MAX.String.Text
+#, fuzzy
+msgid  "General OLE error."
+msgstr "خطای عمومی OLE"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE&S_MAX.String.Text
+#, fuzzy
+msgid  "The connection to the object cannot be established."
+msgstr "نمی‌توان اتصالی با شیء برقرار کرد."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED&S_MAX.String.Text
+#, fuzzy
+msgid  "No cache files were updated."
+msgstr "هیچ کدام از پرونده‌های حافظه‌ی نهان به‌هنگام نشدند"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED&S_MAX.String.Text
+#, fuzzy
+msgid  "Some cache files were not updated."
+msgstr "بعضی از پرونده‌های حافظه‌ی نهان به‌هنگام نشدند"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE&S_MAX.String.Text
+#, fuzzy
+msgid  "Status of object cannot be determined in a timely manner."
+msgstr "نمی‌توان وضعیت شیء را در زمان مناسب تعیین کرد"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF&S_MAX.String.Text
+#, fuzzy
+msgid  "Source of the OLE link has been converted."
+msgstr "مبدأ پیوند OLE تبدیل شد"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT&S_MAX.String.Text
+#, fuzzy
+msgid  "The object could not be found."
+msgstr "شیء پیدا نمی‌شود."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE&S_MAX.String.Text
+#, fuzzy
+msgid  "The process could not be completed within the specified time period."
+msgstr "تکمیل فرآیند در زمان مشخص شده ممکن نیست."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY&S_MAX.String.Text
+#, fuzzy
+msgid  "OLE could not connect to a network device (server)."
+msgstr "‏OLE نمی‌تواند به دستگاه شبکه (کارگزار) متصل شود"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.String.Text
+#, fuzzy
+msgid  "The object found does not support the interface required for the desired operation."
+msgstr "شیء پیدا شده از واسط لازم برای عملیات درخواست شده پشتیبانی نمی‌کند"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.String.Text
+#, fuzzy
+msgid  "Interface not supported."
+msgstr "واسط پشتیبانی نمی‌شود"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY&S_MAX.String.Text
+#, fuzzy
+msgid  "Insufficient memory."
+msgstr "حافظه کافی نیست"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX&S_MAX.String.Text
+#, fuzzy
+msgid  "The connection name could not be processed."
+msgstr "پردازش نام اتصال ممکن نیست."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF&S_MAX.String.Text
+#, fuzzy
+msgid  "The connection name could not be reduced further."
+msgstr "کوتاه‌تر کردن نام اتصال ممکن نیست"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE&S_MAX.String.Text
+#, fuzzy
+msgid  "The connection name has no inverse."
+msgstr "نام اتصال وارونه نمی‌شود."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX&S_MAX.String.Text
+#, fuzzy
+msgid  "No common prefix exists."
+msgstr "پیشوند مشترکی وجود ندارد"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM&S_MAX.String.Text
+#, fuzzy
+msgid  "The connection name is contained in the other one."
+msgstr "نام اتصال در نام دیگر آمده است."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.String.Text
+msgid  "The connection names (the receiver and the other moniker) are identical."
+msgstr ""
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.String.Text
+#, fuzzy
+msgid  "The connection name is contained in the other one."
+msgstr "نام اتصال در نام دیگر آمده است."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.String.Text
+msgid  "The connection name cannot be connected. This is a relative name."
+msgstr ""
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED&S_MAX.String.Text
+#, fuzzy
+msgid  "Operation not implemented."
+msgstr "عملیات پیاده‌سازی نشده است"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE&S_MAX.String.Text
+msgid  "No storage."
+msgstr ""
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE&S_MAX.String.Text
+#, fuzzy
+msgid  "False."
+msgstr "غلط"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC&S_MAX.String.Text
+msgid  "Monikers must be composed generically."
+msgstr ""
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING&S_MAX.String.Text
+#, fuzzy
+msgid  "Data not available at this time."
+msgstr "داده‌ها فعلاً موجود نیستند"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE & S_MAX.String.Text
+msgid  "Object could not be activated InPlace."
+msgstr ""
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX & S_MAX.String.Text
+#, fuzzy
+msgid  "Invalid index."
+msgstr "نمایه‌ی نامعتبر"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW & S_MAX.String.Text
+#, fuzzy
+msgid  "The action cannot be executed in the object's current state."
+msgstr "نمی‌توان این کنش را در وضعیت فعلی شیء اجرا کرد."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND & S_MAX.String.Text
+msgid  "An invalid window was passed when activated."
+msgstr ""
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS & S_MAX.String.Text
+#, fuzzy
+msgid  "The object does not support any actions."
+msgstr "شیء از هیچ کنشی پشتیبانی نمی‌کند"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB & S_MAX.String.Text
+#, fuzzy
+msgid  "The action is not defined. The default action will be executed."
+msgstr "کنش تعریف نشده است. کنش پیش‌فرض اجرا خواهد شد."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT & S_MAX.String.Text
+#, fuzzy
+msgid  "A link to the network could not be re-established."
+msgstr "نمی‌توان پیوند به شبکه را دوباره برقرار ساخت"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL & S_MAX.String.Text
+#, fuzzy
+msgid  "Object does not support this action."
+msgstr "شیء از این کنش پشتیبانی نمی‌کند"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE & S_MAX.String.Text
+#, fuzzy
+msgid  "The specified file could not be opened."
+msgstr "نمی‌توان پروندهٔ مشخص شده را باز کرد."
+
+#: source/dialogs/so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.String.Text
+#, fuzzy
+msgid  "$(ERR) activating object"
+msgstr "$(ERR) در فعال‌سازی شیء"
+
+#: source/dialogs/so3res.src#STR_INS_OBJECT.String.Text
+#, fuzzy
+msgid  "Inserts a new %1-Object into your document."
+msgstr "یک شیء %1 جدید در نوشتارتان درج می‌کند."
+
+#: source/dialogs/so3res.src#STR_INS_OBJECT_ICON.String.Text
+#, fuzzy
+msgid  "Inserts a new %1-Object into your document as a symbol."
+msgstr "یک شیء %1 جدید را به عنوان نماد در نوشتارتان درج می‌کند."
+
+#: source/dialogs/so3res.src#STR_INS_FILE.String.Text
+#, fuzzy
+msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
+msgstr "محتویات پرونده را در نوشتارتان درج می‌کند تا بتوانید بعداً در برنامهٔ اصلی ویرایش کنید."
+
+#: source/dialogs/so3res.src#STR_INS_PLUGIN.String.Text
+#, fuzzy
+msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
+msgstr "یک شیء متصل‌شونده با ارجاع به داده‌های متصل‌شونده در نوشتارتان درج می‌کند. وقتی شیء فعال شود، متصل‌شونده به طور خودکار اجرا می‌شود."
+
+#: source/dialogs/so3res.src#STR_INS_APPLET.String.Text
+#, fuzzy
+msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
+msgstr "یک شیء برنامک در نوشتارتان درج می‌کند. وقتی شیء فعال شود، برنامک به طور خودکار اجرا خواهد شد."
+
+#: source/dialogs/so3res.src#STR_INS_FILE_ICON.String.Text
+#, fuzzy
+msgid  "Inserts the contents of the file as an icon into your document."
+msgstr "محتویات پرونده را به شکل یک شمایل در نوشتارتان درج خواهد کرد."
+
+#: source/dialogs/so3res.src#STR_INS_FILE_LINK.String.Text
+msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
+msgstr ""
+
+#: source/dialogs/so3res.src#STR_INS_FILE_ICON_LINK.String.Text
+#, fuzzy
+msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
+msgstr "شمایلی به نمایندگی پرونده در نوشتارتان درج می‌کند. تغییرات اِعمال شده روی پروندهٔ مبدأ در نوشتارتان خواهد آمد."
+
+#: source/dialogs/so3res.src#STR_PASTE.String.Text
+#, fuzzy
+msgid  "Pastes the contents of the clipboard as %1 in your document."
+msgstr "محتویات تخته‌گیره را به شکل %1 در نوشتارتان می‌چسباند."
+
+#: source/dialogs/so3res.src#STR_CONVERT_TO.String.Text
+#, fuzzy
+msgid  "Converts the selected %1object to the object type %2."
+msgstr "شیء %1 انتخاب شده را به شیئی از نوع %2 تبدیل می‌کند."
+
+#: source/dialogs/so3res.src#STR_ACTIVATE_AS.String.Text
+#, fuzzy
+msgid  "All objects of type %1 are activated as %2, but not converted"
+msgstr "همهٔ اشیاء نوع %1 به عنوان %2 فعال می‌شوند، ولی تبدیل نمی‌شوند"
+
+#: source/dialogs/so3res.src#STR_VERB_OPEN.String.Text
+#, fuzzy
+msgid  "~Open"
+msgstr "~باز کردن"
+
+#: source/dialogs/so3res.src#STR_VERB_PROPS.String.Text
+#, fuzzy
+msgid  "~Properties"
+msgstr "~ویژگی‌ها"
+
+#: source/dialogs/so3res.src#STR_PLUGIN_CANT_SHOW.String.Text
+#, fuzzy
+msgid  "Plug-in % cannot be displayed."
+msgstr "نمی‌توان متصل‌شوندهٔ % را نمایش داد."
+
+#: source/dialogs/so3res.src#STR_ERROR_DDE.String.Text
+#, fuzzy
+msgid  "DDE link to % for % area % are not available."
+msgstr "پیوند DDE به % برای % ناحیهٔ % موجود نیست."
+
+#: source/dialogs/so3res.src#STR_ERROR_OBJNOCREATE.String.Text
+#, fuzzy
+msgid  "Object % could not be inserted."
+msgstr "درج شیء % ممکن نیست."
+
+#: source/dialogs/so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.String.Text
+#, fuzzy
+msgid  "Object from file % could not be inserted."
+msgstr "درج شیء از پروندهٔ % ممکن نیست."
+
+#: source/dialogs/so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.String.Text
+#, fuzzy
+msgid  "Plug-in from document % could not be inserted."
+msgstr "درج متصل‌شونده از نوشتار % ممکن نیست."
+
+#: source/dialogs/so3res.src#STR_QUERYUPDATELINKS.String.Text
+#, fuzzy
+msgid  "Update all links?"
+msgstr "همهٔ پیوندها به‌هنگام سازی شوند؟"
+
+#: source/dialogs/so3res.src#STR_FURTHER_OBJECT.String.Text
+#, fuzzy
+msgid  "Further objects"
+msgstr "اشیاء بیشتر"
+
+#: source/dialogs/so3res.src#STR_EDIT_APPLET.String.Text
+#, fuzzy
+msgid  "Edit Applet"
+msgstr "ویرایش برنامک"
+
+#: source/dialogs/so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.MenuItem.Text
+#, fuzzy
+msgid  "Deactivate"
+msgstr "غیرفعال کردن"
+
+#: source/dialogs/so3res.src#STR_UNKNOWN_SOURCE.String.Text
+#, fuzzy
+msgid  "Unknown source"
+msgstr "منبع نامعلوم"
+
+#: source/filter/exportdialog.src#DLG_EXPORT_TITLE.String.Text
+msgid  " Options"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EXPORT_SIZE.FixedLine.Text
+msgid  "Size"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_SIZEX.FixedText.Text
+msgid  "Width:"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item1.StringList.item
+msgid  "inches"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.Default.StringList.item
+msgid  "cm"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item3.StringList.item
+msgid  "mm"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item4.StringList.item
+msgid  "points"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item5.StringList.item
+msgid  "pixels"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_SIZEY.FixedText.Text
+msgid  "Height:"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item1.StringList.item
+msgid  "inches"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.Default.StringList.item
+msgid  "cm"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item3.StringList.item
+msgid  "mm"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item4.StringList.item
+msgid  "points"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item5.StringList.item
+msgid  "pixels"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_RESOLUTION.FixedText.Text
+msgid  "Resolution:"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.item1.StringList.item
+msgid  "pixels/cm"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.Default.StringList.item
+msgid  "pixels/inch"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.item3.StringList.item
+msgid  "pixels/meter"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_COLOR_DEPTH.FixedLine.Text
+msgid  "Color Depth"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_1BIT_THRESHOLD.String.Text
+msgid  "1 bit threshold"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_1BIT_DITHERED.String.Text
+msgid  "1 bit dithered"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_4BIT_GRAYSCALE.String.Text
+msgid  "4 bit grayscale"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_4BIT_COLOR_PALETTE.String.Text
+msgid  "4 bit color"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_8BIT_GRAYSCALE.String.Text
+msgid  "8 bit grayscale"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_8BIT_COLOR_PALETTE.String.Text
+msgid  "8 bit color"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_24BIT_TRUE_COLOR.String.Text
+msgid  "24 bit true color"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_JPG_QUALITY.FixedLine.Text
+msgid  "Quality"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_COMPRESSION.FixedLine.Text
+msgid  "Compression"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_MODE.FixedLine.Text
+msgid  "Mode"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_PBM_OPTIONS.FixedLine.Text
+msgid  "File Format"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_JPG_MIN.FixedText.Text
+msgid  "1 is minimum Quality and smallest file size."
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_JPG_MAX.FixedText.Text
+msgid  "100 is maximum Quality and biggest file size."
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_PNG_MIN.FixedText.Text
+msgid  "0 is biggest file size and fastest loading."
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_PNG_MAX.FixedText.Text
+msgid  "9 is smallest file size and slowest loading."
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.CheckBox.Text
+msgid  "Preview"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_INTERLACED.CheckBox.Text
+msgid  "Interlaced"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_RLE_ENCODING.CheckBox.Text
+msgid  "RLE encoding"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_GIF_DRAWING_OBJECTS.FixedLine.Text
+msgid  "Drawing Objects"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_SAVE_TRANSPARENCY.CheckBox.Text
+msgid  "Save transparency"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_BINARY.RadioButton.Text
+msgid  "Binary"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_TEXT.RadioButton.Text
+msgid  "Text"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.FixedLine.Text
+msgid  "Preview"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.CheckBox.Text
+msgid  "Image Preview (TIFF)"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_EPSI.CheckBox.Text
+msgid  "Interchange (EPSI)"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EPS_VERSION.FixedLine.Text
+msgid  "Version"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL1.RadioButton.Text
+msgid  "Level 1"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL2.RadioButton.Text
+msgid  "Level 2"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EPS_COLOR_FORMAT.FixedLine.Text
+msgid  "Color format"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT1.RadioButton.Text
+msgid  "Color"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT2.RadioButton.Text
+msgid  "Grayscale"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_LZW.RadioButton.Text
+msgid  "LZW encoding"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_NONE.RadioButton.Text
+msgid  "None"
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_1.String.Text
+msgid  "The picture needs about %1 KB of memory."
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
+msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
+msgid  "The file size is %1 KB."
+msgstr ""
+
+#: source/java/javaerror.src#WARNINGBOX_JAVANOTFOUND.WarningBox.Message
+msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
+msgstr ""
+
+#: source/java/javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.WarningBox.Message
+msgid  "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
+msgstr ""
+
+#: source/java/javaerror.src#QBX_JAVADISABLED.QueryBox.Message
+msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
+msgstr ""
+
+#: source/java/javaerror.src#ERRORBOX_JVMCREATIONFAILED.ErrorBox.Message
+msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
+msgstr ""
+
+#: source/java/javaerror.src#ERRORBOX_RESTARTREQUIRED.ErrorBox.Message
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
+msgstr ""
+
+#: source/java/javaerror.src#STR_WARNING_JAVANOTFOUND.String.Text
+msgid  "JRE Required"
+msgstr ""
+
+#: source/java/javaerror.src#STR_WARNING_INVALIDJAVASETTINGS.String.Text
+msgid  "Select JRE"
+msgstr ""
+
+#: source/java/javaerror.src#STR_ERROR_RESTARTREQUIRED.String.Text
+msgid  "Restart Required"
+msgstr "راه‌اندازی مجدد لازم است"
+
+#: source/java/javaerror.src#STR_QUESTION_JAVADISABLED.String.Text
+msgid  "Enable JRE"
+msgstr "به کار انداختن JRE"
+
+#: source/java/javaerror.src#STR_ERROR_JVMCREATIONFAILED.String.Text
+msgid  "JRE is Defective"
+msgstr ""
+
+#: source/misc/undo.src#STR_UNDO.String.Text
+msgid  "Undo: "
+msgstr ""
+
+#: source/misc/undo.src#STR_REDO.String.Text
+msgid  "Re~do: "
+msgstr ""
+
+#: source/misc/undo.src#STR_REPEAT.String.Text
+#, fuzzy
+msgid  "~Repeat: "
+msgstr "~تکرار: "
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
+msgid  "Source code"
+msgstr "کد مبدأ"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
+msgid  "Bookmark file"
+msgstr "پروندهٔ نشانک"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
+msgid  "Graphics"
+msgstr "گرافیک"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
+msgid  "Configuration file"
+msgstr "پروندهٔ پیکربندی"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
+msgid  "Application"
+msgstr "برنامه"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
+msgid  "Database table"
+msgstr "جدول پایگاه‌داده"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
+msgid  "System file"
+msgstr "سیستم پرونده‌ای"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
+msgid  "MS Word document"
+msgstr "نوشتار مایکروسافت وُرد"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
+msgid  "Help file"
+msgstr "پروندهٔ راهنما"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
+msgid  "HTML document"
+msgstr "نوشتار HTML"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
+msgid  "Archive file"
+msgstr "پروندهٔ آرشیو"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
+msgid  "Log file"
+msgstr "پروندهٔ ثبتی"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
+msgid  "%STAROFFICE Database"
+msgstr "پایگاه‌دادهٔ %STAROFFICE"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
+msgid  "StarWriter 4.0 / 5.0 Master Document"
+msgstr "نوشتار اصلی استاررایتر 4.0/5.0"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
+msgid  "%STAROFFICE Image"
+msgstr "تصویر %STAROFFICE"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
+msgid  "Text file"
+msgstr "پروندهٔ متنی"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
+msgid  "Link"
+msgstr "پیوند"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
+msgid  "%STAROFFICE 3.0 - 5.0 Template"
+msgstr "قالب %STAROFFICE 3.0 - 5.0"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
+msgid  "MS Excel document"
+msgstr "نوشتار مایکروسافت اِکسل"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
+msgid  "MS Excel template"
+msgstr "قالب مایکروسافت اِکسل"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.String.Text
+msgid  "Batch file"
+msgstr "پروندهٔ دسته‌ای"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
+msgid  "File"
+msgstr "پرونده"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
+msgid  "Folder"
+msgstr "پوشه"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
+msgid  "Text Document"
+msgstr "نوشتار متنی"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
+msgid  "Spreadsheet"
+msgstr "صفحه‌گسترده"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
+msgid  "Presentation"
+msgstr "ارائه"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
+msgid  "Drawing"
+msgstr "نقاشی"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
+msgid  "HTML document"
+msgstr "نوشتار HTML"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
+msgid  "Master document"
+msgstr "نوشتار اصلی"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
+msgid  "Formula"
+msgstr "فرمول"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
+#, fuzzy
+msgid  "Database"
+msgstr "پایگاه داده"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+msgstr "قالب صفحه‌گستردهٔ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+msgstr "قالب نقاشی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+msgstr "قالب ارائهٔ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+msgstr "قالب نوشتار متنی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
+#, fuzzy
+msgid  "Local drive"
+msgstr "دیسک‌گردان محلی"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
+#, fuzzy
+msgid  "Disk drive"
+msgstr "دیسک گردان"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
+#, fuzzy
+msgid  "CD-ROM drive"
+msgstr "سی‌دی گردان"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
+#, fuzzy
+msgid  "Network connection"
+msgstr "اتصال شبکه"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
+#, fuzzy
+msgid  "MS PowerPoint Document"
+msgstr "نوشتار مایکروسافت پاورپوینت"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
+#, fuzzy
+msgid  "MS PowerPoint Template"
+msgstr "قالب مایکروسافت پاورپوینت"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
+#, fuzzy
+msgid  "MS PowerPoint Show"
+msgstr "نمایش مایکروسافت پاورپوینت"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgstr "فرمول %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgstr "نمودار %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgstr "نقاشی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgstr "صفحه‌گستردهٔ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgstr "ارائهٔ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgstr "نوشتار متنی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgstr "نوشتار اصلی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
+#, fuzzy
+msgid  "MathML Document"
+msgstr "نوشتار MathML"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
+#, fuzzy
+msgid  "OpenDocument Database"
+msgstr "پایگاه‌دادهٔ نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
+#, fuzzy
+msgid  "OpenDocument Drawing"
+msgstr "نقاشی نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
+#, fuzzy
+msgid  "OpenDocument Formula"
+msgstr "فرمول نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
+#, fuzzy
+msgid  "OpenDocument Master Document"
+msgstr "نوشتار اصلی نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
+#, fuzzy
+msgid  "OpenDocument Presentation"
+msgstr "ارائهٔ نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
+#, fuzzy
+msgid  "OpenDocument Spreadsheet"
+msgstr "صفحه‌گستردهٔ نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
+#, fuzzy
+msgid  "OpenDocument Text"
+msgstr "متن نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
+#, fuzzy
+msgid  "OpenDocument Spreadsheet Template"
+msgstr "قالب صفحه‌گستردهٔ نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
+#, fuzzy
+msgid  "OpenDocument Drawing Template"
+msgstr "قالب نقاشی نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
+#, fuzzy
+msgid  "OpenDocument Presentation Template"
+msgstr "قالب ارائهٔ نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
+#, fuzzy
+msgid  "OpenDocument Text Template"
+msgstr "قالب متن نوشتارباز"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Extension"
+msgstr "افزونه %PRODUCTNAME "
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PairedList.item
+#, fuzzy
+msgid  "[None]"
+msgstr "[هیچ‌کدام]"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
+#, fuzzy
+msgid  "Unknown"
+msgstr "ناشناخته"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
+#, fuzzy
+msgid  "Default"
+msgstr "پیش‌فرض"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PairedList.item
+#, fuzzy
+msgid  "Afrikaans (South Africa)"
+msgstr "آفریکانس"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PairedList.item
+#, fuzzy
+msgid  "Albanian"
+msgstr "آلبانیایی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PairedList.item
+msgid  "Arabic"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PairedList.item
+#, fuzzy
+msgid  "Arabic (Algeria)"
+msgstr "عربی (الجزایر)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PairedList.item
+#, fuzzy
+msgid  "Arabic (Bahrain)"
+msgstr "عربی (بحرین)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PairedList.item
+#, fuzzy
+msgid  "Arabic (Chad)"
+msgstr "عربی (عراق)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PairedList.item
+msgid  "Arabic (Comoros)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PairedList.item
+msgid  "Arabic (Djibouti)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PairedList.item
+#, fuzzy
+msgid  "Arabic (Egypt)"
+msgstr "عربی (مصر)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PairedList.item
+msgid  "Arabic (Eritrea)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PairedList.item
+#, fuzzy
+msgid  "Arabic (Iraq)"
+msgstr "عربی (عراق)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PairedList.item
+#, fuzzy
+msgid  "Arabic (Israel)"
+msgstr "عربی (عراق)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PairedList.item
+#, fuzzy
+msgid  "Arabic (Jordan)"
+msgstr "عربی (اُردن)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PairedList.item
+#, fuzzy
+msgid  "Arabic (Kuwait)"
+msgstr "عربی (کویت)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PairedList.item
+#, fuzzy
+msgid  "Arabic (Lebanon)"
+msgstr "عربی (لبنان)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PairedList.item
+#, fuzzy
+msgid  "Arabic (Libya)"
+msgstr "عربی (لیبی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PairedList.item
+#, fuzzy
+msgid  "Arabic (Mauritania)"
+msgstr "عربی (موریتانی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PairedList.item
+#, fuzzy
+msgid  "Arabic (Morocco)"
+msgstr "عربی (مراکش)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PairedList.item
+#, fuzzy
+msgid  "Arabic (Oman)"
+msgstr "عربی (عمان)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PairedList.item
+#, fuzzy
+msgid  "Arabic (Palestine)"
+msgstr "عربی (فلسطین)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PairedList.item
+#, fuzzy
+msgid  "Arabic (Qatar)"
+msgstr "عربی (قطر)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PairedList.item
+#, fuzzy
+msgid  "Arabic (Saudi Arabia)"
+msgstr "عربی (عربستان سعودی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PairedList.item
+#, fuzzy
+msgid  "Arabic (Somalia)"
+msgstr "عربی (سوریه)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PairedList.item
+#, fuzzy
+msgid  "Arabic (Sudan)"
+msgstr "عربی (اُردن)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PairedList.item
+#, fuzzy
+msgid  "Arabic (Syria)"
+msgstr "عربی (سوریه)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PairedList.item
+#, fuzzy
+msgid  "Arabic (Tunisia)"
+msgstr "عربی (تونس)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PairedList.item
+#, fuzzy
+msgid  "Arabic (UAE)"
+msgstr "عربی (امارات متحده عربی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PairedList.item
+#, fuzzy
+msgid  "Arabic (Yemen)"
+msgstr "عربی (یمن)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PairedList.item
+#, fuzzy
+msgid  "Armenian"
+msgstr "ارمنی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PairedList.item
+#, fuzzy
+msgid  "Assami"
+msgstr "آسامی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PairedList.item
+#, fuzzy
+msgid  "Azerbaijani Latin"
+msgstr "آذربایجانی (لاتین)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PairedList.item
+#, fuzzy
+msgid  "Azerbaijani Cyrillic"
+msgstr "آذربایجانی (سیریلی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PairedList.item
+#, fuzzy
+msgid  "Basque"
+msgstr "باسکی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PairedList.item
+#, fuzzy
+msgid  "Bengali (India)"
+msgstr "بنگالی (هند)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PairedList.item
+#, fuzzy
+msgid  "Bulgarian"
+msgstr "بلغاری"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PairedList.item
+#, fuzzy
+msgid  "Belarusian"
+msgstr "بلوروسی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PairedList.item
+#, fuzzy
+msgid  "Catalan"
+msgstr "کاتالان"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PairedList.item
+#, fuzzy
+msgid  "Chinese (traditional)"
+msgstr "چینی (سنتی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PairedList.item
+#, fuzzy
+msgid  "Chinese (simplified)"
+msgstr "چینی (ساده شده)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PairedList.item
+#, fuzzy
+msgid  "Chinese (Hong Kong)"
+msgstr "چینی (هنگ‌کنگ)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PairedList.item
+#, fuzzy
+msgid  "Chinese (Singapore)"
+msgstr "چینی (سنگاپور)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PairedList.item
+#, fuzzy
+msgid  "Chinese (Macau)"
+msgstr "چینی (ماکائو)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PairedList.item
+#, fuzzy
+msgid  "Croatian"
+msgstr "کرواتی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PairedList.item
+#, fuzzy
+msgid  "Czech"
+msgstr "چکی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PairedList.item
+#, fuzzy
+msgid  "Danish"
+msgstr "دانمارکی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PairedList.item
+#, fuzzy
+msgid  "Dutch (Netherlands)"
+msgstr "هلندی (هلند)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PairedList.item
+#, fuzzy
+msgid  "Dutch (Belgium)"
+msgstr "هلندی (بلژیک)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PairedList.item
+#, fuzzy
+msgid  "English (USA)"
+msgstr "انگلیسی (ایالات متحده)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PairedList.item
+#, fuzzy
+msgid  "English (UK)"
+msgstr "انگلیسی (بریتانیا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PairedList.item
+#, fuzzy
+msgid  "English (Australia)"
+msgstr "انگلیسی (استرالیا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PairedList.item
+#, fuzzy
+msgid  "English (Canada)"
+msgstr "انگلیسی (کانادا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PairedList.item
+#, fuzzy
+msgid  "English (New Zealand)"
+msgstr "انگلیسی (زلاند نو)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PairedList.item
+#, fuzzy
+msgid  "English (Eire)"
+msgstr "انگلیسی (ایرلند)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PairedList.item
+#, fuzzy
+msgid  "English (South Africa)"
+msgstr "انگلیسی (آفریقای جنوبی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PairedList.item
+#, fuzzy
+msgid  "English (Jamaica)"
+msgstr "انگلیسی (جامائیکا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PairedList.item
+#, fuzzy
+msgid  "English (Caribbean)"
+msgstr "انگلیسی (کارائیب)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PairedList.item
+#, fuzzy
+msgid  "English (Belize)"
+msgstr "انگلیسی (بلیز)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PairedList.item
+#, fuzzy
+msgid  "English (Trinidad)"
+msgstr "انگلیسی (ترینیداد)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PairedList.item
+#, fuzzy
+msgid  "English (Zimbabwe)"
+msgstr "انگلیسی (زیمباوه)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PairedList.item
+#, fuzzy
+msgid  "English (Philippines)"
+msgstr "انگلیسی (فیلیپین)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PairedList.item
+#, fuzzy
+msgid  "English (India)"
+msgstr "English (India)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PairedList.item
+#, fuzzy
+msgid  "Estonian"
+msgstr "استونیایی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PairedList.item
+#, fuzzy
+msgid  "Finnish"
+msgstr "فنلاندی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PairedList.item
+#, fuzzy
+msgid  "Faroese"
+msgstr "فاروئی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PairedList.item
+msgid  "Persian"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PairedList.item
+#, fuzzy
+msgid  "French (France)"
+msgstr "فرانسوی (فرانسه)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PairedList.item
+#, fuzzy
+msgid  "French (Belgium)"
+msgstr "فرانسوی (بلژیک)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PairedList.item
+#, fuzzy
+msgid  "French (Canada)"
+msgstr "فرانسوی (کانادا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PairedList.item
+#, fuzzy
+msgid  "French (Switzerland)"
+msgstr "فرانسوی (سوئیس)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PairedList.item
+#, fuzzy
+msgid  "French (Luxembourg)"
+msgstr "فرانسوی ()"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PairedList.item
+#, fuzzy
+msgid  "French (Monaco)"
+msgstr "فرانسوی (ماکائو)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PairedList.item
+#, fuzzy
+msgid  "Gascon"
+msgstr "Gascon"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PairedList.item
+#, fuzzy
+msgid  "German (Germany)"
+msgstr "آلمانی (آلمان)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PairedList.item
+#, fuzzy
+msgid  "German (Switzerland)"
+msgstr "آلمانی (سوئیس)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PairedList.item
+#, fuzzy
+msgid  "German (Austria)"
+msgstr "آلمانی (اتریش)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PairedList.item
+#, fuzzy
+msgid  "German (Luxembourg)"
+msgstr "آلمانی (لوگزامبورگ)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PairedList.item
+#, fuzzy
+msgid  "German (Liechtenstein)"
+msgstr "آلمانی (لیختن‌اشتاین)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
+#, fuzzy
+msgid  "Greek"
+msgstr "یونانی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PairedList.item
+#, fuzzy
+msgid  "Gujarati"
+msgstr "گجراتی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
+#, fuzzy
+msgid  "Hebrew"
+msgstr "عبری"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PairedList.item
+#, fuzzy
+msgid  "Hindi"
+msgstr "هندی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PairedList.item
+#, fuzzy
+msgid  "Hungarian"
+msgstr "مجاری"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PairedList.item
+#, fuzzy
+msgid  "Icelandic"
+msgstr "ایسلندی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PairedList.item
+#, fuzzy
+msgid  "Indonesian"
+msgstr "اندونزیایی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PairedList.item
+#, fuzzy
+msgid  "Italian (Italy)"
+msgstr "ایتالیایی (ایتالیا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PairedList.item
+#, fuzzy
+msgid  "Italian (Switzerland)"
+msgstr "ایتالیایی (سوئیس)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
+#, fuzzy
+msgid  "Japanese"
+msgstr "ژاپنی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PairedList.item
+#, fuzzy
+msgid  "Kannada"
+msgstr "کناده‌ای"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PairedList.item
+#, fuzzy
+msgid  "Kashmiri (Kashmir)"
+msgstr "کشمیری (کشمیر)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PairedList.item
+#, fuzzy
+msgid  "Kashmiri (India)"
+msgstr "کشمیری (هند)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PairedList.item
+#, fuzzy
+msgid  "Kazak"
+msgstr "قزاقی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PairedList.item
+#, fuzzy
+msgid  "Konkani"
+msgstr "Konkani"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PairedList.item
+#, fuzzy
+msgid  "Korean (RoK)"
+msgstr "کره‌ای (کرهٔ جنوبی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PairedList.item
+#, fuzzy
+msgid  "Latvian"
+msgstr "لاتویایی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PairedList.item
+#, fuzzy
+msgid  "Lithuanian"
+msgstr "لیتوانیایی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PairedList.item
+#, fuzzy
+msgid  "Macedonian"
+msgstr "مقدونی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PairedList.item
+#, fuzzy
+msgid  "Malay (Malaysia)"
+msgstr "مالزیایی (مالزی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PairedList.item
+#, fuzzy
+msgid  "Malay (Brunei Darussalam)"
+msgstr "مالزیایی (برونئی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PairedList.item
+#, fuzzy
+msgid  "Malayalam"
+msgstr "مالایامی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PairedList.item
+#, fuzzy
+msgid  "Manipuri"
+msgstr "Manipuri"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PairedList.item
+#, fuzzy
+msgid  "Marathi"
+msgstr "Marathi"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PairedList.item
+#, fuzzy
+msgid  "Nepali (Nepal)"
+msgstr "نپالی (نپال)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PairedList.item
+#, fuzzy
+msgid  "Nepali (India)"
+msgstr "نپالی (هند)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PairedList.item
+#, fuzzy
+msgid  "Norwegian, Bokmål"
+msgstr "نروژی (کتابی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PairedList.item
+#, fuzzy
+msgid  "Norwegian, Nynorsk"
+msgstr "نروژی (نروژی جدید)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PairedList.item
+#, fuzzy
+msgid  "Oriya"
+msgstr "اوریه‌ای"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PairedList.item
+#, fuzzy
+msgid  "Polish"
+msgstr "لهستانی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PairedList.item
+#, fuzzy
+msgid  "Portuguese (Portugal)"
+msgstr "پرتغالی (پرتغال)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PairedList.item
+#, fuzzy
+msgid  "Portuguese (Brazil)"
+msgstr "پرتغالی (برزیل)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PairedList.item
+#, fuzzy
+msgid  "Punjabi"
+msgstr "پنجابی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PairedList.item
+#, fuzzy
+msgid  "Rhaeto-Romance"
+msgstr "Rhaeto-Romance"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PairedList.item
+#, fuzzy
+msgid  "Romanian"
+msgstr "رومانیایی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PairedList.item
+#, fuzzy
+msgid  "Russian"
+msgstr "روسی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PairedList.item
+#, fuzzy
+msgid  "Sanskrit"
+msgstr "سنسکریت"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PairedList.item
+#, fuzzy
+msgid  "Serbian Cyrillic (Serbia and Montenegro)"
+msgstr "صربی (سیریلی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PairedList.item
+#, fuzzy
+msgid  "Serbian Latin (Serbia and Montenegro)"
+msgstr "صربی (لاتین)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PairedList.item
+msgid  "Serbian Cyrillic (Serbia)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PairedList.item
+msgid  "Serbian Latin (Serbia)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PairedList.item
+msgid  "Serbian Cyrillic (Montenegro)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PairedList.item
+msgid  "Serbian Latin (Montenegro)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PairedList.item
+#, fuzzy
+msgid  "Sindhi"
+msgstr "سندی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.PairedList.item
+msgid  "Slovak"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PairedList.item
+#, fuzzy
+msgid  "Slovenian"
+msgstr "اسلووینیایی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PairedList.item
+#, fuzzy
+msgid  "Spanish (Spain)"
+msgstr "اسپانیایی (اسپانیا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PairedList.item
+#, fuzzy
+msgid  "Spanish (Mexico)"
+msgstr "اسپانیایی (مکزیک)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PairedList.item
+#, fuzzy
+msgid  "Spanish (Guatemala)"
+msgstr "اسپانیایی (گواتمالا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PairedList.item
+#, fuzzy
+msgid  "Spanish (Costa Rica)"
+msgstr "اسپانیایی (کاستاریکا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PairedList.item
+#, fuzzy
+msgid  "Spanish (Panama)"
+msgstr "اسپانیایی (پاناما)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PairedList.item
+#, fuzzy
+msgid  "Spanish (Dom. Rep.)"
+msgstr "اسپانیایی (جمهوری دومینیکا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PairedList.item
+#, fuzzy
+msgid  "Spanish (Venezuela)"
+msgstr "اسپانیایی (ونزوئلا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PairedList.item
+#, fuzzy
+msgid  "Spanish (Colombia)"
+msgstr "اسپانیایی (کلمبیا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PairedList.item
+#, fuzzy
+msgid  "Spanish (Peru)"
+msgstr "اسپانیایی (پرو)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PairedList.item
+#, fuzzy
+msgid  "Spanish (Argentina)"
+msgstr "اسپانیایی (آرژانتین)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PairedList.item
+#, fuzzy
+msgid  "Spanish (Ecuador)"
+msgstr "اسپانیایی (اکوادور)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PairedList.item
+#, fuzzy
+msgid  "Spanish (Chile)"
+msgstr "اسپانیایی (شیلی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PairedList.item
+#, fuzzy
+msgid  "Spanish (Uruguay)"
+msgstr "اسپانیایی (اوروگوئه)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PairedList.item
+#, fuzzy
+msgid  "Spanish (Paraguay)"
+msgstr "اسپانیایی (پاراگوئه)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PairedList.item
+#, fuzzy
+msgid  "Spanish (Bolivia)"
+msgstr "اسپانیایی (بولیوی)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PairedList.item
+#, fuzzy
+msgid  "Spanish (El Salvador)"
+msgstr "اسپانیایی (السالوادور)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PairedList.item
+#, fuzzy
+msgid  "Spanish (Honduras)"
+msgstr "اسپانیایی (هندوراس)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PairedList.item
+#, fuzzy
+msgid  "Spanish (Nicaragua)"
+msgstr "اسپانیایی (نیکاراگوآ)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PairedList.item
+#, fuzzy
+msgid  "Spanish (Puerto Rico)"
+msgstr "اسپانیایی (پرتوریکو)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PairedList.item
+#, fuzzy
+msgid  "Swahili (Kenya)"
+msgstr "سواحلی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PairedList.item
+#, fuzzy
+msgid  "Swedish (Sweden)"
+msgstr "سوئدی (سوئد)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PairedList.item
+#, fuzzy
+msgid  "Swedish (Finland)"
+msgstr "سوئدی (فنلاند)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PairedList.item
+#, fuzzy
+msgid  "Tajik"
+msgstr "Tajik"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PairedList.item
+#, fuzzy
+msgid  "Tamil"
+msgstr "تامیلی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PairedList.item
+#, fuzzy
+msgid  "Tatar"
+msgstr "تاتار"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PairedList.item
+#, fuzzy
+msgid  "Telugu"
+msgstr "تلوگویی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PairedList.item
+#, fuzzy
+msgid  "Thai"
+msgstr "تایلندی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PairedList.item
+#, fuzzy
+msgid  "Turkish"
+msgstr "ترکی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PairedList.item
+#, fuzzy
+msgid  "Urdu (Pakistan)"
+msgstr "اردو (پاکستان)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PairedList.item
+#, fuzzy
+msgid  "Urdu (India)"
+msgstr "اردو (هند)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PairedList.item
+#, fuzzy
+msgid  "Ukrainian"
+msgstr "اوکراینی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PairedList.item
+#, fuzzy
+msgid  "Uzbek Latin"
+msgstr "ازبک (لاتین)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PairedList.item
+#, fuzzy
+msgid  "Welsh"
+msgstr "ویلزی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PairedList.item
+#, fuzzy
+msgid  "User 1"
+msgstr "کاربر ۱"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PairedList.item
+#, fuzzy
+msgid  "User 2"
+msgstr "کاربر ۲"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PairedList.item
+#, fuzzy
+msgid  "User 3"
+msgstr "کاربر ۳"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PairedList.item
+#, fuzzy
+msgid  "User 4"
+msgstr "کاربر ۴"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PairedList.item
+#, fuzzy
+msgid  "User 5"
+msgstr "کاربر ۵"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PairedList.item
+#, fuzzy
+msgid  "User 6"
+msgstr "کاربر ۶"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PairedList.item
+#, fuzzy
+msgid  "User 7"
+msgstr "کاربر ۷"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PairedList.item
+#, fuzzy
+msgid  "User 8"
+msgstr "کاربر ۸"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PairedList.item
+#, fuzzy
+msgid  "User 9"
+msgstr "کاربر ۹"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PairedList.item
+#, fuzzy
+msgid  "Latin"
+msgstr "لاتین"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PairedList.item
+#, fuzzy
+msgid  "Esperanto"
+msgstr "اسپرانتو"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PairedList.item
+#, fuzzy
+msgid  "Kinyarwanda (Rwanda)"
+msgstr "کینیاروآندا (روآندا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PairedList.item
+#, fuzzy
+msgid  "Maori (New Zealand)"
+msgstr "مائوری (زلاند نو)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PairedList.item
+#, fuzzy
+msgid  "Galician"
+msgstr "گالیسیائی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PairedList.item
+#, fuzzy
+msgid  "Dhivehi"
+msgstr "دیوهی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PairedList.item
+#, fuzzy
+msgid  "Northern Sotho"
+msgstr "Northern Sotho"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PairedList.item
+#, fuzzy
+msgid  "Gaelic (Scotland)"
+msgstr "Gaelic (Scotland)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PairedList.item
+#, fuzzy
+msgid  "Mongolian"
+msgstr "مغولی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PairedList.item
+#, fuzzy
+msgid  "Interlingua"
+msgstr "Interlingua"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PairedList.item
+#, fuzzy
+msgid  "Bosnian"
+msgstr "بوسنیایی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PairedList.item
+#, fuzzy
+msgid  "Bengali (Bangladesh)"
+msgstr "بنگالی (بنگلادش)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PairedList.item
+#, fuzzy
+msgid  "Occitan"
+msgstr "Occitan"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PairedList.item
+#, fuzzy
+msgid  "Khmer"
+msgstr "خمری"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PairedList.item
+#, fuzzy
+msgid  "Kurdish (Turkey)"
+msgstr "کردی (ترکیه)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PairedList.item
+#, fuzzy
+msgid  "Kurdish (Syria)"
+msgstr "کردی (سوریه)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PairedList.item
+#, fuzzy
+msgid  "Kurdish (Iraq)"
+msgstr "کردی (عراق)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PairedList.item
+#, fuzzy
+msgid  "Kurdish (Iran)"
+msgstr "کردی (ایران)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PairedList.item
+#, fuzzy
+msgid  "Sardinian"
+msgstr "Sardinian"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PairedList.item
+#, fuzzy
+msgid  "Dzongkha"
+msgstr "Dzongkha"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PairedList.item
+#, fuzzy
+msgid  "Swahili (Tanzania)"
+msgstr "سواحلی (تانزانیا)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PairedList.item
+#, fuzzy
+msgid  "Lao"
+msgstr "لائوسی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PairedList.item
+#, fuzzy
+msgid  "Irish"
+msgstr "ایرلندی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PairedList.item
+#, fuzzy
+msgid  "Tibetan (PR China)"
+msgstr "تبتی (جمهوری خلق چین)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PairedList.item
+#, fuzzy
+msgid  "Georgian"
+msgstr "گرجی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PairedList.item
+#, fuzzy
+msgid  "Frisian"
+msgstr "Frisian"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PairedList.item
+#, fuzzy
+msgid  "Tswana (South Africa)"
+msgstr "Tswana (South Africa)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PairedList.item
+#, fuzzy
+msgid  "Zulu"
+msgstr "زولویی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PairedList.item
+#, fuzzy
+msgid  "Vietnamese"
+msgstr "ویتنامی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PairedList.item
+#, fuzzy
+msgid  "Breton"
+msgstr "برتانیایی"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PairedList.item
+#, fuzzy
+msgid  "Kalaallisut"
+msgstr "Kalaallisut"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PairedList.item
+#, fuzzy
+msgid  "Ndebele, South"
+msgstr "Ndebele (South)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PairedList.item
+#, fuzzy
+msgid  "Southern Sotho"
+msgstr "Southern Sotho"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PairedList.item
+#, fuzzy
+msgid  "Swazi"
+msgstr "Swazi"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PairedList.item
+#, fuzzy
+msgid  "Tsonga"
+msgstr "Tsonga"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PairedList.item
+#, fuzzy
+msgid  "Venda"
+msgstr "Venda"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PairedList.item
+#, fuzzy
+msgid  "Tswana (Botswana)"
+msgstr "Tswana (Botswana)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PairedList.item
+#, fuzzy
+msgid  "Xhosa"
+msgstr "خوسا"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PairedList.item
+#, fuzzy
+msgid  "Sinhala"
+msgstr "Sinhala"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PairedList.item
+#, fuzzy
+msgid  "Moore"
+msgstr "Moore"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PairedList.item
+#, fuzzy
+msgid  "Bambara"
+msgstr "Bambara"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PairedList.item
+#, fuzzy
+msgid  "Akan"
+msgstr "Akan"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PairedList.item
+#, fuzzy
+msgid  "Luxembourgish"
+msgstr "Luxembourgish"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PairedList.item
+#, fuzzy
+msgid  "Friulian"
+msgstr "Friulian"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PairedList.item
+#, fuzzy
+msgid  "Fijian"
+msgstr "Fijian"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PairedList.item
+#, fuzzy
+msgid  "Afrikaans (Namibia)"
+msgstr "Afrikaans (Namibia)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PairedList.item
+#, fuzzy
+msgid  "English (Namibia)"
+msgstr "English (Namibia)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PairedList.item
+#, fuzzy
+msgid  "Walloon"
+msgstr "Walloon"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PairedList.item
+#, fuzzy
+msgid  "Coptic"
+msgstr "Coptic"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PairedList.item
+#, fuzzy
+msgid  "Tigrigna (Eritrea)"
+msgstr "Tigrigna (Eritrea)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PairedList.item
+#, fuzzy
+msgid  "Tigrigna (Ethiopia)"
+msgstr "Tigrigna (Ethiopia)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PairedList.item
+#, fuzzy
+msgid  "Amharic"
+msgstr "Amharic"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PairedList.item
+#, fuzzy
+msgid  "Kirghiz"
+msgstr "Kirghiz"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PairedList.item
+#, fuzzy
+msgid  "German (Belgium)"
+msgstr "German (Belgium)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PairedList.item
+#, fuzzy
+msgid  "Chuvash"
+msgstr "Chuvash"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PairedList.item
+#, fuzzy
+msgid  "Burmese"
+msgstr "Burmese"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PairedList.item
+#, fuzzy
+msgid  "Hausa (Nigeria)"
+msgstr "Hausa (Nigeria)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PairedList.item
+#, fuzzy
+msgid  "Hausa (Ghana)"
+msgstr "Hausa (Ghana)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PairedList.item
+#, fuzzy
+msgid  "Éwé"
+msgstr "Éwé"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PairedList.item
+#, fuzzy
+msgid  "English (Ghana)"
+msgstr "English (Ghana)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PairedList.item
+#, fuzzy
+msgid  "Sango"
+msgstr "Sango"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PairedList.item
+#, fuzzy
+msgid  "Tagalog"
+msgstr "Tagalog"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PairedList.item
+#, fuzzy
+msgid  "Ganda"
+msgstr "Ganda"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PairedList.item
+#, fuzzy
+msgid  "Lingala"
+msgstr "Lingala"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PairedList.item
+msgid  "Low German"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PairedList.item
+msgid  "Hiligaynon"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PairedList.item
+msgid  "Nyanja"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PairedList.item
+msgid  "Kashubian"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PairedList.item
+msgid  "Spanish (Cuba)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PairedList.item
+msgid  "Tetun (Indonesia)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PairedList.item
+msgid  "Quechua (Bolivia, North)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PairedList.item
+msgid  "Quechua (Bolivia, South)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PairedList.item
+msgid  "Somali"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PairedList.item
+#, fuzzy
+msgid  "Sami, Inari (Finland)"
+msgstr "Sami, Inari (Finland)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PairedList.item
+#, fuzzy
+msgid  "Sami, Lule (Norway)"
+msgstr "Sami, Lule (Norway)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PairedList.item
+#, fuzzy
+msgid  "Sami, Lule (Sweden)"
+msgstr "Sami, Lule (Sweden)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PairedList.item
+#, fuzzy
+msgid  "Sami, Northern (Finland)"
+msgstr "Sami, Northern (Finland)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PairedList.item
+#, fuzzy
+msgid  "Sami, Northern (Norway)"
+msgstr "Sami, Northern (Norway)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PairedList.item
+#, fuzzy
+msgid  "Sami, Northern (Sweden)"
+msgstr "Sami, Northern (Sweden)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PairedList.item
+#, fuzzy
+msgid  "Sami, Skolt (Finland)"
+msgstr "Sami, Skolt (Finland)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PairedList.item
+#, fuzzy
+msgid  "Sami, Southern (Norway)"
+msgstr "Sami, Southern (Norway)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PairedList.item
+#, fuzzy
+msgid  "Sami, Southern (Sweden)"
+msgstr "Sami, Southern (Sweden)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PairedList.item
+msgid  "Sami, Kildin (Russia)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PairedList.item
+msgid  "Guaraní, Paraguayan"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PairedList.item
+msgid  "Bodo"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PairedList.item
+msgid  "Dogri"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PairedList.item
+msgid  "Maithili"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PairedList.item
+msgid  "Santali"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PairedList.item
+msgid  "Tetun (Timor-Leste)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PairedList.item
+msgid  "Turkmen"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PairedList.item
+msgid  "Maltese"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PairedList.item
+msgid  "Tok Pisin"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PairedList.item
+msgid  "Shuswap"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.PairedList.item
+msgid  "Oromo"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.PairedList.item
+msgid  "Greek, Ancient"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.PairedList.item
+msgid  "Yiddish (Israel)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.PairedList.item
+msgid  "Quechua (Ecuador)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.PairedList.item
+msgid  "Uyghur"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.PairedList.item
+msgid  "Asturian"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.PairedList.item
+msgid  "Sorbian, Upper"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.PairedList.item
+msgid  "Sorbian, Lower"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.PairedList.item
+msgid  "Latgalian"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PairedList.item
+#, fuzzy
+msgid  "Maore"
+msgstr "Moore"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.PairedList.item
+msgid  "Bushi"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAHITIAN.PairedList.item
+msgid  "Tahitian"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MALAGASY_PLATEAU.PairedList.item
+msgid  "Malagasy, Plateau"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PAPIAMENTU.PairedList.item
+msgid  "Papiamentu (Netherlands Antilles)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_PAPIAMENTU_ARUBA.PairedList.item
+msgid  "Papiamento (Aruba)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_CAMPIDANESE.PairedList.item
+msgid  "Sardinian, Campidanese"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_GALLURESE.PairedList.item
+msgid  "Sardinian, Gallurese"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_LOGUDORESE.PairedList.item
+msgid  "Sardinian, Logudorese"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_SASSARESE.PairedList.item
+msgid  "Sardinian, Sassarese"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAFIA.PairedList.item
+msgid  "Bafia"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GIKUYU.PairedList.item
+msgid  "Gikuyu"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YORUBA.PairedList.item
+msgid  "Yoruba"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_UKRAINE.PairedList.item
+msgid  "Rusyn (Ukraine)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_SLOVAKIA.PairedList.item
+msgid  "Rusyn (Slovakia)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_YIDDISH_US.PairedList.item
+msgid  "Yiddish (USA)"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAWAIIAN_UNITED_STATES.PairedList.item
+msgid  "Hawaiian"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LIMBU.PairedList.item
+msgid  "Limbu"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOJBAN.PairedList.item
+msgid  "Lojban"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KABYLE.PairedList.item
+msgid  "Kabyle"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAITIAN.PairedList.item
+msgid  "Haitian"
+msgstr ""
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
+msgid  "Display IDs"
+msgstr ""
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
+msgid  "This is the input window"
+msgstr ""
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
+msgid  "Transfer to TestTool"
+msgstr ""
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
+msgid  "Show all windows"
+msgstr ""
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
+msgid  "Show short names (if available)"
+msgstr ""
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
+msgid  "Always show long-name"
+msgstr ""
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
+msgid  "DisplayHID"
+msgstr ""
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
+msgid  "Translation"
+msgstr "ترجمه"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
+msgid  "~Edit"
+msgstr "~ویرایش"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
+msgid  "Original Text"
+msgstr "متن اصلی"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
+msgid  "Comment"
+msgstr "توضیح"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
+msgid  "~Comment"
+msgstr "~توضیح"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
+msgid  "~Select"
+msgstr "انت~خاب"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
+msgid  "~Restore"
+msgstr ""
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
+msgid  "~Accept"
+msgstr "~پذیرفتن"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
+msgid  "~Next"
+msgstr "~بعدی"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
+msgid  "Inplace Translation"
+msgstr ""
+
+#: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
+msgid  "The Translation will be lost. Proceed anyway?"
+msgstr ""
+
+#: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
+msgid  "The Control is no longer valid. The Translation cannot be saved."
+msgstr ""
+
+#: source/plugapp/testtool.src#TT_GPF.String.Text
+msgid  "GPF occurred"
+msgstr ""
+
+#: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
+msgid  "HelpID does not match UniqueID: "
+msgstr ""
+
+#: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.String.Text
+msgid  "Tab Panel Scroll Button, backward"
+msgstr ""
+
+#: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.String.Text
+msgid  "Tab Panel Scroll Button, forward"
+msgstr ""
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
+#, fuzzy
+msgid  "Roadmap Skeleton Demo"
+msgstr "نسخه‌ی نمایشی اسکلت نقشه‌راه "
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
+#, fuzzy
+msgid  "Welcome"
+msgstr "خوش آمدید"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
+#, fuzzy
+msgid  "Prepare"
+msgstr "آماده کردن"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
+#, fuzzy
+msgid  "Setup"
+msgstr "نصب"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
+#, fuzzy
+msgid  "Finish"
+msgstr "پایان"

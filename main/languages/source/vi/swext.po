@@ -1,0 +1,572 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: mediawiki/help/wikiformats.xhp#tit
+msgid  "MediaWiki Formats"
+msgstr "Định dạng MediaWiki"
+
+#: mediawiki/help/wikiformats.xhp#hd_id3743095
+msgid  "MediaWiki Formats"
+msgstr "Định dạng MediaWiki"
+
+#: mediawiki/help/wikiformats.xhp#par_id8654133
+msgid  "The following list gives an overview of the text formats that the @WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr "Danh sách dưới đây chứa miêu tả chung về những định dạng văn bản mà @WIKIEXTENSIONPRODUCTNAME@ có thể tải lên máy chủ Wiki."
+
+#: mediawiki/help/wikiformats.xhp#par_id5630664
+msgid  "The OpenDocument format used by Writer and the WikiMedia format are quite different. Only a subset of all features can be transformed from one format to the other."
+msgstr "Định dạng OpenDocument (tài liệu mở) dùng bởi Writer and định dạng MediaWiki hơi khác với nhau. Do đó chỉ không phải tất cả các tính năng chuyển dạng được từ định dạng này sang định dạng khác."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7178868
+msgid  "Headings"
+msgstr "Tiêu đề"
+
+#: mediawiki/help/wikiformats.xhp#par_id508133
+msgid  "Apply a heading paragraph style to the headings in your Writer document. The Wiki will show the heading styles of the same outline level, formatted as defined by the Wiki engine."
+msgstr "Áp dụng một kiểu dáng đoạn văn kiểu tiêu đề cho những tiêu đề trong tài liệu Writer của bạn. Wiki sẽ hiển thị những kiểu dáng tiêu đề theo cùng một bậc phác thảo, được định dạng tùy theo cơ chế Wiki."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7217627
+msgid  "Hyperlinks"
+msgstr "Siêu liên kết"
+
+#: mediawiki/help/wikiformats.xhp#par_id3735465
+msgid  "Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. Therefore, the built-in linking facility of OpenDocument should only be used to create links that point to other sites outside the Wiki web. For creating Wiki links that point to other subjects of the same Wiki domain, use Wiki links."
+msgstr "Ssiêu liên kết OpenDocument sở hữu được chuyển đổi sang liên kết Wiki « bên ngoài ». Vì vậy khả năng liên kết dựng sẵn của OpenDocument chỉ nên được dùng để tạo liên kết chỉ tới địa chỉ bên ngoài Wiki trên Web. Để tạo liên kết chỉ tới địa chỉ khác bên trong miền Wiki, hãy dùng liên kết kiểu Wiki (ngoặc vuông đôi)."
+
+#: mediawiki/help/wikiformats.xhp#hd_id941190
+msgid  "Lists"
+msgstr "Danh sách"
+
+#: mediawiki/help/wikiformats.xhp#par_id8942838
+msgid  "Lists can reliably be exported when the whole list uses a consistent list style. Use the Numbering or Bullets icon to generate a list in Writer. If you need a list without numbering or bullets, use Format - Bullets and Numbering to define and apply the respective list style."
+msgstr "Danh sách có thể được xuất một cách tin cậy khi toàn bộ danh sách theo một kiểu dáng danh sách thống nhất. Dùng biểu tượng <emph>Đánh số</emph> hay <emph>Chấm điểm</emph> để tạo một danh sách trong Writer. Muốn tạo một danh sách không có chấm điểm hay đấnh số thì dùng lệnh trình đơn <emph>Định dạng > Chấm điểm và Đánh số</emph> để xác định và áp dụng kiểu dáng danh sách thích hợp."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7026886
+msgid  "Paragraphs"
+msgstr "Đoạn văn"
+
+#: mediawiki/help/wikiformats.xhp#hd_id4436475
+msgid  "Alignment"
+msgstr "Canh lề"
+
+#: mediawiki/help/wikiformats.xhp#par_id376598
+msgid  "Explicit text alignment should not be used in Wiki articles. Nevertheless, text alignment is supported for left, centered, and right alignment of text."
+msgstr "Không nên dùng chức năng canh lề văn bản dứt khoát trong bài Wiki. Tuy nhiên, chức năng canh lề văn bản được hỗ trợ để canh lề văn bản bên trái, ở giữa và bên phải."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7486190
+msgid  "Pre-formatted text"
+msgstr "Văn bản Định dạng Sẵn"
+
+#: mediawiki/help/wikiformats.xhp#par_id1459395
+msgid  "A paragraph style with a fixed-width font is transformed as pre-formatted text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr "Một kiểu dáng đoạn văn có phông chữ có độ rộng cố định được chuyển dạng như la văn bản định dạng sẵn. Văn bản định dạng sẵn được hiển thị trên Wiki với một viền chung quanh."
+
+#: mediawiki/help/wikiformats.xhp#hd_id4834131
+msgid  "Character styles"
+msgstr "Kiểu dáng Ký tự"
+
+#: mediawiki/help/wikiformats.xhp#par_id6397595
+msgid  "Character styles modify the appearance of parts of a paragraph. The transformation supports bold, italics, bold/italics, subscript and superscript. All fixed width fonts are transformed into the Wiki typewriter style."
+msgstr "Kiểu dáng ký tự làm thay đổi diện mạo một số phần của đoạn văn. Chức năng này hỗ trợ in đậm, nghiêng, đậm/nghiêng, chỉ số trên và chỉ số dưới. Mọi phông chữ có độ rộng cố định đều được chuyển dạng sang kiểu dáng chữ đánh máy Wiki."
+
+#: mediawiki/help/wikiformats.xhp#hd_id5152745
+msgid  "Footnotes"
+msgstr "Cước chú"
+
+#: mediawiki/help/wikiformats.xhp#par_id5238196
+msgid  "Note: The transformation uses the new style of footnotes with <ref> and <references> tags that requires the Cite.php extension to be installed into MediaWiki. If those tags occur as plain text in the transformation result, ask the Wiki administrator to install this extension."
+msgstr "Ghi chú : chức năng chuyển dạng này sử dụng kiểu dáng cước chú mới với thẻ <ref> và <references> mà cần thiết phần mở rộng Cite.php được cài đặt vào phần mềm MediaWiki. Nếu bạn thấy thẻ này theo văn bản bình thường trong kết quả chuyển dạng, yêu cầu quản trị Wiki cài đặt phần mở rộng này."
+
+#: mediawiki/help/wikiformats.xhp#hd_id9405499
+msgid  "Images"
+msgstr "Ảnh"
+
+#: mediawiki/help/wikiformats.xhp#par_id3541673
+msgid  "Images cannot be exported by a transformation producing a single file of Wiki text. However, if the image is already uploaded to the target Wiki domain (e. g. WikiMedia Commons), then the transformation produces a valid image tag that includes the image. Image captions are also supported."
+msgstr "Ảnh không thể được chức năng chuyển dạng xuất ra một tập tin văn bản Wiki riêng lẻ. Tuy nhiên, nếu ảnh đã được tải lên miền Wiki đích (v.d. Wikimedia Commons), thì chức năng chuyển dạng xuất một thẻ ảnh hợp lệ mà bao gồm ảnh đó. Cũng hỗ trợ phụ đề ảnh."
+
+#: mediawiki/help/wikiformats.xhp#hd_id2162236
+msgid  "Tables"
+msgstr "Bảng"
+
+#: mediawiki/help/wikiformats.xhp#par_id3037202
+msgid  "Simple tables are supported well. Table headers are translated into corresponding Wiki style table headers. However, custom formatting of table borders, column sizes and background colors is ignored."
+msgstr "Bảng đơn giản được hỗ trợ. Tiêu đề bảng được chuyển dạng sang tiêu đề kiểu Wiki tương ứng. Tuy nhiên, định dạng riêng của viền bảng, kích cỡ cột và màu nền đều bị bỏ qua."
+
+#: mediawiki/help/wikiformats.xhp#hd_id2954496
+msgid  "Joined Cells"
+msgstr "Ô liền"
+
+#: mediawiki/help/wikiformats.xhp#par_id8253730
+msgid  "OpenDocument and especially OpenOffice.org represent tables that have joined cells that span rows as tables with nested tables. In contrast, the wiki model of table is to declare column and row spans for such joined cells. "
+msgstr "OpenDocument và đặc biệt OpenOffice.org hỗ trợ bảng chứa các ô liền (ô theo hàng) dạng bảng có bảng lồng nhau. Trái lại, mô hình bảng Wiki là khai báo mỗi ô theo hàng và ô theo cột cho các ô liền như vậy. "
+
+#: mediawiki/help/wikiformats.xhp#par_id8163090
+msgid  "If only columns of the same row are joined, the result of the transformation resembles the source document very well."
+msgstr "Nếu chỉ nối lại một số cột trên cùng một hàng, kết quả của chức năng chuyển dạng rất giống với tài liệu nguồn."
+
+#: mediawiki/help/wikiformats.xhp#hd_id425122
+msgid  "Borders"
+msgstr "Viền"
+
+#: mediawiki/help/wikiformats.xhp#par_id1831110
+msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
+msgstr "Bất chấp kiểu dáng bảng riêng đối với viền và nền, một bảng luôn được xuất dưới dạng \"<emph>prettytable</emph>\". Trong máy Wiki, bảng này xuất hiện với viền đơn giản và tiêu đề in đậm."
+
+#: mediawiki/help/wikiformats.xhp#hd_id6255073
+msgid  "Charset and special characters"
+msgstr "Bảng mã và ký tự đặc biệt"
+
+#: mediawiki/help/wikiformats.xhp#par_id8216193
+msgid  "The charset of the transformation result is fixed to UTF-8. Depending on your system, this might not be the default charset. This might cause \"special characters\" to look broken when viewed with default settings. However, you can switch your editor to UTF-8 encoding to fix this. If your editor does not support switching the encoding, you can display the result of the transformation in the Firefox browser and switch the encoding to UTF-8 there. Now, you can cut and paste the transformation result to your program of choice."
+msgstr "Bảng mã của kết quả chuyển dạng là cố định: UTF-8 (khuyến khích cho tiếng Việt). Phụ thuộc vào hệ thống, có lẽ UTF-8 không phải là bảng mã mặc định. Không thì các ký tự đặc biệt có thể không hiển thị đẹp khi xem theo thiết lập mặc định. Tuy nhiên, bạn có thể chuyển đổi trình soạn thảo sang bảng mã UTF-8 để sửa chữa trường hợp này. Nếu trình soạn thảo không hỗ trợ chuyển đổi bảng mã, bạn có thể hiển thị kết quả chuyển dạng trong trình duyệt (v.d. Firefox) và chuyển đổi bảng mã sang UTF-8 trong đó. Vì thế bạn có thể cắt và dán kết quả vào chương trình đã chọn."
+
+#: mediawiki/help/wiki.xhp#tit
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#bm_id3154408
+msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
+
+#: mediawiki/help/wiki.xhp#hd_id5993530
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#par_id9647511
+msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
+msgstr "<ahelp hid=\".\">Bằng cách sử dụng @WIKIEXTENSIONPRODUCTNAME@, bạn có thể tải tài liệu văn bản Writer hiện tại lên một máy chủ MediaWiki. Sau khi tải lên thì mọi người dùng Wiki đều có thể đọc tài liệu của bạn trên Wiki đó.</ahelp>"
+
+#: mediawiki/help/wiki.xhp#par_id6468703
+msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
+msgstr "<ahelp hid=\".\">Chọn <item type=\"menuitem\">Tập tin > Gửi > Cho MediaWiki</item> để tải tài liệu hiện tại lên một máy chủ  MediaWiki.</ahelp>"
+
+#: mediawiki/help/wiki.xhp#hd_id4554582
+msgid  "System Requirements"
+msgstr "Yêu cầu Hệ thống"
+
+#: mediawiki/help/wiki.xhp#par_id2597430
+msgid  "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: mediawiki/help/wiki.xhp#par_id8430738
+msgid  "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 2.4"
+
+#: mediawiki/help/wiki.xhp#par_id9340495
+msgid  "Java Runtime Environment 1.4"
+msgstr "Môi trường chạy Java 1.4"
+
+#: mediawiki/help/wiki.xhp#par_id7387615
+msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
+msgstr "Một tài khoản Wiki trên một máy chủ <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> được hỗ trợ."
+
+#: mediawiki/help/wiki.xhp#hd_id8047120
+msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Cài đặt @WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#par_id4277169
+msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr "Trước khi bạn cài đặt @WIKIEXTENSIONPRODUCTNAME@, hãy bảo đảm rằng phần mềm StarOffice hay OpenOffice.org sử dụng một môi trường chạy Java (JRE: Java Runtime Environment). Để kiểm tra trạng thái của JRE, chọn mục trình đơn <item type=\"menuitem\">Công cụ > Tùy chọn > StarOffice/OpenOffice.org > Java</item>. Chắc chắn rằng mục tùy chọn \\\"Dùng môi trường lúc chạy Java\\\" được bật, đồng thời thư mục chạy Java được chọn trong hộp liệt kê lớn. Nếu chưa kích hoạt môi trường JRE thì hãy kích hoạt một phiên bản JRE 1.4 hay mới hơn, sau đó khởi động  lại chương trình StarOffice/OpenOffice.org."
+
+#: mediawiki/help/wiki.xhp#hd_id567339
+msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Để cài đặt @WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#par_id1732230
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr "Trong một cửa sổ Writer, chọn mục trình đơn <item type=\"menuitem\">Công cụ > Bộ Quản lý Phần mở rộng</item>."
+
+#: mediawiki/help/wiki.xhp#par_id4338511
+msgid  "In the Extension Manager dialog, click Add."
+msgstr "Trong hộp thoại Bộ Quản lý Phần mở rộng, bấm nút Thêm."
+
+#: mediawiki/help/wiki.xhp#par_id5882442
+msgid  "Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click Close. "
+msgstr "Tìm tập tin @WIKIEXTENSIONFILENAME@.oxt, bấm nút Mở, sau đó bấm nút Đóng. "
+
+#: mediawiki/help/wiki.xhp#par_id4008911
+msgid  "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "Đóng %PRODUCTNAME và Quickstarter nếu đang chạy"
+
+#: mediawiki/help/wiki.xhp#par_id265511
+msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr "Khởi chạy lại phần mềm, mở một tài liệu văn bản, sau đó chọn mục trình đơn <item type=\"menuitem\">Công cụ - Tùy chọn - Internet - MediaWiki</item> để nhập thiết lập Wiki riêng. Xem \"Kết nối tới một Wiki\" bên dưới."
+
+#: mediawiki/help/wiki.xhp#hd_id3569444
+msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Gỡ bỏ @WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#par_id2655110
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr "Trong một cửa sổ Writer, chọn mục trình đơn <item type=\"menuitem\">Công cụ > Bộ Quản lý Phần mở rộng</item>."
+
+#: mediawiki/help/wiki.xhp#par_id9504379
+msgid  "Click the plus sign (+) in front of My Extensions."
+msgstr "Nhấn vào dấu cộng (+) phía trước « Phần mở rộng của tôi »."
+
+#: mediawiki/help/wiki.xhp#par_id8431348
+msgid  "Select the extension, click Remove, and then click Close."
+msgstr "Chọn phần mở rộng, bấm nút Gỡ Bỏ, sau đó bấm Đóng."
+
+#: mediawiki/help/wiki.xhp#hd_id5316019
+msgid  "To Connect to a Wiki"
+msgstr "Kết nối tới một Wiki"
+
+#: mediawiki/help/wiki.xhp#par_id2381969
+msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
+msgstr "Ghi chú : bạn có thể lưu lại tên người dùng và mật khẩu cho tất cả các hộp thoại tương ứng bên trong StarOffice/OpenOffice.org. Mật khẩu sẽ được cất giữ bằng một cách bảo mật, truy cập được bảo vệ bằng một mật khẩu chủ. Để bật mật khẩu chủ, chọn mục trình đơn <item type=\"menuitem\">Công cụ > Tùy chọn > StarOffice/OpenOffice.org > Bảo mật</item>."
+
+#: mediawiki/help/wiki.xhp#par_id3751640
+msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
+msgstr "Ghi chú : nếu bạn kết nối tới Web qua máy phục vụ ủy nhiệm, nhập thông tin về máy phục vụ ủy nhiệm dưới <item type=\"menuitem\">Công cụ > Tùy chọn > Internet > Ủy nhiệm</item>, sau đó khởi chạy lại phần mềm."
+
+#: mediawiki/help/wiki.xhp#par_id9533677
+msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
+msgstr "Mở một tài liệu Writer, sau đó chọn mục trình đơn <item type=\"menuitem\">Công cụ - Tùy chọn - Internet -> MediaWiki</item>."
+
+#: mediawiki/help/wiki.xhp#par_id368968
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
+msgstr "Trong hộp thoại <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Tùy chọn</link>, nhấn vào nút Thêm."
+
+#: mediawiki/help/wiki.xhp#par_id6962187
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
+msgstr "Trong hộp thoại <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>, nhập thông tin tài khoản cho Wiki."
+
+#: mediawiki/help/wiki.xhp#par_id5328836
+msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "Trong hộp văn bản URL, gõ địa chỉ của một Wiki tới đó bạn muốn kết nối."
+
+#: mediawiki/help/wiki.xhp#par_id389416
+msgid  "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "Bạn cũng có thể sao chép địa chỉ URL từ trình duyệt Web, sau đó dán nó vào hộp văn bản."
+
+#: mediawiki/help/wiki.xhp#par_id5906552
+msgid  "In the Username box, enter your user ID for your Wiki account."
+msgstr "Trong hộp Tên người dùng, gõ tên người dùng của tài khoản Wiki của bạn."
+
+#: mediawiki/help/wiki.xhp#par_id9297158
+msgid  "If the Wiki allows anonymous write access, you can leave the Username and Password boxes empty."
+msgstr "Nếu Wiki cho phép truy cập ghi nặc danh, bạn có thể bỏ trống hai hộp Tên người dùng và Mật khẩu."
+
+#: mediawiki/help/wiki.xhp#par_id8869594
+msgid  "In the Password box, enter the password for your Wiki account, then click OK."
+msgstr "Trong hộp Mật khẩu, gõ mật khẩu của tài khoản Wiki của bạn, sau đó bấm nút OK."
+
+#: mediawiki/help/wiki.xhp#par_id292062
+msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
+msgstr "Bạn cũng có thể bật tùy chọn \"Lưu mật khẩu\" để lưu lại mật khẩu giữa hai buổi đăng nhập. Một mật khẩu chủ được sử dụng để điều khiển truy cập vào các mật khẩu đã lưu. Chọn mục trình đơn <item type=\"menuitem\">Công cụ > Tùy chọn > StarOffice/OpenOffice.org > Bảo mật</item> để bật mật khẩu chủ. Không bật mật khẩu chủ thì không thể sử dụng tùy chọn \"Lưu mật khẩu\" này."
+
+#: mediawiki/help/wiki.xhp#hd_id7044892
+msgid  "To Create a New Wiki Page"
+msgstr "Tạo một trang Wiki mới"
+
+#: mediawiki/help/wiki.xhp#par_id3514206
+msgid  "Open a Writer document."
+msgstr "Mở một tài liệu Writer."
+
+#: mediawiki/help/wiki.xhp#par_id944853
+msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
+msgstr "Ghi nội dung của bài Wiki bạn muốn tạo. Cũng có thể sử dụng mã định dạng, v.d. định dạng văn bản, tiêu đề, cước chú. Xem <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">danh sách các định dạng đã hỗ trợ</link>."
+
+#: mediawiki/help/wiki.xhp#par_id4566484
+msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
+msgstr "Chọn mục trình đơn <item type=\"menuitem\">Tập tin > Gửi > Cho MediaWiki</item>."
+
+#: mediawiki/help/wiki.xhp#par_id228278
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
+msgstr "Trong hộp thoại <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Gửi cho MediaWiki</link>, hãy ghi rõ thiết lập cho mục nhập của bạn."
+
+#: mediawiki/help/wiki.xhp#par_id2564165
+msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
+msgstr "<emph>Máy phục vụ MediaWiki</emph>: chọn Wiki."
+
+#: mediawiki/help/wiki.xhp#par_id5566576
+msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
+msgstr "<emph>Tựa đề</emph>: gõ tựa đề của bài của bạn. Gõ tựa đề của một trang đã có, để ghi đề lên nó bằng tài liệu văn bản hiện tại. Gõ một tựa đề mới để tạo một trang mới trong Wiki."
+
+#: mediawiki/help/wiki.xhp#par_id9688711
+msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
+msgstr "<emph>Tóm tắt</emph>: (tùy chọn) tóm tắt trang của bạn."
+
+#: mediawiki/help/wiki.xhp#par_id4123661
+msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
+msgstr "<emph>Sửa đổi nhỏ</emph> : bật tùy chọn này để ngụ ý trang được tải lên chỉ sửa đổi một ít trang đã có cùng tên."
+
+#: mediawiki/help/wiki.xhp#par_id452284
+msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
+msgstr "<emph>Hiện trong trình duyệt Web</emph>: bật tùy chọn này để mở trình duyệt Web trên máy của bạn và hiển thị trang Wiki vừa mới tải lên."
+
+#: mediawiki/help/wiki.xhp#par_id8346812
+msgid  "Click Send."
+msgstr "Bấm nút <emph>Gửi</emph>."
+
+#: mediawiki/help/wikisettings.xhp#tit
+msgid  "MediaWiki Options"
+msgstr "Tùy chọn MediaWiki"
+
+#: mediawiki/help/wikisettings.xhp#hd_id6425672
+msgid  "MediaWiki Options"
+msgstr "Tùy chọn MediaWiki"
+
+#: mediawiki/help/wikisettings.xhp#par_id1188390
+msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
+msgstr "Bạn có khả năng thêm, chỉnh sửa và gỡ bỏ máy phục vụ MediaWiki. Mở hộp thoại <item type=\"menuitem\">Công cụ - Tùy chọn - Internet - MediaWiki</item>. Hoặc chọn mục trình đơn <item type=\"menuitem\">Công cụ - Bộ Quản lý Phần mở rộng</item>, chọn @WIKIEXTENSIONPRODUCTNAME@, sau đó nhấn vào nút <emph>Tùy chọn</emph>."
+
+#: mediawiki/help/wikisettings.xhp#par_id300607
+msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\">Bấm nút <emph>Thêm</emph> để thêm một máy phục vụ Wiki mới.<br/>Chọn một mục nhập, sau đó bấm nút <emph>Sửa</emph> để chỉnh sửa thiết lập tài khoản.<br/>Chọn một mục nhập, sau đó bấm nút <emph>Bỏ</emph> để gỡ bỏ mục đó khỏi danh sách.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id9786065
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Mở hộp thoại <emph>MediaWiki</emph> để thêm một mục nhập mới vào danh sách.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id3386333
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Mở hộp thoại <emph>MediaWiki</emph> để chỉnh sửa mục nhập đã chọn.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id7285073
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Gỡ bỏ mục nhập đã chọn khỏi danh sách.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id1029084
+msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
+msgstr "Khi bạn nhấn vào nút <emph>Thêm</emph> hay <emph>Sửa</emph>, hộp thoại <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> mở."
+
+#: mediawiki/help/wikiaccount.xhp#tit
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/help/wikiaccount.xhp#hd_id960722
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/help/wikiaccount.xhp#par_id4571672
+msgid  "Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr "Hãy sử dụng hộp thoại MediaWiki để thêm hay chỉnh sửa thiết lập tài khoản MediaWiki của bạn."
+
+#: mediawiki/help/wikiaccount.xhp#par_id7631458
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Gõ địa chỉ URL của một máy phục vụ MediaWiki, bắt đầu với giao thức (http://).</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id7862483
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Gõ tên người dùng của bạn trên máy phục vụ MediaWiki này. Bỏ trống để truy cập nặc danh.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id1113010
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Gõ mật khẩu của bạn trên máy phục vụ MediaWiki này. Bỏ trống để truy cập nặc danh.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id656758
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Bật tùy chọn này để lưu lại mật khẩu của bạn giữa hai buổi đăng nhập. Mật khẩu chủ phải được bật: xem <item type=\"menuitem\">Công cụ - Tùy chọn - OpenOffice.org - Bảo mật</item>.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id3112582
+msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr "Gõ địa chỉ Internet của một máy phục vụ Wiki theo định dạng (v.d.) « http://wiki.services.openoffice.org/wiki », hoặc sao chép địa chỉ URL từ trình duyệt Web."
+
+#: mediawiki/help/wikiaccount.xhp#par_id628070
+msgid  "If the Wiki allows anonymous access, you can leave the account text boxes empty. Else enter your user name and password."
+msgstr "Nếu Wiki này cho phép truy cập nặc danh, bạn có thể bỏ trống các hộp văn bản của tài khoản. Không thì gõ tên người dùng và mật khẩu của bạn."
+
+#: mediawiki/help/wikiaccount.xhp#par_id9046601
+msgid  "If you have enabled the master password feature on the Security tab page of the Tools - Options - %PRODUCTNAME dialog, then the software can store your password and automatically insert the data where necessary. Enable the \"Save password\" checkbox to store your password."
+msgstr "Nếu bạn đã bật tùy chọn mật khẩu chủ trên thẻ  Bảo mật  của hộp thoại Công cụ - Tùy chọn - OpenOffice.org, phần mềm có khả năng lưu lại mật khẩu của bạn rồi tự động chèn nó theo yêu cầu. Bật tùy chọn \"Lưu mật khẩu\" để lưu lại mật khẩu của bạn."
+
+#: mediawiki/help/wikisend.xhp#tit
+msgid  "Send to MediaWiki"
+msgstr "Gửi cho MediaWiki"
+
+#: mediawiki/help/wikisend.xhp#hd_id108340
+msgid  "Send to MediaWiki"
+msgstr "Gửi cho MediaWiki"
+
+#: mediawiki/help/wikisend.xhp#par_id1743827
+msgid  "In the Send to MediaWiki dialog, specify the settings for your current Wiki upload."
+msgstr "Trong hộp thoại <emph>Gửi cho MediaWiki</emph>, ghi rõ thiết lập cho việc tải lên Wiki hiện thời."
+
+#: mediawiki/help/wikisend.xhp#par_id664082
+msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\">Chọn máy phục vụ MediaWiki trên đó bạn muốn công bố tài liệu của bạn. Nhấn vào nút <emph>Thêm</emph> để thêm một máy phục vụ mới vào danh sách.</ahelp>"
+
+#: mediawiki/help/wikisend.xhp#par_id2794885
+msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
+msgstr "<ahelp hid=\".\">Gõ tựa đề của mục nhập Wiki của bạn. Đối với một bài mới, tựa đề này phải duy nhất trên Wiki này. Nếu bạn dùng một tựa đề đã có, bài của bạn sẽ ghi đè lên bài Wiki đã có.</ahelp>"
+
+#: mediawiki/help/wikisend.xhp#par_id2486342
+msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
+msgstr "<ahelp hid=\".\">Gõ một bản tóm tắt hay ghi chú (tùy chọn).</ahelp> Xem <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
+
+#: mediawiki/help/wikisend.xhp#par_id823999
+msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
+msgstr "<emph>Sửa đổi nhỏ</emph>: <ahelp hid=\".\">Đánh dấu trong hộp này để ngụ ý dữ liệu được tải lên là một bản sửa đổi nhỏ của trang đã có cùng tên.</ahelp>"
+
+#: mediawiki/help/wikisend.xhp#par_id6592913
+msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
+msgstr "<emph>Hiện trong trình duyệt Web</emph>: <ahelp hid=\".\">Bật tùy chọn này để mở trình duyệt Web trên máy của bạn và hiển thị trang mới tải lên.</ahelp>"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
+msgid  "To Media~Wiki..."
+msgstr "Cho Media~Wiki..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.GeneralSendError
+msgid  "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "Thao tác « Gửi cho MediaWiki » không thể hoàn tất thành công."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoWikiFilter
+msgid  "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
+msgstr "Không tìm thấy bộ lọc xuất MediaWiki. Hãy chọn mục trình đơn 'Công cụ > Thiết lập bộ lọc XML' để cài đặt bộ lọc, hoặc dùng thiết lập để cài đặt thành phần."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoConnectionToURL
+msgid  "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "Không thể tạo kết nối tới hệ thống MediaWiki ở « $ARG1 »."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.WrongLogin
+msgid  "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
+msgstr "Tên người dùng hay mật khẩu không đúng. Hãy thử lại, hoặc bỏ trống các trường để kết nối nặc danh."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.InvalidURL
+msgid  "A connection could not be created because the URL is invalid."
+msgstr "Không thể tạo kết nối, vì địa chỉ URL sai."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoURL
+msgid  "Specify a MediaWiki server by providing a URL."
+msgstr "Ghi rõ một máy phục vụ MediaWiki bằng cách cung cấp một địa chỉ URL."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.CancelSending
+msgid  "The transfer has been interrupted. Please check the integrity of the wiki article."
+msgstr "Tiến trình truyền dữ liệu đã bị gián đoạn. Hãy kiểm tra tình trạng nguyên vẹn của bài Wiki."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UrlLabel
+msgid  "U~RL"
+msgstr "U~RL"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UsernameLabel
+msgid  "~Username"
+msgstr "Tên người ~dùng"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_PasswordLabel
+msgid  "~Password"
+msgstr "~Mật khẩu"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendTitle
+msgid  "Send to MediaWiki"
+msgstr "Gửi cho MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_WikiArticle
+msgid  "Wiki article"
+msgstr "Bài Wiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_No
+msgid  "No"
+msgstr "Không"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_OK
+msgid  "OK"
+msgstr "OK"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_Yes
+msgid  "Yes"
+msgstr "Có"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_AddButton
+msgid  "~Add..."
+msgstr "Thê~m..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditButton
+msgid  "~Edit..."
+msgstr "~Sửa..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendButton
+msgid  "~Send"
+msgstr "~Gửi"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_RemoveButton
+msgid  "~Remove"
+msgstr "~Bỏ"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_NewWikiPage_Label1
+msgid  "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
+msgstr "Chưa có một bài Wiki tên « $ARG1 ». Bạn có muốn tạo một bài mới với tên đó không?"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label1
+msgid  "Media~Wiki Server"
+msgstr "Máy phục vụ Media~Wiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label2
+msgid  "~Title"
+msgstr "~Tựa đề"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label3
+msgid  "S~ummary"
+msgstr "Tó~m tắt"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck
+msgid  "This is a ~minor edit"
+msgstr "Sửa đổi ~nhỏ"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck
+msgid  "Show in web ~browser"
+msgstr "Hiện trong trình du~yệt Web"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.UnknownCert
+msgid  "The certificate of the selected site is unknown."
+msgstr "Không nhận ra chứng nhận của địa chỉ đã chọn."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Title
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_AccountLine
+msgid  "Account"
+msgstr "Tài khoản"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_WikiLine
+msgid  "MediaWiki Server"
+msgstr "Máy phục vụ MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_SaveBox
+msgid  "~Save password"
+msgstr "~Lưu mật khẩu"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Extension_String
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_WikiPageExists_Label1
+msgid  "A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;"
+msgstr "wiki với tiêu đề  '$ARG1' đã tồn tại. &#13;&#13;Thay thế bài viết hiện tại?&#13;&#13;"

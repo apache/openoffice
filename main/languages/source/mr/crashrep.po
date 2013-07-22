@@ -1,0 +1,208 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/all/crashrep.ulf#%WELCOME_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% दोष अहवाल"
+
+#: source/all/crashrep.ulf#%WELCOME_HEADER%
+msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr " %PRODUCTNAME% %PRODUCTVERSION%  दोष अहवालात स्वागत  "
+
+#: source/all/crashrep.ulf#%WELCOME_BODY1%
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\\n\\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%WELCOME_BODY2%
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%WELCOME_BODY3%
+msgid  "Customer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%PRIVACY_URL%
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr ""
+
+#: source/all/crashrep.ulf#%NEXT_BUTTON%
+msgid  "~Next >>"
+msgstr "पुढचा >> (~N)"
+
+#: source/all/crashrep.ulf#%CANCEL_BUTTON%
+msgid  "Cancel"
+msgstr "रद्द करा"
+
+#: source/all/crashrep.ulf#%OK_BUTTON%
+msgid  "OK"
+msgstr "ठिक आहे"
+
+#: source/all/crashrep.ulf#%REPORT_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% दोष अहवाल"
+
+#: source/all/crashrep.ulf#%REPORT_HEADER%
+msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% चालू असताना दोष आढळला"
+
+#: source/all/crashrep.ulf#%REPORT_BODY%
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%ENTER_TITLE%
+msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr "दोष घडला तेव्हा आपण कोणते कागदपत्र (उदा. सादरीकरण) वापरत होता?"
+
+#: source/all/crashrep.ulf#%ALLOW_CONTACT%
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
+
+#: source/all/crashrep.ulf#%ENTER_EMAIL%
+msgid  "Please enter your e-mail address."
+msgstr "कृपया आपला ई-मेल पत्ता एंटर करा."
+
+#: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
+msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "जेव्हा दोष घडला तेव्हा आपण %PRODUCTNAME% ला कशा प्रकारे वापरत होता (~H)?"
+
+#: source/all/crashrep.ulf#%BACK_BUTTON%
+msgid  " << ~Back"
+msgstr " << मागे (~B)"
+
+#: source/all/crashrep.ulf#%SEND_BUTTON%
+msgid  "S~end"
+msgstr "पाठवा (~e)"
+
+#: source/all/crashrep.ulf#%DONOT_SEND_BUTTON%
+msgid  "Do ~Not Send"
+msgstr "पाठवू नका (~N)"
+
+#: source/all/crashrep.ulf#%SHOW_REPORT_BUTTON%
+msgid  "Show ~Report..."
+msgstr "अहवाल दाखवा (~R)..."
+
+#: source/all/crashrep.ulf#%SAVE_REPORT_BUTTON%
+msgid  "~Save Report..."
+msgstr "अहवाल साठवा (~S)..."
+
+#: source/all/crashrep.ulf#%SAVE_REPORT_TITLE%
+msgid  "Save Report to"
+msgstr "अहवाल यात साठवा"
+
+#: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\\n Please use a MAPI-compatible e-mail program."
+msgstr ""
+
+#: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
+msgid  "The error report could not be temporarily saved and could therefore not be sent."
+msgstr "दोष अहवाल तात्पुरता जतन करता न आल्याने पाठवता आला नाही."
+
+#: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
+msgid  "The error report could not be sent because 'sendmail' could not be started.\\nPlease check the 'sendmail' settings."
+msgstr ""
+
+#: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
+msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr "दोष अहवाल पाठवता आला नाही. कृपया दोष अहवाल साधना खालील 'पर्याय' मधील प्रॉक्सी संरचना तपासा."
+
+#: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
+msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr "दोष अहवाल पाठवता आला नाही कारण इंटरनेट जुळणी नाही. कृपया आपली इंटरनेट नियंत्रणाना तपासा."
+
+#: source/all/crashrep.ulf#%OPTIONS_BUTTON%
+msgid  "~Options..."
+msgstr "पर्याय (~O)..."
+
+#: source/all/crashrep.ulf#%OPTIONS_TITLE%
+msgid  "Options"
+msgstr "पर्याय"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_HEADER%
+msgid  "Proxy settings"
+msgstr "प्रॉक्सी संरचना"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_SYSTEM%
+msgid  "Use ~system settings"
+msgstr "प्रणाली संरचना वापरा (~s)"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DIRECT%
+msgid  "Use ~direct connection to the Internet"
+msgstr "इंटरनेटच्या प्रत्यक्ष जुळणीचा उपयोग करा (~d)"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_MANUAL%
+msgid  "Use ~manual settings"
+msgstr "मॅन्यूअल संरचना वापरा (~m)"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_ADDRESS%
+msgid  "HT~TP Proxy"
+msgstr "HTTP प्रॉक्सी (~T)"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_PORT%
+msgid  "~Port"
+msgstr "पोर्ट (~P)"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\\n\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\n\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
+msgid  "Sending Error Report"
+msgstr "दोष अहवाल पाठवत आहे"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS%
+msgid  "Status: Sending error report"
+msgstr "सद्यःस्थिति: दोष अहवाल पाठवत आहे"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS_FINISHED%
+msgid  "Status: The error report has been sent successfully."
+msgstr "सद्यःस्थिति: दोष अहवाल यशस्वीरीत्या पाठवला गेला."
+
+#: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\\nPlease enter your e-mail address."
+msgstr ""
+
+#: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
+msgid  "Usage:"
+msgstr "वापर:"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID%
+msgid  "-p <process ID>"
+msgstr "-p <प्रक्रिया ID>"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
+msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "दोष अहवाल साधनाला %PRODUCTNAME% प्रक्रियाID (PID) ठरवतो. "
+
+#: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
+msgid  "Shows this help text.\\nDetailed information can be found in the Setup Guide."
+msgstr ""

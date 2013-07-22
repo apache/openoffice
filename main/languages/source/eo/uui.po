@@ -1,0 +1,680 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.ModalDialog.Text
+msgid  "Website Certified by an Unknown Authority"
+msgstr "Reteja atestilo de nekonata aŭtoritato"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PushButton.Text
+msgid  "Examine Certificate..."
+msgstr "Rigardu atestilon..."
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HelpButton.Text
+msgid  "Help"
+msgstr "Helpo"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PushButton.Text
+msgid  "OK"
+msgstr "Akcepti"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RadioButton.Text
+msgid  "Accept this certificate temporarily for this session"
+msgstr "Akcepti ĉi tiun atestilon provizore por ĉi tiu seanco"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RadioButton.Text
+msgid  "Do not accept this certificate and do not connect to this Web site"
+msgstr "Ne akceptu ĉi tiun atestilon kaj ne konektu al ĉi tiu retejo."
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FixedText.Text
+msgid  "No Text"
+msgstr "Neniu teksto"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
+msgid  "Enter password to open file: \\n"
+msgstr ""
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
+msgid  "Enter password to modify file: \\n"
+msgstr ""
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
+msgid  "Enter password: "
+msgstr ""
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.String.Text
+msgid  "Confirm password: "
+msgstr ""
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.String.Text
+msgid  "Set Password"
+msgstr ""
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.String.Text
+msgid  "Enter Password"
+msgstr ""
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
+msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr ""
+
+#: source/trylater.src#STR_TRYLATER_TITLE.String.Text
+msgid  "Document in Use"
+msgstr "Dokumento uzata"
+
+#: source/trylater.src#STR_TRYLATER_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redakti de:\n\n$(ARG2)\n\nReprovu poste konservi dokumenton aŭ konservi kopion de tiu dokumento.\n\n"
+
+#: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
+msgid  "~Retry Saving"
+msgstr "Reprovi konservi"
+
+#: source/trylater.src#STR_TRYLATER_SAVEAS_BTN.String.Text
+msgid  "~Save As..."
+msgstr "Konservi kiel..."
+
+#: source/ids.src#RID_KEEP_PASSWORD.String.Text
+msgid  "~Remember password until end of session"
+msgstr "Memori pasvorton ĝis fino de seanco"
+
+#: source/ids.src#RID_SAVE_PASSWORD.String.Text
+msgid  "~Remember password"
+msgstr "Memori pasvorton"
+
+#: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
+msgid  "Invalid Document Signature"
+msgstr "Nevalida dokumenta subskribo"
+
+#: source/ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.String.Text
+msgid  "Non-Encrypted Streams"
+msgstr "Neĉifritaj fluoj"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
+msgid  "The operation executed on $(ARG1) was aborted."
+msgstr "La operacio plenumita je $(ARG1) estas ĉesigita."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
+msgid  "Access to $(ARG1) was denied."
+msgstr "Atingo al $(ARG1) estis rifuzita."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) already exists."
+msgstr "$(ARG1) jam ekzistas."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "Target already exists."
+msgstr "Celo jam ekzistas."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
+msgid  "You are about to save/export a password protected basic library containing module(s) \\n$(ARG1)\\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an incorrect checksum."
+msgstr "La datumoj de $(ARG1) havas malĝustan kontrolsumon."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
+msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "La objekto $(ARG1) ne povas esti kreita en dosierujo $(ARG2)."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
+msgid  "Data of $(ARG1) could not be read."
+msgstr "Datumoj de $(ARG1) ne povis esti legitaj."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
+msgid  "The seek operation on $(ARG1) could not be performed."
+msgstr "La operacio seek pri $(ARG1) ne plenumeblis."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
+msgid  "The tell operation on $(ARG1) could not be performed."
+msgstr "La operacio tell pri $(ARG1) ne plenumeblis."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "Data for $(ARG1) could not be written."
+msgstr "Datumoj por $(ARG1) ne povis esti skribitaj."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) is the current directory."
+msgstr "Neebla ago: $(ARG1) estas la aktuala dosierujo."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready."
+msgstr "$(ARG1) ne estas preta."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "Neebla ago: $(ARG1) kaj $(ARG2) estas malsamaj aparatoj (diskoj)."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
+msgid  "General input/output error while accessing $(ARG1)."
+msgstr "Ĝenerala eneliga eraro dum atingado de $(ARG1)."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
+msgid  "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "Provo atingi $(ARG1) farita laŭ nevalida maniero."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains invalid characters."
+msgstr "$(ARG1) enhavas nevalidajn signojn."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "The device (drive) $(ARG1) is invalid."
+msgstr "La aparato (pelilo) $(ARG1) estas nevalida."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an invalid length."
+msgstr "La datumoj de $(ARG1) havas nevalidan longon."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "La operacio je $(ARG1) komenciĝis per nevalida parametro."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
+msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr "La operacio ne povas esti plenumita, ĉar $(ARG1) enhavas ĵokerojn."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
+msgid  "Error during shared access to $(ARG1)."
+msgstr "Eraro dum kundivida atingo al $(ARG1)."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains misplaced characters."
+msgstr "$(ARG1) enhavas mislokitajn signojn."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
+msgid  "The name $(ARG1) contains too many characters."
+msgstr "La nomo $(ARG1) enhavas tro multajn signojn."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) does not exist."
+msgstr "$(ARG1) ne ekzistas."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
+msgid  "The path $(ARG1) does not exist."
+msgstr "La vojprefikso $(ARG1) ne ekzistas."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgstr "La operacio je $(ARG1) ne estas subtenata sur tiu ĉi operaciumo."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a directory."
+msgstr "$(ARG1) ne estas dosierujo."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a file."
+msgstr "$(ARG1) ne estas dosiero."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
+msgid  "There is no space left on device $(ARG1)."
+msgstr "Ne plu estas loko sur la aparato $(ARG1)."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr "La operacio pri $(ARG1) ne plenumeblas ĉar tro multaj dosieroj jam estas malfermitaj."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgstr "La operacio pri $(ARG1) ne plenumeblas ĉar ne pli da memoro disponeblas."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "La operacio pri $(ARG1) ne plenumeblas ĉar pli da datumoj atendas."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) cannot be copied into itself."
+msgstr "$(ARG1) ne povas esti kopiita al si mem."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
+msgid  "Unknown input/output error while accessing $(ARG1)."
+msgstr "Nekonata eneliga eraro dum atingado de $(ARG1)."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is write protected."
+msgstr "$(ARG1) estas nurlega."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not in the correct format."
+msgstr "$(ARG1) ne estas en la ĝusta formato."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The version of $(ARG1) is not correct."
+msgstr "La versio de $(ARG1) ne estas ĝusta."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Drive $(ARG1) does not exist."
+msgstr "Disko $(ARG1) ne ekzistas."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
+msgid  "Folder $(ARG1) does not exist."
+msgstr "Dosierujo $(ARG1) ne ekzistas."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported."
+msgstr "La instalita versio de Ĝavo ne estas subtenata."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported."
+msgstr "La instalita versio de Ĝavo $(ARG1) ne estas subtenata."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr "La instalita ĝava versio ne estas subtenata, almenaŭ versio $(ARG1) estas bezonata."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr "La instalita ĝava versio $(ARG1) ne estas subtenata, almenaŭ versio $(ARG2) estas bezonata."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership is corrupted."
+msgstr "La datumoj rilataj al la partnereco estas damaĝitaj."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "La datumoj rilataj al la partnereco $(ARG1) estas damaĝitaj."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready."
+msgstr "Volumo $(ARG1) ne estas preta."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgstr "$(ARG1) ne estas preta; bonvolu enmetu plurmediaĵon."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "Datumportilo $(ARG1) ne estas preta; bonvolu enmetu plurmediaĵon."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
+msgid  "Please insert disk $(ARG1)."
+msgstr "Bonvolu enmeti diskon $(ARG1)."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
+msgid  "The object cannot be created in directory $(ARG1)."
+msgstr "La objekto ne povas esti kreita en la dosierujo $(ARG1)."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr "%PRODUCTNAME ne povas malebligi anstataŭigon de dosieroj dum tiu transira protokolo uzatas. Ĉu tamen vi volas daŭrigi?"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\\n\\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the repaired document.\\nExecution of macros is disabled for this document.\\n\\nShould %PRODUCTNAME repair the file?\\n"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr "La dosiero '$(ARG1)' ne povas esti riparita kaj do ne estas malfermebla."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr "La agorda datumfonto '$(ARG1)' estas nealirebla. Sen ties datumoj iuj funkcioj eble ne ĝuste funkcios."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
+msgid  "The form contains invalid data. Do you still want to continue?"
+msgstr "La formularo enhavas nevalidajn datumojn. Ĉu vi volas ankoraŭ daŭrigi?"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is currently not locked by yourself."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
+msgid  "The previously obtained lock for file $(ARG1) has expired.\\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
+msgid  "Unable to verify the identity of $(ARG1) site.\\n\\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\\n\\nYou should check to make sure that your computer's time is correct."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\\n\\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\\n\\nWould you like to continue anyway?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\\n\\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
+msgid  "Security Warning: Domain Name Mismatch"
+msgstr "Sekureca Averto: Miskongrua Domajna Nomo."
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
+msgid  "Security Warning: Server Certificate Expired"
+msgstr "Sekureca Averto: Servila Atestilo Eksvalidiĝis"
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
+msgid  "Security Warning: Server Certificate Invalid"
+msgstr "Sekureca Averto: Servila Atestilo Nevalidas"
+
+#: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
+msgid  "Filter Selection"
+msgstr "Filtri elekton"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.ModalDialog.Text
+msgid  "Authentication Required"
+msgstr "Nomo de uzanto kaj pasvorto bezonataj"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
+msgid  "Message from server:"
+msgstr ""
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
+msgid  "Enter user name and password for: \\n%1"
+msgstr ""
+
+#: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
+msgid  "Enter user name and password for: \\n\"%2\" on %1"
+msgstr "Bonvolu entajpi uzantnomon kaj pasvorton por \"%2\" en %1."
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
+msgid  "~Path"
+msgstr "Vojprefikso"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "Nomo de uzanto"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
+msgid  "Pass~word"
+msgstr "Pasvorto"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
+msgid  "A~ccount"
+msgstr "Konto"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
+msgid  "~Remember password"
+msgstr "Konservi pasvorton"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CheckBox.Text
+msgid  "~Use system credentials"
+msgstr "Uzi sisteman legitimaĵon"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
+msgid  "~Send"
+msgstr "Sendi"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
+msgid  "I~gnore"
+msgstr "Malatenti"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
+msgid  "I~nteractive"
+msgstr "Interaktiva"
+
+#: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
+msgid  "Future Cookie Handling"
+msgstr "Estonta kuketa traktado"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
+msgid  "~Ignore"
+msgstr "Malatenti"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
+msgid  "~Send"
+msgstr "Sendi"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
+msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr "La servilo '${HOST}' volas agordi almenaŭ unu kuketon.\nKuketoj enhavas informon kiu referas al specifaj URL-klasoj. Se %PRODUCTNAME poste petas dokumenton kun URL kiu rilatas al la klaso de antaŭe agordita kuketo, %PRODUCTNAME sendos tiun informon al la servilo. Tio ebligas al servilo rekoni la staton de TTT-aplikaĵo, ekzemple kiam oni butikumas Interrete.\n\nLa jenaj kuketoj devus esti agorditaj:\n\n"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr "Domajno: ${DOMAIN}, Vojo: ${PATH}, Kuketo: ${COOKIE}.\n"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
+msgid  "Cookie Reception"
+msgstr "Ricevo de kuketo"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr "%PRODUCTNAME konservis kuketojn por servilo '${HOST}' kiuj estos senditaj kiam petante la dokumenton ${PATH}.\nKuketoj enhavas informon kiu rilatas al specifaj URL-klasoj. Iuj serviloj sendas ilin al %PRODUCTNAME kie ili konserviĝas kiam specifaj dokumentoj estas alirataj. Se %PRODUCTNAME ŝargas dokumenton kiu, laŭ la URL, rilatas al klaso de iu antaŭe ricevita kuketo, %PRODUCTNAME sendos tiun informon al tiu servilo. Tio ebligas al servilo spuri la staton de TTT-aplikaĵo, ekzemple kiam butikumante Interrete.\n\nLa jenaj kuketoj devus esti agorditaj:\n\n"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr "Domajno: ${DOMAIN}, Vojo: ${PATH}, Kuketo: ${COOKIE}.\n"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
+msgid  "Send Cookies"
+msgstr "Sendu kuketojn"
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.String.Text
+msgid  "The password is incorrect. The file cannot be opened."
+msgstr ""
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.String.Text
+msgid  "The password is incorrect. The file cannot be modified."
+msgstr ""
+
+#: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+msgid  "The master password is incorrect."
+msgstr "Malĝusta pasvorto estas enigita. %PRODUCTNAME ne povas aliri retan salutan informon protektitan de Ĉefa Pasvorto.\n\nNotu: Pasvortoj estas usklodistingaj kaj longas almenaŭ kvin signoj."
+
+#: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+msgid  "The password is incorrect."
+msgstr ""
+
+#: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+msgid  "The password confirmation does not match."
+msgstr "La konfirma pasvorto ne kongruas."
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.ModalDialog.Text
+msgid  "File Exists"
+msgstr ""
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PushButton.Text
+msgid  "Replace"
+msgstr ""
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PushButton.Text
+msgid  "Rename"
+msgstr ""
+
+#: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
+msgid  "Document in Use"
+msgstr "Dokumento uzata"
+
+#: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redakti de:\n\n$(ARG2)\n\nMalfermu la dokumenton nur-lege aŭ kopiu la dokumenton por redakti.\n\n"
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "Malfermi nurlege"
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
+msgid  "Open ~Copy"
+msgstr "Malfermi kopion"
+
+#: source/openlocked.src#STR_UNKNOWNUSER.String.Text
+msgid  "Unknown User"
+msgstr "Nekonata uzanto"
+
+#: source/filechanged.src#STR_FILECHANGED_TITLE.String.Text
+msgid  "Document Has Been Changed by Others"
+msgstr ""
+
+#: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
+msgstr "Iu ŝanĝis la dosieron post malfermi ĝin por redakti en %PRODUCTNAME. Konservi vian version de la dokumento anstataŭigos ŝanĝojn faritajn de aliaj.\n\nĈu vi volas konservi malgraŭe?\n\n"
+
+#: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
+msgid  "~Save Anyway"
+msgstr "Konservi malgraŭe"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
+msgid  "%PRODUCTNAME Update Available"
+msgstr "%PRODUCTNAME-aktualigo disponeblas"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr "Ĉi tiun dokumenton kreis nova versio de %PRODUCTNAME. Eble ĝi enhavas eblojn nesubtenatajn de la versio uzata de vi .\n\nAlklaku je 'Aktualigi nun...' por ruli konektite aktualigon kaj akiri la plej lastan version de %PRODUCTNAME."
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
+msgid  "~Update Now..."
+msgstr "Aktualigi nun..."
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
+msgid  "~Later"
+msgstr "Poste"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.ModalDialog.Text
+msgid  "Security Warning: "
+msgstr "Sekureca Averto:"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FixedText.Text
+msgid  "No Text"
+msgstr "Neniu teksto"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PushButton.Text
+msgid  "View Certificate"
+msgstr "Vidigi atestilon"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CancelButton.Text
+msgid  "Cancel Connection"
+msgstr "Malkonekti"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PushButton.Text
+msgid  "Continue"
+msgstr "Daŭrigi"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.ModalDialog.Text
+msgid  "%PRODUCTNAME - Security Warning"
+msgstr "%PRODUCTNAME - Sekureca averto"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FixedText.Text
+msgid  "The document contains document macros signed by:"
+msgstr "La dokumento enhavas makroojn signaturitajn far:"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FixedText.Text
+msgid  "The document contains document macros."
+msgstr "Ĉi tiu dokumento enhavas dokumentajn makroojn."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PushButton.Text
+msgid  "View Signatures..."
+msgstr "Vidigi subskribojn..."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr "Makrooj povas enhavi virusojn. Malŝalti makroojn por dokumento ĉiam estas sekure. Se vi malŝaltas makroojn vi eble perdos funkcion provizita de la makrooj."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
+msgid  "Always trust macros from this source"
+msgstr "Ĉiam fidi makroojn de tiu ĉi fonto"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKButton.Text
+msgid  "~Enable Macros"
+msgstr "Enŝalti makroojn"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CancelButton.Text
+msgid  "~Disable Macros"
+msgstr "Malŝalti makroojn"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
+msgid  "Enter password"
+msgstr "Entajpu pasvorton"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
+msgid  "Enter Master Password"
+msgstr "Entajpu ĉefan pasvorton"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
+msgid  "Set Master Password"
+msgstr "Agordi ĉefan pasvorton"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
+msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr "Pasvortojn por retaj konektoj protektas ĉefa pasvorto. La sistemo invitos vin enigi ĝin unufoje en ĉiu seanco, se %PRODUCTNAME trovas pasvorton el la protektita pasvorta listo."
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
+msgid  "~Enter password"
+msgstr "Entajpu pasvorton"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
+msgid  "~Reenter password"
+msgstr "Retajpu pasvorton"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
+msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr "Averto: certigu ke vi memoras la Ĉefan Pasvorton kiun vi agordis. Se vi forgesos vian Ĉefan Pasvorton, vi ne povos aliri ajnan informon protektita de ĝi. Pasvortoj estas usklodistingaj kaj almenaŭ kvinsignaj."
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redaktado de vi ĉe alia sistemo ek de $(ARG2)\n\nMalfermu dokumenton nur-lege, aŭ ignoru propran dosieran ŝlosadon kaj malfermu la dokumenton por redakti.\n\n"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "Malfermu nur-lege"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
+msgid  "~Open"
+msgstr "Malfermi"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redaktado de vi ĉe alia sistemo ek de $(ARG2)\n\nMalfermu la dokumenton ĉe la alia sistemo kaj reprovu konservi aŭ ignoru propran dosieran ŝlosadon kaj konservu la aktualan dokumenton.\n\n"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
+msgid  "~Retry Saving"
+msgstr "Reprovi konservi"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
+msgid  "~Save"
+msgstr "Konservi"
+
+#: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
+msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr "Ne eblas ŝlosi la dosieron por ekskluziva aliro de %PRODUCTNAME, ĉar mankas permeso krei ŝlosan dosieron ĉe tiu loko."

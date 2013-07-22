@@ -1,0 +1,572 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: mediawiki/help/wikiformats.xhp#tit
+msgid  "MediaWiki Formats"
+msgstr "МедиаВики хэлбэржүүлэлт"
+
+#: mediawiki/help/wikiformats.xhp#hd_id3743095
+msgid  "MediaWiki Formats"
+msgstr "МедиаВики хэлбэржүүлэлт"
+
+#: mediawiki/help/wikiformats.xhp#par_id8654133
+msgid  "The following list gives an overview of the text formats that the @WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr "Дараах жагсаалт нь @WIKIEXTENSIONPRODUCTNAME@-н Вики серверт өргөж өгч чадах бичвэрийн хэлбэржилтүүдийг тоймлон өгч байна."
+
+#: mediawiki/help/wikiformats.xhp#par_id5630664
+msgid  "The OpenDocument format used by Writer and the WikiMedia format are quite different. Only a subset of all features can be transformed from one format to the other."
+msgstr "Бичээчид хэрэглэгддэг OpenDocument формат ба МедиаВики формат хоёр маш ялгаатай. Зөвхөн тодорхой хэлбэржүүлэлт болон функц л нэгээсээ нөгөө рүү хөрвөх боломжтой."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7178868
+msgid  "Headings"
+msgstr "Гарчиг"
+
+#: mediawiki/help/wikiformats.xhp#par_id508133
+msgid  "Apply a heading paragraph style to the headings in your Writer document. The Wiki will show the heading styles of the same outline level, formatted as defined by the Wiki engine."
+msgstr "Гарчгийг та Бичээч дэх тухайн параграфын гарчгийн загвар руу олгоно уу. Викид тухайн тойм төвшиний гарчгийн загвараар дүрслэгдэнэ. Хэлбэржүүлэлт Вики системд тохируулснаар хийгдэнэ."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7217627
+msgid  "Hyperlinks"
+msgstr "Гипер холбоос"
+
+#: mediawiki/help/wikiformats.xhp#par_id3735465
+msgid  "Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. Therefore, the built-in linking facility of OpenDocument should only be used to create links that point to other sites outside the Wiki web. For creating Wiki links that point to other subjects of the same Wiki domain, use Wiki links."
+msgstr "OpenDocument цахим холбоосууд \"гадаад\" Вики холбоос руу хөрвөнө. Тиймээс OpenDocument файл доторх холбоосууд зөвхөн Вики серверийн гадна байх хуудаснууд руу зааж байвал хэрэглэгдэнэ. Нэг Викиний өөр хуудас руу заасан Вики холбоосуудыг үүсгэхийн тулд Вики холбоосуудыг хэрэглэнэ үү."
+
+#: mediawiki/help/wikiformats.xhp#hd_id941190
+msgid  "Lists"
+msgstr "Жагсаалтууд"
+
+#: mediawiki/help/wikiformats.xhp#par_id8942838
+msgid  "Lists can reliably be exported when the whole list uses a consistent list style. Use the Numbering or Bullets icon to generate a list in Writer. If you need a list without numbering or bullets, use Format - Bullets and Numbering to define and apply the respective list style."
+msgstr "Хэрэв бүх жагсаалт нэгдсэн жагсаалтын загвартай бол, жагсаалтууд зөв экспортлогдох болно. Бичээч дахь жагсаалтыг үүсгэхийн тулд, та \"Дугаарлалт\" эсвэл \"Тоочилт\" дарцгийг хэрэглэнэ үү. Хэрэв Тоочилт эсвэл дугаарлалтгүй жагсаалт шаардлагатай бол олгохыг хүссэн жагсаалтын загвараа Хэлбэржүүлэлт - Дугаарлалт ба тоочилтийн тэмдэгээр сонгоно уу."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7026886
+msgid  "Paragraphs"
+msgstr "Параграфууд"
+
+#: mediawiki/help/wikiformats.xhp#hd_id4436475
+msgid  "Alignment"
+msgstr "Жигдрүүлэлт"
+
+#: mediawiki/help/wikiformats.xhp#par_id376598
+msgid  "Explicit text alignment should not be used in Wiki articles. Nevertheless, text alignment is supported for left, centered, and right alignment of text."
+msgstr "Тодорхой бичвэр жигдрүүлэлт Викид хэрэглэгдэх боломжгүй. Гэсэн ч зүүн, голлуулсан, баруун гэсэн жигдрүүлэлт дэмжигдсэн."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7486190
+msgid  "Pre-formatted text"
+msgstr "Хагас хэлбэржсэн бичвэр"
+
+#: mediawiki/help/wikiformats.xhp#par_id1459395
+msgid  "A paragraph style with a fixed-width font is transformed as pre-formatted text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr "Пропорциональ бус фонттой параграфын загвар хагас хэлбэржүүлсэн бичвэр рүү хөрвүүлэгдэнэ. Урьд. хэлбэржүүлсэн бичвэр Вики-д хүрээтэй дүрслэгддэг."
+
+#: mediawiki/help/wikiformats.xhp#hd_id4834131
+msgid  "Character styles"
+msgstr "Тэмдэгтийн хэлбэр"
+
+#: mediawiki/help/wikiformats.xhp#par_id6397595
+msgid  "Character styles modify the appearance of parts of a paragraph. The transformation supports bold, italics, bold/italics, subscript and superscript. All fixed width fonts are transformed into the Wiki typewriter style."
+msgstr "Тэмдэгтийн хэлбэр параграфын зарим хэсгийн харагдацыг өөрчлөнө. Хөрвүүлэлт бүдүүн, налуу, бүдүүн/налуу, доор бичилт, дээр бичилтийг дэмжинэ. Бүх пропорциональ бус фонтууд Викид бичгийн машины хэлбэрээр хөрвөнө."
+
+#: mediawiki/help/wikiformats.xhp#hd_id5152745
+msgid  "Footnotes"
+msgstr "Зүүлтүүд"
+
+#: mediawiki/help/wikiformats.xhp#par_id5238196
+msgid  "Note: The transformation uses the new style of footnotes with <ref> and <references> tags that requires the Cite.php extension to be installed into MediaWiki. If those tags occur as plain text in the transformation result, ask the Wiki administrator to install this extension."
+msgstr "Санамж: МедиаВики сервер дээр Cite.php өргөтгөл суусан бол, хөрвүүлэлт <ref> ба <references> тэмдэглээстэй шинэ хэлбэрийн зүүлт хэрэглэнэ. Хөрвүүлэлтийн дараа хэрэв энэ тэмдэглээсүүд бичвэрээр харагдаж байвал, Вики захирагчаасаа энэ өргөтгөлийн суулгах боломжтой эсэхийг лавлана уу."
+
+#: mediawiki/help/wikiformats.xhp#hd_id9405499
+msgid  "Images"
+msgstr "Зурагнууд"
+
+#: mediawiki/help/wikiformats.xhp#par_id3541673
+msgid  "Images cannot be exported by a transformation producing a single file of Wiki text. However, if the image is already uploaded to the target Wiki domain (e. g. WikiMedia Commons), then the transformation produces a valid image tag that includes the image. Image captions are also supported."
+msgstr "Зөвхөн нэг Вики бичвэр файл үүсгэх хөрвүүлэлтийн графикууд экпортлогдохгүй. Хэрвээ график товлосон Вики рүү хэдийнэ илгээгдсэн байгаа бол (Ж.нь Викимедиа Commons), хөрвүүлэлт графикийг шигтгэх зөв график тэмдэглээсийг үүсгэнэ. Зургийн тайлбар мөн дэмжигдсэн."
+
+#: mediawiki/help/wikiformats.xhp#hd_id2162236
+msgid  "Tables"
+msgstr "Хүснэгтүүд"
+
+#: mediawiki/help/wikiformats.xhp#par_id3037202
+msgid  "Simple tables are supported well. Table headers are translated into corresponding Wiki style table headers. However, custom formatting of table borders, column sizes and background colors is ignored."
+msgstr "Энгийн хүснэгтүүд сайн дэмжигдсэн. Хүснэгтийн толгой тухайн Вики форматтай хүснэгтийн толгойтой хөрвөнө. Хүснэгтийн хүрээ, баганын өргөн, дэвсгэрийн өнгө зэрэг бусад хэлбэржүүлэлтүүдийг хэрэгсэхгүй."
+
+#: mediawiki/help/wikiformats.xhp#hd_id2954496
+msgid  "Joined Cells"
+msgstr "Холбоотой нүд"
+
+#: mediawiki/help/wikiformats.xhp#par_id8253730
+msgid  "OpenDocument and especially OpenOffice.org represent tables that have joined cells that span rows as tables with nested tables. In contrast, the wiki model of table is to declare column and row spans for such joined cells. "
+msgstr "OpenDocument, ялангуяа OpenOffice.org, холбоотой нүдтэй хүснэгтүүдийг хоорондоо багталцсан хүснэгтээр дүрсэлдэг. Нөгөө талаас Вики загвар нь багана эсвэл мөрийн нэгтгэлээр тухайн холбоотой нүднүүдийг дүрсэлдэг."
+
+#: mediawiki/help/wikiformats.xhp#par_id8163090
+msgid  "If only columns of the same row are joined, the result of the transformation resembles the source document very well."
+msgstr "Хэрэв нэгэн ижил мөрөнд холбогдсон нүднүүд байвал, хөрвүүлэлтийн үр дүн эх хувьтай маш адилхан гарна."
+
+#: mediawiki/help/wikiformats.xhp#hd_id425122
+msgid  "Borders"
+msgstr "Хүрээнүүд"
+
+#: mediawiki/help/wikiformats.xhp#par_id1831110
+msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
+msgstr "Хүснэгтийн хүрээ ба дэвсгэрийн хэлбэрээс үл хамааран хүснэгтийг үргэлж \"<emph>prettytable\"</emph>-г экспортлоно. Вики дэх дүрслэл энгийн хүрээ ба бүдүүн бичигтэй толгойтой хүснэгтээр бууна."
+
+#: mediawiki/help/wikiformats.xhp#hd_id6255073
+msgid  "Charset and special characters"
+msgstr "Тэмдэгт олонлог ба тусгай тэмдэгт"
+
+#: mediawiki/help/wikiformats.xhp#par_id8216193
+msgid  "The charset of the transformation result is fixed to UTF-8. Depending on your system, this might not be the default charset. This might cause \"special characters\" to look broken when viewed with default settings. However, you can switch your editor to UTF-8 encoding to fix this. If your editor does not support switching the encoding, you can display the result of the transformation in the Firefox browser and switch the encoding to UTF-8 there. Now, you can cut and paste the transformation result to your program of choice."
+msgstr "Хөрвүүлэлтийн үр дүнгийн тэмдэгт олонлог нь UTF-8 болно. Таны системээс хамааран энэ нь өгөгдмөл тэмдэгтийн олонлог биш байж болно. Энэ нь өгөгдмөл тохиргоогоор харуулахад тусгай тэмдэгтүүдийг буруу дүрслэгдэх байдалд хүргэдэг.Та асуудлыг арилгахдаа өөрийн засварлагчаа UTF-8 болгоно уу. Хэрэв таны засварлагч тэмдэгтийн олонлог сэлгэх боломжгүй бол та хөрвүүлэлтийн үр дүнг Firefox дээр тэмдэгтийн олонлогийг нь UTF-8 болгоод харах боломжтой. Одоо та хөрвүүлэлтийн үр дүнг хуулаад өөрийн сонгосон програмдаа буулгаж болно."
+
+#: mediawiki/help/wiki.xhp#tit
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#bm_id3154408
+msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
+msgstr "<bookmark_value>Вики;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>өргөтгөлүүд;МедиаВики</bookmark_value>"
+
+#: mediawiki/help/wiki.xhp#hd_id5993530
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#par_id9647511
+msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
+msgstr "<ahelp hid=\".\">@WIKIEXTENSIONPRODUCTNAME@-г хэрэглэснээр та идэвхтэй Бичээчийн бичвэр баримтыг МедиаВики серверт тавьж болно. Тавьсны дараа Викигийн бүх хэрэглэгч таны баримтыг унших боломжтой.</ahelp>"
+
+#: mediawiki/help/wiki.xhp#par_id6468703
+msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
+msgstr "<ahelp hid=\".\"><item type=\"menuitem\">Файл - Илгээх - МедиаВики рүү</item>г сонгож идэвхтэй буй Бичээч баримтыг МедиаВики сервер рүү илгээнэ.</ahelp>"
+
+#: mediawiki/help/wiki.xhp#hd_id4554582
+msgid  "System Requirements"
+msgstr "Системийн шаардлага"
+
+#: mediawiki/help/wiki.xhp#par_id2597430
+msgid  "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 8 Шинэчлэл 10"
+
+#: mediawiki/help/wiki.xhp#par_id8430738
+msgid  "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 2.4"
+
+#: mediawiki/help/wiki.xhp#par_id9340495
+msgid  "Java Runtime Environment 1.4"
+msgstr "Жава ажиллах үеийн орчин 1.4"
+
+#: mediawiki/help/wiki.xhp#par_id7387615
+msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
+msgstr "<link href=\"http://www.mediawiki.org/wiki/MediaWiki\">МедиаВики</link> сервер дээр дэмжигдсэн Вики бүртгэл"
+
+#: mediawiki/help/wiki.xhp#hd_id8047120
+msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@-г суулгаж байна"
+
+#: mediawiki/help/wiki.xhp#par_id4277169
+msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr "Та @WIKIEXTENSIONPRODUCTNAME@-г суулгахынхаа өмнө, StarOffice буюу OpenOffice.org Жава Ажиллах Үеийн орчин (JRE) хэрэглэж байгаа эсэхийг нягтална уу. JRE төлөвийг шалгахдаа та <item type=\"menuitem\">Хэрэгсэл - Тохиргоо -  StarOffice/OpenOffice.org - Жава</item> сонгоно уу. Мөн \"Жава ажиллах үеийн орчин хэрэглэх\" идэвхжсэн эсэхийг нягтлаад ямар нэг JRE-хувилбар сонголтын жагсаалтанд байгаа эсэхийг шалгана уу. Хэрэв JRE идэвхжээгүй байвал, та ямар нэг JRE 1.4 эсвэл хойшхи хувилбарыг идэвхжүүлээд StarOffice/OpenOffice.org-г шинээр эхлүүлнэ үү."
+
+#: mediawiki/help/wiki.xhp#hd_id567339
+msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@-г суулгах"
+
+#: mediawiki/help/wiki.xhp#par_id1732230
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr "Бичээчийн цонхноос <item type=\"menuitem\">Хэрэгсэл - Өргөтгөлийн удирдлага</item> сонгоно уу."
+
+#: mediawiki/help/wiki.xhp#par_id4338511
+msgid  "In the Extension Manager dialog, click Add."
+msgstr "Өргөтгөлийн удирдлага диалогоос \"нэмэх\"-г дар."
+
+#: mediawiki/help/wiki.xhp#par_id5882442
+msgid  "Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click Close. "
+msgstr "@WIKIEXTENSIONFILENAME@.oxt файлын байрлалыг сонгоод, Нээх дээр дарсны дараа Хаах дээр дарна уу. "
+
+#: mediawiki/help/wiki.xhp#par_id4008911
+msgid  "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "StarOffice/StarSuite/OpenOffice.org-г хаана уу, мөн түргэн эхлүүлэгч идэвхтэй байвал салгана уу."
+
+#: mediawiki/help/wiki.xhp#par_id265511
+msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr "Вики тохиргоог оруулахын тулд програмыг дахин ачаалаад, бичвэр баримт нээн <item type=\"menuitem\">Хэрэгсэл - Тохируулга - Интернет - МедиаВики</item>-г сонгоод доор буй  \"Викирүү холбогдох\"-г харна уу."
+
+#: mediawiki/help/wiki.xhp#hd_id3569444
+msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@-г устгах"
+
+#: mediawiki/help/wiki.xhp#par_id2655110
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr "Бичээчийн цонхноос <item type=\"menuitem\">Хэрэгсэл - Өргөтгөлийн удирдлага</item> сонгоно уу."
+
+#: mediawiki/help/wiki.xhp#par_id9504379
+msgid  "Click the plus sign (+) in front of My Extensions."
+msgstr "Миний өргөтгөлүүдийн урд буй нэмэх тэмдэг (+)-г товш."
+
+#: mediawiki/help/wiki.xhp#par_id8431348
+msgid  "Select the extension, click Remove, and then click Close."
+msgstr "Өргөтгөлөө сонгоод, Устгахыг дараад Хаах-г дар."
+
+#: mediawiki/help/wiki.xhp#hd_id5316019
+msgid  "To Connect to a Wiki"
+msgstr "Вики рүү холбогдох"
+
+#: mediawiki/help/wiki.xhp#par_id2381969
+msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
+msgstr "Санамж: Та хэрэглэгчийн нэр болон нууц үгээ StarOffice/OpenOffice.org-н бүх диалог тус бүрийн хувьд хадгалах боломжтой. Нууц үгс Мастер нууц үгийн тусламжтай хандах боломжтойгоор түлхүүрлэгдэн хадгалагдана. Мастер нууц үг хийхийг хүсвэл та <item type=\"menuitem\"> Хэрэгсэл - Тохиргоо - StarOffice/OpenOffice.org - Хамгаалалт</item>-г сонгоно уу."
+
+#: mediawiki/help/wiki.xhp#par_id3751640
+msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
+msgstr "Санамж: Хэрвээ та вэбд итгэмжлэгч сервер хэрэглэн холбогддог бол <item type=\"menuitem\">Хэрэгсэл - Тохируулга - Интернет - Итгэмжлэгч</item>-д итгэмжлэгчийн мэдээллээ оруулаад програмыг дахин ачаална уу."
+
+#: mediawiki/help/wiki.xhp#par_id9533677
+msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
+msgstr "Бичээч баримт нээгээд, <item type=\"menuitem\">Хэрэгсэл - Тохиргоо - Интернет - МедиаВики</item> сонгоно уу."
+
+#: mediawiki/help/wiki.xhp#par_id368968
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Тохируулга</link> диалогоос Нэмэх-г дар."
+
+#: mediawiki/help/wiki.xhp#par_id6962187
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">МедиаВики</link> диалогт Викигийн бүртгэлийн мэдээллээ оруулна уу."
+
+#: mediawiki/help/wiki.xhp#par_id5328836
+msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "Хаяг (URL) бичвэр бокст, холбогдохыг хүсэж буй Викигийн хаягаа оруул."
+
+#: mediawiki/help/wiki.xhp#par_id389416
+msgid  "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "Та вэб хөтчөөс хаягийг (URL) хуулж аван бичвэр бокст буулгаж болно."
+
+#: mediawiki/help/wiki.xhp#par_id5906552
+msgid  "In the Username box, enter your user ID for your Wiki account."
+msgstr "Хэрэглэгчийн нэр хайрцагт өөрийн Вики бүртгэлийн хэрэглэгчийн нэрээ оруулна уу."
+
+#: mediawiki/help/wiki.xhp#par_id9297158
+msgid  "If the Wiki allows anonymous write access, you can leave the Username and Password boxes empty."
+msgstr "Вики нь нуугдмал хэрэглэгчийн бичих эрхийг зөвшөөрдөг бол та Хэрэглэгчийн нэр Нууц үг хайрцгуудыг хоосон орхиж болно."
+
+#: mediawiki/help/wiki.xhp#par_id8869594
+msgid  "In the Password box, enter the password for your Wiki account, then click OK."
+msgstr "Нууц үг хайрцагт өөрийн Вики бүртгэлийн нууц үгээ оруулаад ОК-г товш."
+
+#: mediawiki/help/wiki.xhp#par_id292062
+msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
+msgstr "Та мөн нууц үгсээ тогтмол хадгалахыг хүсвэл \"Нууц үг хадгалах\"-г идэвхжүүлэх боломжтой. Хадгалагдсан бүх нууц үгс рүү хандахдаа Мастер нууц үг хэрэглэгдэнэ. Мастер нууц үг өгөхдөө, та <item type=\"menuitem\">Хэрэгсэл - Тохиргооо - StarOffice/OpenOffice.org - Хамгаалалт</item>-г сонгоно уу. Хэрэв мастер нууц үг өгөгдөөгүй бол \"Нууц үг хадгалах\" боломжгүй."
+
+#: mediawiki/help/wiki.xhp#hd_id7044892
+msgid  "To Create a New Wiki Page"
+msgstr "Шинэ Вики хуудас үүсгэх"
+
+#: mediawiki/help/wiki.xhp#par_id3514206
+msgid  "Open a Writer document."
+msgstr "Бичээч баримт нээнэ үү."
+
+#: mediawiki/help/wiki.xhp#par_id944853
+msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
+msgstr "Вики хуудасны агуулгыг бичнэ үү. Та бичвэрийн хэлбэржилт, толгой, хөлийн тэмдэглэл болон өөр бусад хэлбэржилтүүдийг хэрэглэж болно.<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"> Дэмжигдсэн хэлбэржилтүүдийн жагсаалт</link>-г харна уу."
+
+#: mediawiki/help/wiki.xhp#par_id4566484
+msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
+msgstr "<item type=\"menuitem\">Файл - Илгээх - МэдиаВики рүү</item> -г сонго."
+
+#: mediawiki/help/wiki.xhp#par_id228278
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">МедиаВики рүү илгээх</link> диалогт бичлэгийнхээ тохиргоог тодорхойл."
+
+#: mediawiki/help/wiki.xhp#par_id2564165
+msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
+msgstr "<emph>МедиаВики сервер</emph>: Вики сонго."
+
+#: mediawiki/help/wiki.xhp#par_id5566576
+msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
+msgstr "<emph>Гарчиг</emph>: Хуудасныхаа гарчигийг оруул. Байгаа файлын гарчгийг өгвөл тухайн байгаар баримттайгаар дарж бичнэ. Викид шинэ хуудас үүсгэхдээ шинэ гарчиг өгнө үү."
+
+#: mediawiki/help/wiki.xhp#par_id9688711
+msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
+msgstr "<emph>Дүгнэлт</emph>: Өөрийн хуудасанд бага хэмжээний, сайн дурын дүгнэлт оруул."
+
+#: mediawiki/help/wiki.xhp#par_id4123661
+msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
+msgstr "<emph>Бяцхан өөрчлөлт</emph>: Ижил гарчигтай хуудасны бяцхан өөрчлөлтийг сервер рүү илгээхийн тул энэ тэмдэглэх талбарыг идэвхжүүлнэ үү."
+
+#: mediawiki/help/wiki.xhp#par_id452284
+msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
+msgstr "<emph>Вэб хөтчид харуулах</emph>: Энэ талбарыг хэрээслэвэл таны системийн вэб толилуурыг нээн, өргөж өгөгдсөн Вики хуудсыг харуулна."
+
+#: mediawiki/help/wiki.xhp#par_id8346812
+msgid  "Click Send."
+msgstr "Илгээх-г дар."
+
+#: mediawiki/help/wikisettings.xhp#tit
+msgid  "MediaWiki Options"
+msgstr "МедиаВики тохируулга"
+
+#: mediawiki/help/wikisettings.xhp#hd_id6425672
+msgid  "MediaWiki Options"
+msgstr "МедиаВики тохируулга"
+
+#: mediawiki/help/wikisettings.xhp#par_id1188390
+msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
+msgstr "Та МедиаВики серверүүдийг нэмж, хасч болно.<item type=\"menuitem\"> Хэрэгсэл - Тохиргоо - Интернет - Медиа</item>-р диалог нээнэ. Өөрөөр, <item type=\"menuitem\">Хэрэгсэл - Өргөтгөлийн удирдлага</item>-г сонгож, @WIKIEXTENSIONPRODUCTNAME@-г сонгон Тохируулга товч дарна."
+
+#: mediawiki/help/wikisettings.xhp#par_id300607
+msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\">Нэмэх ийг дарж шинэ Вики сервер нэмнэ.<br/>Оруулгыг сонгоод Засах ыг дарвал бүртгэлийн тохиргоог засварлана.<br/> Жагсаалтаас оруулгыг устгах бол, оруулгыг сонгоод Устгах ыг дар.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id9786065
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Жагсаалтад шинэ бичлэг нэмэхдээ МедиаВики диалогыг нээнэ.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id3386333
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Сонгогдсон бичлэгийг засахдаа МэдиаВики диалогыг нээнэ.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id7285073
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Сонгогдсон оруулгыг жагсаалтаас устгана. </ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id1029084
+msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
+msgstr "Таныг Нэмэх эсвэл \"Засах\"-г дарахад <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"> МедиаВики</link> диалог нээгдэнэ."
+
+#: mediawiki/help/wikiaccount.xhp#tit
+msgid  "MediaWiki"
+msgstr "МедиаВики"
+
+#: mediawiki/help/wikiaccount.xhp#hd_id960722
+msgid  "MediaWiki"
+msgstr "МедиаВики"
+
+#: mediawiki/help/wikiaccount.xhp#par_id4571672
+msgid  "Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr "МедиаВики бүртгэлээ нэмэх эсвэл засварлах бол МедиаВики диалогийг хэрэглэ."
+
+#: mediawiki/help/wikiaccount.xhp#par_id7631458
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">http:// ээр эхэлсэн МедиаВики серверийн хаягийг (URL) оруулна уу</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id7862483
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">МедиаВики сервер дэх өөрийн хэрэглэгчийн нэрээ оруулна уу. Нуугдмал эрхээр бол хоосон орхи.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id1113010
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">МедиаВики сервер дэх өөрийн нууц үгээ оруулна уу. Нуугдмал эрхээр бол хоосон орхи.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id656758
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Нууц үг тогтмол хадгалах бол идэвхжүүлнэ үү. Мастер нууц үг өгөгдөх ёстой ба, <item type=\"menuitem\">Хэрэгсэл - Тохиргоо - StarOffice/OpenOffice.org - Хамгаалалт</item> үзнэ үү.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id3112582
+msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr "Интернэт дэх Вики серверийн хаягийг http://wiki.services.openoffice.org/wiki хэлбэрээр эсвэл вэб толилуураас хуулж оруул."
+
+#: mediawiki/help/wikiaccount.xhp#par_id628070
+msgid  "If the Wiki allows anonymous access, you can leave the account text boxes empty. Else enter your user name and password."
+msgstr "Хэрвээ Вики бүртгэлгүй хандалтыг зөвшөөрдөг бол бүртгэлийн бичвэр хайрцгуудыг хоосон орхиж болно. Үгүй бол өөрийн хэрэглэгчийн нэр болон нууц үгээ оруул."
+
+#: mediawiki/help/wikiaccount.xhp#par_id9046601
+msgid  "If you have enabled the master password feature on the Security tab page of the Tools - Options - %PRODUCTNAME dialog, then the software can store your password and automatically insert the data where necessary. Enable the \"Save password\" checkbox to store your password."
+msgstr "Хэрэв та \"Хэрэгсэл - Тохиргоо - StarOffice/OpenOffice.org\" диалогийн \"Хамгаалалт\" самбараас мастер нууц үг идэвхжүүлсэн бол, програм нууц үгийг хадгалж чадах ба шаардлагатай бол автоматаар таны бүртгэлийн өгөгдлийг оруулна. Та нууц үгээ хадгалахыг хүсэж байвал \"Нууц үг хадгалах\"-г идэвхжүүлнэ үү."
+
+#: mediawiki/help/wikisend.xhp#tit
+msgid  "Send to MediaWiki"
+msgstr "МедиаВики рүү илгээх"
+
+#: mediawiki/help/wikisend.xhp#hd_id108340
+msgid  "Send to MediaWiki"
+msgstr "МедиаВики рүү илгээх"
+
+#: mediawiki/help/wikisend.xhp#par_id1743827
+msgid  "In the Send to MediaWiki dialog, specify the settings for your current Wiki upload."
+msgstr "МедиаВики рүү илгээх диалогт идэвхтэй Вики илгээлтийн тохиргоог тодорхойлно уу."
+
+#: mediawiki/help/wikisend.xhp#par_id664082
+msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\">Өөрийн баримтаа нийтлэхийг хүсч буй МедиаВики серверээ сонгоно уу. Нэмэх-ийг дарж жагсаалтад шинэ сервер нэмнэ.</ahelp>"
+
+#: mediawiki/help/wikisend.xhp#par_id2794885
+msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
+msgstr "<ahelp hid=\".\">Та Вики бичлэгийнхээ гарчгийг өгнө үү. Энэ таны  бичлэгийн үндсэн гарчиг болно. Шинэ бичлэгийн хувьд энэ Викид өмнө нь байхгүй гарчгийг өгөх ёстой. Хэрэв та хэдийнэ оршин буй гарчиг өгвөл тэр оршин байгаа бичлэгийг дарна.</ahelp>"
+
+#: mediawiki/help/wikisend.xhp#par_id2486342
+msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
+msgstr "<ahelp hid=\".\">Та боломжтой бол нэг дүгнэлт эсвэл тайлбар хийнэ үү.</ahelp> <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link> харна уу."
+
+#: mediawiki/help/wikisend.xhp#par_id823999
+msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
+msgstr "<emph>Бяцхан өөрчлөлт</emph>: <ahelp hid=\".\">Ижил гарчигтай хуудасны бяцхан өөрчлөлтийг сервер рүү илгээхийн тул энэ тэмдэглэх талбарыг идэвхжүүлнэ үү.</ahelp>"
+
+#: mediawiki/help/wikisend.xhp#par_id6592913
+msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
+msgstr "<emph>Вэб хөтөчид харуулах</emph>: <ahelp hid=\".\">Энэ хайрцгийг хэрээслэвэл таны системийн вэб толилуурыг нээн, өргөж өгөгдсөн Вики хуудсыг харуулна.</ahelp>"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
+msgid  "To Media~Wiki..."
+msgstr "Мэдиа~Вики рүү..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label
+msgid  "MediaWiki"
+msgstr "МэдиаВики"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.GeneralSendError
+msgid  "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "\"МэдиаВикирүү илгээх\" үйлдэл амжилттай болж чадсангүй."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoWikiFilter
+msgid  "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
+msgstr "МэдиаВикигийн экспортлох шүүлтүүр олдохгүй байна. \"Хэрэгсэл-XML Шүүлтүүр тохиргоо\" сонгож шүүлтүүрийг суулга эсвэл суулгацыг ашиглан компонентыг суулга."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoConnectionToURL
+msgid  "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "МэдиаВикигийн системрүү '$ARG1' холболт үүсгэгдэж чадсангүй."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.WrongLogin
+msgid  "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
+msgstr "Хэрэглэгчийн нэр эвсэл нууц үг буруу байна. Дахин оролдож үзнэ үү.Хэрвээ нуугдмал хэрэглэгчийн эрхээр холбогдох гэж байгаа бол талбаруудыг хоосон орхино уу."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.InvalidURL
+msgid  "A connection could not be created because the URL is invalid."
+msgstr "УРЛ хүчингүй учраас холболт үүсгэгдэж чадсангүй."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoURL
+msgid  "Specify a MediaWiki server by providing a URL."
+msgstr "УРЛ ийг олгож МэдиаВики серверийг тодорхойлно уу "
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.CancelSending
+msgid  "The transfer has been interrupted. Please check the integrity of the wiki article."
+msgstr "Дамжуулал тасалдлаа. Вики өгүүлэлийн үнэн эсэхийг шалгана уу."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UrlLabel
+msgid  "U~RL"
+msgstr "~УРЛ"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UsernameLabel
+msgid  "~Username"
+msgstr "~Хэрэглэгчийн нэр"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_PasswordLabel
+msgid  "~Password"
+msgstr "~Нууц үг"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendTitle
+msgid  "Send to MediaWiki"
+msgstr "МэдиаВикируу илгээх"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_WikiArticle
+msgid  "Wiki article"
+msgstr "Вики өгүүлэл"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_No
+msgid  "No"
+msgstr "Үгүй"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_OK
+msgid  "OK"
+msgstr "OK"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_Yes
+msgid  "Yes"
+msgstr "Тийм"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_AddButton
+msgid  "~Add..."
+msgstr "~Нэмэх..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditButton
+msgid  "~Edit..."
+msgstr "~Засах..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendButton
+msgid  "~Send"
+msgstr "~Илгээх"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_RemoveButton
+msgid  "~Remove"
+msgstr "~Устгах"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_NewWikiPage_Label1
+msgid  "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
+msgstr "\"$ARG1\" гарчигтай вики өгүүлэл байхгүй байна. Та ийм нэртэй шинэ өгүүлэл үүсгэмээр байна уу?"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label1
+msgid  "Media~Wiki Server"
+msgstr "Мэдиа~Вики сервер"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label2
+msgid  "~Title"
+msgstr "~Гарчиг"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label3
+msgid  "S~ummary"
+msgstr "Д~үгнэлт"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck
+msgid  "This is a ~minor edit"
+msgstr "Энэ бол ~минор засалт"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck
+msgid  "Show in web ~browser"
+msgstr "Веб толилуурт харуулах"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.UnknownCert
+msgid  "The certificate of the selected site is unknown."
+msgstr "Сонгогдсон сайтын гэрчилгээ тодорхойгүй."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Title
+msgid  "MediaWiki"
+msgstr "МэдиаВики"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_AccountLine
+msgid  "Account"
+msgstr "Данс"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_WikiLine
+msgid  "MediaWiki Server"
+msgstr "МэдиаВики сервер"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_SaveBox
+msgid  "~Save password"
+msgstr "~Нууц үг хадгалах"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Extension_String
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_WikiPageExists_Label1
+msgid  "A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;"
+msgstr ""

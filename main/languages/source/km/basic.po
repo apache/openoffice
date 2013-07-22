@@ -1,0 +1,604 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+msgid  "Syntax error."
+msgstr "កំហុស​វាក្យសម្ព័ន្ធ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+msgid  "Return without Gosub."
+msgstr "Return ដោយ​គ្មាន Gosub ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect entry; please retry."
+msgstr "ធាតុ​មិន​ត្រឹមត្រូវ សូម​ព្យាយាម​ម្ដង​ទៀត ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid procedure call."
+msgstr "ហៅ​បែបផែន​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Overflow."
+msgstr "លើស​ចំណុះ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough memory."
+msgstr "អង្គ​ចងចាំ​មិន​គ្រប់គ្រាន់ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+msgid  "Array already dimensioned."
+msgstr "អារេ​មាន​វិមាត្រ​រួច​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+msgid  "Index out of defined range."
+msgstr "សន្ទស្សន៍​ស្ថិត​នៅ​ក្រៅ​ជួរ​ដែល​បាន​កំណត់ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+msgid  "Duplicate definition."
+msgstr "កំណត់​ស្ទួន​គ្នា​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+msgid  "Division by zero."
+msgstr "ចែក​នឹង​សូន្យ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable not defined."
+msgstr "មិន​បាន​កំណត់​អថេរ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+msgid  "Data type mismatch."
+msgstr "ខុស​ប្រភេទ​ទិន្នន័យ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid parameter."
+msgstr "ប៉ារ៉ាម៉ែត្រ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+msgid  "Process interrupted by user."
+msgstr "ដំណើរការ​ត្រូវ​បាន​ផ្អាក​ដោយ​អ្នក​ប្រើ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+msgid  "Resume without error."
+msgstr "Resume ដោយ​គ្មាន error ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough stack memory."
+msgstr "មិន​មាន​អង្គ​ចងចាំ​ជង់​គ្រប់គ្រាន់ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub-procedure or function procedure not defined."
+msgstr "មិន​បាន​កំណត់​បែបផែន​រង ឬ​បែបផែន​អនុគមន៍ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading DLL file."
+msgstr "កំហុស​ពេល​ផ្ទុក​ឯកសារ DLL ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+msgid  "Wrong DLL call convention."
+msgstr "ហៅ DLL ខុស ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Internal error $(ARG1)."
+msgstr "កំហុស​ខាង​ក្នុង $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid file name or file number."
+msgstr "ឈ្មោះ​ឯកសារ ឬ​លេខ​ឯកសារ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "File not found."
+msgstr "រក​មិន​ឃើញ​ឯកសារ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect file mode."
+msgstr "របៀប​ឯកសារ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+msgid  "File already open."
+msgstr "បើក​ឯកសារ​រួច​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Device I/O error."
+msgstr "កំហុស​បញ្ចេញ/បញ្ចូល​ឧបករណ៍ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+msgid  "File already exists."
+msgstr "មាន​ឯកសារ​រួច​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record length."
+msgstr "ប្រវែង​កំណត់ត្រា​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+msgid  "Disk or hard drive full."
+msgstr "ថាស ឬ​ដ្រាយ​ថាស​ពេញ​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+msgid  "Reading exceeds EOF."
+msgstr "អាន​ហួស​ចុងឯកសារ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record number."
+msgstr "លេខ​កំណត់ត្រា​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many files."
+msgstr "ឯកសារ​ច្រើន​ពេក ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+msgid  "Device not available."
+msgstr "មិន​មាន​ឧបករណ៍ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+msgid  "Access denied."
+msgstr "មិន​អាច​ចូល​ដំណើរការ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+msgid  "Disk not ready."
+msgstr "ថាស​មិន​ទាន់​រួច ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+msgid  "Not implemented."
+msgstr "មិន​បាន​ប្រតិបត្តិ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+msgid  "Renaming on different drives impossible."
+msgstr "មិន​អាច​ប្ដូរឈ្មោះ​លើ​ដ្រាយ​ខុស​គ្នា ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Path/File access error."
+msgstr "កំហុស​ចូលដំណើរការ​ផ្លូវ/ឯកសារ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Path not found."
+msgstr "រក​មិន​ឃើញ​ផ្លូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object variable not set."
+msgstr "មិន​បាន​កំណត់​អថេរ​វត្ថុ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid string pattern."
+msgstr "លំនាំ​ខ្សែអក្សរ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+msgid  "Use of zero not permitted."
+msgstr "មិន​ឲ្យ​ប្រើ​សូន្យ​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "DDE Error."
+msgstr "កំហុស DDE ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+msgid  "Awaiting response to DDE connection."
+msgstr "ទន្ទឹង​រង់ចាំ​ការ​ឆ្លើយតប​ទៅ​កាន់​ការ​តភ្ជាប់ DDE ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+msgid  "No DDE channels available."
+msgstr "មិន​មាន​ឆានែល DDE ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+msgid  "No application responded to DDE connect initiation."
+msgstr "មិន​មាន​កម្មវិធី​ណា​ឆ្លើយតប​ទៅ​នឹង​ការ​ផ្ដួចផ្ដើម​តភ្ជាប់ DDE ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many applications responded to DDE connect initiation."
+msgstr "មាន​កម្មវិធី​ច្រើន​ពេក​ឆ្លើយតប​ទៅ​នឹង​ការ​ផ្ដួចផ្ដើម​តភ្ជាប់ DDE ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE channel locked."
+msgstr "ឆានែល DDE ជាប់សោ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+msgid  "External application cannot execute DDE operation."
+msgstr "កម្មវិធី​ខាង​ក្រៅ​មិន​អាច​ប្រតិបត្តិ​ដំណើរការ DDE បាន​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+msgid  "Timeout while waiting for DDE response."
+msgstr "អស់ពេល ខណៈពេល​រង់ចាំ​ការ​ឆ្លើយតប DDE ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr "អ្នក​ប្រើ​បាន​ចុច​គ្រាប់ចុច គេច (Esc) កំឡុងពេល​ដំណើរការ DDE ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+msgid  "External application busy."
+msgstr "កម្មវិធី​ខាង​ក្នុង​ជាប់រវល់ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+msgid  "DDE operation without data."
+msgstr "ប្រតិបត្តិការ DDE ដោយ​គ្មាន​ទិន្នន័យ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Data are in wrong format."
+msgstr "ទិន្នន័យ​មាន​ទ្រង់ទ្រាយ​ខុស ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+msgid  "External application has been terminated."
+msgstr "កម្មវិធី​ខាង​ក្រៅ​ត្រូវ​បាន​បញ្ចប់​ដំណើរការ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE connection interrupted or modified."
+msgstr "បាន​ផ្អាក ឬ​កែប្រែ​ការ​តភ្ជាប់ DDE ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "DDE method invoked with no channel open."
+msgstr "បាន​ហៅ​វិធីសាស្ត្រ DDE ដោយ​មិន​បើក​ឆានែល ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid DDE link format."
+msgstr "ទ្រង់ទ្រាយ​តំណ DDE មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "DDE message has been lost."
+msgstr "បាន​បាត់បង់​សារ DDE ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+msgid  "Paste link already performed."
+msgstr "បាន​បិទភ្ជាប់​តំណ​រួច​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+msgid  "Link mode cannot be set due to invalid link topic."
+msgstr "មិន​អាច​កំណត់​របៀប​តំណ​បាន​ឡើយ ដោយ​សារ​តែ​ប្រធានបទ​តំណ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "DDE requires the DDEML.DLL file."
+msgstr "DDE ត្រូវការ​ឯកសារ DDEML.DLL ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Module cannot be loaded; invalid format."
+msgstr "មិន​អាច​ផ្ទុក​ម៉ូឌុល; ទ្រង់ទ្រាយ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object index."
+msgstr "សន្ទស្សន៍​វត្ថុ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not available."
+msgstr "មិន​មាន​វត្ថុ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect property value."
+msgstr "តម្លៃ​លក្ខណសម្បត្តិ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is read-only."
+msgstr "លក្ខណសម្បត្តិ​នេះ​គឺ​បាន​តែ​អាន ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is write only."
+msgstr "លក្ខណសម្បត្តិ​នេះ​គឺ​បាន​តែ​សរសេរ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object reference."
+msgstr "សេចក្ដីយោង​វត្ថុ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "Property or method not found: $(ARG1)."
+msgstr "រក​មិន​ឃើញ​លក្ខណសម្បត្តិ ឬ​​វិធីសាស្ត្រ ៖ $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object required."
+msgstr "ទាមទារ​វត្ថុ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid use of an object."
+msgstr "ប្រើ​វត្ថុ​មួយ​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation is not supported by this object."
+msgstr "វត្ថុ​នេះ​មិន​គាំទ្រ​ស្វ័យប្រតិកម្ម OLE ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "This property or method is not supported by the object."
+msgstr "វត្ថុ​មិន​គាំទ្រ​លក្ខណសម្បត្តិ ឬ​វិធីសាស្ត្រ​នេះ​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation Error."
+msgstr "កំហុស​ស្វ័យប្រតិកម្ម OLE ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+msgid  "This action is not supported by given object."
+msgstr "វត្ថុ​ដែល​បាន​ផ្ដល់​មិន​គាំទ្រ​អំពើ​នេះ​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Named arguments are not supported by given object."
+msgstr "វត្ថុ​ដែល​បាន​ផ្ដល់​មិន​គាំទ្រ​អាគុយម៉ង់​ដែល​បាន​ដាក់ឈ្មោះ​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+msgid  "The current locale setting is not supported by the given object."
+msgstr "វត្ថុ​ដែល​បាន​ផ្ដល់​មិន​គាំទ្រ​ការ​កំណត់​មូលដ្ឋាន​បច្ចុប្បន្ន​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Named argument not found."
+msgstr "រក​មិន​ឃើញ​អាគុយម៉ង់​ដែល​បាន​ដាក់ឈ្មោះ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+msgid  "Argument is not optional."
+msgstr "អាគុយម៉ង់​មិន​មែន​ស្រេច​ចិត្ត​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "ចំនួន​អាគុយម៉ង់​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not a list."
+msgstr "វត្ថុ​មិន​មែន​ជា​បញ្ជី ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid ordinal number."
+msgstr "លេខ​លំដាប់​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Specified DLL function not found."
+msgstr "រក​មិន​ឃើញ​អនុគមន៍ DLL ដែល​បាន​បញ្ជាក់ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid clipboard format."
+msgstr "ទ្រង់ទ្រាយ​ក្ដារតម្បៀតខ្ទាស់​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this property."
+msgstr "វត្ថុ​មិន​មាន​លក្ខណសម្បត្តិ​នេះ​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this method."
+msgstr "វត្ថុ​មិន​មាន​វិធីសាស្ត្រ​នេះ​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+msgid  "Required argument lacking."
+msgstr "ខ្វះ​អាគុយម៉ង់​ដែល​ត្រូវការ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "ចំនួន​អាគុយម៉ង់​មិន​ត្រឹមត្រូវ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Error executing a method."
+msgstr "កំហុស​ប្រតិបត្តិ​វិធីសាស្ត្រ​មួយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to set property."
+msgstr "មិន​អាច​កំណត់​តម្លៃ​លក្ខណសម្បត្តិ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to determine property."
+msgstr "មិន​អាច​កំណត់​លក្ខណសម្បត្តិ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr "រំពឹង​និមិត្តសញ្ញា ៖ $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Expected: $(ARG1)."
+msgstr "រំពឹង ៖ $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol expected."
+msgstr "រំពឹង​និមិត្តសញ្ញា ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable expected."
+msgstr "រំពឹង​អថេរ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Label expected."
+msgstr "រំពឹង​ស្លាក ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Value cannot be applied."
+msgstr "មិន​អាច​អនុវត្ត​តម្លៃ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) already defined."
+msgstr "បាន​កំណត់​អថេរ $(ARG1) រួច​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "បាន​កំណត់​បែបផែន​រង ឬ​បែបផែន​អនុគមន៍ $(ARG1) រួច​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) already defined."
+msgstr "បាន​កំណត់​ស្លាក $(ARG1) រួច​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) not found."
+msgstr "រក​មិន​ឃើញ​អថេរ $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+msgid  "Array or procedure $(ARG1) not found."
+msgstr "រក​មិន​ឃើញ​អារេ ឬ​បែបផែន $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+msgid  "Procedure $(ARG1) not found."
+msgstr "រក​មិន​ឃើញ​បែបផែន $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) undefined."
+msgstr "មិន​បាន​កំណត់​ស្លាក $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown data type $(ARG1)."
+msgstr "មិន​ស្គាល់​ប្រភេទ​ទិន្នន័យ $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+msgid  "Exit $(ARG1) expected."
+msgstr "រំពឹង​ថា​ចេញ​ពី $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr "នៅ​បើក​បណ្ដុំ​សេចក្ដីថ្លែងការណ៍​នៅ​ឡើយ ៖ បាត់ $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+msgid  "Parentheses do not match."
+msgstr "វង់ក្រចក​មិន​ត្រូវ​គ្នា ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr "បាន​កំណត់​និមិត្តសញ្ញា $(ARG1) ផ្សេង​ពី​នេះ​រួច​ហើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+msgid  "Parameters do not correspond to procedure."
+msgstr "ប៉ារ៉ាម៉ែត្រ​មិន​ឆ្លើយតប​ទៅ​នឹង​បែបផែន ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid character in number."
+msgstr "តួអក្សរ​មិន​ត្រឹមត្រូវ​នៅ​ក្នុង​លេខ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Array must be dimensioned."
+msgstr "អារេ​ត្រូវ​តែ​មាន​វិមាត្រ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+msgid  "Else/Endif without If."
+msgstr "Else/Endif ដោយ​គ្មាន If ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) មិន​អនុញ្ញាត​ឲ្យ​នៅ​ក្នុង​បែបផែន​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) មិន​អនុញ្ញាត​ឲ្យ​នៅ​ក្រៅ​បែបផែន​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Dimension specifications do not match."
+msgstr "ការ​បញ្ជាក់​វិមាត្រ​គឺ​មិន​ត្រូវ​គ្នា​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown option: $(ARG1)."
+msgstr "មិន​ស្គាល់​ជម្រើស ៖ $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+msgid  "Constant $(ARG1) redefined."
+msgstr "បាន​កំណត់​ថេរ $(ARG1) ឡើង​វិញ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+msgid  "Program too large."
+msgstr "កម្មវិធី​ធំ​ពេក ។"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+msgid  "Strings or arrays not permitted."
+msgstr "មិន​ឲ្យ​ប្រើ​ខ្សែអក្សរ ឬ​អារេ​ឡើយ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+msgid  "An exception occurred $(ARG1)."
+msgstr "ករណី​លើកលែង​មួយ​បាន​កើតឡើង $(ARG1) ។"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+msgid  "This array is fixed or temporarily locked."
+msgstr "អារ៉េ​នេះ គឺ​ត្រូវបាន​ដាក់​ឲ្យ​ថេរ ឬ​ចាក់សោ​បណ្ដោះអាសន្ន ។"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Out of string space."
+msgstr "អស់​ចន្លោះ​ខ្សែអក្សរ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+msgid  "Expression Too Complex."
+msgstr "កន្សោម គឺ​ស្មុគស្មាញ​។"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+msgid  "Can't perform requested operation."
+msgstr "មិនអាចធ្វើ​ប្រតិបត្តិការ​ដែល​បាន​ស្នើ​បានទេ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+msgid  "Too many DLL application clients."
+msgstr "មាន​កម្មវិធី​ភ្ញៀវ DLL ច្រើនពេក ។"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+msgid  "For loop not initialized."
+msgstr "មិនបាន​ចាប់ផ្ដើម​សម្រាប់​រង្វិល​ជុំ​ទេ ។"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1)"
+msgstr "$(ARG1)"
+
+#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+msgid  "The macro running has been interrupted"
+msgstr "បាន​ផ្អាក​ការ​រត់​ម៉ាក្រូ ។"
+
+#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+msgid  "Reference will not be saved: "
+msgstr "សេចក្ដីយោង​នឹង​មិន​ត្រូវ​បាន​រក្សាទុក​ឡើយ ៖ "
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading library '$(ARG1)'."
+msgstr "កំហុស​ផ្ទុក​បណ្ណាល័យ '$(ARG1)' ។"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving library: '$(ARG1)'."
+msgstr "កំហុស​រក្សាទុក​បណ្ណាល័យ ៖ '$(ARG1)' ។"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "មិន​អាច​ចាប់ផ្ដើម BASIC ពី​ឯកសារ '$(ARG1)' ។"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr "កំហុស​រក្សាទុក BASIC ៖ '$(ARG1)' ។"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+msgid  "Error removing library."
+msgstr "កំហុស​យក​បណ្ណាល័យ​ចេញ ។"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+msgid  "The library could not be removed from memory."
+msgstr "មិន​អាច​យក​បណ្ណាល័យ​ចេញ​ពី​អង្គ​ចងចាំ​បាន​ឡើយ ។"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+msgid  "On"
+msgstr "បើក"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+msgid  "Off"
+msgstr "បិទ"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+msgid  "True"
+msgstr "ពិត"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+msgid  "False"
+msgstr "មិន​ពិត"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+msgid  "Yes"
+msgstr "បាទ/ចាស"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+msgid  "No"
+msgstr "ទេ"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+msgid  "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $;@(0.00 $)"

@@ -1,0 +1,272 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.String.Text
+msgid  "Please enter a binding expression."
+msgstr "Skriv eit bindingsuttrykk."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.String.Text
+msgid  "This is an invalid binding expression."
+msgstr "Dette er eit ugyldig bindingsuttrykk."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.String.Text
+msgid  "Value is invalid."
+msgstr "Verdien er ugyldig."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_REQUIRED.String.Text
+msgid  "A value is required."
+msgstr "Treng ein verdi."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.String.Text
+msgid  "The constraint '$1' not validated."
+msgstr "Skranken «$1» er ikkje sjekka."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.String.Text
+msgid  "The value is not of the type '$2'."
+msgstr "Verdien er ikkje av type «$2»."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.String.Text
+msgid  "The value must be smaller than or equal to $2."
+msgstr "Verdien må vera mindre enn eller lik $2."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.String.Text
+msgid  "The value must be smaller than $2."
+msgstr "Verdien må vera mindre enn $2."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.String.Text
+msgid  "The value must be greater than or equal to $2."
+msgstr "Verdien må vera større enn eller lik $2."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.String.Text
+msgid  "The value must be greater than $2."
+msgstr "Verdien må vera større enn $2."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.String.Text
+msgid  "The value does not match the pattern '$2'."
+msgstr "Verdien passar ikkje til mønsteret «$2»."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.String.Text
+msgid  "$2 digits allowed at most."
+msgstr "Kan ikkje vera fleire enn $2 siffer."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.String.Text
+msgid  "$2 fraction digits allowed at most."
+msgstr "Kan ikkje vera fleire enn $2 siffer etter komma."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.String.Text
+msgid  "The string must be $2 characters long."
+msgstr "Strengen må vera $2 teikn lang."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.String.Text
+msgid  "The string must be at least $2 characters long."
+msgstr "Strengen må vera minst $2 teikn lang."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.String.Text
+msgid  "The string can only be $2 characters long at most."
+msgstr "Strengen kan høgst vera $2 teikn lang."
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_STRING.String.Text
+msgid  "String"
+msgstr "Streng"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_URL.String.Text
+msgid  "Hyperlink"
+msgstr "Hyperlenkje"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.String.Text
+msgid  "True/False (Boolean)"
+msgstr "Sann/usann (boolsk)"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DECIMAL.String.Text
+msgid  "Decimal"
+msgstr "Desimal"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_FLOAT.String.Text
+msgid  "Floating point"
+msgstr "Flyttal"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DOUBLE.String.Text
+msgid  "Double"
+msgstr "Dobbel"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATE.String.Text
+msgid  "Date"
+msgstr "Dato"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_TIME.String.Text
+msgid  "Time"
+msgstr "Klokkeslett"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATETIME.String.Text
+msgid  "Date and Time"
+msgstr "Dato og klokkeslett"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.String.Text
+msgid  "Month and year"
+msgstr "Månad og år"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEAR.String.Text
+msgid  "Year"
+msgstr "År"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.String.Text
+msgid  "Month and day"
+msgstr "Månad og dag"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTH.String.Text
+msgid  "Month"
+msgstr "Månad"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DAY.String.Text
+msgid  "Day"
+msgstr "Dag"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.String.Text
+msgid  "Error during evaluation"
+msgstr "Feil under evaluering"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
+msgid  "The string '$1' does not match the required regular expression '$2'."
+msgstr "Strengen «$1» passar ikkje til det påkravde regulære uttrykket «$2»."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "Binding"
+
+#: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
+msgid  "The contents of a combo box or list field could not be determined."
+msgstr "Klarte ikkje avgjera innhaldet av kombinasjonsboksen eller listefeltet."
+
+#: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "Set inn bilete"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.String.Text
+msgid  "substituted"
+msgstr "bytt ut"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
+msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr "Det oppstod ein feil ved lasting av denne kontrollen. Han er difor bytt ut med ein plasshaldar."
+
+#: source/resource/strings.src#RID_STR_READERROR.String.Text
+msgid  "Error reading data from database"
+msgstr "Feil ved lesing av informasjon frå databasen"
+
+#: source/resource/strings.src#RID_STR_CONNECTERROR.String.Text
+msgid  "Connection failed"
+msgstr "Tilkoplinga mislukkast"
+
+#: source/resource/strings.src#RID_ERR_LOADING_FORM.String.Text
+msgid  "The data content could not be loaded."
+msgstr "Klarte ikkje lasta inn dataa."
+
+#: source/resource/strings.src#RID_ERR_REFRESHING_FORM.String.Text
+msgid  "The data content could not be updated"
+msgstr "Klarte ikkje oppdatera dataa."
+
+#: source/resource/strings.src#RID_STR_ERR_INSERTRECORD.String.Text
+msgid  "Error inserting the new record"
+msgstr "Feil ved innsetjing av ny post"
+
+#: source/resource/strings.src#RID_STR_ERR_UPDATERECORD.String.Text
+msgid  "Error updating the current record"
+msgstr "Feil ved oppdatering av denne posten"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORD.String.Text
+msgid  "Error deleting the current record"
+msgstr "Feil ved sletting av denne posten"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORDS.String.Text
+msgid  "Error deleting the specified records"
+msgstr "Feil ved sletting av dei valde postane"
+
+#: source/resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.String.Text
+msgid  "The object cannot be NULL."
+msgstr "Objektet kan ikkje vera NULL."
+
+#: source/resource/strings.src#RID_STR_OPEN_GRAPHICS.String.Text
+msgid  "Insert graphics from..."
+msgstr "Set inn bilete frå …"
+
+#: source/resource/strings.src#RID_STR_CLEAR_GRAPHICS.String.Text
+msgid  "Remove graphics"
+msgstr "Fjern bilete"
+
+#: source/resource/strings.src#RID_STR_INVALIDSTREAM.String.Text
+msgid  "The given stream is invalid."
+msgstr "Straumen er ugyldig."
+
+#: source/resource/strings.src#RID_STR_SYNTAXERROR.String.Text
+msgid  "Syntax error in query expression"
+msgstr "Syntaksfeil i spørjingsuttrykket"
+
+#: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
+msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr "Verditypane som bindinga støttar kan ikkje brukast til utveksling av data med dette kontrollelementet."
+
+#: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
+msgid  "Record"
+msgstr "Post"
+
+#: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
+msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr "Kontrollelementet er knytt til ein ekstern verdi som på same tid verkar som validator. Du må fjerna tilknytinga før du kan velja ein ny validator."
+
+#: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
+msgid  "of"
+msgstr "av"
+
+#: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr "Innhaldet i skjemaet er endra.\nVil du lagra endringane?"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "Feil ved val av sorteringskriterium"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "Feil ved val av filterkriterium"
+
+#: source/resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.String.Text
+msgid  "To execute this function, parameters are needed."
+msgstr "Denne funksjonen treng parametrar for å køyra."
+
+#: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
+msgid  "This function cannot be executed, but is only for status queries."
+msgstr "Denne funksjonen kan ikkje køyrast, berre brukast til statusspørjingar."
+
+#: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
+msgid  "Unknown function."
+msgstr "Ukjend funksjon."

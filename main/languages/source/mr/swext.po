@@ -1,0 +1,572 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: mediawiki/help/wikiformats.xhp#tit
+msgid  "MediaWiki Formats"
+msgstr "MediaWiki स्वरूप"
+
+#: mediawiki/help/wikiformats.xhp#hd_id3743095
+msgid  "MediaWiki Formats"
+msgstr "MediaWiki स्वरूप"
+
+#: mediawiki/help/wikiformats.xhp#par_id8654133
+msgid  "The following list gives an overview of the text formats that the @WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr "पुढील यादी मजकूर स्वरूपाचे सर्वसाधारण वर्णन देते ज्याने @WIKIEXTENSIONPRODUCTNAME@ हे विकी सर्वरला अपलोड करू शकते."
+
+#: mediawiki/help/wikiformats.xhp#par_id5630664
+msgid  "The OpenDocument format used by Writer and the WikiMedia format are quite different. Only a subset of all features can be transformed from one format to the other."
+msgstr "रायटरकडून OpenDocument स्वरूप  वापरले गेले आणि विकीमिडीया स्वरूप जरा वेगळे आहे.  सर्व वैशिष्ट्यांचा फक्त उपसंच एका स्वरूपातून दुसरया स्वरूपात रूपांतरित करू शकता."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7178868
+msgid  "Headings"
+msgstr "मथळा"
+
+#: mediawiki/help/wikiformats.xhp#par_id508133
+msgid  "Apply a heading paragraph style to the headings in your Writer document. The Wiki will show the heading styles of the same outline level, formatted as defined by the Wiki engine."
+msgstr "आपल्या रायटर कागदपत्रातील मथळ्याकडे मथळ्याची परिच्छेद शैली लागू करा.  विकी इंजिनने ठरवलेल्याप्रमाणे स्वरूपित केलेली विकी समान बाह्यरेखा स्तराची मथळ्याची शैली दाखवेल."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7217627
+msgid  "Hyperlinks"
+msgstr "हाईपरलिंकस"
+
+#: mediawiki/help/wikiformats.xhp#par_id3735465
+msgid  "Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. Therefore, the built-in linking facility of OpenDocument should only be used to create links that point to other sites outside the Wiki web. For creating Wiki links that point to other subjects of the same Wiki domain, use Wiki links."
+msgstr "स्थानिक OpenDocument हाईपरलिंकस \"बाह्य\" विकी दुव्यात रूपांतरित केले आहे. म्हणून, OpenDocument मध्ये समावेश असलेले जोडण्याचे साधन दुवे जे विकी वेबच्या बाहेरून इतर संकेतस्थळांना दर्शवते त्यांना निर्माण करण्यासाठी फक्त वापरायला हवे . विकी दुवे  जे सारख्या विकी महाजालावरील संकेतस्थळाच्या इतर विषयांना दर्शवते त्यांना निर्माण करण्यासाठी."
+
+#: mediawiki/help/wikiformats.xhp#hd_id941190
+msgid  "Lists"
+msgstr "यादी"
+
+#: mediawiki/help/wikiformats.xhp#par_id8942838
+msgid  "Lists can reliably be exported when the whole list uses a consistent list style. Use the Numbering or Bullets icon to generate a list in Writer. If you need a list without numbering or bullets, use Format - Bullets and Numbering to define and apply the respective list style."
+msgstr "जेव्हा संपूर्ण यादी सुसंगत यादी शैली वापरते तेव्हा याद्या विश्वनीयरित्या पाठवल्या जाऊ शकतात.  रायटरमध्ये यादी निर्माण करण्यासाठी क्रमांक किंवा बुलेटस चित्रसंकेत वापरा.  जर आपणास  क्रमांक किंवा बुलेटस रहित यादी ची आवश्यकता असेल, तर ठरवण्यासाठी बुलेटस आणि क्रमांकाचे स्वरूप वापरा  आणि संबंधित यादी शैली लागू करा."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7026886
+msgid  "Paragraphs"
+msgstr "परिच्छेद"
+
+#: mediawiki/help/wikiformats.xhp#hd_id4436475
+msgid  "Alignment"
+msgstr "संरेषण"
+
+#: mediawiki/help/wikiformats.xhp#par_id376598
+msgid  "Explicit text alignment should not be used in Wiki articles. Nevertheless, text alignment is supported for left, centered, and right alignment of text."
+msgstr "वेगळे पाठ्य स्थिती Wiki पत्रकात वापरू नका. तरी, पाठ्य स्थिती डावी, मध्य व उजवी स्थिती करीता समर्थीत आहे."
+
+#: mediawiki/help/wikiformats.xhp#hd_id7486190
+msgid  "Pre-formatted text"
+msgstr "पूर्व-स्वरूपीत पाठ्य"
+
+#: mediawiki/help/wikiformats.xhp#par_id1459395
+msgid  "A paragraph style with a fixed-width font is transformed as pre-formatted text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr "निश्चित-रूंदीची परिच्छेद शैली आधीच-स्वरूपित केलेल्या मजकूराप्रमाणे रूपांतरित केली आहे. आधीच-स्वरूपित केलेला मजकूर मजकूराभोवतीच्या सीमारेषेने विकी वर दाखवलेला आहे."
+
+#: mediawiki/help/wikiformats.xhp#hd_id4834131
+msgid  "Character styles"
+msgstr "अक्षर शैली"
+
+#: mediawiki/help/wikiformats.xhp#par_id6397595
+msgid  "Character styles modify the appearance of parts of a paragraph. The transformation supports bold, italics, bold/italics, subscript and superscript. All fixed width fonts are transformed into the Wiki typewriter style."
+msgstr "अक्षऱ शैलीं परिच्छेद भागाच्या स्वरूपास सुधारित करते.  रूपांतरण ठळक, तिरके, ठळक/ तिरके, माथालेखन, पायथालेखन इ. ला आधार देते. सर्व निश्चित रूंदीच्या फॉन्टसना विकी टंकलेखन शैलीमध्ये रूपांतरीत केले आहे."
+
+#: mediawiki/help/wikiformats.xhp#hd_id5152745
+msgid  "Footnotes"
+msgstr "चरणओळं"
+
+#: mediawiki/help/wikiformats.xhp#par_id5238196
+msgid  "Note: The transformation uses the new style of footnotes with <ref> and <references> tags that requires the Cite.php extension to be installed into MediaWiki. If those tags occur as plain text in the transformation result, ask the Wiki administrator to install this extension."
+msgstr "नोंद:रूपांतर तळटिपांची नवीन शैली  \\<ref\\> आणि \\<references\\>  टॅगसह वापरते ज्यांना संकेतस्थळाची आवश्यकता आहे . मिडीया विकीत php एक्सटेन्शन स्थापित करू.  जर हे टॅग्ज रूपांतर अहवालात साध्या मजकूराप्रमाणे आले, तर हे एक्सटेन्शन स्थापित करण्यासाठी विकी प्रशासकाला विचारा."
+
+#: mediawiki/help/wikiformats.xhp#hd_id9405499
+msgid  "Images"
+msgstr "प्रतिमा"
+
+#: mediawiki/help/wikiformats.xhp#par_id3541673
+msgid  "Images cannot be exported by a transformation producing a single file of Wiki text. However, if the image is already uploaded to the target Wiki domain (e. g. WikiMedia Commons), then the transformation produces a valid image tag that includes the image. Image captions are also supported."
+msgstr "प्रतिमांना  विकी मजकूराची एखादी धारिका निर्माण करून रूपांतरणाने पाठवू शकत नाही. तथापि, जर प्रतिमा आधीच लक्ष्य विकी महाजालावरील संकेतस्थळा  (उदा., विकीमिडीया सामायिक) कडे अपलोड केलेली आहे,  तर रूपांतरणाने वैध प्रतिमा टॅग निर्माण होतो जे प्रतिमांचा समावेश करते.  प्रतिमा कॅप्शनने देखील आधार दिलेला आहे."
+
+#: mediawiki/help/wikiformats.xhp#hd_id2162236
+msgid  "Tables"
+msgstr "कोष्टक"
+
+#: mediawiki/help/wikiformats.xhp#par_id3037202
+msgid  "Simple tables are supported well. Table headers are translated into corresponding Wiki style table headers. However, custom formatting of table borders, column sizes and background colors is ignored."
+msgstr "साधे कोष्टक चांगला आधार देतात.  कोष्टकाचा माथासमास मजकूर संबंधित विकी   शैली कोष्टकाचा माथासमास मजकूरात अनुवादित केला आहे. तथापि,कोष्टक सीमारेखाचे इच्छित स्वरूपण, स्तंभ आकार, आणि पार्श्वभूमीचे रंग दुर्लक्षित केले जातात."
+
+#: mediawiki/help/wikiformats.xhp#hd_id2954496
+msgid  "Joined Cells"
+msgstr "जोडलेले कप्पे"
+
+#: mediawiki/help/wikiformats.xhp#par_id8253730
+msgid  "OpenDocument and especially OpenOffice.org represent tables that have joined cells that span rows as tables with nested tables. In contrast, the wiki model of table is to declare column and row spans for such joined cells. "
+msgstr "OpenDocument  आणि विशेषकरून OpenOffice.org कोष्टकांना दाखवतात कि त्यांच्याकडे जोडलेले कक्ष आहेत जे नेस्टेड कोष्टकांच्या साहाय्याने कोष्टकाप्रमाणे पंक्तिना वाढवते.  "
+
+#: mediawiki/help/wikiformats.xhp#par_id8163090
+msgid  "If only columns of the same row are joined, the result of the transformation resembles the source document very well."
+msgstr "जर समान पंक्तिचा फक्त स्तंभाना जोडले असेल, तर रूपांतराचा परिणाम  स्त्रोत कागपत्रास चांगल्याप्रकारे सारखे करते."
+
+#: mediawiki/help/wikiformats.xhp#hd_id425122
+msgid  "Borders"
+msgstr "सीमा"
+
+#: mediawiki/help/wikiformats.xhp#par_id1831110
+msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"\<emph\>prettytable\"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
+msgstr "किनार व पार्श्वभूमी करीता इच्छिक कोष्टक शैली लागू केले असल्यास किंवा नसल्यास, कोष्टक नेहमी \"<emph>prettytable\"</emph> नुरूप एक्सपोर्ट केले जाते, जे Wiki इंजिन अंतर्गत सोपे बॉर्डर व ठळक हेड्डर दर्शविते."
+
+#: mediawiki/help/wikiformats.xhp#hd_id6255073
+msgid  "Charset and special characters"
+msgstr "Charset व विशेष अक्षरं"
+
+#: mediawiki/help/wikiformats.xhp#par_id8216193
+msgid  "The charset of the transformation result is fixed to UTF-8. Depending on your system, this might not be the default charset. This might cause \"special characters\" to look broken when viewed with default settings. However, you can switch your editor to UTF-8 encoding to fix this. If your editor does not support switching the encoding, you can display the result of the transformation in the Firefox browser and switch the encoding to UTF-8 there. Now, you can cut and paste the transformation result to your program of choice."
+msgstr "रूपांतरन नंतर charset UTF-8 करीता निश्चित केली जाते. प्रणाली वर आधारीत, हे मुलभूत charset नसू शकते. यामुळे काहिक \"special characters\" मुलभूत संयोजनासह मोडल्या सारखे प्रदर्शित होऊ शकते. व्यस्थित करण्याकरीता, तुम्हाला संपादकास UTF-8 एन्कोडींग करीता निश्चित करावे लागेल. संपादक एनकोडिंग बदलविण्यास समर्थन पुरवित नसल्यास, तुम्ही रूपांतरनचे परिणाम Firefox ब्राऊजर अंतर्गत पाऊ शकाल व एनकोडिंगला UTF-8 करीता बदलवू शकता. आता, तुम्ही रूपांतरन परिणाम तुमच्या पसंतीच्या कार्यक्रमात कापून चिकटवू शकता."
+
+#: mediawiki/help/wiki.xhp#tit
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#bm_id3154408
+msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
+msgstr "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
+
+#: mediawiki/help/wiki.xhp#hd_id5993530
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#par_id9647511
+msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
+msgstr "<ahelp hid=\".\"> @WIKIEXTENSIONPRODUCTNAME@ चा वापर करून तुम्ही वर्तमान Writer पाठ्य दस्तऐवज MediaWiki सर्वरवर अपलोड करू शकता. अपलोडींग नंतर, सर्व Wiki वापरकर्ता Wiki वरील दस्तऐवज वाचू शकता.</ahelp>"
+
+#: mediawiki/help/wiki.xhp#par_id6468703
+msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
+msgstr "<ahelp hid=\".\"> वर्तमान Writer दस्तऐवजला MediaWiki सर्वरवर अपलोड करायचे असल्यास <item type=\"menuitem\">MediaWiki करीता - फाइल - पाठवा</item> निवडा.</ahelp>"
+
+#: mediawiki/help/wiki.xhp#hd_id4554582
+msgid  "System Requirements"
+msgstr "पद्धतीच्या आवश्यकता"
+
+#: mediawiki/help/wiki.xhp#par_id2597430
+msgid  "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: mediawiki/help/wiki.xhp#par_id8430738
+msgid  "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: mediawiki/help/wiki.xhp#par_id9340495
+msgid  "Java Runtime Environment 1.4"
+msgstr "जावा रनटाईम इनवॉरन्मेट 1.4"
+
+#: mediawiki/help/wiki.xhp#par_id7387615
+msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
+msgstr "समर्थीत <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> सर्वर वरील Wiki खाते"
+
+#: mediawiki/help/wiki.xhp#hd_id8047120
+msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ स्थापित करत आहे"
+
+#: mediawiki/help/wiki.xhp#par_id4277169
+msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ प्रतिष्ठापन करण्यापूर्वी, %PRODUCTNAME Java Runtime Environment (JRE) चा वापर करते याची खात्री करा. JRE ची स्थिती तपासण्याकरीता, <item type=\"menuitem\">साधन - पर्याय - %PRODUCTNAME - Java</item> चा वापर करा. लक्षात ठेवा \"Use a Java runtime environment\" चिन्हाकृत केले आहे व Java रनटाइम संचयीका यादीत निवडले गेली आहे याची खात्री करा. JRE सक्रीय नसल्यास, JRE 1.4 किंवा पुढिल सक्रीय करा व %PRODUCTNAME पुन्ह प्रारंभ करा."
+
+#: mediawiki/help/wiki.xhp#hd_id567339
+msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ स्थापित करण्यासाठी"
+
+#: mediawiki/help/wiki.xhp#par_id1732230
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr "Writer चौकटीत, <item type=\"menuitem\">साधन - विस्तारण व्यवस्थापक</item> निवडा."
+
+#: mediawiki/help/wiki.xhp#par_id4338511
+msgid  "In the Extension Manager dialog, click Add."
+msgstr "एक्सटेन्शन व्यवस्थापक संवादात, समाविष्ट करा वर क्लिक करा."
+
+#: mediawiki/help/wiki.xhp#par_id5882442
+msgid  "Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click Close. "
+msgstr "@WIKIEXTENSIONFILENAME@.oxt धारिकेस स्थानित करा, उघडा वर क्लिक करा, आणि नंतर बंद करा वर क्लिक करा. "
+
+#: mediawiki/help/wiki.xhp#par_id4008911
+msgid  "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "%PRODUCTNAME बंद करा, व तसेच कार्यक्षम असल्यास Quickstarter देखील बंद करा."
+
+#: mediawiki/help/wiki.xhp#par_id265511
+msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr "सॉफ्टवेअर पुन्हा सुरू करा, पाठ्य दस्तऐवज उघडा, व त्यानंतर Wiki संयोजना प्रविष्ट करण्याकरीता <item type=\"menuitem\">साधन - पर्याय - महाजाळ - MediaWiki</item> निवडा. खालिल \"To Connect To a Wiki\" पर्याय पहा."
+
+#: mediawiki/help/wiki.xhp#hd_id3569444
+msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ ला काढून टाकण्यासाठी"
+
+#: mediawiki/help/wiki.xhp#par_id2655110
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr "Writer चौकटीत, <item type=\"menuitem\">साधन - विस्तारण व्यवस्थापक</item> पर्याय निवडा."
+
+#: mediawiki/help/wiki.xhp#par_id9504379
+msgid  "Click the plus sign (+) in front of My Extensions."
+msgstr "माझ्या एक्सटेन्शनच्या समोर अधिक चिन्हा (+) वर क्लिक करा."
+
+#: mediawiki/help/wiki.xhp#par_id8431348
+msgid  "Select the extension, click Remove, and then click Close."
+msgstr "एक्सटेन्शन निवडा, काढून टाकण्यावर क्लिक करा, आणि नंतर बंद करा वर क्लिक करा."
+
+#: mediawiki/help/wiki.xhp#hd_id5316019
+msgid  "To Connect to a Wiki"
+msgstr "विकी ला जोडण्यासाठी"
+
+#: mediawiki/help/wiki.xhp#par_id2381969
+msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
+msgstr "टिप: तुम्ही %PRODUCTNAME अंतर्गत आपले वापरकर्ता नाव व पासवर्ड परस्पर संवाद करीता संचयीत करू शकता. पासवर्ड योग्यरित्या सुरक्षीतरित्या संचयीत केले जाईल, जेथे प्रवेश मुख्य पासवर्ड द्वारे सुस्थित केले जाते. मुख्य पासवर्ड कार्यान्वीत करण्याकरीता, <item type=\"menuitem\">साधने - पर्याय - %PRODUCTNAME - सुरक्षा</item> पर्याय निवडा."
+
+#: mediawiki/help/wiki.xhp#par_id3751640
+msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
+msgstr "टिप: प्रॉक्सी सर्वरचा वापर करून वेबशी जुळवणी स्थापीत करायचे असल्यास, <item type=\"menuitem\">Tools - Options - Internet - Proxy</item> करीता प्रॉक्सी माहिती प्रविष्ट करा, व सॉफ्टवेअर पुन्हा सुरू करा."
+
+#: mediawiki/help/wiki.xhp#par_id9533677
+msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
+msgstr "Writer दस्तऐवज उघडा, व <item type=\"menuitem\">साधन - पर्याय - महाजाळ - MediaWiki</item> निवडा."
+
+#: mediawiki/help/wiki.xhp#par_id368968
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">पर्याय</link> संवाद अंतर्गत, जोडावर क्लिक करा."
+
+#: mediawiki/help/wiki.xhp#par_id6962187
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> संवाद अंतर्गत, Wiki करीता खाते माहिती प्रविष्ट करा."
+
+#: mediawiki/help/wiki.xhp#par_id5328836
+msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "URL मजकूरबॉक्समध्ये, विकीचा पत्ता एन्टर करा जो आपणास जोडायचा आहे."
+
+#: mediawiki/help/wiki.xhp#par_id389416
+msgid  "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "आपण वेब ब्राऊजरकडून URL ची प्रत करू शकता आणि मजकूरबॉक्समध्ये त्यास चिकटवू शकता."
+
+#: mediawiki/help/wiki.xhp#par_id5906552
+msgid  "In the Username box, enter your user ID for your Wiki account."
+msgstr "वापरकर्त्याच्या नावाच्या बॉक्समध्ये, आपल्या विकी  खात्यासाठी वापरकर्त्याचा ID एन्टर करा."
+
+#: mediawiki/help/wiki.xhp#par_id9297158
+msgid  "If the Wiki allows anonymous write access, you can leave the Username and Password boxes empty."
+msgstr "जर विकीने निनावी लेखन प्रवेशास परवानगी दिली, तर आपण वापरकर्त्याचे नाव आणि  पासवर्ड बॉक्सना रिक्त ठेवू शकता."
+
+#: mediawiki/help/wiki.xhp#par_id8869594
+msgid  "In the Password box, enter the password for your Wiki account, then click OK."
+msgstr "परवलीच्या शब्द बॉक्समध्ये, आपल्या विकी खात्यासाठी पासवर्ड एन्टर करा, नंतर OK वर क्लिक करा."
+
+#: mediawiki/help/wiki.xhp#par_id292062
+msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
+msgstr "सत्र अंतर्गत पासवर्ड संचयीत करायचे असल्यास \"Save password\" पर्याय कार्यान्वीत करा. सर्व संचयीत पासवर्डच्या प्रवेश करीता मुख्य पासवर्ड वापरले जाते. मुख्य पासवर्ड वापरण्याकरीता <item type=\"menuitem\">साधन - पर्याय - %PRODUCTNAME - सुरक्षा</item> निवडा. मुख्य पासवर्ड कार्यान्वीत नसल्यास \"Save password\" अनुपलब्ध होते."
+
+#: mediawiki/help/wiki.xhp#hd_id7044892
+msgid  "To Create a New Wiki Page"
+msgstr "नवीन विकी पान निर्माण करण्यासाठी"
+
+#: mediawiki/help/wiki.xhp#par_id3514206
+msgid  "Open a Writer document."
+msgstr "रायटर कागदपत्र उघडा."
+
+#: mediawiki/help/wiki.xhp#par_id944853
+msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
+msgstr "Wiki पानचे अनुक्रम लिहा. तुम्ही पाठ्य स्वरूप, शिर्षलेख, तळलेख, व यानुरूप स्वरूपन करू शकता. <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">समर्थीत स्वरूपनची यादी</link> पहा."
+
+#: mediawiki/help/wiki.xhp#par_id4566484
+msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
+msgstr "<item type=\"menuitem\">MediaWiki करीता - फाइल - पाठवा</item> निवडा."
+
+#: mediawiki/help/wiki.xhp#par_id228278
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
+msgstr "<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">MediaWiki कडे पाठवा</link> संवाद अंतर्गत, तुमच्या नोंदणी करीता संयोजना निश्चित करा."
+
+#: mediawiki/help/wiki.xhp#par_id2564165
+msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
+msgstr "<emph>MediaWiki सर्वर</emph>: Wiki निवडा."
+
+#: mediawiki/help/wiki.xhp#par_id5566576
+msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
+msgstr "<emph>शिर्षक</emph>: तुमच्या पानाचे शिर्षक टाइप करा. पान अंतर्गत वर्तमान पाठ्य दस्तऐवजसह पुन्ह लेखन करण्याकरीता वर्तमान पानाचे शिर्षक टाइप करा. Wiki वर नविन पान बनविण्याकरीता नविन शिर्षक टाइप करा."
+
+#: mediawiki/help/wiki.xhp#par_id9688711
+msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
+msgstr "<emph>सारांश</emph>: वैकल्पीक लहानसे पानाचे सारांश प्रविष्ट करा."
+
+#: mediawiki/help/wiki.xhp#par_id4123661
+msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
+msgstr "<emph>हे एख किर्कोळ संपादन आहे</emph>: अपलोड केलेल्या पानास आधिपासूनच अस्तित्वातील समान शिर्षक असलेले पानाशी किर्कोळ संपादन नुरूप चिन्हाकृत करण्याकरीता हा पर्याय निवडा."
+
+#: mediawiki/help/wiki.xhp#par_id452284
+msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
+msgstr "<emph>वेब ब्राऊजर अंतर्गत दर्शवा</emph>: प्रणाली वेब ब्राऊजर उघडण्याकरीता हा पर्याय निवडा व अपलोड केलेले Wiki पान दर्शवा."
+
+#: mediawiki/help/wiki.xhp#par_id8346812
+msgid  "Click Send."
+msgstr "पाठवणे वर क्लिक करा."
+
+#: mediawiki/help/wikisettings.xhp#tit
+msgid  "MediaWiki Options"
+msgstr "MediaWiki पर्याय"
+
+#: mediawiki/help/wikisettings.xhp#hd_id6425672
+msgid  "MediaWiki Options"
+msgstr "MediaWiki पर्याय"
+
+#: mediawiki/help/wikisettings.xhp#par_id1188390
+msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
+msgstr "तुम्ही MediaWiki सर्वर जोडू, संपादन व काढूण टाकू शकता. Open the dialog by <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. Alternatively, choose <item type=\"menuitem\">Tools - Extension Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
+
+#: mediawiki/help/wikisettings.xhp#par_id300607
+msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\">नविन Wiki सर्वर जोडण्याकरीता जोडावर क्लिक करा.<br/>नोंदणी निवडा व खाते संयोजना संपादीत करण्याकरीता संपादन करा वर क्लिक करा.<br/>यादीतून नोंदणीस काढूण टाकण्याकरीता नोंदणी निवडा व काढूण टाका क्लिक करा.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id9786065
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">नविन नोंदणी यादीत जोडण्याकरीता MediaWiki संवाद उघडतो.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id3386333
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">निवडलेली नोंदणी संपादीत करण्याकरीता MediaWiki संवाद उघडतो.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id7285073
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">यादीतून निवडलेले नोंदणी काढूण टाकतो.</ahelp>"
+
+#: mediawiki/help/wikisettings.xhp#par_id1029084
+msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
+msgstr "जोडा किंवा संपादीत करा क्लिक केल्यास, <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> संवाद उगडले जाते."
+
+#: mediawiki/help/wikiaccount.xhp#tit
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/help/wikiaccount.xhp#hd_id960722
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/help/wikiaccount.xhp#par_id4571672
+msgid  "Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr "आपले मिडीया विकी खाते नियंत्रणाना संपादित करण्यासाठी किंवा समाविष्ट करण्यासाठी मिडीया विकी  संवाद वापरा."
+
+#: mediawiki/help/wikiaccount.xhp#par_id7631458
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">http:// पासून सुरू होणारे MediaWiki सर्वर करीता, URL प्रविष्ट करा.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id7862483
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">MediaWiki सर्वरवर वापरकर्ता नाव प्रविष्ट करा. निनावी प्रवेश करीता रिकामे सोडा.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id1113010
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">MediaWiki सर्वरवर वापरकर्ता नाव प्रविष्ट करा. निनावी प्रवेश करीता रिकामे सोडा.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id656758
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">सत्र अंतर्गत पासवर्ड प्रविष्ट करण्याकरीता कार्यान्वीत करा. मुख्य पासवर्ड कार्यान्वीत असायला हवे, <item type=\"menuitem\">साधने - पर्याय - %PRODUCTNAME - सुरक्षा</item> पहा.</ahelp>"
+
+#: mediawiki/help/wikiaccount.xhp#par_id3112582
+msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr "http://wiki.services.openoffice.org/wiki च्या स्वरूपासारखे विकी सर्वरचा इटरनेट पत्ता एन्टर करा किंवा वेब ब्राऊजर कडून URL ची प्रत करा."
+
+#: mediawiki/help/wikiaccount.xhp#par_id628070
+msgid  "If the Wiki allows anonymous access, you can leave the account text boxes empty. Else enter your user name and password."
+msgstr "जर विकीने निनावी प्रवेशास परवानगी दिली, तर आपण खाते मजकूर बॉक्सना रिकामे ठेवू शकता.  अन्यथा, आपले वापरकर्त्याचे नाव आणि पासवर्ड एन्टर करा."
+
+#: mediawiki/help/wikiaccount.xhp#par_id9046601
+msgid  "If you have enabled the master password feature on the Security tab page of the Tools - Options - %PRODUCTNAME dialog, then the software can store your password and automatically insert the data where necessary. Enable the \"Save password\" checkbox to store your password."
+msgstr "जर आपण  साधने - पर्याय - %PRODUCTNAME संवादाच्या सुरक्षा टॅब पानावर प्रधान पासवर्ड सक्षम केले असेल, तर सॉफ्टवेअर आपला परवलीचा शब्द संचित करू शकतो आणि जिथे आवश्यक असेल तिथे डाटा अंतर्भूत करू शकतो. आपला पासवर्ड संचित करण्यासाठी \"Save password\" खूणेसाठीच्या चौकोनास सक्षम करा."
+
+#: mediawiki/help/wikisend.xhp#tit
+msgid  "Send to MediaWiki"
+msgstr "MediaWiki कडे पाठवा"
+
+#: mediawiki/help/wikisend.xhp#hd_id108340
+msgid  "Send to MediaWiki"
+msgstr "MediaWiki कडे पाठवा"
+
+#: mediawiki/help/wikisend.xhp#par_id1743827
+msgid  "In the Send to MediaWiki dialog, specify the settings for your current Wiki upload."
+msgstr "मिडीया विकी संवादाकडे पाठवण्याच्या मध्ये, आपल्या चालू विकी अपलोडसाठी नियंत्रणे निर्देशित करा."
+
+#: mediawiki/help/wikisend.xhp#par_id664082
+msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
+msgstr "<ahelp hid=\".\">दस्तऐवज प्रकाशीत करण्याजोगी MediaWiki सर्वर निवडा. यादीत नविन सर्वर जोडायचे असल्यास जोडावर क्लिक करा.</ahelp>"
+
+#: mediawiki/help/wikisend.xhp#par_id2794885
+msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
+msgstr "<ahelp hid=\".\">Wiki नोंदणीचे शिर्षक प्रविष्ट करा. हे Wiki नोंदणीचे उच्च शिर्षक आहे. नविन नोंदणी करीता, Wiki वरील शिर्षक एकमेव असायला हवे. अस्तित्वातील शिर्षक प्रविष्ट केल्यास, अपलोड वर्तमान Wiki नोंदणीला खोडून पुन्हा लिहीतो.</ahelp>"
+
+#: mediawiki/help/wikisend.xhp#par_id2486342
+msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
+msgstr "<ahelp hid=\".\">एक वैक्लपीक लहानसे सारांश किंवा टिपण्णी प्रविष्ट करा.</ahelp> <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link> पहा."
+
+#: mediawiki/help/wikisend.xhp#par_id823999
+msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
+msgstr "<emph>हे किर्कोळ संपादन आहे</emph>: <ahelp hid=\".\">अपलोड केलेल्या पानास आधिपासूनच अस्तित्वातील समान शिर्षक असलेले पानाशी किर्कोळ संपादन नुरूप चिन्हाकृत करण्याकरीता हा पर्याय निवडा.</ahelp>"
+
+#: mediawiki/help/wikisend.xhp#par_id6592913
+msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
+msgstr "<emph>वेब ब्राऊजर अंतर्गत दर्शवा</emph>: <ahelp hid=\".\">प्रणाली वेब ब्राऊजर उगडण्याकरीता व अपलोड केलेले Wiki पान दर्शविण्याकरीता या पर्याय निवडा.</ahelp>"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
+msgid  "To Media~Wiki..."
+msgstr "मिडिया विकी ..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label
+msgid  "MediaWiki"
+msgstr "मिडिया विकी"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.GeneralSendError
+msgid  "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "'MediaWiki कडे पाठवा' कार्य यशस्वीपणे पूर्ण करता आले नाही."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoWikiFilter
+msgid  "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
+msgstr "MediaWiki पाठवण्याची गाळणी सापडू शकत नाही.  गाळणी स्थापित करण्यासाठी 'साधने-XML गाळणीची संरचना' निवडा, किंवा घटक स्थापित करण्यासाठी पूर्वतयारी वापरा."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoConnectionToURL
+msgid  "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "$ARG1' वरील MediaWiki पद्धतीकडे जुळणी निर्माण करता आली नाही."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.WrongLogin
+msgid  "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
+msgstr "वापरकर्त्याचे नाव किंवा पासवर्ड चुकीचा आहे.  कृपया पुन्हा प्रयत्न करा, किंवा निनावी जुळणीसाठी रिक्त क्षेत्र सोडा."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.InvalidURL
+msgid  "A connection could not be created because the URL is invalid."
+msgstr "URL अवैध असल्यामुळे जुळणी निर्माण करणे अशक्य आहे."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoURL
+msgid  "Specify a MediaWiki server by providing a URL."
+msgstr "URL पूरवून तुम्ही MediaWiki सर्व्हर निर्देशीत करा."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.CancelSending
+msgid  "The transfer has been interrupted. Please check the integrity of the wiki article."
+msgstr " स्थलांतर व्यतयित करण्यात आले आहे. कृपया विकी लेखाचे संकलन तपासा."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UrlLabel
+msgid  "U~RL"
+msgstr "URL (~R)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UsernameLabel
+msgid  "~Username"
+msgstr "वापरकर्त्याचे नाव (~U)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_PasswordLabel
+msgid  "~Password"
+msgstr "पासवर्ड (~P)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendTitle
+msgid  "Send to MediaWiki"
+msgstr "MediaWiki कडे पाठवा"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_WikiArticle
+msgid  "Wiki article"
+msgstr "विकी लेख"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_No
+msgid  "No"
+msgstr "नाही"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_OK
+msgid  "OK"
+msgstr "OK"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_Yes
+msgid  "Yes"
+msgstr "होय"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_AddButton
+msgid  "~Add..."
+msgstr "समाविष्ट करा (~A)..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditButton
+msgid  "~Edit..."
+msgstr "संपादीत करा (~E)..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendButton
+msgid  "~Send"
+msgstr "पाठवा (~S)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_RemoveButton
+msgid  "~Remove"
+msgstr "काढून टाका (~R)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_NewWikiPage_Label1
+msgid  "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
+msgstr "शीर्षक '$ARG1' सह विकी लेख अद्याप अस्तित्वात नाही. आपणास त्या नावाने नवीन लेख निर्माण करायचा  आहे का?"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label1
+msgid  "Media~Wiki Server"
+msgstr "MediaWiki सर्व्हरकडे पाठवा (~W)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label2
+msgid  "~Title"
+msgstr "शीर्षक (~T)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label3
+msgid  "S~ummary"
+msgstr "सारांश (~u)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck
+msgid  "This is a ~minor edit"
+msgstr "हे किर्कोळ संपादन आहे (~m)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck
+msgid  "Show in web ~browser"
+msgstr "वेब ब्राऊजर मध्ये दाखवा (~b)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.UnknownCert
+msgid  "The certificate of the selected site is unknown."
+msgstr "निवडलेल्या संकेतस्थळाचे प्रमाणपत्र अज्ञात आहे."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Title
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_AccountLine
+msgid  "Account"
+msgstr "खाते"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_WikiLine
+msgid  "MediaWiki Server"
+msgstr "MediaWiki सर्व्हर"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_SaveBox
+msgid  "~Save password"
+msgstr "पासवर्ड साठवा (~S)"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Extension_String
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_WikiPageExists_Label1
+msgid  "A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;"
+msgstr "शीर्षक '$ARG1' पासूनचे विकी लेख आधिपासूनच अस्तित्वात आहे.&#13;&#13;सध्याचे लेख तुम्हाला तुमच्या लेखसह बदलवायचे?&#13;&#13;"

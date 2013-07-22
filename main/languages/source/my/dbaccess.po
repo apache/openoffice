@@ -1,0 +1,4023 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.String.Text
+msgid  "Tried to open the table $name$."
+msgstr "ဇယား $name$  ဖွင့်ရန် ကြိုးစားခဲ့သည်"
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_INVALID.String.Text
+msgid  "No connection could be established."
+msgstr "အချိတ်အဆက်မရှိပါ။"
+
+#: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
+msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
+msgstr "$name$ ဇယား အဆင်သင့် တည်ရှိသည်။ စစ်ထုတ်ထားပြီးဖြစ်၍ ၎င်းကိုမမြင်နိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
+msgid  "You have no write access to the configuration data the object is based on."
+msgstr "အရာဝတ္ထုပေါ်အခြေခံထားသည့် အချက်အလက် အစိတ်အပိုင်းများ ဖွဲ့စည်းပုံသို့ ဝင်ရောက်မရေးနိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
+msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgstr "ပြင်ပအချက်အလက် မူရင်းသို့ ချိတ်ဆက်နိုင်လိမ့်မည် မဟုတ်ပါ။ အမည်မသိ အမှားတစ်ခု ဖြစ်ပွားထားသည်။ ဒရိုင်ဘာ ချို့ယွင်းနေသည်။"
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
+msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgstr "ပြင်ပအချက်အလက် မူရင်းသို့ ချိတ်ဆက် နိုင်လိမ့်မည် မဟုတ်ပါ။ ပေးထားသော URL အတွက် ဒရိုင်ဘာ SDBC ကိုရှာမတွေ့ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
+msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgstr "ပြင်ပအချက်အလက်မူရင်းသို့ ချိတ်ဆက်နိုင်လိမ့်မည် မဟုတ်ပါ။ ဒရိုင်ဘာ ကိုစီမံခန့်ခွဲသည့် SDBC ကိုမဆွဲတင်နိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "ပုံစံ"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "အစီရင်ခံစာ"
+
+#: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
+msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
+msgstr "အချက်အလက်မူရင်း သိမ်းမထားပါ။ အချက်အလက်မူရင်းကို သိမ်းရန် XStorable ကြားခံဖြင့် ဆက်သွယ်ပေးသည့်စနစ်ကို အသုံးပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr "ပေးထားသော ညွှန်ကြားချက်သည် SELECT  ဖော်ပြချက်တစ်ခု မဟုတ်ပါ။ ကွာရီများကိုသာ ခွင့်ပြုထားသည်။"
+
+#: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
+msgid  "No values were modified."
+msgstr "အထူးပြုတန်ဖိုးများမရှိပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
+msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgstr "တန်ဖိုးများထည့်သွင်းရန်မဖြစ်နိုင်ပါ။ ResultSet အားဖြင့် XRowUpdate ကြားခံဖြင့် ဆက်သွယ်ပေးသည့်စနစ်ကို အထောက်အကူမပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
+msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgstr "တန်ဖိုးများထည့်သွင်းရန်မဖြစ်နိုင်ပါ။ ResultSet အားဖြင့် XRowUpdate ကြားခံဖြင့် ဆက်သွယ်ပေးသည့်စနစ်ကို အထောက်အကူမပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
+msgid  "Values could not be modified, due to a missing condition statement."
+msgstr "လွဲနေသော အခြေအနေ ထုတ်ပြန်ချက်တစ်ခုကြောင့် တန်ဖိုးများ အထူးပြု နိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_ADD.String.Text
+msgid  "The adding of columns is not supported."
+msgstr "ကော်လံများ ပေါင်းထည့်ခြင်း မပြုနိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_DROP.String.Text
+msgid  "The dropping of columns is not supported."
+msgstr "ကော်လံများ ချထားခြင်း မပြုနိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.String.Text
+msgid  "The WHERE condition could not be created for the primary key."
+msgstr "WHERE အခြေအနေကို မူလသော့အတွက် မဖန်တီးနိုင်ခဲ့ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.String.Text
+msgid  "The column does not support the property '%value'."
+msgstr "'%value' ဂုဏ်သတ္တိကို ကော်လံမှ မထောက်ပံ့ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.String.Text
+msgid  "The column is not searchable!"
+msgstr "ကော်လံ ရှာမတွေ့ပါ!"
+
+#: source/core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.String.Text
+msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "ကော်လံများ၏တန်ဖိုးသည် Sequence<sal_Int8>အမျိုးအစားမဟုတ်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.String.Text
+msgid  "The column is not valid."
+msgstr "ကော်လံမမှန်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.String.Text
+msgid  "The column '%name' must be visible as a column."
+msgstr "ကော်လံ '%name' ကိုကော်လံအကန့်တစ်ခုအဖြစ် မြင်ရမည်။"
+
+#: source/core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.String.Text
+msgid  "The interface XQueriesSupplier is not available."
+msgstr "ကြားခံ XQueriesSupplier ကိုအသုံးပြု၍မရပါ။ "
+
+#: source/core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.String.Text
+msgid  "The driver does not support this function."
+msgstr "ဒရိုင်ဘာဆောဖ့်ဝဲသည် ဤလုပ်ဆောင်ချက်ကို အထောက်အကူမပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_ABS_ZERO.String.Text
+msgid  "An 'absolute(0)' call is not allowed."
+msgstr "'absolute(0)' ခေါ်ယူ သုံးခွင့်မပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_RELATIVE.String.Text
+msgid  "Relative positioning is not allowed in this state."
+msgstr "ဤအခြေအနေတွင် ဆက်စပ်လျက်ရှိသော အနေအထားများကိုခွင့်မပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
+msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgstr "ResultSetဖြင့်နောက်ဆုံးအတန်းကို နေရာချပြီးသောအခါ အခြားအတန်းတစ်ခုကို ပြန်လည်သစ်လွင်၍မရနိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
+msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgstr "ResultSetသည် ထည့်သွင်းမည့်အတန်းသို့ မရွေ့လျားသောအခါ အတန်းသစ်တစ်ခုကို ထပ်မံထည့်သွင်း၍ မရနိုင်ပါ။ "
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
+msgid  "A row cannot be modified in this state"
+msgstr "ဤအခြေအနေတွင်အတန်းတစ်ခုကိုအထူးပြုနိုင်မည်မဟုတ်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETEROW.String.Text
+msgid  "A row cannot be deleted in this state."
+msgstr "ဤအခြေအနေတွင် အတန်းတစ်ခု ဖျက်နိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_TABLE_RENAME.String.Text
+msgid  "The driver does not support table renaming."
+msgstr "ဒရိုင်ဘာသည် ဇယားအမည်ပြောင်းလဲမှုကို အထောက်အကူမပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.String.Text
+msgid  "The driver does not support the modification of column descriptions."
+msgstr "ဒရိုင်ဘာသည် ကော်လံဖော်ပြချက်များ၏ ပြုပြင်မွမ်းမံခြင်းကိုအထောက်အကူမပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the name."
+msgstr "အမည်ပြောင်းလဲခြင်းအားဖြင့် ဒရိုင်ဘာသည် ကော်လံဖော်ပြချက်များ၏ ပြုပြင်မွမ်းမံခြင်းကို အထောက်အကူမပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the index."
+msgstr "အညွှန်းပြောင်းလဲခြင်းအားဖြင့် ဒရိုင်ဘာသည် ကော်လံဖော်ပြချက်များ၏ ပြုပြင်မွမ်းမံခြင်းကို အထောက်အကူမပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "\"$file$\"  ဖိုင် မတည်ရှိပါ။"
+
+#: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
+msgid  "There exists no table named \"$table$\"."
+msgstr "\"$table$\" ဖြင့် ဇယားအမည်မရှိပါ။"
+
+#: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
+msgid  "There exists no query named \"$table$\"."
+msgstr "\"$table$\"အမည်ဖြင့် ကွာရီ မရှိပါ။"
+
+#: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
+msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgstr "ဒေတာဘေ့စ်ရှိ ဇယားများ၏အမည်နှင့် ကွာရီအမည်များ ရှုပ်ထွေးနေသည်။ ကွာရီအားလုံးနှင့် ဇယားများအားလုံးကို အပြည့်အ၀အသုံးချရန် သိသာထင်ရှားသောအမည်များပေးပါ။"
+
+#: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr "SQL ညွှန်ကြားချက်အမှား\n\n $command$"
+
+#: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The SQL command does not describe a result set."
+msgstr "SQL ညွှန်ကြားချက်မှ အဖြေဖော်ပြခြင်းမရှိပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.String.Text
+msgid  "The name must not be empty."
+msgstr "အမည်လွတ်ဖြစ်မနေရ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.String.Text
+msgid  "The container cannot contain NULL objects."
+msgstr "NULL အရာ၀တ္ထုများမပါဝင်နိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NAME_ALREADY_USED.String.Text
+msgid  "There already is an object with the given name."
+msgstr "ပေးထားသောအမည်ဖြင့် အရာ၀တ္ထုတစ်ခုရှိပြီးဖြစ်သည်။"
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.String.Text
+msgid  "This object cannot be part of this container."
+msgstr "ဤနေရာပိုင်းတစ်ခုတွင်အရာ၀တ္ထုမထည့်နိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.String.Text
+msgid  "The object already is, with a different name, part of the container."
+msgstr "ဤနေရာပိုင်းတစ်ခုတွင်အခြားအမည်ဖြင့်အရာ၀တ္ထုတစ်ခုထည့်ပြီးဖြစ်သည်။"
+
+#: source/core/resource/strings.src#RID_STR_NAME_NOT_FOUND.String.Text
+msgid  "Unable to find the document '$name$'."
+msgstr "မှတ်တမ်းမှတ်ရာ '$name$'ကိုရှာရန်မတတ်နိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr "မှတ်တမ်းမှတ်ရာကို $location$ တွင် မသိမ်းနိုင်ပါ။\n$message$"
+
+#: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
+msgid  "Error accessing data source '$name$':\\n$error$"
+msgstr "အချက်အလက်မူရင် ရယူစဉ် အမှား '$name$'\n$error$"
+
+#: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "\"$folder$\" အမည်ဖြင့် ဖိုဒါမရှိပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
+msgid  "Cannot delete the before-first or after-last row."
+msgstr "ပထမဆုံးအတန်းမတိုင်မှီနှင့် နောက်ဆုံးတန်းပြီးနောက် အတန်းများကို မဖျက်နိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.String.Text
+msgid  "Cannot delete the insert-row."
+msgstr "ထည့်သွင်းထားသည့်အတန်းကို မဖျက်နိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_RESULT_IS_READONLY.String.Text
+msgid  "Result set is read only."
+msgstr "ရလဒ်ကို ဖတ်ရုံသာဖြစ်သည်။"
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.String.Text
+msgid  "DELETE privilege not available."
+msgstr "DELETE အခွင့်အရေးကို အသုံးမပြုနိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.String.Text
+msgid  "Current row is already deleted."
+msgstr "လက်ရှိအတန်းကို ဖျက်ပြီးဖြစ်သည်။"
+
+#: source/core/resource/strings.src#RID_STR_UPDATE_FAILED.String.Text
+#, fuzzy
+msgid  "Current row could not be updated."
+msgstr "လက်ရှိအတန်းကို နောက်ဆုံးသစ်လွင်မှုပြုပြီးဖြစ်သည်။"
+
+#: source/core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.String.Text
+#, fuzzy
+msgid  "INSERT privilege not available."
+msgstr "INSERT အခွင့်အရေးကို အသုံးမပြုနိုင်ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_INTERNAL_ERROR.String.Text
+#, fuzzy
+msgid  "Internal error: no statement object provided by the database driver."
+msgstr "အတွင်းပိုင်းအမှား- ဒေတာဘေ့စ်ဒရိုင်ဘာအနေဖြင့် အရာ၀တ္ထုဖော်ပြချက် ပြုလုပ်ဆောင်ရွက်ချက်မရှိ။"
+
+#: source/core/resource/strings.src#RID_STR_EXPRESSION1.String.Text
+#, fuzzy
+msgid  "Expression1"
+msgstr "ဖော်ပြချက် ၁"
+
+#: source/core/resource/strings.src#RID_STR_NO_SQL_COMMAND.String.Text
+#, fuzzy
+msgid  "No SQL command was provided."
+msgstr "SQL ညွှန်ကြားချက် ပြုလုပ်ဆောင်ရွက်ထားခြင်းမရှိ။"
+
+#: source/core/resource/strings.src#RID_STR_INVALID_INDEX.String.Text
+#, fuzzy
+msgid  "Invalid column index."
+msgstr "ကော်လံ ညွှန်ပြဖော်ပြချက် မှားယွင်းသည်။"
+
+#: source/core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.String.Text
+#, fuzzy
+msgid  "Invalid cursor state."
+msgstr "ကာဆာ ဖော်ပြချက် မှားယွင်းသည်။"
+
+#: source/core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.String.Text
+#, fuzzy
+msgid  "The cursor points to before the first or after the last row."
+msgstr "ပထမဆုံး အတန်းမတိုင်မှီနှင့် နောက်ဆုံးအတန်းပြီးနောက်တွင် ကာဆာအမှတ်များထားရှိသည်။ "
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.String.Text
+#, fuzzy
+msgid  "The rows before the first and after the last row don't have a bookmark."
+msgstr "စာညှပ်တစ်ခုတွင် မပါရှိသည့် ပထမဆုံးအတန်းမတိုင်မှီနှင့် နောက်ဆုံးတန်းပြီးနောက် အတန်းများ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.String.Text
+#, fuzzy
+msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgstr "လက်ရှိအတန်းကို ဖျက်ပြီးဖြစ်သည်။ ထို့ကြောင့် စာညှပ်တစ်ခုတွင် မပါရှိနိုင်တော့ပါ။"
+
+#: source/core/resource/strings.src#RID_STR_NO_EMBEDDING.String.Text
+#, fuzzy
+msgid  "Embedding of database documents is not supported."
+msgstr "ထည့်သွင်းထားသည့် ဒေတာဘေ့စ် မှတ်တမ်းမှတ်ရာများမှ အထောက်အကူမပြုပါ။"
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
+#, fuzzy
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "\"$name$\" အမည်ဖြင့် တောင်းဆိုခံရသည့် အောက်ပါ URL အတွက် အချိတ်အဆက်တစ်ခု။"
+
+#: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
+#, fuzzy
+msgid  "The extension is not installed."
+msgstr "တိုးချဲ့မှုများ ထည့်သွင်းမထားပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+msgid  "Database ~name"
+msgstr "ဒေတာဘေ့စ် အမည်"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+msgid  "User settings"
+msgstr "အသုံးပြုသူ ပြင်ဆင်နိုင်ခွင့်များ "
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+msgid  "~Control user"
+msgstr "~ထိန်းချုပ်အသုံးပြုသူ"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+msgid  "~Administrator"
+msgstr "~စီမံအုပ်ချုပ်သူ"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+msgid  "~Domain user"
+msgstr "~ဒိုမိန်း အသုံးပြုသူ"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+msgid  "P~assword..."
+msgstr "စ~ကားဝှက်..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+msgid  "~Password..."
+msgstr "~စကားဝှက်..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+msgid  "Passwo~rd..."
+msgstr "စကား~ဝှက်..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+msgid  "~Backup file"
+msgstr "~အရံဖိုင်"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+msgid  "Database settings"
+msgstr "ဒေတာဘေ့စ်ပြင်ဆင်ချိန်ညှိမှုများ"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE"
+msgstr "S~YSDEVSPACE"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "TRANSACTI~ONLOG"
+msgstr "TRANSACTI~ONLOG"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE"
+msgstr "DATAD~EVSPACE:"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+msgid  "Transaction ~file (MB)"
+msgstr "စီမံဆောင်ရွက်ဆဲ~ဖိုင်(MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+msgid  "Data~base size (MB)"
+msgstr "ဒေတာဘေ့စ်အရွယ်အစား(MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "အချက်အလက်များ~ယာယီသိမ်းဆည်းနိုင်သည့်အရွယ်အစား (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+msgid  "Backup file information"
+msgstr "အရံဖိုင်သတင်းအချက်အလက်"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+msgid  "Create New Adabas D Database"
+msgstr "Adabas D ဒေတာဘေ့စ်အသစ် ဖန်တီးပါ"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+msgid  "No entry could be written in the configuration file."
+msgstr "ပြုပြင်စီမံမှုဖိုင်တွင်ဝင်ရောက်ရေးသွင်းရန်မဖြစ်နိုင်ပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+msgid  "An error occurred as the DB files were being created."
+msgstr "DBဖိုင်များဖန်တီးခဲ့မှုတွင်အမှားတစ်ခုဖြစ်ပွားခဲ့သည်။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+msgid  "An error occurred as the system tables were being created."
+msgstr "စနစ်ဇယားများဖန်တီးခဲ့မှုတွင် အမှားတစ်ခုဖြစ်ပွားခဲ့သည်။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+msgid  "The backup file entered does not exist."
+msgstr "အရံဖိုင်ပြုလုပ်ထားခြင်းမရှိပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "အရည်အသွေးပြည့်၀သောဖိုင်သည် သင်္ကေတ\\'#\\'ထက်ကျော်လွန်၍ မရနိုင်ပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+msgid  "The administrator and the control user cannot have the same name!"
+msgstr "စီမံအုပ်ချုပ်သူအမည်နှင့်သုံးစွဲသူအမည်တူ၍မရပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+msgid  "No name has been entered for the $name$ file!"
+msgstr "$name$ ဖိုင်အတွက်အမည်အသုံးပြုထားခြင်းမရှိ"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+msgid  "You have to have administrator rights to create a new database!"
+msgstr "ဒေတာဘေစ့်အသစ်တစ်ခုဖန်တီးရန် စီမံအုပ်ချုပ်သူမှ လုပ်ပိုင်ခွင့်ရှိသည်။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+msgid  "The specified file name or directory does not exist."
+msgstr "သီးခြားဖိုင်အမည်(သို့)ဒိုင်ယာထရီ မရှိပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "ဒေတာဘေ့စ်အသစ် ဖန်တီး၍မရနိုင်ပါ\nAdabas D ကိုစစ်ဆေးပါ။ အထူးသဖြင့် \"DBROOT\" နှင့် \"DBWORK\" တို့ကိုစစ်ဆေးပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "သတိပေးချက်!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+msgid  "Creating database files."
+msgstr "ဒေတာဘေ့စ်ဖိုင်များ ဖန်တီးနေသည်။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+msgid  "Creating database configuration file."
+msgstr "ဒေတာဘေ့စ်ပြုပြင်မှုဖိုင်အားဖန်တီးနေသည်။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+msgid  "Starting database for the first time."
+msgstr "ဒေတာဘေ့စ်အားပထမဆုံးအကြိမ်အစပြုနေသည်။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+msgid  "The name entered already exists."
+msgstr "အမည်ရှိပြီးဖြစ်သည်။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+msgid  "No default names could be set for the database files. The total length is more than 40 characters."
+msgstr "ဒေတာဘေ့စ်ဖိုင်များအတွက် နဂိုမူလအမည်မရှိပါ။ စုစုပေါင်းအရှည်သည် အက္ခရာအလုံး ၄၀ထက်မပိုရပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+msgid  "No default names could be set for the database files. There is no write access."
+msgstr "ဒေတာဘေ့စ်ဖိုင်များအတွက် နဂိုမူလအမည်မရှိပါ။ ရေးသားပြင်ဆင်ခွင့်မပြုပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+msgid  "The current database need to be converted. Please insert control user  and password."
+msgstr "လက်ရှိ ဒေတာဘေ့စ်ကို ပြောင်းလဲရန်လိုသည်။ ထိန်းချုပ်အသုံးပြုသူအမည်နှင့်စကားဝှက် ထည့်သွင်းပါ။"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgstr "စကားဝှက်တွင်နေရာလွတ်ချန်ခြင်းခွင့်မပြုပါ။ ကျေးဇူးပြု၍ စကားဝှက်အသစ်ဖြင့်ဝင်ပါ။"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+msgid  "Database Document Macro Migration"
+msgstr "ဒေတာဘေ့စ် မှတ်တမ်းမှတ်ရာ မက်ခရို ရွှေ့ပြောင်းမှု"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+msgid  "Prepare"
+msgstr "ပြင်ဆင်ပါ"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+msgid  "Backup Document"
+msgstr "မှတ်တမ်းမှတ်ရာအားအရံကူးယူထားခြင်း"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+msgid  "Migrate"
+msgstr "ရွှေ့ပြောင်းပါ"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+msgid  "Summary"
+msgstr "အကျဉ်းချုပ်"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+msgid  "Welcome to the Database Macro Migration Wizard"
+msgstr "ဒေတာဘေ့စ် မက်ခရို ရွေ့ပြောင်းမှု လမ်းညွှန်၀ဇ္ဇတ်မှ ကြိုဆိုပါသည်"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr "ဤ၀ဇ္ဇတ်လမ်းညွှန်မှ သင့်မက်ခရိုအား ရွေ့ပြောင်းလုပ်ဆောင်မှုပြုရန် လမ်းညွှန်လိမ့်မည်။ \n\nလုပ်ဆောင်ချက်များပြီးသောအခါ  ရှိရင်းစွဲမြုပ်နေသာ မက်ခရိုများအားလုံးကို မှတ်တမ်းမှတ်ရာအဖြစ်သို့ လည်းကောင်း၊ လက်ရှိဒေတာဘေစ့်၏ ပုံစံများနှင့်အစီရင်ခံများအဖြစ်သို့လည်းကောင်း ရွေ့စေသည်။ ဤအနေအထားတွင် လိုင်ဘရီအား အမည်ပြောင်းရန် လိုအပ်သည်။ \n\nသင့်ပုံစံများနှင့်အစီရင်များတွင် မက်ခရိုရည်ညွှန်းချက်များ ပါဝင်လျှင် ၎င်းတို့ကို အဖြစ်နိုင်ဆုံး ချိန်ညှိပါ။ \n\nရွေ့ပြောင်းလုပ်ဆောင်မှု မစတင်မီ ပုံစံများ၊ အစီရင်ခံစာများ၊ ကွာရီများနှင့် ဇယားများ ပါဝင်သော မှတ်တမ်းမှတ်ရာကို ပိတ်ရမည်။ ဆက်လက်လုပ်ဆောင်ရန် ‘နောက်ထပ်’ ကို ကလစ်နှိပ်ပါ။"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgstr "အရာ၀တ္ထများအားလုံးကိုပိတ်၍မရပါ။ ​ကျေးဇူးပြု၍ လက်ဖြင့်တစ်ခုချင်းပိတ်ပါ။ လမ်းညွှန်၀ဇ္ဇတ် အသုံးပြုမှုကိုပြန်စတင်ပါ။"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+msgid  "Backup your Document"
+msgstr "သင်၏မှတ်တမ်းမှတ်ရာအား အရံသိမ်းဆည်းပါ"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgstr "နေရာရွေ့ပြောင်းမှု မစတင်မီအခြေအနေကို ပြန်သွားရန် ခွင့်ပြုသည်။ ဒေတာဘေ့စ်မှတ်တမ်းမှတ်ရာကို သင့်ရွေးချယ်ထားသော အရံနေရာတွင် ကူးယူသိမ်းဆည်းပါ။ ဝဇ္ဇတ်အနေဖြင့် မူလမှတ်တမ်းမှတ်ရာများအားလုံးကို ပြောင်းလဲခြင်း ပြုလိမ့်မည်။ အရံကူးယူသိမ်းဆည်းမှုကိုမူ မပြောင်းဘဲထားမည်။"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+msgid  "Save To:"
+msgstr "သို့ သိမ်းပါ -"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+msgid  "Browse ..."
+msgstr "ဘရောက်စ်..."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr "သင်၏အချက်အလက်သွင်းထုတ်မှု ဖိုင်အားသိမ်းဆည်းရန် ‘နောက်ထပ်’ကိုနှိပ်ပြီး နေရာရွေ့ပြောင်းမှုစတင်ပါ။"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+msgid  "Migration Progress"
+msgstr "နေရာရွေ့ပြောင်းခြင်းတိုးတက်မှု"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgstr "အချက်အလက်သွင်းထုတ်မှုဖိုင်တွင် $forms$ form(s) နှင့် $reports$ report(s) များပါဝင်နေပြီး လက်ရှိလုပ်ဆောင်မှုများ ပြုနေသည်"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+msgid  "Current object:"
+msgstr "လက်ရှိအရာဝတ္ထု"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+msgid  "Current progress:"
+msgstr "လက်ရှိ တိုးတက်မှု"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+msgid  "Overall progress:"
+msgstr "စုစုပေါင်းတိုးတက်မှု"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+msgid  "document $current$ of $overall$"
+msgstr "မှတ်တမ်းမှတ်ရာ $current$ ၏ $overall$"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgstr "ပုံစံများနှင့်အစီရင်ခံစာများအားလုံး အောင်မြင်စွာ လုပ်ဆောင်ပြီးဖြစ်သည်။ အသေးစိတ် အကျဉ်းချုံးဖော်ပြရန် ‘နောက်ထပ်’ကိုကလစ်နှိပ်ပါ"
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+msgid  "Summary"
+msgstr "အကျဉ်းချုပ်"
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
+msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgstr "နေရာရွေ့ပြောင်းမှုအောင်မြင်သည်။ သင်၏မှတ်တမ်းမှတ်ရာဆောင်ရွက်ချက် မှတ်တမ်းကိုအောက်တွင်ဖော်ပြထားသည်။"
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
+msgid  "The migration was not successful. Examine the migration log below for details."
+msgstr "နေရာရွေ့ပြောင်းမှုမအောင်မြင်ပါ။ အသေးစိတ်အချက်အလက်များအတွက် အောက်ပါ နေရာရွေ့ပြောင်းမှုမှတ်တမ်းကို စစ်ဆေးပါ။"
+
+#: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+msgid  "Form '$name$'"
+msgstr "ပုံစံ '$name$'"
+
+#: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+msgid  "Report '$name$'"
+msgstr "အစီရင်ခံစာ '$name$'"
+
+#: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+msgid  "document $current$ of $overall$"
+msgstr "မှတ်တမ်းမှတ်ရာ $current$ ၏ $overall$"
+
+#: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+msgid  "Database Document"
+msgstr "ဒေတာဘေ့စ်မှတ်တမ်းမှတ်ရာ"
+
+#: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+msgid  "saved copy to $location$"
+msgstr "ကော်ပီ ကို $location$ သို့ သိမ်းပါ"
+
+#: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+msgid  "migrated $type$ library '$old$' to '$new$'"
+msgstr "ရွေ့ပြောင်းပြီး $type$ လိုင်ဘရီ '$old$' သို့ '$new$'"
+
+#: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
+msgid  "$type$ library '$library$'"
+msgstr "$type$ လိုင်ဘရီ '$library$'"
+
+#: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
+msgid  "migrating libraries ..."
+msgstr "လိုင်ဘရီများနေရာရွေ့ပြောင်းမှု..."
+
+#: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+msgid  "%PRODUCTNAME Basic"
+msgstr "%PRODUCTNAME အခြေခံ"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+msgid  "JavaScript"
+msgstr "JavaScript"
+
+#: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+msgid  "BeanShell"
+msgstr "BeanShell"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+msgid  "Java"
+msgstr "Java"
+
+#: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+msgid  "Python"
+msgstr "Python"
+
+#: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+msgid  "dialog"
+msgstr "ဒိုင်ယာလော့ဂ်"
+
+#: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
+msgid  "Error(s)"
+msgstr "အမှား(များ)"
+
+#: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
+msgid  "Warnings"
+msgstr "သတိပေးချက်များ"
+
+#: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
+msgid  "caught exception: "
+msgstr "ချန်လှပ်ထားချက်များ"
+
+#: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
+msgid  "You need to choose a backup location other than the document location itself."
+msgstr "မှတ်တမ်းမှတ်ရာထားရှိမှု နေရာထက် အရံဖိုင်အား သိမ်းဆည်းမည့်နေရာတစ်ခု ရွေးချယ်ရန်လိုအပ်သည်။"
+
+#: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
+msgid  "Invalid number of initialization arguments. Expected 1."
+msgstr "အစပြုထည့်သွင်းသည့် ကိန်းဂဏန်တန်ဖိုး မှားယွင်းသည်။ သုံးသပ်ချက် ၁"
+
+#: source/ext/macromigration/macromigration.src#STR_NO_DATABASE.String.Text
+#, fuzzy
+msgid  "No database document found in the initialization arguments."
+msgstr "အစပြုထည့်သွင်းသည့် တန်ဖိုးများတွင် မည်သည့် ဒေတာဘေစ့် မှတ်တမ်းမှတ်ရာမှ မတွေ့ရှိပါ။"
+
+#: source/ext/macromigration/macromigration.src#STR_NOT_READONLY.String.Text
+#, fuzzy
+msgid  "Not applicable to read-only documents."
+msgstr "မှတ်တမ်းမှတ်ရာများကို ဖတ်ရုံသာဖတ်ရန် မည်သည်မျှ အသုံးမပြုနိုင်ပါ။"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgstr "ဇယားအမည်နှင့်ကွာရီအမည်တူ၍မရပါ။သီးခြားစီအမည်ပေးပါ။"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+msgid  "Table"
+msgstr "ဇယား"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+msgid  "Query"
+msgstr "ကွာရီ"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+msgid  "The given connection is no valid query and/or tables supplier."
+msgstr "ကွာရီ နှင့်/သို့ ဇယားသုံးစွဲသူများအတွက် ဆက်သွယ်မှုမပေးနိုင်ပါ။"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+msgid  "The given object is no table object."
+msgstr "ပေးထားသောအရာ၀တ္တုသည် ဇယားအရာဝတ္တုမဟုတ်ပါ။"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgstr "အမျိုးအစားမှားယွင်းနေသည်-com.sun.star.sdb.tools.CompositionType အတွက် တန်ဖိုးတစ်ခုလိုအပ်သည်။"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
+msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgstr "ဆောင်ရွက်ချက်အမျိုးအစားမှားယွင်းနေသည်-com.sun.star.sdb.CommandType မှ TABLEနှင့် AND QUERY ကိုသာခွင့်ပြုသည်။"
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+msgid  "Create Form in Design View..."
+msgstr "ဒီဇိုင်းမြင်ကွင်းတွင် ပုံစံတစ်ခု ဖန်တီးပါ..."
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+msgid  "Use Wizard to Create Form..."
+msgstr "ပုံစံတစ်ခုဖန်တီးရန် လမ်းညွှန်ဝဇ္ဇတ်ကိုအသုံးပြုပါ.."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+msgid  "Use Wizard to Create Report..."
+msgstr "အစီရင်ခံစာတစ်ခု ဖန်တီးရန် လမ်းညွှန်ဝဇ္ဇတ်ကို အသုံးပြုပါ.."
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+msgid  "Create Report in Design View..."
+msgstr "ဒီဇိုင်းမြင်ကွင်းတွင် အစီရင်ခံစာတစ်ခု ဖန်တီးပါ."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+msgid  "Create Query in Design View..."
+msgstr "ဒီဇိုင်းမြင်ကွင်းတွင်ကွာရီဖန်တီးပါ..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+msgid  "Create Query in SQL View..."
+msgstr "SQL မြင်ကွင်းတွင် ကွာရီ ဖန်တီးပါ..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+msgid  "Use Wizard to Create Query..."
+msgstr "ကွာရီဖန်တီးရန် လမ်းညွှန်ဝဇ္ဇတ်ကို သုံးပါ..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+msgid  "Create Table in Design View..."
+msgstr "ဒီဇိုင်းမြင်ကွင်းတွင် ဇယား ဖန်တီးပါ..."
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+msgid  "Use Wizard to Create Table..."
+msgstr "ဇယား ဖန်တီးရန် လမ်းညွှန်ဝဇ္ဇတ်ကို သုံးပါ..."
+
+#: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+msgid  "Create View..."
+msgstr "မြင်ကွင်း ဖန်တီးပါ..."
+
+#: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+msgid  "Forms"
+msgstr "ပုံစံများ"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+msgid  "Reports"
+msgstr "အစီရင်ခံစာများ"
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+msgid  "Form..."
+msgstr "ပုံစံ..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+msgid  "Report..."
+msgstr "အစီရင်ခံစာ..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+msgid  "View (Simple)..."
+msgstr "မြင်ကွင်း (ရိုးရိုး)..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+msgid  "Paste Special..."
+msgstr "ဖြတ်ကူးယူသမျှ အထူးအနေဖြင့်ပြန်ထည့်ပါ..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+msgid  "Delete"
+msgstr "ဖျက်ပါ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+msgid  "Rename"
+msgstr " အမည်ပြောင်းပါ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+msgid  "Edit"
+msgstr "တည်းဖြတ်ပါ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+msgid  "Edit in SQL View..."
+msgstr "SQL မြင်ကွင်းတွင်တည်းဖြတ်ပါ..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+msgid  "Open"
+msgstr "ဖွင့်ပါ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+msgid  "Create as View"
+msgstr "မြင်ကွင်းအဖြစ် ဖန်တီးပါ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Form Wizard..."
+msgstr "လမ်းညွှန်ဝဇ္ဇတ်ပုံစံ..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+msgid  "Report..."
+msgstr "အစီရင်ခံစာ..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Report Wizard..."
+msgstr "လမ်းညွှန်ဝဇ္ဇတ်အစီရင်ခံစာ..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+msgid  "Select All"
+msgstr "အားလုံး ရွေးချယ်ပါ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MenuItem.Text
+#, fuzzy
+msgid  "~Database"
+msgstr "~ဒေတာဘေ့စ်"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "ဂုဏ်သတ္တိများ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MenuItem.Text
+#, fuzzy
+msgid  "Connection Type..."
+msgstr "ချိတ်ဆက်မှုအမျိုးအစား"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MenuItem.Text
+#, fuzzy
+msgid  "Advanced Settings..."
+msgstr "ဆန်းသစ်သော ပြင်ဆင်နိုင်မှုများ"
+
+#: source/ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.String.Text
+#, fuzzy
+msgid  "Do you want to delete the data source '%1'?"
+msgstr "'%1'အချက်အလက် မူရင်းကို ဖျက်ရန် ဆန္ဒရှိပါသလား။"
+
+#: source/ui/app/app.src#STR_APP_TITLE.String.Text
+#, fuzzy
+msgid  " - %PRODUCTNAME Base"
+msgstr " - %PRODUCTNAME အခြေခံ"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "The wizard will guide you through the steps necessary to create a report."
+msgstr "အစီရင်ခံစာတစ်ခု ဖန်တီးရန် လိုအပ်သောအဆင့်များကို လမ်းညွှန်ဝဇ္ဇတ်မှ အကူအညီပေးလိမ့်မည်။"
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
+#, fuzzy
+msgid  "Create a form by specifying the record source, controls, and control properties."
+msgstr "သတ်မှတ်ထားသော မှတ်တမ်းမူရင်း၊ ထိန်းချုပ်မှုများနှင့် ထိန်းချုပ်ဂုဏ်သတ္တိများအားဖြင့် ပုံစံတစ်ခု ဖန်တီးပါ။"
+
+#: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
+#, fuzzy
+msgid  "Create a report by specifying the record source, controls, and control properties."
+msgstr "သတ်မှတ်ထားသော မှတ်တမ်း မူရင်း၊ ထိန်းချုပ်မှုများ၊ နှင့် ထိန်းချုပ်ဂုဏ်သတ္တိများအားဖြင့် အစီရင်ခံစာတစ်ခု ဖန်တီးပါ။"
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "The wizard will guide you through the steps necessary to create a form."
+msgstr "ပုံစံတစ်ခု ဖန်တီးရန် လိုအပ်သော အဆင့်များကို လမ်းညွှန်ဝဇ္ဇတ်မှ အကူအညီပေးလိမ့်မည်။"
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
+#, fuzzy
+msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgstr "စနစ်တကျ စီထားခြင်း (သို့) အုပ်စုဖွဲ့ခြင်းအတွက် သတ်မှတ်သော စစ်ထုတ်ကိရိယာများ၊ အချက်အလက်သွင်းရန်ဇယားများ၊ နေရာကွက်အမည်များနှင့် ဂုဏ်သတ္တိများအားဖြင့် ကွာရီတစ်ခု ဖန်တီးပါ။"
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
+#, fuzzy
+msgid  "Create a query  entering an SQL statement directly."
+msgstr "SQLဖော်ပြချက်တစ်ခုသို့ တိုက်ရိုက်ဝင်ရောက်ရန် ကွာရီတစ်ခု ဖန်တီးပါ။"
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "The wizard will guide you through the steps necessary to create a query."
+msgstr "ကွာရီတစ်ခုဖန်တီးရန် လိုအပ်သော အဆင့်များကို လမ်းညွှန်ဝဇ္ဇတ်မှ အကူအညီပေးလိမ့်မည်။"
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
+#, fuzzy
+msgid  "Create a table by specifying the field names and properties, as well as the data types."
+msgstr "အချက်အလက်ပုံစံများကဲ့သို့ နေရာကွက် အမည်များနှင့် ဂုဏ်သတ္တိများအားဖြင့် ဇယားတစ်ခု ဖန်တီးပါ။"
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgstr "လိုအပ်ချက်နှင့်ကိုက်ညီသည့် ဇယားတစ်ခုဖန်တီးရန် လက်ရွေးစင်စီးပွားရေးလုပ်ငန်းများ၊ ကိုယ်ရေးကိုယ်တာနှင့်ပတ်သက်သည့် ဇယားနမူနာများမှ ရွေးချယ်မှုပြုပါ။"
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
+#, fuzzy
+msgid  "Create a view by specifying the tables and field names you would like to have visible."
+msgstr "သင်မြင်တွေ့လိုသည့် ဇယားများ၊ နေရာကွက်အမည်များအားဖြင့် မြင်ကွင်းတစ်ခု ဖန်တီးပါ။"
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "Opens the view wizard"
+msgstr "မြင်ကွင်းလမ်းညွှန်ဝဇ္ဇတ်ဖွင့်သည်"
+
+#: source/ui/app/app.src#STR_DATABASE.String.Text
+#, fuzzy
+msgid  "Database"
+msgstr "ဒေတာဘေစ့်"
+
+#: source/ui/app/app.src#STR_TASKS.String.Text
+#, fuzzy
+msgid  "Tasks"
+msgstr "အလုပ်များ"
+
+#: source/ui/app/app.src#STR_DESCRIPTION.String.Text
+#, fuzzy
+msgid  "Description"
+msgstr "ဖော်ပြချက်"
+
+#: source/ui/app/app.src#STR_PREVIEW.String.Text
+#, fuzzy
+msgid  "Preview"
+msgstr "အစမ်းကြည့်ပါ"
+
+#: source/ui/app/app.src#STR_DISABLEPREVIEW.String.Text
+#, fuzzy
+msgid  "Disable Preview"
+msgstr "အစမ်းကြည့်ခြင်းကိုခွင့်မပြုပါ"
+
+#: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
+#, fuzzy
+msgid  "None"
+msgstr "ဘာမျှမရှိပါ"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MenuItem.Text
+#, fuzzy
+msgid  "Document Information"
+msgstr "သတင်းအချက်အလက်မှတ်တမ်းမှတ်ရာ"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
+#, fuzzy
+msgid  "Document"
+msgstr "မှတ်တမ်းမှတ်ရာ"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+#, fuzzy
+msgid  "Form"
+msgstr "ပုံစံ"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "အစီရင်ခံစာ"
+
+#: source/ui/app/app.src#STR_FRM_LABEL.String.Text
+#, fuzzy
+msgid  "F~orm name"
+msgstr "ပုံစံအမည်"
+
+#: source/ui/app/app.src#STR_RPT_LABEL.String.Text
+#, fuzzy
+msgid  "~Report name"
+msgstr "~အစီရင်ခံစာ အမည်"
+
+#: source/ui/app/app.src#STR_FOLDER_LABEL.String.Text
+#, fuzzy
+msgid  "F~older name"
+msgstr "ဖိုင်တွဲ အမည်"
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.String.Text
+#, fuzzy
+msgid  "The document contains forms or reports with embedded macros."
+msgstr "ဤမှတ်တမ်းမှတ်ရာတွင် ပုံစံများ၊ အစီရင်ခံစာများနှင့်အတူ မက်ခရိုများပါဝင်သည်။"
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+#, fuzzy
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr "မက်ခရိုများကိုဒေတာဘေ့စ်မှတ်တမ်းမှတ်ရာများအဖြစ် ၎င်းကိုယ်တိုင်ပြောင်းလဲအသုံးပြုသင့်သည်။သင်၏မှတ်တမ်းမှတ်ရာကို မူလအ​နေအထားအတိုင်း ဆက်လက်အသုံးပြုနိုင်သည်။ သို့သော် မက်ခရိုများအပြောင်းအရွေ့လုပ်ရန်အတွက်မူ အားပေးကူညီနိုင်သည်။ အကူအညီရရန် ကိရိယာများ/နေရာရွေ့ပြောင်းမှု/မက်ခရိုများ ...... သို့ဝင်ရောက်အသုံးပြုပါ။ မှတ်ချက်အနေဖြင့် ဤပြောင်းရွေ့မှု ပြီးစီးသွားသည်အထိတိုင်အောင် မက်ခရိုများကို ဒေတာဘေ့စ် မှတ်တမ်းမှတ်ရာများအဖြစ် ပြောင်းလဲအသုံးပြုရန် သင်တတ်နိုင်လိမ့်မည်မဟုတ်ပါ။"
+
+#: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
+#, fuzzy
+msgid  "Embedded database"
+msgstr "မြုပ်နေသောဒေတာဘေ့စ်"
+
+#: source/ui/app/app.src#RID_STR_NO_DIFF_CAT.String.Text
+#, fuzzy
+msgid  "You cannot select different categories."
+msgstr "ခြားနားသော အချက်အလက်အမျိုးအစားများ မရွေးချယ်နိုင်ပါ။"
+
+#: source/ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.String.Text
+#, fuzzy
+msgid  "Unsupported object type found ($type$)."
+msgstr "($type$) တွင် အထောက်အပံ့မပြုသည့် အရာ၀တ္ထုအမျိုးအစားများ တွေ့ရှိသည်။"
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+msgid  "Do you want to delete the selected data?"
+msgstr "ရွေးချယ်ထားသည့် အချက်အလက်များကို ဖျက်ရန် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+msgid  "(filtered)"
+msgstr "(စစ်ထုတ်ခဲ့သည်)"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "စနစ်တကျစီထားသောမှတ်ကျောက်ချိန်ညှိပြင်ဆင်မှုအမှား"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "စစ်ထုတ်ကိရိယာ မှတ်ကျောက် ချိန်ညှိပြင်ဆင်မှု အမှား"
+
+#: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+msgid  "Connection lost"
+msgstr "ချိတ်ဆက်မှုမရှိ"
+
+#: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+msgid  "Queries"
+msgstr "ကွာရီများ"
+
+#: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+msgid  "Tables"
+msgstr "ဇယားများ"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "~ဒေတာဘေ့စ်ဖိုင်ကိုတည်းဖြတ်ပါ..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "မှတ်ပုံတင်ြပီးဒေတာဘေ့စ်များ..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "မချိတ်ဆက်ပါ"
+
+#: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+msgid  "Confirm Deletion"
+msgstr "ဖျက်ရန်အတည်ပြုပါ"
+
+#: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+msgid  "Do you want to delete the table '%1'?"
+msgstr "ဇယား'%1'ကိုဖျက်ရန် ဆန္ဒရှိပါသလား။"
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+msgid  "The query already exists. Do you want to delete it?"
+msgstr "ကွာရီ အဆင်သင့် ရှိသည်။ ၎င်းကို ဖျက်ရန် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database has been lost. Do you want to reconnect?"
+msgstr "ဒေတာဘေ့စ်သို့ ချိတ်ဆက်မှု ပျောက်နေသည်။ ပြန်လည်ချိတ်ဆက်ရန် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+msgid  "Warnings encountered"
+msgstr "သတိပေးချက်များ"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+msgid  "While retrieving the tables, warnings were reported by the database connection."
+msgstr "ဒေတာဘေစ် ချိတ်ဆက်မှုဖြင့် ဇယားများဆွဲထုတ်ယူစဉ် သတိပေးချက် အစီရင်ခံစာများထွက်ပေါ်လာသည်။"
+
+#: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+msgid  "Connecting to \"$name$\" ..."
+msgstr "\"$name$\"သို့ချိတ်ဆက်ခြင်း..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+msgid  "Loading query $name$ ..."
+msgstr "ကွာရီ $name$ ကိုဆွဲတင်နေသည်..."
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+msgid  "Loading table $name$ ..."
+msgstr "ဇယား $name$ ကို ဆွဲတင်နေသည်..."
+
+#: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+msgid  "No table format could be found."
+msgstr "ဇယားစီစဉ်ဖွဲ့စည်းမှုပုံစံရှာမတွေ့ပါ။"
+
+#: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "\"$name$\" မူရင်းအချက်အလက်သို့ ချိတ်ဆက်နိုင်လိမ့်မည်မဟုတ်ပါ။"
+
+#: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+msgid  "Rebuild"
+msgstr "ပြန်လည်တည်ဆောက်ပါ"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+msgid  "Column ~Format..."
+msgstr "ကော်လံ~စီစဉ် ဖွဲ့စည်းမှုပုံစံ..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+msgid  "Copy Column D~escription"
+msgstr "ကော်လံဖော်ပြချက်ကိုကူးယူပါ"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+msgid  "Table Format..."
+msgstr "ဇယားစီစဉ်ဖွဲ့စည်းမှုပုံစံ..."
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+msgid  "Row Height..."
+msgstr "အတန်းအမြင့်..."
+
+#: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+msgid  "Undo: Data Input"
+msgstr "ပြန်ခေါ်ပါ-အချက်အလက်များသွင်းမှု"
+
+#: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+msgid  "Save current record"
+msgstr "လက်ရှိမှတ်တမ်းကိုသိမ်းပါ"
+
+#: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+msgid  "Query #"
+msgstr "ကွာရီ #"
+
+#: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "ဇယား #"
+
+#: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+msgid  "View #"
+msgstr "မြင်ကွင်း #"
+
+#: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+msgid  "The name \"#\" already exists."
+msgstr "အမည် \"#\"ရှိပြီးသားဖြစ်သည်။"
+
+#: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+msgid  "No matching column names were found."
+msgstr "ကော်လံအမည်များကိုက်ညီမှုမရှိပါ။"
+
+#: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+msgid  "An error occurred. Do you want to continue copying?"
+msgstr "အမှားတစ်ခု ဖြစ်ပွားထားသည်။ ဆက်လက်ကူးယူရန် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+msgid  "Data source table view"
+msgstr "အချက်အလက်များမူရင်းဇယားမြင်ကွင်း"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+msgid  "Shows the selected table or query."
+msgstr "ရွေးချယ်ထားသည့်ဇယား(သို့)ကွာရီပြသပါ။"
+
+#: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "ဇယား #"
+
+#: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+msgid  "Modify SQL statement(s)"
+msgstr "SQL ဖော်ပြချက်(များ)ကိုအထူးပြုပါ"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+msgid  "Table name"
+msgstr "ဇယားအမည်"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+msgid  "Insert data"
+msgstr "အချက်အလက်များထည့်ပါ"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+msgid  "Delete data"
+msgstr "အချက်အလက်များဖျက်ပါ"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+msgid  "Modify data"
+msgstr "အချက်အလက်များအထူးပြုပါ"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+msgid  "Alter structure"
+msgstr "ဖွဲ့စည်းပုံပြောင်းပါ"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+msgid  "Read data"
+msgstr "အချက်အလက်များဖတ်ပါ"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+msgid  "Modify references"
+msgstr "ရည်ညွှန်းချက်များအထူးပြုပါ"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+msgid  "Drop structure"
+msgstr "ဖွဲ့စည်းပုံချပါ"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+msgid  "Sort Ascending"
+msgstr "ငယ်စဉ်ကြီးလိုက်စီပါ"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+msgid  "Sort Descending"
+msgstr "ကြီးစဉ်ငယ်လိုက်စီပါ"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr "SDBC ဒရိုင်ဘာမန်နေဂျာ(#servicename#)ထံသို့ မချိတ်ဆက်နိုင်ပါ။"
+
+#: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+msgid  "A driver is not registered for the URL #connurl#."
+msgstr "URL #connurl# အတွက် ဒရိုင်ဘာ မှတ်တမ်းတင်မထားပါ။"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+msgid  "No connection could be established for the URL #connurl#."
+msgstr "URL #connurl# အတွက်အချိတ်အဆက်မရှိပါ။"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+msgid  "Please check the current settings, for example user name and password."
+msgstr "လက်ရှိရွေးချယ်ချိန်ညှိမှုများကိုစစ်ဆေးပါ။ ဥပမာ-အသုံးပြုသူအမည်နှင့်စကားဝှက်စစ်ဆေးပေးပါ။"
+
+#: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+msgid  "Successfully connected, but information about database tables is not available."
+msgstr "အောင်မြင်စွာ ချိတ်ဆက်ထားသော်လည်း ဒေတာဘေ့စ်ဇယားများနှင့်ပတ်သတ်သည့်သတင်းအချက်အလက်များအသုံးမပြုနိုင်ပါ။"
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+msgid  "All tables"
+msgstr "ဇယားများအားလုံး"
+
+#: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+msgid  "All views"
+msgstr "မြင်ကွင်းများ အားလုံး"
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+msgid  "All tables and views"
+msgstr "ဇယားများနှင့် မြင်ကွင်းများ အားလုံး"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.ModalDialog.Text
+#, fuzzy
+msgid  "Indexes"
+msgstr "အညွှန်းများ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Index"
+msgstr "အညွှန်းအသစ်"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Delete Current Index"
+msgstr "လက်ရှိအညွှန်းကို ဖျက်ပါ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.ToolBoxItem.Text
+#, fuzzy
+msgid  "Rename Current Index"
+msgstr "လက်ရှိအညွှန်းအား အမည်ပြန်ပေးပါ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Save Current Index"
+msgstr "လက်ရှိအညွှန်းအားသိမ်းပါ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.ToolBoxItem.Text
+#, fuzzy
+msgid  "Reset Current Index"
+msgstr "လက်ရှိအညွှန်းအားပြန်လုပ်ပါ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FixedLine.Text
+#, fuzzy
+msgid  "Index details"
+msgstr "အသေးစိတ်အညွှန်း"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FixedText.Text
+#, fuzzy
+msgid  "Index identifier:"
+msgstr "အညွှန်းအချက်အလက်များသိမ်းဆည်းမှု အမည်မှတ်ထားခြင်း -"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CheckBox.Text
+#, fuzzy
+msgid  "~Unique"
+msgstr "~တမူထူးခြားသော"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FixedText.Text
+#, fuzzy
+msgid  "Fields"
+msgstr "နေရာကွက်များ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~ပိတ်ပါ"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.String.Text
+#, fuzzy
+msgid  "Sort order"
+msgstr "ညွှန်ကြားချက်များ စနစ်တကျ စီပါ"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.String.Text
+#, fuzzy
+msgid  "Index field"
+msgstr "အညွှန်း နေရာကွက်"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.String.Text
+#, fuzzy
+msgid  "Ascending"
+msgstr "ငယ်စဉ်ကြီးလိုက်"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.String.Text
+#, fuzzy
+msgid  "Descending"
+msgstr "ကြီးစဉ်ငယ်လိုက်"
+
+#: source/ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.String.Text
+#, fuzzy
+msgid  "Do you really want to delete the index '$name$'?"
+msgstr "အညွှန်း'$name$'ကိုဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.String.Text
+#, fuzzy
+msgid  "index"
+msgstr "အညွှန်း"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Title
+#, fuzzy
+msgid  "Save Index"
+msgstr "အညွှန်းသိမ်းပါ"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Message
+#, fuzzy
+msgid  "The index must contain at least one field."
+msgstr "အညွှန်းအတွက် အနည်းဆုံးနေရာလွတ်တစ်ခု ပါသည်။"
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Title
+#, fuzzy
+msgid  "Exit Index Design"
+msgstr "အညွှန်းဒီဇိုင်းမှထွက်ပါ"
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Message
+#, fuzzy
+msgid  "Do you want to save the changes made to the current index?"
+msgstr "လက်ရှိအညွှန်းအတွင်းသို့ ပြုပြင်ပြောင်းလဲထားမှုများကို သိမ်းလိုပါသလား?"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
+#, fuzzy
+msgid  "There is already another index named \"$name$\"."
+msgstr "\"$name$\" အမည်ဖြင့်အခြားအညွှန်းတစ်ခုရှိပြီးဖြစ်သည်။"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
+#, fuzzy
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "အညွှန်းအဓိပ္ပါယ်ဖွင့်ဆိုချက်တွင်တစ်ကြိမ်ထက်မကအသုံးပြုရန်ကော်လံဇယားမရှိပါ။ သို့သော်လည်း ကော်လံတွင်\"$name$\"ကို နှစ်ကြိမ်ရိုက်ထည့်ထားသည်။ "
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
+#, fuzzy
+msgid  "~Parameters"
+msgstr "~ကိုယ်စားပြုတန်ဖိုးများ"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FixedText.Text
+#, fuzzy
+msgid  "~Value"
+msgstr "~တန်ဖိုး"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PushButton.Text
+#, fuzzy
+msgid  "~Next"
+msgstr "~နောက်ထပ်"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.CancelButton.Text
+#, fuzzy
+msgid  "Parameter Input"
+msgstr "ကိုယ်စားပြုတန်ဖိုးသွင်းခြင်း"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
+#, fuzzy
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "\"$name$\"ကော်လံအတွက် မှန်ကန်သော တန်ဖိုးတစ်ခုရရန် ဝင်ရောက်မပြောင်းလဲနိုင်ပါ"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Base"
+msgstr "%PRODUCTNAME အခြေခံ"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
+#, fuzzy
+msgid  "Details"
+msgstr "အသေးစိတ်အချက်များ"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
+#, fuzzy
+msgid  "Error ~list:"
+msgstr "စာရင်းမှား -"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
+msgid  "~Description:"
+msgstr "~ဖေါ်ပြချက်-"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.String.Text
+#, fuzzy
+msgid  "SQL Status"
+msgstr "SQL အခြေအနေ"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.String.Text
+#, fuzzy
+msgid  "Error code"
+msgstr "အမှားကုဒ်"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
+#, fuzzy
+msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr "ဤအမှားဖြစ်ပေါ်ရခြင်းမှာ သင့်ဒေတာဘေ့စ်၏ ဘာသာစကားအတွက် အသုံးပြုသော သင်္ကေတများ သင့်တော်မှုမရှိခြင်းကြောင့်ဖြစ်သည်။ ပြင်ဆင်ချိန်ညှိမှုများရွေးချယ်ပြုလုပ်နိုင်ရန် ‘တည်းဖြတ်ပါ- ဒေတာဘေ့စ်-ဂုဏ်သတ္တိများ’ သို့ဝင်ရောက်အသုံးပြုပါ။"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
+#, fuzzy
+msgid  "Error"
+msgstr "အမှား"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.String.Text
+#, fuzzy
+msgid  "Warning"
+msgstr "သတိပေးချက်"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.String.Text
+#, fuzzy
+msgid  "Information"
+msgstr "သတင်းအချက်အလက်"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.String.Text
+#, fuzzy
+msgid  "Details"
+msgstr "အသေးစိတ်အချက်များ"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.ModalDialog.Text
+#, fuzzy
+msgid  "Standard Filter"
+msgstr "စစ်ထုတ်ကိရိယာစံနှုန်း"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+#, fuzzy
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+#, fuzzy
+msgid  "OR"
+msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+#, fuzzy
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+#, fuzzy
+msgid  "OR"
+msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FixedText.Text
+#, fuzzy
+msgid  "Field name"
+msgstr "နေရာကွက်အမည်"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FixedText.Text
+#, fuzzy
+msgid  "Condition"
+msgstr "အခြေအနေ"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FixedText.Text
+#, fuzzy
+msgid  "Value"
+msgstr "တန်ဖိုး"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FixedText.Text
+#, fuzzy
+msgid  "Operator"
+msgstr "အော်ပရေတာ"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FixedLine.Text
+#, fuzzy
+msgid  "Criteria"
+msgstr "မှတ်ကျောက်"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.String.Text
+#, fuzzy
+msgid  "- none -"
+msgstr "-ဘာမျှမရှိပါ -"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
+#, fuzzy
+msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
+#, fuzzy
+msgid  "Relations"
+msgstr "ဆက်နွယ်မှုများ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+#, fuzzy
+msgid  "Tables involved"
+msgstr "အကျုံးဝင်သော ဇယားများ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+#, fuzzy
+msgid  "Fields involved"
+msgstr "အကျုံးဝင်သော နေရာကွက်များ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FixedLine.Text
+#, fuzzy
+msgid  "Update options"
+msgstr "နောက်ဆုံးသစ်လွင်မှုရွေးပိုင်ခွင့်များ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RadioButton.Text
+#, fuzzy
+msgid  "~No action"
+msgstr "~လုပ်ဆောင်ချက်မရှိ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RadioButton.Text
+#, fuzzy
+msgid  "~Update cascade"
+msgstr "⁠~နောက်ဆုံးသစ်လွင်မှုအခြေအနေသို့ ဖြာဆင်းသည်"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RadioButton.Text
+#, fuzzy
+msgid  "~Set null"
+msgstr "~null အသုံးပြုပါ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
+#, fuzzy
+msgid  "Set ~default"
+msgstr "~နဂိုမူလအသုံးပြုပါ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
+#, fuzzy
+msgid  "Delete options"
+msgstr "ရွေးပိုင်ခွင့်များကိုဖျက်ပါ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RadioButton.Text
+#, fuzzy
+msgid  "~No action"
+msgstr "~လုပ်ဆောင်ချက်မရှိ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RadioButton.Text
+#, fuzzy
+msgid  "Delete ~cascade"
+msgstr "ဖြာဆင်းခြင်း~ဖျက်ပါ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RadioButton.Text
+#, fuzzy
+msgid  "~Set null"
+msgstr "~null အသုံးပြုပါ"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RadioButton.Text
+#, fuzzy
+msgid  "Set ~default"
+msgstr "~ပုံသေ အသုံးပြုပါ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.ModalDialog.Text
+#, fuzzy
+msgid  "Sort Order"
+msgstr "စနစ်တကျစီထားပါ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+#, fuzzy
+msgid  "ascending"
+msgstr "ငယ်စဉ်ကြီးလိုက်စီပါ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+#, fuzzy
+msgid  "descending"
+msgstr "ကြီးစဉ်ငယ်လိုက်စီပါ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+#, fuzzy
+msgid  "ascending"
+msgstr "ငယ်စဉ်ကြီးလိုက်စီခြင်း"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+#, fuzzy
+msgid  "descending"
+msgstr "ကြီးစဉ်ငယ်လိုက်စီခြင်း"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+#, fuzzy
+msgid  "ascending"
+msgstr "ငယ်စဉ်ကြီးလိုက်စီပါ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+#, fuzzy
+msgid  "descending"
+msgstr "ကြီးစဉ်ငယ်လိုက်စီပါ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FixedText.Text
+#, fuzzy
+msgid  "Field name"
+msgstr "နေရာကွက်အမည်"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FixedText.Text
+#, fuzzy
+msgid  "and then"
+msgstr "ပြီးနောက်"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FixedText.Text
+#, fuzzy
+msgid  "and then"
+msgstr "ပြီးနောက်"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FixedText.Text
+#, fuzzy
+msgid  "Operator"
+msgstr "အော်ပရေတာ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FixedText.Text
+#, fuzzy
+msgid  "Order"
+msgstr "အစီအစဉ်"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FixedLine.Text
+#, fuzzy
+msgid  "Sort order"
+msgstr "ညွှန်ကြားချက်များ စနစ်တကျ စီပါ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
+#, fuzzy
+msgid  "<none>"
+msgstr "<ဘာမျှမရှိပါ>"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+msgid  "Options"
+msgstr "ရွေးပိုင်ခွင့်များ"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+msgid  "Use SQL92 naming constraints"
+msgstr "အမည်ပေးခြင်းကိုကန့်သတ်ရန် SQL92 ကိုသုံးပါ"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+msgid  "Append the table alias name on SELECT statements"
+msgstr "SELECT ဖော်ပြချက်ပေါ်တွင် ဇယားအမည်ပါ ပူးတွဲပါရှိသည်"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+msgid  "Use keyword AS before table alias names"
+msgstr "ဇယားအမည်များမပေးမီအဓိကစာလုံးဖြစ်သည့် AS ကိုသုံးပါ"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+msgid  "Use Outer Join syntax '{OJ }'"
+msgstr "အပြင်ဘက်ချိတ်ဆက်မှုအတွက် syntax '{OJ }' ကိုသုံးပါ"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+msgid  "Ignore the privileges from the database driver"
+msgstr "ဒေတာဘေ့စ်ဒရိုင်ဘာမှ အခွင့်အရေးများကို လစ်လျူရှုသည်"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+msgid  "Replace named parameters with '?'"
+msgstr "ကိုယ်စားပြုအမည်ဖြင့်အစားထိုးလိုပါသလား'?'"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+msgid  "Display version columns (when available)"
+msgstr "ကော်လံများလုပ်ဆောင်ချက်ကိုပြပါ (အသုံးပြုသောအခါ)"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+msgid  "Use catalog name in SELECT statements"
+msgstr "SELECT ဖော်ပြချက်တွင်ကတ်တလောက်အမည် အသုံးပြုပါ"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+msgid  "Use schema name in SELECT statements"
+msgstr "SELECTဖော်ပြချက်တွင် ဒေတာဘေစ့် အမည်အသုံးပြုပါ"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+msgid  "Create index with ASC or DESC statement"
+msgstr "ASC သို့ DESC ဖော်ပြချက်နှင့်အတူ အညွှန်းဖန်တီးပါ"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+msgid  "End text lines with CR+LF"
+msgstr "CR+LF နှင့်အတူစာကြောင်းများအဆုံးသတ်ပါ"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+msgid  "Ignore currency field information"
+msgstr "ငွေကြေးဆိုင်ရာအချက်အလက်များအသုံးပြုရန်နေရာကိုလစ်လျူရှုသည်"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+msgid  "Form data input checks for required fields"
+msgstr "လိုအပ်သောနေရာများအတွက် အချက်အလက်များသွင်းမှုပုံစံကို စစ်ဆေးသည်"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
+msgid  "Use ODBC conformant date/time literals"
+msgstr " ODBC ကိုအသုံးပြု၍ နေ့ရက်/အချိန်များ အတိအကျသုံးပါ"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
+msgid  "Supports primary keys"
+msgstr "အဓိကသော့ အထောက်အကူပြုသည်"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CheckBox.Text
+msgid  "Respect the result set type from the database driver"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "နဂိုမူလ"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "ရောနှောသည်"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "MS Access"
+msgstr "MS Access"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+msgid  "Comparison of Boolean values"
+msgstr "Booleanတန်ဖိုးများနှိုင်းယှဉ်ချက်"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FixedText.Text
+msgid  "Rows to scan column types"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+msgid  "Settings"
+msgstr "ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+msgid  "Re~trieve generated values"
+msgstr "ယေဘုယျတန်ဖိုးများဆွဲထုတ်ယူပါ"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+msgid  "~Auto-increment statement"
+msgstr "~အလိုအလျှောက်ဆတိုး ဖော်ပြချက်"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+msgid  "~Query of generated values"
+msgstr "~ယေဘုယျတန်ဖိုးများ၏ကွာရီ"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+msgid  "Generated Values"
+msgstr "ယေဘုယျတန်ဖိုးများ"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+msgid  "Special Settings"
+msgstr "အထူးပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.String.Text
+msgid  "Advanced Settings"
+msgstr ""
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+#, fuzzy
+msgid  "Save"
+msgstr "သိမ်းပါ"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+#, fuzzy
+msgid  "Create New Directory"
+msgstr "လမ်းညွှန်ဒိုင်ယာထရီအသစ်ပြုလုပ်ပါ"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+#, fuzzy
+msgid  "Up One Level"
+msgstr "အပေါ်တစ်ဆင့်"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+#, fuzzy
+msgid  "File ~name:"
+msgstr "ဖိုင်~အမည်"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+#, fuzzy
+msgid  "Save"
+msgstr "သိမ်းပါ"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+#, fuzzy
+msgid  "~Path:"
+msgstr "~လမ်းကြောင်း"
+
+#: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+#, fuzzy
+msgid  "Folder"
+msgstr "ဖိုင်တွဲ"
+
+#: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+#, fuzzy
+msgid  "The file already exists. Overwrite?"
+msgstr "ဖိုင်ရှိပြီးဖြစ်သည်။ မူလရှိပြီးသားကိုဖျက်ပြီးအစားထိုးလိုပါသလား?"
+
+#: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
+#, fuzzy
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "\"$name$\"  အချက်အလက် မူရင်းသို့ ဆက်သွယ်ရန် စကားဝှက်တစ်ခု လိုအပ်နေသည်။"
+
+#: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+#, fuzzy
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr "ဒိုင်ယာထရီမရှိပါ။\n\n$path$ \n\nဖန်တီးသင့်ပါသလား။"
+
+#: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
+#, fuzzy
+msgid  "The directory $name$ could not be created."
+msgstr "$name$ ဒိုင်ယာထရီကို ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.ModalDialog.Text
+#, fuzzy
+msgid  "Convert Database"
+msgstr "ဒေတာဘေ့စ်အသွင်ပြောင်းပါ"
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FixedLine.Text
+#, fuzzy
+msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgstr "'DOMAIN' အသုံးပြုသူအတွက် စကားဝှက် ရိုက်ထည့်ပါ။"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TabPage.Text
+#, fuzzy
+msgid  "Tables Filter"
+msgstr "စစ်ထုတ်ကိရိယာ ဇယားများ"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Tables and table filter"
+msgstr "ဇယားများနှင့်စစ်ထုတ်ကိရိယာဇယား"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FixedText.Text
+#, fuzzy
+msgid  "Mark the tables that should be visible for the applications."
+msgstr "အသုံးပြုပရိုဂရမ်များအတွက် မြင်နိုင်သောဇယားများမှတ်သားပါ "
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+msgid  "~Database name"
+msgstr "~ဒေတာဘေ့စ်အမည်"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+msgid  "Se~rver / Port"
+msgstr "ဆာ~ဗာ / ပေါ့တ်"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+msgid  "~Server"
+msgstr "ဆာဗာ"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+msgid  "~Port"
+msgstr "ပေါထ်"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+msgid  "Default: 3306"
+msgstr "ပုံသေ-၃၃၀၆"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+msgid  "So~cket"
+msgstr "ဆော့ကတ်"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+msgid  "Named p~ipe"
+msgstr "အမည်ပေးထားသောပိုက်"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.String.Text
+#, fuzzy
+msgid  "User Settings"
+msgstr "အသုံးပြုသူ ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.String.Text
+#, fuzzy
+msgid  "User administration"
+msgstr "အသုံးပြုသူ စီမံခန့်ခွဲခြင်း"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+msgid  "Tables"
+msgstr "ဇယားများ"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+msgid  "Queries"
+msgstr "ကွာရီများ"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+msgid  "~Add"
+msgstr "~ထပ်ထည့်ပါ"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+msgid  "~Close"
+msgstr "~ပိတ်ပါ"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+msgid  "Add Tables"
+msgstr "ဇယားများ ထပ်ထည့်ပါ"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+msgid  "Add Table or Query"
+msgstr "ဇယား(သို့)ကွာရီ ထပ်ထည့်ပါ"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TabDialog.Text
+#, fuzzy
+msgid  "Field Format"
+msgstr "နေရာကွက် စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.1.PushButton.Text
+#, fuzzy
+msgid  "Bac~k"
+msgstr "နောက်ပြန်ဆုတ်ပါ"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.String.Text
+#, fuzzy
+msgid  "Font"
+msgstr "ဖောင့်"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.String.Text
+#, fuzzy
+msgid  "Format"
+msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.String.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "ချိန်ညှိမှု"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.String.Text
+#, fuzzy
+msgid  "Table Format"
+msgstr "ဇယား စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
+
+#: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+#, fuzzy
+msgid  "Use catalog for file-based databases"
+msgstr "ဒေတာဘေ့စ်အခြေခံဖိုင်အတွက်ကတ်တလောက်သုံးပါ"
+
+#: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Connection Settings"
+msgstr "အချိတ်အဆက် ပြင်ဆင်ချိန်ညှိမှုများ"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+#, fuzzy
+msgid  "~Host name"
+msgstr "~အိမ်ရှင်အမည်"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+#, fuzzy
+msgid  "~Port number"
+msgstr "~ပေါ့ထ်နံပါတ်"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
+#, fuzzy
+msgid  "Advanced Properties"
+msgstr "ဆန်းသစ်သော ဂုဏ်သတ္တိများ"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.String.Text
+#, fuzzy
+msgid  "Additional Settings"
+msgstr "တွဲဘက်ရွေးချယ်နိုင်မှုများ"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.String.Text
+#, fuzzy
+msgid  "Connection settings"
+msgstr "ချိတ်ဆက်မှုအတွက်ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.String.Text
+#, fuzzy
+msgid  "Database properties"
+msgstr "ဒေတာဘေ့စ် ဂုဏ်သတ္တိများ"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TabControl.Text
+#, fuzzy
+msgid  "Database properties"
+msgstr "ဒေတာဘေ့စ် ဂုဏ်သတ္တိများ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FixedText.Text
+#, fuzzy
+msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "ဒေတာဘေ့စ်လမ်းညွှန်၀ဇ္ဇတ် %PRODUCTNAMEကို ကြိုဆိုပါ၏"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr "ဒေတာဘေ့စ်အသစ်ကိုဖန်တီးရန် တည်ရှိပြီး ဒေတာဘေ့စ်ကိုဖွင့်ရန် (သို့) ဆာဗာပေါ်ရှိ ဒေတာဘေ့စ်တွင် ချိတ်ဆက်သိမ်းဆည်းမှုများပြုရန် ဒေတာဘေ့စ် လမ်းညွှန်၀ဇ္ဇတ်ကိုသုံးပါ။"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
+#, fuzzy
+msgid  "What do you want to do?"
+msgstr "ဘာလုပ်ချင်ပါသလဲ?"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RadioButton.Text
+#, fuzzy
+msgid  "Create a n~ew database"
+msgstr "ဒေတာဘေ့စ်အသစ်တစ်ခုဖန်တီးပါ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RadioButton.Text
+#, fuzzy
+msgid  "Open an existing database ~file"
+msgstr "ရှိပြီးဒေတာဘေ့စ်ကိုဖွင့်ပါ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FixedText.Text
+#, fuzzy
+msgid  "Recently used"
+msgstr "မကြာခဏအသုံးပြုသည်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RadioButton.Text
+#, fuzzy
+msgid  "Connect to an e~xisting database"
+msgstr "ရှိပြီးဒေတာဘေ့စ်အားချိတ်ဆက်ပါ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
+#, fuzzy
+msgid  "Select the type of database to which you want to establish a connection."
+msgstr "ချိတ်ဆက်မှုတစ်ခုတည်ဆောက်ရန်ဒေတာဘေ့စ်အမျိုးအစားကိုရွေးချယ်ပါ။"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
+#, fuzzy
+msgid  "Database ~type "
+msgstr "ဒေတာဘေ့စ်~အမျိုးအစား"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FixedText.Text
+#, fuzzy
+msgid  "Database"
+msgstr "ဒေတာဘေ့စ်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+#, fuzzy
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr "အောက်ပါ စာမျက်နှာများပေါ်တွင် ချိတ်ဆက်မှုအတွက် ပြင်ဆင်ချိန်ညှိနိုင်မှုများ ပြုလုပ်နိုင်သည်။ \n\nသင်ပြုလုပ်သည့် ပြင်ဆင်မှုအသစ်များသည် ရှိနှင့်ပြီးသော အချက်အလက်ဟောင်းများနေရာတွင် အသစ်များဖြင့် ထပ်မံဖြည့်စွက်သိမ်းဆည်းလိမ့်မည်။"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
+#, fuzzy
+msgid  "MySQL"
+msgstr "MySQL"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.String.Text
+#, fuzzy
+msgid  "Data Source Properties: #"
+msgstr "အချက်အလက်မူရင်း ဂုဏ်သတ္တိများ#"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
+#, fuzzy
+msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr "ပရိုဂရမ် လိုင်ဘရီ #lib# ကိုဆွဲမတင်နိုင်ပါ (သို့) ၎င်းသည်ပျက်စီးသွားသော​ကြောင့်ဖြစ်နိုင်သည်။ ODBC လက်ရွေးစင် အချက်အလက်မူရင်းကို အသုံးပြု၍ မရပါ။"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+#, fuzzy
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr "ဤအချက်အလက်မူရင်း အမျိုးအစားသည် ဤပလက်ဖောင်းကို အထောက်အကူမပေးနိုင်ပါ။\nပြင်ဆင်ချိန်ညှိမှုများ ပြုလုပ်ခွင့်ပေးသော်လည်း ဒေတာဘေ့စ်သို့ ချိတ်ဆက်နိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
+#, fuzzy
+msgid  "General"
+msgstr "အထွေထွေ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Optional settings"
+msgstr "စိတ်ကြိုက်ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CheckBox.Text
+#, fuzzy
+msgid  "Display deleted records as well"
+msgstr "ဖျက်ထားသည့် မှတ်တမ်းများကို ပြသပါ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
+#, fuzzy
+msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgstr "မှတ်ချက် - ဖျက်ပြီး၍ လုပ်ဆောင်ချက် ဘာမျှမရှိတော့သောအခါ မှတ်တမ်းများကို ပြသပါ။ အချက်အလက်မူရင်းမှ မှတ်တမ်းများကို သင်ဖျက်နိုင်လိမ့်မည် မဟုတ်ပါ။ "
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
+#, fuzzy
+msgid  "Indexes..."
+msgstr "အညွှန်းများ..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Optional Settings"
+msgstr "စိတ်ကြိုက်ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FixedText.Text
+#, fuzzy
+msgid  "ODBC ~options"
+msgstr "ODBC~ ရွေးပိုင်ခွင့်များ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Connection Settings"
+msgstr "ချိတ်ဆက်မှုအတွက် ပြင်ဆင်ချိန်ညှိမှုများ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
+#, fuzzy
+msgid  "~Host name"
+msgstr "~အိမ်ရှင်အမည်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FixedText.Text
+#, fuzzy
+msgid  "Data ~buffer size (MB)"
+msgstr "အချက်အလက်များ~ယာယီသိမ်းဆည်းနိုင်သည့်အရွယ်အစား (MB)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FixedText.Text
+#, fuzzy
+msgid  "~Data increment (MB)"
+msgstr "~အချက်အလက်များတိုးတက်မှု (MB)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "Administration"
+msgstr "စီမံခန့်ခွဲခြင်း"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FixedText.Text
+#, fuzzy
+msgid  "Control ~user name"
+msgstr "ထိန်းချုပ်⁠⁠~အသုံးပြုသူအမည် "
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FixedText.Text
+#, fuzzy
+msgid  "Control ~password"
+msgstr "ထိန်းချုပ်မှု~စကားဝှက်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CheckBox.Text
+#, fuzzy
+msgid  "~Shut down service when closing %PRODUCTNAME"
+msgstr "⁠⁠~%PRODUCTNAME ပိတ်သောအခါ လုပ်ဆောင်မှုများကိုပါပိတ်သည်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PushButton.Text
+#, fuzzy
+msgid  "E~xtended..."
+msgstr "တိုးချဲ့ထားသည်..."
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
+msgid  "MySQL JDBC d~river class"
+msgstr "MySQL JDBC ဒရိုင်ဘာအမျိုးအစား"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+#, fuzzy
+msgid  "Test class"
+msgstr "အမျိုးအစားစစ်ဆေးပါ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "User authentication"
+msgstr "အသုံးပြုသူစစ်မှန်ကြောင်း အထောက်အထားပြခြင်း"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FixedText.Text
+#, fuzzy
+msgid  "~User name"
+msgstr "~အသုံးပြုသူအမည်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CheckBox.Text
+#, fuzzy
+msgid  "Password required"
+msgstr "စကားဝှက် လိုအပ်သည်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
+msgid  "Oracle JDBC d~river class"
+msgstr "Oracle JDBC ဒရိုင်ဘာ အမျိုးအစား"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+#, fuzzy
+msgid  "Test class"
+msgstr "အမျိုးအစား စစ်ဆေးပါ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Connection Settings"
+msgstr "အချိတ်အဆက် ပြင်ဆင်ချိန်ညှိမှုများ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FixedText.Text
+#, fuzzy
+msgid  "~Base DN"
+msgstr "~DN အခြေခံ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CheckBox.Text
+#, fuzzy
+msgid  "Use secure connection(SSL)"
+msgstr "လုံခြုံမှုရှိသော ချိတ်ဆက်မှုကိုသုံးပါ (SSL)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
+#, fuzzy
+msgid  "~Port number"
+msgstr "~ပေါ့ထ်နံပါတ်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
+#, fuzzy
+msgid  "Maximum number of ~records"
+msgstr "မှတ်တမ်းများ၏ အကြီးဆုံးနံပါတ်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FixedText.Text
+#, fuzzy
+msgid  "~Hostname"
+msgstr "⁠~အိမ်ရှင်အမည်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FixedText.Text
+#, fuzzy
+msgid  "~Port number"
+msgstr "~ပေါ့ထ် နံပါတ်"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FixedText.Text
+#, fuzzy
+msgid  "~Driver settings"
+msgstr "~ဒရိုင်ဘာပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
+
+#: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
+#, fuzzy
+msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgstr "ရှိပြီးဒေတာဘေ့စ်ကိုချိတ်ဆက်နိုင်ရန် ''ရှိပြီးဒေတာဘေ့စ်ကိုချိတ်ဆက်ရန်''ကိုရွေးချယ်ပါ။"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
+#, fuzzy
+msgid  "Save As"
+msgstr "အဖြစ်သိမ်းပါ"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
+msgid  "Please enter a name for the object to be created:"
+msgstr "အရာဝတ္ထုဖန်တီးရန်အတွက်အမည်တစ်ခုရိုက်ထည့်ပေးပါ"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FixedText.Text
+#, fuzzy
+msgid  "~Catalog"
+msgstr "~ကတ်တလောက်"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FixedText.Text
+#, fuzzy
+msgid  "~Schema"
+msgstr "~ပုံကြမ်း"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.String.Text
+#, fuzzy
+msgid  "~Table Name"
+msgstr "~ဇယားအမည်"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.String.Text
+#, fuzzy
+msgid  "~Name of table view"
+msgstr "⁠⁠~ဇယားမြင်ကွင်း၏အမည်"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.String.Text
+#, fuzzy
+msgid  "~Query name"
+msgstr "~ကွာရီ အမည်"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.String.Text
+#, fuzzy
+msgid  "Rename to"
+msgstr "သို့ အမည်ပြောင်းပါ"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.String.Text
+#, fuzzy
+msgid  "Insert as"
+msgstr "အဖြစ်ထည့်သွင်းပါ"
+
+#: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+msgid  "Path to the dBASE files"
+msgstr "dBASE ဖိုင်များသို့သွားရန်လမ်းကြောင်း"
+
+#: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+msgid  "Path to the text files"
+msgstr "စာသားဖိုင်များသို့သွားရန်လမ်းကြောင်း"
+
+#: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+msgid  "Path to the spreadsheet document"
+msgstr "စာရင်းဇယားမှတ်တမ်းဖိုင်သို့သွားရန်လမ်းကြောင်း"
+
+#: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+msgid  "Name of the ODBC data source on your system"
+msgstr "သင့်စနစ်ပေါ်ရှိ ODBC အချက်အလက်များမူရင်း၏အမည်"
+
+#: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+msgid  "Name of the MySQL database"
+msgstr "MySQL ဒေတာဘေ့စ်အမည်"
+
+#: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+msgid  "Name of the Oracle database"
+msgstr "Oracle ဒေတာဘေ့စ်အမည်"
+
+#: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+msgid  "Name of the Adabas D database"
+msgstr "Adabas D ဒေတာဘေ့စ်အမည်"
+
+#: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+msgid  "Microsoft Access database file"
+msgstr "Microsoft Access ဒေတာဘေ့စ်ဖိုင်"
+
+#: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgstr "နောက်ထပ်ပြင်ဆင်ချိန်ညှိရန်မလိုပါ။ချိတ်ဆက် အလုပ်လုပ်နေကြောင်း သက်သေပြရန်၊ 'test'ခလုတ်ကို ကလစ်နှိပ်ပါ။"
+
+#: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+msgid  "Datasource URL"
+msgstr "URL မူရင်းအချက်အလက်များ"
+
+#: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+#, fuzzy
+msgid  "~Host name"
+msgstr "~အိမ်ရှင်အမည်"
+
+#: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+#, fuzzy
+msgid  "~Mozilla profile name"
+msgstr "~မော်ဇီလာရွေးပိုင်သုံးစွဲမှုအမည်"
+
+#: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+#, fuzzy
+msgid  "~Thunderbird profile name"
+msgstr "~Thunderbird ရွေးပိုင်သုံးစွဲမှု အမည်"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.ModalDialog.Text
+#, fuzzy
+msgid  "Data Source"
+msgstr "အချက်အလက်မူရင်း"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
+msgid  "Choose a data source:"
+msgstr "အချက်အလက် မူရင်းတစ်ခုရွေးပါ"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PushButton.Text
+#, fuzzy
+msgid  "Organize..."
+msgstr "စုစည်းပါ..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PushButton.Text
+#, fuzzy
+msgid  "Create..."
+msgstr "ဖန်တီးပါ..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.String.Text
+#, fuzzy
+msgid  "Local Databases"
+msgstr "အတွင်းရှိဒေတာဘေ့စ်များ"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.String.Text
+#, fuzzy
+msgid  "Choose a database"
+msgstr "ဒေတာဘေ့စ်တစ်ခုရွေးချယ်ပါ"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "General"
+msgstr "အထွေထွေ"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+#, fuzzy
+msgid  "~Host name"
+msgstr "~အိမ်ရှင် အမည်"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "User authentication"
+msgstr "အသုံးပြုသူစစ်မှန်ကြောင်း အထောက်အထားပြခြင်း"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+#, fuzzy
+msgid  "~User name"
+msgstr "~အသုံးပြုသူ အမည်"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+#, fuzzy
+msgid  "Password required"
+msgstr "စကားဝှက် လိုအပ်သည်"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
+#, fuzzy
+msgid  "JDBC properties"
+msgstr "JDBC ဂုဏ်သတ္တိများ"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
+msgid  "~JDBC driver class"
+msgstr "⁠~JDBC ဒရိုင်ဘာအမျိုးအစား"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+#, fuzzy
+msgid  "Test Class"
+msgstr "အမျိူးအစားကိုစစ်ဆေးပါ"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+#, fuzzy
+msgid  "Test Connection"
+msgstr "ချိတ်ဆက်မှုကိုစစ်ဆေးပါ"
+
+#: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+#, fuzzy
+msgid  "No Adabas D data sources were found on your system."
+msgstr "သင်၏စနစ်ပေါ်တွင် Adabas D အချက်အလက်မူရင်း ရှာမတွေ့ပါ။"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+#, fuzzy
+msgid  "Connection Test"
+msgstr "ချိတ်ဆက်မှုကိုစစ်ဆေးသည်"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+#, fuzzy
+msgid  "The connection was established successfully."
+msgstr "ချိတ်ဆက်မှုအောင်မြင်စွာတည်ဆောက်ခဲ့သည်။"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+#, fuzzy
+msgid  "The connection could not be established."
+msgstr "ချိတ်ဆက်ထားမှုမရှိပါ"
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
+#, fuzzy
+msgid  "The JDBC driver was loaded successfully."
+msgstr "JDBC ဒရိုင်ဘာကိုအောင်မြင်စွာရယူခဲ့သည်။"
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
+#, fuzzy
+msgid  "The JDBC driver could not be loaded."
+msgstr "JDBC ဒရိုင်ဘာကိုအောင်မြင်စွာမရယူနိုင်ခဲ့ပါ။"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
+#, fuzzy
+msgid  "MS Access file"
+msgstr "MS Access ဖိုင်"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
+#, fuzzy
+msgid  "MS Access 2007 file"
+msgstr "MS Access 2007 ဖိုင်"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+msgid  "Database files"
+msgstr "ဒေတာဘေ့စ်ဖိုင်များ"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "~TRANSACTIONLOG:"
+msgstr "~TRANSACTIONLOG:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+msgid  "Database sizes"
+msgstr "ဒေတာဘေ့စ်အရွယ်အစားများ"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+msgid  "S~ize (MB):"
+msgstr "အရွယ်အစား (MB):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+msgid  "~Free memory space (MB):"
+msgstr "~ပိုနေသော မှတ်ဉာဏ် နေရာလွတ် (MB):"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+msgid  "~Memory utilization (in %):"
+msgstr "~မှတ်ဉာဏ်ကို အကျိုးရှိစွာ အသုံးချမှု (% တွင်) -"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+msgid  "Database Statistics"
+msgstr "စာရင်းအင်းဒေတာဘေ့စ်"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+msgid  "Contains the system tables"
+msgstr "စနစ်ဇယားများ ပါဝင်သည်"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+msgid  "Contains information about transaction"
+msgstr "လုပ်ငန်းနှင့်ပတ်သက်သည့်သတင်းများပါဝင်သည်"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+msgid  "Contains all data files"
+msgstr "အချက်အလက်ဖိုင်များအားလုံးပါဝင်သည်"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+msgid  "Total size of the database files"
+msgstr "ဒေတာဘေ့စ်ဖိုင်များ၏ စုစုပေါင်းအရွယ်အစား"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+msgid  "Currently available space before a new datadev file is created."
+msgstr "datadev ဖိုင် အသစ်တစ်ခုမတည်ဆောက်မီ လက်ရှိအသုံးပြုရန် နေရာလွတ်တစ်ခု ဖန်တီးသည်။"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+msgid  "Currently used memory"
+msgstr "လက်ရှိအသုံးပြုပြီးသောမှတ်ဉာဏ်"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+msgid  "No information could be displayed because no access rights exist for the required system tables."
+msgstr "သတင်းအချက်အလက်တစ်ခုမျှ ပြသနိုင်လိမ့်မည် မဟုတ်ပါ။ လိုအပ်သော စနစ်ဇယားများအတွက် အချက်အလက်များ ရယူခွင့်မရှိသော​ကြောင့်ဖြစ်သည်။"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
+#, fuzzy
+msgid  "SQL command"
+msgstr "SQL ညွှန်ကြားချက်"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FixedText.Text
+#, fuzzy
+msgid  "Command to execute"
+msgstr "တွက်ချက်ဆောင်ရွက်ရန်ညွှန်ကြားပါ"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PushButton.Text
+#, fuzzy
+msgid  "Execute"
+msgstr "တွက်ချက်ဆောင်ရွက်ပါ"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FixedText.Text
+#, fuzzy
+msgid  "Previous commands"
+msgstr "ယခင်ညွှန်ကြားချက်များ"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FixedLine.Text
+#, fuzzy
+msgid  "Status"
+msgstr "အခြေအနေ"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "ပိတ်ပါ"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PushButton.Text
+#, fuzzy
+msgid  "Execute SQL Statement"
+msgstr "SQL ဖော်ြပချက်ကို တွက်ချက်ဆောင်ရွက်ပါ"
+
+#: source/ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.String.Text
+#, fuzzy
+msgid  "Command successfully executed."
+msgstr "အောင်မြင်စွာတွက်ချက်ပြီးကြောင်းညွှန်ကြားချက်"
+
+#: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
+#, fuzzy
+msgid  "The connection to the database has been lost. This dialog will be closed."
+msgstr "ဒေတာဘေ့စ်ချိတ်ဆက်မှု ပျောက်ဆုံးသွားသည်။ ဤဒိုင်ယာလော့ဂ်အား ပိတ်ရလိမ့်မည်။"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
+#, fuzzy
+msgid  "Indexes"
+msgstr "အညွှန်းများ"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FixedText.Text
+#, fuzzy
+msgid  "~Table"
+msgstr "~ဇယား"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FixedLine.Text
+#, fuzzy
+msgid  "Assignment"
+msgstr "တာဝန်ပေးခြင်း"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FixedText.Text
+#, fuzzy
+msgid  "T~able indexes"
+msgstr "ဇယား~အညွှန်းများ"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FixedText.Text
+#, fuzzy
+msgid  "~Free indexes"
+msgstr "~လွတ်နေသာအညွှန်းများ"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FixedLine.Text
+#, fuzzy
+msgid  "User selection"
+msgstr "အသုံးပြုသူမှ ရွေးချယ်မှု"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FixedText.Text
+#, fuzzy
+msgid  "Us~er:"
+msgstr "အသုံးပြုသူ -"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PushButton.Text
+#, fuzzy
+msgid  "~Add User..."
+msgstr "~အသုံးပြုသူထပ်ဖြည့်ပါ..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PushButton.Text
+#, fuzzy
+msgid  "Change ~Password..."
+msgstr "စကားဝှက်~ပြောင်းပါ..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PushButton.Text
+#, fuzzy
+msgid  "~Delete User..."
+msgstr "⁠~အသုံးပြုသူ ဖျက်ပါ..."
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FixedLine.Text
+#, fuzzy
+msgid  "Access rights for selected user"
+msgstr "ရွေးချယ်ထားသည့် အသုံးပြုသူအတွက် လုပ်ပိုင်ခွင့်များ ရယူခြင်း"
+
+#: source/ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QueryBox.Message
+#, fuzzy
+msgid  "Do you really want to delete the user?"
+msgstr "အသုံးပြုသူကို ဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.String.Text
+#, fuzzy
+msgid  "The database does not support user administration."
+msgstr "အသုံးပြုသူစီမံခန့်ခွဲခြင်းကို ဒေတာဘေ့စ်မှ အထောက်အကူမပေးနိုင်ပါ။"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
+#, fuzzy
+msgid  "User \"$name$:  $\""
+msgstr "အသုံးပြုသူ\"$name$:  $\"  "
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
+#, fuzzy
+msgid  "Old p~assword"
+msgstr "စကားဝှက်အဟောင်း"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FixedText.Text
+#, fuzzy
+msgid  "~Password"
+msgstr "~စကားဝှက်"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FixedText.Text
+#, fuzzy
+msgid  "~Confirm  password"
+msgstr "~စကားဝှက်အတည်ပြုပါ"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.HelpButton.Text
+#, fuzzy
+msgid  "Change Password"
+msgstr "စကားဝှက်ပြောင်းပါ"
+
+#: source/ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+#, fuzzy
+msgid  "The passwords do not match. Please enter the password again."
+msgstr "စကားဝှက်များကိုက်ညီမှုမရှိပါ။ နောက်တကြိမ်ပြန်ရိုက်ပေးပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
+#, fuzzy
+msgid  "Database Wizard"
+msgstr "ဒေတာဘေ့စ် လမ်းညွှန်ဝဇ္ဇတ်"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
+#, fuzzy
+msgid  "Database Wizard"
+msgstr "ဒေတာဘေ့စ် လမ်းညွှန်ဝဇ္ဇတ်"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.String.Text
+#, fuzzy
+msgid  "Select database"
+msgstr "ဒေတာဘေ့စ်အားရွေးချယ်ပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.String.Text
+#, fuzzy
+msgid  "Set up dBASE connection"
+msgstr "dBASE ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to text files"
+msgstr "စာသားဖိုင်များသို့ စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
+#, fuzzy
+msgid  "Set up Microsoft Access connection"
+msgstr "Microsoft Access ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.String.Text
+#, fuzzy
+msgid  "Set up LDAP connection"
+msgstr "LDAP ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.String.Text
+#, fuzzy
+msgid  "Set up Adabas D connection"
+msgstr "Adabas D ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.String.Text
+#, fuzzy
+msgid  "Set up ADO connection"
+msgstr "ADO ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.String.Text
+#, fuzzy
+msgid  "Set up JDBC connection"
+msgstr "JDBC ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.String.Text
+#, fuzzy
+msgid  "Set up Oracle database connection"
+msgstr "Oracle database ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.String.Text
+#, fuzzy
+msgid  "Set up MySQL connection"
+msgstr "MySQL ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် စတင်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.String.Text
+#, fuzzy
+msgid  "Set up ODBC connection"
+msgstr "ODBC ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.String.Text
+#, fuzzy
+msgid  "Set up Spreadsheet connection"
+msgstr "စာရင်းဇယားဆိုင်ရာတွက်ချက်မှု ဆော့ဖ်ဝဲလ် ကိုချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.String.Text
+#, fuzzy
+msgid  "Set up user authentication"
+msgstr "အသုံးပြုသူ စစ်မှန်ကြောင်း အထောက်အထားပြသည့် ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.String.Text
+#, fuzzy
+msgid  "Set up MySQL server data"
+msgstr "MySQLဒေတာဘေ့စ်သို့ စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.String.Text
+#, fuzzy
+msgid  "Save and proceed"
+msgstr "သိမ်းပြီးဆက်လက်လုပ်ဆောင်ပါ"
+
+#: source/ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.String.Text
+#, fuzzy
+msgid  "New Database"
+msgstr "ဒေတာဘေ့စ်အသစ်"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FixedText.Text
+#, fuzzy
+msgid  "Set up a connection to a MySQL database"
+msgstr "MySQL database သို့စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "ODBC(သို့)JDBC တစ်ခုခုကိုအသုံးပြုလျက် MySQL သို့ချိတ်ဆက်နိုင်သည် \nအကယ်၍ အောက်ပါပြင်ဆင်ချိန်ညှိနိုင်မှုများအကြောင်း မသေချာပါက သင့်စနစ်၏ တာဝန်ရှိသူနှင့် ဆက်သွယ်ပေးပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
+#, fuzzy
+msgid  "How do you want to connect to your MySQL database?"
+msgstr "သင့်၏ MySQLဒေတာဘေ့စ်သို့ ချိတ်ဆက်ရန် မည်သို့ ဆန္ဒရှိပါသလဲ?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RadioButton.Text
+#, fuzzy
+msgid  "Connect using ODBC (Open Database Connectivity)"
+msgstr "ODBC ကိုချိတ်ဆက်သုံးနေသည် (open ဒေတာဘေ့စ်ချိတ်ဆက်မှု)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RadioButton.Text
+#, fuzzy
+msgid  "Connect using JDBC (Java Database Connectivity)"
+msgstr "JDBC ကိုချိတ်ဆက်သုံးနေသည် (ဂျာဗားဒေတာဘေ့စ်ချိတ်ဆက်မှု)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RadioButton.Text
+#, fuzzy
+msgid  "Connect directly"
+msgstr "တိုက်ရိုက်ချိတ်ဆက်ပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FixedText.Text
+#, fuzzy
+msgid  "Set up the user authentication"
+msgstr "အသုံးပြုသူ စစ်မှန်ကြောင်း အထောက်အထားပြသည့် ဆော့ဖ်ဝဲလ် စတင် အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "Some databases require you to enter a user name."
+msgstr "ဒေတာဘေ့စ်အချို့တွင် အသုံးပြုသူအမည် ရိုက်ထည့်ရန် လိုအပ်သည်။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
+#, fuzzy
+msgid  "~User name"
+msgstr "~အသုံးပြုသူ အမည်"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CheckBox.Text
+#, fuzzy
+msgid  "Password re~quired"
+msgstr "စကားဝှက် လိုအပ်သည်"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PushButton.Text
+#, fuzzy
+msgid  "~Test Connection"
+msgstr "⁠~ချိတ်ဆက်မှုကိုစစ်ဆေးပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FixedText.Text
+#, fuzzy
+msgid  "Decide how to proceed after saving the database"
+msgstr "ဒေတာဘေ့စ်အားသိမ်းဆည်းပြီးနောက်မည်သို့ဆက်လုပ်ရမည်ကိုဆုံးဖြတ်ပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "%PRODUCTNAME တွင်ဒေတာဘေ့စ်အားမှတ်ပုံတင်ရန် လမ်းညွှန်၀ဇ္ဇတ် အလိုရှိပါသလား?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RadioButton.Text
+#, fuzzy
+msgid  "~Yes, register the database for me"
+msgstr "~ဟုတ်ပါသည်၊ ဒေတာဘေ့စ်အား မှတ်တမ်းတင်ပေးပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RadioButton.Text
+#, fuzzy
+msgid  "N~o, do not register the database"
+msgstr "မဟုတ်ပါ၊ ဒေတာဘေ့စ်အား မှတ်တမ်းမတင်ပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FixedText.Text
+#, fuzzy
+msgid  "After the database file has been saved, what do you want to do?"
+msgstr "ဒေတာဘေ့စ်အားသိမ်းဆည်းပြီးနောက် သင်ဘာလုပ်လိုပါသလဲ?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CheckBox.Text
+#, fuzzy
+msgid  "Open the database for editing"
+msgstr "တည်းဖြတ်ရန်ဒေတာဘေ့စ်ကို ဖွင့်ပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CheckBox.Text
+#, fuzzy
+msgid  "Create tables using the table wizard"
+msgstr "ဇယားလမ်းညွှန်ဝဇ္ဇတ်ကို အသုံးပြု၍ ဇယားများ ဖန်တီးပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FixedText.Text
+#, fuzzy
+msgid  "Click 'Finish' to save the database."
+msgstr "ဒေတာဘေ့စ်ကိုသိမ်းရန် 'ပြီးပြီ' ကိုကလစ်နှိပ်ပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up connection to a MySQL database using JDBC"
+msgstr "JDBC အသုံးပြုသော MySQL ဒေတာဘေ့စ် သို့စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "JDBC အသုံးပြုသော MySQL ဒေတာဘေ့စ်သို့ ဆက်သွယ်ရန် လိုအပ်သည့် သတင်းအချက်အလက်များ ရိုက်ထည့်ပါ။ မှတ်ရန်မှာ ထို JDBC ဒရိုင်ဘာကို သင်၏စနစ်ပေါ်တွင် ထည့်သွင်းထားပြီး %PRODUCTNAME နှင့်အတူ မှတ်ပုံတင်ထားရမည်\nအကယ်၍ အောက်ပါ ပြင်ဆင်မှုများနှင့်ပတ်သက်ပြီး သေချာမှုမရှိပါက သင်၏စနစ်တာဝန်ရှိသူနှင့် ဆက်သွယ်ပေးပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
+#, fuzzy
+msgid  "MySQL JDBC d~river class:"
+msgstr "MySQL JDBC ဒရိုင်ဘာ အမျိုးအစား"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.String.Text
+#, fuzzy
+msgid  "Default: 3306"
+msgstr "ပုံသေ-၃၃၀၆"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Set up connection to a MySQL database"
+msgstr "MySQLဒေတာဘေ့စ်သို့ စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to a MySQL database."
+msgstr "MySQ ဒေတာဘေ့စ်ကိုဆက်သွယ်ရန် လိုအပ်သည့် သတင်းအချက်အလက်များ ရိုက်ထည့်ပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to dBASE files"
+msgstr "dBASE ဖိုင်များသို့ စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Select the folder where the dBASE files are stored."
+msgstr "dBASE ဖိုင်များ သိုမှီးထားသောနေရာတွင် ဖိုင်တွဲ ရွေးချယ်ပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to text files"
+msgstr "စာသားဖိုင်များသို့စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr "CSV (Comma Separated Values) စာသားဖိုင်များ သိုမှီးထားသောနေရာတွင် ဖိုင်တွဲရွေးချယ်ပါ။ %PRODUCTNAME သည် ဤဖိုင်များအား ဖတ်ရုံအတွက်သာ ဖွင့်လိမ့်မည်။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
+#, fuzzy
+msgid  "Path to text files"
+msgstr "စာသားဖိုင်များသို့သွားရန်လမ်းကြောင်း"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to a Microsoft Access database"
+msgstr "Microsoft Access ဒေတာဘေ့စ်သို့ချိတ်ဆက်အသုံးပြုသည်"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please select the Microsoft Access file you want to access."
+msgstr "သင်လိုအပ်သည်များရယူရန် Microsoft Access ဖိုင်ကိုရွေးချယ်ပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
+#, fuzzy
+msgid  "Set up a connection to an LDAP directory"
+msgstr "LDAP ဒိုင်ယာထရီသို့ စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "LDAP ဒိုင်ယာထရီသို့ ဆက်သွယ်ရန် လိုအပ်သည့် သတင်းအချက်အလက်များ ရိုက်ထည့်ပါ \nအကယ်၍ အောက်ပါ ပြင်ဆင်မှုများနှင့်ပတ်သက်ပြီး သေချာမှုမရှိပါက သင့် စနစ်တာဝန်ရှိသူနှင့် ဆက်သွယ်ပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
+#, fuzzy
+msgid  "Default: 389"
+msgstr "နဂိုမူလ-၃၈၉"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CheckBox.Text
+#, fuzzy
+msgid  "Use ~secure connection (SSL)"
+msgstr "~လုံခြုံမှုရှိသောချိတ်ဆက်မှုကို သုံးပါ(SSL)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to an Adabas D database"
+msgstr "Adabas D ဒေတာဘေ့စ်သို့ချိတ်ဆက်အသုံးပြုသည်"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr "Adabas D database သို့ သင်ချိတ်ဆက်အသုံးပြုလိုလျှင် အမည်ရိုက်ထည့်ပါ \n %PRODUCTNAME တွင် မှတ်တမ်းတင်ထားပြီးဖြစ်သော Adabas D database ကိုရွေးချယ်ရန် 'ဘရောက်စ်...' ကို ကလစ်နှိပ်ပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to an ADO database"
+msgstr "ADO database သို့စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "ချိတ်ဆက်မှုပြုရန် သင်ဆန္ဒရှိလျှင် ADO အချက်အလက်မူရင်း၏ URL ကိုရိုက်ထည့်ပေးပါ သီးသန့်ပြင်ဆင်မှုများပြုနိုင်ရန် 'ဘရောက်စ်' ကို ကလစ်နှိပ်ပါ။ \nအကယ်၍ အောက်ပါ ပြင်ဆင်မှုများနှင့်ပတ်သက်ပြီး သေချာမှုမရှိပါက သင့် စနစ်တာဝန်ရှိသူနှင့် ဆက်သွယ်ပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to an ODBC database"
+msgstr "ODBC ဒေတာဘေ့စ်သို့ချိတ်ဆက်အသုံးပြုသည်"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "သင်ချိတ်ဆက်အသုံးပြုရန် ODBC ဒေတာဘေ့စ် ၏အမည်ကိုရိုက်ထည့်ပါ \n%PRODUCTNAME တွင် မှတ်တမ်းတင်ထားပြီးဖြစ်သည့် ODBC database ကိုရွေးချယ်ရန် 'ဘရောက်စ်...' ကို ကလစ်နှိပ်ပါ။ \nအကယ်၍ အောက်ပါပြင်ဆင်မှုများနှင့်ပတ်သက်ပြီး သေချာမှုမရှိပါက သင့်စနစ်တာဝန်ရှိသူနှင့် ဆက်သွယ်ပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to a JDBC database"
+msgstr "JDBC ဒေတာဘေ့စ်သို့စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "JDBC ဒေတာဘေ့စ် သို့ချိတ်ဆက်နိုင်ရန် လိုအပ်သည့် သတင်းအချက်အလက်များ ရိုက်ထည့်ပေးပါ \nအကယ်၍ အောက်ပါ ပြင်ဆင်မှုများနှင့်ပတ်သက်ပြီး သေချာမှုမရှိပါက သင့် စနစ်တာဝန်ရှိသူနှင့် ဆက်သွယ်ပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to an Oracle database"
+msgstr "Oracle ဒေတာဘေ့စ် သို့စတင်ချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.String.Text
+#, fuzzy
+msgid  "Default: 1521"
+msgstr "နဂိုမူလ-၁၅၂၁"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.String.Text
+#, fuzzy
+msgid  "Oracle JDBC ~driver class"
+msgstr "Oracle JDBC~ဒရိုင်ဘာ အမျိုးအစား"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "Oracle ဒေတာဘေ့စ် သို့ချိတ်ဆက်ရန် လိုအပ်သည့် သတင်းအချက်အလက်များ ရိုက်ထည့်ပါ။ မှတ်ရန်မှာ ထို JDBC ဒရိုင်ဘာကို သင်၏စနစ်ပေါ်တွင် ထည့်သွင်းထားပြီး %PRODUCTNAME နှင့်အတူမှတ်ပုံတင်ထားရမည်။\nအကယ်၍ အောက်ပါ ပြင်ဆင်မှုများနှင့်ပတ်သက်ပြီး သေချာမှုမရှိပါက သင်၏စနစ်တာဝန်ရှိသူနှင့် ဆက်သွယ်ပေးပါ။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to spreadsheets"
+msgstr "စာရင်းဇယားဆိုင်ရာတွက်ချက်မှု ဆော့ဖ်ဝဲလ်ကိုချိတ်ဆက်အသုံးပြုပါ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr "%PRODUCTNAME စာရင်းဇယားတွက်ချက်မှုများပြုရန် ဖိုင်(သို့) Microsoft Excel workbook အားရွေးချယ်ရန် 'ဘရောက်စ်'ကို ကလစ်နှိပ်ပါ။ \n%PRODUCTNAME သည် ဖတ်ခြင်းနည်းလမ်းဖြင့်သာ ဤဖိုင်ကို ဖွင့်လိမ့်မည်။"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
+#, fuzzy
+msgid  "~Location and file name"
+msgstr "~တည်နေရာနှင့်ဖိုင်အမည်"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CheckBox.Text
+#, fuzzy
+msgid  "~Password required"
+msgstr "~စကားဝှက် လိုအပ်သည်"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FixedText.Text
+#, fuzzy
+msgid  "~Height"
+msgstr "~အမြင့်"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CheckBox.Text
+#, fuzzy
+msgid  "~Automatic"
+msgstr "~အလိုအလျောက်"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HelpButton.Text
+#, fuzzy
+msgid  "Row Height"
+msgstr "အတန်းအမြင့်"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FixedText.Text
+#, fuzzy
+msgid  "~Width"
+msgstr "~အကျယ်"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CheckBox.Text
+#, fuzzy
+msgid  "~Automatic"
+msgstr "~အလိုအလျောက်"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.HelpButton.Text
+#, fuzzy
+msgid  "Column Width"
+msgstr "ကော်လံအကျယ်"
+
+#: source/ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.ModalDialog.Text
+#, fuzzy
+msgid  "Text Connection Settings"
+msgstr "စာသားချိတ်ဆက်မှုပြင်ဆင်ချိန်ညှိရန်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2).PB_AUTOBROWSEURL.PushButton.Text
+#, fuzzy
+msgid  "Browse"
+msgstr "ဘရောက်စ်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTODATABASENAME.FixedText.Text
+#, fuzzy
+msgid  "Database name"
+msgstr "ဒေတာဘေ့စ် အမည်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOHOSTNAME.FixedText.Text
+#, fuzzy
+msgid  "Server"
+msgstr "ဆာဗာ"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOBASEDN.FixedText.Text
+#, fuzzy
+msgid  "Base ~DN"
+msgstr "~DN အခြေခံ"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOPORTNUMBER.FixedText.Text
+#, fuzzy
+msgid  "~Port number"
+msgstr "~ပေါ့ထ် နံပါတ်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FL_DATACONVERT.FixedLine.Text
+#, fuzzy
+msgid  "Data conversion"
+msgstr "အချက်အလက်များပြောင်းလဲခြင်း"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FT_CHARSET.FixedText.Text
+#, fuzzy
+msgid  "~Character set"
+msgstr "~အက္ခရာ သင်္ကေတအစု"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FixedText.Text
+#, fuzzy
+msgid  "Specify the type of files you want to access"
+msgstr "ရယူရန် ဆန္ဒရှိသည့် ဖိုင်အမျိုးအစားများကို သတ်မှတ်ပါ"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RadioButton.Text
+#, fuzzy
+msgid  "Plain text files (*.txt)"
+msgstr "စာသားအလွတ်ဖိုင်များ(*.txt)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RadioButton.Text
+#, fuzzy
+msgid  "'Comma separated value' files (*.csv)"
+msgstr "'ကော်မာဖြင့်ခွဲခြားထားသည့်တန်ဖိုး' ဖိုင်များ (*.csv)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RadioButton.Text
+#, fuzzy
+msgid  "Custom:"
+msgstr "စိတ်ကြိုက်-"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.Text
+#, fuzzy
+msgid  "Custom: *.abc"
+msgstr "စိတ်ကြိုက် - *.abc"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "Row Format"
+msgstr "အတန်းလိုက် စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FixedText.Text
+#, fuzzy
+msgid  "Field separator"
+msgstr "နေရာအကန့်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FixedText.Text
+#, fuzzy
+msgid  "Text separator"
+msgstr "စာသားအကန့်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FixedText.Text
+#, fuzzy
+msgid  "Decimal separator"
+msgstr "ဆယ်လီစိတ်အကန့်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FixedText.Text
+#, fuzzy
+msgid  "Thousands separator"
+msgstr "ထောင်သောင်း အကန့်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CheckBox.Text
+#, fuzzy
+msgid  "~Text contains headers"
+msgstr "~စာမျက်နှာထိပ်ပိုင်းတွင်စာသားပါဝင်နေသည်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.String.Text
+#, fuzzy
+msgid  "{None}"
+msgstr "{ဘာမျှမရှိပါ}"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
+#, fuzzy
+msgid  "#1 must be set."
+msgstr "#၁ အသုံးပြုရမည်"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.String.Text
+#, fuzzy
+msgid  "#1 and #2 must be different."
+msgstr "#1 နှင့် #2 ခြားနားရလိမ့်မည်။"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.String.Text
+#, fuzzy
+msgid  "Wildcards such as ?,* are not allowed in #1."
+msgstr "?,*ကဲ့သို့သောအထူးသင်္ကေတမျိုးကို#1တွင်ခွင့်မပြုပါ"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
+msgid  "JDBC d~river class"
+msgstr "JDBC ဒရိုင်~ဘာ အမျိုးအစား"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PushButton.Text
+#, fuzzy
+msgid  "Test class"
+msgstr "အမျိုးအစားစစ်ဆေးပါ"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FixedText.Text
+#, fuzzy
+msgid  "Socket"
+msgstr "ဆော့ကတ်"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "ပြန်လည်လန်းဆန်းစေပါ"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "မြင်ကွင်း~ဒီဇိုင်းသစ်"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "ဇယား~ဒီဇိုင်းသစ်"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "ကွာရီရှေ့ပြေးပုံစံ..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "ကွာရီ အသစ် (ဒီဇိုင်းပုံစံ မြင်ကွင်း)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~ကွာရီ တည်းဖြတ်ပါ"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "ကွာရီ အသစ်(~SQL မြင်ကွင်း)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "တည်းဖြတ်ပါ..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "ကော်လံအကျယ်..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "အစီရင်ခံစာလမ်းညွှန်၀ဇ္ဇတ်..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "ရှေ့ပြေးပုံစံ..."
+
+#: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+msgid  "System"
+msgstr "စနစ်"
+
+#: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+msgid  "Error during creation"
+msgstr "ဖန်တီးစဉ်အမှားဖြစ်ပွားသည်"
+
+#: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+msgid  "An unexpected error occurred. The operation could not be performed."
+msgstr "မျှော်လင့်မထားသော အမှားတစ်ခု ဖြစ်ပွားသည်။ ဆောင်ရွက်ချက်များ လုပ်ဆောင်နိုင်မည် မဟုတ်ပါ။"
+
+#: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+msgid  "The document \"$file$\" could not be opened."
+msgstr "မှတ်တမ်းမှတ်ရာ \"$file$\" ကိုမဖွင့်နိုင်ပါ။"
+
+#: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+msgid  "The table cannot be deleted because the database connection does not support this."
+msgstr "ဒေတာဘေ့စ်မှချိတ်ဆက်အထောက်အကူမပြု နိုင်သောကြောင့်ဇယားကိုမဖျက်နိုင်ပါ။"
+
+#: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+msgid  "~All"
+msgstr "~အားလုံး"
+
+#: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+msgid  "Undo:"
+msgstr "မူလအခြေအနေသို့ပြန်ခေါ်ပါ-"
+
+#: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+msgid  "Redo:"
+msgstr "နောက်ဆုံးအခြေအနေသို့ပြန်သွားပါ -"
+
+#: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+msgid  "No corresponding column type could be found for column '#1'."
+msgstr "ကော်လံ '#၁' အတွက် သက်ဆိုင်ရာအမျိုးအစားကို ရှာမတွေ့ပါ။"
+
+#: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr "\"$file$\"ဖိုင်မရှိပါ။"
+
+#: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "အချက်အလက်မူရင်းသို့ချိတ်ဆက်စဉ်သတိပေးချက်ထွက်ပေါ်လာသည်။ ၎င်းတို့အား မြင်ရန် \"$buttontext$\" ကိုနှိပ်ပါ။"
+
+#: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr "'$#$' အမည် ရှိပြီးဖြစ်သည်။\nအခြားအမည်ထည့်ပါ။"
+
+#: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
+#, fuzzy
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "Sun အစီရင်ခံစာတည်ဆောက်သူ တိုးချဲ့ရန် \"$file$\" အစီရင်ခံစာလိုအပ်သည်။"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
+#, fuzzy
+msgid  "Apply columns"
+msgstr "ကော်လံများအသုံးချပါ"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
+#, fuzzy
+msgid  "Type formatting"
+msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံအမျိုးအစား"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
+#, fuzzy
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr "အောက်ပါနေရာကွက်များတွင် မူလသော့များ ရှိပြီးဖြစ်သည်။ \n"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
+#, fuzzy
+msgid  "Assign columns"
+msgstr "ကော်လံများ သတ်မှတ်ပါ"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
+#, fuzzy
+msgid  "Copy RTF Table"
+msgstr "RTF ဇယား ကူးယူပါ"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "~ကူညီပါ"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "~Cancel"
+msgstr "~ရုတ်သိမ်းပါ"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
+#, fuzzy
+msgid  "< ~Back"
+msgstr "<~နောက်သို့"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
+#, fuzzy
+msgid  "~Next>"
+msgstr "~နောက်ထပ်>"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+#, fuzzy
+msgid  "C~reate"
+msgstr "ဖန်တီးပါ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
+#, fuzzy
+msgid  "Existing columns"
+msgstr "ရှိပြီးကော်လံများ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
+#, fuzzy
+msgid  "Column information"
+msgstr "ကော်လံ သတင်းအချက်အလက် "
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
+#, fuzzy
+msgid  "Automatic type recognition"
+msgstr "အလိုအလျောက် ပုံစံကို အသိအမှတ်ပြုခြင်း"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
+#, fuzzy
+msgid  "Lines (ma~x)"
+msgstr "မျဉ်းများ (အများ~ဆုံး)"
+
+#: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+#, fuzzy
+msgid  "Primary Key"
+msgstr "အဓိကသော့"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
+#, fuzzy
+msgid  "Source table: \\n"
+msgstr "မူရင်းဇယား - \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
+#, fuzzy
+msgid  "Destination table: \\n"
+msgstr "ဇယား ထားရှိရမည့်နေရာ - \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+#, fuzzy
+msgid  "~All"
+msgstr "~အားလုံး"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+#, fuzzy
+msgid  "Non~e"
+msgstr "ဘာမျှ~မရှိပါ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+#, fuzzy
+msgid  "Ta~ble name"
+msgstr "ဇယား~အမည်"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
+msgid  "Options"
+msgstr "ရွေးပိုင်ခွင့်များ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
+#, fuzzy
+msgid  "De~finition and data"
+msgstr "အဓိပ္ပါယ်~ဖွင့်ဆိုချက်နှင့် အချက်အလက်များ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
+#, fuzzy
+msgid  "Def~inition"
+msgstr "အဓိပ္ပါယ်~ဖွင့်ဆိုချက်"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
+#, fuzzy
+msgid  "A~s table view"
+msgstr "ဇယား~မြင်ကွင်းအဖြစ်"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
+#, fuzzy
+msgid  "Append ~data"
+msgstr "အချက်အလက်~ပူးတွဲပါ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
+#, fuzzy
+msgid  "Use first ~line as column names"
+msgstr "ပထမမျဉ်းကို ကော်လံအမည်များအဖြစ်သုံးပါ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
+#, fuzzy
+msgid  "Crea~te primary key"
+msgstr "အဓိကသော့ဖန်တီးပါ"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+#, fuzzy
+msgid  "Name"
+msgstr "အမည်"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
+#, fuzzy
+msgid  "Copy table"
+msgstr "ဇယားကိုကူးယူပါ"
+
+#: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
+#, fuzzy
+msgid  "Copy table"
+msgstr "ဇယားကိုကူးယူပါ"
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
+#, fuzzy
+msgid  "This table name is not valid in the current database."
+msgstr "လက်ရှိဒေတာဘေ့စ်တွင် ဇယားအမည်မမှန်ကန်ပါ။"
+
+#: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+#, fuzzy
+msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
+msgstr "ရှိပြီးဇယားတွင် အချက်အလက်များပူးတွဲရန် ပထမစာမျက်နှာပေါ်ရှိ ‘ပူးတွဲအချက်အလက်ကြမ်းများ’ ကိုရွေးချယ်ပါ။"
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
+#, fuzzy
+msgid  "Please change the table name. It is too long."
+msgstr "ဇယားအမည်ပြောင်းပါ။ အလွန်ရှည်လျားနေသည်။"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+msgid  "Options"
+msgstr "ရွေးပိုင်ခွင့်များ\t"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+msgid  "~Type"
+msgstr "~အမျိုးအစား"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+msgid  "Inner join"
+msgstr "အတွင်းပိုင်းချိတ်ဆက်မှု"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+msgid  "Left join"
+msgstr "ဘယ်ဘက်ချိတ်ဆက်မှု"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+msgid  "Right join"
+msgstr "ညာဘက်ချိတ်ဆက်မှု"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+msgid  "Full (outer) join"
+msgstr "အပြင်ဘက်ချိတ်ဆက်မှုပြည့်ပြီ"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+msgid  "Cross join"
+msgstr "ထောင့်ဖြတ်ချိတ်ဆက်မှု"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+msgid  "Natural"
+msgstr "သဘာဝအတိုင်း"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "အကျုံးဝင်သည့် ဇယားများ"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr "အကျုံးဝင်သော နေရာကွက်များ"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+msgid  "Join Properties"
+msgstr "ချိတ်ဆက်မှုဂုဏ်သတ္တိများ"
+
+#: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+msgid  "Please note that some databases may not support this join type."
+msgstr "အချို့သော ဒေတာဘေ့စ်များသည် ချိတ်ဆက်မှုပုံစံကို အထောက်အကူမပြုနိုင်ကြောင်း ကျေးဇူးပြု၍ မှတ်သားပါ။"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+msgid  "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "ဇယားနှစ်ခု၏ သက်ဆိုင်ရာနေရာကွက်များ ပါဝင်မှုအတွက် ပါဝင်သောမှတ်တမ်းများသာ ထပ်တူကျပြီးဖြစ်သည်။"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "ဇယား %၁ မှ ALL မှတ်တမ်းများပါဝင်သော်လည်း ဇယား %၂မှ မှတ်တမ်းများသာလျှင် သက်ဆိုင်ရာနေရာကွက်များရှိ တန်ဖိုးများနှင့် ကိုက်ညီသည်။"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+msgid  "Contains ALL records from '%1' and from '%2'."
+msgstr " '%၁' နှင့် '%၂' မှ မှတ်တမ်းများအားလုံး ပါဝင်သည်။"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "%၁နှင့်%၂မှ ALL၏ မှတ်တမ်းမှတ်ရာများပါဝင်သည်။"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr "%၁နှင့်%၂မှ အမည်တူညီသော ကော်လံများအတွက် ကောလံတစ်ခုသာ အသုံးပြုခွင့်ရှိသည်။"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+msgid  "Add Table Window"
+msgstr "ဝင်းဒိုးဇယားထပ်ဖြည့်ပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+msgid  "Move table window"
+msgstr "ဝင်းဒိုး ဇယား ရွှေ့ပြောင်းပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+msgid  "Insert Join"
+msgstr "ချိတ်ဆက်မှုထည့်ပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+msgid  "Delete Join"
+msgstr "ချိတ်ဆက်မှုဖျက်ပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+msgid  "Resize table window"
+msgstr "ဝင်းဒိုး ဇယား အရွယ်ပြောင်းပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+msgid  "Delete Column"
+msgstr "ကော်လံဖျက်ပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+msgid  "Move column"
+msgstr "ကော်လံရွှေ့ပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+msgid  "Add Column"
+msgstr "ကော်လံထပ်ထည့်ပါ"
+
+#: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, table '$name$' does not exist."
+msgstr "$name$ အမည်ဖြင့် ဇယားဖော်ပြချက်မရှိပါ။"
+
+#: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, field name '$name$' does not exist."
+msgstr "$name$ အမည်ဖြင့် နေရာကွက်ဖော်ပြချက်မရှိပါ။"
+
+#: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgstr "#num# ဇယားများကို ကွာရီမှ ဖုံးအုပ်ထားသည်။ ဒေတာဘေ့စ်ပုံစံရွေးချယ်ထားသော်လည်း ဖော်ပြချက် တစ်ခုလျှင် #maxnum# ဇယား(များ)၏ အကြီးဆုံးလုပ်ငန်းစဉ်တစ်ခုသာ ရနိုင်လိမ့်မည်။"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+msgid  "Delete Table Window"
+msgstr "ဝင်းဒိုးဇယားဖျက်ပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+msgid  "Edit Column Description"
+msgstr "ကော်လံဖေါ်ပြချက်ကိုတည်းဖြတ်ပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+msgid  "Adjust column width"
+msgstr "ကော်လံအကျယ်ညှိပါ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+msgid  "(not sorted);ascending;descending"
+msgstr "(စနစ်တကျ စီမထားပါ)-ငယ်စဉ်ကြီးလိုက်-ကြီးစဉ်ငယ်လိုက် "
+
+#: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+msgid  "(no function);Group"
+msgstr "(လုပ်ဆောင်ချက်မရှိပါ) - အုပ်စု"
+
+#: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+msgid  "(no table)"
+msgstr "(ဇယား မရှိပါ)"
+
+#: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+msgid  "The database only supports sorting for visible fields."
+msgstr "မြင်နိုင်သည့် နေရာကွက်များအတွက်သာ ဒေတာဘေ့စ်မှ စနစ်တကျ အထောက်အကူပြုသည်။"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+msgid  "Functions"
+msgstr "လုပ်ဆောင်ချက်များ"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+msgid  "Table Name"
+msgstr "ဇယားအမည်"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+msgid  "Alias"
+msgstr "အမည်ပွား"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+msgid  "Distinct Values"
+msgstr "ထင်ရှားသောတန်ဖိုးများ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "နေရာကွက်၊အခြားအမည်တစ်ခု၊စီတန်းထားမှု၊မြင်နိုင်သည်၊လုပ်ဆောင်ချက်၊တစ်ခုမဟုတ်တစ်ခု၊သို့မဟုတ်"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+msgid  "There are too many columns."
+msgstr "ကော်လံများစွာ ရှိနေသည်။"
+
+#: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+msgid  "A condition cannot be applied to field [*]"
+msgstr "အခြေအနေတစ်ခုသည် နေရာကွက်[*]ကို လက်တွေ့ အသုံးမချနိုင်ပါ။"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+msgid  "The SQL statement created is too long."
+msgstr "SQL ဖန်တီးထုတ်ပြန်ချက် ရှည်လျားလွန်းသည်။"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+msgid  "Query is too complex"
+msgstr "ကွာရီရှုပ်ထွေးလွန်းသည်"
+
+#: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+msgid  "Nothing has been selected."
+msgstr "ဘာမျှ ရွေးချယ်မထားပါ။"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+msgid  "Too many search criteria"
+msgstr "မှတ်ကျောက် အများအပြား ရှာဖွေသည်"
+
+#: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+msgid  "SQL syntax error"
+msgstr "SQL ဝါကျထုံးဖွဲ့မှု အမှား"
+
+#: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+msgid  "[*] cannot be used as a sort criterion."
+msgstr "[*] ကိုစနစ်တကျ စီထားသော မှတ်ကျောက်တစ်ခုအဖြစ် အသုံးမပြုနိုင်ပါ။"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+msgid  "There are too many tables."
+msgstr "ဇယားများစွာ ရှိနေသည်။"
+
+#: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+msgid  "The statement will not be applied when querying in the SQL dialect of the database."
+msgstr "ဒေတာဘေ့စ်၏ SQLဘာသာစကားတွင် မေးမြန်းမှုများရှိသောအခါ ဤဖော်ပြချက်ကို လက်တွေ့အသုံးမချနိုင်ပါ။"
+
+#: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+msgid  "Field name not found or not unique"
+msgstr "နေရာကွက်အမည်ရှာမတွေ့ပါ (သို့)မထူးခြားပါ"
+
+#: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+msgid  "Join could not be processed"
+msgstr "ချိတ်ဆက်မှုလုပ်ဆောင်မပေးနိုင်ပါ"
+
+#: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+msgid  "Syntax error in SQL statement"
+msgstr "SQL ထုတ်ပြန်ချက်ရှိ ဝါကျထုံးဖွဲ့မှု အမှား"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+msgid  "This database does not support table views."
+msgstr "ဤဒေတာဘေ့စ်မှ ဇယား မြင်ကွင်းများကို အထောက်အကူမပြုပါ။"
+
+#: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+msgid  "This database does not support altering of existing table views."
+msgstr "ဤဒေတာဘေ့စ်မှ ရှိပြီးသား ဇယားကို ကြည့်ရန် အထောက်အကူမပြုပါ။"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+msgid  "Do you want to create a query instead?"
+msgstr "ကွာရီတစ်ခုအစားထိုးဖန်တီးရန် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+msgid  "No query could be created."
+msgstr "ကွာရီ မဖန်တီးနိုင်ပါ။"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+msgid  "No query could be created because no fields were selected."
+msgstr "ရွေးချယ်ထားသော နေရာကွက်များမရှိခြင်းကြောင့် ကွာရီမဖန်တီးနိုင်ပါ။"
+
+#: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgstr "အချက်အလက်မူရင်းကို ဖျက်ထားသောကြောင့် သက်ဆိုင်ရာ အချက်အလက်များကို မူရင်းတွင် သိမ်းမထားနိုင်ပါ။ "
+
+#: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+msgid  "The column '$name$' is unknown."
+msgstr "ကော်လံ $name$ ကိုမသိပါ။"
+
+#: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+msgid  "Columns can only be compared using '='."
+msgstr "ကော်လံများသည် နှိုင်းယှဉ်မှုအတွက် '=' ကိုသာအသုံးပြုသည်။"
+
+#: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+msgid  "You must use a column name before 'LIKE'."
+msgstr "'LIKE' အသုံးမပြုမှီ ကော်လံအမည်တစ်ခု သုံးရလိမ့်မည်။"
+
+#: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+msgid  "The column could not be found. Please note that the database is case-sensitive."
+msgstr "ကော်လံကို ရှာမတွေ့ပါ။ ဒေတာဘေ့စ်သည် အမှားအယွင်းမခံကြောင်းကို ကျေးဇူးပြု၍ မှတ်သားပေးပါ။"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Query Design"
+msgstr " - %PRODUCTNAME အခြေခံ - ကွာရီဒီဇိုင်းပုံစံ"
+
+#: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: View Design"
+msgstr " - %PRODUCTNAME အခြေခံ - မြင်ကွင်းဒီဇိုင်းပုံစံ"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr "$object$  ပြောင်းလဲနေသည်။\nပြောင်းလဲမှုများကို သိမ်းရန် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "SQLညွှန်ကြားချက်မှ $object$၏ တည်ရှိမှုကိုဆက်စပ်ဖော်ြပမပေးနိုင်ပါ။"
+
+#: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "$object$ကိုSQLမြင်ကွင်းတွင်ဖွင့်နိုင်သည်။"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+msgid  "The table view"
+msgstr "ဇယားမြင်ကွင်း"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+msgid  "The query"
+msgstr "ကွာရီ"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+msgid  "The SQL statement"
+msgstr "SQL ဖော်ပြချက်"
+
+#: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The query does not create a result set, and thus cannot be part of another query."
+msgstr "ကွာရီမှ အဖြေတစ်စုံတစ်ခုကို ဖန်တီးမပေးနိုင်ပါ။ ထို့အပြင် အခြားကွာရီတစ်ခု၏ တစ်စိတ်တစ်ဒေသလည်း မဖြစ်နိုင်ပါ။ "
+
+#: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgstr "ActiveConnection နှင့် the DataSourceName တို့၏ကိုယ်စားပြုတန်ဖိုး မှားယွင်းနေသည်။ ကွာရီ ဖန်တီးသူမှ အစပြု၍ မရနိုင်ပါ။"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+msgid  "This relation already exists. Do you want to edit it or create a new one?"
+msgstr "ဆက်နွယ်မှုရှိပြီး ဖြစ်သည်။ ၎င်းကိုတည်းဖြတ် လိုပါသလား(သို့) အသစ်တစ်ခု ဖန်တီးလိုပါသလား?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+msgid  "Edit..."
+msgstr "တည်းဖြတ်ပါ..."
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+msgid  "Create..."
+msgstr "ဖန်တီးပါ..."
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Relation design"
+msgstr " - %PRODUCTNAME အခြေခံ-ဒီဇိုင်းဆက်နွယ်မှု"
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support relations."
+msgstr "ဒေတာဘေ့စ်မှ ဆက်နွယ်ချက်များကို အထောက်အကူမပြုပါ။"
+
+#: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgstr "ဤဇယားကိုဖျက်သောအခါ သက်ဆိုင်ရာ ဆက်နွယ်မှုများကိုပါ ကောင်းစွာ ဖျက်လိမ့်မည်။ ဆက်လုပ်လိုပါသလား?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr "ဒေတာဘေ့စ်အနေဖြင့်ဆက်နွယ်မှုများကိုမဖန်တီးနိုင်ပါ။ ဤဇယားအမျိုးအစားအတွက် ဖောရိန်းကီးမှလည်း အထောက်အကူမပြုနိုင်ပါ။\nကျေးဇူးပြု၍ ဒေတာဘေ့စ်ရှိ သင့်မှတ်တမ်းမှတ်ရာများကို စစ်ဆေးပါ။"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "အကြောင်းအရင်းခံ သော့ စီချယ်ပါ/ဖယ်ရှားပါ"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+msgid  "Yes"
+msgstr "ဟုတ်"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+msgid  "No"
+msgstr "မဟုတ်"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+msgid  "Ascending"
+msgstr "ငယ်စဉ်ကြီးလိုက်"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+msgid  "Descending"
+msgstr "ကြီးစဉ်ငယ်လိုက်"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+msgid  "<none>"
+msgstr "<ဘာမျှမရှိပါ>"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+msgid  "Field name"
+msgstr "အကွက် အမည်"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+msgid  "Field Name"
+msgstr "အကွက် အမည်"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+msgid  "Field ~type"
+msgstr "နေရာကွက်~အမျိုးအစား"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+msgid  "Field Type"
+msgstr "အကွက် ပုံသဏ္ဌာန်"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+msgid  "Field length"
+msgstr "အကွက် အလျား"
+
+#: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+msgid  "Description"
+msgstr "ဖေါ်ပြချက်"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
+msgid  "Column Description"
+msgstr "ကော်လံဖော်ပြချက်"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+msgid  "Input required"
+msgstr "လိုအပ်သည့် အသွင်း"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+msgid  "~AutoValue"
+msgstr "~အလိုအလျှောက်တန်ဖိုး"
+
+#: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+msgid  "Field Properties"
+msgstr "အကွက် ဂုဏ်သတ္တိများ"
+
+#: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "အထွေထွေ"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+msgid  "Description:"
+msgstr "ဖေါ်ပြချက် -"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+msgid  "Table properties"
+msgstr "ဇယား ဂုဏ်သတ္တိများ"
+
+#: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+msgid  "The text you entered is not a list element. "
+msgstr "သင်ဝင်သော စာသားသည် ဂဏန်း(သို့) ဇယားကွက်တစ်ခုတွင် ပါဝင်သော အချက်အလက်ကြမ်းတစ်စု မဟုတ်ပါ။"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+msgid  "Insert Rows"
+msgstr "အတန်းလိုက်များ စီချယ်ပါ"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "အကြောင်းအရင်းခံ သော့"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+msgid  "Modify cell"
+msgstr "အကွက် အထူးပြုပါ"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+msgid  "Delete row"
+msgstr "အတန်းလိုက် ဖျက်ပါ"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+msgid  "Modify field type"
+msgstr "နေရာကွက် ပုံစံ အထူးပြုပါ"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+msgid  "Insert row"
+msgstr "အတန်းလိုက် စီချယ်ပါ"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+msgid  "Insert new row"
+msgstr "အတန်းလိုက် အသစ် ထည့်သွင်းပါ"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "အကြောင်းအရင်းခံ သော့ စီချယ်ပါ/ဖယ်ရှားပါ"
+
+#: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+msgid  "~Default value"
+msgstr "~မူလ တန်ဖိုး"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+msgid  "~Entry required"
+msgstr "လိုအပ်သည့် အဝင်"
+
+#: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+msgid  "~Length"
+msgstr "အလျား"
+
+#: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+msgid  "~Type"
+msgstr "~ပုံသဏ္ဌာန်"
+
+#: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+msgid  "~Length"
+msgstr "~အလျား"
+
+#: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+msgid  "Decimal ~places"
+msgstr "ဆယ်လီစိတ် နေရာများ"
+
+#: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+msgid  "Format example"
+msgstr "ဥပမာ စီစဉ် ဖွဲ့စည်းမှု ပုံစံ"
+
+#: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr "နဂိုတည်ရှိသော နောက်ခံအဖြစ် မှတ်တမ်းအသစ်များအားလုံးတွင် ပေါ်လာရန် တန်ဖိုးတစ်ခု ရွေးချယ်ပါ။ \n အကယ်၍ နေရာကွက်သည် နဂိုတည်ရှိသော နောက်ခံ တန်ဖိုးတစ်ခု ရှိရန် မဖြစ်ပါက ဗလာ စီကုံးထားသော အက္ခရာ၊သင်္ကေတအတွဲ ရွေးချယ်ပါ။"
+
+#: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr "ဤနေရာကွက်အတွက် နဂိုတည်ရှိသော နောက်ခံ တန်ဖိုးတစ်ခုသို့ ဝင်ပါ။ \n\n ဇယားတွင် အချက်အလက်ကြမ်း မကြာမီ ဝင်သောအခါ၊ စီကုံးထားသော အက္ခရာ၊သင်္ကေတအတွဲသည် ရွေးချယ်ထားသည့် နေရာကွက်အတွက် မှတ်တမ်းအသစ် တစ်ခုစီ အသုံးပြုလိမ့်မည်။ ထို့ကြောင့် အောက်ပါအတိုင်း ဝင်ရန် လိုအပ်သည့် အကွက် စီစဉ် ဖွဲ့စည်းမှု ပုံစံသို့ အပေးအယူ လုပ်သင့်သည်။"
+
+#: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgstr "ဤရွေးပိုင်ခွင့် ခလုတ်ဖွင့်ပါက အကယ်၍ ဤနေရာကွက်သည် NULL  တန်ဖိုးများ ပါဝင်နိုင်လိမ့်မည် မဟုတ်ပါ။ ဥပမာ - အသုံးပြုသူသည် အချက်အလက်ကြမ်းသို့ အမြဲ ဝင်ရလိမ့်မည်။"
+
+#: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+msgid  "Enter the maximum text length permitted."
+msgstr "ခွင့်ပြုသည့် အကြီးဆုံး စာသား အလျားသို့ ဝင်ပါ။"
+
+#: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+msgid  "Enter the number format."
+msgstr "နံပါတ် စီစဉ် ဖွဲ့စည်းမှု ပုံစံသို့ ဝင်ပါ။"
+
+#: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr "ဤနေရာကွက်တွင် အလျားလိုက် အချက်အလက်ကြမ်း ရှိနိုင်လိမ့်မည်ကို ဆုံးဖြတ်ပါ။ \n\n အကယ်၍ ဆယ်လီစိတ် နေရာကွက်များဆိုပါက နံပါတ် အလျားလိုက် အကြီးဆုံး ဝင်ရန်၊ ပြီးတော့ အကယ်၍ ဒွိစုံ နေရာကွက်များဆိုပါက၊ အချက်အလက်ကြမ်း အုပ်စုတွဲ၏ အလျားလိုက် ပြီးတော့  \n\n အကယ်၍ ဆယ်လီစိတ် နေရာကွက်များ ဖြစ်ပါက၊ နံပါတ်၏ အကြီးဆုံး အလျား ဝင်ရောက်ထားသည်၊ အကယ်၍ ဒွိစုံ နေရာကွက်များ ဖြစ်ပါက၊ အချက်အလက်ကြမ်း အုပ်စုတွဲ ဝင်ရောက်ထားသည်။ \n တန်ဖိုးသည် ဤအချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းအတွက် ပို၍ အကြီးဆုံး ဖြစ်ချိန် လိုအပ်သလို မှန်ကန်လိမ့်မည်။"
+
+#: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+msgid  "Specify the number of decimal places permitted in this field."
+msgstr "ဤနေရာကွက်တွင် ဆယ်လီစိတ် နေရာများ ခွင့်ပြုသည့် နံပါတ် သတ်မှတ်ပါ။"
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgstr "လတ်တလော စီစဉ် ဖွဲ့စည်းမှု ပုံစံတွင် ဘယ်လို အချက်အလက်ကြမ်း ပြသထားလိမ့်မည်၊ ဘယ်နေရာတွင် တွေ့ရသည်ဟူ၍ ဖြစ်သည်။ (စီစဉ် ဖွဲ့စည်းမှု ပုံစံ အထူးပြုရန် ညာဖက်ပေါ် ခလုတ်နှိပ်၍ အသုံးပြုပါ)။"
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+msgid  "This is where you determine the output format of the data."
+msgstr "အချက်အလက်ကြမ်း၏ စီစဉ် ဖွဲ့စည်းမှု ပုံစံ အထွက် ဘယ်နေရာတွင် ဆုံးဖြတ်ထားကြောင်း ဖြစ်သည်။"
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr "အကယ်၍ ဤနေရာကွက်သည် အလိုလို နှစ်တိုး တန်ဖိုးများ ပါဝင်သင့်ကြောင်း ရွေးပါ။ \n\n ဤပုံစံ၏ နေရာကွက်များတွင် ဝင်နိုင်လိမ့်မည် မဟုတ်ပါ။ ပင်ကို မူလ တန်ဖိုးတစ်ခုသည် အလိုအလျောက် မှတ်တမ်းအသစ် တစ်ခုစီသို့ သတ်မှတ်ထားလိမ့်မည် (ယခင် မှတ်တမ်း၏ နှစ်တိုးမှ အကျိုးရလာဒ်)။"
+
+#: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "ဇယား မသိမ်းနိုင်သည့်အကြောင်းမှာ \"$column$\" ကော်လံအကန့်အမည် နှစ်ကြိမ် သတ်မှတ်ထား၍ ဖြစ်သည်။"
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "\"$column$\" ကော်လံအကန့်သည် အကြောင်းအရင်းခံသော့သို့ ပိုင်ဆိုင်သည်။ အကယ်၍ ကော်လံအကန့်ဖျက်မည်ဆိုပါက၊ အကြောင်းအရင်းခံသော့လဲ ဖျက်ရလိမ့်မည်။ ဆက်လုပ်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+msgid  "Primary Key Affected"
+msgstr "အကြောင်းအရင်းခံ သော့ အကျိုးသက်ရောက်မှုရှိထားသည်"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+msgid  "Column"
+msgstr "ကော်လံ"
+
+#: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+msgid  "Continue anyway?"
+msgstr "မည်သည့်နည်းမဆို ဆက်လုပ်မည်လား?"
+
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "သတိပေးချက်!"
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+msgid  "The table could not be saved due to problems connecting to the database."
+msgstr "အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းသို့ ချိတ်ဆက်ထားသော ပြဿနာများအတွက်ကြောင့် ဇယား သိမ်းထားနိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgstr "ဇယား စစ်ထုတ်ကိရိယာ ညှိထားနိုင်လိမ့်မည် မဟုတ်သောအကြောင်းမှာ အချက်အလက်ကြမ်း မူရင်းသည် ဖျက်ထားသည်။"
+
+#: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+msgid  "No primary key"
+msgstr "အကြောင်းအရင်းခံ သော့ မရှိပါ"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr "တမူထူးခြားသော အညွှန်းတစ်ခု (သို့) အကြောင်းအရင်းခံ သော့သည် ဤအချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းတွင် ကိုယ်စားပြုပါဝင်သည့် မှတ်တမ်း အချက်အလက်ကြမ်းအတွက် လိုအပ်သည်။ \n ဖွဲ့စည်းတည်ဆောက်ပုံ အခြေအနေများ နှစ်ခုအနက် တစ်ခုတွေ့ရှိစဉ် ဤဇယားအတွင်းသို့ အချက်အလက်ကြမ်းသာ ဝင်ရောက်နိုင်သည်။ \n\n ယခု အကြောင်းအရင်းခံ သော့ တစ်ခု ဖန်တီးသင့်သလား?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base: Table Design"
+msgstr " - %PRODUCTNAME အခြေခံ - ဇယား ဒီဇိုင်း ပုံစံ"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "\"$column$\"  ကော်လံအကန့် ပြောင်းလဲနိုင်လိမ့်မည် မဟုတ်ပါ။ ကော်လံအကန့် အစား ဖျက်ထားသင့်ပြီး စီစဉ် ဖွဲ့စည်းမှု ပုံစံ အသစ် ဖြည့်စွပ် (ရေးသွင်း) သင့်သလား?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+msgid  "Error while saving the table design"
+msgstr "ဇယား ဒီဇိုင်း သိမ်းစဉ် အမှား"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+msgid  "The column $column$ could not be deleted."
+msgstr "ကော်လံ $column$ ကို ဖျက်မရပါ။"
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr "ဇယားတွင် ကော်လံအကန့်များအားလုံး ဖျက်ရန် ကြိုးစားနေသည်။ ဇယားတစ်ခုသည် ကော်လံအကန့်များ မပါဘဲ တည်ရှိနိုင်လိမ့်မည် မဟုတ်ပါ။ အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းမှ ဇယား ဖျက်သင့်သလား? အကယ်၍ မဟုတ်ပါက၊ ဇယား မပြောင်းလဲမှု ကျန်ရစ်လိမ့်မည်။"
+
+#: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+msgid  "A~uto-increment statement"
+msgstr "အလိုလို နှစ်တိုး ထုတ်ပြန်ချက်"
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr "အလိုလို နှစ်တိုး နေရာကွက်အတွက် SQL ထုတ်ပြန်ချက်တစ်ခုသို့ ဝင်ပါ။ \n\nဤထုတ်ပြန်ချက်သည် ဇယား ဖန်တီးထားပြီးသောအခါ အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းသို့ တိုက်ရိုက် လွှဲပြောင်းလိမ့်မည်။"
+
+#: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr "ပုံစံမရှိသော သတင်း အချက်အလက်သည် အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းမှ ပြန်ထုတ်နိုင်လိမ့်မည်။ \nဤအချက်အလက်ကြမ်းမူရင်းအတွက် ဇယားဒီဇိုင်းပုံစံ နည်းလမ်း မရနိုင်ပါ။"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+msgid  "change field name"
+msgstr "အကွက် အမည် ပြောင်းပါ"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+msgid  "change field type"
+msgstr "အကွက် ပုံစံ ပြောင်းပါ"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+msgid  "change field description"
+msgstr "အကွက် ဖေါ်ပြချက် ပြောင်းပါ"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+msgid  "change field attribute"
+msgstr "အကွက် ပင်ကိုယ် အရည်အချင်း ပြောင်းပါ"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+msgid  "~Remember password until end of session"
+msgstr "~ကဏ္ဍ၏အဆုံးသတ်အထိ စကားဝှက်ကို သတိရပါ"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+msgid  "~Remember password"
+msgstr "~စကားဝှက် သတိရပါ"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+msgid  "The destination database does not support views."
+msgstr "ဒေတာဘေ့စ်များရှိသည့်နေရာသည် မြင်ကွင်းကိုအထောက်အကူမပြုပါ။"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+msgid  "The destination database does not support primary keys."
+msgstr "ဒေတာဘေ့စ်များရှိသည့်နေရာသည်အဓိကသော့များကိုအထောက်အကူမပြုပါ။"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgstr "အချက်အလက်များရယူမည့်သူကို မတွေ့ရှိရပါ (သို့) လိုအပ်သော သတင်း အချက်အလက်များအားလုံးကို ရယူမည့်သူမရှိပါ။"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+msgid  "Only tables and queries are supported at the moment."
+msgstr "ယခုအချိန်တွင်ဇယားများနှင့်ကွာရီများကိုသာထောက်ပံ့မည်။"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+msgid  "The copy source's result set must support bookmarks."
+msgstr "ကူးယူထားသော ရင်းမြစ်ရလဒ်များသည် စာညှပ်ကို ထောက်ပံ့ရမည်။"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgstr "ကော်လံနေရာ $pos$ တွင် ($type$)ကော်လံအမျိုးအစားကို အထောက်အကူမပေးနိုင်ပါ။"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+msgid  "Illegal number of initialization parameters."
+msgstr "အစကိုယ်စားပြုတန်ဖိုးများ၏ တရားမဝင် ကိန်းဂဏန်း။"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+msgid  "An error occurred during initialization."
+msgstr "စတင်လုပ်ဆောင်စဉ်အမှားတစ်ခုဖြစ်ပွားခဲ့သည်။"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
+msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgstr "ကော်ပီရင်းမြစ်များ အသုံးပြုသူအတွက် အထောက်အကူမပြုသည့် ပြင်ဆင်မှုများ- $name$"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
+msgid  "To copy a query, your connection must be able to provide queries."
+msgstr "ကွာရီတစ်ခုကို ကော်ပီကူးယူရန် ကွာရီအများအပြားနှင့် အချိတ်အဆက်ရှိရမည်။"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
+msgid  "The given interaction handler is invalid."
+msgstr "ပေးထားသော အပြန်အလှန်လုပ်ဆောင်ချက်ကို အသုံးမပြုနိုင်ပါ။"

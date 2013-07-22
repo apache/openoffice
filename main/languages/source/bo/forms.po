@@ -1,0 +1,272 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.String.Text
+msgid  "Please enter a binding expression."
+msgstr "མཉམ་སྦྲགས་མཚོན་སྟངས་ཤིག་འཇུག་རྒྱུ།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.String.Text
+msgid  "This is an invalid binding expression."
+msgstr "མཉམ་སྦྲགས་འདིའི་མཚོན་སྟངས་གོ་ཆོད་མིན་འདུག"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.String.Text
+msgid  "Value is invalid."
+msgstr "གྲངས་ཐང་ནུས་མེད།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_REQUIRED.String.Text
+msgid  "A value is required."
+msgstr "གྲངས་ཐང་ཞིག་འཇུག་དགོས།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.String.Text
+msgid  "The constraint '$1' not validated."
+msgstr "མཇུག་སྒྲིལ་བ་$1ཞིབ་དཔྱད་བྱས་མེད་པ།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.String.Text
+msgid  "The value is not of the type '$2'."
+msgstr "ཐང་འདི་སྣ་རིགས་$2ཁོངས་གཏོགས་ཀྱི་མེད།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.String.Text
+msgid  "The value must be smaller than or equal to $2."
+msgstr "ཐང་འདི་ངེས་པར་དུ་$2ལས་ཆུང་བའམ་ཡང་ན་མཚུངས་པ་དགོས།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.String.Text
+msgid  "The value must be smaller than $2."
+msgstr "ཐང་འདི་ངེས་པར་དུ་$2ལས་ཆུང་བ་དགོས།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.String.Text
+msgid  "The value must be greater than or equal to $2."
+msgstr "ཐང་འདི་ངེས་པར་དུ་$2ལས་ཆེ་བའམ་ཡང་ན་མཚུངས་པ་དགོས།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.String.Text
+msgid  "The value must be greater than $2."
+msgstr "ཐང་འདི་ངེས་པར་དུ་$2ལས་ཆེ་བ་དགོས།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.String.Text
+msgid  "The value does not match the pattern '$2'."
+msgstr "ཐང་འདི་བཟོ་ལྟ་$2དང་ཟླ་སྒྲིག་གི་མེད།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.String.Text
+msgid  "$2 digits allowed at most."
+msgstr "མང་ཤོས་སུའང་$2གྲངས་གནས་བེད་སྤྱོད་བྱེད་ཆོག"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.String.Text
+msgid  "$2 fraction digits allowed at most."
+msgstr "མང་ཤོས་སུའང་$2གྲངས་གནས་ཆུང་བ་དེ་བེད་སྤྱོད་བྱེད་ཆོག"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.String.Text
+msgid  "The string must be $2 characters long."
+msgstr "ཡིག་འབྲུའི་ཕྲེང་གི་རིང་ཚད་དེ་ངེས་པར་དུ་$2ཡི་ཡིག་རྟགས་ཡིན་དགོས།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.String.Text
+msgid  "The string must be at least $2 characters long."
+msgstr "ཡིག་འབྲུའི་ཕྲེང་གི་རིང་ཚད་དེ་ངེས་པར་དུ་$2ལས་མི་ཉུང་བའི་ཡིག་རྟགས་ཡིན་དགོས།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.String.Text
+msgid  "The string can only be $2 characters long at most."
+msgstr "ཡིག་འབྲུའི་ཕྲེང་གི་རིང་ཚད་དེ་ཆེས་མང་ན་ཡང་$2ཡི་ཡིག་རྟགས་ཡིན་དགོས།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_STRING.String.Text
+msgid  "String"
+msgstr "ཡིག་འབྲུའི་ཕྲེང་།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_URL.String.Text
+msgid  "Hyperlink"
+msgstr "རིམ་འདས་སྦྲེལ་མཐུད།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.String.Text
+msgid  "True/False (Boolean)"
+msgstr ""
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DECIMAL.String.Text
+msgid  "Decimal"
+msgstr "སིལ་གྲངས།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_FLOAT.String.Text
+msgid  "Floating point"
+msgstr "གཡེང་ཚེག"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DOUBLE.String.Text
+msgid  "Double"
+msgstr "ཞིབ་ཚད་གཉིས་རྩེགས།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATE.String.Text
+msgid  "Date"
+msgstr "ཚེས་གྲངས།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_TIME.String.Text
+msgid  "Time"
+msgstr "དུས་ཚོད།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATETIME.String.Text
+msgid  "Date and Time"
+msgstr "ཚེས་གྲངས་དང་དུས་ཚོད།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.String.Text
+msgid  "Month and year"
+msgstr "ཟླ་དང་ལོ།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEAR.String.Text
+msgid  "Year"
+msgstr "ལོ།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.String.Text
+msgid  "Month and day"
+msgstr "ཟླ་དང་ཉིན།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTH.String.Text
+msgid  "Month"
+msgstr "ཟླ་བ།"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DAY.String.Text
+msgid  "Day"
+msgstr "ཚེས་།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.String.Text
+msgid  "Error during evaluation"
+msgstr "ཚོད་སྐོར་བྱེད་སྐབས་ནོར་འཛོལ་བྱུང་བ།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
+msgid  "The string '$1' does not match the required regular expression '$2'."
+msgstr "ཡིག་འབྲུའི་ཕྲེང་$1དེ་མཁོ་བའི་དྲང་ཕྱོགས་ཀྱི་མཚོན་ཚུལ་$2ཆ་འགྲིག་པོ་མེད་པ།"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "མཉམ་སྦྲགས།"
+
+#: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
+msgid  "The contents of a combo box or list field could not be determined."
+msgstr "སྡེབ་སྒྲོམ་མམ་ཡང་ན་ཐོ་ཚན་སྒྲོམ་ནང་གི་ནང་དོན་གཏན་འཁེལ་ཐབས་བྲལ།"
+
+#: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "རིས་དབྱིབས་བར་འཇུག"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.String.Text
+msgid  "substituted"
+msgstr "བརྗེ་བ།"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
+msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr "ཚོད་འཛིན་བྱེད་ཆས་དེ་བསྒར་འཇུག་བྱེད་སྐབས་ནོར་འཁྲུལ་ཐོན་པ། གནས་ཟིན་གྱི་འབྲུ་རྟགས་དེ་སྤྱད་དེ་ཚོད་འཛིན་བྱེད་ཆས་དེ་བརྗེ་དགོས།"
+
+#: source/resource/strings.src#RID_STR_READERROR.String.Text
+msgid  "Error reading data from database"
+msgstr "གཞི་གྲངས་མཛོད་ཀྱི་གཞི་གྲངས་ཀློག་འདོན་བྱེད་སྐབས་ནོར་འཛོལ་བྱུང་བ།"
+
+#: source/resource/strings.src#RID_STR_CONNECTERROR.String.Text
+msgid  "Connection failed"
+msgstr "མཐུད་མ་ཐུབ་པ།"
+
+#: source/resource/strings.src#RID_ERR_LOADING_FORM.String.Text
+msgid  "The data content could not be loaded."
+msgstr "གྲངས་གཞིའི་ནང་དོན་འཇུག་ཐབས་བྲལ།"
+
+#: source/resource/strings.src#RID_ERR_REFRESHING_FORM.String.Text
+msgid  "The data content could not be updated"
+msgstr "གྲངས་གཞིའི་ནང་དོན་གསར་བརྗེ་བྱེད་ཐབས་བྲལ།"
+
+#: source/resource/strings.src#RID_STR_ERR_INSERTRECORD.String.Text
+msgid  "Error inserting the new record"
+msgstr "གཞི་གྲངས་ཀྱི་ས་བཅད་གསར་པ་བཅུག་སྐབས་ནོར་འཛོལ་བྱུང་བ།"
+
+#: source/resource/strings.src#RID_STR_ERR_UPDATERECORD.String.Text
+msgid  "Error updating the current record"
+msgstr "མིག་སྔའི་གཞི་གྲངས་ཀྱི་ས་བཅད་གསར་པ་བརྗེ་སྐབས་ནོར་འཛོལ་བྱུང་བ།"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORD.String.Text
+msgid  "Error deleting the current record"
+msgstr "མིག་སྔའི་གཞི་གྲངས་ས་བཅད་བསུབ་སྐབས་ནོར་འཛོལ་བྱུང་བ།"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORDS.String.Text
+msgid  "Error deleting the specified records"
+msgstr "དམིགས་བཙུགས་ཀྱི་གཞི་གྲངས་ས་བཅད་བསུབ་སྐབས་ནོར་འཛོལ་བྱུང་བ།"
+
+#: source/resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.String.Text
+msgid  "The object cannot be NULL."
+msgstr "བྱ་ཡུལ་དེ་NULLཡིན་མིན་ཆོག"
+
+#: source/resource/strings.src#RID_STR_OPEN_GRAPHICS.String.Text
+msgid  "Insert graphics from..."
+msgstr "རིས་དབྱིབས་...ནས་བར་འཇུག"
+
+#: source/resource/strings.src#RID_STR_CLEAR_GRAPHICS.String.Text
+msgid  "Remove graphics"
+msgstr "རིས་དབྱིབས་སུབ་རྒྱུ།"
+
+#: source/resource/strings.src#RID_STR_INVALIDSTREAM.String.Text
+msgid  "The given stream is invalid."
+msgstr "སྤྲད་པའི་གཞི་གྲངས་རྒྱུན་གོ་མི་ཆོད།"
+
+#: source/resource/strings.src#RID_STR_SYNTAXERROR.String.Text
+msgid  "Syntax error in query expression"
+msgstr "ཚིག་གྲུབ་ལ་བརྡ་སྤྲོད་ནོར་འཁྲུལ་བྱུང་རིགས་འདྲི་རྩད་བྱེད་པ།"
+
+#: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
+msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr "མཉམ་སྦྲགས་ནུས་པས་རྒྱབ་སྐྱོར་བྱེད་པའི་ཐོབ་ཐང་རིགས་གྲས་དེ་འཛིན་ཆས་འདི་དང་གྲངས་གཞི་བརྗེ་རེས་བྱེད་པར་སྤྱོད་མི་ཐུབ།"
+
+#: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
+msgid  "Record"
+msgstr "ཟིན་ཐོ།"
+
+#: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
+msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr "འཛིན་ཆས་འདི་དུས་མཚུངས་སུ་ར་སྤྲོད་བྱ་རིམ་གྱི་ནུས་པ་ལྡན་པའི་ཕྱི་ངོས་ཐང་ལ་མཉམ་སྦྲགས་ཐོག་འབྲེལ་མཐུད་བྱེད། སྔོན་ལ་ཐང་འདི་མཉམ་སྦྲགས་བྱེད་རྒྱུ་མེད་པ་བཟོས་ན་གཞི་ནས་ར་སྤྲོད་བྱ་རིམ་གསར་པ་སྒྲིག་སྦྱོར་བྱེད་ཐུབ།"
+
+#: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
+msgid  "of"
+msgstr "/"
+
+#: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr "མིག་སྔའི་སྒྲོམ་གཟུགས་ཀྱི་ནང་དོན་བཟོ་བཅོས་བརྒྱབ་ཟིན་འདུག\n བཟོ་བཅོས་དེ་དག་ཉར་ཚགས་བྱེད་དམ།"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "རིམ་སྒྲིག་ཆ་རྐྱེན་བཟོ་སྒྲིག་བྱེད་སྐབས་ནོར་སྐྱོན་བྱུང་བ།"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "འཚག་ཆས་བཟོ་སྒྲིག་བྱེད་སྐབས་ནོར་སྐྱོན་བྱུང་བ།"
+
+#: source/resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.String.Text
+msgid  "To execute this function, parameters are needed."
+msgstr "བྱེད་ནུས་དེ་ལག་བསྟར་བྱེད་དགོས་ན་"
+
+#: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
+msgid  "This function cannot be executed, but is only for status queries."
+msgstr "རྩོལ་ནུས་འདིས་ལག་བསྟར་བྱེད་ཐབས་མིན་འདུག དེ་རྣམ་པའི་རྩད་བཤེར་ཁོ་ནར་སྤྱོད་རྒྱུ་ལས་མེད།"
+
+#: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
+msgid  "Unknown function."
+msgstr "ཧ་མི་གོ་བའི་ནུས་པ།"

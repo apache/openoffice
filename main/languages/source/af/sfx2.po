@@ -1,0 +1,2464 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.ModalDialog.Text
+#, fuzzy
+msgid  "Modify Link"
+msgstr "Wysig skakel"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FixedText.Text
+#, fuzzy
+msgid  "~Application:"
+msgstr "~Toepassing:"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FixedText.Text
+#, fuzzy
+msgid  "~File:"
+msgstr "~Lêer:"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FixedText.Text
+#, fuzzy
+msgid  "~Category:"
+msgstr "~Kategorie:"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FixedLine.Text
+#, fuzzy
+msgid  "Modify link"
+msgstr "Wysig skakel"
+
+#: source/appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.String.Text
+msgid  "%PRODUCTNAME"
+msgstr ""
+
+#: source/appl/app.src#STR_NONAME.String.Text
+msgid  "Untitled"
+msgstr "Titelloos"
+
+#: source/appl/app.src#STR_CLOSE.String.Text
+msgid  "Close"
+msgstr "Sluit"
+
+#: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
+msgid  "Automatic"
+msgstr "Outomaties"
+
+#: source/appl/app.src#STR_STANDARD_SHORTCUT.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "Standaard"
+
+#: source/appl/app.src#STR_BYTES.String.Text
+#, fuzzy
+msgid  "Bytes"
+msgstr "Grepe"
+
+#: source/appl/app.src#STR_KB.String.Text
+#, fuzzy
+msgid  "KB"
+msgstr "kilogreep"
+
+#: source/appl/app.src#STR_MB.String.Text
+#, fuzzy
+msgid  "MB"
+msgstr "megagreep"
+
+#: source/appl/app.src#STR_GB.String.Text
+#, fuzzy
+msgid  "GB"
+msgstr "gigagreep"
+
+#: source/appl/app.src#MSG_QUERY_LASTVERSION.QueryBox.Message
+#, fuzzy
+msgid  "Cancel all changes?"
+msgstr "Kanselleer alle wysigings?"
+
+#: source/appl/app.src#RID_DOCALREADYLOADED_DLG.InfoBox.Message
+#, fuzzy
+msgid  "Document already open."
+msgstr "Dokument reeds oop."
+
+#: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+#, fuzzy
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr "%PRODUCTNAME kon nie 'n webblaaier op u stelsel vind nie. Kontroleer u werkskermvoorkeure of installeer 'n webblaaier (byvoorbeeld Mozilla) in die verstek ligging wat deur die blaaier se installeerder voorgestel word."
+
+#: source/appl/app.src#GID_INTERN.String.Text
+#, fuzzy
+msgid  "Internal"
+msgstr "Interne"
+
+#: source/appl/app.src#GID_APPLICATION.String.Text
+#, fuzzy
+msgid  "Application"
+msgstr "Toepassing"
+
+#: source/appl/app.src#GID_VIEW.String.Text
+#, fuzzy
+msgid  "View"
+msgstr "Bekyk"
+
+#: source/appl/app.src#GID_DOCUMENT.String.Text
+#, fuzzy
+msgid  "Documents"
+msgstr "Dokumente"
+
+#: source/appl/app.src#GID_EDIT.String.Text
+#, fuzzy
+msgid  "Edit"
+msgstr "Redigeer"
+
+#: source/appl/app.src#GID_MACRO.String.Text
+#, fuzzy
+msgid  "BASIC"
+msgstr "BASIC"
+
+#: source/appl/app.src#GID_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options"
+msgstr "Opsies"
+
+#: source/appl/app.src#GID_MATH.String.Text
+#, fuzzy
+msgid  "Math"
+msgstr "Wiskunde"
+
+#: source/appl/app.src#GID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigate"
+msgstr "Navigeer"
+
+#: source/appl/app.src#GID_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "Voeg in"
+
+#: source/appl/app.src#GID_FORMAT.String.Text
+#, fuzzy
+msgid  "Format"
+msgstr "Formaat"
+
+#: source/appl/app.src#GID_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "Sjablone"
+
+#: source/appl/app.src#GID_TEXT.String.Text
+#, fuzzy
+msgid  "Text"
+msgstr "Teks"
+
+#: source/appl/app.src#GID_FRAME.String.Text
+#, fuzzy
+msgid  "Frame"
+msgstr "Raam"
+
+#: source/appl/app.src#GID_GRAPHIC.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "Grafika"
+
+#: source/appl/app.src#GID_TABLE.String.Text
+#, fuzzy
+msgid  "Table"
+msgstr "Tabel"
+
+#: source/appl/app.src#GID_ENUMERATION.String.Text
+#, fuzzy
+msgid  "Numbering"
+msgstr "Nommering"
+
+#: source/appl/app.src#GID_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "Data"
+
+#: source/appl/app.src#GID_SPECIAL.String.Text
+#, fuzzy
+msgid  "Special Functions"
+msgstr "Spesiale funksies"
+
+#: source/appl/app.src#GID_IMAGE.String.Text
+#, fuzzy
+msgid  "Image"
+msgstr "Beeld"
+
+#: source/appl/app.src#GID_CHART.String.Text
+#, fuzzy
+msgid  "Chart"
+msgstr "Grafiek"
+
+#: source/appl/app.src#GID_EXPLORER.String.Text
+#, fuzzy
+msgid  "Explorer"
+msgstr "Explorer"
+
+#: source/appl/app.src#GID_CONNECTOR.String.Text
+#, fuzzy
+msgid  "Connector"
+msgstr "Verbinder"
+
+#: source/appl/app.src#GID_MODIFY.String.Text
+#, fuzzy
+msgid  "Modify"
+msgstr "Wysig"
+
+#: source/appl/app.src#GID_DRAWING.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "Tekening"
+
+#: source/appl/app.src#GID_CONTROLS.String.Text
+#, fuzzy
+msgid  "Controls"
+msgstr "Kontroles"
+
+#: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
+msgid  "The application cannot be terminated at the moment.\\nPlease wait until all print jobs and/or\\nOLE actions have finished and close all dialogs."
+msgstr ""
+
+#: source/appl/app.src#STR_ISMODIFIED.String.Text
+#, fuzzy
+msgid  "Do you want to save the changes to %1?"
+msgstr "Wil u die wysigings aan %1 stoor?"
+
+#: source/appl/app.src#STR_QUITAPP.String.Text
+#, fuzzy
+msgid  "E~xit"
+msgstr "Af~sluit"
+
+#: source/appl/app.src#RID_STR_HELP.String.Text
+#, fuzzy
+msgid  "Help"
+msgstr "Hulp"
+
+#: source/appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.String.Text
+#, fuzzy
+msgid  "No automatic start at 'XX'"
+msgstr "Geen outomatiese begin by 'XX' nie"
+
+#: source/appl/app.src#RID_HELPBAR.String.Text
+#, fuzzy
+msgid  "Help Bar"
+msgstr "Hulpbalk"
+
+#: source/appl/app.src#RID_STR_HLPFILENOTEXIST.String.Text
+#, fuzzy
+msgid  "The help file for this topic is not installed."
+msgstr "Die hulplêer vir hierdie toepassing is nie geïnstalleer nie."
+
+#: source/appl/app.src#RID_ENVTOOLBOX.String.Text
+#, fuzzy
+msgid  "Function Bar"
+msgstr "Funksiebalk"
+
+#: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+#, fuzzy
+msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
+msgstr "'n Fout het in die spesiale opstelling voorgekom.\nRaadpleeg asseblief u administrateur."
+
+#: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
+#, fuzzy
+msgid  "Exit Quickstarter"
+msgstr "Verlaat Snelbeginner"
+
+#: source/appl/app.src#STR_QUICKSTART_TIP.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "%PRODUCTNAME %PRODUCTVERSION-snelbeginner"
+
+#: source/appl/app.src#STR_QUICKSTART_FILEOPEN.String.Text
+#, fuzzy
+msgid  "Open Document..."
+msgstr "OpenDokument..."
+
+#: source/appl/app.src#STR_QUICKSTART_FROMTEMPLATE.String.Text
+#, fuzzy
+msgid  "From Template..."
+msgstr "Vanaf sjabloon..."
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH.String.Text
+#, fuzzy
+msgid  "Load %PRODUCTNAME During System Start-Up"
+msgstr "Laai %PRODUCTNAME wanneer rekenaar aanskakel"
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+#, fuzzy
+msgid  "Disable Quickstarter"
+msgstr "Deaktiveer Snelbeginner in stelsellaai"
+
+#: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/appl/app.src#STR_QUICKSTART_FILE.String.Text
+#, fuzzy
+msgid  "File"
+msgstr "Lêer"
+
+#: source/appl/app.src#STR_QUICKSTART_STARTCENTER.String.Text
+#, fuzzy
+msgid  "Startcenter"
+msgstr "Beginsentrum"
+
+#: source/appl/app.src#STR_QUICKSTART_RECENTDOC.String.Text
+#, fuzzy
+msgid  "Recent Documents"
+msgstr "Onlangse dokumente"
+
+#: source/appl/app.src#STR_QUERY_UPDATE_LINKS.String.Text
+#, fuzzy
+msgid  "Update all links?"
+msgstr "Werk alle skakels by?"
+
+#: source/appl/app.src#STR_DDE_ERROR.String.Text
+#, fuzzy
+msgid  "DDE link to % for % area % are not available."
+msgstr "DDE-skakel na % vir % ruimte % is nie beskikbaar nie."
+
+#: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
+#, fuzzy
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "Hierdie hiperskakel sal \"%s\" oopmaak. Wil u voortgaan?"
+
+#: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
+msgid  "For security reasons, the hyperlink cannot be executed.\\nThe stated address will not be opened."
+msgstr ""
+
+#: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
+#, fuzzy
+msgid  "Security Warning"
+msgstr "Sekuriteitswaarskuwing"
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
+msgid  "Saving will remove all existing signatures.\\nDo you want to continue saving the document?"
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed.\\nDo you want to save the document?"
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
+#, fuzzy
+msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
+msgstr "Hierdie dokument moet in OpenDocument-lêerformaat gestoor wees voor dit digitaal onderteken kan word."
+
+#: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
+#, fuzzy
+msgid  " (Signed)"
+msgstr " (Onderteken)"
+
+#: source/appl/app.src#STR_STANDARD.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "Standaard"
+
+#: source/appl/app.src#RID_SVXSTR_FILELINK.String.Text
+#, fuzzy
+msgid  "Document"
+msgstr "Dokumente"
+
+#: source/appl/app.src#STR_NONE.String.Text
+#, fuzzy
+msgid  "- None -"
+msgstr "- Geen -"
+
+#: source/appl/app.src#RID_SVXSTR_GRAFIKLINK.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "Grafika"
+
+#: source/appl/app.src#STR_SFX_FILTERNAME_ALL.String.Text
+#, fuzzy
+msgid  "All files (*.*)"
+msgstr "Alle lêers (*.*)"
+
+#: source/appl/app.src#RID_SVXSTR_EDITGRFLINK.String.Text
+msgid  "Link graphics"
+msgstr ""
+
+#: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+#, fuzzy
+msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
+msgstr "'n Geskikte komponentmetode %1\nkon nie gevind word nie.\n\nKontroleer die spelling van die metodenaam."
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
+msgid  "Graphics file cannot be opened"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.String.Text
+msgid  "Graphics file cannot be read"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.String.Text
+msgid  "Unknown graphics format"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.String.Text
+msgid  "This version of the graphics file is not supported"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.String.Text
+msgid  "Graphics filter not found"
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.String.Text
+msgid  "Not enough memory to insert graphic"
+msgstr ""
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PageItem.Text
+#, fuzzy
+msgid  "Contents"
+msgstr "Inhoud"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PageItem.Text
+#, fuzzy
+msgid  "Index"
+msgstr "Indeks"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PageItem.Text
+#, fuzzy
+msgid  "Find"
+msgstr "Vind"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PageItem.Text
+#, fuzzy
+msgid  "Bookmarks"
+msgstr "Boekmerke"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FixedText.Text
+#, fuzzy
+msgid  "~Search term"
+msgstr "~Soekterm"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~Vertoon"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "S~earch term"
+msgstr "So~ekterm"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Find"
+msgstr "~Vind"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Complete words only"
+msgstr "Sle~gs volledige woorde"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CheckBox.Text
+#, fuzzy
+msgid  "Find in ~headings only"
+msgstr "Vind slegs in ~opskrifte"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~Vertoon"
+
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
+#, fuzzy
+msgid  "~Bookmarks"
+msgstr "~Boekmerke"
+
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~Vertoon"
+
+#: source/appl/newhelp.src#STR_HELP_WINDOW_TITLE.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Help"
+msgstr "%PRODUCTNAME-hulp"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.String.Text
+#, fuzzy
+msgid  "Show Navigation Pane"
+msgstr "Vertoon navigasiepaneel"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.String.Text
+#, fuzzy
+msgid  "Hide Navigation Pane"
+msgstr "Versteek navigasiepaneel"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_START.String.Text
+#, fuzzy
+msgid  "First Page"
+msgstr "Eerste bladsy"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PREV.String.Text
+#, fuzzy
+msgid  "Previous Page"
+msgstr "Vorige bladsy"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_NEXT.String.Text
+#, fuzzy
+msgid  "Next Page"
+msgstr "Volgende bladsy"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PRINT.String.Text
+#, fuzzy
+msgid  "Print..."
+msgstr "Druk..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.String.Text
+#, fuzzy
+msgid  "Add to Bookmarks..."
+msgstr "Voeg by boekmerke..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.String.Text
+#, fuzzy
+msgid  "Find on this Page..."
+msgstr "Vind op hierdie bladsy..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.String.Text
+#, fuzzy
+msgid  "HTML Source"
+msgstr "HTML-bronkode"
+
+#: source/appl/newhelp.src#STR_HELP_FIRST_MESSAGE.String.Text
+#, fuzzy
+msgid  "The Help is being started..."
+msgstr "Die hulp word begin..."
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.String.Text
+#, fuzzy
+msgid  "Select Text"
+msgstr "Selekteer teks"
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.String.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "~Kopieer"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.ModalDialog.Text
+#, fuzzy
+msgid  "Add to Bookmarks"
+msgstr "Voeg by boekmerke"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FixedText.Text
+#, fuzzy
+msgid  "Bookmark:"
+msgstr "Boekmerk:"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.String.Text
+#, fuzzy
+msgid  "Rename Bookmark"
+msgstr "Hernoem boekmerk"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MenuItem.Text
+#, fuzzy
+msgid  "Display"
+msgstr "Vertoon"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MenuItem.Text
+#, fuzzy
+msgid  "Rename..."
+msgstr "Hernoem..."
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "Skrap"
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.InfoBox.Message
+#, fuzzy
+msgid  "No topics found."
+msgstr "Geen onderwerpe gevind nie."
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.InfoBox.Message
+#, fuzzy
+msgid  "The text you entered was not found."
+msgstr "Die teks wat u ingetik het, is nie gevind nie."
+
+#: source/appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.String.Text
+#, fuzzy
+msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "~Vertoon %PRODUCTNAME %MODULENAME-hulp tydens laai"
+
+#: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
+msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
+msgstr "Die filter $(FILTER) wat u gekies het, is nie geïnstalleer nie.\nWil u dit nou installeer?"
+
+#: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
+msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
+msgstr "Die filter $(FILTER) wat u gekies het is nie in u weergawe ingesluit nie.\nU kan inligting oor bestellings op ons tuisblad kry."
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
+#, fuzzy
+msgid  "Reduce print data"
+msgstr "Verminder drukdata"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FixedText.Text
+#, fuzzy
+msgid  "Settings for"
+msgstr "Instellings vir"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "~Printer"
+msgstr "~Drukker"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "Print to ~file"
+msgstr "Druk na ~lêer"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Reduce transparency"
+msgstr "~Verminder deursigtigheid"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RadioButton.Text
+#, fuzzy
+msgid  "Auto~matically"
+msgstr "Outo~maties"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RadioButton.Text
+#, fuzzy
+msgid  "~No transparency"
+msgstr "~Geen deursigtigheid"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~gradients"
+msgstr "Verminder ~gradiënte"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RadioButton.Text
+#, fuzzy
+msgid  "Gradient ~stripes"
+msgstr "Gradiënt~strepe"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RadioButton.Text
+#, fuzzy
+msgid  "Intermediate ~color"
+msgstr "Tussen~kleur"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~bitmaps"
+msgstr "Verklein ~biskaarte"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RadioButton.Text
+#, fuzzy
+msgid  "~High print quality"
+msgstr "~Hoë drukkwaliteit"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RadioButton.Text
+#, fuzzy
+msgid  "N~ormal print quality"
+msgstr "N~ormale drukkwaliteit"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RadioButton.Text
+#, fuzzy
+msgid  "Reso~lution"
+msgstr "Reso~lusie"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "72 DPI"
+msgstr "72 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (faks)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "200 DPI (default)"
+msgstr "200 DPI (verstek)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "600 DPI"
+msgstr "600 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "Include transparent ob~jects"
+msgstr "Sluit deursigtige ob~jekte in"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CheckBox.Text
+#, fuzzy
+msgid  "Con~vert colors to grayscale"
+msgstr "Ska~kel kleure om na grysskaal"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FixedLine.Text
+#, fuzzy
+msgid  "Printer warnings"
+msgstr "Drukkerwaarskuwings"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CheckBox.Text
+#, fuzzy
+msgid  "P~aper size"
+msgstr "P~apiergrootte"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CheckBox.Text
+#, fuzzy
+msgid  "Pap~er orientation"
+msgstr "Papi~eroriëntasie"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Transparency"
+msgstr "Deur~sigtigheid"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.ModalDialog.Text
+#, fuzzy
+msgid  "Warning"
+msgstr "Waarskuwing"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+#, fuzzy
+msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
+msgstr "U dokument bevat deursigtige objekte.\nBy sekere\ndrukkers kan dit tot langer druktye lei. Moet die graad van deursigtigheid\nverminder word?"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
+#, fuzzy
+msgid  "~Yes"
+msgstr "~Ja"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PushButton.Text
+#, fuzzy
+msgid  "~No"
+msgstr "~Nee"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "~Cancel"
+msgstr "~Kanselleer"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
+#, fuzzy
+msgid  "~Do not show warning again"
+msgstr "~Moenie hierdie waarskuwing weer vertoon nie"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Style Catalog"
+msgstr "Stylkatalogus"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "~Organiseerder..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PushButton.Text
+#, fuzzy
+msgid  "~Delete..."
+msgstr "~Skrap..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Modify..."
+msgstr "~Wysig..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PushButton.Text
+#, fuzzy
+msgid  "~New..."
+msgstr "~Nuwe..."
+
+#: source/dialog/templdlg.src#STR_STYLE_ELEMTLIST.String.Text
+msgid  "Style List"
+msgstr ""
+
+#: source/dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.String.Text
+#, fuzzy
+msgid  "Hierarchical"
+msgstr "Hiërargies"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.DockingWindow.Text
+#, fuzzy
+msgid  "Styles and Formatting"
+msgstr "Style en formatering"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Fill Format Mode"
+msgstr "Invulformaat-modus"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Style from Selection"
+msgstr "Nuwe styl uit seleksie"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Update Style"
+msgstr "Werk styl by"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FixedLine.Text
+msgid  "File encryption password"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Enter password to open"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Reenter password to open"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FixedLine.Text
+msgid  "File sharing password"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Enter password to modify"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Reenter password to modify"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FixedLine.Text
+msgid  "File sharing options"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CheckBox.Text
+msgid  "~Open file read-only"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CheckBox.Text
+msgid  "Record ~changes"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.String.Text
+msgid  "~Protect..."
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.String.Text
+msgid  "~Unprotect..."
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
+msgid  "Protect Records"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.String.Text
+msgid  "Unprotect Records"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.String.Text
+msgid  "Incorrect password"
+msgstr ""
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "New versions"
+msgstr "Nuwe weergawes"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PushButton.Text
+#, fuzzy
+msgid  "Save ~New Version"
+msgstr "Stoor ~nuwe weergawe"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CheckBox.Text
+#, fuzzy
+msgid  "~Always save a version on closing"
+msgstr "S~toor altyd 'n weergawe by sluiting"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "Existing versions"
+msgstr "Bestaande weergawes"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time"
+msgstr "Datum en tyd"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by"
+msgstr "Gestoor deur"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FixedText.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "Opmerkings"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CancelButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "Sluit"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PushButton.Text
+#, fuzzy
+msgid  "Open"
+msgstr "Open"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PushButton.Text
+#, fuzzy
+msgid  "~Show..."
+msgstr "~Vertoon..."
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~Skrap"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PushButton.Text
+#, fuzzy
+msgid  "Compare"
+msgstr "Vergelyk"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.HelpButton.Text
+#, fuzzy
+msgid  "Versions of"
+msgstr "Weergawes van"
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time : "
+msgstr "Datum en tyd : "
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by "
+msgstr "Gestoor deur "
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~Sluit"
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.HelpButton.Text
+#, fuzzy
+msgid  "Insert Version Comment"
+msgstr "Voeg weergaweopmerking in"
+
+#: source/dialog/versdlg.src#DLG_COMMENTS.String.Text
+#, fuzzy
+msgid  "Version comment"
+msgstr "Weergawekommentaar"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+#, fuzzy
+msgid  "~Name"
+msgstr "~Naam"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+#, fuzzy
+msgid  "~AutoUpdate"
+msgstr "~OutoBywerking"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+#, fuzzy
+msgid  "Ne~xt Style"
+msgstr "Vol~gende styl"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
+#, fuzzy
+msgid  "Linked with"
+msgstr "Gekoppel aan"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Category"
+msgstr "~Kategorie"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
+#, fuzzy
+msgid  "Contains"
+msgstr "Bevat"
+
+#: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+#, fuzzy
+msgid  "Current version"
+msgstr "Huidige weergawe"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "Uitvoer"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "Voeg in"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+#, fuzzy
+msgid  "~Insert"
+msgstr "~Voeg in"
+
+#: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+#, fuzzy
+msgid  "<All formats>"
+msgstr "<Alle formate>"
+
+#: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+#, fuzzy
+msgid  "~Automatic file name extension"
+msgstr "~Outomatiese veldnaamuitbreiding"
+
+#: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+#, fuzzy
+msgid  "~Selection"
+msgstr "~Seleksie"
+
+#: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
+#, fuzzy
+msgid  "~Link"
+msgstr "~Skakel"
+
+#: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+#, fuzzy
+msgid  "Pr~eview"
+msgstr "Voo~rskou"
+
+#: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "~Leesalleen"
+
+#: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+#, fuzzy
+msgid  "Save with ~password"
+msgstr "Stoor met ~wagwoord"
+
+#: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+#, fuzzy
+msgid  "Edit ~filter settings"
+msgstr "Redigeer ~filterinstellings"
+
+#: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+#, fuzzy
+msgid  "~Play"
+msgstr "Spee~l"
+
+#: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+#, fuzzy
+msgid  "Sto~p"
+msgstr "Sto~p"
+
+#: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+#, fuzzy
+msgid  "~Open"
+msgstr "~Open"
+
+#: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "~Stoor"
+
+#: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Style:"
+msgstr "Styl:"
+
+#: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+#, fuzzy
+msgid  "~Templates:"
+msgstr "~Sjablone:"
+
+#: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+#, fuzzy
+msgid  "~Version:"
+msgstr "~Weergawe:"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.ModelessDialog.Text
+#, fuzzy
+msgid  "Find on this Page"
+msgstr "Vind op hierdie bladsy"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "~Search for"
+msgstr "~Soek vir"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Whole words only"
+msgstr "~Slegs hele woorde"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CheckBox.Text
+#, fuzzy
+msgid  "~Match case"
+msgstr "~Selfde kas"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CheckBox.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "Vou ~om"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CheckBox.Text
+#, fuzzy
+msgid  "~Backwards"
+msgstr "~Terugwaarts"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PushButton.Text
+#, fuzzy
+msgid  "~Find"
+msgstr "~Vind"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CancelButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~Sluit"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.String.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "Vou ~om"
+
+#: source/dialog/passwd.src#DLG_PASSWD.ModalDialog.Text
+#, fuzzy
+msgid  "Enter Password"
+msgstr "Tik wagwoord in"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+#, fuzzy
+msgid  "~User"
+msgstr "~Gebruiker"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+#, fuzzy
+msgid  "~Password"
+msgstr "Wagwoord"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+#, fuzzy
+msgid  "~Confirm"
+msgstr "~Bevestig"
+
+#: source/dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FixedLine.Text
+#, fuzzy
+msgid  "Password"
+msgstr "Wagwoord"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FixedText.Text
+#, fuzzy
+msgid  "P~assword"
+msgstr "Wagwoord"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FixedText.Text
+#, fuzzy
+msgid  "Confir~m"
+msgstr "~Bevestig"
+
+#: source/dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.String.Text
+#, fuzzy
+msgid  "Password"
+msgstr "Wagwoord"
+
+#: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+msgid  "%PRODUCTNAME document"
+msgstr "%PRODUCTNAME-dokument"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+msgid  "~Title"
+msgstr "~Titel"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+msgid  "~Subject"
+msgstr "~Onderwerp"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+msgid  "~Keywords"
+msgstr "~Sleutelwoorde"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+msgid  "~Comments"
+msgstr "~Opmerkings"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+msgid  "Type:"
+msgstr "Tipe:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+msgid  "~Read-only"
+msgstr "~Leesalleen"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+msgid  "Location:"
+msgstr "Ligging:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+msgid  "Size:"
+msgstr "Grootte:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+msgid  "Created:"
+msgstr "Geskep:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+msgid  "Modified:"
+msgstr "Gewysig:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+msgid  "Digitally signed:"
+msgstr "Digitaal onderteken:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+msgid  "Digital Signature..."
+msgstr "Digitale handtekening..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+msgid  "Multiply signed document"
+msgstr "Vermenigvuldig ondergetekende dokument"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+msgid  "Last printed:"
+msgstr "Laas gedruk:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+msgid  "Total editing time:"
+msgstr "Totale redigeertyd:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+msgid  "Revision number:"
+msgstr "Hersiennommer:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+msgid  "Reset"
+msgstr "Stel terug"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+msgid  "~Apply user data"
+msgstr "~Pas gebruikerdata toe"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+msgid  "Template:"
+msgstr "Sjabloon:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+msgid  "unknown"
+msgstr "onbekend"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.String.Text
+msgid  "File Name"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+msgid  "~Info fields..."
+msgstr "~Inligtingsvelde..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+msgid  "Do not refresh automatically"
+msgstr "Moenie outomaties verfris nie"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+msgid  "Refresh this document"
+msgstr "Verfris hierdie dokument"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+msgid  "every"
+msgstr "elke"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+msgid  "seconds"
+msgstr "sekondes"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+msgid  "Redirect from this document"
+msgstr "Stuur vanaf hierdie dokument aan"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+msgid  "after"
+msgstr "na"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+msgid  "seconds"
+msgstr "sekondes"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+msgid  "to URL"
+msgstr "aan URL"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+msgid  "to frame"
+msgstr "na raam"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "As u die opsie \"%PLACEHOLDER%\" kies, moet u 'n URL intik."
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+msgid  "~Properties"
+msgstr "~Eienskappe"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+msgid  "Name"
+msgstr "Naam"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+msgid  "Type"
+msgstr "Soort"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+msgid  "Value"
+msgstr "Waarde"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+msgid  "~Add"
+msgstr "~Voeg by"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+msgid  "Property Name"
+msgstr "Eienskapnaam"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+msgid  "Checked by"
+msgstr "Gekontroleer deur"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+msgid  "Client"
+msgstr "Kliënt"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+msgid  "Date completed"
+msgstr "Datum voltooi"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+msgid  "Department"
+msgstr "Afdeling"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+msgid  "Destinations"
+msgstr "Bestemmings"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+msgid  "Disposition"
+msgstr "Disposisie"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+msgid  "Division"
+msgstr "Verdeling"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+msgid  "Document number"
+msgstr "Dokumentnommer"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+msgid  "Editor"
+msgstr "Redakteur"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+msgid  "E-Mail"
+msgstr "E-pos"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+msgid  "Forward to"
+msgstr "Gaan vorentoe na"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+msgid  "Group"
+msgstr "Groepeer"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+msgid  "Info"
+msgstr "Inligting"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+msgid  "Language"
+msgstr "Taal"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+msgid  "Mailstop"
+msgstr "Posstop"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+msgid  "Matter"
+msgstr "Materie"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+msgid  "Office"
+msgstr "Kantoor"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+msgid  "Owner"
+msgstr "Eienaar"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+msgid  "Project"
+msgstr "Projek"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+msgid  "Publisher"
+msgstr "Uitgewer"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+msgid  "Purpose"
+msgstr "Doel"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+msgid  "Received from"
+msgstr "Ontvang deur"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+msgid  "Recorded by"
+msgstr "Opgeneem deur"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+msgid  "Recorded date"
+msgstr "Opgeneemde datum"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+msgid  "Reference"
+msgstr "Verwysing"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+msgid  "Source"
+msgstr "Bron"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+msgid  "Status"
+msgstr "Status"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+msgid  "Telephone number"
+msgstr "Telefoonnommer"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+msgid  "Typist"
+msgstr "Tikster"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+msgid  "URL"
+msgstr "URL"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+msgid  "Text"
+msgstr "Teks"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+msgid  "DateTime"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+msgid  "Date"
+msgstr "Datum"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+msgid  "Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+msgid  "Number"
+msgstr "Nommer"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+msgid  "Yes or no"
+msgstr "Ja of nee"
+
+#: source/dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.String.Text
+msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+msgid  "Yes"
+msgstr "Ja"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+msgid  "No"
+msgstr "Nee"
+
+#: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+msgid  "Remove Property"
+msgstr "Verwyder eienskap"
+
+#: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
+msgid  "The value entered does not match the specified type.\\nThe value will be stored as text."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+msgid  "Properties of "
+msgstr "Eienskappe van "
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+msgid  "General"
+msgstr "Algemeen"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+msgid  "Description"
+msgstr "Beskrywing"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+msgid  "Custom Properties"
+msgstr "Doelgemaakte eienskappe"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+msgid  "Internet"
+msgstr "Internet"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
+msgid  "Security"
+msgstr "Sekuriteit"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
+msgid  "Edit Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
+msgid  "Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
+msgid  "~Negative"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
+msgid  "~Years"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
+msgid  "~Months"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
+msgid  "~Days"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
+msgid  "H~ours"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
+msgid  "Min~utes"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+#, fuzzy
+msgid  "~Seconds"
+msgstr "sekondes"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
+msgid  "Millise~conds"
+msgstr ""
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+#, fuzzy
+msgid  "Edit Field Names"
+msgstr "Redigeer veldname"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+#, fuzzy
+msgid  "Names"
+msgstr "Name"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+#, fuzzy
+msgid  "Create Style"
+msgstr "Skep styl"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+#, fuzzy
+msgid  "Style name"
+msgstr "Stylnaam"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+msgid  "Style already exists. Overwrite?"
+msgstr ""
+
+#: source/dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FloatingWindow.Text
+#, fuzzy
+msgid  "Record Macro"
+msgstr "Neem makro op"
+
+#: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
+#, fuzzy
+msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr "Wil u werklik die opname kanselleer? Alle stappe wat tot op hierdie stadium opgeneem is, sal verlore gaan."
+
+#: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
+#, fuzzy
+msgid  "Cancel Recording"
+msgstr "Kanselleer opname"
+
+#: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
+#, fuzzy
+msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
+msgstr "%PRODUCTNAME kon nie 'n werkende e-posopstelling vind nie. Stoor asseblief hierdie dokument plaaslik en heg dit van binne u e-poskliënt af aan."
+
+#: source/dialog/dialog.src#STR_RESET.String.Text
+msgid  "~Reset"
+msgstr "~Stel terug"
+
+#: source/dialog/dialog.src#STR_APPLY.String.Text
+msgid  "Apply"
+msgstr "Pas toe"
+
+#: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+msgid  "Organizer"
+msgstr "Organiseerder"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+msgid  "This name is already in use."
+msgstr "Hierdie naam is reeds in gebruik."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+msgid  "This Style does not exist."
+msgstr "Hierdie styl bestaan nie."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
+msgid  "This Style cannot be used as a base Style,\\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
+msgid  "Name already exists as a default Style.\\nPlease choose another name."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+msgid  "Do you really want to delete Style $1?"
+msgstr "Wil u werklik styl $1 skrap?"
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
+msgid  "You are deleting an applied Style!\\n"
+msgstr "U is besig om 'n toegepaste styl te skrap!\n"
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+msgid  "New..."
+msgstr "Nuwe..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+msgid  "Modify..."
+msgstr "Wysig..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+msgid  "Delete..."
+msgstr "Skrap..."
+
+#: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+msgid  "Navigator"
+msgstr "Navigator"
+
+#: source/dialog/dialog.src#SID_TASKPANE.String.Text
+msgid  "Task Pane"
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+msgid  "Faulty password confirmation"
+msgstr "Foutiewe wagwoordbevestiging"
+
+#: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+msgid  "Send"
+msgstr "Stuur"
+
+#: source/dialog/taskpane.src#STR_SFX_DOCK.String.Text
+msgid  "Dock"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_UNDOCK.String.Text
+msgid  "Undock"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.String.Text
+#, fuzzy
+msgid  "View"
+msgstr "Bekyk"
+
+#: source/dialog/taskpane.src#STR_SFX_TASKS.String.Text
+msgid  "Tasks"
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr "Hierdie dokument bevat dalk formatering of inhoud wat nie in die %FORMATNAME-lêerformaat gestoor kan word nie. Wil u die dokument in elk geval in hierdie formaat stoor?\n\nGebruik die jongste ODF -lêerformaat om te verseker dat alle formatering en inhoud korrek gestoor word."
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+msgid  "~Keep Current Format"
+msgstr "~Behou huidige formaat"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+msgid  "~Save in ODF Format"
+msgstr "~Stoor in ODF-formaat"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+msgid  "~More Information..."
+msgstr "~Meer inligting..."
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+msgid  "~Ask when not saving in ODF format"
+msgstr "~Vra wanneer nie in ODF-formaat stoor nie"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
+msgid  "My Templates"
+msgstr "My sjablone"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
+msgid  "Business Correspondence"
+msgstr "Sakekorrespondensie"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
+msgid  "Other Business Documents"
+msgstr "Ander sakedokumente"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
+msgid  "Personal Correspondence and Documents"
+msgstr "Persoonlike korrespondensie en dokumente"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
+msgid  "Forms and Contracts"
+msgstr "Vorms en kontrakte"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
+msgid  "Finances"
+msgstr "Finansies"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
+msgid  "Education"
+msgstr "Opleiding"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
+msgid  "Presentation Backgrounds"
+msgstr "Aanbiedingsagtergronde"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
+msgid  "Presentations"
+msgstr "Voorleggings"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
+msgid  "Miscellaneous"
+msgstr "Allerlei"
+
+#: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
+msgid  "The templates are being initialized for first-time usage."
+msgstr "Die sjablone word vir eerste gebruik geïnisialiseer."
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+msgid  "Templates"
+msgstr "Sjablone"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+msgid  "New template"
+msgstr "Nuwe sjabloon"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
+msgid  "Templates"
+msgstr "Sjablone"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+msgid  "~Categories"
+msgstr "~Kategorieë"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+msgid  "~Templates"
+msgstr "~Sjablone"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Redigeer"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+msgid  "~Organizer..."
+msgstr "~Organiseerder..."
+
+#: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
+msgid  "Saving in external formats may have caused\\n information loss. Do you still want to close?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
+msgid  "Name already in use.\\nDo you want to overwrite document template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_REGION.String.Text
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "Is u seker u wil die gebied \"$1\" skrap?"
+
+#: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "Is u seker u wil die inskrywing \"$1\" skrap?"
+
+#: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
+msgid  "The category is not empty.\\nDelete anyway?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
+msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
+msgstr "Die dokument \"$(DOC)\" is gewysig.\nWil u u wysigings stoor?"
+
+#: source/doc/doc.src#STR_STYLES.String.Text
+msgid  "Styles"
+msgstr "Style"
+
+#: source/doc/doc.src#STR_MACROS.String.Text
+msgid  "Macros"
+msgstr "Makro's"
+
+#: source/doc/doc.src#STR_CONFIG.String.Text
+msgid  "Configuration"
+msgstr "Opstelling"
+
+#: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
+msgid  "Styles in "
+msgstr "Style in "
+
+#: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+msgid  "Printing Styles"
+msgstr "Drukstyle"
+
+#: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+msgid  "The print job could not be started."
+msgstr "Die druktaak kon nie begin word nie."
+
+#: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+msgid  "Copy"
+msgstr "Kopieer"
+
+#: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+msgid  "The template could not be opened."
+msgstr "Die sjabloon kon nie oopgemaak word nie."
+
+#: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+msgid  "Document already open for editing."
+msgstr "Dokument reeds oop vir redigering."
+
+#: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+msgid  "Error recording document "
+msgstr "Fout by opname van dokument "
+
+#: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+msgid  "Templates"
+msgstr "Sjablone"
+
+#: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
+msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
+msgstr "Sjabloon \"$1\" kon nie gekopieer word nie. \n'n Sjabloon met hierdie naam bestaan miskien reeds."
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+msgid  "The template \"$1\" can not be deleted."
+msgstr "Die sjabloon \"$1\" kan nie geskrap word nie."
+
+#: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+msgid  "Error moving template \"$1\"."
+msgstr "Sjabloon \"$1\" kon nie geskuif word nie."
+
+#: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+msgid  "The update could not be saved."
+msgstr "Die bywerking kon nie gestoor word nie."
+
+#: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "Fout by stoor van sjabloon "
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+msgid  "Error renaming template."
+msgstr "Die sjabloon kon nie hernoem word nie."
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+msgid  "Error renaming template category."
+msgstr "Die sjabloonkategorie kon nie hernoem word nie."
+
+#: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+msgid  "Please specify a name."
+msgstr "Spesifiseer asseblief 'n naam."
+
+#: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
+msgid  "Please specify a unique name.\\nEntries must not be case specific."
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "Moet die sjabloon \"$(TEXT)\" die verstek sjabloon word?"
+
+#: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+msgid  "Do you want to reset the default template?"
+msgstr "Wil u die verstek sjabloon terugstel?"
+
+#: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
+msgid  "Template directory\\n$(DIR)\\ndoes not exist."
+msgstr ""
+
+#: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+msgid  "Document info cannot be read."
+msgstr "Dokumentinligting is nie leesbaar nie."
+
+#: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+msgid  "The selected file has an incorrect format."
+msgstr "Die geselekteerde lêer het 'n foutiewe formaat."
+
+#: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr "Dokumente kan nie in $(FORMAT)-formaat gestoor word nie. Wil u\n u veranderings met die $(OWNFORMAT)-formaat stoor?"
+
+#: source/doc/doc.src#STR_SAVEDOC.String.Text
+msgid  "~Save"
+msgstr "~Stoor"
+
+#: source/doc/doc.src#STR_UPDATEDOC.String.Text
+msgid  "~Update"
+msgstr "~Bywerk"
+
+#: source/doc/doc.src#STR_SAVEASDOC.String.Text
+msgid  "Save ~As..."
+msgstr "Stoor ~as..."
+
+#: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+msgid  "Save Copy ~as..."
+msgstr "Stoor kopie ~as..."
+
+#: source/doc/doc.src#STR_CLOSEDOC.String.Text
+msgid  "~Close"
+msgstr "~Sluit"
+
+#: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
+msgid  "~Close & Return to "
+msgstr "~Sluit en keer terug na "
+
+#: source/doc/doc.src#STR_WIZARD.String.Text
+msgid  " AutoPilot"
+msgstr " OutoLoods"
+
+#: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+msgid  "Configurations"
+msgstr "Opstellings"
+
+#: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+msgid  "%PRODUCTNAME Basic libraries"
+msgstr "%PRODUCTNAME Basic-biblioteke"
+
+#: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "Moet die \"$(ARG1)\"-styl vervang word?"
+
+#: source/doc/doc.src#STR_DOC_LOADING.String.Text
+msgid  "Loading Document"
+msgstr "Dokument word gelaai"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+msgid  "Connection to: $(HOST). Waiting for response..."
+msgstr "Besig om te koppel aan: $(HOST). Wag op antwoord..."
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
+msgid  "Opening $(TARGET) at $(HOST)"
+msgstr "Besig om $(TARGET) by $(HOST) oop te maak"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
+msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "$(TARGET) vanaf $(HOST) word gelaai. Gelaai: $(BYTE)"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+msgid  "Disconnected"
+msgstr "Nie verbind nie"
+
+#: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
+msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-only?"
+msgstr ""
+
+#: source/doc/doc.src#STR_EDIT.String.Text
+msgid  "Edit"
+msgstr "Redigeer"
+
+#: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+msgid  "%PRODUCTNAME Documents"
+msgstr "%PRODUCTNAME-dokumente"
+
+#: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+msgid  "Propert~ies..."
+msgstr "Eien~skappe..."
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
+msgid  "HTML (FrameSet)"
+msgstr "HTML (RaamStelling)"
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+msgid  "%PRODUCTNAME Frame Document"
+msgstr "%PRODUCTNAME-raamdokument"
+
+#: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "Die sjabloon \"$(TEMPLATE)\" is nie in sy oorspronklike ligging gevind nie. 'n Sjabloon met selfde naam bestaan by \"$(FOUND)\". Moet hierdie sjabloon in die toekoms vir vergelykings gebruik word?"
+
+#: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "Die sjabloon \"$(TEMPLATE)\" is nie gevind nie. Moet die sjabloon in die toekoms gesoek word wanneer u die dokument oopmaak?"
+
+#: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+msgid  "Automatically saved version"
+msgstr "Outomaties gestoorde weergawe"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+msgid  "Text Document"
+msgstr "Teksdokument"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+msgid  "HTML Document"
+msgstr "HTML-dokument"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+msgid  "Master Document"
+msgstr "Meesterdokument"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+msgid  "Spreadsheet"
+msgstr "Sigblad"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+msgid  "Presentation"
+msgstr "Voorlegging"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+msgid  "Drawing"
+msgstr "Tekening"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+msgid  "Message"
+msgstr "Boodskap"
+
+#: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+msgid  "~Discard"
+msgstr "~Verwerp"
+
+#: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
+msgid  "Access to the current data medium not possible."
+msgstr "Toegang tot die huidige datamedium is nie moontlik nie."
+
+#: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
+msgid  "Insert the next data carrier and click OK."
+msgstr "Sit die volgende datadraer in en kliek OK."
+
+#: source/doc/doc.src#STR_OBJECT.String.Text
+msgid  "Object"
+msgstr "Objek"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+msgid  "Run Macro"
+msgstr "Laat loop makro"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+msgid  "This document contains macros. $(TEXT)"
+msgstr "Hierdie dokument bevat makro's. $(TEXT)"
+
+#: source/doc/doc.src#BTN_OK.String.Text
+msgid  "Run"
+msgstr "Laat loop"
+
+#: source/doc/doc.src#BTN_CANCEL.String.Text
+msgid  "Do Not Run"
+msgstr "Moenie laat loop nie"
+
+#: source/doc/doc.src#FT_CANCEL.String.Text
+msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr "Volgens die veiligheidsinstellings moet die makro's in hierdie dokument nie laat loop word nie. Wil u dit nogtans laat loop?"
+
+#: source/doc/doc.src#FT_OK.String.Text
+msgid  "Do you want to allow these macros to be run?"
+msgstr "Wil u hierdie makro's laat loop?"
+
+#: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+msgid  "Export as PDF"
+msgstr "Uitvoer as PDF"
+
+#: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+msgid  "Export..."
+msgstr "Voer uit..."
+
+#: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+msgid  "Export"
+msgstr "Uitvoer"
+
+#: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+msgid  "Add this directory to the list of secure paths: "
+msgstr "Voeg hierdie gids by die lys veilige paaie: "
+
+#: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+msgid  "File format:"
+msgstr "Lêerformaat:"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
+msgid  "This document contains:\\n\\n"
+msgstr "Hierdie dokument bevat:\n\n"
+
+#: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
+msgid  "Recorded changes"
+msgstr "Aangebringde veranderinge"
+
+#: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+msgid  "Notes"
+msgstr "Notas"
+
+#: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+msgid  "Document versions"
+msgstr "Dokumentweergawes"
+
+#: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+msgid  "Fields"
+msgstr "Velde"
+
+#: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
+msgid  "Linked data..."
+msgstr "Geskakelde data..."
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+msgid  "Do you want to continue saving the document?"
+msgstr "Wil u voortgaan om die dokument te stoor?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+msgid  "Do you want to continue printing the document?"
+msgstr "Wil u voortgaan om die dokument te druk?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+msgid  "Do you want to continue signing the document?"
+msgstr "Wil u voortgaan om die dokument te onderteken?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+msgid  "Do you want to continue creating a PDF file?"
+msgstr "Wil u voortgaan om 'n PDF-lêer te skep?"
+
+#: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr "Indien u nie die oorspronklike dokument wil oorheenskryf nie, moet u u werk onder 'n nuwe lêernaam stoor."
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+msgid  "Some template files are protected and can not be deleted."
+msgstr "Sommige sjabloonlêers word beskerm en kan nie geskrap word nie."
+
+#: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
+msgid  "Info %1"
+msgstr "Inligting %1"
+
+#: source/doc/doc.src#STR_SHARED.String.Text
+msgid  " (shared)"
+msgstr " (gedeel)"
+
+#: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr "Die dokumentformaatweergawe is gestel as ODF 1.1 (OpenOffice.org 2.x) in Nuts - Opsies - Laai/stoor - Algemeen. Om dokumente te onderteken, kort u ODF 1.2 (OpenOffice.org 3.x)."
+
+#: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\\nDo you want to save the document?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgstr "Die sjabloon '$(ARG1)' waarop hierdie dokument gebaseer is, is gewysig. Wil u stylgebaseerde formatering bywerk op grond van die gewysigde sjabloon?"
+
+#: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+msgid  "~Update Styles"
+msgstr "~Werk style by"
+
+#: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+msgid  "~Keep Old Styles"
+msgstr "~Behou ou style"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
+msgid  "Template Management"
+msgstr "Sjabloonbestuur"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "Sluit"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
+msgid  "~File..."
+msgstr "~Lêer..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
+msgid  "~Address Book..."
+msgstr "~Adresboek..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "Sjablone"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Documents"
+msgstr "Dokumente"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "Sjablone"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Documents"
+msgstr "Dokumente"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
+msgid  "Commands"
+msgstr "Bevele"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
+msgid  "~New"
+msgstr "~Nuwe"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
+msgid  "~Delete"
+msgstr "~Skrap"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
+msgid  "~Edit"
+msgstr "~Redigeer"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
+msgid  "Import Template..."
+msgstr "Voer sjabloon in..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
+msgid  "Export Template..."
+msgstr "Voer sjabloon uit..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
+msgid  "~Print"
+msgstr "~Druk"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
+msgid  "Printer Settings..."
+msgstr "Drukkerinstellings..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
+msgid  "Update"
+msgstr "Bywerk"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
+msgid  "Set As Default Template"
+msgstr "Stel as verstek sjabloon"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
+msgid  "Reset Default Template"
+msgstr "Stel verstek sjabloon terug"
+
+#: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
+msgid  "New"
+msgstr "Nuwe"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
+msgid  "~Categories"
+msgstr "~Kategorieë"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
+msgid  "T~emplates"
+msgstr "Sjablon~e"
+
+#: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
+msgid  "~More"
+msgstr "~Meer"
+
+#: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
+msgid  "Pre~view"
+msgstr "~Voorskou"
+
+#: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
+msgid  "Description"
+msgstr "Beskrywing"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
+msgid  "Te~xt"
+msgstr "Te~ks"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
+msgid  "~Frame"
+msgstr "~Raam"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
+msgid  "~Pages"
+msgstr "~Bladsye"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
+msgid  "N~umbering"
+msgstr "N~ommering"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
+msgid  "~Overwrite"
+msgstr "~Oorheenskryf"
+
+#: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
+msgid  "From File..."
+msgstr "Vanaf lêer..."
+
+#: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
+msgid  "Load Styles"
+msgstr "Laai style"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
+msgid  "~Title"
+msgstr "~Titel"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
+msgid  "Subject"
+msgstr "Onderwerp"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
+msgid  "~Key words"
+msgstr "~Sleutelwoorde"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
+msgid  "~Description"
+msgstr "~Beskrywing"
+
+#: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+msgid  "Configuration Menu"
+msgstr "Opstelkieslys"
+
+#: source/menu/menu.src#STR_MENU_ADDONS.String.Text
+msgid  "~Add-Ons"
+msgstr "~Byvoegsels"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
+msgid  "Cu~t"
+msgstr "Kni~p"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
+msgid  "~Copy"
+msgstr "~Kopieer"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
+msgid  "~Paste"
+msgstr "~Plak"
+
+#: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+msgid  "Leave Full-Screen Mode"
+msgstr "Verlaat volskermmodus"
+
+#: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
+msgid  "Add-~On Help"
+msgstr "Byvoegsel-~hulp"
+
+#: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
+msgid  "Synonyms"
+msgstr ""
+
+#: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
+msgid  "(none)"
+msgstr ""
+
+#: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
+msgid  "~Thesaurus..."
+msgstr ""
+
+#: source/view/view.src#STR_NODEFPRINTER.String.Text
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr "Geen verstek drukker gevind nie.\nKies asseblief 'n drukker en probeer weer."
+
+#: source/view/view.src#STR_NOSTARTPRINTER.String.Text
+msgid  "Could not start printer.\\nPlease check your printer configuration."
+msgstr "Kon nie drukker aansit nie.\nGaan asseblief u drukkeropstelling na."
+
+#: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
+msgstr "Hierdie dokument is vir drukker $1 geformateer. Die gespesifiseerde drukker is nie beskikbaar nie.\nWil u die standaard drukker $2 gebruik?"
+
+#: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+msgid  "Options..."
+msgstr "Opsies..."
+
+#: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+msgid  "Printer Options"
+msgstr "Drukkeropsies"
+
+#: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+msgid  "Printer busy"
+msgstr "Drukker besig"
+
+#: source/view/view.src#STR_ERROR_PRINT.String.Text
+msgid  "Error while printing"
+msgstr "Fout tydens druk"
+
+#: source/view/view.src#STR_PRINTING.String.Text
+msgid  "Printing"
+msgstr "Druk"
+
+#: source/view/view.src#STR_PAGE.String.Text
+msgid  "Page "
+msgstr "Bladsy "
+
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "Fout by stoor van sjabloon "
+
+#: source/view/view.src#STR_READONLY.String.Text
+msgid  " (read-only)"
+msgstr " (leesalleen)"
+
+#: source/view/view.src#STR_PRINT_NEWORI.String.Text
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr "Die bladsygrootte en -oriëntering is gewysig.\nMoet die nuwe instellings \nin die aktiewe dokument gestoor word?"
+
+#: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
+msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
+msgstr "Die bladsygrootte is gewysig.\nMoet die nuwe instellings in die \naktiewe dokument gestoor word?"
+
+#: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr "Die bladsygrootte en -oriëntering is gewysig.\nMoet die nuwe instellings \nin die aktiewe dokument gestoor word?"
+
+#: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Titel:</b><dd>$(TITEL)<dt><b>Onderwerp:</b><dd>$(THEME)<dt><b>Sleutelwoorde:</b><dd>$(KEYWORDS)<dt><b>Beskrywing:</b><dd>$(TEXT)</dl></font></body></html>"
+
+#: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Geen dokumenteienskappe gevind nie.</B></FONT></P></BODY></HTML>"
+
+#: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
+msgid  "The document cannot be closed because a\\n print job is being carried out."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "Drukmonitor"
+
+#: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
+msgid  "is being printed on"
+msgstr "word nou gedruk op"
+
+#: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
+msgid  "is being prepared for printing"
+msgstr "word nou voorberei vir druk"
+
+#: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+
+#: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
+msgstr "Hierdie dokument kan nie geredigeer word nie, moontlik omdat die toegangsregte ontbreek. Wil u 'n kopie van die dokument redigeer?"
+
+#: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+msgid  " (repaired document)"
+msgstr "  (herstelde dokument)"
+
+#: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr "%PRODUCTNAME kon nie 'n webblaaier op u stelsel vind nie. Kontroleer u werkskermvoorkeure of installeer 'n webblaaier (byvoorbeeld Mozilla) in die verstek ligging wat deur die blaaier se installeerder voorgestel word."

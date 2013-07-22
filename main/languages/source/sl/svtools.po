@@ -1,0 +1,3088 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.String.Text
+msgid  "Row: %1, Column: %2"
+msgstr "Vrstica: %1, stolpec: %2"
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.String.Text
+msgid  ", Type: %1, URL: %2"
+msgstr ", vrsta: %1, URL: %2"
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_FOLDER.String.Text
+msgid  "Folder"
+msgstr "Mapa"
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_FILE.String.Text
+msgid  "File"
+msgstr "Datoteka"
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.String.Text
+msgid  "Empty Field"
+msgstr "Prazno polje"
+
+#: source/contnr/templwin.src#STR_SVT_NEWDOC.String.Text
+msgid  "New Document"
+msgstr "Nov dokument"
+
+#: source/contnr/templwin.src#STR_SVT_MYDOCS.String.Text
+msgid  "My Documents"
+msgstr "Moji dokumenti"
+
+#: source/contnr/templwin.src#STR_SVT_TEMPLATES.String.Text
+msgid  "Templates"
+msgstr "Predloge"
+
+#: source/contnr/templwin.src#STR_SVT_SAMPLES.String.Text
+msgid  "Samples"
+msgstr "Vzorci"
+
+#: source/contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.ToolBoxItem.Text
+msgid  "Back"
+msgstr "Nazaj"
+
+#: source/contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.ToolBoxItem.Text
+msgid  "Up One Level"
+msgstr "Eno raven višje"
+
+#: source/contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.ToolBoxItem.Text
+msgid  "Print"
+msgstr "Natisni"
+
+#: source/contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.ToolBoxItem.Text
+msgid  "Document Properties"
+msgstr "Lastnosti dokumenta"
+
+#: source/contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.ToolBoxItem.Text
+msgid  "Preview"
+msgstr "Predogled"
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.ModalDialog.Text
+msgid  "Templates and Documents"
+msgstr "Predloge in dokumenti"
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.FixedText.Text
+msgid  "~Get more templates online..."
+msgstr "~Prenesite dodatne predloge s spleta ..."
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.PushButton.Text
+msgid  "Organi~ze..."
+msgstr "Organi~ziraj ..."
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Uredi"
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.OKButton.Text
+msgid  "~Open"
+msgstr "~Odpri"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_TITLE.ItemList.item
+msgid  "Title"
+msgstr "Naslov"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_FROM.ItemList.item
+msgid  "By"
+msgstr "Od"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DATE.ItemList.item
+msgid  "Date"
+msgstr "Datum"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_KEYWORDS.ItemList.item
+msgid  "Keywords"
+msgstr "Ključne besede"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DESCRIPTION.ItemList.item
+msgid  "Description"
+msgstr "Opis"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MIMETYPE.ItemList.item
+msgid  "Type"
+msgstr "Vrsta"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDDATE.ItemList.item
+msgid  "Modified on"
+msgstr "Spremenjeno dne"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDBY.ItemList.item
+msgid  "Modified by"
+msgstr "Spremenil"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTDATE.ItemList.item
+msgid  "Printed on"
+msgstr "Natisnjeno dne"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTBY.ItemList.item
+msgid  "Printed by"
+msgstr "Natisnil"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_THEME.ItemList.item
+msgid  "Subject"
+msgstr "Zadeva"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_SIZE.ItemList.item
+msgid  "Size"
+msgstr "Velikost"
+
+#: source/contnr/templwin.src#STR_SVT_NEWDOC_HELP.String.Text
+msgid  "Click here to create new documents."
+msgstr "Kliknite tukaj, da ustvarite nove dokumente."
+
+#: source/contnr/templwin.src#STR_SVT_MYDOCS_HELP.String.Text
+msgid  "Contains your letters, reports and other documents"
+msgstr "Vsebuje vaša pisma, poročila in ostale dokumente."
+
+#: source/contnr/templwin.src#STR_SVT_TEMPLATES_HELP.String.Text
+msgid  "Contains templates for creating new documents"
+msgstr "Vsebuje predloge za sestavljanje novih dokumentov."
+
+#: source/contnr/templwin.src#STR_SVT_SAMPLES_HELP.String.Text
+msgid  "Contains a selection of sample letters, reports and other documents"
+msgstr "Vsebuje izbor vzorčnih pisem, poročil in ostalih dokumentov."
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.String.Text
+msgid  "Title"
+msgstr "Naslov"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.String.Text
+msgid  "Size"
+msgstr "Velikost"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.String.Text
+msgid  "Date modified"
+msgstr "Spremenjeno dne"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.String.Text
+msgid  "Type"
+msgstr "Vrsta"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.String.Text
+msgid  "Could not create the folder %1."
+msgstr "Mape %1 ni bilo mogoče ustvariti."
+
+#: source/contnr/fileview.src#STR_SVT_BYTES.String.Text
+msgid  "Bytes"
+msgstr "Bajtov"
+
+#: source/contnr/fileview.src#STR_SVT_KB.String.Text
+msgid  "KB"
+msgstr "KB"
+
+#: source/contnr/fileview.src#STR_SVT_MB.String.Text
+msgid  "MB"
+msgstr "MB"
+
+#: source/contnr/fileview.src#STR_SVT_GB.String.Text
+msgid  "GB"
+msgstr "GB"
+
+#: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MenuItem.Text
+msgid  "~Delete"
+msgstr "~Izbriši"
+
+#: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MenuItem.Text
+msgid  "~Rename"
+msgstr "P~reimenuj"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.ModalDialog.Text
+msgid  "Confirm Delete"
+msgstr "Potrditev brisanja"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.FixedText.Text
+msgid  "Entry:"
+msgstr "Vnos:"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FixedText.Text
+msgid  "Are you sure you want to delete the selected data?"
+msgstr "Ali ste prepričani, da želite izbrisati izbrane podatke?"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PushButton.Text
+msgid  "~Delete"
+msgstr "~Izbriši"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PushButton.Text
+msgid  "Delete ~All"
+msgstr "Izbriši ~vse"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.PushButton.Text
+msgid  "Do ~Not Delete"
+msgstr "~Ne izbriši"
+
+#: source/control/filectrl.src#STR_FILECTRL_BUTTONTEXT.String.Text
+msgid  "Browse..."
+msgstr "Prebrskaj ..."
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.String.Text
+msgid  "Move To Home"
+msgstr "Premakni na začetek"
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVELEFT.String.Text
+msgid  "Move Left"
+msgstr "Premakni levo"
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVERIGHT.String.Text
+msgid  "Move Right"
+msgstr "Premakni desno"
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVETOEND.String.Text
+msgid  "Move To End"
+msgstr "Premakni na konec"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_DAY.String.Text
+msgid  "Day"
+msgstr "Dan"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_WEEK.String.Text
+msgid  "Week"
+msgstr "Teden"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_TODAY.String.Text
+msgid  "Today"
+msgstr "Danes"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_NONE.String.Text
+msgid  "None"
+msgstr "Brez"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_LIGHT.String.Text
+msgid  "Light"
+msgstr "Svetlo"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.String.Text
+msgid  "Light Italic"
+msgstr "Svetlo ležeče"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_NORMAL.String.Text
+msgid  "Regular"
+msgstr "Navadno"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Ležeče"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BOLD.String.Text
+msgid  "Bold"
+msgstr "Krepko"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.String.Text
+msgid  "Bold Italic"
+msgstr "Krepko ležeče"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BLACK.String.Text
+msgid  "Black"
+msgstr "Črna"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.String.Text
+msgid  "Black Italic"
+msgstr "Črno ležeče"
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_BOTH.String.Text
+msgid  "The same font will be used on both your printer and your screen."
+msgstr "Na vašem tiskalniku in na zaslonu bo uporabljena ista pisava."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.String.Text
+msgid  "This is a printer font. The screen image may differ."
+msgstr "To je pisava tiskalnika. Njen videz na zaslonu je lahko drugačen."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.String.Text
+msgid  "This is a screen font. The printer image may differ."
+msgstr "To je zaslonska pisava. Njen videz na izpisu tiskalnika je lahko drugačen."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.String.Text
+msgid  "This font size has not been installed. The closest available size will be used."
+msgstr "Ta velikost pisave ni nameščena. Uporabljena bo najbližja velikost, ki je na voljo."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.String.Text
+msgid  "This font style will be simulated or the closest matching style will be used."
+msgstr "Ta slog pisave bo simuliran ali pa bo uporabljen najbolj soroden slog."
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.String.Text
+msgid  "This font has not been installed. The closest available font will be used."
+msgstr "Ta pisava ni nameščena. Uporabljena bo najbolj podobna pisava, ki je na voljo."
+
+#: source/control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.String.Text
+msgid  "Automatic"
+msgstr "Samodejno"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.String.Text
+msgid  "Alphanumeric"
+msgstr "Alfanumerično"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.String.Text
+msgid  "Normal"
+msgstr "Navadno"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.String.Text
+msgid  "Character set"
+msgstr "Nabor znakov"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.String.Text
+msgid  "Dictionary"
+msgstr "Slovar"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PINYIN.String.Text
+msgid  "Pinyin"
+msgstr "Pinjin"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_STROKE.String.Text
+msgid  "Stroke"
+msgstr "Poteza"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_RADICAL.String.Text
+msgid  "Radical"
+msgstr "Koren"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.String.Text
+msgid  "Unicode"
+msgstr "Unicode"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.String.Text
+msgid  "Zhuyin"
+msgstr "Džujin"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.String.Text
+msgid  "Phone book"
+msgstr "Telefonski imenik"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.String.Text
+msgid  "Phonetic (alphanumeric first)"
+msgstr "Fonetično (najprej alfanumerično)"
+
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.String.Text
+msgid  "Phonetic (alphanumeric last)"
+msgstr "Fonetično (alfanumerično zadnje)"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.String.Text
+msgid  "Alphanumeric"
+msgstr "Alfanumerično"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.String.Text
+msgid  "Dictionary"
+msgstr "Slovar"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.String.Text
+msgid  "Pinyin"
+msgstr "Pinjin"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.String.Text
+msgid  "Radical"
+msgstr "Koren"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.String.Text
+msgid  "Stroke"
+msgstr "Poteza"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.String.Text
+msgid  "Zhuyin"
+msgstr "Džujin"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.String.Text
+msgid  "Phonetic (alphanumeric first, grouped by syllables)"
+msgstr "Fonetično (najprej alfanumerično, razvrščeno po zlogih)"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.String.Text
+msgid  "Phonetic (alphanumeric first, grouped by consonants)"
+msgstr "Fonetično (najprej alfanumerično, razvrščeno po soglasnikih)"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.String.Text
+msgid  "Phonetic (alphanumeric last, grouped by syllables)"
+msgstr "Fonetično (alfanumerično zadnje, razvrščeno po zlogih)"
+
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.String.Text
+msgid  "Phonetic (alphanumeric last, grouped by consonants)"
+msgstr "Fonetično (alfanumerično zadnje, razvrščeno po soglasnikih)"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_READY.String.Text
+msgid  "Ready"
+msgstr "Pripravljen"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAUSED.String.Text
+msgid  "Paused"
+msgstr "Začasno prekinjeno"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PENDING.String.Text
+msgid  "Pending deletion"
+msgstr "Prišlo bo do brisanja"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_BUSY.String.Text
+msgid  "Busy"
+msgstr "Zaseden"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.String.Text
+msgid  "Initializing"
+msgstr "Inicializacija"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_WAITING.String.Text
+msgid  "Waiting"
+msgstr "Čakanje"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.String.Text
+msgid  "Warming up"
+msgstr "Ogrevanje"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PROCESSING.String.Text
+msgid  "Processing"
+msgstr "Obdelava"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PRINTING.String.Text
+msgid  "Printing"
+msgstr "Tiskanje"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_OFFLINE.String.Text
+msgid  "Offline"
+msgstr "Brez povezave"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_ERROR.String.Text
+msgid  "Error"
+msgstr "Napaka"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.String.Text
+msgid  "Unknown Server"
+msgstr "Neznani strežnik"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.String.Text
+msgid  "Paper jam"
+msgstr "Zastoj papirja"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.String.Text
+msgid  "Not enough paper"
+msgstr "Ni dovolj papirja"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.String.Text
+msgid  "Manual feed"
+msgstr "Ročno podajanje"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.String.Text
+msgid  "Paper problem"
+msgstr "Težave s papirjem"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.String.Text
+msgid  "I/O active"
+msgstr "V/I aktiven"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.String.Text
+msgid  "Output bin full"
+msgstr "Izhodni predal je poln"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.String.Text
+msgid  "Toner low"
+msgstr "Zmanjkuje tonerja"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_NO_TONER.String.Text
+msgid  "No toner"
+msgstr "Ni tonerja"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.String.Text
+msgid  "Delete Page"
+msgstr "Izbriši stran"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.String.Text
+msgid  "User intervention necessary"
+msgstr "Potreben je poseg uporabnika"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.String.Text
+msgid  "Insufficient memory"
+msgstr "Na voljo ni dovolj pomnilnika"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.String.Text
+msgid  "Cover open"
+msgstr "Pokrov naprave je odprt"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.String.Text
+msgid  "Power save mode"
+msgstr "Varčevalni način"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.String.Text
+msgid  "Default printer"
+msgstr "Privzeti tiskalnik"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.String.Text
+msgid  "%d documents"
+msgstr "%d dokumenti"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.ModalDialog.Text
+msgid  "Printer Setup"
+msgstr "Nastavitve tiskalnika"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.FixedLine.Text
+msgid  "Printer"
+msgstr "Tiskalnik"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.FixedText.Text
+msgid  "~Name"
+msgstr "~Ime"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.PushButton.Text
+msgid  "Propert~ies..."
+msgstr "La~stnosti ..."
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.FixedText.Text
+msgid  "Status"
+msgstr "Stanje"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.FixedText.Text
+msgid  "Type"
+msgstr "Vrsta"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.FixedText.Text
+msgid  "Location"
+msgstr "Mesto"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.FixedText.Text
+msgid  "Comment"
+msgstr "Komentar"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.PushButton.Text
+msgid  "~Options..."
+msgstr "Mo~žnosti ..."
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
+msgid  "Select Directory"
+msgstr "Izberi mapo"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.String.Text
+msgid  "Cannot change to directory"
+msgstr "Ni mogoče spremeniti poti v mapo"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
+msgid  "Open"
+msgstr "Odpri"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
+msgid  "~File"
+msgstr "~Datoteka"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
+msgid  "~Directory"
+msgstr "~Mapa"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
+msgid  "File ~type"
+msgstr "~Vrsta datoteke"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
+msgid  "Can't open file"
+msgstr "Datoteke ni mogoče odpreti"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
+msgid  "Can't open directory"
+msgstr "Mape ni mogoče odpreti"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
+msgid  "This file already exists. \\nOverwrite ?"
+msgstr "Datoteka že obstaja.\nJo želite prepisati?"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
+msgid  "Up One Level"
+msgstr "Eno raven višje"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
+msgid  "Save"
+msgstr "Shrani"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
+msgid  "D~rive"
+msgstr "Po~gon"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
+msgid  "User Directory"
+msgstr "Uporabniška mapa"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
+msgid  "Create Directory"
+msgstr "Ustvari mapo"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
+msgid  "Do you want the directory %s to be created ?"
+msgstr "Ali želite ustvariti mapo %s ?"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
+msgid  "Templates: Address Book Assignment"
+msgstr "Predloge: Določitev adresarja"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
+msgid  "Address Book Source"
+msgstr "Vir adresarja"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
+msgid  "Data source"
+msgstr "Vir podatkov"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PushButton.Text
+msgid  "~Address Data Source..."
+msgstr "~Vir podatkov adresarja ..."
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
+msgid  "Table"
+msgstr "Tabela"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
+msgid  "Field assignment"
+msgstr "Dodelitev polja"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
+msgid  "<none>"
+msgstr "<brez>"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
+msgid  "Company"
+msgstr "Podjetje"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
+msgid  "Department"
+msgstr "Oddelek"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
+msgid  "First name"
+msgstr "Ime"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
+msgid  "Last name"
+msgstr "Priimek"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
+msgid  "Street"
+msgstr "Ulica"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
+msgid  "Country"
+msgstr "Država"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
+msgid  "ZIP Code"
+msgstr "Poštna številka"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
+msgid  "City"
+msgstr "Mesto"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
+msgid  "Title"
+msgstr "Naslov"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
+msgid  "Position"
+msgstr "Položaj"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.String.Text
+msgid  "Addr. Form"
+msgstr "Obrazec z naslovom"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.String.Text
+msgid  "Initials"
+msgstr "Začetnice"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.String.Text
+msgid  "Complimentary close"
+msgstr "Vljudnostni zaključek"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
+msgid  "Tel: Home"
+msgstr "Tel: domači"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
+msgid  "Tel: Work"
+msgstr "Tel: službeni"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
+msgid  "FAX"
+msgstr "Faks"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
+msgid  "E-mail"
+msgstr "E-pošta"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
+msgid  "Note"
+msgstr "Opomba"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
+msgid  "User 1"
+msgstr "Uporabnik 1"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
+msgid  "User 2"
+msgstr "Uporabnik 2"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
+msgid  "User 3"
+msgstr "Uporabnik 3"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
+msgid  "User 4"
+msgstr "Uporabnik 4"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
+msgid  "ID"
+msgstr "ID"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.String.Text
+msgid  "State"
+msgstr "Pokrajina / zvezna država"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
+msgid  "Tel: Office"
+msgstr "Tel: službeni"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
+msgid  "Pager"
+msgstr "Pozivnik"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
+msgid  "Mobile"
+msgstr "Mobilni telefon"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
+msgid  "Tel: Other"
+msgstr "Tel: drugo"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
+msgid  "Calendar"
+msgstr "Koledar"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
+msgid  "Invite"
+msgstr "Povabilo"
+
+#: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
+msgid  "Unformatted text"
+msgstr "Neoblikovano besedilo"
+
+#: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
+msgid  "Bitmap"
+msgstr "Bitna slika"
+
+#: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
+msgid  "GDI metafile"
+msgstr "Metadatoteka GDI"
+
+#: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
+msgid  "Formatted text [RTF]"
+msgstr "Oblikovano besedilo [RTF]"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
+msgid  "Drawing format"
+msgstr "Oblika risbe"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SVXB.String.Text
+msgid  "SVXB (StarView bitmap/animation)"
+msgstr "SVXB (bitna slika/animacija StarView)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.String.Text
+msgid  "Status Info from Svx Internal Link"
+msgstr "Informacije o stanju preko notranje povezave Svx"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
+msgid  "SOLK (%PRODUCTNAME Link)"
+msgstr "Povezava SOLK (povezava %PRODUCTNAME)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
+msgid  "Netscape Bookmark"
+msgstr "Zaznamek Netscape"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
+msgid  "Star server format"
+msgstr "Oblikovanje strežnika Star"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
+msgid  "Star object format"
+msgstr "Oblikovanje predmeta Star"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
+msgid  "Applet object"
+msgstr "Predmet programčka"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.String.Text
+msgid  "Plug-in object"
+msgstr "Predmet vtičnika"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
+msgid  "StarWriter 3.0 object"
+msgstr "Predmet programa StarWriter 3.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
+msgid  "StarWriter 4.0 object"
+msgstr "Predmet programa StarWriter 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
+msgid  "StarWriter 5.0 object"
+msgstr "Predmet programa StarWriter 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
+msgid  "StarWriter/Web 4.0 object"
+msgstr "Predmet programa StarWriter/Web 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
+msgid  "StarWriter/Web 5.0 object"
+msgstr "Predmet programa StarWriter/Web 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
+msgid  "StarWriter/Master 4.0 object"
+msgstr "Predmet programa StarWriter/Master 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
+msgid  "StarWriter/Master 5.0 object"
+msgstr "Predmet programa StarWriter/Master 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
+msgid  "StarDraw object"
+msgstr "Predmet programa StarDraw"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
+msgid  "StarDraw 4.0 object"
+msgstr "Predmet programa StarDraw 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
+msgid  "StarImpress 5.0 object"
+msgstr "Predmet programa StarImpress 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
+msgid  "StarDraw 5.0 object"
+msgstr "Predmet programa StarDraw 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
+msgid  "StarCalc object"
+msgstr "Predmet programa StarCalc"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
+msgid  "StarCalc  4.0 object"
+msgstr "Predmet programa StarCalc 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
+msgid  "StarCalc 5.0 object"
+msgstr "Predmet programa StarCalc 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
+msgid  "StarChart object"
+msgstr "Predmet programa StarChart"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
+msgid  "StarChart 4.0 object"
+msgstr "Predmet programa StarChart 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
+msgid  "StarChart 5.0 object"
+msgstr "Predmet programa StarChart 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
+msgid  "StarImage object"
+msgstr "Predmet programa StarImage"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
+msgid  "StarImage 4.0 object"
+msgstr "Predmet programa StarImage 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
+msgid  "StarImage 5.0 object"
+msgstr "Predmet programa StarImage 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
+msgid  "StarMath object"
+msgstr "Predmet programa StarMath"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
+msgid  "StarMath 4.0 object"
+msgstr "Predmet programa StarMath 4.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
+msgid  "StarMath 5.0 object"
+msgstr "Predmet programa StarMath 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.String.Text
+msgid  "StarObject Paint object"
+msgstr "Predmet programa StarObject Paint"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
+msgid  "HTML (HyperText Markup Language)"
+msgstr "HTML (HyperText Markup Language)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
+msgid  "HTML format"
+msgstr "Oblika zapisa HTML"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
+msgid  "Biff5 (Microsoft Excel 5.0/95)"
+msgstr "Oblika Biff 5 (Microsoft Excel 5.0/95)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
+msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
+msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SYLK.String.Text
+msgid  "Sylk"
+msgstr "Sylk"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
+msgid  "DDE link"
+msgstr "Povezava DDE"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DIF.String.Text
+msgid  "DIF"
+msgstr "DIF"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
+msgid  "Microsoft Word object"
+msgstr "Predmet programa Microsoft Word"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.String.Text
+msgid  "StarFrameSet object"
+msgstr "Predmet programa StarFrameSet"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
+msgid  "Office document object"
+msgstr "Predmet dokumenta Office"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.String.Text
+msgid  "Notes document info"
+msgstr "Podatki o dokumentu Notes"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
+msgid  "Sfx document"
+msgstr "Dokument Sfx"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
+msgid  "StarChart 5.0 object"
+msgstr "Predmet programa StarChart 5.0"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
+msgid  "Graphic object"
+msgstr "Grafični predmet"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
+msgid  "Windows metafile"
+msgstr "Metadatoteka Windows"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.String.Text
+msgid  "Data source object"
+msgstr "Predmet vira podatkov"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.String.Text
+msgid  "Data source table"
+msgstr "Tabela vira podatkov"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.String.Text
+msgid  "SQL query"
+msgstr "Poizvedba SQL"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
+msgstr "Pogovorno okno programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
+msgid  "Link"
+msgstr "Povezava"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.String.Text
+msgid  "HTML format without comments"
+msgstr "Oblika zapisa HTML brez komentarjev"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_FINISH.String.Text
+msgid  "~Finish"
+msgstr "~Dokončaj"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_NEXT.String.Text
+msgid  "~Next >>"
+msgstr "~Naprej >>"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_PREVIOUS.String.Text
+msgid  "<< Bac~k"
+msgstr "<< Na~zaj"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.String.Text
+msgid  "Steps"
+msgstr "Koraki"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR&S_MAX.String.Text
+msgid  "General OLE error."
+msgstr "Splošna napaka OLE."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE&S_MAX.String.Text
+msgid  "The connection to the object cannot be established."
+msgstr "Povezave s predmetom ni mogoče vzpostaviti."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED&S_MAX.String.Text
+msgid  "No cache files were updated."
+msgstr "Predpomnilniške datoteke niso bile posodobljene."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED&S_MAX.String.Text
+msgid  "Some cache files were not updated."
+msgstr "Nekatere predpomnilniške datoteke niso bile posodobljene."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE&S_MAX.String.Text
+msgid  "Status of object cannot be determined in a timely manner."
+msgstr "Stanja predmeta ni mogoče določiti pravočasno."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF&S_MAX.String.Text
+msgid  "Source of the OLE link has been converted."
+msgstr "Vir povezave OLE je bil pretvorjen."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT&S_MAX.String.Text
+msgid  "The object could not be found."
+msgstr "Predmeta ni mogoče najti."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE&S_MAX.String.Text
+msgid  "The process could not be completed within the specified time period."
+msgstr "Proces ni bil dokončan v določenem časovnem obdobju."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY&S_MAX.String.Text
+msgid  "OLE could not connect to a network device (server)."
+msgstr "Povezave OLE z omrežno napravo (strežnikom) ni mogoče vzpostaviti."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.String.Text
+msgid  "The object found does not support the interface required for the desired operation."
+msgstr "Najdeni predmet ne podpira vmesnika, ki je potreben za želeno operacijo."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.String.Text
+msgid  "Interface not supported."
+msgstr "Vmesnik ni podprt."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY&S_MAX.String.Text
+msgid  "Insufficient memory."
+msgstr "Na voljo ni dovolj pomnilnika."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX&S_MAX.String.Text
+msgid  "The connection name could not be processed."
+msgstr "Imena povezave ni mogoče obdelati."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF&S_MAX.String.Text
+msgid  "The connection name could not be reduced further."
+msgstr "Imena povezave ni mogoče bolj zmanjšati."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE&S_MAX.String.Text
+msgid  "The connection name has no inverse."
+msgstr "Ime povezave nima inverzije."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX&S_MAX.String.Text
+msgid  "No common prefix exists."
+msgstr "Skupna predpona ne obstaja."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM&S_MAX.String.Text
+msgid  "The connection name is contained in the other one."
+msgstr "Ime povezave je vsebovano v drugem imenu."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.String.Text
+msgid  "The connection names (the receiver and the other moniker) are identical."
+msgstr "Imeni povezav (prejemnik in drugi vzdevek) sta identični."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.String.Text
+msgid  "The connection name is contained in the other one."
+msgstr "Ime povezave je vsebovano v drugem imenu."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.String.Text
+msgid  "The connection name cannot be connected. This is a relative name."
+msgstr "Imena povezave ni mogoče povezati. To je relativno ime."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED&S_MAX.String.Text
+msgid  "Operation not implemented."
+msgstr "Operacija še ni na voljo."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE&S_MAX.String.Text
+msgid  "No storage."
+msgstr "Brez pomnilnika."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE&S_MAX.String.Text
+msgid  "False."
+msgstr "Ne velja."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC&S_MAX.String.Text
+msgid  "Monikers must be composed generically."
+msgstr "Vzdevki morajo biti sestavljeni generično."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING&S_MAX.String.Text
+msgid  "Data not available at this time."
+msgstr "Podatki trenutno niso na voljo."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE & S_MAX.String.Text
+msgid  "Object could not be activated InPlace."
+msgstr "Predmeta ni mogoče aktivirati na mestu."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX & S_MAX.String.Text
+msgid  "Invalid index."
+msgstr "Neveljaven indeks."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW & S_MAX.String.Text
+msgid  "The action cannot be executed in the object's current state."
+msgstr "Dejanja ni mogoče izvršiti v sedanjem stanju predmeta."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND & S_MAX.String.Text
+msgid  "An invalid window was passed when activated."
+msgstr "Ob aktivaciji je bilo podano neveljavno okno."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS & S_MAX.String.Text
+msgid  "The object does not support any actions."
+msgstr "Predmet ne podpira dejanj."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB & S_MAX.String.Text
+msgid  "The action is not defined. The default action will be executed."
+msgstr "Dejanje ni definirano. Izvršeno bo privzeto dejanje."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT & S_MAX.String.Text
+msgid  "A link to the network could not be re-established."
+msgstr "Povezave z omrežjem ni mogoče ponovno vzpostaviti."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL & S_MAX.String.Text
+msgid  "Object does not support this action."
+msgstr "Predmet tega dejanja ne podpira."
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE & S_MAX.String.Text
+msgid  "The specified file could not be opened."
+msgstr "Navedene datoteke ni mogoče odpreti."
+
+#: source/dialogs/so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.String.Text
+msgid  "$(ERR) activating object"
+msgstr "$(ERR) pri aktiviranju predmeta."
+
+#: source/dialogs/so3res.src#STR_INS_OBJECT.String.Text
+msgid  "Inserts a new %1-Object into your document."
+msgstr "Vstavi nov %1-predmet v dokument."
+
+#: source/dialogs/so3res.src#STR_INS_OBJECT_ICON.String.Text
+msgid  "Inserts a new %1-Object into your document as a symbol."
+msgstr "Vstavi nov %1-predmet v dokument kot simbol."
+
+#: source/dialogs/so3res.src#STR_INS_FILE.String.Text
+msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
+msgstr "Vstavi v dokument vsebino datoteke in s tem omogoči kasnejše urejanje v izvirni aplikaciji."
+
+#: source/dialogs/so3res.src#STR_INS_PLUGIN.String.Text
+msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
+msgstr "Vstavi predmet vtičnika v dokument s sklicevanjem na podatke o vtičniku. Ko se predmet aktivira, se vtičnik samodejno izvrši."
+
+#: source/dialogs/so3res.src#STR_INS_APPLET.String.Text
+msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
+msgstr "Vstavi predmet programčka v dokument. Ko se predmet aktivira, se programček samodejno izvrši."
+
+#: source/dialogs/so3res.src#STR_INS_FILE_ICON.String.Text
+msgid  "Inserts the contents of the file as an icon into your document."
+msgstr "Vstavi v dokument vsebino datoteke kot ikono."
+
+#: source/dialogs/so3res.src#STR_INS_FILE_LINK.String.Text
+msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
+msgstr "V dokument vstavi vsebino datoteke in ustvari povezavo z izvorno datoteko. Spremembe v izvorni datoteki se bodo odražale v dokumentu."
+
+#: source/dialogs/so3res.src#STR_INS_FILE_ICON_LINK.String.Text
+msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
+msgstr "V dokument vstavi ikono, ki predstavlja datoteko. Spremembe v izvorni datoteki se bodo odražale v tem dokumentu."
+
+#: source/dialogs/so3res.src#STR_PASTE.String.Text
+msgid  "Pastes the contents of the clipboard as %1 in your document."
+msgstr "V dokument prilepi vsebino odložišča kot %1."
+
+#: source/dialogs/so3res.src#STR_CONVERT_TO.String.Text
+msgid  "Converts the selected %1object to the object type %2."
+msgstr "Pretvori izbrani predmet %1 v predmet vrste %2."
+
+#: source/dialogs/so3res.src#STR_ACTIVATE_AS.String.Text
+msgid  "All objects of type %1 are activated as %2, but not converted"
+msgstr "Vsi predmeti vrste %1 se aktivirajo kot %2, vendar se ne pretvorijo"
+
+#: source/dialogs/so3res.src#STR_VERB_OPEN.String.Text
+msgid  "~Open"
+msgstr "~Odpri"
+
+#: source/dialogs/so3res.src#STR_VERB_PROPS.String.Text
+msgid  "~Properties"
+msgstr "~Lastnosti"
+
+#: source/dialogs/so3res.src#STR_PLUGIN_CANT_SHOW.String.Text
+msgid  "Plug-in % cannot be displayed."
+msgstr "Vtičnika % ni mogoče prikazati."
+
+#: source/dialogs/so3res.src#STR_ERROR_DDE.String.Text
+msgid  "DDE link to % for % area % are not available."
+msgstr "Povezava DDE na % za % področje % ni na voljo."
+
+#: source/dialogs/so3res.src#STR_ERROR_OBJNOCREATE.String.Text
+msgid  "Object % could not be inserted."
+msgstr "Predmeta % ni mogoče vstaviti."
+
+#: source/dialogs/so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.String.Text
+msgid  "Object from file % could not be inserted."
+msgstr "Predmeta iz datoteke % ni mogoče vstaviti."
+
+#: source/dialogs/so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.String.Text
+msgid  "Plug-in from document % could not be inserted."
+msgstr "Vtičnika iz dokumenta % ni mogoče vstaviti."
+
+#: source/dialogs/so3res.src#STR_QUERYUPDATELINKS.String.Text
+msgid  "Update all links?"
+msgstr "Ali želite posodobiti vse povezave?"
+
+#: source/dialogs/so3res.src#STR_FURTHER_OBJECT.String.Text
+msgid  "Further objects"
+msgstr "Dodatni predmeti"
+
+#: source/dialogs/so3res.src#STR_EDIT_APPLET.String.Text
+msgid  "Edit Applet"
+msgstr "Uredi programček"
+
+#: source/dialogs/so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.MenuItem.Text
+msgid  "Deactivate"
+msgstr "Deaktiviraj"
+
+#: source/dialogs/so3res.src#STR_UNKNOWN_SOURCE.String.Text
+msgid  "Unknown source"
+msgstr "Neznani vir"
+
+#: source/filter/exportdialog.src#DLG_EXPORT_TITLE.String.Text
+msgid  " Options"
+msgstr " Možnosti"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EXPORT_SIZE.FixedLine.Text
+msgid  "Size"
+msgstr "Velikost"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_SIZEX.FixedText.Text
+msgid  "Width:"
+msgstr "Širina:"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item1.StringList.item
+msgid  "inches"
+msgstr "palcev"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.Default.StringList.item
+msgid  "cm"
+msgstr "cm"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item3.StringList.item
+msgid  "mm"
+msgstr "mm"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item4.StringList.item
+msgid  "points"
+msgstr "pik"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item5.StringList.item
+msgid  "pixels"
+msgstr "slik. točk"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_SIZEY.FixedText.Text
+msgid  "Height:"
+msgstr "Višina:"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item1.StringList.item
+msgid  "inches"
+msgstr "palcev"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.Default.StringList.item
+msgid  "cm"
+msgstr "cm"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item3.StringList.item
+msgid  "mm"
+msgstr "mm"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item4.StringList.item
+msgid  "points"
+msgstr "pik"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item5.StringList.item
+msgid  "pixels"
+msgstr "slik. točk"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_RESOLUTION.FixedText.Text
+msgid  "Resolution:"
+msgstr "Ločljivost:"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.item1.StringList.item
+msgid  "pixels/cm"
+msgstr "slik. točk/cm"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.Default.StringList.item
+msgid  "pixels/inch"
+msgstr "sl. točk/palec"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.item3.StringList.item
+msgid  "pixels/meter"
+msgstr "sl. točk/palec"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_COLOR_DEPTH.FixedLine.Text
+msgid  "Color Depth"
+msgstr "Barvna globina"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_1BIT_THRESHOLD.String.Text
+msgid  "1 bit threshold"
+msgstr "1-bitno - s pragom"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_1BIT_DITHERED.String.Text
+msgid  "1 bit dithered"
+msgstr "1-bitno - razpršeno"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_4BIT_GRAYSCALE.String.Text
+msgid  "4 bit grayscale"
+msgstr "4-bitno - sivine"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_4BIT_COLOR_PALETTE.String.Text
+msgid  "4 bit color"
+msgstr "4-bitno - barvno"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_8BIT_GRAYSCALE.String.Text
+msgid  "8 bit grayscale"
+msgstr "8-bitno - sivine"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_8BIT_COLOR_PALETTE.String.Text
+msgid  "8 bit color"
+msgstr "8-bitno - barvno"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_24BIT_TRUE_COLOR.String.Text
+msgid  "24 bit true color"
+msgstr "24-bitno - True color"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_JPG_QUALITY.FixedLine.Text
+msgid  "Quality"
+msgstr "Kakovost"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_COMPRESSION.FixedLine.Text
+msgid  "Compression"
+msgstr "Stiskanje"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_MODE.FixedLine.Text
+msgid  "Mode"
+msgstr "Način"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_PBM_OPTIONS.FixedLine.Text
+msgid  "File Format"
+msgstr "Vrsta datoteke"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_JPG_MIN.FixedText.Text
+msgid  "1 is minimum Quality and smallest file size."
+msgstr "1 pomeni najnižjo kakovost in najmanjšo datoteko."
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_JPG_MAX.FixedText.Text
+msgid  "100 is maximum Quality and biggest file size."
+msgstr "1 pomeni najvišjo kakovost in največjo datoteko."
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_PNG_MIN.FixedText.Text
+msgid  "0 is biggest file size and fastest loading."
+msgstr "0 pomeni največjo datoteko in najhitrejše nalaganje."
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_PNG_MAX.FixedText.Text
+msgid  "9 is smallest file size and slowest loading."
+msgstr "9 pomeni najmanjšo datoteko in najpočasnejše nalaganje."
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.CheckBox.Text
+msgid  "Preview"
+msgstr "Predogled"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_INTERLACED.CheckBox.Text
+msgid  "Interlaced"
+msgstr "Prepleteno"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_RLE_ENCODING.CheckBox.Text
+msgid  "RLE encoding"
+msgstr "Kodiranje RLE"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_GIF_DRAWING_OBJECTS.FixedLine.Text
+msgid  "Drawing Objects"
+msgstr "Risani predmeti"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_SAVE_TRANSPARENCY.CheckBox.Text
+msgid  "Save transparency"
+msgstr "Shrani s prosojnostjo"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_BINARY.RadioButton.Text
+msgid  "Binary"
+msgstr "Dvojiška"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_TEXT.RadioButton.Text
+msgid  "Text"
+msgstr "Besedilo"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.FixedLine.Text
+msgid  "Preview"
+msgstr "Predogled"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.CheckBox.Text
+msgid  "Image Preview (TIFF)"
+msgstr "Predogled slike (TIFF)"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_EPSI.CheckBox.Text
+msgid  "Interchange (EPSI)"
+msgstr "Izmenjava (EPSI)"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EPS_VERSION.FixedLine.Text
+msgid  "Version"
+msgstr "Različica"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL1.RadioButton.Text
+msgid  "Level 1"
+msgstr "Raven 1"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL2.RadioButton.Text
+msgid  "Level 2"
+msgstr "Raven 2"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EPS_COLOR_FORMAT.FixedLine.Text
+msgid  "Color format"
+msgstr "Vrsta barv"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT1.RadioButton.Text
+msgid  "Color"
+msgstr "Barvno"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT2.RadioButton.Text
+msgid  "Grayscale"
+msgstr "Sivine"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_LZW.RadioButton.Text
+msgid  "LZW encoding"
+msgstr "Kodiranje LZW"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_NONE.RadioButton.Text
+msgid  "None"
+msgstr "Brez"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_1.String.Text
+msgid  "The picture needs about %1 KB of memory."
+msgstr "Slika zahteva približno %1 kB pomnilnika."
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
+msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
+msgstr "Slika zahteva približno %1 kB pomnilnika,\n velikost datoteke je %2 kB."
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
+msgid  "The file size is %1 KB."
+msgstr "Velikost datoteke je %1 kB."
+
+#: source/java/javaerror.src#WARNINGBOX_JAVANOTFOUND.WarningBox.Message
+msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
+msgstr "Za to opravilo potrebuje %PRODUCTNAME javansko zaganjalno okolje (JRE). Prosimo, namestite JRE in ponovno zaženite %PRODUCTNAME."
+
+#: source/java/javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.WarningBox.Message
+msgid  "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
+msgstr "Nastavitev %PRODUCTNAME je bila spremenjena. Pod Orodja - Možnosti - %PRODUCTNAME - Java izberite javansko zaganjalno okolje, ki ga želite uporabljati z %PRODUCTNAME."
+
+#: source/java/javaerror.src#QBX_JAVADISABLED.QueryBox.Message
+msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
+msgstr "Za to opravilo potrebuje %PRODUCTNAME javansko zaganjalno okolje (JRE). Uporaba JRE pa je bila onemogočena. Želite omogočiti uporabo JRE zdaj?"
+
+#: source/java/javaerror.src#ERRORBOX_JVMCREATIONFAILED.ErrorBox.Message
+msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
+msgstr "Za to opravilo potrebuje %PRODUCTNAME javansko zaganjalno okolje (JRE). Izbrani JRE ni uporaben. Prosimo, izberite drugo različico ali namestite nov JRE in ga izberite pod Orodja - Možnosti - %PRODUCTNAME - Java."
+
+#: source/java/javaerror.src#ERRORBOX_RESTARTREQUIRED.ErrorBox.Message
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
+msgstr "Izbrano javansko okolje JRE bo delovalo pravilno, če ponovno zaženete %PRODUCTNAME. Prosimo, ponovno zaženite %PRODUCTNAME zdaj."
+
+#: source/java/javaerror.src#STR_WARNING_JAVANOTFOUND.String.Text
+msgid  "JRE Required"
+msgstr "Potrebno je okolje JRE"
+
+#: source/java/javaerror.src#STR_WARNING_INVALIDJAVASETTINGS.String.Text
+msgid  "Select JRE"
+msgstr "Izberite JRE"
+
+#: source/java/javaerror.src#STR_ERROR_RESTARTREQUIRED.String.Text
+msgid  "Restart Required"
+msgstr "Potreben je ponoven zagon"
+
+#: source/java/javaerror.src#STR_QUESTION_JAVADISABLED.String.Text
+msgid  "Enable JRE"
+msgstr "Omogoči JRE"
+
+#: source/java/javaerror.src#STR_ERROR_JVMCREATIONFAILED.String.Text
+msgid  "JRE is Defective"
+msgstr "JRE je okvarjen"
+
+#: source/misc/undo.src#STR_UNDO.String.Text
+msgid  "Undo: "
+msgstr "Razveljavi: "
+
+#: source/misc/undo.src#STR_REDO.String.Text
+msgid  "Re~do: "
+msgstr "~Uveljavi: "
+
+#: source/misc/undo.src#STR_REPEAT.String.Text
+msgid  "~Repeat: "
+msgstr "~Ponovi: "
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
+msgid  "Source code"
+msgstr "Izvorna koda"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
+msgid  "Bookmark file"
+msgstr "Datoteka z zaznamki"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
+msgid  "Graphics"
+msgstr "Grafika"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
+msgid  "Configuration file"
+msgstr "Konfiguracijska datoteka"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
+msgid  "Application"
+msgstr "Program"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
+msgid  "Database table"
+msgstr "Tabela zbirke podatkov"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
+msgid  "System file"
+msgstr "Sistemska datoteka"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
+msgid  "MS Word document"
+msgstr "Dokument MS Word"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
+msgid  "Help file"
+msgstr "Datoteka pomoči"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
+msgid  "HTML document"
+msgstr "Dokument HTML"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
+msgid  "Archive file"
+msgstr "Arhivska datoteka"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
+msgid  "Log file"
+msgstr "Dnevnik"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
+msgid  "%STAROFFICE Database"
+msgstr "Zbirka podatkov %STAROFFICE"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
+msgid  "StarWriter 4.0 / 5.0 Master Document"
+msgstr "Glavni dokument StarWriter 4.0 / 5.0"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
+msgid  "%STAROFFICE Image"
+msgstr "Slika %STAROFFICE"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
+msgid  "Text file"
+msgstr "Datoteka z besedilom"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
+msgid  "Link"
+msgstr "Povezava"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
+msgid  "%STAROFFICE 3.0 - 5.0 Template"
+msgstr "Predloga %STAROFFICE 3.0 - 5.0"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
+msgid  "MS Excel document"
+msgstr "Dokument programa MS Excel"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
+msgid  "MS Excel template"
+msgstr "Predloga programa MS Excel"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.String.Text
+msgid  "Batch file"
+msgstr "Paketna datoteka"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
+msgid  "File"
+msgstr "Datoteka"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
+msgid  "Folder"
+msgstr "Mapa"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
+msgid  "Text Document"
+msgstr "Dokument z besedilom"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
+msgid  "Spreadsheet"
+msgstr "Preglednica"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
+msgid  "Presentation"
+msgstr "Predstavitev"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
+msgid  "Drawing"
+msgstr "Risba"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
+msgid  "HTML document"
+msgstr "Dokument HTML"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
+msgid  "Master document"
+msgstr "Glavni dokument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
+msgid  "Formula"
+msgstr "Formula"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
+msgid  "Database"
+msgstr "Zbirka podatkov"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+msgstr "Predloga preglednice %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+msgstr "Predloga risbe %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+msgstr "Predloga predstavitve %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+msgstr "Predloga dokumenta z besedilom %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
+msgid  "Local drive"
+msgstr "Krajevni pogon"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
+msgid  "Disk drive"
+msgstr "Diskovni pogon"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
+msgid  "CD-ROM drive"
+msgstr "Pogon CD-ROM"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
+msgid  "Network connection"
+msgstr "Omrežna povezava"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
+msgid  "MS PowerPoint Document"
+msgstr "Dokument programa MS PowerPoint"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
+msgid  "MS PowerPoint Template"
+msgstr "Predloga programa MS PowerPoint"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
+msgid  "MS PowerPoint Show"
+msgstr "Predstavitev programa MS PowerPoint"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgstr "Formula programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgstr "Grafikon programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgstr "Risba programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgstr "Preglednica programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgstr "Predstavitev programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgstr "Dokument z besedilom %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgstr "Glavni dokument %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
+msgid  "MathML Document"
+msgstr "Dokument MathML"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
+msgid  "OpenDocument Database"
+msgstr "Zbirka podatkov OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
+msgid  "OpenDocument Drawing"
+msgstr "Risba OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
+msgid  "OpenDocument Formula"
+msgstr "Formula OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
+msgid  "OpenDocument Master Document"
+msgstr "Glavni dokument OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
+msgid  "OpenDocument Presentation"
+msgstr "Predstavitev OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
+msgid  "OpenDocument Spreadsheet"
+msgstr "Preglednica OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
+msgid  "OpenDocument Text"
+msgstr "Dokument z besedilom OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
+msgid  "OpenDocument Spreadsheet Template"
+msgstr "Predloga preglednice OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
+msgid  "OpenDocument Drawing Template"
+msgstr "Predloga risbe OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
+msgid  "OpenDocument Presentation Template"
+msgstr "Predloga predstavitve OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
+msgid  "OpenDocument Text Template"
+msgstr "Predloga dokumenta z besedilom OpenDocument"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
+msgid  "%PRODUCTNAME Extension"
+msgstr "Razširitev %PRODUCTNAME"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PairedList.item
+msgid  "[None]"
+msgstr "[brez]"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
+msgid  "Unknown"
+msgstr "neznan"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
+msgid  "Default"
+msgstr "privzeti"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PairedList.item
+msgid  "Afrikaans (South Africa)"
+msgstr "afrikanski (Južna afrika)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PairedList.item
+msgid  "Albanian"
+msgstr "albanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PairedList.item
+msgid  "Arabic"
+msgstr "arabski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PairedList.item
+msgid  "Arabic (Algeria)"
+msgstr "arabski (Alžirija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PairedList.item
+msgid  "Arabic (Bahrain)"
+msgstr "arabski (Bahrajn)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PairedList.item
+msgid  "Arabic (Chad)"
+msgstr "arabski (Čad)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PairedList.item
+msgid  "Arabic (Comoros)"
+msgstr "arabski (Komori)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PairedList.item
+msgid  "Arabic (Djibouti)"
+msgstr "arabski (Džibuti)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PairedList.item
+msgid  "Arabic (Egypt)"
+msgstr "arabski (Egipt)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PairedList.item
+msgid  "Arabic (Eritrea)"
+msgstr "arabski (Eritreja)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PairedList.item
+msgid  "Arabic (Iraq)"
+msgstr "arabski (Irak)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PairedList.item
+msgid  "Arabic (Israel)"
+msgstr "arabski (Izrael)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PairedList.item
+msgid  "Arabic (Jordan)"
+msgstr "arabski (Jordanija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PairedList.item
+msgid  "Arabic (Kuwait)"
+msgstr "arabski (Kuvajt)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PairedList.item
+msgid  "Arabic (Lebanon)"
+msgstr "arabski (Libanon)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PairedList.item
+msgid  "Arabic (Libya)"
+msgstr "arabski (Libija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PairedList.item
+msgid  "Arabic (Mauritania)"
+msgstr "arabski (Mavretanija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PairedList.item
+msgid  "Arabic (Morocco)"
+msgstr "arabski (Maroko)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PairedList.item
+msgid  "Arabic (Oman)"
+msgstr "arabski (Oman)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PairedList.item
+msgid  "Arabic (Palestine)"
+msgstr "arabski (Palestina)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PairedList.item
+msgid  "Arabic (Qatar)"
+msgstr "arabski (Katar)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PairedList.item
+msgid  "Arabic (Saudi Arabia)"
+msgstr "arabski (Savdska Arabija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PairedList.item
+msgid  "Arabic (Somalia)"
+msgstr "arabski (Somalija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PairedList.item
+msgid  "Arabic (Sudan)"
+msgstr "arabski (Sudan)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PairedList.item
+msgid  "Arabic (Syria)"
+msgstr "arabski (Sirija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PairedList.item
+msgid  "Arabic (Tunisia)"
+msgstr "arabski (Tunizija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PairedList.item
+msgid  "Arabic (UAE)"
+msgstr "arabski (ZAE)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PairedList.item
+msgid  "Arabic (Yemen)"
+msgstr "arabski (Jemen)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PairedList.item
+msgid  "Armenian"
+msgstr "armenski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PairedList.item
+msgid  "Assami"
+msgstr "asamski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PairedList.item
+msgid  "Azerbaijani Latin"
+msgstr "azerbajdžanski, latinica"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PairedList.item
+msgid  "Azerbaijani Cyrillic"
+msgstr "azerbajdžanski, cirilica"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PairedList.item
+msgid  "Basque"
+msgstr "baskovski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PairedList.item
+msgid  "Bengali (India)"
+msgstr "bengalski (Indija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PairedList.item
+msgid  "Bulgarian"
+msgstr "bolgarski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PairedList.item
+msgid  "Belarusian"
+msgstr "beloruski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PairedList.item
+msgid  "Catalan"
+msgstr "katalonski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PairedList.item
+msgid  "Chinese (traditional)"
+msgstr "kitajski (tradicionalni)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PairedList.item
+msgid  "Chinese (simplified)"
+msgstr "kitajski (poenostavljeni)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PairedList.item
+msgid  "Chinese (Hong Kong)"
+msgstr "kitajski (Hong Kong)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PairedList.item
+msgid  "Chinese (Singapore)"
+msgstr "kitajski (Singapur)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PairedList.item
+msgid  "Chinese (Macau)"
+msgstr "kitajski (Makao)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PairedList.item
+msgid  "Croatian"
+msgstr "hrvaški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PairedList.item
+msgid  "Czech"
+msgstr "češki"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PairedList.item
+msgid  "Danish"
+msgstr "danski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PairedList.item
+msgid  "Dutch (Netherlands)"
+msgstr "nizozemski (Nizozemska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PairedList.item
+msgid  "Dutch (Belgium)"
+msgstr "nizozemski (Belgija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PairedList.item
+msgid  "English (USA)"
+msgstr "angleški (ZDA)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PairedList.item
+msgid  "English (UK)"
+msgstr "angleški (Združeno kraljestvo)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PairedList.item
+msgid  "English (Australia)"
+msgstr "angleški (Avstralija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PairedList.item
+msgid  "English (Canada)"
+msgstr "angleški (Kanada)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PairedList.item
+msgid  "English (New Zealand)"
+msgstr "angleški (Nova Zelandija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PairedList.item
+msgid  "English (Eire)"
+msgstr "angleški (Irska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PairedList.item
+msgid  "English (South Africa)"
+msgstr "angleški (Južna Afrika)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PairedList.item
+msgid  "English (Jamaica)"
+msgstr "angleški (Jamajka)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PairedList.item
+msgid  "English (Caribbean)"
+msgstr "angleški (Karibi)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PairedList.item
+msgid  "English (Belize)"
+msgstr "angleški (Belize)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PairedList.item
+msgid  "English (Trinidad)"
+msgstr "angleški (Trinidad)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PairedList.item
+msgid  "English (Zimbabwe)"
+msgstr "angleški (Zimbabve)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PairedList.item
+msgid  "English (Philippines)"
+msgstr "angleški (Filipini)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PairedList.item
+msgid  "English (India)"
+msgstr "angleški (Indija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PairedList.item
+msgid  "Estonian"
+msgstr "estonski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PairedList.item
+msgid  "Finnish"
+msgstr "finski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PairedList.item
+msgid  "Faroese"
+msgstr "ferski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PairedList.item
+msgid  "Persian"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PairedList.item
+msgid  "French (France)"
+msgstr "francoski (Francija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PairedList.item
+msgid  "French (Belgium)"
+msgstr "francoski (Belgija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PairedList.item
+msgid  "French (Canada)"
+msgstr "francoski (Kanada)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PairedList.item
+msgid  "French (Switzerland)"
+msgstr "francoski (Švica)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PairedList.item
+msgid  "French (Luxembourg)"
+msgstr "francoski (Luksemburg)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PairedList.item
+msgid  "French (Monaco)"
+msgstr "francoski (Monako)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PairedList.item
+msgid  "Gascon"
+msgstr "gaskonski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PairedList.item
+msgid  "German (Germany)"
+msgstr "nemški (Nemčija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PairedList.item
+msgid  "German (Switzerland)"
+msgstr "nemški (Švica)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PairedList.item
+msgid  "German (Austria)"
+msgstr "nemški (Avstrija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PairedList.item
+msgid  "German (Luxembourg)"
+msgstr "nemški (Luksemburg)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PairedList.item
+msgid  "German (Liechtenstein)"
+msgstr "nemški (Liechtenstein)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
+msgid  "Greek"
+msgstr "grški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PairedList.item
+msgid  "Gujarati"
+msgstr "gudžaratski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
+msgid  "Hebrew"
+msgstr "hebrejski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PairedList.item
+msgid  "Hindi"
+msgstr "hindujski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PairedList.item
+msgid  "Hungarian"
+msgstr "madžarski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PairedList.item
+msgid  "Icelandic"
+msgstr "islandski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PairedList.item
+msgid  "Indonesian"
+msgstr "indonezijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PairedList.item
+msgid  "Italian (Italy)"
+msgstr "italijanski (Italija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PairedList.item
+msgid  "Italian (Switzerland)"
+msgstr "italijanski (Švica)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
+msgid  "Japanese"
+msgstr "japonski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PairedList.item
+msgid  "Kannada"
+msgstr "kanareški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PairedList.item
+msgid  "Kashmiri (Kashmir)"
+msgstr "kašmirski (Kašmir)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PairedList.item
+msgid  "Kashmiri (India)"
+msgstr "kašmirski (Indija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PairedList.item
+msgid  "Kazak"
+msgstr "kazaški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PairedList.item
+msgid  "Konkani"
+msgstr "konkanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PairedList.item
+msgid  "Korean (RoK)"
+msgstr "korejski (RK)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PairedList.item
+msgid  "Latvian"
+msgstr "latvijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PairedList.item
+msgid  "Lithuanian"
+msgstr "litovski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PairedList.item
+msgid  "Macedonian"
+msgstr "makedonski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PairedList.item
+msgid  "Malay (Malaysia)"
+msgstr "malajski (Malezija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PairedList.item
+msgid  "Malay (Brunei Darussalam)"
+msgstr "malajski (Brunej)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PairedList.item
+msgid  "Malayalam"
+msgstr "malajalamski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PairedList.item
+msgid  "Manipuri"
+msgstr "manipurski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PairedList.item
+msgid  "Marathi"
+msgstr "maratski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PairedList.item
+msgid  "Nepali (Nepal)"
+msgstr "nepalski (Nepal)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PairedList.item
+msgid  "Nepali (India)"
+msgstr "nepalski (Indija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PairedList.item
+msgid  "Norwegian, Bokmål"
+msgstr "norveški, Bokmal"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PairedList.item
+msgid  "Norwegian, Nynorsk"
+msgstr "norveški, Ninorsk"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PairedList.item
+msgid  "Oriya"
+msgstr "orijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PairedList.item
+msgid  "Polish"
+msgstr "poljski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PairedList.item
+msgid  "Portuguese (Portugal)"
+msgstr "portugalski (Portugalska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PairedList.item
+msgid  "Portuguese (Brazil)"
+msgstr "portugalski (Brazilija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PairedList.item
+msgid  "Punjabi"
+msgstr "pundžabski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PairedList.item
+msgid  "Rhaeto-Romance"
+msgstr "retoromanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PairedList.item
+msgid  "Romanian"
+msgstr "romunski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PairedList.item
+msgid  "Russian"
+msgstr "ruski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PairedList.item
+msgid  "Sanskrit"
+msgstr "sanskrt"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PairedList.item
+msgid  "Serbian Cyrillic (Serbia and Montenegro)"
+msgstr "srbski, cirilica (Srbija in Črna gora)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PairedList.item
+msgid  "Serbian Latin (Serbia and Montenegro)"
+msgstr "srbski, latinica (Srbija in Črna gora)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PairedList.item
+msgid  "Serbian Cyrillic (Serbia)"
+msgstr "srbski, cirilica (Srbija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PairedList.item
+msgid  "Serbian Latin (Serbia)"
+msgstr "srbski, latinica (Srbija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PairedList.item
+msgid  "Serbian Cyrillic (Montenegro)"
+msgstr "srbski, cirilica (Črna gora)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PairedList.item
+msgid  "Serbian Latin (Montenegro)"
+msgstr "srbski, latinica (Črna gora)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PairedList.item
+msgid  "Sindhi"
+msgstr "sindski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.PairedList.item
+msgid  "Slovak"
+msgstr "slovaški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PairedList.item
+msgid  "Slovenian"
+msgstr "slovenski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PairedList.item
+msgid  "Spanish (Spain)"
+msgstr "španski (Španija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PairedList.item
+msgid  "Spanish (Mexico)"
+msgstr "španski (Mehika)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PairedList.item
+msgid  "Spanish (Guatemala)"
+msgstr "španski (Gvatemala)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PairedList.item
+msgid  "Spanish (Costa Rica)"
+msgstr "španski (Kostarika)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PairedList.item
+msgid  "Spanish (Panama)"
+msgstr "španski (Panama)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PairedList.item
+msgid  "Spanish (Dom. Rep.)"
+msgstr "španski (Dom. rep.)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PairedList.item
+msgid  "Spanish (Venezuela)"
+msgstr "španski (Venezuela)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PairedList.item
+msgid  "Spanish (Colombia)"
+msgstr "španski (Kolumbija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PairedList.item
+msgid  "Spanish (Peru)"
+msgstr "španski (Peru)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PairedList.item
+msgid  "Spanish (Argentina)"
+msgstr "španski (Argentina)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PairedList.item
+msgid  "Spanish (Ecuador)"
+msgstr "španski (Ekvador)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PairedList.item
+msgid  "Spanish (Chile)"
+msgstr "španski (Čile)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PairedList.item
+msgid  "Spanish (Uruguay)"
+msgstr "španski (Urugvaj)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PairedList.item
+msgid  "Spanish (Paraguay)"
+msgstr "španski (Paragvaj)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PairedList.item
+msgid  "Spanish (Bolivia)"
+msgstr "španski (Bolivija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PairedList.item
+msgid  "Spanish (El Salvador)"
+msgstr "španski (Salvador)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PairedList.item
+msgid  "Spanish (Honduras)"
+msgstr "španski (Honduras)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PairedList.item
+msgid  "Spanish (Nicaragua)"
+msgstr "španski (Nikaragva)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PairedList.item
+msgid  "Spanish (Puerto Rico)"
+msgstr "španski (Portoriko)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PairedList.item
+msgid  "Swahili (Kenya)"
+msgstr "svahilski (Kenija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PairedList.item
+msgid  "Swedish (Sweden)"
+msgstr "švedski (Švedska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PairedList.item
+msgid  "Swedish (Finland)"
+msgstr "švedski (Finska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PairedList.item
+msgid  "Tajik"
+msgstr "tadžiški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PairedList.item
+msgid  "Tamil"
+msgstr "tamilski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PairedList.item
+msgid  "Tatar"
+msgstr "tatarski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PairedList.item
+msgid  "Telugu"
+msgstr "teluški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PairedList.item
+msgid  "Thai"
+msgstr "tajski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PairedList.item
+msgid  "Turkish"
+msgstr "turški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PairedList.item
+msgid  "Urdu (Pakistan)"
+msgstr "urdujski (Pakistan)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PairedList.item
+msgid  "Urdu (India)"
+msgstr "urdujski (Indija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PairedList.item
+msgid  "Ukrainian"
+msgstr "ukrajinski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PairedList.item
+msgid  "Uzbek Latin"
+msgstr "uzbeški, latinica"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PairedList.item
+msgid  "Welsh"
+msgstr "valižanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PairedList.item
+msgid  "User 1"
+msgstr "uporabniški 1"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PairedList.item
+msgid  "User 2"
+msgstr "uporabniški 2"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PairedList.item
+msgid  "User 3"
+msgstr "uporabniški 3"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PairedList.item
+msgid  "User 4"
+msgstr "uporabniški 4"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PairedList.item
+msgid  "User 5"
+msgstr "uporabniški 5"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PairedList.item
+msgid  "User 6"
+msgstr "uporabniški 6"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PairedList.item
+msgid  "User 7"
+msgstr "uporabniški 7"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PairedList.item
+msgid  "User 8"
+msgstr "uporabniški 8"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PairedList.item
+msgid  "User 9"
+msgstr "uporabniški 9"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PairedList.item
+msgid  "Latin"
+msgstr "latinski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PairedList.item
+msgid  "Esperanto"
+msgstr "esperanto"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PairedList.item
+msgid  "Kinyarwanda (Rwanda)"
+msgstr "kinjaruandski (Ruanda)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PairedList.item
+msgid  "Maori (New Zealand)"
+msgstr "maorski (Nova Zelandija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PairedList.item
+msgid  "Galician"
+msgstr "galicijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PairedList.item
+msgid  "Dhivehi"
+msgstr "divehijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PairedList.item
+msgid  "Northern Sotho"
+msgstr "severnosotski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PairedList.item
+msgid  "Gaelic (Scotland)"
+msgstr "gelski (Škotska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PairedList.item
+msgid  "Mongolian"
+msgstr "mongolski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PairedList.item
+msgid  "Interlingua"
+msgstr "interlingualski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PairedList.item
+msgid  "Bosnian"
+msgstr "bosanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PairedList.item
+msgid  "Bengali (Bangladesh)"
+msgstr "bengalski (Bangladeš)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PairedList.item
+msgid  "Occitan"
+msgstr "oksitanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PairedList.item
+msgid  "Khmer"
+msgstr "kmerski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PairedList.item
+msgid  "Kurdish (Turkey)"
+msgstr "kurdski (Turčija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PairedList.item
+msgid  "Kurdish (Syria)"
+msgstr "kurdski (Sirija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PairedList.item
+msgid  "Kurdish (Iraq)"
+msgstr "kurdski (Irak)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PairedList.item
+msgid  "Kurdish (Iran)"
+msgstr "kurdski (Iran)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PairedList.item
+msgid  "Sardinian"
+msgstr "sardinski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PairedList.item
+msgid  "Dzongkha"
+msgstr "džonkški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PairedList.item
+msgid  "Swahili (Tanzania)"
+msgstr "svahilski (Tanzanija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PairedList.item
+msgid  "Lao"
+msgstr "laoški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PairedList.item
+msgid  "Irish"
+msgstr "irski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PairedList.item
+msgid  "Tibetan (PR China)"
+msgstr "tibetanski (LR Kitajska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PairedList.item
+msgid  "Georgian"
+msgstr "gruzijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PairedList.item
+msgid  "Frisian"
+msgstr "frizijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PairedList.item
+msgid  "Tswana (South Africa)"
+msgstr "tsvanski (Južna Afrika)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PairedList.item
+msgid  "Zulu"
+msgstr "zulujski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PairedList.item
+msgid  "Vietnamese"
+msgstr "vietnamski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PairedList.item
+msgid  "Breton"
+msgstr "bretonski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PairedList.item
+msgid  "Kalaallisut"
+msgstr "kalalisutski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PairedList.item
+msgid  "Ndebele, South"
+msgstr "ndebelski, južni"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PairedList.item
+msgid  "Southern Sotho"
+msgstr "južnosotski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PairedList.item
+msgid  "Swazi"
+msgstr "svazijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PairedList.item
+msgid  "Tsonga"
+msgstr "tsongski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PairedList.item
+msgid  "Venda"
+msgstr "vendski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PairedList.item
+msgid  "Tswana (Botswana)"
+msgstr "tsvanski (Bocvana)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PairedList.item
+msgid  "Xhosa"
+msgstr "koški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PairedList.item
+msgid  "Sinhala"
+msgstr "sinhalski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PairedList.item
+msgid  "Moore"
+msgstr "mavrski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PairedList.item
+msgid  "Bambara"
+msgstr "bambarski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PairedList.item
+msgid  "Akan"
+msgstr "akanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PairedList.item
+msgid  "Luxembourgish"
+msgstr "luksemburški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PairedList.item
+msgid  "Friulian"
+msgstr "furlanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PairedList.item
+msgid  "Fijian"
+msgstr "fidžijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PairedList.item
+msgid  "Afrikaans (Namibia)"
+msgstr "afrikanski (Namibija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PairedList.item
+msgid  "English (Namibia)"
+msgstr "angleški (Namibija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PairedList.item
+msgid  "Walloon"
+msgstr "valonski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PairedList.item
+msgid  "Coptic"
+msgstr "koptski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PairedList.item
+msgid  "Tigrigna (Eritrea)"
+msgstr "tigrajski (Eritreja)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PairedList.item
+msgid  "Tigrigna (Ethiopia)"
+msgstr "tigrajski (Etiopija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PairedList.item
+msgid  "Amharic"
+msgstr "amharski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PairedList.item
+msgid  "Kirghiz"
+msgstr "kirgiški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PairedList.item
+msgid  "German (Belgium)"
+msgstr "nemški (Belgija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PairedList.item
+msgid  "Chuvash"
+msgstr "čuvaški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PairedList.item
+msgid  "Burmese"
+msgstr "burmanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PairedList.item
+msgid  "Hausa (Nigeria)"
+msgstr "havški (Nigerija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PairedList.item
+msgid  "Hausa (Ghana)"
+msgstr "havški (Gana)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PairedList.item
+msgid  "Éwé"
+msgstr "evejski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PairedList.item
+msgid  "English (Ghana)"
+msgstr "angleški (Gana)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PairedList.item
+msgid  "Sango"
+msgstr "sangojski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PairedList.item
+msgid  "Tagalog"
+msgstr "tagaloški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PairedList.item
+msgid  "Ganda"
+msgstr "gandajski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PairedList.item
+msgid  "Lingala"
+msgstr "lingalski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PairedList.item
+msgid  "Low German"
+msgstr "nizkonemški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PairedList.item
+msgid  "Hiligaynon"
+msgstr "hiligajnonski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PairedList.item
+msgid  "Nyanja"
+msgstr "njandžski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PairedList.item
+msgid  "Kashubian"
+msgstr "kašubijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PairedList.item
+msgid  "Spanish (Cuba)"
+msgstr "španski (Kuba)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PairedList.item
+msgid  "Tetun (Indonesia)"
+msgstr "tetunski (Indonezija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PairedList.item
+msgid  "Quechua (Bolivia, North)"
+msgstr "kečuanski (Bolivija, sever)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PairedList.item
+msgid  "Quechua (Bolivia, South)"
+msgstr "kečuanski (Bolivija, jug)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PairedList.item
+msgid  "Somali"
+msgstr "somalski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PairedList.item
+msgid  "Sami, Inari (Finland)"
+msgstr "samski, Inari (Finska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PairedList.item
+msgid  "Sami, Lule (Norway)"
+msgstr "samski, Lule (Norveška)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PairedList.item
+msgid  "Sami, Lule (Sweden)"
+msgstr "samski, Lule (Švedska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PairedList.item
+msgid  "Sami, Northern (Finland)"
+msgstr "samski, severni (Finska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PairedList.item
+msgid  "Sami, Northern (Norway)"
+msgstr "samski, severni (Norveška)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PairedList.item
+msgid  "Sami, Northern (Sweden)"
+msgstr "samski, severni (Švedska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PairedList.item
+msgid  "Sami, Skolt (Finland)"
+msgstr "samski, Skolt (Finska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PairedList.item
+msgid  "Sami, Southern (Norway)"
+msgstr "samski, južni (Norveška)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PairedList.item
+msgid  "Sami, Southern (Sweden)"
+msgstr "samski, južni (Švedska)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PairedList.item
+msgid  "Sami, Kildin (Russia)"
+msgstr "samski, Kildin (Rusija)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PairedList.item
+msgid  "Guaraní, Paraguayan"
+msgstr "guaranski, paragvajski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PairedList.item
+msgid  "Bodo"
+msgstr "bodojski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PairedList.item
+msgid  "Dogri"
+msgstr "dogrijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PairedList.item
+msgid  "Maithili"
+msgstr "maitilski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PairedList.item
+msgid  "Santali"
+msgstr "santalski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PairedList.item
+msgid  "Tetun (Timor-Leste)"
+msgstr "tetunski (Timor-Leste)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PairedList.item
+msgid  "Turkmen"
+msgstr "turkmenski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PairedList.item
+msgid  "Maltese"
+msgstr "malteški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PairedList.item
+msgid  "Tok Pisin"
+msgstr "tokpizinski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PairedList.item
+msgid  "Shuswap"
+msgstr "šusvapski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.PairedList.item
+msgid  "Oromo"
+msgstr "oromski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.PairedList.item
+msgid  "Greek, Ancient"
+msgstr "grški, stari"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.PairedList.item
+msgid  "Yiddish (Israel)"
+msgstr "jidiš (Izrael)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.PairedList.item
+msgid  "Quechua (Ecuador)"
+msgstr "kečuanski (Ekvador)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.PairedList.item
+msgid  "Uyghur"
+msgstr "ujgurski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.PairedList.item
+msgid  "Asturian"
+msgstr "asturijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.PairedList.item
+msgid  "Sorbian, Upper"
+msgstr "lužiško srbski, gornji"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.PairedList.item
+msgid  "Sorbian, Lower"
+msgstr "lužiško srbski, spodnji"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.PairedList.item
+msgid  "Latgalian"
+msgstr "latgalski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PairedList.item
+msgid  "Maore"
+msgstr "maoreški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.PairedList.item
+msgid  "Bushi"
+msgstr "bušijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAHITIAN.PairedList.item
+msgid  "Tahitian"
+msgstr "tahitijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MALAGASY_PLATEAU.PairedList.item
+msgid  "Malagasy, Plateau"
+msgstr "malgaški, plateau"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PAPIAMENTU.PairedList.item
+msgid  "Papiamentu (Netherlands Antilles)"
+msgstr "papiamento (Nizozemski Antili)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_PAPIAMENTU_ARUBA.PairedList.item
+msgid  "Papiamento (Aruba)"
+msgstr "papiamento (Aruba)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_CAMPIDANESE.PairedList.item
+msgid  "Sardinian, Campidanese"
+msgstr "sardinski, kampidanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_GALLURESE.PairedList.item
+msgid  "Sardinian, Gallurese"
+msgstr "sardinski, galurski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_LOGUDORESE.PairedList.item
+msgid  "Sardinian, Logudorese"
+msgstr "sardinski, logudorski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_SASSARESE.PairedList.item
+msgid  "Sardinian, Sassarese"
+msgstr "sardinski, sasareški"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAFIA.PairedList.item
+msgid  "Bafia"
+msgstr "bafijski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GIKUYU.PairedList.item
+msgid  "Gikuyu"
+msgstr "gikujski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YORUBA.PairedList.item
+msgid  "Yoruba"
+msgstr "jorubski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_UKRAINE.PairedList.item
+msgid  "Rusyn (Ukraine)"
+msgstr "rusinski (Ukrajina)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_SLOVAKIA.PairedList.item
+msgid  "Rusyn (Slovakia)"
+msgstr "rusinski (Slovaška)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_YIDDISH_US.PairedList.item
+msgid  "Yiddish (USA)"
+msgstr "jidiš (ZDA)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAWAIIAN_UNITED_STATES.PairedList.item
+msgid  "Hawaiian"
+msgstr "havajski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LIMBU.PairedList.item
+msgid  "Limbu"
+msgstr "limbujski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOJBAN.PairedList.item
+msgid  "Lojban"
+msgstr "lojbanski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KABYLE.PairedList.item
+msgid  "Kabyle"
+msgstr "kabilski"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAITIAN.PairedList.item
+msgid  "Haitian"
+msgstr "haitijski"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
+msgid  "Display IDs"
+msgstr "Prikaži ID-je"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
+msgid  "This is the input window"
+msgstr "To je vnosno okno"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
+msgid  "Transfer to TestTool"
+msgstr "Prenesi v orodje za preizkušanje"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
+msgid  "Show all windows"
+msgstr "Prikaži vsa okna"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
+msgid  "Show short names (if available)"
+msgstr "Prikaži kratka imena (če so na voljo)"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
+msgid  "Always show long-name"
+msgstr "Vedno prikaži dolga imena"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
+msgid  "DisplayHID"
+msgstr "Prikaži HID"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
+msgid  "Translation"
+msgstr "Prevod"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
+msgid  "~Edit"
+msgstr "~Uredi"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
+msgid  "Original Text"
+msgstr "Izvorno besedilo"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
+msgid  "Comment"
+msgstr "Komentar"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
+msgid  "~Comment"
+msgstr "~Komentar"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
+msgid  "~Select"
+msgstr "I~zberi"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
+msgid  "~Restore"
+msgstr "~Obnovi"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
+msgid  "~Accept"
+msgstr "~Sprejmi"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
+msgid  "~Next"
+msgstr "~Naprej"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
+msgid  "Inplace Translation"
+msgstr "Prevod na mestu"
+
+#: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
+msgid  "The Translation will be lost. Proceed anyway?"
+msgstr "Prevod bo izgubljen. Želite vseeno nadaljevati?"
+
+#: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
+msgid  "The Control is no longer valid. The Translation cannot be saved."
+msgstr "Kontrolnik ni več veljaven. Prevoda ni mogoče shraniti."
+
+#: source/plugapp/testtool.src#TT_GPF.String.Text
+msgid  "GPF occurred"
+msgstr "Prišlo je do splošne napake strani (GPF)"
+
+#: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
+msgid  "HelpID does not match UniqueID: "
+msgstr "HelpID se ne ujema z UniqueID: "
+
+#: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.String.Text
+msgid  "Tab Panel Scroll Button, backward"
+msgstr "Drsnik za zavihke, nazaj"
+
+#: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.String.Text
+msgid  "Tab Panel Scroll Button, forward"
+msgstr "Drsnik za zavihke, naprej"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
+msgid  "Roadmap Skeleton Demo"
+msgstr "Demonstracija okostja načrtovane poti"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
+msgid  "Welcome"
+msgstr "Dobrodošli"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
+msgid  "Prepare"
+msgstr "Pripravi"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
+msgid  "Setup"
+msgstr "Namesti"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
+msgid  "Finish"
+msgstr "Dokončaj"

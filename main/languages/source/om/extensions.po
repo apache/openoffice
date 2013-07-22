@@ -1,0 +1,2651 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+msgid  "Address Book Data Source Wizard"
+msgstr "Masaka Madda Deetaa Yaadannoo Teessoo"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
+msgid  "Address book type"
+msgstr "Akaakuu yaadannoo teessoo"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
+msgid  "Connection Settings"
+msgstr "Qindaa'inoota Walindhaa"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
+msgid  "Table selection"
+msgstr "Filannoo gabatee"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
+msgid  "Field Assignment"
+msgstr "Ramadama Dirree"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
+msgid  "Data Source Title"
+msgstr "Mataduree Madda Deetaa"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr "%PRODUCTNAME deetaa teessoo amma sirna kee keessa jiru akka geessu si taasisa. Kana gochuuf, deetaan teessoo unka gabataawaatiin akka argamu maddi deetaa %PRODUCTNAME ni uumama.\n\nMasakni kun madda deetaa akka uumtu si gargaara."
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
+msgid  "Please select the type of your external address book:"
+msgstr "Mee akaakuu yaadannoo teessoo alaantoo kee filadhu:"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
+msgid  "Evolution"
+msgstr "Tirannoo"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
+msgid  "Groupwise"
+msgstr "Gareedhaan"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
+msgid  "Evolution LDAP"
+msgstr "LDAP tirannoo"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
+msgid  "Mozilla / Netscape"
+msgstr "Moozillaa / Neetiskeepii"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
+msgid  "Thunderbird"
+msgstr "Tandarbardii"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
+msgid  "KDE address book"
+msgstr "Yaadannoo teessoo KDE"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
+msgid  "Mac OS X address book"
+msgstr "Yaadannoo teessoo Mac OS X"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
+msgid  "LDAP address data"
+msgstr "Deetaa teessoo LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
+msgid  "Outlook address book"
+msgstr "Yaadannoo teessoo Aawutluukii"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
+msgid  "Windows system address book"
+msgstr "Yaadannoo teessoo sirna Wiindoo"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
+msgid  "Other external data source"
+msgstr "Madda deetaa alaantoo biroo"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr "Madda deetaa haaraa qindeessuuf, odeeffannoon dabalataa barbaachisaa dha.\n\nQaaqa biroo odeeffannoo barbaachisu itti galchitu banuuf qabduu itti aanu cuqaasi."
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
+msgid  "Settings"
+msgstr "Qindaa'inoota"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr "Walindhaan madda deetaa uumamuu hin dandeenye.\nItti fufuun dura, mee qindaa'inoota hojjataman mirkaneessi, ykn (fuula darbe irratti) akaakuu madda deeetaa teessoo biroo fili."
+
+#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr "Maddi deetaa alaantoo ati filte yaadannoo teessoo tokkoo ol ofkeessaa qaba.\nMee isa yeroo hedduu itti fayyadamuu barbaaddu fili:"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "Deetaa teessoo qajoojiilee kee keessa galchuuf, %PRODUCTNAME dirreewwan kumtu deetaa kam akka qabaatu beeekuu qaba.\n\nFakkeenyaaf, teessoowwan ergaa-e dirree \"ergaa\", ykn \"Ergaa-e\", ykn \"EE\" jedhamu - ykn gutumaan guutuutti adda ta'e keessa olkaa'uu ni dandeessa turte.\n\nQaaqa biroo madda deetaa keetiif qindaa'inoota galchuu akka dandeessu si taasisu banuuf qabduu armaan gadii cuqaasi."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
+msgid  "Field Assignment"
+msgstr "Ramadama Dirree"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr "Deetaa teessoo %PRODUCTNAME keessa galchuuf odeeffannoon barbaachisu sana ture.\n\nAmma, %PRODUCTNAME keessaa maqaa kan madda deetaa isa jalatti galmeessuu barbaaddu galchi."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
+msgid  "Location"
+msgstr "Iddoo"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
+msgid  "Browse..."
+msgstr "Sakatta'i..."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
+msgstr "Yaadannoo teessoo kana moojuulonni %PRODUCTNAME keessaa marti akka argatan godhi."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
+msgid  "Address book name"
+msgstr "Maqaa yaadannoo teessoo"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr "Maddi deetaa biroo kanaan dura maqaa kana qaba. Maddaaleen deetaa hundataan maqaa addataa qabaachuu waan qabaniif maqaa biroo filachuu qabda."
+
+#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
+msgid  "Please select a type of address book."
+msgstr "Mee akaakuu yaadannoo teessoo fili."
+
+#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+msgid  "Addresses"
+msgstr "Teessoowwan"
+
+#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+msgid  "Create Address Data Source"
+msgstr "Madda Deetaa Teessoo Uumi"
+
+#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+msgid  "The connection could not be established."
+msgstr "Walindhaan uumamuu hin dandeenye."
+
+#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+msgid  "Please check the settings made for the data source."
+msgstr "Mee qindaa'inoota madda deetaatiif hojjataman mirkaneessi."
+
+#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+msgid  "Address Data - Field Assignment"
+msgstr "Deetaa Teessoo - Ramadama Dirree"
+
+#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr "Yeroo ammaa kana dirreewwan homtuu hin ramadamne.\nJalqaba: \"Faayilii - Qajojii - Madda Yaadannoo Teessoo...\" filuudhaan\ndirreewwan amma ykn booda ramaduu ni dandeessa"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Table"
+msgstr "Gabatee"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Search Key"
+msgstr "Furtuu Barbaachaa"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
+#, fuzzy
+msgid  "AutoFilter"
+msgstr "OfmaaGingilchaa"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Standard Filter"
+msgstr "Gingilchaa Waaltinaa"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
+#, fuzzy
+msgid  "Remove Filter"
+msgstr "Gingilchaa Balleessi"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Column Arrangement"
+msgstr "Teessuma Tarjaa"
+
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Data Source"
+msgstr "Madda Deetaa"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
+msgid  "The following column names could not be assigned:\\n"
+msgstr "Maqaaleen tarjaa armaan gadii ramadamuu hin dandeenye:\n"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
+msgid  "Article"
+msgstr "Barreeffata"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
+msgid  "Book"
+msgstr "Kitaaba"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
+msgid  "Brochures"
+msgstr "Biroosharoota"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
+#, fuzzy
+msgid  "Conference proceedings"
+msgstr "Ittii fuffinsaa konfiransii"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
+#, fuzzy
+msgid  "Book excerpt"
+msgstr "Cuunfaa kitaabaa"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
+#, fuzzy
+msgid  "Book excerpt with title"
+msgstr "Cuunfaa kitaabaa mataduree wajjin"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
+#, fuzzy
+msgid  "Conference proceedings"
+msgstr "Ittii fuffinsaa konfiransii"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
+#, fuzzy
+msgid  "Journal"
+msgstr "Kitaabee"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
+#, fuzzy
+msgid  "Techn. documentation"
+msgstr "Galmee teeknikaa"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
+#, fuzzy
+msgid  "Thesis"
+msgstr "Mitahaa"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
+#, fuzzy
+msgid  "Miscellaneous"
+msgstr "Walmakee"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
+#, fuzzy
+msgid  "Dissertation"
+msgstr "Mitahaa"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
+#, fuzzy
+msgid  "Conference proceedings"
+msgstr "Itti fufiinsa koonfaransii"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
+#, fuzzy
+msgid  "Research report"
+msgstr "Gabaasa qorannaa"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
+#, fuzzy
+msgid  "Unpublished"
+msgstr "Kan hin maxxanfamne"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
+#, fuzzy
+msgid  "e-mail"
+msgstr "ergaa-e"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
+#, fuzzy
+msgid  "WWW document"
+msgstr "Galmee WWW"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
+#, fuzzy
+msgid  "User-defined1"
+msgstr "Hiika-fayyadamaa1"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
+#, fuzzy
+msgid  "User-defined2"
+msgstr "Hiika-fayyadamaa2"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
+#, fuzzy
+msgid  "User-defined3"
+msgstr "Hiika-fayyadamaa3"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
+#, fuzzy
+msgid  "User-defined4"
+msgstr "Hiika-fayyadamaa4"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
+#, fuzzy
+msgid  "User-defined5"
+msgstr "Hiika-fayyadamaa5"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
+#, fuzzy
+msgid  "General"
+msgstr "Waliigala"
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
+#, fuzzy
+msgid  "Insert Section..."
+msgstr "Kutaa Saagi..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
+#, fuzzy
+msgid  "Delete Section..."
+msgstr "Kutaa Haqi..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
+#, fuzzy
+msgid  "Modify Name..."
+msgstr "Maqaa Fooyyessi..."
+
+#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
+#, fuzzy
+msgid  "~Short name"
+msgstr "Maqaa gabaabaa"
+
+#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
+#, fuzzy
+msgid  "~Type"
+msgstr "Akaakuu"
+
+#: source/bibliography/sections.src#ST_YEAR.String.Text
+#, fuzzy
+msgid  "~Year"
+msgstr "Waggaa"
+
+#: source/bibliography/sections.src#ST_AUTHOR.String.Text
+#, fuzzy
+msgid  "Author(s)"
+msgstr "Barreessaa(ituu)"
+
+#: source/bibliography/sections.src#ST_TITLE.String.Text
+#, fuzzy
+msgid  "Tit~le"
+msgstr "Mataduree"
+
+#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
+#, fuzzy
+msgid  "~Publisher"
+msgstr "Maxxansaa"
+
+#: source/bibliography/sections.src#ST_ADDRESS.String.Text
+#, fuzzy
+msgid  "A~ddress"
+msgstr "Teessoo"
+
+#: source/bibliography/sections.src#ST_ISBN.String.Text
+#, fuzzy
+msgid  "~ISBN"
+msgstr "~ISBN"
+
+#: source/bibliography/sections.src#ST_CHAPTER.String.Text
+#, fuzzy
+msgid  "~Chapter"
+msgstr "Boqonnaa"
+
+#: source/bibliography/sections.src#ST_PAGE.String.Text
+#, fuzzy
+msgid  "Pa~ge(s)"
+msgstr "Fuula(ota)"
+
+#: source/bibliography/sections.src#ST_EDITOR.String.Text
+#, fuzzy
+msgid  "Editor"
+msgstr "Gulaalaa"
+
+#: source/bibliography/sections.src#ST_EDITION.String.Text
+#, fuzzy
+msgid  "Ed~ition"
+msgstr "Maxxansa"
+
+#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
+#, fuzzy
+msgid  "~Book title"
+msgstr "Mataduree kitaabaa"
+
+#: source/bibliography/sections.src#ST_VOLUME.String.Text
+#, fuzzy
+msgid  "Volume"
+msgstr "Qabeentaa"
+
+#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
+#, fuzzy
+msgid  "Publication t~ype"
+msgstr "Akaakuu maxxansaa"
+
+#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
+#, fuzzy
+msgid  "Organi~zation"
+msgstr "Dhaabbata"
+
+#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
+#, fuzzy
+msgid  "Instit~ution"
+msgstr "Dhaabbata"
+
+#: source/bibliography/sections.src#ST_SCHOOL.String.Text
+#, fuzzy
+msgid  "University"
+msgstr "Uniivarsitii"
+
+#: source/bibliography/sections.src#ST_REPORT.String.Text
+#, fuzzy
+msgid  "Type of re~port"
+msgstr "Akaakuu gabaasaa"
+
+#: source/bibliography/sections.src#ST_MONTH.String.Text
+#, fuzzy
+msgid  "~Month"
+msgstr "Ji'a"
+
+#: source/bibliography/sections.src#ST_JOURNAL.String.Text
+#, fuzzy
+msgid  "~Journal"
+msgstr "Kitaabee"
+
+#: source/bibliography/sections.src#ST_NUMBER.String.Text
+#, fuzzy
+msgid  "Numb~er"
+msgstr "Lakkoofsa"
+
+#: source/bibliography/sections.src#ST_SERIES.String.Text
+#, fuzzy
+msgid  "Se~ries"
+msgstr "Walfaannee"
+
+#: source/bibliography/sections.src#ST_ANNOTE.String.Text
+#, fuzzy
+msgid  "Ann~otation"
+msgstr "Ibsa"
+
+#: source/bibliography/sections.src#ST_NOTE.String.Text
+#, fuzzy
+msgid  "~Note"
+msgstr "Yaadannoo"
+
+#: source/bibliography/sections.src#ST_URL.String.Text
+#, fuzzy
+msgid  "URL"
+msgstr "URL"
+
+#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
+#, fuzzy
+msgid  "User-defined field ~1"
+msgstr "Dirree hiika-fayyadamaa 1"
+
+#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
+#, fuzzy
+msgid  "User-defined field ~2"
+msgstr "Dirree hiika-fayyadamaa 2"
+
+#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
+#, fuzzy
+msgid  "User-defined field ~3"
+msgstr "Dirree hiika-fayyadamaa 3"
+
+#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
+#, fuzzy
+msgid  "User-defined field ~4"
+msgstr "Dirree hiika-fayyadamaa 4"
+
+#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
+#, fuzzy
+msgid  "User-defined field ~5"
+msgstr "Dirree hiika-fayyadamaa 5"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
+msgid  "Column names"
+msgstr "Maqaalee tarjaa"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
+msgid  "<none>"
+msgstr "<homaa>"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
+msgid  "Column Layout for Table %1"
+msgstr "Teessuma tarjaa gabatee %1"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
+msgid  "Choose Data Source"
+msgstr "Madda Deetaa Fili"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
+msgid  "Entry"
+msgstr "Galfata"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
+msgid  "Field selection:"
+msgstr "Filannoo dirree:"
+
+#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
+msgid  "Table;Query;Sql;Sql [Native]"
+msgstr "Gabatee;Gaafata;Sql;Sql [Qe'ee]"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
+msgid  "Bibliography Database"
+msgstr "Kuusdeetaa Moorquusaa"
+
+#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
+msgid  "Do you want to edit the column arrangement?"
+msgstr "Teessuma tarjaa gulaaluu barbaadda?"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
+msgid  "Table Selection"
+msgstr "Filannoo Gabatee"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
+msgid  "Control"
+msgstr "To'annaa"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr "Gara mirgaatti, gabateewwan madda deetaa unkaa irraa mara argita.\n\n\nGabatee deetaan akka bu'uura qabeentaa tarreetti irraa fayyadamuu qabu fili: Bu'uuraa qabeentoota tarree deetaa fayyadu gabatee fili:"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
+msgid  "Field Selection"
+msgstr "Filannoo Dirree"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "Dirreewwan jiran"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
+msgid  "Display field"
+msgstr "Dirree agarsiisi"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
+msgid  "The contents of the field selected will be shown in the combo box list."
+msgstr "Qabeentoonni dirree filatamee tarree saanduqa makaa keessatti agarsiifamu."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgstr "Qabeentoonni dirree filatamee yoo dirreewwan kornyatan walfakkaataa ta'an tarree saanduqaa keessatti ni agarsiifamu."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
+msgid  "Field Link"
+msgstr "Geessituu Dirree"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgstr "Kun iddoo gatiin dirree agarsiisa irraa akka mul'atuug dirreewwan qabeentoota walsiman qaban itti filattudha."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
+msgid  "Field from the ~Value Table"
+msgstr "Dirree Gabatee Gatii irraa"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
+msgid  "Field from the ~List Table"
+msgstr "Dirree Gabatee Tarree irraa"
+
+#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr "Gatii saanduqa makaa dirree kuusdeetaa keessa olkaa'uu ykn faayidaa agrasiisaaf fayyadamuu ni dandeessa."
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
+msgid  "Field Selection"
+msgstr "Filannoo Dirree"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
+msgid  "Table element"
+msgstr "Maalimaa gabatee"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "Dirreewwan jiran"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
+msgid  "Selected fields"
+msgstr "Dirreewwan filataman"
+
+#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
+msgid  " (Date)"
+msgstr " (Guyyaa)"
+
+#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
+msgid  " (Time)"
+msgstr " (Yeroo)"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
+msgid  "Group Element Wizard"
+msgstr "Masaka Maalimaa Garee"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
+msgid  "Table Element Wizard"
+msgstr "Masaka Maalimaa Gabatee"
+
+#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
+msgid  "List Box Wizard"
+msgstr "Masaka Saanduqa Tarree"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
+msgid  "Combo Box Wizard"
+msgstr "Masaka Saanduqa Makaa"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
+msgid  "The table connection to the data source could not be established."
+msgstr "Walindhaan gabatee kan madda deetaa uumamuu hin dandeenye."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
+msgid  "Data"
+msgstr "Deetaa"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
+msgid  "Data"
+msgstr "Deetaa"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr "Ammaaf, unki to'annaa qabaatu madda deetaatti hin kornyanne.\n\nMee madda deetaa fi gabatee fili.\n\n\nQindaa'inoonni fuula kanarratti godhaman akkuma fuulichi dhiifameen hojiirra akka oolan yaadadhu."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
+msgid  "~Data source:"
+msgstr "Madda Deetaa:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
+msgid  "~Table / Query:"
+msgstr "Gabatee / Gaafata:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
+msgid  "Database Field"
+msgstr "Dirree Kuusdeetaa"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
+msgid  "Do you want to save the value in a database field?"
+msgstr "Gatii dirree kuusdeetaa keessa olkaa'uu barbaaddaa?"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr "Eeyyee, dirree kuusdeetaa armaan gadii keessa olkaa'uun barbaada:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
+msgid  "~No, I only want to save the value in the form."
+msgstr "Lakki, gatii unka keessa olkaa'uu qofaan barbaada."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
+msgid  "Form"
+msgstr "Unka"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
+msgid  "Data source"
+msgstr "Madda deetaa"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
+msgid  "Content type"
+msgstr "Akaakuu qabiyyee"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
+msgid  "Content"
+msgstr "Qabiyyee"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
+msgid  "Table"
+msgstr "Gabatee"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
+msgid  "Query"
+msgstr "Gaafata"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
+msgid  "SQL command"
+msgstr "Ajaja SQL"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
+msgid  "Data"
+msgstr "Deetaa"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
+msgid  "Which ~names do you want to give the option fields?"
+msgstr "Dirreewwan dirqaleetiif maqaawwan kam kennuu barbaadda?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "Dirreewwan dirqalee"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
+msgid  "Default Field Selection"
+msgstr "Filannoo Dirree Durtii"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
+msgid  "Should one option field be selected as a default?"
+msgstr "Dirreen dirqalee tokko akka durtiitti filatamuu qabaa?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
+msgid  "~Yes, the following:"
+msgstr "Eeyyee, isa kanaa gadii:"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
+msgid  "No, one particular field is not going to be selected."
+msgstr "Lakki, dirreen tokko hin filamu."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
+msgid  "Field Values"
+msgstr "Gatiiwwan Dirree"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
+msgid  "When you select an option, the option group is given a specific value."
+msgstr "Dirqalee tokko yammuu filtu, gareen dirqalee gatii murtaa'aa itti laatama."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
+msgid  "Which ~value do you want to assign to each option?"
+msgstr "Tokkoon tokkoo dirqaleetti gatii kam ramaduu barbaadda?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "Dirreewwan dirqalee"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
+msgid  "Create Option Group"
+msgstr "Garee Dirqalee Uumi"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
+msgid  "Which ~caption is to be given to your option group?"
+msgstr "Garee dirqalee keetti maqfakkii kamtu kennamuu qaba?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
+msgid  "These were all details needed to create the option group."
+msgstr "Kanneen baldhintaa garee dirqalee uumuuf barbaachisani dha."
+
+#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgstr "Gatii garee dirqalee dirree kuusdeetaa keessatti olkaa'uu ykn gochaa fuulduraatiif fayyadamuu ni dandeessa."
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
+msgid  "<< Back"
+msgstr "<< Duubatti"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
+msgid  "Next >>"
+msgstr "Itti aanee >>"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
+msgid  "Accept"
+msgstr "Fudhu"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
+msgid  "Finish"
+msgstr "Xumuri"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
+msgid  " - Software License Agreement"
+msgstr " - Waliigaltee Hayyamtaa Mosaajjii"
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
+msgid  "- User Data"
+msgstr "- Deetaa Fayyadamaa"
+
+#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
+msgid  "Welcome"
+msgstr "Baga nagaan dhufte"
+
+#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+
+#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
+msgid  "License Agreement"
+msgstr "Waliigaltee Hayyamtaa"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation:"
+msgstr "Ijaarsa itti fufuuf ejjatoowwan kanneen hordofi:"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
+msgid  "1."
+msgstr "1."
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr "Waliigaltee Hayyamtaa guutuu ilaali. Mee barruu hayyamtaa waamaraa qaaqa kanaa kabala marfataa ykn qabduu '%PAGEDOWN' qaaqa kana."
+
+#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
+msgid  "Page Down"
+msgstr "Fuula Gadii"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
+msgid  "2."
+msgstr "2."
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
+msgid  "Accept the License Agreement."
+msgstr "Waliigaltee Haayyamtaa fudhu."
+
+#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
+msgid  "I accept the terms of the Agreement."
+msgstr "Jechoota Waliigaltee nin fudha."
+
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
+msgid  "~Accept"
+msgstr "Fudhu"
+
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
+msgid  "Decline"
+msgstr "Didi"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
+#, fuzzy
+msgid  "Tab Order"
+msgstr "Durduuba Caancalaa"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
+#, fuzzy
+msgid  "Controls"
+msgstr "Too'annoota"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
+#, fuzzy
+msgid  "Move Up"
+msgstr "Ol Siiqsi"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
+#, fuzzy
+msgid  "Move Down"
+msgstr "Gadi Siiqsi"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
+#, fuzzy
+msgid  "Automatic Sort"
+msgstr "Fooyiinsa Ofmaa"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+#, fuzzy
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr "Kanneen dirreewwan to'annaa $control_name$ $control_class$tiif akka dirree moggaasaatti fayyaduu danda'anidha."
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
+#, fuzzy
+msgid  "~No assignment"
+msgstr "Ramaddiin hin jiru"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
+#, fuzzy
+msgid  "Label Field Selection"
+msgstr "Filannoo Dirree Moggaasaa"
+
+#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
+#, fuzzy
+msgid  "Forms"
+msgstr "Unkaalee"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr "Akaakuu deetaa '#type#' akkayyaa irraa haquu barbaaddaa?\nKana gochuun to'annoota akaakuu deetaa kanatti kornyatan mara akka dhiibbessu yaadadhu."
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
+msgid  "Button"
+msgstr "Qabduu"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
+msgid  "Option Button"
+msgstr "Qabduu Dirqalee"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
+msgid  "Check Box"
+msgstr "Saanduqa Filannoo"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label Field"
+msgstr "Dirree Moggaasaa"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
+msgid  "Group Box"
+msgstr "Saanduqa Garee"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
+msgid  "Text Box"
+msgstr "Saanduqa Barruu"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "Dirree Dhangeeffame"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
+msgid  "List Box"
+msgstr "Saanduqa Tarree"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
+msgid  "Combo Box"
+msgstr "Saanduqa Makaa"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
+msgid  "Image Button"
+msgstr "Qabduu Fakkaattii"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
+msgid  "Hidden Control"
+msgstr "Too'annaa Dhokataa"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
+msgid  "Control (unknown type)"
+msgstr "Too'annaa (akaakuu hin beekemne)"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "Too'annaa Fakkaattii"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
+msgid  "File Selection"
+msgstr "Filannoo Faayilii"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
+msgid  "Date Field"
+msgstr "Dirree Guyyaa"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
+msgid  "Time Field"
+msgstr "Dirree Yeroo"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
+msgid  "Numeric Field"
+msgstr "Dirree Lakkoofsaa"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
+msgid  "Currency Field"
+msgstr "Dirree Maallaqaa"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
+msgid  "Pattern Field"
+msgstr "Dirree Sarxaa"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
+msgid  "Table Control "
+msgstr "Too'annaa Gabatee "
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
+msgid  "Link fields"
+msgstr "Dirreewwa kornyeessi"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
+msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr "Deetaa baldhintaa waa'ee kuusaa ammaa kan unka hundataa agarsiisuuf unka xiqqaa fayyadamuun ni danda'ama. Kana gochuuf, tarjaalee unka xiqqaa keessaa isa kamtu tarjaalee unka hundataa keessaa isa kam waliin akka walsimu murteessuu ni dandeessa."
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
+msgid  "Suggest"
+msgstr "Yaada dhiyeessi"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
+msgid  "Sub Form"
+msgstr "Unka Xiqqaa"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
+msgid  "Master Form"
+msgstr "Unka Hundataa"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
+msgid  "The columns of '#' could not be retrieved."
+msgstr "Tarjaaleen '#' keebaafatamuu hin dandeenye."
+
+#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
+msgid  "Default"
+msgstr "Durtii"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "Waliigala"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "Deetaa"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
+msgid  "No"
+msgstr "Lakki"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
+msgid  "Yes"
+msgstr "Eeyyeen"
+
+#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
+msgid  "Help"
+msgstr "Gargaarsa"
+
+#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
+msgid  "<Embedded-Image>"
+msgstr "<Fakkaattii-Hammatame>"
+
+#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
+#, fuzzy
+msgid  "Text"
+msgstr "Barruu"
+
+#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
+msgid  "Edit mask"
+msgstr "Haguuggee gulaali"
+
+#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
+msgid  "Literal mask"
+msgstr "Haguuggee dhugaa"
+
+#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
+msgid  "Read-only"
+msgstr "Dubbisqofaa"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
+msgid  "Enabled"
+msgstr "Dandeessifame"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "Mul'ataa"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
+msgid  "AutoFill"
+msgstr "OfmaaGuuti"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
+msgid  "Line count"
+msgstr "Baay'ina sararaa"
+
+#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
+msgid  "Max. text length"
+msgstr "Dheerina barruu olaantoo"
+
+#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
+msgid  "Spin Button"
+msgstr "Qabduu Qaanxii"
+
+#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
+msgid  "Strict format"
+msgstr "Dhangii jabaa"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
+msgid  "Thousands separator"
+msgstr "Gargareessaa lakkoofsaa"
+
+#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
+msgid  "Printable"
+msgstr "Maxxanfamaa"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
+msgid  "Frame"
+msgstr "Goodayyaa"
+
+#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
+msgid  "Help text"
+msgstr "Barruu gargaarsaa"
+
+#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
+msgid  "Help URL"
+msgstr "URLii Gargaarsaa"
+
+#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
+msgid  "Additional information"
+msgstr "Odeeffannoo dabalataa"
+
+#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
+msgid  "Password character"
+msgstr "Arfii iggitaa"
+
+#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
+msgid  "Tristate"
+msgstr "Haalsadee"
+
+#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
+msgid  "Empty string is NULL"
+msgstr "Diraa duwwaan NULL dha"
+
+#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
+msgid  "Decimal accuracy"
+msgstr "Sirrina kurnyee"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
+msgid  "Graphics"
+msgstr "Saxaatoo"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
+msgid  "Default selection"
+msgstr "Filannoo durtii"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
+msgid  "Default button"
+msgstr "Qabduu durtii"
+
+#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
+msgid  "Label Field"
+msgstr "Dirree Moggaasaa"
+
+#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
+msgid  "Label"
+msgstr "Moggaasa"
+
+#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "Hiriirfama"
+
+#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr "Hiriirfama Sarjaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
+msgid  "Top"
+msgstr "Irra"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
+msgid  "Middle"
+msgstr "Jidduu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
+msgid  "Bottom"
+msgstr "Jala"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
+msgid  "Graphics alignment"
+msgstr "Hiriirfama saxaatoo"
+
+#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "Bocquu"
+
+#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
+msgid  "Background color"
+msgstr "Halluu duubbee"
+
+#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
+msgid  "Border"
+msgstr "Handaara"
+
+#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
+msgid  "Icon size"
+msgstr "Hammamtaa sajoo"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
+msgid  "Small"
+msgstr "Xiqqaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
+msgid  "Large"
+msgstr "Guddaa"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
+msgid  "Positioning"
+msgstr "Qubachiisa"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
+msgid  "Navigation"
+msgstr "Naanna'insa"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
+msgid  "Acting on a record"
+msgstr "Kuusaa irrati waa gochuu"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
+msgid  "Filtering / Sorting"
+msgstr "Gingilchuu / Foo'uu"
+
+#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
+msgid  "Horizontal scroll bar"
+msgstr "Kabala marfataa sardalaa"
+
+#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
+msgid  "Vertical scroll bar"
+msgstr "Kabala marfataa sarjaa"
+
+#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
+msgid  "Word break"
+msgstr "Citiinsa jechaa"
+
+#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
+msgid  "Multiline input"
+msgstr "Naqa sararhedduu"
+
+#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
+msgid  "Multiselection"
+msgstr "Filannoo hedduu"
+
+#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
+msgid  "Name"
+msgstr "Maqaa"
+
+#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
+msgid  "Tab order"
+msgstr "Durduuba caancalaa"
+
+#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
+msgid  "Mouse wheel scroll"
+msgstr "Mariinsa golollee hantuutee"
+
+#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr "Gingilchaa"
+
+#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
+msgid  "Sort"
+msgstr "Fooyi"
+
+#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
+msgid  "Record marker"
+msgstr "Hojjattuu kuusaa"
+
+#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
+msgid  "Filter proposal"
+msgstr "Yaada ka'umsaa gingilchi"
+
+#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
+msgid  "Navigation bar"
+msgstr "Kabala naanna'insaa"
+
+#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
+msgid  "Cycle"
+msgstr "Maroo"
+
+#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
+msgid  "Tabstop"
+msgstr "Dhaabbata caancalaa"
+
+#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
+msgid  "Data field"
+msgstr "Dirree deetaa"
+
+#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
+msgid  "Dropdown"
+msgstr "Gadbuusi"
+
+#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
+msgid  "Bound field"
+msgstr "Dirree kornyate"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
+msgid  "List content"
+msgstr "Qabeentaa tarree"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
+msgid  "Type of list contents"
+msgstr "Akaakuu qabeentoota tarree"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
+msgid  "Content"
+msgstr "Qabeentaa"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
+msgid  "Content type"
+msgstr "Akaakuu qabeentaa"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
+msgid  "Allow additions"
+msgstr "Ida'uu hayyami"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
+msgid  "Allow deletions"
+msgstr "Haquu hayyami"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
+msgid  "Allow modifications"
+msgstr "Fooyyessuu hayyami"
+
+#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
+msgid  "Add data only"
+msgstr "Deetaa qofa ida'i"
+
+#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+msgid  "Data source"
+msgstr "Madda deetaa"
+
+#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
+msgstr "Dirreewwan durayyeessa kornyeessi"
+
+#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
+msgid  "Link slave fields"
+msgstr "Dirreewwan ittaanaa kornyeessi"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
+msgid  "Value min."
+msgstr "Gatii gad."
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
+msgid  "Value max."
+msgstr "Gatii olaa."
+
+#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
+msgid  "Incr./decrement value"
+msgstr "Gatii dabala/hir'isaa"
+
+#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
+msgid  "Currency symbol"
+msgstr "Mallattoo maallaqaa"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
+msgid  "Date min."
+msgstr "Guyyaa gad."
+
+#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
+msgid  "Date max."
+msgstr "Guyyaa olaa."
+
+#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
+msgid  "Date format"
+msgstr "Dhangii guyyaa"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
+msgid  "Selection"
+msgstr "Filannoo"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
+msgid  "Time min."
+msgstr "Yeroo gad."
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
+msgid  "Time max."
+msgstr "Yeroo olaa."
+
+#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
+msgid  "Time format"
+msgstr "Dhangii yeroo"
+
+#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
+msgid  "Prefix symbol"
+msgstr "Mallattoo dursoo"
+
+#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
+msgid  "Value"
+msgstr "Gatii"
+
+#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
+msgid  "Formatting"
+msgstr "Dhangeessuu"
+
+#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
+msgid  "Class ID"
+msgstr "ID Ramaddii"
+
+#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "Hojjaa"
+
+#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "Dalgee"
+
+#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
+msgid  "List index"
+msgstr "Kasaa tarree"
+
+#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
+msgid  "Row height"
+msgstr "Hojjaa tarree"
+
+#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
+msgid  "Fill color"
+msgstr "Halluu guuti"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
+msgid  "Line color"
+msgstr "Halluu sararaa"
+
+#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
+msgid  "Reference value (on)"
+msgstr "Gatii wabii (banaa)"
+
+#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
+msgid  "Reference value (off)"
+msgstr "Gatii wabii (dhaamaa)"
+
+#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
+msgid  "List entries"
+msgstr "Galfatoota tarree"
+
+#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
+msgid  "Action"
+msgstr "Gocha"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
+msgid  "Type of submission"
+msgstr "Akaakuu dabarsaa"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
+msgid  "Default status"
+msgstr "Haalojii durtii"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
+msgid  "Submission encoding"
+msgstr "Lakkaddeessuu dabarsaa"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
+msgid  "Default value"
+msgstr "Gatii durtii"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
+msgid  "Default text"
+msgstr "Barruu durtii"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
+msgid  "Default date"
+msgstr "Guyyaa durtii"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
+msgid  "Default time"
+msgstr "Yeroo durtii"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
+msgid  "Frame"
+msgstr "Goodayyaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
+msgid  "Without frame"
+msgstr "Goodayyaa malee"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
+msgid  "3D look"
+msgstr "Mul'annoo G3"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
+msgid  "Flat"
+msgstr "Diriiraa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
+msgid  "Valuelist"
+msgstr "Tarreegatii"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+msgid  "Table"
+msgstr "Gabatee"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+msgid  "Query"
+msgstr "Gaafata"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
+msgid  "Sql"
+msgstr "Sql"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
+msgid  "Sql [Native]"
+msgstr "Sql [Native]"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
+msgid  "Tablefields"
+msgstr "Dirreegabatee"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
+msgid  "Left"
+msgstr "Bitaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
+msgid  "Center"
+msgstr "Wiirtuu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
+msgid  "Right"
+msgstr "Mirga"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
+msgid  "None"
+msgstr "Homaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
+msgid  "Submit form"
+msgstr "Unka dabarsi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
+msgid  "Reset form"
+msgstr "Unka haaromsi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
+msgid  "Open document/web page"
+msgstr "Galmee/fuula saphaphuu bani"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
+msgid  "First record"
+msgstr "Kuusaa tokkoffaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
+msgid  "Previous record"
+msgstr "Kuusaa darbe"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
+msgid  "Next record"
+msgstr "Kuusaa itti aanu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
+msgid  "Last record"
+msgstr "Kuusaa maayyii"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
+msgid  "Save record"
+msgstr "Kuusaa olkaa'i"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
+msgid  "Undo data entry"
+msgstr "Galfata deetaa gaabbi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
+msgid  "New record"
+msgstr "Kuusaa haaraa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
+msgid  "Delete record"
+msgstr "Kuusaa haqi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
+msgid  "Refresh form"
+msgstr "Unka haaromsi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
+msgid  "Get"
+msgstr "Argadhu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
+msgid  "Post"
+msgstr "Dirbaasi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
+msgid  "Multipart"
+msgstr "Kutaa hedduu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
+msgid  "Text"
+msgstr "Barruu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
+msgid  "Standard (short)"
+msgstr "Waaltina (gabaabaa)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
+msgid  "Standard (short YY)"
+msgstr "Waaltina (gabaabaa YY)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
+msgid  "Standard (short YYYY)"
+msgstr "Waaltina (gabaabaa YYYY)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
+msgid  "Standard (long)"
+msgstr "Waaltina (dheeraa)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
+msgid  "DD/MM/YY"
+msgstr "GG/JJ/WW"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
+msgid  "MM/DD/YY"
+msgstr "JJ/GG/WW"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
+msgid  "YY/MM/DD"
+msgstr "WW/JJ/GG"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
+msgid  "DD/MM/YYYY"
+msgstr "GG/JJ/WWWW"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
+msgid  "MM/DD/YYYY"
+msgstr "JJ/GG/WWWW"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
+msgid  "YYYY/MM/DD"
+msgstr "WWWW/JJ/GG"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
+msgid  "YY-MM-DD"
+msgstr "WW-JJ-GG"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
+msgid  "YYYY-MM-DD"
+msgstr "WWW-JJ-GG"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
+msgid  "13:45"
+msgstr "13:45"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
+msgid  "13:45:00"
+msgstr "13:45:00"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
+msgid  "01:45 PM"
+msgstr "01:45 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
+msgid  "01:45:00 PM"
+msgstr "01:45:00 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
+msgid  "Not Selected"
+msgstr "Hin Filatamne"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
+msgid  "Selected"
+msgstr "Filatame"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
+msgid  "Not Defined"
+msgstr "Hin Murteeffamne"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
+msgid  "All records"
+msgstr "Kuusaalee mara"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
+msgid  "Active record"
+msgstr "Kuusaa ka'aa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
+msgid  "Current page"
+msgstr "Fuula ammaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
+msgid  "No"
+msgstr "Lakki"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
+msgid  "Yes"
+msgstr "Eeyyee"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
+msgid  "Parent Form"
+msgstr "Unka Haadhoo"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
+msgid  "None"
+msgstr "Homaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
+msgid  "Single"
+msgstr "Baaqqee"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
+msgid  "Multi"
+msgstr "Hedduu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
+msgid  "Range"
+msgstr "Hangii"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
+msgid  "Fill parameters"
+msgstr "Ulaagaalee guuti"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
+msgid  "Execute action"
+msgstr "Gocha raawwadhu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
+msgid  "After updating"
+msgstr "Haaromsuun booda"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
+msgid  "Before updating"
+msgstr "Haaromsuun dura"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
+msgid  "Before record action"
+msgstr "Gocha kuusaa dura"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
+msgid  "After record action"
+msgstr "Gocha kuusaa booda"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
+msgid  "Confirm deletion"
+msgstr "Haqiinsa dhugoomsi"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
+msgid  "Error occurred"
+msgstr "Dogoggorri uumame"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
+msgid  "When receiving focus"
+msgstr "Yammuu xiyyeeffannoo argatu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
+msgid  "When losing focus"
+msgstr "Yammuu xiyyeeffannoo dhabu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
+msgid  "Item status changed"
+msgstr "Haalojiin maalimaa jijjiirame"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
+msgid  "Key pressed"
+msgstr "Furtuun dhiibeeme"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
+msgid  "Key released"
+msgstr "Furtuun gadhiifame"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
+msgid  "When loading"
+msgstr "Yammuu fe'u"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
+msgid  "Before reloading"
+msgstr "Lamfe'uun dura"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
+msgid  "When reloading"
+msgstr "Yammuu lamfe'u"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
+msgid  "Mouse moved while key pressed"
+msgstr "Osoo furtuun dhiibamee jiruu hantuuteen siiqsame"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
+msgid  "Mouse inside"
+msgstr "Hantuuteen keessa"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
+msgid  "Mouse outside"
+msgstr "Hantuuteen aala"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
+msgid  "Mouse moved"
+msgstr "Hantuuteen siiqsame"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
+msgid  "Mouse button pressed"
+msgstr "Qabduun hantuutee dhiibame"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
+msgid  "Mouse button released"
+msgstr "Qabduun hantuutee gadhiifame"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
+msgid  "Before record change"
+msgstr "Jijjiirama kuusaan dura"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
+msgid  "After record change"
+msgstr "Jijjiirama kuusaa booda"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
+msgid  "After resetting"
+msgstr "Haaromsuu booda"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
+msgid  "Prior to reset"
+msgstr "Haaromsaan dura "
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
+msgid  "Approve action"
+msgstr "Gocha mirkaneessi"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
+msgid  "Before submitting"
+msgstr "Dabarsuun dura"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
+msgid  "Text modified"
+msgstr "Barruun jijjiirame"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
+msgid  "Before unloading"
+msgstr "Buusuun dura"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
+msgid  "When unloading"
+msgstr "Yammuu buusuu"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
+msgid  "Changed"
+msgstr "Jijjiireme"
+
+#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
+msgid  "Events"
+msgstr "Mudatoota"
+
+#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
+msgid  "Analyze SQL command"
+msgstr "Ajaja SQL xiinxali"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
+msgid  "PositionX"
+msgstr "QubannooX"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
+msgid  "PositionY"
+msgstr "QubannooY"
+
+#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
+msgid  "Title"
+msgstr "Mataduree"
+
+#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
+msgid  "Page (step)"
+msgstr "Fuula (ejjatoo)"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
+msgid  "Progress value"
+msgstr "Gatii tarkaanfii"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
+msgid  "Progress value min."
+msgstr "Gatii tarkaanfii gad."
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
+msgid  "Progress value max."
+msgstr "Gatii tarkaanfii olaa."
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
+msgid  "Scroll value"
+msgstr "Gatii maraa"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
+msgid  "Scroll value max."
+msgstr "Gatii maraa olaa."
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
+msgid  "Scroll value min."
+msgstr "Gatii maraa gad."
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
+msgid  "Default scroll value"
+msgstr "Gatii maraa durtii"
+
+#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
+msgid  "Small change"
+msgstr "Jijjiirama xiqqaa"
+
+#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
+msgid  "Large change"
+msgstr "Jijjiirama guddaa"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
+msgid  "Delay"
+msgstr "Turiinsa"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
+msgid  "Repeat"
+msgstr "Irra deebi'i"
+
+#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
+msgid  "Visible size"
+msgstr "Hammamtaa mul'atu"
+
+#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
+msgid  "Orientation"
+msgstr "Teessuma"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
+msgid  "Horizontal"
+msgstr "Sardala"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
+msgid  "Vertical"
+msgstr "Sarjaa"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
+msgid  "While adjusting"
+msgstr "Osoo mijeessuu"
+
+#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
+msgid  "Date"
+msgstr "Guyyaa"
+
+#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
+msgid  "State"
+msgstr "Haala"
+
+#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
+msgid  "Time"
+msgstr "Yeroo"
+
+#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
+msgid  "Scale"
+msgstr "Safara"
+
+#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
+msgid  "Button type"
+msgstr "Akaakuu qabduu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
+msgid  "Default"
+msgstr "Durtii"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
+msgid  "OK"
+msgstr "Tole"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
+msgid  "Cancel"
+msgstr "Dhiisi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
+msgid  "Help"
+msgstr "Gargaarsa"
+
+#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Walindhaan madda deetaa \"$name$\" uumamuu hin dandeenye."
+
+#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
+msgid  "Text"
+msgstr "Barruu"
+
+#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
+msgid  "Linked cell"
+msgstr "Man'ee kornyate"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
+msgid  "Source cell range"
+msgstr "Hangii man'ee maddaa"
+
+#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
+msgid  "Contents of the linked cell"
+msgstr "Qabeentoota man'ee kornyatee"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
+msgid  "The selected entry"
+msgstr "Galfata filatame"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
+msgid  "Position of the selected entry"
+msgstr "Qubannoo galfata filatamee"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
+msgid  "Scrollbars"
+msgstr "Kabaloota maraa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
+msgid  "Single-line"
+msgstr "Sarara baaqqee"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
+msgid  "Multi-line"
+msgstr "Sarara hedduu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
+msgid  "Multi-line with formatting"
+msgstr "Sarara hedduu dhangeessuu wajjin"
+
+#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
+msgid  "Symbol color"
+msgstr "Halluu mallattoo"
+
+#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
+msgid  "Text lines end with"
+msgstr "Sararoonni barruu kan ittiin xumurama"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
+msgid  "LF (Unix)"
+msgstr "LF (Uniiksii)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
+msgid  "CR+LF (Windows)"
+msgstr "CR+LF (Wiindoo)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
+msgid  "None"
+msgstr "Homaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
+msgid  "Horizontal"
+msgstr "Sardala"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
+msgid  "Vertical"
+msgstr "Sarjaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
+msgid  "Both"
+msgstr "Lachuu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
+msgid  "Table"
+msgstr "Gabatee"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
+msgid  "Query"
+msgstr "Gaafata"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+msgid  "SQL command"
+msgstr "Ajaja SQL"
+
+#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
+msgid  "Toggle"
+msgstr "Ceesistuu"
+
+#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
+msgid  "Take Focus on Click"
+msgstr "Xiyyeeffadhuu Cuqaasi"
+
+#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
+msgid  "Hide selection"
+msgstr "Filannoo dhoksi"
+
+#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
+msgid  "Style"
+msgstr "Akkaataa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
+msgid  "3D"
+msgstr "G3"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
+msgid  "Flat"
+msgstr "Diriiraa"
+
+#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
+msgid  "Border color"
+msgstr "Halluu handaaraa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
+msgid  "Left top"
+msgstr "Bitaa irra"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
+msgid  "Left centered"
+msgstr "Bitaa wiirtuu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
+msgid  "Left bottom"
+msgstr "Bitaa jala"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
+msgid  "Right top"
+msgstr "Mirga irra"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
+msgid  "Right centered"
+msgstr "Mirga wiirtuu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
+msgid  "Right bottom"
+msgstr "Mirga jala"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
+msgid  "Above left"
+msgstr "Ol bitaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
+msgid  "Above centered"
+msgstr "Ol wiirtuu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
+msgid  "Above right"
+msgstr "Ol mirga"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
+msgid  "Below left"
+msgstr "Gadi bitaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
+msgid  "Below centered"
+msgstr "Gadi wiirtuu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
+msgid  "Below right"
+msgstr "Gadi mirga"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
+msgid  "Centered"
+msgstr "Wiirtuu"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
+msgid  "Wrap text automatically"
+msgstr "Barruu ofmaan marsi"
+
+#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
+msgid  "Text type"
+msgstr "Akaakuu barruu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
+msgid  "Hide"
+msgstr "Dhoksi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
+msgid  "Show"
+msgstr "Mul'isi"
+
+#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
+msgid  "XML data model"
+msgstr "Akkayyaa deetaa XML"
+
+#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
+msgid  "Binding expression"
+msgstr "Himannoo goolabbii"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
+msgid  "Required"
+msgstr "Barbaachisaa"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
+msgid  "List entry source"
+msgstr "Madda galfata tarree"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
+msgid  "Relevant"
+msgstr "Barbaachisa"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
+msgid  "Read-only"
+msgstr "Dubbisqofaa"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
+msgid  "Constraint"
+msgstr "Daangessa"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
+msgid  "Calculation"
+msgstr "Herreega"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
+msgid  "Data type"
+msgstr "Akaakuu deetaa"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
+msgid  "Whitespaces"
+msgstr "Iddoodiiwwan"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
+msgid  "Preserve"
+msgstr "Olkaawwadhu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
+msgid  "Replace"
+msgstr "Bakka buusi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
+msgid  "Collapse"
+msgstr "Qoncoorsi"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
+msgid  "Pattern"
+msgstr "Sarxaa"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
+msgid  "Length"
+msgstr "Dheerina"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
+msgid  "Length (at least)"
+msgstr "Dheerina (yoo xinnaate)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
+msgid  "Length (at most)"
+msgstr "Dheerina (yoo guddate)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
+msgid  "Digits (total)"
+msgstr "Lakqurxa (ida'ammii)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
+msgid  "Digits (fraction)"
+msgstr "Lakqurxa (entaa)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
+msgid  "Max. (inclusive)"
+msgstr "Olaa. (dabalatee)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
+msgid  "Max. (exclusive)"
+msgstr "Olaa. (ofiifoo)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
+msgid  "Min. (inclusive)"
+msgstr "Gad. (dabalatee)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
+msgid  "Min. (exclusive)"
+msgstr "Gad. (ofiifoo)"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
+msgid  "Submission"
+msgstr "Dabarsa"
+
+#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "Goolabbii"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
+msgid  "Selection type"
+msgstr "Akaakuu filannoo"
+
+#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
+msgid  "Root displayed"
+msgstr "Hundeen agarsiifame"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
+msgid  "Show handles"
+msgstr "Qabannoota mul'isi"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
+msgid  "Show root handles"
+msgstr "Qabannoota hundee mul'isi"
+
+#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
+msgid  "Editable"
+msgstr "Gulaalamuu kan danda'u"
+
+#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
+msgid  "Invokes stop node editing"
+msgstr "Gulaallii ijoo dhaabbataa kakaasa"
+
+#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
+msgid  "With title bar"
+msgstr "Kabala mataduree wajjin"
+
+#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
+msgid  "No Label"
+msgstr "Moggaasni hin jiru"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
+msgid  "No"
+msgstr "Lakki"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
+msgid  "Keep Ratio"
+msgstr "Reeshoo Kaa'i"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
+msgid  "Fit to Size"
+msgstr "Hammamtaatti Taasisi"
+
+#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
+msgid  "Input required"
+msgstr "Naqa barbaachisu"
+
+#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
+msgid  "Text direction"
+msgstr "Qixa barruu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
+msgid  "Left-to-right"
+msgstr "Bitaa-gara-mirgaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
+msgid  "Right-to-left"
+msgstr "Mirgaa-gara-bitaa"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
+msgid  "Use superordinate object settings"
+msgstr "Qindaa'inoota wantaa ol'aanoo fayyadami"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
+msgid  "Never"
+msgstr "Gonka"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
+msgid  "When focused"
+msgstr "Yammuu xiyyeeffannoo argatu"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
+msgid  "Always"
+msgstr "Yoomyuu"
+
+#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
+msgid  "Anchor"
+msgstr "Korkoddii"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
+msgid  "To Paragraph"
+msgstr "Keewwatatti"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
+msgid  "As Character"
+msgstr "Akka arfiitti"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
+msgid  "To Page"
+msgstr "Fuulatti"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
+msgid  "To Frame"
+msgstr "Goodayyaatti"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
+msgid  "To Character"
+msgstr "Arfiitti"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
+msgid  "To Page"
+msgstr "Fuulatti"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
+msgid  "To Cell"
+msgstr "Man'eetti"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
+msgid  "Regular"
+msgstr "Idilee"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
+msgid  "Bold Italic"
+msgstr "Mirgada Yabbuu"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Mirgada"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
+msgid  "Bold"
+msgstr "Yabbuu"
+
+#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
+msgid  "(Default)"
+msgstr "(Durtii)"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+msgid  "Character"
+msgstr "Arfii"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+msgid  "Font"
+msgstr "Bocquu"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+msgid  "Font Effects"
+msgstr "Galteewwan Bocquu"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
+msgid  "New Data Type"
+msgstr "Akaakuu Deetaa Haaraa"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
+msgid  "Type a name for the new data type:"
+msgstr "Akaakuu deetaa haaraatiif maqaa barreessi:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
+msgid  "About\\n Dev~ice"
+msgstr "Waa'ee\n Mi'aa"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
+msgid  "Create\\nPreview"
+msgstr "Durargii\nUumi"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
+msgid  "Preview"
+msgstr "Durargii"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
+msgid  "Scan area"
+msgstr "Iddoo kaasaa"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
+msgid  "Left:"
+msgstr "Bitaa:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
+msgid  "Top:"
+msgstr "Irra:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
+msgid  "Right:"
+msgstr "Mirga:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
+msgid  "Bottom:"
+msgstr "Jala:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
+msgid  "Device used:"
+msgstr "Mi'a itti fayyadamte:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
+msgid  "Resolution [~DPI]"
+msgstr "Rukkina [~DPI]"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
+msgid  "Show advanced options"
+msgstr "Dirqalaalee ol'aanoo mul'isi"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
+msgid  "Options:"
+msgstr "Dirqalaalee:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
+msgid  "Vector element"
+msgstr "Maalimaa veektarii"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
+msgid  "Set"
+msgstr "Qindeessi"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
+msgid  "Scanner"
+msgstr "Kaastuu"
+
+#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr "Mi'a: %s\nDaldalaa: %s\nIlaallata: %s\nAkaakuu: %s"
+
+#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
+msgid  "An error occurred while scanning."
+msgstr "Osoo kaasuu dogoggorri uumame."
+
+#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr "Mi'i dirqalee durargii hin laatu. Kanaaf, kaasii baratamoon akka durargiitti fayyada. Kun ammoo yeroo dheeraa fudhachuu danda'a."
+
+#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "Walquunnamni SANE kaasamuu hin dandeenye. Kaasuun hin danda'amu."
+
+#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
+msgid  "Set"
+msgstr "Qindeessi"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
+msgid  "Linear ascending"
+msgstr "Sararaawaa olee"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
+msgid  "Linear descending"
+msgstr "Sararaawaa gadee"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
+msgid  "Original values"
+msgstr "Gatiiwwan xabboo"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
+msgid  "Exponential increasing"
+msgstr "Dabalata expoonenshaalii"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
+msgid  "Checking..."
+msgstr "Mirkaneessuu..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
+msgid  "Checking for an update failed."
+msgstr "Mirkaneessuun haaromsaa dadhabame."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION haaromfamaa dha."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr "%PRODUCTNAME %NEXTVERSION ni jira.\n\nFooyya'aan ijaarame %PRODUCTNAME %PRODUCTVERSION dha.\n\nYaadannoo: Haaromsa  buusuun dura, haaromsa kana ijaaruuf mirgoota ga'aa akka qabdu mirkaneeffadhu.\nIggitaan, yeroo hedduu iggitaan taliigaa ykn hundee, barbaachisuu danda'a."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
+msgid  "Check for Updates"
+msgstr "Haaromsoota Mirkaneessi"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "%PRODUCTNAME %NEXTVERSION buusuun asitti afuurfateera..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "%PRODUCTNAME %NEXTVERSION buusuun asitti dhaabbateera"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr "Iddoon buusaa: %DOWNLOAD_PATH dha.\n\nMeeshaalee - Dirqalaalee... - %PRODUCTNAME – Haaromsa Karaarraa jalatti iddoo buusaa jijjiiruu ni dandeessa."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
+msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%FILE_NAME %DOWNLOAD_PATH irratti buufameera."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr "Buusni ofmaa kan haaromsaa ammaaf hin jiru.\n\n%PRODUCTNAME %NEXTVERSION saphaphuurraa hujeekaan buusuuf 'Buusi...' cuqaasi."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "%PRODUCTNAME %NEXTVERSION buusuu..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
+msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr "Buusni %PRODUCTNAME %NEXTVERSION xumurameera. Ijaarsaaf qophaa'i."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
+msgid  "Do you really want to cancel the download?"
+msgstr "Buusa dhiisuu barbaaddaa?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
+msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr "Haaromsa kana ijaaruuf, %PRODUCTNAME %PRODUCTVERSION cufamuu qaba. Haaromsa kana amma ijaaruu barbaaddaa?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
+msgid  "Install ~now"
+msgstr "Amma ijaari"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
+msgid  "Install ~later"
+msgstr "Booda ijaari"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
+msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr "Fayyadama ijaaraa kaasuu hin dandeenye, mee %FILE_NAME %DOWNLOAD_PATH keessaa hujeekaan kaasi."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
+msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr "Faayiliin maqaa sana qabu kanaan dura jira! Faayilii amma jiru irrabuu barbaaddaa?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
+msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
+msgid  "Reload File"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
+msgid  "Continue"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
+msgid  "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
+msgid  "Status"
+msgstr "Haalojii"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "Ibsa"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
+msgid  "Close"
+msgstr "Cufi"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
+msgid  "~Download"
+msgstr "Buusi"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
+msgid  "~Install"
+msgstr "Ijaari"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
+msgid  "~Pause"
+msgstr "Afuurfachiisi"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
+msgid  "~Resume"
+msgstr "Itti deebi'i"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+msgid  "Cancel"
+msgstr "Dhiisi"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "Haaromsi %PRODUCTNAME jira"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
+msgid  "Click here to start the download."
+msgstr "Buusa eegaluuf as cuqaasi."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "Haaromsi %PRODUCTNAME jira"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
+msgid  "Click here for more information."
+msgstr "Odeeffannoo dabalataaf as cuqaasi."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "Haaromsi %PRODUCTNAME jira"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
+msgid  "Download of update begins."
+msgstr "Buusni haaromsaa jalqabe."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
+msgid  "Download of update in progress"
+msgstr "Buusni haaromsaa adeemsarra jira"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
+msgid  "Download of update paused"
+msgstr "Buusni haaromsaa afuurfachiifameera"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
+msgid  "Click here to resume."
+msgstr "Itti deebi'uuf as cuqaasi."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
+msgid  "Download of update stalled"
+msgstr "Buusni haaromsaa dhaabbateera"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
+msgid  "Click here for more information."
+msgstr "Odeeffannoo dabalataaf as cuqaasi."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
+msgid  "Download of update completed"
+msgstr "Buusni haaromsaa xumurameera"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
+msgid  "Click here to start the installation."
+msgstr "Ijaarsa eegaluuf as cuqaasi."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
+msgid  "Updates for extensions available"
+msgstr "Dheertoowwaniif haaromsoonni jiru"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
+msgid  "Click here for more information."
+msgstr "Odeeffannoo dabalataaf as cuqaasi."
+
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+msgid  "Check for ~Updates..."
+msgstr "Haaromsoota Mirkaneessi..."

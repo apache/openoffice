@@ -1,0 +1,272 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.String.Text
+msgid  "Please enter a binding expression."
+msgstr "Mee himannoo goolabbii galchi."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.String.Text
+msgid  "This is an invalid binding expression."
+msgstr "Kun himannoo goolabbii fashaladha."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.String.Text
+msgid  "Value is invalid."
+msgstr "Gatiin fashala dha."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_REQUIRED.String.Text
+msgid  "A value is required."
+msgstr "Gatiin ni barbaachisa."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.String.Text
+msgid  "The constraint '$1' not validated."
+msgstr "Daangessi '$1' hin gataa'essamne."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.String.Text
+msgid  "The value is not of the type '$2'."
+msgstr "Gatiin kun akaakuu '$2' miti."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.String.Text
+msgid  "The value must be smaller than or equal to $2."
+msgstr "Gatiin kun $2 irra xiqqaachuu ykn waliin walqixa tahuu qaba."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.String.Text
+msgid  "The value must be smaller than $2."
+msgstr "Gatiin kun $2 irra xiqqaachuu qaba."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.String.Text
+msgid  "The value must be greater than or equal to $2."
+msgstr "Gatiin kun $2 irra caaluu ykn waliin walqixa tahuu qaba."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.String.Text
+msgid  "The value must be greater than $2."
+msgstr "Gatiin kun $2 irra caaluu qaba."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.String.Text
+msgid  "The value does not match the pattern '$2'."
+msgstr "Gatiin kun sarxaa '$2' waliin wal hin simu."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.String.Text
+msgid  "$2 digits allowed at most."
+msgstr "Yoo baay'ate lakqurxa $2 hayyamama."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.String.Text
+msgid  "$2 fraction digits allowed at most."
+msgstr "Yoo baay'ate lakqurxa entaa $2 hayyamama."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.String.Text
+msgid  "The string must be $2 characters long."
+msgstr "Dheerinni diraa arfiilee $2 tahuu qaba."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.String.Text
+msgid  "The string must be at least $2 characters long."
+msgstr "Dheerinni diraa yoo xinnaate arfiilee $2 tahuu qaba."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.String.Text
+msgid  "The string can only be $2 characters long at most."
+msgstr "Dheerinni diraa yoo baay'ate arfiilee $2 qofaadha."
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_STRING.String.Text
+msgid  "String"
+msgstr "Diraan"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_URL.String.Text
+msgid  "Hyperlink"
+msgstr "Geessituu"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.String.Text
+msgid  "True/False (Boolean)"
+msgstr "True/False (Buuliyaanii)"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DECIMAL.String.Text
+msgid  "Decimal"
+msgstr "Kurnyee"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_FLOAT.String.Text
+msgid  "Floating point"
+msgstr "Tuqaa bololi'aa"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DOUBLE.String.Text
+msgid  "Double"
+msgstr "Lamee"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATE.String.Text
+msgid  "Date"
+msgstr "Guyyaa"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_TIME.String.Text
+msgid  "Time"
+msgstr "Yeroo"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATETIME.String.Text
+msgid  "Date and Time"
+msgstr "Guyyaa fi Yeroo"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.String.Text
+msgid  "Month and year"
+msgstr "Ji'a fi waggaa"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEAR.String.Text
+msgid  "Year"
+msgstr "Waggaa"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.String.Text
+msgid  "Month and day"
+msgstr "Ji'a fi guyyaa"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTH.String.Text
+msgid  "Month"
+msgstr "Ji'a"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DAY.String.Text
+msgid  "Day"
+msgstr "Aduu"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.String.Text
+msgid  "Error during evaluation"
+msgstr "Dogoggora yeroo madaallii"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
+msgid  "The string '$1' does not match the required regular expression '$2'."
+msgstr "Diraan '$1' himannoo idilee barbaadame '$2' waliin wal hin simu."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "Dirqisiisaa"
+
+#: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
+msgid  "The contents of a combo box or list field could not be determined."
+msgstr "Qabeentoonni saanduqa makaa ykn dirree tarree murteeffamuu hin dandeenye."
+
+#: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "Saxaatoo saagi"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.String.Text
+msgid  "substituted"
+msgstr "iddabsame"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
+msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr "Osoo to'annaan kun fe'amaa jiruu dogoggorri uumame. Kanaaf iddooqaan bakka buusame."
+
+#: source/resource/strings.src#RID_STR_READERROR.String.Text
+msgid  "Error reading data from database"
+msgstr "Dogoggora kuusdeetaa irraa deetaa dubbisuu"
+
+#: source/resource/strings.src#RID_STR_CONNECTERROR.String.Text
+msgid  "Connection failed"
+msgstr "Walindhaan dadhabe"
+
+#: source/resource/strings.src#RID_ERR_LOADING_FORM.String.Text
+msgid  "The data content could not be loaded."
+msgstr "Qabeentaan deetaa fe'amuu hin dandeenye."
+
+#: source/resource/strings.src#RID_ERR_REFRESHING_FORM.String.Text
+msgid  "The data content could not be updated"
+msgstr "Qabeentaan deetaa haaromfamuu hin dandeenye"
+
+#: source/resource/strings.src#RID_STR_ERR_INSERTRECORD.String.Text
+msgid  "Error inserting the new record"
+msgstr "Dogoggora kuusaa haaraa saaguu"
+
+#: source/resource/strings.src#RID_STR_ERR_UPDATERECORD.String.Text
+msgid  "Error updating the current record"
+msgstr "Dogoggora kuusaa ammaa haaromsuu"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORD.String.Text
+msgid  "Error deleting the current record"
+msgstr "Dogoggora kuusaa ammaa haquu"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORDS.String.Text
+msgid  "Error deleting the specified records"
+msgstr "Dogoggora kuusaawwan murtaa'an haquu"
+
+#: source/resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.String.Text
+msgid  "The object cannot be NULL."
+msgstr "Wanti kun NULL tahuu hin danda'u."
+
+#: source/resource/strings.src#RID_STR_OPEN_GRAPHICS.String.Text
+msgid  "Insert graphics from..."
+msgstr "Unka saxaatoo saagi..."
+
+#: source/resource/strings.src#RID_STR_CLEAR_GRAPHICS.String.Text
+msgid  "Remove graphics"
+msgstr "Saxaatoo balleessi"
+
+#: source/resource/strings.src#RID_STR_INVALIDSTREAM.String.Text
+msgid  "The given stream is invalid."
+msgstr "Yaa'ini kenname fashala."
+
+#: source/resource/strings.src#RID_STR_SYNTAXERROR.String.Text
+msgid  "Syntax error in query expression"
+msgstr "Dogoggora caasimaa himannoo gaafataa keessaa"
+
+#: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
+msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr "Akaakuu gatii dirqisiisaan kan deeggaramani jijjiirraa to'annaa deetaa hin fayyadamani."
+
+#: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
+msgid  "Record"
+msgstr "Kuusa"
+
+#: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
+msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr "Too'annaan gatii alaantoon dirqiin walqabatee jiraa,akka gataa'essuu hojeeeta jiraa. Dirqisiisaa gatii kana hambisuu qabdaa,uttu gataa'essaa haaraa qindeessu dandessu."
+
+#: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
+msgid  "of"
+msgstr "kan"
+
+#: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr "Qabeentaan unka ammaa fooyya'ee jira.\nJijjiiramoota kee olkaa'uu barbaaddaa?"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "Dogoggora ulaagaalee foo'insaa qindeessuu"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "Dogoggora ulaagaalee gingilchaa qindeessuu"
+
+#: source/resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.String.Text
+msgid  "To execute this function, parameters are needed."
+msgstr "Fankishinii kana raawwachuuf, ulaagaaleen ni barbaachisu."
+
+#: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
+msgid  "This function cannot be executed, but is only for status queries."
+msgstr "Fankishiniin kun raawwatamuu hin danda'u, garuu gaafatoota haalojiitiif qofaadha."
+
+#: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
+msgid  "Unknown function."
+msgstr "Fankishinii hin beekamne."

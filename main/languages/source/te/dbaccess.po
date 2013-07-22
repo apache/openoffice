@@ -1,0 +1,3991 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.String.Text
+msgid  "Tried to open the table $name$."
+msgstr "$name$ పట్టికని  తెరచిన ప్రయత్నం"
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_INVALID.String.Text
+msgid  "No connection could be established."
+msgstr "ఏ బంధము ౉ఏర్పరచలేదు"
+
+#: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
+msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
+msgstr "$name$ పట్టిక ముందుగానే ఉన్నది. అగోచరమైనది  ఎందుకనగా వడపోత చేయబడినది."
+
+#: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
+msgid  "You have no write access to the configuration data the object is based on."
+msgstr " రూపకరణ దత్తాంశ తాత్పర్మమునకు,రాత సాంగత్యం లేదు "
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
+msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
+msgstr "బాహ్య దత్తాంశ వనరుకి బంధం ఏర్పరచలేదు. అపరిచిత దోషం వచ్చినది.చోదకి కరాబు అయినది"
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
+msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
+msgstr "బాహ్య దత్తాంశ వనరుకి బంధం ఏర్పరచలేదు.ఇచ్చిన యు ఆర్ ఎల్ కు  ఎస్ డి బి సి చోదకి దొరకలేదు"
+
+#: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
+msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
+msgstr "బాహ్య దత్తాంశ వనరుకి బంధం ఏర్పరచలేదు. ఎస్ డి బి సి చోదకి దిగుమతి కాలేదు"
+
+#: source/core/resource/strings.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr " ఫారమ్"
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "నివేదన"
+
+#: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
+msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
+msgstr "దత్తాంశం వనరు దాచబడినది.దయచేసి  ఎక్స్ స్టోరబుల్ సంవిధానం ఉపయోగించి దత్తాంశం వనరు దాచండి"
+
+#: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr "ఇచ్చిన ఆదేశము SELECT వాక్యము కాదు.\nక్వరీలు మాత్రమే అనుమతించబడును."
+
+#: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
+msgid  "No values were modified."
+msgstr "ఏ విలువలు మార్చబడలేదు"
+
+#: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
+msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
+msgstr "విలువలను ప్రవేశపెటవద్ద్టు. ఫలితాలసమితి , ఎక్స్ రో అప్ డేట్  సంవిధానంకు సహకరించుటలేదు "
+
+#: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
+msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
+msgstr "విలువలను ప్రవేశపెటవద్టు.ఫలితాలసమితి , ఎక్స్ రిజల్ట్ సమితి అప్ డేట్  సంవిధానంకు సహకరించుటలేదు"
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
+msgid  "Values could not be modified, due to a missing condition statement."
+msgstr "విలువలను ప్రవేశపెటవద్ట్టు.ఎందుకనగా  నిబంధన ప్రకటన లేదు "
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_ADD.String.Text
+msgid  "The adding of columns is not supported."
+msgstr "నిలువు పట్టిలను చేర్చుటకు సహకారం లేదు"
+
+#: source/core/resource/strings.src#RID_STR_NO_COLUMN_DROP.String.Text
+msgid  "The dropping of columns is not supported."
+msgstr "నిలువు పట్టి పడవేయుటకు  సహకారం లేదు"
+
+#: source/core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.String.Text
+msgid  "The WHERE condition could not be created for the primary key."
+msgstr "ప్రాథమిక మీటకు ,WHERE నిబంధనను నిర్మించలేము "
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.String.Text
+msgid  "The column does not support the property '%value'."
+msgstr "నిలువు పట్టి ,'%value'లక్షణమును  సహకరించుటలేదు "
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.String.Text
+msgid  "The column is not searchable!"
+msgstr "నిలువు పట్టి  వెతుకలేనిది"
+
+#: source/core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.String.Text
+msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "నిలువు పట్టి విలువ , <sal_Int8> క్రమంలో రకం కాదు"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.String.Text
+msgid  "The column is not valid."
+msgstr "నిలువు పట్టి నిస్సారమైనది"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.String.Text
+msgid  "The column '%name' must be visible as a column."
+msgstr "నిలువు పట్టి '%name' గోచరమైన నిలువు పట్టి"
+
+#: source/core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.String.Text
+msgid  "The interface XQueriesSupplier is not available."
+msgstr "ఎక్స్ క్వెరీసప్లైర్  సంవిధానం లభించలేదు"
+
+#: source/core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.String.Text
+msgid  "The driver does not support this function."
+msgstr "ఈ కార్యంకు ,చోదకి సహకరించుటలేదు "
+
+#: source/core/resource/strings.src#RID_STR_NO_ABS_ZERO.String.Text
+msgid  "An 'absolute(0)' call is not allowed."
+msgstr "'absolute(0)' పిలుపు అనుమతించబడదు "
+
+#: source/core/resource/strings.src#RID_STR_NO_RELATIVE.String.Text
+msgid  "Relative positioning is not allowed in this state."
+msgstr "ఈ స్థితి నందు సామ్యము గల స్ధాయి అనుమతించబడదు"
+
+#: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
+msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
+msgstr "ఎపుడయితే  ఫలితము చివరి అడ్డపటి ్టలో ఉంచబడినదో,అడ్డపట్టి పునర్వికాసం చేయబడదు "
+
+#: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
+msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
+msgstr "ఫలితపు సమితిని మొదట ప్రవేశపెట్టు  అడ్డపటికి కదిపించునపుడు,  క్రొత్త అడ్డపట్టిని ప్రవేశపెట్టలేము"
+
+#: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
+msgid  "A row cannot be modified in this state"
+msgstr "ఈ స్థితిలో అడ్డపట్టి మార్చబడదు "
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETEROW.String.Text
+msgid  "A row cannot be deleted in this state."
+msgstr "ఈ స్థితిలో అడ్డపట్టి తొలగించబడదు"
+
+#: source/core/resource/strings.src#RID_STR_NO_TABLE_RENAME.String.Text
+msgid  "The driver does not support table renaming."
+msgstr "పట్టిక పునర్నామకరణను, చోదకి  సహకరించదు  "
+
+#: source/core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.String.Text
+msgid  "The driver does not support the modification of column descriptions."
+msgstr "నిలువు పట్టి వివరణ మార్పుకు చోదకి  సహకరించదు"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the name."
+msgstr "నిలువు పట్టి వివరణ నామ మార్పుకు చోదకి  సహకరించదు"
+
+#: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
+msgid  "The driver does not support the modification of column descriptions by changing the index."
+msgstr "నిలువు పట్టి వివరణ సూచి మార్పుకు చోదకి  సహకరించదు"
+
+#: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr " \"$file$\" దస్త్రం లేదు"
+
+#: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
+msgid  "There exists no table named \"$table$\"."
+msgstr "అక్కడ \"$table$\" నామముతో ఏ పట్టిక లేదు."
+
+#: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
+msgid  "There exists no query named \"$table$\"."
+msgstr "\"$table$\" నామముతో ఏ క్వరీలేదు."
+
+#: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
+msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
+msgstr "లోపల తో కు కు మరియు."
+
+#: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr "ఈ దోషమునకు కారణమైన SQL ఆదేశము:\n\n$command$"
+
+#: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The SQL command does not describe a result set."
+msgstr "SQL ఆదేశము ఫలిత సమితిను వివరించదు."
+
+#: source/core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.String.Text
+msgid  "The name must not be empty."
+msgstr "నామము ఖాళీగా వుండకూడదు."
+
+#: source/core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.String.Text
+msgid  "The container cannot contain NULL objects."
+msgstr "కంటైనర్ NULL ఆబ్జక్టులను కలిగివుండలేదు."
+
+#: source/core/resource/strings.src#RID_STR_NAME_ALREADY_USED.String.Text
+msgid  "There already is an object with the given name."
+msgstr "ఇచ్చిన నామముతో అక్కడ యిప్పటికే వొక ఆబ్జక్టువున్నది."
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.String.Text
+msgid  "This object cannot be part of this container."
+msgstr "ఆబ్జక్టు ఈ కంటైనర్‌నందు భాగముకాలేదు."
+
+#: source/core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.String.Text
+msgid  "The object already is, with a different name, part of the container."
+msgstr "ఇప్పటికే వున్న ఆబ్జక్టు, వేరొక నామముతో, కంటైనర్‌నందు బాగము."
+
+#: source/core/resource/strings.src#RID_STR_NAME_NOT_FOUND.String.Text
+msgid  "Unable to find the document '$name$'."
+msgstr "పత్రము '$name$'ను కనుగొనలేకపోయింది."
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr "$location$ కు పత్రమును దాయలేక పోయింది:\n$message$"
+
+#: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
+msgid  "Error accessing data source '$name$':\\n$error$"
+msgstr "డాటా మూలము '$name$' ను యాక్సెస్ చేయుటలో దోషము:\n$error$"
+
+#: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "అక్కడ \"$folder$\" నామముతో ఏ ఫోల్డర్ లేదు."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
+msgid  "Cannot delete the before-first or after-last row."
+msgstr "మొదటిదాని-ముందలి లేదా చివరిదాని-తరువాతి అడ్డువరుసను తొలగించలేము."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.String.Text
+msgid  "Cannot delete the insert-row."
+msgstr "అడ్డువరుస-చేర్చుము ను తొలగించలేము."
+
+#: source/core/resource/strings.src#RID_STR_RESULT_IS_READONLY.String.Text
+msgid  "Result set is read only."
+msgstr "ఫలితపు సమితి చదువుటకు మాత్రమే."
+
+#: source/core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.String.Text
+msgid  "DELETE privilege not available."
+msgstr "తొలగించు అనుమతి అందుబాటులోలేదు."
+
+#: source/core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.String.Text
+msgid  "Current row is already deleted."
+msgstr "ప్రస్తుత అడ్డువరుస యిప్పటికే తొలగించబడినది."
+
+#: source/core/resource/strings.src#RID_STR_UPDATE_FAILED.String.Text
+#, fuzzy
+msgid  "Current row could not be updated."
+msgstr "ప్రస్తుత అడ్డువరుస నవీకరించబడ గలదు."
+
+#: source/core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.String.Text
+#, fuzzy
+msgid  "INSERT privilege not available."
+msgstr "చేర్చు అనుమతి అందుబాటులోలేదు."
+
+#: source/core/resource/strings.src#RID_STR_INTERNAL_ERROR.String.Text
+#, fuzzy
+msgid  "Internal error: no statement object provided by the database driver."
+msgstr "అంతర్గత దోషము: డాటాబేస్ డ్రైవర్ ద్వారా ఏ స్టేట్‌మెంట్ ఆబ్జక్టు అందివ్వబడలేదు."
+
+#: source/core/resource/strings.src#RID_STR_EXPRESSION1.String.Text
+#, fuzzy
+msgid  "Expression1"
+msgstr "ఎక్సుప్రెషన్1"
+
+#: source/core/resource/strings.src#RID_STR_NO_SQL_COMMAND.String.Text
+#, fuzzy
+msgid  "No SQL command was provided."
+msgstr "ఏ SQL ఆదేశము అందివ్వబడలేదు."
+
+#: source/core/resource/strings.src#RID_STR_INVALID_INDEX.String.Text
+#, fuzzy
+msgid  "Invalid column index."
+msgstr "చెల్లని నిలువువరుస విషయసూచిక."
+
+#: source/core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.String.Text
+#, fuzzy
+msgid  "Invalid cursor state."
+msgstr "చెల్లని కర్సర్ స్థితి."
+
+#: source/core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.String.Text
+#, fuzzy
+msgid  "The cursor points to before the first or after the last row."
+msgstr "కర్సర్ అనునది మొదటిదానికి ముందలి లేదా ఆఖరిదానికి తరువాతి అడ్డువరుసను సూచిస్తోంది."
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.String.Text
+#, fuzzy
+msgid  "The rows before the first and after the last row don't have a bookmark."
+msgstr "మొదటిదాని ముందలి అడ్డువరుసలు మరియు ఆఖరిదాని తరువాతి అడ్డువరుస బుక్‌మార్కును కలిగిలేవు."
+
+#: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.String.Text
+#, fuzzy
+msgid  "The current row is deleted, and thus doesn't have a bookmark."
+msgstr "ప్రస్తుత అడ్డువరుస తొలగించబడెను, మరియు బుక్‌మార్కును కలిగిలేదు."
+
+#: source/core/resource/strings.src#RID_STR_NO_EMBEDDING.String.Text
+#, fuzzy
+msgid  "Embedding of database documents is not supported."
+msgstr "డాటాబేస్ పత్రములను యెంబెడింగ్ చేయుట మద్దతించబడదు."
+
+#: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
+#, fuzzy
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "కింది URL కొరకు వొక అనుసంధానము \"$name$\" అభ్యర్దించినది."
+
+#: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
+#, fuzzy
+msgid  "The extension is not installed."
+msgstr "పొడిగింపు సంస్థాపించబడలేదు."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+msgid  "Database ~name"
+msgstr "డాటాబేస్ నామము (~n)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+msgid  "User settings"
+msgstr "వినియోగదారి అమరికలు"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+msgid  "~Control user"
+msgstr "నింయత్రణ వినియోగాదరి (~C)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+msgid  "~Administrator"
+msgstr "నిర్వాహకుడు (~A)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+msgid  "~Domain user"
+msgstr "డొమైన్ వినియోగదారి (~D)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+msgid  "P~assword..."
+msgstr "సంకేతపదము... (~a)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+msgid  "~Password..."
+msgstr "(~P) రహస్యపదము..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+msgid  "Passwo~rd..."
+msgstr "సంకేతపదము... (~r)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+msgid  "~Backup file"
+msgstr "బ్యాకప్ ఫైలు (~B)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+msgid  "Database settings"
+msgstr "డాటాబేస్ అమరికలు"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE"
+msgstr "S~YSDEVSPACE"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "TRANSACTI~ONLOG"
+msgstr "TRANSACTI~ONLOG"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE"
+msgstr "DATAD~EVSPACE"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+msgid  "..."
+msgstr "..."
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+msgid  "Transaction ~file (MB)"
+msgstr "వ్యవహారపు ఫైలు (~f) (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+msgid  "Data~base size (MB)"
+msgstr "డాటాబేస్ పరిమాణము (~b) (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+msgid  "Data ~buffer size (MB)"
+msgstr "డాటా బఫర్ పరిమాణము (~b) (MB)"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+msgid  "Backup file information"
+msgstr "బ్యాకప్ ఫైలు సమాచారము"
+
+#: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+msgid  "Create New Adabas D Database"
+msgstr "కొత్త Adabas D డాటాబేస్‌ను సృష్టించుము"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+msgid  "No entry could be written in the configuration file."
+msgstr "ఆకృతీకరణ ఫైలునందు ఏ ప్రవేశము వ్రాయబడలేదు."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+msgid  "An error occurred as the DB files were being created."
+msgstr "DB ఫైళ్ళు సృష్టించబడినట్లుగా వొక దోషము యెదురైంది."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+msgid  "An error occurred as the system tables were being created."
+msgstr "సిస్టమ్ పట్టికలు సృష్టిచబడుతుండగా దోషము యెదురైంది."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+msgid  "The backup file entered does not exist."
+msgstr "ప్రవేశపెట్టిన బ్యాకప్‌ఫైలు లేదు."
+
+#: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "పూర్తిగా వుత్తీర్ణమైన ఫైలు \\'#\\' అక్షరములకన్నా పొడుగై వుండదు."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+msgid  "The administrator and the control user cannot have the same name!"
+msgstr "నిర్వహణాధికారి మరియు నియంత్రణ చేయు వినియోగదారి వొకేనామమును కలిగివుండలేరు!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+msgid  "No name has been entered for the $name$ file!"
+msgstr "$name$ ఫైలు కొరకు ఏ నామము ప్రవేశపెట్టబడలేదు!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+msgid  "You have to have administrator rights to create a new database!"
+msgstr "కొత్త డాటాబేస్‌ను సృష్టించుటకు మీరు నిర్వహణాధికారి హక్కులను కలిగివుండాలి!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+msgid  "The specified file name or directory does not exist."
+msgstr "తెలుపబడిన ఫైలు నామము లేదా డైరెక్టరీ లేదు."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "కొత్త డాటాబేసు సృష్టించబడలేదు.\nదయచేసి మీ Adabas D సంస్థాపనను పరిశీలించండి, ప్రత్యేకించి వేరియబుల్సు \"DBROOT\" మరియు \"DBWORK\"."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "హెచ్చరిక!"
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+msgid  "Creating database files."
+msgstr "డాటాబేసు ఫైళ్ళను సృష్టించుచున్నది."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+msgid  "Creating database configuration file."
+msgstr "డాటాబేస్ ఆకృతీకరణ ఫైలును సృష్టించుచున్నది."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+msgid  "Starting database for the first time."
+msgstr "డాటాబేసును మొదటిసారికి ప్రారంభించుచున్నది."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+msgid  "The name entered already exists."
+msgstr "ప్రవేశపెట్టిన నామము యిప్పటికే వున్నది."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+msgid  "No default names could be set for the database files. The total length is more than 40 characters."
+msgstr "డాటాబేస్ ఫైళ్ళ కొరకు యెటువంటి అప్రమేయ నామములు అమర్చబడలేక పోయినవి. మొత్తము పోడవు 40 అక్షరములకన్నా యెక్కువ."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+msgid  "No default names could be set for the database files. There is no write access."
+msgstr "డాటాబేస్ ఫైళ్ళ కొరకు యెటువంటి అప్రమేయ నామములు అమర్చబడలేక పోయినవి. అక్కడ వ్రాయుటకు అనుమతి లేదు."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+msgid  "The current database need to be converted. Please insert control user  and password."
+msgstr "The current database need to be converted. Please insert control user  and password."
+
+#: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+msgid  "Spaces are not permitted in the password. Please enter a new password."
+msgstr "సంకేతపదమునందు ఖాళీలు అనుమతించబడవు. దయచేసి కొత్త సంకేతపదమును ప్రవేశపెట్టుము."
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+msgid  "Database Document Macro Migration"
+msgstr "డాటాబేస్ పత్రము స్థూల వలసీకరణ"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+msgid  "Prepare"
+msgstr "సిద్దముచేయి"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+msgid  "Backup Document"
+msgstr "బ్యాకప్ పత్రము"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+msgid  "Migrate"
+msgstr "వలసపంపు"
+
+#: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+msgid  "Summary"
+msgstr "సంక్షిప్తసమాచారము"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+msgid  "Welcome to the Database Macro Migration Wizard"
+msgstr "డాటాబేస్ స్థూల వలసీకరణ విజార్డునకు స్వాగతము"
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr "మీ స్థూలములను మైగ్రేట్ చేయు కర్తవ్యములో ఈ విజార్డు మీకు మార్గదర్శనము చేస్తుంది.\n\nమీరు దీనిని పూర్తిచేసిన తర్వాత, ప్రస్తుత డాటాబేస్ పత్రము యొక్క ఫాంలు మరియు నివేదికలలోనికి ఎంబెడ్ చేసిన అన్ని స్థూలములు పత్రములోనికే కదల్చబడతాయి. ఈ కోర్సునందు, లైబ్రరీలు అవసరమైనట్లు పునఃనామకరణ చేయబడతాయి.\n\nమీ ఫాంలు మరియు నివేదికలు ఆ స్థూలములకు నివేదనలను కలిగివుంటే, సాధ్యమైన చోట, అవి సర్దుబాటు చేయబడతాయి.\n\nమైగ్రేషన్ ప్రారంభము కావటానికి ముందుగా, పత్రమునకు చెందిన అన్ని ఫాంలు, నివేదనలు, క్వరీలు మరియు పట్టికలు తప్పక మూయవలెను. అలా చేయుటకు 'తరువాత' వత్తుము."
+
+#: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
+msgstr "అన్ని ఆబ్జక్టులు మూయబడ లేకపోయినవి. దయచేసి వాటిని మానవీయంగా మూయుము, మరియు విజార్డును పునః-ప్రారంభించుము."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+msgid  "Backup your Document"
+msgstr "మీ పత్రమును బ్యాకప్ తీయుము"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
+msgstr "మీరు మైగ్రేషన్ కావటానికి ముందలి స్థితికి వెళ్ళుటకు అనుమతించుటకు, డాటాబేస్ పత్రము మీ ఎన్నిక స్థానమునకు తిరిగి పంపబడుతుంది. విజార్డు చేత చేయబడిన ప్రతి మార్పు కూడా వాస్తవ పత్రమునకు చేయబడుతుంది, బ్యాకప్ అంటుకోబడకుండా వుంటుంది."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+msgid  "Save To:"
+msgstr "దీనికి దాయుము:"
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+msgid  "Browse ..."
+msgstr "అన్వేషించుము ..."
+
+#: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr "మీ పత్రముయొక్క వొక నకలును దాయుటకు 'తరువాత' నొక్కుము, మరియు వలసీకరణను ప్రారంభించుము."
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+msgid  "Migration Progress"
+msgstr "వలసీకరణ పురోగతిలోవుంది"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
+msgstr "డాటాబేస్ పత్రము ప్రస్తుతము ప్రోసెస్ చేయబడుతున్న $forms$ ఫారము(ల)ను మరియు $reports$ నివేదిక(ల)ను కలిగివుంది:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+msgid  "Current object:"
+msgstr "ప్రస్తుత ఆబ్జక్టు:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+msgid  "Current progress:"
+msgstr "ప్రస్తుత పురోగతి:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+msgid  "Overall progress:"
+msgstr "మొత్తము పురోగతి:"
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+msgid  "document $current$ of $overall$"
+msgstr "$overall$ లో $current$ పత్రము "
+
+#: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
+msgstr "అన్ని ఫారములు మరియు నివేదికలు సమర్దవంతంగా ప్రోసెస్ చేయబడినవి. విశదీకృత సంక్షిప్త సమాచారమును చూపుటకు 'తరువాత' నొక్కండి."
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+msgid  "Summary"
+msgstr "సంక్షిప్తసమాచారము"
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
+msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
+msgstr "వలసీకరణ సఫలమైంది. క్రిందన మీ పత్రమునకు తీసుకొనబడిన చర్యల యొక్క లాగ్‌వుంది."
+
+#: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
+msgid  "The migration was not successful. Examine the migration log below for details."
+msgstr "వలసీకరణ సఫలం కాలేదు. వివరముల కొరకు వలసీకరణ లాగ్‌ను పరిశీలించుము."
+
+#: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+msgid  "Form '$name$'"
+msgstr "ఫారము '$name$'"
+
+#: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+msgid  "Report '$name$'"
+msgstr "నివేదిక '$name$'"
+
+#: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+msgid  "document $current$ of $overall$"
+msgstr "$overall$ లో $current$ పత్రము "
+
+#: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+msgid  "Database Document"
+msgstr "డాటాబేస్ పత్రము"
+
+#: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+msgid  "saved copy to $location$"
+msgstr "$current$ కు నకలు దాయబడింది"
+
+#: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+msgid  "migrated $type$ library '$old$' to '$new$'"
+msgstr "$type$ లైబ్రరీ అనునది '$old$' నుండి '$new$'కు వలసపంపబడినది."
+
+#: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
+msgid  "$type$ library '$library$'"
+msgstr "$type$ లైబ్రరీ '$library$'"
+
+#: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
+msgid  "migrating libraries ..."
+msgstr "లైబ్రరీలను వలసీకరణ చేయుచున్నది ..."
+
+#: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+msgid  "%PRODUCTNAME Basic"
+msgstr "%PRODUCTNAME ప్రాధమిక"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+msgid  "JavaScript"
+msgstr "జావాస్క్రిప్ట్"
+
+#: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+msgid  "BeanShell"
+msgstr "బీన్‌షెల్"
+
+#: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+msgid  "Java"
+msgstr "జావా"
+
+#: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+msgid  "Python"
+msgstr "పైథాన్"
+
+#: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+msgid  "dialog"
+msgstr "డైలాగ్"
+
+#: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
+msgid  "Error(s)"
+msgstr "దోషము(లు)"
+
+#: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
+msgid  "Warnings"
+msgstr "హెచ్చరికలు"
+
+#: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
+msgid  "caught exception: "
+msgstr "పట్టుకొనబడిన ఆక్షేపణ: "
+
+#: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
+msgid  "You need to choose a backup location other than the document location itself."
+msgstr "పత్రము స్థానముకన్నా మీరు బ్యాకప్ స్థానమును యెంచుకొనవలసి వుంటుంది."
+
+#: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
+msgid  "Invalid number of initialization arguments. Expected 1."
+msgstr "సిద్దీకరణ ఆర్గుమెంట్ల యొక్క చెల్లని సంఖ్య. ఊహించినది 1."
+
+#: source/ext/macromigration/macromigration.src#STR_NO_DATABASE.String.Text
+#, fuzzy
+msgid  "No database document found in the initialization arguments."
+msgstr "సిద్దీకరణ ఆర్గుమెంట్ల నందు యే డాటాబేస్ పత్రము కనుగొనబడలేదు."
+
+#: source/ext/macromigration/macromigration.src#STR_NOT_READONLY.String.Text
+#, fuzzy
+msgid  "Not applicable to read-only documents."
+msgstr "చదువుటకు-మాత్రమే పత్రములకు ఆపాదితం కాదు."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
+msgstr "మీరు పట్టిక మరియు క్వరీ పేరు వొకటే యివ్వలేరు. యిప్పటి వరకు క్వరీ లేదు పట్టికకు వాడని నామమును వుపయోగించండి."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+msgid  "Table"
+msgstr "పట్టిక"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+msgid  "Query"
+msgstr "ప్రశ్న"
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+msgid  "The given connection is no valid query and/or tables supplier."
+msgstr "ఇచ్చిన అనుసంధానము చెల్లునటువంటి క్వరీదీ కాదు మరియు/లేదా పట్టికలు యిచ్చువానిదికాదు."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+msgid  "The given object is no table object."
+msgstr "ఇచ్చిన ఆబ్జక్టు పట్టిక ఆబ్జక్టుకాదు."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
+msgstr "చెల్లని మిశ్రమం రకము - com.sun.star.sdb.tools.CompositionType నుండి వొక విలువకావాలి."
+
+#: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
+msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
+msgstr "చెల్లని ఆదేశము రకము - com.sun.star.sdb.CommandType నుండి TABLE మరియు QUERY మాత్రమే అనుమతించబడతాయి."
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+msgid  "Create Form in Design View..."
+msgstr "నమూనా దర్శనంలో ఫారమ్ ని సృష్టించు"
+
+#: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+msgid  "Use Wizard to Create Form..."
+msgstr " విజార్డ్ తో ఫారమ్ ని సృష్టించు"
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+msgid  "Use Wizard to Create Report..."
+msgstr "విజార్డ్ తో నివేదనలు సృష్టించు"
+
+#: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+msgid  "Create Report in Design View..."
+msgstr "డిజైన్ దర్శనమునందు నివేదికను సృష్టించుము..."
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+msgid  "Create Query in Design View..."
+msgstr "నమూనా దర్శనంలో ప్రశ్నని సృష్టించు"
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+msgid  "Create Query in SQL View..."
+msgstr "ఎస్ క్యూ ఎల్ దర్శనంలో ప్రశ్నని సృష్టించు"
+
+#: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+msgid  "Use Wizard to Create Query..."
+msgstr "విజార్డ్ను ఉపయెగించి ప్రశ్నని సృష్టించు"
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+msgid  "Create Table in Design View..."
+msgstr "నమూనా దర్శనంలో పట్టికను సృష్టించు"
+
+#: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+msgid  "Use Wizard to Create Table..."
+msgstr "విజార్డ్ను ఉపయెగించి పట్టిక సృష్టించు"
+
+#: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+msgid  "Create View..."
+msgstr " దర్శనంను సృష్టించు"
+
+#: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+msgid  "Forms"
+msgstr "ఫారములు"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+msgid  "Reports"
+msgstr "నివేదనలు"
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+msgid  "Form..."
+msgstr "ఫారమ్..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+msgid  "Report..."
+msgstr "నివేదిక..."
+
+#: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+msgid  "View (Simple)..."
+msgstr "దర్శనము (సరళమైన)..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+msgid  "Paste Special..."
+msgstr "ప్రత్యేకమైన  అతికించు"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+msgid  "Delete"
+msgstr "తీసివేయు"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+msgid  "Rename"
+msgstr "పునర్నామకరణ"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+msgid  "Edit"
+msgstr "సరిచేయు"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+msgid  "Edit in SQL View..."
+msgstr "SQL దర్శనమునందు సరికూర్చుము..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+msgid  "Open"
+msgstr "తెరచు"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+msgid  "Create as View"
+msgstr "దర్శనము వలె నిర్మించు"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Form Wizard..."
+msgstr "విజార్డ్ ఫారమ్ "
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+msgid  "Report..."
+msgstr "నివేదిక..."
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+msgid  "Report Wizard..."
+msgstr "విజార్డ్ నివేదనలు "
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+msgid  "Select All"
+msgstr "అన్నిటిని ఎంచుకొనుము"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MenuItem.Text
+#, fuzzy
+msgid  "~Database"
+msgstr "దత్తాంశస్థానం (~D)"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "లక్షణాలు"
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MenuItem.Text
+#, fuzzy
+msgid  "Connection Type..."
+msgstr "బంధపు రకము "
+
+#: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MenuItem.Text
+#, fuzzy
+msgid  "Advanced Settings..."
+msgstr "ఉన్నత స్థితి అమరికలు"
+
+#: source/ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.String.Text
+#, fuzzy
+msgid  "Do you want to delete the data source '%1'?"
+msgstr "దత్తాంశవనరు '%1'ను తోలగించాలని ఉందా"
+
+#: source/ui/app/app.src#STR_APP_TITLE.String.Text
+#, fuzzy
+msgid  " - %PRODUCTNAME Base"
+msgstr "%PRODUCTNAME మూలం"
+
+#: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "The wizard will guide you through the steps necessary to create a report."
+msgstr " నివేదనలు ను సృష్టించడానికి, విజార్డ్ సహకరించును "
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
+#, fuzzy
+msgid  "Create a form by specifying the record source, controls, and control properties."
+msgstr "రికార్డు మూలాధారం,నియంత్రణలు మరియు నియంత్రణ లక్షణాలను నిర్దేశించి ఫారమ్ ను సృష్టించుము"
+
+#: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
+#, fuzzy
+msgid  "Create a report by specifying the record source, controls, and control properties."
+msgstr "రికార్డు యొక్క మూలము, నియంత్రికలను, మరియు నియంత్రిక లక్షణాలను తెలుపుతూ నివేదికను సృష్టించుము."
+
+#: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "The wizard will guide you through the steps necessary to create a form."
+msgstr " ఫారమ్  ను సృష్టించడానికి, విజార్డ్ సహకరించును "
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
+#, fuzzy
+msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
+msgstr "చక్కదిద్దుటకు లేక గ్రూప్ చేయడానికి  వడపోతలు,ఎగుబడి పట్టికలు,క్షేత్ర నామములు మరియు లక్షణాలు నిర్దేశించి ప్రశ్న ను సృష్టించుము"
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
+#, fuzzy
+msgid  "Create a query  entering an SQL statement directly."
+msgstr "సూటిగా ఎస్ క్యు ఎల్ ప్రకటనను ప్రవేశించి ప్రశ్న ను సృష్టించుము"
+
+#: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "The wizard will guide you through the steps necessary to create a query."
+msgstr "ప్రశ్న ను ను సృష్టించడానికి, విజార్డ్ సహకరించును "
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
+#, fuzzy
+msgid  "Create a table by specifying the field names and properties, as well as the data types."
+msgstr "క్షేత్ర నామములు,లక్షణాలు మరియు దత్తాంశరములను నిర్దేశించి పట్టికను సృష్టించుము"
+
+#: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
+msgstr "వృత్తి మరియు వ్యక్తిగత పట్టికల మచ్చు నుండి ఎన్నుకోని ,దానిని మలుచుకొని మీ పట్టికను సృష్టించుము"
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
+#, fuzzy
+msgid  "Create a view by specifying the tables and field names you would like to have visible."
+msgstr "మీకు కావలసిన గోచరమయ్యే పట్టికలను మరియు క్షేత్ర నామములు నిర్దేశించి దర్శనమును  సృష్టించుము  "
+
+#: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
+msgid  "Opens the view wizard"
+msgstr "దర్శనవిజార్డ్ ను తెరుస్తుంది"
+
+#: source/ui/app/app.src#STR_DATABASE.String.Text
+#, fuzzy
+msgid  "Database"
+msgstr "దత్తాంశస్థానం"
+
+#: source/ui/app/app.src#STR_TASKS.String.Text
+#, fuzzy
+msgid  "Tasks"
+msgstr "పనులు"
+
+#: source/ui/app/app.src#STR_DESCRIPTION.String.Text
+#, fuzzy
+msgid  "Description"
+msgstr "వివరణ"
+
+#: source/ui/app/app.src#STR_PREVIEW.String.Text
+#, fuzzy
+msgid  "Preview"
+msgstr "ఉపదర్శనం"
+
+#: source/ui/app/app.src#STR_DISABLEPREVIEW.String.Text
+#, fuzzy
+msgid  "Disable Preview"
+msgstr " ఉపదర్శనము నిరుపయోగపరుచు"
+
+#: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
+#, fuzzy
+msgid  "None"
+msgstr "ఏదీ కాదు"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MenuItem.Text
+#, fuzzy
+msgid  "Document Information"
+msgstr "పత్ర సమాచారం"
+
+#: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
+#, fuzzy
+msgid  "Document"
+msgstr "పత్రం"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+#, fuzzy
+msgid  "Form"
+msgstr " ఫారమ్"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "నివేదన"
+
+#: source/ui/app/app.src#STR_FRM_LABEL.String.Text
+#, fuzzy
+msgid  "F~orm name"
+msgstr "ఫారమ్ నామము (~o)"
+
+#: source/ui/app/app.src#STR_RPT_LABEL.String.Text
+#, fuzzy
+msgid  "~Report name"
+msgstr "నివేదన నామము  (~R)"
+
+#: source/ui/app/app.src#STR_FOLDER_LABEL.String.Text
+#, fuzzy
+msgid  "F~older name"
+msgstr "సంచయ నామము (~o)"
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.String.Text
+#, fuzzy
+msgid  "The document contains forms or reports with embedded macros."
+msgstr "ఈ పత్రము నివేదికలను మరియు ఫారములను ఎంబెడెడ్ స్థూలములతో కలిగివుంది."
+
+#: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+#, fuzzy
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr "స్థలములు డాటాబేస్ పత్రమునందు చేర్చవుండవలెను.\n\nమీరు యింతకుముందలి వలె మీ పత్రమును వుపయోగించవచ్చు, ఏమైనప్పటికి, మీరు మీ స్థూలములను వలసచేయుట మంచిది. మోనూ అంశము 'పనిముట్లు / స్థూలమును మేగ్రేట్‌చేయి ...' యిందులో మీకు సహాయము చేయగలదు.\n\nఈ మైగ్రేషన్ జరుగునంతవరకు మీరు స్థూలములను డాటాబేస్‌ పత్రమునకు చేర్చలేరు. "
+
+#: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
+#, fuzzy
+msgid  "Embedded database"
+msgstr "ఎంబెడెడ్ డాటాబేస్"
+
+#: source/ui/app/app.src#RID_STR_NO_DIFF_CAT.String.Text
+#, fuzzy
+msgid  "You cannot select different categories."
+msgstr "మీరు విభిన్న వర్గములను యెంపికచేయలేరు."
+
+#: source/ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.String.Text
+#, fuzzy
+msgid  "Unsupported object type found ($type$)."
+msgstr "మద్దతీయబడని ఆబ్జక్టు కనుగొనబడింది ($type$)."
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+msgid  "Do you want to delete the selected data?"
+msgstr "ఎంచిన  దత్తాంశమును తొలగించవలెనా?"
+
+#: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+msgid  "(filtered)"
+msgstr "(వడపోత)"
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "దోషం అమరికలు చక్కదిద్దు ప్రమాణము "
+
+#: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "దోషం అమరికలు వడపోత ప్రమాణము"
+
+#: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+msgid  "Connection lost"
+msgstr "బంధం తెగిపోయినది"
+
+#: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+msgid  "Queries"
+msgstr "ప్రశ్నలు"
+
+#: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+msgid  "Tables"
+msgstr "పట్టికలు"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "దత్తాంశస్థానదస్త్రంను సరిచేయుట... (~D)"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "నమోదైన డాటాబేస్‌లు ..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "తెంచు  (~n)"
+
+#: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+msgid  "Confirm Deletion"
+msgstr "తొలగించుటను ధ౉ృవీకరించు  "
+
+#: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+msgid  "Do you want to delete the table '%1'?"
+msgstr "'%1' పట్టికను తోలగించాలని ఉందా ?"
+
+#: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+msgid  "The query already exists. Do you want to delete it?"
+msgstr "ఈ ప్రశ్న ముందుగానే ఉన్నది.దీనిని తోలగించలని ఉందా"
+
+#: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database has been lost. Do you want to reconnect?"
+msgstr "దత్తాంశస్థానముకు బంధం తెగిపోయింది.మళ్ళీ బంధం ఎర్పర్చాలా"
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+msgid  "Warnings encountered"
+msgstr "హెచ్చరికలు నివేదించబడినవి "
+
+#: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+msgid  "While retrieving the tables, warnings were reported by the database connection."
+msgstr "పట్టికలను వెలికితీత,దత్తాంశస్థానబంధం నుండి హెచ్చరికలు నివేదించబడినవి"
+
+#: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+msgid  "Connecting to \"$name$\" ..."
+msgstr "\"$name$\" కి బంధించుచున్నది"
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+msgid  "Loading query $name$ ..."
+msgstr "$name$ ప్రశ్నను దిగుమతిచేస్తున్నది"
+
+#: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+msgid  "Loading table $name$ ..."
+msgstr "$name$ పట్టికను దిగుమతిచేస్తున్నది"
+
+#: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+msgid  "No table format could be found."
+msgstr "పట్టికరూపకం దోరకలేదు "
+
+#: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "బంధం దత్తాంశ వనరు \"$name$\""
+
+#: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+msgid  "Rebuild"
+msgstr " పునరమరిక"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+msgid  "Column ~Format..."
+msgstr "నిలువు పట్టి  రూపలావణ్యం (~F)"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+msgid  "Copy Column D~escription"
+msgstr " నకలు నిలువు పట్టి  వివరణ (~e)"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+msgid  "Table Format..."
+msgstr " పట్టిక  రూపలావణ్యం"
+
+#: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+msgid  "Row Height..."
+msgstr "అడ్డు వరుస ఎత్తు..."
+
+#: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+msgid  "Undo: Data Input"
+msgstr "చేసింది రద్దు: దత్తాంశం ఎగుబడి"
+
+#: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+msgid  "Save current record"
+msgstr " ప్రస్తుత రికార్డును దాచు"
+
+#: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+msgid  "Query #"
+msgstr "ప్రశ్న #"
+
+#: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "పట్టిక #"
+
+#: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+msgid  "View #"
+msgstr "దర్శనం#"
+
+#: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+msgid  "The name \"#\" already exists."
+msgstr "\"#\" నామం ముందుగానే  ఉన్నది"
+
+#: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+msgid  "No matching column names were found."
+msgstr "సామ్యము నిలువు పట్టి నామములు దోరకలేదు"
+
+#: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+msgid  "An error occurred. Do you want to continue copying?"
+msgstr "దోషం వచ్చినది.నకలు కోనసాగించాలా"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+msgid  "Data source table view"
+msgstr "దత్తాంశ  మూలాధారం  పట్టిక  దర్శనము"
+
+#: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+msgid  "Shows the selected table or query."
+msgstr "ఎంపిక చేసిన పట్టిక లేక ప్రశ్నను కనబర్చు"
+
+#: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+msgid  "Table #"
+msgstr "పట్టిక #"
+
+#: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+msgid  "Modify SQL statement(s)"
+msgstr " ఎస్ క్యూ ఎల్  ప్రకటనలను మార్చు  "
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+msgid  "Table name"
+msgstr "పట్టిక నామము"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+msgid  "Insert data"
+msgstr "దత్తాంశమును ప్రవేశపెటు"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+msgid  "Delete data"
+msgstr "దత్తాంశమును తొలగించు"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+msgid  "Modify data"
+msgstr "దత్తాంశమును మార్చు"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+msgid  "Alter structure"
+msgstr "నిర్మాణమును మార్చు"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+msgid  "Read data"
+msgstr "దత్తాంశమును చదువు"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+msgid  "Modify references"
+msgstr " అభీష్టాలను మార్చు"
+
+#: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+msgid  "Drop structure"
+msgstr " నిర్మాణమును పడవేయు"
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+msgid  "Sort Ascending"
+msgstr "ఆరోహణాక్రమములో చక్కదిద్దు "
+
+#: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+msgid  "Sort Descending"
+msgstr "అవరోహణాక్రమములో  చక్కదిద్దు"
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr "ఎస్ డి బి సి చోదకి అభికర్తకు బంధనచేయకు (# సర్వీసునామము#)  "
+
+#: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+msgid  "A driver is not registered for the URL #connurl#."
+msgstr "ఒక చోదకి, యు ఆర్ ఎల్  కొరకు రిజిష్టర్ కాలేదు #కానర్ల్ # "
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+msgid  "No connection could be established for the URL #connurl#."
+msgstr " యు ఆర్ ఎల్ కు ఒక బంధము లేదు. #కానర్ల్ #  "
+
+#: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+msgid  "Please check the current settings, for example user name and password."
+msgstr "దయచేసి ప్రస్తుత అమరికలు  తనిఖీచేయి,ఉదాహరణకు వినియోగదారు నామము మరియు రహస్యపదం"
+
+#: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+msgid  "Successfully connected, but information about database tables is not available."
+msgstr "విజయవంతముగ బంధము చేసెను,కానీ దత్తాంశ టేబుల్ సమాచరము దోరకలేదు  "
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+msgid  "All tables"
+msgstr " మొత్తము టేబుల్ లు"
+
+#: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+msgid  "All views"
+msgstr "మొత్తము దర్శనములు"
+
+#: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+msgid  "All tables and views"
+msgstr "మొత్తము టేబుల్ లు మరియు  దర్శనములు"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.ModalDialog.Text
+#, fuzzy
+msgid  "Indexes"
+msgstr "విషయసూచికలు"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Index"
+msgstr "క్రోత్త సూచి"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Delete Current Index"
+msgstr "ప్రస్తుత సూచి ని తొలగించు"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.ToolBoxItem.Text
+#, fuzzy
+msgid  "Rename Current Index"
+msgstr "ప్రస్తుత సూచి ని పునర్నామకరణ"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Save Current Index"
+msgstr "ప్రస్తుత సూచి ని దాచు"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.ToolBoxItem.Text
+#, fuzzy
+msgid  "Reset Current Index"
+msgstr "ప్రస్తుత సూచి ని పునః ప్రారంభం"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FixedLine.Text
+#, fuzzy
+msgid  "Index details"
+msgstr "సూచి వివరాలు"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FixedText.Text
+#, fuzzy
+msgid  "Index identifier:"
+msgstr "సూచి గుర్తింపుచిహ్నం"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CheckBox.Text
+#, fuzzy
+msgid  "~Unique"
+msgstr "ఒక్కటైన  (~U)"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FixedText.Text
+#, fuzzy
+msgid  "Fields"
+msgstr "క్షేత్రములు"
+
+#: source/ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "మూయుము (~C)"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.String.Text
+#, fuzzy
+msgid  "Sort order"
+msgstr "వరుసక్రమము పద్దతి"
+
+#: source/ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.String.Text
+#, fuzzy
+msgid  "Index field"
+msgstr "సూచి క్షేత్రం"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.String.Text
+#, fuzzy
+msgid  "Ascending"
+msgstr "అవరోహణం"
+
+#: source/ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.String.Text
+#, fuzzy
+msgid  "Descending"
+msgstr "ఆరోహణం"
+
+#: source/ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.String.Text
+#, fuzzy
+msgid  "Do you really want to delete the index '$name$'?"
+msgstr "'$name$' సూచి ని నిజంగా తోలగించలని ఉందా?"
+
+#: source/ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.String.Text
+#, fuzzy
+msgid  "index"
+msgstr "సూచి"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Title
+#, fuzzy
+msgid  "Save Index"
+msgstr "సూచి దాచు"
+
+#: source/ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ErrorBox.Message
+#, fuzzy
+msgid  "The index must contain at least one field."
+msgstr "సూచి లో తప్పనిసరిగ ఒక క్షేత్రం ఉండాలి."
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Title
+#, fuzzy
+msgid  "Exit Index Design"
+msgstr "సూచి నమూన నండి బయటకు."
+
+#: source/ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QueryBox.Message
+#, fuzzy
+msgid  "Do you want to save the changes made to the current index?"
+msgstr "ప్రస్తుత సూచి మార్పులు దాచాల?"
+
+#: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
+#, fuzzy
+msgid  "There is already another index named \"$name$\"."
+msgstr "\"$name$\" పేరుతో ముందుగానే ఒక సూచి ఉన్నది."
+
+#: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
+#, fuzzy
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "సూచి నిర్వచనములో పట్టిక నిలువ పట్టి ఒకటి  కన్న ఎక్కు సార్లు రాకుడదు.మీరు \"$name$\" నిలువ పట్టి రెండు సార్లు ప్రవేశింయారు."
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
+#, fuzzy
+msgid  "~Parameters"
+msgstr "పరామితిలు (~P)"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FixedText.Text
+#, fuzzy
+msgid  "~Value"
+msgstr "విలువ (~V)"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PushButton.Text
+#, fuzzy
+msgid  "~Next"
+msgstr "తర్వాత (~N)"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.CancelButton.Text
+#, fuzzy
+msgid  "Parameter Input"
+msgstr "పరామితి ఎగుబడి"
+
+#: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
+#, fuzzy
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "\"$name$\"  నిలువ పట్టి  కోరకు ప్రవేశము వర్తించు విలువకు పరివర్తించకాదు."
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Base"
+msgstr "%PRODUCTNAME మూలం"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
+#, fuzzy
+msgid  "Details"
+msgstr "వివరములు"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
+#, fuzzy
+msgid  "Error ~list:"
+msgstr "దోషం జాబిత (~l)"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
+msgid  "~Description:"
+msgstr "వివరణ (~D)"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.String.Text
+#, fuzzy
+msgid  "SQL Status"
+msgstr "ఎస్ క్యూ ఎల్ సుస్థితి"
+
+#: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.String.Text
+#, fuzzy
+msgid  "Error code"
+msgstr "దోషం సంకేతం"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
+#, fuzzy
+msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
+msgstr "ఈ దోషం కు కారణం ,నీ దత్తాంశస్థాన భాష యొక్క అక్షర మాల అమరికలు.దత్తాంశస్థాన లక్షణాలను సరిచేస్తూ అమరికలనుగమనించు"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
+#, fuzzy
+msgid  "Error"
+msgstr "దోషము"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.String.Text
+#, fuzzy
+msgid  "Warning"
+msgstr "హెచ్చరికల"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.String.Text
+#, fuzzy
+msgid  "Information"
+msgstr "సమాచారం"
+
+#: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.String.Text
+#, fuzzy
+msgid  "Details"
+msgstr "వివరములు"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.ModalDialog.Text
+#, fuzzy
+msgid  "Standard Filter"
+msgstr "ప్రమాణపు వడపోత"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+#, fuzzy
+msgid  "AND"
+msgstr "మరియు"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+#, fuzzy
+msgid  "OR"
+msgstr "లేదా"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+#, fuzzy
+msgid  "AND"
+msgstr "మరియు"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+#, fuzzy
+msgid  "OR"
+msgstr "లేదా"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FixedText.Text
+#, fuzzy
+msgid  "Field name"
+msgstr "క్షేత్రనామము"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FixedText.Text
+#, fuzzy
+msgid  "Condition"
+msgstr "స్థితి"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FixedText.Text
+#, fuzzy
+msgid  "Value"
+msgstr "విలువ"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FixedText.Text
+#, fuzzy
+msgid  "Operator"
+msgstr "ఆపరేటర్"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FixedLine.Text
+#, fuzzy
+msgid  "Criteria"
+msgstr "ప్రమాణ"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.String.Text
+#, fuzzy
+msgid  "- none -"
+msgstr "ఎమి లేదు"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
+#, fuzzy
+msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;విధముగా  ;విధముగా లేని;నల్ ;నల్ కాని"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
+#, fuzzy
+msgid  "Relations"
+msgstr "సంభందాలు"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+#, fuzzy
+msgid  "Tables involved"
+msgstr "నిహితమైన పట్టికలు"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+#, fuzzy
+msgid  "Fields involved"
+msgstr " నిహితమైన క్షేత్రములు"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FixedLine.Text
+#, fuzzy
+msgid  "Update options"
+msgstr "తాజాపరుచు ఇచ్ఛాపూర్వకాలు"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RadioButton.Text
+#, fuzzy
+msgid  "~No action"
+msgstr "ఏ చర్యలేదు (~N)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RadioButton.Text
+#, fuzzy
+msgid  "~Update cascade"
+msgstr "తాజాపరుచు కాస్కెడ్  (~U)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RadioButton.Text
+#, fuzzy
+msgid  "~Set null"
+msgstr "nullకు అమర్చుము (~S)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
+#, fuzzy
+msgid  "Set ~default"
+msgstr "అప్రమేయంకు అమర్చుము (~d)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
+#, fuzzy
+msgid  "Delete options"
+msgstr "తోలగించు ఇచ్ఛాపూర్వకాలు"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RadioButton.Text
+#, fuzzy
+msgid  "~No action"
+msgstr "ఏ చర్యలేదు (~N)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RadioButton.Text
+#, fuzzy
+msgid  "Delete ~cascade"
+msgstr "తోలగించు కాస్కెడ్ (~c)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RadioButton.Text
+#, fuzzy
+msgid  "~Set null"
+msgstr "nullకు అమర్చుము (~S)"
+
+#: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RadioButton.Text
+#, fuzzy
+msgid  "Set ~default"
+msgstr "అప్రమేయంకు అమర్చుము (~d)"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.ModalDialog.Text
+#, fuzzy
+msgid  "Sort Order"
+msgstr "చక్కదిద్దు క్రమం"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+#, fuzzy
+msgid  "ascending"
+msgstr "ఆరోహణ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+#, fuzzy
+msgid  "descending"
+msgstr "అవరోహణ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+#, fuzzy
+msgid  "ascending"
+msgstr "ఆరోహణ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+#, fuzzy
+msgid  "descending"
+msgstr "అవరోహణ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+#, fuzzy
+msgid  "ascending"
+msgstr "ఆరోహణ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+#, fuzzy
+msgid  "descending"
+msgstr "అవరోహణ"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FixedText.Text
+#, fuzzy
+msgid  "Field name"
+msgstr "క్షేత్రనామము"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FixedText.Text
+#, fuzzy
+msgid  "and then"
+msgstr "అప్పుడు"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FixedText.Text
+#, fuzzy
+msgid  "and then"
+msgstr "అప్పుడు"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FixedText.Text
+#, fuzzy
+msgid  "Operator"
+msgstr "ఆపరేటర్"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FixedText.Text
+#, fuzzy
+msgid  "Order"
+msgstr "క్రమం"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FixedLine.Text
+#, fuzzy
+msgid  "Sort order"
+msgstr "వరుసక్రమము పద్దతి"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
+#, fuzzy
+msgid  "<none>"
+msgstr "<ఏదీ కాదు>"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+msgid  "Options"
+msgstr "ఇచ్ఛాపూర్వకాలు"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+msgid  "Use SQL92 naming constraints"
+msgstr "ఎస్ క్యూ ఎల్౯౨౯౯౯౯౯౯౯౯92 నామకరణ అవరోధంను వినియోగించుము"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+msgid  "Append the table alias name on SELECT statements"
+msgstr "SELECT ప్రకటనలో  పట్టిక మారుపేరును జతచేయు"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+msgid  "Use keyword AS before table alias names"
+msgstr "పట్టిక యెలియాస్ నామములముందు కీపదము AS వుపయోగించుము"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+msgid  "Use Outer Join syntax '{OJ }'"
+msgstr "ఔటర్ జైన్ పరిచ్ఛేద '{OJ }' వినియోగించుము "
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+msgid  "Ignore the privileges from the database driver"
+msgstr "దత్తాంశస్థాన చోదకి నుండి  పట్టించుకోకు"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+msgid  "Replace named parameters with '?'"
+msgstr "నామిక పరామితిని '?'తో పునఃస్థాపించుము"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+msgid  "Display version columns (when available)"
+msgstr "వివరణం నిలువు పట్టిలను ప్రదర్శించుము(పొందదగి ఉంటే)"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+msgid  "Use catalog name in SELECT statements"
+msgstr "SELECT ప్రకటనలో జాబితా నామమును వినియోగించుము"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+msgid  "Use schema name in SELECT statements"
+msgstr "SELECT ప్రకటనలో ముఖ్యాంశ సూచిక నామమును వినియోగించుము"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+msgid  "Create index with ASC or DESC statement"
+msgstr "ఆరోహణాక్రమం లేక అవరోహణాక్రమంలో సూచి సృష్టించుము"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+msgid  "End text lines with CR+LF"
+msgstr "పాఠపు వరుసలను CR+LF తో ముగింపుము"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+msgid  "Ignore currency field information"
+msgstr "డబ్బు క్షేత్రము సమాచారమును వదిలివేయుము"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+msgid  "Form data input checks for required fields"
+msgstr "అవసరమైన క్షేత్రముల కొరకు ఫారము డాటా యిన్పుట్ పరిశీలనలు"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
+msgid  "Use ODBC conformant date/time literals"
+msgstr "ODBC నిర్ధారిత తేదీ/సమయం విలువలను వుపయోగించుము"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
+msgid  "Supports primary keys"
+msgstr "ప్రైమరీ కీలను మద్దతించును"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CheckBox.Text
+msgid  "Respect the result set type from the database driver"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "అప్రమేయం"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "ఎస్ క్యూ ఎల్"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "మిశ్రము"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "MS Access"
+msgstr "ఎమ్ ఎస్ ఎక్సెస్"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+msgid  "Comparison of Boolean values"
+msgstr "బులియన్ విలువల యొక్క పోల్చుట"
+
+#: source/ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FixedText.Text
+msgid  "Rows to scan column types"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+msgid  "Settings"
+msgstr "అమరికలు"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+msgid  "Re~trieve generated values"
+msgstr "వచ్చిన విలువలను  వెలికితీయి (~t)"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+msgid  "~Auto-increment statement"
+msgstr "స్వయం పెరుగుదల ప్రకటన (~A)"
+
+#: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+msgid  "~Query of generated values"
+msgstr "వచ్చిన విలువ యొక్క ప్రశ్న (~Q)"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+msgid  "Generated Values"
+msgstr "వచ్చిన విలువలు"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+msgid  "Special Settings"
+msgstr "ప్రత్యేక అమరికలు"
+
+#: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.String.Text
+msgid  "Advanced Settings"
+msgstr ""
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+msgid  "Save"
+msgstr "దాచు"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+msgid  "Create New Directory"
+msgstr "కోత్త్ర వివరంను సృష్టించుము"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+msgid  "Up One Level"
+msgstr "ఒక స్థాయి పైకి"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+msgid  "File ~name:"
+msgstr "దస్త్రనామం (~n)"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+msgid  "Save"
+msgstr "దాచు"
+
+#: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+msgid  "~Path:"
+msgstr "త్రోవ (~P)"
+
+#: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+msgid  "Folder"
+msgstr "సంచయం"
+
+#: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+msgid  "The file already exists. Overwrite?"
+msgstr "దస్త్రం ముందుగానే ఉన్నది.చెరిపిరాయి?"
+
+#: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
+#, fuzzy
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "\"$name$\" దత్తాంశ మూలాధారం  బంధించడానికి  రహస్యపదం కావలెను"
+
+#: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+#, fuzzy
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr "వివరం \n\n$path$\n\n లేదు.సృష్టించాలా?"
+
+#: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
+#, fuzzy
+msgid  "The directory $name$ could not be created."
+msgstr "$name$ వివరం సృష్టించబడలెదు "
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.ModalDialog.Text
+#, fuzzy
+msgid  "Convert Database"
+msgstr "దత్తాంశస్థానం పరివర్తించు"
+
+#: source/ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FixedLine.Text
+#, fuzzy
+msgid  "Please enter the ~password for the user 'DOMAIN'."
+msgstr "వినియోగదారు 'డొమైన్' కోరకు  దయచేసి రహస్యపదం  ప్రవేశింపుము  (~p)"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TabPage.Text
+#, fuzzy
+msgid  "Tables Filter"
+msgstr "పట్టికల వడపోత"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Tables and table filter"
+msgstr "పట్టికలు మరియు పట్టిక వడపోత"
+
+#: source/ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FixedText.Text
+#, fuzzy
+msgid  "Mark the tables that should be visible for the applications."
+msgstr "కార్యక్షేత్రం గోచరమైన పట్టికలను గుర్తుంచుము"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+msgid  "~Database name"
+msgstr "డాటాబేస్ నామము (~D)"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+msgid  "Se~rver / Port"
+msgstr "సేవిక / పోర్టు (~r)"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+msgid  "~Server"
+msgstr "సేవిక (~S)"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+msgid  "~Port"
+msgstr " రేవు"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+msgid  "Default: 3306"
+msgstr "అప్రమేయ: 3306"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+msgid  "So~cket"
+msgstr "సాకెట్ (~c)"
+
+#: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+msgid  "Named p~ipe"
+msgstr "నామపు పైప్ (~i)"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.String.Text
+#, fuzzy
+msgid  "User Settings"
+msgstr "వినియోగదారుని అమరికలు"
+
+#: source/ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.String.Text
+#, fuzzy
+msgid  "User administration"
+msgstr "వినియోగదారుని నిర్వహణ"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+msgid  "Tables"
+msgstr "పట్టికలు"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+msgid  "Queries"
+msgstr "ప్రశ్నలు"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+msgid  "~Add"
+msgstr "~కలుపు (~A)"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+msgid  "~Close"
+msgstr "మూయుము (~C)"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+msgid  "Add Tables"
+msgstr "పట్టికలు చేర్చు"
+
+#: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+msgid  "Add Table or Query"
+msgstr "పట్టికను లేదా ప్రశ్నను జతచేయుము"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TabDialog.Text
+#, fuzzy
+msgid  "Field Format"
+msgstr "క్షేత్ర రూపలావణ్యం"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.1.PushButton.Text
+#, fuzzy
+msgid  "Bac~k"
+msgstr "వెనక్కి (~k)"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.String.Text
+#, fuzzy
+msgid  "Font"
+msgstr "అక్షరశైలి"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.String.Text
+#, fuzzy
+msgid  "Format"
+msgstr "రూపలావణ్యం"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.String.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "ఒక వరుసలో వుంచుట"
+
+#: source/ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.String.Text
+#, fuzzy
+msgid  "Table Format"
+msgstr "పట్టిక రూపలావణ్యం"
+
+#: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+msgid  "Use catalog for file-based databases"
+msgstr "దస్త్రమూలం దత్తాంశస్థాన కోరకు జాబితను వినియోగించుము"
+
+#: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+msgid  "Connection Settings"
+msgstr "బంధ అమరికలు"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "హోస్టు నామము (~H)"
+
+#: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+msgid  "~Port number"
+msgstr "పోర్టు సంఖ్య (~P)"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
+#, fuzzy
+msgid  "Advanced Properties"
+msgstr "అధునాతన లక్షణములు"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.String.Text
+#, fuzzy
+msgid  "Additional Settings"
+msgstr "అదనపు అమరికలు"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.String.Text
+#, fuzzy
+msgid  "Connection settings"
+msgstr "బంధం అమరికలు"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.String.Text
+#, fuzzy
+msgid  "Database properties"
+msgstr "డాటాబేస్ లక్షణములు"
+
+#: source/ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TabControl.Text
+#, fuzzy
+msgid  "Database properties"
+msgstr "డాటాబేస్ లక్షణములు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FixedText.Text
+#, fuzzy
+msgid  "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "%PRODUCTNAME దత్తాంశస్థానం విజార్డ్ కు స్వాగతం"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
+msgstr "కొత్త దత్తాంశ స్ఠానం సృష్టించుటకు దత్తాంశస్థాం విజర్డ్ ను ఉపయోగించు, ఉన్న దత్తాంశస్థానం దస్త్రమును తెరువుము లేక సేవిక పై దాచిన దత్తాంశస్థానం తో సంపర్కించు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
+#, fuzzy
+msgid  "What do you want to do?"
+msgstr "మీకు ఎమి చేయలని ఉన్నది?"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RadioButton.Text
+#, fuzzy
+msgid  "Create a n~ew database"
+msgstr "క్రోత్త దత్తాంశస్థానం సృష్టించుము (~e)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RadioButton.Text
+#, fuzzy
+msgid  "Open an existing database ~file"
+msgstr "ఉనికిలో ఉన్న దత్తాంశస్థానం దస్త్రమును తెరువుము (~f)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FixedText.Text
+#, fuzzy
+msgid  "Recently used"
+msgstr "ఇప్పుడె వాడినవి"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RadioButton.Text
+#, fuzzy
+msgid  "Connect to an e~xisting database"
+msgstr "ఉన్న దత్తాంశస్థానమునకు బంధించుము. (~x)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
+#, fuzzy
+msgid  "Select the type of database to which you want to establish a connection."
+msgstr "బంధం ఎర్పర్చడానికి దత్తాంశస్థానం రకమును ఎంచుము."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
+#, fuzzy
+msgid  "Database ~type "
+msgstr "దత్తాంశస్థానం రకము (~t)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FixedText.Text
+#, fuzzy
+msgid  "Database"
+msgstr "దత్తాంశస్థానం"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+#, fuzzy
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr "ఈ పుటలలో ,మీరు వివరమైన అమరికలను చేయవచ్చు\n\n మీ క్రొత్త అమరికలు ,పాత అమరికలను చెరిపిరాయును"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
+#, fuzzy
+msgid  "MySQL"
+msgstr "మైఎస్ క్యూ ఎల్"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.String.Text
+#, fuzzy
+msgid  "Data Source Properties: #"
+msgstr "దత్తాంశ  మూలాధారం లక్షణాలు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
+#, fuzzy
+msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
+msgstr "#lib#  కార్యక్రమం గ్రంధాలయం దిగుమతి చేయలేరు లేద చెడిపోయినది.ఓడిబిసి దత్తాంశ మూలాధారం లభించలేదు."
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+#, fuzzy
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr "ఈ  దత్తాంశ మూలాధారం రకం కి సహకరించదు.\n మీకు అమరికలను మార్చడానికి అనుమతి ఉంది కాని మీకు దత్తాంశస్థానంనకు బంధం చేయలేవు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
+#, fuzzy
+msgid  "General"
+msgstr "సాధారణ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Optional settings"
+msgstr "ఇచ్ఛాపూర్వక అమరికలు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CheckBox.Text
+#, fuzzy
+msgid  "Display deleted records as well"
+msgstr "తొలగించబడినది రికార్డులు కూడ ప్రదర్శించు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
+#, fuzzy
+msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
+msgstr "గమనిక:తొలగించబడినపుడు  క్రియాహీనమై రికార్డులు  ప్రదర్శించబడను,నాకు దత్తాంశ మూలాధారం నుండి రికార్డులను తొలగించలేవు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
+#, fuzzy
+msgid  "Indexes..."
+msgstr "సూచిలు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Optional Settings"
+msgstr "ఇచ్ఛాపూర్వక అమరిక"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FixedText.Text
+#, fuzzy
+msgid  "ODBC ~options"
+msgstr "ఓడిబిసి ఇచ్ఛాపూర్వకాలు (~o)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Connection Settings"
+msgstr "బంధ అమరికలు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
+#, fuzzy
+msgid  "~Host name"
+msgstr "హోస్టు నామము (~H)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FixedText.Text
+#, fuzzy
+msgid  "Data ~buffer size (MB)"
+msgstr "డాటా బఫర్ పరిమాణము (~b) (MB)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FixedText.Text
+#, fuzzy
+msgid  "~Data increment (MB)"
+msgstr "దత్తాంశ పెరుగుదల (ఎమ్ బి) (~D)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "Administration"
+msgstr "నిర్వహణ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FixedText.Text
+#, fuzzy
+msgid  "Control ~user name"
+msgstr "నియంత్రణ వినియోగదారు పేరు (~u)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FixedText.Text
+#, fuzzy
+msgid  "Control ~password"
+msgstr "నియంత్రణ రహస్యపదం (~p)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CheckBox.Text
+#, fuzzy
+msgid  "~Shut down service when closing %PRODUCTNAME"
+msgstr "మూసివేయు సేవ  %PRODUCTNAME మూసివేయునపుడు (~S)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PushButton.Text
+#, fuzzy
+msgid  "E~xtended..."
+msgstr "పొడిగింపు (~x)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
+msgid  "MySQL JDBC d~river class"
+msgstr "మైఎస్ క్యూ ఎల్  జె డి బి సి చోదకి తరగతి (~r)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+#, fuzzy
+msgid  "Test class"
+msgstr "పరీక్షా తరగతి"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "User authentication"
+msgstr "వినియోగదారుని ప్రామాణీకరణ"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FixedText.Text
+#, fuzzy
+msgid  "~User name"
+msgstr "వినియోగదారుడి నామము (~U)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CheckBox.Text
+#, fuzzy
+msgid  "Password required"
+msgstr "రహస్యపదం అవసరం"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
+msgid  "Oracle JDBC d~river class"
+msgstr "ఒరాకిల్ జె డి బి సి చోదకి తరగత (~r)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
+#, fuzzy
+msgid  "Test class"
+msgstr "పరీక్షా తరగతి"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Connection Settings"
+msgstr "బంధ అమరికలు"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FixedText.Text
+#, fuzzy
+msgid  "~Base DN"
+msgstr "మూలం డిఎన్ (~B)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CheckBox.Text
+#, fuzzy
+msgid  "Use secure connection(SSL)"
+msgstr "రక్షిత బంధం ఉపయెగించు(ఎస్ ఎస్ ఎల్)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
+#, fuzzy
+msgid  "~Port number"
+msgstr "పోర్టు సంఖ్య (~P)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
+#, fuzzy
+msgid  "Maximum number of ~records"
+msgstr "రికార్డుల యొక్క  అత్యధిక సంఖ్య (~r)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FixedText.Text
+#, fuzzy
+msgid  "~Hostname"
+msgstr "ఆతిథ్య నామం (~H)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FixedText.Text
+#, fuzzy
+msgid  "~Port number"
+msgstr "పోర్టు సంఖ్య (~P)"
+
+#: source/ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FixedText.Text
+#, fuzzy
+msgid  "~Driver settings"
+msgstr "చోదకి అమరికలు (~D)"
+
+#: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
+#, fuzzy
+msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
+msgstr "ఉన్న డాటాబేస్‌కు అనుసంధానమగుటకు దయచేసి 'ఉన్న డాటాబేస్‌కు అనుసంధానించు' ను యెంచుకొనుము."
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
+#, fuzzy
+msgid  "Save As"
+msgstr "ల దాచు"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
+msgid  "Please enter a name for the object to be created:"
+msgstr "దమచేసి సృష్టించబడె తాత్పర్య నామం ప్రవేవింపుము."
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FixedText.Text
+#, fuzzy
+msgid  "~Catalog"
+msgstr "జాబిత (~C)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FixedText.Text
+#, fuzzy
+msgid  "~Schema"
+msgstr "ముఖ్యాంశ సూచిక (~S)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.String.Text
+#, fuzzy
+msgid  "~Table Name"
+msgstr "పట్టిక నామం (~T)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.String.Text
+#, fuzzy
+msgid  "~Name of table view"
+msgstr "పట్టిక దర్శనం యోక్క నామం. (~N)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.String.Text
+#, fuzzy
+msgid  "~Query name"
+msgstr "ప్రశ్న నామం (~Q)"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.String.Text
+#, fuzzy
+msgid  "Rename to"
+msgstr "కి పునర్నామకరణ"
+
+#: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.String.Text
+#, fuzzy
+msgid  "Insert as"
+msgstr "ల ప్రవేశపెట్టు"
+
+#: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+msgid  "Path to the dBASE files"
+msgstr " డిబేస్ దస్ర్తాలుకి త్రోవ"
+
+#: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+msgid  "Path to the text files"
+msgstr "పాఠపుదస్ర్తాలకి త్రోవ"
+
+#: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+msgid  "Path to the spreadsheet document"
+msgstr " స్ర్పెడ్ షీట్ పత్రమునకు త్రోవ"
+
+#: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+msgid  "Name of the ODBC data source on your system"
+msgstr "మీ వ్యవస్థలో ఓడిబిసి దత్తాంశ మూలాధారం నామం "
+
+#: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+msgid  "Name of the MySQL database"
+msgstr "మైఎస్ క్యూ ఎల్ దత్తాంశస్థాన నామం"
+
+#: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+msgid  "Name of the Oracle database"
+msgstr "ఓరాకిల్ దత్తాంశస్థానం నామం"
+
+#: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+msgid  "Name of the Adabas D database"
+msgstr "అడాబాస్ డి దత్తాంశస్థాన నామం"
+
+#: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+msgid  "Microsoft Access database file"
+msgstr "మైక్రోసాఫ్ట్ ఎక్సెస్ దత్తాంశస్థానం దస్త్రం"
+
+#: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
+msgstr "ఏ అమరికలు అవసరం లేదు.బంధమును  పరీక్షించడానికి '%test' బొత్తం ను నొక్కు"
+
+#: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+msgid  "Datasource URL"
+msgstr "దత్తాంశమూలాధారం యు ఆర్ ఎల్ సార్వజనీక సమాచార సేకరణ "
+
+#: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+msgid  "~Host name"
+msgstr "హోస్టు నామము (~H)"
+
+#: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+msgid  "~Mozilla profile name"
+msgstr "మొజిల్లా స్థూల వివర నామం (~M)"
+
+#: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+msgid  "~Thunderbird profile name"
+msgstr "థండర్ బర్డ్ స్థూల వివర నామం (~T)"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.ModalDialog.Text
+#, fuzzy
+msgid  "Data Source"
+msgstr "దత్తాంశ వనరు"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
+msgid  "Choose a data source:"
+msgstr "దత్తాంశం మూలాధారం ఎన్నుకొను"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PushButton.Text
+#, fuzzy
+msgid  "Organize..."
+msgstr "కార్యనిర్వహకం..."
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PushButton.Text
+#, fuzzy
+msgid  "Create..."
+msgstr "సృష్టించు"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.String.Text
+#, fuzzy
+msgid  "Local Databases"
+msgstr "స్థానిక దత్తాంశస్థానములు"
+
+#: source/ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.String.Text
+#, fuzzy
+msgid  "Choose a database"
+msgstr "దత్తాంశస్థానం ఎన్నుకొను"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+msgid  "General"
+msgstr "సాధారణ"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+msgid  "~Host name"
+msgstr "హోస్టు నామము (~H)"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+msgid  "User authentication"
+msgstr "వినియోగదారుని ప్రామాణీకరణ"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "వినియోగదారుడి నామము (~U)"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+msgid  "Password required"
+msgstr "రహస్యపదం అవసరం"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
+msgid  "JDBC properties"
+msgstr "జె డి బి సి లక్షణాలు"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+msgid  "~JDBC driver class"
+msgstr "జె డి బి సి చోదకి తరగతి (~J)"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+msgid  "Test Class"
+msgstr "పరీక్ష తరగతి"
+
+#: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+msgid  "Test Connection"
+msgstr "పరీక్ష బంధం"
+
+#: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+msgid  "No Adabas D data sources were found on your system."
+msgstr "మీ వ్యవస్థలో అడాబాస్ దత్తాంశం మూలాధారం దోరకలేదు"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+msgid  "Connection Test"
+msgstr "బంధం పరీక్ష"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+msgid  "The connection was established successfully."
+msgstr "బంధం విజయవంతముగా ఎర్పర్చబడినది"
+
+#: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+msgid  "The connection could not be established."
+msgstr "అనుసంధానము ఏర్పరచబడలేక పోయింది."
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
+msgid  "The JDBC driver was loaded successfully."
+msgstr "జె డి బి సి చోదకి విజయవంతముగా దిగుమతిచేయబడినది"
+
+#: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
+msgid  "The JDBC driver could not be loaded."
+msgstr "జె డి బి సి చోదకి దిగుమతిచేయబడలేదు"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
+msgid  "MS Access file"
+msgstr "ఎమ్ ఎస్ ఎక్సెస్ దస్త్రం"
+
+#: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
+msgid  "MS Access 2007 file"
+msgstr "MS యాక్సెస్ 2007 ఫైలు"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+msgid  "Database files"
+msgstr "దత్తాంశస్థాన  దస్త్రాలు"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+msgid  "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+msgid  "~TRANSACTIONLOG:"
+msgstr "~TRANSACTIONLOG:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+msgid  "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE:"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+msgid  "Database sizes"
+msgstr "దత్తాంశస్థానం పరిమాణములు"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+msgid  "S~ize (MB):"
+msgstr "పరిమాణము (ఎమ్ బి)  (~i)"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+msgid  "~Free memory space (MB):"
+msgstr "స్వేఛ్ఛా జ్ఞాపకశక్తి ప్రదేశాలు (ఎమ్ బి) (~F)"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+msgid  "~Memory utilization (in %):"
+msgstr " జ్ఞాపకశక్తి  వినియోగం (% లో) (~M)"
+
+#: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+msgid  "Database Statistics"
+msgstr "దత్తాంశస్థానం గణాంకాలు"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+msgid  "Contains the system tables"
+msgstr " వ్యవస్థపట్టికలను కలిగియుంది"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+msgid  "Contains information about transaction"
+msgstr " ట్రాన్సాక్షన్  సమాచారంను కలిగియుంది "
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+msgid  "Contains all data files"
+msgstr " దత్తాంశ దస్ర్తాలు కలిగియుంది"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+msgid  "Total size of the database files"
+msgstr "దత్తాంశస్థానం దస్ర్తాలు మొత్తం పరిమాణము"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+msgid  "Currently available space before a new datadev file is created."
+msgstr "కొత్త సృష్టించిన డాటాడెవ్ దస్త్రము ముందలి ప్రస్తుత అందుబాటు ఖాళి."
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+msgid  "Currently used memory"
+msgstr "ప్రస్తుతం వినియోగించిన జ్ఞాపకశక్తి"
+
+#: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+msgid  "No information could be displayed because no access rights exist for the required system tables."
+msgstr "సమాచారం ప్రదర్శనలేదు, అవసరమైన వ్యవస్థ పట్టికకు సాంగత్యం  హక్కులులేవు"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
+#, fuzzy
+msgid  "SQL command"
+msgstr "ఎస్ క్యూ ఎల్  ఆదేశం"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FixedText.Text
+#, fuzzy
+msgid  "Command to execute"
+msgstr "నిర్వర్తించడానికి ఆదేశము"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PushButton.Text
+#, fuzzy
+msgid  "Execute"
+msgstr "నిర్వర్తించు"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FixedText.Text
+#, fuzzy
+msgid  "Previous commands"
+msgstr "పూర్వపు ఆదేశాలు"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FixedLine.Text
+#, fuzzy
+msgid  "Status"
+msgstr "సుస్థితి"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "మూయుము"
+
+#: source/ui/dlg/directsql.src#DLG_DIRECTSQL.PushButton.Text
+#, fuzzy
+msgid  "Execute SQL Statement"
+msgstr "ఎస్ క్యూ ఎల్ ప్రకటనను  నిర్వర్తించు"
+
+#: source/ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.String.Text
+#, fuzzy
+msgid  "Command successfully executed."
+msgstr "ఆదేశము విజయవంతముగా నిర్వర్తించడమైనది."
+
+#: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
+#, fuzzy
+msgid  "The connection to the database has been lost. This dialog will be closed."
+msgstr "దత్తాంశస్థానమునకు బంధం తెగిపోయినది.ఈ సంభాషణ మూయబడును."
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
+#, fuzzy
+msgid  "Indexes"
+msgstr "విషయసూచికలు"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FixedText.Text
+#, fuzzy
+msgid  "~Table"
+msgstr "పట్టిక (~T)"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FixedLine.Text
+#, fuzzy
+msgid  "Assignment"
+msgstr "అభ్యాసం"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FixedText.Text
+#, fuzzy
+msgid  "T~able indexes"
+msgstr "పట్టిక సూచిలు (~a)"
+
+#: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FixedText.Text
+#, fuzzy
+msgid  "~Free indexes"
+msgstr "స్వతంత్ర సూచిలు (~F)"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FixedLine.Text
+#, fuzzy
+msgid  "User selection"
+msgstr "వినియోగదారుని ఎంపిక"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FixedText.Text
+#, fuzzy
+msgid  "Us~er:"
+msgstr "వినియోగదారు (~e)"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PushButton.Text
+#, fuzzy
+msgid  "~Add User..."
+msgstr "వినియోగదారును చేర్చు... (~A)"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PushButton.Text
+#, fuzzy
+msgid  "Change ~Password..."
+msgstr "రహస్యపదమును మార్చు... (~P)"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PushButton.Text
+#, fuzzy
+msgid  "~Delete User..."
+msgstr "వినియోగదారును తోలగించుము... (~D)"
+
+#: source/ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FixedLine.Text
+#, fuzzy
+msgid  "Access rights for selected user"
+msgstr "ఎంచిన వినియోగదారు కొరకు సాంగత్యం హక్కులు"
+
+#: source/ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QueryBox.Message
+#, fuzzy
+msgid  "Do you really want to delete the user?"
+msgstr "వినియోగదారును నిజంగా తోలగించాలని ఉందా?"
+
+#: source/ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.String.Text
+#, fuzzy
+msgid  "The database does not support user administration."
+msgstr "వినియోగదారు నిర్వహణను దత్తాంశస్థానం సహకరించదు"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
+#, fuzzy
+msgid  "User \"$name$:  $\""
+msgstr "\"$name$:  $\" వినియోగదారు"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
+#, fuzzy
+msgid  "Old p~assword"
+msgstr "పాత రహస్యపదం (~a)"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FixedText.Text
+#, fuzzy
+msgid  "~Password"
+msgstr "రహస్యపదం (~P)"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FixedText.Text
+#, fuzzy
+msgid  "~Confirm  password"
+msgstr "రహస్యపదం ధృవీకరించు (~C)"
+
+#: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.HelpButton.Text
+#, fuzzy
+msgid  "Change Password"
+msgstr "రహస్యపదంను మార్చు"
+
+#: source/ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+#, fuzzy
+msgid  "The passwords do not match. Please enter the password again."
+msgstr "రహస్యపదములు సమ్యము కాదు.దయచేసి  రహస్యపదం మళ్ళీ ప్రవేశింపుము"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
+#, fuzzy
+msgid  "Database Wizard"
+msgstr "డాటాబేస్ విజార్డు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
+#, fuzzy
+msgid  "Database Wizard"
+msgstr "డాటాబేస్ విజార్డు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.String.Text
+#, fuzzy
+msgid  "Select database"
+msgstr "దత్తాంశస్థానంను ఎంచు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.String.Text
+#, fuzzy
+msgid  "Set up dBASE connection"
+msgstr "డిబేస్ బంధం అమర్చిపెట్టు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to text files"
+msgstr "పాఠ్యపు దస్త్రములకు అనుసంధానమును అమర్చుము"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
+#, fuzzy
+msgid  "Set up Microsoft Access connection"
+msgstr "మైక్రోసాఫ్ట ఎక్సెస్ బంధం అమర్చిపెట్టు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.String.Text
+#, fuzzy
+msgid  "Set up LDAP connection"
+msgstr "ఎల్ డి ఎ పి బంధం అమర్చిపెటు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.String.Text
+#, fuzzy
+msgid  "Set up Adabas D connection"
+msgstr "అడాబాస్ డి బంధం అమర్చిపెటు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.String.Text
+#, fuzzy
+msgid  "Set up ADO connection"
+msgstr "ఎడిఓ బంధం అమర్చిపెటు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.String.Text
+#, fuzzy
+msgid  "Set up JDBC connection"
+msgstr "జె డి బి సి బంధం అమర్చిపెటు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.String.Text
+#, fuzzy
+msgid  "Set up Oracle database connection"
+msgstr "ఒరాకిల్ దత్తాంశస్థానం బంధం అమర్చిపెటు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.String.Text
+#, fuzzy
+msgid  "Set up MySQL connection"
+msgstr "మైఎస్ క్యూ ఎల్ బంధం అమర్చిపెటు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.String.Text
+#, fuzzy
+msgid  "Set up ODBC connection"
+msgstr "ఓడిబిసి బంధం అమర్చిపెట్టు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.String.Text
+#, fuzzy
+msgid  "Set up Spreadsheet connection"
+msgstr "స్ర్పెడ్ షీట్ బంధం అమర్చిపెట్టు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.String.Text
+#, fuzzy
+msgid  "Set up user authentication"
+msgstr "వినియోగదారు ప్రామాణీకరణ అమర్చిపెట్టు"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.String.Text
+#, fuzzy
+msgid  "Set up MySQL server data"
+msgstr "MySQL సేవిక డాటాను అమర్చుము"
+
+#: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.String.Text
+#, fuzzy
+msgid  "Save and proceed"
+msgstr "దాచు మరియు కొనసాగు"
+
+#: source/ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.String.Text
+#, fuzzy
+msgid  "New Database"
+msgstr "క్రోత్త దత్తాంశస్థానం"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FixedText.Text
+#, fuzzy
+msgid  "Set up a connection to a MySQL database"
+msgstr "మైఎస్ క్యూ ఎల్ దత్తాంశస్థానం బంధం అమర్చిపెట్టు"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "ఓడిబిసి లేద జె డి బి సి ఉపయెగించి మైఎస్ క్యూ ఎల్ దత్తాంశస్థానంనకు బంధించవచ్చు.\nదయచేసి మీ వ్యవస్థ నిర్వాహకుడుని సంప్రదించండి"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
+#, fuzzy
+msgid  "How do you want to connect to your MySQL database?"
+msgstr "మైఎస్ క్యూ ఎల్ దత్తాంశస్థానమునకు ఎలా బంధించాలి?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RadioButton.Text
+#, fuzzy
+msgid  "Connect using ODBC (Open Database Connectivity)"
+msgstr "ఓడిబిసి ఉపయెగించి బంధించుము(ఓడిబిసి )  "
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RadioButton.Text
+#, fuzzy
+msgid  "Connect using JDBC (Java Database Connectivity)"
+msgstr "జెడిబిసి ఉపయెగించి బంధించుము( జె డి బి సి)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RadioButton.Text
+#, fuzzy
+msgid  "Connect directly"
+msgstr "నేరుగా అనుసంధానించుము"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FixedText.Text
+#, fuzzy
+msgid  "Set up the user authentication"
+msgstr "వినియోగదారు ప్రామాణీకరణ అమర్చిపెట్టు"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "Some databases require you to enter a user name."
+msgstr "కొన్ని దత్తాంశస్థానములకు వినియోగదారు పేరును ప్రవేశపెట్టుట అవసరం"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
+#, fuzzy
+msgid  "~User name"
+msgstr "వినియోగదారుడి నామము (~U)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CheckBox.Text
+#, fuzzy
+msgid  "Password re~quired"
+msgstr "రహస్యపదం అవసరం (~q)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PushButton.Text
+#, fuzzy
+msgid  "~Test Connection"
+msgstr "బంధం పరీక్షించు (~T)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FixedText.Text
+#, fuzzy
+msgid  "Decide how to proceed after saving the database"
+msgstr "దత్తాంశస్థానమును దాచిన తర్వత  ఎలా కొనసాగాలి ఆలోచించుకోండి"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "%PRODUCTNAME లో విజార్డ్ ను  దత్తాంశస్థానమును నమొదు చేయమంటారా?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RadioButton.Text
+#, fuzzy
+msgid  "~Yes, register the database for me"
+msgstr "ఆవును, నాకోసం దత్తాంశస్థానమును నమొదు చేయండి (~Y)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RadioButton.Text
+#, fuzzy
+msgid  "N~o, do not register the database"
+msgstr "కాదు,దత్తాంశస్థానమును నమొదు చేయకండి (~o)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FixedText.Text
+#, fuzzy
+msgid  "After the database file has been saved, what do you want to do?"
+msgstr "డాటాబేస్ ఫైలు దాయబడిన తర్వాత, మీరు యేమి చేయాలని అనుకొనుచున్నారు?"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CheckBox.Text
+#, fuzzy
+msgid  "Open the database for editing"
+msgstr "సరిచేయడానికి  దత్తాంశస్థానమును తెరవండి"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CheckBox.Text
+#, fuzzy
+msgid  "Create tables using the table wizard"
+msgstr "పట్టిక విజార్డ్ ను ఉపయొగించి పట్టికలను సృష్టించు"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FixedText.Text
+#, fuzzy
+msgid  "Click 'Finish' to save the database."
+msgstr "దత్తాంశస్థానమును దచాడానికి ముగింపు నోక్కండి."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up connection to a MySQL database using JDBC"
+msgstr "మై ఎస్ క్యూ ఎల్ దత్తాంశస్థానమునుకు జె డి బి సి ఉపయొగించి బంధం అమర్చిపెట్టు"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "దయచేసి మై ఎస్ క్యూ ఎల్ దత్తాంశస్థానమునుకు జె డి బి సి ఉపయొగించి బంధంనకు తగిన సమాచారము యివ్వు.మీ వ్యవస్థ నందు జె డి బి సి చోదకి నెలకొల్పబడి ఉండాలి మరియు %PRODUCTNAMEతో రిజిష్టర్ అయిఉండాలి.\n ఈ అమరికల గురించి నీ  వ్యవస్థనిర్వాహకిని సంప్రదించు"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
+#, fuzzy
+msgid  "MySQL JDBC d~river class:"
+msgstr "మై ఎస్ క్యూ ఎల్ జె డి బి సి చోదకి తరగతి (~r)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.String.Text
+#, fuzzy
+msgid  "Default: 3306"
+msgstr "అప్రమేయ: 3306"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Set up connection to a MySQL database"
+msgstr "అనుసంధానమును MySQL డాటాబేస్‌కు అమర్చుము"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to a MySQL database."
+msgstr "MySQL డాటాబేస్‌కు అనుసంధానించుటకు కావలిసిన సమాచారమును దయచేసి ప్రవేశపెట్టుము."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to dBASE files"
+msgstr "డిబేస్ దస్ర్తాలకు బంధం అమర్చిపెట్టు"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Select the folder where the dBASE files are stored."
+msgstr "డిబేస్ దస్ర్తాలు ఉన్న సంచయమును ఎంచుము."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to text files"
+msgstr "పాఠ్యపు దస్త్రములకు అనుసంధానమును అమర్చుము"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr "సి ఎస్ వి పాఠపు  దస్ర్తాలు నిలువ ఉన్న సంచయమును ఎంచుము."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
+#, fuzzy
+msgid  "Path to text files"
+msgstr "పాఠపు దస్ర్తాలకు త్రోవ"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to a Microsoft Access database"
+msgstr "మైక్రోసాఫ్ట్ ఎక్సెస్ కి బంధం అమర్చిపెట్టు."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please select the Microsoft Access file you want to access."
+msgstr "దయచేసి మీరు సాంగత్యం  మైక్రోసాఫ్ట్ ఎక్సెస్ దస్త్రమును ఎంచుము."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
+#, fuzzy
+msgid  "Set up a connection to an LDAP directory"
+msgstr "ఎల్ డి ఎ పి వివరం కు బంధం అమర్చిపెట్టు."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "దయచేసి ఎల్ డి ఎ పి బంధించడానికి అవసరమైన సమాచరం ప్రవేశింపుము.\n దయచేసి ఈ అమరికలు గురించి  మీ వ్యవస ్థ నిర్వహకుడుని సంప్రదించండి."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
+#, fuzzy
+msgid  "Default: 389"
+msgstr "అప్రమేయం: 389"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CheckBox.Text
+#, fuzzy
+msgid  "Use ~secure connection (SSL)"
+msgstr "రక్షిత బంధమును వినియోగించుము(ఎస్ ఎస్ ఎల్). (~s)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to an Adabas D database"
+msgstr "అడాబాస్ డి దత్తాంశస్థానముకు బంధం అమర్చిపెట్టు."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr "మీరు బంధించాలనుకుంటున్న అడాబాస్ డి దత్తాంశస్థానము పేరును ప్రవేశింపుము.\n అన్వేషణ ను నోక్కి ముందుగానే నమొదైన %PRODUCTNAME అడాబాస్ డి దత్తాంశస్థానమును ఎంచుము."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to an ADO database"
+msgstr "ఎడిఒ కు దత్తాంశస్థానముకు బంధం అమర్చిపెట్టు."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "మీరు బంధించాలనుకుంటున్న ఎడిఒ దత్తాంశమూలాధారం యోక్క  యు ఆర్ ఎల్ ప్రవేశింపుము.\n అన్వేషణ ను నోక్కి   నిర్దేశిత అమరికలు రూపకరణించుకోండి.\n దయచేసి ఈ అమరికలు గురించి  మీ వ్యవస ్థ నిర్వహకుడుని సంప్రదించండి."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to an ODBC database"
+msgstr "ఓడిబిసి దత్తాంశస్థానముకు బంధం అమర్చిపెట్టు."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "మీరు బంధించాలనుకుంటున్న ఓడిబిసి దత్తాంశస్థానము పేరును ప్రవేశింపుము.\n అన్వేషణ ను నోక్కి %PRODUCTNAME లో ముందుగానే నమొదైన ఓడిబిసి దత్తాంశస్థానమును ఎంచుము.\n దయచేసి ఈ అమరికలు గురించి  మీ వ్యవస ్థ నిర్వహకుడుని సంప్రదించండి."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to a JDBC database"
+msgstr "జెడిబిసి దత్తాంశస్థానముకు బంధం అమర్చిపెట్టు."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "దయాచేసి జెడిబిసి ని బంధించడానికి అవసరమైన సమాచరం ప్రవేశింపుము.\n మీకు తెలియకుంటే  దయచేసి ఈ అమరికలు గురించి  మీ వ్యవస ్థ నిర్వహకుడుని సంప్రదించండి."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to an Oracle database"
+msgstr "ఒరాకిల్ దత్తాంశస్థానముకు బంధం అమర్చిపెట్టు."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.String.Text
+#, fuzzy
+msgid  "Default: 1521"
+msgstr "అప్రమేయం: 1521"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.String.Text
+#, fuzzy
+msgid  "Oracle JDBC ~driver class"
+msgstr "ఒరాకిల్ జె డి బి సి చోదకి తరగతి (~d)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr "దయాచేసి ఒరాకిల్ దత్తాంశస్థానముకు బంధించడానికి అవసరమైన సమాచరం ప్రవేశింపుము.మీ వ్యవస్థలో  జె డి బి సి చోదకి తరగతి నెలకొల్పబడింద మరియు %PRODUCTNAME తో నమొదించబడింది గమనించండి.\n మీకు తెలియకుంటే  దయచేసి ఈ అమరికలు గురించి  మీ వ్యవస ్థ నిర్వహకుడుని సంప్రదించండి."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
+#, fuzzy
+msgid  "Set up a connection to spreadsheets"
+msgstr "స్ర్పెడ్ షీట్ బంధం అమర్చిపెట్టు."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr "%PRODUCTNAME స్ర్పెడ్ షీట్ లేద మైక్రోసాఫ్ట్ ఎక్సెల్ పని పుస్తకం ఎంచడానికి  అన్వేషణ... ను నోక్కు.\n%PRODUCTNAME చదవడానికి మాత్రమే విధం లో తెరుస్తుంది."
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
+#, fuzzy
+msgid  "~Location and file name"
+msgstr "స్థానం మరియు దస్త్రపు నామం (~L)"
+
+#: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CheckBox.Text
+#, fuzzy
+msgid  "~Password required"
+msgstr "రహస్యపదము అవసరం (~P)"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FixedText.Text
+#, fuzzy
+msgid  "~Height"
+msgstr "ఎత్తు (~H)"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CheckBox.Text
+#, fuzzy
+msgid  "~Automatic"
+msgstr "స్వయంచాలక (~A)"
+
+#: source/ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HelpButton.Text
+#, fuzzy
+msgid  "Row Height"
+msgstr "అడ్డపట్టి పొడవు"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FixedText.Text
+#, fuzzy
+msgid  "~Width"
+msgstr "వెడల్పు (~W)"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CheckBox.Text
+#, fuzzy
+msgid  "~Automatic"
+msgstr "స్వయంచాలక (~A)"
+
+#: source/ui/dlg/dlgsize.src#DLG_COLWIDTH.HelpButton.Text
+#, fuzzy
+msgid  "Column Width"
+msgstr " నిలువు పట్టి వెడెల్పు"
+
+#: source/ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.ModalDialog.Text
+#, fuzzy
+msgid  "Text Connection Settings"
+msgstr "పాఠ్యము అనుసంధానము అమరికలు"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2).PB_AUTOBROWSEURL.PushButton.Text
+#, fuzzy
+msgid  "Browse"
+msgstr "అన్వేషించుము"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTODATABASENAME.FixedText.Text
+#, fuzzy
+msgid  "Database name"
+msgstr "డాటాబేస్ నామము"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOHOSTNAME.FixedText.Text
+#, fuzzy
+msgid  "Server"
+msgstr "సేవిక"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOBASEDN.FixedText.Text
+#, fuzzy
+msgid  "Base ~DN"
+msgstr "మూలం డి ఎన్ (~D)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y, AUTO_HID).FT_AUTOPORTNUMBER.FixedText.Text
+#, fuzzy
+msgid  "~Port number"
+msgstr "పోర్టు సంఖ్య (~P)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FL_DATACONVERT.FixedLine.Text
+#, fuzzy
+msgid  "Data conversion"
+msgstr "దత్తాంశ పరివర్తనం"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET( AUTO_Y, AUTOPAGE_X ).FT_CHARSET.FixedText.Text
+#, fuzzy
+msgid  "~Character set"
+msgstr "అక్షరమాల (~C)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FixedText.Text
+#, fuzzy
+msgid  "Specify the type of files you want to access"
+msgstr "మీరు సాంగత్యం దస్ర్తాలురకం పేర్కొను"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RadioButton.Text
+#, fuzzy
+msgid  "Plain text files (*.txt)"
+msgstr " పాఠ్యపు దస్రాలు (*.టి ఎక్స్ టి)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RadioButton.Text
+#, fuzzy
+msgid  "'Comma separated value' files (*.csv)"
+msgstr "'కామా వేరుచేయు విలువ'దస్ర్తాలు (*. సి ఎస్ వి)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RadioButton.Text
+#, fuzzy
+msgid  "Custom:"
+msgstr "మలచిన"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.Text
+#, fuzzy
+msgid  "Custom: *.abc"
+msgstr "మలచిన: *.ఎ బి సి"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "Row Format"
+msgstr "అడ్డపట్టి రూపలావణ్యం"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FixedText.Text
+#, fuzzy
+msgid  "Field separator"
+msgstr "క్షేత్రమును వేరుచేయువాడు "
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FixedText.Text
+#, fuzzy
+msgid  "Text separator"
+msgstr "పాఠంను  వేరుచేయువాడు"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FixedText.Text
+#, fuzzy
+msgid  "Decimal separator"
+msgstr "దశాంశంను వేరుచేయువాడు"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FixedText.Text
+#, fuzzy
+msgid  "Thousands separator"
+msgstr "వేలను వేరుచేయునది"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CheckBox.Text
+#, fuzzy
+msgid  "~Text contains headers"
+msgstr "పాఠము పీఠిక   కలిగియుండుట (~T)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.String.Text
+#, fuzzy
+msgid  "{None}"
+msgstr "{ఎమి లేదు}"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
+#, fuzzy
+msgid  "#1 must be set."
+msgstr "#1ను తప్పకుండా అమర్చు"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.String.Text
+#, fuzzy
+msgid  "#1 and #2 must be different."
+msgstr "#1 మరియు #౨౨౨2లను తప్పకుండా వేరుగాఉండాలి."
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.String.Text
+#, fuzzy
+msgid  "Wildcards such as ?,* are not allowed in #1."
+msgstr "?,* ల వైల్డ్కార్డ్లు #౧౧౧౧౧౧౧౧౧౧౧౧౧౧౧1 లో అనుమతించబడవు. "
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
+msgid  "JDBC d~river class"
+msgstr "జె డి బి సి చోదకి తరగతి (~r)"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PushButton.Text
+#, fuzzy
+msgid  "Test class"
+msgstr "పరీక్షా తరగతి"
+
+#: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FixedText.Text
+#, fuzzy
+msgid  "Socket"
+msgstr "సాకెట్"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "పునర్వికాసం"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "క్రోత్త దర్శనపు డిజైన్ (~V)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr " క్రోత్త టేబుల్ డిజైన్ (~T)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "ప్రశ్న స్వతహగ "
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "క్రోత్త ప్రశ్న    (దర్శనపు డిజైన్ ) (~Q)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr " ప్రశ్న ను సరిచేయి (~E)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "క్రోత్త ప్రశ్న     ( ఎస్ క్యూ ఎల్  దర్శనం ) (~S)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "సరిచేయుట"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "నిలువు పట్టీ వెడల్పు (~W)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "విజార్డ్ నివేదనలు "
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "స్వతహగను ఏర్పరచు"
+
+#: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+msgid  "System"
+msgstr "వ్యవస్థ "
+
+#: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+msgid  "Error during creation"
+msgstr "సృష్టించుటనపుడు దోషము  "
+
+#: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+msgid  "An unexpected error occurred. The operation could not be performed."
+msgstr "అనుకోకుండా దోషము వచ్చినది. కార్యము జరుపలేదు "
+
+#: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+msgid  "The document \"$file$\" could not be opened."
+msgstr "పత్రము \"$file$\" యిప్పుడు నకలు తీయబడలేవు."
+
+#: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+msgid  "The table cannot be deleted because the database connection does not support this."
+msgstr "టేబుల్ తొలగించలేము, ఎందుకనగా దీనిని  దత్తాంశస్థాన బంధం ఆధారము యివ్వదు. "
+
+#: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+msgid  "~All"
+msgstr "మొత్తము (~A)"
+
+#: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+msgid  "Undo:"
+msgstr "చేయకు "
+
+#: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+msgid  "Redo:"
+msgstr "మరల చేయి"
+
+#: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+msgid  "No corresponding column type could be found for column '#1'."
+msgstr "నిలువు పట్టి'#1'కు తుల్యమయిన నిలువు పట్టిరకము దొరకలేదు "
+
+#: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+msgid  "The file \"$file$\" does not exist."
+msgstr " \"$file$\" దస్త్రం లేదు"
+
+#: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "డాటా మూలమునకు అనుసంధానిస్తున్నప్పుడు హెచ్చరికలు యెదురవుతాయి. వాటిని చూడుటకు \"$buttontext$\" వత్తుము."
+
+#: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr "నామము '$#$' యిప్పటికే వుంది.\nదయచేసి వేరొక నామమును ప్రవేశపెట్టండి."
+
+#: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
+#, fuzzy
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "నివేదిక, \"$file$\",కు పొడిగింపు Sun Report Builder అవసరము."
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
+#, fuzzy
+msgid  "Apply columns"
+msgstr "నిలువు పట్టిలను  అనుసంధించు"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
+#, fuzzy
+msgid  "Type formatting"
+msgstr "ఫార్మటింగ్ రకం"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
+#, fuzzy
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr "ఈ క్షేత్రములు అప్పటికే ప్రాథమికమీటలుగా అమర్చబడినది:\n"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
+#, fuzzy
+msgid  "Assign columns"
+msgstr "నిలువు పట్టిలకు స్థానం ఇచ్చు  "
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
+#, fuzzy
+msgid  "Copy RTF Table"
+msgstr "ఆర్ టి ఎఫ్ టేబుల్ ను నకలు చేయి "
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "సహాయము (~H)"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "~Cancel"
+msgstr "రద్దు (~C)"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
+#, fuzzy
+msgid  "< ~Back"
+msgstr "<<వెనక (~B)"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
+#, fuzzy
+msgid  "~Next>"
+msgstr "తరువాత > (~N)"
+
+#: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+#, fuzzy
+msgid  "C~reate"
+msgstr "నిర్మించు (~r)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
+#, fuzzy
+msgid  "Existing columns"
+msgstr "ఉన్నటువంటి నిలువు పట్టిలు "
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
+#, fuzzy
+msgid  "Column information"
+msgstr "నిలువు పట్టిల సమాచారము "
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
+#, fuzzy
+msgid  "Automatic type recognition"
+msgstr "ఆటోమూటిక్ రకపు అంగీకారము "
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
+#, fuzzy
+msgid  "Lines (ma~x)"
+msgstr "లైనులు అధికము (~x)"
+
+#: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+#, fuzzy
+msgid  "Primary Key"
+msgstr "ప్రాముఖ్య మీట "
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
+#, fuzzy
+msgid  "Source table: \\n"
+msgstr "వనరు టేబుల్: \n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
+#, fuzzy
+msgid  "Destination table: \\n"
+msgstr "గమ్యపు టేబుల్ :\n"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+#, fuzzy
+msgid  "~All"
+msgstr "మొత్తము (~A)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+#, fuzzy
+msgid  "Non~e"
+msgstr "ఏమి లేదు  (~e)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+#, fuzzy
+msgid  "Ta~ble name"
+msgstr " టేబుల్ నామము (~b)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
+msgid  "Options"
+msgstr "ఇచ్ఛాపూర్వకాలు"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
+#, fuzzy
+msgid  "De~finition and data"
+msgstr "నిర్వచనము  మరియు దత్తాంశము (~f)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
+#, fuzzy
+msgid  "Def~inition"
+msgstr "నిర్వచనము (~i)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
+#, fuzzy
+msgid  "A~s table view"
+msgstr " టేబుల్ దర్శనముతో (~s)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
+#, fuzzy
+msgid  "Append ~data"
+msgstr "డాటాను కలుపుము (~d)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
+#, fuzzy
+msgid  "Use first ~line as column names"
+msgstr "మొదటి వరుసను నిలువువరుస నామములుగా వుపయోగించుము (~l)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
+#, fuzzy
+msgid  "Crea~te primary key"
+msgstr "ప్రాముఖ్య మీటను సృష్టించు (~t)"
+
+#: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+#, fuzzy
+msgid  "Name"
+msgstr "నామము"
+
+#: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
+#, fuzzy
+msgid  "Copy table"
+msgstr "పట్టికను నకలుతీయుము"
+
+#: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
+#, fuzzy
+msgid  "Copy table"
+msgstr "పట్టికను నకలుతీయుము"
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
+#, fuzzy
+msgid  "This table name is not valid in the current database."
+msgstr "ఈ టేబుల్ నామము ,ప్రస్తుత  దత్తాంశస్థానంలో నిస్సారమైనది "
+
+#: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+#, fuzzy
+msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
+msgstr "ఉన్న పట్టికకు డాటాను కలుపుటకు మొదటి పేజీపైని 'డాటాను కలుపుము' ఐచ్చికాన్ని యెంచుకొనుము."
+
+#: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
+#, fuzzy
+msgid  "Please change the table name. It is too long."
+msgstr "దయచేసి పట్టిక నామును మార్చు.ఇది చానా పెద్దది "
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+msgid  "Options"
+msgstr "ఇచ్ఛాపూర్వకాలు"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+msgid  "~Type"
+msgstr "రకం (~T)"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+msgid  "Inner join"
+msgstr "ఇన్నర్ జైన్"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+msgid  "Left join"
+msgstr "ఎడమ జైన్"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+msgid  "Right join"
+msgstr "కుడి జైన్"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+msgid  "Full (outer) join"
+msgstr "పూర్తి (బాహ్య) జైన్"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+msgid  "Cross join"
+msgstr "క్రాస్ జాయిన్"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+msgid  "Natural"
+msgstr "సాదారణ"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+msgid  "Tables involved"
+msgstr "నిహితమైన పట్టికలు"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+msgid  "Fields involved"
+msgstr " నిహితమైన క్షేత్రములు"
+
+#: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+msgid  "Join Properties"
+msgstr "జైన్ లక్షణాలు"
+
+#: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+msgid  "Please note that some databases may not support this join type."
+msgstr "దయచేసి గమణించండి కొన్ని దత్తాంశస్థానం ఈ జైన్ రకమును సహకరించవు."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+msgid  "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "రెండు పట్టికల యొక్క సంబంధించిన క్షెత్రముల సారం మాత్రమే ఉన్నది."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "పట్టిక '%1 యొక్క అన్ని రికార్డులు ఉన్నాయి కాని పట్టక  '%2' సామ్యమైన సంబంధించిన క్షెత్రముల యొక్క విలువ మాత్రమే ఉన్నాయి"
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+msgid  "Contains ALL records from '%1' and from '%2'."
+msgstr "దనిలో పట్టిక '%1'మరియు '%2' నుండి అన్ని రికార్డులు ఉన్నాయి."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "'%1' మరియు '%2' నుండి అన్ని రికార్డుల యొక్క కార్టీజియన్ ప్రొడక్టును కలిగివుంటుంది."
+
+#: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr "'%1' మరియు '%2' నుండి సమానంగా-పేరు పెట్టబ‍డివున్న నిలువువరుసల యొక్క ప్రతి జంటకు వొక నిలువువరుసను కలిగివుంటుంది."
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+msgid  "Add Table Window"
+msgstr "పట్టిక గవాక్షమును చేర్చు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+msgid  "Move table window"
+msgstr "పట్టిక గవాక్షమును కదిపించు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+msgid  "Insert Join"
+msgstr "జైన్ ప్రవేవపెట్టు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+msgid  "Delete Join"
+msgstr "జైన్ తోలగించు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+msgid  "Resize table window"
+msgstr "పట్టిక గవాక్షమును "
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+msgid  "Delete Column"
+msgstr "నిలువు పట్టిలను తొలగించు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+msgid  "Move column"
+msgstr "నిలువ పట్టి కదిపించు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+msgid  "Add Column"
+msgstr "నిలువ పట్టి చేర్చు"
+
+#: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, table '$name$' does not exist."
+msgstr "చెల్లని ఎక్సుప్రెషన్, పట్టిక $name$ లేదు."
+
+#: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+msgid  "Invalid expression, field name '$name$' does not exist."
+msgstr "నిస్సార వ్యక్తీకరణ,క్షేత్ర నామం '$name$' లేదు"
+
+#: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
+msgstr "ఈ క్వరీ #num# పట్టికలను కవర్‌చేస్తుంది. ఎంపిక కాబడిన డాటాబేస్, ఏమైనప్పటికి, #maxnum# పట్టికలయొక్క గరిష్టమును వొక్కో వాఖ్యమునకు ప్రోసెస్ చేస్తుంది."
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+msgid  "Delete Table Window"
+msgstr "పట్టిక గవాక్షం తోలగించు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+msgid  "Edit Column Description"
+msgstr "నిలువ పట్టి వివరణను సరిచేయు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+msgid  "Adjust column width"
+msgstr "నిలువ పట్టి వెడెల్పు పొసగు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+msgid  "(not sorted);ascending;descending"
+msgstr "(చక్కదిద్ద లేదు);ఆరోహణా;ఆవరోహణా"
+
+#: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+msgid  "(no function);Group"
+msgstr "(క్రియ లేదు); సముదాయం"
+
+#: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+msgid  "(no table)"
+msgstr "(పట్టిక లేదు)"
+
+#: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+msgid  "The database only supports sorting for visible fields."
+msgstr "గోచరమైన క్షేత్రములను చక్కదిద్దడానికి మాత్రమే దత్తాంశస్థానం సమకరిస్తుంది"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+msgid  "Functions"
+msgstr "కార్యములు"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+msgid  "Table Name"
+msgstr "పట్టిక నామం"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+msgid  "Alias"
+msgstr "వేరొక"
+
+#: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+msgid  "Distinct Values"
+msgstr "వేరే విలువలు"
+
+#: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "క్షేత్రం;మారు పేరు;పట్టిక;చక్కదిద్దు;గోచరమైన;క్రీయ;ప్రమాణ;లేద;లేద"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+msgid  "There are too many columns."
+msgstr "నిలువ పట్టిలు "
+
+#: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+msgid  "A condition cannot be applied to field [*]"
+msgstr "[*] క్షేత్రముకు నిబంధన అనుసంధించలేము"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+msgid  "The SQL statement created is too long."
+msgstr "సృష్టించబడిన ఎస్ క్యూ ఎల్ ప్రకటన "
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+msgid  "Query is too complex"
+msgstr "క్లిష్ట ప్రశ్న "
+
+#: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+msgid  "Nothing has been selected."
+msgstr "ఏదీ ఎంపికకాలేదు."
+
+#: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+msgid  "Too many search criteria"
+msgstr "వెతుకు ప్రమాణ"
+
+#: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+msgid  "SQL syntax error"
+msgstr "ఎస్ క్యూ ఎల్  పరిచ్ఛేద దోషం"
+
+#: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+msgid  "[*] cannot be used as a sort criterion."
+msgstr "[*] ని చక్కదిద్దు ప్రమాణం ల ఉపయోగించబడదు"
+
+#: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+msgid  "There are too many tables."
+msgstr "అచట చాలా పట్టికలున్నా యి"
+
+#: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+msgid  "The statement will not be applied when querying in the SQL dialect of the database."
+msgstr "దత్తాంశస్థాన ఎస్ క్యూ ఎల్ డైలక్ట్ నందు ప్రకటన అప్లై చేయలేము  "
+
+#: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+msgid  "Field name not found or not unique"
+msgstr "క్షేత్ర నామం దోరకలేదు లేదా ఒకటే ఉన్నది "
+
+#: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+msgid  "Join could not be processed"
+msgstr "జైన్ ను క్రమగతిచేయలేము"
+
+#: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+msgid  "Syntax error in SQL statement"
+msgstr "ఎస్ క్యూ ఎల్ ప్రకటన లో పరిచ్ఛేద దోషం"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+msgid  "This database does not support table views."
+msgstr "ఈ డాటాబేస్ పట్టిక దర్శనములకు మద్దతీయదు."
+
+#: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+msgid  "This database does not support altering of existing table views."
+msgstr "ఉన్న పట్టిక దర్శనములను మార్చటాన్ని ఈ డాటాబేస్ మద్దతీయదు."
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+msgid  "Do you want to create a query instead?"
+msgstr "ప్రశ్న సృష్టించాలా?"
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+msgid  "No query could be created."
+msgstr "ప్రశ్న సృష్టించబడలేదు."
+
+#: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+msgid  "No query could be created because no fields were selected."
+msgstr "ప్రశ్న సృష్టించబడలేదు ఎందుకనగా క్షేత్రములు ఎంపిక చేయలేదు."
+
+#: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
+msgstr "దత్తాంశమూలాధారం తొలగించబడినది.దానికి సంభంధించదన దత్తాంశమును  దాచలేదు"
+
+#: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+msgid  "The column '$name$' is unknown."
+msgstr "'$name$'అపరిచితమైన నిలువ పట్టి "
+
+#: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+msgid  "Columns can only be compared using '='."
+msgstr "నిలువ పట్టిలను '=' తో మాత్రమే  పోల్చుగలరు."
+
+#: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+msgid  "You must use a column name before 'LIKE'."
+msgstr "'LIKE' కి నిలువ నట్టి నామం ఉపయొగించాలి."
+
+#: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+msgid  "The column could not be found. Please note that the database is case-sensitive."
+msgstr "నిలువ పట్టి దోరకలేదు. దయచేసి గమణించండి దత్తాంశస్థానం సందర్భ స్పందన"
+
+#: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Query Design"
+msgstr " - %PRODUCTNAME  మూలం:ప్రశ్న డిజైన్"
+
+#: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: View Design"
+msgstr " - %PRODUCTNAME  మూలం:దర్శనపు డిజైన్"
+
+#: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr "$object$ మార్చబడింది.\nమీరు మార్పులను దాచుదామని అనుకొనుచున్నారా?"
+
+#: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "$object$ అనునది పార్శ్ చేయబడలేని SQL ఆదేశముపై అధారపడివుంది."
+
+#: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
+msgstr "$object$ అనునది SQL దర్శనమునందు తెరువబడినది."
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+msgid  "The table view"
+msgstr "పట్టిక దర్శనము"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+msgid  "The query"
+msgstr "ప్రశ్న"
+
+#: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+msgid  "The SQL statement"
+msgstr "SQL వాక్యము"
+
+#: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+msgid  "The query does not create a result set, and thus cannot be part of another query."
+msgstr "క్వరీ ఫలితాల సమితిని సృష్టించదు, అందుకని వేరొక క్వరీనందు భాగము కాలేదు."
+
+#: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
+msgstr "క్రియాశీలఅనుసంధానము మరియు డాటాసోర్సునామము పారామితులు తప్పిపోయినది లేదా తప్పైనవి - క్వరీ రూపీకరణిని సిద్దముచేయలేదు."
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+msgid  "This relation already exists. Do you want to edit it or create a new one?"
+msgstr "ఈ సంభందము యిప్పటికే వుంది. మీరు దానిని సరికూర్చుదామని లేదా కొత్త దానిని సృష్టించుదామని అనుకొనుచున్నారా?"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+msgid  "Edit..."
+msgstr "సరిచేయుట"
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+msgid  "Create..."
+msgstr "సృష్టించు"
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+msgid  " - %PRODUCTNAME Base: Relation design"
+msgstr "- %PRODUCTNAME బేస్ : బాంధవ్య డిజైన్  "
+
+#: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+msgid  "The database does not support relations."
+msgstr "దత్తాంశస్థానం బాంధవ్యములకు  సహకరించదు. "
+
+#: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
+msgstr "టేబుల్ ను తోలగిస్తే ,దానికి గల బాంధవ్యములు కూడా తోలగించబడును.  కొనసాగవలెనా? "
+
+#: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr "డాటాబేస్ సంభందాన్ని సృష్టించలేక పోయింది. ఈ రకమైన పట్టికకు ఫారెన్ కీలు మద్దతునీయవు.\nదయచేసి డాటాబేస్ యొక్క మీ పత్రికీకరణను పరిశీలించండి."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "ప్రాధమిక కీను చేర్చుము/తీసివేయుము"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+msgid  "Yes"
+msgstr "అవును"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+msgid  "No"
+msgstr "వద్దు"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+msgid  "Ascending"
+msgstr "అవరోహణం"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+msgid  "Descending"
+msgstr "ఆరోహణం"
+
+#: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+msgid  "<none>"
+msgstr "<ఏదీ కాదు>"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+msgid  "Field name"
+msgstr "క్షేత్రనామము"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+msgid  "Field Name"
+msgstr "క్షేత్ర నామము"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+msgid  "Field ~type"
+msgstr "క్షేత్ర రకము (~t)"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+msgid  "Field Type"
+msgstr "క్షేత్ర రకము"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+msgid  "Field length"
+msgstr "క్షేత్ర పొడవు"
+
+#: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+msgid  "Description"
+msgstr "వివరణ"
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
+msgid  "Column Description"
+msgstr "నిలువువరుస వివరణ"
+
+#: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+msgid  "Input required"
+msgstr " ఎగుబడి కావాలి"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+msgid  "~AutoValue"
+msgstr " అప్రమేయ విలువ (~A)"
+
+#: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+msgid  "Field Properties"
+msgstr "క్షేత్ర లక్షణాలు "
+
+#: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+msgid  "General"
+msgstr "సాధారణ"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+msgid  "Description:"
+msgstr "వివరణ:"
+
+#: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+msgid  "Table properties"
+msgstr "టేబుల్ లక్షణాలు"
+
+#: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+msgid  "The text you entered is not a list element. "
+msgstr " ఇచ్చిన పాఠము జాబితా మూలకం కాదు"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+msgid  "Insert Rows"
+msgstr " అడ్డపట్టీలను ప్రవేశపెట్టు"
+
+#: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+msgid  "Primary Key"
+msgstr "ప్రాముఖ్య మీట "
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+msgid  "Modify cell"
+msgstr "అరను మార్చు "
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+msgid  "Delete row"
+msgstr "అడ్డపట్టిని తొలగించు "
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+msgid  "Modify field type"
+msgstr "క్షేత్రము రకమును సవరించుము"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+msgid  "Insert row"
+msgstr " అడ్డపట్టీని ప్రవేశపెట్టు"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+msgid  "Insert new row"
+msgstr "క్రొత్త అడ్డపట్టీని ప్రవేశపెట్టు"
+
+#: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+msgid  "Insert/remove primary key"
+msgstr "ప్రాధమిక కీను చేర్చుము/తీసివేయుము"
+
+#: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+msgid  "~Default value"
+msgstr " అప్రమేయ విలువ (~D)"
+
+#: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+msgid  "~Entry required"
+msgstr "ప్రవేశము కావలెను (~E)"
+
+#: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+msgid  "~Length"
+msgstr "పొడవు (~L)"
+
+#: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+msgid  "~Type"
+msgstr "రకం (~T)"
+
+#: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+msgid  "~Length"
+msgstr "పొడవు (~L)"
+
+#: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+msgid  "Decimal ~places"
+msgstr "దత్తాంశ స్ధానములు (~p)"
+
+#: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+msgid  "Format example"
+msgstr "రూపలావణ్యం ఉదాహరణ "
+
+#: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr "అన్ని కొత్త రికార్డులనందు అప్రమేయంగా కనిపించు వొక విలువను యెంపికచేయుము.\nఒకవేళ క్షేత్రము అప్రమేయ విలువను కలిగిలేకపోతే, ఖాళీ స్ట్రింగ్‌ను యెంపికచేయుము."
+
+#: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr "ఈ క్షేత్రము కొరకు అప్రమేయ విలువ ఇవ్వు. \n\nతరువాత మీరు పట్టికనందు డాటాను ప్రవేశపెట్టిన తర్వాత, ప్రతి రికార్డునందు యెంపిక కాబడిన క్షేత్రము కొరకు యీ స్ట్రింగ్ వుపయోగించబడును. అందువలన, యిది కిందన ప్రవేశపెట్ట వలసిన అర ఫార్మాట్‌నకు చెందివుండాలి."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
+msgstr "ఈ క్షేత్రము NULL విలువలను కలిగివుండలేక పోతే ఈ క్షేత్రమును క్రియాశీల పరచుము, అంటే వినియోగదారి తప్పక యెల్లప్పుడు విలువలు ప్రవేశపెట్టాలి."
+
+#: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+msgid  "Enter the maximum text length permitted."
+msgstr "అనుమతించినటువంటి గరిష్ట పాఠ్యపు పొడవును ప్రవేశపెట్టుము"
+
+#: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+msgid  "Enter the number format."
+msgstr "సంఖ్య  రూపలావణ్యం ఇవ్వు."
+
+#: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr "ఈ క్షేత్రము కలిగివుండగల డాటా పొడవును నిర్ణయించుము.\n\nడెసిమల్ క్షేత్రములు అయితే, సంఖ్య యొక్క గరిష్ట పొడవును ప్రవేశపెట్టాలి, బైనరీ క్షేత్రములు అయితే, అప్పుడు డాటా బ్లాక్ యొక్క పొడవు.\nఆ విలువ ఈ డాటాబేస్ యొక్క గరిష్టమునకు మించినచో తగినట్లుగా సరిదిద్దబడాలి."
+
+#: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+msgid  "Specify the number of decimal places permitted in this field."
+msgstr "ఈ క్షేత్రమునందు అనుమతించవలసిన డెసిమల్ స్థానములను తెలుపుము."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
+msgstr "ప్రస్తుత ఫార్మాట్ నందు డాటా యెలా ప్రదర్శించబడులో మీరు యిక్కడ చూచుదురు (ఫార్మాట్‌ను సవరించుటకు కుడివైపుని బటన్‌ను వుపయోగించుము)."
+
+#: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+msgid  "This is where you determine the output format of the data."
+msgstr "డాటా యొక్క అవుట్పుట్ ఫార్మాట్‌ను మీరు యిక్కడ నిర్ణయిస్తారు."
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr "ఈ క్షేత్రము స్వయంచాలకంగాపెరుగు విలువలను కలిగివుండాలేమో యెంచుకొనుము.\n\nఈ రకమైన క్షేత్రములనందు మీరు డాటాను ప్రవేశపెట్టలేరు. ప్రతి కొత్త రికార్డునకు స్వయంచాలనంగా వొక పురోగమన విలువ యీయబడును (గత రికార్డు యొక్క పెరుగుదలనుండి ప్రతిఫలించును)."
+
+#: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "పట్టిక దాయబడలేదు యెంచేతంటే నిలువువరుస నామము \"$column\" రెండుసార్లు అప్పగించబడెను."
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "నిలువువరుస \"$column\" ప్రైమరీ కీనకు చెందినది. ఒకవేళ నిలువువరుస తొలగించబడినచో, ప్రైమరీ కీ కూడా తొలగించబడును. మీరు నిజంగా కొనసాగించుదామని అనుకొనుచున్నారా?"
+
+#: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+msgid  "Primary Key Affected"
+msgstr "ప్రాముఖ్య మీట మార్చబడినది "
+
+#: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+msgid  "Column"
+msgstr "నిలువు పట్టి"
+
+#: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+msgid  "Continue anyway?"
+msgstr "ఏ విధముగనైన కొనసాగించు "
+
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "హెచ్చరిక!"
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+msgid  "The table could not be saved due to problems connecting to the database."
+msgstr "డాటాబేస్‌కు అనుసంధానమగుటలో గల సమస్యల వలన పట్టిక దాయబడలేదు."
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+msgid  "The table filter could not be adjusted because the data source has been deleted."
+msgstr "డాటా మూలము తొలగించబడిన కారణంగా పట్టిక ఫిల్టర్ అనునది సర్దబాటు చేయబడలేదు."
+
+#: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+msgid  "No primary key"
+msgstr "ప్రైమరీ కీ లేదు"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr "ఈ డాటాబేస్ నందు డాటా రికార్డు గుర్తింపు కొరకు వొక ఏకైక విషయసూచిక లేదా ప్రైమరీ కీ అవసరము.\nఈ రెండు నియమాలలో వొకదానిని మీరు సంతృప్తి పరచినప్పుడు మాత్రమే యీ పట్టిక నందు డాటాను ప్రవేశపెట్టగలరు.\n\nఒక ప్రైమరీ కీ యిప్పుడు సృష్టించాలా?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base: Table Design"
+msgstr " - %PRODUCTNAME మూలం:పట్టిక డిజైన్"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "నిలువువరుస \"$column$\" మార్చలేము. బదులుగా నిలువువరుస తొలగించి కొత్త ఫార్మాట్ చేర్చాలా?"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+msgid  "Error while saving the table design"
+msgstr "పట్టిక డిజైన్‌ను దాయుచున్నప్పుడు దోషము"
+
+#: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+msgid  "The column $column$ could not be deleted."
+msgstr "నిలువువరుస $column$ తొలగించబడలేదు."
+
+#: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
+msgstr "మీరు పట్టికనందలి అన్ని నిలువుపట్టీలను తొలగించుటకు ప్రయత్నిస్తున్నారు. నిలువుపట్టీలు లేకుండా వొక పట్టిక వుండలేదు. పట్టిక డాటాబేస్‌నుండి తొలగించబడవలెనా? లేకపోతే, పట్టిక అలానే మార్చబడకుండా వుండును."
+
+#: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+msgid  "A~uto-increment statement"
+msgstr "స్వయంపెరుగుదల  ప్రకటన (~u)"
+
+#: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr "స్వంయ-పెరుగుదల క్షేత్రము కొరకు SQL ప్రకటనను ప్రవేశపెట్టుము.\n\nపట్టిక సృష్టించబడినప్పుడు యీ స్టేట్‌మెంట్ నేరుగా డాటాబేస్‌నకు బదిలీచేయబడును."
+
+#: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr "దత్తాంశస్థానం నుండి రకం సమాచారం వెలికితీత కాలేదు.\nఈ దత్తాంశ మూలాధారం కు పట్టిక డిజైన్ విధం లభించలేదు."
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+msgid  "change field name"
+msgstr "క్షేత్ర నామం మార్చు"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+msgid  "change field type"
+msgstr "క్షేత్ర రకం మార్చు"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+msgid  "change field description"
+msgstr "క్షేత్ర వివరణ మార్చు"
+
+#: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+msgid  "change field attribute"
+msgstr "క్షేత్ర ఆపాదించు మార్చు"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+msgid  "~Remember password until end of session"
+msgstr "సెషన్ ముగియునంతవరకు సంకేతపదమును గుర్తువుంచుకొనుము (~R)"
+
+#: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+msgid  "~Remember password"
+msgstr "రహస్యపదంను గుర్తుంచు (~R)"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+msgid  "The destination database does not support views."
+msgstr "లక్ష్యపు డాటాబేస్ వ్యూలను మద్దతీయదు."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+msgid  "The destination database does not support primary keys."
+msgstr "లక్ష్యపు డాటాబేస్ ప్రాధమిక కీలను మద్దతీయదు."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
+msgstr "ఎటువంటి డాటా యాక్సిస్ డిస్క్రిప్టార్ కనబడలేదు, లేదా ఏ డాటా యాక్సిస్ డిస్క్రిప్టార్ కూడా అవసరమైన సమాచారమునంతటిని అందివ్వలేదు"
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+msgid  "Only tables and queries are supported at the moment."
+msgstr "పట్టికలు మరియు క్వరీలు మాత్రమే యిప్పుడు మద్దతిస్తున్నవి."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+msgid  "The copy source's result set must support bookmarks."
+msgstr "నకలు మూలముయొక్క ఫలిత సమితి బుక్‌మార్కులను మద్దతివ్వాలి."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+msgid  "Unsupported source column type ($type$) at column position $pos$."
+msgstr "నిలువువరుస స్థానము $pos$ వద్ద మద్దతీయని మూలము నిలువువరుస రకము ($type$)."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+msgid  "Illegal number of initialization parameters."
+msgstr "సిద్దీకరణ పారామితులయొక్క చెల్లని సంఖ్య."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+msgid  "An error occurred during initialization."
+msgstr "సిద్దీకరణ సమయమందు ఒక దోషము సంభవించినది."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
+msgid  "Unsupported setting in the copy source descriptor: $name$."
+msgstr "నకలు మూలపు వివరణి నందు మద్దతీయని అమర్పు: $name$."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
+msgid  "To copy a query, your connection must be able to provide queries."
+msgstr "ఒక క్వరీను నకలుతీయుటకు, మీ అనుసంధానము తప్పక క్వరీలను అందివ్వగలగాలి."
+
+#: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
+msgid  "The given interaction handler is invalid."
+msgstr "ఇవ్వబడిన సంప్రతింపు సంభాలిక అనునది చెల్లనిది."

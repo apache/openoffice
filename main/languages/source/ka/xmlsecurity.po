@@ -1,0 +1,410 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
+msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
+msgstr "ელ ხელმოცერა ფუნქციურად ვერ იქნა გამოყენებული, რადგან მოზილას პროპილი არ იქნა  ნაპოვნი, გთხოვთ შეამოწმეთ მოზილას ინსტალაცია."
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
+#, fuzzy
+msgid  "Macro Security"
+msgstr "მაკრო უსაფრთხოება"
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PageItem.Text
+#, fuzzy
+msgid  "Security Level"
+msgstr "უსაფრთხოების დონე"
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PageItem.Text
+#, fuzzy
+msgid  "Trusted Sources"
+msgstr "სანდო წყაროები"
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PushButton.Text
+#, fuzzy
+msgid  "Reset"
+msgstr "ხელახალი კონფიგურაცია"
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
+#, fuzzy
+msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr "~ძალიან მაღალი.\nმხოლოდ სანდო მდებარეობების მაკროებია ნებადართული გასაშვებად. ყველა სხვა მაკრო,ხელმოწერილია თუ არა,გაუქმებულია."
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
+#, fuzzy
+msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr "მ~აღალი.\nგაიშვება მხოლოდ ხელმოწერილი მაკროები სანდო წყაროებიდან. ხელმოუწერელი მაკროები გაუქმებულია."
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
+#, fuzzy
+msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
+msgstr "~საშუალო.\nარასანდო წყაროებიდან მაკროების შესრულებამდე მოითხოვება დადასტურება."
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
+#, fuzzy
+msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr "~დაბალი (არარეკომენდებულია).\nყველა მაკრო შესრულდება ინფორმაციის გარეშე.  გამოიყენეთ ეს სექცია მხოლოდ მაშინ,როცა დარწმუნებული ხართ,რომ ყველა გახსნილი დოკუმენტი უსაფრთხოა."
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
+#, fuzzy
+msgid  "Trusted certificates"
+msgstr "სანდო სერტიფიკატები"
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
+#, fuzzy
+msgid  "Add..."
+msgstr "დამატება..."
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PushButton.Text
+#, fuzzy
+msgid  "View..."
+msgstr "ნახვა..."
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PushButton.Text
+#, fuzzy
+msgid  "Remove"
+msgstr "წაშლაა"
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FixedLine.Text
+#, fuzzy
+msgid  "Trusted file locations"
+msgstr "ფაილების სანდო მდებარეობები"
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
+#, fuzzy
+msgid  "Document macros are always executed if they have been opened from one of the following locations."
+msgstr "დოკუმენტების მაკროები ყოველთვის სრულდება,თუ ისინი ერთ-ერთი შემდეგი მდებაროებიდან გაიხსნა."
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
+#, fuzzy
+msgid  "Add..."
+msgstr "დამატება..."
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.PushButton.Text
+#, fuzzy
+msgid  "Remove"
+msgstr "წაშლა"
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.String.Text
+#, fuzzy
+msgid  "This setting is protected by the Administrator"
+msgstr "ეს პარამეტრი დაცულია ადმინისტრატორის მიერ"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.ModalDialog.Text
+#, fuzzy
+msgid  "Security Warning"
+msgstr "გაფრთხილება უსაფრთხოების შესახებ"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FixedText.Text
+msgid  "The document contains document macros signed by:"
+msgstr ""
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FixedText.Text
+msgid  "The document contains document macros."
+msgstr ""
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PushButton.Text
+#, fuzzy
+msgid  "View Signatures..."
+msgstr "ხელმოწერების ნახვა"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
+msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
+msgstr ""
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
+msgid  "Always trust macros from this source"
+msgstr ""
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PushButton.Text
+msgid  "Enable Macros"
+msgstr ""
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CancelButton.Text
+msgid  "Disable Macros"
+msgstr ""
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.ModalDialog.Text
+#, fuzzy
+msgid  "Digital Signatures"
+msgstr "ციფრული ხელმოწერები"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FixedText.Text
+#, fuzzy
+msgid  "The following have signed the document content:"
+msgstr "შემდეგმა მოაწერა დოკუმენტის შიგთავსს ხელი:"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FixedText.Text
+#, fuzzy
+msgid  "The following have signed the document macro:"
+msgstr "დოკუმენტ მაკროს შემდეგმა მოაწერა ხელი:"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FixedText.Text
+#, fuzzy
+msgid  "The following have signed this package:"
+msgstr "ამ პაკეტს შემდეგმა მოაწერა ხელი:"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
+msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
+msgstr ""
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
+#, fuzzy
+msgid  "Valid signature"
+msgstr "სწორი ხელმოწერა"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.String.Text
+#, fuzzy
+msgid  "Certificate could not be validated"
+msgstr "სერტიფიკატის შემოწმება შეუძლებელია"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.String.Text
+#, fuzzy
+msgid  "The signatures in this document are invalid"
+msgstr "ამ დოკუმენტის ხელმოწერები არასანდოა"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FixedText.Text
+#, fuzzy
+msgid  "The signatures in this document are valid"
+msgstr "ამ დოკუმენტის ხელმოწერები არასანდოა"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FixedText.Text
+msgid  "Not all parts of the document are signed"
+msgstr ""
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.FixedText.Text
+#, fuzzy
+msgid  "The signatures in this document are invalid"
+msgstr "ამ დოკუმენტების ხელმოწერები არასწორია"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PushButton.Text
+#, fuzzy
+msgid  "View Certificate..."
+msgstr "სერტიფიკატების ნახვა..."
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PushButton.Text
+msgid  "Sign Document..."
+msgstr ""
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PushButton.Text
+#, fuzzy
+msgid  "Remove"
+msgstr "წაშლა"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr ""
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\\n\\nSave document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+
+#: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
+msgid  "Adding or removing a macro signature will remove all document signatures.\\nDo you really want to continue?"
+msgstr ""
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
+#, fuzzy
+msgid  "View Certificate"
+msgstr "სერტიფიკატის ნახვა"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PageItem.Text
+#, fuzzy
+msgid  "General"
+msgstr "ზოგადი"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PageItem.Text
+#, fuzzy
+msgid  "Details"
+msgstr "დეტალები"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PageItem.Text
+#, fuzzy
+msgid  "Certification Path"
+msgstr "სერტიფიკატის გეზი"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FixedText.Text
+#, fuzzy
+msgid  " Certificate Information"
+msgstr "სერტიფიკატის ინფორმაცია"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FixedText.Text
+#, fuzzy
+msgid  "This certificate is intended for the following purpose(s):"
+msgstr "ეს სერტიფიკატი განკუთვნილია შემდეგი მიზნ(ებ)ისთვის"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FixedText.Text
+#, fuzzy
+msgid  "Issued to:"
+msgstr "გამოშვებულია:"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FixedText.Text
+#, fuzzy
+msgid  "Issued by:"
+msgstr "გამოშვებულია:"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FixedText.Text
+#, fuzzy
+msgid  "Valid from %SDATE% to %EDATE%"
+msgstr "ვარგისია %SDATE%-დან %EDATE%-მდე"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FixedText.Text
+#, fuzzy
+msgid  "You have a private key that corresponds to this certificate."
+msgstr "თქვენ გაგაჩნიათ პირადი გასაღები,რომელიც შეესაბამება ამ სერტიფიკატს."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
+#, fuzzy
+msgid  "The certificate could not be validated."
+msgstr "სერტიფიკატის შემოწმება შეუძლებელია."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
+msgid  "Field\\tValue"
+msgstr ""
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
+#, fuzzy
+msgid  "Version"
+msgstr "ვერსია"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.String.Text
+#, fuzzy
+msgid  "Serial Number"
+msgstr "სერიული ნომერი"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.String.Text
+#, fuzzy
+msgid  "Signature Algorithm"
+msgstr "ხელმოწერის ალგორითმი"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.String.Text
+#, fuzzy
+msgid  "Issuer"
+msgstr "გამომშვები"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.String.Text
+#, fuzzy
+msgid  "Issuer Unique ID"
+msgstr "გამომშვების უნიკალური ID"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.String.Text
+#, fuzzy
+msgid  "Valid From"
+msgstr "ვარგისია"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.String.Text
+#, fuzzy
+msgid  "Valid to"
+msgstr "ვარგისია"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.String.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "სუბიექტი"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.String.Text
+#, fuzzy
+msgid  "Subject Unique ID"
+msgstr "სუბიექტის უნიკალური ID"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.String.Text
+#, fuzzy
+msgid  "Subject Algorithm"
+msgstr "სუბიექტის ალგორითმი"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.String.Text
+#, fuzzy
+msgid  "Public Key"
+msgstr "საზოგადო გასაღები"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.String.Text
+#, fuzzy
+msgid  "Signature Algorithm"
+msgstr "ხელმოწერის ალგორითმი"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.String.Text
+#, fuzzy
+msgid  "Thumbprint SHA1"
+msgstr "Thumbprint SHA1"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.String.Text
+#, fuzzy
+msgid  "Thumbprint MD5"
+msgstr "Thumbprint MD5"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FixedText.Text
+#, fuzzy
+msgid  "Certification path"
+msgstr "სერტიფიკატის გეზი"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PushButton.Text
+#, fuzzy
+msgid  "View Certificate..."
+msgstr "სერტიფიკატების ნახვა..."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FixedText.Text
+#, fuzzy
+msgid  "Certification status"
+msgstr "სერტიფიკატის სტატუსი"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.String.Text
+#, fuzzy
+msgid  "The certificate is OK."
+msgstr "სერტიფიკატი ვარგისია."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.String.Text
+#, fuzzy
+msgid  "The certificate could not be validated."
+msgstr "შეუძლებელია სერტიფიკატის შემოწმება."
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.ModalDialog.Text
+#, fuzzy
+msgid  "Select Certificate"
+msgstr "სერტიფიკატის არჩევა"
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
+msgid  "Select the certificate you want to use for signing"
+msgstr "მონიშნეთ სერტიფიკატი,რომლის გამოყენებაც გსურთ ხელმოსაწერად"
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
+#, fuzzy
+msgid  "View Certificate..."
+msgstr "სერტიფიკატის ნახვა..."

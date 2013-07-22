@@ -1,0 +1,604 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+msgid  "Syntax error."
+msgstr "කාරක රිති දෝෂය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+msgid  "Return without Gosub."
+msgstr ""
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect entry; please retry."
+msgstr "සාවද්‍ය ඇතුළත් කිරීමක්; යළි ඇතුළත් කරන්න."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid procedure call."
+msgstr "සාවද්‍ය පටිපාටි ඇමතුම."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Overflow."
+msgstr "පිටාරය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough memory."
+msgstr "මතකය ප්‍රමාණවත් නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+msgid  "Array already dimensioned."
+msgstr "ආරාව දැනටමත් මානගතයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+msgid  "Index out of defined range."
+msgstr "දර්ශකය නිර්වචනය කළ පරාසය ඉක්මවා ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+msgid  "Duplicate definition."
+msgstr "ද්විවිධ නිර්වචනය"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+msgid  "Division by zero."
+msgstr "ශුන්‍යයෙන් බෙදීම."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable not defined."
+msgstr "විචල්‍යය නිර්වචනය කර නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+msgid  "Data type mismatch."
+msgstr "දත්ත වර්ගය නොගැලපීම."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid parameter."
+msgstr "අවලංගු පරාමිතිය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+msgid  "Process interrupted by user."
+msgstr "පරිශීලක විසින් ක්‍රියාවලිය අතුරුබිඳුමක් සිදු කළා."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+msgid  "Resume without error."
+msgstr "දෝෂයක් රහිතව යළි ක්‍රියාත්මක වීම."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough stack memory."
+msgstr "ඇසිරුම් මතකය ප්‍රමාණවත් නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub-procedure or function procedure not defined."
+msgstr "උප-ක්‍රියාවලිය හෝ ශ්‍රිත පටිපාටිය නිර්වචනය කර නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading DLL file."
+msgstr "DLL ගොනුව පූරණය දෝෂ සහිතයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+msgid  "Wrong DLL call convention."
+msgstr "වැරදි DLL ඇමතුම් සම්මතයක්."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Internal error $(ARG1)."
+msgstr "$(ARG1) අභ්‍යන්තර දෝෂය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid file name or file number."
+msgstr "අවලංගු ගොනු නාමයක් හෝ ගොනු අංකයක්."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "File not found."
+msgstr "ගොනුව හමුවුයේ නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect file mode."
+msgstr "සාවද්‍ය ගොනු ආකාරය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+msgid  "File already open."
+msgstr "ගොනුව දැනටමත් විවෘතයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Device I/O error."
+msgstr "මෙවලම් I/O දෝෂය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+msgid  "File already exists."
+msgstr "ගොනුව දැනටමත් ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record length."
+msgstr "සාවද්‍ය රෙකොඩ් දිග."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+msgid  "Disk or hard drive full."
+msgstr "තැටිය හෝ දෘඩ ධාවකය පිරී ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+msgid  "Reading exceeds EOF."
+msgstr "කියවීම ගොනුවේ අවසානය ඉක්මවා ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record number."
+msgstr "වැරදි රෙකොඩ් අංකය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many files."
+msgstr "පමණට වඩා ගොනු."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+msgid  "Device not available."
+msgstr "මෙවලම ලබා ගත නොහැක."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+msgid  "Access denied."
+msgstr "ප්‍රවේශනය වලකා ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+msgid  "Disk not ready."
+msgstr "තැටිය සූදානම් නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+msgid  "Not implemented."
+msgstr "ක්‍රියාත්මක කරවා නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+msgid  "Renaming on different drives impossible."
+msgstr "වෙනත් ධාවක නාමයන් වෙනස් කිරිම ොහැක."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Path/File access error."
+msgstr "පෙත/ගොනුව ප්‍රවේශන දෝෂය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Path not found."
+msgstr "පෙත හමුවුයේ නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object variable not set."
+msgstr "වස්තුවේ විචල්‍ය සකසා නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid string pattern."
+msgstr "අවලංගු වාඛ්‍ය රටාවක්."
+
+#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+msgid  "Use of zero not permitted."
+msgstr "ශුන්‍යය භාවිතා යට අවසර නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "DDE Error."
+msgstr "DDE දෝෂය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+msgid  "Awaiting response to DDE connection."
+msgstr "DDE සම්බන්ධයට ප්‍රතිචාර බලාපොරොත්තුවෙන් සිටි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+msgid  "No DDE channels available."
+msgstr "DDE නාලීකා නොමැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+msgid  "No application responded to DDE connect initiation."
+msgstr "DDE සම්බන්ධතාවය ඇරඹීමට කිසිදු යෙදුමක් ප්‍රතිචාර නොදක්වයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many applications responded to DDE connect initiation."
+msgstr "DDE සම්බන්ධත ඇරඹීමට පමණට වඩා යෙදුම් ගණනක් ප්‍රතිචාර දැක් වීය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE channel locked."
+msgstr "DDE නාලිකාව අගුලුලා ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+msgid  "External application cannot execute DDE operation."
+msgstr "බාහිර යෙදුමකට DDE මෙහෙයුම ක්‍රියාත්මක කළ නොහැක."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+msgid  "Timeout while waiting for DDE response."
+msgstr "DDE ප්‍රතිචාරයට රැදීසිටිමෙදි කාලය ඉක්ම විය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr "DDE මෙහෙයුම අතරතුර පරිශීලක ESCAPE යතුර ඔබන ලදි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+msgid  "External application busy."
+msgstr "බාහිර යෙදුම කාර්ය බහුලයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+msgid  "DDE operation without data."
+msgstr "දත්ත නොමැතිව DDE මෙහෙයුම."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Data are in wrong format."
+msgstr "දත්ත වැරදි හැඩතලයකට ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+msgid  "External application has been terminated."
+msgstr "බාහිර යෙදුම අවසන් කර ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE connection interrupted or modified."
+msgstr "DDE සම්බන්ධතාවය අතුරුබිඳුමක් හෝ වෙනස් කිරීමකට ලක් වී ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "DDE method invoked with no channel open."
+msgstr "නාලිකාවක් විවෘත කිරීමෙන් තොරව DDE ආකාරය කැඳවන ලඳි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid DDE link format."
+msgstr "අවලංගු DDE සබැඳි හැඩතලය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "DDE message has been lost."
+msgstr "DDE පණිවිඩය අස්ථානගතවි ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+msgid  "Paste link already performed."
+msgstr "සබැඳිය ඇලවීම දැනටම සිදුකර ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+msgid  "Link mode cannot be set due to invalid link topic."
+msgstr "අවලංගු සබැඳි සිරස්තලයක් නිසා සබැඳි ආකාරය සකස් කළ නොහැක."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "DDE requires the DDEML.DLL file."
+msgstr "DDE හට DDEML.DLL ගොනුව අවශ්‍ය වේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Module cannot be loaded; invalid format."
+msgstr "මොඩියුලය පූරණය කළ නොහැක; හැඩතලය අවලංගු වේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object index."
+msgstr "සාවද්‍ය වස්තු පටුන."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not available."
+msgstr "වස්තුව භාවිතරයට නොමැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect property value."
+msgstr "වැරදි ගුණාංගයක්."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is read-only."
+msgstr "මෙම ගුණාංගය කියවීමට පමණයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is write only."
+msgstr "වත්මකම් ලිවීමට පමණයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object reference."
+msgstr "අවලංගු වස්තු යොමුව."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "Property or method not found: $(ARG1)."
+msgstr "ගුණාංගයක් හෝ ආකාරය හමුවුයේ නැත: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object required."
+msgstr "වස්තුව අවශ්‍ය වේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid use of an object."
+msgstr "වස්තුවේ වැරදි භාවිතයක්."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation is not supported by this object."
+msgstr "මෙම වස්තුව OLE ස්වයංකරණයට සහාය නොදක්වයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "This property or method is not supported by the object."
+msgstr "මෙම වත්කම හෝ ආකාරයට වස්තුව සහාය නොදක්වයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation Error."
+msgstr "OLE ස්වයංකරණ දෝෂය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+msgid  "This action is not supported by given object."
+msgstr "මෙම ක්‍රියාවට අදාල වස්තුව මඟින් සහාය නොදක්වයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Named arguments are not supported by given object."
+msgstr "නාමික විස්තාරක සඳහා වස්තුව සහාය නොදක්වයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+msgid  "The current locale setting is not supported by the given object."
+msgstr "මෙම වස්තුවේන් දැනට ඇති පෙදෙසි සැකසුම් සඳහා සහාය නොදක්වයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Named argument not found."
+msgstr "නාමික විස්තාරක හමුවුයේ නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+msgid  "Argument is not optional."
+msgstr "විස්තාරකය අවශ්‍යම වේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "අවලංගු විස්තාරක ගණනක්."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not a list."
+msgstr "වස්තුව ලැයිස්තුවක් නොවේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid ordinal number."
+msgstr "අවලංගු ක්‍රමාංකිත අංකය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Specified DLL function not found."
+msgstr "දක්වන ලද DLL ශ්‍රිතය හමු නොවුණි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid clipboard format."
+msgstr "අවලංගු ක්ලිප්බෝඩ් ආකාරය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this property."
+msgstr "වස්තුවෙ මෙම ගුණාංගය නොමැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this method."
+msgstr "වස්තුවෙ මෙම ආකාරය නොමැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+msgid  "Required argument lacking."
+msgstr "අවශ්‍ය විස්තාරකය නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "සාවද්‍ය විස්තාරක ගණනක්."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Error executing a method."
+msgstr "ආකරය ක්‍රියාත්මක කිරීම දෝෂ සහිතයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to set property."
+msgstr "ගුණාංගය සැකසීය නොහැක."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to determine property."
+msgstr "ගුණාංගය හදුනා ගත නොහැක."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr "බලාපොරොත්තු නොවු සංකේතයක්: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Expected: $(ARG1)."
+msgstr "බලාපොරොත්තු වුයේ: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol expected."
+msgstr "සංකේතය බලාපොරොත්තු වේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable expected."
+msgstr "විචල්‍යයක් බලාපොරොත්තු වේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Label expected."
+msgstr "ලේබලයක් බලාපොරොත්තු වේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Value cannot be applied."
+msgstr "අගය යෙදිය නොහැක."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) already defined."
+msgstr "$(ARG1) විචල්‍යය දැනටමත් නිර්වචනය කර ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "උප-ක්‍රියාවලිය හෝ $(ARG1) ශ්‍රිත පටිපාටිය දැනටමත් නිර්වචනය කර ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) already defined."
+msgstr "$(ARG1) ලේබලය නිර්වචනය කර ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) not found."
+msgstr "$(ARG1) විචල්‍යය හමුවුයේ නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+msgid  "Array or procedure $(ARG1) not found."
+msgstr "ආරාව හෝ $(ARG1) ක්‍රියාපිළිවෙල හමුවුයේ නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+msgid  "Procedure $(ARG1) not found."
+msgstr "$(ARG1) ක්‍රියාපිළිවෙල හමු නොවුණි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) undefined."
+msgstr "$(ARG1) ලේබලය නිර්වචනය කර නොමැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown data type $(ARG1)."
+msgstr "$(ARG1) නොදන්නා දත්ත වර්ගයකි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+msgid  "Exit $(ARG1) expected."
+msgstr "$(ARG1) ඉවත් වීම බලාපොරොත්තු විය."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr "ප්‍රකාශය කොටස තවමත් විවෘත ඇත: $(ARG1) දක්නට නොමැත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+msgid  "Parentheses do not match."
+msgstr "වරහන් නොගැළපේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr "$(ARG1) සංකේතය වෙනස් ආකාරයකට නිර්වචනය කර ඇත."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+msgid  "Parameters do not correspond to procedure."
+msgstr "පරාමිතියන් ක්‍රියාවලියට අනුරූප නොවේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid character in number."
+msgstr "අංකය තුළ සාවද්‍ය අනුලකුණක්."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Array must be dimensioned."
+msgstr "ආරාව මානගත විය යුතු වේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+msgid  "Else/Endif without If."
+msgstr "if නොමැතිව Else/Endif."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr "ක්‍රියාපිළිවෙල තුළ $(ARG1) අනුමත නොකරයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr "ක්‍රියාපිළිවෙලන් පිටත $(ARG1) අනුමත නොකරයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Dimension specifications do not match."
+msgstr "මාන පිරිවිතර නොගැළපේ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown option: $(ARG1)."
+msgstr "නොදන්නා අභිරුචි: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+msgid  "Constant $(ARG1) redefined."
+msgstr "$(ARG1) නියතය යළිනිර්වචනය කළා."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+msgid  "Program too large."
+msgstr "වැඩසටහන පමණට වඩා විශාලයි."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+msgid  "Strings or arrays not permitted."
+msgstr "අනුලකුණු වැල් හෝ ආරා සඳහා අවසර නැත."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+msgid  "An exception occurred $(ARG1)."
+msgstr "$(ARG1) හැර දැමීමක් සිදු විය."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+msgid  "This array is fixed or temporarily locked."
+msgstr ""
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Out of string space."
+msgstr ""
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+msgid  "Expression Too Complex."
+msgstr ""
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+msgid  "Can't perform requested operation."
+msgstr ""
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+msgid  "Too many DLL application clients."
+msgstr ""
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+msgid  "For loop not initialized."
+msgstr ""
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1)"
+msgstr ""
+
+#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+msgid  "The macro running has been interrupted"
+msgstr "මැක්‍රෝ ක්‍රියාත්මක කිරීමට බාදා ඇති විය"
+
+#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+msgid  "Reference will not be saved: "
+msgstr "යොමුව සුරැකිම සිදු නොවිය හැක."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading library '$(ARG1)'."
+msgstr "'$(ARG1)' පුස්තකාලය පූරණය දෝෂ සහිතයි."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving library: '$(ARG1)'."
+msgstr "පුස්තකාලය සුරකීම දෝෂ සහිතයි: '$(ARG1)'."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "'$(ARG1)' ගොනුවෙන් BASIC ඇරඹිය නොහැකි විය."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr "BASIC සුරකීම දෝෂ සහිතයි: '$(ARG1)'."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+msgid  "Error removing library."
+msgstr "පුස්තකාලය ඉවත් කිරීම දෝෂ සහිතයි."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+msgid  "The library could not be removed from memory."
+msgstr "පුස්තාකලය මතකයෙන් ඉවත් කළ නොහැකි විය."
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+msgid  "On"
+msgstr "ක්‍රියා කරවීම"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+msgid  "Off"
+msgstr "අත්හිටු වීම"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+msgid  "True"
+msgstr "සත්‍ය"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+msgid  "False"
+msgstr "අසත්‍ය"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+msgid  "Yes"
+msgstr "ඔව්"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+msgid  "No"
+msgstr "නැත"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+msgid  "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $;@(0.00 $)"

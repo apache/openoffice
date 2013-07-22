@@ -1,0 +1,1776 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FixedText.Text
+#, fuzzy
+msgid  "Choose titles, legend, and grid settings"
+msgstr "මාතෘකා, විස්තර පාඨ, හා ජාල සිටුවම් තෝරන්න"
+
+#: source/controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FixedLine.Text
+#, fuzzy
+msgid  "Display grids"
+msgstr "ජාලක පෙන්වන්න"
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " අංශක"
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
+msgid  "~Right-angled axes"
+msgstr "සෘජුකෝණික කැපුම (~R)"
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FixedText.Text
+msgid  "~X rotation"
+msgstr "~X භ්‍රමණය"
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FixedText.Text
+msgid  "~Y rotation"
+msgstr "~Y භ්‍රමණය"
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FixedText.Text
+msgid  "~Z rotation"
+msgstr "~Z භ්‍රමණය"
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
+msgid  "~Perspective"
+msgstr "පර්යාලෝකය (~P)"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
+msgid  "Simple"
+msgstr "සරල"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.String.Text
+msgid  "Realistic"
+msgstr "තාත්වික"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.String.Text
+msgid  "Custom"
+msgstr "රිසිකළ"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.String.Text
+msgid  "Shape"
+msgstr "හැඩය"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.String.Text
+msgid  "~Number of lines"
+msgstr "පේළි ගණන (~N)"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.String.Text
+msgid  "Separator"
+msgstr "විභේදකය"
+
+#: source/controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FixedLine.Text
+msgid  "Place chart"
+msgstr "ප්‍රස්තාරය පිහිටුවන්න"
+
+#: source/controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FixedText.Text
+msgid  "~Insert in sheet"
+msgstr "පත්‍රය තුල ඇතුලත් කරන්න (~I)"
+
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item1.StringList.item
+msgid  "Box"
+msgstr "කොටු"
+
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item2.StringList.item
+msgid  "Cylinder"
+msgstr "සිලින්ඩර"
+
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item3.StringList.item
+msgid  "Cone"
+msgstr "කේතු"
+
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item4.StringList.item
+msgid  "Pyramid"
+msgstr "පිරමිඩ්"
+
+#: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
+msgid  "Data Ranges"
+msgstr "දත්ත පරාස"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.String.Text
+msgid  "Column"
+msgstr "තීරුව"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.String.Text
+msgid  "Bar"
+msgstr "තීරුව"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.String.Text
+msgid  "Area"
+msgstr "ප්‍රදේශය"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.String.Text
+msgid  "Pie"
+msgstr "පයි"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.String.Text
+msgid  "Exploded Pie Chart"
+msgstr "පිපිරූ පයි සටහන"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.String.Text
+msgid  "Exploded Donut Chart"
+msgstr "පිපිරූ Donut සටහන"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT.String.Text
+msgid  "Donut"
+msgstr "Donut"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.String.Text
+msgid  "Line"
+msgstr "රේඛාව"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.String.Text
+msgid  "XY (Scatter)"
+msgstr "XY (විසුරුම)"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.String.Text
+msgid  "Points and Lines"
+msgstr "ලක්‍ෂ සහ රේඛා"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.String.Text
+msgid  "Points Only"
+msgstr "ලක්‍ෂ පමණයි"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.String.Text
+msgid  "Lines Only"
+msgstr "රේඛා පමණයි"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.String.Text
+msgid  "3D Lines"
+msgstr "3D රේඛා"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.String.Text
+msgid  "Column and Line"
+msgstr "තීරුව සහ රේඛාව"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.String.Text
+msgid  "Columns and Lines"
+msgstr "තීරු සහ රේඛා"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.String.Text
+msgid  "Stacked Columns and Lines"
+msgstr "ගොඩගැසූ තීරු හා පේළි"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.String.Text
+msgid  "Net"
+msgstr "දැල"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.String.Text
+msgid  "Stock"
+msgstr "තොගය"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.String.Text
+msgid  "Stock Chart 1"
+msgstr "තොග ප්‍රස්තාර 1"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.String.Text
+msgid  "Stock Chart 2"
+msgstr "තොග ප්‍රස්තාර 2"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.String.Text
+msgid  "Stock Chart 3"
+msgstr "තොග ප්‍රස්තාර 3"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.String.Text
+msgid  "Stock Chart 4"
+msgstr "තොග ප්‍රස්තාර 4"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.String.Text
+msgid  "Normal"
+msgstr "සාමාන්‍ය"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STACKED.String.Text
+msgid  "Stacked"
+msgstr "ගොඩගැසූ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.String.Text
+msgid  "Percent Stacked"
+msgstr "ගොඩ ගැසූ ප්‍රතිශතය"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_DEEP.String.Text
+msgid  "Deep"
+msgstr "ගැඹුරු"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_FILLED.String.Text
+msgid  "Filled"
+msgstr "පිරවූ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.String.Text
+msgid  "Bubble"
+msgstr "බුබුල"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.String.Text
+msgid  "Bubble Chart"
+msgstr "බුබුල් ප්‍රස්ථාරය"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TabDialog.Text
+msgid  "Character"
+msgstr "අකුරු"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+msgid  "Font"
+msgstr "ෆොන්ට"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "ෆොන්ට ප්‍රයෝග"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+msgid  "Font Position"
+msgstr ""
+
+#: source/controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TabDialog.Text
+msgid  "3D View"
+msgstr "3D දසුන"
+
+#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.String.Text
+msgid  "Numbers are required. Check your input."
+msgstr "අංක අවශ්‍ය වේ. ඔබේ ආදානය පිරික්සන්න."
+
+#: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
+msgid  "The major interval requires a positive number. Check your input."
+msgstr "ප්‍රධාන විරාමය සඳහා ධන අගයක් අවශ්‍යයි. ඔබේ ආදානය පිරික්සන්න"
+
+#: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
+msgid  "The logarithmic scale requires positive numbers. Check your input."
+msgstr "ලඝුගණක ප්‍රමාණය සඳහා ධන අගයන් අවශ්‍යයි. ඔබේ ආදානය පිරික්සන්න."
+
+#: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
+msgid  "The minimum must be lower than the maximum. Check your input."
+msgstr "අවමය උපරිමයට වඩා අඩු විය යුතුයි. ඔබේ ආදානය පිරික්සන්න"
+
+#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
+msgid  "The major interval needs to be greater than the minor interval. Check your input."
+msgstr ""
+
+#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
+msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
+msgstr ""
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
+msgid  "Data Table"
+msgstr "දත්ත වගුව"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
+msgid  "Insert Row"
+msgstr "පේළියක් එක් කරන්න"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
+msgid  "Insert Series"
+msgstr "ශ්‍රේණියක් ඇතුළු කරන්න"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.ToolBoxItem.Text
+msgid  "Insert Text Column"
+msgstr ""
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
+msgid  "Delete Row"
+msgstr "පේළිය මකන්න"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
+msgid  "Delete Series"
+msgstr "ශ්‍රේණිය මකන්න"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
+msgid  "Move Series Right"
+msgstr "ශ්‍රේණිය දකුණට ගෙනයන්න"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
+msgid  "Move Row Down"
+msgstr "පේළිය පහලට ගෙනයන්න"
+
+#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item1.StringList.item
+msgid  "Days"
+msgstr ""
+
+#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item2.StringList.item
+msgid  "Months"
+msgstr ""
+
+#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item3.StringList.item
+msgid  "Years"
+msgstr ""
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FixedLine.Text
+msgid  "Scale"
+msgstr "පරිමාණය"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CheckBox.Text
+msgid  "~Reverse direction"
+msgstr "ප්‍රතිවර්ත දිශාව (~R)"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CheckBox.Text
+msgid  "~Logarithmic scale"
+msgstr "ලඝුගණක පරිමාණය (~L)"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FixedText.Text
+#, fuzzy
+msgid  "T~ype"
+msgstr "වර්‍ගය"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item1.StringList.item
+#, fuzzy
+msgid  "Automatic"
+msgstr "ස්වයංක්‍රීය (~u)"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item2.StringList.item
+msgid  "Text"
+msgstr ""
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item3.StringList.item
+msgid  "Date"
+msgstr ""
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FixedText.Text
+#, fuzzy
+msgid  "~Minimum"
+msgstr "අවම (~M):"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CheckBox.Text
+#, fuzzy
+msgid  "~Automatic"
+msgstr "ස්වයංක්‍රීය (~A)"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FixedText.Text
+#, fuzzy
+msgid  "Ma~ximum"
+msgstr "උපරිම (~x):"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CheckBox.Text
+#, fuzzy
+msgid  "A~utomatic"
+msgstr "ස්වයංක්‍රීය (~u)"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FixedText.Text
+#, fuzzy
+msgid  "R~esolution"
+msgstr "විභේදනය (~R)"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CheckBox.Text
+#, fuzzy
+msgid  "Automat~ic"
+msgstr "ස්වයංක්‍රීය (~i)"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FixedText.Text
+#, fuzzy
+msgid  "Ma~jor interval"
+msgstr "ප්‍රධාන ප්‍රාන්තරය (~j):"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CheckBox.Text
+#, fuzzy
+msgid  "Au~tomatic"
+msgstr "ස්වයංක්‍රීය (~t)"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FixedText.Text
+#, fuzzy
+msgid  "Minor inter~val count"
+msgstr "සුළු ප්‍රාන්තරය ගණන (~c):"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FixedText.Text
+msgid  "Minor inter~val"
+msgstr ""
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CheckBox.Text
+#, fuzzy
+msgid  "Aut~omatic"
+msgstr "ස්වයංක්‍රීය (~o)"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FixedText.Text
+#, fuzzy
+msgid  "Re~ference value"
+msgstr "යොමු අගය (~v):"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CheckBox.Text
+#, fuzzy
+msgid  "Automat~ic"
+msgstr "ස්වයංක්‍රීය (~i)"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FixedLine.Text
+#, fuzzy
+msgid  "Align data series to"
+msgstr "දත්ත ශ්‍රේණිය මෙයට පෙළ ගසන්න"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RadioButton.Text
+#, fuzzy
+msgid  "Primary Y axis"
+msgstr "ප්‍රාථමික Y අක්‍ෂය"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RadioButton.Text
+#, fuzzy
+msgid  "Secondary Y axis"
+msgstr "ද්විතියික Y අක්‍ෂය"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FixedLine.Text
+#, fuzzy
+msgid  "Settings"
+msgstr "සිටුවම්"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FixedText.Text
+#, fuzzy
+msgid  "~Overlap"
+msgstr "අතිච්ඡාදනය (~O)"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FixedText.Text
+#, fuzzy
+msgid  "~Spacing"
+msgstr "ඉඩ තැබීම (~S)"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CheckBox.Text
+#, fuzzy
+msgid  "Connection lines"
+msgstr "සම්බන්ධතා පේළි"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CheckBox.Text
+#, fuzzy
+msgid  "Show ~bars side by side"
+msgstr "පැත්තෙන් පැති තිරු පෙන්වන්න (~b)"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FixedLine.Text
+#, fuzzy
+msgid  "Plot options"
+msgstr "කොටස් කිරීමේ විකල්ප"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FixedText.Text
+#, fuzzy
+msgid  "Plot missing values"
+msgstr "මග හැරුනු අගයන් ලකුණු කරන්න"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RadioButton.Text
+#, fuzzy
+msgid  "~Leave gap"
+msgstr "හිඩැස තබන්න (~L)"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RadioButton.Text
+#, fuzzy
+msgid  "~Assume zero"
+msgstr "බින්දුව ලෙස උපකල්පනය කරන්න (~A)"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RadioButton.Text
+#, fuzzy
+msgid  "~Continue line"
+msgstr "රේඛාව දිගටම (~C)"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CheckBox.Text
+#, fuzzy
+msgid  "Include ~values from hidden cells"
+msgstr "සැඟවුනු සෙල් අගයන්ද ඇතුලත් කරගන්න (~v)"
+
+#: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FixedText.Text
+msgid  "~Light source"
+msgstr "ආලෝක ප්‍රභවය (~L)"
+
+#: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FixedText.Text
+msgid  "~Ambient light"
+msgstr "පැතිරුණු ආලෝකය (~A)"
+
+#: source/controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.String.Text
+msgid  "Light Preview"
+msgstr ""
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.String.Text
+msgid  "Negative and Positive"
+msgstr "ධන සහ සෘණ"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.String.Text
+msgid  "Negative"
+msgstr "සෘණ"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.String.Text
+msgid  "Positive"
+msgstr "ධන"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.String.Text
+msgid  "From Data Table"
+msgstr "දත්ත වගුවෙන්"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.String.Text
+msgid  "Linear (%SERIESNAME)"
+msgstr ""
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.String.Text
+msgid  "Logarithmic (%SERIESNAME)"
+msgstr ""
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.String.Text
+msgid  "Exponential (%SERIESNAME)"
+msgstr ""
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.String.Text
+msgid  "Power (%SERIESNAME)"
+msgstr ""
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.String.Text
+msgid  "Mean (%SERIESNAME)"
+msgstr ""
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FixedText.Text
+msgid  "Choose a chart type"
+msgstr "ප්‍රස්තාර වර්‍ගයක් තෝරන්න"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CheckBox.Text
+msgid  "X axis with Categories"
+msgstr "X අක්‍ෂය ප්‍රවර්ග සමග"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CheckBox.Text
+msgid  "~3D Look"
+msgstr "~3D පෙනුම"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CheckBox.Text
+msgid  "~Stack series"
+msgstr "ගොඩගැසූ මාලාවන් (~S)"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RadioButton.Text
+msgid  "On top"
+msgstr "ඉහළින්"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RadioButton.Text
+msgid  "Percent"
+msgstr "ප්‍රතිශති"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RadioButton.Text
+msgid  "Deep"
+msgstr "උච්ච"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CheckBox.Text
+msgid  "S~mooth lines"
+msgstr "සුමට රේඛා (~m)"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PushButton.Text
+msgid  "Properties..."
+msgstr "වත්කම්..."
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CheckBox.Text
+msgid  "~Sort by X values"
+msgstr "X අගයෙන් පෙලගස්වන්න (~S)"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RadioButton.Text
+msgid  "Cubic spline"
+msgstr "ඝනක දාරය"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RadioButton.Text
+msgid  "B-Spline"
+msgstr "B-දාරය"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FixedText.Text
+msgid  "~Resolution"
+msgstr "විභේදනය (~R)"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FixedText.Text
+msgid  "~Data points order"
+msgstr "දත්ත ලක්‍ෂයන්හී පිළිවෙල (~D)"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FixedText.Text
+msgid  "Customize data ranges for individual data series"
+msgstr "තනි දත්ත මාලාවන් සඳහා දත්ත පරාස රුචි පරිදි සකසන්න"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FixedText.Text
+msgid  "Data ~series"
+msgstr "දත්ත ශ්‍රේණි (~s)"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FixedText.Text
+msgid  "~Data ranges"
+msgstr "දත්ත පරාස (~D)"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FixedText.Text
+msgid  "Ran~ge for %VALUETYPE"
+msgstr "%VALUETYPE සඳහා පරාසය (~g)"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FixedText.Text
+msgid  "~Categories"
+msgstr "ප්‍රභේද (~C)"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FixedText.Text
+msgid  "Data ~labels"
+msgstr "දත්ත ලේබල (~l)"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PushButton.Text
+msgid  "~Add"
+msgstr "එක් කරන්න (~A)"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "ඉවත් කරන්න (~R)"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FixedText.Text
+msgid  "Choose a data range"
+msgstr "දත්ත පරාසයක් තෝරන්න"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FixedText.Text
+msgid  "~Data range"
+msgstr "දත්ත පරාසය (~D)"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RadioButton.Text
+msgid  "Data series in ~rows"
+msgstr "පේළි වල දත්ත ශ්‍රේණි (~r)"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RadioButton.Text
+msgid  "Data series in ~columns"
+msgstr "තීරු වල දත්ත ශ්‍රේණිය(~c)"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CheckBox.Text
+msgid  "~First row as label"
+msgstr "මුල් පේළිය ලේබලය ලෙස (~F)"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CheckBox.Text
+msgid  "F~irst column as label"
+msgstr "මුල් තීරුව ලේබලය ලෙස (~i)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CheckBox.Text
+msgid  "Sho~w labels"
+msgstr "ලේබල පෙන්වන්න (~w)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FixedLine.Text
+msgid  "Text orientation"
+msgstr "පෙළ දිශානතිය"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TriStateBox.Text
+msgid  "Ve~rtically stacked"
+msgstr "සිරස්ව ගොඩගැසූ (~r)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FixedText.Text
+msgid  "~Degrees"
+msgstr "අංශක (~D)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FixedLine.Text
+msgid  "Text flow"
+msgstr "පෙළ ගැලීම"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CheckBox.Text
+msgid  "O~verlap"
+msgstr "අතිච්ඡාදනය (~v)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CheckBox.Text
+msgid  "~Break"
+msgstr "බිඳුම (~B)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FixedLine.Text
+msgid  "Order"
+msgstr "අනුපිළිවෙල"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RadioButton.Text
+msgid  "~Tile"
+msgstr "සෙවිලන (~T)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RadioButton.Text
+msgid  "St~agger odd"
+msgstr "කඩින් කඩ ඔත්තේ (~a)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RadioButton.Text
+msgid  "Stagger ~even"
+msgstr "කඩින් කඩ ඉරට්ටේ (~e)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RadioButton.Text
+msgid  "A~utomatic"
+msgstr "ස්වයංක්‍රීය (~u)"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
+msgstr "පෙළ දිශාව"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item1.StringList.item
+msgid  "Space"
+msgstr "ඉඩ"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item2.StringList.item
+msgid  "Comma"
+msgstr "කොමා"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item3.StringList.item
+msgid  "Semicolon"
+msgstr "තිත් කොමාව"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item4.StringList.item
+msgid  "New line"
+msgstr "නව රේඛාව"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FixedText.Text
+msgid  "Sche~me"
+msgstr "ක්‍රමය (~m)"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CheckBox.Text
+msgid  "~Shading"
+msgstr "පැහැගැන්වීම (~S)"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CheckBox.Text
+msgid  "~Object borders"
+msgstr "වස්තුවේ දාර(~O)"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.Checkbox.Text
+msgid  "~Rounded edges"
+msgstr "රවුම් කල දාර (~R)"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
+msgid  "Axes"
+msgstr "අක්‍ෂ"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
+msgid  "Major grids"
+msgstr "ප්‍රධාන ජාලක"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
+msgid  "~X axis"
+msgstr "~X අක්‍ෂය"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
+msgid  "~Y axis"
+msgstr "~Y අක්‍ෂය"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
+msgid  "~Z axis"
+msgstr "~Z අක්‍ෂය"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
+msgid  "Secondary axes"
+msgstr "ද්විතීය අක්‍ෂ"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
+msgid  "Minor grids"
+msgstr "සුළු ජාලක"
+
+#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FixedLine.Text
+msgid  "Position"
+msgstr "පිහිටුම"
+
+#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FixedLine.Text
+msgid  "Text orientation"
+msgstr "පෙළ දිශානතිය"
+
+#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
+msgstr "පෙළ දිශාව (~x)"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TriStateBox.Text
+#, fuzzy
+msgid  "Ve~rtically stacked"
+msgstr "සිරස්ව ගොඩගැසූ (~r)"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FixedText.Text
+#, fuzzy
+msgid  "~Degrees"
+msgstr "අංශක (~D)"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FixedLine.Text
+#, fuzzy
+msgid  "Text orientation"
+msgstr "පෙළ දිශාභිමුඛයි"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FixedText.Text
+#, fuzzy
+msgid  "Te~xt direction"
+msgstr "පෙළ දිශාව (~x)"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.TabDialog.Text
+msgid  "Paragraph"
+msgstr ""
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+msgid  "Indents & Spacing"
+msgstr ""
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+msgid  "Alignment"
+msgstr "පෙළ ගැසුම්"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+msgid  "Asian Typography"
+msgstr "ආසියානු අකුරු කලාව"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+msgid  "Tab"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.String.Text
+msgid  "Chart Wizard"
+msgstr "ප්‍රස්තාර විශාරද"
+
+#: source/controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.String.Text
+msgid  "Smooth Lines"
+msgstr "සුමට රේඛා"
+
+#: source/controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.String.Text
+msgid  "Number Format for Percentage Value"
+msgstr "ප්‍රතිශත අගයන් සඳහා අංක හැඩතලය"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.String.Text
+msgid  "Chart Type"
+msgstr "ප්‍රස්තාර වර්‍ග"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.String.Text
+msgid  "Data Range"
+msgstr "දත්ත පරාස"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.String.Text
+msgid  "Chart Elements"
+msgstr "ප්‍රස්තාර අංග"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.String.Text
+msgid  "Chart Location"
+msgstr "ප්‍රස්තාර පිහිටුම"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_LINE.String.Text
+msgid  "Line"
+msgstr "පේළිය"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_BORDER.String.Text
+msgid  "Borders"
+msgstr "දාර"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_AREA.String.Text
+msgid  "Area"
+msgstr "ප්‍රදේශය"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.String.Text
+msgid  "Transparency"
+msgstr "පාරදෘශ්‍යතාව"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_FONT.String.Text
+msgid  "Font"
+msgstr "ෆොන්ට"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.String.Text
+msgid  "Font Effects"
+msgstr "ෆොන්ට ප්‍රයෝග"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_NUMBERS.String.Text
+msgid  "Numbers"
+msgstr "අංක"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
+msgid  "Position"
+msgstr "පිහිටුම"
+
+#: source/controller/dialogs/Strings.src#STR_BUTTON_UP.String.Text
+msgid  "Up"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_BUTTON_DOWN.String.Text
+msgid  "Down"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_LAYOUT.String.Text
+msgid  "Layout"
+msgstr "පිරිසැලසුම"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_OPTIONS.String.Text
+msgid  "Options"
+msgstr "අභිරුචි"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_SCALE.String.Text
+msgid  "Scale"
+msgstr "පරිමාණය"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_POSITIONING.String.Text
+msgid  "Positioning"
+msgstr "පිහිටුම"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.String.Text
+msgid  "Type"
+msgstr "වර්‍ගය"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.String.Text
+msgid  "Y Error Bars"
+msgstr "Y දෝෂ තීරුව"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.String.Text
+msgid  "Alignment"
+msgstr "පෙළ ගැසුම්"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.String.Text
+msgid  "Perspective"
+msgstr "පර්යාලෝකය"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.String.Text
+msgid  "Appearance"
+msgstr "පෙනුම"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.String.Text
+msgid  "Illumination"
+msgstr "ප්‍රදීපනය"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_ASIAN.String.Text
+msgid  "Asian Typography"
+msgstr "ආසියානු අකුරු කලාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
+msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
+msgstr " %STD_DEVIATION සම්මත අපගමනය හා %AVERAGE_VALUE අගය ඇති මධ්‍යයන අගය රේඛාව."
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
+msgid  "Axis"
+msgstr "අක්‍ෂය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.String.Text
+msgid  "X Axis"
+msgstr "X අක්‍ෂය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.String.Text
+msgid  "Y Axis"
+msgstr "Y අක්‍ෂය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.String.Text
+msgid  "Z Axis"
+msgstr "Z අක්‍ෂය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
+msgid  "Secondary X Axis"
+msgstr "ද්විතික X අක්‍ෂය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
+msgid  "Secondary Y Axis"
+msgstr "ද්විතික Y අක්‍ෂය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXES.String.Text
+msgid  "Axes"
+msgstr "අක්‍ෂ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRIDS.String.Text
+msgid  "Grids"
+msgstr "ජාලක"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID.String.Text
+msgid  "Grid"
+msgstr "ජාලකය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.String.Text
+msgid  "X Axis Major Grid"
+msgstr "X අක්‍ෂීය ප්‍රධාන ජාලකය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.String.Text
+msgid  "Y Axis Major Grid"
+msgstr "Y අක්‍ෂීය ප්‍රධාන ජාලකය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.String.Text
+msgid  "Z Axis Major Grid"
+msgstr "Z අක්‍ෂීය ප්‍රධාන ජාලකය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.String.Text
+msgid  "X Axis Minor Grid"
+msgstr "X අක්‍ෂීය සුළු ජාලකය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.String.Text
+msgid  "Y Axis Minor Grid"
+msgstr "Y අක්‍ෂීය සුළු ජාලකය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.String.Text
+msgid  "Z Axis Minor Grid"
+msgstr "Z අක්‍ෂීය සුළු ජාලය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND.String.Text
+msgid  "Legend"
+msgstr "ආඛ්‍යානය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE.String.Text
+msgid  "Title"
+msgstr "මාතෘකාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLES.String.Text
+msgid  "Titles"
+msgstr "මාතෘකා"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.String.Text
+msgid  "Main Title"
+msgstr "ප්‍රධාන මාතෘකාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.String.Text
+msgid  "Subtitle"
+msgstr "උප මාතෘකාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.String.Text
+msgid  "X Axis Title"
+msgstr "X අක්‍ෂයේ මාතෘකාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.String.Text
+msgid  "Y Axis Title"
+msgstr "Y අක්‍ෂයේ මාතෘකාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.String.Text
+msgid  "Z Axis Title"
+msgstr "Z අක්‍ෂයේ මාතෘකාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.String.Text
+msgid  "Secondary X Axis Title"
+msgstr "ද්විතීක X අක්‍ෂ මාතෘකාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.String.Text
+msgid  "Secondary Y Axis Title"
+msgstr "ද්විතීක X අක්‍ෂ මාතෘකාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_LABEL.String.Text
+msgid  "Label"
+msgstr "ලේබලය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.String.Text
+msgid  "Data Labels"
+msgstr "දත්ත ලේබල"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.String.Text
+msgid  "Data Point"
+msgstr "දත්ත ස්ථානය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.String.Text
+msgid  "Data Points"
+msgstr "දත්ත ලක්ෂ්‍ය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.String.Text
+msgid  "Legend Key"
+msgstr "ආඛ්‍යාන යතුර"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.String.Text
+msgid  "Data Series"
+msgstr "දත්ත ශ්‍රේණිය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.String.Text
+msgid  "Data Series"
+msgstr "දත්ත ශ්‍රේණිය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE.String.Text
+msgid  "Trend Line"
+msgstr "ප්‍රවණතා රේඛාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVES.String.Text
+msgid  "Trend Lines"
+msgstr "ප්‍රවණතා රේඛා"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.String.Text
+msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
+msgstr "R² = %RSQUARED නිරවද්‍යතාවක් සහිතව %FORMULA බැවුම් රේඛාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.String.Text
+msgid  "Mean Value Line"
+msgstr "මධ්‍ය අගයේ රේඛාව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.String.Text
+msgid  "Equation"
+msgstr "සමීකරණය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.String.Text
+msgid  "Error Bars"
+msgstr "දෝෂ තීරුව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.String.Text
+msgid  "Stock Loss"
+msgstr "භාණ්ඩ පාඩුව"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.String.Text
+msgid  "Stock Gain"
+msgstr "භාණ්ඩ ලාබය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_PAGE.String.Text
+msgid  "Chart Area"
+msgstr "ප්‍රස්තාර පෙදෙස"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.String.Text
+msgid  "Chart"
+msgstr "ප්‍රස්තාරය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.String.Text
+msgid  "Chart Wall"
+msgstr "ප්‍රස්තාර බිත්තිය"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.String.Text
+msgid  "Chart Floor"
+msgstr "ප්‍රස්තාර බිම"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_SHAPE.String.Text
+msgid  "Drawing Object"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.String.Text
+msgid  "Select data range"
+msgstr "දත්ත පරාසය තෝරන්න"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.String.Text
+msgid  "Select a color using the color dialog"
+msgstr "වර්ණ සංවාද කොටුව භාවිතයෙන් වර්ණයක් තෝරන්න"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.String.Text
+msgid  "Light Source %LIGHTNUMBER"
+msgstr "ආලෝක ප්‍රභවය %LIGHTNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATASERIES.String.Text
+msgid  "Data Series '%SERIESNAME'"
+msgstr "දත්ත ශ්‍රේණිය '%SERIESNAME'"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.String.Text
+msgid  "Data Point %POINTNUMBER"
+msgstr "දත්ත ස්ථානය %POINTNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.String.Text
+msgid  "Values: %POINTVALUES"
+msgstr "අගයන්: %POINTVALUES"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
+msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
+msgstr "දත්ත ස්ථානය %POINTNUMBER, දත්ත ශ්‍රේණිය %SERIESNUMBER, අගයන්: %POINTVALUES"
+
+#: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
+msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
+msgstr "න්දත්ත ලක්‍ෂය %POINTNUMBER දත්ත මාලාවේ %SERIESNUMBER තෝරාගැණිනි, අගය: %POINTVALUES"
+
+#: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
+msgid  "%OBJECTNAME selected"
+msgstr "%OBJECTNAME තෝරාගන්නා ලදි"
+
+#: source/controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.String.Text
+msgid  "Pie exploded by %PERCENTVALUE percent"
+msgstr "පයි සටහන සියයට %PERCENTVALUE කින් විශාල කර ඇත"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.String.Text
+msgid  "%OBJECTNAME for Data Series '%SERIESNAME'"
+msgstr "'%SERIESNAME' දත්ත ශ්‍රේණි සඳහා %OBJECTNAME"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.String.Text
+msgid  "%OBJECTNAME for all Data Series"
+msgstr "සියලු දත්ත ශ්‍රේණි සඳහා %OBJECTNAME"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.String.Text
+msgid  "Edit chart type"
+msgstr "ප්‍රස්තාර වර්‍ගය සකසන්න"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.String.Text
+msgid  "Edit data ranges"
+msgstr "දත්ත පරාසය සකසන්න"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.String.Text
+msgid  "Edit 3D view"
+msgstr "3D දසුන සකසන්න"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.String.Text
+msgid  "Edit chart data"
+msgstr "ප්‍රස්තාර දත්ත සකසන්න"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.String.Text
+msgid  "Legend on/off"
+msgstr "ආඛ්‍යානය සක්‍රීය/අක්‍රීය"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.String.Text
+msgid  "Horizontal grid on/off"
+msgstr "තිරස් ජාලය සක්‍රීය/අක්‍රීය"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.String.Text
+msgid  "Scale Text"
+msgstr "පෙළ ප්‍රමාණය"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.String.Text
+msgid  "Automatic Layout"
+msgstr "ස්වයංක්‍රීය පිරිසැලසුම"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+msgid  "This function cannot be completed with the selected objects."
+msgstr "තෝරාගත් වස්තුව සමඟ ශ්‍රිතය සම්පූර්‍ණ කළ නොහැක."
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.String.Text
+msgid  "Edit text"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_COLUMN_LABEL.String.Text
+msgid  "Column %COLUMNNUMBER"
+msgstr "%COLUMNNUMBER තීරුව"
+
+#: source/controller/dialogs/Strings.src#STR_ROW_LABEL.String.Text
+msgid  "Row %ROWNUMBER"
+msgstr "%ROWNUMBER පේළිය"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.String.Text
+msgid  "Name"
+msgstr "නම"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X.String.Text
+msgid  "X-Values"
+msgstr "X-අගයන්"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y.String.Text
+msgid  "Y-Values"
+msgstr "Y-අගයන්"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.String.Text
+msgid  "Bubble Sizes"
+msgstr "බුබුල් ප්‍රමාණය"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.String.Text
+msgid  "X-Error-Bars"
+msgstr "X දෝෂ තීරු"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.String.Text
+msgid  "Positive X-Error-Bars"
+msgstr "ධන X දෝෂ තීරු"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.String.Text
+msgid  "Negative X-Error-Bars"
+msgstr "සෘණ X දෝෂ තීරු"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.String.Text
+msgid  "Y-Error-Bars"
+msgstr "Y දෝෂ තීරු"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.String.Text
+msgid  "Positive Y-Error-Bars"
+msgstr "ධන Y දෝෂ තීරු"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.String.Text
+msgid  "Negative Y-Error-Bars"
+msgstr "සෘණ Y දෝෂ තීරු"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.String.Text
+msgid  "Open Values"
+msgstr "විවෘත අගයන්"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.String.Text
+msgid  "Close Values"
+msgstr "සංවෘත අගයන්"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.String.Text
+msgid  "Low Values"
+msgstr "පහළ අගයන්"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.String.Text
+msgid  "High Values"
+msgstr "ඉහළ අගයන්"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.String.Text
+msgid  "Categories"
+msgstr "ප්‍රභේද"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.String.Text
+msgid  "Unnamed Series"
+msgstr "නිර්ණාමික ශ්‍රේණිය"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.String.Text
+msgid  "Unnamed Series %NUMBER"
+msgstr "නිර්ණාමික %NUMBER ශ්‍රේණිය"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.String.Text
+msgid  "Select Range for %VALUETYPE of %SERIESNAME"
+msgstr "%SERIESNAME හි %VALUETYPE සඳහා පරාසය තෝරන්න"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.String.Text
+msgid  "Select Range for Categories"
+msgstr "ප්‍රභේද සඳහා පරාසය තෝරන්න"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.String.Text
+msgid  "Select Range for data labels"
+msgstr "දත්ත ලේබල සඳහා පරාසය තෝරන්න"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.String.Text
+msgid  "Select Range for Positive Error Bars"
+msgstr "ධන දෝෂ තීරු සඳහා පරාසය තෝරන්න"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.String.Text
+msgid  "Select Range for Negative Error Bars"
+msgstr "සෘණ දෝෂ තීරු සඳහා පරාසය තෝරන්න"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
+msgid  "Your last input is incorrect.\\nIgnore this change and close the dialog?"
+msgstr "ඔබේ අවසන් ආදානය සාවද්‍ය වේ.\nමෙම වෙනස්කම් නොසලකා සංවාද කොටුව වසන්නද?"
+
+#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
+msgid  "Left-to-right"
+msgstr "වම-සිට-දකුණට"
+
+#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.String.Text
+msgid  "Right-to-left"
+msgstr "දකුණේ-සිට-වමට"
+
+#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.String.Text
+msgid  "Use superordinate object settings"
+msgstr "විශිෂ්ට වස්තු සැකසුම් භාවිත කරන්න."
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CheckBox.Text
+msgid  "~Clockwise direction"
+msgstr "දක්ශිණාවර්ථ දිශාව (~C)"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FixedLine.Text
+msgid  "Starting angle"
+msgstr "ආරම්භක ඇලය"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FixedText.Text
+msgid  "~Degrees"
+msgstr "අංශක (~D)"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FixedLine.Text
+msgid  "Plot options"
+msgstr "ලකුණු කිරිමේ විකල්ප"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CheckBox.Text
+msgid  "Include ~values from hidden cells"
+msgstr "සැඟවුනු සෙලයන් තුළ අගයන්ද ඇතුලත් කරගන්න (~v)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FixedLine.Text
+msgid  "Axis line"
+msgstr "අක්‍ෂීය රේඛාව"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FixedText.Text
+msgid  "~Cross other axis at"
+msgstr "හීදී අනිත් අක්‍ෂය හරහා යන්න (~C)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item1.StringList.item
+msgid  "Start"
+msgstr "ආරම්භය"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item2.StringList.item
+msgid  "End"
+msgstr "අවසානය"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item3.StringList.item
+msgid  "Value"
+msgstr "අගය"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item4.StringList.item
+msgid  "Category"
+msgstr "ප්‍රවර්ගය"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CheckBox.Text
+msgid  "Axis ~between categories"
+msgstr "ප්‍රවර්ග අතර අක්‍ෂ (~b)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FixedLine.Text
+msgid  "Labels"
+msgstr "ලේබල"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FixedText.Text
+msgid  "~Place labels"
+msgstr "ලේබල පිහිටුවන්න (~p)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item1.StringList.item
+msgid  "Near axis"
+msgstr "යාබද අක්‍ෂය"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item2.StringList.item
+msgid  "Near axis (other side)"
+msgstr "යාබද අක්‍ෂය (අනිත් පස)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item3.StringList.item
+msgid  "Outside start"
+msgstr "පිටත ඇරඹුම"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item4.StringList.item
+msgid  "Outside end"
+msgstr "පිටත අවසානය"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FixedText.Text
+msgid  "~Distance"
+msgstr "පරතරය (~D)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FixedLine.Text
+msgid  "Interval marks"
+msgstr "විරාම ලකුණූ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FixedText.Text
+msgid  "Major:"
+msgstr "ප්‍රධාන:"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CheckBox.Text
+msgid  "~Inner"
+msgstr "ඇතුළත (~I)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CheckBox.Text
+msgid  "~Outer"
+msgstr "පිටත (~O)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FixedText.Text
+msgid  "Minor:"
+msgstr "සුළු:"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CheckBox.Text
+msgid  "I~nner"
+msgstr "ඇතුළත (~n)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CheckBox.Text
+msgid  "O~uter"
+msgstr "පිටත (~u)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FixedText.Text
+msgid  "Place ~marks"
+msgstr "පිහිටුම් ලකුණු (~m)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item1.StringList.item
+msgid  "At labels"
+msgstr "ලේබලයන් හී"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item2.StringList.item
+msgid  "At axis"
+msgstr "අක්‍ෂයේ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item3.StringList.item
+msgid  "At axis and labels"
+msgstr "අක්‍ෂ සහ ලේබල වල"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FixedLine.Text
+msgid  "Grids"
+msgstr "ජාලක"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CheckBox.Text
+msgid  "Show major ~grid"
+msgstr "ප්‍රධාන ජාලය පෙන්වන්න (~g)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PushButton.Text
+msgid  "Mo~re..."
+msgstr "තවත්... (~r)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CheckBox.Text
+msgid  "~Show minor grid"
+msgstr "සුළු ජාලය පෙන්වන්න (~S)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PushButton.Text
+msgid  "Mor~e..."
+msgstr "තවත්... (~r)"
+
+#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_X_SECONDARY.CheckBox.Text
+#, fuzzy
+msgid  "X ~axis"
+msgstr "X අක්‍ෂය (~a)"
+
+#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_Y_SECONDARY.CheckBox.Text
+#, fuzzy
+msgid  "Y ax~is"
+msgstr "Y අක්‍ෂය (~i)"
+
+#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_Z_SECONDARY.CheckBox.Text
+#, fuzzy
+msgid  "Z axi~s"
+msgstr "Z අක්‍ෂය (~s)"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item1.StringList.item
+#, fuzzy
+msgid  "Best fit"
+msgstr "හොඳින්ම ගැලපෙන"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item2.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr "මධ්‍යය"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item3.StringList.item
+#, fuzzy
+msgid  "Above"
+msgstr "ඉහළ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item4.StringList.item
+#, fuzzy
+msgid  "Top left"
+msgstr "ඉහළ වම"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item5.StringList.item
+#, fuzzy
+msgid  "Left"
+msgstr "වම"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item6.StringList.item
+#, fuzzy
+msgid  "Bottom left"
+msgstr "පහළ වම"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item7.StringList.item
+#, fuzzy
+msgid  "Below"
+msgstr "පහළ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item8.StringList.item
+#, fuzzy
+msgid  "Bottom right"
+msgstr "පහළ දකුණ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item9.StringList.item
+#, fuzzy
+msgid  "Right"
+msgstr "දකුණ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item10.StringList.item
+#, fuzzy
+msgid  "Top right"
+msgstr "ඉහළ දකුණ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item11.StringList.item
+#, fuzzy
+msgid  "Inside"
+msgstr "ඇතුළත"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item12.StringList.item
+#, fuzzy
+msgid  "Outside"
+msgstr "පිටත"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item13.StringList.item
+#, fuzzy
+msgid  "Near origin"
+msgstr "ආරම්භයට ආසන්න"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_VALUE_AS_NUMBER.CheckBox.Text
+#, fuzzy
+msgid  "Show value as ~number"
+msgstr "අගය අංකයක් ලෙස දක්වන්න (~n)"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).PB_NUMBERFORMAT.PushButton.Text
+#, fuzzy
+msgid  "Number ~format..."
+msgstr "අංක හැඩතලය... (~f)"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_VALUE_AS_PERCENTAGE.CheckBox.Text
+#, fuzzy
+msgid  "Show value as ~percentage"
+msgstr "අගය ප්‍රතිශතයක් ලෙස දක්වන්න (~p)"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).PB_PERCENT_NUMBERFORMAT.PushButton.Text
+#, fuzzy
+msgid  "Percentage f~ormat..."
+msgstr "ප්‍රතිශත හැඩතලය... (~o) "
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_CATEGORY.CheckBox.Text
+#, fuzzy
+msgid  "Show ~category"
+msgstr "ප්‍රවර්ග පෙන්වන්න (~c)"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_SYMBOL.CheckBox.Text
+#, fuzzy
+msgid  "Show ~legend key"
+msgstr "විස්තර පාඨ සූචිය පෙන්වන්න (~l)"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_PLACEMENT.FixedText.Text
+#, fuzzy
+msgid  "Place~ment"
+msgstr "පිහිටුවීම (~m)"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FL_LABEL_ROTATE.FixedLine.Text
+#, fuzzy
+msgid  "Rotate Text"
+msgstr "පෙළ භ්‍රමණය කරන්න"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_DEGREES.FixedText.Text
+#, fuzzy
+msgid  "~Degrees"
+msgstr "අංශක (~D)"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_TEXTDIR.FixedText.Text
+#, fuzzy
+msgid  "Te~xt direction"
+msgstr "පෙළ දිශාව (~x)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.StringList.item
+#, fuzzy
+msgid  "Standard Error"
+msgstr "සම්මත දෝෂය"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.StringList.item
+#, fuzzy
+msgid  "Standard Deviation"
+msgstr "සම්මත අපගමනය"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.StringList.item
+#, fuzzy
+msgid  "Variance"
+msgstr "විචල්‍යතාව"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.StringList.item
+#, fuzzy
+msgid  "Error Margin"
+msgstr "දෝෂ සීමාව"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_ERROR.FixedLine.Text
+#, fuzzy
+msgid  "Error Category"
+msgstr "දෝෂ ප්‍රවර්ගය"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_NONE.RadioButton.Text
+#, fuzzy
+msgid  "~None"
+msgstr "කිසිවක් නැත (~N)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_CONST.RadioButton.Text
+#, fuzzy
+msgid  "~Constant Value"
+msgstr "නියත අඟය (~C)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_PERCENT.RadioButton.Text
+#, fuzzy
+msgid  "~Percentage"
+msgstr "ප්‍රතිශතය (~P)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_RANGE.RadioButton.Text
+#, fuzzy
+msgid  "Cell ~Range"
+msgstr "සෙල පරාසය (~R)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_PARAMETERS.FixedLine.Text
+#, fuzzy
+msgid  "Parameters"
+msgstr "පරාමිති"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FT_POSITIVE.FixedText.Text
+#, fuzzy
+msgid  "P~ositive (+)"
+msgstr "ධන (~o) (+)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FT_NEGATIVE.FixedText.Text
+#, fuzzy
+msgid  "~Negative (-)"
+msgstr "සෘණ (~N) (-)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).CB_SYN_POS_NEG.CheckBox.Text
+#, fuzzy
+msgid  "Same value for both"
+msgstr "දෙකටම එකම අගය"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_INDICATE.FixedLine.Text
+#, fuzzy
+msgid  "Error Indicator"
+msgstr "දෝෂ දර්ශකය"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_BOTH.RadioButton.Text
+#, fuzzy
+msgid  "Positive ~and Negative"
+msgstr "ධන සහ සෘණ (~a)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_POSITIVE.RadioButton.Text
+#, fuzzy
+msgid  "Pos~itive"
+msgstr "ධන (~i)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_NEGATIVE.RadioButton.Text
+#, fuzzy
+msgid  "Ne~gative"
+msgstr "සෘණ (~g)"
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY( xpos , ypos ).CBX_SHOWLEGEND.CheckBox.Text
+#, fuzzy
+msgid  "~Display legend"
+msgstr "විස්තර පාඨය පෙන්වන්න (~D)"
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_LEFT.RadioButton.Text
+#, fuzzy
+msgid  "~Left"
+msgstr "වම (~L)"
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_RIGHT.RadioButton.Text
+#, fuzzy
+msgid  "~Right"
+msgstr "දකුණ (~R)"
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_TOP.RadioButton.Text
+#, fuzzy
+msgid  "~Top"
+msgstr "ඉහළ (~T)"
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_BOTTOM.RadioButton.Text
+#, fuzzy
+msgid  "~Bottom"
+msgstr "පහළ (~B)"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).FL_TYPE.FixedLine.Text
+#, fuzzy
+msgid  "Regression Type"
+msgstr "ප්‍රතිගමන වර්‍ගය"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_NONE.RadioButton.Text
+#, fuzzy
+msgid  "~None"
+msgstr "කිසිවක් නැත (~N)"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_LINEAR.RadioButton.Text
+#, fuzzy
+msgid  "~Linear"
+msgstr "රේඛීය (~L)"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_LOGARITHMIC.RadioButton.Text
+#, fuzzy
+msgid  "L~ogarithmic"
+msgstr "ලඝුගණක (~o)"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_EXPONENTIAL.RadioButton.Text
+#, fuzzy
+msgid  "E~xponential"
+msgstr "ඝාතීය (~x)"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_POWER.RadioButton.Text
+#, fuzzy
+msgid  "~Power"
+msgstr "බලය (~P)"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).FL_EQUATION.FixedLine.Text
+#, fuzzy
+msgid  "Equation"
+msgstr "සමීකරණය"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).CB_SHOW_EQUATION.CheckBox.Text
+#, fuzzy
+msgid  "Show ~equation"
+msgstr "සමීකරණය පෙන්වන්න (~e)"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).CB_SHOW_CORRELATION_COEFF.CheckBox.Text
+#, fuzzy
+msgid  "Show ~coefficient of determination (R²)"
+msgstr "නිර්ණය කිරීමේ සංගුණකය පෙන්වන්න (R²) (~c)"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_MAINTITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "සිරස්තලය (~T)"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_SUBTITLE.FixedText.Text
+#, fuzzy
+msgid  "~Subtitle"
+msgstr "උපසිරැසිය (~S)"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FL_AXES.FixedLine.Text
+#, fuzzy
+msgid  "Axes"
+msgstr "අක්‍ෂ"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_X_AXIS.FixedText.Text
+#, fuzzy
+msgid  "~X axis"
+msgstr "~X අක්‍ෂය"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_Y_AXIS.FixedText.Text
+#, fuzzy
+msgid  "~Y axis"
+msgstr "~Y අක්‍ෂය"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_Z_AXIS.FixedText.Text
+#, fuzzy
+msgid  "~Z axis"
+msgstr "~Z අක්‍ෂය"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FL_SECONDARY_AXES.FixedLine.Text
+#, fuzzy
+msgid  "Secondary Axes"
+msgstr "ද්විතීය අක්‍ෂ"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_SECONDARY_X_AXIS.FixedText.Text
+#, fuzzy
+msgid  "X ~axis"
+msgstr "X අක්‍ෂය (~a)"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_SECONDARY_Y_AXIS.FixedText.Text
+#, fuzzy
+msgid  "Y ax~is"
+msgstr "Y අක්‍ෂය (~i)"

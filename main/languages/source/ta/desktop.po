@@ -1,0 +1,1124 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
+msgid  "Should the file \"$1\" be restored?"
+msgstr "\"$1\" கோப்பினை திரும்ப கொண்டு வர வேண்டுமா?"
+
+#: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
+msgid  "File Recovery"
+msgstr "கோப்பு மீட்பு"
+
+#: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
+msgid  "An unrecoverable error has occurred.\\n\\nAll modified files have been saved and can\\nprobably be recovered at program restart."
+msgstr ""
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
+msgid  "The application cannot be started. "
+msgstr "பயன்பாட்டை துவக்க முடியாது. "
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "கட்டமைப்பு அடைவு \"$1\" காணப்படவில்லை."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
+msgid  "The installation path is invalid."
+msgstr "நிறுவல் பாதை சரியானது அல்ல."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.String.Text
+msgid  "The installation path is not available."
+msgstr "நிறுவல் பாதை காணப்படவில்லை."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.String.Text
+msgid  "An internal error occurred."
+msgstr "உள்ளகப்பிழை ஏற்பட்டது."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "கட்டமைப்பு கோப்பு \"$1\" பழுதுபட்டுள்ளது."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
+msgid  "The configuration file \"$1\" was not found."
+msgstr "கட்டமைப்பு கோப்பு \"$1\" காணப்படவில்லை."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "கட்டமைப்பு கோப்பு \"$1\" நடப்பு பதிப்பிற்கு துணைபுரியவில்லை."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
+msgid  "The user interface language cannot be determined."
+msgstr "பயனர் இடைமுகப்பு மொழியை நிர்ணயிக்க முடியவில்லை."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.String.Text
+msgid  "The component manager is not available."
+msgstr "பொருள் மேலாளர் கிடைக்கப் பெறவில்லை."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.String.Text
+msgid  "The configuration service is not available."
+msgstr "கட்டமைப்பு சேவை கிடைக்கப் பெறவில்லை."
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.String.Text
+msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
+msgstr ""
+
+#: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
+msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
+msgstr "நிறுவல் தொகுப்புகளை கொண்டிருக்கும்கோப்புறை அல்லது குறுவட்டிலிருந்து நிறுவலை சரிபார்ப்பதற்கு பயன்பாட்டை அமைக்க துவங்கவும்."
+
+#: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
+msgid  "The startup settings for accessing the central configuration are incomplete. "
+msgstr "மைய கட்டமைவை அணுகுவதற்காண தொடக்க அமைவுகள் முடிவுபெறாமல் உள்ளன. "
+
+#: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
+msgid  "A connection to the central configuration could not be established. "
+msgstr "மைய கட்டமைவுடன் ஒரு இணைப்பை ஆரம்பிக்க முடியவில்லை. "
+
+#: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
+msgid  "You cannot access the central configuration because of missing access rights. "
+msgstr "அணுகும் உரிமை இல்லததால் மைய கட்டமைவை உங்களால் அணுகமுடியாது. "
+
+#: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
+msgid  "A general error occurred while accessing your central configuration. "
+msgstr "உங்கள் மைய கட்டமைப்பை அணுகும் போது ஒரு பொதுவான பிழை நேர்ந்தது. "
+
+#: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
+msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
+msgstr "அணுகும் உரிமை இல்லாததால் மாற்றப்படும் உங்கள் சொந்த அமைவுகளை நடுவில் சேமிக்க முடியாது. "
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
+msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
+msgstr "%PRODUCTNAME கட்டமைப்பு தரவை அணுகுவதில் பிழையிருப்பதால் %PRODUCTNAMEஐ தொடக்க முடியவில்லை.\n\nஉங்கள் முறைமை நிர்வாகியைத் தெடர்புகொள்ளவும்."
+
+#: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
+msgid  "The following internal error has occurred: "
+msgstr "பின்வரும் உள்ளகப் பிழை நேர்ந்துவிட்டது: "
+
+#: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
+msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\\n\\nDo you really want to continue?"
+msgstr ""
+
+#: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/app/desktop.src#EBX_ERR_PRINTDISABLED.ErrorBox.Message
+msgid  "Printing is disabled. No documents can be printed."
+msgstr "அச்சடிப்பது செயல்நீக்கப்பட்டுள்ளது. ஆவணங்களை அச்சடிக்க முடியாது."
+
+#: source/app/desktop.src#INFOBOX_EXPIRED.InfoBox.Message
+msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\\nvisit http://www.openoffice.org"
+msgstr ""
+
+#: source/app/desktop.src#STR_TITLE_EXPIRED.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
+msgid  "The path manager is not available.\\n"
+msgstr "பாதை மேலாளர் கிடைக்கவில்லை.\n"
+
+#: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
+msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
+msgstr "போதுமான காலி வட்டு இடம் இல்லாததால் %PRODUCTNAME பயனர் நிறுவலை முடிக்க இயலவில்லை. பின்வரும் இடத்தில் வட்டைக் காலி செய்து, %PRODUCTNAME ஐ மீண்டும் துவக்கவும்:\n\n"
+
+#: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
+msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
+msgstr "அனுகல் உரிமைகள் காணப்படாததால் %PRODUCTNAME பயனர் நிறுவலை செயல்முறைப்படுத்த முடியவில்லை. பின்வரும் இடத்திற்குத் தேவையான அனுகல் உரிமைகள் இருப்பதை உறுதிசெய்துவிட்டு %PRODUCTNAME ஐத் மீண்டும் துவக்கவும்:\n\n"
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
+#, fuzzy
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
+msgstr "நீங்கள் \\'$NAME\\' விரிவாக்கத்தின் $NEW பதிப்பை நிறுவ உள்ளீர்கள்.\n\\'$OLDNAME\\' என்ற பெயரில் $DEPLOYED ன் புதிய பதிப்பு ஏற்கனவே நிறுவப்பட்டுள்ளது.\nநிறுவப்பட்டுள்ள விரிவாக்கத்தை மாற்ற \\'OK\\' ஐ சொடுக்கு.\nநிறுவலை நிறுத்த \\'Cancel\\' ஐ சொடுக்கு."
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
+#, fuzzy
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
+msgstr "நீங்கள் \\'$NAME\\' விரிவாக்கத்தின் $NEW பதிப்பை நிறுவ உள்ளீர்கள்.\n\\'$OLDNAME\\' என்ற பெயரில் அப்பதிப்பு ஏற்கனவே நிறுவப்பட்டுள்ளது.\nநிறுவப்பட்டுள்ள விரிவாக்கத்தை மாற்ற \\'OK\\' வை சொடுக்கு.\nநிறுவலை நிறுத்த \\'Cance\\' ஐ சொடுக்கு."
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
+#, fuzzy
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
+msgstr "நீங்கள் \\'$NAME\\' விரிவாக்கத்தின் $NEW பதிப்பை நிறுவ உள்ளீர்கள்.\n\\'$OLDNAME\\' என்ற பெயரில் $DEPLOYED ன் பழைய பதிப்பு ஏற்கனவே நிறுவப்பட்டுள்ளது.\nநிறுவப்பட்டுள்ள விரிவாக்கத்தை மாற்ற \\'OK\\' ஐ சொடுக்கு.\nநிறுவலை நிறுத்த \\'Cance\\' ஐ சொடுக்கு."
+
+#: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
+msgid  "System dependencies check"
+msgstr "கணினி சார்புகள் சோதனை"
+
+#: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
+msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
+msgstr "பின்வரும் முறைமை சார்புகள் நிறைவு செய்யப்படாததால்\nகணினி சார்புகள் முடிவடையவில்லை:"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
+msgid  "Add Extension(s)"
+msgstr "விரிவாக்கங்(களை) சேர்"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.String.Text
+msgid  "~Remove"
+msgstr "நீக்கு (~R)"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.String.Text
+msgid  "~Enable"
+msgstr "செயல்படுத்தக்கூடிய (~E)"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.String.Text
+msgid  "~Disable"
+msgstr "செயல்நீக்கு (~D)"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.String.Text
+msgid  "~Update..."
+msgstr "புதுப்பி (~U)..."
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.String.Text
+msgid  "~Options..."
+msgstr "விருப்பங்கள் (~O)..."
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.String.Text
+#, fuzzy
+msgid  "Adding %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME சேர்க்கப்படுகிறது"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.String.Text
+#, fuzzy
+msgid  "Removing %EXTENSION_NAME"
+msgstr "%EXTENSION_NAMEஐ  நீக்குகிறது"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.String.Text
+#, fuzzy
+msgid  "Enabling %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME ஐ செயல்படுத்துகிறது"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.String.Text
+#, fuzzy
+msgid  "Disabling %EXTENSION_NAME"
+msgstr "%EXTENSION_NAMEஐ செயல் நீக்குகிறது"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.String.Text
+msgid  "Accept license for %EXTENSION_NAME"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.String.Text
+#, fuzzy
+msgid  "~For all users"
+msgstr "அனைத்து பயனர்களுக்கும் (~F)"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.String.Text
+#, fuzzy
+msgid  "~Only for me"
+msgstr "எனக்கு மட்டும் (~O)"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.String.Text
+#, fuzzy
+msgid  "Error: The status of this extension is unknown"
+msgstr "பிழை: இந்த விரிவாக்கத்தின் நிலை தெரியாதது"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.String.Text
+#, fuzzy
+msgid  "Close"
+msgstr "மூடு"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.String.Text
+#, fuzzy
+msgid  "Quit"
+msgstr "நிறுத்து"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+msgstr "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
+#, fuzzy
+msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
+msgstr "பின்வரும் முறைமை சார்புகள் நிறைவு செய்யப்படாததால் விரிவாக்கத்தை நிறுவ முடியவில்லை:"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
+msgid  "This extension is disabled because you haven't accepted the license yet.\\n"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
+msgid  "Show license"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.ModalDialog.Text
+#, fuzzy
+msgid  "Extension Software License Agreement"
+msgstr "விரிவாக்க மென்பொருள் உரிம ஒப்பந்தம்"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Please follow these steps to proceed with the installation of the extension:"
+msgstr "விரிவாக்கத்தின் நிறுவலைத் தொடர இப்படிகளை பின்பற்றிச் செல்லவும்:"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
+#, fuzzy
+msgid  "1."
+msgstr "1."
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
+#, fuzzy
+msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
+msgstr "முழு உரிம ஒப்பந்தத்தையும் படி. இவ்வுரையாடல் பெட்டியிலுள்ள உருள்பட்டையையோ \\'கீழுக்கு உருட்டு\\' பொத்தானையோ பயன்படுத்தி முழு உரிம உரையையும் பார்க்கவும்."
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
+#, fuzzy
+msgid  "2."
+msgstr "2."
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
+#, fuzzy
+msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
+msgstr "விரிவாக்கதின் உரிம ஒப்பந்தத்தை \\'ஏற்றுக்கொள்\\' பொத்தானை அழுத்தி ஏற்றுக்கொள்."
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
+#, fuzzy
+msgid  "~Scroll Down"
+msgstr "கீழுக்கு உருட்டு (~S)"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
+#, fuzzy
+msgid  "Accept"
+msgstr "ஏற்றுக்கொள்"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
+#, fuzzy
+msgid  "Decline"
+msgstr "மறுத்துவிடு"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.ModalDialog.Text
+#, fuzzy
+msgid  "Extension Software License Agreement"
+msgstr "விரிவாக்க மென்பொருள் உரிம ஒப்பந்தம்"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "மூடு"
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WarningBox.Message
+msgid  "You are about to install the extension \\'%NAME\\'.\\nClick \\'OK\\' to proceed with the installation.\\nClick \\'Cancel\\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WarningBox.Message
+msgid  "You are about to remove the extension \\'%NAME\\'.\\nClick \\'OK\\' to remove the extension.\\nClick \\'Cancel\\' to stop removing the extension."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to remove the extension.\\nClick \\'Cancel\\' to stop removing the extension."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to enable the extension.\\nClick \\'Cancel\\' to stop enabling the extension."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to disable the extension.\\nClick \\'Cancel\\' to stop disabling the extension."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.String.Text
+#, fuzzy
+msgid  "The extension \\'%Name\\' does not work on this computer."
+msgstr "இந்த விரிவாக்க \\'%Name\\' என்ற பணி இக்கணினியில் வேலை செய்யாது."
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.ModalDialog.Text
+#, fuzzy
+msgid  "Download and Installation"
+msgstr "பதிவிறக்கம் மற்றும் நிறுவல்"
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FixedText.Text
+#, fuzzy
+msgid  "Downloading extensions..."
+msgstr "விரிவாக்கங்களை பதிவிறக்கிறது..."
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FixedText.Text
+#, fuzzy
+msgid  "Result"
+msgstr "முடிவு"
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKButton.Text
+#, fuzzy
+msgid  "OK"
+msgstr "சரி"
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CancelButton.Text
+#, fuzzy
+msgid  "Cancel Update"
+msgstr "புதுப்பித்தலை ரத்துசெய்"
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.String.Text
+#, fuzzy
+msgid  "Installing extensions..."
+msgstr "விரிவாக்கங்கள் நிறுவப்படுகின்றன..."
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.String.Text
+#, fuzzy
+msgid  "Installation finished"
+msgstr "நிறுவல் முடிந்தது"
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.String.Text
+#, fuzzy
+msgid  "No errors."
+msgstr "பிழையில்லை."
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.String.Text
+#, fuzzy
+msgid  "Error while downloading extension %NAME. "
+msgstr "%NAME விரிவாக்கத்தை பதிவிறக்கும் போது பிழை. "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.String.Text
+#, fuzzy
+msgid  "The error message is: "
+msgstr "பிழைத் தகவல்: "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.String.Text
+#, fuzzy
+msgid  "Error while installing extension %NAME. "
+msgstr "%NAME விரிவாக்கத்தை நிறுவும்போது பிழை. "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.String.Text
+#, fuzzy
+msgid  "The license agreement for extension %NAME was refused. "
+msgstr "%NAME விரிவாக்கத்திற்கான உரிம ஒப்பந்தம் மறுக்கப்பட்டது. "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.String.Text
+#, fuzzy
+msgid  "The extension will not be installed."
+msgstr "விரிவாக்கம் நிறுவப்படாது."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.ModalDialog.Text
+#, fuzzy
+msgid  "Extension Update"
+msgstr "விரிவாக்க புதுப்பித்தல்"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FixedText.Text
+#, fuzzy
+msgid  "Checking..."
+msgstr "சரிபார்க்கிறது..."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FixedText.Text
+#, fuzzy
+msgid  "~Available extension updates"
+msgstr "இருக்கும் விரிவாக்க புதுப்பித்தல்கள் (~A)"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CheckBox.Text
+#, fuzzy
+msgid  "~Show all updates"
+msgstr "அனைத்து புதுப்பித்தல்களையும் காட்டு (~S)"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FixedLine.Text
+#, fuzzy
+msgid  "Description"
+msgstr "விளக்கம்"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FixedText.Text
+#, fuzzy
+msgid  "Publisher:"
+msgstr "பதிப்பாளர்:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FixedText.Text
+#, fuzzy
+msgid  "What is new:"
+msgstr "எது புதிது:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FixedText.Text
+#, fuzzy
+msgid  "Release Notes"
+msgstr "வெளியீட்டு குறிப்புகள்"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PushButton.Text
+#, fuzzy
+msgid  "~Install"
+msgstr "நிறுவு (~I)"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "மூடு"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.String.Text
+#, fuzzy
+msgid  "Error"
+msgstr "பிழை"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.String.Text
+#, fuzzy
+msgid  "No new updates are available."
+msgstr "புதிய புதுப்பித்தல்கள் கிடைக்கf பெறவில்லை."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
+#, fuzzy
+msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
+msgstr "நிறுவக்கூடிய எந்த ஒரு புதுப்பித்தலுமில்லை. எல்லா புதுப்பித்தல்களையும் பார்க்க, 'அனைத்து புதுப்பித்தல்களையும் காட்டு' சலிபார்க்கும் பெட்டியில் குறிப்பிடவும்."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
+#, fuzzy
+msgid  "An error occurred:"
+msgstr "ஒரு பிழை ஏற்பட்டது:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.String.Text
+#, fuzzy
+msgid  "Unknown error."
+msgstr "தெரியாத பிழை."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.String.Text
+msgid  "No more details are available for this update."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.String.Text
+#, fuzzy
+msgid  "The extension cannot be updated because:"
+msgstr "விரிவாக்கத்தை  புதுப்பிக்க முடியவில்லை ஏனெனில்:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
+#, fuzzy
+msgid  "Required Apache OpenOffice version doesn't match:"
+msgstr "தேவையான OpenOffice.org பதிப்பு பொருந்தவில்லை:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
+#, fuzzy
+msgid  "You have Apache OpenOffice %VERSION"
+msgstr "உங்களிடம் OpenOffice.org %VERSION உள்ளது"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.String.Text
+#, fuzzy
+msgid  "browser based update"
+msgstr "உலாவி அடிப்படையிலான புதுப்பித்தல்"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.String.Text
+#, fuzzy
+msgid  "Version"
+msgstr "பதிப்பு"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.String.Text
+msgid  "Ignore this Update"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.String.Text
+msgid  "Ignore all Updates"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.String.Text
+msgid  "Enable Updates"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
+msgid  "This update will be ignored.\\n"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to update the extensions.\\nClick \\'Cancel\\' to stop updating the extensions."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.ModelessDialog.Text
+#, fuzzy
+msgid  "Extension Manager"
+msgstr "விரிவாக்க மேலாளர்"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "சேர் (~A)..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PushButton.Text
+#, fuzzy
+msgid  "Check for ~Updates..."
+msgstr "புதுப்பித்தல்களை சரிபார்க்கவும் (~U)..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FixedText.Text
+#, fuzzy
+msgid  "Get more extensions online..."
+msgstr "இணையத்தில் கூடுதல் விரிவாக்கங்களைப் பெறு..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FixedText.Text
+#, fuzzy
+msgid  "Adding %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME சேர்க்கிறது"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "மூடு"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.ModalDialog.Text
+#, fuzzy
+msgid  "Extension Update Required"
+msgstr "விரிவாக்க புதுப்பித்தல் தேவைப்படுகிறது"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
+#, fuzzy
+msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
+msgstr "%PRODUCTNAME ஒரு புதிய பதிப்பில் புதுப்பிக்கப்படும். சில நிறுவப்பட்ட %PRODUCTNAME விரிவாக்கங்கள் இந்த பதிப்புடன் தகுந்து புதுப்பித்தலை பயன்படுத்துவதற்கு முன்பே தேவைப்படும்"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
+#, fuzzy
+msgid  "Adding %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME சேர்க்கப்படுகிறது"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PushButton.Text
+#, fuzzy
+msgid  "Check for ~Updates..."
+msgstr "புதுப்பித்தல்களுக்காக சரிபார் (~U)..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "Disable all"
+msgstr "அனைத்தையும் செயல்நீக்கு"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\\n\\nFor whom do you want to install the extension?\\n"
+msgstr ""
+
+#: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
+msgid  "Copying: "
+msgstr "நகலெடுக்கிறது: "
+
+#: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
+msgid  "Error while adding: "
+msgstr "சேர்க்கும் போது பிழை: "
+
+#: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
+msgid  "Error while removing: "
+msgstr "நீக்கும் போது பிழை: "
+
+#: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
+msgid  "Extension has already been added: "
+msgstr "விரிவாக்கம் ஏற்கனவே சேர்க்கப்பட்டுள்ளது: "
+
+#: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
+msgid  "There is no such extension deployed: "
+msgstr "அத்தகைய விரிவாக்கம் ஏதும் நிறுவப்பட்டிருக்கவில்லை: "
+
+#: source/deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.String.Text
+msgid  "Synchronizing repository for %NAME extensions"
+msgstr ""
+
+#: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
+msgid  "Unknown"
+msgstr "தெரியாதது"
+
+#: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.String.Text
+#, fuzzy
+msgid  "Extension requires at least Apache OpenOffice %VERSION"
+msgstr "விரிவாக்கத்திற்கு குறைந்தது OpenOffice.org %VERSION தேவைப்படுகிறது"
+
+#: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.String.Text
+#, fuzzy
+msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
+msgstr "விரிவாக்கம் OpenOffice.org %VERSIONல் அதிகமான பதிப்புகளுக்கு துணைபுரியவில்லை"
+
+#: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
+msgid  "Enabling: "
+msgstr "செயல்படுகிறது: "
+
+#: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
+msgid  "Disabling: "
+msgstr "செயல்நீக்குகிறது: "
+
+#: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
+msgid  "Cannot detect media-type: "
+msgstr "ஊடக - வகையைக் கண்டுகொள்ள முடியவில்லை: "
+
+#: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
+msgid  "This media-type is not supported: "
+msgstr "இந்த ஊடக- வகைக்கு துணைபுரியவில்லை: "
+
+#: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
+msgid  "An error occurred while enabling: "
+msgstr "செயல்படுத்தும் போது பிழை ஏற்பட்டது:"
+
+#: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
+msgid  "An error occurred while disabling: "
+msgstr "செயல்நீக்கும் போது பிழை ஏற்பட்டது: "
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
+msgid  "UNO Dynamic Library Component"
+msgstr "UNO இயக்கவாற்றல் நூலகப் பொருள்"
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
+msgid  "UNO Java Component"
+msgstr "UNO Java பொருள்"
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
+msgid  "UNO Python Component"
+msgstr "UNO பல்கோணப் பொருள்"
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.String.Text
+msgid  "UNO Components"
+msgstr ""
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
+msgid  "UNO RDB Type Library"
+msgstr "UNO RDB வகை நூலகம்"
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
+msgid  "UNO Java Type Library"
+msgstr "UNO Java வகை நூலகம்"
+
+#: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
+msgid  "Configuration Schema"
+msgstr "கட்டமைப்பு திட்டம்"
+
+#: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
+msgid  "Configuration Data"
+msgstr "கட்டமைப்பு தரவு"
+
+#: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
+msgid  "Help"
+msgstr "உதவி"
+
+#: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
+msgid  "The extension cannot be installed because:\\n"
+msgstr "விரிவாக்கத்தை  நிறுவ முடியவில்லை ஏனெனில்:\n"
+
+#: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
+msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
+msgstr "உதவிக் கோப்புகளில் ஒரு பிழை ஏற்பட்டதால் இந்த விரிவாக்கதை நிறுவ முடியாது:\n"
+
+#: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
+msgid  "Extension"
+msgstr "விரிவாக்கம்"
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
+msgid  "%PRODUCTNAME Basic Library"
+msgstr "%PRODUCTNAME அடிப்படை நூலகம்"
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
+msgid  "Dialog Library"
+msgstr "உரையாடல் நூலகம்"
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
+msgid  "The library name could not be determined."
+msgstr "நூலகப் பெயரை நிர்ணயிக்க முடியவில்லை."
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
+msgid  "This library name already exists. Please choose a different name."
+msgstr "இந்நூலகப் பெயர் ஏற்கனவே உள்ளது. வேறொரு பெயரைத் தேர்ந்தெடு."
+
+#: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
+msgid  "%MACROLANG Library"
+msgstr "%MACROLANG நூலகம்"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.String.Text
+msgid  "Extension Software License Agreement of $NAME:"
+msgstr ""
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "மேலே காட்டப்படும் முழு உரிம ஒப்பந்தத்தையும் படி. உரிம ஒப்பந்தத்தை ஏற்றுக்கொள்ள \"சரி\" என்று தட்டி திரும்பும் விசையை அழுத்தவும். மறுத்து விரிவாக்க அமைப்பிலிருந்து வெளியேர \"வேண்டாம்\" எனத் தட்டு."
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"ஆம்\" அல்லது \"இல்லை\" என உள்ளிடு]:"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "உங்கள் உள்ளீடு சரியில்லை. \"ஆம்\" அல்லது \"இல்லை\" என உள்ளிடு:"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
+msgid  "YES"
+msgstr "ஆம்"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
+msgid  "Y"
+msgstr "Y"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
+msgid  "NO"
+msgstr "இல்லை"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
+msgid  "N"
+msgstr "N"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
+msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
+msgstr "unopkg துவக்கப்படவில்லை. இந்த பூட்டு கோப்பானது அது ஏற்கனவே இயங்குவதை அறிவிக்கிறது. அவ்வாறு செயல்படவில்லை எனில், பூட்டுக் கோப்பை இதில் அழிக்கவும்:"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
+msgid  "ERROR: "
+msgstr "ERROR: "
+
+#: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION க்கு நல்வரவு"
+
+#: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
+msgid  "Welcome"
+msgstr "நல்வரவு"
+
+#: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
+msgid  "License Agreement"
+msgstr "உரிம ஒப்பந்தம்"
+
+#: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
+msgid  "Personal Data"
+msgstr "சொந்தத் தரவு"
+
+#: source/migration/wizard.src#STR_STATE_USER.String.Text
+msgid  "User name"
+msgstr "பயனர் பெயர்"
+
+#: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
+msgid  "Online Update"
+msgstr "இணைய புதுப்பித்தல்"
+
+#: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
+msgid  "Registration"
+msgstr "பதிவு"
+
+#: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
+msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr "இவ்வழிகாட்டி உரிம ஒப்பத்தம், %OLD_VERSION இலிருந்து பயனர் தரவை இடமாற்றுவதல், %PRODUCTNAME பதிவு ஆகியன ஊடாக வழிநடத்திச் செல்லும்.\n\n'அடுத்து' சொடுக்கி தொடரவும்."
+
+#: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
+msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr "இவ்வழிகாட்டி %PRODUCTNAME பதிவின் ஊடாக வழிநடத்திச் செல்லும்.\n\n'அடுத்து' சொடுக்கி தொடரவும்."
+
+#: source/migration/wizard.src#STR_FINISH.String.Text
+msgid  "~Finish"
+msgstr "முந்தது (~F)"
+
+#: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
+msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
+msgstr "உலகில் மிகத் துரிதமாக வளர்ந்து வரும் பண்பு சமூகத்தை ஆதரித்து அதற்குப் பங்களிக்கும் வாய்ப்பு உங்களுக்கு இப்போது வாய்த்துள்ளது.\n\nமக்கற் சந்தையில் %PRODUCTNAME குறிப்பிடத்தக்க ஆதவைப் பெற்றுள்ளதென நாங்கள் நிருபிப்பதற்கு நீங்கள் பதிவு செய்வதன்வழி உதலாம்.\n\nபதிவுசெய்தல் தன்னார்வ அடிப்படையிலானது; கண்டிப்பில்லாதது."
+
+#: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
+msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
+
+#: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
+msgid  "Do you really want to decline?"
+msgstr "உறுதியாக மறுக்கிறீர்களா?"
+
+#: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION க்கு நல்வரவு"
+
+#: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
+msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr "இவ்வழிகாட்டி உரிம ஒப்பத்தத்தின் ஊடாகவும், %PRODUCTNAME பதிவின் ஊடாகவும் வழிநடத்திச் செல்லும்.\n\n'அடுத்து' சொடுக்கி தொடரவும்."
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+msgid  "Please follow these steps to accept the license"
+msgstr "உரிமத்தை ஏற்றுக்கொள்ள இப்படிகளைப் பின்பற்றிச் செல்லவும்"
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
+msgid  "1."
+msgstr "1."
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr "முழு உரிம ஒப்பந்தத்தையும் பார். இவ்வுரையாடல் பெட்டியிலுள்ள உருள்பட்டையையோ '%PAGEDOWN' பொத்தானையோ பயன்படுத்தி முழு உரிம உரையையும் பார்க்கவும்."
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
+msgid  "2."
+msgstr "2."
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
+msgid  "Click 'Accept' to accept the terms of the Agreement."
+msgstr "'ஏற்றுக்கொள்' ஐச் சொடுக்கி ஒப்பந்த விதிகளை ஏற்றுக்கொள்."
+
+#: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
+msgid  "Scroll Do~wn"
+msgstr "கீழே உருட்டு (~w)"
+
+#: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
+msgid  "~Accept"
+msgstr "ஏற்றுக்கொள் (~A)"
+
+#: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
+msgid  "~Decline"
+msgstr "மறுத்துவிடு (~D)"
+
+#: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
+msgid  "Transfer personal data"
+msgstr "சொந்தத் தரவை இடமாற்று"
+
+#: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
+msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr "%OLDPRODUCT நிறுவலிலுள்ள பெரும்பகுதியான சொந்தத் தரவை %PRODUCTNAME %PRODUCTVERSION இல் பயன்படுத்தலாம்.\n\n%PRODUCTNAME %PRODUCTVERSION உள்ள எந்த அமைவையும் பயன்படுத்த நீங்கள் விரும்பவில்லையானால், சரிபார்க்கும் பெட்டிக் குறிப்பை நீக்கவும்."
+
+#: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
+msgid  "Transfer personal data"
+msgstr "சொந்தத் தரவை இடமாற்று"
+
+#: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
+msgid  "Online Update"
+msgstr "இணைய புதுப்பித்தல்"
+
+#: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
+msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr "%PRODUCTNAME புதிய பதிப்புகளை வழக்கமான ஒரு இடைவேளையில் தானாகவே தேடும்.\nஅத்தகைய இணைய புதுப்பித்தலின்போது சொந்தத் தரவு இடமாற்றப்படாது.\nபுதிய பதிப்பு கிடைத்தவுடன் உங்களுக்குத் தெரிவிக்கப்படும்.\n\nஇந்த அம்சத்தைப் பின்வருமிடத்தில் நீங்கள் கட்டமைக்கலாம் - கருவிகள் / விருப்பங்கள்... / %PRODUCTNAME / இணைய புதுப்பித்தல்."
+
+#: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
+msgid  "~Check for updates automatically"
+msgstr "தானாகவே புதுப்பித்தலை சரிப்பார் (~C)"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
+msgid  "Provide your full name and initials below"
+msgstr "உங்கள் முழுப்பெயரையும் தலைப்புகளையும் கீழே வழங்கவும்"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
+msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
+msgstr "பயனர் பெயர் ஆவண பண்புகளிலும், வார்ப்புருகளிலும், ஆவணங்களில் மாற்றங்களை நீங்கள் பதிவுசெய்யும்போதும் பயன்படுத்தப்படும்."
+
+#: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
+msgid  "~First name"
+msgstr "முதற்பெயர் (~F)"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
+msgid  "~Last name"
+msgstr "கடைசிப்பெயர் (~L)"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
+msgid  "~Initials"
+msgstr "சுருக்கொப்பம் (~I)"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
+msgid  "~Father's name"
+msgstr "தந்தையின் பெயர் (~F)"
+
+#: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
+msgid  "%PRODUCTNAME Registration"
+msgstr "%PRODUCTNAME பதிவு"
+
+#: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
+msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
+msgstr "உங்களுக்கு இப்போது %PRODUCTNAME இன் பயனராக பதிவுசெய்து கொள்ள வாய்ப்பு உள்ளது. பதிவுசெய்தல் தன்னார்வ அடிப்படை கொண்டதும் கண்டிப்பில்லதாகும்.\n\nநீங்கள் பதிவுசெய்து கொண்டால், இப்பொருள் தொடர்பான மேம்பாடுகளை நாங்கள் உங்களுக்குத் தெரிவிக்கலாம்."
+
+#: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
+msgid  "I want to register ~now"
+msgstr "நான் இப்போது பதிவுசெய்ய விரும்புகிறேன் (~n)"
+
+#: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
+msgid  "I want to register ~later"
+msgstr "நான் பின்னர் பதிவுசெய்ய விரும்புகிறேன் (~n)"
+
+#: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
+msgid  "I do not want to ~register"
+msgstr "எனக்குப் பதிவுசெய்ய விருப்பமில்லை (~r)"
+
+#: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
+msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
+msgstr "%PRODUCTNAME உங்களுக்குப் பயனுள்ளதாக இருக்கும் என எதிர்பார்க்கிறோம்.\n\nவழிகாட்டியிலிருந்து வெளியேற, 'முடிந்தது' சொடுக்கவும்."
+
+#: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
+msgid  "Installation Status"
+msgstr "நிறுவல் நிலை"
+
+#: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_CLIENT%
+msgid  "Installation is optimized for clients."
+msgstr "கிளையன்ட்டுக்கு நிறுவல் ஒத்திசைக்கப்படுகிறது."
+
+#: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_SERVER%
+msgid  "Installation is optimized for servers."
+msgstr "சேவையகங்களுக்கு நிறுவல் ஒத்திசைக்கப்படுகிறது."
+
+#: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
+msgid  "Cannot find Office installation."
+msgstr "அலுவலக நிறுவலை காண முடியவில்லை."
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "அமைப்பு"
+
+#: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
+msgid  "The %PRODUCTNAME Setup"
+msgstr "%PRODUCTNAME அமைப்பு"
+
+#: win32/source/setup/setup.ulf#%OUTOFMEM%
+msgid  "Out of Memory"
+msgstr "நிறைவகத்திற்கு வெளியே"
+
+#: win32/source/setup/setup.ulf#%NOMSI%
+msgid  "Setup was unable to find the msi package."
+msgstr "msi தொகுப்பை அமைப்பால் கண்டுபிடிக்க முடியவில்லை."
+
+#: win32/source/setup/setup.ulf#%USER_CANCELLED%
+msgid  "Setup was cancelled"
+msgstr "அமைப்பு ரத்து செய்யப்பட்டது"
+
+#: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
+msgid  "Administrator privileges are required for upgrading the Windows Installer."
+msgstr "விண்டோஸ் நிறுலரை மேம்படுத்த நிர்வாகி சலுகைகள் தேவை."
+
+#: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
+msgid  "Setup was unable to find the file '%s'."
+msgstr "அமைப்பால் '%s' கோப்பைக் கண்டுபிடிக்க முடியவில்லை."
+
+#: win32/source/setup/setup.ulf#%INVALID_PARAM%
+msgid  "Invalid command line option '%s'. Please use '/?' for help."
+msgstr "தவறான கட்டளை வரி விருப்பம்'%s'. உதவிக்கு '/?' ஐப் பயன்படுத்தவும்."
+
+#: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
+msgid  "This package requires at least the version '%s' of the Windows Installer. \\nYou have Windows Installer '%s' on your system!"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
+msgid  "This package requires the Windows Installer. \\nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%USAGE%
+msgid  "Usage:\\n   /? :  Shows this dialog.\\n   /a :  Performs an administrative installation.\\n   /j[u|m] :  Performs an advertising installation.\\n   /q[n] : Do not show any user interface (silent mode).\\n"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
+msgid  "There is already a setup process running."
+msgstr "அமைப்பு செய்முறை ஏற்கனவே இநங்கிக் கொண்டிருக்கிறது."
+
+#: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
+msgid  "An Unknown Error occured!"
+msgstr "தெரியாத ஒரு பிழை ஏற்பட்டது!"
+
+#: win32/source/setup/setup.ulf#%INVALID_PROFILE%
+msgid  "Invalid or incomplete profile."
+msgstr "தவறான அல்லது முழுமைபெறாத விவரக்குறிப்பு."
+
+#: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
+msgid  "Unknown Language: %d"
+msgstr "தெரியாத மொழி: %d"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
+msgid  "Chinese (traditional)"
+msgstr "சீனம் (பாரம்பரியம்)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_CS%
+msgid  "Czech"
+msgstr "செக்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_DA%
+msgid  "Danish"
+msgstr "டேனிஷ்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
+msgid  "German (Germany)"
+msgstr "ஜெர்மன்(ஜெர்மனி)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_EL%
+msgid  "Greek"
+msgstr "கிரேக்கம்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
+msgid  "English (USA)"
+msgstr "ஆங்கிலம் (அமெரிக்கா)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ES%
+msgid  "Spanish (Spain)"
+msgstr "ஸ்பானிஷ் (ஸ்பெயின்)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_FI%
+msgid  "Finnish"
+msgstr "ஃபினிஷ்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
+msgid  "French (France)"
+msgstr "பிரென்சு (ஃபிரான்சு)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_HE%
+msgid  "Hebrew"
+msgstr "ஹிப்ரூ"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_HU%
+msgid  "Hungarian"
+msgstr "ஹங்கேரியா"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
+msgid  "Italian (Italy)"
+msgstr "இத்தாலியன் (இத்தாலி)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_JA%
+msgid  "Japanese"
+msgstr "ஜப்பானிஸ்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_KO%
+msgid  "Korean"
+msgstr "கொரியன்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
+msgid  "Dutch (Netherlands)"
+msgstr "டச்சு (நெதர்லாந்து)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
+msgid  "Norwegian (Bokmål)"
+msgstr "நார்விஜியன் (பொக்மல்)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_PL%
+msgid  "Polish"
+msgstr "பாலிஷ்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
+msgid  "Portuguese (Brazil)"
+msgstr "போர்த்துகீசியஸ் (பிரேசில்)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_RU%
+msgid  "Russian"
+msgstr "ரஷ்யன்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_SK%
+msgid  "Slovak"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
+msgid  "Swedish (Sweden)"
+msgstr "சுவிடிஷ் (சுவீடன்)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_TH%
+msgid  "Thai"
+msgstr "தாய்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_TR%
+msgid  "Turkish"
+msgstr "துருக்கிஷ்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ET%
+msgid  "Estonian"
+msgstr "எஸ்தோனியன்"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
+msgid  "Chinese (Simplified)"
+msgstr "சீனம் (எளிமையான)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
+msgid  "Portuguese (Portugal)"
+msgstr "போர்த்துகீசிஸ் (போர்துகல்)"

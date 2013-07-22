@@ -1,0 +1,1007 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgstr "لطفاً پوشه‌ای را که می‌خواهید قلم‌ها را از آن وارد کنید، انتخاب کنید. با کلیک کردن روی دکمهٔ تأیید قلم‌های انتخاب شده را اضافه کنید."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+msgid  "Source directory"
+msgstr "شاخهٔ مبدأ"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+msgid  "Sea~rch Subdirectories"
+msgstr "~جستجوی زیرشاخه‌ها"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+msgid  "Target options"
+msgstr "گزینه‌های هدف"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+msgid  "Create ~soft links only"
+msgstr "ایجاد فقط پیوندهای نر~م"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "~انتخاب همه"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+msgid  "Add fonts"
+msgstr "اضافه کردن قلم‌ها"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr "آیا واقعاً می‌خواهید روی این پرونده‌ی قلم بنویسید؟\n   %s"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+msgid  "All"
+msgstr "همه"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+msgid  "None"
+msgstr "هیچ‌کدام"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
+#, fuzzy
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "نسخه‌برداری از پرونده‌ی قلم\n   %s\nممکن نیست. قلم نصب نخواهد شد."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
+#, fuzzy
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr "نسخه‌برداری از پرونده‌ی قلم\n   %s\nممکن نیست. قلم نصب نخواهد شد."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr ""
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+#, fuzzy
+msgid  "%d new fonts were added."
+msgstr "%Id قلم جدید اضافه شدند."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+#, fuzzy
+msgid  "Add Fonts"
+msgstr "اضافه کردن قلم"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+msgid  "CUPS support"
+msgstr ""
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+msgid  "Disable CUPS Support"
+msgstr ""
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "بستن"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
+#, fuzzy
+msgid  "Installed ~printers"
+msgstr "~چاپگرهای نصب شده"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
+#, fuzzy
+msgid  "Command:"
+msgstr "فرمان:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
+#, fuzzy
+msgid  "Driver:"
+msgstr "گرداننده:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
+#, fuzzy
+msgid  "Location:"
+msgstr "مکان:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
+#, fuzzy
+msgid  "Comment:"
+msgstr "توضیح:"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "ویژگی‌ها..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
+#, fuzzy
+msgid  "R~ename..."
+msgstr "ت~غییرنام..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
+#, fuzzy
+msgid  "~Default"
+msgstr "~پیش‌فرض"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
+#, fuzzy
+msgid  "Remo~ve..."
+msgstr "~حذف"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
+#, fuzzy
+msgid  "Test ~Page"
+msgstr "~صفحهٔ آزمایشی"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
+#, fuzzy
+msgid  "Fon~ts..."
+msgstr "~قلم‌ها..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "New Printer..."
+msgstr "چاپکر جدید..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
+#, fuzzy
+msgid  "Default printer"
+msgstr "چاپگر پیش‌فرض"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
+#, fuzzy
+msgid  "Rename"
+msgstr "تغییرنام"
+
+#: source/padialog.src#RID_PADIALOG.String.Text
+#, fuzzy
+msgid  "Printer Administration"
+msgstr "مدیریت چاپگر"
+
+#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
+#, fuzzy
+msgid  "Could not open printer %s."
+msgstr "باز کردن چاپگر %s ممکن نبود."
+
+#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
+#, fuzzy
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr "صفحهٔ آزمایشی با موفقیت چاپ شد. لطفاً نتیجه را بررسی کنید."
+
+#: source/padialog.src#RID_ERR_NOWRITE.String.Text
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
+msgstr ""
+
+#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+#, fuzzy
+msgid  "~New printer name"
+msgstr "نام چاپگر ~جدید"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+#, fuzzy
+msgid  "Model"
+msgstr "مدل"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "نام"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+#, fuzzy
+msgid  "Comment"
+msgstr "توضیح"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+#, fuzzy
+msgid  "Queue"
+msgstr "صف"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+#, fuzzy
+msgid  "Date"
+msgstr "تاریخ"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+#, fuzzy
+msgid  "Time"
+msgstr "زمان"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "بستن"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+#, fuzzy
+msgid  "Re~name..."
+msgstr "ت~غییر نام..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Remove..."
+msgstr "~حذف..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "ا~ضافه کردن..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+#, fuzzy
+msgid  "Note: The fonts are only available to the applications."
+msgstr "تذکر: قلم‌ها فقط در دسترس برنامه‌ها هستند."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+#, fuzzy
+msgid  "~New name for %s"
+msgstr "نام ~جدید %s"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+#, fuzzy
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr "نام ~جدید %s ‏(%Id1 از %Id2)"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+#, fuzzy
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr "به دلیل نبودن اجازهٔ نوشتن نمی‌توان نام قلم %s را تغییر داد."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+#, fuzzy
+msgid  "Fonts"
+msgstr "قلم‌ها"
+
+#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+#, fuzzy
+msgid  "Test page"
+msgstr "صفحهٔ آزمایشی"
+
+#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+msgid  "Wrong environment"
+msgstr ""
+
+#: source/padialog.src#RID_YOU_SURE.String.Text
+#, fuzzy
+msgid  "Are you sure ?"
+msgstr "آیا مطمئنید؟"
+
+#: source/padialog.src#RID_AFMERROR_OK.String.Text
+#, fuzzy
+msgid  "No error"
+msgstr "بدون خطا"
+
+#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+#, fuzzy
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr "اطلاعات ابعاد حاوی مدخلی به نام «FontName» نیست."
+
+#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+#, fuzzy
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr "اطلاعات ابعاد حاوی مدخلی به نام «FullName» نیست."
+
+#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+#, fuzzy
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr "اطلاعات ابعاد حاوی مدخلی به نام «FamilyName» نیست."
+
+#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+#, fuzzy
+msgid  "The converted metric could not be written."
+msgstr "نوشتن اطلاعات ابعاد تبدیل شده ممکن نیست."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+#, fuzzy
+msgid  "The metric could not be read."
+msgstr "اطلاعات ابعاد خوانده نمی‌شود."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+#, fuzzy
+msgid  "A temporary file could not be created."
+msgstr "ایجاد پروندهٔ موقت ممکن نیست."
+
+#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+#, fuzzy
+msgid  "The file does not contain a metric."
+msgstr "پرونده حاوی اطلاعات ابعاد نیست."
+
+#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr ""
+
+#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+#, fuzzy
+msgid  "Progress"
+msgstr "پیشرفت"
+
+#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+#, fuzzy
+msgid  "Please wait"
+msgstr "لطفاً صبر کنید"
+
+#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+#, fuzzy
+msgid  "Font metrics conversion"
+msgstr "تبدیل اطلاعات ابعاد قلم"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+#, fuzzy
+msgid  "Dri~ver directory"
+msgstr "~شاخهٔ گرداننده"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+#, fuzzy
+msgid  "Please select the driver directory."
+msgstr "لطفاً شاخهٔ گرداننده را انتخاب کنید"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "Browse..."
+msgstr "مرور..."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+#, fuzzy
+msgid  "~Selection of drivers"
+msgstr "ا~نتخاب گرداننده"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+#, fuzzy
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "لطفاً گرداننده‌هایی که می‌خواهید نصب شوند را انتخاب کرده و «%s» را فشار دهید."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+#, fuzzy
+msgid  "Searching for drivers"
+msgstr "در حال جستجو به دنبال گرداننده"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+#, fuzzy
+msgid  "Driver Installation"
+msgstr "نصب گرداننده"
+
+#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+#, fuzzy
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "آیا واقعاً می‌خواهید گردانندهٔ «%s» را حذف کنید؟"
+
+#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+#, fuzzy
+msgid  "Do you really want to remove this printer ?"
+msgstr "آیا واقعاً می‌خواهید این چاپگر را حذف کنید؟"
+
+#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+#, fuzzy
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr "آیا واقعاً می‌خواهید قلم‌های انتخاب شده را حذف کنید؟"
+
+#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+#, fuzzy
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "هنوز چاپگرهایی هستند که از گردانندهٔ «%s» استفاده می‌کنند. آیا واقعاً می‌خواهید این گرداننده را حذف کنید؟ چاپگرهای مربوطه هم حذف خواهند شد."
+
+#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+#, fuzzy
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "گردانندهٔ «%s» همیشه مورد نیاز است و بنابراین هیچ‌گاه نمی‌توان آن را حذف کرد."
+
+#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+#, fuzzy
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "گردانندهٔ «%s» مورد استفادهٔ چاپگر پیش‌فرض شماست، بنابراین نمی‌توان آن را حذف کرد."
+
+#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+#, fuzzy
+msgid  "The printer %s cannot be removed."
+msgstr "نمی‌توان چاپگر %s را حذف کرد."
+
+#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+#, fuzzy
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "چاپگری به نام «%s» از قبل موجود است. این چاپگر وارد نخواهد شد."
+
+#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+#, fuzzy
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "چاپگر «%s» پیکربندی معتبری ندارد و بنابراین نمی‌توان آن را وارد کرد."
+
+#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+#, fuzzy
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "گردانندهٔ چاپگر «%s1» (%s2) نصب نشده است، بنابراین نمی‌توان چاپگر را وارد کرد."
+
+#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+#, fuzzy
+msgid  "The printer \"%s\" could not be added."
+msgstr "اضافه کردن چاپگر «%s» ممکن نبود."
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+#, fuzzy
+msgid  "~Finish"
+msgstr "~پایان"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+#, fuzzy
+msgid  "~Next >>"
+msgstr "~بعدی >>"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+#, fuzzy
+msgid  "<< ~Back"
+msgstr ">> ~عقب"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+#, fuzzy
+msgid  "Add Printer"
+msgstr "اضافه کردن چاپگر"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+#, fuzzy
+msgid  "Choose a driver"
+msgstr "یک گرداننده انتخاب کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+#, fuzzy
+msgid  "Please select a s~uitable driver."
+msgstr "لطفاً یک گردانندهٔ ~مناسب انتخاب شود."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Import..."
+msgstr "~وارد کردن..."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~حذف"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+#, fuzzy
+msgid  "Delete driver"
+msgstr "حذف گرداننده"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+#, fuzzy
+msgid  "Choose a device type"
+msgstr "یک نوع دستگاه انتخاب کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+#, fuzzy
+msgid  "Do you want to"
+msgstr "آیا می‌خواهید"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+#, fuzzy
+msgid  "Add a ~printer"
+msgstr "یک ~چاپگر اضافه کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+#, fuzzy
+msgid  "Connect a fa~x device"
+msgstr "یک دستگاه ~دورنگار وصل کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+#, fuzzy
+msgid  "Connect a P~DF converter"
+msgstr "یک ~مبدل PDF وصل کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+#, fuzzy
+msgid  "~Import printers from a StarOffice installation"
+msgstr "~وارد کردن چاپگر از استارآفیس نصب شده"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+#, fuzzy
+msgid  "Choose a name"
+msgstr "یک نام انتخاب کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+#, fuzzy
+msgid  "Please enter a name for the printer."
+msgstr "لطفاً یک نام برای چاپگر انتخاب کنید."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+#, fuzzy
+msgid  "Please enter a name for the fax connection."
+msgstr "لطفاً برای اتصال دورنگار یک نام وارد کنید."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+#, fuzzy
+msgid  "Please enter a name for the PDF connection."
+msgstr "لطفاً برای اتصال PDF یک نام وارد کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+#, fuzzy
+msgid  "Fax printer"
+msgstr "چاپگر دورنگار"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+#, fuzzy
+msgid  "PDF converter"
+msgstr "مبدل PDF"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+#, fuzzy
+msgid  "~Use as default printer"
+msgstr "ا~ستفاده به عنوان چاپگر پیش‌فرض"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+#, fuzzy
+msgid  "Remo~ve fax number from output"
+msgstr "~حذف شمارهٔ دورنگار از خروجی"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+#, fuzzy
+msgid  "Choose a command line"
+msgstr "یک سطر فرمان انتخاب کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+#, fuzzy
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr "لطفاً یک فرمان مناسب برای این دستگاه وارد کنید."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+#, fuzzy
+msgid  "PDF ~target directory"
+msgstr "شاخهٔ ~هدف PDF"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "~راهنما"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+#, fuzzy
+msgid  "Import printers from old versions"
+msgstr "وارد کردن چاپگر از نسخه‌های قدیمی"
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+#, fuzzy
+msgid  "~These printers can be imported. Please select the ones you want to import."
+msgstr "~این چاپگرها را می‌توان وارد سیستم کرد. لطفاً آنهایی که می‌خواهید وارد شود را انتخاب کنید."
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+#, fuzzy
+msgid  "~Select All"
+msgstr "~انتخاب همه"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+#, fuzzy
+msgid  "Choose a driver"
+msgstr "یک گرداننده انتخاب کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+#, fuzzy
+msgid  "Use the following driver for this fax connection"
+msgstr "برای این اتصال دورنگار از گردانندهٔ زیر استفاده شود"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+#, fuzzy
+msgid  "T~he default driver"
+msgstr "~گرداننده‌ی پیش‌فرض"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+#, fuzzy
+msgid  "A speci~fic driver, to adapt the format to another printer"
+msgstr "یک گردانندهٔ مشخ~ص، برای پذیرفتن قالب یک چاپگر دیگر"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+#, fuzzy
+msgid  "Choose a driver"
+msgstr "یک گرداننده انتخاب کنید"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+#, fuzzy
+msgid  "Use the following driver for this PDF converter"
+msgstr "برای این اتصال دورنگار از گردانندهٔ زیر استفاده شود"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+#, fuzzy
+msgid  "T~he default driver"
+msgstr "~گرداننده‌ی پیش‌فرض"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+msgid  "The Adobe D~istiller(tm) driver"
+msgstr ""
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+#, fuzzy
+msgid  "A spec~ific driver, to adapt the format to another printer"
+msgstr "یک گردانندهٔ مشخ~ص، برای پذیرفتن قالب یک چاپگر دیگر"
+
+#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+#, fuzzy
+msgid  "Italic"
+msgstr "ایتالیک"
+
+#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+#, fuzzy
+msgid  "Oblique"
+msgstr "خوابیده"
+
+#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+#, fuzzy
+msgid  "Thin"
+msgstr "نازک"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+#, fuzzy
+msgid  "Ultralight"
+msgstr "خیلی سبک"
+
+#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+#, fuzzy
+msgid  "Semilight"
+msgstr "نیمه سبک"
+
+#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+#, fuzzy
+msgid  "Light"
+msgstr "سبک"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+#, fuzzy
+msgid  "Semibold"
+msgstr "نیمه سیاه"
+
+#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+#, fuzzy
+msgid  "Bold"
+msgstr "سیاه"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+#, fuzzy
+msgid  "Ultrabold"
+msgstr "خیلی سیاه"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+msgid  "Ultracondensed"
+msgstr ""
+
+#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+msgid  "Extracondensed"
+msgstr ""
+
+#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+msgid  "Condensed"
+msgstr ""
+
+#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+msgid  "Semicondensed"
+msgstr ""
+
+#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+msgid  "Semiexpanded"
+msgstr ""
+
+#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+msgid  "Expanded"
+msgstr ""
+
+#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+msgid  "Extraexpanded"
+msgstr ""
+
+#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+msgid  "Ultraexpanded"
+msgstr ""
+
+#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+#, fuzzy
+msgid  "Regular"
+msgstr "معمولی"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+#, fuzzy
+msgid  "Command"
+msgstr "فرمان"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+#, fuzzy
+msgid  "Paper"
+msgstr "کاغذ"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+#, fuzzy
+msgid  "Device"
+msgstr "دستگاه"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+#, fuzzy
+msgid  "Font Replacement"
+msgstr "جایگزینی قلم"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+#, fuzzy
+msgid  "Other Settings"
+msgstr "تنظیمات دیگر"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+#, fuzzy
+msgid  "from driver"
+msgstr "از گردانندهٔ"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+#, fuzzy
+msgid  "<ignore>"
+msgstr "<نادیده گرفتن>"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+#, fuzzy
+msgid  "Properties of %s"
+msgstr "ویژگی‌های %s"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Paper size"
+msgstr "اندازهٔ ~کاغذ"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Orientation"
+msgstr "~جهت"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Duplex"
+msgstr "~دوتایی"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+#, fuzzy
+msgid  "Paper tray"
+msgstr "سینی کاغذ"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+#, fuzzy
+msgid  "Color"
+msgstr "رنگ"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+#, fuzzy
+msgid  "Grayscale"
+msgstr "سایه خاکستری"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Option"
+msgstr "~گزینه"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+#, fuzzy
+msgid  "Current ~value"
+msgstr "م~قدار فعلی"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+msgid  "Printer ~Language type"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+msgid  "PostScript (Level from driver)"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+msgid  "PostScript Level 1"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+msgid  "PostScript Level 2"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+msgid  "PostScript Level 3"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+msgid  "PDF"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Color"
+msgstr "~رنگ"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+#, fuzzy
+msgid  "Color ~depth"
+msgstr "~عمق رنگ"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+#, fuzzy
+msgid  "~Enable font replacement"
+msgstr "~به کار انداختن جایگزینی قلم"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+#, fuzzy
+msgid  "Replaced ~fonts"
+msgstr "~قلم‌های جایگزین شده"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+#, fuzzy
+msgid  "~Add"
+msgstr "ا~ضافه شود"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+#, fuzzy
+msgid  "~Remove"
+msgstr "~حذف شود"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+#, fuzzy
+msgid  "Repla~ce font"
+msgstr "قلم ~جایگزینی"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+#, fuzzy
+msgid  "by ~printer font"
+msgstr "از روی قلم ~چاپگر"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+msgid  "Command for quick printing without dialog (optional)"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+#, fuzzy
+msgid  "Select command"
+msgstr "انتخاب فرمان"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+#, fuzzy
+msgid  "Printer"
+msgstr "چاپگر"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+#, fuzzy
+msgid  "Fax"
+msgstr "دورنگار"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+#, fuzzy
+msgid  "PDF converter"
+msgstr "مبدل PDF"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+#, fuzzy
+msgid  "~Configure as"
+msgstr "~پیکربندی به عنوان"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+#, fuzzy
+msgid  "~Fax number will be removed from output"
+msgstr "شمارهٔ ~دورنگار از خروجی حذف خواهد شد"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+#, fuzzy
+msgid  "PDF target directory :"
+msgstr "شاخهٔ هدف PDF:"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+#, fuzzy
+msgid  "Command: "
+msgstr "فرمان:"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+#, fuzzy
+msgid  "Printer"
+msgstr "چاپگر"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "~راهنما"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Remove"
+msgstr "~حذف شود"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Left margin"
+msgstr "حاشیهٔ ~چپ"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Top margin"
+msgstr "حاشیهٔ ~بالا"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Right margin"
+msgstr "حاشیهٔ ~راست"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Bottom margin"
+msgstr "حاشیهٔ ~پایین"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Comment"
+msgstr "~توضیح"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+#, fuzzy
+msgid  "~Default"
+msgstr "~پیش‌فرض"
+
+#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+#, fuzzy
+msgid  "Please enter the fax number."
+msgstr "لطفاً شمارهٔ دورنگار را وارد کنید."
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Authentication request"
+msgstr "درخواست تأیید هویت"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+#, fuzzy
+msgid  "Please enter your authentication data for server %s"
+msgstr "لطفاً داده‌های تأیید هویت خود برای کارگزار %s را وارد کنید"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+#, fuzzy
+msgid  "~User"
+msgstr "~کاربر"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Password"
+msgstr "~گذرواژه"

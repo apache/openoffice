@@ -1,0 +1,272 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.String.Text
+msgid  "Please enter a binding expression."
+msgstr "Prosím zadajte výraz pre väzbu."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.String.Text
+msgid  "This is an invalid binding expression."
+msgstr "Toto je neplatný výraz pre väzbu."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.String.Text
+msgid  "Value is invalid."
+msgstr "Hodnota je neplatná."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_REQUIRED.String.Text
+msgid  "A value is required."
+msgstr "Hodnota je požadovaná"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.String.Text
+msgid  "The constraint '$1' not validated."
+msgstr "Vymedzenie '$1' nie je overené."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.String.Text
+msgid  "The value is not of the type '$2'."
+msgstr "Hodnota nie je typu '$2'."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.String.Text
+msgid  "The value must be smaller than or equal to $2."
+msgstr "Hodnota musí byť menšia alebo rovná $2."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.String.Text
+msgid  "The value must be smaller than $2."
+msgstr "Hodnota musí byť menšia ako $2."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.String.Text
+msgid  "The value must be greater than or equal to $2."
+msgstr "Hodnota musí byť väčšia alebo rovná $2."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.String.Text
+msgid  "The value must be greater than $2."
+msgstr "Hodnota musí byť väčšia ako $2."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.String.Text
+msgid  "The value does not match the pattern '$2'."
+msgstr "Hodnota nezodpovedá vzoru '$2'."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.String.Text
+msgid  "$2 digits allowed at most."
+msgstr "Dovolené sú najviac $2 číslice."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.String.Text
+msgid  "$2 fraction digits allowed at most."
+msgstr "Dovolené sú(je) najviac $2 zlomkové(á) číslice(ic)."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.String.Text
+msgid  "The string must be $2 characters long."
+msgstr "Reťazec musí obsahovať $2 znakov(ky)."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.String.Text
+msgid  "The string must be at least $2 characters long."
+msgstr "Reťazec musí obsahovať minimálne $2 znakov(ky)."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.String.Text
+msgid  "The string can only be $2 characters long at most."
+msgstr "Reťazec môže obsahovať maximálne $2 znakov(ky)."
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_STRING.String.Text
+msgid  "String"
+msgstr "Reťazec"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_URL.String.Text
+msgid  "Hyperlink"
+msgstr "Hypertextový odkaz"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.String.Text
+msgid  "True/False (Boolean)"
+msgstr "Pravda/Nepravda (Boolean)"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DECIMAL.String.Text
+msgid  "Decimal"
+msgstr "Desatinné"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_FLOAT.String.Text
+msgid  "Floating point"
+msgstr "Plávajúca desatinná čiarka (Floating point)"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DOUBLE.String.Text
+msgid  "Double"
+msgstr "Dvojitá presnosť (Double)"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATE.String.Text
+msgid  "Date"
+msgstr "Dátum"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_TIME.String.Text
+msgid  "Time"
+msgstr "Čas"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATETIME.String.Text
+msgid  "Date and Time"
+msgstr "Dátum a čas"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.String.Text
+msgid  "Month and year"
+msgstr "Mesiac a rok"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEAR.String.Text
+msgid  "Year"
+msgstr "Rok"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.String.Text
+msgid  "Month and day"
+msgstr "Mesiac a deň"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTH.String.Text
+msgid  "Month"
+msgstr "Mesiac"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DAY.String.Text
+msgid  "Day"
+msgstr "Deň"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.String.Text
+msgid  "Error during evaluation"
+msgstr "Chyba počas vyhodnocovania"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
+msgid  "The string '$1' does not match the required regular expression '$2'."
+msgstr "Reťazec '$1' nezodpovedá regulárnemu výrazu '$2'."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "Väzba"
+
+#: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
+msgid  "The contents of a combo box or list field could not be determined."
+msgstr "Nebolo možné určiť obsah rozbaľovacieho menu alebo textového poľa."
+
+#: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "Vložiť obrázok"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.String.Text
+msgid  "substituted"
+msgstr "nahradené"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
+msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr "Objavila sa chyba pri načítaní tohto ovládacieho prvku, ktorý bol preto nahradený len zástupcom."
+
+#: source/resource/strings.src#RID_STR_READERROR.String.Text
+msgid  "Error reading data from database"
+msgstr "Chyba pri čítaní­ dát z databázy"
+
+#: source/resource/strings.src#RID_STR_CONNECTERROR.String.Text
+msgid  "Connection failed"
+msgstr "Spojenie prerušené"
+
+#: source/resource/strings.src#RID_ERR_LOADING_FORM.String.Text
+msgid  "The data content could not be loaded."
+msgstr "Obsah dát nemohol byť načítaný."
+
+#: source/resource/strings.src#RID_ERR_REFRESHING_FORM.String.Text
+msgid  "The data content could not be updated"
+msgstr "Obsah dát nemohol byť aktualizovaný"
+
+#: source/resource/strings.src#RID_STR_ERR_INSERTRECORD.String.Text
+msgid  "Error inserting the new record"
+msgstr "Chyba pri vkladaní­ nového záznamu"
+
+#: source/resource/strings.src#RID_STR_ERR_UPDATERECORD.String.Text
+msgid  "Error updating the current record"
+msgstr "Chyba pri aktualizácii aktuálneho záznamu"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORD.String.Text
+msgid  "Error deleting the current record"
+msgstr "Chyba pri odstraňovaní­ aktuálneho záznamu"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORDS.String.Text
+msgid  "Error deleting the specified records"
+msgstr "Chyba pri odstraňovaní­ uvedených záznamov"
+
+#: source/resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.String.Text
+msgid  "The object cannot be NULL."
+msgstr "Objekt nemôže byť NULL."
+
+#: source/resource/strings.src#RID_STR_OPEN_GRAPHICS.String.Text
+msgid  "Insert graphics from..."
+msgstr "Vložiť obrázok z..."
+
+#: source/resource/strings.src#RID_STR_CLEAR_GRAPHICS.String.Text
+msgid  "Remove graphics"
+msgstr "Odstrániť obrázok"
+
+#: source/resource/strings.src#RID_STR_INVALIDSTREAM.String.Text
+msgid  "The given stream is invalid."
+msgstr "Zadaný tok je neplatný."
+
+#: source/resource/strings.src#RID_STR_SYNTAXERROR.String.Text
+msgid  "Syntax error in query expression"
+msgstr "Chyba syntaxu v dotaze"
+
+#: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
+msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr "Typy hodnôt, podporované touto väzbou, nemôžu byť použité pre výmenu dát s týmto ovládacím prvkom."
+
+#: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
+msgid  "Record"
+msgstr "Záznam"
+
+#: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
+msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr "Kontrolný prvok je spojený s externou väzbou na hodnotu, ktorá je zároveň aj overovateľom. Pred nastavením nového overovateľa musíte najprv odvolať väzbu."
+
+#: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
+msgid  "of"
+msgstr "z"
+
+#: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr "Obsah aktuálneho formulára bol zmenený.\nChcete uložiť vaše zmeny?"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "Chybné nastavenie kritérií­ pre zoraďovanie"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "Chybné nastavenie kritérií­ filtra"
+
+#: source/resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.String.Text
+msgid  "To execute this function, parameters are needed."
+msgstr "Pre vykonanie tejto funkcie sú potrebné parametre."
+
+#: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
+msgid  "This function cannot be executed, but is only for status queries."
+msgstr "Táto funkcia nemôže byť vykonaná, je možné ju použiť pre dotazy stavu."
+
+#: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
+msgid  "Unknown function."
+msgstr "Neznáma funkcia."
