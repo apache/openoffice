@@ -85,7 +85,11 @@ public:
 	 If there is no suiteable mapping available NULL will
 	 be returned.
   */
+<<<<<<< .working
   const NSString* openOfficeToSystemFlavor(const com::sun::star::datatransfer::DataFlavor& oooDataFlavor, bool& rbInternal) const;
+=======
+  NSString* openOfficeToSystemFlavor(const com::sun::star::datatransfer::DataFlavor& oooDataFlavor, bool& rbInternal) const;
+>>>>>>> .merge-right.r1505621
 
   /* Select the best available image data type
 	 If there is no suiteable mapping available NULL will
