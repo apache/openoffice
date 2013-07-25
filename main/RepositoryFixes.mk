@@ -50,7 +50,11 @@ gb_Library_FILENAMES := $(patsubst salhelper:libsalhelper%,salhelper:libuno_salh
 gb_Library_FILENAMES := $(patsubst ucbhelper:libucbhelper%,ucbhelper:libucbhelper4%,$(gb_Library_FILENAMES))
 
 ifeq ($(USE_SYSTEM_STL),YES)
+ifneq ($(MACOSX_DEPLOYMENT_TARGET),10.4) # default to use libc++
+gb_Library_FILENAMES := $(patsubst stl:%,stl:libc++.dylib,$(gb_Library_FILENAMES))
+else # use libstdc++ instead on ancient MacOSX targets
 gb_Library_FILENAMES := $(patsubst stl:%,stl:libstdc++.dylib,$(gb_Library_FILENAMES))
+endif
 gb_Library_TARGETS := $(filter-out stl,$(gb_Library_TARGETS))
 endif
 
