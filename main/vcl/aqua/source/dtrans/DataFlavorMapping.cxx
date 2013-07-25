@@ -549,11 +549,7 @@ DataFlavor DataFlavorMapper::systemToOpenOfficeFlavor( const NSString* systemDat
 	return oOOFlavor;
 }
 
-<<<<<<< .working
 const NSString* DataFlavorMapper::openOfficeToSystemFlavor( const DataFlavor& oOOFlavor, bool& rbInternal) const
-=======
-NSString* DataFlavorMapper::openOfficeToSystemFlavor(const DataFlavor& oOOFlavor, bool& rbInternal) const
->>>>>>> .merge-right.r1505621
 {
     const NSString* sysFlavor = NULL;
     rbInternal = false;
@@ -725,11 +721,7 @@ NSArray* DataFlavorMapper::flavorSequenceToTypesArray(const com::sun::star::uno:
       }
       else
       {
-<<<<<<< .working
           const NSString* str = openOfficeToSystemFlavor(flavors[i], bNeedDummyInternalFlavor);
-=======
-          NSString* str = openOfficeToSystemFlavor(flavors[i], bNeedDummyInternalFlavor);
->>>>>>> .merge-right.r1505621
           
           if (str != NULL)
           {

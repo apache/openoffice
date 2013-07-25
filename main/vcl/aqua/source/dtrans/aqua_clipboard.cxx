@@ -347,12 +347,8 @@ void SAL_CALL AquaClipboard::flushClipboard()
 
 		for (sal_uInt32 i = 0; i < nFlavors; i++)
 		{
-<<<<<<< .working
 			const NSString* sysType = mpDataFlavorMapper->openOfficeToSystemFlavor(flavorList[i], bInternal);
-=======
-			NSString* sysType = mpDataFlavorMapper->openOfficeToSystemFlavor(flavorList[i], bInternal);
->>>>>>> .merge-right.r1505621
-			
+
 			if (sysType != NULL)
 			{
 				provideDataForType(mPasteboard, sysType);

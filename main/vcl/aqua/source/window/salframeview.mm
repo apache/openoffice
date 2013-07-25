@@ -170,13 +170,8 @@ try {
     const SEL setCollectionBehavior = @selector(setCollectionBehavior:);
     if( bAllowFullScreen && [pNSWindow respondsToSelector: setCollectionBehavior])
     {
-<<<<<<< .working
-        const int bMode = (bAllowFullScreen ? NSWindowCollectionBehaviorFullScreenPrimary : NSWindowCollectionBehaviorFullScreenAuxiliary);
-        [pNSWindow performSelector:setCollectionBehavior withObject:(id)bMode];
-=======
         const int bMode= (bAllowFullScreen ? NSWindowCollectionBehaviorFullScreenPrimary : NSWindowCollectionBehaviorFullScreenAuxiliary);
         [pNSWindow performSelector:setCollectionBehavior withObject:(id)bMode];
->>>>>>> .merge-right.r1505621
     }
 
     // disable OSX>=10.7 window restoration until we support it directly
