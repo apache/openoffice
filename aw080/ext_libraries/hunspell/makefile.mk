@@ -43,6 +43,7 @@ TARFILE_NAME=hunspell-1.3.2
 TARFILE_MD5=3121aaf3e13e5d88dfff13fb4a5f1ab8
 
 PATCH_FILES=					    \
+    hunspell-cxx11-literal.patch    \
     hunspell-solaris.patch		    \
     hunspell-bash.patch             \
     hunspell-1.3.2-overflow.patch
@@ -53,7 +54,7 @@ PATCH_FILES=					    \
 CONFIGURE_ACTION=$(AUGMENT_LIBRARY_PATH) configure
 CONFIGURE_FLAGS= --disable-shared --with-pic
 .IF "$(COMNAME)"=="sunpro5"
-CONFIGURE_FLAGS+= CFLAGS=-xc99=none
+CONFIGURE_FLAGS+= CFLAGS="-xc99=none" CXXFLAGS="-I$(SOLARVER)/$(INPATH)/inc/stl -library=no%Cstd" LDFLAGS="-L$(SOLARVER)/$(INPATH)/lib -lstlport_sunpro"
 .ENDIF                  # "$(COMNAME)"=="sunpro5"
 
 .IF "$(SYSBASE)"!=""

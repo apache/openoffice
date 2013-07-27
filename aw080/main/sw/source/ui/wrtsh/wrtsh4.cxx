@@ -218,24 +218,25 @@ sal_Bool SwWrtShell::_FwdSentence()
 
 sal_Bool SwWrtShell::_BwdSentence()
 {
-	Push();
-	ClearMark();
-	if(!SwCrsrShell::Left(1,CRSR_SKIP_CHARS))
-	{
-		Pop(sal_False);
-		return 0;
-	}
-	if(IsSttPara())
-	{
-		Pop();
-		return 1;
-	}
-	if( !GoPrevSentence()  && !IsSttPara() )
-			// nicht gefunden --> an den Absatz Anfang
-		SwCrsrShell::MovePara( fnParaCurr, fnParaStart );
-	ClearMark();
-	Combine();
-	return 1;
+    Push();
+    ClearMark();
+    if(!SwCrsrShell::Left(1,CRSR_SKIP_CHARS))
+    {
+        Pop(sal_False);
+        return sal_False;
+    }
+    if(IsSttPara())
+    {
+        Pop();
+        return sal_True;
+    }
+    if( !GoPrevSentence()  && !IsSttPara() )
+        // nicht gefunden --> an den Absatz Anfang
+            SwCrsrShell::MovePara( fnParaCurr, fnParaStart );
+    ClearMark();
+    Combine();
+
+    return sal_True;
 }
 
 

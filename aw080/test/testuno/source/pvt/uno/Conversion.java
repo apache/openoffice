@@ -77,7 +77,7 @@ public class Conversion {
 	
 	public static int nLevelInfo = Integer.parseInt(System.getProperty("conversion.limitationcheck", "0"));	// Level info: starts from 1, 0 means no need for limitation check
 
-	public static long nSleep = Long.parseLong(System.getProperty("conversion.sleep", "0"));	// Sleep before loadComponentFromURL and storeToURL
+	public static long nSleep = Long.parseLong(System.getProperty("conversion.sleep", "0"));	// Sleep before loadComponentFromURL and storeToURL, millisecond
 	
 	private static OpenOffice aoo = new OpenOffice();
 	
@@ -90,7 +90,7 @@ public class Conversion {
 	@BeforeClass
 	public static void beforeClass() throws Exception {
 		aoo.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
-		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu", "-nofirststartwizard", "-headless");
+		aoo.addArgs("-invisible", "-conversionmode", "-hidemenu", "-nofirststartwizard", "-headless", "-enableautomation");
 	    app = new UnoApp(aoo);
 	    Testspace.prepareDataFile("limit_cfg.ini", aoo.getHome().toString()+"/program");	// Move limitation check file to installation dir
 		result = new DataSheet(getFile("output/" + Conversion.class.getName()+ ".xml"));
@@ -159,7 +159,7 @@ public class Conversion {
 	}
 
 	
-	@Test(timeout=5 * 60000)
+	@Test(timeout=10 * 60000)
 	public void testConversion() throws Exception {
 		try {
 			if (nSleep > 0)
@@ -185,10 +185,16 @@ public class Conversion {
 			closeTime = System.currentTimeMillis() - start - nSleep;
 		} catch (com.sun.star.task.ErrorCodeIOException e){
 			int errCode = e.ErrCode;
-			if( 296 == errCode ) {
+			if( 296 == errCode ) {	// limitation check file
 				loadTime = -2;
 				saveTime = -2;
 				closeTime = -2;
+			}
+			
+			if( 3878 == errCode ) {	// file is corrupt
+				loadTime = -3;
+				saveTime = -3;
+				closeTime = -3;
 			}
 			
 			throw e;

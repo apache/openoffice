@@ -44,7 +44,7 @@ LIBSERFVERSION=$(SERF_MAJOR).$(SERF_MINOR).$(SERF_MICRO)
 TARFILE_NAME=$(PRJNAME)-$(LIBSERFVERSION)
 # This is the SHA1 checksum, not MD5 but tg_ext.mk does not now about this and,
 # thankfully, does not care.
-TARFILE_MD5=231af70b7567a753b49df4216743010c193884b7
+TARFILE_MD5=f65fbbd72926c8e7cf0dbd4ada03b0d226f461fd
 
 PATCH_FILES=
 
@@ -74,6 +74,12 @@ PATCH_FILES+=$(TARFILE_NAME).libs.patch
 .IF "$(OS)"=="LINUX"
 # Add -ldl as last library so that the linker has no trouble resolving dependencies.
 PATCH_FILES+=$(TARFILE_NAME).ldl.patch
+.ENDIF
+
+# Export ENABLE_SERF_LOGGING=YES to enable serf logging
+.IF "$(ENABLE_SERF_LOGGING)" == "YES"
+PATCH_FILES+=$(TARFILE_NAME).logging.patch
+CDEFS+=-DENABLE_SERF_VERBOSE -DSERF_VERBOSE
 .ENDIF
 
 CONFIGURE_DIR=

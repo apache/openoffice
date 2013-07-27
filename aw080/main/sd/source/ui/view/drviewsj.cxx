@@ -77,6 +77,8 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_NAME_GROUP ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_OBJECT_TITLE_DESCRIPTION ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_ATTR_FILL_STYLE ) ||
+			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_ATTR_FILL_TRANSPARENCE ) ||
+			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_ATTR_FILL_FLOATTRANSPARENCE ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CHANGEBEZIER ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_CHANGEPOLYGON ) ||
 			SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_LINEEND_POLYGON ) ||
@@ -175,10 +177,12 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
             {
                 if(!pSdrPathObj->isClosed())
                 {
-      				rSet.DisableItem( SID_ATTR_FILL_STYLE );
+                    rSet.DisableItem( SID_ATTR_FILL_STYLE );
+                    rSet.DisableItem( SID_ATTR_FILL_TRANSPARENCE );
+                    rSet.DisableItem( SID_ATTR_FILL_FLOATTRANSPARENCE );
                 }
             }
-			
+
             if( (!pSdrPathObj && !aInfoRec.mbCanConvToPath) || pSdrObjGroup ) // Solange es JOE fehlerhaft behandelt!
 			{ 
 				// JOE: Ein Gruppenobjekt kann eben u.U. in ein PathObj gewandelt werden
@@ -378,6 +382,8 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 			if( bLine && !bText && !bDrawObj &&!b3dObj)
 			{
 				rSet.DisableItem( SID_ATTR_FILL_STYLE );
+				rSet.DisableItem( SID_ATTR_FILL_TRANSPARENCE );
+				rSet.DisableItem( SID_ATTR_FILL_FLOATTRANSPARENCE );
 			}
 			if( !bEdgeObj )
 				rSet.DisableItem( SID_CONNECTION_DLG );
@@ -469,49 +475,53 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 	    else
 	    {
 			// kein Objekt selektiert
-		    rSet.DisableItem( SID_ENTER_GROUP );
-		    rSet.DisableItem( SID_CUT );
-		    rSet.DisableItem( SID_COPY );
-		    rSet.DisableItem( SID_DELETE );
-		    rSet.DisableItem( SID_ATTR_TRANSFORM );
+            rSet.DisableItem( SID_ENTER_GROUP );
+            rSet.DisableItem( SID_CUT );
+            rSet.DisableItem( SID_COPY );
+            rSet.DisableItem( SID_DELETE );
+            rSet.DisableItem( SID_ATTR_TRANSFORM );
 
-		    rSet.DisableItem( SID_OBJECT_ALIGN_LEFT );
-		    rSet.DisableItem( SID_OBJECT_ALIGN_CENTER );
-		    rSet.DisableItem( SID_OBJECT_ALIGN_RIGHT );
-		    rSet.DisableItem( SID_OBJECT_ALIGN_UP );
-		    rSet.DisableItem( SID_OBJECT_ALIGN_MIDDLE );
-		    rSet.DisableItem( SID_OBJECT_ALIGN_DOWN );
+            rSet.DisableItem( SID_OBJECT_ALIGN_LEFT );
+            rSet.DisableItem( SID_OBJECT_ALIGN_CENTER );
+            rSet.DisableItem( SID_OBJECT_ALIGN_RIGHT );
+            rSet.DisableItem( SID_OBJECT_ALIGN_UP );
+            rSet.DisableItem( SID_OBJECT_ALIGN_MIDDLE );
+            rSet.DisableItem( SID_OBJECT_ALIGN_DOWN );
 
-		    rSet.DisableItem( SID_FRAME_TO_TOP );
-		    rSet.DisableItem( SID_MOREFRONT );
-		    rSet.DisableItem( SID_MOREBACK );
-		    rSet.DisableItem( SID_FRAME_TO_BOTTOM );
-		    rSet.DisableItem( SID_BEFORE_OBJ );
-		    rSet.DisableItem( SID_BEHIND_OBJ );
-		    rSet.DisableItem( SID_CONVERT );
+            rSet.DisableItem( SID_FRAME_TO_TOP );
+            rSet.DisableItem( SID_MOREFRONT );
+            rSet.DisableItem( SID_MOREBACK );
+            rSet.DisableItem( SID_FRAME_TO_BOTTOM );
+            rSet.DisableItem( SID_BEFORE_OBJ );
+            rSet.DisableItem( SID_BEHIND_OBJ );
+            rSet.DisableItem( SID_CONVERT );
 
-		    rSet.DisableItem( SID_SIZE_OPTIMAL );
-		    rSet.DisableItem( SID_LINEEND_POLYGON );
-		    rSet.DisableItem( SID_COPYOBJECTS );
-		    rSet.DisableItem( SID_HORIZONTAL );
-		    rSet.DisableItem( SID_VERTICAL );
-		    rSet.DisableItem( SID_GROUP );
-		    rSet.DisableItem( SID_UNGROUP );
-		    rSet.DisableItem( SID_NAME_GROUP );
+            //		rSet.DisableItem( SID_BEZIER_EDIT );
+            rSet.DisableItem( SID_SIZE_OPTIMAL );
+            rSet.DisableItem( SID_LINEEND_POLYGON );
+            rSet.DisableItem( SID_COPYOBJECTS );
+            rSet.DisableItem( SID_HORIZONTAL );
+            rSet.DisableItem( SID_VERTICAL );
+            rSet.DisableItem( SID_FLIP_HORIZONTAL );
+            rSet.DisableItem( SID_FLIP_VERTICAL );
+            rSet.DisableItem( SID_GROUP );
+            rSet.DisableItem( SID_UNGROUP );
+            rSet.DisableItem( SID_NAME_GROUP );
 
-		    rSet.DisableItem( SID_OBJECT_TITLE_DESCRIPTION );
+            // #i68101#
+            rSet.DisableItem( SID_OBJECT_TITLE_DESCRIPTION );
 
-		    rSet.DisableItem( SID_DISMANTLE );
-		    rSet.DisableItem( SID_BREAK );
-		    rSet.DisableItem( SID_COMBINE );
+            rSet.DisableItem( SID_DISMANTLE );
+            rSet.DisableItem( SID_BREAK );
+            rSet.DisableItem( SID_COMBINE );
             rSet.DisableItem(SID_DISTRIBUTE_DLG);
             rSet.DisableItem(SID_POLY_MERGE);
             rSet.DisableItem(SID_POLY_SUBSTRACT);
             rSet.DisableItem(SID_POLY_INTERSECT);
-		    rSet.DisableItem( SID_CONNECT );
-		    rSet.DisableItem( SID_ANIMATION_EFFECTS );
-		    rSet.DisableItem( SID_MODIFY_FIELD );
-		    rSet.DisableItem (SID_OBJECT_SHEAR);
+            rSet.DisableItem( SID_CONNECT );
+            rSet.DisableItem( SID_ANIMATION_EFFECTS );
+            rSet.DisableItem( SID_MODIFY_FIELD );
+            rSet.DisableItem (SID_OBJECT_SHEAR);
 	    }
 	}
 }

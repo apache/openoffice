@@ -28,6 +28,8 @@
 
 class SdDrawDocument;
 class SfxRequest;
+class SfxItemSet;
+class SfxPoolItem;
 
 namespace sd {
 
@@ -45,17 +47,22 @@ class FuOutlineBullet
     : public FuPoor
 {
 public:
-	static FunctionReference Create( ViewShell* pViewSh, ::sd::Window* pWin, ::sd::View* pView, SdDrawDocument* pDoc, SfxRequest& rReq );
-	virtual void DoExecute( SfxRequest& rReq );
+    static FunctionReference Create( ViewShell* pViewSh, ::sd::Window* pWin, ::sd::View* pView, SdDrawDocument* pDoc, SfxRequest& rReq );
+    virtual void DoExecute( SfxRequest& rReq );
 
 private:
-	FuOutlineBullet (
+    FuOutlineBullet (
         ViewShell* pViewShell, 
         ::sd::Window* pWin, 
         ::sd::View* pView,
         SdDrawDocument* pDoc, 
         SfxRequest& rReq);
+
+    void SetCurrentBulletsNumbering(SfxRequest& rReq);
+
+    const SfxPoolItem* GetNumBulletItem(SfxItemSet& aNewAttr, sal_uInt32& nNumItemId);
 };
+
 
 } // end of namespace sd
 

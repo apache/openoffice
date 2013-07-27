@@ -83,21 +83,26 @@ private:
 class TableBorderHdl : public SdrHdl
 {
 public:
-	TableBorderHdl( 
-		SdrHdlList& rHdlList,
-		const SdrObject& rSdrHdlObject, 
-		const basegfx::B2DRange& rRange );
+    TableBorderHdl( 
+        SdrHdlList& rHdlList,
+        const SdrObject& rSdrHdlObject, 
+        const basegfx::B2DRange& rRange,
+        bool bAnimate);
 
-	virtual Pointer GetPointer() const;
+    virtual Pointer GetPointer() const;
+    bool getAnimate() const { return mbAnimate; }
 
 protected:
-	// create marker for this kind
-	virtual void CreateB2dIAObject(::sdr::overlay::OverlayManager& rOverlayManager);
+    // create marker for this kind
+    virtual void CreateB2dIAObject(::sdr::overlay::OverlayManager& rOverlayManager);
 
-	virtual ~TableBorderHdl();
+    virtual ~TableBorderHdl();
 
 private:
-	basegfx::B2DRange maRange;
+    basegfx::B2DRange maRange;
+
+    /// bitfield
+    bool            mbAnimate : 1;
 };
 
 } // end of namespace table

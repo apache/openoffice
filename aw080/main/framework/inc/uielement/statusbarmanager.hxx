@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,26 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef __FRAMEWORK_UIELEMENT_STATUSBARMANAGER_HXX_
 #define __FRAMEWORK_UIELEMENT_STATUSBARMANAGER_HXX_
-
-//_________________________________________________________________________________________________________________
-//	my own includes
-//_________________________________________________________________________________________________________________
 
 #include <threadhelp/threadhelpbase.hxx>
 #include <macros/generic.hxx>
@@ -34,25 +28,19 @@
 #include <macros/xtypeprovider.hxx>
 #include <stdtypes.h>
 
-//_________________________________________________________________________________________________________________
-//	interface includes
-//_________________________________________________________________________________________________________________
 #include <com/sun/star/frame/XFrame.hpp>
-#include <com/sun/star/frame/XStatusListener.hpp>
 #include <com/sun/star/frame/XStatusbarController.hpp>
-#include <com/sun/star/frame/XUIControllerRegistration.hpp>
+#include <com/sun/star/frame/XUIControllerFactory.hpp>
 #include <com/sun/star/ui/XUIConfiguration.hpp>
 #include <com/sun/star/frame/XModuleManager.hpp>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <com/sun/star/container/XNameAccess.hpp>
 
-//_________________________________________________________________________________________________________________
-//	other includes
-//_________________________________________________________________________________________________________________
 #include <rtl/ustring.hxx>
 #include <cppuhelper/weak.hxx>
 #include <cppuhelper/interfacecontainer.hxx>
 #include <vcl/status.hxx>
+#include <map>
 
 namespace framework
 {
@@ -117,7 +105,7 @@ class StatusBarManager : public ::com::sun::star::frame::XFrameActionListener   
         void MouseButton( const MouseEvent& rMEvt ,sal_Bool ( SAL_CALL ::com::sun::star::frame::XStatusbarController::*_pMethod )(const ::com::sun::star::awt::MouseEvent&));
 
     protected:
-        typedef std::vector< ::com::sun::star::uno::Reference< com::sun::star::frame::XStatusListener > > StatusBarControllerVector;
+        typedef std::map< sal_uInt16, ::com::sun::star::uno::Reference< com::sun::star::frame::XStatusbarController > > StatusBarControllerMap;
 
         sal_Bool                                                                                        m_bDisposed : 1,
                                                                                                         m_bFrameActionRegistered : 1,
@@ -128,10 +116,10 @@ class StatusBarManager : public ::com::sun::star::frame::XFrameActionListener   
         rtl::OUString                                                                                   m_aResourceName;
         com::sun::star::uno::Reference< com::sun::star::frame::XFrame >                                 m_xFrame;
         com::sun::star::uno::Reference< com::sun::star::container::XNameAccess >                        m_xUICommandLabels;
-        StatusBarControllerVector                                                                       m_aControllerVector;
+        StatusBarControllerMap                                                                          m_aControllerMap;
         ::cppu::OMultiTypeInterfaceContainerHelper                                                      m_aListenerContainer;   /// container for ALL Listener
         ::com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >                  m_xServiceManager;
-        ::com::sun::star::uno::Reference< ::com::sun::star::frame::XUIControllerRegistration >  m_xStatusbarControllerRegistration;
+        ::com::sun::star::uno::Reference< ::com::sun::star::frame::XUIControllerFactory >  m_xStatusbarControllerFactory;
 };
     
 }

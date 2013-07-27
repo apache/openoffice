@@ -1,0 +1,14 @@
+--- misc/CoinMP-1.6.0/CoinUtils/src/CoinSignal.hpp	2011-01-04 00:31:00.000000000 +0100
++++ misc/build/CoinMP-1.6.0/CoinUtils/src/CoinSignal.hpp	2013-03-01 18:22:08.000000000 +0100
+@@ -95,7 +95,10 @@
+ 
+ //-----------------------------------------------------------------------------
+ 
+-#if defined(__MACH__) && defined(__GNUC__)
++#if defined(__clang__)
++   typedef void(*CoinSighandler_t)(int);
++#  define CoinSighandler_t_defined
++#elif defined(__MACH__) && defined(__GNUC__)
+    typedef typeof(SIG_DFL) CoinSighandler_t;
+ #  define CoinSighandler_t_defined
+ #endif

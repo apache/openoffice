@@ -1176,7 +1176,15 @@ public:
     /*
     */
     virtual void setProperties( const com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& );
-    
+
+
+    void EnableThemeSupport (void);
+    void DisableThemeSupport (void);
+
+    virtual ImplBorderWindow* CreateBorderWindow (
+        Window* pParent,
+        const WinBits nStyle,
+        const sal_uInt16 nTypeStyle);
 };
 
 

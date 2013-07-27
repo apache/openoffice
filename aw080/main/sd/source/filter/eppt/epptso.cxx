@@ -5825,8 +5825,8 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 			std::vector< std::pair< sal_Int32, sal_Int32 > > aColumns;
 			std::vector< std::pair< sal_Int32, sal_Int32 > > aRows;
 
-			sal_uInt32 nPosition = basegfx::fround(maObjectRange.getMinX());
-			
+            sal_Int32 nPosition = basegfx::fround(maObjectRange.getMinX());
+
             for ( sal_Int32 x = 0; x < nColumnCount; x++ )
 			{
 				uno::Reference< beans::XPropertySet > xPropSet( xColumns->getByIndex( x ), uno::UNO_QUERY_THROW );

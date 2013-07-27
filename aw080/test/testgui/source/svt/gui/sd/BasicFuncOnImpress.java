@@ -72,7 +72,7 @@ public class BasicFuncOnImpress {
 	 */
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-		xmlResult = new DataSheet(getFile("output/svt.xml"));
+		xmlResult = new DataSheet(getFile("output/svt_impress.xml"));
 		xmlResult.addRow("Data", "Method", "No", "Consumed Time(MS)", "Memory(VSZ)", "Memory(RSS)", "Handles(Windows Only)");
 	}
 

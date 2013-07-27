@@ -19,7 +19,7 @@
 # * 
 # *************************************************************/
 
-$(eval $(call gb_Package_Package,serf_inc,$(EXT_LIBRARIES)/serf/$(INPATH)/misc/build/serf-1.1.0))
+$(eval $(call gb_Package_Package,serf_inc,$(EXT_LIBRARIES)/serf/$(INPATH)/misc/build/serf-1.2.1))
 $(eval $(call gb_Package_add_files, serf_inc, inc/serf,        \
        serf.h                                                  \
        serf_bucket_types.h                                     \

@@ -19,9 +19,7 @@
  * 
  *************************************************************/
 
-/**
- * 
- */
+
 package fvt.gui.sc.subtotals;
 
 import static org.junit.Assert.*;
@@ -38,28 +36,24 @@ import org.openoffice.test.common.Logger;
 
 import testlib.gui.SCTool;
 
-/**
- * 
- *
- */
+
 public class SubtotalsFunctions {
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
-
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
 		String file = prepareData("sc/SubtotalsSampleFile.ods");
-		app.dispatch(".uno:Open");
-		submitOpenDlg(file);
-		calc.waitForExistence(10, 2);
+		open(file);
 		SCTool.selectRange("A1:E7");
 		app.dispatch(".uno:DataSubTotals");
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		app.stop();
 
 	}
 
@@ -78,7 +72,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "2", "A", "Chcomic" }, { "CS", "30", "5", "A", "Ally" },
+		assertArrayEquals("Wrong Average function in Subtotal ", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "2", "A", "Chcomic" }, { "CS", "30", "5", "A", "Ally" },
 				{ "MS", "10", "1", "A", "Joker" }, { "", "20", "", "A Average", "" }, { "BS", "20", "4", "B", "Elle" }, { "MS", "10", "3", "B", "Kevin" },
 				{ "", "15", "", "B Average", "" }, { "BS", "20", "6", "C", "Sweet" }, { "", "20", "", "C Average", "" }, { "", "18.33333333", "", "Grand Total", "" } },
 				SCTool.getCellTexts("A1:E11"));
@@ -97,7 +91,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
+		assertArrayEquals("Wrong Count Numbers only function in Subtotal", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
 				{ "BS", "20", "2", "A", "Chcomic" }, { "BS Count", "", "3", "", "" }, { "CS", "30", "5", "A", "Ally" }, { "CS Count", "", "1", "", "" },
 				{ "MS", "10", "1", "A", "Joker" }, { "MS", "10", "3", "B", "Kevin" }, { "MS Count", "", "2", "", "" }, { "Grand Total", "", "6", "", "" } },
 				SCTool.getCellTexts("A1:E11"));
@@ -115,7 +109,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
+		assertArrayEquals("Wrong Max Numbers function in Subtotal", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
 				{ "BS", "20", "2", "A", "Chcomic" }, { "BS Max", "", "6", "", "" }, { "CS", "30", "5", "A", "Ally" }, { "CS Max", "", "5", "", "" },
 				{ "MS", "10", "1", "A", "Joker" }, { "MS", "10", "3", "B", "Kevin" }, { "MS Max", "", "3", "", "" }, { "Grand Total", "", "6", "", "" } },
 				SCTool.getCellTexts("A1:E11"));
@@ -133,7 +127,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
+		assertArrayEquals("Wrong Min Numbers function in Subtotal", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
 				{ "BS", "20", "2", "A", "Chcomic" }, { "BS Min", "", "2", "", "" }, { "CS", "30", "5", "A", "Ally" }, { "CS Min", "", "5", "", "" },
 				{ "MS", "10", "1", "A", "Joker" }, { "MS", "10", "3", "B", "Kevin" }, { "MS Min", "", "1", "", "" }, { "Grand Total", "", "1", "", "" } },
 				SCTool.getCellTexts("A1:E11"));
@@ -151,7 +145,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
+		assertArrayEquals("Wrong Product function in Subtotal", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
 				{ "BS", "20", "2", "A", "Chcomic" }, { "BS Product", "", "48", "", "" }, { "CS", "30", "5", "A", "Ally" }, { "CS Product", "", "5", "", "" },
 				{ "MS", "10", "1", "A", "Joker" }, { "MS", "10", "3", "B", "Kevin" }, { "MS Product", "", "3", "", "" }, { "Grand Total", "", "720", "", "" } },
 				SCTool.getCellTexts("A1:E11"));
@@ -170,7 +164,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
+		assertArrayEquals("Wrong StdevP function in Subtotal", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
 				{ "BS", "20", "2", "A", "Chcomic" }, { "BS StDev", "", "1.63299316", "", "" }, { "CS", "30", "5", "A", "Ally" }, { "CS StDev", "", "0", "", "" },
 				{ "MS", "10", "1", "A", "Joker" }, { "MS", "10", "3", "B", "Kevin" }, { "MS StDev", "", "1", "", "" }, { "Grand Total", "", "1.70782513", "", "" } },
 				SCTool.getCellTexts("A1:E11"));
@@ -188,7 +182,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
+		assertArrayEquals("Wrong Sum Function in Subtotal", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
 				{ "BS", "20", "2", "A", "Chcomic" }, { "BS Sum", "", "12", "", "" }, { "CS", "30", "5", "A", "Ally" }, { "CS Sum", "", "5", "", "" },
 				{ "MS", "10", "1", "A", "Joker" }, { "MS", "10", "3", "B", "Kevin" }, { "MS Sum", "", "4", "", "" }, { "Grand Total", "", "21", "", "" } },
 				SCTool.getCellTexts("A1:E11"));
@@ -206,7 +200,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
+		assertArrayEquals("Wrong Var Sample function in Subtotal", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "BS", "20", "6", "C", "Sweet" },
 				{ "BS", "20", "2", "A", "Chcomic" }, { "BS Var", "", "4", "", "" }, { "CS", "30", "5", "A", "Ally" }, { "CS Var", "", "#DIV/0!", "", "" },
 				{ "MS", "10", "1", "A", "Joker" }, { "MS", "10", "3", "B", "Kevin" }, { "MS Var", "", "2", "", "" }, { "Grand Total", "", "3.5", "", "" } },
 				SCTool.getCellTexts("A1:E11"));
@@ -226,7 +220,7 @@ public class SubtotalsFunctions {
 		scSubTotalsOptionsTabPage.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "", "20", "", "B Sum", "" },
+		assertArrayEquals("Wrong Not Sort option in Subtotal", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" }, { "", "20", "", "B Sum", "" },
 				{ "BS", "20", "6", "C", "Sweet" }, { "", "20", "", "C Sum", "" }, { "BS", "20", "2", "A", "Chcomic" }, { "CS", "30", "5", "A", "Ally" },
 				{ "MS", "10", "1", "A", "Joker" }, { "", "60", "", "A Sum", "" }, { "MS", "10", "3", "B", "Kevin" }, { "", "10", "", "B Sum", "" },
 				{ "", "110", "", "Grand Total", "" } }, SCTool.getCellTexts("A1:E12"));
@@ -240,14 +234,14 @@ public class SubtotalsFunctions {
 		assertArrayEquals("Group List: ", new String[] { "- none -", "Level", "Code", "No.", "Team", "Name" }, scSubTotalsGroupByListBox.getItemsText());
 
 		scSubTotalsOptionsTabPage.select();
-		assertFalse(scSubtotalsInsertPageBreakCheckBox.isChecked());
-		assertFalse(scSubtotalsCaseSensitiveCheckBox.isChecked());
-		assertTrue(scSubtotalsPreSortToGroupCheckBox.isChecked());
-		assertTrue(scSubtotalSortAscendingRadioButton.isChecked());
-		assertFalse(scSubtotalSortDescendingRadioButton.isChecked());
-		assertFalse(scSubtotalsIncludeFormatsCheckBox.isChecked());
-		assertFalse(scSubtotalsCustomSortOrderCheckBox.isChecked());
-		assertFalse(scSubtotalsCustomSortListBox.isEnabled());
+		assertFalse("Wrong default value of InsertPageBreak checkbox",scSubtotalsInsertPageBreakCheckBox.isChecked());
+		assertFalse("Wrong default value of CaseSensitive checkbox",scSubtotalsCaseSensitiveCheckBox.isChecked());
+		assertTrue("Worng default value of PreSortToGroup checkbox",scSubtotalsPreSortToGroupCheckBox.isChecked());
+		assertTrue("Wrong default value of SortAscending Radio button",scSubtotalSortAscendingRadioButton.isChecked());
+		assertFalse("Wrong default value of SortDescending Radio button",scSubtotalSortDescendingRadioButton.isChecked());
+		assertFalse("Wrong default value of InludeFormat checkbox",scSubtotalsIncludeFormatsCheckBox.isChecked());
+		assertFalse("Wrong default value of CustomSortOrder checkbox",scSubtotalsCustomSortOrderCheckBox.isChecked());
+		assertFalse("Wrong default value of CustomSort listbox",scSubtotalsCustomSortListBox.isEnabled());
 		scSubTotalsOptionsTabPage.ok();
 	}
 
@@ -276,7 +270,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "2", "A", "Chcomic" }, { "", "20", "", "", "Chcomic Sum" },
+		assertArrayEquals("Not all group in Subtotal", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "2", "A", "Chcomic" }, { "", "20", "", "", "Chcomic Sum" },
 				{ "", "20", "", "A Max", "" }, { "BS", "20", "4", "B", "Elle" }, { "", "20", "", "", "Elle Sum" }, { "", "20", "", "B Max", "" },
 				{ "BS", "20", "6", "C", "Sweet" }, { "", "20", "", "", "Sweet Sum" }, { "", "20", "", "C Max", "" }, { "BS Sum", "", "12", "", "" },
 				{ "CS", "30", "5", "A", "Ally" }, { "", "30", "", "", "Ally Sum" }, { "", "30", "", "A Max", "" }, { "CS Sum", "", "5", "", "" },
@@ -297,7 +291,7 @@ public class SubtotalsFunctions {
 		scSubTotalsGroup1Dialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table before deleting row", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" },
+		assertArrayEquals("Subtotal table not equal before deleting row", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" },
 				{ "BS", "20", "6", "C", "Sweet" }, { "BS", "20", "2", "A", "Chcomic" }, { "BS Sum", "", "12", "", "" }, { "CS", "30", "5", "A", "Ally" },
 				{ "CS Sum", "", "5", "", "" }, { "MS", "10", "1", "A", "Joker" }, { "MS", "10", "3", "B", "Kevin" }, { "MS Sum", "", "4", "", "" },
 				{ "Grand Total", "", "21", "", "" } }, SCTool.getCellTexts("A1:E11"));
@@ -308,7 +302,7 @@ public class SubtotalsFunctions {
 		scDeleteCellsDialog.ok();
 		sleep(1);
 
-		assertArrayEquals("Subtotal table after deleting row", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" },
+		assertArrayEquals("Subtotal table not equal after deleting row", new String[][] { { "Level", "Code", "No.", "Team", "Name" }, { "BS", "20", "4", "B", "Elle" },
 				{ "BS", "20", "2", "A", "Chcomic" }, { "BS Sum", "", "6", "", "" }, { "CS", "30", "5", "A", "Ally" }, { "CS Sum", "", "5", "", "" },
 				{ "MS", "10", "1", "A", "Joker" }, { "MS", "10", "3", "B", "Kevin" }, { "MS Sum", "", "4", "", "" }, { "Grand Total", "", "15", "", "" }, { "", "", "", "", "" } },
 				SCTool.getCellTexts("A1:E11"));
@@ -332,19 +326,19 @@ public class SubtotalsFunctions {
 		SCTool.selectRange("B4");
 		typeKeys("40" + "<enter>");
 		sleep(1);
-		assertEquals("30", SCTool.getCellText("B5"));
-		assertEquals("23.33333333", SCTool.getCellText("B11"));
+		assertEquals("B5's cell text is not 30","30", SCTool.getCellText("B5"));
+		assertEquals("B11's cell text is not 23.33333333","23.33333333", SCTool.getCellText("B11"));
 
 		SCTool.selectRange("B7");
 		typeKeys("50" + "<enter>");
 		sleep(1);
-		assertEquals("35", SCTool.getCellText("B8"));
-		assertEquals("30", SCTool.getCellText("B11"));
+		assertEquals("B8's cell text is not 35","35", SCTool.getCellText("B8"));
+		assertEquals("B11's cell text is not 30","30", SCTool.getCellText("B11"));
 
 		SCTool.selectRange("B9");
 		typeKeys("30" + "<enter>");
 		sleep(1);
-		assertEquals("30", SCTool.getCellText("B10"));
-		assertEquals("31.66666667", SCTool.getCellText("B11"));
+		assertEquals("B10's cell text is not 30","30", SCTool.getCellText("B10"));
+		assertEquals("B11's cell text is not 31.66666667","31.66666667", SCTool.getCellText("B11"));
 	}
 }

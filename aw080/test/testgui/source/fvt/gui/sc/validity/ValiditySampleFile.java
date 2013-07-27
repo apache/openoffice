@@ -38,7 +38,7 @@ public class ValiditySampleFile {
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
-
+	
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
@@ -46,6 +46,7 @@ public class ValiditySampleFile {
 
 	@After
 	public void tearDown() throws Exception {
+		app.stop();
 
 	}
 
@@ -58,8 +59,7 @@ public class ValiditySampleFile {
 	public void testFFCIgnoreBlank() throws Exception {
 		// Open sample file
 		String file = prepareData("sc/FFC252FFCSC_XML_Datarange0235.xls");
-		app.dispatch(".uno:Open", 3);
-		submitOpenDlg(file);
+		open(file);
 		calc.waitForExistence(10, 2);
 
 		SCTool.selectRange("D5");
@@ -80,8 +80,7 @@ public class ValiditySampleFile {
 	public void testFFCNotIgnoreBlank() throws Exception {
 		// open sample file
 		String file = prepareData("sc/FFC252FFCSC_XML_Datarange0205.xls");
-		app.dispatch(".uno:Open", 3);
-		submitOpenDlg(file);
+		open(file);
 		calc.waitForExistence(10, 2);
 
 		SCTool.selectRange("F5");
@@ -99,8 +98,7 @@ public class ValiditySampleFile {
 	public void testNotLockCellFromValidityCell() {
 		// open sample file on data path
 		String file = prepareData("sc/sampledata.ods");
-		app.dispatch(".uno:Open", 3);
-		submitOpenDlg(file);
+		open(file);
 		calc.waitForExistence(10, 2);
 
 		SCTool.selectRange("F19");

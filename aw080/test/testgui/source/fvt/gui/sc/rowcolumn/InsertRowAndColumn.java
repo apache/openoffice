@@ -30,23 +30,22 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
 import testlib.gui.SCTool;
 
 public class InsertRowAndColumn {
-
 	@Rule
 	public Logger log = Logger.getLogger(this);
 
 	@Before
 	public void setUp() throws Exception {
 		app.start();
-		app.dispatch("private:factory/scalc");
-		calc.waitForExistence(10, 3);
+		AppTool.newSpreadsheet();
 	}
 
 	@After
 	public void tearDown() throws Exception {
-		app.close();
+		app.stop();
 	}
 
 	/**
@@ -80,7 +79,6 @@ public class InsertRowAndColumn {
 		String[][] expectedInsertColumnResult = new String[][] { { "", "", "" }, { "", "", "" }, { "", "123", "456" }, };
 		// Select Cell A3
 		SCTool.selectRange("Sheet1.A3");
-
 		// Insert one entire Column via menu
 		calc.menuItem("Insert->Columns").select();
 

@@ -234,6 +234,7 @@ LINKLINKFILES= \
    text$/simpress$/02$/13180000.xhp \
    text$/simpress$/02$/13190000.xhp \
    text$/simpress$/04$/01020000.xhp \
+   text$/simpress$/04$/presenter.xhp \
    text$/simpress$/guide$/3d_create.xhp \
    text$/simpress$/guide$/animated_gif_create.xhp \
    text$/simpress$/guide$/animated_gif_save.xhp \
@@ -269,6 +270,13 @@ LINKLINKFILES= \
    text$/simpress$/guide$/table_insert.xhp \
    text$/simpress$/guide$/text2curve.xhp \
    text$/simpress$/guide$/vectorize.xhp \
+   text$/simpress$/minimizer$/main.xhp \
+   text$/simpress$/minimizer$/step1.xhp \
+   text$/simpress$/minimizer$/step2.xhp \
+   text$/simpress$/minimizer$/step3.xhp \
+   text$/simpress$/minimizer$/step4.xhp \
+   text$/simpress$/minimizer$/step5.xhp \
+   text$/simpress$/minimizer$/infobox.xhp \
    text$/simpress$/main0000.xhp \
    text$/simpress$/main0100.xhp \
    text$/simpress$/main0101.xhp \
@@ -1067,6 +1075,7 @@ LINKLINKFILES= \
    text$/shared$/guide$/redlining_versions.xhp \
    text$/shared$/guide$/round_corner.xhp \
    text$/shared$/guide$/scripting.xhp \
+   text$/shared$/guide$/sidebar_window.xhp \
    text$/shared$/guide$/space_hyphen.xhp \
    text$/shared$/guide$/spadmin.xhp \
    text$/shared$/guide$/standard_template.xhp \

@@ -96,35 +96,35 @@ SwEditShell::HandleUndoRedoContext(::sw::UndoRedoContext & rContext)
 
 bool SwEditShell::Undo(sal_uInt16 const nCount)
 {
-	SET_CURR_SHELL( this );
+    SET_CURR_SHELL( this );
 
     // #105332# current undo state was not saved
     ::sw::UndoGuard const undoGuard(GetDoc()->GetIDocumentUndoRedo());
-	sal_Bool bRet = sal_False;
+    sal_Bool bRet = sal_False;
 
-	StartAllAction();
-	{
-		// eigentlich muesste ja nur der aktuelle Cursor berarbeitet
-		// werden, d.H. falls ein Ring besteht, diesen temporaer aufheben,
-		// damit nicht bei Einfuge-Operationen innerhalb von Undo
-		// an allen Bereichen eingefuegt wird.
-		KillPams();
-		SetMark();          // Bound1 und Bound2 in den gleichen Node
-		ClearMark();
+    StartAllAction();
+    {
+        // eigentlich muesste ja nur der aktuelle Cursor berarbeitet
+        // werden, d.H. falls ein Ring besteht, diesen temporaer aufheben,
+        // damit nicht bei Einfuge-Operationen innerhalb von Undo
+        // an allen Bereichen eingefuegt wird.
+        KillPams();
+        SetMark();          // Bound1 und Bound2 in den gleichen Node
+        ClearMark();
 
-		// JP 02.04.98: Cursor merken - beim Auto-Format/-Korrektur
-		// 				soll dieser wieder an die Position
         SwUndoId nLastUndoId(UNDO_EMPTY);
-        GetDoc()->GetIDocumentUndoRedo().GetLastUndoInfo(0, & nLastUndoId);
-        bool bRestoreCrsr = 1 == nCount && (UNDO_AUTOFORMAT == nLastUndoId ||
-										   UNDO_AUTOCORRECT == nLastUndoId );
-		Push();
+        GetLastUndoInfo(0, & nLastUndoId);
+        const bool bRestoreCrsr = nCount == 1
+                                  && ( UNDO_AUTOFORMAT == nLastUndoId
+                                       || UNDO_AUTOCORRECT == nLastUndoId
+                                       || UNDO_SETDEFTATTR == nLastUndoId );
+        Push();
 
-		//JP 18.09.97: gesicherten TabellenBoxPtr zerstoeren, eine autom.
-		//			Erkennung darf nur noch fuer die neue "Box" erfolgen!
-		ClearTblBoxCntnt();
+        //JP 18.09.97: gesicherten TabellenBoxPtr zerstoeren, eine autom.
+        //			Erkennung darf nur noch fuer die neue "Box" erfolgen!
+        ClearTblBoxCntnt();
 
-		RedlineMode_t eOld = GetDoc()->GetRedlineMode();
+        RedlineMode_t eOld = GetDoc()->GetRedlineMode();
 
         try {
             for (sal_uInt16 i = 0; i < nCount; ++i)
@@ -138,44 +138,49 @@ bool SwEditShell::Undo(sal_uInt16 const nCount)
                     .getStr());
         }
 
-		Pop( !bRestoreCrsr );
+        Pop( !bRestoreCrsr );
 
-		GetDoc()->SetRedlineMode( eOld );
-		GetDoc()->CompressRedlines();
+        GetDoc()->SetRedlineMode( eOld );
+        GetDoc()->CompressRedlines();
 
-		//JP 18.09.97: autom. Erkennung  fuer die neue "Box"
-		SaveTblBoxCntnt();
-	}
-	EndAllAction();
+        //JP 18.09.97: autom. Erkennung  fuer die neue "Box"
+        SaveTblBoxCntnt();
+    }
+    EndAllAction();
 
-	return bRet;
+    return bRet;
 }
 
 bool SwEditShell::Redo(sal_uInt16 const nCount)
 {
-	SET_CURR_SHELL( this );
+    SET_CURR_SHELL( this );
 
-	sal_Bool bRet = sal_False;
+    sal_Bool bRet = sal_False;
 
     // #105332# undo state was not saved
     ::sw::UndoGuard const undoGuard(GetDoc()->GetIDocumentUndoRedo());
 
-	StartAllAction();
+    StartAllAction();
 
-	{
-		// eigentlich muesste ja nur der aktuelle Cursor berarbeitet
-		// werden, d.H. falls ein Ring besteht, diesen temporaer aufheben,
-		// damit nicht bei Einfuge-Operationen innerhalb von Undo
-		// an allen Bereichen eingefuegt wird.
-		KillPams();
-		SetMark();          // Bound1 und Bound2 in den gleichen Node
-		ClearMark();
+    {
+        // eigentlich muesste ja nur der aktuelle Cursor berarbeitet
+        // werden, d.H. falls ein Ring besteht, diesen temporaer aufheben,
+        // damit nicht bei Einfuge-Operationen innerhalb von Undo
+        // an allen Bereichen eingefuegt wird.
+        KillPams();
+        SetMark();          // Bound1 und Bound2 in den gleichen Node
+        ClearMark();
 
-		//JP 18.09.97: gesicherten TabellenBoxPtr zerstoeren, eine autom.
-		//			Erkennung darf nur noch fuer die neue "Box" erfolgen!
-		ClearTblBoxCntnt();
+        SwUndoId nFirstRedoId(UNDO_EMPTY);
+        GetDoc()->GetIDocumentUndoRedo().GetFirstRedoInfo(0, & nFirstRedoId);
+        const bool bRestoreCrsr = nCount == 1 && UNDO_SETDEFTATTR == nFirstRedoId;
+        Push();
 
-		RedlineMode_t eOld = GetDoc()->GetRedlineMode();
+        //JP 18.09.97: gesicherten TabellenBoxPtr zerstoeren, eine autom.
+        //			Erkennung darf nur noch fuer die neue "Box" erfolgen!
+        ClearTblBoxCntnt();
+
+        RedlineMode_t eOld = GetDoc()->GetRedlineMode();
 
         try {
             for (sal_uInt16 i = 0; i < nCount; ++i)
@@ -189,16 +194,18 @@ bool SwEditShell::Redo(sal_uInt16 const nCount)
                     .getStr());
         }
 
-		GetDoc()->SetRedlineMode( eOld );
-		GetDoc()->CompressRedlines();
+        Pop( !bRestoreCrsr );
 
-		//JP 18.09.97: autom. Erkennung  fuer die neue "Box"
-		SaveTblBoxCntnt();
-	}
+        GetDoc()->SetRedlineMode( eOld );
+        GetDoc()->CompressRedlines();
 
-	EndAllAction();
+        //JP 18.09.97: autom. Erkennung  fuer die neue "Box"
+        SaveTblBoxCntnt();
+    }
 
-	return bRet;
+    EndAllAction();
+
+    return bRet;
 }
 
 

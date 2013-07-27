@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
@@ -58,6 +56,12 @@
 #include <svx/svdlegacy.hxx>
 #include <fmobj.hxx>
 #include <vcl/svgdata.hxx>
+#include <drawinglayer/primitive2d/baseprimitive2d.hxx>
+#include <drawinglayer/primitive2d/groupprimitive2d.hxx>
+#include <drawinglayer/geometry/viewinformation2d.hxx>
+#include <svx/sdr/contact/viewcontact.hxx>
+#include <svx/sdr/contact/objectcontactofobjlistpainter.hxx>
+#include <svx/sdr/contact/displayinfo.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -420,8 +424,8 @@ bool SdrExchangeView::Paste(const SdrModel& rMod, const basegfx::B2DPoint& rPos,
 		aResize = basegfx::B2DVector(aResizeFract.X(), aResizeFract.Y());
 	}
 	
-	const sal_uInt16 nPgAnz(pSrcMod->GetPageCount());
-	sal_uInt16 nPg(0);
+	const sal_uInt32 nPgAnz(pSrcMod->GetPageCount());
+	sal_uInt32 nPg(0);
 
 	for(; nPg < nPgAnz; nPg++)
 	{
@@ -611,12 +615,51 @@ BitmapEx SdrExchangeView::GetMarkedObjBitmapEx(bool bNoVDevIfOneBmpMarked) const
 
 		if( !aBmp )
 		{
-            const GDIMetaFile aGDIMetaFile(GetMarkedObjMetaFile(bNoVDevIfOneBmpMarked));
-            const basegfx::B2DRange aAllObjRange(sdr::legacy::GetAllObjBoundRange(getSelectedSdrObjectVectorFromSdrMarkView()));
-           
-            aBmp = convertMetafileToBitmapEx(
-                aGDIMetaFile,
-                aAllObjRange);
+            // choose conversion directly using primitives to bitmap to avoid
+            // rendering errors with tiled bitmap fills (these will be tiled in a
+            // in-between metafile, but tend to show 'gaps' since the target is *no*
+            // bitmap rendering)
+            ::std::vector< SdrObject* > aSdrObjects(GetMarkedObjects());
+            const sal_uInt32 nCount(aSdrObjects.size());
+
+            if(nCount)
+            {
+                // collect sub-primitives as group objects, thus no expensive append
+                // to existing sequence is needed
+                drawinglayer::primitive2d::Primitive2DSequence xPrimitives(nCount);
+
+                for(sal_uInt32 a(0); a < nCount; a++)
+                {
+                    SdrObject* pCandidate = aSdrObjects[a];
+                    SdrGrafObj* pSdrGrafObj = dynamic_cast< SdrGrafObj* >(pCandidate);
+
+                    if(pSdrGrafObj)
+                    {
+                        // #122753# To ensure existance of graphic content, force swap in
+                        pSdrGrafObj->ForceSwapIn();
+                    }
+
+                    xPrimitives[a] = new drawinglayer::primitive2d::GroupPrimitive2D(
+                        pCandidate->GetViewContact().getViewIndependentPrimitive2DSequence());
+                }
+
+                // get logic range
+                const drawinglayer::geometry::ViewInformation2D aViewInformation2D;
+                const basegfx::B2DRange aRange(
+                    drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(
+                        xPrimitives, 
+                        aViewInformation2D));
+
+                if(!aRange.isEmpty())
+                {
+                    // if we have geometry and it has a range, convert to BitmapEx using
+                    // common tooling
+                    aBmp = convertPrimitive2DSequenceToBitmapEx(
+                        xPrimitives,
+                        aRange,
+                        500000);
+                }
+            }
 		}
 	}
 
@@ -779,40 +822,60 @@ Graphic GetObjGraphic(const SdrObject& rObj)
 
 // -----------------------------------------------------------------------------
 
-void SdrExchangeView::DrawMarkedObj(OutputDevice& rOut) const
+::std::vector< SdrObject* > SdrExchangeView::GetMarkedObjects() const
 {
-	if(areSdrObjectsSelected())
-	{
-		::std::vector< SdrObjectVector > aObjVectors(2);
-		SdrObjectVector& rObjVector1 = aObjVectors[ 0 ];
-		SdrObjectVector& rObjVector2 = aObjVectors[ 1 ];
-		const SdrLayerAdmin& rLayerAdmin = getSdrModelFromSdrView().GetModelLayerAdmin();
-		const sal_uInt32 nControlLayerId(rLayerAdmin.GetLayerID( rLayerAdmin.GetControlLayerName(), false));
-		const SdrObjectVector aSelection(getSelectedSdrObjectVectorFromSdrMarkView());
+    ::std::vector< SdrObject* > aRetval;
+
+    if(areSdrObjectsSelected())
+    {
+        ::std::vector< SdrObjectVector > aObjVectors(2);
+        SdrObjectVector& rObjVector1 = aObjVectors[ 0 ];
+        SdrObjectVector& rObjVector2 = aObjVectors[ 1 ];
+        const SdrLayerAdmin& rLayerAdmin = getSdrModelFromSdrView().GetModelLayerAdmin();
+        const sal_uInt32 nControlLayerId(rLayerAdmin.GetLayerID( rLayerAdmin.GetControlLayerName(), false));
+        const SdrObjectVector aSelection(getSelectedSdrObjectVectorFromSdrMarkView());
         sal_uInt32 n, nCount;
 
-		for(n = 0, nCount = aSelection.size(); n < nCount; n++)
+        for(n = 0, nCount = aSelection.size(); n < nCount; n++)
         {
-            // paint objects on control layer on top of all otherobjects
-			if(nControlLayerId == aSelection[n]->GetLayer())
-			{
-				rObjVector2.push_back( aSelection[n] );
-			}
+            // objects on control layer first - to have them on top of all other objects
+            if(nControlLayerId == aSelection[n]->GetLayer())
+            {
+                rObjVector2.push_back( aSelection[n] );
+            }
             else
-			{
-				rObjVector1.push_back( aSelection[n] );
-			}
+            {
+                rObjVector1.push_back( aSelection[n] );
+            }
         }
 
         for( n = 0, nCount = aObjVectors.size(); n < nCount; n++ )
         {
-			SdrObjectVector& rObjVector = aObjVectors[ n ];
+            SdrObjectVector& rObjVector = aObjVectors[ n ];
 
             for( sal_uInt32 i = 0; i < rObjVector.size(); i++ )
             {
-				rObjVector[ i ]->SingleObjectPainter(rOut);
-			}
+                aRetval.push_back(rObjVector[ i ]);
+            }
         }
+    }
+
+    return aRetval;
+}
+
+// -----------------------------------------------------------------------------
+
+void SdrExchangeView::DrawMarkedObj(OutputDevice& rOut) const
+{
+    ::std::vector< SdrObject* > aSdrObjects(GetMarkedObjects());
+
+    if(aSdrObjects.size())
+    {
+        sdr::contact::ObjectContactOfObjListPainter aPainter(rOut, aSdrObjects, aSdrObjects[0]->getSdrPageFromSdrObject());
+        sdr::contact::DisplayInfo aDisplayInfo;
+
+        // do processing
+        aPainter.ProcessDisplay(aDisplayInfo);
     }
 }
 
@@ -834,11 +897,11 @@ SdrModel* SdrExchangeView::GetMarkedObjModel() const
 		const SdrLayerAdmin& rLayerAdmin = getSdrModelFromSdrView().GetModelLayerAdmin();
 		const sal_uInt32 nControlLayerId(rLayerAdmin.GetLayerID( rLayerAdmin.GetControlLayerName(), false));
 		const SdrObjectVector aSelection(getSelectedSdrObjectVectorFromSdrMarkView());
-		sal_uInt32                                  n, nCount, nCloneErrCnt = 0;
+		sal_uInt32 n, nCount, nCloneErrCnt = 0;
 
 		for(n = 0, nCount = aSelection.size(); n < nCount; n++)
 		{
-			// paint objects on control layer on top of all otherobjects
+			// prefer objects on control layer - to have them on top of all other objects
 			if(nControlLayerId == aSelection[n]->GetLayer())
 			{
 				rObjVector2.push_back( aSelection[n] );

@@ -1193,8 +1193,13 @@ void SdrUndoObjSetText::Undo()
 		pText->SetOutlinerParaObject(pText1);
 	}
 
-	mrSdrObject.SetEmptyPresObj( mbEmptyPresObj );
-	mrSdrObject.ActionChanged();
+    mrSdrObject.SetEmptyPresObj( mbEmptyPresObj );
+    mrSdrObject.ActionChanged();
+
+    // #122410# SetOutlinerParaObject at SdrText does not trigger a
+    // BroadcastObjectChange, but it is needed to make evtl. SlideSorters
+    // update their preview.
+    const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(mrSdrObject);
 }
 
 void SdrUndoObjSetText::Redo()
@@ -1216,8 +1221,13 @@ void SdrUndoObjSetText::Redo()
 
 	mrSdrObject.ActionChanged();
 
-	// #94278# Trigger PageChangeCall
-	ImpShowPageOfThisObject();
+    // #122410# NbcSetOutlinerParaObjectForText at SdrTextObj does not trigger a
+    // BroadcastObjectChange, but it is needed to make evtl. SlideSorters
+    // update their preview.
+    const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(mrSdrObject);
+
+    // #94278# Trigger PageChangeCall
+    ImpShowPageOfThisObject();
 }
 
 XubString SdrUndoObjSetText::GetComment() const
@@ -1885,7 +1895,7 @@ SdrUndoAction* SdrUndoFactory::CreateUndoCopyPage(SdrPage& rPage)
 	return new SdrUndoCopyPage( rPage );
 }
 
-SdrUndoAction* SdrUndoFactory::CreateUndoSetPageNum(SdrPage& rNewPg, sal_uInt16 nOldPageNum1, sal_uInt16 nNewPageNum1)
+SdrUndoAction* SdrUndoFactory::CreateUndoSetPageNum(SdrPage& rNewPg, sal_uInt32 nOldPageNum1, sal_uInt32 nNewPageNum1)
 {
 	return new SdrUndoSetPageNum( rNewPg, nOldPageNum1, nNewPageNum1 );
 }

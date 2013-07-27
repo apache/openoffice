@@ -177,9 +177,10 @@ public class XMLReporter extends RunListener {
 			System.setProperty("info.os.name", SystemUtil.getOSName());
 			System.setProperty("info.os.version", SystemUtil.getOSVersion());
 			System.setProperty("info.os.arch", SystemUtil.getOSArch());
-			System.setProperty("info.os.arch", SystemUtil.getOSArch());
-			System.setProperty("info.ip", SystemUtil.getIPAddress());
-			System.setProperty("info.hostname", SystemUtil.getHostName());
+			String ipaddrStr = SystemUtil.getIPAddress();
+			System.setProperty("info.ip", (ipaddrStr!=null) ? ipaddrStr : "UNKNOWN");
+			String hostnameStr = SystemUtil.getHostName();
+			System.setProperty("info.hostname", (hostnameStr!=null) ? hostnameStr : "UNKNOWN");
 			Set<Entry<Object, Object>> entries = System.getProperties().entrySet();
 			for (Entry<Object, Object> e : entries) {
 				Element prop = doc.createElement("property");
@@ -198,3 +199,4 @@ public class XMLReporter extends RunListener {
 	}
 
 }
+
