@@ -1026,9 +1026,9 @@ void PosSizePropertyPanel::NotifyItemUpdate(
             sal_uInt16 nMarkObj = 0;
             bool isNoEdge = true;
             
-            while(isNoEdge)
+            while(isNoEdge && nMarkObj < aMarkList.size())
             {
-                const SdrObject* pObj = aMarkList[nMarkObj];
+                const SdrObject* pObj = aMarkList[nMarkObj++];
                 const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
                 if(((nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_Draw)
@@ -1039,7 +1039,6 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                     isNoEdge = false;
                     break;
                 }
-                nMarkObj++;
             }
 
             if(!isNoEdge)

@@ -84,6 +84,9 @@
 #include <memory.h>
 #include <basegfx/vector/b2dvector.hxx>
 #include <basegfx/point/b2dpoint.hxx>
+#include <basegfx/polygon/b2dpolygon.hxx>
+#include <basegfx/polygon/b2dpolygontools.hxx>
+#include <basegfx/polygon/b2dpolypolygontools.hxx>
 
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
@@ -1297,20 +1300,55 @@ void SdXMLPolygonShapeContext::StartElement(const uno::Reference< xml::sax::XAtt
 			// set polygon
 			if(maPoints.getLength() && maViewBox.getLength())
 			{
-				SdXMLImExViewBox aViewBox(maViewBox, GetImport().GetMM100UnitConverter());
-				awt::Size aSize(aViewBox.GetWidth(), aViewBox.GetHeight());
-				if (maSize.Width != 0 && maSize.Height !=0)
-				{
-					aSize = maSize;
-				}
-				awt::Point aPosition(aViewBox.GetX(), aViewBox.GetY());
-				SdXMLImExPointsElement aPoints(maPoints, aViewBox,
-					aPosition, aSize, GetImport().GetMM100UnitConverter(), mbClosed);
+                const SdXMLImExViewBox aViewBox(maViewBox, GetImport().GetMM100UnitConverter());
+                basegfx::B2DVector aSize(aViewBox.GetWidth(), aViewBox.GetHeight());
 
-				uno::Any aAny;
-				aAny <<= aPoints.GetPointSequenceSequence();
-				xPropSet->setPropertyValue(
-					OUString(RTL_CONSTASCII_USTRINGPARAM("Geometry")), aAny);
+                // TTTT: Is this correct? It overrides ViewBox stuff; OTOH it makes no
+                // sense to have the geometry content size different from object size
+                if(maSize.Width != 0 && maSize.Height !=0)
+                {
+                    aSize.setX(maSize.Width);
+                    aSize.setY(maSize.Height);
+                }
+
+                basegfx::B2DPolygon aPolygon;
+
+                if(basegfx::tools::importFromSvgPoints(aPolygon, maPoints))
+                {
+                    if(aPolygon.count())
+                    {
+                        const basegfx::B2DRange aSourceRange(
+                            aViewBox.GetX(), aViewBox.GetY(), 
+                            aViewBox.GetX() + aViewBox.GetWidth(), aViewBox.GetY() + aViewBox.GetHeight());
+                        const basegfx::B2DRange aTargetRange(
+                            aViewBox.GetX(), aViewBox.GetY(), 
+                            aViewBox.GetX() + aSize.getX(), aViewBox.GetY() + aSize.getY());
+
+                        if(!aSourceRange.equal(aTargetRange))
+                        {
+                            aPolygon.transform(
+                                basegfx::tools::createSourceRangeTargetRangeTransform(
+                                    aSourceRange,
+                                    aTargetRange));
+                        }
+
+                        com::sun::star::drawing::PointSequenceSequence aPointSequenceSequence;
+                        uno::Any aAny;
+
+                        basegfx::tools::B2DPolyPolygonToUnoPointSequenceSequence(basegfx::B2DPolyPolygon(aPolygon), aPointSequenceSequence);
+                        aAny <<= aPointSequenceSequence;
+                        xPropSet->setPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("Geometry")), aAny);
+                    }
+                }
+
+                //awt::Point aPosition(aViewBox.GetX(), aViewBox.GetY());
+				//SdXMLImExPointsElement aPoints(maPoints, aViewBox,
+				//	aPosition, aSize, GetImport().GetMM100UnitConverter(), mbClosed);
+                //
+				//uno::Any aAny;
+				//aAny <<= aPoints.GetPointSequenceSequence();
+				//xPropSet->setPropertyValue(
+				//	OUString(RTL_CONSTASCII_USTRINGPARAM("Geometry")), aAny);
 			}
 		}
 
@@ -1368,90 +1406,196 @@ void SdXMLPathShapeContext::processAttribute( sal_uInt16 nPrefix, const ::rtl::O
 
 void SdXMLPathShapeContext::StartElement(const uno::Reference< xml::sax::XAttributeList>& xAttrList)
 {
-	// create polygon shape
-	if(maD.getLength())
-	{
-		// prepare some of the parameters
-		SdXMLImExViewBox aViewBox(maViewBox, GetImport().GetMM100UnitConverter());
-		awt::Size aSize(aViewBox.GetWidth(), aViewBox.GetHeight());
-		awt::Point aPosition(aViewBox.GetX(), aViewBox.GetY());
-		if (maSize.Width != 0 && maSize.Height !=0)
-		{
-			aSize = maSize;
-		}
-		SdXMLImExSvgDElement aPoints(maD, aViewBox,
-			aPosition, aSize, GetImport().GetMM100UnitConverter());
+    // create polygon shape
+    if(maD.getLength())
+    {
+        const SdXMLImExViewBox aViewBox(maViewBox, GetImport().GetMM100UnitConverter());
+        basegfx::B2DVector aSize(aViewBox.GetWidth(), aViewBox.GetHeight());
 
-		const char* pService;
-		// now create shape
-		if(aPoints.IsCurve())
-		{
-			if(aPoints.IsClosed())
-			{
-				pService = "com.sun.star.drawing.ClosedBezierShape";
-			}
-			else
-			{
-				pService = "com.sun.star.drawing.OpenBezierShape";
-			}
-		}
-		else
-		{
-			if(aPoints.IsClosed())
-			{
-				pService = "com.sun.star.drawing.PolyPolygonShape";
-			}
-			else
-			{
-				pService = "com.sun.star.drawing.PolyLineShape";
-			}
-		}
+        // TTTT: Is this correct? It overrides ViewBox stuff; OTOH it makes no
+        // sense to have the geometry content size different from object size
+        if(maSize.Width != 0 && maSize.Height !=0)
+        {
+            aSize.setX(maSize.Width);
+            aSize.setY(maSize.Height);
+        }
 
-		// Add, set Style and properties from base shape
-		AddShape(pService);
+        basegfx::B2DPolyPolygon aPolyPolygon;
 
-		// #89344# test for mxShape.is() and not for mxShapes.is() to support
-		// shape import helper classes WITHOUT XShapes (member mxShapes). This
-		// is used by the writer.
-		if( mxShape.is() )
-		{
-			SetStyle();
-			SetLayer();
+        if(basegfx::tools::importFromSvgD(aPolyPolygon, maD))
+        {
+            if(aPolyPolygon.count())
+            {
+                const basegfx::B2DRange aSourceRange(
+                    aViewBox.GetX(), aViewBox.GetY(), 
+                    aViewBox.GetX() + aViewBox.GetWidth(), aViewBox.GetY() + aViewBox.GetHeight());
+                const basegfx::B2DRange aTargetRange(
+                    aViewBox.GetX(), aViewBox.GetY(), 
+                    aViewBox.GetX() + aSize.getX(), aViewBox.GetY() + aSize.getY());
 
-			// set local parameters on shape
-			uno::Reference< beans::XPropertySet > xPropSet(mxShape, uno::UNO_QUERY);
-			if(xPropSet.is())
-			{
-				uno::Any aAny;
+                if(!aSourceRange.equal(aTargetRange))
+                {
+                    aPolyPolygon.transform(
+                        basegfx::tools::createSourceRangeTargetRangeTransform(
+                            aSourceRange,
+                            aTargetRange));
+                }
 
-				// set svg:d
-				if(maD.getLength())
-				{
-					if(aPoints.IsCurve())
-					{
-						drawing::PolyPolygonBezierCoords aSourcePolyPolygon(
-							aPoints.GetPointSequenceSequence(),
-							aPoints.GetFlagSequenceSequence());
+                // create shape
+                const char* pService;
 
-						aAny <<= aSourcePolyPolygon;
-						xPropSet->setPropertyValue(
-							OUString(RTL_CONSTASCII_USTRINGPARAM("Geometry")), aAny);
-					}
-					else
-					{
-						aAny <<= aPoints.GetPointSequenceSequence();
-						xPropSet->setPropertyValue(
-							OUString(RTL_CONSTASCII_USTRINGPARAM("Geometry")), aAny);
-					}
-				}
-			}
+                if(aPolyPolygon.areControlPointsUsed())
+                {
+                    if(aPolyPolygon.isClosed())
+                    {
+                        pService = "com.sun.star.drawing.ClosedBezierShape";
+                    }
+                    else
+                    {
+                        pService = "com.sun.star.drawing.OpenBezierShape";
+                    }
+                }
+                else
+                {
+                    if(aPolyPolygon.isClosed())
+                    {
+                        pService = "com.sun.star.drawing.PolyPolygonShape";
+                    }
+                    else
+                    {
+                        pService = "com.sun.star.drawing.PolyLineShape";
+                    }
+                }
 
-			// set pos, size, shear and rotate
-			SetTransformation();
+                // #89344# test for mxShape.is() and not for mxShapes.is() to support
+                // shape import helper classes WITHOUT XShapes (member mxShapes). This
+                // is used by the writer.
+                if( mxShape.is() )
+                {
+                    SetStyle();
+                    SetLayer();
 
-			SdXMLShapeContext::StartElement(xAttrList);
-		}
-	}
+                    // set local parameters on shape
+                    uno::Reference< beans::XPropertySet > xPropSet(mxShape, uno::UNO_QUERY);
+
+                    if(xPropSet.is())
+                    {
+                        uno::Any aAny;
+
+                        // set polygon data
+                        if(aPolyPolygon.areControlPointsUsed())
+                        {
+                            drawing::PolyPolygonBezierCoords aSourcePolyPolygon;
+
+                            basegfx::tools::B2DPolyPolygonToUnoPolyPolygonBezierCoords(
+                                aPolyPolygon,
+                                aSourcePolyPolygon);
+                            aAny <<= aSourcePolyPolygon;
+                        }
+                        else
+                        {
+                            drawing::PointSequenceSequence aSourcePolyPolygon;
+
+                            basegfx::tools::B2DPolyPolygonToUnoPointSequenceSequence(
+                                aPolyPolygon,
+                                aSourcePolyPolygon);
+                            aAny <<= aSourcePolyPolygon;
+                        }
+
+                        xPropSet->setPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("Geometry")), aAny);
+                    }
+
+                    // set pos, size, shear and rotate
+                    SetTransformation();
+
+                    SdXMLShapeContext::StartElement(xAttrList);
+                }
+            }
+        }
+
+        // TTTT
+        //// prepare some of the parameters
+        //SdXMLImExViewBox aViewBox(maViewBox, GetImport().GetMM100UnitConverter());
+        //awt::Size aSize(aViewBox.GetWidth(), aViewBox.GetHeight());
+        //awt::Point aPosition(aViewBox.GetX(), aViewBox.GetY());
+        //if (maSize.Width != 0 && maSize.Height !=0)
+        //{
+        //    aSize = maSize;
+        //}
+        //
+        //SdXMLImExSvgDElement aPoints(maD, aViewBox,
+        //    aPosition, aSize, GetImport().GetMM100UnitConverter());
+        //
+        //const char* pService;
+        //// now create shape
+        //if(aPoints.IsCurve())
+        //{
+        //    if(aPoints.IsClosed())
+        //    {
+        //        pService = "com.sun.star.drawing.ClosedBezierShape";
+        //    }
+        //    else
+        //    {
+        //        pService = "com.sun.star.drawing.OpenBezierShape";
+        //    }
+        //}
+        //else
+        //{
+        //    if(aPoints.IsClosed())
+        //    {
+        //        pService = "com.sun.star.drawing.PolyPolygonShape";
+        //    }
+        //    else
+        //    {
+        //        pService = "com.sun.star.drawing.PolyLineShape";
+        //    }
+        //}
+        //
+        //// Add, set Style and properties from base shape
+        //AddShape(pService);
+        //
+        //// #89344# test for mxShape.is() and not for mxShapes.is() to support
+        //// shape import helper classes WITHOUT XShapes (member mxShapes). This
+        //// is used by the writer.
+        //if( mxShape.is() )
+        //{
+        //    SetStyle();
+        //    SetLayer();
+        //
+        //    // set local parameters on shape
+        //    uno::Reference< beans::XPropertySet > xPropSet(mxShape, uno::UNO_QUERY);
+        //    if(xPropSet.is())
+        //    {
+        //        uno::Any aAny;
+        //
+        //        // set svg:d
+        //        if(maD.getLength())
+        //        {
+        //            if(aPoints.IsCurve())
+        //            {
+        //                drawing::PolyPolygonBezierCoords aSourcePolyPolygon(
+        //                    aPoints.GetPointSequenceSequence(),
+        //                    aPoints.GetFlagSequenceSequence());
+        //
+        //                aAny <<= aSourcePolyPolygon;
+        //                xPropSet->setPropertyValue(
+        //                    OUString(RTL_CONSTASCII_USTRINGPARAM("Geometry")), aAny);
+        //            }
+        //            else
+        //            {
+        //                aAny <<= aPoints.GetPointSequenceSequence();
+        //                xPropSet->setPropertyValue(
+        //                    OUString(RTL_CONSTASCII_USTRINGPARAM("Geometry")), aAny);
+        //            }
+        //        }
+        //    }
+        //
+        //    // set pos, size, shear and rotate
+        //    SetTransformation();
+        //
+        //    SdXMLShapeContext::StartElement(xAttrList);
+        //}
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1806,36 +1950,65 @@ void SdXMLConnectorShapeContext::processAttribute( sal_uInt16 nPrefix, const ::r
 			GetImport().GetMM100UnitConverter().convertMeasure(maEnd.Y, rValue);
 			return;
 		}
-		if( IsXMLToken( rLocalName, XML_D ) )
-		{
-			SdXMLImExViewBox aViewBox( 0, 0, 1, 1 );
-			awt::Point aPoint( 0, 0 );
-			awt::Size aSize( 1, 1 );		
-			
-			SdXMLImExSvgDElement aPoints( rValue, aViewBox,
-				aPoint, aSize, GetImport().GetMM100UnitConverter() );
+        if( IsXMLToken( rLocalName, XML_D ) )
+        {
+            basegfx::B2DPolyPolygon aPolyPolygon;
 
-			if ( aPoints.IsCurve() )
-			{
-				drawing::PolyPolygonBezierCoords aSourcePolyPolygon(
-					aPoints.GetPointSequenceSequence(),
-					aPoints.GetFlagSequenceSequence());
-				maPath <<= aSourcePolyPolygon;
-			}
-			else
-			{
-				const drawing::PointSequenceSequence& rOuterSeq = aPoints.GetPointSequenceSequence();
-				drawing::FlagSequenceSequence aFlagSeqSeq( rOuterSeq.getLength() );
-				for ( int a = 0; a < rOuterSeq.getLength(); a++ )
-					aFlagSeqSeq[ a ] = drawing::FlagSequence( rOuterSeq[ a ].getLength() );
+            if(basegfx::tools::importFromSvgD(aPolyPolygon, rValue))
+            {
+                if(aPolyPolygon.count())
+                {
+                    // set polygon data
+                    if(aPolyPolygon.areControlPointsUsed())
+                    {
+                        drawing::PolyPolygonBezierCoords aSourcePolyPolygon;
 
-				drawing::PolyPolygonBezierCoords aSourcePolyPolygon(
-					aPoints.GetPointSequenceSequence(),
-					aFlagSeqSeq );
-				maPath <<= aSourcePolyPolygon;
-			}
-		}
-	}
+                        basegfx::tools::B2DPolyPolygonToUnoPolyPolygonBezierCoords(
+                            aPolyPolygon,
+                            aSourcePolyPolygon);
+                        maPath <<= aSourcePolyPolygon;
+                    }
+                    else
+                    {
+                        drawing::PointSequenceSequence aSourcePolyPolygon;
+
+                        basegfx::tools::B2DPolyPolygonToUnoPointSequenceSequence(
+                            aPolyPolygon,
+                            aSourcePolyPolygon);
+                        maPath <<= aSourcePolyPolygon;
+                    }
+                }
+            }
+
+            // TTTT
+            //SdXMLImExViewBox aViewBox( 0.0, 0.0, 1.0, 1.0 );
+            //awt::Point aPoint( 0, 0 );
+            //awt::Size aSize( 1, 1 );		
+            //
+            //SdXMLImExSvgDElement aPoints( rValue, aViewBox,
+            //    aPoint, aSize, GetImport().GetMM100UnitConverter() );
+            //
+            //if ( aPoints.IsCurve() )
+            //{
+            //    drawing::PolyPolygonBezierCoords aSourcePolyPolygon(
+            //        aPoints.GetPointSequenceSequence(),
+            //        aPoints.GetFlagSequenceSequence());
+            //    maPath <<= aSourcePolyPolygon;
+            //}
+            //else
+            //{
+            //    const drawing::PointSequenceSequence& rOuterSeq = aPoints.GetPointSequenceSequence();
+            //    drawing::FlagSequenceSequence aFlagSeqSeq( rOuterSeq.getLength() );
+            //    for ( int a = 0; a < rOuterSeq.getLength(); a++ )
+            //        aFlagSeqSeq[ a ] = drawing::FlagSequence( rOuterSeq[ a ].getLength() );
+            //
+            //    drawing::PolyPolygonBezierCoords aSourcePolyPolygon(
+            //        aPoints.GetPointSequenceSequence(),
+            //        aFlagSeqSeq );
+            //    maPath <<= aSourcePolyPolygon;
+            //}
+        }
+    }
 	}
 
 	SdXMLShapeContext::processAttribute( nPrefix, rLocalName, rValue );
