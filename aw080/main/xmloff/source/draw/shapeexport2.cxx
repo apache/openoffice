@@ -82,7 +82,7 @@ void XMLShapeExport::ImpExportNewTrans(const uno::Reference< beans::XPropertySet
 }
 
 void XMLShapeExport::ImpExportNewTrans_GetB2DHomMatrix(::basegfx::B2DHomMatrix& rMatrix,
-	const uno::Reference< beans::XPropertySet >& xPropSet)
+    const uno::Reference< beans::XPropertySet >& xPropSet)
 {
     // --> OD 2004-08-09 #i28749# - Get <TransformationInHoriL2R>, if it exist
     // and if the document is exported into the OpenOffice.org file format.
@@ -106,44 +106,44 @@ void XMLShapeExport::ImpExportNewTrans_GetB2DHomMatrix(::basegfx::B2DHomMatrix& 
         aAny = xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("Transformation")));
     }
     // <--
-	drawing::HomogenMatrix3 aMatrix;
-	aAny >>= aMatrix;
-	rMatrix = basegfx::tools::UnoHomogenMatrix3ToB2DHomMatrix(aMatrix);
+    drawing::HomogenMatrix3 aMatrix;
+    aAny >>= aMatrix;
+    rMatrix = basegfx::tools::UnoHomogenMatrix3ToB2DHomMatrix(aMatrix);
 }
 
 void XMLShapeExport::ImpExportNewTrans_DecomposeAndRefPoint(const ::basegfx::B2DHomMatrix& rMatrix, ::basegfx::B2DTuple& rTRScale,
-	double& fTRShear, double& fTRRotate, ::basegfx::B2DTuple& rTRTranslate, com::sun::star::awt::Point* pRefPoint)
+    double& fTRShear, double& fTRRotate, ::basegfx::B2DTuple& rTRTranslate, com::sun::star::awt::Point* pRefPoint)
 {
-	// decompose matrix
-	rMatrix.decompose(rTRScale, rTRTranslate, fTRRotate, fTRShear);
+    // decompose matrix
+    rMatrix.decompose(rTRScale, rTRTranslate, fTRRotate, fTRShear);
 
-	// correct translation about pRefPoint
-	if(pRefPoint)
-	{
-		rTRTranslate -= ::basegfx::B2DTuple(pRefPoint->X, pRefPoint->Y);
-	}
+    // correct translation about pRefPoint
+    if(pRefPoint)
+    {
+        rTRTranslate -= ::basegfx::B2DTuple(pRefPoint->X, pRefPoint->Y);
+    }
 }
 
 void XMLShapeExport::ImpExportNewTrans_FeaturesAndWrite(::basegfx::B2DTuple& rTRScale, double fTRShear,
-	double fTRRotate, ::basegfx::B2DTuple& rTRTranslate, const sal_Int32 nFeatures)
+    double fTRRotate, ::basegfx::B2DTuple& rTRTranslate, const sal_Int32 nFeatures)
 {
-	// allways write Size (rTRScale) since this statement carries the union
-	// of the object
-	OUString aStr;
-	OUStringBuffer sStringBuffer;
-	::basegfx::B2DTuple aTRScale(rTRScale);
+    // allways write Size (rTRScale) since this statement carries the union
+    // of the object
+    OUString aStr;
+    OUStringBuffer sStringBuffer;
+    ::basegfx::B2DTuple aTRScale(rTRScale);
 
-	// svg: width
-	if(!(nFeatures & SEF_EXPORT_WIDTH))
-	{
-		aTRScale.setX(1.0);
-	}
+    // svg: width
+    if(!(nFeatures & SEF_EXPORT_WIDTH))
+    {
+        aTRScale.setX(1.0);
+    }
 
-	// svg: height
-	if(!(nFeatures & SEF_EXPORT_HEIGHT))
-	{
-		aTRScale.setY(1.0);
-	}
+    // svg: height
+    if(!(nFeatures & SEF_EXPORT_HEIGHT))
+    {
+        aTRScale.setY(1.0);
+    }
 
     // svg:width and svg:height are not allowed negative, extract that and
     // set back to absolute values
@@ -161,21 +161,23 @@ void XMLShapeExport::ImpExportNewTrans_FeaturesAndWrite(::basegfx::B2DTuple& rTR
     }
 
     // write positive svg:width
-    mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, FRound(aTRScale.getX()));
-	aStr = sStringBuffer.makeStringAndClear();
-	mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_WIDTH, aStr);
+    mrExport.GetMM100UnitConverter().convertDouble(sStringBuffer, aTRScale.getX(), true);
+    //mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, FRound(aTRScale.getX()));
+    aStr = sStringBuffer.makeStringAndClear();
+    mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_WIDTH, aStr);
 
     // write positive svg:height
-	mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, FRound(aTRScale.getY()));
-	aStr = sStringBuffer.makeStringAndClear();
-	mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_HEIGHT, aStr);
+    mrExport.GetMM100UnitConverter().convertDouble(sStringBuffer, aTRScale.getY(), true);
+    //mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, FRound(aTRScale.getY()));
+    aStr = sStringBuffer.makeStringAndClear();
+    mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_HEIGHT, aStr);
 
-	// decide if transformation is neccessary, new is that mirrorings are now
+    // decide if transformation is neccessary, new is that mirrorings are now
     // part of this to not write negative svg:width or svg:height entries
-	const bool bTransformationIsNeccessary(fTRShear != 0.0 || fTRRotate != 0.0 || bMirrorX || bMirrorY);
+    const bool bTransformationIsNeccessary(fTRShear != 0.0 || fTRRotate != 0.0 || bMirrorX || bMirrorY);
 
-	if(bTransformationIsNeccessary)
-	{
+    if(bTransformationIsNeccessary)
+    {
         // write transformation, but WITHOUT scale which is exported as size above
         SdXMLImExTransform2D aTransform;
 
@@ -220,31 +222,33 @@ void XMLShapeExport::ImpExportNewTrans_FeaturesAndWrite(::basegfx::B2DTuple& rTR
             aTransform.AddTranslate(aTRTranslate);
         }
 
-		// does transformation need to be exported?
-		if(aTransform.NeedsAction())
+        // does transformation need to be exported?
+        if(aTransform.NeedsAction())
         {
-			mrExport.AddAttribute(XML_NAMESPACE_DRAW, XML_TRANSFORM, aTransform.GetExportString(mrExport.GetMM100UnitConverter()));
+            mrExport.AddAttribute(XML_NAMESPACE_DRAW, XML_TRANSFORM, aTransform.GetExportString(mrExport.GetMM100UnitConverter()));
         }
-	}
-	else
-	{
-		// no shear, no rotate, no mirror; just add object position to export and we are done
-		if(nFeatures & SEF_EXPORT_X)
-		{
-			// svg: x
-			mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, FRound(rTRTranslate.getX()));
-			aStr = sStringBuffer.makeStringAndClear();
-			mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_X, aStr);
-		}
+    }
+    else
+    {
+        // no shear, no rotate, no mirror; just add object position to export and we are done
+        if(nFeatures & SEF_EXPORT_X)
+        {
+            // svg: x
+            mrExport.GetMM100UnitConverter().convertDouble(sStringBuffer, rTRTranslate.getX(), true);
+            //mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, FRound(rTRTranslate.getX()));
+            aStr = sStringBuffer.makeStringAndClear();
+            mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_X, aStr);
+        }
 
-		if(nFeatures & SEF_EXPORT_Y)
-		{
-			// svg: y
-			mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, FRound(rTRTranslate.getY()));
-			aStr = sStringBuffer.makeStringAndClear();
-			mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_Y, aStr);
-		}
-	}
+        if(nFeatures & SEF_EXPORT_Y)
+        {
+            // svg: y
+            mrExport.GetMM100UnitConverter().convertDouble(sStringBuffer, rTRTranslate.getY(), true);
+            //mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, FRound(rTRTranslate.getY()));
+            aStr = sStringBuffer.makeStringAndClear();
+            mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_Y, aStr);
+        }
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -827,76 +831,76 @@ void XMLShapeExport::ImpExportRectangleShape(
 //////////////////////////////////////////////////////////////////////////////
 
 void XMLShapeExport::ImpExportLineShape(
-	const uno::Reference< drawing::XShape >& xShape,
-	XmlShapeType, sal_Int32 nFeatures, awt::Point* pRefPoint)
+    const uno::Reference< drawing::XShape >& xShape,
+    XmlShapeType, sal_Int32 nFeatures, awt::Point* pRefPoint)
 {
-	const uno::Reference< beans::XPropertySet > xPropSet(xShape, uno::UNO_QUERY);
-	if(xPropSet.is())
-	{
-		OUString aStr;
-		OUStringBuffer sStringBuffer;
+    const uno::Reference< beans::XPropertySet > xPropSet(xShape, uno::UNO_QUERY);
+    if(xPropSet.is())
+    {
+        OUString aStr;
+        OUStringBuffer sStringBuffer;
 
-		// get matrix
-		basegfx::B2DHomMatrix aMatrix;
-		ImpExportNewTrans_GetB2DHomMatrix(aMatrix, xPropSet);
+        // get matrix
+        basegfx::B2DHomMatrix aMatrix;
+        ImpExportNewTrans_GetB2DHomMatrix(aMatrix, xPropSet);
 
-		// Create the two points directy using the transformation
-		basegfx::B2DPoint aB2DStart(aMatrix * basegfx::B2DPoint(0.0, 0.0));
-		basegfx::B2DPoint aB2DEnd(aMatrix * basegfx::B2DPoint(1.0, 0.0));
+        // Create the two points directy using the transformation
+        basegfx::B2DPoint aB2DStart(aMatrix * basegfx::B2DPoint(0.0, 0.0));
+        basegfx::B2DPoint aB2DEnd(aMatrix * basegfx::B2DPoint(1.0, 0.0));
 
-		if(pRefPoint)
+        if(pRefPoint)
         {
-			const basegfx::B2DPoint aRefPoint(pRefPoint->X, pRefPoint->Y);
-			aB2DStart -= aRefPoint;
-			aB2DEnd -= aRefPoint;
-		}
+            const basegfx::B2DPoint aRefPoint(pRefPoint->X, pRefPoint->Y);
+            aB2DStart -= aRefPoint;
+            aB2DEnd -= aRefPoint;
+        }
 
-		awt::Point aStart(basegfx::fround(aB2DStart.getX()), basegfx::fround(aB2DStart.getY()));
-		awt::Point aEnd(basegfx::fround(aB2DEnd.getX()), basegfx::fround(aB2DEnd.getY()));
+        awt::Point aStart(basegfx::fround(aB2DStart.getX()), basegfx::fround(aB2DStart.getY()));
+        awt::Point aEnd(basegfx::fround(aB2DEnd.getX()), basegfx::fround(aB2DEnd.getY()));
 
-		if( nFeatures & SEF_EXPORT_X )
-		{
-			// svg: x1
-			mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, aStart.X);
-			aStr = sStringBuffer.makeStringAndClear();
-			mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_X1, aStr);
-		}
-		else
-		{
-			aEnd.X -= aStart.X;
-		}
+        if( nFeatures & SEF_EXPORT_X )
+        {
+            // svg: x1
+            mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, aStart.X);
+            aStr = sStringBuffer.makeStringAndClear();
+            mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_X1, aStr);
+        }
+        else
+        {
+            aEnd.X -= aStart.X;
+        }
 
-		if( nFeatures & SEF_EXPORT_Y )
-		{
-			// svg: y1
-			mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, aStart.Y);
-			aStr = sStringBuffer.makeStringAndClear();
-			mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_Y1, aStr);
-		}
-		else
-		{
-			aEnd.Y -= aStart.Y;
-		}
+        if( nFeatures & SEF_EXPORT_Y )
+        {
+            // svg: y1
+            mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, aStart.Y);
+            aStr = sStringBuffer.makeStringAndClear();
+            mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_Y1, aStr);
+        }
+        else
+        {
+            aEnd.Y -= aStart.Y;
+        }
 
-		// svg: x2
-		mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, aEnd.X);
-		aStr = sStringBuffer.makeStringAndClear();
-		mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_X2, aStr);
+        // svg: x2
+        mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, aEnd.X);
+        aStr = sStringBuffer.makeStringAndClear();
+        mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_X2, aStr);
 
-		// svg: y2
-		mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, aEnd.Y);
-		aStr = sStringBuffer.makeStringAndClear();
-		mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_Y2, aStr);
+        // svg: y2
+        mrExport.GetMM100UnitConverter().convertMeasure(sStringBuffer, aEnd.Y);
+        aStr = sStringBuffer.makeStringAndClear();
+        mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_Y2, aStr);
 
-		// write line
-		sal_Bool bCreateNewline( (nFeatures & SEF_EXPORT_NO_WS) == 0 ); // #86116#/#92210#
-		SvXMLElementExport aOBJ(mrExport, XML_NAMESPACE_DRAW, XML_LINE, bCreateNewline, sal_True);
+        // write line
+        sal_Bool bCreateNewline( (nFeatures & SEF_EXPORT_NO_WS) == 0 ); // #86116#/#92210#
+        SvXMLElementExport aOBJ(mrExport, XML_NAMESPACE_DRAW, XML_LINE, bCreateNewline, sal_True);
 
-		ImpExportDescription( xShape ); // #i68101#
-		ImpExportEvents( xShape );
-		ImpExportGluePoints( xShape );
-		ImpExportText( xShape );
-	}
+        ImpExportDescription( xShape ); // #i68101#
+        ImpExportEvents( xShape );
+        ImpExportGluePoints( xShape );
+        ImpExportText( xShape );
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////////
