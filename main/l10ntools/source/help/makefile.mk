@@ -23,8 +23,8 @@
 
 PRJ		= ..$/..
 PRJNAME = l10ntools
-TARGET  = HelpLinker
-LIBBASENAME = helplinker
+TARGET  = X40HelpLinker
+LIBBASENAME = X40helplinker
 PACKAGE = com$/sun$/star$/help
 TARGETTYPE=CUI
 
@@ -100,7 +100,7 @@ JARFILES += lucene-core-2.9.4-dev.jar lucene-analyzers-2.9.4-dev.jar
 JAVAFILES = $(subst,$(CLASSDIR)$/$(PACKAGE)$/, $(subst,.class,.java $(JAVACLASSFILES)))
 
 JARCLASSDIRS	   = $(PACKAGE)/*
-JARTARGET	       = HelpIndexerTool.jar
+JARTARGET	       = X40HelpIndexerTool.jar
 JARCOMPRESS        = TRUE 
  
 # --- Targets ------------------------------------------------------

@@ -31,7 +31,7 @@
     <property name="target" value="jpropex"/>
 
     <!-- name of jar file created, without .jar extension -->
-    <property name="jarname" value="jpropex"/>
+    <property name="jarname" value="X40jpropex"/>
 
     <!-- relative path to project directory -->
     <property name="prj" value="."/>
@@ -140,7 +140,7 @@
     <target name="jar" depends="prepare,compile" if="build.class">
         <jar jarfile="${build.class}/${jarname}.jar"
              basedir="${build.class}"
-             manifest="${jarname}.MF">
+             manifest="jpropex.MF">
                  <include name="**/*.class"/>
                  <include name="**/*.properties"/>
                  <include name="**/*.css"/>

@@ -24,7 +24,7 @@
 
 PRJ=../..
 PRJNAME=transex3
-TARGET=jpropex
+TARGET=X40jpropex
 
 .INCLUDE : ant.mk
 

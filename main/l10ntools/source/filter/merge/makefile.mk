@@ -22,7 +22,7 @@
 
 
 PRJ     = ..$/..$/..
-TARGET  = FCFGMerge
+TARGET  = X40FCFGMerge
 PRJNAME = l10ntools
 PACKAGE = com$/sun$/star$/filter$/config$/tools$/merge
 

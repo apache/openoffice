@@ -26,7 +26,7 @@ PRJ=..
 INCPRE=$(MISC)
 
 PRJNAME=l10ntools
-TARGET=transex
+TARGET=X40transex
 TARGETTYPE=CUI
 LIBTARGET=no
 # --- Settings -----------------------------------------------------
@@ -71,7 +71,7 @@ LIB1OBJFILES=        $(OBJ)$/export.obj      \
 APP1VERSIONMAP=exports.map
 
 # extractor and merger for *.src and *.hrc
-APP1TARGET=  transex3
+APP1TARGET=  X40transex3
 #APP1OBJS=   $(OBJ)$/src_yy.obj
 APP1OBJS=   $(OBJ)$/src_yy_wrapper.obj
 
@@ -87,7 +87,7 @@ APP1STDLIBS+= \
 APP1LIBS+=	$(LB)$/$(TARGET).lib
 APP1DEPN=   $(OBJ)$/src_yy_wrapper.obj $(LB)$/$(TARGET).lib
 
-APP2TARGET= helpex
+APP2TARGET= X40helpex
 APP2OBJS= $(OBJ)$/helpmerge.obj  $(OBJ)$/xmlparse.obj $(OBJ)$/export2.obj $(OBJ)$/utf8conv.obj $(OBJ)$/merge.obj $(OBJ)$/helpex.obj 
 APP2RPATH= NONE
 
@@ -101,7 +101,7 @@ APP2STDLIBS+=$(SALLIB) $(EXPATASCII3RDLIB) $(TOOLSLIB) $(VOSLIB)
 .ENDIF
 
 # extractor and merger for *.lng and *.lng
-APP3TARGET= ulfex
+APP3TARGET= X40ulfex
 APP3OBJS=   $(OBJ)$/lngmerge.obj $(OBJ)$/merge.obj $(OBJ)$/export2.obj $(OBJ)$/lngex.obj $(OBJ)$/utf8conv.obj
 APP3RPATH=  NONE
 
@@ -117,7 +117,7 @@ APP3STDLIBS+= \
 .ENDIF
 
 # encoding converter for *.gsi
-APP4TARGET= gsiconv
+APP4TARGET= X40gsiconv
 APP4OBJS=   $(OBJ)$/utf8conv.obj $(OBJ)$/gsiconv.obj
 APP4STDLIBS+= \
             $(TOOLSLIB) \
@@ -125,7 +125,7 @@ APP4STDLIBS+= \
             $(SALLIB)
 
 # tag checker for *.gsi
-APP5TARGET= gsicheck
+APP5TARGET= X40gsicheck
 APP5OBJS=   $(OBJ)$/gsicheck.obj $(OBJ)$/tagtest.obj
 APP5STDLIBS+= \
             $(TOOLSLIB) \
@@ -133,7 +133,7 @@ APP5STDLIBS+= \
             $(SALLIB)
 
 # extractor and merger for *.cfg
-APP6TARGET= cfgex
+APP6TARGET= X40cfgex
 APP6OBJS=   $(OBJ)$/cfgmerge.obj $(OBJ)$/cfg_yy_wrapper.obj  $(OBJ)$/merge.obj $(OBJ)$/export2.obj $(OBJ)$/utf8conv.obj
 
 .IF "$(OS)"!="MACOSX"
@@ -150,7 +150,7 @@ APP6STDLIBS+= \
 .ENDIF
 
 # extractor and merger for *.xrm
-APP7TARGET= xrmex
+APP7TARGET= X40xrmex
 APP7OBJS=   $(OBJ)$/xrmmerge.obj $(OBJ)$/xrm_yy_wrapper.obj $(OBJ)$/merge.obj $(OBJ)$/export2.obj $(OBJ)$/utf8conv.obj
 APP7RPATH=  NONE
 
@@ -186,7 +186,7 @@ APP8LIBSALCPPRT=
 
 
 # localizer for l10n framework
-APP9TARGET= localize_sl
+APP9TARGET= X40localize_sl
 EXCEPTIONSFILES=                            \
                     $(OBJ)$/localize.obj
 APP9OBJS=   $(OBJ)$/localize.obj $(OBJ)$/utf8conv.obj $(OBJ)$/srciter.obj $(OBJ)$/export2.obj $(OBJ)$/file.obj $(OBJ)$/directory.obj $(OBJ)$/treeconfig.obj $(OBJ)$/inireader.obj
