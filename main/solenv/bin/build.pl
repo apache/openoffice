@@ -1576,7 +1576,6 @@ sub get_options {
     };
     $grab_output = 0 if ($dont_grab_output);
     print_error('Switches --with_branches and --all collision') if ($build_from_with_branches && $build_all_cont);
-    print_error('Switch --genPO requires --all') if ($build_genPO && !$build_all_parents);
     print_error('Switch --skip is for building multiple modules only!!') if ((scalar keys %skip_modules) && (!$build_all_parents));
 #    print_error('Please prepare the workspace on one of UNIX platforms') if ($prepare && ($ENV{GUI} ne 'UNX'));
     print_error('Switches --with_branches and --since collision') if ($build_from_with_branches && $build_since);
@@ -2024,8 +2023,6 @@ sub run_job {
     chdir $path;
     getcwd();
     
-    print "jan test: $job_to_do\n";
-
     if ($html) {
         my $log_file = $jobs_hash{$registered_name}->{LONG_LOG_PATH};
         my $log_dir = File::Basename::dirname($log_file);
