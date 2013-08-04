@@ -98,6 +98,7 @@
     my $dependencies_hash = 0;
     my $cmd_file = '';
     my $build_all_parents = 0;
+    my $build_genPO = 0;
     my $show = 0;
     my $checkparents = 0;
     my $deliver = 0;
@@ -784,11 +785,18 @@ sub dmake_dir {
                 print_error("\n$job_name not found!!\n");
             }
         }
+
+        my $corDmake;
+        if ($build_genPO == 1) {
+          $corDmake = "$dmake genPO";
+        } else {
+          $corDmake = "$dmake";
+        }
         if ($cmd_file) {
             print "cd $job_name\n";
             print $check_error_string;
             print $echo.$job_name."\n";
-            print "$dmake\n";
+            print "$corDmake\n";
             print $check_error_string;
         } else {
             print "\n" if ( ! $show );
@@ -796,7 +804,7 @@ sub dmake_dir {
         };
         remove_from_dependencies($job_name, \%local_deps_hash) if (!$child);
         return if ($cmd_file || $show);
-        $error_code = run_job($dmake, $job_name);
+        $error_code = run_job($corDmake, $job_name);
         html_store_job_info(\%local_deps_hash, $job_name, $error_code) if (!$child);
     };
     
@@ -1416,7 +1424,7 @@ sub print_error {
 
 sub usage {
     print STDERR "\nbuild\n";
-    print STDERR "Syntax:    build    [--all|-a[:prj_name]]|[--from|-f prj_name1[:prj_name2] [prj_name3 [...]]]|[--since|-c prj_name] [--with_branches prj_name1[:prj_name2] [--skip prj_name1[:prj_name2] [prj_name3 [...]] [prj_name3 [...]|-b]|[--prepare|-p][:platform] [--deliver|-d [--dlv_switch deliver_switch]]] [-P processes|--server [--setenvstring \"string\"] [--client_timeout MIN] [--port port1[:port2:...:portN]]] [--show|-s] [--help|-h] [--file|-F] [--ignore|-i] [--version|-V] [--mode|-m OOo[,SO[,EXT]] [--html [--html_path html_file_path] [--dontgraboutput]] [--pre_job=pre_job_sring] [--job=job_string|-j] [--post_job=post_job_sring] [--stoponerror] [--genconf [--removeall|--clear|--remove|--add [module1,module2[,...,moduleN]]]] [--exclude_branch_from prj_name1[:prj_name2] [prj_name3 [...]]] [--interactive]\n";
+    print STDERR "Syntax:    build    [--all|-a[:prj_name]]|[--from|-f prj_name1[:prj_name2] [prj_name3 [...]]]|[--since|-c prj_name] [--with_branches prj_name1[:prj_name2] [--skip prj_name1[:prj_name2] [prj_name3 [...]] [prj_name3 [...]|-b]|[--prepare|-p][:platform] [--deliver|-d [--dlv_switch deliver_switch]]] [-P processes|--server [--setenvstring \"string\"] [--client_timeout MIN] [--port port1[:port2:...:portN]]] [--show|-s] [--help|-h] [--file|-F] [--ignore|-i] [--version|-V] [--mode|-m OOo[,SO[,EXT]] [--html [--html_path html_file_path] [--dontgraboutput]] [--pre_job=pre_job_sring] [--job=job_string|-j] [--post_job=post_job_sring] [--stoponerror] [--genconf [--removeall|--clear|--remove|--add [module1,module2[,...,moduleN]]]] [--exclude_branch_from prj_name1[:prj_name2] [prj_name3 [...]]] [--interactive] --genPO\n";
     print STDERR "Example1:    build --from sfx2\n";
     print STDERR "                     - build all projects dependent from sfx2, starting with sfx2, finishing with the current module\n";
     print STDERR "Example2:    build --all:sfx2\n";
@@ -1426,9 +1434,12 @@ sub usage {
     print STDERR "Example4(for unixes):\n";
     print STDERR "             build --all --pre_job=echo\\ Starting\\ job\\ in\\ \\\$PWD --job=some_script.sh --post_job=echo\\ Job\\ in\\ \\\$PWD\\ is\\ made\n";
     print STDERR "                     - go through all projects, echo \"Starting job in \$PWD\" in each module, execute script some_script.sh, and finally echo \"Job in \$PWD is made\"\n";
+    print STDERR "Example5:    build --all --genPO\n";
+    print STDERR "                     - extract translations info (PO files) from all projects (no build/deliver performed!!)\n";
     print STDERR "\nSwitches:\n";
     print STDERR "        --all        - build all projects from very beginning till current one\n";
     print STDERR "        --from       - build all projects dependent from the specified (including it) till current one\n";
+    print STDERR "        --genPO      - extract en-US PO file(s), no build/deliver (usable for \'-all\' and \'-from\' keys)\n";
     print STDERR "        --exclude_branch_from    - exclude module(s) and its branch from the build\n";
     print STDERR "        --mode OOo   - build only projects needed for OpenOffice.org\n";
     print STDERR "        --prepare    - clear all projects for incompatible build from prj_name till current one [for platform] (cws version)\n";
@@ -1476,6 +1487,7 @@ sub get_options {
         $arg =~ /^-P$/            and $processes_to_run = shift @ARGV     and next;
         $arg =~ /^-P(\d+)$/            and $processes_to_run = $1 and next;
         $arg =~ /^--all$/        and $build_all_parents = 1             and next;
+        $arg =~ /^--genPO$/        and $build_genPO = 1             and next;
         $arg =~ /^-a$/        and $build_all_parents = 1             and next;
         $arg =~ /^--show$/        and $show = 1                         and next;
         $arg =~ /^--checkmodules$/       and $checkparents = 1 and $ignore = 1 and next;
@@ -1564,6 +1576,7 @@ sub get_options {
     };
     $grab_output = 0 if ($dont_grab_output);
     print_error('Switches --with_branches and --all collision') if ($build_from_with_branches && $build_all_cont);
+    print_error('Switch --genPO requires --all') if ($build_genPO && !$build_all_parents);
     print_error('Switch --skip is for building multiple modules only!!') if ((scalar keys %skip_modules) && (!$build_all_parents));
 #    print_error('Please prepare the workspace on one of UNIX platforms') if ($prepare && ($ENV{GUI} ne 'UNX'));
     print_error('Switches --with_branches and --since collision') if ($build_from_with_branches && $build_since);
@@ -2011,6 +2024,8 @@ sub run_job {
     chdir $path;
     getcwd();
     
+    print "jan test: $job_to_do\n";
+
     if ($html) {
         my $log_file = $jobs_hash{$registered_name}->{LONG_LOG_PATH};
         my $log_dir = File::Basename::dirname($log_file);
