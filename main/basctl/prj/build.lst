@@ -1,5 +1,6 @@
 bc	basctl	: LIBXSLT:libxslt languages svx NULL
 bc	basctl									usr1	-	all	bc_mkout NULL
+bc	basctl\source								nmake	-	all	bc_source NULL
 bc	basctl\inc								nmake	-	all	bc_inc NULL
 bc	basctl\source\inc						get		-	all	bc_sinc NULL
 bc	basctl\sdi								nmake	-	all	bc_sdi NULL

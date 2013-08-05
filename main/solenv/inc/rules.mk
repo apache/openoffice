@@ -24,6 +24,7 @@
 MKFILENAME:=RULES.MK
 
 $(OBJ)/%.obj : %.cxx
+      @echo "jan var her"
 	@echo $(COMPILE_ECHO_SWITCH) Compiling: $(PRJNAME)/$(PATH_IN_MODULE)/$(COMPILE_ECHO_FILE)
 .IF "$(GUI)"=="UNX"
 	@$(RM) $@ $(@:s/.obj/.o/)
