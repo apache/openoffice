@@ -37,7 +37,7 @@ TARGET = connectivity
 # the first item from $(MY_XCUS) is arbitrarily taken to be the main
 # prerequisite while all the items from $(MY_XCUS) are made into indirect
 # prerequisites (harmlessly doubling the first item).
-
+.IF "$(MAKETARGETS)"!="genPO"
 MY_XCUS := \
     $(shell cd $(MISC)/registry/data/org/openoffice/Office/DataAccess && \
     ls *.xcu)
@@ -55,4 +55,5 @@ $(BIN)/fcfg_drivers_%.zip : \
         $(foreach,i,$(MY_XCUS) \
             $(MISC)/registry/res/$*/org/openoffice/Office/DataAccess/$i)
 
+.ENDIF
 .ENDIF

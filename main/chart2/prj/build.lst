@@ -1,5 +1,6 @@
 ch	chart2	:    offapi offuh languages comphelper cppu cppuhelper sal svtools svx tools vcl toolkit unotools sfx2 LIBXSLT:libxslt NULL
 ch	chart2										usr1	-	all	ch_mkout NULL
+ch	chart2\source									nmake	-	all	ch_source NULL
 ch	chart2\inc									nmake	-	all	ch_inc NULL
 ch	chart2\source\inc							get		-	all	ch_source_inc NULL
 ch	chart2\source\inc\chartview					get		-	all	ch_source_inc_chartview NULL

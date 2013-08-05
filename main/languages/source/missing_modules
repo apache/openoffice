@@ -3,9 +3,9 @@ accessibility                  transex3
 avmedia                        ? transex3
 basctl                         ? transex3
 basic                          ? transex3
-chart2                         EXTRACT ? transex3
-connectivity                   EXTRACT ? transex3, cfgex
-crashrep                       EXTRACT ?
+chart2                         ? transex3
+connectivity                   ? transex3, cfgex
+crashrep                       ?
 cui                            EXTRACT ?NO lang dep?
 dbaccess                       EXTRACT ? transex3
 desktop                        EXTRACT ?*ONLY CMD libhelplinker.so*? transex3
