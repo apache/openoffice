@@ -19,29 +19,37 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=basic
+TARGET=none
+
+LANGUAGE_FILELIST="\
+abpilot/abspilot.src,\
+bibliography/bib.src,\
+bibliography/datman.src,\
+bibliography/sections.src,\
+bibliography/toolbar.src,\
+dbpilots/commonpagesdbp.src,\
+dbpilots/dbpilots.src,\
+dbpilots/gridpages.src,\
+dbpilots/groupboxpages.src,\
+dbpilots/listcombopages.src,\
+preload/preload.src,\
+propctrlr/fontdialog.src,\
+propctrlr/formlinkdialog.src,\
+propctrlr/formres.src,\
+propctrlr/newdatatype.src,\
+propctrlr/pcrmiscres.src,\
+propctrlr/propres.src,\
+propctrlr/selectlabeldialog.src,\
+propctrlr/taborder.src,\
+scanner/grid.src,\
+scanner/sanedlg.src,\
+update/check/Addons.xcu,\
+update/check/updatehdl.src\
+"
 
 
-.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
-nothing .PHONY:
-.INCLUDE: target.mk
-.ELSE
+.INCLUDE :	settings.mk
 
-PRJ = ../..
-PRJNAME = forms
-TARGET = qa_unoapi
-
-.IF "$(OOO_JUNIT_JAR)" != ""
-PACKAGE = org/openoffice/forms/qa/unoapi
-JAVATESTFILES = Test.java
-JAVAFILES = $(JAVATESTFILES)
-JARFILES = OOoRunner.jar ridl.jar test.jar
-EXTRAJARFILES = $(OOO_JUNIT_JAR)
-.END
-
-.INCLUDE: settings.mk
-.INCLUDE: target.mk
-.INCLUDE: installationtest.mk
-
-ALLTAR : javatest
-
-.END
+.INCLUDE :	target.mk

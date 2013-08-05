@@ -6,15 +6,15 @@ basic                          ? transex3
 chart2                         ? transex3
 connectivity                   ? transex3, cfgex
 crashrep                       ?
-cui                            ?NO lang dep?
+cui                            ?
 dbaccess                       ? transex3
 desktop                        ?*ONLY CMD libhelplinker.so*? transex3
 editeng                        ? transex3
-extensions                     EXTRACT ?
-filter                         EXTRACT ?*cfgex, FCFGMerge.jar*? transex3, cfgex
-forms                          EXTRACT ? transex3, cfgex
-formula                        EXTRACT ?NO lang dep? transex3
-fpicker                        EXTRACT transex3
+extensions                     ?
+filter                         ?*cfgex, FCFGMerge.jar*? transex3, cfgex
+forms                          ? transex3, cfgex
+formula                        ? transex3
+fpicker                        transex3
 framework                      EXTRACT ?*cfgex*? transex3
 helpcontent2                   EXTRACT ?*extras, helpex HelpLinker*? helpex
 instsetoo_native               EXTRACT ?"libhelplinker.so*? ?no files selected?

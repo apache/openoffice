@@ -1304,7 +1304,7 @@ TRUSTED_MANIFEST_LOCATION*=$(SOLARENV)/inc
 
 # --- include typelists --------------------------------------------
 
-.IF "$(COMP1TYPELIST)"!=""
+.IF "$(COMP1TYPELIST)"!="" && "$(MAKETARGETS)"!="genPO"
 .INCLUDE .IGNORE : $(MISC)/$(COMP1TYPELIST).mk
 $(COMP1TYPELIST)_XML2CMPTYPES:=$(shell @$(AUGMENT_LIBRARY_PATH) $(SOLARBINDIR)/xml2cmp -types stdout $(MISC)/$(COMP1TYPELIST)$($(WINVERSIONNAMES)_MAJOR).xml)
 .ENDIF

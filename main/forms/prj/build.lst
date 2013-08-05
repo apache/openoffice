@@ -1,5 +1,6 @@
 fm	forms	:    languages oovbaapi svx sfx2 qadevOOo LIBXSLT:libxslt NULL
 fm  forms                                   usr1    -   all fm_mkofrm NULL
+fm	forms\source								nmake	-	all	fm_source NULL
 fm	forms\inc								nmake	-	all	fm_inc NULL
 fm	forms\source\inc						get		-	all	fm_sinc NULL
 fm	forms\source\component					nmake	-	all	fm_component fm_inc NULL

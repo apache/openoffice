@@ -576,6 +576,7 @@ $(MISC)/%.dpr :
 
 $(MISC)/%.dpz :
 	@@noop
+.IF "$(MAKETARGETS)"!="genPO"
 .IF "$(nodep)"==""
 	@echo "Making:   " $(@:f)
     @@-$(RM) $@
@@ -584,6 +585,7 @@ $(MISC)/%.dpz :
 	@echo zipdep_langs=$(alllangiso) >> $@
 	@@-$(RM) $(ZIPDEPFILES)
 .ENDIF			# "$(nodep)"==""
+.ENDIF
 
 # Dependencies fuer java - Files
 
@@ -664,7 +666,10 @@ $(OUT)/ucrdoc/$(IDLPACKAGE)/%.urd : %.idl
 
 # make *.xml descriptions available in $(MISC)
 $(MISC)/%$($(WINVERSIONNAMES)_MAJOR).xml : %.xml
+    @noop
+.IF "$(MAKETARGETS)"!="genPO"
     $(COMMAND_ECHO)$(COPY) $< $@
+.ENDIF
 
 # dummy rule to make sure xml file is in place when used in settings.mk
 $(MISC)/%.mk : $(MISC)/%$($(WINVERSIONNAMES)_MAJOR).xml

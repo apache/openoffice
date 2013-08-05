@@ -1,6 +1,7 @@
 fl      filter  :   languages svtools unotools xmloff cppu tools cppuhelper sal svx javaunohelper jvmaccess canvas SAXON:saxon LIBXSLT:libxslt basegfx NULL
 fl	filter									usr1	-	all	fl_mkout			NULL
 fl	filter\prj								get		-	all	fl_prj				NULL
+fl	filter\source								nmake	-	all	fl_source				NULL
 fl	filter\inc								nmake	-	all	fl_inc				NULL
 fl	filter\source\xmlfilteradaptor			nmake	-	all	fl_xmlfilteradaptor	fl_inc NULL
 fl	filter\source\xmlfilterdetect			nmake	-	all	fl_xmlfilterdetect	fl_inc NULL

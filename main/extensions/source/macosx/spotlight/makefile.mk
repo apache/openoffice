@@ -28,6 +28,9 @@ TARGET=spotlightplugin
 # --- Settings ----------------------------------
 .INCLUDE : settings.mk
 
+.IF "$(MAKEFLAGS)"!="genPO"
+.INCLUDE : target.mk
+.ELSE
 .IF "$(OS)"!="MACOSX"
 dummy:
     @echo Not using Mac OS X - nothing to build
@@ -93,3 +96,4 @@ $(RESOURCES)$/% : mdimporter/%
     $(MKDIRHIER) $(@:d)
     $(COPY) "$<" "$@"
 
+.ENDIF

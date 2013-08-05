@@ -1,6 +1,7 @@
 ex  extensions :  officecfg  languages rdbmaker svx SANE:sane TWAIN:twain offuh stoc ZLIB:zlib CURL:curl LIBXSLT:libxslt NULL
 
 ex  extensions                                  usr1    -   all ex_mkout NULL
+ex  extensions\source                              nmake   -   all ex_source NULL
 ex  extensions\inc                              nmake   -   all ex_inc NULL
 ex  extensions\inc\ucbhelper                    get     -   all ex_incucbh ex_inc NULL
 ex  extensions\source\activex\msidl             nmake   -   w   ex_axmsidl ex_inc NULL

@@ -1,4 +1,5 @@
 fp	fpicker	: LIBXSLT:libxslt languages rdbmaker svtools NULL
+fp	fpicker\source							nmake	-	all	fp_source NULL
 fp	fpicker\inc							nmake	-	all	fp_inc NULL
 fp	fpicker\source\generic				nmake	-	all	fp_generic fp_inc NULL
 fp	fpicker\source\office				nmake	-	all	fp_office fp_inc NULL

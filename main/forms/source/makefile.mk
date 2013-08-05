@@ -19,29 +19,13 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=forms
+TARGET=none
+
+LANGUAGE_FILELIST="resource/strings.src,resource/xforms.src"
 
 
-.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
-nothing .PHONY:
-.INCLUDE: target.mk
-.ELSE
+.INCLUDE :	settings.mk
 
-PRJ = ../..
-PRJNAME = forms
-TARGET = qa_unoapi
-
-.IF "$(OOO_JUNIT_JAR)" != ""
-PACKAGE = org/openoffice/forms/qa/unoapi
-JAVATESTFILES = Test.java
-JAVAFILES = $(JAVATESTFILES)
-JARFILES = OOoRunner.jar ridl.jar test.jar
-EXTRAJARFILES = $(OOO_JUNIT_JAR)
-.END
-
-.INCLUDE: settings.mk
-.INCLUDE: target.mk
-.INCLUDE: installationtest.mk
-
-ALLTAR : javatest
-
-.END
+.INCLUDE :	target.mk

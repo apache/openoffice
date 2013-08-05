@@ -1654,6 +1654,7 @@ $(MISC)/$(TARGET)_%.done : %.xrb
 .IF "$(make_zip_deps)"==""
 .IF "$(ZIP1TARGET)" != "" || "$(ZIP2TARGET)" != "" || "$(ZIP3TARGET)" != ""
 .IF "$(nodep)"==""
+.IF "$(MAKETARGETS)"!="genPO"
 .INCLUDE : $(MISC)/$(TARGET).dpz
 # introduce separation char
 missing_zipdep_langs=$(alllangiso:^"+":+"+")
@@ -1662,6 +1663,7 @@ some_dummy_var:=$(foreach,i,$(zipdep_langs) $(assign missing_zipdep_langs:=$(str
 ZIPDEPPHONY=.PHONY
 .ENDIF			# "$(missing_zipdep_langs)"!=""
 .ENDIF			# "$(nodep)"==""
+.ENDIF
 .ENDIF
 .ENDIF
 
@@ -2088,7 +2090,8 @@ some_unique_variable_name:=1
 
 genPO:
 .IF "$(LANGUAGE_FILELIST)" != ""
-     @echo "extraction from $(LANGUAGE_FILELIST)"
+#     @echo "extraction from $(LANGUAGE_FILELIST)"
+     @echo "------> ------> extraction CALLED"
 .ELSE
      @echo "No language files to extract"
 .ENDIF

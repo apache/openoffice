@@ -63,7 +63,6 @@ DEF1NAME=	$(SHL1TARGET)
 .INCLUDE : target.mk
 
 ALLTAR : $(MISC)/placeware.component
-
 $(MISC)/placeware.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
         placeware.component
     $(XSLTPROC) --nonet --stringparam uri \
