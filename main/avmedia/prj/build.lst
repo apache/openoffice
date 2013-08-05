@@ -2,6 +2,7 @@ av	avmedia	:    languages tools sfx2 LIBXSLT:libxslt NULL
 av	avmedia                 	usr1	-	all	av_mkout												NULL
 av	avmedia\prj					get		-	all	av_prj													NULL
 av	avmedia\inc					get		-	all	av_inv													NULL
+av  avmedia\source		nmake	-	all	av_source        									NULL
 av  avmedia\source\viewer		nmake	-	all	av_viewer	        									NULL
 av  avmedia\source\framework	nmake	-	all	av_framework	        								NULL
 av  avmedia\source\win	    	nmake	-	all	av_win	            									NULL

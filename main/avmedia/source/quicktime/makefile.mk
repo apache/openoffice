@@ -73,12 +73,12 @@ SHL1VERSIONMAP=$(SOLARENV)/src/component.map
 
 # --- Targets ------------------------------------------------------
 
-.INCLUDE : target.mk
 
 .ELSE
 dummy:
 	@echo " Nothing to build for GUIBASE=$(GUIBASE)"
 .ENDIF
+.INCLUDE : target.mk
 
 ALLTAR : $(MISC)/avmediaQuickTime.component
 

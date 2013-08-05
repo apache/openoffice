@@ -465,12 +465,15 @@ $(SLO)/%.obj : %.mm
 .ENDIF			# "$(OS)"=="MACOSX"
 
 $(MISC)/%.dpslo :
+	@@noop
+.IF "$(MAKETARGETS)"!="genPO"
 	@echo "Making:   " $(@:f)
 	@@$(RM) $@
 	@@-$(CDD) $(MISC) && $(!null,$(all_local_slo) $(TYPE:s/+//) echo #) $(foreach,i,$(all_local_slo:b:+".dpcc") s_$(i)) > $(@:f)
 	@@-$(CDD) $(MISC) && $(!null,$(all_misc_slo) $(TYPE:s/+//) echo #) $(foreach,i,$(all_misc_slo:b:+".dpcc") s_$(i)) >> $(@:f)
 	@$(TYPE) $(mktmp $(foreach,i,$(all_local_slo:b:+".dpcc") $(@:s#\#/#:^"\n") : $(MISC:s#\#/#)/s_$i) $(foreach,i,$(all_misc_slo:b:+".dpcc") $(@:s#\#/#:^"\n") : $(MISC:s#\#/#)/s_$i)) >> $@
 	@$(TYPE) $(mktmp $(TARGET)_known_dpcc+=$(all_local_slo:b:+".dpcc":^"s_") $(all_misc_slo:b:+".dpcc":^"s_")) >> $@
+.ENDIF
 
 $(MISC)/%.dpobj :
 	@echo "Making:   " $(@:f)

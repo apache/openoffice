@@ -20,10 +20,10 @@
 #**************************************************************
 
 PRJ=..
-PRJNAME=accessibility
-TARGET=helper
+PRJNAME=avmedia
+TARGET=none
 
-LANGUAGE_FILELIST="helper/accessiblestrings.src"
+LANGUAGE_FILELIST="framework/mediacontrol.src,viewer/mediawindow.src"
 
 .INCLUDE :	settings.mk
 
