@@ -1345,7 +1345,7 @@ $(HXXCOPYTARGET):	$(HXXCOPYFILES)
 
 .IF "$(UNIXTEXT)"!=""
 $(UNIXTEXT) : $(UNIXTEXT:f)
-	@echo "Making:   " $@
+	@echo "XX1 Making:   " $@
 	@@-$(RM) -f $@
 	@tr -d "\015" < $(@:f) > $@
 
@@ -1640,7 +1640,7 @@ $(MISC)/$(TARGET)_%.done : %.xrb
 .ELSE		# MAKEFILERC
 .ENDIF		# MAKEFILERC
 
-.IF "$(make_srs_deps)"==""
+.IF "$(make_srs_deps)"=="" && "$(MAKETARGETS)"!="genPO"
 .IF "$(SRCFILES)" != "" || "$(SRC1FILES)" != "" || "$(SRC2FILES)" != ""
 .IF "$(nodep)"==""
 .INCLUDE : $(MISC)/$(TARGET).dpr
@@ -1991,7 +1991,7 @@ UNOUCRDEPxxx : $(UNOUCRDEP);
 
 ##new hid.lst trigger with GEN_HID2=TRUE
 #$(subst,$(OUTPATH),$(COMMON_OUTDIR) $(BIN))/hid.lst .PHONY :
-#	@echo "Making:   " $@
+#	@echo "xx2 Making:   " $@
 #	@echo $(WORK_STAMP).$(LAST_MINOR) 010101010101010 > $@.$(ROUT).tmp
 #	$(COMMAND_ECHO)$(TYPE) $(SOLARCOMMONBINDIR)/hid/*.hid | tr -d "\015" | $(SORT) -u >> $@.$(ROUT).tmp 
 #	@$(IFEXIST) $@ $(THEN) $(RM:s/+//) $@ $(FI)
@@ -2082,3 +2082,12 @@ $(SUBDIRS) .PHONY :
 # if the previous block was a rule or a target, "\#" isn't recognized
 # as an escaped "#". if it was an assignment, escaping works...
 some_unique_variable_name:=1
+
+genPO:
+.IF "$(LANGUAGE_FILELIST)" != ""
+     @echo "extraction from $(LANGUAGE_FILELIST)"
+.ELSE
+     @echo "No language files to extract"
+.ENDIF
+
+

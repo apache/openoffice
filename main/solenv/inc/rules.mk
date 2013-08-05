@@ -562,10 +562,12 @@ $(MISC)/%.dprc :
 $(MISC)/%.dpr :
 	@@noop
 .IF "$(nodep)"==""
+.IF "$(MAKETARGETS)"!="genPO"
 	@echo "Making:   " $(@:f)
     @@-$(RM) $@
 	$(COMMAND_ECHO)dmake $(MFLAGS) $(MAKEFILE) $(CALLMACROS) make_srs_deps=true $(DEPSRSFILES)
 	$(COMMAND_ECHO)-$(TYPE) $(MISC)/$(TARGET).*.dprr >> $@
+.ENDIF
 .ENDIF			# "$(nodep)"==""
 
 $(MISC)/%.dpz :
@@ -582,7 +584,9 @@ $(MISC)/%.dpz :
 # Dependencies fuer java - Files
 
 $(MISC)/%.dpj :
-	@echo "Making:   " $(@:f)
+        @noop
+.IF "$(MAKETARGETS)"!="genPO"
+	@echo "jAN Making:   " $(@:f)
 .IF "$(nodep)"!=""
 .IF "$(GUI)"=="UNX"
 	@echo > $@
@@ -597,6 +601,7 @@ $(MISC)/%.dpj :
 	@echo $(shell @$(STARDEP) @$(mktmp -o $@ -i $(CLASSDIR) $(foreach,i,$(JAVADEPINCLUDES:s/;/ /) -i $i) $(JAVACLASSFILES)))
 .ENDIF
 .ENDIF			# "$(nodep)"==""
+.ENDIF
 
 $(SLO)/%.obj : %.asm
 	   @echo $(COMPILE_ECHO_SWITCH) Compiling: $(PRJNAME)/$(PATH_IN_MODULE)/$(COMPILE_ECHO_FILE)
