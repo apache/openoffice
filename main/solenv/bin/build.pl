@@ -786,17 +786,11 @@ sub dmake_dir {
             }
         }
 
-        my $corDmake;
-        if ($build_genPO == 1) {
-          $corDmake = "$dmake genPO";
-        } else {
-          $corDmake = "$dmake";
-        }
         if ($cmd_file) {
             print "cd $job_name\n";
             print $check_error_string;
             print $echo.$job_name."\n";
-            print "$corDmake\n";
+            print "$dmake\n";
             print $check_error_string;
         } else {
             print "\n" if ( ! $show );
@@ -804,7 +798,7 @@ sub dmake_dir {
         };
         remove_from_dependencies($job_name, \%local_deps_hash) if (!$child);
         return if ($cmd_file || $show);
-        $error_code = run_job($corDmake, $job_name);
+        $error_code = run_job($dmake, $job_name);
         html_store_job_info(\%local_deps_hash, $job_name, $error_code) if (!$child);
     };
     
@@ -1487,7 +1481,7 @@ sub get_options {
         $arg =~ /^-P$/            and $processes_to_run = shift @ARGV     and next;
         $arg =~ /^-P(\d+)$/            and $processes_to_run = $1 and next;
         $arg =~ /^--all$/        and $build_all_parents = 1             and next;
-        $arg =~ /^--genPO$/        and $build_genPO = 1             and next;
+        $arg =~ /^--genPO$/        and push (@dmake_args, "genPO")        and next;
         $arg =~ /^-a$/        and $build_all_parents = 1             and next;
         $arg =~ /^--show$/        and $show = 1                         and next;
         $arg =~ /^--checkmodules$/       and $checkparents = 1 and $ignore = 1 and next;
