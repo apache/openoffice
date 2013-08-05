@@ -19,28 +19,13 @@
 #  
 #**************************************************************
 
-
-
 PRJ=..
-TARGET=prj
+PRJNAME=basic
+TARGET=none
 
-.INCLUDE : settings.mk
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
+LANGUAGE_FILELIST="classes/sb.src,sbx/format.src"
 
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
 
-genPO:
-	cd $(PRJ)/source && dmake genPO
+.INCLUDE :	settings.mk
 
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+.INCLUDE :	target.mk

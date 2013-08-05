@@ -6,10 +6,10 @@ basic                          ? transex3
 chart2                         ? transex3
 connectivity                   ? transex3, cfgex
 crashrep                       ?
-cui                            EXTRACT ?NO lang dep?
-dbaccess                       EXTRACT ? transex3
-desktop                        EXTRACT ?*ONLY CMD libhelplinker.so*? transex3
-editeng                        EXTRACT ? transex3
+cui                            ?NO lang dep?
+dbaccess                       ? transex3
+desktop                        ?*ONLY CMD libhelplinker.so*? transex3
+editeng                        ? transex3
 extensions                     EXTRACT ?
 filter                         EXTRACT ?*cfgex, FCFGMerge.jar*? transex3, cfgex
 forms                          EXTRACT ? transex3, cfgex

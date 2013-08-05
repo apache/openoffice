@@ -19,28 +19,22 @@
 #  
 #**************************************************************
 
-
-
 PRJ=..
-TARGET=prj
+PRJNAME=basctl
+TARGET=none
 
-.INCLUDE : settings.mk
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
+LANGUAGE_FILELIST="\
+gbasicide/basicprint.src,\
+gbasicide/basidesh.src,\
+gbasicide/brkdlg.src,\
+gbasicide/macrodlg.src,\
+gbasicide/moduldlg.src,\
+gbasicide/moptions.src,\
+gbasicide/objdlg.src,\
+gdlged/dlgresid.src,\
+gdlged/managelang.src"
 
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
 
-genPO:
-	cd $(PRJ)/source && dmake genPO
+.INCLUDE :	settings.mk
 
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+.INCLUDE :	target.mk
