@@ -71,13 +71,13 @@ SdPage* DocumentHelper::CopyMasterPageToLocalDocument (
         // present.  This is not the case when we are called during the
         // creation of the slide master page because then the notes master
         // page is not there.
-        sal_uInt16 nSourceMasterPageCount = pSourceDocument->GetMasterPageCount();
+        const sal_uInt32 nSourceMasterPageCount(pSourceDocument->GetMasterPageCount());
         if (nSourceMasterPageCount%2 == 0)
             // There should be 1 handout page + n slide masters + n notes
             // masters = 2*n+1.  An even value indicates that a new slide
             // master but not yet the notes master has been inserted.
             break;
-        sal_uInt16 nIndex = pMasterPage->GetPageNumber();
+        const sal_uInt32 nIndex(pMasterPage->GetPageNumber());
         if (nSourceMasterPageCount <= nIndex+1)
             break;
         // Get the slide master page.
@@ -94,7 +94,7 @@ SdPage* DocumentHelper::CopyMasterPageToLocalDocument (
         // Check if a master page with the same name as that of the given
         // master page already exists.
         bool bPageExists (false);
-        sal_uInt16 nMasterPageCount(rTargetDocument.GetMasterSdPageCount(PK_STANDARD));
+        const sal_uInt32 nMasterPageCount(rTargetDocument.GetMasterSdPageCount(PK_STANDARD));
         for (sal_uInt16 nMaster=0; nMaster<nMasterPageCount; nMaster++)
         {
             SdPage* pCandidate = static_cast<SdPage*>(
@@ -173,7 +173,7 @@ SdPage* DocumentHelper::GetSlideForMasterPage (SdPage* pMasterPage)
     {
         // In most cases a new slide has just been inserted so start with
         // the last page.
-        sal_uInt16 nPageIndex (pDocument->GetSdPageCount(PK_STANDARD)-1);
+        sal_uInt32 nPageIndex(pDocument->GetSdPageCount(PK_STANDARD) - 1);
         bool bFound (false);
         while ( ! bFound)
         {
@@ -233,7 +233,7 @@ SdPage* DocumentHelper::AddMasterPage (
             // master page.
             rTargetDocument.InsertMasterPage (pClonedMasterPage);
         }
-        catch (uno::Exception& rException)
+        catch (uno::Exception& /*rException*/)
         {
             pClonedMasterPage = NULL;
             DBG_UNHANDLED_EXCEPTION();
@@ -361,7 +361,7 @@ void DocumentHelper::AssignMasterPageToPageList (
 SdPage* DocumentHelper::AddMasterPage (
     SdDrawDocument& rTargetDocument,
     SdPage* pMasterPage,
-    sal_uInt16 nInsertionIndex)
+    sal_uInt32 nInsertionIndex)
 {
     SdPage* pClonedMasterPage = NULL;
 
@@ -456,8 +456,8 @@ void DocumentHelper::AssignMasterPageToPage (
     {
         // Find first slide that uses the master page.
         SdPage* pSlide = NULL;
-        sal_uInt16 nPageCount = pDocument->GetSdPageCount(PK_STANDARD);
-        for (sal_uInt16 nPage=0; nPage<nPageCount&&pSlide==NULL; nPage++)
+        const sal_uInt32 nPageCount(pDocument->GetSdPageCount(PK_STANDARD));
+        for (sal_uInt32 nPage=0; nPage<nPageCount&&pSlide==NULL; nPage++)
         {
             SdrPage* pCandidate = pDocument->GetSdPage(nPage,PK_STANDARD);
             if (pCandidate != NULL
@@ -526,7 +526,7 @@ SdPage* DocumentHelper::ProvideMasterPage (
     // Search for a master page with the same name as the given one in
     // the target document.
     const XubString sMasterPageLayoutName (pMasterPage->GetLayoutName());
-    for (sal_uInt16 nIndex=0,nCount=rTargetDocument.GetMasterPageCount(); nIndex<nCount; ++nIndex)
+    for (sal_uInt32 nIndex=0,nCount=rTargetDocument.GetMasterPageCount(); nIndex<nCount; ++nIndex)
     {
         SdPage* pCandidate = static_cast<SdPage*>(rTargetDocument.GetMasterPage(nIndex));
         if (pCandidate!=NULL 
@@ -545,7 +545,7 @@ SdPage* DocumentHelper::ProvideMasterPage (
     // Determine the position where the new master pages are inserted.
     // By default they are inserted at the end.  When we assign to a
     // master page then insert after the last of the (selected) pages.
-    sal_uInt16 nInsertionIndex = rTargetDocument.GetMasterPageCount();
+    sal_uInt32 nInsertionIndex(rTargetDocument.GetMasterPageCount());
     if (rpPageList->front()->IsMasterPage())
     {
         nInsertionIndex = rpPageList->back()->GetPageNumber();

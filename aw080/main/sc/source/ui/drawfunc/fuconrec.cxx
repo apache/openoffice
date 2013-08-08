@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 
@@ -35,11 +33,8 @@
 #include <basegfx/point/b2dpoint.hxx>
 #include <svx/svdlegacy.hxx>
 #include <svx/sdrobjectfactory.hxx>
-
+#include <svx/sdrobjecttools.hxx>
 #include "scresid.hxx"
-
-//------------------------------------------------------------------------
-
 
 /*************************************************************************
 |*
@@ -240,26 +235,30 @@ SdrObject* FuConstRectangle::CreateDefaultObject(const sal_uInt16 nID, const bas
 	{
 		switch(nID)
 		{
-			case SID_DRAW_LINE:
-			{
-				SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObj);
-				
-				if(pSdrPathObj)
-				{
-					const double fYMiddle((rRange.getMinY() + rRange.getMaxY()) * 0.5);
-					basegfx::B2DPolygon aPoly;
-					aPoly.append(basegfx::B2DPoint(rRange.getMinX(), fYMiddle));
-					aPoly.append(basegfx::B2DPoint(rRange.getMaxX(), fYMiddle));
-					pSdrPathObj->setB2DPolyPolygonInObjectCoordinates(basegfx::B2DPolyPolygon(aPoly));
-				}
-				else
-				{
-					DBG_ERROR("Object is NO line object");
-				}
+            case SID_DRAW_LINE:
+            {
+                SdrPathObj* pSdrPathObj = dynamic_cast< SdrPathObj* >(pObj);
+                
+                if(pSdrPathObj)
+                {
+                    initializeDefaultSdrPathObjByObjectType(*pSdrPathObj, DefaultSdrPathObjType_Line, rRange, false);
+                    //pSdrPathObj->initializeDefaultSdrPathObjBySlotID(nID, rRange);
 
-				break;
-			}
-			case SID_DRAW_CAPTION:
+                    // TTTT
+                    //const double fYMiddle((rRange.getMinY() + rRange.getMaxY()) * 0.5);
+                    //basegfx::B2DPolygon aPoly;
+                    //aPoly.append(basegfx::B2DPoint(rRange.getMinX(), fYMiddle));
+                    //aPoly.append(basegfx::B2DPoint(rRange.getMaxX(), fYMiddle));
+                    //pSdrPathObj->setB2DPolyPolygonInObjectCoordinates(basegfx::B2DPolyPolygon(aPoly));
+                }
+                else
+                {
+                    DBG_ERROR("Object is NO line object");
+                }
+
+                break;
+            }
+            case SID_DRAW_CAPTION:
 			case SID_DRAW_CAPTION_VERTICAL:
 			{
 				SdrCaptionObj* pSdrCaptionObj = dynamic_cast< SdrCaptionObj* >(pObj);
