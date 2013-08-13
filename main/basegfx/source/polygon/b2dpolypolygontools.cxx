@@ -594,7 +594,24 @@ namespace basegfx
 			return aRetval;
 		}
 
-	} // end of namespace tools
+        bool containsOnlyHorizontalAndVerticalEdges(const B2DPolyPolygon& rCandidate)
+        {
+            if(rCandidate.areControlPointsUsed())
+            {
+                return false;
+            }
+
+            for(sal_uInt32 a(0); a < rCandidate.count(); a++)
+            {
+                if(!containsOnlyHorizontalAndVerticalEdges(rCandidate.getB2DPolygon(a)))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    } // end of namespace tools
 } // end of namespace basegfx
 
 //////////////////////////////////////////////////////////////////////////////

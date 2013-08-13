@@ -1685,42 +1685,46 @@ void ScOutputData::DrawRotatedFrame( const Color* pForceColor )
 
 //	Drucker
 
-PolyPolygon ScOutputData::GetChangedArea()
+Region ScOutputData::GetChangedAreaRegion()
 {
-	PolyPolygon aPoly;
+    Region aRegion;
+    Rectangle aDrawingRect;
+    bool bHad(false);
+    long nPosY = nScrY;
+    SCSIZE nArrY;
 
-	Rectangle aDrawingRect;
-	aDrawingRect.Left() = nScrX;
-	aDrawingRect.Right() = nScrX+nScrW-1;
+    aDrawingRect.Left() = nScrX;
+    aDrawingRect.Right() = nScrX+nScrW-1;
 
-	sal_Bool	bHad	= sal_False;
-	long	nPosY	= nScrY;
-	SCSIZE	nArrY;
-	for (nArrY=1; nArrY+1<nArrCount; nArrY++)
-	{
-		RowInfo* pThisRowInfo = &pRowInfo[nArrY];
+    for(nArrY=1; nArrY+1<nArrCount; nArrY++)
+    {
+        RowInfo* pThisRowInfo = &pRowInfo[nArrY];
 
-		if ( pThisRowInfo->bChanged )
-		{
-			if (!bHad)
-			{
-				aDrawingRect.Top() = nPosY;
-				bHad = sal_True;
-			}
-			aDrawingRect.Bottom() = nPosY + pRowInfo[nArrY].nHeight - 1;
-		}
-		else if (bHad)
-		{
-			aPoly.Insert( Polygon( pDev->PixelToLogic(aDrawingRect) ) );
-			bHad = sal_False;
-		}
-		nPosY += pRowInfo[nArrY].nHeight;
-	}
+        if(pThisRowInfo->bChanged)
+        {
+            if(!bHad)
+            {
+                aDrawingRect.Top() = nPosY;
+                bHad = true;
+            }
 
-	if (bHad)
-		aPoly.Insert( Polygon( pDev->PixelToLogic(aDrawingRect) ) );
+            aDrawingRect.Bottom() = nPosY + pRowInfo[nArrY].nHeight - 1;
+        }
+        else if(bHad)
+        {
+            aRegion.Union(pDev->PixelToLogic(aDrawingRect));
+            bHad = false;
+        }
 
-    return aPoly;
+        nPosY += pRowInfo[nArrY].nHeight;
+    }
+
+    if(bHad)
+    {
+        aRegion.Union(pDev->PixelToLogic(aDrawingRect));
+    }
+
+    return aRegion;
 }
 
 sal_Bool ScOutputData::SetChangedClip()
