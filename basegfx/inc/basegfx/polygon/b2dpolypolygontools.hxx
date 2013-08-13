@@ -275,7 +275,12 @@ namespace basegfx
 		*/
 		B2DPolyPolygon snapPointsOfHorizontalOrVerticalEdges(const B2DPolyPolygon& rCandidate);
 
-	} // end of namespace tools
+        /** returns true if the Polygon only contains horizontal or vertical edges
+            so that it could be represented by RegionBands
+        */
+        bool containsOnlyHorizontalAndVerticalEdges(const B2DPolyPolygon& rCandidate);
+
+    } // end of namespace tools
 } // end of namespace basegfx
 
 #endif /* _BGFX_POLYPOLYGON_B2DPOLYGONTOOLS_HXX */
