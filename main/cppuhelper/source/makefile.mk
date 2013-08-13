@@ -60,6 +60,7 @@ UNOTYPES= \
 		com.sun.star.bridge.UnoUrlResolver \
 		com.sun.star.bridge.XUnoUrlResolver \
 		com.sun.star.connection.SocketPermission \
+		com.sun.star.container.XContentEnumerationAccess \
 		com.sun.star.container.XElementAccess \
 		com.sun.star.container.XEnumerationAccess \
 		com.sun.star.container.XHierarchicalNameAccess \
