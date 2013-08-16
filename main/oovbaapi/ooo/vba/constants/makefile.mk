@@ -26,6 +26,9 @@ PRJNAME=oovbapi
 
 TARGET=constants
 PACKAGE=org$/vba$/constants
+.IF "$(MAKETARGETS)"=="genPO"
+.INCLUDE :  target.mk
+.ELSE
 
 # --- Settings -----------------------------------------------------
 
@@ -54,4 +57,5 @@ $(MY_GEN_UCR_PATH)$/%.urd: $(MY_GEN_IDL_PATH)$/%.idl
 $(MYDBTARGET) : $(MYURDFILES)  $(MYIDLFILES)
     $(REGMERGE) $(OUT)$/ucr/constants.db /UCR @$(mktmp $(MYURDFILES))
 
+.ENDIF
 .ENDIF

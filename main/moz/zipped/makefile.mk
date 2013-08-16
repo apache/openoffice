@@ -37,6 +37,7 @@ TARGET=moz_unzip
 dummy:
 	@echo "No need to unpack the prebuilt mozab packages"
 
+.INCLUDE :  target.mk
 .ELSE # unpack mozab zips
 .INCLUDE :  target.mk
 

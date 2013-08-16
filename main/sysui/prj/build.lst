@@ -1,4 +1,5 @@
 su	sysui	:	languages offapi xml2cmp rdbmaker l10ntools setup_native NULL
+su	sysui\source				nmake	-	all	su_source NULL
 #su	sysui\source\win32\QuickStart		nmake	-	w	su_win32_quickstart NULL
 #su	sysui\source\win32\QuickStart\so	nmake	-	w	su_win32_quickstart_so su_win32_quickstart.w NULL
 su	sysui\desktop\icons					nmake	-	w	su_iconsw NULL

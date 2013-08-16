@@ -42,3 +42,7 @@ DEBUG_ARGUMENT=
 
 all:
 	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT)
+
+
+genPO:
+

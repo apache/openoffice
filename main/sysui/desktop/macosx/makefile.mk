@@ -34,6 +34,7 @@ TARGET=desktopmacosx
 
 dummy:
         @echo "Nothing to build for OS $(OS)"
+.INCLUDE : target.mk
 
 .ELSE           # "$(OS)"!="MACOSX"
 

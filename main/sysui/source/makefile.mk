@@ -19,28 +19,16 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=sysui
+TARGET=helper
 
+LANGUAGE_FILELIST="\
+desktop/share/documents.ulf,\
+desktop/share/launcher_genericname.ulf,\
+desktop/share/launcher_name.ulf,\
+desktop/share/launcher_comment.ulf"
 
-.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
-.INCLUDE: target.mk
-.ELSE
+.INCLUDE :	settings.mk
 
-PRJ = ../..
-PRJNAME = configmgr
-TARGET = qa_unoapi
-
-.IF "$(OOO_JUNIT_JAR)" != ""
-PACKAGE = org/openoffice/configmgr/qa/unoapi
-JAVATESTFILES = Test.java
-JAVAFILES = $(JAVATESTFILES)
-JARFILES = OOoRunner.jar ridl.jar test.jar
-EXTRAJARFILES = $(OOO_JUNIT_JAR)
-.END
-
-.INCLUDE: settings.mk
-.INCLUDE: target.mk
-.INCLUDE: installationtest.mk
-
-ALLTAR : javatest
-
-.END
+.INCLUDE :	target.mk

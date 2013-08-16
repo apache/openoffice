@@ -61,3 +61,5 @@ CLEAN :
 ivo:
 	$(ECHO)
 .ENDIF # L10N_framework
+genPO:
+

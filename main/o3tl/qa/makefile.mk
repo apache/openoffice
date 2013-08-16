@@ -90,3 +90,4 @@ SLOFILES=$(SHL1OBJS)
 .ENDIF 		# L10N_framework
 
 .ENDIF # "$(WITH_CPPUNIT)" != "YES" || "$(GUI)" == "OS2"
+.INCLUDE : target.mk

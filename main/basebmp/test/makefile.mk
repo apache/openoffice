@@ -33,6 +33,7 @@ ENABLE_EXCEPTIONS=TRUE
 
 @all:
 	@echo "cppunit disabled. nothing do do."
+.INCLUDE : target.mk
 
 .ELSE
 
