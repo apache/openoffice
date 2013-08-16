@@ -28,6 +28,7 @@ TARGET=zipcore
 LIBTARGET=NO
 
 .INCLUDE : settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
 .IF "$(L10N_framework)"==""
 UWINAPILIB =
 
@@ -136,3 +137,6 @@ $(DESTROOT)$/bin$/python$(EXECPOST) : $(SOLARBINDIR)$/python$(EXECPOST)
 ivo:
 	$(ECHO)
 .ENDIF # L10N_framework
+.ELSE
+.INCLUDE: target.mk
+.ENDIF

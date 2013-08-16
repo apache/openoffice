@@ -19,28 +19,18 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=wizards
+TARGET=helper
+
+LANGUAGE_FILELIST="\
+euro/euro.src,\
+formwizard/dbwizres.src,\
+importwizard/importwi.src,\
+schedule/schedule.src,\
+template/template.src"
 
 
-.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
-.INCLUDE: target.mk
-.ELSE
+.INCLUDE :	settings.mk
 
-PRJ = ../..
-PRJNAME = qadevOOo
-TARGET = qa_unoapi
-
-.IF "$(OOO_JUNIT_JAR)" != ""
-PACKAGE = org/openoffice/qadevOOo/qa/unoapi
-JAVATESTFILES = Test.java
-JAVAFILES = $(JAVATESTFILES)
-JARFILES = OOoRunner.jar ridl.jar test.jar
-EXTRAJARFILES = $(OOO_JUNIT_JAR)
-.END
-
-.INCLUDE: settings.mk
-.INCLUDE: target.mk
-.INCLUDE: installationtest.mk
-
-ALLTAR : javatest
-
-.END
+.INCLUDE :	target.mk

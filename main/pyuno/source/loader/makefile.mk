@@ -29,6 +29,8 @@ ENABLE_EXCEPTIONS=TRUE
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :  settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 .IF "$(L10N_framework)"==""
 DLLPRE = 
 
@@ -88,3 +90,6 @@ $(MISC)/pythonloader.component .ERRREMOVE : \
     $(XSLTPROC) --nonet --stringparam uri \
         'vnd.sun.star.expand:$$OOO_BASE_DIR/program/$(SHL1TARGETN:f)' -o $@ \
         $(SOLARENV)/bin/createcomponent.xslt pythonloader.component
+.ELSE
+.INCLUDE :  target.mk
+.ENDIF

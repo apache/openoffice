@@ -31,6 +31,7 @@ LINKFLAGSDEFS = # do not fail with missing symbols
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :  settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
 .IF "$(L10N_framework)"==""
 #-------------------------------------------------------------------
 
@@ -158,4 +159,6 @@ $(MISC)$/pyuno.flt : pyuno.flt
 	-rm -f $@
 	cat $? > $@
 .ENDIF # L10N_framework
-
+.ELSE
+.INCLUDE :  target.mk
+.ENDIF
