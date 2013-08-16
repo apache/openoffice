@@ -44,6 +44,8 @@ DLLPRE =
 dummy:
 	@echo "Nothing to build for OS $(OS)."
 
+.INCLUDE : target.mk
+
 .ELSE
 
 CFLAGSCXX+=$(OBJCXXFLAGS)

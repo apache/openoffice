@@ -25,6 +25,7 @@ PRJ=..$/..
 PRJNAME=odk
 TARGET=gendocu
 
+.IF "$(MAKETARGETS)"!="genPO"
 #----------------------------------------------------------------
 .INCLUDE: settings.mk
 .INCLUDE: $(PRJ)$/util$/makefile.pmk
@@ -119,3 +120,5 @@ $(JAVA_DOCU_INDEX_FILE) .SEQUENTIAL : $(JAVA_SRC_FILES)
 .ELSE
 pseudo:
 .ENDIF
+.ENDIF
+genPO :

@@ -21,7 +21,7 @@
 PRJ=..
 PRJNAME=odk
 TARGET=odk
-
+.IF "$(MAKETARGETS)"!="genPO"
 # ------------------------------------------------------------------
 .INCLUDE: settings.mk
 .INCLUDE: makefile.pmk
@@ -75,4 +75,6 @@ ODK_OO_FILES=\
 
 $(BIN)$/odk_oo.zip : $(ODK_OO_FILES)
 	cd $(PRJ) && zip -urq $(subst,$(PRJ)$/, $(BIN)$/odk_oo.zip) $(subst,$(PRJ)$/, $<) $(CHECKZIPRESULT)
-
+.ELSE
+.INCLUDE :  target.mk
+.ENDIF

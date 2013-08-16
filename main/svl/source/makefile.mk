@@ -19,26 +19,13 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=svl
+TARGET=helper
 
+LANGUAGE_FILELIST="misc/mediatyp.src,\
+items/cstitem.src"
 
-PRJ=..$/..
-PRJNAME=odk
-TARGET=unzip_udk
-.IF "$(MAKETARGETS)"!="genPO"
-#----------------------------------------------------------------
-.INCLUDE: settings.mk
-.INCLUDE: $(PRJ)$/util$/makefile.pmk
-#----------------------------------------------------------------
+.INCLUDE :	settings.mk
 
-all: ..$/misc$/deltree.txt
-
-..$/misc$/deltree.txt .SETDIR=$(OUT)$/bin : $(PRJ)$/pack$/unzip_udk$/deltree.txt
-	@@-$(MY_DELETE_RECURSIVE) $(PRODUCT_NAME)
-	@@-rm -f $(PRODUCT_NAME).zip
-	@@-$(MY_DELETE_RECURSIVE) $(PRODUCT_NAME2)
-	@@-rm -f odkidl.zip
-	@@-rm -f odk_ooidl.zip
-	@echo "" > ..$/misc$/deltree.txt
-.ENDIF
-genPO:
-
+.INCLUDE :	target.mk

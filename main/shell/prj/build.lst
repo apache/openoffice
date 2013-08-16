@@ -1,5 +1,6 @@
 sl    shell	:    languages offuh rdbmaker tools sal EXPAT:expat LIBXSLT:libxslt NULL
 sl    shell\inc			                           nmake   -   all sl_inc NULL
+sl    shell\source                           nmake   -   all   sl_source  NULL
 sl    shell\source\win32                           nmake   -   w   sl_win32 sl_inc NULL
 sl    shell\source\win32\sysmail                   nmake   -   w   sl_win32_sysmail sl_inc NULL
 sl    shell\source\unix\exec                       nmake   -   u   sl_unix sl_inc NULL

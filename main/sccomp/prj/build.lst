@@ -2,3 +2,4 @@ scc	sccomp	:    languages offuh comphelper COINMP:coinmp tools rsc LIBXSLT:libxs
 scc	sccomp									usr1	-	all	scc_mkout NULL
 scc	sccomp\prj								get		-	all	scc_prj NULL
 scc	sccomp\source\solver					nmake	-	all	scc_solver NULL
+scc	sccomp\source					nmake	-	all	scc_soource NULL

@@ -25,6 +25,7 @@ PRJ=../..
 PRJNAME=odk
 TARGET=copying
 
+.IF "$(MAKETARGETS)"!="genPO"
 #----------------------------------------------------------------
 .INCLUDE: settings.mk
 .INCLUDE: $(PRJ)/util/makefile.pmk
@@ -258,3 +259,6 @@ $(IDL_DOCU_INDEX_FILE) : $(IDL_DOCU_CLEANUP_FLAG)
 $(MYZIPTARGET) : $(BIN)/unowinreg.dll $(DESTCLASSESLIST)
     cd $(MYZIPDIR) && zip $(MYZIPFLAGS) ../../../bin/$(MYZIPTARGET:b) $(MYZIPLIST)
 .ENDIF
+.ENDIF
+genPO:
+

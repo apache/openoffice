@@ -24,6 +24,7 @@ PRJ=..$/..
 PRJNAME=odk
 TARGET=checkinc2
 
+.IF "$(MAKETARGETS)"!="genPO"
 #----------------------------------------------------------------
 .INCLUDE: settings.mk
 .INCLUDE: $(PRJ)$/util$/makefile.pmk
@@ -48,3 +49,6 @@ $(ODKCHECKFILE) : $(SDK_CONTENT_CHECK_FILES)
 pseudo:
 
 .ENDIF
+.ENDIF
+genPO:
+
