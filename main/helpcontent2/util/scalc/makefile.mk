@@ -33,6 +33,8 @@ TARGET  = util_scalc
 # --- Settings -----------------------------------------------------
 
 .INCLUDE : settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 .INCLUDE : $(PRJ)$/settings.pmk
 
 #common_build_zip:=
@@ -1321,3 +1323,6 @@ LINKLINKFILES= \
 
 .INCLUDE :  target.mk
 .INCLUDE :  $(PRJ)$/util$/target.pmk
+.ELSE
+.INCLUDE :  target.mk
+.ENDIF

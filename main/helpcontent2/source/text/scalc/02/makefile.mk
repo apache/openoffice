@@ -25,6 +25,8 @@
 PRJ		= ..$/..$/..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = helpcontent2
+.IF "$(MAKETARGETS)"!="genPO"
+
 # edit to match the current package
 PACKAGE = text/scalc/02
 # uniqe name (module wide);
@@ -63,3 +65,6 @@ XHPFILES = \
 
 .INCLUDE :  target.mk
 .INCLUDE : tg_help.mk
+.ELSE
+.INCLUDE :  target.mk
+.ENDIF

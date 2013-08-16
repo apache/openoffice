@@ -26,6 +26,8 @@
 PRJ		= ..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = helpcontent2
+.IF "$(MAKETARGETS)"!="genPO"
+
 # uniqe name (module wide);
 # using a modified form of package should do here
 TARGET  = util_schart
@@ -1009,3 +1011,6 @@ LINKLINKFILES= \
 
 .INCLUDE :  target.mk
 .INCLUDE :  $(PRJ)$/util$/target.pmk
+.ELSE
+.INCLUDE :  target.mk
+.ENDIF
