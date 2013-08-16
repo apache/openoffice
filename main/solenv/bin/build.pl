@@ -1481,7 +1481,7 @@ sub get_options {
         $arg =~ /^-P$/            and $processes_to_run = shift @ARGV     and next;
         $arg =~ /^-P(\d+)$/            and $processes_to_run = $1 and next;
         $arg =~ /^--all$/        and $build_all_parents = 1             and next;
-        $arg =~ /^--genPO$/        and push (@dmake_args, "genPO")        and next;
+        $arg =~ /^--genPO$/        and push (@dmake_args, "genPO") and $build_genPO = 1        and next;
         $arg =~ /^-a$/        and $build_all_parents = 1             and next;
         $arg =~ /^--show$/        and $show = 1                         and next;
         $arg =~ /^--checkmodules$/       and $checkparents = 1 and $ignore = 1 and next;
@@ -1579,7 +1579,7 @@ sub get_options {
     };
     print_error('Switches --job and --deliver collision') if ($custom_job && $deliver);
     $custom_job = 'deliver' if $deliver; 
-    $post_job = 'deliver' if (!$custom_job);
+    $post_job = 'deliver' if (!$custom_job && !$build_genPO);
     $incompatible = scalar keys %incompatibles;
     if ($prepare) {
         print_error("--prepare is for use with --from switch only!\n") if (!$incompatible);
