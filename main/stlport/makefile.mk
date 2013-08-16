@@ -54,6 +54,7 @@ $(INCCOM)$/stlport$/vector: systemstl$/$$(@:f)
     $(COPY) $< $@
 .ENDIF #"$(OS)"=="SOLARIS" && "$(COM)"!="GCC"
 
+.INCLUDE :	target.mk
 .ELSE # "$(USE_SYSTEM_STL)"
 
 # --- Files --------------------------------------------------------

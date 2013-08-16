@@ -32,6 +32,7 @@ ENABLE_EXCEPTIONS = TRUE
 .IF "$(WITH_CPPUNIT)" != "YES"
 all:
 	@echo cppunit disabled. nothing to do.
+.INCLUDE: target.mk
 
 .ELSE
 

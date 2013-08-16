@@ -2013,7 +2013,9 @@ UNOUCRDEPxxx : $(UNOUCRDEP);
 .ENDIF			# "$(JAVACLASSFILES:s/DEFINED//)$(javauno)"!=""
 .ENDIF          # "$(SOLAR_JAVA)"!=""
 
+.IF "$(MAKETARGETS)"!="genPO"
 .INCLUDE : tg_merge.mk
+.ENDIF
 .INCLUDE : tg_propmerge.mk
 .INCLUDE : tg_xmerge.mk
 

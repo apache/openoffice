@@ -86,3 +86,5 @@ TARGET=languages_merge
 #	$(PERL) $(SOLARVER)/$(INPATH)/bin$(UPDMINOREXT)/fast_merge.pl -sdf_files $(mktmp $<) -merge_dir $(COMMONMISC)/sdf && $(TOUCH) $@
 #    $(COPY) $(PRJ)/localization_present.mk $(PRJ)/$(COMMON_OUTDIR)$(PROEXT)/inc
 #.ENDIF
+
+.INCLUDE : target.mk

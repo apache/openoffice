@@ -19,35 +19,12 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=setup_native
+TARGET=helper
 
+LANGUAGE_FILELIST="mac/macinstall.ulf"
 
-.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
-.INCLUDE: target.mk
-.ELSE
+.INCLUDE :	settings.mk
 
-PRJ = ..$/..$/..
-PRJNAME = sal
-TARGET = qa_osl_setthreadname
-
-ENABLE_EXCEPTIONS = TRUE
-
-.INCLUDE: settings.mk
-
-CFLAGSCXX += $(CPPUNIT_CFLAGS)
-
-DLLPRE =
-
-SHL1IMPLIB = i$(SHL1TARGET)
-SHL1OBJS = $(SLO)/test-setthreadname.obj
-SHL1RPATH = NONE
-SHL1STDLIBS = $(CPPUNITLIB) $(SALLIB)
-SHL1TARGET = test-setthreadname
-SHL1VERSIONMAP = version.map
-DEF1NAME = $(SHL1TARGET)
-
-SLOFILES = $(SHL1OBJS)
-
-.INCLUDE: target.mk
-.INCLUDE: _cppunit.mk
-
-.END
+.INCLUDE :	target.mk
