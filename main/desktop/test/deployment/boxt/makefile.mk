@@ -24,6 +24,7 @@
 PRJ = ../../..
 PRJNAME = desktop
 TARGET = test_deployment_boxt
+.IF "$(MAKETARGETS)"!="genPO"
 
 ENABLE_EXCEPTIONS = TRUE
 
@@ -62,3 +63,6 @@ $(MISC)/boxt.oxt .ERRREMOVE : manifest.xml description.xml Addons.xcu \
     $(COPY) Addons.xcu ProtocolHandler.xcu $(SHL1TARGETN) $(MISC)/$(TARGET).zip
     cd $(MISC)/$(TARGET).zip && zip ../boxt.oxt META-INF/manifest.xml \
         description.xml Addons.xcu ProtocolHandler.xcu $(SHL1TARGETN:f)
+.ELSE
+.INCLUDE: target.mk
+.ENDIF

@@ -1,6 +1,5 @@
 dt      desktop :    languages sfx2 stoc sysui SO:sysui_so BOOST:boost svx xmlhelp sal unoil officecfg offuh filter LIBXSLT:libxslt NULL
 dt	desktop									usr1	-	all	dt_mkout NULL
-dt	desktop\source								nmake	-	all	dt_source NULL
 dt	desktop\inc								nmake	-	all	dt_inc NULL
 dt	desktop\prj								get		-	all	dt_prj NULL
 dt	desktop\res								get		-	all	dt_res NULL

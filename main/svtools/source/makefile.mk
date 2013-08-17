@@ -19,30 +19,35 @@
 #  
 #**************************************************************
 
-
-
 PRJ=..
-TARGET=prj
+PRJNAME=svtools
+TARGET=helper
 
-.INCLUDE : settings.mk
+LANGUAGE_FILELIST="\
+contnr/fileview.src,\
+contnr/svcontnr.src,\
+contnr/templwin.src,\
+control/calendar.src,\
+control/ctrlbox.src,\
+control/ctrltool.src,\
+control/filectrl.src,\
+dialogs/addresstemplate.src,\
+dialogs/filedlg2.src,\
+dialogs/formats.src,\
+dialogs/prnsetup.src,\
+dialogs/so3res.src,\
+dialogs/wizardmachine.src,\
+filter/exportdialog.src,\
+java/javaerror.src,\
+misc/imagemgr.src,\
+misc/langtab.src,\
+misc/undo.src,\
+plugapp/testtool.src,\
+toolpanel/toolpanel.src,\
+../workben/unodialog/roadmapskeleton.src"
 
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
-
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
 
 
-genPO:
+.INCLUDE :	settings.mk
 
+.INCLUDE :	target.mk

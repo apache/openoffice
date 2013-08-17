@@ -31,6 +31,10 @@ TARGET=starmath
 LIBTARGET=NO
 
 # --- Settings -----------------------------------------------------
+LANGUAGE_FILELIST="\
+symbol.src,\
+toolbox.src"
+
 
 ENABLE_EXCEPTIONS=TRUE
 

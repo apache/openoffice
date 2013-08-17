@@ -19,30 +19,19 @@
 #  
 #**************************************************************
 
-
-
 PRJ=..
-TARGET=prj
+PRJNAME=vcl
+TARGET=helper
 
-.INCLUDE : settings.mk
-
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
-
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+LANGUAGE_FILELIST="\
+src/btntext.src,\
+src/helptext.src,\
+src/menu.src,\
+src/print.src,\
+src/stdtext.src,\
+src/units.src"
 
 
-genPO:
+.INCLUDE :	settings.mk
 
+.INCLUDE :	target.mk

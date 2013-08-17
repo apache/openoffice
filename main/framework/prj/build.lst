@@ -1,2 +1,4 @@
 fr framework : LIBXSLT:libxslt languages svtools NULL
 fr framework\prj nmake - all fr_all NULL
+fr      framework\source                                    nmake   -       all     fr_source NULL
+

@@ -1,6 +1,5 @@
 cn  connectivity    :    shell  languages comphelper MOZ:moz SO:moz_prebuilt svl UNIXODBC:unixODBC unoil javaunohelper HSQLDB:hsqldb qadevOOo officecfg NSS:nss LIBXSLT:libxslt NULL
 cn  connectivity                                    usr1    -   all cn_mkout NULL
-cn  connectivity\source                             nmake   -   all cn_source NULL
 cn  connectivity\inc                                nmake   -   all cn_inc NULL
 cn  connectivity\com\sun\star\sdbcx\comp\hsqldb     nmake   -   all cn_jhsqldbdb cn_hsqldb cn_inc NULL
 cn  connectivity\source\commontools                 nmake   -   all cn_cmtools cn_parse cn_inc NULL

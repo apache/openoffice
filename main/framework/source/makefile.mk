@@ -19,30 +19,15 @@
 #  
 #**************************************************************
 
-
-
 PRJ=..
-TARGET=prj
+PRJNAME=framework
+TARGET=helper
 
-.INCLUDE : settings.mk
-
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
-
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+LANGUAGE_FILELIST="\
+classes/resource.src,\
+services/fwk_services.src"
 
 
-genPO:
+.INCLUDE :	settings.mk
 
+.INCLUDE :	target.mk
