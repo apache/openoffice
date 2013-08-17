@@ -39,6 +39,7 @@ MEDIAWIKI_LANG=$(uniq en $(alllangiso))
 .IF "$(ENABLE_MEDIAWIKI)" != "YES"
 all:
     @echo Building mediawiki disabled...
+genPO:
 .ELSE           # "$(ENABLE_MEDIAWIKI)" != "YES"
 
 PACKAGE=com.sun.wiki-publisher

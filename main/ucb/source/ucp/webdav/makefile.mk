@@ -42,6 +42,8 @@ NO_BSYMBOLIC=TRUE
 # --- Settings ---------------------------------------------------------
 
 .INCLUDE: settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 .IF "$(L10N_framework)"==""
 
 APRINCDIR=apr
@@ -186,3 +188,6 @@ $(MISC)/ucpdav1.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
     $(XSLTPROC) --nonet --stringparam uri \
         '$(COMPONENTPREFIX_BASIS_NATIVE)$(SHL1TARGETN:f)' -o $@ \
         $(SOLARENV)/bin/createcomponent.xslt ucpdav1.component
+.ELSE
+.INCLUDE: target.mk
+.ENDIF

@@ -1,6 +1,7 @@
 xs	xmlsecurity	:    languages xmloff unotools offapi unoil svx MOZ:moz SO:moz_prebuilt LIBXMLSEC:libxmlsec NSS:nss LIBXSLT:libxslt NULL
 xs	xmlsecurity                                                        usr1	 -	all	xs_mkout	NULL
 xs	xmlsecurity\inc				                                       nmake -	all	xs_inc NULL
+xs	xmlsecurity\source                                       nmake -	all	xs_source NULL
 xs	xmlsecurity\source\framework                                       nmake -	all	xs_fw xs_inc NULL
 xs	xmlsecurity\source\xmlsec\nss                                      nmake -	all	xs_nss xs_inc NULL
 xs	xmlsecurity\source\xmlsec\mscrypt                                  nmake -	all	xs_mscrypt xs_inc NULL

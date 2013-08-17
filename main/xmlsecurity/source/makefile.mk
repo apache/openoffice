@@ -19,37 +19,19 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=xmlsecurity
+TARGET=helper
 
+LANGUAGE_FILELIST="\
+component/warnbox.src,\
+dialogs/certificatechooser.src,\
+dialogs/certificateviewer.src,\
+dialogs/digitalsignaturesdialog.src,\
+dialogs/macrosecurity.src,\
+dialogs/warnings.src"
 
-PRJ=..$/..
-
-PRJPCH=
-
-PRJNAME=scp2
-TARGET=canvas
-TARGETTYPE=CUI
-
-# --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
-.IF "$(MAKETARGETS)"!="genPO"
 
-
-SCP_PRODUCT_TYPE=osl
-
-PARFILES= canvascommons.par		\
-          vclcanvas.par
-
-.IF "$(ENABLE_CAIRO_CANVAS)" == "TRUE"
-PARFILES+= cairocanvas.par
-.ENDIF
-.IF "$(ENABLE_DIRECTX)" != ""
-.IF "$(USE_DIRECTX5)" != ""
-SCPDEFS+=-DUSE_DIRECTX5
-.ENDIF
-PARFILES+= directxcanvas.par
-.ENDIF
-
-# --- File ---------------------------------------------------------
-.ENDIF
-.INCLUDE :  target.mk
+.INCLUDE :	target.mk

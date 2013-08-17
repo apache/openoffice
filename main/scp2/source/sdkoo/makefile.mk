@@ -26,6 +26,8 @@ PRJNAME=scp2so
 TARGET=sdkoo
 
 .INCLUDE: settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 
 SCP_PRODUCT_TYPE=osl
 
@@ -38,5 +40,5 @@ PARFILES= \
 #ULFFILES= module_sdkoo.ulf
 #.ENDIF
 
-
+.ENDIF
 .INCLUDE: target.mk

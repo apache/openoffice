@@ -32,6 +32,8 @@ TARGETTYPE=CUI
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 
 SCP_PRODUCT_TYPE=osl
 
@@ -58,4 +60,5 @@ ULFFILES+=\
 .ENDIF
 
 # --- File ---------------------------------------------------------
+.ENDIF
 .INCLUDE :  target.mk

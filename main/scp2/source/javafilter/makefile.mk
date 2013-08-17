@@ -32,6 +32,8 @@ TARGETTYPE=CUI
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 
 .IF "$(SOLAR_JAVA)"=="TRUE"
 SCP_PRODUCT_TYPE=osl
@@ -52,4 +54,5 @@ ULFFILES= \
         registryitem_javafilter.ulf
 
 # --- File ---------------------------------------------------------
+.ENDIF
 .INCLUDE :  target.mk

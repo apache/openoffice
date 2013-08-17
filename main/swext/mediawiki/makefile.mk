@@ -58,6 +58,8 @@ file://$(COMMONS_HTTPCLIENT_JAR) file://$(COMMONS_LOGGING_JAR)\"#" build.xml
 .ELSE
 @all:
 	@echo "MediaWiki Publisher extension disabled."
+genPO:
+
 .ENDIF
 
 .ELSE

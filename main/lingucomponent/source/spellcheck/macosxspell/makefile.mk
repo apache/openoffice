@@ -81,6 +81,7 @@ SHL1VERSIONMAP=$(SOLARENV)/src/component.map
 .ELSE
 dummy:
 	@echo " Nothing to build for GUIBASE=$(GUIBASE)"
+.INCLUDE : target.mk
 .ENDIF
 
 ALLTAR : $(MISC)/MacOSXSpell.component

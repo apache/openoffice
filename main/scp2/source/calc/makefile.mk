@@ -32,6 +32,8 @@ TARGETTYPE=CUI
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 
 .IF "$(ENABLE_COINMP)" == "YES"
 SCPDEFS+=-DENABLE_COINMP
@@ -63,4 +65,5 @@ ULFFILES= \
         folderitem_calc.ulf 
 
 # --- File ---------------------------------------------------------
+.ENDIF
 .INCLUDE :  target.mk

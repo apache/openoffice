@@ -32,6 +32,8 @@ TARGETTYPE=CUI
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 
 .IF "$(ENABLE_REPORTBUILDER)" == "YES"
 SCPDEFS += -DENABLE_REPORTBUILDER
@@ -55,4 +57,5 @@ ULFFILES= \
         folderitem_base.ulf
 
 # --- File ---------------------------------------------------------
+.ENDIF
 .INCLUDE :  target.mk

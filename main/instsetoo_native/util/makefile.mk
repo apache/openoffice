@@ -24,6 +24,8 @@
 PRJ=..
 PRJNAME=instsetoo_native
 TARGET=util
+.IF "$(MAKETARGETS)"!="genPO"
+
 
 .INCLUDE:  settings.mk
 .INCLUDE: $(SOLARINCDIR)$/rtlbootstrap.mk
@@ -275,4 +277,6 @@ hack_msitemplates .PHONY:
 	$(GNUCOPY) $(MSILANGPACKTEMPLATESOURCE)$/Binary$/*.* $(MSILANGPACKTEMPLATEDIR)$/Binary
 	$(GNUCOPY) $(MSISDKOOTEMPLATESOURCE)$/Binary$/*.* $(MSISDKOOTEMPLATEDIR)$/Binary
 
-
+.ELSE
+.INCLUDE: target.mk
+.ENDIF

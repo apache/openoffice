@@ -32,6 +32,8 @@ TARGETTYPE=CUI
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :	settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 
 .IF "$(SYSTEM_PYTHON)" == "YES"
 SCPDEFS+=-DSYSTEM_PYTHON
@@ -56,4 +58,6 @@ ULFFILES= \
         module_python_mailmerge.ulf
 
 # --- File ---------------------------------------------------------
+.ENDIF
+
 .INCLUDE :  target.mk

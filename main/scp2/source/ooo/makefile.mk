@@ -31,6 +31,8 @@ TARGETTYPE=CUI
 # --- Settings -----------------------------------------------------
 
 .INCLUDE :  settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 .INCLUDE :  i18npool/version.mk
 
 .IF "$(COM)" == "MSC"
@@ -381,4 +383,6 @@ $(ICUVERSION_DEPENDENT_FILES) : $(SOLARINCDIR)$/icuversion.mk
 .ENDIF
 
 $(ISOLANGVERSION_DEPENDENT_FILES) : $(SOLARINCDIR)$/i18npool/version.mk
-
+.ELSE
+.INCLUDE :  target.mk
+.ENDIF

@@ -21,10 +21,10 @@
 
 
 .IF "$(ENABLE_NSS_MODULE)" == "NO"
-nothing .PHONY:
+.INCLUDE: target.mk
 .ELSE
 .IF "$(OOO_SUBSEQUENT_TESTS)" == ""
-nothing .PHONY:
+.INCLUDE: target.mk
 .ELSE 
 
 PRJ = ../..
