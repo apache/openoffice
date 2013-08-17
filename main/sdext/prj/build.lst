@@ -1,6 +1,7 @@
 dx	sdext	:	languages offuh comphelper unotools readlicense_oo cppu tools cppuhelper sal javaunohelper officecfg LIBXSLT:libxslt xmlhelp NULL
 dx	sdext									usr1	-	all	sdext_mkout NULL
 dx	sdext\prj								get		-	all	sdext_prj NULL
+dx	sdext\source					nmake	-	all sdext_source NULL
 dx	sdext\source\minimizer					nmake	-	all sdext_minimizer sdext_inc NULL
 dx	sdext\source\presenter					nmake	-	all sdext_presenter sdext_inc  NULL
 dx	sdext\inc								nmake	-	all	sdext_inc				NULL

@@ -6,6 +6,7 @@ sd	sd\source\ui\inc						get		-	all	sd_sinc NULL
 sd	sd\res									get		-	all	sd_res NULL
 sd	sd\res\imagelst							get		-	all	sd_resil NULL
 sd	sd\sdi									nmake	-	all	sd_sdi NULL
+sd	sd\source						nmake	-	all sd_source NULL
 sd	sd\source\helper						nmake	-	all sd_helper sd_inc NULL
 sd	sd\source\ui\func						nmake	-	all	sd_func sd_sdi sd_inc NULL
 sd	sd\source\ui\view						nmake	-	all	sd_view sd_sdi sd_inc NULL

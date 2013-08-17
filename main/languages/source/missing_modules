@@ -28,22 +28,22 @@ reportbuilder                  cfgex
 reportdesign                   transex3
 sc                             transex3
 scaddins                       transex3
-sccomp                         EXTRACT transex3
-scp2                           EXTRACT ulfex
-sd                             EXTRACT ?
-sdext                          EXTRACT cfgex
-setup_native		       EXTRACT ?*ONLY MAC ulfex*?
-sfx2                           EXTRACT ? transex3
-shell                          EXTRACT ?*ONLY WIN ulfex*?
-starmath                       EXTRACT ? transex3
-svl                            EXTRACT transex3
-svtools                        EXTRACT transex3
-svx                            EXTRACT ? transex3
-sw                             EXTRACT ? transex3
-swext                          EXTRACT ?
-sysui                          EXTRACT ulfex
-uui                            EXTRACT transex3
-vcl                            EXTRACT transex3
-wizards                        EXTRACT transex3
-xmlhelp                        EXTRACT ?*ONLY CMD compilehelp.hxx*?
-xmlsecurity                    EXTRACT ? transex3
+sccomp                         transex3
+scp2                           ulfex
+sd                             transex2
+sdext                          cfgex
+setup_native		       ulfex
+sfx2                           transex3
+shell                          ulfex
+starmath                       transex3
+svl                            transex3
+svtools                        transex3
+svx                            transex3
+sw                             transex3
+swext                          transex3
+sysui                          ulfex
+uui                            transex3
+vcl                            transex3
+wizards                        transex3
+xmlhelp                        *ONLY CMD compilehelp.hxx*
+xmlsecurity                    transex3
