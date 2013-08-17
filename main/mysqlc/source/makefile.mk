@@ -30,6 +30,10 @@ TARGET=mysqlc
 ENABLE_EXCEPTIONS=TRUE
 LIBTARGET=NO
 EXTENSIONNAME:=mysql-connector-ooo
+LANGUAGE_FILELIST="\
+registry/data/org/openoffice/Office/DataAccess/Drivers.xcu,\
+DataAccess.xcu"
+.IF "$(MAKETARGETS)"!="genPO"
 
 .IF "$(SYSTEM_MYSQL)" == "YES"
 EXTERNAL_WARNINGS_NOT_ERRORS = TRUE
@@ -294,4 +298,7 @@ $(EXTENSION_TARGET): adjust_libmysql_path
 
 adjust_libmysql_path: $(EXTENSIONDIR)$/$(SHL1TARGET)$(DLLPOST)
     install_name_tool -change $(MYSQL_LIBFILE:f) @loader_path/$(MYSQL_LIBFILE:f) $(EXTENSIONDIR)$/$(SHL1TARGET)$(DLLPOST)
+.ENDIF
+.ELSE
+.INCLUDE : target.mk
 .ENDIF

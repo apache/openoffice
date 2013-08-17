@@ -1,33 +1,33 @@
 ***** MODULES NOT INTEGRATED WITH genLang ****
 accessibility                  transex3
-avmedia                        ? transex3
-basctl                         ? transex3
-basic                          ? transex3
-chart2                         ? transex3
-connectivity                   ? transex3, cfgex
-crashrep                       ?
-cui                            ?
-dbaccess                       ? transex3
-desktop                        ?*ONLY CMD libhelplinker.so*? transex3
-editeng                        ? transex3
-extensions                     ?
-filter                         ?*cfgex, FCFGMerge.jar*? transex3, cfgex
-forms                          ? transex3, cfgex
-formula                        ? transex3
+avmedia                        transex3
+basctl                         transex3
+basic                          transex3
+chart2                         transex3
+connectivity                   transex3, cfgex
+crashrep                       ulxex
+cui                            transex3
+dbaccess                       transex3
+desktop                        *ONLY CMD libhelplinker.so*? transex3
+editeng                        transex3
+extensions                     transex3
+filter                         cfgex, FCFGMerge.jar*? transex3, cfgex
+forms                          transex3, cfgex
+formula                        transex3
 fpicker                        transex3
-framework                      EXTRACT ?*cfgex*? transex3
-helpcontent2                   EXTRACT ?*extras, helpex HelpLinker*? helpex
-instsetoo_native               EXTRACT ?"libhelplinker.so*? ?no files selected?
-javainstaller2                 EXTRACT ?
-mysqlc                         EXTRACT ?NO lang dep?
-officecfg                      EXTRACT cfgex
-padmin                         EXTRACT ?NO lang dep? transex3
-postprocess                    EXTRACT ?*cfgex, transex3, libX40HelpLinker.so"?
-readlicense_oo                 EXTRACT xrmex
-reportbuilder                  EXTRACT ?NO lang dep?
-reportdesign                   EXTRACT ?
-sc                             EXTRACT ? transex3
-scaddins                       EXTRACT ? transex3
+framework                      cfgex transex3
+helpcontent2                   *extras, helpex HelpLinker*? helpex
+instsetoo_native               "libhelplinker.so*?
+javainstaller2                 ulfex
+mysqlc                         cfgex
+officecfg                      cfgex
+padmin                         transex3
+postprocess                    cfgex, transex3, libX40HelpLinker.so"?
+readlicense_oo                 xrmex
+reportbuilder                  cfgex
+reportdesign                   transex3
+sc                             transex3
+scaddins                       transex3
 sccomp                         EXTRACT transex3
 scp2                           EXTRACT ulfex
 sd                             EXTRACT ?
@@ -47,5 +47,3 @@ vcl                            EXTRACT transex3
 wizards                        EXTRACT transex3
 xmlhelp                        EXTRACT ?*ONLY CMD compilehelp.hxx*?
 xmlsecurity                    EXTRACT ? transex3
-
-languages/l10ntools

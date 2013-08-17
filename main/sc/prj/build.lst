@@ -1,5 +1,6 @@
 sc      sc      :       filter languages vbahelper oovbaapi svx uui stoc BOOST:boost formula MDDS:mdds oox LIBXSLT:libxslt NULL
 sc	sc							usr1	-	all	sc_mkout NULL
+sc	sc\source							nmake	-	all	sc_source NULL
 sc	sc\inc							nmake	-	all	sc_inc NULL
 sc	sc\prj							get	-	all	sc_prj NULL
 sc	sc\res							get	-	all	sc_res NULL

@@ -19,30 +19,23 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=reportdesign
+TARGET=helper
+
+LANGUAGE_FILELIST="\
+../util/hidother.src,\
+ui/dlg/GroupsSorting.src,\
+ui/dlg/PageNumber.src,\
+ui/dlg/dlgpage.src,\
+ui/dlg/Navigator.src,\
+ui/dlg/CondFormat.src,\
+ui/dlg/DateTime.src,\
+ui/inspection/inspection.src,\
+ui/report/report.src,\
+core/resource/strings.src"
 
 
-PRJ	= ..$/..$/..$/..$/..$/..
-PRJNAME = reportbuilder
-TARGET= rpt_java_css_util
-PACKAGE = com$/sun$/star$/report$/util
+.INCLUDE :	settings.mk
 
-# --- Settings -----------------------------------------------------
-.INCLUDE: settings.mk
-.IF "$(MAKETARGETS)"!="genPO"
-
-#----- compile .java files -----------------------------------------
-
-.IF "$(SYSTEM_JFREEREPORT)" == "YES"
-EXTRAJARFILES   = $(LIBBASE_JAR) $(LIBXML_JAR) $(JFREEREPORT_JAR)
-.ELSE
-.INCLUDE :  $(SOLARBINDIR)/jfreereport_version.mk
-JARFILES += \
-	libbase-$(LIBBASE_VERSION).jar                      \
-	libxml-$(LIBXML_VERSION).jar						\
-	flow-engine-$(FLOW_ENGINE_VERSION).jar
-.ENDIF
-
-JAVAFILES       = DefaultJobProperties.java DefaultParameterMap.java DefaultReportJobDefinition.java ManifestWriter.java
-# --- Targets ------------------------------------------------------
-.ENDIF
-.INCLUDE :  target.mk
+.INCLUDE :	target.mk

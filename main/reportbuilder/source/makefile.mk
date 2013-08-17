@@ -19,30 +19,26 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=reportbuilder
+TARGET=helper
+
+LANGUAGE_FILELIST="\
+../template/registry/data/org/openoffice/Office/Paths.xcu,\
+../registry/data/org/openoffice/Setup.xcu,\
+../registry/data/org/openoffice/TypeDetection/Types.xcu,\
+../registry/data/org/openoffice/TypeDetection/Filter.xcu,\
+../registry/data/org/openoffice/Office/Embedding.xcu,\
+../registry/data/org/openoffice/Office/ReportDesign.xcu,\
+../registry/data/org/openoffice/Office/Accelerators.xcu,\
+../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu,\
+../registry/data/org/openoffice/Office/DataAccess.xcu,\
+../registry/data/org/openoffice/Office/Paths.xcu,\
+../registry/data/org/openoffice/Office/UI/Controller.xcu,\
+../registry/data/org/openoffice/Office/UI/ReportCommands.xcu,\
+../registry/data/org/openoffice/Office/UI/DbReportWindowState.xcu"
 
 
-PRJ	= ..$/..$/..$/..$/..$/..
-PRJNAME = reportbuilder
-TARGET= rpt_java_css_util
-PACKAGE = com$/sun$/star$/report$/util
+.INCLUDE :	settings.mk
 
-# --- Settings -----------------------------------------------------
-.INCLUDE: settings.mk
-.IF "$(MAKETARGETS)"!="genPO"
-
-#----- compile .java files -----------------------------------------
-
-.IF "$(SYSTEM_JFREEREPORT)" == "YES"
-EXTRAJARFILES   = $(LIBBASE_JAR) $(LIBXML_JAR) $(JFREEREPORT_JAR)
-.ELSE
-.INCLUDE :  $(SOLARBINDIR)/jfreereport_version.mk
-JARFILES += \
-	libbase-$(LIBBASE_VERSION).jar                      \
-	libxml-$(LIBXML_VERSION).jar						\
-	flow-engine-$(FLOW_ENGINE_VERSION).jar
-.ENDIF
-
-JAVAFILES       = DefaultJobProperties.java DefaultParameterMap.java DefaultReportJobDefinition.java ManifestWriter.java
-# --- Targets ------------------------------------------------------
-.ENDIF
-.INCLUDE :  target.mk
+.INCLUDE :	target.mk

@@ -28,6 +28,8 @@ PACKAGE = com$/sun$/star$/report$/function$/metadata
 
 # --- Settings -----------------------------------------------------
 .INCLUDE: settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 #----- compile .java files -----------------------------------------
 
 .IF "$(SYSTEM_JFREEREPORT)" == "YES"
@@ -60,3 +62,6 @@ $(COPYFILES): $$(@:f)
 	+$(MKDIRHIER) $(CLASSDIR)$/$(PACKAGE)
     +$(COPY) $< $@
 	
+.ELSE
+.INCLUDE :  target.mk
+.ENDIF

@@ -29,6 +29,8 @@ PACKAGE = com$/sun$/star$/report$/pentaho
 nodep=true
 # --- Settings -----------------------------------------------------
 .INCLUDE: settings.mk
+.IF "$(MAKETARGETS)"!="genPO"
+
 
 #----- compile .java files -----------------------------------------
 JARFILES        = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar
@@ -146,3 +148,6 @@ $(CLASSDIR)$/$(PACKAGE)$/%.txt : %.txt
 	@@-$(MKDIRHIER) $(@:d)
     $(COPY) $< $@
     
+.ELSE
+.INCLUDE :  target.mk
+.ENDIF

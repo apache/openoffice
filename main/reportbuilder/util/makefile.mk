@@ -34,7 +34,7 @@ EXTENSION_VERSION_BASE=1.2.1
 
 # --- Settings ----------------------------------
 .INCLUDE :  makefile.pmk
-
+.IF "$(MAKETARGETS)"!="genPO"
 .IF "$(L10N_framework)"==""
 # ------------------------------------------------------------------
 # calready set in util$/makefile.pmk
@@ -146,3 +146,6 @@ $(DESCRIPTION_SRC): description.xml
 .INCLUDE : target.mk
 .ENDIF			# "$(SOLAR_JAVA)"!=""
 #
+.ELSE
+.INCLUDE : target.mk
+.ENDIF

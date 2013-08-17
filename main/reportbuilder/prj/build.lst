@@ -1,5 +1,6 @@
-rpb  reportbuilder    :   BOOST:boost JFREEREPORT:jfreereport wizards readlicense_oo APACHE_COMMONS:apache-commons officecfg NULL
+rpb  reportbuilder    :   BOOST:boost JFREEREPORT:jfreereport languages wizards readlicense_oo APACHE_COMMONS:apache-commons officecfg NULL
 rpb  reportbuilder                                                        usr1    -   all rpb_mkout NULL
+rpb  reportbuilder\source							                        nmake   -   all rpb_source NULL
 rpb  reportbuilder\java							                        nmake   -   all rpb_java NULL
 rpb  reportbuilder\java\com\sun\star\report		                        nmake   -   all rpb_jreport rpb_java NULL
 rpb  reportbuilder\java\com\sun\star\report\util	                        nmake   -   all rpb_jreport_util rpb_jreport NULL
