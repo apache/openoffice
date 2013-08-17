@@ -2094,8 +2094,6 @@ genPO:
 .IF "$(LANGUAGE_FILELIST)" != ""
 #     @echo "extraction from $(LANGUAGE_FILELIST)"
      @echo "------> ------> extraction CALLED"
-.ELSE
-     @echo "No language files to extract"
 .ENDIF
 
 

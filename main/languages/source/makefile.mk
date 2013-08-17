@@ -26,8 +26,13 @@ TARGET=languages_merge
 #.INCLUDE : settings.mk
 
 
-@all:
+all:
 	@echo "languages decoupled at the moment"
+        @exit -1
+
+genPO:
+        @echo "terminate"
+        @exit -1
 
 #.IF "$(WITH_LANG)" == ""
 #
@@ -87,4 +92,3 @@ TARGET=languages_merge
 #    $(COPY) $(PRJ)/localization_present.mk $(PRJ)/$(COMMON_OUTDIR)$(PROEXT)/inc
 #.ENDIF
 
-.INCLUDE : target.mk
