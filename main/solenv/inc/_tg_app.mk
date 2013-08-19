@@ -97,7 +97,7 @@ APP1LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP1TARGETN): $(APP1OBJS) $(APP1LIBS) \
 	$(APP1RES) \
 	$(APP1ICON) $(APP1DEPN) $(USE_APP1DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP1TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -123,7 +123,7 @@ $(APP1TARGETN): $(APP1OBJS) $(APP1LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP1RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"
@@ -357,7 +357,7 @@ APP2LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP2TARGETN): $(APP2OBJS) $(APP2LIBS) \
 	$(APP2RES) \
 	$(APP2ICON) $(APP2DEPN) $(USE_APP2DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP2TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -383,7 +383,7 @@ $(APP2TARGETN): $(APP2OBJS) $(APP2LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP2RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"
@@ -617,7 +617,7 @@ APP3LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP3TARGETN): $(APP3OBJS) $(APP3LIBS) \
 	$(APP3RES) \
 	$(APP3ICON) $(APP3DEPN) $(USE_APP3DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP3TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -643,7 +643,7 @@ $(APP3TARGETN): $(APP3OBJS) $(APP3LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP3RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"
@@ -877,7 +877,7 @@ APP4LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP4TARGETN): $(APP4OBJS) $(APP4LIBS) \
 	$(APP4RES) \
 	$(APP4ICON) $(APP4DEPN) $(USE_APP4DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP4TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -903,7 +903,7 @@ $(APP4TARGETN): $(APP4OBJS) $(APP4LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP4RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"
@@ -1137,7 +1137,7 @@ APP5LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP5TARGETN): $(APP5OBJS) $(APP5LIBS) \
 	$(APP5RES) \
 	$(APP5ICON) $(APP5DEPN) $(USE_APP5DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP5TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -1163,7 +1163,7 @@ $(APP5TARGETN): $(APP5OBJS) $(APP5LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP5RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"
@@ -1397,7 +1397,7 @@ APP6LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP6TARGETN): $(APP6OBJS) $(APP6LIBS) \
 	$(APP6RES) \
 	$(APP6ICON) $(APP6DEPN) $(USE_APP6DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP6TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -1423,7 +1423,7 @@ $(APP6TARGETN): $(APP6OBJS) $(APP6LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP6RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"
@@ -1657,7 +1657,7 @@ APP7LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP7TARGETN): $(APP7OBJS) $(APP7LIBS) \
 	$(APP7RES) \
 	$(APP7ICON) $(APP7DEPN) $(USE_APP7DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP7TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -1683,7 +1683,7 @@ $(APP7TARGETN): $(APP7OBJS) $(APP7LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP7RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"
@@ -1917,7 +1917,7 @@ APP8LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP8TARGETN): $(APP8OBJS) $(APP8LIBS) \
 	$(APP8RES) \
 	$(APP8ICON) $(APP8DEPN) $(USE_APP8DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP8TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -1943,7 +1943,7 @@ $(APP8TARGETN): $(APP8OBJS) $(APP8LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP8RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"
@@ -2177,7 +2177,7 @@ APP9LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP9TARGETN): $(APP9OBJS) $(APP9LIBS) \
 	$(APP9RES) \
 	$(APP9ICON) $(APP9DEPN) $(USE_APP9DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP9TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -2203,7 +2203,7 @@ $(APP9TARGETN): $(APP9OBJS) $(APP9LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP9RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"
@@ -2437,7 +2437,7 @@ APP10LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP10TARGETN): $(APP10OBJS) $(APP10LIBS) \
 	$(APP10RES) \
 	$(APP10ICON) $(APP10DEPN) $(USE_APP10DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (APP10TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -2463,7 +2463,7 @@ $(APP10TARGETN): $(APP10OBJS) $(APP10LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP10RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"

@@ -69,4 +69,4 @@ APP1DEPN	=   $(LB)$/$(TARGET).lib
 
 .INCLUDE :  target.mk
 
-
+genPO: $(TARGET)

@@ -29,7 +29,7 @@
 .IF "$($(SECOND_BUILD)_OBJFILES)"!=""
 
 $(OBJ)/$(SECOND_BUILD)_%.obj : %.cxx
-	@echo "Making:   " $@
+	@echo "Making: (.cxx.obj)   " $@
 .IF "$(GUI)"=="UNX"
 	@$(RM) $@ $(@:s/.obj/.o/)
 	$(COMMAND_ECHO)$(CXX) $(CFLAGS) $(INCLUDE) $(CFLAGSCXX) $(CFLAGSCXXOBJ) $(CFLAGSOBJ) $(CDEFS) $($(SECOND_BUILD)CDEFS) $(CDEFSOBJ) $(!eq,$(EXCEPTIONSFILES),$(subst,$@, $(EXCEPTIONSFILES)) $(LOCAL_EXCEPTIONS_FLAGS) $(GLOBAL_EXCEPTIONS_FLAGS)) $(CFLAGSAPPEND) $(CFLAGSOUTOBJ) $(OBJ)/$(SECOND_BUILD)_$*.o $(CFLAGSINCXX)$(PWD)/$*.cxx
@@ -43,7 +43,7 @@ $(OBJ)/$(SECOND_BUILD)_%.obj : %.cxx
 .ENDIF
 
 $(OBJ)/$(SECOND_BUILD)_%.obj : %.c
-	@echo "Making:   " $@
+	@echo "Making: (.c.obj)   " $@
 .IF "$(GUI)"=="UNX"
 .IF "$(TEST)"!=""
 	$(COMMAND_ECHO)$(CC) $(CFLAGS) $(INCLUDE_C) $(CFLAGSCC) $(CFLAGSOBJ) $(CDEFS) $($(SECOND_BUILD)CDEFS) $(CDEFSOBJ) -E $(CFLAGSAPPEND) $(CFLAGSOUTOBJ) $(OBJ)/$(SECOND_BUILD)_$*.o $*.c
@@ -71,7 +71,7 @@ $(OBJ)/$(SECOND_BUILD)_%.obj : %.c
 .IF "$($(SECOND_BUILD)_SLOFILES)"!=""
 
 $(SLO)/$(SECOND_BUILD)_%.obj : %.cxx
-	@echo "Making:   " $@
+	@echo "Making: (.cxx.obj)   " $@
 .IF "$(GUI)"=="UNX"
 	@$(RM) $@ $(@:s/.obj/.o/)
 	$(COMMAND_ECHO)$(CXX) $(CFLAGS) $(INCLUDE) $(CFLAGSCXX) $(CFLAGSCXXSLO) $(CFLAGSSLO) $(CDEFS) $($(SECOND_BUILD)CDEFS) $(CDEFSSLO) $(CDEFSMT) $(!eq,$(EXCEPTIONSFILES),$(subst,$@, $(EXCEPTIONSFILES)) $(LOCAL_EXCEPTIONS_FLAGS) $(GLOBAL_EXCEPTIONS_FLAGS)) $(CFLAGSAPPEND) $(CFLAGSOUTOBJ) $(SLO)/$(SECOND_BUILD)_$*.o $(CFLAGSINCXX)$(PWD)/$*.cxx
@@ -89,7 +89,7 @@ $(SLO)/$(SECOND_BUILD)_%.obj : %.cxx
 .ENDIF
 
 $(SLO)/$(SECOND_BUILD)_%.obj :  %.c
-	@echo "Making:   " $@
+	@echo "Making: (.c.obj)  " $@
 .IF "$(GUI)"=="UNX"
 	@$(RM) $@ $(@:s/.obj/.o/)
 	$(COMMAND_ECHO)$(CC) $(CFLAGS) $(INCLUDE_C) $(CFLAGSCC) $(CFLAGSSLO) $(CDEFS) $($(SECOND_BUILD)CDEFS) $(CDEFSSLO) $(CDEFSMT) $(CFLAGSAPPEND) $(CFLAGSOUTOBJ) $(SLO)/$(SECOND_BUILD)_$*.o $*.c
@@ -128,7 +128,7 @@ LANGFILEEXT=jlf
 .ENDIF
 
 $(PAR)/%.par :
-	@echo "Making:   " $@
+	@echo "Making: (.par)   " $@
 	@@-$(MKDIR) $(MISC)/{$(subst,$(@:d:d:d), $(@:d:d))}
 .IF "$(GUI)"=="WNT"
 	$(COMMAND_ECHO)$(CPPLCC) -+ -P $(INCLUDE) $(CDEFS) $(SCPDEFS) -DDLLPOSTFIX=$(DLLPOSTFIX) $(*:b).scp > $(MISC)/{$(subst,$(@:d:d:d), $(@:d:d))}/$(*:b).pre

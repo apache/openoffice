@@ -25,14 +25,14 @@
 $(MISC)/$(TARGET).$(SRS1NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS1NAME).dprr: $(SRC1FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS1NAME.dprr)  " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS1NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS1NAME).srs} -fo=$@ -p=$(TARGET) $(SRC1FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC1FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS Localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -46,7 +46,7 @@ $(SRS)/$(SRS1NAME).srs: $(foreach,i,$(SRC1FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS1NAME).srs: $(SRC1FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.src)  " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \
@@ -66,14 +66,14 @@ $(SRS)/$(SRS1NAME).srs: $(SRC1FILES)
 $(MISC)/$(TARGET).$(SRS2NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS2NAME).dprr: $(SRC2FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS2NAME.dprr)   " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS2NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS2NAME).srs} -fo=$@ -p=$(TARGET) $(SRC2FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC2FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC LOCALIZE2)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -87,7 +87,7 @@ $(SRS)/$(SRS2NAME).srs: $(foreach,i,$(SRC2FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS2NAME).srs: $(SRC2FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (2.src)   " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \
@@ -107,14 +107,14 @@ $(SRS)/$(SRS2NAME).srs: $(SRC2FILES)
 $(MISC)/$(TARGET).$(SRS3NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS3NAME).dprr: $(SRC3FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS3NAME.dprr)  " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS3NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS3NAME).srs} -fo=$@ -p=$(TARGET) $(SRC3FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC3FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC3 Localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -128,7 +128,7 @@ $(SRS)/$(SRS3NAME).srs: $(foreach,i,$(SRC3FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS3NAME).srs: $(SRC3FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC3sec)   " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \
@@ -148,14 +148,14 @@ $(SRS)/$(SRS3NAME).srs: $(SRC3FILES)
 $(MISC)/$(TARGET).$(SRS4NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS4NAME).dprr: $(SRC4FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS4NAME.dprr)   " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS4NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS4NAME).srs} -fo=$@ -p=$(TARGET) $(SRC4FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC4FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC4 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -169,7 +169,7 @@ $(SRS)/$(SRS4NAME).srs: $(foreach,i,$(SRC4FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS4NAME).srs: $(SRC4FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC4sec)  " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \
@@ -189,14 +189,14 @@ $(SRS)/$(SRS4NAME).srs: $(SRC4FILES)
 $(MISC)/$(TARGET).$(SRS5NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS5NAME).dprr: $(SRC5FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS5NAME.dprr)   " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS5NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS5NAME).srs} -fo=$@ -p=$(TARGET) $(SRC5FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC5FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC5 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -210,7 +210,7 @@ $(SRS)/$(SRS5NAME).srs: $(foreach,i,$(SRC5FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS5NAME).srs: $(SRC5FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC5sec)   " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \
@@ -230,14 +230,14 @@ $(SRS)/$(SRS5NAME).srs: $(SRC5FILES)
 $(MISC)/$(TARGET).$(SRS6NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS6NAME).dprr: $(SRC6FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS6NAME.dprr)   " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS6NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS6NAME).srs} -fo=$@ -p=$(TARGET) $(SRC6FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC6FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC6 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -251,7 +251,7 @@ $(SRS)/$(SRS6NAME).srs: $(foreach,i,$(SRC6FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS6NAME).srs: $(SRC6FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS6sec)   " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \
@@ -271,14 +271,14 @@ $(SRS)/$(SRS6NAME).srs: $(SRC6FILES)
 $(MISC)/$(TARGET).$(SRS7NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS7NAME).dprr: $(SRC7FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC7NAME.dprr)   " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS7NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS7NAME).srs} -fo=$@ -p=$(TARGET) $(SRC7FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC7FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC7 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -292,7 +292,7 @@ $(SRS)/$(SRS7NAME).srs: $(foreach,i,$(SRC7FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS7NAME).srs: $(SRC7FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC7sec)   " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \
@@ -312,14 +312,14 @@ $(SRS)/$(SRS7NAME).srs: $(SRC7FILES)
 $(MISC)/$(TARGET).$(SRS8NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS8NAME).dprr: $(SRC8FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS8NAME.dprr)   " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS8NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS8NAME).srs} -fo=$@ -p=$(TARGET) $(SRC8FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC8FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC8 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -333,7 +333,7 @@ $(SRS)/$(SRS8NAME).srs: $(foreach,i,$(SRC8FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS8NAME).srs: $(SRC8FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS8sec)   " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \
@@ -353,14 +353,14 @@ $(SRS)/$(SRS8NAME).srs: $(SRC8FILES)
 $(MISC)/$(TARGET).$(SRS9NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS9NAME).dprr: $(SRC9FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS9NAME.dprr)   " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS9NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS9NAME).srs} -fo=$@ -p=$(TARGET) $(SRC9FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC9FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC9 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -374,7 +374,7 @@ $(SRS)/$(SRS9NAME).srs: $(foreach,i,$(SRC9FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS9NAME).srs: $(SRC9FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS9sec)   " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \
@@ -394,14 +394,14 @@ $(SRS)/$(SRS9NAME).srs: $(SRC9FILES)
 $(MISC)/$(TARGET).$(SRS10NAME).dprr: $(LOCALIZE_ME_DEST)
 
 $(MISC)/$(TARGET).$(SRS10NAME).dprr: $(SRC10FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS10NAME.dprr)   " $(@:f)
 	@@-$(RM) $(MISC)/$(TARGET).$(SRS10NAME).dprr
 	$(COMMAND_ECHO)$(RSC) $(VERBOSITY) $(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) -I$(INCLOCPRJ)  -I$(INCLOCAL) -I$(INC) -I$(INCCOM) $(RSCDEFS) $(RSCUPDVERDEF) -fp={$(SRS)/$(SRS10NAME).srs} -fo=$@ -p=$(TARGET) $(SRC10FILES)
 
 .IF "$(WITH_LANG)"!=""
 
 $(foreach,i,$(SRC10FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRC10 localize)   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)-$(MKDIRHIER)  $(COMMONMISC)$/$(PRJNAME)
@@ -415,7 +415,7 @@ $(SRS)/$(SRS10NAME).srs: $(foreach,i,$(SRC10FILES) $(COMMONMISC)/$(TARGET)/$i)
 .ELSE			# "$(WITH_LANG)"!=""
 $(SRS)/$(SRS10NAME).srs: $(SRC10FILES)
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SRS10sec)  " $(@:f)
 	$(COMMAND_ECHO)$(RSC) -presponse $(VERBOSITY) @$(mktmp \
 		$(SRSDEFAULT) $(RSC_SRS_CHARSET) $(RSCFLAGS) -I$(RSCEXTINC) \
 		$(INCLUDE) $(RSCDEFS) $(RSCUPDVERDEF) \

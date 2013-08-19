@@ -102,7 +102,7 @@ $(ZIP1DEPFILE) :
 
 
 $(ZIP1TARGETN) : delzip $(ZIP1DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (ZIP1TARGETN)   " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"
@@ -231,7 +231,7 @@ $(ZIP2DEPFILE) :
 
 
 $(ZIP2TARGETN) : delzip $(ZIP2DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making:  (ZIP2TARGETN)  " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"
@@ -360,7 +360,7 @@ $(ZIP3DEPFILE) :
 
 
 $(ZIP3TARGETN) : delzip $(ZIP3DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (ZIP3TARGETN)   " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"
@@ -489,7 +489,7 @@ $(ZIP4DEPFILE) :
 
 
 $(ZIP4TARGETN) : delzip $(ZIP4DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making:  (ZIP4TARGETN)  " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"
@@ -618,7 +618,7 @@ $(ZIP5DEPFILE) :
 
 
 $(ZIP5TARGETN) : delzip $(ZIP5DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (ZIP5TARGETN)  " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"
@@ -747,7 +747,7 @@ $(ZIP6DEPFILE) :
 
 
 $(ZIP6TARGETN) : delzip $(ZIP6DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (ZIP6TARGETN)  " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"
@@ -876,7 +876,7 @@ $(ZIP7DEPFILE) :
 
 
 $(ZIP7TARGETN) : delzip $(ZIP7DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (ZIP7TARGETN)  " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"
@@ -1005,7 +1005,7 @@ $(ZIP8DEPFILE) :
 
 
 $(ZIP8TARGETN) : delzip $(ZIP8DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (ZIP8TARGETN)  " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"
@@ -1134,7 +1134,7 @@ $(ZIP9DEPFILE) :
 
 
 $(ZIP9TARGETN) : delzip $(ZIP9DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (ZIP9TARGETN)  " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"
@@ -1263,7 +1263,7 @@ $(ZIP10DEPFILE) :
 
 
 $(ZIP10TARGETN) : delzip $(ZIP10DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (ZIP10TARGETN)  " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"

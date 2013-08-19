@@ -24,7 +24,7 @@
 .IF "$(LIB1ARCHIV)" != ""
 
 $(LIB1ARCHIV) :	$(LIB1TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB1ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB1ARCHIV:b).cmd
@@ -75,7 +75,7 @@ $(LIB1TARGET) :	$(LIB1FILES) \
 	@echo using: $(LIB1TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB1TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB1OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@
@@ -131,7 +131,7 @@ $(LIB1TARGET) :	$(LIB1FILES) \
 .IF "$(LIB2ARCHIV)" != ""
 
 $(LIB2ARCHIV) :	$(LIB2TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB2ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB2ARCHIV:b).cmd
@@ -182,7 +182,7 @@ $(LIB2TARGET) :	$(LIB2FILES) \
 	@echo using: $(LIB2TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB2TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB2OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@
@@ -238,7 +238,7 @@ $(LIB2TARGET) :	$(LIB2FILES) \
 .IF "$(LIB3ARCHIV)" != ""
 
 $(LIB3ARCHIV) :	$(LIB3TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB3ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB3ARCHIV:b).cmd
@@ -289,7 +289,7 @@ $(LIB3TARGET) :	$(LIB3FILES) \
 	@echo using: $(LIB3TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB3TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB3OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@
@@ -345,7 +345,7 @@ $(LIB3TARGET) :	$(LIB3FILES) \
 .IF "$(LIB4ARCHIV)" != ""
 
 $(LIB4ARCHIV) :	$(LIB4TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB4ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB4ARCHIV:b).cmd
@@ -396,7 +396,7 @@ $(LIB4TARGET) :	$(LIB4FILES) \
 	@echo using: $(LIB4TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB4TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB4OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@
@@ -452,7 +452,7 @@ $(LIB4TARGET) :	$(LIB4FILES) \
 .IF "$(LIB5ARCHIV)" != ""
 
 $(LIB5ARCHIV) :	$(LIB5TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB5ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB5ARCHIV:b).cmd
@@ -503,7 +503,7 @@ $(LIB5TARGET) :	$(LIB5FILES) \
 	@echo using: $(LIB5TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB5TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB5OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@
@@ -559,7 +559,7 @@ $(LIB5TARGET) :	$(LIB5FILES) \
 .IF "$(LIB6ARCHIV)" != ""
 
 $(LIB6ARCHIV) :	$(LIB6TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB6ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB6ARCHIV:b).cmd
@@ -610,7 +610,7 @@ $(LIB6TARGET) :	$(LIB6FILES) \
 	@echo using: $(LIB6TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB6TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB6OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@
@@ -666,7 +666,7 @@ $(LIB6TARGET) :	$(LIB6FILES) \
 .IF "$(LIB7ARCHIV)" != ""
 
 $(LIB7ARCHIV) :	$(LIB7TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB7ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB7ARCHIV:b).cmd
@@ -717,7 +717,7 @@ $(LIB7TARGET) :	$(LIB7FILES) \
 	@echo using: $(LIB7TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB7TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB7OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@
@@ -773,7 +773,7 @@ $(LIB7TARGET) :	$(LIB7FILES) \
 .IF "$(LIB8ARCHIV)" != ""
 
 $(LIB8ARCHIV) :	$(LIB8TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB8ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB8ARCHIV:b).cmd
@@ -824,7 +824,7 @@ $(LIB8TARGET) :	$(LIB8FILES) \
 	@echo using: $(LIB8TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB8TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB8OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@
@@ -880,7 +880,7 @@ $(LIB8TARGET) :	$(LIB8FILES) \
 .IF "$(LIB9ARCHIV)" != ""
 
 $(LIB9ARCHIV) :	$(LIB9TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB9ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB9ARCHIV:b).cmd
@@ -931,7 +931,7 @@ $(LIB9TARGET) :	$(LIB9FILES) \
 	@echo using: $(LIB9TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB9TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB9OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@
@@ -987,7 +987,7 @@ $(LIB9TARGET) :	$(LIB9FILES) \
 .IF "$(LIB10ARCHIV)" != ""
 
 $(LIB10ARCHIV) :	$(LIB10TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB10ARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB10ARCHIV:b).cmd
@@ -1038,7 +1038,7 @@ $(LIB10TARGET) :	$(LIB10FILES) \
 	@echo using: $(LIB10TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIB10TARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB10OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@

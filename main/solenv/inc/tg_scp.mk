@@ -35,7 +35,7 @@ $(PAR)/%.par : $(SOLARPARDIR)/%.par
 LOCALSCP$(TNR)FILES+=$(foreach,i,$(SCP$(TNR)FILES) $(foreach,j,$(SCP$(TNR)LINK_PRODUCT_TYPE) $(PAR)/$j/$i ))
 
 $(SCP$(TNR)TARGETN): $(LOCALSCP$(TNR)FILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SCPTARGETN)   " $(@:f)
 	@@-$(MKDIRHIER) $(BIN)/$(SCP$(TNR)LINK_PRODUCT_TYPE)
 	$(COMMAND_ECHO)$(SCPLINK) $(SCPLINKFLAGS) @@$(mktmp $(foreach,i,$(SCP$(TNR)FILES) $(subst,$(@:d:d:d), $(@:d:d))/$(i:+","))) -o $@
 .ENDIF

@@ -25,7 +25,7 @@
 .IF "$(RCTARGET)"!=""
 $(RCTARGET): $(RCFILES) 		\
 			 $(RCDEPN)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RCTARGET)   " $(@:f)
 .IF "$(CCNUMVER)" > "001300000000"
 .IF "$(MFC_INCLUDE)"!=""
 	$(COMMAND_ECHO)$(RC) $(INCLUDE) -I$(SOLARRESDIR) $(foreach,i,$(ATL_INCLUDE) -I$(i)) -I$(MFC_INCLUDE) $(RCLANGFLAGS_$(@:d:d:b)) $(RCFLAGS)

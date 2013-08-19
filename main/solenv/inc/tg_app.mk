@@ -102,7 +102,7 @@ APP$(TNR)LIBSALCPPRT*=$(LIBSALCPPRT)
 $(APP$(TNR)TARGETN): $(APP$(TNR)OBJS) $(APP$(TNR)LIBS) \
 	$(APP$(TNR)RES) \
 	$(APP$(TNR)ICON) $(APP$(TNR)DEPN) $(USE_APP$(TNR)DEF)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(OS)"=="MACOSX"
 	@echo unx
@@ -128,7 +128,7 @@ $(APP$(TNR)TARGETN): $(APP$(TNR)OBJS) $(APP$(TNR)LIBS) \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         app $(APP$(TNR)RPATH) $@
 .IF "$(TARGETTYPE)"=="GUI"
-	@echo "Making:   " $(@:f).app
+	@echo "Making: (.app)   " $(@:f).app
 	@macosx-create-bundle $@
 .ENDIF		# "$(TARGETTYPE)"=="GUI"
 .ELSE		# "$(OS)"=="MACOSX"

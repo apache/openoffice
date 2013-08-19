@@ -26,7 +26,7 @@
 $(CLASSDIR)/com/sun/star/upd/$(VERSIONINFOFILE)_updversion.class .PHONY: $(MISC)/java/com/sun/star/upd/$(VERSIONINFOFILE)_updversion.java 
 
 $(MISC)/java/com/sun/star/upd/$(VERSIONINFOFILE)_updversion.java .PHONY:
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.java)   " $(@:f)
 	@-$(MKDIRHIER) $(MISC)/java/com/sun/star/upd
 .IF "$(GUI)"=="UNX"
 	@echo package com.sun.star.upd\; > $@

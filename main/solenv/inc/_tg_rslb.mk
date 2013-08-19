@@ -64,7 +64,7 @@ $(RSC_MULTI1) : \
 $(RESLIB1TARGETN): \
 		$(RESLIB1SRSFILES) \
 		$(RESLIB1BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RESLIB1TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI1)
@@ -127,7 +127,7 @@ $(RSC_MULTI2) : \
 $(RESLIB2TARGETN): \
 		$(RESLIB2SRSFILES) \
 		$(RESLIB2BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RESLIB2TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI2)
@@ -190,7 +190,7 @@ $(RSC_MULTI3) : \
 $(RESLIB3TARGETN): \
 		$(RESLIB3SRSFILES) \
 		$(RESLIB3BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making:  (RESLIB3TARGETN)  " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI3)
@@ -253,7 +253,7 @@ $(RSC_MULTI4) : \
 $(RESLIB4TARGETN): \
 		$(RESLIB4SRSFILES) \
 		$(RESLIB4BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RESLIB4TARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI4)
@@ -316,7 +316,7 @@ $(RSC_MULTI5) : \
 $(RESLIB5TARGETN): \
 		$(RESLIB5SRSFILES) \
 		$(RESLIB5BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making:  (RESLIB5TARGETN)  " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI5)
@@ -379,7 +379,7 @@ $(RSC_MULTI6) : \
 $(RESLIB6TARGETN): \
 		$(RESLIB6SRSFILES) \
 		$(RESLIB6BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RESLIB6TARGETN)  " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI6)
@@ -442,7 +442,7 @@ $(RSC_MULTI7) : \
 $(RESLIB7TARGETN): \
 		$(RESLIB7SRSFILES) \
 		$(RESLIB7BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RESLIB7TARGETN)  " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI7)
@@ -505,7 +505,7 @@ $(RSC_MULTI8) : \
 $(RESLIB8TARGETN): \
 		$(RESLIB8SRSFILES) \
 		$(RESLIB8BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RESLIB8TARGETN)  " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI8)
@@ -568,7 +568,7 @@ $(RSC_MULTI9) : \
 $(RESLIB9TARGETN): \
 		$(RESLIB9SRSFILES) \
 		$(RESLIB9BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RESLIB9TARGETN)  " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI9)
@@ -631,7 +631,7 @@ $(RSC_MULTI10) : \
 $(RESLIB10TARGETN): \
 		$(RESLIB10SRSFILES) \
 		$(RESLIB10BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RESLIB10TARGETN)  " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI10)

@@ -22,7 +22,7 @@
 
 .IF "$(SDI1TARGET)"!=""
 $(SDI1TARGET): $(SVSDI1DEPEND) $(SDI1NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDI1TARGET)  " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \
@@ -40,7 +40,7 @@ $(SDI1TARGET): $(SVSDI1DEPEND) $(SDI1NAME).sdi
 
 .IF "$(SDI2TARGET)"!=""
 $(SDI2TARGET): $(SVSDI2DEPEND) $(SDI2NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDI2TARGET)  " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \
@@ -58,7 +58,7 @@ $(SDI2TARGET): $(SVSDI2DEPEND) $(SDI2NAME).sdi
 
 .IF "$(SDI3TARGET)"!=""
 $(SDI3TARGET): $(SVSDI3DEPEND) $(SDI3NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDI3TARGET)  " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \
@@ -76,7 +76,7 @@ $(SDI3TARGET): $(SVSDI3DEPEND) $(SDI3NAME).sdi
 
 .IF "$(SDI4TARGET)"!=""
 $(SDI4TARGET): $(SVSDI4DEPEND) $(SDI4NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDI4TARGET)  " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \
@@ -94,7 +94,7 @@ $(SDI4TARGET): $(SVSDI4DEPEND) $(SDI4NAME).sdi
 
 .IF "$(SDI5TARGET)"!=""
 $(SDI5TARGET): $(SVSDI5DEPEND) $(SDI5NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDI5TARGET)  " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \
@@ -112,7 +112,7 @@ $(SDI5TARGET): $(SVSDI5DEPEND) $(SDI5NAME).sdi
 
 .IF "$(SDI6TARGET)"!=""
 $(SDI6TARGET): $(SVSDI6DEPEND) $(SDI6NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDI6TARGET)   " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \
@@ -130,7 +130,7 @@ $(SDI6TARGET): $(SVSDI6DEPEND) $(SDI6NAME).sdi
 
 .IF "$(SDI7TARGET)"!=""
 $(SDI7TARGET): $(SVSDI7DEPEND) $(SDI7NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making:  (SDI7TARGET)  " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \
@@ -148,7 +148,7 @@ $(SDI7TARGET): $(SVSDI7DEPEND) $(SDI7NAME).sdi
 
 .IF "$(SDI8TARGET)"!=""
 $(SDI8TARGET): $(SVSDI8DEPEND) $(SDI8NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDI8TARGET)   " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \
@@ -166,7 +166,7 @@ $(SDI8TARGET): $(SVSDI8DEPEND) $(SDI8NAME).sdi
 
 .IF "$(SDI9TARGET)"!=""
 $(SDI9TARGET): $(SVSDI9DEPEND) $(SDI9NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDI9TARGET)  " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \
@@ -184,7 +184,7 @@ $(SDI9TARGET): $(SVSDI9DEPEND) $(SDI9NAME).sdi
 
 .IF "$(SDI10TARGET)"!=""
 $(SDI10TARGET): $(SVSDI10DEPEND) $(SDI10NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDI10TARGET)  " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \

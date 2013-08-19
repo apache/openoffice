@@ -29,7 +29,7 @@
 .IF "$(LIB$(TNR)ARCHIV)" != ""
 
 $(LIB$(TNR)ARCHIV) :	$(LIB$(TNR)TARGET)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIBARCHIV)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@-$(RM) $(MISC)/$(LIB$(TNR)ARCHIV:b).cmd
@@ -80,7 +80,7 @@ $(LIB$(TNR)TARGET) :	$(LIB$(TNR)FILES) \
 	@echo using: $(LIB$(TNR)TARGET)
 	@echo ------------------------------
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (LIBTARGET)   " $(@:f)
 	@@-$(RM) $@
 .IF "$(GUI)"=="UNX"
 	@echo $(LIB$(TNR)OBJFILES:s/.obj/.o/) | sed "s#$(PRJ:s/./\./)/$(ROUT)#$(ROUT)#g" | xargs -n 1 > $@

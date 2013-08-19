@@ -70,4 +70,4 @@ APP1STDLIBS+=-lCstd
 
 .INCLUDE : target.mk
 
-
+genPO: $(APP1TARGETN)

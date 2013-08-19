@@ -27,7 +27,7 @@
 
 .IF "$(SDI$(TNR)TARGET)"!=""
 $(SDI$(TNR)TARGET): $(SVSDI$(TNR)DEPEND) $(SDI$(TNR)NAME).sdi
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SDITARGET)   " $(@:f)
 	@-$(RM) $@
 	$(COMMAND_ECHO)$(SVIDL) @$(mktmp \
 	$(VERBOSITY) \

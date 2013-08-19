@@ -25,7 +25,7 @@ MKFILENAME:=TG_OBJ.MK
 
 .IF "$(OBJTARGET)"!=""
 $(OBJTARGET): $(OBJFILES) $(IDLOBJFILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (OBJTARGET)   " $(@:f)
 .IF "$(GUI)"=="OS2"
 .IF "$(LIBTARGET)"!="NO"
 	@-$(TYPE) $(mktmp $(&:+"\n")) > $(@:s/.lib/.lin/)
@@ -57,7 +57,7 @@ $(OBJTARGET): $(OBJFILES) $(IDLOBJFILES)
 .IF "$(SECOND_BUILD)"!=""
 .IF "$($(SECOND_BUILD)OBJTARGET)"!=""
 $($(SECOND_BUILD)OBJTARGET): $(REAL_$(SECOND_BUILD)_OBJFILES)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (OBJTARGET)   " $(@:f)
 .IF "$(GUI)"=="OS2"
 .IF "$(LIBTARGET)"!="NO"
 	@-$(TYPE) $(mktmp $(&:+"\n")) > $(@:s/.lib/.lin/)

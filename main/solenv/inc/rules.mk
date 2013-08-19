@@ -24,7 +24,6 @@
 MKFILENAME:=RULES.MK
 
 $(OBJ)/%.obj : %.cxx
-      @echo "jan var her"
 	@echo $(COMPILE_ECHO_SWITCH) Compiling: $(PRJNAME)/$(PATH_IN_MODULE)/$(COMPILE_ECHO_FILE)
 .IF "$(GUI)"=="UNX"
 	@$(RM) $@ $(@:s/.obj/.o/)
@@ -468,7 +467,7 @@ $(SLO)/%.obj : %.mm
 $(MISC)/%.dpslo :
 	@@noop
 .IF "$(MAKETARGETS)"!="genPO"
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.dpslo)   " $(@:f)
 	@@$(RM) $@
 	@@-$(CDD) $(MISC) && $(!null,$(all_local_slo) $(TYPE:s/+//) echo #) $(foreach,i,$(all_local_slo:b:+".dpcc") s_$(i)) > $(@:f)
 	@@-$(CDD) $(MISC) && $(!null,$(all_misc_slo) $(TYPE:s/+//) echo #) $(foreach,i,$(all_misc_slo:b:+".dpcc") s_$(i)) >> $(@:f)
@@ -477,7 +476,7 @@ $(MISC)/%.dpslo :
 .ENDIF
 
 $(MISC)/%.dpobj :
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.dpobj)   " $(@:f)
 	@@$(RM) $@
 	@@-$(CDD) $(MISC) && $(!null,$(all_local_obj) $(TYPE:s/+//) echo #) $(foreach,i,$(all_local_obj:b:+".dpcc") o_$(i)) > $(@:f)
 	@@-$(CDD) $(MISC) && $(!null,$(all_misc_obj) $(TYPE:s/+//) echo #) $(foreach,i,$(all_misc_obj:b:+".dpcc") o_$(i)) >> $(@:f)
@@ -567,7 +566,7 @@ $(MISC)/%.dpr :
 	@@noop
 .IF "$(nodep)"==""
 .IF "$(MAKETARGETS)"!="genPO"
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.dpr)   " $(@:f)
     @@-$(RM) $@
 	$(COMMAND_ECHO)dmake $(MFLAGS) $(MAKEFILE) $(CALLMACROS) make_srs_deps=true $(DEPSRSFILES)
 	$(COMMAND_ECHO)-$(TYPE) $(MISC)/$(TARGET).*.dprr >> $@
@@ -578,7 +577,7 @@ $(MISC)/%.dpz :
 	@@noop
 .IF "$(MAKETARGETS)"!="genPO"
 .IF "$(nodep)"==""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.dpz)   " $(@:f)
     @@-$(RM) $@
     $(COMMAND_ECHO)dmake $(MFLAGS) $(MAKEFILE) $(CALLMACROS) make_zip_deps=true $(ZIPDEPFILES)
 	$(COMMAND_ECHO)$(TYPE) $(ZIPDEPFILES) $(mktmp $(NULL)) | grep -v "CVS" | grep -v "\.svn" >> $@
@@ -592,7 +591,7 @@ $(MISC)/%.dpz :
 $(MISC)/%.dpj :
         @noop
 .IF "$(MAKETARGETS)"!="genPO"
-	@echo "jAN Making:   " $(@:f)
+	@echo "Making: (.dpj)   " $(@:f)
 .IF "$(nodep)"!=""
 .IF "$(GUI)"=="UNX"
 	@echo > $@
@@ -692,7 +691,7 @@ $(MISC)/%.sh : %.sh
 # merge targets
 .IF "$(WITH_LANG)"!=""
 $(COMMONMISC)/$(TARGET)/%.ulf : %.ulf
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.ulf)   " $(@:f)
     $(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
 	$(COMMAND_ECHO)$(ULFEX) -p $(PRJNAME) -i $(@:f) -o $(@).$(INPATH) -m $(LOCALIZESDF) -l all

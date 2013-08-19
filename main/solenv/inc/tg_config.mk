@@ -56,7 +56,7 @@ $(XCS_TRIM) :   $(DTDDIR)/registry/component-schema.dtd \
 .ENDIF
 
 $(PROCESSOUT)/registry/schema/$(PACKAGEDIR)/%.xcs : %.xcs
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.xcs)   " $(@:f)
 .IF "$(VERBOSE)" != "FALSE"
     @echo --- validating and stripping schema files
 .ENDIF
@@ -82,7 +82,7 @@ $(XCS_RESOURCES) :   $(XSLDIR)/resource.xsl
 .ENDIF
 
 $(PROCESSOUT)/registry/res/{$(alllangiso)}/$(PACKAGEDIR)/%.properties :| $(PROCESSOUT)/merge/$(PACKAGEDIR)/%.xcs
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.xcs)   " $(@:f)
 .IF "$(VERBOSE)" != "FALSE"
     @echo --- creating locale dependent resource bundles
 .ENDIF
@@ -108,7 +108,7 @@ $(XCU_DEFAULT) : $(DTDDIR)/registry/component-update.dtd \
 .ENDIF
 
 $(PROCESSOUT)/registry/data/$(PACKAGEDIR)/%.xcu : %.xcu
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.xcu)   " $(@:f)
 .IF "$(VERBOSE)" != "FALSE"
     @echo --- validating and creating a locale independent file
 .ENDIF
@@ -143,7 +143,7 @@ $(PROCESSOUT)/registry/res/{$(alllangiso)}/$(PACKAGEDIR)/%.xcu :| $(PROCESSOUT)/
 .ELSE			# "$(WITH_LANG)"!=""
 $(PROCESSOUT)/registry/res/{$(alllangiso)}/$(PACKAGEDIR)/%.xcu :| %.xcu
 .ENDIF			# "$(WITH_LANG)"!=""
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.xcu)   " $(@:f)
 .IF "$(VERBOSE)" != "FALSE"
     @echo --- creating locale dependent entries
 .ENDIF
@@ -176,7 +176,7 @@ $(XCU_MODULES) : $(XSLDIR)/alllang.xsl
 
 
 $(PROCESSOUT)/registry/spool/$(PACKAGEDIR)/%.xcu :| $$(@:b:s/-/./:b).xcu
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.xcu)   " $(@:f)
 .IF "$(VERBOSE)" != "FALSE"
     @echo --- creating a module file
 .ENDIF

@@ -23,7 +23,7 @@
 
 
 $(MISC)/%.cxx : %.y
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.cxx.y)  " $(@:f)
 	$(COMMAND_ECHO)tr -d "\015" < $< > $(MISC)/stripped_$<
 	$(BISON) $(YACCFLAGS) -o $(YACCTARGET) $(MISC)/stripped_$<
 # removing -f switch - avoid getting nothing when copying a file to itself
@@ -37,7 +37,7 @@ $(MISC)/%.cxx : %.y
 .ENDIF
 
 $(INCCOM)/yy%.cxx : %.y
-	@echo "Making:   " $(@:f)
+	@echo "Making: (.cxx.y)   " $(@:f)
 	$(COMMAND_ECHO)tr -d "\015" < $< > $(MISC)/stripped_$<
 	$(COMMAND_ECHO)$(BISON) $(YACCFLAGS) -o $(YACCTARGET) $(MISC)/stripped_$<
 # removing -f switch - avoid getting nothing when copying a file to itself

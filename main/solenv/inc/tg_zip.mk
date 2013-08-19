@@ -106,7 +106,7 @@ $(ZIP$(TNR)DEPFILE) :
 
 
 $(ZIP$(TNR)TARGETN) : delzip $(ZIP$(TNR)DEPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (ZIPTARGETN)   " $(@:f)
     @@$(!eq,$?,$(?:s/delzip/zzz/) -$(RM) echo) $(uniq $@ $(subst,$(COMMON_OUTDIR),$(OUTPATH) $@))
 	@$(eq,$?,$(?:s/delzip/zzz/) noop echo ) rebuilding zipfiles
 .IF "$(GUI)" != "OS2"

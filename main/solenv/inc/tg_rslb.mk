@@ -68,7 +68,7 @@ $(RSC_MULTI$(TNR)) : \
 $(RESLIB$(TNR)TARGETN): \
 		$(RESLIB$(TNR)SRSFILES) \
 		$(RESLIB$(TNR)BMPS)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (RESLIBTARGETN)   " $(@:f)
 .IF "$(GUI)"=="UNX"
 .IF "$(common_build_reslib)"!=""
     @@-$(RM) $(RSC_MULTI$(TNR))

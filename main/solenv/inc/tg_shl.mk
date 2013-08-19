@@ -279,7 +279,7 @@ $(SHL$(TNR)TARGETN) : \
 					$(SHL$(TNR)RES)\
 					$(SHL$(TNR)DEPN) \
 					$(SHL$(TNR)LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHLTARGETN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL$(TNR)DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL$(TNR)DEFAULTRES:b).rc
@@ -458,7 +458,7 @@ $(SHL$(TNR)TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL$(TNR)RPATH) $@
 .IF "$(SHL$(TNR)CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)  " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL$(TNR)CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -593,7 +593,7 @@ $(SHL$(TNR)IMPLIBN):	\
 $(SHL$(TNR)IMPLIBN):	\
 					$(SHL$(TNR)LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHLIMPLIBN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw

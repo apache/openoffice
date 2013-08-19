@@ -274,7 +274,7 @@ $(SHL1TARGETN) : \
 					$(SHL1RES)\
 					$(SHL1DEPN) \
 					$(SHL1LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL1TARGETN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL1DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL1DEFAULTRES:b).rc
@@ -453,7 +453,7 @@ $(SHL1TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL1RPATH) $@
 .IF "$(SHL1CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)   " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL1CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -814,7 +814,7 @@ $(SHL2TARGETN) : \
 					$(SHL2RES)\
 					$(SHL2DEPN) \
 					$(SHL2LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL2TARGETN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL2DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL2DEFAULTRES:b).rc
@@ -993,7 +993,7 @@ $(SHL2TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL2RPATH) $@
 .IF "$(SHL2CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)   " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL2CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -1354,7 +1354,7 @@ $(SHL3TARGETN) : \
 					$(SHL3RES)\
 					$(SHL3DEPN) \
 					$(SHL3LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL3TARGETN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL3DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL3DEFAULTRES:b).rc
@@ -1533,7 +1533,7 @@ $(SHL3TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL3RPATH) $@
 .IF "$(SHL3CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)   " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL3CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -1894,7 +1894,7 @@ $(SHL4TARGETN) : \
 					$(SHL4RES)\
 					$(SHL4DEPN) \
 					$(SHL4LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL4TARGETN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL4DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL4DEFAULTRES:b).rc
@@ -2073,7 +2073,7 @@ $(SHL4TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL4RPATH) $@
 .IF "$(SHL4CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)   " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL4CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -2434,7 +2434,7 @@ $(SHL5TARGETN) : \
 					$(SHL5RES)\
 					$(SHL5DEPN) \
 					$(SHL5LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL5TARGETN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL5DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL5DEFAULTRES:b).rc
@@ -2613,7 +2613,7 @@ $(SHL5TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL5RPATH) $@
 .IF "$(SHL5CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)  " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL5CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -2974,7 +2974,7 @@ $(SHL6TARGETN) : \
 					$(SHL6RES)\
 					$(SHL6DEPN) \
 					$(SHL6LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL6TARGETN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL6DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL6DEFAULTRES:b).rc
@@ -3153,7 +3153,7 @@ $(SHL6TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL6RPATH) $@
 .IF "$(SHL6CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)   " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL6CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -3514,7 +3514,7 @@ $(SHL7TARGETN) : \
 					$(SHL7RES)\
 					$(SHL7DEPN) \
 					$(SHL7LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL7TARGETN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL7DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL7DEFAULTRES:b).rc
@@ -3693,7 +3693,7 @@ $(SHL7TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL7RPATH) $@
 .IF "$(SHL7CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)   " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL7CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -4054,7 +4054,7 @@ $(SHL8TARGETN) : \
 					$(SHL8RES)\
 					$(SHL8DEPN) \
 					$(SHL8LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL8TARGETN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL8DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL8DEFAULTRES:b).rc
@@ -4233,7 +4233,7 @@ $(SHL8TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL8RPATH) $@
 .IF "$(SHL8CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)   " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL8CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -4594,7 +4594,7 @@ $(SHL9TARGETN) : \
 					$(SHL9RES)\
 					$(SHL9DEPN) \
 					$(SHL9LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL9TARGETN)  " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL9DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL9DEFAULTRES:b).rc
@@ -4773,7 +4773,7 @@ $(SHL9TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL9RPATH) $@
 .IF "$(SHL9CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)  " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL9CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -5134,7 +5134,7 @@ $(SHL10TARGETN) : \
 					$(SHL10RES)\
 					$(SHL10DEPN) \
 					$(SHL10LINKLIST)
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL10TARGETN)  " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(SHL10DEFAULTRES)"!=""
 	@@-$(RM) $(MISC)/$(SHL10DEFAULTRES:b).rc
@@ -5313,7 +5313,7 @@ $(SHL10TARGETN) : \
     @$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl \
         shl $(SHL10RPATH) $@
 .IF "$(SHL10CREATEJNILIB)"!=""
-	@echo "Making:   " $(@:f).jnilib
+	@echo "Making: (.jnilib)  " $(@:f).jnilib
 	@macosx-create-bundle $@
 .ENDIF          # "$(SHL10CREATEJNILIB)"!=""
 .IF "$(UPDATER)"=="YES"
@@ -5441,7 +5441,7 @@ $(SHL1IMPLIBN):	\
 $(SHL1IMPLIBN):	\
 					$(SHL1LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL1IMPLIBN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw
@@ -5495,7 +5495,7 @@ $(SHL2IMPLIBN):	\
 $(SHL2IMPLIBN):	\
 					$(SHL2LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL2IMPLIBN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw
@@ -5549,7 +5549,7 @@ $(SHL3IMPLIBN):	\
 $(SHL3IMPLIBN):	\
 					$(SHL3LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making:  (SHL3IMPLIBN)  " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw
@@ -5603,7 +5603,7 @@ $(SHL4IMPLIBN):	\
 $(SHL4IMPLIBN):	\
 					$(SHL4LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL4IMPLIBN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw
@@ -5657,7 +5657,7 @@ $(SHL5IMPLIBN):	\
 $(SHL5IMPLIBN):	\
 					$(SHL5LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL5IMPLIBN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw
@@ -5711,7 +5711,7 @@ $(SHL6IMPLIBN):	\
 $(SHL6IMPLIBN):	\
 					$(SHL6LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL6IMPLIBN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw
@@ -5765,7 +5765,7 @@ $(SHL7IMPLIBN):	\
 $(SHL7IMPLIBN):	\
 					$(SHL7LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL7IMPLIBN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw
@@ -5819,7 +5819,7 @@ $(SHL8IMPLIBN):	\
 $(SHL8IMPLIBN):	\
 					$(SHL8LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL8IMPLIBN)  " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw
@@ -5873,7 +5873,7 @@ $(SHL9IMPLIBN):	\
 $(SHL9IMPLIBN):	\
 					$(SHL9LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL9IMPLIBN)  " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw
@@ -5927,7 +5927,7 @@ $(SHL10IMPLIBN):	\
 $(SHL10IMPLIBN):	\
 					$(SHL10LIBS)
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SHL10IMPLIBN)   " $(@:f)
 .IF "$(GUI)" == "WNT"
 .IF "$(COM)"=="GCC"
 	@echo no ImportLibs on mingw

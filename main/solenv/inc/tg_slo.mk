@@ -30,7 +30,7 @@ $(SLOTARGET): $(SLOFILES) $(IDLSLOFILES)
 	@echo $(SLOTARGET)
 	@echo $(&:+"\n")
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SLOTARGET)  " $(@:f)
 #	@$(RM) $@
 .IF "$(GUI)"=="WNT"
 .IF "$(COM)"=="GCC"
@@ -67,7 +67,7 @@ $($(SECOND_BUILD)SLOTARGET): $(REAL_$(SECOND_BUILD)_SLOFILES)
 	@echo $(REAL_$(SECOND_BUILD)SLOTARGET)
 	@echo $(&:+"\n")
 .ENDIF
-	@echo "Making:   " $(@:f)
+	@echo "Making: (SLOsec)  " $(@:f)
 .IF "$(GUI)"=="WNT"
 .IF "$(COM)"=="GCC"
 	+$(ECHONL) $(foreach,i,$(REAL_$(SECOND_BUILD)_SLOFILES:f) $(RSLO)/$(i)) | xargs -n1 > $@
