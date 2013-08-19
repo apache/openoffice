@@ -38,7 +38,7 @@ namespace configmgr {
 class Modifications: private boost::noncopyable {
 public:
     struct Node {
-        typedef boost::unordered_map< rtl::OUString, Node > Children;
+        typedef boost::unordered_map< rtl::OUString, Node, rtl::OUStringHash > Children;
 
         Children children;
     };
