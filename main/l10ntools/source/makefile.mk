@@ -87,3 +87,8 @@ $(OBJ)$/gConXrmWrap.obj:  $(MISC)$/gConXrm_yy.c
 $(OBJ)$/gConXhpWrap.obj:  $(MISC)$/gConXhp_yy.c
 $(OBJ)$/gConUlfWrap.obj:  $(MISC)$/gConUlf_yy.c
 $(OBJ)$/gConTreeWrap.obj: $(MISC)$/gConTree_yy.c
+
+
+genPO: ALLTAR
+	+$(PERL) $(SOLARENV)/bin/deliver.pl
+

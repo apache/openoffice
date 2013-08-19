@@ -70,4 +70,6 @@ APP1STDLIBS+=-lCstd
 
 .INCLUDE : target.mk
 
-genPO: $(APP1TARGETN)
+genPO: ALLTAR
+       +$(PERL) $(SOLARENV)/bin/deliver.pl
+

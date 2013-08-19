@@ -40,4 +40,5 @@ $(INCCOM)/versionlist.hrc : ./inc/version.lst
 	$(COMMAND_ECHO)echo "#define VER_MONTH $(OOOBASEVERSIONMONTH)" >> $@
 	$(COMMAND_ECHO)echo "#define VER_YEAR $(OOOBASEVERSIONYEAR)" >> $@
 
-genPO: $(INCCOM)/versionlist.hrc
+genPO: ALLTAR
+       +$(PERL) $(SOLARENV)/bin/deliver.pl
