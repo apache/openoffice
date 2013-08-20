@@ -206,9 +206,9 @@ Any OXMLControlProperty::convertString(const ::com::sun::star::uno::Type& _rExpe
 		#endif
 			rImporter.GetMM100UnitConverter().convertBool(bValue, _rReadCharacters);
 			OSL_ENSURE(bSuccess,
-					::rtl::OString("OXMLControlProperty::convertString: could not convert \"")
+					(::rtl::OString("OXMLControlProperty::convertString: could not convert \"")
 				+=	::rtl::OString(_rReadCharacters.getStr(), _rReadCharacters.getLength(), RTL_TEXTENCODING_ASCII_US)
-				+=	::rtl::OString("\" into a boolean!"));
+				+=	::rtl::OString("\" into a boolean!")).getStr());
 			aReturn <<= bValue;
 		}
 		break;
@@ -221,9 +221,9 @@ Any OXMLControlProperty::convertString(const ::com::sun::star::uno::Type& _rExpe
 		#endif
 				rImporter.GetMM100UnitConverter().convertNumber(nValue, _rReadCharacters);
 				OSL_ENSURE(bSuccess,
-						::rtl::OString("OXMLControlProperty::convertString: could not convert \"")
+						(::rtl::OString("OXMLControlProperty::convertString: could not convert \"")
 					+=	::rtl::OString(_rReadCharacters.getStr(), _rReadCharacters.getLength(), RTL_TEXTENCODING_ASCII_US)
-					+=	::rtl::OString("\" into an integer!"));
+					+=	::rtl::OString("\" into an integer!")).getStr());
 				if (TypeClass_SHORT == _rExpectedType.getTypeClass())
 					aReturn <<= (sal_Int16)nValue;
 				else
@@ -243,9 +243,9 @@ Any OXMLControlProperty::convertString(const ::com::sun::star::uno::Type& _rExpe
 		#endif
 			rImporter.GetMM100UnitConverter().convertDouble(nValue, _rReadCharacters);
 			OSL_ENSURE(bSuccess,
-					::rtl::OString("OXMLControlProperty::convertString: could not convert \"")
+					(::rtl::OString("OXMLControlProperty::convertString: could not convert \"")
 				+=	::rtl::OString(_rReadCharacters.getStr(), _rReadCharacters.getLength(), RTL_TEXTENCODING_ASCII_US)
-				+=	::rtl::OString("\" into a double!"));
+				+=	::rtl::OString("\" into a double!")).getStr());
 			aReturn <<= (double)nValue;
 		}
 		break;
@@ -274,9 +274,9 @@ Any OXMLControlProperty::convertString(const ::com::sun::star::uno::Type& _rExpe
 				#endif
 					rImporter.GetMM100UnitConverter().convertDouble(nValue, _rReadCharacters);
 					OSL_ENSURE(bSuccess,
-							::rtl::OString("OPropertyImport::convertString: could not convert \"")
+							(::rtl::OString("OPropertyImport::convertString: could not convert \"")
 						+=	::rtl::OString(_rReadCharacters.getStr(), _rReadCharacters.getLength(), RTL_TEXTENCODING_ASCII_US)
-						+=	::rtl::OString("\" into a double!"));
+						+=	::rtl::OString("\" into a double!")).getStr());
 
 					// then convert it into the target type
 					switch (nType)

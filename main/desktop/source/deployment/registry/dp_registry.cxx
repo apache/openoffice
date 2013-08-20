@@ -294,7 +294,7 @@ void PackageRegistryImpl::insertBackend(
             buf.appendAscii( RTL_CONSTASCII_STRINGPARAM("\"!") );
             OSL_ENSURE( 0, ::rtl::OUStringToOString(
                             buf.makeStringAndClear(),
-                            RTL_TEXTENCODING_UTF8 ) );
+                            RTL_TEXTENCODING_UTF8 ).getStr() );
         }
 #endif
     }

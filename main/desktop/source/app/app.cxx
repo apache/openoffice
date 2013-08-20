@@ -258,7 +258,7 @@ ResMgr* Desktop::GetDesktopResManager()
         // Create desktop resource manager and bootstrap process
         // was successful. Use default way to get language specific message.
         if ( Application::IsInExecute() )
-            Desktop::pResMgr = ResMgr::CreateResMgr( U2S( aMgrName ));
+            Desktop::pResMgr = ResMgr::CreateResMgr( U2S(aMgrName).getStr());
 
         if ( !Desktop::pResMgr )
         {
@@ -282,7 +282,7 @@ ResMgr* Desktop::GetDesktopResManager()
 
             ::com::sun::star::lang::Locale aLocale( aLanguage, aCountry, aVariant );
 
-            Desktop::pResMgr = ResMgr::SearchCreateResMgr( U2S( aMgrName ), aLocale);
+            Desktop::pResMgr = ResMgr::SearchCreateResMgr( U2S(aMgrName).getStr(), aLocale);
             AllSettings as = GetSettings();
             as.SetUILocale(aLocale);
             SetSettings(as);
@@ -1935,7 +1935,7 @@ void Desktop::Main()
         sal_Bool bCheckOk = sal_False;
         ::com::sun::star::lang::Locale aLocale;
         String aMgrName = String::CreateFromAscii( "ofa" );
-        ResMgr* pLabelResMgr = ResMgr::SearchCreateResMgr( U2S( aMgrName ), aLocale );
+        ResMgr* pLabelResMgr = ResMgr::SearchCreateResMgr( U2S(aMgrName).getStr(), aLocale );
         String aTitle = pLabelResMgr ? String( ResId( RID_APPTITLE, *pLabelResMgr ) ) : String();
         delete pLabelResMgr;
 

@@ -1259,7 +1259,7 @@ namespace pcr
                     ::rtl::OString sMessage( "OPropertyBrowserController::UpdateUI: empty category provided for property '" );
                     sMessage += ::rtl::OString( property->second.Name.getStr(), property->second.Name.getLength(), osl_getThreadTextEncoding() );
                     sMessage += "'!";
-                    OSL_ENSURE( false, sMessage );
+                    OSL_ENSURE( false, sMessage.getStr() );
                 }
             #endif
                 // finally insert this property control

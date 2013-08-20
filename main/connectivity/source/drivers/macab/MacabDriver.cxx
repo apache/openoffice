@@ -79,7 +79,7 @@ namespace
 
             if ( !_rFunction )
             {   // did not find the symbol
-                OSL_ENSURE( false, ::rtl::OString( "lcl_getFunctionFromModuleOrUnload: could not find the symbol " ) + ::rtl::OString( _pAsciiSymbolName ) );
+                OSL_ENSURE( false, (::rtl::OString( "lcl_getFunctionFromModuleOrUnload: could not find the symbol " ) + ::rtl::OString( _pAsciiSymbolName )).getStr() );
                 osl_unloadModule( _rModule );
                 _rModule = NULL;
             }

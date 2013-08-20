@@ -70,7 +70,7 @@
             sMessage += pContext; \
         } \
         sMessage += "\n"; \
-	    OSL_ENSURE( false, sMessage )
+	    OSL_ENSURE( false, sMessage.getStr() )
 
 #else   // OSL_DEBUG_LEVEL
 
