@@ -106,7 +106,7 @@ CFLAGSEXCEPTIONS=-fexceptions
 CFLAGS_NO_EXCEPTIONS=-fno-exceptions
 
 # Normal C++ compilation flags
-CFLAGSCXX=-pipe -std=c++11 -fsigned-char
+CFLAGSCXX=-pipe -fsigned-char
 
 CFLAGSCXX+= -Wno-ctor-dtor-privacy
 
