@@ -37,7 +37,7 @@ ENABLE_EXCEPTIONS=TRUE
 @all:
 	@echo "cppunit disabled. nothing do do."
 
-.ENDIF
+.ELSE
 
 CFLAGSCXX += $(CPPUNIT_CFLAGS)
 
