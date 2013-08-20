@@ -77,6 +77,7 @@
 #include <shellio.hxx> 		// I/O
 #include <docstyle.hxx>
 #include <doc.hxx>
+#include <unotxdoc.hxx>
 #include <IDocumentUndoRedo.hxx>
 #include <docstat.hxx>
 #include <pagedesc.hxx>
@@ -786,26 +787,26 @@ sal_Bool SwDocShell::ConvertTo( SfxMedium& rMedium )
 
 sal_Bool SwDocShell::SaveCompleted( const uno::Reference < embed::XStorage >& xStor  )
 {
-	RTL_LOGFILE_CONTEXT_AUTHOR( aLog, "SW", "JP93722",  "SwDocShell::SaveCompleted" );
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLog, "SW", "JP93722",  "SwDocShell::SaveCompleted" );
     sal_Bool bRet = SfxObjectShell::SaveCompleted( xStor );
-	if( bRet )
-	{
-		// erst hier entscheiden, ob das Speichern geklappt hat oder nicht
-		if( IsModified() )
-			pDoc->SetModified();
-		else
-			pDoc->ResetModified();
-	}
+    if( bRet )
+    {
+        // erst hier entscheiden, ob das Speichern geklappt hat oder nicht
+        if( IsModified() )
+            pDoc->SetModified();
+        else
+            pDoc->ResetModified();
+    }
 
     if( pOLEChildList )
-	{
-		sal_Bool bResetModified = IsEnableSetModified();
-		if( bResetModified )
-			EnableSetModified( sal_False );
+    {
+        sal_Bool bResetModified = IsEnableSetModified();
+        if( bResetModified )
+            EnableSetModified( sal_False );
 
         uno::Sequence < rtl::OUString > aNames = pOLEChildList->GetObjectNames();
         for( sal_Int32 n = aNames.getLength(); n; n-- )
-		{
+        {
             if ( !pOLEChildList->MoveEmbeddedObject( aNames[n-1], GetEmbeddedObjectContainer() ) )
             {
                 DBG_ERROR( "Copying of objects didn't work!" );
@@ -814,13 +815,25 @@ sal_Bool SwDocShell::SaveCompleted( const uno::Reference < embed::XStorage >& xS
             //SvPersist* pPersist = this;
             //SvInfoObjectRef aRef( pInfList->GetObject( --n ));
             //pPersist->Move( &aRef, aRef->GetStorageName() );
-		}
+        }
 
         DELETEZ( pOLEChildList );
-		if( bResetModified )
-			EnableSetModified( sal_True );
+        if( bResetModified )
+            EnableSetModified( sal_True );
     }
-	return bRet;
+
+    // #121125#, #122868#
+    // Clean up rendering data created by the usage of <XRenderable> interface
+    // of <SwXDocument> (e.g. export to PDF) and which is not cleaned up by
+    // "rendering the last page".
+    // This is needed to restore former <ViewOptions>. This is performed via
+    // a <ViewShell> reference hold by the rendering data. The rendering data
+    // also needs to loose the hold <ViewShell> reference. Otherwise, the application
+    // will crash on closing the document.
+    uno::Reference< text::XTextDocument >  xDoc(GetBaseModel(), uno::UNO_QUERY);
+    ((SwXTextDocument*)xDoc.get())->CleanUpRenderingData();
+
+    return bRet;
 }
 
 /*--------------------------------------------------------------------
@@ -1125,31 +1138,15 @@ SfxStyleSheetBasePool*	SwDocShell::GetStyleSheetPool()
 }
 
 
-#include <unotxdoc.hxx>
-
 void SwDocShell::SetView(SwView* pVw)
 {
-    bool bChanged(false);
-
     if(0 != (pView = pVw))
     {
         pWrtShell = &pView->GetWrtShell();
-        bChanged = true;
     }
     else
     {
         pWrtShell = 0;
-        bChanged = true;
-    }
-
-    if(bChanged)
-    {
-        // #121125# SwXTextDocument may hold references to the ViewShell, so inform
-        // it about changes to allow to react on it. This happens e.g. when printing
-        // and/or PDF export (SwViewOptionAdjust_Impl holds a reference to the view
-        // and needs to be destroyed)
-        uno::Reference< text::XTextDocument >  xDoc(GetBaseModel(), uno::UNO_QUERY);
-        ((SwXTextDocument*)xDoc.get())->ReactOnViewShellChange();
     }
 }
 
@@ -1159,51 +1156,30 @@ void SwDocShell::PrepareReload()
 	::DelAllGrfCacheEntries( pDoc );
 }
 
-// --> OD 2006-11-07 #i59688#
 // linked graphics are now loaded on demand.
 // Thus, loading of linked graphics no longer needed and necessary for
 // the load of document being finished.
 void SwDocShell::LoadingFinished()
 {
-    // --> OD 2007-10-08 #i38810#
-    // Original fix fails after integration of cws xmlsec11:
     // interface <SfxObjectShell::EnableSetModified(..)> no longer works, because
     // <SfxObjectShell::FinishedLoading(..)> doesn't care about its status and
     // enables the document modification again.
     // Thus, manuell modify the document, if its modified and its links are updated
     // before <FinishedLoading(..)> is called.
     const bool bHasDocToStayModified( pDoc->IsModified() && pDoc->LinksUpdated() );
-//    // --> OD 2005-02-11 #i38810# - disable method <SetModified(..)>, if document
-//    // has stay in modified state, due to the update of its links during load.
-//    bool bResetEnableSetModified(false);
-//    if ( IsEnableSetModified() &&
-//         pDoc->IsModified() && pDoc->LinksUpdated() )
-//    {
-//        EnableSetModified( sal_False );
-//        bResetEnableSetModified = true;
-//    }
-    // <--
     FinishedLoading( SFX_LOADED_ALL );
-//    // --> OD 2005-02-11 #i38810#
-//    if ( bResetEnableSetModified )
-//    {
-//        EnableSetModified( sal_True );
-//    }
-//    // <--
-	SfxViewFrame* pVFrame = SfxViewFrame::GetFirst(this);
-	if(pVFrame)
-	{
-		SfxViewShell* pShell = pVFrame->GetViewShell();
-		if(PTR_CAST(SwSrcView, pShell))
-			((SwSrcView*)pShell)->Load(this);
-	}
+    SfxViewFrame* pVFrame = SfxViewFrame::GetFirst(this);
+    if(pVFrame)
+    {
+        SfxViewShell* pShell = pVFrame->GetViewShell();
+        if(PTR_CAST(SwSrcView, pShell))
+            ((SwSrcView*)pShell)->Load(this);
+    }
 
-    // --> OD 2007-10-08 #i38810#
     if ( bHasDocToStayModified && !pDoc->IsModified() )
     {
         pDoc->SetModified();
     }
-    // <--
 }
 
 // eine Uebertragung wird abgebrochen (wird aus dem SFX gerufen)
