@@ -23,20 +23,17 @@ PRJNAME=languages
 TARGET=languages_merge
 
 # --- Targets ------------------------------------------------------
-#.INCLUDE : settings.mk
+.INCLUDE : settings.mk
+
+genPO:
+        -$(MKDIRHIER) $(COMMONMISC)/staging
 
 
-all:
+ALLTAR:
 	@echo "languages decoupled at the moment"
         @exit -1
 
-genPO:
-        @echo "terminate"
-        @exit -1
-
 #.IF "$(WITH_LANG)" == ""
-#
-#@all:
 #	@echo "Nothing to do - en-US only build."
 #.ELSE
 #
