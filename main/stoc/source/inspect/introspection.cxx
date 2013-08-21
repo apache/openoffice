@@ -2304,9 +2304,9 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 				else
 				{
 					OSL_ENSURE( sal_False, 
-						(::rtl::OString( "Introspection: Property \"" ) + 
+						::rtl::OString( "Introspection: Property \"" ) + 
 					    ::rtl::OUStringToOString( aPropName, RTL_TEXTENCODING_ASCII_US ) +
-                        ::rtl::OString( "\" found more than once in PropertySet" )).getStr() );
+                        ::rtl::OString( "\" found more than once in PropertySet" ) );
 				}
 
 				// Count pflegen

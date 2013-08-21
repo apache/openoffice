@@ -965,6 +965,10 @@ struct CStringHash
 
 } /* Namespace */
 
+/* Helper method to support OString messages in OSL_ENSURE */
+inline sal_Bool SAL_CALL osl_assertFailedLine( const sal_Char* pszFileName, sal_Int32 nLine, const ::rtl::OString& rMessage)
+{ return osl_assertFailedLine( pszFileName, nLine, rMessage.getStr()); }
+
 #endif /* __cplusplus */
 
 #endif /* _RTL_STRING_HXX_ */

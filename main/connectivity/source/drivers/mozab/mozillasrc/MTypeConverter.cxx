@@ -33,8 +33,7 @@ using namespace connectivity::mozab;
 // -------------------------------------------------------------------------
 void MTypeConverter::ouStringToNsString(::rtl::OUString const &ous, nsString &nss)
 {
-	// Convert to ::rtl::OString (utf-8 encoding).
-	::rtl::OString os(ous,ous.getLength(), RTL_TEXTENCODING_UTF8);
+	const ::rtl::OString os( rtl::OUStringToOString( ous, RTL_TEXTENCODING_UTF8));
 
 	const char *cs = os.getStr();
 	PRUint32 csLen = os.getLength();
@@ -94,19 +93,14 @@ void MTypeConverter::prUnicharToOUString(PRUnichar const *pru, ::rtl::OUString &
 // -------------------------------------------------------------------------
 char *MTypeConverter::ouStringToCCharStringUtf8(::rtl::OUString const &ous)
 {
-	// Convert to ::rtl::OString,
-	::rtl::OString os(ous,ous.getLength(), RTL_TEXTENCODING_UTF8);
-
+	const ::rtl::OString os( rtl::OUStringToOString( ous, RTL_TEXTENCODING_UTF8));
 	const char *cs = os.getStr();
-
 	return(strdup(cs));
 }
 // -------------------------------------------------------------------------
 char *MTypeConverter::ouStringToCCharStringAscii(::rtl::OUString const &ous)
 {
-	// Convert ::rtl::OUString to ::rtl::OString,
-	::rtl::OString os(ous,ous.getLength(), RTL_TEXTENCODING_ASCII_US);
-
+	const ::rtl::OString os( rtl::OUStringToOString( ous, RTL_TEXTENCODING_UTF8));
 	return(strdup(os.getStr()));
 }
 // -------------------------------------------------------------------------
@@ -120,8 +114,7 @@ char *MTypeConverter::nsStringToCCharStringAscii(nsString const &nss)
 // -------------------------------------------------------------------------
 ::std::string MTypeConverter::ouStringToStlString(::rtl::OUString const &ous)
 {
-	// Convert ::rtl::OUString to ::rtl::OString.
-	::rtl::OString os(ous,ous.getLength(),RTL_TEXTENCODING_ASCII_US);
+	const ::rtl::OString os( rtl::OUStringToOString( ous, RTL_TEXTENCODING_UTF8));
 	return( ::std::string(os.getStr()));
 }
 #if 0

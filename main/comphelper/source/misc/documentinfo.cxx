@@ -182,7 +182,7 @@ namespace comphelper {
             sMessage += "\nin function:\n";
             sMessage += BOOST_CURRENT_FUNCTION;
             sMessage += "\n";
-	        OSL_ENSURE( false, sMessage.getStr() );
+	        OSL_ENSURE( false, sMessage );
 	    }
 
         return sTitle;
