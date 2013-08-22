@@ -93,8 +93,8 @@ void l10nMem::loadEntryKey(int iL, const std::string& sS, const std::string& sK,
      { l10nMem_impl::mcImpl->loadEntryKey(iL, sS, sK, sO, sT, bI); }
 void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK, const std::string& sT)
      { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
-void l10nMem::save(const std::string& sT, bool bK, bool bF)
-     { l10nMem_impl::mcImpl->save(*this, sT, bK, bF); }
+void l10nMem::save(const std::string& sT, bool bK, bool bP, bool bF)
+     { l10nMem_impl::mcImpl->save(*this, sT, bK, bP, bF); }
 int  l10nMem::prepareMerge()
      { return l10nMem_impl::mcImpl->mcDb.prepareMerge(); }
 void l10nMem::dumpMem(const std::string& sT)
@@ -226,12 +226,13 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid, bool bForce)
+void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid, bool bPOT, bool bForce)
 {
   int iE, iEsize  = mcDb.mcENUSlist.size();
   int iL, iLsize  = mcDb.mcLangList.size();
   int iCntDeleted = 0, iCntChanged = 0, iCntAdded = 0;
-  std::string sFileName = msModuleName + ".po";
+  std::string sFileName = msModuleName + (bPOT ? ".pot" : ".po");
+ 
 
   // and reorganize db if needed
   mcDb.reorganize();
@@ -246,7 +247,7 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
   {
     convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
 
-    savePo.startSave("en-US", sFileName);
+    savePo.startSave("", sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
       l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
@@ -255,7 +256,7 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
       if (cE.meState == l10nMem::ENTRY_DELETED)
         continue;
 
-      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msText, cE.msText, false);
+      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msText, "", false);
     }
     savePo.endSave();
   }
@@ -265,7 +266,7 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
   {
     convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
 
-    savePo.startSave(mcDb.mcLangList[iL], sFileName);
+    savePo.startSave(mcDb.mcLangList[iL] + "/", sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
       l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];

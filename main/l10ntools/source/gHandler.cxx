@@ -271,7 +271,7 @@ void handler::runExtract()
   for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
   {
     // tell system
-    l10nMem::showDebug("gLang extracting text from file " + msSourceDir + *siSource);
+    l10nMem::showDebug("genLang extracting text from file " + msSourceDir + *siSource);
 
     // get converter and extract file
     convert_gen convertObj(mcMemory, msSourceDir, msTargetDir, *siSource);
@@ -279,7 +279,7 @@ void handler::runExtract()
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, false, mbForceSave);
+  mcMemory.save(msPoOutDir, false, true, mbForceSave);
 }
 
 
@@ -291,7 +291,7 @@ void handler::runMerge(bool bKid)
   for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
   {
     // tell system
-    l10nMem::showDebug("gLang extracting text from file " + msSourceDir + *siSource);
+    l10nMem::showDebug("genLang extracting text from file " + msSourceDir + *siSource);
 
     // get converter and extract file
     convert_gen convertObj(mcMemory, msSourceDir, msTargetDir, *siSource);
@@ -299,7 +299,7 @@ void handler::runMerge(bool bKid)
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, bKid, mbForceSave);
+  mcMemory.save(msPoOutDir, bKid, false, mbForceSave);
 }
 
 
@@ -319,7 +319,7 @@ void handler::runConvert()
       std::string sFilePath = msSourceDir + *siLang + "/";
 
         // tell system
-      l10nMem::showDebug("gLang convert text from file " + sFilePath + *siSource);
+      l10nMem::showDebug("genLang convert text from file " + sFilePath + *siSource);
 
       // get converter and extract files
       convert_gen convertObj(mcMemory, sFilePath, msTargetDir, *siSource);
@@ -328,7 +328,7 @@ void handler::runConvert()
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, false, mbForceSave);
+  mcMemory.save(msPoOutDir, false, false, mbForceSave);
 }
 
 
@@ -426,7 +426,7 @@ void handler::showManual()
     "     comma separated string with langauge id to be used\n"
     "\n"   
     "  -d\n"
-    "     extensive verbose mode, tells what gLang is doing in detail\n"
+    "     extensive verbose mode, tells what genLang is doing in detail\n"
     "  -f <files>\n"
     "     list of files containing messages to be extracted\n"
     "     \"convert\" expect sdf generated po files, to be converted\n"
@@ -443,7 +443,7 @@ void handler::showManual()
     "  -t <target dir>\n"
     "     <directory> used to write merged source files (root path for <files>\n"
     "  -v\n"
-    "     verbose mode, tells what gLang is doing\n";
+    "     verbose mode, tells what genLang is doing\n";
 
   exit(0);
 }
@@ -460,7 +460,7 @@ void handler::loadL10MEM()
   // load texts from en-US po file (master)
   {
     // tell system
-    l10nMem::showDebug("gLang loading master text from file " + sLoad + sMod);
+    l10nMem::showDebug("genLang loading master text from file " + sLoad + sMod);
 
     // and load file
     mcMemory.setLanguage("", true, false);
@@ -476,7 +476,7 @@ void handler::loadL10MEM()
     mcMemory.setLanguage(*siLang, true, false);
 
     // tell system
-    l10nMem::showDebug("gLang loading text from language file " + sLoad + sMod);
+    l10nMem::showDebug("genLang loading text from language file " + sLoad + sMod);
 
     convert_gen(mcMemory, sLoad, msTargetDir, sMod).execute(false);
   }

@@ -36,7 +36,8 @@
 convert_xcu::convert_xcu(l10nMem& crMemory)
                         : convert_gen_impl(crMemory),
                           mbNoCollectingData(true),
-                          miLevel(0)
+                          miLevel(0),
+                          mbNoTranslate(false)
 {
 }
 
@@ -96,6 +97,8 @@ void convert_xcu::popKey(char *syyText)
   // check for correct node/prop relations
   if (mcStack.size())
     mcStack.pop_back();
+
+  mbNoTranslate = false;
 }
 
 
@@ -106,19 +109,24 @@ void convert_xcu::startCollectData(char *syyText)
   int nL;
   std::string sTag = copySource(syyText);
 
+  if (mbNoTranslate)
+    return;
+
   // locate object name
   nL = sTag.find("xml:lang=\"");
   if (nL != (int)std::string::npos)
   {
     // test langauge
     nL += 10;
-    if (sTag.substr(nL,5) != "en-US")
+    if (sTag.substr(nL,5) == "en-US")
+      mbNoCollectingData = false;
+    else if (sTag.substr(nL,14) == "x-no-translate")
+      mbNoTranslate = true;
+    else
     {
       std::string sErr = sTag.substr(nL,5) + " is not en-US";
       mcMemory.showError(sErr);
     }
-    else
-      mbNoCollectingData = false;
   }
 }
 
@@ -133,7 +141,7 @@ void convert_xcu::stopCollectData(char *syyText)
   copySource(syyText);
 
   // time to do something ?
-  if (mbNoCollectingData)
+  if (mbNoCollectingData || mbNoTranslate)
     return;
 
   // remove any newline

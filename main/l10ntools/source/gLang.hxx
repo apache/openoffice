@@ -84,6 +84,7 @@ class l10nMem
 
     void save          (const std::string& sTargetDir,
                         bool               bKid,
+                        bool               bPOT,
                         bool               bForce);
     void dumpMem       (const std::string& sTargetDir);
 

@@ -54,6 +54,7 @@ class convert_xcu : public convert_gen_impl
   private:
     std::vector<std::string> mcStack;
     int                      miLevel;
+    bool                     mbNoTranslate;
 
     void execute();
 };

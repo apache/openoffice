@@ -169,7 +169,7 @@ void convert_po::execute()
 void convert_po::startSave(const std::string& sLanguage,
                            const std::string& sFile)
 {
-  std::string sFilePath = msTargetPath + sLanguage + "/" + sFile;
+  std::string sFilePath = msTargetPath + sLanguage + sFile;
   outBuffer.open(sFilePath.c_str(), std::ios::out);
 
   if (!outBuffer.is_open())
