@@ -24,18 +24,18 @@ PRJNAME=reportbuilder
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-../template/registry/data/org/openoffice/Office/Paths.xcu,\
-../registry/data/org/openoffice/Setup.xcu,\
-../registry/data/org/openoffice/TypeDetection/Types.xcu,\
-../registry/data/org/openoffice/TypeDetection/Filter.xcu,\
-../registry/data/org/openoffice/Office/Embedding.xcu,\
-../registry/data/org/openoffice/Office/ReportDesign.xcu,\
-../registry/data/org/openoffice/Office/Accelerators.xcu,\
-../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu,\
-../registry/data/org/openoffice/Office/DataAccess.xcu,\
-../registry/data/org/openoffice/Office/Paths.xcu,\
-../registry/data/org/openoffice/Office/UI/Controller.xcu,\
-../registry/data/org/openoffice/Office/UI/ReportCommands.xcu,\
+../template/registry/data/org/openoffice/Office/Paths.xcu \
+../registry/data/org/openoffice/Setup.xcu \
+../registry/data/org/openoffice/TypeDetection/Types.xcu \
+../registry/data/org/openoffice/TypeDetection/Filter.xcu \
+../registry/data/org/openoffice/Office/Embedding.xcu \
+../registry/data/org/openoffice/Office/ReportDesign.xcu \
+../registry/data/org/openoffice/Office/Accelerators.xcu \
+../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu \
+../registry/data/org/openoffice/Office/DataAccess.xcu \
+../registry/data/org/openoffice/Office/Paths.xcu \
+../registry/data/org/openoffice/Office/UI/Controller.xcu \
+../registry/data/org/openoffice/Office/UI/ReportCommands.xcu \
 ../registry/data/org/openoffice/Office/UI/DbReportWindowState.xcu"
 
 

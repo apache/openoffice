@@ -24,45 +24,45 @@ PRJNAME=scp2
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-kde/module_kde.ulf,\
-quickstart/module_quickstart.ulf,\
-graphicfilter/module_graphicfilter.ulf,\
-onlineupdate/module_onlineupdate.ulf,\
-impress/folderitem_impress.ulf,\
-impress/registryitem_impress.ulf,\
-impress/module_impress.ulf,\
-impress/module_ogltrans.ulf,\
-sdkoo/module_sdkoo.ulf,\
-writer/folderitem_writer.ulf,\
-writer/registryitem_writer.ulf,\
-writer/module_writer.ulf,\
-math/module_math.ulf,\
-math/folderitem_math.ulf,\
-math/registryitem_math.ulf,\
-javafilter/module_javafilter.ulf,\
-javafilter/registryitem_javafilter.ulf,\
-winexplorerext/module_winexplorerext.ulf,\
-xsltfilter/module_xsltfilter.ulf,\
-draw/registryitem_draw.ulf,\
-draw/folderitem_draw.ulf,\
-draw/module_draw.ulf,\
-calc/folderitem_calc.ulf,\
-calc/registryitem_calc.ulf,\
-calc/module_calc.ulf,\
-ooo/registryitem_ooo.ulf,\
-ooo/module_systemint.ulf,\
-ooo/module_ooo.ulf,\
-ooo/module_java.ulf,\
-ooo/module_headless.ulf,\
-ooo/directory_ooo.ulf,\
-ooo/folderitem_ooo.ulf,\
-ooo/module_langpack.ulf,\
-gnome/module_gnome.ulf,\
-base/folderitem_base.ulf,\
-base/registryitem_base.ulf,\
-base/module_base.ulf,\
-activex/module_activex.ulf,\
-python/module_python_mailmerge.ulf,\
+kde/module_kde.ulf \
+quickstart/module_quickstart.ulf \
+graphicfilter/module_graphicfilter.ulf \
+onlineupdate/module_onlineupdate.ulf \
+impress/folderitem_impress.ulf \
+impress/registryitem_impress.ulf \
+impress/module_impress.ulf \
+impress/module_ogltrans.ulf \
+sdkoo/module_sdkoo.ulf \
+writer/folderitem_writer.ulf \
+writer/registryitem_writer.ulf \
+writer/module_writer.ulf \
+math/module_math.ulf \
+math/folderitem_math.ulf \
+math/registryitem_math.ulf \
+javafilter/module_javafilter.ulf \
+javafilter/registryitem_javafilter.ulf \
+winexplorerext/module_winexplorerext.ulf \
+xsltfilter/module_xsltfilter.ulf \
+draw/registryitem_draw.ulf \
+draw/folderitem_draw.ulf \
+draw/module_draw.ulf \
+calc/folderitem_calc.ulf \
+calc/registryitem_calc.ulf \
+calc/module_calc.ulf \
+ooo/registryitem_ooo.ulf \
+ooo/module_systemint.ulf \
+ooo/module_ooo.ulf \
+ooo/module_java.ulf \
+ooo/module_headless.ulf \
+ooo/directory_ooo.ulf \
+ooo/folderitem_ooo.ulf \
+ooo/module_langpack.ulf \
+gnome/module_gnome.ulf \
+base/folderitem_base.ulf \
+base/registryitem_base.ulf \
+base/module_base.ulf \
+activex/module_activex.ulf \
+python/module_python_mailmerge.ulf \
 python/module_python.ulf"
 
 .INCLUDE :	settings.mk

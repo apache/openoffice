@@ -24,9 +24,9 @@ PRJNAME=sysui
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-desktop/share/documents.ulf,\
-desktop/share/launcher_genericname.ulf,\
-desktop/share/launcher_name.ulf,\
+desktop/share/documents.ulf \
+desktop/share/launcher_genericname.ulf \
+desktop/share/launcher_name.ulf \
 desktop/share/launcher_comment.ulf"
 
 .INCLUDE :	settings.mk

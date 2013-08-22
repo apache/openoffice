@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=svl
 TARGET=helper
 
-LANGUAGE_FILELIST="misc/mediatyp.src,\
+LANGUAGE_FILELIST="misc/mediatyp.src \
 items/cstitem.src"
 
 .INCLUDE :	settings.mk

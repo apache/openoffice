@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=forms
 TARGET=none
 
-LANGUAGE_FILELIST="resource/strings.src,resource/xforms.src"
+LANGUAGE_FILELIST="resource/strings.src resource/xforms.src"
 
 
 .INCLUDE :	settings.mk

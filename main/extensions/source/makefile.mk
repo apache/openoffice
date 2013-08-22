@@ -24,28 +24,28 @@ PRJNAME=basic
 TARGET=none
 
 LANGUAGE_FILELIST="\
-abpilot/abspilot.src,\
-bibliography/bib.src,\
-bibliography/datman.src,\
-bibliography/sections.src,\
-bibliography/toolbar.src,\
-dbpilots/commonpagesdbp.src,\
-dbpilots/dbpilots.src,\
-dbpilots/gridpages.src,\
-dbpilots/groupboxpages.src,\
-dbpilots/listcombopages.src,\
-preload/preload.src,\
-propctrlr/fontdialog.src,\
-propctrlr/formlinkdialog.src,\
-propctrlr/formres.src,\
-propctrlr/newdatatype.src,\
-propctrlr/pcrmiscres.src,\
-propctrlr/propres.src,\
-propctrlr/selectlabeldialog.src,\
-propctrlr/taborder.src,\
-scanner/grid.src,\
-scanner/sanedlg.src,\
-update/check/Addons.xcu,\
+abpilot/abspilot.src \
+bibliography/bib.src \
+bibliography/datman.src \
+bibliography/sections.src \
+bibliography/toolbar.src \
+dbpilots/commonpagesdbp.src \
+dbpilots/dbpilots.src \
+dbpilots/gridpages.src \
+dbpilots/groupboxpages.src \
+dbpilots/listcombopages.src \
+preload/preload.src \
+propctrlr/fontdialog.src \
+propctrlr/formlinkdialog.src \
+propctrlr/formres.src \
+propctrlr/newdatatype.src \
+propctrlr/pcrmiscres.src \
+propctrlr/propres.src \
+propctrlr/selectlabeldialog.src \
+propctrlr/taborder.src \
+scanner/grid.src \
+scanner/sanedlg.src \
+update/check/Addons.xcu \
 update/check/updatehdl.src\
 "
 

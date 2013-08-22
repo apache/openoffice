@@ -77,7 +77,7 @@ convert_gen::convert_gen(l10nMem&           cMemory,
   if      (sExtension == "hrc")        convert_gen_impl::mcImpl = new convert_src(cMemory);
   else if (sExtension == "src")        convert_gen_impl::mcImpl = new convert_src(cMemory);
   else if (sExtension == "po")         convert_gen_impl::mcImpl = new convert_po(cMemory);
-  else if (sExtension == "pot")        convert_gen_impl::mcImpl = new convert_db(cMemory);
+  else if (sExtension == "pot")        convert_gen_impl::mcImpl = new convert_po(cMemory);
   else if (sExtension == "tree")       convert_gen_impl::mcImpl = new convert_tree(cMemory);
   else if (sExtension == "ulf")        convert_gen_impl::mcImpl = new convert_ulf(cMemory);
   else if (sExtension == "xcu")        convert_gen_impl::mcImpl = new convert_xcu(cMemory);

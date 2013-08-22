@@ -31,7 +31,7 @@ ENABLE_EXCEPTIONS=TRUE
 LIBTARGET=NO
 EXTENSIONNAME:=mysql-connector-ooo
 LANGUAGE_FILELIST="\
-registry/data/org/openoffice/Office/DataAccess/Drivers.xcu,\
+registry/data/org/openoffice/Office/DataAccess/Drivers.xcu \
 DataAccess.xcu"
 .IF "$(MAKETARGETS)"!="genPO"
 

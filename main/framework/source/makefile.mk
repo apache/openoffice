@@ -24,7 +24,7 @@ PRJNAME=framework
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-classes/resource.src,\
+classes/resource.src \
 services/fwk_services.src"
 
 

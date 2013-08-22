@@ -24,58 +24,58 @@ PRJNAME=svx
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-acessibility/accessibility.src,\
-gdialog/bmpmask.src,\
-gdialog/contdlg.src,\
-gdialog/ctredlin.src,\
-gdialog/dlgctrl.src,\
-gdialog/docrecovery.src,\
-gdialog/fontwork.src,\
-gdialog/frmsel.src,\
-gdialog/hdft.src,\
-gdialog/hyprlink.src,\
-gdialog/imapdlg.src,\
-gdialog/language.src,\
-gdialog/optgrid.src,\
-gdialog/passwd.src,\
-gdialog/prtqry.src,\
-gdialog/rubydialog.src,\
-gdialog/ruler.src,\
-gdialog/sdstring.src,\
-gdialog/srchdlg.src,\
-gdialog/svxbmpnumvalueset.src,\
-gdialog/swframeposstrings.src,\
-gdialog/txenctab.src,\
-gdialog/ucsubset.src,\
-gengine3d/float3d.src,\
-gengine3d/string3d.src,\
-gfmcomp/gridctrl.src,\
-gform/datanavi.src,\
-gform/filtnav.src,\
-gform/fmexpl.src,\
-gform/fmstring.src,\
-gform/formshell.src,\
-ggallery2/gallery.src,\
-ggallery2/galtheme.src,\
-gitems/svxerr.src,\
-gitems/svxitems.src,\
-gsrc/app.src,\
-gsrc/errtxt.src,\
-gstbctrls/stbctrls.src,\
-gsvdraw/svdstr.src,\
-gtable/table.src,\
-gtbxctrls/colrctrl.src,\
-gtbxctrls/extrusioncontrols.src,\
-gtbxctrls/fontworkgallery.src,\
-gtbxctrls/grafctrl.src,\
-gtbxctrls/lboxctrl.src,\
-gtbxctrls/tbcontrl.src,\
-gtbxctrls/tbunosearchcontrollers.src,\
-gtoolbars/extrusionbar.src,\
-gtoolbars/fontworkbar.src,\
-gunodialogs/textconversiondlgs/chinese_dialogs.src,\
-gunodialogs/textconversiondlgs/chinese_dictionarydialog.src,\
-gunodialogs/textconversiondlgs/chinese_direction_tmpl.hrc,\
+acessibility/accessibility.src \
+gdialog/bmpmask.src \
+gdialog/contdlg.src \
+gdialog/ctredlin.src \
+gdialog/dlgctrl.src \
+gdialog/docrecovery.src \
+gdialog/fontwork.src \
+gdialog/frmsel.src \
+gdialog/hdft.src \
+gdialog/hyprlink.src \
+gdialog/imapdlg.src \
+gdialog/language.src \
+gdialog/optgrid.src \
+gdialog/passwd.src \
+gdialog/prtqry.src \
+gdialog/rubydialog.src \
+gdialog/ruler.src \
+gdialog/sdstring.src \
+gdialog/srchdlg.src \
+gdialog/svxbmpnumvalueset.src \
+gdialog/swframeposstrings.src \
+gdialog/txenctab.src \
+gdialog/ucsubset.src \
+gengine3d/float3d.src \
+gengine3d/string3d.src \
+gfmcomp/gridctrl.src \
+gform/datanavi.src \
+gform/filtnav.src \
+gform/fmexpl.src \
+gform/fmstring.src \
+gform/formshell.src \
+ggallery2/gallery.src \
+ggallery2/galtheme.src \
+gitems/svxerr.src \
+gitems/svxitems.src \
+gsrc/app.src \
+gsrc/errtxt.src \
+gstbctrls/stbctrls.src \
+gsvdraw/svdstr.src \
+gtable/table.src \
+gtbxctrls/colrctrl.src \
+gtbxctrls/extrusioncontrols.src \
+gtbxctrls/fontworkgallery.src \
+gtbxctrls/grafctrl.src \
+gtbxctrls/lboxctrl.src \
+gtbxctrls/tbcontrl.src \
+gtbxctrls/tbunosearchcontrollers.src \
+gtoolbars/extrusionbar.src \
+gtoolbars/fontworkbar.src \
+gunodialogs/textconversiondlgs/chinese_dialogs.src \
+gunodialogs/textconversiondlgs/chinese_dictionarydialog.src \
+gunodialogs/textconversiondlgs/chinese_direction_tmpl.hrc \
 gunodialogs/textconversiondlgs/chinese_translationdialog.src"
 
 

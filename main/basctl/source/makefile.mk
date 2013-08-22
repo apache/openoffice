@@ -24,14 +24,14 @@ PRJNAME=basctl
 TARGET=none
 
 LANGUAGE_FILELIST="\
-gbasicide/basicprint.src,\
-gbasicide/basidesh.src,\
-gbasicide/brkdlg.src,\
-gbasicide/macrodlg.src,\
-gbasicide/moduldlg.src,\
-gbasicide/moptions.src,\
-gbasicide/objdlg.src,\
-gdlged/dlgresid.src,\
+gbasicide/basicprint.src \
+gbasicide/basidesh.src \
+gbasicide/brkdlg.src \
+gbasicide/macrodlg.src \
+gbasicide/moduldlg.src \
+gbasicide/moptions.src \
+gbasicide/objdlg.src \
+gdlged/dlgresid.src \
 gdlged/managelang.src"
 
 

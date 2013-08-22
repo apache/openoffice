@@ -24,15 +24,15 @@ PRJNAME=reportdesign
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-../util/hidother.src,\
-ui/dlg/GroupsSorting.src,\
-ui/dlg/PageNumber.src,\
-ui/dlg/dlgpage.src,\
-ui/dlg/Navigator.src,\
-ui/dlg/CondFormat.src,\
-ui/dlg/DateTime.src,\
-ui/inspection/inspection.src,\
-ui/report/report.src,\
+../util/hidother.src \
+ui/dlg/GroupsSorting.src \
+ui/dlg/PageNumber.src \
+ui/dlg/dlgpage.src \
+ui/dlg/Navigator.src \
+ui/dlg/CondFormat.src \
+ui/dlg/DateTime.src \
+ui/inspection/inspection.src \
+ui/report/report.src \
 core/resource/strings.src"
 
 

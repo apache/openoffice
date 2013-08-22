@@ -24,11 +24,11 @@ PRJNAME=xmlsecurity
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-component/warnbox.src,\
-dialogs/certificatechooser.src,\
-dialogs/certificateviewer.src,\
-dialogs/digitalsignaturesdialog.src,\
-dialogs/macrosecurity.src,\
+component/warnbox.src \
+dialogs/certificatechooser.src \
+dialogs/certificateviewer.src \
+dialogs/digitalsignaturesdialog.src \
+dialogs/macrosecurity.src \
 dialogs/warnings.src"
 
 

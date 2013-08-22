@@ -24,9 +24,9 @@ PRJNAME=accessibility
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-datefunc/datefunc.src,\
-analysis/analysis_deffuncnames.src,\
-analysis/analysis_funcnames.src,\
+datefunc/datefunc.src \
+analysis/analysis_deffuncnames.src \
+analysis/analysis_funcnames.src \
 analysis/analysis.src"
 
 

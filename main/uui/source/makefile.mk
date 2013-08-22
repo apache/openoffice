@@ -29,23 +29,23 @@ ENABLE_EXCEPTIONS = true
 .INCLUDE: settings.mk
 
 LANGUAGE_FILELIST="\
-alreadyopen.src,\
-cookiedg.src,\
-filechanged.src,\
-fltdlg.src,\
-ids.src,\
-lockfailed.src,\
-logindlg.src,\
-masterpasscrtdlg.src,\
-masterpassworddlg.src,\
-nameclashdlg.src,\
-newerverwarn.src,\
-openlocked.src,\
-passworddlg.src,\
-passworderrs.src,\
-secmacrowarnings.src,\
-sslwarndlg.src,\
-trylater.src,\
+alreadyopen.src \
+cookiedg.src \
+filechanged.src \
+fltdlg.src \
+ids.src \
+lockfailed.src \
+logindlg.src \
+masterpasscrtdlg.src \
+masterpassworddlg.src \
+nameclashdlg.src \
+newerverwarn.src \
+openlocked.src \
+passworddlg.src \
+passworderrs.src \
+secmacrowarnings.src \
+sslwarndlg.src \
+trylater.src \
 unknownauthdlg.src"
 
 

@@ -24,10 +24,10 @@ PRJNAME=wizards
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-euro/euro.src,\
-formwizard/dbwizres.src,\
-importwizard/importwi.src,\
-schedule/schedule.src,\
+euro/euro.src \
+formwizard/dbwizres.src \
+importwizard/importwi.src \
+schedule/schedule.src \
 template/template.src"
 
 

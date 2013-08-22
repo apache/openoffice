@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=avmedia
 TARGET=none
 
-LANGUAGE_FILELIST="framework/mediacontrol.src,viewer/mediawindow.src"
+LANGUAGE_FILELIST="framework/mediacontrol.src viewer/mediawindow.src"
 
 .INCLUDE :	settings.mk
 

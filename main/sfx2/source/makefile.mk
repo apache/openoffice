@@ -24,38 +24,38 @@ PRJNAME=sfx2
 TARGET=helper
 
 LANGUAGE_FILELIST="\
-../util/hidother.src,\
-menu/menu.src,\
-doc/doctempl.src,\
-doc/doctdlg.src,\
-doc/graphhelp.src,\
-doc/doc.src,\
-doc/docvor.src,\
-doc/new.src,\
-bastyp/fltfnc.src,\
-bastyp/bastyp.src,\
-dialog/printopt.src,\
-dialog/templdlg.src,\
-dialog/securitypage.src,\
-dialog/versdlg.src,\
-dialog/mgetempl.src,\
-dialog/filedlghelper.src,\
-dialog/srchdlg.src,\
-dialog/passwd.src,\
-dialog/dinfdlg.src,\
-dialog/dinfedt.src,\
-dialog/newstyle.src,\
-dialog/recfloat.src,\
-dialog/titledockwin.src,\
-dialog/mailwindow.src,\
-dialog/dialog.src,\
-dialog/taskpane.src,\
-dialog/alienwarn.src,\
-view/view.src,\
-sidebar/Sidebar.src,\
-appl/dde.src,\
-appl/sfx.src,\
-appl/app.src,\
+../util/hidother.src \
+menu/menu.src \
+doc/doctempl.src \
+doc/doctdlg.src \
+doc/graphhelp.src \
+doc/doc.src \
+doc/docvor.src \
+doc/new.src \
+bastyp/fltfnc.src \
+bastyp/bastyp.src \
+dialog/printopt.src \
+dialog/templdlg.src \
+dialog/securitypage.src \
+dialog/versdlg.src \
+dialog/mgetempl.src \
+dialog/filedlghelper.src \
+dialog/srchdlg.src \
+dialog/passwd.src \
+dialog/dinfdlg.src \
+dialog/dinfedt.src \
+dialog/newstyle.src \
+dialog/recfloat.src \
+dialog/titledockwin.src \
+dialog/mailwindow.src \
+dialog/dialog.src \
+dialog/taskpane.src \
+dialog/alienwarn.src \
+view/view.src \
+sidebar/Sidebar.src \
+appl/dde.src \
+appl/sfx.src \
+appl/app.src \
 appl/newhelp.src"
 
 .INCLUDE :	settings.mk

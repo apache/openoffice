@@ -145,7 +145,8 @@ class handler
     std::vector<std::string> mvLanguages;
 
     void runConvert();
-    void runExtractMerge(bool bMerge, bool bKid);
+    void runExtract();
+    void runMerge(bool bKid);
     void runGenerate();
 
     void showUsage(std::string& sErr);
