@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=chart2
 TARGET=none
 
-LANGUAGE_FILELIST="\
-gcontroller/dialogs/dlg_DataEditor.src \
+LANGUAGE_FILELIST=gcontroller/dialogs/dlg_DataEditor.src \
 gcontroller/dialogs/dlg_DataSource.src \
 gcontroller/dialogs/dlg_InsertAxis_Grid.src \
 gcontroller/dialogs/dlg_ShapeFont.src \
@@ -57,8 +56,8 @@ gcontroller/dialogs/tp_RangeChooser.src \
 gcontroller/dialogs/tp_Scale.src \
 gcontroller/dialogs/tp_SeriesToAxis.src \
 gcontroller/dialogs/tp_TitleRotation.src \
-gcontroller/dialogs/tp_Wizard_TitlesAndObjects.src\
-"
+gcontroller/dialogs/tp_Wizard_TitlesAndObjects.src
+
 
 
 .INCLUDE :	settings.mk

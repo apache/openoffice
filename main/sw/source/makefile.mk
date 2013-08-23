@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=sw
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-core/undo/undo.src \
+LANGUAGE_FILELIST=core/undo/undo.src \
 gcore/unocore/unocore.src \
 gui/app/app.src \
 gui/app/error.src \
@@ -139,7 +138,7 @@ gui/utlui/poolfmt.src \
 gui/utlui/unotools.src \
 gui/utlui/utlui.src \
 gui/web/web.src \
-gui/wrtsh/wrtsh.src"
+gui/wrtsh/wrtsh.src
 
 
 .INCLUDE :	settings.mk

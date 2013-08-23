@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=sc
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-../util/hidother.src,\
+LANGUAGE_FILELIST=../util/hidother.src,\
 ../addin/rot13/rot13.src,\
 ../addin/datefunc/dfa.src,\
 ui/formdlg/formdlgs.src,\
@@ -89,7 +88,7 @@ ui/miscdlgs/instbdlg.src \
 ui/miscdlgs/highred.src \
 ui/miscdlgs/protectiondlg.src \
 ui/miscdlgs/linkarea.src \
-core/src/compiler.src"
+core/src/compiler.src
 
 .INCLUDE :	settings.mk
 

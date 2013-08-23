@@ -35,8 +35,7 @@ TARGET  = text_shared
 MODULE  = shared
 
 # --- Settings -----------------------------------------------------
-LANGUAGE_FILELIST="\
-auxiliary/shared.tree \
+LANGUAGE_FILELIST=auxiliary/shared.tree \
 text/shared/00/00000001.xhp \
 text/shared/00/00000002.xhp \
 text/shared/00/00000003.xhp \

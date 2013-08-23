@@ -28,8 +28,7 @@ ENABLE_EXCEPTIONS = true
 
 .INCLUDE: settings.mk
 
-LANGUAGE_FILELIST="\
-alreadyopen.src \
+LANGUAGE_FILELIST=alreadyopen.src \
 cookiedg.src \
 filechanged.src \
 fltdlg.src \
@@ -46,7 +45,7 @@ passworderrs.src \
 secmacrowarnings.src \
 sslwarndlg.src \
 trylater.src \
-unknownauthdlg.src"
+unknownauthdlg.src
 
 
 SLOFILES = \

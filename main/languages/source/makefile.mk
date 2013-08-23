@@ -26,7 +26,6 @@ TARGET=languages_merge
 .INCLUDE : settings.mk
 
 genPO:
-        -$(MKDIRHIER) $(COMMONMISC)/staging
 
 
 ALLTAR:

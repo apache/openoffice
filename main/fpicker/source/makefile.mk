@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=fpicker
 TARGET=none
 
-LANGUAGE_FILELIST="office/iodlg.src office/OfficeFilePicker.src"
+LANGUAGE_FILELIST=office/iodlg.src office/OfficeFilePicker.src
 
 
 .INCLUDE :	settings.mk

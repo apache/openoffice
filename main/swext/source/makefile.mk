@@ -23,15 +23,14 @@ PRJ=..
 PRJNAME=swext
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-../mediawiki/help/wikiaccount.xhp \
+LANGUAGE_FILELIST=../mediawiki/help/wikiaccount.xhp \
 ../mediawiki/help/wikiformats.xhp \
 ../mediawiki/help/wikisend.xhp \
 ../mediawiki/help/wikisettings.xhp \
 ../mediawiki/help/wiki.xhp \
 ../mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu \
 ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu \
-../mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu"
+../mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu
 
 
 .INCLUDE :	settings.mk

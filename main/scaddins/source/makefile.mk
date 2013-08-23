@@ -23,11 +23,10 @@ PRJ=..
 PRJNAME=accessibility
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-datefunc/datefunc.src \
+LANGUAGE_FILELIST=datefunc/datefunc.src \
 analysis/analysis_deffuncnames.src \
 analysis/analysis_funcnames.src \
-analysis/analysis.src"
+analysis/analysis.src
 
 
 .INCLUDE :	settings.mk

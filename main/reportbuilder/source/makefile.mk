@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=reportbuilder
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-../template/registry/data/org/openoffice/Office/Paths.xcu \
+LANGUAGE_FILELIST=../template/registry/data/org/openoffice/Office/Paths.xcu \
 ../registry/data/org/openoffice/Setup.xcu \
 ../registry/data/org/openoffice/TypeDetection/Types.xcu \
 ../registry/data/org/openoffice/TypeDetection/Filter.xcu \
@@ -36,7 +35,7 @@ LANGUAGE_FILELIST="\
 ../registry/data/org/openoffice/Office/Paths.xcu \
 ../registry/data/org/openoffice/Office/UI/Controller.xcu \
 ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu \
-../registry/data/org/openoffice/Office/UI/DbReportWindowState.xcu"
+../registry/data/org/openoffice/Office/UI/DbReportWindowState.xcu
 
 
 .INCLUDE :	settings.mk

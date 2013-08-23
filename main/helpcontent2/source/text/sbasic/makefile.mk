@@ -23,8 +23,7 @@ PRJ=../../..
 PRJNAME=helpcontent2
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-auxiliary/sbasic.tree,\
+LANGUAGE_FILELIST=auxiliary/sbasic.tree,\
 text/sbasic/guide/create_dialog.xhp,\
 text/sbasic/guide/insert_control.xhp,\
 text/sbasic/guide/sample_code.xhp,\
@@ -322,7 +321,7 @@ text/sbasic/shared/03132500.xhp \
 text/sbasic/shared/05060700.xhp \
 text/sbasic/shared/keys.xhp \
 text/sbasic/shared/main0211.xhp \
-text/sbasic/shared/main0601.xhp"
+text/sbasic/shared/main0601.xhp
 
 
 

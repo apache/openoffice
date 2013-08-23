@@ -23,9 +23,7 @@ PRJ=..
 PRJNAME=framework
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-classes/resource.src \
-services/fwk_services.src"
+LANGUAGE_FILELIST=classes/resource.src services/fwk_services.src
 
 
 .INCLUDE :	settings.mk

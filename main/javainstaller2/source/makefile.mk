@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=javainstaller2
 TARGET=helper
 
-LANGUAGE_FILELIST="../src/Localization/setupstrings.ulf"
+LANGUAGE_FILELIST=../src/Localization/setupstrings.ulf
 
 .INCLUDE :	settings.mk
 

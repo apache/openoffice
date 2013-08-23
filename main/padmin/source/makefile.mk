@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=padmin
 TARGET=helper
 
-LANGUAGE_FILELIST="padialog.src rtsetup.src"
+LANGUAGE_FILELIST=padialog.src rtsetup.src
 
 .INCLUDE :	settings.mk
 

@@ -2092,9 +2092,7 @@ some_unique_variable_name:=1
 
 genPO:
 .IF "$(LANGUAGE_FILELIST)" != ""
-     -$(SOLARBINDIR)/genLang extract $(PRJNAME) $(SRC_ROOT)/$(INPATH)/misc/staging "en" -f $(LANGUAGE_FILELIST)
-     @echo "------> ------> extraction CALLED"
-     exit
+     -$(SOLARBINDIR)/genLang extract $(PRJNAME) $(SRC_ROOT)/languages/source "" -d -v -f $(LANGUAGE_FILELIST)
 .ENDIF
 
 

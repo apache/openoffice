@@ -23,14 +23,13 @@ PRJ=..
 PRJNAME=basic
 TARGET=none
 
-LANGUAGE_FILELIST="\
-accessibility/accessibility.src \
+LANGUAGE_FILELIST=accessibility/accessibility.src \
 editeng/editeng.src \
 items/page.src \
 items/svxitems.src \
 misc/lingu.src \
-outliner/outliner.src\
-"
+outliner/outliner.src
+
 
 
 .INCLUDE :	settings.mk

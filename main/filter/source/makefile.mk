@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=basic
 TARGET=none
 
-LANGUAGE_FILELIST="\
-config/fragments/filters/calc8_template_ui.xcu \
+LANGUAGE_FILELIST=config/fragments/filters/calc8_template_ui.xcu \
 config/fragments/filters/calc8_ui.xcu \
 config/fragments/filters/calc_HTML_WebQuery_ui.xcu \
 config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu \
@@ -184,8 +183,8 @@ xsltdialog/xmlfiltersettingsdialog.src \
 xsltdialog/xmlfiltertabdialog.src \
 xsltdialog/xmlfiltertabpagebasic.src \
 xsltdialog/xmlfiltertabpagexslt.src \
-xsltdialog/xmlfiltertestdialog.src\
-"
+xsltdialog/xmlfiltertestdialog.src
+
 
 
 .INCLUDE :	settings.mk

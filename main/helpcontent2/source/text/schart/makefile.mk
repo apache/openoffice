@@ -35,8 +35,7 @@ TARGET  = text_schart
 MODULE  = schart
 
 # --- Settings -----------------------------------------------------
-LANGUAGE_FILELIST="\
-auxiliary/schart.tree \
+LANGUAGE_FILELIST=auxiliary/schart.tree \
 text/schart/00/00000004.xhp \
 text/schart/01/03010000.xhp \
 text/schart/01/04010000.xhp \
@@ -91,7 +90,7 @@ text/schart/02/02020000.xhp \
 text/schart/04/01020000.xhp \
 text/schart/main0000.xhp \
 text/schart/main0202.xhp \
-text/schart/main0503.xhp"
+text/schart/main0503.xh
 
 .IF "$(MAKETARGETS)"!="genPO"
 .INCLUDE : settings.mk

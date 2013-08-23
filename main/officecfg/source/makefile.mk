@@ -23,13 +23,17 @@ PRJ=..
 PRJNAME=officecfg
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-../registry/data/org/openoffice/Office/Common.xcu \
+LANGUAGE_FILELIST=../registry/data/org/openoffice/Office/Common.xcu \
 ../registry/data/org/openoffice/Office/DataAccess.xcu \
+../registry/data/org/openoffice/Office/Labels.xcs \
+../registry/data/org/openoffice/Office/Impress.xcu \
+../registry/data/org/openoffice/Office/PresenterScreen.xcu \
+../registry/data/org/openoffice/Office/Labels.xcu \
 ../registry/data/org/openoffice/Office/Embedding.xcu \
 ../registry/data/org/openoffice/Office/FormWizard.xcu \
 ../registry/data/org/openoffice/Office/TableWizard.xcu \
 ../registry/data/org/openoffice/Office/UI/BaseWindowState.xcu \
+../registry/data/org/openoffice/Office/UI/Sidebar.xcu \
 ../registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu \
 ../registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu \
 ../registry/data/org/openoffice/Office/UI/CalcCommands.xcu \
@@ -60,7 +64,7 @@ LANGUAGE_FILELIST="\
 ../registry/data/org/openoffice/Office/UI.xcu \
 ../registry/data/org/openoffice/Office/UI/XFormsWindowState.xcu \
 ../registry/data/org/openoffice/Office/WebWizard.xcu \
-../registry/data/org/openoffice/Office/Writer.xcu"
+../registry/data/org/openoffice/Office/Writer.xcu
 
 
 .INCLUDE :	settings.mk

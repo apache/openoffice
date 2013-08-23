@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=crashrep
 TARGET=none
 
-LANGUAGE_FILELIST="\all/crashrep.ulf"
+LANGUAGE_FILELIST=all/crashrep.ulf
 
 .INCLUDE :	settings.mk
 

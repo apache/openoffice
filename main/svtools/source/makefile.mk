@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=svtools
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-contnr/fileview.src \
+LANGUAGE_FILELIST=contnr/fileview.src \
 contnr/svcontnr.src \
 contnr/templwin.src \
 control/calendar.src \
@@ -44,7 +43,7 @@ misc/langtab.src \
 misc/undo.src \
 plugapp/testtool.src \
 toolpanel/toolpanel.src \
-../workben/unodialog/roadmapskeleton.src"
+../workben/unodialog/roadmapskeleton.src
 
 
 

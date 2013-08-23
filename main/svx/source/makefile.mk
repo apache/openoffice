@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=svx
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-acessibility/accessibility.src \
+LANGUAGE_FILELIST=acessibility/accessibility.src \
 gdialog/bmpmask.src \
 gdialog/contdlg.src \
 gdialog/ctredlin.src \
@@ -76,7 +75,7 @@ gtoolbars/fontworkbar.src \
 gunodialogs/textconversiondlgs/chinese_dialogs.src \
 gunodialogs/textconversiondlgs/chinese_dictionarydialog.src \
 gunodialogs/textconversiondlgs/chinese_direction_tmpl.hrc \
-gunodialogs/textconversiondlgs/chinese_translationdialog.src"
+gunodialogs/textconversiondlgs/chinese_translationdialog.src
 
 
 .INCLUDE :	settings.mk

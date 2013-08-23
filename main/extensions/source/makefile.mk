@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=basic
 TARGET=none
 
-LANGUAGE_FILELIST="\
-abpilot/abspilot.src \
+LANGUAGE_FILELIST=abpilot/abspilot.src \
 bibliography/bib.src \
 bibliography/datman.src \
 bibliography/sections.src \
@@ -46,8 +45,7 @@ propctrlr/taborder.src \
 scanner/grid.src \
 scanner/sanedlg.src \
 update/check/Addons.xcu \
-update/check/updatehdl.src\
-"
+update/check/updatehdl.src
 
 
 .INCLUDE :	settings.mk

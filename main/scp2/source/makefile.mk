@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=scp2
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-kde/module_kde.ulf \
+LANGUAGE_FILELIST=kde/module_kde.ulf \
 quickstart/module_quickstart.ulf \
 graphicfilter/module_graphicfilter.ulf \
 onlineupdate/module_onlineupdate.ulf \
@@ -63,7 +62,7 @@ base/registryitem_base.ulf \
 base/module_base.ulf \
 activex/module_activex.ulf \
 python/module_python_mailmerge.ulf \
-python/module_python.ulf"
+python/module_python.ulf
 
 .INCLUDE :	settings.mk
 

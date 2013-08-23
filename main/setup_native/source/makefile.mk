@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=setup_native
 TARGET=helper
 
-LANGUAGE_FILELIST="mac/macinstall.ulf"
+LANGUAGE_FILELIST=mac/macinstall.ulf
 
 .INCLUDE :	settings.mk
 

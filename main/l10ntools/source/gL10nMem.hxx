@@ -165,7 +165,6 @@ class l10nMem_impl
     void save         (l10nMem& cMem,
                        const std::string& sTargetDir,
                        bool               bKid,
-                       bool               bPOT,
                        bool               bForce);
     void dumpMem      (const std::string& sTargetDir);
 

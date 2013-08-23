@@ -93,8 +93,8 @@ void l10nMem::loadEntryKey(int iL, const std::string& sS, const std::string& sK,
      { l10nMem_impl::mcImpl->loadEntryKey(iL, sS, sK, sO, sT, bI); }
 void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK, const std::string& sT)
      { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
-void l10nMem::save(const std::string& sT, bool bK, bool bP, bool bF)
-     { l10nMem_impl::mcImpl->save(*this, sT, bK, bP, bF); }
+void l10nMem::save(const std::string& sT, bool bK, bool bF)
+     { l10nMem_impl::mcImpl->save(*this, sT, bK, bF); }
 int  l10nMem::prepareMerge()
      { return l10nMem_impl::mcImpl->mcDb.prepareMerge(); }
 void l10nMem::dumpMem(const std::string& sT)
@@ -226,16 +226,17 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid, bool bPOT, bool bForce)
+void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid, bool bForce)
 {
   int iE, iEsize  = mcDb.mcENUSlist.size();
   int iL, iLsize  = mcDb.mcLangList.size();
   int iCntDeleted = 0, iCntChanged = 0, iCntAdded = 0;
-  std::string sFileName = msModuleName + (bPOT ? ".pot" : ".po");
+  std::string sFileName = msModuleName + ".pot";
  
 
   // and reorganize db if needed
-  mcDb.reorganize();
+   mcDb.miCurFileInx = 0;
+   mcDb.reorganize();
 
   // no save if there has been errors
   if(!needWrite(sFileName, bForce))
@@ -247,7 +248,7 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
   {
     convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
 
-    savePo.startSave("", sFileName);
+    savePo.startSave("templates/", sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
       l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
@@ -262,6 +263,7 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
   }
 
   // save all languages
+  sFileName = msModuleName + ".po";
   for (iL = 1; iL < iLsize; ++iL)
   {
     convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
@@ -305,12 +307,12 @@ void l10nMem_impl::formatAndShowText(const std::string& sType, int iLineNo, cons
 {
   std::string& cFile = mcDb.mcFileList[mcDb.miCurFileInx].msFileName;
 
-  std::cerr << sType;
+  std::cout << sType;
   if (mcDb.miCurFileInx > 0)
-    std::cerr << " in " << mcDb.mcFileList[mcDb.miCurFileInx].msFileName;
+    std::cout << " in " << mcDb.mcFileList[mcDb.miCurFileInx].msFileName;
   if (iLineNo)
-    std::cerr << "(" << iLineNo << ")";
-  std::cerr << ":  " << sText << std::endl;
+    std::cout << "(" << iLineNo << ")";
+  std::cout << ":  " << sText << std::endl;
 }
 
 

@@ -23,13 +23,12 @@ PRJ=..
 PRJNAME=vcl
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-src/btntext.src \
+LANGUAGE_FILELIST=src/btntext.src \
 src/helptext.src \
 src/menu.src \
 src/print.src \
 src/stdtext.src \
-src/units.src"
+src/units.src
 
 
 .INCLUDE :	settings.mk

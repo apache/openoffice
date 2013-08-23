@@ -243,8 +243,8 @@ void handler::run()
     mcMemory.setModuleName(msModuleName);
 
     // build list of languages (to be loaded and later written
-    if (msPoDir.size() && meWorkMode != DO_EXTRACT)
-      loadL10MEM();
+    if (msPoDir.size())
+      loadL10MEM( (meWorkMode == DO_EXTRACT) );
 
     // use workMode to start correct control part
     switch (meWorkMode)
@@ -279,7 +279,7 @@ void handler::runExtract()
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, false, true, mbForceSave);
+  mcMemory.save(msPoOutDir, false, mbForceSave);
 }
 
 
@@ -299,7 +299,7 @@ void handler::runMerge(bool bKid)
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, bKid, false, mbForceSave);
+  mcMemory.save(msPoOutDir, bKid, mbForceSave);
 }
 
 
@@ -328,7 +328,7 @@ void handler::runConvert()
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, false, false, mbForceSave);
+  mcMemory.save(msPoOutDir, false, mbForceSave);
 }
 
 
@@ -451,10 +451,10 @@ void handler::showManual()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void handler::loadL10MEM()
+void handler::loadL10MEM(bool onlyTemplates)
 {
-  std::string sMod  = msModuleName + ".po";
-  std::string sLoad = msPoDir + "en-US/";
+  std::string sMod  = msModuleName + ".pot";
+  std::string sLoad = msPoDir + "templates/";
 
 
   // load texts from en-US po file (master)
@@ -467,7 +467,11 @@ void handler::loadL10MEM()
     convert_gen (mcMemory, sLoad, msTargetDir, sMod).execute(false);
   }
 
+  if (onlyTemplates)
+    return; 
+
   // loop through all languages and load text
+  sMod  = msModuleName + ".po";
   for (std::vector<std::string>::iterator siLang = mvLanguages.begin(); siLang != mvLanguages.end(); ++siLang)
   {
     sLoad = msPoDir + *siLang + "/";

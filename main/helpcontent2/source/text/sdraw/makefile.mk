@@ -35,8 +35,7 @@ TARGET  = text_sdraw
 MODULE  = sdraw
 
 # --- Settings -----------------------------------------------------
-LANGUAGE_FILELIST="\
-text/sdraw/00/00000004.xhp,\
+LANGUAGE_FILELIST=text/sdraw/00/00000004.xhp,\
 text/sdraw/01/04010000.xhp,\
 text/sdraw/04/01020000.xhp,\
 text/sdraw/guide/align_arrange.xhp,\

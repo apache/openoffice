@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=sfx2
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-../util/hidother.src \
+LANGUAGE_FILELIST=../util/hidother.src \
 menu/menu.src \
 doc/doctempl.src \
 doc/doctdlg.src \
@@ -56,7 +55,7 @@ sidebar/Sidebar.src \
 appl/dde.src \
 appl/sfx.src \
 appl/app.src \
-appl/newhelp.src"
+appl/newhelp.src
 
 .INCLUDE :	settings.mk
 

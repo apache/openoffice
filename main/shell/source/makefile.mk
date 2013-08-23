@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=shell
 TARGET=helper
 
-LANGUAGE_FILELIST="win32/shlxthandler/res/shlxthdl.ulf"
+LANGUAGE_FILELIST=win32/shlxthandler/res/shlxthdl.ulf
 
 .INCLUDE :	settings.mk
 

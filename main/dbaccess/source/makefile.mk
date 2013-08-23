@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=dbaccess
 TARGET=none
 
-LANGUAGE_FILELIST="\
-core/resource/strings.src \
+LANGUAGE_FILELIST=core/resource/strings.src \
 ext/adabas/AdabasNewDb.src \
 ext/macromigration/macromigration.src \
 sdbtools/resource/sdbt_strings.src \
@@ -69,8 +68,8 @@ ui/querydesign/query.src \
 ui/relationdesign/relation.src \
 ui/tabledesign/table.src \
 ui/uno/copytablewizard.src \
-ui/uno/dbinteraction.src\
-"
+ui/uno/dbinteraction.src
+
 
 .INCLUDE :	settings.mk
 

@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=basic
 TARGET=none
 
-LANGUAGE_FILELIST="classes/sb.src sbx/format.src"
+LANGUAGE_FILELIST=classes/sb.src sbx/format.src
 
 
 .INCLUDE :	settings.mk

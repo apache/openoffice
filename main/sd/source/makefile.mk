@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=sd
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-../util/hidother.src \
+LANGUAGE_FILELIST=../util/hidother.src \
 filter/html/pubdlg.src \
 ui/dlg/sdpreslt.src \
 ui/dlg/inspagob.src \
@@ -83,7 +82,7 @@ ui/slidesorter/view/SlsResource.src \
 ui/view/DocumentRenderer.src \
 ui/table/TableDesignPane.src \
 ui/notes/NotesChildWindow.src \
-core/glob.src"
+core/glob.src
 
 .INCLUDE :	settings.mk
 

@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=reportdesign
 TARGET=helper
 
-LANGUAGE_FILELIST="\
-../util/hidother.src \
+LANGUAGE_FILELIST=../util/hidother.src \
 ui/dlg/GroupsSorting.src \
 ui/dlg/PageNumber.src \
 ui/dlg/dlgpage.src \
@@ -33,7 +32,7 @@ ui/dlg/CondFormat.src \
 ui/dlg/DateTime.src \
 ui/inspection/inspection.src \
 ui/report/report.src \
-core/resource/strings.src"
+core/resource/strings.src
 
 
 .INCLUDE :	settings.mk

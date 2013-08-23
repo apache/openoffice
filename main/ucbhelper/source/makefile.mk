@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=uchhelper
 TARGET=helper
 
-LANGUAGE_FILELIST="workben/ucbexplorer/ucbexplorer.src"
+LANGUAGE_FILELIST=workben/ucbexplorer/ucbexplorer.src
 
 .INCLUDE :	settings.mk
 

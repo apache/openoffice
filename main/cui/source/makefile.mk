@@ -23,8 +23,7 @@ PRJ=..
 PRJNAME=cui
 TARGET=none
 
-LANGUAGE_FILELIST="\
-customize/acccfg.src \
+LANGUAGE_FILELIST=customize/acccfg.src \
 customize/cfg.src \
 customize/eventdlg.src \
 customize/macropg.src \
@@ -111,8 +110,8 @@ tabpages/tabline.src \
 tabpages/tabstpge.src \
 tabpages/textanim.src \
 tabpages/textattr.src \
-tabpages/transfrm.src\
-"
+tabpages/transfrm.src
+
 
 
 .INCLUDE :	settings.mk

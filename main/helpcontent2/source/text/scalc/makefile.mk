@@ -34,8 +34,7 @@ TARGET  = text_scalc
 MODULE  = scalc
 
 # --- Settings -----------------------------------------------------
-LANGUAGE_FILELIST="\
-auxiliary/scalc.tree,\
+LANGUAGE_FILELIST=auxiliary/scalc.tree,\
 text/scalc/00/00000004.xhp \
 text/scalc/00/00000402.xhp \
 text/scalc/00/00000403.xhp \

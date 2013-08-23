@@ -84,7 +84,6 @@ class l10nMem
 
     void save          (const std::string& sTargetDir,
                         bool               bKid,
-                        bool               bPOT,
                         bool               bForce);
     void dumpMem       (const std::string& sTargetDir);
 
@@ -152,7 +151,7 @@ class handler
 
     void showUsage(std::string& sErr);
     void showManual();
-    void loadL10MEM();
+    void loadL10MEM(bool onlyTemplates);
     void readFileWithSources();
 };
 #endif

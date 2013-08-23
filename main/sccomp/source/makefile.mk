@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=sccomp
 TARGET=helper
 
-LANGUAGE_FILELIST="solver/solver.src"
+LANGUAGE_FILELIST=solver/solver.src
 
 .INCLUDE :	settings.mk
 

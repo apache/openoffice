@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=accessibility
 TARGET=helper
 
-LANGUAGE_FILELIST="helper/accessiblestrings.src"
+LANGUAGE_FILELIST=helper/accessiblestrings.src
 
 .INCLUDE :	settings.mk
 
