@@ -27,6 +27,12 @@ TARGET=$(PRJNAME)_help
 
 .INCLUDE : settings.mk
 
+LANGUAGE_FILELIST=wikiformats.xhp \
+wiki.xhp \
+wikisettings.xhp \
+wikiaccount.xhp \
+wikisend.xhp
+
 .IF "$(WITH_LANG)"!=""
 # workaround for the problem in help, the help uses en instead of en-US
 MEDIAWIKI_LANG=$(uniq en $(alllangiso))
@@ -39,7 +45,7 @@ MEDIAWIKI_LANG=$(uniq en $(alllangiso))
 .IF "$(ENABLE_MEDIAWIKI)" != "YES"
 all:
     @echo Building mediawiki disabled...
-genPO:
+.INCLUDE : target.mk
 .ELSE           # "$(ENABLE_MEDIAWIKI)" != "YES"
 
 PACKAGE=com.sun.wiki-publisher

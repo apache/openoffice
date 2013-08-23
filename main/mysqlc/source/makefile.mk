@@ -33,6 +33,7 @@ EXTENSIONNAME:=mysql-connector-ooo
 LANGUAGE_FILELIST=registry/data/org/openoffice/Office/DataAccess/Drivers.xcu \
 DataAccess.xcu
 
+.INCLUDE :  settings.mk
 
 .IF "$(MAKETARGETS)"!="genPO"
 
@@ -42,7 +43,6 @@ EXTERNAL_WARNINGS_NOT_ERRORS = TRUE
 
 # --- Settings -----------------------------------------------------
 
-.INCLUDE :  settings.mk
 
 #-------------------------------------------------------------------
 

@@ -19,24 +19,30 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=desktop
+TARGET=helper
 
+LANGUAGE_FILELIST=migration/wizard.src \
+app/desktop.src \
+deployment/unopkg/unopkg.src \
+deployment/misc/dp_misc.src \
+deployment/registry/script/dp_script.src \
+deployment/registry/dp_registry.src \
+deployment/registry/configuration/dp_configuration.src \
+deployment/registry/help/dp_help.src \
+deployment/registry/sfwk/dp_sfwk.src \
+deployment/registry/package/dp_package.src \
+deployment/registry/component/dp_component.src \
+deployment/manager/dp_manager.src \
+deployment/gui/dp_gui_versionboxes.src \
+deployment/gui/dp_gui_dependencydialog.src \
+deployment/gui/dp_gui_dialog.src \
+deployment/gui/dp_gui_updateinstalldialog.src \
+deployment/gui/dp_gui_updatedialog.src \
+deployment/gui/dp_gui_backend.src \
+deployment/gui/dp_gui_dialog2.src
 
-PRJ 	= ..$/..
-PRJNAME = readlicense_oo
-TARGET  = ooo
-    
-# --- Settings -----------------------------------------------------
+.INCLUDE :	settings.mk
 
-.INCLUDE : settings.mk
-
-LANGUAGE_FILELIST=readme.xrm
-
-#SOLAR_JAVA=
-# --- Files --------------------------------------------------------
-
-READMEFILES = \
-    $(MISC)$/readme.html \
-    $(MISC)$/readme.txt
-
-.INCLUDE : $(PRJ)$/util$/makefile.pmk
-
+.INCLUDE :	target.mk

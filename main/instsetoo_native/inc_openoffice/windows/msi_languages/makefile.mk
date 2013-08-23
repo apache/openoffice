@@ -26,6 +26,17 @@ PRJ=..$/..$/..
 PRJNAME=instsetoo_native
 TARGET=win_ulffiles
 
+LANGUAGE_FILELIST=Property.ulf \
+RadioBut.ulf \
+Error.ulf \
+CustomAc.ulf \
+UIText.ulf \
+ActionTe.ulf \
+LaunchCo.ulf \
+Nsis.ulf \
+SIS.ulf \
+Control.ulf
+
 # --- Settings -----------------------------------------------------
 
 common_build:=

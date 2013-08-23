@@ -20,7 +20,7 @@
 #**************************************************************
 
 PRJ=..
-PRJNAME=basic
+PRJNAME=filter
 TARGET=none
 
 LANGUAGE_FILELIST=config/fragments/filters/calc8_template_ui.xcu \

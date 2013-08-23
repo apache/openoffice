@@ -24,7 +24,7 @@
 # edit to match directory level 
 PRJ		= ..$/..$/..
 # same for all makefiles in "helpcontent2"
-PRJNAME = helpcontent2
+PRJNAME = help_smath
 
 LANGUAGE_FILELIST=../../auxiliary/smath.tree \
 main0103.xhp \
@@ -141,5 +141,6 @@ XHPFILES = \
 .INCLUDE :  target.mk
 .INCLUDE : tg_help.mk
 .ELSE
+.INCLUDE :  settings.mk
 .INCLUDE :  target.mk
 .ENDIF

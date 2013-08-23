@@ -20,7 +20,7 @@
 #**************************************************************
 
 PRJ=..
-PRJNAME=basic
+PRJNAME=editeng
 TARGET=none
 
 LANGUAGE_FILELIST=accessibility/accessibility.src \

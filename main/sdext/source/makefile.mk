@@ -23,7 +23,8 @@ PRJ=..
 PRJNAME=sdext
 TARGET=helper
 
-LANGUAGE_FILELIST=presenter/Jobs.xcu \
+LANGUAGE_FILELIST=minimizer/minimizer.src \
+presenter/Jobs.xcu \
 presenter/ProtocolHandler.xcu \
 pdfimport/config/pdf_import_filter.xcu \
 pdfimport/config/pdf_types.xcu

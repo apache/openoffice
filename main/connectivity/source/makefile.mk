@@ -19,24 +19,15 @@
 #  
 #**************************************************************
 
+PRJ=..
+PRJNAME=connectivity
+TARGET=helper
 
+LANGUAGE_FILELIST=resource/conn_shared_res.src \
+resource/conn_error_message.src \
+resource/conn_log_res.src \
+drivers/hsqldb/hsqlui.src
 
-PRJ 	= ..$/..
-PRJNAME = readlicense_oo
-TARGET  = ooo
-    
-# --- Settings -----------------------------------------------------
+.INCLUDE :	settings.mk
 
-.INCLUDE : settings.mk
-
-LANGUAGE_FILELIST=readme.xrm
-
-#SOLAR_JAVA=
-# --- Files --------------------------------------------------------
-
-READMEFILES = \
-    $(MISC)$/readme.html \
-    $(MISC)$/readme.txt
-
-.INCLUDE : $(PRJ)$/util$/makefile.pmk
-
+.INCLUDE :	target.mk

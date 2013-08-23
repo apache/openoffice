@@ -20,7 +20,7 @@
 #**************************************************************
 
 PRJ=..
-PRJNAME=accessibility
+PRJNAME=scaddins
 TARGET=helper
 
 LANGUAGE_FILELIST=datefunc/datefunc.src \

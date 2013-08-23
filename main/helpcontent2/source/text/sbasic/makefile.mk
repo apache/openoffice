@@ -20,7 +20,7 @@
 #**************************************************************
 
 PRJ=../../..
-PRJNAME=helpcontent2
+PRJNAME=help_sbasic
 TARGET=helper
 
 LANGUAGE_FILELIST=../../auxiliary/sbasic.tree \

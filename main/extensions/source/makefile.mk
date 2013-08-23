@@ -20,7 +20,7 @@
 #**************************************************************
 
 PRJ=..
-PRJNAME=basic
+PRJNAME=extensions
 TARGET=none
 
 LANGUAGE_FILELIST=abpilot/abspilot.src \

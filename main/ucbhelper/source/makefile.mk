@@ -20,7 +20,7 @@
 #**************************************************************
 
 PRJ=..
-PRJNAME=uchhelper
+PRJNAME=ucbhelper
 TARGET=helper
 
 LANGUAGE_FILELIST=../workben/ucbexplorer/ucbexplorer.src
