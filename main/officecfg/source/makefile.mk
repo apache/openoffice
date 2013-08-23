@@ -25,7 +25,6 @@ TARGET=helper
 
 LANGUAGE_FILELIST=../registry/data/org/openoffice/Office/Common.xcu \
 ../registry/data/org/openoffice/Office/DataAccess.xcu \
-../registry/data/org/openoffice/Office/Labels.xcs \
 ../registry/data/org/openoffice/Office/Impress.xcu \
 ../registry/data/org/openoffice/Office/PresenterScreen.xcu \
 ../registry/data/org/openoffice/Office/Labels.xcu \

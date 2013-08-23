@@ -23,18 +23,18 @@ PRJ=..
 PRJNAME=sc
 TARGET=helper
 
-LANGUAGE_FILELIST=../util/hidother.src,\
-../addin/rot13/rot13.src,\
-../addin/datefunc/dfa.src,\
-ui/formdlg/formdlgs.src,\
-ui/formdlg/dwfunctr.src,\
-ui/styleui/styledlg.src,\
-ui/styleui/scstyles.src,\
-ui/dbgui/imoptdlg.src,\
-ui/dbgui/pivot.src,\
-ui/dbgui/dapitype.src,\
-ui/dbgui/textimportoptions.src,\
-ui/dbgui/consdlg.src,\
+LANGUAGE_FILELIST=../util/hidother.src \
+../addin/rot13/rot13.src \
+../addin/datefunc/dfa.src \
+ui/formdlg/formdlgs.src \
+ui/formdlg/dwfunctr.src \
+ui/styleui/styledlg.src \
+ui/styleui/scstyles.src \
+ui/dbgui/imoptdlg.src \
+ui/dbgui/pivot.src \
+ui/dbgui/dapitype.src \
+ui/dbgui/textimportoptions.src \
+ui/dbgui/consdlg.src \
 ui/dbgui/dpgroupdlg.src \
 ui/dbgui/outline.src \
 ui/dbgui/validate.src \

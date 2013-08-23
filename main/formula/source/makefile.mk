@@ -23,7 +23,7 @@ PRJ=..
 PRJNAME=formula
 TARGET=none
 
-LANGUAGE_FILELIST=core/resource/core_resource.src ui/dlg/formdlgs.src,ui/dlg/parawin.src
+LANGUAGE_FILELIST=core/resource/core_resource.src ui/dlg/formdlgs.src ui/dlg/parawin.src
 
 
 .INCLUDE :	settings.mk

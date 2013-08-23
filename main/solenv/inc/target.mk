@@ -2090,9 +2090,13 @@ $(SUBDIRS) .PHONY :
 # as an escaped "#". if it was an assignment, escaping works...
 some_unique_variable_name:=1
 
-genPO:
 .IF "$(LANGUAGE_FILELIST)" != ""
+$(SRC_ROOT)/languages/source/templates/$(PRJNAME).pot: $(LANGUAGE_FILELIST)
      -$(SOLARBINDIR)/genLang extract $(PRJNAME) $(SRC_ROOT)/languages/source "" -d -v -f $(LANGUAGE_FILELIST)
+
+genPO: $(SRC_ROOT)/languages/source/templates/$(PRJNAME).pot
+.ELSE
+genPO:
 .ENDIF
 
 

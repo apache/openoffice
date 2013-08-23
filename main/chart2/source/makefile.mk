@@ -23,40 +23,40 @@ PRJ=..
 PRJNAME=chart2
 TARGET=none
 
-LANGUAGE_FILELIST=gcontroller/dialogs/dlg_DataEditor.src \
-gcontroller/dialogs/dlg_DataSource.src \
-gcontroller/dialogs/dlg_InsertAxis_Grid.src \
-gcontroller/dialogs/dlg_ShapeFont.src \
-gcontroller/dialogs/dlg_ShapeParagraph.src \
-gcontroller/dialogs/dlg_View3D.src \
-gcontroller/dialogs/res_BarGeometry.src \
-gcontroller/dialogs/res_DataLabel_tmpl.hrc \
-gcontroller/dialogs/res_ErrorBar_tmpl.hrc \
-gcontroller/dialogs/res_LegendPosition_tmpl.hrc \
-gcontroller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc \
-gcontroller/dialogs/res_TextSeparator.src \
-gcontroller/dialogs/res_Titlesx_tmpl.hrc \
-gcontroller/dialogs/res_Trendline_tmpl.hrc \
-gcontroller/dialogs/Strings_AdditionalControls.src \
-gcontroller/dialogs/Strings_ChartTypes.src \
-gcontroller/dialogs/Strings_Scale.src \
-gcontroller/dialogs/Strings.src \
-gcontroller/dialogs/Strings_Statistic.src \
-gcontroller/dialogs/tp_3D_SceneAppearance.src \
-gcontroller/dialogs/tp_3D_SceneGeometry.src \
-gcontroller/dialogs/tp_3D_SceneIllumination.src \
-gcontroller/dialogs/tp_AxisLabel.src \
-gcontroller/dialogs/tp_AxisPositions.src \
-gcontroller/dialogs/tp_ChartType.src \
-gcontroller/dialogs/tp_DataSource.src \
-gcontroller/dialogs/tp_LegendPosition.src \
-gcontroller/dialogs/tp_Location.src \
-gcontroller/dialogs/tp_PolarOptions.src \
-gcontroller/dialogs/tp_RangeChooser.src \
-gcontroller/dialogs/tp_Scale.src \
-gcontroller/dialogs/tp_SeriesToAxis.src \
-gcontroller/dialogs/tp_TitleRotation.src \
-gcontroller/dialogs/tp_Wizard_TitlesAndObjects.src
+LANGUAGE_FILELIST=controller/dialogs/dlg_DataEditor.src \
+controller/dialogs/dlg_DataSource.src \
+controller/dialogs/dlg_InsertAxis_Grid.src \
+controller/dialogs/dlg_ShapeFont.src \
+controller/dialogs/dlg_ShapeParagraph.src \
+controller/dialogs/dlg_View3D.src \
+controller/dialogs/res_BarGeometry.src \
+controller/dialogs/res_DataLabel_tmpl.hrc \
+controller/dialogs/res_ErrorBar_tmpl.hrc \
+controller/dialogs/res_LegendPosition_tmpl.hrc \
+controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc \
+controller/dialogs/res_TextSeparator.src \
+controller/dialogs/res_Titlesx_tmpl.hrc \
+controller/dialogs/res_Trendline_tmpl.hrc \
+controller/dialogs/Strings_AdditionalControls.src \
+controller/dialogs/Strings_ChartTypes.src \
+controller/dialogs/Strings_Scale.src \
+controller/dialogs/Strings.src \
+controller/dialogs/Strings_Statistic.src \
+controller/dialogs/tp_3D_SceneAppearance.src \
+controller/dialogs/tp_3D_SceneGeometry.src \
+controller/dialogs/tp_3D_SceneIllumination.src \
+controller/dialogs/tp_AxisLabel.src \
+controller/dialogs/tp_AxisPositions.src \
+controller/dialogs/tp_ChartType.src \
+controller/dialogs/tp_DataSource.src \
+controller/dialogs/tp_LegendPosition.src \
+controller/dialogs/tp_Location.src \
+controller/dialogs/tp_PolarOptions.src \
+controller/dialogs/tp_RangeChooser.src \
+controller/dialogs/tp_Scale.src \
+controller/dialogs/tp_SeriesToAxis.src \
+controller/dialogs/tp_TitleRotation.src \
+controller/dialogs/tp_Wizard_TitlesAndObjects.src
 
 
 

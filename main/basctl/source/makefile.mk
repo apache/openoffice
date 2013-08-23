@@ -23,15 +23,15 @@ PRJ=..
 PRJNAME=basctl
 TARGET=none
 
-LANGUAGE_FILELIST=gbasicide/basicprint.src \
-gbasicide/basidesh.src \
-gbasicide/brkdlg.src \
-gbasicide/macrodlg.src \
-gbasicide/moduldlg.src \
-gbasicide/moptions.src \
-gbasicide/objdlg.src \
-gdlged/dlgresid.src \
-gdlged/managelang.src
+LANGUAGE_FILELIST=basicide/basicprint.src \
+basicide/basidesh.src \
+basicide/brkdlg.src \
+basicide/macrodlg.src \
+basicide/moduldlg.src \
+basicide/moptions.src \
+basicide/objdlg.src \
+dlged/dlgresid.src \
+dlged/managelang.src
 
 
 .INCLUDE :	settings.mk

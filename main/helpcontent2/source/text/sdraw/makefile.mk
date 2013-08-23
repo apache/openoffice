@@ -35,38 +35,38 @@ TARGET  = text_sdraw
 MODULE  = sdraw
 
 # --- Settings -----------------------------------------------------
-LANGUAGE_FILELIST=text/sdraw/00/00000004.xhp,\
-text/sdraw/01/04010000.xhp,\
-text/sdraw/04/01020000.xhp,\
-text/sdraw/guide/align_arrange.xhp,\
-text/sdraw/guide/color_define.xhp,\
-text/sdraw/guide/combine_etc.xhp,\
-text/sdraw/guide/cross_fading.xhp,\
-text/sdraw/guide/draw_sector.xhp,\
-text/sdraw/guide/duplicate_object.xhp,\
-text/sdraw/guide/eyedropper.xhp,\
-text/sdraw/guide/gradient.xhp,\
-text/sdraw/guide/graphic_insert.xhp,\
-text/sdraw/guide/groups.xhp,\
-text/sdraw/guide/join_objects3d.xhp,\
-text/sdraw/guide/join_objects.xhp,\
-text/sdraw/guide/keyboard.xhp,\
-text/sdraw/guide/main.xhp,\
-text/sdraw/guide/rotate_object.xhp,\
-text/sdraw/guide/text_enter.xhp,\
-text/sdraw/main0000.xhp,\
-text/sdraw/main0100.xhp,\
-text/sdraw/main0101.xhp,\
-text/sdraw/main0102.xhp,\
-text/sdraw/main0103.xhp,\
-text/sdraw/main0104.xhp,\
-text/sdraw/main0105.xhp,\
-text/sdraw/main0106.xhp,\
-text/sdraw/main0200.xhp,\
-text/sdraw/main0202.xhp,\
-text/sdraw/main0210.xhp,\
-text/sdraw/main0213.xhp,\
-text/sdraw/main0503.xhp"
+LANGUAGE_FILELIST=00/00000004.xhp \
+01/04010000.xhp \
+04/01020000.xhp \
+guide/align_arrange.xhp \
+guide/color_define.xhp \
+guide/combine_etc.xhp \
+guide/cross_fading.xhp \
+guide/draw_sector.xhp \
+guide/duplicate_object.xhp \
+guide/eyedropper.xhp \
+guide/gradient.xhp \
+guide/graphic_insert.xhp \
+guide/groups.xhp \
+guide/join_objects3d.xhp \
+guide/join_objects.xhp \
+guide/keyboard.xhp \
+guide/main.xhp \
+guide/rotate_object.xhp \
+guide/text_enter.xhp \
+main0000.xhp \
+main0100.xhp \
+main0101.xhp \
+main0102.xhp \
+main0103.xhp \
+main0104.xhp \
+main0105.xhp \
+main0106.xhp \
+main0200.xhp \
+main0202.xhp \
+main0210.xhp \
+main0213.xhp \
+main0503.xhp
 
 .IF "$(MAKETARGETS)"!="genPO"
 .INCLUDE : settings.mk
