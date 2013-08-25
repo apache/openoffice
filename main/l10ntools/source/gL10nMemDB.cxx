@@ -81,7 +81,7 @@ l10nMem_enus_entry::l10nMem_enus_entry(const std::string&   sKey,
   for (i = 0; i < iSize; ++i)
   {
     ch = msUpperKey[i];
-    if (ch == ' ' || ch == '*' || ch == '+')
+    if (ch == ' ' || ch == '*' || ch == '+' || ch == '%')
       msUpperKey[i] = '_';
     else
       msUpperKey[i] = toupper(msUpperKey[i]);
@@ -311,6 +311,10 @@ bool l10nMem_db::locateKey(int                iLineNo,
                            const std::string& sText,
                            bool               bThrow)
 {
+  std::string sUpperKey(sKey);
+  int         i, iSize = sUpperKey.size();
+  char        ch;
+
   // Position file pointer
   if (!findFileName(sSourceFile))
     return false;
@@ -323,6 +327,16 @@ bool l10nMem_db::locateKey(int                iLineNo,
       return true;
   }
 
+  // convert key to upper case
+  for (i = 0; i < iSize; ++i)
+  {
+    ch = sUpperKey[i];
+    if (ch == ' ' || ch == '*' || ch == '+' || ch == '%')
+      sUpperKey[i] = '_';
+    else
+      sUpperKey[i] = toupper(sUpperKey[i]);
+  }
+
   // Start from beginning of file and to end
   l10nMem_file_entry& cCur  = mcFileList[miCurFileInx];
 
@@ -330,7 +344,7 @@ bool l10nMem_db::locateKey(int                iLineNo,
   for (miCurENUSinx = cCur.miStart; miCurENUSinx <= cCur.miEnd; ++miCurENUSinx)
   {
     l10nMem_enus_entry& cEntry = mcENUSlist[miCurENUSinx];
-    if (cEntry.msText == sText && cEntry.msKey == sKey)
+    if (cEntry.msText == sText && cEntry.msKey == sUpperKey)
       return true;
   }
 

@@ -31,998 +31,574 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: accessibility/accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_DESCRIPTION.String.Text
-msgid  "Image bullet in paragraph"
+#: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Syntax error."
 msgstr ""
 
-#: accessibility/accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_NAME.String.Text
-msgid  "Image bullet"
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_GOSUB_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Return without Gosub."
 msgstr ""
 
-#: editeng/editeng.src#RID_EDITUNDO_DEL.String.Text
-msgid  "Delete"
+#: classes/sb.src#RID_BASIC_START.SBERR_REDO_FROM_START_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Incorrect entry; please retry."
 msgstr ""
 
-#: editeng/editeng.src#RID_EDITUNDO_MOVE.String.Text
-msgid  "Move"
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ARGUMENT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid procedure call."
 msgstr ""
 
-#: editeng/editeng.src#RID_EDITUNDO_INSERT.String.Text
-msgid  "Insert"
+#: classes/sb.src#RID_BASIC_START.SBERR_MATH_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Overflow."
 msgstr ""
 
-#: editeng/editeng.src#RID_EDITUNDO_REPLACE.String.Text
-msgid  "Replace"
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_MEMORY_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Not enough memory."
 msgstr ""
 
-#: editeng/editeng.src#RID_EDITUNDO_SETATTRIBS.String.Text
-msgid  "Apply attributes"
+#: classes/sb.src#RID_BASIC_START.SBERR_ALREADY_DIM_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Array already dimensioned."
 msgstr ""
 
-#: editeng/editeng.src#RID_EDITUNDO_RESETATTRIBS.String.Text
-msgid  "Reset attributes"
+#: classes/sb.src#RID_BASIC_START.SBERR_OUT_OF_RANGE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Index out of defined range."
 msgstr ""
 
-#: editeng/editeng.src#RID_EDITUNDO_INDENT.String.Text
-msgid  "Indent"
+#: classes/sb.src#RID_BASIC_START.SBERR_DUPLICATE_DEF_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Duplicate definition."
 msgstr ""
 
-#: editeng/editeng.src#RID_EDITUNDO_SETSTYLE.String.Text
-msgid  "Apply Styles"
+#: classes/sb.src#RID_BASIC_START.SBERR_ZERODIV_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Division by zero."
 msgstr ""
 
-#: editeng/editeng.src#RID_EDITUNDO_TRANSLITERATE.String.Text
-msgid  "Case/Characters"
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Variable not defined."
 msgstr ""
 
-#: editeng/editeng.src#RID_MENU_SPELL.MN_SPELLING.MenuItem.Text
-msgid  "~Spellcheck..."
+#: classes/sb.src#RID_BASIC_START.SBERR_CONVERSION_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Data type mismatch."
 msgstr ""
 
-#: editeng/editeng.src#RID_MENU_SPELL.MN_INSERT.MenuItem.Text
-msgid  "~Add"
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETER_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid parameter."
 msgstr ""
 
-#: editeng/editeng.src#RID_MENU_SPELL.MN_IGNORE.MenuItem.Text
-msgid  "Ignore All"
+#: classes/sb.src#RID_BASIC_START.SBERR_USER_ABORT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Process interrupted by user."
 msgstr ""
 
-#: editeng/editeng.src#RID_MENU_SPELL.MN_AUTOCORR.MenuItem.Text
-msgid  "AutoCorrect"
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RESUME_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Resume without error."
 msgstr ""
 
-#: editeng/editeng.src#RID_STR_WORD.String.Text
-msgid  "Word is %x"
+#: classes/sb.src#RID_BASIC_START.SBERR_STACK_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Not enough stack memory."
 msgstr ""
 
-#: editeng/editeng.src#RID_STR_PARAGRAPH.String.Text
-msgid  "Paragraph is %x"
+#: classes/sb.src#RID_BASIC_START.SBERR_PROC_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Sub-procedure or function procedure not defined."
 msgstr ""
 
-#: items/page.src#RID_SVXSTR_PAPERBIN.String.Text
-msgid  "Paper tray"
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Error loading DLL file."
 msgstr ""
 
-#: items/page.src#RID_SVXSTR_PAPERBIN_SETTINGS.String.Text
-msgid  "[From printer settings]"
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_CALL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Wrong DLL call convention."
 msgstr ""
 
-#: items/svxitems.src#RID_SVXITEMS_TRUE.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INTERNAL_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Internal error $(ARG1)."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid file name or file number."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "File not found."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_FILE_MODE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Incorrect file mode."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_ALREADY_OPEN_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "File already open."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_IO_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Device I/O error."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_EXISTS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "File already exists."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_LENGTH_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Incorrect record length."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DISK_FULL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Disk or hard drive full."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_READ_PAST_EOF_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Reading exceeds EOF."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Incorrect record number."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_TOO_MANY_FILES_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Too many files."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_DEVICE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Device not available."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_DENIED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Access denied."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_READY_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Disk not ready."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IMPLEMENTED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Not implemented."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DIFFERENT_DRIVE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Renaming on different drives impossible."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Path/File access error."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_PATH_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Path not found."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Object variable not set."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PATTERN_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid string pattern."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_IS_NULL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Use of zero not permitted."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "DDE Error."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_WAITINGACK_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Awaiting response to DDE connection."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_OUTOFCHANNELS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "No DDE channels available."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_RESPONSE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "No application responded to DDE connect initiation."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_MULT_RESPONSES_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Too many applications responded to DDE connect initiation."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_CHANNEL_LOCKED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "DDE channel locked."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NOTPROCESSED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "External application cannot execute DDE operation."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_TIMEOUT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Timeout while waiting for DDE response."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_USER_INTERRUPT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_BUSY_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "External application busy."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_DATA_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "DDE operation without data."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_WRONG_DATA_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Data are in wrong format."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_PARTNER_QUIT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "External application has been terminated."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_CONV_CLOSED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "DDE connection interrupted or modified."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "DDE method invoked with no channel open."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_INVALID_LINK_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid DDE link format."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_QUEUE_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "DDE message has been lost."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_ALREADY_EST_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Paste link already performed."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_INV_TOPIC_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Link mode cannot be set due to invalid link topic."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_DLL_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "DDE requires the DDEML.DLL file."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_CANNOT_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Module cannot be loaded; invalid format."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_INDEX_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid object index."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_ACTIVE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Object is not available."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PROP_VALUE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Incorrect property value."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_PROP_READONLY_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "This property is read-only."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_PROP_WRITEONLY_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "This property is write only."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_INVALID_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid object reference."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Property or method not found: $(ARG1)."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NEEDS_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Object required."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_INVALID_USAGE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid use of an object."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_OLE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "OLE Automation is not supported by this object."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "This property or method is not supported by the object."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_OLE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "OLE Automation Error."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ACTION_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "This action is not supported by given object."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_NAMED_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Named arguments are not supported by given object."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_LOCALE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "The current locale setting is not supported by the given object."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NAMED_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Named argument not found."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_OPTIONAL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Argument is not optional."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_WRONG_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid number of arguments."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_A_COLL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Object is not a list."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ORDINAL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid ordinal number."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_DLLPROC_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Specified DLL function not found."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CLIPBD_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid clipboard format."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_PROPERTY_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Object does not have this property."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_METHOD_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Object does not have this method."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_ARG_MISSING_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Required argument lacking."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_NUMBER_OF_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid number of arguments."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_METHOD_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Error executing a method."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_SETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Unable to set property."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_GETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Unable to determine property."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_UNEXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Expected: $(ARG1)."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_SYMBOL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Symbol expected."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Variable expected."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_LABEL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Label expected."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_LVALUE_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Value cannot be applied."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Variable $(ARG1) already defined."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_PROC_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_LABEL_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Label $(ARG1) already defined."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_VAR_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Variable $(ARG1) not found."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_ARRAY_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Array or procedure $(ARG1) not found."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_PROC_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Procedure $(ARG1) not found."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_LABEL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Label $(ARG1) undefined."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_TYPE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Unknown data type $(ARG1)."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_EXIT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Exit $(ARG1) expected."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_BLOCK_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_BRACKETS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Parentheses do not match."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DECLARATION_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETERS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Parameters do not correspond to procedure."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHAR_IN_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Invalid character in number."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_MUST_HAVE_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Array must be dimensioned."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_IF_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Else/Endif without If."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_SUBR_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_MAIN_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_WRONG_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Dimension specifications do not match."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_OPTION_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Unknown option: $(ARG1)."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_CONSTANT_REDECLARED_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Constant $(ARG1) redefined."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_PROG_TOO_LARGE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Program too large."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_STRINGS_ARRAYS_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Strings or arrays not permitted."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "An exception occurred $(ARG1)."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "This array is fixed or temporarily locked."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Out of string space."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Expression Too Complex."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Can't perform requested operation."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Too many DLL application clients."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "For loop not initialized."
+msgstr ""
+
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "$(ARG1)"
+msgstr ""
+
+#: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
+msgid  "The macro running has been interrupted"
+msgstr ""
+
+#: classes/sb.src#IDS_SBERR_STOREREF.STRING.TEXT
+msgid  "Reference will not be saved: "
+msgstr ""
+
+#: classes/sb.src#ERRCODE_BASMGR_LIBLOAD_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Error loading library '$(ARG1)'."
+msgstr ""
+
+#: classes/sb.src#ERRCODE_BASMGR_LIBSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Error saving library: '$(ARG1)'."
+msgstr ""
+
+#: classes/sb.src#ERRCODE_BASMGR_MGROPEN_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr ""
+
+#: classes/sb.src#ERRCODE_BASMGR_MGRSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr ""
+
+#: classes/sb.src#ERRCODE_BASMGR_REMOVELIB_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "Error removing library."
+msgstr ""
+
+#: classes/sb.src#ERRCODE_BASMGR_UNLOADLIB_&_ERRCODE_RES_MASK.STRING.TEXT
+msgid  "The library could not be removed from memory."
+msgstr ""
+
+#: sbx/format.src#STR_BASICKEY_FORMAT_ON.STRING.TEXT
+msgid  "On"
+msgstr ""
+
+#: sbx/format.src#STR_BASICKEY_FORMAT_OFF.STRING.TEXT
+msgid  "Off"
+msgstr ""
+
+#: sbx/format.src#STR_BASICKEY_FORMAT_TRUE.STRING.TEXT
 msgid  "True"
 msgstr ""
 
-#: items/svxitems.src#RID_SVXITEMS_FALSE.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_FALSE.STRING.TEXT
 msgid  "False"
 msgstr ""
 
-#: items/svxitems.src#RID_SVXITEMS_BREAK_NONE.String.Text
-msgid  "No break"
+#: sbx/format.src#STR_BASICKEY_FORMAT_YES.STRING.TEXT
+msgid  "Yes"
 msgstr ""
 
-#: items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BEFORE.String.Text
-msgid  "Break before new column"
+#: sbx/format.src#STR_BASICKEY_FORMAT_NO.STRING.TEXT
+msgid  "No"
 msgstr ""
 
-#: items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_AFTER.String.Text
-msgid  "Break after new column"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BOTH.String.Text
-msgid  "Break before and after new column"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_BEFORE.String.Text
-msgid  "Break before new page"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_AFTER.String.Text
-msgid  "Break after new page"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_BOTH.String.Text
-msgid  "Break before and after new page"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SHADOW_NONE.String.Text
-msgid  "No Shadow"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SHADOW_TOPLEFT.String.Text
-msgid  "Shadow top left"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SHADOW_TOPRIGHT.String.Text
-msgid  "Shadow top right"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMLEFT.String.Text
-msgid  "Shadow bottom left"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMRIGHT.String.Text
-msgid  "Shadow bottom right"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR.String.Text
-msgid  "Color "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_BLACK.String.Text
-msgid  "Black"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_BLUE.String.Text
-msgid  "Blue"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_GREEN.String.Text
-msgid  "Green"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_CYAN.String.Text
-msgid  "Cyan"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_RED.String.Text
-msgid  "Red"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_MAGENTA.String.Text
-msgid  "Magenta"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_BROWN.String.Text
-msgid  "Brown"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_GRAY.String.Text
-msgid  "Gray"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTGRAY.String.Text
-msgid  "Light Gray"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTBLUE.String.Text
-msgid  "Light Blue"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTGREEN.String.Text
-msgid  "Light Green"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTCYAN.String.Text
-msgid  "Light Cyan"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTRED.String.Text
-msgid  "Light Red"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTMAGENTA.String.Text
-msgid  "Light Magenta"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_YELLOW.String.Text
-msgid  "Yellow"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_COLOR_WHITE.String.Text
-msgid  "White"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ITALIC_NONE.String.Text
-msgid  "Not Italic"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ITALIC_OBLIQUE.String.Text
-msgid  "Oblique italic"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ITALIC_NORMAL.String.Text
-msgid  "Italic"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_THIN.String.Text
-msgid  "thin"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_ULTRALIGHT.String.Text
-msgid  "ultra thin"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_LIGHT.String.Text
-msgid  "light"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_SEMILIGHT.String.Text
-msgid  "semi light"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_NORMAL.String.Text
-msgid  "normal"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_MEDIUM.String.Text
-msgid  "medium"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_SEMIBOLD.String.Text
-msgid  "semi bold"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_BOLD.String.Text
-msgid  "bold"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_ULTRABOLD.String.Text
-msgid  "ultra bold"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WEIGHT_BLACK.String.Text
-msgid  "black"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_NONE.String.Text
-msgid  "No underline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_SINGLE.String.Text
-msgid  "Single underline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_DOUBLE.String.Text
-msgid  "Double underline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_DOTTED.String.Text
-msgid  "Dotted underline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_DONTKNOW.String.Text
-msgid  "Underline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_DASH.String.Text
-msgid  "Underline (dashes)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_LONGDASH.String.Text
-msgid  "Underline (long dashes)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_DASHDOT.String.Text
-msgid  "Underline (dot dash)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_DASHDOTDOT.String.Text
-msgid  "Underline (dot dot dash)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_SMALLWAVE.String.Text
-msgid  "Underline (small wave)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_WAVE.String.Text
-msgid  "Underline (Wave)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_DOUBLEWAVE.String.Text
-msgid  "Underline (Double wave)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_BOLD.String.Text
-msgid  "Underlined (Bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_BOLDDOTTED.String.Text
-msgid  "Dotted underline (Bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_BOLDDASH.String.Text
-msgid  "Underline (Dash bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_BOLDLONGDASH.String.Text
-msgid  "Underline (long dash, bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOT.String.Text
-msgid  "Underline (dot dash, bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOTDOT.String.Text
-msgid  "Underline (dot dot dash, bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_UL_BOLDWAVE.String.Text
-msgid  "Underline (wave, bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_NONE.String.Text
-msgid  "No overline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_SINGLE.String.Text
-msgid  "Single overline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_DOUBLE.String.Text
-msgid  "Double overline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_DOTTED.String.Text
-msgid  "Dotted overline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_DONTKNOW.String.Text
-msgid  "Overline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_DASH.String.Text
-msgid  "Overline (dashes)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_LONGDASH.String.Text
-msgid  "Overline (long dashes)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_DASHDOT.String.Text
-msgid  "Overline (dot dash)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_DASHDOTDOT.String.Text
-msgid  "Overline (dot dot dash)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_SMALLWAVE.String.Text
-msgid  "Overline (small wave)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_WAVE.String.Text
-msgid  "Overline (Wave)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_DOUBLEWAVE.String.Text
-msgid  "Overline (Double wave)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_BOLD.String.Text
-msgid  "Overlined (Bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_BOLDDOTTED.String.Text
-msgid  "Dotted overline (Bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_BOLDDASH.String.Text
-msgid  "Overline (Dash bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_BOLDLONGDASH.String.Text
-msgid  "Overline (long dash, bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOT.String.Text
-msgid  "Overline (dot dash, bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOTDOT.String.Text
-msgid  "Overline (dot dot dash, bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OL_BOLDWAVE.String.Text
-msgid  "Overline (wave, bold)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_NONE.String.Text
-msgid  "No strikethrough"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_SINGLE.String.Text
-msgid  "Single strikethrough"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_DOUBLE.String.Text
-msgid  "Double strikethrough"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_BOLD.String.Text
-msgid  "Bold strikethrough"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_SLASH.String.Text
-msgid  "Strike through with slash"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_STRIKEOUT_X.String.Text
-msgid  "Strike through with Xes"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CASEMAP_NONE.String.Text
-msgid  "None"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CASEMAP_VERSALIEN.String.Text
-msgid  "Caps"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CASEMAP_GEMEINE.String.Text
-msgid  "Lowercase"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CASEMAP_TITEL.String.Text
-msgid  "Title"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CASEMAP_KAPITAELCHEN.String.Text
-msgid  "Small caps"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_OFF.String.Text
-msgid  "Normal position"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUPER.String.Text
-msgid  "Superscript "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUB.String.Text
-msgid  "Subscript "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_AUTO.String.Text
-msgid  "automatic"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ADJUST_LEFT.String.Text
-msgid  "Align left"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ADJUST_RIGHT.String.Text
-msgid  "Align right"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ADJUST_BLOCK.String.Text
-msgid  "Justify"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ADJUST_CENTER.String.Text
-msgid  "Centered"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ADJUST_BLOCKLINE.String.Text
-msgid  "Justify"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TAB_DECIMAL_CHAR.String.Text
-msgid  "Decimal Symbol:"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TAB_FILL_CHAR.String.Text
-msgid  "Fill character:"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_LEFT.String.Text
-msgid  "Left"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_RIGHT.String.Text
-msgid  "Right"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_DECIMAL.String.Text
-msgid  "Decimal"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_CENTER.String.Text
-msgid  "Centered"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_DEFAULT.String.Text
-msgid  "Default"
-msgstr ""
-
-#: items/svxitems.src#RID_SINGLE_LINE0.String.Text
-msgid  "Single, fine lines"
-msgstr ""
-
-#: items/svxitems.src#RID_SINGLE_LINE1.String.Text
-msgid  "Single, thin"
-msgstr ""
-
-#: items/svxitems.src#RID_SINGLE_LINE2.String.Text
-msgid  "Single, thick"
-msgstr ""
-
-#: items/svxitems.src#RID_SINGLE_LINE3.String.Text
-msgid  "Single, very thick"
-msgstr ""
-
-#: items/svxitems.src#RID_SINGLE_LINE4.String.Text
-msgid  "Single, bold"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE0.String.Text
-msgid  "Double, fine lines, spacing: small"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE1.String.Text
-msgid  "Double, fine line, spacing: large"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE2.String.Text
-msgid  "Double, thin, spacing: small"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE3.String.Text
-msgid  "Double, thick, spacing: large"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE4.String.Text
-msgid  "Double, inside: fine lines, outside: thin, spacing: large"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE5.String.Text
-msgid  "Double, inside: fine lines, outside: thick, spacing: large"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE6.String.Text
-msgid  "Double, inside: fine lines, outside: very thick, spacing: large"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE7.String.Text
-msgid  "Double, inside: thin, outside: thick, spacing: large"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE8.String.Text
-msgid  "Double, inside: thick, outside: thin, spacing: small"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE9.String.Text
-msgid  "Double, inside: thick, outside: very thick, spacing: large"
-msgstr ""
-
-#: items/svxitems.src#RID_DOUBLE_LINE10.String.Text
-msgid  "Double, inside: very thick, outside: thick, Spacing: large"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SHADOWED_TRUE.String.Text
-msgid  "Shadowed"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SHADOWED_FALSE.String.Text
-msgid  "Not Shadowed"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BLINK_TRUE.String.Text
-msgid  "Blinking"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BLINK_FALSE.String.Text
-msgid  "Not Blinking"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_AUTOKERN_TRUE.String.Text
-msgid  "Pair Kerning"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_AUTOKERN_FALSE.String.Text
-msgid  "No pair kerning"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WORDLINE_TRUE.String.Text
-msgid  "Individual words"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WORDLINE_FALSE.String.Text
-msgid  "Not Words Only"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CONTOUR_TRUE.String.Text
-msgid  "Outline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CONTOUR_FALSE.String.Text
-msgid  "No Outline"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PRINT_TRUE.String.Text
-msgid  "Print"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PRINT_FALSE.String.Text
-msgid  "Don't print"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OPAQUE_TRUE.String.Text
-msgid  "Opaque"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_OPAQUE_FALSE.String.Text
-msgid  "Not Opaque"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FMTKEEP_TRUE.String.Text
-msgid  "Keep with next paragraph"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FMTKEEP_FALSE.String.Text
-msgid  "Don't Keep Paragraphs Together"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FMTSPLIT_TRUE.String.Text
-msgid  "Split paragraph"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FMTSPLIT_FALSE.String.Text
-msgid  "Don't split paragraph"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PROT_CONTENT_TRUE.String.Text
-msgid  "Contents protected"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PROT_CONTENT_FALSE.String.Text
-msgid  "Contents not protected"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PROT_SIZE_TRUE.String.Text
-msgid  "Size protected"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PROT_SIZE_FALSE.String.Text
-msgid  "Size not protected"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PROT_POS_TRUE.String.Text
-msgid  "Position protected"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PROT_POS_FALSE.String.Text
-msgid  "Position not protected"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TRANSPARENT_TRUE.String.Text
-msgid  "Transparent"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TRANSPARENT_FALSE.String.Text
-msgid  "Not Transparent"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_HYPHEN_TRUE.String.Text
-msgid  "Hyphenation"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_HYPHEN_FALSE.String.Text
-msgid  "No hyphenation"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PAGE_END_TRUE.String.Text
-msgid  "Page End"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PAGE_END_FALSE.String.Text
-msgid  "No Page End"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SIZE_WIDTH.String.Text
-msgid  "Width: "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SIZE_HEIGHT.String.Text
-msgid  "Height: "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_LRSPACE_LEFT.String.Text
-msgid  "Indent left "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_LRSPACE_FLINE.String.Text
-msgid  "First Line "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_LRSPACE_RIGHT.String.Text
-msgid  "Indent right "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SHADOW_COMPLETE.String.Text
-msgid  "Shadow: "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BORDER_COMPLETE.String.Text
-msgid  "Borders "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BORDER_NONE.String.Text
-msgid  "No border"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BORDER_TOP.String.Text
-msgid  "top "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BORDER_BOTTOM.String.Text
-msgid  "bottom "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BORDER_LEFT.String.Text
-msgid  "left "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BORDER_RIGHT.String.Text
-msgid  "right "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_BORDER_DISTANCE.String.Text
-msgid  "Spacing "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ULSPACE_UPPER.String.Text
-msgid  "From top "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ULSPACE_LOWER.String.Text
-msgid  "From bottom "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_LINES.String.Text
-msgid  "%1 Lines"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_WIDOWS_COMPLETE.String.Text
-msgid  "Widow control"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_ORPHANS_COMPLETE.String.Text
-msgid  "Orphan control"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_HYPHEN_MINLEAD.String.Text
-msgid  "Characters at end of line"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_HYPHEN_MINTRAIL.String.Text
-msgid  "Characters at beginning of line"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_HYPHEN_MAX.String.Text
-msgid  "Hyphens"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PAGEMODEL_COMPLETE.String.Text
-msgid  "Page Style: "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_KERNING_COMPLETE.String.Text
-msgid  "Kerning "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_KERNING_EXPANDED.String.Text
-msgid  "locked "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_KERNING_CONDENSED.String.Text
-msgid  "Condensed "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_GRAPHIC.String.Text
-msgid  "Graphic"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_EMPHASIS_NONE_STYLE.String.Text
-msgid  "none"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_EMPHASIS_DOT_STYLE.String.Text
-msgid  "Dots "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_EMPHASIS_CIRCLE_STYLE.String.Text
-msgid  "Circle "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_EMPHASIS_DISC_STYLE.String.Text
-msgid  "Filled circle "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_EMPHASIS_ACCENT_STYLE.String.Text
-msgid  "Accent "
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_EMPHASIS_ABOVE_POS.String.Text
-msgid  "Above"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_EMPHASIS_BELOW_POS.String.Text
-msgid  "Below"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TWOLINES_OFF.String.Text
-msgid  "Double-lined off"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_TWOLINES.String.Text
-msgid  "Double-lined"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SCRPTSPC_OFF.String.Text
-msgid  "No automatic character spacing"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_SCRPTSPC_ON.String.Text
-msgid  "No automatic character spacing"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_HNGPNCT_OFF.String.Text
-msgid  "No hanging punctuation at line end"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_HNGPNCT_ON.String.Text
-msgid  "Hanging punctuation at line end"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_OFF.String.Text
-msgid  "Apply list of forbidden characters to beginning and end of lines"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_ON.String.Text
-msgid  "Don't apply list of forbidden characters to beginning and end of lines"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CHARROTATE_OFF.String.Text
-msgid  "No rotated characters"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CHARROTATE.String.Text
-msgid  "Character rotated by $(ARG1)°"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CHARROTATE_FITLINE.String.Text
-msgid  "Fit to line"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CHARSCALE.String.Text
-msgid  "Characters scaled $(ARG1)%"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CHARSCALE_OFF.String.Text
-msgid  "No scaled characters"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_RELIEF_NONE.String.Text
-msgid  "No relief"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_RELIEF_EMBOSSED.String.Text
-msgid  "Relief"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_RELIEF_ENGRAVED.String.Text
-msgid  "Engraved"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_AUTO.String.Text
-msgid  "Automatic text alignment"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BASELINE.String.Text
-msgid  "Text aligned to base line"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_TOP.String.Text
-msgid  "Text aligned top"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_CENTER.String.Text
-msgid  "Text aligned middle"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BOTTOM.String.Text
-msgid  "Text aligned bottom"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FRMDIR_HORI_LEFT_TOP.String.Text
-msgid  "Text direction left-to-right (horizontal)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FRMDIR_HORI_RIGHT_TOP.String.Text
-msgid  "Text direction right-to-left (horizontal)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_RIGHT.String.Text
-msgid  "Text direction right-to-left (vertical)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_LEFT.String.Text
-msgid  "Text direction left-to-right (vertical)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_FRMDIR_ENVIRONMENT.String.Text
-msgid  "Use superordinate object text direction setting"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_ON.String.Text
-msgid  "Paragraph snaps to text grid (if active)"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_OFF.String.Text
-msgid  "Paragraph does not snap to text grid"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CHARHIDDEN_FALSE.String.Text
-msgid  "Not hidden"
-msgstr ""
-
-#: items/svxitems.src#RID_SVXITEMS_CHARHIDDEN_TRUE.String.Text
-msgid  "Hidden"
-msgstr ""
-
-#: misc/lingu.src#RID_SVXQB_CONTINUE.QueryBox.Message
-msgid  "Continue checking at beginning of document?"
-msgstr ""
-
-#: misc/lingu.src#RID_SVXQB_BW_CONTINUE.QueryBox.Message
-msgid  "Continue checking at end of document?"
-msgstr ""
-
-#: misc/lingu.src#RID_SVXSTR_HMERR_THESAURUS.String.Text
-msgid  "No thesaurus is available for the selected language. \\nPlease check your installation and install the desired language\\n"
-msgstr ""
-
-#: misc/lingu.src#RID_SVXSTR_DIC_ERR_UNKNOWN.String.Text
-msgid  "Word cannot be added to dictionary\\ndue to unknown reason."
-msgstr ""
-
-#: misc/lingu.src#RID_SVXSTR_DIC_ERR_FULL.String.Text
-msgid  "The dictionary is already full."
-msgstr ""
-
-#: misc/lingu.src#RID_SVXSTR_DIC_ERR_READONLY.String.Text
-msgid  "The dictionary is read-only."
-msgstr ""
-
-#: outliner/outliner.src#RID_OUTLUNDO_HEIGHT.String.Text
-msgid  "Move"
-msgstr ""
-
-#: outliner/outliner.src#RID_OUTLUNDO_DEPTH.String.Text
-msgid  "Indent"
-msgstr ""
-
-#: outliner/outliner.src#RID_OUTLUNDO_EXPAND.String.Text
-msgid  "Show subpoints"
-msgstr ""
-
-#: outliner/outliner.src#RID_OUTLUNDO_COLLAPSE.String.Text
-msgid  "Collapse"
-msgstr ""
-
-#: outliner/outliner.src#RID_OUTLUNDO_ATTR.String.Text
-msgid  "Apply attributes"
-msgstr ""
-
-#: outliner/outliner.src#RID_OUTLUNDO_INSERT.String.Text
-msgid  "Insert"
+#: sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.STRING.TEXT
+msgid  "@0.00 $;@(0.00 $)"
 msgstr ""

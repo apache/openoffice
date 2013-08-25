@@ -257,7 +257,7 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
       if (cE.meState == l10nMem::ENTRY_DELETED)
         continue;
 
-      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msText, "", false);
+      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msUpperKey, cE.msText, "", false);
     }
     savePo.endSave();
   }

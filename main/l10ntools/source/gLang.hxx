@@ -133,7 +133,7 @@ class handler
     void run();
 
   private:
-    enum {DO_CONVERT, DO_EXTRACT, DO_MERGE, DO_MERGE_KID, DO_GENERATE} meWorkMode;
+    enum {DO_CONVERT, DO_CONVERT_POT, DO_EXTRACT, DO_MERGE, DO_MERGE_KID} meWorkMode;
     l10nMem                  mcMemory;
     std::string              msModuleName;
     std::string              msPoOutDir;
@@ -144,10 +144,9 @@ class handler
     std::vector<std::string> mvSourceFiles;
     std::vector<std::string> mvLanguages;
 
-    void runConvert();
+    void runConvert(bool bPot);
     void runExtract();
     void runMerge(bool bKid);
-    void runGenerate();
 
     void showUsage(std::string& sErr);
     void showManual();

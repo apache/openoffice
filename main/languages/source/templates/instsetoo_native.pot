@@ -1367,7 +1367,7 @@ msgstr ""
 msgid  "Please use the file setup.exe to start the installation."
 msgstr ""
 
-#: Nsis.ulf#SetupCaption
+#: Nsis.ulf#SETUPCAPTION
 msgid  "%PRODUCTNAME %PRODUCTVERSION Installation Preparation"
 msgstr ""
 
@@ -1387,23 +1387,23 @@ msgstr ""
 msgid  "Select the folder in which to save the unpacked files."
 msgstr ""
 
-#: Nsis.ulf#InstallBtn
+#: Nsis.ulf#INSTALLBTN
 msgid  "&Unpack"
 msgstr ""
 
-#: Nsis.ulf#DirText
+#: Nsis.ulf#DIRTEXT
 msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
 msgstr ""
 
-#: Nsis.ulf#DirSubText
+#: Nsis.ulf#DIRSUBTEXT
 msgid  "Destination Folder"
 msgstr ""
 
-#: Nsis.ulf#SpaceRequired
+#: Nsis.ulf#SPACEREQUIRED
 msgid  "Space required: "
 msgstr ""
 
-#: Nsis.ulf#SpaceAvailable
+#: Nsis.ulf#SPACEAVAILABLE
 msgid  "Space available: "
 msgstr ""
 
@@ -1415,7 +1415,7 @@ msgstr ""
 msgid  "Please wait while the installation files are being unpacked."
 msgstr ""
 
-#: Nsis.ulf#Extract
+#: Nsis.ulf#EXTRACT
 msgid  "Extract: "
 msgstr ""
 
