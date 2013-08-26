@@ -37,10 +37,10 @@
 class l10nMem_lang_entry
 {
   public:
-    l10nMem_lang_entry(const std::string& sText, bool bFuzzy);
+    l10nMem_lang_entry(const std::string& sMsgStr, bool bFuzzy);
     ~l10nMem_lang_entry();
 
-    std::string msText;     // translated text from po file
+    std::string msMsgStr;   // translated text from po file
     bool        mbFuzzy;    // fuzzy flag
 };
 
@@ -51,7 +51,7 @@ class l10nMem_enus_entry
 {
   public:
     l10nMem_enus_entry(const std::string&   sKey,
-                       const std::string&   sText,
+                       const std::string&   sMsgId,
                        int                  iLineNo,
                        int                  iFileInx,
                        int                  iLangSize,
@@ -59,8 +59,7 @@ class l10nMem_enus_entry
     ~l10nMem_enus_entry();
 
     std::string                     msKey;      // key in po file and source file
-    std::string                     msUpperKey; // key converted to uppercase (for compare)
-    std::string                     msText;     // en-US text from source file
+    std::string                     msMsgId;    // en-US text from source file
     l10nMem::ENTRY_STATE            meState;    // status information
     int                             miFileInx;  // index of file name
     int                             miLineNo;   // line number
@@ -96,6 +95,7 @@ class l10nMem_db
     int                             miCurENUSinx;
     bool                            mbNeedWrite;
     bool                            mbConvertMode;
+    bool                            mbStrictMode;
     std::vector<l10nMem_enus_entry> mcENUSlist;
     std::vector<l10nMem_file_entry> mcFileList;
     std::vector<std::string>        mcLangList;
@@ -104,35 +104,38 @@ class l10nMem_db
     void loadENUSkey    (int                iLineNo,
                          const std::string& sSourceFile,
                          const std::string& sKey,
-                         const std::string& sText);
+                         const std::string& sMsgId);
     void setLanguage    (const std::string& sLanguage,
-                         bool               bCreate,
-                        bool                bConvert);
+                         bool               bCreate);
+    void setConvert     (bool               bConvert,
+                         bool               bStrict);
     bool findFileName   (const std::string& sSourceFile);                         
     void loadLangKey    (int                iLineNo,
                          const std::string& sSourceFile,
                          const std::string& sKey,
-                         const std::string& sOrgText,
-                         const std::string& sText,
+                         const std::string& sMsgId,
+                         const std::string& sMsgStr,
                          bool               bFuzzy);
 
 
     bool locateKey      (int                iLineNo,
                          const std::string& sSourceFile,
                          const std::string& sKey,
-                         const std::string& sText,
+                         const std::string& sMsgId,
                          bool               bThrow);
     void reorganize     ();
     void addKey         (int                  iLineNo,
                          const std::string&   sSourceFile,
                          const std::string&   sKey,
-                         const std::string&   sText,
+                         const std::string&   sMsgId,
                          l10nMem::ENTRY_STATE eStat);
 
     int  prepareMerge   ();
     bool getMergeLang   (std::string& sLang,
                          std::string& sText);
     bool getLangList    (std::string& sLang);
+
+static void keyToUpper(std::string& sKey);
 };
 
 
@@ -154,19 +157,20 @@ class l10nMem_impl
     void loadEntryKey  (int                iLineNo,
                         const std::string& sSourceFile,
                         const std::string& sKey,
-                        const std::string& sOrgText,
-                        const std::string& sText,
+                        const std::string& sMsgId,
+                        const std::string& sMsgStr,
                         bool               bIsFuzzy);
     void setSourceKey  (int                iLineNo,
                         const std::string& sFilename,
                         const std::string& sKey,
-                        const std::string& sText);
+                        const std::string& sMsgId);
 
     void save         (l10nMem& cMem,
                        const std::string& sTargetDir,
                        bool               bKid,
                        bool               bForce);
     void dumpMem      (const std::string& sTargetDir);
+    void showNOconvert();
 
   private:
     static bool                         mbVerbose;
@@ -180,12 +184,12 @@ class l10nMem_impl
     bool needWrite        (const std::string sFileName, bool bForce);
     bool convFilterWarning(const std::string& sSourceFile,
                            const std::string& sKey,
-                           const std::string& sOrgText);
+                           const std::string& sMsgId);
     void convEntryKey     (int                iLineNo,
                            const std::string& sSourceFile,
                            const std::string& sKey,
-                           const std::string& sOrgText,
-                           const std::string& sText,
+                           const std::string& sMsgId,
+                           const std::string& sMsgStr,
                            bool               bIsFuzzy);
 
     friend class l10nMem;

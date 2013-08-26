@@ -70,7 +70,7 @@ void convert_po::startLook()
  int         i;
 
 
- if (!msKey.size() || !msId.size() || !msStr.size())
+ if (!msKey.size() || !msId.size())
     return;
 
   // split key into filename and real key

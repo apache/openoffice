@@ -38,9 +38,9 @@
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-l10nMem_lang_entry::l10nMem_lang_entry(const std::string& sText, bool bFuzzy)
+l10nMem_lang_entry::l10nMem_lang_entry(const std::string& sMsgStr, bool bFuzzy)
                                       :
-                                       msText(sText),
+                                       msMsgStr(sMsgStr),
                                        mbFuzzy(bFuzzy)
 {
 }
@@ -56,36 +56,26 @@ l10nMem_lang_entry::~l10nMem_lang_entry()
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 l10nMem_enus_entry::l10nMem_enus_entry(const std::string&   sKey,
-                                       const std::string&   sText,
+                                       const std::string&   sMsgId,
                                        int                  iLineNo,
                                        int                  iFileInx,
                                        int                  iLangSize,
                                        l10nMem::ENTRY_STATE eState)
                                       :
-                                       msKey(sKey),
-                                       msText(sText),
+                                       msMsgId(sMsgId),
                                        meState(eState),
                                        miFileInx(iFileInx),
                                        miLineNo(iLineNo)
 {
-  int  i, iSize;
-  char ch;
+  int i;
 
   // add dummy language entries
   for (i = 0; i < iLangSize; ++i)
     mcLangText.push_back(l10nMem_lang_entry("", false));
 
   // convert key to upper case
-  iSize      = sKey.size();
-  msUpperKey = sKey;
-  for (i = 0; i < iSize; ++i)
-  {
-    ch = msUpperKey[i];
-    if (ch == ' ' || ch == '*' || ch == '+' || ch == '%')
-      msUpperKey[i] = '_';
-    else
-      msUpperKey[i] = toupper(msUpperKey[i]);
-  }
+  msKey = sKey;
+  l10nMem_db::keyToUpper(msKey);
 }
 
 
@@ -128,7 +118,8 @@ l10nMem_db::l10nMem_db()
                        miCurLangInx(0),
                        miCurENUSinx(0),
                        mbNeedWrite(false),
-                       mbConvertMode(false)
+                       mbConvertMode(false),
+                       mbStrictMode(false)
 {
   mcFileList.push_back(l10nMem_file_entry("-genLang-", 0));
   mcLangList.push_back("-genLang-");
@@ -148,29 +139,21 @@ l10nMem_db::~l10nMem_db()
 void l10nMem_db::loadENUSkey(int                iLineNo,
                              const std::string& sSourceFile,
                              const std::string& sKey,
-                             const std::string& sText)
+                             const std::string& sMsgId)
 {
   // add it to vector and update file pointer
-  addKey(iLineNo, sSourceFile, sKey, sText, l10nMem::ENTRY_DELETED);
+  addKey(iLineNo, sSourceFile, sKey, sMsgId, l10nMem::ENTRY_DELETED);
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem_db::setLanguage(const std::string& sLanguage,
-                             bool               bCreate,
-                             bool               bConvert)
+                             bool               bCreate)
 {
   int i, iSize;
 
   // regular load or convert of old po files
-  if (bConvert)
-  {
-    iSize = mcENUSlist.size();
-    for (i = 0; i < iSize; ++i)
-      mcENUSlist[i].meState = l10nMem::ENTRY_NORMAL;
-  }
-  mbConvertMode = bConvert;
   miCurFileInx  = 0;
 
   // With no languages selected only en-US is generated
@@ -210,6 +193,17 @@ void l10nMem_db::setLanguage(const std::string& sLanguage,
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_db::setConvert(bool bConvert,
+                            bool bStrict)
+{
+  // regular load or convert of old po files
+  mbConvertMode = bConvert;
+  mbStrictMode  = bStrict;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 bool l10nMem_db::findFileName(const std::string& sSourceFile)
 {
   int iSize = mcFileList.size();
@@ -238,15 +232,15 @@ bool l10nMem_db::findFileName(const std::string& sSourceFile)
 void l10nMem_db::loadLangKey(int                iLineNo,
                              const std::string& sSourceFile,
                              const std::string& sKey,
-                             const std::string& sOrgText,
-                             const std::string& sText,
+                             const std::string& sMsgId,
+                             const std::string& sMsgStr,
                              bool               bFuzzy)
 {
-  if (!locateKey(iLineNo, sSourceFile, sKey, sOrgText, true))
+  if (!locateKey(iLineNo, sSourceFile, sKey, sMsgId, true))
     throw l10nMem::showError(".po file contains unknown filename: " + sSourceFile + " or key: " + sKey);
 
   l10nMem_lang_entry& xCur = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx];
-  xCur.msText  = sText;
+  xCur.msMsgStr  = sMsgStr;
   xCur.mbFuzzy = bFuzzy;
 }
 
@@ -287,7 +281,7 @@ void l10nMem_db::reorganize()
         continue;
       if (curE.msKey == curAdd.msKey)
         break;
-      if (curE.msText == curAdd.msText)
+      if (curE.msMsgId == curAdd.msMsgId)
         break;
     }
     if (iD == iDsize)
@@ -295,7 +289,7 @@ void l10nMem_db::reorganize()
 
     // Update deleted entry (original), because lang is connected here
     l10nMem_enus_entry& curDel = mcENUSlist[listDel[iD]];
-    curDel.msText    = curAdd.msText;
+    curDel.msMsgId   = curAdd.msMsgId;
     curDel.msKey     = curAdd.msKey;
     curDel.meState   = l10nMem::ENTRY_CHANGED;
     curAdd.meState   = l10nMem::ENTRY_DELETED;
@@ -308,7 +302,7 @@ void l10nMem_db::reorganize()
 bool l10nMem_db::locateKey(int                iLineNo,
                            const std::string& sSourceFile,
                            const std::string& sKey,
-                           const std::string& sText,
+                           const std::string& sMsgId,
                            bool               bThrow)
 {
   std::string sUpperKey(sKey);
@@ -323,7 +317,7 @@ bool l10nMem_db::locateKey(int                iLineNo,
   if (++miCurENUSinx < (int)mcENUSlist.size())
   {
     l10nMem_enus_entry& nowEntry = mcENUSlist[miCurENUSinx];
-    if (nowEntry.msText == sText && nowEntry.msKey == sKey)
+    if (nowEntry.msMsgId == sMsgId && nowEntry.msKey == sKey)
       return true;
   }
 
@@ -344,12 +338,12 @@ bool l10nMem_db::locateKey(int                iLineNo,
   for (miCurENUSinx = cCur.miStart; miCurENUSinx <= cCur.miEnd; ++miCurENUSinx)
   {
     l10nMem_enus_entry& cEntry = mcENUSlist[miCurENUSinx];
-    if (cEntry.msText == sText && cEntry.msKey == sUpperKey)
+    if (cEntry.msMsgId == sMsgId && cEntry.msKey == sUpperKey)
       return true;
   }
 
   if (bThrow)
-    throw l10nMem::showError("cannot find key(" + sKey +") with text(" + sText + ")", iLineNo);
+    throw l10nMem::showError("cannot find key(" + sKey +") with text(" + sMsgId + ")", iLineNo);
   return false;
 }
 
@@ -359,7 +353,7 @@ bool l10nMem_db::locateKey(int                iLineNo,
 void l10nMem_db::addKey(int                  iLineNo,
                         const std::string&   sSourceFile,
                         const std::string&   sKey,
-                        const std::string&   sText,
+                        const std::string&   sMsgId,
                         l10nMem::ENTRY_STATE eStat)
 {
   // check file
@@ -373,7 +367,7 @@ void l10nMem_db::addKey(int                  iLineNo,
     mcFileList.push_back(l10nMem_file_entry(sSourceFile, miCurENUSinx));
    
     // and add entry at the back (no problem since it is a new file)
-    mcENUSlist.push_back(l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx,
+    mcENUSlist.push_back(l10nMem_enus_entry(sKey, sMsgId, iLineNo, miCurFileInx,
                                                mcLangList.size(), eStat));
     mcFileList[miCurFileInx].miEnd = miCurENUSinx;
   }
@@ -387,7 +381,7 @@ void l10nMem_db::addKey(int                  iLineNo,
     curF.miEnd++;
     miCurENUSinx = curF.miEnd;
     mcENUSlist.insert(it + curF.miEnd,
-                      l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx,
+                      l10nMem_enus_entry(sKey, sMsgId, iLineNo, miCurFileInx,
                                          mcLangList.size(), eStat));
     for (int i = miCurFileInx+1; i < iFsize; ++i)
     {
@@ -413,7 +407,7 @@ int l10nMem_db::prepareMerge()
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 bool l10nMem_db::getMergeLang(std::string& sLang,
-                              std::string& sText)
+                              std::string& sMsgStr)
 {
   miCurLangInx++;
   if (miCurLangInx >= (int)mcLangList.size())
@@ -423,12 +417,30 @@ bool l10nMem_db::getMergeLang(std::string& sLang,
   if (!miCurLangInx)
   {
     sLang = "en-US";
-    sText = mcENUSlist[miCurENUSinx].msText;
+    sMsgStr = mcENUSlist[miCurENUSinx].msMsgId;
   }
   else
   {
     sLang = mcLangList[miCurLangInx];
-    sText = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx].msText;
+    sMsgStr = mcENUSlist[miCurENUSinx].mcLangText[miCurLangInx].msMsgStr;
   }
   return true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_db::keyToUpper(std::string& sKey)
+{
+  int i, iSize;
+
+  iSize = sKey.size();
+  for (i = 0; i < iSize; ++i)
+  {
+    char ch = sKey[i];
+    if (ch == ' ' || ch == '*' || ch == '+' || ch == '%')
+      sKey[i] = '_';
+    else
+      sKey[i] = toupper(ch);
+  }
 }

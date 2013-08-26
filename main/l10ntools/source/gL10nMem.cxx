@@ -87,14 +87,19 @@ bool l10nMem::isError()
      { return l10nMem_impl::mcImpl->mbInError; }
 void l10nMem::setModuleName(const std::string& sM)
      { l10nMem_impl::mcImpl->setModuleName(sM); }
-void l10nMem::setLanguage(const std::string& sL, bool bC, bool bK)
-     { l10nMem_impl::mcImpl->mcDb.setLanguage(sL, bC, bK); }
+void l10nMem::setLanguage(const std::string& sL, bool bC)
+     { l10nMem_impl::mcImpl->mcDb.setLanguage(sL, bC); }
+void l10nMem::setConvert(bool bC, bool bS)
+     { l10nMem_impl::mcImpl->mcDb.setConvert(bC, bS); }
 void l10nMem::loadEntryKey(int iL, const std::string& sS, const std::string& sK, const std::string& sO, const std::string& sT, bool               bI)
      { l10nMem_impl::mcImpl->loadEntryKey(iL, sS, sK, sO, sT, bI); }
 void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK, const std::string& sT)
      { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
 void l10nMem::save(const std::string& sT, bool bK, bool bF)
      { l10nMem_impl::mcImpl->save(*this, sT, bK, bF); }
+void l10nMem::showNOconvert ()
+     { l10nMem_impl::mcImpl->showNOconvert(); }
+
 int  l10nMem::prepareMerge()
      { return l10nMem_impl::mcImpl->mcDb.prepareMerge(); }
 void l10nMem::dumpMem(const std::string& sT)
@@ -169,16 +174,16 @@ void l10nMem_impl::setModuleName(const std::string& sModuleName)
 void l10nMem_impl::loadEntryKey(int                iLineNo,
                                const std::string& sSourceFile,
                                const std::string& sKey,
-                               const std::string& sOrgText,
-                               const std::string& sText,
+                               const std::string& sMsgId,
+                               const std::string& sMsgStr,
                                bool               bIsFuzzy)
 {
-  if (!mcDb.miCurLangInx)
-    mcDb.loadENUSkey(iLineNo, sSourceFile, sKey, sText);
-  else if (mcDb.mbConvertMode)
-    convEntryKey(iLineNo, sSourceFile, sKey, sOrgText, sText, bIsFuzzy);
+  if (mcDb.mbConvertMode)
+    convEntryKey(iLineNo, sSourceFile, sKey, sMsgId, sMsgStr, bIsFuzzy);
+  else if (!mcDb.miCurLangInx)
+    mcDb.loadENUSkey(iLineNo, sSourceFile, sKey, sMsgId);
   else
-    mcDb.loadLangKey(iLineNo, sSourceFile, sKey, sOrgText, sText, bIsFuzzy);
+    mcDb.loadLangKey(iLineNo, sSourceFile, sKey, sMsgId, sMsgStr, bIsFuzzy);
 }
 
 
@@ -187,9 +192,9 @@ void l10nMem_impl::loadEntryKey(int                iLineNo,
 void l10nMem_impl::setSourceKey(int                iLineNo,
                                 const std::string& sSourceFile,
                                 const std::string& sKey,
-                                const std::string& sText)
+                                const std::string& sMsgId)
 {
-  std::string newText(sText);
+  std::string newText(sMsgId);
   int         i;
 
 
@@ -257,7 +262,7 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
       if (cE.meState == l10nMem::ENTRY_DELETED)
         continue;
 
-      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msUpperKey, cE.msText, "", false);
+      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msMsgId, "", false);
     }
     savePo.endSave();
   }
@@ -279,9 +284,27 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
       if (cE.meState == l10nMem::ENTRY_DELETED)
         continue;
 
-      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msText, cL.msText, bF);
+      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msMsgId, cL.msMsgStr, bF);
     }
     savePo.endSave();
+  }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_impl::showNOconvert ()
+{
+  int iE, iEsize  = mcDb.mcENUSlist.size();
+
+  for (iE = 1; iE < iEsize; ++iE)
+  {
+    l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];  
+
+    if (cE.meState == l10nMem::ENTRY_DELETED)
+    {
+      showError("template key(" + cE.msKey + ") msgId(" + cE.msMsgId + ") not in pot file", 0);
+    }
   }
 }
 
@@ -366,9 +389,9 @@ bool l10nMem_impl::needWrite(const std::string sFileName, bool bForce)
 /**********************   I M P L E M E N T A T I O N   **********************/
 bool l10nMem_impl::convFilterWarning(const std::string& sSourceFile,
                                      const std::string& sKey,
-                                     const std::string& sOrgText)
+                                     const std::string& sMsgId)
 {
-  if (sOrgText == "-")
+  if (sMsgId == "-")
     return true;
 
   if (msModuleName == "basic")
@@ -390,27 +413,17 @@ bool l10nMem_impl::convFilterWarning(const std::string& sSourceFile,
 void l10nMem_impl::convEntryKey(int                iLineNo,
                                const std::string& sSourceFile,
                                const std::string& sKey,
-                               const std::string& sOrgText,
-                               const std::string& sText,
+                               const std::string& sMsgId,
+                               const std::string& sMsgStr,
                                bool               bIsFuzzy)
 {
   std::vector<int> ivEntryList;
-  std::string      sKeyUpper;
-  int              i, iSize, iCandidate;
+  int              i, iSize;
 
 
-  // filter out dummy messages, silently
-  if (!sText.size() || convFilterWarning(sSourceFile, sKey, sOrgText))
-    return;
-
-  // make copy of key in upper case
-  iSize     = sKey.size();
-  sKeyUpper = sKey;
-  for (i = 0; i < iSize; ++i)
-    sKeyUpper[i] = toupper(sKeyUpper[i]);
-
-  // Find all matching file names
-  iSize      = mcDb.mcFileList.size();
+  // Find all matching file names (old system does not have directory.
+  // build list of potential entries
+  iSize = mcDb.mcFileList.size();
   for (i = 1; i < iSize; ++i)
     if (sSourceFile == mcDb.mcFileList[i].msPureName)
     {
@@ -425,12 +438,47 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
   iSize = ivEntryList.size();
   if (!iSize)
   {
-    showWarning("file(" + sSourceFile + ") key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
-                ") with msgId(" + sOrgText + ") file not found", iLineNo);
+    showWarning("source file(" + sSourceFile + ") not in template file", iLineNo);
     return;
   }
 
   // Loop through all potential en-US entries
+  for (i = 0; i < iSize; ++i)
+  {
+    l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
+
+    // The entry must be unconverted and msgId must match
+    if (curE.meState == l10nMem::ENTRY_DELETED && sMsgId == curE.msMsgId)
+    {
+      curE.meState = l10nMem::ENTRY_NORMAL;
+      break;
+    }
+  }
+  if (i == iSize)
+  {
+    showWarning("file(" + sSourceFile + ") key(" + sKey + ") msgId(" + sMsgId + ") not found in templates", iLineNo);
+  }
+
+  if (mcDb.mbStrictMode)
+    return;
+
+
+{
+  std::string      sKeyUpper;
+
+
+  // filter out dummy messages, silently
+  if (convFilterWarning(sSourceFile, sKey, sMsgId))
+    return;
+
+  // make copy of key in upper case
+  sKeyUpper = sKey;
+  l10nMem_db::keyToUpper(sKeyUpper);
+
+
+
+  // Loop through all potential en-US entries
+  int iCandidate;
   for (iCandidate = -1, i = 0; i < iSize; ++i)
   {
     l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
@@ -440,11 +488,11 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
       continue;
 
     // The msgId must match
-    if (sOrgText == curE.msText)
+    if (sMsgId == curE.msMsgId)
       break;
 
     // compare keys, but be aware of different length
-    if (sKeyUpper.find(curE.msUpperKey) != std::string::npos)
+    if (sKeyUpper.find(curE.msKey) != std::string::npos)
     {
       // is this the second (or more candidate ? then we cannot use key
       if (iCandidate > 0)
@@ -469,16 +517,17 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
     l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
     l10nMem_lang_entry& curL = curE.mcLangText[mcDb.miCurLangInx];
 
-    if (sText != curL.msText)
+    if (sMsgStr != curL.msMsgStr)
     {
-      curL.msText  = sText;
-      curL.mbFuzzy = bIsFuzzy;
-      curE.meState = l10nMem::ENTRY_CHANGED;
+      curL.msMsgStr = sMsgStr;
+      curL.mbFuzzy  = bIsFuzzy;
+      curE.meState  = l10nMem::ENTRY_CHANGED;
     }
     if (sKeyUpper.size())
     {
       showWarning("file(" + sSourceFile + ") key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
-                  ") with msgId(" + sOrgText + ") " + sKeyUpper, iLineNo);
+                  ") with msgId(" + sMsgId + ") " + sKeyUpper, iLineNo);
     }
+  }
   }
 }

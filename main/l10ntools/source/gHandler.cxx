@@ -267,6 +267,9 @@ void handler::run()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runExtract()
 {
+  // no convert 
+  mcMemory.setConvert(false, false);
+
   // loop through all source files, and extract messages from each file
   for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
   {
@@ -287,6 +290,9 @@ void handler::runExtract()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runMerge(bool bKid)
 {
+  // no convert 
+  mcMemory.setConvert(false, false);
+
   // loop through all source files, and extract messages from each file
   for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
   {
@@ -307,6 +313,9 @@ void handler::runMerge(bool bKid)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runConvert(bool bPot)
 {
+  // convert 
+  mcMemory.setConvert(true, bPot);
+
   // loop through all source files, and extract messages from each file
   for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
   {
@@ -315,6 +324,13 @@ void handler::runConvert(bool bPot)
     {
       // tell system
       l10nMem::showDebug("genLang compare template " + msSourceDir + *siSource);
+
+      // get converter and extract files
+      convert_gen convertObj(mcMemory, "./", msTargetDir, *siSource);
+      convertObj.execute(false);
+
+      if (bPot)
+        mcMemory.showNOconvert();
     }
     else
       for (std::vector<std::string>::iterator siLang = mvLanguages.begin(); siLang != mvLanguages.end(); ++siLang)
@@ -322,7 +338,7 @@ void handler::runConvert(bool bPot)
         std::string sFilePath = msSourceDir + *siLang + "/";
 
         // get converter and extract files
-        mcMemory.setLanguage(*siLang, false, true);
+        mcMemory.setLanguage(*siLang, false);
 
         // tell system
         l10nMem::showDebug("genLang convert text from file " + sFilePath + *siSource + " language " + *siLang);
@@ -330,11 +346,15 @@ void handler::runConvert(bool bPot)
         // get converter and extract files
         convert_gen convertObj(mcMemory, sFilePath, msTargetDir, *siSource);
         convertObj.execute(true);
+
+        if (bPot)
+          mcMemory.showNOconvert();
       }
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, false, mbForceSave);
+  if (!bPot)
+    mcMemory.save(msPoOutDir, false, mbForceSave);
 }
 
 
@@ -453,6 +473,8 @@ void handler::loadL10MEM(bool onlyTemplates)
   std::string sMod  = msModuleName + ".pot";
   std::string sLoad = msPoDir + "templates/";
 
+  // no convert
+  mcMemory.setConvert(false, false);
 
   // load texts from en-US po file (master)
   {
@@ -460,7 +482,7 @@ void handler::loadL10MEM(bool onlyTemplates)
     l10nMem::showDebug("genLang loading master text from file " + sLoad + sMod);
 
     // and load file
-    mcMemory.setLanguage("", true, false);
+    mcMemory.setLanguage("", true);
     convert_gen (mcMemory, sLoad, msTargetDir, sMod).execute(false);
   }
 
@@ -474,7 +496,7 @@ void handler::loadL10MEM(bool onlyTemplates)
     sLoad = msPoDir + *siLang + "/";
 
     // get converter and extract files
-    mcMemory.setLanguage(*siLang, true, false);
+    mcMemory.setLanguage(*siLang, true);
 
     // tell system
     l10nMem::showDebug("genLang loading text from language file " + sLoad + sMod);

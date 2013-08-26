@@ -68,8 +68,9 @@ class l10nMem
 
     void setModuleName (const std::string& sModuleName);
     void setLanguage   (const std::string& sLanguage,
-                        bool               bCreate,
-                        bool               bConvert);
+                        bool               bCreate);
+    void setConvert    (bool               bConvert,
+                        bool               bStrict);
     void loadEntryKey  (int                iLineNo,
                         const std::string& sSourceFile,
                         const std::string& sKey,
@@ -90,6 +91,7 @@ class l10nMem
     int  prepareMerge  ();
     bool getMergeLang  (std::string& sLang,
                         std::string& sText);
+    void showNOconvert ();
 };
 
 
