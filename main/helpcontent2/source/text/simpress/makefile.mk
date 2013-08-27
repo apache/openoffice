@@ -26,8 +26,7 @@ PRJ		= ..$/..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = help_simpress
 
-LANGUAGE_FILELIST=../../auxiliary/simpress.tree \
-main0103.xhp \
+LANGUAGE_FILELIST= main0103.xhp \
 main0104.xhp \
 main0113.xhp \
 04/presenter.xhp \

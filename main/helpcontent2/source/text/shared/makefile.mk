@@ -35,8 +35,7 @@ TARGET  = text_shared
 MODULE  = shared
 
 # --- Settings -----------------------------------------------------
-LANGUAGE_FILELIST=../../auxiliary/shared.tree \
-00/00000001.xhp \
+LANGUAGE_FILELIST= 00/00000001.xhp \
 00/00000002.xhp \
 00/00000003.xhp \
 00/00000004.xhp \
@@ -434,6 +433,8 @@ LANGUAGE_FILELIST=../../auxiliary/shared.tree \
 02/08020000.xhp \
 02/09010000.xhp \
 02/09020000.xhp \
+02/09030000.xhp \
+02/09050000.xhp \
 02/09060000.xhp \
 02/09070000.xhp \
 02/09070100.xhp \
@@ -825,6 +826,7 @@ guide/xforms.xhp \
 guide/xsltfilter_create.xhp \
 guide/xsltfilter_distribute.xhp \
 guide/xsltfilter.xhp \
+guide/sidebar_window.xhp \
 main0108.xhp \
 main0201.xhp \
 main0204.xhp \
@@ -922,7 +924,8 @@ optionen/testaccount.xhp \
 optionen/viewcertificate_c.xhp \
 optionen/viewcertificate_d.xhp \
 optionen/viewcertificate_g.xhp \
-optionen/viewcertificate.xhp
+optionen/viewcertificate.xhp \
+tree_strings.xhp 
 
 .IF "$(MAKETARGETS)"!="genPO"
 .INCLUDE : settings.mk

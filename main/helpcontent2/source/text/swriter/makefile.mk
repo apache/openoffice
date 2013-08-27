@@ -26,8 +26,7 @@ PRJ		= ..$/..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = help_swriter
 
-LANGUAGE_FILELIST=../../auxiliary/swriter.tree \
-main0103.xhp \
+LANGUAGE_FILELIST= main0103.xhp \
 main0104.xhp \
 04/01020000.xhp \
 02/18030700.xhp \

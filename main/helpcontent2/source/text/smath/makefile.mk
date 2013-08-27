@@ -26,8 +26,7 @@ PRJ		= ..$/..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = help_smath
 
-LANGUAGE_FILELIST=../../auxiliary/smath.tree \
-main0103.xhp \
+LANGUAGE_FILELIST= main0103.xhp \
 04/01020000.xhp \
 02/03010000.xhp \
 main0102.xhp \

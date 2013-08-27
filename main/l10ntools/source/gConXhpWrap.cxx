@@ -122,7 +122,7 @@ void convert_xhp::openTag(char *yytext)
   if (meExpectValue == VALUE_IS_VALUE)
   {
     meExpectValue  = VALUE_IS_VALUE_TAG;
-    msCollector   += "\\";
+//FIX    msCollector   += "\\";
   }
   copySourceSpecial(yytext, 0);
 }
@@ -138,7 +138,7 @@ void convert_xhp::closeTag(char *yytext)
   {
     case VALUE_IS_VALUE_TAG:
          newState = VALUE_IS_VALUE;
-         msCollector   += "\\";
+//FIX         msCollector   += "\\";
          break;
 
     case VALUE_IS_TAG_TRANS:

@@ -23,8 +23,7 @@ PRJ=../../..
 PRJNAME=help_sbasic
 TARGET=helper
 
-LANGUAGE_FILELIST=../../auxiliary/sbasic.tree \
-guide/create_dialog.xhp \
+LANGUAGE_FILELIST= guide/create_dialog.xhp \
 guide/insert_control.xhp \
 guide/sample_code.xhp \
 guide/show_dialog.xhp \

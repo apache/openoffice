@@ -202,7 +202,7 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
   for (i = 0; (i = newText.find("\\", i)) != (int)std::string::npos;)
   {
     ++i;
-    if (i < (int)newText.size() && (newText[i] == '<' || newText[i] == '>' || newText[i] == 'n' || newText[i] == 't'))
+    if (i < (int)newText.size() && (newText[i] == '\\' || newText[i] == '<' || newText[i] == '>' || newText[i] == 'n' || newText[i] == 't'))
       ++i;
     else
     {

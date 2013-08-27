@@ -35,8 +35,7 @@ TARGET  = text_schart
 MODULE  = schart
 
 # --- Settings -----------------------------------------------------
-LANGUAGE_FILELIST=../../auxiliary/schart.tree \
-00/00000004.xhp \
+LANGUAGE_FILELIST= 00/00000004.xhp \
 01/03010000.xhp \
 01/04010000.xhp \
 01/04020000.xhp \
