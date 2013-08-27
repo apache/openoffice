@@ -202,7 +202,7 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
   for (i = 0; (i = newText.find("\\", i)) != (int)std::string::npos;)
   {
     ++i;
-    if (i < (int)newText.size() && (newText[i] == '<' || newText[i] == '>'))
+    if (i < (int)newText.size() && (newText[i] == '<' || newText[i] == '>' || newText[i] == 'n' || newText[i] == 't'))
       ++i;
     else
     {
@@ -421,6 +421,10 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
   int              i, iSize;
 
 
+  // silent ignore deleted messages
+  if (sMsgId == "-" || sMsgId == "")
+    return;
+
   // Find all matching file names (old system does not have directory.
   // build list of potential entries
   iSize = mcDb.mcFileList.size();
@@ -445,6 +449,7 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
   // Loop through all potential en-US entries
   for (i = 0; i < iSize; ++i)
   {
+    int z = ivEntryList[i];
     l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
 
     // The entry must be unconverted and msgId must match

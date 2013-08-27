@@ -26,7 +26,23 @@ TARGET=helper
 LANGUAGE_FILELIST=resource/conn_shared_res.src \
 resource/conn_error_message.src \
 resource/conn_log_res.src \
-drivers/hsqldb/hsqlui.src
+drivers/hsqldb/hsqlui.src \
+drivers/adabas/adabas.xcu \
+drivers/mysql/mysql.xcu \
+drivers/mozab/mozab.xcu \
+drivers/mozab/mozab2.xcu \
+drivers/hsqldb/hsqldb.xcu \
+drivers/macab/macab.xcu \
+drivers/evoab/evoab.xcu \
+drivers/odbc/odbc.xcu \
+drivers/kab/kab.xcu \
+drivers/flat/flat.xcu \
+drivers/calc/calc.xcu \
+drivers/jdbc/jdbc.xcu \
+drivers/dbase/dbase.xcu \
+drivers/evoab2/evoab2.xcu \
+drivers/ado/ado.xcu
+
 
 .INCLUDE :	settings.mk
 

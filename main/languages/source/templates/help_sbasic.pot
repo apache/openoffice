@@ -347,10 +347,6 @@ msgstr ""
 msgid  "Do...Loop Statement [Runtime]"
 msgstr ""
 
-#: ../../auxiliary/sbasic.tree#SBASIC/TEXT/SBASIC/SHARED/03110100.XHP
-msgid  "Comparison Operators [Runtime]"
-msgstr ""
-
 #: ../../auxiliary/sbasic.tree#SBASIC/TEXT/SBASIC/SHARED/03090404.XHP
 msgid  "End Statement [Runtime]"
 msgstr ""
@@ -381,10 +377,6 @@ msgstr ""
 
 #: ../../auxiliary/sbasic.tree#SBASIC/TEXT/SBASIC/SHARED/03050300.XHP
 msgid  "Error Function [Runtime]"
-msgstr ""
-
-#: ../../auxiliary/sbasic.tree#SBASIC/TEXT/SBASIC/SHARED/03050000.XHP
-msgid  "Error Handling Functions"
 msgstr ""
 
 #: ../../auxiliary/sbasic.tree#SBASIC/TEXT/SBASIC/SHARED/03090412.XHP
@@ -653,10 +645,6 @@ msgstr ""
 
 #: ../../auxiliary/sbasic.tree#SBASIC/TEXT/SBASIC/SHARED/03030203.XHP
 msgid  "Now Function [Runtime]"
-msgstr ""
-
-#: ../../auxiliary/sbasic.tree#SBASIC/TEXT/SBASIC/SHARED/03080000.XHP
-msgid  "Numeric Functions"
 msgstr ""
 
 #: ../../auxiliary/sbasic.tree#SBASIC/TEXT/SBASIC/SHARED/03080802.XHP
@@ -9412,27 +9400,27 @@ msgid  "On Error Goto ErrorHandler REM Define target for error-handler"
 msgstr ""
 
 #: shared/03020409.xhp#PAR_ID3154944.22
-msgid  "If Dir(\"C:\\\\test\",16)=\"\" Then MkDir \"C:\\\\test\""
+msgid  "If Dir(\"C:\\\test\",16)=\"\" Then MkDir \"C:\\\test\""
 msgstr ""
 
 #: shared/03020409.xhp#PAR_ID3151075.23
-msgid  "If Dir(\"C:\\\\test\\\\autoexec.sav\")=\"\" THEN Filecopy \"c:\\\\autoexec.bat\", \"c:\\\\test\\\\autoexec.sav\""
+msgid  "If Dir(\"C:\\\test\\\\autoexec.sav\")=\"\" THEN Filecopy \"c:\\\\autoexec.bat\", \"c:\\\test\\\\autoexec.sav\""
 msgstr ""
 
 #: shared/03020409.xhp#PAR_ID3149959.24
-msgid  "SetAttr \"c:\\\\test\\\\autoexec.sav\" ,0"
+msgid  "SetAttr \"c:\\\test\\\\autoexec.sav\" ,0"
 msgstr ""
 
 #: shared/03020409.xhp#PAR_ID3153418.25
-msgid  "Filecopy \"c:\\\\autoexec.bat\", \"c:\\\\test\\\\autoexec.sav\""
+msgid  "Filecopy \"c:\\\\autoexec.bat\", \"c:\\\test\\\\autoexec.sav\""
 msgstr ""
 
 #: shared/03020409.xhp#PAR_ID3149122.26
-msgid  "SetAttr \"c:\\\\test\\\\autoexec.sav\" ,1"
+msgid  "SetAttr \"c:\\\test\\\\autoexec.sav\" ,1"
 msgstr ""
 
 #: shared/03020409.xhp#PAR_ID3154480.27
-msgid  "print GetAttr( \"c:\\\\test\\\\autoexec.sav\" )"
+msgid  "print GetAttr( \"c:\\\test\\\\autoexec.sav\" )"
 msgstr ""
 
 #: shared/03020409.xhp#PAR_ID3150753.28
@@ -9756,11 +9744,11 @@ msgid  "On Error Goto Error"
 msgstr ""
 
 #: shared/03020412.xhp#PAR_ID3147435.11
-msgid  "Filecopy \"c:\\\\autoexec.bat\", \"c:\\\\temp\\\\autoexec.sav\""
+msgid  "Filecopy \"c:\\\\autoexec.bat\", \"c:\\\temp\\\\autoexec.sav\""
 msgstr ""
 
 #: shared/03020412.xhp#PAR_ID3156444.12
-msgid  "Name \"c:\\\\temp\\\\autoexec.sav\" as \"c:\\\\temp\\\\autoexec.bat\""
+msgid  "Name \"c:\\\temp\\\\autoexec.sav\" as \"c:\\\temp\\\\autoexec.bat\""
 msgstr ""
 
 #: shared/03020412.xhp#PAR_ID3155308.13
@@ -9840,7 +9828,7 @@ msgid  "MkDir \"C:\\\\Test2\""
 msgstr ""
 
 #: shared/03020413.xhp#PAR_ID3159154.11
-msgid  "ChDir \"C:\\\\test2\""
+msgid  "ChDir \"C:\\\test2\""
 msgstr ""
 
 #: shared/03020413.xhp#PAR_ID3151112.12
@@ -9852,7 +9840,7 @@ msgid  "ChDir \"\\\\\""
 msgstr ""
 
 #: shared/03020413.xhp#PAR_ID3153188.14
-msgid  "RmDir \"C:\\\\test2\""
+msgid  "RmDir \"C:\\\test2\""
 msgstr ""
 
 #: shared/03020413.xhp#PAR_ID3146120.15
@@ -9928,27 +9916,27 @@ msgid  "On Error Goto ErrorHandler REM Define target for error-handler"
 msgstr ""
 
 #: shared/03020414.xhp#PAR_ID3145647.18
-msgid  "If Dir(\"C:\\\\test\",16)=\"\" Then MkDir \"C:\\\\test\""
+msgid  "If Dir(\"C:\\\test\",16)=\"\" Then MkDir \"C:\\\test\""
 msgstr ""
 
 #: shared/03020414.xhp#PAR_ID3147126.19
-msgid  "If Dir(\"C:\\\\test\\\\autoexec.sav\")=\"\" THEN Filecopy \"c:\\\\autoexec.bat\", \"c:\\\\test\\\\autoexec.sav\""
+msgid  "If Dir(\"C:\\\test\\\\autoexec.sav\")=\"\" THEN Filecopy \"c:\\\\autoexec.bat\", \"c:\\\test\\\\autoexec.sav\""
 msgstr ""
 
 #: shared/03020414.xhp#PAR_ID3151074.20
-msgid  "SetAttr \"c:\\\\test\\\\autoexec.sav\" ,0"
+msgid  "SetAttr \"c:\\\test\\\\autoexec.sav\" ,0"
 msgstr ""
 
 #: shared/03020414.xhp#PAR_ID3153158.21
-msgid  "Filecopy \"c:\\\\autoexec.bat\", \"c:\\\\test\\\\autoexec.sav\""
+msgid  "Filecopy \"c:\\\\autoexec.bat\", \"c:\\\test\\\\autoexec.sav\""
 msgstr ""
 
 #: shared/03020414.xhp#PAR_ID3149378.22
-msgid  "SetAttr \"c:\\\\test\\\\autoexec.sav\" ,1"
+msgid  "SetAttr \"c:\\\test\\\\autoexec.sav\" ,1"
 msgstr ""
 
 #: shared/03020414.xhp#PAR_ID3150716.23
-msgid  "print GetAttr( \"c:\\\\test\\\\autoexec.sav\" )"
+msgid  "print GetAttr( \"c:\\\test\\\\autoexec.sav\" )"
 msgstr ""
 
 #: shared/03020414.xhp#PAR_ID3154018.24
@@ -25265,4 +25253,24 @@ msgstr ""
 
 #: shared/main0601.xhp#HD_ID3148473.7
 msgid  "Help about the Help"
+msgstr ""
+
+#: guide/control_properties.xhp#TIT
+msgid  "Changing the Properties of Controls in the Dialog Editor"
+msgstr ""
+
+#: guide/control_properties.xhp#BM_ID3145786
+msgid  "\<bookmark_value\>properties; controls in dialog editor\</bookmark_value\>\<bookmark_value\>changing;control properties\</bookmark_value\>\<bookmark_value\>controls;changing properties\</bookmark_value\>\<bookmark_value\>dialog editor;changing control properties\</bookmark_value\>"
+msgstr ""
+
+#: guide/control_properties.xhp#HD_ID3145786.1
+msgid  "\<variable id=\"control_properties\"\>\<link href=\"text/sbasic/guide/control_properties.xhp\" name=\"Changing the Properties of Controls in the Dialog Editor\"\>Changing the Properties of Controls in the Dialog Editor\</link\>\</variable\>"
+msgstr ""
+
+#: guide/control_properties.xhp#PAR_ID3147317.2
+msgid  "You can set the properties of control that you add to a dialog. For example, you can change the color, name, and size of a button that you added. You can change most control properties when you create or edit a dialog. However, you can only change some properties at runtime."
+msgstr ""
+
+#: guide/control_properties.xhp#PAR_ID3145749.3
+msgid  "To change the properties of a control in design mode, right-click the control, and then choose \<emph\>Properties\</emph\>."
 msgstr ""

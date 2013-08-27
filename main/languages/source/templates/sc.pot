@@ -220,7 +220,7 @@ msgid  "Column Fields"
 msgstr ""
 
 #: ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FIXEDTEXT.TEXT
-msgid  "Row\\nFields"
+msgid  "Row\nFields"
 msgstr ""
 
 #: ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FIXEDTEXT.TEXT
@@ -1888,7 +1888,7 @@ msgid  "~Discard"
 msgstr ""
 
 #: ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.STRING.TEXT
-msgid  "Should the entry\\n#\\nbe deleted?"
+msgid  "Should the entry\n#\nbe deleted?"
 msgstr ""
 
 #: ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.STRING.TEXT
@@ -2332,7 +2332,7 @@ msgid  "Hide ~all"
 msgstr ""
 
 #: ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FIXEDTEXT.TEXT
-msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
 msgstr ""
 
 #: ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FIXEDLINE.TEXT
@@ -2852,7 +2852,7 @@ msgid  "No operations to execute"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.STRING.TEXT
-msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.STRING.TEXT
@@ -2916,7 +2916,7 @@ msgid  "Search key not found."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.STRING.TEXT
-msgid  "Goal Seek successful.\\n"
+msgid  "Goal Seek successful.\n"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.STRING.TEXT
@@ -2928,11 +2928,11 @@ msgid  ") into current cell?"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.STRING.TEXT
-msgid  "Goal Seek not successful.\\n"
+msgid  "Goal Seek not successful.\n"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.STRING.TEXT
-msgid  "No exact value found. \\n"
+msgid  "No exact value found. \n"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.STRING.TEXT
@@ -3400,7 +3400,7 @@ msgid  "Multiple operations"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.STRING.TEXT
-msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgid  "You have entered an invalid name.\nAutoFormat could not be created. \nTry again using a different name."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_AREA.STRING.TEXT
@@ -3432,7 +3432,7 @@ msgid  "Print"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.STRING.TEXT
-msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgid  "To apply an AutoFormat,\na table range of at least\n3x3 cells must be selected."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.STRING.TEXT
@@ -3532,7 +3532,7 @@ msgid  "Report1"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.STRING.TEXT
-msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgid  "is not available for spellchecking\nPlease check your installation and install \nthe desired language if necessary"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.STRING.TEXT
@@ -3544,7 +3544,7 @@ msgid  "Should the spellcheck be continued at the beginning of the current sheet
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.STRING.TEXT
-msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgid  "is not available for the thesaurus.\nPlease check your installation and install \nthe desired language if necessary"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.STRING.TEXT
@@ -3816,11 +3816,11 @@ msgid  "on"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.STRING.TEXT
-msgid  "This file contains links to other files.\\nShould they be updated?"
+msgid  "This file contains links to other files.\nShould they be updated?"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.STRING.TEXT
-msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgid  "This file contains queries. The results of these queries were not saved.\nDo you want these queries to be repeated?"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.STRING.TEXT
@@ -3828,7 +3828,7 @@ msgid  "Too many conditions"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.STRING.TEXT
-msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgid  "Filled cells cannot be shifted\nbeyond the sheet."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.STRING.TEXT
@@ -3848,7 +3848,7 @@ msgid  "There is not enough space on the sheet to insert here."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.STRING.TEXT
-msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgid  "The content of the clipboard is bigger than the range selected.\nDo you want to insert it anyway?"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.STRING.TEXT
@@ -3892,7 +3892,7 @@ msgid  "Compare #"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.STRING.TEXT
-msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgid  "The maximum number of invalid cells has been exceeded.\nNot all invalid cells have been marked."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.STRING.TEXT
@@ -3996,7 +3996,7 @@ msgid  "Exit Recording"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.STRING.TEXT
-msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.STRING.TEXT
@@ -4012,7 +4012,7 @@ msgid  "Array formula  %1 R x %2 C"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.STRING.TEXT
-msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgid  "This document contains macro function calls.\nDo you want to run them?"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.STRING.TEXT
@@ -4116,31 +4116,31 @@ msgid  "Your spreadsheet has been updated with changes saved by other users."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.STRING.TEXT
-msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgid  "The spreadsheet must be saved now to activate sharing mode.\n\nDo you want to continue?"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.STRING.TEXT
-msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\n\nDo you want to continue?"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.STRING.TEXT
-msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\n\nDo you want to continue?"
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.STRING.TEXT
-msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgid  "This spreadsheet is no longer in shared mode.\n\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.STRING.TEXT
-msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\n\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.STRING.TEXT
-msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\n\nSharing mode of a locked file cannot be disabled. Try again later."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.STRING.TEXT
-msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\n\nTry again later to save your changes."
 msgstr ""
 
 #: ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.STRING.TEXT
@@ -11112,7 +11112,7 @@ msgid  "Font Attributes"
 msgstr ""
 
 #: ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.STRING.TEXT
-msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
 msgstr ""
 
 #: ui/src/scstring.src#SCSTR_CFG_APP.STRING.TEXT
@@ -11180,7 +11180,7 @@ msgid  "space"
 msgstr ""
 
 #: ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.STRING.TEXT
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
 msgstr ""
 
 #: ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.STRING.TEXT
@@ -11224,7 +11224,7 @@ msgid  "~Selected sheets"
 msgstr ""
 
 #: ui/src/scstring.src#STR_REPLCELLSWARN.STRING.TEXT
-msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
 msgstr ""
 
 #: ui/src/scstring.src#SCSTR_ALLFILTER.STRING.TEXT
@@ -12932,11 +12932,11 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr ""
 
 #: ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
 msgstr ""
 
 #: ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
 msgstr ""
 
 #: ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST_&_ERRCODE_RES_MASK.STRING.TEXT
@@ -12944,7 +12944,7 @@ msgid  "Not all cell contents could be saved in the specified format."
 msgstr ""
 
 #: ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
 msgstr ""
 
 #: ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL_&_ERRCODE_RES_MASK.STRING.TEXT

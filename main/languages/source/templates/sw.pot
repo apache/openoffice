@@ -960,15 +960,15 @@ msgid  "blank page"
 msgstr ""
 
 #: ui/app/app.src#MSG_CLPBRD_CLEAR.QUERYBOX.MESSAGE
-msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
 msgstr ""
 
 #: ui/app/app.src#MSG_SAVE_HTML_QUERY.QUERYBOX.MESSAGE
-msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
 msgstr ""
 
 #: ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QUERYBOX.MESSAGE
-msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
 msgstr ""
 
 #: ui/app/app.src#STR_ABSTRACT_TITLE.STRING.TEXT
@@ -1020,7 +1020,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr ""
 
 #: ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FIXEDTEXT.TEXT
-msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
 msgstr ""
 
 #: ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKBUTTON.TEXT
@@ -1184,7 +1184,7 @@ msgid  "Document could not be completely saved."
 msgstr ""
 
 #: ui/app/error.src#RID_SW_ERRHDL.WARN_CODE_(_ERRCODE_CLASS_WRITE_,_WARN_SWG_HTML_NO_MACROS).STRING.TEXT
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
 msgstr ""
 
 #: ui/app/error.src#RID_SW_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_WRITE_,_WARN_WRITE_ERROR_FILE_).STRING.TEXT
@@ -2296,7 +2296,7 @@ msgid  "<User settings>"
 msgstr ""
 
 #: ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.STRING.TEXT
-msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
 msgstr ""
 
 #: ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.STRING.TEXT
@@ -2912,7 +2912,7 @@ msgid  "Caption"
 msgstr ""
 
 #: ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FIXEDTEXT.TEXT
-msgid  "Add captions automatically\\nwhen inserting:"
+msgid  "Add captions automatically\nwhen inserting:"
 msgstr ""
 
 #: ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FIXEDTEXT.TEXT
@@ -3640,7 +3640,7 @@ msgid  "Sending failed (invalid address)"
 msgstr ""
 
 #: ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.STRING.TEXT
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
 msgstr ""
 
 #: ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.MODALDIALOG.TEXT
@@ -4332,7 +4332,7 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr ""
 
 #: ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.STRING.TEXT
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
 msgstr ""
 
 #: ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.MODALDIALOG.TEXT
@@ -4352,7 +4352,7 @@ msgid  "~Bcc"
 msgstr ""
 
 #: ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FIXEDTEXT.TEXT
-msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
 msgstr ""
 
 #: ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FIXEDTEXT.TEXT
@@ -4432,7 +4432,7 @@ msgid  "Edit Document"
 msgstr ""
 
 #: ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FIXEDTEXT.TEXT
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
 msgstr ""
 
 #: ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PUSHBUTTON.TEXT
@@ -4856,7 +4856,7 @@ msgid  "Requested clipboard format is not available."
 msgstr ""
 
 #: ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QUERYBOX.MESSAGE
-msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
 msgstr ""
 
 #: ui/dochdl/dochdl.src#STR_PRIVATETEXT.STRING.TEXT
@@ -5156,7 +5156,7 @@ msgid  "Footnote: "
 msgstr ""
 
 #: ui/docvw/docvw.src#MSG_READONLY_CONTENT.INFOBOX.MESSAGE
-msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
 msgstr ""
 
 #: ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.STRING.TEXT
@@ -5612,7 +5612,7 @@ msgid  "Options"
 msgstr ""
 
 #: ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QUERYBOX.MESSAGE
-msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
 msgstr ""
 
 #: ui/envelp/labfmt.src#DLG_SAVE_LABEL.QUERYBOX.TEXT
@@ -5804,7 +5804,7 @@ msgid  "Browse..."
 msgstr ""
 
 #: ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FIXEDTEXT.TEXT
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
 msgstr ""
 
 #: ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FIXEDTEXT.TEXT
@@ -10064,7 +10064,7 @@ msgid  "AutoCorrect"
 msgstr ""
 
 #: ui/shells/shells.src#STR_REDLINE_MSG.STRING.TEXT
-msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
 msgstr ""
 
 #: ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.STRING.TEXT
@@ -10228,7 +10228,7 @@ msgid  "First ~column as caption"
 msgstr ""
 
 #: ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FIXEDTEXT.TEXT
-msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
 msgstr ""
 
 #: ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PUSHBUTTON.TEXT
@@ -10740,7 +10740,7 @@ msgid  "Sum"
 msgstr ""
 
 #: ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.STRING.TEXT
-msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
 msgstr ""
 
 #: ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.MODALDIALOG.TEXT
@@ -10768,7 +10768,7 @@ msgid  "Do you want to check the main text?"
 msgstr ""
 
 #: ui/uiview/view.src#DLG_PRT_FIELDNAME.QUERYBOX.MESSAGE
-msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
 msgstr ""
 
 #: ui/uiview/view.src#DLG_SPECIAL.QUERYBOX.MESSAGE
@@ -12824,11 +12824,11 @@ msgid  "[System]"
 msgstr ""
 
 #: ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.STRING.TEXT
-msgid  "The interactive spellcheck is already active\\nin a different document"
+msgid  "The interactive spellcheck is already active\nin a different document"
 msgstr ""
 
 #: ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.STRING.TEXT
-msgid  "The interactive hyphenation is already active\\nin a different document"
+msgid  "The interactive hyphenation is already active\nin a different document"
 msgstr ""
 
 #: ui/utlui/utlui.src#STR_SPELL_TITLE.STRING.TEXT

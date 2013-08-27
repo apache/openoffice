@@ -144,11 +144,11 @@ msgid  "~Organizer..."
 msgstr ""
 
 #: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
-msgid  "Saving in external formats may have caused\\n information loss. Do you still want to close?"
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
 msgstr ""
 
 #: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Name already in use.\\nDo you want to overwrite document template?"
+msgid  "Name already in use.\nDo you want to overwrite document template?"
 msgstr ""
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
@@ -160,11 +160,11 @@ msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr ""
 
 #: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
-msgid  "The category is not empty.\\nDelete anyway?"
+msgid  "The category is not empty.\nDelete anyway?"
 msgstr ""
 
 #: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
 msgstr ""
 
 #: doc/doc.src#STR_STYLES.STRING.TEXT
@@ -212,7 +212,7 @@ msgid  "Templates"
 msgstr ""
 
 #: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
 msgstr ""
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
@@ -244,7 +244,7 @@ msgid  "Please specify a name."
 msgstr ""
 
 #: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a unique name.\\nEntries must not be case specific."
+msgid  "Please specify a unique name.\nEntries must not be case specific."
 msgstr ""
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
@@ -256,7 +256,7 @@ msgid  "Do you want to reset the default template?"
 msgstr ""
 
 #: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
-msgid  "Template directory\\n$(DIR)\\ndoes not exist."
+msgid  "Template directory\n$(DIR)\ndoes not exist."
 msgstr ""
 
 #: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
@@ -268,7 +268,7 @@ msgid  "The selected file has an incorrect format."
 msgstr ""
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
-msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 msgstr ""
 
 #: doc/doc.src#STR_SAVEDOC.STRING.TEXT
@@ -332,7 +332,7 @@ msgid  "Disconnected"
 msgstr ""
 
 #: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
-msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-only?"
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
 msgstr ""
 
 #: doc/doc.src#STR_EDIT.STRING.TEXT
@@ -456,7 +456,7 @@ msgid  "File format:"
 msgstr ""
 
 #: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-msgid  "This document contains:\\n\\n"
+msgid  "This document contains:\n\n"
 msgstr ""
 
 #: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
@@ -516,7 +516,7 @@ msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in To
 msgstr ""
 
 #: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\\nDo you want to save the document?"
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
 msgstr ""
 
 #: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
@@ -676,11 +676,11 @@ msgid  "~Description"
 msgstr ""
 
 #: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
+msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
 msgstr ""
 
 #: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
+msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
 msgstr ""
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
@@ -792,7 +792,7 @@ msgid  "Warning"
 msgstr ""
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
-msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
+msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr ""
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
@@ -900,7 +900,7 @@ msgid  "~Unprotect..."
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.STRING.TEXT
-msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
 msgstr ""
 
 #: dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.STRING.TEXT
@@ -1472,7 +1472,7 @@ msgid  "Remove Property"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
-msgid  "The value entered does not match the specified type.\\nThe value will be stored as text."
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
 msgstr ""
 
 #: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
@@ -1596,11 +1596,11 @@ msgid  "This Style does not exist."
 msgstr ""
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
-msgid  "This Style cannot be used as a base Style,\\nbecause it would result in a recursive reference."
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
 msgstr ""
 
 #: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
-msgid  "Name already exists as a default Style.\\nPlease choose another name."
+msgid  "Name already exists as a default Style.\nPlease choose another name."
 msgstr ""
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
@@ -1608,7 +1608,7 @@ msgid  "Do you really want to delete Style $1?"
 msgstr ""
 
 #: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-msgid  "You are deleting an applied Style!\\n"
+msgid  "You are deleting an applied Style!\n"
 msgstr ""
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
@@ -1660,7 +1660,7 @@ msgid  "Tasks"
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FIXEDTEXT.TEXT
-msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKBUTTON.TEXT
@@ -1680,15 +1680,15 @@ msgid  "~Ask when not saving in ODF format"
 msgstr ""
 
 #: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgid  "No default printer found.\nPlease choose a printer and try again."
 msgstr ""
 
 #: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-msgid  "Could not start printer.\\nPlease check your printer configuration."
+msgid  "Could not start printer.\nPlease check your printer configuration."
 msgstr ""
 
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
-msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr ""
 
 #: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
@@ -1724,15 +1724,15 @@ msgid  " (read-only)"
 msgstr ""
 
 #: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
-msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
 msgstr ""
 
 #: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
-msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
+msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
 msgstr ""
 
 #: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
-msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
 msgstr ""
 
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
@@ -1744,7 +1744,7 @@ msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No do
 msgstr ""
 
 #: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
-msgid  "The document cannot be closed because a\\n print job is being carried out."
+msgid  "The document cannot be closed because a\n print job is being carried out."
 msgstr ""
 
 #: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
@@ -1760,7 +1760,7 @@ msgid  "is being prepared for printing"
 msgstr ""
 
 #: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
 msgstr ""
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
@@ -1968,7 +1968,7 @@ msgid  "Controls"
 msgstr ""
 
 #: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
-msgid  "The application cannot be terminated at the moment.\\nPlease wait until all print jobs and/or\\nOLE actions have finished and close all dialogs."
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
 msgstr ""
 
 #: appl/app.src#STR_ISMODIFIED.STRING.TEXT
@@ -2000,7 +2000,7 @@ msgid  "Function Bar"
 msgstr ""
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
-msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
+msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr ""
 
 #: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
@@ -2056,7 +2056,7 @@ msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr ""
 
 #: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
-msgid  "For security reasons, the hyperlink cannot be executed.\\nThe stated address will not be opened."
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
 msgstr ""
 
 #: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
@@ -2064,11 +2064,11 @@ msgid  "Security Warning"
 msgstr ""
 
 #: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
-msgid  "Saving will remove all existing signatures.\\nDo you want to continue saving the document?"
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
 msgstr ""
 
 #: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed.\\nDo you want to save the document?"
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
 msgstr ""
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
@@ -2104,7 +2104,7 @@ msgid  "Link graphics"
 msgstr ""
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
-msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
+msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
 msgstr ""
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT

@@ -41,7 +41,9 @@ deployment/gui/dp_gui_dialog.src \
 deployment/gui/dp_gui_updateinstalldialog.src \
 deployment/gui/dp_gui_updatedialog.src \
 deployment/gui/dp_gui_backend.src \
-deployment/gui/dp_gui_dialog2.src
+deployment/gui/dp_gui_dialog2.src \
+../win32/source/rebase/rebasegui.ulf \
+../win32/source/setup/setup.ulf
 
 .INCLUDE :	settings.mk
 

@@ -91,10 +91,6 @@ msgstr ""
 msgid  "About Converting Microsoft Office Documents"
 msgstr ""
 
-#: ../../auxiliary/shared.tree#SHARED/TEXT/SHARED/GUIDE/MS_DOCTYPES.XHP
-msgid  "Changing the Association of Microsoft Office Document Types"
-msgstr ""
-
 #: ../../auxiliary/shared.tree#1004
 msgid  "%PRODUCTNAME Options"
 msgstr ""
@@ -389,18 +385,6 @@ msgstr ""
 
 #: ../../auxiliary/shared.tree#SHARED/TEXT/SHARED/GUIDE/COPY_DRAWFUNCTIONS.XHP
 msgid  "Copying Drawing Objects Into Other Documents"
-msgstr ""
-
-#: ../../auxiliary/shared.tree#SHARED/TEXT/SHARED/GUIDE/DRAGDROP_GRAPHIC.XHP
-msgid  "Copying Graphics Between Documents"
-msgstr ""
-
-#: ../../auxiliary/shared.tree#SHARED/TEXT/SHARED/GUIDE/DRAGDROP_FROMGALLERY.XHP
-msgid  "Copying Graphics From the Gallery"
-msgstr ""
-
-#: ../../auxiliary/shared.tree#SHARED/TEXT/SHARED/GUIDE/DRAGDROP_TABLE.XHP
-msgid  "Copying Spreadsheet Areas to Text Documents"
 msgstr ""
 
 #: ../../auxiliary/shared.tree#1012
@@ -10836,23 +10820,23 @@ msgid  "\\\\"
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3147209.159
-msgid  "Search interprets the special character that follows the \"\\\\\" as a normal character and not as a regular expression (except for the combinations \\\\n, \\\\t, \\\>, and \\\<). For example, \"tree\\\\.\" finds \"tree.\", not \"treed\" or \"trees\"."
+msgid  "Search interprets the special character that follows the \"\\\\\" as a normal character and not as a regular expression (except for the combinations \\\n, \\\\t, \\\>, and \\\<). For example, \"tree\\\\.\" finds \"tree.\", not \"treed\" or \"trees\"."
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3152945.166
-msgid  "\\\\n"
+msgid  "\\\n"
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3153700.167
-msgid  "Represents a line break that was inserted with the Shift+Enter key combination. To change a line break into a paragraph break, enter \<emph\>\\\\n\</emph\> in the \<emph\>Search for\</emph\> and \<emph\>Replace with\</emph\> boxes, and then perform a search and replace."
+msgid  "Represents a line break that was inserted with the Shift+Enter key combination. To change a line break into a paragraph break, enter \<emph\>\\\n\</emph\> in the \<emph\>Search for\</emph\> and \<emph\>Replace with\</emph\> boxes, and then perform a search and replace."
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID9262672
-msgid  "\\\\n in the \<emph\>Search for\</emph\> text box stands for a line break that was inserted with the Shift+Enter key combination."
+msgid  "\\\n in the \<emph\>Search for\</emph\> text box stands for a line break that was inserted with the Shift+Enter key combination."
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID2366100
-msgid  "\\\\n in the \<emph\>Replace with\</emph\> text box stands for a paragraph break that can be entered with the Enter or Return key."
+msgid  "\\\n in the \<emph\>Replace with\</emph\> text box stands for a paragraph break that can be entered with the Enter or Return key."
 msgstr ""
 
 #: 01/02100001.xhp#PAR_ID3153258.29
@@ -48492,7 +48476,7 @@ msgid  "To connect to an Access 2000 file, use the format:"
 msgstr ""
 
 #: explorer/database/dabawiz02ado.xhp#PAR_IDN10579
-msgid  "PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=c:\\\\Access\\\\nwind2000.mdb"
+msgid  "PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=c:\\\\Access\\\nwind2000.mdb"
 msgstr ""
 
 #: explorer/database/dabawiz02ado.xhp#PAR_IDN1057C
@@ -52244,7 +52228,7 @@ msgid  "This will work only with the text edit cursor inside the cell, not at th
 msgstr ""
 
 #: guide/breaking_lines.xhp#PAR_ID0509200914160968
-msgid  "You can search for a newline character in the Find & Replace dialog by searching for \\\\n as a regular expression. You can use the text function CHAR(10) to insert a newline character into a text formula."
+msgid  "You can search for a newline character in the Find & Replace dialog by searching for \\\n as a regular expression. You can use the text function CHAR(10) to insert a newline character into a text formula."
 msgstr ""
 
 #: guide/breaking_lines.xhp#PAR_IDN106E6

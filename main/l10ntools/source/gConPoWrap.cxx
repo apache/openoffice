@@ -79,7 +79,8 @@ void convert_po::startLook()
   sNewKey   = msKey.substr(i+1);
 
   // load in db
-  mcMemory.loadEntryKey(miLineNo, sFileName, sNewKey, msId, msStr, mbFuzzy);
+  if (msId.size())
+    mcMemory.loadEntryKey(miLineNo, sFileName, sNewKey, msId, msStr, mbFuzzy);
 
   // and prepare for new entry
   msKey.clear();

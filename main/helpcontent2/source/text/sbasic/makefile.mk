@@ -321,7 +321,8 @@ shared/03132500.xhp \
 shared/05060700.xhp \
 shared/keys.xhp \
 shared/main0211.xhp \
-shared/main0601.xhp
+shared/main0601.xhp \
+guide/control_properties.xhp
 
 
 

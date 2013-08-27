@@ -272,7 +272,7 @@ msgid  "The file $filename$ could not be loaded."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
-msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\\n\\n$error_message$"
+msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
@@ -368,7 +368,7 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
-msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\\n\\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
@@ -488,11 +488,11 @@ msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Addr
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
-msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\\n"
+msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
-msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\\n\\n"
+msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
@@ -581,4 +581,120 @@ msgstr ""
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
 msgid  "Unable to display the complete table content. Please apply a filter."
+msgstr ""
+
+#: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
+msgid  "Adabas D"
+msgstr ""
+
+#: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
+msgid  "MySQL (JDBC)"
+msgstr ""
+
+#: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
+msgid  "MySQL (ODBC)"
+msgstr ""
+
+#: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
+msgid  "MySQL (Native)"
+msgstr ""
+
+#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
+msgid  "Microsoft Outlook Address Book"
+msgstr ""
+
+#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
+msgid  "Microsoft Windows Address Book"
+msgstr ""
+
+#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+msgid  "Thunderbird Address Book"
+msgstr ""
+
+#: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+msgid  "LDAP Address Book"
+msgstr ""
+
+#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+msgid  "Thunderbird Address Book"
+msgstr ""
+
+#: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+msgid  "LDAP Address Book"
+msgstr ""
+
+#: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
+msgid  "HSQL database engine"
+msgstr ""
+
+#: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
+msgid  "Mac OS X Address Book"
+msgstr ""
+
+#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+msgid  "Evolution LDAP"
+msgstr ""
+
+#: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+msgid  "Groupwise"
+msgstr ""
+
+#: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
+msgid  "ODBC"
+msgstr ""
+
+#: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
+msgid  "KDE Address Book"
+msgstr ""
+
+#: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
+msgid  "Text"
+msgstr ""
+
+#: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
+msgid  "Spreadsheet"
+msgstr ""
+
+#: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
+msgid  "JDBC"
+msgstr ""
+
+#: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
+msgid  "Oracle JDBC"
+msgstr ""
+
+#: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
+msgid  "dBASE"
+msgstr ""
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+msgid  "Evolution Local"
+msgstr ""
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+msgid  "Evolution LDAP"
+msgstr ""
+
+#: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+msgid  "Groupwise"
+msgstr ""
+
+#: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
+msgid  "ADO"
+msgstr ""
+
+#: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+msgid  "Microsoft Access"
+msgstr ""
+
+#: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+msgid  "Microsoft Access 2007"
 msgstr ""
