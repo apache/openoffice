@@ -37,19 +37,14 @@ import testlib.uno.SCUtil;
 import static testlib.uno.TestUtil.*;
 
 import com.sun.star.lang.XComponent;
-//import com.sun.star.sheet.XCellRangeAddressable;
 import com.sun.star.sheet.XSpreadsheet;
 import com.sun.star.sheet.XSpreadsheetDocument;
 import com.sun.star.sheet.XSpreadsheets;
 import com.sun.star.table.XCell;
-//import com.sun.star.table.XCellRange;
-//import com.sun.star.table.CellRangeAddress;
-//import com.sun.star.table.XTableColumns;
 import com.sun.star.uno.Any;
 import com.sun.star.text.XText;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.util.XModifiable;
-
 
 import java.util.logging.Level;
 
@@ -113,10 +108,7 @@ public class TestFormulaDocs {
 		assertTrue( "Column \"TestID\" not found!", nTestIdCol >= 0);
 		assertTrue( "Column \"TestOK\" not found!", nTestOkCol >= 0);
 
-		int nTestRowEnd = 100; // TODO: get the last row
-//		XCellRange aCellRange = (XCellRange)UnoRuntime.queryInterface( XCellRange.class, SCUtil.getSCColumns( xSheet).getByIndex( nTestIdCol));
-//		CellRangeAddress addr = ((XCellRangeAddressable)UnoRuntime.queryInterface( XCellRangeAddressable.class, aCellRange)).getRangeAddress();
-//		nTestRowEnd = addr.EndRow;
+		int nTestRowEnd = nTestRowStart + 100; // TODO: get the last row from the sheet
 		int nTestCount = 0;
 		int nFailCount = 0;
 		for( int y = nTestRowStart; y < nTestRowEnd; ++y) {
@@ -131,13 +123,15 @@ public class TestFormulaDocs {
 
 			// get and check the test result
 			xCell = xSheet.getCellByPosition( nTestOkCol, y);
-			boolean bOK = (xCell.getValue() != 0.0);
+			String testOk = ((XText)UnoRuntime.queryInterface( XText.class, xCell)).getString();
+			assertTrue( "Test result must be TRUE or FALSE", testOk.equals("TRUE") || testOk.equals("FALSE"));
+			boolean bOK = testOk.equals("TRUE");
 			// mark evaluated test results
 			SCUtil.setProperties( xCell, "CellBackColor", (Integer)(bOK ? 0x00FF00 : 0xFF0000));
 			// handle failed test cases
 			if( !bOK) {
 				++nFailCount;
-				log.log(Level.SEVERE, "\ttest \""+testId+" failed");
+				log.log( Level.SEVERE, "\ttest \""+testId+" failed");
 			}
 		}
 
