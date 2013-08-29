@@ -56,9 +56,7 @@ public class MixedTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		OpenOffice aoo = new OpenOffice();
-		aoo.setAutomationPort(OpenOffice.DEFAULT_AUTOMATION_PORT);
-		aoo.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
+		OpenOffice aoo = OpenOffice.getDefault();
 		unoApp = new UnoApp(aoo);
 		vclApp = new VclApp(aoo);
 		writer = new VclWindow(vclApp, "SW_HID_EDIT_WIN");
