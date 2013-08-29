@@ -83,11 +83,11 @@ public class MixedTest {
 		writer.drag(10, 10, 300, 400);
 		writer.menuItem("Format->Character...").select();
 		effectsPage.select();
-		colorList.select("Light green");
+		colorList.select("Green 3");
 		effectsPage.ok();
 		//Verify the result via UNO API
 		XTextCursor xTextCursor = xText.createTextCursor();
 		XPropertySet xps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
-		Assert.assertEquals("Text Color", 0x0000FF00, xps.getPropertyValue("CharColor"));
+		Assert.assertEquals("Text Color", 0x00CC00, xps.getPropertyValue("CharColor"));
 	}
 }
