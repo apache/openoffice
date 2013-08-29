@@ -81,8 +81,11 @@ public class DocumentTest {
 		String title = xTitle.getTitle();
 		Assert.assertEquals("New Document title start with \"Untitled\"",true, title.startsWith("Untitled"));
 		unoApp.closeDocument(component);
-		XModel xModel = unoApp.getDesktop().getCurrentFrame().getController().getModel();		
-		Assert.assertTrue("Document has been closed.",xModel==null);	
+		XDesktop xDesktop = unoApp.getDesktop();
+		XFrame xFrame     = (xDesktop == null) ? null : xDesktop.getCurrentFrame();
+		XController xCtrl = (xFrame == null)   ? null : xFrame.getController();
+		XModel xModel     = (xCtrl == null)    ? null : xCtrl.getModel();
+		Assert.assertTrue("Document has been closed.",xModel==null);
 	}	
 	/**
 	 * test new document from template
