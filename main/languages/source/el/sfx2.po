@@ -31,2343 +31,2242 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/appl/dde.src#MD_DDE_LINKEDIT.ModalDialog.Text
-msgid  "Modify Link"
-msgstr "Τροποποίηση δεσμού"
-
-#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FixedText.Text
-msgid  "~Application:"
-msgstr "Ε~φαρμογή:"
-
-#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FixedText.Text
-msgid  "~File:"
-msgstr "Αρ~χείο:"
-
-#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FixedText.Text
-msgid  "~Category:"
-msgstr "~Κατηγορία:"
-
-#: source/appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FixedLine.Text
-msgid  "Modify link"
-msgstr "Τροποποίηση σύνδεσης"
-
-#: source/appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.String.Text
-msgid  "%PRODUCTNAME"
+#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
+msgid  "Configuration Menu"
 msgstr ""
 
-#: source/appl/app.src#STR_NONAME.String.Text
-msgid  "Untitled"
+#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
+msgid  "~Add-Ons"
 msgstr ""
 
-#: source/appl/app.src#STR_CLOSE.String.Text
+#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
+msgid  "Cu~t"
+msgstr ""
+
+#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
+msgid  "~Copy"
+msgstr ""
+
+#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
+msgid  "~Paste"
+msgstr ""
+
+#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
+msgid  "Leave Full-Screen Mode"
+msgstr ""
+
+#: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
+msgid  "Add-~On Help"
+msgstr ""
+
+#: menu/menu.src#STR_MENU_SYNONYMS.STRING.TEXT
+msgid  "Synonyms"
+msgstr ""
+
+#: menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.STRING.TEXT
+msgid  "(none)"
+msgstr ""
+
+#: menu/menu.src#STR_MENU_THESAURUS.STRING.TEXT
+msgid  "~Thesaurus..."
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
+msgid  "My Templates"
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
+msgid  "Business Correspondence"
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
+msgid  "Other Business Documents"
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
+msgid  "Personal Correspondence and Documents"
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
+msgid  "Forms and Contracts"
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
+msgid  "Finances"
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
+msgid  "Education"
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
+msgid  "Presentation Backgrounds"
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
+msgid  "Presentations"
+msgstr ""
+
+#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
+msgid  "Miscellaneous"
+msgstr ""
+
+#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
+msgid  "The templates are being initialized for first-time usage."
+msgstr ""
+
+#: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
+msgid  "Templates"
+msgstr ""
+
+#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
+msgid  "New template"
+msgstr ""
+
+#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FIXEDLINE.TEXT
+msgid  "Templates"
+msgstr ""
+
+#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
+msgid  "~Categories"
+msgstr ""
+
+#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
+msgid  "~Templates"
+msgstr ""
+
+#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
+msgid  "~Edit"
+msgstr ""
+
+#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
+msgid  "~Organizer..."
+msgstr ""
+
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr ""
+
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr ""
+
+#: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr ""
+
+#: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr ""
+
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr ""
+
+#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr ""
+
+#: doc/doc.src#STR_STYLES.STRING.TEXT
+msgid  "Styles"
+msgstr ""
+
+#: doc/doc.src#STR_MACROS.STRING.TEXT
+msgid  "Macros"
+msgstr ""
+
+#: doc/doc.src#STR_CONFIG.STRING.TEXT
+msgid  "Configuration"
+msgstr ""
+
+#: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
+msgid  "Styles in "
+msgstr ""
+
+#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
+msgid  "Printing Styles"
+msgstr ""
+
+#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
+msgid  "The print job could not be started."
+msgstr ""
+
+#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
+msgid  "Copy"
+msgstr ""
+
+#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
+msgid  "The template could not be opened."
+msgstr ""
+
+#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
+msgid  "Document already open for editing."
+msgstr ""
+
+#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
+msgid  "Error recording document "
+msgstr ""
+
+#: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
+msgid  "Templates"
+msgstr ""
+
+#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr ""
+
+#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
+msgid  "The template \"$1\" can not be deleted."
+msgstr ""
+
+#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
+msgid  "Error moving template \"$1\"."
+msgstr ""
+
+#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
+msgid  "The update could not be saved."
+msgstr ""
+
+#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
+msgid  "Error saving template "
+msgstr ""
+
+#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
+msgid  "Error renaming template."
+msgstr ""
+
+#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
+msgid  "Error renaming template category."
+msgstr ""
+
+#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a name."
+msgstr ""
+
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr ""
+
+#: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr ""
+
+#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Do you want to reset the default template?"
+msgstr ""
+
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr ""
+
+#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
+msgid  "Document info cannot be read."
+msgstr ""
+
+#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
+msgid  "The selected file has an incorrect format."
+msgstr ""
+
+#: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+
+#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
+msgid  "~Save"
+msgstr ""
+
+#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
+msgid  "~Update"
+msgstr ""
+
+#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
+msgid  "Save ~As..."
+msgstr ""
+
+#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
+msgid  "Save Copy ~as..."
+msgstr ""
+
+#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
+msgid  "~Close"
+msgstr ""
+
+#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
+msgid  "~Close & Return to "
+msgstr ""
+
+#: doc/doc.src#STR_WIZARD.STRING.TEXT
+msgid  " AutoPilot"
+msgstr ""
+
+#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
+msgid  "Configurations"
+msgstr ""
+
+#: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
+msgid  "%PRODUCTNAME Basic libraries"
+msgstr ""
+
+#: doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.STRING.TEXT
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr ""
+
+#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
+msgid  "Loading Document"
+msgstr ""
+
+#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
+msgid  "Connection to: $(HOST). Waiting for response..."
+msgstr ""
+
+#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
+msgid  "Opening $(TARGET) at $(HOST)"
+msgstr ""
+
+#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
+msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr ""
+
+#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
+msgid  "Disconnected"
+msgstr ""
+
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr ""
+
+#: doc/doc.src#STR_EDIT.STRING.TEXT
+msgid  "Edit"
+msgstr ""
+
+#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
+msgid  "%PRODUCTNAME Documents"
+msgstr ""
+
+#: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
+msgid  "Propert~ies..."
+msgstr ""
+
+#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
+msgid  "HTML (FrameSet)"
+msgstr ""
+
+#: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
+msgid  "%PRODUCTNAME Frame Document"
+msgstr ""
+
+#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr ""
+
+#: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr ""
+
+#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
+msgid  "Automatically saved version"
+msgstr ""
+
+#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
+msgid  "Text Document"
+msgstr ""
+
+#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
+msgid  "HTML Document"
+msgstr ""
+
+#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
+msgid  "Master Document"
+msgstr ""
+
+#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
+msgid  "Spreadsheet"
+msgstr ""
+
+#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
+msgid  "Presentation"
+msgstr ""
+
+#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
+msgid  "Drawing"
+msgstr ""
+
+#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
+msgid  "Message"
+msgstr ""
+
+#: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
+msgid  "~Discard"
+msgstr ""
+
+#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
+msgid  "Access to the current data medium not possible."
+msgstr ""
+
+#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
+msgid  "Insert the next data carrier and click OK."
+msgstr ""
+
+#: doc/doc.src#STR_OBJECT.STRING.TEXT
+msgid  "Object"
+msgstr ""
+
+#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
+msgid  "Run Macro"
+msgstr ""
+
+#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
+msgid  "This document contains macros. $(TEXT)"
+msgstr ""
+
+#: doc/doc.src#BTN_OK.STRING.TEXT
+msgid  "Run"
+msgstr ""
+
+#: doc/doc.src#BTN_CANCEL.STRING.TEXT
+msgid  "Do Not Run"
+msgstr ""
+
+#: doc/doc.src#FT_CANCEL.STRING.TEXT
+msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr ""
+
+#: doc/doc.src#FT_OK.STRING.TEXT
+msgid  "Do you want to allow these macros to be run?"
+msgstr ""
+
+#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
+msgid  "Export as PDF"
+msgstr ""
+
+#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
+msgid  "Export..."
+msgstr ""
+
+#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
+msgid  "Export"
+msgstr ""
+
+#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
+msgid  "Add this directory to the list of secure paths: "
+msgstr ""
+
+#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
+msgid  "File format:"
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
+msgid  "This document contains:\n\n"
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
+msgid  "Recorded changes"
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
+msgid  "Notes"
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
+msgid  "Document versions"
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
+msgid  "Fields"
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
+msgid  "Linked data..."
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
+msgid  "Do you want to continue saving the document?"
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
+msgid  "Do you want to continue printing the document?"
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
+msgid  "Do you want to continue signing the document?"
+msgstr ""
+
+#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
+msgid  "Do you want to continue creating a PDF file?"
+msgstr ""
+
+#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
+msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr ""
+
+#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
+msgid  "Some template files are protected and can not be deleted."
+msgstr ""
+
+#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
+msgid  "Info %1"
+msgstr ""
+
+#: doc/doc.src#STR_SHARED.STRING.TEXT
+msgid  " (shared)"
+msgstr ""
+
+#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
+msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr ""
+
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr ""
+
+#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
+msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgstr ""
+
+#: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
+msgid  "~Update Styles"
+msgstr ""
+
+#: doc/doc.src#STR_QRYTEMPL_KEEP_BTN.STRING.TEXT
+msgid  "~Keep Old Styles"
+msgstr ""
+
+#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
+msgid  "Template Management"
+msgstr ""
+
+#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
 msgid  "Close"
 msgstr ""
 
-#: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
-msgid  "Automatic"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
+msgid  "~File..."
 msgstr ""
 
-#: source/appl/app.src#STR_STANDARD_SHORTCUT.String.Text
-msgid  "Standard"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
+msgid  "~Address Book..."
 msgstr ""
 
-#: source/appl/app.src#STR_BYTES.String.Text
-msgid  "Bytes"
-msgstr ""
-
-#: source/appl/app.src#STR_KB.String.Text
-msgid  "KB"
-msgstr ""
-
-#: source/appl/app.src#STR_MB.String.Text
-msgid  "MB"
-msgstr ""
-
-#: source/appl/app.src#STR_GB.String.Text
-msgid  "GB"
-msgstr ""
-
-#: source/appl/app.src#MSG_QUERY_LASTVERSION.QueryBox.Message
-msgid  "Cancel all changes?"
-msgstr ""
-
-#: source/appl/app.src#RID_DOCALREADYLOADED_DLG.InfoBox.Message
-msgid  "Document already open."
-msgstr "Το έγγραφο είναι ήδη ανοικτό."
-
-#: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
-msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr "Δεν ήταν δυνατή η εύρεση περιηγητή δικτύου στο σύστημα σας από το %PRODUCTNAME. Παρακαλώ ελέγξτε τις Προτιμήσεις στην επιφάνεια εργασίας σας ή εγκαταστήστε έναν περιηγητή δικτύου (για παράδειγμα, το Mozilla) στην προεπιλεγμένη τοποθεσία που απαιτείται κατά τη διάρκεια της εγκατάστασης του περιηγητή."
-
-#: source/appl/app.src#GID_INTERN.String.Text
-msgid  "Internal"
-msgstr "Εσωτερικά"
-
-#: source/appl/app.src#GID_APPLICATION.String.Text
-msgid  "Application"
-msgstr "Εφαρμογή"
-
-#: source/appl/app.src#GID_VIEW.String.Text
-msgid  "View"
-msgstr "Προβολή"
-
-#: source/appl/app.src#GID_DOCUMENT.String.Text
-msgid  "Documents"
-msgstr "Έγγραφα"
-
-#: source/appl/app.src#GID_EDIT.String.Text
-msgid  "Edit"
-msgstr "Επεξεργασία"
-
-#: source/appl/app.src#GID_MACRO.String.Text
-msgid  "BASIC"
-msgstr "BASIC"
-
-#: source/appl/app.src#GID_OPTIONS.String.Text
-msgid  "Options"
-msgstr "Επιλογές"
-
-#: source/appl/app.src#GID_MATH.String.Text
-msgid  "Math"
-msgstr "Math"
-
-#: source/appl/app.src#GID_NAVIGATOR.String.Text
-msgid  "Navigate"
-msgstr "Περιήγηση"
-
-#: source/appl/app.src#GID_INSERT.String.Text
-msgid  "Insert"
-msgstr "Εισαγωγή"
-
-#: source/appl/app.src#GID_FORMAT.String.Text
-msgid  "Format"
-msgstr "Μορφή"
-
-#: source/appl/app.src#GID_TEMPLATE.String.Text
+#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
 msgid  "Templates"
-msgstr "Πρότυπα"
-
-#: source/appl/app.src#GID_TEXT.String.Text
-msgid  "Text"
-msgstr "Κείμενο"
-
-#: source/appl/app.src#GID_FRAME.String.Text
-msgid  "Frame"
-msgstr "Πλαίσιο"
-
-#: source/appl/app.src#GID_GRAPHIC.String.Text
-msgid  "Graphic"
-msgstr "Γραφικό"
-
-#: source/appl/app.src#GID_TABLE.String.Text
-msgid  "Table"
-msgstr "Πίνακας"
-
-#: source/appl/app.src#GID_ENUMERATION.String.Text
-msgid  "Numbering"
-msgstr "Αρίθμηση"
-
-#: source/appl/app.src#GID_DATA.String.Text
-msgid  "Data"
-msgstr "Δεδομένα"
-
-#: source/appl/app.src#GID_SPECIAL.String.Text
-msgid  "Special Functions"
-msgstr "Ειδικές λειτουργίες"
-
-#: source/appl/app.src#GID_IMAGE.String.Text
-msgid  "Image"
-msgstr "Εικόνα"
-
-#: source/appl/app.src#GID_CHART.String.Text
-msgid  "Chart"
-msgstr "Διάγραμμα"
-
-#: source/appl/app.src#GID_EXPLORER.String.Text
-msgid  "Explorer"
-msgstr "Εξερευνητής"
-
-#: source/appl/app.src#GID_CONNECTOR.String.Text
-msgid  "Connector"
-msgstr "Γραμμή σύνδεσης"
-
-#: source/appl/app.src#GID_MODIFY.String.Text
-msgid  "Modify"
-msgstr "Τροποποίηση"
-
-#: source/appl/app.src#GID_DRAWING.String.Text
-msgid  "Drawing"
-msgstr "Σχεδίαση"
-
-#: source/appl/app.src#GID_CONTROLS.String.Text
-msgid  "Controls"
-msgstr "Στοιχεία ελέγχου"
-
-#: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
-msgid  "The application cannot be terminated at the moment.\\nPlease wait until all print jobs and/or\\nOLE actions have finished and close all dialogs."
 msgstr ""
 
-#: source/appl/app.src#STR_ISMODIFIED.String.Text
-msgid  "Do you want to save the changes to %1?"
-msgstr "Θέλετε να αποθηκευτούν οι αλλαγές στο %1;"
-
-#: source/appl/app.src#STR_QUITAPP.String.Text
-msgid  "E~xit"
-msgstr "Έ~ξοδος"
-
-#: source/appl/app.src#RID_STR_HELP.String.Text
-msgid  "Help"
-msgstr "Βοήθεια"
-
-#: source/appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.String.Text
-msgid  "No automatic start at 'XX'"
-msgstr "Όχι αυτόματη εκκίνηση στο 'XX'"
-
-#: source/appl/app.src#RID_HELPBAR.String.Text
-msgid  "Help Bar"
-msgstr "Γραμμή βοήθειας"
-
-#: source/appl/app.src#RID_STR_HLPFILENOTEXIST.String.Text
-msgid  "The help file for this topic is not installed."
-msgstr "Δεν έχει γίνει εγκατάσταση της βοήθειας για αυτό το θέμα."
-
-#: source/appl/app.src#RID_ENVTOOLBOX.String.Text
-msgid  "Function Bar"
-msgstr "Γραμμή λειτουργιών"
-
-#: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
-msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
-msgstr "Παρουσιάστηκε σφάλμα στην ειδική διαμόρφωση.\nΠαρακαλώ απευθυνθείτε στον διαχειριστή του δικτύου."
-
-#: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
-msgid  "Exit Quickstarter"
-msgstr "Έξοδος από την γρήγορη εκκίνηση"
-
-#: source/appl/app.src#STR_QUICKSTART_TIP.String.Text
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "Γρήγορη εκκίνηση του %PRODUCTNAME %PRODUCTVERSION"
-
-#: source/appl/app.src#STR_QUICKSTART_FILEOPEN.String.Text
-msgid  "Open Document..."
-msgstr "Αποθήκευση εγγράφου"
-
-#: source/appl/app.src#STR_QUICKSTART_FROMTEMPLATE.String.Text
-msgid  "From Template..."
-msgstr "Από πρότυπο..."
-
-#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH.String.Text
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "Φόρτωση του %PRODUCTNAME κατά την εκκίνηση του συστήματος"
-
-#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
-msgid  "Disable Quickstarter"
-msgstr "Έξοδος από την γρήγορη εκκίνηση"
-
-#: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: source/appl/app.src#STR_QUICKSTART_FILE.String.Text
-msgid  "File"
-msgstr "Αρχείο"
-
-#: source/appl/app.src#STR_QUICKSTART_STARTCENTER.String.Text
-msgid  "Startcenter"
-msgstr "Startcenter"
-
-#: source/appl/app.src#STR_QUICKSTART_RECENTDOC.String.Text
-msgid  "Recent Documents"
-msgstr "Πρόσφατα έγγραφα"
-
-#: source/appl/app.src#STR_QUERY_UPDATE_LINKS.String.Text
-msgid  "Update all links?"
-msgstr "Ενημέρωση όλων των συνδέσεων;"
-
-#: source/appl/app.src#STR_DDE_ERROR.String.Text
-msgid  "DDE link to % for % area % are not available."
-msgstr "Δεν είναι δυνατόν να δημιουργηθεί η σύνδεση DDE προς % για % περιοχή %."
-
-#: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr "Ο δεσμός πρόκειται να ανοίξει το \"%s\". Θέλετε να συνεχίσετε;"
-
-#: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
-msgid  "For security reasons, the hyperlink cannot be executed.\\nThe stated address will not be opened."
+#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+msgid  "Documents"
 msgstr ""
 
-#: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
-msgid  "Security Warning"
-msgstr "Προειδοποίηση ασφαλείας"
-
-#: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
-msgid  "Saving will remove all existing signatures.\\nDo you want to continue saving the document?"
+#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
+msgid  "Templates"
 msgstr ""
 
-#: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed.\\nDo you want to save the document?"
+#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
+msgid  "Documents"
 msgstr ""
 
-#: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
-msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr "Το έγγραφο πρέπει να αποθηκευτεί σε μορφή αρχείου OpenDocument  πριν να υπογραφεί ψηφιακά."
-
-#: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
-msgid  " (Signed)"
-msgstr "(Υπογεγραμμένο) "
-
-#: source/appl/app.src#STR_STANDARD.String.Text
-msgid  "Standard"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
+msgid  "Commands"
 msgstr ""
 
-#: source/appl/app.src#RID_SVXSTR_FILELINK.String.Text
-msgid  "Document"
-msgstr "Έγγραφο"
-
-#: source/appl/app.src#STR_NONE.String.Text
-msgid  "- None -"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
+msgid  "~New"
 msgstr ""
 
-#: source/appl/app.src#RID_SVXSTR_GRAFIKLINK.String.Text
-msgid  "Graphic"
-msgstr "Γραφικό"
-
-#: source/appl/app.src#STR_SFX_FILTERNAME_ALL.String.Text
-msgid  "All files (*.*)"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
+msgid  "~Delete"
 msgstr ""
 
-#: source/appl/app.src#RID_SVXSTR_EDITGRFLINK.String.Text
-msgid  "Link graphics"
-msgstr "Σύνδεση γραφικών"
-
-#: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
-msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
+msgid  "~Edit"
 msgstr ""
 
-#: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
-msgid  "Graphics file cannot be opened"
-msgstr "Δεν είναι δυνατόν το άνοιγμα του αρχείου γραφικών"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
+msgid  "Import Template..."
+msgstr ""
 
-#: source/appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.String.Text
-msgid  "Graphics file cannot be read"
-msgstr "Αδυναμία ανάγνωσης του αρχείου γραφικών"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
+msgid  "Export Template..."
+msgstr ""
 
-#: source/appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.String.Text
-msgid  "Unknown graphics format"
-msgstr "Άγνωστος τύπος γραφικών"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
+msgid  "~Print"
+msgstr ""
 
-#: source/appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.String.Text
-msgid  "This version of the graphics file is not supported"
-msgstr "Αυτή η έκδοση του αρχείου γραφικών δεν υποστηρίζεται"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
+msgid  "Printer Settings..."
+msgstr ""
 
-#: source/appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.String.Text
-msgid  "Graphics filter not found"
-msgstr "Δεν βρέθηκε το φίλτρο γραφικών"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MENUITEM.TEXT
+msgid  "Update"
+msgstr ""
 
-#: source/appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.String.Text
-msgid  "Not enough memory to insert graphic"
-msgstr "Δεν υπάρχει αρκετή μνήμη για την εισαγωγή γραφικού"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MENUITEM.TEXT
+msgid  "Set As Default Template"
+msgstr ""
 
-#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PageItem.Text
-msgid  "Contents"
-msgstr "Περιεχόμενα"
+#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MENUITEM.TEXT
+msgid  "Reset Default Template"
+msgstr ""
 
-#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PageItem.Text
-msgid  "Index"
-msgstr "Ευρετήριο"
+#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
+msgid  "New"
+msgstr ""
 
-#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PageItem.Text
-msgid  "Find"
-msgstr "Εύρεση"
+#: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
+msgid  "~Categories"
+msgstr ""
 
-#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PageItem.Text
-msgid  "Bookmarks"
-msgstr "Σελιδοδείκτες"
+#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
+msgid  "T~emplates"
+msgstr ""
 
-#: source/appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FixedText.Text
-msgid  "~Search term"
-msgstr "Όρος αναζήτη~σης"
+#: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
+msgid  "~More"
+msgstr ""
 
-#: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
-#, fuzzy
-msgid  "~Display"
-msgstr "Εμ~φάνιση"
+#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
+msgid  "Pre~view"
+msgstr ""
 
-#: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
-#, fuzzy
-msgid  "S~earch term"
-msgstr "Όρος αναζήτη~σης"
+#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
+msgid  "Description"
+msgstr ""
 
-#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PushButton.Text
-#, fuzzy
-msgid  "~Find"
-msgstr "Εύ~ρεση"
+#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
+msgid  "Te~xt"
+msgstr ""
 
-#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CheckBox.Text
-#, fuzzy
-msgid  "~Complete words only"
-msgstr "~Μόνο ολόκληρες λέξεις"
+#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
+msgid  "~Frame"
+msgstr ""
 
-#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CheckBox.Text
-#, fuzzy
-msgid  "Find in ~headings only"
-msgstr "Εύρεση μόνο στις ~επικεφαλίδες"
+#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
+msgid  "~Pages"
+msgstr ""
 
-#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
-#, fuzzy
-msgid  "~Display"
-msgstr "Εμ~φάνιση."
+#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
+msgid  "N~umbering"
+msgstr ""
 
-#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
-#, fuzzy
-msgid  "~Bookmarks"
-msgstr "~Σελιδοδείκτες"
+#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
+msgid  "~Overwrite"
+msgstr ""
 
-#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PushButton.Text
-#, fuzzy
-msgid  "~Display"
-msgstr "Εμ~φάνιση"
+#: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
+msgid  "From File..."
+msgstr ""
 
-#: source/appl/newhelp.src#STR_HELP_WINDOW_TITLE.String.Text
-#, fuzzy
-msgid  "%PRODUCTNAME Help"
-msgstr "Βοήθεια του %PRODUCTNAME"
+#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
+msgid  "Load Styles"
+msgstr ""
 
-#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.String.Text
-#, fuzzy
-msgid  "Show Navigation Pane"
-msgstr "Εμφάνιση παραθύρου περιήγησης"
+#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
+msgid  "~Title"
+msgstr ""
 
-#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.String.Text
-#, fuzzy
-msgid  "Hide Navigation Pane"
-msgstr "Απόκρυψη παραθύρου περιήγησης"
+#: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
+msgid  "Subject"
+msgstr ""
 
-#: source/appl/newhelp.src#STR_HELP_BUTTON_START.String.Text
-#, fuzzy
-msgid  "First Page"
-msgstr "Πρώτη σελίδα"
+#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
+msgid  "~Key words"
+msgstr ""
 
-#: source/appl/newhelp.src#STR_HELP_BUTTON_PREV.String.Text
-#, fuzzy
-msgid  "Previous Page"
-msgstr "Προηγούμενη σελίδα"
+#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
+msgid  "~Description"
+msgstr ""
 
-#: source/appl/newhelp.src#STR_HELP_BUTTON_NEXT.String.Text
-#, fuzzy
-msgid  "Next Page"
-msgstr "Επόμενη σελίδα"
+#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
+msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
+msgstr ""
 
-#: source/appl/newhelp.src#STR_HELP_BUTTON_PRINT.String.Text
-#, fuzzy
-msgid  "Print..."
-msgstr "Εκτύπωση..."
+#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
+msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
+msgstr ""
 
-#: source/appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.String.Text
-#, fuzzy
-msgid  "Add to Bookmarks..."
-msgstr "Προσθήκη στους σελιδοδείκτες..."
-
-#: source/appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.String.Text
-#, fuzzy
-msgid  "Find on this Page..."
-msgstr "Εύρεση σε αυτήν τη σελίδα..."
-
-#: source/appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.String.Text
-#, fuzzy
-msgid  "HTML Source"
-msgstr "Κώδικας HTML"
-
-#: source/appl/newhelp.src#STR_HELP_FIRST_MESSAGE.String.Text
-#, fuzzy
-msgid  "The Help is being started..."
-msgstr "Γίνεται εκκίνηση της Βοήθειας..."
-
-#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.String.Text
-#, fuzzy
-msgid  "Select Text"
-msgstr "Επιλογή Κειμένου"
-
-#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.String.Text
-#, fuzzy
-msgid  "~Copy"
-msgstr "Αντι~γραφή"
-
-#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.ModalDialog.Text
-#, fuzzy
-msgid  "Add to Bookmarks"
-msgstr "Προσθήκη στους σελιδοδείκτες"
-
-#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FixedText.Text
-#, fuzzy
-msgid  "Bookmark:"
-msgstr "Σελιδοδείκτης:"
-
-#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.String.Text
-#, fuzzy
-msgid  "Rename Bookmark"
-msgstr "Μετονομασία σελιδοδείκτη"
-
-#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MenuItem.Text
-#, fuzzy
-msgid  "Display"
-msgstr "Εμφάνιση..."
-
-#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MenuItem.Text
-#, fuzzy
-msgid  "Rename..."
-msgstr "Μετονομασία..."
-
-#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MenuItem.Text
-#, fuzzy
-msgid  "Delete"
-msgstr "Διαγραφή"
-
-#: source/appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.InfoBox.Message
-#, fuzzy
-msgid  "No topics found."
-msgstr "Δεν βρέθηκαν θέματα"
-
-#: source/appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.InfoBox.Message
-#, fuzzy
-msgid  "The text you entered was not found."
-msgstr "Το κείμενο που εισαγάγατε δεν βρέθηκε."
-
-#: source/appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.String.Text
-#, fuzzy
-msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr "~Εμφάνιση βοήθειας %PRODUCTNAME %MODULENAME Help στην εκκίνηση"
-
-#: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
-msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
-msgstr "Το επιλεγμένο φίλτρο $(FILTER) δεν έχει εγκατασταθεί.\nΘέλετε να εγκατασταθεί τώρα;"
-
-#: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
-msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
-msgstr "Το επιλεγμένο φίλτρο $(FILTER) δεν περιέχεται στην έκδοσή σας.\nΠληροφορίες για δυνατότητες παραγγελίας θα βρείτε στην αρχική μας σελίδα."
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
 msgid  "Reduce print data"
-msgstr "Μείωση δεδομένων εκτύπωσης"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FixedText.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
 msgid  "Settings for"
-msgstr "Ρυθμίσεις για"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RadioButton.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
 msgid  "~Printer"
-msgstr "~Εκτυπωτής"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RadioButton.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
 msgid  "Print to ~file"
-msgstr "Εκτύπωσ~η σε αρχείο"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CheckBox.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
 msgid  "~Reduce transparency"
-msgstr "~Σμίκρυνση διαφάνειας"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RadioButton.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
 msgid  "Auto~matically"
-msgstr "Αυτό~ματα"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RadioButton.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
 msgid  "~No transparency"
-msgstr "~Χωρίς διαφάνεια"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CheckBox.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
 msgid  "Reduce ~gradients"
-msgstr "Μείωση ~διαβαθμίσεων"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RadioButton.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 msgid  "Gradient ~stripes"
-msgstr "Λ~ωρίδες με διαβαθμίσεις"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RadioButton.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
 msgid  "Intermediate ~color"
-msgstr "Ενδιάμεσο χ~ρώμα"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CheckBox.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
 msgid  "Reduce ~bitmaps"
-msgstr "Μείωση ~bitmap"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RadioButton.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
 msgid  "~High print quality"
-msgstr "~Υψηλή ποιότητα εκτύπωσης"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RadioButton.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
 msgid  "N~ormal print quality"
-msgstr "Κα~νονική ποιότητα εκτύπωσης"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RadioButton.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 msgid  "Reso~lution"
-msgstr "Ανά~λυση"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "72 DPI"
-msgstr "72 DPI"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "96 DPI"
-msgstr "96 DPI"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "150 DPI (Fax)"
-msgstr "150 DPI (Φαξ)"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "200 DPI (default)"
-msgstr "200 DPI (προεπιλογή)"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "300 DPI"
-msgstr "300 dpi"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "600 DPI"
-msgstr "600 dpi"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CheckBox.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
 msgid  "Include transparent ob~jects"
-msgstr "Προσθήκη διαφανών αντι~κειμένων"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CheckBox.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 msgid  "Con~vert colors to grayscale"
-msgstr "Μετατροπή χρωμάτων σε διαβα~Θ. γκρι"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FixedLine.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
 msgid  "Printer warnings"
-msgstr "Προειδοποιήσεις εκτυπωτή"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CheckBox.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
 msgid  "P~aper size"
-msgstr "Μέγεθος χ~αρτιού"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CheckBox.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 msgid  "Pap~er orientation"
-msgstr "Προσανατολισμός χαρ~τιού"
+msgstr ""
 
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CheckBox.Text
-#, fuzzy
+#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
 msgid  "~Transparency"
-msgstr "Δια~φάνεια"
+msgstr ""
 
-#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.ModalDialog.Text
-#, fuzzy
+#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
 msgid  "Warning"
-msgstr "Προειδοποίηση"
+msgstr ""
 
-#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
-#, fuzzy
-msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
-msgstr "Το έγγραφό σας περιέχει διαφανή αντικείμενα.\nΑυτό μπορεί να έχει ως αποτέλεσμα να απαιτείται περισσότερος χρόνος για εκτύπωση \nσε ορισμένους εκτυπωτές. Θέλετε να μειωθεί το χαρακτηριστικό της \nδιαφάνειας;"
+#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
+msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
+msgstr ""
 
-#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
-#, fuzzy
+#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
 msgid  "~Yes"
-msgstr "~Ναι"
+msgstr ""
 
-#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PushButton.Text
-#, fuzzy
+#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
 msgid  "~No"
-msgstr "Ό~χι"
+msgstr ""
 
-#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CancelButton.Text
-#, fuzzy
+#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
 msgid  "~Cancel"
-msgstr "Α~κύρωση"
+msgstr ""
 
-#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
-#, fuzzy
+#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
 msgid  "~Do not show warning again"
-msgstr "~Να μην εμφανιστεί ξανά αυτή η προειδοποίηση"
+msgstr ""
 
-#: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
-#, fuzzy
+#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
 msgid  "Style Catalog"
-msgstr "Κατάλογος προτύπων"
+msgstr ""
 
-#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PushButton.Text
-#, fuzzy
+#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
 msgid  "~Organizer..."
-msgstr "~Διαχείριση..."
+msgstr ""
 
-#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PushButton.Text
-#, fuzzy
+#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
 msgid  "~Delete..."
-msgstr "Δια~γραφή..."
+msgstr ""
 
-#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PushButton.Text
-#, fuzzy
+#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
 msgid  "~Modify..."
-msgstr "Τρο~ποποίηση..."
+msgstr ""
 
-#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PushButton.Text
-#, fuzzy
+#: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 msgid  "~New..."
-msgstr "~Δημιουργία..."
+msgstr ""
 
-#: source/dialog/templdlg.src#STR_STYLE_ELEMTLIST.String.Text
+#: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
 msgid  "Style List"
 msgstr ""
 
-#: source/dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.String.Text
-#, fuzzy
+#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
 msgid  "Hierarchical"
-msgstr "Ιεραρχικά"
+msgstr ""
 
-#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.DockingWindow.Text
-#, fuzzy
+#: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 msgid  "Styles and Formatting"
-msgstr "Πρότυπα και μορφοποίηση"
+msgstr ""
 
-#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.ToolBoxItem.Text
-#, fuzzy
+#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
 msgid  "Fill Format Mode"
-msgstr "Κατάσταση γεμίσματος"
+msgstr ""
 
-#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.ToolBoxItem.Text
-#, fuzzy
+#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
 msgid  "New Style from Selection"
-msgstr "Νέο πρότυπο από επιλογή"
+msgstr ""
 
-#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.ToolBoxItem.Text
-#, fuzzy
+#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
 msgid  "Update Style"
-msgstr "Ενημέρωση προτύπου"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FixedLine.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
-msgstr "Κωδικός κρυπτογράφησης αρχείου"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FixedText.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
 msgid  "~Enter password to open"
-msgstr "Ε~ισάγετε κωδικό για άνοιγμα"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FixedText.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
 msgid  "~Reenter password to open"
-msgstr "Εισάγετε ξανά κωδικό για άνοιγμα"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FixedLine.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FIXEDLINE.TEXT
 msgid  "File sharing password"
-msgstr "Κωδικός κοινόχρηστου αρχείου"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FixedText.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
 msgid  "Enter password to modify"
-msgstr "Εισάγετε κωδικό για επεξεργασία"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FixedText.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
 msgid  "Reenter password to modify"
-msgstr "Εισάγετε ξανά κωδικό για επεξεργασία"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FixedLine.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FIXEDLINE.TEXT
 msgid  "File sharing options"
-msgstr "Επιλογές κοινής χρήσης αρχείου"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CheckBox.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CHECKBOX.TEXT
 msgid  "~Open file read-only"
-msgstr "Άν~οιγμα αρχείου ως μόνο για ανάγνωση"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CheckBox.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CHECKBOX.TEXT
 msgid  "Record ~changes"
-msgstr "Καταγρα~φή αλλαγών"
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.String.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.STRING.TEXT
 msgid  "~Protect..."
-msgstr "~Προστασία..."
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.String.Text
-#, fuzzy
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.STRING.TEXT
 msgid  "~Unprotect..."
-msgstr "Ά~ρση προστασίας..."
+msgstr ""
 
-#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
-#, fuzzy
-msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
-msgstr "Αυτή η ενέργεια θα τερματίσει τη λειτουργία καταγραφής.\nΌλες οι πληροφορίες για τις αλλαγές θα χαθούν.\n\nνα γίνει έξοδος από τη λειτουργία καταγραφής?\n\n"
+#: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.STRING.TEXT
+msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgstr ""
 
-#: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
-#, fuzzy
+#: dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.STRING.TEXT
 msgid  "Protect Records"
-msgstr "Προστασία εγγραφών"
+msgstr ""
 
-#: source/dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.String.Text
-#, fuzzy
+#: dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.STRING.TEXT
 msgid  "Unprotect Records"
-msgstr "Άρση προστασίας εγγραφών"
+msgstr ""
 
-#: source/dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.String.Text
-#, fuzzy
+#: dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.STRING.TEXT
 msgid  "Incorrect password"
-msgstr "Μη έγκυρος κωδικός"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FixedLine.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
 msgid  "New versions"
-msgstr "Νέες εκδόσεις"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PushButton.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
 msgid  "Save ~New Version"
-msgstr "Αποθήκευση ~νέας έκδοσης"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CheckBox.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
 msgid  "~Always save a version on closing"
-msgstr "Κατά το κλείσιμο να αποθηκεύεται ~πάντα η έκδοση"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FixedLine.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
 msgid  "Existing versions"
-msgstr "Υπάρχουσες εκδόσεις"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FixedText.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
 msgid  "Date and time"
-msgstr "Ημερομηνία και ώρα"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FixedText.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by"
-msgstr "αποθήκευση από"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FixedText.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
 msgid  "Comments"
-msgstr "Σχόλια"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CancelButton.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
 msgid  "Close"
-msgstr "Κλείσιμο"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PushButton.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
 msgid  "Open"
-msgstr "Άνοιγμα"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PushButton.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
 msgid  "~Show..."
-msgstr "Προ~βολή..."
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PushButton.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
 msgid  "~Delete"
-msgstr "~Διαγραφή"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PushButton.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
 msgid  "Compare"
-msgstr "Σύγκριση"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_VERSIONS.HelpButton.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
 msgid  "Versions of"
-msgstr "Εκδόσεις σε"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FixedText.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
 msgid  "Date and time : "
-msgstr "Ημερομηνία και ώρα : "
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FixedText.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by "
-msgstr "αποθήκευση από "
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PushButton.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "~Close"
-msgstr "~Κλείσιμο"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_COMMENTS.HelpButton.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
 msgid  "Insert Version Comment"
-msgstr "Εισαγωγή σχολίου έκδοσης"
+msgstr ""
 
-#: source/dialog/versdlg.src#DLG_COMMENTS.String.Text
-#, fuzzy
+#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
 msgid  "Version comment"
-msgstr "Σχόλιο έκδοσης"
+msgstr ""
 
-#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
 msgid  "~Name"
-msgstr "Ό~νομα"
+msgstr ""
 
-#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
 msgid  "~AutoUpdate"
-msgstr "~Αυτόματη ενημέρωση"
+msgstr ""
 
-#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
 msgid  "Ne~xt Style"
-msgstr "Επόμενο πρότ~υπο"
+msgstr ""
 
-#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
+#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 msgid  "Linked with"
-msgstr "Σύνδεση με"
+msgstr ""
 
-#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FIXEDTEXT.TEXT
 msgid  "~Category"
-msgstr "~Κατηγορία"
+msgstr ""
 
-#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
+#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
 msgid  "Contains"
-msgstr "Περιέχει"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
 msgid  "Current version"
-msgstr "Τρέχουσα έκδοση"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
 msgid  "Export"
-msgstr "Εξαγωγή"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
 msgid  "Insert"
-msgstr "Εισαγωγή"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 msgid  "~Insert"
-msgstr "~Εισαγωγή"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
 msgid  "<All formats>"
-msgstr "<Όλες οι μορφές>"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
 msgid  "~Automatic file name extension"
-msgstr "~Αυτόματη επέκταση ονόματος αρχείων"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
 msgid  "~Selection"
-msgstr "~Επιλογή"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
+#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
 msgid  "~Link"
-msgstr "~Σύνδεση"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
 msgid  "Pr~eview"
-msgstr "Πρ~οεπισκόπηση"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
 msgid  "~Read-only"
-msgstr "Μό~νο για ανάγνωση"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
 msgid  "Save with ~password"
-msgstr "Αποθήκευση με ~κωδικό πρόσβασης"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
 msgid  "Edit ~filter settings"
-msgstr "Επεξεργασία ρυθμίσεων ~φίλτρου"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
 msgid  "~Play"
-msgstr "~Αναπαραγωγή"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
 msgid  "Sto~p"
-msgstr "Διακο~πή"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
 msgid  "~Open"
-msgstr "Ά~νοιγμα"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
 msgid  "~Save"
-msgstr "Απο~θήκευση"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
 msgid  "Style:"
-msgstr "Στυλ:"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
 msgid  "~Templates:"
-msgstr "~Πρότυπα:"
+msgstr ""
 
-#: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
 msgid  "~Version:"
-msgstr "Έ~κδοση:"
+msgstr ""
 
-#: source/dialog/srchdlg.src#RID_DLG_SEARCH.ModelessDialog.Text
-#, fuzzy
+#: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 msgid  "Find on this Page"
-msgstr "Εύρεση σε αυτήν τη σελίδα"
+msgstr ""
 
-#: source/dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FixedText.Text
-#, fuzzy
+#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
 msgid  "~Search for"
-msgstr "Ανα~ζήτηση για"
+msgstr ""
 
-#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CheckBox.Text
-#, fuzzy
+#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
 msgid  "~Whole words only"
-msgstr "Μόνο ο~λόκληρες λέξεις"
+msgstr ""
 
-#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CheckBox.Text
-#, fuzzy
+#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
 msgid  "~Match case"
-msgstr "~Ταίριασμα πεζών/κεφαλαίων"
+msgstr ""
 
-#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CheckBox.Text
-#, fuzzy
+#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 msgid  "Wrap ~around"
-msgstr "Αναδίπλωση ~γύρω"
+msgstr ""
 
-#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CheckBox.Text
-#, fuzzy
+#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
 msgid  "~Backwards"
-msgstr "~Προς τα πίσω"
+msgstr ""
 
-#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PushButton.Text
-#, fuzzy
+#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 msgid  "~Find"
-msgstr "Εύρε~ση"
+msgstr ""
 
-#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CancelButton.Text
-#, fuzzy
+#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
 msgid  "~Close"
-msgstr "~Κλείσιμο"
+msgstr ""
 
-#: source/dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.String.Text
-#, fuzzy
+#: dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.STRING.TEXT
 msgid  "Wrap ~around"
-msgstr "Αναδίπλωση ~γύρω"
+msgstr ""
 
-#: source/dialog/passwd.src#DLG_PASSWD.ModalDialog.Text
-#, fuzzy
+#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
 msgid  "Enter Password"
-msgstr "Εισαγωγή κωδικού πρόσβασης"
+msgstr ""
 
-#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
 msgid  "~User"
-msgstr "~Χρήστης"
+msgstr ""
 
-#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr "Κ~ωδικός πρόσβασης"
+msgstr ""
 
-#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
 msgid  "~Confirm"
-msgstr "Επι~βεβαίωση"
+msgstr ""
 
-#: source/dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FixedLine.Text
+#: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 msgid  "Password"
-msgstr "Κωδικός πρόσβασης"
+msgstr ""
 
-#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FixedText.Text
-#, fuzzy
+#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
 msgid  "P~assword"
-msgstr "Κωδικός πρόσβασης"
+msgstr ""
 
-#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FixedText.Text
-#, fuzzy
+#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
 msgid  "Confir~m"
-msgstr "Επι~βεβαίωση"
+msgstr ""
 
-#: source/dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.String.Text
-#, fuzzy
+#: dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.STRING.TEXT
 msgid  "Password"
-msgstr "Κωδικός πρόσβασης"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+#: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
 msgid  "%PRODUCTNAME document"
-msgstr "Έγγραφο %PRODUCTNAME"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
 msgid  "~Title"
-msgstr "~Τίτλος"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
 msgid  "~Subject"
-msgstr "Θέ~μα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
 msgid  "~Keywords"
-msgstr "Λέξεις-κλειδιά"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
 msgid  "~Comments"
-msgstr "Σ~χόλια"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
 msgid  "Type:"
-msgstr "Τύπος:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
 msgid  "~Read-only"
-msgstr "Μό~νο για ανάγνωση"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
 msgid  "Location:"
-msgstr "Τοποθεσία:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
 msgid  "Size:"
-msgstr "Μέγεθος:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
 msgid  "Created:"
-msgstr "Δημιουργήθηκε τη:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
 msgid  "Modified:"
-msgstr "Τροποποιήθηκε τη:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 msgid  "Digitally signed:"
-msgstr "Με ψηφιακή υπογραφή:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
 msgid  "Digital Signature..."
-msgstr "Ψηφιακή υπογραφή..."
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
 msgid  "Multiply signed document"
-msgstr "Πολλαπλασιασμός υπογεγραμμένου εγγράφου"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
 msgid  "Last printed:"
-msgstr "Εκτυπώθηκε τη:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
 msgid  "Total editing time:"
-msgstr "Συν. χρόνος επεξεργασίας:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
 msgid  "Revision number:"
-msgstr "Αριθμός αναθεώρησης:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 msgid  "Reset"
-msgstr "Επαναφορά"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CHECKBOX.TEXT
 msgid  "~Apply user data"
-msgstr "Χρήση ~προσωπικών δεδομένων"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
 msgid  "Template:"
-msgstr "Πρότυπο:"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
 msgid  "unknown"
-msgstr "άγνωστο"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.String.Text
+#: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
 msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
 msgid  "~Info fields..."
-msgstr "Πεδία πλη~ροφοριών..."
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
 msgid  "Do not refresh automatically"
-msgstr "Όχι αυτόματη ανανέωση"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 msgid  "Refresh this document"
-msgstr "Ανανέωση αυτού του εγγράφου"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
 msgid  "every"
-msgstr "κάθε"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 msgid  "seconds"
-msgstr "δευτερόλεπτα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
 msgid  "Redirect from this document"
-msgstr "Αναδρομολόγηση από αυτό το έγγραφο"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
 msgid  "after"
-msgstr "μετά από"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FIXEDTEXT.TEXT
 msgid  "seconds"
-msgstr "δευτερόλεπτα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
 msgid  "to URL"
-msgstr "στο URL"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 msgid  "to frame"
-msgstr "στο πλαίσιο"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+#: dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.STRING.TEXT
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FIXEDTEXT.TEXT
 msgid  "~Properties"
-msgstr "~Ιδιότητες"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
 msgid  "Name"
-msgstr "Όνομα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
 msgid  "Type"
-msgstr "Τύπος"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
 msgid  "Value"
-msgstr "Ποσό"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr "~Προσθήκη"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
 msgid  "Property Name"
-msgstr "Όνομα Ιδιότητας"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
 msgid  "Checked by"
-msgstr "Ελέγχθηκε από"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
 msgid  "Client"
-msgstr "Πελάτης"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
 msgid  "Date completed"
-msgstr "Ημερομηνία ολοκλήρωσης"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
 msgid  "Department"
-msgstr "Τμήμα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
 msgid  "Destinations"
-msgstr "Προορισμοί"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
 msgid  "Disposition"
-msgstr "Διάθεση"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
 msgid  "Division"
-msgstr "Διαίρεση"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
 msgid  "Document number"
-msgstr "Αριθμός εγγράφου"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
 msgid  "Editor"
-msgstr "Συντάκτης"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
 msgid  "E-Mail"
-msgstr "Ηλεκτρονικό ταχυδρομείο"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
 msgid  "Forward to"
-msgstr "Προώθηση σε"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
 msgid  "Group"
-msgstr "Ομάδα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
 msgid  "Info"
-msgstr "Πληροφορίες"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
 msgid  "Language"
-msgstr "Γλώσσα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
 msgid  "Mailstop"
-msgstr "Mailstop"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
 msgid  "Matter"
-msgstr "Θέμα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
 msgid  "Office"
-msgstr "Γραφείο"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
 msgid  "Owner"
-msgstr "Ιδιοκτήτης"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
 msgid  "Project"
-msgstr "Εργασία"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
 msgid  "Publisher"
-msgstr "Συντάκτης"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
 msgid  "Purpose"
-msgstr "Σκοπός"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
 msgid  "Received from"
-msgstr "Λήφθηκε από"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
 msgid  "Recorded by"
-msgstr "Καταγράφηκε από"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
 msgid  "Recorded date"
-msgstr "Ημερομηνία καταγραφής"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
 msgid  "Reference"
-msgstr "Αναφορά"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
 msgid  "Source"
-msgstr "Πηγή"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
 msgid  "Status"
-msgstr "Κατάσταση"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
 msgid  "Telephone number"
-msgstr "Αριθμός τηλεφώνου"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
 msgid  "Typist"
-msgstr "Δακτυλογράφος"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
 msgid  "URL"
-msgstr "URL"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
 msgid  "Text"
-msgstr "Κείμενο"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 msgid  "DateTime"
-msgstr "Ημερομηνία ώρα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
 msgid  "Date"
-msgstr "Ημερομηνία"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 msgid  "Duration"
-msgstr "Διάρκεια"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
 msgid  "Number"
-msgstr "Αριθμός"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 msgid  "Yes or no"
-msgstr "Ναι ή όχι "
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.String.Text
+#: dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.STRING.TEXT
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
-msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
 msgid  "Yes"
-msgstr "Ναι"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
 msgid  "No"
-msgstr "Όχι"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Remove Property"
-msgstr "Αφαίρεση ιδιότητας"
-
-#: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
-msgid  "The value entered does not match the specified type.\\nThe value will be stored as text."
 msgstr ""
 
-#: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr ""
+
+#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
 msgid  "Properties of "
-msgstr "Ιδιότητες του "
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
 msgid  "General"
-msgstr "Γενικά"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
 msgid  "Description"
-msgstr "Περιγραφή"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
 msgid  "Custom Properties"
-msgstr "Προσαρμοσμένες ιδιότητες"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
 msgid  "Internet"
-msgstr "Διαδίκτυο"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
+#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
-msgstr "Ασφάλεια"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
 msgid  "Edit Duration"
-msgstr "Επεξεργασία διάρκειας"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FIXEDLINE.TEXT
 msgid  "Duration"
-msgstr "Διάρκεια"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
 msgid  "~Negative"
-msgstr "Αρ~νητική"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FIXEDTEXT.TEXT
 msgid  "~Years"
-msgstr "Έ~τη"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FIXEDTEXT.TEXT
 msgid  "~Months"
-msgstr "~Μήνες"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FIXEDTEXT.TEXT
 msgid  "~Days"
-msgstr "Η~μέρες"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FIXEDTEXT.TEXT
 msgid  "H~ours"
-msgstr "Ώ~ρες"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FIXEDTEXT.TEXT
 msgid  "Min~utes"
-msgstr "Λε~πτά"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
 msgid  "~Seconds"
-msgstr "Δε~υτερόλεπτα"
+msgstr ""
 
-#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
+#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
-msgstr "Χιλιοστά δευτερο~λέπτου"
+msgstr ""
 
-#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+#: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
 msgid  "Edit Field Names"
-msgstr "Επεξεργασία ονόματος πληροφορίας"
+msgstr ""
 
-#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
 msgid  "Names"
-msgstr "Ονόματα"
+msgstr ""
 
-#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
 msgid  "Create Style"
-msgstr "Δημιουργία προτύπου"
+msgstr ""
 
-#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
 msgid  "Style name"
-msgstr "Όνομα στυλ"
+msgstr ""
 
-#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
 msgid  "Style already exists. Overwrite?"
-msgstr "Το πρότυπο υπάρχει ήδη. Να αντικατασταθεί;"
+msgstr ""
 
-#: source/dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FloatingWindow.Text
-#, fuzzy
+#: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 msgid  "Record Macro"
-msgstr "Καταγραφή Μακροεντολής"
+msgstr ""
 
-#: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
-#, fuzzy
+#: dialog/recfloat.src#STR_MACRO_LOSS.STRING.TEXT
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr ""
 
-#: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
-#, fuzzy
+#: dialog/recfloat.src#STR_CANCEL_RECORDING.STRING.TEXT
 msgid  "Cancel Recording"
-msgstr "Cancel Recording"
+msgstr ""
 
-#: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
+#: dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr "Το %PRODUCTNAME δεν μπόρεσε να βρεί μια σωστή ρύθμιση e-mail. Παρακαλώ αποθηκεύστε αυτό το έγγραφο τοπικά και επισυνάψτε το από την εφαρμογή ηλ. αλληλογραφίας σας."
+msgstr ""
 
-#: source/dialog/dialog.src#STR_RESET.String.Text
+#: dialog/dialog.src#STR_RESET.STRING.TEXT
 msgid  "~Reset"
-msgstr "Επανα~φορά"
+msgstr ""
 
-#: source/dialog/dialog.src#STR_APPLY.String.Text
+#: dialog/dialog.src#STR_APPLY.STRING.TEXT
 msgid  "Apply"
-msgstr "Εφαρμογή"
+msgstr ""
 
-#: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
 msgid  "Organizer"
-msgstr "Διαχείριση"
+msgstr ""
 
-#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 msgid  "This name is already in use."
-msgstr "Το όνομα αυτό χρησιμοποιείται ήδη για ένα πρότυπο."
+msgstr ""
 
-#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
 msgid  "This Style does not exist."
-msgstr "Το πρότυπο δεν υπάρχει."
-
-#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
-msgid  "This Style cannot be used as a base Style,\\nbecause it would result in a recursive reference."
 msgstr ""
 
-#: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
-msgid  "Name already exists as a default Style.\\nPlease choose another name."
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
 msgstr ""
 
-#: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr ""
+
+#: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 msgid  "Do you really want to delete Style $1?"
-msgstr "Θέλετε σίγουρα να διαγράψετε το πρότυπο $1?"
+msgstr ""
 
-#: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
-msgid  "You are deleting an applied Style!\\n"
-msgstr "Διαγράφετε ένα πρότυπο που εφαρμόστηκε!\n"
+#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
+msgid  "You are deleting an applied Style!\n"
+msgstr ""
 
-#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
 msgid  "New..."
-msgstr "Δημιουργία..."
+msgstr ""
 
-#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
 msgid  "Modify..."
-msgstr "Τροποποίηση..."
+msgstr ""
 
-#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
 msgid  "Delete..."
-msgstr "Διαγραφή..."
+msgstr ""
 
-#: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
 msgid  "Navigator"
-msgstr "Περιήγηση"
+msgstr ""
 
-#: source/dialog/dialog.src#SID_TASKPANE.String.Text
+#: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
-msgstr "Πίνακας εργασιών"
+msgstr ""
 
-#: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr ""
+
+#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
 msgid  "Faulty password confirmation"
-msgstr "Εσφαλμένη επιβεβαίωση του κωδικού πρόσβασης"
+msgstr ""
 
-#: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
 msgid  "Send"
-msgstr "Αποστολή"
+msgstr ""
 
-#: source/dialog/taskpane.src#STR_SFX_DOCK.String.Text
-#, fuzzy
+#: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
-msgstr "Αγκύρωση"
+msgstr ""
 
-#: source/dialog/taskpane.src#STR_SFX_UNDOCK.String.Text
-#, fuzzy
+#: dialog/taskpane.src#STR_SFX_UNDOCK.STRING.TEXT
 msgid  "Undock"
-msgstr "Έρση αγκύρωσης"
+msgstr ""
 
-#: source/dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.String.Text
-#, fuzzy
+#: dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.STRING.TEXT
 msgid  "View"
-msgstr "Προβολή"
+msgstr ""
 
-#: source/dialog/taskpane.src#STR_SFX_TASKS.String.Text
-#, fuzzy
+#: dialog/taskpane.src#STR_SFX_TASKS.STRING.TEXT
 msgid  "Tasks"
-msgstr "Εργασίες"
+msgstr ""
 
-#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
-msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr "Αυτό το έγγραφο μπορεί να περιέχει μορφοποιήσεις ή περιεχόμενο που δεν μπορεί να αποθηκευτεί με την παρούσα μορφή αρχείου %FORMATNAME. Θέλετε να αποθηκεύσετε οπωσδήποτε το αρχείο με αυτήν την μορφή; \n\nΧρησιμοποποιήστε την πιο πρόσφατη μορφή αρχείου ODF για να είστε σίγουροι ότι όλες οι μορφοποποιήσεις και το περιεχόμενο έχουν αποθηκευτεί σωστά."
+#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FIXEDTEXT.TEXT
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
 
-#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKBUTTON.TEXT
 msgid  "~Keep Current Format"
-msgstr "~Διατήρηση τρέχουσας μορφής"
+msgstr ""
 
-#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
 msgid  "~Save in ODF Format"
-msgstr "Απο~θήκευση σε μορφή ODF"
+msgstr ""
 
-#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
 msgid  "~More Information..."
-msgstr "Πρό~σθετες πληροφορίες..."
+msgstr ""
 
-#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
 msgid  "~Ask when not saving in ODF format"
-msgstr "Ε~ρώτηση όταν δεν γίνεται αποθήκευση σε μορφή ODF"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
-msgid  "My Templates"
-msgstr "Τα πρότυπα μου"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
-msgid  "Business Correspondence"
-msgstr "Επαγγελματική αλληλογραφία"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
-msgid  "Other Business Documents"
-msgstr "Διάφορα επαγγελματικά έγγραφα"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
-msgid  "Personal Correspondence and Documents"
-msgstr "Προσωπική αλληλογραφία και προσωπικά έγγραφα"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
-msgid  "Forms and Contracts"
-msgstr "Φόρμες και Συμβόλαια"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
-msgid  "Finances"
-msgstr "Οικονομικά"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
-msgid  "Education"
-msgstr "Εκπαίδευση"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
-msgid  "Presentation Backgrounds"
-msgstr "Φόντα παρουσιάσεων"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
-msgid  "Presentations"
-msgstr "Παρουσιάσεις"
-
-#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
-msgid  "Miscellaneous"
-msgstr "Διάφορα"
-
-#: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
-msgid  "The templates are being initialized for first-time usage."
-msgstr "Τα πρότυπα αρχικοποιούνται για να χρησιμοποιηθούν για πρώτη φορά."
-
-#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
-msgid  "Templates"
-msgstr "Πρότυπα"
-
-#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
-msgid  "New template"
-msgstr "Δημιουργία προτύπου"
-
-#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
-msgid  "Templates"
-msgstr "Πρότυπα"
-
-#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
-msgid  "~Categories"
-msgstr "~Κατηγορίες"
-
-#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
-msgid  "~Templates"
-msgstr "~Πρότυπα"
-
-#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
-msgid  "~Edit"
-msgstr "~Επεξεργασία"
-
-#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
-msgid  "~Organizer..."
-msgstr "Δ~ιαχείριση..."
-
-#: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
-msgid  "Saving in external formats may have caused\\n information loss. Do you still want to close?"
 msgstr ""
 
-#: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
-msgid  "Name already in use.\\nDo you want to overwrite document template?"
+#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
+msgid  "No default printer found.\nPlease choose a printer and try again."
 msgstr ""
 
-#: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region \"$1\"?"
-msgstr "Θέλετε σίγουρα να διαγραφεί η κατηγορία $1;"
-
-#: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry \"$1\"?"
-msgstr "Θέλετε πραγματικά να διαγραφεί η καταχώριση $1;"
-
-#: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
-msgid  "The category is not empty.\\nDelete anyway?"
+#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
+msgid  "Could not start printer.\nPlease check your printer configuration."
 msgstr ""
 
-#: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
-msgstr "Το αρχείο \"$(DOC)\" τροποποιήθηκε.\nΘέλετε να αποθηκευτούν οι αλλαγές;"
-
-#: source/doc/doc.src#STR_STYLES.String.Text
-msgid  "Styles"
-msgstr "Πρότυπα"
-
-#: source/doc/doc.src#STR_MACROS.String.Text
-msgid  "Macros"
-msgstr "Μακροεντολές"
-
-#: source/doc/doc.src#STR_CONFIG.String.Text
-msgid  "Configuration"
-msgstr "Διαμόρφωση"
-
-#: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
-msgid  "Styles in "
-msgstr "Πρότυπα μορφοποίησης στο  "
-
-#: source/doc/doc.src#STR_PRINT_STYLES.String.Text
-msgid  "Printing Styles"
-msgstr "Εκτύπωση των προτύπων μορφοποίησης"
-
-#: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
-msgid  "The print job could not be started."
-msgstr "Δεν ήταν δυνατόν να γίνει εκκίνηση της διαδικασίας εκτύπωσης."
-
-#: source/doc/doc.src#STR_BACKUP_COPY.String.Text
-msgid  "Copy"
-msgstr "Αντίγραφο"
-
-#: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
-msgid  "The template could not be opened."
-msgstr "Δεν ήταν δυνατόν να ανοιχθεί το πρότυπο του εγγράφου."
-
-#: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
-msgid  "Document already open for editing."
-msgstr "Το έγγραφο είναι ήδη ανοιχτό για την επεξεργασία."
-
-#: source/doc/doc.src#STR_ERROR_SAVE.String.Text
-msgid  "Error recording document "
-msgstr "Σφάλμα κατά την εγγραφή του εγγράφου "
-
-#: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
-msgid  "Templates"
-msgstr "Πρότυπα"
-
-#: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
-msgstr "Σφάλμα κατά την αντιγραφή του προτύπου \"$1\". \nΊσως το πρότυπο αυτό να υπάρχει ήδη."
-
-#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template \"$1\" can not be deleted."
-msgstr "Αδύνατον να διαγραφεί το πρότυπο \"$1\"."
-
-#: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template \"$1\"."
-msgstr "Σφάλμα κατά την μετακίνηση του προτύπου \"$1\"."
-
-#: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
-msgid  "The update could not be saved."
-msgstr "Δεν ήταν δυνατόν να αποθηκευτούν τα δεδομένα των ενημερώσεων."
-
-#: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-msgid  "Error saving template "
-msgstr "Σφάλμα κατά την εγγραφή του προτύπου "
-
-#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
-msgid  "Error renaming template."
-msgstr "Σφάλμα κατά την μετονομασία του προτύπου."
-
-#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
-msgid  "Error renaming template category."
-msgstr "Σφάλμα κατά την μετονομασία της κατηγορίας."
-
-#: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
-msgid  "Please specify a name."
-msgstr "Πρέπει να εισάγετε ένα όνομα."
-
-#: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
-msgid  "Please specify a unique name.\\nEntries must not be case specific."
+#: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr ""
 
-#: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template \"$(TEXT)\" become the default template?"
-msgstr "Θέλετε να οριστεί το πρότυπο $(TEXT) ως πρότυπο προεπιλογής;"
-
-#: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
-msgid  "Do you want to reset the default template?"
-msgstr "Θέλετε να επαναφέρεται το πρότυπο προεπιλογής;"
-
-#: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
-msgid  "Template directory\\n$(DIR)\\ndoes not exist."
-msgstr ""
-
-#: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
-msgid  "Document info cannot be read."
-msgstr "Δεν είναι δυνατόν να γίνει ανάγνωση των ιδιοτήτων του εγγράφου."
-
-#: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
-msgid  "The selected file has an incorrect format."
-msgstr "Η μορφή του επιλεγμένου αρχείου δεν είναι έγκυρη."
-
-#: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
-msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr "Τα έγγραφα δεν είναι δυνατόν να αποθηκευτούν με τη μορφή $(FORMAT).\n Θέλετε να αποθηκευτεί το έγγραφο με τη μορφή $(OWNFORMAT);"
-
-#: source/doc/doc.src#STR_SAVEDOC.String.Text
-msgid  "~Save"
-msgstr "Αποθήκευ~ση"
-
-#: source/doc/doc.src#STR_UPDATEDOC.String.Text
-msgid  "~Update"
-msgstr "Ενημέ~ρωση"
-
-#: source/doc/doc.src#STR_SAVEASDOC.String.Text
-msgid  "Save ~As..."
-msgstr "Αποθήκευση ω~ς..."
-
-#: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
-msgid  "Save Copy ~as..."
-msgstr "Αποθήκευση ~αντιγράφου ως..."
-
-#: source/doc/doc.src#STR_CLOSEDOC.String.Text
-msgid  "~Close"
-msgstr "~Κλείσιμο"
-
-#: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
-msgid  "~Close & Return to "
-msgstr "~Κλείσιμο και επιστροφή σε "
-
-#: source/doc/doc.src#STR_WIZARD.String.Text
-msgid  " AutoPilot"
-msgstr "Αυτόματος πιλότος"
-
-#: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
-msgid  "Configurations"
-msgstr "Διαμορφώσεις"
-
-#: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
-msgid  "%PRODUCTNAME Basic libraries"
-msgstr "%PRODUCTNAME Basic Βιβλιοθήκες"
-
-#: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the \"$(ARG1)\" Style be replaced?"
-msgstr "Να αντικατασταθεί το στυλ $(ARG1);"
-
-#: source/doc/doc.src#STR_DOC_LOADING.String.Text
-msgid  "Loading Document"
-msgstr "Φόρτωση εγγράφου"
-
-#: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "Σύνδεση με: $(HOST). Περιμένοντας απάντηση..."
-
-#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "Άνοιγμα: $(TARGET) στο $(HOST)"
-
-#: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "Μετάδοση: $(TARGET) από $(HOST). Έγινε ανάγνωση: $(BYTE)"
-
-#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
-msgid  "Disconnected"
-msgstr "Τερματισμός σύνδεσης"
-
-#: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
-msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-only?"
-msgstr ""
-
-#: source/doc/doc.src#STR_EDIT.String.Text
-msgid  "Edit"
-msgstr "Επεξεργασία"
-
-#: source/doc/doc.src#RID_OFFICEFILTER.String.Text
-msgid  "%PRODUCTNAME Documents"
-msgstr "%PRODUCTNAME - Έγγραφα"
-
-#: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
-msgid  "Propert~ies..."
-msgstr "Ι~διότητες ..."
-
-#: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
-msgid  "HTML (FrameSet)"
-msgstr "HTML (FrameSet)"
-
-#: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
-msgid  "%PRODUCTNAME Frame Document"
-msgstr "Έγγραφο του %PRODUCTNAME Frame"
-
-#: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "Το πρότυπο \"$(TEMPLATE)\" δεν βρέθηκε στην αρχική θέση. Υπάρχει πρότυπο με το ίδιο όνομα στο \"$(FOUND)\". Θέλετε να χρησιμοποιείται αυτό το πρότυπο στο μέλλον κατά τη σύγκριση;"
-
-#: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr "Το πρότυπο $(TEMPLATE) δεν βρέθηκε. Θέλετε να γίνει και μελλοντικά αναζήτηση αυτού του προτύπου;"
-
-#: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
-msgid  "Automatically saved version"
-msgstr "Αυτομάτως αποθηκευμένη έκδοση"
-
-#: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
-msgid  "Text Document"
-msgstr "Έγγραφο κειμένου"
-
-#: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
-msgid  "HTML Document"
-msgstr "Έγγραφο HTML"
-
-#: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
-msgid  "Master Document"
-msgstr "Κύριο έγγραφο"
-
-#: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
-msgid  "Spreadsheet"
-msgstr "Υπολογιστικό φύλλο"
-
-#: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
-msgid  "Presentation"
-msgstr "Παρουσίαση"
-
-#: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
-msgid  "Drawing"
-msgstr "Σχεδίαση"
-
-#: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
-msgid  "Message"
-msgstr "Μήνυμα"
-
-#: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
-msgid  "~Discard"
-msgstr "Α~πόρριψη"
-
-#: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
-msgid  "Access to the current data medium not possible."
-msgstr "Δεν ήταν δυνατή η πρόσβαση στον τρέχων δίσκο."
-
-#: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
-msgid  "Insert the next data carrier and click OK."
-msgstr "Εισάγετε τον επόμενο φορέα δεδομένων και επιλέξτε το πεδίο OK."
-
-#: source/doc/doc.src#STR_OBJECT.String.Text
-msgid  "Object"
-msgstr "Αντικείμενο"
-
-#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
-msgid  "Run Macro"
-msgstr "Εκτέλεση μακροεντολών"
-
-#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
-msgid  "This document contains macros. $(TEXT)"
-msgstr "Αυτό το έγγραφο περιλαμβάνει μακροεντολές. $(TEXT)"
-
-#: source/doc/doc.src#BTN_OK.String.Text
-msgid  "Run"
-msgstr "Εκτέλεση"
-
-#: source/doc/doc.src#BTN_CANCEL.String.Text
-msgid  "Do Not Run"
-msgstr "Να μην γίνει εκτέλεση"
-
-#: source/doc/doc.src#FT_CANCEL.String.Text
-msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr "Σύμφωνα με τις ρυθμίσεις ασφαλείας, οι μακροεντολές αυτού του εγγράφου δεν θα πρέπει να εκτελεστούν. Είστε βέβαιοι ότι θέλετε να τις εκτελέσετε;"
-
-#: source/doc/doc.src#FT_OK.String.Text
-msgid  "Do you want to allow these macros to be run?"
-msgstr "Θέλετε να επιτρέψετε την εκτέλεση αυτών των μακροεντολών;"
-
-#: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
-msgid  "Export as PDF"
-msgstr "Εξαγωγή ως PDF"
-
-#: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
-msgid  "Export..."
-msgstr "Εξαγωγή..."
-
-#: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
-msgid  "Export"
-msgstr "Εξαγωγή"
-
-#: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
-msgid  "Add this directory to the list of secure paths: "
-msgstr "Προσθήκη αυτού του καταλόγου στη λίστα ασφαλών διαδρομών: "
-
-#: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
-msgid  "File format:"
-msgstr "Μορφή αρχείου:"
-
-#: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
-msgid  "This document contains:\\n\\n"
-msgstr "Αυτό το έγγραφο περιέχει:\n\n"
-
-#: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
-msgid  "Recorded changes"
-msgstr "Καταγεγραμμένες αλλαγές"
-
-#: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
-msgid  "Notes"
-msgstr "Σημειώσεις"
-
-#: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
-msgid  "Document versions"
-msgstr "Εκδόσεις εγγράφου"
-
-#: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
-msgid  "Fields"
-msgstr "Πεδία"
-
-#: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
-msgid  "Linked data..."
-msgstr "Συνδεδεμένα δεδομένα..."
-
-#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
-msgid  "Do you want to continue saving the document?"
-msgstr "Θέλετε να συνεχίσετε την αποθήκευση του εγγράφου;"
-
-#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
-msgid  "Do you want to continue printing the document?"
-msgstr "Θέλετε να συνεχίσετε την εκτύπωση του εγγράφου;"
-
-#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
-msgid  "Do you want to continue signing the document?"
-msgstr "Θέλετε να συνεχίσετε την υπογραφή του εγγράφου;"
-
-#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "Θέλετε να συνεχιστεί η δημιουργία αρχείου PDF;"
-
-#: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "Αν δεν θέλετε να αντικαταστήσετε το αρχικό έγγραφο, θα πρέπει να αποθηκεύσετε την εργασία σας με ένα νέο όνομα αρχείου."
-
-#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
-msgid  "Some template files are protected and can not be deleted."
-msgstr "Μερικά πρότυπα αρχεία είναι προστατευμένα και δεν πορούν να διαγραφούν."
-
-#: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
-msgid  "Info %1"
-msgstr "Πληροφορίες %1"
-
-#: source/doc/doc.src#STR_SHARED.String.Text
-msgid  " (shared)"
-msgstr "(κοινόχρηστα)"
-
-#: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "Η μορφή εγγράφου εκδοχή έχει οριστεί σε ODF 1.1 (OpenOffice.org 2.x) στο Εργαλεία-Επιλογές -Φόρτωση/Αποθήκευση-Γενικά. Η υπογραφή εγγράφων απαιτεί ODF 1.2 (OpenOffice.org 3.x)."
-
-#: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\\nDo you want to save the document?"
-msgstr ""
-
-#: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "Το πρότυπο '$(ARG1)' στο οποίο βασίζεται το παρόν έγγραφο, έχει τροποποιηθεί. Θέλετε να ενημερώσετε το στυλ σύμγφωνα με τις μορφοποιήσεις του τροποποιημένου προτύπου;"
-
-#: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
-msgid  "~Update Styles"
-msgstr "Ε~νημέρωση στυλ"
-
-#: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
-msgid  "~Keep Old Styles"
-msgstr "~Διατήρηση παλιών στυλ"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
-msgid  "Template Management"
-msgstr "Διαχείριση πρότυπων"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
-msgid  "Close"
-msgstr "Κλείσιμο"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
-msgid  "~File..."
-msgstr "~Αρχείο..."
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
-msgid  "~Address Book..."
-msgstr "~Βιβλίο διευθύνσεων"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "Πρότυπα"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Documents"
-msgstr "Έγγραφα"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "Πρότυπα"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Documents"
-msgstr "Έγγραφα"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
-msgid  "Commands"
-msgstr "Εντολές"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
-msgid  "~New"
-msgstr "~Δημιουργία"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
-msgid  "~Delete"
-msgstr "Διαγρα~φή"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
-msgid  "~Edit"
-msgstr "~Επεξεργασία"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
-msgid  "Import Template..."
-msgstr "Εισαγωγή προτύπου..."
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
-msgid  "Export Template..."
-msgstr "Εξαγωγή προτύπων..."
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
-msgid  "~Print"
-msgstr "Εκ~τύπωση"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
-msgid  "Printer Settings..."
-msgstr "Ρυθμίσεις εκτυπωτή..."
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
-msgid  "Update"
-msgstr "Ενημέρωση"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
-msgid  "Set As Default Template"
-msgstr "Ορισμός ως προεπιλεγμένου προτύπου"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
-msgid  "Reset Default Template"
-msgstr "Επαναφορά προεπιλεγμένου προτύπου"
-
-#: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
-msgid  "New"
-msgstr "Δημιουργία"
-
-#: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
-msgid  "~Categories"
-msgstr "~Κατηγορίες"
-
-#: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
-msgid  "T~emplates"
-msgstr "Π~ρότυπα"
-
-#: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
-msgid  "~More"
-msgstr "~Περισσότερα"
-
-#: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
-msgid  "Pre~view"
-msgstr "Προ~επισκόπηση"
-
-#: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
-msgid  "Description"
-msgstr "Περιγραφή"
-
-#: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
-msgid  "Te~xt"
-msgstr "Κεί~μενο"
-
-#: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
-msgid  "~Frame"
-msgstr "~Πλαίσιο"
-
-#: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
-msgid  "~Pages"
-msgstr "~Σελίδες"
-
-#: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
-msgid  "N~umbering"
-msgstr "Α~ρίθμηση"
-
-#: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
-msgid  "~Overwrite"
-msgstr "~Αντικατάσταση"
-
-#: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
-msgid  "From File..."
-msgstr "Από αρχείο..."
-
-#: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
-msgid  "Load Styles"
-msgstr "Φόρτωση προτύπων"
-
-#: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
-msgid  "~Title"
-msgstr "~Τίτλος"
-
-#: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
-msgid  "Subject"
-msgstr "Θέμα"
-
-#: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
-msgid  "~Key words"
-msgstr "Λέ~ξεις-κλειδιά"
-
-#: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
-msgid  "~Description"
-msgstr "~Περιγραφή"
-
-#: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
-msgid  "Configuration Menu"
-msgstr "Μενού ρύθμισης"
-
-#: source/menu/menu.src#STR_MENU_ADDONS.String.Text
-msgid  "~Add-Ons"
-msgstr "~Πρόσθετα"
-
-#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
-msgid  "Cu~t"
-msgstr "~Αποκοπή"
-
-#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
-msgid  "~Copy"
-msgstr "Αντι~γραφή"
-
-#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
-msgid  "~Paste"
-msgstr "Επ~ικόλληση"
-
-#: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
-msgid  "Leave Full-Screen Mode"
-msgstr "Έξοδος από τη λειτουργία πλήρους οθόνης"
-
-#: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
-msgid  "Add-~On Help"
-msgstr "Βοήθεια πρόσ~θετων λειτουργιών"
-
-#: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
-msgid  "Synonyms"
-msgstr "Συνώνυμα"
-
-#: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
-msgid  "(none)"
-msgstr "(κανένα)"
-
-#: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
-msgid  "~Thesaurus..."
-msgstr "~Θησαυρός..."
-
-#: source/view/view.src#STR_NODEFPRINTER.String.Text
-msgid  "No default printer found.\\nPlease choose a printer and try again."
-msgstr "Δεν βρέθηκε προεπιλεγμένος εκτυπωτής.\nΠαρακαλώ επιλέξτε έναν εκτυπωτή και προσπαθήστε ξανά."
-
-#: source/view/view.src#STR_NOSTARTPRINTER.String.Text
-msgid  "Could not start printer.\\nPlease check your printer configuration."
-msgstr "Δεν ήταν δυνατόν να τεθεί σε λειτουργία ο εκτυπωτής.\nΠαρακαλώ ελέγξτε τις ρυθμίσεις του."
-
-#: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
-msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
-msgstr "Το έγγραφο έχει διαμορφωθεί για τον εκτυπωτή $1. Ο εκτυπωτής αυτός δεν είναι διαθέσιμος. Να χρησιμοποιηθεί ο προεπιλεγμένος εκτυπωτής $2;"
-
-#: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
 msgid  "Options..."
-msgstr "Επιλογές..."
+msgstr ""
 
-#: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
 msgid  "Printer Options"
-msgstr "Επιλογές εκτυπωτή"
+msgstr ""
 
-#: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
 msgid  "Printer busy"
-msgstr "Ο εκτυπωτής είναι απασχολημένος"
+msgstr ""
 
-#: source/view/view.src#STR_ERROR_PRINT.String.Text
+#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
 msgid  "Error while printing"
-msgstr "Σφάλμα κατά την εκτύπωση"
+msgstr ""
 
-#: source/view/view.src#STR_PRINTING.String.Text
+#: view/view.src#STR_PRINTING.STRING.TEXT
 msgid  "Printing"
-msgstr "Εκτύπωση"
+msgstr ""
 
-#: source/view/view.src#STR_PAGE.String.Text
+#: view/view.src#STR_PAGE.STRING.TEXT
 msgid  "Page "
-msgstr "Σελίδα "
+msgstr ""
 
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
 msgid  "Error saving template "
-msgstr "Σφάλμα κατά την αποθήκευση του προτύπου "
+msgstr ""
 
-#: source/view/view.src#STR_READONLY.String.Text
+#: view/view.src#STR_READONLY.STRING.TEXT
 msgid  " (read-only)"
-msgstr "(μόνο για ανάγνωση)"
+msgstr ""
 
-#: source/view/view.src#STR_PRINT_NEWORI.String.Text
-msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr "Έχετε αλλάξει το μέγεθος και τον \nπροσανατολισμό της σελίδας.\nΘέλετε να αποθηκευτούν οι νέες \nρυθμίσεις στο τρέχον έγγραφο;"
+#: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
 
-#: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
-msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
-msgstr "Αλλάξατε το μέγεθος της σελίδας.\nΝα εφαρμοστεί αυτή η αλλαγή στο έγγραφο;"
+#: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
+msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
+msgstr ""
 
-#: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
-msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
-msgstr "Έχετε αλλάξει το μέγεθος και τον \nπροσανατολισμό της σελίδας.\nΘέλετε να αποθηκευτούν οι νέες \nρυθμίσεις στο τρέχον έγγραφο;"
+#: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
 
-#: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+#: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Τίτλος:</b><dd>$(TITEL)<dt><b>Θέμα:</b><dd>$(THEME)<dt><b>Λέξεις-κλειδιά:</b><dd>$(KEYWORDS)<dt><b>Περιγραφή:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
 
-#: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Δεν βρέθηκαν ιδιότητες εγγράφου.</B></FONT></P></BODY></HTML>"
-
-#: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
-msgid  "The document cannot be closed because a\\n print job is being carried out."
 msgstr ""
 
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
+
+#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
 msgid  "Print Monitor"
-msgstr "Εκτύπωση οθόνης"
-
-#: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
-msgid  "is being printed on"
-msgstr "εκτυπώνεται στο"
-
-#: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
-msgid  "is being prepared for printing"
-msgstr "προετοιμάζεται για εκτύπωση"
-
-#: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
 msgstr ""
 
-#: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
+msgid  "is being printed on"
+msgstr ""
+
+#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
+msgid  "is being prepared for printing"
+msgstr ""
+
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+
+#: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr "Δεν είναι δυνατό το άνοιγμα του εγγράφου για επεξεργασία, πιθανώς λόγω \nέλλειψης δικαιωμάτων πρόσβασης. Θέλετε να το χρησιμοποιήσετε ως πρότυπο\nγια για ένα νέο έγγραφο;"
+msgstr ""
 
-#: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
 msgid  " (repaired document)"
-msgstr " (επιδιορθωμένο έγγραφο)"
+msgstr ""
 
-#: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+#: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr "Δεν ήταν δυνατή η εύρεση περιηγητή δικτύου στο σύστημα σας από το %PRODUCTNAME. Παρακαλώ ελέγξτε τις Προτιμήσεις στην επιφάνεια εργασίας σας ή εγκαταστήστε έναν περιηγητή δικτύου (για παράδειγμα, το Mozilla) στην προεπιλεγμένη τοποθεσία που απαιτείται κατά τη διάρκεια της εγκατάστασης του περιηγητή."
+msgstr ""
+
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr ""
+
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr ""
+
+#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
+msgid  "Modify Link"
+msgstr ""
+
+#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
+msgid  "~Application:"
+msgstr ""
+
+#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
+msgid  "~File:"
+msgstr ""
+
+#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
+msgid  "~Category:"
+msgstr ""
+
+#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
+msgid  "Modify link"
+msgstr ""
+
+#: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
+msgid  "%PRODUCTNAME"
+msgstr ""
+
+#: appl/app.src#STR_NONAME.STRING.TEXT
+msgid  "Untitled"
+msgstr ""
+
+#: appl/app.src#STR_CLOSE.STRING.TEXT
+msgid  "Close"
+msgstr ""
+
+#: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
+msgid  "Automatic"
+msgstr ""
+
+#: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
+msgid  "Standard"
+msgstr ""
+
+#: appl/app.src#STR_BYTES.STRING.TEXT
+msgid  "Bytes"
+msgstr ""
+
+#: appl/app.src#STR_KB.STRING.TEXT
+msgid  "KB"
+msgstr ""
+
+#: appl/app.src#STR_MB.STRING.TEXT
+msgid  "MB"
+msgstr ""
+
+#: appl/app.src#STR_GB.STRING.TEXT
+msgid  "GB"
+msgstr ""
+
+#: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
+msgid  "Cancel all changes?"
+msgstr ""
+
+#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
+msgid  "Document already open."
+msgstr ""
+
+#: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+
+#: appl/app.src#GID_INTERN.STRING.TEXT
+msgid  "Internal"
+msgstr ""
+
+#: appl/app.src#GID_APPLICATION.STRING.TEXT
+msgid  "Application"
+msgstr ""
+
+#: appl/app.src#GID_VIEW.STRING.TEXT
+msgid  "View"
+msgstr ""
+
+#: appl/app.src#GID_DOCUMENT.STRING.TEXT
+msgid  "Documents"
+msgstr ""
+
+#: appl/app.src#GID_EDIT.STRING.TEXT
+msgid  "Edit"
+msgstr ""
+
+#: appl/app.src#GID_MACRO.STRING.TEXT
+msgid  "BASIC"
+msgstr ""
+
+#: appl/app.src#GID_OPTIONS.STRING.TEXT
+msgid  "Options"
+msgstr ""
+
+#: appl/app.src#GID_MATH.STRING.TEXT
+msgid  "Math"
+msgstr ""
+
+#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
+msgid  "Navigate"
+msgstr ""
+
+#: appl/app.src#GID_INSERT.STRING.TEXT
+msgid  "Insert"
+msgstr ""
+
+#: appl/app.src#GID_FORMAT.STRING.TEXT
+msgid  "Format"
+msgstr ""
+
+#: appl/app.src#GID_TEMPLATE.STRING.TEXT
+msgid  "Templates"
+msgstr ""
+
+#: appl/app.src#GID_TEXT.STRING.TEXT
+msgid  "Text"
+msgstr ""
+
+#: appl/app.src#GID_FRAME.STRING.TEXT
+msgid  "Frame"
+msgstr ""
+
+#: appl/app.src#GID_GRAPHIC.STRING.TEXT
+msgid  "Graphic"
+msgstr ""
+
+#: appl/app.src#GID_TABLE.STRING.TEXT
+msgid  "Table"
+msgstr ""
+
+#: appl/app.src#GID_ENUMERATION.STRING.TEXT
+msgid  "Numbering"
+msgstr ""
+
+#: appl/app.src#GID_DATA.STRING.TEXT
+msgid  "Data"
+msgstr ""
+
+#: appl/app.src#GID_SPECIAL.STRING.TEXT
+msgid  "Special Functions"
+msgstr ""
+
+#: appl/app.src#GID_IMAGE.STRING.TEXT
+msgid  "Image"
+msgstr ""
+
+#: appl/app.src#GID_CHART.STRING.TEXT
+msgid  "Chart"
+msgstr ""
+
+#: appl/app.src#GID_EXPLORER.STRING.TEXT
+msgid  "Explorer"
+msgstr ""
+
+#: appl/app.src#GID_CONNECTOR.STRING.TEXT
+msgid  "Connector"
+msgstr ""
+
+#: appl/app.src#GID_MODIFY.STRING.TEXT
+msgid  "Modify"
+msgstr ""
+
+#: appl/app.src#GID_DRAWING.STRING.TEXT
+msgid  "Drawing"
+msgstr ""
+
+#: appl/app.src#GID_CONTROLS.STRING.TEXT
+msgid  "Controls"
+msgstr ""
+
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr ""
+
+#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
+msgid  "Do you want to save the changes to %1?"
+msgstr ""
+
+#: appl/app.src#STR_QUITAPP.STRING.TEXT
+msgid  "E~xit"
+msgstr ""
+
+#: appl/app.src#RID_STR_HELP.STRING.TEXT
+msgid  "Help"
+msgstr ""
+
+#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
+msgid  "No automatic start at 'XX'"
+msgstr ""
+
+#: appl/app.src#RID_HELPBAR.STRING.TEXT
+msgid  "Help Bar"
+msgstr ""
+
+#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
+msgid  "The help file for this topic is not installed."
+msgstr ""
+
+#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
+msgid  "Function Bar"
+msgstr ""
+
+#: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
+msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
+msgid  "Exit Quickstarter"
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
+msgid  "Open Document..."
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
+msgid  "From Template..."
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
+msgid  "Load %PRODUCTNAME During System Start-Up"
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
+msgid  "Disable Quickstarter"
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
+msgid  "File"
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
+msgid  "Startcenter"
+msgstr ""
+
+#: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
+msgid  "Recent Documents"
+msgstr ""
+
+#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
+msgid  "Update all links?"
+msgstr ""
+
+#: appl/app.src#STR_DDE_ERROR.STRING.TEXT
+msgid  "DDE link to % for % area % are not available."
+msgstr ""
+
+#: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr ""
+
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr ""
+
+#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
+msgid  "Security Warning"
+msgstr ""
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr ""
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr ""
+
+#: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
+msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
+msgstr ""
+
+#: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
+msgid  " (Signed)"
+msgstr ""
+
+#: appl/app.src#STR_STANDARD.STRING.TEXT
+msgid  "Standard"
+msgstr ""
+
+#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
+msgid  "Document"
+msgstr ""
+
+#: appl/app.src#STR_NONE.STRING.TEXT
+msgid  "- None -"
+msgstr ""
+
+#: appl/app.src#RID_SVXSTR_GRAFIKLINK.STRING.TEXT
+msgid  "Graphic"
+msgstr ""
+
+#: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
+msgid  "All files (*.*)"
+msgstr ""
+
+#: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
+msgid  "Link graphics"
+msgstr ""
+
+#: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
+msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
+msgstr ""
+
+#: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
+msgid  "Graphics file cannot be opened"
+msgstr ""
+
+#: appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.STRING.TEXT
+msgid  "Graphics file cannot be read"
+msgstr ""
+
+#: appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.STRING.TEXT
+msgid  "Unknown graphics format"
+msgstr ""
+
+#: appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.STRING.TEXT
+msgid  "This version of the graphics file is not supported"
+msgstr ""
+
+#: appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.STRING.TEXT
+msgid  "Graphics filter not found"
+msgstr ""
+
+#: appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.STRING.TEXT
+msgid  "Not enough memory to insert graphic"
+msgstr ""
+
+#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
+msgid  "Contents"
+msgstr ""
+
+#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
+msgid  "Index"
+msgstr ""
+
+#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
+msgid  "Find"
+msgstr ""
+
+#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
+msgid  "Bookmarks"
+msgstr ""
+
+#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
+msgid  "~Search term"
+msgstr ""
+
+#: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
+msgid  "~Display"
+msgstr ""
+
+#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+msgid  "S~earch term"
+msgstr ""
+
+#: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
+msgid  "~Find"
+msgstr ""
+
+#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
+msgid  "~Complete words only"
+msgstr ""
+
+#: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
+msgid  "Find in ~headings only"
+msgstr ""
+
+#: appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PUSHBUTTON.TEXT
+msgid  "~Display"
+msgstr ""
+
+#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
+msgid  "~Bookmarks"
+msgstr ""
+
+#: appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PUSHBUTTON.TEXT
+msgid  "~Display"
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
+msgid  "%PRODUCTNAME Help"
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.STRING.TEXT
+msgid  "Show Navigation Pane"
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.STRING.TEXT
+msgid  "Hide Navigation Pane"
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
+msgid  "First Page"
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
+msgid  "Previous Page"
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
+msgid  "Next Page"
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
+msgid  "Print..."
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
+msgid  "Add to Bookmarks..."
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
+msgid  "Find on this Page..."
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
+msgid  "HTML Source"
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
+msgid  "The Help is being started..."
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
+msgid  "Select Text"
+msgstr ""
+
+#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
+msgid  "~Copy"
+msgstr ""
+
+#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
+msgid  "Add to Bookmarks"
+msgstr ""
+
+#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
+msgid  "Bookmark:"
+msgstr ""
+
+#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
+msgid  "Rename Bookmark"
+msgstr ""
+
+#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
+msgid  "Display"
+msgstr ""
+
+#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
+msgid  "Rename..."
+msgstr ""
+
+#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
+msgid  "Delete"
+msgstr ""
+
+#: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
+msgid  "No topics found."
+msgstr ""
+
+#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
+msgid  "The text you entered was not found."
+msgstr ""
+
+#: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
+msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr ""

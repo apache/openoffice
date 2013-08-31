@@ -31,1242 +31,1242 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
-msgid  "Detail"
-msgstr "Detail"
-
-#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
-msgid  "Page Header"
-msgstr "Lehekülje päis"
-
-#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
-msgid  "Page Footer"
-msgstr "Lehekülje jalus"
-
-#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
-msgid  "Group Header"
-msgstr "Rühma päis"
-
-#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
-msgid  "Group Footer"
-msgstr "Rühma jalus"
-
-#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
-msgid  "Report Header"
-msgstr "Aruande päis"
-
-#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
-msgid  "Report Footer"
-msgstr "Aruande jalus"
-
-#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
-msgid  "The name '#1' already exists and can not be asssigned again."
-msgstr "Nimi '#1' on juba olemas ja seda ei saa uuesti omistada."
-
-#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
-msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr "Sa üritasid määrata lubamatu argumendi. Lubatud argumendid on loetletud nimekirjas '#1'."
-
-#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
-msgid  "The element is invalid."
-msgstr "Element on sobimatu."
-
-#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
-msgid  "Label field"
-msgstr "Sildiväli"
-
-#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
-msgid  "Formatted field"
-msgstr "Vormindatud väli"
-
-#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
-msgid  "Image control"
-msgstr "Pildielement"
-
-#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "Aruanne"
-
-#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
-msgid  "Shape"
-msgstr "Kujund"
-
-#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
-msgid  "Fixed line"
-msgstr "Püsijoon"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FLOATINGWINDOW.TEXT
 msgid  "Sorting and Grouping"
-msgstr "Sortimine ja rühmitamine"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "Groups"
-msgstr "Rühmad"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FIXEDTEXT.TEXT
 msgid  "Group actions"
-msgstr "Rühma tegevused"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.TOOLBOXITEM.TEXT
 msgid  "Move up"
-msgstr "Liiguta üles"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.TOOLBOXITEM.TEXT
 msgid  "Move down"
-msgstr "Liiguta alla"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.TOOLBOXITEM.TEXT
 msgid  "~Delete"
-msgstr "Kustuta"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "Properties"
-msgstr "Omadused"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
 msgid  "Sorting"
-msgstr "Sortimine"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.STRINGLIST.ITEM
 msgid  "Ascending"
-msgstr "Kasvavalt"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.STRINGLIST.ITEM
 msgid  "Descending"
-msgstr "Kahanevalt"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Group Header"
-msgstr "Rühma päis"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Present"
-msgstr "On olemas"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Not present"
-msgstr "Pole olemas"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
 msgid  "Group Footer"
-msgstr "Rühma jalus"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Present"
-msgstr "On olemas"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Not present"
-msgstr "Pole olemas"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
 msgid  "Group On"
-msgstr "Rühmitatakse"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Each Value"
-msgstr "Iga väärtuse järgi"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FIXEDTEXT.TEXT
 msgid  "Group Interval"
-msgstr "Rühmitamise intervall"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FIXEDTEXT.TEXT
 msgid  "Keep Together"
-msgstr "Hoitakse koos"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
 msgid  "No"
-msgstr "Ei"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
 msgid  "Whole Group"
-msgstr "Kogu rühm"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.STRINGLIST.ITEM
 msgid  "With First Detail"
-msgstr "Koos esimese detailiga"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Help"
-msgstr "Abi"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
 msgid  "Field/Expression"
-msgstr "Väli/avaldis"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_SORTING.STRING.TEXT
 msgid  "Sort Order"
-msgstr "Sortimisjärjestus"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.STRING.TEXT
 msgid  "Prefix Characters"
-msgstr "Prefiksi märgid"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
 msgid  "Year"
-msgstr "Aasta"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
 msgid  "Quarter"
-msgstr "Kvartal"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
 msgid  "Month"
-msgstr "Kuu"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
 msgid  "Week"
-msgstr "Nädal"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
 msgid  "Day"
-msgstr "Päev"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HOUR.STRING.TEXT
 msgid  "Hour"
-msgstr "Tund"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.STRING.TEXT
 msgid  "Minute"
-msgstr "Minut"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.STRING.TEXT
 msgid  "Interval"
-msgstr "Intervall"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
 msgid  "Select a field or type an expression to sort or group on."
-msgstr "Vali väli või sisesta avaldis, mille järgi sorditakse või rühmitatakse."
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
 msgid  "Display a header for this group?"
-msgstr "Kas kuvada selle rühma päist?"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.STRING.TEXT
 msgid  "Display a footer for this group?"
-msgstr "Kas kuvada selle rühma jalust?"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.STRING.TEXT
 msgid  "Select the value or range of values that starts a new group."
-msgstr "Vali väärtus või väärtuste vahemik, mis alustab uut rühma."
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.STRING.TEXT
 msgid  "Interval or number of characters to group on."
-msgstr "Intervall või rühmitatavate märkide arv."
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.STRING.TEXT
 msgid  "Keep group together on one page?"
-msgstr "Kas rühm hoitakse koos ühel leheküljel?"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.STRING.TEXT
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr "Vali kasvav või kahanev sortimisjärjestus. Kasvav järjestus on A kuni Y või 0 kuni 9"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.MODALDIALOG.TEXT
 msgid  "Page Numbers"
-msgstr "Leheküljenumbrid"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
 msgid  "Format"
-msgstr "Vorming"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
 msgid  "Page N"
-msgstr "Lehekülg N"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RADIOBUTTON.TEXT
 msgid  "Page N of M"
-msgstr "Lehekülg N / M"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
 msgid  "Position"
-msgstr "Paigutus"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
 msgid  "Top of Page (Header)"
-msgstr "Lehekülje ülaosas (päises)"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RADIOBUTTON.TEXT
 msgid  "Bottom of Page (Footer)"
-msgstr "Lehekülje alaosas (jaluses)"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
 msgid  "General"
-msgstr "Üldine"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
 msgid  "Alignment:"
-msgstr "Joondus:"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 msgid  "Left"
-msgstr "Vasakule"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 msgid  "Center"
-msgstr "Keskele"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 msgid  "Right"
-msgstr "Paremale"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
 msgid  "Show Number on First Page"
-msgstr "Esimese lehekülje numbri kuvamine"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr "Abi"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+#: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
 msgid  "\"Page \" & #PAGENUMBER#"
-msgstr "\"Lehekülg \" & #PAGENUMBER#"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+#: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
 msgid  " & \" of \" & #PAGECOUNT#"
-msgstr " & \" / \" & #PAGECOUNT#"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TABDIALOG.TEXT
 msgid  "Page Setup"
-msgstr "Lehekülje sätted"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
 msgid  "Page"
-msgstr "Lehekülg"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
 msgid  "Background"
-msgstr "Taust"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "Tagasi"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
 msgid  "Page"
-msgstr "Lehekülg"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
 msgid  "Background"
-msgstr "Taust"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
 msgid  "Section Setup"
-msgstr "Sektsiooni sätted"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "Tagasi"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
 msgid  "Background"
-msgstr "Taust"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
 msgid  "Character Settings"
-msgstr "Märgi sätted"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
 msgid  "Font"
-msgstr "Font"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr "Fondiefektid"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
 msgid  "Position"
-msgstr "Paigutus"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
 msgid  "Asian Layout"
-msgstr "Aasia paigutus"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
 msgid  "Background"
-msgstr "Taust"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
 msgid  "Alignment"
-msgstr "Joondus"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "Tagasi"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
 msgid  "Character"
-msgstr "Märk"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
 msgid  "Line"
-msgstr "Joon"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
 msgid  "Line"
-msgstr "Joon"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
 msgid  "Line Styles"
-msgstr "Joonestiilid"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
 msgid  "Arrow Styles"
-msgstr "Noolestiilid"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "Tagasi"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
 msgid  "Line"
-msgstr "Joon"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+#: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
 msgid  "Report navigator"
-msgstr "Aruandenavigaator"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+#: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
 msgid  "Functions"
-msgstr "Funktsioonid"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+#: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
 msgid  "Groups"
-msgstr "Rühmad"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
 msgid  "Sorting and Grouping..."
-msgstr "Sortimine ja rühmitamine..."
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
 msgid  "Page Header/Footer..."
-msgstr "Lehekülje päis ja jalus..."
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
 msgid  "Report Header/Footer..."
-msgstr "Aruande päis ja jalus..."
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
 msgid  "New Function"
-msgstr "Uus funktsioon"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr "Omadused..."
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Field Value Is"
-msgstr "Välja väärtus"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Expression Is"
-msgstr "Avaldis"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
 msgid  "between"
-msgstr "on vahemikus"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
 msgid  "not between"
-msgstr "pole vahemikus"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
 msgid  "equal to"
-msgstr "on võrdne"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
 msgid  "not equal to"
-msgstr "pole võrdne"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
 msgid  "greater than"
-msgstr "on suurem kui"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
 msgid  "less than"
-msgstr "on väiksem kui"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
 msgid  "greater than or equal to"
-msgstr "on suurem või võrdne"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
 msgid  "less than or equal to"
-msgstr "on väiksem või võrdne"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+#: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
 msgid  "and"
-msgstr "ja"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+#: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
 msgid  "Example"
-msgstr "Näide"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+#: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
 msgid  "Conditional Formatting"
-msgstr "Tingimuslik vormindus"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+#: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr "Abi"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+#: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
 msgid  "Condition $number$"
-msgstr "Tingimus $number$"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+#: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
 msgid  "White"
-msgstr "Valge"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+#: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
 msgid  "Font color"
-msgstr "Fondi värv"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+#: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
 msgid  "Background"
-msgstr "Taust"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+#: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
 msgid  "No Fill"
-msgstr "Täitmata"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
 msgid  "Sort Ascending"
-msgstr "Sortimine kasvavalt"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
 msgid  "Sort Descending"
-msgstr "Sortimine kahanevalt"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
 msgid  "Remove sorting"
-msgstr "Eemalda sortimine"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
 msgid  "Insert"
-msgstr "Lisamine"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+#: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Help"
-msgstr "Abi"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+#: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr "Vali väljad, mida soovid lisada malli valitud sektsiooni, seejärel klõpsa Lisa või vajuta Enter."
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
 msgid  "Date and Time"
-msgstr "Kuupäev ja kellaaeg"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
 msgid  "Include Date"
-msgstr "Kuupäeva kaasamine"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
 msgid  "Format"
-msgstr "Vorming"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
 msgid  "Include Time"
-msgstr "Kellaaja kaasamine"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
 msgid  "Format"
-msgstr "Vorming"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr "Abi"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+#: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 msgid  "General"
-msgstr "Üldine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+#: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 msgid  "Data"
-msgstr "Andmed"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
 msgid  "No"
-msgstr "Ei"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
 msgid  "Yes"
-msgstr "Jah"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
 msgid  "Force New Page"
-msgstr "Uue lehekülje loomine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
 msgid  "None"
-msgstr "Puudub"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
 msgid  "Before Section"
-msgstr "Enne sektsiooni"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
 msgid  "After Section"
-msgstr "Pärast sektsiooni"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
 msgid  "Before & After Section"
-msgstr "Enne ja pärast sektsiooni"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+#: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
 msgid  "New Row Or Column"
-msgstr "Uus rida või veerg"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
 msgid  "Keep Together"
-msgstr "Hoitakse koos"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
 msgid  "No"
-msgstr "Ei"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
 msgid  "Whole Group"
-msgstr "Kogu rühm"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
 msgid  "With First Detail"
-msgstr "Koos esimese detailiga"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+#: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
 msgid  "Can Grow"
-msgstr "Võib kasvada"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+#: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
 msgid  "Can Shrink"
-msgstr "Võib kahaneda"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
 msgid  "Repeat Section"
-msgstr "Sektsiooni kordamine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+#: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
 msgid  "Print repeated values"
-msgstr "Korduvate väärtuste väljastamine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+#: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
 msgid  "Conditional Print Expression"
-msgstr "Tingimusliku väljastamise avaldis"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+#: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
 msgid  "Start new column"
-msgstr "Uue veeru alustamine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+#: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
 msgid  "Start new page"
-msgstr "Uue lehekülje alustamine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+#: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
 msgid  "Reset page number"
-msgstr "Leheküljenumbri lähtestamine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
 msgid  "Chart type"
-msgstr "Diagrammi tüüp"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+#: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
 msgid  "Print When Group Change"
-msgstr "Väljastamine rühma muutumise korral"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+#: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
 msgid  "Visible"
-msgstr "Nähtav"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+#: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
 msgid  "Group keep together"
-msgstr "Rühma kooshoidmine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
 msgid  "Per Page"
-msgstr "Lehekülgede kaupa"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
 msgid  "Per Column"
-msgstr "Veergude kaupa"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
 msgid  "None"
-msgstr "Puudub"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
 msgid  "Section"
-msgstr "Sektsioon"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
 msgid  "Automatic"
-msgstr "Automaatne"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+#: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
 msgid  "Page header"
-msgstr "Lehekülje päis"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+#: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
 msgid  "Page footer"
-msgstr "Lehekülje jalus"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
 msgid  "All Pages"
-msgstr "Kõik leheküljed"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
 msgid  "Not With Report Header"
-msgstr "Ilma aruande päiseta"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
 msgid  "Not With Report Footer"
-msgstr "Ilma aruande jaluseta"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
 msgid  "Not With Report Header/Footer"
-msgstr "Ilma aruande päise/jaluseta"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+#: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
 msgid  "Deep traversing"
-msgstr "Süvatöötlus"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+#: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
 msgid  "Pre evaluation"
-msgstr "Eelnev arvutamine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+#: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
 msgid  "Position X"
-msgstr "X-asukoht"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+#: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
 msgid  "Position Y"
-msgstr "Y-asukoht"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+#: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
 msgid  "Width"
-msgstr "Laius"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+#: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
 msgid  "Height"
-msgstr "Kõrgus"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+#: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
 msgid  "Initial value"
-msgstr "Algväärtus"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+#: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
 msgid  "Preserve as Link"
-msgstr "Säilitamine lingina"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
 msgid  "Formula"
-msgstr "Valem"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+#: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
 msgid  "Data field"
-msgstr "Andmeväli"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+#: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
 msgid  "Font"
-msgstr "Font"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+#: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
 msgid  "Background color"
-msgstr "Taustavärv"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+#: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
 msgid  "Background Transparent"
-msgstr "Läbipaistev taust"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
 msgid  "Background Transparent"
-msgstr "Läbipaistev taust"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+#: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
 msgid  "This operation is not allowed. The control overlaps with another one."
-msgstr "See toiming pole lubatud. Juhtelement kattub teisega."
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+#: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
 msgid  "This position can not be set. It is invalid."
-msgstr "Asukohta ei saa määrata. See pole lubatud."
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+#: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
 msgid  "Group: %1"
-msgstr "Rühm: %1"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
 msgid  "Function"
-msgstr "Funktsioon"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
 msgid  "Scope"
-msgstr "Skoop"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
 msgid  "Data Field Type"
-msgstr "Andmevälja tüüp"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
 msgid  "Field or Formula"
-msgstr "Väli või valem"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
 msgid  "Function"
-msgstr "Funktsioon"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
 msgid  "Counter"
-msgstr "Loendur"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
 msgid  "User defined Function"
-msgstr "Kasutaja määratud funktsioon"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+#: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
 msgid  "Link master fields"
-msgstr "Põhiväljade linkimine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+#: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
 msgid  "Link slave fields"
-msgstr "Alamväljade linkimine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+#: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr "Diagramme saab kasutada üksikasjalike andmete kuvamiseks aruande aktiivse kirje kohta. Selleks pead sa määrama, millised diagrammi veerud vastavad millistele aruande veergudele."
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+#: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
 msgid  "Chart"
-msgstr "Diagramm"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+#: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
 msgid  "Report"
-msgstr "Aruanne"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+#: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
 msgid  "Preview Row(s)"
-msgstr "Ridade eelvaade"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+#: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
 msgid  "Area"
-msgstr "Ala"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
 msgid  "Report Output Format"
-msgstr "Aruande väljundvorming"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
 msgid  "Vert. Alignment"
-msgstr "Püstjoondus"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
 msgid  "Top"
-msgstr "Üles"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
 msgid  "Middle"
-msgstr "Keskele"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
 msgid  "Bottom"
-msgstr "Alla"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
 msgid  "Horz. Alignment"
-msgstr "Rõhtjoondus"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
 msgid  "Left"
-msgstr "Vasakule"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
 msgid  "Right"
-msgstr "Paremale"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
 msgid  "Block"
-msgstr "Plokkjoondus"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
 msgid  "Center"
-msgstr "Keskele"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
 msgid  "Counter"
-msgstr "Loendur"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
 msgid  "Accumulation"
-msgstr "Kogunemine"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
 msgid  "Minimum"
-msgstr "Miinimum"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
 msgid  "Maximum"
-msgstr "Maksimum"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 msgid  "Properties: "
-msgstr "Omadused: "
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 msgid  "No Control marked"
-msgstr "Ükski juhtelement pole märgitud"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
 msgid  "Multiselection"
-msgstr "Mitmene valik"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
 msgid  "Image Control"
-msgstr "Pilt"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 msgid  "Label field"
-msgstr "Pealdiseväli"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
 msgid  "Line"
-msgstr "Joon"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
 msgid  "Formatted Field"
-msgstr "Vormindatud väli"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
 msgid  "Shape"
-msgstr "Kujund"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr "Aruanne"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
 msgid  "Section"
-msgstr "Sektsioon"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
 msgid  "Function"
-msgstr "Funktsioon"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
 msgid  "Group"
-msgstr "Rühm"
+msgstr ""
 
-#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
 msgid  "Show ruler"
-msgstr "Joonlaua kuvamine"
+msgstr ""
 
-#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
 msgid  "Show grid"
-msgstr "Alusvõrgu kuvamine"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
 msgid  "Change Object"
-msgstr "Muuda objekti"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 msgid  "Move Group(s)"
-msgstr "Liiguta rühmi"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
 msgid  "Conditional Formatting"
-msgstr "Tingimuslik vormindus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
 msgid  "Remove report header / report footer"
-msgstr "Eemalda aruande päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
 msgid  "Add report header / report footer"
-msgstr "Lisa aruande päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
 msgid  "Remove page header / page footer"
-msgstr "Eemalda lehekülje päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
 msgid  "Add page header / page footer"
-msgstr "Lisa lehekülje päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+#: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 msgid  "Change property '#'"
-msgstr "Muuda omadust '#'"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
 msgid  "Add group header "
-msgstr "Lisa rühma päis"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
 msgid  "Remove group header "
-msgstr "Eemalda rühma päis"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
 msgid  "Add group footer "
-msgstr "Lisa rühma jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
 msgid  "Remove group footer "
-msgstr "Eemalda rühma jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
 msgid  "Add function"
-msgstr "Lisa funktsioon"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
 msgid  "Delete function"
-msgstr "Kustuta funktsioon"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
 msgid  "Design"
-msgstr "Kujundus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
 msgid  "Preview"
-msgstr "Eelvaade"
+msgstr ""
 
-#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+#: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 msgid  "Report #"
-msgstr "Aruanne #"
+msgstr ""
 
-#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
 msgid  "~Report name"
-msgstr "Aruande nimi"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
 msgid  "Delete Group"
-msgstr "Kustuta rühm"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
 msgid  "Add Group"
-msgstr "Lisa rühm"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
 msgid  "Delete Selection"
-msgstr "Kustuta valik"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
 msgid  "Delete Function"
-msgstr "Kustuta funktsioon"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
 msgid  "Change Size"
-msgstr "Muuda suurust"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
 msgid  "Paste"
-msgstr "Aseta"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
 msgid  "Insert Control"
-msgstr "Lisa juhtelement"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
 msgid  "Delete Control"
-msgstr "Kustuta juhtelement"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
 msgid  "Insert Group"
-msgstr "Lisa rühm"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
 msgid  "Delete Group"
-msgstr "Kustuta rühm"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
 msgid  "GroupHeader"
-msgstr "Rühma päis"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
 msgid  "GroupFooter"
-msgstr "Rühma jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
 msgid  "Sorting and Grouping..."
-msgstr "Sortimine ja rühmitamine..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
 msgid  "Background Color..."
-msgstr "Taustavärv..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
 msgid  "Ruler..."
-msgstr "Joonlaud..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
 msgid  "Grid..."
-msgstr "Alusvõrk..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
 msgid  "~Arrange"
-msgstr "Järjestus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
 msgid  "Bring ~Forward"
-msgstr "Too ettepoole"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
 msgid  "Send Back~ward"
-msgstr "Vii tahapoole"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
 msgid  "~Object Resizing"
-msgstr "Objekti suuruse muutmine"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to smallest width"
-msgstr "Sobita vähima laiusega"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to greatest width"
-msgstr "Sobita suurima laiusega"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to smallest height"
-msgstr "Sobita vähima kõrgusega"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to greatest height"
-msgstr "Sobita suurima kõrgusega"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
 msgid  "Section"
-msgstr "Sektsioon"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
 msgid  "Shrink"
-msgstr "Vähenda"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
 msgid  "Shrink from top"
-msgstr "Vähenda ülevalt"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
 msgid  "Shrink from bottom"
-msgstr "Vähenda alt"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
 msgid  "Distribution..."
-msgstr "Jaotus..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr "Omadused..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Add field:"
-msgstr "Välja lisamine:"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
 msgid  "Filter"
-msgstr "Filter"
+msgstr ""
 
-#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+#: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base Report"
-msgstr " - %PRODUCTNAME Base'i aruanne"
+msgstr ""
 
-#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
 msgid  "Untitled"
-msgstr "Nimetu"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
 msgid  "Change Alignment"
-msgstr "Muuda joondust"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
 msgid  "# Header"
-msgstr "# päis"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
 msgid  "# Footer"
-msgstr "# jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
 msgid  "Insert graphics"
-msgstr "Pildi lisamine"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
 msgid  "Delete"
-msgstr "Kustutamine"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
 msgid  "Function"
-msgstr "Funktsioon"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
 msgid  "An error occurred while creating the report."
-msgstr "Aruande loomisel tekkis viga."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
 msgid  "An exception of type $type$ was caught."
-msgstr "Tuvastati erand tüübiga $type$."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
 msgid  "Change font"
-msgstr "Muuda fonti"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
 msgid  "Change page attributes"
-msgstr "Muuda lehekülje atribuute"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+#: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Page Header/Footer"
-msgstr "Lisa lehekülje päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+#: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Page Header/Footer"
-msgstr "Kustuta lehekülje päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+#: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Column Header/Footer"
-msgstr "Lisa veeru päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+#: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Column Header/Footer"
-msgstr "Kustuta veeru päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+#: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Report Header/Footer"
-msgstr "Lisa aruande päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+#: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Report Header/Footer"
-msgstr "Kustuta aruande päis või jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
 msgid  "The report can not be executed unless it is bound to content."
-msgstr "Aruande loomist ei saa käivitada, sest aruanne on seotud sisuga."
+msgstr ""
 
-#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr "Aruande loomist ei saa käivitada, kuni vähemalt üht objekti pole lisatud."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
 msgid  "Shrink Section"
-msgstr "Sektsiooni kahandamine"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"
-msgstr "Detail"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
 msgid  "Page Header"
-msgstr "Lehekülje päis"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
 msgid  "Page Footer"
-msgstr "Lehekülje jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
 msgid  "Report Header"
-msgstr "Aruande päis"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
 msgid  "Report Footer"
-msgstr "Aruande jalus"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
 msgid  "Insert"
-msgstr "Lisamine"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
+msgid  "Detail"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
+msgid  "Page Header"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
+msgid  "Page Footer"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
+msgid  "Group Header"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
+msgid  "Group Footer"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
+msgid  "Report Header"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
+msgid  "Report Footer"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
+msgid  "The name '#1' already exists and can not be asssigned again."
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
+msgid  "The element is invalid."
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
+msgid  "Label field"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
+msgid  "Formatted field"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
+msgid  "Image control"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
+msgid  "Report"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
+msgid  "Shape"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
+msgid  "Fixed line"
+msgstr ""
