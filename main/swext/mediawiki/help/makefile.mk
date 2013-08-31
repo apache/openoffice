@@ -27,12 +27,6 @@ TARGET=$(PRJNAME)_help
 
 .INCLUDE : settings.mk
 
-LANGUAGE_FILELIST=wikiformats.xhp \
-wiki.xhp \
-wikisettings.xhp \
-wikiaccount.xhp \
-wikisend.xhp
-
 .IF "$(WITH_LANG)"!=""
 # workaround for the problem in help, the help uses en instead of en-US
 MEDIAWIKI_LANG=$(uniq en $(alllangiso))

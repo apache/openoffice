@@ -30,7 +30,13 @@ LANGUAGE_FILELIST=../mediawiki/help/wikiaccount.xhp \
 ../mediawiki/help/wiki.xhp \
 ../mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu \
 ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu \
-../mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu
+../mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu \
+../mediawiki/help/wikiformats.xhp \
+../mediawiki/help/wiki.xhp \
+../mediawiki/help/wikisettings.xhp \
+../mediawiki/help/wikiaccount.xhp \
+../mediawiki/help/wikisend.xhp
+
 
 
 .INCLUDE :	settings.mk
