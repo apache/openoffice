@@ -31,7 +31,7 @@ TARGET=starmath
 LIBTARGET=NO
 
 # --- Settings -----------------------------------------------------
-LANGUAGE_FILELIST=symbol.src toolbox.src
+LANGUAGE_FILELIST=symbol.src toolbox.src commands.src smres.src
 
 
 ENABLE_EXCEPTIONS=TRUE

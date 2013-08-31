@@ -63,7 +63,7 @@ LANGUAGE_FILELIST=../registry/data/org/openoffice/Office/Common.xcu \
 ../registry/data/org/openoffice/Office/UI.xcu \
 ../registry/data/org/openoffice/Office/UI/XFormsWindowState.xcu \
 ../registry/data/org/openoffice/Office/WebWizard.xcu \
-../registry/data/org/openoffice/Office/Writer.xcu
+../registry/data/org/openoffice/Office/Writer.xcu 
 
 
 .INCLUDE :	settings.mk

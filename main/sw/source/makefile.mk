@@ -138,7 +138,10 @@ ui/utlui/poolfmt.src \
 ui/utlui/unotools.src \
 ui/utlui/utlui.src \
 ui/web/web.src \
-ui/wrtsh/wrtsh.src
+ui/wrtsh/wrtsh.src \
+ui/sidebar/WrapPropertyPanel.src \
+ui/sidebar/PagePropertyPanel.src
+
 
 
 .INCLUDE :	settings.mk

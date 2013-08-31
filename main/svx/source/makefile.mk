@@ -75,7 +75,16 @@ toolbars/fontworkbar.src \
 unodialogs/textconversiondlgs/chinese_dialogs.src \
 unodialogs/textconversiondlgs/chinese_dictionarydialog.src \
 unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc \
-unodialogs/textconversiondlgs/chinese_translationdialog.src
+unodialogs/textconversiondlgs/chinese_translationdialog.src \
+sidebar/graphic/GraphicPropertyPanel.src \
+sidebar/line/LinePropertyPanel.src \
+sidebar/EmptyPanel.src \
+sidebar/text/TextPropertyPanel.src \
+sidebar/possize/PosSizePropertyPanel.src \
+sidebar/area/AreaPropertyPanel.src \
+sidebar/paragraph/ParaPropertyPanel.src \
+sidebar/insert/InsertPropertyPanel.src \
+../inc/globlmn_tmpl.hrc
 
 
 .INCLUDE :	settings.mk
