@@ -31,1242 +31,1242 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
-msgid  "Detail"
-msgstr "Podrobnosti"
-
-#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
-msgid  "Page Header"
-msgstr "Hlavička strany"
-
-#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
-msgid  "Page Footer"
-msgstr "Päta strany"
-
-#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
-msgid  "Group Header"
-msgstr "Hlavička zoskupenia"
-
-#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
-msgid  "Group Footer"
-msgstr "Päta zoskupenia"
-
-#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
-msgid  "Report Header"
-msgstr "Hlavička správy"
-
-#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
-msgid  "Report Footer"
-msgstr "Päta správy"
-
-#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
-msgid  "The name '#1' already exists and can not be asssigned again."
-msgstr "Názov '#1' už existuje a nemôže byť priradený znova."
-
-#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
-msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr "Pokúsili ste sa nastaviť neplatný argument. Prosím pozrite sa na '#1' pre platné argumenty."
-
-#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
-msgid  "The element is invalid."
-msgstr "Prvok je neplatný."
-
-#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
-msgid  "Label field"
-msgstr "Popisné pole"
-
-#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
-msgid  "Formatted field"
-msgstr "Formátované pole"
-
-#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
-msgid  "Image control"
-msgstr "Ovládacie pole obrázku"
-
-#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "Správa"
-
-#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
-msgid  "Shape"
-msgstr "Tvar"
-
-#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
-msgid  "Fixed line"
-msgstr "Pevná čiara"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FLOATINGWINDOW.TEXT
 msgid  "Sorting and Grouping"
-msgstr "Zoraďovanie a zoskupovanie"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "Groups"
-msgstr "Zoskupenie"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FIXEDTEXT.TEXT
 msgid  "Group actions"
-msgstr "Činnosti pre zoskupenie"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.TOOLBOXITEM.TEXT
 msgid  "Move up"
-msgstr "Presunúť vyššie"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.TOOLBOXITEM.TEXT
 msgid  "Move down"
-msgstr "Presunúť nižšie"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.TOOLBOXITEM.TEXT
 msgid  "~Delete"
-msgstr "~Zmazať"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "Properties"
-msgstr "Vlastnosti"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
 msgid  "Sorting"
-msgstr "Zoraďovanie"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.STRINGLIST.ITEM
 msgid  "Ascending"
-msgstr "Vzostupne"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.STRINGLIST.ITEM
 msgid  "Descending"
-msgstr "Zostupne"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Group Header"
-msgstr "Hlavička zoskupenia"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Present"
-msgstr "Obsahuje"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Not present"
-msgstr "Neobsahuje"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
 msgid  "Group Footer"
-msgstr "Päta zoskupenia"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Present"
-msgstr "Obsahuje"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Not present"
-msgstr "Neobsahuje"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
 msgid  "Group On"
-msgstr "Zoskupenie zapnuté"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Each Value"
-msgstr "Každá hodnota"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FIXEDTEXT.TEXT
 msgid  "Group Interval"
-msgstr "Interval zoskupenia"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FIXEDTEXT.TEXT
 msgid  "Keep Together"
-msgstr "Zachovať spolu"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
 msgid  "No"
-msgstr "Nie"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
 msgid  "Whole Group"
-msgstr "Celé zoskupenie"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.STRINGLIST.ITEM
 msgid  "With First Detail"
-msgstr "S prvými podrobnosťami"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Help"
-msgstr "Pomocník"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
 msgid  "Field/Expression"
-msgstr "Pole/výraz"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_SORTING.STRING.TEXT
 msgid  "Sort Order"
-msgstr "Poradie zoraďovania"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.STRING.TEXT
 msgid  "Prefix Characters"
-msgstr "Pedchádzajúce znaky"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
 msgid  "Year"
-msgstr "Rok"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
 msgid  "Quarter"
-msgstr "Štvrtina"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
 msgid  "Month"
-msgstr "Mesiac"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
 msgid  "Week"
-msgstr "Týždeň"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
 msgid  "Day"
-msgstr "Deň"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HOUR.STRING.TEXT
 msgid  "Hour"
-msgstr "Hodina"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.STRING.TEXT
 msgid  "Minute"
-msgstr "Minúta"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.STRING.TEXT
 msgid  "Interval"
-msgstr "Interval"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
 msgid  "Select a field or type an expression to sort or group on."
-msgstr "Vyberte pole alebo zadajte výraz pre zoraďovanie zoskupenia."
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
 msgid  "Display a header for this group?"
-msgstr "Zobraziť hlavičku pre toto zoskupenie?"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.STRING.TEXT
 msgid  "Display a footer for this group?"
-msgstr "Zobraziť pätu pre toto zoskupenie?"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.STRING.TEXT
 msgid  "Select the value or range of values that starts a new group."
-msgstr "Vyberte hodnotu alebo oblasť hodnôt, ktoré začnú nové zoskupenie."
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.STRING.TEXT
 msgid  "Interval or number of characters to group on."
-msgstr "Interval alebo počet znakov pre zoskupenie."
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.STRING.TEXT
 msgid  "Keep group together on one page?"
-msgstr "Zachovať zoskupenie spolu na strane?"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.STRING.TEXT
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr "Vyberte vzostupné alebo zostupné poradie zoraďovania. Vzostupné znamená of A do Z alebo od 0 do 9"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.MODALDIALOG.TEXT
 msgid  "Page Numbers"
-msgstr "Čísla strán"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
 msgid  "Format"
-msgstr "Formát"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
 msgid  "Page N"
-msgstr "Strana N"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RADIOBUTTON.TEXT
 msgid  "Page N of M"
-msgstr "Strana N z M"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
 msgid  "Position"
-msgstr "Umiestnenie"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
 msgid  "Top of Page (Header)"
-msgstr "Vrch strany (hlavička)"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RADIOBUTTON.TEXT
 msgid  "Bottom of Page (Footer)"
-msgstr "Spodok strany (päta)"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
 msgid  "General"
-msgstr "Všeobecné"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
 msgid  "Alignment:"
-msgstr "Zarovnanie:"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 msgid  "Left"
-msgstr "Vľavo"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 msgid  "Center"
-msgstr "Na stred"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 msgid  "Right"
-msgstr "Vpravo"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
 msgid  "Show Number on First Page"
-msgstr "Zobraziť číslo na prvej strane"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr "~Pomocník"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+#: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
 msgid  "\"Page \" & #PAGENUMBER#"
-msgstr "\"Strana \" & #PAGENUMBER#"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+#: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
 msgid  " & \" of \" & #PAGECOUNT#"
-msgstr " & \" z \" & #PAGECOUNT#"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TABDIALOG.TEXT
 msgid  "Page Setup"
-msgstr "Nastavenie strany"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
 msgid  "Page"
-msgstr "Strana"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
 msgid  "Background"
-msgstr "Pozadie"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "Návrat"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
 msgid  "Page"
-msgstr "Strana"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
 msgid  "Background"
-msgstr "Pozadie"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
 msgid  "Section Setup"
-msgstr "Nastavenie oblasti"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "Návrat"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
 msgid  "Background"
-msgstr "Pozadie"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
 msgid  "Character Settings"
-msgstr "Naszavenia znaku"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
 msgid  "Font"
-msgstr "Písmo"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr "Efekty pre písmo"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
 msgid  "Position"
-msgstr "Umiestnenie"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
 msgid  "Asian Layout"
-msgstr "Ázijské rozloženie"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
 msgid  "Background"
-msgstr "Pozadie"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
 msgid  "Alignment"
-msgstr "Zarovnanie"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "Návrat"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
 msgid  "Character"
-msgstr "Znak"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
 msgid  "Line"
-msgstr "Úsečka"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
 msgid  "Line"
-msgstr "Úsečka"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
 msgid  "Line Styles"
-msgstr "Štýly čiar"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
 msgid  "Arrow Styles"
-msgstr "Štýly šipiek"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "Návrat"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
 msgid  "Line"
-msgstr "Úsečka"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+#: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
 msgid  "Report navigator"
-msgstr "Naviátor správou"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+#: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
 msgid  "Functions"
-msgstr "Funkcie"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+#: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
 msgid  "Groups"
-msgstr "Zoskupenie"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
 msgid  "Sorting and Grouping..."
-msgstr "Zoraďovanie a zoskupovanie..."
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
 msgid  "Page Header/Footer..."
-msgstr "Strana Hlavička/Päta..."
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
 msgid  "Report Header/Footer..."
-msgstr "Správa Hlavička/Päta..."
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
 msgid  "New Function"
-msgstr "Nová funkcia"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr "Vlastnosti..."
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Field Value Is"
-msgstr "Hodnota poľa je"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Expression Is"
-msgstr "Výraz je"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
 msgid  "between"
-msgstr "medzi"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
 msgid  "not between"
-msgstr "nie je medzi"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
 msgid  "equal to"
-msgstr "sa rovná"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
 msgid  "not equal to"
-msgstr "nie je rovné"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
 msgid  "greater than"
-msgstr "je väčší ako"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
 msgid  "less than"
-msgstr "je menšie ako"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
 msgid  "greater than or equal to"
-msgstr "je väčší alebo sa rovná"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
 msgid  "less than or equal to"
-msgstr "je menšie alebo sa rovná"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+#: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
 msgid  "and"
-msgstr "a"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+#: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
 msgid  "Example"
-msgstr "Príklad"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+#: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
 msgid  "Conditional Formatting"
-msgstr "Podmienené formátovanie"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+#: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr "~Pomocník"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+#: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
 msgid  "Condition $number$"
-msgstr "Podmienka $number$"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+#: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
 msgid  "White"
-msgstr "Biela"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+#: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
 msgid  "Font color"
-msgstr "Farba písma"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+#: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
 msgid  "Background"
-msgstr "Pozadie"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+#: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
 msgid  "No Fill"
-msgstr "Bez výplne"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
 msgid  "Sort Ascending"
-msgstr "Zoradiť vzostupne"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
 msgid  "Sort Descending"
-msgstr "Zoradiť zostupne"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
 msgid  "Remove sorting"
-msgstr "Odstrániť zoraďovanie"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
 msgid  "Insert"
-msgstr "Vložiť"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+#: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Help"
-msgstr "Pomocník"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+#: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr "Zvýraznite polia pre vloženie do vybranej oblasti šablóny, potom kliknite na Vložiť alebo stlačte Enter."
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
 msgid  "Date and Time"
-msgstr "Dátum a čas"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
 msgid  "Include Date"
-msgstr "Zahrnúť dátum"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
 msgid  "Format"
-msgstr "Formát"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
 msgid  "Include Time"
-msgstr "Zahrnúť čas"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
 msgid  "Format"
-msgstr "Formát"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr "~Pomocník"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+#: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 msgid  "General"
-msgstr "Všeobecné"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+#: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 msgid  "Data"
-msgstr "Dáta"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
 msgid  "No"
-msgstr "Nie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
 msgid  "Yes"
-msgstr "Áno"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
 msgid  "Force New Page"
-msgstr "Vynútiť novú stranu"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
 msgid  "None"
-msgstr "Žiadne"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
 msgid  "Before Section"
-msgstr "Pred oblasťou"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
 msgid  "After Section"
-msgstr "Za oblasťou"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
 msgid  "Before & After Section"
-msgstr "Pred a za oblasťou"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+#: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
 msgid  "New Row Or Column"
-msgstr "Nový riadok alebo stĺpec"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
 msgid  "Keep Together"
-msgstr "Zachovať spolu"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
 msgid  "No"
-msgstr "Nie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
 msgid  "Whole Group"
-msgstr "Celé zoskupenie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
 msgid  "With First Detail"
-msgstr "S prvými podrobnosťami"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+#: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
 msgid  "Can Grow"
-msgstr "Môže rásť"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+#: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
 msgid  "Can Shrink"
-msgstr "Môže zmenšiť"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
 msgid  "Repeat Section"
-msgstr "Opakovať oblasť"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+#: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
 msgid  "Print repeated values"
-msgstr "Tlačiť opakované hodnoty"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+#: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
 msgid  "Conditional Print Expression"
-msgstr "Podmienený výraz pre tlač"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+#: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
 msgid  "Start new column"
-msgstr "Začať nový stĺpec"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+#: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
 msgid  "Start new page"
-msgstr "Začať novú stranu"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+#: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
 msgid  "Reset page number"
-msgstr "Obnoviť číslo strany"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
 msgid  "Chart type"
-msgstr "Typ grafu"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+#: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
 msgid  "Print When Group Change"
-msgstr "Tlačiť pri zmene zoskupenia"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+#: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
 msgid  "Visible"
-msgstr "Viditeľné"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+#: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
 msgid  "Group keep together"
-msgstr "Zachovať zoskupenie spolu"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
 msgid  "Per Page"
-msgstr "Na strane"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
 msgid  "Per Column"
-msgstr "V stĺpci"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
 msgid  "None"
-msgstr "Žiadne"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
 msgid  "Section"
-msgstr "Oblasť"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
 msgid  "Automatic"
-msgstr "Automaticky"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+#: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
 msgid  "Page header"
-msgstr "Hlavička strany"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+#: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
 msgid  "Page footer"
-msgstr "Päta strany"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
 msgid  "All Pages"
-msgstr "Všetky strany"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
 msgid  "Not With Report Header"
-msgstr "Nie s hlavičkou správy"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
 msgid  "Not With Report Footer"
-msgstr "Nie s pätou správy"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
 msgid  "Not With Report Header/Footer"
-msgstr "Nie s hlavičkou/pätou správy"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+#: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
 msgid  "Deep traversing"
-msgstr "Hlboké križovanie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+#: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
 msgid  "Pre evaluation"
-msgstr "Predhodnotenie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+#: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
 msgid  "Position X"
-msgstr "Pozícia X"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+#: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
 msgid  "Position Y"
-msgstr "Pozícia Y"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+#: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
 msgid  "Width"
-msgstr "Šírka"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+#: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
 msgid  "Height"
-msgstr "Výška"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+#: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
 msgid  "Initial value"
-msgstr "Úvodná hodnota"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+#: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
 msgid  "Preserve as Link"
-msgstr "Zachovať ako odkaz"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
 msgid  "Formula"
-msgstr "Vzorec"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+#: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
 msgid  "Data field"
-msgstr "Dátové pole"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+#: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
 msgid  "Font"
-msgstr "Písmo"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+#: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
 msgid  "Background color"
-msgstr "Farba pozadia"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+#: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
 msgid  "Background Transparent"
-msgstr "Priehľadné pozadie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
 msgid  "Background Transparent"
-msgstr "Priehľadné pozadie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+#: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
 msgid  "This operation is not allowed. The control overlaps with another one."
-msgstr "Táto operácia nie je povolená. Ovládací prvok sa prekrýva s iným ovládacím prvkom."
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+#: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
 msgid  "This position can not be set. It is invalid."
-msgstr "Toto umiestnenie nemôže byť nastavené. Je neplatné."
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+#: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
 msgid  "Group: %1"
-msgstr "Skupina: %1"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
 msgid  "Function"
-msgstr "Funkcia"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
 msgid  "Scope"
-msgstr "Pokrytrie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
 msgid  "Data Field Type"
-msgstr "Typ dátového poľa"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
 msgid  "Field or Formula"
-msgstr "Pole alebo vzorec"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
 msgid  "Function"
-msgstr "Funkcia"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
 msgid  "Counter"
-msgstr "Počítadlo"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
 msgid  "User defined Function"
-msgstr "Používateľom definovaná funkcia"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+#: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
 msgid  "Link master fields"
-msgstr "Prepojiť hlavné polia"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+#: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
 msgid  "Link slave fields"
-msgstr "Prepojiť závislé polia"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+#: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr "Grafy môžu byť použité pre zobrazenie podrobných dát o aktuálnom zázname správy. Pre toto môžete určiť ktoré stĺpce v grafe sú spojené so stĺpcami vo správe."
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+#: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
 msgid  "Chart"
-msgstr "Graf"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+#: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
 msgid  "Report"
-msgstr "Správa"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+#: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
 msgid  "Preview Row(s)"
-msgstr "Náhľad riadka(ov)"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+#: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
 msgid  "Area"
-msgstr "Oblasť"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
 msgid  "Report Output Format"
-msgstr "Formát výstupu správy"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
 msgid  "Vert. Alignment"
-msgstr "Zvisl. zarovnanie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
 msgid  "Top"
-msgstr "Hore"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
 msgid  "Middle"
-msgstr "Uprostred"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
 msgid  "Bottom"
-msgstr "Dole"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
 msgid  "Horz. Alignment"
-msgstr "Vod. zarovnanie"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
 msgid  "Left"
-msgstr "Vľavo"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
 msgid  "Right"
-msgstr "Vpravo"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
 msgid  "Block"
-msgstr "Do bloku"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
 msgid  "Center"
-msgstr "Na stred"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
 msgid  "Counter"
-msgstr "Počítadlo"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
 msgid  "Accumulation"
-msgstr "Akumulácia"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
 msgid  "Minimum"
-msgstr "Minimum"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
 msgid  "Maximum"
-msgstr "Maximum"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 msgid  "Properties: "
-msgstr "Vlastnosti: "
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 msgid  "No Control marked"
-msgstr "Nie je označené žiadne kontrolné pole"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
 msgid  "Multiselection"
-msgstr "Viacnásobný výber"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
 msgid  "Image Control"
-msgstr "Ovládacie pole obrázka"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 msgid  "Label field"
-msgstr "Popisné pole"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
 msgid  "Line"
-msgstr "Úsečka"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
 msgid  "Formatted Field"
-msgstr "Formátované pole"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
 msgid  "Shape"
-msgstr "Tvar"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr "Správa"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
 msgid  "Section"
-msgstr "Oblasť"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
 msgid  "Function"
-msgstr "Funkcia"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
 msgid  "Group"
-msgstr "Zoskupiť"
+msgstr ""
 
-#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
 msgid  "Show ruler"
-msgstr "Zobraziť pravítko"
+msgstr ""
 
-#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
 msgid  "Show grid"
-msgstr "Zobraziť mriežku"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
 msgid  "Change Object"
-msgstr "Zmeniť objekt"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 msgid  "Move Group(s)"
-msgstr "Presunúť zoskupenie(a)"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
 msgid  "Conditional Formatting"
-msgstr "Podmienené formátovanie"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
 msgid  "Remove report header / report footer"
-msgstr "Odstrániť hlavičku / pätu správy"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
 msgid  "Add report header / report footer"
-msgstr "Pridať hlavičku / pätu správy"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
 msgid  "Remove page header / page footer"
-msgstr "Odstrániť hlavičku / pätu strany"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
 msgid  "Add page header / page footer"
-msgstr "Pridať hlavičku / pätu strany"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+#: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 msgid  "Change property '#'"
-msgstr "Zmeniť vlastnosť '#'"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
 msgid  "Add group header "
-msgstr "Pridať hlavičku zoskupenia "
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
 msgid  "Remove group header "
-msgstr "Odstrániť hlavičku zoskupenia"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
 msgid  "Add group footer "
-msgstr "Pridať pätu zoskupenia"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
 msgid  "Remove group footer "
-msgstr "Odstrániť pätu zoskupenia"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
 msgid  "Add function"
-msgstr "Pridať funkciu"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
 msgid  "Delete function"
-msgstr "Zmazať funkciu"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
 msgid  "Design"
-msgstr "Návrh"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
 msgid  "Preview"
-msgstr "Náhľad"
+msgstr ""
 
-#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+#: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 msgid  "Report #"
-msgstr "Správa #"
+msgstr ""
 
-#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
 msgid  "~Report name"
-msgstr "Názov ~zostavy"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
 msgid  "Delete Group"
-msgstr "Zmazať zoskupenie"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
 msgid  "Add Group"
-msgstr "Pridať zoskupenie"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
 msgid  "Delete Selection"
-msgstr "Zmazať výber"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
 msgid  "Delete Function"
-msgstr "Zmazať funkciu"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
 msgid  "Change Size"
-msgstr "Zmeniť veľkosť"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
 msgid  "Paste"
-msgstr "Vložiť"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
 msgid  "Insert Control"
-msgstr "Vložiť ovládací prvok"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
 msgid  "Delete Control"
-msgstr "Zmazať ovládací prvok"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
 msgid  "Insert Group"
-msgstr "Vložiť zoskupenie"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
 msgid  "Delete Group"
-msgstr "Zmazať zoskupenie"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
 msgid  "GroupHeader"
-msgstr "HlavičkaZoskupenia"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
 msgid  "GroupFooter"
-msgstr "PätaZoskupenia"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
 msgid  "Sorting and Grouping..."
-msgstr "Zoraďovanie a zoskupovanie..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
 msgid  "Background Color..."
-msgstr "Farba pozadia..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
 msgid  "Ruler..."
-msgstr "Pravítko..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
 msgid  "Grid..."
-msgstr "Mriežka..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
 msgid  "~Arrange"
-msgstr "Usporiad~ať"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
 msgid  "Bring ~Forward"
-msgstr "Preniesť ~bližšie"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
 msgid  "Send Back~ward"
-msgstr "P~reniesť ďalej"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
 msgid  "~Object Resizing"
-msgstr "Zmena veľkosti ~objektu"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to smallest width"
-msgstr "Prispôsobiť na~jmenšej šírke"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to greatest width"
-msgstr "Prispôsobiť na~jväčšej šírke"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to smallest height"
-msgstr "Prispôsobiť na~jmenšej výške"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to greatest height"
-msgstr "Prispôsobiť na~jväčšej výške"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
 msgid  "Section"
-msgstr "Oblasť"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
 msgid  "Shrink"
-msgstr "Zmenšiť"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
 msgid  "Shrink from top"
-msgstr "Zmenšiť zhora"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
 msgid  "Shrink from bottom"
-msgstr "Zmenšiť zdola"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
 msgid  "Distribution..."
-msgstr "Rozloženie..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr "Vlastnosti..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Add field:"
-msgstr "Pridať pole:"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
 msgid  "Filter"
-msgstr "Filter"
+msgstr ""
 
-#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+#: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base Report"
-msgstr " - %PRODUCTNAME Base Správa"
+msgstr ""
 
-#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
 msgid  "Untitled"
-msgstr "Bez_názvu"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
 msgid  "Change Alignment"
-msgstr "Zmeniť zarovnanie"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
 msgid  "# Header"
-msgstr "# Hlavička"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
 msgid  "# Footer"
-msgstr "# Päta"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
 msgid  "Insert graphics"
-msgstr "Vložiť obrázok"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
 msgid  "Delete"
-msgstr "Zmazať"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
 msgid  "Function"
-msgstr "Funkcia"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
 msgid  "An error occurred while creating the report."
-msgstr "Počas vytvárania správy sa vyskytla chyba."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
 msgid  "An exception of type $type$ was caught."
-msgstr "Bola zachytená výnimka typu $type$."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
 msgid  "Change font"
-msgstr "Zmeniť písmo"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
 msgid  "Change page attributes"
-msgstr "Zmeniť atribúty strany"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+#: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Page Header/Footer"
-msgstr "Vložiť hlavičku/pätu strany"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+#: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Page Header/Footer"
-msgstr "Zmazať hlavičku/pätu strany"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+#: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Column Header/Footer"
-msgstr "Vložiť hlavičku/pätu stĺpca"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+#: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Column Header/Footer"
-msgstr "Zmazať hlavičku/pätu stĺpca"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+#: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Report Header/Footer"
-msgstr "Vložiť hlavičku/pätu správy"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+#: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Report Header/Footer"
-msgstr "Zmazať hlavičku/pätu správy"
+msgstr ""
 
-#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
 msgid  "The report can not be executed unless it is bound to content."
-msgstr "Správa nemôže byť vykonaná bej jej zviazania s obsahom."
+msgstr ""
 
-#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr "Správa nemôže byť vykonaná pokým nie je vložený aspoň jeden objekt."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
 msgid  "Shrink Section"
-msgstr "Zmenšiť oblasť"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"
-msgstr "Podrobnosti"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
 msgid  "Page Header"
-msgstr "Hlavička strany"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
 msgid  "Page Footer"
-msgstr "Päta strany"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
 msgid  "Report Header"
-msgstr "Hlavička správy"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
 msgid  "Report Footer"
-msgstr "Päta správy"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
 msgid  "Insert"
-msgstr "Vložiť"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
+msgid  "Detail"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
+msgid  "Page Header"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
+msgid  "Page Footer"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
+msgid  "Group Header"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
+msgid  "Group Footer"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
+msgid  "Report Header"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
+msgid  "Report Footer"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
+msgid  "The name '#1' already exists and can not be asssigned again."
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
+msgid  "The element is invalid."
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
+msgid  "Label field"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
+msgid  "Formatted field"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
+msgid  "Image control"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
+msgid  "Report"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
+msgid  "Shape"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
+msgid  "Fixed line"
+msgstr ""

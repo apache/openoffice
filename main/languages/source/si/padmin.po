@@ -31,814 +31,814 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FIXEDTEXT.TEXT
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr "ඔබට අකුරු ආයාත කිරීමට අවශ්‍ය කුමන බහලුමෙන්දැයි තෝරන්න. හරි බොත්තම එබීමෙන් තේරූ අකුරු එක් කරන්න."
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
-msgid  "Source directory"
-msgstr "මූල බහලුම"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
-msgid  "Sea~rch Subdirectories"
-msgstr "උප බහලුම් පරීක්ෂා කරන්න (~r)"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
-msgid  "Target options"
-msgstr "ඉලක්ක අභිරුචි"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
-msgid  "Create ~soft links only"
-msgstr "මෘදු ඈඳුම් පමණක් තනන්න (~s)"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
-msgid  "~Select All"
-msgstr "සියල්ල තෝරන්න (~S)"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
-msgid  "Add fonts"
-msgstr "ෆොන්ට එක් කරන්න"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr "ඔබට ඇත්තටම මෙම ෆොන්ට ගොනුව මත ලිවීමට අවශ්‍යද?\n   %s"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
-msgid  "All"
-msgstr "සියල්ල"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
-msgid  "None"
-msgstr "කිසිවක් නැත"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "%s ෆොන්ටය සඳහා හැඩතල ගොනුවක් (.afm දිගුවක් සහිත) හමු නොවුණු නිසා \n‍ෆොන්ටය ස්ථාපනය කිරීමට නොහැක. හැඩතල ගොනු ghostscript මඟින් සාදගත හැක, උදාහරණයක් ලෙස සහ ෆොන්ට ගොනු හෝ ඒවායේ afm උප බහලුම් පිහිටි බහලුමේහිම පිහිටීමට අවශ්‍යය."
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "%s ෆොන්ට ගොනුව සඳහා ප්‍රමිති ගොනුව\nපිටපත් කිරීමට නොහැකි විය. ෆොන්ටය ස්ථාපනය නොවනු ඇත."
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "ෆොන්ට ගොනුව\n%s\n ගොනුව පිටපත් කිරීමට නොහැකි විය. ෆොන්ට ස්ථාපනය නොවනු ඇත."
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
-msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr "ලිවිය හැකි fonts.dir ගොනුවක් සහිත බහලුමක් ෆොන්ට පෙතේ අඩංගු නොවේ. එමනිසා ෆොන්ට ස්ථාපනය කළ නොහැක."
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
-msgid  "%d new fonts were added."
-msgstr "නව ෆොන්ට %d ක් එක් කරන ලදි."
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
-msgid  "Add Fonts"
-msgstr "ෆොන්ට එක් කරන්න"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
-msgid  "CUPS support"
-msgstr "CUPS සහය"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
-msgid  "Disable CUPS Support"
-msgstr "CUPS සහය අක්‍රිය කරන්න"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
-msgid  "Close"
-msgstr "චසන්න"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
-msgid  "Installed ~printers"
-msgstr "ස්ථාපනය කළ මුද්‍රණ යන්ත්‍ර (~p)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
-msgid  "Command:"
-msgstr "විධානය:"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
-msgid  "Driver:"
-msgstr "ධාවකය:"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
-msgid  "Location:"
-msgstr "පිහිටීම:"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
-msgid  "Comment:"
-msgstr "අදහස:"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
-msgid  "Properties..."
-msgstr "ගුණාංග..."
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
-msgid  "R~ename..."
-msgstr "නම වෙනස් කරන්න... (~e)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
-msgid  "~Default"
-msgstr "පෙරනිමි (~D)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
-msgid  "Remo~ve..."
-msgstr "ඉවත් කරන්න... (~v)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
-msgid  "Test ~Page"
-msgstr "පරික්ෂණ පිටුව (~P)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
-msgid  "Fon~ts..."
-msgstr "ෆොන්ට... (~t)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
-msgid  "New Printer..."
-msgstr "නව මුද්‍රණ යන්ත්‍රය..."
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
-msgid  "Default printer"
-msgstr "පෙරනිමි මුද්‍රණ යන්ත්‍රය"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
-msgid  "Rename"
-msgstr "නැවත නම් කරන්න"
-
-#: source/padialog.src#RID_PADIALOG.String.Text
-msgid  "Printer Administration"
-msgstr "මුද්‍රණ යන්ත්‍ර පරිපාලනය"
-
-#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
-msgid  "Could not open printer %s."
-msgstr "%s මුද්‍රණ යන්ත්‍රය විවෘත කිරීමට නොහැකි විය."
-
-#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
-msgid  "The test page was printed succesfully. Please check the result."
-msgstr "පරීක්ෂණ පිටුව සාර්ථක ලෙස මුද්‍රණය කරන ලදි. කරුණාකර ප්‍රතිඵලය පරීක්ෂා කරන්න."
-
-#: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
-#: source/padialog.src#RID_QRY_PRTNAME.String.Text
-msgid  "~New printer name"
-msgstr "නව මුද්‍රණ යන්ත්‍රයේ නම (~N)"
-
-#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
-msgid  "Model"
-msgstr "ආකෘතිය"
-
-#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
-msgid  "Name"
-msgstr "නම"
-
-#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
-msgid  "Comment"
-msgstr "අදහස"
-
-#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
-msgid  "Queue"
-msgstr "පෝළිම"
-
-#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
-msgid  "Date"
-msgstr "දිනය"
-
-#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
-msgid  "Time"
-msgstr "කාලය"
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
-msgid  "Close"
-msgstr "චහන්න"
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
-msgid  "Re~name..."
-msgstr "නැවත නම් කරන්න... (~n)"
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
-msgid  "~Remove..."
-msgstr "ඉවත් කරන්න... (~R)"
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
-msgid  "~Add..."
-msgstr "එක් කරන්න... (~A)"
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
-msgid  "Note: The fonts are only available to the applications."
-msgstr "සටහන: ෆොන්ට මෙම යෙදුම් සඳහා පමණක් ප්‍රයෝජනයට ගත හැක."
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
-msgid  "~New name for %s"
-msgstr "%s සඳහා නව නම (~N)"
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
-msgid  "~New name for %s (%d1 of %d2)"
-msgstr "%s (%d1 හි %d2) සඳහා නව නම (~N)"
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
-msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr "ලිවීමේ අවසර නැති නිසා %s ෆොන්ටය නැවත නම් කළ නොහැක."
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
-msgid  "Fonts"
-msgstr "ෆොන්ට"
-
-#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
-msgid  "Test page"
-msgstr "පරික්ෂණ පිටුව"
-
-#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
-msgid  "Wrong environment"
-msgstr "වැරදි පරිසරය"
-
-#: source/padialog.src#RID_YOU_SURE.String.Text
-msgid  "Are you sure ?"
-msgstr "ඔබට විශ්වාසද ?"
-
-#: source/padialog.src#RID_AFMERROR_OK.String.Text
-msgid  "No error"
-msgstr "දෝෂයක් නැත"
-
-#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
-msgid  "The metric does not contain a 'FontName' entry."
-msgstr "ප්‍රමිතියේ 'ෆොන්ට නාම' ප්‍රවේශයක් අඩංගු නොවේ."
-
-#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
-msgid  "The metric does not contain a 'FullName' entry."
-msgstr "ප්‍රමිතියේ 'සම්පූර්ණ නාම' ප්‍රවේශයක් අඩංගු නොවේ."
-
-#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
-msgid  "The metric does not contain a 'FamilyName' entry."
-msgstr "ප්‍රමිතියේ 'පවුල් නාම' ප්‍රවේශයක් අඩංගු නොවේ."
-
-#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
-msgid  "The converted metric could not be written."
-msgstr "පරිවර්තනය කළ ප්‍රමිතිය ලිවීමට නොහැකි විය."
-
-#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
-msgid  "The metric could not be read."
-msgstr "ප්‍රමිතිය කියවීමට නොහැකි විය."
-
-#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
-msgid  "A temporary file could not be created."
-msgstr "තාවකාලිය ගොනුවක් තැනීමට නොහැකි විය."
-
-#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
-msgid  "The file does not contain a metric."
-msgstr "ගොනුවේ ප්‍රමිතියක් අඩංගු නොවේ."
-
-#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr "මෙට්‍රික්\n\n%s\n\nපහත හේතුව නිසා අනුවර්තනය කල නොහැක:\n\n"
-
-#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
-msgid  "Progress"
-msgstr "ප්‍රගතිය"
-
-#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
-msgid  "Please wait"
-msgstr "කරුණාකර රැඳී සිටින්න"
-
-#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
-msgid  "Font metrics conversion"
-msgstr "ෆොන්ට ප්‍රමිති පරිවර්තනය"
-
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
-msgid  "Dri~ver directory"
-msgstr "ධාවක බහලුම(~v)"
-
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
-msgid  "Please select the driver directory."
-msgstr "කරුණාකර ධාවක බහලුම තෝරන්න."
-
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
-msgid  "Browse..."
-msgstr "ගවේෂණය කරන්න..."
-
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
-msgid  "~Selection of drivers"
-msgstr "ධාවක තේරීම (~S)"
-
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press \"%s\"."
-msgstr "කරුණාකර ස්ථාපනය කිරීමට අවශ්‍ය ධාවක තෝරා \"%s\" ඔබන්න."
-
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
-msgid  "Searching for drivers"
-msgstr "ධාවක සඳහා පරීක්ෂාකරමින්"
-
-#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
-msgid  "Driver Installation"
-msgstr "ධාවකය ස්ථාපනය කිරීම"
-
-#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver \"%s\"?"
-msgstr "ඔබට ඇත්තටම \"%s\" ධාවකය ඉවත් කිරීමට අවශ්‍යද?"
-
-#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
-msgid  "Do you really want to remove this printer ?"
-msgstr "ඔබට ඇත්තටම මෙම මුද්‍රණ යන්ත්‍රය ඉවත් කිරීමට අවශ්‍යද?"
-
-#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
-msgid  "Do you really want to remove the selected fonts ?"
-msgstr "ඔබට ඇත්තටම තේරූ ෆොන්ට ඉවත් කිරීමට අවශ්‍යද?"
-
-#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr "දැනටමත්  \"%s\" ධාවකය භාවිතා කරන මුද්‍රණ යන්ත පවතී. ඔබට ඇත්තටම එය ඉවත් කිරීමට අවශ්‍යද? අනුරූප මුද්‍රණ යන්ත්‍රද ඉවත් වනු ඇත."
-
-#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver \"%s\" is always needed and can therefore not be removed."
-msgstr "\"%s\"  ධාවකය සෑම විටම අවශ්‍ය වන නිසා ඉවත් කළ නොහැක."
-
-#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr " \"%s1\"ධාවකය ඉවත් කිරීමට නොහැකි විය. ගොනුව ඉවත් කිරීමට නොහැකි විය.\n\n%s2"
-
-#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
-msgstr "\"%s\" ධාවකය ඔබගේ පෙරනිමි මුද්‍රණ යන්ත්‍රය විසින් භාවිතා කරනු ලබයි. එමනිසා එය ඉවත් කළ නොහැක."
-
-#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
-msgid  "The printer %s cannot be removed."
-msgstr "%s මුද්‍රණ යන්ත්‍රය ඉවත් කළ නොහැක."
-
-#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named \"%s\" already exists. This printer will not be imported."
-msgstr "\"%s\" නමින් මුද්‍රණ යන්ත්‍රයක් දැනටමත් පවතී. මෙම මුද්‍රණ යන්ත්‍රය ආයාත නොවනු ඇත."
-
-#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
-msgstr " \"%s\"  මුද්‍රණ යන්ත්‍රයට වලංගු වින්‍යාසගත කිරීමක් නැති නිසා ආයාත කළ නොහැක."
-
-#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr "\"%s1\" (%s2) මුද්‍රණ යන්ත්‍රය සඳහා ධාවකය ස්ථාපනය කර නොමැත. එමනිසා මුද්‍රණ යන්ත්‍රය ආයාත කළ නොහැක."
-
-#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer \"%s\" could not be added."
-msgstr "\"%s\"මුද්‍රණ යන්ත්‍රය එක් කිරීමට නොහැකි විය."
-
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
-msgid  "~Finish"
-msgstr "අවසන් (~F)"
-
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
-msgid  "~Next >>"
-msgstr "ඊළඟ >> (~N)"
-
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
-msgid  "<< ~Back"
-msgstr "<< ආපසු (~B)"
-
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
-msgid  "Add Printer"
-msgstr "මුද්‍රණ යන්ත්‍රය එක් කරන්න"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
-msgid  "Choose a driver"
-msgstr "ධාවකයක් තෝරන්න"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
-msgid  "Please select a s~uitable driver."
-msgstr "කරුණාකර සුදුසු ධාවකයක් තෝරන්න. (~u)"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
-msgid  "~Import..."
-msgstr "ආයාත... (~I)"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
-msgid  "~Delete"
-msgstr "මකන්න (~D)"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
-msgid  "Delete driver"
-msgstr "ධාවකය මකන්න"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
-msgid  "Choose a device type"
-msgstr "උපකරණ වර්ගයක් තෝරන්න"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
-msgid  "Do you want to"
-msgstr "ඔබට අවශ්‍යද"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
-msgid  "Add a ~printer"
-msgstr "මුද්‍රණ යන්ත්‍රයක් එක් කරන්න (~p)"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
-msgid  "Connect a fa~x device"
-msgstr "ෆැක්ස් උපකරණයක් සම්බන්ධ කරන්න (~x)"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
-msgid  "Connect a P~DF converter"
-msgstr "PDF පරිවර්තකයක් සම්බන්ධ කරන්න (~D)"
-
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
-msgid  "~Import printers from a StarOffice installation"
-msgstr "StarOffice ස්ථාපනයකින් මුද්‍රණ යන්ත්‍ර ආයාත කරන්න (~I)"
-
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
-msgid  "Choose a name"
-msgstr "නමක් තෝරන්න"
-
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
-msgid  "Please enter a name for the printer."
-msgstr "කරුණාකර මුද්‍රණ යන්ත්‍රය සඳහා නමක් ඇතුල් කරන්න."
-
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
-msgid  "Please enter a name for the fax connection."
-msgstr "කරුණාකර ෆැක්ස් සම්බන්ධතාවය සඳහා නමක් ඇතුල් කරන්න."
-
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
-msgid  "Please enter a name for the PDF connection."
-msgstr "කරුණාකර PDF සම්බන්ධතාවය සඳහා නමක් ඇතුල් කරන්න."
-
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
-msgid  "Fax printer"
-msgstr "ෆැක්ස් මුද්‍රණ යන්ත්‍රය"
-
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
-msgid  "PDF converter"
-msgstr "PDF පරිවර්තකය"
-
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
-msgid  "~Use as default printer"
-msgstr "පෙරනිමි මුද්‍රණ යන්ත්‍රය ලෙස භාවිතා කරන්න (~U)"
-
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
-msgid  "Remo~ve fax number from output"
-msgstr "ප්‍රතිදානයෙන් ෆැක්ස් අංකය ඉවත් කරන්න (~v)"
-
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
-msgid  "Choose a command line"
-msgstr "විධාන රේඛාවක් තෝරන්න"
-
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
-msgid  "Please enter a c~ommand line appropriate for this device."
-msgstr "කරුණාකර මෙම උපකරණයට අදාළ විධාන රේඛාවක් ඇතුල් කරන්න. (~o)"
-
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
-msgid  "PDF ~target directory"
-msgstr "PDF ඉලක්ක බහලුම (~t)"
-
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
-msgid  "~Help"
-msgstr "උදව් (~H)"
-
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF පරිවර්තක සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: සෑම මුද්‍රණය කරන ලිපියක් සඳහාම විධාන රේඛාවේ  \"(TMP)\" තාවකාලික ගොනුවකින් ප්‍රතිස්ථාපනය කරනු ලබන අතර විධාන රේඛාවේ  \"(OUTFILE)\" , ඉලක්ක PDF ගොනු නාමයෙන් ප්‍රතිස්ථාපනය කරනු ලබයි. \"(TMP)\"  විධාන රේඛාවේ නම් පසු සටහන් කේතය ගොනුවක් හරහා සපයනු ලබන අතර එසේ නොවේ නම් සම්මත ආදානය ලෙස (උදා. නළයක් ලෙස) සපයනු ලබයි."
-
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "ෆැක්ස් සම්බන්ධතා සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: සෑම යැවූ ෆැක්ස් පිටපත් සඳහාම \"(TMP)\"  විධාන රේඛාව තාවකාලික ගොනුවකින් ප්‍රතිස්ථාපනය කරනු ලබන අතර විධාන රේඛාවේ \"(PHONE)\" , ෆැක්ස් අංකයෙන් ප්‍රතිස්ථාපනය කරනු ලබයි. විධාන රේඛාවේ  \"(TMP)\" පෙනීමට ඇත්නම් පසු සටහන් කේතය ගොනුවක් හරහා සපයනු ලබන අතර එසේ නොවේ නම් සම්මත ආදානය ලෙස (උදා. නළයක් ලෙස) සපයනු ලබයි."
-
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
-msgid  "Import printers from old versions"
-msgstr "පැරණි අනුවාද වලින් මුද්‍රණ යන්ත්‍ර ආයාත කරන්න"
-
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
-msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr "මෙම මුද්‍රණ යන්ත්‍ර ආයාත කළ හැක. කරුණාකර ඔබට ආයාත කිරීමට අවශ්‍ය ඒවා තෝරන්න."
-
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FIXEDLINE.TEXT
+msgid  "Source directory"
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CHECKBOX.TEXT
+msgid  "Sea~rch Subdirectories"
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FIXEDLINE.TEXT
+msgid  "Target options"
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CHECKBOX.TEXT
+msgid  "Create ~soft links only"
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
-msgstr "සියල්ල තෝරන්න (~S)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.STRING.TEXT
+msgid  "Add fonts"
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.STRING.TEXT
+msgid  "Do you really want to overwrite this font file?\n   %s"
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.STRING.TEXT
+msgid  "All"
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.STRING.TEXT
+msgid  "None"
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.STRING.TEXT
+msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.STRING.TEXT
+msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.STRING.TEXT
+msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.STRING.TEXT
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.STRING.TEXT
+msgid  "%d new fonts were added."
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.STRING.TEXT
+msgid  "Add Fonts"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FIXEDLINE.TEXT
+msgid  "CUPS support"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CHECKBOX.TEXT
+msgid  "Disable CUPS Support"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CANCELBUTTON.TEXT
+msgid  "Close"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FIXEDLINE.TEXT
+msgid  "Installed ~printers"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FIXEDTEXT.TEXT
+msgid  "Command:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Driver:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FIXEDTEXT.TEXT
+msgid  "Location:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FIXEDTEXT.TEXT
+msgid  "Comment:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PUSHBUTTON.TEXT
+msgid  "Properties..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "R~ename..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PUSHBUTTON.TEXT
+msgid  "~Default"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PUSHBUTTON.TEXT
+msgid  "Remo~ve..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PUSHBUTTON.TEXT
+msgid  "Test ~Page"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PUSHBUTTON.TEXT
+msgid  "Fon~ts..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PUSHBUTTON.TEXT
+msgid  "New Printer..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.STRING.TEXT
+msgid  "Default printer"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.STRING.TEXT
+msgid  "Rename"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.STRING.TEXT
+msgid  "Printer Administration"
+msgstr ""
+
+#: padialog.src#RID_ERR_NOPRINTER.STRING.TEXT
+msgid  "Could not open printer %s."
+msgstr ""
+
+#: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.STRING.TEXT
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr ""
+
+#: padialog.src#RID_ERR_NOWRITE.STRING.TEXT
+msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
+
+#: padialog.src#RID_QRY_PRTNAME.STRING.TEXT
+msgid  "~New printer name"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_MODEL.STRING.TEXT
+msgid  "Model"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_NAME.STRING.TEXT
+msgid  "Name"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_COMMENT.STRING.TEXT
+msgid  "Comment"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_QUEUE.STRING.TEXT
+msgid  "Queue"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_DATE.STRING.TEXT
+msgid  "Date"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_TIME.STRING.TEXT
+msgid  "Time"
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKBUTTON.TEXT
+msgid  "Close"
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "Re~name..."
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PUSHBUTTON.TEXT
+msgid  "~Remove..."
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PUSHBUTTON.TEXT
+msgid  "~Add..."
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FIXEDTEXT.TEXT
+msgid  "Note: The fonts are only available to the applications."
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.STRING.TEXT
+msgid  "~New name for %s"
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.STRING.TEXT
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.STRING.TEXT
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.STRING.TEXT
+msgid  "Fonts"
+msgstr ""
+
+#: padialog.src#RID_BXT_TESTPAGE.STRING.TEXT
+msgid  "Test page"
+msgstr ""
+
+#: padialog.src#RID_BXT_ENVIRONMENT.STRING.TEXT
+msgid  "Wrong environment"
+msgstr ""
+
+#: padialog.src#RID_YOU_SURE.STRING.TEXT
+msgid  "Are you sure ?"
+msgstr ""
+
+#: padialog.src#RID_AFMERROR_OK.STRING.TEXT
+msgid  "No error"
+msgstr ""
+
+#: padialog.src#RID_AFMERROR_NO_FONT_NAME.STRING.TEXT
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr ""
+
+#: padialog.src#RID_AFMERROR_NO_FULL_NAME.STRING.TEXT
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr ""
+
+#: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.STRING.TEXT
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr ""
+
+#: padialog.src#RID_AFMERROR_MOVETO_FAILED.STRING.TEXT
+msgid  "The converted metric could not be written."
+msgstr ""
+
+#: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.STRING.TEXT
+msgid  "The metric could not be read."
+msgstr ""
+
+#: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.STRING.TEXT
+msgid  "A temporary file could not be created."
+msgstr ""
+
+#: padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.TEXT
+msgid  "The file does not contain a metric."
+msgstr ""
+
+#: padialog.src#RID_AFMERROR_BOX_TXT.STRING.TEXT
+msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
+
+#: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FIXEDTEXT.TEXT
+msgid  "Progress"
+msgstr ""
+
+#: padialog.src#RID_PROGRESS_DLG.FIXEDTEXT.TEXT
+msgid  "Please wait"
+msgstr ""
+
+#: padialog.src#RID_OPERATION_CONVERTMETRIC.STRING.TEXT
+msgid  "Font metrics conversion"
+msgstr ""
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FIXEDLINE.TEXT
+msgid  "Dri~ver directory"
+msgstr ""
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FIXEDTEXT.TEXT
+msgid  "Please select the driver directory."
+msgstr ""
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PUSHBUTTON.TEXT
+msgid  "Browse..."
+msgstr ""
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FIXEDLINE.TEXT
+msgid  "~Selection of drivers"
+msgstr ""
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr ""
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.STRING.TEXT
+msgid  "Searching for drivers"
+msgstr ""
+
+#: padialog.src#RID_PPDIMPORT_DLG.CANCELBUTTON.TEXT
+msgid  "Driver Installation"
+msgstr ""
+
+#: padialog.src#RID_QUERY_REMOVEDRIVER.STRING.TEXT
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr ""
+
+#: padialog.src#RID_QUERY_REMOVEPRINTER.STRING.TEXT
+msgid  "Do you really want to remove this printer ?"
+msgstr ""
+
+#: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.STRING.TEXT
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr ""
+
+#: padialog.src#RID_QUERY_DRIVERUSED.STRING.TEXT
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr ""
+
+#: padialog.src#RID_ERR_REMOVESGENPRT.STRING.TEXT
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr ""
+
+#: padialog.src#RID_ERR_REMOVEDRIVERFAILED.STRING.TEXT
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
+
+#: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.STRING.TEXT
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr ""
+
+#: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.STRING.TEXT
+msgid  "The printer %s cannot be removed."
+msgstr ""
+
+#: padialog.src#RID_TXT_PRINTERALREADYEXISTS.STRING.TEXT
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr ""
+
+#: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.STRING.TEXT
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr ""
+
+#: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.STRING.TEXT
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr ""
+
+#: padialog.src#RID_TXT_PRINTERADDFAILED.STRING.TEXT
+msgid  "The printer \"%s\" could not be added."
+msgstr ""
+
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKBUTTON.TEXT
+msgid  "~Finish"
+msgstr ""
+
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PUSHBUTTON.TEXT
+msgid  "~Next >>"
+msgstr ""
+
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PUSHBUTTON.TEXT
+msgid  "<< ~Back"
+msgstr ""
+
+#: padialog.src#RID_ADD_PRINTER_DIALOG.PUSHBUTTON.TEXT
+msgid  "Add Printer"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "ධාවකයක් තෝරන්න"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Please select a s~uitable driver."
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PUSHBUTTON.TEXT
+msgid  "~Import..."
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PUSHBUTTON.TEXT
+msgid  "~Delete"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.STRING.TEXT
+msgid  "Delete driver"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid  "Choose a device type"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FIXEDTEXT.TEXT
+msgid  "Do you want to"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RADIOBUTTON.TEXT
+msgid  "Add a ~printer"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RADIOBUTTON.TEXT
+msgid  "Connect a fa~x device"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RADIOBUTTON.TEXT
+msgid  "Connect a P~DF converter"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RADIOBUTTON.TEXT
+msgid  "~Import printers from a StarOffice installation"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid  "Choose a name"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FIXEDTEXT.TEXT
+msgid  "Please enter a name for the printer."
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FIXEDTEXT.TEXT
+msgid  "Please enter a name for the fax connection."
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FIXEDTEXT.TEXT
+msgid  "Please enter a name for the PDF connection."
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.EDIT.TEXT
+msgid  "Fax printer"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.EDIT.TEXT
+msgid  "PDF converter"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CHECKBOX.TEXT
+msgid  "~Use as default printer"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CHECKBOX.TEXT
+msgid  "Remo~ve fax number from output"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid  "Choose a command line"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FIXEDTEXT.TEXT
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
+msgid  "PDF ~target directory"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PUSHBUTTON.TEXT
+msgid  "~Help"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.STRING.TEXT
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.STRING.TEXT
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid  "Import printers from old versions"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FIXEDTEXT.TEXT
+msgid  "~These printers can be imported. Please select the ones you want to import."
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PUSHBUTTON.TEXT
+msgid  "~Select All"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid  "Choose a driver"
+msgstr ""
+
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this fax connection"
-msgstr "මෙම ෆැක්ස් සම්බන්ධය සඳහා පහත ධාවකය භාවිතා කරන්න"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "පෙරනිමි ධාවකය (~h)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr "හැඩතලය වෙනත් මුද්‍රණ යන්ත්‍රයකට අනුරූප කිරීමට විශේෂ ධාවකයක් (~f)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "ධාවකයක් තෝරන්න"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this PDF converter"
-msgstr "මෙම PDF පරිවර්තකය සඳහා පහත ධාවකය භාවිතා කරන්න"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "පෙරනිමි ධාවකය (~h)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RADIOBUTTON.TEXT
 msgid  "The Adobe D~istiller(tm) driver"
-msgstr "Adobe Distiller(tm) ධාවකය (~i)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr "හැඩතලය වෙනත් මුද්‍රණ යන්ත්‍රයකට අනුරූප කිරීමට විශේෂ ධාවකයක් (~i)"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+#: padialog.src#RID_TXT_FONT_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr "ඇලකුරු"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+#: padialog.src#RID_TXT_FONT_OBLIQUE.STRING.TEXT
 msgid  "Oblique"
-msgstr "ඇල වූ"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+#: padialog.src#RID_TXT_FONT_THIN.STRING.TEXT
 msgid  "Thin"
-msgstr "තුනී"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRALIGHT.STRING.TEXT
 msgid  "Ultralight"
-msgstr "අධි සැහැල්ලු"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_SEMILIGHT.STRING.TEXT
 msgid  "Semilight"
-msgstr "අර්ධ සැහැල්ලු"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_LIGHT.STRING.TEXT
 msgid  "Light"
-msgstr "සැහැල්ලු"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+#: padialog.src#RID_TXT_FONT_SEMIBOLD.STRING.TEXT
 msgid  "Semibold"
-msgstr "අර්ධ තදකුරු"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+#: padialog.src#RID_TXT_FONT_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr "තදකුරු"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRABOLD.STRING.TEXT
 msgid  "Ultrabold"
-msgstr "අධි තදකුරු"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRACONDENSED.STRING.TEXT
 msgid  "Ultracondensed"
-msgstr "අධි ඝනීභූත"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_EXTRACONDENSED.STRING.TEXT
 msgid  "Extracondensed"
-msgstr "අමතර ඝනීභූත"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_CONDENSED.STRING.TEXT
 msgid  "Condensed"
-msgstr "ඝනීභූත"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_SEMICONDENSED.STRING.TEXT
 msgid  "Semicondensed"
-msgstr "අර්ධ ඝනීභූත"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_SEMIEXPANDED.STRING.TEXT
 msgid  "Semiexpanded"
-msgstr "අර්ධ ප්‍රසාරිත"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_EXPANDED.STRING.TEXT
 msgid  "Expanded"
-msgstr "ප්‍රසාරිත"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.STRING.TEXT
 msgid  "Extraexpanded"
-msgstr "අමතර විහිදුණු"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.STRING.TEXT
 msgid  "Ultraexpanded"
-msgstr "අධි විහිදුණු"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+#: padialog.src#RID_TXT_FONT_REGULAR.STRING.TEXT
 msgid  "Regular"
-msgstr "ක්‍රමවත්"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PAGEITEM.TEXT
 msgid  "Command"
-msgstr "විධානය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PAGEITEM.TEXT
 msgid  "Paper"
-msgstr "කඩදාසිය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PAGEITEM.TEXT
 msgid  "Device"
-msgstr "උපකරණය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PAGEITEM.TEXT
 msgid  "Font Replacement"
-msgstr "ෆොන්ට ප්‍රතිස්ථාපනය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PAGEITEM.TEXT
 msgid  "Other Settings"
-msgstr "වෙනත් සිටුවම්"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.STRING.TEXT
 msgid  "from driver"
-msgstr "ධාවකයෙන්"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.STRING.TEXT
 msgid  "<ignore>"
-msgstr "<නොතකන්න>"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.STRING.TEXT
 msgid  "Properties of %s"
-msgstr "%s හි ගුණාංග"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FIXEDTEXT.TEXT
 msgid  "~Paper size"
-msgstr "කඩදාසියේ ප්‍රමාණය (~P)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FIXEDTEXT.TEXT
 msgid  "~Orientation"
-msgstr "දිශානතිය (~O)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FIXEDTEXT.TEXT
 msgid  "~Duplex"
-msgstr "දෙපත් (~D)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FIXEDTEXT.TEXT
 msgid  "Paper tray"
-msgstr "කඩදාසි තැටිය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.STRING.TEXT
 msgid  "Color"
-msgstr "වර්ණය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.STRING.TEXT
 msgid  "Grayscale"
-msgstr "අළුවන් පරාසය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FIXEDTEXT.TEXT
 msgid  "~Option"
-msgstr "අභිරුචි (~O)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FIXEDTEXT.TEXT
 msgid  "Current ~value"
-msgstr "වත්මන් අගය (~v)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FIXEDTEXT.TEXT
 msgid  "Printer ~Language type"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.STRINGLIST.ITEM
 msgid  "PostScript (Level from driver)"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.STRINGLIST.ITEM
 msgid  "PostScript Level 1"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.STRINGLIST.ITEM
 msgid  "PostScript Level 2"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.STRINGLIST.ITEM
 msgid  "PostScript Level 3"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.STRINGLIST.ITEM
 msgid  "PDF"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FIXEDTEXT.TEXT
 msgid  "~Color"
-msgstr "වර්ණය (~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FIXEDTEXT.TEXT
 msgid  "Color ~depth"
-msgstr "වර්ණ ගැඹුර (~d)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CHECKBOX.TEXT
 msgid  "~Enable font replacement"
-msgstr "අක්ෂරාංග ප්‍රතිස්ථාපනය කිරීම සක්‍රීය කරන්න (~E)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FIXEDTEXT.TEXT
 msgid  "Replaced ~fonts"
-msgstr "ප්‍රතිස්ථාපනය කළ ෆොන්ට (~f)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr "එක් කරන්න (~A)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "ඉවත් කරන්න (~R)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FIXEDTEXT.TEXT
 msgid  "Repla~ce font"
-msgstr "ෆොන්ට ප්‍රතිස්ථාපනය කරන්න (~c)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FIXEDTEXT.TEXT
 msgid  "by ~printer font"
-msgstr "මුද්‍රකයේ ෆොන්ටයෙන් (~p)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CHECKBOX.TEXT
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr "පද්ධති මුද්‍රණ කිරීමේ සංවාදය භාවිතා කරන්න, %PRODUCTNAME හි මුද්‍රණ සංවාදය අක්‍රිය කරන්න (~U)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FIXEDTEXT.TEXT
 msgid  "Command for quick printing without dialog (optional)"
-msgstr "සංවාදය නොමැතිව ක්ෂණික මුද්‍රණය සඳහා විධානය (විකල්ප)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FIXEDLINE.TEXT
 msgid  "Select command"
-msgstr "විධානය තෝරන්න"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.STRING.TEXT
 msgid  "Printer"
-msgstr "මුද්‍රකය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.STRING.TEXT
 msgid  "Fax"
-msgstr "ෆැක්සය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.STRING.TEXT
 msgid  "PDF converter"
-msgstr "PDF පරිවර්තකය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FIXEDTEXT.TEXT
 msgid  "~Configure as"
-msgstr "ලෙස වින්‍යාසගත කරන්න (~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CHECKBOX.TEXT
 msgid  "~Fax number will be removed from output"
-msgstr "ෆැක්ස් අංකය ප්‍රතිදානයෙන් ඉවත් කෙරෙනු ඇත (~F)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
 msgid  "PDF target directory :"
-msgstr "PDF ඉලක්ක බහලුම :"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FIXEDTEXT.TEXT
 msgid  "Command: "
-msgstr "විධානය:"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FIXEDLINE.TEXT
 msgid  "Printer"
-msgstr "මුද්‍රකය"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PUSHBUTTON.TEXT
 msgid  "~Help"
-msgstr "උදව් (~H)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "ඉවත් කරන්න (~R)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.STRING.TEXT
 msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF පරිවර්ථක සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: සෑම මුද්‍රණය කරන ලිපියක් සඳහාම විධාන රේඛාවේ  \"(TMP)\" තාවකාලික ගොනුවකින් ප්‍රතිස්ථාපනය කරනු ලබන අතර විධාන රේඛාවේ  \"(OUTFILE)\" , ඉලක්ක PDF ගොනු නාමයෙන් ප්‍රතිස්ථාපනය කරනු ලබයි. \"(TMP)\"  විධාන රේඛාවේ නම් පසු සටහන් කේතය ගොනුවක් හරහා සපයනු ලබන අතර එසේ නොවේ නම් සම්මත ආදානය ලෙස (උදා. නළයක් ලෙස) සපයනු ලබයි."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.STRING.TEXT
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr "මුද්‍රණ යන්ත්‍ර උපාංග සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: ජනනය කළ පසු සටහන් කේත විධාන රේඛාවට සම්මත ආදානය ලෙස (උදා: නළයක් ලෙස) සපයයි."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.STRING.TEXT
 msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "ෆැක්ස් සම්බන්ධතා සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: සෑම යැවූ ෆැක්ස් පිටපත් සඳහාම විධාන රේඛාවේ \"(TMP)\" , තාවකාලික ගොනුවකින් ප්‍රතිස්ථාපනය කරනු ලබන අතර විධාන රේඛාවේ \"(PHONE)\" , ෆැක්ස් අංකයෙන් ප්‍රතිස්ථාපනය කරනු ලබයි. විධාන රේඛාවේ \"(TMP)\" පෙනීමට ඇත්නම් පසු සටහන් කේතය ගොනුවක් හරහා සපයනු ලබන අතර එසේ නොවේ නම් සම්මත ප්‍රදානය ලෙස (උදා. නළයක් ලෙස) සපයනු ලබයි."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Left margin"
-msgstr "වම් මායිම (~L)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Top margin"
-msgstr "ඉහල මායිම (~T)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Right margin"
-msgstr "දකුණු මායිම (~R)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Bottom margin"
-msgstr "පහළ මායිම (~B)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FIXEDTEXT.TEXT
 msgid  "~Comment"
-msgstr "අදහස (~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PUSHBUTTON.TEXT
 msgid  "~Default"
-msgstr "පෙරනිමි (~D)"
+msgstr ""
 
-#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+#: rtsetup.src#RID_TXT_QUERYFAXNUMBER.STRING.TEXT
 msgid  "Please enter the fax number."
-msgstr "කරුණාකර ෆැක්ස් අංකය ඇතුල් කරන්න."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.MODALDIALOG.TEXT
 msgid  "Authentication request"
-msgstr "සහතික කිරීමේ ඉල්ලීම"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FIXEDTEXT.TEXT
 msgid  "Please enter your authentication data for server %s"
-msgstr "කරුණාකර %s සේවකය සඳහා ඔබගේ සහතික කිරීමේ දත්ත ඇතුල් කරන්න."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FIXEDTEXT.TEXT
 msgid  "~User"
-msgstr "පරිශීලක (~U)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr "මුරපදය (~P)"
+msgstr ""

@@ -31,46 +31,46 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/solver/solver.src#RID_SOLVER_COMPONENT.String.Text
+#: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr "%PRODUCTNAME Lineárny riešiteľ"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_NONNEGATIVE.String.Text
+#: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
-msgstr "Predpokladať nezáporné premenné"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_INTEGER.String.Text
+#: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr "Prespokladať premenné ako celé čísla"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_TIMEOUT.String.Text
+#: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr "Časový limit pre riešenie (sekundy)"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_EPSILONLEVEL.String.Text
+#: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr "Úroveň epsilon (0-3)"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.String.Text
+#: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
-msgstr "Limitovať branch-and-bound hĺbku"
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_NONLINEAR.String.Text
+#: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr "Model nie je lineárny."
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_EPSILONLEVEL.String.Text
+#: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr "Úroveň epsilon je neplatná."
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_INFEASIBLE.String.Text
+#: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr "Model je nereálny. Skontrolujte limitujúce podmienky."
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_UNBOUNDED.String.Text
+#: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr "Model je neohnutý."
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_TIMEOUT.String.Text
+#: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
-msgstr "Bol dosiahnutý časový limit."
+msgstr ""

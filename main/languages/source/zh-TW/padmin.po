@@ -31,814 +31,814 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FIXEDTEXT.TEXT
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr "先選擇要匯入字型的資料夾。然後按 [確定] 按鈕，來新增已經選取的字型。"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FIXEDLINE.TEXT
 msgid  "Source directory"
-msgstr "來源目錄"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CHECKBOX.TEXT
 msgid  "Sea~rch Subdirectories"
-msgstr "搜尋子目錄(~R)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FIXEDLINE.TEXT
 msgid  "Target options"
-msgstr "目標選項"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CHECKBOX.TEXT
 msgid  "Create ~soft links only"
-msgstr "新增時僅插入連結(~S)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
-msgstr "全選(~S)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.STRING.TEXT
 msgid  "Add fonts"
-msgstr "增加字型"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr "確定想要複寫這個字型檔案\n   %s？"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.STRING.TEXT
+msgid  "Do you really want to overwrite this font file?\n   %s"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.STRING.TEXT
 msgid  "All"
-msgstr "全部"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.STRING.TEXT
 msgid  "None"
-msgstr "無"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "沒有找到字型\n%s\n的格式檔案(副檔名 .afm )，因此無法安裝這個字型。格式檔案是由 ghostscript 生成，并存放在相同的字型目錄或其子目錄 afm 之中。"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.STRING.TEXT
+msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "無法複製字型度量檔案\n   %s\n。無法安裝這個字型。"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.STRING.TEXT
+msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "無法複製字型檔案\n   %s\n。無法安裝這個字型。"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.STRING.TEXT
+msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.STRING.TEXT
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr "字型路徑之中沒有有效的可讀寫的 fonts.dir 檔案。因此無法安裝任何字型。"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.STRING.TEXT
 msgid  "%d new fonts were added."
-msgstr "已經安裝 %d 新的字型。"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.STRING.TEXT
 msgid  "Add Fonts"
-msgstr "增加字型"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+#: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FIXEDLINE.TEXT
 msgid  "CUPS support"
-msgstr "CUPS 支援"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+#: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CHECKBOX.TEXT
 msgid  "Disable CUPS Support"
-msgstr "停用 CUPS 支援"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CANCELBUTTON.TEXT
 msgid  "Close"
-msgstr "關閉"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
+#: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FIXEDLINE.TEXT
 msgid  "Installed ~printers"
-msgstr "已經設置的印表機(~P)"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FIXEDTEXT.TEXT
 msgid  "Command:"
-msgstr "指令："
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Driver:"
-msgstr "驅動程式："
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FIXEDTEXT.TEXT
 msgid  "Location:"
-msgstr "位置："
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FIXEDTEXT.TEXT
 msgid  "Comment:"
-msgstr "註解："
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PUSHBUTTON.TEXT
 msgid  "Properties..."
-msgstr "屬性..."
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PUSHBUTTON.TEXT
 msgid  "R~ename..."
-msgstr "重新命名(~E)..."
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PUSHBUTTON.TEXT
 msgid  "~Default"
-msgstr "預設(~D)"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PUSHBUTTON.TEXT
 msgid  "Remo~ve..."
-msgstr "移除(~V)..."
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PUSHBUTTON.TEXT
 msgid  "Test ~Page"
-msgstr "測試列印頁(~P)"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PUSHBUTTON.TEXT
 msgid  "Fon~ts..."
-msgstr "字型(~T)..."
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PUSHBUTTON.TEXT
 msgid  "New Printer..."
-msgstr "新增印表機..."
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
+#: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.STRING.TEXT
 msgid  "Default printer"
-msgstr "預設印表機"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
+#: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.STRING.TEXT
 msgid  "Rename"
-msgstr "重新命名"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.String.Text
+#: padialog.src#RID_PADIALOG.STRING.TEXT
 msgid  "Printer Administration"
-msgstr "印表機管理"
+msgstr ""
 
-#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
+#: padialog.src#RID_ERR_NOPRINTER.STRING.TEXT
 msgid  "Could not open printer %s."
-msgstr "無法開啟印表機 %s。"
+msgstr ""
 
-#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
+#: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.STRING.TEXT
 msgid  "The test page was printed succesfully. Please check the result."
-msgstr "測試列印頁成功。請檢查列印結果。"
+msgstr ""
 
-#: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
-msgstr "印表機無法安裝，因為檔案系統是唯讀狀態。\n請聯絡您的系統管理員。"
+#: padialog.src#RID_ERR_NOWRITE.STRING.TEXT
+msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
 
-#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+#: padialog.src#RID_QRY_PRTNAME.STRING.TEXT
 msgid  "~New printer name"
-msgstr "新的印表機名稱(~N)"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_MODEL.STRING.TEXT
 msgid  "Model"
-msgstr "模式"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_NAME.STRING.TEXT
 msgid  "Name"
-msgstr "名稱"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_COMMENT.STRING.TEXT
 msgid  "Comment"
-msgstr "註解"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_QUEUE.STRING.TEXT
 msgid  "Queue"
-msgstr "隊列"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_DATE.STRING.TEXT
 msgid  "Date"
-msgstr "日期"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_TIME.STRING.TEXT
 msgid  "Time"
-msgstr "時間"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKBUTTON.TEXT
 msgid  "Close"
-msgstr "關閉"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PUSHBUTTON.TEXT
 msgid  "Re~name..."
-msgstr "重新命名(~N)..."
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove..."
-msgstr "移除(~R)..."
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PUSHBUTTON.TEXT
 msgid  "~Add..."
-msgstr "增加(~A)..."
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FIXEDTEXT.TEXT
 msgid  "Note: The fonts are only available to the applications."
-msgstr "提示：這些字型可以提供給應用程式使用。"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.STRING.TEXT
 msgid  "~New name for %s"
-msgstr "新名稱 %s(~N)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.STRING.TEXT
 msgid  "~New name for %s (%d1 of %d2)"
-msgstr "新的字型名稱 %s (%d2 的 %d1)(~N)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.STRING.TEXT
 msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr "因爲缺少必要的權利而無法重新命名字型 %s。"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.STRING.TEXT
 msgid  "Fonts"
-msgstr "字型"
+msgstr ""
 
-#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+#: padialog.src#RID_BXT_TESTPAGE.STRING.TEXT
 msgid  "Test page"
-msgstr "測試列印頁"
+msgstr ""
 
-#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+#: padialog.src#RID_BXT_ENVIRONMENT.STRING.TEXT
 msgid  "Wrong environment"
-msgstr "錯誤的環境"
+msgstr ""
 
-#: source/padialog.src#RID_YOU_SURE.String.Text
+#: padialog.src#RID_YOU_SURE.STRING.TEXT
 msgid  "Are you sure ?"
-msgstr "確定？"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_OK.String.Text
+#: padialog.src#RID_AFMERROR_OK.STRING.TEXT
 msgid  "No error"
-msgstr "沒有錯誤"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FONT_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FontName' entry."
-msgstr "字型度量檔案沒有「FontName」項目。"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FULL_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FullName' entry."
-msgstr "字型度量檔案沒有「FullName」項目。"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FamilyName' entry."
-msgstr "字型度量檔案沒有「FamilyName」項目。"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_MOVETO_FAILED.STRING.TEXT
 msgid  "The converted metric could not be written."
-msgstr "無法寫入已經轉換的字型度量檔案。"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.STRING.TEXT
 msgid  "The metric could not be read."
-msgstr "無法讀取字型度量檔案。"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.STRING.TEXT
 msgid  "A temporary file could not be created."
-msgstr "無法建立暫時的檔案。"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+#: padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.TEXT
 msgid  "The file does not contain a metric."
-msgstr "這個檔案沒有字型度量數據。"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr "字型度量檔案\n\n%s\n\n無法被轉換，原因如下：\n\n"
+#: padialog.src#RID_AFMERROR_BOX_TXT.STRING.TEXT
+msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
 
-#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+#: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FIXEDTEXT.TEXT
 msgid  "Progress"
-msgstr "已經完成"
+msgstr ""
 
-#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+#: padialog.src#RID_PROGRESS_DLG.FIXEDTEXT.TEXT
 msgid  "Please wait"
-msgstr "請您稍候"
+msgstr ""
 
-#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+#: padialog.src#RID_OPERATION_CONVERTMETRIC.STRING.TEXT
 msgid  "Font metrics conversion"
-msgstr "轉換字型度量"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FIXEDLINE.TEXT
 msgid  "Dri~ver directory"
-msgstr "驅動程式目錄(~V)"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FIXEDTEXT.TEXT
 msgid  "Please select the driver directory."
-msgstr "請選擇一個含有驅動程式的目錄。"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr "搜尋..."
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FIXEDLINE.TEXT
 msgid  "~Selection of drivers"
-msgstr "選擇驅動程式(~S)"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Please select the drivers to install and press \"%s\"."
-msgstr "選中要安裝的驅動程式之後按一下按鈕「%s」。"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.STRING.TEXT
 msgid  "Searching for drivers"
-msgstr "搜尋驅動程式"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+#: padialog.src#RID_PPDIMPORT_DLG.CANCELBUTTON.TEXT
 msgid  "Driver Installation"
-msgstr "安裝驅動程式"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+#: padialog.src#RID_QUERY_REMOVEDRIVER.STRING.TEXT
 msgid  "Do you really want to remove the driver \"%s\"?"
-msgstr "真要移除驅動程式「%s」？"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+#: padialog.src#RID_QUERY_REMOVEPRINTER.STRING.TEXT
 msgid  "Do you really want to remove this printer ?"
-msgstr "真要移除這個印表機？"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+#: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.STRING.TEXT
 msgid  "Do you really want to remove the selected fonts ?"
-msgstr "真要刪除選中的字型？"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+#: padialog.src#RID_QUERY_DRIVERUSED.STRING.TEXT
 msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr "還存在一些使用「%s」驅動程式的印表機。真的要刪除這個驅動程式？這樣會一起移除相關的印表機。"
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+#: padialog.src#RID_ERR_REMOVESGENPRT.STRING.TEXT
 msgid  "The driver \"%s\" is always needed and can therefore not be removed."
-msgstr "這是一個必要的驅動程式「%s」，因此不能夠刪除。"
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr "這個驅動程式「%s1」無法被刪除。沒有成功地刪除檔案\n\n%s2。"
+#: padialog.src#RID_ERR_REMOVEDRIVERFAILED.STRING.TEXT
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+#: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.STRING.TEXT
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
-msgstr "預設印表機使用這個驅動程式「%s」。因此無法刪除這個驅動程式。"
+msgstr ""
 
-#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+#: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.STRING.TEXT
 msgid  "The printer %s cannot be removed."
-msgstr "無法移除印表機 %s。"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+#: padialog.src#RID_TXT_PRINTERALREADYEXISTS.STRING.TEXT
 msgid  "A printer named \"%s\" already exists. This printer will not be imported."
-msgstr "已經存在一個同名「%s」印表機。因此不加入這個設備。"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+#: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.STRING.TEXT
 msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
-msgstr "印表機「%s」的配置不完整。因此無法加入這個設備。"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+#: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.STRING.TEXT
 msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr "印表機「%s1」 (%s2) 所需的驅動程式沒有安裝好。因此無法增加這個設備。"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+#: padialog.src#RID_TXT_PRINTERADDFAILED.STRING.TEXT
 msgid  "The printer \"%s\" could not be added."
-msgstr "無法增加印表機「%s」。"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKBUTTON.TEXT
 msgid  "~Finish"
-msgstr "完成(~F)"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next >>"
-msgstr "繼續(~N) >>"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PUSHBUTTON.TEXT
 msgid  "<< ~Back"
-msgstr "<< 返回(~B)"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.PUSHBUTTON.TEXT
 msgid  "Add Printer"
-msgstr "增加印表機"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "選擇一個驅動程式"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Please select a s~uitable driver."
-msgstr "請選擇一個合適的驅動程式(~U)。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Import..."
-msgstr "匯入(~I)..."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Delete"
-msgstr "刪除(~D)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.STRING.TEXT
 msgid  "Delete driver"
-msgstr "移除驅動程式"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a device type"
-msgstr "選擇一個設備類型"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FIXEDTEXT.TEXT
 msgid  "Do you want to"
-msgstr "要想"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RADIOBUTTON.TEXT
 msgid  "Add a ~printer"
-msgstr "增加一台印表機(~P)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RADIOBUTTON.TEXT
 msgid  "Connect a fa~x device"
-msgstr "設置一台傳真機(~X)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RADIOBUTTON.TEXT
 msgid  "Connect a P~DF converter"
-msgstr "設置一個 P~DF 轉換器"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RADIOBUTTON.TEXT
 msgid  "~Import printers from a StarOffice installation"
-msgstr "從 StarSu~ite 安裝程式匯入印表機"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a name"
-msgstr "選擇一個名稱"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the printer."
-msgstr "請您輸入一個印表機的名稱。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the fax connection."
-msgstr "請您輸入一個傳真機的名稱。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the PDF connection."
-msgstr "請您輸入一個 PDF 轉換器名稱。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.EDIT.TEXT
 msgid  "Fax printer"
-msgstr "傳真機"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.EDIT.TEXT
 msgid  "PDF converter"
-msgstr "PDF 轉換器"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CHECKBOX.TEXT
 msgid  "~Use as default printer"
-msgstr "設定成預設印表機(~U)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CHECKBOX.TEXT
 msgid  "Remo~ve fax number from output"
-msgstr "不列印傳真號碼(~V)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a command line"
-msgstr "選擇一行指令"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FIXEDTEXT.TEXT
 msgid  "Please enter a c~ommand line appropriate for this device."
-msgstr "請輸入一個能夠調用這個設備的指令(~O)。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
 msgid  "PDF ~target directory"
-msgstr "PDF 目標目錄(~T)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PUSHBUTTON.TEXT
 msgid  "~Help"
-msgstr "說明(~H)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.STRING.TEXT
 msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF 轉換器的指令處理方式如下：列印每個文件時指令行之中分別用一個暫時檔案來替代「(TMP)」和用一個目標 PDF 檔案名稱來替代「(OUTFILE)」。如果「(TMP)」已經存在於指令行之中，PostScript 代碼就會輸入成一個檔案，否則會當作標準輸入 (當作 pipe)。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.STRING.TEXT
 msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "傳真机單項指令的處理方式如下：寄發傳真時透過指令行用一個暫時檔案替代「(TMP)」，用傳真號碼替代「(PHONE)」。如果指令行含有「TMP」，PostScript 原始碼就會轉換成一個檔案，否則會當作標準輸入 (當作 pipe)。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Import printers from old versions"
-msgstr "匯入較舊的印表機"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FIXEDTEXT.TEXT
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr "您能夠匯入這些印表機。請選擇需要使用的印表機(~T)。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
-msgstr "全部選取(~S)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "請您選擇一個驅動程式"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this fax connection"
-msgstr "請選擇以下適用於這個傳真機的驅動程式。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "預設的驅動程式(~H)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr "一個特殊的適用於其他印表機格式的驅動程式(~F)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "選擇一個驅動程式"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this PDF converter"
-msgstr "請選擇以下適用於這個 PDF 轉換器的驅動程式。"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "預設的驅動程式(~H)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RADIOBUTTON.TEXT
 msgid  "The Adobe D~istiller(tm) driver"
-msgstr "Adobe D~istiller(tm) 驅動程式"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr "一個特殊的適用於其他印表機格式的驅動程式(~I)"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+#: padialog.src#RID_TXT_FONT_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr "斜體字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+#: padialog.src#RID_TXT_FONT_OBLIQUE.STRING.TEXT
 msgid  "Oblique"
-msgstr "斜體"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+#: padialog.src#RID_TXT_FONT_THIN.STRING.TEXT
 msgid  "Thin"
-msgstr "細體字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRALIGHT.STRING.TEXT
 msgid  "Ultralight"
-msgstr "超細體"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_SEMILIGHT.STRING.TEXT
 msgid  "Semilight"
-msgstr "半細體字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_LIGHT.STRING.TEXT
 msgid  "Light"
-msgstr "細體字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+#: padialog.src#RID_TXT_FONT_SEMIBOLD.STRING.TEXT
 msgid  "Semibold"
-msgstr "半粗體字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+#: padialog.src#RID_TXT_FONT_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr "粗體字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRABOLD.STRING.TEXT
 msgid  "Ultrabold"
-msgstr "超粗體字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRACONDENSED.STRING.TEXT
 msgid  "Ultracondensed"
-msgstr "超壓縮字體"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_EXTRACONDENSED.STRING.TEXT
 msgid  "Extracondensed"
-msgstr "超壓縮字體"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_CONDENSED.STRING.TEXT
 msgid  "Condensed"
-msgstr "壓縮字體"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_SEMICONDENSED.STRING.TEXT
 msgid  "Semicondensed"
-msgstr "半壓縮字體"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_SEMIEXPANDED.STRING.TEXT
 msgid  "Semiexpanded"
-msgstr "半寬型字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_EXPANDED.STRING.TEXT
 msgid  "Expanded"
-msgstr "寬型字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.STRING.TEXT
 msgid  "Extraexpanded"
-msgstr "超寬型字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.STRING.TEXT
 msgid  "Ultraexpanded"
-msgstr "超寬型字"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+#: padialog.src#RID_TXT_FONT_REGULAR.STRING.TEXT
 msgid  "Regular"
-msgstr "標準字體"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PAGEITEM.TEXT
 msgid  "Command"
-msgstr "指令"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PAGEITEM.TEXT
 msgid  "Paper"
-msgstr "紙張"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PAGEITEM.TEXT
 msgid  "Device"
-msgstr "設備"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PAGEITEM.TEXT
 msgid  "Font Replacement"
-msgstr "取代字型"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PAGEITEM.TEXT
 msgid  "Other Settings"
-msgstr "其他設定"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.STRING.TEXT
 msgid  "from driver"
-msgstr "按照驅動程式"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.STRING.TEXT
 msgid  "<ignore>"
-msgstr "<忽略>"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.STRING.TEXT
 msgid  "Properties of %s"
-msgstr "%s的屬性"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FIXEDTEXT.TEXT
 msgid  "~Paper size"
-msgstr "紙張格式(~P)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FIXEDTEXT.TEXT
 msgid  "~Orientation"
-msgstr "進紙方向(~O)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FIXEDTEXT.TEXT
 msgid  "~Duplex"
-msgstr "雙面(~D)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FIXEDTEXT.TEXT
 msgid  "Paper tray"
-msgstr "送紙匣"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.STRING.TEXT
 msgid  "Color"
-msgstr "顏色"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.STRING.TEXT
 msgid  "Grayscale"
-msgstr "灰階"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FIXEDTEXT.TEXT
 msgid  "~Option"
-msgstr "選項(~O)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FIXEDTEXT.TEXT
 msgid  "Current ~value"
-msgstr "目前的值(~V)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FIXEDTEXT.TEXT
 msgid  "Printer ~Language type"
-msgstr "印表機語系種類(~L)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.STRINGLIST.ITEM
 msgid  "PostScript (Level from driver)"
-msgstr "PostScript (驅動程式預設Level)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.STRINGLIST.ITEM
 msgid  "PostScript Level 1"
-msgstr "PostScript Level 1"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.STRINGLIST.ITEM
 msgid  "PostScript Level 2"
-msgstr "PostScript Level 2"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.STRINGLIST.ITEM
 msgid  "PostScript Level 3"
-msgstr "PostScript Level 3"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.STRINGLIST.ITEM
 msgid  "PDF"
-msgstr "PDF"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FIXEDTEXT.TEXT
 msgid  "~Color"
-msgstr "顏色(~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FIXEDTEXT.TEXT
 msgid  "Color ~depth"
-msgstr "顏色深度(~D)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CHECKBOX.TEXT
 msgid  "~Enable font replacement"
-msgstr "使用取代字型(~E)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FIXEDTEXT.TEXT
 msgid  "Replaced ~fonts"
-msgstr "要取代的字型(~F)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr "加入(~A)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "移除(~R)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FIXEDTEXT.TEXT
 msgid  "Repla~ce font"
-msgstr "取代字型(~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FIXEDTEXT.TEXT
 msgid  "by ~printer font"
-msgstr "代替使用列印字型(~P)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CHECKBOX.TEXT
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr "使用系統列印對話方塊，停用 %PRODUCTNAME 的列印對話方塊(~U)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FIXEDTEXT.TEXT
 msgid  "Command for quick printing without dialog (optional)"
-msgstr "快速列印而不會出現對話方塊的指令 (選擇性)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FIXEDLINE.TEXT
 msgid  "Select command"
-msgstr "選擇指令"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.STRING.TEXT
 msgid  "Printer"
-msgstr "印表機"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.STRING.TEXT
 msgid  "Fax"
-msgstr "傳真"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.STRING.TEXT
 msgid  "PDF converter"
-msgstr "PDF 轉換器"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FIXEDTEXT.TEXT
 msgid  "~Configure as"
-msgstr "配置成(~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CHECKBOX.TEXT
 msgid  "~Fax number will be removed from output"
-msgstr "不列印傳真號碼(~F)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
 msgid  "PDF target directory :"
-msgstr "PDF 目標目錄："
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FIXEDTEXT.TEXT
 msgid  "Command: "
-msgstr "指令："
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FIXEDLINE.TEXT
 msgid  "Printer"
-msgstr "印表機"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PUSHBUTTON.TEXT
 msgid  "~Help"
-msgstr "說明(~H)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "移除(~R)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.STRING.TEXT
 msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF 轉換器的指令處理方式如下：列印每個文件時指令行之中分別用一個暫時檔案來取代「(TMP)」和用一個目標 PDF 檔案名稱來替代「(OUTFILE)」。如果「(TMP)」已經存在於指令行之中，PostScript 代碼就會輸入成一個檔案，否則會當作標準輸入 (當作 pipe)。"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.STRING.TEXT
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr "印表機單項指令的處理方式如下：生成的 PostScript 原始碼按照標準輸入 (當作 pipe) 方式送給指令行。"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.STRING.TEXT
 msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "傳真机單項指令的處理方式如下：寄發傳真時透過指令行用一個暫時檔案替代「(TMP)」，用傳真號碼取代「(PHONE)」。如果指令行含有「(TMP)」，PostScript 原始碼就會轉換成一個檔案，否則就會當作標準輸入 (當作 pipe)。"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Left margin"
-msgstr "左邊距(~L)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Top margin"
-msgstr "上邊距(~T)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Right margin"
-msgstr "右邊距(~R)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Bottom margin"
-msgstr "下邊距(~B)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FIXEDTEXT.TEXT
 msgid  "~Comment"
-msgstr "註解(~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PUSHBUTTON.TEXT
 msgid  "~Default"
-msgstr "預設(~D)"
+msgstr ""
 
-#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+#: rtsetup.src#RID_TXT_QUERYFAXNUMBER.STRING.TEXT
 msgid  "Please enter the fax number."
-msgstr "請您輸入傳真號碼。"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.MODALDIALOG.TEXT
 msgid  "Authentication request"
-msgstr "認證請求"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FIXEDTEXT.TEXT
 msgid  "Please enter your authentication data for server %s"
-msgstr "請輸入您在伺服器 %s 中的認證資料"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FIXEDTEXT.TEXT
 msgid  "~User"
-msgstr "使用者(~U)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr "密碼(~P)"
+msgstr ""

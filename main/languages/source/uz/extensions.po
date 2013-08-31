@@ -31,2595 +31,2550 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
 msgid  "Address Book Data Source Wizard"
-msgstr "Manzillar daftarining maʼlumot manbasi ustasi"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
 msgid  "Address book type"
-msgstr "Manzillar daftari turi"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
-msgstr "Ulanish parametrlari"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
 msgid  "Table selection"
-msgstr "Jadvalni tanlash"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
 msgid  "Field Assignment"
-msgstr "Maydon tayinlash"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
 msgid  "Data Source Title"
-msgstr "Maʼlumot manbasi nomi"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
 msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
 msgid  "Please select the type of your external address book:"
-msgstr "Iltimos tashqi manzillar daftari turini koʻrsating:"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
-msgstr "Evolution"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
 msgid  "Groupwise"
-msgstr "Groupwise"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
 msgid  "Evolution LDAP"
-msgstr "Evolution LDAP"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
 msgid  "Mozilla / Netscape"
-msgstr "Mozilla / Netscape"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
 msgid  "Thunderbird"
-msgstr "Thunderbird"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
 msgid  "KDE address book"
-msgstr "KDE manzillar daftari"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
 msgid  "Mac OS X address book"
-msgstr "Mac OS X manzillar daftari"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
 msgid  "LDAP address data"
-msgstr "LDAP manzillar manbasi"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
 msgid  "Outlook address book"
-msgstr "Outlook manzillar daftari"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
 msgid  "Windows system address book"
-msgstr "Windows tizim manzillar daftari"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
 msgid  "Other external data source"
-msgstr "Boshqa tashqi maʼlumotlar manbasi"
-
-#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
 msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
+#: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
+msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
 msgid  "Settings"
-msgstr "Parametrlar"
-
-#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
 msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+#: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
+msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
 msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+#: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
+msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
 msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
+#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
 msgid  "Field Assignment"
-msgstr "Maydon tayinlash"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
 msgstr ""
 
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
 msgid  "Location"
-msgstr "Manzili"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
-msgid  "Browse..."
-msgstr "Tanlash..."
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
-msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr "Ushbu manzillar daftarini %PRODUCTNAME dasturida barcha modullar uchun aktivlashtirish."
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
-msgid  "Address book name"
-msgstr "Manzillar daftari nomi"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
-msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr "Boshqa bir maʼlumot bazasi shunday nomga ega. Maʼlumot manbasi nomi takrorlanmas boʻlishi kerak. Shuning uchun boshqa nom tanlang."
-
-#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
-msgid  "Please select a type of address book."
-msgstr "Iltimos manzillar daftari turini tanlang."
-
-#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
 msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+#: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
+msgid  "Browse..."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
+msgid  "Address book name"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
+msgid  "Please select a type of address book."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
 msgid  "Addresses"
-msgstr "Manzillar"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+#: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
 msgid  "Create Address Data Source"
-msgstr "Manzillar maʼlumot manbasini yaratish"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+#: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr "Aloqa oʻrnatib boʻlmadi."
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+#: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
 msgid  "Please check the settings made for the data source."
-msgstr "Maʼlumot manbasi moslamalarini tekshiring."
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+#: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
 msgid  "Address Data - Field Assignment"
-msgstr "Manzillar manbasi - Maydonni tayinlash"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr "Ayni paytda maydon belgilanmagan.\nMaydonni hozir koʻrsatishingiz mumkin yoki keyinroq menyudan amalga oshirishingiz mumkin:\n\"Fayl - Shablon - Manzillar daftari manbasi...\""
+#: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr ""
 
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
-msgid  "Table"
-msgstr "Jadval"
+#: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
+msgid  "Field selection:"
+msgstr ""
 
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
-msgid  "Search Key"
-msgstr "Qidiriladigan soʻz"
+#: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
+msgid  "Table;Query;Sql;Sql [Native]"
+msgstr ""
 
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
-msgid  "AutoFilter"
-msgstr "Avto-filtr"
+#: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
+msgid  "Bibliography Database"
+msgstr ""
 
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
-msgid  "Standard Filter"
-msgstr "Andza filtr"
+#: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
+msgid  "Do you want to edit the column arrangement?"
+msgstr ""
 
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
-msgid  "Remove Filter"
-msgstr "Filtrni olib tashlash"
+#: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
+msgid  "Column names"
+msgstr ""
 
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
-msgid  "Column Arrangement"
-msgstr "Ustunni tartiblash"
+#: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
+msgid  "<none>"
+msgstr ""
 
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
-msgid  "Data Source"
-msgstr "Maʼlumot manbasi"
+#: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
+msgid  "Column Layout for Table %1"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\\n"
-msgstr "Quyidagi ustun nomlarini tayinlab boʻlmaydi:\n"
+#: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
+msgid  "Choose Data Source"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
+#: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
+msgid  "Entry"
+msgstr ""
+
+#: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
+msgid  "The following column names could not be assigned:\n"
+msgstr ""
+
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
 msgid  "Article"
-msgstr "Maqola"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
 msgid  "Book"
-msgstr "Kitob"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
-msgstr "Risolalar"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
 msgid  "Conference proceedings"
 msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
 msgid  "Book excerpt"
-msgstr "Kitobdan iqtibos"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
 msgid  "Book excerpt with title"
 msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
 msgid  "Conference proceedings"
 msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
 msgid  "Journal"
-msgstr "Jurnal"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
-msgstr "Texnik qoʻllanma"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
-msgstr "Tezis"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
 msgid  "Miscellaneous"
-msgstr "Har xil"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
-msgstr "Dissertatsiya"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
 msgid  "Conference proceedings"
 msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
 msgid  "Research report"
-msgstr "Ilmiy tadqiqot hisoboti"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
 msgid  "Unpublished"
-msgstr "Nashr etilmadi"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
-msgstr "el.pochta"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
 msgid  "WWW document"
-msgstr "WWW hujjat"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
 msgid  "User-defined1"
-msgstr "Foydalanuvchi aniqlagan1"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
 msgid  "User-defined2"
-msgstr "Foydalanuvchi aniqlagan2"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
 msgid  "User-defined3"
-msgstr "Foydalanuvchi aniqlagan3"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
 msgid  "User-defined4"
-msgstr "Foydalanuvchi aniqlagan4"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
 msgid  "User-defined5"
-msgstr "Foydalanuvchi aniqlagan5"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr "Umumiy"
+msgstr ""
 
-#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
+#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
 msgid  "Insert Section..."
-msgstr "Boʻlim qoʻyish..."
+msgstr ""
 
-#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
+#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
 msgid  "Delete Section..."
-msgstr "Boʻlimni olib tashlash..."
+msgstr ""
 
-#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
+#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
 msgid  "Modify Name..."
-msgstr "Nomini oʻzgartirish..."
+msgstr ""
 
-#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
+#: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
 msgid  "~Short name"
-msgstr "~Qisqa nomi"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
+#: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
 msgid  "~Type"
-msgstr "Tur~i"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_YEAR.String.Text
+#: bibliography/sections.src#ST_YEAR.STRING.TEXT
 msgid  "~Year"
-msgstr "~Yil"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_AUTHOR.String.Text
+#: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
-msgstr "Muallif(lar)"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_TITLE.String.Text
+#: bibliography/sections.src#ST_TITLE.STRING.TEXT
 msgid  "Tit~le"
-msgstr "Sarla~vha"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
+#: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
-msgstr "~Nashriyot"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_ADDRESS.String.Text
+#: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
 msgid  "A~ddress"
-msgstr "M~anzil"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_ISBN.String.Text
+#: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
-msgstr "~ISBN"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_CHAPTER.String.Text
+#: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
 msgid  "~Chapter"
-msgstr "~Bob"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_PAGE.String.Text
+#: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
-msgstr "B~yet(lar)"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_EDITOR.String.Text
+#: bibliography/sections.src#ST_EDITOR.STRING.TEXT
 msgid  "Editor"
-msgstr "Tahrirchi"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_EDITION.String.Text
+#: bibliography/sections.src#ST_EDITION.STRING.TEXT
 msgid  "Ed~ition"
-msgstr "Na~shr"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
+#: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
 msgid  "~Book title"
-msgstr "~Kitobning nomi"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_VOLUME.String.Text
+#: bibliography/sections.src#ST_VOLUME.STRING.TEXT
 msgid  "Volume"
-msgstr "Hajmi"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
+#: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
-msgstr "Nashr t~uri"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
+#: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
 msgid  "Organi~zation"
-msgstr "Tashki~lot"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
+#: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
 msgid  "Instit~ution"
-msgstr "Insti~tut"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_SCHOOL.String.Text
+#: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
-msgstr "Universitet"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_REPORT.String.Text
+#: bibliography/sections.src#ST_REPORT.STRING.TEXT
 msgid  "Type of re~port"
-msgstr "Hisobot t~uri"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_MONTH.String.Text
+#: bibliography/sections.src#ST_MONTH.STRING.TEXT
 msgid  "~Month"
-msgstr "~Oy"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_JOURNAL.String.Text
+#: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
 msgid  "~Journal"
-msgstr "~Jurnal"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_NUMBER.String.Text
+#: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
-msgstr "~Raqam"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_SERIES.String.Text
+#: bibliography/sections.src#ST_SERIES.STRING.TEXT
 msgid  "Se~ries"
-msgstr "Ser~riya"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_ANNOTE.String.Text
+#: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
-msgstr "~Taqriz"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_NOTE.String.Text
+#: bibliography/sections.src#ST_NOTE.STRING.TEXT
 msgid  "~Note"
-msgstr "~Izoh"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_URL.String.Text
+#: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
-msgstr "URL"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
+#: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
 msgid  "User-defined field ~1"
-msgstr "Foydalanuvchi maylni ~1"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
+#: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
 msgid  "User-defined field ~2"
-msgstr "Foydalanuvchi maylni ~2"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
+#: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
 msgid  "User-defined field ~3"
-msgstr "Foydalanuvchi maylni ~3"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
+#: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
 msgid  "User-defined field ~4"
-msgstr "Foydalanuvchi maylni ~4"
+msgstr ""
 
-#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
+#: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
 msgid  "User-defined field ~5"
-msgstr "Foydalanuvchi maylni ~5"
-
-#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
-msgid  "Column names"
-msgstr "Ustun nomlari"
-
-#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
-msgid  "<none>"
-msgstr "<yoʻq>"
-
-#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
-msgid  "Column Layout for Table %1"
-msgstr "%1 jadvali uchun ustunning joylashishi"
-
-#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
-msgid  "Choose Data Source"
-msgstr "Maʼlumot manbasini tanlash"
-
-#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
-msgid  "Entry"
-msgstr "Yozuv"
-
-#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
-msgid  "Field selection:"
-msgstr "Maydon tanlash:"
-
-#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
-msgid  "Table;Query;Sql;Sql [Native]"
-msgstr "Jadval;Soʻrov;Sql;Sql [Native]"
-
-#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
-msgid  "Bibliography Database"
-msgstr "Adabiyotlar roʻyxati maʼlumot bazasi"
-
-#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
-msgid  "Do you want to edit the column arrangement?"
-msgstr "Ustunni tartiblashni oʻzgartirishni istaysizmi?"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
-#, fuzzy
-msgid  "Table Selection"
-msgstr "Jadvalni tanlash"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
-#, fuzzy
-msgid  "Control"
-msgstr "Boshqaruv"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
 msgstr ""
 
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
-#, fuzzy
-msgid  "Field Selection"
-msgstr "Maydonlarni tanlash"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
-#, fuzzy
-msgid  "Existing fields"
-msgstr "Mavjud maydonlar"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
-#, fuzzy
-msgid  "Display field"
-msgstr "Maydonni koʻrsatish"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
-msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
-msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
-#, fuzzy
-msgid  "Field Link"
-msgstr "Maydon bogʻlamasi"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
-msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
-#, fuzzy
-msgid  "Field from the ~Value Table"
-msgstr "Maydon jadval ~qiymatidan"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
-#, fuzzy
-msgid  "Field from the ~List Table"
-msgstr "Maydon jadval ~roʻyxatidan"
-
-#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
-msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
-#, fuzzy
-msgid  "Field Selection"
-msgstr "Maydonlarni tanlash"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
-#, fuzzy
-msgid  "Table element"
-msgstr "Jadval elementi"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
-#, fuzzy
-msgid  "Existing fields"
-msgstr "Mavjud maydonlar"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
-#, fuzzy
-msgid  "Selected fields"
-msgstr "Tanlangan maydonlar"
-
-#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
-#, fuzzy
-msgid  " (Date)"
-msgstr " (Sana)"
-
-#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
-#, fuzzy
-msgid  " (Time)"
-msgstr " (Vaqt)"
-
-#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
-#, fuzzy
-msgid  "Group Element Wizard"
-msgstr "Guruh elementi ustasi"
-
-#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
-#, fuzzy
-msgid  "Table Element Wizard"
-msgstr "Jadval elementi ustasi"
-
-#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
-#, fuzzy
-msgid  "List Box Wizard"
-msgstr "Roʻyxat ustasi"
-
-#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
-#, fuzzy
-msgid  "Combo Box Wizard"
-msgstr "Ochiladigan roʻyxat qutisi ustasi"
-
-#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
-#, fuzzy
-msgid  "The table connection to the data source could not be established."
-msgstr "Maʼlumot manbasiga jadval ulanishi amalga oshirilmadi."
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
-#, fuzzy
-msgid  "Data"
-msgstr "Ma'lumot"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
-#, fuzzy
-msgid  "Data"
-msgstr "Maʼlumot"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
-#, fuzzy
-msgid  "~Data source:"
-msgstr "~Maʼlumot manbasi:"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
-#, fuzzy
-msgid  "~..."
-msgstr "~..."
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
-#, fuzzy
-msgid  "~Table / Query:"
-msgstr "~Jadval / Soʻrov:"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
-#, fuzzy
-msgid  "Database Field"
-msgstr "Maʼlumot bazasi maydoni"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
-#, fuzzy
-msgid  "Do you want to save the value in a database field?"
-msgstr "Qiymatni maʼlumot bazasi maydonida saqlashni istaysizmi?"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
-#, fuzzy
-msgid  "~Yes, I want to save it in the following database field:"
-msgstr "~Ha, Quyidagi maʼlumot bazasi maydonida saqlashni istayman:"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
-#, fuzzy
-msgid  "~No, I only want to save the value in the form."
-msgstr "~Yoʻq, Qiymatni faqat formada saqlashni istayman."
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
-#, fuzzy
-msgid  "Form"
-msgstr "Forma"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
-#, fuzzy
-msgid  "Data source"
-msgstr "Maʼlumot manbasi"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
-#, fuzzy
-msgid  "Content type"
-msgstr "Tarkibidagini turi"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
-#, fuzzy
-msgid  "Content"
-msgstr "Tarkibi"
-
-#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
-#, fuzzy
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
 msgid  "Table"
-msgstr "Jadval"
+msgstr ""
 
-#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
-#, fuzzy
-msgid  "Query"
-msgstr "Soʻrov"
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
+msgid  "Search Key"
+msgstr ""
 
-#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
-#, fuzzy
-msgid  "SQL command"
-msgstr "SQL buyrugʻi"
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
+msgid  "AutoFilter"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
-#, fuzzy
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
+msgid  "Standard Filter"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
+msgid  "Remove Filter"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
+msgid  "Column Arrangement"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
+msgid  "Data Source"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr "Maʼlumot"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
-#, fuzzy
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
+msgid  "Data"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
+msgid  "~Data source:"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
+msgid  "~..."
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
+msgid  "~Table / Query:"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
+msgid  "Database Field"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
+msgid  "Do you want to save the value in a database field?"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
+msgid  "~No, I only want to save the value in the form."
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
+msgid  "Form"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
+msgid  "Data source"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
+msgid  "Content type"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
+msgid  "Content"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
+msgid  "Table"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
+msgid  "Query"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
+msgid  "SQL command"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
+msgid  "Group Element Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
+msgid  "Table Element Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
+msgid  "List Box Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
+msgid  "Combo Box Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
+msgid  "The table connection to the data source could not be established."
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
+msgid  "Field Selection"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
+msgid  "Table element"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
+msgid  "Existing fields"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
+msgid  "Selected fields"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
+msgid  " (Date)"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
+msgid  " (Time)"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
+msgid  "Data"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
 msgid  "Which ~names do you want to give the option fields?"
-msgstr "Parametr maydonlari uchun qaysi ~nomdan foydalanmoqchisiz?"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
-#, fuzzy
+#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
-msgstr "~Parametrlar maydoni"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
-#, fuzzy
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
 msgid  "Default Field Selection"
-msgstr "Maydonni andoza tanlash"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
-#, fuzzy
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
 msgid  "Should one option field be selected as a default?"
-msgstr "Biror parametr maydoni andoza qilib belgilansinmi?"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
-#, fuzzy
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
-msgstr "~Ha, quyidagilar:"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
 msgid  "No, one particular field is not going to be selected."
 msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
-#, fuzzy
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
 msgid  "Field Values"
-msgstr "Maydon qiymatlari"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
 msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
-#, fuzzy
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
-msgstr "Har parametr uchun qanday ~qiymat berishni istaysiz?"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
-#, fuzzy
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
-msgstr "~Parametrlar maydoni"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
-#, fuzzy
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
 msgid  "Create Option Group"
-msgstr "Parametrlar guruhini yaratish"
+msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
 msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
 msgid  "These were all details needed to create the option group."
 msgstr ""
 
-#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
+#: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
 msgstr ""
 
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
+msgid  "Table Selection"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
+msgid  "Control"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
+msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
+msgid  "Field Selection"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
+msgid  "Existing fields"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
+msgid  "Display field"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
+msgid  "The contents of the field selected will be shown in the combo box list."
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
+msgid  "Field Link"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
+msgid  "Field from the ~Value Table"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
+msgid  "Field from the ~List Table"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr ""
+
+#: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
 msgid  "<< Back"
-msgstr "<< Orqaga"
+msgstr ""
 
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
+#: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "Next >>"
-msgstr "Keyingi >>"
+msgstr ""
 
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
 msgid  "Accept"
-msgstr "Qabul qilish"
+msgstr ""
 
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
 msgid  "Finish"
-msgstr "Tayyor"
+msgstr ""
 
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
-msgstr " - Litsenziya kelishuvi"
+msgstr ""
 
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
 msgid  "- User Data"
-msgstr "- Foydalanuvchi maʼlumoti"
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
+#: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
 msgid  "Welcome"
-msgstr "Marhamat"
-
-#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
 msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
+#: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
+msgstr ""
+
+#: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
 msgid  "License Agreement"
-msgstr "Litsenziya kelishuvi"
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr "Oʻrnatish uchun quyidagilarni bajaring:"
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr "1."
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Litsenziya kelishuvini koʻrish. Iltimos ushbu oynadagi litsenziya kelishuvi matnini koʻrib chiqish uchun sichqoncha gʻildiragidan yoki '%PAGEDOWN' tugmasidan foydalaning."
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
+#: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 msgid  "Page Down"
-msgstr "Keyingi varaq"
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr "2."
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement."
-msgstr "Litsenziya kelishuvini qabul qilish."
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
+#: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
 msgid  "I accept the terms of the Agreement."
-msgstr "Ushbu kelishuv shartlariga roziman."
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
+#: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr "Qa~bul qilish"
+msgstr ""
 
-#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
+#: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
-msgstr "Voz kechish"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
-msgid  "Tab Order"
-msgstr "Tab tartibi"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
-msgid  "Controls"
-msgstr "Boshqargichlar"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
-msgid  "Move Up"
-msgstr "Yuqoriga koʻchirish"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
-msgid  "Move Down"
-msgstr "Pastga koʻchirish"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
-msgid  "Automatic Sort"
-msgstr "Avtomatik saralash"
-
-#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
-msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
 msgstr ""
 
-#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
-msgid  "~No assignment"
-msgstr "~Tayinlanmasin"
-
-#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
-msgid  "Label Field Selection"
-msgstr "Yorliq maydonini tanlash"
-
-#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
-msgid  "Forms"
-msgstr "Formalar"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+#: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
+msgid  "Character"
 msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
-msgid  "Button"
-msgstr "Tugma"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
-msgid  "Option Button"
-msgstr "Moslamalar tugmasi"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
-msgid  "Check Box"
-msgstr "Bayroqcha"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-msgid  "Label Field"
-msgstr "Yorliq maydoni"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
-msgid  "Group Box"
-msgstr "Guruh qutisi"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
-msgid  "Text Box"
-msgstr "Matn maydoni"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-msgid  "Formatted Field"
-msgstr "Formatlangan maydon"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
-msgid  "List Box"
-msgstr "Roʻyxat"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
-msgid  "Combo Box"
-msgstr "Ochiladigan roʻyxat qutisi"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
-msgid  "Image Button"
-msgstr "Rasm tugmasi"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
-msgid  "Hidden Control"
-msgstr "Bekitilgan boshqargich"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
-msgid  "Control (unknown type)"
-msgstr "Boshqargichlar (nomaʼlum turi)"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-msgid  "Image Control"
+#: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
+msgid  "Font"
 msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
-msgid  "File Selection"
-msgstr "Faylni tanlash"
+#: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
+msgid  "Font Effects"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
-msgid  "Date Field"
-msgstr "Sana maydoni"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
-msgid  "Time Field"
-msgstr "Vaqt maydoni"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
-msgid  "Numeric Field"
-msgstr "Son maydoni"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
-msgid  "Currency Field"
-msgstr "Pul maydoni"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
-msgid  "Pattern Field"
-msgstr "Niqobli kiritish maydoni"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
-msgid  "Table Control "
-msgstr "Jadval boshqaruvi"
-
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
 msgid  "Link fields"
-msgstr "Bogʻlama maydonlari"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
 msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
 msgid  "Suggest"
-msgstr "Taklif"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
 msgid  "Sub Form"
 msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
 msgid  "Master Form"
 msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
 msgid  "The columns of '#' could not be retrieved."
 msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
-msgid  "Default"
-msgstr "Andoza"
-
-#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
-msgid  "General"
-msgstr "Umumiy"
-
-#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
-msgid  "Data"
-msgstr "Maʼlumot"
-
-#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
-msgid  "No"
-msgstr "Yoʻq"
-
-#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
-msgid  "Yes"
-msgstr "Ha"
-
-#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
-msgid  "Help"
-msgstr "Yordam"
-
-#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
-msgid  "<Embedded-Image>"
-msgstr "<Embedded-Image>"
-
-#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
-msgid  "Text"
-msgstr "Matn"
-
-#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
+#: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
 msgid  "Edit mask"
-msgstr "Niqobni tahrirlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
+#: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
 msgid  "Literal mask"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
+#: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
 msgid  "Read-only"
-msgstr "Faqat oʻqish uchun"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
+#: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
 msgid  "Enabled"
-msgstr "Yoqilgan"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
+#: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
 msgid  "Visible"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
+#: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
 msgid  "AutoFill"
-msgstr "Avtotoʻldirish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
+#: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
 msgid  "Line count"
-msgstr "Qatorlar soni"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
+#: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
 msgid  "Max. text length"
-msgstr "Matnning maks. uzunligi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
+#: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
 msgid  "Spin Button"
-msgstr "Moslamalar tugmasi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
+#: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
 msgid  "Strict format"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
+#: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
 msgid  "Thousands separator"
-msgstr "Mingni ajratuvchi belgi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
+#: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
 msgid  "Printable"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
+#: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
 msgid  "URL"
-msgstr "URL"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
+#: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
 msgid  "Frame"
-msgstr "Freym"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
+#: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
 msgid  "Help text"
-msgstr "Yordam matni"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
+#: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
 msgid  "Help URL"
-msgstr "Yordam URL manzili"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
+#: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
 msgid  "Additional information"
-msgstr "Qoʻshimcha maʼlumot"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
+#: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
 msgid  "Password character"
-msgstr "Maxfiy soʻz belgisi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
+#: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
 msgid  "Tristate"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
+#: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
 msgid  "Empty string is NULL"
-msgstr "Boʻsh qator - NULL"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
+#: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
 msgid  "Decimal accuracy"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
+#: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
 msgid  "Graphics"
-msgstr "Rasmlar"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
+#: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
 msgid  "Default selection"
-msgstr "Andoza tanlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
+#: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
 msgid  "Default button"
-msgstr "Andoza tugma"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
+#: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
 msgid  "Label Field"
-msgstr "Yorliq maydoni"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
+#: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
 msgid  "Label"
-msgstr "Yorliq"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
+#: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr "Tekislash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
+#: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
 msgid  "Vert. Alignment"
-msgstr "Vertikal tekislash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
 msgid  "Top"
-msgstr "Yuqorida"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
 msgid  "Middle"
-msgstr "Oʻrtada"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
 msgid  "Bottom"
-msgstr "Pastda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
+#: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
 msgid  "Graphics alignment"
-msgstr "Rasmlarni tekislash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
+#: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
 msgid  "Font"
-msgstr "Shrift"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
+#: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
 msgid  "Background color"
-msgstr "Orqa fon rangi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
+#: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
 msgid  "Border"
-msgstr "Chegara"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
+#: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
 msgid  "Icon size"
-msgstr "Nishonchaning oʻlchami"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
 msgid  "Small"
-msgstr "Kichik"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
 msgid  "Large"
-msgstr "Kichik"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
+#: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
 msgid  "Positioning"
-msgstr "Joylashuvi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
+#: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
 msgid  "Navigation"
-msgstr "Navigatsiya"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
+#: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
 msgid  "Acting on a record"
-msgstr "Yozuv ustidagi amal"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
+#: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
 msgid  "Filtering / Sorting"
-msgstr "Filtrlash / Saralash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
+#: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
 msgid  "Horizontal scroll bar"
-msgstr "Gorizontal varaqlash paneli"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
+#: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
 msgid  "Vertical scroll bar"
-msgstr "Vertikal varaqlash paneli"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
+#: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
 msgid  "Word break"
-msgstr "Soʻzni boʻlish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
+#: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
 msgid  "Multiline input"
-msgstr "Koʻp qatorli kiritish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
+#: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
 msgid  "Multiselection"
-msgstr "Ommaviy tanlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
+#: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
 msgid  "Name"
-msgstr "Nomi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
+#: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 msgid  "Tab order"
-msgstr "Tab tartibi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
+#: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
 msgid  "Mouse wheel scroll"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
+#: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
 msgid  "Filter"
-msgstr "Filtr"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
+#: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
 msgid  "Sort"
-msgstr "Saralash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
+#: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
 msgid  "Record marker"
-msgstr "Qayd markeri"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
+#: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
 msgid  "Filter proposal"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
+#: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
 msgid  "Navigation bar"
-msgstr "Navigatsiya paneli"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
+#: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
 msgid  "Cycle"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
+#: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
 msgid  "Tabstop"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
+#: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
 msgid  "Data field"
-msgstr "Maʼlumot maydoni"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
+#: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
 msgid  "Dropdown"
-msgstr "Ochiladigan roʻyxat"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
+#: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
 msgid  "Bound field"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
+#: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
 msgid  "List content"
-msgstr "Roʻyxat tarkibi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
+#: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
 msgid  "Type of list contents"
-msgstr "Roʻyxat tarkibining turi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
+#: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
 msgid  "Content"
-msgstr "Tarkibi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
+#: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
 msgid  "Content type"
-msgstr "Tarkibidagini turi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
+#: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
 msgid  "Allow additions"
-msgstr "Qoʻshishga ruxsat berish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
+#: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
 msgid  "Allow deletions"
-msgstr "Olibtashlashga ruxsat berish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
+#: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
 msgid  "Allow modifications"
-msgstr "Oʻzgartirishga ruxsat berish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
+#: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
 msgid  "Add data only"
-msgstr "Faqat maʼlumot qoʻshish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+#: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
 msgid  "Data source"
-msgstr "Maʼlumot manbasi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
+#: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
 msgid  "Link master fields"
-msgstr "Asosiy maydonlar bilan bogʻlanish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
+#: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
 msgid  "Link slave fields"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
+#: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
 msgid  "Value min."
-msgstr "Minimal qiymat"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
+#: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
 msgid  "Value max."
-msgstr "Maksimal qiymat"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
+#: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
 msgid  "Incr./decrement value"
-msgstr "Oʻsish/kamayish qiymati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
+#: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
 msgid  "Currency symbol"
-msgstr "Pul belgisi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
+#: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
 msgid  "Date min."
-msgstr "Minimal maʼlumot"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
+#: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
 msgid  "Date max."
-msgstr "Masimal maʼlumot"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
+#: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
 msgid  "Date format"
-msgstr "Sananing koʻrinishi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
+#: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
 msgid  "Selection"
-msgstr "Tanlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
+#: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
 msgid  "Time min."
-msgstr "Minimal vaqt"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
+#: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
 msgid  "Time max."
-msgstr "Maksimal vaqt"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
+#: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
 msgid  "Time format"
-msgstr "Vaqtning koʻrinishi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
+#: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
 msgid  "Prefix symbol"
-msgstr "Prefiks belgisi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
+#: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
 msgid  "Value"
-msgstr "Qiymati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
+#: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
 msgid  "Formatting"
-msgstr "Formatlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
+#: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
 msgid  "Class ID"
-msgstr "Sinf ID'si"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
+#: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
 msgid  "Height"
-msgstr "Boʻyi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
+#: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
 msgid  "Width"
-msgstr "Eni"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
+#: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
 msgid  "List index"
-msgstr "Roʻyxat indeksi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
+#: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
 msgid  "Row height"
-msgstr "Satrning balandligi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
+#: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
 msgid  "Fill color"
-msgstr "Toʻldirish rangi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
+#: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
 msgid  "Line color"
-msgstr "Chiziqning rangi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
+#: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
 msgid  "Reference value (on)"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
+#: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
 msgid  "Reference value (off)"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
+#: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
 msgid  "List entries"
-msgstr "Roʻyxat elementlari"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
+#: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
 msgid  "Action"
-msgstr "Amal"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
+#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
 msgid  "URL"
-msgstr "URL"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
+#: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
 msgid  "Type of submission"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
+#: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
 msgid  "Default status"
-msgstr "Andoza holat"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
+#: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
 msgid  "Submission encoding"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
+#: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
 msgid  "Default value"
-msgstr "Andoza qiymat"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
+#: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
 msgid  "Default text"
-msgstr "Andoza matn"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
+#: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
 msgid  "Default date"
-msgstr "Andoza sana"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
+#: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
 msgid  "Default time"
-msgstr "Andoza vaqt"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
+#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
 msgid  "Frame"
-msgstr "Freym"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
 msgid  "Without frame"
-msgstr "Freymsiz"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
 msgid  "3D look"
-msgstr "3D koʻrinish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
 msgid  "Flat"
-msgstr "Yassi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
 msgid  "Valuelist"
-msgstr "Qiymat roʻyxati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
 msgid  "Table"
-msgstr "Jadval"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
 msgid  "Query"
-msgstr "Soʻrov"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
 msgid  "Sql"
-msgstr "Sql"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
 msgid  "Sql [Native]"
-msgstr "Sql [Native]"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
 msgid  "Tablefields"
-msgstr "Jadval maydonlari"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
 msgid  "Left"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
 msgid  "Center"
-msgstr "Markazda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
 msgid  "Right"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
 msgid  "None"
-msgstr "Yoʻq"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
 msgid  "Submit form"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
 msgid  "Reset form"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
 msgid  "Open document/web page"
-msgstr "Hujjatni/veb sahifani ochish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
 msgid  "First record"
-msgstr "Birinchi yozuv"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
 msgid  "Previous record"
-msgstr "Oldingi yozuv"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
 msgid  "Next record"
-msgstr "Keyingi yozuv"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
 msgid  "Last record"
-msgstr "Oxirigi yozuv"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
 msgid  "Save record"
-msgstr "Yozuvni saqlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
 msgid  "Undo data entry"
-msgstr "Ma'lumot kiritishni bekor qilish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
 msgid  "New record"
-msgstr "Yangi yozuv"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
 msgid  "Delete record"
-msgstr "Yozuvni olib tashlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
 msgid  "Refresh form"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
 msgid  "Get"
-msgstr "Get"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
 msgid  "Post"
-msgstr "Post"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
 msgid  "URL"
-msgstr "URL"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
 msgid  "Multipart"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
 msgid  "Text"
-msgstr "Matn"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
 msgid  "Standard (short)"
-msgstr "Andoza (qisqa)"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
 msgid  "Standard (short YY)"
-msgstr "Andoza (qisqa YY)"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
 msgid  "Standard (short YYYY)"
-msgstr "Andoza (qisqa YYYY)"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
 msgid  "Standard (long)"
-msgstr "Andoza (uzun)"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
 msgid  "DD/MM/YY"
-msgstr "DD/MM/YY"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
 msgid  "MM/DD/YY"
-msgstr "MM/DD/YY"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
 msgid  "YY/MM/DD"
-msgstr "YY/MM/DD"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
 msgid  "DD/MM/YYYY"
-msgstr "DD/MM/YYYY"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
 msgid  "MM/DD/YYYY"
-msgstr "MM/DD/YYYY"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
 msgid  "YYYY/MM/DD"
-msgstr "YYYY/MM/DD"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
 msgid  "YY-MM-DD"
-msgstr "YY-MM-DD"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
 msgid  "YYYY-MM-DD"
-msgstr "YYYY-MM-DD"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
 msgid  "13:45"
-msgstr "13:45"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
 msgid  "13:45:00"
-msgstr "13:45:00"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
 msgid  "01:45 PM"
-msgstr "01:45 PM"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
 msgid  "01:45:00 PM"
-msgstr "01:45:00 PM"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
 msgid  "Not Selected"
-msgstr "Tanlanmagan"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
 msgid  "Selected"
-msgstr "Tanlangan"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
 msgid  "Not Defined"
-msgstr "Aniqlanmagan"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
 msgid  "All records"
-msgstr "Hamma yozuvlar"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
 msgid  "Active record"
-msgstr "Aktiv yozuvlar"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
 msgid  "Current page"
-msgstr "Joriy sahifa"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
 msgid  "No"
-msgstr "Yoʻq"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
 msgid  "Yes"
-msgstr "Ha"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
 msgid  "Parent Form"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
 msgid  "None"
-msgstr "Yoʻq"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
 msgid  "Single"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
 msgid  "Multi"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
 msgid  "Range"
-msgstr "Oraliq"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
 msgid  "Fill parameters"
-msgstr "Toʻldirish parametrlari"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
 msgid  "Execute action"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
 msgid  "After updating"
-msgstr "Yangilangandan keyin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
-msgstr "Yangilashdan oldin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
 msgid  "Before record action"
-msgstr "Yozuv amalidan oldin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
 msgid  "After record action"
-msgstr "Yozuv amalidan keyin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
-msgstr "Olib tashlashni tasdiqlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
 msgid  "Error occurred"
-msgstr "Xatolik yuz berdi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
-msgstr "Fokus olinayotganda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
 msgid  "When losing focus"
-msgstr "Fokus yoʻqotilayotganda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
-msgstr "Element holati oʻzgardi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
 msgid  "Key pressed"
-msgstr "Tugma bosilgan"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
 msgid  "Key released"
-msgstr "Tugma qoʻyib yuborildi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
 msgid  "When loading"
-msgstr "Yuklanayotganda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
 msgid  "Before reloading"
-msgstr "Qayta yuklashdan oldin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
 msgid  "When reloading"
-msgstr "Qayta yuklanayotganda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
 msgid  "Mouse moved while key pressed"
-msgstr "Tugma bosilganda sichqonchani qimirlatish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
 msgid  "Mouse inside"
-msgstr "Sichqoncha ichkarida"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
 msgid  "Mouse outside"
-msgstr "Sichqoncha tashqarida"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
 msgid  "Mouse moved"
-msgstr "Sichqonchani qimirlatish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
 msgid  "Mouse button pressed"
-msgstr "Sichqoncha tugmasi bosilgan"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
 msgid  "Mouse button released"
-msgstr "Sichqoncha tugmasi qoʻyib yuborildi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
 msgid  "Before record change"
-msgstr "Yozuv oʻzgarishidan oldin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
 msgid  "After record change"
-msgstr "Yozuv oʻzgarishidan keyin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
 msgid  "After resetting"
-msgstr "Tiklangandan keyin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
 msgid  "Prior to reset"
-msgstr "Tiklashdan oldin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
 msgid  "Approve action"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
 msgid  "Before submitting"
-msgstr "Tasdiqlashdan oldin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
 msgid  "Text modified"
-msgstr "Matn oʻzgartirilgan"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
-msgstr "Yopishdan oldin"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
-msgstr "Yuklanmasa"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
 msgid  "Changed"
-msgstr "Oʻzgartirilgan"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
+#: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
 msgid  "Events"
-msgstr "Hodisalar"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
+#: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
 msgid  "Analyze SQL command"
-msgstr "SQL buyrugʻi tahili"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
+#: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
 msgid  "PositionX"
-msgstr "Xholati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
+#: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
 msgid  "PositionY"
-msgstr "Yholati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
+#: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
 msgid  "Title"
-msgstr "Sarlavha"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
+#: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
 msgid  "Page (step)"
-msgstr "Sahifa (bosqich)"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
+#: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
 msgid  "Progress value"
-msgstr "Jarayon qiymati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
+#: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
 msgid  "Progress value min."
-msgstr "Jarayonning minimal qiymati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
+#: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
 msgid  "Progress value max."
-msgstr "Jarayonning maksimal qiymati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
+#: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
 msgid  "Scroll value"
-msgstr "Varaqlash qiymati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
+#: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
 msgid  "Scroll value max."
-msgstr "Aylantirishning maksimal qiymati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
+#: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
 msgid  "Scroll value min."
-msgstr "Aylantirishning minimal qiymati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
+#: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
 msgid  "Default scroll value"
-msgstr "Andoza varaqlash qiymati"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
+#: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
 msgid  "Small change"
-msgstr "Kichik oʻzgarish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
+#: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
 msgid  "Large change"
-msgstr "Katta oʻzgarish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
+#: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
 msgid  "Delay"
-msgstr "Kechikish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
+#: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
 msgid  "Repeat"
-msgstr "Takrorlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
+#: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
 msgid  "Visible size"
-msgstr "Koʻrinadigan oʻlcham"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
+#: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
 msgid  "Orientation"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 msgid  "Horizontal"
-msgstr "Gorizontal"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
 msgid  "Vertical"
-msgstr "Vertikal"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
+#: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
 msgid  "While adjusting"
-msgstr "Tekislash mobaynida"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
+#: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
 msgid  "Date"
-msgstr "Sana"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
+#: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
 msgid  "State"
-msgstr "Viloyat"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
+#: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
 msgid  "Time"
-msgstr "Vaqt"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
+#: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
 msgid  "Scale"
-msgstr "Masshtab"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
+#: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
 msgid  "Button type"
-msgstr "Tugma turi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
 msgid  "Default"
-msgstr "Andoza"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
 msgid  "OK"
-msgstr "OK"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
 msgid  "Cancel"
-msgstr "Bekor qilish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
 msgid  "Help"
-msgstr "Yordam"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
+#: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr "\"$name$\" maʼlumot manbasiga ulanib boʻlmadi."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
+#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
 msgid  "Text"
-msgstr "Matn"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
+#: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
 msgid  "Linked cell"
-msgstr "Bogʻlangan katak"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
+#: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
 msgid  "Source cell range"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
+#: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
 msgid  "Contents of the linked cell"
-msgstr "Bogʻlangan kataklarning tarkibi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
 msgid  "The selected entry"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
 msgid  "Position of the selected entry"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
+#: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
 msgid  "Scrollbars"
-msgstr "Varaqlash panellari"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
 msgid  "Single-line"
-msgstr "Bitta satr"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
 msgid  "Multi-line"
-msgstr "Koʻp satr"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
 msgid  "Multi-line with formatting"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
+#: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
 msgid  "Symbol color"
-msgstr "Belgi rangi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
+#: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
 msgid  "Text lines end with"
-msgstr "Matn satrlari quyidagilar bilan tugaydi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
 msgid  "LF (Unix)"
-msgstr "LF (Unix)"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
 msgid  "CR+LF (Windows)"
-msgstr "CR+LF (Windows)"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
 msgid  "None"
-msgstr "Yoʻq"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
 msgid  "Horizontal"
-msgstr "Gorizontal"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
 msgid  "Vertical"
-msgstr "Vertikal"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
 msgid  "Both"
-msgstr "Ikkalasi ham"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
 msgid  "Table"
-msgstr "Jadval"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
 msgid  "Query"
-msgstr "Soʻrov"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
 msgid  "SQL command"
-msgstr "SQL buyrugʻi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
+#: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
 msgid  "Toggle"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
+#: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
 msgid  "Take Focus on Click"
-msgstr "Bosilganda fokusni ushlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
+#: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
 msgid  "Hide selection"
-msgstr "Tanlashni bekitish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
+#: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
 msgid  "Style"
-msgstr "Uslub"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 msgid  "3D"
-msgstr "3D"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
 msgid  "Flat"
-msgstr "Yassi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
+#: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
 msgid  "Border color"
-msgstr "Chegara rangi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
 msgid  "Left top"
-msgstr "Chapdan yuqorida"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
 msgid  "Left centered"
-msgstr "Chapdan markazda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
 msgid  "Left bottom"
-msgstr "Chapdan pastda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
 msgid  "Right top"
-msgstr "Yuqoridan chapda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
 msgid  "Right centered"
-msgstr "Yuqorida markazda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
 msgid  "Right bottom"
-msgstr "Oʻngda pastda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
 msgid  "Above left"
-msgstr "Yuqoridan chapda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
 msgid  "Above centered"
-msgstr "Yuqoridan markazda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
 msgid  "Above right"
-msgstr "Yuqoridan oʻngda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
 msgid  "Below left"
-msgstr "Pastdan chapda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
 msgid  "Below centered"
-msgstr "Pastdan markazda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
 msgid  "Below right"
-msgstr "Pastdan oʻngda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
 msgid  "Centered"
-msgstr "Markazda"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
+#: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
 msgid  "Wrap text automatically"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
+#: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
 msgid  "Text type"
-msgstr "Matnning turi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
 msgid  "Hide"
-msgstr "Bekitish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
 msgid  "Show"
-msgstr "Koʻrsatish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
+#: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
 msgid  "XML data model"
-msgstr "XML maʼlumot modeli"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
+#: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
 msgid  "Binding expression"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
 msgid  "Required"
-msgstr "Talab qilinadi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
+#: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
 msgid  "List entry source"
-msgstr "Roʻyxat elementi manbasi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
 msgid  "Relevant"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
 msgid  "Read-only"
-msgstr "Faqat oʻqish uchun"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
 msgid  "Constraint"
-msgstr "Cheklov"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
 msgid  "Calculation"
-msgstr "Hisoblash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
 msgid  "Data type"
-msgstr "Sana turi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
 msgid  "Whitespaces"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
 msgid  "Preserve"
-msgstr "Zahirada saqlash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
 msgid  "Replace"
-msgstr "Almashtirish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
 msgid  "Collapse"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
 msgid  "Pattern"
-msgstr "Namuna"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
 msgid  "Length"
-msgstr "Uzunligi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
 msgid  "Length (at least)"
-msgstr "Uzunligi (minimal)"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
 msgid  "Length (at most)"
-msgstr "Uzunligi (maksimal)"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
 msgid  "Digits (total)"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
 msgid  "Digits (fraction)"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
 msgid  "Max. (inclusive)"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
 msgid  "Max. (exclusive)"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
 msgid  "Min. (inclusive)"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
+#: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
 msgid  "Min. (exclusive)"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
+#: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
 msgid  "Submission"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
+#: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
 msgid  "Binding"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
+#: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
 msgid  "Selection type"
-msgstr "Tanlash turi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
+#: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
 msgid  "Root displayed"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
+#: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
 msgid  "Show handles"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
+#: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
 msgid  "Show root handles"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
+#: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
 msgid  "Editable"
-msgstr "Tahrirlab boʻladigan"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
+#: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
 msgid  "Invokes stop node editing"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
+#: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
 msgid  "With title bar"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
+#: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
 msgid  "No Label"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
 msgid  "No"
-msgstr "Yoʻq"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
 msgid  "Keep Ratio"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
 msgid  "Fit to Size"
-msgstr "Hajmiga moslash"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
+#: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
 msgid  "Input required"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
+#: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
 msgid  "Text direction"
-msgstr "Matnning yoʻnalishi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
 msgid  "Left-to-right"
-msgstr "Chapdan oʻngga"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
 msgid  "Right-to-left"
-msgstr "Oʻngdan chapga"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
 msgid  "Use superordinate object settings"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
 msgid  "Never"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
 msgid  "When focused"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
 msgid  "Always"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
+#: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
 msgid  "Anchor"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
 msgid  "To Paragraph"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "As Character"
-msgstr "Belgi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
 msgid  "To Page"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
 msgid  "To Frame"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
 msgid  "To Character"
-msgstr "Belgi"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
 msgid  "To Page"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
+#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "To Cell"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
 msgid  "Regular"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
 msgid  "Bold Italic"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
 msgid  "Italic"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
 msgid  "Bold"
 msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
+#: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
 msgid  "(Default)"
-msgstr "Andoza"
+msgstr ""
 
-#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
-msgid  "Character"
-msgstr "Belgi"
-
-#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
-msgid  "Font"
-msgstr "Shrift"
-
-#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
-msgid  "Font Effects"
-msgstr "Shrift effektlari"
-
-#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
+#: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
 msgid  "New Data Type"
-msgstr "Yangi m aʼlumot turi"
+msgstr ""
 
-#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
+#: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
 msgid  "Type a name for the new data type:"
-msgstr "Yangi maʼlumot turi nomini kiriting:"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\\n Dev~ice"
-msgstr "U~skuna\n haqida"
+#: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
+msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\\nPreview"
-msgstr "Koʻrib chiqishni\nyaratish"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
+msgid  "Button"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
-msgid  "Preview"
-msgstr "Koʻrib chiqish"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
+msgid  "Option Button"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
-msgid  "Scan area"
-msgstr "Skan qilish hududi"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
+msgid  "Check Box"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
-msgid  "Left:"
-msgstr "Chap:"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
+msgid  "Label Field"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
-msgid  "Top:"
-msgstr "Yuqorida:"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
+msgid  "Group Box"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
-msgid  "Right:"
-msgstr "Oʻng:"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
+msgid  "Text Box"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
-msgid  "Bottom:"
-msgstr "Past:"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
+msgid  "Formatted Field"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
-msgid  "Device used:"
-msgstr "Ishlatilayotgan uskuna:"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
+msgid  "List Box"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
-msgid  "Resolution [~DPI]"
-msgstr "Oʻlcham [~DPI]"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
+msgid  "Combo Box"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
-msgid  "Show advanced options"
-msgstr "Qoʻshimcha parametrlarni koʻrsatish"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
+msgid  "Image Button"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
-msgid  "Options:"
-msgstr "Parametrlar:"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
+msgid  "Hidden Control"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
-msgid  "Vector element"
-msgstr "Vektorli element"
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
+msgid  "Control (unknown type)"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
+msgid  "Image Control"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
+msgid  "File Selection"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
+msgid  "Date Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
+msgid  "Time Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
+msgid  "Numeric Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
+msgid  "Currency Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
+msgid  "Pattern Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
+msgid  "Table Control "
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
+msgid  "Default"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
+msgid  "General"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
+msgid  "Data"
+msgstr ""
+
+#: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
+msgid  "No"
+msgstr ""
+
+#: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
+msgid  "Yes"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
+msgid  "Help"
+msgstr ""
+
+#: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
+msgid  "<Embedded-Image>"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
+msgid  "Text"
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
+msgid  "~No assignment"
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
+msgid  "Label Field Selection"
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
+msgid  "Forms"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
+msgid  "Tab Order"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
+msgid  "Controls"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
+msgid  "Move Up"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
+msgid  "Move Down"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
+msgid  "Automatic Sort"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
 msgid  "Set"
-msgstr "Oʻrnatish"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
-msgid  "Scanner"
-msgstr "Skaner"
-
-#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr "Uskuna: %s\nIsh.chiqaruvchi: %s\nRusumi: %s\nTuri: %s"
-
-#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
-msgid  "An error occurred while scanning."
-msgstr "Skan qilish xatoligi"
-
-#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
-msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr "Uskuna koʻrib chiqish usuli uchun moslanmagan. Buning oʻrniga skan qilingan tasvir ishlatiladi. Bu biroz vaqtni olishi mumkin."
-
-#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
-msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr "SANE interfeysi ishga tushirilmadi. Skan qilib boʻlmaydi."
-
-#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
-msgid  "Set"
-msgstr "Oʻrnatish"
-
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
 msgid  "Linear ascending"
-msgstr "Chiziqqa nisbatan koʻpayishi boʻyicha"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
 msgid  "Linear descending"
-msgstr "Chiziqqa nisbatan kamayishi boʻyicha"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
 msgid  "Original values"
-msgstr "Asl qiymatlar"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
 msgid  "Exponential increasing"
-msgstr "Eksponenta boʻyicha ortishi"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
+msgid  "About\n Dev~ice"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
+msgid  "Create\nPreview"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
+msgid  "Preview"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
+msgid  "Scan area"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
+msgid  "Left:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
+msgid  "Top:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
+msgid  "Right:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
+msgid  "Bottom:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
+msgid  "Device used:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
+msgid  "Resolution [~DPI]"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
+msgid  "Show advanced options"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
+msgid  "Options:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
+msgid  "Vector element"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
+msgid  "Set"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
+msgid  "Scanner"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
+msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
+msgid  "An error occurred while scanning."
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr ""
+
+#: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
+msgid  "Check for ~Updates..."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
 msgid  "Checking..."
-msgstr "Tekshirilmoqda..."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
 msgid  "Checking for an update failed."
-msgstr "Yangilanishga tekshirib boʻlmadi."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr "%PRODUCTNAME %PRODUCTVERSION yangilangan."
-
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
 msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
 msgid  "Check for Updates"
-msgstr "Yangilanishga tekshirish"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr "%PRODUCTNAME %NEXTVERSION yozib olinmoqda..."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr "%PRODUCTNAME %NEXTVERSION yozib olinmoqda..."
-
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
 msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
+msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr "%FILE_NAME fayli %DOWNLOAD_PATH manziliga yozib olindi."
-
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
 msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
+msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr "%PRODUCTNAME %NEXTVERSION yozib olinmoqda..."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr "%PRODUCTNAME %NEXTVERSION yozib olindi. Oʻrnatishga tayyor."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
 msgid  "Do you really want to cancel the download?"
-msgstr "Rostdan yozib olishni bekor qilmoqchimisiz?"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr "Yangilanishni oʻrnatish uchun, %PRODUCTNAME %PRODUCTVERSION yopilishi kerak. Yangilanishlarni oʻrnatishni istaysizmi?"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
 msgid  "Install ~now"
-msgstr "~Hozir oʻrnatish"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
 msgid  "Install ~later"
-msgstr "~Keyinroq oʻrnatish"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
 msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr "Shunday nomli fayl allaqachon mavjud! Mavjud faylni almashtirishni istaysizmi?"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
 msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
 msgid  "Reload File"
 msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
 msgid  "Continue"
 msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
 msgid  "%PERCENT%"
-msgstr "%PERCENT%"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
 msgid  "Status"
-msgstr "Holati"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
 msgid  "Description"
-msgstr "Taʼrifi"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
 msgid  "Close"
-msgstr "Yopish"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
 msgid  "~Download"
-msgstr "~Yozib olish"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
 msgid  "~Install"
-msgstr "~Oʻrnatish"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
 msgid  "~Pause"
-msgstr "~Vaqtincha toʻxtatish"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
 msgid  "~Resume"
-msgstr "~Davom etish"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr "Bekor qilish"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME yangilanishi mavjud"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
 msgid  "Click here to start the download."
-msgstr "Yozib olishni boshlash uchun shu yerni bosing."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME yangilanishi mavjud"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
 msgid  "Click here for more information."
-msgstr "Tafsilot uchun bu yerni bosing."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME yangilanishi mavjud"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
 msgid  "Download of update begins."
-msgstr "Yangilanish uchun yozib olish boshlandi."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
 msgid  "Download of update in progress"
-msgstr "Yangilanish uchun yozib olinmoqda"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
 msgid  "Download of update paused"
-msgstr "Yangilanish uchun yozib olish vaqtincha toʻxtatildi"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
 msgid  "Click here to resume."
-msgstr "Davom ettirish uchun bosing."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
 msgid  "Download of update stalled"
-msgstr "Yangilanish uchun yozib olish toʻxtab qoldi"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
 msgid  "Click here for more information."
-msgstr "Tafsilot uchun bu yerni bosing."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Download of update completed"
-msgstr "Yangilanish uchun yozib olish tugadi"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Click here to start the installation."
-msgstr "Oʻrnatishni boshlash uchun shu yerni bosing."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
 msgid  "Updates for extensions available"
-msgstr "Kengaytmalar uchun yangilanish mavjud"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
 msgid  "Click here for more information."
-msgstr "Tafsilot uchun bu yerni bosing."
-
-#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
-msgid  "Check for ~Updates..."
-msgstr "Yangilanishga ~tekshirish..."
+msgstr ""

@@ -31,1746 +31,1646 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FixedText.Text
-#, fuzzy
-msgid  "Choose titles, legend, and grid settings"
-msgstr "Chọn tựa, chú giải và thiết lập lưới"
+#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
+msgid  "Data Table"
+msgstr ""
 
-#: source/controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FixedLine.Text
-#, fuzzy
-msgid  "Display grids"
-msgstr "Hiện lưới"
+#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
+msgid  "Insert Row"
+msgstr ""
 
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " độ"
+#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.TOOLBOXITEM.TEXT
+msgid  "Insert Series"
+msgstr ""
 
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
-msgid  "~Right-angled axes"
-msgstr "Trục ~góc vuông"
+#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.TOOLBOXITEM.TEXT
+msgid  "Insert Text Column"
+msgstr ""
 
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FixedText.Text
-msgid  "~X rotation"
-msgstr "Xoay ~X"
+#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.TOOLBOXITEM.TEXT
+msgid  "Delete Row"
+msgstr ""
 
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FixedText.Text
-msgid  "~Y rotation"
-msgstr "Xoay ~Y"
+#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.TOOLBOXITEM.TEXT
+msgid  "Delete Series"
+msgstr ""
 
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FixedText.Text
-msgid  "~Z rotation"
-msgstr "Xoay ~Z"
+#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.TOOLBOXITEM.TEXT
+msgid  "Move Series Right"
+msgstr ""
 
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
-msgid  "~Perspective"
-msgstr "~Phối cảnh"
+#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.TOOLBOXITEM.TEXT
+msgid  "Move Row Down"
+msgstr ""
 
-#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
-msgid  "Simple"
-msgstr "Đơn giản"
-
-#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.String.Text
-msgid  "Realistic"
-msgstr "Hiện thực"
-
-#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.String.Text
-msgid  "Custom"
-msgstr "Tự chọn"
-
-#: source/controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.String.Text
-msgid  "Shape"
-msgstr "Hình"
-
-#: source/controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.String.Text
-msgid  "~Number of lines"
-msgstr "~Số đường"
-
-#: source/controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.String.Text
-msgid  "Separator"
-msgstr "Dấu tách"
-
-#: source/controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FixedLine.Text
-msgid  "Place chart"
-msgstr "Để đồ thị"
-
-#: source/controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FixedText.Text
-msgid  "~Insert in sheet"
-msgstr "C~hèn vào trang"
-
-#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item1.StringList.item
-msgid  "Box"
-msgstr "Hộp"
-
-#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item2.StringList.item
-msgid  "Cylinder"
-msgstr "Trụ"
-
-#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item3.StringList.item
-msgid  "Cone"
-msgstr "Nón"
-
-#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item4.StringList.item
-msgid  "Pyramid"
-msgstr "Chóp"
-
-#: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
+#: controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TABDIALOG.TEXT
 msgid  "Data Ranges"
-msgstr "Phạm vi dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.String.Text
-msgid  "Column"
-msgstr "Cột"
+#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
+msgid  "Axes"
+msgstr ""
 
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.String.Text
-msgid  "Bar"
-msgstr "Thanh"
+#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
+msgid  "Major grids"
+msgstr ""
 
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.String.Text
-msgid  "Area"
-msgstr "Vùng"
+#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
+msgid  "~X axis"
+msgstr ""
 
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.String.Text
-msgid  "Pie"
-msgstr "Quạt"
+#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CHECKBOX.TEXT
+msgid  "~Y axis"
+msgstr ""
 
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.String.Text
-msgid  "Exploded Pie Chart"
-msgstr "Đồ thị hình quạt rời"
+#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
+msgid  "~Z axis"
+msgstr ""
 
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.String.Text
-msgid  "Exploded Donut Chart"
-msgstr "Đồ thị hình vòng rời"
+#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
+msgid  "Secondary axes"
+msgstr ""
 
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT.String.Text
-msgid  "Donut"
-msgstr "Hình vòng"
+#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
+msgid  "Minor grids"
+msgstr ""
 
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.String.Text
-msgid  "Line"
-msgstr "Đường"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.String.Text
-msgid  "XY (Scatter)"
-msgstr "XY (Rải)"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.String.Text
-msgid  "Points and Lines"
-msgstr "Điểm và Đường"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.String.Text
-msgid  "Points Only"
-msgstr "Chỉ Điểm"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.String.Text
-msgid  "Lines Only"
-msgstr "Chỉ Đường"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.String.Text
-msgid  "3D Lines"
-msgstr "Đường 3D"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.String.Text
-msgid  "Column and Line"
-msgstr "Cột và Đường"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.String.Text
-msgid  "Columns and Lines"
-msgstr "Cột và Đường"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.String.Text
-msgid  "Stacked Columns and Lines"
-msgstr "Cột và Đường Xếp Đống"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.String.Text
-msgid  "Net"
-msgstr "Lưới"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.String.Text
-msgid  "Stock"
-msgstr "Chứng khoán"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.String.Text
-msgid  "Stock Chart 1"
-msgstr "Đồ thị Chứng khoán 1"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.String.Text
-msgid  "Stock Chart 2"
-msgstr "Đồ thị Chứng khoán 2"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.String.Text
-msgid  "Stock Chart 3"
-msgstr "Đồ thị Chứng khoán 3"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.String.Text
-msgid  "Stock Chart 4"
-msgstr "Đồ thị Chứng khoán 4"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.String.Text
-msgid  "Normal"
-msgstr "Chuẩn"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_STACKED.String.Text
-msgid  "Stacked"
-msgstr "Đống"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.String.Text
-msgid  "Percent Stacked"
-msgstr "Phần trăm xếp đống"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_DEEP.String.Text
-msgid  "Deep"
-msgstr "Sâu"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_FILLED.String.Text
-msgid  "Filled"
-msgstr "Tràn"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.String.Text
-msgid  "Bubble"
-msgstr "Bong bóng"
-
-#: source/controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.String.Text
-msgid  "Bubble Chart"
-msgstr "Bảng bong bóng"
-
-#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TabDialog.Text
+#: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TABDIALOG.TEXT
 msgid  "Character"
-msgstr "Ký tự"
+msgstr ""
 
-#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
 msgid  "Font"
-msgstr "Font"
+msgstr ""
 
-#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr "Hiệu ứng Phông"
+msgstr ""
 
-#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
 msgid  "Font Position"
-msgstr "Vị trí font"
+msgstr ""
 
-#: source/controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TabDialog.Text
+#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.TABDIALOG.TEXT
+msgid  "Paragraph"
+msgstr ""
+
+#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
+msgid  "Indents & Spacing"
+msgstr ""
+
+#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+msgid  "Alignment"
+msgstr ""
+
+#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
+msgid  "Asian Typography"
+msgstr ""
+
+#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
+msgid  "Tab"
+msgstr ""
+
+#: controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TABDIALOG.TEXT
 msgid  "3D View"
-msgstr "Góc nhìn 3D"
+msgstr ""
 
-#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.String.Text
+#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
+msgid  "Box"
+msgstr ""
+
+#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
+msgid  "Cylinder"
+msgstr ""
+
+#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
+msgid  "Cone"
+msgstr ""
+
+#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
+msgid  "Pyramid"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
+msgid  "Best fit"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
+msgid  "Center"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
+msgid  "Above"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
+msgid  "Top left"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
+msgid  "Left"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
+msgid  "Bottom left"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
+msgid  "Below"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
+msgid  "Bottom right"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
+msgid  "Right"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
+msgid  "Top right"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
+msgid  "Inside"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
+msgid  "Outside"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
+msgid  "Near origin"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
+msgid  "Show value as ~number"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_NUMBERFORMAT.PUSHBUTTON.TEXT
+msgid  "Number ~format..."
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_PERCENTAGE.CHECKBOX.TEXT
+msgid  "Show value as ~percentage"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_PERCENT_NUMBERFORMAT.PUSHBUTTON.TEXT
+msgid  "Percentage f~ormat..."
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_CATEGORY.CHECKBOX.TEXT
+msgid  "Show ~category"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_SYMBOL.CHECKBOX.TEXT
+msgid  "Show ~legend key"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_PLACEMENT.FIXEDTEXT.TEXT
+msgid  "Place~ment"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
+msgid  "Rotate Text"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
+msgid  "~Degrees"
+msgstr ""
+
+#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
+msgid  "Te~xt direction"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
+msgid  "Standard Error"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
+msgid  "Standard Deviation"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
+msgid  "Variance"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
+msgid  "Error Margin"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
+msgid  "Error Category"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
+msgid  "~None"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_CONST.RADIOBUTTON.TEXT
+msgid  "~Constant Value"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_PERCENT.RADIOBUTTON.TEXT
+msgid  "~Percentage"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_RANGE.RADIOBUTTON.TEXT
+msgid  "Cell ~Range"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
+msgid  "Parameters"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
+msgid  "P~ositive (+)"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_NEGATIVE.FIXEDTEXT.TEXT
+msgid  "~Negative (-)"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
+msgid  "Same value for both"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
+msgid  "Error Indicator"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
+msgid  "Positive ~and Negative"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_POSITIVE.RADIOBUTTON.TEXT
+msgid  "Pos~itive"
+msgstr ""
+
+#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NEGATIVE.RADIOBUTTON.TEXT
+msgid  "Ne~gative"
+msgstr ""
+
+#: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY(_XPOS_,_YPOS_).CBX_SHOWLEGEND.CHECKBOX.TEXT
+msgid  "~Display legend"
+msgstr ""
+
+#: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_LEFT.RADIOBUTTON.TEXT
+msgid  "~Left"
+msgstr ""
+
+#: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_RIGHT.RADIOBUTTON.TEXT
+msgid  "~Right"
+msgstr ""
+
+#: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_TOP.RADIOBUTTON.TEXT
+msgid  "~Top"
+msgstr ""
+
+#: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_BOTTOM.RADIOBUTTON.TEXT
+msgid  "~Bottom"
+msgstr ""
+
+#: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_X_SECONDARY.CHECKBOX.TEXT
+msgid  "X ~axis"
+msgstr ""
+
+#: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Y_SECONDARY.CHECKBOX.TEXT
+msgid  "Y ax~is"
+msgstr ""
+
+#: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Z_SECONDARY.CHECKBOX.TEXT
+msgid  "Z axi~s"
+msgstr ""
+
+#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM1.STRINGLIST.ITEM
+msgid  "Space"
+msgstr ""
+
+#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
+msgid  "Comma"
+msgstr ""
+
+#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
+msgid  "Semicolon"
+msgstr ""
+
+#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
+msgid  "New line"
+msgstr ""
+
+#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
+msgid  "~Title"
+msgstr ""
+
+#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
+msgid  "~Subtitle"
+msgstr ""
+
+#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
+msgid  "Axes"
+msgstr ""
+
+#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
+msgid  "~X axis"
+msgstr ""
+
+#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Y_AXIS.FIXEDTEXT.TEXT
+msgid  "~Y axis"
+msgstr ""
+
+#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
+msgid  "~Z axis"
+msgstr ""
+
+#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
+msgid  "Secondary Axes"
+msgstr ""
+
+#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
+msgid  "X ~axis"
+msgstr ""
+
+#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_Y_AXIS.FIXEDTEXT.TEXT
+msgid  "Y ax~is"
+msgstr ""
+
+#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_TYPE.FIXEDLINE.TEXT
+msgid  "Regression Type"
+msgstr ""
+
+#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
+msgid  "~None"
+msgstr ""
+
+#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LINEAR.RADIOBUTTON.TEXT
+msgid  "~Linear"
+msgstr ""
+
+#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LOGARITHMIC.RADIOBUTTON.TEXT
+msgid  "L~ogarithmic"
+msgstr ""
+
+#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_EXPONENTIAL.RADIOBUTTON.TEXT
+msgid  "E~xponential"
+msgstr ""
+
+#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_POWER.RADIOBUTTON.TEXT
+msgid  "~Power"
+msgstr ""
+
+#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
+msgid  "Equation"
+msgstr ""
+
+#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
+msgid  "Show ~equation"
+msgstr ""
+
+#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_CORRELATION_COEFF.CHECKBOX.TEXT
+msgid  "Show ~coefficient of determination (R²)"
+msgstr ""
+
+#: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.STRING.TEXT
+msgid  "Simple"
+msgstr ""
+
+#: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.STRING.TEXT
+msgid  "Realistic"
+msgstr ""
+
+#: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.STRING.TEXT
+msgid  "Custom"
+msgstr ""
+
+#: controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.STRING.TEXT
+msgid  "Shape"
+msgstr ""
+
+#: controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.STRING.TEXT
+msgid  "~Number of lines"
+msgstr ""
+
+#: controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.STRING.TEXT
+msgid  "Separator"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
+msgid  "Column"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
+msgid  "Bar"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
+msgid  "Area"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
+msgid  "Pie"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
+msgid  "Exploded Pie Chart"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
+msgid  "Exploded Donut Chart"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
+msgid  "Donut"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
+msgid  "Line"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
+msgid  "XY (Scatter)"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.STRING.TEXT
+msgid  "Points and Lines"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.STRING.TEXT
+msgid  "Points Only"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
+msgid  "Lines Only"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
+msgid  "3D Lines"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
+msgid  "Column and Line"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
+msgid  "Columns and Lines"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
+msgid  "Stacked Columns and Lines"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
+msgid  "Net"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
+msgid  "Stock"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.STRING.TEXT
+msgid  "Stock Chart 1"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.STRING.TEXT
+msgid  "Stock Chart 2"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.STRING.TEXT
+msgid  "Stock Chart 3"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
+msgid  "Stock Chart 4"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
+msgid  "Normal"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
+msgid  "Stacked"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
+msgid  "Percent Stacked"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
+msgid  "Deep"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
+msgid  "Filled"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
+msgid  "Bubble"
+msgstr ""
+
+#: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
+msgid  "Bubble Chart"
+msgstr ""
+
+#: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
 msgid  "Numbers are required. Check your input."
-msgstr "Cần thiết có chữ số. Hãy kiểm tra dữ liệu nhập vào."
+msgstr ""
 
-#: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
+#: controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.STRING.TEXT
 msgid  "The major interval requires a positive number. Check your input."
-msgstr "Khoảng chính cần thiết một con số dương. Hãy kiểm tra dữ liệu nhập vào."
+msgstr ""
 
-#: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
+#: controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.STRING.TEXT
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr "Thang lôga cần số dương. Hãy kiểm tra dữ liệu nhập vào."
+msgstr ""
 
-#: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
+#: controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.STRING.TEXT
 msgid  "The minimum must be lower than the maximum. Check your input."
-msgstr "Tối thiểu phải nhỏ hơn tối đa. Hãy kiểm tra dữ liệu nhập vào."
+msgstr ""
 
-#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
+#: controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.STRING.TEXT
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
 msgstr ""
 
-#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
+#: controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.STRING.TEXT
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
 msgstr ""
 
-#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
-msgid  "Data Table"
-msgstr "Bảng dữ liệu"
-
-#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
-msgid  "Insert Row"
-msgstr "Chèn hàng"
-
-#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
-msgid  "Insert Series"
-msgstr "Chèn chuỗi"
-
-#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.ToolBoxItem.Text
-msgid  "Insert Text Column"
-msgstr "Chừn cột văn bản"
-
-#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
-msgid  "Delete Row"
-msgstr "Xoá hàng"
-
-#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
-msgid  "Delete Series"
-msgstr "Xóa chuỗi"
-
-#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
-msgid  "Move Series Right"
-msgstr "Dời chuỗi sang phải"
-
-#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
-msgid  "Move Row Down"
-msgstr "Dời hàng xuống"
-
-#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item1.StringList.item
-msgid  "Days"
-msgstr ""
-
-#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item2.StringList.item
-msgid  "Months"
-msgstr ""
-
-#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item3.StringList.item
-msgid  "Years"
-msgstr ""
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FixedLine.Text
-msgid  "Scale"
-msgstr "Tỷ lệ"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CheckBox.Text
-msgid  "~Reverse direction"
-msgstr "Đả~o hướng"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CheckBox.Text
-msgid  "~Logarithmic scale"
-msgstr "Tỷ lệ ~lôga"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FixedText.Text
-#, fuzzy
-msgid  "T~ype"
-msgstr "Kiểu"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item1.StringList.item
-#, fuzzy
-msgid  "Automatic"
-msgstr "~Tự động"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item2.StringList.item
-msgid  "Text"
-msgstr ""
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item3.StringList.item
-msgid  "Date"
-msgstr ""
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FixedText.Text
-#, fuzzy
-msgid  "~Minimum"
-msgstr "Tối thiể~u:"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CheckBox.Text
-#, fuzzy
-msgid  "~Automatic"
-msgstr "~Tự động"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FixedText.Text
-#, fuzzy
-msgid  "Ma~ximum"
-msgstr "Tối đ~a:"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CheckBox.Text
-#, fuzzy
-msgid  "A~utomatic"
-msgstr "~Tự động"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FixedText.Text
-#, fuzzy
-msgid  "R~esolution"
-msgstr "Độ ~phân giải"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CheckBox.Text
-#, fuzzy
-msgid  "Automat~ic"
-msgstr "Tự độ~ng"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FixedText.Text
-#, fuzzy
-msgid  "Ma~jor interval"
-msgstr "Kh~oảng lớn:"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CheckBox.Text
-#, fuzzy
-msgid  "Au~tomatic"
-msgstr "~Tự động"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FixedText.Text
-#, fuzzy
-msgid  "Minor inter~val count"
-msgstr "~Số các khoảng phụ:"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FixedText.Text
-msgid  "Minor inter~val"
-msgstr ""
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CheckBox.Text
-#, fuzzy
-msgid  "Aut~omatic"
-msgstr "~Tự động"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FixedText.Text
-#, fuzzy
-msgid  "Re~ference value"
-msgstr "~Giá trị tham chiếu:"
-
-#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CheckBox.Text
-#, fuzzy
-msgid  "Automat~ic"
-msgstr "Tự độ~ng"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FixedLine.Text
-#, fuzzy
-msgid  "Align data series to"
-msgstr "Canh chuỗi dữ liệu theo"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RadioButton.Text
-#, fuzzy
-msgid  "Primary Y axis"
-msgstr "Trục Y chính"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RadioButton.Text
-#, fuzzy
-msgid  "Secondary Y axis"
-msgstr "Trục Y phụ"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FixedLine.Text
-#, fuzzy
-msgid  "Settings"
-msgstr "Thiết lập"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FixedText.Text
-#, fuzzy
-msgid  "~Overlap"
-msgstr "~Chồng lên nhau"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FixedText.Text
-#, fuzzy
-msgid  "~Spacing"
-msgstr "~Giãn cách"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CheckBox.Text
-#, fuzzy
-msgid  "Connection lines"
-msgstr "Đường nối"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CheckBox.Text
-#, fuzzy
-msgid  "Show ~bars side by side"
-msgstr "Hiện th~anh cạnh nhau"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FixedLine.Text
-#, fuzzy
-msgid  "Plot options"
-msgstr "Tùy chọn vẽ "
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FixedText.Text
-#, fuzzy
-msgid  "Plot missing values"
-msgstr "Vẽ giá trị thiếu"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RadioButton.Text
-#, fuzzy
-msgid  "~Leave gap"
-msgstr "~Bỏ qua khoảng trống"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RadioButton.Text
-#, fuzzy
-msgid  "~Assume zero"
-msgstr "~Coi như bằng không"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RadioButton.Text
-#, fuzzy
-msgid  "~Continue line"
-msgstr "Đường ~liên tục"
-
-#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CheckBox.Text
-#, fuzzy
-msgid  "Include ~values from hidden cells"
-msgstr "Bao gồm cả ~giá trị các các ô ẩn"
-
-#: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FixedText.Text
-msgid  "~Light source"
-msgstr "Nguồn ánh ~sáng"
-
-#: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FixedText.Text
-msgid  "~Ambient light"
-msgstr "Ánh sáng chung qu~anh"
-
-#: source/controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.String.Text
-msgid  "Light Preview"
-msgstr ""
-
-#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.String.Text
-msgid  "Negative and Positive"
-msgstr "Âm và Dương"
-
-#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.String.Text
-msgid  "Negative"
-msgstr "Âm"
-
-#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.String.Text
-msgid  "Positive"
-msgstr "Dương"
-
-#: source/controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.String.Text
-msgid  "From Data Table"
-msgstr "Từ bảng dữ liệu"
-
-#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.String.Text
-msgid  "Linear (%SERIESNAME)"
-msgstr ""
-
-#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.String.Text
-msgid  "Logarithmic (%SERIESNAME)"
-msgstr ""
-
-#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.String.Text
-msgid  "Exponential (%SERIESNAME)"
-msgstr ""
-
-#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.String.Text
-msgid  "Power (%SERIESNAME)"
-msgstr ""
-
-#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.String.Text
-msgid  "Mean (%SERIESNAME)"
-msgstr ""
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FixedText.Text
-msgid  "Choose a chart type"
-msgstr "Chọn kiểu đồ thị"
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CheckBox.Text
-msgid  "X axis with Categories"
-msgstr "Trục X có loại"
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CheckBox.Text
-msgid  "~3D Look"
-msgstr "Kiểu ~3D"
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CheckBox.Text
-msgid  "~Stack series"
-msgstr "~Xếp đống chuỗi"
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RadioButton.Text
-msgid  "On top"
-msgstr "Ở trên"
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RadioButton.Text
-msgid  "Percent"
-msgstr "Phần trăm"
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RadioButton.Text
-msgid  "Deep"
-msgstr "Sâu"
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CheckBox.Text
-msgid  "S~mooth lines"
-msgstr "Đường ~mịn"
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PushButton.Text
-msgid  "Properties..."
-msgstr "Thuộc tính..."
-
-#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CheckBox.Text
-msgid  "~Sort by X values"
-msgstr "~Sắp xếp theo giá trị X"
-
-#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RadioButton.Text
-msgid  "Cubic spline"
-msgstr "Chốt trục cấp ba"
-
-#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RadioButton.Text
-msgid  "B-Spline"
-msgstr "Chốt trục B"
-
-#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FixedText.Text
-msgid  "~Resolution"
-msgstr "Độ ~phân giải"
-
-#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FixedText.Text
-msgid  "~Data points order"
-msgstr "Thứ tự điểm ~dữ liệu"
-
-#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FixedText.Text
-msgid  "Customize data ranges for individual data series"
-msgstr "Tùy chỉnh phạm vi dữ liệu cho mỗi chuỗi dữ liệu riêng"
-
-#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FixedText.Text
-msgid  "Data ~series"
-msgstr "Ch~uỗi dữ liệu"
-
-#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FixedText.Text
-msgid  "~Data ranges"
-msgstr "Phạm vi ~dữ liệu"
-
-#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FixedText.Text
-msgid  "Ran~ge for %VALUETYPE"
-msgstr "Phạm ~vị cho %VALUETYPE"
-
-#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FixedText.Text
-msgid  "~Categories"
-msgstr "~Loại"
-
-#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FixedText.Text
-msgid  "Data ~labels"
-msgstr "Nhãn dữ ~liệu"
-
-#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PushButton.Text
-msgid  "~Add"
-msgstr "Thê~m"
-
-#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PushButton.Text
-msgid  "~Remove"
-msgstr "~Bỏ"
-
-#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FixedText.Text
-msgid  "Choose a data range"
-msgstr "Chọn phạm vi dữ liệu"
-
-#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FixedText.Text
-msgid  "~Data range"
-msgstr "Phạm vi ~dữ liệu"
-
-#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RadioButton.Text
-msgid  "Data series in ~rows"
-msgstr "Chuỗi dữ liệu theo ~hàng"
-
-#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RadioButton.Text
-msgid  "Data series in ~columns"
-msgstr "Chuỗi dữ liệu theo ~cột"
-
-#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CheckBox.Text
-msgid  "~First row as label"
-msgstr "Hàng đầ~u làm nhãn"
-
-#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CheckBox.Text
-msgid  "F~irst column as label"
-msgstr "Cột đầu là~m nhãn"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CheckBox.Text
-msgid  "Sho~w labels"
-msgstr "Hiện ~nhãn"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FixedLine.Text
-msgid  "Text orientation"
-msgstr "Hướng văn bản"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TriStateBox.Text
-msgid  "Ve~rtically stacked"
-msgstr "~Xếp đống nằm dọc"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FixedText.Text
-msgid  "~Degrees"
-msgstr "Độ (~D)"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FixedLine.Text
-msgid  "Text flow"
-msgstr "Luồng văn bản"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CheckBox.Text
-msgid  "O~verlap"
-msgstr "~Chồng"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CheckBox.Text
-msgid  "~Break"
-msgstr "N~gắt"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FixedLine.Text
-msgid  "Order"
-msgstr "Thứ tự"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RadioButton.Text
-msgid  "~Tile"
-msgstr "Xếp lá~t"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RadioButton.Text
-msgid  "St~agger odd"
-msgstr "Xếp chéo ~lẻ"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RadioButton.Text
-msgid  "Stagger ~even"
-msgstr "Xếp chéo ~chẵn"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RadioButton.Text
-msgid  "A~utomatic"
-msgstr "~Tự động"
-
-#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FixedText.Text
-msgid  "Te~xt direction"
-msgstr "~Hướng văn bản"
-
-#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item1.StringList.item
-msgid  "Space"
-msgstr "Khoảng trống"
-
-#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item2.StringList.item
-msgid  "Comma"
-msgstr "Dấu phẩy"
-
-#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item3.StringList.item
-msgid  "Semicolon"
-msgstr "Dấu chấm phẩy"
-
-#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item4.StringList.item
-msgid  "New line"
-msgstr "Dòng mới"
-
-#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FixedText.Text
-msgid  "Sche~me"
-msgstr "~Lược đồ"
-
-#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CheckBox.Text
-msgid  "~Shading"
-msgstr "Đổ ~bóng"
-
-#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CheckBox.Text
-msgid  "~Object borders"
-msgstr "~Viền đối tượng"
-
-#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.Checkbox.Text
-msgid  "~Rounded edges"
-msgstr "Cạnh t~ròn"
-
-#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
-msgid  "Axes"
-msgstr "Trục"
-
-#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
-msgid  "Major grids"
-msgstr "Lưới lớn"
-
-#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
-msgid  "~X axis"
-msgstr "Trục ~X"
-
-#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
-msgid  "~Y axis"
-msgstr "Trục ~Y"
-
-#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
-msgid  "~Z axis"
-msgstr "Trục ~Z"
-
-#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
-msgid  "Secondary axes"
-msgstr "Trục phụ"
-
-#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
-msgid  "Minor grids"
-msgstr "Lưới nhỏ"
-
-#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FixedLine.Text
-msgid  "Position"
-msgstr "Vị trí"
-
-#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FixedLine.Text
-msgid  "Text orientation"
-msgstr "Hướng văn bản"
-
-#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FixedText.Text
-msgid  "Te~xt direction"
-msgstr "~Hướng văn bản"
-
-#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TriStateBox.Text
-#, fuzzy
-msgid  "Ve~rtically stacked"
-msgstr "~Xếp đống nằm dọc"
-
-#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FixedText.Text
-#, fuzzy
-msgid  "~Degrees"
-msgstr "Độ (~D)"
-
-#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FixedLine.Text
-#, fuzzy
-msgid  "Text orientation"
-msgstr "Hướng văn bản"
-
-#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FixedText.Text
-#, fuzzy
-msgid  "Te~xt direction"
-msgstr "~Hướng văn bản"
-
-#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.TabDialog.Text
-msgid  "Paragraph"
-msgstr "Đoạn"
-
-#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
-msgid  "Indents & Spacing"
-msgstr "Giãn dòng và cách"
-
-#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
-msgid  "Alignment"
-msgstr "Canh lề"
-
-#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
-msgid  "Asian Typography"
-msgstr "Kiểu in Châu Á"
-
-#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
-msgid  "Tab"
-msgstr "Tab"
-
-#: source/controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.String.Text
+#: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
 msgid  "Chart Wizard"
-msgstr "Trợ lý đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.String.Text
+#: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
 msgid  "Smooth Lines"
-msgstr "Đường mịn"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.String.Text
+#: controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.STRING.TEXT
 msgid  "Number Format for Percentage Value"
-msgstr "Định dạng Số cho Giá trị Phần trăm"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.STRING.TEXT
 msgid  "Chart Type"
-msgstr "Kiểu đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
 msgid  "Data Range"
-msgstr "Phạm vi Dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
 msgid  "Chart Elements"
-msgstr "Phần tử Đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
 msgid  "Chart Location"
-msgstr "Vị trí Đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_LINE.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
 msgid  "Line"
-msgstr "Đường"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_BORDER.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
 msgid  "Borders"
-msgstr "Viền"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_AREA.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 msgid  "Area"
-msgstr "Vùng"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.STRING.TEXT
 msgid  "Transparency"
-msgstr "Độ trong suốt"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_FONT.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_FONT.STRING.TEXT
 msgid  "Font"
-msgstr "Font"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
 msgid  "Font Effects"
-msgstr "Hiệu ứng Phông"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_NUMBERS.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
 msgid  "Numbers"
-msgstr "Số"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
 msgid  "Position"
-msgstr "Vị trí"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_BUTTON_UP.String.Text
+#: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
 msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_BUTTON_DOWN.String.Text
+#: controller/dialogs/Strings.src#STR_BUTTON_DOWN.STRING.TEXT
 msgid  "Down"
 msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_LAYOUT.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_LAYOUT.STRING.TEXT
 msgid  "Layout"
-msgstr "Bố trí"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_OPTIONS.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_OPTIONS.STRING.TEXT
 msgid  "Options"
-msgstr "Tùy chọn"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_SCALE.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_SCALE.STRING.TEXT
 msgid  "Scale"
-msgstr "Tỷ lệ"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_POSITIONING.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
 msgid  "Positioning"
-msgstr "Vị trí"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
 msgid  "Type"
-msgstr "Kiểu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.STRING.TEXT
 msgid  "Y Error Bars"
-msgstr "Thanh lỗi Y"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
 msgid  "Alignment"
-msgstr "Canh lề"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
 msgid  "Perspective"
-msgstr "Phối cảnh"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
 msgid  "Appearance"
-msgstr "Diện mạo"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
 msgid  "Illumination"
-msgstr "Chiếu sáng"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_PAGE_ASIAN.String.Text
+#: controller/dialogs/Strings.src#STR_PAGE_ASIAN.STRING.TEXT
 msgid  "Asian Typography"
-msgstr "Kiểu in Châu Á"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr "Đường giá trị trung bình có giá trị %AVERAGE_VALUE và độ lệch chuẩn %STD_DEVIATION"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
 msgid  "Axis"
-msgstr "Trục"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
 msgid  "X Axis"
-msgstr "Trục X"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.STRING.TEXT
 msgid  "Y Axis"
-msgstr "Trục Y"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.STRING.TEXT
 msgid  "Z Axis"
-msgstr "Trục Z"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
 msgid  "Secondary X Axis"
-msgstr "Trục X phụ"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
 msgid  "Secondary Y Axis"
-msgstr "Trục Y phụ"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_AXES.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
 msgid  "Axes"
-msgstr "Trục"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_GRIDS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
 msgid  "Grids"
-msgstr "Lưới"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_GRID.STRING.TEXT
 msgid  "Grid"
-msgstr "Lưới"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.STRING.TEXT
 msgid  "X Axis Major Grid"
-msgstr "Lưới chính trục X"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.STRING.TEXT
 msgid  "Y Axis Major Grid"
-msgstr "Lưới chính trục Y"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.STRING.TEXT
 msgid  "Z Axis Major Grid"
-msgstr "Lưới chính trục Z"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.STRING.TEXT
 msgid  "X Axis Minor Grid"
-msgstr "Lưới phụ trục X"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.STRING.TEXT
 msgid  "Y Axis Minor Grid"
-msgstr "Lưới phụ trục Y"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.STRING.TEXT
 msgid  "Z Axis Minor Grid"
-msgstr "Lưới phụ trục Z"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
 msgid  "Legend"
-msgstr "Chú giải"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
 msgid  "Title"
-msgstr "Tựa đề"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLES.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_TITLES.STRING.TEXT
 msgid  "Titles"
-msgstr "Tựa đề"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
 msgid  "Main Title"
-msgstr "Tựa đề chính"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
 msgid  "Subtitle"
-msgstr "Phụ đề"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
 msgid  "X Axis Title"
-msgstr "Tựa đề trục X"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.STRING.TEXT
 msgid  "Y Axis Title"
-msgstr "Tựa đề trục Y"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.STRING.TEXT
 msgid  "Z Axis Title"
-msgstr "Tựa đề trục Z"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.STRING.TEXT
 msgid  "Secondary X Axis Title"
-msgstr "Tựa đề trục X phụ"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.STRING.TEXT
 msgid  "Secondary Y Axis Title"
-msgstr "Tựa đề trục Y phụ"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_LABEL.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_LABEL.STRING.TEXT
 msgid  "Label"
-msgstr "Nhãn"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.STRING.TEXT
 msgid  "Data Labels"
-msgstr "Nhãn Dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
 msgid  "Data Point"
-msgstr "Điểm Dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
 msgid  "Data Points"
-msgstr "Điểm Dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.STRING.TEXT
 msgid  "Legend Key"
-msgstr "Khoá Chú giải"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.STRING.TEXT
 msgid  "Data Series"
-msgstr "Chuỗi Dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.STRING.TEXT
 msgid  "Data Series"
-msgstr "Chuỗi Dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_CURVE.STRING.TEXT
 msgid  "Trend Line"
-msgstr "Đường Xu hướng"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVES.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_CURVES.STRING.TEXT
 msgid  "Trend Lines"
-msgstr "Đường Xu hướng"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.STRING.TEXT
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
-msgstr "Đường xu hướng %FORMULA có độ chính xác R² = %RSQUARED"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
 msgid  "Mean Value Line"
-msgstr "Đường Giá trị Trung bình"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
 msgid  "Equation"
-msgstr "Phương trình"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
 msgid  "Error Bars"
-msgstr "Thanh lỗi"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
 msgid  "Stock Loss"
-msgstr "Lỗ chứng khoán"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.STRING.TEXT
 msgid  "Stock Gain"
-msgstr "Lãi chứng khoán"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_PAGE.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_PAGE.STRING.TEXT
 msgid  "Chart Area"
-msgstr "Vùng đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
 msgid  "Chart"
-msgstr "Đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
 msgid  "Chart Wall"
-msgstr "Tường đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
 msgid  "Chart Floor"
-msgstr "Nền đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_SHAPE.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 msgid  "Drawing Object"
-msgstr "Đối tượng vẽ"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.String.Text
+#: controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.STRING.TEXT
 msgid  "Select data range"
-msgstr "Chọn phạm vi dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.String.Text
+#: controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.STRING.TEXT
 msgid  "Select a color using the color dialog"
-msgstr "Chọn màu trong hộp thoại màu sắc"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.String.Text
+#: controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.STRING.TEXT
 msgid  "Light Source %LIGHTNUMBER"
-msgstr "Nguồn Sáng %LIGHTNUMBER"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TIP_DATASERIES.String.Text
+#: controller/dialogs/Strings.src#STR_TIP_DATASERIES.STRING.TEXT
 msgid  "Data Series '%SERIESNAME'"
-msgstr "Chuỗi dữ liệu « %SERIESNAME »"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.String.Text
+#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
 msgid  "Data Point %POINTNUMBER"
-msgstr "Điểm dữ liệu %POINTNUMBER"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.String.Text
+#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
 msgid  "Values: %POINTVALUES"
-msgstr "Giá trị: %POINTVALUES"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
+#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr "Điểm dữ liệu %POINTNUMBER, chuỗi dữ liệu %SERIESNUMBER, giá trị: %POINTVALUES"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
+#: controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.STRING.TEXT
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr "Điểm dữ liệu %POINTNUMBER trong chuỗi dữ liệu %SERIESNUMBER được chọn, giá trị: %POINTVALUES"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
+#: controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.STRING.TEXT
 msgid  "%OBJECTNAME selected"
-msgstr "%OBJECTNAME được chọn"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.String.Text
+#: controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.STRING.TEXT
 msgid  "Pie exploded by %PERCENTVALUE percent"
-msgstr "Mảnh quạt %PERCENTVALUE phần trăm"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.STRING.TEXT
 msgid  "%OBJECTNAME for Data Series '%SERIESNAME'"
-msgstr "%OBJECTNAME cho xê ri dữ liệu '%SERIESNAME'"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.String.Text
+#: controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.STRING.TEXT
 msgid  "%OBJECTNAME for all Data Series"
-msgstr "%OBJECTNAME đối với mọi xê ri dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.STRING.TEXT
 msgid  "Edit chart type"
-msgstr "Sửa kiểu đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.STRING.TEXT
 msgid  "Edit data ranges"
-msgstr "Sửa phạm vi dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.STRING.TEXT
 msgid  "Edit 3D view"
-msgstr "Sửa ô xem 3D"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.STRING.TEXT
 msgid  "Edit chart data"
-msgstr "Sửa dữ liệu đồ thị"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.STRING.TEXT
 msgid  "Legend on/off"
-msgstr "Hiện/ẩn chú giải"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.STRING.TEXT
 msgid  "Horizontal grid on/off"
-msgstr "Hiện/ẩn lưới ngang"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.STRING.TEXT
 msgid  "Scale Text"
-msgstr "Co giãn văn bản"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.STRING.TEXT
 msgid  "Automatic Layout"
-msgstr "Tự động bố trí"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
 msgid  "This function cannot be completed with the selected objects."
-msgstr "Hàm không thể hoàn tất với những đối tượng đã chọn."
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.String.Text
+#: controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.STRING.TEXT
 msgid  "Edit text"
 msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_COLUMN_LABEL.String.Text
+#: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
 msgid  "Column %COLUMNNUMBER"
-msgstr "Cột %COLUMNNUMBER"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_ROW_LABEL.String.Text
+#: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
 msgid  "Row %ROWNUMBER"
-msgstr "Hàng %ROWNUMBER"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
 msgid  "Name"
-msgstr "Tên"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_X.STRING.TEXT
 msgid  "X-Values"
-msgstr "Giá trị X"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_Y.STRING.TEXT
 msgid  "Y-Values"
-msgstr "Giá trị Y"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
 msgid  "Bubble Sizes"
-msgstr "Cỡ bong bóng"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
 msgid  "X-Error-Bars"
-msgstr "Thanh lỗi X"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.STRING.TEXT
 msgid  "Positive X-Error-Bars"
-msgstr "Thanh lỗi dương"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.STRING.TEXT
 msgid  "Negative X-Error-Bars"
-msgstr "Thanh lỗi X âm"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.STRING.TEXT
 msgid  "Y-Error-Bars"
-msgstr "Thanh lỗi Y"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.STRING.TEXT
 msgid  "Positive Y-Error-Bars"
-msgstr "Thanh lỗi Y dương"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.STRING.TEXT
 msgid  "Negative Y-Error-Bars"
-msgstr "Thanh lỗi Y âm"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.STRING.TEXT
 msgid  "Open Values"
-msgstr "Giá mở"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.STRING.TEXT
 msgid  "Close Values"
-msgstr "Giá đóng"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
 msgid  "Low Values"
-msgstr "Giá thấp"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
 msgid  "High Values"
-msgstr "Giá cao"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
 msgid  "Categories"
-msgstr "Loại"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
 msgid  "Unnamed Series"
-msgstr "Chuỗi không tên"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
 msgid  "Unnamed Series %NUMBER"
-msgstr "Chuỗi không tên %NUMBER"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
 msgid  "Select Range for %VALUETYPE of %SERIESNAME"
-msgstr "Chọn phạm vi cho kiểu giá trị %VALUETYPE của dãy %SERIESNAME"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.STRING.TEXT
 msgid  "Select Range for Categories"
-msgstr "Chọn phạm vi cho loại"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.STRING.TEXT
 msgid  "Select Range for data labels"
-msgstr "Chọn phạm vi cho nhãn dữ liệu"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.STRING.TEXT
 msgid  "Select Range for Positive Error Bars"
-msgstr "Chọn phạm vi cho thanh lỗi dương"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.String.Text
+#: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.STRING.TEXT
 msgid  "Select Range for Negative Error Bars"
-msgstr "Chọn phạm vi cho thanh lỗi âm"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
-msgid  "Your last input is incorrect.\\nIgnore this change and close the dialog?"
-msgstr "Bạn mới nhập sai.\nBỏ qua thay đổi này và đóng hộp thoại không?"
+#: controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.STRING.TEXT
+msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
+#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
 msgid  "Left-to-right"
-msgstr "Trái qua phải"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.String.Text
+#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
 msgid  "Right-to-left"
-msgstr "Phải qua trái"
+msgstr ""
 
-#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.String.Text
+#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
 msgid  "Use superordinate object settings"
-msgstr "Dùng quan hệ thượng hạ vị thiết lập đối tượng"
+msgstr ""
 
-#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CheckBox.Text
-msgid  "~Clockwise direction"
-msgstr "Xuôi ~chiều"
+#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.STRING.TEXT
+msgid  "Negative and Positive"
+msgstr ""
 
-#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FixedLine.Text
-msgid  "Starting angle"
-msgstr "Góc đầu"
+#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
+msgid  "Negative"
+msgstr ""
 
-#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FixedText.Text
+#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
+msgid  "Positive"
+msgstr ""
+
+#: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
+msgid  "From Data Table"
+msgstr ""
+
+#: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
+msgid  "Linear (%SERIESNAME)"
+msgstr ""
+
+#: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.STRING.TEXT
+msgid  "Logarithmic (%SERIESNAME)"
+msgstr ""
+
+#: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.STRING.TEXT
+msgid  "Exponential (%SERIESNAME)"
+msgstr ""
+
+#: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.STRING.TEXT
+msgid  "Power (%SERIESNAME)"
+msgstr ""
+
+#: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.STRING.TEXT
+msgid  "Mean (%SERIESNAME)"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FIXEDTEXT.TEXT
+msgid  "Sche~me"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CHECKBOX.TEXT
+msgid  "~Shading"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CHECKBOX.TEXT
+msgid  "~Object borders"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.CHECKBOX.TEXT
+msgid  "~Rounded edges"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
+msgid  " degrees"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
+msgid  "~Right-angled axes"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FIXEDTEXT.TEXT
+msgid  "~X rotation"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FIXEDTEXT.TEXT
+msgid  "~Y rotation"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FIXEDTEXT.TEXT
+msgid  "~Z rotation"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CHECKBOX.TEXT
+msgid  "~Perspective"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FIXEDTEXT.TEXT
+msgid  "~Light source"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FIXEDTEXT.TEXT
+msgid  "~Ambient light"
+msgstr ""
+
+#: controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.STRING.TEXT
+msgid  "Light Preview"
+msgstr ""
+
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
+msgid  "Sho~w labels"
+msgstr ""
+
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
+msgid  "Text orientation"
+msgstr ""
+
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TRISTATEBOX.TEXT
+msgid  "Ve~rtically stacked"
+msgstr ""
+
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FIXEDTEXT.TEXT
 msgid  "~Degrees"
-msgstr "Độ (~D)"
+msgstr ""
 
-#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FixedLine.Text
-msgid  "Plot options"
-msgstr "Tùy chọn vẽ"
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
+msgid  "Text flow"
+msgstr ""
 
-#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CheckBox.Text
-msgid  "Include ~values from hidden cells"
-msgstr "Bao gồm ~giá trị các các ô ẩn"
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
+msgid  "O~verlap"
+msgstr ""
 
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FixedLine.Text
-msgid  "Axis line"
-msgstr "Đường trục"
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CHECKBOX.TEXT
+msgid  "~Break"
+msgstr ""
 
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FixedText.Text
-msgid  "~Cross other axis at"
-msgstr "~Giao với trục khác tại"
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FIXEDLINE.TEXT
+msgid  "Order"
+msgstr ""
 
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item1.StringList.item
-msgid  "Start"
-msgstr "Chạy"
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RADIOBUTTON.TEXT
+msgid  "~Tile"
+msgstr ""
 
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item2.StringList.item
-msgid  "End"
-msgstr "Kết thúc"
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RADIOBUTTON.TEXT
+msgid  "St~agger odd"
+msgstr ""
 
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item3.StringList.item
-msgid  "Value"
-msgstr "Giá trị"
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RADIOBUTTON.TEXT
+msgid  "Stagger ~even"
+msgstr ""
 
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item4.StringList.item
-msgid  "Category"
-msgstr "Loại"
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
+msgid  "A~utomatic"
+msgstr ""
 
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CheckBox.Text
-msgid  "Axis ~between categories"
-msgstr "Trục ~giữa các loại"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FixedLine.Text
-msgid  "Labels"
-msgstr "Nhãn"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FixedText.Text
-msgid  "~Place labels"
-msgstr "~Đặt nhãn"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item1.StringList.item
-msgid  "Near axis"
-msgstr "Trục gần"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item2.StringList.item
-msgid  "Near axis (other side)"
-msgstr "Trục gần (mặt còn lại)"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item3.StringList.item
-msgid  "Outside start"
-msgstr "Bắt đầu ở mặt ngoài"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item4.StringList.item
-msgid  "Outside end"
-msgstr "Kết thúc mặt ngoài"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FixedText.Text
-msgid  "~Distance"
-msgstr "~Khoảng cách"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FixedLine.Text
-msgid  "Interval marks"
-msgstr "Dấu định khoảng"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FixedText.Text
-msgid  "Major:"
-msgstr "Chính:"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CheckBox.Text
-msgid  "~Inner"
-msgstr "~Bên trong"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CheckBox.Text
-msgid  "~Outer"
-msgstr "Ng~oài"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FixedText.Text
-msgid  "Minor:"
-msgstr "Phụ:"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CheckBox.Text
-msgid  "I~nner"
-msgstr "Tro~ng"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CheckBox.Text
-msgid  "O~uter"
-msgstr "Ng~oài"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FixedText.Text
-msgid  "Place ~marks"
-msgstr "~Dấu định vị trí"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item1.StringList.item
-msgid  "At labels"
-msgstr "Tại các nhãn"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item2.StringList.item
-msgid  "At axis"
-msgstr "Tại trục"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item3.StringList.item
-msgid  "At axis and labels"
-msgstr "Tại trục và nhãn"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FixedLine.Text
-msgid  "Grids"
-msgstr "Lưới"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CheckBox.Text
-msgid  "Show major ~grid"
-msgstr "Hiển thị lưới ~chính"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PushButton.Text
-msgid  "Mo~re..."
-msgstr "~Thêm..."
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CheckBox.Text
-msgid  "~Show minor grid"
-msgstr "~Hiển thị lưới phụ"
-
-#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PushButton.Text
-msgid  "Mor~e..."
-msgstr "~Thêm..."
-
-#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_X_SECONDARY.CheckBox.Text
-#, fuzzy
-msgid  "X ~axis"
-msgstr "~Trục X"
-
-#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_Y_SECONDARY.CheckBox.Text
-#, fuzzy
-msgid  "Y ax~is"
-msgstr "T~rục Y"
-
-#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_Z_SECONDARY.CheckBox.Text
-#, fuzzy
-msgid  "Z axi~s"
-msgstr "Trụ~c Z"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item1.StringList.item
-#, fuzzy
-msgid  "Best fit"
-msgstr "Vừa nhất"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item2.StringList.item
-#, fuzzy
-msgid  "Center"
-msgstr "Tâm"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item3.StringList.item
-#, fuzzy
-msgid  "Above"
-msgstr "Trên"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item4.StringList.item
-#, fuzzy
-msgid  "Top left"
-msgstr "Trên trái"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item5.StringList.item
-#, fuzzy
-msgid  "Left"
-msgstr "Trái"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item6.StringList.item
-#, fuzzy
-msgid  "Bottom left"
-msgstr "Dưới trái"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item7.StringList.item
-#, fuzzy
-msgid  "Below"
-msgstr "Dưới"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item8.StringList.item
-#, fuzzy
-msgid  "Bottom right"
-msgstr "Đáy phải"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item9.StringList.item
-#, fuzzy
-msgid  "Right"
-msgstr "Phải"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item10.StringList.item
-#, fuzzy
-msgid  "Top right"
-msgstr "Trên phải"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item11.StringList.item
-#, fuzzy
-msgid  "Inside"
-msgstr "Trong"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item12.StringList.item
-#, fuzzy
-msgid  "Outside"
-msgstr "Ngoài"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item13.StringList.item
-#, fuzzy
-msgid  "Near origin"
-msgstr "Gần gốc"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_VALUE_AS_NUMBER.CheckBox.Text
-#, fuzzy
-msgid  "Show value as ~number"
-msgstr "Hiện giá trị dạ~ng con số"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).PB_NUMBERFORMAT.PushButton.Text
-#, fuzzy
-msgid  "Number ~format..."
-msgstr "Định dạng ~số..."
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_VALUE_AS_PERCENTAGE.CheckBox.Text
-#, fuzzy
-msgid  "Show value as ~percentage"
-msgstr "Hiện giá trị dạng ~phần trăm"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).PB_PERCENT_NUMBERFORMAT.PushButton.Text
-#, fuzzy
-msgid  "Percentage f~ormat..."
-msgstr "Định dang ~phần trăm..."
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_CATEGORY.CheckBox.Text
-#, fuzzy
-msgid  "Show ~category"
-msgstr "Hiện phân ~loại"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_SYMBOL.CheckBox.Text
-#, fuzzy
-msgid  "Show ~legend key"
-msgstr "Hiện ~khoá chú giải"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_PLACEMENT.FixedText.Text
-#, fuzzy
-msgid  "Place~ment"
-msgstr "Định ~vị"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FL_LABEL_ROTATE.FixedLine.Text
-#, fuzzy
-msgid  "Rotate Text"
-msgstr "Quay text"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_DEGREES.FixedText.Text
-#, fuzzy
-msgid  "~Degrees"
-msgstr "Độ (~D)"
-
-#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_TEXTDIR.FixedText.Text
-#, fuzzy
+#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
-msgstr "~Hướng văn bản"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.StringList.item
-#, fuzzy
-msgid  "Standard Error"
-msgstr "Lỗi tiêu chuẩn"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
+msgid  "Axis line"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.StringList.item
-#, fuzzy
-msgid  "Standard Deviation"
-msgstr "Độ lệch chuẩn"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
+msgid  "~Cross other axis at"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.StringList.item
-#, fuzzy
-msgid  "Variance"
-msgstr "Phương sai"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
+msgid  "Start"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.StringList.item
-#, fuzzy
-msgid  "Error Margin"
-msgstr "Hạn chế lỗi"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
+msgid  "End"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_ERROR.FixedLine.Text
-#, fuzzy
-msgid  "Error Category"
-msgstr "Loại lỗi"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
+msgid  "Value"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_NONE.RadioButton.Text
-#, fuzzy
-msgid  "~None"
-msgstr "Khô~ng có"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
+msgid  "Category"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_CONST.RadioButton.Text
-#, fuzzy
-msgid  "~Constant Value"
-msgstr "~Giá trị hằng"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
+msgid  "Axis ~between categories"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_PERCENT.RadioButton.Text
-#, fuzzy
-msgid  "~Percentage"
-msgstr "~Phần trăm"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FIXEDLINE.TEXT
+msgid  "Labels"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_RANGE.RadioButton.Text
-#, fuzzy
-msgid  "Cell ~Range"
-msgstr "~Phạm vi ô"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FIXEDTEXT.TEXT
+msgid  "~Place labels"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_PARAMETERS.FixedLine.Text
-#, fuzzy
-msgid  "Parameters"
-msgstr "Tham số"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
+msgid  "Near axis"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FT_POSITIVE.FixedText.Text
-#, fuzzy
-msgid  "P~ositive (+)"
-msgstr "~Dương (+)"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
+msgid  "Near axis (other side)"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FT_NEGATIVE.FixedText.Text
-#, fuzzy
-msgid  "~Negative (-)"
-msgstr "Â~m (-)"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
+msgid  "Outside start"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).CB_SYN_POS_NEG.CheckBox.Text
-#, fuzzy
-msgid  "Same value for both"
-msgstr "Cả hai cùng giá trị"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
+msgid  "Outside end"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_INDICATE.FixedLine.Text
-#, fuzzy
-msgid  "Error Indicator"
-msgstr "Chỉ thị lỗi"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
+msgid  "~Distance"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_BOTH.RadioButton.Text
-#, fuzzy
-msgid  "Positive ~and Negative"
-msgstr "Dương ~và Âm"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
+msgid  "Interval marks"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_POSITIVE.RadioButton.Text
-#, fuzzy
-msgid  "Pos~itive"
-msgstr "~Dương"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
+msgid  "Major:"
+msgstr ""
 
-#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_NEGATIVE.RadioButton.Text
-#, fuzzy
-msgid  "Ne~gative"
-msgstr "Â~m"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
+msgid  "~Inner"
+msgstr ""
 
-#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY( xpos , ypos ).CBX_SHOWLEGEND.CheckBox.Text
-#, fuzzy
-msgid  "~Display legend"
-msgstr "Hiển thị chú ~giải"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CHECKBOX.TEXT
+msgid  "~Outer"
+msgstr ""
 
-#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_LEFT.RadioButton.Text
-#, fuzzy
-msgid  "~Left"
-msgstr "T~rái"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
+msgid  "Minor:"
+msgstr ""
 
-#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_RIGHT.RadioButton.Text
-#, fuzzy
-msgid  "~Right"
-msgstr "~Phải"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
+msgid  "I~nner"
+msgstr ""
 
-#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_TOP.RadioButton.Text
-#, fuzzy
-msgid  "~Top"
-msgstr "Đỉn~h"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CHECKBOX.TEXT
+msgid  "O~uter"
+msgstr ""
 
-#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_BOTTOM.RadioButton.Text
-#, fuzzy
-msgid  "~Bottom"
-msgstr "Đáy~"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FIXEDTEXT.TEXT
+msgid  "Place ~marks"
+msgstr ""
 
-#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).FL_TYPE.FixedLine.Text
-#, fuzzy
-msgid  "Regression Type"
-msgstr "Kiểu hồi qui"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM1.STRINGLIST.ITEM
+msgid  "At labels"
+msgstr ""
 
-#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_NONE.RadioButton.Text
-#, fuzzy
-msgid  "~None"
-msgstr "Khô~ng có"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
+msgid  "At axis"
+msgstr ""
 
-#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_LINEAR.RadioButton.Text
-#, fuzzy
-msgid  "~Linear"
-msgstr "~Tuyến tính"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
+msgid  "At axis and labels"
+msgstr ""
 
-#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_LOGARITHMIC.RadioButton.Text
-#, fuzzy
-msgid  "L~ogarithmic"
-msgstr "~Lôga"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FIXEDLINE.TEXT
+msgid  "Grids"
+msgstr ""
 
-#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_EXPONENTIAL.RadioButton.Text
-#, fuzzy
-msgid  "E~xponential"
-msgstr "~Số mũ"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CHECKBOX.TEXT
+msgid  "Show major ~grid"
+msgstr ""
 
-#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_POWER.RadioButton.Text
-#, fuzzy
-msgid  "~Power"
-msgstr "Lũ~y thừa"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PUSHBUTTON.TEXT
+msgid  "Mo~re..."
+msgstr ""
 
-#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).FL_EQUATION.FixedLine.Text
-#, fuzzy
-msgid  "Equation"
-msgstr "Phương trình"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CHECKBOX.TEXT
+msgid  "~Show minor grid"
+msgstr ""
 
-#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).CB_SHOW_EQUATION.CheckBox.Text
-#, fuzzy
-msgid  "Show ~equation"
-msgstr "Hiện ~phương trình"
+#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PUSHBUTTON.TEXT
+msgid  "Mor~e..."
+msgstr ""
 
-#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).CB_SHOW_CORRELATION_COEFF.CheckBox.Text
-#, fuzzy
-msgid  "Show ~coefficient of determination (R²)"
-msgstr "Hiển thị ~hệ số xác định (R²)"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FIXEDTEXT.TEXT
+msgid  "Choose a chart type"
+msgstr ""
 
-#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_MAINTITLE.FixedText.Text
-#, fuzzy
-msgid  "~Title"
-msgstr "~Tựa đề"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CHECKBOX.TEXT
+msgid  "X axis with Categories"
+msgstr ""
 
-#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_SUBTITLE.FixedText.Text
-#, fuzzy
-msgid  "~Subtitle"
-msgstr "~Phụ đề"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CHECKBOX.TEXT
+msgid  "~3D Look"
+msgstr ""
 
-#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FL_AXES.FixedLine.Text
-#, fuzzy
-msgid  "Axes"
-msgstr "Trục"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CHECKBOX.TEXT
+msgid  "~Stack series"
+msgstr ""
 
-#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_X_AXIS.FixedText.Text
-#, fuzzy
-msgid  "~X axis"
-msgstr "Trục ~X"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
+msgid  "On top"
+msgstr ""
 
-#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_Y_AXIS.FixedText.Text
-#, fuzzy
-msgid  "~Y axis"
-msgstr "Trục ~Y"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
+msgid  "Percent"
+msgstr ""
 
-#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_Z_AXIS.FixedText.Text
-#, fuzzy
-msgid  "~Z axis"
-msgstr "Trục ~Z"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
+msgid  "Deep"
+msgstr ""
 
-#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FL_SECONDARY_AXES.FixedLine.Text
-#, fuzzy
-msgid  "Secondary Axes"
-msgstr "Trục phụ"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
+msgid  "S~mooth lines"
+msgstr ""
 
-#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_SECONDARY_X_AXIS.FixedText.Text
-#, fuzzy
-msgid  "X ~axis"
-msgstr "~Trục X"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
+msgid  "Properties..."
+msgstr ""
 
-#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_SECONDARY_Y_AXIS.FixedText.Text
-#, fuzzy
-msgid  "Y ax~is"
-msgstr "T~rục Y"
+#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
+msgid  "~Sort by X values"
+msgstr ""
+
+#: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RADIOBUTTON.TEXT
+msgid  "Cubic spline"
+msgstr ""
+
+#: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RADIOBUTTON.TEXT
+msgid  "B-Spline"
+msgstr ""
+
+#: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FIXEDTEXT.TEXT
+msgid  "~Resolution"
+msgstr ""
+
+#: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
+msgid  "~Degree of polynomials"
+msgstr ""
+
+#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
+msgid  "Customize data ranges for individual data series"
+msgstr ""
+
+#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
+msgid  "Data ~series"
+msgstr ""
+
+#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FIXEDTEXT.TEXT
+msgid  "~Data ranges"
+msgstr ""
+
+#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FIXEDTEXT.TEXT
+msgid  "Ran~ge for %VALUETYPE"
+msgstr ""
+
+#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FIXEDTEXT.TEXT
+msgid  "~Categories"
+msgstr ""
+
+#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FIXEDTEXT.TEXT
+msgid  "Data ~labels"
+msgstr ""
+
+#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PUSHBUTTON.TEXT
+msgid  "~Add"
+msgstr ""
+
+#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PUSHBUTTON.TEXT
+msgid  "~Remove"
+msgstr ""
+
+#: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
+msgid  "Position"
+msgstr ""
+
+#: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
+msgid  "Text orientation"
+msgstr ""
+
+#: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
+msgid  "Te~xt direction"
+msgstr ""
+
+#: controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FIXEDLINE.TEXT
+msgid  "Place chart"
+msgstr ""
+
+#: controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FIXEDTEXT.TEXT
+msgid  "~Insert in sheet"
+msgstr ""
+
+#: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CHECKBOX.TEXT
+msgid  "~Clockwise direction"
+msgstr ""
+
+#: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FIXEDLINE.TEXT
+msgid  "Starting angle"
+msgstr ""
+
+#: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
+msgid  "~Degrees"
+msgstr ""
+
+#: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
+msgid  "Plot options"
+msgstr ""
+
+#: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CHECKBOX.TEXT
+msgid  "Include ~values from hidden cells"
+msgstr ""
+
+#: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
+msgid  "Choose a data range"
+msgstr ""
+
+#: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FIXEDTEXT.TEXT
+msgid  "~Data range"
+msgstr ""
+
+#: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RADIOBUTTON.TEXT
+msgid  "Data series in ~rows"
+msgstr ""
+
+#: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RADIOBUTTON.TEXT
+msgid  "Data series in ~columns"
+msgstr ""
+
+#: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CHECKBOX.TEXT
+msgid  "~First row as label"
+msgstr ""
+
+#: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CHECKBOX.TEXT
+msgid  "F~irst column as label"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
+msgid  "Days"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
+msgid  "Months"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
+msgid  "Years"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
+msgid  "Scale"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
+msgid  "~Reverse direction"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CHECKBOX.TEXT
+msgid  "~Logarithmic scale"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
+msgid  "T~ype"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
+msgid  "Automatic"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
+msgid  "Text"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
+msgid  "Date"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
+msgid  "~Minimum"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
+msgid  "~Automatic"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
+msgid  "Ma~ximum"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
+msgid  "A~utomatic"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
+msgid  "R~esolution"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
+msgid  "Automat~ic"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
+msgid  "Ma~jor interval"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
+msgid  "Au~tomatic"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
+msgid  "Minor inter~val count"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
+msgid  "Minor inter~val"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
+msgid  "Aut~omatic"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
+msgid  "Re~ference value"
+msgstr ""
+
+#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CHECKBOX.TEXT
+msgid  "Automat~ic"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
+msgid  "Align data series to"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
+msgid  "Primary Y axis"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
+msgid  "Secondary Y axis"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
+msgid  "Settings"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
+msgid  "~Overlap"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
+msgid  "~Spacing"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
+msgid  "Connection lines"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
+msgid  "Show ~bars side by side"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FIXEDLINE.TEXT
+msgid  "Plot options"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FIXEDTEXT.TEXT
+msgid  "Plot missing values"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RADIOBUTTON.TEXT
+msgid  "~Leave gap"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RADIOBUTTON.TEXT
+msgid  "~Assume zero"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RADIOBUTTON.TEXT
+msgid  "~Continue line"
+msgstr ""
+
+#: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CHECKBOX.TEXT
+msgid  "Include ~values from hidden cells"
+msgstr ""
+
+#: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
+msgid  "Ve~rtically stacked"
+msgstr ""
+
+#: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
+msgid  "~Degrees"
+msgstr ""
+
+#: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
+msgid  "Text orientation"
+msgstr ""
+
+#: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
+msgid  "Te~xt direction"
+msgstr ""
+
+#: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FIXEDTEXT.TEXT
+msgid  "Choose titles, legend, and grid settings"
+msgstr ""
+
+#: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FIXEDLINE.TEXT
+msgid  "Display grids"
+msgstr ""

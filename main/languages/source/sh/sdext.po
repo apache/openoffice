@@ -31,702 +31,266 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/minimizer/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.SunPresentationMinimizer.Command1.MenuItems.SunPresentationMinimizerExecute2.Title
-msgid  "~Minimize Presentation..."
-msgstr "~Umanji prezentaciju..."
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid  "Presentation Minimizer"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.HelpFile
-msgid  "%origin%/../../../../../../help/help_en-US.odt"
-msgstr "%origin%/../../../../../../help/help_en-US.odt"
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid  "Presentation Minimizer - Result"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUN_OPTIMIZATION_WIZARD2
-msgid  "@MINIMIZEREXTENSIONPRODUCTNAME@"
-msgstr "Umanjivač prezentacije"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_STEPS
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
 msgid  "Steps"
-msgstr "Koraci"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_HELP
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
 msgid  "~Help"
-msgstr "~Pomoć"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_BACK
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
 msgid  "< ~Back"
-msgstr "< ~Nazad"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NEXT
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
 msgid  "~Next >"
-msgstr "~Napred >"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FINISH
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
 msgid  "~Finish"
-msgstr "~Završi"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CANCEL
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr "Otkaži"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
 msgid  "Introduction"
-msgstr "Uvod"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr "Umanjivač prezentacije se koristi da smanjite veličinu datoteke sa prezentacijom. Slike će biti optimizovane i kompresovane, a podaci koji više nisu potrebni će biti uklonjeni. U poslednjem koraku pomoćnika možete da izaberete da li da primenite izmene na trenutnu prezentaciju ili da napravite umanjenu kopiju."
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
-msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
-msgstr "~Postavke za umanjivača prezentacije"
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid  "~Choose settings for Presentation Minimizer"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
 msgid  "~Delete"
-msgstr "~Obriši"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_GRAPHIC_OPTIMIZATION
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for optimizing pictures and graphics"
-msgstr "Izaberite postavke za pakovanje slika i grafike"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_OPTIMIZATION
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
 msgid  "Graphics"
-msgstr "Grafika"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_LOSSLESS_COMPRESSION
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
 msgid  "~Lossless compression"
-msgstr "Kompresija ~bez gubitka"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_JPEG_COMPRESSION
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
 msgid  "~JPEG compression"
-msgstr "~JPEG kompresija"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_QUALITY
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
 msgid  "~Quality in %"
-msgstr "~Kvalitet u %"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE_CROP_AREA
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
 msgid  "~Delete cropped graphic areas"
-msgstr "~Obriši isečene delove sa grafike"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
 msgid  "Reduce ~image resolution"
-msgstr "~Umanji rezoluciju slike"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_0
-msgid  "0;<no change>"
-msgstr "0;<bez izmene>"
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid  "<no change>"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_1
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
 msgid  "90;90 DPI (screen resolution)"
-msgstr "90;90 DPI (rezolucija za ekran)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_2
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
 msgid  "150;150 DPI (projector resolution)"
-msgstr "150;150 DPI (rezolucija za projektor)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_3
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
 msgid  "300;300 DPI (print resolution)"
-msgstr "300;300 DPI (rezolucija za štampanje)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_EMBED_LINKED_GRAPHICS
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
 msgid  "~Break links to external graphics"
-msgstr "~Ukloni veze sa grafikom izvan dokumenta"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
 msgid  "OLE Objects"
-msgstr "OLE objekti"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OPTIMIZATION
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for replacing OLE objects"
-msgstr "Izaberite podešavanja za zamenu OLE objekata"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_REPLACE
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
 msgid  "Create static replacement graphics for OLE objects"
-msgstr "Napravi zamensku nepromenljivu sličicu za OLE objekte"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALL_OLE_OBJECTS
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
 msgid  "For ~all OLE objects"
-msgstr "Za ~sve OLE objekte"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALIEN_OLE_OBJECTS_ONLY
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
 msgid  "~For OLE objects not based on OpenDocument format"
-msgstr "~Za OLE objekte koji se ne oslanjaju na otvoreni dokument-format (ODF)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr "Povezivanje i umetanje objekata (OLE) predstavlja tehnologiju koja dozvoljava umetanje i povezivanje sa dokumentima i drugim objektima. Trenutna prezentacija sadrži OLE objekte."
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr "Povezivanje i umetanje objekata (OLE) predstavlja tehnologiju koja dozvoljava umetanje i povezivanje sa dokumentima i drugim objektima. Trenutna prezentacija ne sadrži OLE objekte."
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SLIDES
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
 msgid  "Slides"
-msgstr "Slajdovi"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOOSE_SLIDES
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
 msgid  "Choose which slides to delete"
-msgstr "Izaberite slajdove za brisanje"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MASTER_PAGES
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
 msgid  "Master Pages"
-msgstr "Glavne stranice"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_MASTER_PAGES
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
 msgid  "Delete unused ~master pages"
-msgstr "Ukloni nekorišćene ~glavne stranice"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_NOTES_PAGES
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
 msgid  "~Clear notes"
-msgstr "~Očisti beleške"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_HIDDEN_SLIDES
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
 msgid  "Delete hidden ~slides"
-msgstr "Obriši ~skrivene slajdove"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CUSTOM_SHOW
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
 msgid  "Delete slides that are not used for the ~custom slide show"
-msgstr "Obriši slajdove koji nisu korišćeni u ~prilagođenoj prezentaciji"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr "Sažetak"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY_TITLE
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
 msgid  "Choose where to apply the following changes"
-msgstr "Izaberite gde treba primeniti sledeće izmene"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_PROGRESS
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
 msgid  "Progress"
-msgstr "Napredak"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OBJECTS_OPTIMIZED
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
 msgid  "Objects optimized"
-msgstr "Optimizani objekti"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_APPLY_TO_CURRENT
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
 msgid  "~Apply changes to current presentation"
-msgstr "~Primeni izmene nad trenutnom prezentacijom"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_AUTOMATICALLY_OPEN
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
 msgid  "~Open newly created presentation"
-msgstr "~Otvori novu prezentaciju"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_SETTINGS
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
 msgid  "~Save settings as"
-msgstr "~Sačuvaj podešavanja kao"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_AS
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
 msgid  "~Duplicate presentation before applying changes"
-msgstr "~Umnoži prezentaciju pre primene izmena"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_SLIDES
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
 msgid  "Delete %SLIDES slides."
-msgstr "Obriši slajdove (%SLIDES)."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr "Pretvori slike (%IMAGES) u %QUALITY% JPEG kvalitet sa rezlucijom %RESOLUTION dpi."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
 msgid  "Create replacement graphics for %OLE objects."
-msgstr "Napravi zamenu grafike za %OLE objekte."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CURRENT_FILESIZE
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
 msgid  "Current file size:"
-msgstr "Trenutna veličina datoteke:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ESTIMATED_FILESIZE
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
 msgid  "Estimated new file size:"
-msgstr "Proračunata nova veličina datoteke:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MB
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
 msgid  "%1 MB"
-msgstr "%1 MB"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.MY_SETTINGS
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
 msgid  "My Settings "
-msgstr "Moja podešavanja"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DEFAULT_SESSION
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
 msgid  "default session"
-msgstr "podrazumevana sesija"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr "Ova optimizacija će izmeniti trenutni. Želite li da nastavite?"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_YES
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
 msgid  "~Yes"
-msgstr "~Da"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OK
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
 msgid  "OK"
-msgstr "U redu"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_1
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr "Umanjivač prezentacije je uspešno obradio prezentaciju „%TITLE“. Veličina datoteke je promenjena sa %OLDFILESIZE MB na %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_2
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr "Umanjivač prezentacije je uspešno obradio prezentaciju „%TITLE“. Veličina datoteke je promenjena sa %OLDFILESIZE MB na oko %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_3
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr "Umanjivač prezentacije je uspešno obradio prezentaciju „%TITLE“. Veličina datoteke je promenjena na %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_4
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr "Umanjivač prezentacije je uspešno obradio prezentaciju „%TITLE“. Veličina datoteke je promenjena na oko %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
 msgid  "Duplicating presentation..."
-msgstr "Umnožavam prezentaciju..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETING_SLIDES
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
 msgid  "Deleting slides..."
-msgstr "Uklanjam slajdove..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZING_GRAPHICS
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
 msgid  "Optimizing graphics..."
-msgstr "Pakujem grafiku..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATING_OLE_REPLACEMENTS
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
 msgid  "Creating replacement graphics for OLE objects..."
-msgstr "Pravim zamenu grafike za OLE objekte"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FILESIZESEPARATOR
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
 msgid  "."
-msgstr "."
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.LastUsedSettings.Name
-msgid  "Projector optimized"
-msgstr "Optimizacija za projektor"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template1.Name
-msgid  "Screen optimized (smallest file size)"
-msgstr "Optimizacija za ekran (najmanja veličina datoteke)"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template2.Name
-msgid  "Projector optimized"
-msgstr "Optimizacija za projektor"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template3.Name
-msgid  "Print optimized"
-msgstr "Optimizacija za štampu"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#tit
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr "Prečice u ekranu za izlagača"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#bm_id0921200912285678
-msgid  "\<bookmark_value\>@PRESENTEREXTENSIONPRODUCTNAME@ shortcuts\</bookmark_value\>"
-msgstr "<bookmark_value>Prečice u ekranu za izlagača</bookmark_value>"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#hd_id0921201912165661
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr "Prečice u ekranu za izlagača"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
-msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr "Tokom prezentacije u ekranu za izlagača dostupne su prečice:"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
-msgid  "Action"
-msgstr "Akcija"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104093
-msgid  "Key or Keys"
-msgstr "Tasteri"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110418
-msgid  "Next slide, or next effect"
-msgstr "Sledeći slajd ili sledeći efekat"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
-msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr "Levi klik, strelica desno ili dole, razmak, strana dole, enter, nazad, „N“"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
-msgid  "Previous slide, or previous effect"
-msgstr "Prethodni slajd ili prethodni efekat"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104115
-msgid  "Right click, left arrow, up arrow, page up, backspace, 'P'"
-msgstr "Desni klik, strelica levo ili gore, strana gore, brisanje unazad, „P“"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104164
-msgid  "First slide"
-msgstr "Prvi slajd"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104148
-msgid  "Home"
-msgstr "Početak"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104221
-msgid  "Last slide"
-msgstr "Poslednji slajd"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104277
-msgid  "End"
-msgstr "Kraj"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104279
-msgid  "Previous slide without effects"
-msgstr "Prethodni slajd bez efekata"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110423
-msgid  "Alt+Page Up"
-msgstr "Alt+str. gore"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110427
-msgid  "Next slide without effects"
-msgstr "Sledeći slajd bez efekata"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104261
-msgid  "Alt+Page Down"
-msgstr "Alt+str. dole"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104383
-msgid  "Black/Unblack the screen"
-msgstr "Menja crni ekran"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110431
-msgid  "'B', '.'"
-msgstr "„B“, „.“"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104311
-msgid  "White/Unwhite the screen"
-msgstr "Menja beli ekran"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104359
-msgid  "'W', ','"
-msgstr "„W“, „,“"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104336
-msgid  "End slide show"
-msgstr "Završi prezentaciju"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104419
-msgid  "Esc, '-'"
-msgstr "Esc ili „-“"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104460
-msgid  "Go to slide number"
-msgstr "Ide na slajd"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110440
-msgid  "Number followed by Enter"
-msgstr "Broj pa „Enter“"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104427
-msgid  "Grow/Shrink size of notes font"
-msgstr "Povećava i smanjuje veličinu fonta za beleške"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104442
-msgid  "'G', 'S'"
-msgstr "„G“, „S“"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104473
-msgid  "Scroll notes up/down"
-msgstr "Lista beleške gore/ dole"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110459
-msgid  "'A', 'Z'"
-msgstr "„A“, „Z“"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110456
-msgid  "Move caret in notes view backward/forward"
-msgstr "Pomera kursor u beleškama nazad ili napred"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110457
-msgid  "'H', 'L'"
-msgstr "„H“, „L“"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104566
-msgid  "Show the @PRESENTEREXTENSIONPRODUCTNAME@"
-msgstr "Prikaži ekran za izlagača"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104544
-msgid  "Ctrl-'1'"
-msgstr "Ctrl+1"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104535
-msgid  "Show the Presentation Notes"
-msgstr "Prikazuje beleške"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104680
-msgid  "Ctrl-'2'"
-msgstr "Ctrl+2"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104634
-msgid  "Show the Slides Overview"
-msgstr "Prikazuje pregled"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104632
-msgid  "Ctrl-'3'"
-msgstr "Ctrl+3"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.a.Normal.Text
-msgid  "Previous"
-msgstr "Prethodni"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.b.Normal.Text
-msgid  "Next"
-msgstr "Sledeći"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.c.Normal.Text
-msgid  "Notes"
-msgstr "Beleške"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.d.Normal.Text
-msgid  "Slides"
-msgstr "Slajdovi"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.l.Normal.Text
-msgid  "Help"
-msgstr "Pomoć"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.NotesToolBar.Entries.a.Normal.Text
-msgid  "Zoom"
-msgstr "Uvećanje"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.SlideSorterCloser.Text
-msgid  "Close"
-msgstr "Zatvori"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.NotesViewCloser.Text
-msgid  "Close"
-msgstr "Zatvori"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.HelpViewCloser.Text
-msgid  "Close"
-msgstr "Zatvori"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
-msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr "Levi klik, strelica udesno ili nadole, razmak, stranica nadole, enter, novi red ili „N“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
-msgid  "Next slide, or next effect"
-msgstr "Sledeći slajd ili sledeći efekat"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
-msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr "Desni klik, strelica ulevo ili nagore, stranica nagore, brisanje unazad ili „P“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
-msgid  "Previous slide, or previous effect"
-msgstr "Prethodni slajd ili prethodni efekat"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Left
-msgid  "Home"
-msgstr "Početak"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Right
-msgid  "First slide"
-msgstr "Prvi slajd"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Left
-msgid  "End"
-msgstr "Kraj"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Right
-msgid  "Last slide"
-msgstr "Poslednji slajd"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Left
-msgid  "Alt-Page Up"
-msgstr "Alt+str. gore (Page Up)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Right
-msgid  "Previous slide without effects"
-msgstr "Prethodni slajd bez efekata"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Left
-msgid  "Alt-Page Down"
-msgstr "Alt+str. dole (Page Down)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Right
-msgid  "Next slide without effects"
-msgstr "Sledeći slajd bez efekata"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Left
-msgid  "'B', '.'"
-msgstr "„B“, „.“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Right
-msgid  "Blacks/Unblacks the screen"
-msgstr "Zacrnjuje i vraća ekran"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Left
-msgid  "'W', ','"
-msgstr "„W“, „,“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Right
-msgid  "Whites/Unwhites the screen"
-msgstr "Izbeljuje i vraća ekran"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Left
-msgid  "Esc, '-'"
-msgstr "Esc ili „-“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Right
-msgid  "End slide show"
-msgstr "Završi prezentaciju"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Left
-msgid  "Number followed by Enter"
-msgstr "Broj pa „Enter“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Right
-msgid  "Go to that slide"
-msgstr "Idi na određeni slajd"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Left
-msgid  "'G', 'S'"
-msgstr "„G“, „S“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Right
-msgid  "Grow/Shrink size of notes font"
-msgstr "Povećava i smanjuje veličinu fonta za beleške"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Left
-msgid  "'A', 'Z'"
-msgstr "„A“, „Z“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Right
-msgid  "Scroll notes up/down"
-msgstr "Lista beleške gore/ dole"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Left
-msgid  "'H', 'L'"
-msgstr "„H“, „L“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Right
-msgid  "Move caret in notes view backward/forward"
-msgstr "Pomera kursor u beleškama nazad ili napred"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Left
-msgid  "Ctrl-'1'"
-msgstr "Ctrl+1"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Right
-msgid  "Shows the Presenter Console"
-msgstr "Prikazuje ekran za izlagača"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Left
-msgid  "Ctrl-'2'"
-msgstr "Ctrl+2"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Right
-msgid  "Shows the Presentation Notes"
-msgstr "Prikazuje beleške"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Left
-msgid  "Ctrl-'3'"
-msgstr "Ctrl+3"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Right
-msgid  "Shows the Slides Overview"
-msgstr "Prikazuje pregled slajdova"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Title
-msgid  "Current Slide (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
-msgstr "Trenutni slajd (%CURRENT_SLIDE_NUMBER% od %SLIDE_COUNT%)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
-msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr "Trenutni slajd, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% od %SLIDE_COUNT%"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
-msgid  "Click to exit presentation..."
-msgstr "Kliknite da napustite prezentaciju..."
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationTitle.String
-msgid  "Current Slide (end)"
-msgstr "Trenutni slajd (kraj)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NextSlidePreview.Title
-msgid  "Next Slide"
-msgstr "Sledeći slajd"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NotesView.Title
-msgid  "Notes"
-msgstr "Beleške"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
-msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr "Trenutni slajd %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% od %SLIDE_COUNT%"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.HelpView.Title
-msgid  "Help"
-msgstr "Pomoć"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Console.String
-msgid  "Presenter Console"
-msgstr "Ekran za izlagača"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Preview.String
-msgid  "Current Slide Info"
-msgstr "Podaci o trenutnom slajdu"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Notes.String
-msgid  "Presenter Notes"
-msgstr "Beleške za izlagača"
+msgstr ""

@@ -31,318 +31,318 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
+#: component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WARNINGBOX.MESSAGE
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr "ڊجيٽل صحيحين جي ڪاريہ جي قوت جو اِستعمال نہ ٿي شگہيو ڇو تہ موزيلا اِستعمال ڪندڙ جي پروفائل جو پتو نہ لڳي سگهيو۔ مہرباني ڪري موزيلا جو اِسٿاپن چڪاسيو۔ "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
-msgid  "Macro Security"
-msgstr "ميڪرو سلامتي "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PageItem.Text
-msgid  "Security Level"
-msgstr "سلامتيءَ جي سطح "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PageItem.Text
-msgid  "Trusted Sources"
-msgstr "وشواس جوڳا مولَ "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PushButton.Text
-msgid  "Reset"
-msgstr "وري سيٽ ڪريو "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
-msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr "تمام اوچو۔ \n فقط وشواس جوڳن آسٿانن کان ميڪروز هلائڻ جي اجازت مليل آهي۔ ٻيا سڀ ميڪرو توڙي انہن جو قرار ڪيو ويو آهي يا نہ اَسمرٿ آهن۔ "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
-msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr "اوچو \n فقط وشواس جوڳن مولن جا قرار ڪيل ميڪروز هلائڻ جي اجازت ملي آهي۔ قرار نہ ڪيل ميڪروز اَسمرٿ آهن "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
-msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
-msgstr "وچولو \n اَوشواس جوڳن مولن مان ميڪروز هلائڻ کان آڳ بناوت جي ضرورت آهي۔ "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
-msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr "گهٽ (صلاح نٿي ڏجي)۔ \n بنا بناوت جي سڀ ميڪروز هلايا ويندا۔ ان طئہ ڪيل ترتيب جو اِستعمال فقط تڏهن ڪريو جڏهن توهانکي پڪ هجي تہ سڀ کلندڙ دستاويز محفوظ آهن۔ "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
-msgid  "Trusted certificates"
-msgstr "وشواس جوڳا سرٽيفڪيٽ "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
-msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr "کي جاري ڪيل/ دواران جاري ڪيل/ختم ٿيڻ جي تاريخ "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
-msgid  "Add..."
-msgstr "شامل ڪريو۔۔۔"
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PushButton.Text
-msgid  "View..."
-msgstr "نظر مان ڪڍو۔۔۔۔"
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PushButton.Text
-msgid  "Remove"
-msgstr "ڪڍي ڇڏيو "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FixedLine.Text
-msgid  "Trusted file locations"
-msgstr "وشواس جوڳا فائلن جا آسٿان "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
-msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr "دستاويز جا ميڪروز هميشهہ هلايا وڃن ٿا اگر اُهي هيٺين آسٿان مان ڪنهن هڪ مان کوليا ويا آهن۔ "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
-msgid  "Add..."
-msgstr "شامل ڪريو۔۔۔"
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.PushButton.Text
-msgid  "Remove"
-msgstr "ڪڍي ڇڏيو "
-
-#: source/dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.String.Text
-msgid  "This setting is protected by the Administrator"
-msgstr "هيءَ طئہ ڪيل ترتيب "
-
-#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.ModalDialog.Text
-msgid  "Security Warning"
-msgstr "سلامتيءَ جو چتاءُ "
-
-#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FixedText.Text
-msgid  "The document contains document macros signed by:"
 msgstr ""
 
-#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FixedText.Text
-msgid  "The document contains document macros."
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.MODALDIALOG.TEXT
+msgid  "Select Certificate"
 msgstr ""
 
-#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PushButton.Text
-msgid  "View Signatures..."
-msgstr "صحيحيون نظر مان ڪڍو "
-
-#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
-msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FIXEDTEXT.TEXT
+msgid  "Select the certificate you want to use for signing"
 msgstr ""
 
-#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
-msgid  "Always trust macros from this source"
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.STRING.TEXT
+msgid  "Issued to\tIssued by\tExpiration date"
 msgstr ""
 
-#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PushButton.Text
-msgid  "Enable Macros"
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PUSHBUTTON.TEXT
+msgid  "View Certificate..."
 msgstr ""
 
-#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CancelButton.Text
-msgid  "Disable Macros"
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TABDIALOG.TEXT
+msgid  "View Certificate"
 msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.ModalDialog.Text
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PAGEITEM.TEXT
+msgid  "General"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PAGEITEM.TEXT
+msgid  "Details"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PAGEITEM.TEXT
+msgid  "Certification Path"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FIXEDTEXT.TEXT
+msgid  " Certificate Information"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FIXEDTEXT.TEXT
+msgid  "This certificate is intended for the following purpose(s):"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FIXEDTEXT.TEXT
+msgid  "Issued to:"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FIXEDTEXT.TEXT
+msgid  "Issued by:"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FIXEDTEXT.TEXT
+msgid  "Valid from %SDATE% to %EDATE%"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FIXEDTEXT.TEXT
+msgid  "You have a private key that corresponds to this certificate."
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.STRING.TEXT
+msgid  "The certificate could not be validated."
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.STRING.TEXT
+msgid  "Field\tValue"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.STRING.TEXT
+msgid  "Version"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.STRING.TEXT
+msgid  "Serial Number"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.STRING.TEXT
+msgid  "Signature Algorithm"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.STRING.TEXT
+msgid  "Issuer"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.STRING.TEXT
+msgid  "Issuer Unique ID"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.STRING.TEXT
+msgid  "Valid From"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.STRING.TEXT
+msgid  "Valid to"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.STRING.TEXT
+msgid  "Subject"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.STRING.TEXT
+msgid  "Subject Unique ID"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.STRING.TEXT
+msgid  "Subject Algorithm"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.STRING.TEXT
+msgid  "Public Key"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.STRING.TEXT
+msgid  "Signature Algorithm"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.STRING.TEXT
+msgid  "Thumbprint SHA1"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.STRING.TEXT
+msgid  "Thumbprint MD5"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FIXEDTEXT.TEXT
+msgid  "Certification path"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PUSHBUTTON.TEXT
+msgid  "View Certificate..."
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FIXEDTEXT.TEXT
+msgid  "Certification status"
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.STRING.TEXT
+msgid  "The certificate is OK."
+msgstr ""
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.STRING.TEXT
+msgid  "The certificate could not be validated."
+msgstr ""
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.MODALDIALOG.TEXT
 msgid  "Digital Signatures"
-msgstr "ڊجيٽل صحيحيون "
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FixedText.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FIXEDTEXT.TEXT
 msgid  "The following have signed the document content:"
-msgstr "هيٺ ڏنلن دستاويز جي موضوع جو قرار قبول ڪيو آهي۔ "
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FixedText.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FIXEDTEXT.TEXT
 msgid  "The following have signed the document macro:"
-msgstr "هيٺ ڏنلن دستاويز جي ميڪرو جو قرار قبول ڪيو آهي: "
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FixedText.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FIXEDTEXT.TEXT
 msgid  "The following have signed this package:"
-msgstr "هيٺ ڏنل هي پئڪيج جو قرار قبول ڪيو آہي "
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
-msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
-msgstr "\t دواران قرار قبول ڪيل/ دوارا جاري ڪيل ڊجيٽل ID / t تاريخ "
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.STRING.TEXT
+msgid  "\tSigned by\tDigital ID issued by\tDate"
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.STRING.TEXT
 msgid  "Valid signature"
-msgstr "خائز صحيح "
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.String.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.STRING.TEXT
 msgid  "Certificate could not be validated"
-msgstr "سرٽيفڪيٽ جي ڪٿ نہ ٿي سگهي "
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.String.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.STRING.TEXT
 msgid  "The signatures in this document are invalid"
-msgstr "هن دستاويز ۾ صحيحيون نامنظور آهن۔"
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FixedText.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FIXEDTEXT.TEXT
 msgid  "The signatures in this document are valid"
-msgstr "هن دستاويز ۾ صحيحيون نامنظور آهن، "
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FixedText.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FIXEDTEXT.TEXT
 msgid  "Not all parts of the document are signed"
 msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.FixedText.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.FIXEDTEXT.TEXT
 msgid  "The signatures in this document are invalid"
-msgstr "هن دستاويز ۾ صحيحيون نامنظور آهن۔"
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PushButton.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PUSHBUTTON.TEXT
 msgid  "View Certificate..."
-msgstr "سرٽيفڪيٽ نظر مان ڪڍو۔۔۔ "
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PushButton.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PUSHBUTTON.TEXT
 msgid  "Sign Document..."
-msgstr "شامل ڪريو۔۔۔"
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PushButton.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PUSHBUTTON.TEXT
 msgid  "Remove"
-msgstr "ڪڍي ڇڏيو "
+msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKButton.Text
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKBUTTON.TEXT
 msgid  "Close"
 msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
-msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\\n\\nSave document in ODF 1.2 format and add all desired signatures again."
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ERRORBOX.MESSAGE
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
 msgstr ""
 
-#: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
-msgid  "Adding or removing a macro signature will remove all document signatures.\\nDo you really want to continue?"
+#: dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
 msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
-msgid  "View Certificate"
-msgstr "سرٽيفڪيٽ نظر مان ڪڍو "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TABDIALOG.TEXT
+msgid  "Macro Security"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PageItem.Text
-msgid  "General"
-msgstr "عام "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PAGEITEM.TEXT
+msgid  "Security Level"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PageItem.Text
-msgid  "Details"
-msgstr "تفصيلَ "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PAGEITEM.TEXT
+msgid  "Trusted Sources"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PageItem.Text
-msgid  "Certification Path"
-msgstr "سرٽيفڪيٽ ڏيڻ جو رستو "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PUSHBUTTON.TEXT
+msgid  "Reset"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FixedText.Text
-msgid  " Certificate Information"
-msgstr "سرٽيفڪيٽ جي معلومات "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RADIOBUTTON.TEXT
+msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FixedText.Text
-msgid  "This certificate is intended for the following purpose(s):"
-msgstr "هيٺ ڄاڻايل مقصد (مقصدن) جي اِرادي سان ڏنل آهي۔ "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RADIOBUTTON.TEXT
+msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FixedText.Text
-msgid  "Issued to:"
-msgstr "کي جاري ڪيل: "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RADIOBUTTON.TEXT
+msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FixedText.Text
-msgid  "Issued by:"
-msgstr "دواران جاري ڪيل: "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RADIOBUTTON.TEXT
+msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FixedText.Text
-msgid  "Valid from %SDATE% to %EDATE%"
-msgstr "%SDATE% کان %EDATE%\" تائين ڪٿ ڪريو "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FIXEDLINE.TEXT
+msgid  "Trusted certificates"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FixedText.Text
-msgid  "You have a private key that corresponds to this certificate."
-msgstr "توهان وٽ ڳجهي ڪنجي آہي جيڪا هن سرٽيفڪيٽ سان ميل کائي ٿي۔ "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.STRING.TEXT
+msgid  "Issued to\tIssued by\tExpiration date"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
-msgid  "The certificate could not be validated."
-msgstr "سرٽيفڪيٽ جي تصديق نہ ٿي سگهي۔"
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PUSHBUTTON.TEXT
+msgid  "Add..."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
-msgid  "Field\\tValue"
-msgstr "کيتر/ t ملهُہ "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PUSHBUTTON.TEXT
+msgid  "View..."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
-msgid  "Version"
-msgstr "سنسڪرڻ "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PUSHBUTTON.TEXT
+msgid  "Remove"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.String.Text
-msgid  "Serial Number"
-msgstr "جريان نمبر "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FIXEDLINE.TEXT
+msgid  "Trusted file locations"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.String.Text
-msgid  "Signature Algorithm"
-msgstr "صحيح ڏهانش طريقو "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FIXEDTEXT.TEXT
+msgid  "Document macros are always executed if they have been opened from one of the following locations."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.String.Text
-msgid  "Issuer"
-msgstr "جاري ڪندڙ "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PUSHBUTTON.TEXT
+msgid  "Add..."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.String.Text
-msgid  "Issuer Unique ID"
-msgstr "علحدو ID اِستعمال ڪندڙ "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.PUSHBUTTON.TEXT
+msgid  "Remove"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.String.Text
-msgid  "Valid From"
-msgstr "کان ڪٿ ڪريو "
+#: dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.STRING.TEXT
+msgid  "This setting is protected by the Administrator"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.String.Text
-msgid  "Valid to"
-msgstr "جي ڪٿ ڪريو "
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.MODALDIALOG.TEXT
+msgid  "Security Warning"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.String.Text
-msgid  "Subject"
-msgstr "وسيہ "
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
+msgid  "The document contains document macros signed by:"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.String.Text
-msgid  "Subject Unique ID"
-msgstr "علحدو ID وشيہ"
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
+msgid  "The document contains document macros."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.String.Text
-msgid  "Subject Algorithm"
-msgstr "وشيە جي ڳڻپ جي قاعدي جو سيٽ "
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
+msgid  "View Signatures..."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.String.Text
-msgid  "Public Key"
-msgstr "عام ڪنجي "
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.String.Text
-msgid  "Signature Algorithm"
-msgstr "صحيح ڏهانش طريقو "
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
+msgid  "Always trust macros from this source"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.String.Text
-msgid  "Thumbprint SHA1"
-msgstr "آڳوٺي جو نشان SHA1"
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PUSHBUTTON.TEXT
+msgid  "Enable Macros"
+msgstr ""
 
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.String.Text
-msgid  "Thumbprint MD5"
-msgstr "آڱوٺي جو نشان MD5"
-
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FixedText.Text
-msgid  "Certification path"
-msgstr "سرٽيفڪيٽ ڏيڻ جو رستو "
-
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PushButton.Text
-msgid  "View Certificate..."
-msgstr "سرٽيفڪيٽ نظر مان ڪڍو۔۔۔ "
-
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FixedText.Text
-msgid  "Certification status"
-msgstr "سرٽيفيڪٽ جي حالت "
-
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.String.Text
-msgid  "The certificate is OK."
-msgstr "هي سرٽيفڪيٽ ٺيڪ آهي۔ "
-
-#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.String.Text
-msgid  "The certificate could not be validated."
-msgstr "سرٽيفڪيٽ جي تصديق نہ ٿي سگهي۔"
-
-#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.ModalDialog.Text
-msgid  "Select Certificate"
-msgstr "سرٽيفڪيٽ چونڊيو "
-
-#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
-msgid  "Select the certificate you want to use for signing"
-msgstr "اهو سرٽيفڪيٽ چونڊيل جيڪو توهين قرار ڪرڻ لاءِ اِستعمال ڪرڻ چاهيو ٿا۔ "
-
-#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
-msgid  "Issued to\\tIssued by\\tExpiration date"
-msgstr "کي جاري ڪيل/ دواران جاري ڪيل/ختم ٿيڻ جي تاريخ "
-
-#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
-msgid  "View Certificate..."
-msgstr "سرٽيفڪيٽ نظر مان ڪڍو۔۔۔ "
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
+msgid  "Disable Macros"
+msgstr ""

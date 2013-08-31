@@ -31,702 +31,266 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/minimizer/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.SunPresentationMinimizer.Command1.MenuItems.SunPresentationMinimizerExecute2.Title
-msgid  "~Minimize Presentation..."
-msgstr "~Reduzir apresentação..."
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid  "Presentation Minimizer"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.HelpFile
-msgid  "%origin%/../../../../../../help/help_en-US.odt"
-msgstr "%origin%/../../../../../../help/help_en-US.odt"
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid  "Presentation Minimizer - Result"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUN_OPTIMIZATION_WIZARD2
-msgid  "@MINIMIZEREXTENSIONPRODUCTNAME@"
-msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_STEPS
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
 msgid  "Steps"
-msgstr "Passos"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_HELP
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
 msgid  "~Help"
-msgstr "Aj~uda"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_BACK
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
 msgid  "< ~Back"
-msgstr "< ~Voltar"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NEXT
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
 msgid  "~Next >"
-msgstr "~Avançar >"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FINISH
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
 msgid  "~Finish"
-msgstr "~Concluir"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CANCEL
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr "Cancelar"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
 msgid  "Introduction"
-msgstr "Introdução"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr "Utilize o @MINIMIZEREXTENSIONPRODUCTNAME@ para reduzir o tamanho do arquivo da apresentação atual. As imagens serão comprimidas e dos dados desnecessários serão removidos. No último passo do assistente, você pode optar por aplicar as alterações na apresentação atual ou criar uma versão nova e otimizada da apresentação."
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
-msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
-msgstr "Sele~cionar definições para o @MINIMIZEREXTENSIONPRODUCTNAME@"
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid  "~Choose settings for Presentation Minimizer"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
 msgid  "~Delete"
-msgstr "~Excluir"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_GRAPHIC_OPTIMIZATION
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for optimizing pictures and graphics"
-msgstr "Escolha as configurações para otimizar as imagens e figuras"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_OPTIMIZATION
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
 msgid  "Graphics"
-msgstr "Figuras"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_LOSSLESS_COMPRESSION
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
 msgid  "~Lossless compression"
-msgstr "~Compressão sem perdas"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_JPEG_COMPRESSION
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
 msgid  "~JPEG compression"
-msgstr "Compressão ~JPEG"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_QUALITY
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
 msgid  "~Quality in %"
-msgstr "~Qualidade em %"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE_CROP_AREA
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
 msgid  "~Delete cropped graphic areas"
-msgstr "~Excluir áreas de figuras recortadas"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
 msgid  "Reduce ~image resolution"
-msgstr "Reduzir a resolução das ~imagens"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_0
-msgid  "0;<no change>"
-msgstr "0;<sem mudança>"
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid  "<no change>"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_1
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
 msgid  "90;90 DPI (screen resolution)"
-msgstr "90;90 DPI (resolução de tela)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_2
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
 msgid  "150;150 DPI (projector resolution)"
-msgstr "150;150 DPI (resolução de projetor)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_3
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
 msgid  "300;300 DPI (print resolution)"
-msgstr "300;300 DPI (resolução de impressão)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_EMBED_LINKED_GRAPHICS
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
 msgid  "~Break links to external graphics"
-msgstr "~Romper vínculos com figuras externas"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
 msgid  "OLE Objects"
-msgstr "Objetos OLE"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OPTIMIZATION
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for replacing OLE objects"
-msgstr "Escolha as configurações para substituir os objetos OLE"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_REPLACE
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
 msgid  "Create static replacement graphics for OLE objects"
-msgstr "Criar figuras estáticas para substituir objetos OLE"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALL_OLE_OBJECTS
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
 msgid  "For ~all OLE objects"
-msgstr "Para ~todos os objetos OLE"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALIEN_OLE_OBJECTS_ONLY
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
 msgid  "~For OLE objects not based on OpenDocument format"
-msgstr "~Para objetos OLE que não são baseados no formato OpenDocument"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr "Object Linking and Embedding (OLE) é uma tecnologia que permite incorporar e vincular outros objetos no documento. A apresentação atual contém objetos OLE."
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr "Object Linking and Embedding (OLE) é uma tecnologia que permite incorporar e vincular outros objetos no documento. A apresentação atual não contém objetos OLE."
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SLIDES
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
 msgid  "Slides"
-msgstr "Slides"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOOSE_SLIDES
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
 msgid  "Choose which slides to delete"
-msgstr "Selecione os slides a excluir"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MASTER_PAGES
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
 msgid  "Master Pages"
-msgstr "Páginas mestres"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_MASTER_PAGES
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
 msgid  "Delete unused ~master pages"
-msgstr "Excluir páginas ~mestres em desuso"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_NOTES_PAGES
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
 msgid  "~Clear notes"
-msgstr "~Limpar anotações"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_HIDDEN_SLIDES
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
 msgid  "Delete hidden ~slides"
-msgstr "Excluir ~slides ocultos"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CUSTOM_SHOW
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
 msgid  "Delete slides that are not used for the ~custom slide show"
-msgstr "Ex~cluir slides em desuso na apresentação de tela personalizada"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr "Resumo"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY_TITLE
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
 msgid  "Choose where to apply the following changes"
-msgstr "Escolha onde aplicar as seguintes alterações"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_PROGRESS
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
 msgid  "Progress"
-msgstr "Progresso"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OBJECTS_OPTIMIZED
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
 msgid  "Objects optimized"
-msgstr "Objetos otimizados"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_APPLY_TO_CURRENT
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
 msgid  "~Apply changes to current presentation"
-msgstr "~Aplicar as alterações na apresentação atual"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_AUTOMATICALLY_OPEN
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
 msgid  "~Open newly created presentation"
-msgstr "A~brir a apresentação recém criada"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_SETTINGS
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
 msgid  "~Save settings as"
-msgstr "~Salvar configurações como"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_AS
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
 msgid  "~Duplicate presentation before applying changes"
-msgstr "~Duplicar a apresentação antes de aplicar as alterações"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_SLIDES
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
 msgid  "Delete %SLIDES slides."
-msgstr "Excluir %SLIDES slides."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr "Otimizar %IMAGES figuras para a qualidade JPEG %QUALITY% com %RESOLUTION DPI."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
 msgid  "Create replacement graphics for %OLE objects."
-msgstr "Cria figuras substitutas para os objetos %OLE."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CURRENT_FILESIZE
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
 msgid  "Current file size:"
-msgstr "Tamanho do arquivo atual:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ESTIMATED_FILESIZE
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
 msgid  "Estimated new file size:"
-msgstr "Estimativa do novo tamanho de arquivo:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MB
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
 msgid  "%1 MB"
-msgstr "%1 MB"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.MY_SETTINGS
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
 msgid  "My Settings "
-msgstr "Minhas configurações "
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DEFAULT_SESSION
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
 msgid  "default session"
-msgstr "sessão padrão"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr "A otimização modificará o documento atual. Deseja continuar?"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_YES
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
 msgid  "~Yes"
-msgstr "~Sim"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OK
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
 msgid  "OK"
-msgstr "OK"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_1
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr "O @MINIMIZEREXTENSIONPRODUCTNAME@ atualizou com sucesso a apresentação '%TITLE'. O tamanho do arquivo mudou de %OLDFILESIZE MB para %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_2
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr "O @MINIMIZEREXTENSIONPRODUCTNAME@ atualizou com sucesso a apresentação '%TITLE'. O tamanho do arquivo mudou de %OLDFILESIZE MB para aproximadamente %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_3
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr "O @MINIMIZEREXTENSIONPRODUCTNAME@ atualizou com sucesso a apresentação '%TITLE'. O tamanho do arquivo mudou para %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_4
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr "O @MINIMIZEREXTENSIONPRODUCTNAME@ atualizou com sucesso a apresentação '%TITLE'. O tamanho do arquivo mudou para aproximadamente %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
 msgid  "Duplicating presentation..."
-msgstr "Duplicar apresentação..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETING_SLIDES
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
 msgid  "Deleting slides..."
-msgstr "Excluir slides..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZING_GRAPHICS
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
 msgid  "Optimizing graphics..."
-msgstr "Otimizar figuras..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATING_OLE_REPLACEMENTS
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
 msgid  "Creating replacement graphics for OLE objects..."
-msgstr "Criar figuras substitutas para os objetos OLE..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FILESIZESEPARATOR
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
 msgid  "."
-msgstr "."
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.LastUsedSettings.Name
-msgid  "Projector optimized"
-msgstr "Otimizado para projetor"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template1.Name
-msgid  "Screen optimized (smallest file size)"
-msgstr "Otimizado para tela (menor tamanho de arquivo)"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template2.Name
-msgid  "Projector optimized"
-msgstr "Otimizado para projetor"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template3.Name
-msgid  "Print optimized"
-msgstr "Otimizado para impressão"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#tit
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr "Teclas de atalho do @PRESENTEREXTENSIONPRODUCTNAME@"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#bm_id0921200912285678
-msgid  "\<bookmark_value\>@PRESENTEREXTENSIONPRODUCTNAME@ shortcuts\</bookmark_value\>"
-msgstr "<bookmark_value>teclas de atalho do @PRESENTEREXTENSIONPRODUCTNAME@</bookmark_value>"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#hd_id0921201912165661
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr "Teclas de atalho do @PRESENTEREXTENSIONPRODUCTNAME@"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
-msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr "Ao executar uma apresentação de slides com o @PRESENTEREXTENSIONPRODUCTNAME@, você pode utilizar as seguintes teclas:"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
-msgid  "Action"
-msgstr "Ação"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104093
-msgid  "Key or Keys"
-msgstr "Tecla ou teclas"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110418
-msgid  "Next slide, or next effect"
-msgstr "Próximo slide, ou próximo efeito"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
-msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr "Clique com o botão da esquerda, seta para a direita, seta para baixo, barra de espaço, page down, enter, return, 'N'  "
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
-msgid  "Previous slide, or previous effect"
-msgstr "Slide anterior, ou efeito anterior"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104115
-msgid  "Right click, left arrow, up arrow, page up, backspace, 'P'"
-msgstr "Clique com o botão da direita, seta para a esquerda, seta para cima, backspace, 'P'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104164
-msgid  "First slide"
-msgstr "Primeiro slide"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104148
-msgid  "Home"
-msgstr "Home"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104221
-msgid  "Last slide"
-msgstr "Último slide"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104277
-msgid  "End"
-msgstr "Fim"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104279
-msgid  "Previous slide without effects"
-msgstr "Slide anterior sem os efeitos"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110423
-msgid  "Alt+Page Up"
-msgstr "Alt+Page Up"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110427
-msgid  "Next slide without effects"
-msgstr "Próximo slide sem os efeitos"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104261
-msgid  "Alt+Page Down"
-msgstr "Alt+Page Down"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104383
-msgid  "Black/Unblack the screen"
-msgstr "Negrejar / Restaurar a tela"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110431
-msgid  "'B', '.'"
-msgstr "'B', '.'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104311
-msgid  "White/Unwhite the screen"
-msgstr "Branquear / Restaurar a tela"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104359
-msgid  "'W', ','"
-msgstr "'W', ','"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104336
-msgid  "End slide show"
-msgstr "Finalizar apresentação de slides"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104419
-msgid  "Esc, '-'"
-msgstr "Esc, '-'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104460
-msgid  "Go to slide number"
-msgstr "Ir até o slide de numero..."
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110440
-msgid  "Number followed by Enter"
-msgstr "Número seguido de Enter"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104427
-msgid  "Grow/Shrink size of notes font"
-msgstr "Aumentar / Reduzir a fonte das notas"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104442
-msgid  "'G', 'S'"
-msgstr "'G', 'S'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104473
-msgid  "Scroll notes up/down"
-msgstr "Rolar notas para cima / para baixo"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110459
-msgid  "'A', 'Z'"
-msgstr "'A', 'Z'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110456
-msgid  "Move caret in notes view backward/forward"
-msgstr "Mover o ponteiro na visualização de notas para frente / para trás"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110457
-msgid  "'H', 'L'"
-msgstr "'H', 'L'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104566
-msgid  "Show the @PRESENTEREXTENSIONPRODUCTNAME@"
-msgstr "Mostra o @PRESENTEREXTENSIONPRODUCTNAME@"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104544
-msgid  "Ctrl-'1'"
-msgstr "Ctrl-'1'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104535
-msgid  "Show the Presentation Notes"
-msgstr "Mostrar as anotações da apresentação"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104680
-msgid  "Ctrl-'2'"
-msgstr "Ctrl-'2'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104634
-msgid  "Show the Slides Overview"
-msgstr "Mostrar a visão geral dos slides"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104632
-msgid  "Ctrl-'3'"
-msgstr "Ctrl-'3'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.a.Normal.Text
-msgid  "Previous"
-msgstr "Anterior"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.b.Normal.Text
-msgid  "Next"
-msgstr "Próximo"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.c.Normal.Text
-msgid  "Notes"
-msgstr "Notas"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.d.Normal.Text
-msgid  "Slides"
-msgstr "Slides"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.l.Normal.Text
-msgid  "Help"
-msgstr "Ajuda"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.NotesToolBar.Entries.a.Normal.Text
-msgid  "Zoom"
-msgstr "Zoom"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.SlideSorterCloser.Text
-msgid  "Close"
-msgstr "Fechar"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.NotesViewCloser.Text
-msgid  "Close"
-msgstr "Fechar"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.HelpViewCloser.Text
-msgid  "Close"
-msgstr "Fechar"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
-msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr "Clique no botão esquerdo, seta para direita ou para baixo, barra de espaço, page down, enter, 'N'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
-msgid  "Next slide, or next effect"
-msgstr "Próximo slide, ou próximo efeito"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
-msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr "Clique no botão da direita, seta para esquerda ou para baixo, page up, backspace, ou 'P'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
-msgid  "Previous slide, or previous effect"
-msgstr "Slide anterior, ou efeito anterior"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Left
-msgid  "Home"
-msgstr "Home"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Right
-msgid  "First slide"
-msgstr "Primeiro slide"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Left
-msgid  "End"
-msgstr "Fim"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Right
-msgid  "Last slide"
-msgstr "Último slide"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Left
-msgid  "Alt-Page Up"
-msgstr "Alt-Page Up"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Right
-msgid  "Previous slide without effects"
-msgstr "Slide anterior sem os efeitos"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Left
-msgid  "Alt-Page Down"
-msgstr "Alt-Page Down"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Right
-msgid  "Next slide without effects"
-msgstr "Próximo slide sem os efeitos"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Left
-msgid  "'B', '.'"
-msgstr "'B', '.'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Right
-msgid  "Blacks/Unblacks the screen"
-msgstr "Negrejar / Restaurar a tela"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Left
-msgid  "'W', ','"
-msgstr "'W', ','"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Right
-msgid  "Whites/Unwhites the screen"
-msgstr "Branquear / Restaurar a tela"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Left
-msgid  "Esc, '-'"
-msgstr "Esc, '-'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Right
-msgid  "End slide show"
-msgstr "Finalizar apresentação de slides"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Left
-msgid  "Number followed by Enter"
-msgstr "Número seguido de Enter"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Right
-msgid  "Go to that slide"
-msgstr "Ir para esse slide"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Left
-msgid  "'G', 'S'"
-msgstr "'G', 'S'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Right
-msgid  "Grow/Shrink size of notes font"
-msgstr "Aumentar / Reduzir a fonte das notas"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Left
-msgid  "'A', 'Z'"
-msgstr "'A', 'Z'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Right
-msgid  "Scroll notes up/down"
-msgstr "Rolar notas para cima / para baixo"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Left
-msgid  "'H', 'L'"
-msgstr "'H', 'L'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Right
-msgid  "Move caret in notes view backward/forward"
-msgstr "Mover o ponteiro na visualização de notas para frente / para trás"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Left
-msgid  "Ctrl-'1'"
-msgstr "Ctrl-'1'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Right
-msgid  "Shows the Presenter Console"
-msgstr "Mostra a console do apresentador"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Left
-msgid  "Ctrl-'2'"
-msgstr "Ctrl-'2'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Right
-msgid  "Shows the Presentation Notes"
-msgstr "Mostra as anotações da apresentação"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Left
-msgid  "Ctrl-'3'"
-msgstr "Ctrl-'3'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Right
-msgid  "Shows the Slides Overview"
-msgstr "Mostra a visão geral dos slides"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Title
-msgid  "Current Slide (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
-msgstr "Slide atual (%CURRENT_SLIDE_NUMBER% de %SLIDE_COUNT%)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
-msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr "Slide atual, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% de %SLIDE_COUNT%"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
-msgid  "Click to exit presentation..."
-msgstr "Clique para sair da apresentação..."
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationTitle.String
-msgid  "Current Slide (end)"
-msgstr "Slide atual (fim)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NextSlidePreview.Title
-msgid  "Next Slide"
-msgstr "Próximo slide"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NotesView.Title
-msgid  "Notes"
-msgstr "Notas"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
-msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr "Visão geral do Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% de %SLIDE_COUNT%"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.HelpView.Title
-msgid  "Help"
-msgstr "Ajuda"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Console.String
-msgid  "Presenter Console"
-msgstr "Console do Presenter"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Preview.String
-msgid  "Current Slide Info"
-msgstr "Informações do slide atual"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Notes.String
-msgid  "Presenter Notes"
-msgstr "Notas do Presenter"
+msgstr ""

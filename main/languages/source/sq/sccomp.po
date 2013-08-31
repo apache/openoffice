@@ -31,46 +31,46 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/solver/solver.src#RID_SOLVER_COMPONENT.String.Text
+#: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr "Prezantim %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_NONNEGATIVE.String.Text
+#: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
 msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_INTEGER.String.Text
+#: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr "Kthen vitin e një vlere të datës si një numër të plotë."
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_TIMEOUT.String.Text
+#: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr "Koha e mbetur: {[1] minuta }{[2] sekonda}"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_EPSILONLEVEL.String.Text
+#: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr "Ngrit nivelin"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.String.Text
+#: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
 msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_NONLINEAR.String.Text
+#: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr "Kontrollimi i drejtshkrimit nuk është në dispozicion"
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_EPSILONLEVEL.String.Text
+#: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr "Fjalëkalimi i vendosur është i gabim."
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_INFEASIBLE.String.Text
+#: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
 msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_UNBOUNDED.String.Text
+#: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr "Nuk është baraz me"
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_TIMEOUT.String.Text
+#: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
 msgstr ""

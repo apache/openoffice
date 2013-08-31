@@ -31,1242 +31,1242 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
-msgid  "Detail"
-msgstr "விவரம்"
-
-#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
-msgid  "Page Header"
-msgstr "பக்க தலைப்பகுதி"
-
-#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
-msgid  "Page Footer"
-msgstr "பக்க அடிப்பகுதி"
-
-#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
-msgid  "Group Header"
-msgstr "குழு தலைப்பகுதி"
-
-#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
-msgid  "Group Footer"
-msgstr "குழு அடிப்பகுதி"
-
-#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
-msgid  "Report Header"
-msgstr "அறிக்கை தலைப்பகுதி"
-
-#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
-msgid  "Report Footer"
-msgstr "அறிக்கை அடிப்பகுதி"
-
-#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
-msgid  "The name '#1' already exists and can not be asssigned again."
-msgstr "'#1' என்ற பெயர் ஏற்கனவே உள்ளதால் அதனை மீண்டும் மற்றதற்கு ஒதுக்க முடியாது."
-
-#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
-msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr "தப்பான வாதத்தை அமைக்க முயன்றீர்கள். செல்லத்தக்க வாதங்களுக்கு '#1' ஐப் பாக்கவும்."
-
-#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
-msgid  "The element is invalid."
-msgstr "இத்தனிமம் செல்லாது."
-
-#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
-msgid  "Label field"
-msgstr "விளக்கச்சீட்டு புலம்"
-
-#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
-msgid  "Formatted field"
-msgstr "வடிவமைக்கப்பட்ட புலம்"
-
-#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
-msgid  "Image control"
-msgstr "பட கட்டுப்பாடு"
-
-#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "அறிக்கை"
-
-#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
-msgid  "Shape"
-msgstr "வடிவம்"
-
-#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
-msgid  "Fixed line"
-msgstr "நிலையான கோடு"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FLOATINGWINDOW.TEXT
 msgid  "Sorting and Grouping"
-msgstr "வரிசைபடுத்தலும் குழுவாக்கலும்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "Groups"
-msgstr "குழுக்கள்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FIXEDTEXT.TEXT
 msgid  "Group actions"
-msgstr "குழு செயல்கள்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.TOOLBOXITEM.TEXT
 msgid  "Move up"
-msgstr "மேலே நகர்த்து"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.TOOLBOXITEM.TEXT
 msgid  "Move down"
-msgstr "கீழே நகர்த்து"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.TOOLBOXITEM.TEXT
 msgid  "~Delete"
-msgstr "அழி (~D)"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "Properties"
-msgstr "பண்புகள்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
 msgid  "Sorting"
-msgstr "வரிசைபடுத்தல்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.STRINGLIST.ITEM
 msgid  "Ascending"
-msgstr "ஏறுமுகமான"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.STRINGLIST.ITEM
 msgid  "Descending"
-msgstr "இறங்குமுகமான"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Group Header"
-msgstr "குழு தலைப்பகுதி"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Present"
-msgstr "இருக்கிறது"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Not present"
-msgstr "இருக்கவில்லை"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
 msgid  "Group Footer"
-msgstr "குழு அடிப்பகுதி"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Present"
-msgstr "இருக்கிறது"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Not present"
-msgstr "இருக்கவில்லை"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
 msgid  "Group On"
-msgstr "குழுவாக்கு"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.DEFAULT.STRINGLIST.ITEM
 msgid  "Each Value"
-msgstr "ஒவ்வொரு மதிப்பும்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FIXEDTEXT.TEXT
 msgid  "Group Interval"
-msgstr "குழு இடைவேளை"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FIXEDTEXT.TEXT
 msgid  "Keep Together"
-msgstr "ஒன்றாக வை"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
 msgid  "No"
-msgstr "வேண்டாம்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
 msgid  "Whole Group"
-msgstr "குழு முழுதும்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.STRINGLIST.ITEM
 msgid  "With First Detail"
-msgstr "முதல் விவரத்துடன்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Help"
-msgstr "உதவி"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
 msgid  "Field/Expression"
-msgstr "புலம்/வெளிப்பாடு"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_SORTING.STRING.TEXT
 msgid  "Sort Order"
-msgstr "வரிசை ஒழுங்கு"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.STRING.TEXT
 msgid  "Prefix Characters"
-msgstr "முன்னொட்டு வரியுருகள்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
 msgid  "Year"
-msgstr "ஆண்டு"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
 msgid  "Quarter"
-msgstr "காலாண்டு"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
 msgid  "Month"
-msgstr "மாதம்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
 msgid  "Week"
-msgstr "வாரம்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
 msgid  "Day"
-msgstr "நாள்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HOUR.STRING.TEXT
 msgid  "Hour"
-msgstr "மணி"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.STRING.TEXT
 msgid  "Minute"
-msgstr "நிமிடம்"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.STRING.TEXT
 msgid  "Interval"
-msgstr "இடைவேளை"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
 msgid  "Select a field or type an expression to sort or group on."
-msgstr "வரிசைபடுத்துவதற்க்கு அல்லது குழுவாக்க ஒரு புலத்தையோ வெளிப்பாட்டையோ தெரிவுசெய்."
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
 msgid  "Display a header for this group?"
-msgstr "இக்குழுவின் தலைப்பகுதியைக் காட்டவா?"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.STRING.TEXT
 msgid  "Display a footer for this group?"
-msgstr "இக்குழுவின் அடிப்பகுதியைக் காட்டவா?"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.STRING.TEXT
 msgid  "Select the value or range of values that starts a new group."
-msgstr "ஒரு புதிய குழுவை தொடக்கும் மதிப்பையோ மதிப்புத்தொடரையோ தெரிவுசெய்."
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.STRING.TEXT
 msgid  "Interval or number of characters to group on."
-msgstr "குழுவாக்குவதற்கான இடைவேளை அல்லது வரியுருகள். "
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.STRING.TEXT
 msgid  "Keep group together on one page?"
-msgstr "குழுவை ஒன்றாக ஒரே பக்கத்தில் வைத்திருக்கவா?"
+msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+#: ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.STRING.TEXT
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr "ஏறு அல்லது இறங்குமான வரிசை ஒழுங்கை தெரிவுசெய். ஏறுமுகமென்றால் அ முதல் ஔ வரை அல்லது 0 முதல் 9 வரை ஆகும்"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.MODALDIALOG.TEXT
 msgid  "Page Numbers"
-msgstr "பக்க எண்கள்"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
 msgid  "Format"
-msgstr "வடிவமைப்பு"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
 msgid  "Page N"
-msgstr "பக்கம் N"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RADIOBUTTON.TEXT
 msgid  "Page N of M"
-msgstr "பக்கம் M ல் N"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
 msgid  "Position"
-msgstr "இடம்"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
 msgid  "Top of Page (Header)"
-msgstr "பக்கத்தின் மேல் (தலைப்பகுதி)"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RADIOBUTTON.TEXT
 msgid  "Bottom of Page (Footer)"
-msgstr "பக்கத்தின் கீழ் (அடிப்பகுதி)"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
 msgid  "General"
-msgstr "பொது"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
 msgid  "Alignment:"
-msgstr "நேர்படுத்தல்:"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 msgid  "Left"
-msgstr "இடது"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 msgid  "Center"
-msgstr "நடு"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
 msgid  "Right"
-msgstr "வலது"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
 msgid  "Show Number on First Page"
-msgstr "முதல் பக்கத்தில் எண்ணைக் காட்டு"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
+#: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr "~உதவி"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+#: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
 msgid  "\"Page \" & #PAGENUMBER#"
-msgstr "\"பக்கம் \" & #PAGENUMBER#"
+msgstr ""
 
-#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+#: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
 msgid  " & \" of \" & #PAGECOUNT#"
-msgstr " & \" மொத்தம் \" & #PAGECOUNT#"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TABDIALOG.TEXT
 msgid  "Page Setup"
-msgstr "பக்க அமைப்பு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
 msgid  "Page"
-msgstr "பக்கம்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
 msgid  "Background"
-msgstr "பின்புலம்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "திரும்பு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
 msgid  "Page"
-msgstr "பக்கம்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
 msgid  "Background"
-msgstr "பின்புலம்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
 msgid  "Section Setup"
-msgstr "பகுதி அமைப்பு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "திரும்பு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
 msgid  "Background"
-msgstr "பின்புலம்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
 msgid  "Character Settings"
-msgstr "வரியுரு அமைவுகள்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
 msgid  "Font"
-msgstr "எழுத்துரு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr "எழுத்துரு தாக்கங்கள்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
 msgid  "Position"
-msgstr "இடம்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
 msgid  "Asian Layout"
-msgstr "ஆசிய தளக்கோலம்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
 msgid  "Background"
-msgstr "பின்புலம்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
 msgid  "Alignment"
-msgstr "நேர்படுத்தல்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "திரும்பு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
 msgid  "Character"
-msgstr "வரியுரு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
 msgid  "Line"
-msgstr "கோடு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
 msgid  "Line"
-msgstr "கோடு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
 msgid  "Line Styles"
-msgstr "கோட்டு பாணிகள்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
 msgid  "Arrow Styles"
-msgstr "அம்பு பாணிகள்"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr "திரும்பு"
+msgstr ""
 
-#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
 msgid  "Line"
-msgstr "கோடு"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+#: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
 msgid  "Report navigator"
-msgstr "அறிக்கை மாலுமி"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+#: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
 msgid  "Functions"
-msgstr "செயல்பாடுகள்"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+#: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
 msgid  "Groups"
-msgstr "குழுக்கள்"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
 msgid  "Sorting and Grouping..."
-msgstr "வரிசைபடுத்தலும் குழுவாக்கலும்..."
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
 msgid  "Page Header/Footer..."
-msgstr "பக்க தலைப்பகுதி/அடிப்பகுதி..."
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
 msgid  "Report Header/Footer..."
-msgstr "அறிக்கை தலைப்பகுதி/அடிப்பகுதி..."
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
 msgid  "New Function"
-msgstr "புதிய செயல்பாடு"
+msgstr ""
 
-#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr "பண்புகள்..."
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Field Value Is"
-msgstr "புலத்தின் மதிப்பு"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Expression Is"
-msgstr "வெளிப்பாடு"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
 msgid  "between"
-msgstr "இதற்கிடையில்"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
 msgid  "not between"
-msgstr "இதற்கிடையிலில்லாத"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
 msgid  "equal to"
-msgstr "இதனுடன் சமமான"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
 msgid  "not equal to"
-msgstr "இதனுடன் சமமில்லாத"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
 msgid  "greater than"
-msgstr "இதைவிட பெரிய"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
 msgid  "less than"
-msgstr "இதைவிட சிறிய"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
 msgid  "greater than or equal to"
-msgstr "இதைவிட அதிகமான அல்லது சமமான"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+#: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
 msgid  "less than or equal to"
-msgstr "இதைவிட குறைவான அல்லது சமமான"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+#: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
 msgid  "and"
-msgstr "மற்றும்"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+#: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
 msgid  "Example"
-msgstr "எடுத்துக்காட்டு"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+#: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
 msgid  "Conditional Formatting"
-msgstr "வரையறையுடைய வடிவமைப்பு"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+#: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr "~உதவி"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+#: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
 msgid  "Condition $number$"
-msgstr "வரையறை $number$"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+#: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
 msgid  "White"
-msgstr "வெள்ளை"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+#: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
 msgid  "Font color"
-msgstr "எழுத்துரு வண்ணம்"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+#: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
 msgid  "Background"
-msgstr "பின்புலம்"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+#: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
 msgid  "No Fill"
-msgstr "நிரப்பப்படாத"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
 msgid  "Sort Ascending"
-msgstr "ஏறுமுகமாக வரிசைபடுத்து"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
 msgid  "Sort Descending"
-msgstr "இறங்குமுகமாக வரிசைபடுத்து"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
 msgid  "Remove sorting"
-msgstr "வரிசைபடுத்தலை அகற்று"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+#: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
 msgid  "Insert"
-msgstr "நுழை"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+#: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Help"
-msgstr "உதவி"
+msgstr ""
 
-#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+#: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
 msgid  "Date and Time"
-msgstr "தேதியும் நேரமும்"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
 msgid  "Include Date"
-msgstr "தேதியைச் சேர்த்துக்கொள்"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
 msgid  "Format"
-msgstr "வடிவமைப்பு"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
 msgid  "Include Time"
-msgstr "நேரத்தைச் சேர்த்துக்கொள்"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
 msgid  "Format"
-msgstr "வடிவமைப்பு"
+msgstr ""
 
-#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+#: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr "~உதவி"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+#: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 msgid  "General"
-msgstr "பொது"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+#: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 msgid  "Data"
-msgstr "தரவு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
 msgid  "No"
-msgstr "வேண்டாம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
 msgid  "Yes"
-msgstr "சரி"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
 msgid  "Force New Page"
-msgstr "புதிய பக்கத்தை நிர்ப்பந்தி"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
 msgid  "None"
-msgstr "ஏதுமில்லை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
 msgid  "Before Section"
-msgstr "பகுதிக்கு முன்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
 msgid  "After Section"
-msgstr "பகுதிக்குப் பின்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
 msgid  "Before & After Section"
-msgstr "பகுதிக்கு முன்னும் பின்னும்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+#: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
 msgid  "New Row Or Column"
-msgstr "புதிய வரி அல்லது பத்தி"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
 msgid  "Keep Together"
-msgstr "ஒன்றாக வை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
 msgid  "No"
-msgstr "வேண்டாம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
 msgid  "Whole Group"
-msgstr "குழு முழுதும்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
 msgid  "With First Detail"
-msgstr "முதல் விவரத்துடன்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+#: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
 msgid  "Can Grow"
-msgstr "வளரலாம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+#: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
 msgid  "Can Shrink"
-msgstr "சுருங்கலாம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
 msgid  "Repeat Section"
-msgstr "பகுதியைத் திருப்பிச்செய்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+#: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
 msgid  "Print repeated values"
-msgstr "மீளும் மதிப்புகளை அச்சடி"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+#: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
 msgid  "Conditional Print Expression"
-msgstr "வரையறையுடைய அச்சு வெளிப்பாடு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+#: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
 msgid  "Start new column"
-msgstr "புதிய பத்தியைத் தொடக்கு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+#: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
 msgid  "Start new page"
-msgstr "புதிய பக்கத்தைத் தொடக்கு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+#: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
 msgid  "Reset page number"
-msgstr "பக்க எண்ணை மீளமை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
 msgid  "Chart type"
-msgstr "அட்டவணை வகை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+#: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
 msgid  "Print When Group Change"
-msgstr "குழு மாறும்போது அச்சடி"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+#: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
 msgid  "Visible"
-msgstr "காணப்படும்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+#: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
 msgid  "Group keep together"
-msgstr "குழுவை ஒன்றாக வை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
 msgid  "Per Page"
-msgstr "ஒரு பக்கத்திற்கு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
 msgid  "Per Column"
-msgstr "ஒரு பத்திக்கு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
 msgid  "None"
-msgstr "ஏதுமில்லை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
 msgid  "Section"
-msgstr "பகுதி"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
 msgid  "Automatic"
-msgstr "தானாக"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+#: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
 msgid  "Page header"
-msgstr "பக்க தலைப்பகுதி"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+#: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
 msgid  "Page footer"
-msgstr "பக்க அடிப்பகுதி"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
 msgid  "All Pages"
-msgstr "எல்லா பக்கங்களும்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
 msgid  "Not With Report Header"
-msgstr "அறிக்கை தலைப்பகுதியுடன் வேண்டாம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
 msgid  "Not With Report Footer"
-msgstr "அறிக்கை அடிப்பகுதியுடன் வேண்டாம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
 msgid  "Not With Report Header/Footer"
-msgstr "அறிக்கை அடி, தலைப்பகுதிகளுடன் வேண்டாம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+#: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
 msgid  "Deep traversing"
-msgstr "ஆழமான கடத்தல்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+#: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
 msgid  "Pre evaluation"
-msgstr "முன் மதிப்பாய்வு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+#: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
 msgid  "Position X"
-msgstr "X ன் இடம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+#: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
 msgid  "Position Y"
-msgstr "Y ன் இடம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+#: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
 msgid  "Width"
-msgstr "அகலம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+#: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
 msgid  "Height"
-msgstr "உயரம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+#: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
 msgid  "Initial value"
-msgstr "தொடக்க மதிப்பு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+#: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
 msgid  "Preserve as Link"
-msgstr "இணைப்பாக பதப்படுத்து"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
 msgid  "Formula"
-msgstr "சூத்திரம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+#: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
 msgid  "Data field"
-msgstr "தரவு புலம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+#: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
 msgid  "Font"
-msgstr "எழுத்துரு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+#: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
 msgid  "Background color"
-msgstr "பின்புல வண்ணம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+#: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
 msgid  "Background Transparent"
-msgstr "தெளிந்த புலம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
 msgid  "Background Transparent"
-msgstr "தெளிந்த புலம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+#: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
 msgid  "This operation is not allowed. The control overlaps with another one."
-msgstr "இச்செயலுக்கு அனுமதியில்லை. ஒரு கட்டுப்பாடு மற்றொன்றுடன் முரணாக உள்ளது."
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+#: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
 msgid  "This position can not be set. It is invalid."
-msgstr "இவ்விடத்தை அமைக்கலாகாது. அது செல்லாது."
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+#: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
 msgid  "Group: %1"
-msgstr "குழு: %1"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+#: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
 msgid  "Function"
-msgstr "செயல்பாடு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
 msgid  "Scope"
-msgstr "செயற்பரப்பு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
 msgid  "Data Field Type"
-msgstr "தரவுப்புல வகை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
 msgid  "Field or Formula"
-msgstr "புலம் அல்லது சூத்திரம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
 msgid  "Function"
-msgstr "செயல்பாடு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
 msgid  "Counter"
-msgstr "செவை முகப்பு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
 msgid  "User defined Function"
-msgstr "பயனர் வரையறுத்த செயல்பாடு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+#: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
 msgid  "Link master fields"
-msgstr "தலைமை புலங்களை இணை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+#: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
 msgid  "Link slave fields"
-msgstr "துணைப்புலங்களை இணை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+#: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr "அறிக்கையின் நடப்பு ஆவணம் பற்றிய விவரங்களைக் காட்ட விளக்க அட்டவணைகள் பயன்படுகின்றன. இதனை நீங்கள் சாதிக்க, விளக்க அட்டவணையிலுள்ள எப்பத்திகள் அறிக்கையிலுள்ள எப்பத்திகளுடன் பொருந்துகின்றன என்பதைக் குறிப்பிடுக."
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+#: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
 msgid  "Chart"
-msgstr "விளக்க அட்டவணை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+#: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
 msgid  "Report"
-msgstr "அறிக்கை"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+#: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
 msgid  "Preview Row(s)"
-msgstr "வரி(கள்) முன்னோட்டம்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+#: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
 msgid  "Area"
-msgstr "பரப்பளவு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+#: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
 msgid  "Report Output Format"
-msgstr "அறிக்கை வெளியீட்டு வடிவமைப்பு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
 msgid  "Vert. Alignment"
-msgstr "செங்குத்து ஒழுங்கு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
 msgid  "Top"
-msgstr "மேல்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
 msgid  "Middle"
-msgstr "மத்தியில்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
 msgid  "Bottom"
-msgstr "கீழே"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
 msgid  "Horz. Alignment"
-msgstr "கிடைமட்ட ஒழங்கு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
 msgid  "Left"
-msgstr "இடது"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
 msgid  "Right"
-msgstr "வலது"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
 msgid  "Block"
-msgstr "தடு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+#: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
 msgid  "Center"
-msgstr "மத்தியில்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
 msgid  "Counter"
-msgstr "செவை முகப்பு"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
 msgid  "Accumulation"
-msgstr "சேர்க்கவும்"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
 msgid  "Minimum"
-msgstr "குறைந்தபட்ச"
+msgstr ""
 
-#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+#: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
 msgid  "Maximum"
-msgstr "அதிகபட்ச"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 msgid  "Properties: "
-msgstr "பண்புகள்: "
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 msgid  "No Control marked"
-msgstr "கட்டுப்பாடு குறிக்கப்படவில்லை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
 msgid  "Multiselection"
-msgstr "பலதெரிவு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
 msgid  "Image Control"
-msgstr "பிம்பக் கட்டுப்பாடு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 msgid  "Label field"
-msgstr "விளக்கச்சீட்டு புலம்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
 msgid  "Line"
-msgstr "கோடு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
 msgid  "Formatted Field"
-msgstr "வடிவமைக்கப்பட்ட புலம்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
 msgid  "Shape"
-msgstr "வடிவம்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr "அறிக்கை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
 msgid  "Section"
-msgstr "பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
 msgid  "Function"
-msgstr "செயல்பாடு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
 msgid  "Group"
-msgstr "குழு"
+msgstr ""
 
-#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
 msgid  "Show ruler"
-msgstr "அளவுகோலைக் காட்டு"
+msgstr ""
 
-#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
 msgid  "Show grid"
-msgstr "பின்னலைக் காட்டு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
 msgid  "Change Object"
-msgstr "பொருளை மாற்று"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 msgid  "Move Group(s)"
-msgstr "குழுவை நகர்த்து"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
 msgid  "Conditional Formatting"
-msgstr "வரையறுக்கப்பட்ட வடிவமைப்பு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
 msgid  "Remove report header / report footer"
-msgstr "அறிக்கை தலைப்பகுதி / அடிப்பகுதியை அகற்று"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
 msgid  "Add report header / report footer"
-msgstr "அறிக்கை தலைப்பகுதி / அடிப்பகுதியைச் சேர்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
 msgid  "Remove page header / page footer"
-msgstr "பக்க தலைப்பகுதி / அடிப்பகுதியை அகற்று"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
 msgid  "Add page header / page footer"
-msgstr "பக்க தலைப்பகுதி / அடிப்பகுதியைச் சேர்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+#: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 msgid  "Change property '#'"
-msgstr "'#' பண்பை மாற்று"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
 msgid  "Add group header "
-msgstr "குழு தலைபகுதியைச் சேர் "
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
 msgid  "Remove group header "
-msgstr "குழு தலைப்பகுதியை அகற்று "
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
 msgid  "Add group footer "
-msgstr "குழு அடிப்பகுதியைச் சேர் "
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
 msgid  "Remove group footer "
-msgstr "குழு அடிப்பகுதியை அகற்று "
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
 msgid  "Add function"
-msgstr "செயல்பாட்டைச் சேர்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
 msgid  "Delete function"
-msgstr "செயல்பாட்டை அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
 msgid  "Design"
-msgstr "வடிவமைப்பு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
 msgid  "Preview"
-msgstr "முன்னோட்டம்"
+msgstr ""
 
-#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+#: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 msgid  "Report #"
-msgstr "அறிக்கை #"
+msgstr ""
 
-#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
 msgid  "~Report name"
-msgstr "~அறிக்கை பெயர்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
 msgid  "Delete Group"
-msgstr "குழுவை அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
 msgid  "Add Group"
-msgstr "குழுவைச் சேர்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
 msgid  "Delete Selection"
-msgstr "தெரிவை அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
 msgid  "Delete Function"
-msgstr "செயல்பாட்டை அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
 msgid  "Change Size"
-msgstr "அளவை மாற்று"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
 msgid  "Paste"
-msgstr "ஒட்டு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
 msgid  "Insert Control"
-msgstr "கட்டுப்பாட்டை நுழை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
 msgid  "Delete Control"
-msgstr "கட்டுப்பாட்டை அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
 msgid  "Insert Group"
-msgstr "குழுவை நுழை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
 msgid  "Delete Group"
-msgstr "குழுவை அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
 msgid  "GroupHeader"
-msgstr "குழுதலைப்பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
 msgid  "GroupFooter"
-msgstr "குழுஅடிப்பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
 msgid  "Sorting and Grouping..."
-msgstr "வரிசைபடுத்தலும் குழுவாக்குதலும்..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
 msgid  "Background Color..."
-msgstr "பின்புல வண்ணம்..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
 msgid  "Ruler..."
-msgstr "அளவுகொல்..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
 msgid  "Grid..."
-msgstr "பின்னல்..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
 msgid  "~Arrange"
-msgstr "~அடுக்கு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
 msgid  "Bring ~Forward"
-msgstr "மு~ன்னால் கொண்டுவா"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
 msgid  "Send Back~ward"
-msgstr "~பின்னால் கொண்டுசெல்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
 msgid  "~Object Resizing"
-msgstr "பொரு~ள் மாற்றளவாக்குதல்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to smallest width"
-msgstr "மி~கச்சிறிய அகலத்துடன் பொருத்து"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to greatest width"
-msgstr "~மிகப்பெரிய அகலத்துடன் பொருத்து"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to smallest height"
-msgstr "மிகச்சிறிய ~உயரத்துடன் பொருத்து"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to greatest height"
-msgstr "மிகப்பெரி~ய உயரத்துடன் பொருத்து"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
 msgid  "Section"
-msgstr "பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
 msgid  "Shrink"
-msgstr "சுருக்கு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
 msgid  "Shrink from top"
-msgstr "மேலேயிருந்து சுருக்கு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
 msgid  "Shrink from bottom"
-msgstr "கீழேயிருந்து சுருக்கு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
 msgid  "Distribution..."
-msgstr "வினியோகம்..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr "பண்புகள்..."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Add field:"
-msgstr "புலத்தைச் சேர்:"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
 msgid  "Filter"
-msgstr "வடிகட்டி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+#: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base Report"
-msgstr " - %PRODUCTNAME பேஸ் அறிக்கை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
 msgid  "Untitled"
-msgstr "தலைப்பிடப்படவில்லை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
 msgid  "Change Alignment"
-msgstr "வரிசைபடுத்தலை மாற்று"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
 msgid  "# Header"
-msgstr "# தலைப்பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
 msgid  "# Footer"
-msgstr "# அடிப்பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
 msgid  "Insert graphics"
-msgstr "வரைபடத்தை நுழை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
 msgid  "Delete"
-msgstr "அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
 msgid  "Function"
-msgstr "செயல்பாடு"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
 msgid  "An error occurred while creating the report."
-msgstr "அறிக்கையை உருவாக்கையில் ஒரு வழு ஏற்பட்டது."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
 msgid  "An exception of type $type$ was caught."
-msgstr "$type$ வகையான ஒரு விதிவிலக்கு பிடிபட்டது."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
 msgid  "Change font"
-msgstr "எழுத்துருவை மாற்று"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
 msgid  "Change page attributes"
-msgstr "பக்க இயற்பண்புகளை மாற்று"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+#: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Page Header/Footer"
-msgstr "பக்க தலைப்பகுதி/அடிப்பகுதியை நுழை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+#: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Page Header/Footer"
-msgstr "பக்க தலைப்பகுதி/அடிப்பகுதியை அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+#: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Column Header/Footer"
-msgstr "பத்தி தலைப்பகுதி/அடிப்பகுதியை நுழை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+#: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Column Header/Footer"
-msgstr "பத்தி தலைப்பகுதி/அடிப்பகுதியை அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+#: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Report Header/Footer"
-msgstr "அறிக்கை தலைப்பகுதி/அடிப்பகுதியை நுழை"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+#: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Report Header/Footer"
-msgstr "அறிக்கை தலைப்பகுதி/அடிப்பகுதியை அழி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
 msgid  "The report can not be executed unless it is bound to content."
-msgstr "அறிக்கை உள்ளடக்கத்துடன் கட்டப்படவில்லையானால் அதனைச் செயலாக்க முடியாது."
+msgstr ""
 
-#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr "அறிக்கையில் குறைந்தது ஒரு பொருளாவது நுழைக்கப்படவில்லையெனில் அதனை செயலாக்க முடியாது."
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
 msgid  "Shrink Section"
-msgstr "சுருக்கும் பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"
-msgstr "விவரம்"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
 msgid  "Page Header"
-msgstr "பக்க தலைப்பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
 msgid  "Page Footer"
-msgstr "பக்க அடிப்பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
 msgid  "Report Header"
-msgstr "அறிக்கை தலைப்பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
 msgid  "Report Footer"
-msgstr "அறிக்கை அடிப்பகுதி"
+msgstr ""
 
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
 msgid  "Insert"
-msgstr "நுழை"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
+msgid  "Detail"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
+msgid  "Page Header"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
+msgid  "Page Footer"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
+msgid  "Group Header"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
+msgid  "Group Footer"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
+msgid  "Report Header"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
+msgid  "Report Footer"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
+msgid  "The name '#1' already exists and can not be asssigned again."
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
+msgid  "The element is invalid."
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
+msgid  "Label field"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
+msgid  "Formatted field"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
+msgid  "Image control"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
+msgid  "Report"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
+msgid  "Shape"
+msgstr ""
+
+#: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
+msgid  "Fixed line"
+msgstr ""

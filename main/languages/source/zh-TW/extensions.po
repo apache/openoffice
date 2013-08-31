@@ -31,2550 +31,2550 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
 msgid  "Address Book Data Source Wizard"
-msgstr "通訊錄資料來源精靈"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
-msgid  "Address book type"
-msgstr "通訊錄類型"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
-msgid  "Connection Settings"
-msgstr "連線設定"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
-msgid  "Table selection"
-msgstr "資料表選取範圍"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
-msgid  "Field Assignment"
-msgstr "欄位指定"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
-msgid  "Data Source Title"
-msgstr "資料來源標題"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME 可讓您存取系統中存在的地址資料。若要執行此動作，必須在表格表單中為可使用的地址資料建立 %PRODUCTNAME 資料來源。\n\n這個精靈可以幫助您建立資料來源。"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
-msgid  "Please select the type of your external address book:"
-msgstr "請選擇一個外來通訊錄的類型："
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
-msgid  "Evolution"
-msgstr "Evolution"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
-msgid  "Groupwise"
-msgstr "Groupwise"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
-msgid  "Evolution LDAP"
-msgstr "Evolution LDAP"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
-msgid  "Mozilla / Netscape"
-msgstr "Mozilla / Netscape"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
-msgid  "Thunderbird"
-msgstr "Thunderbird"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
-msgid  "KDE address book"
-msgstr "KDE 通訊錄"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
-msgid  "Mac OS X address book"
-msgstr "Mac OS X 通訊錄"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
-msgid  "LDAP address data"
-msgstr "LDAP 地址資料"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
-msgid  "Outlook address book"
-msgstr "Outlook 通訊錄"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
-msgid  "Windows system address book"
-msgstr "Windows 系統通訊錄"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
-msgid  "Other external data source"
-msgstr "其它的資料來源"
-
-#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "新增一個資料來源還必須做其它的設定。\n\n按一下下方的按鈕，就會開啟一個對話方塊。在這個對話方塊之中就可以做所有未完成的設定。"
-
-#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
-msgid  "Settings"
-msgstr "設定"
-
-#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "無法和資料來源連線。\n在繼續執行指令之前，請檢查所有完成的設定，或者返回到上一頁，選擇另外一個地址資料來源。"
-
-#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr "已經選取的外部資料來源內含多個通訊錄。\n請選取其中一個主要使用的通訊錄："
-
-#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "要在範本之中正確使用通訊錄資料就必須讓 %PRODUCTNAME 知道哪些欄位含有何種資料。\n\n例如，可以在一個自訂名稱的欄位之内或在一個採用欄位名稱「EMail」，或「E-Mail」或「EM」欄位之内儲存電子郵件地址。\n\n按下方的按鈕，就會開啟一個提供設定資料來源的對話方塊。"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
-msgid  "Field Assignment"
-msgstr "指定欄位"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "您已經完成所有必須的 %PRODUCTNAME 整合通訊錄資料的設定。\n\n現在您只需要輸入 %PRODUCTNAME 用來登記和使用這個資料來源的名稱。"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
-msgid  "Location"
-msgstr "位置"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
-msgid  "Browse..."
-msgstr "瀏覽..."
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
-msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr "使此通訊錄對 %PRODUCTNAME 中的所有模組可用。"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
-msgid  "Address book name"
-msgstr "通訊錄名稱"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
-msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr "已經存在一個同名的資料來源。因為一個資料來源名稱必須是在資料庫範圍內是唯一的，請採用另外一個有效的名稱。"
-
-#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
-msgid  "Please select a type of address book."
-msgstr "請選擇一個合適的通訊錄類型。"
-
-#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
 msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
+msgid  "Address book type"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
+msgid  "Connection Settings"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
+msgid  "Table selection"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
+msgid  "Field Assignment"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
+msgid  "Data Source Title"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
+msgid  "Please select the type of your external address book:"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
+msgid  "Evolution"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
+msgid  "Groupwise"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
+msgid  "Evolution LDAP"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
+msgid  "Mozilla / Netscape"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
+msgid  "Thunderbird"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
+msgid  "KDE address book"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
+msgid  "Mac OS X address book"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
+msgid  "LDAP address data"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
+msgid  "Outlook address book"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
+msgid  "Windows system address book"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
+msgid  "Other external data source"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
+msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
+msgid  "Settings"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
+msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
+msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
+msgid  "Field Assignment"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
+msgid  "Location"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
+msgid  "Browse..."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
+msgid  "Address book name"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
+msgid  "Please select a type of address book."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
 msgid  "Addresses"
-msgstr "地址"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+#: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
 msgid  "Create Address Data Source"
-msgstr "建立地址資料來源"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+#: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr "無法連線到資料來源。"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+#: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
 msgid  "Please check the settings made for the data source."
-msgstr "請檢查資料來源的設定。"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+#: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
 msgid  "Address Data - Field Assignment"
-msgstr "通訊錄資料 - 指定欄位"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr "至今還未指定任何欄位。\n如果現在不指定欄位，也可以以後再做這個設定：\n按功能表 [檔案] - [範本] - [通訊錄資料來源...]。"
+#: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr ""
 
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
-msgid  "Table"
-msgstr "資料表"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
-msgid  "Search Key"
-msgstr "搜尋項目"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
-msgid  "AutoFilter"
-msgstr "自訂篩選"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
-msgid  "Standard Filter"
-msgstr "標準篩選"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
-msgid  "Remove Filter"
-msgstr "移除篩選"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
-msgid  "Column Arrangement"
-msgstr "編排欄"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
-msgid  "Data Source"
-msgstr "資料來源"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\\n"
-msgstr "無法指定下列欄名：\n"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
-msgid  "Article"
-msgstr "文章"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
-msgid  "Book"
-msgstr "書籍"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
-msgid  "Brochures"
-msgstr "小手冊"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
-msgid  "Conference proceedings"
-msgstr "研討會論文集"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
-msgid  "Book excerpt"
-msgstr "書籍文章摘要"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
-msgid  "Book excerpt with title"
-msgstr "含有標題的書籍文章摘要"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
-msgid  "Conference proceedings"
-msgstr "會議報告"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
-msgid  "Journal"
-msgstr "雜誌"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
-msgid  "Techn. documentation"
-msgstr "技術說明書"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
-msgid  "Thesis"
-msgstr "論文"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
-msgid  "Miscellaneous"
-msgstr "雜項"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
-msgid  "Dissertation"
-msgstr "博士學位論文"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
-msgid  "Conference proceedings"
-msgstr "會議報告"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
-msgid  "Research report"
-msgstr "研究報告"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
-msgid  "Unpublished"
-msgstr "尚未發佈"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
-msgid  "e-mail"
-msgstr "電子郵件"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
-msgid  "WWW document"
-msgstr "網頁文件"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
-msgid  "User-defined1"
-msgstr "自訂類型 1"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
-msgid  "User-defined2"
-msgstr "自訂類型 2"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
-msgid  "User-defined3"
-msgstr "自訂類型 3"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
-msgid  "User-defined4"
-msgstr "自訂類型 4"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
-msgid  "User-defined5"
-msgstr "自訂類型 5"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
-msgid  "General"
-msgstr "一般"
-
-#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
-msgid  "Insert Section..."
-msgstr "插入區段..."
-
-#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
-msgid  "Delete Section..."
-msgstr "刪除區段..."
-
-#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
-msgid  "Modify Name..."
-msgstr "修改名稱..."
-
-#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
-msgid  "~Short name"
-msgstr "簡短描述文(~S)"
-
-#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
-msgid  "~Type"
-msgstr "類型(~T)"
-
-#: source/bibliography/sections.src#ST_YEAR.String.Text
-msgid  "~Year"
-msgstr "年(~Y)"
-
-#: source/bibliography/sections.src#ST_AUTHOR.String.Text
-msgid  "Author(s)"
-msgstr "作者"
-
-#: source/bibliography/sections.src#ST_TITLE.String.Text
-msgid  "Tit~le"
-msgstr "標題(~L)"
-
-#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
-msgid  "~Publisher"
-msgstr "出版社(~P)"
-
-#: source/bibliography/sections.src#ST_ADDRESS.String.Text
-msgid  "A~ddress"
-msgstr "地址(~D)"
-
-#: source/bibliography/sections.src#ST_ISBN.String.Text
-msgid  "~ISBN"
-msgstr "~ISBN"
-
-#: source/bibliography/sections.src#ST_CHAPTER.String.Text
-msgid  "~Chapter"
-msgstr "章節(~C)"
-
-#: source/bibliography/sections.src#ST_PAGE.String.Text
-msgid  "Pa~ge(s)"
-msgstr "頁(~G)"
-
-#: source/bibliography/sections.src#ST_EDITOR.String.Text
-msgid  "Editor"
-msgstr "出版人"
-
-#: source/bibliography/sections.src#ST_EDITION.String.Text
-msgid  "Ed~ition"
-msgstr "版本(~I)"
-
-#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
-msgid  "~Book title"
-msgstr "書名(~B)"
-
-#: source/bibliography/sections.src#ST_VOLUME.String.Text
-msgid  "Volume"
-msgstr "冊"
-
-#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
-msgid  "Publication t~ype"
-msgstr "出版類型(~Y)"
-
-#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
-msgid  "Organi~zation"
-msgstr "社團組織(~Z)"
-
-#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
-msgid  "Instit~ution"
-msgstr "公共機構(~U)"
-
-#: source/bibliography/sections.src#ST_SCHOOL.String.Text
-msgid  "University"
-msgstr "大學"
-
-#: source/bibliography/sections.src#ST_REPORT.String.Text
-msgid  "Type of re~port"
-msgstr "報表的類型(~P)"
-
-#: source/bibliography/sections.src#ST_MONTH.String.Text
-msgid  "~Month"
-msgstr "月(~M)"
-
-#: source/bibliography/sections.src#ST_JOURNAL.String.Text
-msgid  "~Journal"
-msgstr "雜誌(~J)"
-
-#: source/bibliography/sections.src#ST_NUMBER.String.Text
-msgid  "Numb~er"
-msgstr "號碼(~E)"
-
-#: source/bibliography/sections.src#ST_SERIES.String.Text
-msgid  "Se~ries"
-msgstr "系列(~R)"
-
-#: source/bibliography/sections.src#ST_ANNOTE.String.Text
-msgid  "Ann~otation"
-msgstr "説明文(~O)"
-
-#: source/bibliography/sections.src#ST_NOTE.String.Text
-msgid  "~Note"
-msgstr "備註(~N)"
-
-#: source/bibliography/sections.src#ST_URL.String.Text
-msgid  "URL"
-msgstr "URL"
-
-#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
-msgid  "User-defined field ~1"
-msgstr "自訂欄位 ~1"
-
-#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
-msgid  "User-defined field ~2"
-msgstr "自訂欄位 ~2"
-
-#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
-msgid  "User-defined field ~3"
-msgstr "自訂欄位 ~3"
-
-#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
-msgid  "User-defined field ~4"
-msgstr "自訂欄位 ~4"
-
-#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
-msgid  "User-defined field ~5"
-msgstr "自訂欄位 ~5"
-
-#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
-msgid  "Column names"
-msgstr "欄名"
-
-#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
-msgid  "<none>"
-msgstr "<無>"
-
-#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
-msgid  "Column Layout for Table %1"
-msgstr "%1 資料表的欄位編排"
-
-#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
-msgid  "Choose Data Source"
-msgstr "選擇資料來源"
-
-#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
-msgid  "Entry"
-msgstr "條目"
-
-#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
+#: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Field selection:"
-msgstr "選擇欄位："
+msgstr ""
 
-#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
+#: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
 msgid  "Table;Query;Sql;Sql [Native]"
-msgstr "資料表;查詢;Sql;Sql [Native]"
+msgstr ""
 
-#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
+#: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
-msgstr "文獻資料庫"
+msgstr ""
 
-#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
+#: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
 msgid  "Do you want to edit the column arrangement?"
-msgstr "您要編排欄？"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
-msgid  "Table Selection"
-msgstr "選擇資料表"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
-msgid  "Control"
-msgstr "控制項"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "在右邊您能夠看到表單資料來源的所有資料表。\n\n\n請選擇一些用於組成清單內容的基本資料的資料表："
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
-msgid  "Field Selection"
-msgstr "選擇欄位"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
-msgid  "Existing fields"
-msgstr "現存的欄位"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
-msgid  "Display field"
-msgstr "顯示欄位"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
-msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr "選擇的欄位內容會顯示在組合欄位的清單之中。"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
-msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr "如果連結的欄位相符，所選擇的欄位內容就會顯示在清單方塊之中。"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
-msgid  "Field Link"
-msgstr "欄位連結"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
-msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr "在這裡選擇其內容必須相同的欄位，用於在顯示欄位內顯示相關的值。"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
-msgid  "Field from the ~Value Table"
-msgstr "值資料表的欄位(~V)"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
-msgid  "Field from the ~List Table"
-msgstr "清單資料表的欄位(~L)"
-
-#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
-msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr "您能夠將組合方塊的值存入一個資料庫欄位或用於顯示。"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
-msgid  "Field Selection"
-msgstr "選擇欄位"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
-msgid  "Table element"
-msgstr "資料表元件"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
-msgid  "Existing fields"
-msgstr "現存的欄位"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
-msgid  "Selected fields"
-msgstr "選中的欄位"
-
-#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
-msgid  " (Date)"
-msgstr "(日期)"
-
-#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
-msgid  " (Time)"
-msgstr " (時間)"
-
-#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
-msgid  "Group Element Wizard"
-msgstr "群組元素精靈"
-
-#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
-msgid  "Table Element Wizard"
-msgstr "資料表元素精靈"
-
-#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
-msgid  "List Box Wizard"
-msgstr "清單方塊精靈"
-
-#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
-msgid  "Combo Box Wizard"
-msgstr "組合方塊精靈"
-
-#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
-msgid  "The table connection to the data source could not be established."
-msgstr "無法連線到資料來源。"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
-msgid  "Data"
-msgstr "資料"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
-msgid  "Data"
-msgstr "資料"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "目前從屬於這個表單的控制項尚未(或沒有完全)和一個資料來源連線。\n\n請您選擇一個資料來源和一個資料表。\n\n\n請注意：離開這個頁面時，所有的新設定就會立刻生效。"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
-msgid  "~Data source:"
-msgstr "資料來源(~D)："
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
-msgid  "~..."
-msgstr "~..."
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
-msgid  "~Table / Query:"
-msgstr "資料表／查詢(~T)："
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
-msgid  "Database Field"
-msgstr "資料庫欄位"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
-msgid  "Do you want to save the value in a database field?"
-msgstr "您要將這個值儲存到一個資料庫欄位？"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
-msgid  "~Yes, I want to save it in the following database field:"
-msgstr "是，在下列的資料庫欄位(~Y)："
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
-msgid  "~No, I only want to save the value in the form."
-msgstr "否，值僅存入一個表單內(~N)。"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
-msgid  "Form"
-msgstr "表單"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
-msgid  "Data source"
-msgstr "資料來源"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
-msgid  "Content type"
-msgstr "內容類型"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
-msgid  "Content"
-msgstr "內容"
-
-#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
-msgid  "Table"
-msgstr "資料表"
-
-#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
-msgid  "Query"
-msgstr "查詢"
-
-#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
-msgid  "SQL command"
-msgstr "SQL 指令"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
-msgid  "Data"
-msgstr "資料"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
-msgid  "Which ~names do you want to give the option fields?"
-msgstr "要使用的選項欄位的名稱(~N)？"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
-msgid  "~Option fields"
-msgstr "選項欄位(~O)"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
-msgid  "Default Field Selection"
-msgstr "選擇預設欄位"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
-msgid  "Should one option field be selected as a default?"
-msgstr "要選擇一個選項欄位做為預設？"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
-msgid  "~Yes, the following:"
-msgstr "是，選擇以下的(~Y)："
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
-msgid  "No, one particular field is not going to be selected."
-msgstr "否，不要選擇任何欄位。"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
-msgid  "Field Values"
-msgstr "欄位值"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
-msgid  "When you select an option, the option group is given a specific value."
-msgstr "如果選擇了一個選項，選項群組就會採用某一設定好的值。"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
-msgid  "Which ~value do you want to assign to each option?"
-msgstr "要指定每個選項使用的值(~V)？"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
-msgid  "~Option fields"
-msgstr "選項欄位(~O)"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
-msgid  "Create Option Group"
-msgstr "新建選項群組"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
-msgid  "Which ~caption is to be given to your option group?"
-msgstr "選項群組的標題(~C)？"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
-msgid  "These were all details needed to create the option group."
-msgstr "這些是用於製作選項群組所需的全部的設定資料。"
-
-#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
-msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr "您能夠在一個資料庫欄位內儲存選項群組的值，以備之後使用。"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
-msgid  "<< Back"
-msgstr "<< 返回"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
-msgid  "Next >>"
-msgstr "繼續 >>"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
-msgid  "Accept"
-msgstr "接受"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
-msgid  "Finish"
-msgstr "完成"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
-msgid  " - Software License Agreement"
-msgstr " - 軟體使用同意書"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
-msgid  "- User Data"
-msgstr "- 使用者資料"
-
-#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
-msgid  "Welcome"
-msgstr "歡迎"
-
-#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "歡迎使用 %PRODUCTNAME %PRODUCTVERSION OEM\n\n若要啟動 %PRODUCTNAME %PRODUCTVERSION OEM，請在許可授權文字後面出現的對話方塊中輸入您的個人資料。在讀我檔案中包含重要的資訊，其位置在 %PRODUCTNAME 產品目錄中。請仔細閱讀這些檔案。您也可以在 Oracle 網站找到詳細資訊：\n\nhttp://www.oracle.com/us/products/applications/open-office"
-
-#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
-msgid  "License Agreement"
-msgstr "使用許可協定"
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
-msgid  "Please follow these steps to proceed with the installation:"
-msgstr "請遵循以下步驟以繼續安裝："
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
-msgid  "1."
-msgstr "1."
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "閱讀整份許可授權合約。請使用捲軸或此對話方塊中的 '%PAGEDOWN' 按鈕來檢視完整的許可授權合約內容。"
-
-#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
-msgid  "Page Down"
-msgstr "向下瀏覽"
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
-msgid  "2."
-msgstr "2."
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
-msgid  "Accept the License Agreement."
-msgstr "接受許可證協議。"
-
-#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
-msgid  "I accept the terms of the Agreement."
-msgstr "我接受協議的條款。"
-
-#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
-msgid  "~Accept"
-msgstr "接受(~A)"
-
-#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
-msgid  "Decline"
-msgstr "拒絕"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
-msgid  "Tab Order"
-msgstr "定位順序"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
-msgid  "Controls"
-msgstr "控制"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
-msgid  "Move Up"
-msgstr "上移"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
-msgid  "Move Down"
-msgstr "下移"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
-msgid  "Automatic Sort"
-msgstr "自動排序"
-
-#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
-msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr "這些是全部的控制項，它們能夠被當作分類 $control_class$ $control_name$ 標籤欄位。"
-
-#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
-msgid  "~No assignment"
-msgstr "無法分類(~N)"
-
-#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
-msgid  "Label Field Selection"
-msgstr "選擇標籤欄位"
-
-#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
-msgid  "Forms"
-msgstr "表單"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "您要刪除模型中的資料類型「#type#」嗎？\n請注意，這將會影響所有連結到此資料類型的控制項。"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
-msgid  "Button"
-msgstr "按鈕"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
-msgid  "Option Button"
-msgstr "選項按鈕"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
-msgid  "Check Box"
-msgstr "核取方塊"
+msgstr ""
+
+#: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
+msgid  "Column names"
+msgstr ""
+
+#: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
+msgid  "<none>"
+msgstr ""
+
+#: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
+msgid  "Column Layout for Table %1"
+msgstr ""
+
+#: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
+msgid  "Choose Data Source"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-msgid  "Label Field"
-msgstr "標籤欄位"
+#: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
+msgid  "Entry"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
-msgid  "Group Box"
-msgstr "群組方塊"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
+msgid  "The following column names could not be assigned:\n"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
-msgid  "Text Box"
-msgstr "文字方塊"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
+msgid  "Article"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-msgid  "Formatted Field"
-msgstr "格式化的欄位"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
+msgid  "Book"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
-msgid  "List Box"
-msgstr "清單方塊"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
+msgid  "Brochures"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
-msgid  "Combo Box"
-msgstr "群組方塊"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
+msgid  "Conference proceedings"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
-msgid  "Image Button"
-msgstr "圖型按鈕"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
+msgid  "Book excerpt"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
-msgid  "Hidden Control"
-msgstr "隱入的控制項"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
+msgid  "Book excerpt with title"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
-msgid  "Control (unknown type)"
-msgstr "控制項(不明的類型)"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
+msgid  "Conference proceedings"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-msgid  "Image Control"
-msgstr "圖式控制項"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
+msgid  "Journal"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
-msgid  "File Selection"
-msgstr "選擇檔案"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
+msgid  "Techn. documentation"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
-msgid  "Date Field"
-msgstr "日期欄位"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
+msgid  "Thesis"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
-msgid  "Time Field"
-msgstr "時間欄位"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
+msgid  "Miscellaneous"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
-msgid  "Numeric Field"
-msgstr "數字欄位"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
+msgid  "Dissertation"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
-msgid  "Currency Field"
-msgstr "貨幣欄位"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
+msgid  "Conference proceedings"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
-msgid  "Pattern Field"
-msgstr "樣式欄位"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
+msgid  "Research report"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
-msgid  "Table Control "
-msgstr "資料表控制項 "
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
+msgid  "Unpublished"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
-msgid  "Link fields"
-msgstr "連結欄位"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
+msgid  "e-mail"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
-msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr "子表單可以用來顯示有關主表單目前記錄的詳細資料。若要執行上述動作，您可以指定子表單中的哪一欄要符合主表單中的哪一欄。"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
+msgid  "WWW document"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
-msgid  "Suggest"
-msgstr "建議"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
+msgid  "User-defined1"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
-msgid  "Sub Form"
-msgstr "子表單"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
+msgid  "User-defined2"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
-msgid  "Master Form"
-msgstr "主表單"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
+msgid  "User-defined3"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
-msgid  "The columns of '#' could not be retrieved."
-msgstr "無法擷取 '#' 的欄。"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
+msgid  "User-defined4"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
-msgid  "Default"
-msgstr "預設"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
+msgid  "User-defined5"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr "一般"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
+#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
+msgid  "Insert Section..."
+msgstr ""
+
+#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
+msgid  "Delete Section..."
+msgstr ""
+
+#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
+msgid  "Modify Name..."
+msgstr ""
+
+#: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
+msgid  "~Short name"
+msgstr ""
+
+#: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
+msgid  "~Type"
+msgstr ""
+
+#: bibliography/sections.src#ST_YEAR.STRING.TEXT
+msgid  "~Year"
+msgstr ""
+
+#: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
+msgid  "Author(s)"
+msgstr ""
+
+#: bibliography/sections.src#ST_TITLE.STRING.TEXT
+msgid  "Tit~le"
+msgstr ""
+
+#: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
+msgid  "~Publisher"
+msgstr ""
+
+#: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
+msgid  "A~ddress"
+msgstr ""
+
+#: bibliography/sections.src#ST_ISBN.STRING.TEXT
+msgid  "~ISBN"
+msgstr ""
+
+#: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
+msgid  "~Chapter"
+msgstr ""
+
+#: bibliography/sections.src#ST_PAGE.STRING.TEXT
+msgid  "Pa~ge(s)"
+msgstr ""
+
+#: bibliography/sections.src#ST_EDITOR.STRING.TEXT
+msgid  "Editor"
+msgstr ""
+
+#: bibliography/sections.src#ST_EDITION.STRING.TEXT
+msgid  "Ed~ition"
+msgstr ""
+
+#: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
+msgid  "~Book title"
+msgstr ""
+
+#: bibliography/sections.src#ST_VOLUME.STRING.TEXT
+msgid  "Volume"
+msgstr ""
+
+#: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
+msgid  "Publication t~ype"
+msgstr ""
+
+#: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
+msgid  "Organi~zation"
+msgstr ""
+
+#: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
+msgid  "Instit~ution"
+msgstr ""
+
+#: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
+msgid  "University"
+msgstr ""
+
+#: bibliography/sections.src#ST_REPORT.STRING.TEXT
+msgid  "Type of re~port"
+msgstr ""
+
+#: bibliography/sections.src#ST_MONTH.STRING.TEXT
+msgid  "~Month"
+msgstr ""
+
+#: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
+msgid  "~Journal"
+msgstr ""
+
+#: bibliography/sections.src#ST_NUMBER.STRING.TEXT
+msgid  "Numb~er"
+msgstr ""
+
+#: bibliography/sections.src#ST_SERIES.STRING.TEXT
+msgid  "Se~ries"
+msgstr ""
+
+#: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
+msgid  "Ann~otation"
+msgstr ""
+
+#: bibliography/sections.src#ST_NOTE.STRING.TEXT
+msgid  "~Note"
+msgstr ""
+
+#: bibliography/sections.src#ST_URL.STRING.TEXT
+msgid  "URL"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
+msgid  "User-defined field ~1"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
+msgid  "User-defined field ~2"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
+msgid  "User-defined field ~3"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
+msgid  "User-defined field ~4"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
+msgid  "User-defined field ~5"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
+msgid  "Table"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
+msgid  "Search Key"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
+msgid  "AutoFilter"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
+msgid  "Standard Filter"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
+msgid  "Remove Filter"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
+msgid  "Column Arrangement"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
+msgid  "Data Source"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr "資料"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
-msgid  "No"
-msgstr "否"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
+msgid  "Data"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
-msgid  "Yes"
-msgstr "是"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
-msgid  "Help"
-msgstr "說明"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
+msgid  "~Data source:"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
-msgid  "<Embedded-Image>"
-msgstr "<內嵌式影像>"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
+msgid  "~..."
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
-msgid  "Text"
-msgstr "文字"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
+msgid  "~Table / Query:"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
-msgid  "Edit mask"
-msgstr "輸入遮罩"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
+msgid  "Database Field"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
-msgid  "Literal mask"
-msgstr "字元遮罩"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
+msgid  "Do you want to save the value in a database field?"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
-msgid  "Read-only"
-msgstr "唯讀"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
-msgid  "Enabled"
-msgstr "已啟用"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
+msgid  "~No, I only want to save the value in the form."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
-msgid  "Visible"
-msgstr "可見"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
+msgid  "Form"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
-msgid  "AutoFill"
-msgstr "自動完成"
-
-#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
-msgid  "Line count"
-msgstr "列數"
-
-#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
-msgid  "Max. text length"
-msgstr "最長的文字"
-
-#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
-msgid  "Spin Button"
-msgstr "微調按鈕"
-
-#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
-msgid  "Strict format"
-msgstr "檢查格式"
-
-#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
-msgid  "Thousands separator"
-msgstr "千位分隔符"
-
-#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
-msgid  "Printable"
-msgstr "可列印"
-
-#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
-msgid  "URL"
-msgstr "URL"
-
-#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
-msgid  "Frame"
-msgstr "訊框"
-
-#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
-msgid  "Help text"
-msgstr "說明文"
-
-#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
-msgid  "Help URL"
-msgstr "說明 URL"
-
-#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
-msgid  "Additional information"
-msgstr "附加資訊"
-
-#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
-msgid  "Password character"
-msgstr "密碼字元"
-
-#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
-msgid  "Tristate"
-msgstr "三重狀態"
-
-#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
-msgid  "Empty string is NULL"
-msgstr "空格字元是 NULL"
-
-#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
-msgid  "Decimal accuracy"
-msgstr "小數點位數"
-
-#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
-msgid  "Graphics"
-msgstr "圖形"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
-msgid  "Default selection"
-msgstr "預設選擇"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
-msgid  "Default button"
-msgstr "預設按鈕"
-
-#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
-msgid  "Label Field"
-msgstr "標籤欄位"
-
-#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
-msgid  "Label"
-msgstr "標題"
-
-#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
-msgid  "Alignment"
-msgstr "對齊"
-
-#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
-msgid  "Vert. Alignment"
-msgstr "垂直對齊"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
-msgid  "Top"
-msgstr "上方"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
-msgid  "Middle"
-msgstr "置中"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
-msgid  "Bottom"
-msgstr "下方"
-
-#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
-msgid  "Graphics alignment"
-msgstr "圖形對齊"
-
-#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
-msgid  "Font"
-msgstr "字型"
-
-#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
-msgid  "Background color"
-msgstr "背景顏色"
-
-#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
-msgid  "Border"
-msgstr "框"
-
-#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
-msgid  "Icon size"
-msgstr "圖示大小"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
-msgid  "Small"
-msgstr "小型"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
-msgid  "Large"
-msgstr "大型"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
-msgid  "Positioning"
-msgstr "定位"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
-msgid  "Navigation"
-msgstr "瀏覽"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
-msgid  "Acting on a record"
-msgstr "按照記錄進行"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
-msgid  "Filtering / Sorting"
-msgstr "篩選 / 排序"
-
-#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
-msgid  "Horizontal scroll bar"
-msgstr "水平式捲軸"
-
-#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
-msgid  "Vertical scroll bar"
-msgstr "垂直式捲軸"
-
-#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
-msgid  "Word break"
-msgstr "文字換行"
-
-#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
-msgid  "Multiline input"
-msgstr "多行"
-
-#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
-msgid  "Multiselection"
-msgstr "多重選取"
-
-#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
-msgid  "Name"
-msgstr "名稱"
-
-#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
-msgid  "Tab order"
-msgstr "定位順序"
-
-#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
-msgid  "Mouse wheel scroll"
-msgstr "滑鼠滾輪捲動"
-
-#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
-msgid  "Filter"
-msgstr "篩選"
-
-#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
-msgid  "Sort"
-msgstr "排序"
-
-#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
-msgid  "Record marker"
-msgstr "資料標記"
-
-#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
-msgid  "Filter proposal"
-msgstr "建議使用篩選"
-
-#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
-msgid  "Navigation bar"
-msgstr "瀏覽位址列"
-
-#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
-msgid  "Cycle"
-msgstr "循環"
-
-#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
-msgid  "Tabstop"
-msgstr "定位鍵"
-
-#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
-msgid  "Data field"
-msgstr "資料欄位"
-
-#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
-msgid  "Dropdown"
-msgstr "可擴展"
-
-#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
-msgid  "Bound field"
-msgstr "固定的欄位"
-
-#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
-msgid  "List content"
-msgstr "清單內容"
-
-#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
-msgid  "Type of list contents"
-msgstr "清單內容的類型"
-
-#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
-msgid  "Content"
-msgstr "內容"
-
-#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
-msgid  "Content type"
-msgstr "內容類型"
-
-#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
-msgid  "Allow additions"
-msgstr "新增資料"
-
-#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
-msgid  "Allow deletions"
-msgstr "允許刪除"
-
-#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
-msgid  "Allow modifications"
-msgstr "修改資料"
-
-#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
-msgid  "Add data only"
-msgstr "僅增加資料"
-
-#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
 msgid  "Data source"
-msgstr "資料來源"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
-msgid  "Link master fields"
-msgstr "連結到"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
+msgid  "Content type"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
-msgid  "Link slave fields"
-msgstr "連結到"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
+msgid  "Content"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
-msgid  "Value min."
-msgstr "最小值"
-
-#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
-msgid  "Value max."
-msgstr "最大值"
-
-#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
-msgid  "Incr./decrement value"
-msgstr "區間"
-
-#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
-msgid  "Currency symbol"
-msgstr "貨幣符號"
-
-#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
-msgid  "Date min."
-msgstr "最短日期"
-
-#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
-msgid  "Date max."
-msgstr "最長日期"
-
-#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
-msgid  "Date format"
-msgstr "日期格式"
-
-#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
-msgid  "Selection"
-msgstr "選取"
-
-#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
-msgid  "Time min."
-msgstr "最短時間"
-
-#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
-msgid  "Time max."
-msgstr "最長時間"
-
-#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
-msgid  "Time format"
-msgstr "時間格式"
-
-#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
-msgid  "Prefix symbol"
-msgstr "前置符號"
-
-#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
-msgid  "Value"
-msgstr "值"
-
-#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
-msgid  "Formatting"
-msgstr "格式化"
-
-#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
-msgid  "Class ID"
-msgstr "程式類 ID"
-
-#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
-msgid  "Height"
-msgstr "高度"
-
-#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
-msgid  "Width"
-msgstr "寬度"
-
-#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
-msgid  "List index"
-msgstr "清單索引"
-
-#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
-msgid  "Row height"
-msgstr "列高"
-
-#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
-msgid  "Fill color"
-msgstr "充填顏色"
-
-#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
-msgid  "Line color"
-msgstr "線條顏色"
-
-#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
-msgid  "Reference value (on)"
-msgstr "參照值 (開啟)"
-
-#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
-msgid  "Reference value (off)"
-msgstr "參照值 (關閉)"
-
-#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
-msgid  "List entries"
-msgstr "清單項目"
-
-#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
-msgid  "Action"
-msgstr "動作"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
-msgid  "URL"
-msgstr "URL"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
-msgid  "Type of submission"
-msgstr "提交的類型"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
-msgid  "Default status"
-msgstr "預設狀態"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
-msgid  "Submission encoding"
-msgstr "提交時執行編碼處理"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
-msgid  "Default value"
-msgstr "預設值"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
-msgid  "Default text"
-msgstr "預設文字"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
-msgid  "Default date"
-msgstr "預設日期"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
-msgid  "Default time"
-msgstr "預設時間"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
-msgid  "Frame"
-msgstr "訊框"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
-msgid  "Without frame"
-msgstr "無框"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
-msgid  "3D look"
-msgstr "3D 外觀"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
-msgid  "Flat"
-msgstr "平型"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
-msgid  "Valuelist"
-msgstr "值清單"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr "資料表"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr "查詢"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
-msgid  "Sql"
-msgstr "Sql"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
-msgid  "Sql [Native]"
-msgstr "Sql [原生]"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
-msgid  "Tablefields"
-msgstr "資料表欄位"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
-msgid  "Left"
-msgstr "左"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
-msgid  "Center"
-msgstr "中"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
-msgid  "Right"
-msgstr "右"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
-msgid  "None"
-msgstr "無"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
-msgid  "Submit form"
-msgstr "提交表單"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
-msgid  "Reset form"
-msgstr "重設表單"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
-msgid  "Open document/web page"
-msgstr "開啟文件/網頁"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
-msgid  "First record"
-msgstr "第一個資料條目"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
-msgid  "Previous record"
-msgstr "前一個資料條目"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
-msgid  "Next record"
-msgstr "下一個資料條目"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
-msgid  "Last record"
-msgstr "最後一個資料條目"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
-msgid  "Save record"
-msgstr "儲存記錄"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
-msgid  "Undo data entry"
-msgstr "復原資料項目"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
-msgid  "New record"
-msgstr "新資料條目"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
-msgid  "Delete record"
-msgstr "刪除記錄"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
-msgid  "Refresh form"
-msgstr "更新表單"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
-msgid  "Get"
-msgstr "取得"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
-msgid  "Post"
-msgstr "張貼"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
-msgid  "URL"
-msgstr "URL"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
-msgid  "Multipart"
-msgstr "多重"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
-msgid  "Text"
-msgstr "文字"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
-msgid  "Standard (short)"
-msgstr "標準 (短)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
-msgid  "Standard (short YY)"
-msgstr "標準 (短 YY)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
-msgid  "Standard (short YYYY)"
-msgstr "標準 (短 YYYY)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
-msgid  "Standard (long)"
-msgstr "標準 (長)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
-msgid  "DD/MM/YY"
-msgstr "DD/MM/YY"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
-msgid  "MM/DD/YY"
-msgstr "MM/DD/YY"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
-msgid  "YY/MM/DD"
-msgstr "YY/MM/DD"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
-msgid  "DD/MM/YYYY"
-msgstr "DD/MM/YYYY"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
-msgid  "MM/DD/YYYY"
-msgstr "MM/DD/YYYY"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
-msgid  "YYYY/MM/DD"
-msgstr "YYYY/MM/DD"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
-msgid  "YY-MM-DD"
-msgstr "YY-MM-DD"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
-msgid  "YYYY-MM-DD"
-msgstr "YYYY-MM-DD"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
-msgid  "13:45"
-msgstr "13:45"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
-msgid  "13:45:00"
-msgstr "13:45:00"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
-msgid  "01:45 PM"
-msgstr "下午 01:45"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
-msgid  "01:45:00 PM"
-msgstr "下午 01:45:00"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
-msgid  "Not Selected"
-msgstr "未選取"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
-msgid  "Selected"
-msgstr "已選取"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
-msgid  "Not Defined"
-msgstr "未定義"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
-msgid  "All records"
-msgstr "全部資料條目"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
-msgid  "Active record"
-msgstr "目前的資料條目"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
-msgid  "Current page"
-msgstr "目前頁面"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
-msgid  "No"
-msgstr "否"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
-msgid  "Yes"
-msgstr "是"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
-msgid  "Parent Form"
-msgstr "父表單"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
-msgid  "None"
-msgstr "無"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
-msgid  "Single"
-msgstr "單一"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
-msgid  "Multi"
-msgstr "多個"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
-msgid  "Range"
-msgstr "範圍"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
-msgid  "Fill parameters"
-msgstr "填充參數"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
-msgid  "Execute action"
-msgstr "執行動作"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
-msgid  "After updating"
-msgstr "更新之後"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
-msgid  "Before updating"
-msgstr "在更新之前"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
-msgid  "Before record action"
-msgstr "資料條目變更之前"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
-msgid  "After record action"
-msgstr "在編輯資料條目之後"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
-msgid  "Confirm deletion"
-msgstr "確認刪除"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
-msgid  "Error occurred"
-msgstr "發生一個錯誤"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
-msgid  "When receiving focus"
-msgstr "在瞄準時"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
-msgid  "When losing focus"
-msgstr "在偏離目標時"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
-msgid  "Item status changed"
-msgstr "狀態已經變更"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
-msgid  "Key pressed"
-msgstr "按住按鍵"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
-msgid  "Key released"
-msgstr "放開按鍵"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
-msgid  "When loading"
-msgstr "在載入時"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
-msgid  "Before reloading"
-msgstr "在重新載入之前"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
-msgid  "When reloading"
-msgstr "在重新載入時"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
-msgid  "Mouse moved while key pressed"
-msgstr "按住滑鼠按鍵移動"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
-msgid  "Mouse inside"
-msgstr "滑鼠進入"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
-msgid  "Mouse outside"
-msgstr "滑鼠移出"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
-msgid  "Mouse moved"
-msgstr "滑鼠移動"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
-msgid  "Mouse button pressed"
-msgstr "按住滑鼠鍵"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
-msgid  "Mouse button released"
-msgstr "放開滑鼠鍵"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
-msgid  "Before record change"
-msgstr "在變更資料條目之前"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
-msgid  "After record change"
-msgstr "變更資料項目之後"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
-msgid  "After resetting"
-msgstr "重設之後"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
-msgid  "Prior to reset"
-msgstr "在重設之前"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
-msgid  "Approve action"
-msgstr "核准動作"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
-msgid  "Before submitting"
-msgstr "提交之前"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
-msgid  "Text modified"
-msgstr "文字已經修改"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
-msgid  "Before unloading"
-msgstr "在退卸之前"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
-msgid  "When unloading"
-msgstr "在退卸時"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
-msgid  "Changed"
-msgstr "已經修改"
-
-#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
-msgid  "Events"
-msgstr "動作"
-
-#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
-msgid  "Analyze SQL command"
-msgstr "分析 SQL 指令"
-
-#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
-msgid  "PositionX"
-msgstr "位置X"
-
-#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
-msgid  "PositionY"
-msgstr "位置Y"
-
-#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
-msgid  "Title"
-msgstr "標題"
-
-#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
-msgid  "Page (step)"
-msgstr "頁 (步)"
-
-#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
-msgid  "Progress value"
-msgstr "進展的值"
-
-#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
-msgid  "Progress value min."
-msgstr "最小的進展值"
-
-#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
-msgid  "Progress value max."
-msgstr "最大的進展值"
-
-#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
-msgid  "Scroll value"
-msgstr "捲動值"
-
-#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
-msgid  "Scroll value max."
-msgstr "最大的捲動值"
-
-#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
-msgid  "Scroll value min."
-msgstr "捲動值 (最小值)"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
-msgid  "Default scroll value"
-msgstr "預設捲動值"
-
-#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
-msgid  "Small change"
-msgstr "少量變更"
-
-#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
-msgid  "Large change"
-msgstr "大量變更"
-
-#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
-msgid  "Delay"
-msgstr "延遲"
-
-#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
-msgid  "Repeat"
-msgstr "重複"
-
-#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
-msgid  "Visible size"
-msgstr "可見的大小"
-
-#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
-msgid  "Orientation"
-msgstr "方向"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
-msgid  "Horizontal"
-msgstr "水平"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
-msgid  "Vertical"
-msgstr "垂直"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
-msgid  "While adjusting"
-msgstr "在調整時"
-
-#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
-msgid  "Date"
-msgstr "日期"
-
-#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
-msgid  "State"
-msgstr "狀態"
-
-#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
-msgid  "Time"
-msgstr "時間"
-
-#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
-msgid  "Scale"
-msgstr "顯示比例"
-
-#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
-msgid  "Button type"
-msgstr "按鈕類型"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
-msgid  "Default"
-msgstr "預設"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
-msgid  "OK"
-msgstr "確定"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
-msgid  "Cancel"
-msgstr "取消"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
-msgid  "Help"
-msgstr "說明"
-
-#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr "無法連線到資料來源 \"$name$\"。"
-
-#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
-msgid  "Text"
-msgstr "文字"
-
-#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
-msgid  "Linked cell"
-msgstr "連結的儲存格"
-
-#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
-msgid  "Source cell range"
-msgstr "來源儲存格範圍"
-
-#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
-msgid  "Contents of the linked cell"
-msgstr "連結儲存格的內容"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
-msgid  "The selected entry"
-msgstr "選取的項目"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
-msgid  "Position of the selected entry"
-msgstr "選取的項目位置"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
-msgid  "Scrollbars"
-msgstr "捲動軸"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
-msgid  "Single-line"
-msgstr "單行"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
-msgid  "Multi-line"
-msgstr "多行"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
-msgid  "Multi-line with formatting"
-msgstr "多行格式"
-
-#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
-msgid  "Symbol color"
-msgstr "符號色彩"
-
-#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
-msgid  "Text lines end with"
-msgstr "文字行結尾為"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
-msgid  "LF (Unix)"
-msgstr "LF (Unix)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
-msgid  "CR+LF (Windows)"
-msgstr "CR+LF (Windows)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
-msgid  "None"
-msgstr "無"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
-msgid  "Horizontal"
-msgstr "水平"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
-msgid  "Vertical"
-msgstr "垂直"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
-msgid  "Both"
-msgstr "兩者"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
-msgid  "Table"
-msgstr "資料表"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
-msgid  "Query"
-msgstr "查詢"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
-msgstr "SQL 指令"
-
-#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
-msgid  "Toggle"
-msgstr "切換"
-
-#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
-msgid  "Take Focus on Click"
-msgstr "按一下以取得焦點"
-
-#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
-msgid  "Hide selection"
-msgstr "隱藏選取"
-
-#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
-msgid  "Style"
-msgstr "樣式"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
-msgid  "3D"
-msgstr "3D"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
-msgid  "Flat"
-msgstr "平坦"
-
-#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
-msgid  "Border color"
-msgstr "邊界顏色"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
-msgid  "Left top"
-msgstr "左上"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
-msgid  "Left centered"
-msgstr "左中"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
-msgid  "Left bottom"
-msgstr "左下"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
-msgid  "Right top"
-msgstr "右上"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
-msgid  "Right centered"
-msgstr "右中"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
-msgid  "Right bottom"
-msgstr "右下"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
-msgid  "Above left"
-msgstr "左上方"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
-msgid  "Above centered"
-msgstr "中上方"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
-msgid  "Above right"
-msgstr "右上方"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
-msgid  "Below left"
-msgstr "左下方"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
-msgid  "Below centered"
-msgstr "中下方"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
-msgid  "Below right"
-msgstr "右下方"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
-msgid  "Centered"
-msgstr "置中"
-
-#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
-msgid  "Wrap text automatically"
-msgstr "文字自動換行"
-
-#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
-msgid  "Text type"
-msgstr "文字類型"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
-msgid  "Hide"
-msgstr "隱藏"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
-msgid  "Show"
-msgstr "顯示"
-
-#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
-msgid  "XML data model"
-msgstr "XML 資料模型"
-
-#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
-msgid  "Binding expression"
-msgstr "連結表示式"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
-msgid  "Required"
-msgstr "必要"
-
-#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
-msgid  "List entry source"
-msgstr "列出項目來源"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
-msgid  "Relevant"
-msgstr "相關的"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
-msgid  "Read-only"
-msgstr "唯讀"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
-msgid  "Constraint"
-msgstr "限制"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
-msgid  "Calculation"
-msgstr "計算"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
-msgid  "Data type"
-msgstr "資料類型"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
-msgid  "Whitespaces"
-msgstr "空白"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
-msgid  "Preserve"
-msgstr "保留"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
-msgid  "Replace"
-msgstr "取代"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
-msgid  "Collapse"
-msgstr "摺疊"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
-msgid  "Pattern"
-msgstr "樣式"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
-msgid  "Length"
-msgstr "長度"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
-msgid  "Length (at least)"
-msgstr "長度 (至少)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
-msgid  "Length (at most)"
-msgstr "長度 (至多)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
-msgid  "Digits (total)"
-msgstr "位數 (總數)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
-msgid  "Digits (fraction)"
-msgstr "位數 (分數)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
-msgid  "Max. (inclusive)"
-msgstr "最大(包含)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
-msgid  "Max. (exclusive)"
-msgstr "最大(不包含)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
-msgid  "Min. (inclusive)"
-msgstr "最小(包含)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
-msgid  "Min. (exclusive)"
-msgstr "最小(不包含)"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
-msgid  "Submission"
-msgstr "提交"
-
-#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
-msgid  "Binding"
-msgstr "連結"
-
-#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
-msgid  "Selection type"
-msgstr "選擇類型"
-
-#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
-msgid  "Root displayed"
-msgstr "顯示的根目錄"
-
-#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
-msgid  "Show handles"
-msgstr "顯示控點"
-
-#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
-msgid  "Show root handles"
-msgstr "顯示根控點"
-
-#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
-msgid  "Editable"
-msgstr "可編輯"
-
-#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
-msgid  "Invokes stop node editing"
-msgstr "呼叫 stop 節點編輯"
-
-#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
-msgid  "With title bar"
-msgstr "含標題列"
-
-#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
-msgid  "No Label"
-msgstr "無標籤"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
+msgid  "Group Element Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
+msgid  "Table Element Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
+msgid  "List Box Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
+msgid  "Combo Box Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
+msgid  "The table connection to the data source could not be established."
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
+msgid  "Field Selection"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
+msgid  "Table element"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
+msgid  "Existing fields"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
+msgid  "Selected fields"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
+msgid  " (Date)"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
+msgid  " (Time)"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
+msgid  "Data"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
+msgid  "Which ~names do you want to give the option fields?"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
+msgid  "~Option fields"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
+msgid  "Default Field Selection"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
+msgid  "Should one option field be selected as a default?"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
+msgid  "~Yes, the following:"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
+msgid  "No, one particular field is not going to be selected."
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
+msgid  "Field Values"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
+msgid  "When you select an option, the option group is given a specific value."
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
+msgid  "Which ~value do you want to assign to each option?"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
+msgid  "~Option fields"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
+msgid  "Create Option Group"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
+msgid  "Which ~caption is to be given to your option group?"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
+msgid  "These were all details needed to create the option group."
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
+msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
+msgid  "Table Selection"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
+msgid  "Control"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
+msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
+msgid  "Field Selection"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
+msgid  "Existing fields"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
+msgid  "Display field"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
+msgid  "The contents of the field selected will be shown in the combo box list."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
-msgid  "No"
-msgstr "否"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
-msgid  "Keep Ratio"
-msgstr "保持比例"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
+msgid  "Field Link"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
-msgid  "Fit to Size"
-msgstr "自動最適調整"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
-msgid  "Input required"
-msgstr "要求輸入資料"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
+msgid  "Field from the ~Value Table"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
-msgid  "Text direction"
-msgstr "文字方向"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
+msgid  "Field from the ~List Table"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
-msgid  "Left-to-right"
-msgstr "從左至右"
+#: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
-msgid  "Right-to-left"
-msgstr "從右至左"
+#: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
+msgid  "<< Back"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
-msgid  "Use superordinate object settings"
-msgstr "使用上一層的物件設定"
+#: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
+msgid  "Next >>"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
-msgid  "Never"
-msgstr "一律不"
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
+msgid  "Accept"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
-msgid  "When focused"
-msgstr "集中時"
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
+msgid  "Finish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
-msgid  "Always"
-msgstr "自動"
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
+msgid  " - Software License Agreement"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
-msgid  "Anchor"
-msgstr "固定標記"
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
+msgid  "- User Data"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
-msgid  "To Paragraph"
-msgstr "至段落"
+#: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
+msgid  "Welcome"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
-msgid  "As Character"
-msgstr "當作字元"
+#: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
-msgid  "To Page"
-msgstr "至頁面"
+#: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
+msgid  "License Agreement"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
-msgid  "To Frame"
-msgstr "至訊框"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
+msgid  "Please follow these steps to proceed with the installation:"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
-msgid  "To Character"
-msgstr "至字元"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
+msgid  "1."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
-msgid  "To Page"
-msgstr "至頁面"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
-msgid  "To Cell"
-msgstr "至儲存格"
+#: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
+msgid  "Page Down"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
-msgid  "Regular"
-msgstr "標準"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
+msgid  "2."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
-msgid  "Bold Italic"
-msgstr "粗斜體"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
+msgid  "Accept the License Agreement."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
-msgid  "Italic"
-msgstr "斜體"
+#: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
+msgid  "I accept the terms of the Agreement."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
-msgid  "Bold"
-msgstr "粗體"
+#: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
+msgid  "~Accept"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
-msgid  "(Default)"
-msgstr "(預設)"
+#: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
+msgid  "Decline"
+msgstr ""
 
-#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+#: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
 msgid  "Character"
-msgstr "字元"
+msgstr ""
 
-#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+#: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
 msgid  "Font"
-msgstr "字型"
+msgstr ""
 
-#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+#: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr "字型效果"
+msgstr ""
 
-#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
-msgid  "New Data Type"
-msgstr "新資料類型"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
+msgid  "Link fields"
+msgstr ""
 
-#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
-msgid  "Type a name for the new data type:"
-msgstr "輸入新資料類型的名稱："
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
+msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\\n Dev~ice"
-msgstr "設備說明資料(~I)"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
+msgid  "Suggest"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\\nPreview"
-msgstr "建立預覽"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
+msgid  "Sub Form"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
-msgid  "Preview"
-msgstr "預覽"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
+msgid  "Master Form"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
-msgid  "Scan area"
-msgstr "掃描區域"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
+msgid  "The columns of '#' could not be retrieved."
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
-msgid  "Left:"
-msgstr "左："
+#: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
+msgid  "Edit mask"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
-msgid  "Top:"
-msgstr "上："
+#: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
+msgid  "Literal mask"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
-msgid  "Right:"
-msgstr "右："
+#: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
+msgid  "Read-only"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
-msgid  "Bottom:"
-msgstr "下："
+#: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
+msgid  "Enabled"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
-msgid  "Device used:"
-msgstr "使用的設備："
+#: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
+msgid  "Visible"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
-msgid  "Resolution [~DPI]"
-msgstr "解析度 [~DPI]"
+#: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
+msgid  "AutoFill"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
-msgid  "Show advanced options"
-msgstr "顯示進階選項"
+#: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
+msgid  "Line count"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
-msgid  "Options:"
-msgstr "選項："
+#: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
+msgid  "Max. text length"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
-msgid  "Vector element"
-msgstr "向量圖件"
+#: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
+msgid  "Spin Button"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
-msgid  "Set"
-msgstr "設定"
+#: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
+msgid  "Strict format"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
-msgid  "Scanner"
-msgstr "掃描器"
+#: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
+msgid  "Thousands separator"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr "設備：%s\n製造商：%s\n型號：%s\n類型：%s"
+#: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
+msgid  "Printable"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
-msgid  "An error occurred while scanning."
-msgstr "在掃描時發生一個錯誤。"
+#: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
+msgid  "URL"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
-msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr "這個設備沒有設定預視功能，因此採用普通的掃描方式預覽會需要較長的時間。"
+#: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
+msgid  "Frame"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
-msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr "無法初始化 SANE 介面。無法執行掃描作業。"
+#: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
+msgid  "Help text"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
-msgid  "Set"
-msgstr "指定"
+#: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
+msgid  "Help URL"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
-msgid  "Linear ascending"
-msgstr "線性上昇"
+#: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
+msgid  "Additional information"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
-msgid  "Linear descending"
-msgstr "線性下降"
+#: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
+msgid  "Password character"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
-msgid  "Original values"
-msgstr "原始值"
+#: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
+msgid  "Tristate"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
-msgid  "Exponential increasing"
-msgstr "冪數式遞增"
+#: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
+msgid  "Empty string is NULL"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
-msgid  "Checking..."
-msgstr "檢查..."
+#: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
+msgid  "Decimal accuracy"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
-msgid  "Checking for an update failed."
-msgstr "檢查更新失敗。"
+#: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
+msgid  "Graphics"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr "%PRODUCTNAME %PRODUCTVERSION 已是最新版。"
+#: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
+msgid  "Default selection"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr "%PRODUCTNAME %NEXTVERSION 可用。\n\n安裝的版本為 %PRODUCTNAME %PRODUCTVERSION。\n\n注意：下載更新之前，請確定您有足夠的存取權限進行安裝。\n可能需要密碼 (通常是管理員或超級使用者的密碼)。"
+#: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
+msgid  "Default button"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
-msgid  "Check for Updates"
-msgstr "檢查是否有更新"
+#: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
+msgid  "Label Field"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr "正在下載暫停的 %PRODUCTNAME %NEXTVERSION 於..."
+#: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
+msgid  "Label"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr "正在下載延遲的 %PRODUCTNAME %NEXTVERSION 於"
+#: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
+msgid  "Alignment"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "下載位置：%DOWNLOAD_PATH。\n\n在 [工具] – [選項...] - [%PRODUCTNAME] – [線上更新] 下，您可以變更下載位置。"
+#: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
+msgid  "Vert. Alignment"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
-msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr "%FILE_NAME 已下載至 %DOWNLOAD_PATH。"
+#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
+msgid  "Top"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "目前沒有提供自動下載更新。\n\n請按一下 [下載...] 以手動從網站下載 %PRODUCTNAME %NEXTVERSION。"
+#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
+msgid  "Middle"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr "正在下載 %PRODUCTNAME %NEXTVERSION..."
+#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
+msgid  "Bottom"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
-msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr "%PRODUCTNAME %NEXTVERSION 的下載已完成。準備進行安裝。"
+#: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
+msgid  "Graphics alignment"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
+#: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
+msgid  "Font"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
-msgid  "Do you really want to cancel the download?"
-msgstr "您確定要取消下載？"
+#: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
+msgid  "Background color"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
-msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr "若要安裝更新，需要關閉 %PRODUCTNAME %PRODUCTVERSION。您要立即安裝更新嗎？"
+#: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
+msgid  "Border"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
-msgid  "Install ~now"
-msgstr "立即安裝(~N)"
+#: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
+msgid  "Icon size"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
-msgid  "Install ~later"
-msgstr "稍後安裝(~L)"
+#: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
+msgid  "Small"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
-msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr "無法執行安裝應用程式，請手動執行 %DOWNLOAD_PATH 中的 %FILE_NAME。"
+#: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
+msgid  "Large"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
-msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr "已存在同名的檔案！您要覆寫現有檔案嗎？"
+#: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
+msgid  "Positioning"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
-msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr "「%DOWNLOAD_PATH」中已存在名稱為「%FILENAME」的檔案！您是否要繼續下載，或刪除並重新載入檔案？"
+#: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
+msgid  "Navigation"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
-msgid  "Reload File"
-msgstr "重新載入檔案"
+#: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
+msgid  "Acting on a record"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
-msgid  "Continue"
-msgstr "繼續"
+#: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
+msgid  "Filtering / Sorting"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
-msgid  "%PERCENT%"
-msgstr "%PERCENT%"
+#: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
+msgid  "Horizontal scroll bar"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
-msgid  "Status"
-msgstr "狀態"
+#: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
+msgid  "Vertical scroll bar"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
-msgid  "Description"
-msgstr "描述"
+#: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
+msgid  "Word break"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
-msgid  "Close"
-msgstr "關閉"
+#: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
+msgid  "Multiline input"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
-msgid  "~Download"
-msgstr "下載(~D)"
+#: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
+msgid  "Multiselection"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
-msgid  "~Install"
-msgstr "安裝(~I)"
+#: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
+msgid  "Name"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
-msgid  "~Pause"
-msgstr "暫停(~P)"
+#: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
+msgid  "Tab order"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
-msgid  "~Resume"
-msgstr "繼續(~R)"
+#: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
+msgid  "Mouse wheel scroll"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+#: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
+msgid  "Filter"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
+msgid  "Sort"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
+msgid  "Record marker"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
+msgid  "Filter proposal"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
+msgid  "Navigation bar"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
+msgid  "Cycle"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
+msgid  "Tabstop"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
+msgid  "Data field"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
+msgid  "Dropdown"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
+msgid  "Bound field"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
+msgid  "List content"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
+msgid  "Type of list contents"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
+msgid  "Content"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
+msgid  "Content type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
+msgid  "Allow additions"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
+msgid  "Allow deletions"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
+msgid  "Allow modifications"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
+msgid  "Add data only"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
+msgid  "Data source"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
+msgid  "Link master fields"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
+msgid  "Link slave fields"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
+msgid  "Value min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
+msgid  "Value max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
+msgid  "Incr./decrement value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
+msgid  "Currency symbol"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
+msgid  "Date min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
+msgid  "Date max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
+msgid  "Date format"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
+msgid  "Selection"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
+msgid  "Time min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
+msgid  "Time max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
+msgid  "Time format"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
+msgid  "Prefix symbol"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
+msgid  "Value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
+msgid  "Formatting"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
+msgid  "Class ID"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
+msgid  "Height"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
+msgid  "Width"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
+msgid  "List index"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
+msgid  "Row height"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
+msgid  "Fill color"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
+msgid  "Line color"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
+msgid  "Reference value (on)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
+msgid  "Reference value (off)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
+msgid  "List entries"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
+msgid  "Action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
+msgid  "URL"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
+msgid  "Type of submission"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
+msgid  "Default status"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
+msgid  "Submission encoding"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
+msgid  "Default value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
+msgid  "Default text"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
+msgid  "Default date"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
+msgid  "Default time"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
+msgid  "Frame"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
+msgid  "Without frame"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
+msgid  "3D look"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
+msgid  "Flat"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
+msgid  "Valuelist"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
+msgid  "Table"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
+msgid  "Query"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
+msgid  "Sql"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
+msgid  "Sql [Native]"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
+msgid  "Tablefields"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
+msgid  "Left"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
+msgid  "Center"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
+msgid  "Right"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
+msgid  "None"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
+msgid  "Submit form"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
+msgid  "Reset form"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
+msgid  "Open document/web page"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
+msgid  "First record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
+msgid  "Previous record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
+msgid  "Next record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
+msgid  "Last record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
+msgid  "Save record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
+msgid  "Undo data entry"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
+msgid  "New record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
+msgid  "Delete record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
+msgid  "Refresh form"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
+msgid  "Get"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
+msgid  "Post"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
+msgid  "URL"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
+msgid  "Multipart"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
+msgid  "Text"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
+msgid  "Standard (short)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
+msgid  "Standard (short YY)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
+msgid  "Standard (short YYYY)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
+msgid  "Standard (long)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
+msgid  "DD/MM/YY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
+msgid  "MM/DD/YY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
+msgid  "YY/MM/DD"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
+msgid  "DD/MM/YYYY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
+msgid  "MM/DD/YYYY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
+msgid  "YYYY/MM/DD"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
+msgid  "YY-MM-DD"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
+msgid  "YYYY-MM-DD"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
+msgid  "13:45"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
+msgid  "13:45:00"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
+msgid  "01:45 PM"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
+msgid  "01:45:00 PM"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
+msgid  "Not Selected"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
+msgid  "Selected"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
+msgid  "Not Defined"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
+msgid  "All records"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
+msgid  "Active record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
+msgid  "Current page"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
+msgid  "No"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
+msgid  "Yes"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
+msgid  "Parent Form"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
+msgid  "None"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
+msgid  "Single"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
+msgid  "Multi"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
+msgid  "Range"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
+msgid  "Fill parameters"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
+msgid  "Execute action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
+msgid  "After updating"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
+msgid  "Before updating"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
+msgid  "Before record action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
+msgid  "After record action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
+msgid  "Confirm deletion"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
+msgid  "Error occurred"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
+msgid  "When receiving focus"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
+msgid  "When losing focus"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
+msgid  "Item status changed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
+msgid  "Key pressed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
+msgid  "Key released"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
+msgid  "When loading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
+msgid  "Before reloading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
+msgid  "When reloading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
+msgid  "Mouse moved while key pressed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
+msgid  "Mouse inside"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
+msgid  "Mouse outside"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
+msgid  "Mouse moved"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
+msgid  "Mouse button pressed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
+msgid  "Mouse button released"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
+msgid  "Before record change"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
+msgid  "After record change"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
+msgid  "After resetting"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
+msgid  "Prior to reset"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
+msgid  "Approve action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
+msgid  "Before submitting"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
+msgid  "Text modified"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
+msgid  "Before unloading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
+msgid  "When unloading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
+msgid  "Changed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
+msgid  "Events"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
+msgid  "Analyze SQL command"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
+msgid  "PositionX"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
+msgid  "PositionY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
+msgid  "Title"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
+msgid  "Page (step)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
+msgid  "Progress value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
+msgid  "Progress value min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
+msgid  "Progress value max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
+msgid  "Scroll value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
+msgid  "Scroll value max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
+msgid  "Scroll value min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
+msgid  "Default scroll value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
+msgid  "Small change"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
+msgid  "Large change"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
+msgid  "Delay"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
+msgid  "Repeat"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
+msgid  "Visible size"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
+msgid  "Orientation"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
+msgid  "Horizontal"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
+msgid  "Vertical"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
+msgid  "While adjusting"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
+msgid  "Date"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
+msgid  "State"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
+msgid  "Time"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
+msgid  "Scale"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
+msgid  "Button type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
+msgid  "Default"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
+msgid  "OK"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
 msgid  "Cancel"
-msgstr "取消"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
-msgid  "%PRODUCTNAME update available"
-msgstr "有可用的 %PRODUCTNAME 更新"
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
+msgid  "Help"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
-msgid  "Click here to start the download."
-msgstr "按一下此處以開始下載。"
+#: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
-msgid  "%PRODUCTNAME update available"
-msgstr "有可用的 %PRODUCTNAME 更新"
+#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
+msgid  "Text"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
-msgid  "Click here for more information."
-msgstr "按一下此處以取得更多資訊。"
+#: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
+msgid  "Linked cell"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
-msgid  "%PRODUCTNAME update available"
-msgstr "有可用的 %PRODUCTNAME 更新"
+#: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
+msgid  "Source cell range"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
-msgid  "Download of update begins."
-msgstr "開始下載更新。"
+#: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
+msgid  "Contents of the linked cell"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
-msgid  "Download of update in progress"
-msgstr "正在下載更新"
+#: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
+msgid  "The selected entry"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
-msgid  "Download of update paused"
-msgstr "更新下載已暫停"
+#: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
+msgid  "Position of the selected entry"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
-msgid  "Click here to resume."
-msgstr "按一下此處以繼續。"
+#: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
+msgid  "Scrollbars"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
-msgid  "Download of update stalled"
-msgstr "更新下載已延遲"
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
+msgid  "Single-line"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
-msgid  "Click here for more information."
-msgstr "按一下此處以取得更多資訊。"
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
+msgid  "Multi-line"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
-msgid  "Download of update completed"
-msgstr "更新下載已完成"
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
+msgid  "Multi-line with formatting"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
-msgid  "Click here to start the installation."
-msgstr "按一下此處以開始安裝。"
+#: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
+msgid  "Symbol color"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
-msgid  "Updates for extensions available"
-msgstr "有可用的擴充軟體更新"
+#: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
+msgid  "Text lines end with"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
-msgid  "Click here for more information."
-msgstr "按一下此處以取得更多資訊。"
+#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
+msgid  "LF (Unix)"
+msgstr ""
 
-#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
+msgid  "CR+LF (Windows)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
+msgid  "None"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
+msgid  "Horizontal"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
+msgid  "Vertical"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
+msgid  "Both"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
+msgid  "Table"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
+msgid  "Query"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
+msgid  "SQL command"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
+msgid  "Toggle"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
+msgid  "Take Focus on Click"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
+msgid  "Hide selection"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
+msgid  "Style"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
+msgid  "3D"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
+msgid  "Flat"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
+msgid  "Border color"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
+msgid  "Left top"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
+msgid  "Left centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
+msgid  "Left bottom"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
+msgid  "Right top"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
+msgid  "Right centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
+msgid  "Right bottom"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
+msgid  "Above left"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
+msgid  "Above centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
+msgid  "Above right"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
+msgid  "Below left"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
+msgid  "Below centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
+msgid  "Below right"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
+msgid  "Centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
+msgid  "Wrap text automatically"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
+msgid  "Text type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
+msgid  "Hide"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
+msgid  "Show"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
+msgid  "XML data model"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
+msgid  "Binding expression"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
+msgid  "Required"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
+msgid  "List entry source"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
+msgid  "Relevant"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
+msgid  "Read-only"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
+msgid  "Constraint"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
+msgid  "Calculation"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
+msgid  "Data type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
+msgid  "Whitespaces"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
+msgid  "Preserve"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
+msgid  "Replace"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
+msgid  "Collapse"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
+msgid  "Pattern"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
+msgid  "Length"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
+msgid  "Length (at least)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
+msgid  "Length (at most)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
+msgid  "Digits (total)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
+msgid  "Digits (fraction)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
+msgid  "Max. (inclusive)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
+msgid  "Max. (exclusive)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
+msgid  "Min. (inclusive)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
+msgid  "Min. (exclusive)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
+msgid  "Submission"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
+msgid  "Binding"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
+msgid  "Selection type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
+msgid  "Root displayed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
+msgid  "Show handles"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
+msgid  "Show root handles"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
+msgid  "Editable"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
+msgid  "Invokes stop node editing"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
+msgid  "With title bar"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
+msgid  "No Label"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
+msgid  "No"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
+msgid  "Keep Ratio"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
+msgid  "Fit to Size"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
+msgid  "Input required"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
+msgid  "Text direction"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
+msgid  "Left-to-right"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
+msgid  "Right-to-left"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
+msgid  "Use superordinate object settings"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
+msgid  "Never"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
+msgid  "When focused"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
+msgid  "Always"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
+msgid  "Anchor"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
+msgid  "To Paragraph"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
+msgid  "As Character"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
+msgid  "To Page"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
+msgid  "To Frame"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
+msgid  "To Character"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
+msgid  "To Page"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
+msgid  "To Cell"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
+msgid  "Regular"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
+msgid  "Bold Italic"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
+msgid  "Italic"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
+msgid  "Bold"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
+msgid  "(Default)"
+msgstr ""
+
+#: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
+msgid  "New Data Type"
+msgstr ""
+
+#: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
+msgid  "Type a name for the new data type:"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
+msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
+msgid  "Button"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
+msgid  "Option Button"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
+msgid  "Check Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
+msgid  "Label Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
+msgid  "Group Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
+msgid  "Text Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
+msgid  "Formatted Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
+msgid  "List Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
+msgid  "Combo Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
+msgid  "Image Button"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
+msgid  "Hidden Control"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
+msgid  "Control (unknown type)"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
+msgid  "Image Control"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
+msgid  "File Selection"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
+msgid  "Date Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
+msgid  "Time Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
+msgid  "Numeric Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
+msgid  "Currency Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
+msgid  "Pattern Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
+msgid  "Table Control "
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
+msgid  "Default"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
+msgid  "General"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
+msgid  "Data"
+msgstr ""
+
+#: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
+msgid  "No"
+msgstr ""
+
+#: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
+msgid  "Yes"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
+msgid  "Help"
+msgstr ""
+
+#: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
+msgid  "<Embedded-Image>"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
+msgid  "Text"
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
+msgid  "~No assignment"
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
+msgid  "Label Field Selection"
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
+msgid  "Forms"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
+msgid  "Tab Order"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
+msgid  "Controls"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
+msgid  "Move Up"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
+msgid  "Move Down"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
+msgid  "Automatic Sort"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
+msgid  "Set"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
+msgid  "Linear ascending"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
+msgid  "Linear descending"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
+msgid  "Original values"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
+msgid  "Exponential increasing"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
+msgid  "About\n Dev~ice"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
+msgid  "Create\nPreview"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
+msgid  "Preview"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
+msgid  "Scan area"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
+msgid  "Left:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
+msgid  "Top:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
+msgid  "Right:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
+msgid  "Bottom:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
+msgid  "Device used:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
+msgid  "Resolution [~DPI]"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
+msgid  "Show advanced options"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
+msgid  "Options:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
+msgid  "Vector element"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
+msgid  "Set"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
+msgid  "Scanner"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
+msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
+msgid  "An error occurred while scanning."
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr ""
+
+#: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
 msgid  "Check for ~Updates..."
-msgstr "檢查是否有更新(~U)..."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
+msgid  "Checking..."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
+msgid  "Checking for an update failed."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
+msgid  "Check for Updates"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
+msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
+msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
+msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
+msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
+msgid  "Do you really want to cancel the download?"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
+msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
+msgid  "Install ~now"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
+msgid  "Install ~later"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
+msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
+msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
+msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
+msgid  "Reload File"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
+msgid  "Continue"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
+msgid  "%PERCENT%"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
+msgid  "Status"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
+msgid  "Description"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
+msgid  "Close"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
+msgid  "~Download"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
+msgid  "~Install"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
+msgid  "~Pause"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
+msgid  "~Resume"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
+msgid  "%PRODUCTNAME update available"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
+msgid  "Click here to start the download."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
+msgid  "%PRODUCTNAME update available"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
+msgid  "Click here for more information."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
+msgid  "%PRODUCTNAME update available"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
+msgid  "Download of update begins."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
+msgid  "Download of update in progress"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
+msgid  "Download of update paused"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
+msgid  "Click here to resume."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
+msgid  "Download of update stalled"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
+msgid  "Click here for more information."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
+msgid  "Download of update completed"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
+msgid  "Click here to start the installation."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
+msgid  "Updates for extensions available"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
+msgid  "Click here for more information."
+msgstr ""
