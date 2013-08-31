@@ -1020,7 +1020,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr ""
 
 #: ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FIXEDTEXT.TEXT
-msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
 msgstr ""
 
 #: ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKBUTTON.TEXT
@@ -12913,4 +12913,196 @@ msgstr ""
 
 #: ui/wrtsh/wrtsh.src#STR_DDEERROR_LINK2.STRING.TEXT
 msgid  "] cannot be established"
+msgstr ""
+
+#: ui/sidebar/WrapPropertyPanel.src#RID_PROPERTYPANEL_SWOBJWRAP_PAGE.CONTROL.TEXT
+msgid  "Wrap"
+msgstr ""
+
+#: ui/sidebar/WrapPropertyPanel.src#RID_PROPERTYPANEL_SWOBJWRAP_PAGE.RB_NO_WRAP.IMAGERADIOBUTTON.QUICKHELPTEXT
+msgid  "None"
+msgstr ""
+
+#: ui/sidebar/WrapPropertyPanel.src#RID_PROPERTYPANEL_SWOBJWRAP_PAGE.RB_WRAP_LEFT.IMAGERADIOBUTTON.QUICKHELPTEXT
+msgid  "Before"
+msgstr ""
+
+#: ui/sidebar/WrapPropertyPanel.src#RID_PROPERTYPANEL_SWOBJWRAP_PAGE.RB_WRAP_RIGHT.IMAGERADIOBUTTON.QUICKHELPTEXT
+msgid  "After"
+msgstr ""
+
+#: ui/sidebar/WrapPropertyPanel.src#RID_PROPERTYPANEL_SWOBJWRAP_PAGE.RB_WRAP_PARALLEL.IMAGERADIOBUTTON.QUICKHELPTEXT
+msgid  "Parallel"
+msgstr ""
+
+#: ui/sidebar/WrapPropertyPanel.src#RID_PROPERTYPANEL_SWOBJWRAP_PAGE.RB_WRAP_THROUGH.IMAGERADIOBUTTON.QUICKHELPTEXT
+msgid  "Through"
+msgstr ""
+
+#: ui/sidebar/WrapPropertyPanel.src#RID_PROPERTYPANEL_SWOBJWRAP_PAGE.RB_WRAP_IDEAL.IMAGERADIOBUTTON.QUICKHELPTEXT
+msgid  "Optimal"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.FT_ORIENTATION.FIXEDTEXT.TEXT
+msgid  "~Orientation:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.TB_ORIENTATION.TBI_ORIENTATION.TOOLBOXITEM.TEXT
+msgid  "Orientation"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.STR_QHELP_TB_ORIENTATION.STRING.TEXT
+msgid  "Select the paper orientation - vertically (portrait) or horizontally (landscape) - for the current page style."
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.FT_MARGIN.FIXEDTEXT.TEXT
+msgid  "~Margin:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.TB_MARGIN.TBI_MARGIN.TOOLBOXITEM.TEXT
+msgid  "Margin"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.STR_QHELP_TB_MARGIN.STRING.TEXT
+msgid  "Select the margin values for the current page style."
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.FT_SIZE.FIXEDTEXT.TEXT
+msgid  "~Size:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.TB_SIZE.TBI_SIZE.TOOLBOXITEM.TEXT
+msgid  "Size"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.STR_QHELP_TB_SIZE.STRING.TEXT
+msgid  "Select a predefined paper size for the current page style."
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.FT_COLUMN.FIXEDTEXT.TEXT
+msgid  "~Column:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.TB_COLUMN.TBI_COLUMN.TOOLBOXITEM.TEXT
+msgid  "Column"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_PROPERTYPANEL_SWPAGE.STR_QHELP_TB_COLUMN.STRING.TEXT
+msgid  "Select the layout and the number of columns for the current page style."
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_ORIENTATION.STR_PORTRAIT.STRING.TEXT
+msgid  "Portrait"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_ORIENTATION.STR_LANDSCAPE.STRING.TEXT
+msgid  "Landscape"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.FT_CUSTOM.FIXEDTEXT.TEXT
+msgid  "Custom:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.FT_LEFT.FIXEDTEXT.TEXT
+msgid  "~Left:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.FT_INNER.FIXEDTEXT.TEXT
+msgid  "I~nner:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.FT_RIGHT.FIXEDTEXT.TEXT
+msgid  "~Right:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.FT_OUTER.FIXEDTEXT.TEXT
+msgid  "O~uter:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.FT_TOP.FIXEDTEXT.TEXT
+msgid  "~Top:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.FT_BOTTOM.FIXEDTEXT.TEXT
+msgid  "~Bottom:"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_LCVALUE.STRING.TEXT
+msgid  "Last Custom Values"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_NARROW.STRING.TEXT
+msgid  "Narrow"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_NORMAL.STRING.TEXT
+msgid  "Normal"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_WIDE.STRING.TEXT
+msgid  "Wide"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_MIRRORED.STRING.TEXT
+msgid  "Mirrored"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_MARGIN_TOOLTIP_LEFT.STRING.TEXT
+msgid  "Left: "
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_MARGIN_TOOLTIP_RIGHT.STRING.TEXT
+msgid  ". Right: "
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_MARGIN_TOOLTIP_INNER.STRING.TEXT
+msgid  "Inner: "
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_MARGIN_TOOLTIP_OUTER.STRING.TEXT
+msgid  ". Outer: "
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_MARGIN_TOOLTIP_TOP.STRING.TEXT
+msgid  ". Top: "
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_MARGIN.STR_MARGIN_TOOLTIP_BOT.STRING.TEXT
+msgid  ". Bottom: "
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_SIZE.CB_SIZE_MORE.PUSHBUTTON.TEXT
+msgid  "~More Options"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_SIZE.CB_SIZE_MORE.PUSHBUTTON.QUICKHELPTEXT
+msgid  "More Options"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_COLUMN.CB_COLUMN_MORE.PUSHBUTTON.TEXT
+msgid  "~More Options"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_COLUMN.CB_COLUMN_MORE.PUSHBUTTON.QUICKHELPTEXT
+msgid  "More Options"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_COLUMN.STR_ONE.STRING.TEXT
+msgid  "1 Column"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_COLUMN.STR_TWO.STRING.TEXT
+msgid  "2 Columns"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_COLUMN.STR_THREE.STRING.TEXT
+msgid  "3 Columns"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_COLUMN.STR_LEFT.STRING.TEXT
+msgid  "Left"
+msgstr ""
+
+#: ui/sidebar/PagePropertyPanel.src#RID_POPUP_SWPAGE_COLUMN.STR_RIGHT.STRING.TEXT
+msgid  "Right"
 msgstr ""
