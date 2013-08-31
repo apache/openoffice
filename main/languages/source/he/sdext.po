@@ -31,711 +31,266 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/minimizer/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.SunPresentationMinimizer.Command1.MenuItems.SunPresentationMinimizerExecute2.Title
-msgid  "~Minimize Presentation..."
-msgstr "לקבץ את המצגת..."
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid  "Presentation Minimizer"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.HelpFile
-msgid  "%origin%/../../../../../../help/help_en-US.odt"
-msgstr "%origin%/../../../../../../help/help_en-US.odt"
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid  "Presentation Minimizer - Result"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUN_OPTIMIZATION_WIZARD2
-msgid  "@MINIMIZEREXTENSIONPRODUCTNAME@"
-msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_STEPS
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
 msgid  "Steps"
-msgstr "צעדים"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_HELP
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
 msgid  "~Help"
-msgstr "עזרה"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_BACK
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
 msgid  "< ~Back"
-msgstr "< ~הקודם"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NEXT
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
 msgid  "~Next >"
-msgstr "~הבא >"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FINISH
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
 msgid  "~Finish"
-msgstr "סיום"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CANCEL
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr "ביטול"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
 msgid  "Introduction"
-msgstr "מבוא"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr "האשף @MINIMIZEREXTENSIONPRODUCTNAME@ הוא כלי לצמצום גודל הקובץ של המצגת הנוכחית. תמונות יידחסו ומידע שנמצא במצגת אך אינו נצרך יוסר. בשלב האחרון של הפעלת האשף ניתן לבחור בין החלת השינויים למצגת הנוכחית, או יצירת גירסה מצומצמת נפרדת של המצגת."
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
-msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
-msgstr "~בחר הגדרות עבור @MINIMIZEREXTENSIONPRODUCTNAME@"
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid  "~Choose settings for Presentation Minimizer"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
 msgid  "~Delete"
-msgstr "מחיקה"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_GRAPHIC_OPTIMIZATION
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for optimizing pictures and graphics"
-msgstr "בחירת קבועים למיטוב תמונות וגרפיקה"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_OPTIMIZATION
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
 msgid  "Graphics"
-msgstr "גרפיקה"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_LOSSLESS_COMPRESSION
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
 msgid  "~Lossless compression"
-msgstr "דחיסה ללא אובדן איכות"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_JPEG_COMPRESSION
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
 msgid  "~JPEG compression"
-msgstr "דחיסת JPEG"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_QUALITY
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
 msgid  "~Quality in %"
-msgstr "איכות באחוזים"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE_CROP_AREA
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
 msgid  "~Delete cropped graphic areas"
-msgstr "מחיקת אזורים גרפיים חתוכים"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
 msgid  "Reduce ~image resolution"
-msgstr "הורדת רזולוצית תמונות"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_0
-msgid  "0;<no change>"
-msgstr "0;<ללא שינוי>"
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid  "<no change>"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_1
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
 msgid  "90;90 DPI (screen resolution)"
-msgstr "90;90 DPI (רזולוצית מסכים נפוצים)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_2
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
 msgid  "150;150 DPI (projector resolution)"
-msgstr "150;150 DPI (רזולוצית מקרנים נפוצים)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_3
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
 msgid  "300;300 DPI (print resolution)"
-msgstr "300;300 DPI (רזולוצית מדפסות נפוצות)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_EMBED_LINKED_GRAPHICS
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
 msgid  "~Break links to external graphics"
-msgstr "שבירת קישורים לגרפיקה חיצונית"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
 msgid  "OLE Objects"
-msgstr "עצמי OLE"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OPTIMIZATION
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for replacing OLE objects"
-msgstr "בחירת קבועים להחלפת עצמי OLE"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_REPLACE
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
 msgid  "Create static replacement graphics for OLE objects"
-msgstr "יצירת גרפיקה סטטית להחלפת עצמי OLE"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALL_OLE_OBJECTS
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
 msgid  "For ~all OLE objects"
-msgstr "לכל עצמי הOLE"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALIEN_OLE_OBJECTS_ONLY
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
 msgid  "~For OLE objects not based on OpenDocument format"
-msgstr "לעצמי OLE שאינם מבוססי צורת OpenDocument"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr "טכנולוגית הOLE של מיקרוסופט (Object Linking and Embedding) היא טכנולוגיה המאפשרת שיבוץ וקישור של עצמים למסמכים ועצמים אחרים.המצגת הנוכחית מכילה עצמי OLE."
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr "טכנולוגית הOLE של מיקרוסופט (Object Linking and Embedding) היא טכנולוגיה המאפשרת שיבוץ וקישור של עצמים למסמכים ועצמים אחרים.המצגת הנוכחית אינה מכילה עצמי OLE."
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SLIDES
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
 msgid  "Slides"
-msgstr "שקפים"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOOSE_SLIDES
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
 msgid  "Choose which slides to delete"
-msgstr "בחירת השקפים למחוק"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MASTER_PAGES
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
 msgid  "Master Pages"
-msgstr "דפי אב"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_MASTER_PAGES
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
 msgid  "Delete unused ~master pages"
-msgstr "למחוק דפי אב שלא בשימוש"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_NOTES_PAGES
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
 msgid  "~Clear notes"
-msgstr "מחיקת הערות"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_HIDDEN_SLIDES
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
 msgid  "Delete hidden ~slides"
-msgstr "מחיקת שקפים מוסתרים"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CUSTOM_SHOW
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
 msgid  "Delete slides that are not used for the ~custom slide show"
-msgstr "מחיקת שקפים שלא נכללו בהצגת השקפים המותאמת"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr "סיכום"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY_TITLE
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
 msgid  "Choose where to apply the following changes"
-msgstr "בחירת המצגת להשמת פעולת הצמצום"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_PROGRESS
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
 msgid  "Progress"
-msgstr "התקדמות"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OBJECTS_OPTIMIZED
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
 msgid  "Objects optimized"
-msgstr "העצמים הממוטבים"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_APPLY_TO_CURRENT
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
 msgid  "~Apply changes to current presentation"
-msgstr "יישום הצמצום למצגת הנוכחית"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_AUTOMATICALLY_OPEN
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
 msgid  "~Open newly created presentation"
-msgstr "יישום הצמצום על מצגת נפרדת חדשה"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_SETTINGS
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
 msgid  "~Save settings as"
-msgstr "שמירת קבועי הצמצום בשם"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_AS
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
 msgid  "~Duplicate presentation before applying changes"
-msgstr "שכפול המצגת לפני יישום השינויים"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_SLIDES
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
 msgid  "Delete %SLIDES slides."
-msgstr "מחיקת %SLIDES שקפים"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr "מיטוב %IMAGES עצמים גרפיים לאיכות %QUALITY% JPEG ברזולוצית %RESOLUTION DPI."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
 msgid  "Create replacement graphics for %OLE objects."
-msgstr "יצירת גרפיקה חלופית ל%OLE עצמי OLE."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CURRENT_FILESIZE
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
 msgid  "Current file size:"
-msgstr "גודל הקובץ הנוכחי:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ESTIMATED_FILESIZE
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
 msgid  "Estimated new file size:"
-msgstr "אומדן גודל הקובץ החדש:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MB
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
 msgid  "%1 MB"
-msgstr "%1 MB"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.MY_SETTINGS
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
 msgid  "My Settings "
-msgstr "הקבועים שלי"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DEFAULT_SESSION
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
 msgid  "default session"
-msgstr "סבב ברירת המחדל"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr "המיטוב ישנה את המסמך הנוכחי. האם להמשיך?"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_YES
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
 msgid  "~Yes"
-msgstr "כן"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OK
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
 msgid  "OK"
-msgstr "אישור"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_1
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr "האשף @MINIMIZEREXTENSIONPRODUCTNAME@ עדכן בהצלחה את המצגת '%TITLE'. גודל קובץ המצגת שונה מ־%OLDFILESIZE MB ל־%NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_2
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr "האשף @MINIMIZEREXTENSIONPRODUCTNAME@ עדכן בהצלחה את המצגת '%TITLE'. גודל קובץ המצגת שונה מ־%OLDFILESIZE MB ל־%NEWFILESIZE MB בקירוב."
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_3
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr "האשף @MINIMIZEREXTENSIONPRODUCTNAME@ עדכן בהצלחה את המצגת '%TITLE'. גודל קובץ המצגת שונה ל־%NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_4
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr "האשף @MINIMIZEREXTENSIONPRODUCTNAME@ עדכן בהצלחה את המצגת '%TITLE'. גודל קובץ המצגת שונה ל־%NEWFILESIZE MB בקירוב."
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
 msgid  "Duplicating presentation..."
-msgstr "משכפל מצגת..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETING_SLIDES
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
 msgid  "Deleting slides..."
-msgstr "מוחק שקפים..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZING_GRAPHICS
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
 msgid  "Optimizing graphics..."
-msgstr "ממטיב גרפיקה..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATING_OLE_REPLACEMENTS
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
 msgid  "Creating replacement graphics for OLE objects..."
-msgstr "יוצר גרפיקה חלופית לעצמי OLE..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FILESIZESEPARATOR
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
 msgid  "."
-msgstr "."
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.LastUsedSettings.Name
-msgid  "Projector optimized"
-msgstr "מיטוב למקרן"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template1.Name
-msgid  "Screen optimized (smallest file size)"
-msgstr "מיטוב למסך (מניב את הקובץ הקטן ביותר)"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template2.Name
-msgid  "Projector optimized"
-msgstr "מיטוב למקרן"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template3.Name
-msgid  "Print optimized"
-msgstr "מיטוב להדפסה"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#tit
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr "קיצורי מקשים של @PRESENTEREXTENSIONPRODUCTNAME@"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#bm_id0921200912285678
-msgid  "\<bookmark_value\>@PRESENTEREXTENSIONPRODUCTNAME@ shortcuts\</bookmark_value\>"
-msgstr "<bookmark_value>קיצורי מקשים של @PRESENTEREXTENSIONPRODUCTNAME@</bookmark_value>"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#hd_id0921201912165661
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr "קיצורי מקשים של @PRESENTEREXTENSIONPRODUCTNAME@"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
-msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr "בעת שימוש ב־@PRESENTEREXTENSIONPRODUCTNAME@ והצגת שקופיות, ניתן להשתמש במקשים הבאים:"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
-msgid  "Action"
-msgstr "פעולה"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104093
-msgid  "Key or Keys"
-msgstr "מקש או מקשים"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110418
-msgid  "Next slide, or next effect"
-msgstr "השקף הבא, או האפקט הבא"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
-msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr "לחיצה שמאלית, חץ ימינה, חץ למטה, רווח, דף למטה, אנטר, מקש חזרה, 'N'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
-msgid  "Previous slide, or previous effect"
-msgstr "השקף הקודם, או האפקט הקודם"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104115
-msgid  "Right click, left arrow, up arrow, page up, backspace, 'P'"
-msgstr "מקש עכבר ימני, חץ שמאלה, חץ למעלה, page up, רווח, 'פ'"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104164
-msgid  "First slide"
-msgstr "שקף ראשון"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104148
-msgid  "Home"
-msgstr "Home"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104221
-msgid  "Last slide"
-msgstr "שקף אחרון"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104277
-msgid  "End"
-msgstr "End"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104279
-msgid  "Previous slide without effects"
-msgstr "השקף הקודם ללא אפקטים"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110423
-msgid  "Alt+Page Up"
-msgstr "Alt+Page Up"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110427
-msgid  "Next slide without effects"
-msgstr "השקף הבא ללא אפקטים"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104261
-msgid  "Alt+Page Down"
-msgstr "Alt+Page Down"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104383
-msgid  "Black/Unblack the screen"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110431
-msgid  "'B', '.'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104311
-msgid  "White/Unwhite the screen"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104359
-msgid  "'W', ','"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104336
-msgid  "End slide show"
-msgstr "סיום הצגת שקפים"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104419
-msgid  "Esc, '-'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104460
-msgid  "Go to slide number"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110440
-msgid  "Number followed by Enter"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104427
-msgid  "Grow/Shrink size of notes font"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104442
-msgid  "'G', 'S'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104473
-msgid  "Scroll notes up/down"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110459
-msgid  "'A', 'Z'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110456
-msgid  "Move caret in notes view backward/forward"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110457
-msgid  "'H', 'L'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104566
-msgid  "Show the @PRESENTEREXTENSIONPRODUCTNAME@"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104544
-msgid  "Ctrl-'1'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104535
-msgid  "Show the Presentation Notes"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104680
-msgid  "Ctrl-'2'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104634
-msgid  "Show the Slides Overview"
-msgstr "הצגת סקירת שקפים"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104632
-msgid  "Ctrl-'3'"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.a.Normal.Text
-msgid  "Previous"
-msgstr "הקודם"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.b.Normal.Text
-msgid  "Next"
-msgstr "הבא"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.c.Normal.Text
-msgid  "Notes"
-msgstr "הערות"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.d.Normal.Text
-msgid  "Slides"
-msgstr "שקפים"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.l.Normal.Text
-msgid  "Help"
-msgstr "עזרה"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.NotesToolBar.Entries.a.Normal.Text
-msgid  "Zoom"
-msgstr "זום"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.SlideSorterCloser.Text
-msgid  "Close"
-msgstr "סגירה"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.NotesViewCloser.Text
-msgid  "Close"
-msgstr "סגירה"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.HelpViewCloser.Text
-msgid  "Close"
-msgstr "סגירה"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
-msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr "לחיצה שמאלית, חץ ימינה או למטה, רווח, דף למטה, אנטר, מקש חזרה, 'N'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
-msgid  "Next slide, or next effect"
-msgstr "השקף או הפעלול הבא"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
-msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr "לחיצה ימינה, חץ שמאלי או למעלה, דף למעלה, תו הקודם, 'P'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
-msgid  "Previous slide, or previous effect"
-msgstr "השקף או הפעלול הקודם"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Left
-msgid  "Home"
-msgstr "בית"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Right
-msgid  "First slide"
-msgstr "השקף הראשון"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Left
-msgid  "End"
-msgstr "סוף"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Right
-msgid  "Last slide"
-msgstr "השקף האחרון"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Left
-msgid  "Alt-Page Up"
-msgstr "Alt+Page Up"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Right
-msgid  "Previous slide without effects"
-msgstr "השקף הקודם, ללא פעלולים"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Left
-msgid  "Alt-Page Down"
-msgstr "Alt+Page Down"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Right
-msgid  "Next slide without effects"
-msgstr "השקף הבא, ללא פעלולים"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Left
-msgid  "'B', '.'"
-msgstr "'B', '.'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Right
-msgid  "Blacks/Unblacks the screen"
-msgstr "משחיר/מוריד משחור מהמסך"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Left
-msgid  "'W', ','"
-msgstr "'W', ','"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Right
-msgid  "Whites/Unwhites the screen"
-msgstr "מלבין/מירוד הלבנה מבמסך"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Left
-msgid  "Esc, '-'"
-msgstr "Esc, '-'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Right
-msgid  "End slide show"
-msgstr "סיום הצגת השקפים"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Left
-msgid  "Number followed by Enter"
-msgstr "מספר ולאחר מכן מקש אנטר"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Right
-msgid  "Go to that slide"
-msgstr "קפיצה לשקף הנבחר"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Left
-msgid  "'G', 'S'"
-msgstr "'G', 'S'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Right
-msgid  "Grow/Shrink size of notes font"
-msgstr "להגדיל/לצמצם גופן ההערות"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Left
-msgid  "'A', 'Z'"
-msgstr "'A', 'Z'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Right
-msgid  "Scroll notes up/down"
-msgstr "לגלגל הערות למעלה/למטה"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Left
-#, fuzzy
-msgid  "'H', 'L'"
-msgstr "'B', '.'"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Right
-msgid  "Move caret in notes view backward/forward"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Left
-msgid  "Ctrl-'1'"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Right
-msgid  "Shows the Presenter Console"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Left
-msgid  "Ctrl-'2'"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Right
-msgid  "Shows the Presentation Notes"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Left
-msgid  "Ctrl-'3'"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Right
-#, fuzzy
-msgid  "Shows the Slides Overview"
-msgstr "להציג סקירת שקפים"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Title
-#, fuzzy
-msgid  "Current Slide (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
-msgstr "השקף הנוכחי, (%CURRENT_SLIDE_NUMBER% מתוך %SLIDE_COUNT%)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
-msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
-#, fuzzy
-msgid  "Click to exit presentation..."
-msgstr "ללחוץ לצאת מהמצגת..."
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationTitle.String
-#, fuzzy
-msgid  "Current Slide (end)"
-msgstr "השקף הנוכחי (סיום)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NextSlidePreview.Title
-#, fuzzy
-msgid  "Next Slide"
-msgstr "השקף הבא"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NotesView.Title
-#, fuzzy
-msgid  "Notes"
-msgstr "הערות"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
-msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.HelpView.Title
-#, fuzzy
-msgid  "Help"
-msgstr "עזרה"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Console.String
-msgid  "Presenter Console"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Preview.String
-#, fuzzy
-msgid  "Current Slide Info"
-msgstr "השקף הנוכחי (סיום)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Notes.String
-msgid  "Presenter Notes"
 msgstr ""

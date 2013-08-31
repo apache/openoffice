@@ -31,2550 +31,2550 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
 msgid  "Address Book Data Source Wizard"
-msgstr "Címjegyzék adatforrása tündér"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
-msgid  "Address book type"
-msgstr "Címjegyzék típusa"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
-msgid  "Connection Settings"
-msgstr "Kapcsolat beállításai"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
-msgid  "Table selection"
-msgstr "Táblakijelölés"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
-msgid  "Field Assignment"
-msgstr "Mező hozzárendelése"
-
-#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
-msgid  "Data Source Title"
-msgstr "Adatforrás címe"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
-msgstr "Az %PRODUCTNAME hozzáférést biztosít a rendszerben már megtalálható címadatokhoz. Ehhez egy %PRODUCTNAME-adatforrás lesz létrehozva, amelyen keresztül a címeket táblázatos formában érheti el.\n\nEz a tündér segít létrehozni az adatforrást."
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
-msgid  "Please select the type of your external address book:"
-msgstr "Válassza ki a külső címjegyzék típusát:"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
-msgid  "Evolution"
-msgstr "Evolution"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
-msgid  "Groupwise"
-msgstr "Groupwise"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
-msgid  "Evolution LDAP"
-msgstr "Evolution - LDAP"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
-msgid  "Mozilla / Netscape"
-msgstr "Mozilla / Netscape"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
-msgid  "Thunderbird"
-msgstr "Thunderbird"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
-msgid  "KDE address book"
-msgstr "KDE-címjegyzék"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
-msgid  "Mac OS X address book"
-msgstr "Mac OS X-címjegyzék"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
-msgid  "LDAP address data"
-msgstr "LDAP-címtár"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
-msgid  "Outlook address book"
-msgstr "Outlook-címjegyzék"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
-msgid  "Windows system address book"
-msgstr "Windows-rendszercímjegyzék"
-
-#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
-msgid  "Other external data source"
-msgstr "Egyéb külső adatforrás"
-
-#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "Új adatforrás beállításához további részletek szükségesek.\n\nA szükséges adatok beviteléhez kattintson a következő gombra."
-
-#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
-msgid  "Settings"
-msgstr "Beállítások"
-
-#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "Nem lehet az adatforráshoz kapcsolódni.\nEllenőrizze a beállításokat, vagy válasszon másik adatforrást az előző lapon."
-
-#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
-msgstr "A választott külső adatforrás több címjegyzéket tartalmaz.\nVálassza ki közülük azt, amellyel dolgozni kíván."
-
-#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "A cím sablonban történő használatához meg kell adnia, hogy az egyes mezők milyen adatokat tartalmaznak.\n\nPéldául az e-mail címet tartalmazhatja akár egy „email”, egy „E-mail” vagy egy „EM” nevű mező – vagy valami teljesen más nevű is.\n\nKattintson az alábbi gombra a mezők megadásához."
-
-#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
-msgid  "Field Assignment"
-msgstr "Mező hozzárendelése"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "Az összes információ rendelkezésre áll, hogy címjegyzékét az %PRODUCTNAME-ban használhassa.\n\nÍrjon be egy tetszőleges nevet, ezen a néven fogja az %PRODUCTNAME nyilvántartani az adatforrást."
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
-msgid  "Location"
-msgstr "Hely"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
-msgid  "Browse..."
-msgstr "Tallózás..."
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
-msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr "A címjegyzék elérhetővé tétele az %PRODUCTNAME összes modulja számára."
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
-msgid  "Address book name"
-msgstr "Címjegyzék neve"
-
-#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
-msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr "Egy másik adatforrás már használja ezt a nevet. Az adatforrások nevének egyedinek kell lennie. Válaszon egy másik - nem használt - nevet."
-
-#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
-msgid  "Please select a type of address book."
-msgstr "Válassza ki a címjegyzék típusát."
-
-#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
 msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
+msgid  "Address book type"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
+msgid  "Connection Settings"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
+msgid  "Table selection"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
+msgid  "Field Assignment"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
+msgid  "Data Source Title"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
+msgid  "Please select the type of your external address book:"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
+msgid  "Evolution"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
+msgid  "Groupwise"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
+msgid  "Evolution LDAP"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
+msgid  "Mozilla / Netscape"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
+msgid  "Thunderbird"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
+msgid  "KDE address book"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
+msgid  "Mac OS X address book"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
+msgid  "LDAP address data"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
+msgid  "Outlook address book"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
+msgid  "Windows system address book"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
+msgid  "Other external data source"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
+msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
+msgid  "Settings"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
+msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
+msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
+msgid  "Field Assignment"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
+msgid  "Location"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
+msgid  "Browse..."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
+msgid  "Address book name"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
+msgid  "Please select a type of address book."
+msgstr ""
+
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
+#: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
 msgid  "Addresses"
-msgstr "Címek"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+#: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
 msgid  "Create Address Data Source"
-msgstr "Címadatforrás létrehozása"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+#: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr "A kapcsolatot nem sikerült létrehozni."
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+#: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
 msgid  "Please check the settings made for the data source."
-msgstr "Ellenőrizze az adatforrás beállításait."
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+#: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
 msgid  "Address Data - Field Assignment"
-msgstr "Címadatok - mező-hozzárendelés"
+msgstr ""
 
-#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
-msgstr "Jelenleg nincsenek mező-hozzárendelések.\nMegadhatja most a mezőket, de későbbre is halaszthatja.\nKésőbb a „Fájl - Sablonok - Címjegyzék-adatforrás...” menüparancs segítségével végezheti el a mezők hozzárendelését."
+#: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr ""
 
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
-msgid  "Table"
-msgstr "Táblázat"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
-msgid  "Search Key"
-msgstr "Keresési kulcs"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
-msgid  "AutoFilter"
-msgstr "Automatikus szűrő"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
-msgid  "Standard Filter"
-msgstr "Általános szűrő"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
-msgid  "Remove Filter"
-msgstr "Szűrő eltávolítása"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
-msgid  "Column Arrangement"
-msgstr "Oszlop rendezése"
-
-#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
-msgid  "Data Source"
-msgstr "Adatforrás"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\\n"
-msgstr "A következő oszlopneveket nem sikerült hozzárendelni:\n"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
-msgid  "Article"
-msgstr "Cikk"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
-msgid  "Book"
-msgstr "Könyv"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
-msgid  "Brochures"
-msgstr "Brosúrák"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
-msgid  "Conference proceedings"
-msgstr "Konferencia-jegyzőkönyv"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
-msgid  "Book excerpt"
-msgstr "Könyvkivonat"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
-msgid  "Book excerpt with title"
-msgstr "Könyvkivonat címmel"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
-msgid  "Conference proceedings"
-msgstr "Konferencia-jegyzőkönyv"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
-msgid  "Journal"
-msgstr "Napló"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
-msgid  "Techn. documentation"
-msgstr "Műszaki dokumentáció"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
-msgid  "Thesis"
-msgstr "Szakdolgozat"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
-msgid  "Miscellaneous"
-msgstr "Egyebek"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
-msgid  "Dissertation"
-msgstr "Értekezés"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
-msgid  "Conference proceedings"
-msgstr "Konferencia-jegyzőkönyv"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
-msgid  "Research report"
-msgstr "Kutatási jelentés"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
-msgid  "Unpublished"
-msgstr "Kiadatlan"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
-msgid  "e-mail"
-msgstr "e-mail"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
-msgid  "WWW document"
-msgstr "WWW-dokumentum"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
-msgid  "User-defined1"
-msgstr "Egyéni 1"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
-msgid  "User-defined2"
-msgstr "Egyéni 2"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
-msgid  "User-defined3"
-msgstr "Egyéni 3"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
-msgid  "User-defined4"
-msgstr "Egyéni 4"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
-msgid  "User-defined5"
-msgstr "Egyéni 5"
-
-#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
-msgid  "General"
-msgstr "Általános"
-
-#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
-msgid  "Insert Section..."
-msgstr "Szakasz beszúrása..."
-
-#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
-msgid  "Delete Section..."
-msgstr "Szakasz törlése..."
-
-#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
-msgid  "Modify Name..."
-msgstr "Név módosítása..."
-
-#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
-msgid  "~Short name"
-msgstr "Hi~vatkozás azonosítója"
-
-#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
-msgid  "~Type"
-msgstr "~Típus"
-
-#: source/bibliography/sections.src#ST_YEAR.String.Text
-msgid  "~Year"
-msgstr "É~v"
-
-#: source/bibliography/sections.src#ST_AUTHOR.String.Text
-msgid  "Author(s)"
-msgstr "Szerzők"
-
-#: source/bibliography/sections.src#ST_TITLE.String.Text
-msgid  "Tit~le"
-msgstr "~Mű címe"
-
-#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
-msgid  "~Publisher"
-msgstr "~Kiadó"
-
-#: source/bibliography/sections.src#ST_ADDRESS.String.Text
-msgid  "A~ddress"
-msgstr "~Cím"
-
-#: source/bibliography/sections.src#ST_ISBN.String.Text
-msgid  "~ISBN"
-msgstr "~ISBN"
-
-#: source/bibliography/sections.src#ST_CHAPTER.String.Text
-msgid  "~Chapter"
-msgstr "~Fejezet"
-
-#: source/bibliography/sections.src#ST_PAGE.String.Text
-msgid  "Pa~ge(s)"
-msgstr "~Oldalak száma"
-
-#: source/bibliography/sections.src#ST_EDITOR.String.Text
-msgid  "Editor"
-msgstr "Szerkesztő"
-
-#: source/bibliography/sections.src#ST_EDITION.String.Text
-msgid  "Ed~ition"
-msgstr "K~iadás"
-
-#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
-msgid  "~Book title"
-msgstr "~Könyv címe"
-
-#: source/bibliography/sections.src#ST_VOLUME.String.Text
-msgid  "Volume"
-msgstr "Kötet"
-
-#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
-msgid  "Publication t~ype"
-msgstr "~Kiadványtípus"
-
-#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
-msgid  "Organi~zation"
-msgstr "S~zervezet"
-
-#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
-msgid  "Instit~ution"
-msgstr "~Intézmény"
-
-#: source/bibliography/sections.src#ST_SCHOOL.String.Text
-msgid  "University"
-msgstr "Egyetem"
-
-#: source/bibliography/sections.src#ST_REPORT.String.Text
-msgid  "Type of re~port"
-msgstr "Jelentés típ~usa"
-
-#: source/bibliography/sections.src#ST_MONTH.String.Text
-msgid  "~Month"
-msgstr "~Hónap"
-
-#: source/bibliography/sections.src#ST_JOURNAL.String.Text
-msgid  "~Journal"
-msgstr "F~olyóirat címe"
-
-#: source/bibliography/sections.src#ST_NUMBER.String.Text
-msgid  "Numb~er"
-msgstr "~Szám"
-
-#: source/bibliography/sections.src#ST_SERIES.String.Text
-msgid  "Se~ries"
-msgstr "So~rozat"
-
-#: source/bibliography/sections.src#ST_ANNOTE.String.Text
-msgid  "Ann~otation"
-msgstr "~Magyarázó jegyzet"
-
-#: source/bibliography/sections.src#ST_NOTE.String.Text
-msgid  "~Note"
-msgstr "~Jegyzet"
-
-#: source/bibliography/sections.src#ST_URL.String.Text
-msgid  "URL"
-msgstr "URL"
-
-#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
-msgid  "User-defined field ~1"
-msgstr "Egyéni mező ~1"
-
-#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
-msgid  "User-defined field ~2"
-msgstr "Egyéni mező ~2"
-
-#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
-msgid  "User-defined field ~3"
-msgstr "Egyéni mező ~3"
-
-#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
-msgid  "User-defined field ~4"
-msgstr "Egyéni mező ~4"
-
-#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
-msgid  "User-defined field ~5"
-msgstr "Egyéni mező ~5"
-
-#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
-msgid  "Column names"
-msgstr "Oszlopnevek"
-
-#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
-msgid  "<none>"
-msgstr "<semmi>"
-
-#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
-msgid  "Column Layout for Table %1"
-msgstr "%1 tábla oszlopainak elrendezése"
-
-#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
-msgid  "Choose Data Source"
-msgstr "Adatforrás választása"
-
-#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
-msgid  "Entry"
-msgstr "Bejegyzés"
-
-#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
+#: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Field selection:"
-msgstr "Mező kijelölése:"
+msgstr ""
 
-#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
+#: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
 msgid  "Table;Query;Sql;Sql [Native]"
-msgstr "Tábla;Lekérdezés;SQL;SQL [Natív]"
+msgstr ""
 
-#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
+#: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
-msgstr "Irodalomjegyzék-adatbázis"
+msgstr ""
 
-#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
+#: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
 msgid  "Do you want to edit the column arrangement?"
-msgstr "Kívánja módosítani az oszlopok elrendezését?"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
-msgid  "Table Selection"
-msgstr "Táblakijelölés"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
-msgid  "Control"
-msgstr "Vezérlőelem"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "A jobb oldalon látható az űrlaphoz tartozó adatforrás összes táblája.\n\n\nVálassza ki azt a táblát, amelynek adatai a lista tartalmának alapjául szolgáljanak:"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
-msgid  "Field Selection"
-msgstr "Mező kijelölése"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
-msgid  "Existing fields"
-msgstr "Létező mezők"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
-msgid  "Display field"
-msgstr "Mező megjelenítése"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
-msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr "A kijelölt mező tartalma a kombinált listában jelenik meg."
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
-msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr "A kijelölt mező tartalma a listapanelben jelenik meg, ha a hivatkozott mezők megegyeznek."
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
-msgid  "Field Link"
-msgstr "Mezőhivatkozás"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
-msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr "Itt választhatja ki azokat azokat a mezőket, amelyek tartalmát meg kívánja jeleníteni."
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
-msgid  "Field from the ~Value Table"
-msgstr "Mező az Érték~táblából"
-
-#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
-msgid  "Field from the ~List Table"
-msgstr "Mező a ~Listatáblából"
-
-#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
-msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr "A kombinált lista tartalmát adatbázisba mentheti, vagy megjelenítheti."
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
-msgid  "Field Selection"
-msgstr "Mező kijelölése"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
-msgid  "Table element"
-msgstr "Táblaelem"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
-msgid  "Existing fields"
-msgstr "Létező mezők"
-
-#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
-msgid  "Selected fields"
-msgstr "Kijelölt mezők"
-
-#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
-msgid  " (Date)"
-msgstr " (Dátum)"
-
-#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
-msgid  " (Time)"
-msgstr " (Idő)"
-
-#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
-msgid  "Group Element Wizard"
-msgstr "Csoportelem tündér"
-
-#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
-msgid  "Table Element Wizard"
-msgstr "Táblaelem tündér"
-
-#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
-msgid  "List Box Wizard"
-msgstr "Lista tündér"
-
-#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
-msgid  "Combo Box Wizard"
-msgstr "Kombinált lista tündér"
-
-#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
-msgid  "The table connection to the data source could not be established."
-msgstr "Nem hozható létre táblakapcsolat az adatforráshoz."
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
-msgid  "Data"
-msgstr "Adat"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
-msgid  "Data"
-msgstr "Adat"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "A vezérlőhöz tartozó űrlap nincs (vagy nem teljesen van) hozzákötve egy adatforráshoz. \n\nKérem, válasszon másik adatforrást és táblát.\n\n\nAz oldalon végzett beállítások az oldal elhagyása után azonnal életbe lépnek."
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
-msgid  "~Data source:"
-msgstr "~Adatforrás:"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
-msgid  "~..."
-msgstr "~..."
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
-msgid  "~Table / Query:"
-msgstr "~Tábla / Lekérdezés:"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
-msgid  "Database Field"
-msgstr "Adatbázismező"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
-msgid  "Do you want to save the value in a database field?"
-msgstr "Kívánja az értéket adatbázismezőbe menteni?"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
-msgid  "~Yes, I want to save it in the following database field:"
-msgstr "~Igen, a következő adatbázismezőbe kívánom menteni:"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
-msgid  "~No, I only want to save the value in the form."
-msgstr "~Nem, csak az űrlapba kívánom menteni az értéket."
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
-msgid  "Form"
-msgstr "Űrlap"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
-msgid  "Data source"
-msgstr "Adatforrás"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
-msgid  "Content type"
-msgstr "Tartalomtípus"
-
-#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
-msgid  "Content"
-msgstr "Tartalom"
-
-#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
-msgid  "Table"
-msgstr "Tábla"
-
-#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
-msgid  "Query"
-msgstr "Lekérdezés"
-
-#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
-msgid  "SQL command"
-msgstr "SQL-parancs"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
-msgid  "Data"
-msgstr "Adat"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
-msgid  "Which ~names do you want to give the option fields?"
-msgstr "Mik legyenek a rádiógombok ~nevei?"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
-msgid  "~Option fields"
-msgstr "~Rádiógombok"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
-msgid  "Default Field Selection"
-msgstr "Alapértelmezett mező kiválasztása"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
-msgid  "Should one option field be selected as a default?"
-msgstr "Legyen alapértelmezésben kijelölt rádiógomb?"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
-msgid  "~Yes, the following:"
-msgstr "~Igen, a következő:"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
-msgid  "No, one particular field is not going to be selected."
-msgstr "Nem, ne legyen alapértelmezett gomb."
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
-msgid  "Field Values"
-msgstr "Mezőértékek"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
-msgid  "When you select an option, the option group is given a specific value."
-msgstr "Amennyiben egy rádiógombot kijelöl, a rádiógomb-csoport egy meghatározott értéket vesz fel."
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
-msgid  "Which ~value do you want to assign to each option?"
-msgstr "Milyen ~értékeket szeretne hozzárendelni az egyes lehetőségekhez?"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
-msgid  "~Option fields"
-msgstr "~Rádiógombok"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
-msgid  "Create Option Group"
-msgstr "Rádiógomb-csoport létrehozása"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
-msgid  "Which ~caption is to be given to your option group?"
-msgstr "Milyen ~felirattal látja el a rádiógomb-csoportot?"
-
-#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
-msgid  "These were all details needed to create the option group."
-msgstr "Mindössze ennyire volt szükség a rádiógomb-csoport létrehozásához."
-
-#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
-msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr "A rádiógombcsoport értékét mentheti egy adatbázismezőbe, vagy felhasználhatja egy későbbi művelethez."
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
-msgid  "<< Back"
-msgstr "<< Vissza"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
-msgid  "Next >>"
-msgstr "Tovább >>"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
-msgid  "Accept"
-msgstr "Elfogadás"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
-msgid  "Finish"
-msgstr "Befejezés"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
-msgid  " - Software License Agreement"
-msgstr " - Szoftverlicenc-szerződés"
-
-#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
-msgid  "- User Data"
-msgstr "- Felhasználó adatai"
-
-#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
-msgid  "Welcome"
-msgstr "Üdvözöljük!"
-
-#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "Üdvözli az %PRODUCTNAME %PRODUCTVERSION OEM!\n\nAz %PRODUCTNAME %PRODUCTVERSION OEM indításához adja meg személyes adatait a licencszerződést követő párbeszédablakban. Az %PRODUCTNAME könyvtárában található readme fájlokban fontos információkat találhat. Figyelmesen olvassa el ezeket a fájlokat. További részleteket az Oracle webhelyén is megtudhat:\n\nhttp://www.oracle.com/us/products/applications/open-office."
-
-#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
-msgid  "License Agreement"
-msgstr "Licencszerződés"
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
-msgid  "Please follow these steps to proceed with the installation:"
-msgstr "A telepítés folytatásához kövesse az alábbi lépéseket:"
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
-msgid  "1."
-msgstr "1."
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
-msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Olvassa végig a licencszerződést. A teljes szöveg megtekintéséhez használja a görgetősávot vagy a párbeszédablak „%PAGEDOWN” billentyűjét."
-
-#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
-msgid  "Page Down"
-msgstr "Lapozás"
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
-msgid  "2."
-msgstr "2."
-
-#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
-msgid  "Accept the License Agreement."
-msgstr "A licencfeltételek elfogadása"
-
-#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
-msgid  "I accept the terms of the Agreement."
-msgstr "A licencfeltételeket elfogadom."
-
-#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
-msgid  "~Accept"
-msgstr "~Elfogadás"
-
-#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
-msgid  "Decline"
-msgstr "Elutasítás"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
-msgid  "Tab Order"
-msgstr "Bejárási sorrend"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
-msgid  "Controls"
-msgstr "Vezérlőelemek"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
-msgid  "Move Up"
-msgstr "Mozgatás felfelé"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
-msgid  "Move Down"
-msgstr "Mozgatás lefelé"
-
-#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
-msgid  "Automatic Sort"
-msgstr "Automatikus rendezés"
-
-#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
-msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr "Ezen vezérlőmezők címkeként is használhatóak a következőkhöz: $control_class$ $control_name$"
-
-#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
-msgid  "~No assignment"
-msgstr "~Nincs hozzárendelés"
-
-#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
-msgid  "Label Field Selection"
-msgstr "Címkemező kiválasztása"
-
-#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
-msgid  "Forms"
-msgstr "Űrlapok"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "Szeretné törölni a(z) „#type” adattípust a modellből?\nNe feledje, hogy ez minden vezérlőelemre hatással lesz, amely ehhez az adattípushoz kötött."
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
-msgid  "Button"
-msgstr "Gomb"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
-msgid  "Option Button"
-msgstr "Rádiógomb"
-
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
-msgid  "Check Box"
-msgstr "Jelölőnégyzet"
+msgstr ""
+
+#: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
+msgid  "Column names"
+msgstr ""
+
+#: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
+msgid  "<none>"
+msgstr ""
+
+#: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
+msgid  "Column Layout for Table %1"
+msgstr ""
+
+#: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
+msgid  "Choose Data Source"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-msgid  "Label Field"
-msgstr "Címkemező"
+#: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
+msgid  "Entry"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
-msgid  "Group Box"
-msgstr "Csoportpanel"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
+msgid  "The following column names could not be assigned:\n"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
-msgid  "Text Box"
-msgstr "Szövegdoboz"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
+msgid  "Article"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-msgid  "Formatted Field"
-msgstr "Formázott mező"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
+msgid  "Book"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
-msgid  "List Box"
-msgstr "Listapanel"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
+msgid  "Brochures"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
-msgid  "Combo Box"
-msgstr "Kombinált lista"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
+msgid  "Conference proceedings"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
-msgid  "Image Button"
-msgstr "Képgomb"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
+msgid  "Book excerpt"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
-msgid  "Hidden Control"
-msgstr "Rejtett vezérlőelem"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
+msgid  "Book excerpt with title"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
-msgid  "Control (unknown type)"
-msgstr "Vezérlőelem (ismeretlen típus)"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
+msgid  "Conference proceedings"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-msgid  "Image Control"
-msgstr "Kép-vezérlőelem"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
+msgid  "Journal"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
-msgid  "File Selection"
-msgstr "Fájlválasztás"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
+msgid  "Techn. documentation"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
-msgid  "Date Field"
-msgstr "Dátummező"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
+msgid  "Thesis"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
-msgid  "Time Field"
-msgstr "Időmező"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
+msgid  "Miscellaneous"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
-msgid  "Numeric Field"
-msgstr "Számmező"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
+msgid  "Dissertation"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
-msgid  "Currency Field"
-msgstr "Pénzmező"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
+msgid  "Conference proceedings"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
-msgid  "Pattern Field"
-msgstr "Maszkolt mező"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
+msgid  "Research report"
+msgstr ""
 
-#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
-msgid  "Table Control "
-msgstr "Táblázat "
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
+msgid  "Unpublished"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
-msgid  "Link fields"
-msgstr "Mezők hivatkozása"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
+msgid  "e-mail"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
-msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr "A főűrlap aktuális rekordjaira vonatkozó részletes adatok alűrlapokkal jeleníthetők meg. Ehhez meg kell adnia, hogy az alűrlap mely oszlopai egyeznek a főűrlap oszlopaival."
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
+msgid  "WWW document"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
-msgid  "Suggest"
-msgstr "Javaslat"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
+msgid  "User-defined1"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
-msgid  "Sub Form"
-msgstr "Alűrlap"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
+msgid  "User-defined2"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
-msgid  "Master Form"
-msgstr "Főűrlap"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
+msgid  "User-defined3"
+msgstr ""
 
-#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
-msgid  "The columns of '#' could not be retrieved."
-msgstr "A(z) „#” oszlopai nem lekérhetők."
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
+msgid  "User-defined4"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
-msgid  "Default"
-msgstr "Alapértelmezett"
+#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
+msgid  "User-defined5"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+#: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr "Általános"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
+#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
+msgid  "Insert Section..."
+msgstr ""
+
+#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
+msgid  "Delete Section..."
+msgstr ""
+
+#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
+msgid  "Modify Name..."
+msgstr ""
+
+#: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
+msgid  "~Short name"
+msgstr ""
+
+#: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
+msgid  "~Type"
+msgstr ""
+
+#: bibliography/sections.src#ST_YEAR.STRING.TEXT
+msgid  "~Year"
+msgstr ""
+
+#: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
+msgid  "Author(s)"
+msgstr ""
+
+#: bibliography/sections.src#ST_TITLE.STRING.TEXT
+msgid  "Tit~le"
+msgstr ""
+
+#: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
+msgid  "~Publisher"
+msgstr ""
+
+#: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
+msgid  "A~ddress"
+msgstr ""
+
+#: bibliography/sections.src#ST_ISBN.STRING.TEXT
+msgid  "~ISBN"
+msgstr ""
+
+#: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
+msgid  "~Chapter"
+msgstr ""
+
+#: bibliography/sections.src#ST_PAGE.STRING.TEXT
+msgid  "Pa~ge(s)"
+msgstr ""
+
+#: bibliography/sections.src#ST_EDITOR.STRING.TEXT
+msgid  "Editor"
+msgstr ""
+
+#: bibliography/sections.src#ST_EDITION.STRING.TEXT
+msgid  "Ed~ition"
+msgstr ""
+
+#: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
+msgid  "~Book title"
+msgstr ""
+
+#: bibliography/sections.src#ST_VOLUME.STRING.TEXT
+msgid  "Volume"
+msgstr ""
+
+#: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
+msgid  "Publication t~ype"
+msgstr ""
+
+#: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
+msgid  "Organi~zation"
+msgstr ""
+
+#: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
+msgid  "Instit~ution"
+msgstr ""
+
+#: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
+msgid  "University"
+msgstr ""
+
+#: bibliography/sections.src#ST_REPORT.STRING.TEXT
+msgid  "Type of re~port"
+msgstr ""
+
+#: bibliography/sections.src#ST_MONTH.STRING.TEXT
+msgid  "~Month"
+msgstr ""
+
+#: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
+msgid  "~Journal"
+msgstr ""
+
+#: bibliography/sections.src#ST_NUMBER.STRING.TEXT
+msgid  "Numb~er"
+msgstr ""
+
+#: bibliography/sections.src#ST_SERIES.STRING.TEXT
+msgid  "Se~ries"
+msgstr ""
+
+#: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
+msgid  "Ann~otation"
+msgstr ""
+
+#: bibliography/sections.src#ST_NOTE.STRING.TEXT
+msgid  "~Note"
+msgstr ""
+
+#: bibliography/sections.src#ST_URL.STRING.TEXT
+msgid  "URL"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
+msgid  "User-defined field ~1"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
+msgid  "User-defined field ~2"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
+msgid  "User-defined field ~3"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
+msgid  "User-defined field ~4"
+msgstr ""
+
+#: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
+msgid  "User-defined field ~5"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
+msgid  "Table"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
+msgid  "Search Key"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
+msgid  "AutoFilter"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
+msgid  "Standard Filter"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
+msgid  "Remove Filter"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
+msgid  "Column Arrangement"
+msgstr ""
+
+#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
+msgid  "Data Source"
+msgstr ""
+
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr "Adat"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
-msgid  "No"
-msgstr "Nem"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
+msgid  "Data"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
-msgid  "Yes"
-msgstr "Igen"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
-msgid  "Help"
-msgstr "Súgó"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
+msgid  "~Data source:"
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
-msgid  "<Embedded-Image>"
-msgstr "<Beágyazott kép>"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
+msgid  "~..."
+msgstr ""
 
-#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
-msgid  "Text"
-msgstr "Szöveg"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
+msgid  "~Table / Query:"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
-msgid  "Edit mask"
-msgstr "Beviteli maszk"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
+msgid  "Database Field"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
-msgid  "Literal mask"
-msgstr "Kifejezésmaszk"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
+msgid  "Do you want to save the value in a database field?"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
-msgid  "Read-only"
-msgstr "Csak olvasásra"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
-msgid  "Enabled"
-msgstr "Engedélyezve"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
+msgid  "~No, I only want to save the value in the form."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
-msgid  "Visible"
-msgstr "Látható"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
+msgid  "Form"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
-msgid  "AutoFill"
-msgstr "Automatikus kitöltés"
-
-#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
-msgid  "Line count"
-msgstr "Sorok száma"
-
-#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
-msgid  "Max. text length"
-msgstr "Maximális szöveghossz"
-
-#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
-msgid  "Spin Button"
-msgstr "Léptetőgomb"
-
-#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
-msgid  "Strict format"
-msgstr "Kötött formátum"
-
-#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
-msgid  "Thousands separator"
-msgstr "Ezreselválasztó"
-
-#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
-msgid  "Printable"
-msgstr "Nyomtatható"
-
-#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
-msgid  "URL"
-msgstr "URL"
-
-#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
-msgid  "Frame"
-msgstr "Keret"
-
-#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
-msgid  "Help text"
-msgstr "Súgó szövege"
-
-#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
-msgid  "Help URL"
-msgstr "Súgó-URL"
-
-#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
-msgid  "Additional information"
-msgstr "További információk"
-
-#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
-msgid  "Password character"
-msgstr "Jelszókarakter"
-
-#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
-msgid  "Tristate"
-msgstr "Háromállapotú"
-
-#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
-msgid  "Empty string is NULL"
-msgstr "Üres szöveg = NULL"
-
-#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
-msgid  "Decimal accuracy"
-msgstr "Tizedes pontosság"
-
-#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
-msgid  "Graphics"
-msgstr "Kép"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
-msgid  "Default selection"
-msgstr "Alapértelmezett kijelölés"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
-msgid  "Default button"
-msgstr "Alapértelmezett gomb"
-
-#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
-msgid  "Label Field"
-msgstr "Címkemező"
-
-#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
-msgid  "Label"
-msgstr "Címke"
-
-#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
-msgid  "Alignment"
-msgstr "Igazítás"
-
-#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
-msgid  "Vert. Alignment"
-msgstr "Függ. igazítás"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
-msgid  "Top"
-msgstr "Fent"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
-msgid  "Middle"
-msgstr "Középen"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
-msgid  "Bottom"
-msgstr "Lent"
-
-#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
-msgid  "Graphics alignment"
-msgstr "Kép igazítása"
-
-#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
-msgid  "Font"
-msgstr "Betűkészlet"
-
-#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
-msgid  "Background color"
-msgstr "Háttérszín"
-
-#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
-msgid  "Border"
-msgstr "Szegély"
-
-#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
-msgid  "Icon size"
-msgstr "Ikonméret"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
-msgid  "Small"
-msgstr "Kicsi"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
-msgid  "Large"
-msgstr "Nagy"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
-msgid  "Positioning"
-msgstr "Elhelyezés"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
-msgid  "Navigation"
-msgstr "Navigáció"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
-msgid  "Acting on a record"
-msgstr "Művelet egy rekordon"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
-msgid  "Filtering / Sorting"
-msgstr "Szűrés / Rendezés"
-
-#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
-msgid  "Horizontal scroll bar"
-msgstr "Vízszintes görgetősáv"
-
-#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
-msgid  "Vertical scroll bar"
-msgstr "Függőleges görgetősáv"
-
-#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
-msgid  "Word break"
-msgstr "Szótörés"
-
-#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
-msgid  "Multiline input"
-msgstr "Többsoros bevitel"
-
-#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
-msgid  "Multiselection"
-msgstr "Többszörös kijelölés"
-
-#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
-msgid  "Name"
-msgstr "Név"
-
-#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
-msgid  "Tab order"
-msgstr "Bejárási sorrend"
-
-#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
-msgid  "Mouse wheel scroll"
-msgstr "Egérgörgő görgetése"
-
-#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
-msgid  "Filter"
-msgstr "Szűrő"
-
-#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
-msgid  "Sort"
-msgstr "Rendezés"
-
-#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
-msgid  "Record marker"
-msgstr "Rekordjelölő"
-
-#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
-msgid  "Filter proposal"
-msgstr "Javasolt szűrő"
-
-#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
-msgid  "Navigation bar"
-msgstr "Navigációs eszköztár"
-
-#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
-msgid  "Cycle"
-msgstr "Körforgás"
-
-#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
-msgid  "Tabstop"
-msgstr "Tabulátorpozíció"
-
-#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
-msgid  "Data field"
-msgstr "Adatmező"
-
-#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
-msgid  "Dropdown"
-msgstr "Legördülő"
-
-#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
-msgid  "Bound field"
-msgstr "Kapcsolt mező"
-
-#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
-msgid  "List content"
-msgstr "Lista tartalma"
-
-#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
-msgid  "Type of list contents"
-msgstr "Lista tartalmának típusa"
-
-#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
-msgid  "Content"
-msgstr "Tartalom"
-
-#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
-msgid  "Content type"
-msgstr "Tartalomtípus"
-
-#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
-msgid  "Allow additions"
-msgstr "Hozzáadás engedélyezése"
-
-#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
-msgid  "Allow deletions"
-msgstr "Törlés engedélyezése"
-
-#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
-msgid  "Allow modifications"
-msgstr "Módosítás engedélyezése"
-
-#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
-msgid  "Add data only"
-msgstr "Csak adatok hozzáadása engedélyezett"
-
-#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
 msgid  "Data source"
-msgstr "Adatforrás"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
-msgid  "Link master fields"
-msgstr "Elsődleges mezők csatolása"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
+msgid  "Content type"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
-msgid  "Link slave fields"
-msgstr "Alárendelt mezők csatolása"
+#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
+msgid  "Content"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
-msgid  "Value min."
-msgstr "Legkisebb érték"
-
-#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
-msgid  "Value max."
-msgstr "Legnagyobb érték"
-
-#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
-msgid  "Incr./decrement value"
-msgstr "Érték növelése/csökkentése"
-
-#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
-msgid  "Currency symbol"
-msgstr "Pénznem szimbóluma"
-
-#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
-msgid  "Date min."
-msgstr "Legkorábbi dátum"
-
-#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
-msgid  "Date max."
-msgstr "Legkésőbbi dátum"
-
-#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
-msgid  "Date format"
-msgstr "Dátumformátum"
-
-#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
-msgid  "Selection"
-msgstr "Kijelölés"
-
-#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
-msgid  "Time min."
-msgstr "Min. idő"
-
-#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
-msgid  "Time max."
-msgstr "Max. idő"
-
-#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
-msgid  "Time format"
-msgstr "Időformátum"
-
-#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
-msgid  "Prefix symbol"
-msgstr "Előtagjel"
-
-#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
-msgid  "Value"
-msgstr "Érték"
-
-#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
-msgid  "Formatting"
-msgstr "Formázás"
-
-#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
-msgid  "Class ID"
-msgstr "Osztályazonosító"
-
-#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
-msgid  "Height"
-msgstr "Magasság"
-
-#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
-msgid  "Width"
-msgstr "Szélesség"
-
-#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
-msgid  "List index"
-msgstr "Listaindex"
-
-#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
-msgid  "Row height"
-msgstr "Sormagasság"
-
-#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
-msgid  "Fill color"
-msgstr "Kitöltőszín"
-
-#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
-msgid  "Line color"
-msgstr "Sor színe"
-
-#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
-msgid  "Reference value (on)"
-msgstr "Referenciaérték (be)"
-
-#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
-msgid  "Reference value (off)"
-msgstr "Referenciaérték (ki)"
-
-#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
-msgid  "List entries"
-msgstr "Listabejegyzések"
-
-#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
-msgid  "Action"
-msgstr "Művelet"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
-msgid  "URL"
-msgstr "URL"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
-msgid  "Type of submission"
-msgstr "Elküldés típusa"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
-msgid  "Default status"
-msgstr "Alapértelmezett állapot"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
-msgid  "Submission encoding"
-msgstr "Küldés karakterkódolása"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
-msgid  "Default value"
-msgstr "Alapértelmezett érték"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
-msgid  "Default text"
-msgstr "Alapértelmezett szöveg"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
-msgid  "Default date"
-msgstr "Alapértelmezett dátum"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
-msgid  "Default time"
-msgstr "Alapértelmezett idő"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
-msgid  "Frame"
-msgstr "Keret"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
-msgid  "Without frame"
-msgstr "Keret nélkül"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
-msgid  "3D look"
-msgstr "Térhatású"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
-msgid  "Flat"
-msgstr "Lapos"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
-msgid  "Valuelist"
-msgstr "Értéklista"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr "Táblázat"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr "Lekérdezés"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
-msgid  "Sql"
-msgstr "Sql"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
-msgid  "Sql [Native]"
-msgstr "Sql [natív]"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
-msgid  "Tablefields"
-msgstr "Táblamezők"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
-msgid  "Left"
-msgstr "Balra"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
-msgid  "Center"
-msgstr "Középre"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
-msgid  "Right"
-msgstr "Jobbra"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
-msgid  "None"
-msgstr "Nincs"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
-msgid  "Submit form"
-msgstr "Űrlapok elküldése"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
-msgid  "Reset form"
-msgstr "Űrlap alaphelyzetbe állítása"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
-msgid  "Open document/web page"
-msgstr "Dokumentum/weblap megnyitása"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
-msgid  "First record"
-msgstr "Első rekord"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
-msgid  "Previous record"
-msgstr "Előző rekord"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
-msgid  "Next record"
-msgstr "Következő rekord"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
-msgid  "Last record"
-msgstr "Utolsó rekord"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
-msgid  "Save record"
-msgstr "Rekord mentése"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
-msgid  "Undo data entry"
-msgstr "Adatbevitel visszavonása"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
-msgid  "New record"
-msgstr "Új rekord"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
-msgid  "Delete record"
-msgstr "Rekord törlése"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
-msgid  "Refresh form"
-msgstr "Űrlap frissítése"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
-msgid  "Get"
-msgstr "Lekérés"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
-msgid  "Post"
-msgstr "Küldés"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
-msgid  "URL"
-msgstr "URL"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
-msgid  "Multipart"
-msgstr "Több részes"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
-msgid  "Text"
-msgstr "Szöveg"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
-msgid  "Standard (short)"
-msgstr "Standard (rövid)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
-msgid  "Standard (short YY)"
-msgstr "Standard (rövid ÉÉ)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
-msgid  "Standard (short YYYY)"
-msgstr "Standard (rövid ÉÉÉÉ)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
-msgid  "Standard (long)"
-msgstr "Standard (hosszú)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
-msgid  "DD/MM/YY"
-msgstr "NN/HH/ÉÉ"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
-msgid  "MM/DD/YY"
-msgstr "HH/NN/ÉÉ"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
-msgid  "YY/MM/DD"
-msgstr "ÉÉ/HH/NN"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
-msgid  "DD/MM/YYYY"
-msgstr "NN/HH/ÉÉÉÉ"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
-msgid  "MM/DD/YYYY"
-msgstr "HH/NN/ÉÉÉÉ"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
-msgid  "YYYY/MM/DD"
-msgstr "ÉÉÉÉ/HH/NN"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
-msgid  "YY-MM-DD"
-msgstr "ÉÉ-HH-NN"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
-msgid  "YYYY-MM-DD"
-msgstr "ÉÉÉÉ-HH-NN"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
-msgid  "13:45"
-msgstr "13:45"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
-msgid  "13:45:00"
-msgstr "13:45:00"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
-msgid  "01:45 PM"
-msgstr "01:45 DU"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
-msgid  "01:45:00 PM"
-msgstr "01:45:00 DU"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
-msgid  "Not Selected"
-msgstr "Nincs kijelölve"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
-msgid  "Selected"
-msgstr "Kijelölve"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
-msgid  "Not Defined"
-msgstr "Nincs megadva"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
-msgid  "All records"
-msgstr "Összes rekord"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
-msgid  "Active record"
-msgstr "Aktív rekord"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
-msgid  "Current page"
-msgstr "Aktuális lap"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
-msgid  "No"
-msgstr "Nem"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
-msgid  "Yes"
-msgstr "Igen"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
-msgid  "Parent Form"
-msgstr "Szülőűrlap"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
-msgid  "None"
-msgstr "Nincs"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
-msgid  "Single"
-msgstr "Egyszeres"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
-msgid  "Multi"
-msgstr "Többszörös"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
-msgid  "Range"
-msgstr "Tartomány"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
-msgid  "Fill parameters"
-msgstr "Paraméterek kitöltése"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
-msgid  "Execute action"
-msgstr "Művelet végrehajtása"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
-msgid  "After updating"
-msgstr "Frissítés után"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
-msgid  "Before updating"
-msgstr "Frissítés előtt"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
-msgid  "Before record action"
-msgstr "Rekordművelet előtt"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
-msgid  "After record action"
-msgstr "Rekordművelet után"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
-msgid  "Confirm deletion"
-msgstr "Törlés megerősítése"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
-msgid  "Error occurred"
-msgstr "Hiba történt"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
-msgid  "When receiving focus"
-msgstr "Amikor a fókuszt megkapja"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
-msgid  "When losing focus"
-msgstr "Amikor a fókuszt elveszti"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
-msgid  "Item status changed"
-msgstr "Elem állapota változott"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
-msgid  "Key pressed"
-msgstr "Billentyű lenyomva"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
-msgid  "Key released"
-msgstr "Billentyű felengedve"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
-msgid  "When loading"
-msgstr "Töltés közben"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
-msgid  "Before reloading"
-msgstr "Újratöltés előtt"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
-msgid  "When reloading"
-msgstr "Újratöltéskor"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
-msgid  "Mouse moved while key pressed"
-msgstr "Egér mozgott a billentyű lenyomása alatt"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
-msgid  "Mouse inside"
-msgstr "Egér belül"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
-msgid  "Mouse outside"
-msgstr "Egér kívül"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
-msgid  "Mouse moved"
-msgstr "Egér mozdult"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
-msgid  "Mouse button pressed"
-msgstr "Egérgomb lenyomása"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
-msgid  "Mouse button released"
-msgstr "Egérgomb elengedése"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
-msgid  "Before record change"
-msgstr "Rekordváltozás előtt"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
-msgid  "After record change"
-msgstr "Rekordváltozás után"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
-msgid  "After resetting"
-msgstr "Alaphelyzetbe állítás után"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
-msgid  "Prior to reset"
-msgstr "Alaphelyzetbe állítás előtt"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
-msgid  "Approve action"
-msgstr "Művelet jóváhagyása"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
-msgid  "Before submitting"
-msgstr "Elküldés előtt"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
-msgid  "Text modified"
-msgstr "Szöveg módosítva"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
-msgid  "Before unloading"
-msgstr "Kilépés előtt"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
-msgid  "When unloading"
-msgstr "Kilépéskor"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
-msgid  "Changed"
-msgstr "Változott"
-
-#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
-msgid  "Events"
-msgstr "Események"
-
-#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
-msgid  "Analyze SQL command"
-msgstr "SQL-parancs elemzése"
-
-#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
-msgid  "PositionX"
-msgstr "X pozíció"
-
-#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
-msgid  "PositionY"
-msgstr "Y pozíció"
-
-#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
-msgid  "Title"
-msgstr "Cím"
-
-#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
-msgid  "Page (step)"
-msgstr "Oldal (fázis)"
-
-#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
-msgid  "Progress value"
-msgstr "Folyamatérték"
-
-#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
-msgid  "Progress value min."
-msgstr "Legkisebb folyamatérték"
-
-#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
-msgid  "Progress value max."
-msgstr "Legnagyobb folyamatérték"
-
-#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
-msgid  "Scroll value"
-msgstr "Görgetési érték"
-
-#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
-msgid  "Scroll value max."
-msgstr "Maximális görgetési érték"
-
-#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
-msgid  "Scroll value min."
-msgstr "Min. görgetési érték"
-
-#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
-msgid  "Default scroll value"
-msgstr "Alapértelmezett görgetési érték"
-
-#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
-msgid  "Small change"
-msgstr "Kis változás"
-
-#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
-msgid  "Large change"
-msgstr "Nagy változás"
-
-#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
-msgid  "Delay"
-msgstr "Késleltetés"
-
-#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
-msgid  "Repeat"
-msgstr "Ismétlés"
-
-#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
-msgid  "Visible size"
-msgstr "Látható méret"
-
-#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
-msgid  "Orientation"
-msgstr "Tájolás"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
-msgid  "Horizontal"
-msgstr "Vízszintes"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
-msgid  "Vertical"
-msgstr "Függőleges"
-
-#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
-msgid  "While adjusting"
-msgstr "Beállítás során"
-
-#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
-msgid  "Date"
-msgstr "Dátum"
-
-#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
-msgid  "State"
-msgstr "Állapot"
-
-#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
-msgid  "Time"
-msgstr "Idő"
-
-#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
-msgid  "Scale"
-msgstr "Skála"
-
-#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
-msgid  "Button type"
-msgstr "Gombtípus"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
-msgid  "Default"
-msgstr "Alapértelmezett"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
-msgid  "OK"
-msgstr "OK"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
-msgid  "Cancel"
-msgstr "Mégse"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
-msgid  "Help"
-msgstr "Súgó"
-
-#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr "Nem hozható létre kapcsolat a következő adatforrással: „$name$”."
-
-#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
-msgid  "Text"
-msgstr "szöveg"
-
-#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
-msgid  "Linked cell"
-msgstr "Csatolt cella"
-
-#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
-msgid  "Source cell range"
-msgstr "Forrás-cellatartomány"
-
-#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
-msgid  "Contents of the linked cell"
-msgstr "A csatolt cella tartalma"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
-msgid  "The selected entry"
-msgstr "Kijelölt bejegyzés"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
-msgid  "Position of the selected entry"
-msgstr "Kijelölt bejegyzés pozíciója"
-
-#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
-msgid  "Scrollbars"
-msgstr "Görgetősávok"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
-msgid  "Single-line"
-msgstr "Egysoros"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
-msgid  "Multi-line"
-msgstr "Többsoros"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
-msgid  "Multi-line with formatting"
-msgstr "Többsoros formázással"
-
-#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
-msgid  "Symbol color"
-msgstr "Szimbólum színe"
-
-#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
-msgid  "Text lines end with"
-msgstr "Szövegsorok végződése"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
-msgid  "LF (Unix)"
-msgstr "LF (Unix)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
-msgid  "CR+LF (Windows)"
-msgstr "CR+LF (Windows)"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
-msgid  "None"
-msgstr "Semmi"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
-msgid  "Horizontal"
-msgstr "Vízszintes"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
-msgid  "Vertical"
-msgstr "Függőleges"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
-msgid  "Both"
-msgstr "Mindkettő"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
-msgid  "Table"
-msgstr "Tábla"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
-msgid  "Query"
-msgstr "Lekérdezés"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
-msgstr "SQL-parancs"
-
-#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
-msgid  "Toggle"
-msgstr "Nézetváltás"
-
-#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
-msgid  "Take Focus on Click"
-msgstr "Kattintásra fókusz"
-
-#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
-msgid  "Hide selection"
-msgstr "Kijelölés elrejtése"
-
-#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
-msgid  "Style"
-msgstr "Stílus"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
-msgid  "3D"
-msgstr "Térbeli"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
-msgid  "Flat"
-msgstr "Lapos"
-
-#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
-msgid  "Border color"
-msgstr "Szegély színe"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
-msgid  "Left top"
-msgstr "Balra fent"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
-msgid  "Left centered"
-msgstr "Balra középen"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
-msgid  "Left bottom"
-msgstr "Balra lent"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
-msgid  "Right top"
-msgstr "Jobbra fent"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
-msgid  "Right centered"
-msgstr "Jobbra középen"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
-msgid  "Right bottom"
-msgstr "Jobbra lent"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
-msgid  "Above left"
-msgstr "Felette balra"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
-msgid  "Above centered"
-msgstr "Felette középen"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
-msgid  "Above right"
-msgstr "Felette jobbra"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
-msgid  "Below left"
-msgstr "Alatta balra"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
-msgid  "Below centered"
-msgstr "Alatta középen"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
-msgid  "Below right"
-msgstr "Alatta jobbra"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
-msgid  "Centered"
-msgstr "Középen"
-
-#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
-msgid  "Wrap text automatically"
-msgstr "Automatikus szövegtördelés"
-
-#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
-msgid  "Text type"
-msgstr "Szövegtípus"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
-msgid  "Hide"
-msgstr "Elrejtés"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
-msgid  "Show"
-msgstr "Megjelenítés"
-
-#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
-msgid  "XML data model"
-msgstr "XML-adatmodell"
-
-#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
-msgid  "Binding expression"
-msgstr "Kötéskifejezés"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
-msgid  "Required"
-msgstr "Szükséges"
-
-#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
-msgid  "List entry source"
-msgstr "Listaelem forrása"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
-msgid  "Relevant"
-msgstr "Releváns"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
-msgid  "Read-only"
-msgstr "Csak olvasásra"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
-msgid  "Constraint"
-msgstr "Kényszerfeltétel"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
-msgid  "Calculation"
-msgstr "Számolás"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
-msgid  "Data type"
-msgstr "Adattípus"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
-msgid  "Whitespaces"
-msgstr "Üres karakterek"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
-msgid  "Preserve"
-msgstr "Megőrzés"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
-msgid  "Replace"
-msgstr "Csere"
-
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
-msgid  "Collapse"
-msgstr "Összevonás"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
-msgid  "Pattern"
-msgstr "Mintázat"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
-msgid  "Length"
-msgstr "Hossz"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
-msgid  "Length (at least)"
-msgstr "Hossz (legalább)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
-msgid  "Length (at most)"
-msgstr "Hossz (legfeljebb)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
-msgid  "Digits (total)"
-msgstr "Számjegyek (összesen)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
-msgid  "Digits (fraction)"
-msgstr "Számjegyek (törtrész)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
-msgid  "Max. (inclusive)"
-msgstr "Max. (inkluzív)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
-msgid  "Max. (exclusive)"
-msgstr "Max. (exkluzív)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
-msgid  "Min. (inclusive)"
-msgstr "Min. (inkluzív)"
-
-#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
-msgid  "Min. (exclusive)"
-msgstr "Max. (exkluzív)"
-
-#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
-msgid  "Submission"
-msgstr "Beküldés"
-
-#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
-msgid  "Binding"
-msgstr "Kötés"
-
-#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
-msgid  "Selection type"
-msgstr "Kijelölés típusa"
-
-#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
-msgid  "Root displayed"
-msgstr "Gyökér megjelenik"
-
-#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
-msgid  "Show handles"
-msgstr "Fogantyúk megjelenítése"
-
-#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
-msgid  "Show root handles"
-msgstr "Gyökérfogantyúk megjelenítése"
-
-#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
-msgid  "Editable"
-msgstr "Szerkeszthető"
-
-#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
-msgid  "Invokes stop node editing"
-msgstr "Indítja a stop csomópont szerkesztését"
-
-#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
-msgid  "With title bar"
-msgstr "Címsorral"
-
-#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
-msgid  "No Label"
-msgstr "Nincs címke"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
+msgid  "Group Element Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
+msgid  "Table Element Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
+msgid  "List Box Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
+msgid  "Combo Box Wizard"
+msgstr ""
+
+#: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
+msgid  "The table connection to the data source could not be established."
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
+msgid  "Field Selection"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
+msgid  "Table element"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
+msgid  "Existing fields"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
+msgid  "Selected fields"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
+msgid  " (Date)"
+msgstr ""
+
+#: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
+msgid  " (Time)"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
+msgid  "Data"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
+msgid  "Which ~names do you want to give the option fields?"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
+msgid  "~Option fields"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
+msgid  "Default Field Selection"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
+msgid  "Should one option field be selected as a default?"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
+msgid  "~Yes, the following:"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
+msgid  "No, one particular field is not going to be selected."
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
+msgid  "Field Values"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
+msgid  "When you select an option, the option group is given a specific value."
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
+msgid  "Which ~value do you want to assign to each option?"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
+msgid  "~Option fields"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
+msgid  "Create Option Group"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
+msgid  "Which ~caption is to be given to your option group?"
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
+msgid  "These were all details needed to create the option group."
+msgstr ""
+
+#: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
+msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
+msgid  "Table Selection"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
+msgid  "Control"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
+msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
+msgid  "Field Selection"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
+msgid  "Existing fields"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
+msgid  "Display field"
+msgstr ""
+
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
+msgid  "The contents of the field selected will be shown in the combo box list."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
-msgid  "No"
-msgstr "Nem"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
-msgid  "Keep Ratio"
-msgstr "Rögzített méretarány"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
+msgid  "Field Link"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
-msgid  "Fit to Size"
-msgstr "Méretre igazítás"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
-msgid  "Input required"
-msgstr "Bevitel kötelező"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
+msgid  "Field from the ~Value Table"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
-msgid  "Text direction"
-msgstr "Szövegirány"
+#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
+msgid  "Field from the ~List Table"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
-msgid  "Left-to-right"
-msgstr "Balról jobbra"
+#: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
-msgid  "Right-to-left"
-msgstr "Jobbról balra"
+#: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
+msgid  "<< Back"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
-msgid  "Use superordinate object settings"
-msgstr "Szülőobjektum beállításainak használata"
+#: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
+msgid  "Next >>"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
-msgid  "Never"
-msgstr "Soha"
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
+msgid  "Accept"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
-msgid  "When focused"
-msgstr "Ha fókuszban van"
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
+msgid  "Finish"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
-msgid  "Always"
-msgstr "Mindig"
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
+msgid  " - Software License Agreement"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
-msgid  "Anchor"
-msgstr "Horgony"
+#: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
+msgid  "- User Data"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
-msgid  "To Paragraph"
-msgstr "Bekezdésre"
+#: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
+msgid  "Welcome"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
-msgid  "As Character"
-msgstr "Karakterként"
+#: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
-msgid  "To Page"
-msgstr "Oldalra"
+#: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
+msgid  "License Agreement"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
-msgid  "To Frame"
-msgstr "Keretre"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
+msgid  "Please follow these steps to proceed with the installation:"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
-msgid  "To Character"
-msgstr "Karakterre"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
+msgid  "1."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
-msgid  "To Page"
-msgstr "Oldalra"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
-msgid  "To Cell"
-msgstr "Cellára"
+#: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
+msgid  "Page Down"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
-msgid  "Regular"
-msgstr "Normál"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
+msgid  "2."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
-msgid  "Bold Italic"
-msgstr "Félkövér dőlt"
+#: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
+msgid  "Accept the License Agreement."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
-msgid  "Italic"
-msgstr "Dőlt"
+#: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
+msgid  "I accept the terms of the Agreement."
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
-msgid  "Bold"
-msgstr "Félkövér"
+#: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
+msgid  "~Accept"
+msgstr ""
 
-#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
-msgid  "(Default)"
-msgstr "(Alapértelmezett)"
+#: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
+msgid  "Decline"
+msgstr ""
 
-#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+#: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
 msgid  "Character"
-msgstr "Karakter"
+msgstr ""
 
-#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+#: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
 msgid  "Font"
-msgstr "Betűkészlet"
+msgstr ""
 
-#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+#: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr "Betűhatások"
+msgstr ""
 
-#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
-msgid  "New Data Type"
-msgstr "Új adattípus"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
+msgid  "Link fields"
+msgstr ""
 
-#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
-msgid  "Type a name for the new data type:"
-msgstr "Írja be az új adattípus nevét:"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
+msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\\n Dev~ice"
-msgstr "~Eszköz\nnévjegye"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
+msgid  "Suggest"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\\nPreview"
-msgstr "Előnézet\nlétrehozása"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
+msgid  "Sub Form"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
-msgid  "Preview"
-msgstr "Előnézet"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
+msgid  "Master Form"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
-msgid  "Scan area"
-msgstr "Beolvasási terület"
+#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
+msgid  "The columns of '#' could not be retrieved."
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
-msgid  "Left:"
-msgstr "Bal:"
+#: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
+msgid  "Edit mask"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
-msgid  "Top:"
-msgstr "Teteje:"
+#: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
+msgid  "Literal mask"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
-msgid  "Right:"
-msgstr "Jobb:"
+#: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
+msgid  "Read-only"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
-msgid  "Bottom:"
-msgstr "Alja:"
+#: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
+msgid  "Enabled"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
-msgid  "Device used:"
-msgstr "Használatban lévő eszköz:"
+#: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
+msgid  "Visible"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
-msgid  "Resolution [~DPI]"
-msgstr "Felbontás [~DPI]"
+#: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
+msgid  "AutoFill"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
-msgid  "Show advanced options"
-msgstr "Speciális beállítások megjelenítése"
+#: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
+msgid  "Line count"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
-msgid  "Options:"
-msgstr "Beállítások:"
+#: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
+msgid  "Max. text length"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
-msgid  "Vector element"
-msgstr "Vektorelem"
+#: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
+msgid  "Spin Button"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
-msgid  "Set"
-msgstr "Beállítás"
+#: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
+msgid  "Strict format"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
-msgid  "Scanner"
-msgstr "Lapolvasó"
+#: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
+msgid  "Thousands separator"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
-msgstr "Eszköz: %s\nGyártó: %s\nModell: %s\nTípus: %s"
+#: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
+msgid  "Printable"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
-msgid  "An error occurred while scanning."
-msgstr "Hiba történt a lapolvasás közben."
+#: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
+msgid  "URL"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
-msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr "Az eszköz nem rendelkezik előnézet lehetőséggel. Ezért egy normál beolvasás lesz az előnézet alapja. Ez eltarthat egy darabig."
+#: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
+msgid  "Frame"
+msgstr ""
 
-#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
-msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr "A SANE-illesztőfelület beállítása sikertelen. A lapolvasás nem lehetséges."
+#: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
+msgid  "Help text"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
-msgid  "Set"
-msgstr "Beállítás"
+#: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
+msgid  "Help URL"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
-msgid  "Linear ascending"
-msgstr "Egyenletesen növekvő"
+#: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
+msgid  "Additional information"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
-msgid  "Linear descending"
-msgstr "Egyenletesen csökkenő"
+#: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
+msgid  "Password character"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
-msgid  "Original values"
-msgstr "Eredeti értékek"
+#: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
+msgid  "Tristate"
+msgstr ""
 
-#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
-msgid  "Exponential increasing"
-msgstr "Exponenciálisan növekvő"
+#: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
+msgid  "Empty string is NULL"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
-msgid  "Checking..."
-msgstr "Ellenőrzés..."
+#: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
+msgid  "Decimal accuracy"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
-msgid  "Checking for an update failed."
-msgstr "A frissítés keresése sikertelen."
+#: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
+msgid  "Graphics"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr "Az %PRODUCTNAME %PRODUCTVERSION naprakész."
+#: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
+msgid  "Default selection"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
-msgstr "Már elérhető az %PRODUCTNAME %NEXTVERSION.\n\nA telepített verzió: %PRODUCTNAME %PRODUCTVERSION.\n\nMegjegyzés: Frissítés letöltése előtt győződjön meg arról, hogy elégséges jogosultsággal rendelkezik a telepítéshez.\nJelszó, általában a rendszergazda vagy a root jelszava szükséges lehet."
+#: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
+msgid  "Default button"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
-msgid  "Check for Updates"
-msgstr "Frissítések keresése"
+#: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
+msgid  "Label Field"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr "Az %PRODUCTNAME %NEXTVERSION letöltése szünetel..."
+#: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
+msgid  "Label"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr "Az %PRODUCTNAME %NEXTVERSION letöltése megállt"
+#: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
+msgid  "Alignment"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "A letöltés helye: %DOWNLOAD_PATH.\n\nAz Eszközök – Beállítások... - %PRODUCTNAME – Online frissítés alatt módosíthatja a letöltés helyét."
+#: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
+msgid  "Vert. Alignment"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
-msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr "A(z) %FILE_NAME letöltődött a(z) %DOWNLOAD_PATH útvonalra."
+#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
+msgid  "Top"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "A frissítés automatikus letöltése jelenleg nem érhető el.\n\nKattintson a „Letöltés...” gombra az %PRODUCTNAME %NEXTVERSION kézi letöltéséhez a webhelyről."
+#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
+msgid  "Middle"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
-msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr "Az %PRODUCTNAME %NEXTVERSION letöltése folyamatban..."
+#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
+msgid  "Bottom"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
-msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr "Az %PRODUCTNAME %NEXTVERSION letöltése befejeződött. Készen áll a telepítésre."
+#: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
+msgid  "Graphics alignment"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
+#: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
+msgid  "Font"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
-msgid  "Do you really want to cancel the download?"
-msgstr "Biztosan megszakítja a letöltést?"
+#: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
+msgid  "Background color"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
-msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr "A frissítés telepítéséhez be kell zárni az %PRODUCTNAME %PRODUCTVERSION programot. Szeretné most telepíteni a frissítést?"
+#: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
+msgid  "Border"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
-msgid  "Install ~now"
-msgstr "Telepítés ~most"
+#: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
+msgid  "Icon size"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
-msgid  "Install ~later"
-msgstr "Telepítés ~később"
+#: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
+msgid  "Small"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
-msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr "Nem futtatható a telepítőalkalmazás, futtassa kézzel a(z) %FILE_NAME programot a(z) %DOWNLOAD_PATH útvonalon."
+#: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
+msgid  "Large"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
-msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr "Már létezik ilyen nevű fájl! Felülírja a létező fájlt?"
+#: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
+msgid  "Positioning"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
-msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr "Már létezik „%FILENAME” nevű fájl a(z) „%DOWNLOAD_PATH” útvonalon! Folytatja a letöltést, vagy törli és újratölti a fájlt?"
+#: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
+msgid  "Navigation"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
-msgid  "Reload File"
-msgstr "Fájl újratöltése"
+#: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
+msgid  "Acting on a record"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
-msgid  "Continue"
-msgstr "Folytatás"
+#: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
+msgid  "Filtering / Sorting"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
-msgid  "%PERCENT%"
-msgstr "%PERCENT%"
+#: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
+msgid  "Horizontal scroll bar"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
-msgid  "Status"
-msgstr "Állapot"
+#: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
+msgid  "Vertical scroll bar"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
-msgid  "Description"
-msgstr "Leírás"
+#: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
+msgid  "Word break"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
-msgid  "Close"
-msgstr "Bezárás"
+#: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
+msgid  "Multiline input"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
-msgid  "~Download"
-msgstr "~Letöltés"
+#: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
+msgid  "Multiselection"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
-msgid  "~Install"
-msgstr "~Telepítés"
+#: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
+msgid  "Name"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
-msgid  "~Pause"
-msgstr "~Szünet"
+#: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
+msgid  "Tab order"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
-msgid  "~Resume"
-msgstr "~Folytatás"
+#: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
+msgid  "Mouse wheel scroll"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+#: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
+msgid  "Filter"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
+msgid  "Sort"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
+msgid  "Record marker"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
+msgid  "Filter proposal"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
+msgid  "Navigation bar"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
+msgid  "Cycle"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
+msgid  "Tabstop"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
+msgid  "Data field"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
+msgid  "Dropdown"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
+msgid  "Bound field"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
+msgid  "List content"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
+msgid  "Type of list contents"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
+msgid  "Content"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
+msgid  "Content type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
+msgid  "Allow additions"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
+msgid  "Allow deletions"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
+msgid  "Allow modifications"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
+msgid  "Add data only"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
+msgid  "Data source"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
+msgid  "Link master fields"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
+msgid  "Link slave fields"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
+msgid  "Value min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
+msgid  "Value max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
+msgid  "Incr./decrement value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
+msgid  "Currency symbol"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
+msgid  "Date min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
+msgid  "Date max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
+msgid  "Date format"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
+msgid  "Selection"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
+msgid  "Time min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
+msgid  "Time max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
+msgid  "Time format"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
+msgid  "Prefix symbol"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
+msgid  "Value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
+msgid  "Formatting"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
+msgid  "Class ID"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
+msgid  "Height"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
+msgid  "Width"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
+msgid  "List index"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
+msgid  "Row height"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
+msgid  "Fill color"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
+msgid  "Line color"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
+msgid  "Reference value (on)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
+msgid  "Reference value (off)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
+msgid  "List entries"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
+msgid  "Action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
+msgid  "URL"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
+msgid  "Type of submission"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
+msgid  "Default status"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
+msgid  "Submission encoding"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
+msgid  "Default value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
+msgid  "Default text"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
+msgid  "Default date"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
+msgid  "Default time"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
+msgid  "Frame"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
+msgid  "Without frame"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
+msgid  "3D look"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
+msgid  "Flat"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
+msgid  "Valuelist"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
+msgid  "Table"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
+msgid  "Query"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
+msgid  "Sql"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
+msgid  "Sql [Native]"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
+msgid  "Tablefields"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
+msgid  "Left"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
+msgid  "Center"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
+msgid  "Right"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
+msgid  "None"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
+msgid  "Submit form"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
+msgid  "Reset form"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
+msgid  "Open document/web page"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
+msgid  "First record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
+msgid  "Previous record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
+msgid  "Next record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
+msgid  "Last record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
+msgid  "Save record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
+msgid  "Undo data entry"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
+msgid  "New record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
+msgid  "Delete record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
+msgid  "Refresh form"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
+msgid  "Get"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
+msgid  "Post"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
+msgid  "URL"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
+msgid  "Multipart"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
+msgid  "Text"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
+msgid  "Standard (short)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
+msgid  "Standard (short YY)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
+msgid  "Standard (short YYYY)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
+msgid  "Standard (long)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
+msgid  "DD/MM/YY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
+msgid  "MM/DD/YY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
+msgid  "YY/MM/DD"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
+msgid  "DD/MM/YYYY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
+msgid  "MM/DD/YYYY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
+msgid  "YYYY/MM/DD"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
+msgid  "YY-MM-DD"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
+msgid  "YYYY-MM-DD"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
+msgid  "13:45"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
+msgid  "13:45:00"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
+msgid  "01:45 PM"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
+msgid  "01:45:00 PM"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
+msgid  "Not Selected"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
+msgid  "Selected"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
+msgid  "Not Defined"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
+msgid  "All records"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
+msgid  "Active record"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
+msgid  "Current page"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
+msgid  "No"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
+msgid  "Yes"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
+msgid  "Parent Form"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
+msgid  "None"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
+msgid  "Single"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
+msgid  "Multi"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
+msgid  "Range"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
+msgid  "Fill parameters"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
+msgid  "Execute action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
+msgid  "After updating"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
+msgid  "Before updating"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
+msgid  "Before record action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
+msgid  "After record action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
+msgid  "Confirm deletion"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
+msgid  "Error occurred"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
+msgid  "When receiving focus"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
+msgid  "When losing focus"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
+msgid  "Item status changed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
+msgid  "Key pressed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
+msgid  "Key released"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
+msgid  "When loading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
+msgid  "Before reloading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
+msgid  "When reloading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
+msgid  "Mouse moved while key pressed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
+msgid  "Mouse inside"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
+msgid  "Mouse outside"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
+msgid  "Mouse moved"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
+msgid  "Mouse button pressed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
+msgid  "Mouse button released"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
+msgid  "Before record change"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
+msgid  "After record change"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
+msgid  "After resetting"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
+msgid  "Prior to reset"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
+msgid  "Approve action"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
+msgid  "Before submitting"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
+msgid  "Text modified"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
+msgid  "Before unloading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
+msgid  "When unloading"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
+msgid  "Changed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
+msgid  "Events"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
+msgid  "Analyze SQL command"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
+msgid  "PositionX"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
+msgid  "PositionY"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
+msgid  "Title"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
+msgid  "Page (step)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
+msgid  "Progress value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
+msgid  "Progress value min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
+msgid  "Progress value max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
+msgid  "Scroll value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
+msgid  "Scroll value max."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
+msgid  "Scroll value min."
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
+msgid  "Default scroll value"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
+msgid  "Small change"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
+msgid  "Large change"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
+msgid  "Delay"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
+msgid  "Repeat"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
+msgid  "Visible size"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
+msgid  "Orientation"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
+msgid  "Horizontal"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
+msgid  "Vertical"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
+msgid  "While adjusting"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
+msgid  "Date"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
+msgid  "State"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
+msgid  "Time"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
+msgid  "Scale"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
+msgid  "Button type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
+msgid  "Default"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
+msgid  "OK"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
 msgid  "Cancel"
-msgstr "Mégse"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
-msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME-frissítés érhető el"
+#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
+msgid  "Help"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
-msgid  "Click here to start the download."
-msgstr "A letöltés indításához kattintson ide."
+#: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
-msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME-frissítés érhető el"
+#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
+msgid  "Text"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
-msgid  "Click here for more information."
-msgstr "További információkért kattintson ide."
+#: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
+msgid  "Linked cell"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
-msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME-frissítés érhető el"
+#: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
+msgid  "Source cell range"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
-msgid  "Download of update begins."
-msgstr "A frissítés letöltése megkezdődött."
+#: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
+msgid  "Contents of the linked cell"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
-msgid  "Download of update in progress"
-msgstr "A frissítés letöltése folyamatban."
+#: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
+msgid  "The selected entry"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
-msgid  "Download of update paused"
-msgstr "A frissítés letöltése szünetel."
+#: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
+msgid  "Position of the selected entry"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
-msgid  "Click here to resume."
-msgstr "A folytatáshoz kattintson ide."
+#: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
+msgid  "Scrollbars"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
-msgid  "Download of update stalled"
-msgstr "A frissítés letöltése megállt."
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
+msgid  "Single-line"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
-msgid  "Click here for more information."
-msgstr "További információkért kattintson ide."
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
+msgid  "Multi-line"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
-msgid  "Download of update completed"
-msgstr "A frissítés letöltése kész."
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
+msgid  "Multi-line with formatting"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
-msgid  "Click here to start the installation."
-msgstr "A telepítés indításához kattintson ide."
+#: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
+msgid  "Symbol color"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
-msgid  "Updates for extensions available"
-msgstr "Kiterjesztésfrissítések érhetők el."
+#: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
+msgid  "Text lines end with"
+msgstr ""
 
-#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
-msgid  "Click here for more information."
-msgstr "További információkért kattintson ide."
+#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
+msgid  "LF (Unix)"
+msgstr ""
 
-#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
+msgid  "CR+LF (Windows)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
+msgid  "None"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
+msgid  "Horizontal"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
+msgid  "Vertical"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
+msgid  "Both"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
+msgid  "Table"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
+msgid  "Query"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
+msgid  "SQL command"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
+msgid  "Toggle"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
+msgid  "Take Focus on Click"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
+msgid  "Hide selection"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
+msgid  "Style"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
+msgid  "3D"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
+msgid  "Flat"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
+msgid  "Border color"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
+msgid  "Left top"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
+msgid  "Left centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
+msgid  "Left bottom"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
+msgid  "Right top"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
+msgid  "Right centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
+msgid  "Right bottom"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
+msgid  "Above left"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
+msgid  "Above centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
+msgid  "Above right"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
+msgid  "Below left"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
+msgid  "Below centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
+msgid  "Below right"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
+msgid  "Centered"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
+msgid  "Wrap text automatically"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
+msgid  "Text type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
+msgid  "Hide"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
+msgid  "Show"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
+msgid  "XML data model"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
+msgid  "Binding expression"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
+msgid  "Required"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
+msgid  "List entry source"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
+msgid  "Relevant"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
+msgid  "Read-only"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
+msgid  "Constraint"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
+msgid  "Calculation"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
+msgid  "Data type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
+msgid  "Whitespaces"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
+msgid  "Preserve"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
+msgid  "Replace"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
+msgid  "Collapse"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
+msgid  "Pattern"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
+msgid  "Length"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
+msgid  "Length (at least)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
+msgid  "Length (at most)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
+msgid  "Digits (total)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
+msgid  "Digits (fraction)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
+msgid  "Max. (inclusive)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
+msgid  "Max. (exclusive)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
+msgid  "Min. (inclusive)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
+msgid  "Min. (exclusive)"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
+msgid  "Submission"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
+msgid  "Binding"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
+msgid  "Selection type"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
+msgid  "Root displayed"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
+msgid  "Show handles"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
+msgid  "Show root handles"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
+msgid  "Editable"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
+msgid  "Invokes stop node editing"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
+msgid  "With title bar"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
+msgid  "No Label"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
+msgid  "No"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
+msgid  "Keep Ratio"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
+msgid  "Fit to Size"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
+msgid  "Input required"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
+msgid  "Text direction"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
+msgid  "Left-to-right"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
+msgid  "Right-to-left"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
+msgid  "Use superordinate object settings"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
+msgid  "Never"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
+msgid  "When focused"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
+msgid  "Always"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
+msgid  "Anchor"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
+msgid  "To Paragraph"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
+msgid  "As Character"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
+msgid  "To Page"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
+msgid  "To Frame"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
+msgid  "To Character"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
+msgid  "To Page"
+msgstr ""
+
+#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
+msgid  "To Cell"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
+msgid  "Regular"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
+msgid  "Bold Italic"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
+msgid  "Italic"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
+msgid  "Bold"
+msgstr ""
+
+#: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
+msgid  "(Default)"
+msgstr ""
+
+#: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
+msgid  "New Data Type"
+msgstr ""
+
+#: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
+msgid  "Type a name for the new data type:"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
+msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
+msgid  "Button"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
+msgid  "Option Button"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
+msgid  "Check Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
+msgid  "Label Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
+msgid  "Group Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
+msgid  "Text Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
+msgid  "Formatted Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
+msgid  "List Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
+msgid  "Combo Box"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
+msgid  "Image Button"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
+msgid  "Hidden Control"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
+msgid  "Control (unknown type)"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
+msgid  "Image Control"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
+msgid  "File Selection"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
+msgid  "Date Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
+msgid  "Time Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
+msgid  "Numeric Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
+msgid  "Currency Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
+msgid  "Pattern Field"
+msgstr ""
+
+#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
+msgid  "Table Control "
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
+msgid  "Default"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
+msgid  "General"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
+msgid  "Data"
+msgstr ""
+
+#: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
+msgid  "No"
+msgstr ""
+
+#: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
+msgid  "Yes"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
+msgid  "Help"
+msgstr ""
+
+#: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
+msgid  "<Embedded-Image>"
+msgstr ""
+
+#: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
+msgid  "Text"
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
+msgid  "~No assignment"
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
+msgid  "Label Field Selection"
+msgstr ""
+
+#: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
+msgid  "Forms"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
+msgid  "Tab Order"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
+msgid  "Controls"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
+msgid  "Move Up"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
+msgid  "Move Down"
+msgstr ""
+
+#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
+msgid  "Automatic Sort"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
+msgid  "Set"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
+msgid  "Linear ascending"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
+msgid  "Linear descending"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
+msgid  "Original values"
+msgstr ""
+
+#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
+msgid  "Exponential increasing"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
+msgid  "About\n Dev~ice"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
+msgid  "Create\nPreview"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
+msgid  "Preview"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
+msgid  "Scan area"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
+msgid  "Left:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
+msgid  "Top:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
+msgid  "Right:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
+msgid  "Bottom:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
+msgid  "Device used:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
+msgid  "Resolution [~DPI]"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
+msgid  "Show advanced options"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
+msgid  "Options:"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
+msgid  "Vector element"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
+msgid  "Set"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
+msgid  "Scanner"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
+msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
+msgid  "An error occurred while scanning."
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+
+#: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr ""
+
+#: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
 msgid  "Check for ~Updates..."
-msgstr "~Frissítések keresése..."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
+msgid  "Checking..."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
+msgid  "Checking for an update failed."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
+msgid  "Check for Updates"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
+msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
+msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
+msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
+msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
+msgid  "Do you really want to cancel the download?"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
+msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
+msgid  "Install ~now"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
+msgid  "Install ~later"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
+msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
+msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
+msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
+msgid  "Reload File"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
+msgid  "Continue"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
+msgid  "%PERCENT%"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
+msgid  "Status"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
+msgid  "Description"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
+msgid  "Close"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
+msgid  "~Download"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
+msgid  "~Install"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
+msgid  "~Pause"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
+msgid  "~Resume"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
+msgid  "%PRODUCTNAME update available"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
+msgid  "Click here to start the download."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
+msgid  "%PRODUCTNAME update available"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
+msgid  "Click here for more information."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
+msgid  "%PRODUCTNAME update available"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
+msgid  "Download of update begins."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
+msgid  "Download of update in progress"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
+msgid  "Download of update paused"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
+msgid  "Click here to resume."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
+msgid  "Download of update stalled"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
+msgid  "Click here for more information."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
+msgid  "Download of update completed"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
+msgid  "Click here to start the installation."
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
+msgid  "Updates for extensions available"
+msgstr ""
+
+#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
+msgid  "Click here for more information."
+msgstr ""

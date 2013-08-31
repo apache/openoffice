@@ -31,790 +31,790 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.ModalDialog.Text
-msgid  "%PRODUCTNAME Basic Macros"
-msgstr "%PRODUCTNAME Basic-makrók"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FixedText.Text
-msgid  "Existing macros ~in:"
-msgstr "Létező m~akrók:"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FixedText.Text
-msgid  "~Macro name"
-msgstr "Makró ~neve"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FixedText.Text
-msgid  "Macro ~from"
-msgstr "Makró ~forrása"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FixedText.Text
-msgid  "Save m~acro in"
-msgstr "Ma~kró mentése"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FixedText.Text
-msgid  "De~scription"
-msgstr "~Leírás"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PushButton.Text
-msgid  "R~un"
-msgstr "F~uttatás"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CancelButton.Text
-msgid  "Close"
-msgstr "Bezárás"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PushButton.Text
-msgid  "~Assign..."
-msgstr "~Hozzárendelés..."
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PushButton.Text
-msgid  "~Edit"
-msgstr "Sz~erkesztés"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PushButton.Text
-msgid  "New ~Library"
-msgstr "Új p~rogramkönyvtár"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PushButton.Text
-msgid  "New M~odule"
-msgstr "Új m~odul"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PushButton.Text
-msgid  "~Delete"
-msgstr "~Törlés"
-
-#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PushButton.Text
-msgid  "~Organizer..."
-msgstr "Szer~vező..."
-
-#: source/basicide/macrodlg.src#RID_STR_STDMACRONAME.String.Text
-msgid  "Macro"
-msgstr "Makró"
-
-#: source/basicide/macrodlg.src#RID_STR_BTNDEL.String.Text
-msgid  "~Delete"
-msgstr "~Törlés"
-
-#: source/basicide/macrodlg.src#RID_STR_BTNNEW.String.Text
-msgid  "~New"
-msgstr "Ú~j"
-
-#: source/basicide/macrodlg.src#RID_STR_CLOSE.String.Text
-msgid  "Close"
-msgstr "Bezárás"
-
-#: source/basicide/macrodlg.src#RID_STR_CHOOSE.String.Text
-msgid  "Choose"
-msgstr "Kiválasztás"
-
-#: source/basicide/macrodlg.src#RID_STR_RUN.String.Text
-msgid  "Run"
-msgstr "Futtatás"
-
-#: source/basicide/macrodlg.src#RID_STR_RECORD.String.Text
-msgid  "~Save"
-msgstr "M~entés"
-
-#: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
-msgid  "<All>"
-msgstr "<Mind>"
-
-#: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
-msgid  "< No Module >"
-msgstr "< Hiányzó modul >"
-
-#: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
-msgid  "Incorrect Password"
-msgstr "Helytelen jelszó"
-
-#: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
-msgid  "Load"
-msgstr "Betöltés"
-
-#: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
-msgid  "Save"
-msgstr "Mentés"
-
-#: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
-msgstr "A forrásszöveg túl nagy, és se lefordítani se menteni nem lehet.\nTörölje a megjegyzések egy részét, vagy bizonyos metódusokat helyezzen át egy másik modulba."
-
-#: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
-msgid  "Error opening file"
-msgstr "Hiba a fájl megnyitásakor"
-
-#: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
-msgid  "Error loading library"
-msgstr "Hiba a programkönyvtár betöltésekor."
-
-#: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
-msgid  "The file does not contain any BASIC libraries"
-msgstr "A fájl nem tartalmaz semmilyen BASIC könyvtárat"
-
-#: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
-msgid  "Invalid Name"
-msgstr "Érvénytelen név"
-
-#: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
-msgid  "A library name can have up to 30 characters."
-msgstr "A programkönyvtár neve legfeljebb 30 karakter lehet."
-
-#: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
-msgid  "Macros from other documents are not accessible."
-msgstr "Más dokumentumból származó makrók nem érhetők el."
-
-#: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
-msgid  "This library is read-only."
-msgstr "Ez a programkönyvtár csak olvasható."
-
-#: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
-msgid  "'XX' cannot be replaced."
-msgstr "„XX” nem cserélhető le."
-
-#: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
-msgid  "'XX' cannot be added."
-msgstr "„XX” nem adható hozzá."
-
-#: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
-msgid  "'XX' was not added."
-msgstr "„XX” nem lett hozzáadva."
-
-#: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
-msgid  "Enter password for 'XX'"
-msgstr "Írja be „XX” jelszavát"
-
-#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
-msgid  "Name already exists"
-msgstr "A név már létezik"
-
-#: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
-msgid  "(Signed)"
-msgstr "(Aláírt)"
-
-#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
-msgid  "Object with same name already exists"
-msgstr "Már van ilyen nevű objektum"
-
-#: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
-msgid  "The 'XX' file already exists"
-msgstr "Már létező fájl: „XX”"
-
-#: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
-msgstr "Biztonsági okokból ez a makró nem futtatható.\n\nTovábbi információkért tekintse meg a biztonsági beállításokat."
-
-#: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
-msgid  "Compile Error: "
-msgstr "Fordítási hiba: "
-
-#: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
-msgid  "Runtime Error: #"
-msgstr "Futás közbeni hiba: #"
-
-#: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
-msgid  "Search key not found"
-msgstr "A keresési kulcs nem található."
-
-#: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
-msgid  "Search to last module complete. Continue at first module?"
-msgstr "A keresés az utolsó modulnál véget ért. Folytatja az első modullal?"
-
-#: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
-msgid  "Search key replaced XX times"
-msgstr "A keresési kulcs XX helyen kicserélve"
-
-#: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
-msgid  "The file could not be read"
-msgstr "A fájlt nem sikerült beolvasni"
-
-#: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
-msgid  "The file could not be saved"
-msgstr "A fájlt nem sikerült menteni"
-
-#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
-msgid  "The name of the default library cannot be changed."
-msgstr "Az alapértelmezett programkönyvtár neve nem változtatható meg."
-
-#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
-msgid  "The name of a referenced library cannot be changed."
-msgstr "A hivatkozott programkönyvtár neve nem változtatható meg."
-
-#: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
-msgid  "The default library cannot be deactivated"
-msgstr "Az alapértelmezett programkönyvtár nem kapcsolható ki."
-
-#: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
-msgid  "Generating source"
-msgstr "Forrás előállítása"
-
-#: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
-msgid  "File name:"
-msgstr "Fájlnév:"
-
-#: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
-msgid  "Import Libraries"
-msgstr "Programkönyvtárak importálása"
-
-#: source/basicide/basidesh.src#RID_STR_QUERYDELMACRO.String.Text
-msgid  "Do you want to delete the macro XX?"
-msgstr "Biztosan törölni akarja ezt a makrót: XX?"
-
-#: source/basicide/basidesh.src#RID_STR_QUERYDELDIALOG.String.Text
-msgid  "Do you want to delete the XX dialog?"
-msgstr "Biztosan törölni akarja a párbeszédablakot: XX?"
-
-#: source/basicide/basidesh.src#RID_STR_QUERYDELLIB.String.Text
-msgid  "Do you want to delete the XX library?"
-msgstr "Biztosan törölni akarja ezt a programkönyvtárat: XX?"
-
-#: source/basicide/basidesh.src#RID_STR_QUERYDELLIBREF.String.Text
-msgid  "Do you want to delete the reference to the XX library?"
-msgstr "Biztosan törölni akarja a(z) XX programkönyvtárra mutató hivatkozást?"
-
-#: source/basicide/basidesh.src#RID_STR_QUERYDELMODULE.String.Text
-msgid  "Do you want to delete the XX module?"
-msgstr "Biztosan törölni akarja ezt a modult: XX?"
-
-#: source/basicide/basidesh.src#RID_STR_OBJNOTFOUND.String.Text
-msgid  "Object or method not found"
-msgstr "Az objektum vagy metódus nem található"
-
-#: source/basicide/basidesh.src#RID_STR_BASIC.String.Text
-msgid  "BASIC"
-msgstr "BASIC"
-
-#: source/basicide/basidesh.src#RID_STR_LINE.String.Text
-msgid  "Ln"
-msgstr "Sor"
-
-#: source/basicide/basidesh.src#RID_STR_COLUMN.String.Text
-msgid  "Col"
-msgstr "Oszl."
-
-#: source/basicide/basidesh.src#RID_STR_DOC.String.Text
-msgid  "Document"
-msgstr "Dokumentum"
-
-#: source/basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.String.Text
-msgid  "Macro Bar"
-msgstr "Makró eszköztár"
-
-#: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
-msgid  "The window cannot be closed while BASIC is running."
-msgstr "A BASIC futása közben az ablak nem zárható be."
-
-#: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
-msgid  "The default library cannot be replaced."
-msgstr "Az alapértelmezett programkönyvtárat nem lehet lecserélni."
-
-#: source/basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.String.Text
-msgid  "Reference to 'XX' not possible."
-msgstr "„XX”-re való hivatkozás nem lehetséges."
-
-#: source/basicide/basidesh.src#RID_STR_WATCHNAME.String.Text
-msgid  "Watch"
-msgstr "Figyelés"
-
-#: source/basicide/basidesh.src#RID_STR_WATCHVARIABLE.String.Text
-msgid  "Variable"
-msgstr "Változó"
-
-#: source/basicide/basidesh.src#RID_STR_WATCHVALUE.String.Text
-msgid  "Value"
-msgstr "Érték"
-
-#: source/basicide/basidesh.src#RID_STR_WATCHTYPE.String.Text
-msgid  "Type"
-msgstr "Típus"
-
-#: source/basicide/basidesh.src#RID_STR_STACKNAME.String.Text
-msgid  "Call Stack"
-msgstr "Hívási verem"
-
-#: source/basicide/basidesh.src#RID_STR_INITIDE.String.Text
-msgid  "BASIC Initialization"
-msgstr "BASIC előkészítése"
-
-#: source/basicide/basidesh.src#RID_STR_STDMODULENAME.String.Text
-msgid  "Module"
-msgstr "Modul"
-
-#: source/basicide/basidesh.src#RID_STR_STDDIALOGNAME.String.Text
-msgid  "Dialog"
-msgstr "Párbeszédablak"
-
-#: source/basicide/basidesh.src#RID_STR_STDLIBNAME.String.Text
-msgid  "Library"
-msgstr "Programkönyvtár"
-
-#: source/basicide/basidesh.src#RID_STR_NEWLIB.String.Text
-msgid  "New Library"
-msgstr "Új programkönyvtár"
-
-#: source/basicide/basidesh.src#RID_STR_NEWMOD.String.Text
-msgid  "New Module"
-msgstr "Új modul"
-
-#: source/basicide/basidesh.src#RID_STR_NEWDLG.String.Text
-msgid  "New Dialog"
-msgstr "Új párbeszédablak"
-
-#: source/basicide/basidesh.src#RID_STR_ALL.String.Text
-msgid  "All"
-msgstr "Összes"
-
-#: source/basicide/basidesh.src#RID_STR_PAGE.String.Text
-msgid  "Page"
-msgstr "Oldal"
-
-#: source/basicide/basidesh.src#RID_STR_MACRONAMEREQ.String.Text
-msgid  "A name must be entered."
-msgstr "Kötelező egy nevet megadni."
-
-#: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\\nContinue?"
-msgstr "A szerkesztés után újra kell indítani a programot.\nFolytatja?"
-
-#: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
-msgid  "Do you want to replace the text in all active modules?"
-msgstr "Az összes aktív modulban lecseréli a szöveget?"
-
-#: source/basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.ButtonImage.QuickHelpText
-msgid  "Remove Watch"
-msgstr "Figyelés törlése"
-
-#: source/basicide/basidesh.src#RID_STR_REMOVEWATCH.String.Text
-msgid  "Watch:"
-msgstr "Figyelés:"
-
-#: source/basicide/basidesh.src#RID_STR_STACK.String.Text
-msgid  "Calls: "
-msgstr "Hívások: "
-
-#: source/basicide/basidesh.src#RID_STR_USERMACROS.String.Text
-msgid  "My Macros"
-msgstr "Saját makrók"
-
-#: source/basicide/basidesh.src#RID_STR_USERDIALOGS.String.Text
-msgid  "My Dialogs"
-msgstr "Saját párbeszédablakok"
-
-#: source/basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.String.Text
-msgid  "My Macros & Dialogs"
-msgstr "Saját makrók és párbeszédablakok"
-
-#: source/basicide/basidesh.src#RID_STR_SHAREMACROS.String.Text
-msgid  "%PRODUCTNAME Macros"
-msgstr "%PRODUCTNAME-makrók"
-
-#: source/basicide/basidesh.src#RID_STR_SHAREDIALOGS.String.Text
-msgid  "%PRODUCTNAME Dialogs"
-msgstr "%PRODUCTNAME-párbeszédablakok"
-
-#: source/basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.String.Text
-msgid  "%PRODUCTNAME Macros & Dialogs"
-msgstr "%PRODUCTNAME-makrók és -párbeszédablakok"
-
-#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.Menu.Text
-msgid  "Properties"
-msgstr "Tulajdonságok"
-
-#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MenuItem.Text
-msgid  "Active"
-msgstr "Aktív"
-
-#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
-msgid  "Properties..."
-msgstr "Tulajdonságok..."
-
-#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.Menu.Text
-msgid  "Manage Breakpoints"
-msgstr "Töréspontok kezelése"
-
-#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MenuItem.Text
-msgid  "Manage Breakpoints..."
-msgstr "Töréspontok kezelése..."
-
-#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MenuItem.Text
-msgid  "Insert"
-msgstr "Beszúrás"
-
-#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MenuItem.Text
-msgid  "BASIC Module"
-msgstr "BASIC-modul"
-
-#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MenuItem.Text
-msgid  "BASIC Dialog"
-msgstr "BASIC-párbeszédablak"
-
-#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MenuItem.Text
-msgid  "Delete"
-msgstr "Törlés"
-
-#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MenuItem.Text
-msgid  "Rename"
-msgstr "Átnevezés"
-
-#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MenuItem.Text
-msgid  "Hide"
-msgstr "Elrejtés"
-
-#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MenuItem.Text
-msgid  "Modules..."
-msgstr "Modulok..."
-
-#: source/basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
-msgid  "Properties..."
-msgstr "Tulajdonságok..."
-
-#: source/basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.String.Text
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "Felülírja a(z) XX makrót?"
-
-#: source/basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.String.Text
-msgid  "<Not localized>"
-msgstr "<Nincs honosítva>"
-
-#: source/basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.String.Text
-msgid  "[Default Language]"
-msgstr "[Alapértelmezett nyelv]"
-
-#: source/basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.String.Text
-msgid  "Document Objects"
-msgstr "Dokumentumobjektumok"
-
-#: source/basicide/basidesh.src#RID_STR_USERFORMS.String.Text
-msgid  "Forms"
-msgstr "Űrlapok"
-
-#: source/basicide/basidesh.src#RID_STR_NORMAL_MODULES.String.Text
-msgid  "Modules"
-msgstr "Modulok"
-
-#: source/basicide/basidesh.src#RID_STR_CLASS_MODULES.String.Text
-msgid  "Class Modules"
-msgstr "Osztálymodulok"
-
-#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.String.Text
-msgid  "Rename"
-msgstr "Átnevezés"
-
-#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.String.Text
-msgid  "Replace"
-msgstr "Csere"
-
-#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.String.Text
-msgid  "Dialog Import - Name already used"
-msgstr "Párbeszédablak-importálás – A név már használatban van"
-
-#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
-msgstr "A könyvtár már tartalmaz egy párbeszédablakot a következő névvel:\n\n$(ARG1)\n\nNevezze át a párbeszédablakot az aktuális párbeszédablak megtartásához, vagy cserélje le a meglévő párbeszédablakot.\n "
-
-#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
-msgid  "Add"
-msgstr "Hozzáadás"
-
-#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.String.Text
-msgid  "Omit"
-msgstr "Kihagyás"
-
-#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.String.Text
-msgid  "Dialog Import - Language Mismatch"
-msgstr "Párbeszédablak-importálás – Eltérő nyelvek"
-
-#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
-msgstr "Az importálandó párbeszédablak más nyelveket támogat, mint a célkönyvtár.\n\nAdja hozzá ezeket a nyelveket a könyvtárhoz, hogy megmaradjanak a párbeszédablak által biztosított további nyelvi erőforrások, vagy hagyja ki őket, hogy a könyvtár jelenlegi nyelveinél maradjon.\n\nMegjegyzés: A párbeszédablak által nem támogatott nyelvek esetén a párbeszédablak alapértelmezett nyelve lesz használva.\n "
-
-#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
+#: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
 msgid  "Print range"
-msgstr "Nyomtatási tartomány"
-
-#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item2.ItemList.item
-msgid  "All ~Pages"
-msgstr "Összes ~oldal"
-
-#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item3.ItemList.item
-msgid  "Pa~ges"
-msgstr "Ol~dalak"
-
-#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.FloatingWindow.Text
-msgid  "Objects"
-msgstr "Objektumok"
-
-#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.ToolBoxItem.Text
-msgid  "Show"
-msgstr "Megjelenítés"
-
-#: source/basicide/objdlg.src#RID_STR_TLB_MACROS.String.Text
-msgid  "Objects Tree"
-msgstr "Objektum fa"
-
-#: source/basicide/moptions.src#RID_MACROOPTIONS.ModalDialog.Text
-msgid  "Description"
-msgstr "Leírás"
-
-#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FixedText.Text
-msgid  "Description"
-msgstr "Leírás"
-
-#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FixedLine.Text
-msgid  "Help information"
-msgstr "Súgószöveg"
-
-#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FixedText.Text
-msgid  "Help ID"
-msgstr "Súgó azonosítója"
-
-#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FixedText.Text
-msgid  "Help file name"
-msgstr "Súgófájl neve"
-
-#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PushButton.Text
-msgid  "New"
-msgstr "Új"
-
-#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PushButton.Text
-msgid  "Delete"
-msgstr "Törlés"
-
-#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CheckBox.Text
-msgid  "Active"
-msgstr "Aktív"
-
-#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FixedText.Text
-msgid  "Pass Count:"
-msgstr "Menetek száma:"
-
-#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FixedText.Text
-msgid  "Breakpoints"
-msgstr "Töréspontok"
-
-#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NumericField.Text
-msgid  "Manage Breakpoints"
-msgstr "Töréspontok kezelése"
-
-#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.TabDialog.Text
-msgid  "%PRODUCTNAME Basic Macro Organizer"
-msgstr "%PRODUCTNAME Basic makrószervező"
-
-#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PageItem.Text
-msgid  "Modules"
-msgstr "Modulok"
-
-#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PageItem.Text
-msgid  "Dialogs"
-msgstr "Párbeszédablakok"
-
-#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PageItem.Text
-msgid  "Libraries"
-msgstr "Könyvtárak"
-
-#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FixedText.Text
-msgid  "M~odule"
-msgstr "M~odul"
-
-#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PushButton.Text
-msgid  "~Edit"
-msgstr "Sz~erkesztés"
-
-#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CancelButton.Text
-msgid  "Close"
-msgstr "Bezárás"
-
-#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
-msgid  "~New..."
-msgstr "Ú~j..."
-
-#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
-msgid  "~New..."
-msgstr "Ú~j..."
-
-#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
-msgid  "~Delete"
-msgstr "~Törlés"
-
-#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FixedText.Text
-msgid  "Dialog"
-msgstr "Párbeszédablak"
-
-#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PushButton.Text
-msgid  "~Edit"
-msgstr "Sz~erkesztés"
-
-#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CancelButton.Text
-msgid  "Close"
-msgstr "Bezárás"
-
-#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
-msgid  "~New..."
-msgstr "Ú~j..."
-
-#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
-msgid  "~New..."
-msgstr "Ú~j..."
-
-#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PushButton.Text
-msgid  "~Delete"
-msgstr "~Törlés"
-
-#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FixedText.Text
-msgid  "L~ocation"
-msgstr "H~ely"
-
-#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FixedText.Text
-msgid  "~Library"
-msgstr "~Programkönyvtár"
-
-#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PushButton.Text
-msgid  "~Edit"
-msgstr "Sz~erkesztés"
-
-#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CancelButton.Text
-msgid  "Close"
-msgstr "Bezárás"
-
-#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PushButton.Text
-msgid  "~Password..."
-msgstr "~Jelszó..."
-
-#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PushButton.Text
-msgid  "~New..."
-msgstr "Ú~j..."
-
-#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PushButton.Text
-msgid  "~Import..."
-msgstr "~Importálás..."
-
-#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PushButton.Text
-msgid  "E~xport..."
-msgstr "E~xportálás..."
-
-#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PushButton.Text
-msgid  "~Delete"
-msgstr "~Törlés"
-
-#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FixedLine.Text
-msgid  "Options"
-msgstr "Beállítások"
-
-#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CheckBox.Text
-msgid  "Insert as reference (read-only)"
-msgstr "Beszúrás hivatkozásként (csak olvasható)"
-
-#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CheckBox.Text
-msgid  "Replace existing libraries"
-msgstr "Létező könyvtárak cseréje"
-
-#: source/basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FixedText.Text
-msgid  "~Name:"
-msgstr "~Név:"
-
-#: source/basicide/moduldlg.src#RID_DLG_EXPORT.ModalDialog.Text
-msgid  "Export Basic library"
-msgstr "Basic-programkönyvtár exportálása"
-
-#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RadioButton.Text
-msgid  "Export as ~extension"
-msgstr "Exportálás ~kiterjesztésként"
-
-#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RadioButton.Text
-msgid  "Export as BASIC library"
-msgstr "Exportálás BASIC-programkönyvtárként"
-
-#: source/basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.String.Text
-msgid  "Export library as extension"
-msgstr "Programkönyvtár exportálása kiterjesztésként"
-
-#: source/basicide/moduldlg.src#RID_STR_EXPORTBASIC.String.Text
-msgid  "Export as BASIC library"
-msgstr "Exportálás BASIC-programkönyvtárként"
-
-#: source/basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.String.Text
-msgid  "Extension"
-msgstr "Kiterjesztés"
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
-msgid  "Manage User Interface Languages [$1]"
-msgstr "A felhasználói felület nyelveinek kezelése [$1]"
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
-msgid  "Present Languages"
-msgstr "Elérhető nyelvek"
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
-msgid  "Add..."
-msgstr "Hozzáadás..."
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
-msgid  "Delete"
-msgstr "Törlés"
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
-msgid  "Default"
-msgstr "Alapértelmezett"
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
-msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr "Az alapértelmezett nyelv lesz használva, ha a felhasználói felület nyelvéhez illő honosítás nem érhető el. Ezen kívül az alapértelmezett nyelv valamennyi karakterlánca átmásolódik az újonnan hozzáadott nyelvek erőforrásai közé."
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
-msgid  "~Close"
-msgstr "~Bezárás"
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
-msgid  "[Default Language]"
-msgstr "[Alapértelmezett nyelv]"
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
-msgid  "~Delete"
-msgstr "~Törlés"
-
-#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
-msgid  "<Press 'Add' to create language resources>"
-msgstr "<Nyomja meg a Hozzáadás gombot új nyelvi erőforrás létrehozásához>"
-
-#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
-msgid  "Delete Language Resources"
-msgstr "Nyelvi erőforrások törlése"
-
-#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
 msgstr ""
 
-#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
-msgid  "Set Default User Interface Language"
-msgstr "A felhasználóit felület alapértelmezett nyelvének beállítása"
+#: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
+msgid  "All ~Pages"
+msgstr ""
 
-#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
-msgid  "Default language"
-msgstr "Alapértelmezett nyelv"
+#: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
+msgid  "Pa~ges"
+msgstr ""
 
-#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
-msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr "Jelöljön ki egy nyelvet, amely a felhasználói felület alapértelmezett nyelve lesz. Minden jelenleg meglévő karakterlánc hozzá lesz rendelve a kijelölt nyelvhez létrehozott erőforrásokhoz."
+#: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
+msgid  "<All>"
+msgstr ""
 
-#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
-msgid  "Add User Interface Languages"
-msgstr "A felhasználói felület nyelveinek hozzáadása"
+#: basicide/basidesh.src#RID_STR_NOMODULE.STRING.TEXT
+msgid  "< No Module >"
+msgstr ""
 
-#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
-msgid  "Available Languages"
-msgstr "Elérhető nyelvek"
+#: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
+msgid  "Incorrect Password"
+msgstr ""
 
-#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
-msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr "Jelölje ki a hozzáadandó nyelveket. Ezekhez a nyelvekhez létre fognak jönni az erőforrások a programkönyvtárban. A felhasználói felület jelenlegi alapértelmezett nyelvének karakterláncai alapértelmezés szerint át fognak másolódni ezekbe az új erőforrásokba."
+#: basicide/basidesh.src#RID_STR_OPEN.STRING.TEXT
+msgid  "Load"
+msgstr ""
 
-#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#: basicide/basidesh.src#RID_STR_SAVE.STRING.TEXT
+msgid  "Save"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SOURCETOBIG.STRING.TEXT
+msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.STRING.TEXT
+msgid  "Error opening file"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_ERROROPENLIB.STRING.TEXT
+msgid  "Error loading library"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.STRING.TEXT
+msgid  "The file does not contain any BASIC libraries"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_BADSBXNAME.STRING.TEXT
+msgid  "Invalid Name"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_LIBNAMETOLONG.STRING.TEXT
+msgid  "A library name can have up to 30 characters."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.STRING.TEXT
+msgid  "Macros from other documents are not accessible."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_LIBISREADONLY.STRING.TEXT
+msgid  "This library is read-only."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_REPLACELIB.STRING.TEXT
+msgid  "'XX' cannot be replaced."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.STRING.TEXT
+msgid  "'XX' cannot be added."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_NOIMPORT.STRING.TEXT
+msgid  "'XX' was not added."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_ENTERPASSWORD.STRING.TEXT
+msgid  "Enter password for 'XX'"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.STRING.TEXT
+msgid  "Name already exists"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
+msgid  "(Signed)"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
+msgid  "Object with same name already exists"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_FILEEXISTS.STRING.TEXT
+msgid  "The 'XX' file already exists"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.STRING.TEXT
+msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_COMPILEERROR.STRING.TEXT
+msgid  "Compile Error: "
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_RUNTIMEERROR.STRING.TEXT
+msgid  "Runtime Error: #"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.STRING.TEXT
+msgid  "Search key not found"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SEARCHFROMSTART.STRING.TEXT
+msgid  "Search to last module complete. Continue at first module?"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SEARCHREPLACES.STRING.TEXT
+msgid  "Search key replaced XX times"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_COULDNTREAD.STRING.TEXT
+msgid  "The file could not be read"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_COULDNTWRITE.STRING.TEXT
+msgid  "The file could not be saved"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.STRING.TEXT
+msgid  "The name of the default library cannot be changed."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.STRING.TEXT
+msgid  "The name of a referenced library cannot be changed."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.STRING.TEXT
+msgid  "The default library cannot be deactivated"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_GENERATESOURCE.STRING.TEXT
+msgid  "Generating source"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
+msgid  "File name:"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_APPENDLIBS.STRING.TEXT
+msgid  "Import Libraries"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_QUERYDELMACRO.STRING.TEXT
+msgid  "Do you want to delete the macro XX?"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_QUERYDELDIALOG.STRING.TEXT
+msgid  "Do you want to delete the XX dialog?"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_QUERYDELLIB.STRING.TEXT
+msgid  "Do you want to delete the XX library?"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_QUERYDELLIBREF.STRING.TEXT
+msgid  "Do you want to delete the reference to the XX library?"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_QUERYDELMODULE.STRING.TEXT
+msgid  "Do you want to delete the XX module?"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_OBJNOTFOUND.STRING.TEXT
+msgid  "Object or method not found"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_BASIC.STRING.TEXT
+msgid  "BASIC"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
+msgid  "Ln"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
+msgid  "Col"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
+msgid  "Document"
+msgstr ""
+
+#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
+msgid  "Macro Bar"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
+msgid  "The window cannot be closed while BASIC is running."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
+msgid  "The default library cannot be replaced."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.STRING.TEXT
+msgid  "Reference to 'XX' not possible."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
+msgid  "Watch"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
+msgid  "Variable"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
+msgid  "Value"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
+msgid  "Type"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_STACKNAME.STRING.TEXT
+msgid  "Call Stack"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_INITIDE.STRING.TEXT
+msgid  "BASIC Initialization"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_STDMODULENAME.STRING.TEXT
+msgid  "Module"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_STDDIALOGNAME.STRING.TEXT
+msgid  "Dialog"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_STDLIBNAME.STRING.TEXT
+msgid  "Library"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_NEWLIB.STRING.TEXT
+msgid  "New Library"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_NEWMOD.STRING.TEXT
+msgid  "New Module"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_NEWDLG.STRING.TEXT
+msgid  "New Dialog"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
+msgid  "All"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
+msgid  "Page"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
+msgid  "A name must be entered."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_WILLSTOPPRG.STRING.TEXT
+msgid  "You will have to restart the program after this edit.\nContinue?"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SEARCHALLMODULES.STRING.TEXT
+msgid  "Do you want to replace the text in all active modules?"
+msgstr ""
+
+#: basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.BUTTONIMAGE.QUICKHELPTEXT
+msgid  "Remove Watch"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_REMOVEWATCH.STRING.TEXT
+msgid  "Watch:"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
+msgid  "Calls: "
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
+msgid  "My Macros"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
+msgid  "My Dialogs"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.STRING.TEXT
+msgid  "My Macros & Dialogs"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SHAREMACROS.STRING.TEXT
+msgid  "%PRODUCTNAME Macros"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SHAREDIALOGS.STRING.TEXT
+msgid  "%PRODUCTNAME Dialogs"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.STRING.TEXT
+msgid  "%PRODUCTNAME Macros & Dialogs"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_BRKPROPS.MENU.TEXT
+msgid  "Properties"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MENUITEM.TEXT
+msgid  "Active"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MENUITEM.TEXT
+msgid  "Properties..."
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_BRKDLG.MENU.TEXT
+msgid  "Manage Breakpoints"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MENUITEM.TEXT
+msgid  "Manage Breakpoints..."
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MENUITEM.TEXT
+msgid  "Insert"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MENUITEM.TEXT
+msgid  "BASIC Module"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MENUITEM.TEXT
+msgid  "BASIC Dialog"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MENUITEM.TEXT
+msgid  "Delete"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
+msgid  "Rename"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
+msgid  "Hide"
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
+msgid  "Modules..."
+msgstr ""
+
+#: basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+msgid  "Properties..."
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
+msgid  "Do you want to overwrite the XX macro?"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
+msgid  "<Not localized>"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
+msgid  "[Default Language]"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
+msgid  "Document Objects"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_USERFORMS.STRING.TEXT
+msgid  "Forms"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
+msgid  "Modules"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
+msgid  "Class Modules"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.STRING.TEXT
+msgid  "Rename"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
+msgid  "Replace"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
+msgid  "Dialog Import - Name already used"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.STRING.TEXT
+msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
+msgid  "Add"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
+msgid  "Omit"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
+msgid  "Dialog Import - Language Mismatch"
+msgstr ""
+
+#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
+msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgstr ""
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
+msgid  "New"
+msgstr ""
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
+msgid  "Delete"
+msgstr ""
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CHECKBOX.TEXT
+msgid  "Active"
+msgstr ""
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
+msgid  "Pass Count:"
+msgstr ""
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
+msgid  "Breakpoints"
+msgstr ""
+
+#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
+msgid  "Manage Breakpoints"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
+msgid  "%PRODUCTNAME Basic Macros"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FIXEDTEXT.TEXT
+msgid  "Existing macros ~in:"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FIXEDTEXT.TEXT
+msgid  "~Macro name"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FIXEDTEXT.TEXT
+msgid  "Macro ~from"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FIXEDTEXT.TEXT
+msgid  "Save m~acro in"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FIXEDTEXT.TEXT
+msgid  "De~scription"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PUSHBUTTON.TEXT
+msgid  "R~un"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CANCELBUTTON.TEXT
+msgid  "Close"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PUSHBUTTON.TEXT
+msgid  "~Assign..."
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PUSHBUTTON.TEXT
+msgid  "~Edit"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PUSHBUTTON.TEXT
+msgid  "New ~Library"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+msgid  "New M~odule"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PUSHBUTTON.TEXT
+msgid  "~Delete"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PUSHBUTTON.TEXT
+msgid  "~Organizer..."
+msgstr ""
+
+#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
+msgid  "Macro"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_STR_BTNDEL.STRING.TEXT
+msgid  "~Delete"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
+msgid  "~New"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_STR_CLOSE.STRING.TEXT
+msgid  "Close"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
+msgid  "Choose"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
+msgid  "Run"
+msgstr ""
+
+#: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
+msgid  "~Save"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TD_ORGANIZE.TABDIALOG.TEXT
+msgid  "%PRODUCTNAME Basic Macro Organizer"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PAGEITEM.TEXT
+msgid  "Modules"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PAGEITEM.TEXT
+msgid  "Dialogs"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PAGEITEM.TEXT
+msgid  "Libraries"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FIXEDTEXT.TEXT
+msgid  "M~odule"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PUSHBUTTON.TEXT
+msgid  "~Edit"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+msgid  "Close"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+msgid  "~New..."
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
+msgid  "~New..."
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
+msgid  "~Delete"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
+msgid  "Dialog"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PUSHBUTTON.TEXT
+msgid  "~Edit"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+msgid  "Close"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+msgid  "~New..."
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
+msgid  "~New..."
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PUSHBUTTON.TEXT
+msgid  "~Delete"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
+msgid  "L~ocation"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FIXEDTEXT.TEXT
+msgid  "~Library"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PUSHBUTTON.TEXT
+msgid  "~Edit"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+msgid  "Close"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
+msgid  "~Password..."
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PUSHBUTTON.TEXT
+msgid  "~New..."
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PUSHBUTTON.TEXT
+msgid  "~Import..."
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PUSHBUTTON.TEXT
+msgid  "E~xport..."
+msgstr ""
+
+#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PUSHBUTTON.TEXT
+msgid  "~Delete"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
+msgid  "Options"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CHECKBOX.TEXT
+msgid  "Insert as reference (read-only)"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CHECKBOX.TEXT
+msgid  "Replace existing libraries"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FIXEDTEXT.TEXT
+msgid  "~Name:"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_DLG_EXPORT.MODALDIALOG.TEXT
+msgid  "Export Basic library"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RADIOBUTTON.TEXT
+msgid  "Export as ~extension"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RADIOBUTTON.TEXT
+msgid  "Export as BASIC library"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.STRING.TEXT
+msgid  "Export library as extension"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_STR_EXPORTBASIC.STRING.TEXT
+msgid  "Export as BASIC library"
+msgstr ""
+
+#: basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
+msgid  "Extension"
+msgstr ""
+
+#: basicide/moptions.src#RID_MACROOPTIONS.MODALDIALOG.TEXT
+msgid  "Description"
+msgstr ""
+
+#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FIXEDTEXT.TEXT
+msgid  "Description"
+msgstr ""
+
+#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
+msgid  "Help information"
+msgstr ""
+
+#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
+msgid  "Help ID"
+msgstr ""
+
+#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
+msgid  "Help file name"
+msgstr ""
+
+#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
+msgid  "Objects"
+msgstr ""
+
+#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
+msgid  "Show"
+msgstr ""
+
+#: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
+msgid  "Objects Tree"
+msgstr ""
+
+#: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 msgid  "Properties: "
-msgstr "Tulajdonságok: "
+msgstr ""
 
-#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#: dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 msgid  "No Control marked"
-msgstr "Nincs megjelölve vezérlőelem"
+msgstr ""
 
-#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#: dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
 msgid  "Multiselection"
-msgstr "Többszörös kijelölés"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.MODALDIALOG.TEXT
+msgid  "Manage User Interface Languages [$1]"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FIXEDTEXT.TEXT
+msgid  "Present Languages"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
+msgid  "Add..."
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
+msgid  "Delete"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
+msgid  "Default"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
+msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
+msgid  "~Close"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
+msgid  "[Default Language]"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
+msgid  "~Delete"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
+msgid  "<Press 'Add' to create language resources>"
+msgstr ""
+
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
+msgid  "Delete Language Resources"
+msgstr ""
+
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
+msgid  "Set Default User Interface Language"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
+msgid  "Default language"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
+msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.STRING.TEXT
+msgid  "Add User Interface Languages"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.STRING.TEXT
+msgid  "Available Languages"
+msgstr ""
+
+#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.STRING.TEXT
+msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
+msgstr ""

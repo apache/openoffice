@@ -31,702 +31,266 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/minimizer/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.SunPresentationMinimizer.Command1.MenuItems.SunPresentationMinimizerExecute2.Title
-msgid  "~Minimize Presentation..."
-msgstr "~Krymp presentasjon …"
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid  "Presentation Minimizer"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.HelpFile
-msgid  "%origin%/../../../../../../help/help_en-US.odt"
-msgstr "%origin%/../../../../../../help/help_en-US.odt"
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid  "Presentation Minimizer - Result"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUN_OPTIMIZATION_WIZARD2
-msgid  "@MINIMIZEREXTENSIONPRODUCTNAME@"
-msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_STEPS
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
 msgid  "Steps"
-msgstr "Steg"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_HELP
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
 msgid  "~Help"
-msgstr "~Hjelp"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_BACK
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
 msgid  "< ~Back"
-msgstr "< ~Forrige"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NEXT
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
 msgid  "~Next >"
-msgstr "~Neste >"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FINISH
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
 msgid  "~Finish"
-msgstr "~Fullfør"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CANCEL
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr "Avbryt"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
 msgid  "Introduction"
-msgstr "Introduksjon"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr " @MINIMIZEREXTENSIONPRODUCTNAME@ kan brukes til å gjøre presentasjonsfila mindre. Bildene blir komprimert og data som ikke behøves blir fjernet. På det siste steget i veiviseren kan du velge om endringene skal utføres i denne presentasjonen eller i en ny, optimert kopi av presentasjonen."
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
-msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
-msgstr "~Velg innstillinger for @MINIMIZEREXTENSIONPRODUCTNAME@"
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid  "~Choose settings for Presentation Minimizer"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
 msgid  "~Delete"
-msgstr "~Slett"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_GRAPHIC_OPTIMIZATION
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for optimizing pictures and graphics"
-msgstr "Velg hvordan bildene skal krympes"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_OPTIMIZATION
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
 msgid  "Graphics"
-msgstr "Bilder"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_LOSSLESS_COMPRESSION
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
 msgid  "~Lossless compression"
-msgstr "~Tapsfri komprimering"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_JPEG_COMPRESSION
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
 msgid  "~JPEG compression"
-msgstr "~JPEG-komprimering"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_QUALITY
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
 msgid  "~Quality in %"
-msgstr "~Kvalitet i %"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE_CROP_AREA
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
 msgid  "~Delete cropped graphic areas"
-msgstr "~Slett usynlige bildeområder"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
 msgid  "Reduce ~image resolution"
-msgstr "Bruk ~lavere bildeoppløsning"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_0
-msgid  "0;<no change>"
-msgstr "0;<ingen endring>"
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid  "<no change>"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_1
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
 msgid  "90;90 DPI (screen resolution)"
-msgstr "90;90 ppt (skjermoppløsning)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_2
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
 msgid  "150;150 DPI (projector resolution)"
-msgstr "150;150 ppt (framviseroppløsning)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_3
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
 msgid  "300;300 DPI (print resolution)"
-msgstr "300;300 ppt (utskriftsoppløsning)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_EMBED_LINKED_GRAPHICS
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
 msgid  "~Break links to external graphics"
-msgstr "~Bryt lenker til eksterne bilder"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
 msgid  "OLE Objects"
-msgstr "OLE-objekter"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OPTIMIZATION
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for replacing OLE objects"
-msgstr "Velg innstillinger for erstatning av OLE-objekter"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_REPLACE
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
 msgid  "Create static replacement graphics for OLE objects"
-msgstr "Lag statiske bilder istedenfor OLE-objekter"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALL_OLE_OBJECTS
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
 msgid  "For ~all OLE objects"
-msgstr "For ~alle OLE-objekter"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALIEN_OLE_OBJECTS_ONLY
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
 msgid  "~For OLE objects not based on OpenDocument format"
-msgstr "~For OLE-objekter som ikke bruker OpenDocument-format"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr "«Object Linking and Embedding» (OLE) er en teknologi som tillater innebygging og lenking av dokumenter og andre objekter. Denne presentasjonen inneholder OLE-objekter."
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr "«Object Linking and Embedding» (OLE) er en teknologi som tillater innbygging og lenking av dokumenter og andre objekter. Denne presentasjonen inneholder ingen OLE-objekter."
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SLIDES
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
 msgid  "Slides"
-msgstr "Lysbilde"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOOSE_SLIDES
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
 msgid  "Choose which slides to delete"
-msgstr "Velg hvilket lysbilde som skal slettes"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MASTER_PAGES
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
 msgid  "Master Pages"
-msgstr "Hovedsider"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_MASTER_PAGES
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
 msgid  "Delete unused ~master pages"
-msgstr "Slett ubrukte ~hovedsider"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_NOTES_PAGES
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
 msgid  "~Clear notes"
-msgstr "~Fjern merknader"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_HIDDEN_SLIDES
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
 msgid  "Delete hidden ~slides"
-msgstr "Slett ~skjulte lysbilder"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CUSTOM_SHOW
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
 msgid  "Delete slides that are not used for the ~custom slide show"
-msgstr "Slett lysbilder som ikke er brukt i den ~tilpassede framvisningen"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr "Oppsummering"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY_TITLE
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
 msgid  "Choose where to apply the following changes"
-msgstr "Velg hvor de følgende endringene skal utføres"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_PROGRESS
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
 msgid  "Progress"
-msgstr "Framdrift"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OBJECTS_OPTIMIZED
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
 msgid  "Objects optimized"
-msgstr "Objektene er optimerte"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_APPLY_TO_CURRENT
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
 msgid  "~Apply changes to current presentation"
-msgstr "~Bruk endringene på denne presentasjonen"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_AUTOMATICALLY_OPEN
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
 msgid  "~Open newly created presentation"
-msgstr "~Åpne nyopprettede presentasjoner"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_SETTINGS
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
 msgid  "~Save settings as"
-msgstr "~Lagre innstillinger som"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_AS
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
 msgid  "~Duplicate presentation before applying changes"
-msgstr "~Lag kopi av presentasjonen før endringene"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_SLIDES
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
 msgid  "Delete %SLIDES slides."
-msgstr "Slett %SLIDES lysbilder."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr "Optimer %IMAGES bilder til %QUALITY % JPEG-kvalitet ved %RESOLUTION ppt."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
 msgid  "Create replacement graphics for %OLE objects."
-msgstr "Lag bilder istedenfor %OLE objekter."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CURRENT_FILESIZE
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
 msgid  "Current file size:"
-msgstr "Filstørrelse nå:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ESTIMATED_FILESIZE
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
 msgid  "Estimated new file size:"
-msgstr "Estimert ny filstørrelse:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MB
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
 msgid  "%1 MB"
-msgstr "%1 MB"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.MY_SETTINGS
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
 msgid  "My Settings "
-msgstr "Mine innstillinger "
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DEFAULT_SESSION
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
 msgid  "default session"
-msgstr "standardøkt"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr "Krympingen vil endre dette dokumentet. Vil du fortsette?"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_YES
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
 msgid  "~Yes"
-msgstr "~Ja"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OK
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
 msgid  "OK"
-msgstr "OK"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_1
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@ har oppdatert presentasjonen «%TITLE». Filstørrelsen er endret fra %OLDFILESIZE MB til %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_2
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@ har oppdatert presentasjonen «%TITLE». Filstørrelsen er endret fra %OLDFILESIZE MB til omtrent %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_3
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@ har oppdatert presentasjonen «%TITLE». Filstørrelsen er endret til %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_4
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@ har oppdatert presentasjonen «%TITLE». Filstørrelsen er endret til omtrent %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
 msgid  "Duplicating presentation..."
-msgstr "Lager kopi av presentasjonen …"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETING_SLIDES
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
 msgid  "Deleting slides..."
-msgstr "Sletter lysbildet …"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZING_GRAPHICS
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
 msgid  "Optimizing graphics..."
-msgstr "Optimerer bildene …"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATING_OLE_REPLACEMENTS
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
 msgid  "Creating replacement graphics for OLE objects..."
-msgstr "Lager bilder av OLE-objektene …"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FILESIZESEPARATOR
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
 msgid  "."
-msgstr "."
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.LastUsedSettings.Name
-msgid  "Projector optimized"
-msgstr "Tilpasset framviser"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template1.Name
-msgid  "Screen optimized (smallest file size)"
-msgstr "Tilpasset skjerm (minste filstørrelse)"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template2.Name
-msgid  "Projector optimized"
-msgstr "Tilpasset framviser"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template3.Name
-msgid  "Print optimized"
-msgstr "Tilpasset utskrift"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#tit
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr "@PRESENTEREXTENSIONPRODUCTNAME@ hurtigtaster"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#bm_id0921200912285678
-msgid  "\<bookmark_value\>@PRESENTEREXTENSIONPRODUCTNAME@ shortcuts\</bookmark_value\>"
-msgstr "<bookmark_value>@PRESENTEREXTENSIONPRODUCTNAME@ snarveier</bookmark_value>"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#hd_id0921201912165661
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr "@PRESENTEREXTENSIONPRODUCTNAME@ hurtigtaster"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
-msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr "Når du kjører et lysbildeshow i @PRESENTEREXTENSIONPRODUCTNAME@, kan de følgende tastene brukes:"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
-msgid  "Action"
-msgstr "Handling"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104093
-msgid  "Key or Keys"
-msgstr "Tast eller Taster"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110418
-msgid  "Next slide, or next effect"
-msgstr "Neste lysbilde, eller neste effekt"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
-msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr "Venstreklikk, pil høyre, pil ned, mellomromtast, Page Down, Enter, Return, «N»"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
-msgid  "Previous slide, or previous effect"
-msgstr "Forrige lysbilde, eller forrige effekt"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104115
-msgid  "Right click, left arrow, up arrow, page up, backspace, 'P'"
-msgstr "Høyre klikk, pil venstre, pil opp, Page Up, rettetast, «P»"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104164
-msgid  "First slide"
-msgstr "Første lysbilde"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104148
-msgid  "Home"
-msgstr "Hjem"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104221
-msgid  "Last slide"
-msgstr "Siste lysbilde"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104277
-msgid  "End"
-msgstr "Slutt"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104279
-msgid  "Previous slide without effects"
-msgstr "Forrige lysbilde uten effekter"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110423
-msgid  "Alt+Page Up"
-msgstr "Alt + Page Up"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110427
-msgid  "Next slide without effects"
-msgstr "Neste lysbilde uten effekter"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104261
-msgid  "Alt+Page Down"
-msgstr "Alt + Page Down"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104383
-msgid  "Black/Unblack the screen"
-msgstr "Svartlegg / tilbakestill skjerm"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110431
-msgid  "'B', '.'"
-msgstr "«B», «.»"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104311
-msgid  "White/Unwhite the screen"
-msgstr "Hvitlegg / tilbakestill skjerm"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104359
-msgid  "'W', ','"
-msgstr "«W», «,»"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104336
-msgid  "End slide show"
-msgstr "Avslutt lysbildeframvisninga"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104419
-msgid  "Esc, '-'"
-msgstr "Escape, «-»"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104460
-msgid  "Go to slide number"
-msgstr "Gå til lysbilde nummer"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110440
-msgid  "Number followed by Enter"
-msgstr "Et tall etterfulgt av «Enter»"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104427
-msgid  "Grow/Shrink size of notes font"
-msgstr "Øk eller minsk størrelsen på skrifta for merknader"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104442
-msgid  "'G', 'S'"
-msgstr "«G», «S»"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104473
-msgid  "Scroll notes up/down"
-msgstr "Rull opp eller ned i merknadene"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110459
-msgid  "'A', 'Z'"
-msgstr "«A», «Z»"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110456
-msgid  "Move caret in notes view backward/forward"
-msgstr "Flytt innsettingstegnet i merknadsvisning forover/bakover"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110457
-msgid  "'H', 'L'"
-msgstr "«H», «L»"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104566
-msgid  "Show the @PRESENTEREXTENSIONPRODUCTNAME@"
-msgstr "Vis @PRESENTEREXTENSIONPRODUCTNAME@"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104544
-msgid  "Ctrl-'1'"
-msgstr "Ctrl + 1"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104535
-msgid  "Show the Presentation Notes"
-msgstr "Vis presentasjonsmerknader"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104680
-msgid  "Ctrl-'2'"
-msgstr "Ctrl + 2"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104634
-msgid  "Show the Slides Overview"
-msgstr "Vis lysbildeoversikt"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104632
-msgid  "Ctrl-'3'"
-msgstr "Ctrl + 3"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.a.Normal.Text
-msgid  "Previous"
-msgstr "Forrige"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.b.Normal.Text
-msgid  "Next"
-msgstr "Neste"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.c.Normal.Text
-msgid  "Notes"
-msgstr "Merknader"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.d.Normal.Text
-msgid  "Slides"
-msgstr "Lysbilder"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.l.Normal.Text
-msgid  "Help"
-msgstr "Hjelp"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.NotesToolBar.Entries.a.Normal.Text
-msgid  "Zoom"
-msgstr "Skalering"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.SlideSorterCloser.Text
-msgid  "Close"
-msgstr "Lukk"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.NotesViewCloser.Text
-msgid  "Close"
-msgstr "Lukk"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.HelpViewCloser.Text
-msgid  "Close"
-msgstr "Lukk"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
-msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr "Venstreklikk, pil høyre eller pil ned, mellomrom, Page Down, Enter, Return, «N»"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
-msgid  "Next slide, or next effect"
-msgstr "Neste lysbilde eller neste effekt"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
-msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr "Høyreklikk, pil venstre eller pil opp, Page Up, Rettetast. «P»"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
-msgid  "Previous slide, or previous effect"
-msgstr "Forrige lysbilde eller forrige effekt"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Left
-msgid  "Home"
-msgstr "Home"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Right
-msgid  "First slide"
-msgstr "Første lysbilde"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Left
-msgid  "End"
-msgstr "End"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Right
-msgid  "Last slide"
-msgstr "Siste lysbilde"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Left
-msgid  "Alt-Page Up"
-msgstr "Alt + Page Up"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Right
-msgid  "Previous slide without effects"
-msgstr "Forrige lysbilde uten effekter"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Left
-msgid  "Alt-Page Down"
-msgstr "Alt + Page Down"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Right
-msgid  "Next slide without effects"
-msgstr "Neste lysbilde uten effekter"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Left
-msgid  "'B', '.'"
-msgstr "«B», «.»"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Right
-msgid  "Blacks/Unblacks the screen"
-msgstr "Skru av eller på svart skjermbilde"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Left
-msgid  "'W', ','"
-msgstr "«W», «,»"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Right
-msgid  "Whites/Unwhites the screen"
-msgstr "Skru av eller på hvitt skjermbilde"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Left
-msgid  "Esc, '-'"
-msgstr "Escape, «-»"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Right
-msgid  "End slide show"
-msgstr "Avslutt lysbildeframvisninga"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Left
-msgid  "Number followed by Enter"
-msgstr "Et tall etterfulgt av «Enter»"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Right
-msgid  "Go to that slide"
-msgstr "Gå til det lysbildet"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Left
-msgid  "'G', 'S'"
-msgstr "«G», «S»"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Right
-msgid  "Grow/Shrink size of notes font"
-msgstr "Øk eller minsk størrelsen på skrifta for merknader"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Left
-msgid  "'A', 'Z'"
-msgstr "«A», «Z»"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Right
-msgid  "Scroll notes up/down"
-msgstr "Rull opp eller ned i merknadene"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Left
-msgid  "'H', 'L'"
-msgstr "«H», «L»"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Right
-msgid  "Move caret in notes view backward/forward"
-msgstr "Flytt innsettingstegnet i merknadsvisning forover/bakover"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Left
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Right
-msgid  " "
-msgstr " "
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Left
-msgid  "Ctrl-'1'"
-msgstr "Ctrl + 1"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Right
-msgid  "Shows the Presenter Console"
-msgstr "Vis presentasjonsskallet"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Left
-msgid  "Ctrl-'2'"
-msgstr "Ctrl + 2"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Right
-msgid  "Shows the Presentation Notes"
-msgstr "Vis presentasjonsmerknadene"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Left
-msgid  "Ctrl-'3'"
-msgstr "Ctrl + 3"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Right
-msgid  "Shows the Slides Overview"
-msgstr "Vis lysbildeoversikten"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Title
-msgid  "Current Slide (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
-msgstr "Gjeldende lysbilde (%CURRENT_SLIDE_NUMBER% av %SLIDE_COUNT%)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
-msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr "Gjeldende lysbilde, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
-msgid  "Click to exit presentation..."
-msgstr "Trykk her for å avslutte presentasjonen …"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationTitle.String
-msgid  "Current Slide (end)"
-msgstr "Gjeldende lysbilde (slutten)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NextSlidePreview.Title
-msgid  "Next Slide"
-msgstr "Neste lysbilde"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NotesView.Title
-msgid  "Notes"
-msgstr "Merknader"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
-msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr "Lysbildeoversikt, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.HelpView.Title
-msgid  "Help"
-msgstr "Hjelp"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Console.String
-msgid  "Presenter Console"
-msgstr "Presentasjonsskall"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Preview.String
-msgid  "Current Slide Info"
-msgstr "Gjeldende lysbildeinformasjon"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Notes.String
-msgid  "Presenter Notes"
-msgstr "Presentasjonsmerknader"
+msgstr ""

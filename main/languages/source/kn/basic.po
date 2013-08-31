@@ -31,574 +31,574 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Syntax error."
-msgstr "ಸಿಂಟಾಕ್ಸಿನಲ್ಲಿ ದೋಷ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_GOSUB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Return without Gosub."
-msgstr "Gosub ಇಲ್ಲದೆ ಮರಳಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_REDO_FROM_START_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect entry; please retry."
-msgstr "ತಪ್ಪಾದ ನಮೂದನೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ARGUMENT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid procedure call."
-msgstr "ಅಮಾನ್ಯವಾದ ವಿಧಾನದ ಕರೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_MATH_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Overflow."
-msgstr "ವಿಫುಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_MEMORY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough memory."
-msgstr "ಸಾಕಷ್ಟು ಸ್ಮೃತಿ ಇಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ALREADY_DIM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array already dimensioned."
-msgstr "ಅರೆಯ(array) ಆಕಾರವನ್ನು ಈಗಾಗಲೆ ಸೂಚಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_OUT_OF_RANGE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Index out of defined range."
-msgstr "ಸೂಚಿಯು ವ್ಯಾಪ್ತಿಯ ಹೊರಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DUPLICATE_DEF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Duplicate definition."
-msgstr "ವಿವರಣೆಯ ಇನ್ನೊಂದು ಪ್ರತಿ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ZERODIV_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Division by zero."
-msgstr "ಶೂನ್ಯದಿಂದ ಭಾಗಾಕಾರ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable not defined."
-msgstr "ವೇರಿಯಬಲ್ ಅನ್ನು ಸೂಚಿಸಲಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_CONVERSION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data type mismatch."
-msgstr "ದತ್ತಾಂಶದ ಬಗೆಯು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid parameter."
-msgstr "ಅಮಾನ್ಯವಾದ ನಿಯತಾಂಕ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_USER_ABORT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Process interrupted by user."
-msgstr "ಪ್ರಕ್ರಿಯೆಗೆ ಬಳಕೆದಾರರಿಂದ ತಡೆಯುಂಟಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RESUME_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Resume without error."
-msgstr "ದೋಷವಿಲ್ಲದೆ ಮರಳಿ ಆರಂಭಿಸು."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_STACK_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough stack memory."
-msgstr "ರಾಶಿಯಲ್ಲಿ ಸಾಕಷ್ಟು ಸ್ಮೃತಿ ಇಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROC_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub-procedure or function procedure not defined."
-msgstr "ಉಪ-ವಿಧಾನ ಅಥವ ಕ್ರಿಯೆಯ ವಿಧಾನವನ್ನು ಸೂಚಿಸಲಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading DLL file."
-msgstr "DLL ಕಡತವನ್ನು ಲೋಡ್ ಮಾಡುವಲ್ಲಿ ದೋಷ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_CALL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Wrong DLL call convention."
-msgstr "ರೂಢಿಗತ DLL ಕರೆಯು ತಪ್ಪಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INTERNAL_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Internal error $(ARG1)."
-msgstr "ಆಂತರಿಕ ದೋಷ $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid file name or file number."
-msgstr "ಅಮಾನ್ಯವಾದ ಕಡತದ ಹೆಸರು ಅಥವ ಕಡತ ಸಂಖ್ಯೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File not found."
-msgstr "ಕಡತವು ಕಂಡುಬಂದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_FILE_MODE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect file mode."
-msgstr "ಕಡತದ ಕ್ರಮವು ತಪ್ಪಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_ALREADY_OPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already open."
-msgstr "ಕಡತವನ್ನು ಈಗಾಗಲೆ ತೆರೆಯಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_IO_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device I/O error."
-msgstr "ಸಾಧನದ I/O ದೋಷ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_EXISTS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already exists."
-msgstr "ಕಡತವು ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_LENGTH_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record length."
-msgstr "ದಾಖಲೆಯ ಗಾತ್ರವು ತಪ್ಪಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DISK_FULL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Disk or hard drive full."
-msgstr "ಡಿಸ್ಕು ಅಥವ ಡ್ರೈವ್ ಪೂರ್ಣ ಭರ್ತಿಯಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_READ_PAST_EOF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Reading exceeds EOF."
-msgstr "ಓದುವಾಗ EOF ಅನ್ನು ಮೀರಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record number."
-msgstr "ದಾಖಲೆಯ ಸಂಖ್ಯೆಯು ತಪ್ಪಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_TOO_MANY_FILES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many files."
-msgstr "ಬಹಳಷ್ಟು ಕಡತಗಳು ಇವೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_DEVICE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device not available."
-msgstr "ಸಾಧನವು ಲಭ್ಯವಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_DENIED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Access denied."
-msgstr "ನಿಲುಕಣೆಯನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_READY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Disk not ready."
-msgstr "ಡಿಸ್ಕು ಸಿದ್ಧಗೊಂಡಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IMPLEMENTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not implemented."
-msgstr "ಅನ್ವಯಿಸಲಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DIFFERENT_DRIVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Renaming on different drives impossible."
-msgstr "ಪ್ರತ್ಯೇಕ ಡ್ರೈವುಗಳಲ್ಲಿ ಹೆಸರನ್ನು ಬದಲಾಯಿಸುವುದು ಸಾಧ್ಯವಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path/File access error."
-msgstr "ಮಾರ್ಗ/ಕಡತದ ನಿಲುಕಣೆಯಲ್ಲಿ ದೋಷ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PATH_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path not found."
-msgstr "ಮಾರ್ಗವು ಕಂಡುಬಂದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object variable not set."
-msgstr "ವಸ್ತುವಿನ ವೇರಿಯೇಬಲ್ ಅನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PATTERN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid string pattern."
-msgstr "ಅಮಾನ್ಯವಾದ ವಾಕ್ಯ ವಿನ್ಯಾಸ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_IS_NULL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Use of zero not permitted."
-msgstr "ಶೂನ್ಯವನ್ನು ಬಳಸಲು ಅನುಮತಿ ಇಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE Error."
-msgstr "DDE ದೋಷ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_WAITINGACK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Awaiting response to DDE connection."
-msgstr "DDE ಸಂಪರ್ಕದಿಂದ ಪ್ರತ್ಯುತ್ತರಕ್ಕಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_OUTOFCHANNELS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "No DDE channels available."
-msgstr "ಯಾವುದೆ DDE ಮಾರ್ಗಗಳು ಲಭ್ಯವಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_RESPONSE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "No application responded to DDE connect initiation."
-msgstr "DDE ಸಂಪರ್ಕ ಆರಂಭಕ್ಕೆ ಯಾವುದೆ ಅನ್ವಯವು ಪ್ರತಿಸ್ಪಂದಿಸಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_MULT_RESPONSES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many applications responded to DDE connect initiation."
-msgstr "DDE ಸಂಪರ್ಕ ಆರಂಭಕ್ಕೆ ಬಹಳಷ್ಟು ಅನ್ವಯಗಳು ಪ್ರತಿಸ್ಪಂದಿಸಿವೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_CHANNEL_LOCKED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE channel locked."
-msgstr "DDE ಮಾರ್ಗವನ್ನು ಲಾಕ್‌ ಮಾಡಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NOTPROCESSED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application cannot execute DDE operation."
-msgstr "ಬಾಹ್ಯ ಅನ್ವಯಗಳು DDE ಕಾರ್ಯಾಚರಣೆಯನ್ನು ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_TIMEOUT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Timeout while waiting for DDE response."
-msgstr "DDE ಪ್ರತ್ಯುತ್ತರಕ್ಕೆ ಕಾಯುವಾಗ ಕಾಲಾವಧಿ ಮೀರಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_USER_INTERRUPT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "User pressed ESCAPE during DDE operation."
-msgstr "DDE ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತಿರುವಾಗ ಬಳಕೆದಾರರು ESCAPE ಕೀಲಿಯನ್ನು ಒತ್ತಿದ್ದಾರೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_BUSY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application busy."
-msgstr "ಬಾಹ್ಯ ಅನ್ವಯವು ಕಾರ್ಯನಿರತವಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_DATA_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE operation without data."
-msgstr "ಯಾವುದೆ ದತ್ತಾಂಶವಿಲ್ಲದ DDE ಕಾರ್ಯಾಚರಣೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_WRONG_DATA_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data are in wrong format."
-msgstr "ದತ್ತವು ತಪ್ಪಾದ ವಿನ್ಯಾಸದಲ್ಲಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_PARTNER_QUIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application has been terminated."
-msgstr "ಬಾಹ್ಯ ಅನ್ವಯವನ್ನು ಅಂತ್ಯಗೊಳಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_CONV_CLOSED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE connection interrupted or modified."
-msgstr "DDE ಸಂಪರ್ಕವನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ ಅಥವ ಮಾರ್ಪಡಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE method invoked with no channel open."
-msgstr "ಯಾವುದೆ ಮಾರ್ಗವನ್ನು ತೆರೆಯದೆ DDE ವಿಧಾನವನ್ನು ಕೋರಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_INVALID_LINK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid DDE link format."
-msgstr "ಅಮಾನ್ಯವಾದ DDE ಕೊಂಡಿ ವಿನ್ಯಾಸ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_QUEUE_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE message has been lost."
-msgstr "DDE ಸಂದೇಶವು ಕಾಣೆಯಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_ALREADY_EST_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Paste link already performed."
-msgstr "ಕೊಂಡಿ ಅಂಟಿಸುವ ಕಾರ್ಯವನ್ನು ಈಗಾಗಲೆ ನಿರ್ವಹಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_INV_TOPIC_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr "ಅಮಾನ್ಯವಾದ ಕೊಂಡಿ ವಿಷಯದ ಕಾರಣ ಕೊಂಡಿ ಕ್ರಮವನ್ನು ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_DLL_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE requires the DDEML.DLL file."
-msgstr "DDE ಗಾಗಿ DDEML.DLL ಕಡತದ ಅಗತ್ಯವಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_CANNOT_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Module cannot be loaded; invalid format."
-msgstr "ಘಟಕವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ; ಅಮಾನ್ಯವಾದ ವಿನ್ಯಾಸ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_INDEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object index."
-msgstr "ಅಮಾನ್ಯವಾದ ವಸ್ತು ಸೂಚಿ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_ACTIVE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object is not available."
-msgstr "ವಸ್ತುವು ಲಭ್ಯವಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PROP_VALUE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect property value."
-msgstr "ಸರಿಯಲ್ಲದ ಗುಣದ ಮೌಲ್ಯ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROP_READONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is read-only."
-msgstr "ಈ ಗುಣವು ಕೇವಲ ಓದಲು ಮಾತ್ರ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROP_WRITEONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is write only."
-msgstr "ಈ ಗುಣವು ಕೇವಲ ಬರೆಯಲು ಮಾತ್ರ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INVALID_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object reference."
-msgstr "ಅಮಾನ್ಯವಾದ ವಸ್ತುವಿನ ಉಲ್ಲೇಖ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Property or method not found: $(ARG1)."
-msgstr "ಗುಣ ಅಥವ ವಿಧಾನವು ಕಂಡು ಬಂದಿಲ್ಲ: $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NEEDS_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object required."
-msgstr "ವಸ್ತುವಿನ ಅಗತ್ಯವಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INVALID_USAGE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid use of an object."
-msgstr "ಒಂದು ವಸ್ತುವಿನ ಅಮಾನ್ಯವಾದ ಬಳಕೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_OLE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "OLE Automation is not supported by this object."
-msgstr "OLE ಸ್ವಯಂಚಾಲನೆಯನ್ನು ಈ ವಸ್ತುವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property or method is not supported by the object."
-msgstr "ವಸ್ತುವಿನಿಂದ ಈ ಗುಣ ಅಥವ ವಿಧಾನವು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_OLE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "OLE Automation Error."
-msgstr "OLE ಸ್ವಯಂಚಾಲನೆಯಲ್ಲಿ ದೋಷ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ACTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This action is not supported by given object."
-msgstr "ನೀಡಲಾದ ವಸ್ತುವಿನಿಂದ ಈ ಕ್ರಿಯೆಯು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_NAMED_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Named arguments are not supported by given object."
-msgstr "ಹೆಸರಿಸಲಾದಂತಹ ಆರ್ಗುಮೆಂಟುಗಳು ಒದಗಿಸಲಾದ ವಸ್ತುವಿನಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_LOCALE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The current locale setting is not supported by the given object."
-msgstr "ನೀಡಲಾದ ವಸ್ತುವಿನಿಂದ ಪ್ರಸಕ್ತ ಪ್ರಾದೇಶಿಕ ಭಾಷಾ ಸಿದ್ಧತೆಯು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NAMED_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Named argument not found."
-msgstr "ಹೆಸರಿಸಲಾದ ಆರ್ಗುಮೆಂಟ್‌ ಕಂಡುಬಂದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_OPTIONAL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Argument is not optional."
-msgstr "ಆರ್ಗುಮೆಂಟ್‌ ಐಚ್ಛಿಕವಾದುದಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_WRONG_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid number of arguments."
-msgstr "ಆರ್ಗುಮೆಂಟ್‌ಗಳ ಅಮಾನ್ಯವಾದ ಸಂಖ್ಯೆ"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_A_COLL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object is not a list."
-msgstr "ವಸ್ತುವು ಒಂದು ಪಟ್ಟಿಯಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ORDINAL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid ordinal number."
-msgstr "ಅಮಾನ್ಯವಾದ ಕ್ರಮಸೂಚಕ ಸಂಖ್ಯೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DLLPROC_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Specified DLL function not found."
-msgstr "ಸೂಚಿಸಲಾದ DLL ಕ್ರಿಯೆಯು ಕಂಡುಬಂದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CLIPBD_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid clipboard format."
-msgstr "ಅಮಾನ್ಯವಾದ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ವಿನ್ಯಾಸ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROPERTY_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object does not have this property."
-msgstr "ವಸ್ತುವು ಈ ಗುಣವನ್ನು ಹೊಂದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_METHOD_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object does not have this method."
-msgstr "ವಸ್ತುವು ಈ ವಿಧಾನವನ್ನು ಹೊಂದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ARG_MISSING_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Required argument lacking."
-msgstr "ಅಗತ್ಯ ಆರ್ಗುಮೆಂಟಿನ ಕೊರತೆ ಇದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_NUMBER_OF_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid number of arguments."
-msgstr "ಆರ್ಗುಮೆಂಟ್‌ಗಳ ಅಮಾನ್ಯವಾದ ಸಂಖ್ಯೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_METHOD_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error executing a method."
-msgstr "ವಿಧಾನವನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸುವಲ್ಲಿ ದೋಷ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_SETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unable to set property."
-msgstr "ಗುಣವನ್ನು ಹೊಂದಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_GETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unable to determine property."
-msgstr "ಗುಣವನ್ನು ನಿರ್ಧರಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNEXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unexpected symbol: $(ARG1)."
-msgstr "ಅನಿರೀಕ್ಷಿತ ಸಂಕೇತ: $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Expected: $(ARG1)."
-msgstr "ಇದನ್ನು ನಿರೀಕ್ಷಿಸಲಾಗಿದೆ: $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_SYMBOL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Symbol expected."
-msgstr "ಸಂಕೇತವನ್ನು ನಿರೀಕ್ಷಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable expected."
-msgstr "ಚರಮೌಲ್ಯವನ್ನು ನಿರೀಕ್ಷಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_LABEL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label expected."
-msgstr "ಗುರುತುಚೀಟಿಯನ್ನು ನಿರೀಕ್ಷಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_LVALUE_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Value cannot be applied."
-msgstr "ಮೌಲ್ಯವನ್ನು ಅನ್ವಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable $(ARG1) already defined."
-msgstr "$(ARG1) ಚರಮೌಲ್ಯವನ್ನು ಈಗಾಗಲೆ ಸೂಚಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROC_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr "ಉಪ ವಿಧಾನ ಅಥವ ಕ್ರಿಯೆ ವಿಧಾನ $(ARG1) ಅನ್ನು ಈಗಾಗಲೆ ಸೂಚಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_LABEL_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label $(ARG1) already defined."
-msgstr "ಗುರುತುಚೀಟಿ $(ARG1) ಅನ್ನು ಈಗಾಗಲೆ ಸೂಚಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_VAR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable $(ARG1) not found."
-msgstr "$(ARG1) ಚರ ಮೌಲ್ಯವು ಕಂಡುಬಂದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_ARRAY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array or procedure $(ARG1) not found."
-msgstr "ಅರೆ(array) ಅಥವ ವಿಧಾನ $(ARG1) ಕಂಡು ಬಂದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_PROC_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Procedure $(ARG1) not found."
-msgstr "ವಿಧಾನ $(ARG1) ಕಂಡು ಬಂದಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_LABEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label $(ARG1) undefined."
-msgstr "ಗುರುತುಚೀಟಿ $(ARG1) ಅನ್ನು ಸೂಚಿಸಲಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_TYPE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unknown data type $(ARG1)."
-msgstr "ಅಜ್ಞಾತ ದತ್ತಾಶಂದ ಬಗೆ $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_EXIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Exit $(ARG1) expected."
-msgstr "$(ARG1) ನ ನಿರ್ಗಮನವನ್ನು ನಿರೀಕ್ಷಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_BLOCK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Statement block still open: $(ARG1) missing."
-msgstr "ಹೇಳಿಕೆ ವಿಭಾಗವು ಇನ್ನೂ ಸಹ ತೆರೆದೆ ಇದೆ: $(ARG1) ಕಾಣುತ್ತಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_BRACKETS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Parentheses do not match."
-msgstr "ಕೋಷ್ಟಕ ಚಿಹ್ನೆಗಳು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DECLARATION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Symbol $(ARG1) already defined differently."
-msgstr "ಸಂಕೇತ $(ARG1) ಅನ್ನು ಈಗಾಗಲೆ ಪ್ರತ್ಯೇಕವಾಗಿ ಸೂಚಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETERS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Parameters do not correspond to procedure."
-msgstr "ನಿಯತಾಂಕಗಳು ವಿಧಾನಕ್ಕೆ ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHAR_IN_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid character in number."
-msgstr "ಸಂಖ್ಯೆಯಲ್ಲಿ ಅಮಾನ್ಯವಾದ ಅಕ್ಷರ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_MUST_HAVE_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array must be dimensioned."
-msgstr "ಅರೆಯು(array) ಆಕಾರವನ್ನು ಹೊಂದಿರಬೇಕು."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_IF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Else/Endif without If."
-msgstr "If ಇಲ್ಲದ Else/Endif."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_SUBR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1) not allowed within a procedure."
-msgstr "ಒಂದು ವಿಧಾನದ ಒಳಗೆ $(ARG1) ಗೆ ಅನುಮತಿ ಇಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_MAIN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1) not allowed outside a procedure."
-msgstr "ಒಂದು ವಿಧಾನದ ಹೊರಗೆ $(ARG1) ಗೆ ಅನುಮತಿ ಇಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_WRONG_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Dimension specifications do not match."
-msgstr "ಆಕಾರದ ಸೂಚನೆಗಳು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_OPTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unknown option: $(ARG1)."
-msgstr "ಅಜ್ಞಾತ ಆಯ್ಕೆ: $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_CONSTANT_REDECLARED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Constant $(ARG1) redefined."
-msgstr "ಸ್ಥಿರಮೌಲ್ಯ $(ARG1) ಅನ್ನು ಮರಳಿ ವಿವರಿಸಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROG_TOO_LARGE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Program too large."
-msgstr "ಪ್ರೊಗ್ರಾಮ್‌ ಬಹಳ ದೊಡ್ಡದಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_STRINGS_ARRAYS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Strings or arrays not permitted."
-msgstr "ವಾಕ್ಯಗಳು ಅಥವ ಅರೆಗಳಿಗೆ(arrays) ಅನುಮತಿ ಇಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "An exception occurred $(ARG1)."
-msgstr "ಒಂದು ಅಪವಾದವು ಸಂಭವಿಸಿದೆ $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This array is fixed or temporarily locked."
-msgstr "ಈ ಅರೆಯನ್ನು(array) ಸರಿಪಡಿಸಲಾಗಿದೆ ಅಥವ ಲಾಕ್‌ ಮಾಡಲಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Out of string space."
-msgstr "ವಾಕ್ಯಕ್ಕೆ ಬೇಕಿರುವ ಸ್ಥಳಾವಕಾಶವು ಇಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Expression Too Complex."
-msgstr "ಸಮೀಕರಣವು ಬಹಳ ಸಂಕೀರ್ಣವಾಗಿದೆ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Can't perform requested operation."
-msgstr "ಮನವಿ ಸಲ್ಲಿಸಲಾದಂತಹ ಕಾರ್ಯವನ್ನು ನಡೆಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many DLL application clients."
-msgstr "ಬಹಳಷ್ಟು DLL ಅನ್ವಯ ಗ್ರಾಹಕಗಳು."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "For loop not initialized."
-msgstr "ಆರಂಭಗೊಳ್ಳದೆ ಇರುವ ಕುಣಿಕೆಗಾಗಿ(ಲೂಪ್‌)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1)"
-msgstr "$(ARG1)"
+msgstr ""
 
-#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+#: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
 msgid  "The macro running has been interrupted"
-msgstr "ಚಾಲನೆಯಲ್ಲಿರುವ ಮ್ಯಾಕ್ರೋವಿಗೆ ಅಡಚಣೆಯಾಗಿದೆ"
+msgstr ""
 
-#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+#: classes/sb.src#IDS_SBERR_STOREREF.STRING.TEXT
 msgid  "Reference will not be saved: "
-msgstr "ಆಧಾರವನ್ನು ಉಳಿಸಲಾಗುವುದಿಲ್ಲ: "
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_LIBLOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading library '$(ARG1)'."
-msgstr "'$(ARG1)' ಲೈಬ್ರರಿಯನ್ನು ಉಳಿಸುವಲ್ಲಿ ದೋಷ."
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_LIBSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error saving library: '$(ARG1)'."
-msgstr "ಲೈಬ್ರರಿಯನ್ನು ಉಳಿಸುವಲ್ಲಿ ದೋಷ: '$(ARG1)'."
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_MGROPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr "'$(ARG1)' ಕಡತದಿಂದ BASIC ಅನ್ನು ಆರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_MGRSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error saving BASIC: '$(ARG1)'."
-msgstr "BASIC ಅನ್ನು ಉಳಿಸುವಾಗ ದೋಷ: '$(ARG1)'."
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_REMOVELIB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error removing library."
-msgstr "ಲೈಬ್ರರಿಯನ್ನು ತೆಗೆದು ಹಾಕುವಲ್ಲಿ ದೋಷ."
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_UNLOADLIB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The library could not be removed from memory."
-msgstr "ಲೈಬ್ರರಿಯನ್ನು ಮೆಮೊರಿಯಿಂದ ತೆಗೆದುಹಾಕಲಾಗಲಿಲ್ಲ."
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_ON.STRING.TEXT
 msgid  "On"
-msgstr "ಆರಂಭ"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_OFF.STRING.TEXT
 msgid  "Off"
-msgstr "ಸ್ಥಗಿತ"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_TRUE.STRING.TEXT
 msgid  "True"
-msgstr "ಸತ್ಯ"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_FALSE.STRING.TEXT
 msgid  "False"
-msgstr "ಅಸತ್ಯ"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_YES.STRING.TEXT
 msgid  "Yes"
-msgstr "ಹೌದು"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_NO.STRING.TEXT
 msgid  "No"
-msgstr "ಇಲ್ಲ"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.STRING.TEXT
 msgid  "@0.00 $;@(0.00 $)"
-msgstr "@0.00 $;@(0.00 $)"
+msgstr ""

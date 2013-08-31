@@ -31,46 +31,46 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/solver/solver.src#RID_SOLVER_COMPONENT.String.Text
+#: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr "%PRODUCTNAME Linear Solver"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_NONNEGATIVE.String.Text
+#: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
-msgstr "変数を負の値ではないと想定"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_INTEGER.String.Text
+#: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr "変数を整数と想定"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_TIMEOUT.String.Text
+#: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr "時間制限の解決 (秒)"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_EPSILONLEVEL.String.Text
+#: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr "イプシロンレベル (0-3)"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.String.Text
+#: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
-msgstr "分岐と境界の深さを制限"
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_NONLINEAR.String.Text
+#: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr "そのモデルは線形ではありません。"
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_EPSILONLEVEL.String.Text
+#: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr "イプシロンレベルが無効です。"
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_INFEASIBLE.String.Text
+#: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr "そのモデルは実行不可能です。範囲指定を確認してください。"
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_UNBOUNDED.String.Text
+#: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr "そのモデルはバインドされていません。"
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_TIMEOUT.String.Text
+#: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
-msgstr "時間制限に達しました。"
+msgstr ""

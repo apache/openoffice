@@ -31,46 +31,46 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/solver/solver.src#RID_SOLVER_COMPONENT.String.Text
+#: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr "Lineærløysaren i %PRODUCTNAME"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_NONNEGATIVE.String.Text
+#: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
-msgstr "Rekn med ikkje-negative variablar"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_INTEGER.String.Text
+#: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr "Rekn med heiltalsvariablar"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_TIMEOUT.String.Text
+#: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr "Løysingstid (sekund)"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_EPSILONLEVEL.String.Text
+#: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr "Epsilonnivå (0–3)"
+msgstr ""
 
-#: source/solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.String.Text
+#: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
-msgstr "Avgrens djupna på grein-og-grense"
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_NONLINEAR.String.Text
+#: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr "Modellen er ikkje lineær."
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_EPSILONLEVEL.String.Text
+#: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr "Epsilonnivået er ugyldig."
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_INFEASIBLE.String.Text
+#: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr "Modellen er umogleg. Sjekk grensevilkåra."
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_UNBOUNDED.String.Text
+#: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr "Modellen er ubunden."
+msgstr ""
 
-#: source/solver/solver.src#RID_ERROR_TIMEOUT.String.Text
+#: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
-msgstr "Tidsgrensa blei nådd."
+msgstr ""

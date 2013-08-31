@@ -31,777 +31,266 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/minimizer/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.SunPresentationMinimizer.Command1.MenuItems.SunPresentationMinimizerExecute2.Title
-msgid  "~Minimize Presentation..."
-msgstr "~Mažinti pateiktį..."
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.HelpFile
-msgid  "%origin%/../../../../../../help/help_en-US.odt"
-msgstr "%origin%/../../../../../../help/help_en-US.odt"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUN_OPTIMIZATION_WIZARD2
-msgid  "@MINIMIZEREXTENSIONPRODUCTNAME@"
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid  "Presentation Minimizer"
 msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_STEPS
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid  "Presentation Minimizer - Result"
+msgstr ""
+
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
 msgid  "Steps"
-msgstr "Žingsniai"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_HELP
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
 msgid  "~Help"
-msgstr "~Žinynas"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_BACK
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
 msgid  "< ~Back"
-msgstr "< ~Atgal"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NEXT
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
 msgid  "~Next >"
-msgstr "~Toliau >"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FINISH
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
 msgid  "~Finish"
-msgstr "~Baigti"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CANCEL
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr "Atsisakyti"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
 msgid  "Introduction"
-msgstr "Įžanga"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
-#, fuzzy
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr "„Sun“ pateikčių mažintuvas naudojamas pateikties failo dydžiui sumažinti. Paveikslai suglaudinami, o nebereikalingi duomenys pašalinami. Paskutiniame žingsnyje galima pasirinkti, ar pakeitimus pritaikyti tai pačiai pateikčiai, ar sukurti naują optimizuotą pateikties failą."
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
-#, fuzzy
-msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
-msgstr "~Parinkite „@MINIMIZEREXTENSIONPRODUCTNAME@“ nuostatas"
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid  "~Choose settings for Presentation Minimizer"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE
-#, fuzzy
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
 msgid  "~Delete"
-msgstr "~Šalinti"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_GRAPHIC_OPTIMIZATION
-#, fuzzy
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for optimizing pictures and graphics"
-msgstr "Parinkite paveikslų optimizavimo nuostatas"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_OPTIMIZATION
-#, fuzzy
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
 msgid  "Graphics"
-msgstr "Paveikslai"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_LOSSLESS_COMPRESSION
-#, fuzzy
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
 msgid  "~Lossless compression"
-msgstr "~Glaudinimas be praradimų"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_JPEG_COMPRESSION
-#, fuzzy
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
 msgid  "~JPEG compression"
-msgstr "~JPEG glaudinimas"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_QUALITY
-#, fuzzy
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
 msgid  "~Quality in %"
-msgstr "~Kokybės %"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_REMOVE_CROP_AREA
-#, fuzzy
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
 msgid  "~Delete cropped graphic areas"
-msgstr "~Šalinti nukirptas paveikslų sritis"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION
-#, fuzzy
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
 msgid  "Reduce ~image resolution"
-msgstr "~Mažinti paveikslų skiriamąją gebą"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_0
-#, fuzzy
-msgid  "0;<no change>"
-msgstr "0;<nekeisti>"
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid  "<no change>"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_1
-#, fuzzy
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
 msgid  "90;90 DPI (screen resolution)"
-msgstr "90;90 DPI (rodymui ekrane)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_2
-#, fuzzy
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
 msgid  "150;150 DPI (projector resolution)"
-msgstr "150;150 DPI (rodymui projektoriumi)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_3
-#, fuzzy
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
 msgid  "300;300 DPI (print resolution)"
-msgstr "300;300 DPI (spausdinimui)"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_EMBED_LINKED_GRAPHICS
-#, fuzzy
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
 msgid  "~Break links to external graphics"
-msgstr "~Šalinti išorinių paveikslų saitus"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS
-#, fuzzy
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
 msgid  "OLE Objects"
-msgstr "OLE objektai"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OPTIMIZATION
-#, fuzzy
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
 msgid  "Choose settings for replacing OLE objects"
-msgstr "Parinkite OLE objektų keitimo nuostatas"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_REPLACE
-#, fuzzy
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
 msgid  "Create static replacement graphics for OLE objects"
-msgstr "Sukurti pakaitinius statinius paveikslus OLE objektams"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALL_OLE_OBJECTS
-#, fuzzy
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
 msgid  "For ~all OLE objects"
-msgstr "~Visiems OLE objektams"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ALIEN_OLE_OBJECTS_ONLY
-#, fuzzy
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
 msgid  "~For OLE objects not based on OpenDocument format"
-msgstr "~OLE objektams, sukurtiems ne „OpenDocument“ formato pagrindu"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
-#, fuzzy
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr "OLE technologija leidžia rengiamą dokumentą susieti bei į jį įdėti kitus dokumentus ar objektus. Tvarkomoje pateiktyje yra OLE objektų."
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
-#, fuzzy
-msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr "OLE technologija leidžia rengiamą dokumentą susieti bei į jį įdėti kitus dokumentus ar objektus. Tvarkomoje pateiktyje nėra OLE objektų."
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SLIDES
-#, fuzzy
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
 msgid  "Slides"
-msgstr "Skaidrės"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CHOOSE_SLIDES
-#, fuzzy
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
 msgid  "Choose which slides to delete"
-msgstr "Pasirinkite, kurias skaidres pašalinti"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MASTER_PAGES
-#, fuzzy
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
 msgid  "Master Pages"
-msgstr "Pagrindo skaidrės"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_MASTER_PAGES
-#, fuzzy
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
 msgid  "Delete unused ~master pages"
-msgstr "~Šalinti nenaudojamas pagrindo skaidres"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_NOTES_PAGES
-#, fuzzy
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
 msgid  "~Clear notes"
-msgstr "~Valyti pastabas"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_HIDDEN_SLIDES
-#, fuzzy
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
 msgid  "Delete hidden ~slides"
-msgstr "Šalinti paslėptas s~kaidres"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CUSTOM_SHOW
-#, fuzzy
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
 msgid  "Delete slides that are not used for the ~custom slide show"
-msgstr "Šalinti ap~rašytame pateikties demonstravime nenaudojamas skaidres"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY
-#, fuzzy
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr "Santrauka"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SUMMARY_TITLE
-#, fuzzy
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
 msgid  "Choose where to apply the following changes"
-msgstr "Pasirinkite, kur įrašyti pakeitimus"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_PROGRESS
-#, fuzzy
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
 msgid  "Progress"
-msgstr "Eiga"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OBJECTS_OPTIMIZED
-#, fuzzy
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
 msgid  "Objects optimized"
-msgstr "Optimizuoti objektai"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_APPLY_TO_CURRENT
-#, fuzzy
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
 msgid  "~Apply changes to current presentation"
-msgstr "~Taikyti pakeitimus esamai pateikčiai"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_AUTOMATICALLY_OPEN
-#, fuzzy
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
 msgid  "~Open newly created presentation"
-msgstr "At~verti naujai sukurtą pateiktį"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_SETTINGS
-#, fuzzy
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
 msgid  "~Save settings as"
-msgstr "Į~rašyti nuostatas taip"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_SAVE_AS
-#, fuzzy
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
 msgid  "~Duplicate presentation before applying changes"
-msgstr "~Prieš pritaikant pakeitimus sukurti pateikties kopiją"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETE_SLIDES
-#, fuzzy
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
 msgid  "Delete %SLIDES slides."
-msgstr "Šalinti %SLIDES skaidres."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
-#, fuzzy
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr "Optimizuoti %IMAGES paveikslus %QUALITY% JPEG kokybe su %RESOLUTION DPI skiriamąja geba."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
-#, fuzzy
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
 msgid  "Create replacement graphics for %OLE objects."
-msgstr "Sukurti pakaitinius paveikslus %OLE objektams."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CURRENT_FILESIZE
-#, fuzzy
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
 msgid  "Current file size:"
-msgstr "Esamas failo dydis:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_ESTIMATED_FILESIZE
-#, fuzzy
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
 msgid  "Estimated new file size:"
-msgstr "Numatomas failo dydis:"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MB
-#, fuzzy
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
 msgid  "%1 MB"
-msgstr "%1 MB"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.MY_SETTINGS
-#, fuzzy
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
 msgid  "My Settings "
-msgstr "Mano nuostatos"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DEFAULT_SESSION
-#, fuzzy
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
 msgid  "default session"
-msgstr "numatytasis seansas"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
-#, fuzzy
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr "Optimizuojant bus pakeistas aktyvusis dokumentas. Ar tęsti?"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_YES
-#, fuzzy
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
 msgid  "~Yes"
-msgstr "~Taip"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OK
-#, fuzzy
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
 msgid  "OK"
-msgstr "Gerai"
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_1
-#, fuzzy
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr "„%EXTENSIONNAME“ sėkmingai atnaujino pateiktį „%TITLE“. Failo dydis pasikeitė iš %OLDFILESIZE MB į %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_2
-#, fuzzy
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr "„%EXTENSIONNAME“ sėkmingai atnaujino pateiktį „%TITLE“. Failo dydis pasikeitė iš %OLDFILESIZE MB į apytiksliai %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_3
-#, fuzzy
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr "„%EXTENSIONNAME“ sėkmingai atnaujino pateiktį „%TITLE“. Failo dydis pasikeitė į %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_INFO_4
-#, fuzzy
-msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr "„%EXTENSIONNAME“ sėkmingai atnaujino pateiktį „%TITLE“. Failo dydis pasikeitė apytiksliai į %NEWFILESIZE MB."
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
-#, fuzzy
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
 msgid  "Duplicating presentation..."
-msgstr "Kuriama pateikties kopija..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_DELETING_SLIDES
-#, fuzzy
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
 msgid  "Deleting slides..."
-msgstr "Šalinamos skaidrės..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_OPTIMIZING_GRAPHICS
-#, fuzzy
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
 msgid  "Optimizing graphics..."
-msgstr "Optimizuojami paveikslai..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_CREATING_OLE_REPLACEMENTS
-#, fuzzy
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
 msgid  "Creating replacement graphics for OLE objects..."
-msgstr "Kuriami pakaitiniai paveikslai OLE objektams..."
+msgstr ""
 
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Strings.STR_FILESIZESEPARATOR
-#, fuzzy
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
 msgid  "."
-msgstr "."
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.LastUsedSettings.Name
-#, fuzzy
-msgid  "Projector optimized"
-msgstr "Optimizuota rodymui projektoriumi"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template1.Name
-#, fuzzy
-msgid  "Screen optimized (smallest file size)"
-msgstr "Optimizuota rodymui ekrane (mažiausias failo dydis)"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template2.Name
-#, fuzzy
-msgid  "Projector optimized"
-msgstr "Optimizuota rodymui projektoriumi"
-
-#: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#SunPresentationMinimizer.Settings.Templates.template3.Name
-#, fuzzy
-msgid  "Print optimized"
-msgstr "Optimizuota spausdinimui"
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#tit
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#bm_id0921200912285678
-msgid  "\<bookmark_value\>@PRESENTEREXTENSIONPRODUCTNAME@ shortcuts\</bookmark_value\>"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#hd_id0921201912165661
-msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
-msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
-msgid  "Action"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104093
-msgid  "Key or Keys"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110418
-msgid  "Next slide, or next effect"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
-msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
-msgid  "Previous slide, or previous effect"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104115
-msgid  "Right click, left arrow, up arrow, page up, backspace, 'P'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104164
-msgid  "First slide"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104148
-msgid  "Home"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104221
-msgid  "Last slide"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104277
-msgid  "End"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104279
-msgid  "Previous slide without effects"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110423
-msgid  "Alt+Page Up"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110427
-msgid  "Next slide without effects"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104261
-msgid  "Alt+Page Down"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104383
-msgid  "Black/Unblack the screen"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110431
-msgid  "'B', '.'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104311
-msgid  "White/Unwhite the screen"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104359
-msgid  "'W', ','"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104336
-msgid  "End slide show"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104419
-msgid  "Esc, '-'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104460
-msgid  "Go to slide number"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110440
-msgid  "Number followed by Enter"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104427
-msgid  "Grow/Shrink size of notes font"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104442
-msgid  "'G', 'S'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104473
-msgid  "Scroll notes up/down"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110459
-msgid  "'A', 'Z'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110456
-msgid  "Move caret in notes view backward/forward"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id092120090110457
-msgid  "'H', 'L'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104566
-msgid  "Show the @PRESENTEREXTENSIONPRODUCTNAME@"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104544
-msgid  "Ctrl-'1'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104535
-msgid  "Show the Presentation Notes"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104680
-msgid  "Ctrl-'2'"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104634
-msgid  "Show the Slides Overview"
-msgstr ""
-
-#: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104632
-msgid  "Ctrl-'3'"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.a.Normal.Text
-msgid  "Previous"
-msgstr "Atgal"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.b.Normal.Text
-msgid  "Next"
-msgstr "Toliau"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.c.Normal.Text
-msgid  "Notes"
-msgstr "Pastabos"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.d.Normal.Text
-msgid  "Slides"
-msgstr "Skaidrės"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.l.Normal.Text
-msgid  "Help"
-msgstr "Žinynas"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.ToolBars.NotesToolBar.Entries.a.Normal.Text
-msgid  "Zoom"
-msgstr "Mastelis"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.SlideSorterCloser.Text
-msgid  "Close"
-msgstr "Užverti"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.NotesViewCloser.Text
-msgid  "Close"
-msgstr "Užverti"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.Buttons.HelpViewCloser.Text
-msgid  "Close"
-msgstr "Užverti"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
-msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr "Kairysis spustelėjimas, rodyklės dešinėn arba žemyn, tarpo, psl. žemyn, įvedimo arba „N“ klavišai"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
-msgid  "Next slide, or next effect"
-msgstr "Kita skaidrė arba kitas efektas"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
-msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr "Dešinysis spustelėjimas, rodyklės kairėn arba aukštyn, psl. aukštyn, šalinimo iš dešinės arba „P“ klavišai"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
-msgid  "Previous slide, or previous effect"
-msgstr "Ankstesnė skaidrė arba ankstesnis efektas"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Left
-msgid  "Home"
-msgstr "Pradžia"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Right
-msgid  "First slide"
-msgstr "Pirmoji skaidrė"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Left
-msgid  "End"
-msgstr "Pabaiga"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Right
-msgid  "Last slide"
-msgstr "Paskutinė skaidrė"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Left
-msgid  "Alt-Page Up"
-msgstr "Alt + Psl. aukštyn"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Right
-msgid  "Previous slide without effects"
-msgstr "Ankstesnė skaidrė be efektų"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Left
-msgid  "Alt-Page Down"
-msgstr "Alt + Psl. žemyn"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Right
-msgid  "Next slide without effects"
-msgstr "Kita skaidrė be efektų"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Left
-msgid  "'B', '.'"
-msgstr "„B“, „.“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Right
-msgid  "Blacks/Unblacks the screen"
-msgstr "Juodinti ekraną"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Left
-msgid  "'W', ','"
-msgstr "„W“, „,“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Right
-msgid  "Whites/Unwhites the screen"
-msgstr "Balinti ekraną"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Left
-msgid  "Esc, '-'"
-msgstr "„Gr“, „-“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Right
-msgid  "End slide show"
-msgstr "Baigti demonstravimą"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Left
-msgid  "Number followed by Enter"
-msgstr "Skaičius ir įvedimo klavišas"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Right
-msgid  "Go to that slide"
-msgstr "Eiti į nurodytą skaidrę"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Left
-msgid  "'G', 'S'"
-msgstr "„G“, „S“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Right
-msgid  "Grow/Shrink size of notes font"
-msgstr "Padidinti arba sumažinti pastabų šrifto dydį"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Left
-msgid  "'A', 'Z'"
-msgstr "„A“, „Z“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Right
-msgid  "Scroll notes up/down"
-msgstr "Slinkti pastabas aukštyn arba žemyn"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Left
-#, fuzzy
-msgid  "'H', 'L'"
-msgstr "„B“, „.“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Right
-msgid  "Move caret in notes view backward/forward"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Left
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.t.Right
-msgid  " "
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Left
-#, fuzzy
-msgid  "Ctrl-'1'"
-msgstr "Vald + „1“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Right
-#, fuzzy
-msgid  "Shows the Presenter Console"
-msgstr "Rodyti demonstruoklio pultą"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Left
-#, fuzzy
-msgid  "Ctrl-'2'"
-msgstr "Vald + „2“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Right
-#, fuzzy
-msgid  "Shows the Presentation Notes"
-msgstr "Rodyti pateikties skaidres"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Left
-#, fuzzy
-msgid  "Ctrl-'3'"
-msgstr "Vald + „3“"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Right
-#, fuzzy
-msgid  "Shows the Slides Overview"
-msgstr "Rodyti skaidrių apžvalgą"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Title
-#, fuzzy
-msgid  "Current Slide (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
-msgstr "Aktyvioji skaidrė (%CURRENT_SLIDE_NUMBER% iš %SLIDE_COUNT%)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
-msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
-#, fuzzy
-msgid  "Click to exit presentation..."
-msgstr "Spustelėkite, kad baigtumėte demonstravimą..."
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationTitle.String
-#, fuzzy
-msgid  "Current Slide (end)"
-msgstr "Aktyvioji skaidrė (pabaiga)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NextSlidePreview.Title
-#, fuzzy
-msgid  "Next Slide"
-msgstr "Kita skaidrė"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.NotesView.Title
-#, fuzzy
-msgid  "Notes"
-msgstr "Pastabos"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
-msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Views.HelpView.Title
-#, fuzzy
-msgid  "Help"
-msgstr "Žinynas"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Console.String
-msgid  "Presenter Console"
-msgstr ""
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Preview.String
-#, fuzzy
-msgid  "Current Slide Info"
-msgstr "Aktyvioji skaidrė (pabaiga)"
-
-#: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#PresenterScreen.Presenter.Accessibility.Notes.String
-msgid  "Presenter Notes"
 msgstr ""

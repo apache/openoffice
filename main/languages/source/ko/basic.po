@@ -31,574 +31,574 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Syntax error."
-msgstr "구문 오류가 발생했습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_GOSUB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Return without Gosub."
-msgstr "Gosub 없는 Return"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_REDO_FROM_START_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect entry; please retry."
-msgstr "입력이 잘못되었습니다. 다시 입력하십시오."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ARGUMENT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid procedure call."
-msgstr "프로시저 호출이 잘못되었습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_MATH_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Overflow."
-msgstr "오버플로"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_MEMORY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough memory."
-msgstr "메모리가 부족합니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ALREADY_DIM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array already dimensioned."
-msgstr "배열의 차원이 이미 정해짐"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_OUT_OF_RANGE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Index out of defined range."
-msgstr "정의된 범위를 벗어난 색인"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DUPLICATE_DEF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Duplicate definition."
-msgstr "중복된 정의"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ZERODIV_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Division by zero."
-msgstr "영(0)으로 나눔"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable not defined."
-msgstr "변수가 정의되지 않았습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_CONVERSION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data type mismatch."
-msgstr "일치하지 않는 데이터 형식"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid parameter."
-msgstr "매개 변수가 잘못되었습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_USER_ABORT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Process interrupted by user."
-msgstr "사용자에 의한 진행 과정 중단"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RESUME_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Resume without error."
-msgstr "오류 없이 다시 시작"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_STACK_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough stack memory."
-msgstr "스택 메모리가 부족합니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROC_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub-procedure or function procedure not defined."
-msgstr "하위 프로시저 또는 함수 프로시저가 정의되지 않았습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading DLL file."
-msgstr "DLL 파일 로드 중 오류"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_CALL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Wrong DLL call convention."
-msgstr "잘못된 DLL 호출 규칙"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INTERNAL_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Internal error $(ARG1)."
-msgstr "내부 오류 $(ARG1)이(가) 발생했습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid file name or file number."
-msgstr "유효하지 않은 파일 이름 또는 파일 번호"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File not found."
-msgstr "파일을 찾지 못함"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_FILE_MODE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect file mode."
-msgstr "잘못된 파일 모드"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_ALREADY_OPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already open."
-msgstr "열린 파일"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_IO_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device I/O error."
-msgstr "장치 I/O 오류가 발생했습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_EXISTS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already exists."
-msgstr "파일이 이미 있습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_LENGTH_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record length."
-msgstr "잘못된 레코드 길이"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DISK_FULL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Disk or hard drive full."
-msgstr "디스크 또는 하드 드라이브가 찼습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_READ_PAST_EOF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Reading exceeds EOF."
-msgstr "파일의 끝을 초과하여 읽었습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record number."
-msgstr "잘못된 레코드 번호"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_TOO_MANY_FILES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many files."
-msgstr "파일이 너무 많습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_DEVICE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device not available."
-msgstr "장치를 사용할 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_DENIED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Access denied."
-msgstr "액세스 거부됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_READY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Disk not ready."
-msgstr "디스크 준비 안 됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IMPLEMENTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not implemented."
-msgstr "구현되지 않음"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DIFFERENT_DRIVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Renaming on different drives impossible."
-msgstr "다른 드라이브에서 이름 변경 불가능"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path/File access error."
-msgstr "경로/파일 액세스 오류가 발생했습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PATH_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path not found."
-msgstr "경로를 찾지 못함"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object variable not set."
-msgstr "개체 변수 설정 안 됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PATTERN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid string pattern."
-msgstr "유효하지 않은 문자열 패턴"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_IS_NULL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Use of zero not permitted."
-msgstr "영(0)을 사용할 수 없음"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE Error."
-msgstr "DDE 오류가 발생했습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_WAITINGACK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Awaiting response to DDE connection."
-msgstr "DDE 연결의 응답 대기 중"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_OUTOFCHANNELS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "No DDE channels available."
-msgstr "사용 가능한 DDE 채널이 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_RESPONSE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "No application responded to DDE connect initiation."
-msgstr "DDE 연결 요청에 응답하는 응용 프로그램이 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_MULT_RESPONSES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many applications responded to DDE connect initiation."
-msgstr "DDE 연결 요청에 응답하는 응용 프로그램이 너무 많습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_CHANNEL_LOCKED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE channel locked."
-msgstr "DDE 채널 잠김"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NOTPROCESSED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application cannot execute DDE operation."
-msgstr "외부 응용 프로그램은 DDE 작업을 실행할 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_TIMEOUT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Timeout while waiting for DDE response."
-msgstr "DDE 응답을 기다리는 중 제한 시간 초과"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_USER_INTERRUPT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "User pressed ESCAPE during DDE operation."
-msgstr "DDE가 작동하는 동안 사용자가 Escape를 눌렀습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_BUSY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application busy."
-msgstr "외부 응용 프로그램 사용 중"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_DATA_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE operation without data."
-msgstr "데이터 없는 DDE 작업입니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_WRONG_DATA_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data are in wrong format."
-msgstr "데이터 형식이 잘못되었습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_PARTNER_QUIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application has been terminated."
-msgstr "외부 응용 프로그램이 종료되었습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_CONV_CLOSED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE connection interrupted or modified."
-msgstr "DDE 연결 중단 또는 수정됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE method invoked with no channel open."
-msgstr "열린 채널 없이 DDE 메소드 호출"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_INVALID_LINK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid DDE link format."
-msgstr "DDE 링크 형식이 잘못되었습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_QUEUE_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE message has been lost."
-msgstr "DDE 메시지가 손실되었습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_ALREADY_EST_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Paste link already performed."
-msgstr "링크 붙여넣기 이미 수행됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_INV_TOPIC_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr "유효하지 않은 링크 제목으로 인해 연결 모드가 설정되지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_DLL_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE requires the DDEML.DLL file."
-msgstr "DDE에 DDEML.DLL 파일이 필요합니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_CANNOT_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Module cannot be loaded; invalid format."
-msgstr "모듈을 로드할 수 없습니다. 유효하지 않은 형식입니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_INDEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object index."
-msgstr "개체 색인이 잘못되었습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_ACTIVE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object is not available."
-msgstr "개체를 사용할 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PROP_VALUE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect property value."
-msgstr "잘못된 속성 값"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROP_READONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is read-only."
-msgstr "이 속성은 읽기 전용입니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROP_WRITEONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is write only."
-msgstr "이 속성은 쓰기 전용입니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INVALID_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object reference."
-msgstr "유효하지 않은 개체 참조"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Property or method not found: $(ARG1)."
-msgstr "속성이나 메소드를 찾을 수 없음 : $(ARG1)"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NEEDS_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object required."
-msgstr "개체 필요"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INVALID_USAGE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid use of an object."
-msgstr "개체 사용 잘못됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_OLE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "OLE Automation is not supported by this object."
-msgstr "이 개체는 OLE 자동화를 지원하지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property or method is not supported by the object."
-msgstr "해당 개체는 이 속성이나 메소드를 지원하지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_OLE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "OLE Automation Error."
-msgstr "OLE 자동화 오류가 발생했습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ACTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This action is not supported by given object."
-msgstr "지정된 개체에서 이 작업을 지원하지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_NAMED_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Named arguments are not supported by given object."
-msgstr "지정된 개체는 명명된 인수를 지원하지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_LOCALE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The current locale setting is not supported by the given object."
-msgstr "지정된 개체에서 현재의 언어별 설정을 지원하지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NAMED_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Named argument not found."
-msgstr "이름 지정된 인수를 찾지 못함"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_OPTIONAL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Argument is not optional."
-msgstr "인수는 선택 사항이 아닙니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_WRONG_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid number of arguments."
-msgstr "유효하지 않은 인수 개수"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_A_COLL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object is not a list."
-msgstr "개체는 목록이 아닙니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ORDINAL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid ordinal number."
-msgstr "유효하지 않은 서수입니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DLLPROC_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Specified DLL function not found."
-msgstr "지정된 DLL 기능을 찾지 못함"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CLIPBD_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid clipboard format."
-msgstr "유효하지 않은 클립보드 서식"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROPERTY_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object does not have this property."
-msgstr "개체에 이 속성이 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_METHOD_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object does not have this method."
-msgstr "개체에 이 메소드가 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ARG_MISSING_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Required argument lacking."
-msgstr "필수 인수가 빠져있습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_NUMBER_OF_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid number of arguments."
-msgstr "인수의 개수가 유효하지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_METHOD_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error executing a method."
-msgstr "메소드 실행 중 오류가 발생했습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_SETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unable to set property."
-msgstr "속성을 설정할 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_GETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unable to determine property."
-msgstr "속성을 결정할 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNEXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unexpected symbol: $(ARG1)."
-msgstr "예기치 않은 기호: $(ARG1)"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Expected: $(ARG1)."
-msgstr "예상됨: $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_SYMBOL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Symbol expected."
-msgstr "기호 예상됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable expected."
-msgstr "변수 예상됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_LABEL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label expected."
-msgstr "레이블이 예상됩니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_LVALUE_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Value cannot be applied."
-msgstr "값을 적용할 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable $(ARG1) already defined."
-msgstr "변수 $(ARG1)이(가) 이미 정의되어 있습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROC_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr "하위 프로시저 또는 함수 프로시저 $(ARG1)이(가) 이미 정의되어 있습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_LABEL_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label $(ARG1) already defined."
-msgstr "레이블 $(ARG1)이(가) 이미 정의되어 있습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_VAR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable $(ARG1) not found."
-msgstr "변수 $(ARG1)을(를) 찾을 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_ARRAY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array or procedure $(ARG1) not found."
-msgstr "배열 또는 프로시저 $(ARG1)을(를) 찾을 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_PROC_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Procedure $(ARG1) not found."
-msgstr "프로시저 $(ARG1)을(를） 찾을 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_LABEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label $(ARG1) undefined."
-msgstr "레이블 $(ARG1) 정의 안 됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_TYPE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unknown data type $(ARG1)."
-msgstr "알 수 없는 데이터 유형: $(ARG1)"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_EXIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Exit $(ARG1) expected."
-msgstr "$(ARG1) 종료 예상됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_BLOCK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Statement block still open: $(ARG1) missing."
-msgstr "지시문 블록이 아직 열려 있습니다. $(ARG1)이(가) 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_BRACKETS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Parentheses do not match."
-msgstr "괄호가 맞지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DECLARATION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Symbol $(ARG1) already defined differently."
-msgstr "기호 $(ARG1)이(가） 이미 다르게 정의되어 있습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETERS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Parameters do not correspond to procedure."
-msgstr "매개 변수가 프로시저에 맞지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHAR_IN_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid character in number."
-msgstr "숫자에 유효하지 않은 문자가 있습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_MUST_HAVE_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array must be dimensioned."
-msgstr "배열의 차원을 정해야 합니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_IF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Else/Endif without If."
-msgstr "IF 없는 Else/Endif"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_SUBR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1) not allowed within a procedure."
-msgstr "프로시저 안에서 $(ARG1) 사용 못 함"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_MAIN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1) not allowed outside a procedure."
-msgstr "프로시저 밖에서 $(ARG1) 사용 못 함"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_WRONG_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Dimension specifications do not match."
-msgstr "치수 정의가 맞지 않습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_OPTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unknown option: $(ARG1)."
-msgstr "알 수 없는 옵션: $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_CONSTANT_REDECLARED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Constant $(ARG1) redefined."
-msgstr "상수 $(ARG1) 재정의됨"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROG_TOO_LARGE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Program too large."
-msgstr "프로그램이 너무 큽니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_STRINGS_ARRAYS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Strings or arrays not permitted."
-msgstr "문자열 또는 배열이 허용되지 않음"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "An exception occurred $(ARG1)."
-msgstr "예외 발생: $(ARG1)"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This array is fixed or temporarily locked."
-msgstr "이 배열은 고정되었거나 일시적으로 잠겼습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Out of string space."
-msgstr "문자열 공간의 바깥쪽"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Expression Too Complex."
-msgstr "표현식이 너무 복잡합니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Can't perform requested operation."
-msgstr "요청된 작업을 수행할 수 없습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many DLL application clients."
-msgstr "DLL 프로그램 클라이언트가 너무 많습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "For loop not initialized."
-msgstr "반복문이 초기화되지 않았습니다."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1)"
-msgstr "$(ARG1)"
+msgstr ""
 
-#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+#: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
 msgid  "The macro running has been interrupted"
-msgstr "매크로 실행이 중단되었습니다."
+msgstr ""
 
-#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+#: classes/sb.src#IDS_SBERR_STOREREF.STRING.TEXT
 msgid  "Reference will not be saved: "
-msgstr "참조가 저장되지 않았습니다. "
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_LIBLOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading library '$(ARG1)'."
-msgstr "라이브러리 '$(ARG1)' 로드 중 오류"
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_LIBSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error saving library: '$(ARG1)'."
-msgstr "라이브러리 '$(ARG1)' 저장 중 오류"
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_MGROPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr "BASIC을 '$(ARG1)' 파일로부터 초기화하지 못했습니다."
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_MGRSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error saving BASIC: '$(ARG1)'."
-msgstr "BASIC 저장 중 오류: '$(ARG1)'"
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_REMOVELIB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error removing library."
-msgstr "라이브러리 제거 중 오류"
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_UNLOADLIB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The library could not be removed from memory."
-msgstr "메모리로부터 라이브러리를 삭제하지 못했습니다."
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_ON.STRING.TEXT
 msgid  "On"
-msgstr "적용"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_OFF.STRING.TEXT
 msgid  "Off"
-msgstr "해제"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_TRUE.STRING.TEXT
 msgid  "True"
-msgstr "TRUE"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_FALSE.STRING.TEXT
 msgid  "False"
-msgstr "FALSE"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_YES.STRING.TEXT
 msgid  "Yes"
-msgstr "예"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_NO.STRING.TEXT
 msgid  "No"
-msgstr "아니요"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.STRING.TEXT
 msgid  "@0.00 $;@(0.00 $)"
-msgstr "@0.00 $;@(0.00 $)"
+msgstr ""
