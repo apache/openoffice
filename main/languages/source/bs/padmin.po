@@ -31,852 +31,814 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FIXEDTEXT.TEXT
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr "Izaberite direktorij iz kojeg želite uvesti (importovati) fontove. Dodajte izabrane fontove klikom na U redu dugme."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FIXEDLINE.TEXT
 msgid  "Source directory"
-msgstr "Izvorni direktorij"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CHECKBOX.TEXT
 msgid  "Sea~rch Subdirectories"
-msgstr "Pre~tražuj poddirektorije"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FIXEDLINE.TEXT
 msgid  "Target options"
-msgstr "Opcije odredišta"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CHECKBOX.TEXT
 msgid  "Create ~soft links only"
-msgstr "Napravi samo ~simbolične linkove"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
-msgstr "~Izaberi sve"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.STRING.TEXT
 msgid  "Add fonts"
-msgstr "Dodaj fontove"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr "Želite li stvarno prepisati preko datoteke za pismo?\n %s"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.STRING.TEXT
+msgid  "Do you really want to overwrite this font file?\n   %s"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.STRING.TEXT
 msgid  "All"
-msgstr "Sve"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.STRING.TEXT
 msgid  "None"
-msgstr "Ništa"
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
 msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "Metrična datoteka za datoteku pisma\n   %s\nnije mogla biti kopirana. Pismo neće biti instalirano."
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.STRING.TEXT
+msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "Datoteku pisma\n  %s\nnije moguće kopirati. Font neće biti instaliran."
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.STRING.TEXT
+msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.STRING.TEXT
+msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.STRING.TEXT
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr "Direktorij u kojem je fonts.dir datoteka (u koju se može pisati) se ne nalazi u Fontpath. Zbog toga, fontovi ne mogu biti instalirani."
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
-msgid  "%d new fonts were added."
-msgstr "%d novih datoteka je dodano."
-
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
-msgid  "Add Fonts"
-msgstr "Dodaj fontove"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
-msgid  "CUPS support"
-msgstr "CUPS podrša"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
-msgid  "Disable CUPS Support"
-msgstr "Onesposobi CUPS podršku"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
-msgid  "Close"
-msgstr "Zatvori"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
-msgid  "Installed ~printers"
-msgstr "Instalirani štam~pači"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
-msgid  "Command:"
-msgstr "Naredba:"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
-msgid  "Driver:"
-msgstr "Drajver"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
-msgid  "Location:"
-msgstr "Lokacija:"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
-msgid  "Comment:"
-msgstr "Komentar:"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
-msgid  "Properties..."
-msgstr "Osobine..."
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
-msgid  "R~ename..."
-msgstr "Pr~eimenuj..."
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
-msgid  "~Default"
-msgstr "~Uobičajeno"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
-msgid  "Remo~ve..."
-msgstr "Uklo~ni..."
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
-msgid  "Test ~Page"
-msgstr "Te~st strana"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
-msgid  "Fon~ts..."
-msgstr "Fon~tovi..."
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
-msgid  "New Printer..."
-msgstr "Novi štampač..."
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
-msgid  "Default printer"
-msgstr "Uobičajeni štampač"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
-msgid  "Rename"
-msgstr "Preimenuj"
-
-#: source/padialog.src#RID_PADIALOG.String.Text
-msgid  "Printer Administration"
-msgstr "Administracija štampača"
-
-#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
-msgid  "Could not open printer %s."
-msgstr "Ne mogu otvoriti štampač %s."
-
-#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
-msgid  "The test page was printed succesfully. Please check the result."
-msgstr "Test strana je uspješno odštampana. Provjerite rezultat."
-
-#: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
-#: source/padialog.src#RID_QRY_PRTNAME.String.Text
-msgid  "~New printer name"
-msgstr "~Novo ime štampača"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.STRING.TEXT
+msgid  "%d new fonts were added."
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
-msgid  "Model"
-msgstr "Model"
+#: padialog.src#RID_FONTIMPORT_DIALOG.STRING.TEXT
+msgid  "Add Fonts"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
-msgid  "Name"
-msgstr "Ime"
+#: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FIXEDLINE.TEXT
+msgid  "CUPS support"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
-msgid  "Comment"
-msgstr "Komentar"
+#: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CHECKBOX.TEXT
+msgid  "Disable CUPS Support"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
-msgid  "Queue"
-msgstr "Red"
-
-#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
-msgid  "Date"
-msgstr "Datum"
-
-#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
-msgid  "Time"
-msgstr "Vrijeme"
-
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CANCELBUTTON.TEXT
 msgid  "Close"
-msgstr "Zatvori"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FIXEDLINE.TEXT
+msgid  "Installed ~printers"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FIXEDTEXT.TEXT
+msgid  "Command:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Driver:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FIXEDTEXT.TEXT
+msgid  "Location:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FIXEDTEXT.TEXT
+msgid  "Comment:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PUSHBUTTON.TEXT
+msgid  "Properties..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "R~ename..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PUSHBUTTON.TEXT
+msgid  "~Default"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PUSHBUTTON.TEXT
+msgid  "Remo~ve..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PUSHBUTTON.TEXT
+msgid  "Test ~Page"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PUSHBUTTON.TEXT
+msgid  "Fon~ts..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PUSHBUTTON.TEXT
+msgid  "New Printer..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.STRING.TEXT
+msgid  "Default printer"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.STRING.TEXT
+msgid  "Rename"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.STRING.TEXT
+msgid  "Printer Administration"
+msgstr ""
+
+#: padialog.src#RID_ERR_NOPRINTER.STRING.TEXT
+msgid  "Could not open printer %s."
+msgstr ""
+
+#: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.STRING.TEXT
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr ""
+
+#: padialog.src#RID_ERR_NOWRITE.STRING.TEXT
+msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
+
+#: padialog.src#RID_QRY_PRTNAME.STRING.TEXT
+msgid  "~New printer name"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_MODEL.STRING.TEXT
+msgid  "Model"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_NAME.STRING.TEXT
+msgid  "Name"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_COMMENT.STRING.TEXT
+msgid  "Comment"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_QUEUE.STRING.TEXT
+msgid  "Queue"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_DATE.STRING.TEXT
+msgid  "Date"
+msgstr ""
+
+#: padialog.src#RID_TXT_TESTPAGE_TIME.STRING.TEXT
+msgid  "Time"
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKBUTTON.TEXT
+msgid  "Close"
+msgstr ""
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PUSHBUTTON.TEXT
 msgid  "Re~name..."
-msgstr "Preime~nuj..."
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove..."
-msgstr "Uklo~ni..."
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PUSHBUTTON.TEXT
 msgid  "~Add..."
-msgstr "~Dodaj..."
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FIXEDTEXT.TEXT
 msgid  "Note: The fonts are only available to the applications."
-msgstr "Napomena: Fontovi su dostupni samo aplikacijama."
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.STRING.TEXT
 msgid  "~New name for %s"
-msgstr "~Novo ime za %s"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.STRING.TEXT
 msgid  "~New name for %s (%d1 of %d2)"
-msgstr "~Novo ime za %s (%d1 od %d2)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.STRING.TEXT
 msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr "Font %s se ne može preimenovati jer nemam dozvole za pisanje."
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.STRING.TEXT
 msgid  "Fonts"
-msgstr "Fontovi"
+msgstr ""
 
-#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+#: padialog.src#RID_BXT_TESTPAGE.STRING.TEXT
 msgid  "Test page"
-msgstr "Test strana"
+msgstr ""
 
-#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+#: padialog.src#RID_BXT_ENVIRONMENT.STRING.TEXT
 msgid  "Wrong environment"
-msgstr "Pogrešna okolina"
+msgstr ""
 
-#: source/padialog.src#RID_YOU_SURE.String.Text
+#: padialog.src#RID_YOU_SURE.STRING.TEXT
 msgid  "Are you sure ?"
-msgstr "Da li ste sigurni ?"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_OK.String.Text
+#: padialog.src#RID_AFMERROR_OK.STRING.TEXT
 msgid  "No error"
-msgstr "Bez greške"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FONT_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FontName' entry."
-msgstr "Metrika ne sadrži 'FontName' stavku."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FULL_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FullName' entry."
-msgstr "Metrika ne sadrži 'FullName' stavku."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FamilyName' entry."
-msgstr "Metrika ne sadrži 'FamilyName' stavku."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_MOVETO_FAILED.STRING.TEXT
 msgid  "The converted metric could not be written."
-msgstr "Konvertovana metrika ne može biti zapisana."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.STRING.TEXT
 msgid  "The metric could not be read."
-msgstr "Metrika ne može biti učitana."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.STRING.TEXT
 msgid  "A temporary file could not be created."
-msgstr "Privremena datoteka ne može biti napravljena."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+#: padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.TEXT
 msgid  "The file does not contain a metric."
-msgstr "Datoteka ne sadrži metriku."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr "Metričnost\n\n%s\n\nnisu mogli biti skupljeni zbog sljedećih razloga:\n\n"
+#: padialog.src#RID_AFMERROR_BOX_TXT.STRING.TEXT
+msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
 
-#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+#: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FIXEDTEXT.TEXT
 msgid  "Progress"
-msgstr "Napredak"
+msgstr ""
 
-#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+#: padialog.src#RID_PROGRESS_DLG.FIXEDTEXT.TEXT
 msgid  "Please wait"
-msgstr "Molim sačekajte"
+msgstr ""
 
-#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+#: padialog.src#RID_OPERATION_CONVERTMETRIC.STRING.TEXT
 msgid  "Font metrics conversion"
-msgstr "Konverzija metrike fontova"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FIXEDLINE.TEXT
 msgid  "Dri~ver directory"
-msgstr "Direktorij draj~vera"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FIXEDTEXT.TEXT
 msgid  "Please select the driver directory."
-msgstr "Izabrerite direktorij dravjera."
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr "Potraži..."
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FIXEDLINE.TEXT
 msgid  "~Selection of drivers"
-msgstr "~Izbor drajvera"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Please select the drivers to install and press \"%s\"."
-msgstr "Molim izaberite drajvere za instalaciju i pritisnite \"%s\"."
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.STRING.TEXT
 msgid  "Searching for drivers"
-msgstr "Tražim drajvere"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+#: padialog.src#RID_PPDIMPORT_DLG.CANCELBUTTON.TEXT
 msgid  "Driver Installation"
-msgstr "Instalacija drajvera"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+#: padialog.src#RID_QUERY_REMOVEDRIVER.STRING.TEXT
 msgid  "Do you really want to remove the driver \"%s\"?"
-msgstr "Da li stvarno želite da uklonite drajver \"%s\"?"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+#: padialog.src#RID_QUERY_REMOVEPRINTER.STRING.TEXT
 msgid  "Do you really want to remove this printer ?"
-msgstr "Da li zaista želite ukloniti ovaj štampač ?"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+#: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.STRING.TEXT
 msgid  "Do you really want to remove the selected fonts ?"
-msgstr "Da li zaista želite ukloniti izabrane fontove ?"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+#: padialog.src#RID_QUERY_DRIVERUSED.STRING.TEXT
 msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr "Postoje još uvijek štampači koji koriste drajver \"%s\". Da li stvarno želite da ga uklonite? Odgovarajući štampači će takođe biti uklonjeni."
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+#: padialog.src#RID_ERR_REMOVESGENPRT.STRING.TEXT
 msgid  "The driver \"%s\" is always needed and can therefore not be removed."
-msgstr "Drajver \"%s\" je uvijek potreban i zato se ne može ukloniti."
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr "Pokretački program \"%s1\" nije mogao biti uklonjen. Nije bilo moguće ukloniti  datoteke\n\n%s2."
+#: padialog.src#RID_ERR_REMOVEDRIVERFAILED.STRING.TEXT
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+#: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.STRING.TEXT
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
-msgstr "Drajver \"%s\" je korišten od vašeg uobičajenog štampača. Zato ne može biti uklonjen."
+msgstr ""
 
-#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+#: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.STRING.TEXT
 msgid  "The printer %s cannot be removed."
-msgstr "Štampač %s ne može biti uklonjen."
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+#: padialog.src#RID_TXT_PRINTERALREADYEXISTS.STRING.TEXT
 msgid  "A printer named \"%s\" already exists. This printer will not be imported."
-msgstr "Štampač zvan \"%s\" već postoji. Ovaj štampač neće biti uvezen."
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+#: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.STRING.TEXT
 msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
-msgstr "Štampač \"%s\" nema odgovarajuću konfiguraciju i zato ne može biti uvezen."
+msgstr ""
 
-#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+#: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.STRING.TEXT
 msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr "Drajver za štampač \"%s1\" (%s2) nije instaliran. Zato štampač ne može biti uvezen."
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+#: padialog.src#RID_TXT_PRINTERADDFAILED.STRING.TEXT
 msgid  "The printer \"%s\" could not be added."
-msgstr "Štampač \"%s\" se nije mogao dodati."
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKBUTTON.TEXT
 msgid  "~Finish"
-msgstr "~Kraj"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next >>"
-msgstr "~Dalje >>"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PUSHBUTTON.TEXT
 msgid  "<< ~Back"
-msgstr "<< Na~zad"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.PUSHBUTTON.TEXT
 msgid  "Add Printer"
-msgstr "Dodaj štampač"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "Izaberi drajver"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Please select a s~uitable driver."
-msgstr "Izaberite pri~mjeren drajver."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Import..."
-msgstr "~Uvezi..."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Delete"
-msgstr "~Obriši"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.STRING.TEXT
 msgid  "Delete driver"
-msgstr "Obriši drajver"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a device type"
-msgstr "Izaberi vrstu uređaja"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FIXEDTEXT.TEXT
 msgid  "Do you want to"
-msgstr "Da li želite da"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RADIOBUTTON.TEXT
 msgid  "Add a ~printer"
-msgstr "Dodaj š~tampač"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RADIOBUTTON.TEXT
 msgid  "Connect a fa~x device"
-msgstr "Priključi ~faks uređaj"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RADIOBUTTON.TEXT
 msgid  "Connect a P~DF converter"
-msgstr "Priključi P~DF konverter"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RADIOBUTTON.TEXT
 msgid  "~Import printers from a StarOffice installation"
-msgstr "~Uvezi štampače iz instalacije StarOffice-a"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a name"
-msgstr "Izaberi ime"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the printer."
-msgstr "Unesite ime za štampač."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the fax connection."
-msgstr "Unesite ime za faks vezu."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the PDF connection."
-msgstr "Unesite ime za vezu sa PDF-om."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.EDIT.TEXT
 msgid  "Fax printer"
-msgstr "Faks štampač"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.EDIT.TEXT
 msgid  "PDF converter"
-msgstr "PDF konverter"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CHECKBOX.TEXT
 msgid  "~Use as default printer"
-msgstr "~Koristi kao uobičajeni štampač"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CHECKBOX.TEXT
 msgid  "Remo~ve fax number from output"
-msgstr "Ukloni ~broj faksa sa izlaza"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a command line"
-msgstr "Izaberi komandnu liniju"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FIXEDTEXT.TEXT
 msgid  "Please enter a c~ommand line appropriate for this device."
-msgstr "Unesite odgovarajuću k~omandnu liniju za ovaj uređaj."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
 msgid  "PDF ~target directory"
-msgstr "PDF ~ciljni direktorij"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PUSHBUTTON.TEXT
 msgid  "~Help"
-msgstr "~Pomoć"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.STRING.TEXT
 msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "Komandna linija za PDF konvertere je izvršena ovako: za svaki štampani dokument, \"(TMP)\" u komandnoj liniji je zamijenjen trenutnom datotekom, a \"(OUTFILE)\" u komandnoj liniji je zamijenjen imenom PDF datoteke odredišta. Ukoliko je \"(TMP)\" u komandnoj liniji, PostScript kod će biti dostupan preko datoteke, inače preko standardnog ulaza (npr. kao pipe)."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.STRING.TEXT
 msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "Komandna linija za faks konekcije je izvršena ovako: za svaki poslani faks, \"(TMP)\" u komandnoj liniji je je zamijenjen trenutnom datotekom i \"(PHONE)\" u komandnoj liniji je zamjenjen brojem faksa. Ukoliko \"(TMP)\" se pojavi u komandnoj liniji, PostScript kod će biti dostupan preko datoteke, inače preko standardnog ulaza (npr. kao pipe)."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Import printers from old versions"
-msgstr "Uvezi štampače iz starijih verzija"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FIXEDTEXT.TEXT
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr "~Ovi štampači mogu biti uvezeni. Izaberite one koje želite uvesti."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
-msgstr "~Izaberi sve"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "Izaberi drajver"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this fax connection"
-msgstr "Koristi sljedeći drajver za ovu povezivanje na faks"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "U~običajeni drajver"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr "Poseban drajver, za adaptaciju ~formata za drugi štampač"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "Izaberi drajver"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this PDF converter"
-msgstr "Koristi sljedeći drajver za ovaj PDF konverter"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "U~običajeni drajver"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RADIOBUTTON.TEXT
 msgid  "The Adobe D~istiller(tm) driver"
-msgstr "Drajver za program Adobe D~istiller(tm)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr "Poseban drajver, za adaptac~iju formata za drugi štampač"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+#: padialog.src#RID_TXT_FONT_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr "Kurziv"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+#: padialog.src#RID_TXT_FONT_OBLIQUE.STRING.TEXT
 msgid  "Oblique"
-msgstr "Prozirno "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+#: padialog.src#RID_TXT_FONT_THIN.STRING.TEXT
 msgid  "Thin"
-msgstr "Tanko"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRALIGHT.STRING.TEXT
 msgid  "Ultralight"
-msgstr "Ultra-lagano"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_SEMILIGHT.STRING.TEXT
 msgid  "Semilight"
-msgstr "Polulagano"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_LIGHT.STRING.TEXT
 msgid  "Light"
-msgstr "Lagani"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+#: padialog.src#RID_TXT_FONT_SEMIBOLD.STRING.TEXT
 msgid  "Semibold"
-msgstr "Polumasno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+#: padialog.src#RID_TXT_FONT_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr "Masno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRABOLD.STRING.TEXT
 msgid  "Ultrabold"
-msgstr "Ultramasno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRACONDENSED.STRING.TEXT
 msgid  "Ultracondensed"
-msgstr "Ultrazbijeno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_EXTRACONDENSED.STRING.TEXT
 msgid  "Extracondensed"
-msgstr "Ekstra zbijeno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_CONDENSED.STRING.TEXT
 msgid  "Condensed"
-msgstr "Zgusnuto "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_SEMICONDENSED.STRING.TEXT
 msgid  "Semicondensed"
-msgstr "Poluzbijeno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_SEMIEXPANDED.STRING.TEXT
 msgid  "Semiexpanded"
-msgstr "Poluprošireno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_EXPANDED.STRING.TEXT
 msgid  "Expanded"
-msgstr "Prošireno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.STRING.TEXT
 msgid  "Extraexpanded"
-msgstr "Ekstra prošireno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.STRING.TEXT
 msgid  "Ultraexpanded"
-msgstr "Ultra-prošireno"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+#: padialog.src#RID_TXT_FONT_REGULAR.STRING.TEXT
 msgid  "Regular"
-msgstr "Obično"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PAGEITEM.TEXT
 msgid  "Command"
-msgstr "Naredba"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PAGEITEM.TEXT
 msgid  "Paper"
-msgstr "Papir"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PAGEITEM.TEXT
 msgid  "Device"
-msgstr "Uređaj"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PAGEITEM.TEXT
 msgid  "Font Replacement"
-msgstr "Zamjena fonta"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PAGEITEM.TEXT
 msgid  "Other Settings"
-msgstr "Druge postavke"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.STRING.TEXT
 msgid  "from driver"
-msgstr "iz drajvera"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.STRING.TEXT
 msgid  "<ignore>"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.STRING.TEXT
 msgid  "Properties of %s"
-msgstr "Osobine %s"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FIXEDTEXT.TEXT
 msgid  "~Paper size"
-msgstr "Veličina ~papira"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FIXEDTEXT.TEXT
 msgid  "~Orientation"
-msgstr "~Orijentacija"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FIXEDTEXT.TEXT
 msgid  "~Duplex"
-msgstr "~Dvostransko"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FIXEDTEXT.TEXT
 msgid  "Paper tray"
-msgstr "Ladica za papir"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.STRING.TEXT
 msgid  "Color"
-msgstr "Boja"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.STRING.TEXT
 msgid  "Grayscale"
-msgstr "Sive nijanse"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FIXEDTEXT.TEXT
 msgid  "~Option"
-msgstr "~Opcija"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FIXEDTEXT.TEXT
 msgid  "Current ~value"
-msgstr "Trenutna ~vrijednost"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FIXEDTEXT.TEXT
 msgid  "Printer ~Language type"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.STRINGLIST.ITEM
 msgid  "PostScript (Level from driver)"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.STRINGLIST.ITEM
 msgid  "PostScript Level 1"
-msgstr "PostScript ~nivo"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.STRINGLIST.ITEM
 msgid  "PostScript Level 2"
-msgstr "PostScript ~nivo"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.STRINGLIST.ITEM
 msgid  "PostScript Level 3"
-msgstr "PostScript ~nivo"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.STRINGLIST.ITEM
 msgid  "PDF"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FIXEDTEXT.TEXT
 msgid  "~Color"
-msgstr "~Boja"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FIXEDTEXT.TEXT
 msgid  "Color ~depth"
-msgstr "Dubina ~boje"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CHECKBOX.TEXT
 msgid  "~Enable font replacement"
-msgstr "~Uključi zamjenu fontova"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FIXEDTEXT.TEXT
 msgid  "Replaced ~fonts"
-msgstr "Zamijenjeni ~fontovi"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr "Dod~aj"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "~Ukloni"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FIXEDTEXT.TEXT
 msgid  "Repla~ce font"
-msgstr "~Zamijeni font"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FIXEDTEXT.TEXT
 msgid  "by ~printer font"
-msgstr "s fo~ntom štampača"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CHECKBOX.TEXT
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr "~Pokreni sistemski dijalog za štampu onesposobi %PRODUCTNAME dijalog za štampu"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FIXEDTEXT.TEXT
 msgid  "Command for quick printing without dialog (optional)"
-msgstr "Komanda za brzo štampanje bez dijaloga (mogućnost)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FIXEDLINE.TEXT
 msgid  "Select command"
-msgstr "Izaberi naredbu"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.STRING.TEXT
 msgid  "Printer"
-msgstr "Štampač"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.STRING.TEXT
 msgid  "Fax"
-msgstr "Faks"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.STRING.TEXT
 msgid  "PDF converter"
-msgstr "PDF konverter"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FIXEDTEXT.TEXT
 msgid  "~Configure as"
-msgstr "~Podesi kao"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CHECKBOX.TEXT
 msgid  "~Fax number will be removed from output"
-msgstr "~Broj faksa će biti uklonjen iz izlaza"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
 msgid  "PDF target directory :"
-msgstr "PDF odredišni direktorij :"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FIXEDTEXT.TEXT
 msgid  "Command: "
-msgstr "Naredba: "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FIXEDLINE.TEXT
 msgid  "Printer"
-msgstr "Štampač"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PUSHBUTTON.TEXT
 msgid  "~Help"
-msgstr "~Pomoć"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "~Ukloni"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.STRING.TEXT
 msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "Komandna linija za PDF konvertere je izvršena ovako: za svaki štampani dokument, \"(TMP)\" u komandnoj liniji je zamijenjen trenutnom datotekom, a \"(OUTFILE)\" u komandnoj liniji je zamijenjen imenom PDF datoteke odredišta. Ukoliko je \"(TMP)\" u komandnoj liniji, PostScript kod će biti dostupan preko datoteke, inače preko standardnog ulaza (npr. kao pipe)."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.STRING.TEXT
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr "Komandna linija za štampač je izvršena ovako: Generisani PostScript kod je dostupan kao standardni ulaz (npr. kao pipe) za komandnu liniju."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.STRING.TEXT
 msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "Komandna linija za faks uređaje je izvršena ovako: za svaki poslani faks, \"(TMP)\" u komandnoj liniji je zamijenjen trenutnom datotekom i \"(PHONE)\" u komandnoj liniji je zamijenjen brojem faksa. Ukoliko \"(TMP)\" se pojavi u komandnoj liniji, PostScript kod će biti dostupan preko datoteke, inače je dodan kao standardni ulaz (npr. kao pipe)."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Left margin"
-msgstr "~Lijeva margina"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Top margin"
-msgstr "~Gornja margina"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Right margin"
-msgstr "~Desna margina"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Bottom margin"
-msgstr "~Donja margina"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FIXEDTEXT.TEXT
 msgid  "~Comment"
-msgstr "~Komentar"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PUSHBUTTON.TEXT
 msgid  "~Default"
-msgstr "~Uobičajeno"
+msgstr ""
 
-#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
-#, fuzzy
+#: rtsetup.src#RID_TXT_QUERYFAXNUMBER.STRING.TEXT
 msgid  "Please enter the fax number."
-msgstr "Unesite broj faksa."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PWDIALOG.MODALDIALOG.TEXT
 msgid  "Authentication request"
-msgstr "Zahtjev za provjeru identiteta"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FIXEDTEXT.TEXT
 msgid  "Please enter your authentication data for server %s"
-msgstr "Molim unesite vaše autentične podatke za server %s"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FIXEDTEXT.TEXT
 msgid  "~User"
-msgstr "~Korisnik"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr "~Šifra"
+msgstr ""

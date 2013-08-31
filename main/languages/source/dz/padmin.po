@@ -31,918 +31,814 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FIXEDTEXT.TEXT
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr "ཁྱོད་ཀྱིས་ ཡིག་གཟུགས་ག་སྟེ་ལས་ནང་འདྲེན་འབད་ནི་ཨིན་ན་ དེ་ནང་ལས་སྣོད་འཛིན་སེལ་འཐུ་འབད་གནང་། ཨེབ་རྟ་ བཏུབ་ ལུ་ཨེབ་གཏང་འབད་དེ་ སེལ་འཐུ་འབད་ཡོད་མི་ ཡིག་གཟུགས་ཚུ་ཁ་སྐོང་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FIXEDLINE.TEXT
 msgid  "Source directory"
-msgstr "འབྱུང་ཁུངས་སྣོད་ཐོ།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CHECKBOX.TEXT
 msgid  "Sea~rch Subdirectories"
-msgstr "ཡན་ལག་སྣོད་ཐོ་ འཚོལ་ཞིབ་འབད།(~r)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FIXEDLINE.TEXT
 msgid  "Target options"
-msgstr "དམིགས་གཏད་འདམ་ཁ།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CHECKBOX.TEXT
 msgid  "Create ~soft links only"
-msgstr "སོཕཊི་ལིངཀི་གསར་བསྐྲུན་འབད།(~s)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
-msgstr "ཆ་མཉམ་སེལ་འཐུ་འབད།(~S)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.STRING.TEXT
 msgid  "Add fonts"
-msgstr "ཡིག་གཟུགས་ཁ་སྐོང་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr "ཁྱོད་ཀྱིས་ ཡིག་གཟུགས་ཀྱི་ཡིག་སྣོད་འདི་ ཐད་རི་འབའ་རི་ཚབ་སྲུང་འབད་ནི་ཨིན་ན?\n   %s"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.STRING.TEXT
+msgid  "Do you really want to overwrite this font file?\n   %s"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.STRING.TEXT
 msgid  "All"
-msgstr "ཆ་མཉམ།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.STRING.TEXT
 msgid  "None"
-msgstr "ཅི་མེད།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr " \n%s\n གི་དོན་ལུ་རྩ་སྒྲིག་གི་ཡིག་སྣོད་ (ཨེ་ཨེཕ་ཨེམ རྒྱ་བསྐྱེད་དང་བཅས་ཡོད་མི་འདི་)འཚོལ་མ་འཐོབ་ དེ་འབདཝ་ལས་ཡིག་གཟུགས་གཞི་བཙུགས་འབད་མི་ཚུགས། རྩ་སྒྲིག་ཡིག་སྣོད་ཚུ་དཔེར་ན་གྲིབ་ཡིག་གི་ཐོག་ལས་གསར་བསྐྲུན་འབད་ཚུགས་ དེ་ལས་ ཡིག་གཟུགས་ཡིག་སྣོད་ཡང་ན་ འདི་གི་ཨེ་ཨེཕ་ཨེམ་ཡན་ལག་སྣོད་ཐོ་བཟུམ་སྦེ་ སྣོད་ཐོ་གཅིག་པའི་ནང་ལུ་ བཞག་དགོ"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.STRING.TEXT
+msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "ཡིག་གཟུགས་ཀྱི་ཡིག་སྣོད་\n   %s\nགི་དོན་ལུ་ མེ་ཊིཀ་ཡིག་སྣོད་ འདྲ་བཤུས་བརྐྱབ་མི་ཚུགས། ཡིག་གཟུགས་འདི་གཞི་བཙུགས་མི་འབད།"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.STRING.TEXT
+msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "ཡིག་གཟུགས་ཀྱི་ཡིག་སྣོད་\n   %s\nདེ་ འདྲ་བཤུས་བརྐྱབ་མི་ཚུགས། ཡིག་གཟུགས་འདི་གཞི་བཙུགས་མི་འབད།"
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.STRING.TEXT
+msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.STRING.TEXT
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr "འབྲི་བཏུབ་པའི་ཡིག་གཟུགས་སྣོད་ཐོའི་ཡིག་སྣོད་ཡོད་མི་སྣོད་ཐོ་དེ་ ཡིག་ལམ་ནང་ལུ་ བཞག་སྟེ་མིན་འདུག དེ་འབད་ནི་དེ་གིས་ ཡིག་གཟུགས་གཞི་བཙུགས་འབད་མ་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.STRING.TEXT
 msgid  "%d new fonts were added."
-msgstr "%d ཡིག་གཟུགས་གསརཔ་དེ་ ཁ་སྐོང་བརྐྱབས་ཅི།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.STRING.TEXT
 msgid  "Add Fonts"
-msgstr "ཡིག་གཟུགས་ཁ་སྐོང་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+#: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FIXEDLINE.TEXT
 msgid  "CUPS support"
 msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+#: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CHECKBOX.TEXT
 msgid  "Disable CUPS Support"
 msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CANCELBUTTON.TEXT
 msgid  "Close"
-msgstr "ཁ་བསྡམ།"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
-msgid  "Installed ~printers"
-msgstr "གཞི་བཙུགས་འབད་ཡོད་མི་དཔར་འཕྲུལ།"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
-msgid  "Command:"
-msgstr "བརྡ་བཀོད:།"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
-msgid  "Driver:"
-msgstr "འདྲེན་འཕྲུལ།"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
-msgid  "Location:"
-msgstr "གནས་ཁོངས:།"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
-msgid  "Comment:"
-msgstr "བསམ་བཀོད:།"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
-msgid  "Properties..."
-msgstr "རྒྱུ་དངོས:།"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
-msgid  "R~ename..."
-msgstr "བསྐྱར་མིང་བཏགས:།(~e)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
-msgid  "~Default"
-msgstr "སྔོན་སྒྲིག:(~D)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
-msgid  "Remo~ve..."
-msgstr "རྩ་བསྐྲད:།(~v)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
-msgid  "Test ~Page"
-msgstr "བརྟག་ཞིབ་ཤོག་ལེབ།(~P)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
-msgid  "Fon~ts..."
-msgstr "ཡིག་གཟུགས།(~t)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
-msgid  "New Printer..."
-msgstr "དཔར་འཕྲུལ་གསརཔ།"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
-msgid  "Default printer"
-msgstr "དཔར་འཕྲུལ་སྔོན་སྒྲིག་འབད།"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
-msgid  "Rename"
-msgstr "བསྐྱར་མིང་བཏགས།"
-
-#: source/padialog.src#RID_PADIALOG.String.Text
-msgid  "Printer Administration"
-msgstr "དཔར་འཕྲུལ་བདག་སྐྱོང་པ།"
-
-#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
-msgid  "Could not open printer %s."
-msgstr "དཔར་འཕྲུལ %s ཁ་ཕྱེ་མ་ཚུགས།"
-
-#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
-msgid  "The test page was printed succesfully. Please check the result."
-msgstr "བརྟག་ཞིབ་ཤོག་ལེབ་དེ་ མཐར་འཁོལ་ཅན་སྦེ་དཔར་བསྐྲུན་འབད།"
-
-#: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
-#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+#: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FIXEDLINE.TEXT
+msgid  "Installed ~printers"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FIXEDTEXT.TEXT
+msgid  "Command:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Driver:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FIXEDTEXT.TEXT
+msgid  "Location:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FIXEDTEXT.TEXT
+msgid  "Comment:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PUSHBUTTON.TEXT
+msgid  "Properties..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "R~ename..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PUSHBUTTON.TEXT
+msgid  "~Default"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PUSHBUTTON.TEXT
+msgid  "Remo~ve..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PUSHBUTTON.TEXT
+msgid  "Test ~Page"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PUSHBUTTON.TEXT
+msgid  "Fon~ts..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PUSHBUTTON.TEXT
+msgid  "New Printer..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.STRING.TEXT
+msgid  "Default printer"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.STRING.TEXT
+msgid  "Rename"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.STRING.TEXT
+msgid  "Printer Administration"
+msgstr ""
+
+#: padialog.src#RID_ERR_NOPRINTER.STRING.TEXT
+msgid  "Could not open printer %s."
+msgstr ""
+
+#: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.STRING.TEXT
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr ""
+
+#: padialog.src#RID_ERR_NOWRITE.STRING.TEXT
+msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
+
+#: padialog.src#RID_QRY_PRTNAME.STRING.TEXT
 msgid  "~New printer name"
-msgstr "དཔར་འཕྲུལ་གསརཔ་གི་མིང་།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_MODEL.STRING.TEXT
 msgid  "Model"
-msgstr "དཔེ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_NAME.STRING.TEXT
 msgid  "Name"
-msgstr "མིང་།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_COMMENT.STRING.TEXT
 msgid  "Comment"
-msgstr "བསམ་བཀོད།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_QUEUE.STRING.TEXT
 msgid  "Queue"
-msgstr "མི་གྲལ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_DATE.STRING.TEXT
 msgid  "Date"
-msgstr "ཚེས་གྲངས།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_TIME.STRING.TEXT
 msgid  "Time"
-msgstr "ཆུ་ཚོད།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKBUTTON.TEXT
 msgid  "Close"
-msgstr "ཁ་བསྡམ།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PUSHBUTTON.TEXT
 msgid  "Re~name..."
-msgstr "བསྐྱར་མིང་བཏགས།(~n)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove..."
-msgstr "རྩ་བསྐྲད།(~R)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PUSHBUTTON.TEXT
 msgid  "~Add..."
-msgstr "ཁ་སྐོང་།(~A)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FIXEDTEXT.TEXT
 msgid  "Note: The fonts are only available to the applications."
-msgstr "དྲན་འཛིན:ཡིག་གཟུགས་ཚུ་ གློག་རིམ་ལུ་རྐྱངམ་ཅིག་འཐོབ་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.STRING.TEXT
 msgid  "~New name for %s"
-msgstr "%s ལུ་ མིང་གསརཔ།(~N)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.STRING.TEXT
 msgid  "~New name for %s (%d1 of %d2)"
-msgstr "%s (%d1 of %d2)ལུ་མིང་གསརཔ།(~N)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.STRING.TEXT
 msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr "ཡིག་གཟུགས %s དེ་ གནང་བ་བྲིས་ཟེར་མི་དེ་ བརླག་སྟོར་ཞུགས་ཡོདཔ་ལས་ བསྐྱར་མིང་བཏགས་མི་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.STRING.TEXT
 msgid  "Fonts"
-msgstr "ཡིག་གཟུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+#: padialog.src#RID_BXT_TESTPAGE.STRING.TEXT
 msgid  "Test page"
-msgstr "བརྟག་ཞིབ་ཤོག་ལེབ།"
+msgstr ""
 
-#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+#: padialog.src#RID_BXT_ENVIRONMENT.STRING.TEXT
 msgid  "Wrong environment"
-msgstr "མཐའ་འཁོར་ཕྱི་འགྱུར།"
+msgstr ""
 
-#: source/padialog.src#RID_YOU_SURE.String.Text
+#: padialog.src#RID_YOU_SURE.STRING.TEXT
 msgid  "Are you sure ?"
-msgstr "ཁྱོད་ངེས་ཏིག་ཨིན་ན?"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_OK.String.Text
+#: padialog.src#RID_AFMERROR_OK.STRING.TEXT
 msgid  "No error"
-msgstr "འཛོལ་བ་མིན་འདུག"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FONT_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FontName' entry."
-msgstr "མེ་ཊིཀ་ནང་ལུ་  'ཡིག་གཟུགས་མིང་'གི་ཐོ་བཀོད་མིན་འདུག"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FULL_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FullName' entry."
-msgstr "མེ་ཊིཀ་ནང་ལུ་ 'མིང་ཆ་ཚང་' གི་ཐོ་བཀོད་མིན་འདུག"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FamilyName' entry."
-msgstr "མེ་ཊིཀ་ནང་ལུ་ 'བཟའ་ཚང་མིང་' གི་ཐོ་བཀོད་མིན་འདུག"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_MOVETO_FAILED.STRING.TEXT
 msgid  "The converted metric could not be written."
-msgstr "གཞི་བསྒྱུར་འབད་ཡོད་མི་མེ་ཊིག་འབྲི་མི་བཏུབ།"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.STRING.TEXT
 msgid  "The metric could not be read."
-msgstr "མེ་ཊིག་སྟེ་ལྷག་མི་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.STRING.TEXT
 msgid  "A temporary file could not be created."
-msgstr "གནས་སྐབས་ཀྱི་ཡིག་སྣོད་གསར་བསྐྲུན་འབད་མ་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+#: padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.TEXT
 msgid  "The file does not contain a metric."
-msgstr "ཡིག་སྣོད་ནང་ལུ་ མེ་ཊིག་མིན་འདུག"
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr "མེ་ཊིག་\n\n%s\n\nདེ་ འོག་གི་རྒྱུ་མཚན་ཚུ་གི་དོན་ལུ་ གཞི་བསྒྱུར་འབད་མ་ཚུགས།\n\n"
+#: padialog.src#RID_AFMERROR_BOX_TXT.STRING.TEXT
+msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
 
-#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+#: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FIXEDTEXT.TEXT
 msgid  "Progress"
-msgstr "ཡར་འཕེལ།"
+msgstr ""
 
-#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+#: padialog.src#RID_PROGRESS_DLG.FIXEDTEXT.TEXT
 msgid  "Please wait"
-msgstr "བསྒུག་གནང་།"
+msgstr ""
 
-#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+#: padialog.src#RID_OPERATION_CONVERTMETRIC.STRING.TEXT
 msgid  "Font metrics conversion"
-msgstr "ཡིག་གཟུགས་མེ་ཊིག་གི་ གཞི་བསྒྱུར།"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FIXEDLINE.TEXT
 msgid  "Dri~ver directory"
-msgstr "འདྲེན་འཕྲུལ་སྣོད་ཐོ།(~v)"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FIXEDTEXT.TEXT
 msgid  "Please select the driver directory."
-msgstr "འདྲེན་འཕྲུལ་སྣོད་ཐོ་སེལ་འཐུ་འབད་གནང་།"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr "བརྡ་འཚོལ།"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FIXEDLINE.TEXT
 msgid  "~Selection of drivers"
-msgstr "འདྲེན་འཕྲུལ་གྱི་སེལ་འཐུ།(~S)"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Please select the drivers to install and press \"%s\"."
-msgstr "\"%s\".གཞི་བཙུགས་འབད་ནི་དང་ གཡེབ་ནིའི་དོན་ལུ་ འདྲེན་འཕྲུལ་ཚུ་སེལ་འཐུ་འབད།"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.STRING.TEXT
 msgid  "Searching for drivers"
-msgstr "འདྲེན་འཕྲུལ་འཚོལ་ཞིབ་འབད་དོ།"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+#: padialog.src#RID_PPDIMPORT_DLG.CANCELBUTTON.TEXT
 msgid  "Driver Installation"
-msgstr "འདྲེན་འཕྲུལ་གཞི་བཙུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+#: padialog.src#RID_QUERY_REMOVEDRIVER.STRING.TEXT
 msgid  "Do you really want to remove the driver \"%s\"?"
-msgstr "ཁྱོད་ཀྱིས་ འདྲེན་འཕྲུལ་\"%s\"རྩ་བསྐྲད་གཏང་ནི་དེ་ཐད་རི་འབའ་རི་ཨིན་ན?"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+#: padialog.src#RID_QUERY_REMOVEPRINTER.STRING.TEXT
 msgid  "Do you really want to remove this printer ?"
-msgstr "ཁྱོད་ཀྱིས་དཔར་འཕྲུལ་འདི་ཐད་རི་འབའ་རི་རྩ་བསྐྲད་གཏང་ནི་ཨིན་ན?"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+#: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.STRING.TEXT
 msgid  "Do you really want to remove the selected fonts ?"
-msgstr "ཁྱོད་ཀྱིས་ཐད་རི་འབའ་རི་ སེལ་འཐུ་འབད་ཡོད་མི་ཡིག་གཟུགས་ཚུ་ རྩ་བསཀྲད་གཏང་ནི་ཨིན་ན?"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+#: padialog.src#RID_QUERY_DRIVERUSED.STRING.TEXT
 msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr "\"%s\"ལག་ལེན་འཐབ་མི་པར་འཕྲུལ་ད་ལྟོ་ཡང་ཡོད། ཁྱོད་ཀྱིས་འདི་ཐད་རི་འབའ་རི་རྩ་བསྐྲད་གཏང་ནི་ཨངན་ན? དཔར་འཕྲུལ་ཆ་མཉམ་པ་སྦེ་ཡོད་མི་ཚུ་ཡང་ རྩ་བསྐརད་གཏང་འོང་།"
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+#: padialog.src#RID_ERR_REMOVESGENPRT.STRING.TEXT
 msgid  "The driver \"%s\" is always needed and can therefore not be removed."
-msgstr "འདྲེན་འཕྲུལ་\"%s\"འདི་ཨ་རྟག་རང་དགོཔ་ཡོད་ དོ་འབདཝ་ལས་ རྩ་བསྐྲད་མ་གཏང་པར་བཞག་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr "འདྲེན་འཕྲུལ་\"%s1\"རྩ་བསྐྲད་གཏང་མ་ཚུགས། ཡིག་སྣོད་\n\n%s2 རྩ་བསྐྲད་གཏང་ནི་དེ་ འབད་མ་ཚུགས།"
+#: padialog.src#RID_ERR_REMOVEDRIVERFAILED.STRING.TEXT
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+#: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.STRING.TEXT
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
-msgstr "འདྲེན་འཕྲུལ་\"%s\"འདི་ཁྱོད་རའི་སྔོན་སྒྲིག་དཔར་འཕྲུལ་གྱིས་ ལག་ལེན་འཐབ་ཡོདཔ་ཨིན། དེ་འབད་ནི་དེ་གིས་ འདི་རྩ་བསྐྲད་གཏང་མི་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+#: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.STRING.TEXT
 msgid  "The printer %s cannot be removed."
-msgstr "དཔར་འཕྲུལ་ %s དེ་ རྩ་བསྐྲད་གཏང་མ་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+#: padialog.src#RID_TXT_PRINTERALREADYEXISTS.STRING.TEXT
 msgid  "A printer named \"%s\" already exists. This printer will not be imported."
-msgstr "དཔར་འཕྲུལ་ \"%s\"ཟེར་མི་འདི་ ཧེ་མ་ལས་རང་ཡོད། དཔར་འཕྲུལ་འདི་ནང་འདྲེན་མི་འབད།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+#: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.STRING.TEXT
 msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
-msgstr "དཔར་འཕྲུལ་\"%s\"དེ་ལུ་ནུས་ཅན་རིམ་སྒྲིག་མིན་འཐུག་ དེ་འབད་ནི་དེ་གིས་ ནང་འདྲེན་འབད་མི་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+#: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.STRING.TEXT
 msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr "\"%s1\" (%s2)གི་དོན་ལུ་ འདྲེན་འཕྲུལ་ཞགི་བཙུགས་མ་འབད་བས། དེ་འབད་ནི་དེ་གིས་ དཔར་འཕྲུལ་དེ་ནང་འདྲེན་འབད་མི་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+#: padialog.src#RID_TXT_PRINTERADDFAILED.STRING.TEXT
 msgid  "The printer \"%s\" could not be added."
-msgstr "དཔར་འཕྲུལ་\"%s\"དེ་ཁ་སྐོང་བརྐྱབས་མ་ཚུགས།"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKBUTTON.TEXT
 msgid  "~Finish"
-msgstr "མཇུག་བསྡུ།(~F)"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next >>"
-msgstr "ཤུལ་མམ།(~N)"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PUSHBUTTON.TEXT
 msgid  "<< ~Back"
-msgstr "<<རྒྱབ།(~B)"
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.PUSHBUTTON.TEXT
 msgid  "Add Printer"
-msgstr "དཔར་འཕྲུལ་ཁ་སྐོང་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "འདྲེན་འཕྲུལ་གདམ་ཁ་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Please select a s~uitable driver."
-msgstr "འོས་འབབ་དངལྡན་མི་ འདྲེན་འཕྲུལ་གཅིག་སེལ་འཐུ་འབད་གནང་།(~u)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Import..."
-msgstr "ནང་འདྲེན།(~I)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Delete"
-msgstr "བཏོན་གཏང་།(~D)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.STRING.TEXT
 msgid  "Delete driver"
-msgstr "འདྲེན་འཕྲུལ་ བཏོན་གཏང་།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a device type"
-msgstr "ཐབས་སའཕྲུལ་གྱི་དབྱེ་བ་ གདམ་ཁ་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FIXEDTEXT.TEXT
 msgid  "Do you want to"
-msgstr "ཁྱོད་ཀྱི་འབད་ནི་ཨིན་ན"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RADIOBUTTON.TEXT
 msgid  "Add a ~printer"
-msgstr "དཔར་འཕྲུལ་གཅིག་ཁ་སྐོང་རྐྱབས།(~p)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RADIOBUTTON.TEXT
 msgid  "Connect a fa~x device"
-msgstr "དཔར་འཕྲིན་ཐབས་འཕྲུལ་གཅིག་ མཐུད།(~x)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RADIOBUTTON.TEXT
 msgid  "Connect a P~DF converter"
-msgstr "པི་ཌི་ཨེཕ་ གཞི་བསྒྱུར་པ་གཅིག་མཐུད།(~D)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RADIOBUTTON.TEXT
 msgid  "~Import printers from a StarOffice installation"
-msgstr "དཔར་འཕྲུལ་ཚུ་ སི་ཊར་ཨོ་ཕིསི་གཞི་བཙུགས་ཀྱི་ནང་ལས་ ནང་འདྲེན་འབད།(~I)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a name"
-msgstr "མིང་གདམ་ཁ་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the printer."
-msgstr "དཔར་འཕྲུལ་གྱི་དོན་ལུ་ མིང་གཅིག་བཙུགས་གནང་།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the fax connection."
-msgstr "དཔར་འཕྲིན་མཐུད་ལམ་གྱི་དོན་ལུ་ མིང་གཅིག་བཙུགས་གནང་།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the PDF connection."
-msgstr "པི་ཌི་ཨེཕ་མཐུད་ལམ་གྱི་དོན་ལུ་ མིང་གཅིག་བཙུགས་གདང་།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.EDIT.TEXT
 msgid  "Fax printer"
-msgstr "དཔར་འཕྲིན་ དཔར་འཕྲུལ།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.EDIT.TEXT
 msgid  "PDF converter"
-msgstr "པི་ཌི་ཨེཕ་ གཞི་བསྒྱུར་པ།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CHECKBOX.TEXT
 msgid  "~Use as default printer"
-msgstr "སྔོན་སྒྲིག་དཔར་འཕྲུལ་བཟུམ་སྦེ་ ལག་ལེན་འཐབ།(~U)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CHECKBOX.TEXT
 msgid  "Remo~ve fax number from output"
-msgstr "ཨའུཊི་པུཊི་ནང་ལས་ དཔར་འཕྲིན་ཨང་གྲངས་རྩ་བསྐྲད་གཏང་།(~v)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a command line"
-msgstr "བརྡ་བཀོད་གྲལ་ཐིག་གདམ་ཁ་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FIXEDTEXT.TEXT
 msgid  "Please enter a c~ommand line appropriate for this device."
-msgstr "ཐབས་འཕྲུལ་འདི་གི་དོན་ལུ་ འོས་འབབ་དང་ལྡན་མི་ བརྡ་བཀོད་གཅིག་བཙུགས་གནང་།(~o)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
 msgid  "PDF ~target directory"
-msgstr "པི་ཌི་ཨེཕ་དམིགས་གཏད་་སྣོད་ཐོ།(~t)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PUSHBUTTON.TEXT
 msgid  "~Help"
-msgstr "གྲོགས་རམ།(~H)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.STRING.TEXT
 msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "པི་ཌི་ཨེཕ་གཞི་བསྒྱུར་པ་ཚུ་གི་དོན་ལུ་ བརྡ་བཀོད་གྲལ་ཐིག་དེ་ འོག་ལུ་བཀོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ དཔར་བསྐྲུན་འབད་ཡོད་མི་ ཡིག་ཆ་རེ་རེ་ལུ་ ལག་ལེན་འཐབ་ཨིན བརྡ་བཀོད་གྲལ་ཐིག་ནང་གི་\"(TMP)\"དེ་ གནས་སྐབས་ཀྱི་ཡིག་སྣོད་ཀྱིས་ཚབས་བཙུགསཔ་ཨིནམ་དང་ བརྡ་བཀོད་ནང་གི་དང་ \"(OUTFILདེ་དམིགས་གཏད་ པི་ཌི་ཨེཕ་ ཡིག་སྣོད་མིང་གིས་ཚབས་བཙུགསཔ་ཨིན། ག་དེ་ཅིག་སྦེ་\"(TMP)\"བརྡ་བཀོད་གྲལ་ཐིག་ནང་ཡོད་པ་ཅིན་ པོསིཊི་སིཀིརིཔཊི་གི་ཨང་རྟགས་དེ་ ཡིག་སྣོད་བརྒྱུད་དེ་ བཀྲམ་སྤེལ་འབད་ནི་ཨིན་ དེ་མེན་པ་ཅིན་ ཚད་ལྡན་ཨིན་པུཊི་བརྒྱུད་དེ་འབད་འོང་།(དེ་ཡང་རྒྱུད་དུང་བཟུམ་སྦེ་).E)\" "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.STRING.TEXT
 msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "དཔར་འཕྲིན་འབྲེལ་མཐུད་ཀྱི་དོན་ལུ་ འོག་ལུ་བཏོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ གཏང་ཚར་མི་དཔར་འཕྲུན་རེ་རེ་ལུ་ བརྡ་བཀོད་གྲལ་ཐིག་ལག་ལེན་འཐབ་ཡོདཔ་ཨིན། བརྡ་བཀོད་གྲལ་ཐིག་ནང་ལུ་\"(TMP)\"ཡོད་མི་དེ་ གནས་སྐབས་ཡིག་སྣོད་མིང་གིས་ཚབ་བཙུགསཔ་ཨིནམ་དང་ བརྡ་བཀོད་གྲལ་ཐིག་ནང་ལུ་\"(PHONE)\"ཡོད་མི་དེ་ དཔར་འཕྲིན་ཨང་གྲངས་ཀྱིས་ཚབས་བཙུགསཔ་ཨིན། བརྡ་བཀོད་གྲལ་ཐིག་ནང་\"(TMP)\"འབྱུང་པ་ཅིན་ པོསིཊི་སིཀིརིཔཊི་ཨང་རྟགས་དེ་ ཡིག་སྣོད་བརྒྱུད་དེ་ བཀྲམ་སྤེལ་འབད་ནི་ཨིན་ དེ་མེན་པ་ཅིན་ འ་ནི་འདི་ཚད་ལྡན་ཨིན་པུཊི་བཟུམ་སྦེ་རྩིས་སྤྲོད་འབདཝ་ཨིན།(དེ་ཡང་རྒྱུད་དུང་བཟུམ་སྦེ་)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Import printers from old versions"
-msgstr "ཐོན་རིམ་རྙིངམ་ནང་ལས་ དཔར་འཕྲུལ་ནང་འདྲེན་འབད།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FIXEDTEXT.TEXT
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr "པར་འཕྲུལ་དེ་ཚུ་ནང་འདྲེན་འབད་ཚུགས། ཁྱོད་ཀྱིས་ནང་འདྲེན་འབད་ནི་ཨིན་མི་དེ་ཚུ་སེལ་འཐུ་འབད་གནང་།(~T)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
-msgstr "ཆ་མཉམ་སེལ་འཐུ་འབད།(~S)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "འདྲེན་འཕྲུལ་གཅིག་གདམ་ཁ་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this fax connection"
-msgstr "དཔར་འཕྲིན་མཐུད་ལམ་འདི་གི་དོན་ལུ་ འོག་ལུ་བཀོད་དེ་ཡོད་མི་འདྲེན་འཕྲུལ་ལག་ལེན་འཐབ།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "སྔོན་སྒྲིག་འདྲེན་འཕྲུལ།(~h)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr "དཔར་འཕྲུལ་ གཞན་མི་ཅིག་ནང་ལུ་ རྩ་སྒྲིག་མཐུན་བསྒྱུར་འབད་ནི་ལུ་ གསལ་བཀོད་འབད་ཡོད་མི་འདྲེན་འཕྲུལ།(~f)"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "འདྲེན་འཕྲུལ་གདམ་ཁ་རྐྱབས།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this PDF converter"
-msgstr "པི་ཌི་ཨེཕ་གཞི་བསྒྱུར་པ་འདི་གི་དོན་ལུ་ འོག་ལུ་བཀོད་དེ་ཡོད་མི་འདྲེན་འཕྲུལ་ལག་ལེན་འཐབ།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "སྔོན་སྒྲིག་འདྲེན་འཕྲུལ།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RADIOBUTTON.TEXT
 msgid  "The Adobe D~istiller(tm) driver"
-msgstr "ཨེ་ཌོབ་ཌིསི་ཊི་ལར་ འདྲེན་འཕྲུལ།"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
-#, fuzzy
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr "དཔར་འཕྲུལ་གཞན་མི་ཅིག་ལུ་རྩ་སྒྲིག་མཐུན་བསྒྱུར་འབད་ནིའི་དོན་ལུ་ གསལ་བཀོད་འབད་ཡོད་པའི་འདྲེན་འཕྲུལ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr "ཨའི་ཊ་ལིཀ། "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_OBLIQUE.STRING.TEXT
 msgid  "Oblique"
-msgstr "གཡོ་ཤད།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_THIN.STRING.TEXT
 msgid  "Thin"
-msgstr "སྲབ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_ULTRALIGHT.STRING.TEXT
 msgid  "Ultralight"
-msgstr "འོད་ཆེན།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_SEMILIGHT.STRING.TEXT
 msgid  "Semilight"
-msgstr "འོས་ཆུང་།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_LIGHT.STRING.TEXT
 msgid  "Light"
-msgstr "འོས།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_SEMIBOLD.STRING.TEXT
 msgid  "Semibold"
-msgstr "རྒྱགས་པ་ཆུང་བ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr "རྒྱགས་པ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_ULTRABOLD.STRING.TEXT
 msgid  "Ultrabold"
-msgstr "རྒྱགས་པ་ཆེན་པོ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_ULTRACONDENSED.STRING.TEXT
 msgid  "Ultracondensed"
-msgstr "ཧ་ཅང་སྲབ་དམ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_EXTRACONDENSED.STRING.TEXT
 msgid  "Extracondensed"
-msgstr "ཚད་འགལ་སྲབ་དམ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_CONDENSED.STRING.TEXT
 msgid  "Condensed"
-msgstr "སྲབ་དམ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_SEMICONDENSED.STRING.TEXT
 msgid  "Semicondensed"
-msgstr "སྲབ་དམ་ཞན་པ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_SEMIEXPANDED.STRING.TEXT
 msgid  "Semiexpanded"
-msgstr "རྒྱ་འཕར་ཞན་པ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_EXPANDED.STRING.TEXT
 msgid  "Expanded"
-msgstr "རྒྱ་འཕར་སོང་ཡོདཔ།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.STRING.TEXT
 msgid  "Extraexpanded"
-msgstr "ཚད་འགལ་རྒྱ་འཕར།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.STRING.TEXT
 msgid  "Ultraexpanded"
-msgstr "ཧ་ཅང་རྒྱ་འཕར།"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
-#, fuzzy
+#: padialog.src#RID_TXT_FONT_REGULAR.STRING.TEXT
 msgid  "Regular"
-msgstr "དུས་རྒྱུན།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PAGEITEM.TEXT
 msgid  "Command"
-msgstr "བརྡ་བཀོད།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PAGEITEM.TEXT
 msgid  "Paper"
-msgstr "དུས་རྒྱུན།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PAGEITEM.TEXT
 msgid  "Device"
-msgstr "ཐབས་འཕྲུལ།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PAGEITEM.TEXT
 msgid  "Font Replacement"
-msgstr "ཡིག་གཟུགས་ཚབ་བཙུགས།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PAGEITEM.TEXT
 msgid  "Other Settings"
-msgstr "སྒྲིག་སྟངས་གཞན་མི།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.STRING.TEXT
 msgid  "from driver"
-msgstr "འདྲེན་འཕྲུལ་ནང་ལས།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.STRING.TEXT
 msgid  "<ignore>"
-msgstr "<ignore>"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_RTSDIALOG.STRING.TEXT
 msgid  "Properties of %s"
-msgstr "%s གི་རྒྱུ་དངོས།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FIXEDTEXT.TEXT
 msgid  "~Paper size"
-msgstr "ཤོག་ཀུའི་ཚད།(~P)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FIXEDTEXT.TEXT
 msgid  "~Orientation"
-msgstr "ཕྱོགས།(~O)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FIXEDTEXT.TEXT
 msgid  "~Duplex"
-msgstr "ཌུ་པེལེགསི།(~D)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FIXEDTEXT.TEXT
 msgid  "Paper tray"
-msgstr "ཤོག་ཀུའི་ཤོག་སྣོད།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.STRING.TEXT
 msgid  "Color"
-msgstr "ཚོས་གཞི།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.STRING.TEXT
 msgid  "Grayscale"
-msgstr "ཆ་ཚད་སྐྱ་ཐལ།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FIXEDTEXT.TEXT
 msgid  "~Option"
-msgstr "གདམ་ཁ།(~O)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FIXEDTEXT.TEXT
 msgid  "Current ~value"
-msgstr "ད་ལྟོའི་གནས་གོང་།(~v)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FIXEDTEXT.TEXT
 msgid  "Printer ~Language type"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.STRINGLIST.ITEM
 msgid  "PostScript (Level from driver)"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.STRINGLIST.ITEM
 msgid  "PostScript Level 1"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.STRINGLIST.ITEM
 msgid  "PostScript Level 2"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.STRINGLIST.ITEM
 msgid  "PostScript Level 3"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.STRINGLIST.ITEM
 msgid  "PDF"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FIXEDTEXT.TEXT
 msgid  "~Color"
-msgstr "ཚོས་གཞི།(~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FIXEDTEXT.TEXT
 msgid  "Color ~depth"
-msgstr "ཚོས་གཞི་གཏིང་ཚད།(~d)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CHECKBOX.TEXT
 msgid  "~Enable font replacement"
-msgstr "ཡིག་གཟུགས་ཚབ་བཙུགས་ནི་ལྕོགས་ཅན་བཟོ།(~E)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FIXEDTEXT.TEXT
 msgid  "Replaced ~fonts"
-msgstr "ཚབ་བཙུགས་ཡོད་པའི་ཡིག་གཟུགས།(~f)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr "ཁ་སྐོང་།(~A)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "རྩ་བསྐྲད།(~R)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FIXEDTEXT.TEXT
 msgid  "Repla~ce font"
-msgstr "ཡིག་གཟུགས་ཚབ་བཙུགས།(~c)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FIXEDTEXT.TEXT
 msgid  "by ~printer font"
-msgstr "དཔར་འཕྲུལ་ཡིག་གཟུགས་ཀྱིས།(~p)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CHECKBOX.TEXT
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FIXEDTEXT.TEXT
 msgid  "Command for quick printing without dialog (optional)"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FIXEDLINE.TEXT
 msgid  "Select command"
-msgstr "བརྡ་བཀོད་སེལ་འཐུ་འབད།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.STRING.TEXT
 msgid  "Printer"
-msgstr "དཔར་འཕྲུལ།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.STRING.TEXT
 msgid  "Fax"
-msgstr "དཔར་འཕྲིན།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.STRING.TEXT
 msgid  "PDF converter"
-msgstr "པི་ཌི་ཨེཕ་ གཞི་བསྒྱུར་པ།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FIXEDTEXT.TEXT
 msgid  "~Configure as"
-msgstr "བཟུམ་སྦེ་སྲུང་བཞག་འབད།(~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CHECKBOX.TEXT
 msgid  "~Fax number will be removed from output"
-msgstr "ཨའུཊི་པུཊི་ ནང་ལས་དཔར་འཕྲིན་རྩ་བསྐྲད་གཏང་འོང་།(~F)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
 msgid  "PDF target directory :"
-msgstr "པི་ཌི་ཨེཕ་དམིགས་གཏད་སྣོད་ཐོ:"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FIXEDTEXT.TEXT
 msgid  "Command: "
-msgstr "བརྡ་བཀོད:"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FIXEDLINE.TEXT
 msgid  "Printer"
-msgstr "དཔར་འཕྲུལ།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PUSHBUTTON.TEXT
 msgid  "~Help"
-msgstr "གྲོགས་རམ།(~H)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "རྩ་བསྐྲད།(~R)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.STRING.TEXT
 msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "པི་ཌི་ཨེཕ་གཞི་བསྒྱུར་པ་ཚུ་གི་དོན་ལུ་ བརྡ་བཀོད་གྲལ་ཐིག་དེ་ འོག་ལུ་བཀོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ དཔར་བསྐྲུན་འབད་ཡོད་མི་ ཡིག་ཆ་རེ་རེ་ལུ་ ལག་ལེན་འཐབ་ཨིན བརྡ་བཀོད་གྲལ་ཐིག་ནང་གི་\"(TMP)\"དེ་ གནས་སྐབས་ཀྱི་ཡིག་སྣོད་ཀྱིས་ཚབས་བཙུགསཔ་ཨིནམ་དང་ བརྡ་བཀོད་ནང་གི་དང་ \"(OUTFILEདེ་དམིགས་གཏད་ པི་ཌི་ཨེཕ་ ཡིག་སྣོད་མིང་གིས་ཚབས་བཙུགསཔ་ཨིན། ག་དེ་ཅིག་སྦེ་\"(TMP)\"བརྡ་བཀོད་གྲལ་ཐིག་ནང་ཡོད་པ་ཅིན་ པོསིཊི་སིཀིརིཔཊི་གི་ཨང་རྟགས་དེ་ ཡིག་སྣོད་བརྒྱུད་དེ་ བཀྲམ་སྤེལ་འབད་ནི་ཨིན་ དེ་མེན་པ་ཅིན་ ཚད་ལྡན་ཨིན་པུཊི་བརྒྱུད་དེ་འབད་འོང་།(དེ་ཡང་རྒྱུད་དུང་བཟུམ་སྦེ་)."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.STRING.TEXT
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr "དཔར་འཕྲུལ་ཐབས་ལམ་གྱི་དོན་ལུ་ བརྡ་བརྡ་བཀོད་གྲལ་ཐིག་དེ་ འོག་ལུ་བཀོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ ལག་ལེན་འཐབ་ཡོདཔ་ཨིན: བཟོ་བཏོན་འབད་ཡོད་པའི་པོསིཊི་སིཀིརིཔཊི་ཨང་རྟགས་དེ་ བརྡ་བཀོད་གྲལ་ཐིག་ལུ་ ཚད་ལྡན་ཨིན་པུཊི་བཟུམ་སྦེ་བཀྲམ་སྤེལ་འབད་ཡོདཔ་ཨིན།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.STRING.TEXT
 msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "དཔར་འཕྲིན་ཐབས་ལམ་གྱི་དོན་ལུ་ འོག་ལུ་བཏོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ གཏང་ཚར་མི་དཔར་འཕྲུན་རེ་རེ་ལུ་ བརྡ་བཀོད་གྲལ་ཐིག་ལག་ལེན་འཐབ་ཡོདཔ་ཨིན། བརྡ་བཀོད་གྲལ་ཐིག་ནང་ལུ་\"(TMP)\"ཡོད་མི་དེ་ གནས་སྐབས་ཀྱི་ཡིག་སྣོད་མིང་གིས་ཚབ་བཙུགསཔ་ཨིནམ་དང་ བརྡ་བཀོད་གྲལ་ཐིག་ནང་ལུ་\"(PHONE)\"ཡོད་མི་དེ་ དཔར་འཕྲིན་ཨང་གྲངས་ཀྱིས་ཚབས་བཙུགསཔ་ཨིན། བརྡ་བཀོད་གྲལ་ཐིག་ནང་\"(TMP)\"འབྱུང་པ་ཅིན་ པོསིཊི་སིཀིརིཔཊི་ཨང་རྟགས་དེ་ ཡིག་སྣོད་བརྒྱུད་དེ་ བཀྲམ་སྤེལ་འབད་ནི་ཨིན་ དེ་མེན་པ་ཅིན་ འ་ནི་འདི་ཚད་ལྡན་ཨིན་པུཊི་བཟུམ་སྦེ་རྩིས་སྤྲོད་འབདཝ་ཨིན།(དེ་ཡང་རྒྱུད་དུང་བཟུམ་སྦེ་)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Left margin"
-msgstr "གཡོན་གྱི་ས་སྟོང།(~L)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Top margin"
-msgstr "སྤྱི་ཏོག་གི་ས་སྟོང་།(~T)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Right margin"
-msgstr "གཡས་ཀྱི་ས་སྟོང་།(~R)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Bottom margin"
-msgstr "གཤམ་གྱི་ས་སྟོང་།(~B)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FIXEDTEXT.TEXT
 msgid  "~Comment"
-msgstr "བསམ་བཀོད།(~C)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PUSHBUTTON.TEXT
 msgid  "~Default"
-msgstr "སྔོན་སྒྲིག(~D)"
+msgstr ""
 
-#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
-#, fuzzy
+#: rtsetup.src#RID_TXT_QUERYFAXNUMBER.STRING.TEXT
 msgid  "Please enter the fax number."
-msgstr "དཔར་འཕྲིན་གྱི་ཨང་བཙུགས་གནང་།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PWDIALOG.MODALDIALOG.TEXT
 msgid  "Authentication request"
-msgstr "བདེན་བཤད་ཞུ་བ།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FIXEDTEXT.TEXT
 msgid  "Please enter your authentication data for server %s"
-msgstr "སར་བར %s གི་དོན་ལུ་ ཁྱོད་རའི་བདེན་བཤད་བཙུགས་གནང་།"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FIXEDTEXT.TEXT
 msgid  "~User"
-msgstr "ལག་ལེན་པ།(~U)"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
-#, fuzzy
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr "ཆོག་ཡིག(~P)"
+msgstr ""

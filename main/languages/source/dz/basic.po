@@ -31,574 +31,574 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Syntax error."
-msgstr "ཚིག་སྦྱོར་འཛོལ་བ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_GOSUB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Return without Gosub."
-msgstr "གོ་སོབ་མེདཔ་སྦེ་སླར་ལོག་འབད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_REDO_FROM_START_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect entry; please retry."
-msgstr "ཐོ་བཀོད་བདེན་མེད། སླར་རྩོལ་འབད་གནང་།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ARGUMENT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid procedure call."
-msgstr "བྱ་སྒོའི་ལམ་ལུགས་ཀྱི་བོད་བརྡ་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_MATH_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Overflow."
-msgstr "ལུད་ལུདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_MEMORY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough memory."
-msgstr "དྲན་ཚད་ལངམ་མིན་འདུག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ALREADY_DIM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array already dimensioned."
-msgstr "ཧེ་མ་ལས་རང་རྒྱ་ཁྱོན་འབད་ཡོད་མི་ཨེ་རེ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_OUT_OF_RANGE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Index out of defined range."
-msgstr "ངེས་འཛིན་མ་འབད་བའི་ཁྱབ་ཚད་ཀྱི་ཟུར་ཐོ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DUPLICATE_DEF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Duplicate definition."
-msgstr "ངེས་ཚིག་རྫུན་མ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ZERODIV_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Division by zero."
-msgstr "ཀླད་ཀོར་གིས་བགོ་རྩིས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable not defined."
-msgstr "འགྱུར་ཅན་ངེས་འཛིན་མ་འབད་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_CONVERSION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data type mismatch."
-msgstr "གནད་སྡུད་ཀྱི་དབྱེ་བ་མ་མཐུནམ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid parameter."
-msgstr "ཚད་བཟུང་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_USER_ABORT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Process interrupted by user."
-msgstr "ལག་ལེན་པ་གིས་བར་དཀྲོགས་འབད་ཡོད་མི་ལས་སྦྱོར།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RESUME_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Resume without error."
-msgstr "འཛོལ་བ་མེདཔ་སྦེ་བསྐྱར་ལོག་འབད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_STACK_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough stack memory."
-msgstr "བརྩེགས་ཕུང་དྲན་ཚད་ལངམ་མིན་འདུག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROC_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub-procedure or function procedure not defined."
-msgstr "ཡན་ལག་བྱ་སྒོའི་ལམ་ལུགས་ ཡང་ན་ ལས་འགན་བྱ་སྒོའི་ལམ་ལུགས་ངེས་འཛིན་མ་འབད་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading DLL file."
-msgstr "DLL ཡིག་སྣོད་མངོན་གསལ་འབད་ནིའི་འཛོལ་བ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_CALL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Wrong DLL call convention."
-msgstr "DLL འབོད་བརྡའི་གྲོས་འཛོམས་ཕྱི་འགྱུར།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INTERNAL_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Internal error $(ARG1)."
-msgstr "ནང་འཁོད་འཛོལ་བ་ $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid file name or file number."
-msgstr "ཡིག་སྣོད་ཀྱི་མིང་ ཡང་ན་ ཡིག་སྣོད་ཀྱི་ཨང་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File not found."
-msgstr "ཡིག་སྣོད་འཚོལ་མ་ཐོབ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_FILE_MODE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect file mode."
-msgstr "ཡིག་སྣོད་ཐབས་ལམ་བདེན་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_ALREADY_OPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already open."
-msgstr "ཧེ་མ་ལས་རང་ཁ་ཕྱེ་ཡོད་མི་ཡིག་སྣོད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_IO_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device I/O error."
-msgstr "ཐབས་འཕྲུལ་ ཨའི་/ཨོ་ འཛོལ་བ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_FILE_EXISTS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already exists."
-msgstr "ཡིག་སྣོད་ཧེ་མ་ལས་རང་ཡོདཔ་ཨིན།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_LENGTH_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record length."
-msgstr "དྲན་ཐོའི་རིང་ཚད་བདེན་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DISK_FULL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Disk or hard drive full."
-msgstr "ཌིཀསི་ ཡང་ན་ ཧརཌི་ཌའིབ་གངམ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_READ_PAST_EOF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Reading exceeds EOF."
-msgstr "ལྷག་ཡོད་མི་ཨི་ཨོ་ཨེཕ་ལྷག་དོ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record number."
-msgstr "དྲན་ཐོའི་ཨང་བདེན་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_TOO_MANY_FILES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many files."
-msgstr "ཡིག་སྣོད་ཚུ་ལེ་ཤ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_DEVICE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device not available."
-msgstr "ཐབས་འཕྲུལ་འཐོབ་ཚུགསཔ་མིན་འདུག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_DENIED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Access denied."
-msgstr "འཛུལ་སྤྱོད་འབད་ནི་ཉན་མ་བཏུབ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_READY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Disk not ready."
-msgstr "ཌིཀསི་གྲ་སྒྲིག་མེདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IMPLEMENTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not implemented."
-msgstr "བསྟར་སྤྱོད་མ་འབདཝ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DIFFERENT_DRIVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Renaming on different drives impossible."
-msgstr "མི་སྲིད་པའི་འདྲེན་འཕྲུལ་སོ་སོ་ལུ་བསྐྱར་མིང་བཏགས་དོ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path/File access error."
-msgstr "འགྲུལ་ལམ་/ཡིག་སྣོད་འཛུལ་སྤྱོད་འཛོལ་བ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PATH_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path not found."
-msgstr "འགྲུལ་ལམ་འཚོལ་མ་ཐོབ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object variable not set."
-msgstr "དངོས་པོ་འགྱུར་ཅན་གཞི་སྒྲིག་མ་འབད་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PATTERN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid string pattern."
-msgstr "ཡིག་རྒྱུན་གྱི་དཔེ་གཞི་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_IS_NULL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Use of zero not permitted."
-msgstr "ཀླད་ཀོར་གྱི་ལག་ལེན་གནང་བ་མ་བྱིན་པས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE Error."
-msgstr "DDE འཛོལ་བ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_WAITINGACK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Awaiting response to DDE connection."
-msgstr "DDE མཐུད་ལམ་ལུ་ལན་བསྒུག་ནི།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_OUTOFCHANNELS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "No DDE channels available."
-msgstr "DDE རྒྱུ་ལམ་ཚུ་འཐོབ་ཚུགསཔ་མིན་འདུག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_RESPONSE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "No application responded to DDE connect initiation."
-msgstr "DDE མཐུད་ནི་འགོ་བཙུགས་ནི་ལུ་གློག་རིམ་གཅིག་གིས་ཡང་ལན་བཀོད་མ་འབད་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_MULT_RESPONSES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many applications responded to DDE connect initiation."
-msgstr "DDE མཐུད་ནི་འགོ་བཙུགས་ནི་ལུ་གློག་རིམ་ཚུ་ལེ་ཤ་ཅིག་ལན་བཀོད་འབད་ཡོདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_CHANNEL_LOCKED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE channel locked."
-msgstr "DDE རྒྱུ་ལམ་བསྡམ་བཞག་ཡོདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NOTPROCESSED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application cannot execute DDE operation."
-msgstr "ཕྱིའི་གློག་རིམ་གྱིས་DDEབཀོལ་སྤྱོད་ལག་ལེན་འཐོབ་མི་ཚུགས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_TIMEOUT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Timeout while waiting for DDE response."
-msgstr "DDE གི་ལན་གི་དོན་ལས་བསྒུག་པའི་སྐབས་ངལ་མཚམས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_USER_INTERRUPT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "User pressed ESCAPE during DDE operation."
-msgstr "ཌི་ཌི་ཨིའི་བཀོལ་སྤྱོད་བསྒང་ ལག་ལེན་པ་གིས་ བྲོས་ཟུར་འདི་ཨེབ་ནུག"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_BUSY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application busy."
-msgstr "ཕྱིའི་གློག་རིམ་ཁོམ་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_DATA_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE operation without data."
-msgstr "གནད་སྡུད་མེདཔ་སྦེ་DDEབཀོལ་སྤྱོད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_WRONG_DATA_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data are in wrong format."
-msgstr "གནད་སྡུད་ཚུ་རྩ་སྒྲིག་ཕྱི་འགྱུར་ནང་འདུག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_PARTNER_QUIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application has been terminated."
-msgstr "ཕྱིའི་གློག་རིམ་འདི་རྩ་གྲོལ་གཏང་ནུག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_CONV_CLOSED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE connection interrupted or modified."
-msgstr "DDE མཐུད་ལམ་བར་དཀྲོགས་འབད་ཡོདཔ་ཡང་ན་ལེགས་བཅོས་འབད་ཡོདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE method invoked with no channel open."
-msgstr "DDE མན་ངག་རྒྱུ་ལམ་ཁ་ཕྱེ་མེད་མི་གི་ཐོག་ལས་ལས་བཀོལ་འབད་ཡོདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_INVALID_LINK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid DDE link format."
-msgstr "DDE འབྲེལ་ལམ་རྩ་སྒྲིག་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_QUEUE_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE message has been lost."
-msgstr "DDE འཕྲིན་དོན་བརླག་སྟོར་ཞུགས་ནུག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_ALREADY_EST_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Paste link already performed."
-msgstr "ཧེ་མ་ལས་ལཱ་འགན་འགྲུབ་ཡོད་མི་འབྲེལ་ལམ་སྦྱར།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_INV_TOPIC_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr "འབྲེལ་ལམ་ཐབས་ལམ་འདི་འབྲེལ་ལམ་གནད་དོན་ནུས་མེད་ལུ་བརྟེན་གཞི་སྒྲིག་འབད་མི་ཚུགས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DDE_DLL_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE requires the DDEML.DLL file."
-msgstr "DDE ལུ་ DDEML.DLL ཡིག་སྣོད་དགོས་མཁོ་ཡོདཔ་ཨིན།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_CANNOT_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Module cannot be loaded; invalid format."
-msgstr "ཚད་གཞི་མངོན་གསལ་འབད་མི་ཚུགས། རྩ་སྒྲིག་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_INDEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object index."
-msgstr "དངོས་པོའི་ཟུར་ཐོ་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_ACTIVE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object is not available."
-msgstr "དངོས་པོ་ཐོབ་མི་ཚུགས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PROP_VALUE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect property value."
-msgstr "རྒྱུ་དངོས་གནས་གོང་བདེན་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROP_READONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is read-only."
-msgstr "ཨ་ནི་དངོས་པོ་འདི་ལྷག་ནི་རྐྱངམ་གཅིག་ཨིན།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROP_WRITEONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is write only."
-msgstr "ཨ་ནི་དངོས་པོ་འདི་འབྲི་ནི་རྐྱངམ་གཅིག་ཨིན།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INVALID_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object reference."
-msgstr "དངོས་པོའི་གཞི་བསྟུན་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Property or method not found: $(ARG1)."
-msgstr "རྒྱུ་དངོས་ ཡང་ན་ མན་ངག་འཚོལ་མ་ཐོབ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NEEDS_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object required."
-msgstr "དངོས་པོ་དགོས་མཁོ་ཡོདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_INVALID_USAGE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid use of an object."
-msgstr "དངོས་པོ་གི་ལག་ལེན་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_OLE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "OLE Automation is not supported by this object."
-msgstr "ཨོ་ཨེལ་ཨི་འཕྲ྄ལ་སྤྱོད་འདི་ཨ་ནི་དངོས་པོ་གིས་རྒྱབ་སྐྱོར་མ་འབད་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property or method is not supported by the object."
-msgstr "ཨ་ནི་རྒྱུ་དངོས་ ཡང་ན་ མན་ངག་འདི་དངོས་པོ་གིས་རྒྱབ་སྐྱོར་མ་འབད་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_OLE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "OLE Automation Error."
-msgstr "ཨོ་ཨེལ་ཨི་འཕྲུལ་སྤྱོད་འཛོལ་བ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ACTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This action is not supported by given object."
-msgstr "ཨ་ནི་བྱ་བ་འདི་གར་སྒྲིག་དངོས་པོ་གིས་རྒྱབ་སྐྱོར་མ་འབད་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_NAMED_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Named arguments are not supported by given object."
-msgstr "མིང་བཏགས་ཡོད་མི་སྒྲུབ་རྟགས་ཚུ་གྲ་སྒྲིག་དངོས་པོ་གིས་རྒྱབ་སྐྱོར་མ་འབད་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_LOCALE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The current locale setting is not supported by the given object."
-msgstr "ད་ལྟོའི་ལོ་ཀེལ་སྒྲིག་སྟངས་འདི་གྲ་སྒྲིག་དངོས་པོ་གིས་རྒྱབ་སྐྱོར་མ་འབད་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NAMED_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Named argument not found."
-msgstr "མིང་བཏགས་ཡོད་མི་སྒྲུབ་རྟགས་འཚོལ་མ་ཐོབ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_OPTIONAL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Argument is not optional."
-msgstr "སྒྲུབ་རྟགས་འདི་གདམ་ཁ་ཅན་མེན།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_WRONG_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid number of arguments."
-msgstr "སྒྲུབ་རྟགས་ཚུ་གི་ཨང་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_A_COLL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object is not a list."
-msgstr "དངོས་པོ་འདི་ཐོ་ཡིག་མེན།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_ORDINAL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid ordinal number."
-msgstr "གོ་རིམ་ཨང་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_DLLPROC_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Specified DLL function not found."
-msgstr "གསལ་བཀོད་འབད་ཡོད་པའི་ཌི་ཨེལ་ཨེལ་ལས་འགན་འཚོལ་མ་ཐོབ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CLIPBD_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid clipboard format."
-msgstr "འཛིན་པང་རྩ་སྒྲིག་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROPERTY_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object does not have this property."
-msgstr "ཨ་ནི་རྒྱུ་དངོས་མེད་པའི་དངོས་པོ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_METHOD_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object does not have this method."
-msgstr "ཨ་ནི་མན་ངག་མེད་པའི་དངོས་པོ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_ARG_MISSING_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Required argument lacking."
-msgstr "སྒྲུབ་རྟགས་ལྡང་མིན་དགོས་མཁོ་ཡོདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_NUMBER_OF_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid number of arguments."
-msgstr "སྒྲུབ་རྟགས་ཚུ་གི་ཨང་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_METHOD_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error executing a method."
-msgstr "མན་ངག་ལག་ལེན་འཐབ་ནིའི་འཛོལ་བ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_SETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unable to set property."
-msgstr "རྒྱུ་དངོས་གཞི་སྒྲིག་འབད་མི་ཚུགས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_GETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unable to determine property."
-msgstr "རྒྱུ་དངོས་གཏན་འབེབས་བཟོ་མི་ཚུགས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNEXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unexpected symbol: $(ARG1)."
-msgstr "རེ་བ་མེད་པའི་བརྡ་མཚོན་: $(ARG1)"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Expected: $(ARG1)."
-msgstr "རེ་བ་བསྐྱེད་ཡོདཔ་: $(ARG1)"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_SYMBOL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Symbol expected."
-msgstr "རེ་བ་བསྐྱེད་ཡོད་པའི་བརྡ་མཚོན།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable expected."
-msgstr "རེ་བ་བསྐྱེད་ཡོད་པའི་འགྱུར་ཅན།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_LABEL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label expected."
-msgstr "རེ་བ་བསྐྱེད་ཡོད་པའི་ཁ་ཡིག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_LVALUE_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Value cannot be applied."
-msgstr "གནས་གོང་འཇུག་སྤྱོད་འབད་མི་ཚུགས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_VAR_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable $(ARG1) already defined."
-msgstr "$(ARG1) འགྱུར་ཅན་ཧེ་མ་ལས་རང་ངེས་འཛིན་འབད་ཡོད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROC_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr "ཡན་ལག་བྱ་སྒོའི་ལམ་ལུགས་ ཡང་ན་ ལས་འགན་བྱ་སྒོའི་ལམ་ལུགས་ $(ARG1) ཧེ་མ་ལས་རང་ངེས་འཛིན་འབད་ཡོད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_LABEL_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label $(ARG1) already defined."
-msgstr "ཁ་ཡིག་ $(ARG1) ཧེ་མ་ལས་རང་ངེས་འཛིན་འབད་ཡོད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_VAR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable $(ARG1) not found."
-msgstr "$(ARG1) འགྱུར་ཅན་འཚོལ་མ་ཐོབ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_ARRAY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array or procedure $(ARG1) not found."
-msgstr "ཨེ་རེ་ ཡང་ན་ བྱ་སྒོའི་ལམ་ལུགས་ $(ARG1) འཚོལ་མ་ཐོབ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_PROC_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Procedure $(ARG1) not found."
-msgstr "བྱ་སྒོའི་ལམ་ལུགས་ $(ARG1) འཚོལ་མ་ཐོབ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_LABEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label $(ARG1) undefined."
-msgstr "ཁ་ཡིག་ $(ARG1) ངེས་འཛིན་མ་འབདཝ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_TYPE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unknown data type $(ARG1)."
-msgstr "མ་ཤེས་པའི་གནད་སྡུད་ཀྱི་དབྱེ་བ་ $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_EXIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Exit $(ARG1) expected."
-msgstr "རེ་བ་བསྐྱེད་པའི་ $(ARG1)ཕྱིར་ཐོན་འབད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_BLOCK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Statement block still open: $(ARG1) missing."
-msgstr "གསལ་བཤད་ཀྱི་སྡེབ་ཚན་ད་ལྟོ་ཡང་ཁ་ཕྱེ་ཡོད་: $(ARG1) བརླག་སྟོར་ཞུགས་པ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_BRACKETS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Parentheses do not match."
-msgstr "གུག་བཤད་ཚུ་མི་མཐུན་བས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_DECLARATION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Symbol $(ARG1) already defined differently."
-msgstr "བརྡ་མཚོན་ $(ARG1) ཧེ་མ་ལས་སོ་སོ་སྦེ་ངེས་འཛིན་འབད་ཡོདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETERS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Parameters do not correspond to procedure."
-msgstr "ཚད་བཟུང་ཚུ་བྱ་སྒོའི་ལམ་ལུགས་ལུ་ཆ་མི་མཉམ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHAR_IN_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid character in number."
-msgstr "གྲངས་ནང་ཡིག་འབྲུ་ནུས་མེད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_MUST_HAVE_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array must be dimensioned."
-msgstr "ཨེ་རེ་འདི་ངེས་པར་རྒྱ་ཁྱོན་འབད་དགོ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_IF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Else/Endif without If."
-msgstr "If མེད་པར་ Else/Endif"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_SUBR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1) not allowed within a procedure."
-msgstr "$(ARG1) བྱ་སྒོའི་ལམ་ལུགས་ཀྱི་ནང་འཁོད་མ་ཆོག་པ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_MAIN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1) not allowed outside a procedure."
-msgstr "$(ARG1) བྱ་སྒོའི་ལམ་ལུགས་ཀྱི་ཕྱི་ཁར་མ་ཆོག་པ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_WRONG_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Dimension specifications do not match."
-msgstr "རྒྱ་ཁྱོན་གསལ་བཀོད་ཚུ་མི་མཐུན་པས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_BAD_OPTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unknown option: $(ARG1)."
-msgstr "གདམ་ཁ་མ་ཤེསཔ་: $(ARG1)."
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_CONSTANT_REDECLARED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Constant $(ARG1) redefined."
-msgstr "ཆད་མེད་ $(ARG1) སླར་ངེས་འཛིན་འབད་ཡོདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_PROG_TOO_LARGE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Program too large."
-msgstr "ལས་རིམ་སྦོམ་དྲགས་པས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.SBERR_NO_STRINGS_ARRAYS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Strings or arrays not permitted."
-msgstr "ཡིག་རྒྱུན་ཚུ་ ཡང་ན་ ཨེ་རེསི་ གནང་བ་མ་བྱིན་ནུག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "An exception occurred $(ARG1)."
-msgstr "དམིགས་བསལ་ $(ARG1) བྱུང་ནུག།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This array is fixed or temporarily locked."
-msgstr "རིམ་སྒྲིག་དུས་སྟབས་བཟོ་ཡོདཔ་ཨིནམ་དང་ཡང་ན་གནས་སྐབས་ཅིག་གི་དོན་ལུ་བསྡམ་བཞག་ཡོདཔ་ཨིན་མས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Out of string space."
-msgstr "ཡིག་རྒྱུན་ས་གོ་ནང་མིན་འདུག"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Expression Too Complex."
-msgstr "བརྗོད་ཐངས་འདི་གནམ་མེད་ས་མེད་མགུ་རྙོགས་དྲགས་ཨིན་མས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Can't perform requested operation."
-msgstr "བཀོལ་སྤྱོད་འབད་ཡོད་པའི་ལཱ་འགན་འདི་འགྲུབ་མ་ཚུགས།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many DLL application clients."
-msgstr "DLL ལག་ལེན་ལས་མགྲོན་མང་དྲགས་ཡོདཔ།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "For loop not initialized."
-msgstr "ཕོར་ལཱུཔ་འགོ་འབྱེད་མ་འབད།"
+msgstr ""
 
-#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1)"
 msgstr ""
 
-#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+#: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
 msgid  "The macro running has been interrupted"
-msgstr "གཡོག་བཀོལ་བའི་བསྒང་ཡོད་པའི་ མེཀ་ཀོརོ་འདི་ བར་ན་དཀྲོགས་ནུག"
+msgstr ""
 
-#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+#: classes/sb.src#IDS_SBERR_STOREREF.STRING.TEXT
 msgid  "Reference will not be saved: "
-msgstr "གཞི་བསྟུན་འདི་ སྲུང་མི་ཚུགས: "
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_LIBLOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading library '$(ARG1)'."
-msgstr "དཔེ་མཛོད་ '$(ARG1)' མངོན་གསལ་འབད་ནིའི་འཛོལ་བ།"
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_LIBSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error saving library: '$(ARG1)'."
-msgstr "དཔེ་མཛོད་སྲུང་བཞག་འབད་ནིའི་འཛོལ་བ་: '$(ARG1)'."
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_MGROPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr "ཡིག་སྣོད་ '$(ARG1)' ལས་ BASIC འགོ་འབྱེད་འབད་མ་བཏུབ།"
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_MGRSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error saving BASIC: '$(ARG1)'."
-msgstr "BASIC སྲུང་བཞག་འབད་ནིའི་འཛོལ་བ་:'$(ARG1)'."
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_REMOVELIB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error removing library."
-msgstr "དཔེ་མཛོད་རྩ་བསྐྲད་གཏང་ནིའི་འཛོལ་བ།"
+msgstr ""
 
-#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+#: classes/sb.src#ERRCODE_BASMGR_UNLOADLIB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The library could not be removed from memory."
-msgstr "དཔེ་མཛོད་འདི་ དྲན་ཚད་ནང་ལས་ རྩ་བསྐྲད་གཏང་མ་ཚུགས།"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_ON.STRING.TEXT
 msgid  "On"
-msgstr "ཨཱོན།"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_OFF.STRING.TEXT
 msgid  "Off"
-msgstr "ཨོཕ།"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_TRUE.STRING.TEXT
 msgid  "True"
-msgstr "བདེན་པ།"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_FALSE.STRING.TEXT
 msgid  "False"
-msgstr "བརྫུན་མ།"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_YES.STRING.TEXT
 msgid  "Yes"
-msgstr "ཨིན།"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_NO.STRING.TEXT
 msgid  "No"
-msgstr "མེན།"
+msgstr ""
 
-#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+#: sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.STRING.TEXT
 msgid  "@0.00 $;@(0.00 $)"
-msgstr "@0.00 $;@(0.00 $)"
+msgstr ""

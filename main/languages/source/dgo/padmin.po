@@ -31,814 +31,814 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FIXEDTEXT.TEXT
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr "जित्थुआं तुस फांट दरामद करना चांह्‌दे ओ , ओह् फोल्डर चुनो.  OK बटन पर क्लिक करियै चुने दे फांट जमा करो. "
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FIXEDLINE.TEXT
 msgid  "Source directory"
-msgstr "स्रोत डरैक्टरी "
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CHECKBOX.TEXT
 msgid  "Sea~rch Subdirectories"
-msgstr "उप डरैक्टरियें दी खोज करो"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FIXEDLINE.TEXT
 msgid  "Target options"
-msgstr "लक्ष्य विकल्प(बहु․)"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CHECKBOX.TEXT
 msgid  "Create ~soft links only"
-msgstr "सिरजो ~सिर्फ नर्म कड़ियां"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
-msgstr "~सब चुनो"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.STRING.TEXT
 msgid  "Add fonts"
-msgstr "फांट(बहु․) जमा करो"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\\n   %s"
-msgstr "क्या तुस सच्चें गै इस फांट- फाइल गी ओवरराइट करना चांह्‌दे ओ?\n %s "
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.STRING.TEXT
+msgid  "Do you really want to overwrite this font file?\n   %s"
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.STRING.TEXT
 msgid  "All"
-msgstr "सब "
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.STRING.TEXT
 msgid  "None"
-msgstr "कोई नेईं "
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "फांट लेई रूप-रचना फाइल (.afm विस्तार सनैं) नेईं लब्भी ऐ.   \n%s\nइसलेई फांट प्रस्थापत नेईं होई सकेआ. उदाहरण लेई घोस्टलिपी कन्नै रूप-रचना फाइल सरजोई सकदी ऐ, ते फांट फाइलें आंगर उस्सै डरैक्टरी जां इसदी afm उप डरैक्टरी च स्थित करनी होग.   "
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.STRING.TEXT
+msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "फांट –फाइल लेई मीट्रिक फाइल \n %s\n दी नकल नेईं होई सकी. फांट प्रस्थापत नेईं होग. "
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.STRING.TEXT
+msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
-msgstr "फांट –फाइल  \n %s\n दी नकल नेईं होई सकी. फांट प्रस्थापत नेईं होग."
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.STRING.TEXT
+msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.STRING.TEXT
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr "फांट-रस्ते च लिखनजोग फांट डरैक्टरी फाइल आह्‌ली डरैक्टरी स्थित नेईं   ऐ. इसलेई फांट प्रस्थापत नेईं होई सकदे."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.STRING.TEXT
 msgid  "%d new fonts were added."
-msgstr "%d नमें फांट जमा कीते हे."
+msgstr ""
 
-#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+#: padialog.src#RID_FONTIMPORT_DIALOG.STRING.TEXT
 msgid  "Add Fonts"
-msgstr "फांट जमा करो"
+msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+#: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FIXEDLINE.TEXT
 msgid  "CUPS support"
 msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+#: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CHECKBOX.TEXT
 msgid  "Disable CUPS Support"
 msgstr ""
 
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CANCELBUTTON.TEXT
 msgid  "Close"
-msgstr "बंद करो "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
-msgid  "Installed ~printers"
-msgstr "प्रस्थापत ~ छापक (बहु․)"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
-msgid  "Command:"
-msgstr "आदेश: "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
-msgid  "Driver:"
-msgstr "चालक: "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
-msgid  "Location:"
-msgstr "स्थान: "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
-msgid  "Comment:"
-msgstr "टिप्पणी: "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
-msgid  "Properties..."
-msgstr "विशेशतां... "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
-msgid  "R~ename..."
-msgstr "परतियै नांऽ देओ... "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
-msgid  "~Default"
-msgstr "~बिलानिर्देश "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
-msgid  "Remo~ve..."
-msgstr "हटाओ... "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
-msgid  "Test ~Page"
-msgstr "परख~ सफा "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
-msgid  "Fon~ts..."
-msgstr "फांट (बहु․)... "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
-msgid  "New Printer..."
-msgstr "नमां छापक... "
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
-msgid  "Default printer"
-msgstr "बिलानिर्देश छापक"
-
-#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
-msgid  "Rename"
-msgstr "परतियै नांऽ देओ"
-
-#: source/padialog.src#RID_PADIALOG.String.Text
-msgid  "Printer Administration"
-msgstr "छापक प्रशासन"
-
-#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
-msgid  "Could not open printer %s."
-msgstr "%s छापक नेईं खुॕल्ली सकेआ. "
-
-#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
-msgid  "The test page was printed succesfully. Please check the result."
-msgstr "परख-सफा सफलतापूर्वक छपी गेआ हा.   किरपा करियै नतीजा जाचो. "
-
-#: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
-#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+#: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FIXEDLINE.TEXT
+msgid  "Installed ~printers"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FIXEDTEXT.TEXT
+msgid  "Command:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Driver:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FIXEDTEXT.TEXT
+msgid  "Location:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FIXEDTEXT.TEXT
+msgid  "Comment:"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PUSHBUTTON.TEXT
+msgid  "Properties..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "R~ename..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PUSHBUTTON.TEXT
+msgid  "~Default"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PUSHBUTTON.TEXT
+msgid  "Remo~ve..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PUSHBUTTON.TEXT
+msgid  "Test ~Page"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PUSHBUTTON.TEXT
+msgid  "Fon~ts..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PUSHBUTTON.TEXT
+msgid  "New Printer..."
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.STRING.TEXT
+msgid  "Default printer"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.STRING.TEXT
+msgid  "Rename"
+msgstr ""
+
+#: padialog.src#RID_PADIALOG.STRING.TEXT
+msgid  "Printer Administration"
+msgstr ""
+
+#: padialog.src#RID_ERR_NOPRINTER.STRING.TEXT
+msgid  "Could not open printer %s."
+msgstr ""
+
+#: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.STRING.TEXT
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr ""
+
+#: padialog.src#RID_ERR_NOWRITE.STRING.TEXT
+msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
+
+#: padialog.src#RID_QRY_PRTNAME.STRING.TEXT
 msgid  "~New printer name"
-msgstr "~ नमां छापक नांऽ"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_MODEL.STRING.TEXT
 msgid  "Model"
-msgstr "माडल "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_NAME.STRING.TEXT
 msgid  "Name"
-msgstr "नांऽ "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_COMMENT.STRING.TEXT
 msgid  "Comment"
-msgstr "टिप्पणी "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_QUEUE.STRING.TEXT
 msgid  "Queue"
-msgstr "रींह्‌ग "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_DATE.STRING.TEXT
 msgid  "Date"
-msgstr "तरीक"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+#: padialog.src#RID_TXT_TESTPAGE_TIME.STRING.TEXT
 msgid  "Time"
-msgstr "समां "
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKBUTTON.TEXT
 msgid  "Close"
-msgstr "बंद करो "
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PUSHBUTTON.TEXT
 msgid  "Re~name..."
-msgstr "परतियै नांऽ देओ"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove..."
-msgstr "~हटाओ... "
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PUSHBUTTON.TEXT
 msgid  "~Add..."
-msgstr "~ जमा करो... "
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FIXEDTEXT.TEXT
 msgid  "Note: The fonts are only available to the applications."
-msgstr "नोट : फांट सिर्फ बरतूनें लेई उपलब्ध न. "
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.STRING.TEXT
 msgid  "~New name for %s"
-msgstr "~%s लेई  नमां  नांऽ"
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.STRING.TEXT
 msgid  "~New name for %s (%d1 of %d2)"
-msgstr "~%s लेई  नमां  नांऽ (%d2 दा %d1) "
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.STRING.TEXT
 msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr "लेखन –इजाज़त गायब होने कारण फांट %s गी परतियै नांऽ नेईं देन होंदा.   "
+msgstr ""
 
-#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+#: padialog.src#RID_FONTNAMEDIALOG.STRING.TEXT
 msgid  "Fonts"
-msgstr "फांट (बहु․)"
+msgstr ""
 
-#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+#: padialog.src#RID_BXT_TESTPAGE.STRING.TEXT
 msgid  "Test page"
-msgstr "परख सफा"
+msgstr ""
 
-#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+#: padialog.src#RID_BXT_ENVIRONMENT.STRING.TEXT
 msgid  "Wrong environment"
-msgstr "गल्त वातावरण "
+msgstr ""
 
-#: source/padialog.src#RID_YOU_SURE.String.Text
+#: padialog.src#RID_YOU_SURE.STRING.TEXT
 msgid  "Are you sure ?"
-msgstr "क्या तुसें गी जकीन ऐ ? "
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_OK.String.Text
+#: padialog.src#RID_AFMERROR_OK.STRING.TEXT
 msgid  "No error"
-msgstr "कोई गल्ती नेईं. "
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FONT_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FontName' entry."
-msgstr "मीट्रिक च ‘फांट नांऽ’प्रविश्टी नेईं होंदी. "
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FULL_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FullName' entry."
-msgstr "मीट्रिक च ‘पूरा-नांऽ’प्रविश्टी नेईं होंदी."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+#: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.STRING.TEXT
 msgid  "The metric does not contain a 'FamilyName' entry."
-msgstr "मीट्रिक च ‘कुल-नांऽ’प्रविश्टी नेईं होंदी."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_MOVETO_FAILED.STRING.TEXT
 msgid  "The converted metric could not be written."
-msgstr "रूपांतरत मीट्रिक नेईं लखोई सकेआ. "
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.STRING.TEXT
 msgid  "The metric could not be read."
-msgstr "मीट्रिक नेईं पढ़ोई सकेआ."
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+#: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.STRING.TEXT
 msgid  "A temporary file could not be created."
-msgstr "इक अस्थाई फाइल नेईं सरजोई सकी. "
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+#: padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.TEXT
 msgid  "The file does not contain a metric."
-msgstr "फाइल च मीट्रिक नेईं होंदा ऐ. "
+msgstr ""
 
-#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
-msgstr "मीट्रिक \n\n%s\n\n खॕलकें कारणें मूजब रूपांतरत नेईं होई सकेआ: \n\n "
+#: padialog.src#RID_AFMERROR_BOX_TXT.STRING.TEXT
+msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
 
-#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+#: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FIXEDTEXT.TEXT
 msgid  "Progress"
-msgstr "प्रगति "
+msgstr ""
 
-#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+#: padialog.src#RID_PROGRESS_DLG.FIXEDTEXT.TEXT
 msgid  "Please wait"
-msgstr "किरपा करियै बल्गो. "
+msgstr ""
 
-#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+#: padialog.src#RID_OPERATION_CONVERTMETRIC.STRING.TEXT
 msgid  "Font metrics conversion"
-msgstr "फांट मीट्रिक (बहु․) रूपांतरण "
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FIXEDLINE.TEXT
 msgid  "Dri~ver directory"
-msgstr "चालक डरैक्टरी"
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FIXEDTEXT.TEXT
 msgid  "Please select the driver directory."
-msgstr "किरपा करियै चालक डरैक्टरी चुनो. "
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr "तपाश करो... "
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FIXEDLINE.TEXT
 msgid  "~Selection of drivers"
-msgstr "~ चालकें दी चोन   "
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Please select the drivers to install and press \"%s\"."
-msgstr "किरपा करियै प्रस्थापना लेई चालक (बहु․) चुनो ते  \"%s\" दबाओ. "
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.STRING.TEXT
 msgid  "Searching for drivers"
-msgstr "चालकें गी खोजा करदा ऐ. "
+msgstr ""
 
-#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+#: padialog.src#RID_PPDIMPORT_DLG.CANCELBUTTON.TEXT
 msgid  "Driver Installation"
-msgstr "चालक प्रस्थापना"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+#: padialog.src#RID_QUERY_REMOVEDRIVER.STRING.TEXT
 msgid  "Do you really want to remove the driver \"%s\"?"
-msgstr "क्या तुस सच्चें गै \"%s\" चालक हटाना चांह्‌दे ओ? "
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+#: padialog.src#RID_QUERY_REMOVEPRINTER.STRING.TEXT
 msgid  "Do you really want to remove this printer ?"
-msgstr "क्या तुस सच्चें गै छापक  हटाना चांह्‌दे ओ?"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+#: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.STRING.TEXT
 msgid  "Do you really want to remove the selected fonts ?"
-msgstr "क्या तुस सच्चें गै चुने दे फांट हटाना चांह्‌दे ओ?"
+msgstr ""
 
-#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+#: padialog.src#RID_QUERY_DRIVERUSED.STRING.TEXT
 msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr "छापक अजें बी   \"%s\" चालक गी बरता करदे न. क्या तुस सच्चें गै इसी  हटाना चांह्‌दे ओ? सरबंधत छापक बी हटी जाङन. "
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+#: padialog.src#RID_ERR_REMOVESGENPRT.STRING.TEXT
 msgid  "The driver \"%s\" is always needed and can therefore not be removed."
-msgstr "\"%s\" चालक दी म्हेशां लोड़ होंदी ऐ ते इसलेई ओह् नेईं हटान होंदा.  "
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
-msgstr "\"%s1\" चालक नेईं हटान होआ.   फाइल गी हटाना मुमकन नेईं हा\n\n%s2. "
+#: padialog.src#RID_ERR_REMOVEDRIVERFAILED.STRING.TEXT
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
 
-#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+#: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.STRING.TEXT
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
-msgstr "\"%s\" चालक थुआढ़े बिलानिर्देश छापक ने बरतेआ ऐ.इसलेई , एह् नेईं हटान होंदा.  "
+msgstr ""
 
-#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+#: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.STRING.TEXT
 msgid  "The printer %s cannot be removed."
-msgstr "%s छापक नेईं हटान होंदा.  "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+#: padialog.src#RID_TXT_PRINTERALREADYEXISTS.STRING.TEXT
 msgid  "A printer named \"%s\" already exists. This printer will not be imported."
-msgstr "\"%s\" नांऽ दा छापक पैह्‌लें शा मजूद ऐ.एह् छापक दरामद नेईं होई सकग.  "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+#: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.STRING.TEXT
 msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
-msgstr "\"%s\" छापक दा कोई मानक संरूपण नेईं ऐ,इसलेई दरामद नेईं होई सकदा.    "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+#: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.STRING.TEXT
 msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr "\"%s1\" (%s2) छापक लेई  चालक प्रस्थापत नेईं ऐ. इसलेई छापक दरामद नेईं होई सकदा.    "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+#: padialog.src#RID_TXT_PRINTERADDFAILED.STRING.TEXT
 msgid  "The printer \"%s\" could not be added."
-msgstr "\"%s\" छापक नेईं जोड़न होआ."
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKBUTTON.TEXT
 msgid  "~Finish"
-msgstr "~ मकाओ "
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next >>"
-msgstr "~ अगला >> "
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PUSHBUTTON.TEXT
 msgid  "<< ~Back"
-msgstr "<< ~पिच्छें "
+msgstr ""
 
-#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+#: padialog.src#RID_ADD_PRINTER_DIALOG.PUSHBUTTON.TEXT
 msgid  "Add Printer"
-msgstr "छापक जोड़ो"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "चालक तालो "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Please select a s~uitable driver."
-msgstr "किरपा करियै इक काबल चालक चुनो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Import..."
-msgstr "~दरामद करो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Delete"
-msgstr "~म्हेसो "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.STRING.TEXT
 msgid  "Delete driver"
-msgstr "चालक म्हेसो "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a device type"
-msgstr "डिवाइस किस्म तालो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FIXEDTEXT.TEXT
 msgid  "Do you want to"
-msgstr "क्या तुस चांह्‌दे ओ "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RADIOBUTTON.TEXT
 msgid  "Add a ~printer"
-msgstr "छापक ~ जोड़ो"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RADIOBUTTON.TEXT
 msgid  "Connect a fa~x device"
-msgstr "फैक्स डिवाइस दा कनैक्शन जोड़ो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RADIOBUTTON.TEXT
 msgid  "Connect a P~DF converter"
-msgstr "PDF रूपांतरक दा कनैक्शन जोड़ो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RADIOBUTTON.TEXT
 msgid  "~Import printers from a StarOffice installation"
-msgstr "~ स्टार आफिस प्रस्थापना शा छापक (बहु․)दरामद करो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a name"
-msgstr "नांऽ तालो"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the printer."
-msgstr "किरपा करियै छापक लेई इक नांऽ प्रविश्ट करो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the fax connection."
-msgstr "किरपा करियै फैक्स-कनैक्शन लेई इक नांऽ प्रविश्ट करो."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the PDF connection."
-msgstr "किरपा करियै PDF कनैक्शन लेई इक नांऽ प्रविश्ट करो."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.EDIT.TEXT
 msgid  "Fax printer"
-msgstr "फैक्स छापक"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.EDIT.TEXT
 msgid  "PDF converter"
-msgstr "PDF रूपांतरक "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CHECKBOX.TEXT
 msgid  "~Use as default printer"
-msgstr "~ बिलानिर्देश छापक दे तौरा पर बरतो"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CHECKBOX.TEXT
 msgid  "Remo~ve fax number from output"
-msgstr "आऊटपुट चा फैक्स नंबर हटाओ "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a command line"
-msgstr "आदेश-सतर तालो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FIXEDTEXT.TEXT
 msgid  "Please enter a c~ommand line appropriate for this device."
-msgstr "इस डिवाइस लेई मनासब आदेश सतर प्रविश्ट करो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
 msgid  "PDF ~target directory"
-msgstr "PDF लक्ष्य डरैक्टरी "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PUSHBUTTON.TEXT
 msgid  "~Help"
-msgstr "~मदद "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.STRING.TEXT
 msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF रूपांतरक लेई आदेश सतर पर अमल होई गेआ ऐ ,जिॕयां  अग्गें ऐः  आदेश सतर चा \"(TMP)\" इक अस्थाई फाइल कन्नै बदलोई गेआ ऐ ते आदेश  सतर चा \"(OUTFILE)\" लक्ष्य PDF फाइल नांऽ कन्नै बदलोई गेआ ऐ .जेकर  \"(TMP)\" आदेश सतर च ऐ तां परैंत-लेखन कोड फाइल राहें पजाया जाग,नेईं ते मानक इनपुट राहें  (जिॕयां: इक पाइप दे तौरा पर). "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.STRING.TEXT
 msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "फैक्स-कनैक्शन लेई आदेश सतर पर अमल होई गेआ ऐ ,जिॕयां  अग्गें ऐः  : आदेश सतर चा \"(TMP)\" इक अस्थाई फाइल कन्नै प्रतिस्थापत होई गेआ ऐ ते आदेश  सतर चा \"( PHONE)\" फैक्स-नंबर कन्नै प्रतिस्थापत होई गेआ ऐ. जेकर  \"(TMP)\" आदेश सतर च लभदा ऐ तां परैंत-लेखन कोड फाइल राहें पजाया जाग,नेईं ते एह् मानक इनपुट दे तौरा पर पास ऐ (ओह् ऐ- इक पाइप आंगर)."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Import printers from old versions"
-msgstr "पराने सरूपें चा छापक दरामद  करो"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FIXEDTEXT.TEXT
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr "~ एह् छापक दरामद होई सकदे न. तुस जेह्‌ड़े दरामद करना चांह्‌दे ओ,किरपा करियै ओह् चुनो . "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
-msgstr "~सब चुनो"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "चालक तालो "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this fax connection"
-msgstr "इस फैक्स-कनैक्शन लेई खॕलका    चालक बरतो."
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "बिलानिर्देश चालक "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr "दुए छापक लेई रूप-रचना अपनाने ताईं इक टकोह्‌दा   चालक"
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
-msgstr "चालक तालो "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FIXEDTEXT.TEXT
 msgid  "Use the following driver for this PDF converter"
-msgstr "इस PDF रूपांतरक लेई खॕलका    चालक बरतो. "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
-msgstr "बिलानिर्देश चालक "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RADIOBUTTON.TEXT
 msgid  "The Adobe D~istiller(tm) driver"
-msgstr "एडोब डिस्टिलर (tm) चालक "
+msgstr ""
 
-#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RADIOBUTTON.TEXT
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr "दुए छापक लेई रूप-रचना अपनाने ताईं इक टकोह्‌दा   चालक "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+#: padialog.src#RID_TXT_FONT_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr "इटैलिक "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+#: padialog.src#RID_TXT_FONT_OBLIQUE.STRING.TEXT
 msgid  "Oblique"
-msgstr "त्रेह्‌डा "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+#: padialog.src#RID_TXT_FONT_THIN.STRING.TEXT
 msgid  "Thin"
-msgstr "पतला "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRALIGHT.STRING.TEXT
 msgid  "Ultralight"
-msgstr "अतिअंत फिक्का"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_SEMILIGHT.STRING.TEXT
 msgid  "Semilight"
-msgstr "अद्धफिक्का  "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+#: padialog.src#RID_TXT_FONT_LIGHT.STRING.TEXT
 msgid  "Light"
-msgstr "फिक्का "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+#: padialog.src#RID_TXT_FONT_SEMIBOLD.STRING.TEXT
 msgid  "Semibold"
-msgstr "अद्धमुट्टा"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+#: padialog.src#RID_TXT_FONT_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr "मुट्टा "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRABOLD.STRING.TEXT
 msgid  "Ultrabold"
-msgstr "अतिअंत मुट्टा"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRACONDENSED.STRING.TEXT
 msgid  "Ultracondensed"
-msgstr "अतिअंत संघना कीते दा"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_EXTRACONDENSED.STRING.TEXT
 msgid  "Extracondensed"
-msgstr "बधीक संघना कीते दा"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_CONDENSED.STRING.TEXT
 msgid  "Condensed"
-msgstr "संघना कीते दा"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+#: padialog.src#RID_TXT_FONT_SEMICONDENSED.STRING.TEXT
 msgid  "Semicondensed"
-msgstr "अद्धसंघना कीते दा"
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_SEMIEXPANDED.STRING.TEXT
 msgid  "Semiexpanded"
-msgstr "अद्धविस्तृत "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_EXPANDED.STRING.TEXT
 msgid  "Expanded"
-msgstr "विस्तृत "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.STRING.TEXT
 msgid  "Extraexpanded"
-msgstr "बधीक विस्तृत "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+#: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.STRING.TEXT
 msgid  "Ultraexpanded"
-msgstr "अतिअंत विस्तृत "
+msgstr ""
 
-#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+#: padialog.src#RID_TXT_FONT_REGULAR.STRING.TEXT
 msgid  "Regular"
-msgstr "नियमत "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PAGEITEM.TEXT
 msgid  "Command"
-msgstr "आदेश"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PAGEITEM.TEXT
 msgid  "Paper"
-msgstr "कागज "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PAGEITEM.TEXT
 msgid  "Device"
-msgstr "डिवाइस"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PAGEITEM.TEXT
 msgid  "Font Replacement"
-msgstr "फांट-प्रतिस्थापना"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PAGEITEM.TEXT
 msgid  "Other Settings"
-msgstr "दूइयां सैट्टिंगां "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.STRING.TEXT
 msgid  "from driver"
-msgstr "चालक शा "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.STRING.TEXT
 msgid  "<ignore>"
-msgstr "अनदिक्खा"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+#: rtsetup.src#RID_RTS_RTSDIALOG.STRING.TEXT
 msgid  "Properties of %s"
-msgstr "%s दियां विशेशतां "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FIXEDTEXT.TEXT
 msgid  "~Paper size"
-msgstr "~कागज नाप "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FIXEDTEXT.TEXT
 msgid  "~Orientation"
-msgstr "~दिशा-विन्यास "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FIXEDTEXT.TEXT
 msgid  "~Duplex"
-msgstr "~दछत्ता मकान"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FIXEDTEXT.TEXT
 msgid  "Paper tray"
-msgstr "कागज ट्रे "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.STRING.TEXT
 msgid  "Color"
-msgstr "रंग "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.STRING.TEXT
 msgid  "Grayscale"
-msgstr "ग्रेमापक "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FIXEDTEXT.TEXT
 msgid  "~Option"
-msgstr "~विकल्प"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FIXEDTEXT.TEXT
 msgid  "Current ~value"
-msgstr "मजूदा ~मुल्ल "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FIXEDTEXT.TEXT
 msgid  "Printer ~Language type"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.STRINGLIST.ITEM
 msgid  "PostScript (Level from driver)"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.STRINGLIST.ITEM
 msgid  "PostScript Level 1"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.STRINGLIST.ITEM
 msgid  "PostScript Level 2"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.STRINGLIST.ITEM
 msgid  "PostScript Level 3"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.STRINGLIST.ITEM
 msgid  "PDF"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FIXEDTEXT.TEXT
 msgid  "~Color"
-msgstr "~ रंग "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FIXEDTEXT.TEXT
 msgid  "Color ~depth"
-msgstr "रंग~ गैहराई"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CHECKBOX.TEXT
 msgid  "~Enable font replacement"
-msgstr "~ फांट- प्रतिस्थापना समर्थ करो"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FIXEDTEXT.TEXT
 msgid  "Replaced ~fonts"
-msgstr " प्रतिस्थापत कीते दे ~ फांट"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr "~जमा करो "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "~हटाओ "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FIXEDTEXT.TEXT
 msgid  "Repla~ce font"
-msgstr "फांट प्रतिस्थापत करो "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FIXEDTEXT.TEXT
 msgid  "by ~printer font"
-msgstr "द्वारा~ छापक फांट"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CHECKBOX.TEXT
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FIXEDTEXT.TEXT
 msgid  "Command for quick printing without dialog (optional)"
 msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FIXEDLINE.TEXT
 msgid  "Select command"
-msgstr "आदेश चुनो"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.STRING.TEXT
 msgid  "Printer"
-msgstr "छापक"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.STRING.TEXT
 msgid  "Fax"
-msgstr "फैक्स  "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.STRING.TEXT
 msgid  "PDF converter"
-msgstr "PDF रूपांतरक "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FIXEDTEXT.TEXT
 msgid  "~Configure as"
-msgstr "~ दे तौरा पर संरूपण करो "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CHECKBOX.TEXT
 msgid  "~Fax number will be removed from output"
-msgstr "~आऊटपुट चा फैक्स नंबर हटाई दित्ता जाग. "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
 msgid  "PDF target directory :"
-msgstr "PDF लक्ष्य डरैक्टरी : "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FIXEDTEXT.TEXT
 msgid  "Command: "
-msgstr "आदेश : "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FIXEDLINE.TEXT
 msgid  "Printer"
-msgstr "छापक"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PUSHBUTTON.TEXT
 msgid  "~Help"
-msgstr "~मदद "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove"
-msgstr "~हटाओ "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.STRING.TEXT
 msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr "PDF रूपांतरक लेई आदेश सतर पर अमल होई गेआ ऐ ,जिॕयां  अग्गें ऐः  आदेश सतर चा \"(TMP)\" इक अस्थाई फाइल कन्नै बदलोई गेआ ऐ ते आदेश  सतर चा \"(OUTFILE)\" लक्ष्य PDF फाइल नांऽ कन्नै बदलोई गेआ ऐ .जेकर  \"(TMP)\" आदेश सतर च ऐ तां परैंत-लेखन कोड फाइल राहें पजाया जाग,नेईं ते मानक इनपुट राहें  (जिॕयां: इक पाइप दे तौरा पर). "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.STRING.TEXT
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr "छापक डिवाइस लेई आदेश सतर पर अमल होई गेआ ऐ ,जिॕयां  अग्गें ऐः उत्पादत परैंत लेखन कोड आदेश सतर गी मानक इनपुट (जिॕयां:इक पाइप दे तौरा पर)दे तौरा पर पजाया गेआ ऐ  .  "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.STRING.TEXT
 msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr "फैक्स डिवाइस लेई आदेश सतर पर अमल होई गेआ ऐ ,जिॕयां  अग्गें ऐः  भेजे गेदे हर फैक्स लेई, आदेश सतर चा \"(TMP)\" इक अस्थाई फाइल कन्नै प्रतिस्थापत होई गेआ ऐ ते आदेश सतर चा \"( PHONE)\" फैक्स नंबर कन्नै प्रतिस्थापत होई गेआ ऐ. जेकर  \"(TMP)\" आदेश सतर च लभदा ऐ तां परैंत लेखन कोड फाइल राहें पजाया जाग, नेईं ते एह् मानक इनपुट दे तौरा पर पास ऐ (ओह् ऐ- इक पाइप आंगर)."
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Left margin"
-msgstr "~ खब्बा हाशिया"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Top margin"
-msgstr "~ धुर उप्परे दा हाशिया"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Right margin"
-msgstr "~सज्जा हाशिया"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FIXEDTEXT.TEXT
 msgid  "~Bottom margin"
-msgstr "~थल्ले दा हाशिया "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FIXEDTEXT.TEXT
 msgid  "~Comment"
-msgstr "~टिप्पणी "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PUSHBUTTON.TEXT
 msgid  "~Default"
-msgstr "~बिलानिर्देश "
+msgstr ""
 
-#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+#: rtsetup.src#RID_TXT_QUERYFAXNUMBER.STRING.TEXT
 msgid  "Please enter the fax number."
-msgstr "किरपा करियै फैक्स नंबर प्रविश्ट करो. "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.MODALDIALOG.TEXT
 msgid  "Authentication request"
-msgstr "प्रमाणीकरण बिनती"
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FIXEDTEXT.TEXT
 msgid  "Please enter your authentication data for server %s"
-msgstr "किरपा करियै   %s सर्वर लेई अपना प्रमाणीकरण डेटा प्रविश्ट करो. "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FIXEDTEXT.TEXT
 msgid  "~User"
-msgstr "~बरतूनी "
+msgstr ""
 
-#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr "~पासवर्ड "
+msgstr ""
