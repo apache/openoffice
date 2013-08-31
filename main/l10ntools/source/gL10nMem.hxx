@@ -165,10 +165,13 @@ class l10nMem_impl
                         const std::string& sKey,
                         const std::string& sMsgId);
 
-    void save         (l10nMem& cMem,
-                       const std::string& sTargetDir,
-                       bool               bKid,
-                       bool               bForce);
+    void saveTemplates (l10nMem& cMem,
+                        const std::string& sTargetDir,
+                        bool               bKid,
+                        bool               bForce);
+    void saveLanguages (l10nMem& cMem,
+                        const std::string& sTargetDir,
+                        bool               bForce);
     void dumpMem      (const std::string& sTargetDir);
     void showNOconvert();
 

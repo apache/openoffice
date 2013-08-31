@@ -83,8 +83,10 @@ class l10nMem
                         const std::string& sKey,
                         const std::string& sText);
 
-    void save          (const std::string& sTargetDir,
+    void saveTemplates (const std::string& sTargetDir,
                         bool               bKid,
+                        bool               bForce);
+    void saveLanguages (const std::string& sTargetDir,
                         bool               bForce);
     void dumpMem       (const std::string& sTargetDir);
 

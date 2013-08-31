@@ -282,7 +282,7 @@ void handler::runExtract()
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, false, mbForceSave);
+  mcMemory.saveTemplates(msPoOutDir, false, mbForceSave);
 }
 
 
@@ -303,9 +303,6 @@ void handler::runMerge(bool bKid)
     convert_gen convertObj(mcMemory, msSourceDir, msTargetDir, *siSource);
     convertObj.execute(true);
   }
-
-  // and generate language file
-  mcMemory.save(msPoOutDir, bKid, mbForceSave);
 }
 
 
@@ -346,15 +343,12 @@ void handler::runConvert(bool bPot)
         // get converter and extract files
         convert_gen convertObj(mcMemory, sFilePath, msTargetDir, *siSource);
         convertObj.execute(true);
-
-        if (bPot)
-          mcMemory.showNOconvert();
       }
   }
 
   // and generate language file
   if (!bPot)
-    mcMemory.save(msPoOutDir, false, mbForceSave);
+    mcMemory.saveLanguages(msPoOutDir, mbForceSave);
 }
 
 
@@ -477,14 +471,12 @@ void handler::loadL10MEM(bool onlyTemplates)
   mcMemory.setConvert(false, false);
 
   // load texts from en-US po file (master)
-  {
-    // tell system
-    l10nMem::showDebug("genLang loading master text from file " + sLoad + sMod);
+  // tell system
+  l10nMem::showDebug("genLang loading master text from file " + sLoad + sMod);
 
-    // and load file
-    mcMemory.setLanguage("", true);
-    convert_gen (mcMemory, sLoad, msTargetDir, sMod).execute(false);
-  }
+  // and load file
+  mcMemory.setLanguage("", true);
+  convert_gen (mcMemory, sLoad, msTargetDir, sMod).execute(false);
 
   if (onlyTemplates)
     return; 

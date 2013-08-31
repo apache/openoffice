@@ -95,8 +95,10 @@ void l10nMem::loadEntryKey(int iL, const std::string& sS, const std::string& sK,
      { l10nMem_impl::mcImpl->loadEntryKey(iL, sS, sK, sO, sT, bI); }
 void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK, const std::string& sT)
      { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
-void l10nMem::save(const std::string& sT, bool bK, bool bF)
-     { l10nMem_impl::mcImpl->save(*this, sT, bK, bF); }
+void l10nMem::saveTemplates(const std::string& sT, bool bK, bool bF)
+     { l10nMem_impl::mcImpl->saveTemplates(*this, sT, bK, bF); }
+void l10nMem::saveLanguages(const std::string& sT, bool bF)
+     { l10nMem_impl::mcImpl->saveLanguages(*this, sT, bF); }
 void l10nMem::showNOconvert ()
      { l10nMem_impl::mcImpl->showNOconvert(); }
 
@@ -234,10 +236,9 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid, bool bForce)
+void l10nMem_impl::saveTemplates(l10nMem& cMem, const std::string& sTargetDir, bool bKid, bool bForce)
 {
   int iE, iEsize  = mcDb.mcENUSlist.size();
-  int iL, iLsize  = mcDb.mcLangList.size();
   int iCntDeleted = 0, iCntChanged = 0, iCntAdded = 0;
   std::string sFileName = msModuleName + ".pot";
  
@@ -253,25 +254,42 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
   //JIX save HANDLE KID
 
   // Save en-US
+  convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
+
+  savePo.startSave("templates/", sFileName);
+  for (iE = 1; iE < iEsize; ++iE)
   {
-    convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
+    l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
 
-    savePo.startSave("templates/", sFileName);
-    for (iE = 1; iE < iEsize; ++iE)
-    {
-      l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
+    // remove deleted entries
+    if (cE.meState == l10nMem::ENTRY_DELETED)
+      continue;
 
-      // remove deleted entries
-      if (cE.meState == l10nMem::ENTRY_DELETED)
-        continue;
-
-      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msMsgId, "", false);
-    }
-    savePo.endSave();
+    savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msMsgId, "", false);
   }
+  savePo.endSave();
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_impl::saveLanguages(l10nMem& cMem, const std::string& sTargetDir, bool bForce)
+{
+  int iE, iEsize  = mcDb.mcENUSlist.size();
+  int iL, iLsize  = mcDb.mcLangList.size();
+  int iCntDeleted = 0, iCntChanged = 0, iCntAdded = 0;
+  std::string sFileName = msModuleName + ".po";
+ 
+
+  // and reorganize db if needed
+   mcDb.miCurFileInx = 0;
+   mcDb.reorganize();
+
+  // no save if there has been errors
+  if(!needWrite(sFileName, bForce))
+    return;
 
   // save all languages
-  sFileName = msModuleName + ".po";
   for (iL = 1; iL < iLsize; ++iL)
   {
     convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
@@ -421,21 +439,30 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
                                bool               bIsFuzzy)
 {
   std::vector<int> ivEntryList;
-  int              i, iSize;
+  std::string      curFileName;
+  std::string      curKeyUpper; 
+  int              curFileIndex, curENUSindex, i, iSize;
 
 
   // silent ignore deleted messages
   if (sMsgId == "-" || sMsgId == "")
     return;
 
+  // check for directory names in file name
+  i = sSourceFile.rfind("/");
+  if (i > 0)
+    curFileName = sSourceFile.substr(i+1);
+  else
+    curFileName = sSourceFile; 
+
   // Find all matching file names (old system does not have directory.
   // build list of potential entries
   iSize = mcDb.mcFileList.size();
-  for (i = 1; i < iSize; ++i)
-    if (sSourceFile == mcDb.mcFileList[i].msPureName)
+  for (curFileIndex = 1; curFileIndex < iSize; ++curFileIndex)
+    if (curFileName == mcDb.mcFileList[curFileIndex].msPureName)
     {
-      int j    = mcDb.mcFileList[i].miStart;
-      int iEnd = mcDb.mcFileList[i].miEnd;
+      int j    = mcDb.mcFileList[curFileIndex].miStart;
+      int iEnd = mcDb.mcFileList[curFileIndex].miEnd;
 
       for (; j <= iEnd; ++j)
         ivEntryList.push_back(j);
@@ -445,97 +472,74 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
   iSize = ivEntryList.size();
   if (!iSize)
   {
-    showWarning("source file(" + sSourceFile + ") not in template file", iLineNo);
+    showWarning("source file(" + curFileName + ") not in template file", iLineNo);
     return;
   }
 
   // Loop through all potential en-US entries
-  for (i = 0; i < iSize; ++i)
+  for (curENUSindex = -1, i = 0; i < iSize; ++i)
   {
-    int z = ivEntryList[i];
     l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
 
-    // The entry must be unconverted and msgId must match
-    if (curE.meState == l10nMem::ENTRY_DELETED && sMsgId == curE.msMsgId)
+
+    // The entry must be unconverted if strict mode (comparing .pot files)
+    if (mcDb.mbStrictMode && curE.meState != l10nMem::ENTRY_DELETED)
+      continue;
+
+    // msgId must match
+    if (sMsgId == curE.msMsgId)
     {
-      curE.meState = l10nMem::ENTRY_NORMAL;
+      curENUSindex = ivEntryList[i];
+      if (mcDb.mbStrictMode)
+        curE.meState = l10nMem::ENTRY_NORMAL;
       break;
     }
   }
-  if (i == iSize)
+
+  // do we need to do advanced find
+  if (curENUSindex == -1 || mcDb.mbStrictMode)
   {
-    showWarning("file(" + sSourceFile + ") key(" + sKey + ") msgId(" + sMsgId + ") not found in templates", iLineNo);
+    // make copy of key in upper case
+    curKeyUpper = sKey;
+    l10nMem_db::keyToUpper(curKeyUpper);
+
+    // Loop through all potential en-US entries
+    for (i = 0; i < iSize; ++i)
+    {
+      l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
+
+      // compare keys, but be aware of different length
+      if (curKeyUpper.find(curE.msKey) != std::string::npos)
+      {
+        curENUSindex = ivEntryList[i];
+        bIsFuzzy     = true;
+        break; 
+      }
+    }
   }
 
-  if (mcDb.mbStrictMode)
+  if (curENUSindex == -1)
+  {
+    showWarning("file(" + curFileName + ") key(" + sKey + ") msgId(" + sMsgId + ") not found in templates", iLineNo);
     return;
+  }
+
+  // update language text
+  l10nMem_enus_entry& curE = mcDb.mcENUSlist[curENUSindex];
+  l10nMem_lang_entry& curL = curE.mcLangText[mcDb.miCurLangInx];
+
+  if (sMsgStr != curL.msMsgStr)
+  {
+    curL.msMsgStr = sMsgStr;
+    curL.mbFuzzy  = bIsFuzzy;
+    curE.meState  = l10nMem::ENTRY_CHANGED;
+  }
 
 
-{
-  std::string      sKeyUpper;
 
-
+#if 0
   // filter out dummy messages, silently
   if (convFilterWarning(sSourceFile, sKey, sMsgId))
     return;
-
-  // make copy of key in upper case
-  sKeyUpper = sKey;
-  l10nMem_db::keyToUpper(sKeyUpper);
-
-
-
-  // Loop through all potential en-US entries
-  int iCandidate;
-  for (iCandidate = -1, i = 0; i < iSize; ++i)
-  {
-    l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
-
-    // The entry cannot be converted twice
-    if (curE.meState != l10nMem::ENTRY_NORMAL)
-      continue;
-
-    // The msgId must match
-    if (sMsgId == curE.msMsgId)
-      break;
-
-    // compare keys, but be aware of different length
-    if (sKeyUpper.find(curE.msKey) != std::string::npos)
-    {
-      // is this the second (or more candidate ? then we cannot use key
-      if (iCandidate > 0)
-        iCandidate = -1;
-      else
-        iCandidate = i;
-    }
-  }
-  sKeyUpper.clear();
-  if (i == iSize && iCandidate < 0)
-    sKeyUpper = "cannot be matched";
-  else
-  {
-    // Primarely use text match, alternatively use key candidate 
-    if (i == iSize)
-    {
-      i = iCandidate;
-      sKeyUpper = "could only be matched through KEY";
-    }
-
-    // update language text
-    l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
-    l10nMem_lang_entry& curL = curE.mcLangText[mcDb.miCurLangInx];
-
-    if (sMsgStr != curL.msMsgStr)
-    {
-      curL.msMsgStr = sMsgStr;
-      curL.mbFuzzy  = bIsFuzzy;
-      curE.meState  = l10nMem::ENTRY_CHANGED;
-    }
-    if (sKeyUpper.size())
-    {
-      showWarning("file(" + sSourceFile + ") key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
-                  ") with msgId(" + sMsgId + ") " + sKeyUpper, iLineNo);
-    }
-  }
-  }
+#endif
 }
