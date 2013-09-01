@@ -49,43 +49,43 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ་གསར་བསྐྲུན་འབད་ནི་འདི་ འ་ནི་ཁ་བྱང་ཀི་དེབ་ཀྱི་དབྱེ་བ་བཟུམ་གྱི་དོན་ལུ་ རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "མོ་ཛིལ་ལ་འདི་གཡོག་བཀོལ་ཡོད་པའི་སྐབས་ ཁ་བྱང་ཀི་དེབ་གསརཔ་ཅིག་གསར་བསྐྲུན་འབད་མི་ཚུགས།"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ཁ་བྱང་ཀི་དེབ་ཅིག་སླར་འདྲེན་འབད་མི་ཚུགས་ མ་ཤེས་པའི་འཛོལ་བ་ཅིན་འབྱུང་ཡོད།"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ཁ་བྱང་ཀི་དེབ་སྣོད་ཐོ་མིང་ཅིག་ སླར་འདྲེན་འབད་མི་ཚུགས་ མ་ཤེས་པའི་འཛོལ་བ་ཅིག་འབྱུང་ཡོད།"
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
 msgid  "Timed out while waiting for the result."
-msgstr ""
+msgstr "གྲུབ་འབྲས་འདི་ལུ་བསྒུག་པའི་སྐབས་ ངལ་མཚམས་ལུས་ཡོདཔ།"
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
 msgid  "An error occurred while executing the query."
-msgstr ""
+msgstr "འདྲི་དཔྱད་འདི་ལག་ལེན་འཐབ་པའི་སྐབས་ འཛོལ་བ་ཅིག་འབྱུང་ཡོད།"
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "མོ་ཛིལ་ལ་འདི་གཡོག་བཀོལ་བའི་སྐབས་ ཁྱོད་ཀྱིས་ མོ་ཛིལ་ལ་ཁ་བྱང་ཀི་དེབ་འདི་ལུ་ བསྒྱུར་བཅོས་ག་ནི་ཡང་འབད་མི་ཚུགས།"
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "མོ་ཛིལ་ལ་ཁ་བྱང་ཀི་དེབ་འདི་ འ་ནི་ལས་སྦྱོར་འདི་ལས་བསྒྱུར་བཅོས་འབད་ཡོདཔ་ཨིན་ ང་བཅས་ཀྱིས་འདི་ འ་ནི་གནས་སྟངས་ནང་ལེགས་བཅོས་འབད་མི་ཚུགས།"
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
 msgid  "Can't find the requested row."
-msgstr ""
+msgstr "ཞུ་བ་འབད་ཡོད་པའི་གྲལ་ཐིག་འདི་འཚོལ་མ་འཐོབ།"
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
 msgid  "Can't find the card for the requested row."
-msgstr ""
+msgstr "ཞུ་བ་འབད་ཡོད་པའི་གྲལ་ཐིག་འདི་གི་དོན་ལུ་ ཤོག་བྱང་འདི་འཚོལ་མ་འཐོབ།"
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It needs at least one table."
@@ -149,15 +149,15 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
 msgid  "No hostname was provided."
-msgstr ""
+msgstr "ཧོསིཊི་ནེམ་ཅིག་ཡང་མ་བྱིན་པས།"
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
 msgid  "No Base DN was provided."
-msgstr ""
+msgstr "གཞི་རྟེན་ཌི་ཨེན་གཅིག་ཡང་མ་བྱིན་པས།"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
 msgid  "The connection to the LDAP server could not be established."
-msgstr ""
+msgstr "ཨེལ་ཌི་ཨེ་པི་སར་བར་ལུའི་མཐུད་ལམ་འདི་ གཞི་འཛུགས་འབད་མི་བཏུབ།"
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
@@ -217,15 +217,15 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "ཡིག་རྒྱུན་ '$string$' འདི་དམིགས་བསལ་ཡིག་འབྲུ་ཆ་ཚན་ '$charset$' ལུ་གཞི་བསྒྱུར་འབད་བའི་སྐབས་  $maxlen$ ཡིག་འབྲུ་ཚུ་གི་ མང་མཐའ་རིང་ཚད་འདི་ལས་ལྷགཔ་ཨིན།"
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "ཡིག་རྒྱུན་ '$string$' འདི་ ཨིན་ཀོ་ཌིང་ '$charset' ལག་ལེན་འཐབ་ཐོག་ གཞི་བསྒྱུར་འབད་མི་བཏུབ།"
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
-msgstr ""
+msgstr "མཐུད་ལམ་ཡུ་ཨར་ཨེལ་འདི་ནུས་མེད་ཨིན།"
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. It is too complex."
@@ -549,19 +549,19 @@ msgstr ""
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
 msgid  "The record operation has been vetoed."
-msgstr ""
+msgstr "དྲན་ཐོ་བཀོལ་སྤྱོད་འདི་བཀག་བཞག་ཡོདཔ།"
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "གསལ་བཤད་འདི་ནང་ ཡན་ལག་འདྲི་དཔྱད་ཅིག་ཡང་ན་དེ་ལས་མངམ་བ་ལུ་འཇུག་པའི་འཁོར་བའི་རྒྱབ་རྟེན་ཅིག་འདུག"
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
 msgid  "The name must not contain any slashes ('/')."
-msgstr ""
+msgstr "མིང་འདི་ནང་ གཡོ་ཤད་('/')ཚུ་འོང་ནི་མི་འོང།"
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 msgid  "$1$ is no SQL conform identifier."
-msgstr ""
+msgstr "$1$ འདི་ SQL ངོ་སྟོན་པའི་ཤོ་མཐུན་མེན་པས།"
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
 msgid  "Query names must not contain quote characters."

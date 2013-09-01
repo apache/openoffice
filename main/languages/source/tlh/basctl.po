@@ -44,12 +44,14 @@ msgid  "Pa~ges"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
+#, fuzzy
 msgid  "<All>"
-msgstr ""
+msgstr "<Hoch>"
 
 #: basicide/basidesh.src#RID_STR_NOMODULE.STRING.TEXT
+#, fuzzy
 msgid  "< No Module >"
-msgstr ""
+msgstr "< pagh bobcho' >"
 
 #: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
 msgid  "Incorrect Password"
@@ -60,8 +62,9 @@ msgid  "Load"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr "pol"
 
 #: basicide/basidesh.src#RID_STR_SOURCETOBIG.STRING.TEXT
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
@@ -96,16 +99,19 @@ msgid  "This library is read-only."
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_REPLACELIB.STRING.TEXT
+#, fuzzy
 msgid  "'XX' cannot be replaced."
-msgstr ""
+msgstr "'XX' boqlaHbe'."
 
 #: basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.STRING.TEXT
+#, fuzzy
 msgid  "'XX' cannot be added."
-msgstr ""
+msgstr "'XX' boqlaHbe'."
 
 #: basicide/basidesh.src#RID_STR_NOIMPORT.STRING.TEXT
+#, fuzzy
 msgid  "'XX' was not added."
-msgstr ""
+msgstr "boqlu'be' 'XX'."
 
 #: basicide/basidesh.src#RID_STR_ENTERPASSWORD.STRING.TEXT
 msgid  "Enter password for 'XX'"
@@ -144,20 +150,23 @@ msgid  "Search key not found"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_SEARCHFROMSTART.STRING.TEXT
+#, fuzzy
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "bobcho' Qav nejchu'ta'. bobcho' wa'DIchDaq nej 'e' taH'a'?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHREPLACES.STRING.TEXT
 msgid  "Search key replaced XX times"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_COULDNTREAD.STRING.TEXT
+#, fuzzy
 msgid  "The file could not be read"
-msgstr ""
+msgstr "tavetlh laDlaHbe'"
 
 #: basicide/basidesh.src#RID_STR_COULDNTWRITE.STRING.TEXT
+#, fuzzy
 msgid  "The file could not be saved"
-msgstr ""
+msgstr "tavetlh pollaHbe'"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.STRING.TEXT
 msgid  "The name of the default library cannot be changed."
@@ -172,36 +181,42 @@ msgid  "The default library cannot be deactivated"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_GENERATESOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Generating source"
-msgstr ""
+msgstr "lIngmeH Hal"
 
 #: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
+#, fuzzy
 msgid  "File name:"
-msgstr ""
+msgstr "ta pong:"
 
 #: basicide/basidesh.src#RID_STR_APPENDLIBS.STRING.TEXT
 msgid  "Import Libraries"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMACRO.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the macro XX?"
-msgstr ""
+msgstr "XX bobcho'vetlh Dalel DaneH'a'?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELDIALOG.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the XX dialog?"
-msgstr ""
+msgstr "XX bobcho'vetlh Dalel DaneH'a'?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIB.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the XX library?"
-msgstr ""
+msgstr "XX bobcho'vetlh Dalel DaneH'a'?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIBREF.STRING.TEXT
 msgid  "Do you want to delete the reference to the XX library?"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMODULE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the XX module?"
-msgstr ""
+msgstr "XX bobcho'vetlh Dalel DaneH'a'?"
 
 #: basicide/basidesh.src#RID_STR_OBJNOTFOUND.STRING.TEXT
 msgid  "Object or method not found"
@@ -220,16 +235,18 @@ msgid  "Col"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "ghItlh"
 
 #: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
 msgid  "Macro Bar"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
+#, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
-msgstr ""
+msgstr "QapvIS BASIC SoQmoHlaHbe' Qorwaghvetlh. "
 
 #: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
 msgid  "The default library cannot be replaced."
@@ -244,16 +261,19 @@ msgid  "Watch"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
+#, fuzzy
 msgid  "Variable"
-msgstr ""
+msgstr "choHlaHghach"
 
 #: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "lo'laHghach"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "Segh"
 
 #: basicide/basidesh.src#RID_STR_STACKNAME.STRING.TEXT
 msgid  "Call Stack"
@@ -264,8 +284,9 @@ msgid  "BASIC Initialization"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_STDMODULENAME.STRING.TEXT
+#, fuzzy
 msgid  "Module"
-msgstr ""
+msgstr "bobcho'"
 
 #: basicide/basidesh.src#RID_STR_STDDIALOGNAME.STRING.TEXT
 msgid  "Dialog"
@@ -280,16 +301,18 @@ msgid  "New Library"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_NEWMOD.STRING.TEXT
+#, fuzzy
 msgid  "New Module"
-msgstr ""
+msgstr "bobcho' chu'"
 
 #: basicide/basidesh.src#RID_STR_NEWDLG.STRING.TEXT
 msgid  "New Dialog"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All"
-msgstr ""
+msgstr "Hoch"
 
 #: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
 msgid  "Page"
@@ -300,8 +323,9 @@ msgid  "A name must be entered."
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_WILLSTOPPRG.STRING.TEXT
+#, fuzzy
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "choHpu' ghIq ghun 'e' DataghnISqa'.\nbItaH'a'?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHALLMODULES.STRING.TEXT
 msgid  "Do you want to replace the text in all active modules?"
@@ -368,32 +392,33 @@ msgid  "Insert"
 msgstr ""
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MENUITEM.TEXT
+#, fuzzy
 msgid  "BASIC Module"
-msgstr ""
+msgstr "BASIC bobcho'"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MENUITEM.TEXT
 msgid  "BASIC Dialog"
 msgstr ""
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "lel"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rename"
-msgstr ""
+msgstr "latlhpong pong"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Hide"
-msgstr ""
+msgstr "So'"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "Modules..."
-msgstr ""
-
-#: basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
-msgstr ""
+msgstr "bobcho'mey..."
 
 #: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
 msgid  "Do you want to overwrite the XX macro?"
@@ -404,8 +429,9 @@ msgid  "<Not localized>"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "[Default Language]"
-msgstr ""
+msgstr "[Hol cherlu'pu'bogh]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
@@ -416,15 +442,12 @@ msgid  "Forms"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
+#, fuzzy
 msgid  "Modules"
-msgstr ""
+msgstr "bobcho'mey"
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
 msgid  "Class Modules"
-msgstr ""
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.STRING.TEXT
-msgid  "Rename"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
@@ -456,12 +479,14 @@ msgid  "The dialog to be imported supports other languages than the target libra
 msgstr ""
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "New"
-msgstr ""
+msgstr "chu'"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "lel"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CHECKBOX.TEXT
 msgid  "Active"
@@ -500,36 +525,42 @@ msgid  "Save m~acro in"
 msgstr ""
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "De~scription"
-msgstr ""
+msgstr "Delchu'ghach"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "R~un"
-msgstr ""
+msgstr "QapmoH"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "SoQmoH"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PUSHBUTTON.TEXT
 msgid  "~Assign..."
 msgstr ""
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "~choH"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PUSHBUTTON.TEXT
 msgid  "New ~Library"
 msgstr ""
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "New M~odule"
-msgstr ""
+msgstr "bobcho' chu'"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "~lel"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PUSHBUTTON.TEXT
 msgid  "~Organizer..."
@@ -539,37 +570,34 @@ msgstr ""
 msgid  "Macro"
 msgstr ""
 
-#: basicide/macrodlg.src#RID_STR_BTNDEL.STRING.TEXT
-msgid  "~Delete"
-msgstr ""
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
-
-#: basicide/macrodlg.src#RID_STR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr ""
+msgstr "chu'"
 
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
+#, fuzzy
 msgid  "Choose"
-msgstr ""
+msgstr "wIv"
 
 #: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
+#, fuzzy
 msgid  "Run"
-msgstr ""
+msgstr "QapmoH"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "~pol"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.TABDIALOG.TEXT
 msgid  "%PRODUCTNAME Basic Macro Organizer"
 msgstr ""
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Modules"
-msgstr ""
+msgstr "bobcho'mey"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PAGEITEM.TEXT
 msgid  "Dialogs"
@@ -580,51 +608,32 @@ msgid  "Libraries"
 msgstr ""
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "M~odule"
-msgstr ""
+msgstr "bobcho'"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "~choH"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "SoQmoH"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
+msgstr "~chu'"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "~lel"
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
 msgid  "Dialog"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
 msgstr ""
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
@@ -635,20 +644,8 @@ msgstr ""
 msgid  "~Library"
 msgstr ""
 
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
 msgid  "~Password..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PUSHBUTTON.TEXT
-msgid  "~New..."
 msgstr ""
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PUSHBUTTON.TEXT
@@ -659,13 +656,10 @@ msgstr ""
 msgid  "E~xport..."
 msgstr ""
 
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr ""
-
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "DuHmey"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CHECKBOX.TEXT
 msgid  "Insert as reference (read-only)"
@@ -676,8 +670,9 @@ msgid  "Replace existing libraries"
 msgstr ""
 
 #: basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name:"
-msgstr ""
+msgstr "~pong:"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.MODALDIALOG.TEXT
 msgid  "Export Basic library"
@@ -695,41 +690,39 @@ msgstr ""
 msgid  "Export library as extension"
 msgstr ""
 
-#: basicide/moduldlg.src#RID_STR_EXPORTBASIC.STRING.TEXT
-msgid  "Export as BASIC library"
-msgstr ""
-
 #: basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
 msgid  "Extension"
 msgstr ""
 
 #: basicide/moptions.src#RID_MACROOPTIONS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
-
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr ""
+msgstr "Delchu'ghach"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Help information"
-msgstr ""
+msgstr "QaH De'"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Help ID"
-msgstr ""
+msgstr "QaH *ID*"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Help file name"
-msgstr ""
+msgstr "QaH ta pong"
 
 #: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Objects"
-msgstr ""
+msgstr "Dochmey"
 
 #: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Show"
-msgstr ""
+msgstr "cha'"
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
@@ -752,56 +745,62 @@ msgid  "Manage User Interface Languages [$1]"
 msgstr ""
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Present Languages"
-msgstr ""
+msgstr "DaH Hol'e' lo'taHbogh"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Add..."
-msgstr ""
+msgstr "...boq"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "lel"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "cherlu'pu'ghach"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
 msgstr ""
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "~SoQmoH"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
+#, fuzzy
 msgid  "[Default Language]"
-msgstr ""
+msgstr "[Hol cherlu'pu'bogh]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "~lel"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
+#, fuzzy
 msgid  "<Press 'Add' to create language resources>"
-msgstr ""
+msgstr "<Hol jo chenmoHmeH 'boq' yuv>"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Delete Language Resources"
-msgstr ""
-
-#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Hol jo lel"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 msgid  "Set Default User Interface Language"
 msgstr ""
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Default language"
-msgstr ""
+msgstr "Hol cherlu'pu'bogh"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
@@ -812,8 +811,9 @@ msgid  "Add User Interface Languages"
 msgstr ""
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Available Languages"
-msgstr ""
+msgstr "Holmey'e' Dalo'laHbogh"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.STRING.TEXT
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."

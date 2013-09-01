@@ -33,579 +33,580 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.STRING.TEXT
 msgid  "Mozilla/Seamonkey Addressbook Directory"
-msgstr ""
+msgstr "Mozilla/Seamonkey aadressiraamatu kataloog"
 
 #: resource/conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.STRING.TEXT
 msgid  "Thunderbird Addressbook Directory"
-msgstr ""
+msgstr "Thunderbird'i aadressiraamatu kataloog"
 
 #: resource/conn_shared_res.src#STR_OE_ADDRESSBOOK.STRING.TEXT
 msgid  "Outlook Express Addressbook"
-msgstr ""
+msgstr "Outlook Express'i aadressiraamat"
 
 #: resource/conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.STRING.TEXT
 msgid  "Outlook (MAPI) Addressbook"
-msgstr ""
+msgstr "Outlook'i (MAPI) aadressiraamat"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "See aadressiraamatute tüüp ei toeta tabelite loomist."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "Mozilla töötamise ajal ei saa uusi aadressiraamatutuid luua."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Aadressiraamatu kirjet ei suudetud lugeda tundmatu vea tõttu."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Aadressiraamatu kataloogi nime ei suudetud lugeda tundmatu vea tõttu."
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
 msgid  "Timed out while waiting for the result."
-msgstr ""
+msgstr "Aegumine tulemuse ootamisel."
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
 msgid  "An error occurred while executing the query."
-msgstr ""
+msgstr "Päringu sooritamisel tekkis viga."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Mozilla töötamise ajal ei saa Mozilla aadressiraamatusse muudatusi teha."
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Mozilla aadressiraamatut muudeti mujalt, seetõttu ei saa me seda muuta."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
 msgid  "Can't find the requested row."
-msgstr ""
+msgstr "Küsitud rida ei leitud."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
 msgid  "Can't find the card for the requested row."
-msgstr ""
+msgstr "Küsitud reale vastavat kaarti ei leitud."
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It needs at least one table."
-msgstr ""
+msgstr "Päringut ei saa sooritada. See vajab vähemalt üht tabelit."
 
 #: resource/conn_shared_res.src#STR_NO_COUNT_SUPPORT.STRING.TEXT
 msgid  "The driver does not support the 'COUNT' function."
-msgstr ""
+msgstr "Draiver ei toeta funktsiooni 'COUNT'."
 
 #: resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.STRING.TEXT
 msgid  "This statement type not supported by this database driver."
-msgstr ""
+msgstr "See andmebaasi draiver ei toeta sellist lause tüüpi."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
 msgid  "An unknown error occured."
-msgstr ""
+msgstr "Ilmnes tundmatu viga."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr ""
+msgstr "Uue aadressiraamatu loomine nurjus. Mozilla veakood on $1$."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
 msgid  "The library '$libname$' could not be loaded."
-msgstr ""
+msgstr "Teeki '$libname$' ei suudetud laadida."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
 msgid  "An error occured while refreshing the current row."
-msgstr ""
+msgstr "Aktiivse rea värskendamisel tekkis viga."
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
 msgid  "An error occured while getting the current row."
-msgstr ""
+msgstr "Aktiivse rea hankimisel tekkis viga."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid  "The row update can not be canceled."
-msgstr ""
+msgstr "Rea värskendamist ei saa tühistada."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.STRING.TEXT
 msgid  "A new row can not be created."
-msgstr ""
+msgstr "Uut rida ei saa luua."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Päringut ei saa sooritada. Lauset 'IS NULL' saab kasutada ainult koos veeru nimega."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
 msgid  "Illegal cursor movement occured."
-msgstr ""
+msgstr "Toimus kursori lubamatu liikumine."
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Palun saada rida '$position$' enne ridade uuendamist või uute ridade lisamist."
 
 #: resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.STRING.TEXT
 msgid  "The update call can not be executed. The row is invalid."
-msgstr ""
+msgstr "Uuendamise toimingut ei saa sooritada. Rida on vigane."
 
 #: resource/conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.STRING.TEXT
 msgid  "The current row can not be saved."
-msgstr ""
+msgstr "Aktiivset rida ei saa salvestada."
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
 msgid  "No hostname was provided."
-msgstr ""
+msgstr "Masinanimi puudub."
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
 msgid  "No Base DN was provided."
-msgstr ""
+msgstr "Baas-DN puudub."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
 msgid  "The connection to the LDAP server could not be established."
-msgstr ""
+msgstr "Ühendust LDAP serveriga ei suudetud luua."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
-msgstr ""
+msgstr "Ühendust selle andmebaasiga pole olemas."
 
 #: resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.STRING.TEXT
 msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
-msgstr ""
+msgstr "Sa üritasid määrata parameetrit asukohas '$pos$', kuid lubatud on ainult '$count$' parameetrit. Üheks põhjuseks võib olla, et omadusele \"ParameterNameSubstitution\" ei ole andmeallikas määratud väärtust TÕENE."
 
 #: resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.STRING.TEXT
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "Sisendvoo lõpp saabus enne vajalikku pikkust, mis määrati sisendvoo kirjeldamisel."
 
 #: resource/conn_shared_res.src#STR_NO_INPUTSTREAM.STRING.TEXT
 msgid  "The input stream was not set."
-msgstr ""
+msgstr "Sisendvoogu pole määratud."
 
 #: resource/conn_shared_res.src#STR_NO_ELEMENT_NAME.STRING.TEXT
 msgid  "There is no element named '$name$'."
-msgstr ""
+msgstr "Elementi nimega '$name$' pole."
 
 #: resource/conn_shared_res.src#STR_INVALID_BOOKMARK.STRING.TEXT
 msgid  "Invalid bookmark value"
-msgstr ""
+msgstr "Vigane järjehoidja väärtus"
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.STRING.TEXT
 msgid  "Privilege not granted: Only table privileges can be granted."
-msgstr ""
+msgstr "Privileegi ei lubatud. Lubada saab ainult tabeli privileege."
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.STRING.TEXT
 msgid  "Privilege not revoked: Only table privileges can be revoked."
-msgstr ""
+msgstr "Privileegi ei tühistatud. Tühistada saab ainult tabeli privileege."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.STRING.TEXT
 msgid  "The column name '$columnname$' is unknown."
-msgstr ""
+msgstr "Veeru nimi '$columnname$' on tundmatu."
 
 #: resource/conn_shared_res.src#STR_ERRORMSG_SEQUENCE.STRING.TEXT
 msgid  "Function sequence error."
-msgstr ""
+msgstr "Funktsiooni järgnevuse viga."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX.STRING.TEXT
 msgid  "Invalid descriptor index."
-msgstr ""
+msgstr "Vigane kirjeldaja indeks."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.STRING.TEXT
 msgid  "The driver does not support the function '$functionname$'."
-msgstr ""
+msgstr "Draiver ei toeta funktsiooni '$functionname$'."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.STRING.TEXT
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "Draiver ei toeta omaduse '$featurename$' funktsionaalsust. See ei ole teostatud."
 
 #: resource/conn_shared_res.src#STR_FORMULA_WRONG.STRING.TEXT
 msgid  "The formula for TypeInfoSettings is wrong!"
-msgstr ""
+msgstr "Valem sätte TypeInfoSettings jaoks on vale!"
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "String '$string$' ületab märgistikku $charset$' teisendamisel maksimaalset lubatud pikkust $maxlen$ märki."
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Stringi '$string$' ei saa teisendada märgistikku ''$charset$''."
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
-msgstr ""
+msgstr "Ühenduse URL on vigane."
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. It is too complex."
-msgstr ""
+msgstr "Päringut ei saa sooritada. See on liiga keeruline."
 
 #: resource/conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. The operator is too complex."
-msgstr ""
+msgstr "Päringut ei saa sooritada. Tehe on liiga keeruline."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Päringut ei saa sooritada. Lauset 'LIKE' ei saa kasutada seda tüüpi veeruga."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.STRING.TEXT
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Päringut ei saa sooritada. Lauset 'LIKE' saab kasutada ainult koos stringargumendiga."
 
 #: resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr ""
+msgstr "Päringut ei saa sooritada. Lause 'NOT LIKE' on liiga keeruline."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.STRING.TEXT
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Päringut ei saa sooritada. Lause 'LIKE' sisaldab keskel metamärki."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.STRING.TEXT
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Päringut ei saa sooritada. Lause 'LIKE' sisaldab liiga palju metamärke."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.STRING.TEXT
 msgid  "The column name '$columnname$' is not valid."
-msgstr ""
+msgstr "Veeru nimi '$columnname$' on vigane."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.STRING.TEXT
 msgid  "The statement contains an invalid selection of columns."
-msgstr ""
+msgstr "Lause sisaldab vigast veergude valikut."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.STRING.TEXT
 msgid  "The column at position '$position$' could not be updated."
-msgstr ""
+msgstr "Veergu asukohas '$position$' ei suudetud uuendada."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be loaded."
-msgstr ""
+msgstr "Faili $filename$ ei suudetud laadida."
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Katse faili laadida lõppes järgneva veateatega ($exception_type$):\n\n$error_message$"
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
 msgid  "The type could not be converted."
-msgstr ""
+msgstr "Tüüpi ei suudetud teisendada."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not append column: invalid column descriptor."
-msgstr ""
+msgstr "Veergu ei saa saata: vigane veeru kirjeldaja."
 
 #: resource/conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create group: invalid object descriptor."
-msgstr ""
+msgstr "Rühma ei saa luua: vigane objekti kirjeldaja."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create index: invalid object descriptor."
-msgstr ""
+msgstr "Indeksit ei saa luua: vigane objekti kirjeldaja."
 
 #: resource/conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create key: invalid object descriptor."
-msgstr ""
+msgstr "Võtit ei saa luua: vigane objekti kirjeldaja."
 
 #: resource/conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create table: invalid object descriptor."
-msgstr ""
+msgstr "Tabelit ei saa luua: vigane objekti kirjeldaja."
 
 #: resource/conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create user: invalid object descriptor."
-msgstr ""
+msgstr "Kasutajat ei saa luua: vigane objekti kirjeldaja."
 
 #: resource/conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create view: invalid object descriptor."
-msgstr ""
+msgstr "Vaadet ei saa luua: vigane objekti kirjeldaja."
 
 #: resource/conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.STRING.TEXT
 msgid  "Could not create view: no command object."
-msgstr ""
+msgstr "Vaadet ei saa luua: puudub käsu objekt."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION.STRING.TEXT
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Ühendust ei suudetud luua. Võib-olla on paigaldamata vajalik andmeallikas."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Indeksit ei suudetud kustutada. Juurdepääsul failisüsteemile tekkis tundmatu viga."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr ""
+msgstr "Indeksit ei suudetud luua. Indeksi kohta on lubatud ainult üks veerg."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.STRING.TEXT
 msgid  "The index could not be created. The values are not unique."
-msgstr ""
+msgstr "Indeksit ei suudetud luua. Väärtused pole unikaalsed."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.STRING.TEXT
 msgid  "The index could not be created. An unknown error appeared."
-msgstr ""
+msgstr "Indeksit ei suudetud luua. Tekkis tundmatu tõrge."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.STRING.TEXT
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Indeksit ei suudetud luua. Faili '$filename$' kasutab teine indeks."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.STRING.TEXT
+#, fuzzy
 msgid  "The index could not be created. The size of the chosen column is too big."
-msgstr ""
+msgstr "Indeksit ei suudetud luua. Valitud veerg on liiga suur."
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
 msgid  "The name '$name$' doesn't match SQL naming constraints."
-msgstr ""
+msgstr "Nimi '$name$' ei vasta SQL-i nimepiirangutele."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be deleted."
-msgstr ""
+msgstr "Faili $filename$ ei suudetud kustutada."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
 msgid  "Invalid column type for column '$columnname$'."
-msgstr ""
+msgstr "Veeru '$columnname$' vigane tüüp."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
 msgid  "Invalid precision for column '$columnname$'."
-msgstr ""
+msgstr "Veeru '$columnname$' vigane täpsus."
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
 msgid  "Precision is less than scale for column '$columnname$'."
-msgstr ""
+msgstr "Täpsus on väiksem kui veeru '$columnname$' komakohtade arv."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
 msgid  "Invalid column name length for column '$columnname$'."
-msgstr ""
+msgstr "Veeru '$columnname$' nime vigane pikkus."
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
 msgid  "Duplicate value found in column '$columnname$'."
-msgstr ""
+msgstr "Veerus '$columnname$' leiti korduv väärtus."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "Veeru '$columnname$' tüübiks on määratud \"kümnendarv\", suurim pikkus on $precision$ märki (koos $scale$ komakohaga).\n\nMääratud väärtus \"$value$ on pikem lubatud kohtade arvust."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Veergu '$columnname$' ei suudetud muuta. Võib-olla on failisüsteem kirjutuskaitstud."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Veergu '$columnname$' ei suudetud uuendada. Väärtus ei sobi sellele veerule."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Veergu '$columnname$' ei suudetud lisada. Võib-olla on failisüsteem kirjutuskaitstud."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Veergu asukohas '$position$' ei suudetud eemaldada. Võib-olla on failisüsteem kirjutuskaitstud."
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Tabelit '$tablename$' ei suudetud eemaldada. Võib-olla on failisüsteem kirjutuskaitstud."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
 msgid  "The table could not be altered."
-msgstr ""
+msgstr "Tabelit ei suudetud muuta."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
-msgstr ""
+msgstr "Fail '$filename$' on vigane (või tuvastamatu) dBase'i fail."
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
 msgid  "Cannot open Evolution address book."
-msgstr ""
+msgstr "Evolutioni aadressiraamatut ei saa avada."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
 msgid  "Can only sort by table columns."
-msgstr ""
+msgstr "Sortida saab ainult tabeli veergude järgi."
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
 msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
-msgstr ""
+msgstr "Päringut ei saa sooritada. See on liiga keeruline. Toetatud on ainult \"COUNT(*)\"."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "Päringut ei saa sooritada. Lause 'BETWEEN' argumendid pole korrektsed."
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
 msgid  "The query can not be executed. The function is not supported."
-msgstr ""
+msgstr "Päringut ei saa sooritada. See funktsioon pole toetatud."
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
 msgid  "The table can not be changed. It is read only."
-msgstr ""
+msgstr "Tabelit ei saa muuta. See on kirjutuskaitstud."
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
 msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
-msgstr ""
+msgstr "Rida ei saa kustutada. Märgitud on säte \"Mitteaktiivsete kirjete kuvamine\"."
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "The row could not be deleted. It is already deleted."
-msgstr ""
+msgstr "Rida ei suudetud kustutada. See on juba kustutatud."
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It contains more than one table."
-msgstr ""
+msgstr "Päringut ei saa sooritada. See sisaldab rohkem kui üht tabelit."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
 msgid  "The query can not be executed. It contains no valid table."
-msgstr ""
+msgstr "Päringut ei saa sooritada. See ei sisalda ühtki sobivat tabelit."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. It contains no valid columns."
-msgstr ""
+msgstr "Päringut ei saa sooritada. See ei sisalda ühtki sobivat veergu."
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
 msgid  "The count of the given parameter values doesn't match the parameters."
-msgstr ""
+msgstr "Antud parameetri väärtuste arv ei vasta parameetrile."
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
-msgstr ""
+msgstr "URL '$URL$' pole korrektne. Ühendust ei saa luua."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
 msgid  "The driver class '$classname$' could not be loaded."
-msgstr ""
+msgstr "Draiveriklassi '$classname$' ei suudetud laadida."
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
 msgid  "No Java installation could be found. Please check your installation."
-msgstr ""
+msgstr "Java paigaldust ei leitud. Palun kontrolli oma paigaldust."
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
 msgid  "The execution of the query doesn't return a valid result set."
-msgstr ""
+msgstr "Päringu tulemusena ei tagastatud sobivat tulemite hulka."
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
 msgid  "The execution of the update statement doesn't effect any rows."
-msgstr ""
+msgstr "Uuendamise lause käivitamine ei mõjuta ühtki rida."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
 msgid  "The additional driver class path is '$classpath$'."
-msgstr ""
+msgstr "Täiendava draiveriklassi asukoht on '$classpath$'."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
 msgid  "The type of parameter at position '$position$' is unknown."
-msgstr ""
+msgstr "Parameetri tüüp asukohas '$position$' on tundmatu."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
 msgid  "The type of column at position '$position$' is unknown."
-msgstr ""
+msgstr "Veeru tüüp asukohas '$position$' on tundmatu."
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
 msgid  "No suitable KDE installation was found."
-msgstr ""
+msgstr "Ühtki sobivat KDE paigaldust ei leitud."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "KDE aadressiraamatule ligipääsuks on vajalik KDE versioon $major$.$minor$ või uuem."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Leitud KDE versioon on liiga uus. Ainult KDE kuni versioonini $major$.$minor$ töötab kindlasti selle tootega.\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Kui oled kindel, et sinu KDE versioon töötab, võid versiooni kontrollimise keelamiseks käivitada järgmise BASICu makro:\n\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
 msgid  "Parameters can appear only in prepared statements."
-msgstr ""
+msgstr "Ainult ettevalmistatud laused saavad sisaldada parameetreid."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
 msgid  "No such table!"
-msgstr ""
+msgstr "Sellist tabelit pole!"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
 msgid  "No suitable Mac OS installation was found."
-msgstr ""
+msgstr "Ühtki sobivat Mac OS-i paigaldust ei leitud."
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Andmebaasi faili '$filename$' ei suudetud luua. Palun kontrolli vaba kettaruumi."
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Andmebaasi '$databasename$' ei suudetud avada, kuna käsu '$progname$' käivitamine nurjus."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Aktiivne andmebaas vajab teisendamist. Sisesta põhikasutaja nimi ja parool."
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Kasutajat ei suudetud kustutada. Vastasel juhul jääks andmebaas puudulikuks."
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
 msgid  "The connection can not be established. No storage or URL was given."
-msgstr ""
+msgstr "Ühendust ei suudetud luua. Ühtki asukohta ega URL-i pole antud."
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Antud URL ei sisalda ühtki sobivat asukohta kohalikus failisüsteemis. Palun kontrolli oma andmebaasifaili asukohta."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
 msgid  "An error occured while obtaining the connection's table container."
-msgstr ""
+msgstr "Ühenduse teabeli konteineri hankimisel tekkis viga."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
 msgid  "An error occured while creating the table editor dialog."
-msgstr ""
+msgstr "Tabeli redigeerimise dialoogi loomisel tekkis viga."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid  "There is no table named '$tablename$'."
-msgstr ""
+msgstr "Ühtki tabelit nimega '$tablename$' pole."
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
 msgid  "The provided DocumentUI is not allowed to be NULL."
-msgstr ""
+msgstr "Pakutud DocumentUI ei tohi olla NULL."
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
 msgid  "The record operation has been vetoed."
-msgstr ""
+msgstr "Salvestamine on keelatud."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "Lause sisaldab ringviidet ühele või mitmele alampäringule."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
 msgid  "The name must not contain any slashes ('/')."
-msgstr ""
+msgstr "Nimi ei tohi sisaldada kaldkriipse ('/')."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 msgid  "$1$ is no SQL conform identifier."
-msgstr ""
+msgstr "$1$ pole SQL-ühilduv identifikaator."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
 msgid  "Query names must not contain quote characters."
-msgstr ""
+msgstr "Päringu nimi ei tohi sisaldada jutumärke ega ülakomasid."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
 msgid  "The name '$1$' is already in use in the database."
-msgstr ""
+msgstr "Nimi '$1$' on andmebaasis juba kasutusel."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
 msgid  "No connection to the database exists."
-msgstr ""
+msgstr "Ühendust selle andmebaasiga pole olemas."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
 msgid  "No $1$ exists."
-msgstr ""
+msgstr "$1$ pole olemas."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
+msgstr "Kogu tabeli sisu pole võimalik kuvada. Palun rakenda filter."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
 msgid  "Adabas D"
-msgstr ""
+msgstr "Adabas D"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "MySQL (JDBC)"
-msgstr ""
+msgstr "MySQL (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "MySQL (ODBC)"
-msgstr ""
+msgstr "MySQL (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
 msgid  "MySQL (Native)"
-msgstr ""
+msgstr "MySQL (tavaline)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Outlook Address Book"
-msgstr ""
+msgstr "Microsoft Outlook'i aadressiraamat"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Windows Address Book"
-msgstr ""
+msgstr "Microsoft Windows'i aadressiraamat"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 msgid  "SeaMonkey Address Book"
@@ -613,11 +614,11 @@ msgstr ""
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 msgid  "Thunderbird Address Book"
-msgstr ""
+msgstr "Thunderbird'i aadressiraamat"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 msgid  "LDAP Address Book"
-msgstr ""
+msgstr "LDAP aadressiraamat"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 msgid  "SeaMonkey Address Book"
@@ -625,15 +626,15 @@ msgstr ""
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 msgid  "Thunderbird Address Book"
-msgstr ""
+msgstr "Thunderbird'i aadressiraamat"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 msgid  "LDAP Address Book"
-msgstr ""
+msgstr "LDAP aadressiraamat"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 msgid  "HSQL database engine"
-msgstr ""
+msgstr "HSQL-i andmebaasimootor"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
 msgid  "Mac OS X Address Book"
@@ -641,60 +642,60 @@ msgstr ""
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 msgid  "Evolution LDAP"
-msgstr ""
+msgstr "Evolution'i LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 msgid  "Groupwise"
-msgstr ""
+msgstr "Groupwise"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "ODBC"
-msgstr ""
+msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
 msgid  "KDE Address Book"
-msgstr ""
+msgstr "KDE aadressiraamat"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
 msgid  "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "Arvutustabel"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "JDBC"
-msgstr ""
+msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
 msgid  "Oracle JDBC"
-msgstr ""
+msgstr "Oracle JDBC"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
 msgid  "dBASE"
-msgstr ""
+msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
 msgid  "Evolution Local"
-msgstr ""
+msgstr "Evolution'i kohalik"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 msgid  "Evolution LDAP"
-msgstr ""
+msgstr "Evolution'i LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 msgid  "Groupwise"
-msgstr ""
+msgstr "Groupwise"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 msgid  "ADO"
-msgstr ""
+msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Access"
-msgstr ""
+msgstr "Microsoft Access"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Access 2007"
-msgstr ""
+msgstr "Microsoft Access 2007"

@@ -33,572 +33,641 @@ msgstr ""
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Syntax error."
-msgstr ""
+msgstr "Ñe'ẽjoaju ojehai vai"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_GOSUB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Return without Gosub."
-msgstr ""
+msgstr "Jevy Gosub-ỹre"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_REDO_FROM_START_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect entry; please retry."
-msgstr ""
+msgstr "Reike vai, eha'ãjey"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ARGUMENT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid procedure call."
-msgstr ""
+msgstr "Ko tembiapo rape ñehenói ndoikói"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_MATH_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Overflow."
-msgstr ""
+msgstr "Henyhẽrasa"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_MEMORY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough memory."
-msgstr ""
+msgstr "Sa'i imemória."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ALREADY_DIM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array already dimensioned."
-msgstr ""
+msgstr "Ko matriz oñembohekóma"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_OUT_OF_RANGE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Index out of defined range."
-msgstr ""
+msgstr "Techaukaha opyta okápema"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DUPLICATE_DEF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Duplicate definition."
-msgstr ""
+msgstr "Ojo'áma he'iséva"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ZERODIV_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Division by zero."
-msgstr ""
+msgstr "Emboja'o cero-pe"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable not defined."
-msgstr ""
+msgstr "Iñambuepýva ne'ĩrãva oñedefini."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CONVERSION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data type mismatch."
-msgstr ""
+msgstr "Ko'ã marandu ojoavy ojuehegui. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid parameter."
-msgstr ""
+msgstr "Marandu ndovaléiva."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_USER_ABORT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Process interrupted by user."
-msgstr ""
+msgstr "Puruhára omombyta tembiapo."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RESUME_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Resume without error."
-msgstr ""
+msgstr "Emboguatajey jejavy'ỹre"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_STACK_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough stack memory."
-msgstr ""
+msgstr "Píla imemoria'íma."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub-procedure or function procedure not defined."
-msgstr ""
+msgstr "Tembiapo función rehegua térã hakã noñedefiníri."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading DLL file."
-msgstr ""
+msgstr "Ojejavy ojehupikuévo ñongatuha DLL. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_CALL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Wrong DLL call convention."
-msgstr ""
+msgstr "Ñehenói DLL convención oĩ vai."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INTERNAL_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Internal error $(ARG1)."
-msgstr ""
+msgstr "Ojejavy hyepýpe $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid file name or file number."
-msgstr ""
+msgstr "Ojejavy ñongatuha papapy térã héra."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File not found."
-msgstr ""
+msgstr "Ñongatuha ndojejuhúi. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_FILE_MODE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect file mode."
-msgstr ""
+msgstr "Ojejavy ñongatuha módo."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_ALREADY_OPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already open."
-msgstr ""
+msgstr "Ñongatuha ojepe'áma."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_IO_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device I/O error."
-msgstr ""
+msgstr "Ojejavy E/S dispositivo rehegua."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_EXISTS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already exists."
-msgstr ""
+msgstr "Ko ñongatuha oĩma."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_LENGTH_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record length."
-msgstr ""
+msgstr "Ojejavy registro pukukuépe."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DISK_FULL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Disk or hard drive full."
-msgstr ""
+msgstr "Henyhẽ Disco Duro."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_READ_PAST_EOF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Reading exceeds EOF."
-msgstr ""
+msgstr "Imoñe'ẽ ohasáma pe EOF."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record number."
-msgstr ""
+msgstr "Ojejavy registro papapy."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_TOO_MANY_FILES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many files."
-msgstr ""
+msgstr "Hetaiterei ñongatuháma."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_DEVICE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device not available."
-msgstr ""
+msgstr "Ko dispositivo ndojepurukuaái."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_DENIED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Access denied."
-msgstr ""
+msgstr "Ápe ndaikatúi reike."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_READY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Disk not ready."
-msgstr ""
+msgstr "Ko disco ndoñembosako'íri."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IMPLEMENTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not implemented."
-msgstr ""
+msgstr "Noñemoingéi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DIFFERENT_DRIVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Renaming on different drives impossible."
-msgstr ""
+msgstr "Heta unidades-pe ndaikatúi oñemoambue téra."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path/File access error."
-msgstr ""
+msgstr "Ojejavy ojeike haĝua ñongatuhápe ỹramo hape. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PATH_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path not found."
-msgstr ""
+msgstr "Ndojejuhúi tape."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object variable not set."
-msgstr ""
+msgstr "Mba'e iñambuepýva ne'ĩrã oñemohenda."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PATTERN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid string pattern."
-msgstr ""
+msgstr "Taikuéra joaju rechaukapyrã ndovaléi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_IS_NULL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Use of zero not permitted."
-msgstr ""
+msgstr "Ndaikatúi ojepuru cero."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE Error."
-msgstr ""
+msgstr "Ojejavy DDE."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_WAITINGACK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Awaiting response to DDE connection."
-msgstr ""
+msgstr "Oñeha'arõ mbohovái oiko haĝua jejoaju DDE."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_OUTOFCHANNELS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "No DDE channels available."
-msgstr ""
+msgstr "Ndapóri kanál DDE ojepurukuaáva."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_RESPONSE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "No application responded to DDE connect initiation."
-msgstr ""
+msgstr "Ndaipóri aplicación ombohováiva joaju DDE oñepyrũva'ekue."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_MULT_RESPONSES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many applications responded to DDE connect initiation."
-msgstr ""
+msgstr "Hetaiterei aplicación ombohovái joaju DDE oñepyrũva'ekue."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_CHANNEL_LOCKED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE channel locked."
-msgstr ""
+msgstr "Kanál DDE oñemboty pa'ã."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NOTPROCESSED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application cannot execute DDE operation."
-msgstr ""
+msgstr "Aplicación okapegua ndaikatúi omboguatávo DDE rembiapo."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_TIMEOUT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Timeout while waiting for DDE response."
-msgstr ""
+msgstr "Ohasáva aravo oñeha'arõ aja DDE mbohovái."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_USER_INTERRUPT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "User pressed ESCAPE during DDE operation."
-msgstr ""
+msgstr "Puruháha ojopy ESC omba'apo aja DDE."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_BUSY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application busy."
-msgstr ""
+msgstr "Aplicación okapegua hembiapohína."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_DATA_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE operation without data."
-msgstr ""
+msgstr "DDE ombo'apo marandu'ỹre. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_WRONG_DATA_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data are in wrong format."
-msgstr ""
+msgstr "Marandu lája oĩ vai."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_PARTNER_QUIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application has been terminated."
-msgstr ""
+msgstr "Oñemboty aplicación okapegua."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_CONV_CLOSED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE connection interrupted or modified."
-msgstr ""
+msgstr "Oso térã oñemoambue joaju DDE."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE method invoked with no channel open."
-msgstr ""
+msgstr "Oñehenói método DDE kanál abierto ỹrehe. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_INVALID_LINK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid DDE link format."
-msgstr ""
+msgstr "DDE joajuha lája ndovaléi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_QUEUE_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE message has been lost."
-msgstr ""
+msgstr "Okañy marandu DDE."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_ALREADY_EST_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Paste link already performed."
-msgstr ""
+msgstr "Emboja joajuha oñemboguatámava."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_INV_TOPIC_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr ""
+msgstr "Ndaikatúi ojehupytýi joaju lája oĩgui joajuha ndovaléiva.  "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_DLL_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE requires the DDEML.DLL file."
-msgstr ""
+msgstr "DDE oikotevẽ ñongatuha DDEML.DLL"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CANNOT_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Module cannot be loaded; invalid format."
-msgstr ""
+msgstr "Ndaikatúi ojehupi vore: teko ndovaléi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_INDEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object index."
-msgstr ""
+msgstr "Mba'e rysýi ndovaléi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_ACTIVE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object is not available."
-msgstr ""
+msgstr "Mba'e noĩri ojejepuru haĝuáicha."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PROP_VALUE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect property value."
-msgstr ""
+msgstr "Heko repy ndovaléi"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROP_READONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is read-only."
-msgstr ""
+msgstr "Ko teko oñemoñe'ẽ haĝuánte."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROP_WRITEONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is write only."
-msgstr ""
+msgstr "Ko teko ojehai haĝuánte."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INVALID_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object reference."
-msgstr ""
+msgstr "Referencia mba'e rehegua ndovaléi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Property or method not found: $(ARG1)."
-msgstr ""
+msgstr "Ndojejuhúi teko térã método."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NEEDS_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Object required."
-msgstr ""
+msgstr "Mba'e tekotevẽva."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INVALID_USAGE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Invalid use of an object."
-msgstr ""
+msgstr "Ko mba'e jepuru ndoikói."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_OLE_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "OLE Automation is not supported by this object."
-msgstr ""
+msgstr "Ko mba'e ndojukupytýi OLE oku'e ijeheguíva rehe"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "This property or method is not supported by the object."
-msgstr ""
+msgstr "Ko mba'e ndojukupytýi método térã teko rehe."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_OLE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "OLE Automation Error."
-msgstr ""
+msgstr "Ojejavy OLE oku'évo ijehegui."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ACTION_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "This action is not supported by given object."
-msgstr ""
+msgstr "Ko mba'e ojeporavóva ndaikatúi ojeporu péicha."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_NAMED_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Named arguments are not supported by given object."
-msgstr ""
+msgstr "Ko mba'e ojeporavóva ndojukupytýi argumento oñehenóiva rehe."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_LOCALE_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "The current locale setting is not supported by the given object."
-msgstr ""
+msgstr "Ko mba'e ojeporavóva ndojukupytýi ñemboheko ko'apegua rehe."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NAMED_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Named argument not found."
-msgstr ""
+msgstr "Ndojejuhúi argumento oñehenóiva."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_OPTIONAL_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Argument is not optional."
-msgstr ""
+msgstr "Ko argumento ndaha'éi iporavopyrã."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_WRONG_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Invalid number of arguments."
-msgstr ""
+msgstr "Argumento papapy ndovaléi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_A_COLL_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Object is not a list."
-msgstr ""
+msgstr "ko mba'e ndaha'éi tysýi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ORDINAL_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Invalid ordinal number."
-msgstr ""
+msgstr "Papapy mohendáva ndovaléi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DLLPROC_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Specified DLL function not found."
-msgstr ""
+msgstr "Ndojejuhúi función DLL ojejeruréva."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CLIPBD_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Invalid clipboard format."
-msgstr ""
+msgstr "Yty ryru reko ndovaléi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROPERTY_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Object does not have this property."
-msgstr ""
+msgstr "Ko mba'e ndahekói kóicha."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_METHOD_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Object does not have this method."
-msgstr ""
+msgstr "Ko mba'e ndorekói ko método."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ARG_MISSING_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Required argument lacking."
-msgstr ""
-
-#: classes/sb.src#RID_BASIC_START.SBERR_BAD_NUMBER_OF_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Invalid number of arguments."
-msgstr ""
+msgstr "Tekotevẽ argumento."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_METHOD_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Error executing a method."
-msgstr ""
+msgstr "Ojejavy oñemboguatávo método. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Unable to set property."
-msgstr ""
+msgstr "Ndaikatúi oñemboheko. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_GETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Unable to determine property."
-msgstr ""
+msgstr "Ndaikatúi ojejuhu teko."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNEXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Unexpected symbol: $(ARG1)."
-msgstr ""
+msgstr "Símbolo noñeha'arõiva: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Expected: $(ARG1)."
-msgstr ""
+msgstr "Oñeha'arõva: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SYMBOL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Symbol expected."
-msgstr ""
+msgstr "Símbolo oñeha'arõva."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Variable expected."
-msgstr ""
+msgstr "Iñambuepy oñeha'arõva."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LABEL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Label expected."
-msgstr ""
+msgstr "Téra oñeha'arõva."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LVALUE_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Value cannot be applied."
-msgstr ""
+msgstr "Ndaikatúi ojepuru tepy."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Variable $(ARG1) already defined."
-msgstr ""
+msgstr "Iñambuepy $(ARG1) oĩma."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr ""
+msgstr "Función $(ARG1) rembiapo rape térã hakã'i oĩma. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LABEL_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Label $(ARG1) already defined."
-msgstr ""
+msgstr "Téra $(ARG1) oĩma."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_VAR_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Variable $(ARG1) not found."
-msgstr ""
+msgstr "Ndojejuhúi iñambuepy $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_ARRAY_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Array or procedure $(ARG1) not found."
-msgstr ""
+msgstr "Ndojejuhúi $(ARG1) matriz térã hembipo rape. "
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_PROC_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Procedure $(ARG1) not found."
-msgstr ""
+msgstr "Ndojejuhúi $(ARG1) rembiapo rape."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_LABEL_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Label $(ARG1) undefined."
-msgstr ""
+msgstr "Téra $(ARG1) noĩri gueteri."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_TYPE_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Unknown data type $(ARG1)."
-msgstr ""
+msgstr "Ndojekuaái marandu $(ARG1) rehegua."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_EXIT_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Exit $(ARG1) expected."
-msgstr ""
+msgstr "Oñeha'arõkuri osẽ $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BLOCK_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Statement block still open: $(ARG1) missing."
-msgstr ""
+msgstr "Tembiapoukapy oñemboty'atãva oĩ gueteri: ndaipóri $(ARG1)"
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BRACKETS_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Parentheses do not match."
-msgstr ""
+msgstr "Rokái ndojukupytýi ojuehe."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DECLARATION_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Symbol $(ARG1) already defined differently."
-msgstr ""
+msgstr "Símbolo $(ARG1) oñembohekóma ambue hendáicha."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETERS_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Parameters do not correspond to procedure."
-msgstr ""
+msgstr "Parámetro-kuéra ndojojái tembiapo rape rehe."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHAR_IN_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Invalid character in number."
-msgstr ""
+msgstr "Tai ndovaléi papapýpe."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_MUST_HAVE_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Array must be dimensioned."
-msgstr ""
+msgstr "Oñekotevẽ matriz tuichakue."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_IF_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Else/Endif without If."
-msgstr ""
+msgstr "Else/Endif If'ỹrehe."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_SUBR_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "$(ARG1) not allowed within a procedure."
-msgstr ""
+msgstr "$(ARG1) ndaikatúi oikévo tembiapo rapépe."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_MAIN_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "$(ARG1) not allowed outside a procedure."
-msgstr ""
+msgstr "$(ARG1) ndaikatúi osẽvo tembiapo rapégui."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_WRONG_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Dimension specifications do not match."
-msgstr ""
+msgstr "Marandu tuichakue rehegua ndojojái."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_OPTION_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Unknown option: $(ARG1)."
-msgstr ""
+msgstr "Poravopyrã ndojekuaáiva: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CONSTANT_REDECLARED_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Constant $(ARG1) redefined."
-msgstr ""
+msgstr "$(ARG1) akoigua oñembokehojey."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROG_TOO_LARGE_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Program too large."
-msgstr ""
+msgstr "Ko programa tuichaiterei."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_STRINGS_ARRAYS_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Strings or arrays not permitted."
-msgstr ""
+msgstr "Ndaikatúi ojepuru matriz térã tai joaju."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "An exception occurred $(ARG1)."
-msgstr ""
+msgstr "Oiko $(ARG1) excepción."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "This array is fixed or temporarily locked."
-msgstr ""
+msgstr "Ko ñemyatyrõ opytaitéma péicha terã ojejoko sapy'a."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Out of string space."
-msgstr ""
+msgstr "Ndaipóri pa'ũ joajúpe."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Expression Too Complex."
-msgstr ""
+msgstr "Ko ñe'ẽ ijetu'ueterei."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Can't perform requested operation."
-msgstr ""
+msgstr "Ndaikatúi ojejapo tembiapo ojejeruréva."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Too many DLL application clients."
-msgstr ""
+msgstr "Hetaiterei aplicación cliente DLL rehegua."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "For loop not initialized."
-msgstr ""
+msgstr "For loop noñepyrũi gueteri."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1)"
 msgstr ""
 
 #: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
+#, fuzzy
 msgid  "The macro running has been interrupted"
-msgstr ""
+msgstr "Ojejoko macro oku'éva."
 
 #: classes/sb.src#IDS_SBERR_STOREREF.STRING.TEXT
+#, fuzzy
 msgid  "Reference will not be saved: "
-msgstr ""
+msgstr "Noñeñongatumo'ãi referencia:"
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBLOAD_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Error loading library '$(ARG1)'."
-msgstr ""
+msgstr "Ojejavy ojehupívo arandukaty '$(ARG1)'."
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Error saving library: '$(ARG1)'."
-msgstr ""
+msgstr "Ojejavy oñeñongatúvo arandukaty '$(ARG1)'."
 
 #: classes/sb.src#ERRCODE_BASMGR_MGROPEN_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr ""
+msgstr "Ndaikatúi oñemoñepyrũ BASIC ñongatuha '$(ARG1)' guive."
 
 #: classes/sb.src#ERRCODE_BASMGR_MGRSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Error saving BASIC: '$(ARG1)'."
-msgstr ""
+msgstr "Ojejavy oñeñongtúvo BASIC: '$(ARG1)'."
 
 #: classes/sb.src#ERRCODE_BASMGR_REMOVELIB_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "Error removing library."
-msgstr ""
+msgstr "Ojejavy oñemboguévo arandukaty."
 
 #: classes/sb.src#ERRCODE_BASMGR_UNLOADLIB_&_ERRCODE_RES_MASK.STRING.TEXT
+#, fuzzy
 msgid  "The library could not be removed from memory."
-msgstr ""
+msgstr "Ndaikatúi ombogue arandukaty memóriagui. "
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_ON.STRING.TEXT
+#, fuzzy
 msgid  "On"
-msgstr ""
+msgstr "Hendy"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_OFF.STRING.TEXT
+#, fuzzy
 msgid  "Off"
-msgstr ""
+msgstr "Ogue"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_TRUE.STRING.TEXT
+#, fuzzy
 msgid  "True"
-msgstr ""
+msgstr "Añete"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_FALSE.STRING.TEXT
+#, fuzzy
 msgid  "False"
-msgstr ""
+msgstr "Japu"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_YES.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "Hêe"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_NO.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "No"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.STRING.TEXT
+#, fuzzy
 msgid  "@0.00 $;@(0.00 $)"
-msgstr ""
+msgstr "@0 G; @(0 G)"

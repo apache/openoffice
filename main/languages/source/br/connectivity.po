@@ -49,43 +49,43 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "N'haller ket krouiñ taolennoù evit ar seurt karned chomlec'hioù-se."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "N'haller ket krouiñ ur c'harned chomlec'hioù nevez p'emañ Mozilla o treiñ."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "N'hall ket bezañ kavet un enank eus al levr chomlec'hioù, degouezhet eo ur fazi dianav."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "N'hall ket bezañ kavet anv kavlec'h eus al levr chomlec'hioù, degouezhet eo ur fazi dianav."
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
 msgid  "Timed out while waiting for the result."
-msgstr ""
+msgstr "Diamezeret eo bet an argerz a oa o c'hortoz an disoc'h."
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
 msgid  "An error occurred while executing the query."
-msgstr ""
+msgstr "Degouezhet eo ur fazi en ur erounit an azgoulenn."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "N'hallit ket cheñch ar c'harned chomlec'hioù mozilla p'emañ Mozilla o treiñ."
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Kemmet eo bet ar C'harned Chomlec'hioù Mozilla e-maez eus an argerz-se, n'haller ket e gemmañ mod'se."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
 msgid  "Can't find the requested row."
-msgstr ""
+msgstr "N'haller ket kavout ar bann azgoulennet."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
 msgid  "Can't find the card for the requested row."
-msgstr ""
+msgstr "N'haller ket kavout ar gartenn evit ar bann azgoulennet."
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It needs at least one table."
@@ -149,15 +149,15 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
 msgid  "No hostname was provided."
-msgstr ""
+msgstr "Anv dafariad roet ebet."
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
 msgid  "No Base DN was provided."
-msgstr ""
+msgstr "Base DN roet ebet."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
 msgid  "The connection to the LDAP server could not be established."
-msgstr ""
+msgstr "N'hall ket bezañ kaset a-benn ar c'hennaskañ ouzh an dafariad LDAP."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
@@ -217,15 +217,15 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "Tremen a ra ment an hedad '$string$' dreist ar vent uhelañ posubl a zo $maxlen$ arouezenn p'eo bet troet gant ar bodad arouezennoù bukenn '$charset$'."
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Ne vez ket amdroet an hedad '$string$' en ur arverañ an enrineger '$charset$'."
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
-msgstr ""
+msgstr "Direizh eo an URL kennaskañ."
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. It is too complex."
@@ -269,11 +269,11 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be loaded."
-msgstr ""
+msgstr "Ar restr $filename$ n'eo ket evit bezañ pellgarget."
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Ar c'hlask da bellgargañ ar restr zo diskouezet er gemennadenn fazi da heul ($exception_type$):\n\n$error_message$"
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
 msgid  "The type could not be converted."
@@ -549,27 +549,27 @@ msgstr ""
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
 msgid  "The record operation has been vetoed."
-msgstr ""
+msgstr "Nac'het eo bet an enrolladur."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "Bez ez eus gant ar reolenn un dave kelc'hiek davet unan pe meur a azgoulenn."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
 msgid  "The name must not contain any slashes ('/')."
-msgstr ""
+msgstr "Beskell ebet gant an anv ('/')."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 msgid  "$1$ is no SQL conform identifier."
-msgstr ""
+msgstr "$1$ n'eo ket un naoudi SQL kenfurm."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
 msgid  "Query names must not contain quote characters."
-msgstr ""
+msgstr "Difennet eo ar skrapigoù e-barzh anvioù ar goulennenoù."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
 msgid  "The name '$1$' is already in use in the database."
-msgstr ""
+msgstr "Arveret eo an anv '$1$' er stlennvon endeo."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
 msgid  "No connection to the database exists."

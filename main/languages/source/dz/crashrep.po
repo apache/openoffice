@@ -33,176 +33,128 @@ msgstr ""
 
 #: all/crashrep.ulf#_WELCOME_CAPTION_
 msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr ""
+msgstr "སྙན་ཞུ་འཛོལ་བ།"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr ""
-
-#: all/crashrep.ulf#_WELCOME_BODY1_
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
-msgstr ""
-
-#: all/crashrep.ulf#_WELCOME_BODY2_
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
-
-#: all/crashrep.ulf#_WELCOME_BODY3_
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
-msgstr ""
-
-#: all/crashrep.ulf#_PRIVACY_URL_
-msgid  "http://www.openoffice.org/privacy.html"
-msgstr ""
+msgstr "%PRODUCTNAME% %PRODUCTVERSION%  སྙན་ཞུ་འཛོལ་བ་ལུ་འབྱོན་པ་ལེགས་སོ།"
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
 msgid  "~Next >>"
-msgstr ""
+msgstr "གཞན་མི།>>(~N)"
 
 #: all/crashrep.ulf#_CANCEL_BUTTON_
 msgid  "Cancel"
-msgstr ""
+msgstr "ཆ་མེད་གཏང་།"
 
 #: all/crashrep.ulf#_OK_BUTTON_
 msgid  "OK"
-msgstr ""
-
-#: all/crashrep.ulf#_REPORT_CAPTION_
-msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr ""
+msgstr "བཏུབ།"
 
 #: all/crashrep.ulf#_REPORT_HEADER_
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
-msgstr ""
-
-#: all/crashrep.ulf#_REPORT_BODY_
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
-msgstr ""
+msgstr " %PRODUCTNAME% %PRODUCTVERSION%ལཱ་གཡོག་བཀོལ་བའི་བསྒང་ལུ་ འཛོལ་བ་ཅིག་བྱུང་ནུག"
 
 #: all/crashrep.ulf#_ENTER_TITLE_
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
-
-#: all/crashrep.ulf#_ALLOW_CONTACT_
-msgid  "~I allow Apache OpenOffice to contact me regarding this report."
-msgstr ""
+msgstr "འཛོལ་བ་འདི་བྱུང་བའི་སྐབས་ལུ་ ཁྱོད་ཀྱིས་ཡིག་ཆའི་དབྱེ་བ་ག་ཅི་བཟུམ་ཅིག་ལག་ལེན་འཐབ་ཅི? དཔེར་ན་ གསལ་སྟོན་བཟུམ།"
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
 msgid  "Please enter your e-mail address."
-msgstr ""
+msgstr "ཁྱོད་རའི་གློག་འཕྲིན་ཁ་བྱང་ཚུ་ བཙུགས།"
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr ""
+msgstr "འཛོལ་བ་འདི་བྱུང་བའི་སྐབས་ལུ་ ཁྱོད་ཀྱིས་ %PRODUCTNAME%འདི་ ལག་ལེན་ག་དེ་འབད་འཐབ་ཅི?(~H)"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
 msgid  " << ~Back"
-msgstr ""
+msgstr " <<རྒྱབ།(~B)"
 
 #: all/crashrep.ulf#_SEND_BUTTON_
 msgid  "S~end"
-msgstr ""
+msgstr "གཏང་།(~e)"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
 msgid  "Do ~Not Send"
-msgstr ""
+msgstr "མ་གཏང་།(~N)"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
 msgid  "Show ~Report..."
-msgstr ""
+msgstr "སྙན་ཞུ་སྟོན་་་(~R)"
 
 #: all/crashrep.ulf#_SAVE_REPORT_BUTTON_
 msgid  "~Save Report..."
-msgstr ""
+msgstr "སྙན་ཞུ་ སྲུང་བཞག་འབད་་་(~S)"
 
 #: all/crashrep.ulf#_SAVE_REPORT_TITLE_
 msgid  "Save Report to"
-msgstr ""
-
-#: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "ལུ་ སྙན་ཞུ་སྲུང་བཞག་འབད།"
 
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
-
-#: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "སྙན་ཞུ་འཛོལ་བ་འདི་ གནས་སྐབས་ཅིག་སྲུང་མ་ཚུགསཔ་དང་ དེ་འབདཝ་ལས་བཏང་མ་ཚུགས།"
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "སྙན་ཞུ་འཛོལ་བ་འདི་བཏང་མ་ཚུགས། སྙན་ཞུ་ལག་ཆས་ཀྱི་འཛོལ་བ་ནང་ 'གདམ་ཁ་ཚུ' གི་འོག་ལུ་ཡོད་པའི་ པོརོག་སི་སྒྲིག་སྟངས་ཚུ་ཞིབ་དཔྱད་འབད་གནང་།"
 
 #: all/crashrep.ulf#_ERROR_MSG_NOCONNECT_
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "སྙན་ཞུ་འཛོལ་བ་འདི་བཏང་མ་ཚུགས་ ག་ཅི་འབད་ཟེར་བ་ཅིན་ ཨིན་ཊར་ནེཊི་གི་མཐུད་ལམ་མིན་འདུག ཁྱོད་རའི་ཨིན་ཊར་ནེཊི་སྒྲིག་སྟངས་ཚུ་ཞིབ་དཔྱད་འབད་གནང་།"
 
 #: all/crashrep.ulf#_OPTIONS_BUTTON_
 msgid  "~Options..."
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ་་་(~O)"
 
 #: all/crashrep.ulf#_OPTIONS_TITLE_
 msgid  "Options"
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ།"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_HEADER_
 msgid  "Proxy settings"
-msgstr ""
+msgstr "པོརོག་སི་ སྒྲིག་སྟངས་ཚུ།"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_SYSTEM_
 msgid  "Use ~system settings"
-msgstr ""
+msgstr "རིམ་ལུགས་སྒྲིག་སྟངས་ཚུ་ ལག་ལེན་འཐབ།(~s)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DIRECT_
 msgid  "Use ~direct connection to the Internet"
-msgstr ""
+msgstr "ཨིན་ཊར་ནེཊི་ལུ་ ཐད་ཀར་གྱི་མཐུད་ལམ་ ལག་ལེན་འཐབ།(~d)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_MANUAL_
 msgid  "Use ~manual settings"
-msgstr ""
+msgstr "ལག་དེབ་སྒྲིག་སྟངས་ཚུ་ལག་ལེན་འཐབ།(~m)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_ADDRESS_
 msgid  "HT~TP Proxy"
-msgstr ""
+msgstr "ཨེཅི་ཊི་ཊི་པི་ པོརོག་སི།(~T)"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_PORT_
 msgid  "~Port"
-msgstr ""
-
-#: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "འདྲེན་ལམ།(~P)"
 
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
 msgid  "Sending Error Report"
-msgstr ""
+msgstr "སྙན་ཞུ་འཛོལ་བ་འདི་ གཏང་དོ།"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_
 msgid  "Status: Sending error report"
-msgstr ""
+msgstr "གནས་ཚད་: སྙན་ཞུ་འཛོལ་བ་འདི་ གཏང་དོ།"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_
 msgid  "Status: The error report has been sent successfully."
-msgstr ""
-
-#: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
-msgstr ""
+msgstr "གནས་ཚད་:སྙན་ཞུ་འཛོལ་བ་འདི་ མཐར་འཁྱོལ་སྦེ་བཏང་ཡི།"
 
 #: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
 msgid  "Usage:"
-msgstr ""
+msgstr "ལག་ལེན་:"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
 msgid  "-p <process ID>"
-msgstr ""
+msgstr "-པི་ <ལས་སྦྱོར་ ཨའི་ཌི་>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
-
-#: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "སྙན་ཞུ་ལག་ཆས་ཀྱི་འཛོལ་བ་ལུ་ %ཐོན་སྐྱེད་མིང་% ལས་སྦྱོར་ ཨའི་ཌི་ (པི་ཨའི་ཌི་) འགན་སྤྲོད་འབདཝ་ཨིན།"

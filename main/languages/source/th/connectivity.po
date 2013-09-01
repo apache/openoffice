@@ -33,59 +33,59 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.STRING.TEXT
 msgid  "Mozilla/Seamonkey Addressbook Directory"
-msgstr ""
+msgstr "สมุดที่อยู่ของ Mozilla/Seamonkey"
 
 #: resource/conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.STRING.TEXT
 msgid  "Thunderbird Addressbook Directory"
-msgstr ""
+msgstr "สมุดที่อยู่ของ Thunderbird"
 
 #: resource/conn_shared_res.src#STR_OE_ADDRESSBOOK.STRING.TEXT
 msgid  "Outlook Express Addressbook"
-msgstr ""
+msgstr "สมุดที่อยู่ของ Outlook Express"
 
 #: resource/conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.STRING.TEXT
 msgid  "Outlook (MAPI) Addressbook"
-msgstr ""
+msgstr "สมุดที่อยู่ของ Outlook (MAPI)"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "ไม่สนับสนุนการสร้างตารางกับชนิดของสมุดที่อยู่นี้"
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "ไม่สามารถสร้างสมุดที่อยู่ใหม่ขณะที่ Mozilla กำลังทำงาน"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ไม่สามารถค้นคืนรายการสมุดที่อยู่ เกิดข้อผิดพลาดไม่ทราบสาเหตุ"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ไม่สามารถค้นคืนชื่อไดเรกทอรีสมุดที่อยู่ เกิดข้อผิดพลาดไม่ทราบสาเหตุ"
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
 msgid  "Timed out while waiting for the result."
-msgstr ""
+msgstr "หมดเวลาในระหว่างกำลังรอผล"
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
 msgid  "An error occurred while executing the query."
-msgstr ""
+msgstr "เกิดข้อผิดพลาดขณะทำการค้นหา"
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "คุณไม่สามารถทำการเปลี่ยนแปลงใดๆ กับสมุดที่อยู่ mozilla ขณะที่ mozilla กำลังทำงาน"
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "สมุดที่อยู่ Mozilla มี การ เปลี่ยนแปลง จากกระบวนการนี้เราจะไม่สามารถแก้ไขใน สภาพนี้."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
 msgid  "Can't find the requested row."
-msgstr ""
+msgstr "ไม่สามารถหาแถวที่ต้องการ"
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
 msgid  "Can't find the card for the requested row."
-msgstr ""
+msgstr "Can't find the card for the requested row."
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It needs at least one table."
@@ -149,15 +149,15 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
 msgid  "No hostname was provided."
-msgstr ""
+msgstr "No hostname was provided."
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
 msgid  "No Base DN was provided."
-msgstr ""
+msgstr "No Base DN was provided."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
 msgid  "The connection to the LDAP server could not be established."
-msgstr ""
+msgstr "The connection to the LDAP server could not be established."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
@@ -217,15 +217,15 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "The string '$string$' cannot be converted using the encoding '$charset'."
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
-msgstr ""
+msgstr "The connection URL is invalid."
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. It is too complex."

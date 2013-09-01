@@ -69,7 +69,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
 msgid  "An error occurred while executing the query."
-msgstr ""
+msgstr "Një gabim është shfaqur derisa ruhej publikimi."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
@@ -81,7 +81,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
 msgid  "Can't find the requested row."
-msgstr ""
+msgstr "~Gjej automatikisht emërtimet e shtyllave dhe rreshtave"
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
 msgid  "Can't find the card for the requested row."
@@ -109,7 +109,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
 msgid  "The library '$libname$' could not be loaded."
-msgstr ""
+msgstr "Dokumenti nuk mund të ngarkohet tërësisht"
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
 msgid  "An error occured while refreshing the current row."
@@ -145,11 +145,11 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.STRING.TEXT
 msgid  "The current row can not be saved."
-msgstr ""
+msgstr "Konfigurimi i paraqitjes së ikonës nuk mund të ruhet."
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
 msgid  "No hostname was provided."
-msgstr ""
+msgstr "Nuk u zgjodh asnjë rrjet pasqyrë."
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
 msgid  "No Base DN was provided."
@@ -157,7 +157,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
 msgid  "The connection to the LDAP server could not be established."
-msgstr ""
+msgstr "Lidhja e tabelës për burimin e të dhënave nuk mund të ngritet."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
@@ -181,7 +181,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_BOOKMARK.STRING.TEXT
 msgid  "Invalid bookmark value"
-msgstr ""
+msgstr "Vlera e pavlefshme e cakut."
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.STRING.TEXT
 msgid  "Privilege not granted: Only table privileges can be granted."
@@ -193,15 +193,15 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.STRING.TEXT
 msgid  "The column name '$columnname$' is unknown."
-msgstr ""
+msgstr "Kolona \"#\" është e panjohur në tabelën \"#\"!"
 
 #: resource/conn_shared_res.src#STR_ERRORMSG_SEQUENCE.STRING.TEXT
 msgid  "Function sequence error."
-msgstr ""
+msgstr "E kthen funksionin me gabim"
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX.STRING.TEXT
 msgid  "Invalid descriptor index."
-msgstr ""
+msgstr "Indeksi i objektit është i pavlefshëm"
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.STRING.TEXT
 msgid  "The driver does not support the function '$functionname$'."
@@ -225,7 +225,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
-msgstr ""
+msgstr "Fjalëkalimi i vendosur është i gabim."
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. It is too complex."
@@ -257,7 +257,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.STRING.TEXT
 msgid  "The column name '$columnname$' is not valid."
-msgstr ""
+msgstr "[2] nuk është ëmër i shkurtë i vlefshëm i fajllit."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.STRING.TEXT
 msgid  "The statement contains an invalid selection of columns."
@@ -269,7 +269,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be loaded."
-msgstr ""
+msgstr "Dokumenti nuk mund të ngarkohet tërësisht"
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
@@ -277,7 +277,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
 msgid  "The type could not be converted."
-msgstr ""
+msgstr "Metriku i shndwrruar nuk mund tw shkruhet."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not append column: invalid column descriptor."
@@ -345,7 +345,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be deleted."
-msgstr ""
+msgstr "Fajlli i specifikuar nuk mund të hapet"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
 msgid  "Invalid column type for column '$columnname$'."
@@ -365,7 +365,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
 msgid  "Duplicate value found in column '$columnname$'."
-msgstr ""
+msgstr "Vlera që duhet të gjindet në shtyllën e parë."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
@@ -393,7 +393,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
 msgid  "The table could not be altered."
-msgstr ""
+msgstr "Tabela nuk mund të futet."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
@@ -501,7 +501,7 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
 msgid  "No such table!"
-msgstr ""
+msgstr "Asnjë dispozitiv i tillë"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
 msgid  "No suitable Mac OS installation was found."
@@ -549,7 +549,7 @@ msgstr ""
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
 msgid  "The record operation has been vetoed."
-msgstr ""
+msgstr "Kopjimi ndaloi."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 msgid  "The statement contains a cyclic reference to one or more sub queries."
@@ -557,7 +557,7 @@ msgstr ""
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
 msgid  "The name must not contain any slashes ('/')."
-msgstr ""
+msgstr "Emri i tabelës nuk guxon të përmbajë hapësira."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 msgid  "$1$ is no SQL conform identifier."
@@ -569,7 +569,7 @@ msgstr ""
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
 msgid  "The name '$1$' is already in use in the database."
-msgstr ""
+msgstr "Emri tashmë është në përdorim."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
 msgid  "No connection to the database exists."
@@ -661,7 +661,7 @@ msgstr ""
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "Tabelë kalkuluese"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "JDBC"

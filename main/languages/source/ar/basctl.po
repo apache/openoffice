@@ -32,789 +32,900 @@ msgstr ""
 
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Print range"
-msgstr ""
+msgstr "نطاق الطباعة"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "All ~Pages"
-msgstr ""
+msgstr "جميع ~الصفحات"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Pa~ges"
-msgstr ""
+msgstr "الص~فحات"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
+#, fuzzy
 msgid  "<All>"
-msgstr ""
+msgstr "<الكل>"
 
 #: basicide/basidesh.src#RID_STR_NOMODULE.STRING.TEXT
+#, fuzzy
 msgid  "< No Module >"
-msgstr ""
+msgstr "< بدون وحدة نمطية >"
 
 #: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "Incorrect Password"
-msgstr ""
+msgstr "كلمة المرور غير صحيحة"
 
 #: basicide/basidesh.src#RID_STR_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "Load"
-msgstr ""
+msgstr "تحميل"
 
 #: basicide/basidesh.src#RID_STR_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr "حفظ"
 
 #: basicide/basidesh.src#RID_STR_SOURCETOBIG.STRING.TEXT
+#, fuzzy
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "النص الأصلي كبير جدًا ولا يمكن تحويله برمجيًا، أو حفظه.\nاحذف بعض التعليقات، أو انقل بعض الأساليب إلى وحدة نمطية أخرى."
 
 #: basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.STRING.TEXT
+#, fuzzy
 msgid  "Error opening file"
-msgstr ""
+msgstr "حدث خطأ أثناء فتح الملف"
 
 #: basicide/basidesh.src#RID_STR_ERROROPENLIB.STRING.TEXT
+#, fuzzy
 msgid  "Error loading library"
-msgstr ""
+msgstr "حدث خطأ أثناء تحميل المكتبة"
 
 #: basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.STRING.TEXT
+#, fuzzy
 msgid  "The file does not contain any BASIC libraries"
-msgstr ""
+msgstr "لا يحتوي الملف على أية مكتبات من النوع BASIC"
 
 #: basicide/basidesh.src#RID_STR_BADSBXNAME.STRING.TEXT
+#, fuzzy
 msgid  "Invalid Name"
-msgstr ""
+msgstr "الاسم غير صالح"
 
 #: basicide/basidesh.src#RID_STR_LIBNAMETOLONG.STRING.TEXT
+#, fuzzy
 msgid  "A library name can have up to 30 characters."
-msgstr ""
+msgstr "يجب ألا يزيد اسم المكتبة عن 30 حرفًا."
 
 #: basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.STRING.TEXT
+#, fuzzy
 msgid  "Macros from other documents are not accessible."
-msgstr ""
+msgstr "يتعذر الوصول إلى وحدات ماكرو من مستندات أخرى."
 
 #: basicide/basidesh.src#RID_STR_LIBISREADONLY.STRING.TEXT
+#, fuzzy
 msgid  "This library is read-only."
-msgstr ""
+msgstr "هذه المكتبة للقراءة فقط."
 
 #: basicide/basidesh.src#RID_STR_REPLACELIB.STRING.TEXT
+#, fuzzy
 msgid  "'XX' cannot be replaced."
-msgstr ""
+msgstr "لا يمكن استبدال 'XX'."
 
 #: basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.STRING.TEXT
+#, fuzzy
 msgid  "'XX' cannot be added."
-msgstr ""
+msgstr "لا يمكن إضافة 'XX'."
 
 #: basicide/basidesh.src#RID_STR_NOIMPORT.STRING.TEXT
+#, fuzzy
 msgid  "'XX' was not added."
-msgstr ""
+msgstr "لم تتم إضافة 'XX'."
 
 #: basicide/basidesh.src#RID_STR_ENTERPASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "Enter password for 'XX'"
-msgstr ""
+msgstr "أدخل كلمة المرور الخاصة بـ 'XX'"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.STRING.TEXT
+#, fuzzy
 msgid  "Name already exists"
-msgstr ""
+msgstr "هذا الاسم موجود بالفعل"
 
 #: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
+#, fuzzy
 msgid  "(Signed)"
-msgstr ""
+msgstr "(مُوقّع)"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
+#, fuzzy
 msgid  "Object with same name already exists"
-msgstr ""
+msgstr "يوجد بالفعل كائن يحمل نفس الاسم"
 
 #: basicide/basidesh.src#RID_STR_FILEEXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The 'XX' file already exists"
-msgstr ""
+msgstr "الملف 'XX' موجود بالفعل"
 
 #: basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.STRING.TEXT
+#, fuzzy
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "لأسباب تتعلق بالأمان، لا يمكنك تشغيل وحدة ماكرو هذه.\n\nلمزيد من المعلومات، تحقق من إعدادات الأمان."
 
 #: basicide/basidesh.src#RID_STR_COMPILEERROR.STRING.TEXT
+#, fuzzy
 msgid  "Compile Error: "
-msgstr ""
+msgstr "خطأ في التحويل البرمجي: "
 
 #: basicide/basidesh.src#RID_STR_RUNTIMEERROR.STRING.TEXT
+#, fuzzy
 msgid  "Runtime Error: #"
-msgstr ""
+msgstr "خطأ في وقت التشغيل: #"
 
 #: basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.STRING.TEXT
+#, fuzzy
 msgid  "Search key not found"
-msgstr ""
+msgstr "لم يتم العثور على مفتاح البحث"
 
 #: basicide/basidesh.src#RID_STR_SEARCHFROMSTART.STRING.TEXT
+#, fuzzy
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "اكتمل البحث حتى الوحدة النمطية الأخيرة. هل تريد متابعة البحث من الوحدة النمطية الأولى؟"
 
 #: basicide/basidesh.src#RID_STR_SEARCHREPLACES.STRING.TEXT
+#, fuzzy
 msgid  "Search key replaced XX times"
-msgstr ""
+msgstr "تم استبدال مفتاح البحث XX مرة (مرات)"
 
 #: basicide/basidesh.src#RID_STR_COULDNTREAD.STRING.TEXT
+#, fuzzy
 msgid  "The file could not be read"
-msgstr ""
+msgstr "تعذرت قراءة الملف"
 
 #: basicide/basidesh.src#RID_STR_COULDNTWRITE.STRING.TEXT
+#, fuzzy
 msgid  "The file could not be saved"
-msgstr ""
+msgstr "تعذر حفظ الملف"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.STRING.TEXT
+#, fuzzy
 msgid  "The name of the default library cannot be changed."
-msgstr ""
+msgstr "لا يمكن تغيير اسم المكتبة الافتراضية."
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.STRING.TEXT
+#, fuzzy
 msgid  "The name of a referenced library cannot be changed."
-msgstr ""
+msgstr "لا يمكن تغيير اسم المكتبة المرجعية."
 
 #: basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.STRING.TEXT
+#, fuzzy
 msgid  "The default library cannot be deactivated"
-msgstr ""
+msgstr "لا يمكن إلغاء تنشيط المكتبة الافتراضية"
 
 #: basicide/basidesh.src#RID_STR_GENERATESOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Generating source"
-msgstr ""
+msgstr "إنشاء مصدر"
 
 #: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
+#, fuzzy
 msgid  "File name:"
-msgstr ""
+msgstr "اسم الملف:"
 
 #: basicide/basidesh.src#RID_STR_APPENDLIBS.STRING.TEXT
+#, fuzzy
 msgid  "Import Libraries"
-msgstr ""
+msgstr "استيراد مكتبات"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMACRO.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the macro XX?"
-msgstr ""
+msgstr "هل تريد حذف وحدة الماكرو XX؟"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELDIALOG.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the XX dialog?"
-msgstr ""
+msgstr "هل تريد حذف مربع الحوار XX؟"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIB.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the XX library?"
-msgstr ""
+msgstr "هل تريد حذف المكتبة XX؟"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIBREF.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the reference to the XX library?"
-msgstr ""
+msgstr "هل تريد حذف المرجع إلى المكتبة XX؟"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMODULE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the XX module?"
-msgstr ""
+msgstr "هل تريد حذف الوحدة النمطية XX؟"
 
 #: basicide/basidesh.src#RID_STR_OBJNOTFOUND.STRING.TEXT
+#, fuzzy
 msgid  "Object or method not found"
-msgstr ""
+msgstr "لم يتم العثور على الكائن أو الأسلوب"
 
 #: basicide/basidesh.src#RID_STR_BASIC.STRING.TEXT
+#, fuzzy
 msgid  "BASIC"
-msgstr ""
+msgstr "BASIC"
 
 #: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
+#, fuzzy
 msgid  "Ln"
-msgstr ""
+msgstr "السطر"
 
 #: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Col"
-msgstr ""
+msgstr "العمود"
 
 #: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "المستند"
 
 #: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
+#, fuzzy
 msgid  "Macro Bar"
-msgstr ""
+msgstr "شريط ماكرو"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
+#, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
-msgstr ""
+msgstr "لا يمكن إغلاق الإطار أثناء تشغيل BASIC."
 
 #: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
+#, fuzzy
 msgid  "The default library cannot be replaced."
-msgstr ""
+msgstr "لا يمكن استبدال المكتبة الافتراضية."
 
 #: basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.STRING.TEXT
+#, fuzzy
 msgid  "Reference to 'XX' not possible."
-msgstr ""
+msgstr "تتعذر الإشارة إلى 'XX'."
 
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
+#, fuzzy
 msgid  "Watch"
-msgstr ""
+msgstr "مراقبة"
 
 #: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
+#, fuzzy
 msgid  "Variable"
-msgstr ""
+msgstr "المتغير"
 
 #: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "القيمة"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "النوع"
 
 #: basicide/basidesh.src#RID_STR_STACKNAME.STRING.TEXT
+#, fuzzy
 msgid  "Call Stack"
-msgstr ""
+msgstr "تكدس الاستدعاءات"
 
 #: basicide/basidesh.src#RID_STR_INITIDE.STRING.TEXT
+#, fuzzy
 msgid  "BASIC Initialization"
-msgstr ""
+msgstr "تهيئة BASIC"
 
 #: basicide/basidesh.src#RID_STR_STDMODULENAME.STRING.TEXT
+#, fuzzy
 msgid  "Module"
-msgstr ""
+msgstr "وحدة نمطية"
 
 #: basicide/basidesh.src#RID_STR_STDDIALOGNAME.STRING.TEXT
+#, fuzzy
 msgid  "Dialog"
-msgstr ""
+msgstr "مربع حوار"
 
 #: basicide/basidesh.src#RID_STR_STDLIBNAME.STRING.TEXT
+#, fuzzy
 msgid  "Library"
-msgstr ""
+msgstr "المكتبة"
 
 #: basicide/basidesh.src#RID_STR_NEWLIB.STRING.TEXT
+#, fuzzy
 msgid  "New Library"
-msgstr ""
+msgstr "مكتبة جديدة"
 
 #: basicide/basidesh.src#RID_STR_NEWMOD.STRING.TEXT
+#, fuzzy
 msgid  "New Module"
-msgstr ""
+msgstr "وحدة نمطية جديدة"
 
 #: basicide/basidesh.src#RID_STR_NEWDLG.STRING.TEXT
+#, fuzzy
 msgid  "New Dialog"
-msgstr ""
+msgstr "مربع حوار جديد"
 
 #: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All"
-msgstr ""
+msgstr "الكل"
 
 #: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Page"
-msgstr ""
+msgstr "الصفحة"
 
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
+#, fuzzy
 msgid  "A name must be entered."
-msgstr ""
+msgstr "يجب إدخال اسم."
 
 #: basicide/basidesh.src#RID_STR_WILLSTOPPRG.STRING.TEXT
+#, fuzzy
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "ستحتاج إلى إعادة تشغيل البرنامج بعد هذا التعديل.\nهل تريد المتابعة؟"
 
 #: basicide/basidesh.src#RID_STR_SEARCHALLMODULES.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to replace the text in all active modules?"
-msgstr ""
+msgstr "هل تريد استبدال النص في جميع الوحدات النمطية النشطة؟"
 
 #: basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.BUTTONIMAGE.QUICKHELPTEXT
+#, fuzzy
 msgid  "Remove Watch"
-msgstr ""
+msgstr "إزالة المراقبة:ب"
 
 #: basicide/basidesh.src#RID_STR_REMOVEWATCH.STRING.TEXT
+#, fuzzy
 msgid  "Watch:"
-msgstr ""
+msgstr "المراقبة:"
 
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
+#, fuzzy
 msgid  "Calls: "
-msgstr ""
+msgstr "الاستدعاءات: "
 
 #: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
+#, fuzzy
 msgid  "My Macros"
-msgstr ""
+msgstr "وحدات الماكرو"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
+#, fuzzy
 msgid  "My Dialogs"
-msgstr ""
+msgstr "مربعات الحوار"
 
 #: basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.STRING.TEXT
+#, fuzzy
 msgid  "My Macros & Dialogs"
-msgstr ""
+msgstr "وحدات الماكرو ومربعات الحوار"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Macros"
-msgstr ""
+msgstr "وحدات ماكرو %PRODUCTNAME"
 
 #: basicide/basidesh.src#RID_STR_SHAREDIALOGS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Dialogs"
-msgstr ""
+msgstr "مربعات حوار %PRODUCTNAME"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Macros & Dialogs"
-msgstr ""
+msgstr "وحدات ماكرو ومربعات حوار %PRODUCTNAME"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.MENU.TEXT
+#, fuzzy
 msgid  "Properties"
-msgstr ""
+msgstr "خصائص..."
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MENUITEM.TEXT
+#, fuzzy
 msgid  "Active"
-msgstr ""
+msgstr "نشط"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr "خصائص..."
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.MENU.TEXT
+#, fuzzy
 msgid  "Manage Breakpoints"
-msgstr ""
+msgstr "إدارة نقاط التوقف"
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "Manage Breakpoints..."
-msgstr ""
+msgstr "إدارة نقاط التوقف..."
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "إدراج"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MENUITEM.TEXT
+#, fuzzy
 msgid  "BASIC Module"
-msgstr ""
+msgstr "وحدة BASIC النمطية"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MENUITEM.TEXT
+#, fuzzy
 msgid  "BASIC Dialog"
-msgstr ""
+msgstr "مربع حوار BASIC"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rename"
-msgstr ""
+msgstr "إعادة تسمية"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Hide"
-msgstr ""
+msgstr "إخفاء"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "Modules..."
-msgstr ""
-
-#: basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
-msgstr ""
+msgstr "وحدات نمطية..."
 
 #: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to overwrite the XX macro?"
-msgstr ""
+msgstr "هل تريد استبدال ماكرو XX؟"
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
+#, fuzzy
 msgid  "<Not localized>"
-msgstr ""
+msgstr "<غير مترجم>"
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "[Default Language]"
-msgstr ""
+msgstr "[اللغة الافتراضية]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
+#, fuzzy
 msgid  "Document Objects"
-msgstr ""
+msgstr "كائنات المستند"
 
 #: basicide/basidesh.src#RID_STR_USERFORMS.STRING.TEXT
+#, fuzzy
 msgid  "Forms"
-msgstr ""
+msgstr "النماذج"
 
 #: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
+#, fuzzy
 msgid  "Modules"
-msgstr ""
+msgstr "الوحدات النمطية"
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
+#, fuzzy
 msgid  "Class Modules"
-msgstr ""
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.STRING.TEXT
-msgid  "Rename"
-msgstr ""
+msgstr "الوحدة النمطية للفئة"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
+#, fuzzy
 msgid  "Replace"
-msgstr ""
+msgstr "استبدال"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Dialog Import - Name already used"
-msgstr ""
+msgstr "استيراد مربع الحوار - الاسم مستخدم بالفعل"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "تتضمن المكتبة بالفعل مربع حوار يحمل الاسم:\n\n$(ARG1)\n\nقم بإعادة التسمية للاحتفاظ بمربع الحوار الحالي أو استبداله.\n "
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
+#, fuzzy
 msgid  "Add"
-msgstr ""
+msgstr "إضافة"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
+#, fuzzy
 msgid  "Omit"
-msgstr ""
+msgstr "حذف"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Dialog Import - Language Mismatch"
-msgstr ""
+msgstr "استيراد مربع الحوار - عدم تطابق اللغة"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "يدعم مربع الحوار المطلوب استيراده لغات أخرى بخلاف تلك الخاصة بالمكتبة المستهدفة.\n\nقم بإضافة هذه اللغات إلى المكتبة للاحتفاظ بموارد اللغات الإضافية المتاحة من خلال مربع الحوار أو حذفها للإبقاء على لغات المكتبة الحالية.\n\nملاحظة: بالنسبة للغات التي لا يدعمها مربع الحوار، سيتم استخدام موارد اللغة الافتراضية لمربع الحوار.\n "
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "New"
-msgstr ""
+msgstr "جديد"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Active"
-msgstr ""
+msgstr "نشط"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Pass Count:"
-msgstr ""
+msgstr "عدد مرات التجاوز:"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Breakpoints"
-msgstr ""
+msgstr "نقاط التوقف"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
+#, fuzzy
 msgid  "Manage Breakpoints"
-msgstr ""
+msgstr "إدارة نقاط التوقف"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic Macros"
-msgstr ""
+msgstr "وحدات ماكرو %PRODUCTNAME أساسية"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Existing macros ~in:"
-msgstr ""
+msgstr "وحدات الماكرو الحالية ~في:"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Macro name"
-msgstr ""
+msgstr "اسم ال~ماكرو"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Macro ~from"
-msgstr ""
+msgstr "ما~كرو من"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Save m~acro in"
-msgstr ""
+msgstr "حف~ظ الماكرو في"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "De~scription"
-msgstr ""
+msgstr "الوص~ف"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "R~un"
-msgstr ""
+msgstr "~تشغيل"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Assign..."
-msgstr ""
+msgstr "ت~عيين..."
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "ت~حرير"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "New ~Library"
-msgstr ""
+msgstr "مك~تبة جديدة"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "New M~odule"
-msgstr ""
+msgstr "وحدة نم~طية جديدة"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "ح~ذف"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
+msgstr "المن~ظم..."
 
 #: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
+#, fuzzy
 msgid  "Macro"
-msgstr ""
-
-#: basicide/macrodlg.src#RID_STR_BTNDEL.STRING.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "ماكرو"
 
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
-
-#: basicide/macrodlg.src#RID_STR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr ""
+msgstr "ج~ديد"
 
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
+#, fuzzy
 msgid  "Choose"
-msgstr ""
+msgstr "اختيار"
 
 #: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
+#, fuzzy
 msgid  "Run"
-msgstr ""
+msgstr "تشغيل"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "حف~ظ"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic Macro Organizer"
-msgstr ""
+msgstr "منظم وحدات ماكرو %PRODUCTNAME الأساسية"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Modules"
-msgstr ""
+msgstr "الوحدات النمطية"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Dialogs"
-msgstr ""
+msgstr "مربعات حوار"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Libraries"
-msgstr ""
+msgstr "مكتبات"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "M~odule"
-msgstr ""
+msgstr "وحد~ة نمطية"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "ت~حرير"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
+msgstr "~جديد..."
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "ح~ذف"
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Dialog"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "مربع حوار"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "L~ocation"
-msgstr ""
+msgstr "ال~موقع"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Library"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr ""
+msgstr "الم~كتبة"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Password..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
+msgstr "كل~مة المرور..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Import..."
-msgstr ""
+msgstr "ا~ستيراد..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "E~xport..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "ت~صدير..."
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "خيارات"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Insert as reference (read-only)"
-msgstr ""
+msgstr "إدراج كمرجع (للقراءة فقط)"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Replace existing libraries"
-msgstr ""
+msgstr "استبدال المكتبات الموجودة"
 
 #: basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name:"
-msgstr ""
+msgstr "الاس~م:"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Export Basic library"
-msgstr ""
+msgstr "تصدير المكتبة الأساسية"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Export as ~extension"
-msgstr ""
+msgstr "تصدير كامت~داد"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Export as BASIC library"
-msgstr ""
+msgstr "تصدير كمكتبة BASIC"
 
 #: basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "Export library as extension"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_STR_EXPORTBASIC.STRING.TEXT
-msgid  "Export as BASIC library"
-msgstr ""
+msgstr "تصدير المكتبة كامتداد"
 
 #: basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
+#, fuzzy
 msgid  "Extension"
-msgstr ""
+msgstr "الامتداد"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
-
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr ""
+msgstr "الوصف"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Help information"
-msgstr ""
+msgstr "معلومات التعليمات"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Help ID"
-msgstr ""
+msgstr "معرف التعليمات"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Help file name"
-msgstr ""
+msgstr "اسم ملف التعليمات"
 
 #: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Objects"
-msgstr ""
+msgstr "الكائنات"
 
 #: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Show"
-msgstr ""
+msgstr "إظهار"
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
 msgstr ""
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Properties: "
-msgstr ""
+msgstr "الخصائص: "
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "No Control marked"
-msgstr ""
+msgstr "لم يتم وضع علامة على عنصر تحكم"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
+#, fuzzy
 msgid  "Multiselection"
-msgstr ""
+msgstr "تحديد متعدد"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Manage User Interface Languages [$1]"
-msgstr ""
+msgstr "إدارة لغات واجهة المستخدم [$1]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Present Languages"
-msgstr ""
+msgstr "اللغات الحالية"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Add..."
-msgstr ""
+msgstr "إضافة..."
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "الافتراضي"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "تستخدم اللغة الافتراضية في حالة عدم وجود ترجمة للإعدادات اللغوية الخاصة بواجهة المستخدم. إضافة إلى ذلك، يتم نسخ كافة السلاسل من اللغة الافتراضية إلى موارد اللغات المضافة حديثًا."
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "إ~غلاق"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
+#, fuzzy
 msgid  "[Default Language]"
-msgstr ""
+msgstr "[اللغة الافتراضية]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "ح~ذف"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
+#, fuzzy
 msgid  "<Press 'Add' to create language resources>"
-msgstr ""
+msgstr "<اضغط على \"إضافة\" لإنشاء موارد اللغة>"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Delete Language Resources"
-msgstr ""
-
-#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "حذف مورد اللغةs"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Set Default User Interface Language"
-msgstr ""
+msgstr "تعيين لغة واجهة المستخدم الافتراضية"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Default language"
-msgstr ""
+msgstr "اللغة الافتراضية"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "حدد لغة لتعريف لغة واجهة المستخدم الافتراضية. حيث سيتم تعيين جميع السلاسل الموجودة حاليًا للموارد التي تم إنشاؤها للغة المحددة."
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Add User Interface Languages"
-msgstr ""
+msgstr "إضافة لغات واجهة المستخدم"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Available Languages"
-msgstr ""
+msgstr "اللغات المتاحة"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.STRING.TEXT
+#, fuzzy
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "حدد لغات لإضافتها. سيتم إنشاء موارد لتلك اللغات في المكتبة. وافتراضيًا، سيتم نسخ سلاسل لغة واجهة المستخدم الافتراضية الحالية لهذه الموارد الجديدة."

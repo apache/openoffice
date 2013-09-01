@@ -73,7 +73,7 @@ msgstr ""
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 msgid  "Major grids"
-msgstr ""
+msgstr "Тордың негiзгi сызықтары"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
 msgid  "~X axis"
@@ -89,11 +89,11 @@ msgstr ""
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
 msgid  "Secondary axes"
-msgstr ""
+msgstr "Қосымша осi"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 msgid  "Minor grids"
-msgstr ""
+msgstr "Тордың қосымша сызықтары"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TABDIALOG.TEXT
 msgid  "Character"
@@ -513,11 +513,11 @@ msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
 msgid  "Columns and Lines"
-msgstr ""
+msgstr "Аралас диаграмма: сызықтар мен бағандар"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
 msgid  "Stacked Columns and Lines"
-msgstr ""
+msgstr "Аралас диаграмма: сызықтар мен бағандар жинақтаумен"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
 msgid  "Net"
@@ -529,27 +529,27 @@ msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.STRING.TEXT
 msgid  "Stock Chart 1"
-msgstr ""
+msgstr "1 биржалық диаграмма"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.STRING.TEXT
 msgid  "Stock Chart 2"
-msgstr ""
+msgstr "2 биржалық диаграмма"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.STRING.TEXT
 msgid  "Stock Chart 3"
-msgstr ""
+msgstr "3 биржалық диаграмма"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
 msgid  "Stock Chart 4"
-msgstr ""
+msgstr "4 биржалық диаграмма"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
 msgid  "Normal"
-msgstr ""
+msgstr "Кәдiмгi"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
 msgid  "Stacked"
-msgstr ""
+msgstr "Жинақтаумен"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
 msgid  "Percent Stacked"
@@ -835,10 +835,6 @@ msgstr ""
 msgid  "Data Series"
 msgstr ""
 
-#: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.STRING.TEXT
-msgid  "Data Series"
-msgstr ""
-
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE.STRING.TEXT
 msgid  "Trend Line"
 msgstr ""
@@ -1117,7 +1113,7 @@ msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.STRING.TEXT
 msgid  "Exponential (%SERIESNAME)"
-msgstr ""
+msgstr "Экспоненциалдық регрессия"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.STRING.TEXT
 msgid  "Power (%SERIESNAME)"
@@ -1181,11 +1177,11 @@ msgstr ""
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
 msgid  "Sho~w labels"
-msgstr ""
+msgstr "Қолтаңбаны ~көрсету"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
 msgid  "Text orientation"
-msgstr ""
+msgstr "Мәтiндi бұру"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TRISTATEBOX.TEXT
 msgid  "Ve~rtically stacked"
@@ -1197,35 +1193,35 @@ msgstr ""
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
 msgid  "Text flow"
-msgstr ""
+msgstr "Парақта"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
 msgid  "O~verlap"
-msgstr ""
+msgstr "~Қалқалау"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CHECKBOX.TEXT
 msgid  "~Break"
-msgstr ""
+msgstr "Үзiлiс"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FIXEDLINE.TEXT
 msgid  "Order"
-msgstr ""
+msgstr "Тiзбегi"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RADIOBUTTON.TEXT
 msgid  "~Tile"
-msgstr ""
+msgstr "~Мозаика"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RADIOBUTTON.TEXT
 msgid  "St~agger odd"
-msgstr ""
+msgstr "~Ирек жолмен (тақ сандар жоғары)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RADIOBUTTON.TEXT
 msgid  "Stagger ~even"
-msgstr ""
+msgstr "Ирек жолмен (жұп сандар жоғары)"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
 msgid  "A~utomatic"
-msgstr ""
+msgstr "~Автоматты түрде"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
@@ -1591,17 +1587,13 @@ msgstr ""
 msgid  "Re~ference value"
 msgstr ""
 
-#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CHECKBOX.TEXT
-msgid  "Automat~ic"
-msgstr ""
-
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
 msgid  "Align data series to"
-msgstr ""
+msgstr "бойынша деректер қатарын түзеу"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
 msgid  "Primary Y axis"
-msgstr ""
+msgstr "~Негiзгi Y осi"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
 msgid  "Secondary Y axis"
@@ -1609,19 +1601,19 @@ msgstr ""
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Баптаулар"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
 msgid  "~Overlap"
-msgstr ""
+msgstr "~Қиылысуы"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
 msgid  "~Spacing"
-msgstr ""
+msgstr "~Аралық"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
 msgid  "Connection lines"
-msgstr ""
+msgstr "~Қосылыс сызықтары"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
 msgid  "Show ~bars side by side"
@@ -1661,7 +1653,7 @@ msgstr ""
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
 msgid  "Text orientation"
-msgstr ""
+msgstr "Мәтiн бағыты"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"

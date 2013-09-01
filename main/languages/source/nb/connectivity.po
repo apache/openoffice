@@ -33,668 +33,669 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.STRING.TEXT
 msgid  "Mozilla/Seamonkey Addressbook Directory"
-msgstr ""
+msgstr "Mappe for Mozilla/Seamonkey-adressebøker"
 
 #: resource/conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.STRING.TEXT
 msgid  "Thunderbird Addressbook Directory"
-msgstr ""
+msgstr "Mappe for Thunderbird-adressebøker"
 
 #: resource/conn_shared_res.src#STR_OE_ADDRESSBOOK.STRING.TEXT
 msgid  "Outlook Express Addressbook"
-msgstr ""
+msgstr "Mappe for Outlook Express-adressebøker"
 
 #: resource/conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.STRING.TEXT
 msgid  "Outlook (MAPI) Addressbook"
-msgstr ""
+msgstr "Outlook-adressebok (MAPI)"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "Det kan ikke opprettes tabeller i denne typen adressebøker."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "Nye adressebøker kan ikke opprettes mens Mozilla kjører."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Klarte ikke hente ut en post fra adresseboka. En ukjent feil oppstod."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Klarte ikke hente ut et mappenavn fra adresseboka. En ukjent feil oppstod."
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
 msgid  "Timed out while waiting for the result."
-msgstr ""
+msgstr "Det tok for lang tid å vente på resultatet."
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
 msgid  "An error occurred while executing the query."
-msgstr ""
+msgstr "En feil oppstod ved kjøring av spørringen."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Du kan ikke gjøre endringer i Mozilla-adresseboka mens Mozilla kjører."
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Mozilla-adresseboka er endret utenfor dette programmet. Adresseboka kan ikke endres nå."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
 msgid  "Can't find the requested row."
-msgstr ""
+msgstr "Finner ikke den forespurte raden."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
 msgid  "Can't find the card for the requested row."
-msgstr ""
+msgstr "Finner ikke kortet til den forespurte raden."
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It needs at least one table."
-msgstr ""
+msgstr "Kan ikke utføre spørringa, det trengs minst en tabell."
 
 #: resource/conn_shared_res.src#STR_NO_COUNT_SUPPORT.STRING.TEXT
 msgid  "The driver does not support the 'COUNT' function."
-msgstr ""
+msgstr "Driveren støtter ikke funksjonen «COUNT»."
 
 #: resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.STRING.TEXT
 msgid  "This statement type not supported by this database driver."
-msgstr ""
+msgstr "Denne databasedriveren støtter ikke denne typen uttrykk."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
 msgid  "An unknown error occured."
-msgstr ""
+msgstr "Det oppstod en ukjent feil."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr ""
+msgstr "Klarte ikke å opprette en ny adressebok. Mozilla-feilkoden er $1$."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
 msgid  "The library '$libname$' could not be loaded."
-msgstr ""
+msgstr "Klarte ikke å laste inn biblioteket «$libname$»."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
 msgid  "An error occured while refreshing the current row."
-msgstr ""
+msgstr "Det oppsto en feil da gjeldende rad skulle oppdateres."
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
 msgid  "An error occured while getting the current row."
-msgstr ""
+msgstr "Det oppsto en feil da gjeldende rad skulle hentes inn."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid  "The row update can not be canceled."
-msgstr ""
+msgstr "Kan ikke avbryte radoppdateringa."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.STRING.TEXT
 msgid  "A new row can not be created."
-msgstr ""
+msgstr "Kan ikke lage en ny rad."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Kan ikke utføre spørringa; «IS NULL» kan bare brukes sammen med et kolonnenavn."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
 msgid  "Illegal cursor movement occured."
-msgstr ""
+msgstr "Markøren ble flyttet på en ikke tillatt måte."
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Du må melde inn raden «$position$» før du kan oppdatere rader eller sette inn nye."
 
 #: resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.STRING.TEXT
 msgid  "The update call can not be executed. The row is invalid."
-msgstr ""
+msgstr "Kan ikke oppdatere. Raden er ugyldig."
 
 #: resource/conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.STRING.TEXT
 msgid  "The current row can not be saved."
-msgstr ""
+msgstr "Kan ikke lagre den gjeldende raden."
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
 msgid  "No hostname was provided."
-msgstr ""
+msgstr "Vertsnavn mangler."
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
 msgid  "No Base DN was provided."
-msgstr ""
+msgstr "Base-DN mangler."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
 msgid  "The connection to the LDAP server could not be established."
-msgstr ""
+msgstr "Klarte ikke koble til LDAP-tjeneren."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
-msgstr ""
+msgstr "Ingen tilkobling til databasen."
 
 #: resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.STRING.TEXT
 msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
-msgstr ""
+msgstr "Du prøvde å angi et parameter ved plasseringa «$pos$» men det er bare mulig å bruke «$count$» antall parametre. En av grunnene kan være at egenskapen «ParameterNameSubstitution» ikke er satt til «TRUE» i datakilden."
 
 #: resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.STRING.TEXT
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "Nådde slutten av innstrømmen (InputStream) før den angitte lengden."
 
 #: resource/conn_shared_res.src#STR_NO_INPUTSTREAM.STRING.TEXT
 msgid  "The input stream was not set."
-msgstr ""
+msgstr "Innstrømmen (InputStream) ble ikke valgt."
 
 #: resource/conn_shared_res.src#STR_NO_ELEMENT_NAME.STRING.TEXT
 msgid  "There is no element named '$name$'."
-msgstr ""
+msgstr "Det finnes intet element ved navnet '$name$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_BOOKMARK.STRING.TEXT
 msgid  "Invalid bookmark value"
-msgstr ""
+msgstr "Ugyldig bokmerkeverdi"
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.STRING.TEXT
 msgid  "Privilege not granted: Only table privileges can be granted."
-msgstr ""
+msgstr "Rettigheten er ikke gitt; bare tabellrettigheter kan gis."
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.STRING.TEXT
 msgid  "Privilege not revoked: Only table privileges can be revoked."
-msgstr ""
+msgstr "Rettigheten er ikke trukket tilbake; bare tabellrettigheter kan trekkes tilbake."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.STRING.TEXT
 msgid  "The column name '$columnname$' is unknown."
-msgstr ""
+msgstr "Kolonnenavnet «$columnname$» er ukjent."
 
 #: resource/conn_shared_res.src#STR_ERRORMSG_SEQUENCE.STRING.TEXT
 msgid  "Function sequence error."
-msgstr ""
+msgstr "Feil funksjonsrekkefølge."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX.STRING.TEXT
 msgid  "Invalid descriptor index."
-msgstr ""
+msgstr "Ugyldig beskrivelsesindeks."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.STRING.TEXT
 msgid  "The driver does not support the function '$functionname$'."
-msgstr ""
+msgstr "Driveren støtter ikke funksjonen «$functionname$»."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.STRING.TEXT
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "Driveren støtter ikke funksjonen «$featurename$», den er ikke implementert."
 
 #: resource/conn_shared_res.src#STR_FORMULA_WRONG.STRING.TEXT
 msgid  "The formula for TypeInfoSettings is wrong!"
-msgstr ""
+msgstr "Formelen for «TypeInfoSettings» er feil!"
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "Strengen «$string$» er lengre enn grensa på $maxlen$ tegn når den blir gjort om til tegnsettet «$charset$»."
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Strengen «$string$» kan ikke gjøres om til tegnkodinga «$charset»."
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
-msgstr ""
+msgstr "Tilkoblingsadressen er ugyldig."
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. It is too complex."
-msgstr ""
+msgstr "Kan ikke utføre spørringa, den er for avansert."
 
 #: resource/conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. The operator is too complex."
-msgstr ""
+msgstr "Kan ikke utføre spørringa, operatoren er for avansert."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Kan ikke utføre spørringa. Du kan ikke bruke «LIKE» med slike kolonner."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.STRING.TEXT
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Kan ikke utføre spørringa; «LIKE» kan bare brukes i kombinasjon med et strengvalg."
 
 #: resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr ""
+msgstr "Kan ikke utføre spørringa. Vilkåret «NOT LIKE» er for avansert."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.STRING.TEXT
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Kan ikke utføre spørringa fordi vilkåret «LIKE» har jokertegn midt i."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.STRING.TEXT
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Kan ikke utføre spørringa fordi vilkåret «LIKE» har for mange jokertegn."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.STRING.TEXT
 msgid  "The column name '$columnname$' is not valid."
-msgstr ""
+msgstr "Kolonnenavnet «$columnname$» er ugyldig."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.STRING.TEXT
 msgid  "The statement contains an invalid selection of columns."
-msgstr ""
+msgstr "Uttrykket inneholder et ugyldig valg av kolonner."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.STRING.TEXT
 msgid  "The column at position '$position$' could not be updated."
-msgstr ""
+msgstr "Kolonnen på plasseringa «$position$» kunne ikke oppdateres."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be loaded."
-msgstr ""
+msgstr "Klarte ikke lese inn fila $filename$."
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Forsøket på å lese inn fila ga følgende feilmelding ($exception_type$):\n\n$error_message$"
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
 msgid  "The type could not be converted."
-msgstr ""
+msgstr "Klarte ikke å endre typen."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not append column: invalid column descriptor."
-msgstr ""
+msgstr "Klarte ikke å legge til kolonnen: Ugyldig kolonnebeskrivelse."
 
 #: resource/conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create group: invalid object descriptor."
-msgstr ""
+msgstr "Klarte ikke å opprette gruppen: Ugyldig gruppebeskrivelse."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create index: invalid object descriptor."
-msgstr ""
+msgstr "Klarte ikke å opprette indekset: Ugyldig objektbeskrivelse."
 
 #: resource/conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create key: invalid object descriptor."
-msgstr ""
+msgstr "Klarte ikke å opprette nøkkelen: Ugyldig objektbeskrivelse."
 
 #: resource/conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create table: invalid object descriptor."
-msgstr ""
+msgstr "Klarte ikke å opprette tabellen: Ugyldig objektbeskrivelse."
 
 #: resource/conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create user: invalid object descriptor."
-msgstr ""
+msgstr "Klarte ikke å opprette brukeren: Ugyldig objektbeskrivelse."
 
 #: resource/conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create view: invalid object descriptor."
-msgstr ""
+msgstr "Klarte ikke å opprette visningen: Ugyldig objektbeskrivelse."
 
 #: resource/conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.STRING.TEXT
 msgid  "Could not create view: no command object."
-msgstr ""
+msgstr "Klarte ikke å opprette visningen: Kommandoobjekt mangler."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION.STRING.TEXT
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Klarte ikke å opprette forbindelsen. Kanskje den ønskede dataleverandøren ikke er installert."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Klarte ikke å slette indekset. Det oppsto en ukjent feil da filsystemet skulle brukes."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr ""
+msgstr "Klarte ikke å opprette indekset. Det er bare tillatt med en kolonne per indeks."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.STRING.TEXT
 msgid  "The index could not be created. The values are not unique."
-msgstr ""
+msgstr "Klarte ikke å opprette indekset. Verdiene er ikke unike."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.STRING.TEXT
 msgid  "The index could not be created. An unknown error appeared."
-msgstr ""
+msgstr "Klarte ikke å opprette indekset. Det oppsto en ukjent feil."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.STRING.TEXT
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Klarte ikke å opprette indekset. Fila «$filename$» brukes av et annet indeks."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.STRING.TEXT
+#, fuzzy
 msgid  "The index could not be created. The size of the chosen column is too big."
-msgstr ""
+msgstr "Klarte ikke å opprette indekset. Den valgte kolonnen er for stor."
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
 msgid  "The name '$name$' doesn't match SQL naming constraints."
-msgstr ""
+msgstr "Navnet «$name$» følger ikke SQLs navnebegrensninger."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be deleted."
-msgstr ""
+msgstr "Klarte ikke å slette fila $filename$."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
 msgid  "Invalid column type for column '$columnname$'."
-msgstr ""
+msgstr "Ugyldig kolonnetype for kolonnen «$columnname$»."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
 msgid  "Invalid precision for column '$columnname$'."
-msgstr ""
+msgstr "Ugyldig presisering for kolonnen «$columnname$»."
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
 msgid  "Precision is less than scale for column '$columnname$'."
-msgstr ""
+msgstr "Størrelsen er mindre enn kolonnestørrelsen på «$columnname$»."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
 msgid  "Invalid column name length for column '$columnname$'."
-msgstr ""
+msgstr "Ugyldig navnelengde på kolonnen «$columnname$»."
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
 msgid  "Duplicate value found in column '$columnname$'."
-msgstr ""
+msgstr "Fant en dobbeltoppført verdi i kolonnen «$columnname$»."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "Kolonnen «$columnname$» er blitt angitt å være av typen «desimal», høyeste tillatte lengde er $precision$ tegn (med $scale$ antall desimaler).\n\nDen angitte lengden $value$ overstiger den øvre grensen."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Kolonnen «$columnname$» kunne ikke endres. Kanskje filsystemet er skrivebeskyttet?"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Klarte ikke å oppdatere kolonnen «$columnname$». Verdien er ugyldig for den kolonnen."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Kolonnen «$columnname$» kunne ikke legges til. Kanskje filsystemet er skrivebeskyttet?"
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Kolonnen på plasseringa «$position$» kunne ikke utelates. Kanskje filsystemet er skrivebeskyttet?"
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Tabellen «$tablename$» kunne ikke utelates. Kanskje filsystemet er skrivebeskyttet?"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
 msgid  "The table could not be altered."
-msgstr ""
+msgstr "Klarte ikke endre tabellen."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
-msgstr ""
+msgstr "Fila «$filename$» er en ugyldig (eller ikke gjenkjent) dBase-fil."
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
 msgid  "Cannot open Evolution address book."
-msgstr ""
+msgstr "Klarer ikke å åpne Evolution-adresseboka."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
 msgid  "Can only sort by table columns."
-msgstr ""
+msgstr "Klarer bare å sortere etter tabellkolonner."
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
 msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
-msgstr ""
+msgstr "Kan ikke utføre spørringa, den er for avansert. Bare «COUNT(*)» er støttet."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "Kan ikke utføre spørringa, «BETWEEN»-argumentet er feil."
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
 msgid  "The query can not be executed. The function is not supported."
-msgstr ""
+msgstr "Kan ikke utføre spørringa, funksjonen støttes ikke."
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
 msgid  "The table can not be changed. It is read only."
-msgstr ""
+msgstr "Tabellen kan ikke endres, da den er skrivebeskyttet."
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
 msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
-msgstr ""
+msgstr "Kunne ikke slette raden fordi «Display inactive records» er valgt."
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "The row could not be deleted. It is already deleted."
-msgstr ""
+msgstr "Kunne ikke slette raden, den er slettet allerede."
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It contains more than one table."
-msgstr ""
+msgstr "Kunne ikke utføre spørringa da den inneholder mer enn en tabell."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
 msgid  "The query can not be executed. It contains no valid table."
-msgstr ""
+msgstr "Kunne ikke utføre spørringa da den ikke inneholder en gyldig tabell."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. It contains no valid columns."
-msgstr ""
+msgstr "Kunne ikke utføre spørringa da den ikke inneholder en gyldig kolonne."
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
 msgid  "The count of the given parameter values doesn't match the parameters."
-msgstr ""
+msgstr "Tallet i den valgte parameterverdien stemmer ikke overens med parametrene."
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
-msgstr ""
+msgstr "Lenka «$URL$» er ugyldig og ingen forbindelse kan opprettes."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
 msgid  "The driver class '$classname$' could not be loaded."
-msgstr ""
+msgstr "Klarte ikke å laste inn driverklassen «$classname$»."
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
 msgid  "No Java installation could be found. Please check your installation."
-msgstr ""
+msgstr "Fant ingen javainstallasjon. Sjekk installasjonen."
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
 msgid  "The execution of the query doesn't return a valid result set."
-msgstr ""
+msgstr "Utførelsen av spørringa gir ikke et gyldig resultatsett."
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
 msgid  "The execution of the update statement doesn't effect any rows."
-msgstr ""
+msgstr "Utførelsen av oppdateringsangivelsen påvirker ingen rader."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
 msgid  "The additional driver class path is '$classpath$'."
-msgstr ""
+msgstr "Stien til den ekstra driverklassen er «$classpath$»."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
 msgid  "The type of parameter at position '$position$' is unknown."
-msgstr ""
+msgstr "Parametertypen på plasseringa '«position$» er ukjent."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
 msgid  "The type of column at position '$position$' is unknown."
-msgstr ""
+msgstr "Kolonnetypen på plasseringa '«position$» er ukjent."
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
 msgid  "No suitable KDE installation was found."
-msgstr ""
+msgstr "Fant ingen passende KDE-installasjon."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "Trenger KDE-versjonen «$major$.$minor$» eller høyere for å kontakte KDEs adressebok."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Den KDE-versjonen som ble funnet er for ny. Dette produktet er bare kent å virke opp til versjon «$major$.$minor$» av KDE.\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Hvis du er sikker på at din KDE-versjon virker, så kan du utføre følgende Basic-makro for å skru av denne versjonstesten:\n\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
 msgid  "Parameters can appear only in prepared statements."
-msgstr ""
+msgstr "Parametre kan bare legges inn i behandlede uttrykk."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
 msgid  "No such table!"
-msgstr ""
+msgstr "Finnes ingen slik tabell!"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
 msgid  "No suitable Mac OS installation was found."
-msgstr ""
+msgstr "Fant ingen passende Mas OS-installasjon."
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Klarte ikke å opprette databasefila «$filename$». Sjekk at hardisken ikke er full."
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Klarte ikke å starte databasen «$databasename$» fordi kommandoen «$progname$ ikke kunne utføres."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Klarte ikke å konvertere den gjeldende databasen, du må angi en kontrollbruker og et passord."
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Kunne ikke å slette denne brukeren fordi det ville gjort databasen inkonsistent."
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
 msgid  "The connection can not be established. No storage or URL was given."
-msgstr ""
+msgstr "Klarte ikke å opprette forbindelsen da verken lenke eller lagringssted ble angitt."
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Den oppgitte lenka inneholder ingen gyldig lokal filsystemsti. Sjekk hvor databasen er plassert."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
 msgid  "An error occured while obtaining the connection's table container."
-msgstr ""
+msgstr "Det oppsto en feil da beholderen til forbindelsesdatabasen skulle skaffes."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
 msgid  "An error occured while creating the table editor dialog."
-msgstr ""
+msgstr "Det oppsto en feil oppstod da tabellredigeringsvinduet ble opprettet."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid  "There is no table named '$tablename$'."
-msgstr ""
+msgstr "Det finnes ingen tabell som heter «$tablename$»."
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
 msgid  "The provided DocumentUI is not allowed to be NULL."
-msgstr ""
+msgstr "Den angitte «DocumentUI» kan ikke være «NULL»."
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
 msgid  "The record operation has been vetoed."
-msgstr ""
+msgstr "Opptaksoperasjonen er forhindret."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "Uttrykket inneholder en syklisk referanse til en eller flere delspørringer."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
 msgid  "The name must not contain any slashes ('/')."
-msgstr ""
+msgstr "Navnet kan ikke inneholde skråstreker («/»)."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 msgid  "$1$ is no SQL conform identifier."
-msgstr ""
+msgstr "$1$ er ikke en SQL-identifikator."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
 msgid  "Query names must not contain quote characters."
-msgstr ""
+msgstr "Spørringer kan ikke ha hermetegn i navnet."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
 msgid  "The name '$1$' is already in use in the database."
-msgstr ""
+msgstr "Navnet «$1$» er brukt fra før i databasen."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
 msgid  "No connection to the database exists."
-msgstr ""
+msgstr "Har ingen tilkobling til databasen."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
 msgid  "No $1$ exists."
-msgstr ""
+msgstr "Har ingen $1$."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
+msgstr "Klarer ikke å vise hele tabellinnholdet. Du bør bruke et filter."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
 msgid  "Adabas D"
-msgstr ""
+msgstr "Adabas D"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "MySQL (JDBC)"
-msgstr ""
+msgstr "MySQL (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "MySQL (ODBC)"
-msgstr ""
+msgstr "MySQL (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
 msgid  "MySQL (Native)"
-msgstr ""
+msgstr "MySQL (lokal)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Outlook Address Book"
-msgstr ""
+msgstr "Microsoft Outlook-addressebok"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Windows Address Book"
-msgstr ""
+msgstr "Microsoft Windows-adressebok"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 msgid  "SeaMonkey Address Book"
-msgstr ""
+msgstr "Mozilla-adressebok"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 msgid  "Thunderbird Address Book"
-msgstr ""
+msgstr "Thunderbird-adressebok"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 msgid  "LDAP Address Book"
-msgstr ""
+msgstr "LDAP-adressebok"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 msgid  "SeaMonkey Address Book"
-msgstr ""
+msgstr "Mozilla-adressebok"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 msgid  "Thunderbird Address Book"
-msgstr ""
+msgstr "Thunderbird-adressebok"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 msgid  "LDAP Address Book"
-msgstr ""
+msgstr "LDAP-adressebok"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
 msgid  "HSQL database engine"
-msgstr ""
+msgstr "HSQL-databasemotor"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
 msgid  "Mac OS X Address Book"
-msgstr ""
+msgstr "Mac OS X-adressebok"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 msgid  "Evolution LDAP"
-msgstr ""
+msgstr "Evolution LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 msgid  "Groupwise"
-msgstr ""
+msgstr "Groupwise"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "ODBC"
-msgstr ""
+msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
 msgid  "KDE Address Book"
-msgstr ""
+msgstr "KDE-adressebok"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
 msgid  "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "Regneark"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "JDBC"
-msgstr ""
+msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
 msgid  "Oracle JDBC"
-msgstr ""
+msgstr "Oracle JDBC"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
 msgid  "dBASE"
-msgstr ""
+msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
 msgid  "Evolution Local"
-msgstr ""
+msgstr "Evolution lokalt"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
 msgid  "Evolution LDAP"
-msgstr ""
+msgstr "Evolution LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
 msgid  "Groupwise"
-msgstr ""
+msgstr "Groupwise"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
 msgid  "ADO"
-msgstr ""
+msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Access"
-msgstr ""
+msgstr "Microsoft Access"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Access 2007"
-msgstr ""
+msgstr "Microsoft Access 2007"

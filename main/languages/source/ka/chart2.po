@@ -76,16 +76,19 @@ msgid  "Major grids"
 msgstr ""
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~X axis"
-msgstr ""
+msgstr "~X ღერძი"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Y axis"
-msgstr ""
+msgstr "~Y ღერძი"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Z axis"
-msgstr ""
+msgstr "~Z ღერძი"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
 msgid  "Secondary axes"
@@ -97,7 +100,7 @@ msgstr ""
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TABDIALOG.TEXT
 msgid  "Character"
-msgstr ""
+msgstr "სიმბოლოები"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
 msgid  "Font"
@@ -105,7 +108,7 @@ msgstr ""
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr ""
+msgstr "შრიფტის ეფექტები"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
 msgid  "Font Position"
@@ -120,8 +123,9 @@ msgid  "Indents & Spacing"
 msgstr ""
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "გასწორება"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
 msgid  "Asian Typography"
@@ -133,7 +137,7 @@ msgstr ""
 
 #: controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TABDIALOG.TEXT
 msgid  "3D View"
-msgstr ""
+msgstr "სამგანზომილებიანი ხედი"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
 msgid  "Box"
@@ -141,15 +145,15 @@ msgstr ""
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
 msgid  "Cylinder"
-msgstr ""
+msgstr "ცილინდრი"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
 msgid  "Cone"
-msgstr ""
+msgstr "კონუსი"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
 msgid  "Pyramid"
-msgstr ""
+msgstr "პირამიდა"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
 msgid  "Best fit"
@@ -168,8 +172,9 @@ msgid  "Top left"
 msgstr ""
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr "~მარცხნივ"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
 msgid  "Bottom left"
@@ -184,8 +189,9 @@ msgid  "Bottom right"
 msgstr ""
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr "~მარჯვნივ"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
 msgid  "Top right"
@@ -232,48 +238,57 @@ msgid  "Place~ment"
 msgstr ""
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Rotate Text"
-msgstr ""
+msgstr "ტექსტის მოტრიალება"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "~გრადუსი"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
-msgstr ""
+msgstr "ტექსტის მიმართულება"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
 msgid  "Standard Error"
 msgstr ""
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Standard Deviation"
-msgstr ""
+msgstr "~სტანდარტული გადახრა"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Variance"
-msgstr ""
+msgstr "~ვარიანტები"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Error Margin"
-msgstr ""
+msgstr "უხეში შე~ცდომა"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Error Category"
-msgstr ""
+msgstr "შეცდომის კატეგორია"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 msgid  "~None"
 msgstr ""
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_CONST.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Constant Value"
-msgstr ""
+msgstr "~კონსტანტური მნიშვნელობა"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_PERCENT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Percentage"
-msgstr ""
+msgstr "~პროცენტი"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_RANGE.RADIOBUTTON.TEXT
 msgid  "Cell ~Range"
@@ -296,16 +311,18 @@ msgid  "Same value for both"
 msgstr ""
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Error Indicator"
-msgstr ""
+msgstr "შეცდომის ~ინდიკატორი"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
 msgid  "Positive ~and Negative"
 msgstr ""
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_POSITIVE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Pos~itive"
-msgstr ""
+msgstr "პოზიცია"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NEGATIVE.RADIOBUTTON.TEXT
 msgid  "Ne~gative"
@@ -316,20 +333,24 @@ msgid  "~Display legend"
 msgstr ""
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_LEFT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Left"
-msgstr ""
+msgstr "~მარცხნივ"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_RIGHT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Right"
-msgstr ""
+msgstr "~მარჯვნივ"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_TOP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Top"
-msgstr ""
+msgstr "~ზემოთ"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_BOTTOM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Bottom"
-msgstr ""
+msgstr "~ქვემოთ"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_X_SECONDARY.CHECKBOX.TEXT
 msgid  "X ~axis"
@@ -360,28 +381,33 @@ msgid  "New line"
 msgstr ""
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "სათაური"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Subtitle"
-msgstr ""
+msgstr "~ქვესათაური"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
 msgid  "Axes"
 msgstr ""
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~X axis"
-msgstr ""
+msgstr "~X ღერძი"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Y_AXIS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Y axis"
-msgstr ""
+msgstr "~Y ღერძი"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Z axis"
-msgstr ""
+msgstr "~Z ღერძი"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
 msgid  "Secondary Axes"
@@ -449,7 +475,7 @@ msgstr ""
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.STRING.TEXT
 msgid  "~Number of lines"
-msgstr ""
+msgstr "~ხაზების რაოდენობა"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.STRING.TEXT
 msgid  "Separator"
@@ -501,7 +527,7 @@ msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
 msgid  "Lines Only"
-msgstr ""
+msgstr "მხოლოდ ხაზები"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
 msgid  "3D Lines"
@@ -521,7 +547,7 @@ msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
 msgid  "Net"
-msgstr ""
+msgstr "ქსელი"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 msgid  "Stock"
@@ -529,27 +555,27 @@ msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.STRING.TEXT
 msgid  "Stock Chart 1"
-msgstr ""
+msgstr "საბირჟო დიაგრამა 1"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.STRING.TEXT
 msgid  "Stock Chart 2"
-msgstr ""
+msgstr "საბირჟო დიაგრამა 2"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.STRING.TEXT
 msgid  "Stock Chart 3"
-msgstr ""
+msgstr "საბირჟო დიაგრამა 3"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
 msgid  "Stock Chart 4"
-msgstr ""
+msgstr "საბირჟო დიაგრამა 4"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
 msgid  "Normal"
-msgstr ""
+msgstr "ნორმალური"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
 msgid  "Stacked"
-msgstr ""
+msgstr "ჩადგმით"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
 msgid  "Percent Stacked"
@@ -608,8 +634,9 @@ msgid  "Number Format for Percentage Value"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Chart Type"
-msgstr ""
+msgstr "დიაგრამის ტიპი"
 
 #: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
 msgid  "Data Range"
@@ -628,32 +655,37 @@ msgid  "Line"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
+#, fuzzy
 msgid  "Borders"
-msgstr ""
+msgstr "ჩარჩოები"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 msgid  "Area"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.STRING.TEXT
+#, fuzzy
 msgid  "Transparency"
-msgstr ""
+msgstr "გამჭირვალეობა"
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT.STRING.TEXT
 msgid  "Font"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
+#, fuzzy
 msgid  "Font Effects"
-msgstr ""
+msgstr "შრიფტის ეფექტები"
 
 #: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
+#, fuzzy
 msgid  "Numbers"
-msgstr ""
+msgstr "რაოდენობა"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "პოზიცია"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
@@ -664,16 +696,19 @@ msgid  "Down"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Layout"
-msgstr ""
+msgstr "განლაგება"
 
 #: controller/dialogs/Strings.src#STR_PAGE_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "პარამეტრები"
 
 #: controller/dialogs/Strings.src#STR_PAGE_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Scale"
-msgstr ""
+msgstr "მასშტაბირება"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
 msgid  "Positioning"
@@ -688,8 +723,9 @@ msgid  "Y Error Bars"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "გასწორება"
 
 #: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
 msgid  "Perspective"
@@ -740,12 +776,14 @@ msgid  "Axes"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
+#, fuzzy
 msgid  "Grids"
-msgstr ""
+msgstr "ბადე"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID.STRING.TEXT
+#, fuzzy
 msgid  "Grid"
-msgstr ""
+msgstr "ბადე"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.STRING.TEXT
 msgid  "X Axis Major Grid"
@@ -772,24 +810,28 @@ msgid  "Z Axis Minor Grid"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
+#, fuzzy
 msgid  "Legend"
-msgstr ""
+msgstr "ლეგენდა"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Title"
-msgstr ""
+msgstr "სათაური"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLES.STRING.TEXT
+#, fuzzy
 msgid  "Titles"
-msgstr ""
+msgstr "სათაურები"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
 msgid  "Main Title"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
+#, fuzzy
 msgid  "Subtitle"
-msgstr ""
+msgstr "~ქვესათაური"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
 msgid  "X Axis Title"
@@ -812,30 +854,29 @@ msgid  "Secondary Y Axis Title"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Label"
-msgstr ""
+msgstr "ეტიკეტი"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.STRING.TEXT
 msgid  "Data Labels"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
+#, fuzzy
 msgid  "Data Point"
-msgstr ""
+msgstr "მონაცემთა წერტილი"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
+#, fuzzy
 msgid  "Data Points"
-msgstr ""
+msgstr "მონაცემთა წერტილი"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.STRING.TEXT
 msgid  "Legend Key"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.STRING.TEXT
-msgid  "Data Series"
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.STRING.TEXT
 msgid  "Data Series"
 msgstr ""
 
@@ -872,20 +913,23 @@ msgid  "Stock Gain"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Chart Area"
-msgstr ""
+msgstr "დიაგრამის არე"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
 msgid  "Chart"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
+#, fuzzy
 msgid  "Chart Wall"
-msgstr ""
+msgstr "დიაგრამის სტენდი"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
+#, fuzzy
 msgid  "Chart Floor"
-msgstr ""
+msgstr "დიაგრამის ფუძე"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 msgid  "Drawing Object"
@@ -1100,8 +1144,9 @@ msgid  "Negative"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
+#, fuzzy
 msgid  "Positive"
-msgstr ""
+msgstr "პოზიცია"
 
 #: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
 msgid  "From Data Table"
@@ -1132,8 +1177,9 @@ msgid  "Sche~me"
 msgstr ""
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Shading"
-msgstr ""
+msgstr "~ინტერვალი"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CHECKBOX.TEXT
 msgid  "~Object borders"
@@ -1145,7 +1191,7 @@ msgstr ""
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
 msgid  " degrees"
-msgstr ""
+msgstr "გრადუსი"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 msgid  "~Right-angled axes"
@@ -1180,8 +1226,9 @@ msgid  "Light Preview"
 msgstr ""
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Sho~w labels"
-msgstr ""
+msgstr "ეტიკეტების ჩ~ვენება"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
 msgid  "Text orientation"
@@ -1192,44 +1239,54 @@ msgid  "Ve~rtically stacked"
 msgstr ""
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "~გრადუსი"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text flow"
-msgstr ""
+msgstr "ტექსტის მიყოლა"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "O~verlap"
-msgstr ""
+msgstr "მი~ფარება"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Break"
-msgstr ""
+msgstr "~შეწყვეტა"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Order"
-msgstr ""
+msgstr "თანრიგი"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Tile"
-msgstr ""
+msgstr "~მოზაიკა"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "St~agger odd"
-msgstr ""
+msgstr "~ზიგზაგი კენტი"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Stagger ~even"
-msgstr ""
+msgstr "ზიგზაგი ~ლუწი"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~utomatic"
-msgstr ""
+msgstr "ა~ვტომატური"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
-msgstr ""
+msgstr "ტექსტის მიმართულება"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
 msgid  "Axis line"
@@ -1260,8 +1317,9 @@ msgid  "Axis ~between categories"
 msgstr ""
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Labels"
-msgstr ""
+msgstr "ეტიკეტი"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FIXEDTEXT.TEXT
 msgid  "~Place labels"
@@ -1332,8 +1390,9 @@ msgid  "At axis and labels"
 msgstr ""
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Grids"
-msgstr ""
+msgstr "ბადე"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CHECKBOX.TEXT
 msgid  "Show major ~grid"
@@ -1372,8 +1431,9 @@ msgid  "On top"
 msgstr ""
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Percent"
-msgstr ""
+msgstr "პროცენტი"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
 msgid  "Deep"
@@ -1396,16 +1456,19 @@ msgid  "Cubic spline"
 msgstr ""
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "B-Spline"
-msgstr ""
+msgstr "B-მრუდი"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Resolution"
-msgstr ""
+msgstr "~გარჩევადობა"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degree of polynomials"
-msgstr ""
+msgstr "~მონაცემების მითითების თანრიგი"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
 msgid  "Customize data ranges for individual data series"
@@ -1440,16 +1503,18 @@ msgid  "~Remove"
 msgstr ""
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "პოზიცია"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
 msgid  "Text orientation"
 msgstr ""
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
-msgstr ""
+msgstr "ტექსტის მიმართულება"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FIXEDLINE.TEXT
 msgid  "Place chart"
@@ -1468,8 +1533,9 @@ msgid  "Starting angle"
 msgstr ""
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "~გრადუსი"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
 msgid  "Plot options"
@@ -1517,7 +1583,7 @@ msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
 msgid  "Scale"
-msgstr ""
+msgstr "მასშტაბირება"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
 msgid  "~Reverse direction"
@@ -1532,8 +1598,9 @@ msgid  "T~ype"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "ა~ვტომატური"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
 msgid  "Text"
@@ -1544,36 +1611,43 @@ msgid  "Date"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Minimum"
-msgstr ""
+msgstr "~მინიმუმი:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "ავტომატური"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ma~ximum"
-msgstr ""
+msgstr "მა~ქსიმუმი:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "A~utomatic"
-msgstr ""
+msgstr "ა~ვტომატური"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "R~esolution"
-msgstr ""
+msgstr "~გარჩევადობა"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automat~ic"
-msgstr ""
+msgstr "ავტომატური"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
 msgid  "Ma~jor interval"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Au~tomatic"
-msgstr ""
+msgstr "ავტომატური"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
 msgid  "Minor inter~val count"
@@ -1584,44 +1658,47 @@ msgid  "Minor inter~val"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Aut~omatic"
-msgstr ""
+msgstr "ავტომატური"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
 msgid  "Re~ference value"
 msgstr ""
 
-#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CHECKBOX.TEXT
-msgid  "Automat~ic"
-msgstr ""
-
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Align data series to"
-msgstr ""
+msgstr "მონაცემთა სერიების განლაგება"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Primary Y axis"
-msgstr ""
+msgstr "პირველადი Y ღერძი"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
 msgid  "Secondary Y axis"
 msgstr ""
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "პარამეტრები"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Overlap"
-msgstr ""
+msgstr "~გადაფარვა"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Spacing"
-msgstr ""
+msgstr "~ინტერვალი"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Connection lines"
-msgstr ""
+msgstr "კავშირის ხაზები"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
 msgid  "Show ~bars side by side"
@@ -1656,16 +1733,18 @@ msgid  "Ve~rtically stacked"
 msgstr ""
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "~გრადუსი"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
 msgid  "Text orientation"
 msgstr ""
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
-msgstr ""
+msgstr "ტექსტის მიმართულება"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Choose titles, legend, and grid settings"

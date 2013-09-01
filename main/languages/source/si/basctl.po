@@ -44,368 +44,454 @@ msgid  "Pa~ges"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
+#, fuzzy
 msgid  "<All>"
-msgstr ""
+msgstr "<සියලු>"
 
 #: basicide/basidesh.src#RID_STR_NOMODULE.STRING.TEXT
+#, fuzzy
 msgid  "< No Module >"
-msgstr ""
+msgstr "< මොඩියුලයක් නැත >"
 
 #: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "Incorrect Password"
-msgstr ""
+msgstr "වැරදි මුරපදයකි "
 
 #: basicide/basidesh.src#RID_STR_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "Load"
-msgstr ""
+msgstr "ප්‍රවේශනය කරන්න"
 
 #: basicide/basidesh.src#RID_STR_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr "සුරකින්න"
 
 #: basicide/basidesh.src#RID_STR_SOURCETOBIG.STRING.TEXT
+#, fuzzy
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "මූල පෙළ ඉතා විශාල බැවින් සම්පාදනය කිරීමට හෝ සුරැකීමට නොහැක.\nසමහර සටහන් මකා දැමීම හෝ සමහර ක්‍රම වෙනත් මොඩියුලයකට මාරි කිරීම සිදුකරන්න."
 
 #: basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.STRING.TEXT
+#, fuzzy
 msgid  "Error opening file"
-msgstr ""
+msgstr "ගොනුව විවෘත කිරීමේ දෝෂයක්"
 
 #: basicide/basidesh.src#RID_STR_ERROROPENLIB.STRING.TEXT
+#, fuzzy
 msgid  "Error loading library"
-msgstr ""
+msgstr "පුස්තකාලය ප්‍රවේශනය කිරීමේ දෝෂයක්"
 
 #: basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.STRING.TEXT
+#, fuzzy
 msgid  "The file does not contain any BASIC libraries"
-msgstr ""
+msgstr "ගොනුවේ කිසිම BASIC පුස්තකාලයක් අඩංගු නොවේ"
 
 #: basicide/basidesh.src#RID_STR_BADSBXNAME.STRING.TEXT
+#, fuzzy
 msgid  "Invalid Name"
-msgstr ""
+msgstr "අවලංගු නමකි "
 
 #: basicide/basidesh.src#RID_STR_LIBNAMETOLONG.STRING.TEXT
+#, fuzzy
 msgid  "A library name can have up to 30 characters."
-msgstr ""
+msgstr "පුස්තකාල නමක අනු ලකුණු 30ක් දක්වා තිබිය හැකිය."
 
 #: basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.STRING.TEXT
+#, fuzzy
 msgid  "Macros from other documents are not accessible."
-msgstr ""
+msgstr "අනෙක් ලේඛ වල නියෝග එකලස් වලට ප්‍රවේශ විය නොහැක."
 
 #: basicide/basidesh.src#RID_STR_LIBISREADONLY.STRING.TEXT
+#, fuzzy
 msgid  "This library is read-only."
-msgstr ""
+msgstr "මෙය කියවීමට පමණක් වූ පුස්තකාලයකි."
 
 #: basicide/basidesh.src#RID_STR_REPLACELIB.STRING.TEXT
+#, fuzzy
 msgid  "'XX' cannot be replaced."
-msgstr ""
+msgstr "'XX' ප්‍රතිස්ථාපනය කල නොහැක."
 
 #: basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.STRING.TEXT
+#, fuzzy
 msgid  "'XX' cannot be added."
-msgstr ""
+msgstr "'XX' එක් කල නොහැක."
 
 #: basicide/basidesh.src#RID_STR_NOIMPORT.STRING.TEXT
+#, fuzzy
 msgid  "'XX' was not added."
-msgstr ""
+msgstr "'XX' එක් නොකරන ලදි."
 
 #: basicide/basidesh.src#RID_STR_ENTERPASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "Enter password for 'XX'"
-msgstr ""
+msgstr "'XX' සඳහා මුරපදය ඇතුළු කරන්න"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.STRING.TEXT
+#, fuzzy
 msgid  "Name already exists"
-msgstr ""
+msgstr "නම දැනටමත් පවතී"
 
 #: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
+#, fuzzy
 msgid  "(Signed)"
-msgstr ""
+msgstr "(අත්සන් කළා)"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
+#, fuzzy
 msgid  "Object with same name already exists"
-msgstr ""
+msgstr "සමාන නමක් සහිත වස්තුව දැනටමත් ඇත"
 
 #: basicide/basidesh.src#RID_STR_FILEEXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The 'XX' file already exists"
-msgstr ""
+msgstr "'XX' ගොනුව දැනටමත් පවතී"
 
 #: basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.STRING.TEXT
+#, fuzzy
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "ආරක්ෂක හේතු නිසා මෙම මැක්‍රෝව ධාවනය කළ නොහැක.\n\nවැඩිදුර තොරතුරු සඳහා ආරක්ෂණ සිටුවීම් පරීක්ෂා කරන්න. "
 
 #: basicide/basidesh.src#RID_STR_COMPILEERROR.STRING.TEXT
+#, fuzzy
 msgid  "Compile Error: "
-msgstr ""
+msgstr "සම්පාදන දෝෂයක්:"
 
 #: basicide/basidesh.src#RID_STR_RUNTIMEERROR.STRING.TEXT
+#, fuzzy
 msgid  "Runtime Error: #"
-msgstr ""
+msgstr "ධාවන කාල දෝෂයක්: #"
 
 #: basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.STRING.TEXT
+#, fuzzy
 msgid  "Search key not found"
-msgstr ""
+msgstr "සෙවුම් යතුර සොයාගත නොහැක"
 
 #: basicide/basidesh.src#RID_STR_SEARCHFROMSTART.STRING.TEXT
+#, fuzzy
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "අවසාන මොඩියුලය දක්වා සෙවීම සම්පූර්ණයි. මුල් මොඩියුලයෙන් දිගටම කරගෙන යන්නද?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHREPLACES.STRING.TEXT
+#, fuzzy
 msgid  "Search key replaced XX times"
-msgstr ""
+msgstr "සෙවුම් යතුර XX වාරයක් ප්‍රතිස්ථාපනය කර ඇත"
 
 #: basicide/basidesh.src#RID_STR_COULDNTREAD.STRING.TEXT
+#, fuzzy
 msgid  "The file could not be read"
-msgstr ""
+msgstr "ගොනුව කියවීමට නොහැකිවිය "
 
 #: basicide/basidesh.src#RID_STR_COULDNTWRITE.STRING.TEXT
+#, fuzzy
 msgid  "The file could not be saved"
-msgstr ""
+msgstr "ගොනුව සුරැකීමට නොහැකිවිය "
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.STRING.TEXT
+#, fuzzy
 msgid  "The name of the default library cannot be changed."
-msgstr ""
+msgstr "පෙරනිමි පුස්තකාලයේ නම වෙනස් කළ නොහැක. "
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.STRING.TEXT
+#, fuzzy
 msgid  "The name of a referenced library cannot be changed."
-msgstr ""
+msgstr "යොමු පුස්තකාලයේ නම වෙනස් කළ නොහැක."
 
 #: basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.STRING.TEXT
+#, fuzzy
 msgid  "The default library cannot be deactivated"
-msgstr ""
+msgstr "පෙරනිමි පුස්තකාලය අක්‍රිය කළ නොහැක. "
 
 #: basicide/basidesh.src#RID_STR_GENERATESOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Generating source"
-msgstr ""
+msgstr "මූලය ජනනය කරමින්"
 
 #: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
+#, fuzzy
 msgid  "File name:"
-msgstr ""
+msgstr "ගොනු නාමය: "
 
 #: basicide/basidesh.src#RID_STR_APPENDLIBS.STRING.TEXT
+#, fuzzy
 msgid  "Import Libraries"
-msgstr ""
+msgstr "ආයාත පුස්තකාල "
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMACRO.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the macro XX?"
-msgstr ""
+msgstr "XX මැක්‍රෝව මැකීමට ඔබට අවශ්‍යද ?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELDIALOG.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the XX dialog?"
-msgstr ""
+msgstr "XX සංවාදය මැකීමට ඔබට අවශ්‍යද?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIB.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the XX library?"
-msgstr ""
+msgstr "XX පුස්තකාලය මැකීමට ඔබට අවශ්‍යද?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIBREF.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the reference to the XX library?"
-msgstr ""
+msgstr "XX පුස්තකාලයට යොමුව මැකීමට ඔබට අවශ්‍යද?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMODULE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the XX module?"
-msgstr ""
+msgstr "XX මොඩියුලය මැකීමට ඔබට අවශ්‍යද?"
 
 #: basicide/basidesh.src#RID_STR_OBJNOTFOUND.STRING.TEXT
+#, fuzzy
 msgid  "Object or method not found"
-msgstr ""
+msgstr "වස්තුව හෝ ක්‍රමය සොයාගත නොහැක"
 
 #: basicide/basidesh.src#RID_STR_BASIC.STRING.TEXT
+#, fuzzy
 msgid  "BASIC"
-msgstr ""
+msgstr "BASIC"
 
 #: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
+#, fuzzy
 msgid  "Ln"
-msgstr ""
+msgstr "Ln"
 
 #: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Col"
-msgstr ""
+msgstr "Col"
 
 #: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "ලේඛය"
 
 #: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
+#, fuzzy
 msgid  "Macro Bar"
-msgstr ""
+msgstr "මැක්‍රෝ තීරය"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
+#, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
-msgstr ""
+msgstr "BASIC ධාවනය වෙද්දී කවුළුව වැසිය නොහැක. "
 
 #: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
+#, fuzzy
 msgid  "The default library cannot be replaced."
-msgstr ""
+msgstr "පෙරනිමි පුස්තකාලය ප්‍රතිස්ථාපනය කල නොහැක."
 
 #: basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.STRING.TEXT
+#, fuzzy
 msgid  "Reference to 'XX' not possible."
-msgstr ""
+msgstr "'XX'ට යොමුවක් ලබාදිය නොහැක."
 
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
+#, fuzzy
 msgid  "Watch"
-msgstr ""
+msgstr "අධීක්ෂණය"
 
 #: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
+#, fuzzy
 msgid  "Variable"
-msgstr ""
+msgstr "විචල්‍යය"
 
 #: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "අගය"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "වර්ගය"
 
 #: basicide/basidesh.src#RID_STR_STACKNAME.STRING.TEXT
+#, fuzzy
 msgid  "Call Stack"
-msgstr ""
+msgstr "ඇමතුම් අට්ටිය "
 
 #: basicide/basidesh.src#RID_STR_INITIDE.STRING.TEXT
+#, fuzzy
 msgid  "BASIC Initialization"
-msgstr ""
+msgstr "BASIC ආරම්භය"
 
 #: basicide/basidesh.src#RID_STR_STDMODULENAME.STRING.TEXT
+#, fuzzy
 msgid  "Module"
-msgstr ""
+msgstr "මොඩියුලය "
 
 #: basicide/basidesh.src#RID_STR_STDDIALOGNAME.STRING.TEXT
+#, fuzzy
 msgid  "Dialog"
-msgstr ""
+msgstr "සංවාදය"
 
 #: basicide/basidesh.src#RID_STR_STDLIBNAME.STRING.TEXT
+#, fuzzy
 msgid  "Library"
-msgstr ""
+msgstr "පුස්තකාලය "
 
 #: basicide/basidesh.src#RID_STR_NEWLIB.STRING.TEXT
+#, fuzzy
 msgid  "New Library"
-msgstr ""
+msgstr "නව පුස්තකාලය"
 
 #: basicide/basidesh.src#RID_STR_NEWMOD.STRING.TEXT
+#, fuzzy
 msgid  "New Module"
-msgstr ""
+msgstr "නව මොඩියුලය "
 
 #: basicide/basidesh.src#RID_STR_NEWDLG.STRING.TEXT
+#, fuzzy
 msgid  "New Dialog"
-msgstr ""
+msgstr "නව සංවාදය"
 
 #: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All"
-msgstr ""
+msgstr "සියලු"
 
 #: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Page"
-msgstr ""
+msgstr "පිටුව "
 
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
+#, fuzzy
 msgid  "A name must be entered."
-msgstr ""
+msgstr "නමක් ඇතුල් කළ යුතුයි."
 
 #: basicide/basidesh.src#RID_STR_WILLSTOPPRG.STRING.TEXT
+#, fuzzy
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "මෙම සංස්කරණයෙන් පසුව ඔබට ක්‍රමලේඛය නැවත ආරම්භ කිරීමට සිදුවනු ඇත. \nඉදිරියට ක්‍රියාත්මක කරන්නද?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHALLMODULES.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to replace the text in all active modules?"
-msgstr ""
+msgstr "සියලුම සක්‍රීය මොඩියුල වල පෙළ ප්‍රතිස්ථාපනය කිරීමට ඔබට අවශ්‍යද?"
 
 #: basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.BUTTONIMAGE.QUICKHELPTEXT
+#, fuzzy
 msgid  "Remove Watch"
-msgstr ""
+msgstr "අධීක්ෂණය ඉවත්කරන්න "
 
 #: basicide/basidesh.src#RID_STR_REMOVEWATCH.STRING.TEXT
+#, fuzzy
 msgid  "Watch:"
-msgstr ""
+msgstr "අධීක්ෂණය:"
 
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
+#, fuzzy
 msgid  "Calls: "
-msgstr ""
+msgstr "ඇමතුම්:"
 
 #: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
+#, fuzzy
 msgid  "My Macros"
-msgstr ""
+msgstr "මගේ මැක්‍රෝ"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
+#, fuzzy
 msgid  "My Dialogs"
-msgstr ""
+msgstr "මගේ සංවාද "
 
 #: basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.STRING.TEXT
+#, fuzzy
 msgid  "My Macros & Dialogs"
-msgstr ""
+msgstr "මගේ මැක්‍රෝ සහ සංවාද"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Macros"
-msgstr ""
+msgstr "%PRODUCTNAME මැක්‍රෝ"
 
 #: basicide/basidesh.src#RID_STR_SHAREDIALOGS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Dialogs"
-msgstr ""
+msgstr "%PRODUCTNAME සංවාද"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Macros & Dialogs"
-msgstr ""
+msgstr "%PRODUCTNAME මැක්‍රෝ සහ සංවාද"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.MENU.TEXT
+#, fuzzy
 msgid  "Properties"
-msgstr ""
+msgstr "ගුණාංග"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MENUITEM.TEXT
+#, fuzzy
 msgid  "Active"
-msgstr ""
+msgstr "සක්‍රිය "
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr "ගුණාංග... "
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.MENU.TEXT
+#, fuzzy
 msgid  "Manage Breakpoints"
-msgstr ""
+msgstr "බිඳුම් ලක්ෂ කළමනාකරණය"
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "Manage Breakpoints..."
-msgstr ""
+msgstr "බිඳුම් ලක්ෂ කළමනාකරණය..."
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "ඇතුළු කරන්න "
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MENUITEM.TEXT
+#, fuzzy
 msgid  "BASIC Module"
-msgstr ""
+msgstr "BASIC මොඩියුලය "
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MENUITEM.TEXT
+#, fuzzy
 msgid  "BASIC Dialog"
-msgstr ""
+msgstr "BASIC සංවාද"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "මකන්න "
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rename"
-msgstr ""
+msgstr "නැවත නම් කරන්න"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Hide"
-msgstr ""
+msgstr "සඟවන්න "
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "Modules..."
-msgstr ""
-
-#: basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
-msgstr ""
+msgstr "මොඩියුල...  "
 
 #: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to overwrite the XX macro?"
-msgstr ""
+msgstr "XX මැක්‍රෝව මත ලිවීමට ඔබට අවශ්‍යද ?"
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
+#, fuzzy
 msgid  "<Not localized>"
-msgstr ""
+msgstr "<දේශීයකරණය වී නැත>"
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "[Default Language]"
-msgstr ""
+msgstr "[පෙරනිමි භාෂාව]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
@@ -416,405 +502,424 @@ msgid  "Forms"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
+#, fuzzy
 msgid  "Modules"
-msgstr ""
+msgstr "මොඩියුල "
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
 msgid  "Class Modules"
 msgstr ""
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.STRING.TEXT
-msgid  "Rename"
-msgstr ""
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
+#, fuzzy
 msgid  "Replace"
-msgstr ""
+msgstr "ප්‍රතිස්ථාපනය කරන්න"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Dialog Import - Name already used"
-msgstr ""
+msgstr "සංවාද ආයාතය - නම දැනටමත් භාවිතා වේ"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "පුස්තකාලයේ $(ARG1) නමින් සංවාදයක් දැනටමත් අඩංගු වේ.\nදැනට පවතින සංවාදය තබා ගැනීමට සංවාද නැවත නම් කරන්න හෝ දැනට පවතින සංවාදය ප්‍රතිස්ථාපනය කරන්න."
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
+#, fuzzy
 msgid  "Add"
-msgstr ""
+msgstr "එක් කරන්න"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
+#, fuzzy
 msgid  "Omit"
-msgstr ""
+msgstr "අත් හරින්න"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Dialog Import - Language Mismatch"
-msgstr ""
+msgstr "සංවාද ආයාතය - භාෂාව නොගැළපේ"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "ආනයනය කිරීමට ඇති සංවාදය ඉලක්ක පුස්තකාලයට වඩා අනිත් භාෂා වලට සහය දක්වයි.\n\nසංවාදය මඟින් සපයන අමතර භාෂා සම්පත් තබා ගැනීමට මෙම භාෂා පුස්තකාලයට එක් කරන්න හෝ දැනට පවතින පුස්තකාල භාෂා සමඟ සිටීමට ඒවා අත් හරින්න.\n\nසටහන: සංවාදය මඟින් සහය නොදක්වන භාෂා සඳහා සංවාදයේ පෙරනිමි භාෂාවේ සම්පත් භාවිතා කරනු ඇත.\n"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "New"
-msgstr ""
+msgstr "නව "
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "මකන්න "
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Active"
-msgstr ""
+msgstr "සක්‍රිය"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Pass Count:"
-msgstr ""
+msgstr "අවසර ප්‍රමාණය:"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Breakpoints"
-msgstr ""
+msgstr "බිඳුම් ලක්ෂ"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
+#, fuzzy
 msgid  "Manage Breakpoints"
-msgstr ""
+msgstr "බිඳුම් ලක්‍ෂ කළමනාකරණය"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic Macros"
-msgstr ""
+msgstr "%PRODUCTNAME මූලික මැක්‍රෝ"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Existing macros ~in:"
-msgstr ""
+msgstr "පවතින මැක්‍රෝ ඇත්තේ (~i):"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Macro name"
-msgstr ""
+msgstr "මැක්‍රෝ නාමය (~M) "
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Macro ~from"
-msgstr ""
+msgstr "මැක්‍රෝව ලැබුනේ (~f)"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Save m~acro in"
-msgstr ""
+msgstr "මැක්‍රෝව මෙහි සුරකින්න (~a)"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "De~scription"
-msgstr ""
+msgstr "විස්තරය (~s) "
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "R~un"
-msgstr ""
+msgstr "ධාවනය කරන්න (~u) "
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "වසන්න "
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Assign..."
-msgstr ""
+msgstr "පවරන්න... (~A) "
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "සංස්කරණය කරන්න (~E)"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "New ~Library"
-msgstr ""
+msgstr "නව පුස්තකාලය (~L)"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "New M~odule"
-msgstr ""
+msgstr "නව මොඩියුලය (~o) "
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "මකන්න (~D) "
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
+msgstr "සංවිධායක... (~O)"
 
 #: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
+#, fuzzy
 msgid  "Macro"
-msgstr ""
-
-#: basicide/macrodlg.src#RID_STR_BTNDEL.STRING.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "මැක්‍රෝ"
 
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
-
-#: basicide/macrodlg.src#RID_STR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr ""
+msgstr "නව (~N) "
 
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
+#, fuzzy
 msgid  "Choose"
-msgstr ""
+msgstr "තෝරන්න "
 
 #: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
+#, fuzzy
 msgid  "Run"
-msgstr ""
+msgstr "ධාවනය කරන්න"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "සුරකින්න (~S)"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic Macro Organizer"
-msgstr ""
+msgstr "%PRODUCTNAME මූලික මැක්‍රෝ සංවිධායක"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Modules"
-msgstr ""
+msgstr "මොඩියුල "
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Dialogs"
-msgstr ""
+msgstr "සංවාද "
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Libraries"
-msgstr ""
+msgstr "පුස්තකාල "
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "M~odule"
-msgstr ""
+msgstr "මොඩියුලය (~o) "
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "සංස්කරණය කරන්න (~E)"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "වසන්න "
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
+msgstr "නව... (~N) "
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "මකන්න (~D) "
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Dialog"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "සංවාදය"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "L~ocation"
-msgstr ""
+msgstr "පිහිටුම (~o)"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Library"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr ""
+msgstr "පුස්තකාලය (~L)"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Password..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
+msgstr "මුරපදය... (~P) "
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Import..."
-msgstr ""
+msgstr "ආයාත... (~I) "
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "E~xport..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "නිර්යාත කරන්න... (~x)"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "අභිරුචි"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Insert as reference (read-only)"
-msgstr ""
+msgstr "යොමුව ලෙස ඇතුළු කරන්න (කියවීමට පමණයි)"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Replace existing libraries"
-msgstr ""
+msgstr "පවතින පුස්තකාල ප්‍රතිස්ථාපනය කරන්න "
 
 #: basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name:"
-msgstr ""
+msgstr "නම: (~N)"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Export Basic library"
-msgstr ""
+msgstr "මූලික පුස්තකාලය නිර්යාත කරන්න"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Export as ~extension"
-msgstr ""
+msgstr "දිගුව ලෙස නිර්යාත කරන්න"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Export as BASIC library"
-msgstr ""
+msgstr "BASIC පුස්තකාලය ලෙස නිර්යාත කරන්න"
 
 #: basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "Export library as extension"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_STR_EXPORTBASIC.STRING.TEXT
-msgid  "Export as BASIC library"
-msgstr ""
+msgstr "පුස්තකාලය දිගුවක් ලෙස නිර්යාත කරන්න"
 
 #: basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
+#, fuzzy
 msgid  "Extension"
-msgstr ""
+msgstr "දිගුව"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
-
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr ""
+msgstr "විස්තරය"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Help information"
-msgstr ""
+msgstr "උදව් තොරතුරු"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Help ID"
-msgstr ""
+msgstr "උදව් ID"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Help file name"
-msgstr ""
+msgstr "උදව් ගොනු නාමය"
 
 #: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Objects"
-msgstr ""
+msgstr "වස්තු"
 
 #: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Show"
-msgstr ""
+msgstr "දර්ශනය "
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
 msgstr ""
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Properties: "
-msgstr ""
+msgstr "ගුණාංග: "
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "No Control marked"
-msgstr ""
+msgstr "පාලනයන් සලකුණු කර නැත"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
+#, fuzzy
 msgid  "Multiselection"
-msgstr ""
+msgstr "බහු තේරීම් "
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Manage User Interface Languages [$1]"
-msgstr ""
+msgstr "පරිශීලක අතුරු මුහුණත් භාෂා කළමණාකරනය කරන්න [$1] "
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Present Languages"
-msgstr ""
+msgstr "පවතින භාෂා "
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Add..."
-msgstr ""
+msgstr "එක් කරන්න... "
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "මකන්න "
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "පෙරනිමි"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "පරිශීලක අතුරු මුහුණතක් දේශීයකරණය කර නොමැති නම් පෙරනිමි බස භාවිතා වන ඇත. තවද අලුතෙන් එක් කළ භාෂා  සම්පත් සඳහා පෙරනිමි බසින් ඇති සියලු අනුලකුණු වැල් පිටපත් වනු ඇත."
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "වසන්න (~C)"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
+#, fuzzy
 msgid  "[Default Language]"
-msgstr ""
+msgstr "[පෙරනිමි භාෂාව]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "මකන්න (~D) "
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
+#, fuzzy
 msgid  "<Press 'Add' to create language resources>"
-msgstr ""
+msgstr "<භාෂා සම්පත් තැනීම සඳහා 'එක් කරන්න' ඔබන්න>"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Delete Language Resources"
-msgstr ""
-
-#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "භාෂා සම්පත් මකන්න"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Set Default User Interface Language"
-msgstr ""
+msgstr "පෙරනිමි පරිශීලක අතුරු මුහුණත් බස පිහිටුවන්න"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Default language"
-msgstr ""
+msgstr "පෙරනිමි භාෂාව"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "පෙරනිමි පරිශීලක අතුරු මුහුණත් බස නිර්වචනය සඳහා භාෂාවක් තෝරන්න. තෝරාගත් භාෂාව සඳහා තැනෙන සම්පත් වලට දැනට ඇති සියලු අනු ලකුණු වැල් පැවරෙනු ඇත."
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Add User Interface Languages"
-msgstr ""
+msgstr "පරිශීලක අතුරු මුහුණත් භාෂා එකතු කරන්න "
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Available Languages"
-msgstr ""
+msgstr "ලබාගත හැකි භාෂා"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.STRING.TEXT
+#, fuzzy
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "එක් කළයුතු භාෂා තෝරන්න. මෙම භාෂා සඳහා අවශ්‍ය වන සම්පත් පුස්තකාලය තුළ තැනෙනු ඇත. වත්මන් පෙරනිමි පරිශීලක අතුරු මුහුණත් භාෂාවේ අනු ලකුණු වැල් වචන මෙම නව සම්පත් වෙතට පෙරනිමියෙන්ම පිටපත් වනු ඇත."

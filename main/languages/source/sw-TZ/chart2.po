@@ -69,31 +69,31 @@ msgstr ""
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
 msgid  "Axes"
-msgstr ""
+msgstr "Jira kuu"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 msgid  "Major grids"
-msgstr ""
+msgstr "Gridi msingi"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
 msgid  "~X axis"
-msgstr ""
+msgstr "Jira X"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CHECKBOX.TEXT
 msgid  "~Y axis"
-msgstr ""
+msgstr "Jira Y"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
 msgid  "~Z axis"
-msgstr ""
+msgstr "Jira Z"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
 msgid  "Secondary axes"
-msgstr ""
+msgstr "Jira sekondari"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 msgid  "Minor grids"
-msgstr ""
+msgstr "Gridi ndogo"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TABDIALOG.TEXT
 msgid  "Character"
@@ -225,7 +225,7 @@ msgstr ""
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_SYMBOL.CHECKBOX.TEXT
 msgid  "Show ~legend key"
-msgstr ""
+msgstr "Onesha ikoni za lijendi zenye lebo"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_PLACEMENT.FIXEDTEXT.TEXT
 msgid  "Place~ment"
@@ -333,11 +333,11 @@ msgstr ""
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_X_SECONDARY.CHECKBOX.TEXT
 msgid  "X ~axis"
-msgstr ""
+msgstr "Jira X"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Y_SECONDARY.CHECKBOX.TEXT
 msgid  "Y ax~is"
-msgstr ""
+msgstr "Jira Y"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Z_SECONDARY.CHECKBOX.TEXT
 msgid  "Z axi~s"
@@ -513,11 +513,11 @@ msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
 msgid  "Columns and Lines"
-msgstr ""
+msgstr "Chati unganishi: Mistari na safu-wima"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
 msgid  "Stacked Columns and Lines"
-msgstr ""
+msgstr "Chati muungano: Mistari na safu-wima rundike"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
 msgid  "Net"
@@ -529,35 +529,35 @@ msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.STRING.TEXT
 msgid  "Stock Chart 1"
-msgstr ""
+msgstr "Chati Bidhaa 1"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.STRING.TEXT
 msgid  "Stock Chart 2"
-msgstr ""
+msgstr "Chati Bidhaa 2"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.STRING.TEXT
 msgid  "Stock Chart 3"
-msgstr ""
+msgstr "Chati Bidhaa 3"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
 msgid  "Stock Chart 4"
-msgstr ""
+msgstr "Chati Bidhaa 4"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
 msgid  "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
 msgid  "Stacked"
-msgstr ""
+msgstr "Stacked"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
 msgid  "Percent Stacked"
-msgstr ""
+msgstr "Asilimia"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
 msgid  "Deep"
-msgstr ""
+msgstr "Kina kirefu"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
 msgid  "Filled"
@@ -629,7 +629,7 @@ msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
 msgid  "Borders"
-msgstr ""
+msgstr "Borders"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 msgid  "Area"
@@ -832,10 +832,6 @@ msgid  "Legend Key"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.STRING.TEXT
-msgid  "Data Series"
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.STRING.TEXT
 msgid  "Data Series"
 msgstr ""
 
@@ -1093,15 +1089,15 @@ msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.STRING.TEXT
 msgid  "Negative and Positive"
-msgstr ""
+msgstr "Viashirio Juu na Chini"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
 msgid  "Negative"
-msgstr ""
+msgstr "Kiashiria cha juu"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
 msgid  "Positive"
-msgstr ""
+msgstr "Kiashirio cha juu"
 
 #: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
 msgid  "From Data Table"
@@ -1109,19 +1105,19 @@ msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
 msgid  "Linear (%SERIESNAME)"
-msgstr ""
+msgstr "Regresheni ya mstari"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.STRING.TEXT
 msgid  "Logarithmic (%SERIESNAME)"
-msgstr ""
+msgstr "Regresheni ya logi"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.STRING.TEXT
 msgid  "Exponential (%SERIESNAME)"
-msgstr ""
+msgstr "Regresheni ya vizio"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.STRING.TEXT
 msgid  "Power (%SERIESNAME)"
-msgstr ""
+msgstr "Regresheni ya vipeo"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.STRING.TEXT
 msgid  "Mean (%SERIESNAME)"
@@ -1145,7 +1141,7 @@ msgstr ""
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
 msgid  " degrees"
-msgstr ""
+msgstr " degrees"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 msgid  "~Right-angled axes"
@@ -1181,51 +1177,51 @@ msgstr ""
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
 msgid  "Sho~w labels"
-msgstr ""
+msgstr "Onesha lebo"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
 msgid  "Text orientation"
-msgstr ""
+msgstr "Zungusha matini"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TRISTATEBOX.TEXT
 msgid  "Ve~rtically stacked"
-msgstr ""
+msgstr "Ve~rtically stacked"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FIXEDTEXT.TEXT
 msgid  "~Degrees"
-msgstr ""
+msgstr "Nyuzi"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
 msgid  "Text flow"
-msgstr ""
+msgstr "Mtiririko wa matini"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
 msgid  "O~verlap"
-msgstr ""
+msgstr "Pishana"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CHECKBOX.TEXT
 msgid  "~Break"
-msgstr ""
+msgstr "Katisha"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FIXEDLINE.TEXT
 msgid  "Order"
-msgstr ""
+msgstr "Order"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RADIOBUTTON.TEXT
 msgid  "~Tile"
-msgstr ""
+msgstr "~Tile"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RADIOBUTTON.TEXT
 msgid  "St~agger odd"
-msgstr ""
+msgstr "Msepetuko witiri"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RADIOBUTTON.TEXT
 msgid  "Stagger ~even"
-msgstr ""
+msgstr "Msepetuko shufwa"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
 msgid  "A~utomatic"
-msgstr ""
+msgstr "A~utomatic"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
@@ -1441,7 +1437,7 @@ msgstr ""
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
 msgid  "Position"
-msgstr ""
+msgstr "Position"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
 msgid  "Text orientation"
@@ -1591,37 +1587,33 @@ msgstr ""
 msgid  "Re~ference value"
 msgstr ""
 
-#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CHECKBOX.TEXT
-msgid  "Automat~ic"
-msgstr ""
-
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
 msgid  "Align data series to"
-msgstr ""
+msgstr "Mpanga mfululizo wa data kwenye"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
 msgid  "Primary Y axis"
-msgstr ""
+msgstr "Jira Y msingi"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
 msgid  "Secondary Y axis"
-msgstr ""
+msgstr "Jira Y la pili"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Vipimo"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
 msgid  "~Overlap"
-msgstr ""
+msgstr "Pishana"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
 msgid  "~Spacing"
-msgstr ""
+msgstr "Unafasishaji"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
 msgid  "Connection lines"
-msgstr ""
+msgstr "Mistari unganishi"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
 msgid  "Show ~bars side by side"
@@ -1653,15 +1645,15 @@ msgstr ""
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
 msgid  "Ve~rtically stacked"
-msgstr ""
+msgstr "Ve~rtically stacked"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
 msgid  "~Degrees"
-msgstr ""
+msgstr "Nyuzi"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
 msgid  "Text orientation"
-msgstr ""
+msgstr "Text direction"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"

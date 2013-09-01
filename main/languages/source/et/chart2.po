@@ -32,80 +32,97 @@ msgstr ""
 
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Data Table"
-msgstr ""
+msgstr "Andmete tabel"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Insert Row"
-msgstr ""
+msgstr "Lisa rida"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Insert Series"
-msgstr ""
+msgstr "Lisa jada"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.TOOLBOXITEM.TEXT
 msgid  "Insert Text Column"
 msgstr ""
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Delete Row"
-msgstr ""
+msgstr "Kustuta rida"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Delete Series"
-msgstr ""
+msgstr "Kustuta jada"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Move Series Right"
-msgstr ""
+msgstr "Liiguta jada paremale"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Move Row Down"
-msgstr ""
+msgstr "Liiguta rida alla"
 
 #: controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Data Ranges"
-msgstr ""
+msgstr "Andmevahemikud"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Axes"
-msgstr ""
+msgstr "Teljed"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Major grids"
-msgstr ""
+msgstr "Põhivõrgud"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~X axis"
-msgstr ""
+msgstr "X-telg"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Y axis"
-msgstr ""
+msgstr "Y-telg"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Z axis"
-msgstr ""
+msgstr "Z-telg"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Secondary axes"
-msgstr ""
+msgstr "Lisateljed"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Minor grids"
-msgstr ""
+msgstr "Alamvõrgud"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TABDIALOG.TEXT
 msgid  "Character"
 msgstr ""
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "Font"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effects"
-msgstr ""
+msgstr "Fondiefektid"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
 msgid  "Font Position"
@@ -120,472 +137,588 @@ msgid  "Indents & Spacing"
 msgstr ""
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "Joondus"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Asian Typography"
-msgstr ""
+msgstr "Aasia tüpograafia"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
 msgid  "Tab"
 msgstr ""
 
 #: controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TABDIALOG.TEXT
+#, fuzzy
 msgid  "3D View"
-msgstr ""
+msgstr "Ruumiline vaade"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Box"
-msgstr ""
+msgstr "Risttahukas"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Cylinder"
-msgstr ""
+msgstr "Silinder"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Cone"
-msgstr ""
+msgstr "Koonus"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Pyramid"
-msgstr ""
+msgstr "Püramiid"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Best fit"
-msgstr ""
+msgstr "Parim suurus"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Center"
-msgstr ""
+msgstr "Keskel"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Above"
-msgstr ""
+msgstr "Kohal"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Top left"
-msgstr ""
+msgstr "Üleval vasakul"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr "Vasakul"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Bottom left"
-msgstr ""
+msgstr "All vasakul"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Below"
-msgstr ""
+msgstr "All"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Bottom right"
-msgstr ""
+msgstr "All paremal"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr "Paremal"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Top right"
-msgstr ""
+msgstr "Üleval paremal"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Inside"
-msgstr ""
+msgstr "Sees"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Outside"
-msgstr ""
+msgstr "Väljas"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Near origin"
-msgstr ""
+msgstr "Baaspunkti juures"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show value as ~number"
-msgstr ""
+msgstr "Väärtust kuvatakse arvuna"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_NUMBERFORMAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Number ~format..."
-msgstr ""
+msgstr "Arvu vorming..."
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_PERCENTAGE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show value as ~percentage"
-msgstr ""
+msgstr "Väärtust kuvatakse protsendina"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_PERCENT_NUMBERFORMAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Percentage f~ormat..."
-msgstr ""
+msgstr "Protsendi vorming..."
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_CATEGORY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~category"
-msgstr ""
+msgstr "Kategooria kuvamine"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_SYMBOL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~legend key"
-msgstr ""
+msgstr "Legendi tähise kuvamine"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_PLACEMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Place~ment"
-msgstr ""
+msgstr "Paigutus"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Rotate Text"
-msgstr ""
+msgstr "Teksti pööramine"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "Kraadid"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
-msgstr ""
+msgstr "Teksti suund"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Standard Error"
-msgstr ""
+msgstr "Standardviga"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Standard Deviation"
-msgstr ""
+msgstr "Standardhälve"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Variance"
-msgstr ""
+msgstr "Dispersioon"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Error Margin"
-msgstr ""
+msgstr "Vea piir"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Error Category"
-msgstr ""
+msgstr "Vea kategooria"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~None"
-msgstr ""
+msgstr "Puudub"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_CONST.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Constant Value"
-msgstr ""
+msgstr "Konstant"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_PERCENT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Percentage"
-msgstr ""
+msgstr "Protsent"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_RANGE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Cell ~Range"
-msgstr ""
+msgstr "Lahtrite vahemik"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Parameters"
-msgstr ""
+msgstr "Parameetrid"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "P~ositive (+)"
-msgstr ""
+msgstr "Positiivne (+)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_NEGATIVE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Negative (-)"
-msgstr ""
+msgstr "Negatiivne (-)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Same value for both"
-msgstr ""
+msgstr "Sama väärtus mõlema jaoks"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Error Indicator"
-msgstr ""
+msgstr "Vea indikaator"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Positive ~and Negative"
-msgstr ""
+msgstr "Positiivne ja negatiivne"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_POSITIVE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Pos~itive"
-msgstr ""
+msgstr "Positiivne"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NEGATIVE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Ne~gative"
-msgstr ""
+msgstr "Negatiivne"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY(_XPOS_,_YPOS_).CBX_SHOWLEGEND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Display legend"
-msgstr ""
+msgstr "Legendi kuvamine"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_LEFT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Left"
-msgstr ""
+msgstr "Vasakul"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_RIGHT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Right"
-msgstr ""
+msgstr "Paremal"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_TOP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Top"
-msgstr ""
+msgstr "Üleval"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_BOTTOM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Bottom"
-msgstr ""
+msgstr "All"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_X_SECONDARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "X ~axis"
-msgstr ""
+msgstr "X-telg"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Y_SECONDARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Y ax~is"
-msgstr ""
+msgstr "Y-telg"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Z_SECONDARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Z axi~s"
-msgstr ""
+msgstr "Z-telg"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Space"
-msgstr ""
+msgstr "Tühik"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Comma"
-msgstr ""
+msgstr "Koma"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Semicolon"
-msgstr ""
+msgstr "Semikoolon"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "New line"
-msgstr ""
+msgstr "Reavahetus"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "Pealkiri"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Subtitle"
-msgstr ""
+msgstr "Alapealkiri"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Axes"
-msgstr ""
+msgstr "Teljed"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~X axis"
-msgstr ""
+msgstr "X-telg"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Y_AXIS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Y axis"
-msgstr ""
+msgstr "Y-telg"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Z axis"
-msgstr ""
+msgstr "Z-telg"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Secondary Axes"
-msgstr ""
+msgstr "Lisateljed"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "X ~axis"
-msgstr ""
+msgstr "X-telg"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_Y_AXIS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Y ax~is"
-msgstr ""
+msgstr "Y-telg"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_TYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Regression Type"
-msgstr ""
+msgstr "Regressiooni tüüp"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~None"
-msgstr ""
+msgstr "Puudub"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LINEAR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Linear"
-msgstr ""
+msgstr "Lineaarne"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LOGARITHMIC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "L~ogarithmic"
-msgstr ""
+msgstr "Logaritmiline"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_EXPONENTIAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "E~xponential"
-msgstr ""
+msgstr "Eksponentsiaalne"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_POWER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Power"
-msgstr ""
+msgstr "Astmefunktsioon"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Equation"
-msgstr ""
+msgstr "Võrrand"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~equation"
-msgstr ""
+msgstr "Võrrandi kuvamine"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_CORRELATION_COEFF.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~coefficient of determination (R²)"
-msgstr ""
+msgstr "Korrelatsioonikordaja (R²) kuvamine"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.STRING.TEXT
+#, fuzzy
 msgid  "Simple"
-msgstr ""
+msgstr "Lihtne"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.STRING.TEXT
+#, fuzzy
 msgid  "Realistic"
-msgstr ""
+msgstr "Realistlik"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.STRING.TEXT
+#, fuzzy
 msgid  "Custom"
-msgstr ""
+msgstr "Kohandatud"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.STRING.TEXT
+#, fuzzy
 msgid  "Shape"
-msgstr ""
+msgstr "Kujund"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.STRING.TEXT
+#, fuzzy
 msgid  "~Number of lines"
-msgstr ""
+msgstr "~Joonte arv"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.STRING.TEXT
+#, fuzzy
 msgid  "Separator"
-msgstr ""
+msgstr "Eraldaja"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Column"
-msgstr ""
+msgstr "Tulp"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
+#, fuzzy
 msgid  "Bar"
-msgstr ""
+msgstr "Riba"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
+#, fuzzy
 msgid  "Area"
-msgstr ""
+msgstr "Ala"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
+#, fuzzy
 msgid  "Pie"
-msgstr ""
+msgstr "Sektor"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
+#, fuzzy
 msgid  "Exploded Pie Chart"
-msgstr ""
+msgstr "Eraldatud sektoritega diagramm"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
+#, fuzzy
 msgid  "Exploded Donut Chart"
-msgstr ""
+msgstr "Eraldatud rõngastega diagramm"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
+#, fuzzy
 msgid  "Donut"
-msgstr ""
+msgstr "Rõngas"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
+#, fuzzy
 msgid  "Line"
-msgstr ""
+msgstr "Joon"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
+#, fuzzy
 msgid  "XY (Scatter)"
-msgstr ""
+msgstr "XY (hajutatud)"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.STRING.TEXT
+#, fuzzy
 msgid  "Points and Lines"
-msgstr ""
+msgstr "Punktid ja jooned"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "Points Only"
-msgstr ""
+msgstr "Ainult punktid"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "Lines Only"
-msgstr ""
+msgstr "Ainult jooned"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
+#, fuzzy
 msgid  "3D Lines"
-msgstr ""
+msgstr "Ruumilised jooned"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
+#, fuzzy
 msgid  "Column and Line"
-msgstr ""
+msgstr "Tulp ja joon"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Columns and Lines"
-msgstr ""
+msgstr "Tulbad ja jooned"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Stacked Columns and Lines"
-msgstr ""
+msgstr "Virnastatud tulbad ja jooned"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
+#, fuzzy
 msgid  "Net"
-msgstr ""
+msgstr "Võrk"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
+#, fuzzy
 msgid  "Stock"
-msgstr ""
+msgstr "Börsidiagramm"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.STRING.TEXT
+#, fuzzy
 msgid  "Stock Chart 1"
-msgstr ""
+msgstr "Börsidiagramm 1"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.STRING.TEXT
+#, fuzzy
 msgid  "Stock Chart 2"
-msgstr ""
+msgstr "Börsidiagramm 2"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.STRING.TEXT
+#, fuzzy
 msgid  "Stock Chart 3"
-msgstr ""
+msgstr "Börsidiagramm 3"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
+#, fuzzy
 msgid  "Stock Chart 4"
-msgstr ""
+msgstr "Börsidiagramm 4"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
+#, fuzzy
 msgid  "Normal"
-msgstr ""
+msgstr "Tavaline"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
+#, fuzzy
 msgid  "Stacked"
-msgstr ""
+msgstr "Virnastatud"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
+#, fuzzy
 msgid  "Percent Stacked"
-msgstr ""
+msgstr "Protsentuaalselt virnastatud"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
+#, fuzzy
 msgid  "Deep"
-msgstr ""
+msgstr "Sügav"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
+#, fuzzy
 msgid  "Filled"
-msgstr ""
+msgstr "Täidetud"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
+#, fuzzy
 msgid  "Bubble"
-msgstr ""
+msgstr "Mull"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
+#, fuzzy
 msgid  "Bubble Chart"
-msgstr ""
+msgstr "Mulldiagramm"
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Numbers are required. Check your input."
-msgstr ""
+msgstr "Nõutud on arvud. Kontrolli sisestatud väärtusi."
 
 #: controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.STRING.TEXT
+#, fuzzy
 msgid  "The major interval requires a positive number. Check your input."
-msgstr ""
+msgstr "Põhiintervall peab olema positiivne arv. Kontrolli väärtusi."
 
 #: controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.STRING.TEXT
+#, fuzzy
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "Logaritmiline skaala nõuab positiivseid arve. Kontrolli väärtusi."
 
 #: controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The minimum must be lower than the maximum. Check your input."
-msgstr ""
+msgstr "Miinimumväärtus peab olema väiksem maksimumväärtusest. Kontrolli väärtusi."
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.STRING.TEXT
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
@@ -596,64 +729,79 @@ msgid  "The major and minor interval need to be greater or equal to the resoluti
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "Chart Wizard"
-msgstr ""
+msgstr "Diagrammi loomise nõustaja"
 
 #: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Smooth Lines"
-msgstr ""
+msgstr "Sujuvad jooned"
 
 #: controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Number Format for Percentage Value"
-msgstr ""
+msgstr "Protsendilise väärtuse arvu vorming"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Chart Type"
-msgstr ""
+msgstr "Diagrammi tüüp"
 
 #: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
+#, fuzzy
 msgid  "Data Range"
-msgstr ""
+msgstr "Andmevahemik"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
+#, fuzzy
 msgid  "Chart Elements"
-msgstr ""
+msgstr "Diagrammi elemendid"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
+#, fuzzy
 msgid  "Chart Location"
-msgstr ""
+msgstr "Diagrammi asukoht"
 
 #: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
+#, fuzzy
 msgid  "Line"
-msgstr ""
+msgstr "Joon"
 
 #: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
+#, fuzzy
 msgid  "Borders"
-msgstr ""
+msgstr "Äärised"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
+#, fuzzy
 msgid  "Area"
-msgstr ""
+msgstr "Ala"
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.STRING.TEXT
+#, fuzzy
 msgid  "Transparency"
-msgstr ""
+msgstr "Läbipaistvus"
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "Font"
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
+#, fuzzy
 msgid  "Font Effects"
-msgstr ""
+msgstr "Fondiefektid"
 
 #: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
+#, fuzzy
 msgid  "Numbers"
-msgstr ""
+msgstr "Arvud"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "Asukoht"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
@@ -664,448 +812,552 @@ msgid  "Down"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Layout"
-msgstr ""
+msgstr "Paigutus"
 
 #: controller/dialogs/Strings.src#STR_PAGE_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "Sätted"
 
 #: controller/dialogs/Strings.src#STR_PAGE_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Scale"
-msgstr ""
+msgstr "Mõõtkava"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
+#, fuzzy
 msgid  "Positioning"
-msgstr ""
+msgstr "Asukoht"
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "Tüüp"
 
 #: controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.STRING.TEXT
+#, fuzzy
 msgid  "Y Error Bars"
-msgstr ""
+msgstr "Y-vearibad"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "Joondus"
 
 #: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
+#, fuzzy
 msgid  "Perspective"
-msgstr ""
+msgstr "Perspektiiv"
 
 #: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
+#, fuzzy
 msgid  "Appearance"
-msgstr ""
+msgstr "Välimus"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
+#, fuzzy
 msgid  "Illumination"
-msgstr ""
+msgstr "Valgustus"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ASIAN.STRING.TEXT
+#, fuzzy
 msgid  "Asian Typography"
-msgstr ""
+msgstr "Aasia tüpograafia"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
+#, fuzzy
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "Keskväärtuse joon väärtusega %AVERAGE_VALUE ja standardhälbega %STD_DEVIATION"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "Axis"
-msgstr ""
+msgstr "Telg"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
+#, fuzzy
 msgid  "X Axis"
-msgstr ""
+msgstr "X-telg"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.STRING.TEXT
+#, fuzzy
 msgid  "Y Axis"
-msgstr ""
+msgstr "Y-telg"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.STRING.TEXT
+#, fuzzy
 msgid  "Z Axis"
-msgstr ""
+msgstr "Z-telg"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "Secondary X Axis"
-msgstr ""
+msgstr "Teine X-telg"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "Secondary Y Axis"
-msgstr ""
+msgstr "Teine Y-telg"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
+#, fuzzy
 msgid  "Axes"
-msgstr ""
+msgstr "Teljed"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
+#, fuzzy
 msgid  "Grids"
-msgstr ""
+msgstr "Koordinaatvõrgud"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID.STRING.TEXT
+#, fuzzy
 msgid  "Grid"
-msgstr ""
+msgstr "Koordinaatvõrk"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.STRING.TEXT
+#, fuzzy
 msgid  "X Axis Major Grid"
-msgstr ""
+msgstr "X-telje põhivõrk"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.STRING.TEXT
+#, fuzzy
 msgid  "Y Axis Major Grid"
-msgstr ""
+msgstr "Y-telje põhivõrk"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.STRING.TEXT
+#, fuzzy
 msgid  "Z Axis Major Grid"
-msgstr ""
+msgstr "Z-telje põhivõrk"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.STRING.TEXT
+#, fuzzy
 msgid  "X Axis Minor Grid"
-msgstr ""
+msgstr "X-telje alamvõrk"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.STRING.TEXT
+#, fuzzy
 msgid  "Y Axis Minor Grid"
-msgstr ""
+msgstr "Y-telje alamvõrk"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.STRING.TEXT
+#, fuzzy
 msgid  "Z Axis Minor Grid"
-msgstr ""
+msgstr "Z-telje alamvõrk"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
+#, fuzzy
 msgid  "Legend"
-msgstr ""
+msgstr "Legend"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Title"
-msgstr ""
+msgstr "Pealkiri"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLES.STRING.TEXT
+#, fuzzy
 msgid  "Titles"
-msgstr ""
+msgstr "Pealkirjad"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
+#, fuzzy
 msgid  "Main Title"
-msgstr ""
+msgstr "Üldpealkiri"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
+#, fuzzy
 msgid  "Subtitle"
-msgstr ""
+msgstr "Alapealkiri"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "X Axis Title"
-msgstr ""
+msgstr "X-telje pealkiri"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "Y Axis Title"
-msgstr ""
+msgstr "Y-telje pealkiri"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "Z Axis Title"
-msgstr ""
+msgstr "Z-telje pealkiri"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "Secondary X Axis Title"
-msgstr ""
+msgstr "Teise X-telje pealkiri"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "Secondary Y Axis Title"
-msgstr ""
+msgstr "Teise Y-telje pealkiri"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Label"
-msgstr ""
+msgstr "Pealdis"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.STRING.TEXT
+#, fuzzy
 msgid  "Data Labels"
-msgstr ""
+msgstr "Andmesildid"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
+#, fuzzy
 msgid  "Data Point"
-msgstr ""
+msgstr "Andmepunkt"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
+#, fuzzy
 msgid  "Data Points"
-msgstr ""
+msgstr "Andmepunktid"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.STRING.TEXT
+#, fuzzy
 msgid  "Legend Key"
-msgstr ""
+msgstr "Legendi tähis"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.STRING.TEXT
+#, fuzzy
 msgid  "Data Series"
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.STRING.TEXT
-msgid  "Data Series"
-msgstr ""
+msgstr "Andmejadad"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE.STRING.TEXT
+#, fuzzy
 msgid  "Trend Line"
-msgstr ""
+msgstr "Trendijoon"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVES.STRING.TEXT
+#, fuzzy
 msgid  "Trend Lines"
-msgstr ""
+msgstr "Trendijooned"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.STRING.TEXT
+#, fuzzy
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
-msgstr ""
+msgstr "Trendijoon %FORMULA täpsusega R² = %RSQUARED"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
+#, fuzzy
 msgid  "Mean Value Line"
-msgstr ""
+msgstr "Keskväärtuse joon"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
+#, fuzzy
 msgid  "Equation"
-msgstr ""
+msgstr "Võrrand"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
+#, fuzzy
 msgid  "Error Bars"
-msgstr ""
+msgstr "Vearibad"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
+#, fuzzy
 msgid  "Stock Loss"
-msgstr ""
+msgstr "Börsikahjum"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.STRING.TEXT
+#, fuzzy
 msgid  "Stock Gain"
-msgstr ""
+msgstr "Börsikasum"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Chart Area"
-msgstr ""
+msgstr "Diagrammiala"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
-msgstr ""
+msgstr "Diagramm"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
+#, fuzzy
 msgid  "Chart Wall"
-msgstr ""
+msgstr "Diagrammi sein"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
+#, fuzzy
 msgid  "Chart Floor"
-msgstr ""
+msgstr "Diagrammi põhi"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 msgid  "Drawing Object"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.STRING.TEXT
+#, fuzzy
 msgid  "Select data range"
-msgstr ""
+msgstr "Vali andmevahemik"
 
 #: controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Select a color using the color dialog"
-msgstr ""
+msgstr "Vali värvidialoogi abil värv"
 
 #: controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.STRING.TEXT
+#, fuzzy
 msgid  "Light Source %LIGHTNUMBER"
-msgstr ""
+msgstr "Valgusallikas %LIGHTNUMBER"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATASERIES.STRING.TEXT
+#, fuzzy
 msgid  "Data Series '%SERIESNAME'"
-msgstr ""
+msgstr "Andmejada '%SERIESNAME'"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
+#, fuzzy
 msgid  "Data Point %POINTNUMBER"
-msgstr ""
+msgstr "Andmepunkt %POINTNUMBER"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
+#, fuzzy
 msgid  "Values: %POINTVALUES"
-msgstr ""
+msgstr "Väärtused: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
+#, fuzzy
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Andmepunkt %POINTNUMBER, andmejada %SERIESNUMBER, väärtused: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.STRING.TEXT
+#, fuzzy
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Andmepunkt %POINTNUMBER on andmejadas %SERIESNUMBER valitud, väärtused: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.STRING.TEXT
+#, fuzzy
 msgid  "%OBJECTNAME selected"
-msgstr ""
+msgstr "%OBJECTNAME on valitud"
 
 #: controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.STRING.TEXT
+#, fuzzy
 msgid  "Pie exploded by %PERCENTVALUE percent"
-msgstr ""
+msgstr "Sektor on eraldatud, %PERCENTVALUE protsenti"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.STRING.TEXT
+#, fuzzy
 msgid  "%OBJECTNAME for Data Series '%SERIESNAME'"
-msgstr ""
+msgstr "%OBJECTNAME andmejada '%SERIESNAME' jaoks"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.STRING.TEXT
+#, fuzzy
 msgid  "%OBJECTNAME for all Data Series"
-msgstr ""
+msgstr "%OBJECTNAME kõikide andmejadade jaoks"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Edit chart type"
-msgstr ""
+msgstr "Diagrammi tüübi redigeerimine"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.STRING.TEXT
+#, fuzzy
 msgid  "Edit data ranges"
-msgstr ""
+msgstr "Andmevahemike muutmine"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "Edit 3D view"
-msgstr ""
+msgstr "Ruumilise vaate redigeerimine"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Edit chart data"
-msgstr ""
+msgstr "Diagrammi andmete redigeerimine"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.STRING.TEXT
+#, fuzzy
 msgid  "Legend on/off"
-msgstr ""
+msgstr "Legend sees/väljas"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.STRING.TEXT
+#, fuzzy
 msgid  "Horizontal grid on/off"
-msgstr ""
+msgstr "Horisontaalne võrk sees/väljas"
 
 #: controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Scale Text"
-msgstr ""
+msgstr "Teksti skaleerimine"
 
 #: controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Automatic Layout"
-msgstr ""
+msgstr "Automaatne paigutus"
 
 #: controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
+#, fuzzy
 msgid  "This function cannot be completed with the selected objects."
-msgstr ""
+msgstr "Seda funktsiooni ei saa kasutada valitud objektidega."
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.STRING.TEXT
 msgid  "Edit text"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Column %COLUMNNUMBER"
-msgstr ""
+msgstr "Veerg %COLUMNNUMBER"
 
 #: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Row %ROWNUMBER"
-msgstr ""
+msgstr "Rida %ROWNUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "Nimi"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X.STRING.TEXT
+#, fuzzy
 msgid  "X-Values"
-msgstr ""
+msgstr "X-väärtused"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y.STRING.TEXT
+#, fuzzy
 msgid  "Y-Values"
-msgstr ""
+msgstr "Y-väärtused"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
+#, fuzzy
 msgid  "Bubble Sizes"
-msgstr ""
+msgstr "Mullide suurus"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "X-Error-Bars"
-msgstr ""
+msgstr "X-vearibad"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.STRING.TEXT
+#, fuzzy
 msgid  "Positive X-Error-Bars"
-msgstr ""
+msgstr "Positiivsed X-vearibad"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.STRING.TEXT
+#, fuzzy
 msgid  "Negative X-Error-Bars"
-msgstr ""
+msgstr "Negatiivsed X-vearibad"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Y-Error-Bars"
-msgstr ""
+msgstr "Y-vearibad"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.STRING.TEXT
+#, fuzzy
 msgid  "Positive Y-Error-Bars"
-msgstr ""
+msgstr "Positiivsed Y-vearibad"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.STRING.TEXT
+#, fuzzy
 msgid  "Negative Y-Error-Bars"
-msgstr ""
+msgstr "Negatiivsed Y-vearibad"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.STRING.TEXT
+#, fuzzy
 msgid  "Open Values"
-msgstr ""
+msgstr "Avamisväärtused"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.STRING.TEXT
+#, fuzzy
 msgid  "Close Values"
-msgstr ""
+msgstr "Sulgemisväärtused"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
+#, fuzzy
 msgid  "Low Values"
-msgstr ""
+msgstr "Vähimad väärtused"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
+#, fuzzy
 msgid  "High Values"
-msgstr ""
+msgstr "Suurimad väärtused"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
+#, fuzzy
 msgid  "Categories"
-msgstr ""
+msgstr "Kategooriad"
 
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
+#, fuzzy
 msgid  "Unnamed Series"
-msgstr ""
+msgstr "Nimeta jada"
 
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
+#, fuzzy
 msgid  "Unnamed Series %NUMBER"
-msgstr ""
+msgstr "Nimeta jada %NUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
+#, fuzzy
 msgid  "Select Range for %VALUETYPE of %SERIESNAME"
-msgstr ""
+msgstr "Vali vahemik tüübile %VALUETYPE jadas %SERIESNAME"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.STRING.TEXT
+#, fuzzy
 msgid  "Select Range for Categories"
-msgstr ""
+msgstr "Vali kategooriale vahemik"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.STRING.TEXT
+#, fuzzy
 msgid  "Select Range for data labels"
-msgstr ""
+msgstr "Vali andmesiltidele vahemik"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.STRING.TEXT
+#, fuzzy
 msgid  "Select Range for Positive Error Bars"
-msgstr ""
+msgstr "Vali positiivsete veatulpade vahemik"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.STRING.TEXT
+#, fuzzy
 msgid  "Select Range for Negative Error Bars"
-msgstr ""
+msgstr "Vali negatiivsete veatulpade vahemik"
 
 #: controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.STRING.TEXT
+#, fuzzy
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Sinu viimane sisestus pole korrektne.\nKas eirata seda muudatust ja sulgeda dialoog?"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
+#, fuzzy
 msgid  "Left-to-right"
-msgstr ""
+msgstr "Vasakult paremale"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
+#, fuzzy
 msgid  "Right-to-left"
-msgstr ""
+msgstr "Paremalt vasakule"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
+#, fuzzy
 msgid  "Use superordinate object settings"
-msgstr ""
+msgstr "Kasutatakse ülemobjekti sätteid"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.STRING.TEXT
+#, fuzzy
 msgid  "Negative and Positive"
-msgstr ""
+msgstr "Negatiivne ja positiivne"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
+#, fuzzy
 msgid  "Negative"
-msgstr ""
+msgstr "Negatiivne"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
+#, fuzzy
 msgid  "Positive"
-msgstr ""
+msgstr "Positiivne"
 
 #: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
+#, fuzzy
 msgid  "From Data Table"
-msgstr ""
+msgstr "Andmete tabelist"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
 msgid  "Linear (%SERIESNAME)"
@@ -1128,380 +1380,473 @@ msgid  "Mean (%SERIESNAME)"
 msgstr ""
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sche~me"
-msgstr ""
+msgstr "Skeem"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Shading"
-msgstr ""
+msgstr "Toonimine"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Object borders"
-msgstr ""
+msgstr "Objektide äärised"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Rounded edges"
-msgstr ""
+msgstr "Ümardatud nurgad"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
+#, fuzzy
 msgid  " degrees"
-msgstr ""
+msgstr " kraadi"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Right-angled axes"
-msgstr ""
+msgstr "Teljed täisnurga all"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~X rotation"
-msgstr ""
+msgstr "Pööre X-suunas"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Y rotation"
-msgstr ""
+msgstr "Pööre Y-suunas"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Z rotation"
-msgstr ""
+msgstr "Pööre Z-suunas"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Perspective"
-msgstr ""
+msgstr "Perspektiiv"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Light source"
-msgstr ""
+msgstr "Valgusallikas"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Ambient light"
-msgstr ""
+msgstr "Taustavalgus"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.STRING.TEXT
 msgid  "Light Preview"
 msgstr ""
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Sho~w labels"
-msgstr ""
+msgstr "Siltide näitamine"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
-msgstr ""
+msgstr "Teksti paigutus"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TRISTATEBOX.TEXT
+#, fuzzy
 msgid  "Ve~rtically stacked"
-msgstr ""
+msgstr "Vertikaalselt virnastatud"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "Kraadid"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text flow"
-msgstr ""
+msgstr "Tekstivoog"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "O~verlap"
-msgstr ""
+msgstr "Kattumine"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Break"
-msgstr ""
+msgstr "Reamurdmine"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Order"
-msgstr ""
+msgstr "Järjestus"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Tile"
-msgstr ""
+msgstr "Paanidena"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "St~agger odd"
-msgstr ""
+msgstr "Paaritu järgustus"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Stagger ~even"
-msgstr ""
+msgstr "Paaris järgustus"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~utomatic"
-msgstr ""
+msgstr "Automaatne"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
-msgstr ""
+msgstr "Teksti suund"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Axis line"
-msgstr ""
+msgstr "Telje joon"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Cross other axis at"
-msgstr ""
+msgstr "Ristumine teise teljega punktis"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Start"
-msgstr ""
+msgstr "Algus"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "End"
-msgstr ""
+msgstr "Lõpp"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "Väärtus"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Category"
-msgstr ""
+msgstr "Kategooria"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Axis ~between categories"
-msgstr ""
+msgstr "Telg kategooriate vahel"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Labels"
-msgstr ""
+msgstr "Pealdised"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Place labels"
-msgstr ""
+msgstr "Pealdiste paigutus"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Near axis"
-msgstr ""
+msgstr "Telje kõrval"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Near axis (other side)"
-msgstr ""
+msgstr "Telje kõrval (teisel pool)"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Outside start"
-msgstr ""
+msgstr "Väljaspool algust"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Outside end"
-msgstr ""
+msgstr "Väljaspool lõppu"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Distance"
-msgstr ""
+msgstr "Vahemaa"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Interval marks"
-msgstr ""
+msgstr "Intervallimärgid"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Major:"
-msgstr ""
+msgstr "Põhiskaala:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Inner"
-msgstr ""
+msgstr "Seespool"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Outer"
-msgstr ""
+msgstr "Väljaspool"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Minor:"
-msgstr ""
+msgstr "Alamskaala:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "I~nner"
-msgstr ""
+msgstr "Seespool"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "O~uter"
-msgstr ""
+msgstr "Väljaspool"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Place ~marks"
-msgstr ""
+msgstr "Märkide paigutus"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "At labels"
-msgstr ""
+msgstr "Pealdiste juures"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "At axis"
-msgstr ""
+msgstr "Telje juures"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "At axis and labels"
-msgstr ""
+msgstr "Pealdiste ja telje juures"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Grids"
-msgstr ""
+msgstr "Koordinaatvõrgud"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show major ~grid"
-msgstr ""
+msgstr "Põhivõrgu kuvamine"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Mo~re..."
-msgstr ""
+msgstr "~Rohkem..."
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Show minor grid"
-msgstr ""
+msgstr "Alamvõrgu kuvamine"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Mor~e..."
-msgstr ""
+msgstr "Rohk~em..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose a chart type"
-msgstr ""
+msgstr "Diagrammi tüübi valimine"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "X axis with Categories"
-msgstr ""
+msgstr "X-telg kategooriatega"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~3D Look"
-msgstr ""
+msgstr "Ruumiline vaade"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Stack series"
-msgstr ""
+msgstr "Jadade virnastamine"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "On top"
-msgstr ""
+msgstr "Üleval"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Percent"
-msgstr ""
+msgstr "Protsentuaalne"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Deep"
-msgstr ""
+msgstr "Sügav"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "S~mooth lines"
-msgstr ""
+msgstr "Sujuvad jooned"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr "Omadused..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Sort by X values"
-msgstr ""
+msgstr "Sortimine X-väärtuste järgi"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Cubic spline"
-msgstr ""
+msgstr "Kuupsplain"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "B-Spline"
-msgstr ""
+msgstr "B-splain"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Resolution"
-msgstr ""
+msgstr "Eraldusvõime"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degree of polynomials"
-msgstr ""
+msgstr "~Andmepunktide järjestus"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Customize data ranges for individual data series"
-msgstr ""
+msgstr "Andmevahemike kohandamine üksikute andmejadade jaoks"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~series"
-msgstr ""
+msgstr "Andmejadad"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data ranges"
-msgstr ""
+msgstr "Andmevahemikud"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ran~ge for %VALUETYPE"
-msgstr ""
+msgstr "Tüübi %VALUETYPE vahemik"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
-msgstr ""
+msgstr "Kategooriad"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~labels"
-msgstr ""
+msgstr "Andmesildid"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "~Lisa"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Remove"
-msgstr ""
+msgstr "~Eemalda"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "Asukoht"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
-msgstr ""
+msgstr "Teksti paigutus"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
-msgstr ""
+msgstr "Teksti suund"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Place chart"
-msgstr ""
+msgstr "Diagrammi paigutamine"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Insert in sheet"
-msgstr ""
+msgstr "Lisamine lehele"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Clockwise direction"
-msgstr ""
+msgstr "Päripäeva"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Starting angle"
-msgstr ""
+msgstr "Algnurk"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "Kraadid"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Plot options"
-msgstr ""
+msgstr "Kuvamise sätted"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include ~values from hidden cells"
-msgstr ""
+msgstr "Varjatud lahtrite väärtuste kaasamine"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose a data range"
-msgstr ""
+msgstr "Andmevahemiku valimine"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data range"
-msgstr ""
+msgstr "Andmevahemik"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Data series in ~rows"
-msgstr ""
+msgstr "Andmejadad ridades"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Data series in ~columns"
-msgstr ""
+msgstr "Andmejadad veergudes"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~First row as label"
-msgstr ""
+msgstr "Esimeses reas on sildid"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "F~irst column as label"
-msgstr ""
+msgstr "Esimeses veerus on sildid"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
 msgid  "Days"
@@ -1516,24 +1861,29 @@ msgid  "Years"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Scale"
-msgstr ""
+msgstr "Mõõtkava"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Reverse direction"
-msgstr ""
+msgstr "Vastupidine suund"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Logarithmic scale"
-msgstr ""
+msgstr "Logaritmiline skaala"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~ype"
-msgstr ""
+msgstr "Tüüp"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "Automaatne"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
 msgid  "Text"
@@ -1544,133 +1894,160 @@ msgid  "Date"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Minimum"
-msgstr ""
+msgstr "~Miinimum:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "Automaatne"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ma~ximum"
-msgstr ""
+msgstr "Ma~ksimum:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "A~utomatic"
-msgstr ""
+msgstr "A~utomaatne"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "R~esolution"
-msgstr ""
+msgstr "Eraldusvõime"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automat~ic"
-msgstr ""
+msgstr "Automaatne"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ma~jor interval"
-msgstr ""
+msgstr "Põhiintervall:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Au~tomatic"
-msgstr ""
+msgstr "Automaatne"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Minor inter~val count"
-msgstr ""
+msgstr "Alamintervallide arv:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
 msgid  "Minor inter~val"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Aut~omatic"
-msgstr ""
+msgstr "Automaatne"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Re~ference value"
-msgstr ""
-
-#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CHECKBOX.TEXT
-msgid  "Automat~ic"
-msgstr ""
+msgstr "Viitväärtus:"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Align data series to"
-msgstr ""
+msgstr "Andmejadade joondamine"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Primary Y axis"
-msgstr ""
+msgstr "Esimesele Y-teljele"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Secondary Y axis"
-msgstr ""
+msgstr "Teisele Y-teljele"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "Sätted"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Overlap"
-msgstr ""
+msgstr "Kattumine"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Spacing"
-msgstr ""
+msgstr "Vahed"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Connection lines"
-msgstr ""
+msgstr "Ühendusjooned"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~bars side by side"
-msgstr ""
+msgstr "Tulbad kuvatakse üksteise kõrval"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Plot options"
-msgstr ""
+msgstr "Kuvamise sätted"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Plot missing values"
-msgstr ""
+msgstr "Puuduvate väärtuste kuvamine"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Leave gap"
-msgstr ""
+msgstr "Vahe jätmine"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Assume zero"
-msgstr ""
+msgstr "Nulli eeldamine"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Continue line"
-msgstr ""
+msgstr "Joone jätkamine"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include ~values from hidden cells"
-msgstr ""
+msgstr "Varjatud lahtrite väärtuste kaasamine"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
+#, fuzzy
 msgid  "Ve~rtically stacked"
-msgstr ""
+msgstr "Vertikaalselt virnastatud"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "Kraadid"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
-msgstr ""
+msgstr "Teksti paigutus"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
-msgstr ""
+msgstr "Teksti suund"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose titles, legend, and grid settings"
-msgstr ""
+msgstr "Pealkirjade, legendi ja võrgu sätete valimine"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Display grids"
-msgstr ""
+msgstr "Võrkude kuvamine"

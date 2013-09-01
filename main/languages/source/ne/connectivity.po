@@ -49,43 +49,43 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "तालिका सिर्जना यस प्रकारको ठेगाना पुस्तिकाले समर्थन गर्दैन ।"
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "मोजिला चलिरहदा नयाँ ठेगाना पुस्तिका सिर्जना गर्न सकिँदैन ।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "एउटा ठेगाना पुस्तिका प्रविष्टि पुन: प्राप्त गर्न सक्ने छैन, एउटा अज्ञात त्रुटि उत्पन्न भयो ।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "एउटा ठेगाना पुस्तिका डाइरेक्टरी पुन: प्राप्त गर्न सक्ने छैन, एउटा अज्ञात त्रुटि उत्पन्न भयो ।"
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
 msgid  "Timed out while waiting for the result."
-msgstr ""
+msgstr "परिणामको प्रतिक्षा समय समाप्त भयो ।"
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
 msgid  "An error occurred while executing the query."
-msgstr ""
+msgstr "क्वेरी कार्यान्वयन गर्दा एउटा अज्ञात त्रुटि उत्पन्न भयो ।"
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "मोजिला चलिरहदा तपाईँले मोजिला ठेगाना पुस्तिकामा कुनै पनि परिवर्तन गर्न सक्नुहुदैन ।"
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "मोजिला ठेगाना पस्तिका यसको प्रक्रियामा नरही परिवर्तन गरिएको छ, यस अवस्थामा हामीले यसलाई परिमार्जन गर्न सक्दैनौ ।"
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
 msgid  "Can't find the requested row."
-msgstr ""
+msgstr "अनुरोध गरिएको पङ्क्ति फेला पार्न सकिँदैन ।"
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
 msgid  "Can't find the card for the requested row."
-msgstr ""
+msgstr "अनुरोध गरिएको पङ्क्तिका लागि कार्ड फेला पार्न सकिँदैन ।"
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It needs at least one table."
@@ -149,15 +149,15 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
 msgid  "No hostname was provided."
-msgstr ""
+msgstr "होस्टनाम उपलब्ध गराइएको थिएन ।"
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
 msgid  "No Base DN was provided."
-msgstr ""
+msgstr "आधार डीएन (DN) उपलब्ध गराइएको थिएन ।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
 msgid  "The connection to the LDAP server could not be established."
-msgstr ""
+msgstr "एलडीएपी (LDAP) सर्भरमा जडान स्थापना गर्न सक्ने छैन ।"
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
@@ -217,15 +217,15 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "स्ट्रिङ '$string$' ले लक्षित क्यारेक्टर सेट '$charset$' मा रुपान्तरण गर्दा क्यारेक्टर $maxlen$ को अधिकतम लम्बाइ नाघ्दछ ।"
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "स्ट्रिङ '$string$' लाई सङ्केतन '$charset$' प्रयोग गरेर रुपान्तरण गर्न सकिँदैन ।"
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
-msgstr ""
+msgstr "जडान यूआरएल (URL) अमान्य छ ।"
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. It is too complex."
@@ -269,11 +269,11 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be loaded."
-msgstr ""
+msgstr "फाइल $filename$ लोड गर्न सक्ने छैन ।"
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "फाइल लोड गर्ने प्रयासको कारणले निम्न त्रुटि सन्देश आयो ($exception_type$):\n\n$error_message$"
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
 msgid  "The type could not be converted."
@@ -549,27 +549,27 @@ msgstr ""
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
 msgid  "The record operation has been vetoed."
-msgstr ""
+msgstr "रेकर्ड कार्य प्रतिबन्धित गरिएको छ ।"
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "कथनले एकभन्दा बढी सब क्वेरीमा चक्रिय सन्दर्भ समाविष्ट गर्दछ ।"
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
 msgid  "The name must not contain any slashes ('/')."
-msgstr ""
+msgstr "नाममा कुनै पनि स्ल्यास ('/') समाविष्ट गर्नु हुदैन ।"
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 msgid  "$1$ is no SQL conform identifier."
-msgstr ""
+msgstr "SQL यकीन पहिचयक $1$ होइन ।"
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
 msgid  "Query names must not contain quote characters."
-msgstr ""
+msgstr "क्वेरी नाममा उद्धरण क्यारेक्टर समावेश गर्नु हुदैन ।"
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
 msgid  "The name '$1$' is already in use in the database."
-msgstr ""
+msgstr "नाम '$1$' पहिले नै डेटाबेसमा प्रयोगमा छ ।"
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
 msgid  "No connection to the database exists."

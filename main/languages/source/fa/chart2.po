@@ -88,8 +88,9 @@ msgid  "~Z axis"
 msgstr ""
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Secondary axes"
-msgstr ""
+msgstr "محور Yهای دوم"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 msgid  "Minor grids"
@@ -104,8 +105,9 @@ msgid  "Font"
 msgstr ""
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effects"
-msgstr ""
+msgstr "جلوه‌های قلم"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
 msgid  "Font Position"
@@ -120,8 +122,9 @@ msgid  "Indents & Spacing"
 msgstr ""
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "ردیف کردن"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
 msgid  "Asian Typography"
@@ -140,16 +143,19 @@ msgid  "Box"
 msgstr ""
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Cylinder"
-msgstr ""
+msgstr "استوانه‌ای"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Cone"
-msgstr ""
+msgstr "مخروط"
 
 #: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Pyramid"
-msgstr ""
+msgstr "هرم"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
 msgid  "Best fit"
@@ -168,8 +174,9 @@ msgid  "Top left"
 msgstr ""
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr "~چپ"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
 msgid  "Bottom left"
@@ -184,8 +191,9 @@ msgid  "Bottom right"
 msgstr ""
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr "~راست"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
 msgid  "Top right"
@@ -224,8 +232,9 @@ msgid  "Show ~category"
 msgstr ""
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_SYMBOL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~legend key"
-msgstr ""
+msgstr "~نمایش شمایل تاریخچه به همراه برچسب"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_PLACEMENT.FIXEDTEXT.TEXT
 msgid  "Place~ment"
@@ -236,8 +245,9 @@ msgid  "Rotate Text"
 msgstr ""
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "درجه"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
@@ -304,32 +314,38 @@ msgid  "Positive ~and Negative"
 msgstr ""
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_POSITIVE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Pos~itive"
-msgstr ""
+msgstr "شاخص بالایی"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NEGATIVE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Ne~gative"
-msgstr ""
+msgstr "شاخص پایینی"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY(_XPOS_,_YPOS_).CBX_SHOWLEGEND.CHECKBOX.TEXT
 msgid  "~Display legend"
 msgstr ""
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_LEFT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Left"
-msgstr ""
+msgstr "~چپ"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_RIGHT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Right"
-msgstr ""
+msgstr "~راست"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_TOP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Top"
-msgstr ""
+msgstr "~بالا"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_BOTTOM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Bottom"
-msgstr ""
+msgstr "~پایین"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_X_SECONDARY.CHECKBOX.TEXT
 msgid  "X ~axis"
@@ -360,8 +376,9 @@ msgid  "New line"
 msgstr ""
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "عنوان"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
 msgid  "~Subtitle"
@@ -384,8 +401,9 @@ msgid  "~Z axis"
 msgstr ""
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Secondary Axes"
-msgstr ""
+msgstr "محور Yهای دوم"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
 msgid  "X ~axis"
@@ -448,8 +466,9 @@ msgid  "Shape"
 msgstr ""
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.STRING.TEXT
+#, fuzzy
 msgid  "~Number of lines"
-msgstr ""
+msgstr "تع~داد سطرها"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.STRING.TEXT
 msgid  "Separator"
@@ -500,8 +519,9 @@ msgid  "Points Only"
 msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "Lines Only"
-msgstr ""
+msgstr "فقط سطرها"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
 msgid  "3D Lines"
@@ -520,40 +540,48 @@ msgid  "Stacked Columns and Lines"
 msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
+#, fuzzy
 msgid  "Net"
-msgstr ""
+msgstr "شبکه"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 msgid  "Stock"
 msgstr ""
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.STRING.TEXT
+#, fuzzy
 msgid  "Stock Chart 1"
-msgstr ""
+msgstr "نمودار موجودی 1"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.STRING.TEXT
+#, fuzzy
 msgid  "Stock Chart 2"
-msgstr ""
+msgstr "نمودار موجودی 2"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.STRING.TEXT
+#, fuzzy
 msgid  "Stock Chart 3"
-msgstr ""
+msgstr "نمودار موجودی 3"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
+#, fuzzy
 msgid  "Stock Chart 4"
-msgstr ""
+msgstr "نمودار موجودی 4"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
+#, fuzzy
 msgid  "Normal"
-msgstr ""
+msgstr "عادی"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
+#, fuzzy
 msgid  "Stacked"
-msgstr ""
+msgstr "پشته‌ای"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
+#, fuzzy
 msgid  "Percent Stacked"
-msgstr ""
+msgstr "درصد"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
 msgid  "Deep"
@@ -608,8 +636,9 @@ msgid  "Number Format for Percentage Value"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Chart Type"
-msgstr ""
+msgstr "نوع نمودار"
 
 #: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
 msgid  "Data Range"
@@ -628,32 +657,37 @@ msgid  "Line"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
+#, fuzzy
 msgid  "Borders"
-msgstr ""
+msgstr "حاشیه‌ها"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 msgid  "Area"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.STRING.TEXT
+#, fuzzy
 msgid  "Transparency"
-msgstr ""
+msgstr "شفافیت"
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT.STRING.TEXT
 msgid  "Font"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
+#, fuzzy
 msgid  "Font Effects"
-msgstr ""
+msgstr "جلوه‌های قلم"
 
 #: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
+#, fuzzy
 msgid  "Numbers"
-msgstr ""
+msgstr "اعداد"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "موقعیت"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
@@ -664,16 +698,19 @@ msgid  "Down"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Layout"
-msgstr ""
+msgstr "صفحه‌بندی"
 
 #: controller/dialogs/Strings.src#STR_PAGE_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "گزینه‌ها"
 
 #: controller/dialogs/Strings.src#STR_PAGE_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Scale"
-msgstr ""
+msgstr "مقیاس"
 
 #: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
 msgid  "Positioning"
@@ -688,8 +725,9 @@ msgid  "Y Error Bars"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "ردیف کردن"
 
 #: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
 msgid  "Perspective"
@@ -728,24 +766,28 @@ msgid  "Z Axis"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "Secondary X Axis"
-msgstr ""
+msgstr "محور Yهای دوم"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
+#, fuzzy
 msgid  "Secondary Y Axis"
-msgstr ""
+msgstr "محور Yهای دوم"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
 msgid  "Axes"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
+#, fuzzy
 msgid  "Grids"
-msgstr ""
+msgstr "توری"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID.STRING.TEXT
+#, fuzzy
 msgid  "Grid"
-msgstr ""
+msgstr "توری"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.STRING.TEXT
 msgid  "X Axis Major Grid"
@@ -772,16 +814,19 @@ msgid  "Z Axis Minor Grid"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
+#, fuzzy
 msgid  "Legend"
-msgstr ""
+msgstr "تاریخچه"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Title"
-msgstr ""
+msgstr "عنوان"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLES.STRING.TEXT
+#, fuzzy
 msgid  "Titles"
-msgstr ""
+msgstr "عناوین"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
 msgid  "Main Title"
@@ -812,30 +857,30 @@ msgid  "Secondary Y Axis Title"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Label"
-msgstr ""
+msgstr "برچسب"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.STRING.TEXT
+#, fuzzy
 msgid  "Data Labels"
-msgstr ""
+msgstr "برچسب‌های داده‌ها"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
+#, fuzzy
 msgid  "Data Point"
-msgstr ""
+msgstr "نقطهٔ داده"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
+#, fuzzy
 msgid  "Data Points"
-msgstr ""
+msgstr "نقطهٔ داده"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.STRING.TEXT
 msgid  "Legend Key"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.STRING.TEXT
-msgid  "Data Series"
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.STRING.TEXT
 msgid  "Data Series"
 msgstr ""
 
@@ -872,20 +917,23 @@ msgid  "Stock Gain"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Chart Area"
-msgstr ""
+msgstr "محدودهٔ نمودار"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
 msgid  "Chart"
 msgstr ""
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
+#, fuzzy
 msgid  "Chart Wall"
-msgstr ""
+msgstr "دیوار نمودار"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
+#, fuzzy
 msgid  "Chart Floor"
-msgstr ""
+msgstr "کف نمودار"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 msgid  "Drawing Object"
@@ -1092,16 +1140,19 @@ msgid  "Use superordinate object settings"
 msgstr ""
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.STRING.TEXT
+#, fuzzy
 msgid  "Negative and Positive"
-msgstr ""
+msgstr "شاخص بالا و پایین"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
+#, fuzzy
 msgid  "Negative"
-msgstr ""
+msgstr "شاخص پایینی"
 
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
+#, fuzzy
 msgid  "Positive"
-msgstr ""
+msgstr "شاخص بالایی"
 
 #: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
 msgid  "From Data Table"
@@ -1132,8 +1183,9 @@ msgid  "Sche~me"
 msgstr ""
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Shading"
-msgstr ""
+msgstr "~فاصله‌گذاری"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CHECKBOX.TEXT
 msgid  "~Object borders"
@@ -1144,8 +1196,9 @@ msgid  "~Rounded edges"
 msgstr ""
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
+#, fuzzy
 msgid  " degrees"
-msgstr ""
+msgstr "درجه"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 msgid  "~Right-angled axes"
@@ -1180,52 +1233,64 @@ msgid  "Light Preview"
 msgstr ""
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Sho~w labels"
-msgstr ""
+msgstr "ن~مایش برچسب‌ها"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
-msgstr ""
+msgstr "چرخش متن"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TRISTATEBOX.TEXT
+#, fuzzy
 msgid  "Ve~rtically stacked"
-msgstr ""
+msgstr "انباشت ~عمودی"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "~درجه‌ها"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text flow"
-msgstr ""
+msgstr "جهت متن"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "O~verlap"
-msgstr ""
+msgstr "~هم‌پوشانی"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Break"
-msgstr ""
+msgstr "ان~فصال"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Order"
-msgstr ""
+msgstr "ترتیب"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Tile"
-msgstr ""
+msgstr "~عنوان"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "St~agger odd"
-msgstr ""
+msgstr "پرش از اعداد ~فرد"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Stagger ~even"
-msgstr ""
+msgstr "پرش از اعداد ~زوج"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~utomatic"
-msgstr ""
+msgstr "~خودکار"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
@@ -1260,8 +1325,9 @@ msgid  "Axis ~between categories"
 msgstr ""
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Labels"
-msgstr ""
+msgstr "برچسب"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FIXEDTEXT.TEXT
 msgid  "~Place labels"
@@ -1332,8 +1398,9 @@ msgid  "At axis and labels"
 msgstr ""
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Grids"
-msgstr ""
+msgstr "توری"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CHECKBOX.TEXT
 msgid  "Show major ~grid"
@@ -1372,8 +1439,9 @@ msgid  "On top"
 msgstr ""
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Percent"
-msgstr ""
+msgstr "درصد"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
 msgid  "Deep"
@@ -1396,16 +1464,19 @@ msgid  "Cubic spline"
 msgstr ""
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "B-Spline"
-msgstr ""
+msgstr "بی اسپلاین"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Resolution"
-msgstr ""
+msgstr "~تفکیک‌پذیری"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degree of polynomials"
-msgstr ""
+msgstr "ترتیب نقاط ~داده"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
 msgid  "Customize data ranges for individual data series"
@@ -1428,8 +1499,9 @@ msgid  "~Categories"
 msgstr ""
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~labels"
-msgstr ""
+msgstr "برچسب‌های ~داده‌ها"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Add"
@@ -1440,12 +1512,14 @@ msgid  "~Remove"
 msgstr ""
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "موقعیت"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
-msgstr ""
+msgstr "چرخش متن"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
@@ -1468,8 +1542,9 @@ msgid  "Starting angle"
 msgstr ""
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "~درجه‌ها"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
 msgid  "Plot options"
@@ -1504,20 +1579,24 @@ msgid  "F~irst column as label"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Days"
-msgstr ""
+msgstr "روز‌ها"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Months"
-msgstr ""
+msgstr "ماه‌ها"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Years"
-msgstr ""
+msgstr "سال‌ها"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Scale"
-msgstr ""
+msgstr "مقیاس"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
 msgid  "~Reverse direction"
@@ -1532,48 +1611,56 @@ msgid  "T~ype"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "~خودکار"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "متن"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date"
-msgstr ""
+msgstr "تاریخ"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
 msgid  "~Minimum"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "~خودکار"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
 msgid  "Ma~ximum"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "A~utomatic"
-msgstr ""
+msgstr "~خودکار"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "R~esolution"
-msgstr ""
+msgstr "~تفکیک‌پذیری"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automat~ic"
-msgstr ""
+msgstr "~خودکار"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
 msgid  "Ma~jor interval"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Au~tomatic"
-msgstr ""
+msgstr "~خودکار"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
 msgid  "Minor inter~val count"
@@ -1584,44 +1671,48 @@ msgid  "Minor inter~val"
 msgstr ""
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Aut~omatic"
-msgstr ""
+msgstr "~خودکار"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
 msgid  "Re~ference value"
 msgstr ""
 
-#: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CHECKBOX.TEXT
-msgid  "Automat~ic"
-msgstr ""
-
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Align data series to"
-msgstr ""
+msgstr "ردیف کردن دنباله‌های داده با"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Primary Y axis"
-msgstr ""
+msgstr "محور Yهای اصلی"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Secondary Y axis"
-msgstr ""
+msgstr "محور Yهای دوم"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "تنظیمات"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Overlap"
-msgstr ""
+msgstr "~هم‌پوشانی"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Spacing"
-msgstr ""
+msgstr "~فاصله‌گذاری"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Connection lines"
-msgstr ""
+msgstr "خطوط اتصال"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
 msgid  "Show ~bars side by side"
@@ -1652,16 +1743,19 @@ msgid  "Include ~values from hidden cells"
 msgstr ""
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
+#, fuzzy
 msgid  "Ve~rtically stacked"
-msgstr ""
+msgstr "انباشت ~عمودی"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
-msgstr ""
+msgstr "~درجه‌ها"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
-msgstr ""
+msgstr "جهت متن"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"

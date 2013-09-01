@@ -49,19 +49,20 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "Ndaikatúi ojeguerojera tabla koichagua téra rysýipe. "
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "Ndaikatúi ojeguerojera tera rysýi pyahu Mozilla oma'apóramo."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Ndaikatúi oñembojevy tera rysýipegua marandu, oiko jejavy ojekuaa'ỹva."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
+#, fuzzy
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Ndaikatúi oñembojevy tera rysýipegua marandu, oiko jejavy ojekuaa'ỹva."
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
 msgid  "Timed out while waiting for the result."
@@ -80,12 +81,14 @@ msgid  "Mozilla Address Book has been changed out of this process, we can't modi
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
+#, fuzzy
 msgid  "Can't find the requested row."
-msgstr ""
+msgstr "Ndaikatúi ojejuhu tysýi ojejeruréva."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
+#, fuzzy
 msgid  "Can't find the card for the requested row."
-msgstr ""
+msgstr "Ndaikatúi ojejuhu pe tysýi ojejeruréva kuatia'i. "
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It needs at least one table."
@@ -104,8 +107,9 @@ msgid  "An unknown error occured."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
+#, fuzzy
 msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr ""
+msgstr "Ndaikatúi ojejapóvo térã rysýi ryru pyahu. Mozilla-pe guarã jejavy papapy $1$."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
 msgid  "The library '$libname$' could not be loaded."
@@ -120,12 +124,14 @@ msgid  "An error occured while getting the current row."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
+#, fuzzy
 msgid  "The row update can not be canceled."
-msgstr ""
+msgstr "Ko tysýi ñembopyahu ndaikatúi ojejoko."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.STRING.TEXT
+#, fuzzy
 msgid  "A new row can not be created."
-msgstr ""
+msgstr "Ndaikatúi ojejapo tysýi pyahu."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
@@ -136,8 +142,9 @@ msgid  "Illegal cursor movement occured."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
+#, fuzzy
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Emoneĩmijeýna ko tysýi '$position$' embopyahu mboyve térã emoinge mboyve ipyahúva. "
 
 #: resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.STRING.TEXT
 msgid  "The update call can not be executed. The row is invalid."
@@ -156,8 +163,9 @@ msgid  "No Base DN was provided."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the LDAP server could not be established."
-msgstr ""
+msgstr "Ndaikatúi ijeike servidos LDAP-pe."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
@@ -220,8 +228,9 @@ msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters 
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
+#, fuzzy
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Ko haipy joajupy '$string$' rehegua ndaikatúi oñemboahasávo ambuépe ojepurúramo codificación '$charset$'."
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
@@ -264,8 +273,9 @@ msgid  "The statement contains an invalid selection of columns."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column at position '$position$' could not be updated."
-msgstr ""
+msgstr "Kolúna oĩva '$position$' sitúpe ndaikatúi oñembopyahu."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be loaded."
@@ -276,8 +286,9 @@ msgid  "The attempt to load the file resulted in the following error message ($e
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
+#, fuzzy
 msgid  "The type could not be converted."
-msgstr ""
+msgstr "Ko tabla ndaikatúi oñemoambue."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not append column: invalid column descriptor."
@@ -328,8 +339,9 @@ msgid  "The index could not be created. The values are not unique."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.STRING.TEXT
+#, fuzzy
 msgid  "The index could not be created. An unknown error appeared."
-msgstr ""
+msgstr "Ko índice ndaikatúi ojejapo. Oñeimo'ã'ỹhágui ojejavy. "
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.STRING.TEXT
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
@@ -372,36 +384,42 @@ msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the ma
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Ko kolúna '$columnname$' ndaikatúi oñemoambue. Ikatu oime pe ñongatupy rehegua sistema rehe oñeñangareko ani haguã ojehai. "
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Ko kolúna '$columnname$' ndaikatúi oñembojoapy. Ikatu oime pe ñongatupy rehegua sistema rehe oñeñangareko ani haguã ojehai. "
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Ko kolúna oĩva '$position$' sitúpe ndaikatúi oñemomichĩ. Ikatu oime pe ñongatupy rehegua sistema rehe oñeñangareko ani haguã ojehai. "
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Ko kolúna '$columnname$' ndaikatúi oñemoambue. Ikatu oime pe ñongatupy rehegua sistema rehe oñeñangareko ani haguã ojehai. "
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be altered."
-msgstr ""
+msgstr "Ko tabla ndaikatúi oñemoambue."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
+#, fuzzy
 msgid  "Cannot open Evolution address book."
-msgstr ""
+msgstr "Ndaikatúi ojeike Evalution téra rysýi ryrúpe."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
 msgid  "Can only sort by table columns."
@@ -512,8 +530,9 @@ msgid  "The database file '$filename$' could not be created. Please check your d
 msgstr ""
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Marandu renda '$databasename$' ndaikatúi oñeñoñepyrũ pe comando '$progname$' noñemboguatakuaái rupi."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
@@ -548,40 +567,49 @@ msgid  "The provided DocumentUI is not allowed to be NULL."
 msgstr ""
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
+#, fuzzy
 msgid  "The record operation has been vetoed."
-msgstr ""
+msgstr "Ko tembiapo hi'areterei rupi oñembotove."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
+#, fuzzy
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "Ko ñe'ẽjoaju oñe'ẽ mba'e ojevyevývare peteĩ térã hetave porandu rehe."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
+#, fuzzy
 msgid  "The name must not contain any slashes ('/')."
-msgstr ""
+msgstr "Ko téra ndaikatúi orekòvo mba'eveichagua diagonal ('/')."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
+#, fuzzy
 msgid  "$1$ is no SQL conform identifier."
-msgstr ""
+msgstr "$1$ ndaha'éi SQL rechaukaha."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
+#, fuzzy
 msgid  "Query names must not contain quote characters."
-msgstr ""
+msgstr "Mba'eporandu rerakuéra ndaikatúi orahávo taikõi. "
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
+#, fuzzy
 msgid  "The name '$1$' is already in use in the database."
-msgstr ""
+msgstr "Ko téra '$1$' oipuruhína marandu renda."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
+#, fuzzy
 msgid  "No connection to the database exists."
-msgstr ""
+msgstr "Ndaikatúi ojeike marandu rendápe."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
+#, fuzzy
 msgid  "No $1$ exists."
-msgstr ""
+msgstr "$1$ ndaipóri."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
+#, fuzzy
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
+msgstr "Ndaikatúi ojehechaukapa oĩva ko tabla-pe. Eiporumína filtro."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
 msgid  "Adabas D"

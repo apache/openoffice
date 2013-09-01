@@ -33,15 +33,15 @@ msgstr ""
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
 msgid  "Print range"
-msgstr ""
+msgstr "Tama n usiggez"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
 msgid  "All ~Pages"
-msgstr ""
+msgstr "~Isebtaren yakk"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
 msgid  "Pa~ges"
-msgstr ""
+msgstr "Isebta~ren"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
 msgid  "<All>"
@@ -391,10 +391,6 @@ msgstr ""
 msgid  "Modules..."
 msgstr ""
 
-#: basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
-msgstr ""
-
 #: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
 msgid  "Do you want to overwrite the XX macro?"
 msgstr ""
@@ -421,10 +417,6 @@ msgstr ""
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
 msgid  "Class Modules"
-msgstr ""
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.STRING.TEXT
-msgid  "Rename"
 msgstr ""
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
@@ -539,16 +531,8 @@ msgstr ""
 msgid  "Macro"
 msgstr ""
 
-#: basicide/macrodlg.src#RID_STR_BTNDEL.STRING.TEXT
-msgid  "~Delete"
-msgstr ""
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 msgid  "~New"
-msgstr ""
-
-#: basicide/macrodlg.src#RID_STR_CLOSE.STRING.TEXT
-msgid  "Close"
 msgstr ""
 
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
@@ -595,36 +579,12 @@ msgstr ""
 msgid  "~New..."
 msgstr ""
 
-#: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
-
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
 msgid  "~Delete"
 msgstr ""
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
 msgid  "Dialog"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PUSHBUTTON.TEXT
-msgid  "~New..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
 msgstr ""
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
@@ -635,20 +595,8 @@ msgstr ""
 msgid  "~Library"
 msgstr ""
 
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
 msgid  "~Password..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PUSHBUTTON.TEXT
-msgid  "~New..."
 msgstr ""
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PUSHBUTTON.TEXT
@@ -657,10 +605,6 @@ msgstr ""
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PUSHBUTTON.TEXT
 msgid  "E~xport..."
-msgstr ""
-
-#: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
 msgstr ""
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
@@ -695,19 +639,11 @@ msgstr ""
 msgid  "Export library as extension"
 msgstr ""
 
-#: basicide/moduldlg.src#RID_STR_EXPORTBASIC.STRING.TEXT
-msgid  "Export as BASIC library"
-msgstr ""
-
 #: basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
 msgid  "Extension"
 msgstr ""
 
 #: basicide/moptions.src#RID_MACROOPTIONS.MODALDIALOG.TEXT
-msgid  "Description"
-msgstr ""
-
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FIXEDTEXT.TEXT
 msgid  "Description"
 msgstr ""
 
@@ -789,10 +725,6 @@ msgstr ""
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
 msgid  "Delete Language Resources"
-msgstr ""
-
-#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
 msgstr ""
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
