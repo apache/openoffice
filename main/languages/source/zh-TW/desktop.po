@@ -33,223 +33,203 @@ msgstr ""
 
 #: migration/wizard.src#DLG_FIRSTSTART_WIZARD.MODALDIALOG.TEXT
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "歡迎使用 %PRODUCTNAME %PRODUCTVERSION"
 
 #: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
 msgid  "Welcome"
-msgstr ""
+msgstr "歡迎使用"
 
 #: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
 msgid  "License Agreement"
-msgstr ""
+msgstr "許可授權合約"
 
 #: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
 msgid  "Personal Data"
-msgstr ""
+msgstr "個人資料"
 
 #: migration/wizard.src#STR_STATE_USER.STRING.TEXT
 msgid  "User name"
-msgstr ""
+msgstr "使用者名稱"
 
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
 msgid  "Online Update"
-msgstr ""
+msgstr "線上更新"
 
 #: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
 msgid  "Registration"
-msgstr ""
+msgstr "註冊"
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "此精靈將引導您完成閱讀授權合約、遷移 %OLD_VERSION 中的使用者資料以及註冊 %PRODUCTNAME。\n\n按 [下一步] 以繼續。"
 
 #: migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.STRING.TEXT
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "此精靈將引導您完成 %PRODUCTNAME 的註冊。\n\n請按 [下一步] 繼續。"
 
 #: migration/wizard.src#STR_FINISH.STRING.TEXT
 msgid  "~Finish"
-msgstr ""
+msgstr "完成(~F)"
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
-
-#: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "您現在有機會可以支援與貢獻全球最快速成長的開放原始碼社群。\n\n請以註冊方式，協助我們證明 %PRODUCTNAME 已取得顯著的市場佔有率。\n\n註冊純屬自願性質，而非強制性。"
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
 msgid  "Do you really want to decline?"
-msgstr ""
-
-#: migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FIXEDTEXT.TEXT
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "您確定要拒絕嗎？"
 
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "此精靈將帶領您閱讀授權合約以及註冊 %PRODUCTNAME。\n\n按 [下一步] 以繼續。"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to accept the license"
-msgstr ""
+msgstr "請依照下列步驟以接受授權"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "閱讀整份許可授權合約。請使用捲軸或此對話方塊中的 '%PAGEDOWN' 按鈕來檢視完整的許可授權合約內容。"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
 msgid  "Click 'Accept' to accept the terms of the Agreement."
-msgstr ""
+msgstr "按一下 [接受] 以接受授權條款。"
 
 #: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
 msgid  "Scroll Do~wn"
-msgstr ""
+msgstr "向下捲動(~W)"
 
 #: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "接受(~A)"
 
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
 msgid  "~Decline"
-msgstr ""
+msgstr "拒絕(~D)"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FIXEDTEXT.TEXT
 msgid  "Transfer personal data"
-msgstr ""
+msgstr "遷移個人資料"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FIXEDTEXT.TEXT
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
-
-#: migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CHECKBOX.TEXT
-msgid  "Transfer personal data"
-msgstr ""
-
-#: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FIXEDTEXT.TEXT
-msgid  "Online Update"
-msgstr ""
+msgstr "大部分 %OLDPRODUCT 安裝的私人資料可以在 %PRODUCTNAME %PRODUCTVERSION 中重新使用。\n\n若您不希望重新使用 %PRODUCTNAME %PRODUCTVERSION 中的任何設定，請取消標記核取方塊。"
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME 會定期自動搜尋是否有新版本。\n執行此線上更新不會傳送個人資料。\n一旦有新版本時將會通知您。\n\n您可利用 [工具] / [選項...] / [%PRODUCTNAME] / [線上更新] 配置此功能。"
 
 #: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
 msgid  "~Check for updates automatically"
-msgstr ""
+msgstr "自動檢查是否有更新(~C)"
 
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
 msgid  "Provide your full name and initials below"
-msgstr ""
+msgstr "在下面輸入全名以及首字母縮寫"
 
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "使用者名稱將用於文件屬性、範本以及記錄對文件所做的變更時。"
 
 #: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
 msgid  "~First name"
-msgstr ""
+msgstr "名字(~F)"
 
 #: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
 msgid  "~Last name"
-msgstr ""
+msgstr "姓氏(~L)"
 
 #: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
 msgid  "~Initials"
-msgstr ""
+msgstr "縮寫(~I)"
 
 #: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
 msgid  "~Father's name"
-msgstr ""
+msgstr "父親名字(~F)"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME Registration"
-msgstr ""
+msgstr "%PRODUCTNAME 註冊"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FIXEDTEXT.TEXT
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "您現在有機會以 %PRODUCTNAME 使用者的身份註冊。註冊是自行決定的，不是義務。\n\n如果註冊，我們可以通知您有關此產品的新開發資訊。"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RADIOBUTTON.TEXT
 msgid  "I want to register ~now"
-msgstr ""
+msgstr "現在註冊(~N)"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RADIOBUTTON.TEXT
 msgid  "I want to register ~later"
-msgstr ""
+msgstr "稍後註冊(~L)"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RADIOBUTTON.TEXT
 msgid  "I do not want to ~register"
-msgstr ""
+msgstr "不要註冊(~R)"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FIXEDTEXT.TEXT
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "我們希望您有愉快的 %PRODUCTNAME 使用經驗。\n\n要結束精靈，請按一下 [完成]。"
 
 #: app/desktop.src#STR_RECOVER_QUERY.STRING.TEXT
 msgid  "Should the file \"$1\" be restored?"
-msgstr ""
+msgstr "要修復檔案「$1」？"
 
 #: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
 msgid  "File Recovery"
-msgstr ""
-
-#: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "回復檔案"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
 msgid  "The application cannot be started. "
-msgstr ""
+msgstr "無法啟動這個應用程式。 "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.STRING.TEXT
 msgid  "The configuration directory \"$1\" could not be found."
-msgstr ""
+msgstr "沒有找到配置路徑 \"$1\"。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.STRING.TEXT
 msgid  "The installation path is invalid."
-msgstr ""
+msgstr "這個安裝路徑無效。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.STRING.TEXT
 msgid  "The installation path is not available."
-msgstr ""
+msgstr "無法確定這個安裝路徑。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.STRING.TEXT
 msgid  "An internal error occurred."
-msgstr ""
+msgstr "發生一個不明的內部錯誤。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.STRING.TEXT
 msgid  "The configuration file \"$1\" is corrupt."
-msgstr ""
+msgstr "配置檔案 \"$1\" 已經損壞。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.STRING.TEXT
 msgid  "The configuration file \"$1\" was not found."
-msgstr ""
+msgstr "沒有找到配置檔案 \"$1\"。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.STRING.TEXT
 msgid  "The configuration file \"$1\" does not support the current version."
-msgstr ""
+msgstr "配置檔案 \"$1\" 不支援這個版本。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.STRING.TEXT
 msgid  "The user interface language cannot be determined."
-msgstr ""
+msgstr "無法判斷使用者介面語言。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.STRING.TEXT
 msgid  "The component manager is not available."
-msgstr ""
+msgstr "程式元件管理員不存在。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.STRING.TEXT
 msgid  "The configuration service is not available."
-msgstr ""
+msgstr "無法建立配置管理員。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.STRING.TEXT
 msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
@@ -257,771 +237,691 @@ msgstr ""
 
 #: app/desktop.src#STR_ASK_START_SETUP_MANUALLY.STRING.TEXT
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "要修復您的程式，請您從光碟啟動安裝程式或從存有安裝檔案的目錄直接啟動安裝程式。"
 
 #: app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.STRING.TEXT
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "存取集中配置的啟動設定不完整。 "
 
 #: app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.STRING.TEXT
 msgid  "A connection to the central configuration could not be established. "
-msgstr ""
+msgstr "無法建立到集中配置的連線。 "
 
 #: app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.STRING.TEXT
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "因為缺少存取權限，您無法存取集中配置。 "
 
 #: app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.STRING.TEXT
 msgid  "A general error occurred while accessing your central configuration. "
-msgstr ""
+msgstr "存取集中配置時發生一般錯誤。 "
 
 #: app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.STRING.TEXT
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "由於缺少存取權限，個人設定的變更無法集中儲存。 "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.STRING.TEXT
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "由於存取 %PRODUCTNAME 配置資料的錯誤，無法啟動 %PRODUCTNAME。\n\n請和系統管理員連絡。"
 
 #: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
 msgid  "The following internal error has occurred: "
-msgstr ""
-
-#: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "發生以下內部錯誤： "
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
 msgid  "Printing is disabled. No documents can be printed."
-msgstr ""
-
-#: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
-msgstr ""
-
-#: app/desktop.src#STR_TITLE_EXPIRED.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "已停用列印。無法列印任何文件。"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
 msgid  "The path manager is not available.\n"
-msgstr ""
+msgstr "路徑管理程式不存在。\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.STRING.TEXT
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "可用磁碟空間不足，無法完成 %PRODUCTNAME 的使用者安裝。請在下列位置釋放更多的磁碟空間，並重新啟動 %PRODUCTNAME：\n\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.STRING.TEXT
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "缺少存取權限，無法進行 %PRODUCTNAME 的使用者安裝。請確定您對下列位置有足夠的存取權限，並重新啟動 %PRODUCTNAME：\n\n"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.STRING.TEXT
 msgid  "Extension Software License Agreement of $NAME:"
-msgstr ""
+msgstr "$NAME 擴充套件的軟體授權合約："
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.STRING.TEXT
 msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
-msgstr ""
+msgstr "請閱讀以上所顯示的完整授權合約。在主控台鍵入 [是] 接受授權合約，然後按 [Return] 鍵。鍵入 [否] 拒絕授權合約並中斷擴充套件的安裝。"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.STRING.TEXT
 msgid  "[Enter \"yes\" or \"no\"]:"
-msgstr ""
+msgstr "[輸入「是」或「否」]:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.STRING.TEXT
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
-msgstr ""
+msgstr "您的輸入不正確。請輸入「是」或「否」:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
 msgid  "YES"
-msgstr ""
+msgstr "是"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
 msgid  "Y"
-msgstr ""
+msgstr "Y"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
 msgid  "NO"
-msgstr ""
+msgstr "否"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
 msgid  "N"
-msgstr ""
+msgstr "N"
 
 #: deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.STRING.TEXT
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "無法啟動 unopkg。鎖定檔案表示檔案已在執行中。若非此情況，請刪除下列位置的鎖定檔案："
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.STRING.TEXT
 msgid  "ERROR: "
-msgstr ""
+msgstr "錯誤："
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
 msgid  "Unknown"
-msgstr ""
+msgstr "不明的"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "擴充套件至少需要 OpenOffice.org %VERSION"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.STRING.TEXT
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "擴充套件不支援OpenOffice%VERSION以上版本"
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
 msgid  "%PRODUCTNAME Basic Library"
-msgstr ""
+msgstr "%PRODUCTNAME Basic 程式庫"
 
 #: deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.STRING.TEXT
 msgid  "Dialog Library"
-msgstr ""
+msgstr "Dialog 程式庫"
 
 #: deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.STRING.TEXT
 msgid  "The library name could not be determined."
-msgstr ""
+msgstr "無法決定程式庫名稱。"
 
 #: deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "This library name already exists. Please choose a different name."
-msgstr ""
+msgstr "程式庫名稱已存在。請選擇另一名稱。"
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
 msgid  "Enabling: "
-msgstr ""
+msgstr "啟用： "
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
 msgid  "Disabling: "
-msgstr ""
+msgstr "停用： "
 
 #: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
 msgid  "Cannot detect media-type: "
-msgstr ""
+msgstr "無法偵測媒體類型： "
 
 #: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
 msgid  "This media-type is not supported: "
-msgstr ""
+msgstr "不支援此媒體類型： "
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
 msgid  "An error occurred while enabling: "
-msgstr ""
+msgstr "啟用時發生錯誤： "
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
 msgid  "An error occurred while disabling: "
-msgstr ""
+msgstr "停用時發生錯誤： "
 
 #: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
 msgid  "Configuration Schema"
-msgstr ""
+msgstr "配置模式"
 
 #: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
 msgid  "Configuration Data"
-msgstr ""
+msgstr "配置資料"
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
 msgid  "Help"
-msgstr ""
+msgstr "說明"
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
 msgid  "The extension cannot be installed because:\n"
-msgstr ""
+msgstr "無法安裝擴充套件，因為：\n"
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "說明檔案發生錯誤，擴充套件未被安裝：\n"
 
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
 msgid  "%MACROLANG Library"
-msgstr ""
+msgstr "%MACROLANG 程式庫"
 
 #: deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
 msgid  "Extension"
-msgstr ""
+msgstr "擴充套件"
 
 #: deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.STRING.TEXT
 msgid  "UNO Dynamic Library Component"
-msgstr ""
+msgstr "UNO 動態程式庫元件"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.STRING.TEXT
 msgid  "UNO Java Component"
-msgstr ""
+msgstr "UNO Java 元件"
 
 #: deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.STRING.TEXT
 msgid  "UNO Python Component"
-msgstr ""
+msgstr "UNO Python 元件"
 
 #: deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.STRING.TEXT
 msgid  "UNO Components"
-msgstr ""
+msgstr "UNO 元件"
 
 #: deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.STRING.TEXT
 msgid  "UNO RDB Type Library"
-msgstr ""
+msgstr "UNO RDB 類型程式庫"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.STRING.TEXT
 msgid  "UNO Java Type Library"
-msgstr ""
+msgstr "UNO Java 類型程式庫"
 
 #: deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.STRING.TEXT
 msgid  "Copying: "
-msgstr ""
+msgstr "複製： "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.STRING.TEXT
 msgid  "Error while adding: "
-msgstr ""
+msgstr "增加時發生錯誤： "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.STRING.TEXT
 msgid  "Error while removing: "
-msgstr ""
+msgstr "移除時發生錯誤： "
 
 #: deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.STRING.TEXT
 msgid  "Extension has already been added: "
-msgstr ""
+msgstr "已增加擴充套件： "
 
 #: deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.STRING.TEXT
 msgid  "There is no such extension deployed: "
-msgstr ""
+msgstr "並未部署此擴充套件： "
 
 #: deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.STRING.TEXT
 msgid  "Synchronizing repository for %NAME extensions"
-msgstr ""
-
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "同步化 %NAME 擴充套件的儲存庫"
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "您即將安裝擴充套件「$NAME」版本 $NEW。\n已經安裝較新版本 $DEPLOYED (名為「$OLDNAME」)。\n按一下 [確定] 取代已安裝的擴充套件。\n按一下 [取消] 停止安裝。"
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "您即將安裝擴充套件「$NAME」版本 $NEW。\n已經安裝該版本 (名為「$OLDNAME」)。\n按一下 [確定] 取代已安裝的擴充套件。\n按一下 [取消] 停止安裝。"
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "您即將安裝擴充套件「$NAME」版本 $NEW。\n已經安裝較舊版本 $DEPLOYED (名為「$OLDNAME」)。\n按一下 [確定] 取代已安裝的擴充套件。\n按一下 [取消] 停止安裝。"
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
 msgid  "System dependencies check"
-msgstr ""
+msgstr "系統相依性檢查"
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "未滿足下列系統相依性，\n因此擴充套件無法進行安裝："
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.STRING.TEXT
 msgid  "Add Extension(s)"
-msgstr ""
+msgstr "增加擴充套件"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
 msgid  "~Remove"
-msgstr ""
+msgstr "移除(~R)"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
 msgid  "~Enable"
-msgstr ""
+msgstr "啟用(~E)"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
 msgid  "~Disable"
-msgstr ""
+msgstr "停用(~D)"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
 msgid  "~Update..."
-msgstr ""
+msgstr "更新(~U)..."
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
 msgid  "~Options..."
-msgstr ""
+msgstr "選項(~O)..."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
 msgid  "Adding %EXTENSION_NAME"
-msgstr ""
+msgstr "增加 %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
 msgid  "Removing %EXTENSION_NAME"
-msgstr ""
+msgstr "移除 %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
 msgid  "Enabling %EXTENSION_NAME"
-msgstr ""
+msgstr "啟用 %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
 msgid  "Disabling %EXTENSION_NAME"
-msgstr ""
+msgstr "停用 %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
 msgid  "Accept license for %EXTENSION_NAME"
-msgstr ""
+msgstr "接受 %EXTENSION_NAME 的授權"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.STRING.TEXT
 msgid  "~For all users"
-msgstr ""
+msgstr "為所有使用者(~F)"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
 msgid  "~Only for me"
-msgstr ""
+msgstr "僅為我(~O)"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
 msgid  "Error: The status of this extension is unknown"
-msgstr ""
+msgstr "錯誤：此擴充套件的狀態不明"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.STRING.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "關閉"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.STRING.TEXT
 msgid  "Quit"
-msgstr ""
+msgstr "退出"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.STRING.TEXT
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME 已更新為新版本。某些共用的 %PRODUCTNAME 擴充套件與此版本不相容，且必須更新才能啟動 %PRODUCTNAME。\n\n更新共用的擴充套件需要管理員權限。請連絡系統管理員，以更新下列共用的擴充套件："
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.STRING.TEXT
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "無法啟用擴充套件，因為未滿足下列系統相依性："
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.STRING.TEXT
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
-msgstr ""
+msgstr "因為您尚未接受授權，所以已停用此擴充套件。\n"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.STRING.TEXT
 msgid  "Show license"
-msgstr ""
+msgstr "顯示授權"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.MODALDIALOG.TEXT
 msgid  "Extension Software License Agreement"
-msgstr ""
+msgstr "擴充套件授權合約"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "請遵循以下步驟繼續安裝擴充套件："
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
 msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "閱讀完整的授權合約。使用捲動軸或此對話方塊中的 [向下捲動] 按鈕，以便檢視完整的授權合約內容。"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
-msgstr ""
+msgstr "按 [接受] 按鈕接受擴充套件的授權合約。"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
 msgid  "~Scroll Down"
-msgstr ""
+msgstr "向下捲動(~S)"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
 msgid  "Accept"
-msgstr ""
+msgstr "接受"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
 msgid  "Decline"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.MODALDIALOG.TEXT
-msgid  "Extension Software License Agreement"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
-msgstr ""
+msgstr "拒絕"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
 msgid  "The extension \\'%Name\\' does not work on this computer."
-msgstr ""
+msgstr "擴充套件「%Name」無法在此電腦上運作。"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.MODALDIALOG.TEXT
 msgid  "Download and Installation"
-msgstr ""
+msgstr "下載與安裝"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FIXEDTEXT.TEXT
 msgid  "Downloading extensions..."
-msgstr ""
+msgstr "擴充套件下載中..."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
 msgid  "Result"
-msgstr ""
+msgstr "結果"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
 msgid  "OK"
-msgstr ""
+msgstr "確定"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
 msgid  "Cancel Update"
-msgstr ""
+msgstr "取消更新"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
 msgid  "Installing extensions..."
-msgstr ""
+msgstr "安裝擴充套件..."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
 msgid  "Installation finished"
-msgstr ""
+msgstr "完成安裝"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
 msgid  "No errors."
-msgstr ""
+msgstr "沒有錯誤。"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.STRING.TEXT
 msgid  "Error while downloading extension %NAME. "
-msgstr ""
+msgstr "下載擴充套件 %NAME 時發生錯誤。 "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.STRING.TEXT
 msgid  "The error message is: "
-msgstr ""
+msgstr "錯誤訊息為： "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.STRING.TEXT
 msgid  "Error while installing extension %NAME. "
-msgstr ""
+msgstr "安裝擴充套件 %NAME 時發生錯誤。 "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.STRING.TEXT
 msgid  "The license agreement for extension %NAME was refused. "
-msgstr ""
+msgstr "擴充套件 %NAME 的授權合約遭到拒絕。 "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.STRING.TEXT
 msgid  "The extension will not be installed."
-msgstr ""
+msgstr "無法安裝此擴充套件。"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.MODALDIALOG.TEXT
 msgid  "Extension Update"
-msgstr ""
+msgstr "擴充套件更新"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
 msgid  "Checking..."
-msgstr ""
+msgstr "檢查..."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
 msgid  "~Available extension updates"
-msgstr ""
+msgstr "可用的擴充套件更新(~A)"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
 msgid  "~Show all updates"
-msgstr ""
+msgstr "顯示全部的更新(~S)"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "描述"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
 msgid  "Publisher:"
-msgstr ""
+msgstr "發佈者："
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
 msgid  "What is new:"
-msgstr ""
+msgstr "新增功能："
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
 msgid  "Release Notes"
-msgstr ""
+msgstr "版本說明"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
 msgid  "~Install"
-msgstr ""
+msgstr "安裝(~I)"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "關閉"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "錯誤"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
 msgid  "No new updates are available."
-msgstr ""
+msgstr "無新的更新可用。"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "無可安裝的更新可用。若要檢視全部的更新，請核取 [顯示全部更新] 核取方塊。"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
 msgid  "An error occurred:"
-msgstr ""
+msgstr "發生錯誤："
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
 msgid  "Unknown error."
-msgstr ""
+msgstr "不明的錯誤。"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.STRING.TEXT
 msgid  "No more details are available for this update."
-msgstr ""
+msgstr "無此擴充套件的描述。"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.STRING.TEXT
 msgid  "The extension cannot be updated because:"
-msgstr ""
+msgstr "無法更新擴充套件，因為："
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.STRING.TEXT
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr ""
+msgstr "所需的OpenOffice版本不符合："
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "您的版本為 OpenOffice.org %VERSION"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
 msgid  "browser based update"
-msgstr ""
+msgstr "須經瀏覽器下載更新"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
 msgid  "Version"
-msgstr ""
+msgstr "版本"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
 msgid  "Ignore this Update"
-msgstr ""
+msgstr "忽略此更新"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.STRING.TEXT
 msgid  "Ignore all Updates"
-msgstr ""
+msgstr "忽略所有更新"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.STRING.TEXT
 msgid  "Enable Updates"
-msgstr ""
+msgstr "開啟更新"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.STRING.TEXT
 msgid  "This update will be ignored.\n"
-msgstr ""
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
-msgstr ""
+msgstr "此更新將被忽略。\n"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
 msgid  "Extension Manager"
-msgstr ""
+msgstr "擴充套件管理程式"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Add..."
-msgstr ""
+msgstr "增加(~A)..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
 msgid  "Check for ~Updates..."
-msgstr ""
+msgstr "檢查是否有更新(~U)..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FIXEDTEXT.TEXT
 msgid  "Get more extensions online..."
-msgstr ""
+msgstr "線上取得更多擴充套件..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
 msgid  "Adding %EXTENSION_NAME"
-msgstr ""
+msgstr "增加 %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "關閉"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
 msgid  "Extension Update Required"
-msgstr ""
+msgstr "必須更新擴充套件"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "Adding %EXTENSION_NAME"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
-msgid  "Check for ~Updates..."
-msgstr ""
+msgstr "%PRODUCTNAME 已更新為新版本。某些安裝的 %PRODUCTNAME 擴充套件與此版本不相容，且必須更新才可使用。"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
 msgid  "Disable all"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "全部停用"
 
 #: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
 msgid  "Installation Status"
-msgstr ""
+msgstr "安裝進度"
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
 msgid  "Installation is optimized for clients."
-msgstr ""
+msgstr "已最佳化用戶端的安裝。"
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_
 msgid  "Installation is optimized for servers."
-msgstr ""
+msgstr "已最佳化伺服器的安裝。"
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_
 msgid  "Cannot find Office installation."
-msgstr ""
+msgstr "找不到之前的安裝。"
 
 #: ../win32/source/setup/setup.ulf#_APP_TITLE_
 msgid  "Setup"
-msgstr ""
+msgstr "安裝程式"
 
 #: ../win32/source/setup/setup.ulf#_APP_PROD_TITLE_
 msgid  "The %PRODUCTNAME Setup"
-msgstr ""
+msgstr "%PRODUCTNAME 安裝程式"
 
 #: ../win32/source/setup/setup.ulf#_OUTOFMEM_
 msgid  "Out of Memory"
-msgstr ""
+msgstr "記憶體不足"
 
 #: ../win32/source/setup/setup.ulf#_NOMSI_
 msgid  "Setup was unable to find the msi package."
-msgstr ""
+msgstr "安裝程式找不到 msi 套裝軟體。"
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
 msgid  "Setup was cancelled"
-msgstr ""
+msgstr "已取消安裝程式"
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "需有足夠的管理員權限才能升級 Windows Installer。"
 
 #: ../win32/source/setup/setup.ulf#_FILE_NOT_FOUND_
 msgid  "Setup was unable to find the file '%s'."
-msgstr ""
+msgstr "安裝程式找不到檔案「%s」。"
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PARAM_
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_USAGE_
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "無效的指令行選項「%s」。說明請使用 '/?'。"
 
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
 msgid  "There is already a setup process running."
-msgstr ""
+msgstr "目前已經有一個執行中的安裝程序。"
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
 msgid  "An Unknown Error occured!"
-msgstr ""
+msgstr "發生未知錯誤！"
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
 msgid  "Invalid or incomplete profile."
-msgstr ""
+msgstr "無效或不完整的設定檔。"
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_LANG_
 msgid  "Unknown Language: %d"
-msgstr ""
+msgstr "未知語言：%d"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
 msgid  "Chinese (traditional)"
-msgstr ""
+msgstr "中文 (繁體)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
 msgid  "Czech"
-msgstr ""
+msgstr "捷克文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
 msgid  "Danish"
-msgstr ""
+msgstr "丹麥文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
 msgid  "German (Germany)"
-msgstr ""
+msgstr "德語 (德國)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
 msgid  "Greek"
-msgstr ""
+msgstr "希臘文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
 msgid  "English (USA)"
-msgstr ""
+msgstr "英文 (美國)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
 msgid  "Spanish (Spain)"
-msgstr ""
+msgstr "西班牙語 (西班牙)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
 msgid  "Finnish"
-msgstr ""
+msgstr "芬蘭文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
 msgid  "French (France)"
-msgstr ""
+msgstr "法語 (法國)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
 msgid  "Hebrew"
-msgstr ""
+msgstr "希伯來文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
 msgid  "Hungarian"
-msgstr ""
+msgstr "匈牙利文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
 msgid  "Italian (Italy)"
-msgstr ""
+msgstr "義大利語 (義大利)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
 msgid  "Japanese"
-msgstr ""
+msgstr "日文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
 msgid  "Korean"
-msgstr ""
+msgstr "韓文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
 msgid  "Dutch (Netherlands)"
-msgstr ""
+msgstr "荷蘭語 (荷蘭)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
 msgid  "Norwegian (Bokmål)"
-msgstr ""
+msgstr "挪威語 (伯克梅爾)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
 msgid  "Polish"
-msgstr ""
+msgstr "波蘭文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
 msgid  "Portuguese (Brazil)"
-msgstr ""
+msgstr "葡萄牙語 (巴西)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
 msgid  "Russian"
-msgstr ""
+msgstr "俄文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
 msgid  "Slovak"
@@ -1029,24 +929,24 @@ msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
 msgid  "Swedish (Sweden)"
-msgstr ""
+msgstr "瑞典語 (瑞典)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
 msgid  "Thai"
-msgstr ""
+msgstr "泰文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
 msgid  "Turkish"
-msgstr ""
+msgstr "土耳其文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
 msgid  "Estonian"
-msgstr ""
+msgstr "愛沙尼亞文"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
 msgid  "Chinese (Simplified)"
-msgstr ""
+msgstr "中文 (簡體)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
 msgid  "Portuguese (Portugal)"
-msgstr ""
+msgstr "葡萄牙語 (葡萄牙)"

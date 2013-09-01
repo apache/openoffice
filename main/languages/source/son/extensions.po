@@ -113,7 +113,7 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Hansayaney / Alhaaley"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
@@ -127,21 +127,17 @@ msgstr ""
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
 msgstr ""
 
-#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
-msgid  "Field Assignment"
-msgstr ""
-
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
 msgid  "Location"
-msgstr ""
+msgstr "Doo jisidoo, kanandiyan"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr ""
+msgstr " Ceeci ka koy..."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
@@ -159,13 +155,9 @@ msgstr ""
 msgid  "Please select a type of address book."
 msgstr ""
 
-#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
-
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
 msgid  "Addresses"
-msgstr ""
+msgstr " Adreesey"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
 msgid  "Create Address Data Source"
@@ -209,7 +201,7 @@ msgstr ""
 
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr " Haya kul si"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
 msgid  "Column Layout for Table %1"
@@ -251,10 +243,6 @@ msgstr ""
 msgid  "Book excerpt with title"
 msgstr ""
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
 msgid  "Journal"
 msgstr ""
@@ -273,10 +261,6 @@ msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
 msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
@@ -317,7 +301,7 @@ msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr " Dumi kul"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
 msgid  "Insert Section..."
@@ -385,7 +369,7 @@ msgstr ""
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
 msgid  "Volume"
-msgstr ""
+msgstr " Jine maayaŋ hinna"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
@@ -457,7 +441,7 @@ msgstr ""
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Taabal / Daarumi"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
@@ -485,11 +469,7 @@ msgstr ""
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
-msgid  "Data"
-msgstr ""
+msgstr "Tiira alhabar / Bayhayey"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
@@ -525,7 +505,7 @@ msgstr ""
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Hantum tiira"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
 msgid  "Data source"
@@ -537,11 +517,11 @@ msgstr ""
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
 msgid  "Content"
-msgstr ""
+msgstr " Kunaheroo"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Taabal / Daarumi"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
 msgid  "Query"
@@ -597,7 +577,7 @@ msgstr ""
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "Tiira alhabar / Bayhayey"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
 msgid  "Which ~names do you want to give the option fields?"
@@ -635,10 +615,6 @@ msgstr ""
 msgid  "Which ~value do you want to assign to each option?"
 msgstr ""
 
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
-msgid  "~Option fields"
-msgstr ""
-
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
 msgid  "Create Option Group"
 msgstr ""
@@ -661,7 +637,7 @@ msgstr ""
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Control"
-msgstr ""
+msgstr " Dabari"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
@@ -717,11 +693,11 @@ msgstr ""
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
 msgid  "Accept"
-msgstr ""
+msgstr "Yadda"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
 msgid  "Finish"
-msgstr ""
+msgstr " Benandi"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
@@ -772,20 +748,23 @@ msgid  "I accept the terms of the Agreement."
 msgstr ""
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
+#, fuzzy
 msgid  "~Accept"
-msgstr ""
+msgstr "Yadda"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
 msgstr ""
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Character"
-msgstr ""
+msgstr "Harfu"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr " Sigirawey"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
 msgid  "Font Effects"
@@ -824,6 +803,7 @@ msgid  "Literal mask"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "Read-only"
 msgstr ""
 
@@ -864,12 +844,14 @@ msgid  "Printable"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
+#, fuzzy
 msgid  "URL"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "Frame"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
 msgid  "Help text"
@@ -916,8 +898,9 @@ msgid  "Label Field"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Label"
-msgstr ""
+msgstr " Lanbaa"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
 msgid  "Alignment"
@@ -928,36 +911,42 @@ msgid  "Vert. Alignment"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
+#, fuzzy
 msgid  "Top"
-msgstr ""
+msgstr "  Beene"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
 msgid  "Middle"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
+#, fuzzy
 msgid  "Bottom"
-msgstr ""
+msgstr " Ganda"
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
 msgid  "Graphics alignment"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr " Sigirawey"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Background color"
-msgstr ""
+msgstr " Bandafaaroo noonaa"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
+#, fuzzy
 msgid  "Border"
-msgstr ""
+msgstr "Hirri"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
+#, fuzzy
 msgid  "Icon size"
-msgstr ""
+msgstr " Tammaasa beeriyaŋ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
 msgid  "Small"
@@ -972,8 +961,9 @@ msgid  "Positioning"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
+#, fuzzy
 msgid  "Navigation"
-msgstr ""
+msgstr " Tataaru-hugu ceeciyaŋ"
 
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
 msgid  "Acting on a record"
@@ -1004,8 +994,9 @@ msgid  "Multiselection"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "Maa"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 msgid  "Tab order"
@@ -1020,8 +1011,9 @@ msgid  "Filter"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
+#, fuzzy
 msgid  "Sort"
-msgstr ""
+msgstr "Fesu-fesu (Tiira fesu-fesu) / Suubayan / "
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
 msgid  "Record marker"
@@ -1032,8 +1024,9 @@ msgid  "Filter proposal"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
+#, fuzzy
 msgid  "Navigation bar"
-msgstr ""
+msgstr " Tataaruhugu-ceeciyaŋ žeeroo"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
 msgid  "Cycle"
@@ -1064,8 +1057,9 @@ msgid  "Type of list contents"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Content"
-msgstr ""
+msgstr " Kunaheroo"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
 msgid  "Content type"
@@ -1152,8 +1146,9 @@ msgid  "Value"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
+#, fuzzy
 msgid  "Formatting"
-msgstr ""
+msgstr "Hantum tuusuyan"
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
 msgid  "Class ID"
@@ -1199,10 +1194,6 @@ msgstr ""
 msgid  "Action"
 msgstr ""
 
-#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
-msgid  "URL"
-msgstr ""
-
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
 msgid  "Type of submission"
 msgstr ""
@@ -1231,10 +1222,6 @@ msgstr ""
 msgid  "Default time"
 msgstr ""
 
-#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
-msgid  "Frame"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
 msgid  "Without frame"
 msgstr ""
@@ -1244,18 +1231,21 @@ msgid  "3D look"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Flat"
-msgstr ""
+msgstr " Ga tee i kananta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
 msgid  "Valuelist"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "Taabal / Daarumi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Query"
 msgstr ""
 
@@ -1272,20 +1262,24 @@ msgid  "Tablefields"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr " Wowa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
+#, fuzzy
 msgid  "Center"
-msgstr ""
+msgstr " Game"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr " Guma"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "Baa affoo"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
 msgid  "Submit form"
@@ -1343,17 +1337,14 @@ msgstr ""
 msgid  "Post"
 msgstr ""
 
-#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
-msgid  "URL"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
 msgid  "Multipart"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Cawhaya"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
 msgid  "Standard (short)"
@@ -1444,24 +1435,23 @@ msgid  "Current page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Kala"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr " Ayyo"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
 msgid  "Parent Form"
 msgstr ""
 
-#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Single"
-msgstr ""
+msgstr " Ceegana"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
 msgid  "Multi"
@@ -1496,8 +1486,9 @@ msgid  "After record action"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Confirm deletion"
-msgstr ""
+msgstr " Tuusaroo tabatandi"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
 msgid  "Error occurred"
@@ -1664,8 +1655,9 @@ msgid  "Delay"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
+#, fuzzy
 msgid  "Repeat"
-msgstr ""
+msgstr "Filla koyne / Filla"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
 msgid  "Visible size"
@@ -1676,10 +1668,12 @@ msgid  "Orientation"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
+#, fuzzy
 msgid  "Horizontal"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
+#, fuzzy
 msgid  "Vertical"
 msgstr ""
 
@@ -1688,16 +1682,18 @@ msgid  "While adjusting"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
+#, fuzzy
 msgid  "Date"
-msgstr ""
+msgstr " Han"
 
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
 msgid  "State"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
+#, fuzzy
 msgid  "Time"
-msgstr ""
+msgstr "Waati"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
 msgid  "Scale"
@@ -1708,27 +1704,27 @@ msgid  "Button type"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "Tilasu / Tilasu ra / Tilasu mate"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "OK"
-msgstr ""
+msgstr "Ay yadda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
-msgstr ""
+msgstr "Naŋ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Faaba"
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
-msgid  "Text"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
@@ -1783,28 +1779,8 @@ msgstr ""
 msgid  "CR+LF (Windows)"
 msgstr ""
 
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
-msgid  "Horizontal"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
-msgid  "Vertical"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
 msgid  "Both"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
-msgid  "Table"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
-msgid  "Query"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
@@ -1824,15 +1800,12 @@ msgid  "Hide selection"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
+#, fuzzy
 msgid  "Style"
-msgstr ""
+msgstr " Yaayi dumey"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 msgid  "3D"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
-msgid  "Flat"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
@@ -1888,8 +1861,9 @@ msgid  "Below right"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
+#, fuzzy
 msgid  "Centered"
-msgstr ""
+msgstr " Game"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
 msgid  "Wrap text automatically"
@@ -1904,8 +1878,9 @@ msgid  "Hide"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
+#, fuzzy
 msgid  "Show"
-msgstr ""
+msgstr " Cebe"
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
 msgid  "XML data model"
@@ -1925,10 +1900,6 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
 msgid  "Relevant"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
-msgid  "Read-only"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
@@ -2039,10 +2010,6 @@ msgstr ""
 msgid  "No Label"
 msgstr ""
 
-#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
-msgid  "No"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
 msgid  "Keep Ratio"
 msgstr ""
@@ -2092,10 +2059,12 @@ msgid  "To Paragraph"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "As Character"
-msgstr ""
+msgstr "Harfu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "To Page"
 msgstr ""
 
@@ -2104,12 +2073,9 @@ msgid  "To Frame"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "To Character"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Page"
-msgstr ""
+msgstr "Harfu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "To Cell"
@@ -2132,8 +2098,9 @@ msgid  "Bold"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "(Default)"
-msgstr ""
+msgstr "Tilasu / Tilasu ra / Tilasu mate"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
 msgid  "New Data Type"
@@ -2148,8 +2115,9 @@ msgid  "Do you want to delete the data type '#type#' from the model?\nPlease not
 msgstr ""
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Button"
-msgstr ""
+msgstr " Butoŋ"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
 msgid  "Option Button"
@@ -2228,36 +2196,43 @@ msgid  "Table Control "
 msgstr ""
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "Tilasu / Tilasu ra / Tilasu mate"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr " Dumi kul"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "Tiira alhabar / Bayhayey"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Kala"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr " Ayyo"
 
 #: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Faaba"
 
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
 msgid  "<Embedded-Image>"
 msgstr ""
 
 #: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Cawhaya"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
@@ -2284,20 +2259,23 @@ msgid  "Controls"
 msgstr ""
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Move Up"
-msgstr ""
+msgstr "  Zijandi beene"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Move Down"
-msgstr ""
+msgstr "  Zumandi ganda"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
 msgid  "Automatic Sort"
 msgstr ""
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
-msgstr ""
+msgstr "Settaa / Šetta / Kur / Kanandi / margari"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
 msgid  "Linear ascending"
@@ -2324,8 +2302,9 @@ msgid  "Create\nPreview"
 msgstr ""
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr " Alhaaloo guna"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
 msgid  "Scan area"
@@ -2368,8 +2347,9 @@ msgid  "Vector element"
 msgstr ""
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
-msgstr ""
+msgstr "Settaa / Šetta / Kur / Kanandi / margari"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
 msgid  "Scanner"
@@ -2488,16 +2468,19 @@ msgid  "%PERCENT%"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr " Alhaali"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Taka / Alhaali"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Daabu"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
 msgid  "~Download"
@@ -2516,10 +2499,12 @@ msgid  "~Resume"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
-msgstr ""
+msgstr "Naŋ"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr ""
 
@@ -2527,16 +2512,9 @@ msgstr ""
 msgid  "Click here to start the download."
 msgstr ""
 
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
-
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
+#, fuzzy
 msgid  "Click here for more information."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
@@ -2559,10 +2537,6 @@ msgstr ""
 msgid  "Download of update stalled"
 msgstr ""
 
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
-
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Download of update completed"
 msgstr ""
@@ -2573,8 +2547,4 @@ msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
 msgid  "Updates for extensions available"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
-msgid  "Click here for more information."
 msgstr ""

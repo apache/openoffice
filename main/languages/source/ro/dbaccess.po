@@ -33,195 +33,195 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
 msgid  "Tried to open the table $name$."
-msgstr ""
+msgstr "S-a încercat deschiderea tabelului $name$."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
 msgid  "No connection could be established."
-msgstr ""
+msgstr "Conexiunea nu a putut fi stabilită."
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "Tabela $name$ există deja. Nu este vizibilă deoarece a fost filtrată."
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "Nu aveți acces la scriere la datele de configurare pe care se bazează obiectul."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "Conexiunea la sursa externă de date nu a putut fi stabilită. A apărut o eroare necunoscută. Driverul este probabil deficient. "
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "Nu s-a putut stabili conexiunea la sursa externă de date. Nu s-a găsit un driver SDBC pentru URL-ul dat."
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "Conexiunea la sursa externă de date nu a putut fi stabilită. Gestionarul de driver SDBC nu a putut fi încărcat."
 
 #: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Formular"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Raport"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "Sursa de date nu a fost salvată. Vă rugăm să folosiți interfața XStorable pentru a salva sursa de date."
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Comanda dată nu este o instrucțiune SELECT.\nSunt permise numai aceste interogări."
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
 msgid  "No values were modified."
-msgstr ""
+msgstr "Nu s-au modificat valori."
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Nu s-au putut insera valori. Interfața XRowUpdate nu este suportată de ResultSet."
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Nu s-au putut insera valori. Interfața XResultSetUpdate nu este suportată de ResultSet."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
 msgid  "Values could not be modified, due to a missing condition statement."
-msgstr ""
+msgstr "Nu s-au putut modifica valorile datorită lipsei unei condiții."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
 msgid  "The adding of columns is not supported."
-msgstr ""
+msgstr "Adăugarea de coloane nu este suportată."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
 msgid  "The dropping of columns is not supported."
-msgstr ""
+msgstr "Aruncarea coloanelor nu este suportată."
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
 msgid  "The WHERE condition could not be created for the primary key."
-msgstr ""
+msgstr "Condiția WHERE nu poate fi creată pentru cheia primară."
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
 msgid  "The column does not support the property '%value'."
-msgstr ""
+msgstr "Coloana nu suportă proprietatea „%value”."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
 msgid  "The column is not searchable!"
-msgstr ""
+msgstr "Coloana nu suportă căutare!"
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
 msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
-msgstr ""
+msgstr "Valorile coloanelor nu sunt de tipul Sequence<sal_Int8>."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
 msgid  "The column is not valid."
-msgstr ""
+msgstr "Coloana nu este validă."
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
 msgid  "The column '%name' must be visible as a column."
-msgstr ""
+msgstr "Coloana „%name” trebuie să fie vizibilă ca și coloană."
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
 msgid  "The interface XQueriesSupplier is not available."
-msgstr ""
+msgstr "Interfața XQueriesSupplier nu este disponibilă."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
 msgid  "The driver does not support this function."
-msgstr ""
+msgstr "Driverul nu suportă această funcție."
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
 msgid  "An 'absolute(0)' call is not allowed."
-msgstr ""
+msgstr "Nu este permis apelul „absolute(0)”."
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
 msgid  "Relative positioning is not allowed in this state."
-msgstr ""
+msgstr "Poziționarea relativă nu este permisă în acest stadiu."
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "Un rând nu poate fi reîmprospătat când ResultSet este poziționat după ultimul rând."
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "Se poate insera un rând nou doar după ce ResultSet a fost mutat pe noul rând."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
 msgid  "A row cannot be modified in this state"
-msgstr ""
+msgstr "Nu se poate modifica rândul în acest stadiu."
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
 msgid  "A row cannot be deleted in this state."
-msgstr ""
+msgstr "Nu se poate șterge rândul în acest stadiu."
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
 msgid  "The driver does not support table renaming."
-msgstr ""
+msgstr "Driverul nu suportă redenumirea tabelelor."
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions."
-msgstr ""
+msgstr "Driverul nu suportă modificarea descrierilor coloanelor."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "Driverul nu suportă modificarea descrierilor coloanelor prin schimbarea numelui."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "Driverul nu suportă modificarea descrierilor coloanelor prin schimbarea indexului."
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Nu există fișierul „$file$”."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no table named \"$table$\"."
-msgstr ""
+msgstr "Nu există niciun tabel cu numele „$table$”."
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no query named \"$table$\"."
-msgstr ""
+msgstr "Nu există nicio interogare numită „$table$”."
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "Există tabele în baza de date al căror nume este identic cu numele unor interogări existente. Pentru a și interogări și nume de tabele, asigurați-vă că au nume distincte."
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "Comanda SQL care adus la această eroare este:\n\n$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The SQL command does not describe a result set."
-msgstr ""
+msgstr "Comanda SQL nu descrie un set de rezultate."
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
 msgid  "The name must not be empty."
-msgstr ""
+msgstr "Numele nu poate fi gol."
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
 msgid  "The container cannot contain NULL objects."
-msgstr ""
+msgstr "Containerul nu poate conține obiecte NULL."
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There already is an object with the given name."
-msgstr ""
+msgstr "Deja există un obiect cu numele dat."
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
 msgid  "This object cannot be part of this container."
-msgstr ""
+msgstr "Acest obiect nu poate fi parte a acestui container."
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
 msgid  "The object already is, with a different name, part of the container."
-msgstr ""
+msgstr "Obiectul original este deja, cu un nume diferit, parte a acestui container."
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
 msgid  "Unable to find the document '$name$'."
-msgstr ""
+msgstr "Documentul „$name$” nu poate fi găsit."
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "Nu se poate salva documentul:\n\n$except$:\n$message$"
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
 msgid  "Error accessing data source '$name$':\n$error$"
@@ -305,331 +305,311 @@ msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database ~name"
-msgstr ""
+msgstr "~Numele bazei de date"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
 msgid  "User settings"
-msgstr ""
+msgstr "Setări de utilizator"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
 msgid  "~Control user"
-msgstr ""
+msgstr "Utilizator de ~control"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
 msgid  "~Administrator"
-msgstr ""
+msgstr "~Administrator"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
 msgid  "~Domain user"
-msgstr ""
+msgstr "Utilizator ~de domeniu"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
 msgid  "P~assword..."
-msgstr ""
+msgstr "P~arolă..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
 msgid  "~Password..."
-msgstr ""
+msgstr "~Parolă..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
 msgid  "Passwo~rd..."
-msgstr ""
+msgstr "Pa~rolă..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
 msgid  "~Backup file"
-msgstr ""
+msgstr "~Fișier cu copie de siguranță"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
 msgid  "..."
-msgstr ""
+msgstr "..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
 msgid  "Database settings"
-msgstr ""
+msgstr "Setările bazei de date"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE"
-msgstr ""
+msgstr "S~YSDEVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "TRANSACTI~ONLOG"
-msgstr ""
+msgstr "TRANSACTI~ONLOG"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE"
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
+msgstr "DATAD~EVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
 msgid  "Transaction ~file (MB)"
-msgstr ""
+msgstr "~Fișierul de tranzacție (MO)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data~base size (MB)"
-msgstr ""
+msgstr "Mărimea ~bazei de date (MO)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "~Memorie temporară (MO)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
 msgid  "Backup file information"
-msgstr ""
+msgstr "Informații despre copia de siguranță"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
 msgid  "Create New Adabas D Database"
-msgstr ""
+msgstr "Crează o bază de date Adabas D nouă"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
 msgid  "No entry could be written in the configuration file."
-msgstr ""
+msgstr "Nu a putut fi scrisă nici o intrare în fișierul de configurație."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
 msgid  "An error occurred as the DB files were being created."
-msgstr ""
+msgstr "A intervenit o eroare în timpul creării fișierelor bazei de date."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
 msgid  "An error occurred as the system tables were being created."
-msgstr ""
+msgstr "A intervenit o eroare în timpul creării tabelelor de sistem."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
 msgid  "The backup file entered does not exist."
-msgstr ""
+msgstr "Fișierul cu copia de siguranță introdus nu există."
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
-msgstr ""
+msgstr "Numele complet al fișierului nu poate fi mai lung decât \\'#\\' caractere."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
 msgid  "The administrator and the control user cannot have the same name!"
-msgstr ""
+msgstr "Administratorul și utilizatorul de control nu pot avea același nume!"
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
 msgid  "No name has been entered for the $name$ file!"
-msgstr ""
+msgstr "Nu s-a introdus niciun nume pentru fișierul $name$!"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
 msgid  "You have to have administrator rights to create a new database!"
-msgstr ""
+msgstr "Aveți nevoie de drepturi de administrator pentru a crea o bază de date nouă!"
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
 msgid  "The specified file name or directory does not exist."
-msgstr ""
+msgstr "Fișierul sau directorul specificat nu există."
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
 msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Nu pot fi create baze de date noi.\nVerificați instalarea de Adabas D, în mod special variabilele „DBROOT” și „DBWORK”."
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
+msgstr "Avertisment!"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
 msgid  "Creating database files."
-msgstr ""
+msgstr "Se creează fișierele bazei de date."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
 msgid  "Creating database configuration file."
-msgstr ""
+msgstr "Se creează fișierul de configurare al bazei de date."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
 msgid  "Starting database for the first time."
-msgstr ""
+msgstr "Se pornește baza de date pentru prima dată."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
 msgid  "The name entered already exists."
-msgstr ""
+msgstr "Numele fișierului introdus există deja."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "Nu s-au putut seta nume implicite pentru fișierele bază de date. Lungimea totală e mai mare de 40 caractere."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "Nu s-au putut seta numele implicit pentru bazele de date. Nu există permisiune de scriere pe disc."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Baza de date trebuie convertită. Vă rugăm să introduceți numele și parola utilizatorului de control."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "Nu sunt permise spațiile în parolă. Vă rugăm să introduceți o altă parolă."
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
 msgid  "Database Document Macro Migration"
-msgstr ""
+msgstr "Migrare de macrouri de documente de baze de date"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
 msgid  "Prepare"
-msgstr ""
+msgstr "Pregătire"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
 msgid  "Backup Document"
-msgstr ""
+msgstr "Copie de siguranță pentru document"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
 msgid  "Migrate"
-msgstr ""
+msgstr "Migrare"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr ""
+msgstr "Sumar"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Welcome to the Database Macro Migration Wizard"
-msgstr ""
+msgstr "Bun venit la asistentul de migrare a macrourilor de baze de date"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Acest asistent va ghida migrarea macrourilor dumneavoastră.\n\nDupă ce terminați, toate macrourile care înainte erau încorporate în formularele și rapoartele documentului bază de date vor fi mutate chiar în document. Pe parcursul acestei acțiuni, bibliotecile vor fi redenumite după cum va fi nevoie.\n\nDacă formularele și rapoartele conțin referințe către aceste macrouri, ele vor fi ajustate, unde acest lucru este posibil.\n\nÎnainte de a putea începe migrarea, toate formularele, rapoartele, interogările și tabelele care aparțin documentului trebuie închise. Apăsați „Înainte” pentru a face acest lucru."
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "Nu s-au putut închide toate obiectele. Vă rugăm să le închideți manual, apoi reporniți asistentul."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Backup your Document"
-msgstr ""
+msgstr "Faceți o copie de siguranță a documentului"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "Pentru a vă permite să reveniți la starea anterioară migrației, baza de date va fi salvată într-un loc ales de dumneavoastră. Modificările făcute de acest asistent vor afecta doar documentul original, copia rămânând neatinsă."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
 msgid  "Save To:"
-msgstr ""
+msgstr "Salvează în:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
 msgid  "Browse ..."
-msgstr ""
+msgstr "Răsfoire..."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Apăsați „Înainte” pentru a salva o copie a documentului dumneavoastră și a începe migrația."
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Migration Progress"
-msgstr ""
+msgstr "Progresul migrației"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "Documentul bază de date conține $forms$ formular(e) și $reports$ rapoarte care sunt procesate în momentul de față:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
 msgid  "Current object:"
-msgstr ""
+msgstr "Obiectul curent:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Current progress:"
-msgstr ""
+msgstr "Progresul curent:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Overall progress:"
-msgstr ""
+msgstr "Progres total:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
 msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "documentul $current$ din $overall$"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
-
-#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Summary"
-msgstr ""
+msgstr "Toate formularele și rapoartele au fost procesate cu succes. Apăsați „Înainte” pentru un sumar detaliat."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "Migrarea a reușit. Mai jos găsiți un jurnal al acțiunilor care au fost aplicate documentului dumneavoastră."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "Migrarea nu a reușit. Examinați jurnalul de migrare de mai jos pentru detalii."
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
 msgid  "Form '$name$'"
-msgstr ""
+msgstr "Formularul „$name$”"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
 msgid  "Report '$name$'"
-msgstr ""
-
-#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
-msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "Raportul „$name$”"
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
 msgid  "Database Document"
-msgstr ""
+msgstr "Document bază de date"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
 msgid  "saved copy to $location$"
-msgstr ""
+msgstr "copie salvată în $location$"
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
 msgid  "migrated $type$ library '$old$' to '$new$'"
-msgstr ""
+msgstr "s-a migrat biblioteca $type$ „$old$” la „$new$”"
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
 msgid  "$type$ library '$library$'"
-msgstr ""
+msgstr "biblioteca $type$ „$library$”"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
 msgid  "migrating libraries ..."
-msgstr ""
+msgstr "migrare librării..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic"
-msgstr ""
+msgstr "%PRODUCTNAME Basic"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
 msgid  "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
 msgid  "BeanShell"
-msgstr ""
+msgstr "BeanShell"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
 msgid  "Java"
-msgstr ""
+msgstr "Java"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
 msgid  "Python"
-msgstr ""
+msgstr "Python"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
 msgid  "dialog"
-msgstr ""
+msgstr "dialog"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
 msgid  "Error(s)"
-msgstr ""
+msgstr "Erori"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
 msgid  "Warnings"
-msgstr ""
+msgstr "Avertismente"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
 msgid  "caught exception: "
-msgstr ""
+msgstr "excepția prinsă: "
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "Trebuie să alegeți o destinație pentru copia de siguranță diferită de cea a documentului."
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
 msgid  "Invalid number of initialization arguments. Expected 1."
@@ -645,275 +625,263 @@ msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "Nu puteți da același nume și unui tabel și unei interogări. Vă rugăm să folosiți un nume care nu este încă folosit de o interogare sau de un tabel."
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Tabel"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "Interogare"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "Conexiunea dată nu este o interogare validă și/sau nu furnizează tabele."
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
 msgid  "The given object is no table object."
-msgstr ""
+msgstr "Obiectul dat nu este un tabel."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Tipul compoziției este invalid - sunt admise doar valori din com.sun.star.sdb.tools.CompositionType."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Tipul comanzii este nevalid - sunt permise doar TABLE și AND QUERY din com.sun.star.sdb.CommandType."
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
 msgid  "Create Form in Design View..."
-msgstr ""
+msgstr "Creează vizual un formular..."
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Form..."
-msgstr ""
+msgstr "Folosește asistentul pentru a crea un formular..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
-msgstr ""
+msgstr "Folosește asistentul pentru a crea un raport..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
 msgid  "Create Report in Design View..."
-msgstr ""
+msgstr "Creează vizual un raport..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
 msgid  "Create Query in Design View..."
-msgstr ""
+msgstr "Creează vizual o interogare..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
 msgid  "Create Query in SQL View..."
-msgstr ""
+msgstr "Creează o interogare cu text SQL..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Query..."
-msgstr ""
+msgstr "Folosește asistentul pentru a crea o interogare..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
-msgstr ""
+msgstr "Creează vizual un tabel..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Table..."
-msgstr ""
+msgstr "Folosește asistentul pentru a crea un tabel..."
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
 msgid  "Create View..."
-msgstr ""
+msgstr "Creează o vizualizare..."
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "Formulare"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
-msgstr ""
+msgstr "Rapoarte"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
 msgid  "Form..."
-msgstr ""
+msgstr "Formular.."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
 msgid  "Report..."
-msgstr ""
+msgstr "Raport..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
 msgid  "View (Simple)..."
-msgstr ""
+msgstr "Vizualizare (simplă)..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
 msgid  "Paste Special..."
-msgstr ""
+msgstr "Lipește special..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
 msgid  "Delete"
-msgstr ""
+msgstr "Șterge"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
 msgid  "Rename"
-msgstr ""
+msgstr "Redenumește"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
 msgid  "Edit"
-msgstr ""
+msgstr "Editare"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
-msgstr ""
+msgstr "Editează ca text SQL..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
-msgstr ""
+msgstr "Deschide"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
 msgid  "Create as View"
-msgstr ""
+msgstr "Creează ca vizualizare"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
-msgstr ""
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
-msgid  "Report..."
-msgstr ""
+msgstr "Asistent de formulare..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Asistent de rapoarte..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
 msgid  "Select All"
-msgstr ""
+msgstr "Selectează tot"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
 msgid  "~Database"
-msgstr ""
+msgstr "Bază ~de date"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr ""
+msgstr "Proprietăți"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
 msgid  "Connection Type..."
-msgstr ""
+msgstr "Tipul conexiunii"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
 msgid  "Advanced Settings..."
-msgstr ""
+msgstr "Setări avansate"
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
 msgid  "Do you want to delete the data source '%1'?"
-msgstr ""
+msgstr "Doriți să ștergeți sursa de date „%1”?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base"
-msgstr ""
+msgstr " - %PRODUCTNAME Base"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Asistentul vă va ghida pașii necesari pentru a crea un raport."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Creați un formular specificând sursa înregistrărilor, controalele și proprietățile lor."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Creați un raport specificând sursa de date, comenzile și caracteristicile comenzii."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "Asistentul vă va ghida pașii necesari pentru a crea un formular."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Creați o interogare specificând filtrele, tabelele de intrare, numele câmpurilor și proprietăți pentru sortare sau grupare."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "Creați o interogare scriind direct SQL."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Asistentul vă va ghida pașii necesari pentru a crea o interogare."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Creați un tabel specificând numele câmpurilor și proprietățile lor, precum și tipul datelor."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Alegeți dintr-o selecție de mostre de tabele personale și de afaceri pe care le puteți personaliza pentru a crea un tabel."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Creați o vizualizare specificând tabelele și numele câmpurilor care doriți să fie vizibile."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Opens the view wizard"
-msgstr ""
+msgstr "Deschide asistentul de creat vizualizări"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "Bază de date"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
 msgid  "Tasks"
-msgstr ""
+msgstr "Sarcini"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "Descriere"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "Previzualizare"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
 msgid  "Disable Preview"
-msgstr ""
-
-#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "Dezactivează previzualizarea"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
 msgid  "None"
-msgstr ""
+msgstr "Fără"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
 msgid  "Document Information"
-msgstr ""
+msgstr "Informații despre document"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
 msgid  "Document"
-msgstr ""
+msgstr "Document"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Formular"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Raport"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
 msgid  "F~orm name"
-msgstr ""
+msgstr "Nume f~ormular"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
 msgid  "~Report name"
-msgstr ""
+msgstr "Nume ~raport"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
 msgid  "F~older name"
-msgstr ""
+msgstr "Nume d~osar"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
 msgid  "The document contains forms or reports with embedded macros."
-msgstr ""
+msgstr "Documentul conține formulare sau rapoarte cu macrouri încorporate."
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Macrourile ar trebui să fie încorporate chiar în baza de date.\n\nPuteți continua sa folosiți documentul ca și până acum, dar vă încurajăm să migrați macrourile. Elementul de meniu „Unelte / Migrează macrouri ...” vă va asista în acest scop.\n\nLuați aminte că nu veți putea încorpora macrouri în baza de date până când nu este  făcută această migrare. "
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
 msgid  "Embedded database"
-msgstr ""
+msgstr "Bază de date încorporată"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
 msgid  "You cannot select different categories."
@@ -925,407 +893,403 @@ msgstr ""
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
-
-#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Tabel #"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 msgid  "Do you want to delete the selected data?"
-msgstr ""
+msgstr "Doriți să ștergeți datele selectate?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
 msgid  "(filtered)"
-msgstr ""
+msgstr "(filtrat)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "Eroare la configurarea criteriilor de sortare"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "Eroare la configurarea criteriilor de filtrare"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
 msgid  "Connection lost"
-msgstr ""
+msgstr "Conexiunea pierdută"
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "Interogări"
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "Tabele"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 msgid  "Edit ~Database File..."
-msgstr ""
+msgstr "E~ditează fișierul bază de date..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
 msgid  "Registered databases ..."
-msgstr ""
+msgstr "Baze de date înregistrate ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
 msgid  "Disco~nnect"
-msgstr ""
+msgstr "Deco~nectare"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
 msgid  "Confirm Deletion"
-msgstr ""
+msgstr "Confirmați ștergerea"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
 msgid  "Do you want to delete the table '%1'?"
-msgstr ""
+msgstr "Doriți să ștergeți tabelul „%1”?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
 msgid  "The query already exists. Do you want to delete it?"
-msgstr ""
+msgstr "Interogarea există deja. Doriți să o ștergeți?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "S-a pierdut conexiunea cu baza de date. Doriți să vă reconectați?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
 msgid  "Warnings encountered"
-msgstr ""
+msgstr "Au apărut niște avertismente"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "În timp ce se obțineau tabelele, conexiunea la baza de date a raportat niște avertismente."
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
 msgid  "Connecting to \"$name$\" ..."
-msgstr ""
+msgstr "Conectare la „$name%”..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
 msgid  "Loading query $name$ ..."
-msgstr ""
+msgstr "Se încarcă interogarea $name$ ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
 msgid  "Loading table $name$ ..."
-msgstr ""
+msgstr "Se încarcă tabelul $name$ ..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
 msgid  "No table format could be found."
-msgstr ""
+msgstr "Nu s-a găsit niciun format de tabel."
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
+msgstr "Nu se poate stabili conexiunea la sursa de date „$name$”"
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
 msgid  "Rebuild"
-msgstr ""
+msgstr "Reconstruiește"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 msgid  "Column ~Format..."
-msgstr ""
+msgstr "~Format coloană..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
 msgid  "Copy Column D~escription"
-msgstr ""
+msgstr "Copiază d~escrierea coloanei"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
 msgid  "Table Format..."
-msgstr ""
+msgstr "Format tabel..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
 msgid  "Row Height..."
-msgstr ""
+msgstr "Înălțime rând..."
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
 msgid  "Undo: Data Input"
-msgstr ""
+msgstr "Desfă: Introducere date"
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 msgid  "Save current record"
-msgstr ""
+msgstr "Salvează înregistrarea curentă"
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
 msgid  "Query #"
-msgstr ""
+msgstr "Interogare #"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
+msgstr "Tabel"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
 msgid  "View #"
-msgstr ""
+msgstr "Vizualizare #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name \"#\" already exists."
-msgstr ""
+msgstr "Numele „#” există deja."
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
 msgid  "No matching column names were found."
-msgstr ""
+msgstr "Nu s-au găsit nume de coloane care să se potrivească."
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
 msgid  "An error occurred. Do you want to continue copying?"
-msgstr ""
+msgstr "A apărut o eroare. Doriți să continuați copierea ?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
 msgid  "Data source table view"
-msgstr ""
+msgstr "Vizualizare sursa de date tabel"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
 msgid  "Shows the selected table or query."
-msgstr ""
+msgstr "Arată tabelul selectat sau interogarea."
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
 msgid  "Table name"
-msgstr ""
+msgstr "Nume tabel"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
 msgid  "Insert data"
-msgstr ""
+msgstr "Introducere date"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
 msgid  "Delete data"
-msgstr ""
+msgstr "Ștergere date"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
 msgid  "Modify data"
-msgstr ""
+msgstr "Modificare date"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
 msgid  "Alter structure"
-msgstr ""
+msgstr "Alterare structură"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
 msgid  "Read data"
-msgstr ""
+msgstr "Citește date"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
 msgid  "Modify references"
-msgstr ""
+msgstr "Modificare referințe"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
 msgid  "Drop structure"
-msgstr ""
+msgstr "Aruncare structură"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "Sortează crescător"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
 msgid  "Sort Descending"
-msgstr ""
+msgstr "Sortează descrescător"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "Nu se poate conecta la managerul de drivere SDBC  (#servicename#)."
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 msgid  "A driver is not registered for the URL #connurl#."
-msgstr ""
+msgstr "Nu este înregistrat un driver pentru URL-ul #connurl#."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
 msgid  "No connection could be established for the URL #connurl#."
-msgstr ""
+msgstr "Nu se poate stabili o conexiune cu URL-ul #connurl#."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "Vă rugăm să verificați setările curente, cum ar fi utilizatorul și parola."
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "Conexiune efectuată cu succes, dar nu sunt disponibile informații despre tabelele bazei de date."
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
 msgid  "All tables"
-msgstr ""
+msgstr "Toate tabelele"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
 msgid  "All views"
-msgstr ""
+msgstr "Toate vizualizările"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
 msgid  "All tables and views"
-msgstr ""
+msgstr "Toate tabelele și vizualizările"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 msgid  "Modify SQL statement(s)"
-msgstr ""
+msgstr "Modifică enunț(uri) SQL"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
 msgid  "Database files"
-msgstr ""
+msgstr "Fișiere de bază de date"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE:"
-msgstr ""
+msgstr "S~YSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "~TRANSACTIONLOG:"
-msgstr ""
+msgstr "~TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE:"
-msgstr ""
+msgstr "DATAD~EVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
 msgid  "Database sizes"
-msgstr ""
+msgstr "Mărimile bazelor de date"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
 msgid  "S~ize (MB):"
-msgstr ""
+msgstr "Măr~ime (MO):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
 msgid  "~Free memory space (MB):"
-msgstr ""
+msgstr "~Memorie liberă (MO):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
 msgid  "~Memory utilization (in %):"
-msgstr ""
+msgstr "~Memorie utilizată (în %):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
 msgid  "Database Statistics"
-msgstr ""
+msgstr "Statistici bază de date"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
 msgid  "Contains the system tables"
-msgstr ""
+msgstr "Conține tabelele de sistem"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
 msgid  "Contains information about transaction"
-msgstr ""
+msgstr "Conține informații despre tranzacție"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
 msgid  "Contains all data files"
-msgstr ""
+msgstr "Conține toate fișierele cu date"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
 msgid  "Total size of the database files"
-msgstr ""
+msgstr "Mărimea totală a fișierelor bazei de date"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 msgid  "Currently available space before a new datadev file is created."
-msgstr ""
+msgstr "Spațiul disponibil înainte de crearea unui nou fișier datadev."
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
 msgid  "Currently used memory"
-msgstr ""
+msgstr "Memorie utilizată curent"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "Nu se pot afișa informații deoarece nu există drepturi de acces necesare pentru tabelele de sistem."
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
 msgid  "~Database name"
-msgstr ""
+msgstr "Numele bazei ~de date"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
 msgid  "Se~rver / Port"
-msgstr ""
+msgstr "Se~rver / port"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
 msgid  "~Server"
-msgstr ""
+msgstr "~Server"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
 msgid  "~Port"
-msgstr ""
+msgstr "~Port"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Implicit: 3306"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
-msgstr ""
+msgstr "So~cket"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
 msgid  "Named p~ipe"
-msgstr ""
+msgstr "„P~ipe” cu nume"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "Tabele"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "Interogări"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr ""
+msgstr "~Adaugă"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "În~chide"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
 msgid  "Add Tables"
-msgstr ""
+msgstr "Adaugă tabele"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
 msgid  "Add Table or Query"
-msgstr ""
+msgstr "Adaugă tabel sau interogare"
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Opțiuni"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 msgid  "Use SQL92 naming constraints"
-msgstr ""
+msgstr "Folosește constrângerile de numire SQL92"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
 msgid  "Append the table alias name on SELECT statements"
-msgstr ""
+msgstr "Adaugă aliasul tabelului la instrucțiunile SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
 msgid  "Use keyword AS before table alias names"
-msgstr ""
+msgstr "Folosește cuvântul cheie „AS” înaintea aliasurilor de tabel"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 msgid  "Use Outer Join syntax '{OJ }'"
-msgstr ""
+msgstr "Folosește sintaxa Outer Join „{OJ }”"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
 msgid  "Ignore the privileges from the database driver"
-msgstr ""
+msgstr "Ignoră privilegiile din driverul bazei de date"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
 msgid  "Replace named parameters with '?'"
-msgstr ""
+msgstr "Înlocuiește parametrii numiți cu „?”"
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
 msgid  "Display version columns (when available)"
-msgstr ""
+msgstr "Arată coloanele de versiune (când sunt disponibile)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 msgid  "Use catalog name in SELECT statements"
-msgstr ""
+msgstr "Folosește numele catalogului în instrucțiunile SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
 msgid  "Use schema name in SELECT statements"
-msgstr ""
+msgstr "Folosește numele schemei în instrucțiunile SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
 msgid  "Create index with ASC or DESC statement"
-msgstr ""
+msgstr "Creează un index cu instrucțiunea ASC sau DESC"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
 msgid  "End text lines with CR+LF"
-msgstr ""
+msgstr "Termină liniile de text cu CR+LF"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
 msgid  "Ignore currency field information"
-msgstr ""
+msgstr "Ignoră informația din câmpul valutelor"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
 msgid  "Form data input checks for required fields"
-msgstr ""
+msgstr "Verificarea formatului datelor introduse pentru câmpurile obligatorii"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
 msgid  "Use ODBC conformant date/time literals"
-msgstr ""
+msgstr "Folosește formatul de dată și oră conform cu ODBC"
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
 msgid  "Supports primary keys"
@@ -1337,23 +1301,23 @@ msgstr ""
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Default"
-msgstr ""
+msgstr "Implicit"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Mixed"
-msgstr ""
+msgstr "Mixt"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "MS Access"
-msgstr ""
+msgstr "MS Access"
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
 msgid  "Comparison of Boolean values"
-msgstr ""
+msgstr "Compararea valorilor logice"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
@@ -1361,83 +1325,83 @@ msgstr ""
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Setări"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
 msgid  "Re~trieve generated values"
-msgstr ""
+msgstr "Ex~trage valorile generate"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
 msgid  "~Auto-increment statement"
-msgstr ""
+msgstr "Instrucțiune de increment~are automată"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
 msgid  "~Query of generated values"
-msgstr ""
+msgstr "~Interogare de valori generate"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
 msgid  "Generated Values"
-msgstr ""
+msgstr "Valori generate"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 msgid  "Special Settings"
-msgstr ""
+msgstr "Setări speciale"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
-msgstr ""
+msgstr "Proprietăți avansate"
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the dBASE files"
-msgstr ""
+msgstr "Calea către fișierele dBASE"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the text files"
-msgstr ""
+msgstr "Calea către fișierele text"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the spreadsheet document"
-msgstr ""
+msgstr "Calea către foaia de calcul"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
 msgid  "Name of the ODBC data source on your system"
-msgstr ""
+msgstr "Numele sursei de date ODBC de pe sistemul dumneavoastră"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the MySQL database"
-msgstr ""
+msgstr "Numele bazei de date MySQL"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Oracle database"
-msgstr ""
+msgstr "Numele bazei de date Oracle"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Adabas D database"
-msgstr ""
+msgstr "Numele bazei de date Adabas D"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
 msgid  "Microsoft Access database file"
-msgstr ""
+msgstr "Fișierul cu baza de date Microsoft Access"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "Nu mai sunt necesare alte setări. Pentru a verifica dacă conexiunea funcționează, apăsați butonul „%test”."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
 msgid  "Datasource URL"
-msgstr ""
+msgstr "URL sursă de date"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "~Nume de gazdă"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
 msgid  "~Mozilla profile name"
-msgstr ""
+msgstr "Nume profil ~Mozilla"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
 msgid  "~Thunderbird profile name"
-msgstr ""
+msgstr "Nume profil ~Thunderbird"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 msgid  "Browse"
@@ -1445,91 +1409,87 @@ msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database name"
-msgstr ""
+msgstr "Numele bazei de date"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 msgid  "Server"
-msgstr ""
+msgstr "Server"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
 msgid  "Base ~DN"
-msgstr ""
+msgstr "~DN de bază"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
 msgid  "~Port number"
-msgstr ""
+msgstr "Număr de ~port"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 msgid  "Data conversion"
-msgstr ""
+msgstr "Conversie de date"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
 msgid  "~Character set"
-msgstr ""
+msgstr "Set de ~caractere"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "Specificați tipul fișierelor pe care doriți să le accesați"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
 msgid  "Plain text files (*.txt)"
-msgstr ""
+msgstr "Fișiere simple cu text (*.txt)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 msgid  "'Comma separated value' files (*.csv)"
-msgstr ""
+msgstr "Fișiere cu „valori separate de virgulă” (*.csv)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
 msgid  "Custom:"
-msgstr ""
+msgstr "Personalizat:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Custom: *.abc"
-msgstr ""
+msgstr "Personalizat: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
 msgid  "Row Format"
-msgstr ""
+msgstr "Format rând"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Field separator"
-msgstr ""
+msgstr "Separator de câmpuri"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Text separator"
-msgstr ""
+msgstr "Separator de texte"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Decimal separator"
-msgstr ""
+msgstr "Separator de zecimale"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Thousands separator"
-msgstr ""
+msgstr "Separator de mii"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
 msgid  "~Text contains headers"
-msgstr ""
+msgstr "~Textul conține antete"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
 msgid  "{None}"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ""
+msgstr "Nimic"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 msgid  "#1 must be set."
-msgstr ""
+msgstr "#1 trebuie să fie setat."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
 msgid  "#1 and #2 must be different."
-msgstr ""
+msgstr "#1 și #2 trebuie să fie diferite."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
 msgid  "Wildcards such as ?,* are not allowed in #1."
-msgstr ""
+msgstr "Jokerii cum ar fi ?, * nu sunt permiși în #1."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "JDBC d~river class"
@@ -1541,1403 +1501,1311 @@ msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
 msgid  "Socket"
-msgstr ""
+msgstr "Socket"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
 msgid  "Save"
-msgstr ""
+msgstr "Salvează"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Create New Directory"
-msgstr ""
+msgstr "Create New Directory"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Up One Level"
-msgstr ""
+msgstr "Up One Level"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
 msgid  "File ~name:"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "~Numele fișierului:"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
 msgid  "~Path:"
-msgstr ""
+msgstr "~Cale:"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
 msgid  "Folder"
-msgstr ""
+msgstr "Dosar"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "Fișierul există deja. Suprascrieți?"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "General"
-msgstr ""
+msgstr "General"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "~Numele gazdei"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
-msgstr ""
+msgstr "Autentificare utilizator"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "N~ume de utilizator"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
 msgid  "Password required"
-msgstr ""
+msgstr "Este necesară parola"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "JDBC properties"
-msgstr ""
+msgstr "Proprietăți JDBC"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "~JDBC driver class"
-msgstr ""
+msgstr "Clasă de driver ~JDBC"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test Class"
-msgstr ""
+msgstr "Testează clasa"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "Test Connection"
-msgstr ""
+msgstr "Conectare de test"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
 msgid  "No Adabas D data sources were found on your system."
-msgstr ""
+msgstr "Nu s-au găsit surse de date Adabas D pe sistemul dumneavoastră."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
 msgid  "Connection Test"
-msgstr ""
+msgstr "Test de conexiune"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
 msgid  "The connection was established successfully."
-msgstr ""
+msgstr "Conexiunea a fost stabilită cu succes."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "Conexiunea nu a putut fi stabilită."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver was loaded successfully."
-msgstr ""
+msgstr "Driverul JDBC a fost încărcat cu succes."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver could not be loaded."
-msgstr ""
+msgstr "Driverul JDBC nu a putut fi încărcat."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
 msgid  "MS Access file"
-msgstr ""
+msgstr "Fișier MS Access"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
 msgid  "MS Access 2007 file"
-msgstr ""
+msgstr "Fișier MS Access 2007"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
 msgid  "A password is needed to connect to the data source \"$name$\"."
-msgstr ""
+msgstr "Aveți nevoie de o parolă pentru a vă conecta la sursa de date „$name$”."
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Directorul\n\n\\$path$\n\nnu există. Doriți să fie creat?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
 msgid  "The directory $name$ could not be created."
-msgstr ""
+msgstr "Directorul $name$ nu poate fi creat."
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
 msgid  "Convert Database"
-msgstr ""
+msgstr "Convertește baza de date"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 msgid  "Please enter the ~password for the user 'DOMAIN'."
-msgstr ""
+msgstr "Vă rugăm să introduceți ~parola pentru utilizatorul „DOMAIN”."
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
 msgid  "Tables Filter"
-msgstr ""
+msgstr "Filtru de tabele"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Tables and table filter"
-msgstr ""
+msgstr "Tabele și filtru de tabele"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Mark the tables that should be visible for the applications."
-msgstr ""
+msgstr "Marcați tabelele care ar trebui să fie vizibile aplicațiilor."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
 msgid  "Database Wizard"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
-msgid  "Database Wizard"
-msgstr ""
+msgstr "Asistent de baze de date"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
 msgid  "Select database"
-msgstr ""
+msgstr "Selectare bază de date"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 msgid  "Set up dBASE connection"
-msgstr ""
+msgstr "Setați conexiunea la dBASE"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
 msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Setați conexiunea la fișiere text"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
 msgid  "Set up Microsoft Access connection"
-msgstr ""
+msgstr "Setați conexiunea la Microsoft Access"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
 msgid  "Set up LDAP connection"
-msgstr ""
+msgstr "Setați conexiunea la LDAP"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
 msgid  "Set up Adabas D connection"
-msgstr ""
+msgstr "Setați conexiunea la Adabas D"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
 msgid  "Set up ADO connection"
-msgstr ""
+msgstr "Setați conexiunea la ADO"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
 msgid  "Set up JDBC connection"
-msgstr ""
+msgstr "Setați conexiunea la JDBC"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
 msgid  "Set up Oracle database connection"
-msgstr ""
+msgstr "Setați conexiunea la baza de date Oracle"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
 msgid  "Set up MySQL connection"
-msgstr ""
+msgstr "Setați conexiunea la MySQL"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
 msgid  "Set up ODBC connection"
-msgstr ""
+msgstr "Setați conexiunea la ODBC"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
 msgid  "Set up Spreadsheet connection"
-msgstr ""
+msgstr "Setați conexiunea la foaia de calcul"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
 msgid  "Set up user authentication"
-msgstr ""
+msgstr "Setați autentificarea utilizatorului"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
 msgid  "Set up MySQL server data"
-msgstr ""
+msgstr "Setați datele serverului MySQL"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
 msgid  "Save and proceed"
-msgstr ""
+msgstr "Salvare și continuare"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
 msgid  "New Database"
-msgstr ""
+msgstr "Bază de date nouă"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to a MySQL database"
-msgstr ""
+msgstr "Setați o conexiune la o bază de date MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Puteți să vă conectați la o bază de date MySQL folosind ODBC sau JDBC.\nVă rugăm să contactați administratorul de sistem dacă nu sunteți sigur de următoarele setări."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
 msgid  "How do you want to connect to your MySQL database?"
-msgstr ""
+msgstr "Cum doriți să vă conectați la baza dumneavoastră de date MySQL?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
 msgid  "Connect using ODBC (Open Database Connectivity)"
-msgstr ""
+msgstr "Conectare prin ODBC (Open Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
 msgid  "Connect using JDBC (Java Database Connectivity)"
-msgstr ""
+msgstr "Conectare prin JDBC (Java Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
 msgid  "Connect directly"
-msgstr ""
+msgstr "Conectare directă"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up the user authentication"
-msgstr ""
+msgstr "Setați autentificarea utilizatorului"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "Unele baze de date cer introducerea unui nume de utilizator."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "N~ume de utilizator"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "Password re~quired"
-msgstr ""
+msgstr "~E nevoie de parolă"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "~Test Connection"
-msgstr ""
+msgstr "Conec~tare de test"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
 msgid  "Decide how to proceed after saving the database"
-msgstr ""
+msgstr "Decideți ce să se facă după salvarea bazei de date"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "Doriți ca asistentul să înregistreze baza de date în %PRODUCTNAME?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "~Yes, register the database for me"
-msgstr ""
+msgstr "~Da, înregistrează baza de date pentru mine"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "N~o, do not register the database"
-msgstr ""
+msgstr "~Nu, nu înregistra baza de date"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
 msgid  "After the database file has been saved, what do you want to do?"
-msgstr ""
+msgstr "Ce doriți să faceți după ce se salvează fișierul cu baza de date?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 msgid  "Open the database for editing"
-msgstr ""
+msgstr "Deschide baza de date pentru editare"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
 msgid  "Create tables using the table wizard"
-msgstr ""
+msgstr "Creează tabele folosind asistentul de tabele"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
 msgid  "Click 'Finish' to save the database."
-msgstr ""
+msgstr "Apăsați „Încheiere” pentru a salva baza de date."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up connection to a MySQL database using JDBC"
-msgstr ""
+msgstr "Setați conexiunea la MySQL prin JDBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vă rugăm să introduceți informațiile necesare pentru conectarea la MySQL prin JDBC. Rețineți că trebuie să aveți instalată o clasă cu un driver JDBC și aceasta să fie înregistrată cu %PRODUCTNAME.\nVă rugăm să contactați administratorul de sistem dacă nu sunteți siguri de următoarele setări."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "MySQL JDBC d~river class:"
-msgstr ""
+msgstr "Clasa de d~river MySQL JDBC:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Implicit: 3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
 msgid  "Set up connection to a MySQL database"
-msgstr ""
+msgstr "Setați o conexiune la o bază de date MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "Vă rugăm să introduceți informațiile necesare pentru conectarea la o bază de date MySQL."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to dBASE files"
-msgstr ""
+msgstr "Setați o conexiune la fișiere dBASE"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the dBASE files are stored."
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Selectați dosarul unde sunt stocate fișierele dBASE."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "Selectați dosarul unde sunt stocate fișierele CSV (valori separate de virgulă). %PRODUCTNAME Base va deschide aceste fișiere numai pentru citire."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to text files"
-msgstr ""
+msgstr "Calea către fișierele text"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a Microsoft Access database"
-msgstr ""
+msgstr "Setați o conexiune la o bază de date Microsoft Access"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "Vă rugăm să selectați fișierul Microsoft Access pe care doriți să-l accesați."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to an LDAP directory"
-msgstr ""
+msgstr "Setați o conexiune la un director LDAP"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vă rugăm să introduceți informațiile necesare pentru conectarea la un director LDAP.\nVă rugăm să contactați administratorul de sistem dacă cunoașteți următoarele date."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
 msgid  "Default: 389"
-msgstr ""
+msgstr "Implicit: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 msgid  "Use ~secure connection (SSL)"
-msgstr ""
+msgstr "Folo~sește conexiunea securizată (SSL)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Adabas D database"
-msgstr ""
+msgstr "Setați o conexiune la o bază de date Adabas D"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Introduceți numele bazei de date Adabas D la care doriți să vă conectați.\nApăsați „Răsfoiește...” pentru a selecta o bază de date Adabas D care este deja înregistrată în %PRODUCTNAME."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ADO database"
-msgstr ""
+msgstr "Setați o conexiune la o bază de date ADO"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vă rugăm să introduceți URL-ul către sursa de date ADO la care doriți să vă conectați.\nApăsați „Răsfoiește...” pentru a configura setări specifice furnizorului.\nVă rugăm să contactați administratorul de sistem dacă nu cunoașteți următoarele date cerute."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ODBC database"
-msgstr ""
+msgstr "Setați o conexiune la o bază de date ODBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Introduceți numele bazei de date la care doriți să vă conectați.\nApăsați „Răsfoiește...” pentru a selecta o bază de date ODBC care este deja înregistrată în %PRODUCTNAME.\nVă rugăm să contactați administratorul de sistem dacă nu cunoașteți următoarele date cerute."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a JDBC database"
-msgstr ""
+msgstr "Setați o conexiune la o bază de date JDBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vă rugăm să introduceți informațiile necesare pentru conectarea la o bază de date JDBC.\nVă rugăm să contactați administratorul de sistem dacă nu cunoașteți următoarele date cerute."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Oracle database"
-msgstr ""
+msgstr "Setați o conexiune la o bază de date Oracle"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
 msgid  "Default: 1521"
-msgstr ""
+msgstr "Implicit: 1521"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "Oracle JDBC ~driver class"
-msgstr ""
+msgstr "Clasa de driver Oracle J~DBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vă rugăm să introduceți informațiile necesare pentru conectarea la o bază de date Oracle. Rețineți că trebuie să aveți instalată pe sistemul dumneavoastră o o clasă JDBC cu un driver și aceasta trebuie să fie înregistrată în %PRODUCTNAME.\nVă rugăm să contactați administratorul de sistem dacă nu cunoașteți următoarele date cerute."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to spreadsheets"
-msgstr ""
+msgstr "Setați o conexiune la o foaie de calcul"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Apăsați „Răsfoiește...” pentru a selecta o foaie de calcul %PRODUCTNAME sau Microsoft Excel.\n%PRODUCTNAME va deschide acest fișier numai pentru citire."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
 msgid  "~Location and file name"
-msgstr ""
+msgstr "~Locul și numele fișierului"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "~Password required"
-msgstr ""
+msgstr "~E nevoie de parolă"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
 msgid  "Use catalog for file-based databases"
-msgstr ""
+msgstr "Folosește catalogul pentru baze de date stocate în fișiere"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Connection Settings"
-msgstr ""
+msgstr "Setări de conexiune"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "~Nume de gazdă"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
 msgid  "~Port number"
-msgstr ""
+msgstr "Număr de ~port"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
 msgid  "Advanced Properties"
-msgstr ""
+msgstr "Proprietăți avansate"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
 msgid  "Additional Settings"
-msgstr ""
+msgstr "Setări adiționale"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
 msgid  "Connection settings"
-msgstr ""
+msgstr "Setări de conexiune"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
 msgid  "Database properties"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
-msgid  "Database properties"
-msgstr ""
+msgstr "Proprietățile bazei de date"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr ""
+msgstr "Bun venit la asistentul de baze de date %PRODUCTNAME"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Folosiți asistentul de baze de date pentru a crea o bază nouă de date, pentru a deschide un fișier existent cu o bază de date sau pentru a vă conecta la o bază de date stocată pe un server."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
 msgid  "What do you want to do?"
-msgstr ""
+msgstr "Ce doriți să faceți?"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
 msgid  "Create a n~ew database"
-msgstr ""
+msgstr "Cr~eează o bază nouă de date"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
 msgid  "Open an existing database ~file"
-msgstr ""
+msgstr "~Deschide o bază de date existentă"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
 msgid  "Recently used"
-msgstr ""
+msgstr "Folosite recent"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
 msgid  "Connect to an e~xisting database"
-msgstr ""
+msgstr "Conectare la o bază de date e~xistentă"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Alegeți tipul bazei de date la care doriți să vă conectați."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
 msgid  "Database ~type "
-msgstr ""
+msgstr "~Tip de bază de date "
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "Bază de date"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "În următoarele pagini, puteți face setări detaliate asupra conexiunii.\n\nNoile setări pe care le faceți vor suprascrie setările existente."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
 msgid  "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
 msgid  "Data Source Properties: #"
-msgstr ""
+msgstr "Proprietățile sursei de date: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "Nu s-a putut încărca librăria programului #lib#. Ar putea fi coruptă. Opțiunea Sursă de date ODBC nu este disponibilă."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Acest tip de sursă de date nu este suportat pe această platformă.\nVă este permis să schimbați setări, dar probabil că nu vă veți putea conecta la baza de date."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "General"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional settings"
-msgstr ""
+msgstr "Setări opționale"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
 msgid  "Display deleted records as well"
-msgstr ""
+msgstr "Afișează și rândurile șterse"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Notă: Când sunt șterse și implicit inactive, înregistrările sunt afișate, dar nu veți putea să ștergeți înregistrări din sursa de date."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
 msgid  "Indexes..."
-msgstr ""
+msgstr "Indecși..."
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional Settings"
-msgstr ""
+msgstr "Setări opționale"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "ODBC ~options"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr ""
+msgstr "~Opțiuni ODBC"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "~Memorie temporară (MO)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
 msgid  "~Data increment (MB)"
-msgstr ""
+msgstr "Increment ~de date (MO)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "Administration"
-msgstr ""
+msgstr "Administrare"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
 msgid  "Control ~user name"
-msgstr ""
+msgstr "N~ume de utilizator de control"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
 msgid  "Control ~password"
-msgstr ""
+msgstr "~Parola de control"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr ""
+msgstr "Oprește ~serviciul în timpul închiderii %PRODUCTNAME"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
 msgid  "E~xtended..."
-msgstr ""
+msgstr "E~xtins..."
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "MySQL JDBC d~river class"
-msgstr ""
+msgstr "Clasă de d~river MySQL JDBC"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
-msgstr ""
+msgstr "Clasă de test"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
-msgstr ""
+msgstr "Autentificare utilizator"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "N~ume de utilizator"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
 msgid  "Password required"
-msgstr ""
+msgstr "Este necesară parola"
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "Oracle JDBC d~river class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
+msgstr "Clasa de d~river Oracle JDBC"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
 msgid  "~Base DN"
-msgstr ""
+msgstr "DN de ~bază"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 msgid  "Use secure connection(SSL)"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "Folosește conexiunea securizată (SSL)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
 msgid  "Maximum number of ~records"
-msgstr ""
+msgstr "Numă~rul maxim de înregistrări"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Hostname"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "~Nume de gazdă"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "~Driver settings"
-msgstr ""
+msgstr "Setări pentru ~driver"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "Vă rugăm alegeți „Conectare la o bază de date existentă” pentru a vă conecta la o bază de date deja existentă."
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "Indecși"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
 msgid  "~Table"
-msgstr ""
+msgstr "~Tabel"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
 msgid  "Assignment"
-msgstr ""
+msgstr "Atribuire"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
 msgid  "T~able indexes"
-msgstr ""
+msgstr "Indecși de t~abel"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
 msgid  "~Free indexes"
-msgstr ""
+msgstr "~Indecși liberi"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "Comandă SQL"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
 msgid  "Command to execute"
-msgstr ""
+msgstr "Comandă de executat"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
 msgid  "Execute"
-msgstr ""
+msgstr "Execută"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
 msgid  "Previous commands"
-msgstr ""
+msgstr "Comenzi precedente"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
 msgid  "Status"
-msgstr ""
+msgstr "Stare"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "Închide"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 msgid  "Execute SQL Statement"
-msgstr ""
+msgstr "Execută instrucțiunea SQL"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
 msgid  "Command successfully executed."
-msgstr ""
+msgstr "Comanda a fost executată cu succes."
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "S-a pierdut conexiunea cu baza de date. Dialogul va fi închis."
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
 msgid  "Field Format"
-msgstr ""
+msgstr "Format de câmp"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
 msgid  "Bac~k"
-msgstr ""
+msgstr "Îna~poi"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Font"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
 msgid  "Format"
-msgstr ""
+msgstr "Formatare"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr ""
+msgstr "Aliniere"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 msgid  "Table Format"
-msgstr ""
+msgstr "Format tabelă"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
 msgid  "Save As"
-msgstr ""
+msgstr "Salvează ca"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the object to be created:"
-msgstr ""
+msgstr "Introduceți numele pentru obiectul ce va fi creat:"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
 msgid  "~Catalog"
-msgstr ""
+msgstr "~Catalog"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
 msgid  "~Schema"
-msgstr ""
+msgstr "~Schemă"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
 msgid  "~Table Name"
-msgstr ""
+msgstr "Numele ~tabelului"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
 msgid  "~Name of table view"
-msgstr ""
+msgstr "~Numele vederii de tabel"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
 msgid  "~Query name"
-msgstr ""
+msgstr "~Numele interogării"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
 msgid  "Rename to"
-msgstr ""
+msgstr "Redenumire în"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 msgid  "Insert as"
-msgstr ""
+msgstr "Inserează ca"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Height"
-msgstr ""
+msgstr "Î~nălțime"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 msgid  "~Automatic"
-msgstr ""
+msgstr "~Automată"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
 msgid  "Row Height"
-msgstr ""
+msgstr "Înălțime rând"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Width"
-msgstr ""
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "~Lățime"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
 msgid  "Column Width"
-msgstr ""
+msgstr "Lățime coloană"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "Sursa de date"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Choose a data source:"
-msgstr ""
+msgstr "Alegeți o sursă de date:"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
 msgid  "Organize..."
-msgstr ""
+msgstr "Organizează..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "Creează..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
 msgid  "Local Databases"
-msgstr ""
+msgstr "Baze locale de date"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
 msgid  "Choose a database"
-msgstr ""
+msgstr "Alegeți o bază de date"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "Indecși"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
 msgid  "New Index"
-msgstr ""
+msgstr "Index nou"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
 msgid  "Delete Current Index"
-msgstr ""
+msgstr "Șterge indexul curent"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
 msgid  "Rename Current Index"
-msgstr ""
+msgstr "Redenumește index curent"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
 msgid  "Save Current Index"
-msgstr ""
+msgstr "Salvează index curent"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 msgid  "Reset Current Index"
-msgstr ""
+msgstr "Resetează indexul curent"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
 msgid  "Index details"
-msgstr ""
+msgstr "Detalii index"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
 msgid  "Index identifier:"
-msgstr ""
+msgstr "Identificator index:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
 msgid  "~Unique"
-msgstr ""
+msgstr "~Unic"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
 msgid  "Fields"
-msgstr ""
+msgstr "Câmpuri"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "În~chide"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "Ordine sortare"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
 msgid  "Index field"
-msgstr ""
+msgstr "Câmp index"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "Crescător"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "Descrescător"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 msgid  "Do you really want to delete the index '$name$'?"
-msgstr ""
+msgstr "Sigur doriți să ștergeți indexul „$name$”?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
 msgid  "index"
-msgstr ""
+msgstr "index"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
 msgid  "Save Index"
-msgstr ""
+msgstr "Save Index"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 msgid  "The index must contain at least one field."
-msgstr ""
+msgstr "Indexul trebuie să conțină cel puțin un câmp."
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
 msgid  "Exit Index Design"
-msgstr ""
+msgstr "Exit Index Design"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
 msgid  "Do you want to save the changes made to the current index?"
-msgstr ""
+msgstr "Doriți să salvați schimbările făcute indexului curent?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There is already another index named \"$name$\"."
-msgstr ""
+msgstr "Există deja un index numit \"$name$\"."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
 msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr ""
+msgstr "O coloană de tabel nu poate să apară de mai multe ori într-o definiție de index. Cu toate astea, ați introdus coloana „$name$” de două ori."
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
 msgid  "~Parameters"
-msgstr ""
+msgstr "~Parametri"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Value"
-msgstr ""
+msgstr "~Valoare"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
 msgid  "~Next"
-msgstr ""
+msgstr "Î~nainte"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 msgid  "Parameter Input"
-msgstr ""
+msgstr "Introducere parametru"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
-msgstr ""
+msgstr "Intrarea nu poate fi convertită la o valoare validă pentru coloana „$name$”"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "Filtru standard"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "AND"
-msgstr ""
+msgstr "ȘI"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "OR"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
-msgstr ""
+msgstr "SAU"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Nume câmp"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
 msgid  "Condition"
-msgstr ""
+msgstr "Condiție"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
 msgid  "Value"
-msgstr ""
+msgstr "Valoare"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "Operator"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
 msgid  "Criteria"
-msgstr ""
+msgstr "Criterii"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "- none -"
-msgstr ""
+msgstr "- nimic -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
+msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
 msgid  "Sort Order"
-msgstr ""
+msgstr "Ordine sortare"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "ascending"
-msgstr ""
+msgstr "Crescător"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
+msgstr "descrescător"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Nume cont"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 msgid  "and then"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
-msgid  "and then"
-msgstr ""
+msgstr "și apoi"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "Operator"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
 msgid  "Order"
-msgstr ""
+msgstr "Comandă"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "Ordine sortare"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<nimic>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
 msgid  "Relations"
-msgstr ""
+msgstr "Relații"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "Tabele implicate"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "Câmpuri implicate"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
 msgid  "Update options"
-msgstr ""
+msgstr "Actualizează opțiuni"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~No action"
-msgstr ""
+msgstr "~Nicio acțiune"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~Update cascade"
-msgstr ""
+msgstr "Act~ualizează în cascadă"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 msgid  "~Set null"
-msgstr ""
+msgstr "~Setează nul"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
 msgid  "Set ~default"
-msgstr ""
+msgstr "Setează valoarea ~implicită"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
 msgid  "Delete options"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "~No action"
-msgstr ""
+msgstr "Opțiuni de ștergere"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
 msgid  "Delete ~cascade"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
-msgstr ""
+msgstr "Șterge în ~cascadă"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Base"
-msgstr ""
+msgstr "%PRODUCTNAME Base"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 msgid  "Details"
-msgstr ""
+msgstr "Detalii"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
 msgid  "Error ~list:"
-msgstr ""
+msgstr "~Lista de erori:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "~Description:"
-msgstr ""
+msgstr "~Descriere:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 msgid  "SQL Status"
-msgstr ""
+msgstr "Stare SQL"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
 msgid  "Error code"
-msgstr ""
+msgstr "Cod de eroare"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "Un motiv frecvent pentru această eroare este setarea neadecvată a setului de caractere pentru limba bazei de date. Verificați această setare alegând Editare - Bază de date - Proprietăți."
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "Eroare"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
 msgid  "Warning"
-msgstr ""
+msgstr "Avertisment"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
 msgid  "Information"
-msgstr ""
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
-msgid  "Details"
-msgstr ""
+msgstr "Informație"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 msgid  "Text Connection Settings"
-msgstr ""
+msgstr "Setările conexiunii pentru text"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
 msgid  "User Settings"
-msgstr ""
+msgstr "Setări de utilizator"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
 msgid  "User administration"
-msgstr ""
+msgstr "Administrare utilizatori"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
 msgid  "User selection"
-msgstr ""
+msgstr "Selecție utilizator"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
 msgid  "Us~er:"
-msgstr ""
+msgstr "~Utilizator:"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
 msgid  "~Add User..."
-msgstr ""
+msgstr "~Adaugă utilizator..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
 msgid  "Change ~Password..."
-msgstr ""
+msgstr "Schimbă ~parola..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
 msgid  "~Delete User..."
-msgstr ""
+msgstr "Șterge ~utilizator..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
 msgid  "Access rights for selected user"
-msgstr ""
+msgstr "Drepturi de acces pentru utilizatorul selectat"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 msgid  "Do you really want to delete the user?"
-msgstr ""
+msgstr "Sigur doriți să ștergeți acest utilizator?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support user administration."
-msgstr ""
+msgstr "Baza de date nu suportă administrarea utilizatorilor."
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
 msgid  "User \"$name$:  $\""
-msgstr ""
+msgstr "Utilizator \"$name$:  $\"\"\"\"\"\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
 msgid  "Old p~assword"
-msgstr ""
+msgstr "P~arolă veche"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr ""
+msgstr "~Parolă"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 msgid  "~Confirm  password"
-msgstr ""
+msgstr "~Confirmați parola"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
 msgid  "Change Password"
-msgstr ""
+msgstr "Schimbare parolă"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 msgid  "The passwords do not match. Please enter the password again."
-msgstr ""
+msgstr "Parolele nu se potrivesc. Vă rugăm să introduceți parola din nou."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
 msgid  "Refresh"
-msgstr ""
+msgstr "Reîmprospătează"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 msgid  "New ~View Design"
-msgstr ""
+msgstr "Design nou de ~vedere"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
 msgid  "New ~Table Design"
-msgstr ""
+msgstr "Creează vizual un ~tabel"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
 msgid  "Query AutoPilot..."
-msgstr ""
+msgstr "Pilot automat pentru interogare..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "New ~Query (Design View)"
-msgstr ""
+msgstr "Creează v~izual o interogare"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "~Edit Query"
-msgstr ""
+msgstr "~Editează interogarea"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 msgid  "New Query (~SQL View)"
-msgstr ""
+msgstr "Creează o interogare direct în ~SQL"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "Editează..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
 msgid  "Column ~Width..."
-msgstr ""
+msgstr "~Lățime coloană..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Asistent de rapoarte..."
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
 msgid  "Form AutoPilot..."
-msgstr ""
+msgstr "Pilot automat pentru formulare..."
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
 msgid  "System"
-msgstr ""
+msgstr "Sistem"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
 msgid  "Error during creation"
-msgstr ""
+msgstr "Eroare în timpul creării"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "A apărut o eroare neașteptată. Operația nu a putut fi realizată."
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
 msgid  "The document \"$file$\" could not be opened."
-msgstr ""
+msgstr "Nu se poate deschide documentul „$file$”."
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "Acest tabel nu se poate șterge pentru că conexiunea la baza de date nu suportă acest lucru."
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "~Tot"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
 msgid  "Undo:"
-msgstr ""
+msgstr "Anulare:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 msgid  "Redo:"
-msgstr ""
+msgstr "Refacere:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
 msgid  "No corresponding column type could be found for column '#1'."
-msgstr ""
+msgstr "Nu a fost găsit un tip de coloană corespunzător pentru coloana „#1”."
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Nu există fișierul „$file$”."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr ""
+msgstr "Au apărut  avertismente la conectarea la sursa de date. Apăsați „$buttontext$” pentru a le vizualiza."
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Numele „$#$” există deja.\nVă rugăm să introduceți un alt nume."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
-msgstr ""
+msgstr "Raportul „$file$” necesită extensia Sun Report Builder."
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
 msgid  "Apply columns"
-msgstr ""
+msgstr "Aplică coloanele"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 msgid  "Type formatting"
-msgstr ""
+msgstr "Formatarea tipului"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "Următoarele câmpuri au fost deja setate ca și chei primare:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
 msgid  "Assign columns"
-msgstr ""
+msgstr "Atribuie coloane"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 msgid  "Copy RTF Table"
-msgstr ""
+msgstr "Copiază tabel RTF"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr ""
+msgstr "~Ajutor"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
 msgid  "~Cancel"
-msgstr ""
+msgstr "~Renunță"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 msgid  "< ~Back"
-msgstr ""
+msgstr "< Îna~poi"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next>"
-msgstr ""
+msgstr "Î~nainte>"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
 msgid  "C~reate"
-msgstr ""
+msgstr "C~reează"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
 msgid  "Existing columns"
-msgstr ""
+msgstr "Coloane existente"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
 msgid  "Column information"
-msgstr ""
+msgstr "Informații coloană"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 msgid  "Automatic type recognition"
-msgstr ""
+msgstr "Recunoaștere automată  a tipului"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
 msgid  "Lines (ma~x)"
-msgstr ""
+msgstr "Linii (ma~x)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "Cheie primară"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
 msgid  "Source table: \n"
-msgstr ""
+msgstr "Tabel sursă: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "Tabel destinație:\n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "~Tot"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
 msgid  "Non~e"
-msgstr ""
+msgstr "~Nimic"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
 msgid  "Ta~ble name"
-msgstr ""
+msgstr "Numele ta~belului"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Opțiuni"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
 msgid  "De~finition and data"
-msgstr ""
+msgstr "De~finiții și date"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
 msgid  "Def~inition"
-msgstr ""
+msgstr "Def~iniție"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
 msgid  "A~s table view"
-msgstr ""
+msgstr "Ca ~vedere de tabel"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 msgid  "Append ~data"
-msgstr ""
+msgstr "A~daugă date"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
-msgstr ""
+msgstr "Fo~losește prima linie ca nume de coloane"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
 msgid  "Crea~te primary key"
-msgstr ""
+msgstr "C~reează cheie primară"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
 msgid  "Name"
-msgstr ""
+msgstr "Nume"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 msgid  "Copy table"
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
-msgid  "Copy table"
-msgstr ""
+msgstr "Copiază tabel"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
 msgid  "This table name is not valid in the current database."
@@ -2945,7 +2813,7 @@ msgstr ""
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Alegeți opțiunea „Adaugă date” de pe prima pagină pentru a adăuga date într-un tabel existent."
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
 msgid  "Please change the table name. It is too long."
@@ -2953,375 +2821,374 @@ msgstr ""
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Opțiuni"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "~Tip"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 msgid  "Inner join"
-msgstr ""
+msgstr "Joncțiune interioară"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
 msgid  "Left join"
-msgstr ""
+msgstr "Joncțiune la stânga"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
 msgid  "Right join"
-msgstr ""
+msgstr "Joncțiune la dreapta"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
 msgid  "Full (outer) join"
-msgstr ""
+msgstr "Joncțiune completă (exterioară)"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
 msgid  "Cross join"
-msgstr ""
+msgstr "Joncțiune încrucișată"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 msgid  "Natural"
-msgstr ""
+msgstr "Natural"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "Tabele implicate"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "Câmpuri implicate"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
 msgid  "Join Properties"
-msgstr ""
+msgstr "Proprietăți joncțiune"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "Rețineți că s-ar putea ca unele baze de date să nu suporte acest tip de joncțiune."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Include doar înregistrările pentru care conținutul câmpurilor corespondente din ambele tabele este identic."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "Conține TOATE înregistrările din tabelul „%1” dar numai înregistrările din tabelul „%2” unde se potrivesc valorile din câmpurile corespondente."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
 msgid  "Contains ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Conține TOATE înregistrările din „%1” și din „%2”."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Conține produsul cartezian al tuturor înregistrărilor din „%1” și din „%2”."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "Conține doar o coloană pentru fiecare pereche de coloane cu același nume din „%1” și din „%2”."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
 msgid  "Add Table Window"
-msgstr ""
+msgstr "Fereastra de adăugat tabel"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
 msgid  "Move table window"
-msgstr ""
+msgstr "Mută fereastra tabelului"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 msgid  "Insert Join"
-msgstr ""
+msgstr "Inserează Join"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
 msgid  "Delete Join"
-msgstr ""
+msgstr "Șterge Join"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
 msgid  "Resize table window"
-msgstr ""
+msgstr "Redimensionează fereastra tabelului"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
 msgid  "Delete Column"
-msgstr ""
+msgstr "Șterge coloana"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
 msgid  "Move column"
-msgstr ""
+msgstr "Mută coloană"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
 msgid  "Add Column"
-msgstr ""
+msgstr "Adaugă o coloană"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, table '$name$' does not exist."
-msgstr ""
+msgstr "Expresie invalidă, tabelul „$name$” nu există."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr ""
+msgstr "Expresie invalidă, câmpul „$name$” nu există."
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "Interogarea accesează #num# tabele. Cu toate astea, tipul bazei de date selectat poate procesa doar maxim #maxnum# tabel(e) per interogare."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
 msgid  "Delete Table Window"
-msgstr ""
+msgstr "Șterge fereastra tabelului"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 msgid  "Edit Column Description"
-msgstr ""
+msgstr "Editează descrierea coloanei"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
 msgid  "Adjust column width"
-msgstr ""
+msgstr "Ajustează lățimea coloanei"
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 msgid  "(not sorted);ascending;descending"
-msgstr ""
+msgstr "(not sorted);crescător;descrescător"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
 msgid  "(no function);Group"
-msgstr ""
+msgstr "(nicio funcție);Group"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 msgid  "(no table)"
-msgstr ""
+msgstr "(niciun tabel)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
 msgid  "The database only supports sorting for visible fields."
-msgstr ""
+msgstr "Baza de date suportă numai sortarea câmpurilor vizibile."
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
 msgid  "Functions"
-msgstr ""
+msgstr "Funcții"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
 msgid  "Table Name"
-msgstr ""
+msgstr "Nume tabel"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
 msgid  "Alias"
-msgstr ""
+msgstr "Nume alias"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
 msgid  "Distinct Values"
-msgstr ""
+msgstr "Valori distincte"
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "Câmp;Alias;Tabel;Sortare;Vizibil;Funcție;Criteriu;Sau;Sau"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
 msgid  "There are too many columns."
-msgstr ""
+msgstr "Sunt prea multe coloane"
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "A condition cannot be applied to field [*]"
-msgstr ""
+msgstr "Nu se poate aplica o condiție câmpului [*]"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 msgid  "The SQL statement created is too long."
-msgstr ""
+msgstr "Declarația SQL creată este prea lungă."
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
 msgid  "Query is too complex"
-msgstr ""
+msgstr "Interogarea este prea complexă"
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 msgid  "Nothing has been selected."
-msgstr ""
+msgstr "Nu ați selectat nimic."
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
 msgid  "Too many search criteria"
-msgstr ""
+msgstr "Prea multe criterii de căutare"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 msgid  "SQL syntax error"
-msgstr ""
+msgstr "Eroare de sintaxă SQL"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "[*] cannot be used as a sort criterion."
-msgstr ""
+msgstr "[*] nu poate fi utilizat ca criteriu de căutare"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
 msgid  "There are too many tables."
-msgstr ""
+msgstr "Sunt prea multe tabele."
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "Interogarea nu va fi aplicată când se vor face interogări în dialectul SQL al bazei de date."
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
 msgid  "Field name not found or not unique"
-msgstr ""
+msgstr "Numele câmpului nu a fost găsit sau nu este unic"
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
 msgid  "Join could not be processed"
-msgstr ""
+msgstr "Nu se poate procesa joncțiunea"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 msgid  "Syntax error in SQL statement"
-msgstr ""
+msgstr "Eroare de sintaxă în declarația SQL"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support table views."
-msgstr ""
+msgstr "Baza de date nu suportă vederi de tabele."
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "Această bază de date nu suportă alterarea unor vizualizări de tabel existente."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
 msgid  "Do you want to create a query instead?"
-msgstr ""
+msgstr "Doriți în schimb crearea unei interogări?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
 msgid  "No query could be created."
-msgstr ""
+msgstr "Interogarea nu a putut fi creată."
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
 msgid  "No query could be created because no fields were selected."
-msgstr ""
+msgstr "Nu s-a putut crea nicio interogare fiindcă nu s-a selectat niciun câmp."
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "Sursa de date corespunzătoare a fost ștearsă așa că datele legate de acea sursă nu pot fi salvate."
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
 msgid  "The column '$name$' is unknown."
-msgstr ""
+msgstr "Coloana '$name$'  este necunoscută."
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
 msgid  "Columns can only be compared using '='."
-msgstr ""
+msgstr "Coloanele pot fi comparate numai folosind „=”."
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
 msgid  "You must use a column name before 'LIKE'."
-msgstr ""
+msgstr "Trebuie să folosiți un nume de coloană înainte de  'LIKE'."
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "Coloana nu a fost găsită. Țineți cont că baza de date distinge minusculele de majuscule. "
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr ""
+msgstr "- %PRODUCTNAME Base: Creare vizuală a unei interogări"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: View Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Design de vedere"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ a fost schimbat.\nDoriți să salvați schimbările?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr ""
+msgstr "$object$ e bazat pe o comandă SQL ce nu poate fi analizată."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr ""
+msgstr "$object$ va fi deschis într-o vedere SQL."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
 msgid  "The table view"
-msgstr ""
+msgstr "Vederea de tabel"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
 msgid  "The query"
-msgstr ""
+msgstr "Interogarea"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
 msgid  "The SQL statement"
-msgstr ""
+msgstr "Interogarea SQL"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "Interogarea nu creează un set de rezultate și ca urmare nu poate face parte din altă interogare."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "Parametrii ActiveConnection și DataSourceName lipsesc sau sunt incorecți - nu se poate inițializa asistentul de creat interogări."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Această relație există deja. Doriți să o editați sau să creați una nouă ?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "Editează..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "Creează..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Relation design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Design de relație"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support relations."
-msgstr ""
-
-#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Baza de date nu suportă relații."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Când ștergeți acest tabel toate relațiile corespondente sunt de asemeni șterse. Continuați?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Baza de date nu a putut crea relația. Poate că nu există suport pentru chei externe în acest tip de tabel.\nVă rugăm să consultați documentația bazei de date."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Inserează sau elimină o cheie primară"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "Da"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
 msgid  "No"
-msgstr ""
+msgstr "Nu"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "Crescător"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "Descrescător"
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<nimic>"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Nume câmp"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
 msgid  "Field Name"
-msgstr ""
+msgstr "Nume câmp"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
 msgid  "Field ~type"
-msgstr ""
+msgstr "~Tip de câmp"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
 msgid  "Field Type"
-msgstr ""
+msgstr "Tip câmp"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
 msgid  "Field length"
-msgstr ""
+msgstr "Lungime câmp"
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
 msgid  "Description"
@@ -3333,267 +3200,248 @@ msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
 msgid  "Input required"
-msgstr ""
+msgstr "Se așteaptă o intrare"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
 msgid  "~AutoValue"
-msgstr ""
+msgstr "V~aloarea automată"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
 msgid  "Field Properties"
-msgstr ""
+msgstr "Proprietăți câmp"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "General"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
 msgid  "Description:"
-msgstr ""
+msgstr "Descriere:"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
 msgid  "Table properties"
-msgstr ""
+msgstr "Proprietăți tabel"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
 msgid  "The text you entered is not a list element. "
-msgstr ""
+msgstr "Textul introdus nu este un element de pe listă."
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
 msgid  "Insert Rows"
-msgstr ""
+msgstr "Inserează rânduri"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "Cheie primară"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
 msgid  "Modify cell"
-msgstr ""
+msgstr "Modifică celula"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
 msgid  "Delete row"
-msgstr ""
+msgstr "Șterge rândul"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
 msgid  "Modify field type"
-msgstr ""
+msgstr "Tip de câmp modificat"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
 msgid  "Insert row"
-msgstr ""
+msgstr "Inserare rând"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
 msgid  "Insert new row"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Inserează un rând nou"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
 msgid  "~Default value"
-msgstr ""
+msgstr "~Valoarea implicită"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
 msgid  "~Entry required"
-msgstr ""
+msgstr "Câmpul tr~ebuie completat"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "~Length"
-msgstr ""
+msgstr "~Lungime"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
-msgid  "~Length"
-msgstr ""
+msgstr "~Tip"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
 msgid  "Decimal ~places"
-msgstr ""
+msgstr "~Poziții zecimale"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
 msgid  "Format example"
-msgstr ""
+msgstr "Format exemplu"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Selectați o valoare care trebuie să apară implicit pentru noile înregistrări.\nDacă câmpul nu are o valoare implicită, selectați șirul gol."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Introduceți o valoare implicită pentru acest câmp.\n\nDupă aceea, când introduceți date în tabel, textul va fi folosit în fiecare nouă înregistrare pentru câmpul selectat. Prin urmare, ar trebui să corespundă formatului celulei care trebuie introdus mai jos."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "Activați această opțiune daca acest câmp nu poate conține valori NULL, adică utilizatorul trebuie să introducă de fiecare dată o informație."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
 msgid  "Enter the maximum text length permitted."
-msgstr ""
+msgstr "Introduceți lungimea maxim permisă a textului."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
 msgid  "Enter the number format."
-msgstr ""
+msgstr "Introduceți formatul numeric."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Determinați lungimea datelor introduse în acest câmp.\n\nDacă e un câmp zecimal, trebuie introdus numărul maxim permis, dacă e un câmp binar, trebuie introdusă mărimea blocului de date.\nValoarea va fi trunchiată când depășește maximul permis."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "Specificați numărul de poziții zecimale permise în acest câmp."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Aici puteți vedea cum vor fi afișate datele în formatul curent (folosiți butonul din dreapta pentru a modifica formatul)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "Aici puteți determina forma de afișare a datelor."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Alegeți dacă acest câmp trebuie să conțină valori incrementate automat.\n\nNu puteți introduce date în câmpurile de acest tip. Fiecare înregistrare nouă va primi automat o valoare intrinsecă (rezultată din incrementarea înregistrării precedente)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
-msgstr ""
+msgstr "Tabela nu poate fi salvată deoarece numele coloanei  \"$column$\"  a fost folosit de două ori."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgstr "Coloana „$column$” aparține unei chei primare. Dacă coloana este ștearsă, va fi ștearsă și cheia primară. Doriți să continuați?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
 msgid  "Primary Key Affected"
-msgstr ""
+msgstr "Cheia primară este afectată"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
 msgid  "Column"
-msgstr ""
+msgstr "Coloană"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
 msgid  "Continue anyway?"
-msgstr ""
+msgstr "Continuă oricum?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "Avertisment!"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "Tabela nu a putut fi salvată din cauza unor probleme cu conexiunea la baza de date."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
-
-#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "Filtrul tabelului nu a putut fi ajustat din cauză că sursa de date a fost ștearsă."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
 msgid  "No primary key"
-msgstr ""
+msgstr "Fără cheie primară"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "Pentru identificarea înregistrărilor din baza de date este necesară o cheie primară sau un index unic.\nPuteți introduce date în acest tabel doar când se îndeplinește una din aceste două condiții structurale.\n\nCreați acum o cheie primară?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Table Design"
-msgstr ""
+msgstr "- %PRODUCTNAME Base: Creare vizuală a unui tabel"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgstr "Coloana „$column$” nu a putut fi schimbată. Doriți să fie ștearsă și apoi să fie adăugat formatul nou?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
 msgid  "Error while saving the table design"
-msgstr ""
+msgstr "Eroare în timpul salvării designului de tabel"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
 msgid  "The column $column$ could not be deleted."
-msgstr ""
+msgstr "Coloana $column$ nu poate fi ștearsă."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "Încercați să ștergeți toate coloanele dintr-un tabel. Un tabel nu poate exista fără coloane. Doriți de fapt să ștergeți tabelul din baza de date? Dacă nu, tabelul va rămâne neschimbat."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "A~uto-increment statement"
-msgstr ""
+msgstr "Instr~ucțiune de incrementare automată"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Introduceți instrucțiuni SQL pentru câmpul incrementat automat.\n\nAceste instrucțiuni vor fi transferate direct în baza de date când este creat tabelul."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Nu se pot obține informații despre tipuri din baza de date.\nDesignul de tabel nu este disponibil pentru această sursă de date."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
 msgid  "change field name"
-msgstr ""
+msgstr "schimbă numele câmpului"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
 msgid  "change field type"
-msgstr ""
+msgstr "schimbă tipul câmpului"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "change field description"
-msgstr ""
+msgstr "schimbă descrierea câmpului"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
 msgid  "change field attribute"
-msgstr ""
+msgstr "schimbă atributul câmpului"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support views."
-msgstr ""
+msgstr "Baza de date destinație nu suportă vederi."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support primary keys."
-msgstr ""
+msgstr "Baza de date vizată nu suportă chei primare."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "Nu s-a găsit un descriptor pentru accesul la date sau niciun descriptor nu poate furniza toate informațiile necesare"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
 msgid  "Only tables and queries are supported at the moment."
-msgstr ""
+msgstr "Momentan sunt suportate doar tabelele și interogările."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "Setul de rezultate al sursei de copiere trebuie să suporte semne de carte."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "Tip nesuportat de coloană sursă ($type$) la coloana de pe poziția $pos$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
 msgid  "Illegal number of initialization parameters."
-msgstr ""
+msgstr "Număr ilegal de parametri de inițializare."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
 msgid  "An error occurred during initialization."
-msgstr ""
+msgstr "A intervenit o eroare în timpul inițializării."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
 msgid  "Unsupported setting in the copy source descriptor: $name$."
@@ -3609,8 +3457,8 @@ msgstr ""
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
 msgid  "~Remember password until end of session"
-msgstr ""
+msgstr "Memo~rează parola până la sfârșitul sesiunii"
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
 msgid  "~Remember password"
-msgstr ""
+msgstr "Memo~rează parola"

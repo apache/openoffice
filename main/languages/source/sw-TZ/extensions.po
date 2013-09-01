@@ -33,7 +33,7 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
 msgid  "Address Book Data Source Wizard"
-msgstr ""
+msgstr "Address Book Data Source Wizard"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
 msgid  "Address book type"
@@ -57,15 +57,15 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
 msgid  "Please select the type of your external address book:"
-msgstr ""
+msgstr "Tafadhari chagua aina ya kitabu chako cha anwani cha nje:"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
-msgstr ""
+msgstr "Mageuko"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
 msgid  "Groupwise"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
 msgid  "Mozilla / Netscape"
-msgstr ""
+msgstr "Mozilla / Netscape"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
 msgid  "Thunderbird"
@@ -93,31 +93,31 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
 msgid  "LDAP address data"
-msgstr ""
+msgstr "Data Anwani LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
 msgid  "Outlook address book"
-msgstr ""
+msgstr "Outlook address book"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
 msgid  "Windows system address book"
-msgstr ""
+msgstr "Mfumo wa Windows wa kitabu cha anwani"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
 msgid  "Other external data source"
-msgstr ""
+msgstr "Chanzo data za nje nyinginezo"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Kuseti chanzo data kipya, taarifa za nyongeza zinaitajika.\n\nBofya kitufe kifuatacho kufungua dalogi nyingine ambayo utaingiza taarifa za lazima."
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Vipimo"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Unganisho kwa chanzo data halikuwezekana kuanzishwa.\nKabla ujaendelea mbele, tafadhali angalia vipimo ulivyotengeneza, au (katika ukurasa uliotangulia) chagua aina ya chanzo data anwani nyingine."
 
 #: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
@@ -125,691 +125,668 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
-msgid  "Field Assignment"
-msgstr ""
+msgstr "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Hizo ndizo taarifa za lazima kufungamanisha data za anwani yako katika %PRODUCTNAME.\n\nSasa, unaweza kuingiza jina katika sehemu unayotaka kusajili chanzo data katika %PRODUCTNAME."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
 msgid  "Location"
-msgstr ""
+msgstr "Mahali"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr ""
+msgstr "Browse.."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr ""
+msgstr "Make this address book available to all modules in %PRODUCTNAME."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
 msgid  "Address book name"
-msgstr ""
+msgstr "Address book name"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Chanzo data kingine tayari kina jina hili. Kama ilivyo chanzo data kinatakiwa kuwa na jina pekee, unatakiwa kuchagua jina jingine."
 
 #: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
 msgid  "Please select a type of address book."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Tafadhari teua aina ya kitabu cha anwani."
 
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
 msgid  "Addresses"
-msgstr ""
+msgstr "Anwani"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
 msgid  "Create Address Data Source"
-msgstr ""
+msgstr "Unda Chanzo Data Anwani"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "Unganisho halikuwezekana kuanzishwa."
 
 #: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
 msgid  "Please check the settings made for the data source."
-msgstr ""
+msgstr "Tafadhari angalia vipimo vilivyotengenezwa kwa chanzo data."
 
 #: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
 msgid  "Address Data - Field Assignment"
-msgstr ""
+msgstr "Data Anwani - Usabidi Uga"
 
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Hakuna nyuga zilizopangiwa kwa muda huu.\nUnaweza kupanga nyuga sasa au ukafanya baadaye kwa kuchagua kwanza:\n\"Faili-Templeti-Chanzo cha Kitabu cha Anwani...\""
 
 #: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Field selection:"
-msgstr ""
+msgstr "Uteuzi uga:"
 
 #: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
 msgid  "Table;Query;Sql;Sql [Native]"
-msgstr ""
+msgstr "Table;Query;Sql;Sql [Native]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
-msgstr ""
+msgstr "Bibliografia Hifadhidata"
 
 #: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
 msgid  "Do you want to edit the column arrangement?"
-msgstr ""
+msgstr "Unataka kuhariri mpangilio wa safu-wima?"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
 msgid  "Column names"
-msgstr ""
+msgstr "Majina ya safu-wima"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<bila>"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
 msgid  "Column Layout for Table %1"
-msgstr ""
+msgstr "Mpangilio wa safu-wima kwa ajili ya jedwali %1"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
 msgid  "Choose Data Source"
-msgstr ""
+msgstr "Chagua Chanzo Data"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
 msgid  "Entry"
-msgstr ""
+msgstr "Ingizo"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
 msgid  "The following column names could not be assigned:\n"
-msgstr ""
+msgstr "Majina ya yafuatayo ya safu-wima hayakuwezekana kupangiwa:\n"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
 msgid  "Article"
-msgstr ""
+msgstr "Kikala"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
 msgid  "Book"
-msgstr ""
+msgstr "Kitabu"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
-msgstr ""
+msgstr "Brosha"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
 msgid  "Conference proceedings"
-msgstr ""
+msgstr "Maendeleo ya mkutano"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
 msgid  "Book excerpt"
-msgstr ""
+msgstr "Muhtasari wa kitabu"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
 msgid  "Book excerpt with title"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "Muhtasari wa kitabu na kichwa cha habari"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
 msgid  "Journal"
-msgstr ""
+msgstr "Jarida"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
-msgstr ""
+msgstr "Mwongozo wa kiufundi"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
-msgstr ""
+msgstr "Tasnifu"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
 msgid  "Miscellaneous"
-msgstr ""
+msgstr "Miscellaneous"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "Tasnifu"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
 msgid  "Research report"
-msgstr ""
+msgstr "Ripoti ya utafiti"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
 msgid  "Unpublished"
-msgstr ""
+msgstr "Unpublished"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
-msgstr ""
+msgstr "barua e-"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
 msgid  "WWW document"
-msgstr ""
+msgstr "Andiko WWW"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
 msgid  "User-defined1"
-msgstr ""
+msgstr "User-defined1"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
 msgid  "User-defined2"
-msgstr ""
+msgstr "User-defined2"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
 msgid  "User-defined3"
-msgstr ""
+msgstr "User-defined3"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
 msgid  "User-defined4"
-msgstr ""
+msgstr "User-defined4"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
 msgid  "User-defined5"
-msgstr ""
+msgstr "User-defined5"
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Jumla"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
 msgid  "Insert Section..."
-msgstr ""
+msgstr "Chomeka Sehemu..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
 msgid  "Delete Section..."
-msgstr ""
+msgstr "Futa Sehemu..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
 msgid  "Modify Name..."
-msgstr ""
+msgstr "Rekebisha Jina..."
 
 #: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
 msgid  "~Short name"
-msgstr ""
+msgstr "Jina fupi"
 
 #: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "~Type"
 
 #: bibliography/sections.src#ST_YEAR.STRING.TEXT
 msgid  "~Year"
-msgstr ""
+msgstr "Mwaka"
 
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
-msgstr ""
+msgstr "Author(s)"
 
 #: bibliography/sections.src#ST_TITLE.STRING.TEXT
 msgid  "Tit~le"
-msgstr ""
+msgstr "Cheo"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
-msgstr ""
+msgstr "Mchapishaji"
 
 #: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
 msgid  "A~ddress"
-msgstr ""
+msgstr "Anwani"
 
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
-msgstr ""
+msgstr "ISBN"
 
 #: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
 msgid  "~Chapter"
-msgstr ""
+msgstr "Sura"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
-msgstr ""
+msgstr "Kurasa"
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
 msgid  "Editor"
-msgstr ""
+msgstr "Mhariri"
 
 #: bibliography/sections.src#ST_EDITION.STRING.TEXT
 msgid  "Ed~ition"
-msgstr ""
+msgstr "Toleo"
 
 #: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
 msgid  "~Book title"
-msgstr ""
+msgstr "Jina la kitabu"
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
 msgid  "Volume"
-msgstr ""
+msgstr "Volume"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
-msgstr ""
+msgstr "Aina ya uchapishaji"
 
 #: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
 msgid  "Organi~zation"
-msgstr ""
+msgstr "Shirika"
 
 #: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
 msgid  "Instit~ution"
-msgstr ""
+msgstr "Taasisi"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
-msgstr ""
+msgstr "Chuo"
 
 #: bibliography/sections.src#ST_REPORT.STRING.TEXT
 msgid  "Type of re~port"
-msgstr ""
+msgstr "Aina ya repoti"
 
 #: bibliography/sections.src#ST_MONTH.STRING.TEXT
 msgid  "~Month"
-msgstr ""
+msgstr "Mwezi"
 
 #: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
 msgid  "~Journal"
-msgstr ""
+msgstr "Jarida"
 
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
-msgstr ""
+msgstr "Namba"
 
 #: bibliography/sections.src#ST_SERIES.STRING.TEXT
 msgid  "Se~ries"
-msgstr ""
+msgstr "Mtiririko"
 
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
-msgstr ""
+msgstr "Utinishaji"
 
 #: bibliography/sections.src#ST_NOTE.STRING.TEXT
 msgid  "~Note"
-msgstr ""
+msgstr "Nabihi"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
-msgstr ""
+msgstr "KISARA"
 
 #: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
 msgid  "User-defined field ~1"
-msgstr ""
+msgstr "1 Uga uliofasiliwa na mtumiaji"
 
 #: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
 msgid  "User-defined field ~2"
-msgstr ""
+msgstr "2 Uga uliofasiliwa na mtumiaji"
 
 #: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
 msgid  "User-defined field ~3"
-msgstr ""
+msgstr "3 Uga uliofasiliwa na mtumiaji"
 
 #: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
 msgid  "User-defined field ~4"
-msgstr ""
+msgstr "4 Uga uliofasiliwa na mtumiaji"
 
 #: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
 msgid  "User-defined field ~5"
-msgstr ""
+msgstr "5 Uga uliofasiliwa na mtumiaji"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Jedwali"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
-msgstr ""
+msgstr "Kibonye Tafuti"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
 msgid  "AutoFilter"
-msgstr ""
+msgstr "AutoFilter"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "Standard Filter"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
 msgid  "Remove Filter"
-msgstr ""
+msgstr "Ondoa Chujio"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
 msgid  "Column Arrangement"
-msgstr ""
+msgstr "Mpangilio wa Safu-wima"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "Chanzo Data"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
-msgid  "Data"
-msgstr ""
+msgstr "Data"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
 msgid  "~Data source:"
-msgstr ""
+msgstr "Chanzo data:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
 msgid  "~Table / Query:"
-msgstr ""
+msgstr "~Table / Query:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 msgid  "Database Field"
-msgstr ""
+msgstr "Uga wa Hifadhidata"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
 msgid  "Do you want to save the value in a database field?"
-msgstr ""
+msgstr "Do you want to save the value in a database field?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I want to save it in the following database field:"
-msgstr ""
+msgstr "Ndio, Nataka kuhifadhi hii katika uga wa hifadhidata ufuatao:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
 msgid  "~No, I only want to save the value in the form."
-msgstr ""
+msgstr "Hapana, Nataka tu kuhifadhi thamani katika fomu."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Fomu"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "Chanzo data"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
 msgid  "Content type"
-msgstr ""
+msgstr "Content type"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
 msgid  "Content"
-msgstr ""
+msgstr "Content"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Jedwali"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "Ulizo"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "Amri SQL"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
 msgid  "Group Element Wizard"
-msgstr ""
+msgstr "Group Element Wizard"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
 msgid  "Table Element Wizard"
-msgstr ""
+msgstr "Table Element Wizard"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
 msgid  "List Box Wizard"
-msgstr ""
+msgstr "List Box Wizard"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
 msgid  "Combo Box Wizard"
-msgstr ""
+msgstr "Combo Box Wizard"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 msgid  "The table connection to the data source could not be established."
-msgstr ""
+msgstr "Unganisho la jedwali kwa chanzo data halikuwezekana kuanzishwa."
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "Uteuzi Uga"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Table element"
-msgstr ""
+msgstr "Elementi jedwali"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "Nyuga zilizopo"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
 msgid  "Selected fields"
-msgstr ""
+msgstr "Nyuga zilizoteuliwa"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
 msgid  " (Date)"
-msgstr ""
+msgstr " (Tarehe)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
 msgid  " (Time)"
-msgstr ""
+msgstr " (Muda)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "Data"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
 msgid  "Which ~names do you want to give the option fields?"
-msgstr ""
+msgstr "Majina yapi unataka kuyapa nyuga za chaguo?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
-msgstr ""
+msgstr "~Option fields"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
 msgid  "Default Field Selection"
-msgstr ""
+msgstr "Uteuzi wa Uga Msingi"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
 msgid  "Should one option field be selected as a default?"
-msgstr ""
+msgstr "Inawezekana uga chaguo mmoja kuteuliwa kama msingi?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
-msgstr ""
+msgstr "Ndio, ifuatayo:"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
 msgid  "No, one particular field is not going to be selected."
-msgstr ""
+msgstr "Hapana, uga fulani mmoja hautateuliwa."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
 msgid  "Field Values"
-msgstr ""
+msgstr "Thamani Uga"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "When you select an option, the option group is given a specific value."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
-msgstr ""
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
-msgid  "~Option fields"
-msgstr ""
+msgstr "Thamani ipi unataka kupangia kila chaguo?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
 msgid  "Create Option Group"
-msgstr ""
+msgstr "Unda Kundi Chaguo"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
-msgstr ""
+msgstr "Maelezo yapi mafupi yatakayopewa kundi chaguo zako?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
 msgid  "These were all details needed to create the option group."
-msgstr ""
+msgstr "Hizi ndizo utondoti zote zinazohitajika kuunda kundi chaguo."
 
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "You can either save the value of the option group in a database field or use it for a later action."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
 msgid  "Table Selection"
-msgstr ""
+msgstr "Uteuzi wa Jedwali"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Control"
-msgstr ""
+msgstr "Control"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Katika upande kulia, utaona majedwali yote kutoka chanzo data ya fomu.\n\n\nChagua jedwali kutoka data ambazo zitatumika kama msingi kwa ajili ya orodha ya yaliyomo:"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "Uteuzi Uga"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "Nyuga zilizopo"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
 msgid  "Display field"
-msgstr ""
+msgstr "Display field"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "The contents of the field selected will be shown in the combo box list."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "The contents of the selected field will be shown in the list box if the linked fields are identical."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
 msgid  "Field Link"
-msgstr ""
+msgstr "Kiungo cha Uga"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Hapa ndipo utateua nyuga zinazooana na yaliyomo kiasi kwamba thamani kutoka uga wa zinzo utaonyeshwa."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~Value Table"
-msgstr ""
+msgstr "Uga kutoka Jedwali Thamani"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~List Table"
-msgstr ""
+msgstr "Uga kutoka Jedwali Orodha"
 
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "You can either save the value of the combo box in a database field or use it for display purposes."
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
 msgid  "<< Back"
-msgstr ""
+msgstr "<< Nyuma"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "Next >>"
-msgstr ""
+msgstr "Next >>"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
 msgid  "Accept"
-msgstr ""
+msgstr "Kubali"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
 msgid  "Finish"
-msgstr ""
+msgstr "Maliza"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
-msgstr ""
+msgstr " - Makubaliano ya Leseni ya Programu"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
 msgid  "- User Data"
-msgstr ""
+msgstr "- Data za Mtumiaji"
 
 #: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
 msgid  "Welcome"
-msgstr ""
+msgstr "Karibu"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
-msgstr ""
+msgstr "Karibu kwa %PRODUCTNAME %PRODUCTVERSIONOEM\n\nKuanza %PRODUCTNAME %PRODUCTVERSIONOEM, tafadhari ingiza data zako binafsi katika dalogi matini ya leseni ufuatao. Taarifa muhimu zimejumuhishwa katika faili readme ambazo zimewekwa katika saraka zao %PRODUCTNAME. Tafadhari soma faili hizi kwa makini. Vilevile unaweza kupata taarifa kamili katika tovuti ya Sun.\n\nhttp://www.sun.com/staroffice.\n\nhttp://www.sun.com/star/service\n\nTunatumaini utafurahia kufanya kazi na %PRODUCTNAME."
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
 msgid  "License Agreement"
-msgstr ""
+msgstr "Makubaliano ya Leseni"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr ""
+msgstr "Please follow these steps to proceed with the installation:"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 
 #: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 msgid  "Page Down"
-msgstr ""
+msgstr "Page Down"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement."
-msgstr ""
+msgstr "Accept the License Agreement."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
 msgid  "I accept the terms of the Agreement."
-msgstr ""
+msgstr "I accept the terms of the Agreement."
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "Kubali"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
-msgstr ""
+msgstr "Kataa"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
 msgid  "Character"
-msgstr ""
+msgstr "Kiwambo"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Fonti"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr ""
+msgstr "Font Effects"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
 msgid  "Link fields"
-msgstr ""
+msgstr "Link fields"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Subforms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the subform match which columns in the master form."
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
 msgid  "Suggest"
-msgstr ""
+msgstr "Suggest"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
 msgid  "Sub Form"
-msgstr ""
+msgstr "Subform"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
 msgid  "Master Form"
-msgstr ""
+msgstr "Master form"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
 msgid  "The columns of '#' could not be retrieved."
@@ -817,19 +794,20 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
 msgid  "Edit mask"
-msgstr ""
+msgstr "Hariri barakoa"
 
 #: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
 msgid  "Literal mask"
-msgstr ""
+msgstr "Literal mask"
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "Read-only"
-msgstr ""
+msgstr "Soma-tu"
 
 #: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
 msgid  "Enabled"
-msgstr ""
+msgstr "Enabled"
 
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
 msgid  "Visible"
@@ -837,91 +815,92 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
 msgid  "AutoFill"
-msgstr ""
+msgstr "AutoFill"
 
 #: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
 msgid  "Line count"
-msgstr ""
+msgstr "Line count"
 
 #: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
 msgid  "Max. text length"
-msgstr ""
+msgstr "Max. text length"
 
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
 msgid  "Spin Button"
-msgstr ""
+msgstr "Spin Button"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
 msgid  "Strict format"
-msgstr ""
+msgstr "Strict format"
 
 #: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
 msgid  "Thousands separator"
-msgstr ""
+msgstr "Kitenganishi elfu"
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
 msgid  "Printable"
-msgstr ""
+msgstr "Print"
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
 msgid  "URL"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "Fremu"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
 msgid  "Help text"
-msgstr ""
+msgstr "Matini msaada"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
 msgid  "Help URL"
-msgstr ""
+msgstr "KISARA msaada"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
 msgid  "Additional information"
-msgstr ""
+msgstr "Taarifa za ziada"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
 msgid  "Password character"
-msgstr ""
+msgstr "Password character"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
 msgid  "Tristate"
-msgstr ""
+msgstr "Halitatu"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
 msgid  "Empty string is NULL"
-msgstr ""
+msgstr "Empty string is NULL"
 
 #: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
 msgid  "Decimal accuracy"
-msgstr ""
+msgstr "Decimal accuracy"
 
 #: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
 msgid  "Graphics"
-msgstr ""
+msgstr "Michoro"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
 msgid  "Default selection"
-msgstr ""
+msgstr "Default selection"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
 msgid  "Default button"
-msgstr ""
+msgstr "Default button"
 
 #: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
 msgid  "Label Field"
-msgstr ""
+msgstr "Label Field"
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
 msgid  "Label"
-msgstr ""
+msgstr "Lebo"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr ""
+msgstr "Alignment"
 
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
 msgid  "Vert. Alignment"
@@ -941,23 +920,23 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
 msgid  "Graphics alignment"
-msgstr ""
+msgstr "Graphics alignment"
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Fonti"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
 msgid  "Background color"
-msgstr ""
+msgstr "Rangi usuli"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
 msgid  "Border"
-msgstr ""
+msgstr "Kingo"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
 msgid  "Icon size"
-msgstr ""
+msgstr "Icon size"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
 msgid  "Small"
@@ -969,47 +948,47 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
 msgid  "Positioning"
-msgstr ""
+msgstr "Positioning"
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
 msgid  "Navigation"
-msgstr ""
+msgstr "Navigation"
 
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
 msgid  "Acting on a record"
-msgstr ""
+msgstr "Acting on a record"
 
 #: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
 msgid  "Filtering / Sorting"
-msgstr ""
+msgstr "Filtering / Sorting"
 
 #: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
 msgid  "Horizontal scroll bar"
-msgstr ""
+msgstr "Mwambaa biringizo mlalo"
 
 #: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
 msgid  "Vertical scroll bar"
-msgstr ""
+msgstr "Mwambaa biringizo wima"
 
 #: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
 msgid  "Word break"
-msgstr ""
+msgstr "Word break"
 
 #: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
 msgid  "Multiline input"
-msgstr ""
+msgstr "Ingizo mtari-nyingi"
 
 #: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
 msgid  "Multiselection"
-msgstr ""
+msgstr "Multiselection"
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
 msgid  "Name"
-msgstr ""
+msgstr "Jina"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 msgid  "Tab order"
-msgstr ""
+msgstr "Tab order"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
 msgid  "Mouse wheel scroll"
@@ -1017,195 +996,191 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
 msgid  "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
 msgid  "Sort"
-msgstr ""
+msgstr "Panga"
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
 msgid  "Record marker"
-msgstr ""
+msgstr "Record marker"
 
 #: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
 msgid  "Filter proposal"
-msgstr ""
+msgstr "Filter proposal"
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
 msgid  "Navigation bar"
-msgstr ""
+msgstr "Navigation bar"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
 msgid  "Cycle"
-msgstr ""
+msgstr "Cycle"
 
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
 msgid  "Tabstop"
-msgstr ""
+msgstr "Tabstop"
 
 #: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
 msgid  "Data field"
-msgstr ""
+msgstr "Data field"
 
 #: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
 msgid  "Dropdown"
-msgstr ""
+msgstr "Dropdown"
 
 #: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
 msgid  "Bound field"
-msgstr ""
+msgstr "Uga funge"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
 msgid  "List content"
-msgstr ""
+msgstr "List content"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
 msgid  "Type of list contents"
-msgstr ""
+msgstr "Type of list contents"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
 msgid  "Content"
-msgstr ""
+msgstr "Content"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
 msgid  "Content type"
-msgstr ""
+msgstr "Content type"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
 msgid  "Allow additions"
-msgstr ""
+msgstr "Allow additions"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
 msgid  "Allow deletions"
-msgstr ""
+msgstr "Allow deletions"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
 msgid  "Allow modifications"
-msgstr ""
+msgstr "Allow modifications"
 
 #: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
 msgid  "Add data only"
-msgstr ""
+msgstr "Ongeza tu data"
 
 #: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "Chanzo data"
 
 #: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
 msgid  "Link master fields"
-msgstr ""
+msgstr "Unga nyuga kuu"
 
 #: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
 msgid  "Link slave fields"
-msgstr ""
+msgstr "Link slave fields"
 
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
 msgid  "Value min."
-msgstr ""
+msgstr "Value min."
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
 msgid  "Value max."
-msgstr ""
+msgstr "Value max."
 
 #: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
 msgid  "Incr./decrement value"
-msgstr ""
+msgstr "Thamani uongezaji/upunguzaji"
 
 #: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
 msgid  "Currency symbol"
-msgstr ""
+msgstr "Currency symbol"
 
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
 msgid  "Date min."
-msgstr ""
+msgstr "Date min."
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
 msgid  "Date max."
-msgstr ""
+msgstr "Date max."
 
 #: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
 msgid  "Date format"
-msgstr ""
+msgstr "Fomati ya tarehe"
 
 #: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
 msgid  "Selection"
-msgstr ""
+msgstr "Uteuzi"
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
 msgid  "Time min."
-msgstr ""
+msgstr "Time min."
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
 msgid  "Time max."
-msgstr ""
+msgstr "Time max."
 
 #: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
 msgid  "Time format"
-msgstr ""
+msgstr "Fomati ya muda"
 
 #: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
 msgid  "Prefix symbol"
-msgstr ""
+msgstr "Alama kiambishi awali"
 
 #: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
 msgid  "Value"
-msgstr ""
+msgstr "Value"
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
 msgid  "Formatting"
-msgstr ""
+msgstr "Formatting"
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
 msgid  "Class ID"
-msgstr ""
+msgstr "Class ID"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
 msgid  "Height"
-msgstr ""
+msgstr "Height"
 
 #: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
 msgid  "Width"
-msgstr ""
+msgstr "Upana"
 
 #: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
 msgid  "List index"
-msgstr ""
+msgstr "Orodha kielezo"
 
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
 msgid  "Row height"
-msgstr ""
+msgstr "Row height"
 
 #: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
 msgid  "Fill color"
-msgstr ""
+msgstr "Jaza rangi"
 
 #: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
 msgid  "Line color"
-msgstr ""
+msgstr "Line color"
 
 #: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
 msgid  "Reference value (on)"
-msgstr ""
+msgstr "Reference value (on)"
 
 #: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
 msgid  "Reference value (off)"
-msgstr ""
+msgstr "Reference value (off)"
 
 #: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
 msgid  "List entries"
-msgstr ""
+msgstr "List entries"
 
 #: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
 msgid  "Action"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
-msgid  "URL"
-msgstr ""
+msgstr "Action"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
 msgid  "Type of submission"
-msgstr ""
+msgstr "Aina ya uwasilishaji"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
 msgid  "Default status"
@@ -1213,27 +1188,23 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
 msgid  "Submission encoding"
-msgstr ""
+msgstr "Submission encoding"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
 msgid  "Default value"
-msgstr ""
+msgstr "Default value"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
 msgid  "Default text"
-msgstr ""
+msgstr "Default text"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
 msgid  "Default date"
-msgstr ""
+msgstr "Default date"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
 msgid  "Default time"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
-msgid  "Frame"
-msgstr ""
+msgstr "Default time"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
 msgid  "Without frame"
@@ -1343,10 +1314,6 @@ msgstr ""
 msgid  "Post"
 msgstr ""
 
-#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
-msgid  "URL"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
 msgid  "Multipart"
 msgstr ""
@@ -1444,6 +1411,7 @@ msgid  "Current page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
 msgstr ""
 
@@ -1453,10 +1421,6 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
 msgid  "Parent Form"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
-msgid  "None"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
@@ -1473,207 +1437,207 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
 msgid  "Fill parameters"
-msgstr ""
+msgstr "Jaza paramita"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
 msgid  "Execute action"
-msgstr ""
+msgstr "Wakati wa uanzaji"
 
 #: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
 msgid  "After updating"
-msgstr ""
+msgstr "Baada ya usakinishaji"
 
 #: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
-msgstr ""
+msgstr "Kabla ya usakinishaji"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
 msgid  "Before record action"
-msgstr ""
+msgstr "Kabla ya tendo la rekodi"
 
 #: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
 msgid  "After record action"
-msgstr ""
+msgstr "Baada ya tendo la rekodi"
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
-msgstr ""
+msgstr "Thibitisha ufutaji"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
 msgid  "Error occurred"
-msgstr ""
+msgstr "Hitilafu imetokea"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
-msgstr ""
+msgstr "Wakati wa upokeaji fokasi"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
 msgid  "When losing focus"
-msgstr ""
+msgstr "Wakati wa upotevu wa fokasi"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
-msgstr ""
+msgstr "Hadhi ya kitu imebadilika"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
 msgid  "Key pressed"
-msgstr ""
+msgstr "Kibonye kimebonyezwa"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
 msgid  "Key released"
-msgstr ""
+msgstr "Kibonye kimeruhusiwa"
 
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
 msgid  "When loading"
-msgstr ""
+msgstr "Wakati wa upakiaji"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
 msgid  "Before reloading"
-msgstr ""
+msgstr "Kabla ya upakiaji tena"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
 msgid  "When reloading"
-msgstr ""
+msgstr "Wakati wa upakiaji tena"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
 msgid  "Mouse moved while key pressed"
-msgstr ""
+msgstr "Puku kimesogea wakati kibonye kimebonyezwa"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
 msgid  "Mouse inside"
-msgstr ""
+msgstr "Puku ndani"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
 msgid  "Mouse outside"
-msgstr ""
+msgstr "Puku nje"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
 msgid  "Mouse moved"
-msgstr ""
+msgstr "Puku kimesogea"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
 msgid  "Mouse button pressed"
-msgstr ""
+msgstr "Kitufe puku kimebonyezwa"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
 msgid  "Mouse button released"
-msgstr ""
+msgstr "Kitufe puku kimeachiliwa"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
 msgid  "Before record change"
-msgstr ""
+msgstr "Kabla ya rekodi kubadilika"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
 msgid  "After record change"
-msgstr ""
+msgstr "Baada ya rekodi kubadilika"
 
 #: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
 msgid  "After resetting"
-msgstr ""
+msgstr "Baada ya kuseti upya"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
 msgid  "Prior to reset"
-msgstr ""
+msgstr "Kabka ya kuseti upya"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
 msgid  "Approve action"
-msgstr ""
+msgstr "Kabla ya uanzaji"
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
 msgid  "Before submitting"
-msgstr ""
+msgstr "Kabla ya uwasilishaji"
 
 #: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
 msgid  "Text modified"
-msgstr ""
+msgstr "Matini imerekebishwa"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
-msgstr ""
+msgstr "Kabla ya kupakuwa"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
-msgstr ""
+msgstr "Wakati wa kupakuwa"
 
 #: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
 msgid  "Changed"
-msgstr ""
+msgstr "Iliobadilishwa"
 
 #: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
 msgid  "Events"
-msgstr ""
+msgstr "Matukio"
 
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
 msgid  "Analyze SQL command"
-msgstr ""
+msgstr "Analyze SQL command"
 
 #: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
 msgid  "PositionX"
-msgstr ""
+msgstr "MahaliX"
 
 #: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
 msgid  "PositionY"
-msgstr ""
+msgstr "MahaliY"
 
 #: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
 msgid  "Title"
-msgstr ""
+msgstr "Title"
 
 #: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
 msgid  "Page (step)"
-msgstr ""
+msgstr "Kurasa (hatua)"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
 msgid  "Progress value"
-msgstr ""
+msgstr "Thamani hatua"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
 msgid  "Progress value min."
-msgstr ""
+msgstr "Thamani maendeleo ya chini."
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
 msgid  "Progress value max."
-msgstr ""
+msgstr "Thamani maendeleo ya juu."
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
 msgid  "Scroll value"
-msgstr ""
+msgstr "Thamani biringizo"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
 msgid  "Scroll value max."
-msgstr ""
+msgstr "Thamani biringizo wa juu."
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
 msgid  "Scroll value min."
-msgstr ""
+msgstr "Scroll value min."
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
 msgid  "Default scroll value"
-msgstr ""
+msgstr "Default scroll value"
 
 #: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
 msgid  "Small change"
-msgstr ""
+msgstr "Small change"
 
 #: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
 msgid  "Large change"
-msgstr ""
+msgstr "Large change"
 
 #: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
 msgid  "Delay"
-msgstr ""
+msgstr "Chelewesha"
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
 msgid  "Repeat"
-msgstr ""
+msgstr "Rudia tena"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
 msgid  "Visible size"
-msgstr ""
+msgstr "Saizi ionekanayo wazi"
 
 #: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
 msgid  "Orientation"
-msgstr ""
+msgstr "Mkao"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 msgid  "Horizontal"
@@ -1685,27 +1649,27 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
 msgid  "While adjusting"
-msgstr ""
+msgstr "Wakati wa urekebishaji"
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "Tarehe"
 
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
 msgid  "State"
-msgstr ""
+msgstr "State"
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
 msgid  "Time"
-msgstr ""
+msgstr "Time"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
 msgid  "Scale"
-msgstr ""
+msgstr "Skeli"
 
 #: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
 msgid  "Button type"
-msgstr ""
+msgstr "Aina ya kitufe"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
 msgid  "Default"
@@ -1725,23 +1689,19 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr ""
+msgstr "The connection to the data source \"$name$\" could not be established."
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
 msgid  "Linked cell"
-msgstr ""
+msgstr "Seli iliyoungwa"
 
 #: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
 msgid  "Source cell range"
-msgstr ""
+msgstr "Chanzo masafa seli"
 
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
 msgid  "Contents of the linked cell"
-msgstr ""
+msgstr "Yaliyomo katika seli zilizoungashwa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
 msgid  "The selected entry"
@@ -1753,151 +1713,127 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
 msgid  "Scrollbars"
-msgstr ""
+msgstr "Scrollbars"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
 msgid  "Single-line"
-msgstr ""
+msgstr "Single-line"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
 msgid  "Multi-line"
-msgstr ""
+msgstr "Multi-line"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
 msgid  "Multi-line with formatting"
-msgstr ""
+msgstr "Multi-line with formatting"
 
 #: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
 msgid  "Symbol color"
-msgstr ""
+msgstr "Symbol color"
 
 #: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
 msgid  "Text lines end with"
-msgstr ""
+msgstr "Text lines end with"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
 msgid  "LF (Unix)"
-msgstr ""
+msgstr "LF (Unix)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
 msgid  "CR+LF (Windows)"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
-msgid  "Horizontal"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
-msgid  "Vertical"
-msgstr ""
+msgstr "CR+LF (Windows)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
 msgid  "Both"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
-msgid  "Table"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
-msgid  "Query"
-msgstr ""
+msgstr "Both"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "Amri SQL"
 
 #: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
 msgid  "Toggle"
-msgstr ""
+msgstr "Gura"
 
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
 msgid  "Take Focus on Click"
-msgstr ""
+msgstr "Take Focus on Click"
 
 #: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
 msgid  "Hide selection"
-msgstr ""
+msgstr "Hide selection"
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
 msgid  "Style"
-msgstr ""
+msgstr "Mtindo"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 msgid  "3D"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
-msgid  "Flat"
-msgstr ""
+msgstr "3D"
 
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
 msgid  "Border color"
-msgstr ""
+msgstr "Border color"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
 msgid  "Left top"
-msgstr ""
+msgstr "Left top"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
 msgid  "Left centered"
-msgstr ""
+msgstr "Left centered"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
 msgid  "Left bottom"
-msgstr ""
+msgstr "Left bottom"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
 msgid  "Right top"
-msgstr ""
+msgstr "Right top"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
 msgid  "Right centered"
-msgstr ""
+msgstr "Right centered"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
 msgid  "Right bottom"
-msgstr ""
+msgstr "Right bottom"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
 msgid  "Above left"
-msgstr ""
+msgstr "Above left"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
 msgid  "Above centered"
-msgstr ""
+msgstr "Above centered"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
 msgid  "Above right"
-msgstr ""
+msgstr "Above right"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
 msgid  "Below left"
-msgstr ""
+msgstr "Below left"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
 msgid  "Below centered"
-msgstr ""
+msgstr "Below centered"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
 msgid  "Below right"
-msgstr ""
+msgstr "Below right"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
 msgid  "Centered"
-msgstr ""
+msgstr "Centered"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
 msgid  "Wrap text automatically"
-msgstr ""
+msgstr "Wrap text automatically"
 
 #: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
 msgid  "Text type"
-msgstr ""
+msgstr "Text type"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
 msgid  "Hide"
@@ -1909,103 +1845,99 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
 msgid  "XML data model"
-msgstr ""
+msgstr "XML data model"
 
 #: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
 msgid  "Binding expression"
-msgstr ""
+msgstr "Binding expression"
 
 #: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
 msgid  "Required"
-msgstr ""
+msgstr "Inahitajika"
 
 #: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
 msgid  "List entry source"
-msgstr ""
+msgstr "List entry source"
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
 msgid  "Relevant"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
-msgid  "Read-only"
-msgstr ""
+msgstr "Relevant"
 
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
 msgid  "Constraint"
-msgstr ""
+msgstr "Constraint"
 
 #: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
 msgid  "Calculation"
-msgstr ""
+msgstr "Calculation"
 
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
 msgid  "Data type"
-msgstr ""
+msgstr "Data type"
 
 #: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
 msgid  "Whitespaces"
-msgstr ""
+msgstr "Whitespaces"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
 msgid  "Preserve"
-msgstr ""
+msgstr "Preserve"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
 msgid  "Replace"
-msgstr ""
+msgstr "Badilisha"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
 msgid  "Collapse"
-msgstr ""
+msgstr "Kunja"
 
 #: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
 msgid  "Pattern"
-msgstr ""
+msgstr "Ruwaza"
 
 #: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
 msgid  "Length"
-msgstr ""
+msgstr "Length"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
 msgid  "Length (at least)"
-msgstr ""
+msgstr "Length (at least)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
 msgid  "Length (at most)"
-msgstr ""
+msgstr "Length (at most)"
 
 #: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
 msgid  "Digits (total)"
-msgstr ""
+msgstr "Digits (total)"
 
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
 msgid  "Digits (fraction)"
-msgstr ""
+msgstr "Digits (fraction)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
 msgid  "Max. (inclusive)"
-msgstr ""
+msgstr "Max. (inclusive)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
 msgid  "Max. (exclusive)"
-msgstr ""
+msgstr "Max. (exclusive)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
 msgid  "Min. (inclusive)"
-msgstr ""
+msgstr "Min. (inclusive)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
 msgid  "Min. (exclusive)"
-msgstr ""
+msgstr "Min. (exclusive)"
 
 #: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
 msgid  "Submission"
-msgstr ""
+msgstr "Submission"
 
 #: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
 msgid  "Binding"
-msgstr ""
+msgstr "Binding"
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
 msgid  "Selection type"
@@ -2037,10 +1969,6 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
 msgid  "No Label"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
-msgid  "No"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
@@ -2096,6 +2024,7 @@ msgid  "As Character"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "To Page"
 msgstr ""
 
@@ -2105,10 +2034,6 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
 msgid  "To Character"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
@@ -2137,107 +2062,107 @@ msgstr ""
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
 msgid  "New Data Type"
-msgstr ""
+msgstr "New Data Type"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
 msgid  "Type a name for the new data type:"
-msgstr ""
+msgstr "Type a name for the new data type:"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
 msgid  "Button"
-msgstr ""
+msgstr "Kitufe"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
 msgid  "Option Button"
-msgstr ""
+msgstr "Option Button"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
 msgid  "Check Box"
-msgstr ""
+msgstr "Check Box"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 msgid  "Label Field"
-msgstr ""
+msgstr "Label Field"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
 msgid  "Group Box"
-msgstr ""
+msgstr "Kisanduku Kundi"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
 msgid  "Text Box"
-msgstr ""
+msgstr "Kisanduku Matini"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
 msgid  "Formatted Field"
-msgstr ""
+msgstr "Uga Uliofomatiwa"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
 msgid  "List Box"
-msgstr ""
+msgstr "Kisanduku Orodha"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
 msgid  "Combo Box"
-msgstr ""
+msgstr "Kisanduku Kombo"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
 msgid  "Image Button"
-msgstr ""
+msgstr "Kitufe Taswira"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
 msgid  "Hidden Control"
-msgstr ""
+msgstr "Hidden Control"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
 msgid  "Control (unknown type)"
-msgstr ""
+msgstr "Dhibiti (aina isiyojujulikana)"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
 msgid  "Image Control"
-msgstr ""
+msgstr "Image Control"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
 msgid  "File Selection"
-msgstr ""
+msgstr "File Selection"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
 msgid  "Date Field"
-msgstr ""
+msgstr "Date Field"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
 msgid  "Time Field"
-msgstr ""
+msgstr "Time Field"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
 msgid  "Numeric Field"
-msgstr ""
+msgstr "Numeric Field"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
 msgid  "Currency Field"
-msgstr ""
+msgstr "Currency Field"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
 msgid  "Pattern Field"
-msgstr ""
+msgstr "Pattern Field"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
 msgid  "Table Control "
-msgstr ""
+msgstr "Kidhibiti Jedwali "
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
 msgid  "Default"
-msgstr ""
+msgstr "Default"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Jumla"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "Data"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
 msgid  "No"
@@ -2261,135 +2186,135 @@ msgstr ""
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Hizi ndizo nyuga vidhibiti ambavyo vinaweza kutumika kama nyuga za lebo kwa ajili ya $control_class$ $control_name$."
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
 msgid  "~No assignment"
-msgstr ""
+msgstr "Hakuna usabidi"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
 msgid  "Label Field Selection"
-msgstr ""
+msgstr "Uteuzi wa Uga Lebo"
 
 #: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "Fomu"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
 msgid  "Tab Order"
-msgstr ""
+msgstr "Oda Tabo"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
 msgid  "Controls"
-msgstr ""
+msgstr "Vidhibiti"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
 msgid  "Move Up"
-msgstr ""
+msgstr "Move Up"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
 msgid  "Move Down"
-msgstr ""
+msgstr "Move Down"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
 msgid  "Automatic Sort"
-msgstr ""
+msgstr "Mpango Otomati"
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
 msgid  "Set"
-msgstr ""
+msgstr "Seti"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
 msgid  "Linear ascending"
-msgstr ""
+msgstr "Kuumbia nyoofu"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
 msgid  "Linear descending"
-msgstr ""
+msgstr "Teremua nyoofu"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
 msgid  "Original values"
-msgstr ""
+msgstr "Thamani halisi"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
 msgid  "Exponential increasing"
-msgstr ""
+msgstr "Uongezaji wa kipeo"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Kuhusu\n Kifaa"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Unda\nHakiki"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "Hakiki"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
 msgid  "Scan area"
-msgstr ""
+msgstr "Eneo skani"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
 msgid  "Left:"
-msgstr ""
+msgstr "Kushoto:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
 msgid  "Top:"
-msgstr ""
+msgstr "Juu:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
 msgid  "Right:"
-msgstr ""
+msgstr "Kulia:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
 msgid  "Bottom:"
-msgstr ""
+msgstr "Chini:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
 msgid  "Device used:"
-msgstr ""
+msgstr "Kifaa kilichotumika:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
 msgid  "Resolution [~DPI]"
-msgstr ""
+msgstr "Rezolusheni [DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
 msgid  "Show advanced options"
-msgstr ""
+msgstr "Onyesha chaguzi pevu"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
 msgid  "Options:"
-msgstr ""
+msgstr "Chaguzi:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
 msgid  "Vector element"
-msgstr ""
+msgstr "Elementi vekta"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
 msgid  "Set"
-msgstr ""
+msgstr "Seti"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
 msgid  "Scanner"
-msgstr ""
+msgstr "Skana"
 
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Kifaa: \nMchuuzi: \nModeli: \nAina: "
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
 msgid  "An error occurred while scanning."
-msgstr ""
+msgstr "Hitilafu imetokea wakati wa uskanishaji."
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Kifaa haitoi chagu la hakiki. Kwahiyo, skani ya kawaida itatumika badala yeke kama hakiki. Hii itachukua kiasi fulani cha muda."
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr ""
+msgstr "Kusano SANE haikuwezekana kuanzinshwa. Uskanishaji ni haiwezekani."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
 msgid  "Check for ~Updates..."
@@ -2497,7 +2422,7 @@ msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "Funga"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
 msgid  "~Download"
@@ -2517,9 +2442,10 @@ msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr ""
+msgstr "Ghairi"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr ""
 
@@ -2527,16 +2453,9 @@ msgstr ""
 msgid  "Click here to start the download."
 msgstr ""
 
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
-
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
+#, fuzzy
 msgid  "Click here for more information."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
@@ -2559,10 +2478,6 @@ msgstr ""
 msgid  "Download of update stalled"
 msgstr ""
 
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
-
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Download of update completed"
 msgstr ""
@@ -2573,8 +2488,4 @@ msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
 msgid  "Updates for extensions available"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
-msgid  "Click here for more information."
 msgstr ""

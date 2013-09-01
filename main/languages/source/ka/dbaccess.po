@@ -33,163 +33,163 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
 msgid  "Tried to open the table $name$."
-msgstr ""
+msgstr "$name$ ცხრილის გახსნის მცდელობა."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
 msgid  "No connection could be established."
-msgstr ""
+msgstr "კავშირი არ მყარდება."
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "ჩარჩო $name$ უკვე არსებობს.ხილული არ არის რადგან გაიფილტრა."
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "ობიექტის კონპიგურაციის მონაცემებში არ გაქვთ ჩაწერის უფლება."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "კავშირი გარე მონაცემთა საწყისთან არ არის დამყარებული. ადგილი ჰქონდა უცნობ შეცდომას,ალბათ დრაივერია წყობიდან  გამოსული."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "კავშირი გარე მონაცემთა საწყისთან არ არის დამყარებული.მოცემული მისამართისთვის SDBC დრაივერი არ არის ნაპოვნი."
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "კავშირი გარე მონაცემთა საწყისთან არ არის დამყარებული. SDBC  დრაივერი  არ არის ჩატვირთული."
 
 #: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "ფორმა"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "ანგარიში"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "მონაცემთა დასაჭყისი არ არის შენახული. გამოიყენე XStorable  ინტერფეისი, მონაცემტა დასაცყისის შესანახად."
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "მოცემული ბრძანება არ არის SELECT დებულება.\nდასაშვებია მხოლოდ მოთხოვნები."
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
 msgid  "No values were modified."
-msgstr ""
+msgstr "მნიშვნელობები არ შეცვლილა."
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "მნიშვნელობის ჩამატება შეუძლებელია,XResultSetUpdate ინტერფეისი არ არი ნებადართული ResultSet-ის მიერ."
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "მნიშვნელობის  ჩამატება შეუძლებელია, XResultSetUpdate   ინტერფეისი  არ არის ნებადართული ResultSet  მიერ."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
 msgid  "Values could not be modified, due to a missing condition statement."
-msgstr ""
+msgstr "მნიშვნელობის შეცვლა შეუძლებელია კონდიციური სტრიქონის არარსებობის გამო."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
 msgid  "The adding of columns is not supported."
-msgstr ""
+msgstr "სვეტების დამატება არ არის მხარდაჭერილი."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
 msgid  "The dropping of columns is not supported."
-msgstr ""
+msgstr "ჩამოშლილი სვეტი არ არის მხარდაჭერილი."
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
 msgid  "The WHERE condition could not be created for the primary key."
-msgstr ""
+msgstr "ძირითადი გასაღებისთვის WHERE პირობა ვერ შეიქმნა"
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
 msgid  "The column does not support the property '%value'."
-msgstr ""
+msgstr "ამ სვეტს არ გააჩნია თვისების %value' მხარდაჭერა."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
 msgid  "The column is not searchable!"
-msgstr ""
+msgstr "ეს სვეტი არ არის ძებნადი!"
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
 msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
-msgstr ""
+msgstr "სვეტების თანმიმდევრობა არ არის აკრეფილი ტანმიმდევრობით<sal_Int8>"
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
 msgid  "The column is not valid."
-msgstr ""
+msgstr "ეს სვეტი არ არის მართებული."
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
 msgid  "The column '%name' must be visible as a column."
-msgstr ""
+msgstr "სვეტის %name'  სვეტივიტ ხილული უნა იყოს."
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
 msgid  "The interface XQueriesSupplier is not available."
-msgstr ""
+msgstr "XQueries supplier  ინტერფასი არ არის ხელმისაწვდომი."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
 msgid  "The driver does not support this function."
-msgstr ""
+msgstr "ამ ფუნქციას არ აქვს დრაივერის მხარდაჭერა."
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
 msgid  "An 'absolute(0)' call is not allowed."
-msgstr ""
+msgstr "'absolute(0)' გამოძახება არ არის ნებადართული."
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
 msgid  "Relative positioning is not allowed in this state."
-msgstr ""
+msgstr "შესაბამისი მდებარეობა არ არის ნებაართული ამ მდგომარეობაში."
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "ახალი სტრიქონი ვერ განახლდება როდესაც ResultSet ბოლო სტრიქონის შემდეგ."
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "ახალი სტრიქონი ვერ ჩაემატება როდესაც ResultSet პირველი არ არის ჩასმის სტრიქონში."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
 msgid  "A row cannot be modified in this state"
-msgstr ""
+msgstr "ამ მდგომარეობაში სტრიქონმის შეცვლა შეუძლებელია"
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
 msgid  "A row cannot be deleted in this state."
-msgstr ""
+msgstr "სტრიქონი არ შეიდზლება ამ მდგომარეობასში წაიშალოს."
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
 msgid  "The driver does not support table renaming."
-msgstr ""
+msgstr "დრაივერს ცხრილის სახელის შეცვლის მხარდჭერის ფუნქცია არააქვს."
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions."
-msgstr ""
+msgstr "დრაივერს სვეტის მოდიფიკაციის მხარდაჭერის ფუნქცია არააქვს."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "დრაივერს სვეტის სახლის შეცვლის მხარდაჭერა არააქვს."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "დრაივერს სვეტის ინდექსის შეცვლის მხარდაჭერა არ გააჩნია."
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "\"$file$\" ფაილი არ არსებობს."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no table named \"$table$\"."
-msgstr ""
+msgstr "ცხრილი სახელად \"$table$\" არ არსებობს."
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no query named \"$table$\"."
-msgstr ""
+msgstr "ცხრილი სახელად \"$table$\" არ არსებობს."
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "აქ არის ცხრილები მონაცემთა ბაზაში, რომელთა სახელები კონფლიკტშია არსებულ მოთხოვნასთან. გამოყენებითი რომ გახდეს მოთხოვნები და ცხრილები, დარწმუნდით რომ მათ მკაფიო სახელები გააჩნია."
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "ამ შეცდომის გამომწვევი SQL ბრძანება არის:\n\n$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The SQL command does not describe a result set."
@@ -229,7 +229,7 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
 msgid  "There exists no folder named \"$folder$\"."
-msgstr ""
+msgstr "ცხრილი სახელად \"$table$\" არ არსებობს."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
 msgid  "Cannot delete the before-first or after-last row."
@@ -357,18 +357,6 @@ msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE"
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
@@ -547,10 +535,6 @@ msgstr ""
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
 msgstr ""
 
-#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Summary"
-msgstr ""
-
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
 msgstr ""
@@ -565,10 +549,6 @@ msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
 msgid  "Report '$name$'"
-msgstr ""
-
-#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
-msgid  "document $current$ of $overall$"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
@@ -645,15 +625,15 @@ msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "თქვენ არ შეგიძლიათ ცხრილისთვის და მოთხოვნისთვის ერთი და იმავე სახელის დარქმევა. გთხოვთ გამოიყენოთ სახელი რომელიც მოთხოვნისთვის ან ცხრილისთვის ჯერ არ დაგირქმევიათ."
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "ცხრილი"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "მოთხოვნა"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
@@ -673,55 +653,55 @@ msgstr ""
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
 msgid  "Create Form in Design View..."
-msgstr ""
+msgstr "ფორმის შექმნა დიზაინის ხედში..."
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Form..."
-msgstr ""
+msgstr "ფორმის შესაქმნელად ოსტატის გამოყენება..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
-msgstr ""
+msgstr "ანგარიშის შესაქმნელად ოსტატის გამოყენება..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
 msgid  "Create Report in Design View..."
-msgstr ""
+msgstr "ფორმის შექმნა დიზაინის ხედში..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
 msgid  "Create Query in Design View..."
-msgstr ""
+msgstr "მოთხოვნის შექმნა დიზაინის ხედში..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
 msgid  "Create Query in SQL View..."
-msgstr ""
+msgstr "მოთხოვნის შექმნა SQL-ის ხედში..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Query..."
-msgstr ""
+msgstr "ოსტატის გამოყენება მოთხოვნის შესაქმნელად..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
-msgstr ""
+msgstr "ცხრილის შექმნა დიზაინის ხედში..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Table..."
-msgstr ""
+msgstr "ცხრილის შესაქმნელად ოსტატის გამოყენება"
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
 msgid  "Create View..."
-msgstr ""
+msgstr "ხედის შექმნა..."
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "ფორმები"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
-msgstr ""
+msgstr "ანგარიშები"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
 msgid  "Form..."
-msgstr ""
+msgstr "ფორმა..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
 msgid  "Report..."
@@ -729,23 +709,23 @@ msgstr ""
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
 msgid  "View (Simple)..."
-msgstr ""
+msgstr "ხედი (მარტივი)..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
 msgid  "Paste Special..."
-msgstr ""
+msgstr "სპეციალური ჩასმა..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
 msgid  "Delete"
-msgstr ""
+msgstr "წაშლა"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
 msgid  "Rename"
-msgstr ""
+msgstr "გადარქმევა"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
 msgid  "Edit"
-msgstr ""
+msgstr "რედაქტირება"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
@@ -753,155 +733,173 @@ msgstr ""
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
-msgstr ""
+msgstr "გახსნა"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
 msgid  "Create as View"
-msgstr ""
+msgstr "შექმნა როგორც ხედი"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
-msgstr ""
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
-msgid  "Report..."
-msgstr ""
+msgstr "ფორმის ოსტატი..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "ანგარიშის ოსტატი..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
 msgid  "Select All"
-msgstr ""
+msgstr "ყველას არჩევა"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Database"
-msgstr ""
+msgstr "~მონაცემთა ბაზა"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr "თვისებები"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Connection Type..."
-msgstr ""
+msgstr "კავშირის ტიპი"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Advanced Settings..."
-msgstr ""
+msgstr "დამატებითი პარამეტრები"
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the data source '%1'?"
-msgstr ""
+msgstr "გსურთ წაშალოთ მონაცემთა წყარო '%1'?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base"
-msgstr ""
+msgstr " - %PRODUCTNAME ბაზა"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "ოსტატი გაგიძღვებათ ანგარიშის შექმნისთვის საჭირო ნაბიჯებში."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "ფორმის შექმნდა ჩანაწერის წყაროს, კონტროლების და კონტროლის პარამეტრების მითითებით."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "ფორმის შექმნდა ჩანაწერის წყაროს, კონტროლების და კონტროლის პარამეტრების მითითებით."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "ოსტატი გაგიძღვებათ ფორმის შექმნისთვის საჭირო ნაბიჯებში."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "მოთხოვნის შექმნა ფილტრების, შეტანის ცხრილების, ველის სახელების და დაჯგუფების და დახარისხების თვისებების მითითება"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
+#, fuzzy
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "მოთხოვნის შექმნდა SQL დებულების პირდაპირ შეყვანით."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "ოსტატი გაგიძღვებათ მოთხოვნის შექმნისთვის საჭირო ნაბიჯებში."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
+#, fuzzy
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "ცხრილის შექმნდა ველის სახელების და თვისებების, აგრეთვე მონაცემთა ტიპების მითითებით."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "ამოირჩიეთ საქმიანი და პერონალური ცხრილების ნიმუშების სიიდან, რომელსაც ცხრილის შექმნისთვის მოარგებთ."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
+#, fuzzy
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "ხედის შექმნდა ცხრილების და ველთა სახელების მითითება, რომელთა გამოჩენაც გსურთ."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "Opens the view wizard"
-msgstr ""
+msgstr "ხსნის ხედის ოსტატს"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "მონაცემთა ბაზა"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
+#, fuzzy
 msgid  "Tasks"
-msgstr ""
+msgstr "დავალებები"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "აღწერილობა"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "გადახედვა"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Disable Preview"
-msgstr ""
-
-#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "გადახედვის გათიშვა"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "არცერთი"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Document Information"
-msgstr ""
+msgstr "დოკუმენტის ინფორმაცია"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "დოკუმენტი"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Form"
-msgstr ""
+msgstr "ფორმა"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Report"
-msgstr ""
+msgstr "ანგარიში"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "F~orm name"
-msgstr ""
+msgstr "~ფორმის სახელი"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Report name"
-msgstr ""
+msgstr "~ანგარიშის სახელი"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "F~older name"
-msgstr ""
+msgstr "~დირექტორიის სახელი"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
 msgid  "The document contains forms or reports with embedded macros."
@@ -924,296 +922,364 @@ msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Table #"
-msgstr ""
-
-#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "ცხრილი #"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
-msgstr ""
+msgstr "მართლა გსურთ მონიშნული მონაცემების შენახვა?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
+#, fuzzy
 msgid  "(filtered)"
-msgstr ""
+msgstr "(გაფილტრული)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
+#, fuzzy
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "დახარისხების კრიტერიუმის დაყენებისას წარმოიქმნა შეცდომა"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "ფილტრის კრიტერიუმის დაყენებისას წარმოიქმნა შეცდომა"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
+#, fuzzy
 msgid  "Connection lost"
-msgstr ""
+msgstr "კავშირი დაიკარგა"
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Queries"
-msgstr ""
+msgstr "მოთხოვნები"
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Tables"
-msgstr ""
+msgstr "ცხრილები"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
+#, fuzzy
 msgid  "Edit ~Database File..."
-msgstr ""
+msgstr "~მონაცემთა ფაილის რედაქტირება..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
+#, fuzzy
 msgid  "Registered databases ..."
-msgstr ""
+msgstr "რეგისტრირებული მონაცემთა ბაზები ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
+#, fuzzy
 msgid  "Disco~nnect"
-msgstr ""
+msgstr "გა~თიშვა"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
+#, fuzzy
 msgid  "Confirm Deletion"
-msgstr ""
+msgstr "წაშლის დამტკიცება"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
-msgstr ""
+msgstr "მართლა გსურთ '%1' ცხრილის წაშლა?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
-msgstr ""
+msgstr "მოთხოვნა უკვე არსებობს. მართლა გსურთ მისი წაშლა?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "მონაცემთა ბაზასთან კავშირი დაიკარგა. მართლა გსურთ თავიდან დაკავშირება?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
+#, fuzzy
 msgid  "Warnings encountered"
-msgstr ""
+msgstr "შემჩნეულია შეცდომები"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "ცხრილების მიღებისას გაფრთხილებების უწყება მონაცემთა ბაზის კავშირის საშუალებით შედგა."
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
-msgstr ""
+msgstr "\"$name$\"-სთან დაკავშირება..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Loading query $name$ ..."
-msgstr ""
+msgstr "მოთხოვნა $name$-ის ჩატვირთვა..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Loading table $name$ ..."
-msgstr ""
+msgstr "ცხრილის $name$-ის ჩატვირთვა"
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
+#, fuzzy
 msgid  "No table format could be found."
-msgstr ""
+msgstr "შეუძლებელია ცხრილის ფორმატის პოვნა."
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
+msgstr "კავშირი მონაცემთა წყაროს \"$name$\"-თან ვერ დამყარდა."
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rebuild"
-msgstr ""
+msgstr "თავიდან აგება"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
+#, fuzzy
 msgid  "Column ~Format..."
-msgstr ""
+msgstr "სვეტის ~ფორმატი"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
+#, fuzzy
 msgid  "Copy Column D~escription"
-msgstr ""
+msgstr "სვეტის ~აღწერილობის კოპირება"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
+#, fuzzy
 msgid  "Table Format..."
-msgstr ""
+msgstr "ცხრილის ფორმატი..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Row Height..."
-msgstr ""
+msgstr "რიგის სიმაღლე..."
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "Undo: Data Input"
-msgstr ""
+msgstr "უკუსვლა: მონაცემების შენატანი"
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "Save current record"
-msgstr ""
+msgstr "მიმდინარე ჩანაწერის შენახვა"
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Query #"
-msgstr ""
+msgstr "მოთხოვნა#"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Table #"
-msgstr ""
+msgstr "ცხრილი #"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "View #"
-msgstr ""
+msgstr "ნახვა #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name \"#\" already exists."
-msgstr ""
+msgstr "სახელი \"#\" უკვე არსებობს."
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
+#, fuzzy
 msgid  "No matching column names were found."
-msgstr ""
+msgstr "თავსებადი სვეტები სახელები ვერ მოიძებნა."
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
-msgstr ""
+msgstr "ნაპოვნია შეცდომა. გსურთ კოპირების გაგრძელება?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Data source table view"
-msgstr ""
+msgstr "მონაცემების წყაროს ცხრილის ხედი"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Shows the selected table or query."
-msgstr ""
+msgstr "აჩვენებს მონიშნულ ცხრილს ან მოთხოვნას."
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Table name"
-msgstr ""
+msgstr "ცხრილის სახელი"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert data"
-msgstr ""
+msgstr "მონაცემების ჩასმა"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete data"
-msgstr ""
+msgstr "მონაცემების წაშლა"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
+#, fuzzy
 msgid  "Modify data"
-msgstr ""
+msgstr "მონაცემების შეცვლა"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
+#, fuzzy
 msgid  "Alter structure"
-msgstr ""
+msgstr "სტრუქტურის შეცვლა"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
+#, fuzzy
 msgid  "Read data"
-msgstr ""
+msgstr "მონაცემების წაკითხვა"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
+#, fuzzy
 msgid  "Modify references"
-msgstr ""
+msgstr "დამოწმებული პარამეტრების შეცვლა"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
+#, fuzzy
 msgid  "Drop structure"
-msgstr ""
+msgstr "სტრუქტურის ამოგდება"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "დალაგება ზრდის მიხედვით"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sort Descending"
-msgstr ""
+msgstr "დალაგება კლების მიხედვით"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "SDBC დრაივერის მენეჯერთან შეერთება ვერ ხერხდება(#servicename#)."
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
-msgstr ""
+msgstr "დრაივერი დარეგისტრირებული არ არის URL-სთვის #connurl#."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
-msgstr ""
+msgstr "კავშირი ვერ დამყარდა URL-ისთვის #connurl#."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "გთხოვთ გადაამოწმოთ მიმდინარე პარამეტრები, მაგალითად მომხმარებლის სახელი და პაროლი."
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "დაკავშირება განხორციელდა წარმატებით, მაგრამ ინფორმაცია მონაცემთა ბაზის შესახებ მიუწვდომელია."
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "All tables"
-msgstr ""
+msgstr "ყველა ცხრილი"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
+#, fuzzy
 msgid  "All views"
-msgstr ""
+msgstr "ყველა ხედი"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
+#, fuzzy
 msgid  "All tables and views"
-msgstr ""
+msgstr "ყველა ცხრილი და ხედი"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
+#, fuzzy
 msgid  "Modify SQL statement(s)"
-msgstr ""
+msgstr "შეცვალე SQL განცხადება(ები)"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database files"
-msgstr ""
+msgstr "მონაცემთა ბაზის ფაილები"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~YSDEVSPACE:"
-msgstr ""
+msgstr "S~YSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~TRANSACTIONLOG:"
-msgstr ""
+msgstr "~TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DATAD~EVSPACE:"
-msgstr ""
+msgstr "DATAD~EVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database sizes"
-msgstr ""
+msgstr "მონაცემთა ბაზის ზომები"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~ize (MB):"
-msgstr ""
+msgstr "ზ~ომა(MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Free memory space (MB):"
-msgstr ""
+msgstr "~თავისუფალი მეხსიერების ადგილი (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Memory utilization (in %):"
-msgstr ""
+msgstr "~მეხსიერების უტილიზაცია (in %):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Database Statistics"
-msgstr ""
+msgstr "მონაცემთა ბაზის სტატისტიკა"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
+#, fuzzy
 msgid  "Contains the system tables"
-msgstr ""
+msgstr "შეიცავს სისტემის ცხრილებს"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
+#, fuzzy
 msgid  "Contains information about transaction"
-msgstr ""
+msgstr "შეიცავს ინფორმაციას ტრანზაქციის შესახებ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
+#, fuzzy
 msgid  "Contains all data files"
-msgstr ""
+msgstr "შეიცავს ყველა მონაცემთა ფაილებს"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
+#, fuzzy
 msgid  "Total size of the database files"
-msgstr ""
+msgstr "მონაცემთა ბაზის ფაილების მთლიანი ზომა"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
-msgstr ""
+msgstr "ახალ datadev ფაილის შექმნამდე ამჟამად ხელმისაწვდომი ადგილი."
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
+#, fuzzy
 msgid  "Currently used memory"
-msgstr ""
+msgstr "მიმდინარედ გამოყენებული მეხსიერება"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "სისტემის ცხრილების წვდომი უფლებების არ არსებობის გამო ინფორმაცია ვერ იქნება ნაჩვენები."
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
 msgid  "~Database name"
@@ -1232,8 +1298,9 @@ msgid  "~Port"
 msgstr ""
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Default: 3306"
-msgstr ""
+msgstr "სტანდარტი: 3306"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
@@ -1244,76 +1311,93 @@ msgid  "Named p~ipe"
 msgstr ""
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Tables"
-msgstr ""
+msgstr "ცხრილები"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Queries"
-msgstr ""
+msgstr "მოთხოვნები"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "~დამატება"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "~დახურვა"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "Add Tables"
-msgstr ""
+msgstr "ცხრილის დამატება"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Add Table or Query"
-msgstr ""
+msgstr "ცხრილის ან მოთხოვნის დამატება"
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "პარამეტრები"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use SQL92 naming constraints"
-msgstr ""
+msgstr "SQL92 დასახელებითი შეზღუდვები"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
-msgstr ""
+msgstr "ცხრილის მეტსახელის დამატება SELECT განცხადებაზე"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
 msgid  "Use keyword AS before table alias names"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
-msgstr ""
+msgstr "Outer Join syntax '{OJ }'-ის გამოყენება"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ignore the privileges from the database driver"
-msgstr ""
+msgstr "მონაცემთა ბაზის დრაივერიდან უპირატესობების უგულებელყოფა"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Replace named parameters with '?'"
-msgstr ""
+msgstr "დასათაურებული პარამერტების '?'-თი ჩანაცვლება."
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Display version columns (when available)"
-msgstr ""
+msgstr "ვერსიების სვეტების ჩვენება (როცა შესაძლებელია)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use catalog name in SELECT statements"
-msgstr ""
+msgstr "კატალოგის სახელის გამოყენება SELECT განცხადებაში"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use schema name in SELECT statements"
-msgstr ""
+msgstr "სქემის სახელის გამოყენება SELECT განცხადებაში"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Create index with ASC or DESC statement"
-msgstr ""
+msgstr "ASC or DESC-ის უწყებით ინდექსის შექმნა"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "End text lines with CR+LF"
-msgstr ""
+msgstr "ტექსტის ხაზის დასრულება CR+LF-ით"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
 msgid  "Ignore currency field information"
@@ -1352,96 +1436,117 @@ msgid  "MS Access"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comparison of Boolean values"
-msgstr ""
+msgstr "Boolean მნიშვნელობების შედარება"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "პარამეტრები"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Re~trieve generated values"
-msgstr ""
+msgstr "წ~არმოებული მნიშვნელობების აღდგენა"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Auto-increment statement"
-msgstr ""
+msgstr "~ავტო-მზარდი განცხადება"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Query of generated values"
-msgstr ""
+msgstr "~წარმოებული მნიშვნელობების მოთხოვნა"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Generated Values"
-msgstr ""
+msgstr "გენერირებული თვისებები"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
+#, fuzzy
 msgid  "Special Settings"
-msgstr ""
+msgstr "საგანგებო პარამეტრები"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
 msgstr ""
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the dBASE files"
-msgstr ""
+msgstr "dBASE ფაილების მდებარეობა"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the text files"
-msgstr ""
+msgstr "ტექტის ფაილების მდებარეობა"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the spreadsheet document"
-msgstr ""
+msgstr "ელექტრონული ცხრილის დოკუმენტების მდებარეობა"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Name of the ODBC data source on your system"
-msgstr ""
+msgstr "თქვენს სისტემაში ODBC მონაცემთა წყაროს დასახელება"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the MySQL database"
-msgstr ""
+msgstr "MySQL მონაცემთა ბაზის დასახელება"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the Oracle database"
-msgstr ""
+msgstr "Oracle მონაცემთა ბაზის დასახელება"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the Adabas D database"
-msgstr ""
+msgstr "Adabas D მონაცემთა ბაზის დასახელება"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Microsoft Access database file"
-msgstr ""
+msgstr "Microsoft-ის მონაცემთა ბაზის ფაილების წვდომა"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
+#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "მეტი პარამეტრები აღარ არის საჭირო. კავშირის მუშაობის დასადასტურებლად დააჭირე '%test' ღილაკს."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
+#, fuzzy
 msgid  "Datasource URL"
-msgstr ""
+msgstr "URL მონაცემთა წყარო"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "~ჰოსტის სახელი"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "~Mozilla profile name"
-msgstr ""
+msgstr "~Mozilla-ს პროფილი"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "~Thunderbird profile name"
-msgstr ""
+msgstr "~Thunderbird-ის პროფილი"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Browse"
-msgstr ""
+msgstr "მოძიება"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database name"
@@ -1452,1528 +1557,1780 @@ msgid  "Server"
 msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Base ~DN"
-msgstr ""
+msgstr "ბაზა ~DN"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port number"
-msgstr ""
+msgstr "~პორტის ნომერი"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Data conversion"
-msgstr ""
+msgstr "მონაცემთა კონვერტირება"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Character set"
-msgstr ""
+msgstr "~თვისებების საყენება"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "მიუთითე სასურველი ფაილის ტიპი"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Plain text files (*.txt)"
-msgstr ""
+msgstr "ცარიელი ტექსტის ფაილები (*.txt)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "'Comma separated value' files (*.csv)"
-msgstr ""
+msgstr "'მძიმით გამოყოფილი' ფაილები (*.csv)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Custom:"
-msgstr ""
+msgstr "ინდივიდუალური:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Custom: *.abc"
-msgstr ""
+msgstr "ინდივიდუალური: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Row Format"
-msgstr ""
+msgstr "სტრიქონის ფორმატირება"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field separator"
-msgstr ""
+msgstr "ველის გამყოფი"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Text separator"
-msgstr ""
+msgstr "ტექსტური გამყოფი"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Decimal separator"
-msgstr ""
+msgstr "ათობითი გამყოფი"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Thousands separator"
-msgstr ""
+msgstr "ათასების გამყოფი"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Text contains headers"
-msgstr ""
+msgstr "~ტექსტი შეიცავს ჰედერს"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
+#, fuzzy
 msgid  "{None}"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ""
+msgstr "{არაფერი}"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "#1 must be set."
-msgstr ""
+msgstr "#1 დაყენებული უნდა იყოს."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
+#, fuzzy
 msgid  "#1 and #2 must be different."
-msgstr ""
+msgstr "#1 და #2 განსხვავებული უნდა იყოს."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
+#, fuzzy
 msgid  "Wildcards such as ?,* are not allowed in #1."
-msgstr ""
+msgstr "ჩანაცვლების სიმბოლო როგორიცაა ?,* არ დაიშვება #1."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "JDBC d~river class"
-msgstr ""
+msgstr "JDBC დ~რაივერის კლასი"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test class"
-msgstr ""
+msgstr "ტესტური კლასი"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
 msgid  "Socket"
 msgstr ""
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr "შენახვა"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Create New Directory"
-msgstr ""
+msgstr "ახალი დირექტორიის შექმნა"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Up One Level"
-msgstr ""
+msgstr "ერთი დონით ზემოთ"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "File ~name:"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "ფაილის ~სახელი:"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
+#, fuzzy
 msgid  "~Path:"
-msgstr ""
+msgstr "~მდებარეობა:"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
+#, fuzzy
 msgid  "Folder"
-msgstr ""
+msgstr "დირექტორია"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "ფაილი უკვე არსებობს. გადავაწერო?"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ზოგადი"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "~ჰოსტის სახელი"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User authentication"
-msgstr ""
+msgstr "მომხმარებლის ავთენტიფიკაცია"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "~მომხმარებლის სახელი"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password required"
-msgstr ""
+msgstr "პაროლი სავალდებულოა"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "JDBC properties"
-msgstr ""
+msgstr "JDBC-ს თვისებები"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~JDBC driver class"
-msgstr ""
+msgstr "~JDBC დრაივერის კლასი"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test Class"
-msgstr ""
+msgstr "კლასის ტესტირება"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test Connection"
-msgstr ""
+msgstr "კავშირის ტესტირება"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
+#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
-msgstr ""
+msgstr "Adabas D მონაცემთა წყარო არ მოიძებნა თქვენს სისტემაში."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
+#, fuzzy
 msgid  "Connection Test"
-msgstr ""
+msgstr "კავშირის ტესტირება"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The connection was established successfully."
-msgstr ""
+msgstr "დაკავშირება წარმატებით განხორციელდა."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "დაკავშირება არ განხორციელდა წარმატებით."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
-msgstr ""
+msgstr "JDBC დრაივერი წარმატებით ჩაიტვირთა."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The JDBC driver could not be loaded."
-msgstr ""
+msgstr "JDBC დრაივერი ვერ ჩაიტვირთა."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
+#, fuzzy
 msgid  "MS Access file"
-msgstr ""
+msgstr "MS წვდომის ფაილი"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
 msgid  "MS Access 2007 file"
 msgstr ""
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "A password is needed to connect to the data source \"$name$\"."
-msgstr ""
+msgstr "\"$name$\" მონაცემთა წყაროსთან  დასაკავშირებლად საჭიროა პაროლი"
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
+#, fuzzy
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "დირექტორია \n\n$path$\n\nარ არსებობს. უნდა შეიქმნას?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
+#, fuzzy
 msgid  "The directory $name$ could not be created."
-msgstr ""
+msgstr "$name$ დირექტორია ვერ შეიქმნება."
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Convert Database"
-msgstr ""
+msgstr "მონაცემთა ბაზის კონვერტირება"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Please enter the ~password for the user 'DOMAIN'."
-msgstr ""
+msgstr "მომხმარებელი  'DOMAIN' -სთვის შეიყვანეთ  ~პაროლი"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Tables Filter"
-msgstr ""
+msgstr "ცხრილის ფილტრი"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables and table filter"
-msgstr ""
+msgstr "რილების და ცხრილის ფილტრი"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Mark the tables that should be visible for the applications."
-msgstr ""
+msgstr "მონიშნეთ ცხრილი რომელიც ხილული იქნება პროგრამებისთვის."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Database Wizard"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
-msgid  "Database Wizard"
-msgstr ""
+msgstr "მონაცემთა ბაზის ოსტატი"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Select database"
-msgstr ""
+msgstr "მონაცემთა ბაზის მონიშვნა"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
+#, fuzzy
 msgid  "Set up dBASE connection"
-msgstr ""
+msgstr "dBASE კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "ტექსტურ ფაილებთან კავშირის შექმნა"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
+#, fuzzy
 msgid  "Set up Microsoft Access connection"
-msgstr ""
+msgstr "Microsoft Access-ის კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
+#, fuzzy
 msgid  "Set up LDAP connection"
-msgstr ""
+msgstr "LDAP კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
+#, fuzzy
 msgid  "Set up Adabas D connection"
-msgstr ""
+msgstr "Adabas D კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
+#, fuzzy
 msgid  "Set up ADO connection"
-msgstr ""
+msgstr "ADO კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
+#, fuzzy
 msgid  "Set up JDBC connection"
-msgstr ""
+msgstr "JDBC კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
+#, fuzzy
 msgid  "Set up Oracle database connection"
-msgstr ""
+msgstr "Oracle-ის მონაცემთა ბაზის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
+#, fuzzy
 msgid  "Set up MySQL connection"
-msgstr ""
+msgstr "MySQL კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
+#, fuzzy
 msgid  "Set up ODBC connection"
-msgstr ""
+msgstr "ODBC კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
+#, fuzzy
 msgid  "Set up Spreadsheet connection"
-msgstr ""
+msgstr "ელექტრონული ცხრილის კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
+#, fuzzy
 msgid  "Set up user authentication"
-msgstr ""
+msgstr "მომხმარებლის ავთენტიფიკაციის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
 msgid  "Set up MySQL server data"
 msgstr ""
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
+#, fuzzy
 msgid  "Save and proceed"
-msgstr ""
+msgstr "შენახვა და გაგრძელება"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
+#, fuzzy
 msgid  "New Database"
-msgstr ""
+msgstr "ახალი მონაცემთა ბაზა"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up a connection to a MySQL database"
-msgstr ""
+msgstr "MySQL მონაცემთა ბაზის კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "შესაძლებელია MySQL-ის მონაცემთა ბაზასთან დაკავშირება ODBC ან JDBC-ის გამოყენებით.\nდაუკავშირდით თქვენი სისტემის ადმინისტრატორს თუ არ ხართ დარწმუნებული შემდეგ პარამერტებში."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "How do you want to connect to your MySQL database?"
-msgstr ""
+msgstr "როგორ გსურთ თქვენს MySQL მონაცემთა ბაზას დაუკავშირდეთ?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect using ODBC (Open Database Connectivity)"
-msgstr ""
+msgstr "კავშირი ODBC-ს გამოყენებით (მონაცემთა ბაზასთან კავშირების გახსნა)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect using JDBC (Java Database Connectivity)"
-msgstr ""
+msgstr "კავშირი JDBC-ს გამოყენებით (Java მონაცემთა ბაზის კავშირები)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
 msgid  "Connect directly"
 msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up the user authentication"
-msgstr ""
+msgstr "მომხმარებლის ავთენტიფიკაციის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "ზოგიერთი მონაცემთა ბაზა ითხოვს მომხმარებლის სახელის შეყვანას."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "~მომხმარებლის სახელი"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password re~quired"
-msgstr ""
+msgstr "სა~ჭიროა პაროლი"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Test Connection"
-msgstr ""
+msgstr "~კავშირის ტესტირება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Decide how to proceed after saving the database"
-msgstr ""
+msgstr "მოიფიქრე თუ როგორ განაგრძო მუშაობა მონაცემთა ბაზის შენახვის შემდეგ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "გნებავთ ოსტატმა დაარეგისტრიროს მონაცემთა ბაზა %PRODUCTNAME-ში?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes, register the database for me"
-msgstr ""
+msgstr "~დიახ, დამირეგისტრირე მონაცემთა ბაზა"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "N~o, do not register the database"
-msgstr ""
+msgstr "არ~ა, ნუ დაარეისტრირებ მონაცემთა ბაზას"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "After the database file has been saved, what do you want to do?"
-msgstr ""
+msgstr "~რომელი ოპერაციის შესრულება გსურთ მონაცემთა ბაზის ფაილების შენახვის შემდეგ?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Open the database for editing"
-msgstr ""
+msgstr "მონაცემთა ბაზის გახსნა რედაქტირებისთვის"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Create tables using the table wizard"
-msgstr ""
+msgstr "ცხრილების შექმნა ცხრილის ოსტატის გამოყენებით"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Click 'Finish' to save the database."
-msgstr ""
+msgstr "დააწკაპუნე 'დამთავრება' მონაცემთა ბაზის შესანახად."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up connection to a MySQL database using JDBC"
-msgstr ""
+msgstr "MySQL-ის მონაცემთა ბაზისთვის კავშირის დაყენება JDBC-ს გამოყენებით"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "გთხოვთ შეიყვანოთ MySQL მონაცემთა ბაზასთან JDBC-ს გამოყენებით შეერთებისთვის საჭირო ინფორმაცია. გაითვალისწინეთ, რომ JDBC-ს დრაივერის კლასი დაინსტალირებული უნდა იყოს თქვენს სისტემაზე და რეგისტრირებული %PRODUCTNAME -სთან.\nთუ არ ხართ დარწმუნებული ჩამოთვლილ პარამეტრებში, მიმართეთ თქვენს სისტემურრ ადმინისტრატორს."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
+#, fuzzy
 msgid  "MySQL JDBC d~river class:"
-msgstr ""
+msgstr "MySQL JDBC დ~რაივერის კლასი:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 3306"
-msgstr ""
+msgstr "სტანდარტი: 3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up connection to a MySQL database"
-msgstr ""
+msgstr "MySQL მონაცემთა ბაზის კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to a MySQL database."
 msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to dBASE files"
-msgstr ""
+msgstr "dBASE ფაილების კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Select the folder where the dBASE files are stored."
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "შენახული dBASE ფაილების დირექტორიის მონიშვნა."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "მონიშნე დირექტორია სადაც CSV (მძიმეებით გამოყოფილი მნიშვნელობები) ტექსტები ინახება. %PRODUCTNAME  Base გაიხსნის ამ ფაილს მხოლოდ საკითხავ მოდულში."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to text files"
-msgstr ""
+msgstr "ტექსტური ფაილების მდებარეობა"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to a Microsoft Access database"
-msgstr ""
+msgstr "Microsoft Access-ის მონაცემთა ბაზის კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "მონიშნეთ Microsoft Access-ის ფაილი რომელიც გსურთ რომ იყოს ხელმისაწვდომი."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up a connection to an LDAP directory"
-msgstr ""
+msgstr "LDAP დირექტორიაზე კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "გთხოვთ შეიყვანოთ LDAP დირექტორიასთან შესაერთებლად საჭირო ინფორმაცია.\nთუ არ ხართ დარწმუნებული ჩამოთვლილ პარამეტრებში, მიმართეთ თქვენს სისტემურრ ადმინისტრატორს."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 389"
-msgstr ""
+msgstr "სტანდარტი: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use ~secure connection (SSL)"
-msgstr ""
+msgstr "უ~საფრთხო კავშირის (SSL) გამოყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an Adabas D database"
-msgstr ""
+msgstr "Adabas D მონაცემთა ბაზის კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "შეიყვანეთ იმ Adabas D მონაცემთა ბაზის სახელი, რომელთანაც გსურთ დაკავშირება.\nდააწკაპუნეთ 'მოძიება'-ზე, რათა მონიშნოთ %PRODUCTNAME-ში უკვე დარეგისტრირებული Adabas D მონაცემთა ბაზა."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an ADO database"
-msgstr ""
+msgstr "ADO მონაცემთა ბაზასთან კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "გთხოვთ შეიყვანოთ ADO მონაცემთა წყაროს URL, რომელსაც გსურთ მიურეთდეთ.\nპროვაიდერზე დამოკიდებული პარამეტრების დასაყენებლად დააჭირეთ 'ძებნას'.\nთუ არ ხართ დარწმუნებული ჩამოთვლილ პარამეტრებში, მიმართეთ თქვენს სისტემურრ ადმინისტრატორს."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an ODBC database"
-msgstr ""
+msgstr "ODBC მონაცემთა ბაზის კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "შეიყვანეთ იმ ODBC მონაცემთა ბაზის სახელი, რომელსაც გსურთ შეუერთდეთ.\n%PRODUCTNAME-ში უკვე დარეგისტრირებული ODBC ბაზის ამოსარჩევათ დააჭირეთ 'ძებნას...'\nთუ არ ხართ დარწმუნებული ჩამოთვლილ პარამეტრებში, მიმართეთ თქვენს სისტემურრ ადმინისტრატორს."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to a JDBC database"
-msgstr ""
+msgstr "JDBC მონაცემთა ბაზის კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC მონაცემთა ბაზასთნ შესაერთებლად, გთხოვთ შეიყვანოთ საჭირო ინფორმაცია.\nთუ არ ხართ დარწმუნებული ჩამოთვლილ პარამეტრებში, მიმართეთ თქვენს სისტემურრ ადმინისტრატორს."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an Oracle database"
-msgstr ""
+msgstr "Oracle-ის მონაცემთა ბაზაზე კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 1521"
-msgstr ""
+msgstr "სტანდარტი: 1521"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Oracle JDBC ~driver class"
-msgstr ""
+msgstr "~Oracle JDBC დრაივერის კლასი"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Oracle-ს მონაცემთა ბაზასთან შესაერთებლად გთხოვთ შეიყვანოთ საჭირო ინფორმაცია. გაითვალისწინეთ, რომ JDBC დრაივერის კლასი დაინსტალირებული უნდა იყოს თქვენს სისტემაში და რეგისტრირებული %PRODUCTNAME-თან.\nთუ არ ხართ დარწმუნებული ჩამოთვლილ პარამეტრებში, მიმართეთ თქვენს სისტემურრ ადმინისტრატორს."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to spreadsheets"
-msgstr ""
+msgstr "ელექტრონული ცხრილის კავშირის დაყენება"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "დააჭირეთ 'მოძიებას..' რათა აირჩიოთ %PRODUCTNAME-ის ან Microsoft Excel -ის ელ. ცხრილი.\n%PRODUCTNAME გაიხსნის ამ ფაილს მხოლოდ წაკითხივის უფლებით."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
+#, fuzzy
 msgid  "~Location and file name"
-msgstr ""
+msgstr "~მდებარეობა და ფაილის სახელი"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Password required"
-msgstr ""
+msgstr "~სავალდებულოა პაროლი"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use catalog for file-based databases"
-msgstr ""
+msgstr "კატალოგის გამოყენება ფაილზე დაფუძნებული მონაცემთა ბაზისათვის"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Connection Settings"
-msgstr ""
+msgstr "კავშირის პარამეტრები"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "~ჰოსტის სახელი"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port number"
-msgstr ""
+msgstr "~პორტის ნომერი"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "Advanced Properties"
-msgstr ""
+msgstr "დამატებითი თვისებები"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
+#, fuzzy
 msgid  "Additional Settings"
-msgstr ""
+msgstr "დამატებითი თვისებები"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Connection settings"
-msgstr ""
+msgstr "დაკავშირების პარამეტრები"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
+#, fuzzy
 msgid  "Database properties"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
-msgid  "Database properties"
-msgstr ""
+msgstr "მონაცემთა ბაზის თვისებები"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr ""
+msgstr "მოგესალმებათ მონაცემთა %PRODUCTNAME-ის ბაზის ოსტატი"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "ახალი მონაცემთა ბაზის შესაქმნელად მონაცემთა ბაზის ოსტატის გამოყენება, არსებული მონაცემთა ბაზის გახსნა, ან სერვერზე შენახულ მონაცემთა ბაზასთან დაკავშირება."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "What do you want to do?"
-msgstr ""
+msgstr "რისი გაკეთება გსურთ?"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Create a n~ew database"
-msgstr ""
+msgstr "ა~ხალი მონაცემთა ბაზის შექმნა"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open an existing database ~file"
-msgstr ""
+msgstr "არსებული მონაცემთა ბაზის ~ფაილის გახსნა"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Recently used"
-msgstr ""
+msgstr "ახლახან გამოყენებული"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect to an e~xisting database"
-msgstr ""
+msgstr "ა~რსებულ მონაცემთა ბაზასთან დაკავშირება"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "მონიშნეთ მონაცემთა ბაზის ტიპი რომელთანაც გსურთ კავშირის დამყარება."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database ~type "
-msgstr ""
+msgstr "მონაცემთა ბაზის ~ტიპი "
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "მონაცემთა ბაზა"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "შემდეგ გვერდებზე შეგიძლიათ შექმნათ დეტალური პარამერები კავშირისთვის.\n\nარსებულ პარამეტრებს გადაეწერება ახალი პარამეტრები."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
+#, fuzzy
 msgid  "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Data Source Properties: #"
-msgstr ""
+msgstr "მონაცემთა წყაროს თვისებები: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
+#, fuzzy
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "პროგრამის ბიბლიოთეკა ვერ იტვირთება#lib# ან იგი დაზიანებულია. ODBC მონაცემთა წყაროს არჩევა შეუძლებელია."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "ამ პლატფორმაზე მოცემული ტიპის მონაცემთა წყაროს მხარდაჭერა არ არსებობს.\nთქვენ შეგიძლიათ პარამეტრების შეცვლა, მაგრამ ალბათ ვერ შეძლებთ მონაცემთა ბაზასთან დაკავშირებას."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ზოგადი"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Optional settings"
-msgstr ""
+msgstr "ნებაყოფლობითი პარამეტრები"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Display deleted records as well"
-msgstr ""
+msgstr "უჩვენე ასევე წაშლილი ჩანაწერები"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "შენიშვნა: წაშლის შემთხვევაში არააქტიურია, ჩანაწარები ნაჩვენებია, თქვენ არ გექნებათ საშალება მონაცემთა წყაროდან წაშალოთ ჩანაწერები."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Indexes..."
-msgstr ""
+msgstr "ინდექსები..."
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Optional Settings"
-msgstr ""
+msgstr "ნებაყოფლობითი პარამეტრები"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "ODBC ~options"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr ""
+msgstr "ODBC ~პარამეტრები"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "მონაცემი~ბუფერის ზომა (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data increment (MB)"
-msgstr ""
+msgstr "~მონაცემთა ზრდა (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Administration"
-msgstr ""
+msgstr "ადმინისტრაცია"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Control ~user name"
-msgstr ""
+msgstr "~მომხმარებლის სახელის შემოწმება"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Control ~password"
-msgstr ""
+msgstr "პაროლის ~შემოწმება"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr ""
+msgstr "~ %PRODUCTNAME-ის დახურვისას ~სერვისის დამთავრება"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "E~xtended..."
-msgstr ""
+msgstr "გ~ანვრცობილია..."
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "MySQL JDBC d~river class"
-msgstr ""
+msgstr "MySQL JDBC დ~რაივერის კლასი"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test class"
-msgstr ""
+msgstr "ტესტური კლასი"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User authentication"
-msgstr ""
+msgstr "მომხმარებლის ავთენტიფიკაცია"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "~მომხმარებლის სახელი"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password required"
-msgstr ""
+msgstr "პაროლი სავალდებულოა"
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Oracle JDBC d~river class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
+msgstr "Oracle JDBC დ~რაივერის კლასი"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Base DN"
-msgstr ""
+msgstr "~DN ბაზა"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use secure connection(SSL)"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "დაცული კავშირის გამოყენება(SSL)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Maximum number of ~records"
-msgstr ""
+msgstr "ჩანაწერების~მაქსიმალური რაოდენობა"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Hostname"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "~ჰოსტისსახელი"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Driver settings"
-msgstr ""
+msgstr "~დრაივერის პარამეტრები"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
 msgstr ""
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Indexes"
-msgstr ""
+msgstr "ინდექსები"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Table"
-msgstr ""
+msgstr "~ცხრილი"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Assignment"
-msgstr ""
+msgstr "მინიჭება"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~able indexes"
-msgstr ""
+msgstr "ც~რილის ინდექსი"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Free indexes"
-msgstr ""
+msgstr "~თავისუფალი ინდექსი"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL ბრძანება"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Command to execute"
-msgstr ""
+msgstr "შესრულების ბრძანება"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Execute"
-msgstr ""
+msgstr "გაშვება"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Previous commands"
-msgstr ""
+msgstr "წინა ბრძანებები"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr "სტატუსი"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "დახურვა"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Execute SQL Statement"
-msgstr ""
+msgstr "SQL უწყების შესრულება"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
+#, fuzzy
 msgid  "Command successfully executed."
-msgstr ""
+msgstr "ბრძანება წარმატებით შესრულდა."
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "კავშირი მონაცემთა ბაზასთან დაიკარგა. დიალოგი დაიხურება."
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Field Format"
-msgstr ""
+msgstr "ველის ფორმატირება"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Bac~k"
-msgstr ""
+msgstr "უკა~ნ"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "ფონტი"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "ფორმატი"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "შესწორება"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
+#, fuzzy
 msgid  "Table Format"
-msgstr ""
+msgstr "ცხრილის ფორმატირება"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Save As"
-msgstr ""
+msgstr "დამახსოვრება როგორც..."
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter a name for the object to be created:"
-msgstr ""
+msgstr "შეიყვანეთ შესაქმნელი ობიექტის სახელი:"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Catalog"
-msgstr ""
+msgstr "~კატალოგი"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Schema"
-msgstr ""
+msgstr "~სქემა"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Table Name"
-msgstr ""
+msgstr "~ცხრილის სახელი"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Name of table view"
-msgstr ""
+msgstr "~ცხრილის სახელის ნახვა"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Query name"
-msgstr ""
+msgstr "~მოთხოვნის სახელი"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
+#, fuzzy
 msgid  "Rename to"
-msgstr ""
+msgstr "გადარქმევა"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
+#, fuzzy
 msgid  "Insert as"
-msgstr ""
+msgstr "ჩასმა როგორც..."
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Height"
-msgstr ""
+msgstr "~სიმაღლე"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "~ავტომატური"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Row Height"
-msgstr ""
+msgstr "სტრიქონის სიმაღლე"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Width"
-msgstr ""
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "~სიგანე"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Column Width"
-msgstr ""
+msgstr "სვტის სიგანე"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Data Source"
-msgstr ""
+msgstr "მონაცემთა წყარო"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose a data source:"
-msgstr ""
+msgstr "მონაცემთა წყაროს არჩევა:"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Organize..."
-msgstr ""
+msgstr "ორგანიზება..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Create..."
-msgstr ""
+msgstr "შექმნა..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
+#, fuzzy
 msgid  "Local Databases"
-msgstr ""
+msgstr "ადგილობრივი მონაცემთა ბაზა"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
+#, fuzzy
 msgid  "Choose a database"
-msgstr ""
+msgstr "მონაცემთა ბაზის არჩევა"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Indexes"
-msgstr ""
+msgstr "ინდექსები"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "New Index"
-msgstr ""
+msgstr "ახალი ინდექსი"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Delete Current Index"
-msgstr ""
+msgstr "მიმდინარე ინდექსის წაშლა"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Rename Current Index"
-msgstr ""
+msgstr "მიმდინარე ინდექსის გადარქმევა"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Save Current Index"
-msgstr ""
+msgstr "მიმდინარე ინდექსის შენახვა"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Reset Current Index"
-msgstr ""
+msgstr "მიმდინარე ინდექსის ჩამოყრა"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Index details"
-msgstr ""
+msgstr "ინდექსის დეტალები"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Index identifier:"
-msgstr ""
+msgstr "ინდექსის ამომცნობი:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Unique"
-msgstr ""
+msgstr "~უნიკალური"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Fields"
-msgstr ""
+msgstr "ველები"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "~დახურვა"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
+#, fuzzy
 msgid  "Sort order"
-msgstr ""
+msgstr "დახარისხების მიმართულება"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
+#, fuzzy
 msgid  "Index field"
-msgstr ""
+msgstr "ინდექსის ველი"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
-msgstr ""
+msgstr "მზარდი"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
-msgstr ""
+msgstr "კლებადი"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete the index '$name$'?"
-msgstr ""
+msgstr "დარწმუნებული ხართ, რომ გსურთ ინდექსი '$name$'-ის წაშლა?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
+#, fuzzy
 msgid  "index"
-msgstr ""
+msgstr "ინდექსი"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
+#, fuzzy
 msgid  "Save Index"
-msgstr ""
+msgstr "ინდექსის შენახვა"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The index must contain at least one field."
-msgstr ""
+msgstr "ინდექსი უნდა შეიცავდეს სულ მცირე ერთ ველს."
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Exit Index Design"
-msgstr ""
+msgstr "ინდექსის დიზაინის დატოვება"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to save the changes made to the current index?"
-msgstr ""
+msgstr "გნებავთ მიმდინარე ინდექსში შეტანილი ცვლილებების შენახვა?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
+#, fuzzy
 msgid  "There is already another index named \"$name$\"."
-msgstr ""
+msgstr "სხვა ინდექსი სახელად \"$name$\" უკვე არსებობს."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr ""
+msgstr "ინდექსის განმარტებაში ცხრილის სვეტი უნდა გამოჩნდეს მხოლოდ ერთხელ. თუმცა, თქვენ შეიყვანეთ სვეტი \"$name$\" ორჯერ."
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "~Parameters"
-msgstr ""
+msgstr "~პარამეტრები"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Value"
-msgstr ""
+msgstr "~მნიშვნელობა"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next"
-msgstr ""
+msgstr "~შემდეგი"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Parameter Input"
-msgstr ""
+msgstr "მუდმივი შეტანა"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
+#, fuzzy
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
-msgstr ""
+msgstr "ჩანაწერი ვერ კონვერტირდება ვარგის მნიშვნელობად \"$name$\" სვეტისთვის"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Standard Filter"
-msgstr ""
+msgstr "სტანდარტული ფილტრი"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "AND"
-msgstr ""
+msgstr "AND"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "OR"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
-msgstr ""
+msgstr "OR"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "ველის სახელი"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Condition"
-msgstr ""
+msgstr "მდგომარეობა"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "მნიშვნელობა"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
-msgstr ""
+msgstr "ოპერატორი"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Criteria"
-msgstr ""
+msgstr "კროტერიუმი"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
+#, fuzzy
 msgid  "- none -"
-msgstr ""
+msgstr "-არაფერი-"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
+#, fuzzy
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
+msgstr "=;<>;<;<=;>;>=;მსგავსი;განსხვავებული;ნული;ნული არა"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Sort Order"
-msgstr ""
+msgstr "სორტირების ბრძანება"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "ascending"
-msgstr ""
+msgstr "ზრდადი"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
+msgstr "კლებადი"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "ველის სახელი"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "and then"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
-msgid  "and then"
-msgstr ""
+msgstr "and then"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
-msgstr ""
+msgstr "ოპერატორი"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Order"
-msgstr ""
+msgstr "ბრძანება"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sort order"
-msgstr ""
+msgstr "დახარისხება"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
-msgstr ""
+msgstr "<არაფერი>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Relations"
-msgstr ""
+msgstr "კავშირები"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
-msgstr ""
+msgstr "შემავალი ცხრილები"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
-msgstr ""
+msgstr "შემავალი ველები"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Update options"
-msgstr ""
+msgstr "პარამეტრების განახლება"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No action"
-msgstr ""
+msgstr "~უმოქმედოდ"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Update cascade"
-msgstr ""
+msgstr "~კასკადის განახლება"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Set null"
-msgstr ""
+msgstr "~განულება"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Set ~default"
-msgstr ""
+msgstr "~საწყისზე დაყენება"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Delete options"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "~No action"
-msgstr ""
+msgstr "პარამეტრების წაშლა"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Delete ~cascade"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
-msgstr ""
+msgstr "კასკადის~წაშლა"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Base"
-msgstr ""
+msgstr "%PRODUCTNAME ბაზა"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Details"
-msgstr ""
+msgstr "დეტალები"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Error ~list:"
-msgstr ""
+msgstr "შეცდომათა ~სია:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description:"
-msgstr ""
+msgstr "~განმარტება:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "SQL Status"
-msgstr ""
+msgstr "SQL სტატუსი"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
+#, fuzzy
 msgid  "Error code"
-msgstr ""
+msgstr "შეცდომის კოდი"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "ამ შეცდომის ხშირი მიზეზი არის ასო-ნიშანთა წყობის შეუსაბამო პარამეტრები თქვენი მონაცემთა ბაზის ენისათვის. პარამეტრების შესამოწმებლად შეამოწმეთ რედაქტირება - მონაცემთა ბაზა - თვისებები."
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error"
-msgstr ""
+msgstr "შეცდომა"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning"
-msgstr ""
+msgstr "გაფრთხილება"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
+#, fuzzy
 msgid  "Information"
-msgstr ""
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
-msgid  "Details"
-msgstr ""
+msgstr "ინფორმაცია"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Text Connection Settings"
-msgstr ""
+msgstr "კავშირის პარამეტრები"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
+#, fuzzy
 msgid  "User Settings"
-msgstr ""
+msgstr "მომხმარებლის პარამეტრები"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
+#, fuzzy
 msgid  "User administration"
-msgstr ""
+msgstr "მომხმარებლის ადმინისტრაცია"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User selection"
-msgstr ""
+msgstr "მომხმარებლის შერჩევა"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Us~er:"
-msgstr ""
+msgstr "მომხმარე~ბელი:"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add User..."
-msgstr ""
+msgstr "~მომხმარებლის დამატება..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Change ~Password..."
-msgstr ""
+msgstr "პაროლის ~შეცვლა..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete User..."
-msgstr ""
+msgstr "~მომხმარებლის წაშლა..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Access rights for selected user"
-msgstr ""
+msgstr "მონიშნული მომხმარებლის წვდომის უფლებები"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you really want to delete the user?"
-msgstr ""
+msgstr "გნებავთ წაშალოთ მომხმარებელი?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support user administration."
-msgstr ""
+msgstr "მონაცემთა ბაზა არ ეთანხმება მომხმარებლის ადმინისტრაციას."
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User \"$name$:  $\""
-msgstr ""
+msgstr "მომხარებელი \"$name$:  $\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Old p~assword"
-msgstr ""
+msgstr "ძველი პ~აროლი"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "~პაროლი"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Confirm  password"
-msgstr ""
+msgstr "~პაროლის  დადასტურება"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Change Password"
-msgstr ""
+msgstr "პაროლის შეცვლა"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
+#, fuzzy
 msgid  "The passwords do not match. Please enter the password again."
-msgstr ""
+msgstr "პაროლი არ ემთხვევა. გთხოვთ შეიყვანეთ პაროლი ხელმეორედ."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Refresh"
-msgstr ""
+msgstr "განახლება"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~View Design"
-msgstr ""
+msgstr "ახალი ~ხედის დიზაინი"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~Table Design"
-msgstr ""
+msgstr "ახალი ~ხედის დიზაინი"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
+#, fuzzy
 msgid  "Query AutoPilot..."
-msgstr ""
+msgstr "მოთხოვნის ავტოპილოტი..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~Query (Design View)"
-msgstr ""
+msgstr "ახალი ~მოთხოვნის (ხედის დიზაინი)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Edit Query"
-msgstr ""
+msgstr "~მოთხოვნის რედაქტორება"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
+#, fuzzy
 msgid  "New Query (~SQL View)"
-msgstr ""
+msgstr "ახალი მოთხოვნა (~SQL ხედი)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
+#, fuzzy
 msgid  "Edit..."
-msgstr ""
+msgstr "რედაქტირება..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Column ~Width..."
-msgstr ""
+msgstr "სვეტის ~სიგანე..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
+#, fuzzy
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "ანგარიშის ოსტატი..."
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Form AutoPilot..."
-msgstr ""
+msgstr "ფორმის ავტოპილოტი..."
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
+#, fuzzy
 msgid  "System"
-msgstr ""
+msgstr "სისტემა"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
+#, fuzzy
 msgid  "Error during creation"
-msgstr ""
+msgstr "შეცდომა შექმნისას"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "ოპერაცია ვერ ტარდება, მოხდა მოულოდნელი შეცდომა."
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
 msgid  "The document \"$file$\" could not be opened."
 msgstr ""
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "ცხრილი არ იშლება, რადგან ბაზის კავშირი ამას ვერ უზრუნველყოფს."
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
+#, fuzzy
 msgid  "~All"
-msgstr ""
+msgstr "~ყველა"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
+#, fuzzy
 msgid  "Undo:"
-msgstr ""
+msgstr "უკანსვლა:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
+#, fuzzy
 msgid  "Redo:"
-msgstr ""
+msgstr "წინსვლა:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
-msgstr ""
+msgstr "სვეტი '#1'-სთვის შესაბამისი სვეტის ტიპი არ მოიძებნა."
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "ფაილი \"$file$\"არ არსებობს."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr ""
+msgstr "მონაცემთა წყაროსთან შეერთებისას აღმოჩენილია გაფრთხილებები.  მათ სანახავად დააჭირეთ \"$buttontext$\"-ს"
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "სახელი '$#$' უკვე არსებობს.\nგთხოვთ შეიყვანოთ სხვა სახელი."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Apply columns"
-msgstr ""
+msgstr "მიუსადაგე სვეტებს"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Type formatting"
-msgstr ""
+msgstr "ბეჭდვის ფორმატირება"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
+#, fuzzy
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "შემდეგი ველები უკვე დაყენებულია როგორც ძირითადი გასაღებები:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Assign columns"
-msgstr ""
+msgstr "მიანიჭე სვეტებს"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Copy RTF Table"
-msgstr ""
+msgstr "RTF ცხრილის კოპირება"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "~დახმარება"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Cancel"
-msgstr ""
+msgstr "~გაუქმება"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "< ~Back"
-msgstr ""
+msgstr "< ~უკან"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next>"
-msgstr ""
+msgstr "~შემდეგი>"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "C~reate"
-msgstr ""
+msgstr "შ~ექმნა"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Existing columns"
-msgstr ""
+msgstr "არსებული სვეტები"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Column information"
-msgstr ""
+msgstr "სვეტის ინფორმაცია"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Automatic type recognition"
-msgstr ""
+msgstr "ტიპის ავტოამოცნობა"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Lines (ma~x)"
-msgstr ""
+msgstr "ხაზები (მა~ქსიმუმი)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
-msgstr ""
+msgstr "ძირითადი კლავიში"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Source table: \n"
-msgstr ""
+msgstr "საწყისი ცხრილი: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "საბოლოო ცხრილი: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~All"
-msgstr ""
+msgstr "~ყველა"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Non~e"
-msgstr ""
+msgstr "არ~აფერი"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ta~ble name"
-msgstr ""
+msgstr "ც~ხრილის სახელი"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "პარამეტრები"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "De~finition and data"
-msgstr ""
+msgstr "~განსაზღვრება და მონაცემი"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Def~inition"
-msgstr ""
+msgstr "გა~ნსაზღვრება"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~s table view"
-msgstr ""
+msgstr "ცხრ~ილის სახით"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Append ~data"
-msgstr ""
+msgstr "მონაცემთა ~დამატება"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
 msgstr ""
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Crea~te primary key"
-msgstr ""
+msgstr "შექ~მენი ძირითადი გასაღები"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "სახელი"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
+#, fuzzy
 msgid  "Copy table"
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
-msgid  "Copy table"
-msgstr ""
+msgstr "ცხრილის კოპირება"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "This table name is not valid in the current database."
-msgstr ""
+msgstr "ამ მონაცემთა ბაზაში ეს ცხრილის სახელი არასწორია."
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "არსებულ ცხრილში მონაცემთა ჩასამატებლად პირველ გვერდზე აირჩიე ვარიანტი 'მონაცემთა დამატება'."
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Please change the table name. It is too long."
-msgstr ""
+msgstr "ცხრილის სახელი დაშვებულზე გრძელია, გთხოვთ შეცვალოთ."
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "პარამეტრები"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Type"
-msgstr ""
+msgstr "~ტიპი"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Inner join"
-msgstr ""
+msgstr "შიდა კავშირი"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left join"
-msgstr ""
+msgstr "მარცხენა კავშირი"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right join"
-msgstr ""
+msgstr "მარჯვენა კავშირი"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Full (outer) join"
-msgstr ""
+msgstr "სრული (გარე) კავშირი"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
 msgid  "Cross join"
@@ -2984,32 +3341,39 @@ msgid  "Natural"
 msgstr ""
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
-msgstr ""
+msgstr "შემოტანილი ცხრილები"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
-msgstr ""
+msgstr "ჩართული ველები"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Join Properties"
-msgstr ""
+msgstr "კავშირის პარამეტრები"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
+#, fuzzy
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "გთხოვთ, გაითვალისწინოთ, რომ ზოგიერთი მონაცემთა ბაზა მხარს არ უჭერს ამ ტიპის კავშირს."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "შეიცავს მხოლოდ იმ ჩანაწერებს  რომელთან დაკავშირებულ ველთა შინაარსიც იდენტურია ორივე ცხრილისათვის.  "
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "შეიცავს ყველა ჩანაწერს '%1' ცხრილიდან, და მხოლოდ იმ ჩანაწერებს '%2' ცხრილიდან, სადაც დაკავშირებულ ველებში მნიშვნელობები შესაბამისია."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "შეიცავს ყველა ჩანაწერს '%1'-დან და '%2'-დან."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
@@ -3020,224 +3384,277 @@ msgid  "Contains only one column for each pair of equally-named columns from '%1
 msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
+#, fuzzy
 msgid  "Add Table Window"
-msgstr ""
+msgstr "ცხრილის ფანჯრის დამატება"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Move table window"
-msgstr ""
+msgstr "ცხრილის ფანჯრის გადატანა"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Insert Join"
-msgstr ""
+msgstr "კავშირის დამატება"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Delete Join"
-msgstr ""
+msgstr "კავშირის წაშლა"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Resize table window"
-msgstr ""
+msgstr "ცხრილის ფანჯრის ზომის შეცვლა"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Column"
-msgstr ""
+msgstr "სვეტის წაშლა"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
+#, fuzzy
 msgid  "Move column"
-msgstr ""
+msgstr "სვეტის გადატანა"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
+#, fuzzy
 msgid  "Add Column"
-msgstr ""
+msgstr "სვეტის დამატება"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
-msgstr ""
+msgstr "არასწორი გამოსახულება, ცხრილი '$name$' არ არსებობს."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr ""
+msgstr "არასწორი გამოსახულება, ცხრილის სახელი '$name$' არ არსებობს."
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "მოთხოვნა ფარავს #num# ცხრილს. არჩეული მონაცემთა ტიპის ყოველ დებულებაზე შეუძლია დაამუშაოს მაქსიმუმ #maxnum# ცხრილი."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Table Window"
-msgstr ""
+msgstr "ცხრილის ფანჯრის წაშლა"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
+#, fuzzy
 msgid  "Edit Column Description"
-msgstr ""
+msgstr "სვეტის აღწერილობის რედაქტირება"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Adjust column width"
-msgstr ""
+msgstr "სვეტის სიგანის გასწორება"
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
+#, fuzzy
 msgid  "(not sorted);ascending;descending"
-msgstr ""
+msgstr "(არასორტირებული): ზრდადობით; კლებადობით"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
+#, fuzzy
 msgid  "(no function);Group"
-msgstr ""
+msgstr "(ფუნქციის გარეშე);ჯგუფი"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
+#, fuzzy
 msgid  "(no table)"
-msgstr ""
+msgstr "(ცხრლის გარეშე)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
-msgstr ""
+msgstr "მონაცემთა ბაზა მხარს უჭერს მხოლოდ ხილულ ველებს."
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
+#, fuzzy
 msgid  "Functions"
-msgstr ""
+msgstr "ფუნქციები"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Table Name"
-msgstr ""
+msgstr "ცხრილის სახელი"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Alias"
-msgstr ""
+msgstr "მეტსახელი"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Distinct Values"
-msgstr ""
+msgstr "ცალსახა მნიშვნელობები"
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "ველი;მეტსახელი;ცხრილი;სორტირება;ხილული;ფუნქცია;კრიტერიუმი;ან;ან"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
+#, fuzzy
 msgid  "There are too many columns."
-msgstr ""
+msgstr "ზედმეტად ბევრი სვეტია."
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
-msgstr ""
+msgstr "პირობა არ აქტივირდება ველზე [*]"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement created is too long."
-msgstr ""
+msgstr "შექმნილი SQL მოთხოვნა ზედმეტად გრძელია."
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
+#, fuzzy
 msgid  "Query is too complex"
-msgstr ""
+msgstr "მოთხოვნა ზედმეტად რთულია"
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
+#, fuzzy
 msgid  "Nothing has been selected."
-msgstr ""
+msgstr "მონიშნული არაფერი არ არის."
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
+#, fuzzy
 msgid  "Too many search criteria"
-msgstr ""
+msgstr "ძალიან ბევრი საძიებო კრიტერიუმი"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
+#, fuzzy
 msgid  "SQL syntax error"
-msgstr ""
+msgstr "SQL სინტაქსური შეცდომა"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
-msgstr ""
+msgstr "[*] ვერ გამოიყენება სორტირების კრიტერიუმად."
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "There are too many tables."
-msgstr ""
+msgstr "ძალიან ბევრი ცხრილია."
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "ბრძანება არ გააქტიურდება მონაცემთა ბაზაში SQL დიალექტზე გაკეთებული მოთხოვნისას."
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Field name not found or not unique"
-msgstr ""
+msgstr "ველის სახელი ვერ მოიძებნა ან უნიკალური არ არის"
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Join could not be processed"
-msgstr ""
+msgstr "კავშირი ვერ გრძელდება"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Syntax error in SQL statement"
-msgstr ""
+msgstr "სინტაქსური შეცდომა SQL განაცხადში"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "This database does not support table views."
-msgstr ""
+msgstr "მონაცემთა ბაზა მხარს არ უჭერს ცხრილების ნახვას."
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support altering of existing table views."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to create a query instead?"
-msgstr ""
+msgstr "გსურთ სანაცვლოდ მოთხოვნის შექმნა?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "No query could be created."
-msgstr ""
+msgstr "მოთხოვნა ვერ წარმოიქმნა."
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
-msgstr ""
+msgstr "მოთხოვნა ვერ წარმოიქმნა რადგან ველები არ არის მონიშნული."
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "შესაბამისი მონაცემთა წყარო წაიშალა. თუმცა ამ მონაცემთა წყაროსთან დაკავშირებული მონაცემების დამახსოვრება ვერ მოხერხდა."
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The column '$name$' is unknown."
-msgstr ""
+msgstr "სვეტი '$name$' უცნობია."
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
+#, fuzzy
 msgid  "Columns can only be compared using '='."
-msgstr ""
+msgstr "სვეტების შედარება მხოლოდ '='-ის გამოყენებით შეიძლება."
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
-msgstr ""
+msgstr "'LIKE'-ის წინ უნდა გამოიყენოთ სვეტის სახელი."
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "სვეტის პოვნა შეუძლებელია. გახსოვდეთ, რომ მონაცემთა ბაზა რეგისტრისადმი მგრშნობიარეა."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr ""
+msgstr " - %PRODUCTNAME ბაზა: მოთხოვნის შექმნა"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
-msgstr ""
+msgstr " - %PRODUCTNAME ბაზა: ნახვა"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ შეიცვალა.\nგსურთ ცვლილებათა შენახვა?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
 msgid  "$object$ is based on an SQL command which could not be parsed."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr ""
+msgstr "მოთხოვნა გაიხსნება SQL -ის წარმოდგენაში."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "The table view"
-msgstr ""
+msgstr "ცხრილის ნახვა"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "The query"
-msgstr ""
+msgstr "მოთხოვნა"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement"
-msgstr ""
+msgstr "SQL განაცხადი"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "მოთხოვნა არ ქმნის შედეგთა ნაკრებას, შედეგად, იგი ვერ იქნება სხვა მოთხოვნის ნაწილი. "
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
@@ -3256,312 +3673,357 @@ msgid  "Create..."
 msgstr ""
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
-msgstr ""
+msgstr " - %PRODUCTNAME ბაზა: კავშირის დიზაინი"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support relations."
-msgstr ""
-
-#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "მონაცემთა ბაზა ვერ უზრუნველყოფს კავშირს."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "როდესაც თქვენ შლით შესაბამის ცხრილს, ყველა შესაბამისი კავშირი წაიშლება. გავაგრძელო?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "უცნობი;ტექსტი;ნომერი;თარიღი/დრო;თარიღი;დრო;დიახ/არა;ვალუტა;უწყება;მთვლელი;ნახატი;ტექსტი (ფიქსირება);ათობითი;ორობითი (ფიქსირება);ორობითი;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "ძირითადი გასაღების ჩასმა/ამოღება"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "დიახ"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "არა"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
-msgstr ""
+msgstr "ზრდადი"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
-msgstr ""
+msgstr "კლებადობი"
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
-msgstr ""
+msgstr "<არცერთი>"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "ველის სახელი"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field Name"
-msgstr ""
+msgstr "ველის სახელი"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field ~type"
-msgstr ""
+msgstr "ველის ტიპი"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field Type"
-msgstr ""
+msgstr "ველის ტიპი"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Field length"
-msgstr ""
+msgstr "ველის სიგრძე"
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "განმარტება"
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "Column Description"
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
-msgstr ""
+msgstr "საჭიროა შეყვანა"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "~AutoValue"
-msgstr ""
+msgstr "~ავტომნიშვნელობა"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Field Properties"
-msgstr ""
+msgstr "ველის თვისებები"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ზოგადი"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description:"
-msgstr ""
+msgstr "განმარტება:"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Table properties"
-msgstr ""
+msgstr "ცხრილის თვისებები"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered is not a list element. "
-msgstr ""
+msgstr "თქვენს მიერ შეყვანილი ტექსტი არ არის ელემენტების სიაში. "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert Rows"
-msgstr ""
+msgstr "სტრქონის ჩასმა"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
-msgstr ""
+msgstr "პირველადი გასაღები"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Modify cell"
-msgstr ""
+msgstr "უჯრის შეცვლა"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
+#, fuzzy
 msgid  "Delete row"
-msgstr ""
+msgstr "სტრიქონის წაშლია"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Modify field type"
-msgstr ""
+msgstr "ველის ტიპის მონიფიცირება"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert row"
-msgstr ""
+msgstr "სტრიქონის ჩასმა"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert new row"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "ჩასვით ახალი სტრიქონი"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "~Default value"
-msgstr ""
+msgstr "~სტანდარტული მნიშვნელობა"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "~Entry required"
-msgstr ""
+msgstr "~სეიყვანეთ მოთხოვნა"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "~Length"
-msgstr ""
+msgstr "~სიგრძე"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "~Type"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
-msgid  "~Length"
-msgstr ""
+msgstr "~ტიპი"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Decimal ~places"
-msgstr ""
+msgstr "წილადის ~მდებარეობა"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format example"
-msgstr ""
+msgstr "მაგალითის ფორმატირება"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "მონიშნეთ მნიშვნელობა რომელიც გამოჩნდება ყველა ახალ ჩანაწერში როგორც საწყისი.\nთუ ველს არ გააჩნია საწყისი მნიშვნელობა, მონიშნე ცარიელი სტრიქონი."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "შეიყვანეთ საწყისი მნიშვნელობა ამ ველისათვის.\n\nთქვენ როდესაც მოგვიანებით შეიყვანთ თარიღს ცხრილში, ეს მნიშვენლობა გამოყენებული იქნება ყოელ ახალ ჩანაწერშიმონიშნული ველისათვის. ეს უნდა იყოს, იმოტომ რომ, შეესაბამებოდეს ცხრილის უჯრას, რომელიც მითიებული უნდა იყოს ქვემოთ."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "თუ ველი არ შეიცავს NULL მნიშვნელობას, გააქტიურეთ ეს ოპცა, i.e. მომხმარებელმა ყოველთვის უნდა შეიყვანოს მონაცემი."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
-msgstr ""
+msgstr "შეიყვანეთ ტექსტის სიგრძის მაქსიმალური ნებართვა."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Enter the number format."
-msgstr ""
+msgstr "შეიყვანეთ ფორმატის ნომერი."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "გაითვალისწინეთ რომ მონაცემის სიგრძე შეილება იქნეს ამ ელშ.\n\nთუ აობიი ველი, მას შემდეგ რაც შევა მაქსიმალური სიგრძის რიცხვი, თუ ორობითი ველი, შემდეგ სიგრძე მონაცემის ბლოკის.\nმნიშვნელობა ატომატრად იქნება შესწორებული თუ ის გადააჭარბებს მაქსიმუმს ამ მონაცემთა ბაზისათვის."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "განსაზღვრეთ ათობიი რიცხვის ადგილი ნებადართულ ველში."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "ეს ის ადგილია სადაც გამოჩნდება მონაცემი მიმდინარე ფორმატში (გამოიყენეთ მარჯვენა ღილაკი ფორმატირების მოდიფიკაციისათვის)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "ეს ის ადგილია სადაც თქვენ განსაზღვრავთ მონაცემის გამოტანის ფორმატს."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "აირჩიეთ თუ ველი შეიცავს ავტო-ზრდადობის მნიშვნელობას.\n\nთქვენ არ შეგიძლიათ შეიყვანოთ მონაცემი ამ ტიპის ველში. არსობრივი მნიშვნელობა იქნება ავტომატურად მინიჭებული ახალი ჩანაწერი (გამომდინარე წინა ჩანაწერის მნიშვნელობიდან)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
-msgstr ""
+msgstr "ცხრილის შენახვა ვერ ხერხდება, რადგან სვეტის სახელი \"$column$\" მინიჭებულია ორჯერ."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgstr "სვეტი \"$column$\" ეკუთვსნის ძირითად გასაღებს. თუ სვეტი წაიშლება, ძირითადი გასაღებიც წაიშლება. გსურთ გაგრძელება?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Primary Key Affected"
-msgstr ""
+msgstr "საწყისი გასაღები გაუსწორებელი"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Column"
-msgstr ""
+msgstr "სვეტი"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
+#, fuzzy
 msgid  "Continue anyway?"
-msgstr ""
+msgstr "მაინც გავაგრძელო?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning!"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "გაფრტხილება!"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "ცხრილი ვერ იქნა შენახული მონაცემთა ბაზასთან კავშირის პრობლემის გამო."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
-
-#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "ცხრილის ფილტრი ვერ ალაგებს მონაცემებს რადგან მონაცემთა წყარო იქნა წაშლილი."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
+#, fuzzy
 msgid  "No primary key"
-msgstr ""
+msgstr "არ არის საწყისი გასაღები"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
+#, fuzzy
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "მონაცემთა ბაზაში ჩანაწერის გასაკეთებლად მოითხოება უნიკალური ინდექსი ან საწყისი გასაღები.\nთქვენ შეგიძლიათ შეიყვანოთ მონაცემები ამ ცხრილში როცა ერთი ან ორი სტრუქტურლი პირობები დაემთხვევა.\n\nგსურთ საწყის გასაღების შექმნა ეხლა?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
-msgstr ""
+msgstr " - %PRODUCTNAME ბაზე: ცხრილის დიზაინი"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgstr "სვეტი \"$column$\" ვერ შეიცვლება. წაიშალოს სვეტი და დაედოს ახალი ფორმატი?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error while saving the table design"
-msgstr ""
+msgstr "შეცდომა ცხრილის დიზაინის შენახვისას"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
-msgstr ""
+msgstr "სვეტი $column$ ვერ წაიშალა."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "თქვენ ცდილობთ წაშალოთ ყველა სვეტი ცხრილში. ცხრილი ვერ იარსებებს სვეტის გარეშე. ცხრილი შეიდზლება ამოშლილი იქნეს მონაცემთა ბაზიდან. თუ არა, ცხრილი დარჩება შეუცვლელი."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "A~uto-increment statement"
-msgstr ""
+msgstr "ა~ვტო-ზრდადი ბრძანება"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "შეუყვანეთ SQL ბრძანება ავტო-ზრდადი ველისათვის.\n\nეს ბრძანება პირდაპირ იქნება გადაადგილებული მონაცემთა ბაზაში როცა შეიქმნება ახალი ცხრილი."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "არანაირი ტიპის ინფორმაცია არ ადგა მონაცემთა ბაზიდან.\nცხრილის დიზაინის რეჟიმი ამ მონაცემთა წყაროსათვის არ არის ხელმისაწვდომი."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "change field name"
-msgstr ""
+msgstr "ველის სახელის შეცვლა"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "change field type"
-msgstr ""
+msgstr "ველის ტიპის შეცვლა"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "change field description"
-msgstr ""
+msgstr "ველის განმარტების შეცვლა"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
+#, fuzzy
 msgid  "change field attribute"
-msgstr ""
+msgstr "ველის ატრიბუტების შეცვლა"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support views."
@@ -3612,5 +4074,6 @@ msgid  "~Remember password until end of session"
 msgstr ""
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
+#, fuzzy
 msgid  "~Remember password"
-msgstr ""
+msgstr "~პაროლის დამახსოვრება"

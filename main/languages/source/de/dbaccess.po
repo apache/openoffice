@@ -33,3584 +33,3432 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
 msgid  "Tried to open the table $name$."
-msgstr ""
+msgstr "Es wurde versucht, die Tabelle $name$ zu öffnen."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
 msgid  "No connection could be established."
-msgstr ""
+msgstr "Es konnte keine Verbindung erstellt werden."
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "Die Tabelle $name$ existiert bereits. Sie ist nicht sichtbar, da sie ausgefiltert wurde."
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "Sie haben keinen Schreibzugriff auf die Konfigurationsdaten des Objektes."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "Die Verbindung zur externen Datenquelle konnte nicht hergestellt werden. Ein unbekannter Fehler trat auf. Wahrscheinlich ist der Treiber fehlerhaft."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "Die Verbindung zur externen Datenquelle konnte nicht hergestellt werden. Es wurde kein SDBC-Treiber für die angegebene URL gefunden."
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "Die Verbindung zur externen Datenquelle konnte nicht hergestellt werden. Der SDBC-Treiber-Manager konnte nicht geladen werden."
 
 #: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Formular"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Bericht"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "Die Datenquelle wurde nicht gespeichert. Bitte verwenden Sie die Schnittstelle XStorable, um die Datenquelle zu speichern."
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Der gesetzte Befehl ist kein SELECT-Befehl.\nEs sind nur Abfragen erlaubt."
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
 msgid  "No values were modified."
-msgstr ""
+msgstr "Es wurden keine Werte verändert."
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Es konnten keine Werte eingefügt werden. Die XRowUpdate-Schnittstelle wird nicht vom ResultSet unterstützt."
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Es konnten keine Werte eingefügt werden. Die XResultSetUpdate-Schnittstelle wird nicht vom ResultSet unterstützt."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
 msgid  "Values could not be modified, due to a missing condition statement."
-msgstr ""
+msgstr "Die Werte konnten nicht verändert, auf Grund einer fehlenden Bedingung."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
 msgid  "The adding of columns is not supported."
-msgstr ""
+msgstr "Das Hinzufügen von Spalten wird nicht unterstützt."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
 msgid  "The dropping of columns is not supported."
-msgstr ""
+msgstr "Das Löschen von Spalten wird nicht unterstützt."
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
 msgid  "The WHERE condition could not be created for the primary key."
-msgstr ""
+msgstr "Es konnte keine WHERE-Bedingung für den Primärschlüssel erstellt werden."
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
 msgid  "The column does not support the property '%value'."
-msgstr ""
+msgstr "Die Spalte unterstützt die Eigenschaft '%value' nicht."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
 msgid  "The column is not searchable!"
-msgstr ""
+msgstr "In dieser Spalte kann nicht gesucht werden."
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
 msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
-msgstr ""
+msgstr "Der Wert der Spalten ist nicht vom Type Sequence<sal_Int8>."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
 msgid  "The column is not valid."
-msgstr ""
+msgstr "Die Spalte ist nicht gültig."
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
 msgid  "The column '%name' must be visible as a column."
-msgstr ""
+msgstr "Die Spalte '%name' muss als Spalte sichtbar sein."
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
 msgid  "The interface XQueriesSupplier is not available."
-msgstr ""
+msgstr "Die Schnittstelle XQueriesSupplier ist nicht verfügbar."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
 msgid  "The driver does not support this function."
-msgstr ""
+msgstr "Der Treiber unterstützt diese Funktion nicht."
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
 msgid  "An 'absolute(0)' call is not allowed."
-msgstr ""
+msgstr "Ein 'absolute(0)' Aufruf ist nicht erlaubt."
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
 msgid  "Relative positioning is not allowed in this state."
-msgstr ""
+msgstr "Eine relative Positionierung ist in diesem Status nicht erlaubt."
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "Eine Zeile kann nicht aktualisiert werden, wenn das ResultSet hinter der letzten Zeile steht."
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "Das Einfügen einer neuen Zeile ist nicht erlaubt, wenn das ResultSet sich nicht vorher auf die Einfügezeile bewegt."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
 msgid  "A row cannot be modified in this state"
-msgstr ""
+msgstr "Eine Zeile kann in diesem Status nicht verändert werden."
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
 msgid  "A row cannot be deleted in this state."
-msgstr ""
+msgstr "Eine Zeile kann in diesem Status nicht gelöscht werden."
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
 msgid  "The driver does not support table renaming."
-msgstr ""
+msgstr "Der Treiber unterstützt das Umbenennen einer Tabelle nicht."
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions."
-msgstr ""
+msgstr "Der Treiber unterstützt das Verändern einer Spaltendefinition nicht."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "Der Treiber unterstützt das Verändern einer Spaltendefinition, anhand des Namens, nicht."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "Der Treiber unterstützt das Verändern einer Spaltendefinition, anhand des Indexes, nicht."
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Die Datei \"$file$\" existiert nicht."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no table named \"$table$\"."
-msgstr ""
+msgstr "Es existiert keine Tabelle \"$table$\"."
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no query named \"$table$\"."
-msgstr ""
+msgstr "Es existiert keine Abfrage mit Namen \"$table$\"."
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "Die Datenbank enthält Tabellen, deren Namen mit den Namen von existierenden Abfragen kollidieren. Um alle Tabellen und Abfragen voll nutzen zu können, stellen Sie sicher, dass sie unterschiedliche Namen haben."
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "Das SQL-Kommando, welches zu diesem Fehler führte, ist:\n\n$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The SQL command does not describe a result set."
-msgstr ""
+msgstr "Der SQL-Befehl beschreibt keine Ergebnismenge."
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
 msgid  "The name must not be empty."
-msgstr ""
+msgstr "Der Name darf nicht leer sein."
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
 msgid  "The container cannot contain NULL objects."
-msgstr ""
+msgstr "Der Container kann keine NULL-Objekte enthalten."
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There already is an object with the given name."
-msgstr ""
+msgstr "Es gibt bereits ein Objekt mit dem angegebenen Namen."
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
 msgid  "This object cannot be part of this container."
-msgstr ""
+msgstr "Dieses Objekt kann nicht Bestandteil dieses Containers sein."
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
 msgid  "The object already is, with a different name, part of the container."
-msgstr ""
+msgstr "Das Objekt ist unter einem anderen Namen bereits Bestandteil des Containers."
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
 msgid  "Unable to find the document '$name$'."
-msgstr ""
+msgstr "Dokument '$name$' konnte nicht gefunden werden."
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "Das Dokument konnte nicht nach  $location$ gespeichert werden:\n$message$"
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "Fehler beim Zugriff auf die Datenquelle '$name$':\n$error$"
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
 msgid  "There exists no folder named \"$folder$\"."
-msgstr ""
+msgstr "Es existiert kein Verzeichnis \"$folder$\"."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
 msgid  "Cannot delete the before-first or after-last row."
-msgstr ""
+msgstr "Löschen vor der ersten oder nach der letzten Zeile ist nicht möglich."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.STRING.TEXT
 msgid  "Cannot delete the insert-row."
-msgstr ""
+msgstr "Löschen der Einfügezeile ist nicht möglich."
 
 #: core/resource/strings.src#RID_STR_RESULT_IS_READONLY.STRING.TEXT
 msgid  "Result set is read only."
-msgstr ""
+msgstr "Das Result-Set ist nur lesbar."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
 msgid  "DELETE privilege not available."
-msgstr ""
+msgstr "Kein DELETE-Recht verfügbar."
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "Current row is already deleted."
-msgstr ""
+msgstr "Die aktuelle Zeile wurde bereits gelöscht."
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
 msgid  "Current row could not be updated."
-msgstr ""
+msgstr "Die aktuelle Zeile konnte nicht aktualisiert werden"
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
 msgid  "INSERT privilege not available."
-msgstr ""
+msgstr "Kein INSERT-Recht verfügbar."
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
 msgid  "Internal error: no statement object provided by the database driver."
-msgstr ""
+msgstr "Interner Fehler: der Datenbanktreiber stellt kein Statement-Objekt zur Verfügung."
 
 #: core/resource/strings.src#RID_STR_EXPRESSION1.STRING.TEXT
 msgid  "Expression1"
-msgstr ""
+msgstr "Ausdruck1"
 
 #: core/resource/strings.src#RID_STR_NO_SQL_COMMAND.STRING.TEXT
 msgid  "No SQL command was provided."
-msgstr ""
+msgstr "Es wurde kein SQL-Kommando vorbereitet."
 
 #: core/resource/strings.src#RID_STR_INVALID_INDEX.STRING.TEXT
 msgid  "Invalid column index."
-msgstr ""
+msgstr "Ungültiger Spaltenindex."
 
 #: core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.STRING.TEXT
 msgid  "Invalid cursor state."
-msgstr ""
+msgstr "Ungültiger Cursorstatus."
 
 #: core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.STRING.TEXT
 msgid  "The cursor points to before the first or after the last row."
-msgstr ""
+msgstr "Der Cursor zeigt vor die erste bzw. hinter die letzte Zeile."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.STRING.TEXT
 msgid  "The rows before the first and after the last row don't have a bookmark."
-msgstr ""
+msgstr "Zeilen vor der ersten bzw. nach der letzten Zeile haben kein Lesezeichen."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.STRING.TEXT
 msgid  "The current row is deleted, and thus doesn't have a bookmark."
-msgstr ""
+msgstr "Die aktuelle Zeile wurde gelöscht und hat deshalb kein Lesezeichen."
 
 #: core/resource/strings.src#RID_STR_NO_EMBEDDING.STRING.TEXT
 msgid  "Embedding of database documents is not supported."
-msgstr ""
+msgstr "Das Einbetten von Datenbankdokumenten wird nicht unterstützt."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
 msgid  "A connection for the following URL was requested \"$name$\"."
-msgstr ""
+msgstr "Es wurde eine Verbindung zur URL \"$name$\" angefordert."
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
 msgid  "The extension is not installed."
-msgstr ""
+msgstr "Die Extension ist nicht installiert."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database ~name"
-msgstr ""
+msgstr "Datenbank~name"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
 msgid  "User settings"
-msgstr ""
+msgstr "Benutzereinstellungen"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
 msgid  "~Control user"
-msgstr ""
+msgstr "~Verwaltungsuser"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
 msgid  "~Administrator"
-msgstr ""
+msgstr "~Administrator"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
 msgid  "~Domain user"
-msgstr ""
+msgstr "~Domain user"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
 msgid  "P~assword..."
-msgstr ""
+msgstr "Kennwo~rt..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
 msgid  "~Password..."
-msgstr ""
+msgstr "K~ennwort..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
 msgid  "Passwo~rd..."
-msgstr ""
+msgstr "Kennwo~rt..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
 msgid  "~Backup file"
-msgstr ""
+msgstr "~Sicherungsdatei"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
 msgid  "..."
-msgstr ""
+msgstr "..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
 msgid  "Database settings"
-msgstr ""
+msgstr "Datenbank Einstellungen"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE"
-msgstr ""
+msgstr "S~YSDEVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "TRANSACTI~ONLOG"
-msgstr ""
+msgstr "TRANSACTI~ONLOG"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE"
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
+msgstr "DATAD~EVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
 msgid  "Transaction ~file (MB)"
-msgstr ""
+msgstr "Transaktionsdatei (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data~base size (MB)"
-msgstr ""
+msgstr "Daten~bankgröße (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "Daten~puffergröße (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
 msgid  "Backup file information"
-msgstr ""
+msgstr "Informationen zur Sicherungsdatei"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
 msgid  "Create New Adabas D Database"
-msgstr ""
+msgstr "Neue Adabas D-Datenbank erstellen"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
 msgid  "No entry could be written in the configuration file."
-msgstr ""
+msgstr "In die Konfigurationsdatei konnte kein Eintrag geschrieben werden."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
 msgid  "An error occurred as the DB files were being created."
-msgstr ""
+msgstr "Beim Erstellen der Datenbankdateien ist ein Fehler aufgetreten."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
 msgid  "An error occurred as the system tables were being created."
-msgstr ""
+msgstr "Beim Erzeugen der Systemtabellen ist ein Fehler aufgetreten."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
 msgid  "The backup file entered does not exist."
-msgstr ""
+msgstr "Die angegebene Sicherungsdatei existiert nicht."
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
-msgstr ""
+msgstr "Der Dateiname (inklusive Pfad) darf nicht länger als \\'#\\' Zeichen sein."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
 msgid  "The administrator and the control user cannot have the same name!"
-msgstr ""
+msgstr "Administrator und Verwaltungsuser dürfen nicht den gleichen Namen haben!"
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
 msgid  "No name has been entered for the $name$ file!"
-msgstr ""
+msgstr "Für die $name$-Datei wurde kein Name angegeben!"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
 msgid  "You have to have administrator rights to create a new database!"
-msgstr ""
+msgstr "Sie benötigen Administratorrechte, um eine neue Datenbank anzulegen."
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
 msgid  "The specified file name or directory does not exist."
-msgstr ""
+msgstr "Die angegebene Datei oder das Verzeichnis existiert nicht."
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
 msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Es kann keine neue Datenbank angelegt werden.\nPrüfen Sie Ihre Adabas D-Installation, insbesondere die Variablen \"DBROOT\" und \"DBWORK\"."
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
+msgstr "Warnung!"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
 msgid  "Creating database files."
-msgstr ""
+msgstr "Erzeuge Datenbankdateien."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
 msgid  "Creating database configuration file."
-msgstr ""
+msgstr "Erzeuge Datenbankkonfigurationsdateien."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
 msgid  "Starting database for the first time."
-msgstr ""
+msgstr "Die Datenbank wird zum ersten Mal gestartet."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
 msgid  "The name entered already exists."
-msgstr ""
+msgstr "Der angegebene Name existiert bereits."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "Die Standardnamen für die Datenbankdateien konnten nicht gesetzt werden. Die Gesamtlänge beträgt mehr als 40 Zeichen."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "Die Standardnamen der Datenbankdateien konnten nicht gesetzt werden. Schreibzugriff nicht möglich."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Die aktuelle Datenbank muss konvertiert werden. Geben Sie den Namen des Verwaltungsusers und das Passwort ein."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "Lerezeichen sind im Kennwort nicht zulässig. Bitte geben Sie ein neues Kennwort ein."
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
 msgid  "Database Document Macro Migration"
-msgstr ""
+msgstr "Datenbankmakro-Migration"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
 msgid  "Prepare"
-msgstr ""
+msgstr "Vorbereiten"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
 msgid  "Backup Document"
-msgstr ""
+msgstr "Sicherungskopie erstellen"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
 msgid  "Migrate"
-msgstr ""
+msgstr "Migrieren"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr ""
+msgstr "Zusammenfassung"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Welcome to the Database Macro Migration Wizard"
-msgstr ""
+msgstr "Willkommen beim Migrationsassistenten für Datenbankmakros"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Dieser Assistent führt Sie durch die Migration Ihrer Makros.\n\nWährend der Migration werden alle Makros, die bisher in Formularen und Berichten eingebettet waren, in das Datenbankdokument verschoben. Falls nötig, werden Bibliotheken dabei umbenannt.\n\nSollten Ihre Formulare und Berichte Verweise auf diese Makros enthalten, werden diese soweit möglich angepasst.\n\nAlle Formulare, Berichte, Abfragen und Tabellen müssen geschlossen werden, bevor die Migration gestartet werden kann. Klicken Sie auf 'Weiter', um die Objekte zu schließen."
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "Einige Objekte konnten nicht geschlossen werden. Bitte schließen Sie diese manuell und starten den Assistenten danach erneut."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Backup your Document"
-msgstr ""
+msgstr "Sicherungskopie des Dokuments anlegen"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "Um den Stand vor der Migration wiederherstellen zu können, wird eine Sicherungskopie des Datenbankdokuments an einer Stelle Ihrer Wahl angelegt. Alle Änderungen des Assistenten werden nur am Originaldokument vorgenommen, die Sicherungskopie bleibt unverändert."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
 msgid  "Save To:"
-msgstr ""
+msgstr "Speichern unter:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
 msgid  "Browse ..."
-msgstr ""
+msgstr "Durchsuchen..."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Drücken Sie 'Weiter', um eine Sicherungskopie Ihres Dokuments anzulegen und die Migration zu starten."
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Migration Progress"
-msgstr ""
+msgstr "Migrationsfortschritt"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "Das Datenbankdokument enthält $forms$ Formular(e) und $reports$ Bericht(e), die gerade verarbeitet werden:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
 msgid  "Current object:"
-msgstr ""
+msgstr "Aktuelles Objekt:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Current progress:"
-msgstr ""
+msgstr "Aktueller Fortschritt:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Overall progress:"
-msgstr ""
+msgstr "Gesamtfortschritt:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
 msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "Dokument $current$ von $overall$"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
-
-#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Summary"
-msgstr ""
+msgstr "Alle Formulare und Berichte wurden erfolgreich verarbeitet. Klicken Sie auf 'Weiter', um eine Zusammenfassung anzuzeigen."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "Die Migration war erfolgreich. Unten sehen Sie ein Protokoll der Aktionen, die für Ihr Dokument ausgeführt wurden."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "Die Migration war nicht erfolgreich. Lesen Sie das Migrationsprotokoll für weitere Details."
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
 msgid  "Form '$name$'"
-msgstr ""
+msgstr "Formular '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
 msgid  "Report '$name$'"
-msgstr ""
-
-#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
-msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "Bericht '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
 msgid  "Database Document"
-msgstr ""
+msgstr "Datenbankdokument"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
 msgid  "saved copy to $location$"
-msgstr ""
+msgstr "Kopie nach $location$ gespeichert"
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
 msgid  "migrated $type$ library '$old$' to '$new$'"
-msgstr ""
+msgstr "$type$-Bibliothek '$old$' nach '$new$' migriert"
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
 msgid  "$type$ library '$library$'"
-msgstr ""
+msgstr "$type$-Bibliothek '$library$'"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
 msgid  "migrating libraries ..."
-msgstr ""
+msgstr "migriere Bibliotheken ..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic"
-msgstr ""
+msgstr "%PRODUCTNAME Basic"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
 msgid  "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
 msgid  "BeanShell"
-msgstr ""
+msgstr "BeanShell"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
 msgid  "Java"
-msgstr ""
+msgstr "Java"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
 msgid  "Python"
-msgstr ""
+msgstr "Python"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
 msgid  "dialog"
-msgstr ""
+msgstr "Dialog"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
 msgid  "Error(s)"
-msgstr ""
+msgstr "Fehler"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
 msgid  "Warnings"
-msgstr ""
+msgstr "Warnungen"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
 msgid  "caught exception: "
-msgstr ""
+msgstr "Ausnahmebedingung aufgetreten: "
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "Sie müssen einen Sicherungsort angeben, der sich vom Speicherort des Dokuments unterscheidet."
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
 msgid  "Invalid number of initialization arguments. Expected 1."
-msgstr ""
+msgstr "Ungültige Anzahl von Initialisierungsargumenten. Erwartet wurde 1."
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
 msgid  "No database document found in the initialization arguments."
-msgstr ""
+msgstr "Kein passendes Datenbank-Dokument gefunden."
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
 msgid  "Not applicable to read-only documents."
-msgstr ""
+msgstr "Für schreibgeschützte Dokumente nicht anwendbar."
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "Es ist nicht möglich, einer Tabelle und einer Abfrage den selben Namen zu geben. Bitte wählen Sie einen Namen, der noch nicht für eine Abfrage oder Tabelle benutzt wird."
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Tabelle"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "Abfrage"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "Die angegebene Verbindung ist keine gültige Quelle für Abfragen und/oder Tabellen."
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
 msgid  "The given object is no table object."
-msgstr ""
+msgstr "Das angegbene Objekt ist kein Tabellenobjekt"
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Ungültiger Composition-Typ - es wird ein Wert aus com.sun.star.sdb.tools.CompositionType benötigt."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Ungültiger Command-Typ - nur TABLE und QUERY aus com.sun.star.sdb.CommandType sind zulässig."
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
 msgid  "Create Form in Design View..."
-msgstr ""
+msgstr "Formular in Entwurfsansicht erstellen..."
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Form..."
-msgstr ""
+msgstr "Formular unter Verwendung des Assistenten erstellen..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
-msgstr ""
+msgstr "Bericht unter Verwendung des Assistenten erstellen..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
 msgid  "Create Report in Design View..."
-msgstr ""
+msgstr "Bericht in Entwurfsansicht erstellen ..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
 msgid  "Create Query in Design View..."
-msgstr ""
+msgstr "Abfrage in der Entwurfsansicht erstellen..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
 msgid  "Create Query in SQL View..."
-msgstr ""
+msgstr "Abfrage in SQL-Ansicht erstellen..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Query..."
-msgstr ""
+msgstr "Abfrage unter Verwendung des Assistenten erstellen..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
-msgstr ""
+msgstr "Tabelle in der Entwurfsansicht erstellen..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Table..."
-msgstr ""
+msgstr "Tabelle unter Verwendung des Assistenten erstellen..."
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
 msgid  "Create View..."
-msgstr ""
+msgstr "Ansicht erstellen..."
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "Formulare"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
-msgstr ""
+msgstr "Berichte"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
 msgid  "Form..."
-msgstr ""
+msgstr "Formular..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
 msgid  "Report..."
-msgstr ""
+msgstr "Bericht ..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
 msgid  "View (Simple)..."
-msgstr ""
+msgstr "Ansicht (einfach)..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
 msgid  "Paste Special..."
-msgstr ""
+msgstr "Inhalte einfügen..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
 msgid  "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
 msgid  "Rename"
-msgstr ""
+msgstr "Umbenennen"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
 msgid  "Edit"
-msgstr ""
+msgstr "Bearbeiten"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
-msgstr ""
+msgstr "In SQL-Ansicht bearbeiten..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
-msgstr ""
+msgstr "Öffnen"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
 msgid  "Create as View"
-msgstr ""
+msgstr "Als Ansicht erstellen"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
-msgstr ""
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
-msgid  "Report..."
-msgstr ""
+msgstr "Formular-Assistent..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Berichts-Assistent..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
 msgid  "Select All"
-msgstr ""
+msgstr "Alles auswählen"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
 msgid  "~Database"
-msgstr ""
+msgstr "~Datenbank"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr ""
+msgstr "Eigenschaften"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
 msgid  "Connection Type..."
-msgstr ""
+msgstr "Verbindungsart"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
 msgid  "Advanced Settings..."
-msgstr ""
+msgstr "Erweiterte Eigenschaften"
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
 msgid  "Do you want to delete the data source '%1'?"
-msgstr ""
+msgstr "Soll die Datenquelle '%1' gelöscht werden?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base"
-msgstr ""
+msgstr " - %PRODUCTNAME Base"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Der Assistent wird Sie durch die Schritte führen, die zur Erstellung eines Berichtes notwendig sind."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Erstellen Sie ein Formular, indem Sie die Datensatzquelle, Steuerelemente und Steuerelementeigenschaften angeben."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Erstellen eines Berichts durch Angabe von Datensatzquelle, Steuerelementen und Steuerelementeigenschaften"
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "Der Assistent wird Sie durch die Schritte führen, die zur Erstellung eines Formulars notwendig sind."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Erstellen Sie eine Abfrage, indem Sie Filter, Eingabetabellen, sowie Sortierungs- und Gruppierungseigenschaften angeben."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "Erstellen Sie eine Abfrage, indem Sie einen SQL-Befehl direkt eingeben."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Der Assistent wird Sie durch die Schritte führen, die zur Erstellung einer Abfrage notwendig sind."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Erstellen Sie eine Tabelle, indem Sie Feldnamen und -eigenschaften, sowie Datentypen angeben."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Wählen Sie aus geschäftlichen oder privaten Beispieltabellen aus, die Sie dann für Ihren Zweck anpassen."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Erstellen Sie eine Ansicht, indem Sie Tabellen und Feldnamen angeben, die Sie anzeigen möchten."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Opens the view wizard"
-msgstr ""
+msgstr "Öffnet den Ansichtswizard"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "Datenbank"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
 msgid  "Tasks"
-msgstr ""
+msgstr "Aufgaben"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "Vorschau"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
 msgid  "Disable Preview"
-msgstr ""
-
-#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "Vorschau ausblenden"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
 msgid  "None"
-msgstr ""
+msgstr "Keine"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
 msgid  "Document Information"
-msgstr ""
+msgstr "Dokumentinformationen"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
 msgid  "Document"
-msgstr ""
+msgstr "Dokument"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Formular"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Bericht"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
 msgid  "F~orm name"
-msgstr ""
+msgstr "~Name des Formulars"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
 msgid  "~Report name"
-msgstr ""
+msgstr "~Name des Berichts"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
 msgid  "F~older name"
-msgstr ""
+msgstr "~Name des Ordners"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
 msgid  "The document contains forms or reports with embedded macros."
-msgstr ""
+msgstr "Das Dokument enthält Formulare oder Berichte mit eingebetteten Makros."
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Makros sollten direkt in das Datenbankdokument eingebettet werden.\n\nSie können Ihr Dokument weiterhin wie bisher verwenden. Es ist aber von Vorteil, Ihre Makros zu konvertieren. Der Assistent unter  'Extras / Makros migrieren ...' unterstützt Sie dabei.\n\nBeachten Sie, dass Sie Makros nicht direkt in das Datenbankdokument einbetten können, solange Sie diese Migration nicht durchgeführt haben. "
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
 msgid  "Embedded database"
-msgstr ""
+msgstr "Eingebettete Datenbank"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
 msgid  "You cannot select different categories."
-msgstr ""
+msgstr "Es können keine unterschiedlichen Kategorien gewählt werden."
 
 #: ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.STRING.TEXT
 msgid  "Unsupported object type found ($type$)."
-msgstr ""
+msgstr "Nicht unterstützten Objekttyp gefunden ($type$)."
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
-
-#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Tabelle #"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 msgid  "Do you want to delete the selected data?"
-msgstr ""
+msgstr "Sollen die selektierten Daten gelöscht werden?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
 msgid  "(filtered)"
-msgstr ""
+msgstr "(gefiltert)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "Fehler beim Setzen der Sortier-Kriterien"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "Fehler beim Setzen der Filter-Kriterien"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
 msgid  "Connection lost"
-msgstr ""
+msgstr "Vebindung verloren"
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "Abfragen"
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "Tabellen"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 msgid  "Edit ~Database File..."
-msgstr ""
+msgstr "~Datenbankdatei bearbeiten ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
 msgid  "Registered databases ..."
-msgstr ""
+msgstr "Registrierte Datenbanken ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
 msgid  "Disco~nnect"
-msgstr ""
+msgstr "Verbindung s~chließen"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
 msgid  "Confirm Deletion"
-msgstr ""
+msgstr "Löschen bestätigen"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
 msgid  "Do you want to delete the table '%1'?"
-msgstr ""
+msgstr "Soll die Tabelle '%1' gelöscht werden?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
 msgid  "The query already exists. Do you want to delete it?"
-msgstr ""
+msgstr "Die Abfrage existiert bereits. Soll sie gelöscht werden?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "Die Verbindung zur Datenbank wurde gelöscht! Soll Sie wieder aufgebaut werden?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
 msgid  "Warnings encountered"
-msgstr ""
+msgstr "Warnungen aufgetreten."
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "Beim Ermitteln der Tabellen wurden von der Datenbankverbindung Warnungen gemeldet."
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
 msgid  "Connecting to \"$name$\" ..."
-msgstr ""
+msgstr "Verbindungsaufbau zu \"$name$\" ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
 msgid  "Loading query $name$ ..."
-msgstr ""
+msgstr "lade Abfrage $name$ ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
 msgid  "Loading table $name$ ..."
-msgstr ""
+msgstr "lade Tabelle $name$ ..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
 msgid  "No table format could be found."
-msgstr ""
+msgstr "Es konnte kein Tabellenformat gefunden werden."
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
+msgstr "Die Verbindung zur Datenquelle \"$name$\" konnte nicht hergestellt werden."
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
 msgid  "Rebuild"
-msgstr ""
+msgstr "Neu aufbauen"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 msgid  "Column ~Format..."
-msgstr ""
+msgstr "Spalten~formatierung..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
 msgid  "Copy Column D~escription"
-msgstr ""
+msgstr "Spaltenb~eschreibung kopieren"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
 msgid  "Table Format..."
-msgstr ""
+msgstr "Tabellenformatierung..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
 msgid  "Row Height..."
-msgstr ""
+msgstr "Zeilenhöhe..."
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
 msgid  "Undo: Data Input"
-msgstr ""
+msgstr "Rückgängig: Dateneingabe"
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 msgid  "Save current record"
-msgstr ""
+msgstr "Aktuellen Datensatz speichern"
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
 msgid  "Query #"
-msgstr ""
+msgstr "Abfrage #"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
+msgstr "Tabelle #"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
 msgid  "View #"
-msgstr ""
+msgstr "Ansicht #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name \"#\" already exists."
-msgstr ""
+msgstr "Der Name \"#\" existiert bereits."
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
 msgid  "No matching column names were found."
-msgstr ""
+msgstr "Es konnten keine übereinstimmenden Spaltennamen gefunden werden!"
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
 msgid  "An error occurred. Do you want to continue copying?"
-msgstr ""
+msgstr "Es ist ein Fehler aufgetreten! Wollen Sie den Kopiervorgang fortsetzen?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
 msgid  "Data source table view"
-msgstr ""
+msgstr "Tabellenansicht der Datenquelle"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
 msgid  "Shows the selected table or query."
-msgstr ""
+msgstr "Zeigt die ausgewählte Tabelle oder Abfrage an."
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
 msgid  "Table name"
-msgstr ""
+msgstr "Tabellename"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
 msgid  "Insert data"
-msgstr ""
+msgstr "Daten einfügen"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
 msgid  "Delete data"
-msgstr ""
+msgstr "Daten löschen"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
 msgid  "Modify data"
-msgstr ""
+msgstr "Daten ändern"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
 msgid  "Alter structure"
-msgstr ""
+msgstr "Struktur ändern"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
 msgid  "Read data"
-msgstr ""
+msgstr "Daten lesen"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
 msgid  "Modify references"
-msgstr ""
+msgstr "References ändern"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
 msgid  "Drop structure"
-msgstr ""
+msgstr "Struktur löschen"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "Aufsteigend Sortieren"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
 msgid  "Sort Descending"
-msgstr ""
+msgstr "Absteigend Sortieren"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "Es konnte keine Verbindung zum SDBC-Treiber-Manager (#servicename#) hergestellt werden."
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 msgid  "A driver is not registered for the URL #connurl#."
-msgstr ""
+msgstr "Es ist kein Treiber für die URL #connurl# registriert!"
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
 msgid  "No connection could be established for the URL #connurl#."
-msgstr ""
+msgstr "Es konnte keine Verbindung für den URL #connurl# aufgebaut werden."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "Bitte überprüfen Sie die aktuellen Einstellungen, zum Beispiel hinsichtlich Benutzername und Kennwort."
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "Die Verbindung wurde erfolgreich hergestellt, aber es konnten keine Informationen über Tabellen in der Datenbank ermittelt werden."
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
 msgid  "All tables"
-msgstr ""
+msgstr "Alle Tabellen"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
 msgid  "All views"
-msgstr ""
+msgstr "Alle Tabellensichten"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
 msgid  "All tables and views"
-msgstr ""
+msgstr "Alle Tabellen und Tabellensichten"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 msgid  "Modify SQL statement(s)"
-msgstr ""
+msgstr "SQL modifizieren"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
 msgid  "Database files"
-msgstr ""
+msgstr "Datenbankdateien"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE:"
-msgstr ""
+msgstr "S~YSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "~TRANSACTIONLOG:"
-msgstr ""
+msgstr "~TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE:"
-msgstr ""
+msgstr "DATAD~EVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
 msgid  "Database sizes"
-msgstr ""
+msgstr "Datenbankgrößen"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
 msgid  "S~ize (MB):"
-msgstr ""
+msgstr "~Gesamtgröße (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
 msgid  "~Free memory space (MB):"
-msgstr ""
+msgstr "~Freier Speicher (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
 msgid  "~Memory utilization (in %):"
-msgstr ""
+msgstr "S~peicherausnutzung (in %):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
 msgid  "Database Statistics"
-msgstr ""
+msgstr "Datenbank Statistiken"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
 msgid  "Contains the system tables"
-msgstr ""
+msgstr "Enthält die Systemtabellen"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
 msgid  "Contains information about transaction"
-msgstr ""
+msgstr "Enthält Information über Transaktion"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
 msgid  "Contains all data files"
-msgstr ""
+msgstr "Enthält alle Daten Dateien"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
 msgid  "Total size of the database files"
-msgstr ""
+msgstr "Gesamt Größe der Datenbank Dateien"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 msgid  "Currently available space before a new datadev file is created."
-msgstr ""
+msgstr "Noch zur Verfügung stehender Speicher bevor eine neue Datadev Datei erzeugt wird."
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
 msgid  "Currently used memory"
-msgstr ""
+msgstr "Zur Zeit verbrauchter Speicherplatz"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "Es können keine Informationen angezeigt werden, da keine Zugriffsberechtigung auf die benötigten Systemtabellen besteht!"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
 msgid  "~Database name"
-msgstr ""
+msgstr "~Datenbankname"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
 msgid  "Se~rver / Port"
-msgstr ""
+msgstr "Se~rver / Port"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
 msgid  "~Server"
-msgstr ""
+msgstr "~Server"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
 msgid  "~Port"
-msgstr ""
+msgstr "~Port"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Standard: 3306"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
-msgstr ""
+msgstr "So~cket"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
 msgid  "Named p~ipe"
-msgstr ""
+msgstr "Named Pipe"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "Tabellen"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "Abfragen"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr ""
+msgstr "Hinzu~fügen"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "S~chließen"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
 msgid  "Add Tables"
-msgstr ""
+msgstr "Tabellen hinzufügen"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
 msgid  "Add Table or Query"
-msgstr ""
+msgstr "Tabelle oder Abfrage hinzufügen"
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Optionen"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 msgid  "Use SQL92 naming constraints"
-msgstr ""
+msgstr "SQL92 Namensbeschränkung verwenden"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
 msgid  "Append the table alias name on SELECT statements"
-msgstr ""
+msgstr "Den Alias Namen von Tabellen im SELECT Ausdruck anhängen"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
 msgid  "Use keyword AS before table alias names"
-msgstr ""
+msgstr "Schlüsselwort AS vor Tabellen-Alias-Namen verwenden"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 msgid  "Use Outer Join syntax '{OJ }'"
-msgstr ""
+msgstr "Für Outer Joins die Syntax '{OJ }' verwenden"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
 msgid  "Ignore the privileges from the database driver"
-msgstr ""
+msgstr "Die Rechte vom Datenbank Treiber ignorieren"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
 msgid  "Replace named parameters with '?'"
-msgstr ""
+msgstr "Benannte Parameter durch '?' ersetzen"
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
 msgid  "Display version columns (when available)"
-msgstr ""
+msgstr "Versionsspalten anzeigen (wenn verfügbar)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 msgid  "Use catalog name in SELECT statements"
-msgstr ""
+msgstr "Den Katalognamen im SELECT Ausdruck verwenden."
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
 msgid  "Use schema name in SELECT statements"
-msgstr ""
+msgstr "Den Schemanamen im SELECT Ausdruck verwenden."
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
 msgid  "Create index with ASC or DESC statement"
-msgstr ""
+msgstr "Index mit ASC- oder DESC-Befehl erstellen"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
 msgid  "End text lines with CR+LF"
-msgstr ""
+msgstr "Textzeilen mit CR+LF beenden"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
 msgid  "Ignore currency field information"
-msgstr ""
+msgstr "Währungsfeld-Information ignorieren"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
 msgid  "Form data input checks for required fields"
-msgstr ""
+msgstr "Formulardaten-Eingabe prüft auf benötigte Felder."
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
 msgid  "Use ODBC conformant date/time literals"
-msgstr ""
+msgstr "ODBC-konforme Datum/Zeit-Symbole verwenden"
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
 msgid  "Supports primary keys"
-msgstr ""
+msgstr "Unterstützt Primärschlüssel"
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
 msgid  "Respect the result set type from the database driver"
-msgstr ""
+msgstr "Akzeptiere den Resultat Typ vom Datenbank Treiber"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Default"
-msgstr ""
+msgstr "Standard"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Mixed"
-msgstr ""
+msgstr "Gemischt"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "MS Access"
-msgstr ""
+msgstr "MS Access"
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
 msgid  "Comparison of Boolean values"
-msgstr ""
+msgstr "Vergleich von Wahrheitswerten"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
-msgstr ""
+msgstr "Zeilen um die Spaltentypen zu scannen"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
 msgid  "Re~trieve generated values"
-msgstr ""
+msgstr "Generierte Werte berücksichtigen"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
 msgid  "~Auto-increment statement"
-msgstr ""
+msgstr "~Auto-Increment-Befehl"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
 msgid  "~Query of generated values"
-msgstr ""
+msgstr "Abfrage der generierten ~Werte"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
 msgid  "Generated Values"
-msgstr ""
+msgstr "Generierte Werte"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 msgid  "Special Settings"
-msgstr ""
+msgstr "Besondere Einstellungen"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
-msgstr ""
+msgstr "Erweiterte Eigenschaften"
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the dBASE files"
-msgstr ""
+msgstr "Pfad zu den dBASE Dateien"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the text files"
-msgstr ""
+msgstr "Pfad zu den Textdateien"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the spreadsheet document"
-msgstr ""
+msgstr "Pfad zum Tabellendokument"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
 msgid  "Name of the ODBC data source on your system"
-msgstr ""
+msgstr "Name der ODBC Datenquelle auf Ihrem System"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the MySQL database"
-msgstr ""
+msgstr "Name der MySQL Datenbank"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Oracle database"
-msgstr ""
+msgstr "Name der Oracle Datenbank"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Adabas D database"
-msgstr ""
+msgstr "Name der Adabas D Datenbank"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
 msgid  "Microsoft Access database file"
-msgstr ""
+msgstr "Microsoft Access Datenbankdatei"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "Es werden keine weiteren Einstellungen benötigt. Um die Verbindung zu prüfen, klicken Sie auf die Schaltfläche '%test'."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
 msgid  "Datasource URL"
-msgstr ""
+msgstr "D~atenquellen-URL"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "~Rechnername"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
 msgid  "~Mozilla profile name"
-msgstr ""
+msgstr "Name des ~Mozilla Benutzerprofils"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
 msgid  "~Thunderbird profile name"
-msgstr ""
+msgstr "Name des ~Thunderbird Benutzerprofils"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 msgid  "Browse"
-msgstr ""
+msgstr "Durchsuchen"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database name"
-msgstr ""
+msgstr "Datenbankname"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 msgid  "Server"
-msgstr ""
+msgstr "Server"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
 msgid  "Base ~DN"
-msgstr ""
+msgstr "Basis-~DN"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
 msgid  "~Port number"
-msgstr ""
+msgstr "~Portnummer"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 msgid  "Data conversion"
-msgstr ""
+msgstr "Datenkonvertierung"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
 msgid  "~Character set"
-msgstr ""
+msgstr "~Zeichensatz"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "~Geben Sie den Dateityp an, auf den Sie zugreifen möchten"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
 msgid  "Plain text files (*.txt)"
-msgstr ""
+msgstr "Einfache Textdateien (*.txt)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 msgid  "'Comma separated value' files (*.csv)"
-msgstr ""
+msgstr "'Comma separated value' Dateien (*.csv)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
 msgid  "Custom:"
-msgstr ""
+msgstr "Sonstige:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Custom: *.abc"
-msgstr ""
+msgstr "For example: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
 msgid  "Row Format"
-msgstr ""
+msgstr "Zeilenformat"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Field separator"
-msgstr ""
+msgstr "~Feldtrenner"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Text separator"
-msgstr ""
+msgstr "T~exttrenner"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Decimal separator"
-msgstr ""
+msgstr "~Dezimaltrennzeichen"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Thousands separator"
-msgstr ""
+msgstr "T~ausendertrennzeichen"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
 msgid  "~Text contains headers"
-msgstr ""
+msgstr "~Text enthält Kopfzeile"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
 msgid  "{None}"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ""
+msgstr "{Keiner}"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 msgid  "#1 must be set."
-msgstr ""
+msgstr "#1 muss angegeben sein."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
 msgid  "#1 and #2 must be different."
-msgstr ""
+msgstr "#1 und #2 müssen unterschiedlich sein."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
 msgid  "Wildcards such as ?,* are not allowed in #1."
-msgstr ""
+msgstr "Platzhalter wie *,? sind in der #1 nicht möglich."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "JDBC d~river class"
-msgstr ""
+msgstr "~JDBC-Treiberklasse"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
-msgstr ""
+msgstr "Klasse testen"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
 msgid  "Socket"
-msgstr ""
+msgstr "Socket"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
 msgid  "Save"
-msgstr ""
+msgstr "Speichern"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Create New Directory"
-msgstr ""
+msgstr "Neuen Ordner erstellen"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Up One Level"
-msgstr ""
+msgstr "Aufwärts"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
 msgid  "File ~name:"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "Datei~name:"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
 msgid  "~Path:"
-msgstr ""
+msgstr "~Pfad:"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
 msgid  "Folder"
-msgstr ""
+msgstr "Ordner"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "Die Datei existiert bereits. Soll sie überschrieben werden?"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "~Rechnername"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
-msgstr ""
+msgstr "Benutzer Authentifizierung"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "~Benutzername"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
 msgid  "Password required"
-msgstr ""
+msgstr "Kennwort erforderlich"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "JDBC properties"
-msgstr ""
+msgstr "JDBC-Eigenschaften"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "~JDBC driver class"
-msgstr ""
+msgstr "~JDBC-Treiberklasse"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test Class"
-msgstr ""
+msgstr "Klasse testen"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "Test Connection"
-msgstr ""
+msgstr "Verbindung testen"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
 msgid  "No Adabas D data sources were found on your system."
-msgstr ""
+msgstr "Auf Ihrem System wurden keine Adabas D Datenquellen gefunden."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
 msgid  "Connection Test"
-msgstr ""
+msgstr "Verbindungstest"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
 msgid  "The connection was established successfully."
-msgstr ""
+msgstr "Die Verbindung wurde erfolgreich hergestellt."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "Es konnte keine Verbindung hergestellt werden."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver was loaded successfully."
-msgstr ""
+msgstr "Der JDBC-Treiber wurde erfolgreich geladen."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver could not be loaded."
-msgstr ""
+msgstr "Der JDBC-Treiber konnte nicht geladen werden."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
 msgid  "MS Access file"
-msgstr ""
+msgstr "MS Access Datei"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
 msgid  "MS Access 2007 file"
-msgstr ""
+msgstr "MS Access 2007 Datei"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
 msgid  "A password is needed to connect to the data source \"$name$\"."
-msgstr ""
+msgstr "Die Verbindung zur Datenquelle \"$name$\" erfordert die Eingabe eines Passwortes."
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Das Verzeichnis\n\n$path$\n\nexistiert nicht. Soll es angelegt werden?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
 msgid  "The directory $name$ could not be created."
-msgstr ""
+msgstr "Das Verzeichnis $name$ konnte nicht angelegt werden."
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
 msgid  "Convert Database"
-msgstr ""
+msgstr "Datenbank konvertieren"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 msgid  "Please enter the ~password for the user 'DOMAIN'."
-msgstr ""
+msgstr "Bitte geben Sie das ~Kennwort für den Benutzer 'DOMAIN' ein"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
 msgid  "Tables Filter"
-msgstr ""
+msgstr "Tabellen Filter"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Tables and table filter"
-msgstr ""
+msgstr "Tabellen und Tabellenfilter"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Mark the tables that should be visible for the applications."
-msgstr ""
+msgstr "Markieren Sie diejenigen Tabellen, die für die Applikationen sichtbar sein sollen."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
 msgid  "Database Wizard"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
-msgid  "Database Wizard"
-msgstr ""
+msgstr "Datenbank-Assistent"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
 msgid  "Select database"
-msgstr ""
+msgstr "Datenbank auswählen"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 msgid  "Set up dBASE connection"
-msgstr ""
+msgstr "Verbindung zu dBASE-Dateien einrichten "
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
 msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Verbindung zu Text-Dateien einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
 msgid  "Set up Microsoft Access connection"
-msgstr ""
+msgstr "Microsoft Access Verbindung einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
 msgid  "Set up LDAP connection"
-msgstr ""
+msgstr "LDAP-Verbindung einrichten "
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
 msgid  "Set up Adabas D connection"
-msgstr ""
+msgstr "Adabas D Verbindung einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
 msgid  "Set up ADO connection"
-msgstr ""
+msgstr "ADO-Verbindung einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
 msgid  "Set up JDBC connection"
-msgstr ""
+msgstr "JDBC-Verbindung einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
 msgid  "Set up Oracle database connection"
-msgstr ""
+msgstr "Oracle Datenbankverbindung einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
 msgid  "Set up MySQL connection"
-msgstr ""
+msgstr "MySQL Verbindung einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
 msgid  "Set up ODBC connection"
-msgstr ""
+msgstr "ODBC-Verbindung einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
 msgid  "Set up Spreadsheet connection"
-msgstr ""
+msgstr "Verbindung zu Tabellendokumenten einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
 msgid  "Set up user authentication"
-msgstr ""
+msgstr "Benutzer-Authentifizierung einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
 msgid  "Set up MySQL server data"
-msgstr ""
+msgstr "MySQL Server-Daten einrichten"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
 msgid  "Save and proceed"
-msgstr ""
+msgstr "Fertigstellen und fortfahren"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
 msgid  "New Database"
-msgstr ""
+msgstr "Neue Datenbank"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to a MySQL database"
-msgstr ""
+msgstr "Verbindung zu einer MySQL Datenbank einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Bitte wählen Sie, ob die Verbindung auf die MySQL Datenbank per ODBC oder per JDBC hergestellt werden soll.\nFragen Sie Ihren Systemadministrator, wenn Sie sich bei den folgenden Einstellungen unsicher sind."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
 msgid  "How do you want to connect to your MySQL database?"
-msgstr ""
+msgstr "Wie möchten Sie sich mit Ihrer Datenbank verbinden?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
 msgid  "Connect using ODBC (Open Database Connectivity)"
-msgstr ""
+msgstr "Verbindung über ODBC (Open Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
 msgid  "Connect using JDBC (Java Database Connectivity)"
-msgstr ""
+msgstr "Verbindung über JDBC (Java Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
 msgid  "Connect directly"
-msgstr ""
+msgstr "Direkte Verbindung"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up the user authentication"
-msgstr ""
+msgstr "Benutzer-Authentifizierung eingeben"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "Geben Sie bitte jetzt einen Benutzernamen ein, falls die Datenbank zur Verbindungsherstellung einen bestimmten Benutzer erwartet."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "~Benutzername"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "Password re~quired"
-msgstr ""
+msgstr "Kennwort erforderlich"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "~Test Connection"
-msgstr ""
+msgstr "~Verbindungstest"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
 msgid  "Decide how to proceed after saving the database"
-msgstr ""
+msgstr "Bitte entscheiden Sie, wie Sie fortfahren möchten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "Soll der Assistent die Datenbank in %PRODUCTNAME anmelden?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "~Yes, register the database for me"
-msgstr ""
+msgstr "~Ja, die Datenbank soll angemeldet werden"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "N~o, do not register the database"
-msgstr ""
+msgstr "Nein, die Datenbank soll nicht angemeldet werden"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
 msgid  "After the database file has been saved, what do you want to do?"
-msgstr ""
+msgstr "Wie möchten Sie fortfahren, nachdem die Datenbank gespeichert wurde?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 msgid  "Open the database for editing"
-msgstr ""
+msgstr "Die Datenbank zum ~Bearbeiten öffnen"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
 msgid  "Create tables using the table wizard"
-msgstr ""
+msgstr "Eine ~Tabelle mit Hilfe des Tabellen-Assistenten erstellen"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
 msgid  "Click 'Finish' to save the database."
-msgstr ""
+msgstr "Klicken Sie auf '~Fertigstellen', um die Datenbank zu speichern."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up connection to a MySQL database using JDBC"
-msgstr ""
+msgstr "Verbindung zu einer MySQL-Datenbank per JDBC einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Bitte geben Sie die benötigten Informationen ein, um eine Verbindung per JDBC zu einer MySQL-Datenbank herzustellen. Bitte beachten Sie, dass eine JDBC-Treiberklasse auf ihrem System installiert und %PRODUCTNAME bekannt sein muss.\nFragen Sie Ihren Systemadministrator, wenn Sie sich bei den folgenden Einstellungen unsicher sind."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "MySQL JDBC d~river class:"
-msgstr ""
+msgstr "MySQL JDBC ~Treiberklasse:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Default: 3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
 msgid  "Set up connection to a MySQL database"
-msgstr ""
+msgstr "Verbindung zu einer MySQL Datenbank einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "Bitte geben Sie die benötigten Informationen ein, um eine Verbindung zu einer MySQL-Datenbank herzustellen."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to dBASE files"
-msgstr ""
+msgstr "Verbindung zu dBASE-Dateien einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the dBASE files are stored."
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Bitte wählen Sie den Ordner, in dem sich die dBASE- Dateien befinden."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "Bitte wählen Sie den Ordner, in dem sich die im CSV-Format (Comma Separated Value) gespeicherten Dateien befinden. %PRODUCTNAME Base greift auf die Daten nur lesend zu."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to text files"
-msgstr ""
+msgstr "Pfad zu den Textdateien"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a Microsoft Access database"
-msgstr ""
+msgstr "Verbindung zu einer Microsoft Access Datenbank einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "Bitte wählen Sie die Microsoft Access Datei auf die Sie zugreifen möchten."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to an LDAP directory"
-msgstr ""
+msgstr "Verbindung zu einem LDAP-Verzeichnis einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Bitte geben Sie die benötigten Information ein, um eine Verbindung zu einem LDAP-Verzeichnis herzustellen.\nFragen Sie Ihren Systemadministrator, wenn Sie sich bei den folgenden Einstellungen unsicher sind."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
 msgid  "Default: 389"
-msgstr ""
+msgstr "Standard: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 msgid  "Use ~secure connection (SSL)"
-msgstr ""
+msgstr "~Sichere Verbindung verwenden (SSL)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Adabas D database"
-msgstr ""
+msgstr "Verbindung zu einer Adabas D Datenbank einrichten "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Bitte geben Sie den Namen der Adabas D Datenbank ein, zu der eine Verbindung erstellt werden soll. Klicken Sie 'Durchsuchen' um eine %PRODUCTNAME bekannte Adabas D Datenbanken auszuwählen."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ADO database"
-msgstr ""
+msgstr "Verbindung zu einer ADO-Datenquelle einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Geben Sie bitte den URL ein, um eine Verbindung zu einer ADO-Datenquelle zu erstellen.\nKlicken Sie 'Durchsuchen', um Hersteller-spezifische Einstellungen vorzunehmen.\nFragen Sie Ihren Systemadministrator, wenn Sie sich bei den folgenden Einstellungen unsicher sind."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ODBC database"
-msgstr ""
+msgstr "Verbindung zu einer ODBC-Datenquelle einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Bitte geben Sie den Namen der ODBC-Datenquelle ein, um eine Verbindung herzustellen.\nKlicken Sie auf 'Durchsuchen' um eine %PRODUCTNAME bekannte ODBC-Datenquelle auszuwählen.\nFragen Sie Ihren Systemadministrator, wenn Sie sich bei den folgenden Einstellungen unsicher sind."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a JDBC database"
-msgstr ""
+msgstr "Datenbankverbindung per JDBC einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Bitte geben Sie die benötigten Informationen ein, um per JDBC eine Verbindung zu einer Datenquelle herzustellen.\nFragen Sie Ihren Systemadministrator, wenn Sie sich bei den folgenden Einstellungen unsicher sind."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Oracle database"
-msgstr ""
+msgstr "Verbindung zu einer Oracle-Datenbank einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
 msgid  "Default: 1521"
-msgstr ""
+msgstr "Standard: 1521"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "Oracle JDBC ~driver class"
-msgstr ""
+msgstr "Oracle JDBC ~Treiberklasse"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Bitte geben Sie die benötigten Information ein, um per JDBC eine Verbindung zu einer Oracle-Datenbank herzustellen. Bitte beachten Sie, dass eine JDBC-Treiberklasse auf ihrem System installiert und %PRODUCTNAME bekannt sein muss.\nFragen Sie Ihren Systemadministrator, wenn Sie sich bei den folgenden Einstellungen unsicher sind."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to spreadsheets"
-msgstr ""
+msgstr "Verbindung zu Tabellendokumenten einrichten"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Klicken Sie auf 'Durchsuchen' um auf Daten aus %PRODUCTNAME Tabellen-Dokumente oder Microsoft Excel Arbeitsmappen zu zugreifen.\n%PRODUCTNAME greift auf die Daten der Tabellendokumente nur lesend zu."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
 msgid  "~Location and file name"
-msgstr ""
+msgstr "Speicherort und Dateiname"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "~Password required"
-msgstr ""
+msgstr "Kennwort erforderlich"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
 msgid  "Use catalog for file-based databases"
-msgstr ""
+msgstr "Katalog verwenden bei dateibasierten Datenbanken"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Connection Settings"
-msgstr ""
+msgstr "Verbindungsangaben"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "~Rechnername"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
 msgid  "~Port number"
-msgstr ""
+msgstr "~Portnummer"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
 msgid  "Advanced Properties"
-msgstr ""
+msgstr "Erweiterte Eigenschaften"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
 msgid  "Additional Settings"
-msgstr ""
+msgstr "Zusätzliche Einstellungen"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
 msgid  "Connection settings"
-msgstr ""
+msgstr "Verbingungseinstellungen"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
 msgid  "Database properties"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
-msgid  "Database properties"
-msgstr ""
+msgstr "Datenbankeigenschaften"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr ""
+msgstr "Willkommen zum %PRODUCTNAME Datenbank-Assistenten"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Benutzen Sie den Datenbank-Assistenten, um eine neue Datenbank anzulegen, eine bestehende Datenbankdatei zu öffnen, oder eine Verbindung zu einer Server-Datenbank herzustellen."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
 msgid  "What do you want to do?"
-msgstr ""
+msgstr "Wie möchten Sie fortfahren?"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
 msgid  "Create a n~ew database"
-msgstr ""
+msgstr "N~eue Datenbank erstellen"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
 msgid  "Open an existing database ~file"
-msgstr ""
+msgstr "~Bestehende Datenbankdatei öffnen"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
 msgid  "Recently used"
-msgstr ""
+msgstr "Zuletzt benutzt"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
 msgid  "Connect to an e~xisting database"
-msgstr ""
+msgstr "~Verbindung zu einer bestehenden Datenbank herstellen"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Bitte wählen Sie den Typ der Datenbank aus, zu der eine Verbindung aufgebaut werden soll."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
 msgid  "Database ~type "
-msgstr ""
+msgstr "Datenbank~typ "
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "Datenbank"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Auf den nächsten Seiten können Sie dann detaillierte Verbindungs-Einstellungen vornehmen.\n\nBitte beachten Sie dabei,dass diese neuen Einstellungen Ihre existierenden überschreiben."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
 msgid  "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
 msgid  "Data Source Properties: #"
-msgstr ""
+msgstr "Datenquellen Eigenschaften: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "Die Programmbibliothek #lib# konnte nicht geladen werden oder ist defekt. Die ODBC-Datenquellen-Auswahl ist nicht verfügbar."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Dieser Datenquellen-Typ wird auf dieser Plattform nicht unterstützt.\nSie können die Einstellungen verändern, werden aber vermutlich keine Verbindung zu der Datenbank herstellen können."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional settings"
-msgstr ""
+msgstr "Optionale Einstellungen"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
 msgid  "Display deleted records as well"
-msgstr ""
+msgstr "Auch gelöschte Datensätze anzeigen"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Achtung: Wenn gelöschte und daher inaktive Datensätze angezeigt werden, können Sie keine Datensätze aus der Datenquelle löschen."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
 msgid  "Indexes..."
-msgstr ""
+msgstr "~Indizes..."
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional Settings"
-msgstr ""
+msgstr "Optionale Einstellungen"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "ODBC ~options"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr ""
+msgstr "~Treibereinstellungen"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "Daten~puffergröße (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
 msgid  "~Data increment (MB)"
-msgstr ""
+msgstr "Zu~wachsgröße (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "Administration"
-msgstr ""
+msgstr "Administration"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
 msgid  "Control ~user name"
-msgstr ""
+msgstr "Control B~enutzername"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
 msgid  "Control ~password"
-msgstr ""
+msgstr "~Control Kennwort"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr ""
+msgstr "~Service beim Beenden von %PRODUCTNAME herunterfahren"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
 msgid  "E~xtended..."
-msgstr ""
+msgstr "E~rweitert..."
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "MySQL JDBC d~river class"
-msgstr ""
+msgstr "MySQL JDBC-~Treiberklasse"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
-msgstr ""
+msgstr "Klasse testen"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
-msgstr ""
+msgstr "Benutzer Authentifizierung"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "~Benutzername"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
 msgid  "Password required"
-msgstr ""
+msgstr "Kennwort erforderlich"
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "Oracle JDBC d~river class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
+msgstr "Oracle JDBC-~Treiberklasse"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
 msgid  "~Base DN"
-msgstr ""
+msgstr "~Basis DN"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 msgid  "Use secure connection(SSL)"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "Use secure connection(SSL)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
 msgid  "Maximum number of ~records"
-msgstr ""
+msgstr "Maximale Anzahl der ~Datensätze"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Hostname"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "~Rechnername"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "~Driver settings"
-msgstr ""
+msgstr "~Treibereinstellungen"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "Bitte verwenden Sie 'Verbindung zu einer bestehenden Datenbank herstellen', um stattdessen zu einer bestehenden Datenbank zu verbinden."
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "Indizes"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
 msgid  "~Table"
-msgstr ""
+msgstr "~Tabelle"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
 msgid  "Assignment"
-msgstr ""
+msgstr "Zuweisung"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
 msgid  "T~able indexes"
-msgstr ""
+msgstr "T~abellenindizes"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
 msgid  "~Free indexes"
-msgstr ""
+msgstr "~Freie Indizes"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL Kommando"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
 msgid  "Command to execute"
-msgstr ""
+msgstr "auszuführendes Kommando"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
 msgid  "Execute"
-msgstr ""
+msgstr "Ausführen"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
 msgid  "Previous commands"
-msgstr ""
+msgstr "Vorherige Kommandos"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
 msgid  "Status"
-msgstr ""
+msgstr "Status"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "Schließen"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 msgid  "Execute SQL Statement"
-msgstr ""
+msgstr "SQL Statement ausführen"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
 msgid  "Command successfully executed."
-msgstr ""
+msgstr "Befehl erfolgreich ausgeführt."
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "Die Verbindung zur Datenbank wurde gelöscht. Dieser Dialog wird geschlossen."
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
 msgid  "Field Format"
-msgstr ""
+msgstr "Feldformatierung"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
 msgid  "Bac~k"
-msgstr ""
+msgstr "~Zurück"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Schrift"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
 msgid  "Format"
-msgstr ""
+msgstr "Format"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr ""
+msgstr "Ausrichtung"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 msgid  "Table Format"
-msgstr ""
+msgstr "Tabellenformatierung"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
 msgid  "Save As"
-msgstr ""
+msgstr "Speichern unter"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the object to be created:"
-msgstr ""
+msgstr "Bitte geben Sie einen Namen für das anzulegende Objekt an:"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
 msgid  "~Catalog"
-msgstr ""
+msgstr "~Catalog"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
 msgid  "~Schema"
-msgstr ""
+msgstr "~Schema"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
 msgid  "~Table Name"
-msgstr ""
+msgstr "~Name der Tabelle"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
 msgid  "~Name of table view"
-msgstr ""
+msgstr "~Name der Tabellensicht"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
 msgid  "~Query name"
-msgstr ""
+msgstr "~Name der Abfrage"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
 msgid  "Rename to"
-msgstr ""
+msgstr "Umbenennen nach"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 msgid  "Insert as"
-msgstr ""
+msgstr "Einfügen als"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Height"
-msgstr ""
+msgstr "H~öhe"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 msgid  "~Automatic"
-msgstr ""
+msgstr "~Automatisch"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
 msgid  "Row Height"
-msgstr ""
+msgstr "Zeilenhöhe"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Width"
-msgstr ""
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "~Breite"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
 msgid  "Column Width"
-msgstr ""
+msgstr "Spaltenbreite"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "Datenquelle"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Choose a data source:"
-msgstr ""
+msgstr "Wählen Sie eine Datenquelle:"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
 msgid  "Organize..."
-msgstr ""
+msgstr "Verwalten..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "Erzeugen..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
 msgid  "Local Databases"
-msgstr ""
+msgstr "Lokale Datenbanken"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
 msgid  "Choose a database"
-msgstr ""
+msgstr "Wählen Sie eine Datenbank"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "Indizes"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
 msgid  "New Index"
-msgstr ""
+msgstr "Neuer Index"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
 msgid  "Delete Current Index"
-msgstr ""
+msgstr "Aktuellen Index löschen"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
 msgid  "Rename Current Index"
-msgstr ""
+msgstr "Aktuellen Index umbenennen"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
 msgid  "Save Current Index"
-msgstr ""
+msgstr "Aktuellen Index speichern"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 msgid  "Reset Current Index"
-msgstr ""
+msgstr "Aktuellen Index zurücksetzen"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
 msgid  "Index details"
-msgstr ""
+msgstr "Index-Details"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
 msgid  "Index identifier:"
-msgstr ""
+msgstr "Indexbezeichner:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
 msgid  "~Unique"
-msgstr ""
+msgstr "~Eindeutig"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
 msgid  "Fields"
-msgstr ""
+msgstr "Felder"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "S~chließen"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "Sortierreihenfolge"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
 msgid  "Index field"
-msgstr ""
+msgstr "Indexfeld"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "Aufsteigend"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "Absteigend"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 msgid  "Do you really want to delete the index '$name$'?"
-msgstr ""
+msgstr "Wollen Sie den Index '$name$' wirklich löschen?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
 msgid  "index"
-msgstr ""
+msgstr "index"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
 msgid  "Save Index"
-msgstr ""
+msgstr "Index speichern"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 msgid  "The index must contain at least one field."
-msgstr ""
+msgstr "Der Index muss mindestens ein Feld enthalten."
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
 msgid  "Exit Index Design"
-msgstr ""
+msgstr "Index-Entwurf verlassen"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
 msgid  "Do you want to save the changes made to the current index?"
-msgstr ""
+msgstr "Wollen Sie die Änderungen am aktuellen Index noch speichern?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There is already another index named \"$name$\"."
-msgstr ""
+msgstr "Es gibt schon einen anderen Index namens \"$name$\"."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
 msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr ""
+msgstr "In einer Index-Definition darf jede Tabellen-Spalte höchstens einmal vorkommen, Sie jedoch haben die Spalte \"$name$\"zweimal benutzt."
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
 msgid  "~Parameters"
-msgstr ""
+msgstr "~Parameter"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Value"
-msgstr ""
+msgstr "~Wert"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
 msgid  "~Next"
-msgstr ""
+msgstr "~nächster"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 msgid  "Parameter Input"
-msgstr ""
+msgstr "Parameter-Eingabe"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
-msgstr ""
+msgstr "Die Eingabe konnte nicht in einen gültigen Wert für die Spalte \"$name$\" umgewandelt werden"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "Standardfilter"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "AND"
-msgstr ""
+msgstr "UND"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "OR"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
-msgstr ""
+msgstr "ODER"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Feldname"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
 msgid  "Condition"
-msgstr ""
+msgstr "Bedingung"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
 msgid  "Value"
-msgstr ""
+msgstr "Wert"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "Verknüpfung"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
 msgid  "Criteria"
-msgstr ""
+msgstr "Kriterien"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "- none -"
-msgstr ""
+msgstr "- keiner -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
+msgstr "=;<>;<;<=;>;>=;wie;nicht wie;leer;nicht leer"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
 msgid  "Sort Order"
-msgstr ""
+msgstr "Sortierung"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "ascending"
-msgstr ""
+msgstr "aufsteigend"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
+msgstr "absteigend"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Feldname"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 msgid  "and then"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
-msgid  "and then"
-msgstr ""
+msgstr "danach"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "Verknüpfung"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
 msgid  "Order"
-msgstr ""
+msgstr "Reihenfolge"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "Sortierung"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<keines>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
 msgid  "Relations"
-msgstr ""
+msgstr "Relationen"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "beteiligte Tabellen"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "beteiligte Felder"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
 msgid  "Update options"
-msgstr ""
+msgstr "Update Optionen"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~No action"
-msgstr ""
+msgstr "~Keine Aktion"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~Update cascade"
-msgstr ""
+msgstr "K~ask. Update"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 msgid  "~Set null"
-msgstr ""
+msgstr "~Null setzen"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
 msgid  "Set ~default"
-msgstr ""
+msgstr "~Default setzen"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
 msgid  "Delete options"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "~No action"
-msgstr ""
+msgstr "Löschoptionen"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
 msgid  "Delete ~cascade"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
-msgstr ""
+msgstr "Ka~sk. Löschen"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Base"
-msgstr ""
+msgstr "%PRODUCTNAME Base"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 msgid  "Details"
-msgstr ""
+msgstr "Details"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
 msgid  "Error ~list:"
-msgstr ""
+msgstr "~Fehlerliste:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "~Description:"
-msgstr ""
+msgstr "~Beschreibung:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 msgid  "SQL Status"
-msgstr ""
+msgstr "SQL-Status"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
 msgid  "Error code"
-msgstr ""
+msgstr "Fehler-Code"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "Ein häufiger Grund für diesen Fehler ist eine ungeeignete Zeichensatz-Einstellung für die Sprache Ihrer Datenbank. Überprüfen Sie diese Einstellung unter Bearbeiten - Datenbank - Eigenschaften."
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "Fehler"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
 msgid  "Warning"
-msgstr ""
+msgstr "Warnung"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
 msgid  "Information"
-msgstr ""
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
-msgid  "Details"
-msgstr ""
+msgstr "Information"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 msgid  "Text Connection Settings"
-msgstr ""
+msgstr "Verbindungsangaben"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
 msgid  "User Settings"
-msgstr ""
+msgstr "Benutzereinstellungen"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
 msgid  "User administration"
-msgstr ""
+msgstr "Benutzeradministration"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
 msgid  "User selection"
-msgstr ""
+msgstr "Benutzerauswahl"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
 msgid  "Us~er:"
-msgstr ""
+msgstr "B~enutzer:"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
 msgid  "~Add User..."
-msgstr ""
+msgstr "Benutzer ~hinzufügen..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
 msgid  "Change ~Password..."
-msgstr ""
+msgstr "~Passwort ändern..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
 msgid  "~Delete User..."
-msgstr ""
+msgstr "Benut~zer löschen..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
 msgid  "Access rights for selected user"
-msgstr ""
+msgstr "Zugriffsrechte für ausgewählten Benutzer"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 msgid  "Do you really want to delete the user?"
-msgstr ""
+msgstr "Soll der Benutzer wirklich gelöscht werden?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support user administration."
-msgstr ""
+msgstr "Die Datenbank unterstützt keine Benutzerverwaltung!"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
 msgid  "User \"$name$:  $\""
-msgstr ""
+msgstr "Benutzer \"$name$:  $\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
 msgid  "Old p~assword"
-msgstr ""
+msgstr "Altes K~ennwort"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr ""
+msgstr "~Kennwort"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 msgid  "~Confirm  password"
-msgstr ""
+msgstr "Kennwort ~bestätigen"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
 msgid  "Change Password"
-msgstr ""
+msgstr "Kennwort ändern"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 msgid  "The passwords do not match. Please enter the password again."
-msgstr ""
+msgstr "Die beiden Kennwörter stimmen nicht überein, bitte noch einmal eingeben!"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
 msgid  "Refresh"
-msgstr ""
+msgstr "Aktualisieren"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 msgid  "New ~View Design"
-msgstr ""
+msgstr "Neuer ~Ansichtsentwurf"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
 msgid  "New ~Table Design"
-msgstr ""
+msgstr "Neuer ~Tabellenentwurf"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
 msgid  "Query AutoPilot..."
-msgstr ""
+msgstr "AutoPilot Abfrage..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "New ~Query (Design View)"
-msgstr ""
+msgstr "Neue ~Abfrage (Design-Ansicht)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "~Edit Query"
-msgstr ""
+msgstr "Abfrage b~earbeiten"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 msgid  "New Query (~SQL View)"
-msgstr ""
+msgstr "Neue Abfrage (~SQL-Ansicht)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "Bearbeiten..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
 msgid  "Column ~Width..."
-msgstr ""
+msgstr "Spalten~breite..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Berichts-Assistent..."
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
 msgid  "Form AutoPilot..."
-msgstr ""
+msgstr "AutoPilot Formular..."
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
 msgid  "System"
-msgstr ""
+msgstr "System"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
 msgid  "Error during creation"
-msgstr ""
+msgstr "Fehler beim Erzeugen"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "Ein unerwarteter Fehler ist aufgetreten. Die Operation kann nicht ausgeführt werden."
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
 msgid  "The document \"$file$\" could not be opened."
-msgstr ""
+msgstr "Das Dokument \"$file$\" konnte nicht geöffnet werden."
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "Die Tabelle kann nicht gelöscht werden, da die Datenbankverbindung diese nicht unterstützt."
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "~Alle"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
 msgid  "Undo:"
-msgstr ""
+msgstr "Rückgängig:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 msgid  "Redo:"
-msgstr ""
+msgstr "Wiederherstellen:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
 msgid  "No corresponding column type could be found for column '#1'."
-msgstr ""
+msgstr "Für die Spalte '#1' konnte kein passender Spaltentyp gefunden werden."
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Die Datei \"$file$\" existiert nicht."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr ""
+msgstr "Beim Verbindungsaufbau sind Warnungen aufgetreten. Drücken Sie \"$buttontext$\", um sie anzuzeigen."
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Der Name '$#$' existiert bereits.\nBitte geben Sie einen neuen Namen an."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
-msgstr ""
+msgstr "Die Anzeige \"$file$\" erfordert die Erweiterung des Oracle Report Builder."
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
 msgid  "Apply columns"
-msgstr ""
+msgstr "Spaltenübernahme"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 msgid  "Type formatting"
-msgstr ""
+msgstr "Typformatierungen"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "Es sind bereits folgende Felder als Primärschlüssel gesetzt:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
 msgid  "Assign columns"
-msgstr ""
+msgstr "Spalten zuordnen"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 msgid  "Copy RTF Table"
-msgstr ""
+msgstr "RTF Tabelle kopieren"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr ""
+msgstr "~Hilfe"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
 msgid  "~Cancel"
-msgstr ""
+msgstr "~Abbrechen"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 msgid  "< ~Back"
-msgstr ""
+msgstr "<~Zurück"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next>"
-msgstr ""
+msgstr "~Weiter>"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
 msgid  "C~reate"
-msgstr ""
+msgstr "~Fertigstellen"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
 msgid  "Existing columns"
-msgstr ""
+msgstr "Vorhandene Spalten"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
 msgid  "Column information"
-msgstr ""
+msgstr "Spalteninformation"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 msgid  "Automatic type recognition"
-msgstr ""
+msgstr "Automat. Typerkennung"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
 msgid  "Lines (ma~x)"
-msgstr ""
+msgstr "(max.) ~Zeilen"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "Primärschlüssel"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
 msgid  "Source table: \n"
-msgstr ""
+msgstr "Quelltabelle: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "Zieltabelle: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "a~lle"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
 msgid  "Non~e"
-msgstr ""
+msgstr "~keine"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
 msgid  "Ta~ble name"
-msgstr ""
+msgstr "~Tabellenname"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Optionen"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
 msgid  "De~finition and data"
-msgstr ""
+msgstr "Definition und D~aten"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
 msgid  "Def~inition"
-msgstr ""
+msgstr "~Definition"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
 msgid  "A~s table view"
-msgstr ""
+msgstr "Als Tabellen~sicht"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 msgid  "Append ~data"
-msgstr ""
+msgstr "Daten a~nhängen"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
-msgstr ""
+msgstr "Erste ~Zeile als Spaltennamen verwenden"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
 msgid  "Crea~te primary key"
-msgstr ""
+msgstr "~Primärschlüssel erzeugen"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
 msgid  "Name"
-msgstr ""
+msgstr "Name"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 msgid  "Copy table"
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
-msgid  "Copy table"
-msgstr ""
+msgstr "Tabelle kopieren"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
 msgid  "This table name is not valid in the current database."
-msgstr ""
+msgstr "In der aktuellen Datenbank ist dies kein gültiger Tabellenname."
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Wählen Sie die Option 'Daten anhängen' auf der ersten Seite, um Daten an eine existierende Tabellen anzuhängen."
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
 msgid  "Please change the table name. It is too long."
-msgstr ""
+msgstr "Bitte ändern Sie den Tabellenname. Er ist zu lang."
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Optionen"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "~Typ"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 msgid  "Inner join"
-msgstr ""
+msgstr "Innerer Verbund"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
 msgid  "Left join"
-msgstr ""
+msgstr "Linker Verbund"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
 msgid  "Right join"
-msgstr ""
+msgstr "Rechter Verbund"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
 msgid  "Full (outer) join"
-msgstr ""
+msgstr "Voller (äußerer) Verbund"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
 msgid  "Cross join"
-msgstr ""
+msgstr "Kreuzverbund"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 msgid  "Natural"
-msgstr ""
+msgstr "Natürlich"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "beteiligte Tabellen"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "beteiligte Felder"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
 msgid  "Join Properties"
-msgstr ""
+msgstr "Verbundeigenschaften"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "Bitte beachten Sie, dass einige Datenbanken eventuell diese Art der Verknüpfung nicht unterstützen."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Beinhaltet nur die Datensätze, bei denen die Inhalte der verknüpften Felder beider Tabellen gleich sind."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "Beinhaltet ALLE Datensätze aus '%1' und nur die Datensätze aus '%2', bei denen die Inhalte der verknüpften Felder beider Tabellen gleich sind."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
 msgid  "Contains ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Beinhaltet ALLE Datensätze aus '%1' und aus '%2'."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Beinhaltet das kartesische Produkt aller Datensätze aus '%1' und '%2'."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "Beinhaltet nur eine Spalte für jedes Paar gleichbenannter Spalten aus '%1' und '%2'."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
 msgid  "Add Table Window"
-msgstr ""
+msgstr "Tabellenfenster hinzufügen"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
 msgid  "Move table window"
-msgstr ""
+msgstr "Tabellenfenster verschieben"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 msgid  "Insert Join"
-msgstr ""
+msgstr "Verknüpfung einfügen"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
 msgid  "Delete Join"
-msgstr ""
+msgstr "Verknüpfung löschen"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
 msgid  "Resize table window"
-msgstr ""
+msgstr "Tabellenfenster - Größe aendern"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
 msgid  "Delete Column"
-msgstr ""
+msgstr "Spalte löschen"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
 msgid  "Move column"
-msgstr ""
+msgstr "Spalte verschieben"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
 msgid  "Add Column"
-msgstr ""
+msgstr "Spalte hinzufügen"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, table '$name$' does not exist."
-msgstr ""
+msgstr "Der Ausdruck ist ungültig, da keine Tabelle '$name$' existiert ."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr ""
+msgstr "Der Ausdruck ist ungültig, da der Feldname '$name$' nicht zugeordnet werden kann."
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "Die Abfrage enthält #num# Tabellen. Der aktuelle Datenbanktyp kann aber maximal #maxnum# Tabelle(n) pro Statement verarbeiten."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
 msgid  "Delete Table Window"
-msgstr ""
+msgstr "Tabellenfenster löschen"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 msgid  "Edit Column Description"
-msgstr ""
+msgstr "Spaltenbeschreibung ändern"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
 msgid  "Adjust column width"
-msgstr ""
+msgstr "Spaltenbreite ändern"
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 msgid  "(not sorted);ascending;descending"
-msgstr ""
+msgstr "(nicht sortiert);aufsteigend;absteigend"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
 msgid  "(no function);Group"
-msgstr ""
+msgstr "(keine Funktion);Gruppierung"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 msgid  "(no table)"
-msgstr ""
+msgstr "(keine Tabelle)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
 msgid  "The database only supports sorting for visible fields."
-msgstr ""
+msgstr "Die Datenbank unterstützt die Sortierung nur für sichtbare Felder."
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
 msgid  "Functions"
-msgstr ""
+msgstr "Funktionen"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
 msgid  "Table Name"
-msgstr ""
+msgstr "Tabellenname"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
 msgid  "Alias"
-msgstr ""
+msgstr "Aliasname"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
 msgid  "Distinct Values"
-msgstr ""
+msgstr "Eindeutige Werte"
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "Feld;Alias;Tabelle;Sortierung;Sichtbar;Funktion;Kriterium;oder;oder"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
 msgid  "There are too many columns."
-msgstr ""
+msgstr "Es sind zu viele Spalten vorhanden."
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "A condition cannot be applied to field [*]"
-msgstr ""
+msgstr "Eine Bedingung für Feld [*] ist nicht möglich"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 msgid  "The SQL statement created is too long."
-msgstr ""
+msgstr "Der erzeugte SQL Ausdruck ist zu lang."
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
 msgid  "Query is too complex"
-msgstr ""
+msgstr "Anfrage ist zu komplex"
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 msgid  "Nothing has been selected."
-msgstr ""
+msgstr "Es fehlt eine Selektion."
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
 msgid  "Too many search criteria"
-msgstr ""
+msgstr "Zu viele Suchkriterien"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 msgid  "SQL syntax error"
-msgstr ""
+msgstr "Fehler in der SQL Syntax"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "[*] cannot be used as a sort criterion."
-msgstr ""
+msgstr "Nach [*] kann nicht sortiert werden."
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
 msgid  "There are too many tables."
-msgstr ""
+msgstr "Es sind zu viele Tabellen vorhanden."
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "Bei Anfrage im SQL-Dialekt der Datenbank wird das Statement nicht übernommen"
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
 msgid  "Field name not found or not unique"
-msgstr ""
+msgstr "Feldname nicht gefunden oder eindeutig"
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
 msgid  "Join could not be processed"
-msgstr ""
+msgstr "Verknüpfung konnte nicht ausgeführt werden"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 msgid  "Syntax error in SQL statement"
-msgstr ""
+msgstr "Syntaxfehler im SQL-Ausdruck"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support table views."
-msgstr ""
+msgstr "Diese Datenbank unterstützt keine Tabellenansichten."
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "Diese Datenbank unterstützt keine Änderungen an vorhandenen Tabellensichten."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
 msgid  "Do you want to create a query instead?"
-msgstr ""
+msgstr "Möchten Sie statt dessen eine Abfrage erzeugen?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
 msgid  "No query could be created."
-msgstr ""
+msgstr "Es konnte keine Abfrage erstellt werden."
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
 msgid  "No query could be created because no fields were selected."
-msgstr ""
+msgstr "Es konnte keine Abfrage erstellt werden, da keine Felder ausgewählt wurden."
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "Die zugehörige Datenquelle wurde gelöscht. Es können keine dies bezüglichen Daten gespeichert werden."
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
 msgid  "The column '$name$' is unknown."
-msgstr ""
+msgstr "Die Spalte '$name$' ist unbekannt."
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
 msgid  "Columns can only be compared using '='."
-msgstr ""
+msgstr "Spalten dürfen nur mit '=' verglichen werden."
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
 msgid  "You must use a column name before 'LIKE'."
-msgstr ""
+msgstr "Vor dem 'WIE' muss ein Spaltenname stehen."
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "Die Spalte konnte nicht gefunden werden. Bitte beachten Sie, dass die Datenbank Gross- und Kleinschreibung unterscheidet."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Abfrageentwurf"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: View Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Ansichtsentwurf"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ wurde geändert.\nSollen die Änderungen gespeichert werden?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr ""
+msgstr "$object$ basiert auf einem SQL-Kommando, das nicht analysiert werden konnte."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr ""
+msgstr "$object$ wird in der SQL-Ansicht geöffnet."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
 msgid  "The table view"
-msgstr ""
+msgstr "Die Tabellensicht"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
 msgid  "The query"
-msgstr ""
+msgstr "Die Abfrage"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
 msgid  "The SQL statement"
-msgstr ""
+msgstr "Der SQL-Befehl"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "Die Abfrage erzeugt keine Ergebnismenge, und kann deswegen nicht Teil einer anderen Abfrage sein."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "Sowohl der Parameter ActiveConnection als auch DataSourceName fehlen oder sind falsch - der Abfrage-Entwurf kann nicht initialisiert werden."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Diese Relation existiert bereits. Möchten Sie diese bearbeiten oder eine neue Relation erstellen?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "Bearbeiten..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "Erstellen..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Relation design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Relationenentwurf"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support relations."
-msgstr ""
-
-#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Die Datenbank unterstützt keine Relationen!"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Wenn Sie diese Tabelle löschen werden alle zugehörigen Relationen ebenfalls gelöscht. Fortfahren?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Die Datenbank konnte die Relation nicht erzeugen. Evtl. werden für diese Art von Tabellen keine Fremdschlüssel unterstützt.\nBitte prüfen Sie die Dokumentation der Datenbank."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "Unbekannt;Text;Zahl;Datum/Zeit;Datum;Zeit;Ja/Nein;Währung;Memo;Zähler;Bild;Text (fix);Dezimal;Binärfeld (fix);Binärfeld;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Objekt;Distinct;Struktur;Feld;BLOB;CLOB;REF;OTHER;Bit (fix)"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Primärschlüssel einfügen/entfernen"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
 msgid  "No"
-msgstr ""
+msgstr "Nein"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "Aufsteigend"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "Absteigend"
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<keiner>"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Feldname"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
 msgid  "Field Name"
-msgstr ""
+msgstr "Feldname"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
 msgid  "Field ~type"
-msgstr ""
+msgstr "Feld~typ"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
 msgid  "Field Type"
-msgstr ""
+msgstr "Feldtyp"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
 msgid  "Field length"
-msgstr ""
+msgstr "Feldlänge"
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "Column Description"
-msgstr ""
+msgstr "Spaltenbeschreibung"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
 msgid  "Input required"
-msgstr ""
+msgstr "Eingabe erforderlich"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
 msgid  "~AutoValue"
-msgstr ""
+msgstr "~Auto-Wert"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
 msgid  "Field Properties"
-msgstr ""
+msgstr "Feldeigenschaften"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
 msgid  "Description:"
-msgstr ""
+msgstr "Beschreibung :"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
 msgid  "Table properties"
-msgstr ""
+msgstr "Tabelleneigenschaften"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
 msgid  "The text you entered is not a list element. "
-msgstr ""
+msgstr "Der eingegebenen Text ist kein Element der Liste. "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
 msgid  "Insert Rows"
-msgstr ""
+msgstr "Zeilen einfügen"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "Primärschlüssel"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
 msgid  "Modify cell"
-msgstr ""
+msgstr "Zelle ändern"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
 msgid  "Delete row"
-msgstr ""
+msgstr "Zeile löschen"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
 msgid  "Modify field type"
-msgstr ""
+msgstr "Feldtyp ändern"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
 msgid  "Insert row"
-msgstr ""
+msgstr "Zeile einfügen"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
 msgid  "Insert new row"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Neue Zeile einfügen"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
 msgid  "~Default value"
-msgstr ""
+msgstr "~Defaultwert"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
 msgid  "~Entry required"
-msgstr ""
+msgstr "~Eingabe erforderlich"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "~Length"
-msgstr ""
+msgstr "~Länge"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
-msgid  "~Length"
-msgstr ""
+msgstr "~Typ"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
 msgid  "Decimal ~places"
-msgstr ""
+msgstr "~Nachkommastellen"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
 msgid  "Format example"
-msgstr ""
+msgstr "Format-Beispiel"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Wählen Sie einen Wert, der in jedem neu eingefügten Datensatz als Standard erscheinen soll.\nWählen Sie den leeren String, wenn das Feld keinen solchen Standardwert haben soll."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Geben Sie hier einen Standardwert für das Feld an.\n\nWenn Sie später Daten in die Tabelle eingeben, wird in jedem neuen Datensatz diese Zeichenkette für das aktuelle Feld verwendet. Sie sollte deshalb der weiter unten einzugebenden Zellenformatierung genügen."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "Aktivieren Sie diese Option, wenn in diesem Feld keine NULL-Werte erlaubt sind, der Benutzer also immer Daten eingeben muss."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
 msgid  "Enter the maximum text length permitted."
-msgstr ""
+msgstr "Geben Sie die maximal zulässige Textlänge an."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
 msgid  "Enter the number format."
-msgstr ""
+msgstr "Legen Sie hier fest, welchen Typ die Zahl haben soll."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Geben Sie die Länge für Daten in diesem Feld an.\n\nFür Dezimal-Felder ist das die maximale Länge der eingegebenen Zahl, für Binärfelder die Länge des Datenblockes.\nWenn der Wert größer ist als der maximal für diese Datenbank zulässige, wird er entsprechend korrigiert."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "Geben Sie an, wie viel Nachkommastellen die Zahlen in diesem Feld enthalten sollen."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Hier sehen Sie, wie die Daten der aktuellen Spalte mit dem aktuell eingestellten Format - das Sie mittels des nebenstehenden Buttons ändern können - formatiert werden würden."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "Hiermit können Sie festlegen, wie die Daten der Tabelle bei der Ausgabe formatiert werden sollen."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Wählen Sie, ob dieses Feld Auto-Inkrement-Werte enthalten soll.\n\nSie können in ihm dann keine Daten direkt eingeben, sondern jeder neue Datensatz bekommt automatisch einen eigenen Wert (der sich durch Inkrementieren aus dem des vorigen Datensatzes ergibt) zugewiesen."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
-msgstr ""
+msgstr "Die Tabelle kann nicht gespeichert werden, da der Spaltenname \"$column$\" doppelt vergeben wurde."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgstr "Die Spalte \"$column$\" gehört zum Primärschlüssel. Falls sie gelöscht wird, wird auch der Primärschlüssel gelöscht. Wollen Sie fortfahren?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
 msgid  "Primary Key Affected"
-msgstr ""
+msgstr "Primärschlüssel betroffen"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
 msgid  "Column"
-msgstr ""
+msgstr "Spalte"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
 msgid  "Continue anyway?"
-msgstr ""
+msgstr "Wollen Sie trotzdem fortfahren?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "Warnung!"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "Die Tabelle konnte nicht gespeichert werden, da keine Verbindung zur Datenbank hergestellt werden konnte."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
-
-#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "Der Tabellenfilter konnte nicht angepasst werden, da die Datenquelle gelöscht wurde."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
 msgid  "No primary key"
-msgstr ""
+msgstr "Kein Primärschlüssel"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "In dieser Datenbank wird zur Datensatz-Identifizierung ein eindeutiger Index oder ein Primärschlüssel benötigt.\nSie werden erst dann Daten in die Tabelle eingeben können, wenn sie eine dieser beiden Struktur-Bedingungen erfüllt.\n\nSoll jetzt ein Primärschlüssel erzeugt werden?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Table Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Tabellenentwurf"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgstr "Die Spalte \"$column$\" konnte nicht geändert werden. Soll sie statt dessen gelöscht und das neue Format angehängt werden?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
 msgid  "Error while saving the table design"
-msgstr ""
+msgstr "Fehler beim Speichern des Tabellenentwurfes"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
 msgid  "The column $column$ could not be deleted."
-msgstr ""
+msgstr "Die Spalte $column$ konnte nicht gelöscht werden."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "Sie versuchen alle Spalten der Tabelle zu löschen. Ohne Spalten kann eine Tabelle nicht bestehen. Soll die Tabelle aus der Datenbank gelöscht werden? Falls nicht, bleibt die Tabelle unverändert."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "A~uto-increment statement"
-msgstr ""
+msgstr "A~uto-Increment-Ausdruck"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Geben Sie hier einen SQL Ausdruck für das Auto-Increment-Feld an.\n\nDieser Ausdruck wird beim Erzeugen der Tabelle direkt an die Datenbank übertragen."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Es konnten keine Typinformationen von der Datenbank ermittelt werden.\nDer Tabellenentwurfmodus ist für diese Datenquelle nicht verfügbar."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
 msgid  "change field name"
-msgstr ""
+msgstr "Feldnamen ändern"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
 msgid  "change field type"
-msgstr ""
+msgstr "Feldtyp ändern"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "change field description"
-msgstr ""
+msgstr "Feldbeschreibung ändern"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
 msgid  "change field attribute"
-msgstr ""
+msgstr "Feldattribut ändern"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support views."
-msgstr ""
+msgstr "Die Zieldatenbank unterstützt keine Sichten."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support primary keys."
-msgstr ""
+msgstr "Die Zieldatenbank unterstützt keine Primärschlüssel."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "Kein Dataaccess-Descriptor gefunden, oder es ist kein DataAccess-Descriptor verfügbar, der alle benötigten Informationen zur Verfügung stellen kann."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
 msgid  "Only tables and queries are supported at the moment."
-msgstr ""
+msgstr "Zur Zeit werden nur Tabellen und Abfragen unterstützt."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "Das ResultSet der Quelle für die Kopieroperation muss Lesezeichen unterstützen."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "Nicht unterstützter Spaltentyp ($type$) bei Quell-Spalte an Position $pos$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
 msgid  "Illegal number of initialization parameters."
-msgstr ""
+msgstr "Ungültige Anzahl von Initialisierungsparametern."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
 msgid  "An error occurred during initialization."
-msgstr ""
+msgstr "Während der Initialisierung ist ein Fehler aufgetreten."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
 msgid  "Unsupported setting in the copy source descriptor: $name$."
-msgstr ""
+msgstr "Nicht unterstützte Einstellung im Descriptor der Kopier-Quelle: $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
 msgid  "To copy a query, your connection must be able to provide queries."
-msgstr ""
+msgstr "Um eine Abfrage zu kopieren, muss Ihre Quelle Abfragen zur Verfügung stellen können."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
 msgid  "The given interaction handler is invalid."
-msgstr ""
+msgstr "Der angegebene Interaktions-Handler ist ungültig."
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
 msgid  "~Remember password until end of session"
-msgstr ""
+msgstr "Kennwort bis Sitzungsende ~merken"
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
 msgid  "~Remember password"
-msgstr ""
+msgstr "Kennwort dauerhaft ~speichern"

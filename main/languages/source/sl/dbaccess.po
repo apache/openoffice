@@ -33,3584 +33,3432 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
 msgid  "Tried to open the table $name$."
-msgstr ""
+msgstr "Poskušali ste odpreti tabelo $name$."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
 msgid  "No connection could be established."
-msgstr ""
+msgstr "Ni mogoče vzpostaviti povezave."
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "Tabela $name$ že obstaja. Tabela ni vidna, ker je bil njen prikaz filtriran."
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "Nimate pisalnega dostopa do konfiguracijskih podatkov, na katerih temelji predmet."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "Ni mogoče vzpostaviti povezave z zunanjim virom podatkov. Pojavila se je neznana napaka. Verjetno je okvarjen gonilnik."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "Ni mogoče vzpostaviti povezave z zunanjim virom podatkov. Za podani URL ni bil najden SDBC-gonilnik."
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "Ni mogoče vzpostaviti povezave z zunanjim virom podatkov. Upravitelja SDBC-gonilnikov ni mogoče naložiti."
 
 #: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Obrazec"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Poročilo"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "Vir podatkov ni bil shranjen. Za shranjevanje uporabite vmesnik XStorable."
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Podani ukaz ni izjava SELECT.\nDovoljene so samo poizvedbe."
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
 msgid  "No values were modified."
-msgstr ""
+msgstr "Nobena vrednost ni bila spremenjena."
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Vrednosti ni mogoče vstaviti. ResultSet ne podpira vmesnika XRowUpdate."
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Vrednosti ni mogoče vstaviti. ResultSet ne podpira vmesnika XResultSetUpdate."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
 msgid  "Values could not be modified, due to a missing condition statement."
-msgstr ""
+msgstr "Vrednosti ni mogoče spremeniti zaradi manjkajočega pogojne izjave."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
 msgid  "The adding of columns is not supported."
-msgstr ""
+msgstr "Dodajanje stolpcev ni podprto."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
 msgid  "The dropping of columns is not supported."
-msgstr ""
+msgstr "Brisanje stolpcev ni podprto."
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
 msgid  "The WHERE condition could not be created for the primary key."
-msgstr ""
+msgstr "Ni mogoče ustvariti pogoja WHERE za primarni ključ."
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
 msgid  "The column does not support the property '%value'."
-msgstr ""
+msgstr "Stolpec ne podpira lastnosti '%value'."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
 msgid  "The column is not searchable!"
-msgstr ""
+msgstr "Iskanje v stolpcu ni mogoče!"
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
 msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
-msgstr ""
+msgstr "Vrednost stolpcev ni vrste Sequence<sal_Int8>."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
 msgid  "The column is not valid."
-msgstr ""
+msgstr "Stolpec ni veljaven."
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
 msgid  "The column '%name' must be visible as a column."
-msgstr ""
+msgstr "Stolpec '%name' mora biti viden kot stolpec."
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
 msgid  "The interface XQueriesSupplier is not available."
-msgstr ""
+msgstr "Vmesnik XQueriesSupplier ni na voljo."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
 msgid  "The driver does not support this function."
-msgstr ""
+msgstr "Gonilnik ne podpira te funkcije."
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
 msgid  "An 'absolute(0)' call is not allowed."
-msgstr ""
+msgstr "Klic 'absolute(0)' ni dovoljen."
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
 msgid  "Relative positioning is not allowed in this state."
-msgstr ""
+msgstr "Relativno pozicioniranje ni dovoljeno v tem stanju."
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "Vrstice ni mogoče osvežiti, kadar je ResultSet postavljen za zadnjo vrstico."
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "Nove vrstice ni mogoče vstaviti, dokler ResultSet ni premaknjen v vstavljeno vrstico."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
 msgid  "A row cannot be modified in this state"
-msgstr ""
+msgstr "Vrstice ni mogoče spremeniti v tem stanju."
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
 msgid  "A row cannot be deleted in this state."
-msgstr ""
+msgstr "Vrstice ni mogoče izbrisati v tem stanju."
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
 msgid  "The driver does not support table renaming."
-msgstr ""
+msgstr "Gonilnik ne podpira preimenovanja tabele."
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions."
-msgstr ""
+msgstr "Gonilnik ne podpira spreminjanja opisov stolpcev."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "Gonilnik ne podpira spreminjanja opisov stolpcev prek zamenjave imena."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "Gonilnik ne podpira spreminjanja opisov stolpcev prek zamenjave indeksa."
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Datoteka \"$file$\" ne obstaja."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no table named \"$table$\"."
-msgstr ""
+msgstr "Tabela z imenom \"$table$\" ne obstaja."
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no query named \"$table$\"."
-msgstr ""
+msgstr "Poizvedba z imenom \"$table$\" ne obstaja."
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "V podatkovni zbirki obstajajo imena tabel, ki so v sporu z imeni obtoječih poizvedb. Za nemoteno uporabo poizvedb in tabel zagotovite različna imena."
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "Ukaz SQL, ki je pripeljal do te napake je:\n\n$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The SQL command does not describe a result set."
-msgstr ""
+msgstr "Ukaz SQL ne opisuje množice rezultatov."
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
 msgid  "The name must not be empty."
-msgstr ""
+msgstr "Ime ne sme biti prazno."
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
 msgid  "The container cannot contain NULL objects."
-msgstr ""
+msgstr "Hranilnik ne more vsebovati predmetov NULL."
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There already is an object with the given name."
-msgstr ""
+msgstr "Predmet z danim imenom že obstaja."
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
 msgid  "This object cannot be part of this container."
-msgstr ""
+msgstr "Predmet ne more biti del tega hranilnika."
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
 msgid  "The object already is, with a different name, part of the container."
-msgstr ""
+msgstr "Predmet je del hranilnika že pod drugim imenom."
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
 msgid  "Unable to find the document '$name$'."
-msgstr ""
+msgstr "Dokumenta '$name$' ni mogoče najti."
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "Dokumenta ni mogoče shraniti v $location$:\n$message$"
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "Napaka pri dostopanju do vira podatkov '$name$':\n$error$"
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
 msgid  "There exists no folder named \"$folder$\"."
-msgstr ""
+msgstr "Mapa z imenom \"$folder$\" ne obstaja."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
 msgid  "Cannot delete the before-first or after-last row."
-msgstr ""
+msgstr "Vrstice pred-prvo in za-zadnjo ni mogoče izbrisati."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.STRING.TEXT
 msgid  "Cannot delete the insert-row."
-msgstr ""
+msgstr "Vstavi-vrstice ni mogoče izbrisati."
 
 #: core/resource/strings.src#RID_STR_RESULT_IS_READONLY.STRING.TEXT
 msgid  "Result set is read only."
-msgstr ""
+msgstr "Množica rezultatov je samo za branje."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
 msgid  "DELETE privilege not available."
-msgstr ""
+msgstr "Pravica DELETE ni na voljo."
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "Current row is already deleted."
-msgstr ""
+msgstr "Trenutna vrstica je že izbrisana."
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
 msgid  "Current row could not be updated."
-msgstr ""
+msgstr "Trenutne vrstice ni mogoče posodobiti."
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
 msgid  "INSERT privilege not available."
-msgstr ""
+msgstr "Pravica INSERT ni na voljo."
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
 msgid  "Internal error: no statement object provided by the database driver."
-msgstr ""
+msgstr "Notranja napaka: gonilnikom zbirke podatkov ni bil podan noben predmet izjave."
 
 #: core/resource/strings.src#RID_STR_EXPRESSION1.STRING.TEXT
 msgid  "Expression1"
-msgstr ""
+msgstr "Izraz1"
 
 #: core/resource/strings.src#RID_STR_NO_SQL_COMMAND.STRING.TEXT
 msgid  "No SQL command was provided."
-msgstr ""
+msgstr "Ukaz SQL ni podan."
 
 #: core/resource/strings.src#RID_STR_INVALID_INDEX.STRING.TEXT
 msgid  "Invalid column index."
-msgstr ""
+msgstr "Neveljaven indeks stolpca."
 
 #: core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.STRING.TEXT
 msgid  "Invalid cursor state."
-msgstr ""
+msgstr "Neveljavno stanje kazalke."
 
 #: core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.STRING.TEXT
 msgid  "The cursor points to before the first or after the last row."
-msgstr ""
+msgstr "Kazalec kaže pred prvo ali za zadnjo vrstico."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.STRING.TEXT
 msgid  "The rows before the first and after the last row don't have a bookmark."
-msgstr ""
+msgstr "Vrstice pred prvo in za zadnjo vrstico nimajo zaznamka."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.STRING.TEXT
 msgid  "The current row is deleted, and thus doesn't have a bookmark."
-msgstr ""
+msgstr "Trenutna vrstica je izbrisana, zato nima zaznamka."
 
 #: core/resource/strings.src#RID_STR_NO_EMBEDDING.STRING.TEXT
 msgid  "Embedding of database documents is not supported."
-msgstr ""
+msgstr "Vdelava dokumentov zbirke podatkov ni podprta."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
 msgid  "A connection for the following URL was requested \"$name$\"."
-msgstr ""
+msgstr "Zahtevana je bila povezava za naslednji URL: \"$name$\"."
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
 msgid  "The extension is not installed."
-msgstr ""
+msgstr "Ta razširitev ni nameščena."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database ~name"
-msgstr ""
+msgstr "~Ime zbirke podatkov"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
 msgid  "User settings"
-msgstr ""
+msgstr "Uporabniške nastavitve"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
 msgid  "~Control user"
-msgstr ""
+msgstr "~Nadzorni uporabnik"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
 msgid  "~Administrator"
-msgstr ""
+msgstr "S~krbnik"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
 msgid  "~Domain user"
-msgstr ""
+msgstr "~Domenski uporabnik"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
 msgid  "P~assword..."
-msgstr ""
+msgstr "Ge~slo ..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
 msgid  "~Password..."
-msgstr ""
+msgstr "~Geslo ..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
 msgid  "Passwo~rd..."
-msgstr ""
+msgstr "Ges~lo ..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
 msgid  "~Backup file"
-msgstr ""
+msgstr "Datoteka varnostne kopi~je"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
 msgid  "..."
-msgstr ""
+msgstr "..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
 msgid  "Database settings"
-msgstr ""
+msgstr "Nastavitve zbirke podatkov"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE"
-msgstr ""
+msgstr "S~YSDEVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "TRANSACTI~ONLOG"
-msgstr ""
+msgstr "TRANSACTI~ONLOG"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE"
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
+msgstr "DATAD~EVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
 msgid  "Transaction ~file (MB)"
-msgstr ""
+msgstr "T~ransakcijska datoteka (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data~base size (MB)"
-msgstr ""
+msgstr "Velikost z~birke podatkov (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "Velikost podatkovnega ~medpomnilnika (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
 msgid  "Backup file information"
-msgstr ""
+msgstr "Podatki o datoteki varnostne kopije"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
 msgid  "Create New Adabas D Database"
-msgstr ""
+msgstr "Ustvari novo zbirko podatkov Adabas D"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
 msgid  "No entry could be written in the configuration file."
-msgstr ""
+msgstr "V konfiguracijsko datoteko ni bilo mogoče zapisati nobenega vnosa."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
 msgid  "An error occurred as the DB files were being created."
-msgstr ""
+msgstr "Pri ustvarjanju datotek zbirke podatkov je prišlo do napake."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
 msgid  "An error occurred as the system tables were being created."
-msgstr ""
+msgstr "Pri ustvarjanju sistemskih tabel je prišlo do napake."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
 msgid  "The backup file entered does not exist."
-msgstr ""
+msgstr "Vnesena datoteka varnostne kopije ne obstaja."
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
-msgstr ""
+msgstr "Popolnoma ustrezna datoteka ne sme biti daljša od \\'#\\' znakov."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
 msgid  "The administrator and the control user cannot have the same name!"
-msgstr ""
+msgstr "Skrbnik in nadzorni uporabnik ne moreta imeti istega imena!"
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
 msgid  "No name has been entered for the $name$ file!"
-msgstr ""
+msgstr "Za datoteko $name$ niste vnesli imena!"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
 msgid  "You have to have administrator rights to create a new database!"
-msgstr ""
+msgstr "Za ustvarjanje nove zbirke podatkov potrebujete skrbniške pravice!"
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
 msgid  "The specified file name or directory does not exist."
-msgstr ""
+msgstr "Navedeno ime datoteke ali mape ne obstaja."
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
 msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Nove zbirke podatkov ni mogoče ustvariti.\nPreverite namestitev Adabas D, še posebej spremenljivki \"DBROOT\" in \"DBWORK\"."
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
+msgstr "Opozorilo!"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
 msgid  "Creating database files."
-msgstr ""
+msgstr "Ustvarjanje datotek zbirke podatkov."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
 msgid  "Creating database configuration file."
-msgstr ""
+msgstr "Ustvarjanje konfiguracijske datoteke zbirke podatkov."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
 msgid  "Starting database for the first time."
-msgstr ""
+msgstr "Prvi zagon zbirke podatkov."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
 msgid  "The name entered already exists."
-msgstr ""
+msgstr "Vneseno ime že obstaja."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "Datotekam zbirke podatkov ni mogoče nastaviti privzetih imen. Skupna dolžina presega 40 znakov."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "Datotekam zbirke podatkov ni mogoče nastaviti privzetih imen. Ni pravic za pisanje."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Trenutno zbirko podatkov je potrebno pretvoriti. Vnesite nadzornega uporabnika in geslo."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "V geslu presledki niso dovoljeni. Vnesite novo geslo."
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
 msgid  "Database Document Macro Migration"
-msgstr ""
+msgstr "Migracija makrov dokumenta zbirke podatkov"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
 msgid  "Prepare"
-msgstr ""
+msgstr "Pripravi"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
 msgid  "Backup Document"
-msgstr ""
+msgstr "Naredi varnostno kopijo dokumenta"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
 msgid  "Migrate"
-msgstr ""
+msgstr "Migriraj"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr ""
+msgstr "Povzetek"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Welcome to the Database Macro Migration Wizard"
-msgstr ""
+msgstr "Dobrodošli v čarovniku za migracijo makrov zbirke podatkov"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Ta čarovnik vas bo vodil skozi postopek migracije vaših makrov.\n\nOb zaključku bodo vsi makri, ki so bili prej vdelani v obrazce in poročila trenutnega dokumenta zbirke podatkov, prestavljeni v sam dokument. Knjižnice bodo po potrebi preimenovane.\n\nČe obrazci in poročila vsebujejo sklice na te makre, bodo ti sklici popravljeni, kjer bo to mogoče.\n\nPreden se migracija lahko začne, je potrebno zapreti vse obrazce, poročila, poizvedbe in tabele, ki pripadajo dokumentu. Pritisnite 'Naprej', da se to tudi zgodi."
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "Vseh predmetov ni bilo mogoče zapreti. Prosim, zaprite jih ročno in ponovno zaženite čarovnika."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Backup your Document"
-msgstr ""
+msgstr "Naredite varnostno kopijo dokumenta"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "Da bi se lahko vrnili v stanje pred migracijo, bo narejena varnostna kopija dokumenta zbirke podatkov na mestu po vašem izboru. Vsi posegi čarovnika bodo izvedeni nad izvornim dokumentom, medtem ko bo varnostna kopija ostala nedotaknjena."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
 msgid  "Save To:"
-msgstr ""
+msgstr "Shrani v:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
 msgid  "Browse ..."
-msgstr ""
+msgstr "Prebrskaj ..."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Pritisnite 'Naprej', če želite shraniti kopijo dokumenta in začeti z migracijo."
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Migration Progress"
-msgstr ""
+msgstr "Napredek migracije"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "Dokument zbirke podatkov vsebuje $forms$ obrazcev in $reports$ poročil, ki so trenutno v obdelavi:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
 msgid  "Current object:"
-msgstr ""
+msgstr "Trenutni predmet:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Current progress:"
-msgstr ""
+msgstr "Trenutni napredek:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Overall progress:"
-msgstr ""
+msgstr "Skupni napredek:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
 msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "dokument $current$ od $overall$"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
-
-#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Summary"
-msgstr ""
+msgstr "Vsi obrazci in poročila so bili uspešno obdelani. Pritisnite 'Naprej' za prikaz povzetka."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "Migracija je uspela. Spodaj je dnevnik opravil, opravljenih na vašem dokumentu."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "Migracija ni uspela. Če vas zanimajo podrobnosti, preučite dnevnik migracije."
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
 msgid  "Form '$name$'"
-msgstr ""
+msgstr "Obrazec '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
 msgid  "Report '$name$'"
-msgstr ""
-
-#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
-msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "Poročilo '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
 msgid  "Database Document"
-msgstr ""
+msgstr "Dokument zbirke podatkov"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
 msgid  "saved copy to $location$"
-msgstr ""
+msgstr "kopija shranjena v $location$"
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
 msgid  "migrated $type$ library '$old$' to '$new$'"
-msgstr ""
+msgstr "knjižnica $type$ '$old$' migrirana v '$new$'"
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
 msgid  "$type$ library '$library$'"
-msgstr ""
+msgstr "knjižnica $type$ '$library$'"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
 msgid  "migrating libraries ..."
-msgstr ""
+msgstr "migriranje knjižnic ..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic"
-msgstr ""
+msgstr "%PRODUCTNAME Basic"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
 msgid  "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
 msgid  "BeanShell"
-msgstr ""
+msgstr "BeanShell"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
 msgid  "Java"
-msgstr ""
+msgstr "Java"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
 msgid  "Python"
-msgstr ""
+msgstr "Python"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
 msgid  "dialog"
-msgstr ""
+msgstr "pogovorno okno"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
 msgid  "Error(s)"
-msgstr ""
+msgstr "Napake"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
 msgid  "Warnings"
-msgstr ""
+msgstr "Opozorila"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
 msgid  "caught exception: "
-msgstr ""
+msgstr "ujeta izjema: "
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "Mesto za varnostno kopijo se mora razlikovati od mesta samega dokumenta."
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
 msgid  "Invalid number of initialization arguments. Expected 1."
-msgstr ""
+msgstr "Naveljavno število parametrov inicializacije. Pričakovan je le eden."
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
 msgid  "No database document found in the initialization arguments."
-msgstr ""
+msgstr "V parametrih inicializacije ni mogoče najti nobenega dokumenta zbirke podatkov."
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
 msgid  "Not applicable to read-only documents."
-msgstr ""
+msgstr "Ne nanaša se na dokumente, ki so samo za branje."
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "Tabeli in poizvedbi ne morete dati enakega imena. Uporabite ime, ki še ni v uporabljeno za ime tabele ali poizvedbe."
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Tabela"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "Poizvedba"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "Podana povezava ne predstavlja veljavnega ponudnika poizvedb in/ali tabel."
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
 msgid  "The given object is no table object."
-msgstr ""
+msgstr "Podani predmet ni predmet tabele."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Neveljavna vrsta sestave - potrebno je navesti vrednost iz from com.sun.star.sdb.tools.CompositionType."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Neveljavna vrsta ukaza - dovoljena sta le ukaza TABLE in QUERY iz com.sun.star.sdb.CommandType."
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
 msgid  "Create Form in Design View..."
-msgstr ""
+msgstr "Ustvari obrazec v oblikovalnem pogledu ..."
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Form..."
-msgstr ""
+msgstr "Ustvari obrazec s pomočjo čarovnika ..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
-msgstr ""
+msgstr "Ustvari poročilo s pomočjo čarovnika ..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
 msgid  "Create Report in Design View..."
-msgstr ""
+msgstr "Ustvari poročilo v oblikovalnem pogledu ..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
 msgid  "Create Query in Design View..."
-msgstr ""
+msgstr "Ustvari poizvedbo v oblikovalnem pogledu ..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
 msgid  "Create Query in SQL View..."
-msgstr ""
+msgstr "Ustvari poizvedbo v pogledu SQL ..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Query..."
-msgstr ""
+msgstr "Ustvari poizvedbo s pomočjo čarovnika ..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
-msgstr ""
+msgstr "Ustvari tabelo v oblikovalnem pogledu ..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Table..."
-msgstr ""
+msgstr "Ustvari tabelo s pomočjo čarovnika ..."
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
 msgid  "Create View..."
-msgstr ""
+msgstr "Ustvari pogled ..."
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "Obrazci"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
-msgstr ""
+msgstr "Poročila"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
 msgid  "Form..."
-msgstr ""
+msgstr "Obrazec ..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
 msgid  "Report..."
-msgstr ""
+msgstr "Poročilo ..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
 msgid  "View (Simple)..."
-msgstr ""
+msgstr "Pogled (enostavno) ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
 msgid  "Paste Special..."
-msgstr ""
+msgstr "Posebno lepljenje ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
 msgid  "Delete"
-msgstr ""
+msgstr "Izbriši"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
 msgid  "Rename"
-msgstr ""
+msgstr "Preimenuj"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
 msgid  "Edit"
-msgstr ""
+msgstr "Uredi"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
-msgstr ""
+msgstr "Uredi v pogledu SQL ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
-msgstr ""
+msgstr "Odpri"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
 msgid  "Create as View"
-msgstr ""
+msgstr "Ustvari kot pogled"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
-msgstr ""
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
-msgid  "Report..."
-msgstr ""
+msgstr "Čarovnik za obrazce ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Čarovnik za poročila ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
 msgid  "Select All"
-msgstr ""
+msgstr "Izberi vse"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
 msgid  "~Database"
-msgstr ""
+msgstr "Zbirka pod~atkov"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr ""
+msgstr "Lastnosti ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
 msgid  "Connection Type..."
-msgstr ""
+msgstr "Vrsta povezave ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
 msgid  "Advanced Settings..."
-msgstr ""
+msgstr "Napredne nastavitve ..."
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
 msgid  "Do you want to delete the data source '%1'?"
-msgstr ""
+msgstr "Ali želite izbrisati vir podatkov '%1'?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base"
-msgstr ""
+msgstr " - %PRODUCTNAME Base"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Čarovnik vas bo vodil po korakih, potrebnih za izdelavo poročila."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Za nov obrazec morate določiti vir zapisov, kontrolnike in lastnosti kontrolnikov."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Ustvari poročilo z določitvijo vira zapisov, kontrolnikov in lastnosti kontrolnikov."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "Čarovnik vas bo vodil skozi korake za izdelavo obrazca."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Za novo poizvedbo morate določiti filtre, vnosne tabele, imena polj in lastnosti razvrščanja in združevanja."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "Poizvedbo lahko ustvarite tudi tako, da neposredno vnesete SQL-izjavo."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Čarovnik vas bo vodil po korakih, s katerimi ustvarite poizvedbo."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Ustvarite tabelo, tako da določite imena polj in njihove lastnosti ter vrste podatkov."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Izberite vzorec poslovne in osebne tabele, ki ga boste prilagodili in ustvarili novo tabelo."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Ustvarite pogled, tako da določite tabele in imena polj, ki jih želite prikazati."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Opens the view wizard"
-msgstr ""
+msgstr "Odpre čarovnika za poglede"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "Zbirka podatkov"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
 msgid  "Tasks"
-msgstr ""
+msgstr "Opravila"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "Opis"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "Predogled"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
 msgid  "Disable Preview"
-msgstr ""
-
-#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "Onemogoči predogled"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
 msgid  "None"
-msgstr ""
+msgstr "Brez"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
 msgid  "Document Information"
-msgstr ""
+msgstr "Podatki o dokumentu"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
 msgid  "Document"
-msgstr ""
+msgstr "Dokument"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Obrazec"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Poročilo"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
 msgid  "F~orm name"
-msgstr ""
+msgstr "Ime ~obrazca"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
 msgid  "~Report name"
-msgstr ""
+msgstr "Ime po~ročila"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
 msgid  "F~older name"
-msgstr ""
+msgstr "Ime ma~pe"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
 msgid  "The document contains forms or reports with embedded macros."
-msgstr ""
+msgstr "Dokument vsebuje obrazce ali poročila z vdelanimi makri."
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Makri morajo biti vdelani v sam dokument zbirke podatkov.\n\nDokument lahko uporabljate na enak način kot prej, razmislite pa o migraciji makrov. Pri tem vam bo pomagal čarovnik, ki ga najdete v meniju 'Orodja / Migriraj makre ...'.\n\nUpoštevajte, da makrov v sam dokument zbirke podatkov ne boste vdelali, vse dokler ne opravite migracije."
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
 msgid  "Embedded database"
-msgstr ""
+msgstr "Vdelana zbirka podatkov"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
 msgid  "You cannot select different categories."
-msgstr ""
+msgstr "Ne smete izbrati različnih kategorij."
 
 #: ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.STRING.TEXT
 msgid  "Unsupported object type found ($type$)."
-msgstr ""
+msgstr "Najdena nepodprta vrsta predmeta ($type$)."
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
-
-#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Tabela #"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 msgid  "Do you want to delete the selected data?"
-msgstr ""
+msgstr "Ali želite izbrisati izbrane podatke?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
 msgid  "(filtered)"
-msgstr ""
+msgstr "(filtrirano)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "Napaka pri nastavljanju pogojev razvrščanja"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "Napaka pri nastavljanju pogojev filtriranja"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
 msgid  "Connection lost"
-msgstr ""
+msgstr "Povezava prekinjena"
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "Poizvedbe"
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "Tabele"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 msgid  "Edit ~Database File..."
-msgstr ""
+msgstr "Uredi datoteko ~podatkovne zbirke ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
 msgid  "Registered databases ..."
-msgstr ""
+msgstr "Registrirane zbirke podatkov ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
 msgid  "Disco~nnect"
-msgstr ""
+msgstr "Preki~ni povezavo"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
 msgid  "Confirm Deletion"
-msgstr ""
+msgstr "Potrditev brisanja"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
 msgid  "Do you want to delete the table '%1'?"
-msgstr ""
+msgstr "Ali želite izbrisati tabelo '%1'?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
 msgid  "The query already exists. Do you want to delete it?"
-msgstr ""
+msgstr "Poizvedba že obstaja. Ali jo želite izbrisati?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "Povezava z zbirko podatkov je bila prekinjena. Ali jo želite obnoviti?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
 msgid  "Warnings encountered"
-msgstr ""
+msgstr "Zaznana so opozorila"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "Pri sprejemanju tabel je povezava z zbirko podatkov izdala opozorila."
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
 msgid  "Connecting to \"$name$\" ..."
-msgstr ""
+msgstr "Vzpostavljanje povezave z \"$name$\" ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
 msgid  "Loading query $name$ ..."
-msgstr ""
+msgstr "Nalaganje poizvedbe $name$ ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
 msgid  "Loading table $name$ ..."
-msgstr ""
+msgstr "Nalaganje tabele $name$ ..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
 msgid  "No table format could be found."
-msgstr ""
+msgstr "Ni mogoče najti oblike tabele."
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
+msgstr "Ni mogoče vzpostaviti povezave z virom podatkov \"$name$\"."
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
 msgid  "Rebuild"
-msgstr ""
+msgstr "Ponovno zgradi"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 msgid  "Column ~Format..."
-msgstr ""
+msgstr "~Oblika stolpca ..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
 msgid  "Copy Column D~escription"
-msgstr ""
+msgstr "~Kopiraj opis stolpca"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
 msgid  "Table Format..."
-msgstr ""
+msgstr "Oblika tabele ..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
 msgid  "Row Height..."
-msgstr ""
+msgstr "Višina vrstice ..."
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
 msgid  "Undo: Data Input"
-msgstr ""
+msgstr "Razveljavi: vnos podatkov"
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 msgid  "Save current record"
-msgstr ""
+msgstr "Shrani trenutni zapis"
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
 msgid  "Query #"
-msgstr ""
+msgstr "Poizvedba #"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
+msgstr "Tabela #"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
 msgid  "View #"
-msgstr ""
+msgstr "Pogled #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name \"#\" already exists."
-msgstr ""
+msgstr "Ime \"#\" že obstaja."
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
 msgid  "No matching column names were found."
-msgstr ""
+msgstr "Ujemajočih imen stolpcev ni mogoče najti."
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
 msgid  "An error occurred. Do you want to continue copying?"
-msgstr ""
+msgstr "Nastala je napaka. Ali želite nadaljevati kopiranje?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
 msgid  "Data source table view"
-msgstr ""
+msgstr "Pogled tabele vira podatkov"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
 msgid  "Shows the selected table or query."
-msgstr ""
+msgstr "Prikaže izbrano tabelo ali poizvedbo."
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
 msgid  "Table name"
-msgstr ""
+msgstr "Ime tabele"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
 msgid  "Insert data"
-msgstr ""
+msgstr "Vstavljanje podatkov"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
 msgid  "Delete data"
-msgstr ""
+msgstr "Brisanje podatkov"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
 msgid  "Modify data"
-msgstr ""
+msgstr "Spreminjanje podatkov"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
 msgid  "Alter structure"
-msgstr ""
+msgstr "Spreminjanje strukture"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
 msgid  "Read data"
-msgstr ""
+msgstr "Branje podatkov"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
 msgid  "Modify references"
-msgstr ""
+msgstr "Spreminjanje sklicev"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
 msgid  "Drop structure"
-msgstr ""
+msgstr "Ovrži strukturo"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "Razvrsti naraščajoče"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
 msgid  "Sort Descending"
-msgstr ""
+msgstr "Razvrsti padajoče"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "Ni se mogoče povezati z upraviteljem gonilnikov SDBC (#servicename#)."
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 msgid  "A driver is not registered for the URL #connurl#."
-msgstr ""
+msgstr "Za URL #connurl# ni registriranega gonilnika."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
 msgid  "No connection could be established for the URL #connurl#."
-msgstr ""
+msgstr "Ni mogoče vzpostaviti povezave za URL #connurl#."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "Preverite trenutne nastavitve, npr. uporabniško ime in geslo."
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "Povezava je vzpostavljena, vendar informacije o tabelah zbirke podatkov niso na voljo."
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
 msgid  "All tables"
-msgstr ""
+msgstr "Vse tabele"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
 msgid  "All views"
-msgstr ""
+msgstr "Vsi pogledi"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
 msgid  "All tables and views"
-msgstr ""
+msgstr "Vse tabele in pogledi"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 msgid  "Modify SQL statement(s)"
-msgstr ""
+msgstr "Spremeni SQL-izjavo"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
 msgid  "Database files"
-msgstr ""
+msgstr "Datoteke zbirke podatkov"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE:"
-msgstr ""
+msgstr "S~YSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "~TRANSACTIONLOG:"
-msgstr ""
+msgstr "~TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE:"
-msgstr ""
+msgstr "DATAD~EVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
 msgid  "Database sizes"
-msgstr ""
+msgstr "Velikosti zbirk podatkov"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
 msgid  "S~ize (MB):"
-msgstr ""
+msgstr "Vel~ikost (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
 msgid  "~Free memory space (MB):"
-msgstr ""
+msgstr "Pr~osti pomnilnik (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
 msgid  "~Memory utilization (in %):"
-msgstr ""
+msgstr "Zasedenost po~mnilnika (v %):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
 msgid  "Database Statistics"
-msgstr ""
+msgstr "Statistika zbirke podatkov"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
 msgid  "Contains the system tables"
-msgstr ""
+msgstr "Vsebuje sistemske tabele"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
 msgid  "Contains information about transaction"
-msgstr ""
+msgstr "Vsebuje podatke o transakciji"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
 msgid  "Contains all data files"
-msgstr ""
+msgstr "Vsebuje vse podatkovne datoteke"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
 msgid  "Total size of the database files"
-msgstr ""
+msgstr "Skupna velikost datotek zbirke podatkov"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 msgid  "Currently available space before a new datadev file is created."
-msgstr ""
+msgstr "Trenutno razpoložljivi prostor, preden se ustvari nova datoteka datadev."
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
 msgid  "Currently used memory"
-msgstr ""
+msgstr "Trenutno porabljeni pomnilnik"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "Ni mogoče prikazati informacij, ker ne obstajajo dostopne pravice za zahtevane sistemske tabele."
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
 msgid  "~Database name"
-msgstr ""
+msgstr "I~me zbirke podatkov"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
 msgid  "Se~rver / Port"
-msgstr ""
+msgstr "St~režnik / vrata"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
 msgid  "~Server"
-msgstr ""
+msgstr "~Strežnik"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
 msgid  "~Port"
-msgstr ""
+msgstr "~Vrata"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Privzeto: 3306"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
-msgstr ""
+msgstr "V~tičnica"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
 msgid  "Named p~ipe"
-msgstr ""
+msgstr "Poimenovana ~cev"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "Tabele"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "Poizvedbe"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr ""
+msgstr "~Dodaj"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "Z~apri"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
 msgid  "Add Tables"
-msgstr ""
+msgstr "Dodaj tabele"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
 msgid  "Add Table or Query"
-msgstr ""
+msgstr "Dodaj tabelo ali poizvedbo"
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Možnosti"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 msgid  "Use SQL92 naming constraints"
-msgstr ""
+msgstr "Uporabi omejitve poimenovanja SQL92"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
 msgid  "Append the table alias name on SELECT statements"
-msgstr ""
+msgstr "Tabeli pripni vzdevek v izjavah SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
 msgid  "Use keyword AS before table alias names"
-msgstr ""
+msgstr "Uporabi ključno besedo AS pred vzdevki tabele"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 msgid  "Use Outer Join syntax '{OJ }'"
-msgstr ""
+msgstr "Uporabi skladnjo Outer Join '{OJ }'"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
 msgid  "Ignore the privileges from the database driver"
-msgstr ""
+msgstr "Prezri pravice gonilnika za zbirko podatkov"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
 msgid  "Replace named parameters with '?'"
-msgstr ""
+msgstr "Zamenjaj imenovane parametre z '?'"
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
 msgid  "Display version columns (when available)"
-msgstr ""
+msgstr "Prikaži stolpce različice (kadar so na voljo)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 msgid  "Use catalog name in SELECT statements"
-msgstr ""
+msgstr "Uporabi ime kataloga v izjavah SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
 msgid  "Use schema name in SELECT statements"
-msgstr ""
+msgstr "Uporabi ime sheme v izjavah SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
 msgid  "Create index with ASC or DESC statement"
-msgstr ""
+msgstr "Z izjavo ASC ali DESC ustvari indeks"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
 msgid  "End text lines with CR+LF"
-msgstr ""
+msgstr "Zaključi vrstice besedila s CR+LF"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
 msgid  "Ignore currency field information"
-msgstr ""
+msgstr "Prezri podatke iz valutnega polja"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
 msgid  "Form data input checks for required fields"
-msgstr ""
+msgstr "Preverjanje vnesenih podatkov v obveznih poljih obrazcev"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
 msgid  "Use ODBC conformant date/time literals"
-msgstr ""
+msgstr "Uporabi literale za datum/čas, skladne z ODBC"
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
 msgid  "Supports primary keys"
-msgstr ""
+msgstr "Podpira primarne ključe"
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
 msgid  "Respect the result set type from the database driver"
-msgstr ""
+msgstr "Spoštuj vrsto rezultatov gonilnika za zbirko podatkov"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Default"
-msgstr ""
+msgstr "Privzeto"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Mixed"
-msgstr ""
+msgstr "Mešano"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "MS Access"
-msgstr ""
+msgstr "MS Access"
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
 msgid  "Comparison of Boolean values"
-msgstr ""
+msgstr "Primerjava logičnih vrednosti"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
-msgstr ""
+msgstr "Vrstice za razpoznavanje vrst stolpcev"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Nastavitve"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
 msgid  "Re~trieve generated values"
-msgstr ""
+msgstr "Pri~dobi ustvarjene vrednosti"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
 msgid  "~Auto-increment statement"
-msgstr ""
+msgstr "Izj~ava za samodejno povečanje"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
 msgid  "~Query of generated values"
-msgstr ""
+msgstr "~Poizvedba ustvarjenih vrednosti"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
 msgid  "Generated Values"
-msgstr ""
+msgstr "Ustvarjene vrednosti"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 msgid  "Special Settings"
-msgstr ""
+msgstr "Posebne nastavitve"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
-msgstr ""
+msgstr "Napredne nastavitve"
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the dBASE files"
-msgstr ""
+msgstr "Pot do datotek dBASE"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the text files"
-msgstr ""
+msgstr "Pot do besedilnih datotek"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the spreadsheet document"
-msgstr ""
+msgstr "Pot do preglednice"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
 msgid  "Name of the ODBC data source on your system"
-msgstr ""
+msgstr "Ime vira podatkov ODBC v sistemu"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the MySQL database"
-msgstr ""
+msgstr "Ime zbirke podatkov MySQL"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Oracle database"
-msgstr ""
+msgstr "Ime zbirke podatkov Oracle"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Adabas D database"
-msgstr ""
+msgstr "Ime zbirke podatkov Adabas D"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
 msgid  "Microsoft Access database file"
-msgstr ""
+msgstr "Datoteka zbirke podatkov Microsoft Access"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "Dodatne nastavitve niso potrebne. Povezavo preverite z gumbom '%test'."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
 msgid  "Datasource URL"
-msgstr ""
+msgstr "URL vira podatkov"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "Ime ~gostitelja"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
 msgid  "~Mozilla profile name"
-msgstr ""
+msgstr "Ime profila ~Mozilla"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
 msgid  "~Thunderbird profile name"
-msgstr ""
+msgstr "Ime profila ~Thunderbird"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 msgid  "Browse"
-msgstr ""
+msgstr "Prebrskaj"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database name"
-msgstr ""
+msgstr "Ime zbirke podatkov"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 msgid  "Server"
-msgstr ""
+msgstr "Strežnik"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
 msgid  "Base ~DN"
-msgstr ""
+msgstr "Base ~DN"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
 msgid  "~Port number"
-msgstr ""
+msgstr "~Številka vrat"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 msgid  "Data conversion"
-msgstr ""
+msgstr "Pretvorba podatkov"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
 msgid  "~Character set"
-msgstr ""
+msgstr "~Nabor znakov"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "Izberite vrste datotek, do katerih želite dostopati"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
 msgid  "Plain text files (*.txt)"
-msgstr ""
+msgstr "Navadne datoteke z besedilom (*.txt)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 msgid  "'Comma separated value' files (*.csv)"
-msgstr ""
+msgstr "Datoteke 'vrednosti, ločenih z vejico' (*.csv)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
 msgid  "Custom:"
-msgstr ""
+msgstr "Po meri:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Custom: *.abc"
-msgstr ""
+msgstr "Po meri: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
 msgid  "Row Format"
-msgstr ""
+msgstr "Oblika vrstic"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Field separator"
-msgstr ""
+msgstr "Ločilo polj"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Text separator"
-msgstr ""
+msgstr "Ločilo besedila"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Decimal separator"
-msgstr ""
+msgstr "Decimalno ločilo"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Thousands separator"
-msgstr ""
+msgstr "Ločilo tisočic"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
 msgid  "~Text contains headers"
-msgstr ""
+msgstr "~Besedilo vsebuje glave"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
 msgid  "{None}"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ""
+msgstr "{brez}"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 msgid  "#1 must be set."
-msgstr ""
+msgstr "#1 mora biti nastavljen."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
 msgid  "#1 and #2 must be different."
-msgstr ""
+msgstr "#1 in #2 se morata razlikovati."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
 msgid  "Wildcards such as ?,* are not allowed in #1."
-msgstr ""
+msgstr "Nadomestni znaki, kot sta ? in *, v #1 niso dovoljeni."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "JDBC d~river class"
-msgstr ""
+msgstr "~Razred gonilnikov JDBC"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
-msgstr ""
+msgstr "Preizkusi razred"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
 msgid  "Socket"
-msgstr ""
+msgstr "Vtičnica"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
 msgid  "Save"
-msgstr ""
+msgstr "Shrani"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Create New Directory"
-msgstr ""
+msgstr "Ustvari novo mapo"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Up One Level"
-msgstr ""
+msgstr "Eno raven višje"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
 msgid  "File ~name:"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "~Ime datoteke:"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
 msgid  "~Path:"
-msgstr ""
+msgstr "~Pot:"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
 msgid  "Folder"
-msgstr ""
+msgstr "Mapa"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "Datoteka že obstaja. Jo želite prepisati?"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Splošno"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "Ime ~gostitelja"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
-msgstr ""
+msgstr "Overjanje uporabnika"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "~Uporabniško ime"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
 msgid  "Password required"
-msgstr ""
+msgstr "Potrebno je geslo"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "JDBC properties"
-msgstr ""
+msgstr "Lastnosti JDBC"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "~JDBC driver class"
-msgstr ""
+msgstr "Razred gonilnikov ~JDBC"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test Class"
-msgstr ""
+msgstr "Preizkusi razred"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "Test Connection"
-msgstr ""
+msgstr "Preizkusi povezavo"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
 msgid  "No Adabas D data sources were found on your system."
-msgstr ""
+msgstr "V sistemu ni mogoče najti virov podatkov vrste Adabas D."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
 msgid  "Connection Test"
-msgstr ""
+msgstr "Preizkus povezave"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
 msgid  "The connection was established successfully."
-msgstr ""
+msgstr "Povezava je bila uspešno vzpostavljena."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "Povezave ni mogoče vzpostaviti."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver was loaded successfully."
-msgstr ""
+msgstr "Gonilnik JDBC je bil uspešno naložen."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver could not be loaded."
-msgstr ""
+msgstr "Gonilnika JDBC ni bilo mogoče naložiti."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
 msgid  "MS Access file"
-msgstr ""
+msgstr "Datoteka MS Access"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
 msgid  "MS Access 2007 file"
-msgstr ""
+msgstr "Datoteka MS Access 2007"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
 msgid  "A password is needed to connect to the data source \"$name$\"."
-msgstr ""
+msgstr "Za povezavo z virom podatkov \"$name$\" je potrebno geslo."
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Mapa\n\n$path$\n\nne obstaja. Jo želite ustvariti?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
 msgid  "The directory $name$ could not be created."
-msgstr ""
+msgstr "Mape $name$ ni mogoče ustvariti."
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
 msgid  "Convert Database"
-msgstr ""
+msgstr "Pretvori zbirko podatkov"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 msgid  "Please enter the ~password for the user 'DOMAIN'."
-msgstr ""
+msgstr "Prosimo, vnesite ~geslo za uporabnika 'DOMAIN'."
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
 msgid  "Tables Filter"
-msgstr ""
+msgstr "Filter tabel"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Tables and table filter"
-msgstr ""
+msgstr "Tabele in filter tabele"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Mark the tables that should be visible for the applications."
-msgstr ""
+msgstr "Označite tabele, ki naj bodo vidne aplikacijam."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
 msgid  "Database Wizard"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
-msgid  "Database Wizard"
-msgstr ""
+msgstr "Čarovnik za zbirke podatkov"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
 msgid  "Select database"
-msgstr ""
+msgstr "Izberite zbirko podatkov"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 msgid  "Set up dBASE connection"
-msgstr ""
+msgstr "Nastavi povezavo na dBase"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
 msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Nastavi povezavo do besedilnih datotek"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
 msgid  "Set up Microsoft Access connection"
-msgstr ""
+msgstr "Nastavi povezavo na MS Access"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
 msgid  "Set up LDAP connection"
-msgstr ""
+msgstr "Nastavi povezavo na LDAP"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
 msgid  "Set up Adabas D connection"
-msgstr ""
+msgstr "Nastavi povezavo na Adabas D"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
 msgid  "Set up ADO connection"
-msgstr ""
+msgstr "Nastavi povezavo na ADO"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
 msgid  "Set up JDBC connection"
-msgstr ""
+msgstr "Nastavi povezavo prek JDBC"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
 msgid  "Set up Oracle database connection"
-msgstr ""
+msgstr "Nastavi povezavo na zbirko podatkov Oracle"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
 msgid  "Set up MySQL connection"
-msgstr ""
+msgstr "Nastavi povezavo na MySQL"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
 msgid  "Set up ODBC connection"
-msgstr ""
+msgstr "Nastavi povezavo prek ODBC"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
 msgid  "Set up Spreadsheet connection"
-msgstr ""
+msgstr "Nastavi povezavo na preglednico"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
 msgid  "Set up user authentication"
-msgstr ""
+msgstr "Nastavi preverjanje uporabnikov"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
 msgid  "Set up MySQL server data"
-msgstr ""
+msgstr "Nastavi podatke o strežniku MySQL"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
 msgid  "Save and proceed"
-msgstr ""
+msgstr "Shrani in nadaljuj"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
 msgid  "New Database"
-msgstr ""
+msgstr "Nova zbirka podatkov"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to a MySQL database"
-msgstr ""
+msgstr "Nastavi povezavo na zbirko podatkov MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Na zbirko podatkov MySQL se lahko povežete preko ODBC ali JDBC.\nČe niste prepričani o naslednjih nastavitvah, se posvetujte s skrbnikom."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
 msgid  "How do you want to connect to your MySQL database?"
-msgstr ""
+msgstr "Kako se želite povezati na MySQL zbirko podatkov?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
 msgid  "Connect using ODBC (Open Database Connectivity)"
-msgstr ""
+msgstr "Poveži se prek ODBC (Open Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
 msgid  "Connect using JDBC (Java Database Connectivity)"
-msgstr ""
+msgstr "Poveži se prek JDBC (Java Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
 msgid  "Connect directly"
-msgstr ""
+msgstr "Poveži se neposredno"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up the user authentication"
-msgstr ""
+msgstr "Nastavi preverjanje uporabnikov"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "Nekatere zbirke podakov zahtevajo vnos uporabniškega imena."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "~Uporabniško ime"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "Password re~quired"
-msgstr ""
+msgstr "Potrebno je ge~slo"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "~Test Connection"
-msgstr ""
+msgstr "~Preizkusi povezavo"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
 msgid  "Decide how to proceed after saving the database"
-msgstr ""
+msgstr "Kaj želite storiti, potem ko bo zbirka podatkov shranjena"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "Ali naj čarovnik registrira zbirko podatkov v %PRODUCTNAME?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "~Yes, register the database for me"
-msgstr ""
+msgstr "~Da, registriraj zbirko podatkov zame"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "N~o, do not register the database"
-msgstr ""
+msgstr "~Ne, ne registriraj zbirke podatkov"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
 msgid  "After the database file has been saved, what do you want to do?"
-msgstr ""
+msgstr "Kaj naj se zgodi, potem ko bo zbirka podatkov shranjena?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 msgid  "Open the database for editing"
-msgstr ""
+msgstr "Odpri zbirko podatkov za urejanje"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
 msgid  "Create tables using the table wizard"
-msgstr ""
+msgstr "Tabele ustvari s pomočjo čarovnika"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
 msgid  "Click 'Finish' to save the database."
-msgstr ""
+msgstr "Kliknite 'Dokončaj', da shranite zbirko podatkov."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up connection to a MySQL database using JDBC"
-msgstr ""
+msgstr "Nastavite povezavo na zbirko podatkov MySQL prek JDBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vnesite zahtevane informacije za povezavo z zbirko podatkov MySQL preko JDBC. Gonilnik JDBC mora biti nameščen na vašem sistemu in registriran v %PRODUCTNAME.\nČe niste prepričani o naslednjih nastavitvah, se posvetujte s skrbnikom."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "MySQL JDBC d~river class:"
-msgstr ""
+msgstr "~Razred JDBC gonilnikov MySQL:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Privzeto: 3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
 msgid  "Set up connection to a MySQL database"
-msgstr ""
+msgstr "Nastavi povezavo na zbirko podatkov MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "Vnesite zahtevane podatke za povezavo na zbirko podatkov MySQL."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to dBASE files"
-msgstr ""
+msgstr "Nastavi povezavo na datoteke dBase"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the dBASE files are stored."
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Izberite mapo, kamor bodo shranjene datoteke dBase."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "Izberite mapo, kamor bodo shranjene besedilne datoteke CSV (z vejico ločene vrednosti). V %PRODUCTNAME Base bodo te datoteke odprte samo za branje."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to text files"
-msgstr ""
+msgstr "Pot do besedilnih datotek"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a Microsoft Access database"
-msgstr ""
+msgstr "Nastavi povezavo na zbirko podatkov MS Access"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "Izberite datoteko MS Access, do katere želite dostopati."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to an LDAP directory"
-msgstr ""
+msgstr "Nastavi povezavo z mapo LDAP"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vnesite zahtevane informacije za povezavo z mapo LDAP.\nČe niste prepričani o naslednjih nastavitvah, se posvetujte s skrbnikom."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
 msgid  "Default: 389"
-msgstr ""
+msgstr "Privzeto: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 msgid  "Use ~secure connection (SSL)"
-msgstr ""
+msgstr "Uporabi ~varno povezavo (SSL)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Adabas D database"
-msgstr ""
+msgstr "Nastavi povezavo na zbirko podatkov Adabas D"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Vnesite ime zbirke podatkov Adabas D, s katero se želite povezati.\nKliknite 'Prebrskaj ...', če želite izbrati zbirko podatkov Adabas D, ki je že registrirana v %PRODUCTNAME."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ADO database"
-msgstr ""
+msgstr "Nastavi povezavo na zbirko podatkov ADO"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vnesite URL vira podatkov ADO, na katerega se želite povezati.\nKliknite 'Prebrskaj ...' za konfiguracijo nastavitev, specifičnih za ponudnika.\nČe niste prepričani o naslednjih nastavitvah, se posvetujte s skrbnikom."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ODBC database"
-msgstr ""
+msgstr "Nastavi povezavo na ODBC zbirko podatkov"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vnesite ime zbirke podatkov ODBC, s katero se želite povezati.\nKliknite 'Prebrskaj ...', da izberete zbirko podatkov ODBC, ki je že registrirana v %PRODUCTNAME.\nČe niste prepričani o naslednjih nastavitvah, se posvetujte s skrbnikom."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a JDBC database"
-msgstr ""
+msgstr "Nastavi povezavo na JDBC zbirko podatkov"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vnesite zahtevane informacije za povezavo z zbirko podatkov JDBC.\nČe niste prepričani o naslednjih nastavitvah, se posvetujte s skrbnikom."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Oracle database"
-msgstr ""
+msgstr "Nastavi povezavo na zbirko podatkov Oracle"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
 msgid  "Default: 1521"
-msgstr ""
+msgstr "Privzeto: 1521"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "Oracle JDBC ~driver class"
-msgstr ""
+msgstr "Razred gonilnikov J~DBC za Oracle"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Vnesite zahtevane informacije za povezavo z zbirko podatkov Oracle. Gonilnik JDBC mora biti nameščen na vašem sistemu in registriran v %PRODUCTNAME.\nČe niste prepričani o naslednjih nastavitvah, se posvetujte s skrbnikom."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to spreadsheets"
-msgstr ""
+msgstr "Nastavi povezavo na preglednice"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Kliknite 'Prebrskaj ...' da izberete preglednico %PRODUCTNAME ali delovni zvezek Microsoft Excel.\n%PRODUCTNAME bo odprl to datoteko v načinu samo za branje."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
 msgid  "~Location and file name"
-msgstr ""
+msgstr "~Mesto in ime datoteke"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "~Password required"
-msgstr ""
+msgstr "~Potrebno je geslo"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
 msgid  "Use catalog for file-based databases"
-msgstr ""
+msgstr "Uporabi katalog za zbirke podatkov na datotečni podlagi"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Connection Settings"
-msgstr ""
+msgstr "Nastavitve povezave"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "Ime ~gostitelja"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
 msgid  "~Port number"
-msgstr ""
+msgstr "~Številka vrat"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
 msgid  "Advanced Properties"
-msgstr ""
+msgstr "Napredne lastnosti"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
 msgid  "Additional Settings"
-msgstr ""
+msgstr "Dodatne nastavitve"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
 msgid  "Connection settings"
-msgstr ""
+msgstr "Nastavitve povezave"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
 msgid  "Database properties"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
-msgid  "Database properties"
-msgstr ""
+msgstr "Lastnosti zbirke podatkov"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr ""
+msgstr "Dobrodošli v Čarovniku za zbirke podatkov %PRODUCTNAME"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Čarovnik za zbirke podatkov lahko uporabite za ustvarjanje nove zbirke podatkov, za odpiranje že obstoječe datoteke zbirke podatkov ali za povezovanje z zbirko podatkov na strežniku."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
 msgid  "What do you want to do?"
-msgstr ""
+msgstr "Kaj želite narediti?"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
 msgid  "Create a n~ew database"
-msgstr ""
+msgstr "Ustvariti novo ~zbirko podatkov"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
 msgid  "Open an existing database ~file"
-msgstr ""
+msgstr "Odpreti o~bstoječo datoteko zbirke podatkov"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
 msgid  "Recently used"
-msgstr ""
+msgstr "Nedavno uporabljeno"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
 msgid  "Connect to an e~xisting database"
-msgstr ""
+msgstr "Povezati se z o~bstoječo zbirko podatkov"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Izberite vrsto zbirke, s katero želite vzpostaviti povezavo."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
 msgid  "Database ~type "
-msgstr ""
+msgstr "~Vrsta zbirke podatkov"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "Zbirka podatkov"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Na sledečih straneh lahko nastavite podrobnosti povezave.\n\nNove nastavitve bodo prepisale stare."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
 msgid  "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
 msgid  "Data Source Properties: #"
-msgstr ""
+msgstr "Lastnosti vira podatkov: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "Programske knjižnice #lib# ni mogoče naložiti ali pa je okvarjena. Izbrani ODBC vir podatkov ni na voljo."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Ta vrsta vira podatkov ni na voljo na tej platformi.\nLahko spremenite nastavitve, a se z zbirko podatkov verjetno ne boste mogli povezati."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Splošno"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional settings"
-msgstr ""
+msgstr "Neobvezne nastavitve"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
 msgid  "Display deleted records as well"
-msgstr ""
+msgstr "Prikaži tudi izbrisane zapise"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Opomba: Če izberete prikaz izbrisanih oz. nedejavnih zapisov, le-teh ne bo mogoče brisati iz vira podatkov."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
 msgid  "Indexes..."
-msgstr ""
+msgstr "Indeksi ..."
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional Settings"
-msgstr ""
+msgstr "Neobvezne nastavitve"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "ODBC ~options"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr ""
+msgstr "Možnosti za ~ODBC"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "Velikost podatkovnega ~medpomnilnika (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
 msgid  "~Data increment (MB)"
-msgstr ""
+msgstr "Prirastek zbi~rke podatkov (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "Administration"
-msgstr ""
+msgstr "Skrbništvo"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
 msgid  "Control ~user name"
-msgstr ""
+msgstr "Ime nadzornega ~uporabnika"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
 msgid  "Control ~password"
-msgstr ""
+msgstr "~Geslo nadzornega uporabnika"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr ""
+msgstr "Izklopi ~storitev ob izhodu iz programa %PRODUCTNAME"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
 msgid  "E~xtended..."
-msgstr ""
+msgstr "~Razširjeno ..."
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "MySQL JDBC d~river class"
-msgstr ""
+msgstr "~Razred gonilnikov MySQL JDBC"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
-msgstr ""
+msgstr "Preizkusi razred"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
-msgstr ""
+msgstr "Overjanje uporabnika"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "~Uporabniško ime"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
 msgid  "Password required"
-msgstr ""
+msgstr "Potrebno je geslo"
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "Oracle JDBC d~river class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
+msgstr "Razred ~gonilnikov JDBC za Oracle"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
 msgid  "~Base DN"
-msgstr ""
+msgstr "~Base DN"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 msgid  "Use secure connection(SSL)"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "Uporabi varno povezavo (SSL)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
 msgid  "Maximum number of ~records"
-msgstr ""
+msgstr "Največje število ~zapisov"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Hostname"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "Ime ~gostitelja"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "~Driver settings"
-msgstr ""
+msgstr "Nastavitve g~onilnika"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "Izberite 'Poveži se z obstoječo zbirko podatkov', če se želite namesto tega povezati z obstoječo zbirko podatkov."
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "Indeksi"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
 msgid  "~Table"
-msgstr ""
+msgstr "~Tabela"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
 msgid  "Assignment"
-msgstr ""
+msgstr "Dodelitev"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
 msgid  "T~able indexes"
-msgstr ""
+msgstr "Indeksi t~abel"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
 msgid  "~Free indexes"
-msgstr ""
+msgstr "P~rosti indeksi"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL-ukaz"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
 msgid  "Command to execute"
-msgstr ""
+msgstr "Ukaz, ki naj bo izvršen"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
 msgid  "Execute"
-msgstr ""
+msgstr "Izvrši"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
 msgid  "Previous commands"
-msgstr ""
+msgstr "Prejšnji ukazi"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
 msgid  "Status"
-msgstr ""
+msgstr "Stanje"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "Zapri"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 msgid  "Execute SQL Statement"
-msgstr ""
+msgstr "Izvrši izjavo SQL"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
 msgid  "Command successfully executed."
-msgstr ""
+msgstr "Ukaz uspešno izvršen."
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "Povezava z zbirko podatkov je bila prekinjena. To pogovorno okno se bo zaprlo."
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
 msgid  "Field Format"
-msgstr ""
+msgstr "Oblika polja"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
 msgid  "Bac~k"
-msgstr ""
+msgstr "Na~zaj"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Pisava"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
 msgid  "Format"
-msgstr ""
+msgstr "Oblika"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr ""
+msgstr "Poravnava"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 msgid  "Table Format"
-msgstr ""
+msgstr "Oblika tabele"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
 msgid  "Save As"
-msgstr ""
+msgstr "Shrani kot"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the object to be created:"
-msgstr ""
+msgstr "Vnesite ime predmeta:"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
 msgid  "~Catalog"
-msgstr ""
+msgstr "~Katalog"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
 msgid  "~Schema"
-msgstr ""
+msgstr "~Shema"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
 msgid  "~Table Name"
-msgstr ""
+msgstr "Ime ~tabele"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
 msgid  "~Name of table view"
-msgstr ""
+msgstr "~Ime pogleda tabele"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
 msgid  "~Query name"
-msgstr ""
+msgstr "Ime poiz~vedbe"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
 msgid  "Rename to"
-msgstr ""
+msgstr "Preimenuj v"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 msgid  "Insert as"
-msgstr ""
+msgstr "Vstavi kot"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Height"
-msgstr ""
+msgstr "~Višina"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 msgid  "~Automatic"
-msgstr ""
+msgstr "S~amodejno"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
 msgid  "Row Height"
-msgstr ""
+msgstr "Višina vrstice"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Width"
-msgstr ""
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "~Širina"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
 msgid  "Column Width"
-msgstr ""
+msgstr "Širina stolpca"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "Vir podatkov"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Choose a data source:"
-msgstr ""
+msgstr "Izberite vir podatkov:"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
 msgid  "Organize..."
-msgstr ""
+msgstr "Organiziraj ..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "Ustvari ..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
 msgid  "Local Databases"
-msgstr ""
+msgstr "Lokalne zbirke podatkov"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
 msgid  "Choose a database"
-msgstr ""
+msgstr "Izberite zbirko podatkov"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "Indeksi"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
 msgid  "New Index"
-msgstr ""
+msgstr "Nov indeks"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
 msgid  "Delete Current Index"
-msgstr ""
+msgstr "Izbriši trenutni indeks"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
 msgid  "Rename Current Index"
-msgstr ""
+msgstr "Preimenuj trenutni indeks"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
 msgid  "Save Current Index"
-msgstr ""
+msgstr "Shrani trenutni indeks"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 msgid  "Reset Current Index"
-msgstr ""
+msgstr "Ponastavi trenutni indeks"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
 msgid  "Index details"
-msgstr ""
+msgstr "Podrobnosti indeksa"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
 msgid  "Index identifier:"
-msgstr ""
+msgstr "Identifikator indeksa:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
 msgid  "~Unique"
-msgstr ""
+msgstr "~Edinstven"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
 msgid  "Fields"
-msgstr ""
+msgstr "Polja"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "Z~apri"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "Vrstni red razvrščanja"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
 msgid  "Index field"
-msgstr ""
+msgstr "Polje indeksa"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "Naraščajoče"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "Padajoče"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 msgid  "Do you really want to delete the index '$name$'?"
-msgstr ""
+msgstr "Ali ste prepričani, da želite izbrisati indeks '$name$'?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
 msgid  "index"
-msgstr ""
+msgstr "indeks"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
 msgid  "Save Index"
-msgstr ""
+msgstr "Shrani indeks"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 msgid  "The index must contain at least one field."
-msgstr ""
+msgstr "Indeks mora vsebovati vsaj eno polje."
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
 msgid  "Exit Index Design"
-msgstr ""
+msgstr "Zapusti urejanje indeksa"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
 msgid  "Do you want to save the changes made to the current index?"
-msgstr ""
+msgstr "Ali želite shraniti spremembe v trenutnem indeksu?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There is already another index named \"$name$\"."
-msgstr ""
+msgstr "Indeks z imenom \"$name$\" že obstaja."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
 msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr ""
+msgstr "Po definiciji indeksa se lahko ime stolpca pojavi največ enkrat. Ime \"$name$\" pa ste vnesli dvakrat."
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
 msgid  "~Parameters"
-msgstr ""
+msgstr "~Parametri"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Value"
-msgstr ""
+msgstr "~Vrednost"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
 msgid  "~Next"
-msgstr ""
+msgstr "~Naprej"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 msgid  "Parameter Input"
-msgstr ""
+msgstr "Vnos parametra"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
-msgstr ""
+msgstr "Vnosa ni bilo mogoče pretvoriti v veljavno vrednost za stolpec \"$name$\""
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "Standardni filter"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "AND"
-msgstr ""
+msgstr "AND"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "OR"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
-msgstr ""
+msgstr "OR"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Ime polja"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
 msgid  "Condition"
-msgstr ""
+msgstr "Pogoj"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
 msgid  "Value"
-msgstr ""
+msgstr "Vrednost"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "Operator"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
 msgid  "Criteria"
-msgstr ""
+msgstr "Pogoji"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "- none -"
-msgstr ""
+msgstr "- brez -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
+msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
 msgid  "Sort Order"
-msgstr ""
+msgstr "Vrstni red razvrščanja"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "ascending"
-msgstr ""
+msgstr "naraščajoče"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
+msgstr "padajoče"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Ime polja"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 msgid  "and then"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
-msgid  "and then"
-msgstr ""
+msgstr "in potem"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "Operator"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
 msgid  "Order"
-msgstr ""
+msgstr "Razvrsti"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "Vrstni red razvrščanja"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<brez>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
 msgid  "Relations"
-msgstr ""
+msgstr "Relacije"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "Vključeni tabeli"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "Vključeni polji"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
 msgid  "Update options"
-msgstr ""
+msgstr "Možnosti posodobitve"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~No action"
-msgstr ""
+msgstr "Brez deja~nja"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~Update cascade"
-msgstr ""
+msgstr "~Posodobi kaskadno"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 msgid  "~Set null"
-msgstr ""
+msgstr "~Nastavi null"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
 msgid  "Set ~default"
-msgstr ""
+msgstr "Nastavi ~privzeto"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
 msgid  "Delete options"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "~No action"
-msgstr ""
+msgstr "Možnosti brisanja"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
 msgid  "Delete ~cascade"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
-msgstr ""
+msgstr "Izbriši ~kaskadno"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Base"
-msgstr ""
+msgstr "%PRODUCTNAME Base"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 msgid  "Details"
-msgstr ""
+msgstr "Podrobnosti"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
 msgid  "Error ~list:"
-msgstr ""
+msgstr "~Seznam napak:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "~Description:"
-msgstr ""
+msgstr "~Opis:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 msgid  "SQL Status"
-msgstr ""
+msgstr "Stanje SQL"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
 msgid  "Error code"
-msgstr ""
+msgstr "Šifra napake"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "Največkrat je razlog za to napako nepravilen nabor znakov, ki je uporabljen za to zbirko podatkov. Preverite nastavitve v meniju Uredi - Zbirka podatkov - Lastnosti."
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "Napaka"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
 msgid  "Warning"
-msgstr ""
+msgstr "Opozorilo"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
 msgid  "Information"
-msgstr ""
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
-msgid  "Details"
-msgstr ""
+msgstr "Informacije"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 msgid  "Text Connection Settings"
-msgstr ""
+msgstr "Nastavitve besedilne povezave"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
 msgid  "User Settings"
-msgstr ""
+msgstr "Uporabniške nastavitve"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
 msgid  "User administration"
-msgstr ""
+msgstr "Upravljanje uporabnikov"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
 msgid  "User selection"
-msgstr ""
+msgstr "Izbor uporabnika"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
 msgid  "Us~er:"
-msgstr ""
+msgstr "Up~orabnik:"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
 msgid  "~Add User..."
-msgstr ""
+msgstr "~Dodaj uporabnika ..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
 msgid  "Change ~Password..."
-msgstr ""
+msgstr "Spremeni ~geslo ..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
 msgid  "~Delete User..."
-msgstr ""
+msgstr "~Izbriši uporabnika ..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
 msgid  "Access rights for selected user"
-msgstr ""
+msgstr "Dostopne pravice za izbranega uporabnika"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 msgid  "Do you really want to delete the user?"
-msgstr ""
+msgstr "Ali ste prepričani, da želite izbrisati uporabnika?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support user administration."
-msgstr ""
+msgstr "Podatkovna zbirka ne podpira skrbništva nad uporabniki."
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
 msgid  "User \"$name$:  $\""
-msgstr ""
+msgstr "Uporabnik \"$name$:  $\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
 msgid  "Old p~assword"
-msgstr ""
+msgstr "Staro g~eslo"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr ""
+msgstr "~Geslo"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 msgid  "~Confirm  password"
-msgstr ""
+msgstr "~Potrditev gesla"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
 msgid  "Change Password"
-msgstr ""
+msgstr "Sprememba gesla"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 msgid  "The passwords do not match. Please enter the password again."
-msgstr ""
+msgstr "Gesli se ne ujemata. Prosimo, da ponovno vnesete geslo."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
 msgid  "Refresh"
-msgstr ""
+msgstr "Osveži"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 msgid  "New ~View Design"
-msgstr ""
+msgstr "Novo oblikovanje po~gleda"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
 msgid  "New ~Table Design"
-msgstr ""
+msgstr "Novo ~oblikovanje tabele"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
 msgid  "Query AutoPilot..."
-msgstr ""
+msgstr "Čarovnik za poizvedbe ..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "New ~Query (Design View)"
-msgstr ""
+msgstr "Nova ~poizvedba (oblikovalni pogled)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "~Edit Query"
-msgstr ""
+msgstr "~Uredi poizvedbo"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 msgid  "New Query (~SQL View)"
-msgstr ""
+msgstr "Nova poizvedba (~SQL-pogled)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "Uredi ..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
 msgid  "Column ~Width..."
-msgstr ""
+msgstr "~Širina stolpca ..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Čarovnik za poročila ..."
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
 msgid  "Form AutoPilot..."
-msgstr ""
+msgstr "Čarovnik za obrazce ..."
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
 msgid  "System"
-msgstr ""
+msgstr "Sistem"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
 msgid  "Error during creation"
-msgstr ""
+msgstr "Napaka med ustvarjanjem"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "Pojavila se je nepričakovana napaka. Operacije ni mogoče izvršiti."
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
 msgid  "The document \"$file$\" could not be opened."
-msgstr ""
+msgstr "Dokumenta \"$file$\" ni mogoče odpreti."
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "Tabele ni mogoče izbrisati, ker povezava z zbirko podatkov tega ne podpira."
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "~Vse"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
 msgid  "Undo:"
-msgstr ""
+msgstr "Razveljavi:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 msgid  "Redo:"
-msgstr ""
+msgstr "Uveljavi:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
 msgid  "No corresponding column type could be found for column '#1'."
-msgstr ""
+msgstr "Ni mogoče najti ustrezne vrste stolpca za stolpec '#1'."
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Datoteka \"$file$\" ne obstaja."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr ""
+msgstr "Pri povezovanju na vir podatkov so bila zabeležena opozorila. Kliknite \"$buttontext$\" za njihov prikaz."
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Ime '$#$' že obstaja.\nVnesite drugo ime."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
-msgstr ""
+msgstr "Za izdelavo poročila \"$file$\" potrebujete razširitev Oblikovalec poročil podjetja Oracle."
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
 msgid  "Apply columns"
-msgstr ""
+msgstr "Uporabi stolpce"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 msgid  "Type formatting"
-msgstr ""
+msgstr "Oblikovanje vrste"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "Naslednja polja so že bila nastavljena kot primarni ključi:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
 msgid  "Assign columns"
-msgstr ""
+msgstr "Dodeli stolpce"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 msgid  "Copy RTF Table"
-msgstr ""
+msgstr "Kopiraj RTF tabelo"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr ""
+msgstr "~Pomoč"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
 msgid  "~Cancel"
-msgstr ""
+msgstr "Pre~kliči"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 msgid  "< ~Back"
-msgstr ""
+msgstr "< N~azaj"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next>"
-msgstr ""
+msgstr "~Naprej>"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
 msgid  "C~reate"
-msgstr ""
+msgstr "Ustva~ri"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
 msgid  "Existing columns"
-msgstr ""
+msgstr "Obstoječi stolpci"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
 msgid  "Column information"
-msgstr ""
+msgstr "Podatki o stolpcu"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 msgid  "Automatic type recognition"
-msgstr ""
+msgstr "Samodejno razpoznavanje vrste"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
 msgid  "Lines (ma~x)"
-msgstr ""
+msgstr "Vrstice (~maks)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "Primarni ključ"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
 msgid  "Source table: \n"
-msgstr ""
+msgstr "Izvorna tabela:\n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "Ciljna tabela: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "~Vse"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
 msgid  "Non~e"
-msgstr ""
+msgstr "Br~ez"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
 msgid  "Ta~ble name"
-msgstr ""
+msgstr "Ime ta~bele"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Možnosti"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
 msgid  "De~finition and data"
-msgstr ""
+msgstr "De~finicija in podatki"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
 msgid  "Def~inition"
-msgstr ""
+msgstr "Def~inicija"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
 msgid  "A~s table view"
-msgstr ""
+msgstr "~Kot pogled tabele"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 msgid  "Append ~data"
-msgstr ""
+msgstr "Dodaj po~datke"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
-msgstr ""
+msgstr "Uporabi ~prvo vrstico za imena stolpcev"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
 msgid  "Crea~te primary key"
-msgstr ""
+msgstr "Us~tvari primarni ključ"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
 msgid  "Name"
-msgstr ""
+msgstr "Ime"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 msgid  "Copy table"
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
-msgid  "Copy table"
-msgstr ""
+msgstr "Kopiraj tabelo"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
 msgid  "This table name is not valid in the current database."
-msgstr ""
+msgstr "To ime tabele ni veljavno v trenutni zbirki podatkov."
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Na prvi strani izberite možnost 'Dodaj podatke', da dodate podatke v obstoječo tabelo."
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
 msgid  "Please change the table name. It is too long."
-msgstr ""
+msgstr "Prosimo, da spremenite ime tabele, ker je predolgo."
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Možnosti"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "~Vrsta"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 msgid  "Inner join"
-msgstr ""
+msgstr "Notranji spoj"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
 msgid  "Left join"
-msgstr ""
+msgstr "Levi spoj"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
 msgid  "Right join"
-msgstr ""
+msgstr "Desni spoj"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
 msgid  "Full (outer) join"
-msgstr ""
+msgstr "Polni (zunanji) spoj"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
 msgid  "Cross join"
-msgstr ""
+msgstr "Križni spoj"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 msgid  "Natural"
-msgstr ""
+msgstr "Ključna beseda NATURAL"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "Vključeni tabeli"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "Vključeni polji"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
 msgid  "Join Properties"
-msgstr ""
+msgstr "Lastnosti spoja"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "Nekatere zbirke podatkov ne podpirajo te vrste spoja."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Vključuje samo zapise, v katerih je vsebina povezanih polj obeh tabel enaka."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "Vsebuje VSE zapise iz tabele '%1' in samo tiste zapise iz tabele '%2', v katerih se vrednosti povezanih polj ujemajo."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
 msgid  "Contains ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Vsebuje VSE zapise iz '%1' in '%2'."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Vsebuje kartezične produkte VSEH zapisov iz '%1' in '%2'."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "Vsebuje le en stolpec za vsak par istoimenskih stolpcev iz '%1' in '%2'."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
 msgid  "Add Table Window"
-msgstr ""
+msgstr "Dodaj okno tabele"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
 msgid  "Move table window"
-msgstr ""
+msgstr "Premakni okno tabele"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 msgid  "Insert Join"
-msgstr ""
+msgstr "Vstavi spoj"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
 msgid  "Delete Join"
-msgstr ""
+msgstr "Izbriši spoj"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
 msgid  "Resize table window"
-msgstr ""
+msgstr "Spremeni velikost okna tabele"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
 msgid  "Delete Column"
-msgstr ""
+msgstr "Izbriši stolpec"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
 msgid  "Move column"
-msgstr ""
+msgstr "Premakni stolpec"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
 msgid  "Add Column"
-msgstr ""
+msgstr "Dodaj stolpec"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, table '$name$' does not exist."
-msgstr ""
+msgstr "Napačen izraz, tabela $name$' ne obstaja."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr ""
+msgstr "Neveljaven izraz, ime polja '$name$' ne obstaja!"
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "Poizvedba pokriva #num# tabel. Vendar izbrana zbirka podatkov zmore največ #maxnum# tabel na izjavo."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
 msgid  "Delete Table Window"
-msgstr ""
+msgstr "Izbriši okno tabele"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 msgid  "Edit Column Description"
-msgstr ""
+msgstr "Uredi opis stolpca"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
 msgid  "Adjust column width"
-msgstr ""
+msgstr "Prilagodi širino stolpca"
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 msgid  "(not sorted);ascending;descending"
-msgstr ""
+msgstr "(brez razvrščanja);naraščajoče;padajoče"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
 msgid  "(no function);Group"
-msgstr ""
+msgstr "(brez funkcije);skupina"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 msgid  "(no table)"
-msgstr ""
+msgstr "(brez tabele)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
 msgid  "The database only supports sorting for visible fields."
-msgstr ""
+msgstr "Zbirka podatkov podpira samo urejanje vidnih polj."
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
 msgid  "Functions"
-msgstr ""
+msgstr "Funkcije"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
 msgid  "Table Name"
-msgstr ""
+msgstr "Ime tabele"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
 msgid  "Alias"
-msgstr ""
+msgstr "Vzdevek"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
 msgid  "Distinct Values"
-msgstr ""
+msgstr "Različne vrednosti"
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "polje;vzdevek;tabela;razvrščanje;vidno;funkcija;pogoj;ali;ali"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
 msgid  "There are too many columns."
-msgstr ""
+msgstr "Preveč stolpcev."
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "A condition cannot be applied to field [*]"
-msgstr ""
+msgstr "Pogoja ni mogoče uveljaviti za polje [*]"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 msgid  "The SQL statement created is too long."
-msgstr ""
+msgstr "Oblikovana SQL-izjava je predolga."
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
 msgid  "Query is too complex"
-msgstr ""
+msgstr "Poizvedba je prezapletena."
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 msgid  "Nothing has been selected."
-msgstr ""
+msgstr "Nič ni bilo izbrano."
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
 msgid  "Too many search criteria"
-msgstr ""
+msgstr "Preveč pogojev iskanja"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 msgid  "SQL syntax error"
-msgstr ""
+msgstr "Napaka v skladnji SQL"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "[*] cannot be used as a sort criterion."
-msgstr ""
+msgstr "[*] ni mogoče uporabiti kot pogoj urejanja."
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
 msgid  "There are too many tables."
-msgstr ""
+msgstr "Preveč tabel."
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "Izjava ne bo uporabljena pri poizvedbi v SQL območju zbirke podatkov."
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
 msgid  "Field name not found or not unique"
-msgstr ""
+msgstr "Imena polja ni mogoče najti ali pa ni edinstveno"
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
 msgid  "Join could not be processed"
-msgstr ""
+msgstr "Spoja ni mogoče obdelati."
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 msgid  "Syntax error in SQL statement"
-msgstr ""
+msgstr "Napaka v skladnji SQL-izjave"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support table views."
-msgstr ""
+msgstr "Ta zbirka podatkov ne podpira pogledov tabel."
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "Ta zbirka podatkov ne podpira spreminjanja obstoječih pogledov tabel."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
 msgid  "Do you want to create a query instead?"
-msgstr ""
+msgstr "Ali želite ustvariti poizvedbo?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
 msgid  "No query could be created."
-msgstr ""
+msgstr "Poizvedbe ni mogoče ustvariti."
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
 msgid  "No query could be created because no fields were selected."
-msgstr ""
+msgstr "Ni mogoče ustvariti poizvedbe, ker ni bilo izbrano polje."
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "Pripadajoči vir podatkov je bil izbrisan. Zaradi tega podatkov, ki se nanašajo na ta vir podatkov, ni mogoče shraniti."
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
 msgid  "The column '$name$' is unknown."
-msgstr ""
+msgstr "Stolpec '$name$' je neznan."
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
 msgid  "Columns can only be compared using '='."
-msgstr ""
+msgstr "Stolpce lahko primerjate s pomočjo znaka '='."
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
 msgid  "You must use a column name before 'LIKE'."
-msgstr ""
+msgstr "Pred 'LIKE' morate vnesti ime stolpca."
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "Stolpca ni mogoče najti. Vedite, da zbirka podatkov razlikuje velike in male črke."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: oblikovanje poizvedbe"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: View Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: oblikovanje pogleda"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ je bil spremenjen.\nŽelite shraniti spremembe?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr ""
+msgstr "$object$ temelji na ukazu SQL, ki ga ni mogoče razčleniti."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr ""
+msgstr "$object$ bo odprt v pogledu SQL."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
 msgid  "The table view"
-msgstr ""
+msgstr "Pogled tabele"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
 msgid  "The query"
-msgstr ""
+msgstr "Poizvedba"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
 msgid  "The SQL statement"
-msgstr ""
+msgstr "SQL-izjava"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "Poizvedba ne ustvari rezultata, zato ne more biti del druge poizvedbe."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "Parametra ActiveConnection in DataSourceName manjkata ali sta napačna - oblikovanja poizvedbe ni mogoče inicializirati."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Ta relacija že obstaja. Jo želite urediti ali ustvariti novo?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "Uredi ..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "Ustvari ..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Relation design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: oblikovanje relacij"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support relations."
-msgstr ""
-
-#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Zbirka podatkov ne podpira relacij."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Če izbrišete to tabelo, bodo izbrisane tudi pripadajoče relacije. Ali želite nadaljevati?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Zbirka podatkov ne more ustvariti relacije. Morda tuji ključi za to vrsto tabele niso podprti.\nPreverite v dokumentaciji za svojo zbirko podatkov."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Struktura;Polje;BLOB;CLOB;REF;DRUGO;Bit (fix)"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Vstavi/odstrani primarni ključ"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "Da"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
 msgid  "No"
-msgstr ""
+msgstr "Ne"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "Naraščajoče"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "Padajoče"
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<brez>"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Ime polja"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
 msgid  "Field Name"
-msgstr ""
+msgstr "Ime polja"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
 msgid  "Field ~type"
-msgstr ""
+msgstr "Vrs~ta polja"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
 msgid  "Field Type"
-msgstr ""
+msgstr "Vrsta polja"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
 msgid  "Field length"
-msgstr ""
+msgstr "Dolžina polja"
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "Opis"
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "Column Description"
-msgstr ""
+msgstr "Opis stolpca"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
 msgid  "Input required"
-msgstr ""
+msgstr "Potreben je vnos"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
 msgid  "~AutoValue"
-msgstr ""
+msgstr "S~amodejna vrednost"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
 msgid  "Field Properties"
-msgstr ""
+msgstr "Lastnosti polja"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Splošno"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
 msgid  "Description:"
-msgstr ""
+msgstr "Opis:"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
 msgid  "Table properties"
-msgstr ""
+msgstr "Lastnosti tabele"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
 msgid  "The text you entered is not a list element. "
-msgstr ""
+msgstr "Besedilo, ki ste ga vnesli, ni na seznamu."
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
 msgid  "Insert Rows"
-msgstr ""
+msgstr "Vstavi vrstice"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "Primarni ključ"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
 msgid  "Modify cell"
-msgstr ""
+msgstr "Spremeni celico"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
 msgid  "Delete row"
-msgstr ""
+msgstr "Izbriši vrstico"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
 msgid  "Modify field type"
-msgstr ""
+msgstr "Spremeni vrsto polja"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
 msgid  "Insert row"
-msgstr ""
+msgstr "Vstavi vrstico"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
 msgid  "Insert new row"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Vstavi novo vrstico"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
 msgid  "~Default value"
-msgstr ""
+msgstr "~Privzeta vrednost"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
 msgid  "~Entry required"
-msgstr ""
+msgstr "Potr~eben je vnos"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "~Length"
-msgstr ""
+msgstr "Do~lžina"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
-msgid  "~Length"
-msgstr ""
+msgstr "~Vrsta"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
 msgid  "Decimal ~places"
-msgstr ""
+msgstr "Decimalna ~mesta"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
 msgid  "Format example"
-msgstr ""
+msgstr "Primer oblikovanja"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Izberite vrednost, ki naj se privzeto pojavi v vseh novih zapisih.\nČe naj polje nima privzete vrednosti, izberite prazen niz."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Vnesite privzeto vrednost za to polje.\n\nKo boste vnašali podatke v tabelo, se bo vrednost uporabila za vsak nov zapis. Zato mora ta vrednost zadoščati oblikovanju celice."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "S to možnostjo določite, da to polje ne sme imeti vrednosti NULL, oziroma da mora uporabnik vedno vnesti podatek."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
 msgid  "Enter the maximum text length permitted."
-msgstr ""
+msgstr "Vnesite največjo dovoljeno dolžino besedila."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
 msgid  "Enter the number format."
-msgstr ""
+msgstr "Vnesite obliko številke."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Določite dolžino podatka v tem polju.\n\nČe je polje decimalnega tipa, je to največja dolžina številke, če je polje binarnega tipa pa dolžina podatkovnega bloka.\nVrednost bo popravljena, če bo presegla mejno vrednost podatkovne zbirke."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "Določite dovoljeno število decimalnih mest v tem polju."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Tukaj vidite, kako bi bili prikazani podatki v trenutni obliki (uporabite gumb na desni strani za spreminjanje oblike)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "Tukaj določite izhodno obliko podatkov."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Izberite, če naj polje vsebuje samodejno povečane vrednosti.\n\nV ta tip polja ne morete vnesti podatkov. Vsakemu zapisu bo samodejno dodeljena notranja vrednost (povečana glede na vrednost prejšnjega zapisa)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
-msgstr ""
+msgstr "Tabele ni mogoče shraniti, ker je bilo ime stolpca \"$column$\" dodeljeno dvakrat."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgstr "Stolpec \"$column$\" pripada primarnemu ključu. Če izbrišete stolpec, bo izbrisan tudi primarni ključ. Ali ste prepričani, da želite nadaljevati?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
 msgid  "Primary Key Affected"
-msgstr ""
+msgstr "Primarni ključ je bil spremenjen"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
 msgid  "Column"
-msgstr ""
+msgstr "Stolpec"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
 msgid  "Continue anyway?"
-msgstr ""
+msgstr "Ali želite vseeno nadaljevati?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "Opozorilo!"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "Tabele ni mogoče shraniti zaradi težav pri vzpostavljanju povezave z zbirko podatkov."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
-
-#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "Ni mogoče prilagoditi filtra za tabele, ker je bil vir podatkov izbrisan."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
 msgid  "No primary key"
-msgstr ""
+msgstr "Ni primarnega ključa"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "V tej podatkovni zbirki je za identifikacijo zapisov potreben enoličen indeks ali primarni ključ.\nV to tabelo lahko vnašate podatke samo v primeru, ko je izpolnjen eden od teh pogojev.\n\nŽelite zdaj ustvariti primarni ključ?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Table Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: oblikovanje tabele"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgstr "Stolpca \"$column$\" ni mogoče spremeniti. Ali želite raje izbrisati stolpec in dodati novo obliko?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
 msgid  "Error while saving the table design"
-msgstr ""
+msgstr "Napaka pri shranjevanju oblikovanja tabele"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
 msgid  "The column $column$ could not be deleted."
-msgstr ""
+msgstr "Stolpca $column$ ni mogoče izbrisati."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "Poskušate izbrisati vse stolpce v tabeli, ki pa brez stolpcev ne more obstajati. Ali želite iz zbirke podatkov izbrisati tabelo? Če ne želite, potem bo tabela ostala nespremenjena."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "A~uto-increment statement"
-msgstr ""
+msgstr "Izjava za sa~modejno povečanje"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Vnesite SQL-izjavo za polje AutoIncrement.\n\nKo bo tabela ustvarjena, bo ta izjava neposredno prenesena v podatkovno zbirko."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Iz podatkovne zbirke ni mogoče pridobiti informacije o vrsti.\nZa ta podatkovni vir ni na voljo oblikovanja tabel."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
 msgid  "change field name"
-msgstr ""
+msgstr "spremeni ime polja"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
 msgid  "change field type"
-msgstr ""
+msgstr "spremeni vrsto polja"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "change field description"
-msgstr ""
+msgstr "spremeni opis polja"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
 msgid  "change field attribute"
-msgstr ""
+msgstr "spremeni atribut polja"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support views."
-msgstr ""
+msgstr "Ciljna zbirka podatkov ne podpira pogledov."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support primary keys."
-msgstr ""
+msgstr "Ciljna zbirka podatkov ne podpira primarnih ključev."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "Opisnika podatkovnega dostopa ni mogoče najti ali pa ta ne vsebuje vseh zahtevanih podatkov"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
 msgid  "Only tables and queries are supported at the moment."
-msgstr ""
+msgstr "Trenutno so podprte samo tabele in poizvedbe."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "Nabor rezultatov vira za kopiranje mora podpirati zaznamke."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "Nepodprta vrsta izvornega stolpca ($type$) na položaju stolpca $pos$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
 msgid  "Illegal number of initialization parameters."
-msgstr ""
+msgstr "Napačno število začetnih parametrov."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
 msgid  "An error occurred during initialization."
-msgstr ""
+msgstr "Med inicializacijo je prišlo do napake."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
 msgid  "Unsupported setting in the copy source descriptor: $name$."
-msgstr ""
+msgstr "Nepodprta nastavitev v opisniku vira kopiranja: $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
 msgid  "To copy a query, your connection must be able to provide queries."
-msgstr ""
+msgstr "Če želite kopirati poizvedbo, mora vaša povezava zagotavljati poizvedbe."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
 msgid  "The given interaction handler is invalid."
-msgstr ""
+msgstr "Podana rutina za obravnavo interakcije ni veljavna."
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
 msgid  "~Remember password until end of session"
-msgstr ""
+msgstr "~Zapomni si geslo do konca seje"
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
 msgid  "~Remember password"
-msgstr ""
+msgstr "~Zapomni si geslo"

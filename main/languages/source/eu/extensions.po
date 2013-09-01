@@ -33,2548 +33,2467 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
 msgid  "Address Book Data Source Wizard"
-msgstr ""
+msgstr "Helbide-liburuen datu-iturburuen morroia"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
 msgid  "Address book type"
-msgstr ""
+msgstr "Helbide-liburu mota"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
-msgstr ""
+msgstr "Konexioaren ezarpenak"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
 msgid  "Table selection"
-msgstr ""
+msgstr "Taula-hautapena"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
 msgid  "Field Assignment"
-msgstr ""
+msgstr "Eremu-esleipena"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
 msgid  "Data Source Title"
-msgstr ""
+msgstr "Datu-iturburuaren titulua"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "Sisteman dituzun helbide-datuak inporta ditzakezu %PRODUCTNAME(e)ra. Horretarako, %PRODUCTNAME datu-base bat sortuko da zure helbide-datuak taula moduan jasotzeko.\n\nMorroi honek datu-iturburua sortzen lagunduko dizu."
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
 msgid  "Please select the type of your external address book:"
-msgstr ""
+msgstr "Hautatu kanpoko helbide-liburuaren mota:"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
-msgstr ""
+msgstr "Evolution"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
 msgid  "Groupwise"
-msgstr ""
+msgstr "Groupwise"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
 msgid  "Evolution LDAP"
-msgstr ""
+msgstr "Evolution LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
 msgid  "Mozilla / Netscape"
-msgstr ""
+msgstr "Mozilla / Netscape"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
 msgid  "Thunderbird"
-msgstr ""
+msgstr "Thunderbird"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
 msgid  "KDE address book"
-msgstr ""
+msgstr "KDE helbide-liburua"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
 msgid  "Mac OS X address book"
-msgstr ""
+msgstr "Mac OS X helbide-liburua"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
 msgid  "LDAP address data"
-msgstr ""
+msgstr "LDAP helbide-datuak"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
 msgid  "Outlook address book"
-msgstr ""
+msgstr "Outlook helbide-liburua"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
 msgid  "Windows system address book"
-msgstr ""
+msgstr "Windows sistemako helbide-liburua"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
 msgid  "Other external data source"
-msgstr ""
+msgstr "Kanpoko bestelako datu-iturburua"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Datu-iturburu berria konfiguratzeko, informazio osagarria behar da.\n\nEgin klik beheko botoian eta beste elkarrizketa-koadro bat irekiko da behar diren datuak sartzeko."
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Ezarpenak"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Datu-iturburuarekin ezin izan da konexiorik ezarri.\nAurrera jarraitu ahal izateko, begiratu ezarpenak ongi dauden, edo joan aurreko orrira eta aukeratu beste mota bateko helbideen datu-iturburua."
 
 #: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Aukeratu duzun kanpoko datu-iturburuak helbide-liburu bat baino gehiago ditu.\nHautatu lanerako erabili nahi duzuna:"
 
 #: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
-msgid  "Field Assignment"
-msgstr ""
+msgstr "Helbide-datuak txantiloietan gehitzeko, eremu bakoitzak zein datu daukan jakin behar du %PRODUCTNAME(e)k.\n\nEsate baterako, helbide elektronikoa duen eremua \"email\" izan daiteke, edo \"h.el.\" edo \"EM\" edo beste edozein.\n\nEgin klik beheko botoian eta beste elkarrizketa-koadro bat irekiko da datu-iturburuaren ezarpenak sartzeko."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Hori zen helbide-datuak %PRODUCTNAME(e)n integratzeko behar zen informazio guztia.\n\nOrain, idatzi %PRODUCTNAME(e)ko datu-iturburuari eman nahi diozun izena."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
 msgid  "Location"
-msgstr ""
+msgstr "Kokalekua"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr ""
+msgstr "Arakatu..."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr ""
+msgstr "Egin helbide-liburu hau erabilgarri %PRODUCTNAME(e)ko modulu guztietan."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
 msgid  "Address book name"
-msgstr ""
+msgstr "Helbide-liburuaren izena"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Beste datu-iturburu batek izen hori bera du. Datu-iturburuaren izenak bakarra izan behar duenez, beste izen bat aukeratu beharko duzu."
 
 #: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
 msgid  "Please select a type of address book."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Hautatu helbide-liburuaren mota."
 
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
 msgid  "Addresses"
-msgstr ""
+msgstr "Helbideak"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
 msgid  "Create Address Data Source"
-msgstr ""
+msgstr "Sortu helbideen datu-iturburua"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "Konexioa ezin izan da ezarri."
 
 #: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
 msgid  "Please check the settings made for the data source."
-msgstr ""
+msgstr "Begiratu datu-iturburuaren ezarpenak ongi dauden."
 
 #: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
 msgid  "Address Data - Field Assignment"
-msgstr ""
+msgstr "Helbide-liburua  /  Eremu-esleipena"
 
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Orain ez dago eremurik esleituta.\nNahi baduzu, orain eslei ditzakezu eremuak; geroago egin nahi baduzu, hautatu:\n\"Fitxategia – Txantiloia – Helbide-liburuaren iturburua...\""
 
 #: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Field selection:"
-msgstr ""
+msgstr "Eremu-hautapena:"
 
 #: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
 msgid  "Table;Query;Sql;Sql [Native]"
-msgstr ""
+msgstr "Taula;Kontsulta;Sql;Sql [Native]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
-msgstr ""
+msgstr "Datu-base bibliografikoa"
 
 #: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
 msgid  "Do you want to edit the column arrangement?"
-msgstr ""
+msgstr "Zutabeen ordena editatu nahi duzu?"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
 msgid  "Column names"
-msgstr ""
+msgstr "Zutabe-izenak"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<bat ere ez>"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
 msgid  "Column Layout for Table %1"
-msgstr ""
+msgstr "%1 taularen zutabe-diseinua"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
 msgid  "Choose Data Source"
-msgstr ""
+msgstr "Aukeratu datu-iturburua"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
 msgid  "Entry"
-msgstr ""
+msgstr "Sarrera"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
 msgid  "The following column names could not be assigned:\n"
-msgstr ""
+msgstr "Honako zutabe-izenak ezin izan dira esleitu:\n"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
 msgid  "Article"
-msgstr ""
+msgstr "Artikulua"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
 msgid  "Book"
-msgstr ""
+msgstr "Liburua"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
-msgstr ""
+msgstr "Liburuxkak"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
 msgid  "Conference proceedings"
-msgstr ""
+msgstr "Jardunaldi-txostena"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
 msgid  "Book excerpt"
-msgstr ""
+msgstr "Liburu-pasartea"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
 msgid  "Book excerpt with title"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "Liburu-pasartea tituluarekin"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
 msgid  "Journal"
-msgstr ""
+msgstr "Aldizkaria"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
-msgstr ""
+msgstr "Dokumentazio teknikoa"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
-msgstr ""
+msgstr "Tesia"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
 msgid  "Miscellaneous"
-msgstr ""
+msgstr "Hainbat"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "Doktorego-tesia"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
 msgid  "Research report"
-msgstr ""
+msgstr "Ikerketa-txostena"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
 msgid  "Unpublished"
-msgstr ""
+msgstr "Argitaratu gabea"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
-msgstr ""
+msgstr "posta elektronikoa"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
 msgid  "WWW document"
-msgstr ""
+msgstr "WWW dokumentua"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
 msgid  "User-defined1"
-msgstr ""
+msgstr "Erabiltzaileak def.1"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
 msgid  "User-defined2"
-msgstr ""
+msgstr "Erabiltzaileak def.2"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
 msgid  "User-defined3"
-msgstr ""
+msgstr "Erabiltzaileak def.3"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
 msgid  "User-defined4"
-msgstr ""
+msgstr "Erabiltzaileak def.4"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
 msgid  "User-defined5"
-msgstr ""
+msgstr "Erabiltzaileak def.5"
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Orokorra"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
 msgid  "Insert Section..."
-msgstr ""
+msgstr "Txertatu sekzioa..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
 msgid  "Delete Section..."
-msgstr ""
+msgstr "Ezabatu sekzioa..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
 msgid  "Modify Name..."
-msgstr ""
+msgstr "Aldatu izena..."
 
 #: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
 msgid  "~Short name"
-msgstr ""
+msgstr "~Izen laburra"
 
 #: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "M~ota"
 
 #: bibliography/sections.src#ST_YEAR.STRING.TEXT
 msgid  "~Year"
-msgstr ""
+msgstr "~Urtea"
 
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
-msgstr ""
+msgstr "Egilea(k)"
 
 #: bibliography/sections.src#ST_TITLE.STRING.TEXT
 msgid  "Tit~le"
-msgstr ""
+msgstr "~Titulua"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
-msgstr ""
+msgstr "~Argitaratzailea"
 
 #: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
 msgid  "A~ddress"
-msgstr ""
+msgstr "~Helbidea"
 
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
-msgstr ""
+msgstr "I~SBN"
 
 #: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
 msgid  "~Chapter"
-msgstr ""
+msgstr "~Kapitulua"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
-msgstr ""
+msgstr "Orrialdea~(k)"
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
 msgid  "Editor"
-msgstr ""
+msgstr "Editorea"
 
 #: bibliography/sections.src#ST_EDITION.STRING.TEXT
 msgid  "Ed~ition"
-msgstr ""
+msgstr "E~dizioa"
 
 #: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
 msgid  "~Book title"
-msgstr ""
+msgstr "Li~buru-titulua"
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
 msgid  "Volume"
-msgstr ""
+msgstr "Bolumena"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
-msgstr ""
+msgstr "Argitalpen-~mota"
 
 #: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
 msgid  "Organi~zation"
-msgstr ""
+msgstr "Organi~zazioa"
 
 #: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
 msgid  "Instit~ution"
-msgstr ""
+msgstr "~Erakundea"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
-msgstr ""
+msgstr "Unibertsitatea"
 
 #: bibliography/sections.src#ST_REPORT.STRING.TEXT
 msgid  "Type of re~port"
-msgstr ""
+msgstr "T~xosten mota"
 
 #: bibliography/sections.src#ST_MONTH.STRING.TEXT
 msgid  "~Month"
-msgstr ""
+msgstr "~Hilabetea"
 
 #: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
 msgid  "~Journal"
-msgstr ""
+msgstr "~Aldizkaria"
 
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
-msgstr ""
+msgstr "~Zenbakia"
 
 #: bibliography/sections.src#ST_SERIES.STRING.TEXT
 msgid  "Se~ries"
-msgstr ""
+msgstr "S~eriea"
 
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
-msgstr ""
+msgstr "O~harpena"
 
 #: bibliography/sections.src#ST_NOTE.STRING.TEXT
 msgid  "~Note"
-msgstr ""
+msgstr "~Oharra"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
-msgstr ""
+msgstr "URLa"
 
 #: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
 msgid  "User-defined field ~1"
-msgstr ""
+msgstr "~1. erabiltzaile-eremua"
 
 #: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
 msgid  "User-defined field ~2"
-msgstr ""
+msgstr "~2. erabiltzaile-eremua"
 
 #: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
 msgid  "User-defined field ~3"
-msgstr ""
+msgstr "~3. erabiltzaile-eremua"
 
 #: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
 msgid  "User-defined field ~4"
-msgstr ""
+msgstr "~4. erabiltzaile-eremua"
 
 #: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
 msgid  "User-defined field ~5"
-msgstr ""
+msgstr "~5. erabiltzaile-eremua"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Taula"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
-msgstr ""
+msgstr "Bilatutako gakoa"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
 msgid  "AutoFilter"
-msgstr ""
+msgstr "Iragazki automatikoa"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "Iragazki estandarra"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
 msgid  "Remove Filter"
-msgstr ""
+msgstr "Kendu iragazkia"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
 msgid  "Column Arrangement"
-msgstr ""
+msgstr "Zutabe-antolamendua"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "Datu-iturburua"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
-msgid  "Data"
-msgstr ""
+msgstr "Datuak"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Kontrol-eremuari dagokion inprimakia ez dago datu-iturburu batekin lotuta (edo ez erabat lotuta).\n\nAukeratu datu-iturburu bat eta taula bat.\n\nKontuan izan, orrialde honetan egindako ezarpenek berehala izango dutela eragina orrialdetik irtetean."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
 msgid  "~Data source:"
-msgstr ""
+msgstr "~Datu-iturburua:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
 msgid  "~Table / Query:"
-msgstr ""
+msgstr "~Taula / Kontsulta:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 msgid  "Database Field"
-msgstr ""
+msgstr "Datu-baseko eremua"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
 msgid  "Do you want to save the value in a database field?"
-msgstr ""
+msgstr "Balioa datu-baseko eremu batean gorde nahi duzu?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I want to save it in the following database field:"
-msgstr ""
+msgstr "~Bai, gorde datu-baseko eremu honetan:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
 msgid  "~No, I only want to save the value in the form."
-msgstr ""
+msgstr "~Ez, inprimakian bakarrik gorde nahi dut balioa."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Inprimakia"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "Datu-iturburua"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
 msgid  "Content type"
-msgstr ""
+msgstr "Eduki mota"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
 msgid  "Content"
-msgstr ""
+msgstr "Edukia"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Taula"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "Kontsulta"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL komandoa"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
 msgid  "Group Element Wizard"
-msgstr ""
+msgstr "Taldeko elementuen morroia"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
 msgid  "Table Element Wizard"
-msgstr ""
+msgstr "Taula-elementuen morroia"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
 msgid  "List Box Wizard"
-msgstr ""
+msgstr "Zerrenda-koadroen morroia"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
 msgid  "Combo Box Wizard"
-msgstr ""
+msgstr "Konbinazio-koadroen morroia"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 msgid  "The table connection to the data source could not be established."
-msgstr ""
+msgstr "Datu-iturburuarekin ezin izan da taula-konexiorik ezarri."
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "Eremu-hautapena"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Table element"
-msgstr ""
+msgstr "Taula-elementua"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "Dauden eremuak"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
 msgid  "Selected fields"
-msgstr ""
+msgstr "Hautatutako eremuak"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
 msgid  " (Date)"
-msgstr ""
+msgstr " (Data)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
 msgid  " (Time)"
-msgstr ""
+msgstr " (Ordua)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "Datuak"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
 msgid  "Which ~names do you want to give the option fields?"
-msgstr ""
+msgstr "Zein ~izen eman nahi diezu aukera-eremuei?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
-msgstr ""
+msgstr "~Aukera-eremuak"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
 msgid  "Default Field Selection"
-msgstr ""
+msgstr "Eremu lehenetsiaren hautapena"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
 msgid  "Should one option field be selected as a default?"
-msgstr ""
+msgstr "Aukera-eremu bat hautatu nahi duzu lehenetsi gisa?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
-msgstr ""
+msgstr "~Bai, honako hau:"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
 msgid  "No, one particular field is not going to be selected."
-msgstr ""
+msgstr "Ez, ez da eremu berezi bat hautatuko."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
 msgid  "Field Values"
-msgstr ""
+msgstr "Eremu-balioak"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "Aukera bat hautatzen baduzu, aukera-taldeak balio jakin bat hartuko du."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
-msgstr ""
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
-msgid  "~Option fields"
-msgstr ""
+msgstr "Zein ~balio eman nahi diozu aukera bakoitzari?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
 msgid  "Create Option Group"
-msgstr ""
+msgstr "Sortu aukera-taldea"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
-msgstr ""
+msgstr "Zein ~epigrafe eman nahi diozu aukera-taldeari?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
 msgid  "These were all details needed to create the option group."
-msgstr ""
+msgstr "Hori zen aukera-taldea sortzeko behar zen guztia."
 
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Aukera-taldearen balioa datu-baseko eremu batean gorde dezakezu, edo gero beste ekintza baterako erabil dezakezu."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
 msgid  "Table Selection"
-msgstr ""
+msgstr "Taula-hautapena"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Control"
-msgstr ""
+msgstr "Kontrola"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Eskuinean, inprimakiaren datu-iturburuko taula guztiak ikus ditzakezu.\n\n\nAukeratu zein taulatako datuak erabili nahi dituzun zerrendaren edukia osatzeko."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "Eremu-hautapena"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "Dauden eremuak"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
 msgid  "Display field"
-msgstr ""
+msgstr "~Bistaratzeko eremua"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "Hautatutako eremuaren edukia konbinazio-koadroko zerrendan azalduko da."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Hautatutako eremuaren edukia zerrenda-koadroan azalduko da eremu estekatuak berdinak badira."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
 msgid  "Field Link"
-msgstr ""
+msgstr "Eremu-esteka"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Aukeratu zein eremuren edukiek izan behar duten berdinak, bistaratzeko eremuan balioa erakusteko."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~Value Table"
-msgstr ""
+msgstr "~Balio-taulako eremua"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~List Table"
-msgstr ""
+msgstr "~Zerrenda-taulako eremua"
 
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Konbinazio-koadroaren balioa datu-baseko eremu batean gorde dezakezu, edo gero erakusteko erabil dezakezu."
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
 msgid  "<< Back"
-msgstr ""
+msgstr "<< Atzera"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "Next >>"
-msgstr ""
+msgstr "Hurrengoa >>"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
 msgid  "Accept"
-msgstr ""
+msgstr "Ados"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
 msgid  "Finish"
-msgstr ""
+msgstr "Amaitu"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
-msgstr ""
+msgstr " - Softwarearen lizentzia-kontratua"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
 msgid  "- User Data"
-msgstr ""
+msgstr "- Erabiltzaile-datuak"
 
 #: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
 msgid  "Welcome"
-msgstr ""
+msgstr "Ongi etorri"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
-msgstr ""
+msgstr "Ongi etorri %PRODUCTNAME %PRODUCTVERSION OEMra\n\n%PRODUCTNAME %PRODUCTVERSION OEM abiarazteko, idatzi zure datu pertsonalak lizentziaren testuaren ondorengo elkarrizketa-koadroan. Informazio garrantzitsua aurkituko duzu %PRODUCTNAME produktuaren direktorioan dauden IrakHau (readme) fitxategietan. Irakur itzazu arretaz. Oracle-ren web gunean ere informazio interesgarria aurkituko duzu: \n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
 msgid  "License Agreement"
-msgstr ""
+msgstr "Lizentzia-kontratua"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr ""
+msgstr "Instalazioarekin jarraitzeko, egin urrats hauek:"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Ikusi lizentzia-kontratu osoa. Lizentziaren testu osoa ikusteko, erabili elkarrizketa-koadroko korritze-barra edo '%PAGEDOWN' botoia."
 
 #: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 msgid  "Page Down"
-msgstr ""
+msgstr "Orrialdea behera"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement."
-msgstr ""
+msgstr "Onartu lizentzia-kontratua."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
 msgid  "I accept the terms of the Agreement."
-msgstr ""
+msgstr "Onartzen ditut lizentziaren baldintzak."
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "~Ados"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
-msgstr ""
+msgstr "Ezetsi"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
 msgid  "Character"
-msgstr ""
+msgstr "Karakterea"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Letra-tipoa"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr ""
+msgstr "Karaktere-efektuak"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
 msgid  "Link fields"
-msgstr ""
+msgstr "Esteka-eremuak"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Azpinprimakiak erabil daitezke inprimaki maisuko uneko erregistroari buruzko xehetasunak ikusteko. Horretarako, azpinprimakiko zein zutabe inprimaki maisuko zein zutaberekin doan zehatz dezakezu."
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
 msgid  "Suggest"
-msgstr ""
+msgstr "Iradoki"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
 msgid  "Sub Form"
-msgstr ""
+msgstr "Azpinprimakia"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
 msgid  "Master Form"
-msgstr ""
+msgstr "Inprimaki maisua"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
 msgid  "The columns of '#' could not be retrieved."
-msgstr ""
+msgstr "'#'-(r)en zutabeak ezin izan dira eskuratu."
 
 #: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
 msgid  "Edit mask"
-msgstr ""
+msgstr "Sarrera-maskara"
 
 #: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
 msgid  "Literal mask"
-msgstr ""
+msgstr "Karaktere-maskara"
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "Read-only"
-msgstr ""
+msgstr "Irakurtzeko soilik"
 
 #: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
 msgid  "Enabled"
-msgstr ""
+msgstr "G~aituta"
 
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
 msgid  "Visible"
-msgstr ""
+msgstr "Ikusgai"
 
 #: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
 msgid  "AutoFill"
-msgstr ""
+msgstr "Automatikoki bete"
 
 #: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
 msgid  "Line count"
-msgstr ""
+msgstr "Lerro kopurua"
 
 #: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
 msgid  "Max. text length"
-msgstr ""
+msgstr "Geh. testu-luzera"
 
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
 msgid  "Spin Button"
-msgstr ""
+msgstr "Biratze-botoia"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
 msgid  "Strict format"
-msgstr ""
+msgstr "Formatu-kontrola"
 
 #: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
 msgid  "Thousands separator"
-msgstr ""
+msgstr "Milakoen bereizlea"
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
 msgid  "Printable"
-msgstr ""
+msgstr "Inprimagarria"
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
+#, fuzzy
 msgid  "URL"
-msgstr ""
+msgstr "URLa"
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "Markoa"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
 msgid  "Help text"
-msgstr ""
+msgstr "Laguntza-testua"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
 msgid  "Help URL"
-msgstr ""
+msgstr "Laguntzaren URLa"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
 msgid  "Additional information"
-msgstr ""
+msgstr "Informazio osagarria"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
 msgid  "Password character"
-msgstr ""
+msgstr "Pasahitzeko karakterea"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
 msgid  "Tristate"
-msgstr ""
+msgstr "Hiru egoerakoa"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
 msgid  "Empty string is NULL"
-msgstr ""
+msgstr "Kate hutsa NULL da"
 
 #: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
 msgid  "Decimal accuracy"
-msgstr ""
+msgstr "Dezimalak"
 
 #: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
 msgid  "Graphics"
-msgstr ""
+msgstr "Grafikoak"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
 msgid  "Default selection"
-msgstr ""
+msgstr "Hautapen lehenetsia"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
 msgid  "Default button"
-msgstr ""
+msgstr "Botoi lehenetsia"
 
 #: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
 msgid  "Label Field"
-msgstr ""
+msgstr "Etiketa-eremua"
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
 msgid  "Label"
-msgstr ""
+msgstr "Etiketa"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr ""
+msgstr "Lerrokatzea"
 
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
 msgid  "Vert. Alignment"
-msgstr ""
+msgstr "Lerrokatze bertikala"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
 msgid  "Top"
-msgstr ""
+msgstr "Handiena"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
 msgid  "Middle"
-msgstr ""
+msgstr "Erdikoa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
 msgid  "Bottom"
-msgstr ""
+msgstr "Txikiena"
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
 msgid  "Graphics alignment"
-msgstr ""
+msgstr "Irudiak lerrokatzea"
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Letra-tipoa"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
 msgid  "Background color"
-msgstr ""
+msgstr "Atzeko planoaren kolorea"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
 msgid  "Border"
-msgstr ""
+msgstr "Ertza"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
 msgid  "Icon size"
-msgstr ""
+msgstr "Ikonoaren tamaina"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
 msgid  "Small"
-msgstr ""
+msgstr "Txikia"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
 msgid  "Large"
-msgstr ""
+msgstr "Handia"
 
 #: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
 msgid  "Positioning"
-msgstr ""
+msgstr "Posizioa"
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
 msgid  "Navigation"
-msgstr ""
+msgstr "Nabigazioa"
 
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
 msgid  "Acting on a record"
-msgstr ""
+msgstr "Erregistroetako ekintzak"
 
 #: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
 msgid  "Filtering / Sorting"
-msgstr ""
+msgstr "Iragaztea / Ordenatzea"
 
 #: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
 msgid  "Horizontal scroll bar"
-msgstr ""
+msgstr "Korritze-barra horizontala"
 
 #: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
 msgid  "Vertical scroll bar"
-msgstr ""
+msgstr "Korritze-barra bertikala"
 
 #: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
 msgid  "Word break"
-msgstr ""
+msgstr "Hitz-zatiketa"
 
 #: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
 msgid  "Multiline input"
-msgstr ""
+msgstr "Lerro anitzeko sarrera"
 
 #: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
 msgid  "Multiselection"
-msgstr ""
+msgstr "Hautapen anizkoitza"
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
 msgid  "Name"
-msgstr ""
+msgstr "Izena"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 msgid  "Tab order"
-msgstr ""
+msgstr "Aktibazio-ordena"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
 msgid  "Mouse wheel scroll"
-msgstr ""
+msgstr "Saguaren gurpil-gertaerak"
 
 #: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
 msgid  "Filter"
-msgstr ""
+msgstr "Iragazkia"
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
 msgid  "Sort"
-msgstr ""
+msgstr "Ordenatu"
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
 msgid  "Record marker"
-msgstr ""
+msgstr "Erregistro-markatzailea"
 
 #: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
 msgid  "Filter proposal"
-msgstr ""
+msgstr "Iragazki-proposamena"
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
 msgid  "Navigation bar"
-msgstr ""
+msgstr "Nabigazio-barra"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
 msgid  "Cycle"
-msgstr ""
+msgstr "Zikloa"
 
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
 msgid  "Tabstop"
-msgstr ""
+msgstr "Tabulazioa"
 
 #: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
 msgid  "Data field"
-msgstr ""
+msgstr "Datu-eremua"
 
 #: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
 msgid  "Dropdown"
-msgstr ""
+msgstr "Goitibehera"
 
 #: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
 msgid  "Bound field"
-msgstr ""
+msgstr "Lotutako eremua"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
 msgid  "List content"
-msgstr ""
+msgstr "Zerrendaren edukia"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
 msgid  "Type of list contents"
-msgstr ""
+msgstr "Zerrendaren edukiaren mota"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
 msgid  "Content"
-msgstr ""
+msgstr "Edukia"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
 msgid  "Content type"
-msgstr ""
+msgstr "Eduki mota"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
 msgid  "Allow additions"
-msgstr ""
+msgstr "Onartu datuak gehitzea"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
 msgid  "Allow deletions"
-msgstr ""
+msgstr "Onartu datuak ezabatzea"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
 msgid  "Allow modifications"
-msgstr ""
+msgstr "Onartu datuak aldatzea"
 
 #: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
 msgid  "Add data only"
-msgstr ""
+msgstr "Datuak soilik gehitu"
 
 #: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "Datu-iturburua"
 
 #: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
 msgid  "Link master fields"
-msgstr ""
+msgstr "Estekatu hemendik:"
 
 #: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
 msgid  "Link slave fields"
-msgstr ""
+msgstr "Estekatu hona:"
 
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
 msgid  "Value min."
-msgstr ""
+msgstr "Gut. balioa"
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
 msgid  "Value max."
-msgstr ""
+msgstr "Geh. balioa"
 
 #: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
 msgid  "Incr./decrement value"
-msgstr ""
+msgstr "Balio-gehi./gutxitzea"
 
 #: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
 msgid  "Currency symbol"
-msgstr ""
+msgstr "Moneta-ikurra"
 
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
 msgid  "Date min."
-msgstr ""
+msgstr "Gut. data"
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
 msgid  "Date max."
-msgstr ""
+msgstr "Geh. data"
 
 #: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
 msgid  "Date format"
-msgstr ""
+msgstr "Data-formatua"
 
 #: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
 msgid  "Selection"
-msgstr ""
+msgstr "Hautapena"
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
 msgid  "Time min."
-msgstr ""
+msgstr "Gut. denbora"
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
 msgid  "Time max."
-msgstr ""
+msgstr "Geh. denbora"
 
 #: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
 msgid  "Time format"
-msgstr ""
+msgstr "Ordu-formatua"
 
 #: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
 msgid  "Prefix symbol"
-msgstr ""
+msgstr "Jarri ikurra aurrean"
 
 #: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
 msgid  "Value"
-msgstr ""
+msgstr "Balioa"
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
 msgid  "Formatting"
-msgstr ""
+msgstr "Formatua"
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
 msgid  "Class ID"
-msgstr ""
+msgstr "Klase ID"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
 msgid  "Height"
-msgstr ""
+msgstr "Altuera"
 
 #: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
 msgid  "Width"
-msgstr ""
+msgstr "Zabalera"
 
 #: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
 msgid  "List index"
-msgstr ""
+msgstr "Zerrenda-indizea"
 
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
 msgid  "Row height"
-msgstr ""
+msgstr "Errenkada-altuera"
 
 #: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
 msgid  "Fill color"
-msgstr ""
+msgstr "Betetzeko kolorea"
 
 #: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
 msgid  "Line color"
-msgstr ""
+msgstr "Marra-kolorea"
 
 #: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
 msgid  "Reference value (on)"
-msgstr ""
+msgstr "Erreferentziako balioa (aktibo)"
 
 #: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
 msgid  "Reference value (off)"
-msgstr ""
+msgstr "Erreferentziako balioa (inaktibo)"
 
 #: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
 msgid  "List entries"
-msgstr ""
+msgstr "Zerrendako sarrerak"
 
 #: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
 msgid  "Action"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
-msgid  "URL"
-msgstr ""
+msgstr "Ekintza"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
 msgid  "Type of submission"
-msgstr ""
+msgstr "Bidalketa mota"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
 msgid  "Default status"
-msgstr ""
+msgstr "Egoera lehenetsia"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
 msgid  "Submission encoding"
-msgstr ""
+msgstr "Bidalketaren kodetzea"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
 msgid  "Default value"
-msgstr ""
+msgstr "Balio lehenetsia"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
 msgid  "Default text"
-msgstr ""
+msgstr "Testu lehenetsia"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
 msgid  "Default date"
-msgstr ""
+msgstr "Data lehenetsia"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
 msgid  "Default time"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
-msgid  "Frame"
-msgstr ""
+msgstr "Ordu lehenetsia"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
 msgid  "Without frame"
-msgstr ""
+msgstr "Markorik gabe"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
 msgid  "3D look"
-msgstr ""
+msgstr "3D itxura"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Flat"
-msgstr ""
+msgstr "Laua"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
 msgid  "Valuelist"
-msgstr ""
+msgstr "Balio-zerrenda"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "Taula"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Query"
-msgstr ""
+msgstr "Kontsulta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
 msgid  "Sql"
-msgstr ""
+msgstr "Sql"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
 msgid  "Sql [Native]"
-msgstr ""
+msgstr "Sql [jatorrizkoa]"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
 msgid  "Tablefields"
-msgstr ""
+msgstr "Taula-eremuak"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
 msgid  "Left"
-msgstr ""
+msgstr "Ezkerrean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
 msgid  "Center"
-msgstr ""
+msgstr "Erdian"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
 msgid  "Right"
-msgstr ""
+msgstr "Eskuinean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "Bat ere ez"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
 msgid  "Submit form"
-msgstr ""
+msgstr "Bidali inprimakia"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
 msgid  "Reset form"
-msgstr ""
+msgstr "Berrezarri inprimakia"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
 msgid  "Open document/web page"
-msgstr ""
+msgstr "Ireki dokumentua/web orria"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
 msgid  "First record"
-msgstr ""
+msgstr "Lehen erregistroa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
 msgid  "Previous record"
-msgstr ""
+msgstr "Aurreko erregistroa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
 msgid  "Next record"
-msgstr ""
+msgstr "Hurrengo erregistroa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
 msgid  "Last record"
-msgstr ""
+msgstr "Azken erregistroa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
 msgid  "Save record"
-msgstr ""
+msgstr "Gorde erregistroa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
 msgid  "Undo data entry"
-msgstr ""
+msgstr "Desegin datu-sarrera"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
 msgid  "New record"
-msgstr ""
+msgstr "Erregistro berria"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
 msgid  "Delete record"
-msgstr ""
+msgstr "Ezabatu erregistroa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
 msgid  "Refresh form"
-msgstr ""
+msgstr "Freskatu inprimakia"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
 msgid  "Get"
-msgstr ""
+msgstr "Lortu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
 msgid  "Post"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
-msgid  "URL"
-msgstr ""
+msgstr "Posta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
 msgid  "Multipart"
-msgstr ""
+msgstr "Zati anitzak"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Testua"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
 msgid  "Standard (short)"
-msgstr ""
+msgstr "Estandarra (laburra)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
 msgid  "Standard (short YY)"
-msgstr ""
+msgstr "Estandarra (laburra UU)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
 msgid  "Standard (short YYYY)"
-msgstr ""
+msgstr "Estandarra (laburra UUUU)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
 msgid  "Standard (long)"
-msgstr ""
+msgstr "Estandarra (luzea)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
 msgid  "DD/MM/YY"
-msgstr ""
+msgstr "EE-HH-UU"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
 msgid  "MM/DD/YY"
-msgstr ""
+msgstr "HH-EE-UU"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
 msgid  "YY/MM/DD"
-msgstr ""
+msgstr "UU-HH-EE"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
 msgid  "DD/MM/YYYY"
-msgstr ""
+msgstr "EE-HH-UUUU"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
 msgid  "MM/DD/YYYY"
-msgstr ""
+msgstr "HH-EE-UUUU"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
 msgid  "YYYY/MM/DD"
-msgstr ""
+msgstr "UUUU-HH-EE"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
 msgid  "YY-MM-DD"
-msgstr ""
+msgstr "UU-HH-EE"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
 msgid  "YYYY-MM-DD"
-msgstr ""
+msgstr "UUUU-HH-EE"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
 msgid  "13:45"
-msgstr ""
+msgstr "13:45"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
 msgid  "13:45:00"
-msgstr ""
+msgstr "13:45:00"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
 msgid  "01:45 PM"
-msgstr ""
+msgstr "01:45 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
 msgid  "01:45:00 PM"
-msgstr ""
+msgstr "01:45:00 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
 msgid  "Not Selected"
-msgstr ""
+msgstr "Hautatu gabe"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
 msgid  "Selected"
-msgstr ""
+msgstr "Hautatuta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
 msgid  "Not Defined"
-msgstr ""
+msgstr "Zehaztu gabe"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
 msgid  "All records"
-msgstr ""
+msgstr "Erregistro guztiak"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
 msgid  "Active record"
-msgstr ""
+msgstr "Uneko erregistroa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
 msgid  "Current page"
-msgstr ""
+msgstr "Uneko orrialdea"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Ez"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "Bai"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
 msgid  "Parent Form"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
-msgid  "None"
-msgstr ""
+msgstr "Inprimaki gurasoa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
 msgid  "Single"
-msgstr ""
+msgstr "Soila"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
 msgid  "Multi"
-msgstr ""
+msgstr "Anitza"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
 msgid  "Range"
-msgstr ""
+msgstr "Barrutia"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
 msgid  "Fill parameters"
-msgstr ""
+msgstr "Bete parametroak"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
 msgid  "Execute action"
-msgstr ""
+msgstr "Exekutatu ekintza"
 
 #: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
 msgid  "After updating"
-msgstr ""
+msgstr "Eguneratu ondoren"
 
 #: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
-msgstr ""
+msgstr "Eguneratu aurretik"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
 msgid  "Before record action"
-msgstr ""
+msgstr "Erregistro-ekintzaren aurretik"
 
 #: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
 msgid  "After record action"
-msgstr ""
+msgstr "Erregistro-ekintzaren ondoren"
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
-msgstr ""
+msgstr "Ezabatzea berrestean"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
 msgid  "Error occurred"
-msgstr ""
+msgstr "Errorea gertatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
-msgstr ""
+msgstr "Fokua hartzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
 msgid  "When losing focus"
-msgstr ""
+msgstr "Fokua galtzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
-msgstr ""
+msgstr "Egoera aldatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
 msgid  "Key pressed"
-msgstr ""
+msgstr "Tekla sakatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
 msgid  "Key released"
-msgstr ""
+msgstr "Tekla askatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
 msgid  "When loading"
-msgstr ""
+msgstr "Kargatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
 msgid  "Before reloading"
-msgstr ""
+msgstr "Birkargatu aurretik"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
 msgid  "When reloading"
-msgstr ""
+msgstr "Birkargatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
 msgid  "Mouse moved while key pressed"
-msgstr ""
+msgstr "Tekla sakatu eta sagua arrastatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
 msgid  "Mouse inside"
-msgstr ""
+msgstr "Sagua barnean dagoenean"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
 msgid  "Mouse outside"
-msgstr ""
+msgstr "Sagua kanpoan dagoenean"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
 msgid  "Mouse moved"
-msgstr ""
+msgstr "Sagua mugitzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
 msgid  "Mouse button pressed"
-msgstr ""
+msgstr "Saguaren botoia sakatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
 msgid  "Mouse button released"
-msgstr ""
+msgstr "Saguaren botoia askatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
 msgid  "Before record change"
-msgstr ""
+msgstr "Erregistroa aldatu aurretik"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
 msgid  "After record change"
-msgstr ""
+msgstr "Erregistroa aldatu ondoren"
 
 #: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
 msgid  "After resetting"
-msgstr ""
+msgstr "Berrezarri ondoren"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
 msgid  "Prior to reset"
-msgstr ""
+msgstr "Berrezarri aurretik"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
 msgid  "Approve action"
-msgstr ""
+msgstr "Onartu ekintza"
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
 msgid  "Before submitting"
-msgstr ""
+msgstr "Bidali aurretik"
 
 #: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
 msgid  "Text modified"
-msgstr ""
+msgstr "Testua aldatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
-msgstr ""
+msgstr "Deskargatu aurretik"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
-msgstr ""
+msgstr "Deskargatzean"
 
 #: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
 msgid  "Changed"
-msgstr ""
+msgstr "Aldatzean"
 
 #: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
 msgid  "Events"
-msgstr ""
+msgstr "Gertaerak"
 
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
 msgid  "Analyze SQL command"
-msgstr ""
+msgstr "Analizatu SQL komandoa"
 
 #: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
 msgid  "PositionX"
-msgstr ""
+msgstr "Xposizioa"
 
 #: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
 msgid  "PositionY"
-msgstr ""
+msgstr "Yposizioa"
 
 #: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
 msgid  "Title"
-msgstr ""
+msgstr "Titulua"
 
 #: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
 msgid  "Page (step)"
-msgstr ""
+msgstr "Orrialdea (urratsa)"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
 msgid  "Progress value"
-msgstr ""
+msgstr "Aurreratze-balioa"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
 msgid  "Progress value min."
-msgstr ""
+msgstr "Gut. aurreratze-balioa"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
 msgid  "Progress value max."
-msgstr ""
+msgstr "Geh. aurreratze-balioa"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
 msgid  "Scroll value"
-msgstr ""
+msgstr "Korritze-balioa"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
 msgid  "Scroll value max."
-msgstr ""
+msgstr "Geh. korritze-balioa"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
 msgid  "Scroll value min."
-msgstr ""
+msgstr "Gut. korritze-balioa"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
 msgid  "Default scroll value"
-msgstr ""
+msgstr "Korritze-balio lehenetsia"
 
 #: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
 msgid  "Small change"
-msgstr ""
+msgstr "Aldaketa txikia"
 
 #: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
 msgid  "Large change"
-msgstr ""
+msgstr "Aldaketa handia"
 
 #: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
 msgid  "Delay"
-msgstr ""
+msgstr "Atzerapena"
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
 msgid  "Repeat"
-msgstr ""
+msgstr "Errepikatu"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
 msgid  "Visible size"
-msgstr ""
+msgstr "Tamaina ikusgaia"
 
 #: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
 msgid  "Orientation"
-msgstr ""
+msgstr "Orientazioa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
+#, fuzzy
 msgid  "Horizontal"
-msgstr ""
+msgstr "Horizontala"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
+#, fuzzy
 msgid  "Vertical"
-msgstr ""
+msgstr "Bertikala"
 
 #: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
 msgid  "While adjusting"
-msgstr ""
+msgstr "Doitzean"
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "Data"
 
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
 msgid  "State"
-msgstr ""
+msgstr "Egoera"
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
 msgid  "Time"
-msgstr ""
+msgstr "Ordua"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
 msgid  "Scale"
-msgstr ""
+msgstr "Eskala"
 
 #: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
 msgid  "Button type"
-msgstr ""
+msgstr "Botoi mota"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
 msgid  "Default"
-msgstr ""
+msgstr "Lehenetsia"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
 msgid  "OK"
-msgstr ""
+msgstr "Ados"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
 msgid  "Cancel"
-msgstr ""
+msgstr "Utzi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
 msgid  "Help"
-msgstr ""
+msgstr "Laguntza"
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr ""
+msgstr "\"$name$\" datu-iturburuarekin ezin izan da konexiorik ezarri."
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
 msgid  "Linked cell"
-msgstr ""
+msgstr "Gelaxka estekatua"
 
 #: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
 msgid  "Source cell range"
-msgstr ""
+msgstr "Iturburu-gelaxkaren bitartea"
 
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
 msgid  "Contents of the linked cell"
-msgstr ""
+msgstr "Gelaxka estekatuaren edukia"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
 msgid  "The selected entry"
-msgstr ""
+msgstr "Hautatutako sarrera"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
 msgid  "Position of the selected entry"
-msgstr ""
+msgstr "Hautatutako sarreraren kokalekua"
 
 #: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
 msgid  "Scrollbars"
-msgstr ""
+msgstr "Korritze-barrak"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
 msgid  "Single-line"
-msgstr ""
+msgstr "Bakuna"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
 msgid  "Multi-line"
-msgstr ""
+msgstr "Lerro anitzekoa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
 msgid  "Multi-line with formatting"
-msgstr ""
+msgstr "Lerro anitzekoa formatuarekin"
 
 #: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
 msgid  "Symbol color"
-msgstr ""
+msgstr "Ikur-kolorea"
 
 #: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
 msgid  "Text lines end with"
-msgstr ""
+msgstr "Amaitu testu-lerroak honekin"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
 msgid  "LF (Unix)"
-msgstr ""
+msgstr "LF (Unix)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
 msgid  "CR+LF (Windows)"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
-msgid  "Horizontal"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
-msgid  "Vertical"
-msgstr ""
+msgstr "CR+LF (Windows)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
 msgid  "Both"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
-msgid  "Table"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
-msgid  "Query"
-msgstr ""
+msgstr "Biak"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL komandoa"
 
 #: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
 msgid  "Toggle"
-msgstr ""
+msgstr "Txandakatu"
 
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
 msgid  "Take Focus on Click"
-msgstr ""
+msgstr "Hartu fokua klik egitean"
 
 #: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
 msgid  "Hide selection"
-msgstr ""
+msgstr "Ezkutatu hautapena"
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
 msgid  "Style"
-msgstr ""
+msgstr "Estiloa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 msgid  "3D"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
-msgid  "Flat"
-msgstr ""
+msgstr "3D"
 
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
 msgid  "Border color"
-msgstr ""
+msgstr "Ertzaren kolorea"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
 msgid  "Left top"
-msgstr ""
+msgstr "Ezkerrean goian"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
 msgid  "Left centered"
-msgstr ""
+msgstr "Ezkerrean erdian"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
 msgid  "Left bottom"
-msgstr ""
+msgstr "Ezkerrean behean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
 msgid  "Right top"
-msgstr ""
+msgstr "Eskuinean goian"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
 msgid  "Right centered"
-msgstr ""
+msgstr "Eskuinean erdian"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
 msgid  "Right bottom"
-msgstr ""
+msgstr "Eskuinean behean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
 msgid  "Above left"
-msgstr ""
+msgstr "Goian ezkerrean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
 msgid  "Above centered"
-msgstr ""
+msgstr "Goian erdian"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
 msgid  "Above right"
-msgstr ""
+msgstr "Goian eskuinean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
 msgid  "Below left"
-msgstr ""
+msgstr "Azpian ezkerrean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
 msgid  "Below centered"
-msgstr ""
+msgstr "Azpian erdian"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
 msgid  "Below right"
-msgstr ""
+msgstr "Azpian eskuinean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
 msgid  "Centered"
-msgstr ""
+msgstr "Erdian"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
 msgid  "Wrap text automatically"
-msgstr ""
+msgstr "Itzulbiratu testua automatikoki"
 
 #: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
 msgid  "Text type"
-msgstr ""
+msgstr "Testu mota"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
 msgid  "Hide"
-msgstr ""
+msgstr "Ezkutatu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
 msgid  "Show"
-msgstr ""
+msgstr "Erakutsi"
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
 msgid  "XML data model"
-msgstr ""
+msgstr "XML datu-eredua"
 
 #: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
 msgid  "Binding expression"
-msgstr ""
+msgstr "Lotzeko adierazpena"
 
 #: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
 msgid  "Required"
-msgstr ""
+msgstr "Beharrezkoa"
 
 #: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
 msgid  "List entry source"
-msgstr ""
+msgstr "Zerrendako sarreraren iturburua"
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
 msgid  "Relevant"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
-msgid  "Read-only"
-msgstr ""
+msgstr "Garrantzitsua"
 
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
 msgid  "Constraint"
-msgstr ""
+msgstr "Murriztapena"
 
 #: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
 msgid  "Calculation"
-msgstr ""
+msgstr "Kalkulua"
 
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
 msgid  "Data type"
-msgstr ""
+msgstr "Datu mota"
 
 #: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
 msgid  "Whitespaces"
-msgstr ""
+msgstr "Zuriuneak"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
 msgid  "Preserve"
-msgstr ""
+msgstr "Mantendu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
 msgid  "Replace"
-msgstr ""
+msgstr "Ordeztu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
 msgid  "Collapse"
-msgstr ""
+msgstr "Tolestu"
 
 #: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
 msgid  "Pattern"
-msgstr ""
+msgstr "Eredua"
 
 #: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
 msgid  "Length"
-msgstr ""
+msgstr "Luzera"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
 msgid  "Length (at least)"
-msgstr ""
+msgstr "Luzera (gutxienez)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
 msgid  "Length (at most)"
-msgstr ""
+msgstr "Luzera (gehienez)"
 
 #: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
 msgid  "Digits (total)"
-msgstr ""
+msgstr "Digituak (guztira)"
 
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
 msgid  "Digits (fraction)"
-msgstr ""
+msgstr "Digituak (frakzioa)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
 msgid  "Max. (inclusive)"
-msgstr ""
+msgstr "Geh. (barne)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
 msgid  "Max. (exclusive)"
-msgstr ""
+msgstr "Geh. (ez barne)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
 msgid  "Min. (inclusive)"
-msgstr ""
+msgstr "Gut. (barne)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
 msgid  "Min. (exclusive)"
-msgstr ""
+msgstr "Gut. (ez barne)"
 
 #: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
 msgid  "Submission"
-msgstr ""
+msgstr "Bidalketa"
 
 #: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
 msgid  "Binding"
-msgstr ""
+msgstr "Lotzea"
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
 msgid  "Selection type"
-msgstr ""
+msgstr "Hautapen mota"
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
 msgid  "Root displayed"
-msgstr ""
+msgstr "Erroa bistaratuta"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
 msgid  "Show handles"
-msgstr ""
+msgstr "Erakutsi heldulekuak"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
 msgid  "Show root handles"
-msgstr ""
+msgstr "Erakutsi erroko heldulekuak"
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
 msgid  "Editable"
-msgstr ""
+msgstr "Editagarria"
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
 msgid  "Invokes stop node editing"
-msgstr ""
+msgstr "Gelditu nodoaren edizioa"
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
 msgid  "With title bar"
-msgstr ""
+msgstr "Titulu-barrarekin"
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
 msgid  "No Label"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
-msgid  "No"
-msgstr ""
+msgstr "Etiketarik ez"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
 msgid  "Keep Ratio"
-msgstr ""
+msgstr "Mantendu proportzioa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
 msgid  "Fit to Size"
-msgstr ""
+msgstr "Doitu tamainari"
 
 #: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
 msgid  "Input required"
-msgstr ""
+msgstr "Sarrera behar da"
 
 #: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
 msgid  "Text direction"
-msgstr ""
+msgstr "Testuaren noranzkoa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
 msgid  "Left-to-right"
-msgstr ""
+msgstr "Ezkerretik eskuinera"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
 msgid  "Right-to-left"
-msgstr ""
+msgstr "Eskuinetik ezkerrera"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
 msgid  "Use superordinate object settings"
-msgstr ""
+msgstr "Erabili goi-mailako objektuen ezarpenak"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
 msgid  "Never"
-msgstr ""
+msgstr "Inoiz ere ez"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
 msgid  "When focused"
-msgstr ""
+msgstr "Fokua duenean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
 msgid  "Always"
-msgstr ""
+msgstr "Beti"
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
 msgid  "Anchor"
-msgstr ""
+msgstr "Aingura"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
 msgid  "To Paragraph"
-msgstr ""
+msgstr "Paragrafoan"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "As Character"
-msgstr ""
+msgstr "Karaktere gisa"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "To Page"
-msgstr ""
+msgstr "Orrialdera"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
 msgid  "To Frame"
-msgstr ""
+msgstr "Markora"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
 msgid  "To Character"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Page"
-msgstr ""
+msgstr "Karakterean"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "To Cell"
-msgstr ""
+msgstr "Gelaxkara"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
 msgid  "Regular"
-msgstr ""
+msgstr "Erregularra"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
 msgid  "Bold Italic"
-msgstr ""
+msgstr "Lodi etzana"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr ""
+msgstr "Etzana"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr ""
+msgstr "Lodia"
 
 #: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
 msgid  "(Default)"
-msgstr ""
+msgstr "(Lehenetsia)"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
 msgid  "New Data Type"
-msgstr ""
+msgstr "Datu mota berria"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
 msgid  "Type a name for the new data type:"
-msgstr ""
+msgstr "Idatzi izen bat datu mota berriarentzat:"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "'#type#' datu mota ezabatu nahi duzu eredutik?\nKontuan izan horrek eragina izango duela datu mota honi lotutako kontrol guztietan."
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
 msgid  "Button"
-msgstr ""
+msgstr "Botoia"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
 msgid  "Option Button"
-msgstr ""
+msgstr "Aukera-botoia"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
 msgid  "Check Box"
-msgstr ""
+msgstr "Kontrol-laukia"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 msgid  "Label Field"
-msgstr ""
+msgstr "Etiketa-eremua"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
 msgid  "Group Box"
-msgstr ""
+msgstr "Talde-markoa"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
 msgid  "Text Box"
-msgstr ""
+msgstr "Testu-koadroa"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
 msgid  "Formatted Field"
-msgstr ""
+msgstr "Eremu formatuduna"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
 msgid  "List Box"
-msgstr ""
+msgstr "Zerrenda-koadroa"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
 msgid  "Combo Box"
-msgstr ""
+msgstr "Konbinazio-koadroa"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
 msgid  "Image Button"
-msgstr ""
+msgstr "Irudi-botoia"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
 msgid  "Hidden Control"
-msgstr ""
+msgstr "Ezkutuko kontrola"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
 msgid  "Control (unknown type)"
-msgstr ""
+msgstr "Kontrola (mota ezezaguna)"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
 msgid  "Image Control"
-msgstr ""
+msgstr "Irudi-kontrola"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
 msgid  "File Selection"
-msgstr ""
+msgstr "Fitxategi-hautapena"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
 msgid  "Date Field"
-msgstr ""
+msgstr "Data-eremua"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
 msgid  "Time Field"
-msgstr ""
+msgstr "Ordu-eremua"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
 msgid  "Numeric Field"
-msgstr ""
+msgstr "Zenbakizko eremua"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
 msgid  "Currency Field"
-msgstr ""
+msgstr "Moneta-eremua"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
 msgid  "Pattern Field"
-msgstr ""
+msgstr "Eremu maskaratua"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
 msgid  "Table Control "
-msgstr ""
+msgstr "Taula-kontrola "
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
 msgid  "Default"
-msgstr ""
+msgstr "Lehenetsia"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Orokorra"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "Datuak"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
 msgid  "No"
-msgstr ""
+msgstr "Ez"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "Bai"
 
 #: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
 msgid  "Help"
-msgstr ""
+msgstr "Laguntza"
 
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
 msgid  "<Embedded-Image>"
-msgstr ""
+msgstr "<Irudi-kapsulatua>"
 
 #: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
 msgid  "Text"
-msgstr ""
+msgstr "Testua"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Hauek dira $control_name$ $control_class$ren etiketa-eremu gisa erabil daitezkeen kontrol-eremuak."
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
 msgid  "~No assignment"
-msgstr ""
+msgstr "~Esleipenik ez"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
 msgid  "Label Field Selection"
-msgstr ""
+msgstr "Etiketa-eremuaren hautapena"
 
 #: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "Inprimakiak"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
 msgid  "Tab Order"
-msgstr ""
+msgstr "Aktibatze-ordena"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
 msgid  "Controls"
-msgstr ""
+msgstr "Kontrolak"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
 msgid  "Move Up"
-msgstr ""
+msgstr "Eraman gora"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
 msgid  "Move Down"
-msgstr ""
+msgstr "Eraman behera"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
 msgid  "Automatic Sort"
-msgstr ""
+msgstr "Ordenatze automatikoa"
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
 msgid  "Set"
-msgstr ""
+msgstr "Ezarri"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
 msgid  "Linear ascending"
-msgstr ""
+msgstr "Goranzko lineala"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
 msgid  "Linear descending"
-msgstr ""
+msgstr "Beheranzko lineala"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
 msgid  "Original values"
-msgstr ""
+msgstr "Jatorrizko balioak"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
 msgid  "Exponential increasing"
-msgstr ""
+msgstr "Hazkunde esponentziala"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Gailuari buruzko \n~informazioa"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Sortu\n~aurrebista"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "Aurrebista"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
 msgid  "Scan area"
-msgstr ""
+msgstr "Eskaneatze-area"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
 msgid  "Left:"
-msgstr ""
+msgstr "E~zkerrean:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
 msgid  "Top:"
-msgstr ""
+msgstr "~Goian:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
 msgid  "Right:"
-msgstr ""
+msgstr "E~skuinean:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
 msgid  "Bottom:"
-msgstr ""
+msgstr "~Behean:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
 msgid  "Device used:"
-msgstr ""
+msgstr "Erabilitako ~gailua:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
 msgid  "Resolution [~DPI]"
-msgstr ""
+msgstr "Bereizmena [~DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
 msgid  "Show advanced options"
-msgstr ""
+msgstr "E~rakutsi aukera aurreratuak"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
 msgid  "Options:"
-msgstr ""
+msgstr "Aukerak:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
 msgid  "Vector element"
-msgstr ""
+msgstr "Bektore-elementua"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
 msgid  "Set"
-msgstr ""
+msgstr "Ezarri"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
 msgid  "Scanner"
-msgstr ""
+msgstr "Eskanerra"
 
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Gailua: %s\nHornitzailea: %s\nModeloa: %s\nMota: %s"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
 msgid  "An error occurred while scanning."
-msgstr ""
+msgstr "Errorea gertatu da eskaneatzean."
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Gailuak ez dauka aurrebista erakusteko aukerarik. Horren ordez, eskaneatze normal bat egin dezake aurrebista gisa, baina denbora asko beharko du horretarako."
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr ""
+msgstr "SANE interfazea ezin izan da hasieratu. Ezin da eskaneatu."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
 msgid  "Check for ~Updates..."
-msgstr ""
+msgstr "Bilatu ~eguneratzeak..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
 msgid  "Checking..."
-msgstr ""
+msgstr "Begiratzen..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
 msgid  "Checking for an update failed."
-msgstr ""
+msgstr "Eguneraketen egiaztapenak huts egin du."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION eguneratuta dago."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION eskuragarri dago.\n\nInstalatutako bertsioa honakoa da: %PRODUCTNAME %PRODUCTVERSION.\n\nOharra: eguneraketa deskargatu aurretik, ziurtatu nahikoa baimen dituzula instalatzeko.\nPasahitza eskatuko da, normalean 'root' edo administratzailearena."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
 msgid  "Check for Updates"
-msgstr ""
+msgstr "Egiaztatu eguneratzeak dauden"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION deskargatzen, hemen pausarazita..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION deskargatzen, hemen trabatuta"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Deskargaren kokalekua: %DOWNLOAD_PATH.\n\nTresnak – Aukerak... - %PRODUCTNAME – Lineako eguneratzea menuan deskargaren kokalekua alda dezakezu."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr ""
+msgstr "%FILE_NAME deskargatu da %DOWNLOAD_PATH kokalekuan."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Eguneraketaren deskarga automatikoa oraingoz ez dago erabilgarri.\n\nEgin klik 'Deskargatu...' aukeran %PRODUCTNAME %NEXTVERSION eskuz deskargatzeko web gunetik."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION deskargatzen..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION programaren deskarga osatuta. Instalatzeko prest."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
 msgid  "Do you really want to cancel the download?"
-msgstr ""
+msgstr "Nahi duzu deskarga bertan behera uztea?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "Eguneraketa instalatzeko %PRODUCTNAME %PRODUCTVERSION itxi egin behar da. Nahi duzu eguneraketa orain instalatzea?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
 msgid  "Install ~now"
-msgstr ""
+msgstr "Instalatu ~orain"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
 msgid  "Install ~later"
-msgstr ""
+msgstr "Instalatu ~beranduago"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "Ezin izan da instalatzailearen aplikazioa exekutatu. %DOWNLOAD_PATH kokalekuko %FILE_NAME eskuz exekutatu."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Izen bereko fitxategia badago lehendik ere. Nahi duzu existitzen den fitxategia gainidaztea?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "'%FILENAME' izeneko fitxategia badago lehendik ere '%DOWNLOAD_PATH'(e)n. Deskargarekin jarraitzea , edo ezabatu eta fitxategia birkargatzea nahi duzu?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
 msgid  "Reload File"
-msgstr ""
+msgstr "Birkargartu fitxategia"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
 msgid  "Continue"
-msgstr ""
+msgstr "Jarraitu"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
 msgid  "%PERCENT%"
-msgstr ""
+msgstr "%PERCENT%"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
 msgid  "Status"
-msgstr ""
+msgstr "Egoera"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "Azalpena"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "Itxi"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
 msgid  "~Download"
-msgstr ""
+msgstr "~Deskargatu"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
 msgid  "~Install"
-msgstr ""
+msgstr "~Instalatu"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
 msgid  "~Pause"
-msgstr ""
+msgstr "~Pausarazi"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
 msgid  "~Resume"
-msgstr ""
+msgstr "~Berrekin"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr ""
+msgstr "Utzi"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "%PRODUCTNAME eguneratzea erabilgarri"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
 msgid  "Click here to start the download."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "Egin klik hemen deskargatzen hasteko."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
+#, fuzzy
 msgid  "Click here for more information."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "Egin klik hemen informazio gehiagorako."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
 msgid  "Download of update begins."
-msgstr ""
+msgstr "Eguneratzearen deskarga hasi da."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
 msgid  "Download of update in progress"
-msgstr ""
+msgstr "Eguneratzearen deskarga lanean"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
 msgid  "Download of update paused"
-msgstr ""
+msgstr "Eguneratzearen deskarga pausarazita"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
 msgid  "Click here to resume."
-msgstr ""
+msgstr "Egin klik hemen berrekiteko."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
 msgid  "Download of update stalled"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
+msgstr "Eguneratzearen deskarga trabatuta"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Download of update completed"
-msgstr ""
+msgstr "Eguneratzearen deskarga osatuta"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Click here to start the installation."
-msgstr ""
+msgstr "Egin klik hemen instalazioa hasteko."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
 msgid  "Updates for extensions available"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
+msgstr "Hedapenen eguneraketak eskuragarri"

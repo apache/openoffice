@@ -33,3584 +33,3432 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
 msgid  "Tried to open the table $name$."
-msgstr ""
+msgstr "Pokus o otevření tabulky $name$."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
 msgid  "No connection could be established."
-msgstr ""
+msgstr "Nepodařilo se vytvořit připojení."
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "Tabulka $name$ již existuje. Není viditelná, protože byla odfiltrována."
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "Nemáte přístup pro zápis do konfiguračních dat, na nichž je tento objekt založen."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "Nepodařilo se vytvořit připojení k externímu zdroji dat. Došlo k neznámé chybě. Pravděpodobně je poškozen ovladač."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "Nepodařilo se vytvořit připojení k externímu zdroji dat. Pro zadané URL nebyl nalezen žádný SDBC ovladač."
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "Nepodařilo se vytvořit připojení k externímu zdroji dat. Nepodařilo se načíst manažer SDBC ovladačů."
 
 #: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Formulář"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Sestava"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "Datový zdroj nebyl uložen. Použijte, prosím, rozhraní XStorable k uložení datového zdroje."
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Zadaný příkaz není výraz typu SELECT.\nJsou povoleny pouze dotazy."
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
 msgid  "No values were modified."
-msgstr ""
+msgstr "Žádné hodnoty nebyly změněny."
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Nelze vložit hodnoty. ResultSet nepodporuje rozhraní XRowUpdate."
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Nelze vložit hodnoty. ResultSet nepodporuje rozhraní XResultSetUpdate."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
 msgid  "Values could not be modified, due to a missing condition statement."
-msgstr ""
+msgstr "Nelze vložit hodnoty, protože schází výraz s podmínkou."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
 msgid  "The adding of columns is not supported."
-msgstr ""
+msgstr "Přidávání sloupců není podporováno."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
 msgid  "The dropping of columns is not supported."
-msgstr ""
+msgstr "Rušení sloupců není podporováno."
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
 msgid  "The WHERE condition could not be created for the primary key."
-msgstr ""
+msgstr "Nelze vytvořit WHERE podmínku pro primární klíč."
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
 msgid  "The column does not support the property '%value'."
-msgstr ""
+msgstr "Sloupec nepodporuje vlastnost '%value'."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
 msgid  "The column is not searchable!"
-msgstr ""
+msgstr "Sloupec není vyhledávatelný!"
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
 msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
-msgstr ""
+msgstr "Hodnota sloupců není typu Sequence<sal_Int8>."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
 msgid  "The column is not valid."
-msgstr ""
+msgstr "Sloupec je neplatný."
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
 msgid  "The column '%name' must be visible as a column."
-msgstr ""
+msgstr "Sloupec '%name' musí být viditelný jako sloupec."
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
 msgid  "The interface XQueriesSupplier is not available."
-msgstr ""
+msgstr "Rozhraní XQueriesSupplier není dostupné."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
 msgid  "The driver does not support this function."
-msgstr ""
+msgstr "Ovladač nepodporuje tuto funkci."
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
 msgid  "An 'absolute(0)' call is not allowed."
-msgstr ""
+msgstr "Volání 'absolute(0)' není povoleno."
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
 msgid  "Relative positioning is not allowed in this state."
-msgstr ""
+msgstr "Relativní umísťování není v tomto stavu povoleno."
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "Řádek nelze obnovit, je-li výsledná sada umístěna za posledním řádkem."
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "Nový řádek nelze vložit, pokud není nejprve výsledná sada přemístěna do vkládaného řádku."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
 msgid  "A row cannot be modified in this state"
-msgstr ""
+msgstr "Řádek nelze v tomto stavu měnit."
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
 msgid  "A row cannot be deleted in this state."
-msgstr ""
+msgstr "Řádek v tomto stavu odstranit nelze."
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
 msgid  "The driver does not support table renaming."
-msgstr ""
+msgstr "Ovladač nepodporuje přejmenovávání tabulek."
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions."
-msgstr ""
+msgstr "Ovladač nepodporuje změnu popisků sloupců."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "Ovladač nepodporuje modifikaci popisků sloupců změnou názvu."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "Ovladač nepodporuje modifikaci popisků sloupců změnou indexu."
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Soubor \"$file$\" neexistuje."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no table named \"$table$\"."
-msgstr ""
+msgstr "Tabulka \"$table$\" neexistuje."
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no query named \"$table$\"."
-msgstr ""
+msgstr "Dotaz pojmenovaný \"$table$\" neexistuje."
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "V databázi jsou tabulky, jejichž názvy jsou v konfliktu s názvy existujících dotazů. Chcete-li plně využít všechny dotazy a tabulky, ujistěte se, že mají různé názvy."
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "SQL příkaz, který chybu způsobil:\n\n$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The SQL command does not describe a result set."
-msgstr ""
+msgstr "SQL příkaz nepopisuje sadu výsledků."
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
 msgid  "The name must not be empty."
-msgstr ""
+msgstr "Název nesmí být prázdný."
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
 msgid  "The container cannot contain NULL objects."
-msgstr ""
+msgstr "Kontejner nesmí obsahovat objeky NULL."
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There already is an object with the given name."
-msgstr ""
+msgstr "Objekt se zadaným názvem již existuje."
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
 msgid  "This object cannot be part of this container."
-msgstr ""
+msgstr "Tento objekt nemůže být součástí tohoto kontejneru."
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
 msgid  "The object already is, with a different name, part of the container."
-msgstr ""
+msgstr "Tento objekt již je pod jiným názvem částí kontejneru."
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
 msgid  "Unable to find the document '$name$'."
-msgstr ""
+msgstr "Nelze najít dokument '$name$'."
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "Není možné uložit dokument do $location$:\n$message$"
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "Chyba při přístupu k datovém zdroji '$name$':\n$error$"
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
 msgid  "There exists no folder named \"$folder$\"."
-msgstr ""
+msgstr "Adresář \"$folder$\" neexistuje."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
 msgid  "Cannot delete the before-first or after-last row."
-msgstr ""
+msgstr "Nelze odstranit řádek před prvním nebo po posledním."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.STRING.TEXT
 msgid  "Cannot delete the insert-row."
-msgstr ""
+msgstr "Nelze odebrat vkládaný řádek."
 
 #: core/resource/strings.src#RID_STR_RESULT_IS_READONLY.STRING.TEXT
 msgid  "Result set is read only."
-msgstr ""
+msgstr "Výsledek je pouze pro čtení."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
 msgid  "DELETE privilege not available."
-msgstr ""
+msgstr "Právo DELETE není dostupné."
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "Current row is already deleted."
-msgstr ""
+msgstr "Aktuální řádek je již odstraněn."
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
 msgid  "Current row could not be updated."
-msgstr ""
+msgstr "Aktuální řádek nelze aktualizovat."
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
 msgid  "INSERT privilege not available."
-msgstr ""
+msgstr "Právo INSERT není dostupné."
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
 msgid  "Internal error: no statement object provided by the database driver."
-msgstr ""
+msgstr "Interní chyba: ovladač databáze neposkytuje objekt deklarace."
 
 #: core/resource/strings.src#RID_STR_EXPRESSION1.STRING.TEXT
 msgid  "Expression1"
-msgstr ""
+msgstr "Expression1"
 
 #: core/resource/strings.src#RID_STR_NO_SQL_COMMAND.STRING.TEXT
 msgid  "No SQL command was provided."
-msgstr ""
+msgstr "Nebyl zadán SQL příkaz."
 
 #: core/resource/strings.src#RID_STR_INVALID_INDEX.STRING.TEXT
 msgid  "Invalid column index."
-msgstr ""
+msgstr "Chybný index sloupce."
 
 #: core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.STRING.TEXT
 msgid  "Invalid cursor state."
-msgstr ""
+msgstr "Chybný stav kurzoru."
 
 #: core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.STRING.TEXT
 msgid  "The cursor points to before the first or after the last row."
-msgstr ""
+msgstr "Kurzor ukazuje před první nebo za poslední řádek."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.STRING.TEXT
 msgid  "The rows before the first and after the last row don't have a bookmark."
-msgstr ""
+msgstr "Řádky před prvním a po posledním řádku nemají záložky."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.STRING.TEXT
 msgid  "The current row is deleted, and thus doesn't have a bookmark."
-msgstr ""
+msgstr "Aktuální řádek je odstraněn, a proto nemá záložku."
 
 #: core/resource/strings.src#RID_STR_NO_EMBEDDING.STRING.TEXT
 msgid  "Embedding of database documents is not supported."
-msgstr ""
+msgstr "Vkládání databázových dokumentů není podporováno."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
 msgid  "A connection for the following URL was requested \"$name$\"."
-msgstr ""
+msgstr "Bylo vyžádáno připojení k následujícímu URL \"$name$\"."
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
 msgid  "The extension is not installed."
-msgstr ""
+msgstr "Rozšíření není nainstalováno."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database ~name"
-msgstr ""
+msgstr "Název databáze"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
 msgid  "User settings"
-msgstr ""
+msgstr "Uživatelská nastavení"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
 msgid  "~Control user"
-msgstr ""
+msgstr "Řídící uživatel"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
 msgid  "~Administrator"
-msgstr ""
+msgstr "Administrátor"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
 msgid  "~Domain user"
-msgstr ""
+msgstr "Doménový uživatel"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
 msgid  "P~assword..."
-msgstr ""
+msgstr "Heslo..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
 msgid  "~Password..."
-msgstr ""
+msgstr "Heslo..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
 msgid  "Passwo~rd..."
-msgstr ""
+msgstr "Heslo..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
 msgid  "~Backup file"
-msgstr ""
+msgstr "Záložní soubor"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
 msgid  "..."
-msgstr ""
+msgstr "..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
 msgid  "Database settings"
-msgstr ""
+msgstr "Nastavení databáze"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE"
-msgstr ""
+msgstr "S~YSDEVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "TRANSACTI~ONLOG"
-msgstr ""
+msgstr "TRANSACTI~ONLOG"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE"
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
+msgstr "DATAD~EVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
 msgid  "Transaction ~file (MB)"
-msgstr ""
+msgstr "Transakční soubor (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data~base size (MB)"
-msgstr ""
+msgstr "Velikost databáze (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "Velikost bufferu dat (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
 msgid  "Backup file information"
-msgstr ""
+msgstr "Údaje o záložním souboru"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
 msgid  "Create New Adabas D Database"
-msgstr ""
+msgstr "Vytvořit novou databázi Adabas D"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
 msgid  "No entry could be written in the configuration file."
-msgstr ""
+msgstr "Do konfiguračního souboru nelze zapsat žádný záznam."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
 msgid  "An error occurred as the DB files were being created."
-msgstr ""
+msgstr "Při vytváření databázových souborů došlo k chybě."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
 msgid  "An error occurred as the system tables were being created."
-msgstr ""
+msgstr "Při vytváření systémových tabulek došlo k chybě."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
 msgid  "The backup file entered does not exist."
-msgstr ""
+msgstr "Zadaný záložní soubor neexistuje."
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
-msgstr ""
+msgstr "Platný název souboru nemůže být delší než \\'#\\' znaků."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
 msgid  "The administrator and the control user cannot have the same name!"
-msgstr ""
+msgstr "Administrátor a řídící uživatel nemohou mít stejné jméno! "
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
 msgid  "No name has been entered for the $name$ file!"
-msgstr ""
+msgstr "Nebyl zadán název pro soubor $name$!"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
 msgid  "You have to have administrator rights to create a new database!"
-msgstr ""
+msgstr "K vytvoření nové databáze potřebujete administrátorská práva!"
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
 msgid  "The specified file name or directory does not exist."
-msgstr ""
+msgstr "Zadaný soubor nebo adresář neexistuje."
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
 msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Nová databáze nebyla vytvořena.\nZkontrolujte instalaci Adabas D, zvláště proměnné \"DBROOT\" a \"DBWORK\"."
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
+msgstr "Varování! "
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
 msgid  "Creating database files."
-msgstr ""
+msgstr "Vytvoření databázových souborů."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
 msgid  "Creating database configuration file."
-msgstr ""
+msgstr "Vytvoření konfiguračního souboru databáze."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
 msgid  "Starting database for the first time."
-msgstr ""
+msgstr "První spuštění databáze."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
 msgid  "The name entered already exists."
-msgstr ""
+msgstr "Zadaný název již existuje."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "Pro databázové soubory nelze nastavit výchozí názvy. Celková délka je větší než 40 znaků."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "Pro databázové soubory nelze nastavit výchozí názvy. Není přístup pro zápis."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Aktuální databázi je potřeba zkonvertovat. Zadejte, prosím, jméno a heslo řídícího uživatele."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "V hesle nejsou povoleny mezery. Zadejte nové heslo, prosím."
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
 msgid  "Database Document Macro Migration"
-msgstr ""
+msgstr "Migrace maker databázových dokumentů"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
 msgid  "Prepare"
-msgstr ""
+msgstr "Připravit"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
 msgid  "Backup Document"
-msgstr ""
+msgstr "Zálohovat dokument"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
 msgid  "Migrate"
-msgstr ""
+msgstr "Migrovat"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr ""
+msgstr "Souhrn"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Welcome to the Database Macro Migration Wizard"
-msgstr ""
+msgstr "Vítá vás průvodce migrací maker v databázích"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Tento průvodce vás provede migrací maker.\n\nPo skončení se všechna makra, která jsou momentálně vložená do formulářů a sestav, vloží přímo do aktuálního databázového dokumentu. V průběhu migrace budou podle potřeby přejmenovány knihovny.\n\nPokud vaše formuláře a sestavy obsahují odkazy na makra, budou upraveny, pokud to bude možné.\n\nNež začne migrace, je potřeba zavřít všechny formuláře, sestavy, dotazy a tabulky náležící k dokumentu. Učiníto to klepnutím na 'Další'."
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "Některé objekty nelze zavřít. Zavřete je prosím ručně a poté znovu spusťte průvodce."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Backup your Document"
-msgstr ""
+msgstr "Záloha dokumentu"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "Abyste se mohl vrátit do stavu před migrací, zazálohuje se databázový dokument do vybrané složky. Všechny změny bude průvodce provádět na původním dokumentu, záloha zůstane nedotčena."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
 msgid  "Save To:"
-msgstr ""
+msgstr "Uložit do:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
 msgid  "Browse ..."
-msgstr ""
+msgstr "Procházet..."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Klepnutím na 'Následující' uložíte kopii dokumentu a spustíte migraci."
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Migration Progress"
-msgstr ""
+msgstr "Průběh migrace"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "Databázový dokument obsahuje $forms$ formulářů a $reports$ sestav, které se právě zpracovávají:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
 msgid  "Current object:"
-msgstr ""
+msgstr "Aktuální objekt:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Current progress:"
-msgstr ""
+msgstr "Aktuální průběh:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Overall progress:"
-msgstr ""
+msgstr "Celkový průběh:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
 msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "dokument $current$/$overall$"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
-
-#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Summary"
-msgstr ""
+msgstr "Úspěšně byly zpracovány všechny formuláře a sestavy. Po klepnutí na 'Další' se zobrazí podrobný soupis."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "Migrace byla úspěšná. Níže najdete seznam provedených akcí."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "Migrace byla neúspěšná. Podrobnosti zjistíte ze záznamu níže."
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
 msgid  "Form '$name$'"
-msgstr ""
+msgstr "Formulář '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
 msgid  "Report '$name$'"
-msgstr ""
-
-#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
-msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "Sestava '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
 msgid  "Database Document"
-msgstr ""
+msgstr "Databázový dokument"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
 msgid  "saved copy to $location$"
-msgstr ""
+msgstr "kopie uložena do $location$"
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
 msgid  "migrated $type$ library '$old$' to '$new$'"
-msgstr ""
+msgstr "migrována knihovna typu $type$: '$old$' na '$new$'"
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
 msgid  "$type$ library '$library$'"
-msgstr ""
+msgstr "knihovna $type$ '$library$'"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
 msgid  "migrating libraries ..."
-msgstr ""
+msgstr "migrace knihoven ..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic"
-msgstr ""
+msgstr "%PRODUCTNAME Basic"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
 msgid  "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
 msgid  "BeanShell"
-msgstr ""
+msgstr "BeanShell"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
 msgid  "Java"
-msgstr ""
+msgstr "Java"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
 msgid  "Python"
-msgstr ""
+msgstr "Python"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
 msgid  "dialog"
-msgstr ""
+msgstr "dialog"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
 msgid  "Error(s)"
-msgstr ""
+msgstr "Chyby"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
 msgid  "Warnings"
-msgstr ""
+msgstr "Varování"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
 msgid  "caught exception: "
-msgstr ""
+msgstr "zachycené výjimky:"
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "Záložní umístění se musí lišit od umístění dokumentu."
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
 msgid  "Invalid number of initialization arguments. Expected 1."
-msgstr ""
+msgstr "Neplatný počet inicializačních argumentů. Očekáván 1."
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
 msgid  "No database document found in the initialization arguments."
-msgstr ""
+msgstr "V inicializačních argumentech chybí databázový dokument."
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
 msgid  "Not applicable to read-only documents."
-msgstr ""
+msgstr "Nelze použít na dokumenty pouze pro čtení."
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "Dotaz a tabulka nemohou mít stejný název. Zadejte název, který ještě není použit pro dotaz ani tabulku."
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Tabulka"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "Dotaz"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "Zadané spojení není platný dotaz nebo odkaz na tabulky."
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
 msgid  "The given object is no table object."
-msgstr ""
+msgstr "Zadaný objekt není objekt tabulky."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Neplatný typ spojení - je potřeba hodnota z com.sun.star.sdb.tools.CompositionType."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Neplatný typ příkazu - jsou povoleny jen TABLE a QUERY z com.sun.star.sdb.CommandType."
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
 msgid  "Create Form in Design View..."
-msgstr ""
+msgstr "Vytvořit formulář v režimu návrhu..."
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Form..."
-msgstr ""
+msgstr "Použít průvodce pro vytvoření formuláře..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
-msgstr ""
+msgstr "Použít průvodce pro vytvoření sestavy..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
 msgid  "Create Report in Design View..."
-msgstr ""
+msgstr "Vytvořit sestavu v režimu návrhu..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
 msgid  "Create Query in Design View..."
-msgstr ""
+msgstr "Vytvořit dotaz v režimu návrhu..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
 msgid  "Create Query in SQL View..."
-msgstr ""
+msgstr "Vytvořit dotaz v SQL pohledu..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Query..."
-msgstr ""
+msgstr "Použít průvodce pro vytvoření dotazu..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
-msgstr ""
+msgstr "Vytvořit tabulku v režimu návrhu..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Table..."
-msgstr ""
+msgstr "Použít průvodce pro vytvoření tabulky..."
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
 msgid  "Create View..."
-msgstr ""
+msgstr "Vytvořit pohled..."
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "Formuláře"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
-msgstr ""
+msgstr "Sestavy"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
 msgid  "Form..."
-msgstr ""
+msgstr "Formulář..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
 msgid  "Report..."
-msgstr ""
+msgstr "Sestava..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
 msgid  "View (Simple)..."
-msgstr ""
+msgstr "Pohled (jednoduchý)..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
 msgid  "Paste Special..."
-msgstr ""
+msgstr "Vložit jinak..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
 msgid  "Delete"
-msgstr ""
+msgstr "Odstranit"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
 msgid  "Rename"
-msgstr ""
+msgstr "Přejmenovat"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
 msgid  "Edit"
-msgstr ""
+msgstr "Upravit"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
-msgstr ""
+msgstr "Upravit v SQL pohledu..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
-msgstr ""
+msgstr "Otevřít"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
 msgid  "Create as View"
-msgstr ""
+msgstr "Vytvořit jako pohled"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
-msgstr ""
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
-msgid  "Report..."
-msgstr ""
+msgstr "Průvodce formulářem..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Průvodce sestavou..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
 msgid  "Select All"
-msgstr ""
+msgstr "Vybrat vše"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
 msgid  "~Database"
-msgstr ""
+msgstr "Databáze"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr ""
+msgstr "Vlastnosti..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
 msgid  "Connection Type..."
-msgstr ""
+msgstr "Typ spojení..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
 msgid  "Advanced Settings..."
-msgstr ""
+msgstr "Pokročilá nastavení..."
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
 msgid  "Do you want to delete the data source '%1'?"
-msgstr ""
+msgstr "Přejete si odstranit datový zdroj '%1'?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base"
-msgstr ""
+msgstr " - %PRODUCTNAME Base"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Tento průvodce vás provede kroky nezbytnými pro vytvoření sestavy."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Vytvořit formulář zadáním zdroje záznamů, ovládacích prvků a vlastností těchto prvků."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Vytvořit sestavu zadáním zdroje záznamů, ovládacích prvků a vlastností těchto prvků."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "Tento průvodce vás provede kroky nezbytnými pro vytvoření formuláře."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Vytvořit dotaz zadáním filtrů, vstupních tabulek, názvů polí a vlastností pro třídění a seskupování."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "Vytvořit dotaz přímým zadáním SQL výrazu."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Tento průvodce vás provede kroky nezbytnými pro vytvoření dotazu."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Vytvořit tabulku zadáním názvů, vlastností a typů polí."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Zvolte si z nabídky vzorových obchodních nebo osobních tabulek, které si můžete upravit, a vytvořit tak tabulku."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Vytvořit pohled zadáním tabulek a názvů polí, které chcete mít viditelné."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Opens the view wizard"
-msgstr ""
+msgstr "Otevřít průvodce pohledem"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "Databáze"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
 msgid  "Tasks"
-msgstr ""
+msgstr "Úlohy"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "Popis"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "Náhled"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
 msgid  "Disable Preview"
-msgstr ""
-
-#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "Zakázat náhled"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
 msgid  "None"
-msgstr ""
+msgstr "Žádné"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
 msgid  "Document Information"
-msgstr ""
+msgstr "Informace o dokumentu"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
 msgid  "Document"
-msgstr ""
+msgstr "Dokument"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Formulář"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Sestava"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
 msgid  "F~orm name"
-msgstr ""
+msgstr "Název formuláře"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
 msgid  "~Report name"
-msgstr ""
+msgstr "Název sestavy"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
 msgid  "F~older name"
-msgstr ""
+msgstr "Název složky"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
 msgid  "The document contains forms or reports with embedded macros."
-msgstr ""
+msgstr "Dokument obsahuje formuláře nebo sestavy s vloženými makry."
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Makra by měla být vložena přímo do databáze.\n\nDokument můžete používat i nadále, ale doporučujeme vám přemigrovat makra. Pomůže vám s tím volba 'Nástroje / Migrovat makra...'.\n\nPoznámka: dokud neprovedete migraci, nemůžete vkládat makra do databázového dokumentu."
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
 msgid  "Embedded database"
-msgstr ""
+msgstr "Vestavěná databáze"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
 msgid  "You cannot select different categories."
-msgstr ""
+msgstr "Není možné vybrat jiné kategorie."
 
 #: ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.STRING.TEXT
 msgid  "Unsupported object type found ($type$)."
-msgstr ""
+msgstr "Nalezen nepodporovaný datový typ ($type$)."
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
-
-#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Tabulka #"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 msgid  "Do you want to delete the selected data?"
-msgstr ""
+msgstr "Chcete vymazat vybraná data?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
 msgid  "(filtered)"
-msgstr ""
+msgstr "(filtrováno)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "Chyba při nastavení kritérií pro řazení"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "Chyba při nastavení kritérií filtru"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
 msgid  "Connection lost"
-msgstr ""
+msgstr "Spojení ztraceno"
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "Dotazy"
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "Tabulky"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 msgid  "Edit ~Database File..."
-msgstr ""
+msgstr "Upravit databázový soubor..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
 msgid  "Registered databases ..."
-msgstr ""
+msgstr "Zaregistrované databáze..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
 msgid  "Disco~nnect"
-msgstr ""
+msgstr "Odpojit"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
 msgid  "Confirm Deletion"
-msgstr ""
+msgstr "Potvrdit odstranění"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
 msgid  "Do you want to delete the table '%1'?"
-msgstr ""
+msgstr "Chcete odstranit tabulku '%1'?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
 msgid  "The query already exists. Do you want to delete it?"
-msgstr ""
+msgstr "Tento dotaz již existuje. Chcete jej odstranit?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "Připojení k databázi bylo ztraceno. Chcete se znovu připojit?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
 msgid  "Warnings encountered"
-msgstr ""
+msgstr "Obdržena varování"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "Databázové připojení nahlásilo varování během načítání tabulek."
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
 msgid  "Connecting to \"$name$\" ..."
-msgstr ""
+msgstr "Připojení k \"$name$\" ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
 msgid  "Loading query $name$ ..."
-msgstr ""
+msgstr "Načítání dotazu $name$ ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
 msgid  "Loading table $name$ ..."
-msgstr ""
+msgstr "Načítání tabulky $name$ ..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
 msgid  "No table format could be found."
-msgstr ""
+msgstr "Nebyl nalezen žádný formát tabulky."
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
+msgstr "Nepodařilo se připojení k datovému zdroji \"$name$\"."
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
 msgid  "Rebuild"
-msgstr ""
+msgstr "Obnovit strukturu"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 msgid  "Column ~Format..."
-msgstr ""
+msgstr "Formát sloupce..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
 msgid  "Copy Column D~escription"
-msgstr ""
+msgstr "Zkopírovat popis sloupce"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
 msgid  "Table Format..."
-msgstr ""
+msgstr "Formát tabulky..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
 msgid  "Row Height..."
-msgstr ""
+msgstr "Výška řádku..."
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
 msgid  "Undo: Data Input"
-msgstr ""
+msgstr "Zpět: Vstup dat"
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 msgid  "Save current record"
-msgstr ""
+msgstr "Uložit aktuální záznam"
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
 msgid  "Query #"
-msgstr ""
+msgstr "Dotaz #"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
+msgstr "Tabulka #"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
 msgid  "View #"
-msgstr ""
+msgstr "Pohled #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name \"#\" already exists."
-msgstr ""
+msgstr "Název \"#\" již existuje."
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
 msgid  "No matching column names were found."
-msgstr ""
+msgstr "Nebyl nalezen žádný odpovídající název sloupce."
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
 msgid  "An error occurred. Do you want to continue copying?"
-msgstr ""
+msgstr "Došlo k chybě. Chcete pokračovat v kopírování?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
 msgid  "Data source table view"
-msgstr ""
+msgstr "Tabulkový pohled na zdroj dat"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
 msgid  "Shows the selected table or query."
-msgstr ""
+msgstr "Zobrazit vybranou tabulku nebo dotaz."
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
 msgid  "Table name"
-msgstr ""
+msgstr "Název tabulky"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
 msgid  "Insert data"
-msgstr ""
+msgstr "Vložit data"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
 msgid  "Delete data"
-msgstr ""
+msgstr "Odstranit data"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
 msgid  "Modify data"
-msgstr ""
+msgstr "Upravit data"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
 msgid  "Alter structure"
-msgstr ""
+msgstr "Změnit strukturu"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
 msgid  "Read data"
-msgstr ""
+msgstr "Číst data"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
 msgid  "Modify references"
-msgstr ""
+msgstr "Upravit odkazy"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
 msgid  "Drop structure"
-msgstr ""
+msgstr "Zahodit strukturu"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "Řadit vzestupně"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
 msgid  "Sort Descending"
-msgstr ""
+msgstr "Řadit sestupně"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "Nepodařilo se připojit ke správci SDBC ovladačů (#servicename#)."
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 msgid  "A driver is not registered for the URL #connurl#."
-msgstr ""
+msgstr "Není zaregistrován žádný ovladač pro URL #connurl#."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
 msgid  "No connection could be established for the URL #connurl#."
-msgstr ""
+msgstr "Nepodařilo se vytvořit připojení pro URL #connurl#."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "Zkontrolujte, prosím, aktuální nastavení, např. uživatelské jméno a heslo."
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "Spojení bylo navázáno, ale informace o tabulkách v databázi není dostupná."
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
 msgid  "All tables"
-msgstr ""
+msgstr "Všechny tabulky"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
 msgid  "All views"
-msgstr ""
+msgstr "Všechny pohledy"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
 msgid  "All tables and views"
-msgstr ""
+msgstr "Všechny tabulky a pohledy"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 msgid  "Modify SQL statement(s)"
-msgstr ""
+msgstr "Upravit SQL příkaz(y)"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
 msgid  "Database files"
-msgstr ""
+msgstr "Databázové soubory"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE:"
-msgstr ""
+msgstr "SYSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "~TRANSACTIONLOG:"
-msgstr ""
+msgstr "TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE:"
-msgstr ""
+msgstr "DATADEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
 msgid  "Database sizes"
-msgstr ""
+msgstr "Velikosti databáze"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
 msgid  "S~ize (MB):"
-msgstr ""
+msgstr "Velikost (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
 msgid  "~Free memory space (MB):"
-msgstr ""
+msgstr "Volné místo v paměti (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
 msgid  "~Memory utilization (in %):"
-msgstr ""
+msgstr "Využití paměti (v %):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
 msgid  "Database Statistics"
-msgstr ""
+msgstr "Statistiky databáze"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
 msgid  "Contains the system tables"
-msgstr ""
+msgstr "Obsahuje systémové tabulky"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
 msgid  "Contains information about transaction"
-msgstr ""
+msgstr "Obsahuje informace o transakci"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
 msgid  "Contains all data files"
-msgstr ""
+msgstr "Obsahuje všechny datové soubory"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
 msgid  "Total size of the database files"
-msgstr ""
+msgstr "Celková velikost databázových souborů"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 msgid  "Currently available space before a new datadev file is created."
-msgstr ""
+msgstr "Volné místo před vytvořením nového datového souboru."
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
 msgid  "Currently used memory"
-msgstr ""
+msgstr "Právě používaná paměť"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "Nebylo možné zobrazit žádné informace, protože nemáte přístupová práva k potřebným systémovým tabulkám."
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
 msgid  "~Database name"
-msgstr ""
+msgstr "Jméno databáze"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
 msgid  "Se~rver / Port"
-msgstr ""
+msgstr "Server / Port"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
 msgid  "~Server"
-msgstr ""
+msgstr "Server"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
 msgid  "~Port"
-msgstr ""
+msgstr "Port"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Výchozí: 3306"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
-msgstr ""
+msgstr "Socket"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
 msgid  "Named p~ipe"
-msgstr ""
+msgstr "Pojmenovaná roura"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "Tabulky"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "Dotazy"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr ""
+msgstr "Přidat"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
 msgid  "Add Tables"
-msgstr ""
+msgstr "Přidat tabulky"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
 msgid  "Add Table or Query"
-msgstr ""
+msgstr "Přidat tabulku nebo dotaz"
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Volby"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 msgid  "Use SQL92 naming constraints"
-msgstr ""
+msgstr "Použít omezení v pojmenování SQL92"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
 msgid  "Append the table alias name on SELECT statements"
-msgstr ""
+msgstr "Přidat alias tabulky v příkazech SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
 msgid  "Use keyword AS before table alias names"
-msgstr ""
+msgstr "Použít klíčové slovo AS před aliasy tabulek"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 msgid  "Use Outer Join syntax '{OJ }'"
-msgstr ""
+msgstr "Použít syntaxi Outer Join '{OJ }'"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
 msgid  "Ignore the privileges from the database driver"
-msgstr ""
+msgstr "Ignorovat oprávnění z databázového ovladače"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
 msgid  "Replace named parameters with '?'"
-msgstr ""
+msgstr "Nahradit pojmenované parametry otazníkem (?)"
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
 msgid  "Display version columns (when available)"
-msgstr ""
+msgstr "Zobrazit sloupce verzí (jsou-li k dispozici)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 msgid  "Use catalog name in SELECT statements"
-msgstr ""
+msgstr "Použít název katalogu ve výrazech typu SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
 msgid  "Use schema name in SELECT statements"
-msgstr ""
+msgstr "Použít název schématu ve výrazech typu SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
 msgid  "Create index with ASC or DESC statement"
-msgstr ""
+msgstr "Vytvořit index s příkazy ASC nebo DESC"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
 msgid  "End text lines with CR+LF"
-msgstr ""
+msgstr "Zakončit řádky textu pomocí CR+LF"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
 msgid  "Ignore currency field information"
-msgstr ""
+msgstr "Ignorovat informace pole měny"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
 msgid  "Form data input checks for required fields"
-msgstr ""
+msgstr "Kontrola zadaných údajů pro povinná pole"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
 msgid  "Use ODBC conformant date/time literals"
-msgstr ""
+msgstr "Použít datum/čas kompatibilní s ODBC"
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
 msgid  "Supports primary keys"
-msgstr ""
+msgstr "Podporuje primární klíče"
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
 msgid  "Respect the result set type from the database driver"
-msgstr ""
+msgstr "Použít typ výsledku z ovladače databáze"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Default"
-msgstr ""
+msgstr "Výchozí"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Mixed"
-msgstr ""
+msgstr "Smíšené"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "MS Access"
-msgstr ""
+msgstr "MS Access"
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
 msgid  "Comparison of Boolean values"
-msgstr ""
+msgstr "Porovnávání booleovských hodnot"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
-msgstr ""
+msgstr "Počet prohledaných řádků pro určení typu sloupce"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Nastavení"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
 msgid  "Re~trieve generated values"
-msgstr ""
+msgstr "Získat vygenerované hodnoty"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
 msgid  "~Auto-increment statement"
-msgstr ""
+msgstr "Výraz pro automatický přírůstek"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
 msgid  "~Query of generated values"
-msgstr ""
+msgstr "Dotaz z vygenerovaných hodnot"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
 msgid  "Generated Values"
-msgstr ""
+msgstr "Generované hodnoty"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 msgid  "Special Settings"
-msgstr ""
+msgstr "Speciální nastavení"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
-msgstr ""
+msgstr "Pokročilá nastavení"
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the dBASE files"
-msgstr ""
+msgstr "Cesta k souborům dBASE"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the text files"
-msgstr ""
+msgstr "Cesta k textovým souborům"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the spreadsheet document"
-msgstr ""
+msgstr "Cesta k dokumentu s tabulkou"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
 msgid  "Name of the ODBC data source on your system"
-msgstr ""
+msgstr "Název datového zdroje ODBC ve vašem systému"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the MySQL database"
-msgstr ""
+msgstr "Název databáze MySQL"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Oracle database"
-msgstr ""
+msgstr "Název databáze Oracle"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Adabas D database"
-msgstr ""
+msgstr "Název databáze Adabas D"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
 msgid  "Microsoft Access database file"
-msgstr ""
+msgstr "Soubor s databází MS Access"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "Další nastavení není třeba. K ověření funkčnosti spojení klepněte na tlačítko '%test'."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
 msgid  "Datasource URL"
-msgstr ""
+msgstr "URL datového zdroje"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "Název serveru"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
 msgid  "~Mozilla profile name"
-msgstr ""
+msgstr "Název profilu Mozilla"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
 msgid  "~Thunderbird profile name"
-msgstr ""
+msgstr "Název profilu Thunderbird"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 msgid  "Browse"
-msgstr ""
+msgstr "Procházet"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database name"
-msgstr ""
+msgstr "Jméno databáze"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 msgid  "Server"
-msgstr ""
+msgstr "Server"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
 msgid  "Base ~DN"
-msgstr ""
+msgstr "Základní DN"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
 msgid  "~Port number"
-msgstr ""
+msgstr "Číslo portu"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 msgid  "Data conversion"
-msgstr ""
+msgstr "Převod dat"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
 msgid  "~Character set"
-msgstr ""
+msgstr "Znaková sada"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "Určete typy souborů, ke kterým chcete přistupovat"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
 msgid  "Plain text files (*.txt)"
-msgstr ""
+msgstr "Prostý text (*.txt)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 msgid  "'Comma separated value' files (*.csv)"
-msgstr ""
+msgstr "Soubory CSV (*.csv)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
 msgid  "Custom:"
-msgstr ""
+msgstr "Vlastní:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Custom: *.abc"
-msgstr ""
+msgstr "Vlastní: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
 msgid  "Row Format"
-msgstr ""
+msgstr "Formát řádky"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Field separator"
-msgstr ""
+msgstr "Oddělovač polí"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Text separator"
-msgstr ""
+msgstr "Oddělovač textu"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Decimal separator"
-msgstr ""
+msgstr "Desetinný oddělovač"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Thousands separator"
-msgstr ""
+msgstr "Oddělovač tisíců"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
 msgid  "~Text contains headers"
-msgstr ""
+msgstr "Text obsahující záhlaví"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
 msgid  "{None}"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ""
+msgstr "{Žádný}"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 msgid  "#1 must be set."
-msgstr ""
+msgstr "#1 musí být nastaveno."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
 msgid  "#1 and #2 must be different."
-msgstr ""
+msgstr "#1 a #2 se musí lišit."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
 msgid  "Wildcards such as ?,* are not allowed in #1."
-msgstr ""
+msgstr "V #1 nejsou povoleny zástupné znaky (např. ?, *)."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "JDBC d~river class"
-msgstr ""
+msgstr "Třída JDBC ovladače"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
-msgstr ""
+msgstr "Otestovat třídu"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
 msgid  "Socket"
-msgstr ""
+msgstr "Socket"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
 msgid  "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Create New Directory"
-msgstr ""
+msgstr "Vytvořit nový adresář"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Up One Level"
-msgstr ""
+msgstr "O úroveň výše"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
 msgid  "File ~name:"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "Název souboru:"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
 msgid  "~Path:"
-msgstr ""
+msgstr "Cesta:"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
 msgid  "Folder"
-msgstr ""
+msgstr "Složka"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "Soubor již existuje. Přepsat?"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Obecné"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "Název serveru"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
-msgstr ""
+msgstr "Autentizace uživatelů"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "Uživatelské jméno"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
 msgid  "Password required"
-msgstr ""
+msgstr "Vyžadováno heslo"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "JDBC properties"
-msgstr ""
+msgstr "Vlastnosti JDBC"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "~JDBC driver class"
-msgstr ""
+msgstr "Třída JDBC ovladače"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test Class"
-msgstr ""
+msgstr "Otestovat třídu"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "Test Connection"
-msgstr ""
+msgstr "Otestovat spojení"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
 msgid  "No Adabas D data sources were found on your system."
-msgstr ""
+msgstr "Žádné datové zdroje Adabas D nebyly ve vašem systému nalezeny."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
 msgid  "Connection Test"
-msgstr ""
+msgstr "Test spojení"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
 msgid  "The connection was established successfully."
-msgstr ""
+msgstr "Spojení bylo úspěšně navázáno."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "Spojení nelze navázat."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver was loaded successfully."
-msgstr ""
+msgstr "JDBC ovladač byl úspěšně načten."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver could not be loaded."
-msgstr ""
+msgstr "Nelze načíst JDBC ovladač."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
 msgid  "MS Access file"
-msgstr ""
+msgstr "Soubor MS Access"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
 msgid  "MS Access 2007 file"
-msgstr ""
+msgstr "Soubor MS Access 2007"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
 msgid  "A password is needed to connect to the data source \"$name$\"."
-msgstr ""
+msgstr "Pro připojení k datovému zdroji \"$name$\" potřebujete heslo."
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Adresář\n\n$path$\n\nneexistuje. Má být vytvořen?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
 msgid  "The directory $name$ could not be created."
-msgstr ""
+msgstr "Adresář $name$ nemohl být vytvořen."
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
 msgid  "Convert Database"
-msgstr ""
+msgstr "Konvertovat databázi"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 msgid  "Please enter the ~password for the user 'DOMAIN'."
-msgstr ""
+msgstr "Zadejte, prosím, heslo pro uživatele 'DOMAIN'."
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
 msgid  "Tables Filter"
-msgstr ""
+msgstr "Filtr tabulek"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Tables and table filter"
-msgstr ""
+msgstr "Tabulky a filtry tabulek"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Mark the tables that should be visible for the applications."
-msgstr ""
+msgstr "Označte tabulky, které mají být viditelné pro aplikace."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
 msgid  "Database Wizard"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
-msgid  "Database Wizard"
-msgstr ""
+msgstr "Průvodce databází"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
 msgid  "Select database"
-msgstr ""
+msgstr "Vybrat databázi"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 msgid  "Set up dBASE connection"
-msgstr ""
+msgstr "Nastavit dBASE spojení"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
 msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Nastavit spojení s textovými soubory"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
 msgid  "Set up Microsoft Access connection"
-msgstr ""
+msgstr "Nastavit spojení s MS Access"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
 msgid  "Set up LDAP connection"
-msgstr ""
+msgstr "Nastavit spojení s LDAP"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
 msgid  "Set up Adabas D connection"
-msgstr ""
+msgstr "Nastavit spojení s Adabas D"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
 msgid  "Set up ADO connection"
-msgstr ""
+msgstr "Nastavit ADO spojení"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
 msgid  "Set up JDBC connection"
-msgstr ""
+msgstr "Nastavit JDBC spojení"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
 msgid  "Set up Oracle database connection"
-msgstr ""
+msgstr "Nastavit spojení s Oracle"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
 msgid  "Set up MySQL connection"
-msgstr ""
+msgstr "Nastavit spojení s MySQL"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
 msgid  "Set up ODBC connection"
-msgstr ""
+msgstr "Nastavit ODBC spojení"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
 msgid  "Set up Spreadsheet connection"
-msgstr ""
+msgstr "Nastavit spojení s tabulkou"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
 msgid  "Set up user authentication"
-msgstr ""
+msgstr "Nastavit autentizaci uživatele"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
 msgid  "Set up MySQL server data"
-msgstr ""
+msgstr "Nastavit MySQL server"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
 msgid  "Save and proceed"
-msgstr ""
+msgstr "Uložit a pokračovat"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
 msgid  "New Database"
-msgstr ""
+msgstr "Nová databáze"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to a MySQL database"
-msgstr ""
+msgstr "Nastavit spojení s databází MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "K databázi MySQL je možné se připojit pomocí rozhraní ODBC nebo JDBC.\nPokud si nejste jisti tímto nastavením, kontaktuje, prosím, správce systému,"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
 msgid  "How do you want to connect to your MySQL database?"
-msgstr ""
+msgstr "Jakým způsobem se chcete připojit k databázi MySQL?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
 msgid  "Connect using ODBC (Open Database Connectivity)"
-msgstr ""
+msgstr "Připojit se pomocí ODBC (Open Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
 msgid  "Connect using JDBC (Java Database Connectivity)"
-msgstr ""
+msgstr "Připojit se pomocí JDBC (Java Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
 msgid  "Connect directly"
-msgstr ""
+msgstr "Připojit přímo"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up the user authentication"
-msgstr ""
+msgstr "Nastavit autentizaci uživatelů"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "Některé databáze vyžadují zadání uživatelského jména."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "Uživatelské jméno"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "Password re~quired"
-msgstr ""
+msgstr "Vyžadováno heslo"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "~Test Connection"
-msgstr ""
+msgstr "Otestovat spojení"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
 msgid  "Decide how to proceed after saving the database"
-msgstr ""
+msgstr "Rozhodnout se, jak pokračovat po uložení databáze"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "Přejete si, aby průvodce zaregistroval databázi v %PRODUCTNAME?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "~Yes, register the database for me"
-msgstr ""
+msgstr "Ano, zaregistrovat databázi"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "N~o, do not register the database"
-msgstr ""
+msgstr "Ne, neregistrovat databázi"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
 msgid  "After the database file has been saved, what do you want to do?"
-msgstr ""
+msgstr "Co si přejete udělat po uložení souboru s databází?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 msgid  "Open the database for editing"
-msgstr ""
+msgstr "Otevřít databázi pro úpravy"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
 msgid  "Create tables using the table wizard"
-msgstr ""
+msgstr "Vytvořit tabulky pomocí průvodce tabulkou"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
 msgid  "Click 'Finish' to save the database."
-msgstr ""
+msgstr "Klepněte na 'Dokončit' k uložení databáze."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up connection to a MySQL database using JDBC"
-msgstr ""
+msgstr "Nastavení spojení s databází MySQL pomocí rozhraní JDBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Zadejte, prosím, požadované informace o připojení k databázi MySQL pomocí JDBC. Všimněte si, že třída JDBC ovladače musí být nainstalována v systému a zaregistrována v %PRODUCTNAME.\nPokud si nejste jisti tímto nastavením,kontaktuje, prosím, správce systému, ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "MySQL JDBC d~river class:"
-msgstr ""
+msgstr "Třída MySQL JDBC ovladače:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Výchozí: 3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
 msgid  "Set up connection to a MySQL database"
-msgstr ""
+msgstr "Nastavit připojení k databázi MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "Zadejte informace potřebné k připojení k databázi MySQL."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to dBASE files"
-msgstr ""
+msgstr "Nastavit spojení s databázovými soubory dBASE"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the dBASE files are stored."
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Zvolte složku, kde jsou uloženy soubory dBASE."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "Vyberte složku, kde jsou uloženy textové soubory ve formátu CSV (hodnoty oddělené čárkou). %PRODUCTNAME Base otevře tyto soubory pouze v režimu pro čtení."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to text files"
-msgstr ""
+msgstr "Cesta k textovým souborům"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a Microsoft Access database"
-msgstr ""
+msgstr "Nastavit spojení s databází Microsoft Access"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "Zvolte, prosím, soubor s databází Microsoft Access ke které chcete přistupovat."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to an LDAP directory"
-msgstr ""
+msgstr "Nastavit spojení k LDAP adresáři"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Zadejte, prosím, požadované informace pro připojení k adresáři LDAP.\nKontaktuje, prosím, správce systému, pokud si nejste jisti tímto nastavením."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
 msgid  "Default: 389"
-msgstr ""
+msgstr "Výchozí: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 msgid  "Use ~secure connection (SSL)"
-msgstr ""
+msgstr "Použít bezpečné připojení (SSL)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Adabas D database"
-msgstr ""
+msgstr "Nastavit spojení s databází Adabas D"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Zadejte název databáze Adabas D, ke které se chcete připojit.\nKlepnutím na 'Procházet...' zvolíte databázi, která je již registrována v %PRODUCTNAME."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ADO database"
-msgstr ""
+msgstr "Nastavit spojení s databází ADO"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Zadejte, prosím, URL datového zdroje ADO, ke kterému se chcete připojit.\\\nKlepnutím na 'Listovat' provedete nastavení specifická pro poskytovatele.\\\nKontaktuje, prosím, správce systému, pokud si nejste jisti tímto nastavením."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ODBC database"
-msgstr ""
+msgstr "Nastavit spojení s databází ODBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Zadejte název databáze ODBC, ke které se chcete připojit.\nKlepnutím na 'Procházet...' zvolíte databázi ODBC již registrovanou v %PRODUCTNAME.\nKontaktuje, prosím, správce systému, pokud si nejste jisti tímto nastavením."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a JDBC database"
-msgstr ""
+msgstr "Nastavit spojení s databází JDBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Zadejte, prosím, požadované informace pro připojení k databázi JDBC.\nPokud si nejste jisti tímto nastavením, kontaktuje, prosím, správce systému."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Oracle database"
-msgstr ""
+msgstr "Nastavit spojení s databází Oracle"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
 msgid  "Default: 1521"
-msgstr ""
+msgstr "Výchozí: 1521"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "Oracle JDBC ~driver class"
-msgstr ""
+msgstr "Třída Oracle JDBC ovladače"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Zadejte, prosím, požadované informace pro připojení k databázi Oracle. Všimněte si, že třída JDBC ovladače musí být v systému nainstalována a zaregistrována v %PRODUCTNAME.\nKontaktuje, prosím, správce systému, pokud si nejste jisti tímto nastavením."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to spreadsheets"
-msgstr ""
+msgstr "Nastavit spojení s tabulkami"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Klepnutím na 'Procházet...' zvolíte sešit %PRODUCTNAME nebo Microsoft Excel.\n%PRODUCTNAME otevře tento soubor v režimu pouze pro čtení."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
 msgid  "~Location and file name"
-msgstr ""
+msgstr "Umístění a název souboru"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "~Password required"
-msgstr ""
+msgstr "Je vyžadováno heslo"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
 msgid  "Use catalog for file-based databases"
-msgstr ""
+msgstr "Pro souborové databáze použít katalog"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Connection Settings"
-msgstr ""
+msgstr "Nastavení spojení"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "Název serveru"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
 msgid  "~Port number"
-msgstr ""
+msgstr "Číslo portu"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
 msgid  "Advanced Properties"
-msgstr ""
+msgstr "Pokročilé vlastnosti..."
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
 msgid  "Additional Settings"
-msgstr ""
+msgstr "Další nastavení"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
 msgid  "Connection settings"
-msgstr ""
+msgstr "Nastavení spojení"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
 msgid  "Database properties"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
-msgid  "Database properties"
-msgstr ""
+msgstr "Vlastnosti databáze"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr ""
+msgstr "Vítejte v průvodci databází %PRODUCTNAME"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Pomocí Průvodce databází vytvořte novou databázi, otevřete existující databázový soubor nebo se připojte k databázi uložené na serveru."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
 msgid  "What do you want to do?"
-msgstr ""
+msgstr "Co si přejete udělat?"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
 msgid  "Create a n~ew database"
-msgstr ""
+msgstr "Vytvořit novou databázi"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
 msgid  "Open an existing database ~file"
-msgstr ""
+msgstr "Otevřít existující databázový soubor"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
 msgid  "Recently used"
-msgstr ""
+msgstr "Naposledy použito"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
 msgid  "Connect to an e~xisting database"
-msgstr ""
+msgstr "Připojit se k databázi"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Zvolte typ databáze, ke které chcete nastavit spojení."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
 msgid  "Database ~type "
-msgstr ""
+msgstr "Typ databáze "
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "Databáze"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Na následujících stránkách je možné detailně nastavit spojení\n\nNové nastavení přepíše vaše staré nastavení."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
 msgid  "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
 msgid  "Data Source Properties: #"
-msgstr ""
+msgstr "Vlastnosti datového zdroje: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "Nebylo možné načíst knihovnu programu #lib# nebo je poškozena. Výběr zdroje dat ODBC není možný."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Tento druh datového zdroje není na této platformě podporován.\nJe možné změnit nastavení, ale pravděpodobně se nebudete moci připojit k databázi."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Obecné"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional settings"
-msgstr ""
+msgstr "Volitelná nastavení"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
 msgid  "Display deleted records as well"
-msgstr ""
+msgstr "Zobrazovat také odstraněné záznamy"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Poznámka: pokud jsou zobrazeny odstraněné (tedy neaktivní) záznamy, nebudete moci odstraňovat záznamy z datového zdroje."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
 msgid  "Indexes..."
-msgstr ""
+msgstr "Indexy..."
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional Settings"
-msgstr ""
+msgstr "Volitelná nastavení"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "ODBC ~options"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr ""
+msgstr "Volby ODBC"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "Velikost datového bufferu (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
 msgid  "~Data increment (MB)"
-msgstr ""
+msgstr "Přírůstek dat (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "Administration"
-msgstr ""
+msgstr "Administrace"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
 msgid  "Control ~user name"
-msgstr ""
+msgstr "Řídící uživatelské jméno"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
 msgid  "Control ~password"
-msgstr ""
+msgstr "Řídící heslo"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr ""
+msgstr "Vypnout službu při ukončení %PRODUCTNAME"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
 msgid  "E~xtended..."
-msgstr ""
+msgstr "Rozšířený..."
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "MySQL JDBC d~river class"
-msgstr ""
+msgstr "Ovladač typu MySQL JDBC"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
-msgstr ""
+msgstr "Otestovat třídu"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
-msgstr ""
+msgstr "Autentizace uživatelů"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "Uživatelské jméno"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
 msgid  "Password required"
-msgstr ""
+msgstr "Vyžadováno heslo"
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "Oracle JDBC d~river class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
+msgstr "Ovladač typu Oracle JDBC"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
 msgid  "~Base DN"
-msgstr ""
+msgstr "Základní DN"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 msgid  "Use secure connection(SSL)"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "Použít zabezpečené spojení (SSL)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
 msgid  "Maximum number of ~records"
-msgstr ""
+msgstr "Maximální počet záznamů"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Hostname"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "Počítač"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "~Driver settings"
-msgstr ""
+msgstr "Nastavení ovladače"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "Pro připojení k existující databázi zvolte 'Připojit se k databázi'."
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "Indexy"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
 msgid  "~Table"
-msgstr ""
+msgstr "Tabulka"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
 msgid  "Assignment"
-msgstr ""
+msgstr "Přiřazení"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
 msgid  "T~able indexes"
-msgstr ""
+msgstr "Indexy tabulky"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
 msgid  "~Free indexes"
-msgstr ""
+msgstr "Volné indexy"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL příkaz"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
 msgid  "Command to execute"
-msgstr ""
+msgstr "Příkaz k provedení"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
 msgid  "Execute"
-msgstr ""
+msgstr "Provést"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
 msgid  "Previous commands"
-msgstr ""
+msgstr "Předchozí příkazy"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
 msgid  "Status"
-msgstr ""
+msgstr "Stav"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 msgid  "Execute SQL Statement"
-msgstr ""
+msgstr "Provést SQL příkaz"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
 msgid  "Command successfully executed."
-msgstr ""
+msgstr "Příkaz byl úspěšně vykonán."
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "Připojení k databázi bylo ztraceno. Tento dialog bude uzavřen."
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
 msgid  "Field Format"
-msgstr ""
+msgstr "Formát pole"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
 msgid  "Bac~k"
-msgstr ""
+msgstr "Zpět"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Písmo"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
 msgid  "Format"
-msgstr ""
+msgstr "Formát"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr ""
+msgstr "Zarovnání"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 msgid  "Table Format"
-msgstr ""
+msgstr "Formát tabulky"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
 msgid  "Save As"
-msgstr ""
+msgstr "Uložit jako"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the object to be created:"
-msgstr ""
+msgstr "Zadejte, prosím, název vytvářeného objektu:"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
 msgid  "~Catalog"
-msgstr ""
+msgstr "Katalog"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
 msgid  "~Schema"
-msgstr ""
+msgstr "Schéma"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
 msgid  "~Table Name"
-msgstr ""
+msgstr "Název tabulky"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
 msgid  "~Name of table view"
-msgstr ""
+msgstr "Název pohledu"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
 msgid  "~Query name"
-msgstr ""
+msgstr "Název dotazu"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
 msgid  "Rename to"
-msgstr ""
+msgstr "Přejmenovat na"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 msgid  "Insert as"
-msgstr ""
+msgstr "Vložit jako"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Height"
-msgstr ""
+msgstr "Výška"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 msgid  "~Automatic"
-msgstr ""
+msgstr "Automaticky"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
 msgid  "Row Height"
-msgstr ""
+msgstr "Výška řádku"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Width"
-msgstr ""
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "Šířka"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
 msgid  "Column Width"
-msgstr ""
+msgstr "Šířka sloupce"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "Zdroj dat"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Choose a data source:"
-msgstr ""
+msgstr "Vyberte zdroj dat:"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
 msgid  "Organize..."
-msgstr ""
+msgstr "Uspořádat..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "Vytvořit..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
 msgid  "Local Databases"
-msgstr ""
+msgstr "Místní databáze"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
 msgid  "Choose a database"
-msgstr ""
+msgstr "Vybrat databázi"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "Indexy"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
 msgid  "New Index"
-msgstr ""
+msgstr "Nový indexy"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
 msgid  "Delete Current Index"
-msgstr ""
+msgstr "Odstranit aktuální index"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
 msgid  "Rename Current Index"
-msgstr ""
+msgstr "Přejmenovat aktuální index"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
 msgid  "Save Current Index"
-msgstr ""
+msgstr "Uložit aktuální index"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 msgid  "Reset Current Index"
-msgstr ""
+msgstr "Obnovit aktuální index"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
 msgid  "Index details"
-msgstr ""
+msgstr "Podrobnosti o indexu"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
 msgid  "Index identifier:"
-msgstr ""
+msgstr "Identifikátor indexu:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
 msgid  "~Unique"
-msgstr ""
+msgstr "Jedinečný"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
 msgid  "Fields"
-msgstr ""
+msgstr "Pole"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "Pořadí řazení"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
 msgid  "Index field"
-msgstr ""
+msgstr "Pole indexu"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "Vzestupně"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "Sestupně"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 msgid  "Do you really want to delete the index '$name$'?"
-msgstr ""
+msgstr "Opravdu chcete odstranit index '$name$'?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
 msgid  "index"
-msgstr ""
+msgstr "index"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
 msgid  "Save Index"
-msgstr ""
+msgstr "Uložit index"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 msgid  "The index must contain at least one field."
-msgstr ""
+msgstr "Index musí obsahovat alespoň jedno pole."
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
 msgid  "Exit Index Design"
-msgstr ""
+msgstr "Ukončit návrh index"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
 msgid  "Do you want to save the changes made to the current index?"
-msgstr ""
+msgstr "Chcete uložit změny provedené na tomto indexu?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There is already another index named \"$name$\"."
-msgstr ""
+msgstr "Jiný index s názvem \"$name$\" již existuje."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
 msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr ""
+msgstr "V definici indexu se smí vyskytnout každý sloupec pouze jednou. Avšak sloupec \"$name$\" byl zadán dvakrát."
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
 msgid  "~Parameters"
-msgstr ""
+msgstr "Parametry"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Value"
-msgstr ""
+msgstr "Hodnota"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
 msgid  "~Next"
-msgstr ""
+msgstr "Další"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 msgid  "Parameter Input"
-msgstr ""
+msgstr "Vstup parametru"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
-msgstr ""
+msgstr "Položka nemohla být převedena na platnou hodnotu sloupce \"$name$\"."
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "Výchozí filtr"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "AND"
-msgstr ""
+msgstr "AND"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "OR"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
-msgstr ""
+msgstr "OR"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Název pole"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
 msgid  "Condition"
-msgstr ""
+msgstr "Podmínka"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
 msgid  "Value"
-msgstr ""
+msgstr "Hodnota"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "Operátor"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
 msgid  "Criteria"
-msgstr ""
+msgstr "Kritérium"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "- none -"
-msgstr ""
+msgstr "- žádné -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
+msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
 msgid  "Sort Order"
-msgstr ""
+msgstr "Pořadí řazení"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "ascending"
-msgstr ""
+msgstr "vzestupně"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
+msgstr "sestupně"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Název pole"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 msgid  "and then"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
-msgid  "and then"
-msgstr ""
+msgstr "a potom"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "Operátor"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
 msgid  "Order"
-msgstr ""
+msgstr "Pořadí"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "Pořadí řazení"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<nic>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
 msgid  "Relations"
-msgstr ""
+msgstr "Relace"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "Použité tabulky"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "Použitá pole"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
 msgid  "Update options"
-msgstr ""
+msgstr "Nastavení aktualizace"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~No action"
-msgstr ""
+msgstr "Žádná akce"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~Update cascade"
-msgstr ""
+msgstr "Kaskádová aktualizace"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 msgid  "~Set null"
-msgstr ""
+msgstr "Nastavit prázdný"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
 msgid  "Set ~default"
-msgstr ""
+msgstr "Nastavit výchozí"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
 msgid  "Delete options"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "~No action"
-msgstr ""
+msgstr "Nastavení smazání"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
 msgid  "Delete ~cascade"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
-msgstr ""
+msgstr "Kaskádové smazání"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Base"
-msgstr ""
+msgstr "%PRODUCTNAME Base"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 msgid  "Details"
-msgstr ""
+msgstr "Podrobnosti"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
 msgid  "Error ~list:"
-msgstr ""
+msgstr "Seznam chyb:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "~Description:"
-msgstr ""
+msgstr "Popis:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 msgid  "SQL Status"
-msgstr ""
+msgstr "Stav SQL"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
 msgid  "Error code"
-msgstr ""
+msgstr "Kód chyby"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "Častým důvodem této chyby je nevhodně nastavená znaková sada pro jazyk databáze. Zkontrolujte nastavení v Upravit - Databáze - Vlastnosti."
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "Chyba"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
 msgid  "Warning"
-msgstr ""
+msgstr "Upozornění"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
 msgid  "Information"
-msgstr ""
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
-msgid  "Details"
-msgstr ""
+msgstr "Informace"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 msgid  "Text Connection Settings"
-msgstr ""
+msgstr "Nastavení připojení textu"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
 msgid  "User Settings"
-msgstr ""
+msgstr "Uživatelská nastavení"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
 msgid  "User administration"
-msgstr ""
+msgstr "Správa uživatelů"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
 msgid  "User selection"
-msgstr ""
+msgstr "Výběr uživatele"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
 msgid  "Us~er:"
-msgstr ""
+msgstr "Uživatel:"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
 msgid  "~Add User..."
-msgstr ""
+msgstr "Přidat uživatele..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
 msgid  "Change ~Password..."
-msgstr ""
+msgstr "Změnit heslo..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
 msgid  "~Delete User..."
-msgstr ""
+msgstr "Odstranit uživatele..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
 msgid  "Access rights for selected user"
-msgstr ""
+msgstr "Přístupová práva pro vybraného uživatele"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 msgid  "Do you really want to delete the user?"
-msgstr ""
+msgstr "Opravdu chcete odstranit tohoto uživatele?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support user administration."
-msgstr ""
+msgstr "Databáze nepodporuje správu uživatelů."
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
 msgid  "User \"$name$:  $\""
-msgstr ""
+msgstr "Uživatel \"$name$:  $\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
 msgid  "Old p~assword"
-msgstr ""
+msgstr "Staré heslo"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr ""
+msgstr "Heslo"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 msgid  "~Confirm  password"
-msgstr ""
+msgstr "Potvrdit heslo"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
 msgid  "Change Password"
-msgstr ""
+msgstr "Změnit heslo"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 msgid  "The passwords do not match. Please enter the password again."
-msgstr ""
+msgstr "Hesla nejsou stejná. Zadejte, prosím, heslo znovu."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
 msgid  "Refresh"
-msgstr ""
+msgstr "Obnovit"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 msgid  "New ~View Design"
-msgstr ""
+msgstr "Nový návrh pohledu"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
 msgid  "New ~Table Design"
-msgstr ""
+msgstr "Nový návrh tabulky"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
 msgid  "Query AutoPilot..."
-msgstr ""
+msgstr "Průvodce dotazem..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "New ~Query (Design View)"
-msgstr ""
+msgstr "Nový návrh dotazu"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "~Edit Query"
-msgstr ""
+msgstr "Upravit dotaz"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 msgid  "New Query (~SQL View)"
-msgstr ""
+msgstr "Upravit příkaz SQL"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "Upravit..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
 msgid  "Column ~Width..."
-msgstr ""
+msgstr "Šířka sloupce..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Průvodce sestavou..."
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
 msgid  "Form AutoPilot..."
-msgstr ""
+msgstr "Průvodce formulářem..."
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
 msgid  "System"
-msgstr ""
+msgstr "System"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
 msgid  "Error during creation"
-msgstr ""
+msgstr "Chyba při vytváření"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "Došlo k neočekávané chybě. Operace nemohla být provedena."
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
 msgid  "The document \"$file$\" could not be opened."
-msgstr ""
+msgstr "Dokument \"$file$\" nelze otevřít."
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "Tabulka nemohla být zrušena, protože to databázové připojení nepodporuje."
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "Vše"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
 msgid  "Undo:"
-msgstr ""
+msgstr "Zpět:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 msgid  "Redo:"
-msgstr ""
+msgstr "Znovu:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
 msgid  "No corresponding column type could be found for column '#1'."
-msgstr ""
+msgstr "Pro sloupec '#1' nebyl nalezen odpovídající typ sloupce."
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Soubor \"$file$\" neexistuje."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr ""
+msgstr "Při připojování ke zdroji dat byla zobrazena upozornění. Zobrazíte je stisknutím \"$buttontext$\"."
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Název '$#$' již existuje.\nZvolte jiný název."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
-msgstr ""
+msgstr "Sestava \"$file$\" vyžaduje rozšíření Oracle Report Builder."
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
 msgid  "Apply columns"
-msgstr ""
+msgstr "Použít sloupce"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 msgid  "Type formatting"
-msgstr ""
+msgstr "Formátování typu"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "Následující pole již byla použita jako primární klíč:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
 msgid  "Assign columns"
-msgstr ""
+msgstr "Přiřadit sloupce"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 msgid  "Copy RTF Table"
-msgstr ""
+msgstr "Kopírovat RTF tabulku"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr ""
+msgstr "Nápověda"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
 msgid  "~Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 msgid  "< ~Back"
-msgstr ""
+msgstr "< Předchozí"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next>"
-msgstr ""
+msgstr "Další >"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
 msgid  "C~reate"
-msgstr ""
+msgstr "Vytvořit"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
 msgid  "Existing columns"
-msgstr ""
+msgstr "Existující sloupce"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
 msgid  "Column information"
-msgstr ""
+msgstr "Informace o sloupci"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 msgid  "Automatic type recognition"
-msgstr ""
+msgstr "Automatické rozpoznávání typu"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
 msgid  "Lines (ma~x)"
-msgstr ""
+msgstr "Řádků (max)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "Primární klíč"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
 msgid  "Source table: \n"
-msgstr ""
+msgstr "Zdrojová tabulka: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "Cílová tabulka: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "Vše"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
 msgid  "Non~e"
-msgstr ""
+msgstr "Nic"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
 msgid  "Ta~ble name"
-msgstr ""
+msgstr "Název tabulky"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Volby"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
 msgid  "De~finition and data"
-msgstr ""
+msgstr "Definice a data"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
 msgid  "Def~inition"
-msgstr ""
+msgstr "Definice"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
 msgid  "A~s table view"
-msgstr ""
+msgstr "Jako pohled na tabulky"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 msgid  "Append ~data"
-msgstr ""
+msgstr "Připojit data"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
-msgstr ""
+msgstr "Použít první řádek jako názvy sloupců"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
 msgid  "Crea~te primary key"
-msgstr ""
+msgstr "Vytvořit primární klíč"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
 msgid  "Name"
-msgstr ""
+msgstr "Název"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 msgid  "Copy table"
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
-msgid  "Copy table"
-msgstr ""
+msgstr "Kopírovat tabulku"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
 msgid  "This table name is not valid in the current database."
-msgstr ""
+msgstr "Tento název tabulky není platný v této databázi."
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Pro přidání dat do existující tabulky zvolte na první stránce možnost 'Připojit data'."
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
 msgid  "Please change the table name. It is too long."
-msgstr ""
+msgstr "Změňte, prosím, název tabulky, je příliš dlouhý."
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "Volby"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "Typ"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 msgid  "Inner join"
-msgstr ""
+msgstr "Vnitřní spoj"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
 msgid  "Left join"
-msgstr ""
+msgstr "Levý spoj"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
 msgid  "Right join"
-msgstr ""
+msgstr "Pravý spoj"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
 msgid  "Full (outer) join"
-msgstr ""
+msgstr "Plný (vnější) spoj"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
 msgid  "Cross join"
-msgstr ""
+msgstr "Křížové spojení"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 msgid  "Natural"
-msgstr ""
+msgstr "Přirozené"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "Použité tabulky"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "Použitá pole"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
 msgid  "Join Properties"
-msgstr ""
+msgstr "Vlastnosti spojení (join)"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "Uvědomte si, prosím, že některé databáze nepodporují tento typ spojení (join)."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Zahrnuje pouze záznamy, pro které jsou obsahy spojovaných polí identické."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "Obsahuje všechny záznamy z tabulky '%1', ale pouze takové záznamy z tabulky '%2', pro které jsou obsahy spojovaných polí identické."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
 msgid  "Contains ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Obsahuje všechny záznamy z tabulky '%1' a tabulky '%2'."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Obsahuje kartézský součin všech záznamů z '%1' a '%2'."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "Obsahuje jen jeden sloupec pro každý pár stejně pojmenovaných sloupců z '%1' a '%2'."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
 msgid  "Add Table Window"
-msgstr ""
+msgstr "Přidat okno tabulky"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
 msgid  "Move table window"
-msgstr ""
+msgstr "Přesunout okno tabulky"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 msgid  "Insert Join"
-msgstr ""
+msgstr "Vložit spojení"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
 msgid  "Delete Join"
-msgstr ""
+msgstr "Odstranit spojení"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
 msgid  "Resize table window"
-msgstr ""
+msgstr "Změnit velikost okna tabulky"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
 msgid  "Delete Column"
-msgstr ""
+msgstr "Odstranit sloupec"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
 msgid  "Move column"
-msgstr ""
+msgstr "Přesunout sloupec"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
 msgid  "Add Column"
-msgstr ""
+msgstr "Přidat sloupec"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, table '$name$' does not exist."
-msgstr ""
+msgstr "Neplatný výraz, tabulka '$name$' neexistuje."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr ""
+msgstr "Neplatný výraz, pole '$name$' neexistuje!"
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "Dotaz pokrývá #num# tabulek. Avšak vybraný typ databáze může zpracovat nejvýše #maxnum# tabulek v jednom příkazu."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
 msgid  "Delete Table Window"
-msgstr ""
+msgstr "Odstranit okno tabulky"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 msgid  "Edit Column Description"
-msgstr ""
+msgstr "Upravit popis sloupce"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
 msgid  "Adjust column width"
-msgstr ""
+msgstr "Přizpůsobit šířku sloupce"
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 msgid  "(not sorted);ascending;descending"
-msgstr ""
+msgstr "(neseřazeno);vzestupně;sestupně"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
 msgid  "(no function);Group"
-msgstr ""
+msgstr "(žádná funkce);Seskupit"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 msgid  "(no table)"
-msgstr ""
+msgstr "(žádná tabulka)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
 msgid  "The database only supports sorting for visible fields."
-msgstr ""
+msgstr "Databáze podporuje řazení jen u viditelných polí."
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
 msgid  "Functions"
-msgstr ""
+msgstr "Funkce"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
 msgid  "Table Name"
-msgstr ""
+msgstr "Název tabulky"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
 msgid  "Alias"
-msgstr ""
+msgstr "Alias"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
 msgid  "Distinct Values"
-msgstr ""
+msgstr "Jedinečné hodnoty"
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "Pole;Alias;Tabulka;Řadit;Viditelné;Funkce;Kritérium;Nebo;Nebo"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
 msgid  "There are too many columns."
-msgstr ""
+msgstr "Příliš mnoho sloupců"
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "A condition cannot be applied to field [*]"
-msgstr ""
+msgstr "Podmínku nelze uplatnit na pole [*]"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 msgid  "The SQL statement created is too long."
-msgstr ""
+msgstr "Vytvořený SQL příkaz je příliš dlouhý."
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
 msgid  "Query is too complex"
-msgstr ""
+msgstr "Příliš komplexní dotaz"
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 msgid  "Nothing has been selected."
-msgstr ""
+msgstr "Nic nebylo vybráno."
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
 msgid  "Too many search criteria"
-msgstr ""
+msgstr "Příliš mnoho vyhledávacích kritérií"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 msgid  "SQL syntax error"
-msgstr ""
+msgstr "Chyba v syntaxi SQL"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "[*] cannot be used as a sort criterion."
-msgstr ""
+msgstr "[*] nemůže být použito jako kritérium pro řazení."
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
 msgid  "There are too many tables."
-msgstr ""
+msgstr "Příliš mnoho tabulek"
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "Nevztahuje se na dotazy položené v nestandardním SQL jazyce platném jen pro tuto databázi."
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
 msgid  "Field name not found or not unique"
-msgstr ""
+msgstr "Název pole nebyl nalezen, nebo není jedinečný."
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
 msgid  "Join could not be processed"
-msgstr ""
+msgstr "Spoj (join) nelze zpracovat"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 msgid  "Syntax error in SQL statement"
-msgstr ""
+msgstr "Syntaktická chyba v SQL příkazu"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support table views."
-msgstr ""
+msgstr "Tato databáze nepodporuje pohledy na tabulky."
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "Tato databáze nepodporuje úpravu existujících pohledů na tabulky."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
 msgid  "Do you want to create a query instead?"
-msgstr ""
+msgstr "Chcete místo toho vytvořit dotaz?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
 msgid  "No query could be created."
-msgstr ""
+msgstr "Nebylo možné vytvořit žádný dotaz."
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
 msgid  "No query could be created because no fields were selected."
-msgstr ""
+msgstr "Nebylo možné vytvořit žádný dotaz, protože nebyla vybrána žádná pole."
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "Odpovídající datový zdroj byl odstraněn.Data vztahující se k tomuto zdroji nemohou být proto uložena."
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
 msgid  "The column '$name$' is unknown."
-msgstr ""
+msgstr "Název sloupce '$name$' není znám."
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
 msgid  "Columns can only be compared using '='."
-msgstr ""
+msgstr "Sloupce lze porovnávat pouze pomocí '='."
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
 msgid  "You must use a column name before 'LIKE'."
-msgstr ""
+msgstr "Musíte použít název sloupce před výrazem 'LIKE'."
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "Nelze najít sloupec. Všimněte si, prosím, že databáze rozlišuje velikost písmen."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Tvorba dotazu"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: View Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Tvorba pohledu"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ byl změněn.\nChcete uložit změny?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr ""
+msgstr "$object$ je založen na SQL příkazu, který nelze zpracovat."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr ""
+msgstr "$object$ bude otevřen v SQL zobrazení."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
 msgid  "The table view"
-msgstr ""
+msgstr "Pohled na tabulku"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
 msgid  "The query"
-msgstr ""
+msgstr "Dotaz"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
 msgid  "The SQL statement"
-msgstr ""
+msgstr "SQL příkaz"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "Dotaz nevrací výsledky, tudíž nemůže být částí jiného dotazu."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "Parametry ActiveConnection a DataSourceName chybí nebo jsou neplatné - nelze inicializovat návrhář dotazu."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Tato relace již existuje. Chcete ji upravit nebo vytvořit novou?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "Upravit..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "Vytvořit..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Relation design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Návrh relace"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support relations."
-msgstr ""
-
-#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Databáze nepodporuje relace."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Pokud zrušíte tuto tabulku, budou všechny k ní vztažené relace zrušeny také. Pokračovat?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "V databázi nelze vytvořit relaci. Možná tento typ tabulky nepodporuje cizí klíče.\nNahlédněte prosím do dokumentace databáze."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "Neznámý;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Vložit/odstranit primární klíč"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "Ano"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
 msgid  "No"
-msgstr ""
+msgstr "Ne"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "Vzestupně"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "Sestupně"
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<nic>"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "Název pole"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
 msgid  "Field Name"
-msgstr ""
+msgstr "Název pole"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
 msgid  "Field ~type"
-msgstr ""
+msgstr "Typ pole"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
 msgid  "Field Type"
-msgstr ""
+msgstr "Typ pole"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
 msgid  "Field length"
-msgstr ""
+msgstr "Délka pole"
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "Popis"
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "Column Description"
-msgstr ""
+msgstr "Popis sloupce"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
 msgid  "Input required"
-msgstr ""
+msgstr "Požadován vstup"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
 msgid  "~AutoValue"
-msgstr ""
+msgstr "Automatická hodnota"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
 msgid  "Field Properties"
-msgstr ""
+msgstr "Vlastnosti pole"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Obecné"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
 msgid  "Description:"
-msgstr ""
+msgstr "Popis:"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
 msgid  "Table properties"
-msgstr ""
+msgstr "Vlastnosti tabulky"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
 msgid  "The text you entered is not a list element. "
-msgstr ""
+msgstr "Text, který byl zadán, není položkou seznamu. "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
 msgid  "Insert Rows"
-msgstr ""
+msgstr "Vložit řádky"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "Primární klíč"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
 msgid  "Modify cell"
-msgstr ""
+msgstr "Upravit buňku"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
 msgid  "Delete row"
-msgstr ""
+msgstr "Odstranit řádek"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
 msgid  "Modify field type"
-msgstr ""
+msgstr "Změnit typ pole"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
 msgid  "Insert row"
-msgstr ""
+msgstr "Vložit řádek"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
 msgid  "Insert new row"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Vložit nový řádek"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
 msgid  "~Default value"
-msgstr ""
+msgstr "Výchozí hodnota"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
 msgid  "~Entry required"
-msgstr ""
+msgstr "Požadována položka"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "~Length"
-msgstr ""
+msgstr "Délka"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
-msgid  "~Length"
-msgstr ""
+msgstr "Typ"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
 msgid  "Decimal ~places"
-msgstr ""
+msgstr "Míst za desetinnou čárkou"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
 msgid  "Format example"
-msgstr ""
+msgstr "Příklad formátu"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Vyberte hodnotu, která se má objevit ve všech nových záznamech jako výchozí.\nPokud pole nemá mít výchozí hodnotu, vyberte <nic>."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Zadejte výchozí hodnotu pro toto pole.\n\nPokud budete později vkládat data do tabulky, bude tento řetězec použit v každém novém záznamu pro toto pole. Proto by měl odpovídat formátu buňky, který je třeba zadat níže."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "Aktivujte tuto volbu pokud pole nemá obsahovat prázdné hodnoty, tzn. uživatel musí vždy zadat data."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
 msgid  "Enter the maximum text length permitted."
-msgstr ""
+msgstr "Zadejte maximální povolenou délku textu."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
 msgid  "Enter the number format."
-msgstr ""
+msgstr "Zadejte formát čísla."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Určete délku dat v tomto poli.\n\nU číselných polí se jedná o maximální délku čísla, kterou bude možné zadat, u binárních polí se jedná o délku datového bloku.\nHodnota bude patřičně upravena, pokud překročí maximum pro tuto databázi."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "Určete počet desetinných míst povolených v tomto poli."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Zde vidíte, jak by byla zobrazena data v současném formátu. (Použijte tlačítko vpravo, pokud jej chcete změnit.)"
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "Zde určujete výstupní formát dat."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Vyberte, zda toto pole má obsahovat hodnoty s automatickým přírůstkem.\n\nDo polí tohoto typu nelze zadávat data. Do každého nového záznamu bude vložena hodnota automaticky (výsledek inkrementace předchozího záznamu)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr "..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
-msgstr ""
+msgstr "Tabulku nelze uložit, protože název sloupce \"$column$\" byl přiřazen dvakrát."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgstr "Sloupec \"$column$\" patří do primárního klíče. Pokud bude zrušen, bude zrušen i primární klíč. Chcete opravdu pokračovat?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
 msgid  "Primary Key Affected"
-msgstr ""
+msgstr "Byl ovlivněn primární klíč"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
 msgid  "Column"
-msgstr ""
+msgstr "Sloupec"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
 msgid  "Continue anyway?"
-msgstr ""
+msgstr "Chcete přesto pokračovat?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "Upozornění!"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "Tabulka nemohla být uložena z důvodu problémů při připojování k databázi."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
-
-#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "Filtr tabulky nemohl být upraven, protože datový zdroj byl zrušen."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
 msgid  "No primary key"
-msgstr ""
+msgstr "Žádný primární klíč"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "Pro identifikaci datového záznamu v této databázi je nezbytný jednozančný index nebo primární klíč.\nDo tabulky je možné vkládat data pouze tehdy, je li splněna alespoň jedna z těchto podmínek.\n\nMá být primární klíč vytvořen nyní?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Table Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Návrh tabulky"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgstr "Sloupec \"$column$\" nemohl být změněn. Má být místo toho zrušen a přidán nový?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
 msgid  "Error while saving the table design"
-msgstr ""
+msgstr "Chyba při ukládání návrhu tabulky"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
 msgid  "The column $column$ could not be deleted."
-msgstr ""
+msgstr "Sloupec $column$ nelze odstranit."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "Chystáte se odstranit veškeré sloupce v tabulce. Tabulka ovšem nemůže bez sloupců existovat. Má být celá tabulka z databáze odstraněna? Pokud nikoliv, bude tabulka zachována beze změn."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "A~uto-increment statement"
-msgstr ""
+msgstr "Výraz pro automatický přírůstek"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Zadejte SQL výraz pro políčko s automatickým přírůstkem.\n\nTento výraz bude přímo zanesen do databáze při vytvoření tabulky."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Z databáze nebylo možné zjistit informace o typech polí.\nPro tento ovladač není k dispozici volba Návrh tabulky."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
 msgid  "change field name"
-msgstr ""
+msgstr "změnit jméno pole"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
 msgid  "change field type"
-msgstr ""
+msgstr "změnit typ pole"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "change field description"
-msgstr ""
+msgstr "změnit popis pole"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
 msgid  "change field attribute"
-msgstr ""
+msgstr "změnit atribut pole"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support views."
-msgstr ""
+msgstr "Cílová databáze nepodporuje pohledy."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support primary keys."
-msgstr ""
+msgstr "Cílová databáze nepodporuje primární klíče."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "nebyl nalezen deskriptor dat nebo nemůže poskytnout potřebné informace"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
 msgid  "Only tables and queries are supported at the moment."
-msgstr ""
+msgstr "Momentálně jsou podporovány jen tabulky a dotazy."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "Výsledek kopie zdroje musí podporovat záložky."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "Nepodporovaný zdrojový typ sloupce ($type$) na pozici $pos$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
 msgid  "Illegal number of initialization parameters."
-msgstr ""
+msgstr "Neplatný počet inicializačních parametrů."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
 msgid  "An error occurred during initialization."
-msgstr ""
+msgstr "Během inicializace došlo k chybě."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
 msgid  "Unsupported setting in the copy source descriptor: $name$."
-msgstr ""
+msgstr "Nepodporovaná volba v deskriptoru zdrojového souboru: $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
 msgid  "To copy a query, your connection must be able to provide queries."
-msgstr ""
+msgstr "Chcete-li zkopírovat dotaz, musí vaše databázové připojení poskytovat dotazy."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
 msgid  "The given interaction handler is invalid."
-msgstr ""
+msgstr "Zadaný handler interakce je neplatný."
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
 msgid  "~Remember password until end of session"
-msgstr ""
+msgstr "Zapamatovat heslo do konce sezení"
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
 msgid  "~Remember password"
-msgstr ""
+msgstr "Zapamatovat heslo"

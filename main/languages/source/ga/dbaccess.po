@@ -33,3584 +33,4224 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
 msgid  "Tried to open the table $name$."
-msgstr ""
+msgstr "Rinneadh iarracht tábla $name$ a oscailt."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
 msgid  "No connection could be established."
-msgstr ""
+msgstr "Níorbh fhéidir ceangal a bhunú."
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "Tá tábla $name$ ann cheana. Níl sé le feiceáil mar gur scagadh amach é."
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "Níl cead agat scríobh ar na sonraí cumraíochta ar a mbunaítear an réad."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "Níorbh fhéidir ceangal a bhunú leis an bhfoinse sheachtrach sonraí. Tharla earráid anaithnid. Is dócha go bhfuil an tiománaí lochtach."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "Níorbh fhéidir ceangal a bhunú leis an bhfoinse sheachtrach sonraí. Níor aimsíodh tiománaí SDBC i gcomhair an URL sonraithe."
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "Níorbh fhéidir ceangal a bhunú leis an bhfoinse sheachtrach sonraí. Níorbh fhéidir bainisteoir na dtiománaithe SDBC a luchtú."
 
 #: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Foirm"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Tuairisc"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "Níor sábháladh an fhoinse sonraí. Úsáid an comhéadan XStorable chun an fhoinse sonraí a shábháil."
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Ní ráiteas SELECT é an t-ordú a tugadh.\nNí cheadaítear ach iarratais."
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
 msgid  "No values were modified."
-msgstr ""
+msgstr "Níor mionathraíodh aon luach."
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Ní fhéadfaí luachanna a chur isteach. Ní thacaíonn ResultSet leis an gcomhéadan XRowUpdate."
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Ní fhéadfaí luachanna a chur isteach. Ní thacaíonn ResultSet leis an gcomhéadan XResultSetUpdate."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
 msgid  "Values could not be modified, due to a missing condition statement."
-msgstr ""
+msgstr "Ní fhéadfaí luachanna a mhionathrú, mar go raibh ráiteas coinníollach in easnamh."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
 msgid  "The adding of columns is not supported."
-msgstr ""
+msgstr "Ní thacaítear le suimiú colún."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
 msgid  "The dropping of columns is not supported."
-msgstr ""
+msgstr "Ní thacaítear le baint colún."
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
 msgid  "The WHERE condition could not be created for the primary key."
-msgstr ""
+msgstr "Ní fhéadfaí an coinníoll WHERE a chruthú don phríomheochair."
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
 msgid  "The column does not support the property '%value'."
-msgstr ""
+msgstr "Ní thacaíonn an colún leis an airí '%value'."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
 msgid  "The column is not searchable!"
-msgstr ""
+msgstr "Ní féidir an colún a chuardach!"
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
 msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
-msgstr ""
+msgstr "Níl luach na gcolún den chineál Sequence<sal_Int8>."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
 msgid  "The column is not valid."
-msgstr ""
+msgstr "Níl an colún bailí."
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
 msgid  "The column '%name' must be visible as a column."
-msgstr ""
+msgstr "Caithfidh colún '%name' a bheith le feiceáil mar cholún."
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
 msgid  "The interface XQueriesSupplier is not available."
-msgstr ""
+msgstr "Níl an comhéadan XQueriesSupplier ar fáil."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
 msgid  "The driver does not support this function."
-msgstr ""
+msgstr "Ní thacaíonn an tiománaí leis an bhfeidhm."
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
 msgid  "An 'absolute(0)' call is not allowed."
-msgstr ""
+msgstr "Ní cheadaítear glao 'absolute(0)'."
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
 msgid  "Relative positioning is not allowed in this state."
-msgstr ""
+msgstr "Níl suíomh coibhneasta ceadaithe sa staid seo."
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "Ní féidir ró a athnuachan nuair atá an ResultSet suite tar éis an ró deiridh."
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "Ní féidir ró nua a ionsá mura n-aistrítear an ResultSet ar dtús chuig an ró ionsá."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
 msgid  "A row cannot be modified in this state"
-msgstr ""
+msgstr "Ní féidir ró a mhionathrú sa staid seo"
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
 msgid  "A row cannot be deleted in this state."
-msgstr ""
+msgstr "Ní féidir ró a scriosadh sa staid seo."
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
 msgid  "The driver does not support table renaming."
-msgstr ""
+msgstr "Ní thacaíonn an tiománaí le hathainmniú comhad."
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions."
-msgstr ""
+msgstr "Ní thacaíonn an tiománaí le mionathrú ar thuairisc na gcolún."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "Ní thacaíonn an tiománaí le mionathrú na dtuairiscí colún trí ainm a athrú."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "Ní thacaíonn an tiománaí le mionathrú ar thuairisc na gcolún trí innéacs a athrú."
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Níl an comhad \"$file$\" ann."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no table named \"$table$\"."
-msgstr ""
+msgstr "Níl aon tábla darb ainm \"$table$\" ann."
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no query named \"$table$\"."
-msgstr ""
+msgstr "Níl aon iarratas darb ainm \"$table$\" ann."
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "Tá táblaí sa bhunachar sonraí a bhfuil a n-ainmneacha i gcoinbhleacht le hainmneacha na n-iarratas atá ann cheana. Chun lánúsáid a bhaint as gach iarratas agus tábla, déan cinnte go bhfuil ainmneacha ar leith acu."
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "An t-ordú SQL a threoraíonn chuig an earráid seo:\n\n$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The SQL command does not describe a result set."
-msgstr ""
+msgstr "Ní dhéanann an t-ordú SQL tagairt do thacar toraidh."
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
 msgid  "The name must not be empty."
-msgstr ""
+msgstr "Ní cheadaítear ainm folamh."
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
 msgid  "The container cannot contain NULL objects."
-msgstr ""
+msgstr "Ní cheadaítear réada NULL sa choimeádán."
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There already is an object with the given name."
-msgstr ""
+msgstr "Tá réad ann cheana leis an ainm seo air."
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
 msgid  "This object cannot be part of this container."
-msgstr ""
+msgstr "Ní cheadaítear an réad seo mar chuid den choimeádán seo."
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
 msgid  "The object already is, with a different name, part of the container."
-msgstr ""
+msgstr "Tá an réad sa choimeádán cheana, le hainm difriúil."
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
 msgid  "Unable to find the document '$name$'."
-msgstr ""
+msgstr "Ní féidir cáipéis '$name$' a aimsiú."
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "Níorbh fhéidir an cháipéis a shábháil i $location$:\n$message$"
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "Earráid agus foinse sonraí '$name$' á rochtain:\n$error$"
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
 msgid  "There exists no folder named \"$folder$\"."
-msgstr ""
+msgstr "Níl aon fhillteán darb ainm \"$folder$\" ann."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
 msgid  "Cannot delete the before-first or after-last row."
-msgstr ""
+msgstr "Ní féidir an ró 'roimh-thosach' nó 'tar-éis-deiridh' a scriosadh."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.STRING.TEXT
 msgid  "Cannot delete the insert-row."
-msgstr ""
+msgstr "Ní féidir an ró ionsáite a scriosadh."
 
 #: core/resource/strings.src#RID_STR_RESULT_IS_READONLY.STRING.TEXT
 msgid  "Result set is read only."
-msgstr ""
+msgstr "Tá na torthaí inléite amháin."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
 msgid  "DELETE privilege not available."
-msgstr ""
+msgstr "Níl cead SCRIOS ar fáil."
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "Current row is already deleted."
-msgstr ""
+msgstr "Tá an ró reatha scriosta cheana."
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
+#, fuzzy
 msgid  "Current row could not be updated."
-msgstr ""
+msgstr "B'fhéidir an ró reatha a nuashonrú."
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
+#, fuzzy
 msgid  "INSERT privilege not available."
-msgstr ""
+msgstr "Níl cead IONSÁIGH ar fáil."
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Internal error: no statement object provided by the database driver."
-msgstr ""
+msgstr "Earráid inmheánach: níor sholáthair tiománaí an bhunachair sonraí réad ráitis."
 
 #: core/resource/strings.src#RID_STR_EXPRESSION1.STRING.TEXT
+#, fuzzy
 msgid  "Expression1"
-msgstr ""
+msgstr "Slonn1"
 
 #: core/resource/strings.src#RID_STR_NO_SQL_COMMAND.STRING.TEXT
+#, fuzzy
 msgid  "No SQL command was provided."
-msgstr ""
+msgstr "Níor tugadh ordú SQL ar bith."
 
 #: core/resource/strings.src#RID_STR_INVALID_INDEX.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column index."
-msgstr ""
+msgstr "Innéacs neamhbhailí colúin."
 
 #: core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid cursor state."
-msgstr ""
+msgstr "Staid neamhbhailí chúrsóra."
 
 #: core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.STRING.TEXT
+#, fuzzy
 msgid  "The cursor points to before the first or after the last row."
-msgstr ""
+msgstr "Tá an cúrsóir suite roimh an chéad ró nó i ndiaidh an ró dheiridh."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.STRING.TEXT
+#, fuzzy
 msgid  "The rows before the first and after the last row don't have a bookmark."
-msgstr ""
+msgstr "Níl leabharmharcanna ag an ró roimh an chéad ró nó an ró i ndiaidh an deiridh."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The current row is deleted, and thus doesn't have a bookmark."
-msgstr ""
+msgstr "Tá an ró reatha scriosta, agus níl leabharmharc aige dá bharr sin."
 
 #: core/resource/strings.src#RID_STR_NO_EMBEDDING.STRING.TEXT
+#, fuzzy
 msgid  "Embedding of database documents is not supported."
-msgstr ""
+msgstr "Ní thacaítear le cáipéisí bunachair sonraí a leabú."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
+#, fuzzy
 msgid  "A connection for the following URL was requested \"$name$\"."
-msgstr ""
+msgstr "Iarradh ceangal leis an URL seo a leanas: \"$name$\"."
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
+#, fuzzy
 msgid  "The extension is not installed."
-msgstr ""
+msgstr "Níl an eisínteacht suiteáilte."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database ~name"
-msgstr ""
+msgstr "Ai~nm an bhunachair sonraí"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User settings"
-msgstr ""
+msgstr "Socruithe úsáideora"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Control user"
-msgstr ""
+msgstr "Ú~sáideoir rialaithe"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Administrator"
-msgstr ""
+msgstr "Ri~arthóir"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Domain user"
-msgstr ""
+msgstr "Úsáideoir ~fearainn"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "P~assword..."
-msgstr ""
+msgstr "~Focal Faire..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Password..."
-msgstr ""
+msgstr "~Focal Faire..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Passwo~rd..."
-msgstr ""
+msgstr "Focal Fai~re..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Backup file"
-msgstr ""
+msgstr "Comhad ~cúltaca"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
 msgid  "..."
 msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database settings"
-msgstr ""
+msgstr "Socruithe bunachair sonraí"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~YSDEVSPACE"
-msgstr ""
+msgstr "S~YSDEVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "TRANSACTI~ONLOG"
-msgstr ""
+msgstr "TRANSACTI~ONLOG"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DATAD~EVSPACE"
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
+msgstr "DATAD~EVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Transaction ~file (MB)"
-msgstr ""
+msgstr "~Comhad idirbhearta (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data~base size (MB)"
-msgstr ""
+msgstr "Méid an ~bhunachair sonraí (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "Méid an ~mhaoláin sonraí (MB)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
+#, fuzzy
 msgid  "Backup file information"
-msgstr ""
+msgstr "Eolas faoin chomhad cúltaca"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
+#, fuzzy
 msgid  "Create New Adabas D Database"
-msgstr ""
+msgstr "Cruthaigh Bunachar Sonraí Nua Adabas D"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
+#, fuzzy
 msgid  "No entry could be written in the configuration file."
-msgstr ""
+msgstr "Níorbh fhéidir iontráil ar bith a scríobh sa chomhad cumraíochta."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred as the DB files were being created."
-msgstr ""
+msgstr "Tharla earráid agus an bunachar sonraí á chruthú."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred as the system tables were being created."
-msgstr ""
+msgstr "Tharla earráid agus táblaí an chórais á gcruthú."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The backup file entered does not exist."
-msgstr ""
+msgstr "Níl comhad cúltaca darb ainm sin ann."
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
-msgstr ""
+msgstr "Ní cheadaítear ainm comhad láncháilithe níos faide ná \\'#\\' carachtar."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
+#, fuzzy
 msgid  "The administrator and the control user cannot have the same name!"
-msgstr ""
+msgstr "Ní cheadaítear riarthóir agus úsáideoir rialaithe leis an ainm céanna!"
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
+#, fuzzy
 msgid  "No name has been entered for the $name$ file!"
-msgstr ""
+msgstr "Níor tugadh ainm ar an gcomhad $name$!"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
+#, fuzzy
 msgid  "You have to have administrator rights to create a new database!"
-msgstr ""
+msgstr "Tá ceadanna an riarthóra de dhíth chun bunachar sonraí a chruthú!"
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
+#, fuzzy
 msgid  "The specified file name or directory does not exist."
-msgstr ""
+msgstr "Níl an comhad nó comhadlann sainithe ann."
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
+#, fuzzy
 msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "Ní féidir bunachar sonraí nua a chruthú.\nDéan seiceáil ar do chóras Adabas D, go háirithe na hathróga \"DBROOT\" agus \"DBWORK\"."
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning!"
-msgstr ""
+msgstr "Rabhadh!"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
+#, fuzzy
 msgid  "Creating database files."
-msgstr ""
+msgstr "Comhaid bhunachair sonraí á gcruthú."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Creating database configuration file."
-msgstr ""
+msgstr "Comhad cumraíochta an bhunachair sonraí á chruthú."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Starting database for the first time."
-msgstr ""
+msgstr "Bunachar sonraí á thosú den chéad uair."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name entered already exists."
-msgstr ""
+msgstr "Tá an t-ainm a iontráladh ann cheana."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
+#, fuzzy
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "Níorbh fhéidir ainmneacha réamhshocraithe a shocrú i gcomhair chomhaid an bhunachair shonraí. Ní mór dóibh a bheith faoi bhun 40 carachtar ar fhad."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
+#, fuzzy
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "Níorbh fhéidir ainmneacha réamhshocraithe a shocrú i gcomhair chomhaid an bhunachair shonraí. Níl rochtain chun scríobh ann."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Caithfear an bunachar sonraí reatha a thiontú. Iontráil an t-úsáideoir rialaithe agus an focal faire, le do thoil. "
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
+#, fuzzy
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "Ní cheadaítear spásanna san fhocal faire.  Iontráil focal faire nua, le do thoil."
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Database Document Macro Migration"
-msgstr ""
+msgstr "Aistriú Macraí Bunachair Sonraí"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
+#, fuzzy
 msgid  "Prepare"
-msgstr ""
+msgstr "Ullmhaigh"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
+#, fuzzy
 msgid  "Backup Document"
-msgstr ""
+msgstr "Cáipéis Chúltaca"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
+#, fuzzy
 msgid  "Migrate"
-msgstr ""
+msgstr "Aistrigh"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
+#, fuzzy
 msgid  "Summary"
-msgstr ""
+msgstr "Achoimre"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to the Database Macro Migration Wizard"
-msgstr ""
+msgstr "Fáilte go dtí an Treoraí Aistrithe Macraí Bunachair Sonraí"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Tabharfaidh an treoraí seo treoir duit maidir le conas do chuid macraí a aistriú.\n\nTar éis an aistrithe, feicfear gur sa cháipéis bunachar sonraí féin a bheidh na macraí ar fad a bhíodh leabaithe i do chuid foirmeacha agus tuairiscí roimhe sin.  Lena linn seo, déanfar leabharlanna a athainmniú mar is gá.\n\nDéanfar coigeartú ar na tagairtí do na macraí sin, más ann dóibh, atá i do chuid foirmeacha agus tuairiscí.\n\nChun tús a chur leis an aistriú ní mór gach foirm, tuairisc, iarratas agus tábla a bhaineann leis an gcáipéis a bheith dúnta. Brúigh ar an gcnaipe 'Ar aghaidh' chun é seo a dhéanamh."
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "Níorbh fhéidir gach réad a dhúnadh.  Dún iad de láimh, agus atosaigh an treoraí."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Backup your Document"
-msgstr ""
+msgstr "Déan cúltaca ar do Cháipéis"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "Le cur ar do chumas staid na cáipéise roimh aistriú dó a thabhairt ar ais, déanfar cóip chúltaca den cháipéis bhunachair sonraí san áit a roghnaíonn tú. Is sa bhuncháipéis a dhéanfar gach athrú de chuid an treoraí. Fágfar an chóip chúltaca gan athrú."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Save To:"
-msgstr ""
+msgstr "Sábháil Go:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Browse ..."
-msgstr ""
+msgstr "Brabhsáil..."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Brúigh 'Ar Aghaidh' chun do cháipéis a shábháil, agus an t-aistriú a thosú."
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Migration Progress"
-msgstr ""
+msgstr "Dul Chun Cinn an Aistrithe"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "Tá $forms$ foirm agus $reports$ tuairisc sa cháipéis bhunachair sonraí, á bpróiseáil anois:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Current object:"
-msgstr ""
+msgstr "Réad reatha:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Current progress:"
-msgstr ""
+msgstr "Dul chun cinn reatha:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Overall progress:"
-msgstr ""
+msgstr "Dul chun cinn iomlán:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "cáipéis $current$ as $overall$"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
-
-#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Summary"
-msgstr ""
+msgstr "D'éirigh le próiseáil gach foirm agus gach tuairisc. Brúigh 'Ar Aghaidh' chun miontuairisc a thaispeáint."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
+#, fuzzy
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "D'éirigh leis an ascnamh. Seo é logáil de na gníomhartha a rinneadh ar do cháipéis."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
+#, fuzzy
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "Níor éirigh leis an ascnamh. Scrúdaigh logáil an ascnaimh thíos chun tuilleadh eolais a fháil."
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Form '$name$'"
-msgstr ""
+msgstr "Foirm '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Report '$name$'"
-msgstr ""
-
-#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
-msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "Tuairisc '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Database Document"
-msgstr ""
+msgstr "Cáipéis Bhunachair Sonraí"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
+#, fuzzy
 msgid  "saved copy to $location$"
-msgstr ""
+msgstr "sábháladh cóip i $location$"
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
+#, fuzzy
 msgid  "migrated $type$ library '$old$' to '$new$'"
-msgstr ""
+msgstr "aistríodh leabharlann $type$ '$old$' go '$new$'"
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
+#, fuzzy
 msgid  "$type$ library '$library$'"
-msgstr ""
+msgstr "leabharlann $type$ '$library$'"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
+#, fuzzy
 msgid  "migrating libraries ..."
-msgstr ""
+msgstr "leabharlanna á n-aistriú ..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic"
-msgstr ""
+msgstr "%PRODUCTNAME Basic"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
+#, fuzzy
 msgid  "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
+#, fuzzy
 msgid  "BeanShell"
-msgstr ""
+msgstr "BeanShell"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
+#, fuzzy
 msgid  "Java"
-msgstr ""
+msgstr "Java"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
+#, fuzzy
 msgid  "Python"
-msgstr ""
+msgstr "Python"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
+#, fuzzy
 msgid  "dialog"
-msgstr ""
+msgstr "dialóg"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
+#, fuzzy
 msgid  "Error(s)"
-msgstr ""
+msgstr "Earráid(í)"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
+#, fuzzy
 msgid  "Warnings"
-msgstr ""
+msgstr "Rabhaidh"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
+#, fuzzy
 msgid  "caught exception: "
-msgstr ""
+msgstr "fuarthas eisceacht: "
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "Níl cead agat an cúltaca a dhéanamh san áit a bhfuil an cháipéis féin ann.  Roghnaigh suíomh eile."
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
+#, fuzzy
 msgid  "Invalid number of initialization arguments. Expected 1."
-msgstr ""
+msgstr "Méid neamhbhailí de pharaiméadair thúsaithe. Bhíothas ag súil le 1."
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "No database document found in the initialization arguments."
-msgstr ""
+msgstr "Níor aimsíodh cáipéis bhunachair sonraí i measc na n-argóintí túsaithe."
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "Not applicable to read-only documents."
-msgstr ""
+msgstr "Níl sé oiriúnach do cháipéisí inléite amháin."
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
+#, fuzzy
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "Ní féidir an t-ainm céanna a chur ar thábla agus ar iarratas. Roghnaigh ainm nach bhfuil ar aon iarratas nó tábla fós."
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "Tábla"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Query"
-msgstr ""
+msgstr "Iarratas"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "Ní iarratas bailí ná soláthraí táblaí an ceangal a tugadh."
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "The given object is no table object."
-msgstr ""
+msgstr "Ní réad tábla é an réad sainithe."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Tá cineál an chomhshuímh neamhbhailí - tá méid a dhíth ó com.sun.star.sdb.tools.CompositionType."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Tá cineál an ordaithe neamhbhailí - ní cheadaítear ach TABLE agus QUERY ó com.sun.star.sdb.CommandType."
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Create Form in Design View..."
-msgstr ""
+msgstr "Cruthaigh Foirm san Amharc ar Dhearadh..."
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Use Wizard to Create Form..."
-msgstr ""
+msgstr "Úsáid Treoraí chun Foirm a Chruthú..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Use Wizard to Create Report..."
-msgstr ""
+msgstr "Úsáid Treoraí chun Tuairisc a Chruthú..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Create Report in Design View..."
-msgstr ""
+msgstr "Cruthaigh Tuairisc san Amharc ar Dhearadh..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Create Query in Design View..."
-msgstr ""
+msgstr "Cruthaigh Iarratas san Amharc ar Dhearadh..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
+#, fuzzy
 msgid  "Create Query in SQL View..."
-msgstr ""
+msgstr "Cruthaigh Iarratas san Amharc SQL..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Use Wizard to Create Query..."
-msgstr ""
+msgstr "Úsáid Treoraí chun Iarratas a Chruthú..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Create Table in Design View..."
-msgstr ""
+msgstr "Cruthaigh Tábla san Amharc Dhearadh..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Use Wizard to Create Table..."
-msgstr ""
+msgstr "Úsáid Treoraí chun Tábla a Chruthú..."
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "Create View..."
-msgstr ""
+msgstr "Cruthaigh Amharc..."
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Forms"
-msgstr ""
+msgstr "Foirmeacha"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Reports"
-msgstr ""
+msgstr "Tuairiscí"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Form..."
-msgstr ""
+msgstr "Foirm..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Report..."
-msgstr ""
+msgstr "Tuairisc..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
+#, fuzzy
 msgid  "View (Simple)..."
-msgstr ""
+msgstr "Amharc (Simplí)..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Paste Special..."
-msgstr ""
+msgstr "Greamaigh Speisialta..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "Scrios"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rename"
-msgstr ""
+msgstr "Athainmnigh"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "Eagar"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Edit in SQL View..."
-msgstr ""
+msgstr "Cuir in Eagar san Amharc SQL..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Open"
-msgstr ""
+msgstr "Oscail"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Create as View"
-msgstr ""
+msgstr "Cruthaigh mar Amharc"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Form Wizard..."
-msgstr ""
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
-msgid  "Report..."
-msgstr ""
+msgstr "Treoraí Foirme..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Treoraí Tuairisce..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Select All"
-msgstr ""
+msgstr "Roghnaigh Uile"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Database"
-msgstr ""
+msgstr "Bunachar ~Sonraí"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr "Airíonna"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Connection Type..."
-msgstr ""
+msgstr "Cineál an Cheangail"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Advanced Settings..."
-msgstr ""
+msgstr "Ardsocruithe"
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the data source '%1'?"
-msgstr ""
+msgstr "An bhfuil fonn ort foinse sonraí '%1' a scriosadh?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base"
-msgstr ""
+msgstr " - %PRODUCTNAME Base"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Béarfaidh an treoraí seo thú trí na céimeanna chun tuairisc a chruthú."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Cruthaigh foirm tríd an fhoinse taifid, na rialtáin, agus airíonna na rialtán a shonrú."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Cruthaigh tuairisc tríd an fhoinse taifid, na rialtáin, agus airíonna na rialtán a shonrú."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "Béarfaidh an treoraí seo thú trí na céimeanna chun foirm a chruthú."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Cruthaigh iarratas trí shonrú na scagairí, táblaí ionchurtha, ainmneacha na réimsí, agus airíonna sórtála/grúpála."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
+#, fuzzy
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "Cruthaigh iarratas agus tú ag iontráil ráitis SQL go díreach."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Béarfaidh an treoraí seo thú trí na céimeanna chun iarratas a chruthú."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
+#, fuzzy
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Cruthaigh tábla trí ainmneacha agus airíonna na réimsí a shonrú, chomh maith leis na cineálacha sonraí."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Roghnaigh as roinnt samplaí de tháblaí gnó agus pearsanta, a shaincheapfaidh tú chun tábla a chruthú."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
+#, fuzzy
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Cruthaigh amharc trí na táblaí agus lipéid réimsí a shonrú ar mhaith leat a bheith infheicthe."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "Opens the view wizard"
-msgstr ""
+msgstr "Oscail an treoraí amhairc"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "Bunachar Sonraí"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
+#, fuzzy
 msgid  "Tasks"
-msgstr ""
+msgstr "Tasks"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Cur Síos"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "Réamhamharc"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Disable Preview"
-msgstr ""
-
-#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "Díchumasaigh Réamhamharc"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "Neamhní"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Document Information"
-msgstr ""
+msgstr "Eolas faoin Cháipéis"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "Cáipéis"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Form"
-msgstr ""
+msgstr "Foirm"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Report"
-msgstr ""
+msgstr "Tuairisc"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "F~orm name"
-msgstr ""
+msgstr "Ainm na f~oirme"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Report name"
-msgstr ""
+msgstr "Ainm tuai~risce"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "F~older name"
-msgstr ""
+msgstr "Ainm ~fillteáin"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
+#, fuzzy
 msgid  "The document contains forms or reports with embedded macros."
-msgstr ""
+msgstr "Tá foirmeacha nó tuairiscí le macraí leabaithe iontu sa cháipéis."
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
+#, fuzzy
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Ba cheart go mbeadh macraí leabaithe sa cháipéis bunachar sonraí féin.\n\nFéadfaidh tú do cháipéis a úsáid mar a d'úsáid i gcónaí, ach moltar duit do chuid macraí a aistriú. Gheobhaidh tú cabhair leis seo leis an mír roghchláir 'Uirlisí / Aistrigh Macraí ...'.\n\nTabhair faoi deara nach mbeidh tú in ann macraí a leabú sa cháipéis bunachar sonraí go dtí go gcuirfear an t-aistriú i gcrích. "
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Embedded database"
-msgstr ""
+msgstr "Bunachar sonraí leabaithe"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
+#, fuzzy
 msgid  "You cannot select different categories."
-msgstr ""
+msgstr "Ní féidir leat catagóirí éagsúla a roghnú."
 
 #: ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported object type found ($type$)."
-msgstr ""
+msgstr "Aimsíodh cineál réada nach dtacaítear leis ($type$)."
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Table #"
-msgstr ""
-
-#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Tábla #"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
-msgstr ""
+msgstr "An bhfuil fonn ort na sonraí roghnaithe a scriosadh?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
+#, fuzzy
 msgid  "(filtered)"
-msgstr ""
+msgstr "(scagtha)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
+#, fuzzy
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "Earráid agus na critéir shórtála á socrú"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "Earráid agus na critéir scagtha á socrú"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
+#, fuzzy
 msgid  "Connection lost"
-msgstr ""
+msgstr "Cailleadh an ceangal"
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Queries"
-msgstr ""
+msgstr "Iarratais"
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Tables"
-msgstr ""
+msgstr "Táblaí"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
+#, fuzzy
 msgid  "Edit ~Database File..."
-msgstr ""
+msgstr "Cuir Comhad ~Bunachair Sonraí in Eagar..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
+#, fuzzy
 msgid  "Registered databases ..."
-msgstr ""
+msgstr "Bunachair shonraí cláraithe ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
+#, fuzzy
 msgid  "Disco~nnect"
-msgstr ""
+msgstr "Dí~cheangail"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
+#, fuzzy
 msgid  "Confirm Deletion"
-msgstr ""
+msgstr "Dearbhaigh Dealú"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
-msgstr ""
+msgstr "An bhfuil fonn ort tábla '%1' a scriosadh?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
-msgstr ""
+msgstr "Tá an t-iarratas ann cheana. An bhfuil fonn ort é a scriosadh?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "Cailleadh an ceangal leis an bhunachar sonraí. An bhfuil fonn ort athcheangal?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
+#, fuzzy
 msgid  "Warnings encountered"
-msgstr ""
+msgstr "Bhí rabhaidh ann"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "Thug an ceangal bunachair sonraí rabhadh agus na táblaí á bhfáil."
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
-msgstr ""
+msgstr "Ag ceangal le \"$name$\" ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Loading query $name$ ..."
-msgstr ""
+msgstr "Iarratas $name$ á luchtú ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Loading table $name$ ..."
-msgstr ""
+msgstr "Tábla $name$ á luchtú ..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
+#, fuzzy
 msgid  "No table format could be found."
-msgstr ""
+msgstr "Níorbh fhéidir aon fhormáid tábla a aimsiú."
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
+msgstr "Níorbh fhéidir ceangal a bhunú leis an bhfoinse sonraí \"$name$\"."
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rebuild"
-msgstr ""
+msgstr "Atóg"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
+#, fuzzy
 msgid  "Column ~Format..."
-msgstr ""
+msgstr "~Formáid an Cholúin..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
+#, fuzzy
 msgid  "Copy Column D~escription"
-msgstr ""
+msgstr "Cóip~eáil Cur Síos an Cholúin"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
+#, fuzzy
 msgid  "Table Format..."
-msgstr ""
+msgstr "Formáid Tábla..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Row Height..."
-msgstr ""
+msgstr "Airde Ró..."
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "Undo: Data Input"
-msgstr ""
+msgstr "Cealaigh: Ionchur Sonraí"
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "Save current record"
-msgstr ""
+msgstr "Sábháil an taifead reatha"
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Query #"
-msgstr ""
+msgstr "Iarratas #"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Table #"
-msgstr ""
+msgstr "Tábla #"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "View #"
-msgstr ""
+msgstr "Amharc #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name \"#\" already exists."
-msgstr ""
+msgstr "Tá an t-ainm \"#\" ann cheana."
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
+#, fuzzy
 msgid  "No matching column names were found."
-msgstr ""
+msgstr "Níor aimsíodh ainm colúin comhoiriúnach ar bith."
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
-msgstr ""
+msgstr "Tharla earráid. An bhfuil fonn ort dul ar aghaidh leis an chóipeáil?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Data source table view"
-msgstr ""
+msgstr "Amharc tábla ar fhoinse sonraí"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Shows the selected table or query."
-msgstr ""
+msgstr "Taispeáin an tábla nó an t-iarratas roghnaithe."
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Table name"
-msgstr ""
+msgstr "Ainm ar an tábla"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert data"
-msgstr ""
+msgstr "Ionsáigh sonraí"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete data"
-msgstr ""
+msgstr "Scrios sonraí"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
+#, fuzzy
 msgid  "Modify data"
-msgstr ""
+msgstr "Mionathraigh sonraí"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
+#, fuzzy
 msgid  "Alter structure"
-msgstr ""
+msgstr "Athraigh an struchtúr"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
+#, fuzzy
 msgid  "Read data"
-msgstr ""
+msgstr "Léigh sonraí"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
+#, fuzzy
 msgid  "Modify references"
-msgstr ""
+msgstr "Mionathraigh tagairtí"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
+#, fuzzy
 msgid  "Drop structure"
-msgstr ""
+msgstr "Tréig an struchtúr"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "Sórtáil in ord Ardaitheach"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sort Descending"
-msgstr ""
+msgstr "Sórtáil in ord Íslitheach"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "Ní féidir ceangal a bhunú le bainisteoir na dtiománaithe SDBC (#servicename#)."
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
-msgstr ""
+msgstr "Níl tiománaí cláraithe don URL #connurl#."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
-msgstr ""
+msgstr "Níorbh fhéidir ceangal a bhunú leis an URL #connurl#."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "Seiceáil na socruithe reatha le do thoil, mar shampla, an t-ainm úsáideora agus an focal faire."
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "Ceangailte go rathúil, ach níl eolas faoi tháblaí bunachar sonraí ar fáil."
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "All tables"
-msgstr ""
+msgstr "Gach tábla"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
+#, fuzzy
 msgid  "All views"
-msgstr ""
+msgstr "Gach amharc"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
+#, fuzzy
 msgid  "All tables and views"
-msgstr ""
+msgstr "Gach tábla agus gach amharc"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
+#, fuzzy
 msgid  "Modify SQL statement(s)"
-msgstr ""
+msgstr "Mionathraigh ráiteas/ráitis SQL"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database files"
-msgstr ""
+msgstr "Comhaid bhunachair sonraí"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~YSDEVSPACE:"
-msgstr ""
+msgstr "S~YSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~TRANSACTIONLOG:"
-msgstr ""
+msgstr "~TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DATAD~EVSPACE:"
-msgstr ""
+msgstr "DATAD~EVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database sizes"
-msgstr ""
+msgstr "Méideanna na mbunachar sonraí"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~ize (MB):"
-msgstr ""
+msgstr "Mé~id (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Free memory space (MB):"
-msgstr ""
+msgstr "~Cuimhne shaor (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Memory utilization (in %):"
-msgstr ""
+msgstr "Cui~mhne in úsáid (%):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Database Statistics"
-msgstr ""
+msgstr "Staitisticí an Bhunachair Shonraí"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
+#, fuzzy
 msgid  "Contains the system tables"
-msgstr ""
+msgstr "Tá táblaí an chórais ann"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
+#, fuzzy
 msgid  "Contains information about transaction"
-msgstr ""
+msgstr "Tá eolas anseo faoin idirbheart."
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
+#, fuzzy
 msgid  "Contains all data files"
-msgstr ""
+msgstr "Tá gach comhad sonraí ann"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
+#, fuzzy
 msgid  "Total size of the database files"
-msgstr ""
+msgstr "Méid iomlán na gcomhad bunachair sonraí"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
-msgstr ""
+msgstr "Spás le fáil sula gcruthófar comhad nua datadev."
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
+#, fuzzy
 msgid  "Currently used memory"
-msgstr ""
+msgstr "Cuimhne in úsáid faoi láthair"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "Níorbh fhéidir aon eolas a thaispeáint toisc nach bhfuil cearta rochtana ann ar na táblaí riachtanacha córais."
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Database name"
-msgstr ""
+msgstr "Ai~nm an bhunachair sonraí"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Se~rver / Port"
-msgstr ""
+msgstr "F~reastalaí / Port"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Server"
-msgstr ""
+msgstr "Frea~stalaí"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port"
-msgstr ""
+msgstr "~Port"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Réamhshocrú: 3306"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "So~cket"
-msgstr ""
+msgstr "Soi~céad"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Named p~ipe"
-msgstr ""
+msgstr "Píopa a~inmnithe"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Tables"
-msgstr ""
+msgstr "Táblaí"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Queries"
-msgstr ""
+msgstr "Iarratais"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "~Cuir Leis"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "~Dún"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "Add Tables"
-msgstr ""
+msgstr "Cuir Táblaí Leis"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Add Table or Query"
-msgstr ""
+msgstr "Cuir Tábla nó Iarratas Leis"
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "Roghanna"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use SQL92 naming constraints"
-msgstr ""
+msgstr "Úsáid iallach SQL92 ar ainmniú"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
-msgstr ""
+msgstr "Iarcheangail ailias an tábla le ráitis SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use keyword AS before table alias names"
-msgstr ""
+msgstr "Úsáid an lorgfhocal AS roimh thábla na n-ailiasanna."
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
-msgstr ""
+msgstr "Úsáid comhréir Nasc Taobh Amuigh '{OJ }'"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ignore the privileges from the database driver"
-msgstr ""
+msgstr "Ná bac leis na pribhléidí ón tiománaí bunachar sonraí"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Replace named parameters with '?'"
-msgstr ""
+msgstr "Cuir '?' in ionad paraiméadar le hainmneacha"
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Display version columns (when available)"
-msgstr ""
+msgstr "Taispeáin colúin na leaganacha (nuair atá siad ar fáil)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use catalog name in SELECT statements"
-msgstr ""
+msgstr "Úsáid ainm na catalóige i ráitis SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use schema name in SELECT statements"
-msgstr ""
+msgstr "Úsáid ainm an scéimre i ráitis SELECT"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Create index with ASC or DESC statement"
-msgstr ""
+msgstr "Cruthaigh innéacs le ráiteas ASC nó DESC"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "End text lines with CR+LF"
-msgstr ""
+msgstr "Críochnaigh línte téacs le CR+LF"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ignore currency field information"
-msgstr ""
+msgstr "Tabhair neamhaird d'eolas i réimse an airgeadra."
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Form data input checks for required fields"
-msgstr ""
+msgstr "Lorgaíonn ionchur sonraí na foirme na réimsí atá a dhíth"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
-msgstr ""
+msgstr "Úsáid teaghráin dáta/ama a ghéilleann do chaighdeán ODBC"
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Supports primary keys"
-msgstr ""
+msgstr "Tacaíonn sé le príomheochracha"
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
 msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "Réamhshocrú"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Mixed"
-msgstr ""
+msgstr "Measctha."
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "MS Access"
-msgstr ""
+msgstr "MS Access"
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comparison of Boolean values"
-msgstr ""
+msgstr "Comparáid idir luachanna Boole"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "Socruithe"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Re~trieve generated values"
-msgstr ""
+msgstr "Ais~ghabh luachanna ginte"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Auto-increment statement"
-msgstr ""
+msgstr "ráiteas incriminteach ~uathoibríoch"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Query of generated values"
-msgstr ""
+msgstr "~Ceist do luachanna cruthaithe"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Generated Values"
-msgstr ""
+msgstr "Luachanna Ginte"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
+#, fuzzy
 msgid  "Special Settings"
-msgstr ""
+msgstr "Socruithe Speisialta"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
 msgstr ""
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the dBASE files"
-msgstr ""
+msgstr "Conair go dtí na comhaid dBASE"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the text files"
-msgstr ""
+msgstr "Conair go dtí na téacschomhaid"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the spreadsheet document"
-msgstr ""
+msgstr "Conair go dtí an cháipéis scarbhileoige"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Name of the ODBC data source on your system"
-msgstr ""
+msgstr "Ainm na foinse sonraí ODBC ar do chóras"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the MySQL database"
-msgstr ""
+msgstr "Ainm an bhunachair sonraí MySQL"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the Oracle database"
-msgstr ""
+msgstr "Ainm an bhunachair sonraí Oracle"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the Adabas D database"
-msgstr ""
+msgstr "Ainm an bhunachair sonraí Adabas D"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Microsoft Access database file"
-msgstr ""
+msgstr "Comhad bunachair sonraí Microsoft Access"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
+#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "Níl socraithe eile a dhíth. Le cinntiú go bhfuil an ceangal ag obair, cliceáil an cnaipe '%test'."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
+#, fuzzy
 msgid  "Datasource URL"
-msgstr ""
+msgstr "URL na foinse sonraí"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "Óst~ainm"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "~Mozilla profile name"
-msgstr ""
+msgstr "Ainm próifíle ~Mozilla"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "~Thunderbird profile name"
-msgstr ""
+msgstr "Ainm próifíle ~Thunderbird"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Browse"
-msgstr ""
+msgstr "Brabhsáil"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database name"
-msgstr ""
+msgstr "Ainm an bhunachair sonraí"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Server"
-msgstr ""
+msgstr "Freastalaí"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Base ~DN"
-msgstr ""
+msgstr "~DN bunaidh"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port number"
-msgstr ""
+msgstr "Uimhir ~phoirt"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Data conversion"
-msgstr ""
+msgstr "Tiontú sonraí"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Character set"
-msgstr ""
+msgstr "Tacar ~carachtar"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "Sonraigh cineál na gcomhad gur mhaith leat a rochtain"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Plain text files (*.txt)"
-msgstr ""
+msgstr "Téacschomhaid (*.txt)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "'Comma separated value' files (*.csv)"
-msgstr ""
+msgstr "Comhad 'luachanna deighilte ag camóga' (*.csv)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Custom:"
-msgstr ""
+msgstr "Saincheaptha:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Custom: *.abc"
-msgstr ""
+msgstr "Saincheaptha: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Row Format"
-msgstr ""
+msgstr "Formáid na Rónna"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field separator"
-msgstr ""
+msgstr "Deighilteoir réimse"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Text separator"
-msgstr ""
+msgstr "Deighilteoir téacs"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Decimal separator"
-msgstr ""
+msgstr "Deighilteoir deachúlach"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Thousands separator"
-msgstr ""
+msgstr "Deighilteoir mílte"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Text contains headers"
-msgstr ""
+msgstr "~Tá ceanntásca sa téacs"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
+#, fuzzy
 msgid  "{None}"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ""
+msgstr "{Neamhní}"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "#1 must be set."
-msgstr ""
+msgstr "Ní mór #1 a shocrú."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
+#, fuzzy
 msgid  "#1 and #2 must be different."
-msgstr ""
+msgstr "Ní mór #1 agus #2 a bheith difriúil."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
+#, fuzzy
 msgid  "Wildcards such as ?,* are not allowed in #1."
-msgstr ""
+msgstr "Ní cheadaítear saoróga (mar shampla ?,*) i #1."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "JDBC d~river class"
-msgstr ""
+msgstr "~Aicme thiománaí JDBC"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test class"
-msgstr ""
+msgstr "Aicme thástála"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Socket"
-msgstr ""
+msgstr "Soicéad"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr "Sábháil"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Create New Directory"
-msgstr ""
+msgstr "Cruthaigh Comhadlann Nua"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Up One Level"
-msgstr ""
+msgstr "An Leibhéal Thuas"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "File ~name:"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "Ai~nm comhaid:"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
+#, fuzzy
 msgid  "~Path:"
-msgstr ""
+msgstr "~Conair:"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
+#, fuzzy
 msgid  "Folder"
-msgstr ""
+msgstr "Fillteán"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "Tá an comhad ann cheana. Forscríobh?"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "Ginearálta"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "Óst~ainm"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User authentication"
-msgstr ""
+msgstr "Fíordheimhniú úsáideora"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "~Ainm an Úsáideora"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password required"
-msgstr ""
+msgstr "Focal faire de dhíth"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "JDBC properties"
-msgstr ""
+msgstr "Airíonna JDBC"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~JDBC driver class"
-msgstr ""
+msgstr "Aicme thiománaí ~JDBC"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test Class"
-msgstr ""
+msgstr "Aicme Thástála"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test Connection"
-msgstr ""
+msgstr "Ceangal Tástála"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
+#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
-msgstr ""
+msgstr "Níor aimsíodh foinsí sonraí Adabas D ar do chóras."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
+#, fuzzy
 msgid  "Connection Test"
-msgstr ""
+msgstr "Tástáil an Cheangail"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The connection was established successfully."
-msgstr ""
+msgstr "D'éirigh leis an gceangal."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "Níorbh fhéidir an ceangal a bhunú."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
-msgstr ""
+msgstr "D'éirigh le luchtú an tiománaí JDBC."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The JDBC driver could not be loaded."
-msgstr ""
+msgstr "Níorbh fhéidir an tiománaí JDBC a luchtú."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
+#, fuzzy
 msgid  "MS Access file"
-msgstr ""
+msgstr "Comhad Microsoft Access"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
+#, fuzzy
 msgid  "MS Access 2007 file"
-msgstr ""
+msgstr "Comhad Microsoft Access 2007"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "A password is needed to connect to the data source \"$name$\"."
-msgstr ""
+msgstr "Is gá focal faire a sholáthar chun ceangal a dhéanamh le foinse sonraí \"$name$\"."
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
+#, fuzzy
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Níl an chomhadlann\n\n$path$\n\nann. Cruthaigh?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
+#, fuzzy
 msgid  "The directory $name$ could not be created."
-msgstr ""
+msgstr "Níorbh fhéidir an chomhadlann $name$ a chruthú."
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Convert Database"
-msgstr ""
+msgstr "Tiontaigh Bunachar Sonraí"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Please enter the ~password for the user 'DOMAIN'."
-msgstr ""
+msgstr "Cuir isteach an ~focal faire d'úsáideoir 'DOMAIN'."
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Tables Filter"
-msgstr ""
+msgstr "Scagaire Táblaí"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables and table filter"
-msgstr ""
+msgstr "Táblaí agus scagaire tábla"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Mark the tables that should be visible for the applications."
-msgstr ""
+msgstr "Cuir marc ar na táblaí ar cheart a bheith le feiceáil ag na feidhmchláir."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Database Wizard"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
-msgid  "Database Wizard"
-msgstr ""
+msgstr "Treoraí na mBunachar Sonraí"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Select database"
-msgstr ""
+msgstr "Roghnaigh bunachar sonraí"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
+#, fuzzy
 msgid  "Set up dBASE connection"
-msgstr ""
+msgstr "Socraigh ceangal le dBASE"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Socraigh ceangal le téacschomhaid"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
+#, fuzzy
 msgid  "Set up Microsoft Access connection"
-msgstr ""
+msgstr "Socraigh ceangal le Microsoft Access"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
+#, fuzzy
 msgid  "Set up LDAP connection"
-msgstr ""
+msgstr "Socraigh ceangal LDAP"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
+#, fuzzy
 msgid  "Set up Adabas D connection"
-msgstr ""
+msgstr "Socraigh ceangal Adabas D"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
+#, fuzzy
 msgid  "Set up ADO connection"
-msgstr ""
+msgstr "Socraigh ceangal ADO"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
+#, fuzzy
 msgid  "Set up JDBC connection"
-msgstr ""
+msgstr "Socraigh ceangal JDBC"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
+#, fuzzy
 msgid  "Set up Oracle database connection"
-msgstr ""
+msgstr "Socraigh ceangal le hOracle"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
+#, fuzzy
 msgid  "Set up MySQL connection"
-msgstr ""
+msgstr "Socraigh ceangal MySQL"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
+#, fuzzy
 msgid  "Set up ODBC connection"
-msgstr ""
+msgstr "Socraigh ceangal ODBC"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
+#, fuzzy
 msgid  "Set up Spreadsheet connection"
-msgstr ""
+msgstr "Socraigh ceangal le Scarbhileog"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
+#, fuzzy
 msgid  "Set up user authentication"
-msgstr ""
+msgstr "Socraigh fíordheimhniú úsáideora"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
+#, fuzzy
 msgid  "Set up MySQL server data"
-msgstr ""
+msgstr "Socraigh sonraí freastalaí MySQL"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
+#, fuzzy
 msgid  "Save and proceed"
-msgstr ""
+msgstr "Sábháil agus téigh ar aghaidh"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
+#, fuzzy
 msgid  "New Database"
-msgstr ""
+msgstr "Bunachar Sonraí Nua"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up a connection to a MySQL database"
-msgstr ""
+msgstr "Socraigh ceangal le bunachar sonraí MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Is féidir leat ceangal a dhéanamh le bunachar sonraí MySQL ag úsáid ODBC nó JDBC.\nTéigh i dteagmháil le riarthóir do chórais le do thoil, mura bhfuil tú lánsásta leis na socruithe seo a leanas."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "How do you want to connect to your MySQL database?"
-msgstr ""
+msgstr "Conas ba mhaith leat ceangal le do bhunachar sonraí MySQL?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect using ODBC (Open Database Connectivity)"
-msgstr ""
+msgstr "Ceangail trí ODBC (Open Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect using JDBC (Java Database Connectivity)"
-msgstr ""
+msgstr "Ceangail trí JDBC (Java Database Connectivity)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect directly"
-msgstr ""
+msgstr "Ceangail go díreach"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up the user authentication"
-msgstr ""
+msgstr "Socraigh an fíordheimhniú úsáideora"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "Teastaíonn ó bhunachair sonraí áirithe go gcuireann tú ainm úsáideora isteach."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "~Ainm an Úsáideora"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password re~quired"
-msgstr ""
+msgstr "Focal faire de ~dhíth"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Test Connection"
-msgstr ""
+msgstr "Ceangal ~Tástála"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Decide how to proceed after saving the database"
-msgstr ""
+msgstr "Réitigh ar cén chaoi a rachaidh tú ar aghaidh tar éis an bhunachair sonraí a shábháil"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "An bhfuil tú ag iarraidh ar an treoraí an bunachar sonraí a chlárú i %PRODUCTNAME?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes, register the database for me"
-msgstr ""
+msgstr "~Cláraigh"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "N~o, do not register the database"
-msgstr ""
+msgstr "~Ná Cláraigh"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "After the database file has been saved, what do you want to do?"
-msgstr ""
+msgstr "Nuair a bheidh an bunachar sonraí sábháilte, céard atá tú ag iarraidh a dhéanamh?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Open the database for editing"
-msgstr ""
+msgstr "Oscail an bunachar sonraí chun é a chur in eagar"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Create tables using the table wizard"
-msgstr ""
+msgstr "Cruthaigh táblaí leis an treoraí tábla"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Click 'Finish' to save the database."
-msgstr ""
+msgstr "Cliceáil 'Críochnaigh' chun an bunachar sonraí a shábháil."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up connection to a MySQL database using JDBC"
-msgstr ""
+msgstr "Ceangail le bunachar sonraí MySQL trí JDBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Cuir isteach an t-eolas a theastaíonn chun ceangal le bunachar sonraí MySQL le JDBC. Tabhair faoi deara gur gá le haicme tiománaí JDBC a shuiteáil ar do ríomhaire agus a chlárú le %PRODUCTNAME.\nTéigh i dteagmháil le riarthóir do chórais le do thoil, mura bhfuil tú lánsásta leis na socruithe seo a leanas."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
+#, fuzzy
 msgid  "MySQL JDBC d~river class:"
-msgstr ""
+msgstr "~Aicme thiománaí JDBC de chuid MySQL:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 3306"
-msgstr ""
+msgstr "Réamhshocrú: 3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up connection to a MySQL database"
-msgstr ""
+msgstr "Socraigh ceangal le bunachar sonraí MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "Iontráil an fhaisnéis riachtanach chun ceangal a bhunú le bunachar sonraí MySQL."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to dBASE files"
-msgstr ""
+msgstr "Socraigh ceangal le comhaid dBASE"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Select the folder where the dBASE files are stored."
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "Roghnaigh an fillteán ina stóráiltear na comhaid dBASE."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "Roghnaigh an fillteán ina stóráiltear na téacschomhaid CSV (Comma Separated Values). Osclóidh %PRODUCTNAME Base na comhaid seo sa mhód inléite amháin."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to text files"
-msgstr ""
+msgstr "Conair go téacschomhaid"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to a Microsoft Access database"
-msgstr ""
+msgstr "Socraigh ceangal le bunachar sonraí Microsoft Access"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "Roghnaigh an comhad Microsoft Access gur mian leat a rochtain."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up a connection to an LDAP directory"
-msgstr ""
+msgstr "Socraigh ceangal le heolaire LDAP"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Cuir isteach an t-eolas a theastaíonn chun ceangal leis an eolaire LDAP le do thoil.\nTéigh i dteagmháil le riarthóir do chórais le do thoil, mura bhfuil tú lánsásta leis na socruithe seo a leanas."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 389"
-msgstr ""
+msgstr "Réamhshocrú: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use ~secure connection (SSL)"
-msgstr ""
+msgstr "Úsáid ~ceangal daingean (SSL)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an Adabas D database"
-msgstr ""
+msgstr "Socraigh ceangal le bunachar sonraí Adabas D"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Iontráil an t-ainm ar an bhunachar sonraí Adabas D lenar mhaith leat ceangal.\nCliceáil 'Brabhsáil...' chun roghnú óna bunachair sonraí Adabas D atá cláraithe cheana le %PRODUCTNAME."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an ADO database"
-msgstr ""
+msgstr "Socraigh ceangal le bunachar sonraí ADO"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Cuir isteach URL na foinse sonraí ADO atá uait ceangal a dhéanamh leis.\nCliceáil ar 'Brabhsáil' chun socruithe áirithe soláthraí a chumrú.\nTéigh i dteagmháil le riarthóir do chórais le do thoil mura bhfuil tú lánsásta leis na socruithe seo a leanas."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an ODBC database"
-msgstr ""
+msgstr "Socraigh ceangal le bunachar sonraí ODBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Cuir isteach ainm an bhunachair sonraí ODBC atá uait ceangal a dhéanamh leis.\nCliceáil ar 'Brabhsáil...' le bunachar sonraí ODBC atá cláraithe i %PRODUCTNAME a roghnú.\nTéigh i dteagmháil le riarthóir do chórais le do thoil, mura bhfuil tú lánsásta leis na socruithe seo a leanas."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to a JDBC database"
-msgstr ""
+msgstr "Socraigh ceangal le bunachar sonraí JDBC"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Cuir isteach an t-eolas a theastaíonn chun ceangal leis an tiománaí ranga JDBC le do thoil.\nTéigh i dteagmháil le riarthóir do chórais le do thoil, mura bhfuil tú lánsásta leis na socruithe seo a leanas."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an Oracle database"
-msgstr ""
+msgstr "Socraigh ceangal le bunachar sonraí Oracle"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 1521"
-msgstr ""
+msgstr "Réamhshocrú: 1521"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Oracle JDBC ~driver class"
-msgstr ""
+msgstr "~Aicme thiománaí JDBC de chuid Oracle"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Cuir isteach an t-eolas a theastaíonn chun ceangal le bunachar sonraí Oracle le do thoil. Bíodh a fhios agat go gcaithfidh aicme tiománaí JDBC a bheidh suiteáilte agus cláraithe le %PRODUCTNAME.\nTéigh i dteagmháil le riarthóir do chórais mura bhfuil tú lánsásta leis na socruithe seo a leanas."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to spreadsheets"
-msgstr ""
+msgstr "Socraigh ceangal le scarbhileoga"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Cliceáil 'Brabhsáil...' chun scarbhileog %PRODUCTNAME nó leabhar oibre Microsoft Excel a roghnú.\nOsclófar %PRODUCTNAME an comhad seo sa mhód inléite amháin."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
+#, fuzzy
 msgid  "~Location and file name"
-msgstr ""
+msgstr "~Suíomh agus ainm comhaid"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Password required"
-msgstr ""
+msgstr "~Focal faire de dhíth"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use catalog for file-based databases"
-msgstr ""
+msgstr "Úsáid clárliosta do bhunachar sonraí atá bunaithe ar chomhaid"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Connection Settings"
-msgstr ""
+msgstr "Socruithe Cheangail"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "Óst~ainm"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port number"
-msgstr ""
+msgstr "Uimhir ~phoirt"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "Advanced Properties"
-msgstr ""
+msgstr "Airíonna Casta"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
+#, fuzzy
 msgid  "Additional Settings"
-msgstr ""
+msgstr "Socruithe Breise"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Connection settings"
-msgstr ""
+msgstr "Socruithe cheangail"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
+#, fuzzy
 msgid  "Database properties"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
-msgid  "Database properties"
-msgstr ""
+msgstr "Airíonna bunachar sonraí"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr ""
+msgstr "Fáilte go dtí Treoraí Bunachar Sonraí %PRODUCTNAME"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Úsáid an Treoraí Bunachar Sonraí le Bunachar Sonraí nua a chruthú, le bunachar sonraí atá ann a oscailt, nó le ceangal le bunachar sonraí atá ar fhreastalaí."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "What do you want to do?"
-msgstr ""
+msgstr "Cad ba mhaith leat a dhéanamh?"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Create a n~ew database"
-msgstr ""
+msgstr "Cruthaigh bunachar sonraí ~nua"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open an existing database ~file"
-msgstr ""
+msgstr "Oscail comhad bunachair ~sonraí atá ann"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Recently used"
-msgstr ""
+msgstr "Úsáidte le déanaí"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect to an e~xisting database"
-msgstr ""
+msgstr "Ceangail le bunachar ~sonraí atá ann"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Roghnaigh cineál an bhunachair sonraí lenar mhaith leat ceangal a bhunú."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database ~type "
-msgstr ""
+msgstr "Cineál bunachair ~sonraí "
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "Bunachar Sonraí"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Ar na leathanaigh seo, is féidir leat mionsocruithe don cheangal a dhéanamh.\n\nBeidh na socruithe nua seo ann in áit na socruithe atá agat faoi láthair."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
+#, fuzzy
 msgid  "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Data Source Properties: #"
-msgstr ""
+msgstr "Airíonna na Foinse Sonraí: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
+#, fuzzy
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "Níorbh fhéidir an leabharlann ríomhchláir #lib# a luchtú nó tá sé truaillithe. Níl roghnú foinse sonraí ODBC ar fáil."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Níl an cineál seo foinse sonraí ar eolas ag an ardán seo.\nTá cead agat na socruithe a athrú, ach is mór an seans nach mbeifeá ábalta ceangal leis an mbunachar sonraí."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "Ginearálta"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Optional settings"
-msgstr ""
+msgstr "Socruithe roghnacha"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Display deleted records as well"
-msgstr ""
+msgstr "Taispeáin taifid scriosta fosta"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Nóta: Nuair atá siad scriosta, agus dá bhrí sin neamhghníomhach, taispeántar taifead, agus ní bheidh tú ábalta taifead a scriosadh ón bhfoinse sonraí."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Indexes..."
-msgstr ""
+msgstr "Innéacsanna..."
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Optional Settings"
-msgstr ""
+msgstr "Socruithe Roghnacha"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "ODBC ~options"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr ""
+msgstr "R~oghanna ODBC"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "Méid an ~mhaoláin sonraí (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data increment (MB)"
-msgstr ""
+msgstr "Incrimint ~sonraí (MB)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Administration"
-msgstr ""
+msgstr "Riarachán"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Control ~user name"
-msgstr ""
+msgstr "Rialaigh ~ainm an úsáideora"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Control ~password"
-msgstr ""
+msgstr "Rialaigh an ~focal faire"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr ""
+msgstr "~Stop an tseirbhís agus %PRODUCTNAME á dhúnadh"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "E~xtended..."
-msgstr ""
+msgstr "B~reisithe..."
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "MySQL JDBC d~river class"
-msgstr ""
+msgstr "~Aicme thiománaí JDBC de chuid MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test class"
-msgstr ""
+msgstr "Aicme thástála"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User authentication"
-msgstr ""
+msgstr "Fíordheimhniú úsáideora"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "~Ainm an Úsáideora"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password required"
-msgstr ""
+msgstr "Focal faire de dhíth"
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Oracle JDBC d~river class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
+msgstr "~Aicme thiománaí JDBC de chuid Oracle"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Base DN"
-msgstr ""
+msgstr "DN ~Bunaidh"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use secure connection(SSL)"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "Úsáid ceangal daingean(SSL)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Maximum number of ~records"
-msgstr ""
+msgstr "Uasmhéid ~taifead"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Hostname"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "Óst~ainm"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Driver settings"
-msgstr ""
+msgstr "Socruithe ~tiománaí"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
+#, fuzzy
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "Roghnaigh 'Ceangail le bunachar sonraí atá ann' chun ceangal a bhunú le bunachar sonraí atá ann."
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Indexes"
-msgstr ""
+msgstr "Innéacsanna"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Table"
-msgstr ""
+msgstr "~Tábla"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Assignment"
-msgstr ""
+msgstr "Sannadh"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~able indexes"
-msgstr ""
+msgstr "Inné~acsanna tábla"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Free indexes"
-msgstr ""
+msgstr "~Reoigh innéacsanna"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "SQL command"
-msgstr ""
+msgstr "Ordú SQL"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Command to execute"
-msgstr ""
+msgstr "Ordú le rith"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Execute"
-msgstr ""
+msgstr "Rith"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Previous commands"
-msgstr ""
+msgstr "Orduithe roimhe seo"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr "Stádas"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Dún"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Execute SQL Statement"
-msgstr ""
+msgstr "Rith ráiteas SQL"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
+#, fuzzy
 msgid  "Command successfully executed."
-msgstr ""
+msgstr "D'éirigh leis an ordú."
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "Cailleadh an ceangal leis an bhunachar sonraí. Dúnfar an dialóg seo."
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Field Format"
-msgstr ""
+msgstr "Formáid Réimse"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Bac~k"
-msgstr ""
+msgstr "~Siar"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "Cló"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "Formáid"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "Ailíniú"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
+#, fuzzy
 msgid  "Table Format"
-msgstr ""
+msgstr "Formáid Tábla"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Save As"
-msgstr ""
+msgstr "Sábháil Mar"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter a name for the object to be created:"
-msgstr ""
+msgstr "Iontráil ainm ar an réad atá le cruthú:"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Catalog"
-msgstr ""
+msgstr "~Catalóg"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Schema"
-msgstr ""
+msgstr "~Scéimre"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Table Name"
-msgstr ""
+msgstr "Ainm ~Tábla"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Name of table view"
-msgstr ""
+msgstr "Ai~nm an amhairc tábla"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Query name"
-msgstr ""
+msgstr "~Ainm an iarratais"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
+#, fuzzy
 msgid  "Rename to"
-msgstr ""
+msgstr "Athainmnigh"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
+#, fuzzy
 msgid  "Insert as"
-msgstr ""
+msgstr "Ionsáigh mar"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Height"
-msgstr ""
+msgstr "~Airde"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "U~athoibríoch"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Row Height"
-msgstr ""
+msgstr "Airde Ró"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Width"
-msgstr ""
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "~Leithead"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Column Width"
-msgstr ""
+msgstr "Leithead Colúin"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Data Source"
-msgstr ""
+msgstr "Foinse Sonraí"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose a data source:"
-msgstr ""
+msgstr "Roghnaigh foinse sonraí:"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Organize..."
-msgstr ""
+msgstr "Eagraigh..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Create..."
-msgstr ""
+msgstr "Cruthaigh..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
+#, fuzzy
 msgid  "Local Databases"
-msgstr ""
+msgstr "Bunachair Shonraí Logánta"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
+#, fuzzy
 msgid  "Choose a database"
-msgstr ""
+msgstr "Roghnaigh bunachar sonraí"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Indexes"
-msgstr ""
+msgstr "Innéacsanna"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "New Index"
-msgstr ""
+msgstr "Innéacs Nua"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Delete Current Index"
-msgstr ""
+msgstr "Scrios Innéacs Reatha"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Rename Current Index"
-msgstr ""
+msgstr "Athainmnigh Innéacs Reatha"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Save Current Index"
-msgstr ""
+msgstr "Sábháil Innéacs Reatha"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Reset Current Index"
-msgstr ""
+msgstr "Athshocraigh Innéacs Reatha"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Index details"
-msgstr ""
+msgstr "Mionsonraí an innéacs"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Index identifier:"
-msgstr ""
+msgstr "Aitheantóir an innéacs:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Unique"
-msgstr ""
+msgstr "~Uathúil"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Fields"
-msgstr ""
+msgstr "Réimsí"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "~Dún"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
+#, fuzzy
 msgid  "Sort order"
-msgstr ""
+msgstr "Ord sórtála"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
+#, fuzzy
 msgid  "Index field"
-msgstr ""
+msgstr "Réimse innéacs"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
-msgstr ""
+msgstr "Ag dul suas"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
-msgstr ""
+msgstr "Ag dul síos"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete the index '$name$'?"
-msgstr ""
+msgstr "An bhfuil tú cinnte gur mian leat an t-innéacs '$name$' a scriosadh?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
+#, fuzzy
 msgid  "index"
-msgstr ""
+msgstr "innéacs"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
+#, fuzzy
 msgid  "Save Index"
-msgstr ""
+msgstr "Sábháil Innéacs"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The index must contain at least one field."
-msgstr ""
+msgstr "Ní mór réimse amháin ar a laghad a bheith san innéacs."
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Exit Index Design"
-msgstr ""
+msgstr "Scoir de Dhearadh Innéacs"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to save the changes made to the current index?"
-msgstr ""
+msgstr "An bhfuil fonn ort na hathruithe a rinneadh san innéacs reatha a shábháil?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
+#, fuzzy
 msgid  "There is already another index named \"$name$\"."
-msgstr ""
+msgstr "Tá innéacs ann cheana leis an ainm \"$name$\" air."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr ""
+msgstr "I sainiú innéacs, níl sé ceadaithe colún tábla a bheith ann ach uair amháin. Tá an colún \"$name$\" curtha isteach faoi dhó agat, áfach."
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "~Parameters"
-msgstr ""
+msgstr "~Paraiméadair"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Value"
-msgstr ""
+msgstr "~Luach"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next"
-msgstr ""
+msgstr "~Ar Aghaidh"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Parameter Input"
-msgstr ""
+msgstr "Ionchur Paraiméadar"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
+#, fuzzy
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
-msgstr ""
+msgstr "Níorbh fhéidir an iontráil a thiontú go luach bailí don cholún \"$name$\""
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Standard Filter"
-msgstr ""
+msgstr "Scagaire Caighdeánach"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "AND"
-msgstr ""
+msgstr "AND"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "OR"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
-msgstr ""
+msgstr "OR"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "Ainm réimse"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Condition"
-msgstr ""
+msgstr "Coinníoll"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "Luach"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
-msgstr ""
+msgstr "Oibreoir"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Criteria"
-msgstr ""
+msgstr "Critéir"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
+#, fuzzy
 msgid  "- none -"
-msgstr ""
+msgstr "- neamhní -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
+#, fuzzy
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
+msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Sort Order"
-msgstr ""
+msgstr "Ord Sórtála"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "ascending"
-msgstr ""
+msgstr "ardaitheach"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
+msgstr "íslitheach"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "Ainm réimse"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "and then"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
-msgid  "and then"
-msgstr ""
+msgstr "agus ansin"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
-msgstr ""
+msgstr "Oibreoir"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Order"
-msgstr ""
+msgstr "Ord"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sort order"
-msgstr ""
+msgstr "Ord sórtála"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
-msgstr ""
+msgstr "<neamhní>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Relations"
-msgstr ""
+msgstr "Gaolta"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
-msgstr ""
+msgstr "Táblaí i gceist"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
-msgstr ""
+msgstr "Réimsí i gceist"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Update options"
-msgstr ""
+msgstr "Nuashonraigh roghanna"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No action"
-msgstr ""
+msgstr "Ga~n ghníomh"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Update cascade"
-msgstr ""
+msgstr "N~uashonraigh an chascáid"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Set null"
-msgstr ""
+msgstr "~Socraigh mar nialasach"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Set ~default"
-msgstr ""
+msgstr "Socraigh mar ~réamhshocrú"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Delete options"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "~No action"
-msgstr ""
+msgstr "Scrios roghanna"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Delete ~cascade"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
-msgstr ""
+msgstr "Scrios ~cascáid"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Base"
-msgstr ""
+msgstr "%PRODUCTNAME Base"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Details"
-msgstr ""
+msgstr "Mionsonraí"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Error ~list:"
-msgstr ""
+msgstr "~Liosta earráidí:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description:"
-msgstr ""
+msgstr "~Cur Síos:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "SQL Status"
-msgstr ""
+msgstr "Stádas SQL"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
+#, fuzzy
 msgid  "Error code"
-msgstr ""
+msgstr "Cód earráide"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "Fáth coitianta don earráid seo ná socrú mícheart don fhoireann carachtar do theanga do bhunachair sonraí. Cinntigh an socrú trí Eagar - Bunachar Sonraí - Airíonna a roghnú."
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error"
-msgstr ""
+msgstr "Earráid"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning"
-msgstr ""
+msgstr "Rabhadh"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
+#, fuzzy
 msgid  "Information"
-msgstr ""
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
-msgid  "Details"
-msgstr ""
+msgstr "Eolas"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Text Connection Settings"
-msgstr ""
+msgstr "Socruithe Cheangail Téacs"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
+#, fuzzy
 msgid  "User Settings"
-msgstr ""
+msgstr "Socruithe Úsáideora"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
+#, fuzzy
 msgid  "User administration"
-msgstr ""
+msgstr "Riar na n-úsáideoirí"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User selection"
-msgstr ""
+msgstr "Roghnú úsáideora"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Us~er:"
-msgstr ""
+msgstr "Úsáid~eoir:"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add User..."
-msgstr ""
+msgstr "Úsáideoir ~Nua..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Change ~Password..."
-msgstr ""
+msgstr "Athraigh ~Focal Faire..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete User..."
-msgstr ""
+msgstr "~Scrios Úsáideoir..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Access rights for selected user"
-msgstr ""
+msgstr "Cearta rochtana don úsáideoir roghnaithe"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you really want to delete the user?"
-msgstr ""
+msgstr "An bhfuil tú cinnte gur mhaith leat an t-úsáideoir a scriosadh?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support user administration."
-msgstr ""
+msgstr "Ní thacaíonn an bunachar sonraí le riarachán úsáideora."
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User \"$name$:  $\""
-msgstr ""
+msgstr "Úsáideoir \"$name$:  $\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Old p~assword"
-msgstr ""
+msgstr "Se~anfhocal faire"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "~Focal Faire"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Confirm  password"
-msgstr ""
+msgstr "~Dearbhaigh an focal faire"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Change Password"
-msgstr ""
+msgstr "Athraigh Focal Faire"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
+#, fuzzy
 msgid  "The passwords do not match. Please enter the password again."
-msgstr ""
+msgstr "Ní ionann na focail fhaire. Triail arís é, le do thoil."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Refresh"
-msgstr ""
+msgstr "Athnuaigh"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~View Design"
-msgstr ""
+msgstr "Dearadh Nua ~Amhairc"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~Table Design"
-msgstr ""
+msgstr "Dearadh Nua ~Tábla"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
+#, fuzzy
 msgid  "Query AutoPilot..."
-msgstr ""
+msgstr "UathPhíolóta: Iarratas..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~Query (Design View)"
-msgstr ""
+msgstr "Iarratas ~Nua (Amharc ar Dhearadh)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Edit Query"
-msgstr ""
+msgstr "Cuir Iarratas in ~Eagar"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
+#, fuzzy
 msgid  "New Query (~SQL View)"
-msgstr ""
+msgstr "Iarratas Nua (Amharc ~SQL)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
+#, fuzzy
 msgid  "Edit..."
-msgstr ""
+msgstr "Eagar..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Column ~Width..."
-msgstr ""
+msgstr "Leithead ~Colúin..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
+#, fuzzy
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "Treoraí Tuairisce..."
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Form AutoPilot..."
-msgstr ""
+msgstr "UathPhíolóta: Foirm..."
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
+#, fuzzy
 msgid  "System"
-msgstr ""
+msgstr "Córas"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
+#, fuzzy
 msgid  "Error during creation"
-msgstr ""
+msgstr "Earráid le linn cruthú"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "Tharla earráid gan choinne. Níorbh fhéidir an oibríocht a chur i gcrích."
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
+#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
-msgstr ""
+msgstr "Níorbh fhéidir an cháipéis \"$file$\" a oscailt."
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "Ní féidir an tábla a scriosadh toisc nach dtacaíonn an ceangal bunachair sonraí leis seo."
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
+#, fuzzy
 msgid  "~All"
-msgstr ""
+msgstr "~Uile"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
+#, fuzzy
 msgid  "Undo:"
-msgstr ""
+msgstr "Cealaigh:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
+#, fuzzy
 msgid  "Redo:"
-msgstr ""
+msgstr "Athdhéan:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
-msgstr ""
+msgstr "Níorbh fhéidir cineál colúin comhfhreagrach a aimsiú do cholún '#1'."
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "Níl an comhad \"$file$\" ann."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr ""
+msgstr "Fuarthas rabhaidh le linn ceangal leis an bhfoinse sonraí. Brúigh \"$buttontext$\" le hiad a fheiceáil."
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Tá an t-ainm '$#$' ann cheana.\nIontráil ainm eile le do thoil."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
+#, fuzzy
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
-msgstr ""
+msgstr "Tá an eisínteacht Sun Report Builder de dhíth ar an tuairisc, \"$file$\"."
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Apply columns"
-msgstr ""
+msgstr "Cuir colúin i bhfeidhm"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Type formatting"
-msgstr ""
+msgstr "Formáidiú cló"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
+#, fuzzy
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "Tá na réimsí seo a leanas socraithe mar phríomheochracha:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Assign columns"
-msgstr ""
+msgstr "Sann colúin"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Copy RTF Table"
-msgstr ""
+msgstr "Cóipeáil Tábla RTF"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "Cab~hair"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Cancel"
-msgstr ""
+msgstr "~Cealaigh"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "< ~Back"
-msgstr ""
+msgstr "< ~Siar"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next>"
-msgstr ""
+msgstr "~Ar Aghaidh>"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "C~reate"
-msgstr ""
+msgstr "C~ruthaigh"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Existing columns"
-msgstr ""
+msgstr "Colúin atá ann"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Column information"
-msgstr ""
+msgstr "Eolas faoin cholún"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Automatic type recognition"
-msgstr ""
+msgstr "Aithint uathoibríoch cineálacha"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Lines (ma~x)"
-msgstr ""
+msgstr "Línte (ua~s)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
-msgstr ""
+msgstr "Príomheochair"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Source table: \n"
-msgstr ""
+msgstr "Tábla foinseach: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "Spriocthábla: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~All"
-msgstr ""
+msgstr "~Uile"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Non~e"
-msgstr ""
+msgstr "N~eamhní"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ta~ble name"
-msgstr ""
+msgstr "Ainm ar an tá~bla"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "Roghanna"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "De~finition and data"
-msgstr ""
+msgstr "Sain~mhíniú agus sonraí"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Def~inition"
-msgstr ""
+msgstr "Sa~inmhíniú"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~s table view"
-msgstr ""
+msgstr "~Mar amharc tábla"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Append ~data"
-msgstr ""
+msgstr "Iarcheangail ~sonraí"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use first ~line as column names"
-msgstr ""
+msgstr "Úsáid an chéad ~líne mar ainmneacha na gcolún"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Crea~te primary key"
-msgstr ""
+msgstr "Cru~thaigh príomheochair"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "Ainm"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
+#, fuzzy
 msgid  "Copy table"
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
-msgid  "Copy table"
-msgstr ""
+msgstr "Cóipeáil tábla"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "This table name is not valid in the current database."
-msgstr ""
+msgstr "Níl an t-ainm tábla seo bailí sa bhunachar sonraí reatha."
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Roghnaigh 'Iarcheangail sonraí' ar an chéad leathanach chun sonraí a iarcheangal le tábla atá ann."
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Please change the table name. It is too long."
-msgstr ""
+msgstr "Athraigh an t-ainm atá ar an tábla. Is rófhada é."
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "Roghanna"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Type"
-msgstr ""
+msgstr "~Cineál"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Inner join"
-msgstr ""
+msgstr "Comhcheangal istigh"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left join"
-msgstr ""
+msgstr "Comhcheangail ar chlé"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right join"
-msgstr ""
+msgstr "Comhcheangail ar dheis"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Full (outer) join"
-msgstr ""
+msgstr "Comhcheangal iomlán (amuigh)"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Cross join"
-msgstr ""
+msgstr "Ceangail trasna"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Natural"
-msgstr ""
+msgstr "Nádúrtha"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
-msgstr ""
+msgstr "Táblaí i gceist"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
-msgstr ""
+msgstr "Réimsí i gceist"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Join Properties"
-msgstr ""
+msgstr "Airíonna Comhcheangail"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
+#, fuzzy
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "Tugtar faoi deara nach dtacaíonn roinnt bunachair sonraí leis an saghas comhcheangail seo."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Ní chuimsítear ach taifid a bhfuil le hábhar comhionann acu i réimsí gaolmhara an dá thábla."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "Coinnítear GACH taifead ón tábla '%1', agus taifid ón tábla '%2' a bhfuil le luachanna comhoiriúnacha acu sna réimsí gaolmhara."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Coinnítear GACH taifead ó '%1' agus ó '%2'."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "Cuimsíonn sé seo an t-iolrach Cairtéiseach do GACH taifead ó '%1' agus ó '%2'."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "Ní chuimsíonn sé seo ach colún amháin do gach péire colún a bhfuil na hainmneacha céanna acu ó '%1' agus ó '%2'."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
+#, fuzzy
 msgid  "Add Table Window"
-msgstr ""
+msgstr "Cuir Fuinneog Thábla Leis"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Move table window"
-msgstr ""
+msgstr "Bog fuinneog thábla"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Insert Join"
-msgstr ""
+msgstr "Ionsáigh Ceangal"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Delete Join"
-msgstr ""
+msgstr "Scrios Ceangal"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Resize table window"
-msgstr ""
+msgstr "Athraigh méid na fuinneoige tábla"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Column"
-msgstr ""
+msgstr "Scrios Colún"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
+#, fuzzy
 msgid  "Move column"
-msgstr ""
+msgstr "Bog colún"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
+#, fuzzy
 msgid  "Add Column"
-msgstr ""
+msgstr "Cuir Colún Leis"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
-msgstr ""
+msgstr "Slonn neamhbhailí, níl tábla '$name$' ann."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr ""
+msgstr "Slonn neamhbhailí, níl ainm réimse '$name$' ann."
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "Cuimsíonn an t-iarratas #num# tábla. Ní féidir leis an saghas bunachair sonraí roghnaithe ach #maxnum# tábla a phróiseáil mar uasmhéid do gach aon ráiteas, áfach."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Table Window"
-msgstr ""
+msgstr "Scrios Fuinneog Thábla"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
+#, fuzzy
 msgid  "Edit Column Description"
-msgstr ""
+msgstr "Cuir Cur Síos an Cholúin in Eagar"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Adjust column width"
-msgstr ""
+msgstr "Coigeartaigh leithead colúin"
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
+#, fuzzy
 msgid  "(not sorted);ascending;descending"
-msgstr ""
+msgstr "(gan sórtáil);ardaitheach;íslitheach"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
+#, fuzzy
 msgid  "(no function);Group"
-msgstr ""
+msgstr "(gan feidhm);Grúpa"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
+#, fuzzy
 msgid  "(no table)"
-msgstr ""
+msgstr "(gan tábla)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
-msgstr ""
+msgstr "Ní thacaíonn an bunachar sonraí le sórtáil, ach amháin má tá réimsí infheicthe i gceist."
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
+#, fuzzy
 msgid  "Functions"
-msgstr ""
+msgstr "Feidhmeanna"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Table Name"
-msgstr ""
+msgstr "Ainm Tábla"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Alias"
-msgstr ""
+msgstr "Ailias"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Distinct Values"
-msgstr ""
+msgstr "Luachanna Faoi Leith"
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "Réimse;Ailias;Tábla;Sórtáil;Infheicthe;Feidhm;Critéar;Nó;Nó"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
+#, fuzzy
 msgid  "There are too many columns."
-msgstr ""
+msgstr "An iomarca colún."
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
-msgstr ""
+msgstr "Ní féidir coinníoll a chur i bhfeidhm ar réimse [*]"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement created is too long."
-msgstr ""
+msgstr "Tá an ráiteas SQL rófhada."
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
+#, fuzzy
 msgid  "Query is too complex"
-msgstr ""
+msgstr "Tá an t-iarratas róchasta"
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
+#, fuzzy
 msgid  "Nothing has been selected."
-msgstr ""
+msgstr "Níl aon rud roghnaithe agat."
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
+#, fuzzy
 msgid  "Too many search criteria"
-msgstr ""
+msgstr "An iomarca critéar cuardaigh"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
+#, fuzzy
 msgid  "SQL syntax error"
-msgstr ""
+msgstr "Earráid chomhréire SQL"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
-msgstr ""
+msgstr "Ní féidir [*] a úsáid mar chritéar sórtála."
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "There are too many tables."
-msgstr ""
+msgstr "An iomarca táblaí."
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "Ní chuirfear an ráiteas i bhfeidhm fad a dhéantar iarratais i gcanúint SQL an bhunachair sonraí."
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Field name not found or not unique"
-msgstr ""
+msgstr "Níor aimsíodh an t-ainm réimse, nó ní uathúil é"
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Join could not be processed"
-msgstr ""
+msgstr "Níorbh fhéidir an ceangal a phróiseáil"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Syntax error in SQL statement"
-msgstr ""
+msgstr "Earráid chomhréire i ráiteas SQL"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "This database does not support table views."
-msgstr ""
+msgstr "Ní thacaíonn an bunachar sonraí seo le hamhairc tábla."
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "Ní thacaíonn an bunachar sonraí seo le hathrú amhairc tábla atá ann."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to create a query instead?"
-msgstr ""
+msgstr "An bhfuil fonn ort iarratas a chruthú ina áit?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "No query could be created."
-msgstr ""
+msgstr "Ní féidir iarratas a chruthú."
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
-msgstr ""
+msgstr "Ní féidir iarratas a chruthú toisc nach raibh aon réimse roghnaithe."
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "Tá an fhoinse sonraí chomhfhreagrach scriosta. Dá bhrí sin, ní féidir sonraí a bhaineann leis an bhfoinse sonraí sin a shábháil."
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The column '$name$' is unknown."
-msgstr ""
+msgstr "Colún anaithnid '$name$'."
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
+#, fuzzy
 msgid  "Columns can only be compared using '='."
-msgstr ""
+msgstr "Ní féidir colúin a chur i gcomparáid ach amháin le '=' a úsáid."
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
-msgstr ""
+msgstr "Ní mór duit ainm colúin a chur roimh 'LIKE'."
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "Níor aimsíodh an colún. Tabhair faoi deara go bhfuil an bunachar sonraí cásíogair."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Dearadh Iarratais"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Dearadh Amhairc"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Athraíodh $object$.\nAn bhfuil fonn ort na hathruithe a shábháil?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr ""
+msgstr "Tá $object$ bunaithe ar ordú SQL nach féidir a pharsáil."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr ""
+msgstr "Osclófar an $object$ san amharc SQL."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "The table view"
-msgstr ""
+msgstr "An t-amharc tábla"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "The query"
-msgstr ""
+msgstr "An t-iarratas"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement"
-msgstr ""
+msgstr "An ráiteas SQL"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "Ní chruthaíonn an t-iarratas tacar torthaí, agus ní féidir leis a bheith cuid d'iarratas eile."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "Tá na paraiméadair do ActiveConnection agus do DataSourceName in easnamh nó mícheart - ní féidir an dearthóir iarratais a thosú."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Tá an gaol seo ann cheana. An bhfuil fonn ort é a chur in eagar, nó ceann nua a chruthú?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit..."
-msgstr ""
+msgstr "Eagar..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "Create..."
-msgstr ""
+msgstr "Cruthaigh..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Dearadh gaoil"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support relations."
-msgstr ""
-
-#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Ní thacaíonn an bunachar sonraí le gaolta."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Nuair a scriosfaidh tú an tábla seo, scriosfar gach gaol a bhaineann leis freisin. Lean ar aghaidh?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Níorbh fhéidir leis an mbunachar sonraí an gaol a chruthú. Seans nach dtacaítear le heochracha iasachta don chineál seo tábla.\nCeadaigh doiciméadú an bhunachair sonraí."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "Anaithnid;Téacs;Uimhir;Dáta/Am;Dáta;Am;Tá/Níl;Airgeadra;Meamram;Áiritheoir;Íomhá;Téacs (socraigh);Deachúlach;Dénártha (socraigh);Dénártha;SlánuimhirMhór;Dúbailt;Snámhphointe;Réaduimhir;Slánuimhir;SlánuimhirBheag;SlánuimhirAn-Bheag;Nialas SQL;Réad;Faoi Leith;Struchtúr;Réimse;BLOB;CLOB;REF;EILE;Giotán (socraigh)"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Ionsáigh/bain amach an phríomheochair"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "Tá"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Níl"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
-msgstr ""
+msgstr "Ag dul suas"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
-msgstr ""
+msgstr "Ag dul síos"
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 msgid  "<none>"
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "Ainm réimse"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field Name"
-msgstr ""
+msgstr "Ainm Réimse"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field ~type"
-msgstr ""
+msgstr "Cineál ~réimse"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field Type"
-msgstr ""
+msgstr "Cineál Réimse"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Field length"
-msgstr ""
+msgstr "Fad réimse"
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Cur Síos"
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Column Description"
-msgstr ""
+msgstr "Cur Síos an Cholúin"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
-msgstr ""
+msgstr "Ionchur de dhíth"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "~AutoValue"
-msgstr ""
+msgstr "U~athLuach"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Field Properties"
-msgstr ""
+msgstr "Airíonna Réimse"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "Ginearálta"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description:"
-msgstr ""
+msgstr "Cur Síos:"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Table properties"
-msgstr ""
+msgstr "Airíonna an tábla"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered is not a list element. "
-msgstr ""
+msgstr "Ní eilimint ón liosta é an téacs a d'iontráil tú. "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert Rows"
-msgstr ""
+msgstr "Ionsáigh Rónna"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
-msgstr ""
+msgstr "Príomheochair"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Modify cell"
-msgstr ""
+msgstr "Mionathraigh cill"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
+#, fuzzy
 msgid  "Delete row"
-msgstr ""
+msgstr "Scrios ró"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Modify field type"
-msgstr ""
+msgstr "Mionathraigh cineál an réimse"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert row"
-msgstr ""
+msgstr "Ionsáigh ró"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert new row"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "Ionsáigh ró nua"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "~Default value"
-msgstr ""
+msgstr "~Luach réamhshocraithe"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "~Entry required"
-msgstr ""
+msgstr "Iontráil d~e dhíth"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "~Length"
-msgstr ""
+msgstr "~Fad"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "~Type"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
-msgid  "~Length"
-msgstr ""
+msgstr "~Cineál"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Decimal ~places"
-msgstr ""
+msgstr "Ionaid ~deachúlacha"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format example"
-msgstr ""
+msgstr "Sampla formáide"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Roghnaigh luach atá le bheith réamhshocraithe i ngach taifead nua.\nMura bhfuil luach réamhshocraithe i ndán don taifead, roghnaigh teaghrán folamh."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Cuir isteach luach réamhshocraithe don réimse seo.\n\nNíos moille, nuair a chuirfidh tú sonraí sa tábla, bainfear úsáid as an teaghrán seo do gach taifead nua don réimse roghnaithe. Ba cheart, mar sin, go mbeadh sé comhfhreagartha d'fhormáid na cille atá le líonadh thíos."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "Gníomhachtaigh an rogha seo mura féidir luach NULL a chur sa réimse, .i. caithfidh an t-úsáideoir rud éigin a chur isteach i gcónaí."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
-msgstr ""
+msgstr "Iontráil uasmhéid fad an téacs atá ceadaithe."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Enter the number format."
-msgstr ""
+msgstr "Iontráil an fhormáid uimhreach."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Dearbhaigh fad na sonraí is féidir a bheidh sa réimse seo.\n\nMás réimsí deachúla atá i gceist, cuir isteach uasmhéid na huimhreach atá le hiontráil, agus más réimsí dénártha iad, fad an bhloic.\nDéanfar ceartú ar an luach dá réir seo nuair a sháraíonn sé uasmhéid an bhunachair sonraí seo."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "Inis an méid ionad deachúlach atá ceadaithe sa réimse seo."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Seo an áit a bhfeicfidh tú cén chaoi a dtaispeánfar na sonraí san fhormáid reatha (úsáid an cnaipe ar do dheis chun é seo a athrú)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "Is anseo a ndéantar cinneadh ar fhormáid aschur na sonraí."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Roghnaigh an ceart go mbeadh luachanna incrimintigh uathoibríoch sa réimse seo.\n\nNí féidir sonraí a chur i réimsí don saghas seo. Cuirfear luach i ngach réimse nua go huathoibríoch (bunaithe ar incrimintigh an taifead roimhe)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
 msgid  "~..."
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
-msgstr ""
+msgstr "Ní féidir an tábla a shábháil toisc gur sannadh an t-ainm \"$column$\" faoi dhó."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgstr "Is cuid den phríomheochair é colún \"$column$\". Má scriostar an colún, scriosfar an phríomheochair leis. An bhfuil tú cinnte gur mian leat dul ar aghaidh?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Primary Key Affected"
-msgstr ""
+msgstr "Chuathas i bhFeidhm ar an bPríomheochair"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Column"
-msgstr ""
+msgstr "Colún"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
+#, fuzzy
 msgid  "Continue anyway?"
-msgstr ""
+msgstr "Lean ar aghaidh mar sin féin?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning!"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "Rabhadh!"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "Níorbh fhéidir an tábla a shábháil ó tharla go raibh fadhbanna ag ceangal leis an bhunachar sonraí."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
-
-#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "Níorbh fhéidir an scagaire tábla a chur in oiriúint de bhrí go bhfuil an fhoinse sonraí scriosta."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
+#, fuzzy
 msgid  "No primary key"
-msgstr ""
+msgstr "Gan phríomheochair"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
+#, fuzzy
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "Teastaíonn innéacs nó príomheochair uathúil le taifead sonraí a aithint sa bhunachar sonraí.\nNí féidir sonraí a iontráil sa tábla seo ach amháin nuair atá ceann den dá choinníoll struchtúraithe seo comhlíonta.\n\nAn bhfuil fonn ort príomheochair a chruthú anois?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: Dearadh Tábla"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgstr "Níorbh fhéidir \"$column$\" a athrú. An ceart an colún a scriosadh agus an fhormáid nua a iarcheangal?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error while saving the table design"
-msgstr ""
+msgstr "Earráid agus dearadh an tábla á shábháil"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
-msgstr ""
+msgstr "Níorbh fhéidir colún $column$ a scriosadh."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "Tá tú ar tí gach colún sa tábla a scriosadh. Ní cheadaítear táblaí gan cholúin. An bhfuil fonn ort an tábla a scriosadh ón bhunachar sonraí? Murar mhaith, ní athrófar an tábla."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "A~uto-increment statement"
-msgstr ""
+msgstr "Ráiteas ~incriminteach uathoibríoch"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Iontráil ráiteas SQL don réimse incrimintigh uathoibríoch.\n\nAistreofar an ráiteas díreach go dtí an bunachar sonraí nuair a chruthófar an tábla."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Níorbh fhéidir aon eolas cineálacha a aisghabháil ón mbunachar sonraí.\nNíl mód dearaí an tábla ar fáil don fhoinse sonraí seo."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "change field name"
-msgstr ""
+msgstr "athraigh ainm an réimse"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "change field type"
-msgstr ""
+msgstr "athraigh cineál an réimse"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "change field description"
-msgstr ""
+msgstr "athraigh cur síos an réimse"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
+#, fuzzy
 msgid  "change field attribute"
-msgstr ""
+msgstr "athraigh tréith réimse"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support views."
-msgstr ""
+msgstr "Ní thacaíonn an bunachar sonraí sprice le hamhairc."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support primary keys."
-msgstr ""
+msgstr "Ní thacaíonn an bunachar sonraí sprice le príomheochracha."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "Níor aimsíodh tuairisceoir rochtain sonraí, nó ní féidir leis an tuairisceoir rochtain sonraí an t-eolas go léir atá a dhíth a sholáthar"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
-msgstr ""
+msgstr "Faoi láthair, ní thacaítear ach le táblaí agus iarratais."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "Caithfidh an tacar thorthaí d'fhoinse na cóipe tacú le leabharmharcanna."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "Cineál cholúin fhoinse neamhthacaithe ($type$) in áit cholúin $pos$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
-msgstr ""
+msgstr "Méid neamhdhleathach de pharaiméadair thúsaithe."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred during initialization."
-msgstr ""
+msgstr "Tharla earráid le linn túsaithe."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
-msgstr ""
+msgstr "Socrú gan tacaíocht sa tuarascálaí foinse cóipeáilte: $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
-msgstr ""
+msgstr "Chun iarratas a chóipeáil, caithfidh do cheangal a bheith in ann iarratais a sholáthar."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
+#, fuzzy
 msgid  "The given interaction handler is invalid."
-msgstr ""
+msgstr "Tá an láimhseálaí idirghníomhaíochta seo neamhbhailí."
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
+#, fuzzy
 msgid  "~Remember password until end of session"
-msgstr ""
+msgstr "Meabh~raigh an focal faire go dtí deireadh an tseisiúin"
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
+#, fuzzy
 msgid  "~Remember password"
-msgstr ""
+msgstr "~Meabhraigh focal faire"

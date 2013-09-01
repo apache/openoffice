@@ -359,18 +359,6 @@ msgstr ""
 msgid  "DATAD~EVSPACE"
 msgstr ""
 
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
 msgid  "Transaction ~file (MB)"
 msgstr ""
@@ -547,10 +535,6 @@ msgstr ""
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
 msgstr ""
 
-#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Summary"
-msgstr ""
-
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
 msgstr ""
@@ -565,10 +549,6 @@ msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
 msgid  "Report '$name$'"
-msgstr ""
-
-#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
-msgid  "document $current$ of $overall$"
 msgstr ""
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
@@ -645,263 +625,251 @@ msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "तपाईँ एउटै नामको तालिका र क्वेरी दिन सक्नुहुन्न । कृपया अहिले सम्म क्वेरी वा तालिकाद्वारा प्रयोग नगरिएको नाम प्रयोग गर्नुहोस् ।"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "तालिका"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "क्वेरी"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "दिएको जडान वैध क्वेरी र/वा तालिकाको आपूर्तिकर्ता होइन ।"
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
 msgid  "The given object is no table object."
-msgstr ""
+msgstr "दिएको वस्तु तालिका वस्तु होइन ।"
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "अवैध संयोजन प्रकार - com.sun.star.sdb.tools.CompositionType बाट मानको आवश्यक पर्दछ ।"
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "अवैध आदेश प्रकार - com.sun.star.sdb.CommandType बाट TABLE र AND QUERY मात्र अनुमति दिएको छ ।"
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
 msgid  "Create Form in Design View..."
-msgstr ""
+msgstr "डिजाइन दृश्यमा फारम सिर्जना गर्नुहोस्..."
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Form..."
-msgstr ""
+msgstr "फारम सिर्जना गर्न विजार्ड प्रयोग गर्नुहोस्..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
-msgstr ""
+msgstr "प्रतिवेदन सिर्जना गर्न विजार्ड प्रयोग गर्नुहोस..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
 msgid  "Create Report in Design View..."
-msgstr ""
+msgstr "डिजाइन दृश्यमा प्रतिवेदन सिर्जना गर्नुहोस्..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
 msgid  "Create Query in Design View..."
-msgstr ""
+msgstr "डिजाइन दृश्यमा क्वेरी सिर्जना गर्नुहोस्..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
 msgid  "Create Query in SQL View..."
-msgstr ""
+msgstr "SQL दृश्यमा क्वेरी सिर्जना गर्नुहोस्..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Query..."
-msgstr ""
+msgstr "क्वेरी सिर्जना गर्न विजार्ड प्रयोग गर्नुहोस्..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
-msgstr ""
+msgstr "डिजाइन दृश्यमा तालिका सिर्जना गर्नुहोस्..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Table..."
-msgstr ""
+msgstr "तालिका सिर्जना गर्न विजार्ड प्रयोग गर्नुहोस्..."
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
 msgid  "Create View..."
-msgstr ""
+msgstr "दृश्य सिर्जना गर्नुहोस्..."
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "फारमहरू"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
-msgstr ""
+msgstr "प्रतिवेदनहरू"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
 msgid  "Form..."
-msgstr ""
+msgstr "फारम..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
 msgid  "Report..."
-msgstr ""
+msgstr "प्रतिवेदन गर्नुहोस्..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
 msgid  "View (Simple)..."
-msgstr ""
+msgstr "दृश्य (साधारण)..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
 msgid  "Paste Special..."
-msgstr ""
+msgstr "विशेष प्रकारले टाँस्नुहोस्...."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
 msgid  "Delete"
-msgstr ""
+msgstr "मेट्नुहोस्"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
 msgid  "Rename"
-msgstr ""
+msgstr "पुन: नामकरण गर्नुहोस्"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
 msgid  "Edit"
-msgstr ""
+msgstr "सम्पादन गर्नुहोस्"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
-msgstr ""
+msgstr "SQL दृश्यमा सम्पादन गर्नुहोस्..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
-msgstr ""
+msgstr "खोल्नुहोस्"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
 msgid  "Create as View"
-msgstr ""
+msgstr "दृश्यको रूपमा सिर्जना गर्नुहोस्"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
-msgstr ""
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
-msgid  "Report..."
-msgstr ""
+msgstr "फारम विजार्ड..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "प्रतिवेदन विजार्ड...."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
 msgid  "Select All"
-msgstr ""
+msgstr "सबै चयन गर्नुहोस्"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
 msgid  "~Database"
-msgstr ""
+msgstr "डाटाबेस"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
 msgid  "Properties..."
-msgstr ""
+msgstr "गुणहरू"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
 msgid  "Connection Type..."
-msgstr ""
+msgstr "जडान प्रकार"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
 msgid  "Advanced Settings..."
-msgstr ""
+msgstr "उच्चस्तरिय सेटिङहरू"
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
 msgid  "Do you want to delete the data source '%1'?"
-msgstr ""
+msgstr "के तपाईँ डेटा स्रोत '%1' लाई मेट्न चाहनुहुन्छ ?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base"
-msgstr ""
+msgstr "- %PRODUCTNAME आधार"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "विजार्डले तपाईँलाई प्रतिवेदन सिर्जना गर्ने आवश्यक माध्ययमका चरणहरूमा मार्गदर्शन गर्नेछ ।"
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "रेकर्ड स्रोत, नियन्त्रणहरू र नियन्त्रण गुणहरू निर्दृश्ट गर्दै एउटा फारम सिर्जना गर्नुहोस् ।"
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "रेकर्ड स्रोत, नियन्त्रण र नियन्त्रण गुण निर्दिष्ट गरेर प्रतिवेदन सिर्जना गर्नुहोस् ।"
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "विजार्डले तपाईँलाई फारम सिर्जना गर्ने आवश्यक चरणहरूमा मार्गदर्शन गर्नेछ ।"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "फिल्टरहरू, आगत तालिकाहरू, फाँटनामहरू र क्रमबद्धताका लागि गुणहरू वा समूहहरू निर्दिष्ट गरेर एउटा क्वेरी सिर्जना गर्नुहोस ।"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "एउटा SQL कथन सिधै प्रविष्ट गरेर एउटा क्वेरी सिर्जना गर्नुहोस् ।"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "विजार्डले तपाईँलाई क्वेरी सिर्जना गर्ने आवश्यक चरणहरूबाट मार्गदर्शन गर्नेछ ।"
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "डेटा प्रकारहरूको साथसाथै, फाँट नामहरू र गुणहरू निर्दिष्ट गरेर एउटा तालिका सिर्जना गर्नुहोस् ।"
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "व्यवसायको चयन र व्यक्तिगत तालिका नमूनाहरूबाट रोज्नुहोस्, जसले तपाईँलाई एउटा तालिका अनुकूलन गर्दछ ।"
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "तपाईँले दृश्य गराउन चाहनु भएका तालिकाहरू र फाँटहरू निर्दिष्ट गरेर एउटा दृश्य सिर्जना गर्नुहोस् ।"
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
 msgid  "Opens the view wizard"
-msgstr ""
+msgstr "दृश्य विजार्ड खोल्दछ"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "डाटाबेस"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
 msgid  "Tasks"
-msgstr ""
+msgstr "कार्यहरू"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "वर्णन"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "पूर्वावलोकन"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
 msgid  "Disable Preview"
-msgstr ""
-
-#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "पूर्वावलोकन अक्षम पार्नुहोस्"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
 msgid  "None"
-msgstr ""
+msgstr "कुनै पनि होइन"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
 msgid  "Document Information"
-msgstr ""
+msgstr "कागजात सूचना"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
 msgid  "Document"
-msgstr ""
+msgstr "कागजात"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "फारम"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "प्रतिवेदन"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
 msgid  "F~orm name"
-msgstr ""
+msgstr "फारम नाम"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
 msgid  "~Report name"
-msgstr ""
+msgstr "प्रतिवेदन नाम"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
 msgid  "F~older name"
-msgstr ""
+msgstr "फोल्डर नाम"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
 msgid  "The document contains forms or reports with embedded macros."
@@ -925,295 +893,291 @@ msgstr ""
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
-
-#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "तालिका #"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 msgid  "Do you want to delete the selected data?"
-msgstr ""
+msgstr "के तपाईँले चयन गरिएको डेटा मेट्न चाहनुहुन्छ ?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
 msgid  "(filtered)"
-msgstr ""
+msgstr "(फिल्टर गरिएको)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "क्रमबद्धता मापदण्ड सेटिङ गर्दा त्रुटि"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "फिल्टर मापदण्ड सेटिङ गर्दा त्रुटि"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
 msgid  "Connection lost"
-msgstr ""
+msgstr "सम्पर्क हरायो"
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "क्वेरीहरू"
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "तालिकाहरू"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 msgid  "Edit ~Database File..."
-msgstr ""
+msgstr "डाटाबेस फाइल सम्पादन गर्नुहोस्..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
 msgid  "Registered databases ..."
-msgstr ""
+msgstr "दर्ता गरिएका डाटाबेसहरू ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
 msgid  "Disco~nnect"
-msgstr ""
+msgstr "जडान छुटाउनुहोस्"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
 msgid  "Confirm Deletion"
-msgstr ""
+msgstr "मेट्ने काम यकीन गर्नुहोस्"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
 msgid  "Do you want to delete the table '%1'?"
-msgstr ""
+msgstr "के तपाईँ तालिका '%1' मेट्न चाहनुहुन्छ ?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
 msgid  "The query already exists. Do you want to delete it?"
-msgstr ""
+msgstr "क्वेरी पहिले नै अवस्थित छ । के तपाईँ यसलाई मेट्न चाहनुहुन्छ ?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "डटाबेससँगको जडान नष्ट भयो । के तपाईँ पुन: जडान गर्न चाहनुहुन्छ ?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
 msgid  "Warnings encountered"
-msgstr ""
+msgstr "चेतावनी आइपर्यो"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "तालिकाहरू  पुन: प्राप्त गर्दा, डाटाबेस जडानद्वारा चेतावनीहरूको जानकारी गराइएको थियो ।"
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
 msgid  "Connecting to \"$name$\" ..."
-msgstr ""
+msgstr "\"$name$\" मा जडान गरिँदैछ ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
 msgid  "Loading query $name$ ..."
-msgstr ""
+msgstr "क्वेरी $name$ लोड गर्देछ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
 msgid  "Loading table $name$ ..."
-msgstr ""
+msgstr "तालिका $name$ लोड गरिँदै ..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
 msgid  "No table format could be found."
-msgstr ""
+msgstr "कुनै तालिका ढाँचा फेला पार्न सकिएन ।"
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
+msgstr "डेटा स्रोत\"$name$\" मा जडान स्थापित गर्न सकिएन ।"
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
 msgid  "Rebuild"
-msgstr ""
+msgstr "पुन: निर्माण गर्नुहोस्"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 msgid  "Column ~Format..."
-msgstr ""
+msgstr "स्तम्भ ढाँचा..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
 msgid  "Copy Column D~escription"
-msgstr ""
+msgstr "स्तम्भ वर्णन प्रतिलिपि बनाउनुहोस्"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
 msgid  "Table Format..."
-msgstr ""
+msgstr "तालिका ढाँचा..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
 msgid  "Row Height..."
-msgstr ""
+msgstr "पङ्क्ति उचाइ..."
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
 msgid  "Undo: Data Input"
-msgstr ""
+msgstr "डेटा आगत: पूर्वस्थितिमा फर्काउनुहोस्"
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 msgid  "Save current record"
-msgstr ""
+msgstr "हालको रेकर्ड बचत गर्नुहोस्"
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
 msgid  "Query #"
-msgstr ""
+msgstr "क्वेरी #"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
 msgid  "Table #"
-msgstr ""
+msgstr "तालिका #"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
 msgid  "View #"
-msgstr ""
+msgstr "# दृश्य"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name \"#\" already exists."
-msgstr ""
+msgstr "नाम \"#\" पहिले नै अवस्थित छ ।"
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
 msgid  "No matching column names were found."
-msgstr ""
+msgstr "कुनै पनि मिल्दा स्तम्भ नामहरू फेला परेन ।"
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
 msgid  "An error occurred. Do you want to continue copying?"
-msgstr ""
+msgstr "एउटा त्रुटि रहन गयो, के तपाईँ प्रतिलिपिलाई निरन्तरता दिन चाहनुहुन्छ ?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
 msgid  "Data source table view"
-msgstr ""
+msgstr "डेटा स्रोत तालिका दृश्य"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
 msgid  "Shows the selected table or query."
-msgstr ""
+msgstr "चयन गरिएको तालिका वा क्वेरी देखाउँछ ।"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
 msgid  "Table name"
-msgstr ""
+msgstr "तालिका नाम"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
 msgid  "Insert data"
-msgstr ""
+msgstr "डेटा घुसाउनुहोस्"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
 msgid  "Delete data"
-msgstr ""
+msgstr "डेटा मेट्नुहोस्"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
 msgid  "Modify data"
-msgstr ""
+msgstr "डेटा परिमार्जन गर्नुहोस्"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
 msgid  "Alter structure"
-msgstr ""
+msgstr "स्वरूप बदल्नुहोस्"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
 msgid  "Read data"
-msgstr ""
+msgstr "डेटा पढ्नुहोस्"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
 msgid  "Modify references"
-msgstr ""
+msgstr "सन्दर्भहरू परिमार्जन गर्नुहोस्"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
 msgid  "Drop structure"
-msgstr ""
+msgstr "स्वरूप छाड्नुहोस्"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "बद्ढो क्रममा क्रमबद्ध गर्नुहोस्"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
 msgid  "Sort Descending"
-msgstr ""
+msgstr "घट्दो क्रममा क्रमबद्ध गर्नुहोस्"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "SDBC ड्राईभर व्यावस्थापक (#servicename#) मा जडान गर्न सकिँदैन ।"
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 msgid  "A driver is not registered for the URL #connurl#."
-msgstr ""
+msgstr "ड्राईभर URL #connurl# का लागि दर्ता गरिएको छैन ।"
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
 msgid  "No connection could be established for the URL #connurl#."
-msgstr ""
+msgstr "URL #connurl# का लागि कुनै पनि जडान स्थापन गर्न सकिएन ।"
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "कृपया हालको सेटिङहरू जाँच गर्नुहोस्, उदाहरणका लागि प्रयोगकर्ता नाम र पासवर्ड ।"
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "सफलतापूर्वक जडान गरियो, तर डाटाबेस तालिकाहरूको बारेमा सूचना उपलब्ध छैन ।"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
 msgid  "All tables"
-msgstr ""
+msgstr "सबै तालिकाहरू"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
 msgid  "All views"
-msgstr ""
+msgstr "सबै दृश्यहरू"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
 msgid  "All tables and views"
-msgstr ""
+msgstr "सबै दृश्य र तालिकाहरू"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 msgid  "Modify SQL statement(s)"
-msgstr ""
+msgstr "परिमार्जन गरिएको SQL कथन(हरू)"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
 msgid  "Database files"
-msgstr ""
+msgstr "डाटाबेस फाइलहरू"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE:"
-msgstr ""
+msgstr "SYSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "~TRANSACTIONLOG:"
-msgstr ""
+msgstr "TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE:"
-msgstr ""
+msgstr "DATADEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
 msgid  "Database sizes"
-msgstr ""
+msgstr "डाटाबेस साइजहरू"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
 msgid  "S~ize (MB):"
-msgstr ""
+msgstr "साइज (मेगाबाइट):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
 msgid  "~Free memory space (MB):"
-msgstr ""
+msgstr "खाली स्मृति स्थान (मेगाबाइट):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
 msgid  "~Memory utilization (in %):"
-msgstr ""
+msgstr "स्मृति उपयोग (% मा):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
 msgid  "Database Statistics"
-msgstr ""
+msgstr "डाटाबेस तथ्याङ्क"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
 msgid  "Contains the system tables"
-msgstr ""
+msgstr "प्रणाली तालिकाहरूमा राख्दछ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
 msgid  "Contains information about transaction"
-msgstr ""
+msgstr "कारोवारको बारेमा सूचना राख्दछ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
 msgid  "Contains all data files"
-msgstr ""
+msgstr "सबै डेटा फाइलहरूका राख्दछ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
 msgid  "Total size of the database files"
-msgstr ""
+msgstr "डाटाबेस फाइलहरूको जम्मा साइज"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 msgid  "Currently available space before a new datadev file is created."
-msgstr ""
+msgstr "एउटा नयाँ डाटाबेस फाइल सिर्जना गर्नु भन्दा पहिले उपलब्ध खाली स्थान ।"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
 msgid  "Currently used memory"
-msgstr ""
+msgstr "हाल प्रयोग भएको स्मृति"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "सूचना प्रदर्शन गर्न सकिएन किनभने आवश्यक प्रणाली तालिकाहरूका लागि कुनै पहुँच अधिकारहरू अवस्थित छैन ।"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
 msgid  "~Database name"
@@ -1245,83 +1209,83 @@ msgstr ""
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
 msgid  "Tables"
-msgstr ""
+msgstr "तालिका"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
 msgid  "Queries"
-msgstr ""
+msgstr "क्वेरी"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
 msgid  "~Add"
-msgstr ""
+msgstr "थप्नुहोस्"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "बन्द गर्नुहोस्"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
 msgid  "Add Tables"
-msgstr ""
+msgstr "तालिकाहरू थप्नुहोस्"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
 msgid  "Add Table or Query"
-msgstr ""
+msgstr "तालिका वा क्वेरी थप्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "विकल्प"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 msgid  "Use SQL92 naming constraints"
-msgstr ""
+msgstr "SQL92 नामकरण अपवादहरू प्रयोग गर्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
 msgid  "Append the table alias name on SELECT statements"
-msgstr ""
+msgstr "SELECT कथनहरूमा तालिका उपनाम थप्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
 msgid  "Use keyword AS before table alias names"
-msgstr ""
+msgstr "तालिका उपनाम नामहरू अघि शब्दकुञ्जी AS प्रयोग गर्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 msgid  "Use Outer Join syntax '{OJ }'"
-msgstr ""
+msgstr "बाह्य गाँठो वाक्य संरचना प्रयोग गर्नुहोस् '{OJ }'"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
 msgid  "Ignore the privileges from the database driver"
-msgstr ""
+msgstr "डाटाबेस ड्राईभरबाट पाएका विशेष सुबिधाहरू वेवस्ता गर्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
 msgid  "Replace named parameters with '?'"
-msgstr ""
+msgstr "'?' सँग नामाङ्कित परामितिहरू बदल्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
 msgid  "Display version columns (when available)"
-msgstr ""
+msgstr "सस्करण स्तम्भहरू प्रदर्शन गर्नुहोस् (उपलब्ध हुँदा)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 msgid  "Use catalog name in SELECT statements"
-msgstr ""
+msgstr "SELECT कथनहरूमा कोटि नाम प्रयोग गर्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
 msgid  "Use schema name in SELECT statements"
-msgstr ""
+msgstr "SELECT कथनहरूमा स्कीमा नाम प्रयोग गर्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
 msgid  "Create index with ASC or DESC statement"
-msgstr ""
+msgstr "ASC वा DESC सँग अनुक्रमणिका सिर्जना गर्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
 msgid  "End text lines with CR+LF"
-msgstr ""
+msgstr "CR+LF सँग पाठ लाइनहरू समाप्त गर्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
 msgid  "Ignore currency field information"
-msgstr ""
+msgstr "मुद्रा फाँट जानकारी उपेक्षा गर्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
 msgid  "Form data input checks for required fields"
-msgstr ""
+msgstr "आवश्यक फाँटका लागि डेटा आगत जाँचहरू बनाउनुहोस्"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
 msgid  "Use ODBC conformant date/time literals"
@@ -1337,23 +1301,23 @@ msgstr ""
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Default"
-msgstr ""
+msgstr "पूर्वनिर्धारित"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Mixed"
-msgstr ""
+msgstr "मिश्रित"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "MS Access"
-msgstr ""
+msgstr "माइक्रोसफ्ट एक्सेस"
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
 msgid  "Comparison of Boolean values"
-msgstr ""
+msgstr "बुलियन मानहरूको तुलना"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
@@ -1361,83 +1325,83 @@ msgstr ""
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "सेटिङहरू"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
 msgid  "Re~trieve generated values"
-msgstr ""
+msgstr "उत्पन्न मानहरू पुन: प्राप्त गर्नुहोस्"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
 msgid  "~Auto-increment statement"
-msgstr ""
+msgstr "स्वत: बढ्ने कथन"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
 msgid  "~Query of generated values"
-msgstr ""
+msgstr "उत्पन्न मानहरूको क्वेरी"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
 msgid  "Generated Values"
-msgstr ""
+msgstr "उत्पन्न मानहरू"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 msgid  "Special Settings"
-msgstr ""
+msgstr "विशेष सेटिङ"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
-msgstr ""
+msgstr "उन्नत गुणहरू"
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the dBASE files"
-msgstr ""
+msgstr "dBASE फाइलहरूका लागि मार्ग"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the text files"
-msgstr ""
+msgstr "पाठ फाइलहरूका लागि मार्ग"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to the spreadsheet document"
-msgstr ""
+msgstr "स्प्रेडसिट कागजातका लागि मार्ग"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
 msgid  "Name of the ODBC data source on your system"
-msgstr ""
+msgstr "तपाईँको प्रणालीमा ODBC डेटा स्रोतको नाम"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the MySQL database"
-msgstr ""
+msgstr "MySQL डाटाबेसको नाम"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Oracle database"
-msgstr ""
+msgstr "ओर्याकल डाटाबेसको नाम"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Adabas D database"
-msgstr ""
+msgstr "Adabas D डाटाबेसको नाम"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
 msgid  "Microsoft Access database file"
-msgstr ""
+msgstr "माइक्रोसफ्ट पहुँच डाटाबेस फाइल"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "यो भन्दा बढी सेटिङहरू आवश्यक पर्दैन । जडानले काम गरिरहेको छ छैन जाँच गर्न , '%test' बटन क्लिक गर्नुहोस् ।"
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
 msgid  "Datasource URL"
-msgstr ""
+msgstr "डेटास्रोत यूआरएल"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "होस्टनाम"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
 msgid  "~Mozilla profile name"
-msgstr ""
+msgstr "मोजिला प्रोफाइल नाम"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
 msgid  "~Thunderbird profile name"
-msgstr ""
+msgstr "थन्डरबर्ड प्रोफाइल नाम"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 msgid  "Browse"
@@ -1445,19 +1409,19 @@ msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database name"
-msgstr ""
+msgstr "डाटाबेसको नाम"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 msgid  "Server"
-msgstr ""
+msgstr "सर्भर यूआरएल"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
 msgid  "Base ~DN"
-msgstr ""
+msgstr "आधार DN"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
 msgid  "~Port number"
-msgstr ""
+msgstr "पोर्ट नम्बर"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 msgid  "Data conversion"
@@ -1469,43 +1433,43 @@ msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "तपाईँले पहुँच गर्न चाहनु भएको फाइलहरूको प्रकार निर्दिष्ट गर्नुहोस्"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
 msgid  "Plain text files (*.txt)"
-msgstr ""
+msgstr "सादा पाठ फाइलहरू (*.txt)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 msgid  "'Comma separated value' files (*.csv)"
-msgstr ""
+msgstr "'अल्पविराम एकत्रित मान' फाइलहरू (*.csv)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
 msgid  "Custom:"
-msgstr ""
+msgstr "अनुकूल:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Custom: *.abc"
-msgstr ""
+msgstr "अनुकूल: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
 msgid  "Row Format"
-msgstr ""
+msgstr "पङ्क्ति ढाँचा"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Field separator"
-msgstr ""
+msgstr "फाँट विभाजक"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Text separator"
-msgstr ""
+msgstr "पाठ विभाजक"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Decimal separator"
-msgstr ""
+msgstr "दशमलब विभाजक"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Thousands separator"
-msgstr ""
+msgstr "हजार विभाजक"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
 msgid  "~Text contains headers"
@@ -1513,23 +1477,19 @@ msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
 msgid  "{None}"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ""
+msgstr "{None}"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 msgid  "#1 must be set."
-msgstr ""
+msgstr "#1 सेट हुनै पर्दछ ।"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
 msgid  "#1 and #2 must be different."
-msgstr ""
+msgstr "#1 र #2 फरक हुनै पर्दछ ।"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
 msgid  "Wildcards such as ?,* are not allowed in #1."
-msgstr ""
+msgstr "जस्तै ? वाईल्डकार्डहरू ,#1 मा *लाई अनुमति छैन ।"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "JDBC d~river class"
@@ -1545,195 +1505,187 @@ msgstr ""
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
 msgid  "Save"
-msgstr ""
+msgstr "बचत गर्नुहोस्"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Create New Directory"
-msgstr ""
+msgstr "Create New Directory"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Up One Level"
-msgstr ""
+msgstr "Up One Level"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
 msgid  "File ~name:"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "फाइल नाम:"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
 msgid  "~Path:"
-msgstr ""
+msgstr "मार्ग:"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
 msgid  "Folder"
-msgstr ""
+msgstr "फोल्डर"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "फाइल पहिले नै अवस्थित छ । अधिलेखन गर्नुहुन्छ ?"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "General"
-msgstr ""
+msgstr "साधारण"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
-msgstr ""
+msgstr "होस्टनाम"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
-msgstr ""
+msgstr "प्रयोगकर्ता प्रमाणीकरण"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "प्रयोगकर्ता नाम"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
 msgid  "Password required"
-msgstr ""
+msgstr "पासवर्ड आवश्यक छ"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "JDBC properties"
-msgstr ""
+msgstr "JDBC गुणहरू"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "~JDBC driver class"
-msgstr ""
+msgstr "JDBC ड्राईभर कक्ष"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test Class"
-msgstr ""
+msgstr "परीक्षण कक्ष"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "Test Connection"
-msgstr ""
+msgstr "परीक्षण जडान"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
 msgid  "No Adabas D data sources were found on your system."
-msgstr ""
+msgstr "तपाईँको प्रणालीमा Adabas D डेटा स्रोतहरू फेला पार्न सकिएन ।"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
 msgid  "Connection Test"
-msgstr ""
+msgstr "जडान परीक्षण"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
 msgid  "The connection was established successfully."
-msgstr ""
+msgstr "जडान सफलता साथ स्थापना गरिएको थियो ।"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "जडान सफलता साथ स्थापना गर्न सकिएन ।"
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver was loaded successfully."
-msgstr ""
+msgstr "JDBC ड्राईभर सफलतापूर्वक लोड गरिएको थियो ।"
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
 msgid  "The JDBC driver could not be loaded."
-msgstr ""
+msgstr "JDBC ड्राईभर लोड गर्न सकिएन ।"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
 msgid  "MS Access file"
-msgstr ""
+msgstr "MS पहुँच फाइल"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
 msgid  "MS Access 2007 file"
-msgstr ""
+msgstr "माइक्रोसफ्ट एक्सेस २००७ फाइल"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
 msgid  "A password is needed to connect to the data source \"$name$\"."
-msgstr ""
+msgstr "डेटा स्रोत \"$name$\" मा जडान गर्नलाई एउटा पासवर्ड आवश्यक पर्दछ ।"
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "डाइरेक्टरी \n\n$path$\n\nअवस्थित छैन । यो सिर्जना गर्नुपर्छ ?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
 msgid  "The directory $name$ could not be created."
-msgstr ""
+msgstr "डाइरेक्टरी $name$ सिर्जना गर्न सकिएन ।"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
 msgid  "Convert Database"
-msgstr ""
+msgstr "डाटाबेस रूपान्तर गर्नुहोस्"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 msgid  "Please enter the ~password for the user 'DOMAIN'."
-msgstr ""
+msgstr "'DOMAIN' प्रयोगकर्ताका लागि पासवर्ड प्रविष्ट गर्नुहोस ।"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
 msgid  "Tables Filter"
-msgstr ""
+msgstr "तालिकाहरू फिल्टर"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Tables and table filter"
-msgstr ""
+msgstr "तालिकाहरू र तालिका फिल्टरहरू"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Mark the tables that should be visible for the applications."
-msgstr ""
+msgstr "अनुप्रयोगहरूका लागि दृश्यात्मक हुनु पर्ने तालिकाहरू बनाउनुहोस ।"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
 msgid  "Database Wizard"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
-msgid  "Database Wizard"
-msgstr ""
+msgstr "डाटाबेस विजार्ड"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
 msgid  "Select database"
-msgstr ""
+msgstr "डाटाबेस चयन गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 msgid  "Set up dBASE connection"
-msgstr ""
+msgstr "dBASE जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
 msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "पाठ फाइलहरूमा एउटा जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
 msgid  "Set up Microsoft Access connection"
-msgstr ""
+msgstr "माइक्रोसफ्ट पहुँच जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
 msgid  "Set up LDAP connection"
-msgstr ""
+msgstr "LDAP जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
 msgid  "Set up Adabas D connection"
-msgstr ""
+msgstr "Adabas D जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
 msgid  "Set up ADO connection"
-msgstr ""
+msgstr "ADO जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
 msgid  "Set up JDBC connection"
-msgstr ""
+msgstr "JDBC जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
 msgid  "Set up Oracle database connection"
-msgstr ""
+msgstr "ओर्याकल डाटाबेस जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
 msgid  "Set up MySQL connection"
-msgstr ""
+msgstr "MySQL जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
 msgid  "Set up ODBC connection"
-msgstr ""
+msgstr "ODBC जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
 msgid  "Set up Spreadsheet connection"
-msgstr ""
+msgstr "स्प्रेडसिट जडान मिलाएर राख्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
 msgid  "Set up user authentication"
-msgstr ""
+msgstr "प्रयोगकर्ता प्रमाणीकरण सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
 msgid  "Set up MySQL server data"
@@ -1741,31 +1693,31 @@ msgstr ""
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
 msgid  "Save and proceed"
-msgstr ""
+msgstr "बचत गर्नुहोस र प्रक्रिया गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
 msgid  "New Database"
-msgstr ""
+msgstr "नयाँ डाटाबेस"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to a MySQL database"
-msgstr ""
+msgstr "एउटा MySQL डाटाबेसमा एउटा जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "तपाईँले JDBC वा ODBC को प्रयोग गरेर MySQL डाटाबेस जडान गर्न सक्नुहुन्छ ।\nयदि तपाईँ तलका सेटिङहरूको बारेमा ढुक्क हुनुहुन्छ भने कृपया तपाईँ आफ्नो प्रणाली प्रशासकलाई सम्पर्क गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
 msgid  "How do you want to connect to your MySQL database?"
-msgstr ""
+msgstr "तपाईँको MySQL डाटाबेसमा कसरि जडान गर्न चाहनुहुन्छ ?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
 msgid  "Connect using ODBC (Open Database Connectivity)"
-msgstr ""
+msgstr "ODBC प्रयोग गरेर जडान गर्नुहोस् (डाटाबेस कनेक्टिभिटि खोल्नुहोस)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
 msgid  "Connect using JDBC (Java Database Connectivity)"
-msgstr ""
+msgstr "JDBC प्रयोग गरेर जडान गर्नुहोस् (जाभा डाटाबेस कनेक्टिभिटि)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
 msgid  "Connect directly"
@@ -1773,71 +1725,71 @@ msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up the user authentication"
-msgstr ""
+msgstr "प्रयोगकर्ताको प्रमाणीकरण सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "केही डाटाबेसहरूमा तपाईँले प्रयोगकर्ता नाम प्रविष्ट गर्नुपर्ने हुन्छ ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
-msgstr ""
+msgstr "प्रयोगकर्ता नाम"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "Password re~quired"
-msgstr ""
+msgstr "पासवर्ड आवश्यक"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "~Test Connection"
-msgstr ""
+msgstr "जडान परीक्षण गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
 msgid  "Decide how to proceed after saving the database"
-msgstr ""
+msgstr "डाटाबेस बचत गरेपछि कसरी प्रक्रिया गर्ने भन्ने कुरा निर्णय गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "के तपाईँले %PRODUCTNAME मा डाटाबेस दर्ता गर्नलाई विजार्ड चाहनुहुन्छ ?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "~Yes, register the database for me"
-msgstr ""
+msgstr "हो, मेरो लागि डाटाबेस दर्ता गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "N~o, do not register the database"
-msgstr ""
+msgstr "होइन, डाटाबेस दर्ता नगर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
 msgid  "After the database file has been saved, what do you want to do?"
-msgstr ""
+msgstr "डाटाबेस फाइल बचत भइसकेपछि, तपाईँ के गर्न चाहनुहुन्छ ?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 msgid  "Open the database for editing"
-msgstr ""
+msgstr "सम्पादनका लागि डाटाबेस खोल्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
 msgid  "Create tables using the table wizard"
-msgstr ""
+msgstr "तालिका विजार्ड प्रयोग गरेर तालिकाहरू सिर्जना गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
 msgid  "Click 'Finish' to save the database."
-msgstr ""
+msgstr "डाटाबेस बचत गर्नलाई 'समाप्ति' क्लिक गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up connection to a MySQL database using JDBC"
-msgstr ""
+msgstr "JDBC प्रयोग गरेर एउटा MySQL डाटाबेसमा जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC प्रयोग गरेर MySQL जडान गर्न आवश्यक सूचनाहरू प्रविष्ट गर्नुहोस् । याद राख्नुहोस् कि, %PRODUCTNAME सँग दर्ता गरेको JDBC ड्राईभर कक्ष तपाईँको प्रणालीमा स्थापना गर्नैपर्छ ।\nयदि तपाईँ तल दिएका सेटिङहरूका बारेमा विश्वस्त हुनुहुन्न भने तपाईँ आफ्नो प्रणाली प्रशासकलाई सम्पर्क गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "MySQL JDBC d~river class:"
-msgstr ""
+msgstr "मेरो SQL JDBC ड्राईभर कक्ष:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 msgid  "Default: 3306"
-msgstr ""
+msgstr "पूर्वनिर्धारित:३३०६"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
 msgid  "Set up connection to a MySQL database"
@@ -1849,115 +1801,111 @@ msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to dBASE files"
-msgstr ""
+msgstr "dBASE फाइलहरू जडानमा मिलाउनुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the dBASE files are stored."
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "dBASE फाइलहरू सङ्ग्रहण गरिएको ठाउँमा फोल्डर रोज्नुहोस ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "CSV (अल्पबिराम अलग्याइएका मानहरू) पाठ फाइलहरू सङ्ग्रहण गरिएको ठाउँबाट फोल्डर चयन गर्नुहोस् । यि फाइलहरूलाई %PRODUCTNAME आधारले पढ्ने-मात्रै मोडमा खोल्नेछ ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
 msgid  "Path to text files"
-msgstr ""
+msgstr "पाठ फाइलहरूमा जाने मार्ग"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a Microsoft Access database"
-msgstr ""
+msgstr "माइक्रोसफ्ट पहुँच् डाटाबेसमा जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "कृपया पहुँचलाई चाहेको माइक्रोसफ्ट पहुँच फाइल चयन गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to an LDAP directory"
-msgstr ""
+msgstr "LDAP डाइरेक्टरीमा जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "LDAP डाइरेक्टरीमा जडानका लागि आवश्यक पर्ने सूचनाहरू प्रविष्ट गर्नुहोस ।\nयदि तपाईँ तल दिएका सेटिङहरूका बारेमा विश्वस्त हुनुहुन्न भने तपाईँ आफ्नो प्रणाली प्रशासकलाई सम्पर्क गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
 msgid  "Default: 389"
-msgstr ""
+msgstr "पूर्वनिर्धारित: ३८९"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 msgid  "Use ~secure connection (SSL)"
-msgstr ""
+msgstr "(SSL)सुरक्षित जडान प्रयोग गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Adabas D database"
-msgstr ""
+msgstr "Adabas D डाटाबेसमा जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Adabas D डाटाबेसलाई जडान गर्न चाहनुहुन्छ भने एउटा नाम प्रविष्ट गर्नुहोस् ।\n पहिले नै %PRODUCTNAME मा दर्ता भइराखेको एउटा Adabas D डाटाबेस चयन गर्न 'ब्राउज...'मा क्लिक गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ADO database"
-msgstr ""
+msgstr "ADO डाटाबेसमा जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "तपाईँ ADO डाटाबेस स्रोत जडान गर्न चहनुहुन्छ भने URL प्रविष्ट गर्नुहोस ।\nउपयुक्त सेटिङहरू मिलाउने तरीका सर्भर लिन 'ब्राउज' क्लिक गर्नुहोस् ।\n।\nयदि तपाईँ तल दिएका सेटिङहरूका बारेमा विश्वस्त हुनुहुन्न भने तपाईँ आफ्नो प्रणाली प्रशासकलाई सम्पर्क गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ODBC database"
-msgstr ""
+msgstr "ODBC डाटाबेसमा जडान मिलाउनहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Adabas ODBC डाटाबेसलाई जडान गर्न चाहनुहुन्छ भने एउटा नाम प्रविष्ट गर्नुहोस् ।\nपहिल्यै %PRODUCTNAME मा दर्ता भईसकेको एउटा ODBC डाटाबेस चयन गर्नलाई 'ब्राउज गर्नुहोस्...' क्लिक गर्नुहोस ।\nयदि तपाईँ तल दिएका सेटिङहरूका बारेमा ढुक्क हुनुहुन्न भने कृपया तपाईँको प्रणाली प्रशासकलाई सम्पर्क गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a JDBC database"
-msgstr ""
+msgstr "एउटा JDBC डाटाबेसमा जडान सेटअप गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC डाटाबेसमा जडानका लागि आवश्यक पर्ने सूचनाहरू प्रविष्ट गर्नुहोस ।\nयदि तपाईँ निम्न सेटिङहरूका बारेमा बिश्वस्त हुनुहुन्न भने तपाईँ आफ्नो प्रणाली प्रशासकलाई सम्पर्क गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an Oracle database"
-msgstr ""
+msgstr "एउटा ओर्याकल डाटाबेसमा एउटा जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
 msgid  "Default: 1521"
-msgstr ""
+msgstr "पूर्वनिर्धारित:१५२१"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
 msgid  "Oracle JDBC ~driver class"
-msgstr ""
+msgstr "ओर्याकल JDBC ड्राईभर कक्ष"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ओर्याकल डाटाबेसमा जडानका लागि आवश्यक पर्ने सूचनाहरू प्रविष्ट गर्नुहोस । याद गर्नुहोस्, JDBC ड्राइभर कक्ष तपाईँको प्रणालीमा स्थापना भएकै हुनु पर्दछ र %PRODUCTNAME सँग दर्ता गरेको हुनुपर्दछ ।\nयदि तपाईँ निम्न सेटिङहरूका बारेमा बिश्वस्त हुनुहुन्न भने कृपया तपाईँ आफ्नो प्रणाली प्रशासकलाई सम्पर्क गर्नुहोस् ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to spreadsheets"
-msgstr ""
+msgstr "स्प्रेडसिटहरूमा एउटा जडान सेटअप गर्नुहोस्"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr " %PRODUCTNAME स्प्रेडसिट वा माइक्रोसफ्ट एक्सेल कार्यपुस्तिकालाई चयन गर्नलाई 'ब्राउज...' क्लिक गर्नुहोस् ।\nयो फाइल %PRODUCTNAME ले पढ्ने-मात्र मोडमा यो फाइल खोल्ने छ ।"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
 msgid  "~Location and file name"
-msgstr ""
+msgstr "स्थान र फाइल नाम"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "~Password required"
-msgstr ""
+msgstr "पासवर्ड आवश्यक"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
 msgid  "Use catalog for file-based databases"
-msgstr ""
+msgstr "फाइलमा आधारित डाटाबेसहरूका लागि कोटि प्रयोग गर्नुहोस्"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Connection Settings"
@@ -1973,155 +1921,143 @@ msgstr ""
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
 msgid  "Advanced Properties"
-msgstr ""
+msgstr "उन्नत गुणहरू"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
 msgid  "Additional Settings"
-msgstr ""
+msgstr "थप सेटिङहरू"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
 msgid  "Connection settings"
-msgstr ""
+msgstr "जडान सेटिङहरू"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
 msgid  "Database properties"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
-msgid  "Database properties"
-msgstr ""
+msgstr "डाटाबेस गुणहरू"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr ""
+msgstr "%PRODUCTNAME डाटाबेस विजार्डमा स्वागत"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "एउटा नयाँ डाटाबेस सिर्जना गर्नलाई डाटाबेस विजार्ड प्रयोग गर्नुहोस, अवस्थित फाइल खोल्नुहोस वा सर्भरमा सङ्ग्रहित एउटा डाटाबेसमा जडान गर्नुहोस ।"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
 msgid  "What do you want to do?"
-msgstr ""
+msgstr "तपाईँ के गर्न चाहनुहुन्छ ?"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
 msgid  "Create a n~ew database"
-msgstr ""
+msgstr "एउटा नयाँ डाटाबेस सिर्जना गर्नुहोस्"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
 msgid  "Open an existing database ~file"
-msgstr ""
+msgstr "एउटा अवस्थित डाटाबेस फाइल खोल्नुहोस"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
 msgid  "Recently used"
-msgstr ""
+msgstr "हालै प्रयोग गरिएको"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
 msgid  "Connect to an e~xisting database"
-msgstr ""
+msgstr "एउटा अवस्थित डाटाबेसमा जडान गर्नुहोस् ।"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "तपाईँले एउटा जडान स्थापित गर्न चाहेको डाटाबेसको प्रकार चयन गर्नुहोस् ।"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
 msgid  "Database ~type "
-msgstr ""
+msgstr "डाटाबेस प्रकार"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Database"
-msgstr ""
+msgstr "डाटाबेस"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "निम्न पृष्ठहरूमा, जडानका लागि तपाईँले विस्तृत सेटिङहरू गर्न सक्नुहुन्छ ।\n\nतपाईँले बनाउने नयाँ सेटिङहरूले अवस्थित सेटिङहरू अधिलेखन गर्दछ ।"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
 msgid  "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
 msgid  "Data Source Properties: #"
-msgstr ""
+msgstr "डेटा स्रोतका गुणहरू: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "कार्यक्रम लाइब्रेरी  #lib# लोड गर्न सकेन वा यो बिग्रिएको छ । ODBC डेटा स्रोत छनोट उपलब्ध छैन । "
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "यो मञ्चमा यो प्रकारको डेटा स्रोत समर्थन गरिदैन ।\nतपाईँलाई सेटिङहरू बदल्ने अनुमति छ, तर तपाईँले सम्भवत डाटाबेसमा जडान गर्न सक्नुहुने छैन ।"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "साधारण"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional settings"
-msgstr ""
+msgstr "वैकल्पिक सेटिङहरू"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
 msgid  "Display deleted records as well"
-msgstr ""
+msgstr "मेटिएका रेकर्डहरू समेत प्रदर्शन गर्नुहोस्"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "द्रष्टव्य: मेटिए पछि यो निस्क्रिय हुन्छ, रेकर्डहरू प्रदर्शन हुन्छन् र तपाईँले डेटा स्रोतबाट रेकर्डहरू मेट्न सक्नुहुन्न ।"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
 msgid  "Indexes..."
-msgstr ""
+msgstr "अनुक्रमणिकाहरू..."
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional Settings"
-msgstr ""
+msgstr "वैकल्पिक सेटिङहरू"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "ODBC ~options"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr ""
+msgstr "ODBC विकल्प"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "डेटा बफर साइज (मेगाबाइट)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
 msgid  "~Data increment (MB)"
-msgstr ""
+msgstr "डेटा बढोत्तरी (मेगाबाइट)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "Administration"
-msgstr ""
+msgstr "प्रशासन"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
 msgid  "Control ~user name"
-msgstr ""
+msgstr "नियन्त्रण प्रयोगकर्ता नाम"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
 msgid  "Control ~password"
-msgstr ""
+msgstr "नियन्त्रण पासवर्ड"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME बन्द हुँदा सेवा बन्द गर्नुहोस्"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
 msgid  "E~xtended..."
-msgstr ""
+msgstr "विस्तारित..."
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "MySQL JDBC d~river class"
-msgstr ""
+msgstr "MySQL JDBC ड्राईभर कक्ष"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
-msgstr ""
+msgstr "परीक्षण कक्ष"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
 msgid  "User authentication"
@@ -2137,43 +2073,27 @@ msgstr ""
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
 msgid  "Oracle JDBC d~river class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
+msgstr "ओर्याकल JDBC ड्राईभर कक्ष"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
 msgid  "~Base DN"
-msgstr ""
+msgstr "आधार DN"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 msgid  "Use secure connection(SSL)"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "सुरक्षित जडान (SSL) प्रयोग गर्नुहोस्"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
 msgid  "Maximum number of ~records"
-msgstr ""
+msgstr "रेकर्डहरूको अधिकतम नम्बर"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Hostname"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "होस्टनाम"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
 msgid  "~Driver settings"
-msgstr ""
+msgstr "ड्राईभर सेटिङहरू"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
@@ -2181,479 +2101,431 @@ msgstr ""
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "अनुक्रमणिकाहरू"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
 msgid  "~Table"
-msgstr ""
+msgstr "तालिका"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
 msgid  "Assignment"
-msgstr ""
+msgstr "निर्दिष्टीकरण"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
 msgid  "T~able indexes"
-msgstr ""
+msgstr "तालिका अनुक्रमाणिकाहरू"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
 msgid  "~Free indexes"
-msgstr ""
+msgstr "स्वतन्त्र अनुक्रमाणिकाहरू"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL आदेश"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
 msgid  "Command to execute"
-msgstr ""
+msgstr "कार्यान्वयन गर्न आदेश"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
 msgid  "Execute"
-msgstr ""
+msgstr "कार्यान्वयन गर्नुहोस्"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
 msgid  "Previous commands"
-msgstr ""
+msgstr "अघिल्लो आदेशहरू"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
 msgid  "Status"
-msgstr ""
+msgstr "वस्तुस्थिति"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "बन्द गर्नुहोस्"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 msgid  "Execute SQL Statement"
-msgstr ""
+msgstr "SQLकथन कार्यान्वयन गर्नुहोस्"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
 msgid  "Command successfully executed."
-msgstr ""
+msgstr "आदेश सफलतापूर्वक कार्यान्वयन भयो ।"
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "डाटाबेसमा भएको जडान हरायो । यो संवाद बन्द हुनेछ ।"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
 msgid  "Field Format"
-msgstr ""
+msgstr "फाँट ढाँचा"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
 msgid  "Bac~k"
-msgstr ""
+msgstr "पछाडि"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "फन्ट"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
 msgid  "Format"
-msgstr ""
+msgstr "ढाँचा"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr ""
+msgstr "पङ्क्तिबद्धता"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 msgid  "Table Format"
-msgstr ""
+msgstr "तालिका ढाँचा"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
 msgid  "Save As"
-msgstr ""
+msgstr "यस रूपमा बचत गर्नुहोस्"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the object to be created:"
-msgstr ""
+msgstr "कृपया सिर्जना गर्नका लागि एउटा नाम प्रविष्ट गर्नुहोस ।"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
 msgid  "~Catalog"
-msgstr ""
+msgstr "कोटि"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
 msgid  "~Schema"
-msgstr ""
+msgstr "स्कीमा"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
 msgid  "~Table Name"
-msgstr ""
+msgstr "तालिका नाम"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
 msgid  "~Name of table view"
-msgstr ""
+msgstr "तालिका दृश्यको नाम"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
 msgid  "~Query name"
-msgstr ""
+msgstr "क्वेरी नाम"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
 msgid  "Rename to"
-msgstr ""
+msgstr "पुन: नामकरण गर्नुहोस्"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 msgid  "Insert as"
-msgstr ""
+msgstr "यस रूपमा घुसाउनुहोस्"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Height"
-msgstr ""
+msgstr "उचाइ"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 msgid  "~Automatic"
-msgstr ""
+msgstr "स्वचालित"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
 msgid  "Row Height"
-msgstr ""
+msgstr "पङ्क्ति उचाइ"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Width"
-msgstr ""
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "चौडाइ"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
 msgid  "Column Width"
-msgstr ""
+msgstr "स्तम्भ चौडाइ"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "डेटा स्रोत"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Choose a data source:"
-msgstr ""
+msgstr "एउटा डेटा स्रोत रोज्नुहोस्:"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
 msgid  "Organize..."
-msgstr ""
+msgstr "संयोजन गर्नुहोस्..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "सिर्जना गर्नुहोस्..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
 msgid  "Local Databases"
-msgstr ""
+msgstr "स्थानीय डाटाबेसहरू"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
 msgid  "Choose a database"
-msgstr ""
+msgstr "एउटा डाटाबेस रोज्नुहोस्"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
 msgid  "Indexes"
-msgstr ""
+msgstr "अनुक्रमणिकाहरू"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
 msgid  "New Index"
-msgstr ""
+msgstr "नयाँ अनुक्रमणिका"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
 msgid  "Delete Current Index"
-msgstr ""
+msgstr "चालु अनुक्रमणिका मेटाउनुहोस्"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
 msgid  "Rename Current Index"
-msgstr ""
+msgstr "चालु अनुक्रमणिकालाई पुन: नामकरण गर्नुहोस्"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
 msgid  "Save Current Index"
-msgstr ""
+msgstr "चालु अनुक्रमणिका बचत गर्नुहोस्"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 msgid  "Reset Current Index"
-msgstr ""
+msgstr "चालु अनुक्रमणिका रिसेट गर्नुहोस्"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
 msgid  "Index details"
-msgstr ""
+msgstr "अनुक्रमणिका विवरण"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
 msgid  "Index identifier:"
-msgstr ""
+msgstr "अनुक्रमणिका परिचायक:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
 msgid  "~Unique"
-msgstr ""
+msgstr "अद्वितिय"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
 msgid  "Fields"
-msgstr ""
+msgstr "फाँटहरू"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "बन्द गर्नुहोस्"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "अनुक्रम क्रमबद्धता"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
 msgid  "Index field"
-msgstr ""
+msgstr "अनुक्रमणिका फाँट"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "बढोत्तरी"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "घट्दो क्रम"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 msgid  "Do you really want to delete the index '$name$'?"
-msgstr ""
+msgstr "के तपाईँले साँच्चिकै अनुक्रमणिका '$name$' मेट्न चाहनुहुन्छ ?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
 msgid  "index"
-msgstr ""
+msgstr "अनुक्रमणिका"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
 msgid  "Save Index"
-msgstr ""
+msgstr "Save Index"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 msgid  "The index must contain at least one field."
-msgstr ""
+msgstr "अनुक्रमणिकामा कम्तिमा एउटा फाँट सम्मिलित हुनै पर्दछ ।"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
 msgid  "Exit Index Design"
-msgstr ""
+msgstr "Exit Index Design"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
 msgid  "Do you want to save the changes made to the current index?"
-msgstr ""
+msgstr "के तपाईँले अहिलेको अनुक्रमाणिकामा गरिएको परिवर्तनहरू बचत गर्न चाहनुहुन्छ?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There is already another index named \"$name$\"."
-msgstr ""
+msgstr "त्यहाँ पहिले नै अर्को \"$name$\" नाम गरेको अनुक्रमणिका छ ।"
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
 msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr ""
+msgstr "एउटा अनुक्रमणिका परिभाषामा, एकपटक भन्दा बढी कुनै तालिका स्तम्भ रहदैन । यद्यपी तपाईँले स्तम्भ \"$name$\" दुई पटक प्रविष्ट गर्नुभयो ।"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
 msgid  "~Parameters"
-msgstr ""
+msgstr "परामितिहरू"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
 msgid  "~Value"
-msgstr ""
+msgstr "मान"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
 msgid  "~Next"
-msgstr ""
+msgstr "अर्को"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 msgid  "Parameter Input"
-msgstr ""
+msgstr "परामिति आगत"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
-msgstr ""
+msgstr "\"$name$\" स्तम्भका लागि एउटा वैध मानमा प्रविष्टिलाई रूपान्तर गर्न सकिएन ।"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "उच्चस्तरिय फिल्टर"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "AND"
-msgstr ""
+msgstr "र"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "OR"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
-msgstr ""
+msgstr "वा"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "फाँट नाम"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
 msgid  "Condition"
-msgstr ""
+msgstr "अवस्था"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
 msgid  "Value"
-msgstr ""
+msgstr "मान"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "सञ्चालक"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
 msgid  "Criteria"
-msgstr ""
+msgstr "मापदण्ड"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "- none -"
-msgstr ""
+msgstr "- केही छैन -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
+msgstr "=;<>;<;<=;>;>=;उस्तै; फरक;शून्य; शून्य रहित"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
 msgid  "Sort Order"
-msgstr ""
+msgstr "अनुक्रम क्रमबद्धता"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "ascending"
-msgstr ""
+msgstr "बढोत्तरी"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
+msgstr "घट्दो क्रम"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "फाँट नाम"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 msgid  "and then"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
-msgid  "and then"
-msgstr ""
+msgstr "र त्यस पछि"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
 msgid  "Operator"
-msgstr ""
+msgstr "सञ्चालक"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
 msgid  "Order"
-msgstr ""
+msgstr "क्रम"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
 msgid  "Sort order"
-msgstr ""
+msgstr "अनुक्रम क्रमबद्धता"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<none>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
 msgid  "Relations"
-msgstr ""
+msgstr "सम्बन्धहरू"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "संलग्न तालिकाहरू"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "संलग्न फाँटहरू"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
 msgid  "Update options"
-msgstr ""
+msgstr "अद्यावधिक विकल्प"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~No action"
-msgstr ""
+msgstr "कार्यहरू छैन"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~Update cascade"
-msgstr ""
+msgstr "क्यासकेड अद्यावधिक गर्नुहोस्"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 msgid  "~Set null"
-msgstr ""
+msgstr "शून्य सेट गर्नुहोस्"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
 msgid  "Set ~default"
-msgstr ""
+msgstr "पूर्वनिर्धारित सेट गर्नुहोस्"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
 msgid  "Delete options"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "~No action"
-msgstr ""
+msgstr "विकल्प मेट्नुहोस्"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
 msgid  "Delete ~cascade"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
-msgstr ""
+msgstr "क्यासकेड मेट्नुहोस्"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Base"
-msgstr ""
+msgstr "%PRODUCTNAME आधार"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 msgid  "Details"
-msgstr ""
+msgstr "विवरण"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
 msgid  "Error ~list:"
-msgstr ""
+msgstr "त्रुटि सूची:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "~Description:"
-msgstr ""
+msgstr "वर्णन:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 msgid  "SQL Status"
-msgstr ""
+msgstr "SQLवस्तुस्थिति"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
 msgid  "Error code"
-msgstr ""
+msgstr "त्रुटि सङ्केत"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "यो त्रुटिका लागि एउटा निरन्तर कारण भनेको तपाईँको डाटाबेसको भाषाका लागि अनुपयुक्त क्यारेकटर सेट सेटिङ हो । सम्पादन गर्नुहोस - डाटाबेस - गुणहरू रोजेर सेटिङ जाँच गर्नुहोस ।"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "त्रुटि"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
 msgid  "Warning"
-msgstr ""
+msgstr "चेतावनी"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
 msgid  "Information"
-msgstr ""
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
-msgid  "Details"
-msgstr ""
+msgstr "सूचना"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 msgid  "Text Connection Settings"
@@ -2661,159 +2533,159 @@ msgstr ""
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
 msgid  "User Settings"
-msgstr ""
+msgstr "प्रयोगकर्ता सेटिङहरू"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
 msgid  "User administration"
-msgstr ""
+msgstr "प्रयोगकर्ता प्रशासन"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
 msgid  "User selection"
-msgstr ""
+msgstr "प्रयोगकर्ता चयन"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
 msgid  "Us~er:"
-msgstr ""
+msgstr "प्रयोगकर्ता:"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
 msgid  "~Add User..."
-msgstr ""
+msgstr "प्रयोगकर्ता थप्नुहोस्..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
 msgid  "Change ~Password..."
-msgstr ""
+msgstr "पासवर्ड परिवर्तन गर्नुहोस्..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
 msgid  "~Delete User..."
-msgstr ""
+msgstr "प्रयोगकर्ता मेट्नुहोस्..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
 msgid  "Access rights for selected user"
-msgstr ""
+msgstr "चयन गरिएको प्रयोकर्ताका लागि पहुँच अधिकारहरू"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 msgid  "Do you really want to delete the user?"
-msgstr ""
+msgstr "के तपाईँ प्रयोगकर्तालाई साच्चिकै मेट्न चाहनुहुन्छ ?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support user administration."
-msgstr ""
+msgstr "डाटाबेसले प्रयोगकर्ता प्रशासनलाई समर्थन गर्देन ।"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
 msgid  "User \"$name$:  $\""
-msgstr ""
+msgstr "प्रयोगकर्ता  \"$name$:  $\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
 msgid  "Old p~assword"
-msgstr ""
+msgstr "पुरानो पासवर्ड"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
 msgid  "~Password"
-msgstr ""
+msgstr "पासवर्ड"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 msgid  "~Confirm  password"
-msgstr ""
+msgstr "पासवर्ड यकीन गर्नुहोस्"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
 msgid  "Change Password"
-msgstr ""
+msgstr "पासवर्ड परिवर्तन गर्नुहोस्"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 msgid  "The passwords do not match. Please enter the password again."
-msgstr ""
+msgstr "यो पासवर्ड मिलेन । कृपया पासवर्ड फेरि प्रविष्ट गर्नुहोस् ।"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
 msgid  "Refresh"
-msgstr ""
+msgstr "ताजा पार्नुहोस्"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 msgid  "New ~View Design"
-msgstr ""
+msgstr "नयाँ दृश्य डिजाइन"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
 msgid  "New ~Table Design"
-msgstr ""
+msgstr "नयाँ तालिका डिजाइन"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
 msgid  "Query AutoPilot..."
-msgstr ""
+msgstr "अटो-पाइलट क्वेरी..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "New ~Query (Design View)"
-msgstr ""
+msgstr "नयाँ क्वेरी (डिजाइन दृश्य)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "~Edit Query"
-msgstr ""
+msgstr "क्वेरी सम्पादन गर्नुहोस्"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 msgid  "New Query (~SQL View)"
-msgstr ""
+msgstr "नयाँ क्वेरी (SQL दृश्य)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "सम्पादन गर्नुहोस्..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
 msgid  "Column ~Width..."
-msgstr ""
+msgstr "स्तम्भ चौडाइ...."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "विजार्ड प्रतिवेदन गर्नुहोस्..."
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
 msgid  "Form AutoPilot..."
-msgstr ""
+msgstr "फारम अटो-पाइलट...."
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
 msgid  "System"
-msgstr ""
+msgstr "प्रणाली"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
 msgid  "Error during creation"
-msgstr ""
+msgstr "सिर्जना गर्ने बेलाको त्रुटि"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "एउटा अनेपेक्षित त्रुटि रहन गयो । सञ्चालन अगाडि बढाउन सकिँदैन ।"
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
 msgid  "The document \"$file$\" could not be opened."
-msgstr ""
+msgstr "कागजात \"$file$\" खोल्न सकिएन ।"
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "यो तालिका मेटाउन सकिँदैन किनभने डाटाबेस जडानले यसलाई समर्थन गर्देन ।"
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "सबै"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
 msgid  "Undo:"
-msgstr ""
+msgstr "पूर्वस्थितिमा फर्काउनुहोस्:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 msgid  "Redo:"
-msgstr ""
+msgstr "रिडु गर्नुहोस:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
 msgid  "No corresponding column type could be found for column '#1'."
-msgstr ""
+msgstr "'#1' स्तम्भका लागि कुनै सम्बन्धित स्तम्भ प्रकार फेला पार्न सकिएन ।"
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "फाइल \"$file$\" अवस्थित छैन ।"
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr ""
+msgstr "डेटा स्रोतमा जडान गर्दा चेतावनीहरू देखापर्यो । तिनीहरूलाई हेर्न \"$buttontext$\" थिच्नुहोस् ।"
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "नाम '$#$' पहिल्यै अवस्थित छ ।\nकृपया अर्को नाम प्रविष्ट गर्नुहोस् ।"
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
@@ -2821,103 +2693,103 @@ msgstr ""
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
 msgid  "Apply columns"
-msgstr ""
+msgstr "स्तम्भहरू लागू गर्नुहोस्"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 msgid  "Type formatting"
-msgstr ""
+msgstr "ढाँचा टाइप गर्नुहोस्"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "निम्न फाँटहरू पहिलेनै प्राथमिक कुञ्जीहरूको रूपमा सेट गरिएका छन्:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
 msgid  "Assign columns"
-msgstr ""
+msgstr "स्तम्भहरू मानाङ्कन गर्नुहोस्"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 msgid  "Copy RTF Table"
-msgstr ""
+msgstr "आरटीएफ तालिका प्रतिलिपि बनाउनुहोस्"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
-msgstr ""
+msgstr "मद्दत"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
 msgid  "~Cancel"
-msgstr ""
+msgstr "रद्द गर्नुहोस्"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 msgid  "< ~Back"
-msgstr ""
+msgstr "< पछाडि"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next>"
-msgstr ""
+msgstr "पछिल्लो>"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
 msgid  "C~reate"
-msgstr ""
+msgstr "सिर्जना गर्नुहोस्"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
 msgid  "Existing columns"
-msgstr ""
+msgstr "अवस्थित स्तम्भहरू"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
 msgid  "Column information"
-msgstr ""
+msgstr "स्तम्भ सूचना"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 msgid  "Automatic type recognition"
-msgstr ""
+msgstr "स्वचालित तरीकाले पहिचान"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
 msgid  "Lines (ma~x)"
-msgstr ""
+msgstr "रेखाहरू (अधिक)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "प्राथमिक कुञ्जी"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
 msgid  "Source table: \n"
-msgstr ""
+msgstr "स्रोत तालिका:\n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "गन्तव्य तालिका: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 msgid  "~All"
-msgstr ""
+msgstr "सबै"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
 msgid  "Non~e"
-msgstr ""
+msgstr "कुनै पनि होइन"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
 msgid  "Ta~ble name"
-msgstr ""
+msgstr "तालिका नाम"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "विकल्प"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
 msgid  "De~finition and data"
-msgstr ""
+msgstr "परिभाषा र डेटा"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
 msgid  "Def~inition"
-msgstr ""
+msgstr "परिभाषा"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
 msgid  "A~s table view"
-msgstr ""
+msgstr "तालिका दृश्यको रूपमा"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 msgid  "Append ~data"
-msgstr ""
+msgstr "डेटा थप्नुहोस्"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
@@ -2925,19 +2797,15 @@ msgstr ""
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
 msgid  "Crea~te primary key"
-msgstr ""
+msgstr "प्राथमिक कुञ्जी सिर्जना गर्नुहोस्"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
 msgid  "Name"
-msgstr ""
+msgstr "नाम"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 msgid  "Copy table"
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
-msgid  "Copy table"
-msgstr ""
+msgstr "तालिका प्रतिलिपि बनाउनुहोस्"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
 msgid  "This table name is not valid in the current database."
@@ -2945,7 +2813,7 @@ msgstr ""
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "एउटा अवस्थित तालिकामा डेटा थप्न पहिलो पृष्ठमा 'डेटा थप्नुहोस्' विकल्प रोज्नुहोस् ।"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
 msgid  "Please change the table name. It is too long."
@@ -2953,323 +2821,321 @@ msgstr ""
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr ""
+msgstr "विकल्प"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "प्रकार"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 msgid  "Inner join"
-msgstr ""
+msgstr "आन्तरिक जडान"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
 msgid  "Left join"
-msgstr ""
+msgstr "बायाँ जडान"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
 msgid  "Right join"
-msgstr ""
+msgstr "दायाँ जडान"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
 msgid  "Full (outer) join"
-msgstr ""
+msgstr "पूरा (बाह्यि) जडान"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
 msgid  "Cross join"
-msgstr ""
+msgstr "क्रस जोइन"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 msgid  "Natural"
-msgstr ""
+msgstr "प्राकृतिक"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
 msgid  "Tables involved"
-msgstr ""
+msgstr "संलग्न भएका तालिकाहरू"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
 msgid  "Fields involved"
-msgstr ""
+msgstr "संलग्न फाँटहरू"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
 msgid  "Join Properties"
-msgstr ""
+msgstr "जडान गुणहरू"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "कृपया, यो जडानद्वारा केही डाटाबेसहरू समर्थन गरिदैन भन्ने कुरा याद गर्नुहोस ।"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "उस्तै दुवै तालिकाहरूको सम्बन्धित फाँटहरूको सामग्रीका लागि रेकर्डहरू मात्र सम्मिलित गर्दछ ।"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "तालिका '%1' बाट सबै रेकर्डहरू सम्मिलित गर्दछ तर तालिका %2 बाट भने सम्बन्धित फाँटहरूमा मानहरू मिल्ने रेकर्डहरू मात्र सम्मिलित गर्दछ ।"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
 msgid  "Contains ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "%1 र ''%2' बाट सबै रेकर्ड सम्मिलित गर्दछ ।"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "'%1' र '%2' बाट सबै रेकर्डहरूको कार्टेसियन वस्तु समाविष्ट गर्दछ ।"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "'%1' र '%2' बाट बराबर नामकरण गरिएको हरेक जोडाका लागि एउटा स्तम्भ मात्र समाविष्ट गर्दछ ।"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
 msgid  "Add Table Window"
-msgstr ""
+msgstr "तालिका सञ्झ्याल थप्नुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
 msgid  "Move table window"
-msgstr ""
+msgstr "तालिका सञ्झ्याल सार्नुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 msgid  "Insert Join"
-msgstr ""
+msgstr "जडान घुसाउनुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
 msgid  "Delete Join"
-msgstr ""
+msgstr "जडान मेट्नुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
 msgid  "Resize table window"
-msgstr ""
+msgstr "तालिका सञ्झ्याल रिसाइज गर्नुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
 msgid  "Delete Column"
-msgstr ""
+msgstr "स्तम्भ मेट्नुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
 msgid  "Move column"
-msgstr ""
+msgstr "स्तम्भ सार्नुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
 msgid  "Add Column"
-msgstr ""
+msgstr "स्तम्भ थप्नुहोस्"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, table '$name$' does not exist."
-msgstr ""
+msgstr "अवैध अभिव्यक्ति, तालिका '$name$' अवस्थित छैन ।"
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr ""
+msgstr "अवैध अभिव्यक्ति फाँटनाम '$name$' अवस्थित छैन ।"
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "क्वेरीले #num# तालिका घेर्दछ । चयन गरिएका डाटाबेस प्रकार, यद्यपि, यसले प्रति विवरण अधिक्तम #maxnum# table(s) मात्र प्रक्रिया गर्न सक्छ ।"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
 msgid  "Delete Table Window"
-msgstr ""
+msgstr "सञ्याल तालिका मेट्नुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 msgid  "Edit Column Description"
-msgstr ""
+msgstr "स्तम्भ वर्णन सम्पादन गर्नुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
 msgid  "Adjust column width"
-msgstr ""
+msgstr "स्तम्भ चौडाइ समायोजन गर्नुहोस्"
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 msgid  "(not sorted);ascending;descending"
-msgstr ""
+msgstr "(क्रमबद्ध गरिएन); बढ्दो क्रम, घट्दो क्रम"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
 msgid  "(no function);Group"
-msgstr ""
+msgstr "(प्रकार्य छैन);समूह"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 msgid  "(no table)"
-msgstr ""
+msgstr "(तालिका छैन)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
 msgid  "The database only supports sorting for visible fields."
-msgstr ""
+msgstr "डाटाबेसले दृश्यात्मक फाँटहरूका लागि क्रमबद्धता मात्र समर्थन गर्दछ ।"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
 msgid  "Functions"
-msgstr ""
+msgstr "प्रकार्य"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
 msgid  "Table Name"
-msgstr ""
+msgstr "तालिका नाम"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
 msgid  "Alias"
-msgstr ""
+msgstr "उपनाम"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
 msgid  "Distinct Values"
-msgstr ""
+msgstr "विशिष्ट मानहरू"
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "फाँट; उपनाम; तालिका; क्रमबद्ध; दृश्यात्मक; कार्य; मापदण्ड; वा;वा"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
 msgid  "There are too many columns."
-msgstr ""
+msgstr "त्यहाँ निकै धेरै स्तम्भहरू छन् ।"
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "A condition cannot be applied to field [*]"
-msgstr ""
+msgstr " [*] फाँटलाई सर्त लागू गर्न सकिँदैन"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 msgid  "The SQL statement created is too long."
-msgstr ""
+msgstr "सिर्जना गरिएको SQL कथन निकै लामो भयो ।"
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
 msgid  "Query is too complex"
-msgstr ""
+msgstr "क्वेरी निकै जटिल छ"
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 msgid  "Nothing has been selected."
-msgstr ""
+msgstr "केही पनि चयन गरिएको छैन ।"
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
 msgid  "Too many search criteria"
-msgstr ""
+msgstr "अति धेरै खोजी मापदण्ड"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 msgid  "SQL syntax error"
-msgstr ""
+msgstr "SQL वाक्य संरचना त्रुटि"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
 msgid  "[*] cannot be used as a sort criterion."
-msgstr ""
+msgstr "[*] एउटा क्रम मापदण्डको रूपमा प्रयोग गर्न सकिँदैन ।"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
 msgid  "There are too many tables."
-msgstr ""
+msgstr "त्यहाँ अति धेरै तालिकाहरू छन् ।"
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "डाटाबेसको SQLडाइलेक्टमा क्वेरी गरेको बेलामा कथन लागू हुने छैन ।"
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
 msgid  "Field name not found or not unique"
-msgstr ""
+msgstr "फाँट नाम फेला परेन वा अद्वितिय होइन"
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
 msgid  "Join could not be processed"
-msgstr ""
+msgstr "जडान प्रक्रिया गर्न सकिएन"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 msgid  "Syntax error in SQL statement"
-msgstr ""
+msgstr "SQL कथनमा वाक्य संरचना त्रुटि"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support table views."
-msgstr ""
+msgstr "यो डाटाबेसले तालिका दृश्यहरू समर्थन गर्दैन ।"
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "यो डाटाबेसले अवस्थित तालिका दृश्यहरूको पुनरावृत्ति समर्थन गर्दैन ।"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
 msgid  "Do you want to create a query instead?"
-msgstr ""
+msgstr "सट्टामा तपाईँले क्वेरी सिर्जना गर्न चाहनुहुन्छ ?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
 msgid  "No query could be created."
-msgstr ""
+msgstr "कुनै क्वेरी सिर्जना गर्न सकिएन ।"
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
 msgid  "No query could be created because no fields were selected."
-msgstr ""
+msgstr "कुनै क्वेरी सिर्जना गर्न सकिएन किनकि कुनै फाँटहरू चयन गरिएको थिएन ।"
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "सम्बन्धित डेटा स्रोत मेटियो । त्यसकारण, डेटा स्रोतसँग सम्बन्धित डेटा बचत गर्न सकिँदैन ।"
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
 msgid  "The column '$name$' is unknown."
-msgstr ""
+msgstr "स्तम्भ '$name$' अज्ञात छ ।"
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
 msgid  "Columns can only be compared using '='."
-msgstr ""
+msgstr "स्तम्भहरू '=' प्रयोग गरेर मात्र तुलना गर्न सकिन्छ ।"
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
 msgid  "You must use a column name before 'LIKE'."
-msgstr ""
+msgstr "तपाईँले' LIKE' भन्दा पहिले एउटा स्तम्भ नाम प्रयोग गर्ने पर्दछ ।"
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "स्तम्भ फेला पार्न सकिएन । कृपया डाटाबेस संवेदनशिल छ भन्ने कुरा याद गर्नुहोस ।"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr ""
+msgstr " - %PRODUCTNAME आधार: क्वेरी डिजाइन"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: View Design"
-msgstr ""
+msgstr " - %PRODUCTNAME आधार: दृश्य डिजाइन"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ परिवर्तन गरियो ।\nतपाईँ परिवर्तनहरू बचत गर्न चाहनुहुन्छ ?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr ""
+msgstr "$object$ बनाउने SQL आदेश पद वर्णन गर्न सकिँदैन ।"
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr ""
+msgstr "$object$ SQL दृश्यमा खोलिनेछ ।"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
 msgid  "The table view"
-msgstr ""
+msgstr "तालिका दृश्य"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
 msgid  "The query"
-msgstr ""
+msgstr "क्वेरी"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
 msgid  "The SQL statement"
-msgstr ""
+msgstr "SQL विवरण"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "क्वेरीले नतीजा सेट सिर्जना गर्न सक्दैन, र अर्को क्वेरीको भाग बन्न सक्दैन ।"
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "दुवै सक्रिय जडान र डेटा स्रोत नाम परिमिति हराइरहेको छ वा गलत छ - क्वेरी डिजाइनर थालनी गर्न सकिँदैन ।"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "यो सम्बन्ध पहिल्यै अवस्थित छ । तपाईँ यसलाई सम्पादन गर्न चाहनुहुन्छ वा नयाँ एउटा सिर्जना गर्न चाहनुहुन्छ ?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "सम्पादन गर्नुहोस्..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "सिर्जना गर्नुहोस्..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Relation design"
-msgstr ""
+msgstr " - %PRODUCTNAME Base: सम्बन्ध डिजाइन"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
 msgid  "The database does not support relations."
-msgstr ""
-
-#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "डाटाबेसले सम्बन्धहरूलाई समर्थन गर्देन ।"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "तपाईँले यो तालिका मेटे अनुरूप सम्बन्धहरू पनि मेटिन्छन । जारी राख्नुहुन्छ ?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
@@ -3277,51 +3143,51 @@ msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "अज्ञात; पाठ; सङ्ख्या; मिति/समय; मिति; समय; हो/ होइन; मुद्रा; मेमो; गणक; छवि; पाठ(निश्चित); दशमलव; बाइनरी; बाइनरी (निश्चित); बाइनरी; ठूलो प्रविष्टि; डबल, उत्प्लाव; साँचो; ईन्टिजर; सानो ईन्टिजर,SQL नल, वस्तु; विशेष वस्तु; संरचना;फाँट, BLOB; CLOB;REF;OTHER"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
 msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "प्राथमिक कुञ्जी घुसाउनुहोस्/हटाउनुहोस्"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "हो"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
 msgid  "No"
-msgstr ""
+msgstr "होइन"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
 msgid  "Ascending"
-msgstr ""
+msgstr "बढ्दो क्रम"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
 msgid  "Descending"
-msgstr ""
+msgstr "घट्दो क्रम"
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<none>"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
 msgid  "Field name"
-msgstr ""
+msgstr "फाँट नाम"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
 msgid  "Field Name"
-msgstr ""
+msgstr "फाँट नाम"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
 msgid  "Field ~type"
-msgstr ""
+msgstr "फाँट प्रकार"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
 msgid  "Field Type"
-msgstr ""
+msgstr "फाँट प्रकार"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
 msgid  "Field length"
-msgstr ""
+msgstr "फाँट लम्बाइ"
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
 msgid  "Description"
@@ -3333,267 +3199,248 @@ msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
 msgid  "Input required"
-msgstr ""
+msgstr "आगत आवश्यक"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
 msgid  "~AutoValue"
-msgstr ""
+msgstr "स्वचालित मान"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
 msgid  "Field Properties"
-msgstr ""
+msgstr "फाँट गुणहरू"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "साधारण"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
 msgid  "Description:"
-msgstr ""
+msgstr "वर्णन:"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
 msgid  "Table properties"
-msgstr ""
+msgstr "तालिका गुणहरू"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
 msgid  "The text you entered is not a list element. "
-msgstr ""
+msgstr "तपाईँले प्रविष्ट गर्नु भएको पाठ सूची तत्व होइन ।"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
 msgid  "Insert Rows"
-msgstr ""
+msgstr "पङ्क्तिहरू घुसाउनुहोस्"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
 msgid  "Primary Key"
-msgstr ""
+msgstr "प्राथमिक कुञ्जी"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
 msgid  "Modify cell"
-msgstr ""
+msgstr "कक्ष परिमार्जन गर्नुहोस्"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
 msgid  "Delete row"
-msgstr ""
+msgstr "पङ्क्ति मेट्नुहोस्"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
 msgid  "Modify field type"
-msgstr ""
+msgstr "फाँट प्रकार परिमार्जन गर्नुहोस्"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
 msgid  "Insert row"
-msgstr ""
+msgstr "पङ्क्ति घुसाउनुहोस्"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
 msgid  "Insert new row"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "नयाँ पङ्क्ति घुसाउनुहोस्"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
 msgid  "~Default value"
-msgstr ""
+msgstr "पूर्वनिर्धारित मान"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
 msgid  "~Entry required"
-msgstr ""
+msgstr "आवश्यक प्रविष्टि"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "~Length"
-msgstr ""
+msgstr "लम्बाइ"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
-msgid  "~Length"
-msgstr ""
+msgstr "प्रकार"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
 msgid  "Decimal ~places"
-msgstr ""
+msgstr "दशमलव स्थानहरू"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
 msgid  "Format example"
-msgstr ""
+msgstr "उदाहरण ढाँचाबद्ध गर्नुहोस्"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "पूर्वनिर्धारित रूपमा सबै नयाँ रेकर्डहरूमा देखाउनु पर्ने एउटा मान चयन गर्नुहोस् \nयदि फाँटमा पूर्वनिर्धारित मान छैन भने, खाली स्ट्रिङ चयन गर्नुहोस् ।"
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "यो फाँटका लागि पूर्वनिर्धारित मान प्रविष्ट गर्नुहोस् ।\n\nजब तपाईँले तालिकामा डेटा प्रविष्ट गर्नु हुन्छ, यो रेकर्ड चयन गरिएको हरेक नयाँ रेकर्डका लागि प्रयोग हुनेछ । त्यसका लागि, तल प्रविष्ट हुनु पर्ने कक्ष ढाँचासँग सम्बन्ध कायम गर्नु पर्दछ ।"
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "यदि फाँटमा NULL मानहरू सम्मिलित गर्न नसकेमा यो विकल्प सक्रिय पार्नुहोस, जस्तै: प्रयोगकर्ताले डेटा प्रविष्ट गर्नु पर्दछ ।"
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
 msgid  "Enter the maximum text length permitted."
-msgstr ""
+msgstr "अनुमति दिएको अधिक्तम पाठ लम्बाइ प्रविष्टि गर्नुहोस् ।"
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
 msgid  "Enter the number format."
-msgstr ""
+msgstr "सङ्ख्या ढाँचा प्रविष्ट गर्नुहोस् ।"
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "यो फाँटमा हुन सक्ने डेटाको लम्बाइ निर्धारण गर्नुहोस् ।\n\nयदि दशमलव फाँटहरू भए, सङ्ख्याको अधिकतम लम्बाइ प्रविष्ट गर्नुपर्छ, यदि बाइनरी फाँटहरू भएमा, त्यसपछि डेटा खण्डको लम्बाइ प्रविष्ट गर्नुपर्छ । डाटाबेसको यो अधिकतम बिस्तार भएमा त्यस अनुरूप मान सुधार गरिनेछ ।"
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "यो फाँटमा अनुमति प्राप्त दशमलव स्थानहरूको नम्बर निर्दिष्ट गर्नुहोस् ।"
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "यो तपाईँ डेटा ढाँचा कसरी प्रदर्शन गरिने छ भन्ने स्थान हो । (ढाँचा परिवर्तन गर्नलाई दायाँको बटन प्रयोग गर्नुहोस्) ।"
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "यो तपाईँले डेटाको निर्गत ढाँचा निर्धारण गरेको स्थान हो ।"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "यदि यो फाटमा स्चालितवृद्धि मानहरू सम्मिलित गर्नुपर्छ कि भन्ने कुरा रोज्नुहोस् ।\n\nतपाईँले यो प्रकारका फाँटहरूमा डेटा प्रविष्ट गर्न सक्नुहुन्न । प्रत्येक नयाँ रेकर्डमा एउटा ईन्ट्रिजिक मानले स्वचालित तरीकाले मानाङ्कन हुनेछ (पहिलेको रेकर्डको वृद्विको नतिजा) ।"
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr "..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
-msgstr ""
+msgstr "यो तालिका बचत गर्न सकिँदैन किनभने स्तम्भ नाम \"$column$\" दुई पटक मानाङ्कन गरियो ।"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgstr "स्तम्भ \"$column$\" प्राथमिक कुञ्जीसँग सम्बन्धित छ । यदि स्तम्भ मेटिएमा, प्राथमिक कुञ्जी पनि मेटिने छ । के तपाईँ साच्चिकै जारी राख्न चाहनुहुन्छ ?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
 msgid  "Primary Key Affected"
-msgstr ""
+msgstr "प्रभावित प्राथमिक कुञ्जी"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
 msgid  "Column"
-msgstr ""
+msgstr "स्तम्भ"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
 msgid  "Continue anyway?"
-msgstr ""
+msgstr "जसरि भए पनि निरन्तर गर्नुहुन्छ ?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "चेतावनी !"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "डाटाबेसमा जडान गर्दा हुने समस्याको कारणले तालिका बचत गर्न सकिँदैन ।"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
-
-#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "डेटा स्रोत मेटिएको कारणले गर्दा तालिका फिल्टर समायोजन गर्न सकिएन ।"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
 msgid  "No primary key"
-msgstr ""
+msgstr "कुनै प्राथमिक कुञ्जी छैन"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "यो डाटाबेसमा डेटा रेकर्डका लागि एउटा अद्वितिय अनुक्रमणिका वा प्राथमिक कुञ्जीको आवश्यकता पर्दछ ।\nतपाईँले यि दुई संरचनात्मक शर्तहरू मध्ये एउटा मिलेपछि मात्र यो तालिका भित्र डेटा प्रविष्ट गर्न सक्नुहुन्छ ।\n\nके अब प्राथमिक कुञ्जीको सिर्जना गरिनु पर्दछ ?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Table Design"
-msgstr ""
+msgstr " - %PRODUCTNAME आधार: तालिका डिजाइन"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgstr "\"$column$\" स्तम्भ परिवर्तन गर्न सकिएन । के सट्टामा स्तम्भ मेट्ने र नयाँ ढाँचा संलग्न गर्नुपर्छ ?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
 msgid  "Error while saving the table design"
-msgstr ""
+msgstr "तालिका डिजाइन बचत गर्दा त्रुटि"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
 msgid  "The column $column$ could not be deleted."
-msgstr ""
+msgstr "स्तम्भ $column$ मेट्न सकिएन ।"
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "तपाईँ तालिकामा भएका सबै मेट्ने कोशिस गरि रहनुभएको छ । स्तम्भहरू बिना एउटा पनि तालिका अवस्थित हुन सक्दैन । के डाटाबेसबाट तालिका हटाउनु पर्दछ ? यदि होइन भने, तालिका अपरिवर्तित रहनेछ ।"
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "A~uto-increment statement"
-msgstr ""
+msgstr "स्वत: वृद्धि कथन"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "स्वत: वृद्धि फाँटका लागि एउटा SQL कथन प्रविष्ट गर्नुहोस् ।\n\nतालिका सिर्जना गरिए पछि यो कथनलाई सोझै डाटाबेसमा स्थानान्तरण गरिनेछ ।"
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "डाटाबेसबाट कुनै प्रकार सूचना पुन: प्राप्ति गर्न सकिएन ।\nयो डेटा स्रोतको तालिका डिजाइन मोड उपलब्ध छैन ।"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
 msgid  "change field name"
-msgstr ""
+msgstr "फाँटको नाम परिवर्तन गर्नुहोस्"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
 msgid  "change field type"
-msgstr ""
+msgstr "फाँट प्रकार परिवर्तन गर्नुहोस्"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "change field description"
-msgstr ""
+msgstr "फाँट विवरण परिवर्तन गर्नुहोस्"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
 msgid  "change field attribute"
-msgstr ""
+msgstr "फाँट विशेषता परिवर्तन गर्नुहोस्"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support views."
-msgstr ""
+msgstr "गन्तब्य डाटाबेसले दृश्यहरू समर्थन गर्दैन ।"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support primary keys."
-msgstr ""
+msgstr "गन्तब्य डाटाबेसले प्राथमिक कुञ्जीहरू समर्थन गर्दैन ।"
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "डेटा पहुँच वर्णनकर्ता फेला परेन, वा डेटा पहुँच वर्णनकर्ताले सबै आवश्यक जानकारी उपलब्ध गर्न सकेन"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
 msgid  "Only tables and queries are supported at the moment."
-msgstr ""
+msgstr "यस समयमा तालिका र क्वेरीहरू मात्र समर्थित छन् ।"
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "प्रतिलिपि स्रोतको नतीजा सेटले पुस्तकचिनो समर्थन गर्छ ।"
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "स्तम्भ स्थिति $pos$ मा असमर्थित स्रोत स्तम्भ प्रकार ($type$) ।"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
 msgid  "Illegal number of initialization parameters."
-msgstr ""
+msgstr "गैरकानूनी सङ्ख्यामा थालनी परिमितिहरू ।"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
 msgid  "An error occurred during initialization."
-msgstr ""
+msgstr "थालनी गर्दा एउटा त्रुटि देखापर्यो ।"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
 msgid  "Unsupported setting in the copy source descriptor: $name$."
@@ -3609,8 +3456,8 @@ msgstr ""
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
 msgid  "~Remember password until end of session"
-msgstr ""
+msgstr "सत्रको अन्तमा पासवर्ड सम्झनुहोस्"
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
 msgid  "~Remember password"
-msgstr ""
+msgstr "पासवर्ड सम्झनुहोस्"

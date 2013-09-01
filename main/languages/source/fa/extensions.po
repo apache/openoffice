@@ -32,12 +32,14 @@ msgstr ""
 
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Address Book Data Source Wizard"
-msgstr ""
+msgstr "راهنمای گام به گام منبع اطلاعات دفترچهٔ نشانی"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Address book type"
-msgstr ""
+msgstr "نام دفترچهٔ نشانی"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
@@ -48,6 +50,7 @@ msgid  "Table selection"
 msgstr ""
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
+#, fuzzy
 msgid  "Field Assignment"
 msgstr ""
 
@@ -60,12 +63,14 @@ msgid  "%PRODUCTNAME lets you access address data already present in your system
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Please select the type of your external address book:"
-msgstr ""
+msgstr "لطفاً نوع دفترچهٔ نشانی خارجی خود را انتخاب کنید:"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Evolution"
-msgstr ""
+msgstr "اوولوشن"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
 msgid  "Groupwise"
@@ -76,12 +81,14 @@ msgid  "Evolution LDAP"
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Mozilla / Netscape"
-msgstr ""
+msgstr "موزیلا / نت‌اسکیپ"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Thunderbird"
-msgstr ""
+msgstr "تاندربرد"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
 msgid  "KDE address book"
@@ -92,28 +99,33 @@ msgid  "Mac OS X address book"
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "LDAP address data"
-msgstr ""
+msgstr "اطلاعات نشانی LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Outlook address book"
-msgstr ""
+msgstr "دفترچهٔ نشانی آوت‌لوک"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Windows system address book"
-msgstr ""
+msgstr "دفترچهٔ نشانی سیستم ویندوز"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Other external data source"
-msgstr ""
+msgstr "منبع اطلاعات خارجی دیگر"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "تنظیمات"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
@@ -127,61 +139,63 @@ msgstr ""
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
 msgstr ""
 
-#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
-msgid  "Field Assignment"
-msgstr ""
-
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Location"
-msgstr ""
+msgstr "مکان"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
 msgstr ""
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr ""
+msgstr "این دفترچهٔ نشانی در همهٔ پیمانه‌های %PRODUCTNAME موجود باشد"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Address book name"
-msgstr ""
+msgstr "نام دفترچهٔ نشانی"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "منبع دادهٔ دیگری با همین نام از قبل وجود دارد. از آنجا که نام منابع داده باید در سراسر سیستم یکتا باشد، باید یک نام دیگر انتخاب کنید."
 
 #: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Please select a type of address book."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "لطفاً یکی از انواع دفترچهٔ نشانی را انتخاب کنید."
 
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Addresses"
-msgstr ""
+msgstr "نشانی‌ها"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Create Address Data Source"
-msgstr ""
+msgstr "ایجاد منبع اطلاعات نشانی"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "برقراری اتصال ممکن نیست."
 
 #: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
+#, fuzzy
 msgid  "Please check the settings made for the data source."
-msgstr ""
+msgstr "لطفاً تنظیمات انجام شده برای منبع اطلاعات را بررسی کنید."
 
 #: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Address Data - Field Assignment"
-msgstr ""
+msgstr "اطلاعات نشانی ‐ تخصیص فیلد"
 
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
@@ -220,26 +234,31 @@ msgid  "Choose Data Source"
 msgstr ""
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
+#, fuzzy
 msgid  "Entry"
-msgstr ""
+msgstr "مدخل"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
 msgid  "The following column names could not be assigned:\n"
 msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
+#, fuzzy
 msgid  "Article"
-msgstr ""
+msgstr "مقاله"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
+#, fuzzy
 msgid  "Book"
-msgstr ""
+msgstr "کتاب"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
+#, fuzzy
 msgid  "Brochures"
-msgstr ""
+msgstr "دفترک"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
+#, fuzzy
 msgid  "Conference proceedings"
 msgstr ""
 
@@ -251,21 +270,19 @@ msgstr ""
 msgid  "Book excerpt with title"
 msgstr ""
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
 msgid  "Journal"
 msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
+#, fuzzy
 msgid  "Techn. documentation"
-msgstr ""
+msgstr "مستندات فنی"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
+#, fuzzy
 msgid  "Thesis"
-msgstr ""
+msgstr "تز"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
 msgid  "Miscellaneous"
@@ -273,10 +290,6 @@ msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
 msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
@@ -288,8 +301,9 @@ msgid  "Unpublished"
 msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
+#, fuzzy
 msgid  "e-mail"
-msgstr ""
+msgstr "پست الکترونیکی"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
 msgid  "WWW document"
@@ -316,8 +330,9 @@ msgid  "User-defined5"
 msgstr ""
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "عمومی"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
 msgid  "Insert Section..."
@@ -336,32 +351,39 @@ msgid  "~Short name"
 msgstr ""
 
 #: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
+#, fuzzy
 msgid  "~Type"
-msgstr ""
+msgstr "~نوع"
 
 #: bibliography/sections.src#ST_YEAR.STRING.TEXT
+#, fuzzy
 msgid  "~Year"
-msgstr ""
+msgstr "~سال"
 
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
+#, fuzzy
 msgid  "Author(s)"
-msgstr ""
+msgstr "مؤلف(ها)"
 
 #: bibliography/sections.src#ST_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Tit~le"
-msgstr ""
+msgstr "~عنوان"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
+#, fuzzy
 msgid  "~Publisher"
-msgstr ""
+msgstr "نا~شر"
 
 #: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
+#, fuzzy
 msgid  "A~ddress"
-msgstr ""
+msgstr "~نشانی"
 
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
+#, fuzzy
 msgid  "~ISBN"
-msgstr ""
+msgstr "شاب~ک"
 
 #: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
 msgid  "~Chapter"
@@ -372,20 +394,23 @@ msgid  "Pa~ge(s)"
 msgstr ""
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
+#, fuzzy
 msgid  "Editor"
-msgstr ""
+msgstr "ویرایشگر"
 
 #: bibliography/sections.src#ST_EDITION.STRING.TEXT
+#, fuzzy
 msgid  "Ed~ition"
-msgstr ""
+msgstr "~ویرایش"
 
 #: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
 msgid  "~Book title"
 msgstr ""
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
+#, fuzzy
 msgid  "Volume"
-msgstr ""
+msgstr "جلد"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
@@ -400,8 +425,9 @@ msgid  "Instit~ution"
 msgstr ""
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
+#, fuzzy
 msgid  "University"
-msgstr ""
+msgstr "دانشگاه"
 
 #: bibliography/sections.src#ST_REPORT.STRING.TEXT
 msgid  "Type of re~port"
@@ -484,184 +510,216 @@ msgid  "Data Source"
 msgstr ""
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
-msgid  "Data"
-msgstr ""
+msgstr "داده‌ها"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
 msgstr ""
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data source:"
-msgstr ""
+msgstr "منبع ~داده‌ها:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Table / Query:"
-msgstr ""
+msgstr "~جدول / پرس و جو:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
+#, fuzzy
 msgid  "Database Field"
-msgstr ""
+msgstr "فیلد پایگاه‌داده"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Do you want to save the value in a database field?"
-msgstr ""
+msgstr "آیا می‌خواهید این مقدار را در فیلد پایگاه‌داده ذخیره کنید؟"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes, I want to save it in the following database field:"
-msgstr ""
+msgstr "~بله، مقدار باید در این فیلد پایگاه‌داده ذخیره شود:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No, I only want to save the value in the form."
-msgstr ""
+msgstr "~نه، مقدار فقط در فرم ذخیره شود."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Form"
-msgstr ""
+msgstr "فرم"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data source"
-msgstr ""
+msgstr "منبع داده‌ها"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Content type"
-msgstr ""
+msgstr "نوع محتویات"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Content"
-msgstr ""
+msgstr "محتویات"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "جدول"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Query"
-msgstr ""
+msgstr "پرس و جو"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
+#, fuzzy
 msgid  "SQL command"
-msgstr ""
+msgstr "فرمان SQL"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Group Element Wizard"
-msgstr ""
+msgstr "راهنمای گام به گام اجزای گروه"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Table Element Wizard"
-msgstr ""
+msgstr "راهنمای گام به گام اجزای جدول"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "List Box Wizard"
-msgstr ""
+msgstr "راهنمای گام به گام جعبهٔ فهرستی"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Combo Box Wizard"
-msgstr ""
+msgstr "راهنمای گام به گام جعبهٔ فهرستی با مدخل"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
+#, fuzzy
 msgid  "The table connection to the data source could not be established."
-msgstr ""
+msgstr "اتصال جدول با منبع داده برقرار نمی‌شود."
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
 msgid  "Field Selection"
 msgstr ""
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Table element"
-msgstr ""
+msgstr "جزء جدول"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
 msgstr ""
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Selected fields"
-msgstr ""
+msgstr "فیلدهای انتخاب شده"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
+#, fuzzy
 msgid  " (Date)"
-msgstr ""
+msgstr " (تاریخ)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
+#, fuzzy
 msgid  " (Time)"
-msgstr ""
+msgstr " (زمان)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "داده‌ها"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Which ~names do you want to give the option fields?"
-msgstr ""
+msgstr "برای فیلدهای گزینه ~چه نامی انتخاب می‌کنید؟"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Option fields"
 msgstr ""
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Default Field Selection"
-msgstr ""
+msgstr "انتخاب فیلد پیش‌فرض"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Should one option field be selected as a default?"
-msgstr ""
+msgstr "آیا یک فیلد گزینه به عنوان پیش‌فرض انتخاب شود؟"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes, the following:"
-msgstr ""
+msgstr "~بله، این فیلد:"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "No, one particular field is not going to be selected."
-msgstr ""
+msgstr "نه، فیلد خاصی انتخاب نشود."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
+#, fuzzy
 msgid  "Field Values"
-msgstr ""
+msgstr "مقادیر فیلدها"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "وقتی گزینه‌ای را انتخاب می‌کنید، مقدار مشخصی به گروه گزینه‌ها داده می‌شود."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Which ~value do you want to assign to each option?"
-msgstr ""
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
-msgid  "~Option fields"
-msgstr ""
+msgstr "برای ~هر گزینه چه مقداری تخصیص داده شود؟"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
+#, fuzzy
 msgid  "Create Option Group"
-msgstr ""
+msgstr "ایجاد گروه گزینه‌ها"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Which ~caption is to be given to your option group?"
-msgstr ""
+msgstr "برای گروه گزینه‌ها چه ~عنوانی انتخاب می‌کنید؟"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "These were all details needed to create the option group."
-msgstr ""
+msgstr "این جزئیات برای ایجاد گروه گزینه‌ها کافی است."
 
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
+#, fuzzy
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "می‌توانید مقدار گروه گزینه‌ها را در یک فیلد پایگاه‌داده ذخیره کنید یا آن را برای کار دیگری ذخیره کنید."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
+#, fuzzy
 msgid  "Table Selection"
-msgstr ""
+msgstr "انتخاب جدول"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Control"
-msgstr ""
+msgstr "کنترل"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
@@ -676,36 +734,44 @@ msgid  "Existing fields"
 msgstr ""
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Display field"
-msgstr ""
+msgstr "نمایش فیلد"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
+#, fuzzy
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "محتویات فیلد انتخاب شده در جعبهٔ فهرست مدخل‌دار نمایش داده خواهد شد."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
+#, fuzzy
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "اگر فیلدهای پیوند شده یکسان باشند، محتویات فیلد انتخاب شده در جعبهٔ فهرست نمایش داده خواهند شد."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
+#, fuzzy
 msgid  "Field Link"
-msgstr ""
+msgstr "پیوند فیلد"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "اینجا جایی است که فیلدهای دارای محتویات یکسان را انتخاب می‌کنید تا مقدار فیلد نمایش، نشان داده شود."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field from the ~Value Table"
-msgstr ""
+msgstr "فیلد از جدول م~قادیر"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field from the ~List Table"
-msgstr ""
+msgstr "فیلد از جدول ~فهرست"
 
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
+#, fuzzy
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "می‌توانید مقدار جعبهٔ فهرست مدخل‌دار را درفیلدی از  پایگاه‌داده ذخیره کنید یا آن را جایی نمایش دهید."
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
 msgid  "<< Back"
@@ -720,8 +786,9 @@ msgid  "Accept"
 msgstr ""
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
+#, fuzzy
 msgid  "Finish"
-msgstr ""
+msgstr "پایان"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
@@ -784,8 +851,9 @@ msgid  "Character"
 msgstr ""
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "قلم"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
 msgid  "Font Effects"
@@ -824,6 +892,7 @@ msgid  "Literal mask"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "Read-only"
 msgstr ""
 
@@ -860,28 +929,34 @@ msgid  "Thousands separator"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
+#, fuzzy
 msgid  "Printable"
-msgstr ""
+msgstr "چاپ"
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
+#, fuzzy
 msgid  "URL"
-msgstr ""
+msgstr "نشانی اینترنتی"
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Help text"
-msgstr ""
+msgstr "متن راهنما"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
+#, fuzzy
 msgid  "Help URL"
-msgstr ""
+msgstr "نشانی اینترنتی راهنما"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
+#, fuzzy
 msgid  "Additional information"
-msgstr ""
+msgstr "اطلاعات اضافی"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
 msgid  "Password character"
@@ -944,12 +1019,14 @@ msgid  "Graphics alignment"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "قلم"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Background color"
-msgstr ""
+msgstr "رنگ پس‌زمینه"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
 msgid  "Border"
@@ -1004,8 +1081,9 @@ msgid  "Multiselection"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "نام"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 msgid  "Tab order"
@@ -1199,10 +1277,6 @@ msgstr ""
 msgid  "Action"
 msgstr ""
 
-#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
-msgid  "URL"
-msgstr ""
-
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
 msgid  "Type of submission"
 msgstr ""
@@ -1231,10 +1305,6 @@ msgstr ""
 msgid  "Default time"
 msgstr ""
 
-#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
-msgid  "Frame"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
 msgid  "Without frame"
 msgstr ""
@@ -1244,6 +1314,7 @@ msgid  "3D look"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Flat"
 msgstr ""
 
@@ -1252,10 +1323,12 @@ msgid  "Valuelist"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Table"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Query"
 msgstr ""
 
@@ -1284,6 +1357,7 @@ msgid  "Right"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "None"
 msgstr ""
 
@@ -1343,15 +1417,12 @@ msgstr ""
 msgid  "Post"
 msgstr ""
 
-#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
-msgid  "URL"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
 msgid  "Multipart"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
+#, fuzzy
 msgid  "Text"
 msgstr ""
 
@@ -1444,6 +1515,7 @@ msgid  "Current page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
 msgstr ""
 
@@ -1453,10 +1525,6 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
 msgid  "Parent Form"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
-msgid  "None"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
@@ -1676,10 +1744,12 @@ msgid  "Orientation"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
+#, fuzzy
 msgid  "Horizontal"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
+#, fuzzy
 msgid  "Vertical"
 msgstr ""
 
@@ -1725,10 +1795,6 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
-msgid  "Text"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
@@ -1783,28 +1849,8 @@ msgstr ""
 msgid  "CR+LF (Windows)"
 msgstr ""
 
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
-msgid  "Horizontal"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
-msgid  "Vertical"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
 msgid  "Both"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
-msgid  "Table"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
-msgid  "Query"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
@@ -1829,10 +1875,6 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 msgid  "3D"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
-msgid  "Flat"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
@@ -1925,10 +1967,6 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
 msgid  "Relevant"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
-msgid  "Read-only"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
@@ -2039,10 +2077,6 @@ msgstr ""
 msgid  "No Label"
 msgstr ""
 
-#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
-msgid  "No"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
 msgid  "Keep Ratio"
 msgstr ""
@@ -2096,6 +2130,7 @@ msgid  "As Character"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "To Page"
 msgstr ""
 
@@ -2105,10 +2140,6 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
 msgid  "To Character"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
@@ -2324,44 +2355,52 @@ msgid  "Create\nPreview"
 msgstr ""
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "پیش‌نمایش"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
 msgid  "Scan area"
 msgstr ""
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Left:"
-msgstr ""
+msgstr "چپ:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Top:"
-msgstr ""
+msgstr "بالا:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Right:"
-msgstr ""
+msgstr "راست:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bottom:"
-msgstr ""
+msgstr "پایین:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Device used:"
-msgstr ""
+msgstr "دستگاه به کار رفته:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Resolution [~DPI]"
-msgstr ""
+msgstr "تف~کیک‌پذیری [DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
 msgid  "Show advanced options"
 msgstr ""
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Options:"
-msgstr ""
+msgstr "گزینه‌ها:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
 msgid  "Vector element"
@@ -2496,8 +2535,9 @@ msgid  "Description"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "بستن"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
 msgid  "~Download"
@@ -2516,10 +2556,12 @@ msgid  "~Resume"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
-msgstr ""
+msgstr "انصراف"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr ""
 
@@ -2527,16 +2569,9 @@ msgstr ""
 msgid  "Click here to start the download."
 msgstr ""
 
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
-
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
+#, fuzzy
 msgid  "Click here for more information."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
@@ -2559,10 +2594,6 @@ msgstr ""
 msgid  "Download of update stalled"
 msgstr ""
 
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
-
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Download of update completed"
 msgstr ""
@@ -2573,8 +2604,4 @@ msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
 msgid  "Updates for extensions available"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
-msgid  "Click here for more information."
 msgstr ""

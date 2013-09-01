@@ -33,3584 +33,4227 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
 msgid  "Tried to open the table $name$."
-msgstr ""
+msgstr "$name$ ಟೇಬಲನ್ನು ತೆರೆಯಲು ಪ್ರಯತ್ನಿಸಲಾಯಿತು."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
 msgid  "No connection could be established."
-msgstr ""
+msgstr "ಯಾವುದೆ ಸಂಪರ್ಕವನ್ನು ಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "$name$ ಟೇಬಲ್ ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ಅದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲಾಗಿದ್ದರಿಂದ ಅದು ಗೋಚರಿಸುತ್ತಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "ಆಬ್ಜೆಕ್ಟ್‍ ಯಾವುದರ ಮೇಲೆ ಆಧರಿತವಾಗಿದೆಯೋ ಆ ಸಂರಚನಾ ದತ್ತಾಂಶವನ್ನು ಮಾರ್ಪಡಿಸಲು ನಿಮ್ಮಲ್ಲಿ ಸೂಕ್ತ ಹಕ್ಕುಗಳಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "ಬಾಹ್ಯ ದತ್ತಾಂಶ ಆಕರದೊಂದಿಗೆ ಸಂಪರ್ಕ ಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಒಂದು ಅಜ್ಞಾತ ದೋಷವು ಸಂಭವಿಸಿದೆ. ಬಹುಷಃ ಚಾಲಕದಲ್ಲಿ ತೊಂದರೆ ಇರಬಹುದು."
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "ಬಾಹ್ಯ ದತ್ತಾಂಶ ಆಕರದೊಂದಿಗೆ ಸಂಪರ್ಕ ಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಒದಗಿಸಲಾದ URL ಗೆ ಯಾವುದೆ SDBC ಚಾಲಕವು ಕಂಡುಬಂದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "ಬಾಹ್ಯ ದತ್ತಾಂಶ ಆಕರದೊಂದಿಗೆ ಸಂಪರ್ಕ ಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. SDBC ಚಾಲಕ ನಿರ್ವಾಹಕವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "ಫಾರ್ಮ್"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "ವರದಿ"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "ದತ್ತಾಂಶ ಆಕರವನ್ನು ಉಳಿಸಲಾಗಿಲ್ಲ. ದತ್ತಾಂಶ ಮಾಹಿತಿಯನ್ನು ಉಳಿಸಲು ದಯವಿಟ್ಟು XStorable ಅನ್ನು ಬಳಸಿ."
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "ಒದಗಿಸಲಾದ ಆಜ್ಞೆಯು ಒಂದು SELECT ಹೇಳಿಕೆಯಾಗಿಲ್ಲ.\nಕೇವಲ ಮನವಿಗಳಿಗೆ ಮಾತ್ರ ಅನುಮತಿ ಇದೆ."
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
 msgid  "No values were modified."
-msgstr ""
+msgstr "ಯಾವುದೆ ಮೌಲ್ಯಗಳನ್ನು ಮಾರ್ಪಡಿಸಲಾಗಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "ಮೌಲ್ಯಗಳನ್ನು ಅಳವಡಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ResultSet ನಿಂದ XRowUpdate ಸಂಪರ್ಕಸಾಧನಕ್ಕೆ ಬೆಂಬಲವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "ಮೌಲ್ಯಗಳನ್ನು ಅಳವಡಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ResultSet ನಿಂದ XResultSetUpdate ಸಂಪರ್ಕಸಾಧನಕ್ಕೆ ಬೆಂಬಲವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
 msgid  "Values could not be modified, due to a missing condition statement."
-msgstr ""
+msgstr "ನಿಬಂಧನೆಯ ಹೇಳಿಕೆಯು ಇರದೆ ಇರುವುದರಿಂದ ಮೌಲ್ಯಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
 msgid  "The adding of columns is not supported."
-msgstr ""
+msgstr "ಲಂಬಸಾಲುಗಳನ್ನು ಸೇರಿಸುವುದನ್ನು ಬೆಂಬಲಿಸಲಾಗುವುದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
 msgid  "The dropping of columns is not supported."
-msgstr ""
+msgstr "ಲಂಬಸಾಲುಗಳನ್ನು ಬಿಟ್ಟುಬಿಡುವುದನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
 msgid  "The WHERE condition could not be created for the primary key."
-msgstr ""
+msgstr "ಪ್ರಾಥಮಿಕ ಕೀಲಿಗಾಗಿ WHERE ನಿಬಂಧನೆಯನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
 msgid  "The column does not support the property '%value'."
-msgstr ""
+msgstr "ಲಂಬಸಾಲು '%value' ಗುಣವನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
 msgid  "The column is not searchable!"
-msgstr ""
+msgstr "ಲಂಬಸಾಲನ್ನು ಹುಡುಕುಲಾಗುವುದಿಲ್ಲ!"
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
 msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
-msgstr ""
+msgstr "ಲಂಬಸಾಲುಗಳ ಮೌಲ್ಯವು ಅನುಕ್ರಮ <sal_Int8> ಬಗೆಯದ್ದಾಗಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
 msgid  "The column is not valid."
-msgstr ""
+msgstr "ಲಂಬಸಾಲು ಮಾನ್ಯವಾದುದಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
 msgid  "The column '%name' must be visible as a column."
-msgstr ""
+msgstr "ಲಂಬಸಾಲು '%name' ಲಂಬಸಾಲಿನಂತೆ ಗೋಚರಿಸಬೇಕು."
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
 msgid  "The interface XQueriesSupplier is not available."
-msgstr ""
+msgstr "ಸಂಪರ್ಕಸಾಧನ XQueriesSupplier ಯು ಲಭ್ಯವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
 msgid  "The driver does not support this function."
-msgstr ""
+msgstr "ಚಾಲಕವು ಈ ಕ್ರಿಯೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
 msgid  "An 'absolute(0)' call is not allowed."
-msgstr ""
+msgstr "ಒಂದು 'absolute(0)' ಕರೆಗೆ ಅನುಮತಿ ಇಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
 msgid  "Relative positioning is not allowed in this state."
-msgstr ""
+msgstr "ಈ ಸ್ಥಿತಿಯಲ್ಲಿ ತುಲನಾತ್ಮಕವಾಗಿ ಇರಿಸುವಿಕೆಗೆ ಅನುಮತಿಯಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "ResultSet ಅನ್ನು ಕೊನೆಯ ಅಡ್ಡಸಾಲಿನ ನಂತರ ಇರಿಸದ ಹೊರತು ಒಂದು ಹೊಸ ಅಡ್ಡಸಾಲನ್ನು ಪುನಶ್ಚೇತನಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "ResultSet ಅನ್ನು ಅಡ್ಡಸಾಲನ್ನು ಸೇರಿಸುವಲ್ಲಿಗೆ ಸ್ಥಳಾಂತರಿಸದ ಹೊರತು ಒಂದು ಹೊಸ ಅಡ್ಡಸಾಲನ್ನು ಸೇರಿಸುವಂತಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
 msgid  "A row cannot be modified in this state"
-msgstr ""
+msgstr "ಈ ಸ್ಥಿತಿಯಲ್ಲಿ ಅಡ್ಡಸಾಲನ್ನು ಮಾರ್ಪಡಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ"
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
 msgid  "A row cannot be deleted in this state."
-msgstr ""
+msgstr "ಈ ಸ್ಥಿತಿಯಲ್ಲಿ ಒಂದು ಸಾಲನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
 msgid  "The driver does not support table renaming."
-msgstr ""
+msgstr "ಟೇಬಲ್ ಹೆಸರನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ಚಾಲಕವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions."
-msgstr ""
+msgstr "ಲಂಬಸಾಲಿನ ವಿವರಣೆಗಳನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ಚಾಲಕವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "ಹೆಸರನ್ನು ಬದಲಾಯಿಸುವ ಮೂಲಕ ಲಂಬಸಾಲಿನ ವಿವರಣೆಗಳನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ಚಾಲಕವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "ಸೂಚಿಯನ್ನು ಬದಲಾಯಿಸುವ ಮೂಲಕ ಲಂಬಸಾಲಿನ ವಿವರಣೆಗಳನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ಚಾಲಕವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "\"$file$\" ಕಡತವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no table named \"$table$\"."
-msgstr ""
+msgstr "\"$table$\" ಎಂಬ ಹೆಸರಿನ ಯಾವುದೆ ಟೇಬಲ್ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no query named \"$table$\"."
-msgstr ""
+msgstr "\"$table$\" ಎಂಬ ಹೆಸರಿನ ಯಾವುದೆ ಮನವಿ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "ಈಗಿರುವ ಮನವಿಗಳ ಹೆಸರನ್ನೇ ಹೋಲುವ ಕೆಲವು ಹೆಸರುಗಳು ಕೋಷ್ಟಕದ ದತ್ತಸಂಚಯದಲ್ಲಿ ಇವೆ. ಎಲ್ಲಾ ಮನವಿಗಳ ಹಾಗು ಕೋಷ್ಟಕಗಳ ಸಂಪೂರ್ಣ ಪ್ರಯೋಜನವನ್ನು ಹೊಂದಲು, ಅವು ಪ್ರತ್ಯೇಕವಾದ ಹೆಸರುಗಳನ್ನು ಹೊಂದಿವೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "ಈ ದೋಷಕ್ಕೆ ಕಾರಣವಾಗುವ SQL ಆಜ್ಞೆಯು ಈ ಕೆಳಗಿನಂತಿದೆ:\n\n$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The SQL command does not describe a result set."
-msgstr ""
+msgstr "SQL ಆಜ್ಞೆಯು ಒಂದು ಫಲಿತಾಂಶ ಸೆಟ್‌ ಅನ್ನು ವಿವರಿಸುವುದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
 msgid  "The name must not be empty."
-msgstr ""
+msgstr "ಹೆಸರು ಖಾಲಿ ಇರುವಂತಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
 msgid  "The container cannot contain NULL objects."
-msgstr ""
+msgstr "ಕಂಟೈನರ್ ಶೂನ್ಯ ವಸ್ತುಗಳನ್ನು ಹೊಂದಿರುವಂತಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There already is an object with the given name."
-msgstr ""
+msgstr "ಈ ಹೆಸರಿನ ಒಂದು ಆಬ್ಜೆಕ್ಟ್‍ ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
 msgid  "This object cannot be part of this container."
-msgstr ""
+msgstr "ವಸ್ತುವು ಕಂಟೈನರಿನ ಒಂದು ಭಾಗವಾಗಿ ಇರುವಂತಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
 msgid  "The object already is, with a different name, part of the container."
-msgstr ""
+msgstr "ವಸ್ತುವು ಈಗಾಗಲೆ ಕಂಟೈನರಿನ ಒಂದು ಭಾಗವಾಗಿ ಬೇರೊಂದು ಹೆಸರಿನಲ್ಲಿ ಇದೆ."
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
 msgid  "Unable to find the document '$name$'."
-msgstr ""
+msgstr "'$name$' ದಸ್ತಾವೇಜು ಕಂಡುಬಂದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "$location$ ಗೆ ದಸ್ತಾವೇಜನ್ನು ಉಳಿಸಲಾಗಿಲ್ಲ:\n$message$"
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "'$name$' ಎಂಬ ದತ್ತಾಂಶ ಆಕರವನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವಲ್ಲಿ ದೋಷ:\n$error$"
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
 msgid  "There exists no folder named \"$folder$\"."
-msgstr ""
+msgstr "\"$folder$\" ಎಂಬ ಹೆಸರಿನ ಯಾವುದೆ ಕಡತಕೋಶವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
 msgid  "Cannot delete the before-first or after-last row."
-msgstr ""
+msgstr "ಮೊದಲಿನ ಸಾಲಿನ ಮುಂಚಿನದು ಅಥವ ಕೊನೆಯ ಸಾಲಿನ ನಂತರದ್ದನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.STRING.TEXT
 msgid  "Cannot delete the insert-row."
-msgstr ""
+msgstr "ಸಾಲನ್ನು ಸೇರಿಸು ಅನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ"
 
 #: core/resource/strings.src#RID_STR_RESULT_IS_READONLY.STRING.TEXT
 msgid  "Result set is read only."
-msgstr ""
+msgstr "ಫಲಿತಾಂಶದ ಸೆಟ್ ಕೇವಲ ಓದಲು ಮಾತ್ರವಾಗಿದೆ"
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
 msgid  "DELETE privilege not available."
-msgstr ""
+msgstr "DELETE ಸವಲತ್ತು ಲಭ್ಯವಿಲ್ಲ"
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "Current row is already deleted."
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಸಾಲನ್ನು ಈಗಾಗಲೆ ಅಳಿಸಲಾಗಿದೆ."
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
+#, fuzzy
 msgid  "Current row could not be updated."
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಸಾಲನ್ನು ಈಗಾಗಲೆ ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ."
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
+#, fuzzy
 msgid  "INSERT privilege not available."
-msgstr ""
+msgstr "INSERT ಸವಲತ್ತು ಲಭ್ಯವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Internal error: no statement object provided by the database driver."
-msgstr ""
+msgstr "ಆಂತರಿಕ ದೋಷ: ದತ್ತಸಂಚಯ ಚಾಲಕದಿಂದ ಯಾವುದೆ ಹೇಳಿಕೆ ವಸ್ತುವನ್ನು ಒದಗಿಸಲಾಗಿದೆ."
 
 #: core/resource/strings.src#RID_STR_EXPRESSION1.STRING.TEXT
+#, fuzzy
 msgid  "Expression1"
-msgstr ""
+msgstr "ಎಕ್ಸ್‍ಪ್ರೆಶನ್1"
 
 #: core/resource/strings.src#RID_STR_NO_SQL_COMMAND.STRING.TEXT
+#, fuzzy
 msgid  "No SQL command was provided."
-msgstr ""
+msgstr "ಯಾವುದೆ SQL ಆದೇಶವನ್ನು ಒದಗಿಸಲಾಗಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_INVALID_INDEX.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column index."
-msgstr ""
+msgstr "ಅಮಾನ್ಯವಾದ ಲಂಬಸಾಲು ಸೂಚಿ."
 
 #: core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid cursor state."
-msgstr ""
+msgstr "ಅಮಾನ್ಯವಾದ ತೆರೆಸೂಚಕ ಸ್ಥಿತಿ."
 
 #: core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.STRING.TEXT
+#, fuzzy
 msgid  "The cursor points to before the first or after the last row."
-msgstr ""
+msgstr "ಮೊದಲಿನ ಸಾಲಿನ ಮುಂಚಿನದು ಅಥವ ಕೊನೆಯ ಸಾಲಿನ ನಂತರದ ತೆರೆಸೂಚಕವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.STRING.TEXT
+#, fuzzy
 msgid  "The rows before the first and after the last row don't have a bookmark."
-msgstr ""
+msgstr "ಮೊದಲಿನ ಸಾಲಿನ ಮುಂಚಿನದು ಅಥವ ಕೊನೆಯ ಸಾಲಿನ ನಂತರದ್ದು ಒಂದು ಬುಕ್‌ಮಾರ್ಕನ್ನು  ಹೊಂದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The current row is deleted, and thus doesn't have a bookmark."
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಸಾಲನ್ನು ಅಳಿಸಲಾಗಿದೆ, ಹಾಗು ಒಂದು ಬುಕ್‌ಮಾರ್ಕನ್ನು ಹೊಂದಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_NO_EMBEDDING.STRING.TEXT
+#, fuzzy
 msgid  "Embedding of database documents is not supported."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ದಸ್ತಾವೇಜುಗಳನ್ನು ಅಡಕಗೊಳಿಸುವುದಕ್ಕೆ ಬೆಂಬಲವಿಲ್ಲ."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
+#, fuzzy
 msgid  "A connection for the following URL was requested \"$name$\"."
-msgstr ""
+msgstr "ಈ ಕೆಳಗಿನ URL ಗಾಗಿ \"$name$\" ಎಂಬುವರಿಂದ ಒಂದು ಸಂಪರ್ಕಕ್ಕಾಗಿ ಮನವಿ ಸಲ್ಲಿಸಲಾಗಿದೆ."
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
+#, fuzzy
 msgid  "The extension is not installed."
-msgstr ""
+msgstr "ವಿಸ್ತರಣೆ ಅನುಸ್ಥಾಪಿತಗೊಂಡಿಲ್ಲ."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database ~name"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದ ಹೆಸರು (~n)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User settings"
-msgstr ""
+msgstr "ಬಳಕೆದಾರ ಸಿದ್ಧತೆಗಳು"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Control user"
-msgstr ""
+msgstr "ನಿಯಂತ್ರಣ ಬಳಕೆದಾರ(~C)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Administrator"
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥಾಪಕ(~A)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Domain user"
-msgstr ""
+msgstr "ಡೊಮೈನ್ ಬಳಕೆದಾರ(~D)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "P~assword..."
-msgstr ""
+msgstr "ಗುಪ್ತಪದ(~a)..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Password..."
-msgstr ""
+msgstr "ಗುಪ್ತಪದ(~P)..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Passwo~rd..."
-msgstr ""
+msgstr "ಗುಪ್ತಪದ(~r)..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Backup file"
-msgstr ""
+msgstr "ಬ್ಯಾಕ್‌ಅಪ್‌ ಕಡತ(~B)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "..."
-msgstr ""
+msgstr "..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database settings"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಸಿದ್ಧತೆಗಳು"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~YSDEVSPACE"
-msgstr ""
+msgstr "S~YSDEVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "TRANSACTI~ONLOG"
-msgstr ""
+msgstr "TRANSACTI~ONLOG"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DATAD~EVSPACE"
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
+msgstr "DATAD~EVSPACE"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Transaction ~file (MB)"
-msgstr ""
+msgstr "ನಿರ್ವಹಣಾ ಕಡತ (MB)(~f)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data~base size (MB)"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದ ಗಾತ್ರ(m~b)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದ ಬಫರ್ ಗಾತ್ರ(m~b)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
+#, fuzzy
 msgid  "Backup file information"
-msgstr ""
+msgstr "ಬ್ಯಾಕ್‌ಅಪ್‌ ಕಡತದ ಮಾಹಿತಿ"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
+#, fuzzy
 msgid  "Create New Adabas D Database"
-msgstr ""
+msgstr "ಹೊಸ Adabas D ದತ್ತಸಂಚಯವನ್ನು ರಚಿಸಿ"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
+#, fuzzy
 msgid  "No entry could be written in the configuration file."
-msgstr ""
+msgstr "ಸಂರಚನಾ ಕಡತದಲ್ಲಿ ಯಾವುದೆ ನಮೂದನ್ನು ಬರೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred as the DB files were being created."
-msgstr ""
+msgstr "DB ಕಡತಗಳನ್ನು ರಚಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred as the system tables were being created."
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥೆಯ ಕೋಷ್ಟಕವನ್ನು ರಚಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The backup file entered does not exist."
-msgstr ""
+msgstr "ನಮೂದಿಸಲಾದ ಬ್ಯಾಕ್‌ಅಪ್‌ ಕಡತವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
-msgstr ""
+msgstr "ಸಂಪೂರ್ಣ ಅರ್ಹವಾದ ಕಡತವು \\'#\\' ಅಕ್ಷರಗಳಿಗಿಂತ ಉದ್ದವಾಗಿರುವಂತಿಲ್ಲ."
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
+#, fuzzy
 msgid  "The administrator and the control user cannot have the same name!"
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥಾಪಕರ ಹೆಸರು ಹಾಗು ನಿಯಂತ್ರಣ ಬಳಕೆದಾರರ ಹೆಸರು ಒಂದೇ ಇರುವಂತಿಲ್ಲ!"
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
+#, fuzzy
 msgid  "No name has been entered for the $name$ file!"
-msgstr ""
+msgstr "$name$ ಕಡತಕ್ಕೆ ಯಾವುದೆ ಹೆಸರನ್ನು ನಮೂದಿಸಲಾಗಿಲ್ಲ!"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
+#, fuzzy
 msgid  "You have to have administrator rights to create a new database!"
-msgstr ""
+msgstr "ಹೊಸ ದತ್ತಸಂಚಯವನ್ನು ರಚಿಸಲು ನೀವು ವ್ಯವಸ್ಥಾಪಕ ಅಧಿಕಾರವನ್ನು ಹೊಂದಿರಲೇ ಬೇಕು!"
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
+#, fuzzy
 msgid  "The specified file name or directory does not exist."
-msgstr ""
+msgstr "ಸೂಚಿಸಲಾದ ಕಡತ ಅಥವ ಕೋಶವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
+#, fuzzy
 msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "ಹೊಸ ದತ್ತಸಂಚಯವನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.\nದಯವಿಟ್ಟು ನಿಮ್ಮ Adabas D ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪರಿಶೀಲಿಸಿ, ವಿಶೇಷವಾಗಿ \"DBROOT\" ಹಾಗು \"DBWORK\" ವೇರಿಯೇಬಲ್‌ಗಳನ್ನು."
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning!"
-msgstr ""
+msgstr "ಎಚ್ಚರಿಕೆ!"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
+#, fuzzy
 msgid  "Creating database files."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವನ್ನು ರಚಿಸಲಾಗುತ್ತಿದೆ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Creating database configuration file."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಸಂರಚನಾ ಕಡತವನ್ನು ರಚಿಸಲಾಗುತ್ತಿದೆ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Starting database for the first time."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವನ್ನು ಮೊದಲು ಬಾರಿಗೆ ಆರಂಭಿಸಲಾಗಿದೆ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name entered already exists."
-msgstr ""
+msgstr "ಹೆಸರು ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
+#, fuzzy
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಕಡತಗಳಿಗಾಗಿ ಯಾವುದೆ ಪೂರ್ವನಿಯೋಜಿತ ಹೆಸರುಗಳನ್ನು ಇರಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಒಟ್ಟು ಗಾತ್ರವು ೪೦ ಅಕ್ಷರಗಳಿಗಿಂತ ಹೆಚ್ಚಾಗಿದೆ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
+#, fuzzy
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಕಡತಗಳಿಗೆ ಯಾವುದೆ ಪೂರ್ವನಿಯೋಜಿತ ಹೆಸರುಗಳನ್ನು ಒದಗಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಬರೆಯಲು ಯಾವುದೆ ಅನುಮತಿ ಇಲ್ಲ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ದತ್ತಸಂಚಯವನ್ನು ಮಾರ್ಪಡಿಸಬೇಕಾಗಿದೆ. ದಯವಿಟ್ಟು ನಿಯಂತ್ರಣ ಬಳಕೆದಾರ ಹಾಗು ಗುಪ್ತಪದವನ್ನು ಸೇರಿಸಿ."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
+#, fuzzy
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "ಗುಪ್ತಪದದಲ್ಲಿ ಖಾಲಿ ಜಾಗಗಳು ಇರುವಂತಿಲ್ಲ. ದಯವಿಟ್ಟು ಒಂದು ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ."
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Database Document Macro Migration"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ದಸ್ತಾವೇಜಿನ ಮಾಕ್ರೋ ವರ್ಗಾವಣೆ"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
+#, fuzzy
 msgid  "Prepare"
-msgstr ""
+msgstr "ಸಿದ್ಧಗೊಳಿಸು"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
+#, fuzzy
 msgid  "Backup Document"
-msgstr ""
+msgstr "ಬ್ಯಾಕ್‌ಅಪ್‌ ದಸ್ತಾವೇಜು"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
+#, fuzzy
 msgid  "Migrate"
-msgstr ""
+msgstr "ವರ್ಗಾಯಿಸು"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
+#, fuzzy
 msgid  "Summary"
-msgstr ""
+msgstr "ಸಾರಾಂಶ"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to the Database Macro Migration Wizard"
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜಿನ ಮಾಕ್ರೋ ವರ್ಗಾವಣೆ ಗಾರುಡಿಗೆ ಸುಸ್ವಾಗತ"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "ಈ ಗಾರುಡಿಯು ನಿಮಗೆ ಮ್ಯಾಕ್ರೋಗಳನ್ನು ವರ್ಗಾಯಿಸುವ ಪ್ರಕ್ರಿಯೆಯ ಬಗ್ಗೆ ಮಾರ್ಗದರ್ಶನ ನೀಡುತ್ತದೆ.\n\nನೀವಿದನ್ನು ಪೂರೈಸಿದ ನಂತರ, ಈ ಮೊದಲಿನ ದಸ್ತಾವೇಜಿನಲ್ಲಿನ ಫಾರ್ಮುಗಳು ಹಾಗು ವರದಿಗಳಲ್ಲಿ ಅಳವಡಿಸಲಾದ ಎಲ್ಲಾ ಮ್ಯಾಕ್ರೋಗಳು ಆ ದಸ್ತಾವೇಜಿಗೆ ರವಾನಿಸಲ್ಪಡುತ್ತದೆ. ಈ ಸಂದರ್ಭದಲ್ಲಿ, ಭಂಡಾರಗಳ ಹೆಸರನ್ನು ಅಗತ್ಯಕ್ಕೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ.\n\nಈ ಮ್ಯಾಕ್ರೋಗಳಿಗೆ ನಿಮ್ಮ ಫಾರ್ಮುಗಳಲ್ಲಿ ಹಾಗು ವರದಿಗಳಲ್ಲಿ ಎಲ್ಲಿಯಾದರೂ ಉಲ್ಲೇಖಗಳಿದ್ದಲ್ಲಿ ಅವುಗಳನ್ನು ಸಾಧ್ಯವಿದ್ದಲ್ಲಿ ಸರಿಹೊಂದಿಸಲಾಗುವುದು.\n\nವರ್ಗಾವಣೆಯನ್ನು ಆರಂಭಿಸುವ ಮೊದಲು, ದಸ್ತಾವೇಜಿಗೆ ಸಂಬಂಧಿಸಿದ ಎಲ್ಲಾ ಫಾರ್ಮುಗಳನ್ನು, ವರದಿಗಳನ್ನು, ಮನವಿಗಳನ್ನು ಹಾಗು ಕೋಷ್ಟಕಗಳನ್ನು ಮುಚ್ಚಬೇಕು. ಹಾಗೆ ಮಾಡಲು 'ಮುಂದಕ್ಕೆ' ಅನ್ನಿ ಒತ್ತಿ."
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "ಎಲ್ಲಾ ಅಂಶಗಳನ್ನು ಮುಚ್ಚಲು ಸಾಧ್ಯವಿಲ್ಲ. ಅವನ್ನು ನೀವೆ ಕೈಯಾರೆ ಮುಚ್ಚಿ ಹಾಗು ಗಾರುಡಿಯನ್ನು ಮರಳಿ ಆರಂಭಿಸಿ."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Backup your Document"
-msgstr ""
+msgstr "ನಿಮ್ಮ ದಸ್ತಾವೇಜನ್ನು ಬ್ಯಾಕ್‌ಅಪ್‌ ಇರಿಸಿಕೊಳ್ಳಿ"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "ವರ್ಗಾವಣೆಯ ಮೊದಲಿನ ಸ್ಥಿತಿಗೆ ಮರಳುವುದಕ್ಕೆ ಅನುವು ಮಾಡಿಕೊಡಲು, ದತ್ತಸಂಚಯ ದಸ್ತಾವೇಜನ್ನು ನೀವು ಬಯಸುವು ಜಾಗದಲ್ಲಿ ಬ್ಯಾಕ್‌ಅಪ್‌ ಇರಿಸಲಾಗುವುದು. ಗಾರುಡಿಯಿಂದ ಮಾಡಲಾದ ಪ್ರತಿಯೊಂದು ಬದಲಾವಣೆಗಳನ್ನು ಮೂಲ ದಸ್ತಾವೇಜಿಗೆ ಮಾತ್ರವೆ ಸೀಮಿತವಾಗಿರುತ್ತದೆ ಹಾಗು ಬ್ಯಾಕ್‌ಅಪ್‌ ಕಡತವನ್ನು ಹಾಗೆಯೆ ಇರಿಸಿಕೊಳ್ಳಲಾಗುವುದು."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Save To:"
-msgstr ""
+msgstr "ಇದಕ್ಕೆ ಉಳಿಸು:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Browse ..."
-msgstr ""
+msgstr "ವೀಕ್ಷಿಸಿ ..."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "ನಿಮ್ಮ ದಸ್ತಾವೇಜಿನ ಒಂದು ಪ್ರತಿಯನ್ನು ಉಳಿಸಿಕೊಂಡು ನಂತರ ವರ್ಗಾವಣೆಯನ್ನು ಆರಂಭಿಸಲು 'ಮುಂದಕ್ಕೆ' ಅನ್ನು ಒತ್ತಿ."
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Migration Progress"
-msgstr ""
+msgstr "ವರ್ಗಾವಣೆಯ ಪ್ರಗತಿ"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜು $forms$ ಫಾರ್ಮನ್ನು(ಗಳನ್ನು) ಹಾಗು $reports$ ವರದಿಯನ್ನು(ಗಳನ್ನು) ಹೊಂದಿದ್ದು, ಅವನ್ನು ಪ್ರಸಕ್ತ ಸಂಸ್ಕರಿಸಲಾಗುತ್ತಿದೆ:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Current object:"
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ವಸ್ತು:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Current progress:"
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಪ್ರಗತಿ:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Overall progress:"
-msgstr ""
+msgstr "ಒಟ್ಟಾರೆ ಪ್ರಗತಿ:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "$overall$ ನ $current$ ದಸ್ತಾವೇಜು"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
-
-#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Summary"
-msgstr ""
+msgstr "ಎಲ್ಲಾ ಫಾರ್ಮುಗಳನ್ನು ಹಾಗು ವರದಿಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಂಸ್ಕರಿಸಲಾಗಿದೆ. ವಿವರವಾದ ಸಾರಾಂಶವನ್ನು ತೋರಿಸಲು 'ಮುಂದಕ್ಕೆ' ಅನ್ನು ಒತ್ತಿ."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
+#, fuzzy
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "ವರ್ಗಾವಣೆಯು ಯಶಸ್ವಿಯಾಗಿದೆ. ನಿಮ್ಮ ದಸ್ತಾವೇಜಿಗೆ ನಡೆಸಲಾದ ಕ್ರಿಯೆಗಳ ವಿವರಗಳನ್ನು ಈ ಕೆಳಗಿರುವ ದಾಖಲೆಯಲ್ಲಿ ನೋಡಬಹುದಾಗಿದೆ."
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
+#, fuzzy
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "ವರ್ಗಾವಣೆಯು ಯಶಸ್ವಿಯಾಗಿಲ್ಲ. ವಿವರಗಳಿಗಾಗಿ ಈ ಕೆಳಗಿರುವ ವರ್ಗಾವಣೆ ದಾಖಲೆಯನ್ನು ಪರಿಶೀಲಿಸಿ."
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Form '$name$'"
-msgstr ""
+msgstr "ಫಾರ್ಮ್ '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Report '$name$'"
-msgstr ""
-
-#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
-msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "ವರದಿ '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Database Document"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ದಸ್ತಾವೇಜು"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
+#, fuzzy
 msgid  "saved copy to $location$"
-msgstr ""
+msgstr "ಪ್ರತಿಯನ್ನು $location$ ಗೆ ಉಳಿಸಲಾಗಿದೆ"
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
+#, fuzzy
 msgid  "migrated $type$ library '$old$' to '$new$'"
-msgstr ""
+msgstr "$type$ ಲೈಬ್ರರಿ'$old$' ಅನ್ನು '$new$' ಗೆ ವರ್ಗಾಯಿಸಲಾಗಿದೆ"
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
+#, fuzzy
 msgid  "$type$ library '$library$'"
-msgstr ""
+msgstr "$type$ ಲೈಬ್ರರಿ '$library$'"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
+#, fuzzy
 msgid  "migrating libraries ..."
-msgstr ""
+msgstr "ಲೈಬ್ರರಿಗಳನ್ನು ವರ್ಗಾಯಿಸಲಾಗುತ್ತಿದೆ ..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic"
-msgstr ""
+msgstr "%PRODUCTNAME ಮೂಲ"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
+#, fuzzy
 msgid  "JavaScript"
-msgstr ""
+msgstr "ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ "
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
+#, fuzzy
 msgid  "BeanShell"
-msgstr ""
+msgstr "BeanShell"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
+#, fuzzy
 msgid  "Java"
-msgstr ""
+msgstr "ಜಾವಾ"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
+#, fuzzy
 msgid  "Python"
-msgstr ""
+msgstr "ಪೈತಾನ್‌"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
+#, fuzzy
 msgid  "dialog"
-msgstr ""
+msgstr "ಸಂವಾದ"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
+#, fuzzy
 msgid  "Error(s)"
-msgstr ""
+msgstr "ದೋಷ(ಗಳು)"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
+#, fuzzy
 msgid  "Warnings"
-msgstr ""
+msgstr "ಎಚ್ಚರಿಕೆಗಳು"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
+#, fuzzy
 msgid  "caught exception: "
-msgstr ""
+msgstr "ಅಪವಾದವು ಎದುರಾಗಿದೆ: "
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜು ಈಗಿರುವ ಸ್ಥಳವನ್ನು ಹೊರತುಪಡಿಸಿ ಬೇರೆ ಯಾವುದಾದರೂ ಸ್ಥಳವನ್ನು ನೀವು ಬ್ಯಾಕ್‌ಅಪ್‌ ಸ್ಥಳವಾಗಿ ಆಯ್ಕೆ ಮಾಡಬೇಕು."
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
+#, fuzzy
 msgid  "Invalid number of initialization arguments. Expected 1."
-msgstr ""
+msgstr "ಅಮಾನ್ಯವಾದ ಸಂಖ್ಯೆಯ ಆರಂಭಿಕ ಆರ್ಗ್ಯುಮೆಂಟ್‌ಗಳು. 1 ಅನ್ನು ನಿರೀಕ್ಷಿಸಲಾಗಿತ್ತು."
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "No database document found in the initialization arguments."
-msgstr ""
+msgstr "ಆರಂಭಿಕ ಆರ್ಗ್ಯುಮೆಂಟ್‌ಗಳಲ್ಲಿ ಯಾವುದೆ ದತ್ತಸಂಚಯ ದಸ್ತಾವೇಜು ಕಂಡುಬಂದಿಲ್ಲ."
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "Not applicable to read-only documents."
-msgstr ""
+msgstr "ಓದಲು ಮಾತ್ರವಾದ ದಸ್ತಾವೇಜುಗಳಿಗೆ ಅನ್ವಯಿತಗೊಳ್ಳುವುದಿಲ್ಲ."
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
+#, fuzzy
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ಹಾಗು ಮನವಿಗೆ ನೀವು ಒಂದೇ ರೀತಿಯ ಹೆಸರನ್ನು ನೀಡುವಂತಿಲ್ಲ. ದಯವಿಟ್ಟು ಒಂದು ಮನವಿ ಹಾಗು ಕೋಷ್ಟಕಕ್ಕೆ ಬಳಸದೆ ಇರುವ ಒಂದು ಹೆಸರನ್ನು ಬಳಸಿ."
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Query"
-msgstr ""
+msgstr "ಮನವಿ"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "ನೀಡಲಾಗಿರುವ ಸಂಪರ್ಕವು ಮಾನ್ಯವಾದ ಮನವಿ ಹಾಗು/ಅಥವ ಕೋಷ್ಟಕವನ್ನು ಒದಗಿಸುವುದಿಲ್ಲ."
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "The given object is no table object."
-msgstr ""
+msgstr "ನೀಡಲಾದ ಅಂಶವು ಕೋಷ್ಟಕ ಅಂಶವಾಗಿಲ್ಲ."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "ಅಮಾನ್ಯವಾದ ಕಂಪೋಸಿಶನ್ ಬಗೆ - com.sun.star.sdb.tools.CompositionType ಇಂದ ಒಂದು ಮೌಲ್ಯದ ಅಗತ್ಯವಿದೆ."
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "ಅಮಾನ್ಯವಾದ ಆದೇಶದ ಬಗೆ - com.sun.star.sdb.CommandType ಇಂದ ಕೇವಲ TABLE ಹಾಗು AND QUERY ಗೆ ಅನುಮತಿ ಇದೆ."
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Create Form in Design View..."
-msgstr ""
+msgstr "ವಿನ್ಯಾಸ ನೋಟದಲ್ಲಿ ಫಾರ್ಮನ್ನು ರಚಿಸಿ..."
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Use Wizard to Create Form..."
-msgstr ""
+msgstr "ಫಾರ್ಮನ್ನು ರಚಿಸಲು ಗಾರುಡಿಯನ್ನು ಬಳಸಿ..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Use Wizard to Create Report..."
-msgstr ""
+msgstr "ವರದಿಯನ್ನು ರಚಿಸಲು ಗಾರುಡಿಯನ್ನು ಬಳಸಿ..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Create Report in Design View..."
-msgstr ""
+msgstr "ವಿನ್ಯಾಸ ನೋಟದಲ್ಲಿ ವರದಿಯನ್ನು ರಚಿಸಿ..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Create Query in Design View..."
-msgstr ""
+msgstr "ವಿನ್ಯಾಸ ನೋಟದಲ್ಲಿ ಪ್ರಶ್ನೆಯನ್ನು ರಚಿಸಿ..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
+#, fuzzy
 msgid  "Create Query in SQL View..."
-msgstr ""
+msgstr "SQL ನೋಟದಲ್ಲಿ ಪ್ರಶ್ನೆಯನ್ನು ರಚಿಸಿ..."
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Use Wizard to Create Query..."
-msgstr ""
+msgstr "ಪ್ರಶ್ನೆಯನ್ನು ರಚಿಸಲು ಗಾರುಡಿಯನ್ನು ಬಳಸಿ..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Create Table in Design View..."
-msgstr ""
+msgstr "ವಿನ್ಯಾಸ ನೋಟದಲ್ಲಿ ಕೋಷ್ಟಕವನ್ನು ರಚಿಸಿ..."
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Use Wizard to Create Table..."
-msgstr ""
+msgstr "ಕೋಷ್ಟಕವನ್ನು ರಚಿಸಲು ಗಾರುಡಿಯನ್ನು ಬಳಸಿ..."
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "Create View..."
-msgstr ""
+msgstr "ನೋಟವನ್ನು ರಚಿಸು..."
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Forms"
-msgstr ""
+msgstr "ನಮೂನೆಗಳು"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Reports"
-msgstr ""
+msgstr "ವರದಿಗಳು"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Form..."
-msgstr ""
+msgstr "ನಮೂನೆ..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Report..."
-msgstr ""
+msgstr "ವರದಿ..."
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
+#, fuzzy
 msgid  "View (Simple)..."
-msgstr ""
+msgstr "ನೋಟ (ಸರಳ)..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Paste Special..."
-msgstr ""
+msgstr "ವಿಶೇಷವಾದುದನ್ನು ಅಂಟಿಸಿ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "ಅಳಿಸು"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rename"
-msgstr ""
+msgstr "ಹೆಸರನ್ನು ಬದಲಾಯಿಸು"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "ಸಂಪಾದಿಸು"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Edit in SQL View..."
-msgstr ""
+msgstr "SQL ನೋಟದಲ್ಲಿ ಸಂಪಾದಿಸಿ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Open"
-msgstr ""
+msgstr "ತೆಗೆ"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Create as View"
-msgstr ""
+msgstr "ನೋಟವಾಗಿ ರಚಿಸಿ"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Form Wizard..."
-msgstr ""
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
-msgid  "Report..."
-msgstr ""
+msgstr "ಗಾರುಡಿಯಿಂದ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "ವರದಿ ಗಾರುಡಿ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Select All"
-msgstr ""
+msgstr "ಎಲ್ಲ ಆಯ್ಕೆಮಾಡು"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Database"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ(~D)"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr "ಗುಣಗಳು"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Connection Type..."
-msgstr ""
+msgstr "ಸಂಪರ್ಕದ ಬಗೆ"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Advanced Settings..."
-msgstr ""
+msgstr "ಪ್ರೌಢ ಸಿದ್ಧತೆಗಳು"
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the data source '%1'?"
-msgstr ""
+msgstr "ದತ್ತ ಆಕರ '%1' ಅನ್ನು ಅಳಿಸಿ ಹಾಕಲು ನೀವು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base"
-msgstr ""
+msgstr " - %PRODUCTNAME ಮೂಲ"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "ವರದಿಯನ್ನು ರಚಿಸುವ ಅಗತ್ಯವಿರುವ ಹಂತಗಳನ್ನು ಈ ಗಾರುಡಿಯು ವಿವರಿಸುತ್ತದೆ."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "ದಾಖಲೆಯ ಮೂಲ, ನಿಯಂತ್ರಣಗಳು, ಹಾಗು ನಿಯಂತ್ರಣ ಗುಣಗಳನ್ನು ಸೂಚಿಸುವ ಸಲುವಾಗಿ ಒಂದು ಫಾರ್ಮನ್ನು ರಚಿಸಿ."
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "ದಾಖಲೆಯ ಮೂಲ, ನಿಯಂತ್ರಣಗಳು, ಹಾಗು ನಿಯಂತ್ರಣ ಗುಣಗಳನ್ನು ಸೂಚಿಸುವ ಸಲುವಾಗಿ ಒಂದು ವರದಿಯನ್ನು ರಚಿಸಿ."
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "ಒಂದು ಫಾರ್ಮನ್ನು ರಚಿಸಲು ಅಗತ್ಯವಿರುವ ಹಂತಗಳನ್ನು ಈ ಗಾರುಡಿಯು ವಿವರಿಸುತ್ತದೆ."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "ವಿಂಗಡಿಸಲು ಅಥವ ಗುಂಪು ಮಾಡಲು ಫಿಲ್ಟರುಗಳನ್ನು, ಇನ್‌ಪುಟ್‌ ಕೋಷ್ಟಕಗಳನ್ನು, ಕ್ಷೇತ್ರದ ಹೆಸರುಗಳನ್ನು, ಹಾಗು ಗುಣಧರ್ಮಗಳನ್ನು ಸೂಚಿಸುವ ಮೂಲಕ ಒಂದು ಪ್ರಶ್ನೆಯನ್ನು ರಚಿಸಿ."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
+#, fuzzy
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "ಒಂದು SQL ಹೇಳಿಕೆಯನ್ನು ನೇರವಾಗಿ ನಮೂದಿಸುವ ಮೂಲಕ ಒಂದು ಪ್ರಶ್ನೆಯನ್ನು ರಚಿಸಿ."
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "ಒಂದು ವರದಿಯನ್ನು ರಚಿಸಲು ಅಗತ್ಯವಿರುವ ಹಂತಗಳನ್ನು ಈ ಗಾರುಡಿಯು ವಿವರಿಸುತ್ತದೆ."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
+#, fuzzy
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "ಕ್ಷೇತ್ರದ ಹೆಸರುಗಳನ್ನು, ಗುಣಧರ್ಮಗಳನ್ನು ಹಾಗು ದತ್ತಾಂಶದ ಬಗೆಗಳನ್ನು ಸೂಚಿಸುವ ಮೂಲಕ ಒಂದು ಕೋಷ್ಟಕವನ್ನು ರಚಿಸಿ."
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "ನೀವು ಒಂದು ಕೋಷ್ಟಕವನ್ನು ರಚಿಸುವ ಸಲುವಾಗಿ ನಿಮ್ಮ ಇಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಬೇಕಿರುವ ವ್ಯವಹಾರದ ಹಾಗು ವೈಯಕ್ತಿಕ ಕೋಷ್ಟಕ ನಮೂನೆಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
+#, fuzzy
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "ನಿಮಗೆ ಗೋಚರಿಸಬೇಕಿರುವ ಕೋಷ್ಟಕಗಳ ಹೆಸರು ಹಾಗು ಕ್ಷೇತ್ರದ ಹೆಸರನ್ನು ಸೂಚಿಸುವ ಮೂಲಕ ಒಂದು ನೋಟವನ್ನು ರಚಿಸಿ."
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "Opens the view wizard"
-msgstr ""
+msgstr "ನೋಟ ಗಾರುಡಿಯನ್ನು ತೆರೆಯುತ್ತದೆ"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
+#, fuzzy
 msgid  "Tasks"
-msgstr ""
+msgstr "ಕಾರ್ಯಗಳು"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "ವಿವರಣೆ"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "ಮುನ್ನೋಟ"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Disable Preview"
-msgstr ""
-
-#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "ಮುನ್ನೋಟವನ್ನು ಅಶಕ್ತಗೊಳಿಸು"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "ಏನೂ ಇಲ್ಲ"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Document Information"
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜಿನ ಮಾಹಿತಿ"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜು"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Form"
-msgstr ""
+msgstr "ನಮೂನೆ"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Report"
-msgstr ""
+msgstr "ವರದಿ"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "F~orm name"
-msgstr ""
+msgstr "ಫಾರ್ಮಿನ ಹೆಸರು(~o)"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Report name"
-msgstr ""
+msgstr "ವರದಿಯ ಹೆಸರು(~R)"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "F~older name"
-msgstr ""
+msgstr "ಕಡತಕೋಶದ ಹೆಸರು(~o)"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
+#, fuzzy
 msgid  "The document contains forms or reports with embedded macros."
-msgstr ""
+msgstr "ಅಡಕಗೊಳಿಸಲಾದ ಮ್ಯಾಕ್ರೋಗಳನ್ನು ಒಳಗೊಂಡಿರುವ ಫಾರ್ಮುಗಳನ್ನು ಅಥವ ವರದಿಗಳನ್ನು ದಸ್ತಾವೇಜು ಹೊಂದಿದೆ."
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
+#, fuzzy
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "ಮ್ಯಾಕ್ರೋಗಳನ್ನು ದತ್ತಸಂಚಯದ ಒಳಗೆ ಅಡಕಗೊಳಿಸಬೇಕಾಗುತ್ತದೆ.\n\nನೀವು ಮೊದಲಿನಂತೆಯೆ ನಿಮ್ಮ ದಸ್ತಾವೇಜನ್ನು ಬಳಸಬಹುದಾಗಿದೆ, ಆದರೆ, ನಿಮ್ಮ ಮ್ಯಾಕ್ರೋಗಳನ್ನು ವರ್ಗಾಯಿಸಿಕೊಳ್ಳುವಂತೆ ನಾವು ಸಲಹೆ ಮಾಡುತ್ತೇವೆ. 'ಉಪಕರಣಗಳು / ಮ್ಯಾಕ್ರೋಗಳನ್ನು ವರ್ಗಾಯಿಸು ...' ಎಂಬ ಮೆನು ಅಂಶವು ಹೀಗೆ ಮಾಡುವಲ್ಲಿ ನಿಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ.\n\nವರ್ಗಾವಣೆ ಪೂರ್ಣಗೊಳ್ಳದೆ ನೀವು ಮ್ಯಾಕ್ರೋಗಳನ್ನು ದತ್ತಸಂಚಯ ದಸ್ತಾವೇಜಿನಲ್ಲಿ ನೀವು ಅಡಕಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ ಎನ್ನುವುದನ್ನು ನೆನಪಿಡಿ. "
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Embedded database"
-msgstr ""
+msgstr "ಅಡಕಗೊಳಿಸಲಾದ ದಸ್ತಾವೇಜು"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
+#, fuzzy
 msgid  "You cannot select different categories."
-msgstr ""
+msgstr "ಪ್ರತ್ಯೇಕ ವರ್ಗಗಳನ್ನು ಆರಿಸಲು ಸಾಧ್ಯವಿರುವುದಿಲ್ಲ."
 
 #: ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported object type found ($type$)."
-msgstr ""
+msgstr "ಬೆಂಬಲವಿಲ್ಲದ ವಸ್ತುವಿನ ಪ್ರಕಾರವು ಕಂಡು ಬಂದಿದೆ ($type$)."
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Table #"
-msgstr ""
-
-#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ #"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
-msgstr ""
+msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ದತ್ತಾಂಶವನ್ನು ನೀವು ಅಳಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
+#, fuzzy
 msgid  "(filtered)"
-msgstr ""
+msgstr "(ಶೋಧಿಸಿದ)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
+#, fuzzy
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "ವಿಂಗಡನೆಯ ಮಾನದಂಡವನ್ನು ಸಿದ್ಧ ಮಾಡುವಲ್ಲಿ ದೋಷ ಸಂಭವಿಸಿದೆ"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "ಶೋಧಕದ ಮಾನದಂಡವನ್ನು ಸಿದ್ಧ ಮಾಡುವಲ್ಲಿ ದೋಷ ಸಂಭವಿಸಿದೆ"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
+#, fuzzy
 msgid  "Connection lost"
-msgstr ""
+msgstr "ಸಂಪರ್ಕವು ಕಡಿದಿದೆ"
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Queries"
-msgstr ""
+msgstr "ಮನವಿಗಳು"
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Tables"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕಗಳು"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
+#, fuzzy
 msgid  "Edit ~Database File..."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಕಡತವನ್ನು ಸಂಪಾದಿಸು(~D)..."
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
+#, fuzzy
 msgid  "Registered databases ..."
-msgstr ""
+msgstr "ನೋಂದಾಯಿಸಲಾದ ದತ್ತಸಂಚಯಗಳು ..."
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
+#, fuzzy
 msgid  "Disco~nnect"
-msgstr ""
+msgstr "ಸಂಪರ್ಕವನ್ನು ಕಡಿದುಹಾಕು(~n)"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
+#, fuzzy
 msgid  "Confirm Deletion"
-msgstr ""
+msgstr "ಅಳಿಸುವಿಕೆಯನ್ನು ದೃಢೀಕರಿಸು"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ '%1' ಅನ್ನು ನೀವು ಅಳಿಸಿ ಹಾಕಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
-msgstr ""
+msgstr "ಪ್ರಶ್ನೆಯು ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ನೀವದನ್ನು ಅಳಿಸಿ ಹಾಕಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದೊಂದಿಗಿನ ಸಂಪರ್ಕವು ಕಡಿದು ಹೋಗಿದೆ. ನೀವು ಮರಳಿ ಸಂಪರ್ಕ ಜೋಡಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
+#, fuzzy
 msgid  "Warnings encountered"
-msgstr ""
+msgstr "ಎಚ್ಚರಿಕೆಯನ್ನು ನೀಡಲಾಗಿದೆ"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "ಕೋಷ್ಟಕಗಳನ್ನು ಮರಳಿ ಪಡೆಯುವಾಗ, ದತ್ತಸಂಚಯ ಸಂಪರ್ಕದಿಂದ ಎಚ್ಚರಿಕೆಗಳನ್ನು ನೀಡಲಾಗಿದೆ."
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
-msgstr ""
+msgstr "\"$name$\" ಗೆ ಸಂಪರ್ಕಸಾಧಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Loading query $name$ ..."
-msgstr ""
+msgstr "$name$ ಪ್ರಶ್ನೆಯನ್ನು ಲೋಡ್‌ ಮಾಡಲಾಗುತ್ತದೆ..."
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Loading table $name$ ..."
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ $name$ ಅನ್ನು ಲೋಡ್‌ ಮಾಡಲಾಗುತ್ತಿದೆ..."
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
+#, fuzzy
 msgid  "No table format could be found."
-msgstr ""
+msgstr "ಯಾವುದೆ ಕೋಷ್ಟಕ ನಮೂನೆಯು ಕಂಡುಬಂದಿಲ್ಲ."
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
+msgstr "ದತ್ತ ಆಕರ \"$name$\"ಕ್ಕೆ ಸಂಪರ್ಕವನ್ನು ಸ್ಥಾಪಿಸಲಾಗಲಿಲ್ಲ."
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rebuild"
-msgstr ""
+msgstr "ಮರುನಿರ್ಮಾಣ"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
+#, fuzzy
 msgid  "Column ~Format..."
-msgstr ""
+msgstr "ಲಂಬಸಾಲಿನ ನಮೂನೆ(~F)..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
+#, fuzzy
 msgid  "Copy Column D~escription"
-msgstr ""
+msgstr "ಲಂಬಸಾಲಿನ ವಿವರಣೆಯನ್ನು ಕಾಪಿ ಮಾಡು(~e)"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
+#, fuzzy
 msgid  "Table Format..."
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ನಮೂನೆ..."
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Row Height..."
-msgstr ""
+msgstr "ಅಡ್ಡಸಾಲಿನ ಎತ್ತರ..."
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "Undo: Data Input"
-msgstr ""
+msgstr "ರದ್ದು ಮಾಡು: ದತ್ತಾಂಶ ಇನ್‌ಪುಟ್‌"
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "Save current record"
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ದಾಖಲೆಯನ್ನು ಉಳಿಸು"
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Query #"
-msgstr ""
+msgstr "ಪ್ರಶ್ನೆ #"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Table #"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ #"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "View #"
-msgstr ""
+msgstr "ನೋಟ #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name \"#\" already exists."
-msgstr ""
+msgstr "\"#\" ಹೆಸರು ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
+#, fuzzy
 msgid  "No matching column names were found."
-msgstr ""
+msgstr "ತಾಳೆಯಾಗುವ ಯಾವುದೆ ಲಂಬಸಾಲು ಕಂಡುಬಂದಿಲ್ಲ."
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
-msgstr ""
+msgstr "ಒಂದು ದೋಷವು ಸಂಭವಿಸಿದೆ. ಕಾಪಿ ಮಾಡುವುದನ್ನು ನೀವು ಮುಂದುವರೆಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Data source table view"
-msgstr ""
+msgstr "ದತ್ತ ಆಕರ ಕೋಷ್ಟಕ ನೋಟ"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Shows the selected table or query."
-msgstr ""
+msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದಂತಹ ಕೋಷ್ಟಕ ಅಥವ ಪ್ರಶ್ನೆಯನ್ನು ತೋರಿಸುತ್ತದೆ."
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Table name"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ಹೆಸರು"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert data"
-msgstr ""
+msgstr "ದತ್ತಾಂಶವನ್ನು ಸೇರಿಸು"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete data"
-msgstr ""
+msgstr "ದತ್ತಾಂಶವನ್ನು ಅಳಿಸು"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
+#, fuzzy
 msgid  "Modify data"
-msgstr ""
+msgstr "ದತ್ತಾಂಶವನ್ನು ಮಾರ್ಪಡಿಸು"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
+#, fuzzy
 msgid  "Alter structure"
-msgstr ""
+msgstr "ರಚನೆಯನ್ನು ಬದಲಾಯಿಸು"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
+#, fuzzy
 msgid  "Read data"
-msgstr ""
+msgstr "ದತ್ತಾಂಶವನ್ನು ಓದು"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
+#, fuzzy
 msgid  "Modify references"
-msgstr ""
+msgstr "ಉಲ್ಲೇಖಗಳನ್ನು ಮಾರ್ಪಡಿಸು"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
+#, fuzzy
 msgid  "Drop structure"
-msgstr ""
+msgstr "ರಚನೆಯನ್ನು ಬಿಟ್ಟುಬಿಡು"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "ಏರಿಕೆಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸು"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sort Descending"
-msgstr ""
+msgstr "ಇಳಿಕೆಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸು"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "SDBC ಚಾಲಕ ನಿರ್ವಾಹಕನೊಂದಿಗೆ ಸಂಪರ್ಕಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ (#servicename#)."
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
-msgstr ""
+msgstr "ಚಾಲಕವನ್ನು ತಾಣಸೂಚಿ #connurl# ಗೆ ನೋಂದಾಯಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
-msgstr ""
+msgstr "ತಾಣಸೂಚಿ #connurl# ನೊಂದಿಗೆ ಯಾವುದೆ ಸಂಪರ್ಕಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "ದಯವಿಟ್ಟು ಈಗಿನ ಸಿದ್ಧತೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ, ಉದಾಹರಣೆಗೆ ಬಳಕೆದಾರ ಹೆಸರು ಹಾಗು ಗುಪ್ತಪದ."
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕಸಾಧಿಸಲಾಗಿದೆ, ಆದರೆ ದತ್ತಸಂಚಯ ಕೋಷ್ಟಕದ ಬಗೆಗಿನ ಮಾಹಿತಿಯು ಲಭ್ಯವಿಲ್ಲ."
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "All tables"
-msgstr ""
+msgstr "ಎಲ್ಲಾ ಕೋಷ್ಟಕಗಳು"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
+#, fuzzy
 msgid  "All views"
-msgstr ""
+msgstr "ಎಲ್ಲಾ ನೋಟಗಳು"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
+#, fuzzy
 msgid  "All tables and views"
-msgstr ""
+msgstr "ಎಲ್ಲಾ ಕೋಷ್ಟಕಗಳು ಹಾಗು ನೋಟಗಳು"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
+#, fuzzy
 msgid  "Modify SQL statement(s)"
-msgstr ""
+msgstr "SQL ಹೇಳಿಕೆಯನ್ನು(ಗಳನ್ನು) ಮಾರ್ಪಡಿಸು"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database files"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಕಡತಗಳು"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~YSDEVSPACE:"
-msgstr ""
+msgstr "S~YSDEVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~TRANSACTIONLOG:"
-msgstr ""
+msgstr "~TRANSACTIONLOG:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DATAD~EVSPACE:"
-msgstr ""
+msgstr "DATAD~EVSPACE:"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database sizes"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಗಾತ್ರಗಳು"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~ize (MB):"
-msgstr ""
+msgstr "ಗಾತ್ರ(~i) (MB):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Free memory space (MB):"
-msgstr ""
+msgstr "ಖಾಲಿ ಇರುವ ಮೆಮೊರಿಯ (MB)(~F):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Memory utilization (in %):"
-msgstr ""
+msgstr "ಮೆಮೊರಿ ಬಳಕೆ(% ದಲ್ಲಿ)(~M):"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Database Statistics"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಅಂಕಿಅಂಶಗಳು"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
+#, fuzzy
 msgid  "Contains the system tables"
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥೆಯ ಕೋಷ್ಟಕಗಳನ್ನು ಹೊಂದಿದೆ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
+#, fuzzy
 msgid  "Contains information about transaction"
-msgstr ""
+msgstr "ವ್ಯವಹಾರದ ಬಗೆಗಿನ ಮಾಹಿತಿಯನ್ನು ಹೊಂದಿದೆ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
+#, fuzzy
 msgid  "Contains all data files"
-msgstr ""
+msgstr "ಎಲ್ಲಾ ದತ್ತಾಂಶ ಕಡತಗಳನ್ನು ಹೊಂದಿದೆ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
+#, fuzzy
 msgid  "Total size of the database files"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದ ಕಡತಗಳ ಒಟ್ಟು ಗಾತ್ರ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
-msgstr ""
+msgstr "ಒಂದು ಹೊಸ datadev ಕಡತವನ್ನು ರಚಿಸುವ ಮೊದಲು ಲಭ್ಯವಿರುವ ಜಾಗ."
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
+#, fuzzy
 msgid  "Currently used memory"
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಬಳಸಲಾಗುತ್ತಿರುವ ಮೆಮೊರಿ"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "ಅಗತ್ಯವಿರುವ ವ್ಯವಸ್ಥೆ ಕೋಷ್ಟಕಗಳಿಗಾಗಿ ಯಾವುದೆ ನಿಲುಕಣಾ ಹಕ್ಕುಗಳು ಇರದ ಕಾರಣ ಯಾವುದೆ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಲಾಗಿಲ್ಲ."
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Database name"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದ ಹೆಸರು(~D)"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Se~rver / Port"
-msgstr ""
+msgstr "ಪರಿಚಾರಕ / ಸಂಪರ್ಕಸ್ಥಾನ(~r)"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Server"
-msgstr ""
+msgstr "ಪರಿಚಾರಕ(~S)"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port"
-msgstr ""
+msgstr "ಸಂಪರ್ಕ ಸ್ಥಳ(~P)"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Default: 3306"
-msgstr ""
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ: 3306"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "So~cket"
-msgstr ""
+msgstr "ಸಾಕೆಟ್(~c)"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Named p~ipe"
-msgstr ""
+msgstr "ನೇಮ್ಡ್ ಪೈಪ್(~i)"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Tables"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕಗಳು"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Queries"
-msgstr ""
+msgstr "ಪ್ರಶ್ನೆಗಳು"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "ಸೇರಿಸು(~A)"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "ಮುಚ್ಚು(~C)"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "Add Tables"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕಗಳನ್ನು ಸೇರಿಸಿ"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Add Table or Query"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ಅಥವ ಸಂದೇಹವನ್ನು ಸೇರಿಸಿ"
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "ಆಯ್ಕೆಗಳು"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use SQL92 naming constraints"
-msgstr ""
+msgstr "SQL92 ಹೆಸರಿಸುವ ನಿಬಂಧನೆಗಳನ್ನು ಬಳಸಿ"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
-msgstr ""
+msgstr "SELECT ಹೇಳಿಕೆಗಳಿಗೆ ಕೋಷ್ಟಕ ಆಲಿಯಾಸ್‌ ಹೆಸರನ್ನು ಸೇರಿಸಿ"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use keyword AS before table alias names"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ಆಲಿಯಾಸ್‌ ಹೆಸರಿನ ಮೊದಲು ಮುಖ್ಯಪದ AS ಅನ್ನು ಬಳಸಿ"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
-msgstr ""
+msgstr "ಹೊರಗಿನ ಜೋಡಣಾ ಸಿಂಟಾಕ್ಸ್‍ '{OJ }' ಅನ್ನು ಬಳಸಿ"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ignore the privileges from the database driver"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಚಾಲಕದ ಸವಲತ್ತಗಳನ್ನು ಆಲಕ್ಷಿಸು"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Replace named parameters with '?'"
-msgstr ""
+msgstr "ಹೆಸರಿನ ನಿಯತಾಂಕವನ್ನು '?' ಇಂದ ಬದಲಾಯಿಸು"
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Display version columns (when available)"
-msgstr ""
+msgstr "ಆವೃತ್ತಿ ಲಂಬಸಾಲನ್ನು ತೋರಿಸು (ಲಭ್ಯವಿದ್ದಾಗ)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use catalog name in SELECT statements"
-msgstr ""
+msgstr "SELECT ಹೇಳಿಕೆಗಳಲ್ಲಿ ಕೆಟಲಾಗ್ ಹೆಸರನ್ನು ಬಳಸು"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use schema name in SELECT statements"
-msgstr ""
+msgstr "SELECT ಹೇಳಿಕೆಗಳಲ್ಲಿ ಸ್ಕೀಮಾ ಹೆಸರನ್ನು ಬಳಸು"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Create index with ASC or DESC statement"
-msgstr ""
+msgstr "ASC ಅಥವ DESC ಹೇಳಿಕೆಯೊಂದಿಗೆ ಸೂಚಿಯನ್ನು ನಿರ್ಮಿಸು"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "End text lines with CR+LF"
-msgstr ""
+msgstr "CR+LF ನೊಂದಿಗಿನ ಪಠ್ಯದ ಕೊನೆಯ ಸಾಲುಗಳು"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ignore currency field information"
-msgstr ""
+msgstr "ಚಲಾವಣೆ ನಾಣ್ಯದ ಕ್ಷೇತ್ರದ ಮಾಹಿತಿಯನ್ನು ಆಲಕ್ಷಿಸು"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Form data input checks for required fields"
-msgstr ""
+msgstr "ಅಗತ್ಯ ಕ್ಷೇತ್ರಗಳಿಗಾಗಿ ಫಾರ್ಮಿನ ದತ್ತಾಂಶ ಇನ್‌ಪುಟ್‌ ಪರಿಶೀಲನೆ"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
-msgstr ""
+msgstr "ODBC ಗೆ ಸರಿಹೊಂದಿಕೊಳ್ಳುವ ದಿನಾಂಕ/ಸಮಯ ಶಿಷ್ಟತೆಗಳನ್ನು ಬಳಸಿ"
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Supports primary keys"
-msgstr ""
+msgstr "ಪ್ರಾಥಮಿಕ ಕೀಲಿಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ"
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
 msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Mixed"
-msgstr ""
+msgstr "ಮಿಶ್ರ"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "MS Access"
-msgstr ""
+msgstr "MS ಎಕ್ಸೆಸ್"
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comparison of Boolean values"
-msgstr ""
+msgstr "ಬೂಲಿಯನ್ ಮೌಲ್ಯಗಳ ಹೋಲಿಕೆ"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "ಸಿದ್ಧತೆಗಳು"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Re~trieve generated values"
-msgstr ""
+msgstr "ಉತ್ಪಾದಿಸಲಾದ ಮೌಲ್ಯಗಳನ್ನು ಮರಳಿ ಪಡೆ(~t)"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Auto-increment statement"
-msgstr ""
+msgstr "ಸ್ವಯಂ-ಏರಿಕೆ ಹೇಳಿಕೆ(~A)"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Query of generated values"
-msgstr ""
+msgstr "ಉತ್ಪಾದಿಸಲಾದ ಮೌಲ್ಯಗಳ ಪ್ರಶ್ನೆ(~Q)"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Generated Values"
-msgstr ""
+msgstr "ಉತ್ಪಾದಿಸಲಾದ ಮೌಲ್ಯಗಳು"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
+#, fuzzy
 msgid  "Special Settings"
-msgstr ""
+msgstr "ವಿಶೇಷ ಸಿದ್ಧತೆಗಳು"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
 msgstr ""
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the dBASE files"
-msgstr ""
+msgstr "dBASE ಕಡತಗಳಿಗೆ ಮಾರ್ಗ"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the text files"
-msgstr ""
+msgstr "ಪಠ್ಯ ಕಡತಗಳಿಗೆ ಮಾರ್ಗ"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the spreadsheet document"
-msgstr ""
+msgstr "ಸ್ಪ್ರೇಡ್‌ಶೀಟ್‌ ದಸ್ತಾವೇಜಿನ ಮಾರ್ಗ"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Name of the ODBC data source on your system"
-msgstr ""
+msgstr "ನಿಮ್ಮ ಗಣಕದಲ್ಲಿನ ODBC ದತ್ತ ಆಕರದ ಹೆಸರು"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the MySQL database"
-msgstr ""
+msgstr "MySQL ದತ್ತಸಂಚಯದ ಹೆಸರು"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the Oracle database"
-msgstr ""
+msgstr "Oracle ದತ್ತಸಂಚಯದ ಹೆಸರು"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the Adabas D database"
-msgstr ""
+msgstr "Adabas D ದತ್ತಸಂಚಯದ ಹೆಸರು"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Microsoft Access database file"
-msgstr ""
+msgstr "ಮೈಕ್ರೋಸಾಫ್ಟ್‍ ಎಕ್ಷೆಸ್ ದತ್ತಸಂಚಯ ಕಡತ"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
+#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "ಯಾವುದೆ ಸಿದ್ಧತೆಗಳ ಅಗತ್ಯವಿಲ್ಲ. ಸಂಪರ್ಕವು ಸರಿಯಾಗಿ ಕೆಲಸವು ಮಾಡುತ್ತಿದೆ ಎಂದು ಪರಿಶೀಲಿಸಲು, '%test' ಗುಂಡಿಯನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ."
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
+#, fuzzy
 msgid  "Datasource URL"
-msgstr ""
+msgstr "ದತ್ತಆಕರ URL"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "ಅತಿಥೇಯದ ಹೆಸರು(~H)"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "~Mozilla profile name"
-msgstr ""
+msgstr "ಮೋಝಿಲ್ಲಾ ಪ್ರೊಫೈಲಿನ ಹೆಸರು(~M)"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "~Thunderbird profile name"
-msgstr ""
+msgstr "ಥಂಡರ್ಬರ್ಡ್ ಪ್ರೊಫೈಲಿನ ಹೆಸರು(~T)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Browse"
-msgstr ""
+msgstr "ವೀಕ್ಷಿಸು"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database name"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದ ಹೆಸರು"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Server"
-msgstr ""
+msgstr "ಪರಿಚಾರಕ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Base ~DN"
-msgstr ""
+msgstr "ಮೂಲ ~DN"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port number"
-msgstr ""
+msgstr "ಸಂಪರ್ಕಸ್ಥಾನದ ಸಂಖ್ಯೆ(~P)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Data conversion"
-msgstr ""
+msgstr "ದತ್ತಾಂಶ ಮಾರ್ಪಡಣೆ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Character set"
-msgstr ""
+msgstr "ಅಕ್ಷರಗುಂಪು ಗಣ(~C)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "ನೀವು ನಿಲುಕಿಸಿಕೊಳ್ಳಬೇಕಿರುವ ಕಡತಗಳ ಬಗೆಯನ್ನು ಸೂಚಿಸಿ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Plain text files (*.txt)"
-msgstr ""
+msgstr "ಸರಳ ಪಠ್ಯ ಕಡತಗಳು (*.txt)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "'Comma separated value' files (*.csv)"
-msgstr ""
+msgstr "'ಅರ್ಧವಿರಾಮ ಚಿಹ್ನೆಗಳಿಂದ ಬೇರ್ಪಡಿಸಲಾದ' ಕಡತಗಳು (*.csv)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Custom:"
-msgstr ""
+msgstr "ಇಚ್ಛೆಯ:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Custom: *.abc"
-msgstr ""
+msgstr "ಇಚ್ಛೆಯ: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Row Format"
-msgstr ""
+msgstr "ಅಡ್ಡಸಾಲಿನ ವಿನ್ಯಾಸ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field separator"
-msgstr ""
+msgstr "ಸ್ಥಳ ವಿಭಜಕ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Text separator"
-msgstr ""
+msgstr "ಪಠ್ಯ ವಿಭಜಕ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Decimal separator"
-msgstr ""
+msgstr "ದಶಾಂಶದ ವಿಭಜಕ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Thousands separator"
-msgstr ""
+msgstr "ಸಾವಿರದ ವಿಭಜಕ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Text contains headers"
-msgstr ""
+msgstr "ಪಠ್ಯವು ಹೆಡರುಗಳನ್ನು ಹೊಂದಿದೆ(~T)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
+#, fuzzy
 msgid  "{None}"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ""
+msgstr "{ಏನೂ ಇಲ್ಲ}"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "#1 must be set."
-msgstr ""
+msgstr "#1 ಅನ್ನು ಸಜ್ಜುಗೊಳಿಸಬೇಕು."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
+#, fuzzy
 msgid  "#1 and #2 must be different."
-msgstr ""
+msgstr "#1 ಹಾಗು #2 ಭಿನ್ನವಾಗಿರಬೇಕು."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
+#, fuzzy
 msgid  "Wildcards such as ?,* are not allowed in #1."
-msgstr ""
+msgstr "#1 ನಲ್ಲಿ ?,* ನಂತಹ ವೈಲ್ಡ್‍ಕಾರ್ಡುಗಳಿಗೆ ಅವಕಾಶವಿಲ್ಲ."
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "JDBC d~river class"
-msgstr ""
+msgstr "JDBC ಚಾಲಕ ವರ್ಗ(~r)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test class"
-msgstr ""
+msgstr "ಪರೀಕ್ಷಾ ವರ್ಗ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Socket"
-msgstr ""
+msgstr "ಸಾಕೆಟ್"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr "ಉಳಿಸು"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Create New Directory"
-msgstr ""
+msgstr "ಹೊಸ ಕೋಶವನ್ನು ರಚಿಸು"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Up One Level"
-msgstr ""
+msgstr "ಒಂದುಸ್ತರ ಮೇಲಕ್ಕೆ"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "File ~name:"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "ಕಡತ ಹೆಸರು(~n):"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
+#, fuzzy
 msgid  "~Path:"
-msgstr ""
+msgstr "ಮಾರ್ಗ(~P):"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
+#, fuzzy
 msgid  "Folder"
-msgstr ""
+msgstr "ಕಡತಕೋಶ"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "ಈ ಕಡತವು ಈಗಾಗಲೇ ಲಭ್ಯವಿದೆ. ತಿದ್ದಿ ಬರೆಯಬೇಕೇ?"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ಸಾಮಾನ್ಯ"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "ಅತಿಥೇಯದ ಹೆಸರು(~H)"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User authentication"
-msgstr ""
+msgstr "ಬಳಕೆದಾರ ದೃಢೀಕರಣ"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "ಬಳಕೆದಾರರ ಹೆಸರು(~U)"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password required"
-msgstr ""
+msgstr "ಗುಪ್ತಪದದ ಅಗತ್ಯವಿದೆ"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "JDBC properties"
-msgstr ""
+msgstr "JDBC ಗುಣಗಳು"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~JDBC driver class"
-msgstr ""
+msgstr "~JDBC ಚಾಲಕ ವರ್ಗ"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test Class"
-msgstr ""
+msgstr "ಪ್ರಾಯೋಗಿಕ ವರ್ಗ"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test Connection"
-msgstr ""
+msgstr "ಪ್ರಾಯೋಗಿಕ ಸಂಪರ್ಕ"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
+#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
-msgstr ""
+msgstr "ನಿಮ್ಮ ಗಣಕದಲ್ಲಿ ಯಾವುದೆ Adabas D ದತ್ತ ಆಕರಗಳು ಕಂಡುಬಂದಿಲ್ಲ."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
+#, fuzzy
 msgid  "Connection Test"
-msgstr ""
+msgstr "ಸಂಪರ್ಕದ ಪರಿಶೀಲನೆ"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The connection was established successfully."
-msgstr ""
+msgstr "ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕ ಸಾಧಿಸಲಾಗಿದೆ."
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "ಸಂಪರ್ಕವನ್ನು ಪಡೆಯಲಾಗಲಿಲ್ಲ."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
-msgstr ""
+msgstr "JDBC ಚಾಲಕವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಲೋಡ್ ಮಾಡಲಾಯಿತು."
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The JDBC driver could not be loaded."
-msgstr ""
+msgstr "JDBC ಚಾಲಕವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಲೋಡ್ ಮಾಡಲಾಗಿಲ್ಲ."
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
+#, fuzzy
 msgid  "MS Access file"
-msgstr ""
+msgstr "MS ಎಕ್ಸೆಸ್ ಕಡತ"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
+#, fuzzy
 msgid  "MS Access 2007 file"
-msgstr ""
+msgstr "MS ಎಕ್ಸೆಸ್ 2007 ಕಡತ"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "A password is needed to connect to the data source \"$name$\"."
-msgstr ""
+msgstr "ದತ್ತಾಂಶ ಆಕರ \"$name$\" ಗೆ ಸಂಪರ್ಕಹೊಂದಲು ಒಂದು ಗುಪ್ತಪದದ ಅಗತ್ಯವಿದೆ."
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
+#, fuzzy
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "ಕೋಶ\n\n$path$\n\nಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ. ಅದನ್ನು ನಿರ್ಮಿಸಬೇಕೆ?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
+#, fuzzy
 msgid  "The directory $name$ could not be created."
-msgstr ""
+msgstr "ಕೋಶ $name$ ಅನ್ನು ನಿರ್ಮಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Convert Database"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವನ್ನು ಮಾರ್ಪಡಿಸು"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Please enter the ~password for the user 'DOMAIN'."
-msgstr ""
+msgstr "ದಯವಿಟ್ಟು 'DOMAIN' ಬಳಕೆದಾರನಿಗಾಗಿ ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ(~p)."
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Tables Filter"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕಗಳ ಶೋಧಕ"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables and table filter"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕಗಳು ಹಾಗು ಕೋಷ್ಟಕ ಶೋಧಕಗಳು"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Mark the tables that should be visible for the applications."
-msgstr ""
+msgstr "ಅನ್ವಯಗಳಿಗೆ ಗೋಚರಿಸಬೇಕಿರುವ ಕೋಷ್ಟಕಗಳನ್ನು ಗುರುತು ಹಾಕಿ."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Database Wizard"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
-msgid  "Database Wizard"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ವಿಝಾರ್ಡ್"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Select database"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
+#, fuzzy
 msgid  "Set up dBASE connection"
-msgstr ""
+msgstr "dBASE ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "ಪಠ್ಯ ಕಡತಗಳಿಗೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
+#, fuzzy
 msgid  "Set up Microsoft Access connection"
-msgstr ""
+msgstr "ಮೈಕ್ರೋಸಾಫ್ಟ್‍ ಎಕ್ಸೆಸ್ ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
+#, fuzzy
 msgid  "Set up LDAP connection"
-msgstr ""
+msgstr "LDAP ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
+#, fuzzy
 msgid  "Set up Adabas D connection"
-msgstr ""
+msgstr "Adabas D ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
+#, fuzzy
 msgid  "Set up ADO connection"
-msgstr ""
+msgstr "ADO ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
+#, fuzzy
 msgid  "Set up JDBC connection"
-msgstr ""
+msgstr "JDBC ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
+#, fuzzy
 msgid  "Set up Oracle database connection"
-msgstr ""
+msgstr "ಒರಾಕಲ್ ದತ್ತಸಂಚಯ ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
+#, fuzzy
 msgid  "Set up MySQL connection"
-msgstr ""
+msgstr "MySQL ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
+#, fuzzy
 msgid  "Set up ODBC connection"
-msgstr ""
+msgstr "ODBC ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
+#, fuzzy
 msgid  "Set up Spreadsheet connection"
-msgstr ""
+msgstr "ಸ್ಪ್ರೇಡ್‌ಶೀಟ್‌ ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
+#, fuzzy
 msgid  "Set up user authentication"
-msgstr ""
+msgstr "ಬಳಕೆದಾರ ದೃಢೀಕರಣವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
+#, fuzzy
 msgid  "Set up MySQL server data"
-msgstr ""
+msgstr "MySQL ಪರಿಚಾರಕ ದತ್ತಾಂಶವನ್ನು ಸಿದ್ಧಗೊಳಿಸು"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
+#, fuzzy
 msgid  "Save and proceed"
-msgstr ""
+msgstr "ಉಳಿಸು ಹಾಗು ಮುಂದುವರೆಸು"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
+#, fuzzy
 msgid  "New Database"
-msgstr ""
+msgstr "ಹೊಸ ದತ್ತಸಂಚಯ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up a connection to a MySQL database"
-msgstr ""
+msgstr "ಒಂದು MySQL ದತ್ತಸಂಚಯಕ್ಕೆ ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ODBC ಅಥವ JDBC ಅನ್ನು ಬಳಸಿಕೊಂಡು MySQL ದತ್ತಸಂಚಯಕ್ಕೆ ನೀವು ಸಂಪರ್ಕಸಾಧಿಸಬಹುದು.\nಈ ಕೆಳಗಿನ ಸಿದ್ಧತೆಗಳ ಬಗೆಗೆ ನಿಮಗೆ ಸರಿಯಾದ ಮಾಹಿತಿ ಇಲ್ಲದೆ ಇದ್ದಲ್ಲಿ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥಾಪಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "How do you want to connect to your MySQL database?"
-msgstr ""
+msgstr "ನಿಮ್ಮ MySQL ದತ್ತಸಂಚಯಕ್ಕೆ ಹೇಗೆ ಸಂಪರ್ಕಹೊಂದಲು ಬಯಸುತ್ತೀರಿ?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect using ODBC (Open Database Connectivity)"
-msgstr ""
+msgstr "ODBC ಅನ್ನು ಬಳಸಿಕೊಂಡು ಸಂಪರ್ಕಸಾಧಿಸಿ (ಮುಕ್ತ ದತ್ತಸಂಚಯ ಸಂಪರ್ಕ)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect using JDBC (Java Database Connectivity)"
-msgstr ""
+msgstr "JDBC ಅನ್ನು ಬಳಸಿಕೊಂಡು ಸಂಪರ್ಕಸಾಧಿಸಿ (ಜಾವ ದತ್ತಸಂಚಯ ಸಂಪರ್ಕ)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect directly"
-msgstr ""
+msgstr "ನೇರವಾಗಿ ಸಂಪರ್ಕ ಜೋಡಿಸು"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up the user authentication"
-msgstr ""
+msgstr "ಬಳಕೆದಾರ ದೃಢೀಕರಣವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "ಕೆಲವೊಂದು ದತ್ತಸಂಚಯಕ್ಕಾಗಿ ಬಳಕೆದಾರ ಒಂದು ಹೆಸರನ್ನು ನಮೂದಿಸುವ ಅಗತ್ಯವಿರುತ್ತದೆ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "ಬಳಕೆದಾರರ ಹೆಸರು(~U)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password re~quired"
-msgstr ""
+msgstr "ಗುಪ್ತಪದದ ಅಗತ್ಯವಿದೆ(~q)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Test Connection"
-msgstr ""
+msgstr "ಪ್ರಾಯೋಗಿಕ ಸಂಪರ್ಕ(~T)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Decide how to proceed after saving the database"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವನ್ನು ಉಳಿಸಿದ ಮೇಲೆ ಹೇಗೆ ಮುಂದುವರೆಯಬೇಕು ಎಂದು ನಿರ್ಧರಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "ಗಾರುಡಿಯು ದತ್ತಸಂಚಯವನ್ನು %PRODUCTNAME ಗೆ ನೋಂದಾಯಿಸಲು ನೀವು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes, register the database for me"
-msgstr ""
+msgstr "ಹೌದು, ನನಗಾಗಿ ದತ್ತಸಂಚಯವನ್ನು ನೋಂದಾಯಿಸಿ(~Y)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "N~o, do not register the database"
-msgstr ""
+msgstr "ಇಲ್ಲ, ದತ್ತಸಂಚಯವನ್ನು ನೋಂದಾಯಿಸಬೇಡ(~o)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "After the database file has been saved, what do you want to do?"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಕಡತವನ್ನು ಉಳಿಸಿದ ನಂತರ ನೀವು ಏನನ್ನು ಮಾಡಲು ಬಯಸುತ್ತೀರಿ?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Open the database for editing"
-msgstr ""
+msgstr "ಸಂಪಾದಿಸಲು ದತ್ತಸಂಚಯವನ್ನು ತೆರೆಯಿರಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Create tables using the table wizard"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ಗಾರುಡಿಯನ್ನು ಬಳಸಿಕೊಂಡು ಕೋಷ್ಟಕವನ್ನು ನಿರ್ಮಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Click 'Finish' to save the database."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವನ್ನು ಉಳಿಸಲು 'ಪೂರ್ಣಗೊಳಿಸು' ಅನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up connection to a MySQL database using JDBC"
-msgstr ""
+msgstr "JDBC ಅನ್ನು ಬಳಸಿಕೊಂಡು ಒಂದು MySQL ದತ್ತಸಂಚಯಕ್ಕೆ ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ಒಂದು MySQL ದತ್ತಸಂಚಯಕ್ಕೆ ಸಂಪರ್ಕ ಜೋಡಿಸಲು ಅಗತ್ಯವಿರುವ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಿ.JDBC ಚಾಲಕ ವರ್ಗವು ನಿಮ್ಮ ಗಣಕದಲ್ಲಿ ಅನುಸ್ಥಾಪಿತಗೊಂಡಿರಬೇಕು ಹಾಗು %PRODUCTNAME ಗೆ ನೋಂದಾಯಿಸಲ್ಪಡಬೇಕು ಎನ್ನುವುದನ್ನು ನೆನಪಿಡಿ. \nಈ ಕೆಳಗಿನ ಸಿದ್ಧತೆಗಳ ಬಗೆಗೆ ನಿಮಗೆ ಸರಿಯಾದ ಮಾಹಿತಿ ಇಲ್ಲದೆ ಇದ್ದಲ್ಲಿ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥಾಪಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
+#, fuzzy
 msgid  "MySQL JDBC d~river class:"
-msgstr ""
+msgstr "MySQL JDBC ಚಾಲಕ ವರ್ಗ(~r):"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 3306"
-msgstr ""
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ: 3306"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up connection to a MySQL database"
-msgstr ""
+msgstr "MySQL ದತ್ತಸಂಚಯಕ್ಕೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "ಒಂದು MySQL ದತ್ತಸಂಚಯಕ್ಕೆ ಸಂಪರ್ಕ ಜೋಡಿಸಲು ಅಗತ್ಯವಿರುವ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to dBASE files"
-msgstr ""
+msgstr "dBASE ಕಡತಗಳಿಗೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Select the folder where the dBASE files are stored."
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "dBASE ಕಡತಗಳನ್ನು ಶೇಖರಿಸಿಡಲಾದ ಕಡತಕೋಶವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "CSV (Comma Separated Values) ಕಡತಗಳನ್ನು ಶೇಖರಿಸಿಡಲಾದ ಕಡತಕೋಶವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ. %PRODUCTNAME ಮೂಲವು ಈ ಕಡತಗಳನ್ನು ಓದಲು ಮಾತ್ರವಾದ ಕ್ರಮದಲ್ಲಿ ತೆರೆಯುತ್ತದೆ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to text files"
-msgstr ""
+msgstr "ಪಠ್ಯ ಕಡತಗಳಿಗೆ ಮಾರ್ಗ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to a Microsoft Access database"
-msgstr ""
+msgstr "ಮೈಕ್ರೋಸಾಫ್ಟ್‍ ಎಕ್ಸೆಸ್‌ ದತ್ತಸಂಚಯಕ್ಕೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "ನೀವು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಬಯಸುವ ಮೈಕ್ರೋಸಾಫ್ಟ್‍ ಕಡತವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up a connection to an LDAP directory"
-msgstr ""
+msgstr "LDAP ಕೋಶಕ್ಕೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ಒಂದು LDAP ಕೋಶಕ್ಕೆ ಸಂಪರ್ಕ ಜೋಡಿಸಲು ಅಗತ್ಯವಿರುವ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಿ.\nಈ ಕೆಳಗಿನ ಸಿದ್ಧತೆಗಳ ಬಗೆಗೆ ನಿಮಗೆ ಸರಿಯಾದ ಮಾಹಿತಿ ಇಲ್ಲದೆ ಇದ್ದಲ್ಲಿ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥಾಪಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 389"
-msgstr ""
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use ~secure connection (SSL)"
-msgstr ""
+msgstr "ಸುರಕ್ಷಿತ ಸಂಪರ್ಕವನ್ನು ಬಳಸು(SSL)(~s)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an Adabas D database"
-msgstr ""
+msgstr "Adabas D ದತ್ತಸಂಚಯಕ್ಕೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "ನೀವು ಸಂಪರ್ಕಸಾಧಿಸಲು ಬಯಸುವ Adabas D ದತ್ತಸಂಚಯದ ಹೆಸರನ್ನು ನಮೂದಿಸಿ.\n%PRODUCTNAME ಗೆ ಈಗಾಗಲೆ ನೋಂದಾಯಿಸಲಾದಂತಹ Adabas D ದತ್ತಸಂಚಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಲು 'ವೀಕ್ಷಿಸು...' ಅನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an ADO database"
-msgstr ""
+msgstr "ADO ದತ್ತಸಂಚಯಕ್ಕೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ನೀವು ಸಂಪರ್ಕ ಸಾಧಿಸಲು ಬಯಸುವ ADO ದತ್ತಸಂಚಯದ ತಾಣಸೂಚಿಯನ್ನು ನಮೂದಿಸಿ.\nಒದಗಿಸುವವರ-ನಿಗದಿತ ಸಿದ್ಧತೆಗಳನ್ನು ಸಂರಚಿಸಲು 'ವೀಕ್ಷಿಸು' ಅನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ.\nಈ ಕೆಳಗಿನ ಸಿದ್ಧತೆಗಳ ಬಗೆಗೆ ನಿಮಗೆ ಸರಿಯಾದ ಮಾಹಿತಿ ಇಲ್ಲದೆ ಇದ್ದಲ್ಲಿ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥಾಪಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an ODBC database"
-msgstr ""
+msgstr "ODBC ದತ್ತಸಂಚಯಕ್ಕೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ನೀವು ಸಂಪರ್ಕಸಾಧಿಸಲು ಬಯಸುವ ODBC ದತ್ತಸಂಚಯದ ಹೆಸರನ್ನು ನಮೂದಿಸಿ.\n%PRODUCTNAME ಗೆ ಈಗಾಗಲೆ ನೋಂದಾಯಿಸಲಾದಂತಹ ODBC ದತ್ತಸಂಚಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಲು 'ವೀಕ್ಷಿಸು...' ಅನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ.\nಈ ಕೆಳಗಿನ ಸಿದ್ಧತೆಗಳ ಬಗೆಗೆ ನಿಮಗೆ ಸರಿಯಾದ ಮಾಹಿತಿ ಇಲ್ಲದೆ ಇದ್ದಲ್ಲಿ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥಾಪಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to a JDBC database"
-msgstr ""
+msgstr "JDBC ದತ್ತಸಂಚಯಕ್ಕೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ಒಂದು JDBC ದತ್ತಸಂಚಯಕ್ಕೆ ಸಂಪರ್ಕ ಜೋಡಿಸಲು ಅಗತ್ಯವಿರುವ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಿ.\nಈ ಕೆಳಗಿನ ಸಿದ್ಧತೆಗಳ ಬಗೆಗೆ ನಿಮಗೆ ಸರಿಯಾದ ಮಾಹಿತಿ ಇಲ್ಲದೆ ಇದ್ದಲ್ಲಿ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥಾಪಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an Oracle database"
-msgstr ""
+msgstr "ಒರಾಕಲ್ ದತ್ತಸಂಚಯಕ್ಕೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 1521"
-msgstr ""
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ: 1521"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Oracle JDBC ~driver class"
-msgstr ""
+msgstr "ಒರಾಕಲ್ JDBC ಚಾಲಕ ವರ್ಗ(~d)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ಒಂದು ಒರಾಕಲ್ ದತ್ತಸಂಚಯಕ್ಕೆ ಸಂಪರ್ಕ ಜೋಡಿಸಲು ಅಗತ್ಯವಿರುವ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಿ.JDBC ಚಾಲಕ ವರ್ಗವು ನಿಮ್ಮ ಗಣಕದಲ್ಲಿ ಅನುಸ್ಥಾಪಿತಗೊಂಡಿರಬೇಕು ಹಾಗು %PRODUCTNAME ಗೆ ನೋಂದಾಯಿಸಲ್ಪಡಬೇಕು ಎನ್ನುವುದನ್ನು ನೆನಪಿಡಿ. \nಈ ಕೆಳಗಿನ ಸಿದ್ಧತೆಗಳ ಬಗೆಗೆ ನಿಮಗೆ ಸರಿಯಾದ ಮಾಹಿತಿ ಇಲ್ಲದೆ ಇದ್ದಲ್ಲಿ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥಾಪಕರನ್ನು ಸಂಪರ್ಕಿಸಿ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to spreadsheets"
-msgstr ""
+msgstr "ಸ್ಪ್ರೆಡ್‌ಶೀಟ್‌ಗಳಿಗೆ ಒಂದು ಸಂಪರ್ಕವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "%PRODUCTNAME ಸ್ಪ್ರೆಡ್‌ಶೀಟ್‌ ಅಥವ ಮೈಕ್ರೋಸಾಫ್ಟ್‍ ವರ್ಕ-ಬುಕ್‌ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಲು 'ವೀಕ್ಷಿಸು...' ಅನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ.\n%PRODUCTNAME ಕೇವಲ ಓದಲು ಮಾತ್ರವಾದ ಕ್ರಮದಲ್ಲಿ ತೆರೆಯುತ್ತದೆ."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
+#, fuzzy
 msgid  "~Location and file name"
-msgstr ""
+msgstr "ಸ್ಥಳ ಹಾಗು ಕಡತದ ಹೆಸರು(~L)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Password required"
-msgstr ""
+msgstr "ಗುಪ್ತಪದದ ಅಗತ್ಯವಿದೆ(~P)"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use catalog for file-based databases"
-msgstr ""
+msgstr "ಕಡತ ಆಧರಿತವಾದ ದತ್ತಸಂಚಯಗಳಿಗಾಗಿ ಕೆಟಲಾಗ್‌ ಅನ್ನು ಬಳಸು"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Connection Settings"
-msgstr ""
+msgstr "ಸಂಪರ್ಕ ಸಿದ್ಧತೆಗಳು"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "ಅತಿಥೇಯದ ಹೆಸರು(~H)"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port number"
-msgstr ""
+msgstr "ಸಂಪರ್ಕಸ್ಥಾನದ ಸಂಖ್ಯೆ(~P)"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "Advanced Properties"
-msgstr ""
+msgstr "ಸುಧಾರಿತ ಗುಣಗಳು"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
+#, fuzzy
 msgid  "Additional Settings"
-msgstr ""
+msgstr "ಹೆಚ್ಚಿನ ಸಿದ್ಧತೆಗಳು"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Connection settings"
-msgstr ""
+msgstr "ಸಂಪರ್ಕ ಸಿದ್ಧತೆಗಳು"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
+#, fuzzy
 msgid  "Database properties"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
-msgid  "Database properties"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ ಗುಣಗಳು"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr ""
+msgstr "%PRODUCTNAME ದತ್ತಸಂಚಯ ಗಾರುಡಿಗೆ ಸುಸ್ವಾಗತ"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "ಹೊಸ ದತ್ತಸಂಚಯವನ್ನು ನಿರ್ಮಿಸಲು, ಈಗಿರುವ ದತ್ತಸಂಚಯ ಕಡತವನ್ನು ತೆರೆಯಲು, ಅಥವ ಪರಿಚಾರಕದಲ್ಲಿನ ದತ್ತಸಂಚಯದೊಂದಿಗೆ ಸಂಪರ್ಕಸಾಧಿಸಲು ದತ್ತಸಂಚಯ ಗಾರುಡಿಯನ್ನು ಬಳಸಿ."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "What do you want to do?"
-msgstr ""
+msgstr "ನೀವನ್ನು ಏನನ್ನು ಮಾಡಲು ಬಯಸುತ್ತೀರಿ?"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Create a n~ew database"
-msgstr ""
+msgstr "ಒಂದು ಹೊಸ ದತ್ತಸಂಚಯವನ್ನು ರಚಿಸು(~e)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open an existing database ~file"
-msgstr ""
+msgstr "ಈಗಿರುವ ಒಂದು ದತ್ತಸಂಚಯ ಕಡತವನ್ನು ತೆರೆ(~f)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Recently used"
-msgstr ""
+msgstr "ಇತ್ತೀಚೆಗೆ ಬಳಸಲಾದ"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect to an e~xisting database"
-msgstr ""
+msgstr "ಈಗಿರುವ ಒಂದು ದತ್ತಸಂಚಯ ಕಡತಕ್ಕೆ ಸಂಪರ್ಕ ಜೋಡಿಸು(~f)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "ನೀವು ಯಾವ ದತ್ತಸಂಚಯದ ಬಗೆಗೆ ಸಂಪರ್ಕವನ್ನು ಸಾಧಿಸಲು ಬಯಸುವಿರೊ ಅದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database ~type "
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದ ಬಗೆ(~t) "
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯ"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "ಈ ಕೆಳಗಿನ ಪುಟಗಳಲ್ಲಿ, ಸಂಪರ್ಕದ ಬಗೆಗೆ ವಿವರವಾದ ಸಿದ್ಧತೆಗಳನ್ನು ಸಿದ್ಧಗೊಳಿಸಬಹುದು.\n\nನೀವು ಸಿದ್ಧಗೊಳಿಸುವ ಹೊಸ ಸಿದ್ಧತೆಗಳು ಹಳೆಯ ಸಿದ್ಧತೆಗಳ ಮೇಲೆಯೆ ತಿದ್ಧಿ ಬರೆಯಲ್ಪಡುತ್ತವೆ."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
+#, fuzzy
 msgid  "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Data Source Properties: #"
-msgstr ""
+msgstr "ದತ್ತ ಆಕರದ ಗುಣಗಳು: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
+#, fuzzy
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "ಕ್ರಮವಿಧಿ ಭಂಡಾರ #lib# ಅನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಅಥವ ಭ್ರಷ್ಟಗೊಂಡಿದೆ. ODBC ದತ್ತಾಂಶ ಆಕರ ದತ್ತಾಂಶದ ಆಯ್ಕೆಯು ಲಭ್ಯವಿಲ್ಲ."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "ಈ ಪ್ಲಾಟ್‌ಫಾರ್ಮಿನ ಮೇಲೆ ಈ ಬಗೆಯ ದತ್ತಾಂಶ ಆಕರಕ್ಕೆ ಬೆಂಬಲವಿಲ್ಲ.\nನೀವು ಸಿದ್ಧತೆಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದಾಗಿದೆ, ಆದರೆ ಬಹುಷಃ ದತ್ತಸಂಚಯದೊಂದಿಗೆ ಸಂಪರ್ಕ ಸಾಧಿಸಲು ಸಾಧ್ಯವಿರುವುದಿಲ್ಲ."
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ಸಾಮಾನ್ಯ"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Optional settings"
-msgstr ""
+msgstr "ಐಚ್ಛಿಕ ಸಿದ್ಧತೆಗಳು"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Display deleted records as well"
-msgstr ""
+msgstr "ಅಳಿಸಲಾದ ದಾಖಲೆಗಳನ್ನೂ ಸಹ ತೋರಿಸು"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "ಸೂಚನೆ: ಅಳಿಸಿದಾಗ, ಅಂದರೆ ನಿಷ್ಕ್ರಿಯವಾಗಿದ್ದಾಗ, ದಾಖಲೆಗಳನ್ನು ತೋರಿಸಲಾಗುವುದು, ನೀವು ದತ್ತಾಂಶ ಆಕರದಿಂದ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Indexes..."
-msgstr ""
+msgstr "ಸೂಚಿಗಳು..."
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Optional Settings"
-msgstr ""
+msgstr "ಐಚ್ಛಿಕ ಸಿದ್ಧತೆಗಳು"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "ODBC ~options"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr ""
+msgstr "ODBC ಐಚ್ಛಿಕಗಳು(~o)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "ದತ್ತಾಂಶ ಬಫರ್ ಗಾತ್ರ (m~b)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data increment (MB)"
-msgstr ""
+msgstr "ದತ್ತಾಂಶ ಏರಿಕೆ (MB)(~D)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Administration"
-msgstr ""
+msgstr "ನಿರ್ವಹಣೆ"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Control ~user name"
-msgstr ""
+msgstr "ನಿಯಂತ್ರಣ ಬಳಕೆದಾರ ಹೆಸರು(~u)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Control ~password"
-msgstr ""
+msgstr "ನಿಯಂತ್ರಣ ಗುಪ್ತಪದ(~p)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME ಅನ್ನು ಮುಚ್ಚುವಾಗ ಸೇವೆಯನ್ನು ಸ್ಥಗಿತಗೊಳಿಸು"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "E~xtended..."
-msgstr ""
+msgstr "ವಿಸ್ತರಿಸಲಾದ(~x)..."
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "MySQL JDBC d~river class"
-msgstr ""
+msgstr "MySQL JDBC ಚಾಲಕ ವರ್ಗ(~r)"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test class"
-msgstr ""
+msgstr "ಪರೀಕ್ಷಾ ವರ್ಗ"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User authentication"
-msgstr ""
+msgstr "ಬಳಕೆದಾರ ದೃಢೀಕರಣ"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "ಬಳಕೆದಾರರ ಹೆಸರು(~U)"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password required"
-msgstr ""
+msgstr "ಗುಪ್ತಪದದ ಅಗತ್ಯವಿದೆ"
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Oracle JDBC d~river class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
+msgstr "ಒರಾಕಲ್ JDBC ಚಾಲಕ ವರ್ಗ(~r)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Base DN"
-msgstr ""
+msgstr "ಮೂಲ DN(~B)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use secure connection(SSL)"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "ಸುರಕ್ಷಿತ ಸಂಪರ್ಕವನ್ನು ಬಳಸು(SSL)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Maximum number of ~records"
-msgstr ""
+msgstr "ಗರಿಷ್ಟ ಸಂಖ್ಯೆಯ ದಾಖಲೆಗಳು(~r)"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Hostname"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "ಅತಿಥೇಯದ ಹೆಸರು(~H)"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Driver settings"
-msgstr ""
+msgstr "ಚಾಲಕ ಸಿದ್ಧತೆಗಳು(~D)"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
+#, fuzzy
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "ಈಗಿರುವ ದತ್ತಸಂಚಯದೊಂದಿಗೆ ಸಂಪರ್ಕ ಸಾಧಿಸಲು 'ಈಗಿರುವ ಒಂದು ದತ್ತಸಂಚಯಕ್ಕೆ ಸಂಪರ್ಕಸಾಧಿಸು' ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Indexes"
-msgstr ""
+msgstr "ಸೂಚಿಪಟ್ಟಿಗಳು"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Table"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ(~T)"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Assignment"
-msgstr ""
+msgstr "ನಿಗದಿತ ಕಾರ್ಯ"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~able indexes"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ಸೂಚಿಗಳು(~a)"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Free indexes"
-msgstr ""
+msgstr "ಮುಕ್ತ ಸೂಚಿಗಳು(~F)"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL ಆಜ್ಞೆ"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Command to execute"
-msgstr ""
+msgstr "ಕಾರ್ಯಗತಗೊಳಿಸಲು ಆಜ್ಞೆ"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Execute"
-msgstr ""
+msgstr "ಕಾರ್ಯಗತಗೊಳಿಸು"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Previous commands"
-msgstr ""
+msgstr "ಹಿಂದಿ ಆಜ್ಞೆಗಳು"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr "ಸ್ಥಿತಿ"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ಮುಚ್ಚು"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Execute SQL Statement"
-msgstr ""
+msgstr "SQL ಹೇಳಿಕೆಯನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸು"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
+#, fuzzy
 msgid  "Command successfully executed."
-msgstr ""
+msgstr "ಆಜ್ಞೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಕಾರ್ಯಗತಗೊಳಿಸಲಾಯಿತು."
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದೊಂದಿಗಿನ ಸಂಪರ್ಕವು ಕಡಿದು ಹೋಗಿದೆ. ಸಂವಾದವು ಮುಚ್ಚಲ್ಪಟ್ಟಿದೆ."
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Field Format"
-msgstr ""
+msgstr "ಕ್ಷೇತ್ರ ನಮೂನೆ"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Bac~k"
-msgstr ""
+msgstr "ಹಿಂದೆ(~k)"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "ಅಕ್ಷರಶೈಲಿ"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "ಫಾರ್ಮಾಟ್"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "ಹೊಂದಿಕೆ"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
+#, fuzzy
 msgid  "Table Format"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ರಚನೆ"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Save As"
-msgstr ""
+msgstr "ಹೀಗೆ ಉಳಿಸು"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter a name for the object to be created:"
-msgstr ""
+msgstr "ರಚಿಸಬೇಕಿರುವ ಅಂಶದ ಒಂದು ಹೆಸರನ್ನು ನಮೂದಿಸಿ:"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Catalog"
-msgstr ""
+msgstr "ಕೆಟಲಾಗ್‌(~C)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Schema"
-msgstr ""
+msgstr "ಸ್ಕೀಮಾ(~S)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Table Name"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ಹೆಸರು(~T)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Name of table view"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ನೋಟದ ಹೆಸರು(~N)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Query name"
-msgstr ""
+msgstr "ಪ್ರಶ್ನೆಯ ಹೆಸರು(~Q)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
+#, fuzzy
 msgid  "Rename to"
-msgstr ""
+msgstr "ಹೆಸರನ್ನು ಇದಕ್ಕೆ ಬದಲಾಯಿಸು"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
+#, fuzzy
 msgid  "Insert as"
-msgstr ""
+msgstr "ಹೀಗೆ ಅಳವಡಿಸು"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Height"
-msgstr ""
+msgstr "ಉದ್ದ(~H)"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "ಸ್ವಯಂಚಾಲಿತ(~A)"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Row Height"
-msgstr ""
+msgstr "ಅಡ್ಡಸಾಲಿನ ಉದ್ದ"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Width"
-msgstr ""
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "ಅಗಲ(~W)"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Column Width"
-msgstr ""
+msgstr "ಲಂಬಸಾಲಿನ ಅಗಲ"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Data Source"
-msgstr ""
+msgstr "ದತ್ತ ಆಕರ"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose a data source:"
-msgstr ""
+msgstr "ಒಂದು ದತ್ತ ಆಕರವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ:"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Organize..."
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥಿತವಾಗಿ ಜೋಡಿಸು..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Create..."
-msgstr ""
+msgstr "ರಚಿಸು..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
+#, fuzzy
 msgid  "Local Databases"
-msgstr ""
+msgstr "ಸ್ಥಳೀಯ ದತ್ತಸಂಚಯ"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
+#, fuzzy
 msgid  "Choose a database"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವನ್ನು ಆಯ್ಕೆ ಮಾಡು"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Indexes"
-msgstr ""
+msgstr "ಸೂಚಿಪಟ್ಟಿಗಳು"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "New Index"
-msgstr ""
+msgstr "ಹೊಸ ಸೂಚಿ"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Delete Current Index"
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಸೂಚಿಯನ್ನು ಅಳಿಸು"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Rename Current Index"
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಸೂಚಿಯ ಹೆಸರನ್ನು ಬದಲಾಯಿಸು"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Save Current Index"
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಸೂಚಿಯನ್ನು ಉಳಿಸು"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Reset Current Index"
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಸೂಚಿಯನ್ನು ಮರಳಿ ಹೊಂದಿಸು"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Index details"
-msgstr ""
+msgstr "ಸೂಚಿ ವಿವರಗಳು"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Index identifier:"
-msgstr ""
+msgstr "ಸೂಚಿ ಪತ್ತೆಗಾರ:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Unique"
-msgstr ""
+msgstr "ವಿಶಿಷ್ಟ(~U)"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Fields"
-msgstr ""
+msgstr "ವರ್ಗಗಳು"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "ಮುಚ್ಚು(~C)"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
+#, fuzzy
 msgid  "Sort order"
-msgstr ""
+msgstr "ವಿಂಗಡಣೆ ಕ್ರಮ"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
+#, fuzzy
 msgid  "Index field"
-msgstr ""
+msgstr "ಸೂಚಿ ಕ್ಷೇತ್ರ"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
-msgstr ""
+msgstr "ಆರೋಹಣ"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
-msgstr ""
+msgstr "ಅವರೋಹಣ"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete the index '$name$'?"
-msgstr ""
+msgstr "ಸೂಚಿ '$name$' ಅನ್ನು ನೀವು ಖಚಿತವಾಗಿಯೂ ಅಳಿಸಿಹಾಕಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
+#, fuzzy
 msgid  "index"
-msgstr ""
+msgstr "ಸೂಚಿ"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
+#, fuzzy
 msgid  "Save Index"
-msgstr ""
+msgstr "ಉಳಿಸುವ ಸೂಚಕ"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The index must contain at least one field."
-msgstr ""
+msgstr "ಸೂಚಿಯು ಕನಿಷ್ಟ ಒಂದು ಕ್ಷೇತ್ರವನ್ನಾದರೂ ಹೊಂದಿರಬೇಕು."
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Exit Index Design"
-msgstr ""
+msgstr "ಸೂಚಿ ವಿನ್ಯಾಸದಿಂದ ನಿರ್ಗಮಿಸು"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to save the changes made to the current index?"
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಸೂಚಿಗೆ ನೀವು ಮಾಡಿದ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
+#, fuzzy
 msgid  "There is already another index named \"$name$\"."
-msgstr ""
+msgstr "\"$name$\" ಎಂಬ ಹೆಸರಿನ ಬೇರೊಂದು ಸೂಚಿಯು ಈಗಾಗಲೆ ಇದೆ."
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr ""
+msgstr "ಒಂದು ಸೂಚಿ ವಿವರಣೆಯಲ್ಲಿ, ಯಾವುದೆ ಕೋಷ್ಟಕ ಲಂಬಸಾಲು ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚುಬಾರಿ ಇರುವಂತಿಲ್ಲ. ಆದರೆ, ನೀವು \"$name$\" ಲಂಬಸಾಲನ್ನು ಎರಡು ಬಾರಿ ನಮೂದಿಸಿದ್ದೀರಿ."
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "~Parameters"
-msgstr ""
+msgstr "ನಿಯತಾಂಕಗಳು(~P)"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Value"
-msgstr ""
+msgstr "ಮೌಲ್ಯ(~V)"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next"
-msgstr ""
+msgstr "ಮುಂದಕ್ಕೆ(~N)"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Parameter Input"
-msgstr ""
+msgstr "ನಿಯತಾಂಕ ಇನ್‌ಪುಟ್‌"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
+#, fuzzy
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
-msgstr ""
+msgstr "\"$name$\"ಲಂಬಸಾಲಿಗಾಗಿನ ನಮೂದನ್ನು ಒಂದು ಮೌಲ್ಯವಾಗಿ ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Standard Filter"
-msgstr ""
+msgstr "ಶಿಷ್ಟ ಶೋಧಕ"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "AND"
-msgstr ""
+msgstr "AND"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "OR"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
-msgstr ""
+msgstr "OR"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "ವರ್ಗದ ಹೆಸರು"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Condition"
-msgstr ""
+msgstr "ಷರತ್ತು"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "ಮೌಲ್ಯ"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
-msgstr ""
+msgstr "ಕಾರ್ಯನಿರ್ವಾಹಕ"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Criteria"
-msgstr ""
+msgstr "ಮಾನದಂಡ"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
+#, fuzzy
 msgid  "- none -"
-msgstr ""
+msgstr " - ಏನೂ ಇಲ್ಲ - "
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
+#, fuzzy
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
+msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Sort Order"
-msgstr ""
+msgstr "ವಿಂಗಡಣೆಯ ಕ್ರಮ"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "ascending"
-msgstr ""
+msgstr "ಆರೋಹಣ"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
+msgstr "ಅವರೋಹಣ"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "ವರ್ಗದ ಹೆಸರು"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "and then"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
-msgid  "and then"
-msgstr ""
+msgstr "ಹಾಗು ನಂತರ"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
-msgstr ""
+msgstr "ಕಾರ್ಯನಿರ್ವಾಹಕ"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Order"
-msgstr ""
+msgstr "ಸ್ತರ"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sort order"
-msgstr ""
+msgstr "ವಿಂಗಡಣೆ ಕ್ರಮ"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
-msgstr ""
+msgstr "<ಏನೂ ಇಲ್ಲ>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Relations"
-msgstr ""
+msgstr "ಸಂಬಂಧಗಳು"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
-msgstr ""
+msgstr "ಒಳಗೊಂಡಿರುವ ಕೋಷ್ಟಕಗಳು"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
-msgstr ""
+msgstr "ಒಳಗೊಂಡಿರುವ ಕ್ಷೇತ್ರಗಳು"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Update options"
-msgstr ""
+msgstr "ಅಪ್‌ಡೇಟ್‌ ಆಯ್ಕೆಗಳು"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No action"
-msgstr ""
+msgstr "ಯಾವುದೆ ಕ್ರಿಯೆ ಇಲ್ಲ(~N)"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Update cascade"
-msgstr ""
+msgstr "ಅನುಕ್ರಮವನ್ನು(ಕ್ಯಾಸ್ಕೇಡ್) ಅಪ್‌ಡೇಟ್‌ ಮಾಡು(~U)"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Set null"
-msgstr ""
+msgstr "ಶೂನ್ಯವನ್ನು ಹೊಂದಿಸು(~S)"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Set ~default"
-msgstr ""
+msgstr "ಪೂರ್ವನಿಯೋಜಿತವನ್ನು ಹೊಂದಿಸು(~d)"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Delete options"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "~No action"
-msgstr ""
+msgstr "ಅಳಿಸುವ ಆಯ್ಕೆಗಳು"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Delete ~cascade"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
-msgstr ""
+msgstr "ಅನುಕ್ರಮವನ್ನು(ಕ್ಯಾಸ್ಕೇಡ್) ಅಳಿಸು(~c)"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Base"
-msgstr ""
+msgstr "%PRODUCTNAME ಮೂಲ"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Details"
-msgstr ""
+msgstr "ವಿವರಗಳು"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Error ~list:"
-msgstr ""
+msgstr "ದೋಷ ಪಟ್ಟಿ(~l):"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description:"
-msgstr ""
+msgstr "ವಿವರಣೆ(~D):"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "SQL Status"
-msgstr ""
+msgstr "SQL ಸ್ಥಿತಿ"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
+#, fuzzy
 msgid  "Error code"
-msgstr ""
+msgstr "ದೋಷ ಸಂಜ್ಞೆ"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "ಈ ದೋಷದ ಸಾಮಾನ್ಯವಾದ ಒಂದು ಕಾರಣವು ನಿಮ್ಮ ದತ್ತಸಂಚಯದ ಭಾಷೆಗಾಗಿ ಹೊಂದಿಸಲಾದ ಒಂದು ಸರಿಯಲ್ಲದ ಅಕ್ಷರ ಸೆಟ್‌ ಆಗಿರುತ್ತದೆ. ಸಂಪಾದನೆ - ದತ್ತಸಂಚಯ - ಗುಣಗಳು ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಸಿದ್ಧತೆಯನ್ನು ಪರಿಶೀಲಿಸಿ."
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error"
-msgstr ""
+msgstr "ದೋಷ"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning"
-msgstr ""
+msgstr "ಎಚ್ಚರಿಕೆ"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
+#, fuzzy
 msgid  "Information"
-msgstr ""
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
-msgid  "Details"
-msgstr ""
+msgstr "ಮಾಹಿತಿ"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Text Connection Settings"
-msgstr ""
+msgstr "ಸಂಪರ್ಕ ಸಿದ್ಧತೆಗಳು"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
+#, fuzzy
 msgid  "User Settings"
-msgstr ""
+msgstr "ಬಳಕೆದಾರ ಸಿದ್ಧತೆಗಳು"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
+#, fuzzy
 msgid  "User administration"
-msgstr ""
+msgstr "ಬಳಕೆದಾರ ನಿರ್ವಹಣೆ"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User selection"
-msgstr ""
+msgstr "ಬಳಕೆದಾರರ ಆಯ್ಕೆ"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Us~er:"
-msgstr ""
+msgstr "ಬಳಕೆದಾರ(~e):"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add User..."
-msgstr ""
+msgstr "ಬಳಕೆದಾರನನ್ನು ಸೇರಿಸು(~A)..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Change ~Password..."
-msgstr ""
+msgstr "ಗುಪ್ತಪದವನ್ನು ಬದಲಾಯಿಸು(~P)..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete User..."
-msgstr ""
+msgstr "ಬಳಕೆದಾರನನ್ನು ಅಳಿಸು(~D)..."
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Access rights for selected user"
-msgstr ""
+msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ಬಳಕೆದಾರರಿಗೆ ನಿಲುಕಣಾ ಹಕ್ಕುಗಳು"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you really want to delete the user?"
-msgstr ""
+msgstr "ನೀವು ನಿಜವಾಗಲು ಬಳಕೆದಾರರನ್ನು ಅಳಿಸಿಹಾಕಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support user administration."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವು ಬಳಕೆದಾರ ನಿರ್ವಹಣೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User \"$name$:  $\""
-msgstr ""
+msgstr "ಬಳಕೆದಾರ \"$name$:  $\""
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Old p~assword"
-msgstr ""
+msgstr "ಹಳೆಯ ಗುಪ್ತಪದ (~a)"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "ಗುಪ್ತಪದ(~P)"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Confirm  password"
-msgstr ""
+msgstr "ಗುಪ್ತಪದವನ್ನು ಖಚಿತಪಡಿಸು(~C)"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Change Password"
-msgstr ""
+msgstr "ಗುಪ್ತಪದವನ್ನು ಬದಲಾಯಿಸು"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
+#, fuzzy
 msgid  "The passwords do not match. Please enter the password again."
-msgstr ""
+msgstr "ಗುಪ್ತಪದಗಳು ಹೊಂದುವುದಿಲ್ಲ. ದಯಮಾಡಿ ಗುಪ್ತಪದವನ್ನು ಮತ್ತೆ ನಮೂದಿಸಿ."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Refresh"
-msgstr ""
+msgstr "ಪುನಶ್ಚೇತನಗೊಳಿಸು"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~View Design"
-msgstr ""
+msgstr "ಹೊಸ ನೋಟ ವಿನ್ಯಾಸ(~V)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~Table Design"
-msgstr ""
+msgstr "ಹೊಸ ಕೋಷ್ಟಕ ವಿನ್ಯಾಸ(~T)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
+#, fuzzy
 msgid  "Query AutoPilot..."
-msgstr ""
+msgstr "ಆಟೋಪೈಲಟ್‌ ಅನ್ನು ಪ್ರಶ್ನಿಸು..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~Query (Design View)"
-msgstr ""
+msgstr "ಹೊಸ ಪ್ರಶ್ನೆ (ವಿನ್ಯಾಸ ನೋಟ)(~Q)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Edit Query"
-msgstr ""
+msgstr "ಪ್ರಶ್ನೆಯನ್ನು ಸಂಪಾದಿಸು(~E)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
+#, fuzzy
 msgid  "New Query (~SQL View)"
-msgstr ""
+msgstr "ಹೊಸ ಪ್ರಶ್ನೆ (~SQL ನೋಟ)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
+#, fuzzy
 msgid  "Edit..."
-msgstr ""
+msgstr "ಸಂಪಾದಿಸು..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Column ~Width..."
-msgstr ""
+msgstr "ಲಂಬಸಾಲಿನ ಅಗಲ (~W)..."
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
+#, fuzzy
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "ವರದಿಯ ಗಾರುಡಿ..."
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Form AutoPilot..."
-msgstr ""
+msgstr "ಫಾರ್ಮ್ ಆಟೋಪೈಲಟ್..."
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
+#, fuzzy
 msgid  "System"
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥೆ"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
+#, fuzzy
 msgid  "Error during creation"
-msgstr ""
+msgstr "ರಚಿಸುವಾದ ದೋಷ ಉಂಟಾಗಿದೆ"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "ಒಂದು ಅನಿರೀಕ್ಷಿತ ದೋಷ ಉಂಟಾಗಿದೆ. ಕಾರ್ಯವನ್ನು ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
+#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
-msgstr ""
+msgstr "\"$file$\" ದಸ್ತಾವೇಜನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "ಕೋಷ್ಟಕವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ದತ್ತಸಂಚಯ ಸಂಪರ್ಕವು ಇದನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
+#, fuzzy
 msgid  "~All"
-msgstr ""
+msgstr "ಎಲ್ಲವೂ(~A)"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
+#, fuzzy
 msgid  "Undo:"
-msgstr ""
+msgstr "ರದ್ದುಗೊಳಿಸು:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
+#, fuzzy
 msgid  "Redo:"
-msgstr ""
+msgstr "ಪುನಃ ಮಾಡು:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
-msgstr ""
+msgstr "ಲಂಬಸಾಲು '#1' ಗೆ ಸೂಕ್ತವಾದ ಯಾವುದೆ ಲಂಬಸಾಲಿನ ಬಗೆಯು ಕಂಡುಬಂದಿಲ್ಲ."
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "ಕಡತ \"$file$\" ವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr ""
+msgstr "ದತ್ತ ಆಕರಕ್ಕೆ ಸಂಪರ್ಕ ಹೊಂದುವಾಗ ಎಚ್ಚರಿಕೆಗಳು ಎದುರಾಗಿದೆ. ಅವನ್ನು ನೋಡಲು \"$buttontext$\" ಅನ್ನು ಒತ್ತಿ."
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'$#$' ಹೆಸರು ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ.\nದಯವಿಟ್ಟು ಬೇರೊಂದು ಹೆಸರನ್ನು ಸೂಚಿಸಿ."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
+#, fuzzy
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
-msgstr ""
+msgstr "\"$file$\" ಎಂಬ ವರದಿಗಾಗಿ ಸನ್ ರಿಪೋರ್ಟ್ ಬಿಲ್ಡರ್ ಎಂಬ ವಿಸ್ತರಣೆಗ ಅಗತ್ಯವಿರುತ್ತದೆ."
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Apply columns"
-msgstr ""
+msgstr "ಲಂಬಸಾಲುಗಳನ್ನು ಅನ್ವಯಿಸಿ"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Type formatting"
-msgstr ""
+msgstr "ಬಗೆಯನ್ನು ಫಾರ್ಮಾಟ್‌ ಮಾಡುವಿಕೆ"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
+#, fuzzy
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "ಈ ಕೆಳಗಿನ ಕ್ಷೇತ್ರಗಳನ್ನು ಈಗಾಗಲೆ ಪ್ರಾಥಮಿಕ ಕೀಲಿಯಾಗಿ ಅಣಿಗೊಳಿಸಲಾಗಿದೆ:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Assign columns"
-msgstr ""
+msgstr "ಲಂಬಸಾಲುಗಳನ್ನು ನಿಯೋಜಿಸಿ"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Copy RTF Table"
-msgstr ""
+msgstr "RTF ಕೋಷ್ಟಕವನ್ನು ಕಾಪಿ ಮಾಡಿ"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "ಸಹಾಯ(~H)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Cancel"
-msgstr ""
+msgstr "ವಜಾಮಾಡು(~C)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "< ~Back"
-msgstr ""
+msgstr "< ಹಿಂದಕ್ಕೆ(~B)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next>"
-msgstr ""
+msgstr "(~N)ಮುಂದಕ್ಕೆ>"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "C~reate"
-msgstr ""
+msgstr "ರಚಿಸು(~r)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Existing columns"
-msgstr ""
+msgstr "ಈಗಿರುವ ಲಂಬಸಾಲುಗಳು"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Column information"
-msgstr ""
+msgstr "ಲಂಬಸಾಲಿನ ಮಾಹಿತಿ"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Automatic type recognition"
-msgstr ""
+msgstr "ಸ್ವಯಂಚಾಲಿತ ರೀತಿಯ ಪತ್ತೆಹಚ್ಚುವಿಕೆ"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Lines (ma~x)"
-msgstr ""
+msgstr "ಸಾಲುಗಳು (ಗರಿಷ್ಟ)(~x)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
-msgstr ""
+msgstr "ಪ್ರಾಥಮಿಕ ಕೀಲಿ"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Source table: \n"
-msgstr ""
+msgstr "ಆಕರ ಕೋಷ್ಟಕ: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "ನಿರ್ದೇಶಿತ ಕೋಷ್ಟಕ: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~All"
-msgstr ""
+msgstr "ಎಲ್ಲವೂ(~A)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Non~e"
-msgstr ""
+msgstr "ಯಾವುದು ಇಲ್ಲ(~e)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ta~ble name"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ಹೆಸರು(~b)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "ಆಯ್ಕೆಗಳು"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "De~finition and data"
-msgstr ""
+msgstr "ವಿವರಣೆ ಹಾಗು ದತ್ತಾಂಶ(~f)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Def~inition"
-msgstr ""
+msgstr "ವಿವರಣೆ(~i)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~s table view"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ನೋಟವಾಗಿ(~s)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Append ~data"
-msgstr ""
+msgstr "ದತ್ತಾಂಶವನ್ನು ಸೇರಿಸು(~d)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use first ~line as column names"
-msgstr ""
+msgstr "ಮೊದಲು ಸಾಲನ್ನು ಲಂಬಸಾಲಿನ ಹೆಸರಾಗಿ ಬಳಸಿ (~l)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Crea~te primary key"
-msgstr ""
+msgstr "ಪ್ರಾಥಮಿಕ ಕೀಲಿಯನ್ನು ನಿರ್ಮಿಸು(~t)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "ಹೆಸರು"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
+#, fuzzy
 msgid  "Copy table"
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
-msgid  "Copy table"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕವನ್ನು ಕಾಪಿ ಮಾಡು"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "This table name is not valid in the current database."
-msgstr ""
+msgstr "ಈ ಕೋಷ್ಟಕದ ಹೆಸರು ಪ್ರಸಕ್ತ ದತ್ತಸಂಚಯದಲ್ಲಿ ಮಾನ್ಯವಾದುದಲ್ಲ."
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "ಈಗಿರುವ ಒಂದು ಕೋಷ್ಟಕಕ್ಕೆ ದತ್ತಾಂಶವನ್ನು ಸೇರಿಸಲು ಮೊದಲಿನ ಪುಟದಲ್ಲಿರುವ 'ದತ್ತಾಂಶವನ್ನು ಸೇರಿಸು' ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ."
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Please change the table name. It is too long."
-msgstr ""
+msgstr "ದಯವಿಟ್ಟು ಕೋಷ್ಟಕದ ಹೆಸರನ್ನು ಬದಲಾಯಿಸಿ. ಅದು ಬಹಳ ಉದ್ದವಾಗಿದೆ."
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "ಆಯ್ಕೆಗಳು"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Type"
-msgstr ""
+msgstr "ಬಗೆ(~T)"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Inner join"
-msgstr ""
+msgstr "ಒಳಗಿನ ಜೋಡಣೆ"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left join"
-msgstr ""
+msgstr "ಎಡ ಜೋಡಣೆ"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right join"
-msgstr ""
+msgstr "ಬಲ ಜೋಡಣೆ"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Full (outer) join"
-msgstr ""
+msgstr "ಸಂಪೂರ್ಣ (ಹೊರಗಿನ) ಜೋಡಣೆ"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Cross join"
-msgstr ""
+msgstr "ಅಡ್ಡ ಜೋಡಣೆ"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Natural"
-msgstr ""
+msgstr "ನೈಸರ್ಗಿಕ"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
-msgstr ""
+msgstr "ಹೊಂದಿಕೊಂಡಿರುವ ಕೋಷ್ಟಕಗಳು"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
-msgstr ""
+msgstr "ಹೊಂದಿಕೊಂಡಿರುವ ಸ್ಥಳಗಳು"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Join Properties"
-msgstr ""
+msgstr "ಜೋಡಣೆಯ ಗುಣಗಳು"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
+#, fuzzy
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "ಈ ಜೋಡಣೆಯ ಬಗೆಯನ್ನು ಕೆಲವೊಂದು ದತ್ತಸಂಚಯವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ ಎನ್ನುವುದನ್ನು ನೆನಪಿಡಿ."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "ಎರಡೂ ಕೋಷ್ಟಕಗಳಿಗೆ ಸಂಬಂಧಿತವಾದಂತಹ ಕ್ಷೇತ್ರಗಳಲ್ಲಿನ ವಿಷಯಗಳು ಒಂದೆ ತೆರನಾಗಿರುವ ದಾಖಲೆಗಳನ್ನು ಮಾತ್ರ ಒಳಗೊಂಡಿರುತ್ತದೆ."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ '%1' ದಿಂದ ALL ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿರುತ್ತದೆ ಆದರೆ ಕೋಷ್ಟಕ '%2' ದಲ್ಲಿನ ಹೋಲುವ ಕ್ಷೇತ್ರಗಳಲ್ಲಿನ ತಾಳೆಯಾಗುವ ಮೌಲ್ಯಗಳನ್ನು ಮಾತ್ರವೆ ಹೊಂದಿರುತ್ತವೆ."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "'%1' ಹಾಗು '%2' ನಲ್ಲಿನ ALL ದಾಖಲೆಯಗಳನ್ನು ಹೊಂದಿರುತ್ತದೆ."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "'%1' ನಿಂದ ಹಾಗು '%2' ನಿಂದ ALL ದಾಖಲೆಗಳ ಕಾರ್ಟೀಶನ್ ಉತ್ಪನ್ನಗಳನ್ನು ಹೊಂದಿದೆ."
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "ಒಂದೇ ರೀತಿಯಲ್ಲಿ ಹೆಸರಿಸಲಾದಂತಹ '%1' ನಿಂದ '%2' ವರೆಗಿನ ಜೋಡಿ ಲಂಬಸಾಲುಗಳಲ್ಲಿ ಕೇವಲ ಒಂದು ಲಂಬಸಾಲನ್ನು ಮಾತ್ರವೆ ಹೊಂದಿರುತ್ತದೆ."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
+#, fuzzy
 msgid  "Add Table Window"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ಕಿಟಕಿಯನ್ನು ಸೇರಿಸಿ"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Move table window"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ಕಿಟಕಿಯನ್ನು ಸ್ಥಳಾಂತರಿಸಿ"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Insert Join"
-msgstr ""
+msgstr "ಜೋಡಣೆಯನ್ನು ಸೇರಿಸಿ"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Delete Join"
-msgstr ""
+msgstr "ಜೋಡಣೆಯನ್ನು ಅಳಿಸಿ"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Resize table window"
-msgstr ""
+msgstr "ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸಬಹುದಾದಂತಹ ಕೋಷ್ಟಕ ಕಿಟಕಿ"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Column"
-msgstr ""
+msgstr "ಲಂಬಸಾಲನ್ನು ಅಳಿಸು"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
+#, fuzzy
 msgid  "Move column"
-msgstr ""
+msgstr "ಲಂಬಸಾಲನ್ನು ಸ್ಥಳಾಂತರಿಸಿ"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
+#, fuzzy
 msgid  "Add Column"
-msgstr ""
+msgstr "ಲಂಬಸಾಲನ್ನು ಸೇರಿಸಿ"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
-msgstr ""
+msgstr "ಅಮಾನ್ಯವಾದ ಎಕ್ಸ್‍ಪ್ರೆಶನ್, ಕೋಷ್ಟಕ '$name$' ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr ""
+msgstr "ಅಮಾನ್ಯವಾದ ಎಕ್ಸ್‍ಪ್ರೆಶನ್, ಕ್ಷೇತ್ರದ ಹೆಸರು '$name$' ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "ಪ್ರಶ್ನೆಯು #num# ಕೋಷ್ಟಕಕ್ಕೆ ಅನ್ವಯಿಸುತ್ತದೆ. ಆದರೆ ಆಯ್ಕೆ ಮಾಡಲಾದ ದತ್ತಸಂಚಯದ ಬಗೆಯು, ಪ್ರತಿ ಹೇಳಿಕೆಗೆ ಕೇವಲ ಗರಿಷ್ಟ #maxnum# ಕೋಷ್ಟಕವನ್ನು(ಗಳನ್ನು) ಮಾತ್ರ ಸಂಸ್ಕರಿಸಬಲ್ಲದು."
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Table Window"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ಕಿಟಕಿಯನ್ನು ಅಳಿಸಿ"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
+#, fuzzy
 msgid  "Edit Column Description"
-msgstr ""
+msgstr "ಲಂಬಸಾಲಿನ ವಿವರಣೆಯನ್ನು ಸಂಪಾದಿಸಿ"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Adjust column width"
-msgstr ""
+msgstr "ಲಂಬಸಾಲಿನ ಅಗಲವನ್ನು ಸರಿಹೊಂದಿಸಿ"
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
+#, fuzzy
 msgid  "(not sorted);ascending;descending"
-msgstr ""
+msgstr "(ವಿಂಗಡಿಸದೆ ಇರುವ);ಏರಿಕೆಕ್ರಮ;ಇಳಿಕೆಕ್ರಮ"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
+#, fuzzy
 msgid  "(no function);Group"
-msgstr ""
+msgstr "(ಯಾವುದೆ ಕ್ರಿಯೆ ಇಲ್ಲ);ಗುಂಪು"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
+#, fuzzy
 msgid  "(no table)"
-msgstr ""
+msgstr "(ಯಾವುದೆ ಕೋಷ್ಟಕವಿಲ್ಲ)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವು ಕೇವಲ ಗೋಚರಿಸುವ ಕ್ಷೇತ್ರಗಳನ್ನು ವಿಂಗಡಿಸುವುದನ್ನು ಮಾತ್ರವೆ ಬೆಂಬಲಿಸುತ್ತದೆ."
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
+#, fuzzy
 msgid  "Functions"
-msgstr ""
+msgstr "ಕಾರ್ಯಭಾರಗಳು"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Table Name"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ಹೆಸರು"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Alias"
-msgstr ""
+msgstr "ಆಲಿಯಾಸ್"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Distinct Values"
-msgstr ""
+msgstr "ವಿಶಿಷ್ಟ ಮೌಲ್ಯಗಳು"
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "ಕ್ಷೇತ್ರ;ಆಲಿಯಾಸ್;ಕೋಷ್ಟಕ;ವಿಂಗಡಣೆ;ಗೋಚರ;ಕ್ರಿಯೆ;ಮಾನದಂಡ;ಅಥವ;ಅಥವ"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
+#, fuzzy
 msgid  "There are too many columns."
-msgstr ""
+msgstr "ಬಹಷ್ಟು ಲಂಬಸಾಲುಗಳಿವೆ."
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
-msgstr ""
+msgstr "ಕ್ಷೇತ್ರ [*] ಕ್ಕೆ ನಿಬಂಧನೆಯನ್ನು ಅನ್ವಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement created is too long."
-msgstr ""
+msgstr "ರಚಿಸಲಾದ SQL ಹೇಳಿಕೆಯು ಬಹಳ ಉದ್ದವಾಗಿದೆ."
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
+#, fuzzy
 msgid  "Query is too complex"
-msgstr ""
+msgstr "ಪ್ರಶ್ನೆಯು ಬಹಳ ಸಂಕೀರ್ಣವಾಗಿದೆ"
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
+#, fuzzy
 msgid  "Nothing has been selected."
-msgstr ""
+msgstr "ಏನನ್ನೂ ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ."
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
+#, fuzzy
 msgid  "Too many search criteria"
-msgstr ""
+msgstr "ಬಹಳಷ್ಟು ಹುಡುಕು ಮಾನದಂಡಗಳು"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
+#, fuzzy
 msgid  "SQL syntax error"
-msgstr ""
+msgstr "SQL ಸಿಂಟಾಕ್ಸಿನಲ್ಲಿ ದೋಷ"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
-msgstr ""
+msgstr "[*] ಅನ್ನು ಒಂದು ವಿಂಗಡಣಾ ಮಾನದಂಡವಾಗಿ ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "There are too many tables."
-msgstr ""
+msgstr "ಬಹಳಷ್ಟು ಕೋಷ್ಟಕಗಳಿವೆ."
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದ SQL ಡೈಲೆಕ್ಟನ್ನು ಪ್ರಶ್ನಿಸುವಾಗ ಹೇಳಿಕೆಯನ್ನು ಅನ್ವಯಿಸಲಾಗುವುದಿಲ್ಲ."
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Field name not found or not unique"
-msgstr ""
+msgstr "ಕ್ಷೇತ್ರದ ಹೆಸರು ಕಂಡುಬಂದಿಲ್ಲ ಅಥವ ವಿಶಿಷ್ಟವಾಗಿಲ್ಲ"
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Join could not be processed"
-msgstr ""
+msgstr "ಜೋಡಣೆಯನ್ನು ಸಂಸ್ಕರಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Syntax error in SQL statement"
-msgstr ""
+msgstr "SQL ಹೇಳಿಕೆಯಲ್ಲಿ ಸಿಂಟಾಕ್ಸಿ ದೋಷ"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "This database does not support table views."
-msgstr ""
+msgstr "ಕೋಷ್ಟಕ ನೋಟಗಳನ್ನು ದತ್ತಸಂಚಯವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "ಈಗಿರುವ ಕೋಷ್ಟಕ ನೋಟಗಳನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ದತ್ತಸಂಚಯವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to create a query instead?"
-msgstr ""
+msgstr "ಇದರ ಬದಲಿಗೆ ಬೇರೊಂದು ಪ್ರಶ್ನೆಯನ್ನು ರಚಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "No query could be created."
-msgstr ""
+msgstr "ಯಾವುದೆ ಪ್ರಶ್ನೆಯನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
-msgstr ""
+msgstr "ಯಾವುದೆ ಪ್ರಶ್ನೆಯನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಯಾವುದೆ ಕ್ಷೇತ್ರವನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ."
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "ಸಂಬಂಧಿತ ದತ್ತಾಂಶ ಆಕರವನ್ನು ಅಳಿಸಿ ಹಾಕಲಾಗಿದೆ. ಆದ್ದರಿಂದ, ಆ ದತ್ತಾಂಶ ಆಕರಕ್ಕೆ ಸೂಕ್ತವಾದ ದತ್ತಾಂಶವನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The column '$name$' is unknown."
-msgstr ""
+msgstr "ಲಂಬಸಾಲು '$name$' ತಿಳಿದಿಲ್ಲ."
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
+#, fuzzy
 msgid  "Columns can only be compared using '='."
-msgstr ""
+msgstr "'=' ಅನ್ನು ಬಳಸಿಕೊಂಡು ಮಾತ್ರವೆ ಲಂಬಸಾಲನ್ನು ಹೋಲಿಸಬಹುದಾಗಿದೆ."
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
-msgstr ""
+msgstr "'LIKE' ನ ಮೊದಲು ಒಂದು ಲಂಬಸಾಲಿನ ಹೆಸರನ್ನು ನೀವು ಸೂಚಿಸಬೇಕು."
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "ಲಂಬಸಾಲು ಕಂಡುಬಂದಿಲ್ಲ. ದತ್ತಸಂಚಯವು ಕೇಸ್‌ ಸಂವೇದಿಯಾಗಿದೆ ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ನೆನಪಿಡಿ."
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr ""
+msgstr " - %PRODUCTNAME ಮೂಲ: ಪ್ರಶ್ನೆ ವಿನ್ಯಾಸ"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
-msgstr ""
+msgstr " - %PRODUCTNAME ಮೂಲ: ನೋಟ ವಿನ್ಯಾಸ"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ ಅನ್ನು ಬದಲಾಯಿಸಲಾಗಿದೆ.\nಬದಲಾವಣೆಗಳನ್ನು ನೀವು ಉಳಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr ""
+msgstr "$object$ ಎಂಬುದು ಒಂದು SQL ಆಜ್ಞೆಯ ಮೇಲೆ ಆಧರಿತವಾಗಿದೆ ಹಾಗು ಅದನ್ನು ಪಾರ್ಸ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr ""
+msgstr "$object$ ಅನ್ನು SQL ನೋಟದಲ್ಲಿ ತೆರೆಯಲಾಗಿದೆ."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "The table view"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ನೋಟ"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "The query"
-msgstr ""
+msgstr "ಮನವಿ"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement"
-msgstr ""
+msgstr "SQL ಹೇಳಿಕೆ"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "ಹೇಳಿಕೆಯು ಫಲಿತಾಂಶಗಳನ್ನು ನಿರ್ಮಿಸುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ ಪ್ರಶ್ನೆಯು ಬೇರೊಂದು ಪ್ರಶ್ನೆಯ ಭಾಗವಾಗುವಂತಿಲ್ಲ."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "ActiveConnection ಹಾಗು DataSourceName ನಿಯತಾಂಕಗಳು ಕಂಡುಬಂದಿಲ್ಲ ಅಥವ ತಪ್ಪಾಗಿದೆ - ಪ್ರಶ್ನೆ ವಿನ್ಯಾಸಗಾರನನ್ನು ಆರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "ಈ ಸಂಬಂಧವು ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ನೀವದನ್ನು ಸಂಪಾದಿಸುತ್ತೀರೆ ಅಥವ ಹೊಸತೊಂದನ್ನು ನಿರ್ಮಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit..."
-msgstr ""
+msgstr "ಸಂಪಾದಿಸು..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "Create..."
-msgstr ""
+msgstr "ರಚಿಸು..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
-msgstr ""
+msgstr " - %PRODUCTNAME ಮೂಲ: ಸಂಬಂಧ ವಿನ್ಯಾಸ"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support relations."
-msgstr ""
-
-#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯವು ಸಂಬಂಧಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "ನೀವು ಈ ಕೋಷ್ಟಕವನ್ನು ಅಳಿಸಿದಾಗ ಅದರ ಎಲ್ಲಾ ಸಂಬಂಧಗಳೂ ಸಹ ಅಳಿಸಲ್ಪಡುತ್ತವೆ. ಮುಂದುವರೆಯಬೇಕೆ?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯಕ್ಕೆ ಸಂಬಂಧವನ್ನು ಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಈ ಬಗೆಯ ಕೋಷ್ಟಕಕ್ಕಾಗಿ ಹೊರಗಿನ ಕೀಲಿಗಳಿಗೆ ಬೆಂಬಲವಿಲ್ಲ.\nನಿಮ್ಮ ದತ್ತಸಂಚಯದ ದಸ್ತಾವೇಜನ್ನು ಪರಿಶೀಲಿಸಿ."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "ಅಜ್ಞಾತ;ಪಠ್ಯ;ಸಂಖ್ಯೆ;ದಿನಾಂಕ/ಸಮಯ;ದಿನಾಂಕ;ಸಮಯ;ಹೌದು/ಇಲ್ಲ;ಚಲಾವಣೆ ನಾಣ್ಯ;ಮೆಮೊ;ಲೆಕ್ಕಿಗ;ಚಿತ್ರ;ಪಠ್ಯ (ನಿಶ್ಚಿತ);ದಶಾಂಶ;ಬೈನರಿ (ನಿಶ್ಚಿತ);ಬೈನರಿ;BigInt;ಎರಡು;ತೇಲು;ನಿಜ;ಪೂರ್ಣಾಕ;ಸಣ್ಣ ಪೂರ್ಣಾಂಕ;ಅತಿ ಸಣ್ಣ ಪೂರ್ಣಾಂಕ;SQL ಶೂನ್ಯ;ವಸ್ತು;ವಿಶಿಷ್ಟ;ರಚನೆ;ಕ್ಷೇತ್ರ;BLOB;CLOB;REF;OTHER:ಬಿಟ್ (ನಿಶ್ಚಿತ)"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "ಪ್ರಾಥಮಿಕ ಕೀಲಿಯನ್ನು ಸೇರಿಸಿ/ತೆಗೆದುಹಾಕಿ"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "ಹೌದು"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "ಇಲ್ಲ"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
-msgstr ""
+msgstr "ಆರೋಹಣ"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
-msgstr ""
+msgstr "ಅವರೋಹಣ"
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
-msgstr ""
+msgstr "<ಏನೂ ಇಲ್ಲ>"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "ವರ್ಗದ ಹೆಸರು"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field Name"
-msgstr ""
+msgstr "ವರ್ಗದ ಹೆಸರು"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field ~type"
-msgstr ""
+msgstr "ವರ್ಗ ಬಗೆ(~t)"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field Type"
-msgstr ""
+msgstr "ವರ್ಗ ಬಗೆ"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Field length"
-msgstr ""
+msgstr "ಕ್ಷೇತ್ರದ ಉದ್ದ"
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "ವಿವರಣೆ"
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Column Description"
-msgstr ""
+msgstr "ಲಂಬಸಾಲು ವಿವರಕ"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
-msgstr ""
+msgstr "ಇನ್‌ಪುಟ್‌ನ ಅಗತ್ಯವಿದೆ"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "~AutoValue"
-msgstr ""
+msgstr "ಸ್ವಯಂಮೌಲ್ಯ(~A)"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Field Properties"
-msgstr ""
+msgstr "ಕ್ಷೇತ್ರದ ಗುಣಧರ್ಮಗಳು"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ಸಾಮಾನ್ಯ"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description:"
-msgstr ""
+msgstr "ವಿವರಣೆ:"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Table properties"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ಗುಣಧರ್ಮಗಳು"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered is not a list element. "
-msgstr ""
+msgstr "ನೀವು ನಮೂದಿಸಿದ ಪಠ್ಯವು ಪಟ್ಟಿಯಲ್ಲಿ ಒಂದು ಅಂಶವಾಗಿಲ್ಲ. "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert Rows"
-msgstr ""
+msgstr "ಅಡ್ಡಸಾಲುಗಳನ್ನು ಅಳವಡಿಸು"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
-msgstr ""
+msgstr "ಪ್ರಾಥಮಿಕ ಕೀಲಿ"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Modify cell"
-msgstr ""
+msgstr "ಸೆಲ್‌ ಅನ್ನು ಮಾರ್ಪಡಿಸಿ"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
+#, fuzzy
 msgid  "Delete row"
-msgstr ""
+msgstr "ಅಡ್ಡಸಾಲುಗಳನ್ನು ಅಳಿಸಿ"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Modify field type"
-msgstr ""
+msgstr "ಕ್ಷೇತ್ರದ ಬಗೆಯನ್ನು ಮಾರ್ಪಡಿಸಿ"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert row"
-msgstr ""
+msgstr "ಅಡ್ಡಸಾಲುಗಳನ್ನು ಸೇರಿಸು"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert new row"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "ಹೊಸ ಅಡ್ಡಸಾಲನ್ನು ಸೇರಿಸಿ"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "~Default value"
-msgstr ""
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯ(~D)"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "~Entry required"
-msgstr ""
+msgstr "ಅಗತ್ಯ ನಮೂದು(~E)"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "~Length"
-msgstr ""
+msgstr "ಉದ್ದ(~L)"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "~Type"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
-msgid  "~Length"
-msgstr ""
+msgstr "ಬಗೆ(~T)"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Decimal ~places"
-msgstr ""
+msgstr "ದಶಾಂಶದ ಸ್ಥಳಗಳು (~p)"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format example"
-msgstr ""
+msgstr "ನಮೂನೆಯ ಉದಾಹರಣೆ"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "ಎಲ್ಲಾ ದಾಖಲೆಗಳಲ್ಲೂ ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಕಾಣಿಸಿಕೊಳ್ಳುವಂತಹ ಒಂದು ಮೌಲ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.\nಕ್ಷೇತ್ರವು ಒಂದು ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿರದೆ ಹೋದಲ್ಲಿ, ಖಾಲಿ ಸ್ಥಳವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "ಈ ಕ್ಷೇತ್ರಕ್ಕೆ ಪೂರ್ವನಿಯೋಜಿತವಾದ ಒಂದು ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ.\n\nನೀವು ಆನಂತರ ಕೋಷ್ಟಕದಲ್ಲಿ ದತ್ತಾಂಶವನ್ನು ನಮೂದಿಸಿದಾಗ, ಈ ವಾಕ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾದ ಪ್ರತಿಯೊಂದು ಹೊಸ ದಾಖಲೆಯಲ್ಲಿ ಈ ವಾಕ್ಯವನ್ನು ಬಳಸಲಾಗುವುದು. ಅದ್ದರಿಂದ ಇದು ಈ ಕೆಳಗೆ ನಮೂದಿಸಬೇಕಿರುವ ಕೋಶದ ನಮೂನೆಯಲ್ಲಿ ಇರಬೇಕು."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "ಕ್ಷೇತ್ರವು NULL ಮೌಲ್ಯಗಳನ್ನು ಹೊಂದಿರಲು ಸಾಧ್ಯವಿರದೆ ಇದ್ದಲ್ಲಿ (ಅಂದರೆ, ಬಳಕೆದಾರರು ಯಾವಾಗಲೂ ದತ್ತಾಂಶವನ್ನು ನಮೂದಿಸಬೇಕಿದ್ದಾಗ) ಈ ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
-msgstr ""
+msgstr "ಅನುಮತಿ ಇರುವ ಪಠ್ಯದ ಗರಿಷ್ಟ ಉದ್ದವನ್ನು ನಮೂದಿಸಿ."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Enter the number format."
-msgstr ""
+msgstr "ಸಂಖ್ಯೆಯ ನಮೂನೆಯನ್ನು ನಮೂದಿಸಿ."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "ಈ ಕ್ಷೇತ್ರದಲ್ಲಿ ಸರಿಹೊಂದುವ ದತ್ತಾಂಶದ ಗಾತ್ರವನ್ನು ನಿರ್ಧರಿಸಿ.\n\nದಶಾಂಶ ಸ್ಥಳಗಳಾದರೆ, ನಮೂದಿಸಬೇಕಿರುವ ಗರಿಷ್ಟ ಉದ್ದವು ಸಂಖ್ಯೆಗಳಲ್ಲಿರುತ್ತದೆ, ಬೈನರಿ ಕ್ಷೇತ್ರಗಳಾದರೆ, ದತ್ತಾಂಶದ ಖಂಡದ ಉದ್ದವಾಗಿರುತ್ತದೆ.\nಮೌಲ್ಯವು ಈ ದತ್ತಸಂಚಯದ ಗರಿಷ್ಟ ಮಿತಿಯನ್ನು ಮೀರಿದಲ್ಲಿ ತಕ್ಕನಾದ ರೀತಿಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ಸರಿಹೊಂದಿಸಲಾಗುವುದು."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "ಈ ಸ್ಥಳದಲ್ಲಿ ಅನುಮತಿ ಇರುವ ದಶಾಂಶ ಸ್ಥಳಗಳ ಸಂಖ್ಯೆಯನ್ನು ಸೂಚಿಸು."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "ಇಲ್ಲಿ ನೀವು ಈಗಿನ ನಮೂನೆಯಲ್ಲಿ ದತ್ತಾಂಶವು ಹೇಗೆ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ ಎಂದು ನೋಡಬಹುದಾಗಿದೆ (ನಮೂನೆಯನ್ನು ಬದಲಾಯಿಸಲು ಬಲಭಾಗದಲ್ಲಿರುವ ಗುಂಡಿಯನ್ನು ಬಳಸಿ)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "ಇಲ್ಲಿ ನೀವು ದತ್ತಾಂಶದ ಔಟ್‌ಪುಟ್‌ ವಿನ್ಯಾಸವನ್ನು ಸೂಚಿಸಬೇಕು."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "ಈ ಕ್ಷೇತ್ರವು ಸ್ವಯಂಏರಿಕೆ ಮೌಲ್ಯಗಳನ್ನು ಹೊಂದಿರಬೇಕೆಂದಲ್ಲಿ ಇದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.\n\nಈ ಬಗೆಯ ಕ್ಷೇತ್ರಗಳಲ್ಲಿ ನೀವು ದತ್ತಾಂಶವನ್ನು ನಮೂದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಪ್ರತಿಯೊಂದು ದಾಖಲೆಗೂ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಒಂದು ಅಂತರ್ಗತ ಮೌಲ್ಯವನ್ನು ನೀಡಲಾಗುವುದು (ಈ ಹಿಂದಿನ ದಾಖಲೆಯಲ್ಲಿನ ಏರಿಕೆಗೆ ಅನುಗುಣವಾಗಿ)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
-msgstr ""
+msgstr "ಕೋಷ್ಟಕವನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಲಂಬಸಾಲಿನ ಹೆಸರಾದ \"$column$\" ಅನ್ನು ಎರಡು ಬಾರಿ ನೀಡಲಾಗಿದೆ."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgstr "ಲಂಬಸಾಲು \"$column$\" ಪ್ರಾಥಮಿಕ ಕೀಲಿಗೆ ಸಂಬಂಧಿಸಿದ್ದಾಗಿದೆ. ಲಂಬಸಾಲನ್ನು ಅಳಿಸಿದರೆ, ಪ್ರಾಥಮಿಕ ಕೀಲಿಯೂ ಸಹ ಅಳಿಸಲ್ಪಡುತ್ತದೆ. ನೀವು ನಿಜವಾಗಲೂ ಮುಂದುವರೆಯಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Primary Key Affected"
-msgstr ""
+msgstr "ಪ್ರಾಥಮಿಕ ಕೀಲಿಯ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರಿದೆ"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Column"
-msgstr ""
+msgstr "ಲಂಬಸಾಲು"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
+#, fuzzy
 msgid  "Continue anyway?"
-msgstr ""
+msgstr "ಆದರೂ ಮುಂದುವರೆಸಬೇಕೆ?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning!"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "ಎಚ್ಚರಿಕೆ!"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದೊಂದಿಗೆ ಸಂಪರ್ಕಸಾಧಿಸುವಲ್ಲಿ ಉಂಟಾದ ತೊಂದರೆಯಿಂದಾಗಿ ಕೋಷ್ಟಕವನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
-
-#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ಫಿಲ್ಟರನ್ನು ಸರಿಹೊಂದಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ ದತ್ತ ಆಕರವನ್ನು ಅಳಿಸಿ ಹಾಕಲಾಗಿದೆ."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
+#, fuzzy
 msgid  "No primary key"
-msgstr ""
+msgstr "ಯಾವುದೆ ಪ್ರಾಥಮಿಕ ಕೀಲಿ ಇಲ್ಲ"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
+#, fuzzy
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "ಈ ದತ್ತಸಂಚಯದಲ್ಲಿನ ದತ್ತಾಂಶ ದಾಖಲೆ ಪತ್ತೆಗಾಗಿ ಒಂದು ವಿಶಿಷ್ಟವಾದ ಸೂಚಿ ಅಥವ ಪ್ರಾಥಮಿಕ ಕೀಲಿಯ ಅಗತ್ಯವಿದೆ.\nರಚನೆಯ ಈ ಎರಡು ನಿಬಂಧನೆಯು ಪರಿಪೂರ್ಣಗೊಂಡರೆ ಈ ಕೋಷ್ಟಕದಲ್ಲಿ ಕೇವಲ ದತ್ತಾಂಶವನ್ನು ಮಾತ್ರ ನೀವು ದಾಖಲಿಸಬಹುದಾಗಿದೆ.\n\nಈಗ ಕೇವಲ ಪ್ರಾಥಮಿಕ ಕೀಲಿಯನ್ನು ಮಾತ್ರವೆ ರಚಿಸಬೇಕೆ?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
-msgstr ""
+msgstr " - %PRODUCTNAME ಮೂಲ: ಕೋಷ್ಟಕ ವಿನ್ಯಾಸ"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgstr "ಲಂಬಸಾಲು \"$column$\" ಅನ್ನು ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಬದಲಿಗೆ ಲಂಬಸಾಲನ್ನು ಅಳಿಸಿ ಹೊಸ ವಿನ್ಯಾಸವನ್ನು ಸೇರಿಸಬೇಕೆ?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error while saving the table design"
-msgstr ""
+msgstr "ಕೋಷ್ಟಕದ ವಿನ್ಯಾಸವನ್ನು ಉಳಿಸುವಲ್ಲಿ ದೋಷ ಉಂಟಾಗಿದೆ"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
-msgstr ""
+msgstr "ಲಂಬಸಾಲು $column$ ಅನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "ನೀವು ಕೋಷ್ಟಕದಲ್ಲಿನ ಎಲ್ಲಾ ಲಂಬಸಾಲುಗಳನ್ನು ಅಳಿಸುಹಾಕಲು ಪ್ರಯತ್ನಿಸಿದ್ದೀರಿ. ಲಂಬಸಾಲುಗಳಿಲ್ಲದೆ ಒಂದು ಕೋಷ್ಟಕವು ಇರಲು ಸಾಧ್ಯವಿಲ್ಲ. ಕೋಷ್ಟಕವನ್ನು ದತ್ತಸಂಚಯದಿಂದ ಅಳಿಸ ಹಾಕಬೇಕೆ? ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ, ಕೋಷ್ಟಕವನ್ನು ಹಾಗೆಯೆ ಉಳಿಸಿಕೊಳ್ಳಲಾಗುತ್ತದೆ."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "A~uto-increment statement"
-msgstr ""
+msgstr "ಸ್ವಯಂ-ಏರಿಕೆ ಹೇಳಿಕೆ(~u)"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "ಸ್ವಯಂ-ಏರಿಕೆ ಕ್ಷೇತ್ರದಲ್ಲಿ ಒಂದು SQL ಹೇಳಿಕೆಯನ್ನು ನಮೂದಿಸಿ.\n\nಕೋಷ್ಟಕವನ್ನು ನಿರ್ಮಿಸಿದಾಗ ಈ ಹೇಳಿಕೆಯನ್ನು ನೇರವಾಗಿ ದತ್ತಸಂಚಯಕ್ಕೆ ವರ್ಗಾಯಿಸಲಾಗುತ್ತದೆ."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದಿಂದ ಪ್ರಕಾರದ ಬಗ್ಗೆ ಯಾವುದೆ ಮಾಹಿತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.\nದತ್ತ ಆಕರದಲ್ಲಿ ಕೋಷ್ಟಕದ ವಿನ್ಯಾಸ ಕ್ರಮವು ಲಭ್ಯವಿಲ್ಲ."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "change field name"
-msgstr ""
+msgstr "ಜಾಗದ ಹೆಸರನ್ನು ಬದಲಾಯಿಸಿ"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "change field type"
-msgstr ""
+msgstr "ಜಾಗದ ಬಗೆಯನ್ನು ಬದಲಾಯಿಸಿ"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "change field description"
-msgstr ""
+msgstr "ಜಾಗದ ವಿವರಣೆಯನ್ನು ಬದಲಾಯಿಸಿ"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
+#, fuzzy
 msgid  "change field attribute"
-msgstr ""
+msgstr "ಜಾಗದ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಿ"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support views."
-msgstr ""
+msgstr "ನಿರ್ದೇಶಿತ ದತ್ತಸಂಚಯವು ನೋಟಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support primary keys."
-msgstr ""
+msgstr "ನಿರ್ದೇಶಿತ ದತ್ತಸಂಚಯವು ಪ್ರಾಥಮಿಕ ಕೀಲಿಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "ಯಾವುದೆ ದತ್ತಾಂಶ ನಿಲುಕಣಾ ವಿವರಣೆಗಾರವು ಕಂಡುಬಂದಿಲ್ಲ, ಅಥವ ದತ್ತಾಂಶ ನಿಲುಕಣಾ ವಿವರಣೆಗಾರವು ಎಲ್ಲಾ ಅಗತ್ಯ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
-msgstr ""
+msgstr "ಈ ಸಮಯದಲ್ಲಿ ಕೇವಲ ಪ್ರಶ್ನೆಗಳು ಹಾಗು ಕೋಷ್ಟಕಗಳಿಗೆ ಮಾತ್ರ ಬೆಂಬಲವಿದೆ."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "ಕಾಪಿ ಮಾಡಲಾದ ಆಕರದ ಫಲಿತಾಂಶಗಳು ಬುಕ್‌ಮಾರ್ಕುಗಳನ್ನು ಬೆಂಬಲಿಸಬೇಕು."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "ಲಂಬಸಾಲಿನ $pos$ ಸ್ಥಾನದಲ್ಲಿ ಬೆಂಬಲವಿಲ್ಲದ ಲಂಬಸಾಲಿನ ಬಗೆ ($type$)."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
-msgstr ""
+msgstr "ಆರಂಭಿಕ ನಿಯತಾಂಕಗಳ ಅಮಾನ್ಯ ಸಂಖ್ಯೆ."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred during initialization."
-msgstr ""
+msgstr "ಆರಂಭಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
-msgstr ""
+msgstr "ಆಕರದ ವಿವರಕದ ಕಾಪಿಯಲ್ಲಿ ಬೆಂಬಲವಿರದ ಸಿದ್ಧತೆ : $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
-msgstr ""
+msgstr "ಒಂದು ಮನವಿಯನ್ನು ಕಾಪಿ ಮಾಡಲು, ನಿಮ್ಮ ಸಂಪರ್ಕವು ಮನವಿಗಳನ್ನು ಒದಗಿಸಲು ಸಾಧ್ಯವಿರಬೇಕು."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
+#, fuzzy
 msgid  "The given interaction handler is invalid."
-msgstr ""
+msgstr "ಒದಗಿಸಲಾದ ಸಂವಹನ ಹ್ಯಾಂಡ್ಲರ್ ಅಮಾನ್ಯವಾಗಿದೆ."
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
+#, fuzzy
 msgid  "~Remember password until end of session"
-msgstr ""
+msgstr "ಅಧಿವೇಶನದ ಕೊನೆಯವರೆಗೂ ಗುಪ್ತಪದವನ್ನು ನೆನಪಿಟ್ಟುಕೊ(~R)"
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
+#, fuzzy
 msgid  "~Remember password"
-msgstr ""
+msgstr "ಪ್ರವೇಶಪದವನ್ನು ನೆನಪಿನಲ್ಲಿಡು(~R)"

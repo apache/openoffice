@@ -33,240 +33,240 @@ msgstr ""
 
 #: resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.STRING.TEXT
 msgid  "The contents of a combo box or list field could not be determined."
-msgstr ""
+msgstr "Комбо боксын эсвэл лист талбарын агуулга тодорхойгүй"
 
 #: resource/strings.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
 msgid  "Insert graphics"
-msgstr ""
+msgstr "График оруулах"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.STRING.TEXT
 msgid  "substituted"
-msgstr ""
+msgstr "Орлуулсан"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.STRING.TEXT
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr " Шалгалт хийх явцад алдаа илэрлээ.Тиймээс энд зай хадгалагч хийгдэв."
 
 #: resource/strings.src#RID_STR_READERROR.STRING.TEXT
 msgid  "Error reading data from database"
-msgstr ""
+msgstr "Өгөгдийн сангаас өгөгдөл унших үеийн алдаа"
 
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
-msgstr ""
+msgstr "Холболт амжилтгүй "
 
 #: resource/strings.src#RID_ERR_LOADING_FORM.STRING.TEXT
 msgid  "The data content could not be loaded."
-msgstr ""
+msgstr "Өгөгдлийн агуулга ачаалагдаагүй"
 
 #: resource/strings.src#RID_ERR_REFRESHING_FORM.STRING.TEXT
 msgid  "The data content could not be updated"
-msgstr ""
+msgstr "Өгөгдлийн агуулга шинэчлэгдээгүй"
 
 #: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
 msgid  "Error inserting the new record"
-msgstr ""
+msgstr "Шинэ бичлэг оруулах үеийн алдаа"
 
 #: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
 msgid  "Error updating the current record"
-msgstr ""
+msgstr "Одоогийн бичлэгийг шинэчлэх үеийн алдаа"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
 msgid  "Error deleting the current record"
-msgstr ""
+msgstr "Одоогийн бичлэгийг устгах үеийн алдаа"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
 msgid  "Error deleting the specified records"
-msgstr ""
+msgstr "Сонгогдсон бичлэгүүдийг устгах үеийн алдаа"
 
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
-msgstr ""
+msgstr "Объект ТЭГ болж чадахгүй"
 
 #: resource/strings.src#RID_STR_OPEN_GRAPHICS.STRING.TEXT
 msgid  "Insert graphics from..."
-msgstr ""
+msgstr "Графикийг ... аас оруулах"
 
 #: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
 msgid  "Remove graphics"
-msgstr ""
+msgstr "Графикийг устгах"
 
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
-msgstr ""
+msgstr "Өгсөн урсгал хүчингүй"
 
 #: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
 msgid  "Syntax error in query expression"
-msgstr ""
+msgstr "Асуулгын илэрхийлэлд дүрмийн алдаа"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "Энэ шалгах өгөгдлийг солиход ,холболт дэмждэг утгын төрлүүд хэрэглэгдэх боломжгүй"
 
 #: resource/strings.src#RID_STR_LABEL_RECORD.STRING.TEXT
 msgid  "Record"
-msgstr ""
+msgstr "Бичлэг"
 
 #: resource/strings.src#RID_STR_INVALID_VALIDATOR.STRING.TEXT
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "Энэ контрол нэгэн зэрэг Батлагчаар үйлчлэгч гадаад утгатай холбогдсон байна. Шинэ Батлагчийг хэрэглэхээс өмнө энэ холболтыг устгах ёстой."
 
 #: resource/strings.src#RID_STR_LABEL_OF.STRING.TEXT
 msgid  "of"
-msgstr ""
+msgstr "Аас"
 
 #: resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.STRING.TEXT
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Өөрчлөлтөө хадгалах уу?"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.STRING.TEXT
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "Эрэмбэлэх шинжүүр тавих үеийн алдаа"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.STRING.TEXT
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "Шүүх шинжүүр тавих үеийн алдаа"
 
 #: resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.STRING.TEXT
 msgid  "To execute this function, parameters are needed."
-msgstr ""
+msgstr "Энэ функцийг гүйцэтгэхийн тулд параметр хэрэгтэй."
 
 #: resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.STRING.TEXT
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "Энэ функцийг гүйцэтгэхгүй харин төлөвийг асууна."
 
 #: resource/strings.src#RID_STR_FEATURE_UNKNOWN.STRING.TEXT
 msgid  "Unknown function."
-msgstr ""
+msgstr "Тодорхойгүй функц"
 
 #: resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.STRING.TEXT
 msgid  "Please enter a binding expression."
-msgstr ""
+msgstr "Холбох бичиглэлээ оруулна уу"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.STRING.TEXT
 msgid  "This is an invalid binding expression."
-msgstr ""
+msgstr "Энэ хүчингүй холбох бичиглэл байна"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.STRING.TEXT
 msgid  "Value is invalid."
-msgstr ""
+msgstr "Утга хүчингүй"
 
 #: resource/xforms.src#RID_STR_XFORMS_REQUIRED.STRING.TEXT
 msgid  "A value is required."
-msgstr ""
+msgstr "Утга шаардлагатай"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.STRING.TEXT
 msgid  "The constraint '$1' not validated."
-msgstr ""
+msgstr " '$1' нөхцөл хүчингүй."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.STRING.TEXT
 msgid  "The value is not of the type '$2'."
-msgstr ""
+msgstr "Утга '$2' төрлийнх биш."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.STRING.TEXT
 msgid  "The value must be smaller than or equal to $2."
-msgstr ""
+msgstr "Утга $2 оос бага буюу тэнцүү байх ёстой."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.STRING.TEXT
 msgid  "The value must be smaller than $2."
-msgstr ""
+msgstr "Утга $2 оос бага байх ёстой."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.STRING.TEXT
 msgid  "The value must be greater than or equal to $2."
-msgstr ""
+msgstr "Утга $2 оос их буюу тэнцүү байх ёстой."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.STRING.TEXT
 msgid  "The value must be greater than $2."
-msgstr ""
+msgstr "Утга $2 оос их байх ёстой."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.STRING.TEXT
 msgid  "The value does not match the pattern '$2'."
-msgstr ""
+msgstr "Утга '$2' схемтэй таарахгүй."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.STRING.TEXT
 msgid  "$2 digits allowed at most."
-msgstr ""
+msgstr "$2 заагч ихэнх тохиолдолд зөвшөөрөгдсөн."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.STRING.TEXT
 msgid  "$2 fraction digits allowed at most."
-msgstr ""
+msgstr "$2 орон ихэнх тохиолдолд зөвшөөрөгдсөн."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.STRING.TEXT
 msgid  "The string must be $2 characters long."
-msgstr ""
+msgstr "Тэмдэгт мөр $2 тэмдэгтийн урттай байх ёстой"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.STRING.TEXT
 msgid  "The string must be at least $2 characters long."
-msgstr ""
+msgstr "Тэмдэгт мөр дор хаяж $2 тэмдэгтийн урттай байх ёстой."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.STRING.TEXT
 msgid  "The string can only be $2 characters long at most."
-msgstr ""
+msgstr "Тэмдэгт мөр дээд тал нь зөвхөн $2 тэмдэгтийн урттай байх ёстой."
 
 #: resource/xforms.src#RID_STR_DATATYPE_STRING.STRING.TEXT
 msgid  "String"
-msgstr ""
+msgstr "Тэмдэгт мөр"
 
 #: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
 msgid  "Hyperlink"
-msgstr ""
+msgstr "Гипер холбоос  "
 
 #: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
 msgid  "True/False (Boolean)"
-msgstr ""
+msgstr "Үнэн/Худал (бүүлийн) "
 
 #: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
 msgid  "Decimal"
-msgstr ""
+msgstr "Аравтын"
 
 #: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
 msgid  "Floating point"
-msgstr ""
+msgstr "Хөвдөг таслал"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
-msgstr ""
+msgstr "Давхар"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "Огноо"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
-msgstr ""
+msgstr "Цаг"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATETIME.STRING.TEXT
 msgid  "Date and Time"
-msgstr ""
+msgstr "Огноо ба цаг"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.STRING.TEXT
 msgid  "Month and year"
-msgstr ""
+msgstr "Сар ба жил"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEAR.STRING.TEXT
 msgid  "Year"
-msgstr ""
+msgstr "Жил"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
 msgid  "Month and day"
-msgstr ""
+msgstr "Сар ба өдөр"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
 msgid  "Month"
-msgstr ""
+msgstr "Сар"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
 msgid  "Day"
-msgstr ""
+msgstr "Өдөр"
 
 #: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
 msgid  "Error during evaluation"
-msgstr ""
+msgstr "Үнэлгээний явцын алдаа"
 
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr ""
+msgstr "Тэмдэгт мөр '$1' шаардлагатай энгийн илэрхийлэл '$2' той таарахгүй байна."
 
 #: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
 msgid  "Binding"
-msgstr ""
+msgstr "Уях"

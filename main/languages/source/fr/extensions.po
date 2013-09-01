@@ -33,2548 +33,2463 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
 msgid  "Address Book Data Source Wizard"
-msgstr ""
+msgstr "Assistant Source de données des adresses"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
 msgid  "Address book type"
-msgstr ""
+msgstr "Type de carnet d'adresses"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
-msgstr ""
+msgstr "Paramètres de connexion"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
 msgid  "Table selection"
-msgstr ""
+msgstr "Sélection de table"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
 msgid  "Field Assignment"
-msgstr ""
+msgstr "Assignation des champs"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
 msgid  "Data Source Title"
-msgstr ""
+msgstr "Titre de la source de données"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME permet l'accès aux données des adresses présentes dans votre système. Cette fonction nécessite la création d'une source de données %PRODUCTNAME dans laquelle vos carnets d'adresses existeront sous forme de tables.\n\nCet assistant vous aide à créer cette source de données."
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
 msgid  "Please select the type of your external address book:"
-msgstr ""
+msgstr "Sélectionnez le type du carnet d'adresses externe :"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
-msgstr ""
+msgstr "Evolution"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
 msgid  "Groupwise"
-msgstr ""
+msgstr "Groupwise"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
 msgid  "Evolution LDAP"
-msgstr ""
+msgstr "LDAP Evolution"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
 msgid  "Mozilla / Netscape"
-msgstr ""
+msgstr "Mozilla / Netscape"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
 msgid  "Thunderbird"
-msgstr ""
+msgstr "Thunderbird"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
 msgid  "KDE address book"
-msgstr ""
+msgstr "Carnet d'adresses KDE"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
 msgid  "Mac OS X address book"
-msgstr ""
+msgstr "Carnet d'adresses Mac OS X"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
 msgid  "LDAP address data"
-msgstr ""
+msgstr "Stock des adresses LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
 msgid  "Outlook address book"
-msgstr ""
+msgstr "Carnet d'adresses Outlook"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
 msgid  "Windows system address book"
-msgstr ""
+msgstr "Carnet d'adresses du système Windows"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
 msgid  "Other external data source"
-msgstr ""
+msgstr "Autre source de données externe"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Des informations supplémentaires sont requises pour le paramétrage de la nouvelle source de données.\n\nUtilisez le bouton ci-dessous pour ouvrir une autre boîte de dialogue permettant de définir les paramètres manquants."
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "Paramètres"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "La connexion à la source de données n'a pas pu être établie.\nAvant de poursuivre, vérifiez le paramétrage effectué ou choisissez (sur la page précédente) un autre type pour la source de données des adresses."
 
 #: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "La source de données externe sélectionnée contient plusieurs carnets d'adresses.\nSélectionnez celui que vous utiliserez principalement :"
 
 #: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
-msgid  "Field Assignment"
-msgstr ""
+msgstr "Afin de pouvoir utiliser les données des adresses dans les modèles, %PRODUCTNAME doit reconnaître les champs contenant les données concrètes.\n\nExemple : les adresses e-mail pourront avoir été stockées dans un champ précis que vous pouvez nommer comme bon vous semble (e-mail, email, EM ...).\n\nUtilisez le bouton ci-dessous pour appeler une autre boîte de dialogue permettant de définir ces paramètres pour la source de données."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Toutes les informations requises pour l'intégration des données des adresses dans %PRODUCTNAME sont à présent réunies.\n\nSaisissez maintenant le nom sous lequel enregistrer la source de données dans %PRODUCTNAME."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
 msgid  "Location"
-msgstr ""
+msgstr "Emplacement"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr ""
+msgstr "Parcourir..."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr ""
+msgstr "Rendre ce carnet d'adresses accessible dans tous les modules de %PRODUCTNAME."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
 msgid  "Address book name"
-msgstr ""
+msgstr "Nom de carnet d'adresses"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Ce nom a déjà été attribué à une autre source de données. Étant donné que les sources de données doivent avoir des noms globalement uniques, vous devez en choisir un autre."
 
 #: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
 msgid  "Please select a type of address book."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Sélectionnez un type de carnet d'adresses."
 
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
 msgid  "Addresses"
-msgstr ""
+msgstr "Adresses"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
 msgid  "Create Address Data Source"
-msgstr ""
+msgstr "Création de la source de données des adresses"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "Impossible d'établir la connexion."
 
 #: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
 msgid  "Please check the settings made for the data source."
-msgstr ""
+msgstr "Vérifiez les paramètres pour la source de données."
 
 #: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
 msgid  "Address Data - Field Assignment"
-msgstr ""
+msgstr "Données des adresses - Assignation des champs"
 
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "Aucun champ n'est assigné.\nSi vous ne souhaitez pas procéder à l'assignation pour le moment, vous pourrez le faire plus tard sous :\n\"Fichier - Modèle de document - Source du carnet d'adresses ...\""
 
 #: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Field selection:"
-msgstr ""
+msgstr "Sélection de champ :"
 
 #: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
 msgid  "Table;Query;Sql;Sql [Native]"
-msgstr ""
+msgstr "Table;Requête;Sql;Sql [Natif]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
-msgstr ""
+msgstr "Base de données bibliographique"
 
 #: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
 msgid  "Do you want to edit the column arrangement?"
-msgstr ""
+msgstr "Souhaitez-vous éditer la disposition des colonnes ?"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
 msgid  "Column names"
-msgstr ""
+msgstr "Noms des colonnes"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<aucun>"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
 msgid  "Column Layout for Table %1"
-msgstr ""
+msgstr "Assignation de colonnes pour la table %1"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
 msgid  "Choose Data Source"
-msgstr ""
+msgstr "Sélection de la source de données"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
 msgid  "Entry"
-msgstr ""
+msgstr "Entrée"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
 msgid  "The following column names could not be assigned:\n"
-msgstr ""
+msgstr "Impossible d'assigner les noms de colonnes :\n"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
 msgid  "Article"
-msgstr ""
+msgstr "Article"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
 msgid  "Book"
-msgstr ""
+msgstr "Livre"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
-msgstr ""
+msgstr "Brochure"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
 msgid  "Conference proceedings"
-msgstr ""
+msgstr "Rapport de congrès"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
 msgid  "Book excerpt"
-msgstr ""
+msgstr "Extrait de livre"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
 msgid  "Book excerpt with title"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "Extrait de livre avec titre"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
 msgid  "Journal"
-msgstr ""
+msgstr "Magazine"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
-msgstr ""
+msgstr "Documentation technique"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
-msgstr ""
+msgstr "Mémoire"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
 msgid  "Miscellaneous"
-msgstr ""
+msgstr "Divers"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "Thèse de doctorat"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
 msgid  "Research report"
-msgstr ""
+msgstr "Rapport de recherche"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
 msgid  "Unpublished"
-msgstr ""
+msgstr "Non publié"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
 msgid  "WWW document"
-msgstr ""
+msgstr "Document WWW"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
 msgid  "User-defined1"
-msgstr ""
+msgstr "Utilisateur1"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
 msgid  "User-defined2"
-msgstr ""
+msgstr "Utilisateur2"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
 msgid  "User-defined3"
-msgstr ""
+msgstr "Utilisateur3"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
 msgid  "User-defined4"
-msgstr ""
+msgstr "Utilisateur4"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
 msgid  "User-defined5"
-msgstr ""
+msgstr "Utilisateur5"
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Général"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
 msgid  "Insert Section..."
-msgstr ""
+msgstr "Insérer une section..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
 msgid  "Delete Section..."
-msgstr ""
+msgstr "Supprimer une section..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
 msgid  "Modify Name..."
-msgstr ""
+msgstr "Modifier un nom..."
 
 #: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
 msgid  "~Short name"
-msgstr ""
+msgstr "~Abrégé"
 
 #: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "~Type"
 
 #: bibliography/sections.src#ST_YEAR.STRING.TEXT
 msgid  "~Year"
-msgstr ""
+msgstr "A~nnée"
 
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
-msgstr ""
+msgstr "Auteur(s)"
 
 #: bibliography/sections.src#ST_TITLE.STRING.TEXT
 msgid  "Tit~le"
-msgstr ""
+msgstr "T~itre"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
-msgstr ""
+msgstr "Mai~son d'édition"
 
 #: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
 msgid  "A~ddress"
-msgstr ""
+msgstr "A~dresse"
 
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
-msgstr ""
+msgstr "~ISBN"
 
 #: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
 msgid  "~Chapter"
-msgstr ""
+msgstr "~Chapitre"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
-msgstr ""
+msgstr "~Page(s)"
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
 msgid  "Editor"
-msgstr ""
+msgstr "Éditeur"
 
 #: bibliography/sections.src#ST_EDITION.STRING.TEXT
 msgid  "Ed~ition"
-msgstr ""
+msgstr "Éd~ition"
 
 #: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
 msgid  "~Book title"
-msgstr ""
+msgstr "Titre du ~livre"
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
 msgid  "Volume"
-msgstr ""
+msgstr "Volume"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
-msgstr ""
+msgstr "T~ype de publication"
 
 #: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
 msgid  "Organi~zation"
-msgstr ""
+msgstr "Or~ganisation"
 
 #: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
 msgid  "Instit~ution"
-msgstr ""
+msgstr "Instit~ution"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
-msgstr ""
+msgstr "École supérieure/Université"
 
 #: bibliography/sections.src#ST_REPORT.STRING.TEXT
 msgid  "Type of re~port"
-msgstr ""
+msgstr "Type de ra~pport"
 
 #: bibliography/sections.src#ST_MONTH.STRING.TEXT
 msgid  "~Month"
-msgstr ""
+msgstr "M~ois"
 
 #: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
 msgid  "~Journal"
-msgstr ""
+msgstr "~Magazine"
 
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
-msgstr ""
+msgstr "Num~éro"
 
 #: bibliography/sections.src#ST_SERIES.STRING.TEXT
 msgid  "Se~ries"
-msgstr ""
+msgstr "Sé~rie"
 
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
-msgstr ""
+msgstr "Ann~otation"
 
 #: bibliography/sections.src#ST_NOTE.STRING.TEXT
 msgid  "~Note"
-msgstr ""
+msgstr "~Note"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
 msgid  "User-defined field ~1"
-msgstr ""
+msgstr "Champ d'utilisateur ~1"
 
 #: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
 msgid  "User-defined field ~2"
-msgstr ""
+msgstr "Champ d'utilisateur ~2"
 
 #: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
 msgid  "User-defined field ~3"
-msgstr ""
+msgstr "Champ d'utilisateur ~3"
 
 #: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
 msgid  "User-defined field ~4"
-msgstr ""
+msgstr "Champ d'utilisateur ~4"
 
 #: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
 msgid  "User-defined field ~5"
-msgstr ""
+msgstr "Champ d'utilisateur ~5"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Table"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
-msgstr ""
+msgstr "Terme recherché"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
 msgid  "AutoFilter"
-msgstr ""
+msgstr "AutoFiltre"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "Filtre par défaut"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
 msgid  "Remove Filter"
-msgstr ""
+msgstr "Supprimer le filtre"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
 msgid  "Column Arrangement"
-msgstr ""
+msgstr "Disposition des colonnes"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "Source de données"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
-msgid  "Data"
-msgstr ""
+msgstr "Données"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Le formulaire, auquel appartient le contrôle, n'est actuellement pas (du moins pas complètement) connecté à une source de données.\n\nSélectionnez une source de données, ainsi qu'une table.\n\n\nEn outre, notez que les paramètres spécifiés ici pour le formulaire seront immédiatement pris en compte dès que vous quitterez cette page."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
 msgid  "~Data source:"
-msgstr ""
+msgstr "~Source de données :"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
 msgid  "~Table / Query:"
-msgstr ""
+msgstr "~Table / requête :"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 msgid  "Database Field"
-msgstr ""
+msgstr "Champ de base de données"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
 msgid  "Do you want to save the value in a database field?"
-msgstr ""
+msgstr "Souhaitez-vous enregistrer la valeur dans un champ de base de données ?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I want to save it in the following database field:"
-msgstr ""
+msgstr "~Oui, je souhaite l'enregistrer dans le champ de base de données suivant :"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
 msgid  "~No, I only want to save the value in the form."
-msgstr ""
+msgstr "~Non, je souhaite enregistrer la valeur uniquement dans le formulaire."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "Formulaire"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "Source de données"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
 msgid  "Content type"
-msgstr ""
+msgstr "Type de contenu"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
 msgid  "Content"
-msgstr ""
+msgstr "Contenu"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Table"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "Requête"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "Instruction SQL"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
 msgid  "Group Element Wizard"
-msgstr ""
+msgstr "Assistant Élément de groupe"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
 msgid  "Table Element Wizard"
-msgstr ""
+msgstr "Assistant Élément de table"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
 msgid  "List Box Wizard"
-msgstr ""
+msgstr "Assistant Zone de liste"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
 msgid  "Combo Box Wizard"
-msgstr ""
+msgstr "Assistant Zone combinée"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 msgid  "The table connection to the data source could not be established."
-msgstr ""
+msgstr "Impossible de connecter la table à la source de données."
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "Sélection de champ"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Table element"
-msgstr ""
+msgstr "Élément de table"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "Champs existants"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
 msgid  "Selected fields"
-msgstr ""
+msgstr "Champs sélectionnés"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
 msgid  " (Date)"
-msgstr ""
+msgstr " (Date)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
 msgid  " (Time)"
-msgstr ""
+msgstr " (Heure)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "Données"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
 msgid  "Which ~names do you want to give the option fields?"
-msgstr ""
+msgstr "Quels ~intitulés attribuer aux boutons radio ?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
-msgstr ""
+msgstr "~Boutons radio"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
 msgid  "Default Field Selection"
-msgstr ""
+msgstr "Sélection du champ par défaut"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
 msgid  "Should one option field be selected as a default?"
-msgstr ""
+msgstr "Sélectionner un bouton radio par défaut ?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
-msgstr ""
+msgstr "~Oui, le suivant :"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
 msgid  "No, one particular field is not going to be selected."
-msgstr ""
+msgstr "Non, aucun champ particulier ne va être sélectionné."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
 msgid  "Field Values"
-msgstr ""
+msgstr "Valeurs de champ"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "Si vous sélectionnez une option, une valeur définie sera attribuée au groupe d'options."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
-msgstr ""
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
-msgid  "~Option fields"
-msgstr ""
+msgstr "Quelle ~valeur attribuer à chaque option ?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
 msgid  "Create Option Group"
-msgstr ""
+msgstr "Créer un groupe d'options"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
-msgstr ""
+msgstr "Quelle ~étiquette attribuer au groupe d'options ?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
 msgid  "These were all details needed to create the option group."
-msgstr ""
+msgstr "Toutes les informations nécessaires ont été rassemblées ; le groupe d'options va pouvoir être créé."
 
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Vous pouvez soit enregistrer la valeur du groupe d'options dans un champ de base de données, soit l'utiliser pour une action ultérieure."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
 msgid  "Table Selection"
-msgstr ""
+msgstr "Sélection de table"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Control"
-msgstr ""
+msgstr "Contrôle"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Toutes les tables de la source de données du formulaire sont mentionnées à droite.\n\n\nSélectionnez les tables dont les données devront servir de base au contenu de la liste :"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "Sélection de champ"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "Champs existants"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
 msgid  "Display field"
-msgstr ""
+msgstr "Champ d'affichage"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "Le contenu du champ sélectionné sera affiché dans la liste de la zone combinée."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Le contenu du champ sélectionné sera affiché dans la zone de liste à condition que les champs liés concordent bien."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
 msgid  "Field Link"
-msgstr ""
+msgstr "Liaison de champs"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Sélectionnez les champs dont le contenu doit coïncider afin d'afficher la valeur du champ de visualisation."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~Value Table"
-msgstr ""
+msgstr "Champ de la table des ~valeurs"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~List Table"
-msgstr ""
+msgstr "Champ de la table de ~liste"
 
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Vous pouvez soit enregistrer la valeur de la zone combinée dans un champ de base de données, soit l'utiliser seulement pour l'affichage."
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
 msgid  "<< Back"
-msgstr ""
+msgstr "<< Précédent"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "Next >>"
-msgstr ""
+msgstr "Suivant >>"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
 msgid  "Accept"
-msgstr ""
+msgstr "Accepter"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
 msgid  "Finish"
-msgstr ""
+msgstr "Créer"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
-msgstr ""
+msgstr " - Contrat de licence du logiciel"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
 msgid  "- User Data"
-msgstr ""
+msgstr " - Données d'identité"
 
 #: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
 msgid  "Welcome"
-msgstr ""
+msgstr "Bienvenue"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
-msgstr ""
+msgstr "Bienvenue dans %PRODUCTNAME %PRODUCTVERSION OEM\n\nPour démarrer %PRODUCTNAME %PRODUCTVERSION OEM, veuillez saisir vos données personnelles dans la boîte de dialogue suivant le texte de la licence. Des informations importantes sont contenues dans les fichiers lisez-moi qui sont situés dans le répertoire du produit  %PRODUCTNAME. Veuillez lire attentivement ces fichiers. Vous pouvez également trouver des informations détaillées sur le site de Oracle.\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
 msgid  "License Agreement"
-msgstr ""
+msgstr "Contrat de licence"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr ""
+msgstr "Suivez les étapes suivantes pour procéder à l'installation :"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Prenez connaissance du contrat de licence. Servez-vous de la barre de défilement ou du bouton '%PAGEDOWN' afin d'afficher le texte en entier."
 
 #: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 msgid  "Page Down"
-msgstr ""
+msgstr "Suivant"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement."
-msgstr ""
+msgstr "Accepter le contrat de licence."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
 msgid  "I accept the terms of the Agreement."
-msgstr ""
+msgstr "J'accepte les conditions du contrat."
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "~Accepter"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
-msgstr ""
+msgstr "Refuser"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
 msgid  "Character"
-msgstr ""
+msgstr "Caractères"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Police"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr ""
+msgstr "Effets de caractères"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
 msgid  "Link fields"
-msgstr ""
+msgstr "Lier les champs"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Les sous-formulaires permettent d'afficher des informations détaillées sur l'enregistrement actif du formulaire principal. Pour ce faire, spécifiez les colonnes du sous-formulaire qui correspondent à d'autres colonnes du formulaire principal."
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
 msgid  "Suggest"
-msgstr ""
+msgstr "Suggérer"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
 msgid  "Sub Form"
-msgstr ""
+msgstr "Sous-formulaire"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
 msgid  "Master Form"
-msgstr ""
+msgstr "Formulaire principal"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
 msgid  "The columns of '#' could not be retrieved."
-msgstr ""
+msgstr "Impossible de récupérer les colonnes de '#'."
 
 #: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
 msgid  "Edit mask"
-msgstr ""
+msgstr "Masque de saisie"
 
 #: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
 msgid  "Literal mask"
-msgstr ""
+msgstr "Masque littéral"
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
 msgid  "Read-only"
-msgstr ""
+msgstr "Lecture seule"
 
 #: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
 msgid  "Enabled"
-msgstr ""
+msgstr "Activé"
 
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
 msgid  "Visible"
-msgstr ""
+msgstr "Visible"
 
 #: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
 msgid  "AutoFill"
-msgstr ""
+msgstr "Remplir automatiquement"
 
 #: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
 msgid  "Line count"
-msgstr ""
+msgstr "Nombre de lignes"
 
 #: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
 msgid  "Max. text length"
-msgstr ""
+msgstr "Longueur de texte max."
 
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
 msgid  "Spin Button"
-msgstr ""
+msgstr "Compteur"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
 msgid  "Strict format"
-msgstr ""
+msgstr "Vérification de format"
 
 #: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
 msgid  "Thousands separator"
-msgstr ""
+msgstr "Séparateur de milliers"
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
 msgid  "Printable"
-msgstr ""
+msgstr "Imprimable"
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
+#, fuzzy
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "Cadre"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
 msgid  "Help text"
-msgstr ""
+msgstr "Texte d'aide"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
 msgid  "Help URL"
-msgstr ""
+msgstr "URL de l'aide"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
 msgid  "Additional information"
-msgstr ""
+msgstr "Complément d'information"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
 msgid  "Password character"
-msgstr ""
+msgstr "Caractères pour mot de passe"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
 msgid  "Tristate"
-msgstr ""
+msgstr "Statut triple"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
 msgid  "Empty string is NULL"
-msgstr ""
+msgstr "Espace vide égale NULL"
 
 #: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
 msgid  "Decimal accuracy"
-msgstr ""
+msgstr "Décimales"
 
 #: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
 msgid  "Graphics"
-msgstr ""
+msgstr "Images"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
 msgid  "Default selection"
-msgstr ""
+msgstr "Sélection par défaut"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
 msgid  "Default button"
-msgstr ""
+msgstr "Bouton par défaut"
 
 #: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
 msgid  "Label Field"
-msgstr ""
+msgstr "Champ d'étiquette"
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
 msgid  "Label"
-msgstr ""
+msgstr "Étiquette"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr ""
+msgstr "Alignement"
 
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
 msgid  "Vert. Alignment"
-msgstr ""
+msgstr "Alignement vert."
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
 msgid  "Top"
-msgstr ""
+msgstr "Haut"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
 msgid  "Middle"
-msgstr ""
+msgstr "Milieu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
 msgid  "Bottom"
-msgstr ""
+msgstr "Bas"
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
 msgid  "Graphics alignment"
-msgstr ""
+msgstr "Alignement des images"
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Police"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
 msgid  "Background color"
-msgstr ""
+msgstr "Couleur d'arrière-plan"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
 msgid  "Border"
-msgstr ""
+msgstr "Bordure"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
 msgid  "Icon size"
-msgstr ""
+msgstr "Taille des icônes"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
 msgid  "Small"
-msgstr ""
+msgstr "Petit"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
 msgid  "Large"
-msgstr ""
+msgstr "Grand"
 
 #: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
 msgid  "Positioning"
-msgstr ""
+msgstr "Positionnement"
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
 msgid  "Navigation"
-msgstr ""
+msgstr "Navigation"
 
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
 msgid  "Acting on a record"
-msgstr ""
+msgstr "Action sur enregistrement"
 
 #: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
 msgid  "Filtering / Sorting"
-msgstr ""
+msgstr "Filtrage / Tri"
 
 #: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
 msgid  "Horizontal scroll bar"
-msgstr ""
+msgstr "Barre de défilement horizontale"
 
 #: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
 msgid  "Vertical scroll bar"
-msgstr ""
+msgstr "Barre de défilement verticale"
 
 #: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
 msgid  "Word break"
-msgstr ""
+msgstr "Coupure de mot"
 
 #: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
 msgid  "Multiline input"
-msgstr ""
+msgstr "Plusieurs lignes"
 
 #: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
 msgid  "Multiselection"
-msgstr ""
+msgstr "Sélection multiple"
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
 msgid  "Name"
-msgstr ""
+msgstr "Nom"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 msgid  "Tab order"
-msgstr ""
+msgstr "Séquence d'activation"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
 msgid  "Mouse wheel scroll"
-msgstr ""
+msgstr "Défilement à la molette de la souris"
 
 #: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
 msgid  "Filter"
-msgstr ""
+msgstr "Filtre"
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
 msgid  "Sort"
-msgstr ""
+msgstr "Tri"
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
 msgid  "Record marker"
-msgstr ""
+msgstr "Marqueur d'enregistrement"
 
 #: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
 msgid  "Filter proposal"
-msgstr ""
+msgstr "Proposition de filtre"
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
 msgid  "Navigation bar"
-msgstr ""
+msgstr "Barre de navigation"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
 msgid  "Cycle"
-msgstr ""
+msgstr "Cycle"
 
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
 msgid  "Tabstop"
-msgstr ""
+msgstr "Tabulation"
 
 #: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
 msgid  "Data field"
-msgstr ""
+msgstr "Champ de données"
 
 #: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
 msgid  "Dropdown"
-msgstr ""
+msgstr "Déroulante"
 
 #: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
 msgid  "Bound field"
-msgstr ""
+msgstr "Champ lié"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
 msgid  "List content"
-msgstr ""
+msgstr "Contenu de liste"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
 msgid  "Type of list contents"
-msgstr ""
+msgstr "Type du contenu de liste"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
 msgid  "Content"
-msgstr ""
+msgstr "Contenu"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
 msgid  "Content type"
-msgstr ""
+msgstr "Type de contenu"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
 msgid  "Allow additions"
-msgstr ""
+msgstr "Autoriser les ajouts"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
 msgid  "Allow deletions"
-msgstr ""
+msgstr "Autoriser les suppressions"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
 msgid  "Allow modifications"
-msgstr ""
+msgstr "Autoriser les modifications"
 
 #: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
 msgid  "Add data only"
-msgstr ""
+msgstr "N'ajouter que des données"
 
 #: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "Source de données"
 
 #: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
 msgid  "Link master fields"
-msgstr ""
+msgstr "Établir un lien depuis"
 
 #: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
 msgid  "Link slave fields"
-msgstr ""
+msgstr "Établir un lien avec"
 
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
 msgid  "Value min."
-msgstr ""
+msgstr "Valeur min."
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
 msgid  "Value max."
-msgstr ""
+msgstr "Valeur max."
 
 #: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
 msgid  "Incr./decrement value"
-msgstr ""
+msgstr "Intervalle"
 
 #: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
 msgid  "Currency symbol"
-msgstr ""
+msgstr "Symbole monétaire"
 
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
 msgid  "Date min."
-msgstr ""
+msgstr "Date min."
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
 msgid  "Date max."
-msgstr ""
+msgstr "Date max."
 
 #: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
 msgid  "Date format"
-msgstr ""
+msgstr "Format de date"
 
 #: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
 msgid  "Selection"
-msgstr ""
+msgstr "Sélection"
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
 msgid  "Time min."
-msgstr ""
+msgstr "Heure min."
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
 msgid  "Time max."
-msgstr ""
+msgstr "Heure max."
 
 #: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
 msgid  "Time format"
-msgstr ""
+msgstr "Format d'heure"
 
 #: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
 msgid  "Prefix symbol"
-msgstr ""
+msgstr "Placer le symbole avant le nombre"
 
 #: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
 msgid  "Value"
-msgstr ""
+msgstr "Valeur"
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
 msgid  "Formatting"
-msgstr ""
+msgstr "Formatage"
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
 msgid  "Class ID"
-msgstr ""
+msgstr "Index de classe"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
 msgid  "Height"
-msgstr ""
+msgstr "Hauteur"
 
 #: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
 msgid  "Width"
-msgstr ""
+msgstr "Largeur"
 
 #: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
 msgid  "List index"
-msgstr ""
+msgstr "Index de liste"
 
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
 msgid  "Row height"
-msgstr ""
+msgstr "Hauteur de ligne"
 
 #: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
 msgid  "Fill color"
-msgstr ""
+msgstr "Couleur de remplissage"
 
 #: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
 msgid  "Line color"
-msgstr ""
+msgstr "Couleur de ligne"
 
 #: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
 msgid  "Reference value (on)"
-msgstr ""
+msgstr "Valeur référentielle (activée)"
 
 #: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
 msgid  "Reference value (off)"
-msgstr ""
+msgstr "Valeur référentielle (désactivée)"
 
 #: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
 msgid  "List entries"
-msgstr ""
+msgstr "Entrées de liste"
 
 #: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
 msgid  "Action"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
-msgid  "URL"
-msgstr ""
+msgstr "Action"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
 msgid  "Type of submission"
-msgstr ""
+msgstr "Type d'envoi"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
 msgid  "Default status"
-msgstr ""
+msgstr "Statut par défaut"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
 msgid  "Submission encoding"
-msgstr ""
+msgstr "Encodage de l'envoi"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
 msgid  "Default value"
-msgstr ""
+msgstr "Valeur par défaut"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
 msgid  "Default text"
-msgstr ""
+msgstr "Texte par défaut"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
 msgid  "Default date"
-msgstr ""
+msgstr "Date par défaut"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
 msgid  "Default time"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
-msgid  "Frame"
-msgstr ""
+msgstr "Heure par défaut"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
 msgid  "Without frame"
-msgstr ""
+msgstr "Sans cadre"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
 msgid  "3D look"
-msgstr ""
+msgstr "3D"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Flat"
-msgstr ""
+msgstr "Plat"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
 msgid  "Valuelist"
-msgstr ""
+msgstr "Liste de valeurs"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "Table"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Query"
-msgstr ""
+msgstr "Requête"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
 msgid  "Sql"
-msgstr ""
+msgstr "Sql"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
 msgid  "Sql [Native]"
-msgstr ""
+msgstr "Sql [Natif]"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
 msgid  "Tablefields"
-msgstr ""
+msgstr "Champs de table"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
 msgid  "Left"
-msgstr ""
+msgstr "Gauche"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
 msgid  "Center"
-msgstr ""
+msgstr "Centre"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
 msgid  "Right"
-msgstr ""
+msgstr "Droite"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
 msgid  "None"
-msgstr ""
+msgstr "Aucun(e)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
 msgid  "Submit form"
-msgstr ""
+msgstr "Valider le formulaire"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
 msgid  "Reset form"
-msgstr ""
+msgstr "Effacer le formulaire"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
 msgid  "Open document/web page"
-msgstr ""
+msgstr "Ouvrir la page web"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
 msgid  "First record"
-msgstr ""
+msgstr "Premier enregistrement"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
 msgid  "Previous record"
-msgstr ""
+msgstr "Enregistrement précédent"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
 msgid  "Next record"
-msgstr ""
+msgstr "Enregistrement suivant"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
 msgid  "Last record"
-msgstr ""
+msgstr "Dernier enregistrement"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
 msgid  "Save record"
-msgstr ""
+msgstr "Enregistrer"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
 msgid  "Undo data entry"
-msgstr ""
+msgstr "Annuler la saisie de donnée"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
 msgid  "New record"
-msgstr ""
+msgstr "Nouvel enregistrement"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
 msgid  "Delete record"
-msgstr ""
+msgstr "Supprimer l'enregistrement"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
 msgid  "Refresh form"
-msgstr ""
+msgstr "Rafraîchir le formulaire"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
 msgid  "Get"
-msgstr ""
+msgstr "Obtenir"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
 msgid  "Post"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
-msgid  "URL"
-msgstr ""
+msgstr "Poster"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
 msgid  "Multipart"
-msgstr ""
+msgstr "Composite"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Texte"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
 msgid  "Standard (short)"
-msgstr ""
+msgstr "Standard (court)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
 msgid  "Standard (short YY)"
-msgstr ""
+msgstr "Standard (court AA)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
 msgid  "Standard (short YYYY)"
-msgstr ""
+msgstr "Standard (court AAAA)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
 msgid  "Standard (long)"
-msgstr ""
+msgstr "Standard (long)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
 msgid  "DD/MM/YY"
-msgstr ""
+msgstr "JJ/MM/AA"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
 msgid  "MM/DD/YY"
-msgstr ""
+msgstr "MM/JJ/AA"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
 msgid  "YY/MM/DD"
-msgstr ""
+msgstr "AA/MM/JJ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
 msgid  "DD/MM/YYYY"
-msgstr ""
+msgstr "JJ/MM/AAAA"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
 msgid  "MM/DD/YYYY"
-msgstr ""
+msgstr "MM/JJ/AAAA"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
 msgid  "YYYY/MM/DD"
-msgstr ""
+msgstr "AAAA/MM/JJ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
 msgid  "YY-MM-DD"
-msgstr ""
+msgstr "AA-MM-JJ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
 msgid  "YYYY-MM-DD"
-msgstr ""
+msgstr "AAAA-MM-JJ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
 msgid  "13:45"
-msgstr ""
+msgstr "13:45"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
 msgid  "13:45:00"
-msgstr ""
+msgstr "13:45:00"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
 msgid  "01:45 PM"
-msgstr ""
+msgstr "01:45 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
 msgid  "01:45:00 PM"
-msgstr ""
+msgstr "01:45:00 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
 msgid  "Not Selected"
-msgstr ""
+msgstr "Non sélectionné"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
 msgid  "Selected"
-msgstr ""
+msgstr "Sélectionné"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
 msgid  "Not Defined"
-msgstr ""
+msgstr "Non défini"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
 msgid  "All records"
-msgstr ""
+msgstr "Tous les enregistrements"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
 msgid  "Active record"
-msgstr ""
+msgstr "Enregistrement actif"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
 msgid  "Current page"
-msgstr ""
+msgstr "Page active"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Non"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "Oui"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
 msgid  "Parent Form"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
-msgid  "None"
-msgstr ""
+msgstr "Formulaire parent"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
 msgid  "Single"
-msgstr ""
+msgstr "Simple"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
 msgid  "Multi"
-msgstr ""
+msgstr "Multi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
 msgid  "Range"
-msgstr ""
+msgstr "Plage"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
 msgid  "Fill parameters"
-msgstr ""
+msgstr "Remplir les paramètres"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
 msgid  "Execute action"
-msgstr ""
+msgstr "Exécuter l'action"
 
 #: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
 msgid  "After updating"
-msgstr ""
+msgstr "Après l'actualisation"
 
 #: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
-msgstr ""
+msgstr "Avant l'actualisation"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
 msgid  "Before record action"
-msgstr ""
+msgstr "Avant l'opération d'enregistrement"
 
 #: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
 msgid  "After record action"
-msgstr ""
+msgstr "Après l'opération d'enregistrement"
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
-msgstr ""
+msgstr "Confirmation de suppression"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
 msgid  "Error occurred"
-msgstr ""
+msgstr "Erreur survenue"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
-msgstr ""
+msgstr "Réception de focus"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
 msgid  "When losing focus"
-msgstr ""
+msgstr "Perte de focus"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
-msgstr ""
+msgstr "Statut modifié"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
 msgid  "Key pressed"
-msgstr ""
+msgstr "Touche enfoncée"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
 msgid  "Key released"
-msgstr ""
+msgstr "Après avoir lâché la touche"
 
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
 msgid  "When loading"
-msgstr ""
+msgstr "Lors du chargement"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
 msgid  "Before reloading"
-msgstr ""
+msgstr "Avant le rechargement"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
 msgid  "When reloading"
-msgstr ""
+msgstr "Lors du rechargement"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
 msgid  "Mouse moved while key pressed"
-msgstr ""
+msgstr "Déplacement de la souris et touche enfoncée"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
 msgid  "Mouse inside"
-msgstr ""
+msgstr "Souris à l'intérieur"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
 msgid  "Mouse outside"
-msgstr ""
+msgstr "Souris à l'extérieur"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
 msgid  "Mouse moved"
-msgstr ""
+msgstr "Déplacement de la souris"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
 msgid  "Mouse button pressed"
-msgstr ""
+msgstr "Bouton de souris enfoncé"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
 msgid  "Mouse button released"
-msgstr ""
+msgstr "Bouton de souris relâché"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
 msgid  "Before record change"
-msgstr ""
+msgstr "Avant le changement d'enregistrement"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
 msgid  "After record change"
-msgstr ""
+msgstr "Après le changement d'enregistrement"
 
 #: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
 msgid  "After resetting"
-msgstr ""
+msgstr "Après le rétablissement"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
 msgid  "Prior to reset"
-msgstr ""
+msgstr "Avant de rétablir"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
 msgid  "Approve action"
-msgstr ""
+msgstr "Approuver l'action"
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
 msgid  "Before submitting"
-msgstr ""
+msgstr "Avant l'envoi"
 
 #: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
 msgid  "Text modified"
-msgstr ""
+msgstr "Texte modifié"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
-msgstr ""
+msgstr "Avant le déchargement"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
-msgstr ""
+msgstr "Lors du déchargement"
 
 #: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
 msgid  "Changed"
-msgstr ""
+msgstr "Modifié(es)"
 
 #: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
 msgid  "Events"
-msgstr ""
+msgstr "Événements"
 
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
 msgid  "Analyze SQL command"
-msgstr ""
+msgstr "Analyser l'instruction SQL"
 
 #: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
 msgid  "PositionX"
-msgstr ""
+msgstr "PositionX"
 
 #: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
 msgid  "PositionY"
-msgstr ""
+msgstr "PositionY"
 
 #: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
 msgid  "Title"
-msgstr ""
+msgstr "Titre"
 
 #: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
 msgid  "Page (step)"
-msgstr ""
+msgstr "Page (pas)"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
 msgid  "Progress value"
-msgstr ""
+msgstr "Valeur de progression"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
 msgid  "Progress value min."
-msgstr ""
+msgstr "Valeur de progression min."
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
 msgid  "Progress value max."
-msgstr ""
+msgstr "Valeur de progression max."
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
 msgid  "Scroll value"
-msgstr ""
+msgstr "Valeur de défilement"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
 msgid  "Scroll value max."
-msgstr ""
+msgstr "Valeur de défilement max."
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
 msgid  "Scroll value min."
-msgstr ""
+msgstr "Valeur de défilement min."
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
 msgid  "Default scroll value"
-msgstr ""
+msgstr "Valeur de défilement par défaut"
 
 #: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
 msgid  "Small change"
-msgstr ""
+msgstr "Petit changement"
 
 #: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
 msgid  "Large change"
-msgstr ""
+msgstr "Grand changement"
 
 #: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
 msgid  "Delay"
-msgstr ""
+msgstr "Délai"
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
 msgid  "Repeat"
-msgstr ""
+msgstr "Répéter"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
 msgid  "Visible size"
-msgstr ""
+msgstr "Taille visible"
 
 #: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
 msgid  "Orientation"
-msgstr ""
+msgstr "Orientation"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 msgid  "Horizontal"
-msgstr ""
+msgstr "Horizontal"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
 msgid  "Vertical"
-msgstr ""
+msgstr "Vertical"
 
 #: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
 msgid  "While adjusting"
-msgstr ""
+msgstr "À l'ajustement"
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "Date"
 
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
 msgid  "State"
-msgstr ""
+msgstr "Statut"
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
 msgid  "Time"
-msgstr ""
+msgstr "Heure"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
 msgid  "Scale"
-msgstr ""
+msgstr "Échelle"
 
 #: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
 msgid  "Button type"
-msgstr ""
+msgstr "Type de bouton"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
 msgid  "Default"
-msgstr ""
+msgstr "Par défaut"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
 msgid  "OK"
-msgstr ""
+msgstr "OK"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
 msgid  "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
 msgid  "Help"
-msgstr ""
+msgstr "Aide"
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr ""
+msgstr "Impossible d'établir la connexion à la source de données \"$name$\"."
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
 msgid  "Linked cell"
-msgstr ""
+msgstr "Cellule liée"
 
 #: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
 msgid  "Source cell range"
-msgstr ""
+msgstr "Plage de cellules source"
 
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
 msgid  "Contents of the linked cell"
-msgstr ""
+msgstr "Contenu de la cellule liée"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
 msgid  "The selected entry"
-msgstr ""
+msgstr "L'entrée sélectionnée"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
 msgid  "Position of the selected entry"
-msgstr ""
+msgstr "Position de l'entrée sélectionnée"
 
 #: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
 msgid  "Scrollbars"
-msgstr ""
+msgstr "Barres de défilement"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
 msgid  "Single-line"
-msgstr ""
+msgstr "Ligne unique"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
 msgid  "Multi-line"
-msgstr ""
+msgstr "Plusieurs lignes"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
 msgid  "Multi-line with formatting"
-msgstr ""
+msgstr "Plusieurs lignes avec formatage"
 
 #: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
 msgid  "Symbol color"
-msgstr ""
+msgstr "Couleur du symbole"
 
 #: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
 msgid  "Text lines end with"
-msgstr ""
+msgstr "Lignes finissant par"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
 msgid  "LF (Unix)"
-msgstr ""
+msgstr "LF (Unix)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
 msgid  "CR+LF (Windows)"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
-msgid  "Horizontal"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
-msgid  "Vertical"
-msgstr ""
+msgstr "CR+LF (Windows)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
 msgid  "Both"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
-msgid  "Table"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
-msgid  "Query"
-msgstr ""
+msgstr "Les deux"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "Instruction SQL"
 
 #: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
 msgid  "Toggle"
-msgstr ""
+msgstr "Basculer"
 
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
 msgid  "Take Focus on Click"
-msgstr ""
+msgstr "Focus sur clic"
 
 #: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
 msgid  "Hide selection"
-msgstr ""
+msgstr "Masquer la sélection"
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
 msgid  "Style"
-msgstr ""
+msgstr "Style"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 msgid  "3D"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
-msgid  "Flat"
-msgstr ""
+msgstr "3D"
 
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
 msgid  "Border color"
-msgstr ""
+msgstr "Couleur de bordure"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
 msgid  "Left top"
-msgstr ""
+msgstr "À gauche en haut"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
 msgid  "Left centered"
-msgstr ""
+msgstr "À gauche centré"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
 msgid  "Left bottom"
-msgstr ""
+msgstr "À gauche en bas"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
 msgid  "Right top"
-msgstr ""
+msgstr "À droite en haut"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
 msgid  "Right centered"
-msgstr ""
+msgstr "À droite centré"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
 msgid  "Right bottom"
-msgstr ""
+msgstr "À droite en bas"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
 msgid  "Above left"
-msgstr ""
+msgstr "Au-dessus à gauche"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
 msgid  "Above centered"
-msgstr ""
+msgstr "Au-dessus centré"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
 msgid  "Above right"
-msgstr ""
+msgstr "Au-dessus à droite"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
 msgid  "Below left"
-msgstr ""
+msgstr "En dessous à gauche"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
 msgid  "Below centered"
-msgstr ""
+msgstr "En dessous au centre"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
 msgid  "Below right"
-msgstr ""
+msgstr "En dessous à droite"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
 msgid  "Centered"
-msgstr ""
+msgstr "Centré"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
 msgid  "Wrap text automatically"
-msgstr ""
+msgstr "Renvoi à la ligne automatique"
 
 #: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
 msgid  "Text type"
-msgstr ""
+msgstr "Type de texte"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
 msgid  "Hide"
-msgstr ""
+msgstr "Masquer"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
 msgid  "Show"
-msgstr ""
+msgstr "Afficher"
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
 msgid  "XML data model"
-msgstr ""
+msgstr "Modèle de données XML"
 
 #: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
 msgid  "Binding expression"
-msgstr ""
+msgstr "Expression de liaison"
 
 #: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
 msgid  "Required"
-msgstr ""
+msgstr "Requis"
 
 #: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
 msgid  "List entry source"
-msgstr ""
+msgstr "Source de l'entrée de liste"
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
 msgid  "Relevant"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
-msgid  "Read-only"
-msgstr ""
+msgstr "Important"
 
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
 msgid  "Constraint"
-msgstr ""
+msgstr "Contrainte"
 
 #: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
 msgid  "Calculation"
-msgstr ""
+msgstr "Calcul"
 
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
 msgid  "Data type"
-msgstr ""
+msgstr "Type de données"
 
 #: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
 msgid  "Whitespaces"
-msgstr ""
+msgstr "Blancs"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
 msgid  "Preserve"
-msgstr ""
+msgstr "Conserver"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
 msgid  "Replace"
-msgstr ""
+msgstr "Remplacer"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
 msgid  "Collapse"
-msgstr ""
+msgstr "Réduire"
 
 #: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
 msgid  "Pattern"
-msgstr ""
+msgstr "Motif"
 
 #: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
 msgid  "Length"
-msgstr ""
+msgstr "Longueur"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
 msgid  "Length (at least)"
-msgstr ""
+msgstr "Longueur minimale"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
 msgid  "Length (at most)"
-msgstr ""
+msgstr "Longueur maximale"
 
 #: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
 msgid  "Digits (total)"
-msgstr ""
+msgstr "Chiffres (total)"
 
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
 msgid  "Digits (fraction)"
-msgstr ""
+msgstr "Chiffres (fraction)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
 msgid  "Max. (inclusive)"
-msgstr ""
+msgstr "Max. (inclusif)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
 msgid  "Max. (exclusive)"
-msgstr ""
+msgstr "Max. (exclusif)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
 msgid  "Min. (inclusive)"
-msgstr ""
+msgstr "Min. (inclusif)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
 msgid  "Min. (exclusive)"
-msgstr ""
+msgstr "Min. (exclusif)"
 
 #: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
 msgid  "Submission"
-msgstr ""
+msgstr "Envoi"
 
 #: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
 msgid  "Binding"
-msgstr ""
+msgstr "Liaison"
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
 msgid  "Selection type"
-msgstr ""
+msgstr "Type de sélection"
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
 msgid  "Root displayed"
-msgstr ""
+msgstr "Racine affichée"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
 msgid  "Show handles"
-msgstr ""
+msgstr "Afficher les poignées"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
 msgid  "Show root handles"
-msgstr ""
+msgstr "Afficher les poignées racines"
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
 msgid  "Editable"
-msgstr ""
+msgstr "Éditable"
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
 msgid  "Invokes stop node editing"
-msgstr ""
+msgstr "Appelle l'édition du noeud d'arrêt"
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
 msgid  "With title bar"
-msgstr ""
+msgstr "Avec barre de titre"
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
 msgid  "No Label"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
-msgid  "No"
-msgstr ""
+msgstr "Pas d'étiquette"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
 msgid  "Keep Ratio"
-msgstr ""
+msgstr "Proportionnel"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
 msgid  "Fit to Size"
-msgstr ""
+msgstr "Adapter à la taille"
 
 #: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
 msgid  "Input required"
-msgstr ""
+msgstr "Saisie requise"
 
 #: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
 msgid  "Text direction"
-msgstr ""
+msgstr "Direction du texte"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
 msgid  "Left-to-right"
-msgstr ""
+msgstr "Gauche-à-droite"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
 msgid  "Right-to-left"
-msgstr ""
+msgstr "Droite-à-gauche"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
 msgid  "Use superordinate object settings"
-msgstr ""
+msgstr "Utiliser les paramètres de l'objet supérieur"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
 msgid  "Never"
-msgstr ""
+msgstr "Jamais"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
 msgid  "When focused"
-msgstr ""
+msgstr "À la réception du focus"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
 msgid  "Always"
-msgstr ""
+msgstr "Toujours"
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
 msgid  "Anchor"
-msgstr ""
+msgstr "Ancrer"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
 msgid  "To Paragraph"
-msgstr ""
+msgstr "Au paragraphe"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "As Character"
-msgstr ""
+msgstr "Comme caractère"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "To Page"
-msgstr ""
+msgstr "À la page"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
 msgid  "To Frame"
-msgstr ""
+msgstr "Au cadre"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
 msgid  "To Character"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Page"
-msgstr ""
+msgstr "Au caractère"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "To Cell"
-msgstr ""
+msgstr "À la cellule"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
 msgid  "Regular"
-msgstr ""
+msgstr "Normal"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
 msgid  "Bold Italic"
-msgstr ""
+msgstr "Gras italique"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr ""
+msgstr "Italique"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr ""
+msgstr "Gras"
 
 #: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
 msgid  "(Default)"
-msgstr ""
+msgstr "(par défaut)"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
 msgid  "New Data Type"
-msgstr ""
+msgstr "Nouveau type de données"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
 msgid  "Type a name for the new data type:"
-msgstr ""
+msgstr "Saisissez le nom du nouveau type de données :"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Voulez-vous supprimer le type de données '#type#' du modèle ?\nCela aura une incidence sur tous les contrôles liés à ce type de données."
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
 msgid  "Button"
-msgstr ""
+msgstr "Bouton"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
 msgid  "Option Button"
-msgstr ""
+msgstr "Bouton radio"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
 msgid  "Check Box"
-msgstr ""
+msgstr "Case à cocher"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 msgid  "Label Field"
-msgstr ""
+msgstr "Champ d'étiquette"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
 msgid  "Group Box"
-msgstr ""
+msgstr "Zone de groupe"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
 msgid  "Text Box"
-msgstr ""
+msgstr "Zone de texte"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
 msgid  "Formatted Field"
-msgstr ""
+msgstr "Champ formaté"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
 msgid  "List Box"
-msgstr ""
+msgstr "Zone de liste"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
 msgid  "Combo Box"
-msgstr ""
+msgstr "Zone combinée"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
 msgid  "Image Button"
-msgstr ""
+msgstr "Bouton picto"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
 msgid  "Hidden Control"
-msgstr ""
+msgstr "Contrôle masqué"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
 msgid  "Control (unknown type)"
-msgstr ""
+msgstr "Contrôle (type inconnu)"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
 msgid  "Image Control"
-msgstr ""
+msgstr "Contrôle picto"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
 msgid  "File Selection"
-msgstr ""
+msgstr "Sélection de fichier"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
 msgid  "Date Field"
-msgstr ""
+msgstr "Champ de date"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
 msgid  "Time Field"
-msgstr ""
+msgstr "Champ horaire"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
 msgid  "Numeric Field"
-msgstr ""
+msgstr "Champ numérique"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
 msgid  "Currency Field"
-msgstr ""
+msgstr "Champ monétaire"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
 msgid  "Pattern Field"
-msgstr ""
+msgstr "Champ masqué"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
 msgid  "Table Control "
-msgstr ""
+msgstr "Contrôle de table "
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
 msgid  "Default"
-msgstr ""
+msgstr "Par défaut"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Général"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "Données"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
 msgid  "No"
-msgstr ""
+msgstr "Non"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "Oui"
 
 #: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
 msgid  "Help"
-msgstr ""
+msgstr "Aide"
 
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
 msgid  "<Embedded-Image>"
-msgstr ""
+msgstr "<Image-incorporée>"
 
 #: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
 msgid  "Text"
-msgstr ""
+msgstr "Texte"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Voici tous les champs de contrôle qui peuvent être assignés comme champ d'étiquette à $control_class$ $control_name$."
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
 msgid  "~No assignment"
-msgstr ""
+msgstr "~Aucune assignation"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
 msgid  "Label Field Selection"
-msgstr ""
+msgstr "Sélection de champ d'étiquette"
 
 #: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "Formulaires"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
 msgid  "Tab Order"
-msgstr ""
+msgstr "Séquence d'activation"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
 msgid  "Controls"
-msgstr ""
+msgstr "Contrôles"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
 msgid  "Move Up"
-msgstr ""
+msgstr "Déplacer vers le haut"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
 msgid  "Move Down"
-msgstr ""
+msgstr "Déplacer vers le bas"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
 msgid  "Automatic Sort"
-msgstr ""
+msgstr "Tri automatique"
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
 msgid  "Set"
-msgstr ""
+msgstr "Restaurer"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
 msgid  "Linear ascending"
-msgstr ""
+msgstr "Croissance linéaire"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
 msgid  "Linear descending"
-msgstr ""
+msgstr "Décroissance linéaire"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
 msgid  "Original values"
-msgstr ""
+msgstr "Valeurs d'origine"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
 msgid  "Exponential increasing"
-msgstr ""
+msgstr "Croissance exponentielle"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "À propos du\n ~périphérique"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Créer\nun aperçu"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "Aperçu"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
 msgid  "Scan area"
-msgstr ""
+msgstr "Zone à scanner"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
 msgid  "Left:"
-msgstr ""
+msgstr "À gauche :"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
 msgid  "Top:"
-msgstr ""
+msgstr "En haut :"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
 msgid  "Right:"
-msgstr ""
+msgstr "À droite :"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
 msgid  "Bottom:"
-msgstr ""
+msgstr "En bas :"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
 msgid  "Device used:"
-msgstr ""
+msgstr "Périphérique utilisé :"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
 msgid  "Resolution [~DPI]"
-msgstr ""
+msgstr "Résolution [~DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
 msgid  "Show advanced options"
-msgstr ""
+msgstr "Afficher les options avancées"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
 msgid  "Options:"
-msgstr ""
+msgstr "Options :"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
 msgid  "Vector element"
-msgstr ""
+msgstr "Élément vectoriel"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
 msgid  "Set"
-msgstr ""
+msgstr "Définir"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
 msgid  "Scanner"
-msgstr ""
+msgstr "Scanner"
 
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Périphérique : %s\nFabricant : %s\nModèle : %s\nType : %s"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
 msgid  "An error occurred while scanning."
-msgstr ""
+msgstr "Une erreur s'est produite durant la lecture au scanner."
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Le périphérique utilisé ne permet pas de créer un aperçu. Il permet uniquement une digitalisation normale en guise d'aperçu, ce qui peut durer nettement plus longtemps."
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr ""
+msgstr "L'interface SANE n'a pas pu être initialisée. Impossible de scanner."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
 msgid  "Check for ~Updates..."
-msgstr ""
+msgstr "Vérifier les mises à jo~ur..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
 msgid  "Checking..."
-msgstr ""
+msgstr "Vérification..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
 msgid  "Checking for an update failed."
-msgstr ""
+msgstr "La vérification de la mise à jour a échoué."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION est à jour."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION est disponible.\n\nLa version installée est %PRODUCTNAME %PRODUCTVERSION.\n\nRemarque : avant de télécharger une mise à jour, assurez-vous que vous avez des droits d'accès suffisants pour l'installer.\nUn mot de passe, en général le mot de passe administrateur ou root, peut vous être demandé."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
 msgid  "Check for Updates"
-msgstr ""
+msgstr "Vérification des mises à jour"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr ""
+msgstr "Le téléchargement de %PRODUCTNAME %NEXTVERSION s'est suspendu à..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr ""
+msgstr "Le téléchargement de %PRODUCTNAME %NEXTVERSION s'est interrompu à"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "L'adresse de téléchargement est : %DOWNLOAD_PATH.\n\nVous pouvez modifier l'adresse de téléchargement sous Outils – Options... - %PRODUCTNAME – Mise à jour en ligne."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr ""
+msgstr "%FILE_NAME a été téléchargé à partir de %DOWNLOAD_PATH."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Le téléchargement automatique de la mise à jour n'est actuellement pas disponible.\n\nCliquer sur 'Télécharger...' pour télécharger %PRODUCTNAME %NEXTVERSION manuellement à partir du site Web."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr ""
+msgstr "Téléchargement de %PRODUCTNAME %NEXTVERSION..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "Téléchargement de %PRODUCTNAME %NEXTVERSION terminé. Prêt pour l'installation."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
 msgid  "Do you really want to cancel the download?"
-msgstr ""
+msgstr "Voulez-vous vraiment annuler le téléchargement ?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "Pour installer la mise à jour, %PRODUCTNAME %PRODUCTVERSION doit être fermé. Voulez-vous installer la mise à jour maintenant ?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
 msgid  "Install ~now"
-msgstr ""
+msgstr "Installer ~maintenant"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
 msgid  "Install ~later"
-msgstr ""
+msgstr "Installer ~plus tard"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "Impossible de démarrer l'installeur, veuillez démarrer %FILE_NAME manuellement dans %DOWNLOAD_PATH."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Un fichier avec ce nom existe déjà ! Voulez-vous écraser le fichier existant ?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "Un fichier avec le nom '%FILENAME' existe déjà dans '%DOWNLOAD_PATH' ! Souhaitez-vous continuer le téléchargement ou supprimer et télécharger de nouveau le fichier ?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
 msgid  "Reload File"
-msgstr ""
+msgstr "Télécharger le fichier"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
 msgid  "Continue"
-msgstr ""
+msgstr "Continuer"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
 msgid  "%PERCENT%"
-msgstr ""
+msgstr "%PERCENT%"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
 msgid  "Status"
-msgstr ""
+msgstr "Statut"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "Description"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "Fermer"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
 msgid  "~Download"
-msgstr ""
+msgstr "~Télécharger"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
 msgid  "~Install"
-msgstr ""
+msgstr "~Installer"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
 msgid  "~Pause"
-msgstr ""
+msgstr "~Pause"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
 msgid  "~Resume"
-msgstr ""
+msgstr "~Reprendre"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "Mise à jour disponible pour %PRODUCTNAME"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
 msgid  "Click here to start the download."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "Cliquez ici pour démarrer le téléchargement."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
+#, fuzzy
 msgid  "Click here for more information."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "Cliquez ici pour obtenir des informations supplémentaires."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
 msgid  "Download of update begins."
-msgstr ""
+msgstr "Le téléchargement de la mise à jour commence."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
 msgid  "Download of update in progress"
-msgstr ""
+msgstr "Téléchargement de la mise à jour en progression"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
 msgid  "Download of update paused"
-msgstr ""
+msgstr "Téléchargement de la mise à jour suspendu"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
 msgid  "Click here to resume."
-msgstr ""
+msgstr "Cliquez ici pour reprendre."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
 msgid  "Download of update stalled"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
+msgstr "Téléchargement de la mise à jour interrompu"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Download of update completed"
-msgstr ""
+msgstr "Téléchargement de la mise à jour terminé"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Click here to start the installation."
-msgstr ""
+msgstr "Cliquez ici pour démarrer l'installation."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
 msgid  "Updates for extensions available"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
+msgstr "Mises à jour d'extensions disponibles"

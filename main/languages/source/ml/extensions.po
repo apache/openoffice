@@ -33,707 +33,683 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
 msgid  "Address Book Data Source Wizard"
-msgstr ""
+msgstr "മേല്‍വിലാസപുസ്തക ഡേറ്റ ഉറവിട വിസാര്‍ഡ്"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
 msgid  "Address book type"
-msgstr ""
+msgstr "മേല്‍വിലാസപുസ്തക വിഭാഗം"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
-msgstr ""
+msgstr "കണക്ഷന്‍ സജ്ജീകരണങ്ങള്‍"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
 msgid  "Table selection"
-msgstr ""
+msgstr "പട്ടിക തെരഞ്ഞെടുക്കല്‍"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
 msgid  "Field Assignment"
-msgstr ""
+msgstr "ഫീള്‍ഡ് അസൈന്‍മെന്റ്"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
 msgid  "Data Source Title"
-msgstr ""
+msgstr "ഡേറ്റ ഉറവിട ശീര്‍ഷകം"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
 msgid  "Please select the type of your external address book:"
-msgstr ""
+msgstr "ദയവായി പുറമേയുള്ള മേല്‍വിലാസപുസ്തക വിഭാഗം തെരഞ്ഞെടുക്കുക:"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
-msgstr ""
+msgstr "ഇവല്യൂഷന്‍"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
 msgid  "Groupwise"
-msgstr ""
+msgstr "ഗ്രൂപ്പു് അനുസരിച്ചു്"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
 msgid  "Evolution LDAP"
-msgstr ""
+msgstr "ഇവല്യൂഷന്‍ LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
 msgid  "Mozilla / Netscape"
-msgstr ""
+msgstr "മോസിലാ /നെറ്റ്സ്കേപ്"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
 msgid  "Thunderbird"
-msgstr ""
+msgstr "തണ്ടര്‍ബേര്‍ഡ്"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
 msgid  "KDE address book"
-msgstr ""
+msgstr "കെഡിഇ വിലാസപുസ്തകം"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
 msgid  "Mac OS X address book"
-msgstr ""
+msgstr "Mac OS X വിലാസപുസ്തകം"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
 msgid  "LDAP address data"
-msgstr ""
+msgstr "LDAP മേല്‍വിലാസ ഡേറ്റ"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
 msgid  "Outlook address book"
-msgstr ""
+msgstr "ഔട്ടലുക്ക് മേല്‍വിലാസ പുസ്തകം"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
 msgid  "Windows system address book"
-msgstr ""
+msgstr "വിന്‍ഡോസ് സിസ്റ്റം മേല്‍വിലാസ പുസ്തകം"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
 msgid  "Other external data source"
-msgstr ""
+msgstr "പുറമേയുള്ള ഡേറ്റാ ഉറവിടം"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "പുതിയ ഡേറ്റാ ഉറവിടം ക്രമീകരിക്കുന്നതിനായി കൂടുതല്‍ വിവരങ്ങള്‍ ആവശ്യമാണു്.\n\n തുടര്‍ന്നുള്ള ബട്ടണ്‍ ക്ലിക്ക് ചെയ്ത് മറ്റൊരു സംഭാഷണം തുറക്കുകയും അതില്‍ ആവശ്യമായ വിവരങ്ങള്‍ രേഖപ്പെടുത്തുകയും ചെയ്യുക."
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "സജ്ജീകരണങ്ങള്‍"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "ഡേറ്റാ ഉറവിടത്തിലേക്കുള്ള കണക്ഷന്‍ സ്ഥാപിക്കാനായില്ല.\nതുടരുന്നതിന് മുമ്പ്, ദയവായി സജ്ജീകരണങ്ങള്‍ പരിശോധിക്കുക, അല്ലെങ്കില്‍ (പൂര്‍‌വ്വ താളില്‍) മറ്റൊരു ഡേറ്റ ഉറവിട വിഭാഗം തെരഞ്ഞെടുക്കുക."
 
 #: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "നിങ്ങള്‍ തെരഞ്ഞെടുത്ത പുറമേനിന്നുള്ള ഡേറ്റാ ഉറവിടത്തില്‍ ഒന്നില്‍ കൂടുതല്‍ വിലാസപുസ്തകം ലഭ്യമാണു്.\nനിങ്ങള്‍ക്കു് പ്രധാനമായും പ്രവര്‍ത്തിക്കേണ്ടതു് തെരഞ്ഞെടുക്കുക:"
 
 #: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
-msgid  "Field Assignment"
-msgstr ""
+msgstr "മേല്‍വിലാസ ഡേറ്റ നിങ്ങളുടെ മാതൃകകളില്‍ ചേര്‍ക്കണമെങ്കില്‍, ഏതു് ഡേറ്റ ഏതു് മണ്ഡലത്തില്‍ ‌ആണെന്നു് %PRODUCTNAME അറിഞ്ഞിരിക്കണം.\n\nഉദാഹരണം, നിങ്ങള്‍ ഇ-മെയില്‍ മേല്‍വിലാസം സൂക്ഷിച്ചതു് \"ഇമെയില്‍\", അല്ലെങ്കില്‍ \"ഇ-മെയില്‍\" അല്ലെങ്കില്‍ \"ഇഎം\" - അല്ലെങ്കില്‍ തികച്ചും വ്യത്യസ്തമായ മറ്റൊന്നിലോ ആയിരിക്കാം.\n\nതാഴത്തെ ബട്ടണ്‍ ക്ലിക്ക് ചെയ്ത് മറ്റൊരു സംഭാഷണം തുറന്ന് നിങ്ങളുടെ ഡേറ്റ ഉറവിടത്തിനുള്ള സജ്ജീകരണങ്ങള്‍ ചെയ്യാവുന്നതാണ‍്."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "നിങ്ങള്‍ക്ക് %PRODUCTNAME-ലേക്കു് മേല്‍വിലാസ് ഡേറ്റ ചേര്‍ക്കുവാന്‍ ആവശ്യമായ എല്ലാ വിവരങ്ങളും ഇതാകുന്നു .\n\nഇനി, %PRODUCTNAME-ല്‍ നിങ്ങള്‍ക്കു് ഡേറ്റ ഉറവിടം രജിസ്റ്റര്‍ ചെയ്യുവാന്‍ ആഗ്രഹിക്കുന്ന പേരു് നല്കുക %PRODUCTNAME."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
 msgid  "Location"
-msgstr ""
+msgstr "സ്ഥാനം"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr ""
+msgstr "തെരയുക..."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr ""
+msgstr "%PRODUCTNAME-ലുള്ള എല്ലാ ഘടകങ്ങളിലും ഈ മേല്‍വിലാസപുസ്തകം ലഭ്യമാക്കുക."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
 msgid  "Address book name"
-msgstr ""
+msgstr "മേല്‍വിലാസപുസ്തകത്തിന്റെ പേരു്"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "മറ്റൊരു ഡേറ്റ ഉറവിടം ഈ പേരില്‍ നിലവിലുണ്ട്. അതിനാല്‍ നിങ്ങള്‍ മറ്റൊന്നു് തെരഞ്ഞെടുക്കേണ്ടതാണു്."
 
 #: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
 msgid  "Please select a type of address book."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "ഒരു മേല്‍വിലാസപുസ്തക വിഭാഗം ദയവായി തെരഞ്ഞെടുക്കുക."
 
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
 msgid  "Addresses"
-msgstr ""
+msgstr "മേല്‍വിലാസങ്ങള്‍"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
 msgid  "Create Address Data Source"
-msgstr ""
+msgstr "മേല്‍വിലാസ ഡേറ്റ ഉറവിടം ഉണ്ടാക്കുക"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "കണക്ഷന്‍ സ്ഥാപിക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
 msgid  "Please check the settings made for the data source."
-msgstr ""
+msgstr "ദയവായി ഡേറ്റാ ഉറവിടത്തിനുള്ള സജ്ജീകരണങ്ങള്‍ പരിശോധിക്കുക."
 
 #: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
 msgid  "Address Data - Field Assignment"
-msgstr ""
+msgstr "മേല്‍വിലാസ ഡേറ്റ- മണ്ഡലം നിര്‍ണ്ണയിക്കല്‍"
 
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "നിലവില്‍ ഒരു മണ്ഡലവും ലഭ്യമല്ല.\nനിങ്ങള്‍ക്ക് വേണമെങ്കില്‍ ഇതു് പിന്നീടോ അല്ലെങ്കില്‍ ഇപ്പോഴോ താഴെ പറഞ്ഞിരിക്കുന്നതു് തെരഞ്ഞെടുത്തു് ചെയ്യാം:\n\"ഫയല്‍ -മാതൃക - മേല്‍വിലാസപുസ്തക ഉറവിടം...\""
 
 #: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Field selection:"
-msgstr ""
+msgstr "ഫീള്‍ഡ് തിരഞ്ഞെടുക്കല്‍:"
 
 #: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
 msgid  "Table;Query;Sql;Sql [Native]"
-msgstr ""
+msgstr "പട്ടിക ; ക്വയറി ; Sql;Sql (സ്വദേശി)"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
-msgstr ""
+msgstr "ഗ്രന്ഥസൂചി ഡേറ്റാബേസ്"
 
 #: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
 msgid  "Do you want to edit the column arrangement?"
-msgstr ""
+msgstr "താങ്കള്ക്ക് സ്തംഭത്തിന്റെ ക്രമീകരണം എഡിറ്റ് ചെയ്യണോ?"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
 msgid  "Column names"
-msgstr ""
+msgstr "സ്തംഭ നാമങ്ങള്"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<ഒന്നുമില്ല>"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
 msgid  "Column Layout for Table %1"
-msgstr ""
+msgstr "പട്ടിക %1 ന്റെ സ്തംഭപ്ലാന്"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
 msgid  "Choose Data Source"
-msgstr ""
+msgstr "ഡേറ്റാ ഉറവിടം തിരഞ്ഞെടുക്കുക."
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
 msgid  "Entry"
-msgstr ""
+msgstr "പ്രവേശനം"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
 msgid  "The following column names could not be assigned:\n"
-msgstr ""
+msgstr "തന്നിരിക്കുന്ന സ്തംഭനാമങ്ങള് നിര്ണ്ണയിക്കാന് കഴിയുന്നില്ല:\n"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
 msgid  "Article"
-msgstr ""
+msgstr "ലേഖനം"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
 msgid  "Book"
-msgstr ""
+msgstr "ബുക്ക്"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
-msgstr ""
+msgstr "ലഘുലേഖകള്"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
 msgid  "Conference proceedings"
-msgstr ""
+msgstr "കോണ്‍ഫറന്‍സിനുള്ള തയ്യാറെടുപ്പുകള്‍"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
 msgid  "Book excerpt"
-msgstr ""
+msgstr "ബുക്ക് സാരാംശം"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
 msgid  "Book excerpt with title"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "ശീര്ഷകത്തോടുകൂടിയ ബുക്ക് സാരാംശം"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
 msgid  "Journal"
-msgstr ""
+msgstr "ജേര്ണല്"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
-msgstr ""
+msgstr "സാങ്കേതിക ഡോക്കുമെന്റ്"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
-msgstr ""
+msgstr "പ്രബന്ധം"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
 msgid  "Miscellaneous"
-msgstr ""
+msgstr "വിവിധ"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "ഉപന്യാസം"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
 msgid  "Research report"
-msgstr ""
+msgstr "റിസേര്ച്ച് റിപ്പോര്ട്ട്"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
 msgid  "Unpublished"
-msgstr ""
+msgstr "പ്രസിദ്ധീകരിക്കാത്ത"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
-msgstr ""
+msgstr "ഇ-മെയില്"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
 msgid  "WWW document"
-msgstr ""
+msgstr "WWW ഡോക്കുമെന്റ്"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
 msgid  "User-defined1"
-msgstr ""
+msgstr "ഉപഭോക്താവ് നിര്വ‍ചിച്ചു 1"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
 msgid  "User-defined2"
-msgstr ""
+msgstr "ഉപഭാക്താവ് നിര്വ‍ചിച്ചു 2"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
 msgid  "User-defined3"
-msgstr ""
+msgstr "ഉപഭാക്താവ് നിര്വ‍ചിച്ചു 3"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
 msgid  "User-defined4"
-msgstr ""
+msgstr "ഉപഭാക്താവ് നിര്വ‍ചിച്ചു 4"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
 msgid  "User-defined5"
-msgstr ""
+msgstr "ഉപഭാക്താവ് നിര്വ‍ചിച്ചു 5"
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "പൊതുവായ"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
 msgid  "Insert Section..."
-msgstr ""
+msgstr "വിഭാഗം ചേര്ക്കുക..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
 msgid  "Delete Section..."
-msgstr ""
+msgstr "വിഭാഗം നീക്കം ചെയ്യുക..."
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
 msgid  "Modify Name..."
-msgstr ""
+msgstr "നാമം പരിഷ്കരിക്കുക"
 
 #: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
 msgid  "~Short name"
-msgstr ""
+msgstr "ചുരുക്കപ്പേര‍്"
 
 #: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "രീതി"
 
 #: bibliography/sections.src#ST_YEAR.STRING.TEXT
 msgid  "~Year"
-msgstr ""
+msgstr "വര്ഷം"
 
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
-msgstr ""
+msgstr "ലേഖകന്(ര്)"
 
 #: bibliography/sections.src#ST_TITLE.STRING.TEXT
 msgid  "Tit~le"
-msgstr ""
+msgstr "ശീര്ഷം"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
-msgstr ""
+msgstr "പ്രസാധകന്"
 
 #: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
 msgid  "A~ddress"
-msgstr ""
+msgstr "മേല്‍വിലാസം"
 
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
-msgstr ""
+msgstr "~ISBN"
 
 #: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
 msgid  "~Chapter"
-msgstr ""
+msgstr "അദ്ധ്യായം"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
-msgstr ""
+msgstr "പേജ്(കള്)"
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
 msgid  "Editor"
-msgstr ""
+msgstr "എഡിറ്റര്"
 
 #: bibliography/sections.src#ST_EDITION.STRING.TEXT
 msgid  "Ed~ition"
-msgstr ""
+msgstr "പതിപ്പ്"
 
 #: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
 msgid  "~Book title"
-msgstr ""
+msgstr "പുസ്തക തലക്കെട്ട്"
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
 msgid  "Volume"
-msgstr ""
+msgstr "വാല്യം"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
-msgstr ""
+msgstr "പ്രസിദ്ധീകരണ വിഭാഗം"
 
 #: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
 msgid  "Organi~zation"
-msgstr ""
+msgstr "സംഘടന"
 
 #: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
 msgid  "Instit~ution"
-msgstr ""
+msgstr "പ്രസ്ഥാനം"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
-msgstr ""
+msgstr "സര്വ‍കലാശാല"
 
 #: bibliography/sections.src#ST_REPORT.STRING.TEXT
 msgid  "Type of re~port"
-msgstr ""
+msgstr "റിപ്പോര്ട്ടിന്റെ രീതി"
 
 #: bibliography/sections.src#ST_MONTH.STRING.TEXT
 msgid  "~Month"
-msgstr ""
+msgstr "മാസം"
 
 #: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
 msgid  "~Journal"
-msgstr ""
+msgstr "വാര്ത്താപത്രിക"
 
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
-msgstr ""
+msgstr "സംഖ്യ"
 
 #: bibliography/sections.src#ST_SERIES.STRING.TEXT
 msgid  "Se~ries"
-msgstr ""
+msgstr "ശ്രേണി"
 
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
-msgstr ""
+msgstr "വ്യാഖ്യാനം"
 
 #: bibliography/sections.src#ST_NOTE.STRING.TEXT
 msgid  "~Note"
-msgstr ""
+msgstr "കുറിപ്പ്"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
 msgid  "User-defined field ~1"
-msgstr ""
+msgstr "ഉപഭാക്താവ് നിര്വ‍ചിച്ച മണ്ഡലം 1"
 
 #: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
 msgid  "User-defined field ~2"
-msgstr ""
+msgstr "ഉപഭാക്താവ് നിര്വ‍ചിച്ച മണ്ഡലം 2"
 
 #: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
 msgid  "User-defined field ~3"
-msgstr ""
+msgstr "ഉപഭാക്താവ് നിര്വ‍ചിച്ച മണ്ഡലം 3"
 
 #: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
 msgid  "User-defined field ~4"
-msgstr ""
+msgstr "ഉപഭാക്താവ് നിര്വ‍ചിച്ച മണ്ഡലം 4"
 
 #: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
 msgid  "User-defined field ~5"
-msgstr ""
+msgstr "ഉപഭാക്താവ് നിര്വ‍ചിച്ച മണ്ഡലം 5"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
 msgid  "Table"
-msgstr ""
+msgstr " പട്ടിക"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
-msgstr ""
+msgstr "അന്വേഷണ കീ"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
 msgid  "AutoFilter"
-msgstr ""
+msgstr "സ്വയം ഫില്ട്ടര് ചെയ്യുന്ന"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "നിലവാരമുള്ള ഫില്‍‌റ്റര്‍‌"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
 msgid  "Remove Filter"
-msgstr ""
+msgstr "ഫില്ട്ടര് നീക്കം ചെയ്യുക"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
 msgid  "Column Arrangement"
-msgstr ""
+msgstr "സ്തംഭ ക്രമീകരണം"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "ഡേറ്റാ ഉറവിടം"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
-msgid  "Data"
-msgstr ""
+msgstr "ഡേറ്റാ"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "ഇപ്പോള്, നിയന്ത്രണ ഫേമിന്‍  (പൂര്ണ്ണമായിട്ടല്ല) ഡാറ്റായുമായി ബന്ധമില്ല.\n\nദയവായി ഡാറ്റാ ഉറവിടവും പട്ടികയും തിരഞ്ഞെടുക്കുക.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
 msgid  "~Data source:"
-msgstr ""
+msgstr "~Data source:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr " ~..."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
 msgid  "~Table / Query:"
-msgstr ""
+msgstr "പട്ടിക /ചോദ്യം:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 msgid  "Database Field"
-msgstr ""
+msgstr "ഡേറ്റാബേസ് മണ്ഡലം"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
 msgid  "Do you want to save the value in a database field?"
-msgstr ""
+msgstr "താങ്കള്ക്ക് ഡേറ്റാബേസ് മണ്ഡലത്തിലെ മൂല്യങ്ങല് സംഭരിക്കണോ ?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I want to save it in the following database field:"
-msgstr ""
+msgstr "ശരി, എനിക്ക് തന്നിരിക്കുന്ന ഡേറ്റാബേസ് മണ്ഡലത്തില് ഇത് സംഭരിക്കണം:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
 msgid  "~No, I only want to save the value in the form."
-msgstr ""
+msgstr "വേണ്ട,  എനിക്ക് തന്നിരിക്കുന്ന ഡേറ്റാബേസ് മണ്ഡലത്തില് ഇത് സംഭരിക്കണ്ട:"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "ഫോം"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "ഡേറ്റാ ഉറവിടം"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
 msgid  "Content type"
-msgstr ""
+msgstr "വിഷയവിഭാഗം"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
 msgid  "Content"
-msgstr ""
+msgstr "വിഷയം"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "പട്ടിക"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "അന്വേഷണം"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL കല്പന"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
 msgid  "Group Element Wizard"
-msgstr ""
+msgstr "ഗ്രൂപ്പ് ഘടക വിസാര്ഡ്"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
 msgid  "Table Element Wizard"
-msgstr ""
+msgstr "'പട്ടിക  ഘടക വിസാര്ഡ്"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
 msgid  "List Box Wizard"
-msgstr ""
+msgstr "ലിസ്റ്റ് ബോക്സ് വിസാര്ഡ്"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
 msgid  "Combo Box Wizard"
-msgstr ""
+msgstr "കോന്പോ ബോക്സ്   വിസാര്ഡ്"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 msgid  "The table connection to the data source could not be established."
-msgstr ""
+msgstr "ഡേറ്റാ ഉറവിടവുമായി പട്ടികയുടെ ബന്ധം സ്ഥാപിക്കാന് കഴിയുന്നില്ല."
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "ഫീള്‍ഡ് തെരഞ്ഞെടുക്കല്‍"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Table element"
-msgstr ""
+msgstr "പട്ടിക ഘടകം"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "നിലവിലുള്ള ഫീള്‍ഡുകള്‍"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
 msgid  "Selected fields"
-msgstr ""
+msgstr "തെരഞ്ഞെടുത്ത ഫീള്‍ഡുകള്‍"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
 msgid  " (Date)"
-msgstr ""
+msgstr " (തീയതി)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
 msgid  " (Time)"
-msgstr ""
+msgstr " (സമയം)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "ഡേറ്റാ"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
 msgid  "Which ~names do you want to give the option fields?"
-msgstr ""
+msgstr "ഉപാധി ഫീള്‍ഡുകള്‍ക്കു് നല്‍കുവാനുള്ള പേരുകള്‍?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
-msgstr ""
+msgstr "~ഉപാധി ഫീള്‍ഡുകള്‍"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
 msgid  "Default Field Selection"
-msgstr ""
+msgstr "സ്വതവേയുള്ള ഫീള്‍ഡ് തെരഞ്ഞെടുക്കല്‍"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
 msgid  "Should one option field be selected as a default?"
-msgstr ""
+msgstr "സ്വതവേയുള്ളതായി ഒരു ഉപാധി ഫീള്‍ഡ് തെരഞ്ഞെടുക്കണമോ?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
-msgstr ""
+msgstr "ഉവ്വു്, താഴെ പറഞ്ഞിരിക്കുന്നവ:"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
 msgid  "No, one particular field is not going to be selected."
-msgstr ""
+msgstr "ഇല്ല, ഒരു പ്രത്യേക ഫീള്‍ഡ് തെരഞ്ഞെടുക്കുവാന്‍ കഴിയുകയില്ല."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
 msgid  "Field Values"
-msgstr ""
+msgstr "ഫീള്‍ഡ് മൂല്ല്യങ്ങള്‍"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "ഒരു ഉപാധി തെരഞ്ഞെടുക്കുമ്പോള്‍, ഉപാധി ഗ്രൂപ്പിനു് ഒരു മൂല്ല്യം നല്‍കുന്നു."
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
-msgstr ""
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
-msgid  "~Option fields"
-msgstr ""
+msgstr "ഓരോ ഉപാധിയ്ക്കും നല്‍കേണ്ട മൂല്ല്യം?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
 msgid  "Create Option Group"
-msgstr ""
+msgstr "ഐച്ഛിക ഗ്രൂപ്പ് സൃഷ്ടിക്കിക"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
-msgstr ""
+msgstr "നിങ്ങളുടെ ഉപാധി ആയ ഗ്രൂപ്പിനു് നല്‍കുവാനുള്ള തലക്കെട്ട്?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
 msgid  "These were all details needed to create the option group."
-msgstr ""
+msgstr "ഇതൊക്കെയാണ‍് ഐച്ഛിക ഗ്രൂപ്പ് സൃഷ്ടിക്കാന് ആവശ്യമായ വിവരങ്ങള്."
 
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "ഐച്ഛിക ഗ്രൂപ്പിന്റെ മൂല്യം താങ്കള്ക്ക് ഒന്നുകില്  ഡേറ്റാബേസ് മണ്ഡലത്തില് സംഭരിക്കാം അഥവാ പിന്നീടുള്ള  ആവശ്യത്തിന‍് ഉപയോഗിക്കാം."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
 msgid  "Table Selection"
-msgstr ""
+msgstr "പട്ടിക തിരഞ്ഞെടുക്കല്"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Control"
-msgstr ""
+msgstr "നിയന്ത്രണം"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "ഇടത്തുവശത്ത്, ഡേറ്റാ ഉറവിടത്തിലുള്ള എല്ലാ പട്ടികകളും അതിന്റെ രീതിയില് കാണാം .\n\n\nഅതില് നിന്നും ലിസ്റ്റ് വിഷയത്തിന് അടിസ്ഥാനമായ പട്ടിക തിരഞ്ഞെുക്കാം:"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "ഫീള്‍ഡ് തെരഞ്ഞെടുക്കല്‍"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "നിലവിലുള്ള ഫീള്‍ഡുകള്‍"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
 msgid  "Display field"
-msgstr ""
+msgstr "പ്രദര്ശിപ്പിച്ച മണ്ഡലം"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "തിരഞ്ഞെടുത്ത ഫയലിലെ വിഷയങ്ങള് കോന്പോ പെട്ടിയില് കാണിക്കും "
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "ബന്ധിച്ചിരിക്കുന്ന മണ്ഡലങ്ങള് സമാനമെങ്കില് തിരഞ്ഞെടുത്ത ഫയലിലെ വിഷയങ്ങള് ലിസ്റ്റ്ബോക്സില് കാണിക്കും "
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
 msgid  "Field Link"
-msgstr ""
+msgstr "ലിങ്ക് മണ്ഡലം"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "ഇവിടെയാണ‌് താങ്കള്ക്ക്  യോജിച്ച വിഷയ മണ്ഡലം തിരഞ്ഞെടുത്തത് അതുകൊണ്ട് പ്രദര്ശന മണ്ഡലത്തിലെ മൂല്യം കാണിക്കും."
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~Value Table"
-msgstr ""
+msgstr "മണ്ഡലം മൂല്യപ്പട്ടികയില് നിന്നും"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~List Table"
-msgstr ""
+msgstr "മണ്ഡലം ലിസ്റ്റ് പട്ടികയില് നിന്നും "
 
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "കോന്പോ ബോക്സിന്റെ  മൂല്യം താങ്കള്ക്ക് ഒന്നുകില്  ഡേറ്റാബേസ് മണ്ഡലത്തില് സംഭരിക്കാം അഥവാ പ്രദര്ശന ആവശ്യത്തിന‌് ഉപയോഗിക്കാം."
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
 msgid  "<< Back"
-msgstr ""
+msgstr "<< പുറകോട്ട്"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "Next >>"
-msgstr ""
+msgstr "അടുത്തത് >>"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
 msgid  "Accept"
-msgstr ""
+msgstr "സ്വീകരിക്കുക"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
 msgid  "Finish"
-msgstr ""
+msgstr "പൂര്‍ത്തിയായിരിക്കുന്നു"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
-msgstr ""
+msgstr " - സോഫ്റ്റ്‌വെയര്‍ ലൈസന്‍സ് എഗ്രിമെന്റ്"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
 msgid  "- User Data"
-msgstr ""
+msgstr "- ഉപയോക്താവിന്റെ ഡേറ്റ"
 
 #: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
 msgid  "Welcome"
-msgstr ""
+msgstr "സ്വാഗതം"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
@@ -741,75 +717,75 @@ msgstr ""
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
 msgid  "License Agreement"
-msgstr ""
+msgstr "ലൈസന്‍സ് എഗ്രിമെന്റ്"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr ""
+msgstr "ഇന്‍സ്റ്റലേഷന്‍ തുടരുന്നതിനായി ഇവിടെ പറഞ്ഞിരിക്കുന്നതു് പോലെ ചെയ്യുക:"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "ലൈസന്‍സ്്സ് എഗ്രിമെന്പൂര്‍ണ്ണമായും കാണുകകുക. ദയവകല്താളിലുള്ളിലെ '%PAGEDOWN' ബട്‍ അല്ലെങ്കില്‍ സ്ക്രോള്‍ ബാര്‍ടണ് ഉപയോഗിച്ച് മുഴ്‍വന് ന്‍സ്്നിബന്ധനകളും കാണുകയും."
 
 #: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 msgid  "Page Down"
-msgstr ""
+msgstr "താള്‍ താഴോട്ട്"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement."
-msgstr ""
+msgstr "ലൈസന്‍സ് എഗ്രിമെന്റ് സ്വീകരിക്കുക."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
 msgid  "I accept the terms of the Agreement."
-msgstr ""
+msgstr "ഞാന്‍ നിബന്ധനകള്‍ അംഗീകരിക്കുന്നു."
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "സ്വീകരിക്കുക"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
-msgstr ""
+msgstr "തിരസ്കരിക്കുക"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
 msgid  "Character"
-msgstr ""
+msgstr "അക്ഷരം"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "അക്ഷരസഞ്ചയം"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
 msgid  "Font Effects"
-msgstr ""
+msgstr "അക്ഷരസഞ്ചയത്തിനുള്ള പ്രഭാവം"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
 msgid  "Link fields"
-msgstr ""
+msgstr "ലിങ്ക്   മണ്ഡലം"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "സബ്ഫോള്ഡര്  ഉപയോഗിച്ച് മുഖ്യ രൂപത്തിന്റെ ഇപ്പോഴത്തെ റിക്കോര്ഡിനെപ്പറ്റി  വിശദമായി  പ്രദര്ശിപ്പിക്കാം. ഇത് ചെയ്യുന്നതിനുവേണ്ടി  മുഖ്യ രൂപത്തിലുള്ളതുമായി യോജിക്കുന്ന ഉപ രൂപം താങ്കള് ചൂണ്ടികാട്ടണം"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
 msgid  "Suggest"
-msgstr ""
+msgstr "നിര്ദ്ദേശിക്കുക"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
 msgid  "Sub Form"
-msgstr ""
+msgstr "ഉപരൂപം"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
 msgid  "Master Form"
-msgstr ""
+msgstr "മുഖ്യ രൂപം"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
 msgid  "The columns of '#' could not be retrieved."
@@ -817,111 +793,111 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
 msgid  "Edit mask"
-msgstr ""
+msgstr "മാസ്ക് എഡിറ്റ്  ചെയ്യുക"
 
 #: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
 msgid  "Literal mask"
-msgstr ""
+msgstr "ലിറ്ററല് മാസ്ക്"
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
 msgid  "Read-only"
-msgstr ""
+msgstr "വായിക്കാന് മാത്രം"
 
 #: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
 msgid  "Enabled"
-msgstr ""
+msgstr "പ്രവര്ത്തനസജ്ജം"
 
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
 msgid  "Visible"
-msgstr ""
+msgstr "കാണാവുന്നതു്"
 
 #: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
 msgid  "AutoFill"
-msgstr ""
+msgstr "സ്വയം നിറയ്ക്കുന്ന"
 
 #: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
 msgid  "Line count"
-msgstr ""
+msgstr "രേഖകളുടെ എണ്ണം"
 
 #: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
 msgid  "Max. text length"
-msgstr ""
+msgstr "പരമാവധി ടെക്സ്റ്റ് നീളം"
 
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
 msgid  "Spin Button"
-msgstr ""
+msgstr "ചുറ്റുന്ന ബട്ടണ്"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
 msgid  "Strict format"
-msgstr ""
+msgstr "നിശ്ചിത രൂപരേഖ"
 
 #: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
 msgid  "Thousands separator"
-msgstr ""
+msgstr "ആയിരക്കണക്കിന‌് വേര്തിരിക്കുന്നവര്"
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
 msgid  "Printable"
-msgstr ""
+msgstr "പ്രിന്റ് ചെയ്യാവുന്നതു്"
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
 msgid  "Frame"
-msgstr ""
+msgstr "ഫ്രെയിം"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
 msgid  "Help text"
-msgstr ""
+msgstr "സഹായക ടെക്സ്റ്റ്"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
 msgid  "Help URL"
-msgstr ""
+msgstr "സഹായക URL"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
 msgid  "Additional information"
-msgstr ""
+msgstr "അധിക വിവരം"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
 msgid  "Password character"
-msgstr ""
+msgstr "സങ്കേതപദത്തിന്റെ അക്ഷരം"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
 msgid  "Tristate"
-msgstr ""
+msgstr "മൂന്ന് തലം"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
 msgid  "Empty string is NULL"
-msgstr ""
+msgstr "കാലിയായ സ്ട്രിംഗ് NULL ആണ‌്."
 
 #: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
 msgid  "Decimal accuracy"
-msgstr ""
+msgstr "ദശാംശ കൃത്യത"
 
 #: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
 msgid  "Graphics"
-msgstr ""
+msgstr "ഗ്രാഫിക്സ്"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
 msgid  "Default selection"
-msgstr ""
+msgstr "സംസ്ഥാപിതമായി  തിരഞ്ഞെടുക്കുക"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
 msgid  "Default button"
-msgstr ""
+msgstr "സംസ്ഥാപിത ബട്ടണ്"
 
 #: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
 msgid  "Label Field"
-msgstr ""
+msgstr "ലേബല് മണ്ഡലം"
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
 msgid  "Label"
-msgstr ""
+msgstr "ലേബല്"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
 msgid  "Alignment"
-msgstr ""
+msgstr "ക്രമീകരണം"
 
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
 msgid  "Vert. Alignment"
@@ -929,87 +905,87 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
 msgid  "Top"
-msgstr ""
+msgstr "മുകളില്‍"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
 msgid  "Middle"
-msgstr ""
+msgstr "മദ്ധ്യം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
 msgid  "Bottom"
-msgstr ""
+msgstr "താഴെ"
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
 msgid  "Graphics alignment"
-msgstr ""
+msgstr "ഗ്രാഫിക്സ് ക്രമീകരണം"
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "അക്ഷരസഞ്ചയം"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
 msgid  "Background color"
-msgstr ""
+msgstr "പശ്ചാത്തലം"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
 msgid  "Border"
-msgstr ""
+msgstr "അതിര‍്"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
 msgid  "Icon size"
-msgstr ""
+msgstr "ഐക്കണിന്റെ പരിമാണം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
 msgid  "Small"
-msgstr ""
+msgstr "ചെറിയ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
 msgid  "Large"
-msgstr ""
+msgstr "വലിയ"
 
 #: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
 msgid  "Positioning"
-msgstr ""
+msgstr "സ്ഥാനമുറപ്പിക്കല്"
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
 msgid  "Navigation"
-msgstr ""
+msgstr "നാവിഗേഷന്"
 
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
 msgid  "Acting on a record"
-msgstr ""
+msgstr "റിക്കോര്ഡില് പ്രവര്ത്തിക്കല്"
 
 #: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
 msgid  "Filtering / Sorting"
-msgstr ""
+msgstr "ഫില്ട്ടര് ചെയ്യുക / അടുക്കുക"
 
 #: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
 msgid  "Horizontal scroll bar"
-msgstr ""
+msgstr "കുറുകെയുള്ള സ്ക്രോള് ബാര്"
 
 #: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
 msgid  "Vertical scroll bar"
-msgstr ""
+msgstr "കുത്തനെയുള്ള സ്ക്രോള് ബാര്"
 
 #: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
 msgid  "Word break"
-msgstr ""
+msgstr "വേഡ് വിഭജനം"
 
 #: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
 msgid  "Multiline input"
-msgstr ""
+msgstr "വിവിധരേഖ ഇന്പുട്ട്"
 
 #: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
 msgid  "Multiselection"
-msgstr ""
+msgstr "വിവിധ തിരഞ്ഞെടുക്കല്"
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
 msgid  "Name"
-msgstr ""
+msgstr "പേര‍്"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 msgid  "Tab order"
-msgstr ""
+msgstr "ടാബ് ക്രമം"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
 msgid  "Mouse wheel scroll"
@@ -1017,235 +993,227 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
 msgid  "Filter"
-msgstr ""
+msgstr "ഫില്ട്ടര്"
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
 msgid  "Sort"
-msgstr ""
+msgstr "ക്രമീകരിക്കുക"
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
 msgid  "Record marker"
-msgstr ""
+msgstr "റിക്കോര്ഡ് മാര്ക്കര്"
 
 #: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
 msgid  "Filter proposal"
-msgstr ""
+msgstr "ഫില്ട്ടര്  പ്രസ്താവം"
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
 msgid  "Navigation bar"
-msgstr ""
+msgstr "നാവിഗേഷന് ബാര്"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
 msgid  "Cycle"
-msgstr ""
+msgstr "ചക്രം"
 
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
 msgid  "Tabstop"
-msgstr ""
+msgstr "ടാബ്സ്റ്റോപ്"
 
 #: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
 msgid  "Data field"
-msgstr ""
+msgstr "ഡേറ്റാ മണ്ഡലം"
 
 #: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
 msgid  "Dropdown"
-msgstr ""
+msgstr "താഴെയിടുക"
 
 #: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
 msgid  "Bound field"
-msgstr ""
+msgstr "ബന്ധിത മണ്ഡലം"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
 msgid  "List content"
-msgstr ""
+msgstr "ലിസ്റ്റ് മണ്ഡലം"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
 msgid  "Type of list contents"
-msgstr ""
+msgstr "ലിസ്റ്റ് വിഷയങ്ങളുടെ വിഭാഗം"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
 msgid  "Content"
-msgstr ""
+msgstr "ഉള്ളടക്കം"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
 msgid  "Content type"
-msgstr ""
+msgstr "ഉള്ളടക്ക വിഭാഗം"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
 msgid  "Allow additions"
-msgstr ""
+msgstr "കൂട്ടുന്നത് അനുവദിക്കുക"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
 msgid  "Allow deletions"
-msgstr ""
+msgstr "നീക്കംചെയ്യല് അനുവദിക്കുക"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
 msgid  "Allow modifications"
-msgstr ""
+msgstr "പരിഷ്കരണം  അനുവദി്ക്കുക"
 
 #: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
 msgid  "Add data only"
-msgstr ""
+msgstr "ഡേറ്റാ മാത്രം ചേര്ക്കുക."
 
 #: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "ഡേറ്റാ ഉറവിടം"
 
 #: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
 msgid  "Link master fields"
-msgstr ""
+msgstr "മുഖ്യ മണ്ഡലങ്ങല് ലിങ്ക് ചെയ്യുക"
 
 #: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
 msgid  "Link slave fields"
-msgstr ""
+msgstr "ഉപമണ്ഡലങ്ങല് ലിങ്ക് ചെയ്യുക"
 
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
 msgid  "Value min."
-msgstr ""
+msgstr "കുറഞ്ഞ മൂല്യം"
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
 msgid  "Value max."
-msgstr ""
+msgstr "പരമാവധി മൂല്യം"
 
 #: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
 msgid  "Incr./decrement value"
-msgstr ""
+msgstr " മൂല്യം കൂടുതല്/കുറവ്"
 
 #: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
 msgid  "Currency symbol"
-msgstr ""
+msgstr "കറന്സി ചിഹ്നം"
 
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
 msgid  "Date min."
-msgstr ""
+msgstr "കുറച്ചു ദിവസം"
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
 msgid  "Date max."
-msgstr ""
+msgstr "പരമാവധി ദിവസം"
 
 #: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
 msgid  "Date format"
-msgstr ""
+msgstr "തീയതി രൂപരേഖ"
 
 #: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
 msgid  "Selection"
-msgstr ""
+msgstr "തിരഞ്ഞെടുക്കല്‍"
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
 msgid  "Time min."
-msgstr ""
+msgstr "കുറച്ച് സമയം"
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
 msgid  "Time max."
-msgstr ""
+msgstr "പരമാവധി സമയം"
 
 #: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
 msgid  "Time format"
-msgstr ""
+msgstr "സമയ രൂപരേഖ"
 
 #: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
 msgid  "Prefix symbol"
-msgstr ""
+msgstr "ചിഹ്നം ഇടുക"
 
 #: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
 msgid  "Value"
-msgstr ""
+msgstr " മൂല്യം"
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
 msgid  "Formatting"
-msgstr ""
+msgstr "രൂപരേഖ ചെയ്യുന്നു"
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
 msgid  "Class ID"
-msgstr ""
+msgstr "വിഭാഗം  ID"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
 msgid  "Height"
-msgstr ""
+msgstr "പൊക്കം"
 
 #: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
 msgid  "Width"
-msgstr ""
+msgstr "വീതി"
 
 #: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
 msgid  "List index"
-msgstr ""
+msgstr "ലിസ്റ്റ് അനുക്രമണിക"
 
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
 msgid  "Row height"
-msgstr ""
+msgstr "നിരയുടെ പൊക്കം"
 
 #: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
 msgid  "Fill color"
-msgstr ""
+msgstr "നിറം നിറയ്ക്കുക"
 
 #: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
 msgid  "Line color"
-msgstr ""
+msgstr "രേഖയില് ചായമിടുക"
 
 #: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
 msgid  "Reference value (on)"
-msgstr ""
+msgstr "റഫറന്സ് മൂല്യം (ഓണ്)"
 
 #: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
 msgid  "Reference value (off)"
-msgstr ""
+msgstr "റഫറന്സ് മൂല്യം (ഓഫ്)"
 
 #: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
 msgid  "List entries"
-msgstr ""
+msgstr "പ്രവേശനങ്ങളുടെ ലിസ്റ്റ്"
 
 #: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
 msgid  "Action"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
-msgid  "URL"
-msgstr ""
+msgstr "പ്രവൃത്തി"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
 msgid  "Type of submission"
-msgstr ""
+msgstr "അര്പ്പണ വിഭാഗം"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
 msgid  "Default status"
-msgstr ""
+msgstr "സംസ്ഥാപിത സ്ഥിതി"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
 msgid  "Submission encoding"
-msgstr ""
+msgstr "ബോധിപ്പിക്കല് എന്കോഡിംഗ്"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
 msgid  "Default value"
-msgstr ""
+msgstr "സംസ്ഥാപിത  മൂല്യം"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
 msgid  "Default text"
-msgstr ""
+msgstr "സംസ്ഥാപിത ടെക്സ്റ്റ്"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
 msgid  "Default date"
-msgstr ""
+msgstr "സംസ്ഥാപിത തീയതി"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
 msgid  "Default time"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
-msgid  "Frame"
-msgstr ""
+msgstr "സംസ്ഥാപിത സമയം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
 msgid  "Without frame"
-msgstr ""
+msgstr "ഫ്രെയിമില്ലാത്ത"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
 msgid  "3D look"
-msgstr ""
+msgstr "ത്രിഡി കാഴ്ച"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
 msgid  "Flat"
-msgstr ""
+msgstr "പരന്ന"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
 msgid  "Valuelist"
@@ -1253,11 +1221,11 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "പട്ടിക"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "അന്വേഷണം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
 msgid  "Sql"
@@ -1273,23 +1241,23 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
 msgid  "Left"
-msgstr ""
+msgstr "ഇടത്തു്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
 msgid  "Center"
-msgstr ""
+msgstr "മദ്ധ്യം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
 msgid  "Right"
-msgstr ""
+msgstr "വലത്തു്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
 msgid  "None"
-msgstr ""
+msgstr "ഒന്നുമില്ല"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
 msgid  "Submit form"
-msgstr ""
+msgstr "ഫോം സമര്‍പ്പിക്കുക"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
 msgid  "Reset form"
@@ -1297,27 +1265,27 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
 msgid  "Open document/web page"
-msgstr ""
+msgstr "രേഖ/വെബ് താള്‍ തുറക്കുക"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
 msgid  "First record"
-msgstr ""
+msgstr "ആദ്യത്തെ റിക്കോര്‍ഡ്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
 msgid  "Previous record"
-msgstr ""
+msgstr "മുമ്പുള്ളതു്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
 msgid  "Next record"
-msgstr ""
+msgstr "അടുത്തതു്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
 msgid  "Last record"
-msgstr ""
+msgstr "അവസാന റിക്കോര്‍ഡ്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
 msgid  "Save record"
-msgstr ""
+msgstr "സൂക്ഷിക്കുക"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
 msgid  "Undo data entry"
@@ -1325,11 +1293,11 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
 msgid  "New record"
-msgstr ""
+msgstr "പുതിയ റിക്കോര്‍ഡ്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
 msgid  "Delete record"
-msgstr ""
+msgstr "വെട്ടി നീക്കുക"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
 msgid  "Refresh form"
@@ -1343,17 +1311,13 @@ msgstr ""
 msgid  "Post"
 msgstr ""
 
-#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
-msgid  "URL"
-msgstr ""
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
 msgid  "Multipart"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
 msgid  "Text"
-msgstr ""
+msgstr "ടെക്സ്റ്റ്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
 msgid  "Standard (short)"
@@ -1373,51 +1337,51 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
 msgid  "DD/MM/YY"
-msgstr ""
+msgstr "DD/MM/YY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
 msgid  "MM/DD/YY"
-msgstr ""
+msgstr "MM/DD/YY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
 msgid  "YY/MM/DD"
-msgstr ""
+msgstr "YY/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
 msgid  "DD/MM/YYYY"
-msgstr ""
+msgstr "DD/MM/YYYY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
 msgid  "MM/DD/YYYY"
-msgstr ""
+msgstr "MM/DD/YYYY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
 msgid  "YYYY/MM/DD"
-msgstr ""
+msgstr "YYYY/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
 msgid  "YY-MM-DD"
-msgstr ""
+msgstr "YY-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
 msgid  "YYYY-MM-DD"
-msgstr ""
+msgstr "YYYY-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
 msgid  "13:45"
-msgstr ""
+msgstr "13:45"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
 msgid  "13:45:00"
-msgstr ""
+msgstr "13:45:00"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
 msgid  "01:45 PM"
-msgstr ""
+msgstr "01:45 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
 msgid  "01:45:00 PM"
-msgstr ""
+msgstr "01:45:00 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
 msgid  "Not Selected"
@@ -1425,7 +1389,7 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
 msgid  "Selected"
-msgstr ""
+msgstr "തെരഞ്ഞെടുത്ത"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
 msgid  "Not Defined"
@@ -1433,30 +1397,26 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
 msgid  "All records"
-msgstr ""
+msgstr "എല്ലാ റിക്കോര്‍ഡുകളും"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
 msgid  "Active record"
-msgstr ""
+msgstr "സജീവമായ റിക്കോര്‍ഡ്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
 msgid  "Current page"
-msgstr ""
+msgstr "ഈ താള്‍"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
 msgid  "No"
-msgstr ""
+msgstr "ഇല്ല"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "ഉവ്വു്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
 msgid  "Parent Form"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
-msgid  "None"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
@@ -1473,543 +1433,511 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
 msgid  "Fill parameters"
-msgstr ""
+msgstr "പരാമീറ്ററുകള് നിറയ്ക്കുക"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
 msgid  "Execute action"
-msgstr ""
+msgstr "പ്രവര്‍ത്തിക്കുക"
 
 #: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
 msgid  "After updating"
-msgstr ""
+msgstr "പുതുക്കിയതിനു ശേഷം"
 
 #: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
-msgstr ""
+msgstr "പുതുക്കുന്നതിനു മുന്പ്"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
 msgid  "Before record action"
-msgstr ""
+msgstr "പ്രവൃത്തി രേഖപ്പെടുത്തുന്നതിനു മുന്പ്"
 
 #: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
 msgid  "After record action"
-msgstr ""
+msgstr "പ്രവൃത്തി രേഖപ്പെടുത്തിയതിനു ശേഷം"
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
-msgstr ""
+msgstr "ഉറപ്പാക്കിയ നീക്കം ചെയ്യല്"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
 msgid  "Error occurred"
-msgstr ""
+msgstr "തെറ്റുണ്ടായി"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
-msgstr ""
+msgstr "നിരീക്ഷിച്ചപ്പോള്"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
 msgid  "When losing focus"
-msgstr ""
+msgstr "നിരീക്ഷണം നഷ്ടപ്പെട്ടപ്പോള്"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
-msgstr ""
+msgstr "ഘടക സ്ഥിതി മാറി"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
 msgid  "Key pressed"
-msgstr ""
+msgstr "കീ അമര്ത്തി"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
 msgid  "Key released"
-msgstr ""
+msgstr "കീ സ്വതന്ത്രമാക്കി"
 
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
 msgid  "When loading"
-msgstr ""
+msgstr "ലോഡുചെയ്തതിനുശേഷം"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
 msgid  "Before reloading"
-msgstr ""
+msgstr "ലോഡുചെയ്യുന്നതിനു മുന്പ്"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
 msgid  "When reloading"
-msgstr ""
+msgstr "വീണ്ടും ലോഡുചെയ്തപ്പോള്"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
 msgid  "Mouse moved while key pressed"
-msgstr ""
+msgstr "കീ അമര്ത്തിയപ്പോള്  മൌസ് നീങ്ങി"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
 msgid  "Mouse inside"
-msgstr ""
+msgstr "മൌസ് ഉള്ളില്"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
 msgid  "Mouse outside"
-msgstr ""
+msgstr "മൌസ് പുറത്ത്"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
 msgid  "Mouse moved"
-msgstr ""
+msgstr "മൌസ് നീക്കുക"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
 msgid  "Mouse button pressed"
-msgstr ""
+msgstr "മൌസ് ബട്ടണ് അമര്ത്തുക"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
 msgid  "Mouse button released"
-msgstr ""
+msgstr "മൌസ് ബട്ടണ് സ്വതന്ത്രമാക്കുക"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
 msgid  "Before record change"
-msgstr ""
+msgstr "മാറ്റം വരുത്തുന്നതിനു മുന്പ്"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
 msgid  "After record change"
-msgstr ""
+msgstr "മാറ്റം വരുത്തിയതിനു ശേഷം"
 
 #: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
 msgid  "After resetting"
-msgstr ""
+msgstr "പുനഃസ്ഥാപിച്ചതിനു ശേഷം"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
 msgid  "Prior to reset"
-msgstr ""
+msgstr "പുനഃസ്ഥാപിക്കുന്നതിനു മുന്പ്"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
 msgid  "Approve action"
-msgstr ""
+msgstr "പ്രവര്‍ത്തി അനുവദിക്കുക"
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
 msgid  "Before submitting"
-msgstr ""
+msgstr "അര്പ്പിക്കുന്നതിന് മുന്പ്"
 
 #: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
 msgid  "Text modified"
-msgstr ""
+msgstr "പരിഷ്കരിച്ച ടെക്സ്റ്റ്"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
-msgstr ""
+msgstr "ഇറക്കുന്നതിനു മുന്പ്"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
-msgstr ""
+msgstr "ഇറക്കുന്പോള്"
 
 #: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
 msgid  "Changed"
-msgstr ""
+msgstr "മാറി"
 
 #: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
 msgid  "Events"
-msgstr ""
+msgstr "അവസരം"
 
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
 msgid  "Analyze SQL command"
-msgstr ""
+msgstr "SQL നിര്ദ്ദേശം വിശകലനം ചെയ്യുക"
 
 #: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
 msgid  "PositionX"
-msgstr ""
+msgstr "സ്ഥാനം X"
 
 #: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
 msgid  "PositionY"
-msgstr ""
+msgstr "സ്ഥാനം Y"
 
 #: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
 msgid  "Title"
-msgstr ""
+msgstr "കുത്തനെയുള്ള ടെക്സ്റ്റ്"
 
 #: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
 msgid  "Page (step)"
-msgstr ""
+msgstr "പേജ് (സ്റ്റെപ്പ്)"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
 msgid  "Progress value"
-msgstr ""
+msgstr "പുരോഗമന മൂല്യം"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
 msgid  "Progress value min."
-msgstr ""
+msgstr "പുരോഗമന മൂല്യം കുറവ്"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
 msgid  "Progress value max."
-msgstr ""
+msgstr "പരമാവധി പുരോഗമന മൂല്യം"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
 msgid  "Scroll value"
-msgstr ""
+msgstr "സ്ക്രോള് മൂല്യം "
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
 msgid  "Scroll value max."
-msgstr ""
+msgstr " പരമാവധി സ്ക്രോള് മൂല്യം "
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
 msgid  "Scroll value min."
-msgstr ""
+msgstr "മിതമായ സ്ക്രോള് മൂല്യം"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
 msgid  "Default scroll value"
-msgstr ""
+msgstr "സംസ്ഥാപിത സ്ക്രോള് മൂല്യം "
 
 #: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
 msgid  "Small change"
-msgstr ""
+msgstr "ചെറിയ മാറ്റം"
 
 #: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
 msgid  "Large change"
-msgstr ""
+msgstr "വലിയ മാറ്റം"
 
 #: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
 msgid  "Delay"
-msgstr ""
+msgstr "കാലതാമസം"
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
 msgid  "Repeat"
-msgstr ""
+msgstr "ആവര്ത്തിക്കുക"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
 msgid  "Visible size"
-msgstr ""
+msgstr "ദൃശ്യമായ പരിമാണം"
 
 #: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
 msgid  "Orientation"
-msgstr ""
+msgstr "നവീകരണം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 msgid  "Horizontal"
-msgstr ""
+msgstr "കുറുകെ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
 msgid  "Vertical"
-msgstr ""
+msgstr "കുത്തനെ"
 
 #: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
 msgid  "While adjusting"
-msgstr ""
+msgstr "അഡ്ജസ്റ്റ് ചെയ്യുന്പോള്"
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "തീയതി"
 
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
 msgid  "State"
-msgstr ""
+msgstr "സംസ്ഥാനം"
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
 msgid  "Time"
-msgstr ""
+msgstr "സമയം"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
 msgid  "Scale"
-msgstr ""
+msgstr "അളവുകോല്"
 
 #: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
 msgid  "Button type"
-msgstr ""
+msgstr "ബട്ടണ് വിഭാഗം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
 msgid  "Default"
-msgstr ""
+msgstr "സംസ്ഥാപിതം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
 msgid  "OK"
-msgstr ""
+msgstr "ശരി"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
 msgid  "Cancel"
-msgstr ""
+msgstr "റദ്ദാക്കുക"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
 msgid  "Help"
-msgstr ""
+msgstr "സഹായം"
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr ""
+msgstr "ഡേറ്റ ഉറവിടത്തിലേക്കുള്ള \"$name$\" കണക്ഷന് ചെയ്യാന് കഴിഞ്ഞില്ല."
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
 msgid  "Linked cell"
-msgstr ""
+msgstr "ലിങ്ക് ചെയ്ത സെല്ല്"
 
 #: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
 msgid  "Source cell range"
-msgstr ""
+msgstr "ഉറവിട സെല്ലുകളുടെ  പരന്പര"
 
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
 msgid  "Contents of the linked cell"
-msgstr ""
+msgstr "ലിങ്ക് ചെയ്ത സെല്ലിലെ വിഷയങ്ങള്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
 msgid  "The selected entry"
-msgstr ""
+msgstr "തെരഞ്ഞെടുത്തതു്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
 msgid  "Position of the selected entry"
-msgstr ""
+msgstr "തെരഞ്ഞെടുത്തതിന്റെ സ്ഥാനം"
 
 #: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
 msgid  "Scrollbars"
-msgstr ""
+msgstr "സ്ക്രോള് ബാര്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
 msgid  "Single-line"
-msgstr ""
+msgstr "ഏകരേഖ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
 msgid  "Multi-line"
-msgstr ""
+msgstr "വിവിധരേഖ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
 msgid  "Multi-line with formatting"
-msgstr ""
+msgstr "രൂപരേഖയില് വിവിധരേഖ"
 
 #: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
 msgid  "Symbol color"
-msgstr ""
+msgstr "ചിഹ്നത്തിന്റെ നിറം"
 
 #: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
 msgid  "Text lines end with"
-msgstr ""
+msgstr "ടെക്സ്റ്റ് രേഖ അവസാനിക്കുന്നത്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
 msgid  "LF (Unix)"
-msgstr ""
+msgstr "LF (യുണിക്സ്)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
 msgid  "CR+LF (Windows)"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
-msgid  "Horizontal"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
-msgid  "Vertical"
-msgstr ""
+msgstr "CR+LF (വിന്ഡോസ്)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
 msgid  "Both"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
-msgid  "Table"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
-msgid  "Query"
-msgstr ""
+msgstr "രണ്ടും"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL കല്പന"
 
 #: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
 msgid  "Toggle"
-msgstr ""
+msgstr "ടോഗ്ഗിള്"
 
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
 msgid  "Take Focus on Click"
-msgstr ""
+msgstr "ക്ലിക്കില് കേന്ദ്രീകരിക്കുക"
 
 #: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
 msgid  "Hide selection"
-msgstr ""
+msgstr "തിരഞ്ഞെടുക്കല് ഗുപ്തമാക്കുക"
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
 msgid  "Style"
-msgstr ""
+msgstr "ശൈലി"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 msgid  "3D"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
-msgid  "Flat"
-msgstr ""
+msgstr "ത്രിമാന"
 
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
 msgid  "Border color"
-msgstr ""
+msgstr "ബോര്ഡറിന്റെ നിറം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
 msgid  "Left top"
-msgstr ""
+msgstr "ഇടത്ത് മുകളില്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
 msgid  "Left centered"
-msgstr ""
+msgstr "ഇടത്ത്  മദ്ധ്യത്തില്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
 msgid  "Left bottom"
-msgstr ""
+msgstr "ഇടത്ത് താഴെ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
 msgid  "Right top"
-msgstr ""
+msgstr "വലത്ത് മുകളില്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
 msgid  "Right centered"
-msgstr ""
+msgstr "വലത്ത് മദ്ധ്യത്തില്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
 msgid  "Right bottom"
-msgstr ""
+msgstr "വലത്ത് താഴെ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
 msgid  "Above left"
-msgstr ""
+msgstr "ഇടത്തുവശത്തിന‍് മുകളില്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
 msgid  "Above centered"
-msgstr ""
+msgstr "മദ്ധ്യത്തിനു മുകളില്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
 msgid  "Above right"
-msgstr ""
+msgstr "വലത്തുവശത്തിന‍്  മുകളില്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
 msgid  "Below left"
-msgstr ""
+msgstr "ഇടത്തുവശത്തിന‍്  താഴെ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
 msgid  "Below centered"
-msgstr ""
+msgstr "മദ്ധ്യത്തിനു താഴെ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
 msgid  "Below right"
-msgstr ""
+msgstr "വലത്തുവശത്തിന‍് താഴെ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
 msgid  "Centered"
-msgstr ""
+msgstr "കേന്ദ്രീകരിച്ച"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
 msgid  "Wrap text automatically"
-msgstr ""
+msgstr "സ്വയം ടെക്സ്റ്റിന് ആവരണമിടുക"
 
 #: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
 msgid  "Text type"
-msgstr ""
+msgstr "ടെക്സ്റ്റ് വിഭാഗം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
 msgid  "Hide"
-msgstr ""
+msgstr "അദൃശ്യമാക്കുക"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
 msgid  "Show"
-msgstr ""
+msgstr "കാണിക്കുക"
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
 msgid  "XML data model"
-msgstr ""
+msgstr "XML  ഡേറ്റാ മാതൃക"
 
 #: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
 msgid  "Binding expression"
-msgstr ""
+msgstr "ബന്ധിക്കുന്ന പ്രവര്ത്തനശൈലി"
 
 #: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
 msgid  "Required"
-msgstr ""
+msgstr "ആവശ്യമായ"
 
 #: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
 msgid  "List entry source"
-msgstr ""
+msgstr "പ്രവേശന ഉറവിടം ലിസ്റ്റ് ചെയ്യുക"
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
 msgid  "Relevant"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
-msgid  "Read-only"
-msgstr ""
+msgstr "പ്രസക്തമായ"
 
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
 msgid  "Constraint"
-msgstr ""
+msgstr "പരിമിതി"
 
 #: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
 msgid  "Calculation"
-msgstr ""
+msgstr "കണക്കുകൂട്ടല്"
 
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
 msgid  "Data type"
-msgstr ""
+msgstr "ഡേറ്റാ വിഭാഗം"
 
 #: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
 msgid  "Whitespaces"
-msgstr ""
+msgstr "വെളുത്ത സ്ഥലം"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
 msgid  "Preserve"
-msgstr ""
+msgstr "സൂക്ഷിക്കുക"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
 msgid  "Replace"
-msgstr ""
+msgstr "പുനഃസ്ഥാപിക്കുക"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
 msgid  "Collapse"
-msgstr ""
+msgstr "തകരുക"
 
 #: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
 msgid  "Pattern"
-msgstr ""
+msgstr "മാതൃക"
 
 #: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
 msgid  "Length"
-msgstr ""
+msgstr "നീളം"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
 msgid  "Length (at least)"
-msgstr ""
+msgstr "നീളം (കുറഞ്ഞ്)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
 msgid  "Length (at most)"
-msgstr ""
+msgstr "നീളം (പരമാവധി)"
 
 #: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
 msgid  "Digits (total)"
-msgstr ""
+msgstr "അക്കങ്ങള് (ആകെ)"
 
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
 msgid  "Digits (fraction)"
-msgstr ""
+msgstr "അക്കങ്ങള്(അംശം)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
 msgid  "Max. (inclusive)"
-msgstr ""
+msgstr "പരമാവധി (ഉള്പ്പെടെ)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
 msgid  "Max. (exclusive)"
-msgstr ""
+msgstr "പരമാവധി (കൂടാതെ)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
 msgid  "Min. (inclusive)"
-msgstr ""
+msgstr "കുറച്ച (ഉള്പ്പെടെ)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
 msgid  "Min. (exclusive)"
-msgstr ""
+msgstr "കുറച്ച് (കൂടാതെ)"
 
 #: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
 msgid  "Submission"
-msgstr ""
+msgstr "ബോധിപ്പിക്കല്"
 
 #: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
 msgid  "Binding"
-msgstr ""
+msgstr "ബന്ധിക്കുന്ന"
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
 msgid  "Selection type"
-msgstr ""
+msgstr "തെരഞ്ഞെടുക്കുന്ന രീതി"
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
 msgid  "Root displayed"
@@ -2025,7 +1953,7 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
 msgid  "Editable"
-msgstr ""
+msgstr "ചിട്ടപ്പെടുത്താവുന്നതു്"
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
 msgid  "Invokes stop node editing"
@@ -2033,15 +1961,11 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
 msgid  "With title bar"
-msgstr ""
+msgstr "തലക്കെട്ടിനുള്ള ബാറിനൊപ്പം"
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
 msgid  "No Label"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
-msgid  "No"
-msgstr ""
+msgstr "ലേബല്‍ ലഭ്യമല്ല"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
 msgid  "Keep Ratio"
@@ -2053,7 +1977,7 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
 msgid  "Input required"
-msgstr ""
+msgstr "ഇന്‍പുട്ട് ആവശ്യമുണ്ടു്"
 
 #: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
 msgid  "Text direction"
@@ -2061,11 +1985,11 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
 msgid  "Left-to-right"
-msgstr ""
+msgstr "ഇടത്തു നിന്നും വലത്തേക്ക്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
 msgid  "Right-to-left"
-msgstr ""
+msgstr "വലത്തു നിന്നും ഇടത്തേക്ക്"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
 msgid  "Use superordinate object settings"
@@ -2073,7 +1997,7 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
 msgid  "Never"
-msgstr ""
+msgstr "ഒരിക്കലുമില്ല"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
 msgid  "When focused"
@@ -2081,7 +2005,7 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
 msgid  "Always"
-msgstr ""
+msgstr "എപ്പോഴും"
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
 msgid  "Anchor"
@@ -2093,7 +2017,7 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "As Character"
-msgstr ""
+msgstr "അക്ഷരമായി"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
 msgid  "To Page"
@@ -2105,11 +2029,7 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
 msgid  "To Character"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Page"
-msgstr ""
+msgstr "അക്ഷരമായി"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "To Cell"
@@ -2117,359 +2037,359 @@ msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
 msgid  "Regular"
-msgstr ""
+msgstr "സാധാരണ"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
 msgid  "Bold Italic"
-msgstr ""
+msgstr "ചരിഞ്ഞും കട്ടിയിലും"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr ""
+msgstr "ചരിഞ്ഞ"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr ""
+msgstr "കട്ടിയില്‍"
 
 #: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
 msgid  "(Default)"
-msgstr ""
+msgstr "(സഹജമായ)"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
 msgid  "New Data Type"
-msgstr ""
+msgstr "പുതിയ ഡേറ്റാ വിഭാഗം"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
 msgid  "Type a name for the new data type:"
-msgstr ""
+msgstr "പുതിയ ഡേറ്റാ വിഭാഗത്തിന‍്  പേരിടുക"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "ഈ മാതൃകയില് നിന്നും താങ്കള്ക്ക്  '#type#' ഡേറ്റാ വിഭാഗം നീക്കം ചെയ്യണോ?\n ദയവായി ശ്രദ്ധിക്കുക  ഇത് ആ ഡേറ്റയുമായി ബന്ധപ്പെട്ട എല്ലാ നിയന്ത്രണങ്ങളെയും ബാധിക്കുക"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
 msgid  "Button"
-msgstr ""
+msgstr "ബട്ടണ്"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
 msgid  "Option Button"
-msgstr ""
+msgstr "ഐച്ഛിക ബട്ടണ്"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
 msgid  "Check Box"
-msgstr ""
+msgstr "പരിശോധന പെട്ടി"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 msgid  "Label Field"
-msgstr ""
+msgstr "ലേബല് മണ്ഡലം"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
 msgid  "Group Box"
-msgstr ""
+msgstr "ഗ്രൂപ്പ് പെട്ടി"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
 msgid  "Text Box"
-msgstr ""
+msgstr "ടെക്സ്റ്റ് ബോക്സ്"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
 msgid  "Formatted Field"
-msgstr ""
+msgstr "രൂപരേഖ ചെയ്ത മണ്ഡലം"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
 msgid  "List Box"
-msgstr ""
+msgstr "ലിസ്റ്റ്ബോക്സ്"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
 msgid  "Combo Box"
-msgstr ""
+msgstr "കോന്പോ പെട്ടി"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
 msgid  "Image Button"
-msgstr ""
+msgstr "ചിത്ര ബട്ടണ്"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
 msgid  "Hidden Control"
-msgstr ""
+msgstr "ഗുപ്ത നിയന്ത്രണം"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
 msgid  "Control (unknown type)"
-msgstr ""
+msgstr "നിയന്ത്രണം (അജ്ഞാത തരം)"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
 msgid  "Image Control"
-msgstr ""
+msgstr "ചിത്ര നിയന്ത്രണം"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
 msgid  "File Selection"
-msgstr ""
+msgstr "ഫയല് തിരഞ്ഞെടുക്കല്"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
 msgid  "Date Field"
-msgstr ""
+msgstr "ഡേറ്റാ മണ്ഡലം"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
 msgid  "Time Field"
-msgstr ""
+msgstr "സമയത്തിനുള്ള ഫീള്‍ഡ്"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
 msgid  "Numeric Field"
-msgstr ""
+msgstr "സംഖ്യാ മണ്ഡലം"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
 msgid  "Currency Field"
-msgstr ""
+msgstr " കറന്സി മണ്ഡലം"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
 msgid  "Pattern Field"
-msgstr ""
+msgstr "മാതൃകാ മണ്ഡലം"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
 msgid  "Table Control "
-msgstr ""
+msgstr "പട്ടിക നിയന്ത്രണം"
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
 msgid  "Default"
-msgstr ""
+msgstr "സംസ്ഥാപിതം"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "പൊതുവായ"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "ഡേറ്റാ"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
 msgid  "No"
-msgstr ""
+msgstr "ഇല്ല"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
 msgid  "Yes"
-msgstr ""
+msgstr "ഉവ്വു്"
 
 #: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
 msgid  "Help"
-msgstr ""
+msgstr "സഹായം"
 
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
 msgid  "<Embedded-Image>"
-msgstr ""
+msgstr "<Embedded-Image>"
 
 #: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
 msgid  "Text"
-msgstr ""
+msgstr "ടെക്സ്റ്റ്"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "ഇത് ലേബല് മണ്ടലങ്ങളായി ഉപയോഗിക്കാവുന്ന നിയന്ത്രണ മണ്ഡലങ്ങളാണ‍് $നിയന്ത്രണ_വിഭാഗം$ $നിയന്ത്രണ_നാമം$."
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
 msgid  "~No assignment"
-msgstr ""
+msgstr "ഒരു ജോലിയും ഇല്ല"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
 msgid  "Label Field Selection"
-msgstr ""
+msgstr "ലേബല് മണ്ഡലം തിരഞ്ഞെടുക്കല്"
 
 #: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "രൂപം"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
 msgid  "Tab Order"
-msgstr ""
+msgstr "ടാബ് ക്രമം"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
 msgid  "Controls"
-msgstr ""
+msgstr "നിയന്ത്രണം"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
 msgid  "Move Up"
-msgstr ""
+msgstr "മുകളിലോട്ട് നീങ്ങുക"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
 msgid  "Move Down"
-msgstr ""
+msgstr "താഴോട്ട് നീങ്ങുക"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
 msgid  "Automatic Sort"
-msgstr ""
+msgstr "സ്വയം ക്രമീകരിക്കുക"
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
 msgid  "Set"
-msgstr ""
+msgstr "സജ്ജമാക്കുക"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
 msgid  "Linear ascending"
-msgstr ""
+msgstr "രേഖരൂപമായ ആരോഹണം"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
 msgid  "Linear descending"
-msgstr ""
+msgstr "രേഖരൂപമായ അവരോഹണം"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
 msgid  "Original values"
-msgstr ""
+msgstr "യഥാര്‍ത്ഥ മൂല്യം"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
 msgid  "Exponential increasing"
-msgstr ""
+msgstr "പടിപടിയായി കൂടുക"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "ഉപകരണം\nസംബന്ധിച്ചുള്ള വിവരങ്ങള്‍"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "തിരനോട്ടം\nലഭ്യമാക്കുക"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "തിരനോട്ടം"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
 msgid  "Scan area"
-msgstr ""
+msgstr "സ്കാന്‍ ചെയ്യുന്ന സ്ഥലം"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
 msgid  "Left:"
-msgstr ""
+msgstr "ഇടത്ത്:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
 msgid  "Top:"
-msgstr ""
+msgstr "മുകളില്‍:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
 msgid  "Right:"
-msgstr ""
+msgstr "വലത്ത്:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
 msgid  "Bottom:"
-msgstr ""
+msgstr "താഴെ:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
 msgid  "Device used:"
-msgstr ""
+msgstr "ഉപയോഗിച്ച ഉപകരണം :"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
 msgid  "Resolution [~DPI]"
-msgstr ""
+msgstr "വിശ്ലേഷണം [~DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
 msgid  "Show advanced options"
-msgstr ""
+msgstr "നൂതന ഉപാധികള്‍ കാണിക്കുക"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
 msgid  "Options:"
-msgstr ""
+msgstr "ഉപാധികള്‍:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
 msgid  "Vector element"
-msgstr ""
+msgstr "വെക്ടര്‍ ഘടകം"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
 msgid  "Set"
-msgstr ""
+msgstr "സജ്ജമാക്കുക"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
 msgid  "Scanner"
-msgstr ""
+msgstr "സ്കാനര്‍"
 
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "ഉപകരണം: %s\nവിക്രേതാവ്: %s\nമാതൃക: %s\nവിഭാഗം: %s"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
 msgid  "An error occurred while scanning."
-msgstr ""
+msgstr "സ്കാന്‍ ചെയ്തപ്പോള്‍ തെറ്റുണ്ടായി."
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "ഉപകരണം തിരനോട്ടത്തിനുള്ള ഉപാധി നല്കുന്നില്ല. അതിനാല്‍, ഇതിനു് പകരം സാധാരണ സ്കാന്‍ ഉപയോഗിക്കുന്നു. ഇതു് ചിലപ്പോള്‍ വളരെയധികം സമയമെടുത്തേക്കാം."
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr ""
+msgstr "SANE ഇന്റര്‍ഫെയിസ് ആരംഭിക്കുവാന്‍ കഴിയുന്നില്ല. അതിനാല്‍ സ്കാന്‍ ചെയ്യുവാന്‍ സാധ്യമല്ല."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
 msgid  "Check for ~Updates..."
-msgstr ""
+msgstr "~പരിഷ്കരണങ്ങള്‍ പരിശോധിക്കുക..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
 msgid  "Checking..."
-msgstr ""
+msgstr "പരിശോധന..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
 msgid  "Checking for an update failed."
-msgstr ""
+msgstr "പരിഷ്കരണം പരിശോധന പരാജയപ്പെട്ടു."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ഏറ്റവും പുതിയതാണു്."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION ലഭ്യമാണു്.\n\n%PRODUCTNAME %PRODUCTVERSION ആണു് ഇന്‍സ്റ്റോള്‍ ചെയ്തിരിക്കുന്നതു്.\n\nകുറിപ്പു്: ഒരു പരിഷ്കരണം ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതിനു് മുമ്പു് ആവശ്യമുള്ള എല്ലാ അനുമതികളും നിങ്ങള്‍ക്കു് ലഭ്യമെന്നുറപ്പാക്കുക.\nഅഡ്മിനിസ്ട്രേറ്റര്‍ അല്ലെങ്കില്‍ റൂട്ട് രഹസ്യവാക്ക് ആവശ്യമുണ്ടു്."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
 msgid  "Check for Updates"
-msgstr ""
+msgstr "പരിഷ്കരണങ്ങള്‍ക്കായി പരിശോധിക്കുക"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION ഡൌണ്‍ലോട് തല്‍ക്കാലത്തേക്ക് നിര്‍ത്തിയിരിക്കുന്നു..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION ഡൌണ്‍ലോട് നിര്‍ത്തിയിരിക്കുന്നു"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "ഡൌണ്‍ലോട് സ്ഥാനം: %DOWNLOAD_PATH.\n\nഉപകരണങ്ങള്‍ – ഉപാധികള്‍... - %PRODUCTNAME – ഓണ്‍ലൈന്‍ പരിഷ്കരണത്തില്‍ ഡൌണ്‍ലോട് സ്ഥാനം മാറ്റുവാന്‍ സാധിക്കുന്നു."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr ""
+msgstr "%FILE_NAME %DOWNLOAD_PATH-ലേക്ക് ഡൌണ്‍ലോട് ചെയ്തിരിക്കുന്നു."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "പരിഷ്കരണത്തിന്റെ ഓട്ടോമാറ്റിക് ഡൌണ്‍ലോട് ഇപ്പോള്‍ ലഭ്യമല്ല.\n\nവെബ്സൈറ്റില്‍ നിന്നും %PRODUCTNAME %NEXTVERSION ഡൌണ്‍ലോട് ചെയ്യുന്നതിനായി 'ഡൌണ്‍ലോട് ചെയ്യുക...' ക്ലിക്ക് ചെയ്യുക."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION ഡൌണ്‍ലോട് ചെയ്യുന്നു..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION ഡൌണ്‍ലോട് പൂര്‍ത്തിയായി. ഇന്‍സ്റ്റലേഷനു് തയ്യാര്‍."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
 msgid  "Do you really want to cancel the download?"
-msgstr ""
+msgstr "ഡൌണ്‍ലോട് റദ്ദാക്കണമോ?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "പരിഷ്കരണം ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതിനായി, %PRODUCTNAME %PRODUCTVERSION അടയ്ക്കേണ്ടതാണു്. ഇപ്പോള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യണമോ?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
 msgid  "Install ~now"
-msgstr ""
+msgstr "~ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
 msgid  "Install ~later"
-msgstr ""
+msgstr "~പിന്നീടു് ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റോളര്‍ പ്രയോഗം പ്രവര്‍ത്തിക്കുവാന്‍ സാധ്യമല്ല, ദയവായി %DOWNLOAD_PATH-ല്‍ %FILE_NAME പ്രവര്‍ത്തിപ്പിക്കുക."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "ആ പേരില്‍ ഫയല്‍ നിലവിലുണ്ടു്! ഈ ഫയല്‍ തിരിച്ചെഴുതണമോ?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
@@ -2485,96 +2405,80 @@ msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
 msgid  "%PERCENT%"
-msgstr ""
+msgstr "%PERCENT%"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
 msgid  "Status"
-msgstr ""
+msgstr "അവസ്ഥ"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "വിശദവവിവരങ്ങള്‍"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "അടയ്ക്കുക"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
 msgid  "~Download"
-msgstr ""
+msgstr "~ഡൌണ്‍ലോട് ചെയ്യുക"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
 msgid  "~Install"
-msgstr ""
+msgstr "~ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
 msgid  "~Pause"
-msgstr ""
+msgstr "~തല്‍ക്കാലത്തേക്ക് നിര്‍ത്തുക"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
 msgid  "~Resume"
-msgstr ""
+msgstr "~വീണ്ടും ആരംഭിക്കുക"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
 msgid  "Cancel"
-msgstr ""
+msgstr "റദ്ദാക്കുക"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
 msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "%PRODUCTNAME പരിഷ്കരണം ലഭ്യമാണു്"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
 msgid  "Click here to start the download."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "ഡൌണ്‍ലോടിനായി ക്ലിക്ക് ചെയ്യുക."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
 msgid  "Click here for more information."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി ക്ലിക്ക് ചെയ്യുക."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
 msgid  "Download of update begins."
-msgstr ""
+msgstr "പരിഷ്കരണം ഡൌണ്‍ലോട് ആരംഭിക്കുന്നു."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
 msgid  "Download of update in progress"
-msgstr ""
+msgstr "ഡൌണ്‍ലോട് പുരോഗതിയില്‍"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
 msgid  "Download of update paused"
-msgstr ""
+msgstr "ഡൌണ്‍ലോട് തല്‍ക്കാലം നിര്‍ത്തിയിരിക്കുന്നു"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
 msgid  "Click here to resume."
-msgstr ""
+msgstr "വീണ്ടും ആരംഭിക്കുന്നതിനായി ക്ലിക്ക് ചെയ്യുക."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
 msgid  "Download of update stalled"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
+msgstr "ഡൌണ്‍ലോട് നിര്‍ത്തിയിരിക്കുന്നു"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Download of update completed"
-msgstr ""
+msgstr "ഡൌണ്‍ലോട് പുര്‍ത്തിയായി"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
 msgid  "Click here to start the installation."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റലേഷനായി ക്ലിക്ക് ചെയ്യുക."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
 msgid  "Updates for extensions available"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
+msgstr "എക്സ്റ്റെന്‍ഷനുകളുടെ പരിഷ്കരണം ലഭ്യമാണു്"

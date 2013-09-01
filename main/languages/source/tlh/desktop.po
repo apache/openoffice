@@ -36,28 +36,33 @@ msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
+#, fuzzy
 msgid  "Welcome"
-msgstr ""
+msgstr "Qapla'"
 
 #: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
 msgid  "License Agreement"
 msgstr ""
 
 #: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
+#, fuzzy
 msgid  "Personal Data"
-msgstr ""
+msgstr "ghot De'"
 
 #: migration/wizard.src#STR_STATE_USER.STRING.TEXT
+#, fuzzy
 msgid  "User name"
-msgstr ""
+msgstr "lo'wI' pong"
 
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
+#, fuzzy
 msgid  "Online Update"
 msgstr ""
 
 #: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
+#, fuzzy
 msgid  "Registration"
-msgstr ""
+msgstr "ta"
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
@@ -68,23 +73,16 @@ msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\n
 msgstr ""
 
 #: migration/wizard.src#STR_FINISH.STRING.TEXT
+#, fuzzy
 msgid  "~Finish"
-msgstr ""
+msgstr "~rInmoH"
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
 msgstr ""
 
-#: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
-
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
 msgid  "Do you really want to decline?"
-msgstr ""
-
-#: migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FIXEDTEXT.TEXT
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
@@ -96,16 +94,18 @@ msgid  "Please follow these steps to accept the license"
 msgstr ""
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "1."
-msgstr ""
+msgstr "wa'."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr ""
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "2."
-msgstr ""
+msgstr "cha'."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
 msgid  "Click 'Accept' to accept the terms of the Agreement."
@@ -116,27 +116,22 @@ msgid  "Scroll Do~wn"
 msgstr ""
 
 #: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
+#, fuzzy
 msgid  "~Accept"
-msgstr ""
+msgstr "~laj"
 
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
+#, fuzzy
 msgid  "~Decline"
-msgstr ""
+msgstr "~Sab"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Transfer personal data"
-msgstr ""
+msgstr "ghot De' Qay"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FIXEDTEXT.TEXT
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
-
-#: migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CHECKBOX.TEXT
-msgid  "Transfer personal data"
-msgstr ""
-
-#: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FIXEDTEXT.TEXT
-msgid  "Online Update"
 msgstr ""
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
@@ -156,24 +151,28 @@ msgid  "The user name will be used in the document properties, templates and whe
 msgstr ""
 
 #: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~First name"
-msgstr ""
+msgstr "~pong wa'DIch"
 
 #: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Last name"
-msgstr ""
+msgstr "~pong Qav"
 
 #: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
 msgid  "~Initials"
 msgstr ""
 
 #: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Father's name"
-msgstr ""
+msgstr "~vav pong"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Registration"
-msgstr ""
+msgstr "%PRODUCTNAME ta"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FIXEDTEXT.TEXT
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
@@ -201,10 +200,6 @@ msgstr ""
 
 #: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
 msgid  "File Recovery"
-msgstr ""
-
-#: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
 msgstr ""
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
@@ -287,24 +282,13 @@ msgstr ""
 msgid  "The following internal error has occurred: "
 msgstr ""
 
-#: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
-
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
 msgid  "Printing is disabled. No documents can be printed."
-msgstr ""
-
-#: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
-msgstr ""
-
-#: app/desktop.src#STR_TITLE_EXPIRED.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
@@ -328,28 +312,34 @@ msgid  "Read the complete License Agreement displayed above. Accept the License 
 msgstr ""
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.STRING.TEXT
+#, fuzzy
 msgid  "[Enter \"yes\" or \"no\"]:"
-msgstr ""
+msgstr "[<HIja'> <ghobe'> ghap yI'el]:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.STRING.TEXT
+#, fuzzy
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
-msgstr ""
+msgstr "lughbe' mu'meylIj. <HIja'> <ghobe'> ghap yI'el:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
+#, fuzzy
 msgid  "YES"
-msgstr ""
+msgstr "HIja'"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
+#, fuzzy
 msgid  "Y"
-msgstr ""
+msgstr "H"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
+#, fuzzy
 msgid  "NO"
-msgstr ""
+msgstr "ghobe'"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
+#, fuzzy
 msgid  "N"
-msgstr ""
+msgstr "gh"
 
 #: deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.STRING.TEXT
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
@@ -360,8 +350,9 @@ msgid  "ERROR: "
 msgstr ""
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
+#, fuzzy
 msgid  "Unknown"
-msgstr ""
+msgstr "Sovbe'lu'"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
@@ -388,28 +379,34 @@ msgid  "This library name already exists. Please choose a different name."
 msgstr ""
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "Enabling: "
-msgstr ""
+msgstr "chaw':"
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "Disabling: "
-msgstr ""
+msgstr "Qotlh:"
 
 #: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Cannot detect media-type: "
-msgstr ""
+msgstr "MEDIA-Segh tu'laHbe'bogh:"
 
 #: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "This media-type is not supported: "
-msgstr ""
+msgstr "MEDIA-Seghvam Qutlhbe':"
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred while enabling: "
-msgstr ""
+msgstr "chaw'taHvIS qaSpu' Qagh:"
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred while disabling: "
-msgstr ""
+msgstr "QotlhtaHvIS qaSpu' Qagh:"
 
 #: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
 msgid  "Configuration Schema"
@@ -487,24 +484,12 @@ msgstr ""
 msgid  "Synchronizing repository for %NAME extensions"
 msgstr ""
 
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
@@ -576,6 +561,7 @@ msgid  "Error: The status of this extension is unknown"
 msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.STRING.TEXT
+#, fuzzy
 msgid  "Close"
 msgstr ""
 
@@ -600,6 +586,7 @@ msgid  "Show license"
 msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Extension Software License Agreement"
 msgstr ""
 
@@ -633,34 +620,6 @@ msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
 msgid  "Decline"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.MODALDIALOG.TEXT
-msgid  "Extension Software License Agreement"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
 msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
@@ -819,10 +778,6 @@ msgstr ""
 msgid  "This update will be ignored.\n"
 msgstr ""
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
-msgstr ""
-
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
 msgid  "Extension Manager"
 msgstr ""
@@ -832,6 +787,7 @@ msgid  "~Add..."
 msgstr ""
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Check for ~Updates..."
 msgstr ""
 
@@ -840,6 +796,7 @@ msgid  "Get more extensions online..."
 msgstr ""
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Adding %EXTENSION_NAME"
 msgstr ""
 
@@ -855,20 +812,8 @@ msgstr ""
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
 msgstr ""
 
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "Adding %EXTENSION_NAME"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
-msgid  "Check for ~Updates..."
-msgstr ""
-
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
 msgid  "Disable all"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
 msgstr ""
 
 #: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
@@ -888,12 +833,14 @@ msgid  "Cannot find Office installation."
 msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_APP_TITLE_
+#, fuzzy
 msgid  "Setup"
-msgstr ""
+msgstr "cher"
 
 #: ../win32/source/setup/setup.ulf#_APP_PROD_TITLE_
+#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
-msgstr ""
+msgstr "%PRODUCTNAME cher"
 
 #: ../win32/source/setup/setup.ulf#_OUTOFMEM_
 msgid  "Out of Memory"
@@ -904,8 +851,9 @@ msgid  "Setup was unable to find the msi package."
 msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
+#, fuzzy
 msgid  "Setup was cancelled"
-msgstr ""
+msgstr "cherta'be'"
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
@@ -919,21 +867,10 @@ msgstr ""
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr ""
 
-#: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_USAGE_
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
-
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
+#, fuzzy
 msgid  "There is already a setup process running."
-msgstr ""
+msgstr "DaH QaptaH chermeH mIw."
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
 msgid  "An Unknown Error occured!"
@@ -944,109 +881,135 @@ msgid  "Invalid or incomplete profile."
 msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_LANG_
+#, fuzzy
 msgid  "Unknown Language: %d"
-msgstr ""
+msgstr "Hol Sovbe'lu'bogh: %d"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
+#, fuzzy
 msgid  "Chinese (traditional)"
-msgstr ""
+msgstr "CHINA Hol (lurDech pIqaD)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
+#, fuzzy
 msgid  "Czech"
-msgstr ""
+msgstr "CZECH Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
+#, fuzzy
 msgid  "Danish"
-msgstr ""
+msgstr "DENMARK Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
+#, fuzzy
 msgid  "German (Germany)"
-msgstr ""
+msgstr "GERMANY Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
+#, fuzzy
 msgid  "Greek"
-msgstr ""
+msgstr "GREECE Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
+#, fuzzy
 msgid  "English (USA)"
-msgstr ""
+msgstr "USA Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
+#, fuzzy
 msgid  "Spanish (Spain)"
-msgstr ""
+msgstr "SPAIN Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
+#, fuzzy
 msgid  "Finnish"
-msgstr ""
+msgstr "FINLAND Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
+#, fuzzy
 msgid  "French (France)"
-msgstr ""
+msgstr "FRANCE Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
+#, fuzzy
 msgid  "Hebrew"
-msgstr ""
+msgstr "HEBREW Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
+#, fuzzy
 msgid  "Hungarian"
-msgstr ""
+msgstr "HUNGARY Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
+#, fuzzy
 msgid  "Italian (Italy)"
-msgstr ""
+msgstr "ITALIAN Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
+#, fuzzy
 msgid  "Japanese"
-msgstr ""
+msgstr "JAPAN Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
+#, fuzzy
 msgid  "Korean"
-msgstr ""
+msgstr "KOREA Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
+#, fuzzy
 msgid  "Dutch (Netherlands)"
-msgstr ""
+msgstr "NETHERLANDS Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
+#, fuzzy
 msgid  "Norwegian (Bokmål)"
-msgstr ""
+msgstr "BOKMAAL Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
+#, fuzzy
 msgid  "Polish"
-msgstr ""
+msgstr "POHLAND Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
+#, fuzzy
 msgid  "Portuguese (Brazil)"
-msgstr ""
+msgstr "BRAZIL PORTUGAL Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
+#, fuzzy
 msgid  "Russian"
-msgstr ""
+msgstr "RUSSIA Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
 msgid  "Slovak"
 msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
+#, fuzzy
 msgid  "Swedish (Sweden)"
-msgstr ""
+msgstr "SWEDEN Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
+#, fuzzy
 msgid  "Thai"
-msgstr ""
+msgstr "THAI Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
+#, fuzzy
 msgid  "Turkish"
-msgstr ""
+msgstr "TURKEY Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
+#, fuzzy
 msgid  "Estonian"
-msgstr ""
+msgstr "ESTONIA Hol"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
+#, fuzzy
 msgid  "Chinese (Simplified)"
-msgstr ""
+msgstr "CHINA Hol (napmoHlu'bogh)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
+#, fuzzy
 msgid  "Portuguese (Portugal)"
-msgstr ""
+msgstr "PORTUGAL PORTUGAL Hol"

@@ -175,18 +175,6 @@ msgstr ""
 msgid  "Microsoft Word 97/2000/XP Template"
 msgstr ""
 
-#: config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO_CALC_UOF2.UINAME
-msgid  "Uniform Office Format 2 spreadsheet"
-msgstr ""
-
-#: config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO_IMPRESS_UOF2.UINAME
-msgid  "Uniform Office Format 2 presentation"
-msgstr ""
-
-#: config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO_WRITER_UOF2.UINAME
-msgid  "Uniform Office Format 2 Text"
-msgstr ""
-
 #: config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#STARCALC_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarCalc 3.0 Template"
 msgstr ""
@@ -229,30 +217,6 @@ msgstr ""
 
 #: config/fragments/filters/StarOffice_XML__Base__ui.xcu#STAROFFICE_XML_(BASE).UINAME
 msgid  "ODF Database"
-msgstr ""
-
-#: config/fragments/filters/StarOffice_XML__Calc__ui.xcu#STAROFFICE_XML_(CALC).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
-msgstr ""
-
-#: config/fragments/filters/StarOffice_XML__Chart__ui.xcu#STAROFFICE_XML_(CHART).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
-msgstr ""
-
-#: config/fragments/filters/StarOffice_XML__Draw__ui.xcu#STAROFFICE_XML_(DRAW).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
-msgstr ""
-
-#: config/fragments/filters/StarOffice_XML__Impress__ui.xcu#STAROFFICE_XML_(IMPRESS).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
-msgstr ""
-
-#: config/fragments/filters/StarOffice_XML__Math__ui.xcu#STAROFFICE_XML_(MATH).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
-msgstr ""
-
-#: config/fragments/filters/StarOffice_XML__Writer__ui.xcu#STAROFFICE_XML_(WRITER).UINAME
-msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
 msgstr ""
 
 #: config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#STARWRITER_3.0_VORLAGE/TEMPLATE.UINAME
@@ -551,10 +515,6 @@ msgstr ""
 msgid  "Microsoft Excel 2003 XML"
 msgstr ""
 
-#: config/fragments/types/calc_NSO_UOF2.xcu#CALC_NSO_UOF2.UINAME
-msgid  "Uniform Office Format 2 spreadsheet"
-msgstr ""
-
 #: config/fragments/types/chart8.xcu#CHART8.UINAME
 msgid  "Chart 8"
 msgstr ""
@@ -573,10 +533,6 @@ msgstr ""
 
 #: config/fragments/types/impress8.xcu#IMPRESS8.UINAME
 msgid  "Impress 8"
-msgstr ""
-
-#: config/fragments/types/impress_NSO_UOF2.xcu#IMPRESS_NSO_UOF2.UINAME
-msgid  "Uniform Office Format 2 presentation"
 msgstr ""
 
 #: config/fragments/types/math8.xcu#MATH8.UINAME
@@ -601,10 +557,6 @@ msgstr ""
 
 #: config/fragments/types/writer_MS_Word_2003_XML.xcu#WRITER_MS_WORD_2003_XML.UINAME
 msgid  "Microsoft Word 2003 XML"
-msgstr ""
-
-#: config/fragments/types/writer_NSO_UOF2.xcu#WRITER_NSO_UOF2.UINAME
-msgid  "Uniform Office Format 2 text"
 msgstr ""
 
 #: config/fragments/types/writerweb8_writer_template.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
@@ -673,10 +625,6 @@ msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CHECKBOX.TEXT
 msgid  "~Reduce image resolution"
-msgstr ""
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_GENERAL.FIXEDLINE.TEXT
-msgid  "General"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CHECKBOX.TEXT
@@ -1003,24 +951,8 @@ msgstr ""
 msgid  "PDF Options"
 msgstr ""
 
-#: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_GENER.PAGEITEM.TEXT
-msgid  "General"
-msgstr ""
-
-#: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_OPNFTR.PAGEITEM.TEXT
-msgid  "Initial View"
-msgstr ""
-
-#: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_VPREFER.PAGEITEM.TEXT
-msgid  "User Interface"
-msgstr ""
-
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_LINKS.PAGEITEM.TEXT
 msgid  "Links"
-msgstr ""
-
-#: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_SECURITY.PAGEITEM.TEXT
-msgid  "Security"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.MODALDIALOG.TEXT
@@ -1303,24 +1235,12 @@ msgstr ""
 msgid  "XSLT for export"
 msgstr ""
 
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_EXPORT_XSLT_BROWSE.PUSHBUTTON.TEXT
-msgid  "Browse..."
-msgstr ""
-
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
 msgid  "XSLT for import"
 msgstr ""
 
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_XSLT_BROWSE.PUSHBUTTON.TEXT
-msgid  "Browse..."
-msgstr ""
-
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
 msgid  "Template for import"
-msgstr ""
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_TEMPLATE_BROWSE.PUSHBUTTON.TEXT
-msgid  "Browse..."
 msgstr ""
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT

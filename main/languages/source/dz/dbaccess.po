@@ -33,191 +33,191 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_TRIED_OPEN_TABLE.STRING.TEXT
 msgid  "Tried to open the table $name$."
-msgstr ""
+msgstr "$མིང་$ སྦེ་མི་ཐིག་ཁྲམ་ཁ་ཕྱེ་ནི་དཔའ་བཅམ་ཅི།"
 
 #: core/resource/strings.src#RID_STR_CONNECTION_INVALID.STRING.TEXT
 msgid  "No connection could be established."
-msgstr ""
+msgstr "མཐུད་ལམ་ཅིག་ཡང་གཞི་འཛུགས་འབད་མ་ཚུགས།"
 
 #: core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.STRING.TEXT
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ $མིང་$ འདི་ཧེ་མ་ལས་རང་འདུག འདི་ བཙགས་ཡོདཔ་ལས་བརྟེན་་ མཐོང་མི་ཚུགས།"
 
 #: core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.STRING.TEXT
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "ཁྱོད་ལུ་ དངོས་པོ་གཞི་བཞག་ཡོད་པའི་གནས་སྡུད་རིམ་སྒྲིག་འབད་ནི་གི་ འབྲི་ནིའི་འཛུལ་སྤྱོད་མེད།"
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.STRING.TEXT
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "ཕྱིའི་གནས་སྡུད་འབྱུང་ཁུངས་ལུ་ མཐུད་ལམ་གཞི་འཛུགས་འབད་མ་ཚུགས། མ་ཤེས་པའི་འཛོལ་བ་ཅིག་བྱུང་ནུག འདྲེན་བྱེད་་སྐྱོན་ཅན་ཅིག་ཨིན་མ་འོང་ནི་མས།"
 
 #: core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "ཕྱིའི་གནས་སྡུད་འབྱུང་ཁུངས་ལུ་ མཐུད་ལམ་གཞི་འཛུགས་འབད་མ་ཚུགས། བྱིན་ཡོད་པའི་ ཡུ་ཨར་ཨེལ་ལུ་ SDBC འདྲེན་བྱེད་འཚོལ་མ་ཐོབ།"
 
 #: core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.STRING.TEXT
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "ཕྱིའི་གནས་སྡུད་འབྱུང་ཁུངས་ལུ་ མཐུད་ལམ་གཞི་འཛུགས་འབད་མ་ཚུགས། SDBC འདྲེན་བྱེད་ཀྱི་འཛིན་སྐྱོང་པ་མངོན་གསལ་འབད་མ་བཏུབ།"
 
 #: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "འབྲི་ཤོག"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "སྙན་ཞུ་"
 
 #: core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.STRING.TEXT
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "གནས་སྡུད་འབྱུང་ཁུངས་སྲུངས་བཞག་མིན་འདུག གནས་སྡུད་འབྱུང་ཁུངས་སྲུངས་བཞག་འབད་ནིའི་དོན་་ལུ་ Xབསྲུང་བཞག་བཏུབ་པའི་ངོས་འདྲ་བ་འདི་ལག་ལེན་འཐབ་གནང།"
 
 #: core/resource/strings.src#RID_STR_ONLY_QUERY.STRING.TEXT
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "བྱིན་ཡོད་པའི་བརྡ་བཀོད་འདི་ སེལ་འཐུ་གསལ་བཤད་ཅིག་མེན་མས།\nའདྲི་དཔྱད་ཚུ་རྐྱངམ་ཅིག་ཆོག"
 
 #: core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.STRING.TEXT
 msgid  "No values were modified."
-msgstr ""
+msgstr "གནས་གོང་ཅིག་ཡང་ལེགས་བཅོས་མ་གྲུབ།"
 
 #: core/resource/strings.src#RID_STR_NO_XROWUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "གནས་གོང་ཚུ་བཙུགསམ་བཏུབ། Xགྲལ་ཐིག་དུས་མཐུན་ ངོས་འདྲ་བ་འདི་ གྲུབ་འབྲས་ཆ་ཚན་གྱིས་རྒྱབ་སྐྱོར་མིན་འདུག"
 
 #: core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.STRING.TEXT
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "གནས་གོང་ཚུ་བཙུགསམ་བཏུབ། Xགྲུབ་འབྲས་ཆ་ཚན་དུས་མཐུས་མཐུན་ ངོས་འདྲ་བ་འདི་ གྲུབ་འབྲས་ཆ་ཚན་གྱིས་རྒྱབ་སྐྱོར་མིན་འདུག"
 
 #: core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.STRING.TEXT
 msgid  "Values could not be modified, due to a missing condition statement."
-msgstr ""
+msgstr "བརློག་སྟོརཞུགས་ཡོད་པའི་གསལ་བཤད་གནས་སྟངས་ལས་བརྟེན་ ་གནས་གོང་ཚུ་ལེག་བཅོས་གྲུབ་མ་བཏུབ།"
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_ADD.STRING.TEXT
 msgid  "The adding of columns is not supported."
-msgstr ""
+msgstr "ཀེར་ཐིག་ཚུ་ ཁ་སྐོང་རྐྱབ་ནི་ལུ་ རྒྱབ་སྐྱོར་མེད།"
 
 #: core/resource/strings.src#RID_STR_NO_COLUMN_DROP.STRING.TEXT
 msgid  "The dropping of columns is not supported."
-msgstr ""
+msgstr "ཀེར་ཐིག་ཚུ་སར་འཇོག་འབད་ནི་ལུ་རྒྱབ་སྐྱོར་མེད།"
 
 #: core/resource/strings.src#RID_STR_NO_CONDITION_FOR_PK.STRING.TEXT
 msgid  "The WHERE condition could not be created for the primary key."
-msgstr ""
+msgstr "WHERE གནས་སྟངས་འདི་ གཞི་རིམ་ལྡེ་མིག་གིས་གསར་བསྐྲུན་འབད་མ་ཚུགས།"
 
 #: core/resource/strings.src#RID_STR_COLUMN_UNKNOWN_PROP.STRING.TEXT
 msgid  "The column does not support the property '%value'."
-msgstr ""
+msgstr "ཀེར་ཐིག་འདི་གིས་ རྒྱུ་དངོས་ '%value' འདི་རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.STRING.TEXT
 msgid  "The column is not searchable!"
-msgstr ""
+msgstr "ཀེར་ཐིག་འདི་འཚོལ་ཞིབ་འབད་མི་བཏུབ།"
 
 #: core/resource/strings.src#RID_STR_NOT_SEQUENCE_INT8.STRING.TEXT
 msgid  "The value of the columns is not of the type Sequence<sal_Int8>."
-msgstr ""
+msgstr "ཀེར་ཐིག་ཚུ་གི་གནས་གོང་འདི་ འབྱུང་རིམ་<sal_Int8>གི་གྲས་མེན།"
 
 #: core/resource/strings.src#RID_STR_COLUMN_NOT_VALID.STRING.TEXT
 msgid  "The column is not valid."
-msgstr ""
+msgstr "ཀེར་ཐིག་འདི་ཆ་གནས་མེད།"
 
 #: core/resource/strings.src#RID_STR_COLUMN_MUST_VISIBLE.STRING.TEXT
 msgid  "The column '%name' must be visible as a column."
-msgstr ""
+msgstr "ཀེར་ཐིག་ '%name' འདི་ ཀེར་ཐིག་བཟུམ་སྦེ་མཐོང་དགོཔ་ཨིན།"
 
 #: core/resource/strings.src#RID_STR_NO_XQUERIESSUPPLIER.STRING.TEXT
 msgid  "The interface XQueriesSupplier is not available."
-msgstr ""
+msgstr "ངོས་འདྲ་བ་ Xའདྲི་དཔྱད་མཁོ་སྤྲོད་འབད་མི་འདི་ ཐོབ་མི་ཚུགས།"
 
 #: core/resource/strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.STRING.TEXT
 msgid  "The driver does not support this function."
-msgstr ""
+msgstr "འདྲེན་བྱེད་འདི་གིས་ ལས་འགན་འདི་རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: core/resource/strings.src#RID_STR_NO_ABS_ZERO.STRING.TEXT
 msgid  "An 'absolute(0)' call is not allowed."
-msgstr ""
+msgstr "'absolute(0)' བརྒྱུད་འཕྲིན་འདི་མི་ཆོག"
 
 #: core/resource/strings.src#RID_STR_NO_RELATIVE.STRING.TEXT
 msgid  "Relative positioning is not allowed in this state."
-msgstr ""
+msgstr "གནས་ལུགས་འདི་ནང་ འབྲེལ་བའི་གནས་ས་བཟོ་མི་ཆོག"
 
 #: core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.STRING.TEXT
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "གྲུབ་འབྲས་ཆ་ཚན་འདི་་གྲལ་ཐིག་མཇུག་གི་མཐའ་མར་ གནས་ས་བཟོ་ཚར་བའི་ཤུལ་ལས་ གྲལ་ཐིག་གཅིག་ཡང་ ཡང་སེལ་འབད་མི་བཏུབ།"
 
 #: core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.STRING.TEXT
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "གྲལ་ཐིག་བཙུགས་ནི་ནང་ གྲུབ་འབྲས་ཆ་ཚན་འདི་ཧེ་མ་ མ་བཙུགས་པ་ཅིན་ གྲལ་ཐིག་གསརཔ་ཅིག་བཙུགས་མི་བཏུབ།"
 
 #: core/resource/strings.src#RID_STR_NO_UPDATEROW.STRING.TEXT
 msgid  "A row cannot be modified in this state"
-msgstr ""
+msgstr "གནས་ལུགས་འདི་ནང་ གྲལ་ཐིག་གཅིག་ཡང་ལེགས་བཅོས་གྲུབ་མི་ཚུགས་"
 
 #: core/resource/strings.src#RID_STR_NO_DELETEROW.STRING.TEXT
 msgid  "A row cannot be deleted in this state."
-msgstr ""
+msgstr "གནས་ལུགས་འདི་ནང་ གྲལ་ཐིག་གཅིག་ཡང་བཏོན་གཏང་མི་ཚུགས།"
 
 #: core/resource/strings.src#RID_STR_NO_TABLE_RENAME.STRING.TEXT
 msgid  "The driver does not support table renaming."
-msgstr ""
+msgstr "འདྲེན་བྱེད་འདི་གིས་ ཐིག་ཁྲམ་བསྐྱར་མིང་བཏགས་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions."
-msgstr ""
+msgstr "འདྲེན་བྱེད་འདི་གིས་ ཀེར་ཐིག་འགྲེལ་བཤད་ཚུ་ལེགས་བཅོས་འབད་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "མིང་སོར་བ་གིས་ འདྲེན་བྱེད་དེའི་ ཀེར་ཐིག་འགྲེལ་བཤད་ཚུ་ལེགས་བཅོས་འབད་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.STRING.TEXT
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "ཟུར་ཐོ་སོར་བ་གིས་ འདྲེན་བྱེད་དེའི་ ཀེར་ཐིག་འགྲེལ་བཤད་ཚུ་ལེགས་བཅོས་འབད་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "ཡིག་སྣོད་ \"$file$\" འདི་མིན་ནུག"
 
 #: core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no table named \"$table$\"."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ \"$table$\" ཟེར་མི་འདི་མིན་་འདུག"
 
 #: core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.STRING.TEXT
 msgid  "There exists no query named \"$table$\"."
-msgstr ""
+msgstr "འདྲི་དཔྱད་ \"$table$\" ཟེར་མི་འདི་མིན་འདུག"
 
 #: core/resource/strings.src#RID_STR_CONFLICTING_NAMES.STRING.TEXT
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་ནང་ལུ་ ད་ལྷོ་གནས་པའི་འདྲི་དཔྱད་ཀྱི་མིང་ཚུ་དང་མི་མཐུན་པའི་ཐིག་ཁྲམ་ཚུ་གི་མིང་འདུག འདྲི་དཔྱད་དང་ཐིག་ཁྲམ་ཚུ་ ལག་ལེན་ཧྲིལ་བུ་འཐབ་ནིའི་དོན་ལུ་ ནི་ཚུ་གི་མིང་སོ་སོ་བཞག་དགོཔ་ཨིན།"
 
 #: core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.STRING.TEXT
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "འཛོལ་བ་འདི་ལུ་རྒྱུ་རྐྱེན་འབད་མི་ SQL བརྡ་བཀོད་འདི་ :\n:\n$བརྡ་བཀོད་$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The SQL command does not describe a result set."
-msgstr ""
+msgstr "SQL བརྡ་བཀོད་འདི་གིས་ གྲུབ་འབྲས་ཆ་ཚན་གཅིག་ཡང་འགྲེལ་བཤད་མི་འབད།"
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
 msgid  "The name must not be empty."
-msgstr ""
+msgstr "མིང་འདི་སྟོངམ་འོང་ནི་མི་འོང་།"
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
 msgid  "The container cannot contain NULL objects."
-msgstr ""
+msgstr "འཛིན་སྣོད་འདི་ནང་ NULL དངོས་པོ་ཚུ་བཀང་མི་ཚུགས།"
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There already is an object with the given name."
-msgstr ""
+msgstr "མིང་འདི་བཟུམ་མིའི་དངོས་པོ་ཅིག་ཧེ་མ་ལས་རང་འདུག"
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
 msgid  "This object cannot be part of this container."
-msgstr ""
+msgstr "དངོས་པོ་འདི་ འཛིན་སྣོད་འདི་གི་ཡན་ལག་འོང་མི་སྲིད།"
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
 msgid  "The object already is, with a different name, part of the container."
-msgstr ""
+msgstr "དངོས་པོ་འདི་ ཧེ་མ་ལས་རང་ མིང་སོ་སོ་སྦེ་ འཛིན་སྣོད་འདི་གི་ཡན་ལག་ཨིན་པས།"
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
 msgid  "Unable to find the document '$name$'."
-msgstr ""
+msgstr "ཡིག་ཆ་ '$name$' འདི་འཚོལ་མ་ཐོབ།"
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
 msgid  "Could not save the document to $location$:\n$message$"
@@ -229,7 +229,7 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
 msgid  "There exists no folder named \"$folder$\"."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ \"$table$\" ཟེར་མི་འདི་མིན་་འདུག"
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
 msgid  "Cannot delete the before-first or after-last row."
@@ -305,331 +305,311 @@ msgstr ""
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database ~name"
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་གྱི་མིང་(~n)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
 msgid  "User settings"
-msgstr ""
+msgstr "ལག་ལེན་པའི་སྒྲིག་སྟངས་ཚུ་"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
 msgid  "~Control user"
-msgstr ""
+msgstr "ལག་ལེན་པ་ཚད་འཛིན་(~C)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
 msgid  "~Administrator"
-msgstr ""
+msgstr "བདག་སྐྱོང་པ་(~A)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
 msgid  "~Domain user"
-msgstr ""
+msgstr "ཌོ་མེན་ལག་ལེན་པ་(~D)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
 msgid  "P~assword..."
-msgstr ""
+msgstr "ཆོག་ཡིག་(~a)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
 msgid  "~Password..."
-msgstr ""
+msgstr "ཆོག་ཡིག་(~P)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
 msgid  "Passwo~rd..."
-msgstr ""
+msgstr "ཆོག་ཡིག་(~r)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
 msgid  "~Backup file"
-msgstr ""
+msgstr "ཡིག་སྣོད་རྒྱབ་ཐག་(~B)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
 msgid  "..."
-msgstr ""
+msgstr "..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
 msgid  "Database settings"
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་གྱི་སྒྲིག་སྟངས་ཚུ་"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE"
-msgstr ""
+msgstr "S~YSDEVSPACE(~Y)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "TRANSACTI~ONLOG"
-msgstr ""
+msgstr "TRANSACTI~ONLOG(~O)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE"
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
-#: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
+msgstr "DATAD~EVSPACE(~E)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
 msgid  "Transaction ~file (MB)"
-msgstr ""
+msgstr "ཡིག་སྣོད(MB)སྤྲོད་ལེན་(~f)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data~base size (MB)"
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་གྱི་ཚད་(MB)(~b)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "གནས་སྡུད་བར་བཟེད་ཚད་(MB)(~b)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
 msgid  "Backup file information"
-msgstr ""
+msgstr "རྒྱབ་ཐག་ཡིག་སྣོད་ཀྱི་བརྡ་དོན་"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
 msgid  "Create New Adabas D Database"
-msgstr ""
+msgstr "ཨ་ཌ་བཱསི་ D གི་གནས་སྡུད་གསརཔ་ཅིག་གསར་བསྐྲུན་འབད་"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
 msgid  "No entry could be written in the configuration file."
-msgstr ""
+msgstr "རིམ་སྒྲིག་ཡིག་སྣོད་ནང་ཐོ་བཀོད་གསརཔ་ཅིག་ཡང་འབྲི་མི་ཚུགས་"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
 msgid  "An error occurred as the DB files were being created."
-msgstr ""
+msgstr "DB ཡིག་སྣོད་ཚུ་གསར་བསྐྲུན་འབདཝ་ཅིག་ འཛོལ་བ་ཅིག་བྱུང་ཡི།"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
 msgid  "An error occurred as the system tables were being created."
-msgstr ""
+msgstr "རིམ་ལུགས་ཐིག་ཁྲམ་ཚུ་གསར་བསྐྲུན་འབདཝ་ཅིག་འཛོལ་བ་ཅིག་བྱུང་ཡོདཔ།"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
 msgid  "The backup file entered does not exist."
-msgstr ""
+msgstr "རྒྱབ་ཐག་ཡིག་སྣོད་བཙུགས་མི་འདི་མིན་འདུག"
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
-msgstr ""
+msgstr "ཡིག་སྣོད་ཡོངས་རྫོགས་ཁྱད་ཆོས་ཚང་མི་འདི་ \\'#\\' ཡིག་འབྲུ་ཚུ་ལས་མི་རིང་།"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
 msgid  "The administrator and the control user cannot have the same name!"
-msgstr ""
+msgstr "བདག་སྐྱོང་པ་དང་ཚད་འཛིན་ལག་ལེན་པ་གཉིས་ཀྱི་མིང་ཅོག་གཅིགཔ་མི་བཏུབ!"
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
 msgid  "No name has been entered for the $name$ file!"
-msgstr ""
+msgstr "ཡིག་སྣོད་ $name$ གི་དོན་ལུ་ མིང་གཅིག་ཡང་བཙུགས་ཏེ་མིན་འདུག!"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
 msgid  "You have to have administrator rights to create a new database!"
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་གསརཔ་གསར་བསྐྲུན་འབད་ནིའི་དོན་ལུ་ ཁྱོད་ལུ་བདག་སྐྱོང་པའི་དབང་ཆ་དགོ་!"
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
 msgid  "The specified file name or directory does not exist."
-msgstr ""
+msgstr "གསལ་བཀོད་འབད་མི་ ཡིག་སྣོད་མིང་ ཡང་ན་ སྣོད་དེབ་འདི་མིན་འདུག"
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
 msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "གནས་སྡུད་གསརཔ་གཅིག་ཡང་གསར་བསྐྲུན་འབད་མི་བཏུབ།\nཁྱོད་རའི་ཨ་ཌ་བཱསི་Dགཞི་བཙུགས་ ལྷག་པར་དུ་ \"DBROOT\" དང་ \"DBWORK\" འགྱུར་ཅན་འདི་ཞིབ་དཔྱད་མཛད་གནང་།"
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
+msgstr "ཉེན་བརྡ!"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
 msgid  "Creating database files."
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་ཡིག་སྣོད་ཚུ་ གསར་བསྐྲུན་འབད་དོ།"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
 msgid  "Creating database configuration file."
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་རིམ་སྒྲིག་ཡིག་སྣོད་ གསར་བསྐྲུན་འབད་དོ།"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
 msgid  "Starting database for the first time."
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་འགོ་དང་པ་འགོ་བཙུགས་དོ།"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
 msgid  "The name entered already exists."
-msgstr ""
+msgstr "བཙུགས་མི་མིང་འདི་ ཧེ་མ་ལས་རང་འདུག"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་གྱི་དོན་ལུ་ སྔོན་སྒྲིག་མིང་ཅིག་གཞི་སྒྲིག་འབད་མ་ཚུགས། རིང་ཚད་ཡོངས་བསྡོམས་ ཡིག་འབྲུ་ ༤༠ ལས་ལྷགཔ་ཨིན།"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་གྱི་དོན་ལུ་ སྔོན་སྒྲིག་མིང་ཅིག་གཞི་སྒྲིག་འབད་མ་ཚུགས། ནི་ནང་ འབྲི་ནིའི་འཛུལ་སྤྱོད་འབད་ནི་མིན་འདུག"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "ད་ལྟོའི་གནས་སྡུད་གཞི་རྟེན་འདི་ གཞི་བསྒྱུར་འབད་དགོཔ་ཅིག་འདུག། ཚད་འཛིན་ལག་ལེན་པ་དང་ཆོག་ཡིག་བཙུགས་གནང་།"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "ཆོག་ཡིག་ནང་ས་སྟོང་བཞག་མི་ཆོག ཆོག་ཡིག་གསརཔ་ཅིག་བཙུགས་གནང་།"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
 msgid  "Database Document Macro Migration"
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་ཡིག་ཆ་མེཀ་རོ་གནས་སྤོ་"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
 msgid  "Prepare"
-msgstr ""
+msgstr "གྲ་སྒྲིག་འབད་"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
 msgid  "Backup Document"
-msgstr ""
+msgstr "རྒྱབ་ཐག་ཡིག་ཆ་"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
 msgid  "Migrate"
-msgstr ""
+msgstr "གནས་སྤོ་"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr ""
+msgstr "བཅུད་དོན་"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Welcome to the Database Macro Migration Wizard"
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་ཡིག་ཆ་མེཀ་རོ་གནས་སྤོ་ཝི་ཛརཌི་ལུ་བྱོན་པ་ལེགས་སོ"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "ཝི་ཛརཌི་འདི་གིས་ ཁྱོད་རའི་མེཀ་རོ་ཚུ་གནས་སྤོ་ནི་ལུ་ལམ་སྟོན་འབད་འོང་། \n\nའདི་འབད་ཚར་བའི་ཤུལ་ལས་ ད་ལྟོའི་གནས་སྡུད་གཞི་རྟེན་ཡིག་ཆ་ནང་ འབྲི་ཤོག་དང་སྙན་ཞུ་སྦེ་ གནས་འདྲེན་འབད་ཡོད་པའི་མེཀ་རོ་ཚུ་ ཡིག་ཆ་འདི་ནང་རང་སྤོ་སྟེ་སྡོད་འོང་། སློབ་ཚན་འདི་ནང་ དཔེ་མཛོད་ཚུ་ མཁོ་ཆེ་དང་འཁྲིལ་ཏེ་ མིང་བཏགས་འོང་།\n\nཁྱོད་ཀྱི་འབྲི་ཤོག་དང་སྙན་ཞུ་ཚུ་ལུ་ མེཀ་རོ་ནི་ཚུ་ལུ་ ཁུངས་གཏུགས་ཡོད་པ་ཅིན་ ནི་ཚུ་ འོས་འབབ་དང་འཁྲིལ་ཏེ་ བདེ་སྒྲིག་བཟོ་བཞག་འོང་།\n\nགནས་སྤོ་འགོ་མ་བཙུགས་པའི་ཧེ་མ་ ཡིག་ཆ་ལུ་དབང་བའི་ འབྲི་ཤོག་ སྙན་ཞུ་ འདྲི་དཔྱད་དང་ཐིག་ཁྲམ་ཚུ་ ཆ་མཉམ་ཁ་བསྡམ་དགོ འདི་འབད་ནིའི་དོན་ལུ་ \"ཤུལམམ་\" གུ་ཨེབ་གཏང་འབད།"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "དངོས་པ་ཚུ་ག་ར་སྦེ་འདི་ཁ་བསྡམ་མི་བཏུབ། ལག་ཐོག་ཁ་བསྡམ་ཏེ་ ཝི་ཛརཌི་འདི་ལོག་འགོ་བཙུགས་གནང་།"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Backup your Document"
-msgstr ""
+msgstr "ཁྱོད་རའི་ཡིག་ཆ་རྒྱབ་ཐག་འབད་"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "གནས་སྤོ་གི་ཧེ་མ་ ཁྱོད་གནས་ལུགས་འདི་ནང་མ་གཏངམ་ལས་ གནས་སྡུད་གཞི་རྟེན་ཡིག་ཆ་འདི་ ཁྱོད་རའི་གདམ་ཁ་དང་འཁྲིལ་ རྒྱབ་ཐག་འབད་བཞག་འོང། ཝི་ཛརཌི་གིས་ བསྒྱུར་བཅོས་འབད་ཚད་ཅིགཔ་ ཡིག་ཆ་ངོ་མ་འདི་ལུ་ཡང་འབད་བཞག་ནི་དང་ རྒྱབ་ཐག་འབད་མི་འདི་མ་གདོགས་པར་བཞགཔ་ཨིན།"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
 msgid  "Save To:"
-msgstr ""
+msgstr "འདི་ནང་སྲུངས་:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
 msgid  "Browse ..."
-msgstr ""
+msgstr "བརྡ་འཚོལ་"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "ཁྱོད་རའི་ཡིག་ཆ་གི་འདྲ་བསྲུང་ནིའི་དོན་ལུ་དང་ གནས་སྤོ་ནིའི་དོན་ལུ་ \"ཤུལ་མམ་\" གུ་ཨེབ་གཏང་འབད།"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Migration Progress"
-msgstr ""
+msgstr "གནས་སྤོ་ཡར་འཕེལ་"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་འདི་ནང་ ད་ལྟོ་བཟོ་སྦྱོར་འབད་ཡོད་པའི་ $forms$ འབྲི་ཤོག་(ཚུ་) དང་ $reports$ སྙན་ཞུ་(ཚུ་) ཡོདཔ་ཨིན།"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
 msgid  "Current object:"
-msgstr ""
+msgstr "ད་ལྟོའི་དངོས་པོ་:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Current progress:"
-msgstr ""
+msgstr "ད་ལྟོའི་ཡར་འཕེལ་:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Overall progress:"
-msgstr ""
+msgstr "སྤྱིར་བཏང་གི་ཡརའཕེལ་:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
 msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "$overall$ གི་ཡིག་ཆ་ $current$  "
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
-
-#: ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Summary"
-msgstr ""
+msgstr "འབྲི་ཤོག་དང་སྙན་ཞུ་ཚུ་ཆ་མཉམ་བཟོ་སྦྱོར་འབད་ནི་ལུ་མཐར་འཁྱོལ་བྱུང་ཡོད་པ། བཅུད་དོན་ཁ་གསལ་སྟོན་ནིའི་དོན་་ལུ་ \"ཤུལ་མམ་\" གུ་ཨེབ་གཏང་འབད།"
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "གནས་སྤོ་མཐར་འཁྱོལ་བྱུང་ཡི། ཁྱོད་ཀྱི་ཡིག་ཆ་ནང་བྱ་བ་ཚུ་བྱུང་ཡོད་པའི་དྲན་དེབ་འོག་ལུ་བཀོད་དེ་ཡོད།"
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "གནས་སྤོ་འདི་མཐར་འཁྱོལ་ཅིག་མ་བྱུང་། ཁ་གསལ་གྱི་དོན་ལུ་ འོག་ལུ་ཡོད་པའི་གནས་སྤོ་དྲན་དེབ་འདི་བརྟག་དཔྱད་འབད།"
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
 msgid  "Form '$name$'"
-msgstr ""
+msgstr "འབྲི་ཤོག་ '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
 msgid  "Report '$name$'"
-msgstr ""
-
-#: ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.STRING.TEXT
-msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "སྙན་ཞུ་ '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
 msgid  "Database Document"
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་ཡིག་ཆ་"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
 msgid  "saved copy to $location$"
-msgstr ""
+msgstr "སྲུངས་ཡོད་པའི་འདྲ་ $location$ ལུ་"
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
 msgid  "migrated $type$ library '$old$' to '$new$'"
-msgstr ""
+msgstr "གནས་སྤོ་ཡོད་པའི་ $type$ མཛོད་ '$old$' འདི་ '$new$' ལུ་"
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
 msgid  "$type$ library '$library$'"
-msgstr ""
+msgstr "$type$ མཛོད་ '$library$'"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
 msgid  "migrating libraries ..."
-msgstr ""
+msgstr "གནས་སྤོ་མཛོད་ཚུ་"
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic"
-msgstr ""
+msgstr "%PRODUCTNAME གཞི་རིམ་"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
 msgid  "JavaScript"
-msgstr ""
+msgstr "ཇ་བ་ཡིག་ཚུགས་"
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
 msgid  "BeanShell"
-msgstr ""
+msgstr "བིན་ཤལ་"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
 msgid  "Java"
-msgstr ""
+msgstr "ཇ་བ་"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
 msgid  "Python"
-msgstr ""
+msgstr "པ་ཡི་ཐཱོན་"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
 msgid  "dialog"
-msgstr ""
+msgstr "ཌའི་ལོག་"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
 msgid  "Error(s)"
-msgstr ""
+msgstr "འཛོལ་བ་(ཚུ་)"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
 msgid  "Warnings"
-msgstr ""
+msgstr "ཉེན་བརྡ་ཚུ་"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
 msgid  "caught exception: "
-msgstr ""
+msgstr "དམིགས་བསལ་བདའ་ཟུན་ཡོདཔ་:_"
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "ཡིག་ཆའི་གནས་ཁོངས་མེན་པར་ ཁྱོད་ཀྱིས་རྒྱབ་ཐག་གནས་ཁོངས་ཅིག་གདམ་ཁ་རྐྱབ་དགོ"
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
 msgid  "Invalid number of initialization arguments. Expected 1."
@@ -645,275 +625,296 @@ msgstr ""
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Table"
 
 #: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "Query"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "མཐུད་ལམ་བྱིན་མི་འདི་ ཆ་འཇོག་མེད་པའི་ འདྲིདཔྱད་དང་/ཡང་ན་ ཐིག་ཁྲམ་ཚུ་མཁོ་སྤྲོད་ཨིན་མས།"
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
 msgid  "The given object is no table object."
-msgstr ""
+msgstr "དངོས་པོ་བྱིན་མི་འདི་ ཐིག་ཁྲམ་དངོས་པོ་མེན་པས།"
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "སྣ་སྡུད་ཁྱད་རྣམ་ནུས་ཅན་མེན་པས་ com.sun.star.sdb.tools.CompositionType ལས་གནས་གོང་དགོ"
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "ལྕོགས་མིན་བརྡ་བཀོད་ཀྱི་དབྱེ་བ་-com.sun.star.sdb གི་ནང་ལས་ ཐིག་ཁྲམ་དང་འདྲི་དཔྱད་བཟུམ་མའི་བརྡ་བཀོད་ཀྱི་དབྱེ་རྐྱངམ་ཅིག་བཀོད་ཆོག།"
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
 msgid  "Create Form in Design View..."
-msgstr ""
+msgstr "བཀོད་སྒྲིག་མཐོང་སྣང་ནང་ནང་ལུ་ འབྲི་ཤོག་གསར་བསྐྲུན་འབད་་་་་1`"
 
 #: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Form..."
-msgstr ""
+msgstr "འབྲི་ཤོག་གསར་བསྐྲུན་འབད་ནིའི་དོན་ལུ་ ཝི་ཛརཌི་ལག་ལེན་འཐབ་་་་་"
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
-msgstr ""
+msgstr "སྙན་ཞུ་གསར་བསྐྲུན་འབད་ནིའི་དོན་ལུ་ ཝི་ཛརཌི་ལག་ལེན་འཐབ་་་་"
 
 #: ui/app/app.src#RID_STR_NEW_REPORT.STRING.TEXT
 msgid  "Create Report in Design View..."
-msgstr ""
+msgstr "བཀོད་སྒྲིག་མཐོང་སྣང་ནང་ནང་ལུ་ འབྲི་ཤོག་གསར་བསྐྲུན་འབད་"
 
 #: ui/app/app.src#RID_STR_NEW_QUERY.STRING.TEXT
 msgid  "Create Query in Design View..."
-msgstr ""
+msgstr "བཀོད་སྒྲིག་མཐོང་སྣང་ནང་ནང་ལུ་ འདྲི་དཔྱད་གསར་བསྐྲུན་འབད་་་"
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_SQL.STRING.TEXT
 msgid  "Create Query in SQL View..."
-msgstr ""
+msgstr "ཨེསི་ཀིའུ་ཨེལ་ མཐོང་སྣང་ནང་ནང་ལུ་ འདྲི་དཔྱད་གསར་བསྐྲུན་འབད་་་"
 
 #: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Query..."
-msgstr ""
+msgstr "འདྲི་དཔྱད་གསར་བསྐྲུན་གྱི་དོན་ལུ་ ཝི་ཛརཌི་ལག་ལེན་འཐབ་་་"
 
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
-msgstr ""
+msgstr "བཀོད་སྒྲིག་མཐོང་སྣང་ནང་ནང་ལུ་ ཐིག་ཁྲམ་གསར་བསྐྲུན་འབད་་་་"
 
 #: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Table..."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གསར་བསྐྲུན་འབད་ནིའི་དོན་ལུ་ ཝི་ཛརཌི་ལག་ལེན་འཐབ་་་"
 
 #: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
 msgid  "Create View..."
-msgstr ""
+msgstr "མཐོང་སྣང་གསར་བསྐྲུན་འབད་་་་"
 
 #: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "འབྲི་ཤོག་ཚུ།"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
-msgstr ""
+msgstr "སྙན་ཞུ་ཚུ།"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MENUITEM.TEXT
 msgid  "Form..."
-msgstr ""
+msgstr "འབྲི་ཤོག་་་"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MENUITEM.TEXT
 msgid  "Report..."
-msgstr ""
+msgstr "སྙན་ཞུ་"
 
 #: ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MENUITEM.TEXT
 msgid  "View (Simple)..."
-msgstr ""
+msgstr "སྟོན་(འཇམ་སམ་)་་་་"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MENUITEM.TEXT
 msgid  "Paste Special..."
-msgstr ""
+msgstr "དམིགས་བསལ་འདི་སྦྱར་་་་་"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MENUITEM.TEXT
 msgid  "Delete"
-msgstr ""
+msgstr "བཏོན་གཏང་།"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
 msgid  "Rename"
-msgstr ""
+msgstr "བསྐྱར་མིང་བཏགས།"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
 msgid  "Edit"
-msgstr ""
+msgstr "ཞུན་དག"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
-msgstr ""
+msgstr "ཨེསི་ཀིའུ་ཨེལ་་མཐོང་སྣང་ནང་ཞུན་དག་འབད།..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
-msgstr ""
+msgstr "ཁ་ཕྱེ།"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
 msgid  "Create as View"
-msgstr ""
+msgstr "མཐོང་སྣང་བཟུམ་སྦེ་ བཟོ་བསྐྲུན་འབད།"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
-msgstr ""
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MENUITEM.TEXT
-msgid  "Report..."
-msgstr ""
+msgstr "ཝི་ཛརཌི་ཤོག་ཁྲམ་་་་"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "ཝི་ཛརཌི་གི་སྙན་ཞུ་འབད་་་་"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MENUITEM.TEXT
 msgid  "Select All"
-msgstr ""
+msgstr "ཆ་མཉམ་སེལ་འཐུ་འབད།"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Database"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན།(~D)"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr "རྒྱུ་དངོས་ཚུ།"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Connection Type..."
-msgstr ""
+msgstr "མཐུད་ལམ་གྱི་དབྱེ་བ།"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Advanced Settings..."
-msgstr ""
+msgstr "མཐོ་རིམ་ཅན་གྱི་སྒྲིག་སྟངས་ཚུ།"
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the data source '%1'?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ གནད་སྡུད་འབྱུང་ཁུངས་'%1' འདི་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: ui/app/app.src#STR_APP_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base"
-msgstr ""
+msgstr " - %PRODUCTNAME གཞི་རྟེན།"
 
 #: ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "ཝི་ཛརཌི་འདི་གིས་ སྙན་ཞུ་གསར་བསྐྲུན་འབད་ནི་ལུ་མཁོ་བའི་རིམ་པ་ཚུ་ལས་བརྒྱུད་དེ་ ཁྱོད་ལུ་ལམ་སྟོན་འབད་འོང་།"
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "དྲན་ཐོའི་འབྱུང་ཁུངས་དང་ཚད་འཛིན་ཚུ་དེ་ལས་ ཚད་འཛིན་གྱི་རྒྱུ་དངོས་ཚུ་ གསལ་བཀོད་འབད་བའི་ཐོག་ལས་ འབྲི་ཤོག་ཅིག་གསར་བསྐྲུན་འབད།"
 
 #: ui/app/app.src#RID_STR_REPORT_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "དྲན་ཐོའི་འབྱུང་ཁུངས་དང་ཚད་འཛིན་ཚུ་དེ་ལས་ ཚད་འཛིན་རྒྱུ་དངོས་ཚུ་ གསལ་བཀོད་འབད་བའི་ཐོག་ལས་ སྙན་ཞུ་་ཅིག་གསར་བསྐྲུན་འབད།"
 
 #: ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "ཝི་ཛརཌི་འདི་གིས་ འབྲི་ཤོག་གསར་བསྐྲུན་འབད་ནི་ལུ་མཁོ་བའི་ རིམ་པ་ཚུ་ལས་བརྒྱུད་དེ་ ཁྱོད་ལུ་ལམ་སྟོན་འབད་འོང་།"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "དབྱེ་སེལ་འབད་ནི་དང་ ཡང་ན་ སྡེ་བཟོའི་དོན་ལུ་ ཚགས་མ་ཚུ་དང་ཨིན་པུཊི་ཐིག་ཁྲམ་ཚུ་དེ་ལས་ ས་སྒོའི་མིང་ཚུ་དང་རྒྱུ་དངོས་ཚུ་གསལ་བཀོད་འབད་བའི་ཐོག་ལས་ འདྲི་དཔྱད་གསར་བསྐྲུན་འབད།"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.STRING.TEXT
+#, fuzzy
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "ཨེསི་ཀིའུ་ཨེལ་གསལ་བཤད་འདི་ཐད་ཀར་དུ་ བཙུགས་ཏེ་འདྲི་དཔྱད་གསར་བསྐྲུན་འབད།"
 
 #: ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "ཝི་ཛརཌི་འདི་གིས་ འདྲི་དཔྱད་གསར་བསྐྲུན་འབད་ནི་ལུ་མཁོ་བའི་ རིམ་པ་ཚུ་ལས་བརྒྱུད་དེ་ ཁྱོད་ལུ་ ལམ་སྟོན་འབད་འོང་།"
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.STRING.TEXT
+#, fuzzy
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "ས་སྒོའི་མིང་ཚུ་དང་རྒྱུ་དངོས་ཚུ་གིས་མ་ཚད་པར་གནད་སྡུད་ཀྱི་དབྱེ་བ་ཚུ་ གསལ་བཀོད་འབད་བའི་ཐོག་ལས་ ཐིག་ཁྲམ་ཅིག་གསར་བསྐྲུན་འབད།"
 
 #: ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཅིག་གསར་བསྐྲུན་འབད་ནིའི་དོན་ལུ་ སྲོལ་སྒྲིག་འབད་མི་ཚོང་འབྲེལ་དང་རང་དོན་གྱི་ཐིག་ཁྲམ་དཔེ་ཚད་ཚུའི་སེལ་འཐུ་ནང་ལས་ གདམ་ཁ་རྐྱབས།"
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.STRING.TEXT
+#, fuzzy
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་བལྟ་དགོ་མནོ་མི་མཐོང་སྣང་འདི་ ཐིག་ཁྲམ་ཚུ་དང་ས་སྒོའི་མིང་ཚུ་གསལ་བཀོད་འབད་བའི་ཐོག་ལས་ གསར་བསྐྲུན་འབད།"
 
 #: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  "Opens the view wizard"
-msgstr ""
+msgstr "ཝི་ཛརཌི་མཐོང་སྣང་འདི་ ཁ་ཕྱེཝ་ཨིན།"
 
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན།"
 
 #: ui/app/app.src#STR_TASKS.STRING.TEXT
+#, fuzzy
 msgid  "Tasks"
-msgstr ""
+msgstr "ལས་ཀ་ཚུ།"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "འགྲེལ་བཤད།"
 
 #: ui/app/app.src#STR_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "སྔོན་ལྟ།"
 
 #: ui/app/app.src#STR_DISABLEPREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Disable Preview"
-msgstr ""
-
-#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "སྔོན་ལྟ་ལྕོགས་མིན་བཟོ།"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "ཅི་མེད།"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Document Information"
-msgstr ""
+msgstr "ཡིག་ཆའི་བརྡ་དོན།"
 
 #: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "ཡིག་ཆ།"
 
 #: ui/app/app.src#RID_STR_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Form"
-msgstr ""
+msgstr "འབྲི་ཤོག"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Report"
-msgstr ""
+msgstr "སྙན་ཞུ།"
 
 #: ui/app/app.src#STR_FRM_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "F~orm name"
-msgstr ""
+msgstr "འབྲི་ཤོག་གི་མིང་།(~o)"
 
 #: ui/app/app.src#STR_RPT_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Report name"
-msgstr ""
+msgstr "སྙན་ཞུའི་མིང་།(~R)"
 
 #: ui/app/app.src#STR_FOLDER_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "F~older name"
-msgstr ""
+msgstr "སྣོད་འཛིན་གྱི་མིང་།(~o)"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.STRING.TEXT
+#, fuzzy
 msgid  "The document contains forms or reports with embedded macros."
-msgstr ""
+msgstr "ཡིག་ཆ་འདི་ནང་ གནས་འདྲེན་མེཀ་རོ་ཚུ་དང་གཅིག་ཁར་ འབྲི་ཤོག་ཚུ་དང་སྙན་ཞུ་ཚུ་འདུག"
 
 #: ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.STRING.TEXT
+#, fuzzy
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "མེཀ་རོ་ཚུ་ གནས་སྡུད་གཞི་རྟེན་ཡིག་ཆ་ནང་ལུ་རང་ གནས་འདྲེན་འབད་དགོ \n\nཧ་མ་བཟུམ་སྦེ་རང་ ཁྱོད་ ཁྱོད་རའི་ཡིག་ཆ་ལག་ལེན་འཐབ་ནི་འདི་འཕྲོ་མཐུད་ད་ ཨིན་རུང་ ཁྱོད་ལུ་ ཁྱོད་རའི་མེཀ་རོ་ཚུ་ གནས་སྤོ་སྦེ་ནི་ལུ་སྐུལ་མ་འབད་ནི་ཨིན། འདི་འབད་ནི་ལུ་ དཀར་ཆག་རྣམ་གྲངས་ ' ལག་ཆས་ཚུ / གནས་སྤོ་མེཀ་རོ་ཚུ་ ...' གིས་གྲོགས་རམ་འབད་འོང་།\n\nགནས་སྤོ་འདི་མཇུག་མ་བསྡུ་ཚུན་ ཁྱོད་ཀྱིས་ མེཀ་རོ་ཚུ་ གནས་སྡུད་གཞི་རྟེན་ནང་ལུ་རང་ གནས་འདྲེན་འབད་མི་ཚུགས་ནི་ཨིནམ་ཤེས་དགོ"
 
 #: ui/app/app.src#RID_STR_EMBEDDED_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Embedded database"
-msgstr ""
+msgstr "གནས་འདྲེན་འབད་ཡོད་པའི་གནས་སྡུད་གཞི་རྟེན་"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
 msgid  "You cannot select different categories."
@@ -924,296 +925,364 @@ msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
 #: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Table #"
-msgstr ""
-
-#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "ཐིག་ཁྲམ།#"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ སེལ་འཐུ་འབད་ཡོད་པའི་གནད་སྡུད་འདི་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.STRING.TEXT
+#, fuzzy
 msgid  "(filtered)"
-msgstr ""
+msgstr "(བཙགས་ཅི།)"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.STRING.TEXT
+#, fuzzy
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "ཁྱད་ཚད་དབྱེ་སེལ་ སྒྲིག་སྟངས་འབད་ནི་ལུ་ འཛོལ་བ།"
 
 #: ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "ཚགས་མའི་ཁྱད་ཚིག་སྒྲིག་སྟངས་འབད་ནི་ལུ་ འཛོལ་བ།"
 
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
+#, fuzzy
 msgid  "Connection lost"
-msgstr ""
+msgstr "མཐུད་ལམ་བརླག་སྟོར་ཞུགས་ནུག"
 
 #: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Queries"
-msgstr ""
+msgstr "འདྲི་དཔྱད་ཚུ།"
 
 #: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "Tables"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ།"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
+#, fuzzy
 msgid  "Edit ~Database File..."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ཡིག་སྣོད་འདི་ ཞུན་དག་འབད་་་་(~D)"
 
 #: ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#DEFINE.TEXT
+#, fuzzy
 msgid  "Registered databases ..."
-msgstr ""
+msgstr "ཐོ་བཀོད་འབད་ཡོད་པའི་གནད་སྡུད་གཞི་རྟེན་ཚུ་་་་་"
 
 #: ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#DEFINE.TEXT
+#, fuzzy
 msgid  "Disco~nnect"
-msgstr ""
+msgstr "མཐུད་ལམ་བཏོག་ནི།(~n)"
 
 #: ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.STRING.TEXT
+#, fuzzy
 msgid  "Confirm Deletion"
-msgstr ""
+msgstr "བཏོན་གཏང་ནི་ངེས་དཔྱད་འབད།"
 
 #: ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཐིག་ཁྲམ་ '%1' འདི་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
-msgstr ""
+msgstr "འདྲི་དཔྱད་འདི་ཧེ་མ་ལས་རང་ཡོདཔ་ཨིན། ཁྱོད་ཀྱིས་འདི་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ མཐུད་ལམ་འདི་ བརླག་སྟོར་ཞུགས་ནུག ཁྱོད་ཀྱིས་སླར་ མཐུད་ནི་ཨིན་ན?"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.STRING.TEXT
+#, fuzzy
 msgid  "Warnings encountered"
-msgstr ""
+msgstr "ཉེན་བརྡ་ཚུ་གདོང་ཐུག་བྱུང་ཡོདཔ།"
 
 #: ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.STRING.TEXT
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ་སླར་འདྲེན་འབད་བའི་བསྒང་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་མཐུད་ལམ་གྱིས་ཉེན་བརྡ་ཚུ་སྙན་ཞུ་འབད་ནུག"
 
 #: ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
-msgstr ""
+msgstr "\"$name$\"ལུ་ མཐུད་དོ་་་་་"
 
 #: ui/browser/sbabrw.src#STR_LOADING_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Loading query $name$ ..."
-msgstr ""
+msgstr "$name$ འདྲི་དཔྱད་མངོན་གསལ་འབད་དོ་་་་་་"
 
 #: ui/browser/sbabrw.src#STR_LOADING_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Loading table $name$ ..."
-msgstr ""
+msgstr "$name$ ཐིག་ཁྲམ་མངོན་གསལ་འབད་དོ་་་"
 
 #: ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.STRING.TEXT
+#, fuzzy
 msgid  "No table format could be found."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་རྩ་སྒྲིག་མ་ཐོབ།"
 
 #: ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
+msgstr "གནད་སྡུད་ཀྱི་འབྱུང་ཁུངས་\"$name$\"གྱི་ མཐུད་ལམ་འདི་ གཞི་བཙུགས་འབད་མ་ཚུགས།"
 
 #: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rebuild"
-msgstr ""
+msgstr "སླར་བཟོ་རྩིག"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
+#, fuzzy
 msgid  "Column ~Format..."
-msgstr ""
+msgstr "ཀེར་ཐིག་རྩ་སྒྲིག་་་་་(~F)"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MENUITEM.TEXT
+#, fuzzy
 msgid  "Copy Column D~escription"
-msgstr ""
+msgstr "ཀེར་ཐིག་འགྲེལ་བཤད་ འདྲ་བཤུས་རྐྱབས།(~e)"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MENUITEM.TEXT
+#, fuzzy
 msgid  "Table Format..."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་རྩ་སྒྲིག་་་་"
 
 #: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Row Height..."
-msgstr ""
+msgstr "གྲལ་ཐིག་གི་མཐོ་ཚད་་་་"
 
 #: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "Undo: Data Input"
-msgstr ""
+msgstr "འབད་བཤོལ་:གནད་སྡུད་ ཨིན་པུཊི།"
 
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
+#, fuzzy
 msgid  "Save current record"
-msgstr ""
+msgstr "ད་ལྟོའི་དྲན་ཐོ་འདི་ སྲུངས།"
 
 #: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Query #"
-msgstr ""
+msgstr "འདྲི་དཔྱད།#"
 
 #: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Table #"
-msgstr ""
+msgstr "ཐིག་ཁྲམ།#"
 
 #: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "View #"
-msgstr ""
+msgstr "མཐོང་སྣང་།#"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name \"#\" already exists."
-msgstr ""
+msgstr "\"#\"གི་མིང་འདི་ ཧེ་མ་ལས་རང་ཡོདཔ་ཨིན།"
 
 #: ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.STRING.TEXT
+#, fuzzy
 msgid  "No matching column names were found."
-msgstr ""
+msgstr "མཐུན་སྒྲིག་ཡོད་པའི་ ཀེར་ཐིག་གི་མིང་ཚུ་མ་ཐོབ།"
 
 #: ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
-msgstr ""
+msgstr "འཛོལ་བ་ཅིག་བྱུང་ནུག ཁྱོད་ཀྱིས་ འཕྲོ་མཐུད་དེ་རང་འདྲ་བཤུས་རྐྱབ་ནི་ཨིན་ན?"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Data source table view"
-msgstr ""
+msgstr "གནད་སྡུད་འབྱུང་ཁུངས་ཀྱི་ཐིག་ཁྲམ་ མཐོང་སྣང་།"
 
 #: ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Shows the selected table or query."
-msgstr ""
+msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ཐིག་ཁྲམ་ ཡང་ན་ འདྲི་དཔྱད་སྟོནམ་ཨིན།"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Table name"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གྱི་མིང་།"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert data"
-msgstr ""
+msgstr "གནད་སྡུད་བཙུགས།"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete data"
-msgstr ""
+msgstr "གནད་སྡུད་བཏོན་གཏང་།"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
+#, fuzzy
 msgid  "Modify data"
-msgstr ""
+msgstr "གནད་སྡུད་ ལེགས་བཅོས་འབད།"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
+#, fuzzy
 msgid  "Alter structure"
-msgstr ""
+msgstr "གཞི་བཀོད་བསྒྱུར།"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
+#, fuzzy
 msgid  "Read data"
-msgstr ""
+msgstr "གནད་སྡུད་ལྷག"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
+#, fuzzy
 msgid  "Modify references"
-msgstr ""
+msgstr "གཞི་བསྟུན་ཚུ་ལེགས་བཅོས་འབད།"
 
 #: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
+#, fuzzy
 msgid  "Drop structure"
-msgstr ""
+msgstr "གཞི་བཀོད་བཀོག་བཞག"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "ཡར་འཛེགས་དབྱེ་སེལ།"
 
 #: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sort Descending"
-msgstr ""
+msgstr "མར་འབབ་དབྱེ་སེལ།"
 
 #: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "ཨེསི་ཌི་བི་སི་ འདྲེན་བྱེད་འཛིན་སྐྱོང་པ་(#servicename#)ལུ་ མཐུད་མི་ཚུགས་པས།"
 
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
-msgstr ""
+msgstr "ཡུ་ཨར་ཨེལ་#connurl#གྱི་དོན་ལུ་ འདྲེན་བྱེད་གཅིག་ ཐོ་འགོད་མ་འབད་བས།"
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
-msgstr ""
+msgstr "ཡུ་ཨར་ཨེལ་#connurl#གྱི་དོན་ལུ་ མཐུད་ལམ་གཞི་བཙུགས་འབད་མ་ཚུགས།"
 
 #: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "ད་ལྟོའི་སྒྲིག་སྟངས་ཚུ་ཞིབ་དཔྱད་འབད་གནང་ དཔེར་ན་ ལག་ལེན་པའི་མིང་དང་ཆོག་ཡིག་བཟུམ།"
 
 #: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "མཐར་འཁྱོལ་སྦེ་མཐུད་ཅི་ དེ་འབདཝ་ད་ གནད་སྡུད་གཞི་རྟེན་གྱི་ཐིག་ཁྲམ་ཚུའི་སྐོར་ལས་ བརྡ་དོན་ཐོབ་མ་ཚུགས།"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "All tables"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ་ཆ་མཉམ།"
 
 #: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
+#, fuzzy
 msgid  "All views"
-msgstr ""
+msgstr "མཐོང་སྣང་ཚུ་ཆ་མཉམ།"
 
 #: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
+#, fuzzy
 msgid  "All tables and views"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ་དང་མཐོང་སྣང་ཚུ་ཆ་མཉམ།"
 
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
+#, fuzzy
 msgid  "Modify SQL statement(s)"
-msgstr ""
+msgstr "ཨེསི་ཀིའུ་ཨེལ་ གསལ་བཤད་(ཚུ་) ལེགས་བཅོས་འབད།"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database files"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ཡིག་སྣོད་ཚུ།"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~YSDEVSPACE:"
-msgstr ""
+msgstr "SYSDEVSPACE:(~Y)"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~TRANSACTIONLOG:"
-msgstr ""
+msgstr "TRANSACTIONLOG:(~T)"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DATAD~EVSPACE:"
-msgstr ""
+msgstr "DATADEVSPACE:(~E)"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Database sizes"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ཚད་ཚུ།"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~ize (MB):"
-msgstr ""
+msgstr "ཚད་(ཨེམ་བི་):(~i)"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Free memory space (MB):"
-msgstr ""
+msgstr "དྲན་ཚད་བར་སྟོང་ སྟོངམ་ (ཨེམ་བི་):(~F)"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Memory utilization (in %):"
-msgstr ""
+msgstr "དྲན་ཚད་བེད་སྤྱོད་(% ནང་ལུ་):(~M)"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Database Statistics"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ཚད་རྩིས་ཚུ།"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
+#, fuzzy
 msgid  "Contains the system tables"
-msgstr ""
+msgstr "རིམ་ལུགས་ཐིག་ཁྲམ་ཚུ་ཡོདཔ་ཨིན།"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
+#, fuzzy
 msgid  "Contains information about transaction"
-msgstr ""
+msgstr "སྤྲོད་ལེན་གྱི་སྐོར་ལས་ བརྡ་དོན་ཡོད།"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
+#, fuzzy
 msgid  "Contains all data files"
-msgstr ""
+msgstr "གནད་སྡུད་ཡིག་སྣོད་ཚུ་ཆ་མཉམ་ ཡོདཔ་ཨིན།"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
+#, fuzzy
 msgid  "Total size of the database files"
-msgstr ""
+msgstr "གནད་སྡུད་ཡིག་སྣོད་ཚུ་གི་ ཚད་བསྡོམས།"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
-msgstr ""
+msgstr "ཌ་ཊ་ཌེབ་ཡིག་སྣོད་གསརཔ་འདི་ གསར་བསྐྲུན་མ་འབད་བའི་ཧེ་མ་ཡོད་པའི་བར་སྟོང་།"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
+#, fuzzy
 msgid  "Currently used memory"
-msgstr ""
+msgstr "ད་ལྟོ་ལག་ལེན་འཐབ་ཡོད་པའི་ དྲན་ཚད།"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "བརྡ་དོན་བཀྲམ་སྟོན་འབད་མ་ཚུགས་ ག་ཅི་འབད་ཟེར་བ་ཅིན་ དགོས་མཁོ་ཡོད་པའི་ རིམ་ལུགས་ཐིག་ཁྲམ་ཚུ་གི་དོན་ལུ་ འཛུལ་སྤྱོད་འབད་ནིའི་ཐོབ་དབང་མིན་འདུག"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
 msgid  "~Database name"
@@ -1232,8 +1301,9 @@ msgid  "~Port"
 msgstr ""
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Default: 3306"
-msgstr ""
+msgstr "སྔོན་སྒྲིག:༣༣༠༦"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
@@ -1244,84 +1314,104 @@ msgid  "Named p~ipe"
 msgstr ""
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Tables"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ་"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Queries"
-msgstr ""
+msgstr "འདྲི་དཔྱད་ཚུ་"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "ཁ་སྐོང་རྐྱབས།(~A)"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "ཁ་བསྡམ།(~C)"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "Add Tables"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ་ ཁ་སྐོང་རྐྱབས།"
 
 #: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Add Table or Query"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ ཡངན་ འདྲི་དཔྱད་ཁ་སྐོང་རྐྱབས་"
 
 #: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ།"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use SQL92 naming constraints"
-msgstr ""
+msgstr "བར་ཆད་ཚུ་གི་མིང་བཏགས་ཏེ་ ཨེསི་ཀིའུ་ཨེལ་༩༢འདི་ ལག་ལེན་འཐབ།"
 
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
-msgstr ""
+msgstr "སེལ་འཐུའི་གསལ་བཤད་ཚུ་གུ་ ཐིག་ཁྲམ་གྱི་མིང་གཞན་ མཇུག་བསྣོན་འབད།"
 
 #: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use keyword AS before table alias names"
-msgstr ""
+msgstr "ལྡེ་སྒྲོམ་ཧེ་མམ་གྱི་ཐིག་ཁྲམ་མིང་གཞན་མིང་ཚུ་བཟུམ་སྦེ་ལག་ལེན་འཐབ།"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
-msgstr ""
+msgstr "ཕྱི་མཐུད་ཚིག་སྦྱོར་ '{ཨོ་ཇེ་ }'འདི་ ལག་ལེན་འཐབ།"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ignore the privileges from the database driver"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་འདྲེན་བྱེད་ནང་ལས་ ཁེ་དབང་ཚུ་སྣང་མེད་འབད་བཞག"
 
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Replace named parameters with '?'"
-msgstr ""
+msgstr "'?'དང་བཅས་ མིང་བཏགས་ཡོད་བའི་ཚད་བཟུང་ཚུ་ ཚབ་བཙུགས།"
 
 #: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Display version columns (when available)"
-msgstr ""
+msgstr "འཐོན་རིམ་ཀེར་ཐིག་ཚུ་ བཀྲམ་སྟོན་འབད་ (ཐོབ་ཚུགས་པའི་སྐབས)།"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use catalog name in SELECT statements"
-msgstr ""
+msgstr "སེལ་འཐུའི་གསལ་བཤད་ཚུ་ནང་ ཐོ་གཞུང་གི་མིང་ལག་ལེན་འཐབ།"
 
 #: ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use schema name in SELECT statements"
-msgstr ""
+msgstr "སེལ་འཐུའི་གསལ་བཤད་ནང་ ལས་འཆར་མིང་ ལག་ལེན་འཐབ།"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Create index with ASC or DESC statement"
-msgstr ""
+msgstr "ཨེ་ཨེསི་སི་ ཡང་ན་ ཌི་ཨི་ཨེསི་སི་གསལ་བཤད་ཀྱི་ཐོག་ལས་ ཟུར་ཐོ་གསར་བསྐྲུན་འབད།"
 
 #: ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "End text lines with CR+LF"
-msgstr ""
+msgstr "སི་ཨར་+ཨེལ་ཨེཕི་གི་ཐོག་ལས་ ཚིག་ཡིག་གི་གྱལ་རིམ་ཚུ་མཇུག་བསྡུ།"
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ignore currency field information"
-msgstr ""
+msgstr "དངུལ་ས་སྒོའི་བརྡ་དོན་སྣང་མེད་བཞག་"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Form data input checks for required fields"
-msgstr ""
+msgstr "འབྲི་ཤོག་གནས་སྡུད་ཨིན་པུཊི་གིས་ མཁོ་ཆེའི་ས་སྒོ་ཚུ་ཞིབ་དཔྱད་འབདཝ་ཨིན་"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
 msgid  "Use ODBC conformant date/time literals"
@@ -1336,112 +1426,137 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "སྔོན་སྒྲིག་"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Mixed"
-msgstr ""
+msgstr "སླ་བསྲེ་"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "MS Access"
-msgstr ""
+msgstr "MS འཛུལ་སྤྱོད་"
 
 #: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comparison of Boolean values"
-msgstr ""
+msgstr "བུ་ལིན་བེ་ལུ་ཚུ་གི་ ག་བསྡུར།"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
 msgstr ""
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "སྒྲིག་སྟངས་ཚུ།"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Re~trieve generated values"
-msgstr ""
+msgstr "བཟོ་བཏོན་འབད་ཡོད་པའི་བེ་ལུ་ཚུ་ སླར་འདྲེན་འབད།(~t)"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Auto-increment statement"
-msgstr ""
+msgstr "རང་བཞིན་གྱི་-ཡར་འཕར་གསལ་བཤད།(~A)"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Query of generated values"
-msgstr ""
+msgstr "བཟོ་བཏོན་འབད་ཡོད་པའི་ བེ་ལུ་ཚུའི་འདྲི་དཔྱད།(~Q)"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Generated Values"
-msgstr ""
+msgstr "བཟོ་བཏོན་འབད་ཡོད་པའི་ བེ་ལུ་ཚུ།"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
+#, fuzzy
 msgid  "Special Settings"
-msgstr ""
+msgstr "དམིགས་བསལ་སྒྲིག་སྟངས་ཚུ།"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
 msgstr ""
 
 #: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the dBASE files"
-msgstr ""
+msgstr "ཌི་བེསི་ཡིག་སྣོད་ཚུ་ལུ་ འགྲུལ་ལམ།"
 
 #: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the text files"
-msgstr ""
+msgstr "ཚིག་ཡིག་ཡིག་སྣོད་ཚུ་ལུ་ འགྲུལ་ལམ།"
 
 #: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to the spreadsheet document"
-msgstr ""
+msgstr "ཤོག་ཁྲམ་ཡིག་ཆ་ལུ་ འགྲུལ་ལམ།"
 
 #: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Name of the ODBC data source on your system"
-msgstr ""
+msgstr "ཁྱོད་ཀྱི་རིམ་ལུགས་གུ་ལུ་ ཨོ་ཌི་བི་སི་ གནད་སྡུད་འབྱུང་ཁུངས་ཀྱི་མིང་།"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the MySQL database"
-msgstr ""
+msgstr "མའི་ཨེསི་ཀིའུ་ཨེལ་ གནད་སྡུད་གཞི་རྟེན་གྱི་མིང་།"
 
 #: ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the Oracle database"
-msgstr ""
+msgstr "ཨོ་རེ་ཀཱལ་ གནད་སྡུད་གཞི་རྟེན་གྱི་མིང་།"
 
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name of the Adabas D database"
-msgstr ""
+msgstr "ཨེ་ཌ་བསི་ ཌི་ གནད་སྡུད་གཞི་རྟེན་གྱི་མིང་།"
 
 #: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Microsoft Access database file"
-msgstr ""
+msgstr "མའི་ཀོརོ་སོཕཊི་ ཨེག་སེསི་ གནད་སྡུད་གཞི་རྟེན་གྱི་ཡིག་སྣོད།"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
+#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "སྒྲིག་སྟངས་ཚུ་ཧེང་བཀལ་ དགོཔ་མེད། མཐུད་ལམ་འདི་ལཱ་འབད་དོ་ཟེར་ བདེན་སྦྱེར་འབད་ནིའི་དོན་ལུ་ '%test' ཨེབ་རྟ་འདི་ ཨེབ་གཏང་འབད།"
 
 #: ui/dlg/AutoControls.src#STR_COMMONURL.STRING.TEXT
+#, fuzzy
 msgid  "Datasource URL"
-msgstr ""
+msgstr "གནད་སྡུད་འབྱུང་ཁུངས་ ཡུ་ཨར་ཨེལ།"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "ཧོསཊི་མིང་།(~H)"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "~Mozilla profile name"
-msgstr ""
+msgstr "མོ་ཛིལ་ལའི་གསལ་སྡུད་མིང་།(~M)"
 
 #: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "~Thunderbird profile name"
-msgstr ""
+msgstr "ཐཱན་ཌར་བཌི་གསལ་སྡུད་མིང་།(~T)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Browse"
-msgstr ""
+msgstr "བརྡ་འཚོལ།"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database name"
@@ -1452,2148 +1567,2526 @@ msgid  "Server"
 msgstr ""
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Base ~DN"
-msgstr ""
+msgstr "གཞི་རྟེན་ ཌི་ཨེན།(~D)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port number"
-msgstr ""
+msgstr "འདྲེན་ལམ་ཨང་།(~P)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Data conversion"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་བསྒྱུར།"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FT_CHARSET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Character set"
-msgstr ""
+msgstr "ཡིག་འབྲུ་གཞི་སྒྲིག(~C)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་འཛུལ་སྤྱོད་འབད་ནི་ཨིན་པའི་ཡིག་སྣོད་ཚུ་ གསལ་བཀོད་འབད།"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Plain text files (*.txt)"
-msgstr ""
+msgstr "ཚིག་རྐྱང་གི་ཡིག་སྣོད་ཚུ། (*.txt)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "'Comma separated value' files (*.csv)"
-msgstr ""
+msgstr "'ལྷད་རྟགས་ཀྱིས་ སོ་སོ་འཕྱལ་འཕྱལཝ་གི་བེ་ལུ་' ཡིག་སྣོད་ཚུ་(*.csv)།"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Custom:"
-msgstr ""
+msgstr "སྲོལ་སྒྲིག་:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Custom: *.abc"
-msgstr ""
+msgstr "སྲོལ་སྒྲིག་: *.abc"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FL_AUTOSEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Row Format"
-msgstr ""
+msgstr "གྲལ་རིམ་རྩ་སྒྲིག"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOFIELDSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field separator"
-msgstr ""
+msgstr "ས་སྒོའི་དབྱེ་བྱེད།"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTEXTSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Text separator"
-msgstr ""
+msgstr "ཚིག་ཡིག་གི་དབྱེ་བྱེད།"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTODECIMALSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Decimal separator"
-msgstr ""
+msgstr "ཌེ་སི་མཱལ་དབྱེ་བྱེད།"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOTHOUSANDSSEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Thousands separator"
-msgstr ""
+msgstr "སྟོང་ཕྲག་དབྱེ་བྱེད།"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Text contains headers"
-msgstr ""
+msgstr "ཚིག་ཡིག་ནང་ལུ་ མགོ་ཡིག་ཚུ་འདུག(~T)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
+#, fuzzy
 msgid  "{None}"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ""
+msgstr "{ཅི་མེད་}"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "#1 must be set."
-msgstr ""
+msgstr "#1 འདི་ གཞི་སྒྲིག་འབད་དགོ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MUST_DIFFER.STRING.TEXT
+#, fuzzy
 msgid  "#1 and #2 must be different."
-msgstr ""
+msgstr "#1 དང་ #2 སོ་སོ་ཨིན་དགོ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTONO_WILDCARDS.STRING.TEXT
+#, fuzzy
 msgid  "Wildcards such as ?,* are not allowed in #1."
-msgstr ""
+msgstr "ཝའིལ་ཀཌིསི་ ?,* བཟུམ་ཚུ་ #1 ནང་མི་ཆོག"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).FT_AUTOJDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "JDBC d~river class"
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་ འདྲེན་བྱེད་དབྱེ་རིགས།(~r)"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test class"
-msgstr ""
+msgstr "དབྱེ་རིགས་ བརྟག་དཔྱད་འབད།"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
 msgid  "Socket"
 msgstr ""
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr "སྲུངས།"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Create New Directory"
-msgstr ""
+msgstr "ཚིག་མཛོད་གསརཔ་ གསར་བསྐྲུན་འབད།"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Up One Level"
-msgstr ""
+msgstr "གནས་རིམ་གཅིག་ ཡར།"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "File ~name:"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PUSHBUTTON.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "ཡིག་སྣོད་མིང་:(~n)"
 
 #: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
+#, fuzzy
 msgid  "~Path:"
-msgstr ""
+msgstr "འགྲུལ་ལམ:(~P)"
 
 #: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
+#, fuzzy
 msgid  "Folder"
-msgstr ""
+msgstr "སྣོད་འཛིན།"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "ཡིག་སྣོད་འདི་ཧེ་མ་ལས་ཡོདཔ་ཨིན། ཚབ་སྲུང་འབད་ནི་ཨིན་ན?"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ཡོངས་ཁྱབ།"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "ཧོསཊི་མིང་།(~H)"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User authentication"
-msgstr ""
+msgstr "ལག་ལེན་པའི་བདེན་བཤད།"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "ལག་ལེན་པའི་མིང་།(~U)"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password required"
-msgstr ""
+msgstr "ཆོག་ཡིག་དགོས་མཁོ་ཡོདཔ།"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "JDBC properties"
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་ རྒྱུ་དངོས་ཚུ།"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~JDBC driver class"
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་ འདྲེན་བྱེད་དབྱེ་རིགས།(~J)"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test Class"
-msgstr ""
+msgstr "དབྱེ་རིགས་བརྟག་དཔྱད་འབད།"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test Connection"
-msgstr ""
+msgstr "མཐུད་ལམ་ བརྟག་དཔྱད་འབད།"
 
 #: ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.STRING.TEXT
+#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
-msgstr ""
+msgstr "ཁྱོད་ཀྱི་རིམ་ལུགས་གུ་ལུ་ ཨེ་ཌ་བསི་ ཌི་ གནད་སྡུད་འབྱུང་ཁུངས་ཚུ་མ་ཐོབ།"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.STRING.TEXT
+#, fuzzy
 msgid  "Connection Test"
-msgstr ""
+msgstr "མཐུད་ལམ་གྱི་བརྟག་དཔྱད།"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The connection was established successfully."
-msgstr ""
+msgstr "མཐུད་རམ་འདི་ མཐར་འཁྱོལ་སྦེ་ གཞི་བཙུགས་འབད་ཡི།"
 
 #: ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "མཐུད་ལམ་འདི་ གཞི་བཙུགས་འབད་མ་ཚུགས།"
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་འདྲེན་བྱེད་འདི་ མཐར་འཁྱོལ་སྦེ་ མངོན་གསལ་འབད་ཡི།"
 
 #: ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.STRING.TEXT
+#, fuzzy
 msgid  "The JDBC driver could not be loaded."
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་འདྲེན་བྱེད་འདི་ མངོན་གསལ་འབད་མ་ཚུགས།"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.STRING.TEXT
+#, fuzzy
 msgid  "MS Access file"
-msgstr ""
+msgstr "ཨེམ་ཨེསི་ འཛུལ་སྤྱོད་འབད་ནིའི་ཡིག་སྣོད།"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
+#, fuzzy
 msgid  "MS Access 2007 file"
-msgstr ""
+msgstr "MS འཛུལ་སྤྱོད་ ༢༠༠༧ ཡིག་སྣོད་"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "A password is needed to connect to the data source \"$name$\"."
-msgstr ""
+msgstr "གནད་སྡུད་འབྱུང་ཁུངས་\"$name$\" ལུ་ མཐུད་ནིའི་དོན་ལས་ ཆོག་ཡིག་དགོཔ་ཨིན།"
 
 #: ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.STRING.TEXT
+#, fuzzy
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "སྣོད་ཐོ།\n\n$path$\n\nམིན་འདུག གསར་བསྐྲུན་འབད་དགོ་ག?"
 
 #: ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.STRING.TEXT
+#, fuzzy
 msgid  "The directory $name$ could not be created."
-msgstr ""
+msgstr "སྣོད་ཐོ་ $name$ འདི་ གསར་བསྐྲུན་འབད་མ་ཚུགས།"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Convert Database"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་བསྒྱུར་འབད།"
 
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Please enter the ~password for the user 'DOMAIN'."
-msgstr ""
+msgstr "ལག་ལེན་པ་ 'ཌོ་མེན་' གི་དོན་ལུ་ ཆོག་ཡིག་བཙུགས་གནང་།(~p)"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Tables Filter"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུའི་ཚགས་མ།"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables and table filter"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ་དང་ ཐིག་ཁྲམ་ཚགས་མ།"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Mark the tables that should be visible for the applications."
-msgstr ""
+msgstr "གློག་རིམ་ཚུ་གི་དོན་ལུ་ མཐོང་དགོ་པའི་ཐིག་ཁྲམ་ཚུ་ལུ་ རྟགས་བཀལ། "
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Database Wizard"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.STRING.TEXT
-msgid  "Database Wizard"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་ ཝི་ཛརཌི།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Select database"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་ སེལ་འཐུ་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
+#, fuzzy
 msgid  "Set up dBASE connection"
-msgstr ""
+msgstr "ཌི་བེསི་མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "ཚིག་ཡིག་ཡིག་སྣོད་ཚུ་ལུ་ མཐུད་ལམ་ཅིག་གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.STRING.TEXT
+#, fuzzy
 msgid  "Set up Microsoft Access connection"
-msgstr ""
+msgstr "མའི་ཀོརོ་སོཕཊི་ ཨེག་སེསི་མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.STRING.TEXT
+#, fuzzy
 msgid  "Set up LDAP connection"
-msgstr ""
+msgstr "ཨེལ་ཌི་ཨེ་པི་མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.STRING.TEXT
+#, fuzzy
 msgid  "Set up Adabas D connection"
-msgstr ""
+msgstr "ཨེ་ཌ་བསི་ ཌི་ མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.STRING.TEXT
+#, fuzzy
 msgid  "Set up ADO connection"
-msgstr ""
+msgstr "ཨེ་ཌི་ཨོ་མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.STRING.TEXT
+#, fuzzy
 msgid  "Set up JDBC connection"
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.STRING.TEXT
+#, fuzzy
 msgid  "Set up Oracle database connection"
-msgstr ""
+msgstr "ཨོ་རེ་ཀཱལ་གནད་སྡུད་གཞི་རྟེན་གྱི་མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.STRING.TEXT
+#, fuzzy
 msgid  "Set up MySQL connection"
-msgstr ""
+msgstr "མའི་ཨེསི་ཀིའུ་ཨེལ་མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.STRING.TEXT
+#, fuzzy
 msgid  "Set up ODBC connection"
-msgstr ""
+msgstr "ཨོ་ཌི་བི་སི་མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.STRING.TEXT
+#, fuzzy
 msgid  "Set up Spreadsheet connection"
-msgstr ""
+msgstr "ཤོག་ཁྲམ་གྱི་མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.STRING.TEXT
+#, fuzzy
 msgid  "Set up user authentication"
-msgstr ""
+msgstr "ལག་ལེན་པའི་བདེན་བཤད་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
 msgid  "Set up MySQL server data"
 msgstr ""
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
+#, fuzzy
 msgid  "Save and proceed"
-msgstr ""
+msgstr "སྲུང་ནི་དང་འཕྲོ་མཐུད་ནི།"
 
 #: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
+#, fuzzy
 msgid  "New Database"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གསརཔ།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up a connection to a MySQL database"
-msgstr ""
+msgstr "མའི་ཨེསི་ཀིའུ་ཨེལ་ གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཨོ་ཌི་བི་སི་ ཡང་ན་ ཇེ་ཌི་བི་སི་ ལག་ལེན་གྱི་ཐོག་ལས་ མའི་ཨེསི་ཀིའུ་ཨེལ་ གནད་སྡུད་གཞི་རྟེན་གཅིག་ལུ་ མཐུད་ཚུགས།\nཁྱོད་ཀྱིས་ འོག་གི་སྒྲིག་སྟངས་ཚུའི་སྐོར་ལས་ངེས་ཏིག་མེད་པ་ཅིན་ ཁྱོད་རའི་རིམ་ལུགས་བདག་སྐྱོང་པ་དང་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "How do you want to connect to your MySQL database?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ཁྱོད་རའི་ མའི་ཨེསི་ཀིའུ་ཨེལ་ གནད་སྡུད་གཞི་རྟེན་ལུ་ ག་དེ་འབད་མཐུད་ནི་སྨོ?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect using ODBC (Open Database Connectivity)"
-msgstr ""
+msgstr "ཨོ་ཌི་བི་སི་ལག་ལེན་གྱི་ཐོག་ལས་ མཐུད་(Open Database Connectivity)།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect using JDBC (Java Database Connectivity)"
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་(Java Database Connectivity) ལག་ལེན་གྱི་ཐོག་ལས་ མཐུད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
 msgid  "Connect directly"
 msgstr ""
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up the user authentication"
-msgstr ""
+msgstr "ལག་ལེན་པའི་བདེན་བཤད་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་ལ་ལུ་ཅིག་གི་དོན་ལུ་ ཁྱོད་ཀྱིས་ལག་ལེན་པའི་མིང་བཙུགས་དགོ "
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "ལག་ལེན་པའི་མིང་།(~U)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password re~quired"
-msgstr ""
+msgstr "ཆོག་ཡིག་དགོས་མཁོ་ཡོདཔ།(~q)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Test Connection"
-msgstr ""
+msgstr "མཐུད་ལམ་ བརྟག་དཔྱད་འབད།(~T)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Decide how to proceed after saving the database"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་སྲུངས་པའི་ཤུལ་ལུ་ ག་དེ་འབད་འཕྲོ་མཐུད་ནི་ཨིན་ན་ གྲོས་ཐག་བཅད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ %PRODUCTNAME ནང་ ཐོ་འགོད་འབད་ནི་ལུ་ ཝི་ཛརཌི་དགོ་ག?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes, register the database for me"
-msgstr ""
+msgstr "ཨིན་ ངེ་གི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་ ཐོ་འགོད་འབད།(~Y)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "N~o, do not register the database"
-msgstr ""
+msgstr "མེན་ གནད་སྡུད་གཞི་རྟེན་ ཐོ་འགོད་མ་འབད།(~o)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "After the database file has been saved, what do you want to do?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ གནད་སྡུད་གཞི་རྟེན་གྱི་ཡིག་སྣོད་འདི་སྲུངས་པའི་ཤུལ་ལུ་ ག་ཅི་འབད་ནི་སྨོ?(~A)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Open the database for editing"
-msgstr ""
+msgstr "ཞུན་དག་གི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་ཁ་ཕྱེ།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Create tables using the table wizard"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཝི་ཛརཌི་ལག་ལེན་གྱི་ཐོག་ལས་ ཐིག་ཁྲམ་ཚུ་གསར་བསྐྲུན་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Click 'Finish' to save the database."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་སྲུང་ནིའི་དོན་ལུ་ 'Finish'ལུ་ ཨེབ་གཏང་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up connection to a MySQL database using JDBC"
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་ལག་ལེན་གྱི་ཐོག་ལས་ མའི་ཨེསི་ཀིའུ་ཨེལ་ གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་ལམ་གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "མའི་ཨེསི་ཀིའུ་ཨེལ་ གནད་སྡུད་གཞི་རྟེན་ལུ་མཐུད་ནིའི་དོན་ལུ་ ཇེ་ཌི་བི་སི་ལག་ལེན་གྱི་ཐོག་ལས་ དགོས་མཁོ་ཡོད་པའི་བརྡ་དོན་ བཙུགས་གནང་། ཁྱོད་རའི་རིམ་ལུགས་གུ་ལུ་ ཇེ་ཌི་བི་སི་ འདྲེན་བྱེད་དབྱེ་རིགས་འདི་ གཞི་བཙུགས་འབད་དགོཔ་དང་  %PRODUCTNAME གི་ཐོག་ལས་ ཐོ་འགོད་འབད་དགོཔ་སེམས་ཁར་དྲན།\nཁྱོད་ཀྱིས་ འོག་གི་སྒྲིག་སྟངས་ཚུའི་སྐོར་ལས་ངེས་ཏིག་མེད་པ་ཅིན་ ཁྱོད་རའི་རིམ་ལུགས་བདག་སྐྱོང་པ་དང་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
+#, fuzzy
 msgid  "MySQL JDBC d~river class:"
-msgstr ""
+msgstr "མའི་ཨེསི་ཀིའུ་ཨེལ་ ཇེ་ཌི་བི་སི་ འདྲེན་བྱེད་དབྱེ་རིགས་:(~r)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 3306"
-msgstr ""
+msgstr "སྔོན་སྒྲིག:༣༣༠༦"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up connection to a MySQL database"
-msgstr ""
+msgstr "MySQLགནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་ལམ་གཞི་སྒྲིག་འབད་"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "MySQL གནས་སྡུད་གཞི་རྟེན་ལུ་མཐུད་ལམ་བཟོ་ནིའི་དོན་ལུ་ མཁོ་ཆེའི་བརྡ་དོན་འདི་བཙུགས།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to dBASE files"
-msgstr ""
+msgstr "ཌི་བེསི་ཡིག་སྣོད་ཚུ་ལུ་ མཐུད་ལམ་གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Select the folder where the dBASE files are stored."
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.STRING.TEXT
-msgid  "Set up a connection to text files"
-msgstr ""
+msgstr "ཌི་བེསི་ཡིག་སྣོད་ཚུ་ གསོག་འཇོག་འབད་ཡོད་པའི་སྣོད་འཛིན་ སེལ་འཐུ་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "སི་ཨེསི་ཝི་(Comma Separated Values)ཚིག་ཡིག་ཡིག་སྣོད་ཚུ་ གསོག་འཇོག་འབད་ཡོད་པའི་སྣོད་འཛིན་ སེལ་འཐུ་འབད། %PRODUCTNAME གི་གཞི་རྟེན་གྱིས ལྷག་ནི་ཙམ་ཅིག་གི་ཐབས་ལམ་ནང་ལུ་ ཡིག་སྣོད་ཚུ་ཁ་ཕྱེ་འོང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Path to text files"
-msgstr ""
+msgstr "ཚིག་ཡིག་ཡིག་སྣོད་ཚུ་ལུ་ འགྲུལ་ལམ།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to a Microsoft Access database"
-msgstr ""
+msgstr "མའི་ཀོརོ་སོཕཊི་ཨེག་སེསི་ལུ་ མཐུད་ལམ་ཅིག་གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་འཛུལ་སྤྱོད་འབད་དགོ་མནོ་མི་ མའི་ཀོརོ་སོཕཊི་ཨེག་སེསི་གི་ཡིག་སྣོད་འདི་ སེལ་འཐུ་འབད་གནང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Set up a connection to an LDAP directory"
-msgstr ""
+msgstr "ཨེལ་ཌི་ཨེ་པི་སྣོད་ཐོ་ལུ་ མཐུད་ལམ་ཅིག་གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ཨེལ་ཌི་ཨེ་པི་ སྣོད་ཐོ་ལུ་ མཐུད་ནིའི་དོན་ལུ་ དགོས་མཁོ་ཡོད་པའི་བརྡ་དོན་བཙུགས་གནང་།\nཁྱོད་ཀྱིས་ འོག་གི་སྒྲིག་སྟངས་ཚུ་གི་སྐོར་ལས་ ངེས་ཏིག་མེད་པ་ཅིན་ ཁྱོད་རའི་རིམ་ལུགས་བདག་སྐྱོང་པ་དང་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 389"
-msgstr ""
+msgstr "སྔོན་སྒྲིག:༣༨༩"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use ~secure connection (SSL)"
-msgstr ""
+msgstr "མཐའ་བཙན་གྱི་མཐུད་ལམ་(ཨེསི་ཨེསི་ཨེལ་) ལག་ལེན་འཐབ།(~s)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an Adabas D database"
-msgstr ""
+msgstr "ཨེ་ཌ་བསི་ ཌི་ གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་མཐུད་དགོ་མནོ་སའི་ ཨེ་ཌ་བསི་ ཌི་ གནད་སྡུད་གཞི་རྟེན་གྱི་མིང་ བཙུགས།\nཧེ་མ་ལས་ %PRODUCTNAME ནང་ལུ་ ཐོ་འགོད་འབད་ཡོད་པའི་ཨེ་ཌ་བསི་ ཌི་ གནད་སྡུད་གཞི་རྟེན་འདི་ སེལ་འཐུ་འབད་ནིའི་དོན་ལུ་ 'Browse...' ཨེབ་གཏང་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an ADO database"
-msgstr ""
+msgstr "ཨེ་ཌི་ཨོ་གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་མཐུད་དགོ་མནོ་སའི་ ཨེ་ཌི་ཨོ་ གནད་སྡུད་འབྱུང་ཁུངས་ཀྱི་ ཡུ་ཨར་ཨེལ་འདི་ བཙུགས་གནང་།\nབྱིན་མཁན་-དམིགས་བསལ་སྒྲིག་སྟངས་ཚུ་ རིམ་སྒྲིག་འབད་ནིའི་དོན་ལུ་ 'Browse' ཨེབ་གཏང་འབད། ཁྱོད་ཀྱིས་ འོག་གི་སྒྲིག་སྟངས་ཚུ་གི་སྐོར་ལས་ ངེས་ཏིག་མེད་པ་ཅིན་ ཁྱོད་རའི་བདག་སྐྱོང་པ་དང་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an ODBC database"
-msgstr ""
+msgstr "ཨོ་ཌི་བི་སི་གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ མཐུད་དགོ་མནོ་སའི་ཨོ་ཌི་བི་སི་ གནད་སྡུད་གཞི་རྟེན་གྱི་མིང་འདི་ བཙུགས།\nཧེ་མ་ལས་ %PRODUCTNAME ནང་ལུ་ ཐོ་འགོད་འབད་ཡོད་པའི་ ཨོ་ཌི་བི་སི་ གནད་སྡུད་གཞི་རྟེན་འདི་ སེལ་འཐུ་འབད་ནིའི་དོན་ལུ་ 'Browse...' ཨེབ་གཏང་འབད། ཁྱོད་ཀྱིས་ འོག་གི་སྒྲིག་སྟངས་ཚུའི་སྐོར་ལས་ ངེས་ཏིག་མེད་པ་ཅིན་ ཁྱོད་རའི་བདག་སྐྱོང་པ་དང་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to a JDBC database"
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ཇེ་ཌི་བི་སི་ གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་ནིའི་དོན་ལུ་ དགོས་མཁོ་ཡོད་པའི་བརྡ་དོན་འདི་ བཙུགས་གནང་།\nཁྱོད་ཀྱིས་ འོག་གི་སྒྲིག་སྟངས་ཚུའི་སྐོར་ལས་ ངེས་ཏིག་མེད་པ་ཅིན་ ཁྱོད་རའི་བདག་སྐྱོང་པ་དང་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to an Oracle database"
-msgstr ""
+msgstr "ཨོ་རེ་ཀཱལ་གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་ལམ་ གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Default: 1521"
-msgstr ""
+msgstr "སྔོན་སྒྲིག་:༡༥༢༡"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Oracle JDBC ~driver class"
-msgstr ""
+msgstr "ཨོ་རེ་ཀཱལ་ ཇེ་ཌི་བི་སི་ འདྲེན་བྱེད་དབྱེ་རིགས།(~d)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ཨོ་རེ་ཀཱལ་གནད་སྡུད་གཞི་རྟེན་ལུ་མཐུད་ནིའི་དོན་ལུ་ དགོས་མཁོ་ཡོད་པའི་བརྡ་དོན་འདི་ བཙུགས་གནང་། ཁྱོད་རའི་རིམ་ལུགས་གུ་ལུ་ ཇེ་ཌི་བི་སི་ འདྲེན་བྱེད་དབྱེ་རིགས་འདི་ གཞི་བཙུགས་འབད་དགོཔ་དང་  %PRODUCTNAME གི་ཐོག་ལས་ ཐོ་འགོད་འབད་དགོཔ་སེམས་ཁར་དྲན།\nཁྱོད་ཀྱིས་ འོག་གི་སྒྲིག་སྟངས་ཚུའི་སྐོར་ལས་ངེས་ཏིག་མེད་པ་ཅིན་ ཁྱོད་རའི་རིམ་ལུགས་བདག་སྐྱོང་པ་དང་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Set up a connection to spreadsheets"
-msgstr ""
+msgstr "ཤོག་ཁྲམ་ཚུ་ལུ་ མཐུད་ལམ་ཅིག་གཞི་སྒྲིག་འབད།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr " %PRODUCTNAME གི་ཤོག་ཁྲམ་ཅིག་ ཡང་ན་ མའི་ཀོརོ་སོཕཊི་ ཨེག་སིལ་གྱི་workbookའདི་ སེལ་འཐུ་འབད་ནིའི་དོན་ལུ་ 'Browse...' ཨེབ་གཏང་འབད།\n%PRODUCTNAME འདི་གིས་ ལྷག་ནི་ཙམ་ཅིག་གི་ཐབས་ལམ་ནང་ལུ་ ཡིག་སྣོད་ཚུ་ཁ་ཕྱེ་འོང་།"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
+#, fuzzy
 msgid  "~Location and file name"
-msgstr ""
+msgstr "གནས་ཁོངས་དང་ཡིག་སྣོད་མིང་།(~L)"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Password required"
-msgstr ""
+msgstr "ཆོག་ཡིག་དགོས་མཁོ་ཡོདཔ།(~P)"
 
 #: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use catalog for file-based databases"
-msgstr ""
+msgstr "ཡིག་སྣོད་ལུ་བརྟེན་པའི་གནད་སྡུད་གཞི་རྟེན་ཚུ་གི་དོན་ལུ་ ཐོ་གཞུང་ལག་ལེན་འཐབ།"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Connection Settings"
-msgstr ""
+msgstr "མཐུད་ལམ་གྱི་སྒྲིག་སྟངས་ཚུ།"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Host name"
-msgstr ""
+msgstr "ཧོསཊི་གི་མིང་།(~H)"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port number"
-msgstr ""
+msgstr "འདྲེན་ལམ་གྱི་ཨང་།(~P)"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "Advanced Properties"
-msgstr ""
+msgstr "མཐོ་རིམ་ཅན་གྱི་རྒྱུ་དངོས་ཚུ།"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.STRING.TEXT
+#, fuzzy
 msgid  "Additional Settings"
-msgstr ""
+msgstr "ཁ་སྐོང་སྒྲིག་སྟངས་ཚུ།"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Connection settings"
-msgstr ""
+msgstr "མཐུད་ལམ་གྱི་སྒྲིག་སྟངས་ཚུ།"
 
 #: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
+#, fuzzy
 msgid  "Database properties"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#DLG_DATABASE_TYPE_CHANGE.TABCONTROL.TEXT
-msgid  "Database properties"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ རྒྱུ་དངོས་ཚུ།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr ""
+msgstr "%PRODUCTNAME གནད་སྡུད་གཞི་རྟེན་ ཝི་ཛརཌི་ལུ་ འབྱོན་པ་ལེགས་སོ།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གསརཔ་ གསར་བསྐྲུན་འབད་ནིའི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་ཝི་ཛརཌི་འདི་ ལག་ལེན་འཐབ་ནི་དང་ ཡོད་བཞིན་པའི་གནད་སྡུད་གཞི་རྟེན་གྱི་ཡིག་སྣོད་འདི་ཁ་ཕྱེ་ ཡང་ན་ སར་བར་གུ་ གསོག་འཇོག་འབད་ཡོད་པའི་གནད་སྡུད་གཞི་རྟེན་ལུ་མཐུད།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "What do you want to do?"
-msgstr ""
+msgstr "ཁྱོད་ ག་ཅི་འབད་དགོ་མནོཝ་སྨོ?"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Create a n~ew database"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གསརཔ་ཅིག་ གསར་བསྐྲུན་འབད།(~e)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open an existing database ~file"
-msgstr ""
+msgstr "ཡོད་བཞིན་པའི་གནད་སྡུད་གཞི་རྟེན་གྱི་ཡིག་སྣོད་འདི་ ཁ་ཕྱེ།(~f)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Recently used"
-msgstr ""
+msgstr "འཕྲལ་ཁམས་ཅིག་ཁར་ ལག་ལེན་འཐབ་ཡོདཔ།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Connect to an e~xisting database"
-msgstr ""
+msgstr "ཡོད་བཞིན་པའི་གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད།(~x)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ མཐུད་ལམ་ཅིག་གཞི་བཙུགས་འབད་དགོ་མནོ་མི་ གནད་སྡུད་གཞི་རྟེན་གྱི་དབྱེ་བ་འདི་ སེལ་འཐུ་འབད།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database ~type "
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་དབྱེ་བ།(~t)"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ འོག་གི་ཤོག་ལེབ་ཚུ་གུ་ མཐུད་ལམ་གྱི་དོན་ལུ་ རྒྱས་བཤད་ཅན་གྱི་སྒྲིག་སྟངས་ཚུ་བཟོ་ཚུགས།\n\nཁྱོད་ཀྱིས་བཟོ་མི་ སྒྲིག་སྟངས་གསརཔ་ཚུ་གིས་ ཡོད་བཞིན་པའི་སྒྲིག་སྟངས་ཚུ་ ཚབ་སྲུང་འབད་འོང་།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
+#, fuzzy
 msgid  "MySQL"
-msgstr ""
+msgstr "མའི་ཨེསི་ཀིའུ་ཨེལ།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Data Source Properties: #"
-msgstr ""
+msgstr "གནད་སྡུད་འབྱུང་ཁུངས་ཀྱི་རྒྱུ་དངོས་ཚུ: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
+#, fuzzy
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "ལས་རིམ་དཔེ་མཛོད་ #lib# འདི་ མངོན་གསལ་འབད་མ་ཚུགས་ ཡང་ན་ འདི་ངན་ཅན་བཟོ་ནུག ཨོ་ཌི་བི་སི་ གནད་སྡུད་འབྱུང་ཁུངས་ཀྱི་སེལ་འཐུ་འདི་ མི་ཐོབ།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "མཉེན་རིམ་གུ་ལུ་ འདི་བཟུམ་གྱི་གནད་སྡུད་འབྱུང་ཁུངས་འདི་ རྒྱབ་སྐྱོར་མ་འབད།\nཁྱོད་ཀྱིས་སྒྲིག་སྟངས་ཚུ་ བསྒྱུར་བཅོོས་འབད་ཆོག་ དེ་འབདཝ་ད་ ཁྱོད་ཀྱིས་གནད་སྡུད་གཞི་རྟེན་ལུ་ མཐུད་མི་ཚུགས་འོང་།"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ཡོངས་ཁྱབ།"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Optional settings"
-msgstr ""
+msgstr "གདམ་ཁ་ཅན་གྱི་སྒྲིག་སྟངས་ཚུ།"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Display deleted records as well"
-msgstr ""
+msgstr "བཏོན་གཏང་ཡོད་པའི་དྲན་ཐོ་ཚུ་ཡང་ བཀྲམ་སྟོན་འབད།"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "དྲན་དགོཔ་:བཏོན་གཏང་ཡོད་པའི་སྐབས་དང་ཤུགས་ལྡན་མེན་པའི་སྐབས་ དྲན་ཐོ་ཚུ་བཀྲམ་སྟོན་འབདཝ་ཨིན་ ཁྱོད་ཀྱིས་གནད་སྡུད་འབྱུང་ཁུངས་ནང་ལས་ དྲན་ཐོ་ཚུ་བཏོན་གཏང་མི་ཚུགས།"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Indexes..."
-msgstr ""
+msgstr "ཟུར་ཐོ་ཚུ་་་་"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Optional Settings"
-msgstr ""
+msgstr "གདམ་ཁ་ཅན་གྱི་སྒྲིག་སྟངས་ཚུ།"
 
 #: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "ODBC ~options"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FIXEDTEXT.TEXT
-msgid  "~Host name"
-msgstr ""
+msgstr "ཨོ་ཌི་བི་སི་ གདམ་ཁ་ཚུ།(~o)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "གནད་སྡུད་གནད་ཁོངས་ཚད་(ཨེམ་བི་)(_b)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data increment (MB)"
-msgstr ""
+msgstr "གནད་སྡུད་ཡར་འཕར་(ཨེམ་བི་)(_D)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Administration"
-msgstr ""
+msgstr "བདག་སྐྱོང་།"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Control ~user name"
-msgstr ""
+msgstr "ཚད་འཛིན་ལག་ལེན་པའི་མིང་(_u)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Control ~password"
-msgstr ""
+msgstr "ཚད་འཛིན་ཆོག་ཡིག་(_p)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME ཁ་བསྡམ་པའི་སྐབས་ ཞབས་ཏོག་ཁ་བསྡམས་ (_S)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "E~xtended..."
-msgstr ""
+msgstr "རྒྱ་བསྐྱེད་ཅན་་་་་་(_x)"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "MySQL JDBC d~river class"
-msgstr ""
+msgstr "མའི་ཨེསི་ཀིའུ་ཨེལ་ ཇེ་ཌི་བི་སི་ འདྲེན་བྱེད་དབྱེ་རིགས།(~r)"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Test class"
-msgstr ""
+msgstr "དབྱེ་རིགས་ བརྟག་དཔྱད་འབད།"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User authentication"
-msgstr ""
+msgstr "ལག་ལེན་པའི་བདེན་བཤད།"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User name"
-msgstr ""
+msgstr "ལག་ལེན་པའི་མིང་།(~U)"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Password required"
-msgstr ""
+msgstr "ཆོག་ཡིག་དགོས་མཁོ་ཡོདཔ།"
 
 #: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Oracle JDBC d~river class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test class"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Connection Settings"
-msgstr ""
+msgstr "ཨོ་རེ་ཀཱལ་ ཇེ་ཌི་བི་སི་ འདྲེན་བྱེད་དབྱེ་རིགས།(~r)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Base DN"
-msgstr ""
+msgstr "གཞི་རྟེན་ ཌི་ཨེན།(~B)"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use secure connection(SSL)"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "མཐའ་བཙན་གྱི་མཐུད་ལམ་ ལག་ལེན་འཐབ་(ཨེསི་ཨེསི་ཨེལ་)།"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Maximum number of ~records"
-msgstr ""
+msgstr "དྲན་ཐོ་ཚུའི་ཨང་གྲངས་ མང་མཐའ།(~r)"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Hostname"
-msgstr ""
-
-#: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr ""
+msgstr "ཧོསཊི་མིང་།(~H)"
 
 #: ui/dlg/dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Driver settings"
-msgstr ""
+msgstr "འདྲེན་བྱེད་ཀྱི་སྒྲིག་སྟངས་ཚུ།(~D)"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
+#, fuzzy
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "ད་ལྟོ་ཡོད་པའི་གནས་སྡུད་གཞི་རྟེན་ལུ་མཐུན་ལམ་བཟོ་ནིའི་དོན་ལུ་ \"ད་ལྟོ་ཡོད་པའི་གནས་སྡུད་གཞི་རྟེན་ལུ་མཐུད་\" ཟེར་མི་འདི་གདམ་ཁ་རྐྱབས།"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Indexes"
-msgstr ""
+msgstr "ཟུར་ཐོ་ཚུ།"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Table"
-msgstr ""
+msgstr "ཐིག་ཁྲམ།(~T)"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Assignment"
-msgstr ""
+msgstr "འགན་ལས།"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~able indexes"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གྱི་ཟུར་ཐོ་ཚུ།(~a)"
 
 #: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Free indexes"
-msgstr ""
+msgstr "ཟུར་ཐོ་ཚུ་སྟོངམ་སྟོན།(~F)"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "SQL command"
-msgstr ""
+msgstr "ཨེསི་ཀིའུ་ཨེལ་ བརྡ་བཀོད།"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Command to execute"
-msgstr ""
+msgstr "ལག་ལེན་འཐབ་ནིའི་དོན་ལུ་ བརྡ་བཀོད།"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Execute"
-msgstr ""
+msgstr "ལག་ལེན་འཐབ་ནི།"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Previous commands"
-msgstr ""
+msgstr "ཧེ་མའི་བརྡ་བཀོད་ཚུ།"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr "གནས་ཚད།"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ཁ་བསྡམ།"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Execute SQL Statement"
-msgstr ""
+msgstr "ཨེསི་ཀིའུ་ཨེལ་གསལ་བཤད་ ལག་ལེན་འཐབ།"
 
 #: ui/dlg/directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.STRING.TEXT
+#, fuzzy
 msgid  "Command successfully executed."
-msgstr ""
+msgstr "བརྡ་བཀོད་འདི་ མཐར་འཁྱོལ་སྦེ་ ལག་ལེན་འཐབ་ཅི།"
 
 #: ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་ལུ་ཡོད་པའི་མཐུད་ལམ་འདི་ བརླག་སྟོར་ཞུགས་ནུག ཌའི་ལོག་འདི་ ཁ་བསྡམ་འོང་།"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Field Format"
-msgstr ""
+msgstr "ས་སྒོའི་རྩ་སྒྲིག"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Bac~k"
-msgstr ""
+msgstr "རྒྱབ།(~k)"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "ཡིག་གཟུགས།"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "རྩ་སྒྲིག"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "ཕྲང་སྒྲིག"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
+#, fuzzy
 msgid  "Table Format"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་རྩ་སྒྲིག"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Save As"
-msgstr ""
+msgstr "བཟུམ་སྦེ་ སྲུངས།"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please enter a name for the object to be created:"
-msgstr ""
+msgstr "གསར་བསྐྲུན་འབད་ནི་ཨིན་པའི་ དངོས་པོའི་དོན་ལུ་ མིང་བཙུགས་གནང་:"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Catalog"
-msgstr ""
+msgstr "ཐོ་གཞུང་།(~C)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Schema"
-msgstr ""
+msgstr "ལས་འཆར།(~S)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Table Name"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གྱི་མིང་།(~T)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Name of table view"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་མཐོང་སྣང་གི་མིང་།(~N)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Query name"
-msgstr ""
+msgstr "འདྲི་དཔྱད་མིང་།(~Q)"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
+#, fuzzy
 msgid  "Rename to"
-msgstr ""
+msgstr "ལུ་ བསྐྱར་མིང་བཏགས།"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
+#, fuzzy
 msgid  "Insert as"
-msgstr ""
+msgstr "བཟུམ་སྦེ་ བཙུགས།"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Height"
-msgstr ""
+msgstr "མཐོ་ཚད།(~H)"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "རང་བཞིན་གྱི།(~A)"
 
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Row Height"
-msgstr ""
+msgstr "གྲལ་རིམ་མཐོ་ཚད།"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Width"
-msgstr ""
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.CB_STANDARD.CHECKBOX.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "རྒྱ་ཚད།(~W)"
 
 #: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Column Width"
-msgstr ""
+msgstr "ཀེར་ཐིག་གི་རྒྱ་ཚད།"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Data Source"
-msgstr ""
+msgstr "གནད་སྡུད་འབྱུང་ཁུངས།"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose a data source:"
-msgstr ""
+msgstr "གནད་སྡུད་ཀྱི་འབྱུང་ཁུངས་ གདམ།"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Organize..."
-msgstr ""
+msgstr "འགོ་འདྲེན་འཐབ་་་་"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Create..."
-msgstr ""
+msgstr "གསར་བསྐྲུན་འབད་་་་་"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
+#, fuzzy
 msgid  "Local Databases"
-msgstr ""
+msgstr "ཉེ་གནས་ཀྱི་གནད་སྡུད་གཞི་རྟེན་ཚུ།"
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
+#, fuzzy
 msgid  "Choose a database"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་ གདམ།"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Indexes"
-msgstr ""
+msgstr "ཟུར་ཐོ་ཚུ།"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "New Index"
-msgstr ""
+msgstr "ཟུར་ཐོ་གསརཔ།"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Delete Current Index"
-msgstr ""
+msgstr "ད་ལྟོའི་ཟུར་ཐོ་འདི་ བཏོན་གཏང་།"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Rename Current Index"
-msgstr ""
+msgstr "ད་ལྟོའི་ཟུར་ཐོ་འདི་ བསྐྱར་མིང་བཏགས།"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Save Current Index"
-msgstr ""
+msgstr "ད་ལྟོའི་ཟུར་ཐོ་འདི་ སྲུངས།"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Reset Current Index"
-msgstr ""
+msgstr "ད་ལྟོའི་ཟུར་ཐོ་འདི་ སླར་སྒྲིག་འབད།"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Index details"
-msgstr ""
+msgstr "ཟུར་ཐོའི་རྒྱས་བཤད་ཚུ།"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Index identifier:"
-msgstr ""
+msgstr "ཟུར་ཐོ་ངོས་འཛིན་པ:"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Unique"
-msgstr ""
+msgstr "ཐུན་མོང་མ་ཡིན་པ།(~U)"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Fields"
-msgstr ""
+msgstr "ས་སྒོ་ཚུ།"
 
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "ཁ་བསྡམ།(~C)"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
+#, fuzzy
 msgid  "Sort order"
-msgstr ""
+msgstr "གོ་རིམ་ དབྱེ་སེལ་འབད།"
 
 #: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
+#, fuzzy
 msgid  "Index field"
-msgstr ""
+msgstr "ཟུར་ཐོའི་ས་སྒོ"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
-msgstr ""
+msgstr "ཡར་འཛེགས།"
 
 #: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
-msgstr ""
+msgstr "མར་འབབ།"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete the index '$name$'?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཟུར་ཐོ '$name$'འདི་  ཐད་རི་འབའ་རི་བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: ui/dlg/indexdialog.src#STR_LOGICAL_INDEX_NAME.STRING.TEXT
+#, fuzzy
 msgid  "index"
-msgstr ""
+msgstr "ཟུར་ཐོ།"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
+#, fuzzy
 msgid  "Save Index"
-msgstr ""
+msgstr "ཟུར་ཐོ་འདི་ སྲུངས།"
 
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The index must contain at least one field."
-msgstr ""
+msgstr "ཟུར་ཐོ་འདི་ནང་ཉུང་མཐའ་ ས་སྒོ་ཅིག་དགོ"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Exit Index Design"
-msgstr ""
+msgstr "ཟུར་ཐོའི་བཀོད་སྒྲིག་ ཕྱིར་ཐོན།"
 
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to save the changes made to the current index?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ད་ལྟོའི་ཟུར་ཐོ་ནང་ལུ་ བསྒྱུར་བཅོས་འབད་འབདཝ་ཚུ་སྲུང་ནི་ཨིན་ན?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
+#, fuzzy
 msgid  "There is already another index named \"$name$\"."
-msgstr ""
+msgstr "\"$name$\" ཟེར་མིང་བཏགས་ཡོད་པའི་ཟུར་ཐོ་གཞན་ཅིག་ ཧེ་མ་ལས་རང་འདུག"
 
 #: ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
-msgstr ""
+msgstr "ཟུར་ཐོའི་ངེས་ཚིག་གཅིག་ནང་ ཐིག་ཁྲམ་ཀེར་ཐིག་ཚར་ཅིག་ལས་བརྒལ་ མི་འབྱུང་ཨིན་རུང་ཁྱོད་ཀྱིས་ ཀེར་ཐིག་\"$name$\" ཚར་གཉིས་བཙུགས་ནུག"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "~Parameters"
-msgstr ""
+msgstr "ཚད་བཟུང་ཚུ།(~P)"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Value"
-msgstr ""
+msgstr "བེ་ལུ།(~V)"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next"
-msgstr ""
+msgstr "ཤུལ་མམ།(~N)"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Parameter Input"
-msgstr ""
+msgstr "ཚད་བཟུང་གི་ཨིན་པུཊི།"
 
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
+#, fuzzy
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
-msgstr ""
+msgstr " \"$name$\"ཀེར་ཐིག་གི་དོན་ལུ་ ཐོ་བཀོད་འདི་ ནུས་ཅན་གྱི་བེ་ལུ་ལུ་ གཞི་བསྒྱུར་འབད་མ་ཚུགས།"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Standard Filter"
-msgstr ""
+msgstr "ཚད་ལྡན་གྱི་ཚགས་མ།"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "AND"
-msgstr ""
+msgstr "དང་།"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "OR"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "AND"
-msgstr ""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.DEFAULT.STRINGLIST.ITEM
-msgid  "OR"
-msgstr ""
+msgstr "ཡང་ན།"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "ས་སྒོའི་མིང་།"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Condition"
-msgstr ""
+msgstr "གནས་སྟངས།"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "བེ་ལུ།"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
-msgstr ""
+msgstr "བཀོལ་སྤྱོད་པ།"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Criteria"
-msgstr ""
+msgstr "ཁྱད་ཚད།"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
+#, fuzzy
 msgid  "- none -"
-msgstr ""
+msgstr "- ཅི་མེད། -"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.STRING.TEXT
+#, fuzzy
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
+msgstr "=;<>;<;<=;>;>=;འདྲ་བ་;མི་འདྲ་བ་;སྟོང་ཆ་;སྟོང་ཆ་མེནམ།"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Sort Order"
-msgstr ""
+msgstr "གོ་རིམ་ དབྱེ་སེལ་འབད།"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "ascending"
-msgstr ""
+msgstr "ཡར་འཛེགས།"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "ascending"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.DEFAULT.STRINGLIST.ITEM
-msgid  "descending"
-msgstr ""
+msgstr "མར་འབབ།"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "ས་སྒོའི་མིང་།"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "and then"
-msgstr ""
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.FIXEDTEXT.TEXT
-msgid  "and then"
-msgstr ""
+msgstr "དང་ དེ་ལས།"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
-msgstr ""
+msgstr "བཀོལ་སྤྱོད་པ།"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Order"
-msgstr ""
+msgstr "གོ་རིམ།"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sort order"
-msgstr ""
+msgstr "གོ་རིམ་ དབྱེ་སེལ་འབད།"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
-msgstr ""
+msgstr "<none>"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Relations"
-msgstr ""
+msgstr "མཐུན་འབྲེལ་ཚུ་།"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
-msgstr ""
+msgstr "འབྲེལ་བ་ཡོད་པའི་ ཐིག་ཁྲམ་ཚུ།"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
-msgstr ""
+msgstr "འབྲེལ་བ་ཡོད་པའི་ ས་སྒོ་ཚུ།"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Update options"
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ་ དུས་མཐུན་བཟོ།"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No action"
-msgstr ""
+msgstr "བྱ་བ་མེད།(~N)"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Update cascade"
-msgstr ""
+msgstr "ཀེསི་ཀེཌི་ དུས་མཐུན་བཟོ།(~U)"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Set null"
-msgstr ""
+msgstr "སྟོང་ཆ་ གཞི་སྒྲིག་འབད།(~S)"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Set ~default"
-msgstr ""
+msgstr "སྔོན་སྒྲིག་ གཞི་སྒྲིག་འབད།(~d)"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Delete options"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "~No action"
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ་བཏོན་གཏང་།"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Delete ~cascade"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.RADIOBUTTON.TEXT
-msgid  "~Set null"
-msgstr ""
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Set ~default"
-msgstr ""
+msgstr "ཀེསི་ཀེཌི་ བཏོན་གཏང་།(~c)"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Base"
-msgstr ""
+msgstr "%PRODUCTNAME གཞི་རྟེན།"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Details"
-msgstr ""
+msgstr "རྒྱས་བཤད་ཚུ་"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Error ~list:"
-msgstr ""
+msgstr "འཛོལ་བའི་ཐོ་ཡིག:(~l)"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description:"
-msgstr ""
+msgstr "འགྲེལ་བཤད:(~D)"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "SQL Status"
-msgstr ""
+msgstr "ཨེསི་ཀིའུ་ཨེལ་ གནས་ཚད།"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
+#, fuzzy
 msgid  "Error code"
-msgstr ""
+msgstr "འཛོལ་བའི་ཨང་རྟགས།"
 
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "འཛོལ་བ་འདི་འཕྲལ་འཕྲལ་སྦེ་ འབྱུང་དགོ་པའི་རྒྱུ་མཚན་འདི་ ཁྱོད་རའི་གནད་སྡུད་གཞི་རྟེན་གྱི་སྐད་ཡིག་གི་དོན་ལུ་ ཡིག་འབྲུ་གཞི་སྒྲིག་ སྒྲིག་སྟངས་འདི་འོས་འབབ་མེདཔ་མས། ཞུན་དག་- གནད་སྡུད་གཞི་རྟེན་- རྒྱུ་དངོས་ཚུ་གདམ་ཁའི་ཐོག་ལས་ སྒྲིག་སྟངས་ཞིབ་དཔྱད་འབད།"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error"
-msgstr ""
+msgstr "འཛོལ་བ།"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning"
-msgstr ""
+msgstr "ཉེན་བརྡ་འབད་དོ།"
 
 #: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
+#, fuzzy
 msgid  "Information"
-msgstr ""
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_DETAILS.STRING.TEXT
-msgid  "Details"
-msgstr ""
+msgstr "བརྡ་དོན།"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Text Connection Settings"
-msgstr ""
+msgstr "ཚིག་ཡིག་མཐུད་ལམ་གྱི་སྒྲིག་སྟངས་ཚུ་"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.STRING.TEXT
+#, fuzzy
 msgid  "User Settings"
-msgstr ""
+msgstr "ལག་ལེན་པའི་སྒྲིག་སྟངས་ཚུ།"
 
 #: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
+#, fuzzy
 msgid  "User administration"
-msgstr ""
+msgstr "ལག་ལེན་པའི་བདག་སྐྱོང་།"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User selection"
-msgstr ""
+msgstr "ལག་ལེན་པའི་སེལ་འཐུ།"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Us~er:"
-msgstr ""
+msgstr "ལག་ལེན་པ:(~e)"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add User..."
-msgstr ""
+msgstr "ལག་ལེན་པ་ ཁ་སྐོང་རྐྱབས་་་་(~A)"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Change ~Password..."
-msgstr ""
+msgstr "ཆོག་ཡིག་ བསྒྱུར་བཅོས་འབད་་་་(~P)"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete User..."
-msgstr ""
+msgstr "ལག་ལེན་པ་ བཏོན་གཏང་་་་་(~D)"
 
 #: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Access rights for selected user"
-msgstr ""
+msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ལག་ལེན་པའི་དོན་ལུ་ ཐོབ་དབང་འཛུལ་སྤྱོད་འབད།"
 
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you really want to delete the user?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཐད་རི་འབའ་རི་ལག་ལེན་པ་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: ui/dlg/UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support user administration."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་འདི་གིས་ ལག་ལེན་པའི་བདག་སྐྱོང་ལུ་ རྒྱབ་སྐྱོར་མི་འབད་བས།"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "User \"$name$:  $\""
-msgstr ""
+msgstr "ལག་ལེན་པ་\"$name$:  $\"།"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Old p~assword"
-msgstr ""
+msgstr "ཆོག་ཡིག་རྙིངམ།(~a)"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "ཆོག་ཡིག(~P)"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Confirm  password"
-msgstr ""
+msgstr "ཆོག་ཡིག་ངེས་དཔྱད་འབད།(~C)"
 
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Change Password"
-msgstr ""
+msgstr "ཆོག་ཡིག་ བསྒྱུར་བཅོས་འབད།"
 
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
+#, fuzzy
 msgid  "The passwords do not match. Please enter the password again."
-msgstr ""
+msgstr "ཆོག་ཡིག་ཚུ་ མི་མཐུན་པས། ལོག་སྟེ་ཆོག་ཡིག་བཙུགས་གནང་།"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Refresh"
-msgstr ""
+msgstr "ཡང་སེལ་འབད།"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~View Design"
-msgstr ""
+msgstr "མཐོང་སྣང་བཀོད་སྒྲིག་ གསརཔ།(~V)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~Table Design"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་བཀོད་སྒྲིག་ གསརཔ།(~T)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
+#, fuzzy
 msgid  "Query AutoPilot..."
-msgstr ""
+msgstr "ཨོ་ཊོ་པའི་ལོཊི་ འདྲི་དཔྱད་་་་"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "New ~Query (Design View)"
-msgstr ""
+msgstr "འདྲི་དཔྱད་གསརཔ་ (བཀོད་སྒྲིག་མཐོང་སྣང་)།(~Q)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Edit Query"
-msgstr ""
+msgstr "འདྲི་དཔྱད་ ཞུན་དག་འབད།(~E)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
+#, fuzzy
 msgid  "New Query (~SQL View)"
-msgstr ""
+msgstr "འདྲི་དཔྱད་གསརཔ་(ཨེསི་ཀིའུ་ཨེལ་ མཐོང་སྣང་)།(~S)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
+#, fuzzy
 msgid  "Edit..."
-msgstr ""
+msgstr "ཞུན་དག་་་་"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
+#, fuzzy
 msgid  "Column ~Width..."
-msgstr ""
+msgstr "ཀེར་ཐིག་གི་རྒྱ་ཚད་་་་་(~W)"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
+#, fuzzy
 msgid  "Report Wizard..."
-msgstr ""
+msgstr "ཝི་ཛརཌི་ སྙན་ཞུ་འབད་་་་་"
 
 #: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Form AutoPilot..."
-msgstr ""
+msgstr "ཨོ་ཊོ་པའི་ལོཊི་ གཞི་སྒྲུབ་འབད་་་"
 
 #: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
+#, fuzzy
 msgid  "System"
-msgstr ""
+msgstr "རིམ་ལུགས།"
 
 #: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
+#, fuzzy
 msgid  "Error during creation"
-msgstr ""
+msgstr "གསར་བསྐྲུན་འབད་བའི་བསྒང་ལུ་ འཛོལ་བ།"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "རེ་བ་མེད་པའི་འཛོལ་བ་བྱུང་ཡི། བཀོལ་སྤྱོད་ཀྱི་ལས་འགན་འགྲུབ་མ་ཚུགས།"
 
 #: ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.STRING.TEXT
+#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
-msgstr ""
+msgstr "\"$file$\" ཡིག་ཆ་འདི་ཁ་ཕྱེ་མ་ཚུགས།"
 
 #: ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་འདི་བཏོན་མི་ཚུགས་ ག་ཅི་འབད་ཟེར་བ་ཅིན་ གནད་སྡུད་གཞི་རྟེན་གྱི་མཐུད་ལམ་གྱིས་ འདི་ལུ་རྒྱབ་སྐྱོར་མི་འབད་བས།"
 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
+#, fuzzy
 msgid  "~All"
-msgstr ""
+msgstr "ཆ་མཉམ།(~A)"
 
 #: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
+#, fuzzy
 msgid  "Undo:"
-msgstr ""
+msgstr "འབད་བཤོལ་:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
+#, fuzzy
 msgid  "Redo:"
-msgstr ""
+msgstr "ལོག་འབད་:"
 
 #: ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
-msgstr ""
+msgstr "ཀེར་ཐིག་ '#1' གི་དོན་ལུ་ ཆ་མཉམ་པའི་ཀེར་ཐིག་གི་དབྱེ་བ་མ་ཐོབ།"
 
 #: ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
-msgstr ""
+msgstr "ཡིག་སྣོད་ \"$file$\" འདི་ མིན་འདུག"
 
 #: ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.STRING.TEXT
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
-msgstr ""
+msgstr "ཉེན་བརྡ་ཚུ་ གནད་སྡུད་འབྱུང་ཁུངས་ལུ་མཐུད་པའི་སྐབས་ གདོང་ཐུག་བྱུང་ནུག དེ་ཚུ་བལྟ་ནིའི་དོན་ལས་ \"$buttontext$\"ལུ་ཨེབས།"
 
 #: ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "མིང་  '$#$' འདི་ ཧེ་མ་ལས་ར་ཡོདཔ་ཨིན། \nམིང་གཞན་ཅིག་བཙུགས་གནང་།"
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Apply columns"
-msgstr ""
+msgstr "ཀེར་ཐིག་ཚུ་ འཇུག་སྤྱོད་འབད།"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Type formatting"
-msgstr ""
+msgstr "རྩ་སྒྲིག་ཡིག་དཔར་རྐྱབས།"
 
 #: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
+#, fuzzy
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "འོག་གི་ས་སྒོ་ཚུ་ཧེ་མ་ལས་རང་ ལྡེ་མིག་གཙོ་བོ་འབད་གཞི་སྒྲིག་འབད་ཡི་:\n"
 
 #: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
+#, fuzzy
 msgid  "Assign columns"
-msgstr ""
+msgstr "ཀེར་ཐིག་ཚུ་ འགན་སྤྲོད་འབད།"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Copy RTF Table"
-msgstr ""
+msgstr "ཨར་ཊི་ཨེཕ་ ཐིག་ཁྲམ་ འདྲ་བཤུས་རྐྱབས།"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "གྲོགས་རམ།(~H)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Cancel"
-msgstr ""
+msgstr "ཆ་མེད་གཏང་།(~C)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "< ~Back"
-msgstr ""
+msgstr "< རྒྱབ།(~B)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next>"
-msgstr ""
+msgstr "ཤུལ་མམ་>(~N)"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "C~reate"
-msgstr ""
+msgstr "གསར་བསྐྲུན་འབད།(~r)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Existing columns"
-msgstr ""
+msgstr "ཡོད་བཞིན་པའི་ཀེར་ཐིག་ཚུ།"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Column information"
-msgstr ""
+msgstr "ཀེར་ཐིག་བརྡ་དོན།"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Automatic type recognition"
-msgstr ""
+msgstr "རང་བཞིན་གྱིས་དབྱེ་བའི་ངོས་འཛིན།"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Lines (ma~x)"
-msgstr ""
+msgstr "གྱལ་རིམ་ཚུ་ (མང་མཐའ་)།(~x)"
 
 #: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
-msgstr ""
+msgstr "ལྡེ་མིག་གཙོ་བོ།"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Source table: \n"
-msgstr ""
+msgstr "འབྱུང་ཁུངས་ཀྱི་ཐིག་ཁྲམ་: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "འགྲོ་ཡུལ་ཐིག་ཁྲམ་: \n"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~All"
-msgstr ""
+msgstr "ཆ་མཉམ།(~A)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Non~e"
-msgstr ""
+msgstr "ཅི་མེད།(~e)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ta~ble name"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་མིང་།(~b)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ།"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "De~finition and data"
-msgstr ""
+msgstr "ངེས་ཚིག་དང་གནད་སྡུད།(~f)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Def~inition"
-msgstr ""
+msgstr "ངེས་ཚིག(~i)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~s table view"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གྱི་མཐོང་སྣང་བཟུམ་སྦེ།"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Append ~data"
-msgstr ""
+msgstr "གནད་སྡུད་མཇུག་བསྣོན་(_d)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
 msgstr ""
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Crea~te primary key"
-msgstr ""
+msgstr "ལྡེ་མིག་གཙོ་བོ་ གསར་བསྐྲུན་འབད།"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "མིང་།"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
+#, fuzzy
 msgid  "Copy table"
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.STRING.TEXT
-msgid  "Copy table"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ འདྲ་བཤུས་རྐྱབས།"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "This table name is not valid in the current database."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གྱི་མིང་འདི་ ད་ལྟོའི་གནད་སྡུད་གཞི་རྟེན་ནང་ ནུས་མེད་ཨིན།"
 
 #: ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "གནད་སྡུད་འདི་ ཡོད་བཞིན་པའི་ཐིག་ཁྲམ་ལུ་མཇུག་བསྣོན་འབད་ནི་ལུ་ ཤོག་ལེབ་དང་པའི་གུ་ གདམ་ཁ་ 'Append data' འདི་ གདམ་ཁ་རྐྱབས།"
 
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Please change the table name. It is too long."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གྱི་མིང་ བསྒྱུར་བཅོས་འབད། འདི་གནམ་མེད་ས་མེད་རིང་དྲགས་པས།"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ།"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Type"
-msgstr ""
+msgstr "དབྱེ་བ།(~T)"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Inner join"
-msgstr ""
+msgstr "ནང་གི་མཐུད།"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left join"
-msgstr ""
+msgstr "གཡོན་གྱི་མཐུད།"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right join"
-msgstr ""
+msgstr "གཡས་ཀྱི་མཐུད།"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Full (outer) join"
-msgstr ""
+msgstr "ཆ་ཚང་(ཕྱིའི་)མཐུད།"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Cross join"
-msgstr ""
+msgstr "སྐེདཔ་བཏོག་སྟེ་མཐུད་"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Natural"
-msgstr ""
+msgstr "རང་བཞིན་"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Tables involved"
-msgstr ""
+msgstr "འབྲེལ་བ་ཡོད་པའི་ ཐིག་ཁྲམ་ཚུ།"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Fields involved"
-msgstr ""
+msgstr "འབྲེལ་བ་ཡོད་པའི་ ས་སྒོ་ཚུ།"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Join Properties"
-msgstr ""
+msgstr "རྒྱུ་དངོས་ཚུ་ མཐུད།"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
+#, fuzzy
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་ལ་ལུ་ཅིག་གིས་ མཐུད་མཚམས་གྱི་དབྱེ་བ་ལུ་ རྒྱབ་སྐྱོར་མི་འབདཝ་ཨིནམ་ སེམས་ཁར་དྲན་གནང་།"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གཉིས་ཆ་རང་ཅོག་འཐད་པའི་ འབྲེལ་བ་ཅན་གྱི་ས་སྒོ་ཚུ་གི་ནང་དོན་ཚུའི་དོན་ལུ་རྐྱངམ་ཅིག་ དྲན་ཐོ་ཚུ་གྲངས་སུ་བཙུགསཔ་ཨིན།"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ '%1' ནང་ལས་ དྲན་ཐོ་ཚུ་ཆ་མཉམ་ཡོདཔ་ཨིན་ དེ་འབདཝ་ད་ འབྲེལ་བ་ཅན་གྱི་ས་སྒོ་ཚུ་ནང་ བེ་ལུ་ཚུ་མཐུན་སྒྲིག་ཡོད་པའི་ ཐིག་ཁྲམ་ '%2' ནང་ལས་རྐྱངམ་ཅིག་དྲན་ཐོ་ཚུ་ཡོདཔ་ཨིན།"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "'%1 དང་  '%2' ནང་ལས་ དྲན་ཐོ་ཚུ་ཆ་མཉམ་ནང་ན་ཡོད།"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "'%1' དང་ '%2' ལས་ cartesian ཐོན་སྐྱེད་ཀྱི་སྙན་ཞུ་ཚུ་ཆ་མཉམ་ཡོདཔ།"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "'%1' དང་ '%2' ནང་ལས་ མིང་འདྲ་མཉམ་བཏགས་ཡོད་པའི་ཀེར་ཐིག་ཆ་རེ་ལུ་ ཀེར་ཐིག་རེ་རྐྱངམ་ཅིག་ཡོདཔ་ཨིན། "
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
+#, fuzzy
 msgid  "Add Table Window"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་སྒོ་སྒྲིག་ ཁ་སྐོང་རྐྱབས།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Move table window"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་སྒོ་སྒྲིག་ སྤོ་བཤུད་འབད།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Insert Join"
-msgstr ""
+msgstr "མཐུད་ནི་ བཙུགས།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Delete Join"
-msgstr ""
+msgstr "མཐུད་ནི་ བཏོན་གཏང་།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
+#, fuzzy
 msgid  "Resize table window"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་སྒོ་སྒྲིག་གི་ཚད་ བསྐྱར་བཟོ་འབད།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Column"
-msgstr ""
+msgstr "ཀེར་ཐིག་ བཏོན་གཏང་།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
+#, fuzzy
 msgid  "Move column"
-msgstr ""
+msgstr "ཀེར་ཐིག་ སྤོ་བཤུད་འབད།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
+#, fuzzy
 msgid  "Add Column"
-msgstr ""
+msgstr "ཀེར་ཐིག་ ཁ་སྐོང་རྐྱབས།"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
-msgstr ""
+msgstr "ནུས་མེད་གསལ་བརྗོད་དང་ཐིག་ཁྲམ་ '$name$' མེདཔ་ཨིན།"
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr ""
+msgstr "ནུས་མེད་ཀྱི་གསལ་བརྗོད་ ས་སྒོའི་མིང་ '$name$'འདི་ མེད།"
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "འདྲི་དཔྱད་ཀྱིས་  #num#ཐིག་ཁྲམ་ བཀབ་བཞགཔ་ཨིན། ག་དེ་འབད་རུང་ སེལ་འཐུ་འབད་ཡོད་པའི་གནད་སྡུད་གཞི་རྟེན་གྱི་དབྱེ་བ་འདི་གིས་ གསལ་བཤད་རེ་ལུ་ མང་མཐའ་ར་ #maxnum# ཐིག་ཁྲམ་(ཚུ་) རྐྱངམ་ཅིག་ལས་སྦྱོར་འབད་ཚུགས།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Table Window"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་སྒོ་སྒྲིག་ བཏོན་གཏང་།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
+#, fuzzy
 msgid  "Edit Column Description"
-msgstr ""
+msgstr "ཀེར་ཐིག་འགྲེལ་བཤད་ ཞུན་དག་འབད།"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Adjust column width"
-msgstr ""
+msgstr "ཀེར་ཐིག་རྒྱ་ཚད་ བདེ་སྒྲིག་འབད།"
 
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
+#, fuzzy
 msgid  "(not sorted);ascending;descending"
-msgstr ""
+msgstr "(དབྱེ་སེལ་མ་འབད་) ཡར་འཛེགས་ མར་འབབ།"
 
 #: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
+#, fuzzy
 msgid  "(no function);Group"
-msgstr ""
+msgstr "(ལས་འགན་མེད་) སྡེ་ཚན།"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
+#, fuzzy
 msgid  "(no table)"
-msgstr ""
+msgstr "(ཐིག་ཁྲམ་མེད་)"
 
 #: ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.STRING.TEXT
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
-msgstr ""
+msgstr "མཐོང་ཚུགས་པའི་ས་སྒོ་ཚུའི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱིས་ དབྱེ་སེལ་འབད་ནི་རྐྱངམ་ཅིག་ལུ་ རྒྱབ་སྐྱོར་འབདཝ་ཨིན།"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
+#, fuzzy
 msgid  "Functions"
-msgstr ""
+msgstr "ལས་འགན་ཚུ།"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Table Name"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་མིང་།"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Alias"
-msgstr ""
+msgstr "མིང་གཞན།"
 
 #: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Distinct Values"
-msgstr ""
+msgstr "ཁྱད་རྟགས་ཅན་གྱི་ བེ་ལུ་ཚུ།"
 
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "ས་སྒོ་ མིང་གཞན་ ཐིག་ཁྲམ་ དབྱེ་སེལ་ མཐོང་ཚུགས་པའི་ ལས་འགན་ ཁྱད་ཚད་ ཡང་ན་ ཡང་ན།"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.STRING.TEXT
+#, fuzzy
 msgid  "There are too many columns."
-msgstr ""
+msgstr "ཀེར་ཐིག་ཚུ་ མང་དྲགས་པས།"
 
 #: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
-msgstr ""
+msgstr "ས་སྒོ་ [*]ལུ་ གནས་སྟངས་འཇུག་སྤྱོད་འབད་མི་བཏུབ།"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement created is too long."
-msgstr ""
+msgstr "གསར་བསྐྲུན་འབད་ཡོད་པའི་ ཨེསི་ཀིའུ་ཨེལ་གསལ་བཤད་འདི་ རིང་དྲགས་པས།"
 
 #: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
+#, fuzzy
 msgid  "Query is too complex"
-msgstr ""
+msgstr "འདྲི་དཔྱད་འདི་ཤིན་ཏུ་གོ་དཀའ་བས།"
 
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
+#, fuzzy
 msgid  "Nothing has been selected."
-msgstr ""
+msgstr "ག་ནི་ཡང་སེལ་འཐུ་མ་འབད།"
 
 #: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
+#, fuzzy
 msgid  "Too many search criteria"
-msgstr ""
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ མང་དྲགས་པས།"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
+#, fuzzy
 msgid  "SQL syntax error"
-msgstr ""
+msgstr "ཨེསི་ཀིའུ་ཨེལ་ ཚིག་སྦྱོར་གྱི་འཛོལ་བ།"
 
 #: ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
-msgstr ""
+msgstr "དབྱེ་སེལ་གྱི་ཁྱད་ཚད་བཟུམ་ཅིག་འབད་ [*]ལག་ལེན་འཐབ་མི་བཏུབ།"
 
 #: ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "There are too many tables."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ་ མང་དྲགས་པས།"
 
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ཨེསི་ཀིའུ་ཨེལ་ཁ་སྐད་ནང་ལུ་ འདྲི་དཔྱད་འབད་བའི་བསྒང་ གསལ་བཤད་འདི་འཇུག་སྤྱོད་མི་འབད།"
 
 #: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Field name not found or not unique"
-msgstr ""
+msgstr "ས་སྒོའི་མིང་མ་ཐོབ་ ཡང་ན་ ཐུན་མོང་ཨིན།"
 
 #: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
+#, fuzzy
 msgid  "Join could not be processed"
-msgstr ""
+msgstr "མཐུད་ནི་ ལས་སྦྱོར་འབད་མ་ཚུགས།"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Syntax error in SQL statement"
-msgstr ""
+msgstr "ཨེསི་ཀིའུ་ཨེལ་ གསལ་བཤད་ནང་ ཚིག་སྦྱོར་གྱི་འཛོལ་བ།"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "This database does not support table views."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་འདི་གིས་ ཐིག་ཁྲམ་མཐོང་སྣང་ལུ་ རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "གནས་སྡུད་གཞི་རྟེན་འདི་གིས་ ད་ལྟོ་ཡོད་པའི་ཐིག་ཁྲི་བལྟ་སྣང་ཚུ་ བསྒྱུར་ནི་འདི་ རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to create a query instead?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ དེ་གི་ཚབ་ལུ་ འདྲི་དཔྱད་གསར་བསྐྲུན་འབད་ནི་ཨིན་ན་?"
 
 #: ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "No query could be created."
-msgstr ""
+msgstr "འདྲི་དཔྱད་གསར་བསྐྲུན་འབད་མ་ཚུགས།"
 
 #: ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
-msgstr ""
+msgstr "ས་སྒོ་ཚུ་གསར་བསྐྲུན་མ་འབདཝ་ལས་བརྟེན་ཏེ་ འདྲི་དཔྱད་གསར་བསྐྲུན་འབད་མ་ཚུགས།"
 
 #: ui/querydesign/query.src#STR_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "ཆ་མཉམ་པའི་གནད་སྡུད་འབྱུང་ཁུངས་འདི་ བཏོན་གཏང་ནུག འདི་འབདཝ་ལས་  གནད་སྡུད་འབྱུང་ཁུངས་དེ་ལུ་ འབྲེལ་བ་ཡོད་པའི་གནད་སྡུད་འདི་ སྲུང་མ་ཚུགས།"
 
 #: ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The column '$name$' is unknown."
-msgstr ""
+msgstr "ཀེར་ཐིག་ '$name$' འདི་ མ་ཤེསཔ།"
 
 #: ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.STRING.TEXT
+#, fuzzy
 msgid  "Columns can only be compared using '='."
-msgstr ""
+msgstr "'=' ལག་ལེན་གྱི་ཐོག་ལས་རྐྱངམ་ཅིག་ ཀེར་ཐིག་ཚུ་ ག་བསྡུར་བརྐྱབ་ཚུགས།"
 
 #: ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ 'LIKE' གི་ཧེ་མ་ ཀེར་ཐིག་མིང་ ལག་ལེན་འཐབ།"
 
 #: ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.STRING.TEXT
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "ཀེར་ཐིག་འདི་མ་ཐོབ། གནད་སྡུད་གཞི་རྟེན་འདི་ ཡི་གུ་ཆེ་ཆུང་གི་ཉེན་ཁ་ཨིནམ་འབད་དྲན་གནང་།"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr ""
+msgstr "- %PRODUCTNAME གཞི་རྟེན་:བཀོད་བསྒྲིག་འདྲི་དཔྱད་འབད།"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
-msgstr ""
+msgstr "- %PRODUCTNAME གཞི་རྟེན་:བཀོད་བསྒྲིག་ སྟོན།"
 
 #: ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$འདི་ བསྒྱུར་བཅོས་འབད་ཡོདཔ། \nཁྱོད་ཀྱིས་ བསྒྱུར་བཅོས་ཚུ་ སྲུངས་ནི་ཨིན་ན?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
 msgid  "$object$ is based on an SQL command which could not be parsed."
 msgstr ""
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr ""
+msgstr "$object$ འདྲི་SQLམཐོང་སྣང་ནང་ལུ་ ཁ་ཕྱེ་འོང་།"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "The table view"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གྱི་མཐོང་སྣང་།"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "The query"
-msgstr ""
+msgstr "འདྲི་དཔྱད།"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement"
-msgstr ""
+msgstr "SQLགསལ་བཤད།"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "འདྲི་དཔྱད་ཀྱིས་ གྲུབ་འབྲས་གཞི་སྒྲིག་ཅིག་གསར་བསྐྲུན་མི་འབད་ནི་དང་ འདྲི་དཔྱད་གཞན་གྱི་གྲངས་སུ་མི་འཛུལཝ་ཨིན། "
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "ཤུགས་ལྡན་མཐུད་ལམ་དང་གནས་སྡུད་འབྱུང་ཁུངས་ཚད་བཟུང་མིང་ གཉིས་ཆ་ར་བརླག་སྟོར་ཞུགས་པ་ཡང་ན་འཛོལ་ཡོདཔ་ལས་- འདྲི་དཔྱད་བཟོ་བཀོད་པ་འདི་ འགོ་འབྱེད་འབད་མི་ཚུགས།"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "མཐུན་འབྲེལ་འདི་ ཧེ་མ་ལས་རང་ཡོདཔ། ཁྱོད་ཀྱིས་འདི་ ཞུན་དག་འབད་ནི་ཨིན་ན་ ཡང་ན་ གསརཔ་ཅིག་གསར་བསྐྲུན་འབད་ནི་ཨིན་ན?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit..."
-msgstr ""
+msgstr "ཞུན་དག་"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "Create..."
-msgstr ""
+msgstr "གསར་བསྐྲུན་་་་"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
-msgstr ""
+msgstr " - %PRODUCTNAME གཞི་རྟེན་:མཐུན་འབྲེལ་བཀོད་བསྒྲིག"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support relations."
-msgstr ""
-
-#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱིས་ མཐུན་འབྲེལ་ཚུ་རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཐིག་ཁྲམ་འདི་བཏོན་གཏངམ་ད་ ཆ་མཉམ་པའི་མཐུན་འབྲེལ་ཚུ་ཡང་འཐོན་འགྱོ་འོང་། འཕྲོ་མཐུད་ནི་ཨིན་ན?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "མ་ཤེསཔ་ ཚིག་ཡིག་ ཨང་གྲངས་ ཚེས་གྲངས་/ ཆུ་ཚོད་ ཚེས་གྲངས་ ཆུ་ཚོད་ ཨིན་/ མེན་ དངུལ་ བརྗེད་ཐོ་ གདོང་ལན་ གཟུགས་བརྙན་ ཚིག་ཡིག་ (དཀའ་ངལ་སེལ་) བཅུ་ཚག་ ཟུང་ལྡན་ (དཀའ་ངལ་སེལ་) ཟུང་ལྡན་ བིག་ཨིནཊི་ གཉིས་ལྡན་ ལྡིང་ནི་ ངོ་མ་ ཧྲིལ་ཨང་ ཧྲིལ་ཨང་ཆུང་བ་ ཧྲིལ་ཨང་ཕྲ་བ་ ཨེསི་ཀིའུ་ཨེལ་ སྟོང་ཆ་ དངོས་པོ་ ཁྱད་རྟགས་ཅན་ གཞི་བཀོད་ ས་སྒོ་ བི་ཨེལ་ཨོ་བི་ སི་ཨེལ་ཨོ་བི་ ཨར་ཨི་ཨེཕི་ གཞན།"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "ལྡེ་མིག་གཙོ་བོ་འདི་ བཙུགས་/བཏོན་གཏང་།"
 
 #: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "ཨིན།"
 
 #: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "མེན།"
 
 #: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
+#, fuzzy
 msgid  "Ascending"
-msgstr ""
+msgstr "ཡར་འཛེགས།"
 
 #: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Descending"
-msgstr ""
+msgstr "མར་འབབ།"
 
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
-msgstr ""
+msgstr "<none>"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field name"
-msgstr ""
+msgstr "ས་སྒོའི་མིང་"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Field Name"
-msgstr ""
+msgstr "ས་སྒོའི་མིང་།"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field ~type"
-msgstr ""
+msgstr "ས་སྒོའི་ཁྱད་རྣམ་"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field Type"
-msgstr ""
+msgstr "ས་སྒོའི་དབྱེ་བ།"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Field length"
-msgstr ""
+msgstr "ས་སྒོའི་རིང་ཚད།"
 
 #: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "འགྲེལ་བཤད།"
 
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "Column Description"
 msgstr ""
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
-msgstr ""
+msgstr "ཨིན་པུཊི་ དགོས་མཁོ་ཡོདཔ།"
 
 #: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "~AutoValue"
-msgstr ""
+msgstr "AutoValue(~A)"
 
 #: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Field Properties"
-msgstr ""
+msgstr "ས་སྒོའི་རྒྱུ་དངོས་ཚུ།"
 
 #: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ཡོངས་ཁྱབ།"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description:"
-msgstr ""
+msgstr "འགྲེལ་བཤད་:"
 
 #: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Table properties"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གྱི་རྒྱུ་དངོས་ཚུ།"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered is not a list element. "
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ཐོ་བཀོད་འབད་མི་ཚིག་ཡིག་འདི་ ཐོ་ཡིག་གི་ཆ་ཤས་མེན་པས། "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert Rows"
-msgstr ""
+msgstr "གྲལ་ཐིག་ཚུ་ བཙུགས།"
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Primary Key"
-msgstr ""
+msgstr "ལྡེ་མིག་གཙོ་བོ།"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Modify cell"
-msgstr ""
+msgstr "ནང་ཐིག་ ལེགས་བཅོས་འབད།"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
+#, fuzzy
 msgid  "Delete row"
-msgstr ""
+msgstr "གྲལ་ཐིག་ བཏོན་གཏང་།"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Modify field type"
-msgstr ""
+msgstr "ས་སྒོའི་ཁྱད་རྣམ་ ལེགས་བཅོས་འབད་"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert row"
-msgstr ""
+msgstr "གྲལ་ཐིག་ བཙུགས།"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert new row"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.STRING.TEXT
-msgid  "Insert/remove primary key"
-msgstr ""
+msgstr "གྲལ་ཐིག་གསརཔ་ བཙུགས།"
 
 #: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "~Default value"
-msgstr ""
+msgstr "སྔོན་སྒྲིག་བེ་ལུ།(~D)"
 
 #: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "~Entry required"
-msgstr ""
+msgstr "ཐོ་བཀོད་ དགོས་མཁོ་ཡོདཔ།"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "~Length"
-msgstr ""
+msgstr "རིང་ཚད།(~L)"
 
 #: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "~Type"
-msgstr ""
-
-#: ui/tabledesign/table.src#STR_LENGTH.STRING.TEXT
-msgid  "~Length"
-msgstr ""
+msgstr "དབྱེ་བ།(~T)"
 
 #: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Decimal ~places"
-msgstr ""
+msgstr "བཅུ་ཚག་གི་ས་གནས་ཚུ།(~p)"
 
 #: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format example"
-msgstr ""
+msgstr "རྩ་སྒྲིག་གི་དཔེར་བརྗོད།"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "སྔོན་སྒྲིག་བཟུམ་སྦེ་ དྲན་ཐོ་ཆ་མཉམ་ནང་འབྱུང་ནི་ཨིན་པའི་བེ་ལུ་ཅིག་ སེལ་འཐུ་འབད།\nས་སྒོ་འདི་ལུ་ སྔོན་སྒྲིག་བེ་ལུ་མེད་པ་ཅིན་ ཡིག་རྒྱུན་སྟོངམ་ཅིག་སེལ་འཐུ་འབད།"
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "ས་སྒོ་འདི་གི་དོན་ལུ་ སྔོན་སྒྲིག་བེ་ལུ་ཅིག་ བཙུགས།\n\nཁྱོད་ཀྱིས་ ཤུལ་ལས་ཐིག་ཁྲམ་ནང་ གནད་སྡུད་བཙུགས་པའི་སྐབས་ ས་སྒོ་སེལ་འཐུ་འབད་ཡོད་མི་འདི་གི་དོན་ལུ་ དྲན་ཐོ་གསརཔ་རེའི་ནང་ལུ་ ལག་ལེན་འཐབ་ནི་ཨིན། དེ་འབད་ནི་འདི་གིས་ འོག་ལུ་བཙུགས་དགོཔ་ཡོད་པའི་ ནང་ཐིག་གི་རྩ་སྒྲིག་ལུ་ ཆ་མཉམ་དགོ"
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "ས་སྒོ་འདི་ནང་ སྟོང་ཆའི་བེ་ལུསི་མེད་པ་ཅིན་ གདམ་ཁ་འདི་ཤུགས་ལྡན་བཟོ་ དེ་ཡང་ ལག་ལེན་པ་གིས་ཨ་རྟག་རང་ གནད་སྡུད་་བཙུགས་དགོ"
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
-msgstr ""
+msgstr "གནང་བ་བྱིན་ཡོད་པའི་ཚིག་ཡིག་གི་རིང་ཚད་ བཙུགས།"
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Enter the number format."
-msgstr ""
+msgstr "ཨང་གྲངས་ཀྱི་རྩ་སྒྲིག་ བཙུགས།"
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "གནད་སྡུད་འདི་གིས་ ས་སྒོ་འདི་ནང་བཞག་ཚུགས་པའི་རིང་ཚད་ གཏན་འབེབས་བཟོ།\nས་སྒོ་ཚུ་བཅུ་ཚག་ཨིན་པ་ཅིན་ ཨང་གྲངས་ཀྱི་རིང་ཚད་མང་མཐའ་ བཙུགས་དགོ་ དེ་ལས་ ས་སྒོ་ཚུ་ཟུང་ལྡན་ཨིན་པ་ཅིན་ གནད་སྡུད་སྡེབ་ཚན་གྱི་རིང་ཚད་བཙུགས་དགོ\nགནད་སྡུད་གཞི་རྟེན་གྱི་དོན་ལུ་ མང་མཐའ་ལྷག་པའི་སྐབས་ བེ་ལུ་འདི་ འདི་དང་འཁྲིལ་ཏེ་ ནོར་བཅོས་འབད་འོང་།"
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "ས་སྒོ་འདི་ནང་ གསལ་བཀོད་འབད་ཆོག་པའི་བཅུ་ཚག་ས་གནས་ཚུའི་ཨང་གྲངས་ གསལ་བཀོད་འབད།"
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ད་ལྟོའི་རྩ་སྒྲིག་ནང་ གནད་སྡུད་འདི་ག་དེ་འབད་བཀྲམ་སྟོན་འབདཝ་ཨིན་ན་ བལྟ་ས་འདི་ འ་ན་ཨིན་(རྩ་སྒྲིག་ལེགས་བཅོས་ཀྱི་དོན་ལུ་ གཡས་ཕྱོགས་ལུ་ ཨེབ་རྟ་ལག་ལེན་འཐབ་)།"
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ གནད་སྡུད་ ཨའུཊི་པུཊི་རྩ་སྒྲིག་ གཏན་འབེབས་བཟོ་ས་འདི་ འ་ན་ཨིན།"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "ས་སྒོ་འདི་ནང་ ཨོ་ཊོ་ཨིན་ཀིརི་མེནཊི་ བེ་ལུསི་ཡོད་དགོ་པ་ཅིན་ གདམ་ཁ་རྐྱབས།\n\nའདི་བཟུམ་གྱི་ས་སྒོའི་དབྱེ་བ་ཚུ་ནང་ ཁྱོད་ཀྱིས་གནད་སྡུད་བཙུགས་མི་ཚུགས། དྲན་ཐོ་གསརཔ་རེ་ལུ་ རང་གཤིས་ཀྱི་བེ་ལུ་ རང་བཞིན་གྱིས་འགན་སྤྲོད་འབད་འོང་(ཧེ་མའི་དྲན་ཐོ་གི་ཡར་འཕར་ནང་ལས་ འབྱུངམ་ཨིན་)།"
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~..."
-msgstr ""
+msgstr "...(~.)"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་འདི་སྲུང་མི་ཚུགས་པས་ ག་ཅི་འབད་ཟེར་བ་ཅིན་ ཀེར་ཐིག་མིང་ \"$column$\" འདི་ ཚར་གཉིས་འགན་སྤྲོད་འབད་ནུག"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgstr "ཀེར་ཐིག་ \"$column$\"འདི་ ལྡེ་མིག་གཙོ་བོ་ལུ་ བངམ་ཨིན། ཀེར་ཐིག་འདི་བཏོན་གཏང་པ་ཅིན་ ལྡེ་མིག་གཙོ་བོ་འདི་ཡང་འཐོན་འགྱོ་འོང་། ཁྱོད་ཀྱིས་ཐད་རི་འབའ་རི་ འཕྲོ་མཐུད་ནི་ཨིན་ན?"
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Primary Key Affected"
-msgstr ""
+msgstr "ལྡེ་མིག་གཙོ་བོ་འདི་ གནོད་སྐྱོན་བྱུང་ཡོདཔ།"
 
 #: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Column"
-msgstr ""
+msgstr "ཀེར་ཐིག"
 
 #: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
+#, fuzzy
 msgid  "Continue anyway?"
-msgstr ""
+msgstr "གང་རུང་འབད་ འཕྲོ་མཐུད་ནི་ཨིན་ན?"
 
 #: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "Warning!"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
-
-#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "ཉེན་བརྡ་!"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་ལུ་འབྲེལ་བ་ཡོད་པའི་དཀའ་ངལ་ཅིག་ལུ་བརྟེན་ཏེ་ ཐིག་ཁྲམ་འདི་སྲུང་མ་ཚུགས།"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
-
-#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་གྱི་ཚགས་མ་འདི་ བདེ་སྒྲིག་འབད་མ་ཚུགས་ ག་ཅི་འབད་ཟེར་བ་ཅིན་ གནད་སྡུད་འབྱུང་ཁུངས་འདི་ བཏོན་བཏང་ནུག"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
+#, fuzzy
 msgid  "No primary key"
-msgstr ""
+msgstr "ལྡེ་མིག་གཙོ་བོ་ མེད།"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
+#, fuzzy
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "གནད་སྡུད་དྲན་ཐོའི་ངོས་རྟགས་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་འདི་ནང་ ཐུན་མོང་མ་ཡིན་པའི་ཟུར་ཐོ་ཅིག་ ཡང་ན་ ལྡེ་མིག་གཙོ་བོ་ཅིག་དགོས་མཁོ་ཡོདཔ་ཨིན།\nགཞི་བཀོད་ཀྱི་གནས་སྟངས་གཉིས་ལས་གཅིག་ཚང་ཞིནམ་ལས་རྐྱངམ་ཅིག་ ཐིག་ཁྲམ་ནང་གནད་སྡུད་བཙུགས་ཚུགས།\n\nལྡེ་མིག་གཙོ་བོ་ཅིག་ ད་ལྟོ་རང་གསར་བསྐྲུན་འབད་ནི་ཨིན་ན?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
-msgstr ""
+msgstr " - %PRODUCTNAME གཞི་རྟེན་:ཐིག་ཁྲམ་བཀོད་སྒྲིག"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgstr "ཀེར་ཐིག་  \"$column$\" འདི་ བསྒྱུར་བཅོས་འབད་མ་ཚུགས། འདི་གི་ཚབ་ལུ་ ཀེར་ཐིག་བཏོན་གཏང་ཞིནམ་ལས་རྩ་སྒྲིག་གསརཔ་ མཇུག་བསྣོན་འབད་ནི་ཨིན་ན?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error while saving the table design"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་བཀོད་སྒྲིག་སྲུང་བའི་སྐབས་ལུ་ འཛོལ་བ་"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
-msgstr ""
+msgstr "ཀེར་ཐིག་ $column$ འདི་ བཏོན་གཏང་མ་ཚུགས།"
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ཐིག་ཁྲམ་ནང་ཡོད་པའི་ཀེར་ཐིག་ཚུ་ཆ་མཉམ་ བཏོན་གཏང་ནིའི་འབད་རྩོལ་བསྐྱེདཔ་ཨིན་པས། ཀེར་ཐིག་མེད་པར་ ཐིག་ཁྲམ་གནས་མི་ཚུགས། ཐིག་ཁྲམ་འདི གནད་སྡུད་གཞི་རྟེན་ནང་ལས་ བཏོན་གཏང་ནི་ཨིན་ན? མེན་པ་ཅིན་ ཐིག་ཁྲམ་འདི་ བསྒྱུར་བཅོས་མེད་པར་སྡོད་འོང་།"
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "A~uto-increment statement"
-msgstr ""
+msgstr "རང་བཞིན་གྱི་-ཡར་འཕར་ གསལ་བཤད།"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "རང་བཞིན་གྱི་-ཡར་འཕར་ས་སྒོའི་དོན་ལུ་ ཨེསི་ཀིའུ་ཨེལ་གསལ་བཤད་ བཙུགས།\nགསལ་བཤད་འདི་ ཐིག་ཁྲམ་གསར་བསྐྲུན་འབད་ཚར་བའི་བསྒང་ལས་ ཐད་ཀར་དུ་གནད་སྡུད་གཞི་རྟེན་ལུ་ གནས་སོར་འབད་ནི་ཨིན།"
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་ནང་ལས་ དབྱེ་བའི་བརྡ་དོན་ སླར་འདྲེན་འབད་མ་ཚུགས།\nགནད་སྡུད་འབྱུང་ཁུངས་ཀྱི་དོན་ལུ་ ཐིག་ཁྲམ་བཀོད་བསྒྲིག་གི་ཐབས་ལམ་འདི་ མི་ཐོབ།"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "change field name"
-msgstr ""
+msgstr "ས་སྒོའི་མིང་ བསྒྱུར་བཅོས་འབད།"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "change field type"
-msgstr ""
+msgstr "ས་སྒོའི་དབྱེ་བ་ བསྒྱུར་བཅོས་འབད།"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "change field description"
-msgstr ""
+msgstr "ས་སྒོའི་འགྲེལ་བཤད་ བསྒྱུར་བཅོས་འབད།"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
+#, fuzzy
 msgid  "change field attribute"
-msgstr ""
+msgstr "ས་སྒོའི་ཁྱད་ཆོས་ བསྒྱུར་བཅོས་འབད།"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support views."
-msgstr ""
+msgstr "བཞག་ཡུལ་གནས་སྡུད་གཞི་རྟེན་གྱིས་ མཐོང་སྣང་ཚུ་ལུ་རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support primary keys."
-msgstr ""
+msgstr "གཞག་ཡུལ་གནས་སྡུད་གཞི་རྟེན་གྱིས་ གཞི་རིམ་ལྡེ་མིག་ཚུ་ལུ་རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "གནས་སྡུད་འཇུག་སྤྱོད་འགྲེལ་བཤད་པ་མ་ཐོབ་ ཡང་ན་ མཁོ་ཆེའི་བརྡ་དོན་ཚུ་ཆ་མཉམ་བྱིན་ཚུགས་པའི་གནས་སྡུད་འཇུག་སྤྱོད་འགྲེལ་བཤད་པ་ཅིག་མིན་འདུག་"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
-msgstr ""
+msgstr "དུས་སྐབས་ལུ་ ཐིག་ཁྲམ་དང་འདྲི་དཔྱད་ཚུ་རྐྱངམ་ཅིག་རྒྱབ་སྐྱོར་འབད་ཡོད།"
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "འདྲ་བཤུད་འབྱུང་གནས་ཀྱི་གྲུབ་འབྲས་གཞི་སྒྲིག་གིས་ དེབ་རྟགས་ཚུ་ལུ་རྒྱབ་སྐྱོར་འབད་དགོ"
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "ཀེར་ཐིག་གནས་ས་ $pos$ ལུ་ རྒྱབ་སྐྱོར་མེད་པའི་འབྱུང་གནས་ཀེར་ཐིག་དབྱེ་བ་ ($type$) འདུག"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
-msgstr ""
+msgstr "འགོ་འབྱེད་ཚད་བཟུང་ཚུ་གི་ཁྲིམས་འགལ་ཨང་།"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred during initialization."
-msgstr ""
+msgstr "འགོ་འབྱེད་འབད་བའི་སྐབས་ འཛོལ་བ་བྱུང་ཡོདཔ།"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
 msgid  "Unsupported setting in the copy source descriptor: $name$."
@@ -3608,9 +4101,11 @@ msgid  "The given interaction handler is invalid."
 msgstr ""
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
+#, fuzzy
 msgid  "~Remember password until end of session"
-msgstr ""
+msgstr "ལཱ་ཡུན་མ་རྫོགས་ཚུན་ཚོད་ ཆོག་ཡིག་སེམས་ཁར་བཞག་(~R)"
 
 #: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
+#, fuzzy
 msgid  "~Remember password"
-msgstr ""
+msgstr "ཆོག་ཡིག་ སེམས་ཁར་བཞག(~R)"

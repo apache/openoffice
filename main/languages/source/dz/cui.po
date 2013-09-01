@@ -99,10 +99,6 @@ msgstr ""
 msgid  "BASIC Macros"
 msgstr ""
 
-#: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_DLG_MACROS.STRING.TEXT
-msgid  "%PRODUCTNAME Macros"
-msgstr ""
-
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_GROUP_STYLES.STRING.TEXT
 msgid  "Styles"
 msgstr ""
@@ -271,10 +267,6 @@ msgstr ""
 msgid  "Import..."
 msgstr ""
 
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "Delete..."
-msgstr ""
-
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
 msgstr ""
@@ -336,10 +328,6 @@ msgid  "There are no more commands on the toolbar. Do you want to delete the too
 msgstr ""
 
 #: customize/cfg.src#QBX_CONFIRM_RESET.QUERYBOX.MESSAGE
-msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
-
-#: customize/cfg.src#RID_SVXSTR_CONFIRM_MENU_RESET.STRING.TEXT
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
 msgstr ""
 
@@ -783,10 +771,6 @@ msgstr ""
 msgid  "My Macros"
 msgstr ""
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.BOX_SELECTOR_CATEGORIES.STR_PRODMACROS.STRING.TEXT
-msgid  "%PRODUCTNAME Macros"
-msgstr ""
-
 #: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
 msgid  "Macro name"
 msgstr ""
@@ -799,42 +783,6 @@ msgstr ""
 msgid  "About %FULLPRODUCTNAME"
 msgstr ""
 
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
-msgid  "License..."
-msgstr ""
-
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
-msgid  "%OOOVENDOR"
-msgstr ""
-
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
-msgid  "This product was created by the OpenOffice community."
-msgstr ""
-
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
-msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
-msgstr ""
-
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
-msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
-msgstr ""
-
-#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
-msgid  "Readme, License and Notice"
-msgstr ""
-
-#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
-msgid  "Readme"
-msgstr ""
-
-#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
-msgid  "License"
-msgstr ""
-
-#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
-msgid  "Notice"
-msgstr ""
-
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
 msgid  "Special Characters"
 msgstr ""
@@ -844,16 +792,18 @@ msgid  "~Font"
 msgstr ""
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Subset"
-msgstr ""
+msgstr "དོན་ཚན།(~S)"
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FIXEDTEXT.TEXT
 msgid  "Characters:"
 msgstr ""
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "བཏོན་བཏང་།(~D)"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.MODALDIALOG.TEXT
 msgid  "Color Picker"
@@ -925,7 +875,7 @@ msgstr ""
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_NEWWORD.FIXEDTEXT.TEXT
 msgid  "~Word"
-msgstr ""
+msgstr "མིང་ཚིག།(~W)"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_SUGGESTION.FIXEDTEXT.TEXT
 msgid  "~Suggestions"
@@ -953,23 +903,26 @@ msgstr ""
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_SPL_CANCEL.CANCELBUTTON.TEXT
 msgid  "~Close"
-msgstr ""
+msgstr "ཁ་བསདམས།(~C)"
 
 #: dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.MODALDIALOG.TEXT
 msgid  "Properties"
 msgstr ""
 
 #: dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~URL"
-msgstr ""
+msgstr "ཡུ་ཨར་ཨེལ།"
 
 #: dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "F~rame"
-msgstr ""
+msgstr "གཞི་ཁྲམ།(~r)"
 
 #: dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "མིང་།(~a)"
 
 #: dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URLDESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Alternative ~text"
@@ -980,136 +933,157 @@ msgid  "~Description"
 msgstr ""
 
 #: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
-
-#: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr ""
+msgstr "མིང་།(~a)"
 
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "མིང་།(~a)"
 
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.MODALDIALOG.TEXT
 msgid  "Description"
 msgstr ""
 
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "མགོ་མིང་།"
 
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FIXEDTEXT.TEXT
 msgid  "~Description"
 msgstr ""
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Record Search"
-msgstr ""
+msgstr "དྲན་ཐོ་འཚོལ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Search for"
-msgstr ""
+msgstr "དོན་ལུ་སེལ་འཐུ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Text"
-msgstr ""
+msgstr "ཚིག་ཡིག(~T)"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Field content is ~NULL"
-msgstr ""
+msgstr "ས་སྒོ་ནང་དོན་འདི་སྟོང་ཆ་ཨིན།(~N)"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Field content is not NU~LL"
-msgstr ""
+msgstr "ས་སྒོ་ནང་དོན་འདི་སྟོང་ཆ་མེན་པས།(~L)"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_WHERE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Where to search"
-msgstr ""
+msgstr "ག་སྟེ་འཚོལ་ནི།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Form"
-msgstr ""
+msgstr "འབྲི་ཤོག"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "All Fields"
-msgstr ""
+msgstr "ས་སྒོ་ཚུ་ཆ་མཉམ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SINGLEFIELD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Single field"
-msgstr ""
+msgstr "ས་སྒོ་རྐྱང་པ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "སྒྲིག་སྟངས་ཚུ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "གནས་ས།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Apply field format"
-msgstr ""
+msgstr "ས་སྒོ་རྩ་སྒྲིག་འཇུག་སྤྱོད་འབད།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Match case"
-msgstr ""
+msgstr "མཐུན་སྒྲིག་ཡི་གུ"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Search backwards"
-msgstr ""
+msgstr "རྒྱབ་བསྐྱོད་ཚུ་འཚོལ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "From Beginning"
-msgstr ""
+msgstr "འགོ་བཙུགསཔ་ལས།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_WILDCARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Wildcard expression"
-msgstr ""
+msgstr "ཝའིལ་ཀཌི་གསལ་བརྗོད།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Regular expression"
-msgstr ""
+msgstr "དུས་རྒྱུན་གསལ་བརྗོད།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Similarity Search"
-msgstr ""
+msgstr "ཆ་འདྲ་བ་འཚོལ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "..."
-msgstr ""
+msgstr "..."
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Match character width"
-msgstr ""
+msgstr "ཡིག་འབྲུ་རྒྱ་ཚད་མཐུན་སྒྲིག་འབད།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_SOUNDSLIKECJK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Sounds like (Japanese)"
-msgstr ""
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
+msgstr "(ཇ་པ་ནིསི་)བཟུམ་མཐོངམ་མས།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "State"
-msgstr ""
+msgstr "མངའ་སྡེ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Record :"
-msgstr ""
+msgstr "དྲན་ཐོ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Search"
-msgstr ""
+msgstr "འཚོལ།"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "ཁ་བསདམས།(~C)"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "གྲོགས་རམ།(~H)"
 
 #: dialogs/fmsearch.src#RID_STR_SEARCH_ANYWHERE.STRING.TEXT
 msgid  "anywhere in the field"
@@ -1136,12 +1110,14 @@ msgid  "From bottom"
 msgstr ""
 
 #: dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "No records corresponding to your data found."
-msgstr ""
+msgstr "ཁྱོད་ཀྱི་གནད་སྡུད་ཐོབ་མི་འདི་ལུ་ཆ་མཉམ་པའི་དྲན་ཐོ་ཚུ་མེདཔ།"
 
 #: dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "An unknown error occurred. The search could not be finished."
-msgstr ""
+msgstr "མ་ཤེས་པའི་འཛོལ་བ་འབྱུང་ཡོདཔ། འཚོལ་ཞིབ་འདི་མཇུག་བསྡུས་མ་ཚུགསཔ།"
 
 #: dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.STRING.TEXT
 msgid  "Overflow, search continued at the beginning"
@@ -1152,146 +1128,166 @@ msgid  "Overflow, search continued at the end"
 msgstr ""
 
 #: dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.STRING.TEXT
+#, fuzzy
 msgid  "counting records"
-msgstr ""
+msgstr "དྲན་ཐོ་ཚུ་གྱངས་ཁ་རྐྱབས།"
 
 #: dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Properties of "
-msgstr ""
+msgstr "གི་རྒྱུ་དངོས་ཚུ།"
 
 #: dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PAGEITEM.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
-
-#: dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.TABDIALOG.TEXT
-msgid  "Properties of "
-msgstr ""
-
-#: dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERY_GENERAL.PAGEITEM.TEXT
-msgid  "General"
-msgstr ""
+msgstr "ཡོངས་ཁྱབ།"
 
 #: dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERYTHEME_FILES.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Files"
-msgstr ""
+msgstr "ཡིག་སྣོད་ཚུ།"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type:"
-msgstr ""
+msgstr "དབྱེ་བ།"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Location:"
-msgstr ""
+msgstr "གནས་ཁོངས།"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Contents:"
-msgstr ""
+msgstr "ནང་དོན་ཚུ།"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Modified:"
-msgstr ""
+msgstr "ལེགས་བཅོས་འབད་ཡོདཔ།"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~File type"
-msgstr ""
+msgstr "ཡིག་སྣོད་དབྱེ་བ།(~F)"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find Files..."
-msgstr ""
+msgstr "ཡིག་སྣོད་ཚུ་འཚོལ།(~F)"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "ཁ་སྐོང་།(~A)"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKEALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "A~dd All"
-msgstr ""
+msgstr "ཆ་མཉམ་ཁ་སྐོང་།(~d)"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.CBX_PREVIEW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pr~eview"
-msgstr ""
+msgstr "སྔོན་མཐོང་།(~e)"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Maddin1"
-msgstr ""
+msgstr "མཱ་ཌིན་་༡"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Maddin2"
-msgstr ""
+msgstr "མཱ་ཌིན་་༢"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Enter Title"
-msgstr ""
+msgstr "མགོ་མིང་བཙུགས།"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.FL_TITLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Title"
-msgstr ""
+msgstr "མགོ་མིང་།"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Find"
-msgstr ""
+msgstr "འཚོལ།"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Directory"
-msgstr ""
+msgstr "སྣོད་ཐོ།"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File type"
-msgstr ""
+msgstr "ཡིག་སྣོད་དབྱེ་བ།"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Apply"
-msgstr ""
+msgstr "འཇུག་སྤྱོད་འབད།"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File"
-msgstr ""
+msgstr "ཡིག་སྣོད།"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_ACTUALIZE_PROGRESS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Update"
-msgstr ""
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_ACTUALIZE_PROGRESS.FL_ACTUALIZE_PROGRESS.FIXEDLINE.TEXT
-msgid  "File"
-msgstr ""
+msgstr "དུས་མཐུན་བཟོ་ནི།"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_THEMEID.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Theme ID"
-msgstr ""
+msgstr "བརྗོད་དོན་ཨའི་ཌི།"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_THEMEID.FL_ID.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "ID"
-msgstr ""
+msgstr "ཨའི་ཌི།"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERY_NOFILES.STRING.TEXT
+#, fuzzy
 msgid  "<No Files>"
-msgstr ""
+msgstr "<No Files>"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERY_SEARCH.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to update the file list?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ཐོ་ཡིག་ཡིག་སྣོད་འདི་དུས་མཐུན་བཟོ་ནི་ཨིན་ན?"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERYPROPS_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Object;Objects"
-msgstr ""
+msgstr "དངོས་པོ། དངོས་པོཚུ།"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERY_READONLY.STRING.TEXT
+#, fuzzy
 msgid  " (read-only)"
-msgstr ""
+msgstr "(ལྷག་ནི་རྐྱངམ་གཅིག)"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERY_ALLFILES.STRING.TEXT
+#, fuzzy
 msgid  "<All Files>"
-msgstr ""
+msgstr "<All Files>"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERY_ID_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "This ID already exists..."
-msgstr ""
+msgstr "འ་ནི་ཨའི་ཌི་ཧེ་མ་ལས་ཡོདཔ།"
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.MODALDIALOG.TEXT
 msgid  "Mosaic"
 msgstr ""
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.FL_PARAMETER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Parameters"
 msgstr ""
 
@@ -1311,10 +1307,6 @@ msgstr ""
 msgid  "Solarization"
 msgstr ""
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.FL_PARAMETER.FIXEDLINE.TEXT
-msgid  "Parameters"
-msgstr ""
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.DLG_FILTERSOLARIZE_FT_THRESHOLD.FIXEDTEXT.TEXT
 msgid  "Threshold ~value"
 msgstr ""
@@ -1327,10 +1319,6 @@ msgstr ""
 msgid  "Aging"
 msgstr ""
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.FL_PARAMETER.FIXEDLINE.TEXT
-msgid  "Parameters"
-msgstr ""
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.DLG_FILTERSEPIA_FT_SEPIA.FIXEDTEXT.TEXT
 msgid  "Aging degree"
 msgstr ""
@@ -1339,20 +1327,12 @@ msgstr ""
 msgid  "Posterize"
 msgstr ""
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.FL_PARAMETER.FIXEDLINE.TEXT
-msgid  "Parameters"
-msgstr ""
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
 msgid  "Poster colors"
 msgstr ""
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 msgid  "Relief"
-msgstr ""
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.FL_PARAMETER.FIXEDLINE.TEXT
-msgid  "Parameters"
 msgstr ""
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.DLG_FILTEREMBOSS_FT_LIGHT.FIXEDTEXT.TEXT
@@ -1364,8 +1344,9 @@ msgid  "Hangul/Hanja Conversion"
 msgstr ""
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.PB_FIND.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "འཚོལ།"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_FORMAT.FIXEDTEXT.TEXT
 msgid  "Format"
@@ -1456,8 +1437,9 @@ msgid  "Edit..."
 msgstr ""
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "བཏོན་བཏང་།(~D)"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
 msgid  "New Dictionary"
@@ -1468,8 +1450,9 @@ msgid  "Dictionary"
 msgstr ""
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "མིང་།(~a)"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
 msgid  "Edit Custom Dictionary"
@@ -1495,25 +1478,25 @@ msgstr ""
 msgid  "New"
 msgstr ""
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_DELETE.PUSHBUTTON.TEXT
-msgid  "Delete"
-msgstr ""
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ཁ་བསྡམས།"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Target in Document"
-msgstr ""
+msgstr "ཡིག་ཆའི་ནང་ན་དམིགས་གཏད།"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Apply"
-msgstr ""
+msgstr "འཇུག་སྤྱོད་འབད།"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ཁ་བསྡམས།"
 
 #: dialogs/hlmarkwn.src#RID_SVXSTR_HYPDLG_ERR_LERR_NOENTRIES.STRING.TEXT
 msgid  "Targets do not exist in the document."
@@ -1528,392 +1511,278 @@ msgid  "Mark Tree"
 msgstr ""
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.TABPAGE.TEXT
+#, fuzzy
 msgid  "Hyperlink"
-msgstr ""
+msgstr "ཚད་བརྒལ་འབྲལ་ལམ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_LINKTYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Hyperlink type"
-msgstr ""
+msgstr "ཚད་བརྒལ་འབྲེལ་ལམ་གྱི་དབྱེ་བ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.RB_LINKTYP_INTERNET.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Web"
-msgstr ""
+msgstr "ཝེབ།(~W)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.RB_LINKTYP_FTP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~FTP"
-msgstr ""
+msgstr "ཨེཕ་ཊི་པི།(~F)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.RB_LINKTYP_TELNET.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Telnet"
-msgstr ""
+msgstr "རྒྱུད་འཕྲིན་ཡོངས་འབྲེལ།(~T)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_TARGET_HTML.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Tar~get"
-msgstr ""
+msgstr "དམིགས་གཏད།(~g)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_LOGIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Login name"
-msgstr ""
+msgstr "ནང་བསྐྱོད་འབད་ཡོད་པའི་མིང་།(~L)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_PASSWD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "ཆོག་ཡིག(~P)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.CBX_ANONYMOUS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Anonymous ~user"
-msgstr ""
+msgstr "མིང་མེདཔ་ལག་ལེན་པ།(~u)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_BROWSE.IMAGEBUTTON.TEXT
+#, fuzzy
 msgid  "WWW Browser"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_BROWSE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "WWW Browser"
-msgstr ""
+msgstr "ཌབ་ལུ་ཌབ་ལུ་ཌབ་ལུ་བརའུ་ཟར།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.IMAGEBUTTON.TEXT
+#, fuzzy
 msgid  "Target in Document"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Target in Document"
-msgstr ""
+msgstr "ཡིག་ཆའི་ནང་ན་དམིགས་གཏད།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_MORE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Further settings"
-msgstr ""
+msgstr "གཞི་སྒྲིག་ཚུ་ཐེབས་བཟོ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FRAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "F~rame"
-msgstr ""
+msgstr "གཞི་ཁྲམ།(~r)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FORM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "F~orm"
-msgstr ""
+msgstr "རྣམ་པ།(~o)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "ཚིག་ཡིག"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Button"
-msgstr ""
+msgstr "ཨེབ་རྟ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt"
-msgstr ""
+msgstr "ཚིག་ཡིག(~x)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_TEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "N~ame"
-msgstr ""
+msgstr "མིང་།(~a)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.BUTTONIMAGE.TEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.TABPAGE.TEXT
-msgid  "Hyperlink"
-msgstr ""
+msgstr "བྱུང་ལས་ཚུ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Mail & news"
-msgstr ""
+msgstr "ཡིག་འཕྲིན་དང་གནས་ཚུལ་ཚུ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~E-mail"
-msgstr ""
+msgstr "གློག་འཕྲིན།(~E)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_NEWS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~News"
-msgstr ""
+msgstr "གནས་ཚུལ་ཚུ།(~N)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_RECEIVER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Re~ceiver"
-msgstr ""
+msgstr "ལེན་པ།(~c)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_SUBJECT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Subject"
-msgstr ""
+msgstr "དོན་ཚན།(~S)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.BUTTONIMAGE.TEXT
+#, fuzzy
 msgid  "Data Sources..."
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Data Sources..."
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MORE.FIXEDLINE.TEXT
-msgid  "Further settings"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FRAME.FIXEDTEXT.TEXT
-msgid  "F~rame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FORM.FIXEDTEXT.TEXT
-msgid  "F~orm"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_INDICATION.FIXEDTEXT.TEXT
-msgid  "Te~xt"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_TEXT.FIXEDTEXT.TEXT
-msgid  "N~ame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.BUTTONIMAGE.TEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.TABPAGE.TEXT
-msgid  "Hyperlink"
-msgstr ""
+msgstr "གནད་སྡུད་ཀྱི་འབྱུང་ཁུངས..."
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "ཡིག་ཆ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Path"
-msgstr ""
+msgstr "འགྲུལ་ལམ།(~P)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Open File"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.BUTTONIMAGE.TEXT
-msgid  "Open File"
-msgstr ""
+msgstr "ཡིག་སྣོད་ཁ་ཕྱེ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Target in document"
-msgstr ""
+msgstr "ཡིག་ཆའི་ནང་ན་དམིགས་གཏད།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Targ~et"
-msgstr ""
+msgstr "དམིགས་གཏད།(~e)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "URL"
-msgstr ""
+msgstr "ཡུ་ཨར་ཨེལ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Test text"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Target in Document"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.BUTTONIMAGE.TEXT
-msgid  "Target in Document"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_MORE.FIXEDLINE.TEXT
-msgid  "Further settings"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FRAME.FIXEDTEXT.TEXT
-msgid  "F~rame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FORM.FIXEDTEXT.TEXT
-msgid  "F~orm"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_INDICATION.FIXEDTEXT.TEXT
-msgid  "Te~xt"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TEXT.FIXEDTEXT.TEXT
-msgid  "N~ame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.BUTTONIMAGE.TEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.TABPAGE.TEXT
-msgid  "Hyperlink"
-msgstr ""
+msgstr "ཚིག་ཡིག་བརྟག་ཞིབ་འབད།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New document"
-msgstr ""
+msgstr "ཡིག་ཆ་གསརཔ།"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Edit ~now"
-msgstr ""
+msgstr "ད་ལྟོ་ཞུན་དག་འབད།(~n)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITLATER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Edit ~later"
-msgstr ""
+msgstr "ཤུལ་ལས་ཞུན་དག་འབད།(~l)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_PATH_NEWDOC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~File"
-msgstr ""
+msgstr "ཡིག་སྣོད།(~F)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_DOCUMENT_TYPES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "File ~type"
-msgstr ""
+msgstr "ཡིག་སྣོད་ཀྱི་དབྱེ་བ།(~t)"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Select Path"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.BUTTONIMAGE.TEXT
-msgid  "Select Path"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_MORE.FIXEDLINE.TEXT
-msgid  "Further settings"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_FRAME.FIXEDTEXT.TEXT
-msgid  "F~rame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_FORM.FIXEDTEXT.TEXT
-msgid  "F~orm"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_INDICATION.FIXEDTEXT.TEXT
-msgid  "Te~xt"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_TEXT.FIXEDTEXT.TEXT
-msgid  "N~ame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.BUTTONIMAGE.TEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXDLG_NEWHYPERLINK.MODALDIALOG.TEXT
-msgid  "Hyperlink"
-msgstr ""
+msgstr "འགྲུལ་ལམ་སེལ་འཐུ་འབད།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
+#, fuzzy
 msgid  "Apply"
-msgstr ""
+msgstr "འཇུག་སྤྱོད་འབད།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ཁ་བསྡམས།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_MACROACT1.STRING.TEXT
+#, fuzzy
 msgid  "Mouse over object"
-msgstr ""
+msgstr "དངོས་པོའི་ལྟག་ལས་མཱའུསི།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_MACROACT2.STRING.TEXT
+#, fuzzy
 msgid  "Trigger hyperlink"
-msgstr ""
+msgstr "ཚད་བརྒལ་འབྲེལ་ལམ་འབྱུང་སག་ས།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_MACROACT3.STRING.TEXT
+#, fuzzy
 msgid  "Mouse leaves object"
-msgstr ""
+msgstr "མཱའུསི་གི་དངོས་པོ་བཞགཔ་ཨིན།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_NOVALIDFILENAME.STRING.TEXT
+#, fuzzy
 msgid  "Please type in a valid file name."
-msgstr ""
+msgstr "ནུས་ཅན་ཡིག་སྣོད་ཀྱི་མིང་ནང་ལུ་ཡིག་དཔར་རྐྱབས་གནང་།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLINETTP.STRING.TEXT
+#, fuzzy
 msgid  "Internet"
-msgstr ""
+msgstr "ཨིན་ཊར་ནེཊི།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLINETTP_HELP.STRING.TEXT
+#, fuzzy
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
-msgstr ""
+msgstr "འ་ནི་འདི་ཁྱོད་ཀྱིས་ ཝེབ་ཤོག་ལེབ་དང་ ཨེཕ་ཊི་པི་སར་བར་ན་ལུ་ ཡང་ཅིན་རྒྱུད་འཕྲིན་ཡོངས་འབྲེལ་མཐུད་ལམ་ལུ་ཚད་བརྒལ་འབྲལ་ལམ་གསར་བསྐྲུན་འབད་ས་ཨིན།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
+#, fuzzy
 msgid  "Mail & News"
-msgstr ""
+msgstr "ཡིག་འཕྲིན་དང་གནས་ཚུལ་ཚུ།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
+#, fuzzy
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP.STRING.TEXT
-msgid  "Document"
-msgstr ""
+msgstr "འ་ནི་འདི་ཁྱོད་ཀྱིས་ གློག་འཕྲིན་གྱི་ཁ་བྱང་ཡང་ཅིན་གནས་ཚུལ་སྡེ་ཚན་ལུ་ ཚད་བརྒལ་འབྲལ་ལམ་གསར་བསྐྲུན་འབད་ས་ཨིན།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr ""
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
+#, fuzzy
 msgid  "New Document"
-msgstr ""
+msgstr "ཡིག་ཆ་གསརཔ།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
+#, fuzzy
 msgid  "This is where you create a new document to which the new link points."
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_FORM_BUTTON.STRING.TEXT
-msgid  "Button"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_FROM_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr ""
+msgstr "འ་ནི་འདི་ཁྱོད་ཀྱིས་ འབྲེལ་ལམ་གསརཔ་དཔག་མི་ལུ་ཡིག་ཆ་གསརཔ་ཅིག་གསར་བསྐྲུན་འབད་ས་ཨིན།"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_QUERYOVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
-msgstr ""
+msgstr "ཡིག་སྣོད་ཧེ་མ་ལས་རང་གནས་ཡོད།ཚབ་སྲུང་འབད་ད་ག?"
 
 #: dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.STRING.TEXT
+#, fuzzy
 msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr ""
+msgstr "སྡེབ་དཔྱད་འབད་ནི་ལུ་འཐོབ་ཚུགསཔ་མེདཔ་མས། \n ཁྱོད་ཀྱི་གཞི་བཙུགས་འབད་མི་འདི་ཞིབ་དཔྱད་འབད་ནིདང་ སྐད་ཡིག་རེ་འདུན་ཡོད་མི་གཞི་བཙུགས་འབད་གནང་། \n"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Hyphenation"
-msgstr ""
+msgstr "སྦྲེལ་རྟགས་བཀལ་བ།"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.FT_WORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Word"
-msgstr ""
+msgstr "མིང་ཚིག།(~W)"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CUT.OKBUTTON.TEXT
 msgid  "H~yphenate"
@@ -1924,16 +1793,18 @@ msgid  "~Skip"
 msgstr ""
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Remove"
-msgstr ""
+msgstr "རྩ་བསྐྲད་གཏང་།(~R)"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_ALL.PUSHBUTTON.TEXT
 msgid  "Hyphenate ~All"
 msgstr ""
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "ཁ་བསདམས།(~C)"
 
 #: dialogs/iconcdlg.src#RID_SVXSTR_ICONCHOICEDLG_RESETBUT.STRING.TEXT
 msgid  "~Back"
@@ -1951,13 +1822,10 @@ msgstr ""
 msgid  "A~fter"
 msgstr ""
 
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_INS.FIXEDLINE.TEXT
-msgid  "Insert"
-msgstr ""
-
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "གནས་ས།"
 
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 msgid  "~Number"
@@ -1972,52 +1840,64 @@ msgid  " Columns"
 msgstr ""
 
 #: dialogs/multipat.src#RID_SVXDLG_MULTIPATH.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Select Paths"
-msgstr ""
+msgstr "འགྲུལ་ལམ་ སེལ་འཐུ་འབད།"
 
 #: dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FL_MULTIPATH.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Paths"
-msgstr ""
+msgstr "འགྲུལ་ལམ་"
 
 #: dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FT_RADIOBUTTON.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Mark the default path for new files."
-msgstr ""
+msgstr "ཡིག་སྣོད་གསརཔ་གི་དོན་ལུ་ སྔོན་སྒྲིག་འགྲུལ་ལམ་གུ་ རྟགས་བཀལ།"
 
 #: dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_ADD_MULTIPATH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add..."
-msgstr ""
+msgstr "བསྡོམས།(~A)"
 
 #: dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_DEL_MULTIPATH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "བཏོན་བཏང་།(~D)"
 
 #: dialogs/multipat.src#RID_SVXDLG_MULTIPATH.STR_HEADER_PATHS.STRING.TEXT
+#, fuzzy
 msgid  "Path list"
-msgstr ""
+msgstr "འགྲུལ་ལམ་ཐོ་ཡིག་"
 
 #: dialogs/multipat.src#RID_MULTIPATH_DBL_ERR.STRING.TEXT
+#, fuzzy
 msgid  "The path %1 already exists."
-msgstr ""
+msgstr "འགྲུལ་ལམ་%1 ཧེ་མ་ལས་རང་ ཡོདཔ་ཨིན།"
 
 #: dialogs/multipat.src#RID_SVXSTR_FILE_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Select files"
-msgstr ""
+msgstr "ཡིག་སྣོད་ཚུ་ སེལ་འཐུ་འབད།"
 
 #: dialogs/multipat.src#RID_SVXSTR_FILE_HEADLINE.STRING.TEXT
+#, fuzzy
 msgid  "Files"
-msgstr ""
+msgstr "ཡིག་སྣོད།"
 
 #: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Select Archives"
-msgstr ""
+msgstr "ཡིག་མཛོད་ཚུ་ སེལ་འཐུ་འབད།"
 
 #: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
+#, fuzzy
 msgid  "Archives"
-msgstr ""
+msgstr "ཡིག་མཛོད།"
 
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
+#, fuzzy
 msgid  "The file %1 already exists."
-msgstr ""
+msgstr "ཡིག་སྣོད་ %1 འདི་ཧེ་མ་ལས་ཡོདཔ་ཨིན།"
 
 #: dialogs/newtabledlg.src#RID_SVX_NEWTABLE_DLG.MODALDIALOG.TEXT
 msgid  "Insert Table"
@@ -2044,6 +1924,7 @@ msgid  "~Enter password to open"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_REENTER_PASSWD_TO_OPEN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Confirm password"
 msgstr ""
 
@@ -2061,10 +1942,6 @@ msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_TO_MODIFY.FIXEDTEXT.TEXT
 msgid  "Enter password to allow editing"
-msgstr ""
-
-#: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_REENTER_PASSWD_TO_MODIFY.FIXEDTEXT.TEXT
-msgid  "Confirm password"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_PASSWD_MUST_BE_CONFIRMED.STRING.TEXT
@@ -2096,23 +1973,22 @@ msgid  "Note"
 msgstr ""
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_LASTEDITLABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Author"
 msgstr ""
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Text"
-msgstr ""
+msgstr "ཚིག་ཡིག(~T)"
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Contents"
-msgstr ""
+msgstr "ནང་དོན་ཚུ།"
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 msgid  "~Insert"
-msgstr ""
-
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.BTN_AUTHOR.PUSHBUTTON.TEXT
-msgid  "Author"
 msgstr ""
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_EDIT.STRING.TEXT
@@ -2144,8 +2020,9 @@ msgid  "R~un"
 msgstr ""
 
 #: dialogs/scriptdlg.src#RID_DLG_SCRIPTORGANIZER.SF_PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ཁ་བསྡམས།"
 
 #: dialogs/scriptdlg.src#RID_DLG_SCRIPTORGANIZER.SF_PB_CREATE.PUSHBUTTON.TEXT
 msgid  "~Create..."
@@ -2164,15 +2041,12 @@ msgid  "~Delete..."
 msgstr ""
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Create Library"
 msgstr ""
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.FT_NEWLIB.FIXEDTEXT.TEXT
 msgid  "Enter the name for the new library."
-msgstr ""
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWLIB.STRING.TEXT
-msgid  "Create Library"
 msgstr ""
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
@@ -2272,8 +2146,9 @@ msgid  "A Scripting Framework error occurred while running the %LANGUAGENAME scr
 msgstr ""
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TYPE_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Type:"
-msgstr ""
+msgstr "དབྱེ་བ།"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
 msgid  "Message:"
@@ -2304,12 +2179,14 @@ msgid  "Return"
 msgstr ""
 
 #: dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "The following columns are currently hidden. Please mark the fields you want to show and choose OK."
-msgstr ""
+msgstr "ད་ལྟོ་འོག་གི་ཀེར་ཐིག་དེ་ཚུ་གསང་བཞག་ཡོདཔ། ཁྱོད་ཀྱིས་སྟོན་ནའི་ས་སྒོ་དེ་ཚུ་རྟགས་བཀལ་སྦེ་་བཏུབ་ ཟེར་མི་གདམ་ཁ་འབད།"
 
 #: dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Show columns"
-msgstr ""
+msgstr "ཀེར་ཐིག་ཚུ་སྟོན།"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.MODELESSDIALOG.TEXT
 msgid  "Spellcheck: "
@@ -2344,8 +2221,9 @@ msgid  "I~gnore Rule"
 msgstr ""
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.MB_ADDTODICT.MENUBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "ཁ་སྐོང་།(~A)"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CHANGE.PUSHBUTTON.TEXT
 msgid  "~Change"
@@ -2372,8 +2250,9 @@ msgid  "~Undo"
 msgstr ""
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Cl~ose"
-msgstr ""
+msgstr "ཁ་བསྡམས།"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_RESUME.STRING.TEXT
 msgid  "Resu~me"
@@ -2436,8 +2315,9 @@ msgid  "Font Effects"
 msgstr ""
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "གནས་ས།"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 msgid  "Asian Layout"
@@ -2472,8 +2352,9 @@ msgid  "~Options"
 msgstr ""
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Similarity Search"
-msgstr ""
+msgstr "ཆ་འདྲ་བ་འཚོལ།"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 msgid  "~Exchange characters"
@@ -2492,8 +2373,9 @@ msgid  "~Combine"
 msgstr ""
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FL_SIMILARITY.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "སྒྲིག་སྟངས་ཚུ།"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.MODALDIALOG.TEXT
 msgid  "Paste Special"
@@ -2520,8 +2402,9 @@ msgid  "~Other Icon..."
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Selection"
-msgstr ""
+msgstr "སེལ་འཐུ།"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
 msgid  "Object"
@@ -2532,28 +2415,33 @@ msgid  "Edit Links"
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Source file"
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_LINKS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Element:"
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "དབྱེ་བ།"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
 msgid  "Status"
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "ཁ་བསདམས།(~C)"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_UPDATE_NOW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Update"
-msgstr ""
+msgstr "དུས་མཐུན་བཟོ་ནི།"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_OPEN_SOURCE.PUSHBUTTON.TEXT
 msgid  "~Open"
@@ -2567,21 +2455,15 @@ msgstr ""
 msgid  "~Break Link"
 msgstr ""
 
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES2.FIXEDTEXT.TEXT
-msgid  "Source file"
-msgstr ""
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_SOURCE2.FIXEDTEXT.TEXT
-msgid  "Element:"
-msgstr ""
-
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type:"
-msgstr ""
+msgstr "དབྱེ་བ།"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_UPDATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Update:"
-msgstr ""
+msgstr "དུས་མཐུན་བཟོ་ནི།"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_AUTOMATIC.RADIOBUTTON.TEXT
 msgid  "~Automatic"
@@ -2607,15 +2489,8 @@ msgstr ""
 msgid  "Graphic"
 msgstr ""
 
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BUTTONCLOSE.STRING.TEXT
-msgid  "~Close"
-msgstr ""
-
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG.STRING.TEXT
-msgid  "Are you sure you want to remove the selected link?"
-msgstr ""
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG_MULTI.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr ""
 
@@ -2644,6 +2519,7 @@ msgid  "Create from ~file"
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.BTN_FILEPATH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Search..."
 msgstr ""
 
@@ -2656,8 +2532,9 @@ msgid  "Object type"
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.STR_FILE.STRING.TEXT
+#, fuzzy
 msgid  "File"
-msgstr ""
+msgstr "ཡིག་སྣོད།"
 
 #: dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.STRING.TEXT
 msgid  "Insert OLE Object"
@@ -2672,6 +2549,7 @@ msgid  "File / URL"
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_PLUGINS_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
 msgstr ""
 
@@ -2687,18 +2565,6 @@ msgstr ""
 msgid  "Class ~Location"
 msgstr ""
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.BTN_CLASS.PUSHBUTTON.TEXT
-msgid  "~Search..."
-msgstr ""
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_CLASS.FIXEDLINE.TEXT
-msgid  "File"
-msgstr ""
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_APPLET_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr ""
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.HELPBUTTON.TEXT
 msgid  "Insert Applet"
 msgstr ""
@@ -2708,12 +2574,14 @@ msgid  "Floating Frame Properties"
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_FRAMENAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "མིང་།(~a)"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Contents"
-msgstr ""
+msgstr "ནང་དོན་ཚུ།"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGON.RADIOBUTTON.TEXT
 msgid  "~On"
@@ -2772,24 +2640,28 @@ msgid  "Edit Applet"
 msgstr ""
 
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Record Number"
-msgstr ""
+msgstr "དྲན་ཐོ་ཨང་།"
 
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "go to record"
-msgstr ""
+msgstr "དྲན་ཐོ་ནང་འགྱོ།"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Thesaurus"
-msgstr ""
+msgstr "མངོན་བརྗོད།"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
 msgid  "~Current word"
 msgstr ""
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MB_LANGUAGE.MENUBUTTON.TEXT
+#, fuzzy
 msgid  "~Language"
-msgstr ""
+msgstr "སྐད་ཡིག...(~L)"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_THES_ALTERNATIVES.FIXEDTEXT.TEXT
 msgid  "~Alternatives"
@@ -2896,6 +2768,7 @@ msgid  "No"
 msgstr ""
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
+#, fuzzy
 msgid  "Registered databases"
 msgstr ""
 
@@ -2908,20 +2781,19 @@ msgid  "Database file"
 msgstr ""
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
+msgstr "གསརཔ།(~N)"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit..."
-msgstr ""
+msgstr "ཞུན་དག(~E)"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
-
-#: options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FIXEDLINE.TEXT
-msgid  "Registered databases"
-msgstr ""
+msgstr "བཏོན་གཏང་།(~D)"
 
 #: options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FIXEDTEXT.TEXT
 msgid  "~Database file"
@@ -2956,8 +2828,9 @@ msgid  "The name '$file$' is already used for another database.\nPlease choose a
 msgstr ""
 
 #: options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to delete the entry?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཚིག་མཛོད་འདི་ བཏོན་གཏང་ནི་ ཨིན་ན?"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_USETABLE.CHECKBOX.TEXT
 msgid  "~Apply replacement table"
@@ -2976,8 +2849,9 @@ msgid  "Apply"
 msgstr ""
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "བཏོན་གཏང་།"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FL_SOURCEVIEW.FIXEDLINE.TEXT
 msgid  "Font settings for HTML, Basic and SQL sources"
@@ -3012,8 +2886,9 @@ msgid  "Replace with"
 msgstr ""
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "རང་བཞིན་གྱི།(~A)"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
 msgid  "Default text direction"
@@ -3040,104 +2915,129 @@ msgid  "~Current document only"
 msgstr ""
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_MISCELLANEOUS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Miscellaneous options"
-msgstr ""
+msgstr "སྣ་ཚོགས་ཀྱི་ གདམ་ཁ་ཚུ།"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ACCESSIBILITY_TOOL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Support ~assistive technology tools (program restart required)"
-msgstr ""
+msgstr "ཕན་ཐོགས་ཅན་གྱི་ འཕྲུལ་རིག་ ལག་ཆས་ཚུ་ རྒྱབ་སྐྱོར་འབད།(ལས་རིམ་ལོག་འགོ་བཙུགས་ནི་དགོས་མཁོ་ཡོདཔ།)(~a)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TEXTSELECTION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use te~xt selection cursor in read-only text documents"
-msgstr ""
+msgstr "ལྷག་ནིཙམ་གྱི་ཚིག་ཡིག་ ཡིག་ཆ་ནང་ལུ་ ཚིག་ཡིག་ སེལ་འཐུ་ འོད་རྟགས་ ལག་ལེན་འཐབ།(~x)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Allow animated ~graphics"
-msgstr ""
+msgstr "བསྒུལ་ཅན་ ཚད་རིས་ཚུ་ འཆར་བཅུག(~g)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Allow animated ~text"
-msgstr ""
+msgstr "བསྒུལ་ཅན་་ ཚིག་ཡིག་ འཆར་བཅུག(~t)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Help tips disappear after "
-msgstr ""
+msgstr "གྲོགས་རམ་ ཕན་བསླབ་ཚུ་ ཤུལ་ལས་ཡལ་འགྱོ་འོང་།(~H)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "seconds"
-msgstr ""
+msgstr "སྐར་ཆག་ཚུ།"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options for high contrast appearance"
-msgstr ""
+msgstr "ཚོན་མདངས་ མཐོ་བའི་ འབྱུང་སྣང་གི་དོན་ལུ་ གདམ་ཁ།"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automatically ~detect high contrast mode of operating system"
-msgstr ""
+msgstr "བཀོལ་སྤྱོད་རིམ་ལུགས་གྱི་ ཚོན་མདངས་མཐོ་བའི་ ཐབས་ལམ་འདི་ རང་བཞིན་གྱིས་སྐྱོན་འཛིན་འབད་འོང་།(~d)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use automatic font ~color for screen display"
-msgstr ""
+msgstr "གསལ་གཞི་ བཀྲམ་སྟོན་གྱི་དོན་ལུ་ རང་བཞིན་གྱི་ ཡིག་གཟུགས་ ཚོས་གཞི་ལག་ལེན་འཐབ།(~c)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_PAGE_PREVIEWS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Use system colors for page previews"
-msgstr ""
+msgstr "ཤོག་ལེབ་ སྔོན་ལྟ་གི་དོན་ལུ་ རིམ་ལུགས་ཚོས་གཞི་ཚུ་ ལག་ལེན་འཐབ།(~U)"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_KERNING.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Kerning"
-msgstr ""
+msgstr "ཀར་ནིང་།"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_KERNING.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Western characters only"
-msgstr ""
+msgstr "ནུབ་ཀྱི་ ཡིག་འབྲུ་རྐྱངམ་ཅིག(~W)"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_PUNCT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Western ~text and Asian punctuation"
-msgstr ""
+msgstr "ནུབ་ཀྱི་ཚིག་ཡིག་དང་ཨེ་ཤི་ཡན་ ཡིག་རྟགས།(~t)"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_CHAR_DIST.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Character spacing"
-msgstr ""
+msgstr "ཡིག་འབྲུ་ བར་སྟོང་བཞག་ཐངས།"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_NO_COMP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No compression"
-msgstr ""
+msgstr "ཨེབ་བཙུགས་མེད།(~N)"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_COMP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Compress punctuation only"
-msgstr ""
+msgstr "ཡིག་རྟགས་ རྐྱངམ་ཅིག་ཨེབ་བཙུགས་འབད།(~C)"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_KANA_COMP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Compress ~punctuation and Japanese Kana"
-msgstr ""
+msgstr "ཡིག་རྟགས་དང་ཇ་པ་ནིསི ཀཱ་ན་ ཨེབ་བཙུགས་འབད།(~p)"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_START_END.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "First and last characters"
-msgstr ""
+msgstr "མགོ་དང་མཇུག་གི་ཡིག་འབྲུ་ཚུ།"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Language"
-msgstr ""
+msgstr "སྐད་ཡིག(~L)"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.CB_STANDARD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Default"
-msgstr ""
+msgstr "སྔོན་སྒྲིག(~D)"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_START.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Not at start of line:"
-msgstr ""
+msgstr "གྲལ་ཐིག་གི་ འགོ་པཙུགས་ལུ་མེན།:"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_END.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Not at end of line:"
-msgstr ""
+msgstr "གྲལ་ཐིག་གི་ མཇུག་ལུ་མེན།:"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_HINT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Without user-defined line break symbols"
-msgstr ""
+msgstr "ལག་ལེན་པ་ ངེས་འཛིན་འབད་ནིའི་ རྒྱུན་ཆད་ བརྡ་ཚོན་མེད་པ།"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Proxy"
-msgstr ""
+msgstr "པོརོག་སི།"
 
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
 msgid  "Default Colors"
@@ -3152,240 +3052,272 @@ msgid  "Color table"
 msgstr ""
 
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.PB_RESET_TO_DEFAULT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Default"
-msgstr ""
+msgstr "སྔོན་སྒྲིག(~D)"
 
 #: options/optchart.src#RID_SVXSTR_DIAGRAM_ROW.STRING.TEXT
 msgid  "Data Series $(ROW)"
 msgstr ""
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Color scheme"
-msgstr ""
+msgstr "ཚོས་གཞི་ འཆར་ལས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Scheme"
-msgstr ""
+msgstr "འཆར་ལས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Save..."
-msgstr ""
+msgstr "སྲུངས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "བཏོན་གཏང་།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Custom colors"
-msgstr ""
+msgstr "སྲོལ་སྒྲིག་ ཚོས་གཞི་ཚུ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
+#, fuzzy
 msgid  "On"
-msgstr ""
+msgstr "ཨཱོན།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_UIELEM.STRING.TEXT
+#, fuzzy
 msgid  "User interface elements"
-msgstr ""
+msgstr "ལག་ལེན་པའི་ ངོས་འདྲ་བ རྒྱུ་རྫས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_COLSET.STRING.TEXT
+#, fuzzy
 msgid  "Color setting"
-msgstr ""
+msgstr "ཚོས་གཞི་ སྒྲིག་སྟངས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "སྔོན་ལྟ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ཡོངས་ཁྱབ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Document background"
-msgstr ""
+msgstr "ཡིག་ཆའི་རྒྱབ་གཞི།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Text boundaries"
-msgstr ""
+msgstr "ཚིག་ཡིག་ མཐའ་མཚམས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Application background"
-msgstr ""
+msgstr "གློག་རིམ་ གཞི།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Object boundaries"
-msgstr ""
+msgstr "དངོས་པོའི་ མཐའ་མཚམས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Table boundaries"
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ མཐའ་མཚམས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Font color"
-msgstr ""
+msgstr "ཡིག་གཟུགས་ ཚོས་གཞི།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Unvisited links"
-msgstr ""
+msgstr "བལྟ་སྤྱོད་མ་འབད་བའི་ འབྲེལ་ལམ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Visited links"
-msgstr ""
+msgstr "བལྟ་སྤྱོད་འབད་ཡོད་པའི་ འབྲེལ་ལམ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "AutoSpellcheck"
-msgstr ""
+msgstr "རང་བཞིན་སྡེབ་དཔྱད།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SMARTTAGS.FIXEDTEXT.TEXT
 msgid  "Smart Tags"
 msgstr ""
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Text Document"
-msgstr ""
+msgstr "ཚིག་ཡིག་ ཡིག་ཆ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Grid"
-msgstr ""
+msgstr "གིརིཌི།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Field shadings"
-msgstr ""
+msgstr "ས་སྒོ་ ནག་གྲིབ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERIDXSHADINGS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Index and table shadings"
-msgstr ""
+msgstr "ཟུར་ཐོ་དང་ཐིག་ཁྲམ་ ནག་གྲིབ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERSCRIPTINDICATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Script indicator"
-msgstr ""
+msgstr "ཡིག་ཚུགས་ བརྡ་སྟོན་པ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERSECTIONBOUNDARIES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Section boundaries"
-msgstr ""
+msgstr "དབྱེ་ཚན་ མཐའ་མཚམས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Page and column breaks"
-msgstr ""
+msgstr "ཤོག་ལེབ་དང་ཀེར་ཐིག་མཚམས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Direct cursor"
-msgstr ""
+msgstr "ཐད་ཀར་ འོད་རྟགས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTML.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "HTML Document"
-msgstr ""
+msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ འིག་ཆ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLSGML.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "SGML syntax highlighting"
-msgstr ""
+msgstr "ཨེསི་ཇི་ཨེམ་ཨེལ ཚིག་སྦྱོར་གཙོ་དམིགས་བཟོ་དོ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLCOMMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comment highlighting"
-msgstr ""
+msgstr "བསམ་བཀོད་ གཙོ་དམིགས་འབད་དོ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLKEYWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Keyword highlighting"
-msgstr ""
+msgstr "གཙོ་ཚིག་ གཙོ་དམིགས་འབད་དོ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "ཚིག་ཡིག"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "ཤོག་ཁྲམ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Grid lines"
-msgstr ""
+msgstr "གིརིཌི་ གྲལ་ཐིག།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Page breaks"
-msgstr ""
+msgstr "ཤོག་ལེབ་ཀྱི་ མཚམས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKMANUAL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Manual page breaks"
-msgstr ""
+msgstr "ལག་ཐོག་ ཤོག་ལེབ་ཀྱི་ མཚམས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKAUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Automatic page breaks"
-msgstr ""
+msgstr "རང་བཞིན་གྱི་ ཤོག་ལེབ་ མཚམས།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Detective"
-msgstr ""
+msgstr "སྐྱོན་འཛིན་ཅན།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Detective error"
-msgstr ""
+msgstr "སྐྱོན་འཛིན་ཅན་གྱི་ འཛོལ་བ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "References"
-msgstr ""
+msgstr "གཞི་བསྟུན་ཚུ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Notes background"
-msgstr ""
+msgstr "དྲན་འཛིན་ཚུ་གི་ རྒྱབ་གཞི།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Drawing / Presentation"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAWGRID.FIXEDTEXT.TEXT
-msgid  "Grid"
-msgstr ""
+msgstr "པར་རིས་/གསལ་སྟོན།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASIC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Basic Syntax Highlighting"
-msgstr ""
+msgstr "གཞི་རིམ་ ཚིག་སྦྱོར་གཙོ་མིག"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICIDENTIFIER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Identifier"
-msgstr ""
+msgstr "ངོས་འཛིན་པ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICCOMMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comment"
-msgstr ""
+msgstr "བསམ་བཀོད།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICNUMBER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Number"
-msgstr ""
+msgstr "ཨང་།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICSTRING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "String"
-msgstr ""
+msgstr "ཡིག་རྒྱུན།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICOPERATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
-msgstr ""
+msgstr "བཀོལ་སྤྱོདཔ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICKEYWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Reserved expression"
-msgstr ""
+msgstr "ཟུར་གསོག་འབད་ཡོད་པའི་ གསལ་བརྗོད།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Error"
-msgstr ""
+msgstr "འཛོལ་བ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "SQL Syntax Highlighting"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLIDENTIFIER.FIXEDTEXT.TEXT
-msgid  "Identifier"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLNUMBER.FIXEDTEXT.TEXT
-msgid  "Number"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLSTRING.FIXEDTEXT.TEXT
-msgid  "String"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLOPERATOR.FIXEDTEXT.TEXT
-msgid  "Operator"
-msgstr ""
+msgstr "ཨེསི་ཇི་ཨེམ་ཨེལ ཚིག་སྦྱོར་གཙོ་དམིགས་བཟོ་དོ།"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 msgid  "Keyword"
@@ -3393,10 +3325,6 @@ msgstr ""
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLPARAMETER.FIXEDTEXT.TEXT
 msgid  "Parameter"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLCOMMENT.FIXEDTEXT.TEXT
-msgid  "Comment"
 msgstr ""
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_EXTENSION.STRING.TEXT
@@ -3412,144 +3340,173 @@ msgid  "Grammar check highlighting"
 msgstr ""
 
 #: options/optcolor.src#RID_SVXQB_DELETE_COLOR_CONFIG.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you really want to delete the color scheme?"
-msgstr ""
+msgstr "ཁྱོན་ཀྱིས་ ཚོས་གཞི་ འཆར་ལས་བཏོན་གཏང་ནི་འདི་ ཐེད་རི་འབའ་རི་ཨིན་ན?"
 
 #: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Color Scheme Deletion"
-msgstr ""
+msgstr "ཚོས་གཞི་ འཆར་ལས་བཏོན་གཏང་ནི།"
 
 #: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE1.STRING.TEXT
+#, fuzzy
 msgid  "Save scheme"
-msgstr ""
+msgstr "འཆར་ལས་་སྲུངས།"
 
 #: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
+#, fuzzy
 msgid  "Name of color scheme"
-msgstr ""
+msgstr "ཚོས་གཞི་ འཆར་ལས་གྱི་མིང་།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
+#, fuzzy
 msgid  "Complex Text Layout"
-msgstr ""
+msgstr "གོ་དཀའ་བའི་ ཚིག་ཡིག་ སྒྲིག་བཀོད།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_SEQUENCECHECKING.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sequence checking"
-msgstr ""
+msgstr "འབྱུང་རིམ་ ཞིབ་དཔྱད་འབད་དོ།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_SEQUENCECHECKING.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use se~quence checking"
-msgstr ""
+msgstr "འབྱུང་རིམ་ ཞིབ་དཔྱད་འབད་ནི་ལག་ལེན་འཐབ།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_RESTRICTED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Restricted"
-msgstr ""
+msgstr "བཀག་དམ་ཅན།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_TYPE_REPLACE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Type and replace"
-msgstr ""
+msgstr "ཡིག་དཔར་རྐྱབས་བཞིནམ་ལས་ཚབ་བཙུགས།(~T)"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_CURSORCONTROL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Cursor control"
-msgstr ""
+msgstr "འོད་རྟགས་ཚད་འཛིན།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Movement"
-msgstr ""
+msgstr "འགུལ་བསྐྱོད།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Lo~gical"
-msgstr ""
+msgstr "གཏན་ཚིག་ཅན།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_VISUAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Visual"
-msgstr ""
+msgstr "མཐོང་བའི།(~V)"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_GENERAL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "General options"
-msgstr ""
+msgstr "ཡོངས་ཁྱབ་ གདམ་ཁ།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_NUMERALS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Numerals"
-msgstr ""
+msgstr "ཨང་ཡིག་ཚུ།(~N)"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Arabic"
-msgstr ""
+msgstr "ཨ་ར་བིཀ།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Hindi"
-msgstr ""
+msgstr "ཧིན་དི།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "System"
-msgstr ""
+msgstr "རིམ་ལུགས།"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
 msgid  "Context"
 msgstr ""
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New Dictionary"
-msgstr ""
+msgstr "ཚིག་མཛོད་གསརཔ།"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "མིང་།(~N)"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTLANG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Language"
-msgstr ""
+msgstr "སྐད་ཡིག་(~L)"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Exception (-)"
-msgstr ""
+msgstr "དམིགས་བསལ།(-)(~E)"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Dictionary"
-msgstr ""
+msgstr "ཚིག་མཛོད།"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Edit Custom Dictionary"
-msgstr ""
+msgstr "སྲོལ་སྒྲིག་ཚིག་མཛོད་ཞུན་དག་འབད།"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Book"
-msgstr ""
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.FT_DICTLANG.FIXEDTEXT.TEXT
-msgid  "~Language"
-msgstr ""
+msgstr "ཀི་དེབ།(~B)"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_WORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Word"
-msgstr ""
+msgstr "ཡིག་ཚིག(~W)"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_REPLACE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Replace ~By:"
-msgstr ""
+msgstr "གྱིས་ ཚབ་བཙུགས།(~B)"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.PB_NEW_REPLACE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
+msgstr "གསརཔ།(~N)"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.PB_DELETE_REPLACE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "བཏོན་གཏང་།(~D)"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.STR_MODIFY.STRING.TEXT
+#, fuzzy
 msgid  "~Replace"
-msgstr ""
+msgstr "ཚབ་བཙུགས།(~R)"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.BTN_EDITCLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "ཁ་བསྡམ།(~C)"
 
 #: options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.STRING.TEXT
+#, fuzzy
 msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr ""
+msgstr "མིང་གསརཔ་ཅིག་ཐོ་བཀོད་འབད་གནང་།"
 
 #: options/optdict.src#RID_SFXQB_SET_LANGUAGE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to change the '%1' dictionary language?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་'%1' ཚིག་མཛོད་ཀྱི་སྐད་ཡིག་བསྒྱུར་བཅོས་འབད་ནི་ཨིན་ན?"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_WORD.FIXEDLINE.TEXT
 msgid  "Microsoft Word 97/2000/XP"
@@ -3624,8 +3581,9 @@ msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "གྲོགས་རམ།"
 
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 msgid  "~Tips"
@@ -3648,8 +3606,9 @@ msgid  "Help ~formatting"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "སྔོན་སྒྲིག(~D)"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 msgid  "High Contrast #1"
@@ -3720,8 +3679,9 @@ msgid  "Icon size"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "རང་བཞིན་གྱི།(~A)"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
 msgid  "Small"
@@ -3729,10 +3689,6 @@ msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
 msgid  "Large"
-msgstr ""
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM1.STRINGLIST.ITEM
-msgid  "Automatic"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
@@ -3773,10 +3729,6 @@ msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MENU_ICONS.FIXEDTEXT.TEXT
 msgid  "Icons in menus"
-msgstr ""
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM1.STRINGLIST.ITEM
-msgid  "Automatic"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM2.STRINGLIST.ITEM
@@ -3920,72 +3872,84 @@ msgid  "The language setting of the user interface has been updated and will tak
 msgstr ""
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
+#, fuzzy
 msgid  "User Data"
-msgstr ""
+msgstr "ལག་ལེན་པའི་གནད་སྡུད།"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Company"
-msgstr ""
+msgstr "ཚོང་སྡེ།(~C)"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "First/Last ~name/Initials"
-msgstr ""
+msgstr "དང་པ་/མཇུག་ གི་མིང་/མིང་རྟགས་བསྡུས་པ།(~n)"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_RUSS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Last Name/First name/Father's name/Initials"
-msgstr ""
+msgstr "མཇུག་གི་མིང་/མགོའི་མིང་/ཕ་མིང་/འགོ་ཐོག"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_EASTERN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Last/First ~name/Initials"
-msgstr ""
+msgstr "དང་པ་/མཇུག་ གི་མིང་/མིང་རྟགས་བསྡུས་པ།(~n)"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Street"
-msgstr ""
+msgstr "ཁྲོམ་ལམ།(~S)"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET_RUSS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Street/Apartment number"
-msgstr ""
+msgstr "ཁྲོམ་ལམ།/ཁང་ཚན་ཨང་།"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_CITY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Zip/City"
-msgstr ""
+msgstr "གནས་ཡུལ/གྲོང་སྡེ།"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COUNTRY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Country/Region"
-msgstr ""
+msgstr "རྒྱལ་ཁབ/ལུང་ཕྱོགས།"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_TITLEPOS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title/Position"
-msgstr ""
+msgstr "མགོ་མིང/གནས་ས།(~T)"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_PHONE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Tel. (Home/Work)"
-msgstr ""
+msgstr "བརྒྱུད་འཕྲིན་ (ཁྱིམ།/ལཱ་གཡོག)"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_FAXMAIL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Fa~x / E-mail"
-msgstr ""
+msgstr "དཔར་འཕྲིན་/གློག་འཕྲིན།(~x)"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.GB_ADDRESS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Address "
-msgstr ""
+msgstr "ཁ་བྱང་།"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.CB_USEDATA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use data for document properties"
-msgstr ""
+msgstr "ཡིག་ཆ་རྒྱུ་དངོས་ཀྱི་དོན་ལུ་ གནད་སྡུད་ལག་ལེན་འཐབ།"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_US_STATE.STRING.TEXT
+#, fuzzy
 msgid  "City/State/Zip"
-msgstr ""
+msgstr "གྲོང་སྡེ་/མངའ་སྡེ/གནས་ཡུལ།"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.STRING.TEXT
+#, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
-msgstr ""
-
-#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
-msgstr ""
+msgstr "ཁྲོམ་ལམ་དང་གནས་ཨང་ དེ་ལས་གྲོང་སྡེ་་དེ་ཚུ་ ཐོ་འགོད་ལྡེ་མིག་ བཟོ་བཏོན་འབད་ནིའི་དོན་ལས་ ལག་ལེན་འཐབ་ནི་ཨིནམ་ དྲན་དགོ ཁྱོད་ཀྱིས་ ཐོ་འགོད་མ་འབད་ཚུན་ཚོད་ ལག་ལེན་པའི་གནད་སྡུད་འདི་ ལོག་སྟེ་བསྒྱུར་བཅོས་འབད་མི་ཚུགས།ཁྱོད་ཀྱིས་ད་ལྟོ་རང་ ལག་ལེན་པའི གནད་སྡུད་དེ་ ལེགས་བཅོས་འབད་ནི་ཨིན་ན་?"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 msgid  "Size ~1"
@@ -4100,172 +4064,204 @@ msgid  "More Information"
 msgstr ""
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.TABPAGE.TEXT
+#, fuzzy
 msgid  "Proxy"
-msgstr ""
+msgstr "པོརོག་སི།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_SETTINGS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "གཞི་སྒྲིག"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_PROXYMODE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Proxy s~erver"
-msgstr ""
+msgstr "པོརོག་སི་ སར་བར།(~e)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "ཅི་མེད།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "System"
-msgstr ""
+msgstr "རིམ་ལུགས།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Manual"
-msgstr ""
+msgstr "ལག་དེབ།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
+#, fuzzy
 msgid  "Use browser settings"
-msgstr ""
+msgstr "བརའུ་ཟར་ གཞི་སྒྲིག་ ལག་ལེན་འཐབ།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PROXY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "HT~TP proxy"
-msgstr ""
+msgstr "ཨེཆ་ཊི་ཊི་པི་ པོརོག་སི།(~T)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PORT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port"
-msgstr ""
+msgstr "འདྲེན་ལམ།(~P)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PROXY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "HTTP~S proxy"
-msgstr ""
+msgstr "ཨེཆ་ཊི་ཊི་པི་ པོརོག་སི།(~T)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "P~ort"
-msgstr ""
+msgstr "འདྲེན་ལམ།(~p)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~FTP proxy"
-msgstr ""
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PORT.FIXEDTEXT.TEXT
-msgid  "P~ort"
-msgstr ""
+msgstr "ཨེཕ་ཊི་པི་ པོརོག་སི།(~F)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PROXY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~SOCKS proxy"
-msgstr ""
+msgstr "སོཀསི་ པོརོག་སི།(~S)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PORT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Po~rt"
-msgstr ""
+msgstr "འདེན་ལམ།(~r)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_NOPROXYFOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~No proxy for:"
-msgstr ""
+msgstr "གི་དོན་ལུ་ པོརོག་སི་ མེད།:(~N)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Separator ;"
-msgstr ""
+msgstr "དབྱེ་བྱེད་པ། ;"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "DNS server"
-msgstr ""
+msgstr "ཌི་ཨེན་ཨེས་ སར་བར།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "རང་བཞིན་གྱི།(~A)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_MANUAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Manual"
-msgstr ""
+msgstr "ལག་དེབ།(~M)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_0.STRING.TEXT
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 0 and 255."
-msgstr ""
+msgstr "འདི་ འ་ནི་ ས་སྒོ་གི་དོན་ལུ་ ནུས་ཅན་ཐོ་བཀོད་མེན་པས། ༠་དང་༢༥༥་གི་བར་ན་གནས་གོང་ཅིག་ གསལ་བཀོད་འབད་གནང་།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.STRING.TEXT
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
-msgstr ""
+msgstr "འདི་ འ་ནི་ས་སྒོའི་དོན་ལུ་ ནུས་ཅན་ཐོ་བཀོད་མེན་པས།༡་དང་༢༥༥་གི་ བར་ན་གནས་གོང་ གསལ་བཀོད་འབད་གནང་།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
+#, fuzzy
 msgid  "Search"
-msgstr ""
+msgstr "ཞིབ་འཚོལ་འབད།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Search in"
-msgstr ""
+msgstr "ནང་ འཚོལ་ཞིབ་འབད།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "མིང་།(~N)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "དབྱེ་བ།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~And"
-msgstr ""
+msgstr "དང་།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Or"
-msgstr ""
+msgstr "ཡང་ཅིན།(~O)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_EXACT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "E~xact"
-msgstr ""
+msgstr "ཏག་ཏག(~E)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Prefix"
-msgstr ""
+msgstr "སྔོན་ཚིག།(~P)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_POSTFIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Su~ffix"
-msgstr ""
+msgstr "རྗེས་ཚིག(~f)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Separator"
-msgstr ""
+msgstr "དབྱེ་བྱེད་པ།(~S)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_CASE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Case match"
-msgstr ""
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM1.STRINGLIST.ITEM
-msgid  "None"
-msgstr ""
+msgstr "ཡི་ཀུའི་ མཐུན་སྒྲིག།(~C)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Upper"
-msgstr ""
+msgstr "ཡར་གྱི།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Lower"
-msgstr ""
+msgstr "དམའ་གི"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "N~ew"
-msgstr ""
+msgstr "གསརཔ།(~e)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "བསྡོམས།(~A)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_CHANGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify"
-msgstr ""
+msgstr "ལེགས་བཅོས་འབད།(~M)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "དཏོན་གཏང་།(~D)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to accept the current modification?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ད་ལྟོའི་ ལེགས་བཅོས་འདི་ལུ་ དང་ལེན་འབད་ནི་ཨིན་ན?"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
+#, fuzzy
 msgid  "Security"
-msgstr ""
+msgstr "སྲུང་སྐྱོབ།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 msgid  "Security options and warnings"
@@ -4304,44 +4300,48 @@ msgid  "Master Password..."
 msgstr ""
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Macro security"
-msgstr ""
+msgstr "མེཀ་རོ་་སྲུང་སྐྱོབ།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
-msgstr ""
+msgstr "མེཀ་རོ་ ལག་ལེན་འཐབ་ནིའི་དོན་ལུ་ སྲུང་སྐྱོབ་ གནས་རིམ་འདི་ བདེ་སྒྲིག་འབད་བཞིནམ་དང་ བློ་གཏད་ཅན་གྱི་ མེཀ་རོ་ བཟོ་མི་དེ་ གསལ་བཀོད་འབད།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Macro Security..."
-msgstr ""
+msgstr "མེཀ་རོ་སྲུང་སྐྱོབ།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.STRING.TEXT
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 msgstr ""
 
-#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr ""
-
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ཇ་བ་\nདང་གཅིག་ཁར་ ཇ་བ་ ཡིག་ཚུགས་འདི་ཡང་་ལྕོགས་མིན་བཟོཝ་ཨིནམ་དྲན་གནང།\n\nཁྱོད་ཀྱིས་ ད་ལྟོ་ཡང་ ཇ་བ་ལུ་ ལྕོགས་མིན་བཟོ་ནི་ཨིན་ན་?"
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Don't show warning again"
-msgstr ""
+msgstr "ཉེན་བརྡ་ལོག་སྟེ་མ་སྟོན།(~D)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.FL_MAIL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sending documents as e-mail attachments"
-msgstr ""
+msgstr "ཡིག་ཆ་ཚུ་་ གློག་འཕྲིན་ མཉམ་སྦྲགས་འབད་གཏང་དོ།"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.FT_MAILERURL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~E-mail program"
-msgstr ""
+msgstr "གློག་འཕྲིན་ལས་རིམ།(~E)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
-msgstr ""
+msgstr "ཡིག་སྣོད་ཆ་མཉམ།(*.*)"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
 msgid  "Java"
@@ -4416,6 +4416,7 @@ msgid  "For example: -Dmyprop=c:\\program files\\java"
 msgstr ""
 
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Remove"
 msgstr ""
 
@@ -4435,281 +4436,307 @@ msgstr ""
 msgid  "Add ~Folder"
 msgstr ""
 
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_REMOVE_PATH.PUSHBUTTON.TEXT
-msgid  "~Remove"
-msgstr ""
-
-#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr ""
-
-#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr ""
-
-#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr ""
-
-#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr ""
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Treat as equal"
-msgstr ""
+msgstr "མཉམ་པ་སྦེ་རྩིས་འཇོག་འབད།"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~uppercase/lowercase"
-msgstr ""
+msgstr "ཚུགས་ཡིག་/མགྱོགས་ཡིག(~u)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_FULL_HALF_WIDTH.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~full-width/half-width forms"
-msgstr ""
+msgstr "རྒྱ་ཚད་གངམ་/རྒྱ་ཚད་ཕྱེད་ཀའི་ འབྲི་ཤོག(~f)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HIRAGANA_KATAKANA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~hiragana/katakana"
-msgstr ""
+msgstr "ཧི་ར་ག་ན་/ཀ་ཊ་ཀ་ན།(~k)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CONTRACTIONS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~contractions (yo-on, sokuon)"
-msgstr ""
+msgstr "ཚིག་བསྡུས(ཡོ-་ཨོན་ སོཀ་ཡོན།)(~c)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_MINUS_DASH_CHOON.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~minus/dash/cho-on"
-msgstr ""
+msgstr "ཕབ་རྟགས་/སྦྲེལ་རྟགས/ཅུན།(~m)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_REPEAT_CHAR_MARKS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "'re~peat character' marks"
-msgstr ""
+msgstr "'ཡང་བསྐྱར་ ཡིག་འབྲུའི་' རྟགས།(~p)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_VARIANT_FORM_KANJI.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~variant-form kanji (itaiji)"
-msgstr ""
+msgstr "འགྱུར་བ་ཅན་གྱི་ འབྲི་ཤོག་ ཀཱན་ཇི།(ཨི་ཏའེ་ཇི།)(~v)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_OLD_KANA_FORMS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~old Kana forms"
-msgstr ""
+msgstr "ཀ་ན་གི་་འབྲི་ཤོག་ རྒསཔ།(~o)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_DIZI_DUZU.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~di/zi, du/zu"
-msgstr ""
+msgstr "ཌི་/ཛི ཌུ/ཛུ།(~d)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_BAVA_HAFA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~ba/va, ha/fa"
-msgstr ""
+msgstr "བཱ/ཝ་ ཧཱ/ཕཱ།(~b)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_TSITHICHI_DHIZI.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~tsi/thi/chi, dhi/zi"
-msgstr ""
+msgstr "ཙི་/ཐི/ཅི་ ཌི/ཛི།(~t)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HYUFYU_BYUVYU.CHECKBOX.TEXT
+#, fuzzy
 msgid  "h~yu/fyu, byu/vyu"
-msgstr ""
+msgstr "ཧིའུ/ཕིའུ་ བིའུ/ཝིའུ།(~y)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_SESHE_ZEJE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~se/she, ze/je"
-msgstr ""
+msgstr "སི/ཤི་ ཛི/ཇི།(~s)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_IAIYA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~ia/iya (piano/piyano)"
-msgstr ""
+msgstr "ཨ/ཨ་ཡ(པེ་ནོ/པེ་ཡ་ནོ།)(~i)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_KIKU.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~ki/ku (tekisuto/tekusuto)"
-msgstr ""
+msgstr "ཀེ/ཀུ (ཊེཀ་ཀི་སུ་ཊོ/ཊེཀ་ཀུ་སུ་ཊོ)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_PROLONGED_SOUNDMARK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Prolon~ged vowels (ka-/kaa)"
-msgstr ""
+msgstr "དབྱངས་སྒྲ་(ཀ་-/ཀཱ་)གིས་དུས་ཡུན་རིངམོ་བཞོ་ཡོདཔ།"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Ignore"
-msgstr ""
+msgstr "སྣང་མེད་བཞག།"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pu~nctuation characters"
-msgstr ""
+msgstr "ཡིག་རྟགས་ ཡིག་འབྲུ་ཚུ།"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_WHITESPACES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Whitespace characters"
-msgstr ""
+msgstr "བར་སྟོང་དཀར་པའི་ཡིག་འབྲུ་ཚུ།"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Midd~le dots"
-msgstr ""
+msgstr "བར་ནའི་ཚག་ཚུ།"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Searching in Japanese"
-msgstr ""
+msgstr "ཇ་པ་ནིསི་ནང་ འཚོལ་ཞིབ་འབད་དོ།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Edit Modules"
-msgstr ""
+msgstr "ཚད་གཞི་ཚུ ཞུན་དག་འབད།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FL_EDIT_MODULES_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Language"
-msgstr ""
+msgstr "སྐད་ཡིག།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_UP.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Move Up"
-msgstr ""
+msgstr "ཡར་སྤོ།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_DOWN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Move Down"
-msgstr ""
+msgstr "མར་སྤོ།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_BACK.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Back"
-msgstr ""
+msgstr "རྒྱབ།(~B)"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_NEWDICTSLINK.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Get more dictionaries online..."
 msgstr ""
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ཁ་བསྡམས།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_SPELL.STRING.TEXT
+#, fuzzy
 msgid  "Spelling"
-msgstr ""
+msgstr "ཡིག་སྡེབ།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.STRING.TEXT
+#, fuzzy
 msgid  "Hyphenation"
-msgstr ""
+msgstr "སྦརེལ་རྟགས་བཀོད་པ།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
+#, fuzzy
 msgid  "Thesaurus"
-msgstr ""
+msgstr "མཐོན་བརྗོད།"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 msgid  "Grammar"
 msgstr ""
 
-#: options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.MODALDIALOG.TEXT
-msgid  "Hyphenation"
-msgstr ""
-
 #: options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_PRE_BREAK_DLG.STRING.TEXT
+#, fuzzy
 msgid  "Characters before break"
-msgstr ""
+msgstr "མཚམས་ཀྱི་ ཧེ་མའི་ཡིག་འབྲུ་ཚུ།"
 
 #: options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_POST_BREAK_DLG.STRING.TEXT
+#, fuzzy
 msgid  "Characters after break"
-msgstr ""
+msgstr "མཚམས་ཀྱི་ཤུལ་མའི་ཡིག་འབྲུ་ཚུ།"
 
 #: options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_MIN_WORDLEN_DLG.STRING.TEXT
+#, fuzzy
 msgid  "Minimal word length"
-msgstr ""
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.TABPAGE.TEXT
-msgid  "Options"
-msgstr ""
+msgstr "ཆུང་བཟོའི་ མིང་ཚིག་ རིང་ཚད།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.FL_LINGUISTIC.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Writing aids"
-msgstr ""
+msgstr "འབྲི་ཆས།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_MODULES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Available language modules"
-msgstr ""
+msgstr "སྐད་ཡིག་ ཚད་གཞི་ ཡོད་འཐོབ་ཚུགས།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_MODULES_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit..."
-msgstr ""
+msgstr "ཞུན་དག(~E)"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_DICS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "User-defined dictionaries"
-msgstr ""
+msgstr "ལག་ལེན་པའི་ངེས་འཛིན་འབད་འབད་བའི་ ཚིག་མཛོད་ཚུ།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_NEW_DIC.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
+msgstr "གསརཔ།(~N)"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_EDIT_DIC.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Ed~it..."
-msgstr ""
+msgstr "ཞུན་དག(~E)"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_DEL_DIC.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "དཏོན་གཏང་།(~D)"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Options"
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ།(~O)"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_OPTIONS_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Edi~t..."
-msgstr ""
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS_MOREDICTS.FIXEDTEXT.TEXT
-msgid  "~Get more dictionaries online..."
-msgstr ""
+msgstr "ཞུན་དག(~E)"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
+#, fuzzy
 msgid  "Check uppercase words"
-msgstr ""
+msgstr "ཚུགས་ཡིག་ མིང་ཚིག་ཚུ་ ཞིཕ་དཔྱད་འབད།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
+#, fuzzy
 msgid  "Check words with numbers "
-msgstr ""
+msgstr "ཨང་དང་ཕཅས་ཡོད་པའི་ མིང་ཚིག་ཚུ་ ཞིབ་དཔྱད་འབད།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
+#, fuzzy
 msgid  "Check capitalization"
-msgstr ""
+msgstr "ཚུགས་ཡིག་ བཟོ་ག་མ་བཟོ་ ཞིབ་དཔྱད་འབད།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
+#, fuzzy
 msgid  "Check special regions"
-msgstr ""
+msgstr "དམིགས་བསལ་ ལུངས་ཕྱོགས་ཚུ་ ཞིཕ་དཔྱད་འབད།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Check spelling as you type"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཡིག་དཔར་རྐྱབ་ད་ ཡིག་སྡེབ་ཞིཕ་དཔྱད་འབད།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_GRAMMAR_AUTO.STRING.TEXT
 msgid  "Check grammar as you type"
 msgstr ""
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_MIN_WORDLEN.STRING.TEXT
+#, fuzzy
 msgid  "Minimal number of characters for hyphenation: "
-msgstr ""
+msgstr "སྦྲེལ་རྟགས་བཀོད་པའི་ དོན་ལུ་ ཡིག་འབྲུ་ཚུ་གི་ ཆུང་བཟོ་ཨང་།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_PRE_BREAK.STRING.TEXT
+#, fuzzy
 msgid  "Characters before line break: "
-msgstr ""
+msgstr "གྲལ་ཐིག་མཚམས་ཀྱི་ ཧེ་མའི་ ཡིག་འབྲུ་ཚུ།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_POST_BREAK.STRING.TEXT
+#, fuzzy
 msgid  "Characters after line break: "
-msgstr ""
+msgstr "གྲལ་ཐིག་མཚམས་ཀྱི་ ཤུལ་མའི་ ཡིག་འབྲུ་ཚུ།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Hyphenate without inquiry"
-msgstr ""
+msgstr "འདྲི་དཔྱད་མེདཔ་སྦེ་ སྦྲེལ་རྟགས་བཀོད།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_SPECIAL.STRING.TEXT
+#, fuzzy
 msgid  "Hyphenate special regions"
-msgstr ""
+msgstr "དམིགས་བསལ་ ལུང་ཕྱོགས་ནང་ སྦེལ་རྟགས་བཀོད།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_MODULES_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit Available language modules"
-msgstr ""
+msgstr "སྐད་ཡིག་ ཚད་གཞི་ ཡོད་འཐོབ་ཚུགས།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_DICS_EDIT_DIC.STRING.TEXT
+#, fuzzy
 msgid  "Edit User-defined dictionaries"
-msgstr ""
+msgstr "ལག་ལེན་པའི་ ངེས་འཛིན་འབད་འབད་བའི་ ཚིག་མཛོད།"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.STRING.TEXT
 msgid  "Edit Options"
 msgstr ""
 
 #: options/optlingu.src#RID_SFXQB_DELDICT.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to delete the dictionary?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཚིག་མཛོད་འདི་ བཏོན་གཏང་ནི་ ཨིན་ན?"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
 msgid  "Undo"
@@ -4733,10 +4760,6 @@ msgstr ""
 
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 msgid  "Memory per object"
-msgstr ""
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE_UNIT.FIXEDTEXT.TEXT
-msgid  "MB"
 msgstr ""
 
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME.FIXEDTEXT.TEXT
@@ -4768,160 +4791,189 @@ msgid  "Enable systray Quickstarter"
 msgstr ""
 
 #: options/optpath.src#RID_SFXPAGE_PATH.TABPAGE.TEXT
+#, fuzzy
 msgid  "Paths"
-msgstr ""
+msgstr "འགྲུལ་ལམ་ཚུ།"
 
 #: options/optpath.src#RID_SFXPAGE_PATH.FT_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "དབྱེ་བ།"
 
 #: options/optpath.src#RID_SFXPAGE_PATH.FT_PATH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Path"
-msgstr ""
+msgstr "འགྲུལ་ལམ།"
 
 #: options/optpath.src#RID_SFXPAGE_PATH.BTN_PATH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit..."
-msgstr ""
+msgstr "ཞུན་དག(~E)"
 
 #: options/optpath.src#RID_SFXPAGE_PATH.BTN_STANDARD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Default"
-msgstr ""
+msgstr "སྔོན་སྒྲིག(~D)"
 
 #: options/optpath.src#RID_SFXPAGE_PATH.GB_STD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Paths used by %PRODUCTNAME"
-msgstr ""
+msgstr " %PRODUCTNAME གིས་ལག་ལེན་འཐབ་ཡོད་པའི་འགྲུལ་ལམ་"
 
 #: options/optpath.src#RID_SFXPAGE_PATH.STR_MULTIPATHDLG.STRING.TEXT
+#, fuzzy
 msgid  "Edit Paths: %1"
-msgstr ""
-
-#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr ""
+msgstr "འགྲུལ་ལམ་ཞུན་དག་འབད་: %1"
 
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Configuration"
-msgstr ""
+msgstr "རིམ་སྒྲིག"
 
 #: options/optpath.src#RID_SVXSTR_KEY_WORK_PATH.STRING.TEXT
+#, fuzzy
 msgid  "My Documents"
-msgstr ""
+msgstr "ངེའི་ ཡིག་ཆ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Graphics"
-msgstr ""
+msgstr "ཚད་རིས།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Icons"
-msgstr ""
+msgstr "ངོས་དཔར་ཚུ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Palettes"
-msgstr ""
+msgstr "པེ་ལེཊིསི།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Backups"
-msgstr ""
+msgstr "རྒྱབ་ཐག་ཚུ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Modules"
-msgstr ""
+msgstr "ཚད་གཞི་ཚུ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_TEMPLATE_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "ཊེམ་པེལེཊིསི།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_GLOSSARY_PATH.STRING.TEXT
+#, fuzzy
 msgid  "AutoText"
-msgstr ""
+msgstr "རང་ཕཞིན་ ཚིག་ཡིག"
 
 #: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Dictionaries"
-msgstr ""
+msgstr "ཚིག་མཛོད་ཚུ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "གྲོགས་རམ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Gallery"
-msgstr ""
+msgstr "སྟོན་ཁང་།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Message Storage"
-msgstr ""
+msgstr "འཕྲིན་དོན་ བསག་མཛོད།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Temporary files"
-msgstr ""
+msgstr "གནས་སྐབས་ཀྱི་ ཡིག་ཆ་ཚུ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Plug-ins"
-msgstr ""
+msgstr "པ་ལག་ཨིནསི།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Folder Bookmarks"
-msgstr ""
+msgstr "སྣོད་འཛིན་ དེབ་རྟིས་ཚུ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Filters"
-msgstr ""
+msgstr "ཚག་མ་ཚུ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_ADDINS_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Add-ins"
-msgstr ""
+msgstr "ནང་ཕསྡོམས་ཚུ།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_USERCONFIG_PATH.STRING.TEXT
+#, fuzzy
 msgid  "User Configuration"
-msgstr ""
+msgstr "ལག་ལེན་པ་ རིམ་སྒྲིག།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_USERDICTIONARY_DIR.STRING.TEXT
+#, fuzzy
 msgid  "User-defined dictionaries"
-msgstr ""
+msgstr "ལག་ལེན་པའི་ ངེས་འཛིན་འབད་འབད་བའི་ ཚིག་མཛོད།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_AUTOCORRECT_DIR.STRING.TEXT
+#, fuzzy
 msgid  "AutoCorrect"
-msgstr ""
+msgstr "རང་བཞིན་ ངེས་བདེན།"
 
 #: options/optpath.src#RID_SVXSTR_KEY_LINGUISTIC_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Writing aids"
-msgstr ""
+msgstr "འབྲི་ཆས།"
 
 #: options/optsave.src#TEXT_SAVEPAGE.#DEFINE.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr "སྲུངས།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Load"
-msgstr ""
+msgstr "སྔོན་གསལ་འབད།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_SETTINGS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Load user-specific settings with the document"
-msgstr ""
+msgstr "ཡིག་ཆ་དང་བཅས་ལག་ལེན་པའི་ དམིགས་བསལ་ སྒྲིག་སྟངས་ཚུ་ མངོན་གསལ་འབད།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_DOCPRINTER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Load printer settings with the document"
-msgstr ""
-
-#: options/optsave.src#RID_SFXPAGE_SAVE.GB_SAVE.FIXEDLINE.TEXT
-msgid  "Save"
-msgstr ""
+msgstr "ཡིག་ཆ་དང་བཅས་ལག་ལེན་པའི་ དམིགས་བསལ་ སྒྲིག་སྟངས་ཚུ་ མངོན་གསལ་འབད།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_DOCINFO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Edit document properties before saving"
-msgstr ""
+msgstr "སྲུངས་མ་འབད་བའི་ཧེ་མ་ལས་ ཡིག་ཆ་རྒྱུ་དངོས་ཚུ་ ཞུན་དག་འབད།(~E)"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_BACKUP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Al~ways create backup copy"
-msgstr ""
+msgstr "ཨ་རྟག་རང་ རྒྱབ་ཐག་ འདྲ་བཤུས་ གསར་བསྐྲུན་འབད།(~A)"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_AUTOSAVE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Save ~AutoRecovery information every"
-msgstr ""
+msgstr "རང་ཕཞིན་ སླར་གསོའི་ ཕརྡ་དོན་རེ་རེ་ སྲུངས།(~A)"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Minutes"
-msgstr ""
+msgstr "སྐར་མ་ཚུ།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 msgid  "Save URLs relative to file system"
@@ -4960,76 +5012,93 @@ msgid  "Warn when not saving in ODF or default format"
 msgstr ""
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_APP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "D~ocument type"
-msgstr ""
+msgstr "ཡིག་ཆའི་ དབྱེབ།(~O)"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_FILTER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Always sa~ve as"
-msgstr ""
+msgstr "བཟུམ་སྦེ་ ཨ་རྟག་རང་ སྲུངས འབད།(~v)"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text document"
-msgstr ""
+msgstr "ཚིག་ཡིག་ ཡིག་ཆ།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER_WEB.STRINGLIST.ITEM
+#, fuzzy
 msgid  "HTML document"
-msgstr ""
+msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཡིག་ཆ།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER_GLOBAL.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Master document"
-msgstr ""
+msgstr "ཡིག་ཆ་ཨམ།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "ཤོག་ཁྲམ།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Presentation"
-msgstr ""
+msgstr "གསལ་སྟོན།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_DRAW.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "པར་རིས།"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_MATH.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Formula"
-msgstr ""
+msgstr "མན་ངག"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_WARN.FIXEDTEXT.TEXT
 msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr ""
 
 #: options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr ""
+msgstr "\"%1\"སྔོན་སྒྲིག་ ཡིག་ཆ་ རྩ་སྒྲིག་སྦེ་ ལག་ལེན་ འཐབ་པ་ཅིན་ བརྡ་དོན་ བརླག་སྟོར་ཞུགས་འོང་།\n"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.TABPAGE.TEXT
+#, fuzzy
 msgid  "Spellcheck"
-msgstr ""
+msgstr "སྡེབ་དཔྱད།"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_BOOK.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit..."
-msgstr ""
+msgstr "ཞུན་དག(~E)"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Dictionaries"
-msgstr ""
+msgstr "ཚིག་མཛོད་ཚུ།"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Capital words"
-msgstr ""
+msgstr "ཚུགས་ཡིག་ མིད་ཚིག(~C)"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_NUMS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Words with numbers "
-msgstr ""
+msgstr "མིང་ཚིག་དང་བཅས་ཨང་ཚུ།(~W)"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_UPLOW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Case sensitive "
-msgstr ""
+msgstr "ཡི་ག྄འི་ ཆི་ཆུང་།"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Check"
-msgstr ""
+msgstr "ཞིབ་དཔྱད་འབད།"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 msgid  "OnlineUpdate"
@@ -5128,12 +5197,14 @@ msgid  "Ctrl-click required to follow hyperlinks"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "གདམ་ཁ་ཚུ།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE.PB_BACK.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Back"
-msgstr ""
+msgstr "རྒྱབ།(~B)"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE.ST_LOAD_ERROR.STRING.TEXT
 msgid  "The selected module could not be loaded."
@@ -5192,28 +5263,33 @@ msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
+#, fuzzy
 msgid  "User Data"
-msgstr ""
+msgstr "ལག་ལེན་པའི་གནད་སྡུད།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ཡོངས་ཁྱབ།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MEMORY.ITEMLIST.ITEM
 msgid  "Memory"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_VIEW.ITEMLIST.ITEM
+#, fuzzy
 msgid  "View"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PRINTOPTIONS.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Print"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PATH.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Paths"
-msgstr ""
+msgstr "འགྲུལ་ལམ་ཚུ།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
 msgid  "Colors"
@@ -5224,8 +5300,9 @@ msgid  "Fonts"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Security"
-msgstr ""
+msgstr "སྲུང་སྐྱོབ།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 msgid  "Appearance"
@@ -5252,36 +5329,42 @@ msgid  "Language Settings"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Languages"
-msgstr ""
+msgstr "སྐད་ཡིག།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SFXPAGE_LINGU.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Writing Aids"
-msgstr ""
+msgstr "འབྲི་ཆས།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Searching in Japanese"
-msgstr ""
+msgstr "ཇ་པ་ནིསི་ནང་ འཚོལ་ཞིབ་འབད་དོ།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 msgid  "Asian Layout"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_OPTIONS_CTL.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Complex Text Layout"
-msgstr ""
+msgstr "གོ་དཀའ་བའི་ ཚིག་ཡིག་ སྒྲིག་བཀོད།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.0.ITEMLIST.ITEM
 msgid  "Internet"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_PROXY.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Proxy"
-msgstr ""
+msgstr "པོརོག་སི།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Search"
-msgstr ""
+msgstr "ཞིབ་འཚོལ་འབད།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
 msgid  "E-mail"
@@ -5291,21 +5374,15 @@ msgstr ""
 msgid  "%PRODUCTNAME Writer"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTLOAD_PAGE.ITEMLIST.ITEM
-msgid  "General"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_CONTENT_OPT.ITEMLIST.ITEM
-msgid  "View"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Formatting Aids"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Grid"
-msgstr ""
+msgstr "གིརིཌི།"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT.ITEMLIST.ITEM
 msgid  "Basic Fonts (Western)"
@@ -5319,15 +5396,12 @@ msgstr ""
 msgid  "Basic Fonts (CTL)"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTPRINT_PAGE.ITEMLIST.ITEM
-msgid  "Print"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTTABLE_PAGE.ITEMLIST.ITEM
 msgid  "Table"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_REDLINE_OPT.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Changes"
 msgstr ""
 
@@ -5347,26 +5421,6 @@ msgstr ""
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_CONTENT_OPT.ITEMLIST.ITEM
-msgid  "View"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTSHDWCRSR.ITEMLIST.ITEM
-msgid  "Formatting Aids"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTGRID_PAGE.ITEMLIST.ITEM
-msgid  "Grid"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTPRINT_PAGE.ITEMLIST.ITEM
-msgid  "Print"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTTABLE_PAGE.ITEMLIST.ITEM
-msgid  "Table"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
 msgid  "Background"
 msgstr ""
@@ -5376,19 +5430,12 @@ msgid  "%PRODUCTNAME Math"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.SID_SM_TP_PRINTOPTIONS.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "གཞི་སྒྲིག"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Calc"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_LAYOUT.ITEMLIST.ITEM
-msgid  "General"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CONTENT.ITEMLIST.ITEM
-msgid  "View"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
@@ -5403,56 +5450,12 @@ msgstr ""
 msgid  "Sort Lists"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CHANGES.ITEMLIST.ITEM
-msgid  "Changes"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_GRID.ITEMLIST.ITEM
-msgid  "Grid"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_SC_TP_PRINT.ITEMLIST.ITEM
-msgid  "Print"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Impress"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_MISC.ITEMLIST.ITEM
-msgid  "General"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_CONTENTS.ITEMLIST.ITEM
-msgid  "View"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_SNAP.ITEMLIST.ITEM
-msgid  "Grid"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_PRINT.ITEMLIST.ITEM
-msgid  "Print"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Draw"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_MISC.ITEMLIST.ITEM
-msgid  "General"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_CONTENTS.ITEMLIST.ITEM
-msgid  "View"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_SNAP.ITEMLIST.ITEM
-msgid  "Grid"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_PRINT.ITEMLIST.ITEM
-msgid  "Print"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
@@ -5465,10 +5468,6 @@ msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 msgid  "Load/Save"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_SFXPAGE_SAVE.ITEMLIST.ITEM
-msgid  "General"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
@@ -5524,8 +5523,9 @@ msgid  "Change Password..."
 msgstr ""
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ཁ་བསྡམས།"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.STR_WEBSITE.STRING.TEXT
 msgid  "Website"
@@ -5548,6 +5548,7 @@ msgid  "Hori~zontal"
 msgstr ""
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Default"
 msgstr ""
 
@@ -5577,10 +5578,6 @@ msgstr ""
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_VERALIGN.FIXEDTEXT.TEXT
 msgid  "~Vertical"
-msgstr ""
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_STD.STRINGLIST.ITEM
-msgid  "Default"
 msgstr ""
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
@@ -5663,19 +5660,18 @@ msgstr ""
 msgid  "Options"
 msgstr ""
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOFMT_APPLY.PAGEITEM.TEXT
-msgid  "Options"
-msgstr ""
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_QUOTE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Localized Options"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Word Completion"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Smart Tags"
 msgstr ""
 
@@ -5720,6 +5716,7 @@ msgid  "~Edit..."
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
+#, fuzzy
 msgid  "[M]"
 msgstr ""
 
@@ -5784,6 +5781,7 @@ msgid  "Combine"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Repla~ce"
 msgstr ""
 
@@ -5796,10 +5794,12 @@ msgid  "~Text only"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_NEW_REPLACE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_DELETE_REPLACE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
 msgstr ""
 
@@ -5809,14 +5809,6 @@ msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_ABBREV.FIXEDLINE.TEXT
 msgid  "Abbreviations (no subsequent capital)"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWABBREV.PUSHBUTTON.TEXT
-msgid  "~New"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELABBREV.PUSHBUTTON.TEXT
-msgid  "~Delete"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CHECKBOX.TEXT
@@ -5855,18 +5847,6 @@ msgstr ""
 msgid  "Delete words with two initial capitals"
 msgstr ""
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
-msgid  "Localized Options"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER1.STRING.TEXT
-msgid  "[M]"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER2.STRING.TEXT
-msgid  "[T]"
-msgstr ""
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.STRING.TEXT
 msgid  "Add non breaking space before specific punctuation marks in french text"
 msgstr ""
@@ -5877,10 +5857,6 @@ msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_SINGLE.FIXEDLINE.TEXT
 msgid  "Single quotes"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_SGL_TYPO.CHECKBOX.TEXT
-msgid  "Repla~ce"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_STARTQUOTE.FIXEDTEXT.TEXT
@@ -5987,14 +5963,6 @@ msgstr ""
 msgid  "~Delete Entry"
 msgstr ""
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PUSHBUTTON.TEXT
-msgid  "Word Completion"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.TABPAGE.TEXT
-msgid  "Smart Tags"
-msgstr ""
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.CB_SMARTTAGS.CHECKBOX.TEXT
 msgid  "Label text with smart tags"
 msgstr ""
@@ -6040,8 +6008,9 @@ msgid  "Row"
 msgstr ""
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "ཐིག་ཁྲམ།"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
 msgid  "Paragraph"
@@ -6264,6 +6233,7 @@ msgid  "Western text font"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Font"
 msgstr ""
 
@@ -6272,14 +6242,12 @@ msgid  "~Font"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE.FIXEDTEXT.TEXT
-msgid  "~Typeface"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE_NOCJK.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Typeface"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Normal"
 msgstr ""
 
@@ -6288,38 +6256,22 @@ msgid  "Italic"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Bold"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM4.STRINGLIST.ITEM
-msgid  "Bold italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.ITEM1.STRINGLIST.ITEM
-msgid  "Normal"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.ITEM2.STRINGLIST.ITEM
-msgid  "Italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.ITEM3.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Bold italic"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE.FIXEDTEXT.TEXT
-msgid  "Size"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE_NOCJK.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Size"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_LANG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Language"
 msgstr ""
 
@@ -6331,75 +6283,20 @@ msgstr ""
 msgid  "Asian text font"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_NAME.FIXEDTEXT.TEXT
-msgid  "Font"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_STYLE.FIXEDTEXT.TEXT
 msgid  "T~ypeface"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.ITEM1.STRINGLIST.ITEM
-msgid  "Normal"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.ITEM2.STRINGLIST.ITEM
-msgid  "Italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.ITEM3.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.ITEM4.STRINGLIST.ITEM
-msgid  "Bold italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_SIZE.FIXEDTEXT.TEXT
-msgid  "Size"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_LANG.FIXEDTEXT.TEXT
-msgid  "Language"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_CTL.FIXEDLINE.TEXT
 msgid  "CTL font"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_NAME.FIXEDTEXT.TEXT
-msgid  "Font"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_STYLE.FIXEDTEXT.TEXT
 msgid  "Ty~peface"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.ITEM1.STRINGLIST.ITEM
-msgid  "Normal"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.ITEM2.STRINGLIST.ITEM
-msgid  "Italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.ITEM3.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.ITEM4.STRINGLIST.ITEM
-msgid  "Bold italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_SIZE.FIXEDTEXT.TEXT
-msgid  "Size"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_LANG.FIXEDTEXT.TEXT
-msgid  "Language"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.WIN_CHAR_PREVIEW.WINDOW.TEXT
+#, fuzzy
 msgid  "Example"
 msgstr ""
 
@@ -6408,6 +6305,7 @@ msgid  "Color"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Font ~color"
 msgstr ""
 
@@ -6416,11 +6314,8 @@ msgid  "No %1"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_TRANSPARENT.STRING.TEXT
+#, fuzzy
 msgid  "Transparent"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_FONTCOLOR.FIXEDTEXT.TEXT
-msgid  "Font ~color"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EFFECTS.FIXEDTEXT.TEXT
@@ -6428,18 +6323,22 @@ msgid  "~Effects"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "(Without)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Capitals"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Lowercase"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Title"
 msgstr ""
 
@@ -6449,10 +6348,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 msgid  "~Relief"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-msgid  "(Without)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
@@ -6483,71 +6378,78 @@ msgstr ""
 msgid  "~Overlining"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_NONE.STRINGLIST.ITEM
-msgid  "(Without)"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_SINGLE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Single"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Double"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLD.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dotted"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dotted (Bold)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dash"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dash (Bold)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Long Dash"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Long Dash (Bold)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dot Dash"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dot Dash (Bold)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dot Dot Dash"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Wave"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Wave (Bold)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Double Wave"
 msgstr ""
 
@@ -6557,22 +6459,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_STRIKEOUT.FIXEDTEXT.TEXT
 msgid  "~Strikethrough"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_NONE.STRINGLIST.ITEM
-msgid  "(Without)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SINGLE.STRINGLIST.ITEM
-msgid  "Single"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_DOUBLE.STRINGLIST.ITEM
-msgid  "Double"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_BOLD.STRINGLIST.ITEM
-msgid  "Bold"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
@@ -6587,74 +6473,6 @@ msgstr ""
 msgid  "~Underlining"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_NONE.STRINGLIST.ITEM
-msgid  "(Without)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_SINGLE.STRINGLIST.ITEM
-msgid  "Single"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOUBLE.STRINGLIST.ITEM
-msgid  "Double"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLD.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-msgid  "Dotted"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
-msgid  "Dotted (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASH.STRINGLIST.ITEM
-msgid  "Dash"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASH.STRINGLIST.ITEM
-msgid  "Dash (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_LONGDASH.STRINGLIST.ITEM
-msgid  "Long Dash"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.STRINGLIST.ITEM
-msgid  "Long Dash (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASHDOT.STRINGLIST.ITEM
-msgid  "Dot Dash"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.STRINGLIST.ITEM
-msgid  "Dot Dash (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.STRINGLIST.ITEM
-msgid  "Dot Dot Dash"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.STRINGLIST.ITEM
-msgid  "Dot Dot Dash (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_WAVE.STRINGLIST.ITEM
-msgid  "Wave"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDWAVE.STRINGLIST.ITEM
-msgid  "Wave (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.STRINGLIST.ITEM
-msgid  "Double Wave"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE_COLOR.FIXEDTEXT.TEXT
 msgid  "U~nderline color"
 msgstr ""
@@ -6665,10 +6483,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EMPHASIS.FIXEDTEXT.TEXT
 msgid  "Emp~hasis mark"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-msgid  "(Without)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
@@ -6699,22 +6513,6 @@ msgstr ""
 msgid  "Below text"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.WIN_EFFECTS_PREVIEW.WINDOW.TEXT
-msgid  "Example"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_CAPITALS.STRING.TEXT
-msgid  "Capitals"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_LOWERCASE.STRING.TEXT
-msgid  "Lowercase"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
 msgid  "Small Capitals"
 msgstr ""
@@ -6731,20 +6529,12 @@ msgstr ""
 msgid  "Blinking"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_CHARNAME_TRANSPARENT.STRING.TEXT
-msgid  "Transparent"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
 msgid  "Position"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 msgid  "Superscript"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_NORMALPOS.RADIOBUTTON.TEXT
-msgid  "Normal"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_LOWPOS.RADIOBUTTON.TEXT
@@ -6815,10 +6605,6 @@ msgstr ""
 msgid  "~Pair kerning"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.WIN_POS_PREVIEW.WINDOW.TEXT
-msgid  "Example"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
 msgid  "Double-lined"
 msgstr ""
@@ -6836,6 +6622,7 @@ msgid  "I~nitial character"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_NONE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "(None)"
 msgstr ""
 
@@ -6856,15 +6643,12 @@ msgid  "{"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Other Characters..."
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FT_ENDBRACKET.FIXEDTEXT.TEXT
 msgid  "Final charact~er"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_NONE.STRINGLIST.ITEM
-msgid  "(None)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
@@ -6881,14 +6665,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
 msgid  "}"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
-msgid  "Other Characters..."
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.WIN_TWOLINES_PREVIEW.WINDOW.TEXT
-msgid  "Example"
 msgstr ""
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
@@ -6992,32 +6768,39 @@ msgid  "~Bottom"
 msgstr ""
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
+#, fuzzy
 msgid  "Left-to-right"
-msgstr ""
+msgstr "གཡོན་-ལས་གཡོན་-ལུ།"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
+#, fuzzy
 msgid  "Right-to-left"
-msgstr ""
+msgstr "གཡས་-ལས་གཡོན་-ལུ།"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
+#, fuzzy
 msgid  "Use superordinate object settings"
-msgstr ""
+msgstr "དངོས་པོའི་གཞི་སྒྲིག་མཐོ་ཤོས་ལག་ལེན་འཐབ།"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_LTR_HORI.STRING.TEXT
+#, fuzzy
 msgid  "Left-to-right (horizontal)"
-msgstr ""
+msgstr "གཡོན་-ལས་གཡས་-ལུ།(ཐད་སྙོམས།)"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_RTL_HORI.STRING.TEXT
+#, fuzzy
 msgid  "Right-to-left (horizontal)"
-msgstr ""
+msgstr "གཡས་-ལས་གཡོན་-ལུ། (ཐད་སྙོམས།)"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_RTL_VERT.STRING.TEXT
+#, fuzzy
 msgid  "Right-to-left (vertical)"
-msgstr ""
+msgstr "གཡས་-ལས་གཡོན་-ལུ།(ཀེར་ཕྲང་།)"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_LTR_VERT.STRING.TEXT
+#, fuzzy
 msgid  "Left-to-right (vertical)"
-msgstr ""
+msgstr "གཡོན་-ལས་གཡོས་-ལུ། (ཀེར་ཕྲང་།)"
 
 #: tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_CROP.FIXEDLINE.TEXT
 msgid  "Crop"
@@ -7052,10 +6835,12 @@ msgid  "Scale"
 msgstr ""
 
 #: tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTHZOOM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Width"
 msgstr ""
 
 #: tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHTZOOM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "H~eight"
 msgstr ""
 
@@ -7063,19 +6848,12 @@ msgstr ""
 msgid  "Image size"
 msgstr ""
 
-#: tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTH.FIXEDTEXT.TEXT
-msgid  "~Width"
-msgstr ""
-
-#: tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHT.FIXEDTEXT.TEXT
-msgid  "H~eight"
-msgstr ""
-
 #: tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.PB_ORGSIZE.PUSHBUTTON.TEXT
 msgid  "~Original Size"
 msgstr ""
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.TABPAGE.TEXT
+#, fuzzy
 msgid  "Callouts"
 msgstr ""
 
@@ -7173,10 +6951,6 @@ msgstr ""
 
 #: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
 msgid  "Position and Size"
-msgstr ""
-
-#: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TABDIALOG.TEXT
-msgid  "Callouts"
 msgstr ""
 
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
@@ -7368,8 +7142,9 @@ msgid  "So~urce format"
 msgstr ""
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Add"
-msgstr ""
+msgstr "ཁ་སྐོང་རྐྱབས།"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Remove"
@@ -7384,18 +7159,7 @@ msgid  "Automatic"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_PICK_BULLET.FL_VALUES.FIXEDLINE.TEXT
-msgid  "Selection"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_PICK_SINGLE_NUM.FL_VALUES.FIXEDLINE.TEXT
-msgid  "Selection"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_PICK_NUM.FL_VALUES.FIXEDLINE.TEXT
-msgid  "Selection"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_PICK_BMP.FL_VALUES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Selection"
 msgstr ""
 
@@ -7408,6 +7172,7 @@ msgid  "The Gallery theme 'Bullets' is empty (no graphics)."
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_LEVEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Level"
 msgstr ""
 
@@ -7452,6 +7217,7 @@ msgid  "Bullet"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Graphics"
 msgstr ""
 
@@ -7548,23 +7314,22 @@ msgid  "~Alignment"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Centered"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.STR_BULLET.STRING.TEXT
 msgid  "Character"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_BITMAP.FIXEDTEXT.TEXT
-msgid  "Graphics"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.MB_BITMAP.MN_GRAPHIC_DLG.MENUITEM.TEXT
@@ -7643,10 +7408,6 @@ msgstr ""
 msgid  "There are no graphics in the 'Bullets' Gallery theme."
 msgstr ""
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LEVEL.FIXEDTEXT.TEXT
-msgid  "Level"
-msgstr ""
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FL_POSITION.FIXEDLINE.TEXT
 msgid  "Position and spacing"
 msgstr ""
@@ -7669,18 +7430,6 @@ msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_ALIGN.FIXEDTEXT.TEXT
 msgid  "N~umbering alignment"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.ITEM1.STRINGLIST.ITEM
-msgid  "Left"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.ITEM2.STRINGLIST.ITEM
-msgid  "Centered"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.ITEM3.STRINGLIST.ITEM
-msgid  "Right"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LABEL_FOLLOWED_BY.FIXEDTEXT.TEXT
@@ -7864,94 +7613,117 @@ msgid  "The margin settings are out of print range.\n\nDo you still want to appl
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ITEMLIST.ITEM
+#, fuzzy
 msgid  "A6"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A5.ITEMLIST.ITEM
+#, fuzzy
 msgid  "A5"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A4.ITEMLIST.ITEM
+#, fuzzy
 msgid  "A4"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "A3"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_ISO.ITEMLIST.ITEM
+#, fuzzy
 msgid  "B6 (ISO)"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_ISO.ITEMLIST.ITEM
+#, fuzzy
 msgid  "B5 (ISO)"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_ISO.ITEMLIST.ITEM
+#, fuzzy
 msgid  "B4 (ISO)"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LETTER.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Letter"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Legal"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Long Bond"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_TABLOID.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Tabloid"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_JIS.ITEMLIST.ITEM
+#, fuzzy
 msgid  "B6 (JIS)"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_JIS.ITEMLIST.ITEM
+#, fuzzy
 msgid  "B5 (JIS)"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_JIS.ITEMLIST.ITEM
+#, fuzzy
 msgid  "B4 (JIS)"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI16.ITEMLIST.ITEM
+#, fuzzy
 msgid  "16 Kai"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32.ITEMLIST.ITEM
+#, fuzzy
 msgid  "32 Kai"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32BIG.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Big 32 Kai"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_USER.ITEMLIST.ITEM
+#, fuzzy
 msgid  "User"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_DL.ITEMLIST.ITEM
+#, fuzzy
 msgid  "DL Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C6.ITEMLIST.ITEM
+#, fuzzy
 msgid  "C6 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C65.ITEMLIST.ITEM
+#, fuzzy
 msgid  "C6/5 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C5.ITEMLIST.ITEM
+#, fuzzy
 msgid  "C5 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C4.ITEMLIST.ITEM
+#, fuzzy
 msgid  "C4 Envelope"
 msgstr ""
 
@@ -7979,22 +7751,6 @@ msgstr ""
 msgid  "#12 Envelope"
 msgstr ""
 
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A6.ITEMLIST.ITEM
-msgid  "A6"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A5.ITEMLIST.ITEM
-msgid  "A5"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A4.ITEMLIST.ITEM
-msgid  "A4"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A3.ITEMLIST.ITEM
-msgid  "A3"
-msgstr ""
-
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A2.ITEMLIST.ITEM
 msgid  "A2"
 msgstr ""
@@ -8005,82 +7761,6 @@ msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A0.ITEMLIST.ITEM
 msgid  "A0"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B6_ISO.ITEMLIST.ITEM
-msgid  "B6 (ISO)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B5_ISO.ITEMLIST.ITEM
-msgid  "B5 (ISO)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B4_ISO.ITEMLIST.ITEM
-msgid  "B4 (ISO)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_LETTER.ITEMLIST.ITEM
-msgid  "Letter"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_LEGAL.ITEMLIST.ITEM
-msgid  "Legal"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_LEGAL2.ITEMLIST.ITEM
-msgid  "Long Bond"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_TABLOID.ITEMLIST.ITEM
-msgid  "Tabloid"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B6_JIS.ITEMLIST.ITEM
-msgid  "B6 (JIS)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B5_JIS.ITEMLIST.ITEM
-msgid  "B5 (JIS)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B4_JIS.ITEMLIST.ITEM
-msgid  "B4 (JIS)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_KAI16.ITEMLIST.ITEM
-msgid  "16 Kai"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_KAI32.ITEMLIST.ITEM
-msgid  "32 Kai"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_KAI32BIG.ITEMLIST.ITEM
-msgid  "Big 32 Kai"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_USER.ITEMLIST.ITEM
-msgid  "User"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DL.ITEMLIST.ITEM
-msgid  "DL Envelope"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C6.ITEMLIST.ITEM
-msgid  "C6 Envelope"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C65.ITEMLIST.ITEM
-msgid  "C6/5 Envelope"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C5.ITEMLIST.ITEM
-msgid  "C5 Envelope"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C4.ITEMLIST.ITEM
-msgid  "C4 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DIA.ITEMLIST.ITEM
@@ -8176,6 +7856,7 @@ msgid  "Alignment"
 msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_ALIGN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
 msgstr ""
 
@@ -8192,6 +7873,7 @@ msgid  "~Center"
 msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_JUSTIFYALIGN.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Justified"
 msgstr ""
 
@@ -8217,10 +7899,6 @@ msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
 msgid  "Centered"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-msgid  "Justified"
 msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
@@ -8291,10 +7969,6 @@ msgstr ""
 msgid  "Hyphenation"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
 msgid  "Breaks"
 msgstr ""
@@ -8355,10 +8029,6 @@ msgstr ""
 msgid  "~Widow control"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_WIDOWS.FIXEDTEXT.TEXT
-msgid  "Lines"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.TABPAGE.TEXT
 msgid  "Asian Typography"
 msgstr ""
@@ -8388,108 +8058,134 @@ msgid  "Page Style"
 msgstr ""
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
+#, fuzzy
 msgid  "Please enter a name for the gradient:"
-msgstr ""
+msgstr "སྟེགས་རིས་ཀྱི་དོན་ལུ་མིང་ཐོ་བཀོད་གནང་:"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the gradient?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ སྟེགས་རིས་བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.STRING.TEXT
+#, fuzzy
 msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "སྟེགས་རིས་འདི་སྲུང་བཞག་ནི་མེདཔ་སྦེ་ལེགས་བཅོས་གྲུབ་ཡོད \nསེལ་འཐུ་འབད་ཡོད་མི་སྟེགས་རིས་ལེགས་བཅོས་འབད་ནི་དང་ ཡང་ཅིན་སྟེགས་རིས་གསརཔ་ཁ་སྐོང་རྐྱབས།"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.STRING.TEXT
+#, fuzzy
 msgid  "Please enter a name for the bitmap:"
-msgstr ""
+msgstr "བིཊ་མེབ་ཀྱི་དོན་ལུ་མིང་ཐོ་བཀོད་འབད་གནང་:"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_EXT_BITMAP.STRING.TEXT
+#, fuzzy
 msgid  "Please enter a name for the external bitmap:"
-msgstr ""
+msgstr "ཕྱིའི་བིཊ་མེབ་ཀྱི་དོན་ལུ་མིང་ཐོ་བཀོད་འབད་གནང་:"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_BITMAP.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the bitmap?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ བིཊ་མེབ་བཏོན་གཏང་ནི་འདི་ངེས་ཏིག་ཨིན་ན?"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.STRING.TEXT
+#, fuzzy
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "བིཊ་མེབ་འདི་སྲུངས་བཞག་ནི་མེདཔ་སྦེ་ ལེགས་བཅོས་གྲུབ་ཡོད། \nསེལ་འཐུ་འབད་ཡོད་པའི་བིཊ་མེབ་འདི་ལེགས་བཅོས་འབད་ ཡང་ཅིན་བིཏ་མེབ་གསརཔ་ཁ་སྐོང་རྐྱཔས།"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
+#, fuzzy
 msgid  "Please enter a name for the line style:"
-msgstr ""
+msgstr "གྲལ་ཐིག་བཟོ་རྣམ་གྱི་དོན་ལུ་མིང་ཅིག་ཐོ་བཀོད་འབད་གནང་:"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the line style?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ གྲལ་ཐིག་གི་བཟོ་རྣམ་བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.STRING.TEXT
+#, fuzzy
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "གྲལ་ཐིག་སྲུངས་བཞག་ནི་མེདཔ་སྦེ་ལེགས་བཅོས་གྲུབ་ཡོད། \nསེལ་འཐུ་འབད་ཡོད་པའི་ གྲལ་ཐིག་གི་བཟོ་རྣམ་ལེགས་བཅོས་འབད་ནི་དང་ ཡང་ཅིན་གྲལ་ཐིག་གསརཔ་ཁ་སྐོང་རྐྱབས།"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
+#, fuzzy
 msgid  "Please enter a name for the hatching:"
-msgstr ""
+msgstr "ཐིག་རིས་གྲིབ་མདངས་ཀྱི་དོན་ལུ་མིང་ཅིག་ཐོ་བཀོད་འབད་གནང་:"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the hatching?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཐིག་རིས་གྲིབ་མདངས་བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.STRING.TEXT
+#, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "ཐིག་རིས་གྲིབ་མདངས་ཀྱི་དབྱེ་བ་འདི་་ལེགས་བཅོས་གྲུབ་ཡོད་ ཨིན་རུང་སྲུངས་མ་བཞག \nསེལ་འཐུ་འབད་ཡོད་མི་ཐིག་རིས་གྲིབ་མདངས་ཀྱི་དབྱེ་བ་འདི་ལེགས་བཅོས་འབད་ ཡང་ཅིན་་ཐིག་རིས་གྲིབ་མདངས་ཀྱི་དབྱེ་བ་འདི་ཁ་སྐོང་རྐྱབས།"
 
 #: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
+#, fuzzy
 msgid  "Modify"
-msgstr ""
+msgstr "ལེགས་བཅོས་འབད།"
 
 #: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
+#, fuzzy
 msgid  "Add"
-msgstr ""
+msgstr "ཁ་སྐོང་རྐྱབས།"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
+#, fuzzy
 msgid  "Please enter a name for the new color:"
-msgstr ""
+msgstr "ཚོོས་གཞི་གསརཔ་གི་དོན་ལུ་མིང་ཅིག་ཐོ་བཀོད་འབད་གནང་:"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_COLOR.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the color?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཚོས་གཞི་བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.STRING.TEXT
+#, fuzzy
 msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr ""
+msgstr "ཚོས་གཞི་འདི་ སྲུངས་བཞག་ནི་མེདཔ་སྦེ་ལེགས་བཅོས་འབད་ཡོད། \n སེལ་འཐུ་འབད་ཡོད་མི་ཚོས་གཞི་འདི་ལེགས་བཅོས་འབད་ ཡང་ཅིན ཚོས་གཞི་གསརཔ་ཁ་སྐོང་རྐྱབས།"
 
 #: tabpages/strings.src#RID_SVXSTR_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "ཐིག་ཁྲམ།"
 
 #: tabpages/strings.src#RID_SVXSTR_WRITE_DATA_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The file could not be saved!"
-msgstr ""
+msgstr "ཡིག་སྣོད་འདི་སྲུངས་བཞག་མ་ཚུགས་པས!"
 
 #: tabpages/strings.src#RID_SVXSTR_READ_DATA_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The file could not be loaded!"
-msgstr ""
+msgstr "ཡིག་སྣོད་འདི་མངོན་གསལ་འབད་མ་ཚུགས་པས!"
 
 #: tabpages/strings.src#RID_SVXSTR_WARN_TABLE_OVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "The list was modified without saving. Would you like to save the list now?"
-msgstr ""
+msgstr "ཐོ་ཡིག་འདི་ སྲུངས་བཞག་ནི་མེདཔ་སྦེ་ལེགས་བཅོས་འབད་ནུག་ ད་ལྟོ་ཁྱོད་ཀྱིས་ ཐོ་ཡིག་སྲུངས་ནི་ཨིན་ན?"
 
 #: tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.STRING.TEXT
+#, fuzzy
 msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཐོ་བཀོད་འབད་ཡོད་མི་མིང་འདི་ ཧེ་མ་ལས་རང་གནས་འདི་འདུག \nམིང་གཞན་མི་གདམ་གནང་།"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.STRING.TEXT
+#, fuzzy
 msgid  "Please enter a name for the new arrowhead:"
-msgstr ""
+msgstr "མདའ་རྟགས་གསརཔ་གི་དོན་ལུ་མིང་ཅིག་ཐོ་བཀོད་འབད་གནང་:"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINEEND.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the arrowhead?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ མདའ་རྟགས་འདི་བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.STRING.TEXT
+#, fuzzy
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "མདའ་རྟགས་འདི་སྲུངས་བཞག་མེདཔ་སྦེ་ལེགས་བཅོས་འབད་ཡོད། \nད་ལྟོ་ཁྱོད་ཀྱིས་ མདའ་རྟགས་འདི་སྲུངས་བཞག་ནི་ཨིན་ན?"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
 msgid  "Position and Size"
@@ -8540,15 +8236,12 @@ msgid  "Protect"
 msgstr ""
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
+#, fuzzy
 msgid  "Position"
 msgstr ""
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_SIZE.TRISTATEBOX.TEXT
 msgid  "~Size"
-msgstr ""
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
 msgstr ""
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_HORI.FIXEDTEXT.TEXT
@@ -8592,30 +8285,37 @@ msgid  "~No transparency"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.RBT_TRANS_LINEAR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Transparency"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.RBT_TRANS_GRADIENT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Gradient"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ty~pe"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Linear"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Axial"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Radial"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Ellipsoid"
 msgstr ""
 
@@ -8624,14 +8324,17 @@ msgid  "Quadratic"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Square"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_X.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Center ~X"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_Y.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Center ~Y"
 msgstr ""
 
@@ -8644,6 +8347,7 @@ msgid  " degrees"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_BORDER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Border"
 msgstr ""
 
@@ -8656,10 +8360,12 @@ msgid  "~End value"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.CONTROL.TEXT
+#, fuzzy
 msgid  "Transparency"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TABPAGE.TEXT
+#, fuzzy
 msgid  "Area"
 msgstr ""
 
@@ -8676,14 +8382,12 @@ msgid  "Color"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Gradient"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Hatching"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Bitmap"
 msgstr ""
 
@@ -8696,6 +8400,7 @@ msgid  "A~utomatic"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.CB_HATCHBCKGRD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Background color"
 msgstr ""
 
@@ -8752,10 +8457,12 @@ msgid  "Colu~mn"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_SHADOW.TABPAGE.TEXT
+#, fuzzy
 msgid  "Shadow"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FL_PROP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Properties"
 msgstr ""
 
@@ -8775,28 +8482,13 @@ msgstr ""
 msgid  "~Color"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FT_TRANSPARENT.FIXEDTEXT.TEXT
-msgid  "~Transparency"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_HATCH.TABPAGE.TEXT
-msgid  "Hatching"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FL_PROP.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_DISTANCE.FIXEDTEXT.TEXT
 msgid  "~Spacing"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_ANGLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "A~ngle"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_HATCH.MTR_FLD_ANGLE.METRICFIELD.CUSTOMUNITTEXT
-msgid  " degrees"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_TYPE.FIXEDTEXT.TEXT
@@ -8820,14 +8512,17 @@ msgid  "Line ~color"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add..."
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_MODIFY.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify..."
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete..."
 msgstr ""
 
@@ -8843,10 +8538,6 @@ msgstr ""
 msgid  "Bitmap Patterns"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FL_PROP.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_PIXEL_EDIT.FIXEDTEXT.TEXT
 msgid  "Pattern Editor"
 msgstr ""
@@ -8855,28 +8546,8 @@ msgstr ""
 msgid  "~Foreground color"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_BACKGROUND_COLOR.FIXEDTEXT.TEXT
-msgid  "~Background color"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_BITMAPS_HIDDEN.FIXEDTEXT.TEXT
-msgid  "Bitmap"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_MODIFY.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_IMPORT.PUSHBUTTON.TEXT
 msgid  "~Import..."
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
@@ -8888,59 +8559,12 @@ msgid  "Save Bitmap List"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.TABPAGE.TEXT
+#, fuzzy
 msgid  "Gradients"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FL_PROP.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_TYPE.FIXEDTEXT.TEXT
-msgid  "Ty~pe"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Linear"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Axial"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Radial"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Ellipsoid"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Square"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 msgid  "Rectangular"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_CENTER_X.FIXEDTEXT.TEXT
-msgid  "Center ~X"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_CENTER_Y.FIXEDTEXT.TEXT
-msgid  "Center ~Y"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_ANGLE.FIXEDTEXT.TEXT
-msgid  "A~ngle"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.MTR_ANGLE.METRICFIELD.CUSTOMUNITTEXT
-msgid  " degrees"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_BORDER.FIXEDTEXT.TEXT
-msgid  "~Border"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
@@ -8949,18 +8573,6 @@ msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_TO.FIXEDTEXT.TEXT
 msgid  "~To"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_MODIFY.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
@@ -8972,11 +8584,8 @@ msgid  "Save Gradients List"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.TABPAGE.TEXT
+#, fuzzy
 msgid  "Colors"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.FL_PROP.FIXEDLINE.TEXT
-msgid  "Properties"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.FT_NAME.FIXEDTEXT.TEXT
@@ -9000,20 +8609,18 @@ msgid  "CMYK"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "ཁ་སྐོང་རྐྱབས།"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_WORK_ON.PUSHBUTTON.TEXT
 msgid  "~Edit..."
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_MODIFY.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify"
-msgstr ""
+msgstr "ལེགས་བཅོས་འབད།"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Load Color List"
@@ -9021,34 +8628,6 @@ msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Save Color List"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.TABDIALOG.TEXT
-msgid  "Area"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Area"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-msgid  "Shadow"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-msgid  "Transparency"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_COLOR.PAGEITEM.TEXT
-msgid  "Colors"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_GRADIENT.PAGEITEM.TEXT
-msgid  "Gradients"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_HATCH.PAGEITEM.TEXT
-msgid  "Hatching"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_BITMAP.PAGEITEM.TEXT
@@ -9232,18 +8811,12 @@ msgid  "~Type"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dot"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.DEFAULT.STRINGLIST.ITEM
-msgid  "Dash"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.DEFAULT.STRINGLIST.ITEM
-msgid  "Dot"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dash"
 msgstr ""
 
@@ -9268,14 +8841,17 @@ msgid  "Line style"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add..."
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_MODIFY.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify..."
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete..."
 msgstr ""
 
@@ -9331,18 +8907,6 @@ msgstr ""
 msgid  "~Title"
 msgstr ""
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.BTN_MODIFY.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr ""
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Load Arrow Styles"
 msgstr ""
@@ -9352,10 +8916,7 @@ msgid  "Save Arrow Styles"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-msgid  "Line"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Line"
 msgstr ""
 
@@ -9412,6 +8973,7 @@ msgid  "N~one"
 msgstr ""
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Character"
 msgstr ""
 
@@ -9433,10 +8995,6 @@ msgstr ""
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.ST_RIGHTTAB_ASIAN.STRING.TEXT
 msgid  "Righ~t/Bottom"
-msgstr ""
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.ST_FILLCHAR_OTHER.STRING.TEXT
-msgid  "Character"
 msgstr ""
 
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TABPAGE.TEXT
@@ -9531,19 +9089,12 @@ msgstr ""
 msgid  "Text"
 msgstr ""
 
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-msgid  "Text"
-msgstr ""
-
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 msgid  "Text Animation"
 msgstr ""
 
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TABPAGE.TEXT
-msgid  "Text"
-msgstr ""
-
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_TEXT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text"
 msgstr ""
 
@@ -9600,26 +9151,27 @@ msgid  "Full ~width"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TABPAGE.TEXT
+#, fuzzy
 msgid  "Position and Size"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Position"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Position ~X"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Position ~Y"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FIXEDTEXT.TEXT
-msgid  "Base point"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CTL_POSRECT.CONTROL.QUICKHELPTEXT
+#, fuzzy
 msgid  "Base point"
 msgstr ""
 
@@ -9635,24 +9187,12 @@ msgstr ""
 msgid  "H~eight"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_SIZEREFERENCE.FIXEDTEXT.TEXT
-msgid  "Base point"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CTL_SIZERECT.CONTROL.QUICKHELPTEXT
-msgid  "Base point"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CBX_SCALE.CHECKBOX.TEXT
 msgid  "~Keep ratio"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
 msgid  "Protect"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_POSPROTECT.TRISTATEBOX.TEXT
-msgid  "Position"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
@@ -9747,15 +9287,8 @@ msgstr ""
 msgid  "Pivot point"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_POS_X.FIXEDTEXT.TEXT
-msgid  "Position ~X"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_POS_Y.FIXEDTEXT.TEXT
-msgid  "Position ~Y"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_POSPRESETS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Default settings"
 msgstr ""
 
@@ -9768,15 +9301,13 @@ msgid  "Rotation angle"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_ANGLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Angle"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.MTR_FLD_ANGLE.METRICFIELD.CUSTOMUNITTEXT
+#, fuzzy
 msgid  " degrees"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_ANGLEPRESETS.FIXEDTEXT.TEXT
-msgid  "Default settings"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.CTL_ANGLE.CONTROL.QUICKHELPTEXT
@@ -9784,6 +9315,7 @@ msgid  "Rotation Angle"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.TABPAGE.TEXT
+#, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr ""
 
@@ -9799,26 +9331,6 @@ msgstr ""
 msgid  "Slant"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_ANGLE.FIXEDTEXT.TEXT
-msgid  "~Angle"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.MTR_FLD_ANGLE.METRICFIELD.CUSTOMUNITTEXT
-msgid  " degrees"
-msgstr ""
-
-#: tabpages/transfrm.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-msgid  "Position and Size"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TABDIALOG.TEXT
-msgid  "Position and Size"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TAB_CONTROL.RID_SVXPAGE_ANGLE.PAGEITEM.TEXT
 msgid  "Rotation"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TAB_CONTROL.RID_SVXPAGE_SLANT.PAGEITEM.TEXT
-msgid  "Slant & Corner Radius"
 msgstr ""

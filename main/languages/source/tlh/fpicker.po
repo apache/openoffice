@@ -33,11 +33,11 @@ msgstr ""
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Create New Directory"
-msgstr ""
+msgstr "mu'ghom chu' chenmoH"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_LISTVIEW.BUTTONIMAGE.QUICKHELPTEXT
 msgid  "List"
-msgstr ""
+msgstr "tetlh"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_DETAILSVIEW.BUTTONIMAGE.QUICKHELPTEXT
 msgid  "Details"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_UP.MENUBUTTON.QUICKHELPTEXT
 msgid  "Up One Level"
-msgstr ""
+msgstr "wa' patlh Sal"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_STANDARD.MENUBUTTON.QUICKHELPTEXT
 msgid  "Default Directory"
@@ -53,11 +53,11 @@ msgstr ""
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
 msgid  "File ~name:"
-msgstr ""
+msgstr "ta ~pong:"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILETYPE.FIXEDTEXT.TEXT
 msgid  "File ~type:"
-msgstr ""
+msgstr "ta ~Segh:"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_READONLY.CHECKBOX.TEXT
 msgid  "~Read-only"
@@ -77,31 +77,31 @@ msgstr ""
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_OPEN.PUSHBUTTON.TEXT
 msgid  "~Open"
-msgstr ""
+msgstr "~poSmoH"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_OPEN.STRING.TEXT
 msgid  "Open"
-msgstr ""
+msgstr "poSmoH"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_SAVE.STRING.TEXT
 msgid  "Save as"
-msgstr ""
+msgstr "polmeH pong:"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_BUTTONSAVE.STRING.TEXT
 msgid  "~Save"
-msgstr ""
+msgstr "~pol"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHNAME.STRING.TEXT
 msgid  "~Path:"
-msgstr ""
+msgstr "~He:"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHSELECT.STRING.TEXT
 msgid  "Select path"
-msgstr ""
+msgstr "He wIv"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_BUTTONSELECT.STRING.TEXT
 msgid  "~Select"
-msgstr ""
+msgstr "~wIv"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_ACTUALVERSION.STRING.TEXT
 msgid  "Current version"
@@ -113,7 +113,7 @@ msgstr ""
 
 #: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FT_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDTEXT.TEXT
 msgid  "Na~me"
-msgstr ""
+msgstr "po~ng"
 
 #: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FL_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDLINE.TEXT
 msgid  "Create new folder"
@@ -121,15 +121,15 @@ msgstr ""
 
 #: office/iodlg.src#RID_FILEOPEN_INVALIDFOLDER.STRING.TEXT
 msgid  "$name$ does not exist."
-msgstr ""
+msgstr "$pong$ tu'lu'be'."
 
 #: office/iodlg.src#RID_FILEOPEN_NOTEXISTENTFILE.STRING.TEXT
 msgid  "The file $name$ does not exist.\nMake sure you have entered the correct file name."
-msgstr ""
+msgstr "ta $pong$ tu'lu'be'.\nta pong lugh DaghItlh 'e' yIlegh."
 
 #: office/iodlg.src#STR_FILTERNAME_ALL.STRING.TEXT
 msgid  "All files (*.*)"
-msgstr ""
+msgstr "Hoch tamey (*.*)"
 
 #: office/iodlg.src#STR_SVT_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
@@ -193,11 +193,12 @@ msgstr ""
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_TITLE.STRING.TEXT
 msgid  "File ~type:"
-msgstr ""
+msgstr "ta ~Segh:"
 
 #: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Select Path"
-msgstr ""
+msgstr "He wIv"
 
 #: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_DESCRIPTION.STRING.TEXT
 msgid  "Please select a folder."

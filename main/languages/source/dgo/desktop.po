@@ -33,35 +33,35 @@ msgstr ""
 
 #: migration/wizard.src#DLG_FIRSTSTART_WIZARD.MODALDIALOG.TEXT
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION च सुआगत ऐ "
 
 #: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
 msgid  "Welcome"
-msgstr ""
+msgstr "सुआगत "
 
 #: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
 msgid  "License Agreement"
-msgstr ""
+msgstr "लसैंस करारनामा"
 
 #: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
 msgid  "Personal Data"
-msgstr ""
+msgstr "व्यक्तिगत डेटा "
 
 #: migration/wizard.src#STR_STATE_USER.STRING.TEXT
 msgid  "User name"
-msgstr ""
+msgstr "बरतूनी नांऽ"
 
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
 msgid  "Online Update"
-msgstr ""
+msgstr "आन-लाइन अपडेट "
 
 #: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
 msgid  "Registration"
-msgstr ""
+msgstr "पंजीकरण"
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "एह् विशारद लसैंस करारनामे, %OLD_VERSION थमां बरतूनी  डेटे दे तबादले ते %PRODUCTNAME दे पंजीकरण दे खीरा तोड़ी थुआढ़ा मार्गदर्शन करग .\n\\जारी रक्खने लेई  'अगला' क्लिक करो. "
 
 #: migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.STRING.TEXT
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
@@ -69,75 +69,59 @@ msgstr ""
 
 #: migration/wizard.src#STR_FINISH.STRING.TEXT
 msgid  "~Finish"
-msgstr ""
+msgstr "मकाओ"
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
 msgstr ""
 
-#: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
-
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
 msgid  "Do you really want to decline?"
-msgstr ""
-
-#: migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FIXEDTEXT.TEXT
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "क्या तुस सच्चें गै मना करना चांह्‌दे ओ? "
 
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "एह् विशारद लसैंस करारनामे ते %PRODUCTNAME दे पंजीकरण दे खीरा तोड़ी थुआढ़ा मार्गदर्शन करग . जारी रक्खने लेई  'अगला' क्लिक करो "
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to accept the license"
-msgstr ""
+msgstr "लसैंस मंजूर करने लेई किरपा करियै इ’नें चरणें दा अनुसरण करो. "
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "पूर्ण लसैंस करारनामा दिक्खो.सारी लसैंस इबारत दिक्खने लेई  किरपा करियै स्क्रोलबार जां इस संवाद च '%PAGEDOWN' बटन बरतो. "
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
 msgid  "Click 'Accept' to accept the terms of the Agreement."
-msgstr ""
+msgstr "करारनामे दियां शर्तां मंजूर करने लेई ‘ मंजूर ’ क्लिक करो. "
 
 #: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
 msgid  "Scroll Do~wn"
-msgstr ""
+msgstr "ख’ल्ले गी स्क्रोल करो "
 
 #: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "मंजूर करो "
 
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
 msgid  "~Decline"
-msgstr ""
+msgstr "मना करो"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FIXEDTEXT.TEXT
 msgid  "Transfer personal data"
-msgstr ""
+msgstr "व्यक्तिगत डेटे दा तबादला करो. "
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FIXEDTEXT.TEXT
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
-
-#: migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CHECKBOX.TEXT
-msgid  "Transfer personal data"
-msgstr ""
-
-#: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FIXEDTEXT.TEXT
-msgid  "Online Update"
-msgstr ""
+msgstr "%OLDPRODUCT प्रस्थापना चा सभनें शा मता व्यक्तिगत डेटा  %PRODUCTNAME %PRODUCTVERSION.\n परतियै बरतोई सकदा ऐ. \n\n जेकर तुस %PRODUCTNAME %PRODUCTVERSION चा कोई बी सैट्टिंगां परतियै नेईं चांह्‌दे,जाच खान्ने गी अचि’न्नत करो. "
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
@@ -145,99 +129,95 @@ msgstr ""
 
 #: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
 msgid  "~Check for updates automatically"
-msgstr ""
+msgstr "~अपडेटें लेई स्वचलत चाल्ली कन्नै जाचो "
 
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
 msgid  "Provide your full name and initials below"
-msgstr ""
+msgstr "हेठ अपना पूरा नांऽ ते नांऽ दे शुरुआती  अक्खर देओ."
 
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "बरतूनी नांऽ दस्तावेज विशेशतां, सच्चें ते जिसलै तुस दस्तावेजें च कीती दी तब्दीलियें गी रकाड करदेओ ,च बरतोग. "
 
 #: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
 msgid  "~First name"
-msgstr ""
+msgstr "पैह्‌ला नांऽ "
 
 #: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
 msgid  "~Last name"
-msgstr ""
+msgstr "खीरी नांऽ"
 
 #: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
 msgid  "~Initials"
-msgstr ""
+msgstr "नांऽ दे शुरुआती  अक्खर"
 
 #: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
 msgid  "~Father's name"
-msgstr ""
+msgstr "पिता दा नांऽ "
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME Registration"
-msgstr ""
+msgstr "%PRODUCTNAME पंजीकरण"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FIXEDTEXT.TEXT
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "हून थुआढ़े कोल %PRODUCTNAME बरतूनी दे तौर पर पंजीकरण करने दा मौका है. पंजीकरण  अपनी इच्छा पर ते बिजन मजबूरी दे ऐ. \n\nजेकर तुस पंजीकरण करदे ओ, अस तुसेंगी इस उत्पादन सरबंधी नमें विकासें बारै सूचत करी सकने आं. "
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RADIOBUTTON.TEXT
 msgid  "I want to register ~now"
-msgstr ""
+msgstr "में पंजीकरण करना चाह्‌न्नां ~हून"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RADIOBUTTON.TEXT
 msgid  "I want to register ~later"
-msgstr ""
+msgstr "में पंजीकरण करना चाह्‌न्नां ~ बाद च"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RADIOBUTTON.TEXT
 msgid  "I do not want to ~register"
-msgstr ""
+msgstr "में  नेईं करना चांह्‌दा~ पंजीकरण "
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FIXEDTEXT.TEXT
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "असें गी मेद ऐ जे %PRODUCTNAME कम्म करदे तुसेंगी  नंद औंदा ऐ. \n\\विशारद चा निकास करने लेई , 'मकाओ' क्लिक करो. "
 
 #: app/desktop.src#STR_RECOVER_QUERY.STRING.TEXT
 msgid  "Should the file \"$1\" be restored?"
-msgstr ""
+msgstr "क्या फाइल \"$1\" ब्हाल कीती जानी चाहिदी ? "
 
 #: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
 msgid  "File Recovery"
-msgstr ""
-
-#: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "फाइल बसूली"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
 msgid  "The application cannot be started. "
-msgstr ""
+msgstr "बरतून परतियै शुरू नेईं होई सकदी. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.STRING.TEXT
 msgid  "The configuration directory \"$1\" could not be found."
-msgstr ""
+msgstr "संरूपण डरैक्टरी \"$1\"नेईं लब्भी सकी ."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.STRING.TEXT
 msgid  "The installation path is invalid."
-msgstr ""
+msgstr "प्रस्थापना रस्ता अमान्य ऐ."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.STRING.TEXT
 msgid  "The installation path is not available."
-msgstr ""
+msgstr "प्रस्थापना रस्ता उपलब्ध नेईं ऐ. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.STRING.TEXT
 msgid  "An internal error occurred."
-msgstr ""
+msgstr "इक अंदरूनी  गल्ती घटत होई. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.STRING.TEXT
 msgid  "The configuration file \"$1\" is corrupt."
-msgstr ""
+msgstr "संरूपण फाइल\"$1\" भ्रश्ट ऐ. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.STRING.TEXT
 msgid  "The configuration file \"$1\" was not found."
-msgstr ""
+msgstr "संरूपण फाइल \"$1\" नेईं लब्भी ही. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.STRING.TEXT
 msgid  "The configuration file \"$1\" does not support the current version."
-msgstr ""
+msgstr "संरूपण फाइल \"$1\" चालू सरूप दा समर्थन नेईं करदी. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.STRING.TEXT
 msgid  "The user interface language cannot be determined."
@@ -245,11 +225,11 @@ msgstr ""
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.STRING.TEXT
 msgid  "The component manager is not available."
-msgstr ""
+msgstr "अंग-मैन्जर उपलब्ध नेईं ऐ. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.STRING.TEXT
 msgid  "The configuration service is not available."
-msgstr ""
+msgstr "संरूपण सेवा उपलब्ध नेईं ऐ. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.STRING.TEXT
 msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
@@ -257,99 +237,87 @@ msgstr ""
 
 #: app/desktop.src#STR_ASK_START_SETUP_MANUALLY.STRING.TEXT
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr " प्रस्थापना दी मरम्त लेई CD जां प्रस्थापना –पैकजें आह्‌ले फोल्डर चा सैट-अप बरतून शुरू करो ."
 
 #: app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.STRING.TEXT
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "केंदरी संरूपण तगर पुज्ज  लेई स्टार्टअप सैट्टिंगां अपूर्ण न. "
 
 #: app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.STRING.TEXT
 msgid  "A connection to the central configuration could not be established. "
-msgstr ""
+msgstr "केंदरी संरूपण कन्नै कनैक्शन स्थापत नेईं होई सकेआ. "
 
 #: app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.STRING.TEXT
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "पुज्ज-अधिकारें दे गायब होने कारण केंदरी संरूपण तगर पुज्ज  नेईं होई सकदी. "
 
 #: app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.STRING.TEXT
 msgid  "A general error occurred while accessing your central configuration. "
-msgstr ""
+msgstr "केंदरी संरूपण तगर पुज्ज  करदे बेल्लै इक सधारण  गल्ती घटत होई. "
 
 #: app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.STRING.TEXT
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "पुज्ज-अधिकारें दे गायब होने कारण थुआढ़ी व्यक्तिगत सैट्टिंगें च तब्दीलियां केंदरी तौरा पर भंडारत नेईं होई सकदियां ."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.STRING.TEXT
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME संरूपण डेटा गी पुज्ज करने च गल्ती होने कारण %PRODUCTNAME  शुरू नेईं होई सकदा. n\n किरपा करियै प्रशासक कन्नै रावता करो. "
 
 #: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
 msgid  "The following internal error has occurred: "
-msgstr ""
-
-#: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "ख’लकी अंदरूनी गल्ती घटत होई. "
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
 msgid  "Printing is disabled. No documents can be printed."
-msgstr ""
-
-#: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
-msgstr ""
-
-#: app/desktop.src#STR_TITLE_EXPIRED.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr " छपाई असमर्थ ऐ.कोई बी दस्तावेज छपी नेईं सकदा. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
 msgid  "The path manager is not available.\n"
-msgstr ""
+msgstr "  रस्ता- मैन्जर उपलब्ध नेईं ऐ. \n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.STRING.TEXT
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "डिस्क पर खाल्ली थाह्‌र नाकाफी होने कारण%PRODUCTNAME बरतूनी प्रस्थापना पूर्ण नेईं होई सकी. किरपा करियै ख’लके  स्थान  पर होर थाह्‌र खाल्ली करो  ते %PRODUCTNAME परतियै शुरू करो."
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.STRING.TEXT
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr " पुज्ज-अधिकारें दे गायब होने कारण %PRODUCTNAME बरतूनी प्रस्थापना दी प्रक्रिया नेईं होई सकी.किरपा करियै एह्  निश्चत करी लैओ जे थुआढ़े कोल ख’लके स्थान लेई पुज्ज-अधिकार काफी न  ते %PRODUCTNAME परतियै शुरू करो."
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.STRING.TEXT
 msgid  "Extension Software License Agreement of $NAME:"
-msgstr ""
+msgstr "विस्तार परवानो करार:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.STRING.TEXT
 msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
-msgstr ""
+msgstr "सकयल दिल्लो पुराय परवानो करार वाचून काडात. परवानो करार मान्य करपाक कन्सोलार  \"yes\" टायप करून रिटर्न कळ दामात. न्हंयकारपाक  आनिक विस्तार संरचनायेतल्यान भायर वचपाक \"no\" करात."
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.STRING.TEXT
 msgid  "[Enter \"yes\" or \"no\"]:"
-msgstr ""
+msgstr "[घालात \"yes\" वा \"no\"]:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.STRING.TEXT
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
-msgstr ""
+msgstr "तुमचे आदान चुकीचे आशिल्ले. उपकार करून घालात \"yes\" or \"no\":"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
 msgid  "YES"
-msgstr ""
+msgstr "YES"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
 msgid  "Y"
-msgstr ""
+msgstr "Y"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
 msgid  "NO"
-msgstr ""
+msgstr "NO"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
 msgid  "N"
-msgstr ""
+msgstr "N"
 
 #: deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.STRING.TEXT
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
@@ -373,51 +341,51 @@ msgstr ""
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
 msgid  "%PRODUCTNAME Basic Library"
-msgstr ""
+msgstr "%PRODUCTNAME मूल लाइब्रेरी"
 
 #: deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.STRING.TEXT
 msgid  "Dialog Library"
-msgstr ""
+msgstr "संवाद लाइब्रेरी"
 
 #: deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.STRING.TEXT
 msgid  "The library name could not be determined."
-msgstr ""
+msgstr "लाइब्रेरी  नांऽ तैऽ नेईं होई सकेआ. "
 
 #: deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "This library name already exists. Please choose a different name."
-msgstr ""
+msgstr "एह् लाइब्रेरी  नांऽ  पैह्‌लें गै मजूद ऐ. किरपा करियै बक्खरा  नांऽ तालो. "
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
 msgid  "Enabling: "
-msgstr ""
+msgstr "समर्थ होआ करदा ऐ ::"
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
 msgid  "Disabling: "
-msgstr ""
+msgstr "असमर्थ होआ करदा ऐ:"
 
 #: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
 msgid  "Cannot detect media-type: "
-msgstr ""
+msgstr "माध्यम-किस्म दा पता नेईं लग्गी सकदा :"
 
 #: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
 msgid  "This media-type is not supported: "
-msgstr ""
+msgstr "एह् माध्यम-किस्म समर्थनशुदा नेईं ऐ:"
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
 msgid  "An error occurred while enabling: "
-msgstr ""
+msgstr "समर्थ करदे  बेल्लै इक गल्ती घटत होई:"
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
 msgid  "An error occurred while disabling: "
-msgstr ""
+msgstr "असमर्थ  बेल्लै  इक गल्ती घटत होई:"
 
 #: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
 msgid  "Configuration Schema"
-msgstr ""
+msgstr "संरूपण योजना "
 
 #: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
 msgid  "Configuration Data"
-msgstr ""
+msgstr "संरूपण डेटा "
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
 msgid  "Help"
@@ -433,23 +401,23 @@ msgstr ""
 
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
 msgid  "%MACROLANG Library"
-msgstr ""
+msgstr "%MACROLANG लाइब्रेरी "
 
 #: deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
 msgid  "Extension"
-msgstr ""
+msgstr "विस्तार"
 
 #: deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.STRING.TEXT
 msgid  "UNO Dynamic Library Component"
-msgstr ""
+msgstr "UNO डायनामिक लाइब्रेरी अंग "
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.STRING.TEXT
 msgid  "UNO Java Component"
-msgstr ""
+msgstr "UNO जावा अंग "
 
 #: deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.STRING.TEXT
 msgid  "UNO Python Component"
-msgstr ""
+msgstr "UNO पाइथन अंग "
 
 #: deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.STRING.TEXT
 msgid  "UNO Components"
@@ -457,54 +425,42 @@ msgstr ""
 
 #: deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.STRING.TEXT
 msgid  "UNO RDB Type Library"
-msgstr ""
+msgstr "UNO RDB किस्म लाइब्रेरी "
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.STRING.TEXT
 msgid  "UNO Java Type Library"
-msgstr ""
+msgstr "UNO जावा किस्म लाइब्रेरी"
 
 #: deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.STRING.TEXT
 msgid  "Copying: "
-msgstr ""
+msgstr "नकल होआ करदी ऐ "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.STRING.TEXT
 msgid  "Error while adding: "
-msgstr ""
+msgstr "जमा करदे बेल्लै गल्ती.  "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.STRING.TEXT
 msgid  "Error while removing: "
-msgstr ""
+msgstr "हटांदे बेल्लै गल्ती. : "
 
 #: deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.STRING.TEXT
 msgid  "Extension has already been added: "
-msgstr ""
+msgstr "विस्तार पैह्‌लें गै जमा होई गेदा ऐ.  "
 
 #: deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.STRING.TEXT
 msgid  "There is no such extension deployed: "
-msgstr ""
+msgstr "इस चाल्ली दा कोई विस्तार नियोजत नेईं ऐ: : "
 
 #: deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.STRING.TEXT
 msgid  "Synchronizing repository for %NAME extensions"
-msgstr ""
-
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
@@ -513,27 +469,27 @@ msgstr ""
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
 msgid  "System dependencies check"
-msgstr ""
+msgstr " सिस्टम निर्भरता जाच "
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "विस्तार प्रस्थापत नेईं होई सकदा की जे \n एह् सिस्टम निर्भरता पूरियां नेईं कीतियां गेदियां: "
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.STRING.TEXT
 msgid  "Add Extension(s)"
-msgstr ""
+msgstr "विस्तार जमा करो(s) "
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
 msgid  "~Remove"
-msgstr ""
+msgstr "~हटाओ "
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
 msgid  "~Enable"
-msgstr ""
+msgstr "~समर्थ करो"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
 msgid  "~Disable"
-msgstr ""
+msgstr "~ असमर्थ करो"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
 msgid  "~Update..."
@@ -605,63 +561,35 @@ msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr " विस्तार दी प्रस्थापना पर अग्गें चलने लेई किरपा करियै  इ’नें चरणें दा पालन करो:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
 msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
-msgstr ""
+msgstr " पूरा लसैंस करारनामा पढ़ो. सबूरी लसैंस इबारत दिक्खने लेई इस संवाद च स्क्रोल पट्टी जां  \\' ख’ल्लै गी स्क्रोल करो\\' बटन बरतो."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
-msgstr ""
+msgstr "\\मंजूर करो\\' बटन दबाइयै विस्तार लेई लसैंस करारनामा मंजूर करो."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
 msgid  "~Scroll Down"
-msgstr ""
+msgstr "~ ख’ल्लै गी स्क्रोल करो"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
 msgid  "Accept"
-msgstr ""
+msgstr "मंजूर करो "
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
 msgid  "Decline"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.MODALDIALOG.TEXT
-msgid  "Extension Software License Agreement"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
-msgstr ""
+msgstr "नांह् करो "
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
 msgid  "The extension \\'%Name\\' does not work on this computer."
@@ -819,17 +747,13 @@ msgstr ""
 msgid  "This update will be ignored.\n"
 msgstr ""
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
-msgstr ""
-
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
 msgid  "Extension Manager"
-msgstr ""
+msgstr "विस्तार  मैन्जर"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Add..."
-msgstr ""
+msgstr "~जमा करो... "
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
 msgid  "Check for ~Updates..."
@@ -845,7 +769,7 @@ msgstr ""
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "बंद करो "
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
 msgid  "Extension Update Required"
@@ -855,20 +779,8 @@ msgstr ""
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
 msgstr ""
 
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "Adding %EXTENSION_NAME"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
-msgid  "Check for ~Updates..."
-msgstr ""
-
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
 msgid  "Disable all"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
 msgstr ""
 
 #: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
@@ -889,164 +801,152 @@ msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_APP_TITLE_
 msgid  "Setup"
-msgstr ""
+msgstr "सैट-अप"
 
 #: ../win32/source/setup/setup.ulf#_APP_PROD_TITLE_
 msgid  "The %PRODUCTNAME Setup"
-msgstr ""
+msgstr "%PRODUCTNAME सैट-अप "
 
 #: ../win32/source/setup/setup.ulf#_OUTOFMEM_
 msgid  "Out of Memory"
-msgstr ""
+msgstr "मैमरी शा बाह्‌र "
 
 #: ../win32/source/setup/setup.ulf#_NOMSI_
 msgid  "Setup was unable to find the msi package."
-msgstr ""
+msgstr "सैट-अप msi पैकेज तुप्पने च असमर्थ हा. "
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
 msgid  "Setup was cancelled"
-msgstr ""
+msgstr "सैट-अप रद्द करी दित्ता हा. "
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr " विंडोज़ प्रस्थापक दे अपग्रेडीकरण लेई प्रशासक सुविधां लोड़दियां न. "
 
 #: ../win32/source/setup/setup.ulf#_FILE_NOT_FOUND_
 msgid  "Setup was unable to find the file '%s'."
-msgstr ""
+msgstr "सैट-अप '%s'फाइल  तुप्पने च असमर्थ हा."
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PARAM_
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_USAGE_
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "आदेश लकीर विकल्प '%s' अमान्य किरपा करियै मददा लेई  '/?' बरतो. "
 
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
 msgid  "There is already a setup process running."
-msgstr ""
+msgstr "इक सैट-अप प्रक्रिया पैह्‌लें गै चला करदी ऐ . "
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
 msgid  "An Unknown Error occured!"
-msgstr ""
+msgstr "इक अनजांती गल्ती घटत होई! "
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
 msgid  "Invalid or incomplete profile."
-msgstr ""
+msgstr "अमान्य जां अपूर्ण प्रोफाइल. "
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_LANG_
 msgid  "Unknown Language: %d"
-msgstr ""
+msgstr "अनजांती भाशा : %d"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
 msgid  "Chinese (traditional)"
-msgstr ""
+msgstr "चीनी (परंपरागत) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
 msgid  "Czech"
-msgstr ""
+msgstr "चेक् "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
 msgid  "Danish"
-msgstr ""
+msgstr "डैनिश "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
 msgid  "German (Germany)"
-msgstr ""
+msgstr "जर्मन (जर्मनी) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
 msgid  "Greek"
-msgstr ""
+msgstr "ग्रीक "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
 msgid  "English (USA)"
-msgstr ""
+msgstr "अंग्रेज़ी (USA) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
 msgid  "Spanish (Spain)"
-msgstr ""
+msgstr "स्पैनिश (स्पेन) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
 msgid  "Finnish"
-msgstr ""
+msgstr "फिन्निश "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
 msgid  "French (France)"
-msgstr ""
+msgstr "फ्रैंच (फ्रांस) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
 msgid  "Hebrew"
-msgstr ""
+msgstr "हिब्रू "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
 msgid  "Hungarian"
-msgstr ""
+msgstr "हंगेरियन "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
 msgid  "Italian (Italy)"
-msgstr ""
+msgstr "इतालवी (ईटली) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
 msgid  "Japanese"
-msgstr ""
+msgstr "जपानी "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
 msgid  "Korean"
-msgstr ""
+msgstr "कोरियाई "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
 msgid  "Dutch (Netherlands)"
-msgstr ""
+msgstr "डच (नीदरलैंड) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
 msgid  "Norwegian (Bokmål)"
-msgstr ""
+msgstr "नार्वेजियन (Bokm�l) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
 msgid  "Polish"
-msgstr ""
+msgstr "पोलिश "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
 msgid  "Portuguese (Brazil)"
-msgstr ""
+msgstr "पुर्तगाली (ब्राज़िल) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
 msgid  "Russian"
-msgstr ""
+msgstr "रूसी "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
 msgid  "Slovak"
-msgstr ""
+msgstr "स्लोवेकियन "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
 msgid  "Swedish (Sweden)"
-msgstr ""
+msgstr "स्वीडिश (स्वीडन) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
 msgid  "Thai"
-msgstr ""
+msgstr "ताई "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
 msgid  "Turkish"
-msgstr ""
+msgstr "तुर्की "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
 msgid  "Estonian"
-msgstr ""
+msgstr "इस्टोनियन "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
 msgid  "Chinese (Simplified)"
-msgstr ""
+msgstr "चीनी (सरलीकृत) "
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
 msgid  "Portuguese (Portugal)"
-msgstr ""
+msgstr "पुर्तगाली (पुर्तगाल) "

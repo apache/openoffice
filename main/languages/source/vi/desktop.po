@@ -32,224 +32,241 @@ msgstr ""
 
 
 #: migration/wizard.src#DLG_FIRSTSTART_WIZARD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Chào mừng bạn dùng %PRODUCTNAME %PRODUCTVERSION"
 
 #: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
+#, fuzzy
 msgid  "Welcome"
-msgstr ""
+msgstr "Chào mừng"
 
 #: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
+#, fuzzy
 msgid  "License Agreement"
-msgstr ""
+msgstr "Điều kiện giấy phép"
 
 #: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
+#, fuzzy
 msgid  "Personal Data"
-msgstr ""
+msgstr "Dữ liệu cá nhân"
 
 #: migration/wizard.src#STR_STATE_USER.STRING.TEXT
+#, fuzzy
 msgid  "User name"
-msgstr ""
+msgstr "Tên người dùng"
 
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
+#, fuzzy
 msgid  "Online Update"
-msgstr ""
+msgstr "Cập nhật trực tuyến"
 
 #: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
+#, fuzzy
 msgid  "Registration"
-msgstr ""
+msgstr "Đăng ký"
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
+#, fuzzy
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Trợ lý này sẽ hướng dẫn bạn qua các tiến trình:\n1. thỏa thuận cấp phép cho người dùng cuối\n2. truyền dữ liệu người dùng từ phiên bản cũ %OLD_VERSION\n3. đăng ký sản phẩm %PRODUCTNAME.\n\nHãy nhắp vào nút « Tiếp » để tiếp tục."
 
 #: migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.STRING.TEXT
+#, fuzzy
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Trợ lý sẽ hướng dẫn bạn qua tiến trình đăng ký %PRODUCTNAME.\n\nNhắp vào nút « Tiếp » để tiếp tục."
 
 #: migration/wizard.src#STR_FINISH.STRING.TEXT
+#, fuzzy
 msgid  "~Finish"
-msgstr ""
+msgstr "Kết t~húc"
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
+#, fuzzy
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
-
-#: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "Lúc này bạn có dịp hỗ trợ và đóng góp cho cộng đồng nguồn mở đang phát triển nhanh nhất trong khắp thế giới.\n\nXin hãy giúp chúng tôi đẩy mạnh sự thành công của %PRODUCTNAME bằng cách đăng ký.\n\nViệc đăng ký là tự nguyện và không bị ràng buộc pháp lý. Mời bạn đăng ký."
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you really want to decline?"
-msgstr ""
-
-#: migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FIXEDTEXT.TEXT
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Bạn có thực sự muốn từ chối không?"
 
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Trợ lý này sẽ hướng dẫn bạn qua hai tiến trình:\n1. thỏa thuận cấp phép cho người dùng cuối và\n2. đăng ký sản phẩm %PRODUCTNAME.\n\nHãy nhắp vào nút « Tiếp » để tiếp tục."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please follow these steps to accept the license"
-msgstr ""
+msgstr "Hãy theo các bước sau để chấp nhận điều kiện giấy phép"
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Xem toàn bộ điều kiện giấy phép. Hãy dùng thanh cuộn hoặc nút « %PAGEDOWN » trong hộp thoại này để xem toàn bộ điều kiện giấy phép."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
-msgstr ""
+msgstr "Nhắp « Đồng ý » để chấp nhận các điều kiện của giấy phép này."
 
 #: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Scroll Do~wn"
-msgstr ""
+msgstr "Cuộn ~xuống"
 
 #: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
+#, fuzzy
 msgid  "~Accept"
-msgstr ""
+msgstr "Đồn~g ý"
 
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
+#, fuzzy
 msgid  "~Decline"
-msgstr ""
+msgstr "~Từ chối"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Transfer personal data"
-msgstr ""
+msgstr "Truyền dữ liệu cá nhân"
 
 #: migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
-
-#: migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CHECKBOX.TEXT
-msgid  "Transfer personal data"
-msgstr ""
-
-#: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FIXEDTEXT.TEXT
-msgid  "Online Update"
-msgstr ""
+msgstr "Phần lớn dữ liệu cá nhân từ bản cài đặt %OLDPRODUCT có thể được dùng trong %PRODUCTNAME %PRODUCTVERSION.\n\nNếu bạn không muốn dùng lại thiết lập nào trong %PRODUCTNAME %PRODUCTVERSION, hãy bỏ chọn hộp đó."
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME sẽ tự động tìm kiếm phiên bản mới sau mỗi khoảng thời gian.\nCác dữ liệu cá nhân sẽ không được truyền tải khi bạn nâng cấp trực tuyến.\nBạn sẽ được thông báo mỗi khi có phiên bản mới.\n\nBạn có thể cấu hình tính năng này ở Công cụ / Tùy chọn... / %PRODUCTNAME / Cập nhật trực tuyến."
 
 #: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Check for updates automatically"
-msgstr ""
+msgstr "Tự động kiểm tra có bản ~cập nhật"
 
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Provide your full name and initials below"
-msgstr ""
+msgstr "Ở đây hãy cung cấp họ tên của bạn, và tên viết tắt"
 
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "Tên người dùng sẽ được dùng trong các thuộc tính tài liệu, trong các biểu mẫu, và khi bạn lưu các thay đổi trong tài liệu."
 
 #: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~First name"
-msgstr ""
+msgstr "~Tên"
 
 #: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Last name"
-msgstr ""
+msgstr "~Họ"
 
 #: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Initials"
-msgstr ""
+msgstr "Tên v~iết tắt"
 
 #: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Father's name"
-msgstr ""
+msgstr "Tên ~cha"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Registration"
-msgstr ""
+msgstr "Đăng ký %PRODUCTNAME"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Lúc này bạn có dịp đăng ký như là người dùng %PRODUCTNAME. Không bắt buộc phải đăng ký; việc đăng ký cũng không làm cho bạn chịu ơn.\n\nMời bạn đăng ký, để bạn nhận thông tin về sự phát triển mới liên quan đến sản phẩm này."
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "I want to register ~now"
-msgstr ""
+msgstr "Tôi muốn đăng ký ~ngay"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "I want to register ~later"
-msgstr ""
+msgstr "Tôi muốn đăng ký ~sau"
 
 #: migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "I do not want to ~register"
-msgstr ""
+msgstr "Tôi ~không muốn đăng ký"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Chúng tôi hy vọng bạn hài lòng khi làm việc với %PRODUCTNAME.\n\nĐể thoát khỏi trợ lý này, hãy nhắp vào nút « Kết thúc »."
 
 #: app/desktop.src#STR_RECOVER_QUERY.STRING.TEXT
 msgid  "Should the file \"$1\" be restored?"
-msgstr ""
+msgstr "Có nên phục hồi tập tin « $1 » không?"
 
 #: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
 msgid  "File Recovery"
-msgstr ""
-
-#: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "Phục hồi tập tin"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
 msgid  "The application cannot be started. "
-msgstr ""
+msgstr "Ứng dụng không khởi chạy được. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.STRING.TEXT
 msgid  "The configuration directory \"$1\" could not be found."
-msgstr ""
+msgstr "Không tìm thấy thư mục cấu hình « $1 »."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.STRING.TEXT
 msgid  "The installation path is invalid."
-msgstr ""
+msgstr "Đường dẫn cài đặt không hợp lệ."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.STRING.TEXT
 msgid  "The installation path is not available."
-msgstr ""
+msgstr "Đường dẫn cài đặt không sẵn sàng."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.STRING.TEXT
 msgid  "An internal error occurred."
-msgstr ""
+msgstr "Gặp lỗi nội bộ."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.STRING.TEXT
 msgid  "The configuration file \"$1\" is corrupt."
-msgstr ""
+msgstr "Tập tin cấu hình « $1 » bị hỏng."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.STRING.TEXT
 msgid  "The configuration file \"$1\" was not found."
-msgstr ""
+msgstr "Không tìm thấy tập tin cấu hình « $1 »."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.STRING.TEXT
 msgid  "The configuration file \"$1\" does not support the current version."
-msgstr ""
+msgstr "Tâp tin cấu hình « $1 » không hỗ trợ phiên bản hiện thời."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.STRING.TEXT
 msgid  "The user interface language cannot be determined."
-msgstr ""
+msgstr "Không thể xác định ngôn ngữ của giao diện người dùng."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.STRING.TEXT
 msgid  "The component manager is not available."
-msgstr ""
+msgstr "Bộ quản lý thành phần không sẵn sàng."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.STRING.TEXT
 msgid  "The configuration service is not available."
-msgstr ""
+msgstr "Dịch vụ cấu hình không sẵn sàng."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.STRING.TEXT
 msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
@@ -257,339 +274,377 @@ msgstr ""
 
 #: app/desktop.src#STR_ASK_START_SETUP_MANUALLY.STRING.TEXT
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "Khởi chạy ứng dụng thiết lập để sửa chữa bản cài đặt từ đĩa CD hoặc từ thư mục chứa các gói cài đặt."
 
 #: app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.STRING.TEXT
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "Thiết lập khởi chạy để truy cập cấu hình trung tâm không hoàn thiện. "
 
 #: app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.STRING.TEXT
 msgid  "A connection to the central configuration could not be established. "
-msgstr ""
+msgstr "Không thể kết nối tới cấu hình trung tâm. "
 
 #: app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.STRING.TEXT
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "Bạn không thể truy cập cấu hình trung tâm vì thiếu quyền truy cập. "
 
 #: app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.STRING.TEXT
 msgid  "A general error occurred while accessing your central configuration. "
-msgstr ""
+msgstr "Gặp lỗi chung trong khi truy cập cấu hình trung tâm của bạn. "
 
 #: app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.STRING.TEXT
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "Các thay đổi trong thiết lập cá nhân của bạn không thể được lưu trữ trung tâm vì thiếu quyền truy cập. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.STRING.TEXT
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "Không thể khởi chạy %PRODUCTNAME vì gặp lỗi khi truy cập dữ liệu cấu hình %PRODUCTNAME.\n\nHãy liên lạc với quản trị hệ thống."
 
 #: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
 msgid  "The following internal error has occurred: "
-msgstr ""
-
-#: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "Gặp lỗi nội bộ này: "
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
 msgid  "Printing is disabled. No documents can be printed."
-msgstr ""
-
-#: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
-msgstr ""
-
-#: app/desktop.src#STR_TITLE_EXPIRED.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Khả năng in bị tắt. Không thể in tài liệu."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
 msgid  "The path manager is not available.\n"
-msgstr ""
+msgstr "Bộ quản lý đường dẫn không sẵn sàng.\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.STRING.TEXT
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Tiến trình cài đặt %PRODUCTNAME cho người dùng không thể chạy xong vì không có đủ chỗ rảnh trên đĩa. Hãy giải phóng thêm chỗ trống trên đĩa tại vị trí ghi sau rồi khởi chạy lại %PRODUCTNAME:\n\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.STRING.TEXT
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Tiến trình cài đặt %PRODUCTNAME cho người dùng không thể xử lý vì thiếu quyền truy cập. Hãy kiểm tra xem bạn có đủ quyền truy cập cho vị trí ghi sau, sau đó khởi chạy lại %PRODUCTNAME:\n\n"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.STRING.TEXT
 msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.STRING.TEXT
+#, fuzzy
 msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
-msgstr ""
+msgstr "Đọc mọi điều kiện giấy phép được hiển thị ở trên. Chấp nhận các điều kiện này bằng cách gõ « có » bằng bàn giao tiếp, sau đó bấm phím « Return ». Còn gõ « không » để từ chối và hủy bỏ tiến trình thiết lập phần mở rộng này."
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.STRING.TEXT
+#, fuzzy
 msgid  "[Enter \"yes\" or \"no\"]:"
-msgstr ""
+msgstr "[Nhập « có » hoặc « không »]:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.STRING.TEXT
+#, fuzzy
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
-msgstr ""
+msgstr "Bạn đã nhập sai. Hãy nhập hoặc « có » hoặc « không »:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
+#, fuzzy
 msgid  "YES"
-msgstr ""
+msgstr "CÓ"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
+#, fuzzy
 msgid  "Y"
-msgstr ""
+msgstr "C"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
+#, fuzzy
 msgid  "NO"
-msgstr ""
+msgstr "KHÔNG"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
+#, fuzzy
 msgid  "N"
-msgstr ""
+msgstr "K"
 
 #: deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.STRING.TEXT
+#, fuzzy
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "Không khởi động được unopkg vì khóa chỉ ra rằng unopkg đang chạy. Xóa tệp khóa trước:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "ERROR: "
-msgstr ""
+msgstr "LỖI:"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
+#, fuzzy
 msgid  "Unknown"
-msgstr ""
+msgstr "Không rõ"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
+#, fuzzy
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Phần mở rộng yêu cầu tối thiểu OpenOffice.org %VERSION"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Phần mơ rộng không hỗ trợ OpenOffice.org phiên bản mới hơn %VERSION"
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
-msgstr ""
+msgstr "Thư viện Basic %PRODUCTNAME"
 
 #: deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.STRING.TEXT
+#, fuzzy
 msgid  "Dialog Library"
-msgstr ""
+msgstr "Thư viện hộp thoại"
 
 #: deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.STRING.TEXT
+#, fuzzy
 msgid  "The library name could not be determined."
-msgstr ""
+msgstr "Không thể quyết định tên thư viện đó."
 
 #: deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
-msgstr ""
+msgstr "Bạn đã nhập một tên thư viện đã có. Hãy chọn tên khác."
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "Enabling: "
-msgstr ""
+msgstr "Đang bật: "
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "Disabling: "
-msgstr ""
+msgstr "Đang tắt: "
 
 #: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Cannot detect media-type: "
-msgstr ""
+msgstr "Không thể phát hiện kiểu vật chứa: "
 
 #: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "This media-type is not supported: "
-msgstr ""
+msgstr "Không hỗ trợ kiểu vật chứa này: "
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred while enabling: "
-msgstr ""
+msgstr "Gặp lỗi trong khi bật: "
 
 #: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred while disabling: "
-msgstr ""
+msgstr "Gặp lỗi trong khi tắt: "
 
 #: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
+#, fuzzy
 msgid  "Configuration Schema"
-msgstr ""
+msgstr "Giản đồ cấu hình"
 
 #: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Configuration Data"
-msgstr ""
+msgstr "Dữ liệu cấu hình"
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Trợ giúp"
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The extension cannot be installed because:\n"
-msgstr ""
+msgstr "Không thể cài đặt phần mở rộng vì:\n"
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "Phần mở rộng sẽ không được cài đặt vì gặp lỗi trong các tập tin Trợ giúp:\n"
 
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
+#, fuzzy
 msgid  "%MACROLANG Library"
-msgstr ""
+msgstr "Thư viện %MACROLANG"
 
 #: deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.STRING.TEXT
+#, fuzzy
 msgid  "Extension"
-msgstr ""
+msgstr "Phần mở rộng"
 
 #: deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.STRING.TEXT
+#, fuzzy
 msgid  "UNO Dynamic Library Component"
-msgstr ""
+msgstr "Thành phần thư viện động UNO"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.STRING.TEXT
+#, fuzzy
 msgid  "UNO Java Component"
-msgstr ""
+msgstr "Thành phần Java UNO"
 
 #: deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.STRING.TEXT
+#, fuzzy
 msgid  "UNO Python Component"
-msgstr ""
+msgstr "Thành phần Python UNO"
 
 #: deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.STRING.TEXT
 msgid  "UNO Components"
 msgstr ""
 
 #: deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.STRING.TEXT
+#, fuzzy
 msgid  "UNO RDB Type Library"
-msgstr ""
+msgstr "Thư viện kiểu RDB UNO"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.STRING.TEXT
+#, fuzzy
 msgid  "UNO Java Type Library"
-msgstr ""
+msgstr "Thư viện kiểu Java UNO"
 
 #: deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "Copying: "
-msgstr ""
+msgstr "Đang sao chép: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.STRING.TEXT
+#, fuzzy
 msgid  "Error while adding: "
-msgstr ""
+msgstr "Gặp lỗi trong khi thêm: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.STRING.TEXT
+#, fuzzy
 msgid  "Error while removing: "
-msgstr ""
+msgstr "Gặp lỗi trong khi gỡ bỏ : "
 
 #: deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.STRING.TEXT
+#, fuzzy
 msgid  "Extension has already been added: "
-msgstr ""
+msgstr "Phần mở rộng đã được thêm: "
 
 #: deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "There is no such extension deployed: "
-msgstr ""
+msgstr "Không có phần mở rộng như vậy được triển khai: "
 
 #: deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.STRING.TEXT
 msgid  "Synchronizing repository for %NAME extensions"
 msgstr ""
 
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Bạn sắp cài đặt phiên bản $NEW của phần mở rộng \\'$NAME\\'.\nTuy nhiên, phiên bản mới hơn $DEPLOYED, tên \\'$OLDNAME\\', đã được cài đặt.\nBấm nút \\'OK\\' để thay thế phần mở rộng đã cài đặt.\nHoặc bấm \\'Thôi\\' để hủy cài đặt."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
-msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Bạn sắp cài đặt phiên bản $NEW của phần mở rộng \\'$NAME\\'.\nTuy nhiên, phiên bản này, tên \\'$OLDNAME\\', đã được cài đặt.\nNhấn \\'OK\\' để thay thế phần mở rộng đã cài đặt.\nHoặc bấm \\'Thô\\' để dừng cài đặt."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
+#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
+msgstr "Bạn sắp cài đặt phiên bản $NEW của phần mở rộng \\'$NAME\\' .\nPhiên bản cũ hơn $DEPLOYED, tên \\'$OLDNAME\\', đã được cài đặt.\nNhấn \\'OK\\' để thay thế phần mở rộng đã cài đặt.\nHoặc bấm \\'Thôi\\' để dừng cài đặt."
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "System dependencies check"
-msgstr ""
+msgstr "Kiểm tra quan hệ phụ thuộc hệ thống"
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Phần mở rộng không thể được cài đặt\nvì chưa thỏa những điều kiện phụ thuộc kiểu hệ thống sau :"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.STRING.TEXT
+#, fuzzy
 msgid  "Add Extension(s)"
-msgstr ""
+msgstr "Thêm phần mở rộng"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
+#, fuzzy
 msgid  "~Remove"
-msgstr ""
+msgstr "~Gỡ bỏ"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
+#, fuzzy
 msgid  "~Enable"
-msgstr ""
+msgstr "~Bật"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
+#, fuzzy
 msgid  "~Disable"
-msgstr ""
+msgstr "~Tắt"
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
+#, fuzzy
 msgid  "~Update..."
-msgstr ""
+msgstr "~Cập nhật..."
 
 #: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "~Options..."
-msgstr ""
+msgstr "Tù~y chọn..."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
+#, fuzzy
 msgid  "Adding %EXTENSION_NAME"
-msgstr ""
+msgstr "Đang thêm phần mở rộng %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
+#, fuzzy
 msgid  "Removing %EXTENSION_NAME"
-msgstr ""
+msgstr "Đang gỡ bỏ phần mở rộng %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
+#, fuzzy
 msgid  "Enabling %EXTENSION_NAME"
-msgstr ""
+msgstr "Đang bật phần mở rộng %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
+#, fuzzy
 msgid  "Disabling %EXTENSION_NAME"
-msgstr ""
+msgstr "Đang tắt phần mở rộng %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
 msgid  "Accept license for %EXTENSION_NAME"
 msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.STRING.TEXT
+#, fuzzy
 msgid  "~For all users"
-msgstr ""
+msgstr "Cho ~mọi người dùng"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
+#, fuzzy
 msgid  "~Only for me"
-msgstr ""
+msgstr "Chỉ ch~o tôi"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Error: The status of this extension is unknown"
-msgstr ""
+msgstr "Lỗi: không rõ trạng thái về phần mở rộng này"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Đóng"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.STRING.TEXT
+#, fuzzy
 msgid  "Quit"
-msgstr ""
+msgstr "Thoát"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME đã được cập nhật lên phiên bản mới. Một số phần mở rộng của %PRODUCTNAME không tương thích với phiên bản hiện tại và cần được cập nhật để %PRODUCTNAME họat động bình thường.\n\nTuy nhiên, cần quyền người quản lý để làm việc này.  Liên hệ người quản lý để cập nhật các phần mở rộng sau:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.STRING.TEXT
+#, fuzzy
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "Phần mở rộng không thể được cài đặt\nvì chưa thỏa những điều kiện phụ thuộc kiểu hệ thống sau :"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.STRING.TEXT
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
@@ -600,208 +655,223 @@ msgid  "Show license"
 msgstr ""
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Extension Software License Agreement"
-msgstr ""
+msgstr "Điều kiện giấy phép dùng phần mở rộng"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "Làm theo các bước sau để tiếp tục cài đặt phần mở rộng này:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Đọc mọi điều kiện giấy phép. Dùng thanh cuộn hoặc nút \\'Cuộn xuống\\' trong hộp thoại này để xem toàn bộ văn bản giấy phép."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
-msgstr ""
+msgstr "Đồng ý với các điều kiện giấy phép của phần mở rộng này bằng cách bấm nút \\'Chấp nhận\\'."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Scroll Down"
-msgstr ""
+msgstr "~Cuộn xuống"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Accept"
-msgstr ""
+msgstr "Chấp nhận"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Decline"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.MODALDIALOG.TEXT
-msgid  "Extension Software License Agreement"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
-msgid  "Close"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
-msgstr ""
+msgstr "Từ chối"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
+#, fuzzy
 msgid  "The extension \\'%Name\\' does not work on this computer."
-msgstr ""
+msgstr "Phần mở rộng \\'%Name\\' không chạy được trên máy tính này."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Download and Installation"
-msgstr ""
+msgstr "Tải về và Cài đặt"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Downloading extensions..."
-msgstr ""
+msgstr "Đang tải về phần mở rộng..."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Result"
-msgstr ""
+msgstr "Kết quả"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "OK"
-msgstr ""
+msgstr "OK"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Cancel Update"
-msgstr ""
+msgstr "Thôi cập nhật"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
+#, fuzzy
 msgid  "Installing extensions..."
-msgstr ""
+msgstr "Đang cài đặt phần mở rộng..."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
+#, fuzzy
 msgid  "Installation finished"
-msgstr ""
+msgstr "Việc cài đặt hoàn thành"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
+#, fuzzy
 msgid  "No errors."
-msgstr ""
+msgstr "Không lỗi."
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "Error while downloading extension %NAME. "
-msgstr ""
+msgstr "Gặp lỗi khi tải về phần mở rộng %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.STRING.TEXT
+#, fuzzy
 msgid  "The error message is: "
-msgstr ""
+msgstr "Thông điệp lỗi: "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.STRING.TEXT
+#, fuzzy
 msgid  "Error while installing extension %NAME. "
-msgstr ""
+msgstr "Gặp lỗi khi cài đặt phần mở rộng %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.STRING.TEXT
+#, fuzzy
 msgid  "The license agreement for extension %NAME was refused. "
-msgstr ""
+msgstr "Điều kiện cấp quyền cho phần mở rộng %NAME bị từ chối. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.STRING.TEXT
+#, fuzzy
 msgid  "The extension will not be installed."
-msgstr ""
+msgstr "Phần mở rộng này sẽ không được cài đặt."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Extension Update"
-msgstr ""
+msgstr "Cập nhật phần mở rộng"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Checking..."
-msgstr ""
+msgstr "Đang kiểm tra..."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Available extension updates"
-msgstr ""
+msgstr "~Bản cập nhật phần mở rộng công bố"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Show all updates"
-msgstr ""
+msgstr "~Hiện mọi bản cập nhật"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Mô tả"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Publisher:"
-msgstr ""
+msgstr "Nhà xuất bản:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "What is new:"
-msgstr ""
+msgstr "Tin tức:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Release Notes"
-msgstr ""
+msgstr "Ghi chú Phát hành"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Install"
-msgstr ""
+msgstr "Cà~i đặt"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Đóng"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error"
-msgstr ""
+msgstr "Lỗi"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
+#, fuzzy
 msgid  "No new updates are available."
-msgstr ""
+msgstr "Chưa công bố bản cập nhật mới."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
+#, fuzzy
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "Chưa công bố bản cập nhật nào cho bạn cài đặt được. Để xem mọi bản cập nhật, bật tùy chọn « Hiện mọi bản cập nhật »."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred:"
-msgstr ""
+msgstr "Gặp lỗi:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
+#, fuzzy
 msgid  "Unknown error."
-msgstr ""
+msgstr "Lỗi không rõ."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.STRING.TEXT
 msgid  "No more details are available for this update."
 msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.STRING.TEXT
+#, fuzzy
 msgid  "The extension cannot be updated because:"
-msgstr ""
+msgstr "Phần mở rộng không cài đặt được vì:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.STRING.TEXT
+#, fuzzy
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr ""
+msgstr "phiên bản OpenOffice.org không khớp:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
+#, fuzzy
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr ""
+msgstr "Phiên bản OpenOffice.org đang dùng:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
+#, fuzzy
 msgid  "browser based update"
-msgstr ""
+msgstr "cập nhật qua trình duyệt"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
+#, fuzzy
 msgid  "Version"
-msgstr ""
+msgstr "Phiên bản"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
 msgid  "Ignore this Update"
@@ -819,234 +889,256 @@ msgstr ""
 msgid  "This update will be ignored.\n"
 msgstr ""
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
-msgstr ""
-
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
+#, fuzzy
 msgid  "Extension Manager"
-msgstr ""
+msgstr "Bộ Quản Lý Phần Mở Rộng"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add..."
-msgstr ""
+msgstr "Thê~m..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Check for ~Updates..."
-msgstr ""
+msgstr "~Cập nhật..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Get more extensions online..."
-msgstr ""
+msgstr "Tải thêm phần mở rộng ở đây..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Adding %EXTENSION_NAME"
-msgstr ""
+msgstr "Đang thêm phần mở rộng %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Đóng"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Extension Update Required"
-msgstr ""
+msgstr "Cần cập nhật phần mở rộng"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
-msgid  "Adding %EXTENSION_NAME"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
-msgid  "Check for ~Updates..."
-msgstr ""
+msgstr "%PRODUCTNAME đã được cập nhật lên phiên bản mới. Một số phần mở rộng của %PRODUCTNAME sẽ không tương thích với phiên bản hiện tại và do đó cần cập nhật để có thể họat động được."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Disable all"
-msgstr ""
-
-#: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "Tắt tất cả"
 
 #: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
+#, fuzzy
 msgid  "Installation Status"
-msgstr ""
+msgstr "Trạng thái cài đặt"
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
+#, fuzzy
 msgid  "Installation is optimized for clients."
-msgstr ""
+msgstr "Cài đặt tối ưu hóa cho máy trạm."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_
+#, fuzzy
 msgid  "Installation is optimized for servers."
-msgstr ""
+msgstr "Cài đặt tối ưu hóa cho máy chủ."
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_
+#, fuzzy
 msgid  "Cannot find Office installation."
-msgstr ""
+msgstr "Không tìm thấy cài đặt Office"
 
 #: ../win32/source/setup/setup.ulf#_APP_TITLE_
+#, fuzzy
 msgid  "Setup"
-msgstr ""
+msgstr "Thiết lập"
 
 #: ../win32/source/setup/setup.ulf#_APP_PROD_TITLE_
+#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
-msgstr ""
+msgstr "Thiết lập %PRODUCTNAME"
 
 #: ../win32/source/setup/setup.ulf#_OUTOFMEM_
+#, fuzzy
 msgid  "Out of Memory"
-msgstr ""
+msgstr "Tràn bộ nhớ"
 
 #: ../win32/source/setup/setup.ulf#_NOMSI_
+#, fuzzy
 msgid  "Setup was unable to find the msi package."
-msgstr ""
+msgstr "Thiết lập không tìm thấy gói « msi »."
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
+#, fuzzy
 msgid  "Setup was cancelled"
-msgstr ""
+msgstr "Bản cài đặt đã bị hủy"
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
+#, fuzzy
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "Quyền quản lý cần thiết để nâng cấp bộ cài đặt Windows."
 
 #: ../win32/source/setup/setup.ulf#_FILE_NOT_FOUND_
+#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
-msgstr ""
+msgstr "Thiết lập không thể tìm thấy tập tin « %s »."
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PARAM_
+#, fuzzy
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
-
-#: ../win32/source/setup/setup.ulf#_USAGE_
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "Tùy chọn dòng lệnh « %s » không hợp lệ. Dùng « /? » để xem trợ giúp."
 
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
+#, fuzzy
 msgid  "There is already a setup process running."
-msgstr ""
+msgstr "Đã có một tiến trình thiết lập đang chạy."
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
+#, fuzzy
 msgid  "An Unknown Error occured!"
-msgstr ""
+msgstr "Gặp lỗi không rõ."
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
+#, fuzzy
 msgid  "Invalid or incomplete profile."
-msgstr ""
+msgstr "Hồ sơ không hợp lệ hoặc không đầy đủ."
 
 #: ../win32/source/setup/setup.ulf#_UNKNOWN_LANG_
+#, fuzzy
 msgid  "Unknown Language: %d"
-msgstr ""
+msgstr "Không nhận ra ngôn ngữ : %d"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
+#, fuzzy
 msgid  "Chinese (traditional)"
-msgstr ""
+msgstr "Trung (truyền thống)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
+#, fuzzy
 msgid  "Czech"
-msgstr ""
+msgstr "Séc"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
+#, fuzzy
 msgid  "Danish"
-msgstr ""
+msgstr "Đan Mạch"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
+#, fuzzy
 msgid  "German (Germany)"
-msgstr ""
+msgstr "Đức (Đức)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
+#, fuzzy
 msgid  "Greek"
-msgstr ""
+msgstr "Hy Lạp"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
+#, fuzzy
 msgid  "English (USA)"
-msgstr ""
+msgstr "Anh (Mỹ)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
+#, fuzzy
 msgid  "Spanish (Spain)"
-msgstr ""
+msgstr "Tây Ban Nha (TBN)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
+#, fuzzy
 msgid  "Finnish"
-msgstr ""
+msgstr "Phần Lan"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
+#, fuzzy
 msgid  "French (France)"
-msgstr ""
+msgstr "Pháp (Pháp)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
+#, fuzzy
 msgid  "Hebrew"
-msgstr ""
+msgstr "Do Thái"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
+#, fuzzy
 msgid  "Hungarian"
-msgstr ""
+msgstr "Hung-ga-ry"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
+#, fuzzy
 msgid  "Italian (Italy)"
-msgstr ""
+msgstr "Ý (Ý)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
+#, fuzzy
 msgid  "Japanese"
-msgstr ""
+msgstr "Nhật"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
+#, fuzzy
 msgid  "Korean"
-msgstr ""
+msgstr "Hàn Quốc"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
+#, fuzzy
 msgid  "Dutch (Netherlands)"
-msgstr ""
+msgstr "Hà Lan (Hà Lan)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
+#, fuzzy
 msgid  "Norwegian (Bokmål)"
-msgstr ""
+msgstr "Na Uy (Bokmål)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
+#, fuzzy
 msgid  "Polish"
-msgstr ""
+msgstr "Ba Lan"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
+#, fuzzy
 msgid  "Portuguese (Brazil)"
-msgstr ""
+msgstr "Bồ Đào Nha (Bra-xin)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
+#, fuzzy
 msgid  "Russian"
-msgstr ""
+msgstr "Nga"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
 msgid  "Slovak"
 msgstr ""
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
+#, fuzzy
 msgid  "Swedish (Sweden)"
-msgstr ""
+msgstr "Thụy Điển (Thụy Điển)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
+#, fuzzy
 msgid  "Thai"
-msgstr ""
+msgstr "Thái"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
+#, fuzzy
 msgid  "Turkish"
-msgstr ""
+msgstr "Thổ Nhĩ Kỳ"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
+#, fuzzy
 msgid  "Estonian"
-msgstr ""
+msgstr "Éx-tô-ni-a"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
+#, fuzzy
 msgid  "Chinese (Simplified)"
-msgstr ""
+msgstr "Trung (giản thể)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
+#, fuzzy
 msgid  "Portuguese (Portugal)"
-msgstr ""
+msgstr "Bồ Đào Nha (Bồ Đào Nha)"

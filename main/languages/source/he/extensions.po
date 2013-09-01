@@ -33,1871 +33,2070 @@ msgstr ""
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.MODALDIALOG.TEXT
 msgid  "Address Book Data Source Wizard"
-msgstr ""
+msgstr "אשף מקורות הנתונים לספרי כתובות"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
 msgid  "Address book type"
-msgstr ""
+msgstr "סוג פנקס כתובות"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
-msgstr ""
+msgstr "קבועי החיבור"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
 msgid  "Table selection"
-msgstr ""
+msgstr "בחירת טבלה"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
 msgid  "Field Assignment"
-msgstr ""
+msgstr "השמת שדות"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.STRING.TEXT
 msgid  "Data Source Title"
-msgstr ""
+msgstr "כותרת מקור הנתונים"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "ב‪ %PRODUCTNAME-‬יש אפשרות להשתמש בסיפריות הכתובות הקיימות כבר במערכת.כדי ש-%PRODUCTNAME ישתמש בספרית כתובות קיימת, צריך ליצור 'מקור נתונים'‏ שמציג את נתוני הכתובות בצורה טבלאית.‏\n\nאשף זה עוזר ליצור את מקור הנתונים.‏"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
 msgid  "Please select the type of your external address book:"
-msgstr ""
+msgstr "בחירת סוג ספר הכתובות החיצוני:‏"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
-msgstr ""
+msgstr "אבולושון"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
 msgid  "Groupwise"
-msgstr ""
+msgstr "Groupwise"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
 msgid  "Evolution LDAP"
-msgstr ""
+msgstr "Evolution LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RADIOBUTTON.TEXT
 msgid  "Mozilla / Netscape"
-msgstr ""
+msgstr "מוזילה/נטסקייפ"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RADIOBUTTON.TEXT
 msgid  "Thunderbird"
-msgstr ""
+msgstr "תנדרבירד"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RADIOBUTTON.TEXT
 msgid  "KDE address book"
-msgstr ""
+msgstr "ספר כתובות ‏‪KDE"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RADIOBUTTON.TEXT
 msgid  "Mac OS X address book"
-msgstr ""
+msgstr "פנקס כתובות מקינטוש OSX"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RADIOBUTTON.TEXT
 msgid  "LDAP address data"
-msgstr ""
+msgstr "ספר כתובות ‏‪LDAP‏"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
 msgid  "Outlook address book"
-msgstr ""
+msgstr "ספר כתובות ‏‪Outlook‏"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
 msgid  "Windows system address book"
-msgstr ""
+msgstr "ספר כתובות מערכת חלונות"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
 msgid  "Other external data source"
-msgstr ""
+msgstr "סוגים אחרים של מקורות נתונים חיצוניים"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "כדי להגדיר את מקור הנתונים החדש, יש צורך במידע נוסף.‏\n\nיש ללחוץ על הכפתור הבא כדי לפתוח את תיבת הדו־שיח המאפשרת הכנסת המידע.‏"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PUSHBUTTON.TEXT
 msgid  "Settings"
-msgstr ""
+msgstr "הגדרות"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FIXEDTEXT.TEXT
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "אין אפשרות להתחבר למקור הנתונים.‏\nלפני שממשיכים, נא לבדוק שוב את ההגדרות עד כה, או לבחור טיפוס אחר של מקור בדף הקודם.‏"
 
 #: abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FIXEDTEXT.TEXT
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "מקור הנתונים החיצוני שבחרת מכיל יותר מספר כתובות אחד.‏‪\nנא לבחור בספר שאיתו תרצה בעיקר לעבוד:‏"
 
 #: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PUSHBUTTON.TEXT
-msgid  "Field Assignment"
-msgstr ""
+msgstr "כדי לכלול נתוני כתובות בתבניות, יש לציין עבור %PRODUCTNAME את השדות המכילים נתונים.‏\n\nלדוגמה, יכול להיות שכתובות דוא\"ל נשמרות בשדה בשם‪ \"email\" ‬‏, או בשדה בשם ‏‪‪\"E-mail\"‬‏ או בשדה בשם אחר לחלוטין.‏\n\nיש ללחוץ על הכפתור למטה כדי לפתוח עוד תיבת דו־שיח שבה ניתן לציין את הגדרות השדות של מקור הנתונים.‏"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "כל המידע הנדרש לשלב נתוני כתובתך ב- %PRODUCTNAME ‬סופק. יש לציין שם עבור מקור הנתונים ב-%PRODUCTNAME."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
 msgid  "Location"
-msgstr ""
+msgstr "מיקום"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
-msgstr ""
+msgstr "לעיין...‏"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr ""
+msgstr "לאפשר שימוש בספר כתובות זה על ידי כל מודול של %PRODUCTNAME‬‏.‏"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
 msgid  "Address book name"
-msgstr ""
+msgstr "שם ספר כתובות"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "מקור נתונים אחר כבר מזוהה על ידי שם זה. שמות מקורות הנתונים חייבים להיות אחידים. נא לבחור שם אחר.‏"
 
 #: abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ERRORBOX.MESSAGE
 msgid  "Please select a type of address book."
-msgstr ""
-
-#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "יש לבחור סוג של פנקס כתובות"
 
 #: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
 msgid  "Addresses"
-msgstr ""
+msgstr "כתובות"
 
 #: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
 msgid  "Create Address Data Source"
-msgstr ""
+msgstr "יצירת מקור נתוני כתובות"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
-msgstr ""
+msgstr "לא ניתן היה ליצור את החיבור.‏"
 
 #: abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.STRING.TEXT
 msgid  "Please check the settings made for the data source."
-msgstr ""
+msgstr "יש לבדוק את ההגדרות שנעשו עבור מקור הנתונים,‏"
 
 #: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
 msgid  "Address Data - Field Assignment"
-msgstr ""
+msgstr "נתוני כתובות - הקצאת שדה"
 
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr ""
+msgstr "כעת אין השמה של שדות.‏\nניתן לבצע השמה של שדות עכשיו. ניתן גם מאוחר יותר על ידי בחירה ב:'קובץ'->'תבנית'->'מקור לספר כתובות'...‏"
 
 #: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Field selection:"
-msgstr ""
+msgstr "בחירת שדות:‏"
 
 #: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
 msgid  "Table;Query;Sql;Sql [Native]"
-msgstr ""
+msgstr "טבלה;שאילתה;Sql;Sql [מקומי]‏"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
-msgstr ""
+msgstr "מסד נתונים ביבליוגרפי"
 
 #: bibliography/bib.src#RID_MAP_QUESTION.STRING.TEXT
 msgid  "Do you want to edit the column arrangement?"
-msgstr ""
+msgstr "האם ברצונך לערוך את סידור העמודות?‏"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
 msgid  "Column names"
-msgstr ""
+msgstr "שמות העמודות"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<ללא>"
 
 #: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
 msgid  "Column Layout for Table %1"
-msgstr ""
+msgstr "מתאר עמודות לטבלה %1‏"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
 msgid  "Choose Data Source"
-msgstr ""
+msgstr "בחירת מקור הנתונים"
 
 #: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
 msgid  "Entry"
-msgstr ""
+msgstr "רשומה"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
 msgid  "The following column names could not be assigned:\n"
-msgstr ""
+msgstr "לא היתה אפשרות להגדיר את שמות העמודות הבאים:‏\n"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
 msgid  "Article"
-msgstr ""
+msgstr "מאמר"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
 msgid  "Book"
-msgstr ""
+msgstr "ספר"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
-msgstr ""
+msgstr "עלונים"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.STRING.TEXT
 msgid  "Conference proceedings"
-msgstr ""
+msgstr "רישומי ועידה"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.STRING.TEXT
 msgid  "Book excerpt"
-msgstr ""
+msgstr "מובאה מספר"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.STRING.TEXT
 msgid  "Book excerpt with title"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "מובאה מספר עם כותרת"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
 msgid  "Journal"
-msgstr ""
+msgstr "כתב עת"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
-msgstr ""
+msgstr "תיעוד טכני"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
-msgstr ""
+msgstr "תיזה"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
 msgid  "Miscellaneous"
-msgstr ""
+msgstr "שונות"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
-msgstr ""
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.STRING.TEXT
-msgid  "Conference proceedings"
-msgstr ""
+msgstr "דיסרטציה"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.STRING.TEXT
 msgid  "Research report"
-msgstr ""
+msgstr "דו\"ח מחקר"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
 msgid  "Unpublished"
-msgstr ""
+msgstr "לא פורסם"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
-msgstr ""
+msgstr "דוא\"ל"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
 msgid  "WWW document"
-msgstr ""
+msgstr "מסמך ‏‪WWW‬‏‏"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
 msgid  "User-defined1"
-msgstr ""
+msgstr "על פי הגדרת המשתמש/ת 1‏"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
 msgid  "User-defined2"
-msgstr ""
+msgstr "על פי הגדרת המשתמש/ת 2‏"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
 msgid  "User-defined3"
-msgstr ""
+msgstr "על פי הגדרת המשתמש/ת 3‏"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
 msgid  "User-defined4"
-msgstr ""
+msgstr "על פי הגדרת המשתמש/ת 4‏"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
 msgid  "User-defined5"
-msgstr ""
+msgstr "על פי הגדרת המשתמש/ת 5‏"
 
 #: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "כללי"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
 msgid  "Insert Section..."
-msgstr ""
+msgstr "הכנסת מקטע...‏"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
 msgid  "Delete Section..."
-msgstr ""
+msgstr "מחיקת מקטע"
 
 #: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
 msgid  "Modify Name..."
-msgstr ""
+msgstr "שינוי שם...‏"
 
 #: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
 msgid  "~Short name"
-msgstr ""
+msgstr "שם קצר"
 
 #: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
 msgid  "~Type"
-msgstr ""
+msgstr "סוג"
 
 #: bibliography/sections.src#ST_YEAR.STRING.TEXT
 msgid  "~Year"
-msgstr ""
+msgstr "שנה"
 
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
-msgstr ""
+msgstr "מחבר/ת(ים)‏"
 
 #: bibliography/sections.src#ST_TITLE.STRING.TEXT
 msgid  "Tit~le"
-msgstr ""
+msgstr "כותרת"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
-msgstr ""
+msgstr "מו\"ל"
 
 #: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
 msgid  "A~ddress"
-msgstr ""
+msgstr "כתובת"
 
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
-msgstr ""
+msgstr "ISBN"
 
 #: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
 msgid  "~Chapter"
-msgstr ""
+msgstr "פרק"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
-msgstr ""
+msgstr "עמוד(ים)‏"
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
 msgid  "Editor"
-msgstr ""
+msgstr "עורך"
 
 #: bibliography/sections.src#ST_EDITION.STRING.TEXT
 msgid  "Ed~ition"
-msgstr ""
+msgstr "מהדורה"
 
 #: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
 msgid  "~Book title"
-msgstr ""
+msgstr "כותרת ספר"
 
 #: bibliography/sections.src#ST_VOLUME.STRING.TEXT
 msgid  "Volume"
-msgstr ""
+msgstr "כרך"
 
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
-msgstr ""
+msgstr "סוג פרסום"
 
 #: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
 msgid  "Organi~zation"
-msgstr ""
+msgstr "ארגון"
 
 #: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
 msgid  "Instit~ution"
-msgstr ""
+msgstr "מוסד"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
-msgstr ""
+msgstr "אוניברסיטה"
 
 #: bibliography/sections.src#ST_REPORT.STRING.TEXT
 msgid  "Type of re~port"
-msgstr ""
+msgstr "סוג דו\"ח"
 
 #: bibliography/sections.src#ST_MONTH.STRING.TEXT
 msgid  "~Month"
-msgstr ""
+msgstr "חודש"
 
 #: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
 msgid  "~Journal"
-msgstr ""
+msgstr "כתב עת"
 
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
-msgstr ""
+msgstr "מספר"
 
 #: bibliography/sections.src#ST_SERIES.STRING.TEXT
 msgid  "Se~ries"
-msgstr ""
+msgstr "סדרה"
 
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
-msgstr ""
+msgstr "הערת הסבר"
 
 #: bibliography/sections.src#ST_NOTE.STRING.TEXT
 msgid  "~Note"
-msgstr ""
+msgstr "הערה"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
 msgid  "User-defined field ~1"
-msgstr ""
+msgstr "שדה המוגדר בידי המשתמש/ת 1‏"
 
 #: bibliography/sections.src#ST_CUSTOM2.STRING.TEXT
 msgid  "User-defined field ~2"
-msgstr ""
+msgstr "שדה המוגדר בידי המשתמש/ת 2‏"
 
 #: bibliography/sections.src#ST_CUSTOM3.STRING.TEXT
 msgid  "User-defined field ~3"
-msgstr ""
+msgstr "שדה המוגדר בידי המשתמש/ת 3‏"
 
 #: bibliography/sections.src#ST_CUSTOM4.STRING.TEXT
 msgid  "User-defined field ~4"
-msgstr ""
+msgstr "שדה המוגדר בידי המשתמש/ת 4‏"
 
 #: bibliography/sections.src#ST_CUSTOM5.STRING.TEXT
 msgid  "User-defined field ~5"
-msgstr ""
+msgstr "שדה המוגדר בידי המשתמש/ת 5‏"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "טבלה"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
-msgstr ""
+msgstr "מפתח חיפוש"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
 msgid  "AutoFilter"
-msgstr ""
+msgstr "סינון אוטומטי"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
 msgid  "Standard Filter"
-msgstr ""
+msgstr "Standard Filter"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
 msgid  "Remove Filter"
-msgstr ""
+msgstr "הסרת מסנן"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
 msgid  "Column Arrangement"
-msgstr ""
+msgstr "סידור עמודות"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
 msgid  "Data Source"
-msgstr ""
+msgstr "מקור הנתונים"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FIXEDLINE.TEXT
-msgid  "Data"
-msgstr ""
+msgstr "נתונים"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "הטופס שאליו הפקד שייך אינו מקושר (או אינו מקושר לגמרי) למקור נתונים.\n\nנא לבחור מקור נתונים וטבלה.\n\nההגדרות בדו-שיח זה יחולו מיד לאחר יציאה מהדו-שיח.‏"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
 msgid  "~Data source:"
-msgstr ""
+msgstr "מקור נתונים:‏"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
 msgid  "~..."
-msgstr ""
+msgstr "~..."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
 msgid  "~Table / Query:"
-msgstr ""
+msgstr "טבלה/שאילתה:‏"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 msgid  "Database Field"
-msgstr ""
+msgstr "שדה מסד הנתונים"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
 msgid  "Do you want to save the value in a database field?"
-msgstr ""
+msgstr "האם לשמור את הערך בשדה מסד נתונים?‏"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I want to save it in the following database field:"
-msgstr ""
+msgstr "כן, יש לשמור אותו בשדה מסד הנתונים הבא:‏"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RADIOBUTTON.TEXT
 msgid  "~No, I only want to save the value in the form."
-msgstr ""
+msgstr "לא, יש לשמור את הערך רק בטופס.‏"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
 msgid  "Form"
-msgstr ""
+msgstr "טופס"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "מקור הנתונים"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
 msgid  "Content type"
-msgstr ""
+msgstr "סוג תוכן"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
 msgid  "Content"
-msgstr ""
+msgstr "תוכן"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "טבלה"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
 msgid  "Query"
-msgstr ""
+msgstr "שאילתה"
 
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
-msgstr ""
+msgstr "SQL פקודת"
 
 #: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
 msgid  "Group Element Wizard"
-msgstr ""
+msgstr "אשף חברי קבוצה"
 
 #: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
 msgid  "Table Element Wizard"
-msgstr ""
+msgstr "אשך חברי טבלה"
 
 #: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
 msgid  "List Box Wizard"
-msgstr ""
+msgstr "אשף תיבות רשימה"
 
 #: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
 msgid  "Combo Box Wizard"
-msgstr ""
+msgstr "אשף תיבות משולבות"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 msgid  "The table connection to the data source could not be established."
-msgstr ""
+msgstr "לא ניתן היה ליצור את הקשר בין הטבלה לבין מקור הנתונים.‏"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "בחירת שדה"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Table element"
-msgstr ""
+msgstr "אלמנט טבלה"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "שדות קיימים"
 
 #: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
 msgid  "Selected fields"
-msgstr ""
+msgstr "שדות נבחרים"
 
 #: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
 msgid  " (Date)"
-msgstr ""
+msgstr " (תאריך)"
 
 #: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
 msgid  " (Time)"
-msgstr ""
+msgstr " (שעה)"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "נתונים"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
 msgid  "Which ~names do you want to give the option fields?"
-msgstr ""
+msgstr "אלו שמות לתת לשדות האפשרויות?‏"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
-msgstr ""
+msgstr "שדות אפשרויות"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
 msgid  "Default Field Selection"
-msgstr ""
+msgstr "בחירת שדה ברירת מחדל"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
 msgid  "Should one option field be selected as a default?"
-msgstr ""
+msgstr "האם לבחור שדה אפשרות אחד כברירת מחדל?‏"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
-msgstr ""
+msgstr "כן, את הבא:‏"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RADIOBUTTON.TEXT
 msgid  "No, one particular field is not going to be selected."
-msgstr ""
+msgstr "לא, לא ייבחר שדה מסויים כלשהו.‏"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
 msgid  "Field Values"
-msgstr ""
+msgstr "ערכי שדה"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "כאשר בוחרים אפשרות, קבוצת האפשרויות מקבלת ערך ספציפי.‏"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
-msgstr ""
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
-msgid  "~Option fields"
-msgstr ""
+msgstr "איזה ערך להקצות לכל אפשרות?‏"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
 msgid  "Create Option Group"
-msgstr ""
+msgstr "יצירת קבוצת האפשרויות"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
-msgstr ""
+msgstr "איזו כתובית לתת לקבוצת האפשרויות?‏"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FIXEDTEXT.TEXT
 msgid  "These were all details needed to create the option group."
-msgstr ""
+msgstr "אלו היו כל הפרטים הנדרשים כדי ליצור את קבוצת האפשרויות.‏"
 
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "ניתן לשמור את הערך של קבוצת האפשרויות בשדה של מסד נתונים או להשתמש בו לפעולה יותר מאוחר.‏"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
 msgid  "Table Selection"
-msgstr ""
+msgstr "בחירת טבלה"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
 msgid  "Control"
-msgstr ""
+msgstr "פקד"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "בצד ימין אפשר לראות את כל הטבלאות של מקור הנתונים של הטופס.\n\nיש לציין איזו טבלה תשמש כמקור לתוכן הרשימה.‏"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr ""
+msgstr "בחירת שדה"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
-msgstr ""
+msgstr "שדות קיימים"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FIXEDTEXT.TEXT
 msgid  "Display field"
-msgstr ""
+msgstr "הצגת שדה"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.STRING.TEXT
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "תוכן השדה הנבחר יוצג ברשימת התיבה המשולבת.‏"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.STRING.TEXT
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "תכולת השדה הנבחר תוצג בתיבת הרשימה רק במקרה שהשדות המקושרים זהים.‏"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
 msgid  "Field Link"
-msgstr ""
+msgstr "קישור שדה"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "כאן בוחרים את השדות שתכולתם זהה, כדי שיוצג שהערך משדה התצוגה.‏"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~Value Table"
-msgstr ""
+msgstr "שדה מטבלת הערכים"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
 msgid  "Field from the ~List Table"
-msgstr ""
+msgstr "שדה מטבלת הרשימות"
 
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "ניתן לשמור את הערך של התיבה המשולבת בשדה של מסד נתונים או להשתמש בו לצורך תצוגה.‏"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
 msgid  "<< Back"
-msgstr ""
+msgstr "‏<< הקודם"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
 msgid  "Next >>"
-msgstr ""
+msgstr "הבא >>‏"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
 msgid  "Accept"
-msgstr ""
+msgstr "קבלת שינויים"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
 msgid  "Finish"
-msgstr ""
+msgstr "סיום"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
-msgstr ""
+msgstr "‏ - הסכם רישוי התוכנה"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
 msgid  "- User Data"
-msgstr ""
+msgstr "‏ - פרטי המשתמש"
 
 #: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
 msgid  "Welcome"
-msgstr ""
+msgstr "ברוכים הבאים"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
-msgstr ""
+msgstr "ברוכים הבאים ל-‪%PRODUCTNAME %PRODUCTVERSION‏ OEM\n\nכדי להפעיל את %PRODUCTNAME %PRODUCTVERSION OEM, יש להקליד את הפרטים האישיים בתיבת הדו-שיח המופיעה אחרי טקסט הרישיון. יש מידע חשוב בקבצי ה'קרא אותי' ‏‪(README)‬‏ הנמצאים בתיקיית המוצר של ‏‪%PRODUCTNAME‬‏. נא לקרוא את הקבצים האלו בעיון. עשוי להיות מידע נוסף באתר של אורקל בכתובת\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
 msgid  "License Agreement"
-msgstr ""
+msgstr "הסכם הרישוי"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr ""
+msgstr "נא לעקוב אחר השלבים הבאים כדי להמשיך בהתקנה:"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr ".1"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "יש לעיין בהסכם הרישוי במלואו. יש להשתמש בסרגל הגלילה או בכפתור הדפדוף למטה ‏‪(Page Down)‬‏ כדי לצפות בכל הטקסט.‏"
 
 #: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 msgid  "Page Down"
-msgstr ""
+msgstr "דיפדוף כלפי מטה"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr ".2"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement."
-msgstr ""
+msgstr "הסכמה עם תנאי הרשיון"
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
 msgid  "I accept the terms of the Agreement."
-msgstr ""
+msgstr "אני מקבל/ת את תנאי הרשיון"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "קבלה"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
-msgstr ""
+msgstr "דחייה"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Character"
-msgstr ""
+msgstr "תו"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "גופן"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effects"
-msgstr ""
+msgstr "אפקטים לגופנים"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Link fields"
-msgstr ""
+msgstr "לקשר בין שדות"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "ניתן להשתמש בטפסי בן (תת טפסים) כדי להציג נתונים מפורטים אודות הרשומה הנוכחית של טופס האב. לעשות זאת, יש לציין אילו עמודות בטופס הבן מתאימות לאילו עמודות בטופס האב.‏"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Suggest"
-msgstr ""
+msgstr "להציע"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Sub Form"
-msgstr ""
+msgstr "טופס בן"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Master Form"
-msgstr ""
+msgstr "טופס אב"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
+#, fuzzy
 msgid  "The columns of '#' could not be retrieved."
-msgstr ""
+msgstr "לא ניתן לאחזר את עמודותיו של '#'."
 
 #: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
+#, fuzzy
 msgid  "Edit mask"
-msgstr ""
+msgstr "תבנית עריכה"
 
 #: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
+#, fuzzy
 msgid  "Literal mask"
-msgstr ""
+msgstr "תבנית מפורשת"
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "Read-only"
-msgstr ""
+msgstr "לקריאה בלבד"
 
 #: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
+#, fuzzy
 msgid  "Enabled"
-msgstr ""
+msgstr "מופעלת"
 
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
 msgid  "Visible"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
+#, fuzzy
 msgid  "AutoFill"
-msgstr ""
+msgstr "מילוי אוטומטי"
 
 #: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
+#, fuzzy
 msgid  "Line count"
-msgstr ""
+msgstr "מספר שורות"
 
 #: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
+#, fuzzy
 msgid  "Max. text length"
-msgstr ""
+msgstr "אורך מירבי לכיתוב"
 
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
+#, fuzzy
 msgid  "Spin Button"
-msgstr ""
+msgstr "כפתור סיבוב"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Strict format"
-msgstr ""
+msgstr "הקפדה על צורה"
 
 #: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
+#, fuzzy
 msgid  "Thousands separator"
-msgstr ""
+msgstr "מפריד אלפים"
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
+#, fuzzy
 msgid  "Printable"
-msgstr ""
+msgstr "הדפסה"
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
+#, fuzzy
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "מסגרת"
 
 #: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Help text"
-msgstr ""
+msgstr "טקסט עזרה"
 
 #: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
+#, fuzzy
 msgid  "Help URL"
-msgstr ""
+msgstr "URL עזרה"
 
 #: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
+#, fuzzy
 msgid  "Additional information"
-msgstr ""
+msgstr "מידע נוסף"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
+#, fuzzy
 msgid  "Password character"
-msgstr ""
+msgstr "תו מותר להכללה בססמאות"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
+#, fuzzy
 msgid  "Tristate"
-msgstr ""
+msgstr "לוגיקה תלת מצבית"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
+#, fuzzy
 msgid  "Empty string is NULL"
-msgstr ""
+msgstr "מחרוקת ריקה היא ‏‪NULL ‬"
 
 #: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
+#, fuzzy
 msgid  "Decimal accuracy"
-msgstr ""
+msgstr "דיוק עשרוני"
 
 #: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
+#, fuzzy
 msgid  "Graphics"
-msgstr ""
+msgstr "גרפיקה"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
+#, fuzzy
 msgid  "Default selection"
-msgstr ""
+msgstr "בחירת ברירת המחדל"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Default button"
-msgstr ""
+msgstr "כפתור ברירת מחדל"
 
 #: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Label Field"
-msgstr ""
+msgstr "שדה תווית"
 
 #: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Label"
-msgstr ""
+msgstr "תווית"
 
 #: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "יישור"
 
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Vert. Alignment"
-msgstr ""
+msgstr "יישור אנכי"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
+#, fuzzy
 msgid  "Top"
-msgstr ""
+msgstr "עליון"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
+#, fuzzy
 msgid  "Middle"
-msgstr ""
+msgstr "אמצעי"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
+#, fuzzy
 msgid  "Bottom"
-msgstr ""
+msgstr "תחתון"
 
 #: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
+#, fuzzy
 msgid  "Graphics alignment"
-msgstr ""
+msgstr "יישור גרפיקה"
 
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "גופן"
 
 #: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Background color"
-msgstr ""
+msgstr "צבע רקע"
 
 #: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
+#, fuzzy
 msgid  "Border"
-msgstr ""
+msgstr "גבול"
 
 #: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
+#, fuzzy
 msgid  "Icon size"
-msgstr ""
+msgstr "גודל צלם"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Small"
-msgstr ""
+msgstr "קטן"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Large"
-msgstr ""
+msgstr "גדול"
 
 #: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "Positioning"
-msgstr ""
+msgstr "מיקום"
 
 #: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
+#, fuzzy
 msgid  "Navigation"
-msgstr ""
+msgstr "ניווט"
 
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Acting on a record"
-msgstr ""
+msgstr "הפעלה על רשומה"
 
 #: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
+#, fuzzy
 msgid  "Filtering / Sorting"
-msgstr ""
+msgstr "סינון/מיון"
 
 #: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
+#, fuzzy
 msgid  "Horizontal scroll bar"
-msgstr ""
+msgstr "סרגל גלילה אופקי"
 
 #: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
+#, fuzzy
 msgid  "Vertical scroll bar"
-msgstr ""
+msgstr "פס גלילה אנכי"
 
 #: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
+#, fuzzy
 msgid  "Word break"
-msgstr ""
+msgstr "שבירת מילה"
 
 #: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
+#, fuzzy
 msgid  "Multiline input"
-msgstr ""
+msgstr "קלט רב קווי"
 
 #: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
+#, fuzzy
 msgid  "Multiselection"
-msgstr ""
+msgstr "בחירה מרובה"
 
 #: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "שם"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
+#, fuzzy
 msgid  "Tab order"
-msgstr ""
+msgstr "סדר טאבים"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
 msgid  "Mouse wheel scroll"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Filter"
-msgstr ""
+msgstr "סינון"
 
 #: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
+#, fuzzy
 msgid  "Sort"
-msgstr ""
+msgstr "מיון"
 
 #: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
+#, fuzzy
 msgid  "Record marker"
-msgstr ""
+msgstr "סמן רשומות"
 
 #: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
+#, fuzzy
 msgid  "Filter proposal"
-msgstr ""
+msgstr "הצעת מסנן"
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
+#, fuzzy
 msgid  "Navigation bar"
-msgstr ""
+msgstr "סרגל ניווט"
 
 #: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
+#, fuzzy
 msgid  "Cycle"
-msgstr ""
+msgstr "מחזור"
 
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
+#, fuzzy
 msgid  "Tabstop"
-msgstr ""
+msgstr "עצירת טאב"
 
 #: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Data field"
-msgstr ""
+msgstr "שדה נתונים"
 
 #: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
+#, fuzzy
 msgid  "Dropdown"
-msgstr ""
+msgstr "נגלל מטה"
 
 #: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Bound field"
-msgstr ""
+msgstr "שדה תחום"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
+#, fuzzy
 msgid  "List content"
-msgstr ""
+msgstr "תכולת רשימה"
 
 #: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type of list contents"
-msgstr ""
+msgstr "סוג תכולת רשימה"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Content"
-msgstr ""
+msgstr "תוכן"
 
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
+#, fuzzy
 msgid  "Content type"
-msgstr ""
+msgstr "סוג תוכן"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
+#, fuzzy
 msgid  "Allow additions"
-msgstr ""
+msgstr "לאפשר הוספות"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
+#, fuzzy
 msgid  "Allow deletions"
-msgstr ""
+msgstr "לאפשר מחיקות"
 
 #: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
+#, fuzzy
 msgid  "Allow modifications"
-msgstr ""
+msgstr "לאפשר שינויים"
 
 #: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
+#, fuzzy
 msgid  "Add data only"
-msgstr ""
+msgstr "הוספת נתונים בלבד"
 
 #: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Data source"
-msgstr ""
+msgstr "מקור הנתונים"
 
 #: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Link master fields"
-msgstr ""
+msgstr "קישור שדות שולטים"
 
 #: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Link slave fields"
-msgstr ""
+msgstr "קישור שדות נשלטים"
 
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
+#, fuzzy
 msgid  "Value min."
-msgstr ""
+msgstr "ערך מזערי"
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
+#, fuzzy
 msgid  "Value max."
-msgstr ""
+msgstr "ערך מירבי"
 
 #: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
+#, fuzzy
 msgid  "Incr./decrement value"
-msgstr ""
+msgstr "ערך תיסוף/גריעה"
 
 #: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
+#, fuzzy
 msgid  "Currency symbol"
-msgstr ""
+msgstr "סימן מטבע"
 
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
+#, fuzzy
 msgid  "Date min."
-msgstr ""
+msgstr "ערך מזערי לתאריך"
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
+#, fuzzy
 msgid  "Date max."
-msgstr ""
+msgstr "ערך מירבי לתאריך"
 
 #: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Date format"
-msgstr ""
+msgstr "צורת תאריך"
 
 #: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
+#, fuzzy
 msgid  "Selection"
-msgstr ""
+msgstr "בחירה"
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
+#, fuzzy
 msgid  "Time min."
-msgstr ""
+msgstr "ערך מזערי לשעה"
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
+#, fuzzy
 msgid  "Time max."
-msgstr ""
+msgstr "ערך מירבי לשעה"
 
 #: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Time format"
-msgstr ""
+msgstr "עיצוב שעה"
 
 #: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "Prefix symbol"
-msgstr ""
+msgstr "סימן קידומת"
 
 #: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "ערך"
 
 #: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
+#, fuzzy
 msgid  "Formatting"
-msgstr ""
+msgstr "עיצוב"
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
+#, fuzzy
 msgid  "Class ID"
-msgstr ""
+msgstr "מזהה מחלקה ‏‪(ID)‬‏‏"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Height"
-msgstr ""
+msgstr "גובה"
 
 #: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
+#, fuzzy
 msgid  "Width"
-msgstr ""
+msgstr "רוחב"
 
 #: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
+#, fuzzy
 msgid  "List index"
-msgstr ""
+msgstr "אינדקס רשימה"
 
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Row height"
-msgstr ""
+msgstr "גובה שורה"
 
 #: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Fill color"
-msgstr ""
+msgstr "צבע מילוי"
 
 #: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Line color"
-msgstr ""
+msgstr "צבע קו"
 
 #: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Reference value (on)"
-msgstr ""
+msgstr "ערך יחוס (מופעל)‏"
 
 #: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Reference value (off)"
-msgstr ""
+msgstr "ערך יחוס (כבוי)‏"
 
 #: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
+#, fuzzy
 msgid  "List entries"
-msgstr ""
+msgstr "רשימת ערכים"
 
 #: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Action"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_ACTION.STRING.TEXT
-msgid  "URL"
-msgstr ""
+msgstr "פעולה"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
+#, fuzzy
 msgid  "Type of submission"
-msgstr ""
+msgstr "סוג הגשה"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
 msgid  "Default status"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
+#, fuzzy
 msgid  "Submission encoding"
-msgstr ""
+msgstr "קידוד הגשה"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Default value"
-msgstr ""
+msgstr "ערך ברירת מחדל"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Default text"
-msgstr ""
+msgstr "טקסט ברירת המחדל"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
+#, fuzzy
 msgid  "Default date"
-msgstr ""
+msgstr "צורת ברירת מחדל לתאריך"
 
 #: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
+#, fuzzy
 msgid  "Default time"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_TARGET.STRING.TEXT
-msgid  "Frame"
-msgstr ""
+msgstr "צורת ברירת מחדל לזמן"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Without frame"
-msgstr ""
+msgstr "ללא מסגרת"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "3D look"
-msgstr ""
+msgstr "מראה תלת־מימדי"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Flat"
-msgstr ""
+msgstr "שטוח"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Valuelist"
-msgstr ""
+msgstr "רשימת ערכים"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "טבלה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Query"
-msgstr ""
+msgstr "שאילתה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Sql"
-msgstr ""
+msgstr "Sql"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "Sql [Native]"
-msgstr ""
+msgstr "Sql "
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
+#, fuzzy
 msgid  "Tablefields"
-msgstr ""
+msgstr "שדות טבלה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr "שמאל"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
+#, fuzzy
 msgid  "Center"
-msgstr ""
+msgstr "מרכז"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr "ימין"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "ללא"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Submit form"
-msgstr ""
+msgstr "הגשת טופס"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Reset form"
-msgstr ""
+msgstr "איפוס טופס"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Open document/web page"
-msgstr ""
+msgstr "פתיחת מסמך/דף אתר"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "First record"
-msgstr ""
+msgstr "רשומה ראשונה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
+#, fuzzy
 msgid  "Previous record"
-msgstr ""
+msgstr "הרשומה הקודמת"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
+#, fuzzy
 msgid  "Next record"
-msgstr ""
+msgstr "הרשומה הבאה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
+#, fuzzy
 msgid  "Last record"
-msgstr ""
+msgstr "הרשומה האחרונה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
+#, fuzzy
 msgid  "Save record"
-msgstr ""
+msgstr "שמירת הרשומה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
+#, fuzzy
 msgid  "Undo data entry"
-msgstr ""
+msgstr "לבטל הקלדת נתונים"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
+#, fuzzy
 msgid  "New record"
-msgstr ""
+msgstr "רשומה חדשה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
+#, fuzzy
 msgid  "Delete record"
-msgstr ""
+msgstr "מחיקת רשומה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
+#, fuzzy
 msgid  "Refresh form"
-msgstr ""
+msgstr "ריענון טופס"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
+#, fuzzy
 msgid  "Get"
-msgstr ""
+msgstr "בשיטת Get"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
+#, fuzzy
 msgid  "Post"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.STRING.TEXT
-msgid  "URL"
-msgstr ""
+msgstr "בשיטת Post"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
+#, fuzzy
 msgid  "Multipart"
-msgstr ""
+msgstr "סוג Multipart"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "טקסט"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short)"
-msgstr ""
+msgstr "תבנית רגילה (קצר)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short YY)"
-msgstr ""
+msgstr "תבנית רגילה (קצר YY)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short YYYY)"
-msgstr ""
+msgstr "תבנית רגילה (קצר YYYY)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
+#, fuzzy
 msgid  "Standard (long)"
-msgstr ""
+msgstr "תבנית רגילה (ארוך)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
+#, fuzzy
 msgid  "DD/MM/YY"
-msgstr ""
+msgstr "DD/MM/YY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
+#, fuzzy
 msgid  "MM/DD/YY"
-msgstr ""
+msgstr "MM/DD/YY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
+#, fuzzy
 msgid  "YY/MM/DD"
-msgstr ""
+msgstr "YY/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
+#, fuzzy
 msgid  "DD/MM/YYYY"
-msgstr ""
+msgstr "DD/MM/YYYY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
+#, fuzzy
 msgid  "MM/DD/YYYY"
-msgstr ""
+msgstr "MM/DD/YYYY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
+#, fuzzy
 msgid  "YYYY/MM/DD"
-msgstr ""
+msgstr "YYYY/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
+#, fuzzy
 msgid  "YY-MM-DD"
-msgstr ""
+msgstr "YY-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
+#, fuzzy
 msgid  "YYYY-MM-DD"
-msgstr ""
+msgstr "YYYY-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
+#, fuzzy
 msgid  "13:45"
-msgstr ""
+msgstr "13:45"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
+#, fuzzy
 msgid  "13:45:00"
-msgstr ""
+msgstr "13:45:00"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
+#, fuzzy
 msgid  "01:45 PM"
-msgstr ""
+msgstr "01:45 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
+#, fuzzy
 msgid  "01:45:00 PM"
-msgstr ""
+msgstr "01:45:00 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
+#, fuzzy
 msgid  "Not Selected"
-msgstr ""
+msgstr "לא נבחר"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
+#, fuzzy
 msgid  "Selected"
-msgstr ""
+msgstr "נבחר"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
+#, fuzzy
 msgid  "Not Defined"
-msgstr ""
+msgstr "לא מוגדר"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
+#, fuzzy
 msgid  "All records"
-msgstr ""
+msgstr "כל הרשומות"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
+#, fuzzy
 msgid  "Active record"
-msgstr ""
+msgstr "הרשומה הפעילה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
+#, fuzzy
 msgid  "Current page"
-msgstr ""
+msgstr "הדף הנוכחי"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "כן"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
+#, fuzzy
 msgid  "Parent Form"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.STRING.TEXT
-msgid  "None"
-msgstr ""
+msgstr "הטופס היורש"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Single"
-msgstr ""
+msgstr "בודדת"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Multi"
-msgstr ""
+msgstr "ריבוי"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Range"
-msgstr ""
+msgstr "טווח"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
+#, fuzzy
 msgid  "Fill parameters"
-msgstr ""
+msgstr "מילוי פרמטרים"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Execute action"
-msgstr ""
+msgstr "בעת האיתחול"
 
 #: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
+#, fuzzy
 msgid  "After updating"
-msgstr ""
+msgstr "אחרי עדכון"
 
 #: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
+#, fuzzy
 msgid  "Before updating"
-msgstr ""
+msgstr "לפני עדכון"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
+#, fuzzy
 msgid  "Before record action"
-msgstr ""
+msgstr "לפני פעולת רשומה"
 
 #: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
+#, fuzzy
 msgid  "After record action"
-msgstr ""
+msgstr "אחרי פעולת רשומה"
 
 #: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
+#, fuzzy
 msgid  "Confirm deletion"
-msgstr ""
+msgstr "אישור מחיקה"
 
 #: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
+#, fuzzy
 msgid  "Error occurred"
-msgstr ""
+msgstr "ארעה שגיאה"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
+#, fuzzy
 msgid  "When receiving focus"
-msgstr ""
+msgstr "בעת קבלת מיקוד"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
+#, fuzzy
 msgid  "When losing focus"
-msgstr ""
+msgstr "בעת איבוד מיקוד"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Item status changed"
-msgstr ""
+msgstr "מעמד הפריט השתנה"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
+#, fuzzy
 msgid  "Key pressed"
-msgstr ""
+msgstr "מקש נלחץ"
 
 #: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
+#, fuzzy
 msgid  "Key released"
-msgstr ""
+msgstr "מקש שוחרר"
 
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
+#, fuzzy
 msgid  "When loading"
-msgstr ""
+msgstr "בעת טעינה"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
+#, fuzzy
 msgid  "Before reloading"
-msgstr ""
+msgstr "לפני טעינה מחדש"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
+#, fuzzy
 msgid  "When reloading"
-msgstr ""
+msgstr "בעת טעינה מחדש"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse moved while key pressed"
-msgstr ""
+msgstr "תזוזת עכבר בזמן שהמקש לחוץ"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse inside"
-msgstr ""
+msgstr "העכבר בפנים"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse outside"
-msgstr ""
+msgstr "העכבר בחוץ"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse moved"
-msgstr ""
+msgstr "העכבר הוזז"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse button pressed"
-msgstr ""
+msgstr "כפתור העכבר נלחץ"
 
 #: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse button released"
-msgstr ""
+msgstr "כפתור העכבר שוחרר"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
+#, fuzzy
 msgid  "Before record change"
-msgstr ""
+msgstr "לפני שינוי רשומה"
 
 #: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
+#, fuzzy
 msgid  "After record change"
-msgstr ""
+msgstr "אחרי שינוי רשומה"
 
 #: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
+#, fuzzy
 msgid  "After resetting"
-msgstr ""
+msgstr "אחרי איפוס"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
+#, fuzzy
 msgid  "Prior to reset"
-msgstr ""
+msgstr "לפני איפוס"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Approve action"
-msgstr ""
+msgstr "לפני שמתחילים"
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
+#, fuzzy
 msgid  "Before submitting"
-msgstr ""
+msgstr "לפני הגשה"
 
 #: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Text modified"
-msgstr ""
+msgstr "הטקסט שונה"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Before unloading"
-msgstr ""
+msgstr "לפני פריקה"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
+#, fuzzy
 msgid  "When unloading"
-msgstr ""
+msgstr "בעת פריקה"
 
 #: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Changed"
-msgstr ""
+msgstr "שונה"
 
 #: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
+#, fuzzy
 msgid  "Events"
-msgstr ""
+msgstr "ארועים"
 
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
+#, fuzzy
 msgid  "Analyze SQL command"
-msgstr ""
+msgstr "ניתוח פקודת ‏‪SQL‬‏‏"
 
 #: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
+#, fuzzy
 msgid  "PositionX"
-msgstr ""
+msgstr "מיקום של ‏‪X‏"
 
 #: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
+#, fuzzy
 msgid  "PositionY"
-msgstr ""
+msgstr "מיקום של ‏‪Y‏"
 
 #: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Title"
-msgstr ""
+msgstr "כותרת"
 
 #: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
+#, fuzzy
 msgid  "Page (step)"
-msgstr ""
+msgstr "דפדוף (צעד אחד)‏"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Progress value"
-msgstr ""
+msgstr "ערך התקדמות"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
+#, fuzzy
 msgid  "Progress value min."
-msgstr ""
+msgstr "ערך התקדמות מזערי"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Progress value max."
-msgstr ""
+msgstr "ערך התקדמות מירבי"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Scroll value"
-msgstr ""
+msgstr "ערך גלילה"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Scroll value max."
-msgstr ""
+msgstr "ערך גלילה מירבי"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
+#, fuzzy
 msgid  "Scroll value min."
-msgstr ""
+msgstr "צעד גלילה מזערי"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
+#, fuzzy
 msgid  "Default scroll value"
-msgstr ""
+msgstr "צעד גלילה ברירת מחדל"
 
 #: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Small change"
-msgstr ""
+msgstr "שינוי קטן"
 
 #: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Large change"
-msgstr ""
+msgstr "שינוי גדול"
 
 #: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
+#, fuzzy
 msgid  "Delay"
-msgstr ""
+msgstr "עיכוב"
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
+#, fuzzy
 msgid  "Repeat"
-msgstr ""
+msgstr "בצוע חוזר"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
+#, fuzzy
 msgid  "Visible size"
-msgstr ""
+msgstr "גודל גלוי"
 
 #: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
+#, fuzzy
 msgid  "Orientation"
-msgstr ""
+msgstr "כיוון"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
+#, fuzzy
 msgid  "Horizontal"
-msgstr ""
+msgstr "אופקי"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.STRING.TEXT
+#, fuzzy
 msgid  "Vertical"
-msgstr ""
+msgstr "אנכי"
 
 #: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
+#, fuzzy
 msgid  "While adjusting"
-msgstr ""
+msgstr "תוך כדי התאמה"
 
 #: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
+#, fuzzy
 msgid  "Date"
-msgstr ""
+msgstr "תאריך"
 
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
+#, fuzzy
 msgid  "State"
-msgstr ""
+msgstr "מחוז"
 
 #: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
+#, fuzzy
 msgid  "Time"
-msgstr ""
+msgstr "שעה"
 
 #: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Scale"
-msgstr ""
+msgstr "התאמת גודל"
 
 #: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Button type"
-msgstr ""
+msgstr "סוג כפתור"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "ברירת מחדל"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "OK"
-msgstr ""
+msgstr "אישור"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
-msgstr ""
+msgstr "ביטול"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "עזרה"
 
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr ""
+msgstr "נסיון ההתחברות למקור המידע ‏‪\"$name$\"‬‏ נכשל.‏"
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
+#, fuzzy
 msgid  "Linked cell"
-msgstr ""
+msgstr "תא משורשר"
 
 #: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
+#, fuzzy
 msgid  "Source cell range"
-msgstr ""
+msgstr "טווח תאי המקור"
 
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Contents of the linked cell"
-msgstr ""
+msgstr "התוכן של התא המשורשר"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "The selected entry"
-msgstr ""
+msgstr "הרשומה הנבחרת"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Position of the selected entry"
-msgstr ""
+msgstr "מיקום הערך הנבחר"
 
 #: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
+#, fuzzy
 msgid  "Scrollbars"
-msgstr ""
+msgstr "סרגלי גלילה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Single-line"
-msgstr ""
+msgstr "חד שורתי"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Multi-line"
-msgstr ""
+msgstr "רב שורתי"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Multi-line with formatting"
-msgstr ""
+msgstr "רב שורתי מפורמט"
 
 #: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Symbol color"
-msgstr ""
+msgstr "צבע אות"
 
 #: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Text lines end with"
-msgstr ""
+msgstr "שורות טקסט מסתיימות בתו"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
+#, fuzzy
 msgid  "LF (Unix)"
-msgstr ""
+msgstr "LF (Unix)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
+#, fuzzy
 msgid  "CR+LF (Windows)"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.STRING.TEXT
-msgid  "Horizontal"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.STRING.TEXT
-msgid  "Vertical"
-msgstr ""
+msgstr "CR+LF (Windows)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
+#, fuzzy
 msgid  "Both"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.STRING.TEXT
-msgid  "Table"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.STRING.TEXT
-msgid  "Query"
-msgstr ""
+msgstr "שניהם"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "SQL command"
-msgstr ""
+msgstr "פקודת‪ ‏‪SQL‬‏ ‬"
 
 #: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
+#, fuzzy
 msgid  "Toggle"
-msgstr ""
+msgstr "החלפת מצב"
 
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
+#, fuzzy
 msgid  "Take Focus on Click"
-msgstr ""
+msgstr "מיקוד על לחיצה"
 
 #: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
+#, fuzzy
 msgid  "Hide selection"
-msgstr ""
+msgstr "הסתרת הנחירה"
 
 #: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
+#, fuzzy
 msgid  "Style"
-msgstr ""
+msgstr "סגנון"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
+#, fuzzy
 msgid  "3D"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.STRING.TEXT
-msgid  "Flat"
-msgstr ""
+msgstr "תלת־מימדי"
 
 #: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Border color"
-msgstr ""
+msgstr "צבע גבולות"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
+#, fuzzy
 msgid  "Left top"
-msgstr ""
+msgstr "עליון שמאל"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
+#, fuzzy
 msgid  "Left centered"
-msgstr ""
+msgstr "ממורכז שמאל"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
+#, fuzzy
 msgid  "Left bottom"
-msgstr ""
+msgstr "תחתון שמאל"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
+#, fuzzy
 msgid  "Right top"
-msgstr ""
+msgstr "עליון ימין"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
+#, fuzzy
 msgid  "Right centered"
-msgstr ""
+msgstr "ממורכז ימין"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
+#, fuzzy
 msgid  "Right bottom"
-msgstr ""
+msgstr "למטה ימין"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
+#, fuzzy
 msgid  "Above left"
-msgstr ""
+msgstr "שמאל למעלה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
+#, fuzzy
 msgid  "Above centered"
-msgstr ""
+msgstr "ממורכז למעלה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
+#, fuzzy
 msgid  "Above right"
-msgstr ""
+msgstr "ימין למעלה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
+#, fuzzy
 msgid  "Below left"
-msgstr ""
+msgstr "שמאל למטה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
+#, fuzzy
 msgid  "Below centered"
-msgstr ""
+msgstr "ממורכז למטה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
+#, fuzzy
 msgid  "Below right"
-msgstr ""
+msgstr "ימין למטה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
+#, fuzzy
 msgid  "Centered"
-msgstr ""
+msgstr "ממורכז"
 
 #: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
+#, fuzzy
 msgid  "Wrap text automatically"
-msgstr ""
+msgstr "כיפול טקסט אוטומטי בסוף שורה"
 
 #: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Text type"
-msgstr ""
+msgstr "סוג טקסט"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
 msgid  "Hide"
@@ -1908,140 +2107,164 @@ msgid  "Show"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
+#, fuzzy
 msgid  "XML data model"
-msgstr ""
+msgstr "דגם XML‏"
 
 #: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
+#, fuzzy
 msgid  "Binding expression"
-msgstr ""
+msgstr "משפט הידוק ‏‪(Binding expression)‬‏‏"
 
 #: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Required"
-msgstr ""
+msgstr "נדרש"
 
 #: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
+#, fuzzy
 msgid  "List entry source"
-msgstr ""
+msgstr "לציין מקור הרשומה"
 
 #: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
+#, fuzzy
 msgid  "Relevant"
-msgstr ""
-
-#: propctrlr/formres.src#RID_STR_XSD_READONLY.STRING.TEXT
-msgid  "Read-only"
-msgstr ""
+msgstr "שייך"
 
 #: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
+#, fuzzy
 msgid  "Constraint"
-msgstr ""
+msgstr "מגבלה"
 
 #: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
+#, fuzzy
 msgid  "Calculation"
-msgstr ""
+msgstr "חישוב"
 
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Data type"
-msgstr ""
+msgstr "טיפוס נתונים"
 
 #: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
+#, fuzzy
 msgid  "Whitespaces"
-msgstr ""
+msgstr "תווים בלתי נראים"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
+#, fuzzy
 msgid  "Preserve"
-msgstr ""
+msgstr "שימור"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
+#, fuzzy
 msgid  "Replace"
-msgstr ""
+msgstr "החלפה"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
+#, fuzzy
 msgid  "Collapse"
-msgstr ""
+msgstr "כיווץ"
 
 #: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
+#, fuzzy
 msgid  "Pattern"
-msgstr ""
+msgstr "דוגמה"
 
 #: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Length"
-msgstr ""
+msgstr "אורך"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Length (at least)"
-msgstr ""
+msgstr "אורך מזערי"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Length (at most)"
-msgstr ""
+msgstr "אורך מירבי"
 
 #: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
+#, fuzzy
 msgid  "Digits (total)"
-msgstr ""
+msgstr "סה‏\"כ ספרות"
 
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
+#, fuzzy
 msgid  "Digits (fraction)"
-msgstr ""
+msgstr "ספרות אחרי נקודה עשרונית"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Max. (inclusive)"
-msgstr ""
+msgstr "מירבי - כולל"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Max. (exclusive)"
-msgstr ""
+msgstr "מירבי - לא כולל"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Min. (inclusive)"
-msgstr ""
+msgstr "מזערי - כולל"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Min. (exclusive)"
-msgstr ""
+msgstr "מזערי - לא כולל"
 
 #: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
+#, fuzzy
 msgid  "Submission"
-msgstr ""
+msgstr "הגשה"
 
 #: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Binding"
-msgstr ""
+msgstr "הידוק"
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Selection type"
-msgstr ""
+msgstr "סוג בחירה"
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
+#, fuzzy
 msgid  "Root displayed"
-msgstr ""
+msgstr "הצגת שורש"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
+#, fuzzy
 msgid  "Show handles"
-msgstr ""
+msgstr "הצגת ידיות"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
+#, fuzzy
 msgid  "Show root handles"
-msgstr ""
+msgstr "הצגת ידיות שורש"
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
+#, fuzzy
 msgid  "Editable"
-msgstr ""
+msgstr "בר עריכה"
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
+#, fuzzy
 msgid  "Invokes stop node editing"
-msgstr ""
+msgstr "הפעלת עריכת צמתי צמתי עצירה"
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
+#, fuzzy
 msgid  "With title bar"
-msgstr ""
+msgstr "עם סרגל כותרת"
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
+#, fuzzy
 msgid  "No Label"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.STRING.TEXT
-msgid  "No"
-msgstr ""
+msgstr "ללא תווית"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
 msgid  "Keep Ratio"
@@ -2092,24 +2315,23 @@ msgid  "To Paragraph"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "As Character"
-msgstr ""
+msgstr "כתו"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "To Page"
-msgstr ""
+msgstr "לעמוד"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
 msgid  "To Frame"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "To Character"
-msgstr ""
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.STRING.TEXT
-msgid  "To Page"
-msgstr ""
+msgstr "כתו"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
 msgid  "To Cell"
@@ -2132,344 +2354,427 @@ msgid  "Bold"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "(Default)"
-msgstr ""
+msgstr "ברירת מחדל"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New Data Type"
-msgstr ""
+msgstr "טיפוס נתונים חדש"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type a name for the new data type:"
-msgstr ""
+msgstr "יש להקליד שם עבור טיפוס הנתונים החדש:‏"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "האם למחוק את טיפוס הנתונים ‏‪'#type#'‬‏ מהדגם?‏\nמחיקת הטיפוס תשפיעה על כל הפקדים הקשורים לטיפוס זה.‏"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Button"
-msgstr ""
+msgstr "כפתור"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Option Button"
-msgstr ""
+msgstr "כפתור אפשרויות"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
+#, fuzzy
 msgid  "Check Box"
-msgstr ""
+msgstr "תיבת סימון"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Label Field"
-msgstr ""
+msgstr "שדה תווית"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
+#, fuzzy
 msgid  "Group Box"
-msgstr ""
+msgstr "תיבת קבוצה"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Text Box"
-msgstr ""
+msgstr "תיבת טקסט"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
+#, fuzzy
 msgid  "Formatted Field"
-msgstr ""
+msgstr "שדה מעוצב"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
+#, fuzzy
 msgid  "List Box"
-msgstr ""
+msgstr "תיבת רשימה"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
+#, fuzzy
 msgid  "Combo Box"
-msgstr ""
+msgstr "תיבה משולבת"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Image Button"
-msgstr ""
+msgstr "כפתור תמונה"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Hidden Control"
-msgstr ""
+msgstr "פקד מוסתר"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Control (unknown type)"
-msgstr ""
+msgstr "פקד (סוג לא ידוע)‏"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Image Control"
-msgstr ""
+msgstr "בקרת תמונה"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
+#, fuzzy
 msgid  "File Selection"
-msgstr ""
+msgstr "בחירת קובץ"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Date Field"
-msgstr ""
+msgstr "שדה תאריך"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Time Field"
-msgstr ""
+msgstr "שדה שעה"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Numeric Field"
-msgstr ""
+msgstr "שדה מספרי"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Currency Field"
-msgstr ""
+msgstr "שדה מטבע"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Pattern Field"
-msgstr ""
+msgstr "שדה דוגמה"
 
 #: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
+#, fuzzy
 msgid  "Table Control "
-msgstr ""
+msgstr "פקד טבלאות"
 
 #: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "ברירת מחדל"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "כללי"
 
 #: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "נתונים"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
 msgid  "No"
 msgstr ""
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "כן"
 
 #: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "עזרה"
 
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
 msgid  "<Embedded-Image>"
 msgstr ""
 
 #: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "טקסט"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "אלו שדות השליטה שניתנים לשימוש כשדות תיוות ל ‏‪$control_class$ $control_name$‬‏.‏"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~No assignment"
-msgstr ""
+msgstr "אין הקצאה"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Label Field Selection"
-msgstr ""
+msgstr "בחירת שדה תווית"
 
 #: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
+#, fuzzy
 msgid  "Forms"
-msgstr ""
+msgstr "טפסים"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Tab Order"
-msgstr ""
+msgstr "סדר טאבים"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Controls"
-msgstr ""
+msgstr "פקדים"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Move Up"
-msgstr ""
+msgstr "תזוזה כלפי מעלה"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Move Down"
-msgstr ""
+msgstr "תזוזה כלפי מטה"
 
 #: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Automatic Sort"
-msgstr ""
+msgstr "מיון אוטומטי"
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
-msgstr ""
+msgstr "הגדרה"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Linear ascending"
-msgstr ""
+msgstr "לינארי עולה"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
+#, fuzzy
 msgid  "Linear descending"
-msgstr ""
+msgstr "לינארי יורד"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
+#, fuzzy
 msgid  "Original values"
-msgstr ""
+msgstr "ערכים מקוריים"
 
 #: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
+#, fuzzy
 msgid  "Exponential increasing"
-msgstr ""
+msgstr "גידול מעריכי"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "אודות\nהתקן"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "יצירה\nתצוגה מקדימה"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "תצוגה מקדימה"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Scan area"
-msgstr ""
+msgstr "שטח סריקה"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Left:"
-msgstr ""
+msgstr "שמאל:‏"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Top:"
-msgstr ""
+msgstr "עליון:‏"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Right:"
-msgstr ""
+msgstr "ימין:‏"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bottom:"
-msgstr ""
+msgstr "תחתון"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Device used:"
-msgstr ""
+msgstr "ההתקן:‏"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Resolution [~DPI]"
-msgstr ""
+msgstr "רזולוציה ‏‪[~DPI]‬‏‏"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Show advanced options"
-msgstr ""
+msgstr "תצוגת אפשרויות מתקדמות"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Options:"
-msgstr ""
+msgstr "אפשרויות:‏"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Vector element"
-msgstr ""
+msgstr "אלמנט וקטורי"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
-msgstr ""
+msgstr "הגדרה"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
+#, fuzzy
 msgid  "Scanner"
-msgstr ""
+msgstr "סורק"
 
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
+#, fuzzy
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "התקן: ‏‪%s‬‏\nיצרן: ‏‪%s‬‏\nדגם: ‏‪%s‬‏\nסוג: ‏‪%s‬‏"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred while scanning."
-msgstr ""
+msgstr "ארעה שגיאה בעת סריקה.‏"
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
+#, fuzzy
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "המכשיר אינו תומך בתפקוד תצוגה מקדימה ולכן התצוגה המקדימה תתבסס על סריקה רגילה - זה יכול לקחת זמן.‏"
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
+#, fuzzy
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr ""
+msgstr "לא ניתן לאתחל את ממשק ה ‏‪SANE‬‏. אין אפשרות לסרוק.‏"
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
+#, fuzzy
 msgid  "Check for ~Updates..."
-msgstr ""
+msgstr "בדיקת עידכונים...‏"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
+#, fuzzy
 msgid  "Checking..."
-msgstr ""
+msgstr "בודק..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
+#, fuzzy
 msgid  "Checking for an update failed."
-msgstr ""
+msgstr "בדיקת העדכונים נכשלה."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr ""
+msgstr "התקנה זו של %PRODUCTNAME %PRODUCTVERSION‏ הינה עדכנית."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "גרסת %PRODUCTNAME %NEXTVERSION זמינה כעת.\n\nלפני ההורדה, כדאי לבדוק אם יש לך הרשאות מספיקות לבצע את ההתקנה. בדרך כלל צריך ססמת אדמיניסטראטור."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Check for Updates"
-msgstr ""
+msgstr "בדיקת עדכונים זמינים"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr ""
+msgstr "הורדת %PRODUCTNAME %NEXTVERSION הופסקה זמנית ב..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr ""
+msgstr "הורדת %PRODUCTNAME %NEXTVERSION נתקעה ב"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
+#, fuzzy
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "נתיב הקבצים המורדים הוא: %DOWNLOAD_PATH.\nניתן לשנות את הנתיב בתיבת הדו-שיח 'כלים' -> 'אפשרויות' -> 'עדכוני %PRODUCTNAME'"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
+#, fuzzy
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr ""
+msgstr "הקובץ %FILE_NAME הורד לספרית %DOWNLOAD_PATH."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
+#, fuzzy
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "הורדה אוטומטית של העדכון אינה זמינה כעת.\n\nלחיצה על 'הורדה...' מורידה את %PRODUCTNAME %NEXTVERSION ידנית מהאתר."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr ""
+msgstr "הורדת %PRODUCTNAME %NEXTVERSION מתבצעת..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "הורדת %PRODUCTNAME %NEXTVERSION הסתיימה ומוכנה להתקנה."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to cancel the download?"
-msgstr ""
+msgstr "האם אכן לבטל את ההורדה?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "צריך לסגור את %PRODUCTNAME %PRODUCTVERSION לפני התקנת העדכון. האם להתקין את העדכון עכשיו?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
+#, fuzzy
 msgid  "Install ~now"
-msgstr ""
+msgstr "להתקין עכשיו"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
+#, fuzzy
 msgid  "Install ~later"
-msgstr ""
+msgstr "להתקין מאוחר יותר"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "לא ניתן להפעיל את תוכנית ההתקנה. נא להפעיל את %FILE_NAME בספרית %DOWNLOAD_PATH ידנית."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "קובץ בעל שם זהה כבר קיים! האם להחליפו?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
@@ -2484,97 +2789,101 @@ msgid  "Continue"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
+#, fuzzy
 msgid  "%PERCENT%"
-msgstr ""
+msgstr "%PERCENT%"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr "מצב"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "תאור"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "סגירה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "~Download"
-msgstr ""
+msgstr "הורדה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "~Install"
-msgstr ""
+msgstr "התקנה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
+#, fuzzy
 msgid  "~Pause"
-msgstr ""
+msgstr "השהייה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
+#, fuzzy
 msgid  "~Resume"
-msgstr ""
+msgstr "המשך הפעולה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
-msgstr ""
+msgstr "ביטול"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "יש עדכון זמין ל-%PRODUCTNAME"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Click here to start the download."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "ללחוץ כאן להתחלת ההורדה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.STRING.TEXT
+#, fuzzy
 msgid  "Click here for more information."
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.STRING.TEXT
-msgid  "%PRODUCTNAME update available"
-msgstr ""
+msgstr "ללחוץ כאן למידע נוסף"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
+#, fuzzy
 msgid  "Download of update begins."
-msgstr ""
+msgstr "הורדת העדכון מתחילה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Download of update in progress"
-msgstr ""
+msgstr "הורדת העדכון מתבצעת כעת"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
+#, fuzzy
 msgid  "Download of update paused"
-msgstr ""
+msgstr "הורדת העדכון הופסקה זמנית"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
+#, fuzzy
 msgid  "Click here to resume."
-msgstr ""
+msgstr "ללחוץ כאן לחדש את פעולת ההורדה."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Download of update stalled"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
+msgstr "הורדת העדכון נתקעה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Download of update completed"
-msgstr ""
+msgstr "הורדת העדכון הסתיימה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Click here to start the installation."
-msgstr ""
+msgstr "ללחוץ כאן להתחיל את ההתקנה"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Updates for extensions available"
-msgstr ""
-
-#: update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.STRING.TEXT
-msgid  "Click here for more information."
-msgstr ""
+msgstr "ישנם עדכונים זמינים לתוספים"

@@ -37,7 +37,7 @@ msgstr ""
 
 #: resource/strings.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
 msgid  "Insert graphics"
-msgstr ""
+msgstr "Shto Grafikën"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.STRING.TEXT
 msgid  "substituted"
@@ -49,55 +49,55 @@ msgstr ""
 
 #: resource/strings.src#RID_STR_READERROR.STRING.TEXT
 msgid  "Error reading data from database"
-msgstr ""
+msgstr "Gabim gjatë shkrimit të të dhënave në bazën e të dhënave"
 
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
-msgstr ""
+msgstr "Montimi dështoi"
 
 #: resource/strings.src#RID_ERR_LOADING_FORM.STRING.TEXT
 msgid  "The data content could not be loaded."
-msgstr ""
+msgstr "Dokumenti nuk mund të ngarkohet tërësisht"
 
 #: resource/strings.src#RID_ERR_REFRESHING_FORM.STRING.TEXT
 msgid  "The data content could not be updated"
-msgstr ""
+msgstr "E dhëna nuk mund të lexohet nga fajlli"
 
 #: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
 msgid  "Error inserting the new record"
-msgstr ""
+msgstr "Gabim gjatë krijimt të Volumit të ri Logjik"
 
 #: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
 msgid  "Error updating the current record"
-msgstr ""
+msgstr "Të gjitharegjistrimet; Shënimet aktive; Faqja aktuale"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
 msgid  "Error deleting the current record"
-msgstr ""
+msgstr "Gabim në fshirjen e Grupit të Volumit"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
 msgid  "Error deleting the specified records"
-msgstr ""
+msgstr "Gabim në fshirjen e Grupit të Volumit"
 
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
-msgstr ""
+msgstr "Lidhja me objektin nuk mund të vendoset."
 
 #: resource/strings.src#RID_STR_OPEN_GRAPHICS.STRING.TEXT
 msgid  "Insert graphics from..."
-msgstr ""
+msgstr "Shto sllajdet nga kontura"
 
 #: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
 msgid  "Remove graphics"
-msgstr ""
+msgstr "Stilet e grafikave"
 
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
-msgstr ""
+msgstr "Fjalëkalimi i vendosur është i gabim."
 
 #: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
 msgid  "Syntax error in query expression"
-msgstr ""
+msgstr "Gabim sintaksor në shprehje e pyetësorit"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
@@ -105,7 +105,7 @@ msgstr ""
 
 #: resource/strings.src#RID_STR_LABEL_RECORD.STRING.TEXT
 msgid  "Record"
-msgstr ""
+msgstr "Shënim"
 
 #: resource/strings.src#RID_STR_INVALID_VALIDATOR.STRING.TEXT
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
@@ -113,19 +113,19 @@ msgstr ""
 
 #: resource/strings.src#RID_STR_LABEL_OF.STRING.TEXT
 msgid  "of"
-msgstr ""
+msgstr "nga"
 
 #: resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.STRING.TEXT
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Përmbatja e formularit aktual është modifikuar.\nA dëshironi t'i ruani ndryshimet tuaja?"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.STRING.TEXT
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "Gabim gjatë vendosjes së kritereve të renditjes"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.STRING.TEXT
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "Gabim gjatë vendosjes së kritereve të filtrit"
 
 #: resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.STRING.TEXT
 msgid  "To execute this function, parameters are needed."
@@ -137,11 +137,11 @@ msgstr ""
 
 #: resource/strings.src#RID_STR_FEATURE_UNKNOWN.STRING.TEXT
 msgid  "Unknown function."
-msgstr ""
+msgstr "Funksion eksponencial"
 
 #: resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.STRING.TEXT
 msgid  "Please enter a binding expression."
-msgstr ""
+msgstr "Ju lutem shkruani numrin e faksit."
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.STRING.TEXT
 msgid  "This is an invalid binding expression."
@@ -149,19 +149,19 @@ msgstr ""
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.STRING.TEXT
 msgid  "Value is invalid."
-msgstr ""
+msgstr "Vlera e pavlefshme e cakut."
 
 #: resource/xforms.src#RID_STR_XFORMS_REQUIRED.STRING.TEXT
 msgid  "A value is required."
-msgstr ""
+msgstr "Vlera e qelisë është"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.STRING.TEXT
 msgid  "The constraint '$1' not validated."
-msgstr ""
+msgstr "' nuk ekziston."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.STRING.TEXT
 msgid  "The value is not of the type '$2'."
-msgstr ""
+msgstr "Kontrollimi i drejtshkrimit nuk është në dispozicion"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.STRING.TEXT
 msgid  "The value must be smaller than or equal to $2."
@@ -169,7 +169,7 @@ msgstr ""
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.STRING.TEXT
 msgid  "The value must be smaller than $2."
-msgstr ""
+msgstr "Intervali më i vogël duhet të jetë më i vogël se sa intervali madhor."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.STRING.TEXT
 msgid  "The value must be greater than or equal to $2."
@@ -177,11 +177,11 @@ msgstr ""
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.STRING.TEXT
 msgid  "The value must be greater than $2."
-msgstr ""
+msgstr "Intervali duhet të jetë më i madhë se 0. "
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.STRING.TEXT
 msgid  "The value does not match the pattern '$2'."
-msgstr ""
+msgstr "HelpID nuk përshtatet me UniqueID: "
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.STRING.TEXT
 msgid  "$2 digits allowed at most."
@@ -205,63 +205,63 @@ msgstr ""
 
 #: resource/xforms.src#RID_STR_DATATYPE_STRING.STRING.TEXT
 msgid  "String"
-msgstr ""
+msgstr "Varg"
 
 #: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
 msgid  "Hyperlink"
-msgstr ""
+msgstr "Hiperlink"
 
 #: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
 msgid  "True/False (Boolean)"
-msgstr ""
+msgstr "Mos regjistro-saktë"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
 msgid  "Decimal"
-msgstr ""
+msgstr "Decimale"
 
 #: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
 msgid  "Floating point"
-msgstr ""
+msgstr "Shëni pikën "
 
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
-msgstr ""
+msgstr "Dyfish"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "Data"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
-msgstr ""
+msgstr "Koha"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATETIME.STRING.TEXT
 msgid  "Date and Time"
-msgstr ""
+msgstr "Data dhe Koha"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.STRING.TEXT
 msgid  "Month and year"
-msgstr ""
+msgstr "Bardh e zi"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEAR.STRING.TEXT
 msgid  "Year"
-msgstr ""
+msgstr "Viti"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
 msgid  "Month and day"
-msgstr ""
+msgstr "Çfarwdo dite nw muajin e dwshiruar"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
 msgid  "Month"
-msgstr ""
+msgstr "Muaj"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
 msgid  "Day"
-msgstr ""
+msgstr "Dita"
 
 #: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
 msgid  "Error during evaluation"
-msgstr ""
+msgstr "Ka ndodhur një gabim i panjohur"
 
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
@@ -269,4 +269,4 @@ msgstr ""
 
 #: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
 msgid  "Binding"
-msgstr ""
+msgstr "Ndërlidhjet"

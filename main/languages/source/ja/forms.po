@@ -33,240 +33,240 @@ msgstr ""
 
 #: resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.STRING.TEXT
 msgid  "The contents of a combo box or list field could not be determined."
-msgstr ""
+msgstr "コンボボックスまたはリストボックスの内容が確認できませんでした。"
 
 #: resource/strings.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
 msgid  "Insert graphics"
-msgstr ""
+msgstr "図の挿入"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.STRING.TEXT
 msgid  "substituted"
-msgstr ""
+msgstr "置換"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.STRING.TEXT
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "このコントロールの読み込み中にエラーが発生しました。それが原因でワイルドカードに置換されました。"
 
 #: resource/strings.src#RID_STR_READERROR.STRING.TEXT
 msgid  "Error reading data from database"
-msgstr ""
+msgstr "データベースからデータを読み取る時のエラー"
 
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
-msgstr ""
+msgstr "接続できませんでした。"
 
 #: resource/strings.src#RID_ERR_LOADING_FORM.STRING.TEXT
 msgid  "The data content could not be loaded."
-msgstr ""
+msgstr "データ内容が読み込めませんでした。"
 
 #: resource/strings.src#RID_ERR_REFRESHING_FORM.STRING.TEXT
 msgid  "The data content could not be updated"
-msgstr ""
+msgstr "データ内容が更新できませんでした。"
 
 #: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
 msgid  "Error inserting the new record"
-msgstr ""
+msgstr "新しいレコードを挿入する時のエラー"
 
 #: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
 msgid  "Error updating the current record"
-msgstr ""
+msgstr "現在のレコードを書き込む時のエラー"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
 msgid  "Error deleting the current record"
-msgstr ""
+msgstr "現在のレコードを削除する時のエラー"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
 msgid  "Error deleting the specified records"
-msgstr ""
+msgstr "指定したレコードを削除する時のエラー"
 
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
-msgstr ""
+msgstr "オブジェクトが NULL ではいけません。"
 
 #: resource/strings.src#RID_STR_OPEN_GRAPHICS.STRING.TEXT
 msgid  "Insert graphics from..."
-msgstr ""
+msgstr "図の挿入に開く..."
 
 #: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
 msgid  "Remove graphics"
-msgstr ""
+msgstr "図の削除"
 
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
-msgstr ""
+msgstr "指定されたストリームは無効です。"
 
 #: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
 msgid  "Syntax error in query expression"
-msgstr ""
+msgstr "クエリー言語分析中でのエラー"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "結合でサポートされている値の種類は、このコントロールとのデータの交換に使用できません。"
 
 #: resource/strings.src#RID_STR_LABEL_RECORD.STRING.TEXT
 msgid  "Record"
-msgstr ""
+msgstr "レコード"
 
 #: resource/strings.src#RID_STR_INVALID_VALIDATOR.STRING.TEXT
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "このコントロールは外部の値の結合に結び付けられ、同時にバリデータとして機能します。新しいバリデータを設定する前に、値の結合を無効にする必要があります。"
 
 #: resource/strings.src#RID_STR_LABEL_OF.STRING.TEXT
 msgid  "of"
-msgstr ""
+msgstr "/"
 
 #: resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.STRING.TEXT
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "現在の形式の内容が変更されています。\n変更を保存しますか。"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.STRING.TEXT
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "並べ替え条件の設定の際のエラー"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.STRING.TEXT
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "フィルタ条件の設定の際のエラー"
 
 #: resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.STRING.TEXT
 msgid  "To execute this function, parameters are needed."
-msgstr ""
+msgstr "この機能を実行するにはパラメータが必要です。"
 
 #: resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.STRING.TEXT
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "この機能は実行できません。ステータスクエリーの場合にのみ実行できます。"
 
 #: resource/strings.src#RID_STR_FEATURE_UNKNOWN.STRING.TEXT
 msgid  "Unknown function."
-msgstr ""
+msgstr "不明な機能です。"
 
 #: resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.STRING.TEXT
 msgid  "Please enter a binding expression."
-msgstr ""
+msgstr "バインディング表現を入力してください。"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.STRING.TEXT
 msgid  "This is an invalid binding expression."
-msgstr ""
+msgstr "無効なバインディング表現です。"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.STRING.TEXT
 msgid  "Value is invalid."
-msgstr ""
+msgstr "無効な値です。"
 
 #: resource/xforms.src#RID_STR_XFORMS_REQUIRED.STRING.TEXT
 msgid  "A value is required."
-msgstr ""
+msgstr "値は必須です。"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.STRING.TEXT
 msgid  "The constraint '$1' not validated."
-msgstr ""
+msgstr "制約 '$1' は未検証です。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.STRING.TEXT
 msgid  "The value is not of the type '$2'."
-msgstr ""
+msgstr "'$2' 型の値ではありません。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.STRING.TEXT
 msgid  "The value must be smaller than or equal to $2."
-msgstr ""
+msgstr "$2 以下の値を入力してください。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.STRING.TEXT
 msgid  "The value must be smaller than $2."
-msgstr ""
+msgstr "$2 未満の値を入力してください。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.STRING.TEXT
 msgid  "The value must be greater than or equal to $2."
-msgstr ""
+msgstr "$2 以上の値を入力してください。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.STRING.TEXT
 msgid  "The value must be greater than $2."
-msgstr ""
+msgstr "$2 より大きい値を入力してください。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.STRING.TEXT
 msgid  "The value does not match the pattern '$2'."
-msgstr ""
+msgstr "パターン '$2' に一致しない値です。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.STRING.TEXT
 msgid  "$2 digits allowed at most."
-msgstr ""
+msgstr "最大桁数は $2 桁です。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.STRING.TEXT
 msgid  "$2 fraction digits allowed at most."
-msgstr ""
+msgstr "分数の最大桁数は $2 桁です。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.STRING.TEXT
 msgid  "The string must be $2 characters long."
-msgstr ""
+msgstr "$2 文字の文字列を指定してください。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.STRING.TEXT
 msgid  "The string must be at least $2 characters long."
-msgstr ""
+msgstr "$2 文字以上の文字列を指定してください。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.STRING.TEXT
 msgid  "The string can only be $2 characters long at most."
-msgstr ""
+msgstr "文字列の最大文字数は $2 文字です。"
 
 #: resource/xforms.src#RID_STR_DATATYPE_STRING.STRING.TEXT
 msgid  "String"
-msgstr ""
+msgstr "文字列"
 
 #: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
 msgid  "Hyperlink"
-msgstr ""
+msgstr "ハイパーリンク"
 
 #: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
 msgid  "True/False (Boolean)"
-msgstr ""
+msgstr "True/False (論理演算)"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
 msgid  "Decimal"
-msgstr ""
+msgstr "小数"
 
 #: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
 msgid  "Floating point"
-msgstr ""
+msgstr "浮動小数点"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
-msgstr ""
+msgstr "倍数型"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "日付"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
-msgstr ""
+msgstr "時刻"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATETIME.STRING.TEXT
 msgid  "Date and Time"
-msgstr ""
+msgstr "日付と時刻"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.STRING.TEXT
 msgid  "Month and year"
-msgstr ""
+msgstr "月と年"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEAR.STRING.TEXT
 msgid  "Year"
-msgstr ""
+msgstr "年"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
 msgid  "Month and day"
-msgstr ""
+msgstr "月と日"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
 msgid  "Month"
-msgstr ""
+msgstr "月"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
 msgid  "Day"
-msgstr ""
+msgstr "日"
 
 #: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
 msgid  "Error during evaluation"
-msgstr ""
+msgstr "評価時のエラー"
 
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr ""
+msgstr "文字列'$1' は、必要な正規表現 '$2' に一致しません。"
 
 #: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
 msgid  "Binding"
-msgstr ""
+msgstr "バインディング"

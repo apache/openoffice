@@ -47,10 +47,6 @@ msgstr ""
 msgid  "OR"
 msgstr ""
 
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_XOR.STRING.TEXT
-msgid  "XOR"
-msgstr ""
-
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOT.STRING.TEXT
 msgid  "NOT"
 msgstr ""
@@ -161,22 +157,6 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COT_HYP.STRING.TEXT
 msgid  "ACOTH"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.STRING.TEXT
-msgid  "CSC"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.STRING.TEXT
-msgid  "SEC"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.STRING.TEXT
-msgid  "CSCH"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.STRING.TEXT
-msgid  "SECH"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.STRING.TEXT
@@ -787,22 +767,6 @@ msgstr ""
 msgid  "SUMIF"
 msgstr ""
 
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IF.STRING.TEXT
-msgid  "AVERAGEIF"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IFS.STRING.TEXT
-msgid  "SUMIFS"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IFS.STRING.TEXT
-msgid  "AVERAGEIFS"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_IFS.STRING.TEXT
-msgid  "COUNTIFS"
-msgstr ""
-
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOOKUP.STRING.TEXT
 msgid  "LOOKUP"
 msgstr ""
@@ -865,22 +829,6 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MID.STRING.TEXT
 msgid  "MID"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LENB.STRING.TEXT
-msgid  "LENB"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHTB.STRING.TEXT
-msgid  "RIGHTB"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFTB.STRING.TEXT
-msgid  "LEFTB"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIDB.STRING.TEXT
-msgid  "MIDB"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TEXT.STRING.TEXT
@@ -1316,54 +1264,6 @@ msgid  "Function Wizard  -"
 msgstr ""
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_END.STRING.TEXT
-msgid  "~End"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.TC_FUNCTION.TP_FUNCTION.PAGEITEM.TEXT
-msgid  "Functions"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.TC_FUNCTION.TP_STRUCT.PAGEITEM.TEXT
-msgid  "Structure"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.FT_FORMULA.FIXEDTEXT.TEXT
-msgid  "For~mula"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.FT_RESULT.FIXEDTEXT.TEXT
-msgid  "Function result"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.FT_FORMULA_RESULT.FIXEDTEXT.TEXT
-msgid  "Result"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.BTN_MATRIX.CHECKBOX.TEXT
-msgid  "Array"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.RB_REF.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Maximize"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.BTN_BACKWARD.PUSHBUTTON.TEXT
-msgid  "<< ~Back"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.BTN_FORWARD.PUSHBUTTON.TEXT
-msgid  "~Next >>"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.STR_TITLE1.STRING.TEXT
-msgid  "Function Wizard"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.STR_TITLE2.STRING.TEXT
-msgid  "Function Wizard  -"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.STR_END.STRING.TEXT
 msgid  "~End"
 msgstr ""
 

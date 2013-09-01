@@ -33,192 +33,184 @@ msgstr ""
 
 #: classes/resource.src#STR_MENU_ADDONS.STRING.TEXT
 msgid  "Add-Ons"
-msgstr ""
+msgstr "Add-Ons"
 
 #: classes/resource.src#STR_MENU_ADDONHELP.STRING.TEXT
 msgid  "Add-~On Help"
-msgstr ""
+msgstr "Add-On 도움말"
 
 #: classes/resource.src#STR_MENU_HEADFOOTALL.STRING.TEXT
 msgid  "All"
-msgstr ""
+msgstr "모두"
 
 #: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
 msgid  "~Update"
-msgstr ""
+msgstr "업데이트(~U)"
 
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 msgid  "~Close & Return to "
-msgstr ""
+msgstr "닫고 돌아갈 위치(~C)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
 msgid  "Visible ~Buttons"
-msgstr ""
+msgstr "표시되는 버튼(~B)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
 msgid  "~Customize Toolbar..."
-msgstr ""
+msgstr "도구 모음 사용자 정의(~C)..."
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
 msgid  "~Dock Toolbar"
-msgstr ""
+msgstr "도구 모음 고정(~D)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MENUITEM.TEXT
 msgid  "Dock ~All Toolbars"
-msgstr ""
+msgstr "모든 도구 모음 고정(~A)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MENUITEM.TEXT
 msgid  "~Lock Toolbar Position"
-msgstr ""
+msgstr "도구 모음 위치 잠금(~L)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.MENUITEM.TEXT
 msgid  "Close ~Toolbar"
-msgstr ""
+msgstr "도구 모음 닫기(~T)"
 
 #: classes/resource.src#STR_SAVECOPYDOC.STRING.TEXT
 msgid  "Save Copy ~as..."
-msgstr ""
+msgstr "복사를 다른 이름으로 저장(~A)..."
 
 #: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
 msgid  "No Documents"
-msgstr ""
-
-#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
-msgid  "Clear List"
-msgstr ""
-
-#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
-msgid  "Clears the list with the most recently opened files. This action can not be undone."
-msgstr ""
+msgstr "문서 없음"
 
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
 msgid  "Add-On %num%"
-msgstr ""
+msgstr "%num% 추가 기능(Add-on)"
 
 #: classes/resource.src#DLG_LICENSE.MODALDIALOG.TEXT
 msgid  "License Agreement"
-msgstr ""
+msgstr "사용권 계약"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr ""
+msgstr "설치를 진행하려면 다음 단계를 따르십시오."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "사용권 계약 전문을 보십시오. 이 대화 상자의 스크롤 막대나 %PAGEDOWN 버튼을 사용하여 사용권 계약 전문을 읽어보십시오."
 
 #: classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 msgid  "Scroll Down"
-msgstr ""
+msgstr "아래로 스크롤"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement."
-msgstr ""
+msgstr "사용권 계약에 동의합니다."
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "동의(~A)"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
-msgstr ""
+msgstr "거부"
 
 #: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
 msgid  "Retry"
-msgstr ""
+msgstr "재시도"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr ""
+msgstr "다음 위치에 디스크 공간이 부족하여 %PRODUCTNAME에서 중요 내부 정보를 저장할 수 없습니다:\n%PATH\n\n해당 위치에 디스크 공간을 추가로 할당하지 않으면 %PRODUCTNAME을(를) 계속 사용할 수 없습니다.\n\n데이터 저장을 다시 시도하려면 디스크 공간을 추가로 할당한 다음 재시도 버튼을 누르십시오.\n\n"
 
 #: classes/resource.src#STR_RESTORE_TOOLBARS.STRING.TEXT
 msgid  "~Reset"
-msgstr ""
+msgstr "원래대로(~R)"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_SHARE.STRING.TEXT
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr ""
+msgstr "사용자 인터페이스 구성 데이터를 로드하는 동안 오류가 발생했습니다. 응용 프로그램을 지금 종료합니다.\n응용 프로그램을 다시 설치해 보시기 바랍니다."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_USER.STRING.TEXT
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "사용자 인터페이스 구성 데이터를 로드하는 동안 오류가 발생했습니다. 응용 프로그램을 지금 종료합니다.\n응용 프로그램의 사용자 프로파일을 삭제한 후 다시 시도해 보시기 바랍니다."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_GENERAL.STRING.TEXT
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "사용자 인터페이스 구성 데이터를 로드하는 동안 오류가 발생했습니다. 응용 프로그램을 지금 종료합니다.\n응용 프로그램의 사용자 프로파일을 삭제한 후 다시 시도하거나 응용 프로그램을 다시 설치해 보시기 바랍니다."
 
 #: classes/resource.src#STR_UNTITLED_DOCUMENT.STRING.TEXT
 msgid  "Untitled"
-msgstr ""
+msgstr "제목없음"
 
 #: classes/resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.STRING.TEXT
 msgid  "Multiple Languages"
-msgstr ""
+msgstr "다중 언어"
 
 #: classes/resource.src#STR_LANGSTATUS_NONE.STRING.TEXT
 msgid  "None (Do not check spelling)"
-msgstr ""
+msgstr "없음 (맞춤법 검사 안함)"
 
 #: classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.STRING.TEXT
 msgid  "Reset to Default Language"
-msgstr ""
+msgstr "기본 언어로 다시 설정"
 
 #: classes/resource.src#STR_LANGSTATUS_MORE.STRING.TEXT
 msgid  "More..."
-msgstr ""
+msgstr "자세히..."
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_SELECTION.STRING.TEXT
 msgid  "Set Language for Selection"
-msgstr ""
+msgstr "선택에 대한 언어 설정"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.STRING.TEXT
 msgid  "Set Language for Paragraph"
-msgstr ""
+msgstr "단락에 대한 언어 설정"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.STRING.TEXT
 msgid  "Set Language for all Text"
-msgstr ""
+msgstr "문서에 대한 언어 설정"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.STRING.TEXT
 msgid  "Welcome to"
-msgstr ""
+msgstr "시작"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.STRING.TEXT
 msgid  "%PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.STRING.TEXT
 msgid  "Create a new document"
-msgstr ""
+msgstr "새 문서 만들기"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.STRING.TEXT
 msgid  "~Templates..."
-msgstr ""
+msgstr "서식 파일(~T)..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
 msgid  "~Open..."
-msgstr ""
+msgstr "열기(~O)"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
 msgid  "Add new features to %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME에 새 기능 추가"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.STRING.TEXT
 msgid  "Register your %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME 등록"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.STRING.TEXT
 msgid  "Get more information about %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME에 대한 자세한 정보 보기"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.STRING.TEXT
 msgid  "Get more templates for %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME 용 템플릿 내려받기"

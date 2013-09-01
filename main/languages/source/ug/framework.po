@@ -33,192 +33,184 @@ msgstr ""
 
 #: classes/resource.src#STR_MENU_ADDONS.STRING.TEXT
 msgid  "Add-Ons"
-msgstr ""
+msgstr "قىستۇرما دېتال"
 
 #: classes/resource.src#STR_MENU_ADDONHELP.STRING.TEXT
 msgid  "Add-~On Help"
-msgstr ""
+msgstr "قىستۇرما دېتال ياردىمى(~O)"
 
 #: classes/resource.src#STR_MENU_HEADFOOTALL.STRING.TEXT
 msgid  "All"
-msgstr ""
+msgstr "ھەممە"
 
 #: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
 msgid  "~Update"
-msgstr ""
+msgstr "يېڭىلا(~U)"
 
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 msgid  "~Close & Return to "
-msgstr ""
+msgstr "ياپ & قايت(~C) "
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
 msgid  "Visible ~Buttons"
-msgstr ""
+msgstr "كۆرۈشچان كۇنۇپكا(~B)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
 msgid  "~Customize Toolbar..."
-msgstr ""
+msgstr "ئىختىيارىچە قورال بالداق(~C)…"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
 msgid  "~Dock Toolbar"
-msgstr ""
+msgstr "قورال بالداقنى مۇقىملاشتۇر(~D)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MENUITEM.TEXT
 msgid  "Dock ~All Toolbars"
-msgstr ""
+msgstr "ھەممە قورال بالداقنى مۇقىملاشتۇر(~A)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MENUITEM.TEXT
 msgid  "~Lock Toolbar Position"
-msgstr ""
+msgstr "قورال بالداق ئورنىنى قۇلۇپلا(~L)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.MENUITEM.TEXT
 msgid  "Close ~Toolbar"
-msgstr ""
+msgstr "قورال بالداقنى ياپ(~T)"
 
 #: classes/resource.src#STR_SAVECOPYDOC.STRING.TEXT
 msgid  "Save Copy ~as..."
-msgstr ""
+msgstr "كۆپەيتمىسىنى باشقا ئىسىمدا ساقلا(~A)…"
 
 #: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
 msgid  "No Documents"
-msgstr ""
-
-#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
-msgid  "Clear List"
-msgstr ""
-
-#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
-msgid  "Clears the list with the most recently opened files. This action can not be undone."
-msgstr ""
+msgstr "پۈتۈك يوق"
 
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
 msgid  "Add-On %num%"
-msgstr ""
+msgstr "%num% قىستۇرما دېتال"
 
 #: classes/resource.src#DLG_LICENSE.MODALDIALOG.TEXT
 msgid  "License Agreement"
-msgstr ""
+msgstr "ئىجازەت كېلىشىمى"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr ""
+msgstr "تۆۋەندىكى قەدەم باسقۇچقا قوشۇلسىڭىز ئاندىن قاچىلاش داۋاملىشىدۇ:"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
 msgid  "1."
-msgstr ""
+msgstr "1."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "ئىجازەت كېلىشىمىنى تولۇق ئوقۇڭ، بۇ سۆزلىشىش رامكىسىدىكى دۇمىلىما سۈرگۈچ ياكى '%PAGEDOWN' كۇنۇپكىسىنى بېسىپ، ئىجازەتنامىنىڭ تولۇق تېكستىنى ئوقۇڭ."
 
 #: classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 msgid  "Scroll Down"
-msgstr ""
+msgstr "تۆۋەنگە دومىلات"
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 msgid  "2."
-msgstr ""
+msgstr "2."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
 msgid  "Accept the License Agreement."
-msgstr ""
+msgstr "ئىجازەت كېلىشىمىگە قوشۇلىمەن."
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "قوشۇل(~A)"
 
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
-msgstr ""
+msgstr "قوشۇلما"
 
 #: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
 msgid  "Retry"
-msgstr ""
+msgstr "قايتا سىنا"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME مۇھىم ئىچكى ئۇچۇرنى ساقلىيالمايدۇ، سەۋەبى تۆۋەندىكى ئورۇندا يېتەرلىك دىسكا بوشلۇقى يوق: \n%PATH\n\nئەگەر بۇ ئورۇنغا تېخىمۇ كۆپ دىسكا بوشلۇقى تەقسىملەنمىسە، %PRODUCTNAME نى داۋاملىق ئىشلەتكىلى بولمايدۇ\n\nتېخىمۇ كۆپ دىسكا بوشلۇقى تەقسىملىگەندىن كېيىن، «قايتا سىنا» كۇنۇپكىسىنى چېكىپ سانلىق مەلۇمات ساقلاشنى سىناڭ.\n\n"
 
 #: classes/resource.src#STR_RESTORE_TOOLBARS.STRING.TEXT
 msgid  "~Reset"
-msgstr ""
+msgstr "ئەسلىگە قايتۇر(~R)"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_SHARE.STRING.TEXT
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr ""
+msgstr "ئىشلەتكۈچى كۆرۈنمە يۈزى سەپلىمە سانلىق مەلۇماتىنى يۈكلەشتە خاتالىق يۈز بەردى. قوللىنىشچان پروگرامما توختىتىلىدۇ.\nقوللىنىشچان پروگراممىنى قايتا قاچىلاشنى سىناڭ."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_USER.STRING.TEXT
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr ""
+msgstr "ئىشلەتكۈچى كۆرۈنمە يۈزى سەپلىمە سانلىق مەلۇماتىنى يۈكلەشتە خاتالىق يۈز بەردى. قوللىنىشچان پروگرامما توختىتىلىدۇ.\nئاۋال قوللىنىشچان پروگراممىڭىزنىڭ سەپلىمە ھۆججىتىنى ئۆچۈرۈپ سىناپ بېقىڭ."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_GENERAL.STRING.TEXT
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr ""
+msgstr "ئىشلەتكۈچى كۆرۈنمە يۈزى سەپلىمە سانلىق مەلۇماتىنى يۈكلەشتە خاتالىق يۈز بەردى. قوللىنىشچان پروگرامما توختىتىلىدۇ.\nئاۋال قوللىنىشچان پروگراممىڭىزنىڭ سەپلىمە ھۆججىتىنى ئۆچۈرۈپ سىناپ بېقىڭ، ياكى قوللىنىشچان پروگراممىنى قايتا قاچىلاڭ."
 
 #: classes/resource.src#STR_UNTITLED_DOCUMENT.STRING.TEXT
 msgid  "Untitled"
-msgstr ""
+msgstr "ماۋزۇسىز"
 
 #: classes/resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.STRING.TEXT
 msgid  "Multiple Languages"
-msgstr ""
+msgstr "كۆپ تىل"
 
 #: classes/resource.src#STR_LANGSTATUS_NONE.STRING.TEXT
 msgid  "None (Do not check spelling)"
-msgstr ""
+msgstr "يوق (ئىملا تەكشۈرمە)"
 
 #: classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.STRING.TEXT
 msgid  "Reset to Default Language"
-msgstr ""
+msgstr "كۆڭۈلدىكى تىلغا قايتۇر"
 
 #: classes/resource.src#STR_LANGSTATUS_MORE.STRING.TEXT
 msgid  "More..."
-msgstr ""
+msgstr "تېخىمۇ كۆپ…"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_SELECTION.STRING.TEXT
 msgid  "Set Language for Selection"
-msgstr ""
+msgstr "تاللىغان مەزمۇننىڭ تىل تەڭشىكى"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.STRING.TEXT
 msgid  "Set Language for Paragraph"
-msgstr ""
+msgstr "ئابزاس تىل تەڭشىكى"
 
 #: classes/resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.STRING.TEXT
 msgid  "Set Language for all Text"
-msgstr ""
+msgstr "ھەممە تېكستنىڭ تىل تەڭشىكى"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.STRING.TEXT
 msgid  "Welcome to"
-msgstr ""
+msgstr "مەرھابا"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.STRING.TEXT
 msgid  "%PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.STRING.TEXT
 msgid  "Create a new document"
-msgstr ""
+msgstr "يېڭى پۈتۈك قۇر"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.STRING.TEXT
 msgid  "~Templates..."
-msgstr ""
+msgstr "قېلىپلار(~T)…"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
 msgid  "~Open..."
-msgstr ""
+msgstr "ئاچ(~O)"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
 msgid  "Add new features to %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME غا يېڭى ئىقتىدار قوش"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.STRING.TEXT
 msgid  "Register your %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME خەتلەڭ"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.STRING.TEXT
 msgid  "Get more information about %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME ھەققىدە تېخىمۇ كۆپ ئۇچۇرغا ئېرىشىش"
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.STRING.TEXT
 msgid  "Get more templates for %PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME نىڭ تېخىمۇ كۆپ قېلىپىغا ئېرىشىش"

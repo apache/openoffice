@@ -99,10 +99,6 @@ msgstr ""
 msgid  "BASIC Macros"
 msgstr ""
 
-#: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_DLG_MACROS.STRING.TEXT
-msgid  "%PRODUCTNAME Macros"
-msgstr ""
-
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_GROUP_STYLES.STRING.TEXT
 msgid  "Styles"
 msgstr ""
@@ -271,10 +267,6 @@ msgstr ""
 msgid  "Import..."
 msgstr ""
 
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "Delete..."
-msgstr ""
-
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
 msgstr ""
@@ -336,10 +328,6 @@ msgid  "There are no more commands on the toolbar. Do you want to delete the too
 msgstr ""
 
 #: customize/cfg.src#QBX_CONFIRM_RESET.QUERYBOX.MESSAGE
-msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
-
-#: customize/cfg.src#RID_SVXSTR_CONFIRM_MENU_RESET.STRING.TEXT
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
 msgstr ""
 
@@ -783,10 +771,6 @@ msgstr ""
 msgid  "My Macros"
 msgstr ""
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.BOX_SELECTOR_CATEGORIES.STR_PRODMACROS.STRING.TEXT
-msgid  "%PRODUCTNAME Macros"
-msgstr ""
-
 #: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
 msgid  "Macro name"
 msgstr ""
@@ -797,42 +781,6 @@ msgstr ""
 
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
-msgstr ""
-
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
-msgid  "License..."
-msgstr ""
-
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
-msgid  "%OOOVENDOR"
-msgstr ""
-
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
-msgid  "This product was created by the OpenOffice community."
-msgstr ""
-
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
-msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
-msgstr ""
-
-#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
-msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
-msgstr ""
-
-#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
-msgid  "Readme, License and Notice"
-msgstr ""
-
-#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
-msgid  "Readme"
-msgstr ""
-
-#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
-msgid  "License"
-msgstr ""
-
-#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
-msgid  "Notice"
 msgstr ""
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
@@ -983,10 +931,6 @@ msgstr ""
 msgid  "Name"
 msgstr ""
 
-#: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr ""
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr ""
@@ -1087,10 +1031,6 @@ msgstr ""
 msgid  "Sounds like (Japanese)"
 msgstr ""
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PUSHBUTTON.TEXT
-msgid  "..."
-msgstr ""
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FIXEDLINE.TEXT
 msgid  "State"
 msgstr ""
@@ -1160,14 +1100,6 @@ msgid  "Properties of "
 msgstr ""
 
 #: dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PAGEITEM.TEXT
-msgid  "General"
-msgstr ""
-
-#: dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.TABDIALOG.TEXT
-msgid  "Properties of "
-msgstr ""
-
-#: dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERY_GENERAL.PAGEITEM.TEXT
 msgid  "General"
 msgstr ""
 
@@ -1251,10 +1183,6 @@ msgstr ""
 msgid  "Update"
 msgstr ""
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_ACTUALIZE_PROGRESS.FL_ACTUALIZE_PROGRESS.FIXEDLINE.TEXT
-msgid  "File"
-msgstr ""
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_THEMEID.MODALDIALOG.TEXT
 msgid  "Theme ID"
 msgstr ""
@@ -1311,10 +1239,6 @@ msgstr ""
 msgid  "Solarization"
 msgstr ""
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.FL_PARAMETER.FIXEDLINE.TEXT
-msgid  "Parameters"
-msgstr ""
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.DLG_FILTERSOLARIZE_FT_THRESHOLD.FIXEDTEXT.TEXT
 msgid  "Threshold ~value"
 msgstr ""
@@ -1327,10 +1251,6 @@ msgstr ""
 msgid  "Aging"
 msgstr ""
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.FL_PARAMETER.FIXEDLINE.TEXT
-msgid  "Parameters"
-msgstr ""
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.DLG_FILTERSEPIA_FT_SEPIA.FIXEDTEXT.TEXT
 msgid  "Aging degree"
 msgstr ""
@@ -1339,20 +1259,12 @@ msgstr ""
 msgid  "Posterize"
 msgstr ""
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.FL_PARAMETER.FIXEDLINE.TEXT
-msgid  "Parameters"
-msgstr ""
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
 msgid  "Poster colors"
 msgstr ""
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 msgid  "Relief"
-msgstr ""
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.FL_PARAMETER.FIXEDLINE.TEXT
-msgid  "Parameters"
 msgstr ""
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.DLG_FILTEREMBOSS_FT_LIGHT.FIXEDTEXT.TEXT
@@ -1495,10 +1407,6 @@ msgstr ""
 msgid  "New"
 msgstr ""
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_DELETE.PUSHBUTTON.TEXT
-msgid  "Delete"
-msgstr ""
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 msgid  "Close"
 msgstr ""
@@ -1567,15 +1475,7 @@ msgstr ""
 msgid  "WWW Browser"
 msgstr ""
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_BROWSE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "WWW Browser"
-msgstr ""
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.IMAGEBUTTON.TEXT
-msgid  "Target in Document"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Target in Document"
 msgstr ""
 
@@ -1611,14 +1511,6 @@ msgstr ""
 msgid  "Events"
 msgstr ""
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.BUTTONIMAGE.TEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.TABPAGE.TEXT
-msgid  "Hyperlink"
-msgstr ""
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
 msgid  "Mail & news"
 msgstr ""
@@ -1643,50 +1535,6 @@ msgstr ""
 msgid  "Data Sources..."
 msgstr ""
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Data Sources..."
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MORE.FIXEDLINE.TEXT
-msgid  "Further settings"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FRAME.FIXEDTEXT.TEXT
-msgid  "F~rame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FORM.FIXEDTEXT.TEXT
-msgid  "F~orm"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_INDICATION.FIXEDTEXT.TEXT
-msgid  "Te~xt"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_TEXT.FIXEDTEXT.TEXT
-msgid  "N~ame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.BUTTONIMAGE.TEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.TABPAGE.TEXT
-msgid  "Hyperlink"
-msgstr ""
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
 msgid  "Document"
 msgstr ""
@@ -1696,10 +1544,6 @@ msgid  "~Path"
 msgstr ""
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Open File"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.BUTTONIMAGE.TEXT
 msgid  "Open File"
 msgstr ""
 
@@ -1717,54 +1561,6 @@ msgstr ""
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 msgid  "Test text"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Target in Document"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.BUTTONIMAGE.TEXT
-msgid  "Target in Document"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_MORE.FIXEDLINE.TEXT
-msgid  "Further settings"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FRAME.FIXEDTEXT.TEXT
-msgid  "F~rame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FORM.FIXEDTEXT.TEXT
-msgid  "F~orm"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_INDICATION.FIXEDTEXT.TEXT
-msgid  "Te~xt"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TEXT.FIXEDTEXT.TEXT
-msgid  "N~ame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.BUTTONIMAGE.TEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.TABPAGE.TEXT
-msgid  "Hyperlink"
 msgstr ""
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
@@ -1789,50 +1585,6 @@ msgstr ""
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Select Path"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.BUTTONIMAGE.TEXT
-msgid  "Select Path"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_MORE.FIXEDLINE.TEXT
-msgid  "Further settings"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_FRAME.FIXEDTEXT.TEXT
-msgid  "F~rame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_FORM.FIXEDTEXT.TEXT
-msgid  "F~orm"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_INDICATION.FIXEDTEXT.TEXT
-msgid  "Te~xt"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_TEXT.FIXEDTEXT.TEXT
-msgid  "N~ame"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.BUTTONIMAGE.TEXT
-msgid  "Events"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXDLG_NEWHYPERLINK.MODALDIALOG.TEXT
-msgid  "Hyperlink"
 msgstr ""
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
@@ -1875,10 +1627,6 @@ msgstr ""
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
 msgstr ""
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP.STRING.TEXT
-msgid  "Document"
-msgstr ""
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr ""
@@ -1889,14 +1637,6 @@ msgstr ""
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 msgid  "This is where you create a new document to which the new link points."
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_FORM_BUTTON.STRING.TEXT
-msgid  "Button"
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_FROM_TEXT.STRING.TEXT
-msgid  "Text"
 msgstr ""
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_QUERYOVERWRITE.STRING.TEXT
@@ -1949,10 +1689,6 @@ msgstr ""
 
 #: dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_AFTER.RADIOBUTTON.TEXT
 msgid  "A~fter"
-msgstr ""
-
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_INS.FIXEDLINE.TEXT
-msgid  "Insert"
 msgstr ""
 
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
@@ -2063,10 +1799,6 @@ msgstr ""
 msgid  "Enter password to allow editing"
 msgstr ""
 
-#: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_REENTER_PASSWD_TO_MODIFY.FIXEDTEXT.TEXT
-msgid  "Confirm password"
-msgstr ""
-
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_PASSWD_MUST_BE_CONFIRMED.STRING.TEXT
 msgid  "Password must be confirmed"
 msgstr ""
@@ -2109,10 +1841,6 @@ msgstr ""
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 msgid  "~Insert"
-msgstr ""
-
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.BTN_AUTHOR.PUSHBUTTON.TEXT
-msgid  "Author"
 msgstr ""
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_EDIT.STRING.TEXT
@@ -2169,10 +1897,6 @@ msgstr ""
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.FT_NEWLIB.FIXEDTEXT.TEXT
 msgid  "Enter the name for the new library."
-msgstr ""
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWLIB.STRING.TEXT
-msgid  "Create Library"
 msgstr ""
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
@@ -2567,14 +2291,6 @@ msgstr ""
 msgid  "~Break Link"
 msgstr ""
 
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES2.FIXEDTEXT.TEXT
-msgid  "Source file"
-msgstr ""
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_SOURCE2.FIXEDTEXT.TEXT
-msgid  "Element:"
-msgstr ""
-
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE2.FIXEDTEXT.TEXT
 msgid  "Type:"
 msgstr ""
@@ -2607,15 +2323,7 @@ msgstr ""
 msgid  "Graphic"
 msgstr ""
 
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BUTTONCLOSE.STRING.TEXT
-msgid  "~Close"
-msgstr ""
-
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG.STRING.TEXT
-msgid  "Are you sure you want to remove the selected link?"
-msgstr ""
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG_MULTI.STRING.TEXT
 msgid  "Are you sure you want to remove the selected link?"
 msgstr ""
 
@@ -2685,18 +2393,6 @@ msgstr ""
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSLOCATION.FIXEDTEXT.TEXT
 msgid  "Class ~Location"
-msgstr ""
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.BTN_CLASS.PUSHBUTTON.TEXT
-msgid  "~Search..."
-msgstr ""
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_CLASS.FIXEDLINE.TEXT
-msgid  "File"
-msgstr ""
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_APPLET_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
 msgstr ""
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.HELPBUTTON.TEXT
@@ -2917,10 +2613,6 @@ msgstr ""
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PUSHBUTTON.TEXT
 msgid  "~Delete"
-msgstr ""
-
-#: options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FIXEDLINE.TEXT
-msgid  "Registered databases"
 msgstr ""
 
 #: options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FIXEDTEXT.TEXT
@@ -3331,10 +3023,6 @@ msgstr ""
 msgid  "Drawing / Presentation"
 msgstr ""
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAWGRID.FIXEDTEXT.TEXT
-msgid  "Grid"
-msgstr ""
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASIC.FIXEDTEXT.TEXT
 msgid  "Basic Syntax Highlighting"
 msgstr ""
@@ -3371,32 +3059,12 @@ msgstr ""
 msgid  "SQL Syntax Highlighting"
 msgstr ""
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLIDENTIFIER.FIXEDTEXT.TEXT
-msgid  "Identifier"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLNUMBER.FIXEDTEXT.TEXT
-msgid  "Number"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLSTRING.FIXEDTEXT.TEXT
-msgid  "String"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLOPERATOR.FIXEDTEXT.TEXT
-msgid  "Operator"
-msgstr ""
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 msgid  "Keyword"
 msgstr ""
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLPARAMETER.FIXEDTEXT.TEXT
 msgid  "Parameter"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLCOMMENT.FIXEDTEXT.TEXT
-msgid  "Comment"
 msgstr ""
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_EXTENSION.STRING.TEXT
@@ -3513,10 +3181,6 @@ msgstr ""
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 msgid  "~Book"
-msgstr ""
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.FT_DICTLANG.FIXEDTEXT.TEXT
-msgid  "~Language"
 msgstr ""
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_WORD.FIXEDTEXT.TEXT
@@ -3731,10 +3395,6 @@ msgstr ""
 msgid  "Large"
 msgstr ""
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM1.STRINGLIST.ITEM
-msgid  "Automatic"
-msgstr ""
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Galaxy (default)"
 msgstr ""
@@ -3773,10 +3433,6 @@ msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MENU_ICONS.FIXEDTEXT.TEXT
 msgid  "Icons in menus"
-msgstr ""
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM1.STRINGLIST.ITEM
-msgid  "Automatic"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM2.STRINGLIST.ITEM
@@ -3983,10 +3639,6 @@ msgstr ""
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr ""
 
-#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
-msgstr ""
-
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 msgid  "Size ~1"
 msgstr ""
@@ -4147,10 +3799,6 @@ msgstr ""
 msgid  "~FTP proxy"
 msgstr ""
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PORT.FIXEDTEXT.TEXT
-msgid  "P~ort"
-msgstr ""
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PROXY.FIXEDTEXT.TEXT
 msgid  "~SOCKS proxy"
 msgstr ""
@@ -4229,10 +3877,6 @@ msgstr ""
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_CASE.FIXEDTEXT.TEXT
 msgid  "~Case match"
-msgstr ""
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM1.STRINGLIST.ITEM
-msgid  "None"
 msgstr ""
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
@@ -4317,10 +3961,6 @@ msgstr ""
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.STRING.TEXT
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr ""
-
-#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
 msgstr ""
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
@@ -4433,26 +4073,6 @@ msgstr ""
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDPATH.PUSHBUTTON.TEXT
 msgid  "Add ~Folder"
-msgstr ""
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_REMOVE_PATH.PUSHBUTTON.TEXT
-msgid  "~Remove"
-msgstr ""
-
-#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr ""
-
-#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr ""
-
-#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr ""
-
-#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
 msgstr ""
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
@@ -4591,10 +4211,6 @@ msgstr ""
 msgid  "Grammar"
 msgstr ""
 
-#: options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.MODALDIALOG.TEXT
-msgid  "Hyphenation"
-msgstr ""
-
 #: options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_PRE_BREAK_DLG.STRING.TEXT
 msgid  "Characters before break"
 msgstr ""
@@ -4605,10 +4221,6 @@ msgstr ""
 
 #: options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_MIN_WORDLEN_DLG.STRING.TEXT
 msgid  "Minimal word length"
-msgstr ""
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.TABPAGE.TEXT
-msgid  "Options"
 msgstr ""
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.FL_LINGUISTIC.FIXEDLINE.TEXT
@@ -4645,10 +4257,6 @@ msgstr ""
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_OPTIONS_EDIT.PUSHBUTTON.TEXT
 msgid  "Edi~t..."
-msgstr ""
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS_MOREDICTS.FIXEDTEXT.TEXT
-msgid  "~Get more dictionaries online..."
 msgstr ""
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
@@ -4735,10 +4343,6 @@ msgstr ""
 msgid  "Memory per object"
 msgstr ""
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE_UNIT.FIXEDTEXT.TEXT
-msgid  "MB"
-msgstr ""
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME.FIXEDTEXT.TEXT
 msgid  "Remove from memory after"
 msgstr ""
@@ -4793,10 +4397,6 @@ msgstr ""
 
 #: options/optpath.src#RID_SFXPAGE_PATH.STR_MULTIPATHDLG.STRING.TEXT
 msgid  "Edit Paths: %1"
-msgstr ""
-
-#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
 msgstr ""
 
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
@@ -4901,10 +4501,6 @@ msgstr ""
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_DOCPRINTER.CHECKBOX.TEXT
 msgid  "Load printer settings with the document"
-msgstr ""
-
-#: options/optsave.src#RID_SFXPAGE_SAVE.GB_SAVE.FIXEDLINE.TEXT
-msgid  "Save"
 msgstr ""
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_DOCINFO.CHECKBOX.TEXT
@@ -5291,14 +4887,6 @@ msgstr ""
 msgid  "%PRODUCTNAME Writer"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTLOAD_PAGE.ITEMLIST.ITEM
-msgid  "General"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_CONTENT_OPT.ITEMLIST.ITEM
-msgid  "View"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ITEMLIST.ITEM
 msgid  "Formatting Aids"
 msgstr ""
@@ -5317,10 +4905,6 @@ msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT_CTL.ITEMLIST.ITEM
 msgid  "Basic Fonts (CTL)"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTPRINT_PAGE.ITEMLIST.ITEM
-msgid  "Print"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTTABLE_PAGE.ITEMLIST.ITEM
@@ -5347,26 +4931,6 @@ msgstr ""
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_CONTENT_OPT.ITEMLIST.ITEM
-msgid  "View"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTSHDWCRSR.ITEMLIST.ITEM
-msgid  "Formatting Aids"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTGRID_PAGE.ITEMLIST.ITEM
-msgid  "Grid"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTPRINT_PAGE.ITEMLIST.ITEM
-msgid  "Print"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTTABLE_PAGE.ITEMLIST.ITEM
-msgid  "Table"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
 msgid  "Background"
 msgstr ""
@@ -5383,14 +4947,6 @@ msgstr ""
 msgid  "%PRODUCTNAME Calc"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_LAYOUT.ITEMLIST.ITEM
-msgid  "General"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CONTENT.ITEMLIST.ITEM
-msgid  "View"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
 msgid  "International"
 msgstr ""
@@ -5403,56 +4959,12 @@ msgstr ""
 msgid  "Sort Lists"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CHANGES.ITEMLIST.ITEM
-msgid  "Changes"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_GRID.ITEMLIST.ITEM
-msgid  "Grid"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_SC_TP_PRINT.ITEMLIST.ITEM
-msgid  "Print"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Impress"
 msgstr ""
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_MISC.ITEMLIST.ITEM
-msgid  "General"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_CONTENTS.ITEMLIST.ITEM
-msgid  "View"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_SNAP.ITEMLIST.ITEM
-msgid  "Grid"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_PRINT.ITEMLIST.ITEM
-msgid  "Print"
-msgstr ""
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Draw"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_MISC.ITEMLIST.ITEM
-msgid  "General"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_CONTENTS.ITEMLIST.ITEM
-msgid  "View"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_SNAP.ITEMLIST.ITEM
-msgid  "Grid"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_PRINT.ITEMLIST.ITEM
-msgid  "Print"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
@@ -5465,10 +4977,6 @@ msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 msgid  "Load/Save"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_SFXPAGE_SAVE.ITEMLIST.ITEM
-msgid  "General"
 msgstr ""
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
@@ -5579,10 +5087,6 @@ msgstr ""
 msgid  "~Vertical"
 msgstr ""
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_STD.STRINGLIST.ITEM
-msgid  "Default"
-msgstr ""
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
 msgid  "Top"
 msgstr ""
@@ -5660,10 +5164,6 @@ msgid  "Exceptions"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
-msgid  "Options"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOFMT_APPLY.PAGEITEM.TEXT
 msgid  "Options"
 msgstr ""
 
@@ -5811,14 +5311,6 @@ msgstr ""
 msgid  "Abbreviations (no subsequent capital)"
 msgstr ""
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWABBREV.PUSHBUTTON.TEXT
-msgid  "~New"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELABBREV.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr ""
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CHECKBOX.TEXT
 msgid  "~AutoInclude"
 msgstr ""
@@ -5855,18 +5347,6 @@ msgstr ""
 msgid  "Delete words with two initial capitals"
 msgstr ""
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TABPAGE.TEXT
-msgid  "Localized Options"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER1.STRING.TEXT
-msgid  "[M]"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER2.STRING.TEXT
-msgid  "[T]"
-msgstr ""
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.STRING.TEXT
 msgid  "Add non breaking space before specific punctuation marks in french text"
 msgstr ""
@@ -5877,10 +5357,6 @@ msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_SINGLE.FIXEDLINE.TEXT
 msgid  "Single quotes"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_SGL_TYPO.CHECKBOX.TEXT
-msgid  "Repla~ce"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_STARTQUOTE.FIXEDTEXT.TEXT
@@ -5985,14 +5461,6 @@ msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PB_ENTRIES.PUSHBUTTON.TEXT
 msgid  "~Delete Entry"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PUSHBUTTON.TEXT
-msgid  "Word Completion"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.TABPAGE.TEXT
-msgid  "Smart Tags"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.CB_SMARTTAGS.CHECKBOX.TEXT
@@ -6275,10 +5743,6 @@ msgstr ""
 msgid  "~Typeface"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE_NOCJK.FIXEDTEXT.TEXT
-msgid  "~Typeface"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM1.STRINGLIST.ITEM
 msgid  "Normal"
 msgstr ""
@@ -6295,27 +5759,7 @@ msgstr ""
 msgid  "Bold italic"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.ITEM1.STRINGLIST.ITEM
-msgid  "Normal"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.ITEM2.STRINGLIST.ITEM
-msgid  "Italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.ITEM3.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.ITEM4.STRINGLIST.ITEM
-msgid  "Bold italic"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE.FIXEDTEXT.TEXT
-msgid  "Size"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE_NOCJK.FIXEDTEXT.TEXT
 msgid  "Size"
 msgstr ""
 
@@ -6331,72 +5775,16 @@ msgstr ""
 msgid  "Asian text font"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_NAME.FIXEDTEXT.TEXT
-msgid  "Font"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_STYLE.FIXEDTEXT.TEXT
 msgid  "T~ypeface"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.ITEM1.STRINGLIST.ITEM
-msgid  "Normal"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.ITEM2.STRINGLIST.ITEM
-msgid  "Italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.ITEM3.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.ITEM4.STRINGLIST.ITEM
-msgid  "Bold italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_SIZE.FIXEDTEXT.TEXT
-msgid  "Size"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_LANG.FIXEDTEXT.TEXT
-msgid  "Language"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_CTL.FIXEDLINE.TEXT
 msgid  "CTL font"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_NAME.FIXEDTEXT.TEXT
-msgid  "Font"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_STYLE.FIXEDTEXT.TEXT
 msgid  "Ty~peface"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.ITEM1.STRINGLIST.ITEM
-msgid  "Normal"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.ITEM2.STRINGLIST.ITEM
-msgid  "Italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.ITEM3.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.ITEM4.STRINGLIST.ITEM
-msgid  "Bold italic"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_SIZE.FIXEDTEXT.TEXT
-msgid  "Size"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_LANG.FIXEDTEXT.TEXT
-msgid  "Language"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.WIN_CHAR_PREVIEW.WINDOW.TEXT
@@ -6417,10 +5805,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_TRANSPARENT.STRING.TEXT
 msgid  "Transparent"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_FONTCOLOR.FIXEDTEXT.TEXT
-msgid  "Font ~color"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EFFECTS.FIXEDTEXT.TEXT
@@ -6452,10 +5836,6 @@ msgid  "~Relief"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-msgid  "(Without)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
 msgid  "Embossed"
 msgstr ""
 
@@ -6483,20 +5863,12 @@ msgstr ""
 msgid  "~Overlining"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_NONE.STRINGLIST.ITEM
-msgid  "(Without)"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_SINGLE.STRINGLIST.ITEM
 msgid  "Single"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.STRINGLIST.ITEM
 msgid  "Double"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLD.STRINGLIST.ITEM
-msgid  "Bold"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
@@ -6559,22 +5931,6 @@ msgstr ""
 msgid  "~Strikethrough"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_NONE.STRINGLIST.ITEM
-msgid  "(Without)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SINGLE.STRINGLIST.ITEM
-msgid  "Single"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_DOUBLE.STRINGLIST.ITEM
-msgid  "Double"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_BOLD.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
 msgid  "With /"
 msgstr ""
@@ -6587,74 +5943,6 @@ msgstr ""
 msgid  "~Underlining"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_NONE.STRINGLIST.ITEM
-msgid  "(Without)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_SINGLE.STRINGLIST.ITEM
-msgid  "Single"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOUBLE.STRINGLIST.ITEM
-msgid  "Double"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLD.STRINGLIST.ITEM
-msgid  "Bold"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-msgid  "Dotted"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
-msgid  "Dotted (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASH.STRINGLIST.ITEM
-msgid  "Dash"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASH.STRINGLIST.ITEM
-msgid  "Dash (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_LONGDASH.STRINGLIST.ITEM
-msgid  "Long Dash"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.STRINGLIST.ITEM
-msgid  "Long Dash (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASHDOT.STRINGLIST.ITEM
-msgid  "Dot Dash"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.STRINGLIST.ITEM
-msgid  "Dot Dash (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.STRINGLIST.ITEM
-msgid  "Dot Dot Dash"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.STRINGLIST.ITEM
-msgid  "Dot Dot Dash (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_WAVE.STRINGLIST.ITEM
-msgid  "Wave"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDWAVE.STRINGLIST.ITEM
-msgid  "Wave (Bold)"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.STRINGLIST.ITEM
-msgid  "Double Wave"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE_COLOR.FIXEDTEXT.TEXT
 msgid  "U~nderline color"
 msgstr ""
@@ -6665,10 +5953,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EMPHASIS.FIXEDTEXT.TEXT
 msgid  "Emp~hasis mark"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-msgid  "(Without)"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
@@ -6699,22 +5983,6 @@ msgstr ""
 msgid  "Below text"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.WIN_EFFECTS_PREVIEW.WINDOW.TEXT
-msgid  "Example"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_CAPITALS.STRING.TEXT
-msgid  "Capitals"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_LOWERCASE.STRING.TEXT
-msgid  "Lowercase"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
 msgid  "Small Capitals"
 msgstr ""
@@ -6731,20 +5999,12 @@ msgstr ""
 msgid  "Blinking"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_CHARNAME_TRANSPARENT.STRING.TEXT
-msgid  "Transparent"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
 msgid  "Position"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 msgid  "Superscript"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_NORMALPOS.RADIOBUTTON.TEXT
-msgid  "Normal"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_LOWPOS.RADIOBUTTON.TEXT
@@ -6815,10 +6075,6 @@ msgstr ""
 msgid  "~Pair kerning"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.WIN_POS_PREVIEW.WINDOW.TEXT
-msgid  "Example"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
 msgid  "Double-lined"
 msgstr ""
@@ -6863,10 +6119,6 @@ msgstr ""
 msgid  "Final charact~er"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_NONE.STRINGLIST.ITEM
-msgid  "(None)"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
 msgid  ")"
 msgstr ""
@@ -6881,14 +6133,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
 msgid  "}"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
-msgid  "Other Characters..."
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.WIN_TWOLINES_PREVIEW.WINDOW.TEXT
-msgid  "Example"
 msgstr ""
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
@@ -7063,14 +6307,6 @@ msgstr ""
 msgid  "Image size"
 msgstr ""
 
-#: tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTH.FIXEDTEXT.TEXT
-msgid  "~Width"
-msgstr ""
-
-#: tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHT.FIXEDTEXT.TEXT
-msgid  "H~eight"
-msgstr ""
-
 #: tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.PB_ORGSIZE.PUSHBUTTON.TEXT
 msgid  "~Original Size"
 msgstr ""
@@ -7173,10 +6409,6 @@ msgstr ""
 
 #: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
 msgid  "Position and Size"
-msgstr ""
-
-#: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TABDIALOG.TEXT
-msgid  "Callouts"
 msgstr ""
 
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
@@ -7387,18 +6619,6 @@ msgstr ""
 msgid  "Selection"
 msgstr ""
 
-#: tabpages/numpages.src#RID_SVXPAGE_PICK_SINGLE_NUM.FL_VALUES.FIXEDLINE.TEXT
-msgid  "Selection"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_PICK_NUM.FL_VALUES.FIXEDLINE.TEXT
-msgid  "Selection"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_PICK_BMP.FL_VALUES.FIXEDLINE.TEXT
-msgid  "Selection"
-msgstr ""
-
 #: tabpages/numpages.src#RID_SVXPAGE_PICK_BMP.CB_LINKED.CHECKBOX.TEXT
 msgid  "~Link graphics"
 msgstr ""
@@ -7563,10 +6783,6 @@ msgstr ""
 msgid  "Character"
 msgstr ""
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_BITMAP.FIXEDTEXT.TEXT
-msgid  "Graphics"
-msgstr ""
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.MB_BITMAP.MN_GRAPHIC_DLG.MENUITEM.TEXT
 msgid  "From file..."
 msgstr ""
@@ -7643,10 +6859,6 @@ msgstr ""
 msgid  "There are no graphics in the 'Bullets' Gallery theme."
 msgstr ""
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LEVEL.FIXEDTEXT.TEXT
-msgid  "Level"
-msgstr ""
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FL_POSITION.FIXEDLINE.TEXT
 msgid  "Position and spacing"
 msgstr ""
@@ -7669,18 +6881,6 @@ msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_ALIGN.FIXEDTEXT.TEXT
 msgid  "N~umbering alignment"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.ITEM1.STRINGLIST.ITEM
-msgid  "Left"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.ITEM2.STRINGLIST.ITEM
-msgid  "Centered"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.ITEM3.STRINGLIST.ITEM
-msgid  "Right"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LABEL_FOLLOWED_BY.FIXEDTEXT.TEXT
@@ -7979,22 +7179,6 @@ msgstr ""
 msgid  "#12 Envelope"
 msgstr ""
 
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A6.ITEMLIST.ITEM
-msgid  "A6"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A5.ITEMLIST.ITEM
-msgid  "A5"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A4.ITEMLIST.ITEM
-msgid  "A4"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A3.ITEMLIST.ITEM
-msgid  "A3"
-msgstr ""
-
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A2.ITEMLIST.ITEM
 msgid  "A2"
 msgstr ""
@@ -8005,82 +7189,6 @@ msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A0.ITEMLIST.ITEM
 msgid  "A0"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B6_ISO.ITEMLIST.ITEM
-msgid  "B6 (ISO)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B5_ISO.ITEMLIST.ITEM
-msgid  "B5 (ISO)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B4_ISO.ITEMLIST.ITEM
-msgid  "B4 (ISO)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_LETTER.ITEMLIST.ITEM
-msgid  "Letter"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_LEGAL.ITEMLIST.ITEM
-msgid  "Legal"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_LEGAL2.ITEMLIST.ITEM
-msgid  "Long Bond"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_TABLOID.ITEMLIST.ITEM
-msgid  "Tabloid"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B6_JIS.ITEMLIST.ITEM
-msgid  "B6 (JIS)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B5_JIS.ITEMLIST.ITEM
-msgid  "B5 (JIS)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_B4_JIS.ITEMLIST.ITEM
-msgid  "B4 (JIS)"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_KAI16.ITEMLIST.ITEM
-msgid  "16 Kai"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_KAI32.ITEMLIST.ITEM
-msgid  "32 Kai"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_KAI32BIG.ITEMLIST.ITEM
-msgid  "Big 32 Kai"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_USER.ITEMLIST.ITEM
-msgid  "User"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DL.ITEMLIST.ITEM
-msgid  "DL Envelope"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C6.ITEMLIST.ITEM
-msgid  "C6 Envelope"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C65.ITEMLIST.ITEM
-msgid  "C6/5 Envelope"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C5.ITEMLIST.ITEM
-msgid  "C5 Envelope"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_C4.ITEMLIST.ITEM
-msgid  "C4 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DIA.ITEMLIST.ITEM
@@ -8219,10 +7327,6 @@ msgstr ""
 msgid  "Centered"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-msgid  "Justified"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 msgid  "~Expand single word"
 msgstr ""
@@ -8291,10 +7395,6 @@ msgstr ""
 msgid  "Hyphenation"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
 msgid  "Breaks"
 msgstr ""
@@ -8353,10 +7453,6 @@ msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_WIDOWS.TRISTATEBOX.TEXT
 msgid  "~Widow control"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_WIDOWS.FIXEDTEXT.TEXT
-msgid  "Lines"
 msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.TABPAGE.TEXT
@@ -8547,10 +7643,6 @@ msgstr ""
 msgid  "~Size"
 msgstr ""
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr ""
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_HORI.FIXEDTEXT.TEXT
 msgid  "Hori~zontal"
 msgstr ""
@@ -8676,10 +7768,6 @@ msgid  "Color"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Gradient"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Hatching"
 msgstr ""
 
@@ -8775,28 +7863,12 @@ msgstr ""
 msgid  "~Color"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FT_TRANSPARENT.FIXEDTEXT.TEXT
-msgid  "~Transparency"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_HATCH.TABPAGE.TEXT
-msgid  "Hatching"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FL_PROP.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_DISTANCE.FIXEDTEXT.TEXT
 msgid  "~Spacing"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_ANGLE.FIXEDTEXT.TEXT
 msgid  "A~ngle"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_HATCH.MTR_FLD_ANGLE.METRICFIELD.CUSTOMUNITTEXT
-msgid  " degrees"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_TYPE.FIXEDTEXT.TEXT
@@ -8843,10 +7915,6 @@ msgstr ""
 msgid  "Bitmap Patterns"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FL_PROP.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_PIXEL_EDIT.FIXEDTEXT.TEXT
 msgid  "Pattern Editor"
 msgstr ""
@@ -8855,28 +7923,8 @@ msgstr ""
 msgid  "~Foreground color"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_BACKGROUND_COLOR.FIXEDTEXT.TEXT
-msgid  "~Background color"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_BITMAPS_HIDDEN.FIXEDTEXT.TEXT
-msgid  "Bitmap"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_MODIFY.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_IMPORT.PUSHBUTTON.TEXT
 msgid  "~Import..."
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
@@ -8891,56 +7939,8 @@ msgstr ""
 msgid  "Gradients"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FL_PROP.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_TYPE.FIXEDTEXT.TEXT
-msgid  "Ty~pe"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Linear"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Axial"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Radial"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Ellipsoid"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Square"
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 msgid  "Rectangular"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_CENTER_X.FIXEDTEXT.TEXT
-msgid  "Center ~X"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_CENTER_Y.FIXEDTEXT.TEXT
-msgid  "Center ~Y"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_ANGLE.FIXEDTEXT.TEXT
-msgid  "A~ngle"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.MTR_ANGLE.METRICFIELD.CUSTOMUNITTEXT
-msgid  " degrees"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_BORDER.FIXEDTEXT.TEXT
-msgid  "~Border"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
@@ -8949,18 +7949,6 @@ msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_TO.FIXEDTEXT.TEXT
 msgid  "~To"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_MODIFY.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
@@ -8973,10 +7961,6 @@ msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.TABPAGE.TEXT
 msgid  "Colors"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.FL_PROP.FIXEDLINE.TEXT
-msgid  "Properties"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.FT_NAME.FIXEDTEXT.TEXT
@@ -9007,10 +7991,6 @@ msgstr ""
 msgid  "~Edit..."
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_MODIFY.PUSHBUTTON.TEXT
 msgid  "~Modify"
 msgstr ""
@@ -9021,34 +8001,6 @@ msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_COLOR.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Save Color List"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.TABDIALOG.TEXT
-msgid  "Area"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Area"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-msgid  "Shadow"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-msgid  "Transparency"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_COLOR.PAGEITEM.TEXT
-msgid  "Colors"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_GRADIENT.PAGEITEM.TEXT
-msgid  "Gradients"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_HATCH.PAGEITEM.TEXT
-msgid  "Hatching"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_BITMAP.PAGEITEM.TEXT
@@ -9239,14 +8191,6 @@ msgstr ""
 msgid  "Dash"
 msgstr ""
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.DEFAULT.STRINGLIST.ITEM
-msgid  "Dot"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.DEFAULT.STRINGLIST.ITEM
-msgid  "Dash"
-msgstr ""
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_NUMBER.FIXEDTEXT.TEXT
 msgid  "~Number"
 msgstr ""
@@ -9331,18 +8275,6 @@ msgstr ""
 msgid  "~Title"
 msgstr ""
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.BTN_MODIFY.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr ""
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Load Arrow Styles"
 msgstr ""
@@ -9352,10 +8284,6 @@ msgid  "Save Arrow Styles"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-msgid  "Line"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE.PAGEITEM.TEXT
 msgid  "Line"
 msgstr ""
 
@@ -9433,10 +8361,6 @@ msgstr ""
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.ST_RIGHTTAB_ASIAN.STRING.TEXT
 msgid  "Righ~t/Bottom"
-msgstr ""
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.ST_FILLCHAR_OTHER.STRING.TEXT
-msgid  "Character"
 msgstr ""
 
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TABPAGE.TEXT
@@ -9531,19 +8455,11 @@ msgstr ""
 msgid  "Text"
 msgstr ""
 
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-msgid  "Text"
-msgstr ""
-
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 msgid  "Text Animation"
 msgstr ""
 
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TABPAGE.TEXT
-msgid  "Text"
-msgstr ""
-
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_TEXT.FIXEDLINE.TEXT
 msgid  "Text"
 msgstr ""
 
@@ -9619,10 +8535,6 @@ msgstr ""
 msgid  "Base point"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CTL_POSRECT.CONTROL.QUICKHELPTEXT
-msgid  "Base point"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
 msgid  "Size"
 msgstr ""
@@ -9635,24 +8547,12 @@ msgstr ""
 msgid  "H~eight"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_SIZEREFERENCE.FIXEDTEXT.TEXT
-msgid  "Base point"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CTL_SIZERECT.CONTROL.QUICKHELPTEXT
-msgid  "Base point"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CBX_SCALE.CHECKBOX.TEXT
 msgid  "~Keep ratio"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
 msgid  "Protect"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_POSPROTECT.TRISTATEBOX.TEXT
-msgid  "Position"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
@@ -9747,14 +8647,6 @@ msgstr ""
 msgid  "Pivot point"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_POS_X.FIXEDTEXT.TEXT
-msgid  "Position ~X"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_POS_Y.FIXEDTEXT.TEXT
-msgid  "Position ~Y"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_POSPRESETS.FIXEDTEXT.TEXT
 msgid  "Default settings"
 msgstr ""
@@ -9773,10 +8665,6 @@ msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.MTR_FLD_ANGLE.METRICFIELD.CUSTOMUNITTEXT
 msgid  " degrees"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_ANGLEPRESETS.FIXEDTEXT.TEXT
-msgid  "Default settings"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.CTL_ANGLE.CONTROL.QUICKHELPTEXT
@@ -9799,26 +8687,6 @@ msgstr ""
 msgid  "Slant"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_ANGLE.FIXEDTEXT.TEXT
-msgid  "~Angle"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.MTR_FLD_ANGLE.METRICFIELD.CUSTOMUNITTEXT
-msgid  " degrees"
-msgstr ""
-
-#: tabpages/transfrm.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-msgid  "Position and Size"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TABDIALOG.TEXT
-msgid  "Position and Size"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TAB_CONTROL.RID_SVXPAGE_ANGLE.PAGEITEM.TEXT
 msgid  "Rotation"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TAB_CONTROL.RID_SVXPAGE_SLANT.PAGEITEM.TEXT
-msgid  "Slant & Corner Radius"
 msgstr ""

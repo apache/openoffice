@@ -47,10 +47,6 @@ msgstr ""
 msgid  "OR"
 msgstr ""
 
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_XOR.STRING.TEXT
-msgid  "XOR"
-msgstr ""
-
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOT.STRING.TEXT
 msgid  "NOT"
 msgstr ""
@@ -161,22 +157,6 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COT_HYP.STRING.TEXT
 msgid  "ACOTH"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.STRING.TEXT
-msgid  "CSC"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.STRING.TEXT
-msgid  "SEC"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.STRING.TEXT
-msgid  "CSCH"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.STRING.TEXT
-msgid  "SECH"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.STRING.TEXT
@@ -787,22 +767,6 @@ msgstr ""
 msgid  "SUMIF"
 msgstr ""
 
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IF.STRING.TEXT
-msgid  "AVERAGEIF"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IFS.STRING.TEXT
-msgid  "SUMIFS"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IFS.STRING.TEXT
-msgid  "AVERAGEIFS"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_IFS.STRING.TEXT
-msgid  "COUNTIFS"
-msgstr ""
-
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOOKUP.STRING.TEXT
 msgid  "LOOKUP"
 msgstr ""
@@ -865,22 +829,6 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MID.STRING.TEXT
 msgid  "MID"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LENB.STRING.TEXT
-msgid  "LENB"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHTB.STRING.TEXT
-msgid  "RIGHTB"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFTB.STRING.TEXT
-msgid  "LEFTB"
-msgstr ""
-
-#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIDB.STRING.TEXT
-msgid  "MIDB"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TEXT.STRING.TEXT
@@ -1245,140 +1193,92 @@ msgstr ""
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 msgid  "Last Used"
-msgstr ""
+msgstr "རྒྱུན་སྤྱོད་རྟེན་གྲངས།"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 msgid  "All"
-msgstr ""
+msgstr "ཚང་མ།"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.FT_CATEGORY.FIXEDTEXT.TEXT
 msgid  "~Category"
-msgstr ""
+msgstr "རིགས།(~C)"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.FT_FUNCTION.FIXEDTEXT.TEXT
 msgid  "~Function"
-msgstr ""
+msgstr "རྟེན་གྲངས།(~F)"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_STRUCT.FT_STRUCT.FIXEDTEXT.TEXT
 msgid  "~Structure"
-msgstr ""
+msgstr "གྲུབ་ཚུལ།(~S)"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_STRUCT.STR_STRUCT_ERR1.STRING.TEXT
 msgid  "=?"
-msgstr ""
+msgstr "=?"
 
 #: ui/dlg/formdlgs.src#RID_FORMULATAB_STRUCT.STR_STRUCT_ERR2.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "ནོར་འཁྲུལ།"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.TC_FUNCTION.TP_FUNCTION.PAGEITEM.TEXT
 msgid  "Functions"
-msgstr ""
+msgstr "རྟེན་གྲངས།"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.TC_FUNCTION.TP_STRUCT.PAGEITEM.TEXT
 msgid  "Structure"
-msgstr ""
+msgstr "གྲུབ་ཚུལ།"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA.FIXEDTEXT.TEXT
 msgid  "For~mula"
-msgstr ""
+msgstr "སྤྱི་འགྲོས།(~M)"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_RESULT.FIXEDTEXT.TEXT
 msgid  "Function result"
-msgstr ""
+msgstr "函数计算结果"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA_RESULT.FIXEDTEXT.TEXT
 msgid  "Result"
-msgstr ""
+msgstr "མཇུག་འབྲས།"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_MATRIX.CHECKBOX.TEXT
 msgid  "Array"
-msgstr ""
+msgstr "ལིང་ཚེ།"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.RB_REF.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Maximize"
-msgstr ""
+msgstr "ཆེ་རུ་གཏོང་བ།"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_BACKWARD.PUSHBUTTON.TEXT
 msgid  "<< ~Back"
-msgstr ""
+msgstr "<< ཕྱིར་ལོག(~B)"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_FORWARD.PUSHBUTTON.TEXT
 msgid  "~Next >>"
-msgstr ""
+msgstr "མུ་མཐུད།(~N) >>"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE1.STRING.TEXT
 msgid  "Function Wizard"
-msgstr ""
+msgstr "ཚབ་རྩིས་ཁྲིད་སྟོན།"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE2.STRING.TEXT
 msgid  "Function Wizard  -"
-msgstr ""
+msgstr "ཚབ་རྩིས་ཁྲིད་སྟོན།  -"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_END.STRING.TEXT
 msgid  "~End"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.TC_FUNCTION.TP_FUNCTION.PAGEITEM.TEXT
-msgid  "Functions"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.TC_FUNCTION.TP_STRUCT.PAGEITEM.TEXT
-msgid  "Structure"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.FT_FORMULA.FIXEDTEXT.TEXT
-msgid  "For~mula"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.FT_RESULT.FIXEDTEXT.TEXT
-msgid  "Function result"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.FT_FORMULA_RESULT.FIXEDTEXT.TEXT
-msgid  "Result"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.BTN_MATRIX.CHECKBOX.TEXT
-msgid  "Array"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.RB_REF.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Maximize"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.BTN_BACKWARD.PUSHBUTTON.TEXT
-msgid  "<< ~Back"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.BTN_FORWARD.PUSHBUTTON.TEXT
-msgid  "~Next >>"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.STR_TITLE1.STRING.TEXT
-msgid  "Function Wizard"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.STR_TITLE2.STRING.TEXT
-msgid  "Function Wizard  -"
-msgstr ""
-
-#: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.STR_END.STRING.TEXT
-msgid  "~End"
-msgstr ""
+msgstr "ཕྱིར་ཐོན།(~E)"
 
 #: ui/dlg/parawin.src#RB_ARGBLOCK(_Y_).#DEFINE.QUICKHELPTEXT
 msgid  "Select"
-msgstr ""
+msgstr "འདེམས་པ།"
 
 #: ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.FT_EDITDESC.FIXEDTEXT.TEXT
 msgid  "Function not known"
-msgstr ""
+msgstr "མི་གསལ་བའི་རྟེན་གྲངས།"
 
 #: ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.STR_OPTIONAL.STRING.TEXT
 msgid  "(optional)"
-msgstr ""
+msgstr "(འདེམས་རུང་བའི།)"
 
 #: ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.STR_REQUIRED.STRING.TEXT
 msgid  "(required)"
-msgstr ""
+msgstr "（必须输入）"

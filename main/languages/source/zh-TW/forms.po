@@ -33,240 +33,240 @@ msgstr ""
 
 #: resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.STRING.TEXT
 msgid  "The contents of a combo box or list field could not be determined."
-msgstr ""
+msgstr "無法從資料庫內測定組合方塊或清單方塊的內容。"
 
 #: resource/strings.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
 msgid  "Insert graphics"
-msgstr ""
+msgstr "插入圖形"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.STRING.TEXT
 msgid  "substituted"
-msgstr ""
+msgstr "替代"
 
 #: resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.STRING.TEXT
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "載入這個控制項時發生一個錯誤。但已經用一個萬用字元替代它。"
 
 #: resource/strings.src#RID_STR_READERROR.STRING.TEXT
 msgid  "Error reading data from database"
-msgstr ""
+msgstr "在讀取資料庫時發生錯誤"
 
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
-msgstr ""
+msgstr "連線失敗"
 
 #: resource/strings.src#RID_ERR_LOADING_FORM.STRING.TEXT
 msgid  "The data content could not be loaded."
-msgstr ""
+msgstr "無法載入資料內容。"
 
 #: resource/strings.src#RID_ERR_REFRESHING_FORM.STRING.TEXT
 msgid  "The data content could not be updated"
-msgstr ""
+msgstr "無法更新資料內容。"
 
 #: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
 msgid  "Error inserting the new record"
-msgstr ""
+msgstr "在插入新資料條目時發生錯誤"
 
 #: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
 msgid  "Error updating the current record"
-msgstr ""
+msgstr "在寫入資料條目時發生錯誤"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
 msgid  "Error deleting the current record"
-msgstr ""
+msgstr "在刪除資料條目時發生錯誤"
 
 #: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
 msgid  "Error deleting the specified records"
-msgstr ""
+msgstr "在刪除指定資料條目時發生錯誤"
 
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
-msgstr ""
+msgstr "這個物件不可以是 NULL。"
 
 #: resource/strings.src#RID_STR_OPEN_GRAPHICS.STRING.TEXT
 msgid  "Insert graphics from..."
-msgstr ""
+msgstr "插入圖形從..."
 
 #: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
 msgid  "Remove graphics"
-msgstr ""
+msgstr "刪除圖形"
 
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
-msgstr ""
+msgstr "提供的資料流無效。"
 
 #: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
 msgid  "Syntax error in query expression"
-msgstr ""
+msgstr "在分解查詢語句時發生一個錯誤。"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "連結支援的值類型不可用於與此控制交換資料。"
 
 #: resource/strings.src#RID_STR_LABEL_RECORD.STRING.TEXT
 msgid  "Record"
-msgstr ""
+msgstr "記錄"
 
 #: resource/strings.src#RID_STR_INVALID_VALIDATOR.STRING.TEXT
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "控制連線至外部值連線，同時作為驗證程式。您需要先撤銷值連結，然後才能夠設定新的驗證程式。"
 
 #: resource/strings.src#RID_STR_LABEL_OF.STRING.TEXT
 msgid  "of"
-msgstr ""
+msgstr "的"
 
 #: resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.STRING.TEXT
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "表單內容已變更。\n要儲存這些變更？"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.STRING.TEXT
 msgid  "Error setting the sort criteria"
-msgstr ""
+msgstr "設定排序條件時發生錯誤"
 
 #: resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.STRING.TEXT
 msgid  "Error setting the filter criteria"
-msgstr ""
+msgstr "設定篩選條件時發生錯誤"
 
 #: resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.STRING.TEXT
 msgid  "To execute this function, parameters are needed."
-msgstr ""
+msgstr "若要執行此函數，需提供參數。"
 
 #: resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.STRING.TEXT
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "無法執行此函數，但僅可用於狀態查詢。"
 
 #: resource/strings.src#RID_STR_FEATURE_UNKNOWN.STRING.TEXT
 msgid  "Unknown function."
-msgstr ""
+msgstr "不明函數。"
 
 #: resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.STRING.TEXT
 msgid  "Please enter a binding expression."
-msgstr ""
+msgstr "請輸入連結表示式。"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.STRING.TEXT
 msgid  "This is an invalid binding expression."
-msgstr ""
+msgstr "這是無效的連結表示式。"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.STRING.TEXT
 msgid  "Value is invalid."
-msgstr ""
+msgstr "無效的值。"
 
 #: resource/xforms.src#RID_STR_XFORMS_REQUIRED.STRING.TEXT
 msgid  "A value is required."
-msgstr ""
+msgstr "必須輸入值。"
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.STRING.TEXT
 msgid  "The constraint '$1' not validated."
-msgstr ""
+msgstr "未驗證限制「$1」。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.STRING.TEXT
 msgid  "The value is not of the type '$2'."
-msgstr ""
+msgstr "這不是類型「$2」的值。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.STRING.TEXT
 msgid  "The value must be smaller than or equal to $2."
-msgstr ""
+msgstr "此值必須小於或等於 $2。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.STRING.TEXT
 msgid  "The value must be smaller than $2."
-msgstr ""
+msgstr "此值必須小於 $2。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.STRING.TEXT
 msgid  "The value must be greater than or equal to $2."
-msgstr ""
+msgstr "此值必須大於或等於 $2。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.STRING.TEXT
 msgid  "The value must be greater than $2."
-msgstr ""
+msgstr "此值必須大於 $2。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.STRING.TEXT
 msgid  "The value does not match the pattern '$2'."
-msgstr ""
+msgstr "此值與樣式「$2」不符。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.STRING.TEXT
 msgid  "$2 digits allowed at most."
-msgstr ""
+msgstr "最多允許 $2 位數。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.STRING.TEXT
 msgid  "$2 fraction digits allowed at most."
-msgstr ""
+msgstr "最多允許 $2 位數分數。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.STRING.TEXT
 msgid  "The string must be $2 characters long."
-msgstr ""
+msgstr "此字串必須是 $2 字元長。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.STRING.TEXT
 msgid  "The string must be at least $2 characters long."
-msgstr ""
+msgstr "此字串至少必須是 $2 字元長。"
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.STRING.TEXT
 msgid  "The string can only be $2 characters long at most."
-msgstr ""
+msgstr "此字串最多只能有 $2 個字元。"
 
 #: resource/xforms.src#RID_STR_DATATYPE_STRING.STRING.TEXT
 msgid  "String"
-msgstr ""
+msgstr "字串"
 
 #: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
 msgid  "Hyperlink"
-msgstr ""
+msgstr "超連結"
 
 #: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
 msgid  "True/False (Boolean)"
-msgstr ""
+msgstr "True/False (布林植)"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
 msgid  "Decimal"
-msgstr ""
+msgstr "小數"
 
 #: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
 msgid  "Floating point"
-msgstr ""
+msgstr "浮動點"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
-msgstr ""
+msgstr "雙線"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "日期"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
-msgstr ""
+msgstr "時間"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DATETIME.STRING.TEXT
 msgid  "Date and Time"
-msgstr ""
+msgstr "日期與時間"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.STRING.TEXT
 msgid  "Month and year"
-msgstr ""
+msgstr "月和年"
 
 #: resource/xforms.src#RID_STR_DATATYPE_YEAR.STRING.TEXT
 msgid  "Year"
-msgstr ""
+msgstr "年"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
 msgid  "Month and day"
-msgstr ""
+msgstr "月和日"
 
 #: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
 msgid  "Month"
-msgstr ""
+msgstr "月"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
 msgid  "Day"
-msgstr ""
+msgstr "日"
 
 #: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
 msgid  "Error during evaluation"
-msgstr ""
+msgstr "評估時發生錯誤"
 
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr ""
+msgstr "字串「$1」與要求的常規表示式「$2」不相符。"
 
 #: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
 msgid  "Binding"
-msgstr ""
+msgstr "連結"
