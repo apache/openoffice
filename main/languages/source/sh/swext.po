@@ -35,22 +35,517 @@ msgstr ""
 msgid  "MediaWiki"
 msgstr "Medija Viki"
 
+#: ../mediawiki/help/wikiaccount.xhp#PAR_ID4571672
+msgid  "Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr "Koristite Medija Viki prozorče za dodavanje i uređivanje svog Medija Viki naloga."
+
+#: ../mediawiki/help/wikiaccount.xhp#PAR_ID7631458
+msgid  "<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, starting with http://</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Unesite adresu Medija Viki servera koja počinje sa http://</ahelp>"
+
+#: ../mediawiki/help/wikiaccount.xhp#PAR_ID7862483
+msgid  "<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki server. Leave empty for anonymous access.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Unesite korisničko ime za Medija Viki server. Ostavite prazno za anoniman pristup.</ahelp>"
+
+#: ../mediawiki/help/wikiaccount.xhp#PAR_ID1113010
+msgid  "<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki server. Leave empty for anonymous access.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Unesite lozinku za Medija Viki server. Ostavite prazno za anoniman pristup.</ahelp>"
+
+#: ../mediawiki/help/wikiaccount.xhp#PAR_ID656758
+msgid  "<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between sessions. The master password must be enabled, see <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Omogućite da biste sačuvali lozinku između sesija. Najpre morate uneti glavnu lozinku, pogledajte <item type=\"menuitem\">Alatke - Podešavanja - %PRODUCTNAME - Sigurnost</item>.</ahelp>"
+
+#: ../mediawiki/help/wikiaccount.xhp#PAR_ID3112582
+msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr "Unesite Internet adresu Viki servera u formatu kao što je http://wiki.services.openoffice.org/wiki ili kopirajte adresu iz veb preglednika."
+
+#: ../mediawiki/help/wikiaccount.xhp#PAR_ID628070
+msgid  "If the Wiki allows anonymous access, you can leave the account text boxes empty. Else enter your user name and password."
+msgstr "Ukoliko Viki dozvoljava anoniman pristup, možete ostaviti prazne podatke o nalogu. U suprotnom, unesite svoje korisničko ime i lozinku."
+
+#: ../mediawiki/help/wikiaccount.xhp#PAR_ID9046601
+msgid  "If you have enabled the master password feature on the Security tab page of the Tools - Options - %PRODUCTNAME dialog, then the software can store your password and automatically insert the data where necessary. Enable the \"Save password\" checkbox to store your password."
+msgstr "Ukoliko je glavna lozinka uključena u prozorčetu „Alatke - Podešavanja - %PRODUCTNAME - Sigurnost“, program može sačuvati vašu lozinku i sam je uneti gde je potrebno. Uključite „Sačuvaj lozinku“ za pamćenje vaše lozinke."
+
 #: ../mediawiki/help/wikiformats.xhp#TIT
 #, fuzzy
 msgid  "MediaWiki Formats"
 msgstr "Medija Viki formati"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID8654133
+msgid  "The following list gives an overview of the text formats that the @WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr "Oblikovanja teksta koje @WIKIEXTENSIONPRODUCTNAME@ može da otpremi na Viki server su navedena u sledećem spisku."
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID5630664
+msgid  "The OpenDocument format used by Writer and the WikiMedia format are quite different. Only a subset of all features can be transformed from one format to the other."
+msgstr "Viki Medija format i otvoreni dokument-format koje koristi Pisac su prilično različiti. Samo deo opcija može biti preveden iz jednog formata u drugi."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID7178868
+msgid  "Headings"
+msgstr "Zaglavlja"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID508133
+msgid  "Apply a heading paragraph style to the headings in your Writer document. The Wiki will show the heading styles of the same outline level, formatted as defined by the Wiki engine."
+msgstr "Primenite stil pasusa za zaglavlje u zaglavlju Piščevog dokumenta. Viki će prikazati stil zaglavlja istog nivoa, onako kako je podešeno u Vikiju."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID7217627
+msgid  "Hyperlinks"
+msgstr "Hiperveze"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID3735465
+msgid  "Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. Therefore, the built-in linking facility of OpenDocument should only be used to create links that point to other sites outside the Wiki web. For creating Wiki links that point to other subjects of the same Wiki domain, use Wiki links."
+msgstr "Izvorne veze u otvorenom dokument-formatu (ODF) se prevode u „spoljne“ veze na vikiju. Zbog toga koristite veze u ODF-u samo za veze koje vode do stranica van vikija. Za izradu viki veza koje vode na druge članke unutar istog viki domena, koristite viki veze."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID941190
+msgid  "Lists"
+msgstr "Liste"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID8942838
+msgid  "Lists can reliably be exported when the whole list uses a consistent list style. Use the Numbering or Bullets icon to generate a list in Writer. If you need a list without numbering or bullets, use Format - Bullets and Numbering to define and apply the respective list style."
+msgstr "Liste mogu biti pravilno izvezene kada cela lista koristi dosledan stil. Koristite ikonicu za nabrajanje i numerisanje u Piscu za izradu spiska ili liste. Ukoliko vam je potrebna lista bez nabrajanja, koristite „Format - Numerisanje i nabrajanje“ kako biste izabrali željeni stil."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID7026886
+msgid  "Paragraphs"
+msgstr "Pasusi"
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID4436475
+msgid  "Alignment"
+msgstr "Poravnanje"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID376598
+msgid  "Explicit text alignment should not be used in Wiki articles. Nevertheless, text alignment is supported for left, centered, and right alignment of text."
+msgstr "Zadato poravnanje teksta nije poželjno u Viki člancima. Ipak, levo, centrirano i desno poravnanje teksta je podržano."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID7486190
+msgid  "Pre-formatted text"
+msgstr "Preformatirani tekst"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID1459395
+msgid  "A paragraph style with a fixed-width font is transformed as pre-formatted text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr "Stil pasusa sa zadatom širinom fonta se prevodi u preformatirani tekst. Preformatirani tekst se prikazuje na Vikiju sa ivicom oko teksta."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID4834131
+msgid  "Character styles"
+msgstr "Stil znakova"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID6397595
+msgid  "Character styles modify the appearance of parts of a paragraph. The transformation supports bold, italics, bold/italics, subscript and superscript. All fixed width fonts are transformed into the Wiki typewriter style."
+msgstr "Stil znakova menja izgled delova pasusa. Podržan je podebljan tekst, kurziv, podebljani kurziv, tekst u eksponentu i tekst u indeksu. Sve zadate širine fontova se prevode u Viki stil."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID5152745
+msgid  "Footnotes"
+msgstr "Fusnote"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID5238196
+msgid  "Note: The transformation uses the new style of footnotes with <ref> and <references> tags that requires the Cite.php extension to be installed into MediaWiki. If those tags occur as plain text in the transformation result, ask the Wiki administrator to install this extension."
+msgstr "Primedba: Prevođenje koristi novi stil fusnota sa oznakama <ref> i <references> koje zahtevaju da  na Medija Viki bude instalirano proširenje Cite.php. Ukoliko se ove oznake pojave kao običan tekst u prevedenom rezultatu, zahtevajte od administratora Viki stranice da instalira proširenje."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID9405499
+msgid  "Images"
+msgstr "Slike"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID3541673
+msgid  "Images cannot be exported by a transformation producing a single file of Wiki text. However, if the image is already uploaded to the target Wiki domain (e. g. WikiMedia Commons), then the transformation produces a valid image tag that includes the image. Image captions are also supported."
+msgstr "Slike se ne mogu izvesti transformacijom u datoteku Viki teksta. Međutim, ukoliko je slika već otpremljena na ciljni Viki domen (npr. WikiMedia Commons) biće napravljena ispravna oznaka za uključivanje slike. Naslovi slika su takođe podržani."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID2162236
+msgid  "Tables"
+msgstr "Tabele"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID3037202
+msgid  "Simple tables are supported well. Table headers are translated into corresponding Wiki style table headers. However, custom formatting of table borders, column sizes and background colors is ignored."
+msgstr "Jednostavne tabele su dobro podržane. Zaglavlja tabele se prevode u odgovarajući Viki stil zaglavlja. Međutim, proizvoljno formatirane ivice tabela, veličina kolona i boja pozadine će biti zanemarene."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID2954496
+msgid  "Joined Cells"
+msgstr "Spojene ćelije"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID8253730
+msgid  "OpenDocument and especially OpenOffice.org represent tables that have joined cells that span rows as tables with nested tables. In contrast, the wiki model of table is to declare column and row spans for such joined cells. "
+msgstr "Otvoreni dokument format (ODF), a pre svega OpenOffice.org, predstavlja tabele sa spojenim ćelijama kao tabele sa ugneždenim tabelama. S druge strane, Viki definiše spajanje kolona i redova za takve ćelije."
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID8163090
+msgid  "If only columns of the same row are joined, the result of the transformation resembles the source document very well."
+msgstr "Ukoliko su spojene samo kolone istog reda, rezultat prevođenja će biti sličan izvornom dokumentu."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID425122
+msgid  "Borders"
+msgstr "Ivice"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID1831110
+msgid  "Irrespective of custom table styles for border and background, a table is always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki engine with simple borders and bold header."
+msgstr "Zanemarujući prilagođene stilove tabele za granice i pozadinu tabele, ona se uvek izvozi kao „<emph>lepa tabela</emph>“, što se u Vikiju prikazuje kao tabela sa jednostavnim ivicama i podebljanim zaglavljem."
+
+#: ../mediawiki/help/wikiformats.xhp#HD_ID6255073
+msgid  "Charset and special characters"
+msgstr "Kodiranje i posebni znaci"
+
+#: ../mediawiki/help/wikiformats.xhp#PAR_ID8216193
+msgid  "The charset of the transformation result is fixed to UTF-8. Depending on your system, this might not be the default charset. This might cause \"special characters\" to look broken when viewed with default settings. However, you can switch your editor to UTF-8 encoding to fix this. If your editor does not support switching the encoding, you can display the result of the transformation in the Firefox browser and switch the encoding to UTF-8 there. Now, you can cut and paste the transformation result to your program of choice."
+msgstr "Znaci prevedenog rezultata su zadati kao UTF-8. U zavisnosti od vašeg sistema, ovo ne mora biti podrazumevano kodiranje, pa „posebni znaci“ mogu izgledati drugačije. U uređivaču teksta možete prebaciti kodiranje na UTF-8. Ukoliko uređivač ne podržava promenu kodiranja, možete otvoriti rezultat transformacije u Fajerfoks pregledniku i odatle prebaciti kodiranje na UTF-8. Tada u željeni program možete ubaciti rezultat transformacije."
 
 #: ../mediawiki/help/wikisend.xhp#TIT
 #, fuzzy
 msgid  "Send to MediaWiki"
 msgstr "Pošalji na Medija Viki"
 
+#: ../mediawiki/help/wikisend.xhp#PAR_ID1743827
+msgid  "In the Send to MediaWiki dialog, specify the settings for your current Wiki upload."
+msgstr "U prozorčetu za slanje na Medija Viki odredite podešavanja za otpremanje na ciljni Viki."
+
+#: ../mediawiki/help/wikisend.xhp#PAR_ID664082
+msgid  "<ahelp hid=\".\">Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.</ahelp>"
+msgstr "<ahelp hid=\".\">Izaberite Medija Viki server za objavljivanje dokumenta. Kliknite \"Dodaj\" za dodavanje novog servera na listu.</ahelp>"
+
+#: ../mediawiki/help/wikisend.xhp#PAR_ID2794885
+msgid  "<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.</ahelp>"
+msgstr "<ahelp hid=\".\">Navedite naslov za unos u Viki. Ovo je osnovno zaglavlje unosa. Za novi unos morate uneti jedinstven naslov na  Vikiju. Ukoliko unesete postojeći naslov unos u Vikiju će biti zamenjen.</ahelp>"
+
+#: ../mediawiki/help/wikisend.xhp#PAR_ID2486342
+msgid  "<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
+msgstr "<ahelp hid=\".\">Opciono unesite sažetak ili komentar.</ahelp> Pogledajte <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link>."
+
+#: ../mediawiki/help/wikisend.xhp#PAR_ID823999
+msgid  "<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.</ahelp>"
+msgstr "<emph>Ovo je mala izmena</emph>: <ahelp hid=\".\">Aktivirajte ovo kako biste označili da je otpremljena stranica mala izmena već postojećeg teksta sa istim naslovom.</ahelp>"
+
+#: ../mediawiki/help/wikisend.xhp#PAR_ID6592913
+msgid  "<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr "<emph>Prikaži u veb pregledniku</emph>: <ahelp hid=\".\">Aktivirajte za otvaranje sistemskog veb preglednika koji će prikazati otpremljenu Viki stranicu.</ahelp>"
+
 #: ../mediawiki/help/wikisettings.xhp#TIT
 #, fuzzy
 msgid  "MediaWiki Options"
 msgstr "Opcije za Medija Viki"
 
-#: ../mediawiki/help/wiki.xhp#PAR_ID265511
-#, fuzzy
-msgid  "Restart the software, open a text document, then choose <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
+#: ../mediawiki/help/wikisettings.xhp#PAR_ID1188390
+msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. Alternatively, choose <item type=\"menuitem\">Tools - Extension Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
+msgstr "Možete dodati, urediti i ukloniti Medija Viki servere. Otvorite prozorče iz <item type=\"menuitem\">Alatke - Podešavanja - Internet - Medija Viki</item>. Možete otvoriti i <item type=\"menuitem\">Alatke - Upravnik paketa</item>, izabrati @WIKIEXTENSIONPRODUCTNAME@ i kliknuti na dugme „Opcije“."
+
+#: ../mediawiki/help/wikisettings.xhp#PAR_ID300607
+msgid  "<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and click Edit to edit the account settings.<br/>Select an entry and click Remove to remove the entry from the list.</ahelp>"
+msgstr "<ahelp hid=\".\">Kliknite na „Dodaj“ za dodavanje novog Viki servera.<br/>Izaberite unos i kliknite „Uredi“ za izmenu podataka o nalogu.<br/>Izabetire unos i kliknite „Ukloni“ za uklanjanje unosa iz liste.</ahelp>"
+
+#: ../mediawiki/help/wikisettings.xhp#PAR_ID9786065
+msgid  "<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new entry to the list.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Otvara Medija Viki prozorče za dodavanje novog unosa u listu.</ahelp>"
+
+#: ../mediawiki/help/wikisettings.xhp#PAR_ID3386333
+msgid  "<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the selected entry.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Otvara Medija Viki prozorče za uređivanje izabranog unosa.</ahelp>"
+
+#: ../mediawiki/help/wikisettings.xhp#PAR_ID7285073
+msgid  "<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the list.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Uklanja izabrani unos iz liste.</ahelp>"
+
+#: ../mediawiki/help/wikisettings.xhp#PAR_ID1029084
+msgid  "When you click Add or Edit, the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr "Kada kliknete na „Dodaj“ ili „Uredi“, otvara se <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">Medija Viki</link> prozorče."
+
+#: ../mediawiki/help/wiki.xhp#TIT
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: ../mediawiki/help/wiki.xhp#BM_ID3154408
+msgid  "<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
+msgstr "<bookmark_value>Viki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>paketi;Medija Viki</bookmark_value>"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID9647511
+msgid  "<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.</ahelp>"
+msgstr "<ahelp hid=\".\">Koristeći @WIKIEXTENSIONPRODUCTNAME@ možete otpremiti tekst iz Pisca na Medija Viki server tako da svi korisnici mogu da pročitaju vaš dokument na Vikiju.</ahelp>"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID6468703
+msgid  "<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To MediaWiki</item> to upload the current Writer document to a MediaWiki server.</ahelp>"
+msgstr "<ahelp hid=\".\">Izaberite <item type=\"menuitem\">Datoteka - Pošalji - Na Medija Viki</item> kako biste otpremili trenutni dokument na Medija Viki server.</ahelp>"
+
+#: ../mediawiki/help/wiki.xhp#HD_ID4554582
+msgid  "System Requirements"
+msgstr "Sistemski zahtevi"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID2597430
+msgid  "StarOffice/StarSuite 9"
+msgstr "StarOffice ili StarSuite 9"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID8430738
+msgid  "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID9340495
+msgid  "Java Runtime Environment 1.4"
+msgstr "Javino radno okruženje 1.4"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID7387615
+msgid  "A Wiki account on a supported <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr "Viki nalog na podržanom <link href=\"http://www.mediawiki.org/wiki/MediaWiki\">Medija Viki</link> serveru"
+
+#: ../mediawiki/help/wiki.xhp#HD_ID8047120
+msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Instaliram @WIKIEXTENSIONPRODUCTNAME@"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID4277169
+msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr "Pre nego što instalirate @WIKIEXTENSIONPRODUCTNAME@, proverite da li %PRODUCTNAME koristi Java radno okruženje (JRE). Za proveru stanja Java radnog okruženja izaberite <item type=\"menuitem\">Alatke - Podešavanja - %PRODUCTNAME - Java</item>. Proverite da li je uključeno „Koristi Javino radno okruženje“ i da li je Javin radni direktorijum izabran u priloženom polju. Ukoliko radno okruženje nije aktivno, uključite JRE 1.4 ili novije izdanje i ponovo pokrenite %PRODUCTNAME."
+
+#: ../mediawiki/help/wiki.xhp#HD_ID567339
+msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Kako biste instalirali @WIKIEXTENSIONPRODUCTNAME@"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID1732230
+msgid  "In a Writer window, choose <item type=\"menuitem\">Tools - Extension Manager</item>."
 msgstr "U prozoru Pisca izaberite <item type=\"menuitem\">Alatke - Upravnik paketa</item>."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID4338511
+msgid  "In the Extension Manager dialog, click Add."
+msgstr "U prozorčetu upravnika paketa izaberite „Dodaj“."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID5882442
+msgid  "Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click Close. "
+msgstr "Nađite @WIKIEXTENSIONFILENAME@.oxt datoteku, kliknite „Otvori“, a zatim „Zatvori“. "
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID4008911
+msgid  "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "Zatvorite %PRODUCTNAME, kao i brzi pokretač, ukoliko je uključen."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID265511
+msgid  "Restart the software, open a text document, then choose <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr "Ponovo pokrenite program, otvorite tekstualni dokument i izaberite <item type=\"menuitem\">Alatke - Opcije - Internet - Medija Viki</item> za podešavanje Vikija. Pogledajte dole „Za povezivanje na Viki“."
+
+#: ../mediawiki/help/wiki.xhp#HD_ID3569444
+msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Za uklanjanje @WIKIEXTENSIONPRODUCTNAME@"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID9504379
+msgid  "Click the plus sign (+) in front of My Extensions."
+msgstr "Kliknite na plus (+) ispred Moji paketi."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID8431348
+msgid  "Select the extension, click Remove, and then click Close."
+msgstr "Izaberite paket, kliknite „Ukloni“. a zatim „Zatvori“."
+
+#: ../mediawiki/help/wiki.xhp#HD_ID5316019
+msgid  "To Connect to a Wiki"
+msgstr "Za povezivanje na Viki"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID2381969
+msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>."
+msgstr "Primedba: Možete sačuvati svoje korisničko ime i lozinku zasebno za sve %PRODUCTNAME prozorčiće. Lozinka se čuva na siguran način i njoj se pristupa glavnom lozinkom. Za omogućavanje glavne lozinke izaberite <item type=\"menuitem\">Alatke - Podešavanja - %PRODUCTNAME - Sigurnost</item>."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID3751640
+msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to <item type=\"menuitem\">Tools - Options - Internet - Proxy</item>, and restart the software."
+msgstr "Primedba: Ukoliko se povezujete na mrežu kroz posrednički server, unesite podatke o posredniku u <item type=\"menuitem\">Alatke - Podešavanja - Interent - Posrednik</item> i ponovo pokrenite program."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID9533677
+msgid  "Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>."
+msgstr "Otvorite dokument Pisca i izaberite <item type=\"menuitem\">Alatke - Podešavanja - Internet - Medija Viki</item>."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID368968
+msgid  "In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> dialog, click Add."
+msgstr "U prozorčetu <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Opcije</link> kliknite na Dodaj."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID6962187
+msgid  "In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog, enter the account information for the Wiki."
+msgstr "U prozorčetu <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">Medija Viki</link> unesite podatke o Viki nalogu."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID5328836
+msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "U polju za adresu unesite adresu Vikija na koji želite da se povežete."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID389416
+msgid  "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "Možete kopirati adresu iz Internet preglednika i ubaciti je u tekstualno polje."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID5906552
+msgid  "In the Username box, enter your user ID for your Wiki account."
+msgstr "U polju Korisničko ime unesite korisničko ime Viki naloga."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID9297158
+msgid  "If the Wiki allows anonymous write access, you can leave the Username and Password boxes empty."
+msgstr "Ukoliko Viki dozvoljava anonimni pristup za upis, polja „Korisničko ime“ i „Lozinka“ možete ostaviti prazna."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID8869594
+msgid  "In the Password box, enter the password for your Wiki account, then click OK."
+msgstr "U polju „Lozinka“ unesite lozinku Viki naloga i kliknite „U redu“."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID292062
+msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
+msgstr "Opciono uključite „Sačuvaj lozinku“ ukoliko želite pamćenje lozinke između sesija. Glavna lozinka se upotrebljava za pristup svim sačuvanim lozinkama. U meniju <item type=\"menuitem\">Alatke - Podešavanja - %PRODUCTNAME - Sigurnost</item> omogućite glavnu lozinku. Stavku „Sačuvaj lozinku“ je moguće aktivirati tek po postavljanju glavne lozinke."
+
+#: ../mediawiki/help/wiki.xhp#HD_ID7044892
+msgid  "To Create a New Wiki Page"
+msgstr "Izrada nove viki stranice"
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID3514206
+msgid  "Open a Writer document."
+msgstr "Otvori dokument Pisca."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID944853
+msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr "Napišite sadržaj Viki stranice. Možete koristiti formatiranja kao što su oblik teksta, zaglavlja, fusnote i drugo. Pogledajte <link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">spisak podržanih formata</link>."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID4566484
+msgid  "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr "Izaberite <item type=\"menuitem\">Datoteka - Pošalji - Na Medija Viki</item>."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID228278
+msgid  "In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> dialog, specify the settings for your entry."
+msgstr "U prozorčetu <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Pošalji na Medija Viki</link> navedite podešavanja svoj unos."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID2564165
+msgid  "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>Medija Viki server</emph>: Izaberite Viki."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID5566576
+msgid  "<emph>Title</emph>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
+msgstr "<emph>Naslov</emph>: Upišite naslov svoje stranice. Upišite naslov već postojeće stranice ukoliko želite da je zameniti trenutnim dokumentom. Upišite novi naslov za izradu nove stranice na vikiju."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID9688711
+msgid  "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr "<emph>Sažetak</emph>: Možete uneti kratak sažetak svoje stranice."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID4123661
+msgid  "<emph>This is a minor edit</emph>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
+msgstr "<emph>Ovo je mala izmena</emph>: Označite ovo da biste otpremili stranicu kao malu izmenu postojeće stranice sa istim nazivom."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID452284
+msgid  "<emph>Show in web browser</emph>: Check this box to open your system web browser and show the uploaded Wiki page."
+msgstr "<emph>Prikaži u veb pregledniku</emph>: Označite ovo da biste otvorili otpremljenu Viki stranicu u Internet pregledniku."
+
+#: ../mediawiki/help/wiki.xhp#PAR_ID8346812
+msgid  "Click Send."
+msgstr "Kliknite na „Pošalji“."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#ADDONS.ADDONUI.OFFICEMENUBARMERGING.COM.SUN.STAR.WIKI.S1.MENUITEMS.M2.TITLE
+msgid  "To Media~Wiki..."
+msgstr "Na ~Medija Viki..."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.GENERALSENDERROR
+msgid  "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "Ne mogu uspešno da izvršim radnju „Pošalji na Medija Viki“."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.NOWIKIFILTER
+msgid  "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
+msgstr "Medija Viki filter za izvoz nije pronađen. Izaberite „Alatke - Podešavanja XML Filtera...“ za instaliranje filtera ili koristite instalacioni program za instalaciju ove komponente."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.NOCONNECTIONTOURL
+msgid  "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "Ne mogu da napravim vezu sa Medija Viki sistemom na „$ARG1“."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.WRONGLOGIN
+msgid  "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
+msgstr "Neispravno je korisničko ime ili lozinka. Pokušajte ponovo ili ostavite prazna polja ukoliko želite anoniman pristup."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.INVALIDURL
+msgid  "A connection could not be created because the URL is invalid."
+msgstr "Ne mogu da napravim vezu zbog neispravne adrese."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.NOURL
+msgid  "Specify a MediaWiki server by providing a URL."
+msgstr "Navedite URL adresu Medija Viki servera."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.CANCELSENDING
+msgid  "The transfer has been interrupted. Please check the integrity of the wiki article."
+msgstr "Prenos je prekinut. Proverite ispravnost Viki članka."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_URLLABEL
+msgid  "U~RL"
+msgstr "~Adresa"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_USERNAMELABEL
+msgid  "~Username"
+msgstr "~Korisničko ime"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_PASSWORDLABEL
+msgid  "~Password"
+msgstr "~Lozinka"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTITLE
+msgid  "Send to MediaWiki"
+msgstr "Pošalji na Medija Viki"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_WIKIARTICLE
+msgid  "Wiki article"
+msgstr "Viki članak"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_NO
+msgid  "No"
+msgstr "Ne"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_OK
+msgid  "OK"
+msgstr "U redu"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_YES
+msgid  "Yes"
+msgstr "Da"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_ADDBUTTON
+msgid  "~Add..."
+msgstr "~Dodaj..."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITBUTTON
+msgid  "~Edit..."
+msgstr "~Uredi..."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDBUTTON
+msgid  "~Send"
+msgstr "~Pošalji"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_REMOVEBUTTON
+msgid  "~Remove"
+msgstr "~Ukloni"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_NEWWIKIPAGE_LABEL1
+msgid  "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
+msgstr "Još uvek ne postoji Viki članak sa naslovom „$ARG1“. Da li želite da ga napravite?"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_LABEL1
+msgid  "Media~Wiki Server"
+msgstr "Medija ~Viki server"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_LABEL2
+msgid  "~Title"
+msgstr "~Naslov"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_LABEL3
+msgid  "S~ummary"
+msgstr "~Sažetak"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_MINORCHECK
+msgid  "This is a ~minor edit"
+msgstr "~Mala izmena"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_SENDTOMEDIAWIKI_BROWSERCHECK
+msgid  "Show in web ~browser"
+msgstr "Prikaži u ~veb pregledniku"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.UNKNOWNCERT
+msgid  "The certificate of the selected site is unknown."
+msgstr "Sertifikat izabranog sajta je nepoznat."
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_MEDIAWIKI_TITLE
+msgid  "MediaWiki"
+msgstr "Medija Viki"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_ACCOUNTLINE
+msgid  "Account"
+msgstr "Nalog"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_WIKILINE
+msgid  "MediaWiki Server"
+msgstr "Medija Viki server"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_EDITSETTING_SAVEBOX
+msgid  "~Save password"
+msgstr "~Sačuvaj lozinku"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_MEDIAWIKI_EXTENSION_STRING
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WIKIEXTENSION.STRINGS.DLG_WIKIPAGEEXISTS_LABEL1
+msgid  "A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;"
+msgstr "Već postoji viki članak sa naslovom „$ARG1“.&#13;&#13;Da li želite da prepišete članak novim?&#13;&#13;"
+
+#: ../mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#OPTIONSDIALOG.NODES.INTERNET.LEAVES.COM.SUN.STAR.WIKI.OPTIONS.LABEL
+msgid  "MediaWiki"
+msgstr "Medija Viki"

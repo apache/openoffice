@@ -63,10 +63,6 @@ msgstr "வகை (~C)"
 msgid  "Function"
 msgstr "செயலாற்று"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-msgid  "Functions"
-msgstr "செயல்கள்"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 msgid  "Shortcut keys"
 msgstr "குறுக்குவழி விசைகள்"
@@ -85,7 +81,7 @@ msgstr "விசைப்பலகை கட்டமைப்பை சேம�
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.STRING.TEXT
 msgid  "Configuration (*.cfg)"
-msgstr "கட்டமைப்பு"
+msgstr "உருவமைப்பு (*.cfg)"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.STRING.TEXT
 msgid  "My Macros"
@@ -111,14 +107,6 @@ msgstr "திருத்தியமை"
 msgid  "Menus"
 msgstr "மெனுக்கள்"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-msgid  "Keyboard"
-msgstr "விசைப்பலகை"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-msgid  "Toolbars"
-msgstr "கருவிப்பட்டைகள்"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 msgid  "Events"
 msgstr "நிகழ்வுகள்"
@@ -126,14 +114,6 @@ msgstr "நிகழ்வுகள்"
 #: customize/cfg.src#TEXT_MENU.#DEFINE.TEXT
 msgid  "Menu"
 msgstr "Menu"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-msgid  "Begin a Group"
-msgstr "Begin a Group"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-msgid  "Rename..."
-msgstr "Rename..."
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 msgid  "Delete..."
@@ -143,10 +123,6 @@ msgstr "Delete..."
 msgid  "Delete"
 msgstr "Delete"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-msgid  "Move..."
-msgstr "நகர்த்து..."
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 msgid  "Restore Default Settings"
 msgstr "முன்னிருப்பு அமைவுகளை மறுசேமி"
@@ -154,14 +130,6 @@ msgstr "முன்னிருப்பு அமைவுகளை மறு�
 #: customize/cfg.src#TEXT_DEFAULT_COMMAND.#DEFINE.TEXT
 msgid  "Restore Default Command"
 msgstr "முன்னிருப்பு கட்டளையை மறுசேமி"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-msgid  "Text only"
-msgstr "உரை மட்டும்"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-msgid  "Toolbar Name"
-msgstr "கருவிப்பட்டி பெயர்"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 msgid  "Save In"
@@ -171,45 +139,13 @@ msgstr "Save In"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "%PRODUCTNAME %MODULENAME மெனுக்கள்"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "புதிய..."
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Menu Content"
 msgstr "மெனு உள்ளடக்கம்"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-msgid  "Entries"
-msgstr "உள்ளிட்டவை"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "Add..."
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-msgid  "Modify"
-msgstr "மாற்றுதல்"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr "Description"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 msgid  "Add Submenu..."
 msgstr "Add Submenu..."
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-msgid  "Icons Only"
-msgstr "Icons Only"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-msgid  "Icons & Text"
-msgstr "Icons & Text"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-msgid  "Change Icon..."
-msgstr "Change Icon..."
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 msgid  "Reset Icon"
@@ -218,10 +154,6 @@ msgstr "Reset Icon"
 #: customize/cfg.src#RID_SVXSTR_NEW_MENU.STRING.TEXT
 msgid  "New Menu %n"
 msgstr "புதிய மெனு %n"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-msgid  "New Toolbar %n"
-msgstr "புதிய கருவிப்பட்டி %n"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 msgid  "Move Menu"
@@ -251,29 +183,13 @@ msgstr "Menu name"
 msgid  "Menu position"
 msgstr "மெனு இடம்"
 
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "பெயர்"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-msgid  "Change Icon"
-msgstr "Change Icon"
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-msgid  "Icons"
-msgstr "சின்னங்கள்"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "Import..."
-msgstr "Import..."
-
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
 msgstr "Note:\nThe size of the icons must be 16x16 pixels for them to be successfully imported."
 
 #: customize/cfg.src#MD_ICONCHANGE.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
@@ -302,14 +218,6 @@ msgstr "அனைத்திற்கும் ஆம்"
 #: customize/cfg.src#RID_SVXSTR_PRODUCTNAME_TOOLBARS.STRING.TEXT
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "%PRODUCTNAME %MODULENAME  கருவிப்பட்டிகள்"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-msgid  "Toolbar"
-msgstr "கருவிப்பட்டி"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-msgid  "Toolbar Content"
-msgstr "கருவிப்பட்டி உள்ளடக்கம்"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 msgid  "Commands"
@@ -351,21 +259,13 @@ msgstr "புதிய பெயர் (~N)"
 msgid  "Rename Menu"
 msgstr "மறுபெயரிடப்பட்ட மெனு"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-msgid  "Rename Toolbar"
-msgstr "மறுபெயரிடப்பட்ட கருவிப்பட்டி"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
-msgstr ""
+msgstr "மேலே"
 
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
-msgstr ""
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "நிகழ்வு"
+msgstr "கீழே"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -390,10 +290,6 @@ msgstr "நீக்கு (~R)"
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.TABPAGE.TEXT
 msgid  "Assign action"
 msgstr "செயலை ஒதுக்கு"
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "நிகழ்வு"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -422,10 +318,6 @@ msgstr "ஆக்கக்கூறை ஓதுக்கிடு"
 #: customize/macropg.src#RID_SVXDLG_ASSIGNCOMPONENT.FT_METHOD.FIXEDTEXT.TEXT
 msgid  "Component method name"
 msgstr "ஆக்கக்கூறு முறைப் பெயர்"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-msgid  "Start Application"
-msgstr "பயன்பாட்டை துவக்கு"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 msgid  "Close Application"
@@ -485,19 +377,15 @@ msgstr "கடிதங்களிலிருந்து அச்சிட�
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_MAILMERGE_END.STRING.TEXT
 msgid  "Printing of form letters finished"
-msgstr "கடிதங்களிலிருந்து அச்சிடு"
+msgstr "படிவத் திடல்கள் இணைப்பு ஆரம்பித்துவிட்டது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FIELDMERGE.STRING.TEXT
 msgid  "Merging of form fields started"
-msgstr ""
+msgstr "படிவத்திடல்களின் இணைப்பு ஆரம்பித்துவிட்டது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FIELDMERGE_FINISHED.STRING.TEXT
 msgid  "Merging of form fields finished"
-msgstr ""
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-msgid  "Changing the page count"
-msgstr "பக்க கணக்கை மாற்றுகிறது"
+msgstr "படிவத்திடல்களின் இணைப்பு முடிந்துவிட்டது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 msgid  "Loaded a sub component"
@@ -515,33 +403,13 @@ msgstr "அளவுருக்களை நிரப்பு"
 msgid  "Execute action"
 msgstr "செயலை செயல்படுத்து"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "மேம்படுத்துவதற்கு பின்"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
 msgstr "மேம்படுத்துவதற்கு முன்"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "பதிவு செயலுக்கு முன்"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "பதிவு செயலுக்கு பின்"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
 msgstr "அழித்தலை உறுதிசெய்"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "பிழை ஏற்பட்டுவிட்டது"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "சரிசெய்யும் போது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
@@ -554,14 +422,6 @@ msgstr "கவனம் சிதறும் போது"
 #: customize/macropg.src#RID_SVXSTR_EVENT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
 msgstr "உருப்படி நிலை மாறிவிட்டது"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "விசை அழுத்தப்பட்டது "
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "விசை விடுவிக்கப்பட்டது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 msgid  "When loading"
@@ -599,33 +459,17 @@ msgstr "சுட்டி பொத்தான் அழுத்தப்ப�
 msgid  "Mouse button released"
 msgstr "சுட்டியின் பொத்தான் விடுவிக்கப்பட்டுவிட்டது"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "பதிவை மாற்றுவதற்கு முன்"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "பதிவை மாற்றிய பின்"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 msgid  "After resetting"
-msgstr "மறுஅமைப்பதற்கு பின்"
+msgstr "மறு அமைப்பதற்கு பின்"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_APPROVERESETTED.STRING.TEXT
 msgid  "Prior to reset"
-msgstr "மறுஅமைப்பதற்கு முன்பு"
+msgstr "மறு அமைப்பதற்கு முன்பு"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEACTIONPERFORMED.STRING.TEXT
 msgid  "Approve action"
 msgstr "செயலை ஏற்றுகொள்"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
-msgstr "சரண்டைவதற்கு முன்"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "மாற்றியமைக்கப்பட்ட உரை"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
@@ -635,41 +479,37 @@ msgstr "ஏற்றப்படாததிற்கு முன்"
 msgid  "When unloading"
 msgstr "ஏற்றபடாத போது"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "மாற்றப்பட்டது"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 msgid  "Document created"
 msgstr "ஆவணத்தை உருவாக்கு"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADDOCFINISHED.STRING.TEXT
 msgid  "Document loading finished"
-msgstr ""
+msgstr "ஆவணம் தயாராய் உள்ளது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEDOCFAILED.STRING.TEXT
 msgid  "Saving of document failed"
-msgstr ""
+msgstr "ஆவணத்தைச் சேமிப்பது தோல்வியுற்றது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEASDOCFAILED.STRING.TEXT
 msgid  "'Save as' has failed"
-msgstr ""
+msgstr "\"எனச் சேமி\" தோல்வியுற்றது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOC.STRING.TEXT
 msgid  "Storing or exporting copy of document"
-msgstr ""
+msgstr "ஆவணத்தின் நகல் சேமிக்கப்படுகிறது அல்லது ஏற்றுமதியாகுகிறது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOCDONE.STRING.TEXT
 msgid  "Document copy has been created"
-msgstr ""
+msgstr "ஆவண நகல் உருவாகிவிட்டது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOCFAILED.STRING.TEXT
 msgid  "Creating of document copy failed"
-msgstr ""
+msgstr "ஆவண நதல் உருவாகுவது தோல்வியுற்றது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_VIEWCREATED.STRING.TEXT
 msgid  "View created"
-msgstr ""
+msgstr "காட்சி உருவாக்கப்பட்டது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_PREPARECLOSEVIEW.STRING.TEXT
 msgid  "View is going to be closed"
@@ -677,47 +517,47 @@ msgstr "ஆவணத்தை மூடு"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEVIEW.STRING.TEXT
 msgid  "View closed"
-msgstr ""
+msgstr "காட்சி மூடப்பட்டது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_TITLECHANGED.STRING.TEXT
 msgid  "Document title changed"
-msgstr ""
+msgstr "ஆவணத்தலைப்பு மாறிவிட்டது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_MODECHANGED.STRING.TEXT
 msgid  "Document mode changed"
-msgstr ""
+msgstr "ஆவணவிதம் மாறியது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_VISAREACHANGED.STRING.TEXT
 msgid  "Visible area changed"
-msgstr ""
+msgstr "பார்க்கும் பரப்பு மாறியது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_STORAGECHANGED.STRING.TEXT
 msgid  "Document has got a new storage"
-msgstr ""
+msgstr "ஆவணம் ஒரு புதிய கிடங்கில் உள்ளது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LAYOUT_FINISHED.STRING.TEXT
 msgid  "Document layout finished"
-msgstr ""
+msgstr "ஆவணம் வடிவமைப்பு முடிந்தது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SELECTIONCHANGED.STRING.TEXT
 msgid  "Selection changed"
-msgstr ""
+msgstr "தேர்ந்தெடுத்தது மாறியது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_DOUBLECLICK.STRING.TEXT
 msgid  "Double click"
-msgstr ""
+msgstr "இரு சொடுக்கு"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_RIGHTCLICK.STRING.TEXT
 msgid  "Right click"
-msgstr ""
+msgstr "வலது சொடுக்கு"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CALCULATE.STRING.TEXT
 msgid  "Formulas calculated"
-msgstr ""
+msgstr "சூத்திரங்கள் கணக்கிடப்பட்டது"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONTENTCHANGED.STRING.TEXT
 msgid  "Content changed"
-msgstr ""
+msgstr "உள்ளவை மாறியது"
 
 #: customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#DEFINE.TEXT
 msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
@@ -739,18 +579,6 @@ msgstr "வகை (~C)"
 msgid  "Commands"
 msgstr "கட்டளைகள்"
 
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "சேர்"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "இயக்கு"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr "மூடு"
-
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
 msgstr "ஒரு கருவிப்பட்டிக்கு ஒரு கட்டளையை சேர்ப்பதற்கு, வகை மற்றும் பின்னர் கட்டளையை தேர்ந்தெடுக்கவும். தனிப்பட்ட உரையாடலில் உள்ள கருவிப்பட்டிகளின் தத்தலில் கட்டளை பட்டியலில் இருந்து பின்னர் ஒரு கட்டளையை இழுக்கவும். "
@@ -771,17 +599,45 @@ msgstr "நூலகம்"
 msgid  "My Macros"
 msgstr "எனது மேக்ரோகள்"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-msgid  "Macro name"
-msgstr "மேக்ரோ பெயர்"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "விளக்கம்"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
-msgstr ""
+msgstr "%FULLPRODUCTNAME பற்றி "
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr "உரிமம்..."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr "%OOOVENDOR"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr "இப்பொருள் ஓப்பன் ஆபீஸ் சமூதாயத்தால் உருவாக்கப்பட்டது"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr " அபாசே ஓபன் ஆபீஸைத் தழுவி %OOOVENDOR, ஆல் இப்பொருள் உருவாக்கப்பட்டது. "
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr "ஓப்பன் ஆபீஸ் சமூகம்  உதவிய அனைவருக்கும் நன்றி  தெருவிக்கிறது, முக்கியமாக இங்கு தெரிவிக்கப்பட்ட "
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+msgid  "Readme, License and Notice"
+msgstr "படிக்கவேண்டியவை, உரிமம், அறிக்கை"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+msgid  "Readme"
+msgstr "படியுங்கள்"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+msgid  "License"
+msgstr "உரிமம்"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+msgid  "Notice"
+msgstr "அறிக்கை"
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
 #, fuzzy
@@ -810,97 +666,105 @@ msgstr "~Delete"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.MODALDIALOG.TEXT
 msgid  "Color Picker"
-msgstr ""
+msgstr "நிறம் எடுப்பான்"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.PB_PICKER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Pick a color from the document"
-msgstr ""
+msgstr "ஆவணத்திலிருந்து ஒரு நிறத்தை எடு"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_RGB.FIXEDLINE.TEXT
 msgid  "RGB"
-msgstr ""
+msgstr "RGB"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_RED.FIXEDTEXT.TEXT
 msgid  "~Red"
-msgstr ""
+msgstr "சிவப்பு"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_GREEN.FIXEDTEXT.TEXT
 msgid  "~Green"
-msgstr ""
+msgstr "பச்சை"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BLUE.FIXEDTEXT.TEXT
 msgid  "~Blue"
-msgstr ""
+msgstr "நீலம்"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HEX.FIXEDTEXT.TEXT
 msgid  "Hex ~#"
-msgstr ""
+msgstr "பதினாறிலக்கம்"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_HSB.FIXEDLINE.TEXT
 msgid  "HSB"
-msgstr ""
+msgstr "HSB"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HUE.FIXEDTEXT.TEXT
 msgid  "H~ue"
-msgstr ""
+msgstr "வண்ணம்"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_SATURATION.FIXEDTEXT.TEXT
 msgid  "~Saturation"
-msgstr ""
+msgstr "தெவிட்டல்"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BRIGHTNESS.FIXEDTEXT.TEXT
 msgid  "Bright~ness"
-msgstr ""
+msgstr "பிரகாசம்"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_CMYK.FIXEDLINE.TEXT
 msgid  "CMYK"
-msgstr ""
+msgstr "CMYK"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_CYAN.FIXEDTEXT.TEXT
 msgid  "~Cyan"
-msgstr ""
+msgstr "மயில் நீலம்"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_MAGENTA.FIXEDTEXT.TEXT
 msgid  "~Magenta"
-msgstr ""
+msgstr "இளஞ்சிவப்பு"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_YELLOW.FIXEDTEXT.TEXT
 msgid  "~Yellow"
-msgstr ""
+msgstr "மஞ்சள்"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_KEY.FIXEDTEXT.TEXT
 msgid  "~Key"
-msgstr ""
+msgstr "சாவி"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Origi~nal"
 msgstr "மூலம்"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_NEWWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Word"
 msgstr "சொல்"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_SUGGESTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Suggestions"
 msgstr "ஆலோசனைகள்"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNORE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Ignore"
 msgstr "தவிர்த்தல்"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNOREALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Always I~gnore"
 msgstr "Always I~gnore"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Replace"
 msgstr "மாற்றுதல்"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGEALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Always R~eplace"
 msgstr "Always R~eplace"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_OPTIONS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Options..."
 msgstr "தேர்வுகள்..."
 
@@ -939,11 +803,6 @@ msgstr "மாற்று ~உரை"
 msgid  "~Description"
 msgstr "விவரம்"
 
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Name"
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Name"
@@ -963,11 +822,6 @@ msgstr "~Title"
 #, fuzzy
 msgid  "~Description"
 msgstr "~Description"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Search"
-msgstr "ஏடு தேடல்"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 #, fuzzy
@@ -1049,11 +903,6 @@ msgstr "Wildcard expression"
 msgid  "Regular expression"
 msgstr "வழக்கமான கூற்று"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "ஒற்றுமையை தேடுதல்"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "..."
@@ -1073,11 +922,6 @@ msgstr "ஜெப்பாணியை போல தெரிகிறது"
 #, fuzzy
 msgid  "State"
 msgstr "மாநிலம்"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Record :"
-msgstr "ஏடு"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1169,21 +1013,6 @@ msgstr "கோப்புகள் "
 msgid  "Type:"
 msgstr "வகை:"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "இடம்:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Contents:"
-msgstr "உள்ளடக்கங்கள்"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "திருத்திய:"
-
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~File type"
@@ -1209,16 +1038,6 @@ msgstr "அ~னைத்தையும் சேர்க்க"
 msgid  "Pr~eview"
 msgstr "முன்~காட்சி"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Enter Title"
@@ -1229,25 +1048,10 @@ msgstr "தலைப்பை அளிக்க"
 msgid  "Title"
 msgstr "தலைப்பு"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Find"
-msgstr "தேடுக"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Directory"
-msgstr "அடைவு"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "File type"
 msgstr "கோப்பு வகை"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "பயன்படுத்துக"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 #, fuzzy
@@ -1305,7 +1109,6 @@ msgid  "Mosaic"
 msgstr "மொசைக்"
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.FL_PARAMETER.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Parameters"
 msgstr "அளவுருக்கள்"
 
@@ -1348,16 +1151,6 @@ msgstr "முதிர்ச்சி"
 #, fuzzy
 msgid  "Aging degree"
 msgstr "முதிர்ச்சி கோணம்"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Posterize"
-msgstr "சுவரொட்டியாக்கு"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Poster colors"
-msgstr "சுவரொட்டிவண்ணங்கள்"
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 #, fuzzy
@@ -1419,11 +1212,6 @@ msgstr "Hanja"
 msgid  "Ha~nja"
 msgstr "Ha~nja"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Conversion"
-msgstr "மாற்றுதல்"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Hangul ~only"
@@ -1438,11 +1226,6 @@ msgstr "Hanja onl~y"
 #, fuzzy
 msgid  "Replace b~y character"
 msgstr "Replace b~y character"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-#, fuzzy
-msgid  "Hangul"
-msgstr "ஓHangul"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 #, fuzzy
@@ -1479,11 +1262,6 @@ msgstr "Show recently used entries first"
 msgid  "Replace all unique entries automatically"
 msgstr "Replace all unique entries automatically"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "புதிய..."
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Edit..."
@@ -1494,65 +1272,25 @@ msgstr "திருத்து..."
 msgid  "Delete"
 msgstr "அழித்தல்"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "புதிய அகராதி"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "அகராதி"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Name"
 msgstr "பெயர்"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "சொந்த அகராதியை திருத்து"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 #, fuzzy
 msgid  "[Enter text here]"
 msgstr "[Enter text here]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Book"
-msgstr "புத்தகம்"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Original"
 msgstr "மூலம்"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Suggestions (max. 8)"
-msgstr "Suggestions (max. 8)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "புதிய"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
 msgid  "Close"
 msgstr "முடிவு"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Target in Document"
-msgstr "ஆவணத்திலுள்ள இலக்கு"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "செயல்படுத்து"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1571,7 +1309,7 @@ msgstr "ஆவணத்தை திறக்க முடியவில்ல�
 
 #: dialogs/hlmarkwn.src#STR_MARK_TREE.STRING.TEXT
 msgid  "Mark Tree"
-msgstr ""
+msgstr "குறி மரம்"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.TABPAGE.TEXT
 #, fuzzy
@@ -1624,12 +1362,10 @@ msgid  "WWW Browser"
 msgstr "WWW உலாவி"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.IMAGEBUTTON.TEXT
-#, fuzzy
 msgid  "Target in Document"
 msgstr "Target in Document"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_MORE.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Further settings"
 msgstr "மேலும் அமைவுகள்"
 
@@ -1648,11 +1384,6 @@ msgstr "படிவம்"
 msgid  "Text"
 msgstr "உரை"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Button"
-msgstr "பொத்தான்"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Te~xt"
@@ -1667,11 +1398,6 @@ msgstr "பெயர்"
 #, fuzzy
 msgid  "Events"
 msgstr "நிகழ்வுகள்"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mail & news"
-msgstr "அஞ்சல் & செய்திகள்"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1698,11 +1424,6 @@ msgstr "~பொருள்"
 msgid  "Data Sources..."
 msgstr "தரவு மூலங்கள்..."
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "ஆவணம்"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Path"
@@ -1713,30 +1434,15 @@ msgstr "~பாதை"
 msgid  "Open File"
 msgstr "கோப்பு திறத்தல்"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Target in document"
-msgstr "ஆவணத்திலுள்ள இலக்கு"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Targ~et"
 msgstr "இல~க்கு"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "URL"
-msgstr "வலைமனை"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Test text"
 msgstr "சோதனை உரை"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New document"
-msgstr "புதிய ஆவணம்"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1762,11 +1468,6 @@ msgstr "கோப்பு ~வகை"
 #, fuzzy
 msgid  "Select Path"
 msgstr "பாதையை தேர்ந்தெடுத்தல்"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "செயல்படுத்தல்"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 #, fuzzy
@@ -1803,11 +1504,6 @@ msgstr "இணையம்"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-#, fuzzy
-msgid  "Mail & News"
-msgstr "அஞ்சல்/செய்திகள்"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 #, fuzzy
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
@@ -1817,11 +1513,6 @@ msgstr "This is where you create a hyperlink to an e-mail address or newsgroup."
 #, fuzzy
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr "This is where you create a hyperlink to an existing document or a target within a document."
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-#, fuzzy
-msgid  "New Document"
-msgstr "புதிய ஆவணம்"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 #, fuzzy
@@ -1850,11 +1541,11 @@ msgstr "சொல்"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CUT.OKBUTTON.TEXT
 msgid  "H~yphenate"
-msgstr ""
+msgstr "இணைப்புக் குறியிடு"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CONTINUE.PUSHBUTTON.TEXT
 msgid  "~Skip"
-msgstr ""
+msgstr "தவிர்"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1863,7 +1554,7 @@ msgstr "நீக்குதல்"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_ALL.PUSHBUTTON.TEXT
 msgid  "Hyphenate ~All"
-msgstr ""
+msgstr "எல்லாவற்றையும் இணைப்புக் குறியிடு"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CANCEL.CANCELBUTTON.TEXT
 #, fuzzy
@@ -1889,11 +1580,6 @@ msgstr "~முன்பு"
 #, fuzzy
 msgid  "A~fter"
 msgstr "பி~ன்பு"
-
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "அமைப்பு"
 
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1921,9 +1607,8 @@ msgid  "Paths"
 msgstr "பாதைகள்"
 
 #: dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FT_RADIOBUTTON.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Mark the default path for new files."
-msgstr "Mark the default path for new files."
+msgstr "புதிய கோப்புகளுக்கு, உள்ளிருப்பு பாதையைக் குறி."
 
 #: dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_ADD_MULTIPATH.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1960,11 +1645,6 @@ msgstr "கோப்புகள் "
 msgid  "Select Archives"
 msgstr "காப்பகங்களை தேர்வுசெய்"
 
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-#, fuzzy
-msgid  "Archives"
-msgstr "காப்பகம்"
-
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 #, fuzzy
 msgid  "The file %1 already exists."
@@ -1972,72 +1652,72 @@ msgstr "கோப்பு %1  முன்பே உள்ளது"
 
 #: dialogs/newtabledlg.src#RID_SVX_NEWTABLE_DLG.MODALDIALOG.TEXT
 msgid  "Insert Table"
-msgstr ""
+msgstr "அட்டவணையைச் சேர்"
 
 #: dialogs/newtabledlg.src#RID_SVX_NEWTABLE_DLG.FT_COLUMNS.FIXEDTEXT.TEXT
 msgid  "Number of columns:"
-msgstr ""
+msgstr "பத்திகளின் எண்ணிக்கை"
 
 #: dialogs/newtabledlg.src#RID_SVX_NEWTABLE_DLG.FT_ROWS.FIXEDTEXT.TEXT
 msgid  "Number of rows:"
-msgstr ""
+msgstr "வரிசைகளின் எண்ணிக்கை"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.MODALDIALOG.TEXT
 msgid  "Set Password"
-msgstr ""
+msgstr "கடவுச் சொல்லை ஏற்படுத்தவும்"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_ENCRYPTION.FIXEDLINE.TEXT
 msgid  "File encryption password"
-msgstr ""
+msgstr "கோப்பு குறியீட்டுச்சொற்களால் மறைத்தல் கடவுச் சொல்"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_TO_OPEN.FIXEDTEXT.TEXT
 msgid  "~Enter password to open"
-msgstr ""
+msgstr "திறக்க கடவுச் சொல்லைக் கொடு"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_REENTER_PASSWD_TO_OPEN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Confirm password"
-msgstr ""
+msgstr "கடவுச் சொல்லை உறுதிசெய்யவும்"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
-msgstr ""
+msgstr "குறிப்பு: கடவுச்சொல் ஏற்படுத்தியபின், ஆவணம் திறக்க முடியும்"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_SHARING_OPTIONS.FIXEDLINE.TEXT
 msgid  "File sharing password"
-msgstr ""
+msgstr "ஆவணத்தைப் பகிரும் கடவுச் சொல்"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.CB_OPEN_READONLY.CHECKBOX.TEXT
 msgid  "Open file read-only"
-msgstr ""
+msgstr "படிக்கமட்டும் ஆவணத்தைத் திற"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_TO_MODIFY.FIXEDTEXT.TEXT
 msgid  "Enter password to allow editing"
-msgstr ""
+msgstr "திருத்த அனுமதிக்கக் கடவுச் சொல்லைத் தரவும்"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_PASSWD_MUST_BE_CONFIRMED.STRING.TEXT
 msgid  "Password must be confirmed"
-msgstr ""
+msgstr "கடவுச் சொல் உறுதிப் படுத்தவேண்டும் "
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_MORE_OPTIONS.STRING.TEXT
 msgid  "More ~Options"
-msgstr ""
+msgstr "அதிக ~தேர்வுகள் "
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_FEWER_OPTIONS.STRING.TEXT
 msgid  "Fewer ~Options"
-msgstr ""
+msgstr "குறைந்த ~தேர்வுகள்"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_ONE_PASSWORD_MISMATCH.STRING.TEXT
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "இரு கடவுச் சொற்கள் பொருந்நவில்லை. இரு பெட்டிகளிலும் மீண்டும் கடவுச் சொல்லைச் சேர்க்கவும்"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_TWO_PASSWORDS_MISMATCH.STRING.TEXT
 msgid  "The confirmation passwords did not match the original passwords. Set the passwords again."
-msgstr ""
+msgstr "இரு கடவுச் சொற்கள் பொருந்நவில்லை. மீண்டும் கடவுச் சொற்களைச் சேர்"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_INVALID_STATE_FOR_OK_BUTTON.STRING.TEXT
 msgid  "Please enter a password to open or to modify, or check the open read-only option to continue."
-msgstr ""
+msgstr "திறக்க அல்லது மாற்ற கடவுச் சொல்லைத் தரவும். இல்லையெனின் படிக்க மட்டும் தொடரவும் "
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.MODALDIALOG.TEXT
 #, fuzzy
@@ -2053,11 +1733,6 @@ msgstr "ஆசிரியர்"
 #, fuzzy
 msgid  "~Text"
 msgstr "உரை (~T)"
-
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "உள்ளடக்கம்"
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2134,20 +1809,10 @@ msgstr "Create Library"
 msgid  "Enter the name for the new library."
 msgstr "Enter the name for the new library."
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-#, fuzzy
-msgid  "Create Macro"
-msgstr "Create Macro"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 #, fuzzy
 msgid  "Enter the name for the new macro."
 msgstr "Enter the name for the new macro."
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "மறுபெயரிடு"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 #, fuzzy
@@ -2194,11 +1859,6 @@ msgstr " Object with the same name already exists."
 msgid  " You do not have permission to create this object."
 msgstr " You do not have permission to create this object."
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Creating Object"
-msgstr "Error Creating Object"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 #, fuzzy
 msgid  "The object could not be renamed."
@@ -2208,11 +1868,6 @@ msgstr "The object could not be renamed."
 #, fuzzy
 msgid  " You do not have permission to rename this object."
 msgstr " You do not have permission to rename this object."
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Renaming Object"
-msgstr "Error Renaming Object"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 #, fuzzy
@@ -2259,11 +1914,6 @@ msgstr "A Scripting Framework error occurred while running the %LANGUAGENAME scr
 msgid  "Type:"
 msgstr "வகை:"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Message:"
-msgstr "Message:"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 #, fuzzy
 msgid  "Format Cells"
@@ -2278,16 +1928,6 @@ msgstr "எழுத்துரு"
 #, fuzzy
 msgid  "Font Effects"
 msgstr "எழுத்துரு விளைவு"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "ஓரங்கள்"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "பின்னணி"
 
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2311,7 +1951,7 @@ msgstr "Spellcheck: "
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_LANGUAGE.FIXEDTEXT.TEXT
 msgid  "Text languag~e"
-msgstr ""
+msgstr "உரை மொழி"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_NOTINDICT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2325,7 +1965,7 @@ msgstr "ஆலோசனைகள்"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.CB_CHECK_GRAMMAR.CHECKBOX.TEXT
 msgid  "Check ~grammar"
-msgstr ""
+msgstr "இலக்கணத்தைச் சரிபார்க்கவும்"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2359,7 +1999,7 @@ msgstr "Change A~ll"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_EXPLAIN.PUSHBUTTON.TEXT
 msgid  "~Explain..."
-msgstr ""
+msgstr "விவரி.."
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_AUTOCORR.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2386,22 +2026,17 @@ msgstr "Cl~ose"
 msgid  "Resu~me"
 msgstr "Resu~me"
 
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-#, fuzzy
-msgid  "(no suggestions)"
-msgstr "(no suggestions)"
-
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
-msgstr ""
+msgstr "எழுத்துக்கோர்வை : $LANGUAGE ($LOCATION)"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR.STRING.TEXT
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION)"
-msgstr ""
+msgstr "எழுத்துக்கோர்வை மற்றும் இலக்கணம்: $LANGUAGE ($LOCATION)"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR_VENDORNAME.STRING.TEXT
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION) [$VendorName]"
-msgstr ""
+msgstr "எழுத்துக்கோர்வை மற்றும் இலக்கணம்:: $LANGUAGE ($LOCATION) [$VendorName]"
 
 #: dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.MODALDIALOG.TEXT
 #, fuzzy
@@ -2453,11 +2088,6 @@ msgstr "எழுத்துரு"
 msgid  "Font Effects"
 msgstr "எழுத்துவின் விளைவுகள்"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "இடம்"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Asian Layout"
@@ -2483,25 +2113,10 @@ msgstr "Text Flow"
 msgid  "Asian Typography"
 msgstr "ஆசியாவின் அச்சுக்கலை"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "பின்னணி"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Attributes"
-msgstr "பண்புகள்"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Options"
 msgstr "விருப்பங்கள் (~O)"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "ஒத்தநிலையைத் தேடு"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2533,20 +2148,10 @@ msgstr "அமைவுகள்"
 msgid  "Paste Special"
 msgstr "சிறந்த ஒட்டு"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Source:"
-msgstr "மூலம்:"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Insert as"
 msgstr "இதுவாக நுழை (~I)"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Link to"
-msgstr "இணைப்புக்கு"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 #, fuzzy
@@ -2562,11 +2167,6 @@ msgstr "மற்ற சின்னம் (~O)..."
 #, fuzzy
 msgid  "Selection"
 msgstr "தேர்ந்தெடுப்பு"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "பொருள்"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 #, fuzzy
@@ -2587,11 +2187,6 @@ msgstr "எழுத்துரு:"
 #, fuzzy
 msgid  "Type"
 msgstr "வகை"
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Status"
-msgstr "நிலை"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
 #, fuzzy
@@ -2783,11 +2378,6 @@ msgstr "ஆஃப் (~f)"
 msgid  "Au~tomatic"
 msgstr "தானாக (~t)"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scroll bar"
-msgstr "சுருள் பட்டி"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "On"
@@ -2797,11 +2387,6 @@ msgstr "ஆன்"
 #, fuzzy
 msgid  "Off"
 msgstr "ஆஃப்"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Border"
-msgstr "ஓரம்"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2833,29 +2418,14 @@ msgstr "உள்ளடக்கங்களுக்கான இடைவெ�
 msgid  "Select File for Floating Frame"
 msgstr "மிதக்கும் சட்டத்திலிருந்து கோப்பை தேர்ந்தெடு"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-#, fuzzy
-msgid  "Edit Applet"
-msgstr "அப்லெட்டை திருத்து"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Number"
-msgstr "ஏடு எண்"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "go to record"
 msgstr "ஏடுக்கு செல்"
 
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "ஆய்வறிக்கை"
-
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
 msgid  "~Current word"
-msgstr ""
+msgstr "நடப்பு வார்த்தை"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MB_LANGUAGE.MENUBUTTON.TEXT
 #, fuzzy
@@ -2864,20 +2434,15 @@ msgstr "மொழி"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_THES_ALTERNATIVES.FIXEDTEXT.TEXT
 msgid  "~Alternatives"
-msgstr ""
+msgstr "பதிலீடாக"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_REPL.FIXEDTEXT.TEXT
 msgid  "~Replace with"
-msgstr ""
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "மாற்றுதல்"
+msgstr "மாற்று"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
 msgid  "No alternatives found."
-msgstr ""
+msgstr "வேறு மாற்று இல்லை"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.MODALDIALOG.TEXT
 #, fuzzy
@@ -2911,7 +2476,7 @@ msgstr "நிலையற்ற (~V)"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_VIEWLAYOUT.FIXEDLINE.TEXT
 msgid  "View layout"
-msgstr ""
+msgstr "வடிவமைப்பைப் பார்"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_AUTOMATIC.RADIOBUTTON.TEXT
 #, fuzzy
@@ -2920,7 +2485,7 @@ msgstr "தானாகவே (~A)"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_SINGLE.RADIOBUTTON.TEXT
 msgid  "~Single page"
-msgstr ""
+msgstr "ஒரு பக்கம்"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_COLUMNS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -2929,7 +2494,7 @@ msgstr " நெடுவரிசைகள்"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.CHK_BOOK.CHECKBOX.TEXT
 msgid  "~Book mode"
-msgstr ""
+msgstr "புத்தக வகை"
 
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FIXEDLINE.TEXT
 #, fuzzy
@@ -2946,11 +2511,6 @@ msgstr "இனைக்கும் குவியலை செயல்பட�
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr " %PRODUCTNAME    இயக்கில் தெரியும்."
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Current driver:"
-msgstr "தற்போதைய இயக்கி"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Enable pooling for this driver"
@@ -2961,11 +2521,6 @@ msgstr "குவியலை  இயக்கி  செயல்படுத�
 msgid  "Timeout (seconds)"
 msgstr "காலம் கடந்தது(நொடிகள்) "
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Driver name"
-msgstr "இயக்கி பெயர்"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 #, fuzzy
 msgid  "Pool"
@@ -2975,16 +2530,6 @@ msgstr "குவியல்."
 #, fuzzy
 msgid  "Timeout"
 msgstr "நேரம் கடந்து"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "ஆம்"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "இல்லை"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 #, fuzzy
@@ -3048,7 +2593,7 @@ msgstr "இந்த கோப்பு\n$file$\nஉள்ளிருக்க�
 
 #: options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.STRING.TEXT
 msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr ""
+msgstr "கோப்பு\n$file$\nஇப்பகுதிக் கோப்புகளில் இல்லை."
 
 #: options/doclinkdialog.src#STR_NAME_CONFLICT.STRING.TEXT
 #, fuzzy
@@ -3075,11 +2620,6 @@ msgstr "எழுத்துரு"
 msgid  "Re~place with"
 msgstr "மாற்றுதல்"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "செயல்படுத்தல்"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Delete"
@@ -3087,7 +2627,7 @@ msgstr "அழித்தல்"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FL_SOURCEVIEW.FIXEDLINE.TEXT
 msgid  "Font settings for HTML, Basic and SQL sources"
-msgstr ""
+msgstr "HTML, Basic மற்றும்  SQL மூலத்திற்கான எழுத்துரு அமைப்புகள்"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTNAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3104,11 +2644,6 @@ msgstr "Non-proportional fonts only"
 msgid  "~Size"
 msgstr "அளவு"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "Always"
-msgstr "எப்போதும்"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
 #, fuzzy
 msgid  "Screen only"
@@ -3119,20 +2654,10 @@ msgstr "Screen only"
 msgid  "Font"
 msgstr "எழுத்துரு"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-#, fuzzy
-msgid  "Replace with"
-msgstr "இதனுடன் மாற்று"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 #, fuzzy
 msgid  "Automatic"
 msgstr "தானியக்கம்"
-
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Default text direction"
-msgstr "தவறான உரை திசை."
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
 #, fuzzy
@@ -3175,24 +2700,17 @@ msgid  "Use te~xt selection cursor in read-only text documents"
 msgstr "Use te~xt selection cursor in read-only text documents"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Allow animated ~graphics"
-msgstr "Allow animated ~graphics"
+msgstr "உயிரூட்டப்பட்ட படத்தை அனுமதிக்கவும்"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Allow animated ~text"
-msgstr "Allow animated ~text"
+msgstr "உயிரூட்டப்பட்ட உரையை அனுமதிக்கவும்"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "~Help tips disappear after "
-
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "seconds"
-msgstr "நொடிகள்"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
@@ -3284,11 +2802,6 @@ msgstr "Without user-defined line break symbols"
 msgid  "Proxy"
 msgstr "பதிலாள்"
 
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Default Colors"
-msgstr "முன்னிருப்பு நிறங்கள்"
-
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Chart colors"
@@ -3309,16 +2822,6 @@ msgstr "முன்னிருப்பு"
 msgid  "Data Series $(ROW)"
 msgstr "Data Series $(ROW)"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color scheme"
-msgstr "Color scheme"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Scheme"
-msgstr "Scheme"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Save..."
@@ -3328,11 +2831,6 @@ msgstr "சேமி..."
 #, fuzzy
 msgid  "Delete"
 msgstr "நீக்கு"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Custom colors"
-msgstr "Custom colors"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
 #, fuzzy
@@ -3350,34 +2848,8 @@ msgid  "Color setting"
 msgstr "Color setting"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_PREVIEW.STRING.TEXT
-#, fuzzy
 msgid  "Preview"
-msgstr "முண்ணொட்டு"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "பொது"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Document background"
-msgstr "Document background"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Text boundaries"
-msgstr "Text boundaries"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Application background"
-msgstr "Application background"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Object boundaries"
-msgstr "Object boundaries"
+msgstr "முன்காட்சி"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
 #, fuzzy
@@ -3388,16 +2860,6 @@ msgstr "Table boundaries"
 #, fuzzy
 msgid  "Font color"
 msgstr "எழுத்துரு வண்ணம்"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Unvisited links"
-msgstr "Unvisited links"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Visited links"
-msgstr "Visited links"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3415,7 +2877,6 @@ msgid  "Text Document"
 msgstr "உரை ஆவணம்"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Grid"
 msgstr "கட்டம்"
 
@@ -3438,11 +2899,6 @@ msgstr "Script indicator"
 #, fuzzy
 msgid  "Section boundaries"
 msgstr "Section boundaries"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Page and column breaks"
-msgstr "Page and column breaks"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3469,21 +2925,6 @@ msgstr "Comment highlighting"
 msgid  "Keyword highlighting"
 msgstr "Keyword highlighting"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "உரை"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "விரிதாள்"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Grid lines"
-msgstr "கட்ட வரிக்கள்"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Page breaks"
@@ -3499,25 +2940,10 @@ msgstr "Manual page breaks"
 msgid  "Automatic page breaks"
 msgstr "Automatic page breaks"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Detective"
-msgstr "Detective"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Detective error"
 msgstr "Detective error"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "References"
-msgstr "குறிப்புகள்"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Notes background"
-msgstr "Notes background"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3530,7 +2956,6 @@ msgid  "Basic Syntax Highlighting"
 msgstr "Basic Syntax Highlighting"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICIDENTIFIER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Identifier"
 msgstr "அடையாளப்படுத்தி"
 
@@ -3558,16 +2983,6 @@ msgstr "செய்பவர்"
 #, fuzzy
 msgid  "Reserved expression"
 msgstr "Reserved expression"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Error"
-msgstr "பிழை"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "SQL Syntax Highlighting"
-msgstr "SQL Syntax Highlighting"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3609,11 +3024,6 @@ msgstr "Color Scheme Deletion"
 msgid  "Save scheme"
 msgstr "Save scheme"
 
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-#, fuzzy
-msgid  "Name of color scheme"
-msgstr "Name of color scheme"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
 #, fuzzy
 msgid  "Complex Text Layout"
@@ -3644,11 +3054,6 @@ msgstr "~Type and replace"
 msgid  "Cursor control"
 msgstr "Cursor control"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Movement"
-msgstr "Movement"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Lo~gical"
@@ -3669,30 +3074,10 @@ msgstr "General options"
 msgid  "~Numerals"
 msgstr "~Numerals"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Arabic"
-msgstr "Arabisch"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Hindi"
-msgstr "ஹிந்தி"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "அமைப்பு"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Context"
 msgstr "Context"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "புதிய அகராதி"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3708,16 +3093,6 @@ msgstr "மொழி"
 #, fuzzy
 msgid  "~Exception (-)"
 msgstr "விதிவிலக்கு(-)"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "அகராதி"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "சொந்த அகராதியை திருத்து"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3791,7 +3166,7 @@ msgstr "அடிப்படை குறியீட்டை ஏற்று 
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_EXECTBL.CHECKBOX.TEXT
 msgid  "E~xecutable code"
-msgstr ""
+msgstr "செய்து முடிக்கக் கூடிய மென்பொருள்"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_STG.CHECKBOX.TEXT
 #, fuzzy
@@ -3835,24 +3210,19 @@ msgstr "[S]: பொருளை மாற்று மற்றும் சே�
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_MATH.STRING.TEXT
 msgid  "MathType to %PRODUCTNAME Math or reverse"
-msgstr ""
+msgstr "கணித விதம் %PRODUCTNAME கணிதம் அல்லது எதிர்மறை"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_WRITER.STRING.TEXT
 msgid  "WinWord to %PRODUCTNAME Writer or reverse"
-msgstr ""
+msgstr "வின்வோர்டு இருந்து  %PRODUCTNAME விரைட்டர் அல்லது எதிரமறை"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_CALC.STRING.TEXT
 msgid  "Excel to %PRODUCTNAME Calc or reverse"
-msgstr ""
+msgstr "எக்ஸெல் இருந்து %PRODUCTNAME கால்சி அல்லது எதிர்மறை"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_IMPRESS.STRING.TEXT
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
-msgstr ""
-
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "உதவி"
+msgstr "பவர்பாய்ன்ட் இருந்து %PRODUCTNAME இம்ப்ரெஸ் அல்லது எதிர்மறை"
 
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 #, fuzzy
@@ -3878,11 +3248,6 @@ msgstr "உதவி ஏஜென்ட்டை மறுஅமை (~R)"
 #, fuzzy
 msgid  "Help ~formatting"
 msgstr "உதவியை வடிவமைக்கிறது  (~f)"
-
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "முன்னிருப்பு"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -3941,17 +3306,12 @@ msgstr "மற்றும்"
 
 #: options/optgdlg.src#OFA_TP_MISC.FL_PRINTDLG.FIXEDLINE.TEXT
 msgid  "Print dialogs"
-msgstr ""
+msgstr "உரையாடலை அச்சிடு"
 
 #: options/optgdlg.src#OFA_TP_MISC.CB_PRINTDLG.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "~%PRODUCTNAME உரையாடலை உபயோகி"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User Interface"
-msgstr "User Interface"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3969,38 +3329,21 @@ msgid  "Icon size"
 msgstr "சின்ன அளவு"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM1.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Automatic"
 msgstr "தானியக்கம்"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small"
-msgstr "சிறிய"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Large"
-msgstr "பெரிய"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Galaxy (default)"
-msgstr "கேலக்ஸி (default)"
+msgstr "கேலக்ஸி (உள்ளிருப்பு)"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "High Contrast"
 msgstr "உயர்ந்த மாறுபாடு"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Industrial"
-msgstr "தொழில் சம்பந்தமான"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
 msgid  "Classic"
-msgstr ""
+msgstr "புராதான"
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_SYSTEM_FONT.CHECKBOX.TEXT
 #, fuzzy
@@ -4017,11 +3360,6 @@ msgstr "எழுத்துருவை சீர்ப்படுத்த�
 msgid  "from"
 msgstr "இதிலிருந்து"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Pixels"
-msgstr "பிக்செல்கள்"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Menu"
@@ -4029,15 +3367,15 @@ msgstr "பட்டி"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MENU_ICONS.FIXEDTEXT.TEXT
 msgid  "Icons in menus"
-msgstr ""
+msgstr "பட்டியலில் உள்ள சின்னங்கள்"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM2.STRINGLIST.ITEM
 msgid  "Hide"
-msgstr ""
+msgstr "மறை"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM3.STRINGLIST.ITEM
 msgid  "Show"
-msgstr ""
+msgstr "காட்டு"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_FONTLISTS.FIXEDLINE.TEXT
 #, fuzzy
@@ -4066,22 +3404,12 @@ msgstr "Use hardware acceleration"
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_USE_ANTIALIASE.CHECKBOX.TEXT
 msgid  "Use Anti-Aliasing"
-msgstr ""
-
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mouse"
-msgstr "சுட்டி"
+msgstr "சீராக்கு"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Mouse positioning"
 msgstr "சுட்டி இடமைத்தல்"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default button"
-msgstr "முன்னிருப்பு பொத்தான்"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -4103,11 +3431,6 @@ msgstr "மத்திய சுட்டி பொத்தான்"
 msgid  "No function"
 msgstr "செயல்பாட்டில் இல்லை"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Automatic scrolling"
-msgstr "தானாகவே சுழல்கிறது"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Paste clipboard"
@@ -4115,15 +3438,15 @@ msgstr "கிளிப்பலகையை ஒட்டு"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_SELECTION.FIXEDLINE.TEXT
 msgid  "Selection"
-msgstr ""
+msgstr "தேர்வு"
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_SELECTION.CHECKBOX.TEXT
 msgid  "Transparency"
-msgstr ""
+msgstr "ஒளிவின்மை"
 
 #: options/optgdlg.src#OFA_TP_VIEW.MF_SELECTION.METRICFIELD.CUSTOMUNITTEXT
 msgid  "%"
-msgstr ""
+msgstr "%"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.FL_UI_LANG.FIXEDLINE.TEXT
 #, fuzzy
@@ -4187,21 +3510,16 @@ msgstr "Enhanced language support"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_ASIANSUPPORT.CHECKBOX.TEXT
 msgid  "Show UI elements for East Asia~n writings"
-msgstr ""
+msgstr "கிழக்கு ஆசிய எழுத்துகளுக்கு UI ஐக் காட்டு"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_CTLSUPPORT.CHECKBOX.TEXT
 msgid  "Show UI elements for B~i-Directional writing"
-msgstr ""
+msgstr "இருதிசை ஏழுத்துகளுக்கு UI தனிமத்தைக் காட்டு"
 
 #: options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "மொழி அமைவு பயனரின் இடைமுகத்திற்கானவை மேம்படுத்தப்பட்டு நீங்கள் அடுத்த முறை  %PRODUCTNAME %PRODUCTVERSION துவக்கும் போது விளைவை பெறும்"
-
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-#, fuzzy
-msgid  "User Data"
-msgstr "பயனர் தகவல்"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4277,6 +3595,10 @@ msgstr "நகரம்/நாடு/பின்கோடு"
 #, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
+
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr "உபயோகிப்பபோர் தகவல் மாறிவிட்டது.\nஉண்மையிலேயே உங்கள் தகவலை மாற்ற விரும்புகிறிருகளா?"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4438,16 +3760,6 @@ msgstr "பதிவாணை சேவகன்"
 msgid  "None"
 msgstr "ஒன்றுமில்லை"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "அமைப்பு"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Manual"
-msgstr "கைம்முறை"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
 #, fuzzy
 msgid  "Use browser settings"
@@ -4493,16 +3805,6 @@ msgstr "துளை"
 msgid  "~No proxy for:"
 msgstr "இதற்கு பதிவாணை இல்லை "
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Separator ;"
-msgstr "பிரிப்பான் ;"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "DNS server"
-msgstr "DNS சேவகன்"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Automatic"
@@ -4522,11 +3824,6 @@ msgstr "is not a valid entry for this field. Please specify a value between 0 an
 #, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "is not a valid entry for this field. Please specify a value between 1 and 255."
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Search"
-msgstr "தெடுதல்"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
 #, fuzzy
@@ -4578,16 +3875,6 @@ msgstr "பிரிப்பான்"
 msgid  "~Case match"
 msgstr "எழுத்துப் பொருத்தம்"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Upper"
-msgstr "Gro￟"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Lower"
-msgstr "Klein"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "N~ew"
@@ -4612,11 +3899,6 @@ msgstr "அழித்தல்"
 #, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "தற்போதைய மாற்றங்களை ஏற்க விரும்புகிறீர்களா? "
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-#, fuzzy
-msgid  "Security"
-msgstr "பாதுகாப்பு"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 #, fuzzy
@@ -4663,11 +3945,6 @@ msgstr "Passwords are protected by a master password. You will be asked to enter
 msgid  "Master Password..."
 msgstr "Master Password..."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Macro security"
-msgstr "Macro security"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
@@ -4682,6 +3959,10 @@ msgstr "Macro Security..."
 #, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 msgstr "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "Invalid value!\n\nThe maximum value for a port number is 65535."
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4707,11 +3988,6 @@ msgstr "~E-mail program"
 #, fuzzy
 msgid  "All files (*.*)"
 msgstr "அனைத்துகொப்புகள்[*.*]"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-#, fuzzy
-msgid  "Java"
-msgstr "ஜாவா"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
 #, fuzzy
@@ -4742,11 +4018,6 @@ msgstr "அளவுருக்கள் (~P)..."
 #, fuzzy
 msgid  "~Class Path..."
 msgstr "வகுப்பு பாதை (~C)..."
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-#, fuzzy
-msgid  "Location: "
-msgstr "இடம்:"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 #, fuzzy
@@ -4793,20 +4064,10 @@ msgstr "ஒதுக்கு (~A)"
 msgid  "Assig~ned start parameters"
 msgstr "அளவுருக்களை துவக்கி ஒதுக்கிடவும் (~n)"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "எடுத்துக்காட்டாக: -Dmyprop=c:\\program files\\java"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Remove"
 msgstr "நீக்கு (~R)"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Class Path"
-msgstr "வகுப்பு பாதை"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4823,10 +4084,21 @@ msgstr "காப்பகத்தைச் சேர் (~A)..."
 msgid  "Add ~Folder"
 msgstr "கோப்புறையை சேர் (~F)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Treat as equal"
-msgstr "சமமாக பாவி"
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "நீங்கள் தேர்ந்தெடுத்த ஒரு ஜாவா இயங்கும் நேர சூழ்நிலை தேவைப்படிமு பதிப்பு இல்லை.\nவேறுவிதமான ஒரு கோப்புறையை தேர்ந்தெடுக்கவும்."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "தேர்ந்தெடுக்கப்பட்ட ஜாவா இயங்கும் நேரம் சரியாக பணிபுரிய, %PRODUCTNAME ஆனது மாண்டும் துவக்கப்பட வேண்டும்.\nஇப்போது %PRODUCTNAME  மீண்டும் துவக்கவும்."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "நீங்கள் %PRODUCTNAMEஐ மறுதுவக்கவும் ஆகையால் புதிய அல்லது மாற்றியமைக்கபட்ட மதிப்புகளின் விளைவை ஏற்படுத்தும்.\nஇப்போது %PRODUCTNAMEஐ மறுதுவக்கவும்."
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
 #, fuzzy
@@ -4854,9 +4126,8 @@ msgid  "~minus/dash/cho-on"
 msgstr "~minus/dash/cho-on"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_REPEAT_CHAR_MARKS.CHECKBOX.TEXT
-#, fuzzy
 msgid  "'re~peat character' marks"
-msgstr "'re~peat character' marks"
+msgstr "'மீண்டும் வரும் எழுத்துகள்' குறிகள்"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_VARIANT_FORM_KANJI.CHECKBOX.TEXT
 #, fuzzy
@@ -4908,11 +4179,6 @@ msgstr "~ki/ku (tekisuto/tekusuto)"
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "Prolon~ged vowels (ka-/kaa)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Ignore"
-msgstr "மற"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pu~nctuation characters"
@@ -4927,11 +4193,6 @@ msgstr "~Whitespace characters"
 #, fuzzy
 msgid  "Midd~le dots"
 msgstr "Midd~le புள்ளிs"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "ஜப்பானிய மொழியில் தேடுதல்"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 #, fuzzy
@@ -4982,11 +4243,6 @@ msgstr "உச்சரிப்பு"
 #, fuzzy
 msgid  "Hyphenation"
 msgstr "உரை மடிப்பு"
-
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "ஆய்வறிக்கை"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 #, fuzzy
@@ -5053,25 +4309,10 @@ msgstr "விருப்பங்கள்"
 msgid  "Edi~t..."
 msgstr "திருத்துதல்..."
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-#, fuzzy
-msgid  "Check uppercase words"
-msgstr "பெரிய எழுத்துக்களை சோதி"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
 #, fuzzy
 msgid  "Check words with numbers "
 msgstr "எண்களுடன் உள்ள சொற்களை சோதி "
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-#, fuzzy
-msgid  "Check capitalization"
-msgstr "பெரிய எழுத்துப்பிழைகளை சோதி"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-#, fuzzy
-msgid  "Check special regions"
-msgstr "குறிப்பிட்ட இடங்களில் மட்டும் தேடு"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 #, fuzzy
@@ -5109,28 +4350,21 @@ msgid  "Hyphenate special regions"
 msgstr "சில இடங்களில் சொல் பிரி"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_MODULES_EDIT.STRING.TEXT
-#, fuzzy
 msgid  "Edit Available language modules"
-msgstr "இடைக்கும் மொழி பகுதிகள்"
+msgstr "இருக்கும்  மொழி பகுதிகள் திருத்துக"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_DICS_EDIT_DIC.STRING.TEXT
-#, fuzzy
 msgid  "Edit User-defined dictionaries"
-msgstr "User-defined dictionaries"
+msgstr "உபயோகிப்போர் வரையறுத்த அகராதியைத் திருத்து"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.STRING.TEXT
 msgid  "Edit Options"
-msgstr ""
+msgstr "விருப்பத் தேர்வுகளைத் திருத்து"
 
 #: options/optlingu.src#RID_SFXQB_DELDICT.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "Do you want to delete the dictionary?"
 msgstr "அகராதியை நீக்க வேண்டுமா?"
-
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Undo"
-msgstr "மறை"
 
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5147,11 +4381,6 @@ msgstr "கிராபிக்ஸ் செக்"
 msgid  "Use for %PRODUCTNAME"
 msgstr "%PRODUCTNAME காக பயன்படுத்து"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "MB"
-msgstr "MB"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Memory per object"
@@ -5161,11 +4390,6 @@ msgstr "பொருளுக்கான நினைவகம்"
 #, fuzzy
 msgid  "Remove from memory after"
 msgstr "நினைவகத்திலிருந்து பின்னர் நீக்கு"
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "hh:mm"
-msgstr "hh:mm"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 #, fuzzy
@@ -5227,6 +4451,10 @@ msgstr "Paths used by %PRODUCTNAME"
 msgid  "Edit Paths: %1"
 msgstr "Edit Paths: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Configuration"
@@ -5236,26 +4464,6 @@ msgstr "உள்ளமைப்பு"
 #, fuzzy
 msgid  "My Documents"
 msgstr "என் ஆவணங்கள்"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "படங்கள்"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Icons"
-msgstr "சின்னங்கள்"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Palettes"
-msgstr "வண்ணங்கள்"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Backups"
-msgstr "நகலெடுத்தல்"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 #, fuzzy
@@ -5272,40 +4480,15 @@ msgstr "வார்ப்புருக்கள்"
 msgid  "AutoText"
 msgstr "தீர்மானித்த உரை"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "அகராதிகள்"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "உதவி"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Gallery"
 msgstr "தொகுப்பு்பு"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Message Storage"
-msgstr "செய்தி சேகரிப்பு"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 #, fuzzy
 msgid  "Temporary files"
 msgstr "தற்காலிக கோப்புகள்"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Plug-ins"
-msgstr "செருகல்கள்"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Folder Bookmarks"
-msgstr "புத்தக குறிப்புகள் ஆவணம்"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 #, fuzzy
@@ -5372,11 +4555,6 @@ msgstr "எப்போதும் பின்கோப்பை உருவ�
 msgid  "Save ~AutoRecovery information every"
 msgstr "Save ~AutoRecovery information every"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minutes"
-msgstr "நிமிடங்கள்"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Save URLs relative to file system"
@@ -5388,9 +4566,8 @@ msgid  "Save URLs relative to internet"
 msgstr "இணையம்"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FL_FILTER.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Default file format and ODF settings"
-msgstr "Default file format"
+msgstr "உள்ளிருப்பு கோப்பு வடிவம் மற்றும் ODF அமைவுகள்"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_ODF_VERSION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5418,9 +4595,8 @@ msgid  "Size optimization for ODF format"
 msgstr "Size optimization for XML format"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_WARNALIENFORMAT.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Warn when not saving in ODF or default format"
-msgstr "Warn when not saving in OpenDocument or default format"
+msgstr "ODF  அல்லது உள்ளிருப்பு வடிவத்தில் சேமிக்காவிட்டால் எச்சரிக்கவும்"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_APP.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5447,11 +4623,6 @@ msgstr "HTML-Dokument"
 msgid  "Master document"
 msgstr "முதல் ஆவணம்"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "விரிதாள்"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Presentation"
@@ -5468,14 +4639,12 @@ msgid  "Formula"
 msgstr "விதி"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_WARN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
-msgstr "Note: Not using OpenDocument as the default format may cause formatting or content to be lost."
+msgstr "ODF 1.2 விரிவு படுத்தியதை உபயோகிக்காவிட்டால் தகவல் தொலையலாம்."
 
 #: options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr "Using \"%1\" as default file format may cause information loss.\n"
+msgstr "\"%1\" ைஐ உள்ளிருப்பாக உபயோகிக்காவிட்டால் தகவல் தொலையலாம்.\n"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.TABPAGE.TEXT
 #, fuzzy
@@ -5486,11 +4655,6 @@ msgstr "பிழைசரிபார்ப்பு"
 #, fuzzy
 msgid  "~Edit..."
 msgstr "திருத்துதல்..."
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "அகராதிகள்"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 #, fuzzy
@@ -5506,11 +4670,6 @@ msgstr "எண்களுடன் சொற்கள்"
 #, fuzzy
 msgid  "~Case sensitive "
 msgstr "எழுத்து வகை உணரக்கூடிய"
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Check"
-msgstr "சோதனை செய்"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 #, fuzzy
@@ -5707,16 +4866,6 @@ msgstr "வேளிபுற முல தரவை அனுகுவதற்
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "வேளிபுற வடிவத்தில் உள்ள ஆவணத்தை திறக்க மற்றும் சேமிப்பதற்கான பொது முன்னிருப்பு அமைப்புகலை நிங்கள் இங்குதான குறிப்பிடுவிர்கள்."
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "User Data"
-msgstr "பயனர் தகவல்"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
 #, fuzzy
 msgid  "General"
@@ -5742,20 +4891,10 @@ msgstr "Print"
 msgid  "Paths"
 msgstr "பாதைகள்"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Colors"
-msgstr "வண்ணங்கள்"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Fonts"
 msgstr "Fonts"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Security"
-msgstr "பாதுகாப்பு"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 #, fuzzy
@@ -5767,11 +4906,6 @@ msgstr "தோற்றம்"
 msgid  "Accessibility"
 msgstr "இயக்கக்குடிய"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Java"
-msgstr "Java"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Network Identity"
@@ -5782,11 +4916,6 @@ msgstr "பிணையத்தின் வழங்கன்"
 msgid  "Online Update"
 msgstr "OnlineUpdate"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Language Settings"
-msgstr "மொழி மாற்றங்கள்"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Languages"
@@ -5796,11 +4925,6 @@ msgstr "மொழிகள்"
 #, fuzzy
 msgid  "Writing Aids"
 msgstr "எழுதும் உதவிகள்"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "ஜப்பானிய மொழியில் தேடுதல்"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 #, fuzzy
@@ -5821,16 +4945,6 @@ msgstr "Internet"
 #, fuzzy
 msgid  "Proxy"
 msgstr "மாற்றி"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Search"
-msgstr "தெடுதல்"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "E-mail"
-msgstr "மின் அஞ்சல்"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
@@ -5892,11 +5006,6 @@ msgstr "Mail Merge E-mail"
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Background"
-msgstr "பின்னணி"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "%PRODUCTNAME Math"
@@ -5906,16 +5015,6 @@ msgstr "%PRODUCTNAME மாத்"
 #, fuzzy
 msgid  "Settings"
 msgstr "Settings"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "International"
-msgstr "கணக்கிடு"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 #, fuzzy
@@ -5937,30 +5036,10 @@ msgstr "%PRODUCTNAME இம்ப்ரஸ்"
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME வரை"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Charts"
-msgstr "சார்ட்டுகள்"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Default Colors"
-msgstr "முன்இருந்த வண்ணங்கள்"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Load/Save"
 msgstr "ஏற்று/சேமி"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-#, fuzzy
-msgid  "VBA Properties"
-msgstr "VBA குணங்கள்"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Microsoft Office"
-msgstr "Microsoft Office"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 #, fuzzy
@@ -5986,11 +5065,6 @@ msgstr "தகவல்தளங்கள்"
 #, fuzzy
 msgid  "Site certificates"
 msgstr "இடச்சான்றிதழ்கள்"
-
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-#, fuzzy
-msgid  "Personal certificates"
-msgstr "அந்தரங்கச் சான்றிதழ்"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 #, fuzzy
@@ -6037,11 +5111,6 @@ msgstr "பயனர் பெயர்"
 msgid  "Alignment"
 msgstr "ஒழுங்கு"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text alignment"
-msgstr "உரைச் சீரமைப்பு"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Hori~zontal"
@@ -6052,30 +5121,10 @@ msgstr "கிடைமட்டம்"
 msgid  "Default"
 msgstr "முன்னிருப்பு"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "இடது"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "மையம்"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "வலது"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Justified"
 msgstr "நிரப்பல்"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Filled"
-msgstr "Filled"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6086,16 +5135,6 @@ msgstr "உள்தள்ளல்"
 #, fuzzy
 msgid  "~Vertical"
 msgstr "செங்குத்து"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "மேல்"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "நடுவில்"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
 #, fuzzy
@@ -6126,11 +5165,6 @@ msgstr "மட்ட வரம்பு"
 #, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "Asian layout ~mode"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "பண்புகள்"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
 #, fuzzy
@@ -6177,11 +5211,6 @@ msgstr "தானே திருத்து"
 msgid  "Replace"
 msgstr "மாற்று"
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Exceptions"
-msgstr "விதிவிலக்குகள்"
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Options"
@@ -6198,7 +5227,6 @@ msgid  "Word Completion"
 msgstr "சொல் முடித்தல்"
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Smart Tags"
 msgstr "Smart Tags"
 
@@ -6217,11 +5245,6 @@ msgstr "மாற்றுபட்டியலைப் பயன்படு�
 msgid  "Correct TWo INitial CApitals"
 msgstr "இரண்டு முதல் பெரிய எழத்துகளை சரிபார்"
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-#, fuzzy
-msgid  "Capitalize first letter of every sentence"
-msgstr "ஒவ்வொரு வாக்கியத்திலும் உள்ள முதல் எழுத்தை பெரிதாக்கு"
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 #, fuzzy
 msgid  "Automatic *bold* and _underline_"
@@ -6231,11 +5254,6 @@ msgstr "தானான *தடிமன்* மற்றும் _அடிக
 #, fuzzy
 msgid  "Ignore double spaces"
 msgstr "இரட்டை இடைவெளிகளை புறக்கணி"
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-#, fuzzy
-msgid  "URL Recognition"
-msgstr "URL கண்டறிதல்"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
 #, fuzzy
@@ -6252,16 +5270,6 @@ msgstr "அமைவுகள்"
 msgid  "~Edit..."
 msgstr "திருத்து (~E)..."
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "[M]"
-msgstr "[M]"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-#, fuzzy
-msgid  "[T]"
-msgstr "[T]"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "[M]: Replace while modifying existing text"
@@ -6277,15 +5285,9 @@ msgstr "[T]:   தானியங்கும் வடிவம்/தட்ட
 msgid  "Remove blank paragraphs"
 msgstr "வெற்றுப் பத்திகளை நீக்கு"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-#, fuzzy
-msgid  "Replace Custom Styles"
-msgstr "தனிபயன் பாணியை மாற்று"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
-#, fuzzy
 msgid  "Replace bullets with: "
-msgstr "புல்லட்டுகளுடன் மாற்று:"
+msgstr "குண்டுகளால் மாற்று:"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_RIGHT_MARGIN.STRING.TEXT
 #, fuzzy
@@ -6306,11 +5308,6 @@ msgstr "ஓரத்தை செயல்படுத்து"
 #, fuzzy
 msgid  "Create table"
 msgstr "அட்டவணையை உருவாக்கு"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "Apply Styles"
-msgstr "பாணிகளைச் செயல்படுத்து"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
 #, fuzzy
@@ -6372,11 +5369,6 @@ msgstr "சுருக்கம் (பின்வரும் தலைப்
 msgid  "~AutoInclude"
 msgstr "தானே சேர்த்துக் கொள் (~A)"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Words with TWo INitial CApitals"
-msgstr "இரண்டு முதல் பெரிய எழுத்துகளுடன் வார்த்தை"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Ne~w"
@@ -6394,19 +5386,19 @@ msgstr "தானாக சேருதல் (~u)"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWABBREV.STRING.TEXT
 msgid  "New abbreviations"
-msgstr ""
+msgstr "புது சுருக்கம்"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELABBREV.STRING.TEXT
 msgid  "Delete abbreviations"
-msgstr ""
+msgstr "சுருக்கங்களை அழி"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWDOUBLECAPS.STRING.TEXT
 msgid  "New words with two initial capitals"
-msgstr ""
+msgstr "புதிய வார்த்தைகள் ..."
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELDOUBLECAPS.STRING.TEXT
 msgid  "Delete words with two initial capitals"
-msgstr ""
+msgstr "அழி..."
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.STRING.TEXT
 #, fuzzy
@@ -6473,34 +5465,29 @@ msgstr "மேற்கோளைத் துவக்கு"
 msgid  "End quote"
 msgstr "மேற்கோள் முடிவு"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "முன்னிருப்பு"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
 msgid  "Single quotes default"
-msgstr ""
+msgstr "ஒரு ' இயற்கை அமைப்பு"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
 msgid  "Double quotes default"
-msgstr ""
+msgstr "இரு \" உள்ளிருப்பு"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
 msgid  "Start quote of single quotes"
-msgstr ""
+msgstr "' உடன் ஆரம்பி"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
 msgid  "Start quote of double quotes"
-msgstr ""
+msgstr "\" உடன் ஆரம்பி"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
 msgid  "End quote of single quotes"
-msgstr ""
+msgstr "' உடன் முடி"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
 msgid  "End quote of double quotes"
-msgstr ""
+msgstr "\" உடன் முடி"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -6524,7 +5511,7 @@ msgstr "யோசனைகளை சேர்"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CHECKBOX.TEXT
 msgid  "~When closing a document, remove the words collected from it from the list"
-msgstr ""
+msgstr "ஆவணத்தை முடிக்கும் போது, பட்டியலில் இருந்து எடுத்த வார்த்தைகளை எடுத்துவிடு"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6556,30 +5543,15 @@ msgstr "Label text with smart tags"
 msgid  "Currently installed smart tags"
 msgstr "Currently installed smart tags"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "பண்புகள்"
-
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 #, fuzzy
 msgid  "Unlinked graphic"
 msgstr "தனிப்படுத்திய சித்திரம்"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "பின்னணி"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "A~s"
 msgstr "போல"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "நிறம்"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -6591,35 +5563,10 @@ msgstr "வரைகலை"
 msgid  "F~or"
 msgstr "இதற்கு"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cell"
-msgstr "Zelle"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Row"
-msgstr "நிரை"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Table"
-msgstr "அட்டவணை"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Paragraph"
-msgstr "Absatz"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Character"
 msgstr "எழுத்து"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Background color"
-msgstr "பின்னணி color"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6662,9 +5609,8 @@ msgid  "~Tile"
 msgstr "~Tile"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FL_GRAPH_TRANS.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Transparency"
-msgstr "Transparency"
+msgstr "ஒளிபுகுதல்"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_PREVIEW.CHECKBOX.TEXT
 #, fuzzy
@@ -6675,26 +5621,6 @@ msgstr "முன்~காட்சி"
 #, fuzzy
 msgid  "Find graphics"
 msgstr "வரைவியலை தேடுக"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Border / Background"
-msgstr "ஒரம்/பின்னணி"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Borders"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Background"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "எல்லைகள்"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 #, fuzzy
@@ -6710,11 +5636,6 @@ msgstr "முன்னிருப்பு"
 #, fuzzy
 msgid  "~User-defined"
 msgstr "பயன்படுத்துபவர் அறுதியிட்ட"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "வரி"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6770,16 +5691,6 @@ msgstr "தூர~ம்"
 #, fuzzy
 msgid  "C~olor"
 msgstr "நிறம்"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Shadow style"
-msgstr "நிழற் பாங்கு"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "பண்புகள்"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
 #, fuzzy
@@ -6851,31 +5762,6 @@ msgstr "Set Top and Bottom Borders, and All Inner Lines"
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "Set Left and Right Borders, and All Inner Lines"
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Shadow"
-msgstr "நிழல் இல்லை"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Right"
-msgstr "Cast Shadow to Bottom Right"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Right"
-msgstr "Cast Shadow to Top Right"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Left"
-msgstr "Cast Shadow to Bottom Left"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Left"
-msgstr "Cast Shadow to Top Left"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Western text font"
@@ -6901,18 +5787,12 @@ msgstr "அச்செழுத்து பாணி (~T)"
 msgid  "Normal"
 msgstr "சாதாரண"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Italic"
-msgstr "சாய்வு"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bold"
 msgstr "தடிமன்"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM4.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Bold italic"
 msgstr "தடிமனான சாய்வு"
 
@@ -6956,11 +5836,6 @@ msgstr "வடிவமைப்பு (~p)"
 msgid  "Example"
 msgstr "எடுத்துக்காட்டு"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "நிறம்"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Font ~color"
@@ -6972,7 +5847,6 @@ msgid  "No %1"
 msgstr "எண் %1"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_TRANSPARENT.STRING.TEXT
-#, fuzzy
 msgid  "Transparent"
 msgstr "ஒளிவூடுருவல்"
 
@@ -6982,7 +5856,6 @@ msgid  "~Effects"
 msgstr "விளைவுகள் (~E)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "(Without)"
 msgstr "(Without)"
 
@@ -7001,25 +5874,10 @@ msgstr "அடிப்பகுதி"
 msgid  "Title"
 msgstr "தலைப்பு"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small capitals"
-msgstr "சிறிய தலைப்புகள்"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Relief"
 msgstr "உதவி (~R)"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Embossed"
-msgstr "செதுக்குதல்"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Engraved"
-msgstr "செதுக்கப்பட்டது"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
 #, fuzzy
@@ -7056,11 +5914,6 @@ msgstr "ஒற்றை"
 msgid  "Double"
 msgstr "இரட்டை"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Dotted"
-msgstr "புள்ளியிடப்பட்டது"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Dotted (Bold)"
@@ -7087,12 +5940,10 @@ msgid  "Long Dash (Bold)"
 msgstr "நீண்ட கோடு (தடிமன்)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Dot Dash"
 msgstr "புள்ளி கோடு"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Dot Dash (Bold)"
 msgstr "புள்ளி கோடு (தடிமன்)"
 
@@ -7131,16 +5982,6 @@ msgstr "அடிக்கோடின் நிறம் (~n)"
 msgid  "~Strikethrough"
 msgstr "இதன் வழியாக அடித்தல் (~S)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With /"
-msgstr "இதனுடன் /"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With X"
-msgstr "X உடன்"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Underlining"
@@ -7163,63 +6004,18 @@ msgstr "எம்பஸிஸ் குறியீடு (~h)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Dot"
-msgstr "புள்ளி"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Circle"
-msgstr "வட்டம்"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Disc"
 msgstr "வட்டு"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Accent"
-msgstr "அழித்தம்"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Position"
 msgstr "நிலை (~P)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above text"
-msgstr "உரைக்கு மேல் "
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below text"
-msgstr "உரைக்கு கீழ்"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Small Capitals"
-msgstr "சிறிய தலைப்புகள்"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Outline"
 msgstr "வெளிக்கோடு"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "நிழல்"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-#, fuzzy
-msgid  "Blinking"
-msgstr "விழிக்கிறது"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "நிலை"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7250,11 +6046,6 @@ msgstr "எழுத்துரு அளவுடன் தொடர்பு�
 #, fuzzy
 msgid  "Rotation / scaling"
 msgstr "சுழற்சி / அளவிடுதல்"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scaling"
-msgstr "அளவிடுகிளது"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7288,16 +6079,6 @@ msgstr "இடைவெளி"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Default"
-msgstr "முன்னிருப்பு"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Expanded"
-msgstr "விரிக்கப்பட்டது"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Condensed"
 msgstr "சுருக்கப்பெற்ற"
 
@@ -7310,11 +6091,6 @@ msgstr "இதன் படி (~y)"
 #, fuzzy
 msgid  "~Pair kerning"
 msgstr "ஜோடி கெட்டியாக்குகிறது (~P)"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Double-lined"
-msgstr "இரட்டை- கோடிட்டப்பட்டது"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
 #, fuzzy
@@ -7336,26 +6112,6 @@ msgstr "துவக்க எழுத்து (~n)"
 msgid  "(None)"
 msgstr "(None)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  "("
-msgstr "("
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "["
-msgstr "["
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<"
-msgstr "<"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "{"
-msgstr "{"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Other Characters..."
@@ -7366,26 +6122,6 @@ msgstr "மற்ற எழுத்துக்கள்..."
 msgid  "Final charact~er"
 msgstr "இறுதி எழுத்து (~e)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  ")"
-msgstr ")"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "]"
-msgstr "]"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  ">"
-msgstr ">"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "}"
-msgstr "}"
-
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 #, fuzzy
 msgid  "Connector"
@@ -7395,11 +6131,6 @@ msgstr "இணைப்பான்"
 #, fuzzy
 msgid  "~Type"
 msgstr "வகை (~T)"
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line skew"
-msgstr "கோணலான கோடு"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7486,11 +6217,6 @@ msgstr "வலது"
 msgid  "Vertical"
 msgstr "செங்குத்து"
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "ஒன்றுமில்லை"
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Top"
@@ -7510,16 +6236,6 @@ msgstr "இ~டைவெளி"
 #, fuzzy
 msgid  "~Bottom"
 msgstr "கீழ்"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "இடமிருந்து வலம்"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "வலதுலிருந்து இடது"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
 #, fuzzy
@@ -7617,14 +6333,8 @@ msgid  "~Spacing"
 msgstr "இடைவெளி (~S)"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_WINKEL.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Angle"
-msgstr "கோணம் (~A)"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Free"
-msgstr "காலியான"
+msgstr "கோணம்"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
 #, fuzzy
@@ -7655,16 +6365,6 @@ msgstr "விரிவு (~E)"
 #, fuzzy
 msgid  "Optimal"
 msgstr "சிறப்பான"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "மேலிருந்து"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From left"
-msgstr "இடமிருந்து"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
 #, fuzzy
@@ -7701,36 +6401,6 @@ msgstr "சரியானது (~O)"
 msgid  "Straight Line"
 msgstr "நேர் கோடு"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-#, fuzzy
-msgid  "Angled Line"
-msgstr "கோணமுள்ள கோடு"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-#, fuzzy
-msgid  "Angled Connector Line"
-msgstr "கோண இணைப்புக் கோடு"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-#, fuzzy
-msgid  "Double-angled line"
-msgstr "இரட்டை- கோணமுள்ள கோடு"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Top;Middle;Bottom"
-msgstr "மேலே;நடுவே;கீழே"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Left;Middle;Right"
-msgstr "இடது;மத்தியில்;வலது"
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "நிலை மற்றும் அளவு"
-
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Callout"
@@ -7752,9 +6422,8 @@ msgid  "Assigned macro"
 msgstr "ஒதுக்கப்பட்ட மேக்ரோ"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Existing macros\n"
-msgstr "உள்ளிருக்கும் மேக்ரோவினுள் (~E):\n"
+msgstr "இருக்கும் மேக்ரோ\n"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PUSHBUTTON.TEXT
 #, fuzzy
@@ -7775,11 +6444,6 @@ msgstr "மேக்ரோகள்"
 #, fuzzy
 msgid  "Dimensioning"
 msgstr "அளவிடல்"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "வரி"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7815,11 +6479,6 @@ msgstr "Measure ~below பொருள்"
 #, fuzzy
 msgid  "Decimal places"
 msgstr "புள்ளி இடங்கள்"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "உள்பட்டியல்"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7863,58 +6522,13 @@ msgstr "வகை (~C)"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "All"
-msgstr "அனைத்தும்"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "User-defined"
-msgstr "பயனர்- வரையறுதத்து"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "எண்"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Percent"
-msgstr "சதவீதம்"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Currency"
-msgstr "கரன்சி"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "தேதி"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Time"
-msgstr "நேரம்"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Scientific"
 msgstr "அறிவியலுக்குரிய"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Fraction"
-msgstr "பின்னம்"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Boolean Value"
 msgstr "பூலியன் மத்திப்பு"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "உரை"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7966,11 +6580,6 @@ msgstr "மொழி (~L)"
 msgid  "So~urce format"
 msgstr "மூல வடிவம் (~u)"
 
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Add"
-msgstr "சேர்"
-
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Remove"
@@ -7987,7 +6596,6 @@ msgid  "Automatic"
 msgstr "தானாகவே"
 
 #: tabpages/numpages.src#RID_SVXPAGE_PICK_BULLET.FL_VALUES.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Selection"
 msgstr "தேர்ந்தெடுந்தல்"
 
@@ -7997,9 +6605,8 @@ msgid  "~Link graphics"
 msgstr "சித்திரங்களை இணை"
 
 #: tabpages/numpages.src#RID_SVXPAGE_PICK_BMP.FT_ERROR.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "The Gallery theme 'Bullets' is empty (no graphics)."
-msgstr "'புல்லெட்டுகள் எதுவும் இல்லை காலி. "
+msgstr "கண்காட்சியில் உள்ள  'குண்டுகள்' காலியாயுள்ளது (படங்கள் இல்லை)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_LEVEL.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8021,16 +6628,6 @@ msgstr "எண்ணிக்கை"
 msgid  "1, 2, 3, ... "
 msgstr "1, 2, 3, ..."
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ... "
-msgstr "A, B, C, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "I, II, III, ... "
@@ -8046,16 +6643,6 @@ msgstr "i, ii, iii, ..."
 msgid  "A, .., AA, .., AAA, ... "
 msgstr "A, .., AA, .., AAA, ..."
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, .., aa, .., aaa, ..."
-msgstr "a, .., aa, .., aaa, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bullet"
-msgstr "எண்ணிடல்"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Graphics"
@@ -8065,11 +6652,6 @@ msgstr "வரைகலை"
 #, fuzzy
 msgid  "Linked graphics"
 msgstr "Grafik verkn"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "ஒன்றுமில்லை"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
 #, fuzzy
@@ -8261,11 +6843,6 @@ msgstr "எழுத்தின் மையத்தில்"
 msgid  "Bottom of character"
 msgstr "எழுத்தின் கீழ்"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "வரியின் மேல்"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -8276,20 +6853,14 @@ msgstr "வரியின் மையத்தில்"
 msgid  "Bottom of line"
 msgstr "வரியின் கீழ்"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "All levels"
-msgstr "All நிலைகள்"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Consecutive numbering"
 msgstr "தொடர் எண்கள்"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.ST_POPUP_EMPTY_ENTRY.STRING.TEXT
-#, fuzzy
 msgid  "There are no graphics in the 'Bullets' Gallery theme."
-msgstr "'புல்லெட்' என்பதில் படங்கள் இல்லை. "
+msgstr "கண்காட்சியில் உள்ள 'குண்டுகள்' காலியாயுள்ளது "
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
@@ -8323,41 +6894,36 @@ msgstr "எ~ண்ணிடல் சீரமைப்பு"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LABEL_FOLLOWED_BY.FIXEDTEXT.TEXT
 msgid  "Numbering followed by"
-msgstr ""
+msgstr "எண்ணிக்கையைத் தொடர்ந்து "
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.ITEM1.STRINGLIST.ITEM
 msgid  "Tab stop"
-msgstr ""
+msgstr "தத்தல் நிறுத்தம்"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.ITEM2.STRINGLIST.ITEM
 msgid  "Space"
-msgstr ""
+msgstr "இடைவெளி"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.ITEM3.STRINGLIST.ITEM
 msgid  "Nothing"
-msgstr ""
+msgstr "ஒன்றும் இல்லை"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LISTTAB.FIXEDTEXT.TEXT
 msgid  "at"
-msgstr ""
+msgstr "இதில்"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_ALIGNED_AT.FIXEDTEXT.TEXT
 msgid  "Aligned at"
-msgstr ""
+msgstr "நேராக"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_INDENT_AT.FIXEDTEXT.TEXT
 msgid  "Indent at"
-msgstr ""
+msgstr "உள்தள்ளி"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.PB_STANDARD.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Default"
 msgstr "முன்னிருப்பு"
-
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Link"
-msgstr "இணைப்பு"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 #, fuzzy
@@ -8404,11 +6970,6 @@ msgstr "உரை திசை"
 msgid  "Paper ~tray"
 msgstr "காகிதத் ~தட்டு"
 
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Margins"
-msgstr "ஓரங்கள்"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Left"
@@ -8441,58 +7002,13 @@ msgstr "பக்க அடுக்கமைவு"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right and left"
-msgstr "வலது மற்றும் இடது"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Mirrored"
 msgstr "பிரதிபலித்த"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only right"
-msgstr "வலதிற்கு மட்டும்"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only left"
-msgstr "இடது மட்டும்"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "For~mat"
 msgstr "வ~டிவம்"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "ஒன்றுமில்லை"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8540,9 +7056,8 @@ msgid  "The margin settings are out of print range.\n\nDo you still want to appl
 msgstr "விளிம்புகள் அச்சடிக்கும் எல்லையை மீறிகின்றன. தொடர விருப்பமா? "
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A6"
-msgstr ""
+msgstr "A6"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A5.ITEMLIST.ITEM
 #, fuzzy
@@ -8590,9 +7105,8 @@ msgid  "Long Bond"
 msgstr "நீண்ட பிணைப்பு"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_TABLOID.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Tabloid"
-msgstr "சுருக்க முறை"
+msgstr "சுருக்கம்"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_JIS.ITEMLIST.ITEM
 #, fuzzy
@@ -8650,9 +7164,8 @@ msgid  "C5 Envelope"
 msgstr "C5 கடித உறை"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C4.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C4 Envelope"
-msgstr "C4  கடித உறை"
+msgstr "C4 கடித உறை"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM675.ITEMLIST.ITEM
 #, fuzzy
@@ -8734,11 +7247,6 @@ msgstr "முதல் கோடு (~F)"
 msgid  "~Automatic"
 msgstr "தானியக்கம் (~A)"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Indent"
-msgstr "உள்ளடக்கம்"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Ab~ove paragraph"
@@ -8756,28 +7264,8 @@ msgstr "இடைவெளி"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Single"
-msgstr "ஒற்றை"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "1.5 lines"
 msgstr "1,5 வரிகள்"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Double"
-msgstr "இரட்டை"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Proportional"
-msgstr "சரிசம அளவு"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At least"
-msgstr "குறைந்தபட்சம்"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -8835,7 +7323,6 @@ msgid  "~Center"
 msgstr "மையம் (~C)"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_JUSTIFYALIGN.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Justified"
 msgstr "நிரூபிக்கப்பட்டது"
 
@@ -8853,21 +7340,6 @@ msgstr "வலது/கீழ் (~t)"
 #, fuzzy
 msgid  "~Last line"
 msgstr "கடைசி வரி (~L)"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "முன்னிருப்பு"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "இடது"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "மையக்கப்பட்டது"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 #, fuzzy
@@ -8899,35 +7371,15 @@ msgstr "தானியக்கம்"
 msgid  "Base line"
 msgstr "அடிப்படை வரி"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "மேல்"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "மத்தியில்"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bottom"
 msgstr "கீழ்"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "பண்புகள்"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Text ~direction"
 msgstr "உரை திசை (~d)"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Text Flow"
-msgstr "உரை பாய்வு"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8954,11 +7406,6 @@ msgstr "அதிகபட்ச இடைவிடா மேற்கோள்�
 msgid  "Hyphenation"
 msgstr "இணைக்கோடு"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Breaks"
-msgstr "நிறுத்தங்கள்"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Insert"
@@ -8969,30 +7416,10 @@ msgstr "நுழை"
 msgid  "~Type"
 msgstr "வகை (~T)"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Page"
-msgstr "பக்கம்"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Column"
-msgstr "நிரல்"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Position"
 msgstr "நிலை"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Before"
-msgstr "முன்"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After"
-msgstr "பின்"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9061,12 +7488,7 @@ msgstr "எடுத்துக்காட்டு"
 
 #: tabpages/paragrph.src#STR_PAGE_STYLE.STRING.TEXT
 msgid  "Page Style"
-msgstr ""
-
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the gradient:"
-msgstr "சாய்வுகோணத்திற்கு பெயரளிக்கவும்:"
+msgstr "பக்க விதம்"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 #, fuzzy
@@ -9098,11 +7520,6 @@ msgstr "பிட்டுப்படத்தை நீக்கவா?"
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 msgstr "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the line style:"
-msgstr "கோட்டுப் பாங்கிற்கு பெயரை அளிக்கவும்:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the line style?"
@@ -9113,11 +7530,6 @@ msgstr "கோட்டுப் பாங்கை நீக்கவா?"
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
 msgstr "The line style was modified without saving. \nModify the selected line style or add a new line style."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the hatching:"
-msgstr "இடைவெளிக்கு பெயரை அளிக்கவும்:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the hatching?"
@@ -9127,16 +7539,6 @@ msgstr "இடைவெளியை நீக்கவா?"
 #, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 msgstr "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "மாற்றுதல்"
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "சேர்த்தல்"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
 #, fuzzy
@@ -9193,16 +7595,6 @@ msgstr "அம்புமுனையை நீக்கவா?"
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "இடம் மற்றும் அளவு"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "அளவு"
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Width"
@@ -9217,11 +7609,6 @@ msgstr "உயரம்"
 #, fuzzy
 msgid  "~Keep ratio"
 msgstr "~�?��?��ழ?��?��?�-�?��?��?��?��?���?���?�?�?��?���?�? �?��?�-�?��?��?��?��?�?�?��?�-"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "நங்கூரம்"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9247,11 +7634,6 @@ msgstr "போல் எழுத்து"
 #, fuzzy
 msgid  "To ~frame"
 msgstr "சட்டத்துக்கு"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "பாதுகாப்பு"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9349,12 +7731,6 @@ msgid  "Ellipsoid"
 msgstr "Ellipsoid"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Quadratic"
-msgstr "சதுரமான"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Square"
 msgstr "சதுரம்"
 
@@ -9410,16 +7786,6 @@ msgstr "நிரப்பு"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "None"
-msgstr "ஒன்றுமில்லை"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "நிறம்"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Hatching"
 msgstr "Hatching"
 
@@ -9443,11 +7809,6 @@ msgstr "தானாக (~u)"
 msgid  "~Background color"
 msgstr "பின்னணி நிறம் (~B)"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "அளவு"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Original"
@@ -9468,11 +7829,6 @@ msgstr "அகலம் (~d)"
 msgid  "H~eight"
 msgstr "உயரம் (~e)"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "இடம்"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~X Offset"
@@ -9492,11 +7848,6 @@ msgstr "டேல் (~T)"
 #, fuzzy
 msgid  "Auto~Fit"
 msgstr "தானாக பொருந்தும் (~F)"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Offset"
-msgstr "ஆஃப்செட்"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9574,7 +7925,6 @@ msgid  "Line ~color"
 msgstr "கோட்டின் நிறம் (~c)"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_ADD.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Add..."
 msgstr "சேர் (~A)"
 
@@ -9632,11 +7982,6 @@ msgstr "பிட்மேப் பட்டியலை சேமி"
 #, fuzzy
 msgid  "Gradients"
 msgstr "க்ரேடியன்ட்டுகள்"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Rectangular"
-msgstr "செவ்வகமான"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9720,11 +8065,11 @@ msgstr "பிட்மேப்புகள்"
 
 #: tabpages/tabarea.src#STR_LB_HATCHINGSTYLE.STRING.TEXT
 msgid  "Hatching Style"
-msgstr ""
+msgstr "கோடிடும் விதம்"
 
 #: tabpages/tabarea.src#STR_CUI_COLORMODEL.STRING.TEXT
 msgid  "Color Mode"
-msgstr ""
+msgstr "நிறம் வகை"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.TABPAGE.TEXT
 #, fuzzy
@@ -9756,11 +8101,6 @@ msgstr "அகலம் (~W)"
 msgid  "~Transparency"
 msgstr "ஊடுருவக்கூடிய (~T)"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Arrow styles"
-msgstr "அம்புக்குறி பாணிகள்"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "St~yle"
@@ -9788,7 +8128,7 @@ msgstr "ஒத்திசைக்கப்பட்ட முடிவுக�
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_EDGE_STYLE.FIXEDLINE.TEXT
 msgid  "Corner and cap styles"
-msgstr ""
+msgstr "மூலைகள் மற்றும் cap விதம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_EDGE_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9799,11 +8139,6 @@ msgstr "மூலை பாணி"
 #, fuzzy
 msgid  "Rounded"
 msgstr "வட்டமான"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "- none -"
-msgstr "- ஒன்றுமில்லை -"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -9817,15 +8152,15 @@ msgstr "சாய்த்தளமான"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_CAP_STYLE.FIXEDTEXT.TEXT
 msgid  "Ca~p style"
-msgstr ""
+msgstr "Cap விதம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.DEFAULT.STRINGLIST.ITEM
 msgid  "Flat"
-msgstr ""
+msgstr "சமதளம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Round"
-msgstr ""
+msgstr "வட்டம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -9836,11 +8171,6 @@ msgstr "சதுரம் "
 #, fuzzy
 msgid  "Icon"
 msgstr "சின்னம்"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "No Symbol"
-msgstr "அடையாளம் இல்லை"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
 #, fuzzy
@@ -9883,43 +8213,32 @@ msgid  "Keep ratio"
 msgstr "Keep ratio"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_STYLE.STRING.TEXT
-#, fuzzy
 msgid  "Style"
-msgstr "பாணி (~S)"
+msgstr "பாணி "
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_START_STYLE.STRING.TEXT
 msgid  "Start style"
-msgstr ""
+msgstr "ஆரம்ப விதம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_END_STYLE.STRING.TEXT
 msgid  "End style"
-msgstr ""
+msgstr "முடிக்கும் விதம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_START_WIDTH.STRING.TEXT
 msgid  "Start width"
-msgstr ""
+msgstr "ஆரம்ப அகலம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_END_WIDTH.STRING.TEXT
 msgid  "End width"
-msgstr ""
+msgstr "முடியும் அகலம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_START.STRING.TEXT
 msgid  "Start with center"
-msgstr ""
+msgstr "நடுவிலிருந்து ஆரம்பி"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_END.STRING.TEXT
 msgid  "End with center"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-#, fuzzy
-msgid  "Define line styles"
-msgstr "கோடு பாணிகளை வரையறு"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "தன்மைகள்"
+msgstr "நடுவில் முடி"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9976,11 +8295,6 @@ msgstr "மாற்றியமை (~M)..."
 msgid  "~Delete..."
 msgstr "அழி (~D)..."
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Load Line Styles"
-msgstr "கோட்டின் பாணிகளை ஏற்று"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Save Line Styles"
@@ -9988,27 +8302,27 @@ msgstr "கோடின் பாணிகளை சேமி"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_TYPE.STRING.TEXT
 msgid  "Start type"
-msgstr ""
+msgstr "ஆரம்ப விதம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_TYPE.STRING.TEXT
 msgid  "End type"
-msgstr ""
+msgstr "முடியும் விதம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_NUM.STRING.TEXT
 msgid  "Start number"
-msgstr ""
+msgstr "ஆரம்ப எண்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_NUM.STRING.TEXT
 msgid  "End number"
-msgstr ""
+msgstr "முடிவு எண்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_LENGTH.STRING.TEXT
 msgid  "Start length"
-msgstr ""
+msgstr "ஆரம்ப நீளம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_LENGTH.STRING.TEXT
 msgid  "End length"
-msgstr ""
+msgstr "முடிவு நீளம்"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.TABPAGE.TEXT
 #, fuzzy
@@ -10044,26 +8358,6 @@ msgstr "அம்புக்குறி பாணிகளை ஏற்று"
 #, fuzzy
 msgid  "Save Arrow Styles"
 msgstr "அம்புக்குறி பாணிகளை சேமி"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "கோடு"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Shadow"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line Styles"
-msgstr "கோடின் பாணிகள்"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Arrow Styles"
-msgstr "அம்புக்குறி பாணிகள்"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 #, fuzzy
@@ -10109,11 +8403,6 @@ msgstr "எழுத்து (~C)"
 #, fuzzy
 msgid  "Fill character"
 msgstr "எழுத்தை நிரப்பு"
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "ஒன்றுமில்லை (~o)"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
 #, fuzzy
@@ -10180,41 +8469,6 @@ msgstr "உருட்டுவதன் வழியாக"
 msgid  "Scroll Back and Forth"
 msgstr "முன் மற்றும் பின் உருட்டு"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Scroll In"
-msgstr "இதில் உருட்டு"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Direction"
-msgstr "திசை"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Top"
-msgstr "மேலுக்கு"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Left"
-msgstr "இடதுக்கு"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Right"
-msgstr "வலதுக்கு"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Bottom"
-msgstr "கீழுக்கு"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "பண்புகள்"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "S~tart inside"
@@ -10245,20 +8499,10 @@ msgstr "கூடுதல்"
 msgid  "~Pixels"
 msgstr "பிக்சல்கள் (~P)"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "தாமதம்"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "தானாக (~A)"
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "உரை"
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 #, fuzzy
@@ -10325,18 +8569,12 @@ msgstr "மேல் (~T)"
 msgid  "~Bottom"
 msgstr "கீழ் (~B)"
 
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text anchor"
-msgstr "உரை ஆன்கர்"
-
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Full ~width"
 msgstr "முழு அகலம் (~w)"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TABPAGE.TEXT
-#, fuzzy
 msgid  "Position and Size"
 msgstr "ﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ? ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ? ﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ?"
 
@@ -10346,24 +8584,16 @@ msgid  "Position"
 msgstr "இடம்"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Position ~X"
 msgstr "ﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ? ~X"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Position ~Y"
 msgstr "ﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ?ﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢﾴ?ﾢ? ~Y"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Base point"
 msgstr "தளப் புள்ளி"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "அளவு"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -10380,20 +8610,10 @@ msgstr "உயரம் (~e)"
 msgid  "~Keep ratio"
 msgstr "~Keep ratio"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "பாதுகாப்பு"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Size"
 msgstr "அளவு (~S)"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Adapt"
-msgstr "அடாப்ட்"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
@@ -10405,60 +8625,20 @@ msgstr "உரைக்கு பொருந்தும் அகலம் (~F
 msgid  "Fit ~height to text"
 msgstr "உரைக்கு பொருந்தும் உயரம் (~h)"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "Anchor"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Anchor"
 msgstr "ஹங்கர் (~A)"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To paragraph"
-msgstr "பத்திக்கு"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "As character"
 msgstr "எழுத்தாக"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To page"
-msgstr "பக்கத்திற்காக"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To frame"
-msgstr "சட்டத்திற்காக"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~osition"
 msgstr "இடம் (~o)"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "மேலிருந்து"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "மேல்"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "மத்தியில்"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "கீழ்"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -10475,11 +8655,6 @@ msgstr "எழுத்துகளின் மத்தியில்"
 msgid  "Bottom of character"
 msgstr "எழுத்துகளின் கீழ்"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "வரியின் மேல்"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -10489,11 +8664,6 @@ msgstr "வரியின் மத்தியில்"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "வரியின் கீழ்"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Angle"
-msgstr "�?��?�-�?��?�?�?��?��ண�?��?��?��?��?�?"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
@@ -10534,11 +8704,6 @@ msgstr "சுழற்றப்படுகிற கோணம்"
 #, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "சாய்வு & ஓர ஆரங்கள்"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Corner radius"
-msgstr "ஓர ஆரங்கள்"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
 #, fuzzy

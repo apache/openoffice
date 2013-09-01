@@ -31,17 +31,774 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: src/btntext.src#SV_BUTTONTEXT_OK.STRING.TEXT
+msgid  "OK"
+msgstr "У реду"
+
+#: src/btntext.src#SV_BUTTONTEXT_CANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "Откажи"
+
+#: src/btntext.src#SV_BUTTONTEXT_YES.STRING.TEXT
+msgid  "~Yes"
+msgstr "~Да"
+
+#: src/btntext.src#SV_BUTTONTEXT_NO.STRING.TEXT
+msgid  "~No"
+msgstr "~Не"
+
+#: src/btntext.src#SV_BUTTONTEXT_RETRY.STRING.TEXT
+msgid  "~Retry"
+msgstr "~Понови"
+
+#: src/btntext.src#SV_BUTTONTEXT_HELP.STRING.TEXT
+msgid  "~Help"
+msgstr "~Помоћ"
+
 #: src/btntext.src#SV_BUTTONTEXT_MORE.STRING.TEXT
 #, fuzzy
 msgid  "~More"
 msgstr "~Још"
 
-#: src/helptext.src#SV_HELPTEXT_HELP.STRING.TEXT
+#: src/btntext.src#SV_BUTTONTEXT_IGNORE.STRING.TEXT
+msgid  "~Ignore"
+msgstr "~Занемари"
+
+#: src/btntext.src#SV_BUTTONTEXT_ABORT.STRING.TEXT
+msgid  "~Abort"
+msgstr "~Одустани"
+
+#: src/helptext.src#SV_HELPTEXT_CLOSE.STRING.TEXT
+msgid  "Close"
+msgstr "Затвори"
+
+#: src/helptext.src#SV_HELPTEXT_CLOSEDOCUMENT.STRING.TEXT
+msgid  "Close Document"
+msgstr "Затвори документ"
+
+#: src/helptext.src#SV_HELPTEXT_MINIMIZE.STRING.TEXT
+msgid  "Minimize"
+msgstr "Смањи"
+
+#: src/helptext.src#SV_HELPTEXT_MAXIMIZE.STRING.TEXT
+msgid  "Maximize"
+msgstr "Повећај"
+
+#: src/helptext.src#SV_HELPTEXT_RESTORE.STRING.TEXT
+msgid  "Restore"
+msgstr "Поново постави"
+
+#: src/helptext.src#SV_HELPTEXT_ROLLDOWN.STRING.TEXT
+msgid  "Drop down"
+msgstr "Спусти"
+
+#: src/helptext.src#SV_HELPTEXT_ROLLUP.STRING.TEXT
+msgid  "Roll up"
+msgstr "Подигни"
+
+#: src/helptext.src#SV_HELPTEXT_ALWAYSVISIBLE.STRING.TEXT
+msgid  "Always visible"
+msgstr "Увек видљив"
+
+#: src/helptext.src#SV_HELPTEXT_FADEIN.STRING.TEXT
+msgid  "Show"
+msgstr "Прикажи"
+
+#: src/helptext.src#SV_HELPTEXT_FADEOUT.STRING.TEXT
+msgid  "Hide"
+msgstr "Сакриј"
+
+#: src/helptext.src#SV_HELPTEXT_SPLITFLOATING.STRING.TEXT
+msgid  "Floating"
+msgstr "Плутајући"
+
+#: src/helptext.src#SV_HELPTEXT_SPLITFIXED.STRING.TEXT
+msgid  "Stick"
+msgstr "Фиксирај"
+
+#: src/helptext.src#SV_SHORTCUT_CONTEXTHELP.STRING.TEXT
+msgid  "Context Help"
+msgstr "Приручна помоћ"
+
+#: src/helptext.src#SV_SHORTCUT_ACTIVEHELP.STRING.TEXT
+msgid  "Extended Tips"
+msgstr "Проширени савети"
+
+#: src/helptext.src#SV_SHORTCUT_DOCKUNDOCK.STRING.TEXT
+msgid  "Dock/Undock Windows"
+msgstr "Усидри или откачи прозоре"
+
+#: src/helptext.src#SV_SHORTCUT_NEXTSUBWINDOW.STRING.TEXT
+msgid  "To Next Toolbar/Window"
+msgstr "У следећу палету или прозор"
+
+#: src/helptext.src#SV_SHORTCUT_PREVSUBWINDOW.STRING.TEXT
+msgid  "To Previous Toolbar/Window"
+msgstr "У претходну палету или прозор"
+
+#: src/helptext.src#SV_SHORTCUT_TODOCUMENT.STRING.TEXT
+msgid  "To Document"
+msgstr "У документ"
+
+#: src/helptext.src#SV_SHORTCUT_MENUBAR.STRING.TEXT
+msgid  "To Menu Bar"
+msgstr "У линију менија"
+
+#: src/helptext.src#SV_SHORTCUT_SPLITTER.STRING.TEXT
+msgid  "Split window separator"
+msgstr "Раздвајач дељења прозора"
+
+#: src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.STRING.TEXT
+msgid  "<No selection possible>"
+msgstr "<Није могућ избор>"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MENUITEM.TEXT
+msgid  "~Undo"
+msgstr "~Опозови"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MENUITEM.TEXT
+msgid  "Cu~t"
+msgstr "И~сеци"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MENUITEM.TEXT
+msgid  "~Copy"
+msgstr "~Копирај"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MENUITEM.TEXT
+msgid  "~Paste"
+msgstr "~Убаци"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MENUITEM.TEXT
+msgid  "~Delete"
+msgstr "~Обриши"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MENUITEM.TEXT
+msgid  "Select ~All"
+msgstr "Изабери ~све"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MENUITEM.TEXT
+msgid  "~Special Character..."
+msgstr "~Посебан знак..."
+
+#: src/menu.src#SV_MENU_MAC_SERVICES.STRING.TEXT
+msgid  "Services"
+msgstr "Сервиси"
+
+#: src/menu.src#SV_MENU_MAC_HIDEAPP.STRING.TEXT
+msgid  "Hide %PRODUCTNAME"
+msgstr "Сакриј %PRODUCTNAME"
+
+#: src/menu.src#SV_MENU_MAC_HIDEALL.STRING.TEXT
+msgid  "Hide Others"
+msgstr "Сакриј остале"
+
+#: src/menu.src#SV_MENU_MAC_SHOWALL.STRING.TEXT
+msgid  "Show All"
+msgstr "Прикажи све"
+
+#: src/menu.src#SV_MENU_MAC_QUITAPP.STRING.TEXT
+msgid  "Quit %PRODUCTNAME"
+msgstr "Напусти %PRODUCTNAME"
+
+#: src/print.src#SV_DLG_PRINT.MODALDIALOG.TEXT
 #, fuzzy
-msgid  "Help"
-msgstr "Помоћ"
+msgid  "Print"
+msgstr "Штампање"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKBUTTON.TEXT
+msgid  "~Print"
+msgstr "~Штампај"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FIXEDTEXT.TEXT
+msgid  "/ %n"
+msgstr "/ %n"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.STRING.TEXT
+msgid  "No pages"
+msgstr "Нема страница"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.STRING.TEXT
+msgid  "Print to File..."
+msgstr "Штампај у датотеку..."
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.STRING.TEXT
+msgid  "Default printer"
+msgstr "Подразумевани штампач"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.STRING.TEXT
+msgid  "Print preview"
+msgstr "Преглед пре штампања"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.TABPAGE.TEXT
+msgid  "Page Layout"
+msgstr "Распоред странице"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FIXEDLINE.TEXT
+msgid  "Layout"
+msgstr "Размештај"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RADIOBUTTON.TEXT
+msgid  "Pa~ges per sheet"
+msgstr "Ст~раница по листу"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.STRINGLIST.ITEM
+msgid  "1"
+msgstr "1"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.STRINGLIST.ITEM
+msgid  "2"
+msgstr "2"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.STRINGLIST.ITEM
+msgid  "4"
+msgstr "4"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.STRINGLIST.ITEM
+msgid  "6"
+msgstr "6"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.STRINGLIST.ITEM
+msgid  "9"
+msgstr "9"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.STRINGLIST.ITEM
+msgid  "16"
+msgstr "16"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0XFFFF.STRINGLIST.ITEM
+msgid  "Custom"
+msgstr "Прилагођено"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FIXEDTEXT.TEXT
+msgid  "P~ages"
+msgstr "Стр~анице"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FIXEDTEXT.TEXT
+msgid  "b~y"
+msgstr "п~о"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FIXEDTEXT.TEXT
+msgid  "~Distance"
+msgstr "~Раздаљина"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FIXEDTEXT.TEXT
+msgid  "between pages"
+msgstr "између страница"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FIXEDTEXT.TEXT
+msgid  "~Margin"
+msgstr "~Маргина"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FIXEDTEXT.TEXT
+msgid  "to sheet border"
+msgstr "до ивице листа"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FIXEDTEXT.TEXT
+msgid  "~Orientation"
+msgstr "~Оријентација"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.STRINGLIST.ITEM
+msgid  "Automatic"
+msgstr "Аутоматски"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.STRINGLIST.ITEM
+msgid  "Portrait"
+msgstr "Усправно"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.STRINGLIST.ITEM
+msgid  "Landscape"
+msgstr "Водоравно"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FIXEDTEXT.TEXT
+msgid  "Order"
+msgstr "Редослед"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.STRINGLIST.ITEM
+msgid  "left to right, then down"
+msgstr "слева удесно, па надоле"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.STRINGLIST.ITEM
+msgid  "top to bottom, then right"
+msgstr "од врха ка дну, па десно"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBRL.STRINGLIST.ITEM
+msgid  "top to bottom, then left"
+msgstr "с врха ка дну, па десно"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_RLTB.STRINGLIST.ITEM
+msgid  "right to left, then down"
+msgstr "здесна на лево, затим доле"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_BORDER_CB.CHECKBOX.TEXT
+msgid  "Draw a border around each page"
+msgstr "Ивица око сваке странице"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.TABPAGE.TEXT
+#, fuzzy
+msgid  "General"
+msgstr "Опште"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS_FL.FIXEDLINE.TEXT
+msgid  "Prin~ter"
+msgstr "Штам~пач"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_DETAILS_BTN.CHECKBOX.TEXT
+msgid  "Details"
+msgstr "Детаљи"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_STATUS_TXT.FIXEDTEXT.TEXT
+msgid  "Status:"
+msgstr "Стање:"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_LOCATION_TXT.FIXEDTEXT.TEXT
+msgid  "Location:"
+msgstr "Локација:"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COMMENT_TXT.FIXEDTEXT.TEXT
+msgid  "Comment:"
+msgstr "Коментар:"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRT_SETUP.PUSHBUTTON.TEXT
+msgid  "Properties..."
+msgstr "Својства..."
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPIES.FIXEDLINE.TEXT
+msgid  "Range and copies"
+msgstr "Опсег и копије"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT.FIXEDTEXT.TEXT
+msgid  "Number of copies"
+msgstr "Број копија"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COLLATE.CHECKBOX.TEXT
+msgid  "Collate"
+msgstr "Сортирај"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_OPT_REVERSE.CHECKBOX.TEXT
+#, fuzzy
+msgid  "Print in ~reverse page order"
+msgstr "Штампај у ~обрнутом редоследу страна"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.TABPAGE.TEXT
 #, fuzzy
 msgid  "Options"
 msgstr "Опције"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_TOFILE.CHECKBOX.TEXT
+#, fuzzy
+msgid  "Print to ~file"
+msgstr "Штампај у ~датотеку"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.CHECKBOX.TEXT
+#, fuzzy
+msgid  "~Create single print jobs for collated output"
+msgstr "~Посебни послови за сваку сортирану копију"
+
+#: src/print.src#SV_DLG_PRINT_PROGRESS.MODELESSDIALOG.TEXT
+#, fuzzy
+msgid  "Printing"
+msgstr "Штампам"
+
+#: src/print.src#SV_DLG_PRINT_PROGRESS.SV_PRINT_PROGRESS_TEXT.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Page %p of %n"
+msgstr "Страница %p. од %n"
+
+#: src/print.src#SV_PRINT_NOPRINTERWARNING.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "No default printer found.\nPlease choose a printer and try again."
+msgstr "Нема подразумеваног штампача.\nИзаберите штампач и покушајте поново."
+
+#: src/print.src#SV_PRINT_NOCONTENT.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
+msgstr "Нема страница за штампу. Проверите опсег документа који сте желели да одштампате."
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM1.ITEMLIST.ITEM
+#, fuzzy
+msgid  "Preview"
+msgstr "Преглед"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM2.ITEMLIST.ITEM
+#, fuzzy
+msgid  "Page number"
+msgstr "Број странице"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM3.ITEMLIST.ITEM
+#, fuzzy
+msgid  "Number of pages"
+msgstr "Број страница:"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM4.ITEMLIST.ITEM
+#, fuzzy
+msgid  "More"
+msgstr "Још"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM5.ITEMLIST.ITEM
+#, fuzzy
+msgid  "Print selection only"
+msgstr "Штампа само изабрано"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM1.ITEMLIST.ITEM
+#, fuzzy
+msgid  "A0"
+msgstr "A0"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM2.ITEMLIST.ITEM
+#, fuzzy
+msgid  "A1"
+msgstr "А1"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM3.ITEMLIST.ITEM
+#, fuzzy
+msgid  "A2"
+msgstr "А2"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM4.ITEMLIST.ITEM
+#, fuzzy
+msgid  "A3"
+msgstr "А3"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM5.ITEMLIST.ITEM
+#, fuzzy
+msgid  "A4"
+msgstr "А4"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM6.ITEMLIST.ITEM
+#, fuzzy
+msgid  "A5"
+msgstr "А5"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM7.ITEMLIST.ITEM
+#, fuzzy
+msgid  "B4 (ISO)"
+msgstr "Б4 (ИСО)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM8.ITEMLIST.ITEM
+#, fuzzy
+msgid  "B5 (ISO)"
+msgstr "Б5 (ИСО)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM9.ITEMLIST.ITEM
+#, fuzzy
+msgid  "Letter"
+msgstr "Писмо"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM10.ITEMLIST.ITEM
+msgid  "Legal"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM11.ITEMLIST.ITEM
+msgid  "Tabloid"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM12.ITEMLIST.ITEM
+#, fuzzy
+msgid  "User Defined"
+msgstr "кориснички дефинисано"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM13.ITEMLIST.ITEM
+#, fuzzy
+msgid  "B6 (ISO)"
+msgstr "Б6 (ИСО)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM14.ITEMLIST.ITEM
+#, fuzzy
+msgid  "C4 Envelope"
+msgstr "Ц4 коверта"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM15.ITEMLIST.ITEM
+#, fuzzy
+msgid  "C5 Envelope"
+msgstr "Ц5 коверта"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM16.ITEMLIST.ITEM
+#, fuzzy
+msgid  "C6 Envelope"
+msgstr "Ц6 коверта"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM17.ITEMLIST.ITEM
+#, fuzzy
+msgid  "C6/5 Envelope"
+msgstr "Ц6/5 коверта"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM18.ITEMLIST.ITEM
+#, fuzzy
+msgid  "DL Envelope"
+msgstr "ДЛ коверта"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM19.ITEMLIST.ITEM
+msgid  "Dia Slide"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM20.ITEMLIST.ITEM
+#, fuzzy
+msgid  "Screen"
+msgstr "Екран"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM21.ITEMLIST.ITEM
+#, fuzzy
+msgid  "C"
+msgstr "Ц"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM22.ITEMLIST.ITEM
+#, fuzzy
+msgid  "D"
+msgstr "Д"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM23.ITEMLIST.ITEM
+#, fuzzy
+msgid  "E"
+msgstr "Е"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM24.ITEMLIST.ITEM
+msgid  "Executive"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM25.ITEMLIST.ITEM
+msgid  "Long Bond"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM26.ITEMLIST.ITEM
+msgid  "#8 (Monarch) Envelope"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM27.ITEMLIST.ITEM
+msgid  "#6 3/4 (Personal) Envelope"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM28.ITEMLIST.ITEM
+#, fuzzy
+msgid  "#9 Envelope"
+msgstr "#9 коверта"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM29.ITEMLIST.ITEM
+#, fuzzy
+msgid  "#10 Envelope"
+msgstr "#10 коверта"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM30.ITEMLIST.ITEM
+#, fuzzy
+msgid  "#11 Envelope"
+msgstr "#11 коверта"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM31.ITEMLIST.ITEM
+#, fuzzy
+msgid  "#12 Envelope"
+msgstr "#12 коверта"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM32.ITEMLIST.ITEM
+msgid  "16 Kai"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM33.ITEMLIST.ITEM
+msgid  "32 Kai"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM34.ITEMLIST.ITEM
+msgid  "Big 32 Kai"
+msgstr ""
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM35.ITEMLIST.ITEM
+#, fuzzy
+msgid  "B4 (JIS)"
+msgstr "Б4 (ЈИС)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM36.ITEMLIST.ITEM
+#, fuzzy
+msgid  "B5 (JIS)"
+msgstr "Б5 (ЈИС)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM37.ITEMLIST.ITEM
+#, fuzzy
+msgid  "B6 (JIS)"
+msgstr "Б6 (ЈИС)"
+
+#: src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.STRING.TEXT
+#, fuzzy
+msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
+msgstr "Не могу учитати компоненту (%s). Покрените\nпрограм за инсталацију са опцијом за поправку."
+
+#: src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.STRING.TEXT
+#, fuzzy
+msgid  "Do not show this information again."
+msgstr "Не приказуј више ову информацију."
+
+#: src/stdtext.src#SV_STDTEXT_DONTASKAGAIN.STRING.TEXT
+#, fuzzy
+msgid  "Do not show this question again."
+msgstr "Не приказуј више ово питање."
+
+#: src/stdtext.src#SV_STDTEXT_DONTWARNAGAIN.STRING.TEXT
+#, fuzzy
+msgid  "Do not show warning again."
+msgstr "Не приказуј више ово упозорење."
+
+#: src/stdtext.src#SV_ACCESSERROR_WRONG_VERSION.STRING.TEXT
+#, fuzzy
+msgid  "Wrong Version"
+msgstr "Погрешно издање"
+
+#: src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.STRING.TEXT
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
+msgstr "%PRODUCTNAME %PRODUCTVERSION захтева Java Access Bridge 1.0.3 или неко новије издање за технологије за испомоћ."
+
+#: src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.STRING.TEXT
+#, fuzzy
+msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
+msgstr "Кликните „%OK“ како бисте покренули  %PRODUCTNAME %PRODUCTVERSION без технологија за испомоћ или изаберите „%CANCEL“ како бисте напустили %PRODUCTNAME %PRODUCTVERSION."
+
+#: src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.STRING.TEXT
+#, fuzzy
+msgid  "No Java Access Bridge"
+msgstr "Не постоји Java Access Bridge"
+
+#: src/stdtext.src#SV_ACCESSERROR_FAULTY_JAVA.STRING.TEXT
+#, fuzzy
+msgid  "Faulty Java Installation"
+msgstr "Неисправна инсталација јаве"
+
+#: src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.STRING.TEXT
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
+msgstr ".%PRODUCTNAME %PRODUCTVERSION захтева Java 1.4.0_02 или неко новије издање за технологије за испомоћ."
+
+#: src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.STRING.TEXT
+#, fuzzy
+msgid  "No Java Installation"
+msgstr "Јава није инсталирана"
+
+#: src/stdtext.src#SV_ACCESSERROR_JAVA_NOT_CONFIGURED.STRING.TEXT
+#, fuzzy
+msgid  "Missing Java Configuration"
+msgstr "Недостају поставке јаве"
+
+#: src/stdtext.src#SV_ACCESSERROR_JAVA_DISABLED.STRING.TEXT
+#, fuzzy
+msgid  "Java Disabled"
+msgstr "Java је искључена"
+
+#: src/stdtext.src#SV_ACCESSERROR_TURNAROUND_MSG.STRING.TEXT
+#, fuzzy
+msgid  "The Java Access Bridge could not be started."
+msgstr "Java Access Bridge се не може покренути."
+
+#: src/stdtext.src#SV_ACCESSERROR_NO_FONTS.STRING.TEXT
+msgid  "No fonts could be found on the system."
+msgstr ""
+
+#: src/stdtext.src#SV_STDTEXT_ABOUT.STRING.TEXT
+#, fuzzy
+msgid  "About %PRODUCTNAME"
+msgstr "О пакету %PRODUCTNAME"
+
+#: src/stdtext.src#SV_STDTEXT_PREFERENCES.STRING.TEXT
+#, fuzzy
+msgid  "Preferences..."
+msgstr "Поставке..."
+
+#: src/stdtext.src#SV_EDIT_WARNING_BOX.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
+msgstr "Уметнут текст је скраћен јер премашује дозвољени број карактера у овом пољу."
+
+#: src/stdtext.src#SV_MAC_SCREENNNAME.STRING.TEXT
+#, fuzzy
+msgid  "Screen %d"
+msgstr "Екран %d"
+
+#: src/stdtext.src#SV_STDTEXT_ALLFILETYPES.STRING.TEXT
+#, fuzzy
+msgid  "Any type"
+msgstr "Врста кључа"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_MM.ITEMLIST.ITEM
+#, fuzzy
+msgid  "mm"
+msgstr "mm"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_CM.ITEMLIST.ITEM
+#, fuzzy
+msgid  "cm"
+msgstr "cm"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_M.ITEMLIST.ITEM
+#, fuzzy
+msgid  "m"
+msgstr "m"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_KM.ITEMLIST.ITEM
+#, fuzzy
+msgid  "km"
+msgstr "km"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
+#, fuzzy
+msgid  "twips"
+msgstr "твипа"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
+#, fuzzy
+msgid  "twip"
+msgstr "твип"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_POINT.ITEMLIST.ITEM
+#, fuzzy
+msgid  "pt"
+msgstr "тач."
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_PICA.ITEMLIST.ITEM
+#, fuzzy
+msgid  "pi"
+msgstr "пикс."
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
+#, fuzzy
+msgid  "\""
+msgstr "\""
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
+#, fuzzy
+msgid  "in"
+msgstr "in"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
+#, fuzzy
+msgid  "inch"
+msgstr "in"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+#, fuzzy
+msgid  "'"
+msgstr "'"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+#, fuzzy
+msgid  "ft"
+msgstr "ft"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+#, fuzzy
+msgid  "foot"
+msgstr "ft"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+#, fuzzy
+msgid  "feet"
+msgstr "ft"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
+#, fuzzy
+msgid  "miles"
+msgstr "миље"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
+#, fuzzy
+msgid  "mile"
+msgstr "миља"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ITEMLIST.ITEM
+#, fuzzy
+msgid  "%"
+msgstr "%"

@@ -33,15 +33,15 @@ msgstr ""
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
 msgid  "Print range"
-msgstr ""
+msgstr "ช่วงที่พิมพ์"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
 msgid  "All ~Pages"
-msgstr ""
+msgstr "ทุกหน้า"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
 msgid  "Pa~ges"
-msgstr ""
+msgstr "จำนวนหน้า"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
 #, fuzzy
@@ -49,9 +49,8 @@ msgid  "<All>"
 msgstr "<ทั้งหมด>"
 
 #: basicide/basidesh.src#RID_STR_NOMODULE.STRING.TEXT
-#, fuzzy
 msgid  "< No Module >"
-msgstr "< No Module >"
+msgstr "< ไม่มีมอดูล >"
 
 #: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
 #, fuzzy
@@ -133,11 +132,6 @@ msgstr "ใส่รหัสผ่านสำหรับ 'XX'"
 msgid  "Name already exists"
 msgstr "มีชื่อนี้อยู่แล้ว"
 
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-#, fuzzy
-msgid  "(Signed)"
-msgstr "(Signed)"
-
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 #, fuzzy
 msgid  "Object with same name already exists"
@@ -204,9 +198,8 @@ msgid  "The default library cannot be deactivated"
 msgstr "ไม่สามารถเพิกถอนไลบรารีปริยายได้"
 
 #: basicide/basidesh.src#RID_STR_GENERATESOURCE.STRING.TEXT
-#, fuzzy
 msgid  "Generating source"
-msgstr "กำลังสร้างแหล่งผลิต"
+msgstr "กำลังสร้างต้นกำเนิด"
 
 #: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
 #, fuzzy
@@ -253,30 +246,9 @@ msgstr "ไม่พบวัตถุหรือเมทธอด"
 msgid  "BASIC"
 msgstr "BASIC"
 
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Ln"
-msgstr "บรรทัด"
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Col"
-msgstr "คอลัมน์"
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "เอกสาร"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-#, fuzzy
-msgid  "Macro Bar"
-msgstr "แถบแมโคร"
-
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
-#, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
-msgstr "คุณไม่สามารถปิดหน้าต่าง ขณะ BASIC ทำงานอยู่"
+msgstr "ไม่สามารถปิดหน้าต่าง ขณะโปรแกรมภาษาเบสิคกำลังทำงาน"
 
 #: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
 #, fuzzy
@@ -293,30 +265,18 @@ msgstr "การอ้างอิงไปยัง  'XX'เป็นไปไ
 msgid  "Watch"
 msgstr "ดู"
 
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-#, fuzzy
-msgid  "Variable"
-msgstr "แปรผัน"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "ค่า"
-
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 #, fuzzy
 msgid  "Type"
 msgstr "ชนิด"
 
 #: basicide/basidesh.src#RID_STR_STACKNAME.STRING.TEXT
-#, fuzzy
 msgid  "Call Stack"
-msgstr "เรียกสแต็ก"
+msgstr "สแต็กของการเรียกโปรแกรมย่อย"
 
 #: basicide/basidesh.src#RID_STR_INITIDE.STRING.TEXT
-#, fuzzy
 msgid  "BASIC Initialization"
-msgstr "เตรียมใช้งาน BASIC "
+msgstr "การเตรียมเริ่มโปรแกรมภาษาเบสิค"
 
 #: basicide/basidesh.src#RID_STR_STDMODULENAME.STRING.TEXT
 #, fuzzy
@@ -324,9 +284,8 @@ msgid  "Module"
 msgstr "มอดูล"
 
 #: basicide/basidesh.src#RID_STR_STDDIALOGNAME.STRING.TEXT
-#, fuzzy
 msgid  "Dialog"
-msgstr "กลองโต้ตอบ"
+msgstr "กล่องโต้ตอบ"
 
 #: basicide/basidesh.src#RID_STR_STDLIBNAME.STRING.TEXT
 #, fuzzy
@@ -347,16 +306,6 @@ msgstr "มอดูลใหม่"
 #, fuzzy
 msgid  "New Dialog"
 msgstr "กล่องโต้ตอบใหม่"
-
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-#, fuzzy
-msgid  "All"
-msgstr "ทั้งหมด"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Page"
-msgstr "หน้า"
 
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 #, fuzzy
@@ -387,11 +336,6 @@ msgstr "ติดตาม:"
 #, fuzzy
 msgid  "Calls: "
 msgstr "เรียก: "
-
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-#, fuzzy
-msgid  "My Macros"
-msgstr "แมโครของฉัน"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 #, fuzzy
@@ -463,43 +407,23 @@ msgstr "กล่องโต้ตอบ BASIC"
 msgid  "Delete"
 msgstr "ลบ"
 
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "เปลี่ยนชื่อ"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Hide"
-msgstr "ซ่อน"
-
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 #, fuzzy
 msgid  "Modules..."
 msgstr "มอดูล..."
-
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "คุณต้องการเขียนทับแมโคร XX หรือไม่?"
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 #, fuzzy
 msgid  "<Not localized>"
 msgstr "<Not localized>"
 
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "[Default Language]"
-msgstr "[Default Language]"
-
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
-msgstr ""
+msgstr "วัตถุในเอกสาร"
 
 #: basicide/basidesh.src#RID_STR_USERFORMS.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "ฟอร์ม"
 
 #: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
 #, fuzzy
@@ -508,12 +432,7 @@ msgstr "มอดูล"
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
 msgid  "Class Modules"
-msgstr ""
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "แทนที่"
+msgstr "คลาสมอดูล"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
 #, fuzzy
@@ -525,16 +444,6 @@ msgstr "ไดอะล็อกนำเข้า - ชื่อถูกใช
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
 msgstr "ไลบรารีมีไดอะล็อกชื่อ:\n\n$(ARG1)\n\nเปลี่ยนชื่อไดอะล็อกเพื่อรักษาไดอะล็อกปัจจุบันไว้หรือแทนที่ไดอะล็อกที่มีอยู่\n"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "เพิ่ม"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-#, fuzzy
-msgid  "Omit"
-msgstr "ละเว้น"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
 #, fuzzy
 msgid  "Dialog Import - Language Mismatch"
@@ -544,11 +453,6 @@ msgstr "ไดอะล็อกนำเข้า - ภาษาไม่ตร
 #, fuzzy
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
 msgstr "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "ใหม่"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 #, fuzzy
@@ -564,16 +468,6 @@ msgstr "ใช้งานอยู่"
 #, fuzzy
 msgid  "Pass Count:"
 msgstr "จำนวนรอบ:"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Breakpoints"
-msgstr "จุดหยุด"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-#, fuzzy
-msgid  "Manage Breakpoints"
-msgstr "จัดการจุดแบ่ง"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 #, fuzzy
@@ -645,11 +539,6 @@ msgstr "~ลบ"
 msgid  "~Organizer..."
 msgstr "~ตัวจัดระเบียบ..."
 
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-#, fuzzy
-msgid  "Macro"
-msgstr "แมโคร"
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 #, fuzzy
 msgid  "~New"
@@ -659,11 +548,6 @@ msgstr "ใ~หม่"
 #, fuzzy
 msgid  "Choose"
 msgstr "เลือก"
-
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "เรียกใช้งาน"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 #, fuzzy
@@ -706,9 +590,8 @@ msgid  "Close"
 msgstr "ปิด"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~New..."
-msgstr "ใ~หม่..."
+msgstr "ใหม่..."
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -795,11 +678,6 @@ msgstr "Extension"
 msgid  "Description"
 msgstr "คำอธิบาย"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help information"
-msgstr "ข้อมูลช่วยเหลือ"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Help ID"
@@ -810,24 +688,13 @@ msgstr "ID ช่วยเหลือ"
 msgid  "Help file name"
 msgstr "ชื่อแฟ้มช่วยเหลือ"
 
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-#, fuzzy
-msgid  "Objects"
-msgstr "วัตถุ"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Show"
-msgstr "แสดง"
-
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
-msgstr ""
+msgstr "แผนผังต้นไม้ของวัตถุ"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
-#, fuzzy
 msgid  "Properties: "
-msgstr "คุณสมบัติ: "
+msgstr "คุณสมบัติ:"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 #, fuzzy
@@ -849,20 +716,9 @@ msgstr "Manage User Interface Languages [$1]"
 msgid  "Present Languages"
 msgstr "ภาษาปัจจุบัน"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Add..."
-msgstr "Add..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "Delete"
-msgstr "Delete"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "Default"
+msgstr "ลบ"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -874,15 +730,9 @@ msgstr "The default language is used if no localization for a user interface loc
 msgid  "~Close"
 msgstr "~Close"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-#, fuzzy
-msgid  "[Default Language]"
-msgstr "[Default Language]"
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
-#, fuzzy
 msgid  "~Delete"
-msgstr "~Delete"
+msgstr "ลบ"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
 #, fuzzy
@@ -894,15 +744,14 @@ msgstr "<Press 'Add' to create language resources>"
 msgid  "Delete Language Resources"
 msgstr "Delete Language Resources"
 
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "Set Default User Interface Language"
-
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Default language"
-msgstr "Default language"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 #, fuzzy

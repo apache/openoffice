@@ -31,11 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Data Table"
-msgstr "Табела података"
-
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Insert Row"
@@ -76,11 +71,6 @@ msgstr "Помери ред десно"
 msgid  "Data Ranges"
 msgstr "Опсег података"
 
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axes"
-msgstr "Осе"
-
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Major grids"
@@ -100,11 +90,6 @@ msgstr "~Y оса"
 #, fuzzy
 msgid  "~Z axis"
 msgstr "~Z оса"
-
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Secondary axes"
-msgstr "Споредне осе"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
@@ -141,11 +126,6 @@ msgstr "Пасус"
 msgid  "Indents & Spacing"
 msgstr "Увлачење и размак"
 
-#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Поравнање"
-
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Asian Typography"
@@ -160,91 +140,6 @@ msgstr "Табулатор"
 #, fuzzy
 msgid  "3D View"
 msgstr "3D приказ"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Box"
-msgstr "Коцка"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cylinder"
-msgstr "Цилиндар"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cone"
-msgstr "Купа"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Pyramid"
-msgstr "Пирамида"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Best fit"
-msgstr "Најбоље уклапање"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "У центру"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "Изнад"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top left"
-msgstr "Горе лево"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Лево"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom left"
-msgstr "Доле лево"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "Испод"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom right"
-msgstr "Доле десно"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "Десно"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top right"
-msgstr "Горе десно"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Inside"
-msgstr "Унутар"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Outside"
-msgstr "Споља"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Near origin"
-msgstr "Уз основу"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
 #, fuzzy
@@ -281,45 +176,14 @@ msgstr "Прикажи ~легенду"
 msgid  "Place~ment"
 msgstr "По~зиција"
 
-#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Rotate Text"
-msgstr "Ротирај текст"
-
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degrees"
-msgstr "~степени"
+msgstr "~Степени"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Te~xt direction"
 msgstr "Смер те~кста"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Standard Error"
-msgstr "Стандардна грешка"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Standard Deviation"
-msgstr "Стандардна девијација"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Variance"
-msgstr "Варијанса"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Error Margin"
-msgstr "Маргина грешке"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Error Category"
-msgstr "Категорија грешке"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -341,11 +205,6 @@ msgstr "~Процентуално"
 msgid  "Cell ~Range"
 msgstr "~Опсег ћелије"
 
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Parameters"
-msgstr "Параметри"
-
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~ositive (+)"
@@ -355,16 +214,6 @@ msgstr "П~озитивно (+)"
 #, fuzzy
 msgid  "~Negative (-)"
 msgstr "~Негативно (-)"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Same value for both"
-msgstr "Иста вредност за оба"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Error Indicator"
-msgstr "Ознака грешке"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
 #, fuzzy
@@ -426,21 +275,6 @@ msgstr "Z ос~а"
 msgid  "Space"
 msgstr "Размак"
 
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Comma"
-msgstr "Запета"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Semicolon"
-msgstr "Тачка са запетом"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "New line"
-msgstr "Нови ред"
-
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Title"
@@ -450,11 +284,6 @@ msgstr "~Наслов"
 #, fuzzy
 msgid  "~Subtitle"
 msgstr "~Поднаслов"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axes"
-msgstr "Осе"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -470,11 +299,6 @@ msgstr "~Y оса"
 #, fuzzy
 msgid  "~Z axis"
 msgstr "~Z оса"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Secondary Axes"
-msgstr "Споредне осе"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -516,11 +340,6 @@ msgstr "Е~кспоненцијална"
 msgid  "~Power"
 msgstr "~Снаге"
 
-#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Equation"
-msgstr "Једначина"
-
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Show ~equation"
@@ -561,45 +380,10 @@ msgstr "~Број линија"
 msgid  "Separator"
 msgstr "Раздвојник"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Column"
-msgstr "Стубићи"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
-#, fuzzy
-msgid  "Bar"
-msgstr "Тракице"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
-#, fuzzy
-msgid  "Area"
-msgstr "Област"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
-#, fuzzy
-msgid  "Pie"
-msgstr "Пита"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
 #, fuzzy
 msgid  "Exploded Pie Chart"
 msgstr "Распарчана пита"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
-#, fuzzy
-msgid  "Exploded Donut Chart"
-msgstr "Распарчана крофна"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
-#, fuzzy
-msgid  "Donut"
-msgstr "Крофна"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Линија"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
 #, fuzzy
@@ -616,35 +400,10 @@ msgstr "Тачке и линије"
 msgid  "Points Only"
 msgstr "Само тачке"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
-#, fuzzy
-msgid  "Lines Only"
-msgstr "Само линије"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
 #, fuzzy
 msgid  "3D Lines"
 msgstr "3Д линије"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Column and Line"
-msgstr "Стубићи и линије"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Columns and Lines"
-msgstr "Стубићи и линије"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Stacked Columns and Lines"
-msgstr "Наслагани стубићи и линије"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
-#, fuzzy
-msgid  "Net"
-msgstr "Мрежа"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 #, fuzzy
@@ -671,41 +430,6 @@ msgstr "Берзански 3"
 msgid  "Stock Chart 4"
 msgstr "Берзански 4"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
-#, fuzzy
-msgid  "Normal"
-msgstr "Обично"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
-#, fuzzy
-msgid  "Stacked"
-msgstr "Наслагано"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
-#, fuzzy
-msgid  "Percent Stacked"
-msgstr "Подела по процентима"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
-#, fuzzy
-msgid  "Deep"
-msgstr "Дубоко"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
-#, fuzzy
-msgid  "Filled"
-msgstr "Попуњено"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
-#, fuzzy
-msgid  "Bubble"
-msgstr "Балончићи"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
-#, fuzzy
-msgid  "Bubble Chart"
-msgstr "Балончићи"
-
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
 #, fuzzy
 msgid  "Numbers are required. Check your input."
@@ -728,16 +452,11 @@ msgstr "Минимум мора бити мањи од максимума. Пр�
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.STRING.TEXT
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "Главни интервал мора бити већи од споредног. Проверите унос."
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.STRING.TEXT
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
-#, fuzzy
-msgid  "Chart Wizard"
-msgstr "Помоћник за графике"
+msgstr "Главни и споредни интервал мора бити већи или једнак резолуцији. Проверите унос."
 
 #: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
 #, fuzzy
@@ -754,30 +473,15 @@ msgstr "Формат бројева у процентима"
 msgid  "Chart Type"
 msgstr "Врста графика"
 
-#: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
-#, fuzzy
-msgid  "Data Range"
-msgstr "Опсег података"
-
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
 #, fuzzy
 msgid  "Chart Elements"
 msgstr "Елементи графика"
 
-#: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
-#, fuzzy
-msgid  "Chart Location"
-msgstr "Место графика"
-
 #: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
 #, fuzzy
 msgid  "Line"
 msgstr "Ред"
-
-#: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Ивице"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 #, fuzzy
@@ -799,23 +503,13 @@ msgstr "Фонт"
 msgid  "Font Effects"
 msgstr "Ефекти фонта"
 
-#: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
-#, fuzzy
-msgid  "Numbers"
-msgstr "Бројеви"
-
-#: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Позиција"
-
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
-msgstr ""
+msgstr "Горе"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_DOWN.STRING.TEXT
 msgid  "Down"
-msgstr ""
+msgstr "Доле"
 
 #: controller/dialogs/Strings.src#STR_PAGE_LAYOUT.STRING.TEXT
 #, fuzzy
@@ -823,19 +517,13 @@ msgid  "Layout"
 msgstr "Размештај"
 
 #: controller/dialogs/Strings.src#STR_PAGE_OPTIONS.STRING.TEXT
-#, fuzzy
 msgid  "Options"
-msgstr "Опције"
+msgstr "Подешавања"
 
 #: controller/dialogs/Strings.src#STR_PAGE_SCALE.STRING.TEXT
 #, fuzzy
 msgid  "Scale"
 msgstr "Размера"
-
-#: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
-#, fuzzy
-msgid  "Positioning"
-msgstr "Позиционирање"
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
 #, fuzzy
@@ -847,21 +535,6 @@ msgstr "Врста"
 msgid  "Y Error Bars"
 msgstr "Ознаке грешке на оси Y"
 
-#: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Поравнање"
-
-#: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
-#, fuzzy
-msgid  "Perspective"
-msgstr "Перспектива"
-
-#: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
-#, fuzzy
-msgid  "Appearance"
-msgstr "Изглед"
-
 #: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
 #, fuzzy
 msgid  "Illumination"
@@ -871,16 +544,6 @@ msgstr "Осветљење"
 #, fuzzy
 msgid  "Asian Typography"
 msgstr "Азијска типографија"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
-#, fuzzy
-msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr "Линија за средњу вредност са вредношћу %AVERAGE_VALUE и стандардном девијацијом %STD_DEVIATION"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
-#, fuzzy
-msgid  "Axis"
-msgstr "Оса"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
 #, fuzzy
@@ -896,21 +559,6 @@ msgstr "Y  оса"
 #, fuzzy
 msgid  "Z Axis"
 msgstr "Z оса"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
-#, fuzzy
-msgid  "Secondary X Axis"
-msgstr "Споредна X оса"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
-#, fuzzy
-msgid  "Secondary Y Axis"
-msgstr "Споредна Y оса"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
-#, fuzzy
-msgid  "Axes"
-msgstr "Осе"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
 #, fuzzy
@@ -952,11 +600,6 @@ msgstr "Споредна мрежа Y осе"
 msgid  "Z Axis Minor Grid"
 msgstr "Споредна мрежа Z осе"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "Легенда"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
 #, fuzzy
 msgid  "Title"
@@ -971,11 +614,6 @@ msgstr "Наслови"
 #, fuzzy
 msgid  "Main Title"
 msgstr "Главни наслов"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
-#, fuzzy
-msgid  "Subtitle"
-msgstr "Поднаслов"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
 #, fuzzy
@@ -1012,11 +650,6 @@ msgstr "Ознака"
 msgid  "Data Labels"
 msgstr "Ознаке података"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
-#, fuzzy
-msgid  "Data Point"
-msgstr "Тачка податка"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
 #, fuzzy
 msgid  "Data Points"
@@ -1028,7 +661,6 @@ msgid  "Legend Key"
 msgstr "Легенда"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.STRING.TEXT
-#, fuzzy
 msgid  "Data Series"
 msgstr "Серије"
 
@@ -1047,21 +679,6 @@ msgstr "Линије тренда"
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr "Линија тренда %FORMULA са прецизношћу R² = %RSQUARED"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Mean Value Line"
-msgstr "Линија средње вредности"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
-#, fuzzy
-msgid  "Equation"
-msgstr "Једначина"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
-#, fuzzy
-msgid  "Error Bars"
-msgstr "Ознаке грешке"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
 #, fuzzy
 msgid  "Stock Loss"
@@ -1076,21 +693,6 @@ msgstr "Раст акције"
 #, fuzzy
 msgid  "Chart Area"
 msgstr "Област графика"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
-#, fuzzy
-msgid  "Chart"
-msgstr "График"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
-#, fuzzy
-msgid  "Chart Wall"
-msgstr "Зид графика"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
-#, fuzzy
-msgid  "Chart Floor"
-msgstr "Ниво графика"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 #, fuzzy
@@ -1116,16 +718,6 @@ msgstr "Извор светла %LIGHTNUMBER"
 #, fuzzy
 msgid  "Data Series '%SERIESNAME'"
 msgstr "Серија података „%SERIESNAME“"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
-#, fuzzy
-msgid  "Data Point %POINTNUMBER"
-msgstr "Тачка података %POINTNUMBER"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
-#, fuzzy
-msgid  "Values: %POINTVALUES"
-msgstr "Вредности: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
 #, fuzzy
@@ -1204,17 +796,7 @@ msgstr "Не могу да завршим ову функцију са изаб�
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.STRING.TEXT
 msgid  "Edit text"
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Column %COLUMNNUMBER"
-msgstr "Колона %COLUMNNUMBER"
-
-#: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Row %ROWNUMBER"
-msgstr "Ред %ROWNUMBER"
+msgstr "Уреди текст"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
 #, fuzzy
@@ -1230,11 +812,6 @@ msgstr "X вредности"
 #, fuzzy
 msgid  "Y-Values"
 msgstr "Y вредности"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
-#, fuzzy
-msgid  "Bubble Sizes"
-msgstr "Величина балончића"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
 #, fuzzy
@@ -1276,30 +853,10 @@ msgstr "Отворене вредности"
 msgid  "Close Values"
 msgstr "Затворене вредности"
 
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
-#, fuzzy
-msgid  "Low Values"
-msgstr "Ниске вредности"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
-#, fuzzy
-msgid  "High Values"
-msgstr "Високе вредности"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
-#, fuzzy
-msgid  "Categories"
-msgstr "Категорије"
-
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
 #, fuzzy
 msgid  "Unnamed Series"
 msgstr "Неименоване серије"
-
-#: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
-#, fuzzy
-msgid  "Unnamed Series %NUMBER"
-msgstr "Неименоване серије %NUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
 #, fuzzy
@@ -1331,16 +888,6 @@ msgstr "Изаберите опсег за ознаку негативних г�
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
 msgstr "Последњи унос је неисправан.\nДа занемарим измену и затворим прозорче?"
 
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "Слева удесно"
-
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "Здесна улево"
-
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
 #, fuzzy
 msgid  "Use superordinate object settings"
@@ -1350,21 +897,6 @@ msgstr "Користи уобичајена подешавања објекат�
 #, fuzzy
 msgid  "Negative and Positive"
 msgstr "Негативно и позитивно"
-
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
-#, fuzzy
-msgid  "Negative"
-msgstr "Негативно"
-
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
-#, fuzzy
-msgid  "Positive"
-msgstr "Позитивно"
-
-#: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
-#, fuzzy
-msgid  "From Data Table"
-msgstr "Из табеле података"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
 #, fuzzy
@@ -1387,9 +919,8 @@ msgid  "Power (%SERIESNAME)"
 msgstr "Регресија снаге"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.STRING.TEXT
-#, fuzzy
 msgid  "Mean (%SERIESNAME)"
-msgstr "Линеарна регресија"
+msgstr "Средње (%SERIESNAME)"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1410,11 +941,6 @@ msgstr "~Ивице објекта"
 #, fuzzy
 msgid  "~Rounded edges"
 msgstr "~Заобљене ивице"
-
-#: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
-#, fuzzy
-msgid  " degrees"
-msgstr " степени"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 #, fuzzy
@@ -1453,7 +979,7 @@ msgstr "~Амбијентално светло"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.STRING.TEXT
 msgid  "Light Preview"
-msgstr ""
+msgstr "Преглед светла"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
 #, fuzzy
@@ -1474,11 +1000,6 @@ msgstr "~Вертикално наслаган"
 #, fuzzy
 msgid  "~Degrees"
 msgstr "~Степени"
-
-#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text flow"
-msgstr "Ток текста"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
 #, fuzzy
@@ -1520,35 +1041,15 @@ msgstr "~Аутоматски"
 msgid  "Te~xt direction"
 msgstr "Смер те~кста"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axis line"
-msgstr "Линија осе"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Cross other axis at"
 msgstr "~Пресеца другу осу у"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Start"
-msgstr "Почетак"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "End"
 msgstr "Крај"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Value"
-msgstr "Вредност"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Category"
-msgstr "Категорија"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
 #, fuzzy
@@ -1565,40 +1066,10 @@ msgstr "Ознаке"
 msgid  "~Place labels"
 msgstr "~Постави ознаке"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Near axis"
-msgstr "Уз осу"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Near axis (other side)"
-msgstr "Близу осе (друга страна)"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Outside start"
-msgstr "Почетак споља"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Outside end"
-msgstr "Крај споља"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Distance"
 msgstr "~Раздаљина"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Interval marks"
-msgstr "Ознаке интервала"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Major:"
-msgstr "Главни:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
 #, fuzzy
@@ -1609,11 +1080,6 @@ msgstr "~Унутар"
 #, fuzzy
 msgid  "~Outer"
 msgstr "~Спољашње"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minor:"
-msgstr "Споредни:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
 #, fuzzy
@@ -1634,11 +1100,6 @@ msgstr "Постави ~ознаке"
 #, fuzzy
 msgid  "At labels"
 msgstr "На ознакама"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At axis"
-msgstr "Крај осе"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -1690,30 +1151,10 @@ msgstr "~3D изглед"
 msgid  "~Stack series"
 msgstr "~Наслагане серије"
 
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "On top"
-msgstr "При врху"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Percent"
-msgstr "Проценат"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Deep"
-msgstr "Дубоко"
-
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "S~mooth lines"
 msgstr "~Глатка линија"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "Својства..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
 #, fuzzy
@@ -1736,14 +1177,8 @@ msgid  "~Resolution"
 msgstr "~Резолуција"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degree of polynomials"
-msgstr "~Редослед тачака података"
-
-#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Customize data ranges for individual data series"
-msgstr "Прилагоди опсеге за појединачне серије података"
+msgstr "~Степен полинома"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1779,11 +1214,6 @@ msgstr "~Додај"
 #, fuzzy
 msgid  "~Remove"
 msgstr "~Уклони"
-
-#: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Позиција"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
 #, fuzzy
@@ -1862,15 +1292,15 @@ msgstr "Прва колона за о~знаку"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
 msgid  "Days"
-msgstr ""
+msgstr "Дани"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
 msgid  "Months"
-msgstr ""
+msgstr "Месеци"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
 msgid  "Years"
-msgstr ""
+msgstr "Године"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
 #, fuzzy
@@ -1888,22 +1318,20 @@ msgid  "~Logarithmic scale"
 msgstr "~Логаритамска"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "T~ype"
-msgstr "Врста"
+msgstr "В~рста"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Automatic"
-msgstr "~Аутоматски"
+msgstr "Аутоматски"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
 msgid  "Text"
-msgstr ""
+msgstr "Текст"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
 msgid  "Date"
-msgstr ""
+msgstr "Datum"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1926,9 +1354,8 @@ msgid  "A~utomatic"
 msgstr "~Аутоматски"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "R~esolution"
-msgstr "~Резолуција"
+msgstr "Р~езолуција"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
 #, fuzzy
@@ -1947,7 +1374,7 @@ msgstr "Ау~томатски"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
 msgid  "Minor inter~val count"
-msgstr ""
+msgstr "Број ~споредних интервала"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
 #, fuzzy

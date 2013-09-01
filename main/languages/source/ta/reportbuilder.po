@@ -49,7 +49,7 @@ msgstr "%productname% %formatversion% அறிக்கை வரைபடம�
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.DISPLAYNAME
 msgid  "Apache OpenOffice Report Builder"
-msgstr ""
+msgstr "அபாசே ஓபன் ஆபீஸ் அறிக்கை தயாரிப்பாளர்"
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.ENTRIES.REPORTHEADER.DISPLAYNAME
 msgid  "Report Header"
@@ -95,6 +95,18 @@ msgstr "மேல்குவிழுதல் கட்டுப்பாட�
 msgid  "Text Box Bound Content"
 msgstr "உரைப்பெட்டி பிணைப்பு உள்ளடக்கம்"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:COLUMNHEADERFOOTER.LABEL
+msgid  "Column Header/Footer"
+msgstr "நிரல் தலைப்பு/அடிக்குறிப்பு"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:CONDITIONALFORMATTING.LABEL
+msgid  "Conditional Formatting..."
+msgstr "நிபந்தனை வடிவமைப்பு"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DBSORTINGANDGROUPING.LABEL
+msgid  "Sorting and Grouping"
+msgstr "வரிசைப்படுகிறது மற்றும் குழுவாகிறது"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DISTRIBUTION.LABEL
 msgid  "Distribution..."
 msgstr "விநியோகம்..."
@@ -110,6 +122,10 @@ msgstr "அதிக உயரத்திற்கு பொருத்து"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:GREATESTWIDTH.LABEL
 msgid  "Fit to greatest width"
 msgstr "அதிக அகலத்திற்கு பொருத்து"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:INSERTDATETIMEFIELD.LABEL
+msgid  "Date and Time..."
+msgstr "தேதி மற்றும் நேரம்"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:PAGEHEADERFOOTER.LABEL
 msgid  "Page Header/Footer"
@@ -163,9 +179,17 @@ msgstr "மேலிருந்து சுருக்கு"
 msgid  "Select all Formatted Fields"
 msgstr "அனைத்து வடிவமைக்கப்பட்ட புலங்களை தேர்ந்தெடு"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLINSECTION.LABEL
+msgid  "Select Objects in Section"
+msgstr "பிரிவில் பொருளை தேர்ந்தெடு"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLLABELS.LABEL
 msgid  "Select all Labels"
 msgstr "அனைத்து அட்டைகளையும் தேர்ந்தெடு"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTREPORT.LABEL
+msgid  "Select Report"
+msgstr "அறிக்கையைத் தேர்ந்தெடு"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SMALLESTHEIGHT.LABEL
 msgid  "Fit to smallest height"
@@ -178,6 +202,10 @@ msgstr "சிறிய அகலத்திற்கு பொருத்த�
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SPREADSHEET.LABEL
 msgid  "Spreadsheet Document"
 msgstr "விரிதாள் ஆவணம்"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SUBREPORTINNEWWINDOW.LABEL
+msgid  "Subreport in New Window..."
+msgstr "புதிய சாளரத்தில் துணை அறிக்கை..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:TEXTDOCUMENT.LABEL
 msgid  "Text Document"
@@ -217,11 +245,11 @@ msgstr "பாய்வுவரைபட வடிவங்கள்"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:OBJECTRESIZE.LABEL
 msgid  "Object Resizing"
-msgstr "பொருளை மறுஅளவிடுகிறது"
+msgstr "பொருள் மறுஅளவீடு"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:REPORTCONTROLMENU.LABEL
 msgid  "Report Controls"
-msgstr "முடிவு கட்டுபாடுகள்"
+msgstr "அறிக்கை கட்டுப்பாடுகள்"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:RESIZEMENU.LABEL
 msgid  "Resize"

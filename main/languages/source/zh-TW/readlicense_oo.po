@@ -39,28 +39,28 @@ msgstr "${PRODUCTNAME} ${PRODUCTVERSION} 讀我檔案"
 msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
 msgstr "如需此讀我檔案的最近更新，請參閱 <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
 
-#: readme.xrm#A6
-msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
-msgstr "本檔案包含有關此程式的重要資訊。請仔細閱讀此資訊，再開始工作。"
-
 #: readme.xrm#A7
 #, fuzzy
 msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
 msgstr "負責開發本產品的 OpenOffice.org 社群想邀請您加入成為社群成員。身為新使用者，您可以檢閱下列 ${PRODUCTNAME} 網站，以取得有用的使用者資訊：<a href=\"http://www.openoffice.org/about_us/introduction.html\">http://www.openoffice.org/about_us/introduction.html</a>"
 
 #: readme.xrm#A9
+#, fuzzy
 msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
 msgstr "另請參閱有關如何參與 OpenOffice.org 專案的以下各章節。 "
 
 #: readme.xrm#A10
+#, fuzzy
 msgid  "Is ${PRODUCTNAME} really free for any user? "
 msgstr "是否任何使用者真的都可免費使用 ${PRODUCTNAME}？ "
 
 #: readme.xrm#A11
+#, fuzzy
 msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
 msgstr "每個人皆可免費使用 ${PRODUCTNAME}。您可以取得 ${PRODUCTNAME} 軟體，安裝在不限數目的電腦上，進行多用途的使用 (包括商用、政府、公共事業管理及教育之用)。如需進一步的詳細資訊，請參閱 ${PRODUCTNAME} 隨附的授權文字或 <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a> "
 
 #: readme.xrm#A12
+#, fuzzy
 msgid  "Why is ${PRODUCTNAME} free for any user?"
 msgstr "為何所有使用者皆可免費使用 ${PRODUCTNAME}？"
 
@@ -69,29 +69,19 @@ msgstr "為何所有使用者皆可免費使用 ${PRODUCTNAME}？"
 msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
 msgstr "如果您感謝他們的貢獻，並想確保 OpenOffice.org 在未來能繼續努力，請考慮投入專案 - 請參閱 <a href=\"http://contributing.openoffice.org\">http://contributing.openoffice.org</a> 以取得詳細資訊。每個人都能貢獻一己之力。"
 
-#: readme.xrm#RR3FGF42R
-msgid  "Notes on Installation"
-msgstr "安裝注意事項"
+#: readme.xrm#A13B
+msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
+msgstr ""
 
 #: readme.xrm#JAVANEEDED
+#, fuzzy
 msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
 msgstr "${PRODUCTNAME} 需要最新的JAVA版本來完善整個套裝軟體的功能。"
 
 #: readme.xrm#SDFSDFGF42R
+#, fuzzy
 msgid  "System Requirements"
 msgstr "系統需求"
-
-#: readme.xrm#MACXIOSX
-msgid  "MacOSX 10.4 (Tiger) or higher"
-msgstr "MacOSX 10.4 (Tiger) 或更高版本"
-
-#: readme.xrm#MACXICPU
-msgid  "Intel processor"
-msgstr "Intel 處理器"
-
-#: readme.xrm#MACXIRAM
-msgid  "512 MB RAM"
-msgstr "512 MB 記憶體"
 
 #: readme.xrm#MACXHARDDIKSSPACE
 #, fuzzy
@@ -99,6 +89,7 @@ msgid  "Up to 1.5 GB available hard disk space"
 msgstr "最大 1.5 GB 的可用硬碟空間"
 
 #: readme.xrm#MACXIVIDEO
+#, fuzzy
 msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
 msgstr "256 色的 1024 x 768 圖形裝置 (建議使用更高解析度)"
 
@@ -118,6 +109,7 @@ msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 MB 記憶體 (建議使用 512 MB 記憶體)"
 
 #: readme.xrm#JTZU56
+#, fuzzy
 msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr "1024x768 解析度 (建議使用更高解析度)，至少 256 色"
 
@@ -127,14 +119,17 @@ msgid  "Please be aware that administrator rights are needed for the installatio
 msgstr "請注意，安裝程序需要管理員權限。"
 
 #: readme.xrm#MSOREG1
+#, fuzzy
 msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
 msgstr "執行安裝程式時使用以下指令行開關，可強制或不讓 ${PRODUCTNAME} 註冊為 Microsoft Office 格式的預設應用程式："
 
 #: readme.xrm#MSOREG2
+#, fuzzy
 msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr "<tt>/msoreg=1</tt> 會強制註冊 ${PRODUCTNAME} 為 Microsoft Office 格式的預設應用程式。"
 
 #: readme.xrm#MSOREG3
+#, fuzzy
 msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr "<tt>/msoreg=0</tt> 則不會註冊 ${PRODUCTNAME} 為 Microsoft Office 格式的預設應用程式。"
 
@@ -142,10 +137,6 @@ msgstr "<tt>/msoreg=0</tt> 則不會註冊 ${PRODUCTNAME} 為 Microsoft Office �
 #, fuzzy
 msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
 msgstr "如果使用安裝程式 /a 執行管理安裝，您必須確定系統上已安裝檔案 msvc90.dll。管理安裝之後，${PRODUCTNAME} 需要此檔案才能啟動。您可以從 <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a> 取得檔案"
-
-#: readme.xrm#S2335
-msgid  "Solaris 10 operating system (SPARC platform) or higher"
-msgstr "Solaris 10 作業系統 (SPARC 平台) 或更高版本"
 
 #: readme.xrm#S23SEG
 #, fuzzy
@@ -168,115 +159,102 @@ msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, re
 msgstr "輔助技術工具 (AT 工具) 的支援需要具有 gail 1.8.6 與 at-spi 1.7 套裝軟體的 Gnome 2.6 或更高版本"
 
 #: readme.xrm#S23H
+#, fuzzy
 msgid  "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Solaris 10 作業系統 (x86 平台) 或更高版本"
 
 #: readme.xrm#S2WE35
+#, fuzzy
 msgid  "Linux Kernel version 2.6.18 or higher"
 msgstr "Linux Kernel 2.6.18 版或更高版本"
 
-#: readme.xrm#S253WE
-msgid  "glibc2 version 2.5 or higher"
-msgstr "glibc2 2.5 版或更高版本"
-
-#: readme.xrm#S256WE
-msgid  "gtk version 2.10.4 or higher"
-msgstr "gtk 2.10.4 版或更高版本"
-
-#: readme.xrm#S2ETFSEG
-#, fuzzy
-msgid  "Pentium III or later processor"
-msgstr "Pentium 相容的 PC (建議使用 Pentium III 或 Athlon)"
-
 #: readme.xrm#WD2DFF
+#, fuzzy
 msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
 msgstr "輔助技術工具 (AT 工具) 的支援需要具有 gail 1.8.6 與 at-spi 1.7 套裝軟體的 Gnome 2.16 或更高版本"
 
 #: readme.xrm#LINUXI3A
+#, fuzzy
 msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
 msgstr "Linux 有許多發行版本，甚至在同一發行版本中也可能會有不同的安裝選項 (KDE 與 Gnome 等)。有些發行版本隨附在 ${PRODUCTNAME} 的「原生」版本中，並與此 Community ${PRODUCTNAME} 有不同的功能。您有時可同時安裝 Community ${PRODUCTNAME} 與「原生」版本。但是，先移除「原生」版本再安裝此 Community 版本通常比較安全。請參閱您所用發行版本的文件，以取得執行方式的詳細資訊。 "
 
-#: readme.xrm#LINUXI4A
-msgid  "It is recommended that you always backup your system before you remove or install software."
-msgstr "建議您務必先備份系統，再移除或安裝軟體。"
-
-#: readme.xrm#PRECAUTIONS
-msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
-msgstr "請確定系統上的暫存目錄有足夠的可用記憶體，並已授與讀取、寫入和執行存取權。請關閉所有其他程式，再開始安裝。"
-
-#: readme.xrm#NASO01
-msgid  "Problems During Program Startup"
-msgstr "程式啟動期間發生問題"
-
 #: readme.xrm#NASO02
+#, fuzzy
 msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
 msgstr "如果發生 ${PRODUCTNAME} 啟動問題 (特別是在使用 Gnome 時)，請在啟動 ${PRODUCTNAME} 所使用的 Shell 內「取消設定」<tt>SESSION_MANAGER</tt> 環境變數。在「<tt>[office 資料夾]/program</tt>」目錄中的 soffice shell 程序檔開頭增加「<tt>unset SESSION_MANAGER</tt>」一行，即可完成此作業。"
 
 #: readme.xrm#ABCDEF
+#, fuzzy
 msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
 msgstr "無法啟動 ${PRODUCTNAME} (例如應用程式停滯) 以及螢幕顯示發生問題，通常是由於圖形卡驅動程式所致。若發生這些問題，請更新您的圖形卡驅動程式，或嘗試使用作業系統所提供的圖形驅動程式。停用 [工具] - [選項] - [${PRODUCTNAME}] - [檢視] - [3D 檢視] 下的 [採用 OpenGL] 選項，通常可解決無法顯示 3D 物件的問題。"
 
-#: readme.xrm#NASO
-msgid  "ALPS/Synaptics notebook touchpads in Windows"
-msgstr "Windows 中的 ALPS/Synaptics 筆記型電腦觸控板"
-
 #: readme.xrm#NASO2
+#, fuzzy
 msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
 msgstr "由於 Windows 驅動程式發生問題，您無法在 ALPS/Synaptics 觸控板上滑動手指時捲動 ${PRODUCTNAME} 文件。"
 
 #: readme.xrm#NASO6
+#, fuzzy
 msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
 msgstr "若要啟用觸控板捲動功能，請將以下行加入「<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>」配置檔案，然後重新啟動電腦："
 
 #: readme.xrm#NASO8
+#, fuzzy
 msgid  "The location of the configuration file might vary on different versions of Windows."
 msgstr "配置檔案的位置會隨 Windows 版本而異。"
 
-#: readme.xrm#SDFSD32ASRC
-msgid  "Mozilla Address Book Driver"
-msgstr "Mozilla 通訊錄驅動程式"
-
 #: readme.xrm#SDCC32ASRC
+#, fuzzy
 msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
 msgstr "Mozilla 通訊錄驅動程式需要 <tt>SUNWzlib</tt> 套裝軟體。此套裝軟體不是 Solaris 作業系統基本安裝的一部分。若需要存取 Mozilla 通訊錄，請使用指令「<tt>pkgadd</tt>」從安裝 CD 將此套裝軟體加入 Solaris 作業系統。"
 
 #: readme.xrm#AWE1
+#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "捷徑鍵"
 
 #: readme.xrm#W32E1
+#, fuzzy
 msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
 msgstr "${PRODUCTNAME} 中只能使用作業系統未使用的捷徑鍵 (按鍵組合)。如果 ${PRODUCTNAME} 中的按鍵組合執行方式與 ${PRODUCTNAME} 說明中的說明不相符，請檢查作業系統是否已使用該捷徑。若要修正此衝突，您可以變更作業系統所指定的按鍵。或是變更 ${PRODUCTNAME} 中幾乎所有的按鍵指定。如需有關此主題的更多資訊，請參閱 ${PRODUCTNAME} 說明或作業系統的說明文件。"
 
 #: readme.xrm#MACKEYS1
+#, fuzzy
 msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
 msgstr "${PRODUCTNAME} 的應用程式說明可能僅使用 PC 鍵盤的捷徑組合。"
 
 #: readme.xrm#GFH6W
+#, fuzzy
 msgid  "File Locking"
 msgstr "檔案鎖定"
 
 #: readme.xrm#PJI76W
+#, fuzzy
 msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
 msgstr "${PRODUCTNAME} 預設會啟用檔案鎖定。在使用網路檔案系統通訊協定 (NFS) 的網路上，必須啟動 NFS 用戶端的鎖定常駐程式。若要停用檔案鎖定，請編輯 <tt>soffice</tt> 程序檔，並將「<tt>export SAL_ENABLE_FILE_LOCKING</tt>」一行變更為「<tt># export SAL_ENABLE_FILE_LOCKING</tt>」。若停用檔案鎖定，文件的寫入存取權將不會僅限於第一個開啟該文件的使用者。"
 
 #: readme.xrm#PJI76WSDF
+#, fuzzy
 msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
 msgstr "警告：當 Solaris 2.5.1 和 2.7 結合 Linux NFS 2.0 使用時，啟用檔案鎖定功能可能會導致問題。如果系統環境有這些參數，強烈建議您避免使用檔案鎖定功能。否則，當您嘗試從 Linux 電腦開啟 NFS 掛載目錄中的檔案時，${PRODUCTNAME} 會停滯。"
 
 #: readme.xrm#GFH6W1
+#, fuzzy
 msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
 msgstr "從 ${PRODUCTNAME} 以電子郵件傳送文件時發生問題"
 
 #: readme.xrm#PJI76W1
+#, fuzzy
 msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
 msgstr "透過 [檔案] - [傳送] - [作為電子郵件的文件] 或 [文件當作 PDF 附件] 傳送文件時，可能會發生問題 (程式故障或停滯)。這是由於在某些檔案版本中導致問題的 Windows 系統檔案「Mapi」(訊息應用程式發展介面) 所致。不過，此問題無法縮小範圍到特定的版本編號。如需更多資訊，請造訪 <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> 並在 Microsoft 知識庫中搜尋「mapi dll」。"
 
 #: readme.xrm#AW22
+#, fuzzy
 msgid  "Important Accessibility Notes"
 msgstr "重要協助工具備註"
 
 #: readme.xrm#ACCESS7
+#, fuzzy
 msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 msgstr "如需有關 ${PRODUCTNAME} 之無障礙功能的更多資訊，請參閱 <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 
@@ -284,6 +262,10 @@ msgstr "如需有關 ${PRODUCTNAME} 之無障礙功能的更多資訊，請參�
 #, fuzzy
 msgid  "User Support"
 msgstr "主要支援頁面 <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> 提供各種可能的 ${PRODUCTNAME} 協助。您的問題可能已經有答覆 - 請檢閱社群論壇 (<a href=\"http://user.services.openoffice.org\">http://user.services.openoffice.org</a>) 或搜尋「users@openoffice.org」郵件收件人清單的歸檔 (<a href=\"http://www.openoffice.org/mail_list.html\">http://www.openoffice.org/mail_list.html</a>)。您也可以將問題傳送至 <a href=\"mailto:users@openoffice.org\">users@openoffice.org</a>。下列頁面會說明如何訂閱該清單 (以取得電子郵件回覆)：<a href=\"http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists\">http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists</a>。"
+
+#: readme.xrm#SUPPORT1
+msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
+msgstr ""
 
 #: readme.xrm#FAQ
 #, fuzzy
@@ -295,11 +277,17 @@ msgstr "另請檢閱 <a href=\"http://wiki.services.openoffice.org/wiki/Document
 msgid  "Reporting Bugs &amp; Issues"
 msgstr "${PRODUCTNAME} 網站託管的 IssueZilla 是報告、追蹤及解決錯誤與問題的機制。建議並歡迎所有使用者報告發生在其特定平台上的問題。積極報告問題是使用者社群得以繼續開發與改善套裝軟體的重要貢獻之一。 "
 
+#: readme.xrm#REPORTBUGS1
+msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
+msgstr ""
+
 #: readme.xrm#GETTINGINVOLVED1
+#, fuzzy
 msgid  "Getting Involved"
 msgstr "參與 "
 
 #: readme.xrm#GETTINGINVOLVED2
+#, fuzzy
 msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
 msgstr "您對開發此重要之開放原始碼專案的積極參與，將有益於 ${PRODUCTNAME} 社群。"
 
@@ -313,15 +301,47 @@ msgstr "身為使用者，您已經是套裝軟體開發過程的重要一份子
 msgid  "How to Start"
 msgstr "要開始回饋貢獻的最好方法，是訂閱幾份郵件通訊論壇，潛水一段時間，漸漸從舊信庫熟悉 2000 年 10 月發行 ${PRODUCTNAME} 原始碼以來的眾多主題。熟悉以後，只要寄一封自我介紹信跳進來就可以了。若你熟悉開放原始碼專案，請查閱以下的待辦清單，看有沒有你想協助的事：<a href=\"http://development.openoffice.org/todo.html\">http://development.openoffice.org/todo.html</a>。"
 
+#: readme.xrm#HOWTOSTART1
+msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
+msgstr ""
+
 #: readme.xrm#SUBSCRIBE
 #, fuzzy
 msgid  "Subscribe"
 msgstr "一般程式碼貢獻者清單：dev@openoffice.org (中/高流量) "
 
+#: readme.xrm#SUBSCRIBE1
+msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST1
+msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST2
+msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST4
+msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
+msgstr ""
+
+#: readme.xrm#MISSING_ID
+msgid  "Joining the Project"
+msgstr ""
+
 #: readme.xrm#JOINING
 #, fuzzy
 msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
 msgstr "您可以透過在 <a href=\"http://marketing.openoffice.org/contacts.html\">http://marketing.openoffice.org/contacts.html</a> 加入「行銷溝通與資訊網路」(Marketing Communications &amp; Information Network) 提供協助，您可以在此提供所在國家/地區與當地社區之新聞、媒體、公家單位、顧問、學校、Linux 使用者群組與開發人員的重點溝通連絡人。"
+
+#: readme.xrm#JOINING1
+msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr ""
+
+#: readme.xrm#JOINING3
+msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
+msgstr ""
 
 #: readme.xrm#CREDITS
 #, fuzzy

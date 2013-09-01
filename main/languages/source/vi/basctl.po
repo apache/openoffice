@@ -32,19 +32,16 @@ msgstr ""
 
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Print range"
-msgstr "Khoảng in"
+msgstr "Phạm vi in dữ liệu"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
-#, fuzzy
 msgid  "All ~Pages"
-msgstr "Mọi ~trang"
+msgstr "Tất cả các ~trang"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Pa~ges"
-msgstr "Tran~g"
+msgstr "Các tran~g"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
 #, fuzzy
@@ -62,9 +59,8 @@ msgid  "Incorrect Password"
 msgstr "Sai mật khẩu"
 
 #: basicide/basidesh.src#RID_STR_OPEN.STRING.TEXT
-#, fuzzy
 msgid  "Load"
-msgstr "Nạp"
+msgstr "Tải"
 
 #: basicide/basidesh.src#RID_STR_SAVE.STRING.TEXT
 #, fuzzy
@@ -72,19 +68,16 @@ msgid  "Save"
 msgstr "Lưu"
 
 #: basicide/basidesh.src#RID_STR_SOURCETOBIG.STRING.TEXT
-#, fuzzy
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "Mã nguồn quá lớn nên không thể biên dịch hay lưu được.\nHãy xoá một số chú thích hoặc chuyển một số phương thức sang mô-đun khác."
+msgstr "Đoạn văn bản gốc quá lớn và không thể được biên dịch hoặc lưu.\nHãy xoá một số chú thích hoặc chuyển một số phương thức sang mô-đun khác."
 
 #: basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.STRING.TEXT
-#, fuzzy
 msgid  "Error opening file"
-msgstr "Lỗi mở tập tin"
+msgstr "Lỗi khi mở tập tin"
 
 #: basicide/basidesh.src#RID_STR_ERROROPENLIB.STRING.TEXT
-#, fuzzy
 msgid  "Error loading library"
-msgstr "Lỗi nạp thư viện"
+msgstr "Lỗi khi tải thư viện"
 
 #: basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.STRING.TEXT
 #, fuzzy
@@ -135,11 +128,6 @@ msgstr "Nhập mật khẩu cho 'XX'"
 #, fuzzy
 msgid  "Name already exists"
 msgstr "Tên đã có"
-
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-#, fuzzy
-msgid  "(Signed)"
-msgstr "(Đã ký)"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 #, fuzzy
@@ -256,26 +244,6 @@ msgstr "Đối tượng hoặc phương thức không tìm thấy"
 msgid  "BASIC"
 msgstr "BASIC"
 
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Ln"
-msgstr "Dòng"
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Col"
-msgstr "Cột"
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "Tài liệu"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-#, fuzzy
-msgid  "Macro Bar"
-msgstr "Thanh vĩ lệnh"
-
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 #, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
@@ -295,16 +263,6 @@ msgstr "Tham chiếu tới « XX » không thể được."
 #, fuzzy
 msgid  "Watch"
 msgstr "Quan sát"
-
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-#, fuzzy
-msgid  "Variable"
-msgstr "Biến"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "Giá trị"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 #, fuzzy
@@ -351,16 +309,6 @@ msgstr "Mô-đun mới"
 msgid  "New Dialog"
 msgstr "Hộp thoại mới"
 
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-#, fuzzy
-msgid  "All"
-msgstr "Tất cả"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Page"
-msgstr "Trang"
-
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 #, fuzzy
 msgid  "A name must be entered."
@@ -391,11 +339,6 @@ msgstr "Quan sát:"
 msgid  "Calls: "
 msgstr "Gọi: "
 
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-#, fuzzy
-msgid  "My Macros"
-msgstr "Vĩ lệnh cá nhân"
-
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 #, fuzzy
 msgid  "My Dialogs"
@@ -422,9 +365,8 @@ msgid  "%PRODUCTNAME Macros & Dialogs"
 msgstr "Vĩ lệnh và hộp thoại %PRODUCTNAME"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.MENU.TEXT
-#, fuzzy
 msgid  "Properties"
-msgstr "Thuộc tính"
+msgstr "Các Thuộc tính"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MENUITEM.TEXT
 #, fuzzy
@@ -466,35 +408,15 @@ msgstr "Hộp thoại BASIC"
 msgid  "Delete"
 msgstr "Xoá"
 
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "Đổi tên"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Hide"
-msgstr "Ẩn"
-
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 #, fuzzy
 msgid  "Modules..."
 msgstr "Mô-đun..."
 
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "Bạn có muốn ghi đè lên vĩ lệnh XX không?"
-
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 #, fuzzy
 msgid  "<Not localized>"
 msgstr "<chưa bản địa hoá>"
-
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "[Default Language]"
-msgstr "[Ngôn ngữ mặc định]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 #, fuzzy
@@ -516,11 +438,6 @@ msgstr "Mô-đun"
 msgid  "Class Modules"
 msgstr "Module lớp"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "Thay thế"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
 #, fuzzy
 msgid  "Dialog Import - Name already used"
@@ -531,16 +448,6 @@ msgstr "Nhập hộp thoại - Tên đã tồn tại"
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
 msgstr "Thư viện đã chứa một hộp thoại với tên:\n\n$(ARG1)\n\nĐổi tên hộp thoại hiện tại hoặc thay thế hộp thoại đã có.\n"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Thêm"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-#, fuzzy
-msgid  "Omit"
-msgstr "Bỏ qua"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
 #, fuzzy
 msgid  "Dialog Import - Language Mismatch"
@@ -550,11 +457,6 @@ msgstr "Nhập hộp thoại - Ngôn ngữ không khớp"
 #, fuzzy
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
 msgstr "Hộp thoại sắp nhập hỗ trợ ngôn ngữ khác thư viện đích.\n\nThêm những ngôn ngữ này vào thư viện sẽ hỗ trợ các ngôn ngữ đó hoặc bỏ qua để dùng ngôn ngữ hiện tại trong thư viện.\n\nChú ý: Ngôn ngữ mặc định sẽ hiển thị nếu hộp thoại không hỗ trợ."
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "Mới"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 #, fuzzy
@@ -570,16 +472,6 @@ msgstr "Hoạt động"
 #, fuzzy
 msgid  "Pass Count:"
 msgstr "Tổng lần qua:"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Breakpoints"
-msgstr "Điểm ngắt"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-#, fuzzy
-msgid  "Manage Breakpoints"
-msgstr "Quản lý điểm ngắt"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 #, fuzzy
@@ -651,11 +543,6 @@ msgstr "~Xoá"
 msgid  "~Organizer..."
 msgstr "~Tổ chức..."
 
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-#, fuzzy
-msgid  "Macro"
-msgstr "Vĩ lệnh"
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 #, fuzzy
 msgid  "~New"
@@ -665,11 +552,6 @@ msgstr "~Mới"
 #, fuzzy
 msgid  "Choose"
 msgstr "Chọn"
-
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "Chạy"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 #, fuzzy
@@ -801,11 +683,6 @@ msgstr "Phần mở rộng"
 msgid  "Description"
 msgstr "Mô tả"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help information"
-msgstr "Thông tin trợ giúp"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Help ID"
@@ -816,19 +693,9 @@ msgstr "Mã trợ giúp"
 msgid  "Help file name"
 msgstr "Tên tập tin trợ giúp"
 
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-#, fuzzy
-msgid  "Objects"
-msgstr "Đối tượng"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Show"
-msgstr "Hiện"
-
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
-msgstr ""
+msgstr "Đối tượng Cây"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 #, fuzzy
@@ -855,20 +722,10 @@ msgstr "Quản lý ngôn ngữ giao diện người dùng [$1]"
 msgid  "Present Languages"
 msgstr "Ngôn ngữ có sẵn"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Add..."
-msgstr "Thêm..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Delete"
 msgstr "Xoá"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "Mặc định"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -879,11 +736,6 @@ msgstr "Ngôn ngữ mặc định được dùng nếu không có sẵn bản đ
 #, fuzzy
 msgid  "~Close"
 msgstr "Đón~g"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-#, fuzzy
-msgid  "[Default Language]"
-msgstr "[Ngôn ngữ mặc định]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 #, fuzzy
@@ -900,15 +752,14 @@ msgstr "<Bấm nút « Thêm » để tạo các tài nguyên ngôn ngữ>"
 msgid  "Delete Language Resources"
 msgstr "Xoá các tài nguyên ngôn ngữ"
 
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "Bạn sắp xoá các tài nguyên cho ngôn ngữ đã chọn. Mọi chuỗi giao diện người dùng cho ngôn ngữ này sẽ bị xoá.\n\nBạn có muốn xoá các tài nguyên của ngôn ngữ đã chọn không?"
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "Đặt ngôn ngữ giao diện người dùng mặc định"
-
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Default language"
-msgstr "Ngôn ngữ mặc định"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 #, fuzzy

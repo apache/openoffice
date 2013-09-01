@@ -39,6 +39,22 @@ msgstr "%PRODUCTNAME% %PRODUCTVERSION% Hata Raporu"
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% Hata Raporuna Hoş Geldiniz"
 
+#: all/crashrep.ulf#_WELCOME_BODY1_
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr "Bu hata raporlama aracı, %PRODUCTNAME% ürününün nasıl çalıştığı hakkında bilgileri toplar ve bunları daha ileriki sürümleri geliştirmeye yardımcı olması için Apache OpenOffice'e gönderir.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY2_
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr "İşlem çok kolaydır. Sadece bir sonraki pencerede karşınıza çıkan 'Gönder' düğmesine tıklayın, ya da bu hatanın nasıl oluştuğunu kısaca belirttikten sonra 'Gönder' tuşuna tıklayın. Eğer raporu görmek istiyorsanız, 'Raporu Göster' düğmesine tıklamak yeterlidir. Eğer 'Gönderme' düğmesine tıklarsanız bilgisayarınız hiç bir veri göndermeyecektir.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY3_
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr "Müşteri Gizliliği \nHata meydana geldiğinde toplanan bilgi %PRODUCTNAME% %PRODUCTVERSION% durumuyla ilgili veriyle sınırlıdır. Parolalar veya belge içeriğiyle ilgili diğer bilgiler toplanmaz.\n\nBu bilgi sadece %PRODUCTNAME% kalitesini arttırmak amacıyla kulanılacaktır ve üçüncü partilerle paylaşılmayacaktır.\nApache OpenOffice'in gizlilik ilkesi hakkında daha fazla bilgi için\n"
+
+#: all/crashrep.ulf#_PRIVACY_URL_
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr "http://www.openoffice.org/privacy.html adresini ziyaret edin"
+
 #: all/crashrep.ulf#_NEXT_BUTTON_
 msgid  "~Next >>"
 msgstr "Sonraki >>"
@@ -55,9 +71,17 @@ msgstr "Tamam"
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% çalışırken bir hata oluştu"
 
+#: all/crashrep.ulf#_REPORT_BODY_
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% Hata Raporu, Apache OpenOffice'in %PRODUCTNAME% ürününü geliştirmesinde yardımcı olabilen gerekli bilgileri toplamıştır.\nAşağıdaki alanlarda, çökme raporunuza başlık yazabilir ve hata meydana geldiğinde yapmaya çalıştığınız eylemi tarif edebilirsiniz. Ondan sonra 'Gönder' düğmesine tıklayınız.\n"
+
 #: all/crashrep.ulf#_ENTER_TITLE_
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
 msgstr "Hata oluştuğu zaman hangi tür belgeyi (örnek: sunum) kullanıyordunuz?"
+
+#: all/crashrep.ulf#_ALLOW_CONTACT_
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr "Apache OpenOffice'e bu rapor ile ilgili benimle temasa geçmesine ~izin veriyorum."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
 msgid  "Please enter your e-mail address."
@@ -77,7 +101,7 @@ msgstr "Gönder"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
 msgid  "Do ~Not Send"
-msgstr "Gönderme"
+msgstr "Gönder~me"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
 msgid  "Show ~Report..."
@@ -91,9 +115,17 @@ msgstr "Raporu Kaydet..."
 msgid  "Save Report to"
 msgstr "Raporu Farklı Kaydet"
 
+#: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr "Hata raporu yollanamadı çünkü varsayılan e-posta programı MAPI desteklemiyor.\n  Lütfen MAPI destekli bir e-posta programı kullanın."
+
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "Hata raporu geçici olarak kaydedilemedi, bu nedenle gönderilemedi."
+
+#: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr "Hata raporu gönderilemedi, çünkü 'sendmail' programı başlatılamadı.\nLütfen 'sendmail' ayarlarınızı gözden geçirin."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -135,6 +167,10 @@ msgstr "HTTP Vekil Sunucu"
 msgid  "~Port"
 msgstr "~Port"
 
+#: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr "%PRODUCTNAME% Hata Raporu aracının hataları iletebilmesi için İnternet bağlantısına ihtiyaç vardır.\n\nKurumlar genellikle ağlarını korumak için vekil (proxy) sunucularla birlikte güvenlik duvarı kullanır.\n\nEğer bu durum sizin için de geçerli ise, sunucunun adresini ve port numarasını girmelisiniz."
+
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
 msgid  "Sending Error Report"
 msgstr "Hata Raporu Gönderiliyor"
@@ -147,9 +183,9 @@ msgstr "Durum: Hata raporu gönderiliyor"
 msgid  "Status: The error report has been sent successfully."
 msgstr "Durum: Hata raporu başarıyla gönderildi."
 
-#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
-msgid  "Usage:"
-msgstr "Kullanım:"
+#: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr "'Apache OpenOffice'e bu rapor ile ilgili benimle temasa geçmesine izin veriyorum.' seçeneğini işaretlediniz.\nLütfen e-posta adresinizi girin."
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
 msgid  "-p <process ID>"
@@ -158,3 +194,7 @@ msgstr "-p <süreç no>"
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "Hata Rapor Aracına %PRODUCTNAME% süreç kimlik bilgisini (PID) atar"
+
+#: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr "Bu yardım metnini gösterir.\nDetaylı bilgi Kurulum Kılavuzundan alınabilir."

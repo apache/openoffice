@@ -31,25 +31,10 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
-#, fuzzy
-msgid  "Calculates the number of weeks in a specific period"
-msgstr "Рачуна број седмица у одређеном периоду"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
-#, fuzzy
-msgid  "Start date"
-msgstr "Почетни датум"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
 #, fuzzy
 msgid  "First day of the period"
 msgstr "Први дан периода"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
-#, fuzzy
-msgid  "End date"
-msgstr "Крајњи датум"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
 #, fuzzy
@@ -60,41 +45,6 @@ msgstr "Последњи дан периода"
 #, fuzzy
 msgid  "Type"
 msgstr "Врста"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
-#, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr "Врста обрачуна: врста=0 означава временски интервал; врста=1 календарске седмице."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
-#, fuzzy
-msgid  "Determines the number of months in a specific period."
-msgstr "Одређује број месеци у одређеном периоду."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
-#, fuzzy
-msgid  "First day of the period."
-msgstr "Први дан периода."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
-#, fuzzy
-msgid  "Last day of the period."
-msgstr "Последњи дан периода."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
-#, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr "Врста обрачуна: врста=0 означава интервал времена, врста=1 месеце у календару."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
-#, fuzzy
-msgid  "Calculates the number of years in a specific period."
-msgstr "Рачуна број година у одређеном периоду."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
-#, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr "Врста рачунања: врста=0 означава интервал времена, врста=1 године у календару."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
 #, fuzzy
@@ -116,56 +66,6 @@ msgstr "Било који дан у жељеној години"
 msgid  "Returns the number of days of the month in which the date entered occurs"
 msgstr "Враћа број дана у месецу унетог датума."
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
-#, fuzzy
-msgid  "Any day in the desired month"
-msgstr "Било који дан у жељеном месецу"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr "Враћа број дана године унетог датума."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr "Враћа број седмица у години унетог датума."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
-#, fuzzy
-msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr "Шифрује или дешифрује текст користећи алгоритам РОТ13"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Текст"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
-#, fuzzy
-msgid  "Text to be encrypted or text already encrypted"
-msgstr "Текст за шифровање или већ шифровани текст"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
-#, fuzzy
-msgid  "WEEKS"
-msgstr "WEEKS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
-#, fuzzy
-msgid  "MONTHS"
-msgstr "MONTHS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
-#, fuzzy
-msgid  "YEARS"
-msgstr "YEARS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
-#, fuzzy
-msgid  "ISLEAPYEAR"
-msgstr "ISLEAPYEAR"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
 #, fuzzy
 msgid  "DAYSINMONTH"
@@ -176,240 +76,10 @@ msgstr "DAYSINMONTH"
 msgid  "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
-#, fuzzy
-msgid  "WEEKSINYEAR"
-msgstr "WEEKSINYEAR"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
-#, fuzzy
-msgid  "ROT13"
-msgstr "ROT13"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
-#, fuzzy
-msgid  "WORKDAY"
-msgstr "WORKDAY"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
-#, fuzzy
-msgid  "YEARFRAC"
-msgstr "YEARFRAC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
-#, fuzzy
-msgid  "EDATE"
-msgstr "EDATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
-#, fuzzy
-msgid  "WEEKNUM"
-msgstr "WEEKNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
-#, fuzzy
-msgid  "EOMONTH"
-msgstr "EOMONTH"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
-#, fuzzy
-msgid  "NETWORKDAYS"
-msgstr "NETWORKDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
-#, fuzzy
-msgid  "AMORDEGRC"
-msgstr "AMORDEGRC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
-#, fuzzy
-msgid  "AMORLINC"
-msgstr "AMORLINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
-#, fuzzy
-msgid  "ACCRINT"
-msgstr "ACCRINT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
-#, fuzzy
-msgid  "ACCRINTM"
-msgstr "ACCRINTM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
-#, fuzzy
-msgid  "RECEIVED"
-msgstr "RECEIVED"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
-#, fuzzy
-msgid  "DISC"
-msgstr "DISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
-#, fuzzy
-msgid  "DURATION"
-msgstr "DURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
-#, fuzzy
-msgid  "EFFECT"
-msgstr "EFFECT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
-#, fuzzy
-msgid  "CUMPRINC"
-msgstr "CUMPRINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
-#, fuzzy
-msgid  "CUMIPMT"
-msgstr "CUMIPMT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
-#, fuzzy
-msgid  "PRICE"
-msgstr "PRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
-#, fuzzy
-msgid  "PRICEDISC"
-msgstr "PRICEDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
-#, fuzzy
-msgid  "PRICEMAT"
-msgstr "PRICEMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
-#, fuzzy
-msgid  "MDURATION"
-msgstr "MDURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
-#, fuzzy
-msgid  "NOMINAL"
-msgstr "NOMINAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
-#, fuzzy
-msgid  "DOLLARFR"
-msgstr "DOLLARFR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
-#, fuzzy
-msgid  "DOLLARDE"
-msgstr "DOLLARDE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
-#, fuzzy
-msgid  "YIELD"
-msgstr "YIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
-#, fuzzy
-msgid  "YIELDDISC"
-msgstr "YIELDDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
-#, fuzzy
-msgid  "YIELDMAT"
-msgstr "YIELDMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
-#, fuzzy
-msgid  "TBILLEQ"
-msgstr "TBILLEQ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
-#, fuzzy
-msgid  "TBILLPRICE"
-msgstr "TBILLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
-#, fuzzy
-msgid  "TBILLYIELD"
-msgstr "TBILLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
-#, fuzzy
-msgid  "ODDFPRICE"
-msgstr "ODDFPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
-#, fuzzy
-msgid  "ODDFYIELD"
-msgstr "ODDFYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
-#, fuzzy
-msgid  "ODDLPRICE"
-msgstr "ODDLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
-#, fuzzy
-msgid  "ODDLYIELD"
-msgstr "ODDLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
-#, fuzzy
-msgid  "XIRR"
-msgstr "XIRR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
-#, fuzzy
-msgid  "XNPV"
-msgstr "XNPV"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
-#, fuzzy
-msgid  "INTRATE"
-msgstr "INTRATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
-#, fuzzy
-msgid  "COUPNCD"
-msgstr "COUPNCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
-#, fuzzy
-msgid  "COUPDAYS"
-msgstr "COUPDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
-#, fuzzy
-msgid  "COUPDAYSNC"
-msgstr "COUPDAYSNC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
-#, fuzzy
-msgid  "COUPDAYBS"
-msgstr "COUPDAYBS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
-#, fuzzy
-msgid  "COUPPCD"
-msgstr "COUPPCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
-#, fuzzy
-msgid  "COUPNUM"
-msgstr "COUPNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
-#, fuzzy
-msgid  "FVSCHEDULE"
-msgstr "FVSCHEDULE"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
 #, fuzzy
 msgid  "ISEVEN"
 msgstr "ISEVEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
-#, fuzzy
-msgid  "ISODD"
-msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
 #, fuzzy
@@ -421,55 +91,10 @@ msgstr "GCD"
 msgid  "LCM"
 msgstr "LCM"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
-#, fuzzy
-msgid  "MULTINOMIAL"
-msgstr "MULTINOMIAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
-#, fuzzy
-msgid  "SERIESSUM"
-msgstr "SERIESSUM"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
 #, fuzzy
 msgid  "QUOTIENT"
 msgstr "QUOTIENT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
-#, fuzzy
-msgid  "MROUND"
-msgstr "MROUND"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
-#, fuzzy
-msgid  "SQRTPI"
-msgstr "SQRTPI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
-#, fuzzy
-msgid  "RANDBETWEEN"
-msgstr "RANDBETWEEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
-#, fuzzy
-msgid  "BESSELI"
-msgstr "BESSELI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
-#, fuzzy
-msgid  "BESSELJ"
-msgstr "BESSELJ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
-#, fuzzy
-msgid  "BESSELK"
-msgstr "BESSELK"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
-#, fuzzy
-msgid  "BESSELY"
-msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
 #, fuzzy
@@ -486,11 +111,6 @@ msgstr "BIN2HEX"
 msgid  "BIN2OCT"
 msgstr "BIN2OCT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
-#, fuzzy
-msgid  "DELTA"
-msgstr "DELTA"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
 #, fuzzy
 msgid  "DEC2BIN"
@@ -505,21 +125,6 @@ msgstr "DEC2HEX"
 #, fuzzy
 msgid  "DEC2OCT"
 msgstr "DEC2OCT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
-#, fuzzy
-msgid  "ERF"
-msgstr "ERF"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
-#, fuzzy
-msgid  "ERFC"
-msgstr "ERFC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
-#, fuzzy
-msgid  "GESTEP"
-msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
 #, fuzzy
@@ -540,11 +145,6 @@ msgstr "HEX2OCT"
 #, fuzzy
 msgid  "IMABS"
 msgstr "IMABS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
-#, fuzzy
-msgid  "IMAGINARY"
-msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
 #, fuzzy
@@ -621,10 +221,40 @@ msgstr "IMSUM"
 msgid  "IMSQRT"
 msgstr "IMSQRT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
+msgid  "IMTAN"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
+msgid  "IMSEC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
+msgid  "IMCSC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
 #, fuzzy
-msgid  "COMPLEX"
-msgstr "COMPLEX"
+msgid  "IMCOT"
+msgstr "IMCOS"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
+#, fuzzy
+msgid  "IMSINH"
+msgstr "IMSIN"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
+#, fuzzy
+msgid  "IMCOSH"
+msgstr "IMCOS"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
+msgid  "IMSECH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
+msgid  "IMCSCH"
+msgstr ""
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
 #, fuzzy
@@ -641,50 +271,20 @@ msgstr "OCT2DEC"
 msgid  "OCT2HEX"
 msgstr "OCT2HEX"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
-#, fuzzy
-msgid  "CONVERT"
-msgstr "CONVERT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
-#, fuzzy
-msgid  "FACTDOUBLE"
-msgstr "FACTDOUBLE"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "Враћа редни број дана пре или после одређеног броја радних дана"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
-#, fuzzy
-msgid  "Start date"
-msgstr "Почетни датум"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
 #, fuzzy
 msgid  "The start date"
 msgstr "Почетни датум"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
-#, fuzzy
-msgid  "Days"
-msgstr "Дани"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
-#, fuzzy
-msgid  "The number of workdays before or after the start date"
-msgstr "Број радних дана пре или после почетног датума"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
 #, fuzzy
 msgid  "Holidays"
 msgstr "Празници"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
-#, fuzzy
-msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr "Листа вредности датума нерадних дана (одмор, празник, итд.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
 #, fuzzy
@@ -696,75 +296,15 @@ msgstr "Враћа број целих дана између почетног и
 msgid  "End date"
 msgstr "Крајњи датум"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
-#, fuzzy
-msgid  "The end date"
-msgstr "Крајњи датум"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
 #, fuzzy
 msgid  "Basis"
 msgstr "Основа"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
-#, fuzzy
-msgid  "Basis for determining the interest days"
-msgstr "Основа за одређивање дана камате"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr "Враћа редни број датума који је одређен број месеци пре или после почетног датума"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
-#, fuzzy
-msgid  "Months"
-msgstr "Месеци"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
 #, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Број месеци пре или после почетног датума"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr "Враћа број календарске седмице у којој се одређени датум појављује."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
-#, fuzzy
-msgid  "Date"
-msgstr "Датум"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
-#, fuzzy
-msgid  "The date"
-msgstr "Датум"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
-#, fuzzy
-msgid  "Return type"
-msgstr "Врста повраћаја"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
-#, fuzzy
-msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr "Број од 1 до 3 који одређује дан којим седмица почиње"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr "Враћа редни број последњег дана месеца којим је одређени број месеци пре или после почетног датума"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of workdays between two dates"
-msgstr "Враћа број радних дана између два датума"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
-#, fuzzy
-msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr "Листа вредности датума који представљају нерадне дане (одмор, празник, итд.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
 #, fuzzy
@@ -786,70 +326,20 @@ msgstr "Број"
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "Враћа вредност „тачно“ уколико је број непаран"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the multinomial coefficient of a set of numbers"
-msgstr "Враћа мултиномски коефицијент низа бројева"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
 #, fuzzy
 msgid  "Number(s)"
 msgstr "Број(еви)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
-#, fuzzy
-msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr "Број или листа бројева за рачунање мултиномског коефицијента"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the sum of a power series"
-msgstr "Враћа збир низа степенова"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
 #, fuzzy
 msgid  "X"
 msgstr "X"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
-#, fuzzy
-msgid  "The independent variable of the power series"
-msgstr "Независна променљива низа степенова"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
 #, fuzzy
 msgid  "N"
 msgstr "N"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
-#, fuzzy
-msgid  "The initial power to which x is to be raised"
-msgstr "Почетни степен на који треба подићи x"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
-#, fuzzy
-msgid  "M"
-msgstr "M"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
-#, fuzzy
-msgid  "The increment by which to increase n for each term in the series"
-msgstr "Вредност за коју треба повећати n за сваки члан низа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
-#, fuzzy
-msgid  "Coefficients"
-msgstr "Коефицијенти"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
-#, fuzzy
-msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr "Скуп коефицијената којима је помножен сваки следећи степен променљиве x"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the integer portion of a division"
-msgstr "Враћа целобројни део при дељењу"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
 #, fuzzy
@@ -861,20 +351,10 @@ msgstr "Бројилац"
 msgid  "The dividend"
 msgstr "Дељеник"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
-#, fuzzy
-msgid  "Denominator"
-msgstr "Именилац"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
 #, fuzzy
 msgid  "The divisor"
 msgstr "Делилац"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns a number rounded to a specified multiple"
-msgstr "Враћа број заокружен на најближу вредност дељиву одређеним бројем"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
 #, fuzzy
@@ -886,65 +366,15 @@ msgstr "Број за заокруживање"
 msgid  "Multiple"
 msgstr "Умножак"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
-#, fuzzy
-msgid  "The multiple to which you want to round number"
-msgstr "Умножак броја на који желите да заокружите број"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the square root of a number which has been multiplied by pi"
-msgstr "Враћа квадратни корен броја помноженог са Пи"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
-#, fuzzy
-msgid  "The number by which pi is multiplied"
-msgstr "Број којим је помножено Пи"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "Враћа насумични цео број из задатог опсега"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
-#, fuzzy
-msgid  "Bottom"
-msgstr "Дно"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
-#, fuzzy
-msgid  "The smallest integer returned"
-msgstr "Најмањи враћени цео број"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
-#, fuzzy
-msgid  "Top"
-msgstr "Врх"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
-#, fuzzy
-msgid  "The largest integer returned"
-msgstr "Највећи враћени цео број"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the greatest common divisor"
-msgstr "Враћа највећи заједнички делилац"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
 #, fuzzy
 msgid  "Number or list of numbers"
 msgstr "Број или низ бројева"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the least common multiple"
-msgstr "Враћа најмањи заједнички садржалац"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the modified Bessel function In(x)"
-msgstr "Враћа измењену Беселову функцију In(x)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
 #, fuzzy
@@ -955,21 +385,6 @@ msgstr "Вредност у којој се вредност функције п
 #, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Редослед Беселове функције"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the Bessel function Jn(x)"
-msgstr "Враћа Беселову функцију Jn(x)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the Bessel function Kn(x)"
-msgstr "Враћа Беселову функцију Kn(x)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the Bessel function Yn(x)"
-msgstr "Враћа Беселову функцију Yn(x)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
 #, fuzzy
@@ -996,110 +411,25 @@ msgstr "Број коришћених места"
 msgid  "Converts a binary number to a decimal number"
 msgstr "Претвара бинарни број у децимални"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a binary number to a hexadecimal number"
-msgstr "Претвара бинарни број у хексадецимални"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
-#, fuzzy
-msgid  "Number of places used."
-msgstr "Број коришћених места."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts an octal number to a binary number"
-msgstr "Преводи октални број у бинарни"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
 #, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "Октални број за претварање (у текст)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts an octal number to a decimal number"
-msgstr "Преводи октални број у децимални"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts an octal number to a hexadecimal number"
-msgstr "Преводи октални број у хексадецимални"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a decimal number to a binary number"
-msgstr "Претвара децимални број у бинарни"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
 #, fuzzy
 msgid  "The decimal integer to be converted"
 msgstr "Децимални цели број за претварање"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a decimal number to a hexadecimal number"
-msgstr "Претвара децимални број у хексадецимални"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a decimal number into an octal number"
-msgstr "Претвара децимални број у октални"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
 #, fuzzy
 msgid  "The decimal number"
 msgstr "Децимални број"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a hexadecimal number to a binary number"
-msgstr "Претвара хексадецимални број у бинарни"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
 #, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "Хексадецимални број за претварање (у текст)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a hexadecimal number to a decimal number"
-msgstr "Претвара хексадецимални број у децимални"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a hexadecimal number to an octal number"
-msgstr "Преводи хексадецимални број у октални"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
-#, fuzzy
-msgid  "Tests whether two values are equal"
-msgstr "Проверава да ли су две вредности једнаке"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
-#, fuzzy
-msgid  "Number 1"
-msgstr "Број 1"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
-#, fuzzy
-msgid  "The first number"
-msgstr "Први број"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
-#, fuzzy
-msgid  "Number 2"
-msgstr "Број 2"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
-#, fuzzy
-msgid  "The second number"
-msgstr "Други број"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the error function"
-msgstr "Враћа функцију грешке"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
 #, fuzzy
@@ -1111,46 +441,6 @@ msgstr "Доња граница"
 msgid  "The lower limit for integration"
 msgstr "Доња граница за интеграцију"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
-#, fuzzy
-msgid  "Upper limit"
-msgstr "Горња граница"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
-#, fuzzy
-msgid  "The upper limit for integration"
-msgstr "Горња граница за интеграцију"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the complementary error function"
-msgstr "Враћа комплементарну функцију грешке"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
-#, fuzzy
-msgid  "Tests whether a number is greater than a threshold value"
-msgstr "Проверава да ли је број већи од вредности прага"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
-#, fuzzy
-msgid  "The value to test against step"
-msgstr "Вредност за тестирање према кораку"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
-#, fuzzy
-msgid  "Step"
-msgstr "Корак"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
-#, fuzzy
-msgid  "The threshhold value"
-msgstr "Вредност прага"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the double factorial of Number"
-msgstr "Враћа двоструки факторијел броја"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the absolute value (modulus) of a complex number"
@@ -1159,62 +449,17 @@ msgstr "Враћа апсолутну вредност (модул) компле
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
 #, fuzzy
 msgid  "Complex number"
-msgstr ""
+msgstr "Комплексни број"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
 #, fuzzy
 msgid  "The complex number"
 msgstr "Комплексни број"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the imaginary coefficient of a complex number"
-msgstr "Враћа имагинарни део комплексног броја"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns a complex number raised to an integer power"
-msgstr "Враћа комплексни број подигнут на целобројни степен"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
-#, fuzzy
-msgid  "Power to which the complex number is raised"
-msgstr "Степен на који је диже комплексни број"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr "Враћа аргумент као угао изражен у радијанима"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
 #, fuzzy
 msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the cosine of a complex number"
-msgstr "Враћа косинус комплексног броја"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the quotient of two complex numbers"
-msgstr "Враћа количник два комплексна броја"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the algebraic form of the exponential of a complex number"
-msgstr "Враћа алгебарски облик експоненцијалног облика комплексног броја"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the complex conjugate of a complex number"
-msgstr "Враћа конјуговано комплексни број"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the natural logarithm of a complex number"
-msgstr "Враћа природни логаритам комплексног броја"
+msgstr "Комплексни број"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
 #, fuzzy
@@ -1226,36 +471,6 @@ msgstr "Враћа декадни логаритам комплексног бр
 msgid  "Returns the base-2 logarithm of a complex number"
 msgstr "Враћа логаритам основе 2 комплексног броја"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the product of several complex numbers"
-msgstr "Враћа производ неколико комплексних бројева"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
-#, fuzzy
-msgid  "The first complex number"
-msgstr "Први комплексни број"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
-#, fuzzy
-msgid  "Another complex number"
-msgstr "Још један комплексни број"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the real coefficient of a complex number"
-msgstr "Враћа реални коефицијент комплексног броја"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the sine of a complex number"
-msgstr "Враћа синус комплексног броја"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the difference of two complex numbers"
-msgstr "Враћа разлику два комплексна броја"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
 #, fuzzy
 msgid  "Complex number 1"
@@ -1266,75 +481,43 @@ msgstr "Комплексни број 1"
 msgid  "Complex number 2"
 msgstr "Комплексни број 2"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the square root of a complex number"
-msgstr "Враћа квадратни корен комплексног броја"
+msgid  "Returns the tangent of a complex number"
+msgstr "Враћа синус комплексног броја"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
 #, fuzzy
-msgid  "Returns the sum of complex numbers"
-msgstr "Враћа збир комплексних бројева"
+msgid  "Returns the secant of a complex number"
+msgstr "Враћа синус комплексног броја"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
 #, fuzzy
-msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr "Преводи реални и имагинарни коефицијент у комплексни број"
+msgid  "Returns the cosecant of a complex number"
+msgstr "Враћа косинус комплексног броја"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
 #, fuzzy
-msgid  "Real num"
-msgstr "Реални број"
+msgid  "Returns the cotangent of a complex number"
+msgstr "Враћа косинус комплексног броја"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
 #, fuzzy
-msgid  "The real coefficient"
-msgstr "Реални коефицијент"
+msgid  "Returns the hyperbolic sine of a complex number"
+msgstr "Враћа косинус комплексног броја"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
 #, fuzzy
-msgid  "I num"
-msgstr "Имагинарни број"
+msgid  "Returns the hyperbolic cosine of a complex number"
+msgstr "Враћа косинус комплексног броја"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
-#, fuzzy
-msgid  "The imaginary coefficient"
-msgstr "Имагинарни коефицијент"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
+msgid  "Returns the hyperbolic secant of a complex number"
+msgstr ""
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
-#, fuzzy
-msgid  "Suffix"
-msgstr "Суфикс"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
-#, fuzzy
-msgid  "The suffix"
-msgstr "Суфикс"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a number from one measurement system to another"
-msgstr "Преводи број из једног мерног система у други"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
-#, fuzzy
-msgid  "From unit"
-msgstr "Из јединице"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
-#, fuzzy
-msgid  "Unit of measure for number"
-msgstr "Мерна јединица броја"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
-#, fuzzy
-msgid  "To unit"
-msgstr "У јединицу"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
-#, fuzzy
-msgid  "Unit of measure for the result"
-msgstr "Мерна јединица резултата"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
+msgid  "Returns the hyperbolic cosecant of a complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
 #, fuzzy
@@ -1366,26 +549,6 @@ msgstr "Датум куповине имовине"
 msgid  "First period"
 msgstr "Први период"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
-#, fuzzy
-msgid  "Date the first period ends"
-msgstr "Датум завршетка првог периода"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
-#, fuzzy
-msgid  "Salvage"
-msgstr "Ликвидациона"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
-#, fuzzy
-msgid  "Salvage value of an asset at the end of its life"
-msgstr "Ликвидациона вредност имовине на крају њеног живота"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
-#, fuzzy
-msgid  "Period"
-msgstr "Период"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
 #, fuzzy
 msgid  "The period"
@@ -1406,40 +569,10 @@ msgstr "Стопа амортизације"
 msgid  "The year basis to be used"
 msgstr "Годишња основа за коришћење"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
-#, fuzzy
-msgid  "The date the first period ends"
-msgstr "Датум завршетка првог периода"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
-#, fuzzy
-msgid  "The salvage value of an asset at the end of its life"
-msgstr "Ликвидациона вредност имовине на крају њеног живота"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr "Враћа акумулирану камату на хартије од вредности којима се плаћа периодична камата"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
 #, fuzzy
 msgid  "Issue"
 msgstr "Издавање"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
-#, fuzzy
-msgid  "Issue date of the security"
-msgstr "Датум издавања хартије од вредности"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
-#, fuzzy
-msgid  "First interest"
-msgstr "Прва камата"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
-#, fuzzy
-msgid  "First interest date of the security"
-msgstr "Датум прве камате на хартије од вредности"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
 #, fuzzy
@@ -1466,11 +599,6 @@ msgstr "Номинална"
 msgid  "The par value"
 msgstr "Номинална вредност"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
-#, fuzzy
-msgid  "Frequency"
-msgstr "Учесталост"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
 #, fuzzy
 msgid  "The frequency"
@@ -1490,16 +618,6 @@ msgstr "Враћа акумулирану камату на хартије од 
 #, fuzzy
 msgid  "The issue date"
 msgstr "Датум издавања"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr "Враћа отплаћени износ по доспећу за потпуно инвестиране хартије од вредности"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
-#, fuzzy
-msgid  "Maturity"
-msgstr "Рок плаћања"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
 #, fuzzy
@@ -1526,11 +644,6 @@ msgstr "Дисконт"
 msgid  "The discount"
 msgstr "Дисконт"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the discount rate for a security"
-msgstr "Враћа дисконтну стопу за хартију од вредности"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
 #, fuzzy
 msgid  "Price"
@@ -1551,16 +664,6 @@ msgstr "Откуп"
 msgid  "The redemption value"
 msgstr "Откупна вредност"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr "Враћа годишње Меколијево трајање хартија од вредности са периодичним отплатама камате"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
-#, fuzzy
-msgid  "Coupon"
-msgstr "Купон"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
 #, fuzzy
 msgid  "The coupon rate"
@@ -1576,21 +679,6 @@ msgstr "Принос"
 msgid  "The yield"
 msgstr "Принос"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the effective annual interest rate"
-msgstr "Враћа ефективну годишњу каматну стопу"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
-#, fuzzy
-msgid  "Nominal rate"
-msgstr "Номинална стопа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
-#, fuzzy
-msgid  "The nominal rate"
-msgstr "Номинална стопа"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
 #, fuzzy
 msgid  "Npery"
@@ -1600,16 +688,6 @@ msgstr "Npery"
 #, fuzzy
 msgid  "The periods"
 msgstr "Периоди"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr "Враћа кумулативну главницу зајма, за плаћање између два периода"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
-#, fuzzy
-msgid  "Nper"
-msgstr "Број периода плаћања"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
 #, fuzzy
@@ -1625,11 +703,6 @@ msgstr "Pv"
 #, fuzzy
 msgid  "The present value"
 msgstr "Тренутна вредност"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
-#, fuzzy
-msgid  "Start period"
-msgstr "Почетни период"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
 #, fuzzy
@@ -1656,16 +729,6 @@ msgstr "Врста"
 msgid  "The type of maturity"
 msgstr "Врста доспећа"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the cumulative interest to be paid between two periods"
-msgstr "Враћа кумулативну камату, за плаћање између два периода"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr "Враћа цену по 100 новчаних јединица номиналне вредности хартија од вредности које плаћају периодичну камату"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the price per 100 currency units face value of a discounted security"
@@ -1681,70 +744,10 @@ msgstr "Враћа цену по 100 ховчаних јединица номи�
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
 msgstr "Враћа измењено Меколијево трајање за хартију од вредности са предпостављеном паритетном вредношћу од 100 новчаних јединица"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the annual nominal interest rate"
-msgstr "Враћа годишњу номиналну каматну стопу"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
-#, fuzzy
-msgid  "Effective rate"
-msgstr "Ефективна стопа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
-#, fuzzy
-msgid  "The effective interest rate"
-msgstr "Ефективна каматна стопа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr "Претвара децимално изражену цену у цену изражену као разломак"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
-#, fuzzy
-msgid  "Decimal dollar"
-msgstr "Децимални долар"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
 #, fuzzy
 msgid  "Fraction"
 msgstr "Разломак"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr "Претвара цену изражену као разломак у децимално изражену цену"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
-#, fuzzy
-msgid  "Fractional dollar"
-msgstr "Долар разломка"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
-#, fuzzy
-msgid  "The number as a fraction"
-msgstr "Број као разломак"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the yield on a security that pays periodic interest"
-msgstr "Враћа принос на хартију од вредности која плаћа периодичну камату"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the annual yield for a discounted security"
-msgstr "Враћа годишњи принос на дисконтовану хартију од вредности"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr "Враћа годишњи принос хартије од вредности која исплаћује камату по доспећу"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr "Враћа добит еквивалентну обвезници народне банке"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
 #, fuzzy
@@ -1755,11 +758,6 @@ msgstr "Дисконтна стопа"
 #, fuzzy
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
 msgstr "Враћа цену од 100 новчаних јединица номиналне вредности за обвезницу народне банке"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the yield for a treasury bill"
-msgstr "Враћа принос на обвезницу народне банке"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
 #, fuzzy
@@ -1776,35 +774,15 @@ msgstr "Први купон"
 msgid  "The first coupon date"
 msgstr "Датум првог купона"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the yield of a security with an odd first period"
-msgstr "Враћа принос на хартију од вредности са неуобичајним првим периодом"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the price per $100 face value of a security with an odd last period"
 msgstr "Враћа цену по $100 номиналне вредности хартија од вредности са неуобичајеним последњим периодом"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
-#, fuzzy
-msgid  "Last interest"
-msgstr "Последња камата"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
 #, fuzzy
 msgid  "The last interest date"
 msgstr "Датум последње камате"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the yield of a security with an odd last period"
-msgstr "Враћа принос на хартију од вредности са неуобичајним последњим периодом"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr "Враћа интерну стопу повраћаја за непериодични распоред отплате"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
 #, fuzzy
@@ -1826,77 +804,7 @@ msgstr "Датуми"
 msgid  "The dates"
 msgstr "Датуми"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
-#, fuzzy
-msgid  "Guess"
-msgstr "Процена"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
-#, fuzzy
-msgid  "The guess"
-msgstr "Процена"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr "Враћа нето садашњу вредност за непериодични распоред отплате"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the interest rate for a fully invested security"
-msgstr "Враћа каматну стопу за потпуно инвестирану хартију од вредности"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the first coupon date after the settlement date"
 msgstr "Враћа датум првог купона после датума поравнања"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr "Враћа број дана у периоду купона који садржи датум поравнања"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr "Враћа број дана од дана поравнања до датума следећег купона"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr "Враћа број дана од почетка периода купона до дана поравнања"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the last coupon date preceding the settlement date"
-msgstr "Враћа датум последњег купона пред датум поравнања"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr "Враћа број наплативих купона између датума поравнања и доспећа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr "Враћа будућу вредност почетне главнице после примењивања низа сложених каматних стопа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
-#, fuzzy
-msgid  "Principal"
-msgstr "Главница"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
-#, fuzzy
-msgid  "The principal"
-msgstr "Главница"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
-#, fuzzy
-msgid  "Schedule"
-msgstr "Распоред"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
-#, fuzzy
-msgid  "The schedule"
-msgstr "Распоред"

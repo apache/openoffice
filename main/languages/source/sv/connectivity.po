@@ -341,361 +341,451 @@ msgid  "The index could not be created. The size of the chosen column is too big
 msgstr "Index kan inte skapas. Den markerade kolumnen är för stor."
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The name '$name$' doesn't match SQL naming constraints."
 msgstr "Namnet '$name$' matchar inte namnbegränsningarna för SQL."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file $filename$ could not be deleted."
 msgstr "Filen $filename$ kunde inte raderas."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column type for column '$columnname$'."
 msgstr "Ogiltig kolumntyp för kolumn '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
+#, fuzzy
 msgid  "Invalid precision for column '$columnname$'."
 msgstr "Ogiltig precision för kolumn '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Precision is less than scale for column '$columnname$'."
 msgstr "Precisionen är mindre än skalan för kolumn '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column name length for column '$columnname$'."
 msgstr "Ogiltigt längd för kolumnnamn för kolumn '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Ett dubblettvärde har påträffats i kolumn '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr "Kolumnen '$columnname$' har definierats som en \"Decimal\" typ, den maximala längden är $precision$ tecken (med $scale$ decimaler).\n\nDen angivna värdet \"$value$ är längre än antalet tillåtna nummer."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
 msgstr "Kolumnen '$columnname$' kunde inte ändras. Filsystemet är kanske skrivskyddat."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
 msgstr "Kolumnen '$columnname$' kunde inte uppdateras. Värdet är ogiltigt för den kolumnen."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
 msgstr "Kolumnen '$columnname$' kunde inte läggas till. Filsystemet är kanske skrivskyddat."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
 msgstr "Kolumnen vid position '$position$' kunde inte släppas. Filsystemet är kanske skrivskyddat."
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
 msgstr "Tabellen '$tablename$' kunde inte laddas. Filsystemet är kanske skrivskyddat."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be altered."
 msgstr "Tabellen kunde inte ändras."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
 msgstr "Filen '$filename$' är en ogiltig (eller oidentifierad) dBase-fil."
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
+#, fuzzy
 msgid  "Cannot open Evolution address book."
 msgstr "Det gick inte att öppna Evolution-adressboken."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "Can only sort by table columns."
 msgstr "Det går endast att sortera efter tabellkolumner."
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
 msgstr "Sökningen kan inte genomföras. Den är alltför komplex. Endast \"ANTAL(*)\" stöds."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
 msgstr "Sökningen kan inte genomföras. Argumenten 'MELLAN' är inte korrekta."
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. The function is not supported."
 msgstr "Sökningen kan inte genomföras. Funktionen stöds inte."
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "The table can not be changed. It is read only."
 msgstr "Tabellen kan inte ändras. Den är skrivskyddad."
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
+#, fuzzy
 msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
 msgstr "Raden kunde inte raderas. Alternativet \"Visa inaktiva dataposter\" har angetts. "
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The row could not be deleted. It is already deleted."
 msgstr "Raden kunde inte raderas. Den är redan raderad."
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains more than one table."
 msgstr "Sökningen kan inte genomföras. Den innehåller mer än en tabell."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains no valid table."
 msgstr "Sökningen kan inte genomföras. Den innehåller ingen giltig tabell."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains no valid columns."
 msgstr "Sökningen kan inte genomföras. Den innehåller inga giltiga kolumner."
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "The count of the given parameter values doesn't match the parameters."
 msgstr "Antalet för de givna parametervärdena matchar inte parametrarna."
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
+#, fuzzy
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
 msgstr "URL:en '$URL$' är ogiltig. Det gick inte att upprätta någon anslutning."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
+#, fuzzy
 msgid  "The driver class '$classname$' could not be loaded."
 msgstr "Det gick inte att läsa in drivrutinsklassen '$classname$'. "
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
+#, fuzzy
 msgid  "No Java installation could be found. Please check your installation."
 msgstr "Det gick inte att hitta någon Java-installation. Kontrollera din installation."
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
+#, fuzzy
 msgid  "The execution of the query doesn't return a valid result set."
 msgstr "Utförandet av instruktionen returnerar ingen giltig resultatuppsättning."
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
+#, fuzzy
 msgid  "The execution of the update statement doesn't effect any rows."
 msgstr "Utförandet av uppdateringsuttrycket påverkar inga rader. "
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
+#, fuzzy
 msgid  "The additional driver class path is '$classpath$'."
 msgstr "Drivrutinens extra klassökväg är '$classpath$'."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "The type of parameter at position '$position$' is unknown."
 msgstr "Parametertypen vid positionen '$position$' är okänd."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "The type of column at position '$position$' is unknown."
 msgstr "Kolumntypen vid positionen '$position$' är okänd."
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
+#, fuzzy
 msgid  "No suitable KDE installation was found."
 msgstr "Ingen lämplig KDE-installation hittades."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
+#, fuzzy
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
 msgstr "KDE-versionen $major$.$minor$ eller högre krävs för att få tillgång till adressboken i KDE."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
+#, fuzzy
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
 msgstr "Den KDE-version som hittades är alltför ny. Endast KDE upp till version $major$.$minor$ är känd för att fungera tillsammans med den här produkten.\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
+#, fuzzy
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
 msgstr "Om du inte är säker på att din KDE-version fungerar kan du kör följande Basic-makro för att inaktivera versionkontrollen:\n\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
+#, fuzzy
 msgid  "Parameters can appear only in prepared statements."
 msgstr "Parametrar kan visas endast i förberedda uttryck. "
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "No such table!"
 msgstr "Ingen sådan tabell!"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No suitable Mac OS installation was found."
 msgstr "Ingen lämplig Mac OS-installation hittades."
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
+#, fuzzy
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
 msgstr "Databasfilen '$filename$' kunde inte skapas. Kontrollera ditt lediga utrymme på hårddisken."
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
 msgstr "Databasen '$databasename$' kunde inte startas eftersom kommandot '$progname$' inte kunde köras."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
 msgstr "Den aktuella databasen behöver konverteras. Infoga kontrollanvändare och lösenord."
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
 msgstr "Den här användaren kunde inte raderas. Databasen stannar då i ett inkonsekvent tillstånd."
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
+#, fuzzy
 msgid  "The connection can not be established. No storage or URL was given."
 msgstr "Anslutningen kan inte upprättas. Inget lagringsplats eller URL har angetts. "
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
+#, fuzzy
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
 msgstr "Den givna URL:en innehåller en ogiltig sökväg för lokalt filsystem. Kontrollerar platsen för din databasfil."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "An error occured while obtaining the connection's table container."
 msgstr "Ett fel uppstod när anslutningens tabellinnehåll hämtades."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
+#, fuzzy
 msgid  "An error occured while creating the table editor dialog."
 msgstr "Ett fel inträffade när dialogredigeraren för tabellen skulle skapas."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
+#, fuzzy
 msgid  "There is no table named '$tablename$'."
 msgstr "Det finns ingen tabell med namnet '$tablename$'."
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
+#, fuzzy
 msgid  "The provided DocumentUI is not allowed to be NULL."
 msgstr "Angiven DocumentUI får inte vara NULL."
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
+#, fuzzy
 msgid  "The record operation has been vetoed."
 msgstr "Postoperationen har avbrutits."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
+#, fuzzy
 msgid  "The statement contains a cyclic reference to one or more sub queries."
 msgstr "Satsen innehåller en cyklisk referens till en eller flera delsökningar."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
+#, fuzzy
 msgid  "The name must not contain any slashes ('/')."
 msgstr "Namnet får inte innehålla något snedstreck ('/')."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
+#, fuzzy
 msgid  "$1$ is no SQL conform identifier."
 msgstr "Identifieraren $1$ överensstämmer inte med SQL."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
+#, fuzzy
 msgid  "Query names must not contain quote characters."
 msgstr "Söknamn får inte innehålla citattecken."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
+#, fuzzy
 msgid  "The name '$1$' is already in use in the database."
 msgstr "Namnet '$1$' används redan i databasen."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
+#, fuzzy
 msgid  "No connection to the database exists."
 msgstr "Det finns ingen anslutning till databasen."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
+#, fuzzy
 msgid  "No $1$ exists."
 msgstr "$1$ saknas."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
+#, fuzzy
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "Det gick inte att visa hela tabellinnehållet. Du bör använda ett filter."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Adabas D"
 msgstr "Adabas D"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (ODBC)"
 msgstr "MySQL (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (Native)"
 msgstr "MySQL (ursprunglig)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Outlook Address Book"
 msgstr "Microsoft Outlook-adressbok"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Windows Address Book"
 msgstr "Microsoft Windows-adressbok"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "SeaMonkey-adressbok"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "Thunderbird-adressbok"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "LDAP-adressbok"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "SeaMonkey-adressbok"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "Thunderbird-adressbok"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "LDAP-adressbok"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "HSQL database engine"
 msgstr "HSQL-databasmotor"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Mac OS X Address Book"
 msgstr "Mac OS X-adressbok"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "I grupp"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ODBC"
 msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "KDE Address Book"
 msgstr "KDE-adressbok"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Text"
 msgstr "Text"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Kalkylblad"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "JDBC"
 msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Oracle JDBC"
 msgstr "Oracle JDBC"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "dBASE"
 msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution Local"
 msgstr "Evolution (lokalt)"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "I grupp"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ADO"
 msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access"
 msgstr "Microsoft Access"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"

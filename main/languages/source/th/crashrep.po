@@ -39,6 +39,22 @@ msgstr "รายงานข้อผิดพลาด %PRODUCTNAME% %PRODUCTV
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "ยินดีต้อนรับสู่ การรายงานข้อผิดพลาดของ %PRODUCTNAME% %PRODUCTVERSION%"
 
+#: all/crashrep.ulf#_WELCOME_BODY1_
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr "เครื่องมือการรายงานข้อผิดพลาดนี้จะรวบรวมข้อมูลเกี่ยวกับการทำงานของ %PRODUCTNAME% แล้วส่งไปยัง Apache OpenOffice เพื่อช่วยปรับปรุงรุ่นต่อไป\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY2_
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr "ไม่ยากเลย - เพียงแค่คุณส่งรายงานที่เครื่องสร้างขึ้นโดยการคลิกที่ 'ส่ง' ในกล่องโต้ตอบถัดไป หรือคุณสามารถอธิบายเพิ่มเติมสั้นๆ เกี่ยวกับความผิดพลาดที่เกิดขึ้น แล้วคลิก 'ส่ง' ถ้าคุณต้องการดูรายงานให้คลิกที่ปุ่ม 'แสดงรายงาน' ถ้าคุณคลิกที่ 'ไม่ส่ง' ก็จะไม่มีการส่งข้อมูลใดๆ\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY3_
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr "ความเป็นส่วนตัวของลูกค้า\nข้อมูลที่ได้รวบรวมจะถูกจำกัดเฉพาะข้อมูลที่เกี่ยวกับสถานะของ %PRODUCTNAME% %PRODUCTVERSION% ขณะที่เกิดความผิดพลาดขึ้น ส่วนข้อมูลอื่นๆ เกี่ยวกับรหัสผ่าน หรือเนื้อหาของเอกสารจะไม่มีการรวบรวมด้วย\n\nข้อมูลที่ได้จะใช้สำหรับการพัฒนาคุณภาพของ %PRODUCTNAME% และจะไม่เผยแพร่กับบุคคลที่สาม\nรายละเอียดเพิ่มเติมเกี่ยวกับนโยบายความเป็นส่วนตัวของ Apache OpenOffice เข้าไปดูได้ที่\n"
+
+#: all/crashrep.ulf#_PRIVACY_URL_
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr "http://www.openoffice.org/privacy.html"
+
 #: all/crashrep.ulf#_NEXT_BUTTON_
 msgid  "~Next >>"
 msgstr "~ถัดไป >>"
@@ -55,9 +71,17 @@ msgstr "ตกลง"
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "ข้อผิดพลาดเกิดขึ้นขณะใช้งาน %PRODUCTNAME% %PRODUCTVERSION%"
 
+#: all/crashrep.ulf#_REPORT_BODY_
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr "รายงานข้อผิดพลาดของ %PRODUCTNAME% %PRODUCTVERSION% ได้รวบรวมข้อมูลที่จะช่วยให้ Apache OpenOffice ปรับปรุง %PRODUCTNAME% ให้ดีขึ้น\nคุณสามารถกรอกชื่อเรื่องของรายงานข้อผิดพลาดของคุณ และอธิบายเกี่ยวกับสิ่งที่กำลังทำขณะเกิดข้อผิดพลาด จากนั้นคลิก 'ส่ง'\n"
+
 #: all/crashrep.ulf#_ENTER_TITLE_
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
 msgstr "ตามชนิดของเอกสาร (เช่น งานนำเสนอ) ที่คุณกำลังใช้งานแล้วเกิดข้อผิดพลาดขึ้น?"
+
+#: all/crashrep.ulf#_ALLOW_CONTACT_
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr "~ฉันอนุญาตให้ Apache OpenOffice ติดต่อฉันตามการรายงานนี้"
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
 msgid  "Please enter your e-mail address."
@@ -65,7 +89,7 @@ msgstr "กรุณาใส่ที่อยู่อีเมลของค
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "คุณกำลังใช้งาน %PRODUCTNAME% อย่างไรขณะที่เกิดความผิดพลาดขึ้น?"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
 msgid  " << ~Back"
@@ -91,9 +115,17 @@ msgstr "~บันทึกรายงาน..."
 msgid  "Save Report to"
 msgstr "บันทึกรายงานไปยัง"
 
+#: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr "ไม่สามารถส่งรายงานข้อผิดพลาดได้ เพราะโปรแกรมอีเมลปริยายไม่สนับสนุน MAPI\n กรุณาใช้โปรแกรมอีเมลที่ไปกันได้กับ MAPI"
+
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "ไม่สามารถบันทึกรายงานข้อผิดพลาดได้ชั่วคราว ดังนั้นจึงไม่สามารถส่งไปได้"
+
+#: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr "ไม่สามารถส่งรายงานข้อผิดพลาดได้เนื่องจากรายการ 'ส่งเมล' ไม่สามารถเริ่มทำงานได้\nกรุณาตรวจสอบการตั้งค่า 'ส่งเมล' "
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -135,6 +167,10 @@ msgstr "พร็อกซี HT~TP"
 msgid  "~Port"
 msgstr "~พอร์ต"
 
+#: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr "เครื่องมือรายงานข้อผิดพลาด %PRODUCTNAME% ต้องการการเชื่อมต่อกับอินเทอร์เน็ต เพื่อให้สามารถส่งรายงานข้อผิดพลาดได้\n\nบริษัทมักจะใช้เซิร์ฟเวอร์พร็อกซีในการเชื่อมกับไฟร์วอลเพื่อป้องกันเน็ตเวิร์ก\n\nถ้าจะนำมาใช้กับกรณีของคุณ คุณจะต้องระบุที่อยู่และพอร์ตให้กับเซิร์ฟเวอร์"
+
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
 msgid  "Sending Error Report"
 msgstr "กำลังส่งรายงานข้อผิดพลาด"
@@ -147,9 +183,9 @@ msgstr "สถานะ: กำลังส่งรายงานข้อผ�
 msgid  "Status: The error report has been sent successfully."
 msgstr "สถานะ: รายงานข้อผิดพลาดส่งสำเร็จเรียบร้อย"
 
-#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
-msgid  "Usage:"
-msgstr "วิธีใช้:"
+#: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr "คุณจะต้องทำเครื่องหมายที่ตัวเลือก 'ฉันอนุญาตให้ Apache OpenOffice ติดต่อฉันตามรายงานนี้'\nกรุณาใส่ที่อยู่อีเมลของคุณ"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
 msgid  "-p <process ID>"
@@ -158,3 +194,7 @@ msgstr "-p <process ID>"
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+
+#: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr "แสดงข้อความช่วยเหลือนี้\nข้อมูลที่เป็นรายละเอียดสามารถพบได้ในคำแนะนำการติดตั้ง"

@@ -43,17 +43,9 @@ msgstr "உபரி உதவியை சேர் (~O)"
 msgid  "All"
 msgstr "அனைத்தும்"
 
-#: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "புதுப்பி (~U)"
-
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 msgid  "~Close & Return to "
 msgstr "மூடு & பின் திரும்பு (~C)"
-
-#: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
-msgstr "தெரியும் பொத்தான்கள் (~B)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
 msgid  "~Customize Toolbar..."
@@ -79,9 +71,13 @@ msgstr "கருவிப்பட்டையை மூடு (~T)"
 msgid  "Save Copy ~as..."
 msgstr "நகலை இவ்வாறு சேமி (~a)..."
 
-#: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
-msgstr "ஆவணங்களில்லை"
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid  "Clear List"
+msgstr "பட்டியலை துடை"
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid  "Clears the list with the most recently opened files. This action can not be undone."
+msgstr "மிக சமீபத்தில் திறந்த கோப்புகள் பட்டியலை நிறப்புகின்றன. இரு மீண்டும் பழைய நிலைக்கு மாற்ற முடியாது"
 
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
 msgid  "Add-On %num%"
@@ -115,17 +111,9 @@ msgstr "2."
 msgid  "Accept the License Agreement."
 msgstr "உரிம ஒப்பந்தத்தை ஏற்றுக்கொள்."
 
-#: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "ஏற்றுக்கொள் (~A)"
-
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
 msgstr "மறுத்திடு"
-
-#: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
-msgstr "மறு முயற்சி"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
@@ -161,7 +149,7 @@ msgstr "ஒன்றுமில்லை (சொல்திருத்த ச
 
 #: classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.STRING.TEXT
 msgid  "Reset to Default Language"
-msgstr ""
+msgstr "இயல்பு மொழிக்கு மாற்றப்பட்டுவிட்டது"
 
 #: classes/resource.src#STR_LANGSTATUS_MORE.STRING.TEXT
 msgid  "More..."
@@ -197,7 +185,7 @@ msgstr "மாதிரியுருகள் (~T)..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
 msgid  "~Open..."
-msgstr ""
+msgstr "திறந்த..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
 msgid  "Add new features to %PRODUCTNAME"

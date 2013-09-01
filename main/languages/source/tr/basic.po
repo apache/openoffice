@@ -33,7 +33,7 @@ msgstr ""
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SYNTAX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Syntax error."
-msgstr "Sözdizim hatası."
+msgstr "Sözdizimi hatası."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_GOSUB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Return without Gosub."
@@ -41,7 +41,7 @@ msgstr "Gosub olmadan geri dön."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_REDO_FROM_START_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect entry; please retry."
-msgstr "Giriş yanlış; lütfen yeniden girin."
+msgstr "Yanlış giriş; lütfen yeniden deneyin."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ARGUMENT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid procedure call."
@@ -53,11 +53,11 @@ msgstr "Taşma."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_MEMORY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough memory."
-msgstr "Bellek yeterli değil."
+msgstr "Yeterli bellek yok."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ALREADY_DIM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array already dimensioned."
-msgstr "Dizi boyutlandırılmış durumda."
+msgstr "Dizilim zaten boyutlandırılmış."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_OUT_OF_RANGE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Index out of defined range."
@@ -77,7 +77,7 @@ msgstr "Değişken tanımlanmadı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CONVERSION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data type mismatch."
-msgstr "Veri türleri uyuşmuyor."
+msgstr "Veri türü uyuşmuyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid parameter."
@@ -85,7 +85,7 @@ msgstr "Geçersiz parametre."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_USER_ABORT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Process interrupted by user."
-msgstr "Süreç kullanıcı tarafından kesildi."
+msgstr "İşlem kullanıcı tarafından yarıda kesildi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RESUME_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Resume without error."
@@ -93,7 +93,7 @@ msgstr "Hata olmaksızın devam et."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_STACK_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Not enough stack memory."
-msgstr "Yığın belleği yeterli değil."
+msgstr "Yeterli yığın belleği yok."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub-procedure or function procedure not defined."
@@ -101,7 +101,7 @@ msgstr "Alt yöntem ya da işlev yöntemi tanımlanmadı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading DLL file."
-msgstr "DLL dosyasını yükleme sırasında hata."
+msgstr "DLL dosyası yüklenirken hata."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_CALL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Wrong DLL call convention."
@@ -113,7 +113,7 @@ msgstr "İç hata $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid file name or file number."
-msgstr "Dosya adı ya da numarası yanlış."
+msgstr "Geçersiz dosya adı ya da dosya numarası."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File not found."
@@ -121,19 +121,19 @@ msgstr "Dosya bulunamadı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_FILE_MODE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect file mode."
-msgstr "Dosya kipi yanlış."
+msgstr "Yanlış dosya kipi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_ALREADY_OPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already open."
-msgstr "Dosya açık durumda."
+msgstr "Dosya zaten açık."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_IO_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device I/O error."
-msgstr "Cihaz I/O hatası."
+msgstr "Cihaz G/Ç hatası."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_EXISTS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already exists."
-msgstr "Dosya mevcut durumda."
+msgstr "Dosya zaten var."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_LENGTH_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record length."
@@ -149,15 +149,15 @@ msgstr "Okuma dosya sonunu aşıyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record number."
-msgstr "Yanlış kayıt sayısı."
+msgstr "Yanlış kayıt numarsı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_TOO_MANY_FILES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many files."
-msgstr "Dosya sayısı fazla."
+msgstr "Çok fazla dosya."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_DEVICE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device not available."
-msgstr "Cihaz kullanılabilir durumda değil."
+msgstr "Cihaz kullanılabilir değil."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_DENIED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Access denied."
@@ -173,27 +173,27 @@ msgstr "Uygulanmadı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DIFFERENT_DRIVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Renaming on different drives impossible."
-msgstr "Farklı sürücülerde yeniden adlandırma yapılamaz."
+msgstr "Farklı sürücülerde yeniden adlandırma imkansız."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ACCESS_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path/File access error."
-msgstr "Veri yolu/Dosya erişim hatası."
+msgstr "Yol/Dosya erişimi hatası."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PATH_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Path not found."
-msgstr "Veri yolu bulunamadı."
+msgstr "Yol bulunamadı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object variable not set."
-msgstr "Nesne değişkeni belirlenmedi."
+msgstr "Nesne değişkeni ayarlı değil."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PATTERN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid string pattern."
-msgstr "Dizilim örneği geçerli değil."
+msgstr "Geçersiz dizgi örneği."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_IS_NULL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Use of zero not permitted."
-msgstr "Sıfır kullanımı geçerli değil."
+msgstr "Sıfırın kullanımına izin verilmiyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE Error."
@@ -209,11 +209,11 @@ msgstr "Kullanılabilir DDE kanalı yok."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_RESPONSE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "No application responded to DDE connect initiation."
-msgstr "Hiçbir uygulama DDE bağlantı talebine yanıt vermiyor."
+msgstr "Hiçbir uygulama DDE bağlantısı başlatmaya yanıt vermedi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_MULT_RESPONSES_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Too many applications responded to DDE connect initiation."
-msgstr "DDE bağlantı talebine çok fazla uygulama yanıt veriyor."
+msgstr "Çok fazla uygulama DDE bağlantısı başlatmaya yanıt verdi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_CHANNEL_LOCKED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE channel locked."
@@ -225,11 +225,11 @@ msgstr "Harici uygulama DDE işlemini yürütemiyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_TIMEOUT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Timeout while waiting for DDE response."
-msgstr "DDE yanıtını beklemede zaman aşımı."
+msgstr "DDE yanıtını beklerken zaman aşımı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_USER_INTERRUPT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "User pressed ESCAPE during DDE operation."
-msgstr "DDE işlemi sırasında ESCAPE tuşuna basıldı."
+msgstr "Kullanıcı DDE işlemi sırasında ESCAPE tuşuna bastı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_BUSY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application busy."
@@ -241,19 +241,19 @@ msgstr "Verisiz DDE işlemi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_WRONG_DATA_FORMAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Data are in wrong format."
-msgstr "Veri biçimi hatalı."
+msgstr "Veri yanlış biçimde."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_PARTNER_QUIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "External application has been terminated."
-msgstr "Harici uygulamadan çıkıldı."
+msgstr "Harici uygulama sonlandırıldı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_CONV_CLOSED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE connection interrupted or modified."
-msgstr "DDE bağlantısı kesildi ya da değiştirildi."
+msgstr "DDE bağlantısı yarıda kesildi ya da değiştirildi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE method invoked with no channel open."
-msgstr "Açık kanal olmadan DDE yöntem çağrısı."
+msgstr "Açık kanal olmadan DDE yöntemi çağrısı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_INVALID_LINK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid DDE link format."
@@ -265,19 +265,19 @@ msgstr "DDE iletisi kayboldu."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_ALREADY_EST_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Paste link already performed."
-msgstr "Yapıştırılmış bağlantı önceden gerçekleştirildi."
+msgstr "Bağlantı yapıştırma zaten yapıldı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_LINK_INV_TOPIC_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr "Bağlantı kipi geçersiz bağlantı yüzünden belirlenemedi."
+msgstr "Bağlantı kipi geçersiz bağlantı konusundan dolayı ayarlanamaz."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_DLL_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE requires the DDEML.DLL file."
-msgstr "DDE için DDEML.DLL gerekli."
+msgstr "DDE için DDEML.DLL dosyası gerekir."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CANNOT_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Module cannot be loaded; invalid format."
-msgstr "Modül yüklenemiyor, biçim geçersiz."
+msgstr "Modül yüklenemez, geçersiz biçim."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_INDEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object index."
@@ -293,7 +293,7 @@ msgstr "Yanlış özellik değeri."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROP_READONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is read-only."
-msgstr "Bu özellik salt-okunurdur."
+msgstr "Bu özellik salt okunur."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROP_WRITEONLY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property is write only."
@@ -301,11 +301,11 @@ msgstr "Bu özellik sadece yazmadır."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INVALID_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object reference."
-msgstr "Geçersiz nesne başvurusu."
+msgstr "Geçersiz nesne kaynağı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Property or method not found: $(ARG1)."
-msgstr "Özellik ya da yöntem bulunamadı.$(ARG1)."
+msgstr "Özellik ya da yöntem bulunamadı: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NEEDS_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object required."
@@ -313,35 +313,35 @@ msgstr "Nesne gerekli."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_INVALID_USAGE_OBJECT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid use of an object."
-msgstr "Nesne kullanımı yanlış."
+msgstr "Geçersiz bir nesne kullanımı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_OLE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "OLE Automation is not supported by this object."
-msgstr "OLE otomasyonu bu nesne tarafından desteklenmiyor."
+msgstr "OLE Otomasyonu bu nesne tarafından desteklenmiyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_METHOD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This property or method is not supported by the object."
-msgstr "Nesne bu özelliği ya da yöntemi desteklemiyor."
+msgstr "Bu özellik ya da yöntem nesne tarafından desteklenmiyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_OLE_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "OLE Automation Error."
-msgstr "OLE Otomasyonunda Hata."
+msgstr "OLE Otomasyonu Hatası."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ACTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This action is not supported by given object."
-msgstr "Bu işlem belirtilen nesne tarafından desteklenmiyor."
+msgstr "Bu eylem belirlenmiş nesne tarafından desteklenmiyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_NAMED_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Named arguments are not supported by given object."
-msgstr "Adlandırılmış bağımsız değişkenler, belirtilen nesne tarafından desteklenmiyor."
+msgstr "Adlandırılmış bağımsız değişkenler, belirlenmiş nesne tarafından desteklenmiyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_LOCALE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The current locale setting is not supported by the given object."
-msgstr "Geçerli yerel ayarlar, belirtilen nesne tarafından desteklenmiyor."
+msgstr "Şu anki yerel ayarlar, belirlenmiş nesne tarafından desteklenmiyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NAMED_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Named argument not found."
-msgstr "Adlandırılan bağımsız değişken bulunamadı."
+msgstr "Adlandırılmış bağımsız değişken bulunamadı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_OPTIONAL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Argument is not optional."
@@ -349,7 +349,7 @@ msgstr "Bağımsız değişken isteğe bağlı değil."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_WRONG_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid number of arguments."
-msgstr "Bağımsız değişken sayısı geçersiz."
+msgstr "Geçersiz bağımsız değişken sayısı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_A_COLL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object is not a list."
@@ -357,7 +357,7 @@ msgstr "Nesne bir liste değil."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_ORDINAL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid ordinal number."
-msgstr "Sıra sayısı geçersiz."
+msgstr "Geçersiz sıra sayısı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DLLPROC_NOT_FOUND_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Specified DLL function not found."
@@ -377,23 +377,23 @@ msgstr "Nesne bu yönteme sahip değil."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_ARG_MISSING_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Required argument lacking."
-msgstr "Gerekli bağımsız değişken eksik."
+msgstr "Gereken bağımsız değişken eksik."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_METHOD_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error executing a method."
-msgstr "Yöntemin yürütülmesinde hata."
+msgstr "Yöntem yürütülürken hata."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unable to set property."
-msgstr "Özellik tanımlanamadı."
+msgstr "Özellik ayarlanamaz."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_GETPROP_FAILED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unable to determine property."
-msgstr "Özellik belirlenemedi."
+msgstr "Özellik belirlenemez."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNEXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unexpected symbol: $(ARG1)."
-msgstr "Beklenmeyen simge: $(ARG1)."
+msgstr "Beklenmedik sembol: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Expected: $(ARG1)."
@@ -401,31 +401,31 @@ msgstr "Beklenen: $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_SYMBOL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Symbol expected."
-msgstr "Simge bekleniyor."
+msgstr "Sembol beklendi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable expected."
-msgstr "Değişken bekleniyor."
+msgstr "Değişken beklendi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LABEL_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label expected."
-msgstr "Etiket bekleniyor."
+msgstr "Etiket beklendi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LVALUE_EXPECTED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Value cannot be applied."
-msgstr "Değer atanamıyor."
+msgstr "Değer uygulanamaz."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_VAR_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable $(ARG1) already defined."
-msgstr "Değişken $(ARG1) tanımlanmış durumda."
+msgstr "Değişken $(ARG1) zaten tanımlanmış."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr "Alt yöntem ya da işlev yöntemi $(ARG1)'de tanımlanmış durumda."
+msgstr "Alt yöntem ya da işlev yöntemi $(ARG1) zaten tanımlanmış."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LABEL_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label $(ARG1) already defined."
-msgstr "Etiket $(ARG1) tanımlanmış durumda."
+msgstr "Etiket $(ARG1) zaten tanımlanmış."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_VAR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Variable $(ARG1) not found."
@@ -433,7 +433,7 @@ msgstr "Değişken $(ARG1) bulunamadı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_ARRAY_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array or procedure $(ARG1) not found."
-msgstr "Dizi ya da yöntem $(ARG1) bulunamadı."
+msgstr "Dizilim ya da yöntem $(ARG1) bulunamadı."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_UNDEF_PROC_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Procedure $(ARG1) not found."
@@ -449,19 +449,19 @@ msgstr "Bilinmeyen veri türü $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_EXIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Exit $(ARG1) expected."
-msgstr "Çıkış $(ARG1) bekleniyor."
+msgstr "Çıkış $(ARG1) beklendi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BLOCK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Statement block still open: $(ARG1) missing."
-msgstr "Açık deyim bloku: $(ARG1) eksik."
+msgstr "İfade bloğu hala açık: $(ARG1) eksik."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BRACKETS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Parentheses do not match."
-msgstr "Ayraçlar uyumsuz."
+msgstr "Parantezler eşleşmiyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DECLARATION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Symbol $(ARG1) already defined differently."
-msgstr "Simge $(ARG1) farklı bir biçimde tanımlanmış durumda."
+msgstr "Sembol $(ARG1) farklı bir biçimde zaten tanımlanmış."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_PARAMETERS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Parameters do not correspond to procedure."
@@ -469,27 +469,27 @@ msgstr "Parametreler yönteme uymuyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHAR_IN_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid character in number."
-msgstr "Numara geçersiz bir karakter içeriyor."
+msgstr "Numara içinde geçersiz karakter."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_MUST_HAVE_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array must be dimensioned."
-msgstr "Dizinin boyutlandırılması gerekiyor."
+msgstr "Dizilim boyutlandırılmak zorundadır."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_IF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Else/Endif without If."
-msgstr "'If''siz Else/Endif."
+msgstr "If ifadesi olmadan Else/Endif."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_SUBR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1) not allowed within a procedure."
-msgstr "Yöntem $(ARG1) geçerli değil."
+msgstr "Bir yöntem ile $(ARG1) için izin verilmedi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_IN_MAIN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1) not allowed outside a procedure."
-msgstr "Yöntem dışında $(ARG1) geçerli değil."
+msgstr "Bir yöntem dışında $(ARG1) için izin verilmedi."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_WRONG_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Dimension specifications do not match."
-msgstr "Boyut verileri arasında uyuşmazlık."
+msgstr "Boyut özellikleri eşleşmiyor."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_OPTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Unknown option: $(ARG1)."
@@ -505,31 +505,27 @@ msgstr "Program çok büyük."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NO_STRINGS_ARRAYS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Strings or arrays not permitted."
-msgstr "Dizilimler ya da diziler geçerli değil."
+msgstr "Dizgilere ya da dizilimlere izin verilmedi."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "An exception occurred $(ARG1)."
-msgstr "Hata oluştu $(ARG1)"
+msgstr "Bir istisna meydana geldi $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "This array is fixed or temporarily locked."
-msgstr "Bu dizi sabitlenmiş ya da geçici olarak kilitlenmiş."
+msgstr "Bu dizilim sabitlenmiş ya da geçici olarak kilitlenmiş."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Out of string space."
-msgstr "Dizi dışında boşluk."
+msgstr "Dizgi boşluğu yetersiz."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Expression Too Complex."
-msgstr "İfade Fazla Karmaşık."
+msgstr "İfade Çok Fazla Karmaşık."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Can't perform requested operation."
-msgstr "İstenen işlem gerçekleştirilemedi."
-
-#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many DLL application clients."
-msgstr "Çok fazla DLL uygulama istemcisi."
+msgstr "İstenen işlem gerçekleştirilemiyor."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "For loop not initialized."
@@ -541,31 +537,31 @@ msgstr "$(ARG1)"
 
 #: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
 msgid  "The macro running has been interrupted"
-msgstr "Çalıştırılan makro kesildi"
+msgstr "Çalıştırılan makro yarıda kesildi"
 
 #: classes/sb.src#IDS_SBERR_STOREREF.STRING.TEXT
 msgid  "Reference will not be saved: "
-msgstr "Başvuru kaydedilmeyecek: "
+msgstr "Kaynak kaydedilmeyecektir: "
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBLOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading library '$(ARG1)'."
-msgstr "Kütüphane yükleme sırasında hata '$(ARG1)'"
+msgstr "Kütüphane '$(ARG1)' yüklenirken hata."
 
 #: classes/sb.src#ERRCODE_BASMGR_LIBSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error saving library: '$(ARG1)'."
-msgstr "Kütüphane kaydetme sırasında hata: '$(ARG1)'"
+msgstr "Kütüphane kaydedilirken hata: '$(ARG1)'."
 
 #: classes/sb.src#ERRCODE_BASMGR_MGROPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr "'$(ARG1)' dosyasından BASIC kurulamadı"
+msgstr "'$(ARG1)' dosyasından TEMEL başlatılamadı."
 
 #: classes/sb.src#ERRCODE_BASMGR_MGRSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error saving BASIC: '$(ARG1)'."
-msgstr "BASIC'i kaydetme sırasında hata: '$(ARG1)'"
+msgstr "TEMEL kaydedilirken hata: '$(ARG1)'."
 
 #: classes/sb.src#ERRCODE_BASMGR_REMOVELIB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error removing library."
-msgstr "Kütüphanenin kaldırılması sırasında hata."
+msgstr "Kütüphane kaldırılırken hata."
 
 #: classes/sb.src#ERRCODE_BASMGR_UNLOADLIB_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The library could not be removed from memory."

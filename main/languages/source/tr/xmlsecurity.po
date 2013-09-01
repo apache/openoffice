@@ -31,27 +31,359 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WARNINGBOX.MESSAGE
+msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
+msgstr "Sayısal imza özelliği kullanılamadı, çünkü Mozilla kullanıcı profili bulunamadı. Lütfen Mozilla kurulumunu kontrol ediniz."
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.MODALDIALOG.TEXT
+#, fuzzy
+msgid  "Select Certificate"
+msgstr "Sertifika Seç"
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FIXEDTEXT.TEXT
+msgid  "Select the certificate you want to use for signing"
+msgstr "İmzalamak için kullanmak istediğiniz sertifikayı seçin"
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.STRING.TEXT
+msgid  "Issued to\tIssued by\tExpiration date"
+msgstr "Çıkarılan\tÇıkaran\tBitiş tarihi"
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "View Certificate..."
+msgstr "Sertifika Görüntüle..."
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TABDIALOG.TEXT
+#, fuzzy
+msgid  "View Certificate"
+msgstr "Sertifikayı Görüntüle"
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PAGEITEM.TEXT
+#, fuzzy
+msgid  "General"
+msgstr "Genel"
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PAGEITEM.TEXT
+#, fuzzy
+msgid  "Details"
+msgstr "Detaylar"
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PAGEITEM.TEXT
+#, fuzzy
+msgid  "Certification Path"
+msgstr "Sertifika Yolu"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  " Certificate Information"
+msgstr " Sertifika Bilgisi"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "This certificate is intended for the following purpose(s):"
+msgstr "Bu sertifika aşağıdaki amaç(lar) için tasarlanmıştır:"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Issued to:"
+msgstr "Çıkarılan:"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Issued by:"
+msgstr "Çıkaran:"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Valid from %SDATE% to %EDATE%"
+msgstr "%SDATE 'den %EDATE 'e kadar geçerli"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "You have a private key that corresponds to this certificate."
+msgstr "Bu sertifikayla uyaşan özel bir anahtara sahipsiniz."
+
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.STRING.TEXT
 #, fuzzy
 msgid  "The certificate could not be validated."
 msgstr "Sertifika geçerli değil."
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.STRING.TEXT
+#, fuzzy
+msgid  "Field\tValue"
+msgstr "Alan\tDeğer"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.STRING.TEXT
+#, fuzzy
+msgid  "Version"
+msgstr "Sürüm"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.STRING.TEXT
+#, fuzzy
+msgid  "Serial Number"
+msgstr "Seri Numarası"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.STRING.TEXT
 #, fuzzy
 msgid  "Signature Algorithm"
 msgstr "İmza Algoritması"
 
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.STRING.TEXT
+#, fuzzy
+msgid  "Issuer"
+msgstr "Çıkaran"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.STRING.TEXT
+#, fuzzy
+msgid  "Issuer Unique ID"
+msgstr "Çıkaranın Kimliği"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.STRING.TEXT
+#, fuzzy
+msgid  "Valid From"
+msgstr "Geçerliden"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.STRING.TEXT
+#, fuzzy
+msgid  "Valid to"
+msgstr "Geçerliye"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.STRING.TEXT
+#, fuzzy
+msgid  "Subject"
+msgstr "Konu"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.STRING.TEXT
+#, fuzzy
+msgid  "Subject Unique ID"
+msgstr "Konu Kimliği"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.STRING.TEXT
+#, fuzzy
+msgid  "Subject Algorithm"
+msgstr "Konu Algortiması"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.STRING.TEXT
+#, fuzzy
+msgid  "Public Key"
+msgstr "Genel Anahtar"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.STRING.TEXT
+#, fuzzy
+msgid  "Thumbprint SHA1"
+msgstr "SHA1 Parmak izi"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.STRING.TEXT
+#, fuzzy
+msgid  "Thumbprint MD5"
+msgstr "MD5 Parmak izi"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Certification path"
+msgstr "Sertifika yolu"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "View Certificate..."
+msgstr "Sertifikayı Görüntüle..."
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Certification status"
+msgstr "Sertifika durumu"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.STRING.TEXT
+#, fuzzy
+msgid  "The certificate is OK."
+msgstr "Sertifika tamam."
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.MODALDIALOG.TEXT
+#, fuzzy
+msgid  "Digital Signatures"
+msgstr "Sayısal İmzalar"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "The following have signed the document content:"
+msgstr "Takip eden imzalanmış belge içeriği:"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "The following have signed the document macro:"
+msgstr "Takip eden imzalanmış belge makrosu:"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "The following have signed this package:"
+msgstr "Takip eden imzalanmış paket:"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.STRING.TEXT
+#, fuzzy
+msgid  "\tSigned by\tDigital ID issued by\tDate"
+msgstr "\tİmzalayan\tDijital Kimliği çıkaran\tTarih"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.STRING.TEXT
+#, fuzzy
+msgid  "Valid signature"
+msgstr "Geçerli imzalar"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.STRING.TEXT
+#, fuzzy
+msgid  "Certificate could not be validated"
+msgstr "Sertifika geçerli değil"
+
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.STRING.TEXT
 #, fuzzy
 msgid  "The signatures in this document are invalid"
 msgstr "Bu belgedeki imzalar geçerli değildir"
 
-#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PUSHBUTTON.TEXT
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FIXEDTEXT.TEXT
 #, fuzzy
-msgid  "Add..."
-msgstr "Ekle..."
+msgid  "The signatures in this document are valid"
+msgstr "Bu belgedeki imzalar geçerlidir"
 
-#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PUSHBUTTON.TEXT
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Not all parts of the document are signed"
+msgstr "Belgenin tüm bölümleri imzalanmış değil"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "View Certificate..."
+msgstr "Sertifikayı incele..."
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "Sign Document..."
+msgstr "Belgeyi İmzala..."
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Remove"
 msgstr "Kaldır"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKBUTTON.TEXT
+#, fuzzy
+msgid  "Close"
+msgstr "Kapat"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgstr "Bu belge içeriği imzalar ODF 1.1 (OpenOffice.org 2.x) biçimindedir. %PRODUCTNAME %PRODUCTVERSION içinde imzalanan belgeler ODF 1.2 biçimi gerektirir. Bu nedenle imzaları eklemeyin ya da bu belgeden kaldırın.\n\nBelgenizi ODF 1.2 biçiminde kaydedin ve bütün imzaları eklemeyi tekrar deneyin."
+
+#: dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QUERYBOX.MESSAGE
+#, fuzzy
+msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
+msgstr "Bir makro imzası ekleme veya silme, tüm belge imzalarını siler.\nGerçekten devam etmek istiyor musunuz?"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TABDIALOG.TEXT
+#, fuzzy
+msgid  "Macro Security"
+msgstr "Makro Güvenliği"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PAGEITEM.TEXT
+#, fuzzy
+msgid  "Security Level"
+msgstr "Güvenlik Düzeyi"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PAGEITEM.TEXT
+#, fuzzy
+msgid  "Trusted Sources"
+msgstr "Güvenilir Kaynaklar"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "Reset"
+msgstr "Sıfırla"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr "Çok ~yüksek. \nSadece güvenilir yerlerden makro çalıştırılmasına izin verir. Diğer bütün makrolar, imzalanmış olsa bile çalıştırılmaz."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr "Yüksek~.\nSadece güvenilir yerlerde makro çalıştırılmasına izin verir. İmzalanmamış makrolar çalıştırılmaz."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
+msgstr "~Orta. \nÖnceden elle onaylanmış güvenilir kaynaklardan gelen makrolar çalıştırılabilir."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr "~Düşük (önerilmez).\nMakrolar onay alınmadan çalıştırılır. Bu ayarı, ancak açılacak olan tüm belgelerin güvenli olduğunu emin olduktan sonra kullanınız."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FIXEDLINE.TEXT
+#, fuzzy
+msgid  "Trusted certificates"
+msgstr "Güvenilir sertifikalar"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.STRING.TEXT
+#, fuzzy
+msgid  "Issued to\tIssued by\tExpiration date"
+msgstr "Çıkarılan\tÇıkaran\tBitiş tarihi"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "View..."
+msgstr "Görüntüle..."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FIXEDLINE.TEXT
+#, fuzzy
+msgid  "Trusted file locations"
+msgstr "Güvenilir dosya konumları"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Document macros are always executed if they have been opened from one of the following locations."
+msgstr "Güvenilen dosya yerleri, sadece güvenlik düzeyi 'çok yüksek' olarak ayarlandığında kullanılır. Bu ayar ile belge makroları sadece aşağıdaki yerlerden birinde açılmışsa, çalıştırılır."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.STRING.TEXT
+#, fuzzy
+msgid  "This setting is protected by the Administrator"
+msgstr "Bu ayar Yönetici tarafından korunmaktadır"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.MODALDIALOG.TEXT
+#, fuzzy
+msgid  "Security Warning"
+msgstr "Güvenlik Uyarısı"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "The document contains document macros signed by:"
+msgstr "Belge içeriğindeki makroları imzalayan:"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "The document contains document macros."
+msgstr "Belge içeriğindeki makrolar."
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "View Signatures..."
+msgstr "İmzaları Görüntüle..."
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr "Bazı makrolar virüs içerebilir. Belgeyi kaydederken makroları devre dışı bırakın. Eğer makroları devre dışı bırakırsanız belgenizdeki bazı işlevlerde devre dışı kalabilir."
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
+#, fuzzy
+msgid  "Always trust macros from this source"
+msgstr "Bu kaynaktan gelen makrolara her zaman güven"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "Enable Macros"
+msgstr "Makroları Etkinleştir"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
+#, fuzzy
+msgid  "Disable Macros"
+msgstr "Makroları Devre Dışı Bırak"

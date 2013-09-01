@@ -31,36 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
-#, fuzzy
-msgid  "Configuration Menu"
-msgstr "Yapılandırma Menüsü"
-
-#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
-#, fuzzy
-msgid  "~Add-Ons"
-msgstr "~Eklentiler"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Cu~t"
-msgstr "Ke~s"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Copy"
-msgstr "~Kopyala"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Paste"
-msgstr "~Yapıştır"
-
-#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
-#, fuzzy
-msgid  "Leave Full-Screen Mode"
-msgstr "Tam Ekran Kipinden Çık"
-
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 #, fuzzy
 msgid  "Add-~On Help"
@@ -68,100 +38,38 @@ msgstr "Yardıma E~kle"
 
 #: menu/menu.src#STR_MENU_SYNONYMS.STRING.TEXT
 msgid  "Synonyms"
-msgstr ""
+msgstr "Eş anlamlılar"
 
 #: menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.STRING.TEXT
 msgid  "(none)"
-msgstr ""
+msgstr "(hiçbiri)"
 
 #: menu/menu.src#STR_MENU_THESAURUS.STRING.TEXT
 msgid  "~Thesaurus..."
-msgstr ""
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "My Templates"
-msgstr "Şablonlarım"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Business Correspondence"
-msgstr "Mesleki Uygunluk"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Other Business Documents"
-msgstr "Diğer Mesleki belgeleri"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Personal Correspondence and Documents"
-msgstr "Kişisel Uygunluk ve Belgeler"
+msgstr "~Kelime hazinesi..."
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Forms and Contracts"
 msgstr "Formlar ve Anlaşmalar"
 
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Finances"
-msgstr "Mali İşler"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Education"
-msgstr "Eğitim"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentation Backgrounds"
-msgstr "Sunu Arkaplanları"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentations"
-msgstr "Sunular"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Miscellaneous"
-msgstr "Diğer"
-
-#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
-#, fuzzy
-msgid  "The templates are being initialized for first-time usage."
-msgstr "İlk kullanım için şablonlar hazırlanıyor"
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Şablonlar"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New template"
-msgstr "Yeni şablon"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "~Kategoriler"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Templates"
-msgstr "~Şablonlar"
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr "Yabancı biçimle kaydederken veri kaybı oluşmuş olabilir.\n Yine de kapatmak istiyor musunuz?"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "Dü~zenle"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "~Yönetici..."
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr "Aynı adı taşıyan bir şablon zaten mevcut.\nBu şablonun üzerine yazılsın mı?"
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 #, fuzzy
@@ -173,170 +81,52 @@ msgstr "\"$1\" bölümü silinsin mi?"
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "\"$1\" girişi silinsin mi?"
 
-#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "\"$(DOC)\" isimli belge değiştirildi.\nDeğişikliklerin kaydedilmesini istiyor musunuz?"
-
-#: doc/doc.src#STR_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Styles"
-msgstr "Biçemler"
-
-#: doc/doc.src#STR_MACROS.STRING.TEXT
-#, fuzzy
-msgid  "Macros"
-msgstr "Makrolar"
-
-#: doc/doc.src#STR_CONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configuration"
-msgstr "Yapılandırma"
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr "Kategori boş değil.\nYine de silinsin mi?"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 #, fuzzy
 msgid  "Styles in "
 msgstr "Biçemlerde"
 
-#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Printing Styles"
-msgstr "Biçemler Yazdırılıyor"
-
-#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The print job could not be started."
-msgstr "Yazdırma işlemi başlatılamadı."
-
-#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
-#, fuzzy
-msgid  "Copy"
-msgstr "Kopya"
-
-#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "The template could not be opened."
-msgstr "Belge şablonu açılamıyor."
-
-#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document already open for editing."
-msgstr "Belge zaten düzenlenmek üzere açıldı."
-
-#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "Error recording document "
-msgstr "Belge kayıt edilirken hata oluştu"
-
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Şablonlar"
-
-#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "\"$1\" şablonu kopyalanırken hata oluştu.\nBu şablon zaten mevcut olabilir."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "The template \"$1\" can not be deleted."
 msgstr "\"$1\" şablonu silinemiyor."
 
-#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error moving template \"$1\"."
-msgstr "\"$1\" şablonu taşınırken hata oluştu."
-
-#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The update could not be saved."
-msgstr "Güncelleme kaydedilemedi."
-
-#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "Şablon yazılırken hata oluştu "
-
-#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Error renaming template."
-msgstr "Şablon yeniden adlandırılırken hata oluştu."
-
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "Error renaming template category."
 msgstr "Şablon kategorisi adlandırılırken hata oluştu."
 
-#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Please specify a name."
-msgstr "Bir ad girin."
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr "Benzersiz bir ad girin.\nGirilen ad büyük/küçük harf duyarlı olmamalıdır."
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "\"$(TEXT)\" şablonu, varsayılan şablon olarak belirlensin mi?"
 
-#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Do you want to reset the default template?"
-msgstr "Varsayılan şablonu sıfırlamak istiyor musunuz?"
-
-#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document info cannot be read."
-msgstr "Belge özellikleri okunamıyor."
-
-#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
-#, fuzzy
-msgid  "The selected file has an incorrect format."
-msgstr "Seçilen dosyanın biçimi yanlış."
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr "$(DIR)\nşablon dizini mevcut değil."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 #, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 msgstr "Belgeler $(FORMAT) biçiminde kaydedilemiyor.\nBelgeyi $(OWNFORMAT) biçiminde\nkaydetmek ister misiniz?"
 
-#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "~Kaydet"
-
-#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Update"
-msgstr "Gün~celle"
-
-#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save ~As..."
-msgstr "~Farklı Kaydet..."
-
-#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save Copy ~as..."
-msgstr "Kopyasını farklı ka~ydet..."
-
-#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Kapat"
-
-#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-#, fuzzy
-msgid  "~Close & Return to "
-msgstr "~Kapat ve Geri Dön"
-
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 #, fuzzy
 msgid  " AutoPilot"
 msgstr "Sihirbaz"
-
-#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configurations"
-msgstr "Yapılandırmalar"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 #, fuzzy
@@ -348,260 +138,43 @@ msgstr "%PRODUCTNAME Basic kütüphaneleri"
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "\"$(ARG1)\" biçemi başkası ile değiştirilsin mi?"
 
-#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
-#, fuzzy
-msgid  "Loading Document"
-msgstr "Belge Yükleniyor"
-
-#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
-#, fuzzy
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "Bağlanılan: $(HOST). Yanıt bekleniyor..."
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
-#, fuzzy
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "$(HOST) üzerinde bulunan $(TARGET) açılıyor"
-
-#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
-#, fuzzy
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "Aktarılan: $(HOST) sunucusundan $(TARGET). Okunan: $(BYTE)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
-#, fuzzy
-msgid  "Disconnected"
-msgstr "Bağlantı kesildi"
-
-#: doc/doc.src#STR_EDIT.STRING.TEXT
-#, fuzzy
-msgid  "Edit"
-msgstr "Düzenle"
-
-#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Documents"
-msgstr "%PRODUCTNAME Belgeleri"
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr "Belge düzenleme için açılamıyor.\nBelge okuma için açılsın mı?"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 #, fuzzy
 msgid  "Propert~ies..."
 msgstr "Özellikler..."
 
-#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
-#, fuzzy
-msgid  "HTML (FrameSet)"
-msgstr "HTML (Çerçeve Kümesi)"
-
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 #, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME Çerçeve Belgesi"
-
-#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
-#, fuzzy
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "\"$(TEMPLATE)\" şablonu asıl yerinde bulunamadı. Aynı adlı şablonun bulunduğu yerin adı: \"$(FOUND)\". Bu şablon gelecekte karşılaştırma için kullanılsın mı?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 #, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "\"$(TEMPLATE)\" şablonu bulunamadı. Bu şablon gelecekte de aransın mı?"
 
-#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Automatically saved version"
-msgstr "Otomatik kaydedilen sürüm"
-
-#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
-#, fuzzy
-msgid  "Text Document"
-msgstr "Metin Belgesi"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
-#, fuzzy
-msgid  "HTML Document"
-msgstr "HTML Belgesi"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
-#, fuzzy
-msgid  "Master Document"
-msgstr "Ana Belge"
-
-#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "Hesap tablosu"
-
-#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
-#, fuzzy
-msgid  "Presentation"
-msgstr "Sunu"
-
-#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
-#, fuzzy
-msgid  "Drawing"
-msgstr "Çizim"
-
-#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "Message"
-msgstr "İleti"
-
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 #, fuzzy
 msgid  "~Discard"
 msgstr "~Kaydetme"
-
-#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
-#, fuzzy
-msgid  "Access to the current data medium not possible."
-msgstr "Kullanılan veri taşıyıcısına erişim sağlanamadı."
-
-#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
-#, fuzzy
-msgid  "Insert the next data carrier and click OK."
-msgstr "Sonraki veri taşıyıcısını yerleştirip Tamam düğmesine tıklayınız."
-
-#: doc/doc.src#STR_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "Nesne"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
-#, fuzzy
-msgid  "Run Macro"
-msgstr "Makro Çalıştır"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "This document contains macros. $(TEXT)"
-msgstr "Bu belge makrolar içeriyor. $(TEXT)"
-
-#: doc/doc.src#BTN_OK.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "Çalıştır"
-
-#: doc/doc.src#BTN_CANCEL.STRING.TEXT
-#, fuzzy
-msgid  "Do Not Run"
-msgstr "Çalıştırma"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 #, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "Güvenlik ayarlarına göre, bu makro çalıştırılmamalı. Bu dosyayı gerçekten çalıştırmak istiyor musunuz?"
 
-#: doc/doc.src#FT_OK.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to allow these macros to be run?"
-msgstr "Bu makroların çalıştırılmasına izin veriyor musunuz?"
-
-#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Export as PDF"
-msgstr "PDF olarak Aktar"
-
-#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export..."
-msgstr "Aktar..."
-
-#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Aktar"
-
-#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
-#, fuzzy
-msgid  "Add this directory to the list of secure paths: "
-msgstr "Bu dizini güvenli yolların listesine ekle: "
-
-#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
-#, fuzzy
-msgid  "File format:"
-msgstr "Dosya biçimi:"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-#, fuzzy
-msgid  "This document contains:\n\n"
-msgstr "Bu belge içerikleri:\n\n"
-
-#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
-#, fuzzy
-msgid  "Recorded changes"
-msgstr "Kayıtlı değişiklikler"
-
-#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
-#, fuzzy
-msgid  "Notes"
-msgstr "Notlar"
-
-#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
-#, fuzzy
-msgid  "Document versions"
-msgstr "Belge sürümleri"
-
-#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
-#, fuzzy
-msgid  "Fields"
-msgstr "Alanlar"
-
-#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
-#, fuzzy
-msgid  "Linked data..."
-msgstr "Bağlanmış veri..."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue saving the document?"
-msgstr "Belgeyi kaydederek devam etmek istiyor musunuz?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue printing the document?"
-msgstr "Belgeyi yazdırarak devam etmek istiyor musunuz?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue signing the document?"
-msgstr "Belgeyi imzalayarak devam etmek istiyor musunuz?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "PDF dosyası oluşturarak devam etmek istiyor musunuz?"
-
-#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "Özgün belge üzerine yazılamaz, eğer yaptığınız işi kaydetmek isterseniz yeni belge ismi ile kaydedebilirsiniz."
-
-#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Some template files are protected and can not be deleted."
-msgstr "Bazı şablon dosyaları koruma altında ve silinemedi."
-
-#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Info %1"
-msgstr "Bilgi %1"
-
 #: doc/doc.src#STR_SHARED.STRING.TEXT
 #, fuzzy
 msgid  " (shared)"
 msgstr " (paylaştırılmış)"
 
-#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-#, fuzzy
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "Belge biçimini ODF 1.1 (OpenOffice.org 2.x) olarak ayarlamak için Araçlar-Seçenekler-Yükle/Kaydet-Genel seçeğini kullanabilirsiniz. Belgeyi imzalamak için ODF 1.2 (OpenOffice.org 3.x) gereklidir."
-
-#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "'$(ARG1)' şablonun temeli bu belgedir, belge değiştirilmiştir. Temel alınan biçimlendirme biçemleri de güncellenmiştir, şablonu güncellemek ister misiniz?  "
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr "Belge imzalanmadan önce kaydedilmelidir. Belgeyi kaydedilirken daha önceki imzalar kaldırılır.\nBelgeyi kaydetmek istiyor musunuz?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 #, fuzzy
@@ -613,21 +186,6 @@ msgstr "Bi~çemleri Güncelle"
 msgid  "~Keep Old Styles"
 msgstr "Eski Biçemleri Sa~kla"
 
-#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Template Management"
-msgstr "Şablon Yönetimi"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Kapat"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~File..."
-msgstr "~Dosya..."
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Address Book..."
@@ -638,30 +196,10 @@ msgstr "~Adres Defteri..."
 msgid  "Templates"
 msgstr "Şablonlar"
 
-#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Documents"
-msgstr "Belgeler"
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 #, fuzzy
 msgid  "Commands"
 msgstr "Komutlar"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New"
-msgstr "Y~eni"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Sil"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "Dü~zenle"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 #, fuzzy
@@ -672,11 +210,6 @@ msgstr "Şablonu İçe Aktar..."
 #, fuzzy
 msgid  "Export Template..."
 msgstr "Şablonu Dışa Aktar..."
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Print"
-msgstr "~Yazdır"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 #, fuzzy
@@ -698,190 +231,35 @@ msgstr "Varsayılan Şablon Olarak Tanımla"
 msgid  "Reset Default Template"
 msgstr "Varsayılan Şablonu Sıfırla"
 
-#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "Yeni"
-
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "~Kategori"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "T~emplates"
-msgstr "Şa~blonlar"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 #, fuzzy
 msgid  "~More"
 msgstr "~Daha Fazla"
 
-#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Pre~view"
-msgstr "Ö~nizleme"
-
-#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Tanım"
-
-#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Te~xt"
-msgstr "~Metin"
-
-#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Frame"
-msgstr "Ç~erçeve"
-
-#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Pages"
-msgstr "~Sayfalar"
-
-#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "N~umbering"
-msgstr "~Numaralandırma"
-
-#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Overwrite"
-msgstr "Ü~zerine yaz"
-
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "From File..."
 msgstr "Dosyadan..."
-
-#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Load Styles"
-msgstr "Biçemler Yükle"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Başlık"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Subject"
 msgstr "Konu"
 
-#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Key words"
-msgstr "A~nahtar kelimeler"
-
-#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Description"
-msgstr "~Tanım"
-
-#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-#, fuzzy
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "Seçilen $(FILTER) süzgeci kurulu değil.\nŞimdi kurmak ister misiniz ?"
-
-#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-#, fuzzy
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "Seçilen $(FILTER) süzgeci sürümünüzde bulunmuyor.\nSipariş etmek için gereken bilgileri web sitemizde bulabilirsiniz."
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Reduce print data"
-msgstr "Yazdırılan veriyi küçült"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Settings for"
-msgstr "Ayarlar"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Printer"
-msgstr "~Yazıcı"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Print to ~file"
-msgstr "Dosyaya ~yazdır"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Reduce transparency"
-msgstr "Şeffaflığı a~rttır"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Auto~matically"
-msgstr "Oto~matik"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~No transparency"
-msgstr "Ş~effaflık yok"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~gradients"
-msgstr "~Geçişi azalt"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Gradient ~stripes"
 msgstr "G~eçiş çizgileri"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Intermediate ~color"
-msgstr "Ara ~renk"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~bitmaps"
-msgstr "~Bit eşlem değerini düşür"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~High print quality"
-msgstr "~Yüksek yazdırma kalitesi"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~ormal print quality"
-msgstr "N~ormal yazdırma kalitesi"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Reso~lution"
 msgstr "Çözünür~lük"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (Faks)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "200 DPI (default)"
-msgstr "200 DPI (varsayılan)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
@@ -893,85 +271,20 @@ msgstr "300 dpi"
 msgid  "600 DPI"
 msgstr "600 dpi"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Include transparent ob~jects"
-msgstr "Saydam nesneler içerir"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Con~vert colors to grayscale"
 msgstr "Renkleri gri tonlara dönüştür"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Printer warnings"
-msgstr "Yazıcı uyarıları"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "P~aper size"
-msgstr "S~ayfa boyutu"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pap~er orientation"
 msgstr "Say~fa yönü"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Transparency"
-msgstr "Ş~effaflık"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Warning"
-msgstr "Uyarı"
-
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr "Belge şeffaf nesneler içeriyor.\nBu durumda bazı yazıcılar işlemi daha uzun\nsürede tamamlayacaktır. Şeffaflık oranını düşürmek \nister misiniz?"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
-#, fuzzy
-msgid  "~Yes"
-msgstr "~Evet"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~No"
-msgstr "~Hayır"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Cancel"
-msgstr "İ~ptal"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Do not show warning again"
-msgstr "~Bu uyarıyı tekrar gösterme"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Style Catalog"
-msgstr "Biçem Katalogu"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "~Yönetici..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete..."
-msgstr "~Sil..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Modify..."
-msgstr "~Değiştir..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 #, fuzzy
@@ -979,198 +292,99 @@ msgid  "~New..."
 msgstr "~Yeni..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
+#, fuzzy
 msgid  "Style List"
 msgstr ""
-
-#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
-#, fuzzy
-msgid  "Hierarchical"
-msgstr "Hiyerarşik"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 #, fuzzy
 msgid  "Styles and Formatting"
 msgstr "Biçemler ve Biçimlendirme"
 
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Fill Format Mode"
-msgstr "Doldurma Biçim Kipi"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "New Style from Selection"
-msgstr "Seçimden Yeni Biçem"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Update Style"
-msgstr "Biçemi Güncelle"
-
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File encryption password"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Enter password to open"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Reenter password to open"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File sharing password"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Enter password to modify"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Reenter password to modify"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File sharing options"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Open file read-only"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Record ~changes"
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.STRING.TEXT
+#, fuzzy
 msgid  "~Protect..."
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.STRING.TEXT
+#, fuzzy
 msgid  "~Unprotect..."
 msgstr ""
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
 msgstr ""
 
 #: dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.STRING.TEXT
+#, fuzzy
 msgid  "Protect Records"
 msgstr ""
 
 #: dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.STRING.TEXT
+#, fuzzy
 msgid  "Unprotect Records"
 msgstr ""
 
 #: dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "Incorrect password"
 msgstr ""
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New versions"
-msgstr "Yeni sürümler"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Save ~New Version"
-msgstr "Ye~ni Sürümü Kaydet"
-
-#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Always save a version on closing"
-msgstr "~Kapatırken daima sürümü kaydet"
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Existing versions"
-msgstr "Mevcut sürümler"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time"
-msgstr "Tarih ve saat"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Saved by"
 msgstr "Kaydeden"
 
-#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "Açıklama"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Kapat"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Open"
-msgstr "Aç"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Show..."
-msgstr "~Göster..."
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Sil"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Compare"
-msgstr "Karşılaştır"
-
-#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Versions of"
-msgstr "Sürümler"
-
-#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time : "
-msgstr "Tarih ve saat : "
-
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Saved by "
 msgstr "Kaydeden "
-
-#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Kapat"
-
-#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Insert Version Comment"
-msgstr "Sürüm Açıklaması Ekle"
-
-#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
-#, fuzzy
-msgid  "Version comment"
-msgstr "Sürüm açıklaması"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Name"
-msgstr "~Ad"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~AutoUpdate"
-msgstr "~Otomatik güncelleme"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ne~xt Style"
-msgstr "So~nraki Biçem"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1182,165 +396,25 @@ msgstr "~Bağlanılan"
 msgid  "~Category"
 msgstr "~Kategori"
 
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contains"
-msgstr "İçerir"
-
-#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Current version"
-msgstr "Geçerli sürüm"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Dışa Aktar"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
-#, fuzzy
-msgid  "Insert"
-msgstr "Ekle"
-
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 #, fuzzy
 msgid  "~Insert"
 msgstr "~Ekle"
-
-#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
-#, fuzzy
-msgid  "<All formats>"
-msgstr "<Tüm biçimler>"
-
-#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
-#, fuzzy
-msgid  "~Automatic file name extension"
-msgstr "~Otomatik dosya adı uzantısı"
-
-#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
-#, fuzzy
-msgid  "~Selection"
-msgstr "~Seçim"
-
-#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
-#, fuzzy
-msgid  "~Link"
-msgstr "~Bağlantı"
-
-#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
-#, fuzzy
-msgid  "Pr~eview"
-msgstr "Ö~nizleme"
-
-#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "~Salt okunur"
-
-#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
-#, fuzzy
-msgid  "Save with ~password"
-msgstr "~Parolayla kaydet"
-
-#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Edit ~filter settings"
-msgstr "~Süzgeç ayarlarını düzenle"
-
-#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
-#, fuzzy
-msgid  "~Play"
-msgstr "~Çalıştır"
-
-#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
-#, fuzzy
-msgid  "Sto~p"
-msgstr "~Durdur"
-
-#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
-#, fuzzy
-msgid  "~Open"
-msgstr "~Aç"
-
-#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "~Kaydet"
-
-#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Style:"
-msgstr "Biçem:"
-
-#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "~Templates:"
-msgstr "Ş~ablonlar:"
-
-#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
-#, fuzzy
-msgid  "~Version:"
-msgstr "~Sürüm:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 #, fuzzy
 msgid  "Find on this Page"
 msgstr "Bu Sayfada Bul"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Search for"
-msgstr "Aranan"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Whole words only"
-msgstr "Yalnızca tam sözcükler"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Match case"
-msgstr "~Büyük küçük harfe duyarlı"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Wrap ~around"
 msgstr "Çevre ~dağılımı"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Backwards"
-msgstr "~Geri"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Find"
 msgstr "Bul"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "Kapat"
-
-#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Enter Password"
-msgstr "Parolayı Girin"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~User"
-msgstr "~Kullanıcı"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Password"
-msgstr "~Parola"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Confirm"
-msgstr "~Onayla"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 #, fuzzy
@@ -1362,56 +436,6 @@ msgstr "~Onayla"
 msgid  "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME belgesi"
 
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Başlık"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Subject"
-msgstr "K~onu"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Keywords"
-msgstr "~Anahtar sözcükler"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Comments"
-msgstr "~Açıklamalar"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Type:"
-msgstr "Türü:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "S~alt okunur"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "Konum:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Size:"
-msgstr "Boyut:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Created:"
-msgstr "Oluşturulma tarihi:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "Değiştirme tarihi:"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Digitally signed:"
@@ -1421,26 +445,6 @@ msgstr "Sayısal imzalı:"
 #, fuzzy
 msgid  "Digital Signature..."
 msgstr "Sayısal İmza..."
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
-#, fuzzy
-msgid  "Multiply signed document"
-msgstr "İmzalı belgeyi çokla"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Last printed:"
-msgstr "Son yazdırılma tarihi:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Total editing time:"
-msgstr "Toplam düzenleme süresi:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Revision number:"
-msgstr "Düzeltme numarası:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1452,42 +456,17 @@ msgstr "Sıfırla"
 msgid  "~Apply user data"
 msgstr "~Kullanıcı verilerini kullan"
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template:"
-msgstr "Şablon:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
-#, fuzzy
-msgid  "unknown"
-msgstr "bilinmiyor"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "File Name"
 msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Info fields..."
-msgstr "~Bilgi alanları..."
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Do not refresh automatically"
-msgstr "Otomatik olarak tazeleme yok"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Refresh this document"
 msgstr "Bu belgeyi yenile"
 
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "every"
-msgstr "her"
-
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "seconds"
 msgstr "saniye"
 
@@ -1495,16 +474,6 @@ msgstr "saniye"
 #, fuzzy
 msgid  "Redirect from this document"
 msgstr "Bu belgeden yönlendir"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "after"
-msgstr "sonra"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "to URL"
-msgstr "Adrese"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1521,204 +490,20 @@ msgstr "Eğer \"%PLACEHOLDER%\" seçeneğini seçerseniz, adres girmelisiniz. "
 msgid  "~Properties"
 msgstr "~Özellikler"
 
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "İsim"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Tür"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "Değer"
-
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Add"
 msgstr "~Ekle"
 
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-#, fuzzy
-msgid  "Property Name"
-msgstr "Özellik İsmi"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Checked by"
-msgstr "Kontrol eden"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Client"
-msgstr "İstemci"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date completed"
-msgstr "Tamamlanma tarihi"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Department"
-msgstr "Bölüm"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Destinations"
-msgstr "Hedefler"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Disposition"
-msgstr "Kütük İşleme Durumu"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Division"
-msgstr "Bölme"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Document number"
-msgstr "Belge numarası"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Editor"
-msgstr "Düzenleyen"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "E-Mail"
-msgstr "E-posta"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Forward to"
-msgstr "İleten"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Group"
-msgstr "Grup"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Info"
-msgstr "Bilgi"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Language"
-msgstr "Dil"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Mailstop"
-msgstr "Posta durağı"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Matter"
-msgstr "Madde"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Office"
-msgstr "Ofis"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Owner"
-msgstr "Sahip"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Project"
-msgstr "Proje"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Publisher"
-msgstr "Yayınlayan"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Purpose"
-msgstr "Amaç"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Received from"
-msgstr "Kabul Edilmiş"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded by"
-msgstr "Kayıt eden"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded date"
-msgstr "Kayıt tarihi"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Reference"
-msgstr "Başvuru"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Source"
-msgstr "Kaynak"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Status"
-msgstr "Durum"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Telephone number"
-msgstr "Telefon numarası"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Typist"
-msgstr "Yazan kişi"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-#, fuzzy
-msgid  "URL"
-msgstr "Adres"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "Metin"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
+#, fuzzy
 msgid  "DateTime"
 msgstr ""
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "Tarih"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Duration"
 msgstr ""
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "Sayı"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 #, fuzzy
@@ -1726,87 +511,56 @@ msgid  "Yes or no"
 msgstr "Evet veya hayır"
 
 #: dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "Evet"
-
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "Hayır"
-
-#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Remove Property"
-msgstr "Özelliği Kaldır"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Properties of "
-msgstr "Özellikler "
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Genel"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Tanım"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Custom Properties"
-msgstr "Özel Tercihler"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Internet"
-msgstr "İnternet"
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr "Girilen değer ile belirlenen tür eşleşmiyor.\nDeğer metin olarak saklanacak."
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Security"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Edit Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Negative"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Years"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Months"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Days"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "H~ours"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Min~utes"
 msgstr ""
 
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Seconds"
-msgstr "saniyede bir tazele"
-
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Millise~conds"
 msgstr ""
 
@@ -1814,26 +568,6 @@ msgstr ""
 #, fuzzy
 msgid  "Edit Field Names"
 msgstr "Alan İsimlerini Düzenle"
-
-#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Names"
-msgstr "İsimler"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Create Style"
-msgstr "Biçem Oluştur"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Style name"
-msgstr "Biçem adı"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Style already exists. Overwrite?"
-msgstr "Biçem zaten var. Üzerine yazılsın mı?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 #, fuzzy
@@ -1855,88 +589,50 @@ msgstr "Kaydı İptal Et"
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 msgstr "%PRODUCTNAME kullanılabilir bir e-posta program ayarı bulamadı. Lütfen bu belgeyi kaydedin ve kullandığınız e-posta programına ekleyerek gönderin."
 
-#: dialog/dialog.src#STR_RESET.STRING.TEXT
-#, fuzzy
-msgid  "~Reset"
-msgstr "~Başa al"
-
-#: dialog/dialog.src#STR_APPLY.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Uygula"
-
-#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
-#, fuzzy
-msgid  "Organizer"
-msgstr "Yönetici"
-
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "This name is already in use."
 msgstr "Bu ad bir şablon adı olarak kullanılıyor."
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "This Style does not exist."
-msgstr "Bu biçem mevcut değil."
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr "Bu biçem temel biçem olarak kullanılamaz, çünkü bir tekrarlı ilgide sonuç verdiği için."
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr "Bu isim bir varsayılan biçem olarak mevcut.\nLütfen başka bir isim seçin."
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "$1 biçemini gerçekten silmek istiyor musunuz?"
 
-#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-#, fuzzy
-msgid  "You are deleting an applied Style!\n"
-msgstr "Kullanılan bir biçemi siliyorsunuz!\n"
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "Yeni..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Modify..."
-msgstr "Değiştir..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete..."
-msgstr "Sil..."
-
-#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
-#, fuzzy
-msgid  "Navigator"
-msgstr "Gezgin"
-
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
+#, fuzzy
 msgid  "Task Pane"
 msgstr ""
 
-#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Faulty password confirmation"
-msgstr "Parola onayı hatalı"
-
-#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-#, fuzzy
-msgid  "Send"
-msgstr "Gönder"
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
+#, fuzzy
 msgid  "Dock"
 msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_UNDOCK.STRING.TEXT
+#, fuzzy
 msgid  "Undock"
 msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "View"
 msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_TASKS.STRING.TEXT
+#, fuzzy
 msgid  "Tasks"
 msgstr ""
 
@@ -1950,70 +646,10 @@ msgstr "Bu belgede %FORMATNAME dosya biçimi ile kaydedilemeyen biçimlendirmele
 msgid  "~Keep Current Format"
 msgstr "Geçerli ~Biçimle Devam Et"
 
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Save in ODF Format"
-msgstr "ODF Biçiminde Ka~ydet"
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "~More Information..."
-msgstr "~Daha Fazla Bilgi..."
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Ask when not saving in ODF format"
-msgstr "ODF biçimde k~aydedilmediğinde sor"
-
-#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Varsayılan yazıcı bulunamadı.\nBir yazıcı seçip yeniden deneyin."
-
-#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Yazıcı çalıştırılamadı.\nYazıcı yapılandırmasını kontrol edin."
-
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 #, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr "Belge, $1 yazıcısı için biçimlendi. Belirtilen yazıcı bulunamadı.\nStandart yazıcı $2 kullanılsın mı?"
-
-#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Options..."
-msgstr "Seçenekler..."
-
-#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Printer Options"
-msgstr "Yazıcı Seçenekleri"
-
-#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
-#, fuzzy
-msgid  "Printer busy"
-msgstr "Yazıcı şu an kullanılıyor"
-
-#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Error while printing"
-msgstr "Yazdırma sırasında bir hata oluştu"
-
-#: view/view.src#STR_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Printing"
-msgstr "Yazdırılıyor"
-
-#: view/view.src#STR_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Page "
-msgstr "Sayfa "
-
-#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "Şablon kaydedilirken hata oluştu "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 #, fuzzy
@@ -2035,69 +671,53 @@ msgstr "Sayfa boyutunu değiştirdiniz.\nDeğiştirilen ayarlar\nbelgede kullan�
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Başlık:</b><dd>$(TITEL)<dt><b>Konu:</b><dd>$(THEME)<dt><b>Anahtar sözcük:</b><dd>$(KEYWORDS)<dt><b>Tanım:</b><dd>$(TEXT)</dl></font></body></html>"
 
-#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
-#, fuzzy
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Belge özellikleri bulunamadı.</B></FONT></P></BODY></HTML>"
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr "Belge kapatılamıyor çünkü \n bir yazdırma işlemi yürütüyor."
 
-#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Print Monitor"
-msgstr "Yazıcı Penceresi"
-
-#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "is being printed on"
-msgstr "çıktının alındığı yer"
-
-#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-#, fuzzy
-msgid  "is being prepared for printing"
-msgstr "yazdırma için hazırlanıyor"
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr "Mesajın gönderilmesinde hata oluştu. Eksik bir kullanıcı hesabı veya eksik bir kurulum hata sebebi olabilir.\nLütfen %PRODUCTNAME ayarlarını veya e-posta programı ayarlarını kontrol edin. "
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "Bu belge büyük ihtimalle eksik erişim haklarından dolayı düzenlenemiyor. Bu belgenin bir kopyasını düzenlemek ister misiniz?"
 
-#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  " (repaired document)"
-msgstr "(onarılmış belge)"
-
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME sisteminizde bir web tarayıcı bulamadı. Lütfen Masa Üstü Ayarlarınızı kontrol edin ya da sisteminize bir web tarayıcı (örneğin, Mozilla) yükleyin."
 
-#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Modify Link"
-msgstr "Bağlantıyı değiştir"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr "Özelleştirme"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Application:"
-msgstr "Uygulama:"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr "Varsayılanı Geri Yükle"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~File:"
-msgstr "Dosya:"
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr "Daha Fazla Seçenek"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr "Kenar Çubuğu Yüzeyini Kapat"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr "Panel:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Category:"
 msgstr "Alan:"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Modify link"
-msgstr "Bağlantıyı değiştir"
-
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME"
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
 #, fuzzy
@@ -2144,45 +764,10 @@ msgstr "GB"
 msgid  "Cancel all changes?"
 msgstr "Tüm değişiklikleri iptal et?"
 
-#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document already open."
-msgstr "Belge zaten yüklü ve açık."
-
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME sisteminizde yüklü bir web tarayıcısı bulamadı. Lütfen, Masaüstü Seçenekleri'ni kontrol edin veya tarayıcı kurulumu sırasında, varsayılan yere bir web tarayıcısı yükleyin (mesela, Mozilla)."
-
-#: appl/app.src#GID_INTERN.STRING.TEXT
-#, fuzzy
-msgid  "Internal"
-msgstr "İç"
-
-#: appl/app.src#GID_APPLICATION.STRING.TEXT
-#, fuzzy
-msgid  "Application"
-msgstr "Uygulama"
-
-#: appl/app.src#GID_VIEW.STRING.TEXT
-#, fuzzy
-msgid  "View"
-msgstr "Görünüm"
-
-#: appl/app.src#GID_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "Documents"
-msgstr "Belgeler"
-
-#: appl/app.src#GID_EDIT.STRING.TEXT
-#, fuzzy
-msgid  "Edit"
-msgstr "Düzenle"
-
-#: appl/app.src#GID_MACRO.STRING.TEXT
-#, fuzzy
-msgid  "BASIC"
-msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
 #, fuzzy
@@ -2194,60 +779,10 @@ msgstr "Seçenekler"
 msgid  "Math"
 msgstr "Math"
 
-#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
-#, fuzzy
-msgid  "Navigate"
-msgstr "Gezinme"
-
-#: appl/app.src#GID_INSERT.STRING.TEXT
-#, fuzzy
-msgid  "Insert"
-msgstr "Ekle"
-
-#: appl/app.src#GID_FORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Format"
-msgstr "Biçim"
-
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Şablonlar"
-
-#: appl/app.src#GID_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Metin"
-
-#: appl/app.src#GID_FRAME.STRING.TEXT
-#, fuzzy
-msgid  "Frame"
-msgstr "Çerçeve"
-
-#: appl/app.src#GID_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Graphic"
-msgstr "Grafik"
-
-#: appl/app.src#GID_TABLE.STRING.TEXT
-#, fuzzy
-msgid  "Table"
-msgstr "Tablo"
-
-#: appl/app.src#GID_ENUMERATION.STRING.TEXT
-#, fuzzy
-msgid  "Numbering"
-msgstr "Numaralama"
-
-#: appl/app.src#GID_DATA.STRING.TEXT
-#, fuzzy
-msgid  "Data"
-msgstr "Veri"
-
-#: appl/app.src#GID_SPECIAL.STRING.TEXT
-#, fuzzy
-msgid  "Special Functions"
-msgstr "Özel İşlevler"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
 #, fuzzy
@@ -2259,125 +794,35 @@ msgstr "Resim"
 msgid  "Chart"
 msgstr "Çizelge"
 
-#: appl/app.src#GID_EXPLORER.STRING.TEXT
-#, fuzzy
-msgid  "Explorer"
-msgstr "Araştırıcı"
-
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
 #, fuzzy
 msgid  "Connector"
 msgstr "Bağlayıcı"
 
-#: appl/app.src#GID_MODIFY.STRING.TEXT
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
 #, fuzzy
-msgid  "Modify"
-msgstr "Değiştir"
-
-#: appl/app.src#GID_DRAWING.STRING.TEXT
-#, fuzzy
-msgid  "Drawing"
-msgstr "Çizim"
-
-#: appl/app.src#GID_CONTROLS.STRING.TEXT
-#, fuzzy
-msgid  "Controls"
-msgstr "Denetimler"
-
-#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to save the changes to %1?"
-msgstr "%1 içinde yapılan değişiklikler kaydedilsin mi?"
-
-#: appl/app.src#STR_QUITAPP.STRING.TEXT
-#, fuzzy
-msgid  "E~xit"
-msgstr "~Çıkış"
-
-#: appl/app.src#RID_STR_HELP.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Yardım"
-
-#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
-#, fuzzy
-msgid  "No automatic start at 'XX'"
-msgstr "'XX' olduğunda otomatik başlatma yapılmasın"
-
-#: appl/app.src#RID_HELPBAR.STRING.TEXT
-#, fuzzy
-msgid  "Help Bar"
-msgstr "Yardım Çubuğu"
-
-#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
-#, fuzzy
-msgid  "The help file for this topic is not installed."
-msgstr "Bu konu ile ilgili yardım kurulmadı."
-
-#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Function Bar"
-msgstr "İşlev Çubuğu"
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr "Şu an uygulamadan çıkılamıyor.\nTüm yazdırma işlerinin ve/veya\nOLE işlemlerinin bitmesini bekleyip tüm pencereleri kapatın."
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
 #, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr "Özel yapılandırmada bir hata bulundu.\nLütfen sistem yöneticinize başvurun."
 
-#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
-#, fuzzy
-msgid  "Exit Quickstarter"
-msgstr "Hızlı Başlatıcıyı Kapat"
-
-#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "%PRODUCTNAME %PRODUCTVERSION Hızlı Başlatıcı"
-
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
 #, fuzzy
 msgid  "Open Document..."
 msgstr "Belge Aç..."
 
-#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "From Template..."
-msgstr "Şablondan..."
-
-#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
-#, fuzzy
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "%PRODUCTNAME 'i sistem açılırken yükle. "
-
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 #, fuzzy
 msgid  "Disable Quickstarter"
-msgstr "Hızlı başlatıcıyı iptal et"
-
-#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-#, fuzzy
-msgid  "File"
-msgstr "Dosya"
-
-#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-#, fuzzy
-msgid  "Startcenter"
-msgstr "Başlangıç merkezi"
+msgstr "Hızlı Başlatıcıyı etkisizleştir"
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
 #, fuzzy
 msgid  "Recent Documents"
 msgstr "Son Belgeler"
-
-#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
-#, fuzzy
-msgid  "Update all links?"
-msgstr "Tüm bağlantılar güncellensin mi?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
 #, fuzzy
@@ -2389,10 +834,20 @@ msgstr "% ilişkili DDE bağlantısı (% için; alan %) oluşturulamıyor."
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "Bu bağlantı \"%s\" adresini açacaktır. Devam etmek istiyor musunuz?"
 
-#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
 #, fuzzy
-msgid  "Security Warning"
-msgstr "Güvenlik Uyarısı"
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr "Güvenlik için, köprüler çalıştırılmaz.\nBelirli adresler bu yüzden açılmaz."
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+#, fuzzy
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr "Var olan tüm imzalar kaldırılıp kaydedilecek.\nBelgeyi kaydetmeye devam etmek istiyor musunuz?"
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+#, fuzzy
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr "Belge daha önceden imzalanıp kaydedilmiş.\nBelgeyi kaydetmek istiyor musunuz?"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
 #, fuzzy
@@ -2403,11 +858,6 @@ msgstr "Bu belgenin sayısal imzalanması için OpenDocument biçiminde kaydedil
 #, fuzzy
 msgid  " (Signed)"
 msgstr " (İmzalanmış)"
-
-#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "Belgeler"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 #, fuzzy
@@ -2420,8 +870,9 @@ msgid  "All files (*.*)"
 msgstr "Tüm dosyalar (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
+#, fuzzy
 msgid  "Link graphics"
-msgstr ""
+msgstr "Grafikleri bağlantıla"
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
 #, fuzzy
@@ -2429,83 +880,54 @@ msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spellin
 msgstr "Bileşen yöntemi %1\nbulunamadı.\n\nLütfen yöntem adını kontrol edin."
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be opened"
-msgstr ""
+msgstr "Grafikler dosyası açılamaz"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be read"
-msgstr ""
+msgstr "Grafikler dosyası okunamaz"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.STRING.TEXT
+#, fuzzy
 msgid  "Unknown graphics format"
-msgstr ""
+msgstr "Bilinmeyen grafik biçimi"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.STRING.TEXT
+#, fuzzy
 msgid  "This version of the graphics file is not supported"
-msgstr ""
+msgstr "Grafik dosyalarının bu sürümü desteklenmiyor"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter not found"
-msgstr ""
+msgstr "Grafikler süzgeci bulunamadı"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.STRING.TEXT
+#, fuzzy
 msgid  "Not enough memory to insert graphic"
-msgstr ""
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "İçerik"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Index"
-msgstr "Dizin"
+msgstr "Grafiği eklemek için yeterli bellek yok"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Find"
 msgstr "Bul"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Bookmarks"
-msgstr "Yer İmleri"
-
-#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Search term"
-msgstr "~Arama terimi"
-
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Display"
 msgstr "~Göster"
-
-#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "S~earch term"
-msgstr "A~rama terimi"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Find"
 msgstr "~Bul"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Complete words only"
-msgstr "~Yanlızca tam sözcükler"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Find in ~headings only"
 msgstr "~Sadece başlıkları ara"
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Bookmarks"
-msgstr "~Yer İmleri"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 #, fuzzy
@@ -2522,95 +944,25 @@ msgstr "Dolaşma Penceresini Göster"
 msgid  "Hide Navigation Pane"
 msgstr "Dolaşma Penceresini Gizle"
 
-#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
-#, fuzzy
-msgid  "First Page"
-msgstr "İlk Sayfa"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
-#, fuzzy
-msgid  "Previous Page"
-msgstr "Önceki Sayfa"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
-#, fuzzy
-msgid  "Next Page"
-msgstr "Sonraki Sayfa"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Print..."
-msgstr "Yazdır..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
-#, fuzzy
-msgid  "Add to Bookmarks..."
-msgstr "Yer İmlerine Ekle..."
-
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
 #, fuzzy
 msgid  "Find on this Page..."
 msgstr "Bu sayfada bul..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
-#, fuzzy
-msgid  "HTML Source"
-msgstr "HTML Kaynağı"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
 #, fuzzy
 msgid  "The Help is being started..."
 msgstr "Yardım başlatılıyor..."
 
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
-#, fuzzy
-msgid  "Select Text"
-msgstr "Metni Seç"
-
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
-#, fuzzy
-msgid  "~Copy"
-msgstr "~Kopyala"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Add to Bookmarks"
-msgstr "Yer İmlerine Ekle"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Bookmark:"
-msgstr "Yer imi:"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename Bookmark"
-msgstr "Yer İmini Yeniden Adlandır"
-
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
 #, fuzzy
 msgid  "Display"
 msgstr "Göster"
 
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rename..."
-msgstr "Yeniden adlandır..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete"
-msgstr "Sil"
-
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "No topics found."
 msgstr "Konu bulunamadı."
-
-#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "The text you entered was not found."
-msgstr "Girdiğiniz metin bulunamadı"
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
 #, fuzzy

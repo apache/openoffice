@@ -33,15 +33,11 @@ msgstr ""
 
 #: config/fragments/filters/calc8_template_ui.xcu#CALC8_TEMPLATE.UINAME
 msgid  "ODF Spreadsheet Template"
-msgstr ""
+msgstr "แม่แบบตารางคำนวณ ODF"
 
 #: config/fragments/filters/calc8_ui.xcu#CALC8.UINAME
 msgid  "ODF Spreadsheet"
-msgstr ""
-
-#: config/fragments/filters/calc_HTML_WebQuery_ui.xcu#CALC_HTML_WEBQUERY.UINAME
-msgid  "Web Page Query (%productname% Calc)"
-msgstr "ข้อคำถามเว็บเพจ (%productname% Calc)"
+msgstr "ตารางคำนวณ ODF"
 
 #: config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu#CALC_MS_EXCEL_2007_BINARY.UINAME
 msgid  "Microsoft Excel 2007 Binary"
@@ -57,19 +53,19 @@ msgstr "Microsoft Excel 2003 XML"
 
 #: config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#CALC_STAROFFICE_XML_CALC_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr "แม่แบบตารางคำนวณ %productname% %formatversion%"
+msgstr "แม่แบบตารางคำนวณ %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/chart8_ui.xcu#CHART8.UINAME
 msgid  "ODF Chart"
-msgstr ""
+msgstr "แผนภูมิ ODF"
 
 #: config/fragments/filters/draw8_template_ui.xcu#DRAW8_TEMPLATE.UINAME
 msgid  "ODF Drawing Template"
-msgstr ""
+msgstr "แม่แบบภาพวาด ODF"
 
 #: config/fragments/filters/draw8_ui.xcu#DRAW8.UINAME
 msgid  "ODF Drawing"
-msgstr ""
+msgstr "ภาพวาด ODF"
 
 #: config/fragments/filters/draw_html_Export_ui.xcu#DRAW_HTML_EXPORT.UINAME
 msgid  "HTML Document (%productname% Draw)"
@@ -77,7 +73,7 @@ msgstr "เอกสาร HTML (%productname% Draw)"
 
 #: config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#DRAW_STAROFFICE_XML_DRAW_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr "แม่แบบงานวาด %productname% %formatversion%"
+msgstr "แม่แบบภาพวาด %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/HTML_MasterDoc_ui.xcu#HTML_MASTERDOC.UINAME
 msgid  "HTML Document (%productname% Master Document)"
@@ -97,15 +93,15 @@ msgstr "เอกสาร HTML"
 
 #: config/fragments/filters/impress8_draw_ui.xcu#IMPRESS8_DRAW.UINAME
 msgid  "ODF Drawing (Impress)"
-msgstr ""
+msgstr "ภาพวาด ODF (Impress)"
 
 #: config/fragments/filters/impress8_template_ui.xcu#IMPRESS8_TEMPLATE.UINAME
 msgid  "ODF Presentation Template"
-msgstr ""
+msgstr "แม่แบบการนำเสนอ ODF"
 
 #: config/fragments/filters/impress8_ui.xcu#IMPRESS8.UINAME
 msgid  "ODF Presentation"
-msgstr ""
+msgstr "การนำเสนอ ODF"
 
 #: config/fragments/filters/impress_html_Export_ui.xcu#IMPRESS_HTML_EXPORT.UINAME
 msgid  "HTML Document (%productname% Impress)"
@@ -121,15 +117,15 @@ msgstr "แม่แบบ Microsoft PowerPoint 97/2000/XP"
 
 #: config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#IMPRESS_STAROFFICE_XML_DRAW.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr "งานวาด %productname% %formatversion%(%productname% Impress)"
+msgstr "ภาพวาด %productname% %formatversion% (%productname% Impress)"
 
 #: config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#IMPRESS_STAROFFICE_XML_IMPRESS_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr "แม่แบบงานนำเสนอ %productname% %formatversion%"
+msgstr "แม่แบบการนำเสนอ %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/math8_ui.xcu#MATH8.UINAME
 msgid  "ODF Formula"
-msgstr ""
+msgstr "สูตร ODF"
 
 #: config/fragments/filters/MS_Excel_2003_XML_ui.xcu#MS_EXCEL_2003_XML.UINAME
 msgid  "Microsoft Excel 2003 XML"
@@ -159,10 +155,6 @@ msgstr "แม่แบบ Microsoft PowerPoint 97/2000/XP"
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
-#: config/fragments/filters/MS_Word_2007_XML_Template_ui.xcu#MS_WORD_2007_XML_TEMPLATE.UINAME
-msgid  "Microsoft Word 2007 XML Template"
-msgstr "แม่แบบ Microsoft Word 97/2000/XP"
-
 #: config/fragments/filters/MS_Word_2007_XML_ui.xcu#MS_WORD_2007_XML.UINAME
 msgid  "Microsoft Word 2007 XML"
 msgstr "Microsoft Word 2003 XML"
@@ -174,6 +166,18 @@ msgstr "แม่แบบ Microsoft Word 95"
 #: config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS_WORD_97_VORLAGE.UINAME
 msgid  "Microsoft Word 97/2000/XP Template"
 msgstr "แม่แบบ Microsoft Word 97/2000/XP"
+
+#: config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO_CALC_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "ตารางคำนวณรูปแบบ Uniform Office Format 2"
+
+#: config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO_IMPRESS_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr "การนำเสนอรูปแบบ Uniform Office Format 2"
+
+#: config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO_WRITER_UOF2.UINAME
+msgid  "Uniform Office Format 2 Text"
+msgstr "ข้อความรูปแบบ Uniform Office Format 2"
 
 #: config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#STARCALC_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarCalc 3.0 Template"
@@ -217,7 +221,31 @@ msgstr "แม่แบบ StarImpress 5.0"
 
 #: config/fragments/filters/StarOffice_XML__Base__ui.xcu#STAROFFICE_XML_(BASE).UINAME
 msgid  "ODF Database"
-msgstr ""
+msgstr "ฐานข้อมูล ODF"
+
+#: config/fragments/filters/StarOffice_XML__Calc__ui.xcu#STAROFFICE_XML_(CALC).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
+msgstr "ตารางคำนวณ %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Chart__ui.xcu#STAROFFICE_XML_(CHART).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
+msgstr "แผนภูมิ %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Draw__ui.xcu#STAROFFICE_XML_(DRAW).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
+msgstr "ภาพวาด %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Impress__ui.xcu#STAROFFICE_XML_(IMPRESS).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
+msgstr "การนำเสนอ %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Math__ui.xcu#STAROFFICE_XML_(MATH).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
+msgstr "สูตร %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Writer__ui.xcu#STAROFFICE_XML_(WRITER).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgstr "เอกสารข้อความ %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#STARWRITER_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarWriter 3.0 Template"
@@ -259,57 +287,49 @@ msgstr "ข้อความเข้ารหัส (%productname% Writer/Web)
 msgid  "Text Encoded"
 msgstr "ข้อความเข้ารหัส"
 
-#: config/fragments/filters/Text__StarWriter_Web__ui.xcu#TEXT_(STARWRITER/WEB).UINAME
-msgid  "Text (%productname% Writer/Web)"
-msgstr "ข้อความ (%productname% Writer/Web)"
-
 #: config/fragments/filters/Text___txt___csv__StarCalc__ui.xcu#TEXT_-_TXT_-_CSV_(STARCALC).UINAME
 msgid  "Text CSV"
 msgstr "ข้อความ CVS"
 
-#: config/fragments/filters/Text_ui.xcu#TEXT.UINAME
-msgid  "Text"
-msgstr "ข้อความ"
-
 #: config/fragments/filters/UOF_presentation_ui.xcu#UOF_PRESENTATION.UINAME
 msgid  "Unified Office Format presentation"
-msgstr ""
+msgstr "การนำเสนอรูปแบบ Unified Office Format"
 
 #: config/fragments/filters/UOF_spreadsheet_ui.xcu#UOF_SPREADSHEET.UINAME
 msgid  "Unified Office Format spreadsheet"
-msgstr ""
+msgstr "ตารางคำนวณรูปแบบ Unified Office Format"
 
 #: config/fragments/filters/UOF_text_ui.xcu#UOF_TEXT.UINAME
 msgid  "Unified Office Format text"
-msgstr ""
+msgstr "ข้อความรูปแบบ Unified Office Format"
 
 #: config/fragments/filters/writer8_template_ui.xcu#WRITER8_TEMPLATE.UINAME
 msgid  "ODF Text Document Template"
-msgstr ""
+msgstr "แม่แบบเอกสารข้อความ ODF"
 
 #: config/fragments/filters/writer8_ui.xcu#WRITER8.UINAME
 msgid  "ODF Text Document"
-msgstr ""
+msgstr "เอกสารข้อความ ODF"
 
 #: config/fragments/filters/writerglobal8_ui.xcu#WRITERGLOBAL8.UINAME
 msgid  "ODF Master Document"
-msgstr ""
+msgstr "เอกสารหลัก ODF"
 
 #: config/fragments/filters/writerglobal8_writer_ui.xcu#WRITERGLOBAL8_WRITER.UINAME
 msgid  "ODF Text Document"
-msgstr ""
+msgstr "เอกสารข้อความ ODF"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER_GLOBALDOCUMENT.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr "เอกสารเค้าโครงหลัก %productname% %formatversion%"
+msgstr "เอกสารหลัก %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr "%productname% %formatversion% Text Document"
+msgstr "เอกสารข้อความ %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#WRITER_STAROFFICE_XML_WRITER_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr "แม่แบบเอกสารข้อความ %productname% %formatversion%"
+msgstr "แม่แบบเอกสารข้อความ %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/writerweb8_writer_template_ui.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "HTML Document Template"
@@ -321,247 +341,259 @@ msgstr "%productname% Text (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr "%productname% %formatversion% Text Document (%productname% Writer/Web)"
+msgstr "เอกสารข้อความ %oooxmlformatname% %oooxmlformatversion% (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER_WEB_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr "แม่แบบ HTML %productname% %formatversion% "
+msgstr "แม่แบบ HTML %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/internalgraphicfilters/bmp_Export.xcu#BMP_EXPORT.UINAME
 msgid  "BMP - Windows Bitmap"
-msgstr ""
+msgstr "BMP - Windows Bitmap (เก็บภาพจุดต่อจุด)"
 
 #: config/fragments/internalgraphicfilters/bmp_Import.xcu#BMP_IMPORT.UINAME
 msgid  "BMP - Windows Bitmap"
-msgstr ""
+msgstr "BMP - Windows Bitmap (เก็บภาพจุดต่อจุด)"
 
 #: config/fragments/internalgraphicfilters/dxf_Import.xcu#DXF_IMPORT.UINAME
 msgid  "DXF - AutoCAD Interchange Format"
-msgstr ""
+msgstr "DXF - AutoCAD Interchange Format รูปแบบการแลกเปลี่ยนข้อมูลภาพวาด"
 
 #: config/fragments/internalgraphicfilters/emf_Export.xcu#EMF_EXPORT.UINAME
 msgid  "EMF - Enhanced Metafile"
-msgstr ""
+msgstr "EMF - Enhanced Metafile ไฟล์เบื้องหลังรุ่นปรับปรุง"
 
 #: config/fragments/internalgraphicfilters/emf_Import.xcu#EMF_IMPORT.UINAME
 msgid  "EMF - Enhanced Metafile"
-msgstr ""
+msgstr "EMF - Enhanced Metafile ไฟล์เบื้องหลังรุ่นปรับปรุง"
 
 #: config/fragments/internalgraphicfilters/eps_Export.xcu#EPS_EXPORT.UINAME
 msgid  "EPS - Encapsulated PostScript"
-msgstr ""
+msgstr "EPS - Encapsulated PostScript โพสต์สคริปต์ที่ห่อหุ้มไว้"
 
 #: config/fragments/internalgraphicfilters/eps_Import.xcu#EPS_IMPORT.UINAME
 msgid  "EPS - Encapsulated PostScript"
-msgstr ""
+msgstr "EPS - Encapsulated PostScript โพสต์สคริปต์ที่ห่อหุ้มไว้"
 
 #: config/fragments/internalgraphicfilters/gif_Export.xcu#GIF_EXPORT.UINAME
 msgid  "GIF - Graphics Interchange Format"
-msgstr ""
+msgstr "GIF - Graphics Interchange Format รูปแบบการแลกเปลี่ยนข้อมูลกราฟิกส์"
 
 #: config/fragments/internalgraphicfilters/gif_Import.xcu#GIF_IMPORT.UINAME
 msgid  "GIF - Graphics Interchange Format"
-msgstr ""
+msgstr "GIF - Graphics Interchange Format รูปแบบการแลกเปลี่ยนข้อมูลกราฟิกส์"
 
 #: config/fragments/internalgraphicfilters/jpg_Export.xcu#JPG_EXPORT.UINAME
 msgid  "JPEG - Joint Photographic Experts Group"
-msgstr ""
+msgstr "JPEG - Joint Photographic Experts Group คณะทำงานร่วมผู้เชี่ยวชาญด้านรูปภาพ"
 
 #: config/fragments/internalgraphicfilters/jpg_Import.xcu#JPG_IMPORT.UINAME
 msgid  "JPEG - Joint Photographic Experts Group"
-msgstr ""
+msgstr "JPEG - Joint Photographic Experts Group คณะทำงานร่วมผู้เชี่ยวชาญด้านรูปภาพ"
 
 #: config/fragments/internalgraphicfilters/met_Export.xcu#MET_EXPORT.UINAME
 msgid  "MET - OS/2 Metafile"
-msgstr ""
+msgstr "MET - OS/2 Metafile ไฟล์เบื้องหลัง OS/2"
 
 #: config/fragments/internalgraphicfilters/met_Import.xcu#MET_IMPORT.UINAME
 msgid  "MET - OS/2 Metafile"
-msgstr ""
+msgstr "MET - OS/2 Metafile ไฟล์เบื้องหลัง OS/2"
 
 #: config/fragments/internalgraphicfilters/pbm_Export.xcu#PBM_EXPORT.UINAME
 msgid  "PBM - Portable Bitmap"
-msgstr ""
+msgstr "PBM - Portable Bitmap บิตแมปเคลื่อนย้ายง่าย"
 
 #: config/fragments/internalgraphicfilters/pbm_Import.xcu#PBM_IMPORT.UINAME
 msgid  "PBM - Portable Bitmap"
-msgstr ""
+msgstr "PBM - Portable Bitmap บิตแมปเคลื่อนย้ายง่าย"
 
 #: config/fragments/internalgraphicfilters/pcd_Import_Base16.xcu#PCD_IMPORT_BASE16.UINAME
 msgid  "PCD - Kodak Photo CD (192x128)"
-msgstr ""
+msgstr "PCD - Kodak Photo CD (192x128) ซีดีภาพของโกดัก"
 
 #: config/fragments/internalgraphicfilters/pcd_Import_Base4.xcu#PCD_IMPORT_BASE4.UINAME
 msgid  "PCD - Kodak Photo CD (384x256)"
-msgstr ""
+msgstr "PCD - Kodak Photo CD (384x256) ซีดีภาพของโกดัก"
 
 #: config/fragments/internalgraphicfilters/pcd_Import_Base.xcu#PCD_IMPORT_BASE.UINAME
 msgid  "PCD - Kodak Photo CD (768x512)"
-msgstr ""
+msgstr "PCD - Kodak Photo CD (768x512) ซีดีภาพของโกดัก"
 
 #: config/fragments/internalgraphicfilters/pct_Export.xcu#PCT_EXPORT.UINAME
 msgid  "PCT - Mac Pict"
-msgstr ""
+msgstr "PCT - Mac Pict ภาพของเครื่องแม็ค"
 
 #: config/fragments/internalgraphicfilters/pct_Import.xcu#PCT_IMPORT.UINAME
 msgid  "PCT - Mac Pict"
-msgstr ""
+msgstr "PCT - Mac Pict ภาพของเครื่องแม็ค"
 
 #: config/fragments/internalgraphicfilters/pcx_Import.xcu#PCX_IMPORT.UINAME
 msgid  "PCX - Zsoft Paintbrush"
-msgstr ""
+msgstr "PCX - Zsoft Paintbrush โปรแกรมแปรงทาสีของ Zsoft"
 
 #: config/fragments/internalgraphicfilters/pgm_Export.xcu#PGM_EXPORT.UINAME
 msgid  "PGM - Portable Graymap"
-msgstr ""
+msgstr "PGM - Portable Graymap แผนสเกลสีเทาเคลื่อนย้ายง่าย"
 
 #: config/fragments/internalgraphicfilters/pgm_Import.xcu#PGM_IMPORT.UINAME
 msgid  "PGM - Portable Graymap"
-msgstr ""
+msgstr "PGM - Portable Graymap แผนสเกลสีเทาเคลื่อนย้ายง่าย"
 
 #: config/fragments/internalgraphicfilters/png_Export.xcu#PNG_EXPORT.UINAME
 msgid  "PNG - Portable Network Graphic"
-msgstr ""
+msgstr "PNG - Portable Network Graphic กราฟิกเครือข่ายเ่คลื่อนย้ายง่าย"
 
 #: config/fragments/internalgraphicfilters/png_Import.xcu#PNG_IMPORT.UINAME
 msgid  "PNG - Portable Network Graphic"
-msgstr ""
+msgstr "PNG - Portable Network Graphic กราฟิกเครือข่ายเ่คลื่อนย้ายง่าย"
 
 #: config/fragments/internalgraphicfilters/ppm_Export.xcu#PPM_EXPORT.UINAME
 msgid  "PPM - Portable Pixelmap"
-msgstr ""
+msgstr "PPM - Portable Pixelmap แผนที่จุดภาพเคลื่อนย้ายง่าย"
 
 #: config/fragments/internalgraphicfilters/ppm_Import.xcu#PPM_IMPORT.UINAME
 msgid  "PPM - Portable Pixelmap"
-msgstr ""
+msgstr "PPM - Portable Pixelmap แผนที่จุดภาพเคลื่อนย้ายง่าย"
 
 #: config/fragments/internalgraphicfilters/psd_Import.xcu#PSD_IMPORT.UINAME
 msgid  "PSD - Adobe Photoshop"
-msgstr ""
+msgstr "PSD - Adobe Photoshop โฟโต้ช็อปของอะโดบี"
 
 #: config/fragments/internalgraphicfilters/ras_Export.xcu#RAS_EXPORT.UINAME
 msgid  "RAS - Sun Raster Image"
-msgstr ""
+msgstr "RAS - Sun Raster Image ภาพแรสเตอร์ของซัน"
 
 #: config/fragments/internalgraphicfilters/ras_Import.xcu#RAS_IMPORT.UINAME
 msgid  "RAS - Sun Raster Image"
-msgstr ""
+msgstr "RAS - Sun Raster Image ภาพแรสเตอร์ของซัน"
 
 #: config/fragments/internalgraphicfilters/sgf_Import.xcu#SGF_IMPORT.UINAME
 msgid  "SGF - StarWriter Graphics Format"
-msgstr ""
+msgstr "SGF - StarWriter Graphics Format รูปแบบกราฟิกส์ของโปรแกรม StarWriter"
 
 #: config/fragments/internalgraphicfilters/sgv_Import.xcu#SGV_IMPORT.UINAME
 msgid  "SGV - StarDraw 2.0"
-msgstr ""
+msgstr "SGV - StarDraw 2.0"
 
 #: config/fragments/internalgraphicfilters/svg_Export.xcu#SVG_EXPORT.UINAME
 msgid  "SVG - Scalable Vector Graphics"
-msgstr ""
+msgstr "SVG - Scalable Vector Graphics เวกเตอร์กราฟิกส์ย่อขยายได้"
 
 #: config/fragments/internalgraphicfilters/svg_Import.xcu#SVG_IMPORT.UINAME
 msgid  "SVG - Scalable Vector Graphics"
-msgstr ""
+msgstr "SVG - Scalable Vector Graphics เวกเตอร์กราฟิกส์ย่อขยายได้"
 
 #: config/fragments/internalgraphicfilters/svm_Export.xcu#SVM_EXPORT.UINAME
 msgid  "SVM - StarView Metafile"
-msgstr ""
+msgstr "SVM - StarView Metafile"
 
 #: config/fragments/internalgraphicfilters/svm_Import.xcu#SVM_IMPORT.UINAME
 msgid  "SVM - StarView Metafile"
-msgstr ""
+msgstr "SVM - StarView Metafile"
 
 #: config/fragments/internalgraphicfilters/tga_Import.xcu#TGA_IMPORT.UINAME
 msgid  "TGA - Truevision Targa"
-msgstr ""
+msgstr "TGA - Truevision Targa"
 
 #: config/fragments/internalgraphicfilters/tif_Export.xcu#TIF_EXPORT.UINAME
 msgid  "TIFF - Tagged Image File Format"
-msgstr ""
+msgstr "TIFF - Tagged Image File Format"
 
 #: config/fragments/internalgraphicfilters/tif_Import.xcu#TIF_IMPORT.UINAME
 msgid  "TIFF - Tagged Image File Format"
-msgstr ""
+msgstr "TIFF - Tagged Image File Format"
 
 #: config/fragments/internalgraphicfilters/wmf_Export.xcu#WMF_EXPORT.UINAME
 msgid  "WMF - Windows Metafile"
-msgstr ""
+msgstr "WMF - Windows Metafile"
 
 #: config/fragments/internalgraphicfilters/wmf_Import.xcu#WMF_IMPORT.UINAME
 msgid  "WMF - Windows Metafile"
-msgstr ""
+msgstr "WMF - Windows Metafile"
 
 #: config/fragments/internalgraphicfilters/xbm_Import.xcu#XBM_IMPORT.UINAME
 msgid  "XBM - X Bitmap"
-msgstr ""
+msgstr "XBM - X Bitmap"
 
 #: config/fragments/internalgraphicfilters/xpm_Export.xcu#XPM_EXPORT.UINAME
 msgid  "XPM - X PixMap"
-msgstr ""
+msgstr "XPM - X PixMap"
 
 #: config/fragments/internalgraphicfilters/xpm_Import.xcu#XPM_IMPORT.UINAME
 msgid  "XPM - X PixMap"
-msgstr ""
+msgstr "XPM - X PixMap"
 
 #: config/fragments/types/calc8_template.xcu#CALC8_TEMPLATE.UINAME
 msgid  "Calc 8 Template"
-msgstr ""
+msgstr "แม่แบบตารางคำนวณ Calc 8"
 
 #: config/fragments/types/calc8.xcu#CALC8.UINAME
 msgid  "Calc 8"
-msgstr ""
+msgstr "ตารางคำนวณ Calc 8"
 
 #: config/fragments/types/calc_MS_Excel_2003_XML.xcu#CALC_MS_EXCEL_2003_XML.UINAME
 msgid  "Microsoft Excel 2003 XML"
-msgstr ""
+msgstr "ไมโครซอฟท์เอ็กเซล 2003 XML"
+
+#: config/fragments/types/calc_NSO_UOF2.xcu#CALC_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "ตารางคำนวณ Uniform Office Format 2"
 
 #: config/fragments/types/chart8.xcu#CHART8.UINAME
 msgid  "Chart 8"
-msgstr ""
+msgstr "แผนภูมิ Chart 8"
 
 #: config/fragments/types/draw8_template.xcu#DRAW8_TEMPLATE.UINAME
 msgid  "Draw 8 Template"
-msgstr ""
+msgstr "แม่แบบภาพวาด Draw 8"
 
 #: config/fragments/types/draw8.xcu#DRAW8.UINAME
 msgid  "Draw 8"
-msgstr ""
+msgstr "ภาพวาด Draw 8"
 
 #: config/fragments/types/impress8_template.xcu#IMPRESS8_TEMPLATE.UINAME
 msgid  "Impress 8 Template"
-msgstr ""
+msgstr "แม่แบบอิมเพรส Impress 8"
 
 #: config/fragments/types/impress8.xcu#IMPRESS8.UINAME
 msgid  "Impress 8"
-msgstr ""
+msgstr "อิมเพรส Impress 8"
+
+#: config/fragments/types/impress_NSO_UOF2.xcu#IMPRESS_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr "การนำเสนอ Uniform Office Format 2"
 
 #: config/fragments/types/math8.xcu#MATH8.UINAME
 msgid  "Math 8"
-msgstr ""
+msgstr "คณิต Math 8"
 
 #: config/fragments/types/StarBase.xcu#STARBASE.UINAME
 msgid  "OpenDocument Database"
-msgstr ""
+msgstr "ฐานข้อมูล OpenDocument"
 
 #: config/fragments/types/writer8_template.xcu#WRITER8_TEMPLATE.UINAME
 msgid  "Writer 8 Template"
-msgstr ""
+msgstr "แม่แบบ Writer 8"
 
 #: config/fragments/types/writer8.xcu#WRITER8.UINAME
 msgid  "Writer 8"
-msgstr ""
+msgstr "Writer 8"
 
 #: config/fragments/types/writerglobal8.xcu#WRITERGLOBAL8.UINAME
 msgid  "Writer 8 Master Document"
-msgstr ""
+msgstr "เอกสารหลัก Writer 8"
 
 #: config/fragments/types/writer_MS_Word_2003_XML.xcu#WRITER_MS_WORD_2003_XML.UINAME
 msgid  "Microsoft Word 2003 XML"
-msgstr ""
+msgstr "ไมโครซอฟท์เวิร์ด 2003 XML"
+
+#: config/fragments/types/writer_NSO_UOF2.xcu#WRITER_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 text"
+msgstr "ข้อความ Uniform Office Format 2"
 
 #: config/fragments/types/writerweb8_writer_template.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "Writer/Web 8 Template"
-msgstr ""
+msgstr "แม่แบบ Writer/Web 8"
 
 #: flash/impswfdialog.src#DLG_OPTIONS.MODALDIALOG.TEXT
 msgid  "Macromedia Flash (SWF) Options"
@@ -573,22 +605,15 @@ msgstr "1: คุณภาพต่ำสุด\n100: คุณภาพสู�
 
 #: graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.STRING.TEXT
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
-msgstr ""
-
-#: pdf/impdialog.src#STR_PDF_EXPORT.STRING.TEXT
-#, fuzzy
-msgid  "E~xport"
-msgstr "E~xport"
+msgstr "คำเตือน: กราฟิกส์ EPS ที่นำเข้ามาบางส่วนไม่สามารถบันทึกที่ระดับ 1\nเนื่องจากอยู่ที่ระดับสูงกว่า"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_UDPWD.STRING.TEXT
-#, fuzzy
 msgid  "Set open password"
-msgstr "Set Open Password"
+msgstr "ตั้งรหัสผ่านสำหรับเปิด"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_ODPWD.STRING.TEXT
-#, fuzzy
 msgid  "Set permission password"
-msgstr "Set Permission Password"
+msgstr "ตั้งรหัสผ่านสำหรับการอนุญาต"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.TABPAGE.TEXT
 #, fuzzy
@@ -605,21 +630,6 @@ msgstr "ช่วงข้อมูล"
 msgid  "~All"
 msgstr "~ทั้งหมด"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Pages"
-msgstr "~หน้ากระดาษ"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Selection"
-msgstr "~ช่วงที่เลือก"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Images"
-msgstr "ภาพ"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Lossless compression"
@@ -630,19 +640,9 @@ msgstr "บีบอัดแบบไม่~สูญเสีย"
 msgid  "~JPEG compression"
 msgstr "~บีบอัดแบบ JPEG"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Quality"
-msgstr "~คุณภาพ"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Reduce image resolution"
-msgstr "~ลดความละอียดภาพ"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CHECKBOX.TEXT
 msgid  "P~DF/A-1a"
-msgstr ""
+msgstr "PDF/A-1a"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_TAGGEDPDF.CHECKBOX.TEXT
 #, fuzzy
@@ -654,14 +654,9 @@ msgstr "ใส่~ป้าย PDF"
 msgid  "~Create PDF form"
 msgstr "~Create PDF form"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_FORMSFORMAT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Submit ~format"
-msgstr "ส่งแ~บบฟอร์มในรูปแบบ:"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ALLOWDUPLICATEFIELDNAMES.CHECKBOX.TEXT
 msgid  "Allow duplicate field ~names"
-msgstr ""
+msgstr "ยอมให้มีชื่อฟิลด์ซ้ำกัน"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTBOOKMARKS.CHECKBOX.TEXT
 #, fuzzy
@@ -670,11 +665,11 @@ msgstr "Export ~bookmarks"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTNOTES.CHECKBOX.TEXT
 msgid  "~Export comments"
-msgstr ""
+msgstr "หมายเหตุการส่งออก"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTNOTESPAGES.CHECKBOX.TEXT
 msgid  "Export ~notes pages"
-msgstr ""
+msgstr "หน้าบันทึกการส่งออก"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTEMPTYPAGES.CHECKBOX.TEXT
 #, fuzzy
@@ -683,19 +678,19 @@ msgstr "ส่งออกแบบแทรกหน้า~ว่างโด�
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EMBEDSTANDARDFONTS.CHECKBOX.TEXT
 msgid  "E~mbed standard fonts"
-msgstr ""
+msgstr "ฝังตัวชุดแบบอักษรมาตรฐาน"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ADDSTREAM.CHECKBOX.TEXT
 msgid  "Embed this document ~inside the PDF"
-msgstr ""
+msgstr "ฝังตัวเอกสารนี้ไว้ใน PDF"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.TITLE
 msgid  "PDF/A Export"
-msgstr ""
+msgstr "ส่งออก PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.MESSAGE
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
-msgstr ""
+msgstr "PDF/A ไม่ยอมให้มีการเข้ารหัสข้อมูล ไฟล์ PDF ที่ส่งออกจะไม่มีัการป้องกันด้วยรหัสผ่าน"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TABPAGE.TEXT
 #, fuzzy
@@ -727,11 +722,6 @@ msgstr "~ภาพย่อและหน้ากระดาษ"
 msgid  "Open on page"
 msgstr "Open on page"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Magnification"
-msgstr "การขยายหน้า"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Default"
@@ -756,11 +746,6 @@ msgstr "เห็นเต็มห~น้า"
 #, fuzzy
 msgid  "~Zoom factor"
 msgstr "~Zoom factor"
-
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Page layout"
-msgstr "การจัดวางหน้า"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
@@ -792,11 +777,6 @@ msgstr "หน้าแรกอยู่~ซ้าย"
 msgid  "User Interface"
 msgstr "ส่วนติดต่อผู้ใช้"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Window options"
-msgstr "ตัวเลือกหน้าต่าง"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Resize window to initial page"
@@ -817,11 +797,6 @@ msgstr "เปิดในโหมดเ~ต็มหน้าจอ"
 msgid  "~Display document title"
 msgstr "แ~สดงชื่อเอกสาร"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User interface options"
-msgstr "ตัวเลือกส่วนติดต่อผู้ใช้"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Hide ~menubar"
@@ -837,117 +812,77 @@ msgstr "ซ่อนแถบเ~ครื่องมือ"
 msgid  "Hide ~window controls"
 msgstr "ซ่อนตัวควบคุมหน้า~ต่าง"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Transitions"
-msgstr "Transitions"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Use transition effects"
 msgstr "~Use transition effects"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Bookmarks"
-msgstr "Bookmarks"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "All bookmark levels"
-msgstr "All bookmark levels"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Visible bookmark levels"
 msgstr "Visible bookmark levels"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.TABPAGE.TEXT
-#, fuzzy
-msgid  "Security"
-msgstr "ความปลอดภัย"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.FIXEDLINE.TEXT
 msgid  "File encryption and permission"
-msgstr ""
+msgstr "การเข้ารหัสไฟล์และการอนุญาต"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.BTN_SET_PWD.PUSHBUTTON.TEXT
 msgid  "Set ~passwords..."
-msgstr ""
+msgstr "ตั้งรหัสผ่าน..."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_SET_PWD.STRING.TEXT
 msgid  "Set passwords"
-msgstr ""
+msgstr "ตั้งรหัสผ่าน"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_SET.STRING.TEXT
 msgid  "Open password set"
-msgstr ""
+msgstr "ตั้งรหัสผ่านสำหรับเปิดเรียบร้อยแล้ว"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_ENC.STRING.TEXT
 msgid  "PDF document will be encrypted"
-msgstr ""
+msgstr "เอกสาร PDF จะถูกเข้ารหัส"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNSET.STRING.TEXT
 msgid  "No open password set"
-msgstr ""
+msgstr "ไม่ได้ตั้งรหัสผ่านสำหรับเปิด"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNENC.STRING.TEXT
 msgid  "PDF document will not be encrypted"
-msgstr ""
+msgstr "เอกสาร PDF จะไม่ถูกเข้ารหัส"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.STRING.TEXT
 msgid  "PDF document will not be encrypted due to PDF/A export."
-msgstr ""
+msgstr "จะไม่เข้ารหัสเอกสาร PDF เนื่องจากส่งออก PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.STRING.TEXT
 msgid  "Permission password set"
-msgstr ""
+msgstr "ตั้งรหัสผ่านการอนุญาตแล้ว"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_REST.STRING.TEXT
 msgid  "PDF document will be restricted"
-msgstr ""
+msgstr "เอกสาร PDF จะถูกจำกัดสิทธิ"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNSET.STRING.TEXT
 msgid  "No permission password set"
-msgstr ""
+msgstr "ไม่ได้ตั้งรหัสผ่านการอนุญาต"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNREST.STRING.TEXT
 msgid  "PDF document will be unrestricted"
-msgstr ""
+msgstr "เอกสาร PDF จะไม่ถูกจำกัดสิทธิ"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.STRING.TEXT
 msgid  "PDF document will not be restricted due to PDF/A export."
-msgstr ""
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Printing"
-msgstr "การพิมพ์"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Not permitted"
-msgstr "ไม่~อนุญาต"
+msgstr "จะไม่จำกัดสิทธิเอกสาร PDF เนื่องจากการส่งออก PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Low resolution (150 dpi)"
 msgstr "ความละเอียด~ต่ำ (150 dpi)"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~High resolution"
-msgstr "ความละเอียด~สูง"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Changes"
 msgstr "การเปลี่ยนแปลง"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "No~t permitted"
-msgstr "ไม่อ~นุญาต"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -974,42 +909,37 @@ msgstr "~Any except extracting pages"
 msgid  "Ena~ble copying of content"
 msgstr "เปิดใ~ช้งานการคัดลอกเนื้อหา"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Enable text access for acce~ssibility tools"
-msgstr "เปิดการเข้าถึงข้อความสำหรับเครื่องอำ~นวยความสะดวก"
-
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.TABPAGE.TEXT
 msgid  "---"
-msgstr ""
+msgstr "---"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_EXP_BMRK_TO_DEST.CHECKBOX.TEXT
 msgid  "Export bookmarks as named destinations"
-msgstr ""
+msgstr "ส่งออกคั่นหน้าเป็นปลายทางมีชื่อ"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_CNV_OOO_DOCTOPDF.CHECKBOX.TEXT
 msgid  "Convert document references to PDF targets"
-msgstr ""
+msgstr "แปลงการอ้างอิงเอกสารเป็นเป้าหมาย PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_ENAB_RELLINKFSYS.CHECKBOX.TEXT
 msgid  "Export URLs relative to file system"
-msgstr ""
+msgstr "ส่งออก URL ให้สัมพัทธ์กับระบบไฟล์"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.FL_DEFAULT_LINK_ACTION.FIXEDLINE.TEXT
 msgid  "Cross-document links"
-msgstr ""
+msgstr "การเชื่อมโยงข้ามเอกสาร"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_DEFAULT.RADIOBUTTON.TEXT
 msgid  "Default mode"
-msgstr ""
+msgstr "แบบวิธีโดยปริยาย"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_APPLICATION.RADIOBUTTON.TEXT
 msgid  "Open with PDF reader application"
-msgstr ""
+msgstr "เปิดด้วยโปรแกรมอ่าน PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_BROWSER.RADIOBUTTON.TEXT
 msgid  "Open with Internet browser"
-msgstr ""
+msgstr "เปิดด้วยอินเตอร์เน็ตเบราเซอร์"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.TABDIALOG.TEXT
 #, fuzzy
@@ -1018,47 +948,47 @@ msgstr "ตัวเลือก PDF"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_LINKS.PAGEITEM.TEXT
 msgid  "Links"
-msgstr ""
+msgstr "ตัวเชื่อมโยง"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.MODALDIALOG.TEXT
 msgid  "Problems during PDF export"
-msgstr ""
+msgstr "ปัญหาระหว่างส่งออก PDF"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.FT_PROCESS.FIXEDTEXT.TEXT
 msgid  "During PDF export the following problems occurred:"
-msgstr ""
+msgstr "ระหว่างการส่งออก PDF เกิดปัญหาต่อไปนี้:"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA_SHORT.STRING.TEXT
 msgid  "PDF/A transparency"
-msgstr ""
+msgstr "ความโปร่งใสของ PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.STRING.TEXT
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
-msgstr ""
+msgstr "PDF/A ห้ามความโปร่งใส จะระบายวัตถุโปร่งใสให้กลายเป็นทึบแสง"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.STRING.TEXT
 msgid  "PDF version conflict"
-msgstr ""
+msgstr "เวอร์ชันของ PDF ขัดแย้งกัน"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.STRING.TEXT
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
-msgstr ""
+msgstr "ไม่สนับสนุนความโปร่งใสใน PDF เวอร์ชันก่อนหน้า PDF 1.4 วัตถุโปร่งใสจะถูกระบายให้เป็นทึบแสง"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.STRING.TEXT
 msgid  "PDF/A form action"
-msgstr ""
+msgstr "การกระทำของฟอร์ม PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.STRING.TEXT
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
-msgstr ""
+msgstr "วัตถุสั่งการในฟอร์มมีการกระทำที่มาตรฐาน PDF/A ไม่สนับสนุน การกระทำจึงถูกข้ามไป"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.STRING.TEXT
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
-msgstr ""
+msgstr "บางวัตถุถูกแปลงไปเป็นรูปภาพเพื่อเอาความโปร่งใสออก เพราะรูปแบบ PDF ที่เป็นเป้าหมายไม่สนับสนุนความโปร่งใส คุณอาจได้ผลที่ดีกว่าถ้าเอาวัตถุโปร่งใสออกก่อนที่จะส่งออก"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.STRING.TEXT
 msgid  "Transparencies removed"
-msgstr ""
+msgstr "เอาสิ่งโปร่งใสออกแล้ว"
 
 #: pdf/pdf.src#PDF_PROGRESS_BAR.STRING.TEXT
 #, fuzzy
@@ -1067,72 +997,57 @@ msgstr "ส่งออกเป็น PDF"
 
 #: t602/t602filter.src#T602FILTER_STR_IMPORT_DIALOG_TITLE.STRING.TEXT
 msgid  "Settings for T602 import"
-msgstr ""
+msgstr "การตั้งค่าสำหรับการนำเข้า T602"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_LABEL.STRING.TEXT
 msgid  "Encoding"
-msgstr ""
+msgstr "การเข้ารหัส"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_AUTO.STRING.TEXT
 msgid  "Automatic"
-msgstr ""
+msgstr "อัตโนมัติ"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP852.STRING.TEXT
 msgid  "CP852 (Latin2)"
-msgstr ""
+msgstr "CP852 (ละติน2)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP895.STRING.TEXT
 msgid  "CP895 (KEYB2CS, Kamenicky)"
-msgstr ""
+msgstr "CP895 (KEYB2CS, Kamenicky)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_KOI8CS2.STRING.TEXT
 msgid  "KOI8 CS2"
-msgstr ""
+msgstr "KOI8 CS2"
 
 #: t602/t602filter.src#T602FILTER_STR_CYRILLIC_MODE.STRING.TEXT
 msgid  "Mode for Russian language (Cyrillic)"
-msgstr ""
+msgstr "แบบวิธีสำหรับภาษารัสเซีย (ไซริลลิก)"
 
 #: t602/t602filter.src#T602FILTER_STR_REFORMAT_TEXT.STRING.TEXT
 msgid  "Reformat the text"
-msgstr ""
+msgstr "จัดรูปแบบข้อความใหม่"
 
 #: t602/t602filter.src#T602FILTER_STR_DOT_COMMANDS.STRING.TEXT
 msgid  "Display dot commands"
-msgstr ""
+msgstr "แสดงคำสั่งจุด (dot commands)"
 
 #: t602/t602filter.src#T602FILTER_STR_CANCEL_BUTTON.STRING.TEXT
 msgid  "Cancel"
-msgstr ""
+msgstr "ยกเลิก"
 
 #: t602/t602filter.src#T602FILTER_STR_OK_BUTTON.STRING.TEXT
 msgid  "OK"
-msgstr ""
+msgstr "ตกลง"
 
 #: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.WORKWINDOW.TEXT
 #, fuzzy
 msgid  "XML Filter output"
 msgstr "XML Filter output"
 
-#: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Validate"
-msgstr "~ยืนยันความถูกต้อง"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "ชื่อ:"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.STRING.TEXT
 #, fuzzy
 msgid  "Type"
 msgstr "ชนิด"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.STRING.TEXT
-#, fuzzy
-msgid  "Unknown"
-msgstr "ไม่รู้จัก"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.STRING.TEXT
 #, fuzzy
@@ -1184,21 +1099,6 @@ msgstr "ไม่พบ XSLT สำหรับการนำเข้า ก�
 msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "ไม่พบแม่แบบนำเข้าที่ให้มา กรุณาใส่ชื่อพาธที่ถูกต้อง"
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.STRING.TEXT
-#, fuzzy
-msgid  "Not specified"
-msgstr "ไม่ได้ระบุ"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "New Filter"
-msgstr "ตัวกรองใหม่"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Untitled"
-msgstr "ไม่มีชื่อ"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.STRING.TEXT
 #, fuzzy
 msgid  "undefined filter"
@@ -1240,98 +1140,32 @@ msgid  "XML Filter Settings"
 msgstr "การตั้งค่าตัวกรอง XML"
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~New..."
-msgstr "ใ~หม่..."
+msgstr "ใหม่..."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Edit..."
 msgstr "แ~ก้ไข..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Test XSLTs..."
-msgstr "~ทดสอบ XSLTs..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete..."
-msgstr "~ลบ..."
-
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Save as Package..."
 msgstr "~บันทึกเป็นแพ็กเกจ..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Open Package..."
-msgstr "เ~ปิดแพ็กเกจ..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~ปิด"
-
 #: xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.STRING.TEXT
 msgid  "XML Filter List"
-msgstr ""
+msgstr "รายการตัวกรอง XML"
 
 #: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TABDIALOG.TEXT
 #, fuzzy
 msgid  "XML Filter: %s"
 msgstr "ตัวกรอง XML: %s"
 
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "ทั่วไป"
-
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Transformation"
-msgstr "Transformation"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TABPAGE.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "General"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Filter name"
-msgstr "ชื่อตัวกรอง"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Application"
-msgstr "โปรแกรม"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Name of\nfile type"
-msgstr "ชื่อของ\nชนิดของแฟ้ม"
-
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "File extension"
 msgstr "นามสกุลแฟ้ม"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "ข้อคิดเห็น"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TABPAGE.TEXT
-#, fuzzy
-msgid  "Transformation"
-msgstr "การแปลง"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "DocType"
-msgstr "ชนิดเอกสาร"
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1342,41 +1176,6 @@ msgstr "DTD"
 #, fuzzy
 msgid  "Browse..."
 msgstr "เรียกดู..."
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for export"
-msgstr "XSLT สำหรับการส่งออก"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for import"
-msgstr "XSLT สำหรับการนำเข้า"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template for import"
-msgstr "แม่แบบสำหรับการนำเข้า"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Test XML Filter: %s"
-msgstr "ทดสอบตัวกรอง XML: %s"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "ส่งออก"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for export"
-msgstr "XSLT สำหรับการส่งออก"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Transform document"
-msgstr "แปลงเอกสาร"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1393,21 +1192,6 @@ msgstr "เ~อกสารปัจจุบัน"
 msgid  "Import"
 msgstr "นำเข้า"
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for import"
-msgstr "XSLT สำหรับการนำเข้า"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template for import"
-msgstr "แม่แบบสำหรับการนำเข้า"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Transform file"
-msgstr "แปลงแฟ้ม"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Display source"
@@ -1417,11 +1201,6 @@ msgstr "~Display source"
 #, fuzzy
 msgid  "B~rowse..."
 msgstr "เรี~ยกดู..."
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Recent File"
-msgstr "แ~ฟ้มปัจจุบัน"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy

@@ -59,10 +59,6 @@ msgstr "ไม่สามารถสร้างการเชื่อมต
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
 msgstr "ไม่สามารถสร้างการเชื่อมต่อไปยังแหล่งข้อมูลภายนอกได้  ไม่สามารถโหลดตัวจัดการไดรเวอร์ SDBC "
 
-#: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
-msgstr "ฟอร์ม"
-
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
 msgstr "รายงาน"
@@ -193,39 +189,39 @@ msgstr "The SQL command leading to this error is:\n\n$command$"
 
 #: core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
 msgid  "The SQL command does not describe a result set."
-msgstr ""
+msgstr "คำสั่ง SQL ไม่ได้บรรยายเซ็ตของผลลัพธ์"
 
 #: core/resource/strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.STRING.TEXT
 msgid  "The name must not be empty."
-msgstr ""
+msgstr "ชื่อจะต้องไม่ว่าง"
 
 #: core/resource/strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.STRING.TEXT
 msgid  "The container cannot contain NULL objects."
-msgstr ""
+msgstr "คอนเทนเนอร์ไม่สามารถมีวัตถุ NULL"
 
 #: core/resource/strings.src#RID_STR_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There already is an object with the given name."
-msgstr ""
+msgstr "มีวัตถุที่มีชื่อตรงกับชื่อที่ให้มาอยู่แล้ว"
 
 #: core/resource/strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.STRING.TEXT
 msgid  "This object cannot be part of this container."
-msgstr ""
+msgstr "วัตถุไม่สามารถเป็นส่วนหนึ่งของคอนเทนเนอร์นี้ได้"
 
 #: core/resource/strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.STRING.TEXT
 msgid  "The object already is, with a different name, part of the container."
-msgstr ""
+msgstr "วัตถุเป็นส่วนหนึ่งของคอนเทนเนอร์อยู่แล้วแต่มีชื่อต่างออกไป"
 
 #: core/resource/strings.src#RID_STR_NAME_NOT_FOUND.STRING.TEXT
 msgid  "Unable to find the document '$name$'."
-msgstr ""
+msgstr "หาไม่พบเอกสาร '$name$'"
 
 #: core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.STRING.TEXT
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "ไม่สามารถบันทึกเอกสารไปยัง $location$:\n$message$"
 
 #: core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.STRING.TEXT
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "เกิดความผิดพลาดในการเข้าถึงแหล่งข้อมูล '$name$':\n$error$"
 
 #: core/resource/strings.src#RID_STR_NO_SUB_FOLDER.STRING.TEXT
 msgid  "There exists no folder named \"$folder$\"."
@@ -233,431 +229,419 @@ msgstr "There exists no table named \"$table$\"."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.STRING.TEXT
 msgid  "Cannot delete the before-first or after-last row."
-msgstr ""
+msgstr "ไม่สามารถลบแถวก่อนแถวแรกหรือหลังแถวสุดท้าย"
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.STRING.TEXT
 msgid  "Cannot delete the insert-row."
-msgstr ""
+msgstr "ไม่สามารถลบแถวที่แทรก"
 
 #: core/resource/strings.src#RID_STR_RESULT_IS_READONLY.STRING.TEXT
 msgid  "Result set is read only."
-msgstr ""
+msgstr "เซ็ตผลลัพธ์อ่านได้อย่างเดียว"
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
 msgid  "DELETE privilege not available."
-msgstr ""
+msgstr "ไม่มีเอกสิทธิ์การลบ"
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "Current row is already deleted."
-msgstr ""
+msgstr "แถวปัจจุบันถูกลบไปก่อนแล้ว"
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
 msgid  "Current row could not be updated."
-msgstr ""
+msgstr "ไม่สามารถอัพเดตแถวปัจจุบัน"
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
 msgid  "INSERT privilege not available."
-msgstr ""
+msgstr "ไม่มีเอกสิทธิ์การแทรก"
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
 msgid  "Internal error: no statement object provided by the database driver."
-msgstr ""
+msgstr "ความผิดพลาดภายใน: ไดรเวอร์ของฐานข้อมูลไม่ได้ให้วัตถุข้อความสั่ง"
 
 #: core/resource/strings.src#RID_STR_EXPRESSION1.STRING.TEXT
 msgid  "Expression1"
-msgstr ""
+msgstr "นิพจน์1"
 
 #: core/resource/strings.src#RID_STR_NO_SQL_COMMAND.STRING.TEXT
 msgid  "No SQL command was provided."
-msgstr ""
+msgstr "ไม่ได้ให้คำสั่ง SQL มา"
 
 #: core/resource/strings.src#RID_STR_INVALID_INDEX.STRING.TEXT
 msgid  "Invalid column index."
-msgstr ""
+msgstr "ดัชนีของคอลัมน์ไม่ถูกต้อง"
 
 #: core/resource/strings.src#RID_STR_INVALID_CURSOR_STATE.STRING.TEXT
 msgid  "Invalid cursor state."
-msgstr ""
+msgstr "สถานะตัวชี้ตำแหน่งไม่ถูกต้อง"
 
 #: core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.STRING.TEXT
 msgid  "The cursor points to before the first or after the last row."
-msgstr ""
+msgstr "ตัวชี้ตำแหน่งชี้ไปยังก่อนแถวแรกหรือหลังแถวสุดท้าย"
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.STRING.TEXT
 msgid  "The rows before the first and after the last row don't have a bookmark."
-msgstr ""
+msgstr "แถวก่อนแถวแรกและหลังแถวสุดท้ายไม่มีคั่นหน้า (bookmark)"
 
 #: core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.STRING.TEXT
 msgid  "The current row is deleted, and thus doesn't have a bookmark."
-msgstr ""
+msgstr "แุถวปัจจุบันถูกลบจึงไม่มีที่คั่นหน้า (bookmark)"
 
 #: core/resource/strings.src#RID_STR_NO_EMBEDDING.STRING.TEXT
 msgid  "Embedding of database documents is not supported."
-msgstr ""
+msgstr "ไม่สนับสนุนการฝังตัว (Embedding) ของเอกสารฐานข้อมูล"
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
 msgid  "A connection for the following URL was requested \"$name$\"."
-msgstr ""
+msgstr "มีการร้องขอการเชื่อมต่อไปยัง URL ต่อไปนี้ \"$name$\""
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
 msgid  "The extension is not installed."
-msgstr ""
+msgstr "ส่วนขยาย (extension) ไม่ได้ติดตั้ง"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database ~name"
-msgstr ""
+msgstr "ชื่อฐานข้อมูล"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FIXEDLINE.TEXT
 msgid  "User settings"
-msgstr ""
+msgstr "การตั้งค่าผู้ใช้"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FIXEDTEXT.TEXT
 msgid  "~Control user"
-msgstr ""
+msgstr "ผู้ใช้ควบคุม"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FIXEDTEXT.TEXT
 msgid  "~Administrator"
-msgstr ""
+msgstr "ผู้ดูแลระบบ"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FIXEDTEXT.TEXT
 msgid  "~Domain user"
-msgstr ""
+msgstr "ผู้ใช้โดเมน"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PUSHBUTTON.TEXT
 msgid  "P~assword..."
-msgstr ""
+msgstr "รหัสผ่าน..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PUSHBUTTON.TEXT
 msgid  "~Password..."
-msgstr ""
+msgstr "รหัสผ่าน..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PUSHBUTTON.TEXT
 msgid  "Passwo~rd..."
-msgstr ""
+msgstr "รหัสผ่าน..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FIXEDTEXT.TEXT
 msgid  "~Backup file"
-msgstr ""
+msgstr "ไฟล์สำรอง"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PUSHBUTTON.TEXT
 msgid  "..."
-msgstr ""
+msgstr "..."
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FIXEDLINE.TEXT
 msgid  "Database settings"
-msgstr ""
+msgstr "การตั้งค่าฐานข้อมูล"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE"
-msgstr ""
+msgstr "พื้นที่อุปกรณ์ระบบ (SYSDEVSPACE)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FIXEDTEXT.TEXT
 msgid  "TRANSACTI~ONLOG"
-msgstr ""
+msgstr "ปูมธุรกรรม (TRANSACTIONLOG)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FIXEDTEXT.TEXT
 msgid  "DATAD~EVSPACE"
-msgstr ""
+msgstr "พื้นที่อุปกรณ์ข้อมูล (DATADEVSPACE)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FIXEDTEXT.TEXT
 msgid  "Transaction ~file (MB)"
-msgstr ""
+msgstr "ไฟล์ธุึรกรรม (เม็กกะไบต์)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data~base size (MB)"
-msgstr ""
+msgstr "ขนาดที่พักข้อมูล (เม็กกะไบต์)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
-msgstr ""
+msgstr "ขนาดที่พักข้อมูล (เม็กกะไบต์)"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.STRING.TEXT
 msgid  "Backup file information"
-msgstr ""
+msgstr "ข้อมูลไฟล์สำรอง"
 
 #: ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STRING.TEXT
 msgid  "Create New Adabas D Database"
-msgstr ""
+msgstr "สร้างฐานข้อมูล Adabas D ใหม่"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.STRING.TEXT
 msgid  "No entry could be written in the configuration file."
-msgstr ""
+msgstr "ไม่สามารถเขียนลงในไฟล์โครงแบบ (configuration file)"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.STRING.TEXT
 msgid  "An error occurred as the DB files were being created."
-msgstr ""
+msgstr "เกิดความผิดพลาดขึ้นในขณะสร้างไฟล์ DB"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.STRING.TEXT
 msgid  "An error occurred as the system tables were being created."
-msgstr ""
+msgstr "เกิดความผิดพลาดขึ้นในขณะสร้างตารางระบบ"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.STRING.TEXT
 msgid  "The backup file entered does not exist."
-msgstr ""
+msgstr "ไม่มีไฟล์สำรองที่ป้อนเข้ามา"
 
 #: ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.INFOBOX.MESSAGE
 msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
-msgstr ""
+msgstr "ชื่อไฟล์เต็ม (fully qualified file name) จะต้องไม่ยาวเกิน \\'#\\' อักขระ"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.STRING.TEXT
 msgid  "The administrator and the control user cannot have the same name!"
-msgstr ""
+msgstr "ผู้ดูแลระบบกับผู้ใช้ควบคุมจะมีชื่อเดียวกันไม่ได้!"
 
 #: ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.STRING.TEXT
 msgid  "No name has been entered for the $name$ file!"
-msgstr ""
+msgstr "ไม่ได้ป้อนชื่อสำหรับไฟล์ $name$"
 
 #: ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.STRING.TEXT
 msgid  "You have to have administrator rights to create a new database!"
-msgstr ""
+msgstr "ต้องมีสิทธิของผู้ดูแลระบบจึงจะสร้างฐานข้อมูลใหม่ได้"
 
 #: ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.STRING.TEXT
 msgid  "The specified file name or directory does not exist."
-msgstr ""
+msgstr "ชื่อไฟล์หรือไดเร็กทอรีที่ระบุมานั้นไม่ปรากฏ"
 
 #: ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.STRING.TEXT
 msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr ""
+msgstr "ไม่สามารถสร้างฐานข้อมูลใหม่\nโปรดตรวจสอบการติดตั้ง Adabas D โดยเฉพาะตัวแปร \"DBROOT\" กับ \"DBWORK\""
 
 #: ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.STRING.TEXT
 msgid  "Warning!"
-msgstr ""
+msgstr "คำเตือน!"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.STRING.TEXT
 msgid  "Creating database files."
-msgstr ""
+msgstr "กำลังสร้างไฟล์ฐานข้อมูล"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.STRING.TEXT
 msgid  "Creating database configuration file."
-msgstr ""
+msgstr "กำลังสร้างไฟล์โครงแบบของฐานข้อมูล"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.STRING.TEXT
 msgid  "Starting database for the first time."
-msgstr ""
+msgstr "ฐานข้อมูลเริ่มทำงานเป็นครั้งแรก"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.STRING.TEXT
 msgid  "The name entered already exists."
-msgstr ""
+msgstr "ชื่อที่ให้มามีอยู่แล้ว"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.STRING.TEXT
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "ไม่สามารถตั้งชื่อโดยปริยายให้กับไฟล์ฐานข้อมูล ความยาวรวมเกินกว่า 40 ตัวอักษร"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "ไม่สามารถตั้งชื่อโดยปริยายให้กับไฟล์ฐานข้อมูล ไม่สามารถเขียน"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "จำเป็นต้องแปลงฐานข้อมูลปัจจุบัน โปรดป้อนผู้ใช้ควบคุมและรหัสผ่าน"
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.STRING.TEXT
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "ไม่ให้มีช่องว่างในรหัสผ่าน โปรดป้อนรหัสผ่านใหม่"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.MODALDIALOG.TEXT
 msgid  "Database Document Macro Migration"
-msgstr ""
+msgstr "การย้ายแมคโครของเอกสารฐานข้อมูล"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.STRING.TEXT
 msgid  "Prepare"
-msgstr ""
+msgstr "เตรียม"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.STRING.TEXT
 msgid  "Backup Document"
-msgstr ""
+msgstr "เอกสารสำรอง"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.STRING.TEXT
 msgid  "Migrate"
-msgstr ""
+msgstr "ย้าย"
 
 #: ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.STRING.TEXT
 msgid  "Summary"
-msgstr ""
+msgstr "สรุป"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Welcome to the Database Macro Migration Wizard"
-msgstr ""
+msgstr "ยินดีต้อนรับสู่โปรแกรมช่วยในการย้ายแมคโครฐานข้อมูล"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FIXEDTEXT.TEXT
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "โปรแกรมช่วยจะนำทางคุณไปในการย้ายแมคโคร\n\nหลังจากที่ทำเสร็จแล้ว แมคโครทั้งหมดที่ก่อนหน้าที่ฝังอยู่ในฟอร์มและรายงานของเอกสารฐานข้อมูลปัจจุบันจะถูกย้ายไปยังตัวเอกสารเอง ในการนี้ไลบรารีจะถูกเปลี่ยนชื่อตามความจำเป็น\n\nถ้าฟอร์มหรือรายงานมีการอ้างอิงไปยังแมคโครเหล่านี้น จะมีการปรับการอ้างอิงเท่าที่ทำได้\n\nก่อนที่การย้ายจะเริ่มต้นได้ จะต้องปิดฟอร์ม รายงาน คำสั่งถามและตารางทั้งหมดของเอกสารเสียก่อน กด 'Next' เพื่อทำการปิด"
 
 #: ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FIXEDTEXT.TEXT
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "ไม่สามารถปิดวัตถุได้ทั้งหมด โปรดทำการปิดวัตถุเหล่านั้นด้วยมมือแล้วค่อยเรียกโปรแกรมช่วยขึ้นมาใหม่"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Backup your Document"
-msgstr ""
+msgstr "สำรองข้อมูลเอกสาร"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "เพื่อให้คุณยังคงสามารถย้อนกลับไปสถานะก่อนการย้าย จะทำการสำรองเอกสารฐานข้อมูลไปยังตำแหน่งตามที่คุณเลือก โปรแกรมช่วยจะทำการเปลี่ยนแปลงทุกอย่างไปยังเอกสารต้นฉบับ ส่วนเอกสารสำรองจะไม่แตะต้อง"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FIXEDTEXT.TEXT
 msgid  "Save To:"
-msgstr ""
+msgstr "บันทึกไปยัง:"
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PUSHBUTTON.TEXT
 msgid  "Browse ..."
-msgstr ""
+msgstr "เรียกดู..."
 
 #: ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FIXEDTEXT.TEXT
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "กด 'Next' เพื่อบันทึกสำเนาของเอกสารและเริ่มการย้าย"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FIXEDTEXT.TEXT
 msgid  "Migration Progress"
-msgstr ""
+msgstr "ความก้าวหน้าของการย้าย"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FIXEDTEXT.TEXT
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "เอกสารฐานข้อมูลมี $forms$ ฟอร์มและ $reports$ รายงานที่กำลังถูกประมวลผลอยู่ในขณะนี้"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FIXEDTEXT.TEXT
 msgid  "Current object:"
-msgstr ""
+msgstr "วัตถุปัจจุบัน:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Current progress:"
-msgstr ""
+msgstr "ความคืบหน้าปัจจุบัน:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FIXEDTEXT.TEXT
 msgid  "Overall progress:"
-msgstr ""
+msgstr "ความคืบหน้าโดยรวม:"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FIXEDTEXT.TEXT
 msgid  "document $current$ of $overall$"
-msgstr ""
+msgstr "เอกสาร $current$ ของ $overall$"
 
 #: ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FIXEDTEXT.TEXT
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
+msgstr "ประมวลผลฟอร์มและรายงานทั้งหมดได้สำเร็จ กด 'Next' เพื่อแสดงข้อสรุปในรายละเอียด"
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.STRING.TEXT
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "การย้ายสำเร็จ ข้างล่างนี้เป็นปูมบันทึกสิ่งที่ได้ทำต่อเอกสาร"
 
 #: ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.STRING.TEXT
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "การย้ายไม่สำเร็จ ตรวจสอบปูมบันทึกข้างล่างในรายละเอียด"
 
 #: ext/macromigration/macromigration.src#STR_FORM.STRING.TEXT
 msgid  "Form '$name$'"
-msgstr ""
+msgstr "ฟอร์ม '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_REPORT.STRING.TEXT
 msgid  "Report '$name$'"
-msgstr ""
+msgstr "รายงาน '$name$'"
 
 #: ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.STRING.TEXT
 msgid  "Database Document"
-msgstr ""
+msgstr "เอกสารฐานข้อมูล"
 
 #: ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.STRING.TEXT
 msgid  "saved copy to $location$"
-msgstr ""
+msgstr "บันทึกสำเนาไป $location$ แล้ว"
 
 #: ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.STRING.TEXT
 msgid  "migrated $type$ library '$old$' to '$new$'"
-msgstr ""
+msgstr "ย้ายไลบรารี $type$ จาก '$old$' ไป '$new$' แล้ว"
 
 #: ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.STRING.TEXT
 msgid  "$type$ library '$library$'"
-msgstr ""
+msgstr "ไลบรารี $type$ ชื่อ '$library$'"
 
 #: ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.STRING.TEXT
 msgid  "migrating libraries ..."
-msgstr ""
+msgstr "กำลังย้ายไลบรารี..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic"
-msgstr ""
+msgstr "%PRODUCTNAME เบสิก"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
 msgid  "JavaScript"
-msgstr ""
+msgstr "จาวาสคริปต์"
 
 #: ext/macromigration/macromigration.src#STR_BEAN_SHELL.STRING.TEXT
 msgid  "BeanShell"
-msgstr ""
+msgstr "ภาษา BeanShell"
 
 #: ext/macromigration/macromigration.src#STR_JAVA.STRING.TEXT
 msgid  "Java"
-msgstr ""
+msgstr "ภาษาจาวา"
 
 #: ext/macromigration/macromigration.src#STR_PYTHON.STRING.TEXT
 msgid  "Python"
-msgstr ""
+msgstr "ไพธอน"
 
 #: ext/macromigration/macromigration.src#STR_DIALOG.STRING.TEXT
 msgid  "dialog"
-msgstr ""
+msgstr "กล่องโต้ตอบ"
 
 #: ext/macromigration/macromigration.src#STR_ERRORS.STRING.TEXT
 msgid  "Error(s)"
-msgstr ""
+msgstr "ข้อผิดพลาด"
 
 #: ext/macromigration/macromigration.src#STR_WARNINGS.STRING.TEXT
 msgid  "Warnings"
-msgstr ""
+msgstr "คำเตือน"
 
 #: ext/macromigration/macromigration.src#STR_EXCEPTION.STRING.TEXT
 msgid  "caught exception: "
-msgstr ""
+msgstr "ความผิดปกติที่จับได้:"
 
 #: ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ERRORBOX.MESSAGE
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "ตำแหน่งสำรองจะต้องเป็นคนละที่กับตำแหน่งที่เก็บเอกสาร"
 
 #: ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.STRING.TEXT
 msgid  "Invalid number of initialization arguments. Expected 1."
-msgstr ""
+msgstr "จำนวนอาร์กิวเมนต์สำหรับการเตรียมเริ่มต้นไม่ถูกต้อง ควรมี 1 อาร์กิวเมนต์"
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
 msgid  "No database document found in the initialization arguments."
-msgstr ""
+msgstr "ไม่พบเอกสารฐานข้อมูลในอาร์กิวเมนต์การเตรียมเริ่มต้น"
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
 msgid  "Not applicable to read-only documents."
-msgstr ""
+msgstr "ไม่มีเอกสารอ่านอย่างเดียวที่นำมาใช้ได้"
 
 #: sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.STRING.TEXT
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Table"
-
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
-msgid  "Query"
-msgstr "Query"
-
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "การเชื่อมต่อที่ให้มาไม่ใช่แหล่งข้อมูลสำหรับคำสั่งถามและ/หรือตารางที่ถูกต้อง"
 
 #: sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.STRING.TEXT
 msgid  "The given object is no table object."
-msgstr ""
+msgstr "วัตถุที่ให้มาไม่ใช่วัตถุตาราง"
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.STRING.TEXT
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "ชนิดขององค์ประกอบ (composition) ไม่ถูกต้อง - ต้องเป็นค่าจาก com.sun.star.sdb.tools.CompositionType"
 
 #: sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.STRING.TEXT
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "ชนิดของคำสั่งไม่ถูกต้อง - เฉพาะตารางและคำสั่งถามจาก com.sun.star.sdb.CommandType เท่านั้นที่อนุญาต"
 
 #: ui/app/app.src#RID_STR_NEW_FORM.STRING.TEXT
 msgid  "Create Form in Design View..."
 msgstr "สร้างฟอร์มในมุมมองการออกแบบ..."
-
-#: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Form..."
-msgstr "ใช้ตัวช่วยสร้างในการสร้างฟอร์ม..."
 
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
@@ -675,25 +659,9 @@ msgstr "สร้างข้อคำถามในมุมมองการ
 msgid  "Create Query in SQL View..."
 msgstr "สร้างข้อคำถามในมุมมอง SQL... "
 
-#: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Query..."
-msgstr "ใช้ตัวช่วยสร้างในการสร้างข้อคำถาม..."
-
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
 msgstr "สร้างตารางในมุมมองการออกแบบ..."
-
-#: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Table..."
-msgstr "ใช้ตัวช่วยสร้างในการสร้างตาราง... "
-
-#: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
-msgid  "Create View..."
-msgstr "สร้างมุมมอง..."
-
-#: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
-msgid  "Forms"
-msgstr "ฟอร์ม"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
@@ -719,14 +687,6 @@ msgstr "วางแบบพิเศษ..."
 msgid  "Delete"
 msgstr "ลบ"
 
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "เปลี่ยนชื่อ"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
-msgid  "Edit"
-msgstr "แก้ไข"
-
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
 msgstr "แก้ไขในมุมมอง SQL..."
@@ -734,10 +694,6 @@ msgstr "แก้ไขในมุมมอง SQL..."
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
 msgstr "เปิด"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
-msgid  "Create as View"
-msgstr "สร้างเป็นมุมมอง"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
@@ -757,19 +713,16 @@ msgid  "~Database"
 msgstr "~ฐานข้อมูล"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.MENUITEM.TEXT
-#, fuzzy
 msgid  "Properties..."
-msgstr "คุณสมบัติ"
+msgstr "คุณสมบัติ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.MENUITEM.TEXT
-#, fuzzy
 msgid  "Connection Type..."
-msgstr "ประเภทการเชื่อมต่อ"
+msgstr "ประเภทการเชื่อมต่อ..."
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.MENUITEM.TEXT
-#, fuzzy
 msgid  "Advanced Settings..."
-msgstr "การตั้งค่าระดับสูง"
+msgstr "การตั้งค่าระดับสูง..."
 
 #: ui/app/app.src#STR_QUERY_DELETE_DATASOURCE.STRING.TEXT
 #, fuzzy
@@ -831,20 +784,10 @@ msgstr "เลือกจากการเลือกของตัวอย
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
 msgstr "สร้างมุมมองโดยเจาะจงชื่อตารางและชื่อเขตข้อมูลที่คุณต้องการจะมองเห็น"
 
-#: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
-#, fuzzy
-msgid  "Opens the view wizard"
-msgstr "เปิดตัวช่วยสร้างมุมมอง"
-
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 #, fuzzy
 msgid  "Database"
 msgstr "ฐานข้อมูล"
-
-#: ui/app/app.src#STR_TASKS.STRING.TEXT
-#, fuzzy
-msgid  "Tasks"
-msgstr "งาน"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 #, fuzzy
@@ -861,25 +804,13 @@ msgstr "ตัวอย่าง"
 msgid  "Disable Preview"
 msgstr "ไม่สามารถใช้งานการแสดงตัวอย่าง"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "None"
-msgstr "ไม่มี"
+#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The database has been modified.\nDo you want to save the changes?"
+msgstr "ฐานข้อมูลถูกแก้ไข \nคุณต้องการบันทึกการเปลี่ยนแปลงหรือไม่ ?"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "Document Information"
-msgstr "ข้อมูลของเอกสาร"
-
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "เอกสาร"
-
-#: ui/app/app.src#RID_STR_FORM.STRING.TEXT
-#, fuzzy
-msgid  "Form"
-msgstr "ฟอร์ม"
+#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
+msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
+msgstr "รูปแบบการเชื่อมต่อเกิดการเปลี่ยนแปลงขึ้น \nเพื่อที่จะให้มีผลต่อการเปลี่ยนแปลง จะต้องปิดฟอร์ม, รายงาน, ข้อคำถาม และตารางทั้งหมด \n\nคุณต้องการปิดเอกสารทั้งหมดขณะนี้หรือไม่ ?"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 #, fuzzy
@@ -918,16 +849,15 @@ msgstr "ฐานข้อมูลฝังตัว"
 
 #: ui/app/app.src#RID_STR_NO_DIFF_CAT.STRING.TEXT
 msgid  "You cannot select different categories."
-msgstr ""
+msgstr "คุณไม่สามารถเลือกประเภทที่แตกต่าง"
 
 #: ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.STRING.TEXT
 msgid  "Unsupported object type found ($type$)."
-msgstr ""
+msgstr "พบวัตถุชนิดที่ไม่สนับสนุน ($type$)"
 
-#: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Table #"
-msgstr "ตาราง #"
+#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The current record has been changed.\nDo you want to save the changes?"
+msgstr "ระเบียนปัจจุบันมีการเปลี่ยนแปลง\nคุณต้องการบันทึกการเปลี่ยนแปลงหรือไม่ ?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 #, fuzzy
@@ -953,16 +883,6 @@ msgstr "เกิดข้อผิดพลาดขณะตั้งค่า
 #, fuzzy
 msgid  "Connection lost"
 msgstr "การเชื่อมต่อขาดหาย"
-
-#: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid  "Queries"
-msgstr "การค้นหา"
-
-#: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid  "Tables"
-msgstr "ตาราง"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 #, fuzzy
@@ -1034,11 +954,6 @@ msgstr "ไม่พบรูปแบบตาราง"
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "ไม่ได้มีการสร้างการเชื่อมต่อไปยังฐานข้อมูล \"$name$\" "
 
-#: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rebuild"
-msgstr "สร้างใหม่"
-
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 #, fuzzy
 msgid  "Column ~Format..."
@@ -1054,35 +969,10 @@ msgstr "คัดลอก~คำอธิบายคอลัมน์"
 msgid  "Table Format..."
 msgstr "รูปแบบตาราง..."
 
-#: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Row Height..."
-msgstr "ความสูงของแถว..."
-
-#: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
-#, fuzzy
-msgid  "Undo: Data Input"
-msgstr "เรียกคืน: การนำข้อมูลเข้า"
-
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 #, fuzzy
 msgid  "Save current record"
 msgstr "บันทึกระเบียนปัจจุบัน"
-
-#: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Query #"
-msgstr "ข้อคำถาม #"
-
-#: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Table #"
-msgstr "ตาราง #"
-
-#: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "View #"
-msgstr "มุมมอง #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 #, fuzzy
@@ -1109,105 +999,15 @@ msgstr "มุมมองตารางแหล่งข้อมูล"
 msgid  "Shows the selected table or query."
 msgstr "แสดงตารางของข้อคำถามที่เลือก"
 
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Table name"
-msgstr "ชื่อตาราง"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
-#, fuzzy
-msgid  "Insert data"
-msgstr "แทรกข้อมูล"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
-#, fuzzy
-msgid  "Delete data"
-msgstr "ลบข้อมูล"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
-#, fuzzy
-msgid  "Modify data"
-msgstr "แก้ไขข้อมูล"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
-#, fuzzy
-msgid  "Alter structure"
-msgstr "เปลี่ยนโครงสร้าง"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
-#, fuzzy
-msgid  "Read data"
-msgstr "อ่านข้อมูล"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
-#, fuzzy
-msgid  "Modify references"
-msgstr "แก้ไขการอ้างอิง"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
-#, fuzzy
-msgid  "Drop structure"
-msgstr "ปล่อยโครงสร้าง"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
-#, fuzzy
-msgid  "Sort Ascending"
-msgstr "เรียงจากน้อยไปมาก"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
-#, fuzzy
-msgid  "Sort Descending"
-msgstr "เรียงจากมากไปน้อย"
-
-#: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
-#, fuzzy
-msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr "ไม่สามารถเชื่อมต่อกับตัวจัดการไดร์ฟเวอร์ SDBC  (#servicename#) ได้"
-
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 #, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "ไดร์ฟเวอร์ไม่ได้ลงทะเบียน URL #connurl#"
 
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
-#, fuzzy
-msgid  "No connection could be established for the URL #connurl#."
-msgstr "ไม่สามารถเชื่อมต่อ URL #connurl# ได้"
-
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
-#, fuzzy
-msgid  "Please check the current settings, for example user name and password."
-msgstr "กรุณาตรวจสอบการตั้งค่าปัจจุบัน เช่น ชื่อผู้ใช้และรหัสผ่าน"
-
-#: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
-#, fuzzy
-msgid  "Successfully connected, but information about database tables is not available."
-msgstr "เชื่อมต่อสำเร็จ แต่เรียกใช้ข้อมูลเกี่ยวกับตารางฐานข้อมูลไม่ได้"
-
-#: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
-#, fuzzy
-msgid  "All tables"
-msgstr "ตารางทั้งหมด"
-
-#: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
-#, fuzzy
-msgid  "All views"
-msgstr "มุมมองทั้งหมด"
-
-#: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
-#, fuzzy
-msgid  "All tables and views"
-msgstr "ตารางและมุมมองทั้งหมด"
-
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 #, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "แก้ไขคำสั่ง SQL "
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Database files"
-msgstr "แฟ้มฐานข้อมูล"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1224,60 +1024,10 @@ msgstr "~TRANSACTIONLOG:"
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Database sizes"
-msgstr "ขนาดฐานข้อมูล"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "S~ize (MB):"
-msgstr "ข~นาด (เมกะไบต์):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Free memory space (MB):"
-msgstr "หน่วยความจำ~ที่เหลือ (เมกะไบต์):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Memory utilization (in %):"
-msgstr "การใช้~หน่วยความจำ (ใน %):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Database Statistics"
-msgstr "สถิติของฐานข้อมูล"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
-#, fuzzy
-msgid  "Contains the system tables"
-msgstr "มีตารางระบบ"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
-#, fuzzy
-msgid  "Contains information about transaction"
-msgstr "มีข้อมูลเกี่ยวกับรายการเปลี่ยนแปลง"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
-#, fuzzy
-msgid  "Contains all data files"
-msgstr "มีแฟ้มข้อมูลทั้งหมด"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
-#, fuzzy
-msgid  "Total size of the database files"
-msgstr "ขนาดทั้งหมดของแฟ้มฐานข้อมูล"
-
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 #, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "เนื้อที่ว่างปัจจุบันก่อนที่จะสร้างแฟ้ม datadev "
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
-#, fuzzy
-msgid  "Currently used memory"
-msgstr "หน่วยความจำปัจจุบันที่ใช้ไปแล้ว"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 #, fuzzy
@@ -1286,67 +1036,27 @@ msgstr "ไม่สามารถแสดงผลข้อมูลได้
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FIXEDTEXT.TEXT
 msgid  "~Database name"
-msgstr ""
+msgstr "ชื่อฐานข้อมูล"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RADIOBUTTON.TEXT
 msgid  "Se~rver / Port"
-msgstr ""
+msgstr "เซิร์ฟเวอร์ / พอร์ต"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FIXEDTEXT.TEXT
 msgid  "~Server"
-msgstr ""
+msgstr "เซิร์ฟเวอร์"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FIXEDTEXT.TEXT
 msgid  "~Port"
-msgstr ""
-
-#: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Default: 3306"
-msgstr "ค่าปริยาย: 3306"
+msgstr "พอร์ต"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
-msgstr ""
+msgstr "ซ็อกเก็ต"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
 msgid  "Named p~ipe"
-msgstr ""
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Tables"
-msgstr "Tables"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Queries"
-msgstr "Queries"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Add"
-msgstr "เ~พิ่ม"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~ปิด"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
-#, fuzzy
-msgid  "Add Tables"
-msgstr "Add Tables"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
-#, fuzzy
-msgid  "Add Table or Query"
-msgstr "Add Table or Query"
-
-#: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "ตัวเลือก"
+msgstr "Named pipe"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 #, fuzzy
@@ -1357,11 +1067,6 @@ msgstr "ใช้ข้อจำกัดการตั้งชื่อ SQL92
 #, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "เพิ่มตารางนามแฝงบนคำสั่ง SELECT"
-
-#: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Use keyword AS before table alias names"
-msgstr "Use keyword AS before table alias names"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 #, fuzzy
@@ -1377,11 +1082,6 @@ msgstr "ไม่สนใจสิทธิพิเศษจากไดร์
 #, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Replace named parameters with '?'"
-
-#: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Display version columns (when available)"
-msgstr "แสดงคอลัมน์ของรุ่น (เมื่อใช้ได้)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 #, fuzzy
@@ -1405,48 +1105,43 @@ msgstr "สิ้นสุดบรรทัดข้อความด้วย
 
 #: ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CHECKBOX.TEXT
 msgid  "Ignore currency field information"
-msgstr ""
+msgstr "ไม่สนใจข้อมูลในเขตข้อมูลสกุลเงิน"
 
 #: ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CHECKBOX.TEXT
 msgid  "Form data input checks for required fields"
-msgstr ""
+msgstr "ข้อมูลที่ป้อนเข้าจากฟอร์มตรวจหาเขตข้อมูลที่จำเป็นต้องป้อน"
 
 #: ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CHECKBOX.TEXT
 msgid  "Use ODBC conformant date/time literals"
-msgstr ""
+msgstr "ใช้รูปแบบอักษร (literal) ของวันที่/เวลา ที่สอดคล้องกับ ODBC"
 
 #: ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CHECKBOX.TEXT
 msgid  "Supports primary keys"
-msgstr ""
+msgstr "สนับสนุนคีย์หลัก"
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
 msgid  "Respect the result set type from the database driver"
-msgstr ""
+msgstr "เคารพชนิดของเซ็ตผลลัพธ์จากไดรเวอร์ฐานข้อมูล"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Default"
-msgstr ""
+msgstr "ค่้าโดยปริยาย"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "Mixed"
-msgstr ""
+msgstr "ผสม"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 msgid  "MS Access"
-msgstr ""
-
-#: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comparison of Boolean values"
-msgstr "การเปรียบเทียบของค่า Boolean"
+msgstr "ไมโครซอฟต์แอ็กเซส"
 
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
-msgstr ""
+msgstr "จำนวนแถวที่จะกราดตรวจหาชนิดของคอลัมน์"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
 #, fuzzy
@@ -1463,16 +1158,6 @@ msgstr "Re~trieve generated values"
 msgid  "~Auto-increment statement"
 msgstr "~คำสั่งการเพิ่มค่าโดยอัตโนมัติ"
 
-#: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Query of generated values"
-msgstr "~ข้อคำถามของค่าที่สร้างขึ้น"
-
-#: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "Generated Values"
-msgstr "Generated Values"
-
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 #, fuzzy
 msgid  "Special Settings"
@@ -1480,27 +1165,7 @@ msgstr "การตั้งค่าพิเศษ"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
-msgstr ""
-
-#: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Path to the dBASE files"
-msgstr "พาธไปยังแฟ้ม dBASE "
-
-#: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Path to the text files"
-msgstr "พาธไปยังแฟ้มข้อความ"
-
-#: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Path to the spreadsheet document"
-msgstr "พาธไปยังเอกสารตารางคำนวณ"
-
-#: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
-#, fuzzy
-msgid  "Name of the ODBC data source on your system"
-msgstr "ชื่อของแหล่งข้อมูล ODBC บนระบบของคุณ"
+msgstr "การตั้งค่าขั้นสูง"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 #, fuzzy
@@ -1516,11 +1181,6 @@ msgstr "ชื่อของฐานข้อมูลออราเคิล
 #, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "ชื่อของฐานข้อมูล Adabas D"
-
-#: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Microsoft Access database file"
-msgstr "แฟ้มฐานข้อมูล Microsoft Access"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 #, fuzzy
@@ -1542,11 +1202,6 @@ msgstr "~ชื่อโฮสต์"
 msgid  "~Mozilla profile name"
 msgstr "~Mozilla profile name"
 
-#: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
-#, fuzzy
-msgid  "~Thunderbird profile name"
-msgstr "~Thunderbird profile name"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Browse"
@@ -1554,21 +1209,11 @@ msgstr "เรียกดู"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTODATABASENAME.FIXEDTEXT.TEXT
 msgid  "Database name"
-msgstr ""
+msgstr "ชื่อฐานข้อมูล"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 msgid  "Server"
-msgstr ""
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Base ~DN"
-msgstr "Base ~DN"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Port number"
-msgstr "~หมายเลขพอร์ต"
+msgstr "เซิร์ฟเวอร์"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 #, fuzzy
@@ -1585,20 +1230,10 @@ msgstr "ชุด~อักขระ"
 msgid  "Specify the type of files you want to access"
 msgstr "กำหนดชนิดของแฟ้มที่คุณต้องการที่จะเข้าถึง"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Plain text files (*.txt)"
-msgstr "แฟ้มข้อความธรรมดา (*.txt)"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "'Comma separated value' files (*.csv)"
 msgstr "'จุลภาคใช้ในการแบ่งแยกค่า' แฟ้ม(*.cvs)"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Custom:"
-msgstr "กำหนดเอง:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1630,15 +1265,9 @@ msgstr "ตัวแยกทศนิยม"
 msgid  "Thousands separator"
 msgstr "ตัวแยกจำนวนพัน"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Text contains headers"
-msgstr "~ข้อความมีส่วนหัว"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
-#, fuzzy
-msgid  "{None}"
-msgstr "{ไม่มี}"
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
+msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 #, fuzzy
@@ -1661,88 +1290,31 @@ msgid  "JDBC d~river class"
 msgstr "JDBC d~river class"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "Test class"
-msgstr "ชั้นทดสอบ"
+msgstr "ชั้นการทดสอบ"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
 msgid  "Socket"
-msgstr ""
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Save"
-msgstr "บันทึก"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Create New Directory"
-msgstr "สร้างไดเรกทอรีใหม่"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Up One Level"
-msgstr "ขึ้นหนึ่งระดับ"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "File ~name:"
-msgstr "~ชื่อแฟ้ม:"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
-#, fuzzy
-msgid  "~Path:"
-msgstr "~พาธ:"
-
-#: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
-#, fuzzy
-msgid  "Folder"
-msgstr "โฟลเดอร์"
+msgstr "ซ็อกเก็ต"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 #, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "แฟ้มนี้มีอยู่แล้ว ต้องการเขียนทับหรือไม่ ?"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "ทั่วไป"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Host name"
 msgstr "~ชื่อโฮสต์"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User authentication"
-msgstr "การตรวจสอบสิทธิผู้ใช้"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~User name"
-msgstr "ชื่อ~ผู้ใช้"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Password required"
-msgstr "ต้องการรหัสผ่าน"
+msgstr "ชื่อผู้ใช้"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "JDBC properties"
 msgstr "คุณสมบัติ JDBC"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~JDBC driver class"
-msgstr "~JDBC driver class"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Test Class"
-msgstr "Test Class"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1786,7 +1358,7 @@ msgstr "แฟ้ม MS Access"
 
 #: ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.STRING.TEXT
 msgid  "MS Access 2007 file"
-msgstr ""
+msgstr "ไฟล์ไมโครซอฟต์แอ็กเซส 2007"
 
 #: ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.STRING.TEXT
 #, fuzzy
@@ -1803,25 +1375,10 @@ msgstr "ไม่มีไดเรกทอรี\n\n$path$\n\nอยู่ ค
 msgid  "The directory $name$ could not be created."
 msgstr "ไม่สามารถสร้างไดเรกทอรี $name$ ได้"
 
-#: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Convert Database"
-msgstr "แปลงฐานข้อมูล"
-
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Please enter the ~password for the user 'DOMAIN'."
 msgstr "กรุณาใส่~รหัสผ่าน สำหรับผู้ใช้ 'DOMAIN'"
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
-#, fuzzy
-msgid  "Tables Filter"
-msgstr "ตัวกรองตาราง"
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Tables and table filter"
-msgstr "ตารางและตัวกรองตาราง"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1832,11 +1389,6 @@ msgstr "ทำเครื่องหมายตารางที่ควร
 #, fuzzy
 msgid  "Database Wizard"
 msgstr "ตัวช่วยสร้างฐานข้อมูล"
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Select database"
-msgstr "เลือกฐานข้อมูล"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 #, fuzzy
@@ -1900,17 +1452,7 @@ msgstr "ตั้งค่าการตรวจสอบสิทธิผู
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.STRING.TEXT
 msgid  "Set up MySQL server data"
-msgstr ""
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
-#, fuzzy
-msgid  "Save and proceed"
-msgstr "บันทึกและทำต่อไป"
-
-#: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
-#, fuzzy
-msgid  "New Database"
-msgstr "ฐานข้อมูลใหม่"
+msgstr "จัดตั้งข้อมูลเซิร์ฟเวอร์ MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1939,7 +1481,7 @@ msgstr "เชื่อมต่อโดยใช้ JDBC (Java Database Connec
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.RADIOBUTTON.TEXT
 msgid  "Connect directly"
-msgstr ""
+msgstr "เชื่อมต่อโดยตรง"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1951,11 +1493,6 @@ msgstr "ตั้งค่าการตรวจสอบสิทธิผู
 msgid  "Some databases require you to enter a user name."
 msgstr "บางฐานข้อมูลต้องการให้คุณใส่ชื่อผู้ใช้"
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~User name"
-msgstr "~ชื่อผู้ใช้"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Password re~quired"
@@ -1965,11 +1502,6 @@ msgstr "ต้องการร~หัสผ่าน"
 #, fuzzy
 msgid  "~Test Connection"
 msgstr "~ทดสอบการเชื่อมต่อ"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Decide how to proceed after saving the database"
-msgstr "ตัดสินใจดำเนินการต่อไปอย่างไร หลังจากการบันทึกฐานข้อมูล"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1985,11 +1517,6 @@ msgstr "~ใช่ ลงทะเบียนฐานข้อมูลสำ�
 #, fuzzy
 msgid  "N~o, do not register the database"
 msgstr "ไ~ม่, ไม่ต้องลงทะเบียนฐานข้อมูล"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "After the database file has been saved, what do you want to do?"
-msgstr "~หลังจากที่แฟ้มฐานข้อมูลได้มีการบันทึกเรียบร้อยแล้ว คุณต้องการที่จะทำอะไร?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 #, fuzzy
@@ -2016,11 +1543,6 @@ msgstr "ตั้งค่าการเชื่อมต่อไปยัง
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "กรุณาใส่ข้อมูลที่ต้องการติดต่อไปยังฐานข้อมูล MySQL ที่กำลังใช้ JDBC หมายเหตุ JDBC driver class ต้องถูกติดตั้งบนระบบของคุณ และลงทะเบียนด้วย %PRODUCTNAME \nกรุณาติดต่อผู้ดูแลระบบของคุณ ถ้าคุณไม่แน่ใจเกี่ยวกับการตั้งค่าต่อไปนี้"
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
-#, fuzzy
-msgid  "MySQL JDBC d~river class:"
-msgstr "MySQL JDBC d~river class:"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 #, fuzzy
 msgid  "Default: 3306"
@@ -2033,7 +1555,7 @@ msgstr "ตั้งค่าการเชื่อมต่อไปยัง
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "โปรดป้อนข้อมูลที่ต้องใช้ในการเชื่อมต่อไปยังฐานข้อมูล MySQL"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.STRING.TEXT
 #, fuzzy
@@ -2050,20 +1572,10 @@ msgstr "เลือกโฟลเดอร์ที่จะทำการเ
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
 msgstr "เลือกโฟลเดอร์ที่เก็บแฟ้มข้อความ CSV (Comma Separated Values) %PRODUCTNAME Base จะเปิดแฟ้มเหล่านี้ในโหมดอ่านอย่างเดียว"
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Path to text files"
-msgstr "พาธไปยังแฟ้มข้อความ"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 #, fuzzy
 msgid  "Set up a connection to a Microsoft Access database"
 msgstr "ตั้งค่าการเชื่อมต่อไปยังฐานข้อมูล Microsoft Access"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
-#, fuzzy
-msgid  "Please select the Microsoft Access file you want to access."
-msgstr "กรุณาเลือกแฟ้ม Microsoft Access ที่คุณต้องการเข้าถึง"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2074,11 +1586,6 @@ msgstr "ตั้งค่าการเชื่อมต่อไปยัง
 #, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "กรุณาใส่ข้อมูลที่ต้องการเพื่อการเชื่อมต่อไปยังไดเรกทอรี LDAP \nกรุณาติดต่อผู้ดูแลระบบของคุณ ถ้าคุณไม่แน่ใจเกี่ยวกับการตั้งค่าต่อไปนี้"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "Default: 389"
-msgstr "ค่าปริยาย: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 #, fuzzy
@@ -2130,16 +1637,6 @@ msgstr "กรุณาใส่ข้อมูลที่ต้องการ
 msgid  "Set up a connection to an Oracle database"
 msgstr "ตั้งค่าการติดต่อไปยังฐานข้อมูล Oracle"
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "Default: 1521"
-msgstr "ค่าปริยาย: 1521"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
-#, fuzzy
-msgid  "Oracle JDBC ~driver class"
-msgstr "Oracle JDBC ~driver class"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 #, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
@@ -2165,11 +1662,6 @@ msgstr "~ที่อยู่และชื่อแฟ้ม"
 msgid  "~Password required"
 msgstr "~ต้องการรหัสผ่าน"
 
-#: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Use catalog for file-based databases"
-msgstr "Use catalog for file-based databases"
-
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Connection Settings"
@@ -2181,7 +1673,6 @@ msgid  "~Host name"
 msgstr "~ชื่อโฮสต์"
 
 #: ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Port number"
 msgstr "หมายเลข~พอร์ต"
 
@@ -2200,11 +1691,6 @@ msgstr "การตั้งค่าเพิ่มเติม"
 msgid  "Connection settings"
 msgstr "การตั้งค่าการเชื่อมต่อ"
 
-#: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
-#, fuzzy
-msgid  "Database properties"
-msgstr "คุณสมบัติฐานข้อมูล"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
@@ -2215,60 +1701,15 @@ msgstr "ยินดีต้อนรับสู่ ตัวช่วยส�
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
 msgstr "คุณสามารถทำได้ทั้งการสร้างฐานข้อมูลใหม่ หรือติดตั้งการเชื่อมต่อไปยังฐานข้อมูลที่มีอยู่ ทั้งสองกรณีนั้นจะมีการสร้างแฟ้ม แฟ้มนี้จะเก็บข้อมูลเช่น การตั้งค่าการเชื่อมต่อ, ฟอร์ม และรายงาน"
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "What do you want to do?"
-msgstr "คุณต้องการที่จะทำอะไร ?"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Create a n~ew database"
-msgstr "สร้างฐานข้อมูลใ~หม่"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Open an existing database ~file"
-msgstr "Open an existing database ~file"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Recently used"
-msgstr "Recently used"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Connect to an e~xisting database"
-msgstr "เชื่อมต่อไปยังฐานข้อมูลที่มีอยู่"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Select the type of database to which you want to establish a connection."
 msgstr "เลือกชนิดของฐานข้อมูลที่คุณต้องการสร้างการเชื่อมต่อ"
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Database ~type "
-msgstr "~ชนิดของฐานข้อมูล "
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Database"
-msgstr "ฐานข้อมูล"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
 msgstr "หน้าต่อไปนี้ คุณสามารถสร้างรายละเอียดการตั้งค่าในการเชื่อมต่อได้\n\nการตั้งค่าใหม่คุณจะทำการเขียนทับการตั้งค่าที่มีอยู่"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
-#, fuzzy
-msgid  "MySQL"
-msgstr "MySQL"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
-#, fuzzy
-msgid  "Data Source Properties: #"
-msgstr "คุณสมบัติแหล่งข้อมูล: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 #, fuzzy
@@ -2279,11 +1720,6 @@ msgstr "ไม่สามารถโหลดชุดคำสั่งโป
 #, fuzzy
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
 msgstr "ไม่สนับสนุนชนิดแหล่งข้อมูลนี้บนแพลตฟอร์มนี้\nอนุญาตให้คุณเปลี่ยนแปลงการตั้งค่า  แต่คุณอาจจะไม่สามารถเชื่อมต่อกับฐานข้อมูลได้"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "ทั่วไป"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 #, fuzzy
@@ -2310,80 +1746,18 @@ msgstr "ดัชนี..."
 msgid  "Optional Settings"
 msgstr "การตั้งค่าตัวเลือก"
 
-#: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "ODBC ~options"
-msgstr "~ตัวเลือก ODBC"
-
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Data ~buffer size (MB)"
-msgstr "Data ~buffer size (MB)"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Data increment (MB)"
-msgstr "~ข้อมูลที่เพิ่มขึ้น (เมกะไบต์)"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Administration"
-msgstr "การจัดการระบบ"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Control ~user name"
-msgstr "Control ~user name"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Control ~password"
-msgstr "Control ~password"
+msgstr "ขนาดที่พักข้อมูล (เม็กกะไบต์)"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Shut down service when closing %PRODUCTNAME"
 msgstr "~จบการทำงานของบริการนี้ขณะกำลังปิด %PRODUCTNAME"
 
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "E~xtended..."
-msgstr "ข~ยาย..."
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "MySQL JDBC d~river class"
-msgstr "MySQL JDBC d~river class"
-
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "Test class"
 msgstr "Test class"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User authentication"
-msgstr "การตรวจสอบสิทธิผู้ใช้"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~User name"
-msgstr "~ชื่อผู้ใช้"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Password required"
-msgstr "ต้องการรหัสผ่าน"
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Oracle JDBC d~river class"
-msgstr "Oracle JDBC d~river class"
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Base DN"
-msgstr "~Base DN"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 #, fuzzy
@@ -2407,62 +1781,12 @@ msgstr "~การตั้งค่าไดรเวอร์"
 
 #: ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.STRING.TEXT
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Indexes"
-msgstr "ดัชนี"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Table"
-msgstr "~ตาราง"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Assignment"
-msgstr "การมอบหมาย"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "T~able indexes"
-msgstr "ดัชนี~ตาราง:"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Free indexes"
-msgstr "~ดัชนีอิสระ:"
+msgstr "โปรดเลือก 'เชื่อมต่อไปยังฐานข้อมูลที่มีอยู่' เพื่อเชื่อมต่อไปยังฐานข้อมูลที่มีอยู่แทน"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "SQL command"
 msgstr "คำสั่ง SQL "
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Command to execute"
-msgstr "คำสั่งในการปฏิบัติการ"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Execute"
-msgstr "ปฏิบัติ"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Previous commands"
-msgstr "คำสั่งก่อนหน้า"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Status"
-msgstr "สถานะ"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "ปิด"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2484,205 +1808,40 @@ msgstr "การเชื่อมต่อกับฐานข้อมูล
 msgid  "Field Format"
 msgstr "รูปแบบเขตข้อมูล"
 
-#: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Bac~k"
-msgstr "~ย้อนกลับ"
-
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 #, fuzzy
 msgid  "Font"
 msgstr "แบบอักษร"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "Format"
-msgstr "รูปแบบ"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "การจัดตำแหน่ง"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 #, fuzzy
 msgid  "Table Format"
 msgstr "รูปแบบตาราง"
 
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Save As"
-msgstr "บันทึกเป็น"
-
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Please enter a name for the object to be created:"
 msgstr "กรุณาใส่ชื่อให้กับวัตถุที่สร้างขึ้น:"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Catalog"
-msgstr "~รายการ"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Schema"
-msgstr "~Schema"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "~Table Name"
-msgstr "ชื่อ~ตาราง"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "~Name of table view"
-msgstr "~Name of table view\\"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "~Query name"
-msgstr "~ชื่อข้อคำถาม"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename to"
-msgstr "เปลี่ยนชื่อเป็น"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 #, fuzzy
 msgid  "Insert as"
 msgstr "แทรกเป็น"
 
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Height"
-msgstr "ความ~สูง"
-
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "~อัตโนมัติ"
-
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Row Height"
-msgstr "ความสูงของแถว"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Width"
-msgstr "ความ~กว้าง"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Column Width"
-msgstr "ความกว้างของคอลัมน์"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Data Source"
-msgstr "แหล่งข้อมูล"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Choose a data source:"
-msgstr "เลือกแหล่งข้อมูล:"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Organize..."
-msgstr "จัดการ..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Create..."
 msgstr "สร้าง..."
 
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
-#, fuzzy
-msgid  "Local Databases"
-msgstr "ฐานข้อมูลในเครื่อง"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
-#, fuzzy
-msgid  "Choose a database"
-msgstr "เลือกฐานข้อมูล"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Indexes"
-msgstr "ดัชนี"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "New Index"
-msgstr "ดัชนีใหม่"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Delete Current Index"
-msgstr "ลบดัชนีปัจจุบัน"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Rename Current Index"
-msgstr "เปลี่ยนชื่อดัชนีปัจจุบัน"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Save Current Index"
-msgstr "บันทึกดัชนีปัจจุบัน"
-
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Reset Current Index"
 msgstr "ตั้งค่าดัชนีปัจจุบันอีกครั้ง"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Index details"
-msgstr "รายละเอียดดัชนี"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Index identifier:"
-msgstr "ตัวระบุดัชนี:"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Unique"
-msgstr "ไ~ม่ซ้ำ"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Fields"
-msgstr "เขตข้อมูล"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~ปิด"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
-#, fuzzy
-msgid  "Sort order"
-msgstr "เรียงลำดับ"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
-#, fuzzy
-msgid  "Index field"
-msgstr "เขตข้อมูลดัชนี"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
-#, fuzzy
-msgid  "Ascending"
-msgstr "จากน้อยไปมาก"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
-#, fuzzy
-msgid  "Descending"
-msgstr "จากมากไปน้อย"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 #, fuzzy
@@ -2694,11 +1853,6 @@ msgstr "คุณต้องการลบดัชนี '$name$' จริ�
 msgid  "index"
 msgstr "ดัชนี"
 
-#: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
-#, fuzzy
-msgid  "Save Index"
-msgstr "บันทึกดัชนี!"
-
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "The index must contain at least one field."
@@ -2708,11 +1862,6 @@ msgstr "ดัชนีต้องมีอย่างน้อยหนึ่
 #, fuzzy
 msgid  "Exit Index Design"
 msgstr "ออกจากการออกแบบดัชนี"
-
-#: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Do you want to save the changes made to the current index?"
-msgstr "คุณต้องการบันทึกการเปลี่ยนแปลงที่ทำกับดัชนีปัจจุบันหรือไม่ ?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 #, fuzzy
@@ -2729,16 +1878,6 @@ msgstr "ในคำจำกัดความของดัชนี ไม�
 msgid  "~Parameters"
 msgstr "~พารามิเตอร์"
 
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Value"
-msgstr "~ค่า"
-
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Next"
-msgstr "~ถัดไป"
-
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 #, fuzzy
 msgid  "Parameter Input"
@@ -2749,45 +1888,18 @@ msgstr "ใส่พารามิเตอร์"
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
 msgstr "ไม่สามารถแปลงรายการเป็นค่าที่ถูกต้องสำหรับคอลัมน์ \"$name$\"ได้"
 
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Standard Filter"
-msgstr "ตัวกรองมาตรฐาน"
-
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "AND"
 msgstr "และ"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "OR"
 msgstr "หรือ"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Field name"
-msgstr "ชื่อเขตข้อมูล"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Condition"
-msgstr "เงื่อนไข"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "ค่า"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Operator"
 msgstr "ตัวปฏิบัติการ"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Criteria"
-msgstr "เกณฑ์"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 #, fuzzy
@@ -2799,11 +1911,6 @@ msgstr "-ไม่มี -"
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;เหมือน; ไม่เหมือน; ว่าง; ไม่ว่าง"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Sort Order"
-msgstr "เรียงลำดับ"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
 msgid  "ascending"
@@ -2813,11 +1920,6 @@ msgstr "จากน้อยไปมาก"
 #, fuzzy
 msgid  "descending"
 msgstr "จากมากไปน้อย"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Field name"
-msgstr "ชื่อเขตข้อมูล"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2829,50 +1931,14 @@ msgstr "และจากนั้น"
 msgid  "Operator"
 msgstr "ตัวปฏิบัติการ"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Order"
-msgstr "ลำดับ"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Sort order"
-msgstr "เรียงลำดับ"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 #, fuzzy
 msgid  "<none>"
 msgstr "<ไม่มี>"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Relations"
-msgstr "ความสัมพันธ์"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Tables involved"
-msgstr "ตารางที่เกี่ยวข้อง"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Fields involved"
-msgstr "เขตข้อมูลที่เกี่ยวข้อง"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Update options"
-msgstr "ปรับปรุงตัวเลือก"
-
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~No action"
 msgstr "ไ~ม่ดำเนินการ"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Update cascade"
-msgstr "~Update cascade"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -2880,69 +1946,22 @@ msgid  "~Set null"
 msgstr "~ตั้งค่าว่าง"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Set ~default"
 msgstr "ตั้ง~ค่าปริยาย"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Delete options"
-msgstr "ลบตัวเลือก"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Delete ~cascade"
-msgstr "ลบ ~cascade"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Base"
-msgstr "ฐานข้อมูล %PRODUCTNAME "
-
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Details"
 msgstr "Details"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Error ~list:"
-msgstr " ~รายการผิดพลาด:"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Description:"
-msgstr "~คำอธิบาย:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 #, fuzzy
 msgid  "SQL Status"
 msgstr "สถานะ SQL "
 
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
-#, fuzzy
-msgid  "Error code"
-msgstr "รหัสข้อผิดพลาด"
-
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 #, fuzzy
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
 msgstr "เหตุผลที่เกิดขึ้นบ่อยสำหรับความผิดพลาดนี้คือ การตั้งค่ากลุ่มของชุดอักขระที่ไม่เหมาะสมสำหรับภาษาของฐานข้อมูลของคุณ ตรวจสอบการตั้งค่าโดยการเลือก แก้ไข - ฐานข้อมูล - คุณสมบัติ"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
-#, fuzzy
-msgid  "Error"
-msgstr "Error"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
-#, fuzzy
-msgid  "Warning"
-msgstr "Warning"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
-#, fuzzy
-msgid  "Information"
-msgstr "Information"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 #, fuzzy
@@ -2954,41 +1973,6 @@ msgstr "การตั้งค่าการเชื่อมต่อ"
 msgid  "User Settings"
 msgstr "การตั้งค่าผู้ใช้"
 
-#: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
-#, fuzzy
-msgid  "User administration"
-msgstr "ผู้ดูแลระบบผู้ใช้"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User selection"
-msgstr "การเลือกผู้ใช้"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Us~er:"
-msgstr "ผู้ใ~ช้:"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Add User..."
-msgstr "เ~พิ่มผู้ใช้..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Change ~Password..."
-msgstr "เปลี่ยน~รหัสผ่าน..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete User..."
-msgstr "~ลบผู้ใช้..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Access rights for selected user"
-msgstr "สิทธิ์การเข้าถึงสำหรับผู้ใช้ที่เลือก"
-
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "Do you really want to delete the user?"
@@ -2999,40 +1983,15 @@ msgstr "คุณต้องการลบผู้ใช้หรือไม
 msgid  "The database does not support user administration."
 msgstr "ฐานข้อมูลไม่สนับสนุนผู้ดูแลระบบผู้ใช้"
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User \"$name$:  $\""
-msgstr "ผู้ใช้ \"$name$:  $\""
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Old p~assword"
-msgstr "ร~หัสผ่านเก่า"
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Password"
-msgstr "~รหัสผ่าน"
-
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Confirm  password"
 msgstr "~ยืนยันรหัสผ่าน"
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Change Password"
-msgstr "เปลี่ยนรหัสผ่าน"
-
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 #, fuzzy
 msgid  "The passwords do not match. Please enter the password again."
 msgstr "รหัสผ่านไม่ถูกต้อง กรุณาใส่รหัสผ่านอีกครั้ง"
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
-#, fuzzy
-msgid  "Refresh"
-msgstr "Refresh"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 #, fuzzy
@@ -3044,55 +2003,20 @@ msgstr "แบบ~มุมมองใหม่"
 msgid  "New ~Table Design"
 msgstr "แบบ~ตารางใหม่"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
-#, fuzzy
-msgid  "Query AutoPilot..."
-msgstr "นำร่องอัตโนมัติข้อคำถาม..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 #, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "~ข้อคำถามใหม่ (มุมมองออกแบบ)"
-
-#: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Edit Query"
-msgstr "แ~ก้ไขข้อคำถาม"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 #, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "ข้อคำถามใหม่ (~มุมมอง SQL)่"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
-#, fuzzy
-msgid  "Edit..."
-msgstr "แก้ไข..."
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
-#, fuzzy
-msgid  "Column ~Width..."
-msgstr "ความ~กว้างคอลัมน์..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 #, fuzzy
 msgid  "Report Wizard..."
 msgstr "นำร่องอัตโนมัติรายงาน..."
-
-#: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Form AutoPilot..."
-msgstr "นำร่องอัตโนมัติฟอร์ม..."
-
-#: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
-#, fuzzy
-msgid  "System"
-msgstr "ระบบ"
-
-#: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
-#, fuzzy
-msgid  "Error during creation"
-msgstr "Error during creation"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 #, fuzzy
@@ -3113,11 +2037,6 @@ msgstr "ไม่สามารถลบตารางได้เนื่อ
 #, fuzzy
 msgid  "~All"
 msgstr "~ทั้งหมด"
-
-#: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
-#, fuzzy
-msgid  "Undo:"
-msgstr "เรียกคืน:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 #, fuzzy
@@ -3146,67 +2065,22 @@ msgstr "The name '$#$' already exists.\nPlease enter another name."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
-msgstr ""
-
-#: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
-#, fuzzy
-msgid  "Apply columns"
-msgstr "เริ่มใช้คอลัมน์"
+msgstr "รายงาน \"$file$\" ต้องใช้ส่วนขยายโปรแกรม Oracle Report Builder"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 #, fuzzy
 msgid  "Type formatting"
 msgstr "การจัดรูปแบบประเภท"
 
-#: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
-#, fuzzy
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "เขตข้อมูลต่อไปนี้มีการตั้งค่าเป็นคีย์หลักแล้ว:\n"
-
-#: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
-#, fuzzy
-msgid  "Assign columns"
-msgstr "กำหนดคอลัมน์"
-
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Copy RTF Table"
 msgstr "คัดลอกตาราง RTF "
 
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "~Help"
-msgstr "~ช่วยเหลือ"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Cancel"
-msgstr "~ยกเลิก"
-
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "< ~Back"
 msgstr "< ~ย้อนกลับ"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Next>"
-msgstr "~ถัดไป>"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "C~reate"
-msgstr "~สร้าง"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Existing columns"
-msgstr "คอลัมน์ที่มีอยู่"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Column information"
-msgstr "ข้อมูลคอลัมน์"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 #, fuzzy
@@ -3218,55 +2092,10 @@ msgstr "การจดจำประเภทอัตโนมัติ"
 msgid  "Lines (ma~x)"
 msgstr "บรรทัด (มาก~ที่สุด):"
 
-#: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-#, fuzzy
-msgid  "Primary Key"
-msgstr "คีย์หลัก"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Source table: \n"
-msgstr "แหล่งตาราง: \n"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Destination table: \n"
-msgstr "ตารางเป้าหมาย: \n"
-
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~All"
 msgstr "~ทั้งหมด"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Non~e"
-msgstr "ไม่~มี"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ta~ble name"
-msgstr "ชื่อตา~ราง:"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "ตัวเลือก"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "De~finition and data"
-msgstr "คำ~จำกัดความและข้อมูล"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Def~inition"
-msgstr "คำ~จำกัดความ"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "A~s table view"
-msgstr "เป็~นมุมมองตาราง"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 #, fuzzy
@@ -3275,17 +2104,7 @@ msgstr "แนบ ~ข้อมูล"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
-msgstr ""
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Crea~te primary key"
-msgstr "สร้า~งคีย์หลัก"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "ชื่อ:"
+msgstr "ใช้บรรทัดแรกเป็นชื่อคอลัมน์"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 #, fuzzy
@@ -3306,16 +2125,6 @@ msgstr "Choose the option 'Append data' on the first page to append data to an e
 #, fuzzy
 msgid  "Please change the table name. It is too long."
 msgstr "กรุณาเปลี่ยนชื่อตาราง เพราะว่าชื่อยาวเกินไป"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "ตัวเลือก"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Type"
-msgstr "~ชนิด"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 #, fuzzy
@@ -3339,26 +2148,11 @@ msgstr "Full (outer) join"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.STRINGLIST.ITEM
 msgid  "Cross join"
-msgstr ""
+msgstr "เชื่อมข้าม (Cross join)"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 msgid  "Natural"
-msgstr ""
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Tables involved"
-msgstr "ตารางที่เกี่ยวข้อง"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Fields involved"
-msgstr "เขตข้อมูลที่เกี่ยวข้อง"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Join Properties"
-msgstr "คุณสมบัติ Join"
+msgstr "ธรรมชาติ (Natural)"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 #, fuzzy
@@ -3382,21 +2176,16 @@ msgstr "มีระเบียนทั้งหมดจาก '%1' และ
 
 #: ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.STRING.TEXT
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr ""
+msgstr "มีผลคูณคาร์ทีเซียนของทุกระเบียนจาก '%1' และจาก '%2'"
 
 #: ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.STRING.TEXT
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "มีเพียงคอลัมน์เดียวจากแต่ละคู่ของคอลัมน์ที่ชื่อเดียวกันจาก '%1' และจาก '%2'"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.STRING.TEXT
 #, fuzzy
 msgid  "Add Table Window"
 msgstr "เพิ่มหน้าต่างตาราง"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
-#, fuzzy
-msgid  "Move table window"
-msgstr "ย้ายหน้าต่างตาราง"
 
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 #, fuzzy
@@ -3407,26 +2196,6 @@ msgstr "Insert Join"
 #, fuzzy
 msgid  "Delete Join"
 msgstr "Delete Join"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
-#, fuzzy
-msgid  "Resize table window"
-msgstr "ปรับขนาดหน้าต่างตาราง"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
-#, fuzzy
-msgid  "Delete Column"
-msgstr "ลบคอลัมน์"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
-#, fuzzy
-msgid  "Move column"
-msgstr "ย้ายคอลัมน์"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
-#, fuzzy
-msgid  "Add Column"
-msgstr "เพิ่มคอลัมน์"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 #, fuzzy
@@ -3443,30 +2212,15 @@ msgstr "สูตรคำนวณไม่ถูกต้อง, ไม่ม�
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement!ข้อคำถามครอบคลุม #num# ตาราง อย่างไรก็ตาม  ชนิดของฐานข้อมูลที่เลือกสามารถประมวลได้มากที่สุด #maxnum# ตารางต่อข้อคำถามเท่านั้น!"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
-#, fuzzy
-msgid  "Delete Table Window"
-msgstr "ลบหน้าต่างตาราง"
-
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 #, fuzzy
 msgid  "Edit Column Description"
 msgstr "แก้ไขคำอธิบายคอลัมน์"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Adjust column width"
-msgstr "ปรับความกว้างคอลัมน์"
-
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 #, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(ไม่เรียงลำดับ); จากน้อยไปมาก; จากมากไปน้อย"
-
-#: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
-#, fuzzy
-msgid  "(no function);Group"
-msgstr "(ไม่ใช้ฟังก์ชัน);เฉลี่ย; นับ; มากที่สุด; น้อยที่สุด; ผลรวม; จัดกลุ่ม"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 #, fuzzy
@@ -3478,26 +2232,6 @@ msgstr "(ไม่มีตาราง)"
 msgid  "The database only supports sorting for visible fields."
 msgstr "ฐานข้อมูลสนับสนุนการเรียงลำดับเฉพาะเขตข้อมูลที่มองเห็นเท่านั้น"
 
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
-#, fuzzy
-msgid  "Functions"
-msgstr "ฟังก์ชัน"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
-#, fuzzy
-msgid  "Table Name"
-msgstr "ชื่อตาราง"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
-#, fuzzy
-msgid  "Alias"
-msgstr "นามแฝง"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Distinct Values"
-msgstr "ค่าที่ไม่ซ้ำกัน"
-
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 #, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
@@ -3508,30 +2242,15 @@ msgstr "เขตข้อมูล; นามแฝง; ตาราง; เร
 msgid  "There are too many columns."
 msgstr "มีคอลัมน์มากเกินไป"
 
-#: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "A condition cannot be applied to field [*]"
-msgstr "เงื่อนไขไม่สามารถใช้กับเขตข้อมูล [*] ได้"
-
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 #, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "คำสั่ง SQL ที่สร้างยาวเกินไป"
 
-#: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
-#, fuzzy
-msgid  "Query is too complex"
-msgstr "ข้อคำถามซับซ้อนเกินไป"
-
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 #, fuzzy
 msgid  "Nothing has been selected."
 msgstr "ยังไม่ได้เลือกอะไรเลย!"
-
-#: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
-#, fuzzy
-msgid  "Too many search criteria"
-msgstr "เกณฑ์ในการค้นหามากเกินไป"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 #, fuzzy
@@ -3553,16 +2272,6 @@ msgstr "มีตารางมากเกินไป"
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "คำสั่งจะไม่ถูกใช้ขณะตั้งข้อคำถาม ใน SQL dialectของฐานข้อมูล"
 
-#: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Field name not found or not unique"
-msgstr "ไม่พบชื่อเขตข้อมูลหรือชื่อซ้ำ"
-
-#: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
-#, fuzzy
-msgid  "Join could not be processed"
-msgstr "Join could not be processed"
-
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 #, fuzzy
 msgid  "Syntax error in SQL statement"
@@ -3575,7 +2284,7 @@ msgstr "ฐานข้อมูลนี้ไม่สนับสนุนม
 
 #: ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.STRING.TEXT
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "ฐานข้อมูลไม่สนับสนุนการเปลี่ยนทรรศนะของตารางที่มีอยู่"
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.STRING.TEXT
 #, fuzzy
@@ -3633,23 +2342,14 @@ msgid  "$object$ has been changed.\nDo you want to save the changes?"
 msgstr "มีเปลี่ยนแปลง\nคุณต้องการบันทึกการเปลี่ยนแปลงหรือไม่?"
 
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
+#, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr ""
+msgstr "$object$ มีพื้นฐานบนคำสั่ง SQL ซึ่งไม่สามารถแจงส่วน (parse) ได้"
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
 #, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr "The query will be opened in SQL view."
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
-#, fuzzy
-msgid  "The table view"
-msgstr "มุมมองหน้าต่าง"
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
-#, fuzzy
-msgid  "The query"
-msgstr "ข้อคำถาม"
+msgstr "จะเปิด $object$ ในมุมมอง SQL"
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
 #, fuzzy
@@ -3663,19 +2363,19 @@ msgstr "The query does not create a result set, and thus cannot be part of anoth
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "ทั้งพารามิเตอร์ การเชื่อมต่อปัจจุบัน (ActiveConnection) และ ชื่อแหล่งข้อมูล (DataSourceName) ต่างก็ขาดไปหรือผิด - ไม่สามารถเตรียมเริ่มต้นตัวออกแบบคำสั่งถาม"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "ความสัมพันธ์มีอยู่แล้ว ต้องการแก้ไขหรือสร้างอันใหม่?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
 msgid  "Edit..."
-msgstr ""
+msgstr "Edit..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
 msgid  "Create..."
-msgstr ""
+msgstr "สร้าง..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
 #, fuzzy
@@ -3687,6 +2387,10 @@ msgstr " - %PRODUCTNAME Base: แบบความสัมพันธ์"
 msgid  "The database does not support relations."
 msgstr "ฐานข้อมูลไม่สนับสนุนความสัมพันธ์"
 
+#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The relation design has been changed.\nDo you want to save the changes?"
+msgstr "แบบความสัมพันธ์มีการเปลี่ยนแปลง\nคุณต้องการบันทึกการเปลี่ยนแปลงหรือไม่?"
+
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
 #, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
@@ -3694,7 +2398,7 @@ msgstr "เมื่อคุณลบตารางนี้ ความส�
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "ฐานข้อมูลไม่สามารถสร้างความสัมพันธ์ บางทีอาจไม่สนับสนุนคีย์นอกสำหรับตารางชนิดนี้\nโปรดตรวจสอบเอกสารคู่มือของฐานข้อมูล"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
 #, fuzzy
@@ -3706,45 +2410,10 @@ msgstr "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Ima
 msgid  "Insert/remove primary key"
 msgstr "แทรก/ลบ คีย์หลัก"
 
-#: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "ใช่"
-
-#: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "ไม่ใช่"
-
-#: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
-#, fuzzy
-msgid  "Ascending"
-msgstr "จากน้อยไปมาก"
-
-#: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
-#, fuzzy
-msgid  "Descending"
-msgstr "จากมากไปน้อย"
-
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 #, fuzzy
 msgid  "<none>"
 msgstr "<ไม่มี>"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Field name"
-msgstr "ชื่อเขตข้อมูล"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Field Name"
-msgstr "ชื่อเขตข้อมูล"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
-#, fuzzy
-msgid  "Field ~type"
-msgstr "ประเภทเขตข้อมูล"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
 #, fuzzy
@@ -3756,44 +2425,14 @@ msgstr "ประเภทเขตข้อมูล"
 msgid  "Field length"
 msgstr "ความยาวเขตข้อมูล"
 
-#: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "คำอธิบาย"
-
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
 msgid  "Column Description"
-msgstr ""
+msgstr "คำอธิบายคอลัมน์"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
 #, fuzzy
 msgid  "Input required"
 msgstr "ต้องการการป้อนเข้า"
-
-#: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
-#, fuzzy
-msgid  "~AutoValue"
-msgstr "ค่า~อัตโนมัติ"
-
-#: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
-#, fuzzy
-msgid  "Field Properties"
-msgstr "คุณสมบัติเขตข้อมูล"
-
-#: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "ทั่วไป"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
-#, fuzzy
-msgid  "Description:"
-msgstr "คำอธิบาย:"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
-#, fuzzy
-msgid  "Table properties"
-msgstr "คุณสมบัติตาราง"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
 #, fuzzy
@@ -3805,26 +2444,6 @@ msgstr "ข้อความที่คุณใส่ไม่ใช่หน
 msgid  "Insert Rows"
 msgstr "แทรกแถว"
 
-#: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-#, fuzzy
-msgid  "Primary Key"
-msgstr "คีย์หลัก"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
-#, fuzzy
-msgid  "Modify cell"
-msgstr "เปลี่ยนแปลงเซลล์"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
-#, fuzzy
-msgid  "Delete row"
-msgstr "ลบแถว"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
-#, fuzzy
-msgid  "Modify field type"
-msgstr "เปลี่ยนแปลงชนิดเขตข้อมูล"
-
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
 #, fuzzy
 msgid  "Insert row"
@@ -3835,35 +2454,10 @@ msgstr "แทรกแถว"
 msgid  "Insert new row"
 msgstr "แทรกแถวใหม่"
 
-#: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "~Default value"
-msgstr "ค่า~ปริยาย"
-
-#: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
-#, fuzzy
-msgid  "~Entry required"
-msgstr "~Entry required"
-
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
 #, fuzzy
 msgid  "~Length"
 msgstr "~ความยาว"
-
-#: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
-#, fuzzy
-msgid  "~Type"
-msgstr "~ชนิด"
-
-#: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
-#, fuzzy
-msgid  "Decimal ~places"
-msgstr "จุด ~ทศนิยม"
-
-#: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Format example"
-msgstr "ตัวอย่างรูปแบบ"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
 #, fuzzy
@@ -3930,25 +2524,13 @@ msgstr "ไม่สามารถบันทึกตารางได้เ
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "คอลัมน์ \"$column$\" ขึ้นอยู่กับคีย์หลัก ถ้าลบคอลัมน์คีย์หลักก็จะถูกลบด้วย คุณต้องการทำต่อหรือไม่?"
 
-#: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Primary Key Affected"
-msgstr "คีย์หลักมีผลกระทบ"
+#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The table has been changed.\nDo you want to save the changes?"
+msgstr "ตารางมีการเปลี่ยนแปลง\n คุณต้องการบันทึกการเปลี่ยนแปลงหรือไม่?"
 
-#: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Column"
-msgstr "คอลัมน์"
-
-#: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
-#, fuzzy
-msgid  "Continue anyway?"
-msgstr "ทำต่อหรือไม่?"
-
-#: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
-#, fuzzy
-msgid  "Warning!"
-msgstr "คำเตือน!"
+#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
+msgstr "การเชื่อมต่อกับฐานข้อมูลขาดหาย! การออกแบบตารางสามารถใช้ได้เพียงกับฟังก์ชันที่จำกัดโดยไม่มีการเชื่อมต่อ\n เชื่อมต่ออีกครั้งหรือไม่?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
 #, fuzzy
@@ -3960,10 +2542,9 @@ msgstr "ไม่สามารถบันทึกตารางได้เ
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "ไม่สามารถปรับตัวกรองตารางได้เนื่องจากฐานข้อมูลถูกลบก่อนแล้ว"
 
-#: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
-#, fuzzy
-msgid  "No primary key"
-msgstr "ไม่มีคีย์หลัก"
+#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
+msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
+msgstr "ก่อนที่คุณจะแก้ไขดัชนีของตาราง คุณต้องทำการบันทึกก่อน\nคุณต้องการบันทึกการเปลี่ยนแปลงขณะนี้หรือไม่?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
 #, fuzzy
@@ -4032,54 +2613,44 @@ msgstr "เปลี่ยนคุณลักษณะของเขตข้
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support views."
-msgstr ""
+msgstr "ฐานข้อมูลปลายทางไม่สนับสนุนทรรศนะ (view)"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
 msgid  "The destination database does not support primary keys."
-msgstr ""
+msgstr "ฐานข้อมูลปลายทางไม่สนับสนุนคีย์หลัก"
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "ไม่พบตัวบอกการเข้าถึงข้อมูล (data access descriptor) หรือตัวบอกการเข้าถึงข้อมูลไม่สามารถให้ข้อมูลที่จำเป็นได้ทั้งหมด"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
 msgid  "Only tables and queries are supported at the moment."
-msgstr ""
+msgstr "ขณะนี้สนับสนุนเพียงตารางกับคำสั่งถามเท่านั้น"
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "เซ็ตผลลัพธ์ของแหล่งคัดลอกจะต้องสนับสนุนคั่นหน้า (bookmark)"
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "ไม่สนับสนุนชนิดคอลัมน์ต้นทาง ($type$) ที่ตำแหน่งคอลัมน์ $pos$"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
 msgid  "Illegal number of initialization parameters."
-msgstr ""
+msgstr "จำนวนของพารามิเตอร์การเตรียมเริ่มต้นไม่ถูกต้อง"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
 msgid  "An error occurred during initialization."
-msgstr ""
+msgstr "เกิดความผิดพลาดระหว่างการเตรียมเริ่มต้น"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
 msgid  "Unsupported setting in the copy source descriptor: $name$."
-msgstr ""
+msgstr "มีการตั้งค่าที่ไม่สนับสนุนในตัวบอกแหล่งคัดลอก (copy source descriptor): $name$"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
 msgid  "To copy a query, your connection must be able to provide queries."
-msgstr ""
+msgstr "ในการคัดลอกคำสั่งถาม (query) การเชื่อมต่อจะต้องสามารถให้คำสั่งถามมาได้ด้วย"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
 msgid  "The given interaction handler is invalid."
-msgstr ""
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
-#, fuzzy
-msgid  "~Remember password until end of session"
-msgstr "~จำรหัสผ่านจนจบการใช้งานรอบนี้"
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
-#, fuzzy
-msgid  "~Remember password"
-msgstr "~จำรหัสผ่าน"
+msgstr "ตัวจัดการปฏิสัมพันธ์ (interaction handler) ที่ให้มาไม่ถูกต้อง"

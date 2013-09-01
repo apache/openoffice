@@ -31,28 +31,12 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
-#, fuzzy
-msgid  "Calculates the number of weeks in a specific period"
-msgstr "குறிப்பிட்ட காலாளவுக்கு இடையே உள்ள வாரங்களை கணக்கிடு"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
-#, fuzzy
-msgid  "Start date"
-msgstr "துவக்க தேதி"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
 #, fuzzy
 msgid  "First day of the period"
 msgstr "கால இடைவெளியின் முதல் நாள்"
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
-#, fuzzy
-msgid  "End date"
-msgstr "முடிவு தேதி"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "காலக்கெடுவின் கடைசி நாள்."
 
@@ -60,41 +44,6 @@ msgstr "காலக்கெடுவின் கடைசி நாள்."
 #, fuzzy
 msgid  "Type"
 msgstr "வகை"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
-#, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr "கணக்கீட்டின் வகை: வகை=0எனில் ஒரே இடைவெளிl, வகை=  எனில் நாள்காட்டி வாரம்s."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
-#, fuzzy
-msgid  "Determines the number of months in a specific period."
-msgstr "கால இடைவெளிக்கு இடையே உள்ள மாதங்கள்களை கண்டறியும்."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
-#, fuzzy
-msgid  "First day of the period."
-msgstr "கால இடைவெளியின் முதல் நாள்"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
-#, fuzzy
-msgid  "Last day of the period."
-msgstr "காலக்கெடுவின் கடைசி நாள்."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
-#, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr "கணக்கீட்டின் வகை: வகை=0எனில் ஒரே இடைவெளிl, வகை=  எனில் நாள்காட்டி மாதங்கள்."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
-#, fuzzy
-msgid  "Calculates the number of years in a specific period."
-msgstr "கால இடைவெளிக்கு இடையே உள்ள வருடங்களை கணக்கிடு"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
-#, fuzzy
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr "கணக்கீட்டின் வகை: வகை=0 எனில் ஒரே இடைவெளி, வகை=  எனில் நாள்காட்டி வாரம்."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
 #, fuzzy
@@ -107,7 +56,6 @@ msgid  "Date"
 msgstr "தேதி"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.3.STRING.TEXT
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "விருப்பட்ட வருடத்தில் ஏதாவது ஒரு நாள்"
 
@@ -115,56 +63,6 @@ msgstr "விருப்பட்ட வருடத்தில் ஏதா�
 #, fuzzy
 msgid  "Returns the number of days of the month in which the date entered occurs"
 msgstr "மாதத்தின் மொத்த நாட்களை கண்டறிந்து குறிப்பிட்ட நாட்களை காண்"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
-#, fuzzy
-msgid  "Any day in the desired month"
-msgstr "விருப்பட்ட மாதத்தில் ஏதாவது ஒரு நாள்"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr "உள்ளிடப்பட்ட தேதியின் வருடத்தில் உள்ள நாள்களைத் தரும்."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr "உள்ளிடப்பட்ட தேதியின் வருடத்தில் உள்ள வாரங்களின் எண்ணிக்கையைத்களைத் தccurs"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
-#, fuzzy
-msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr "மறையாக்கம் அல்லது உரை மறைவிலக்கு உரை பயன்படுத்த ROT13  படிமுறை"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "உரை"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
-#, fuzzy
-msgid  "Text to be encrypted or text already encrypted"
-msgstr "மாற்றப்பட வேண்டிய உரை அல்லது ஏற்கனவே மாற்றப்பட்டது"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
-#, fuzzy
-msgid  "WEEKS"
-msgstr "WEEKS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
-#, fuzzy
-msgid  "MONTHS"
-msgstr "MONTHS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
-#, fuzzy
-msgid  "YEARS"
-msgstr "YEARS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
-#, fuzzy
-msgid  "ISLEAPYEAR"
-msgstr "ISLEAPYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
 #, fuzzy
@@ -176,240 +74,10 @@ msgstr "DAYSINMONTH"
 msgid  "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
-#, fuzzy
-msgid  "WEEKSINYEAR"
-msgstr "WEEKSINYEAR"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
-#, fuzzy
-msgid  "ROT13"
-msgstr "ROT13"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
-#, fuzzy
-msgid  "WORKDAY"
-msgstr "WORKDAY"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
-#, fuzzy
-msgid  "YEARFRAC"
-msgstr "YEARFRAC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
-#, fuzzy
-msgid  "EDATE"
-msgstr "EDATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
-#, fuzzy
-msgid  "WEEKNUM"
-msgstr "WEEKNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
-#, fuzzy
-msgid  "EOMONTH"
-msgstr "EOMONTH"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
-#, fuzzy
-msgid  "NETWORKDAYS"
-msgstr "NETWORKDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
-#, fuzzy
-msgid  "AMORDEGRC"
-msgstr "AMORDEGRC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
-#, fuzzy
-msgid  "AMORLINC"
-msgstr "AMORLINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
-#, fuzzy
-msgid  "ACCRINT"
-msgstr "ACCRINT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
-#, fuzzy
-msgid  "ACCRINTM"
-msgstr "ACCRINTM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
-#, fuzzy
-msgid  "RECEIVED"
-msgstr "RECEIVED"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
-#, fuzzy
-msgid  "DISC"
-msgstr "DISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
-#, fuzzy
-msgid  "DURATION"
-msgstr "DURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
-#, fuzzy
-msgid  "EFFECT"
-msgstr "EFFECT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
-#, fuzzy
-msgid  "CUMPRINC"
-msgstr "CUMPRINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
-#, fuzzy
-msgid  "CUMIPMT"
-msgstr "CUMIPMT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
-#, fuzzy
-msgid  "PRICE"
-msgstr "PRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
-#, fuzzy
-msgid  "PRICEDISC"
-msgstr "PRICEDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
-#, fuzzy
-msgid  "PRICEMAT"
-msgstr "PRICEMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
-#, fuzzy
-msgid  "MDURATION"
-msgstr "MDURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
-#, fuzzy
-msgid  "NOMINAL"
-msgstr "NOMINAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
-#, fuzzy
-msgid  "DOLLARFR"
-msgstr "DOLLARFR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
-#, fuzzy
-msgid  "DOLLARDE"
-msgstr "DOLLARDE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
-#, fuzzy
-msgid  "YIELD"
-msgstr "YIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
-#, fuzzy
-msgid  "YIELDDISC"
-msgstr "YIELDDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
-#, fuzzy
-msgid  "YIELDMAT"
-msgstr "YIELDMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
-#, fuzzy
-msgid  "TBILLEQ"
-msgstr "TBILLEQ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
-#, fuzzy
-msgid  "TBILLPRICE"
-msgstr "TBILLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
-#, fuzzy
-msgid  "TBILLYIELD"
-msgstr "TBILLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
-#, fuzzy
-msgid  "ODDFPRICE"
-msgstr "ODDFPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
-#, fuzzy
-msgid  "ODDFYIELD"
-msgstr "ODDFYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
-#, fuzzy
-msgid  "ODDLPRICE"
-msgstr "ODDLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
-#, fuzzy
-msgid  "ODDLYIELD"
-msgstr "ODDLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
-#, fuzzy
-msgid  "XIRR"
-msgstr "XIRR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
-#, fuzzy
-msgid  "XNPV"
-msgstr "XNPV"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
-#, fuzzy
-msgid  "INTRATE"
-msgstr "INTRATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
-#, fuzzy
-msgid  "COUPNCD"
-msgstr "COUPNCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
-#, fuzzy
-msgid  "COUPDAYS"
-msgstr "COUPDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
-#, fuzzy
-msgid  "COUPDAYSNC"
-msgstr "COUPDAYSNC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
-#, fuzzy
-msgid  "COUPDAYBS"
-msgstr "COUPDAYBS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
-#, fuzzy
-msgid  "COUPPCD"
-msgstr "COUPPCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
-#, fuzzy
-msgid  "COUPNUM"
-msgstr "COUPNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
-#, fuzzy
-msgid  "FVSCHEDULE"
-msgstr "FVSCHEDULE"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
 #, fuzzy
 msgid  "ISEVEN"
 msgstr "ISEVEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
-#, fuzzy
-msgid  "ISODD"
-msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
 #, fuzzy
@@ -421,55 +89,10 @@ msgstr "GCD"
 msgid  "LCM"
 msgstr "LCM"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
-#, fuzzy
-msgid  "MULTINOMIAL"
-msgstr "MULTINOMIAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
-#, fuzzy
-msgid  "SERIESSUM"
-msgstr "SERIESSUM"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
 #, fuzzy
 msgid  "QUOTIENT"
 msgstr "QUOTIENT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
-#, fuzzy
-msgid  "MROUND"
-msgstr "MROUND"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
-#, fuzzy
-msgid  "SQRTPI"
-msgstr "SQRTPI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
-#, fuzzy
-msgid  "RANDBETWEEN"
-msgstr "RANDBETWEEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
-#, fuzzy
-msgid  "BESSELI"
-msgstr "BESSELI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
-#, fuzzy
-msgid  "BESSELJ"
-msgstr "BESSELJ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
-#, fuzzy
-msgid  "BESSELK"
-msgstr "BESSELK"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
-#, fuzzy
-msgid  "BESSELY"
-msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
 #, fuzzy
@@ -486,11 +109,6 @@ msgstr "BIN2HEX"
 msgid  "BIN2OCT"
 msgstr "BIN2OCT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
-#, fuzzy
-msgid  "DELTA"
-msgstr "DELTA"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
 #, fuzzy
 msgid  "DEC2BIN"
@@ -505,21 +123,6 @@ msgstr "DEC2HEX"
 #, fuzzy
 msgid  "DEC2OCT"
 msgstr "DEC2OCT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
-#, fuzzy
-msgid  "ERF"
-msgstr "ERF"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
-#, fuzzy
-msgid  "ERFC"
-msgstr "ERFC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
-#, fuzzy
-msgid  "GESTEP"
-msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
 #, fuzzy
@@ -540,11 +143,6 @@ msgstr "HEX2OCT"
 #, fuzzy
 msgid  "IMABS"
 msgstr "IMABS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
-#, fuzzy
-msgid  "IMAGINARY"
-msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
 #, fuzzy
@@ -621,10 +219,37 @@ msgstr "IMSUM"
 msgid  "IMSQRT"
 msgstr "IMSQRT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
-#, fuzzy
-msgid  "COMPLEX"
-msgstr "COMPLEX"
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
+msgid  "IMTAN"
+msgstr "IMTAN"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
+msgid  "IMSEC"
+msgstr "IMSEC"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
+msgid  "IMCSC"
+msgstr "IMCSC"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
+msgid  "IMCOT"
+msgstr "IMCOT"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
+msgid  "IMSINH"
+msgstr "IMSINH"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
+msgid  "IMCOSH"
+msgstr "IMCOSH"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
+msgid  "IMSECH"
+msgstr "IMSECH"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
+msgid  "IMCSCH"
+msgstr "IMCSCH"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
 #, fuzzy
@@ -641,50 +266,20 @@ msgstr "OCT2DEC"
 msgid  "OCT2HEX"
 msgstr "OCT2HEX"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
-#, fuzzy
-msgid  "CONVERT"
-msgstr "CONVERT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
-#, fuzzy
-msgid  "FACTDOUBLE"
-msgstr "FACTDOUBLE"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "கொடுக்கப்பட்ட வேலைநாட்கள் எண்ணிகையின் முன்பு அல்லது பிறகு உள்ள தேதியின் வரிசை எண்னண தரும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
-#, fuzzy
-msgid  "Start date"
-msgstr "துவக்க தேதி"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
 #, fuzzy
 msgid  "The start date"
 msgstr "துவக்க தேதி"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
-#, fuzzy
-msgid  "Days"
-msgstr "தினங்கள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
-#, fuzzy
-msgid  "The number of workdays before or after the start date"
-msgstr "துவக்க தேதியின் முன்பு அல்லது பிறகு உள்ள ல ேலைந்் எண்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
 #, fuzzy
 msgid  "Holidays"
 msgstr "விடுமுறைகள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
-#, fuzzy
-msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr "விடுமுறை தினங்களுக்கான பட்டியல்(பண்டிகை, விழாக்கள், மற்றும் பல.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
 #, fuzzy
@@ -696,75 +291,15 @@ msgstr " 'start date' மற்றும் 'end date' இடைப்பட்�
 msgid  "End date"
 msgstr "முடிவு தேதி"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
-#, fuzzy
-msgid  "The end date"
-msgstr "முடிவு தேதி"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
 #, fuzzy
 msgid  "Basis"
 msgstr "அடிப்படை"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
-#, fuzzy
-msgid  "Basis for determining the interest days"
-msgstr "வட்டி வீத தினங்களை கணக்கிடும் அடிப்படை"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr "துவக்க தேதியின் கொடுக்கப்பட்ட மாதங்களின் எண்ணிகையின் முன்பு அல்லது பிறகு உள்ள தேதியின் தேதியின் வரிசை எண்னை தரும"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
-#, fuzzy
-msgid  "Months"
-msgstr "மாதங்கள்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
 #, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Number of months before or after the start date"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr "தினம் வரும் நாள் உள்ள நாட்காட்டி வாரங்களை அளிக்கிறது."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
-#, fuzzy
-msgid  "Date"
-msgstr "நாள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
-#, fuzzy
-msgid  "The date"
-msgstr "நாள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
-#, fuzzy
-msgid  "Return type"
-msgstr "திரும்பு வகை"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
-#, fuzzy
-msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr "எண் 1 லிருந்து 3, வாரம் தொடங்கும் நாளைக் குறிப்பிடுகிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr "மாதத்தின் கடைசி நாளை தேர்ந்தெடுத்து அடுத்த மாதத்தின் துவக்கநாளை கண்டுப்பிடி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of workdays between two dates"
-msgstr "இரு தினங்களுக்கு நடுவில் உள்ள வேலை நாட்கள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
-#, fuzzy
-msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr "விடுமுறை தினப்பட்டியல் (பண்டிகை, விழாக்கள், மற்றும் பல.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
 #, fuzzy
@@ -772,7 +307,6 @@ msgid  "Returns the value 'true' if the number is even"
 msgstr "இரட்டை படை எண் என்றால் 'சரி' என்ற மதிப்பைத் தரும்"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.2.STRING.TEXT
-#, fuzzy
 msgid  "Number"
 msgstr "எண்"
 
@@ -786,95 +320,31 @@ msgstr "எண்"
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "ஒற்றை எண்ணாக இருப்பின் 'true' அளிக்கிறது"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the multinomial coefficient of a set of numbers"
-msgstr "எண்களுக்கான "
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
-#, fuzzy
 msgid  "Number(s)"
 msgstr "எண்(கள்)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
-#, fuzzy
-msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr "எண் அல்லது மொத்த எண்களில் எதையாவது தேர்ந்தெடுத்து வகுகுணங்களை காண்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the sum of a power series"
-msgstr "அடுக்குகளின் கூடுதல் தொகையை அளிக்கிறது"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
 #, fuzzy
 msgid  "X"
 msgstr "X"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
-#, fuzzy
-msgid  "The independent variable of the power series"
-msgstr "அடுக்கு வரிசையின் தொடர்பில்லா மதிப்பு"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
 #, fuzzy
 msgid  "N"
 msgstr "N"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
-#, fuzzy
-msgid  "The initial power to which x is to be raised"
-msgstr " x உயர்த்தப்பட வேண்டிய தொடக்க மதிப்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
-#, fuzzy
-msgid  "M"
-msgstr "M"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
-#, fuzzy
-msgid  "The increment by which to increase n for each term in the series"
-msgstr "வரிசையில் n வரை உயர்த்தப்பட வேண்டிய கூடுதல் மதிப்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
-#, fuzzy
-msgid  "Coefficients"
-msgstr "குணகம் "
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
-#, fuzzy
-msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr "மொத்தகுணகங்களை உபயோகப்பதடுத்தும் போது x யின் மாறி பெருக்கப்பட்டது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the integer portion of a division"
-msgstr "வகுத்தலில் முழு எண் பகுதியைத் தரும்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
-#, fuzzy
 msgid  "Numerator"
 msgstr "Numerator"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.3.STRING.TEXT
-#, fuzzy
 msgid  "The dividend"
 msgstr "The dividend"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
-#, fuzzy
-msgid  "Denominator"
-msgstr "Denominator"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
-#, fuzzy
 msgid  "The divisor"
 msgstr "வகுப்பி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns a number rounded to a specified multiple"
-msgstr "குறீப்பிட்ட எண்களை தேர்ந்த்தெடுக்கும் போது அவ்எண் பெருக்கப்படும்"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
 #, fuzzy
@@ -886,65 +356,15 @@ msgstr "முழுமை ஆகவேன்டிய எண்"
 msgid  "Multiple"
 msgstr "பெருக்கல்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
-#, fuzzy
-msgid  "The multiple to which you want to round number"
-msgstr "எதை பெருக்கப்பட வேண்டுமோ அவ்எண்ணை குறிக்கப்படவேண்டும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the square root of a number which has been multiplied by pi"
-msgstr "பையால் பெருக்கப்பட்ட எண்ணின் வர்க மூலத்தைத் தரும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
-#, fuzzy
-msgid  "The number by which pi is multiplied"
-msgstr "பையால் பெருக்கப்பட்ட எண்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "முழு எண்குறிப்பிலா எண்ணிலிருந்து எண்ணாக குறீப்பிடு"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
-#, fuzzy
-msgid  "Bottom"
-msgstr "கீழ்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
-#, fuzzy
-msgid  "The smallest integer returned"
-msgstr "தரப்பட்ட மிகச்சிறிய முழு எண்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
-#, fuzzy
-msgid  "Top"
-msgstr "மேல்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
-#, fuzzy
-msgid  "The largest integer returned"
-msgstr "தரப்பட்ட மிகப்பெரியிறிய முழு எண்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the greatest common divisor"
-msgstr "பொதுவாக பெரிதாக உள்ள வகு எண்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
 #, fuzzy
 msgid  "Number or list of numbers"
 msgstr "எண் அல்லது எண்களின் பட்டியல்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the least common multiple"
-msgstr "பொதுவாக சிறும பெருக்கள்களை குறிக்கும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the modified Bessel function In(x)"
-msgstr "bessel செயல்பாடு in[x] மாற்றப்பைட்டது"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
 #, fuzzy
@@ -952,24 +372,8 @@ msgid  "The value at which the function is to be evaluated"
 msgstr "The value at which the function is to be evaluated"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
-#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Bessel செயல்பாட்டின் வரிசை"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the Bessel function Jn(x)"
-msgstr "Bessel செயல்பாடு Jn[x]"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the Bessel function Kn(x)"
-msgstr "Bessel செயல்பாடு kn[x]"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the Bessel function Yn(x)"
-msgstr "Bessel செயல்பாடு yn[x]"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
 #, fuzzy
@@ -996,110 +400,25 @@ msgstr "Number of places used"
 msgid  "Converts a binary number to a decimal number"
 msgstr "இருநிலை எண்ணை தசம எண்ணாக மாற்றும்."
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a binary number to a hexadecimal number"
-msgstr "இருமஎண்ணிலிருந்து பதினறும எண்ணகா மாற்று"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
-#, fuzzy
-msgid  "Number of places used."
-msgstr "எத்தனை பகுதிகள் உபயோகப்படுத்தப்பட்டுள்ளது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts an octal number to a binary number"
-msgstr "எண்மக் குறிமுறையை இருமஎண்ணாக மாற்றப்பட்டது"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
 #, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "The octal number to be converted (as text)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts an octal number to a decimal number"
-msgstr "எண்மக் குறிமுறைஎண்ணிலிருந்து உண்மைப் பதின்ம எண்ணகா மாற்று"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts an octal number to a hexadecimal number"
-msgstr "எண்மக் குறிமுறைஎண்ணிலிருந்து பதினறும எண்ணகா மாற்று"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a decimal number to a binary number"
-msgstr "தசம எண்ணை இருநிலை எண்ணாக மாற்றும்."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
 #, fuzzy
 msgid  "The decimal integer to be converted"
 msgstr "The decimal integer to be converted"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a decimal number to a hexadecimal number"
-msgstr " உண்மைப் பதின்மஎண்ணிலிருந்து பதினறும எண்ணகா மாற்று"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a decimal number into an octal number"
-msgstr " உண்மைப் பதின்மஎண்ணிலிருந்து  எண்மக்குறிமுறைஎண்ணகா மாற்று"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
 #, fuzzy
 msgid  "The decimal number"
 msgstr "The decimal number"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a hexadecimal number to a binary number"
-msgstr "பதினறும எண்ணை இரும எண்ணாக மாற்று"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
 #, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "The hexadecimal number to be converted (as text)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a hexadecimal number to a decimal number"
-msgstr "பதினறும எண்ணை தசம எண்ணாக மாற்று"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a hexadecimal number to an octal number"
-msgstr "பதினரும எண்ணை எண்ம எண்ணாக மாற்றுகிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
-#, fuzzy
-msgid  "Tests whether two values are equal"
-msgstr "இரண்டு மதிப்புகளும் சமமா என்று பார்க்கும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
-#, fuzzy
-msgid  "Number 1"
-msgstr "எண் 1"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
-#, fuzzy
-msgid  "The first number"
-msgstr "The first எண்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
-#, fuzzy
-msgid  "Number 2"
-msgstr "எண் 2"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
-#, fuzzy
-msgid  "The second number"
-msgstr "The second எண்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the error function"
-msgstr "பிழை சொயலியை அனுப்பும்"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
 #, fuzzy
@@ -1111,110 +430,23 @@ msgstr "Lower limit"
 msgid  "The lower limit for integration"
 msgstr "The lower limit for integration"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
-#, fuzzy
-msgid  "Upper limit"
-msgstr "மேல் வரம்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
-#, fuzzy
-msgid  "The upper limit for integration"
-msgstr "தொாகையீட்டின் மேல் வரம்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the complementary error function"
-msgstr "தொாடர்புடைய பிழை சொயலியை அனுப்பும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
-#, fuzzy
-msgid  "Tests whether a number is greater than a threshold value"
-msgstr "வரையறுக்கப்பட்ட மதிப்பை விட ஒரு எண் பெரியதா என்று சோதிக்கும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
-#, fuzzy
-msgid  "The value to test against step"
-msgstr "எந்த மதிப்புக்கு எதிரே சோதிப்பது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
-#, fuzzy
-msgid  "Step"
-msgstr "படி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
-#, fuzzy
-msgid  "The threshhold value"
-msgstr "வரையறுக்கப்பட்ட மதிப்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the double factorial of Number"
-msgstr "எண்ணின் இரட்டை பாக்டோரியல் அனுப்பும்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the absolute value (modulus) of a complex number"
 msgstr "Returns the absolute value (modulus) of a "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
-#, fuzzy
 msgid  "Complex number"
-msgstr ""
+msgstr "சிக்கல் எண்"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
 #, fuzzy
 msgid  "The complex number"
 msgstr "சிக்கல் எண்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the imaginary coefficient of a complex number"
-msgstr "சிக்கல் எண்ணின் மாயப்பகுதியின் அலகை அனுப்பும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns a complex number raised to an integer power"
-msgstr "முழு எண் அடுக்குக்கு உட்படுத்தப்பட்ட சிக்கல் எண்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
-#, fuzzy
-msgid  "Power to which the complex number is raised"
-msgstr "சிக்கலான எண்ணின் அடுக்கு மதிப்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr "ஒரு கோணத்தை ரேடியனில் காட்டும் தீட்டா என்ற தர மதிப்பை அனுப்பும்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
-#, fuzzy
 msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the cosine of a complex number"
-msgstr "சிக்கல் எண்ணின் cosine னை அனுப்பும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the quotient of two complex numbers"
-msgstr "இரண்டு சிக்கல் எண்களின் விகிததுதை தரும் "
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the algebraic form of the exponential of a complex number"
-msgstr "அடுக்கு வடிவில் சிக்கலெண்ணை அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the complex conjugate of a complex number"
-msgstr "சிக்கல் எண்ணின் மாய குறை அனுப்பும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the natural logarithm of a complex number"
-msgstr "சிக்கல்  எண்ணுக்கு இயற்கை மடக்கையை கொடுக்கிறது"
+msgstr "ஒரு சிக்கல் எண்"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
 #, fuzzy
@@ -1226,36 +458,6 @@ msgstr "சிக்கல் எண்்ணின் அடி-10 லாகர
 msgid  "Returns the base-2 logarithm of a complex number"
 msgstr "சிக்கலெண்ணுக்கு அடிமானம்-2 கொண்ட மடக்கை மதிப்பை அளிக்கிறது "
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the product of several complex numbers"
-msgstr "பல சிக்கல் எண்களின் பெருக்குத்தொகையை அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
-#, fuzzy
-msgid  "The first complex number"
-msgstr "முதல் சிக்கல் எண்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
-#, fuzzy
-msgid  "Another complex number"
-msgstr "இன்னொரு சிக்கல் எண்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the real coefficient of a complex number"
-msgstr "சிக்கல் எண்்ணின் உண்மை விகுதியை அனுப்பும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the sine of a complex number"
-msgstr "Returns சிக்கல் எண்ணின் சைன் மதிப்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the difference of two complex numbers"
-msgstr "இரண்டு சிக்கல் எண்களின் வித்தியாசத்தை அனுப்பும்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
 #, fuzzy
 msgid  "Complex number 1"
@@ -1266,75 +468,37 @@ msgstr "சிக்கல் எண் 1"
 msgid  "Complex number 2"
 msgstr "சிக்கல் எண் 2"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the square root of a complex number"
-msgstr "சிக்கல் எண்ணின் வர்க்க மூலத்தை அளிக்கிறது"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
+msgid  "Returns the tangent of a complex number"
+msgstr "சிக்கல் எண்ணின் சந்திக்கோட்டைத் தருகிறது"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the sum of complex numbers"
-msgstr " சிக்கல் எண்களின் கூடுதலை அளிக்கிறது"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
+msgid  "Returns the secant of a complex number"
+msgstr "சிக்கல் எண்ணின் சீகன்ட்  மதிப்பைத் தருகிறது"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr "உண்மை, மாய எண்களின் விகுதிகளை சிக்கல் எண்ணாக மாற்றும்"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
+msgid  "Returns the cosecant of a complex number"
+msgstr "சிக்கல் எண்ணின் கொசீகன்ட் மதிப்பைத் தரும்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
-#, fuzzy
-msgid  "Real num"
-msgstr "உண்மை எண்"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
+msgid  "Returns the cotangent of a complex number"
+msgstr "சிக்கல் எண்ணின் கோடான்ஞென்ட் மதிப்பைத் தரும்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
-#, fuzzy
-msgid  "The real coefficient"
-msgstr "உண்மை குணகம்"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
+msgid  "Returns the hyperbolic sine of a complex number"
+msgstr "சிக்கல் எண்ணின் ஹைபெர்போலிக் சைன் மதிப்பைத் தரும்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
-#, fuzzy
-msgid  "I num"
-msgstr "I எண்"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
+msgid  "Returns the hyperbolic cosine of a complex number"
+msgstr "சிக்கல் எண்ணின் ஹைபெர்போலிக் கோசைன் மதிப்பைத் தரும்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
-#, fuzzy
-msgid  "The imaginary coefficient"
-msgstr "மாய விகுதி"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
+msgid  "Returns the hyperbolic secant of a complex number"
+msgstr "சிக்கல் எண்ணின் ஹைபெர்போலிக் சீகண்ட் மதிப்பைத் தரும்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
-#, fuzzy
-msgid  "Suffix"
-msgstr "பிற்பகுதி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
-#, fuzzy
-msgid  "The suffix"
-msgstr "பிற்பகுதி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a number from one measurement system to another"
-msgstr "ஒர் அளவிடல் முறையிலிருந்து மற்றொரு அளவிடல் முறைக்கு மாற்றுகிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
-#, fuzzy
-msgid  "From unit"
-msgstr "அலகிடலிருந்து"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
-#, fuzzy
-msgid  "Unit of measure for number"
-msgstr "எண்ணை அளப்பதற்கான அலகு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
-#, fuzzy
-msgid  "To unit"
-msgstr "அலகுக்கு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
-#, fuzzy
-msgid  "Unit of measure for the result"
-msgstr "விடையின் அலகு"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
+msgid  "Returns the hyperbolic cosecant of a complex number"
+msgstr "சிக்கல் எண்ணின் ஹைபெர்போலிக் கொசீகண்ட் மதிப்பைத் தரும்"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
 #, fuzzy
@@ -1366,26 +530,6 @@ msgstr "சொத்து வாங்கிய நாள்"
 msgid  "First period"
 msgstr "முதல் காலம்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
-#, fuzzy
-msgid  "Date the first period ends"
-msgstr "முதற்கால இடைவெளி முடிவடையும் தினம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
-#, fuzzy
-msgid  "Salvage"
-msgstr "Salvage"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
-#, fuzzy
-msgid  "Salvage value of an asset at the end of its life"
-msgstr "தாடை மதிப்பு உடைய an asset அங்கே the end உடைய its life"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
-#, fuzzy
-msgid  "Period"
-msgstr "காலம்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
 #, fuzzy
 msgid  "The period"
@@ -1406,40 +550,10 @@ msgstr "தேய்மானத்தின் விகிதம்"
 msgid  "The year basis to be used"
 msgstr "The year basis to be used"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
-#, fuzzy
-msgid  "The date the first period ends"
-msgstr "முதல் கால இடைவெளி முடிவடையும் தினம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
-#, fuzzy
-msgid  "The salvage value of an asset at the end of its life"
-msgstr "முடிவடைந்த பின் பொருளின் மீட்பு மதிப்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr "கால இடைவெளியில் கிடைத்த வட்டித்தொகை"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
 #, fuzzy
 msgid  "Issue"
 msgstr "வழங்கல்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
-#, fuzzy
-msgid  "Issue date of the security"
-msgstr "பாதுகாப்பு வழங்கல் தினம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
-#, fuzzy
-msgid  "First interest"
-msgstr "முதல் வட்டி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
-#, fuzzy
-msgid  "First interest date of the security"
-msgstr "பாதுகாப்புக்கான முதல் வட்டி தேதி"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
 #, fuzzy
@@ -1457,19 +571,12 @@ msgid  "The rate"
 msgstr "விலை"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.10.STRING.TEXT
-#, fuzzy
 msgid  "Par"
 msgstr "பார்"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.11.STRING.TEXT
-#, fuzzy
 msgid  "The par value"
 msgstr "பார் மதிப்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
-#, fuzzy
-msgid  "Frequency"
-msgstr "அலைவரிசை"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
 #, fuzzy
@@ -1487,19 +594,8 @@ msgid  "Returns the accrued interest for a security that pays interest at maturi
 msgstr "முதிர்வுக்கு பின் வழங்கப்படும் வட்டித்தொகை"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
-#, fuzzy
 msgid  "The issue date"
 msgstr "வழங்கிய தேதி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr "முதிர்வுக்கு பின் வழங்கப்படும் தொகை"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
-#, fuzzy
-msgid  "Maturity"
-msgstr "முதிர்வு"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
 #, fuzzy
@@ -1526,11 +622,6 @@ msgstr "தள்ளுபடி"
 msgid  "The discount"
 msgstr "தள்ளுபடி"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the discount rate for a security"
-msgstr "பாதுகாப்புகான ்டுக்கான வட்டி விகிதத்தை தரும்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
 #, fuzzy
 msgid  "Price"
@@ -1542,7 +633,6 @@ msgid  "The price"
 msgstr "விலை"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.8.STRING.TEXT
-#, fuzzy
 msgid  "Redemption"
 msgstr "எடுத்தல்"
 
@@ -1551,45 +641,17 @@ msgstr "எடுத்தல்"
 msgid  "The redemption value"
 msgstr "எடுக்கும் மதிப்பு"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr "வருட மெக்காலே காலத்திற்கான வட்டி வீதத்தை அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
-#, fuzzy
-msgid  "Coupon"
-msgstr "கூப்பன்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
-#, fuzzy
 msgid  "The coupon rate"
 msgstr "கூப்பன் விலை"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.8.STRING.TEXT
-#, fuzzy
 msgid  "Yield"
 msgstr "Yield"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.9.STRING.TEXT
-#, fuzzy
 msgid  "The yield"
 msgstr "பெற்றவை"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the effective annual interest rate"
-msgstr "வருடாந்திர வட்டி வீதத்தை அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
-#, fuzzy
-msgid  "Nominal rate"
-msgstr "அசல் வீதம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
-#, fuzzy
-msgid  "The nominal rate"
-msgstr "மிக சிறிய விகிதம்"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
 #, fuzzy
@@ -1600,16 +662,6 @@ msgstr "Npery"
 #, fuzzy
 msgid  "The periods"
 msgstr "காலங்கள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr "இட்டுவைப்பு மூலதனத்தை இரு கால இடைவெளிக்குள் அளிக்கிறது "
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
-#, fuzzy
-msgid  "Nper"
-msgstr "Nper"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
 #, fuzzy
@@ -1622,14 +674,8 @@ msgid  "Pv"
 msgstr "Pv"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
-#, fuzzy
 msgid  "The present value"
 msgstr "நடப்பு மதிப்பு"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
-#, fuzzy
-msgid  "Start period"
-msgstr "துவக்க காலம்"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
 #, fuzzy
@@ -1656,16 +702,6 @@ msgstr "வகை"
 msgid  "The type of maturity"
 msgstr "முதிர்வு வகை"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the cumulative interest to be paid between two periods"
-msgstr "இரு கால இடைவெளிக்கான இட்டுவைப்பு வட்டித்தொகை"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr "Returns விலை $100 க்கான முக மதிப்பு "
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the price per 100 currency units face value of a discounted security"
@@ -1681,73 +717,12 @@ msgstr " $100க்கான முக மதிப்பை அளிக்க�
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
 msgstr "வருட மெக்காலே காலத்திற்கான $100க்கான வட்டி வீதத்தை அளிக்கிறது "
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the annual nominal interest rate"
-msgstr "சிறிய வருடாந்திர வட்டியை தரும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
-#, fuzzy
-msgid  "Effective rate"
-msgstr "நடப்பு விகிதம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
-#, fuzzy
-msgid  "The effective interest rate"
-msgstr "பயனிலுள்ள வட்டி வீதம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr "தசம விலையை பின்ன விலையாக மாற்றும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
-#, fuzzy
-msgid  "Decimal dollar"
-msgstr "தசம டாலர்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
 #, fuzzy
 msgid  "Fraction"
 msgstr "பின்னம்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
-#, fuzzy
-msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr "பின்ன விலையை தசம விலையாக மாற்றும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
-#, fuzzy
-msgid  "Fractional dollar"
-msgstr "டாலரின் பகுதி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
-#, fuzzy
-msgid  "The number as a fraction"
-msgstr "எண் பின்னமாக"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the yield on a security that pays periodic interest"
-msgstr "வருடாந்திர வட்டியை அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the annual yield for a discounted security"
-msgstr "அளிக்க கூடிய  தள்ளுபடியாான பாதுகாப்பு வருடாந்திர வவருவாயை தரும்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr "முதிர்வுக்கான வருடாந்திர வட்டி வீதத்தை அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr "கருவூர விலை பட்டியலின் சமமான ஒப்பந்த வருவாயை தரும்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
-#, fuzzy
 msgid  "The discount rate"
 msgstr "தள்ளூபடி விகிதம்"
 
@@ -1755,11 +730,6 @@ msgstr "தள்ளூபடி விகிதம்"
 #, fuzzy
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
 msgstr "விலை $100 முக மதிப்பு அல்லது கருவூல ரசீதை அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the yield for a treasury bill"
-msgstr "கருவூல ரசீதுக்கான மதிப்பை அளிக்கிறது"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
 #, fuzzy
@@ -1776,35 +746,15 @@ msgstr "முதல் கூப்பன்"
 msgid  "The first coupon date"
 msgstr "முதல் கூப்பன் தேதி"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the yield of a security with an odd first period"
-msgstr "ஒற்றை காலத்திற்கான விளைவு மதிப்பை அளிக்கிறது"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the price per $100 face value of a security with an odd last period"
 msgstr "கடைசி ஒற்றைப்படைகளீன் பாதுகாப்பிற்கு $100 நிலையான மதீப்பை குறிக்கும் "
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
-#, fuzzy
-msgid  "Last interest"
-msgstr "கடைசி வட்டி"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
 #, fuzzy
 msgid  "The last interest date"
 msgstr "கடைசி வட்டி தேதி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the yield of a security with an odd last period"
-msgstr "ஒற்றைக் காலத்திற்கான விளைவு மதிப்பை அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr "வழங்கலுக்கான உள்வட்டி வீதத்தை அளிக்கிறது "
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
 #, fuzzy
@@ -1826,77 +776,7 @@ msgstr "தேதிகள்"
 msgid  "The dates"
 msgstr "தேதிகள்"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
-#, fuzzy
-msgid  "Guess"
-msgstr "கணிக்க"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
-#, fuzzy
-msgid  "The guess"
-msgstr "யூகி"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr "தற்போதைய வழங்கல் மதிப்பை அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the interest rate for a fully invested security"
-msgstr "முழுமையான பாதுகாப்புள்ள முதலீட்டின் வட்டியை தரும்"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
 #, fuzzy
 msgid  "Returns the first coupon date after the settlement date"
 msgstr "தீர்வு தினத்துக்கு பின்னால் சீட்டு தினம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr "சீட்டு காலங் கொண்ட தீர்வு தினத்துக்கு பிந்தைய தினங்கள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr "அடுத்த சீட்டு தினத்திற்குள் இடைப்பட்ட நாட்கள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr "தொடக்க தினம் மற்றும் முடிவு தினத்துக்குள் இடைப்பட்ட நாட்கள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the last coupon date preceding the settlement date"
-msgstr "தீர்வு தினத்து முந்தைய சீட்டு தினம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr "தொடக்க மற்றும் முதிர்வு தினங்களுக்கு இடையே உள்ள சீட்டுக்கள்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
-#, fuzzy
-msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr "எதிர்கால மதிப்பை கொடுக்கப்பட்ட மூலதனத்திற்கு கணக்கிட்டு அளிக்கிறது"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
-#, fuzzy
-msgid  "Principal"
-msgstr "மூலதனம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
-#, fuzzy
-msgid  "The principal"
-msgstr "மூலதனம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
-#, fuzzy
-msgid  "Schedule"
-msgstr "திட்டம்"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
-#, fuzzy
-msgid  "The schedule"
-msgstr "திட்டம்"

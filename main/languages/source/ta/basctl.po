@@ -33,15 +33,15 @@ msgstr ""
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM1.ITEMLIST.ITEM
 msgid  "Print range"
-msgstr ""
+msgstr "அச்சு எல்லை"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
 msgid  "All ~Pages"
-msgstr ""
+msgstr "எல்லா பக்கங்கள்"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
 msgid  "Pa~ges"
-msgstr ""
+msgstr "பக்கங்கள்"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
 #, fuzzy
@@ -132,11 +132,6 @@ msgstr "'XX' ன் கடவுச்சொல்லை உள்ளிடு"
 #, fuzzy
 msgid  "Name already exists"
 msgstr "பெயர் ஏற்கனவே உள்ளது"
-
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-#, fuzzy
-msgid  "(Signed)"
-msgstr "(கையொப்பமிட்ட)"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 #, fuzzy
@@ -253,26 +248,6 @@ msgstr "பொருள் அல்லது முறை காணப்ப
 msgid  "BASIC"
 msgstr "BASIC"
 
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Ln"
-msgstr "வரி"
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Col"
-msgstr "பத்தி"
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "ஆவணம்"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-#, fuzzy
-msgid  "Macro Bar"
-msgstr "பெருமப்பட்டை"
-
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 #, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
@@ -292,16 +267,6 @@ msgstr "'XX' க்கு பரிந்துரைக்க இயலாத�
 #, fuzzy
 msgid  "Watch"
 msgstr "கவனி"
-
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-#, fuzzy
-msgid  "Variable"
-msgstr "மாறி"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "மதிப்பு"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 #, fuzzy
@@ -348,16 +313,6 @@ msgstr "புதிய தொகுதி"
 msgid  "New Dialog"
 msgstr "புதிய உரையாடல்"
 
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-#, fuzzy
-msgid  "All"
-msgstr "அனைத்தும்"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Page"
-msgstr "பக்கம்"
-
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 #, fuzzy
 msgid  "A name must be entered."
@@ -387,11 +342,6 @@ msgstr "கவனி:"
 #, fuzzy
 msgid  "Calls: "
 msgstr "அழைப்புக்கள்: "
-
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-#, fuzzy
-msgid  "My Macros"
-msgstr "என் மேக்ரோக்கள்"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 #, fuzzy
@@ -463,43 +413,23 @@ msgstr "BASIC உரையாடல்"
 msgid  "Delete"
 msgstr "அழி"
 
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "மறுபெயரிடு"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Hide"
-msgstr "மறை"
-
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 #, fuzzy
 msgid  "Modules..."
 msgstr "தொகுதிகள்..."
-
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "XX மேக்ரோவின் மேலெழுத வேண்டுமா?"
 
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 #, fuzzy
 msgid  "<Not localized>"
 msgstr "<மொழியாக்கப்படவில்லை>"
 
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "[Default Language]"
-msgstr "[முன்னிருப்பு மொழி]"
-
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
-msgstr ""
+msgstr "ஆவணப் பொருட்கள்"
 
 #: basicide/basidesh.src#RID_STR_USERFORMS.STRING.TEXT
 msgid  "Forms"
-msgstr ""
+msgstr "படிவங்கள்"
 
 #: basicide/basidesh.src#RID_STR_NORMAL_MODULES.STRING.TEXT
 #, fuzzy
@@ -508,47 +438,25 @@ msgstr "மேக்ரோக்கள்"
 
 #: basicide/basidesh.src#RID_STR_CLASS_MODULES.STRING.TEXT
 msgid  "Class Modules"
-msgstr ""
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "மாற்று"
+msgstr "வகுப்பு பாகம் "
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
-#, fuzzy
 msgid  "Dialog Import - Name already used"
-msgstr "Dialog Import - பெயர் ஏற்கனவே பயன்படுத்தப்பட்டது"
+msgstr "உரையாடல் இறக்குமதி - பெயர் ஏற்கனவே பயன்படுத்தப்பட்டது"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.STRING.TEXT
 #, fuzzy
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
 msgstr "நூலகம் ஏற்கனவே  இப்பெயருடன் ஒரு உரையாடலை கொண்டுள்ளது:\n\n$(ARG1)\n\nவைத்திருக்கும் நடப்பு உரையாடலுக்கு மறுபெயரிடு அல்லது இருக்கும் உரையாடலை மாற்றவும்.\n "
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "சேர்"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-#, fuzzy
-msgid  "Omit"
-msgstr "விடு"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
-#, fuzzy
 msgid  "Dialog Import - Language Mismatch"
-msgstr "Dialog Import - மொழி பொருந்தவில்லை"
+msgstr "உரையாடல் இறக்குமதி - - மொழி பொருந்தவில்லை"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
 #, fuzzy
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
 msgstr "இலக்கு நூலகத்திற்கத்தை விட மற்ற மொழிகளுக்கு இறக்கப்பட்டட உரையாடலுக்கு துணைப்புரிகிறது.\n\nஉரையாடலின் படி வழங்கப்படுகிற கூடுதல் மொழியை வைத்திருக்கும் நூலகம்மிற்கு இந்த மொழிகளை சேர்க்கவும் அல்லது நடப்பு நூலக மொழிகளுடன் உள்ளவற்றை புறக்கணிக்கவும்.\n\nNote: மொழிகளுக்கு உரையாடல் மறுமூலங்களின் உரையாடல்களின் முன்னிருப்பின் படி துணைபுரியாமல் பயன்படுத்தப்படும்.\n "
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "புதிய"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 #, fuzzy
@@ -564,16 +472,6 @@ msgstr "இயக்கத்திலுள்ளது"
 #, fuzzy
 msgid  "Pass Count:"
 msgstr "சென்ற எண்ணிக்கை:"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Breakpoints"
-msgstr "நிறுத்தப்புள்ளிகள்"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-#, fuzzy
-msgid  "Manage Breakpoints"
-msgstr "நிறுத்தப்புள்ளிகளை மேலாண்மை செய்"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 #, fuzzy
@@ -645,11 +543,6 @@ msgstr "அழி (~D)"
 msgid  "~Organizer..."
 msgstr "ஒருங்கிணைப்பி (~O)..."
 
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-#, fuzzy
-msgid  "Macro"
-msgstr "மேக்ரோ"
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 #, fuzzy
 msgid  "~New"
@@ -659,11 +552,6 @@ msgstr "புதிய (~N)"
 #, fuzzy
 msgid  "Choose"
 msgstr "தேர்ந்தெடு"
-
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "இயக்கு"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 #, fuzzy
@@ -795,11 +683,6 @@ msgstr "நீட்சி"
 msgid  "Description"
 msgstr "விளக்கம்"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help information"
-msgstr "உதவித் தகவல்"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Help ID"
@@ -810,19 +693,9 @@ msgstr "உதவி ID"
 msgid  "Help file name"
 msgstr "உதவிக் கோப்பின் பெயர்"
 
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-#, fuzzy
-msgid  "Objects"
-msgstr "பொருள்கள்"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Show"
-msgstr "காட்டு"
-
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
-msgstr ""
+msgstr "பொருட்கள் மரம்"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 #, fuzzy
@@ -849,20 +722,10 @@ msgstr "பயனர் முகப்பு மொழிகளை மேலா
 msgid  "Present Languages"
 msgstr "தற்போதைய மொழிகள்"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Add..."
-msgstr "சேர்..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Delete"
 msgstr "அழி"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "முன்னிருப்பு"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -873,11 +736,6 @@ msgstr "பயனர் முகப்பு இடத்திற்கு எ
 #, fuzzy
 msgid  "~Close"
 msgstr "மூடு (~C)"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-#, fuzzy
-msgid  "[Default Language]"
-msgstr "[முன்னிருப்பு மொழி]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 #, fuzzy
@@ -894,15 +752,14 @@ msgstr "<மொழி வளங்களை உருவாக்க 'சேர�
 msgid  "Delete Language Resources"
 msgstr "மொழி வளங்களை அழி"
 
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "தேர்ந்தெடுக்கப்பட்ட மொழி(களின்) வளங்களை அழிக்கவுள்ளீர்கள். இம்மொழி(களின்) அனைத்து பயனர் முகப்பு சரங்களும் அழிக்கப்படும்.\n\nஉறுதியாக தேர்ந்தெடுக்கப்பட்டட மொழியின் வளங்களை அழிக்க வேண்டுமா?"
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "முன்னிருப்பு பயனர் முகப்பு மொழியை அமை"
-
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Default language"
-msgstr "முன்னிருப்பு மொழி"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 #, fuzzy

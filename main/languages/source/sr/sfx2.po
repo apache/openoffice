@@ -31,36 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
-#, fuzzy
-msgid  "Configuration Menu"
-msgstr "Мени подешавања"
-
-#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
-#, fuzzy
-msgid  "~Add-Ons"
-msgstr "Дод~аци"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Cu~t"
-msgstr "И~сеци"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Copy"
-msgstr "~Копирај"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Paste"
-msgstr "У~баци"
-
-#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
-#, fuzzy
-msgid  "Leave Full-Screen Mode"
-msgstr "Напусти режим целог екрана"
-
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 #, fuzzy
 msgid  "Add-~On Help"
@@ -81,90 +51,28 @@ msgstr "(нема)"
 msgid  "~Thesaurus..."
 msgstr "~Синоними..."
 
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "My Templates"
-msgstr "Моји шаблони"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Business Correspondence"
-msgstr "Пословна преписка"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Other Business Documents"
-msgstr "Остали пословни документи"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Personal Correspondence and Documents"
-msgstr "Лична преписка и документи"
-
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Forms and Contracts"
 msgstr "Формулари и Уговори"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Finances"
-msgstr "Финансије"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Education"
-msgstr "Образовање"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentation Backgrounds"
-msgstr "Позадине презентација"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentations"
-msgstr "Презентације"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Miscellaneous"
-msgstr "Разно"
-
-#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
-#, fuzzy
-msgid  "The templates are being initialized for first-time usage."
-msgstr "Шаблони се покрећу за прву употребу."
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Шаблони"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New template"
-msgstr "Нови шаблон"
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "~Категорије"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Templates"
-msgstr "~Шаблони"
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr "Чување у спољном формату може довести до\nгубитка неких података. Ипак желите да затворите?"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Уреди"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "~Планер..."
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr "Име се већ користи.\nЖелите ли да препишете шаблон документа?"
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 #, fuzzy
@@ -176,170 +84,52 @@ msgstr "Желите ли да обришете област „$1“?"
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Желите ли да обришете унос „$1“?"
 
-#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "Документ „$(DOC)“ је промењен.\nЖелите ли да сачувате измене?"
-
-#: doc/doc.src#STR_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Styles"
-msgstr "Стилови"
-
-#: doc/doc.src#STR_MACROS.STRING.TEXT
-#, fuzzy
-msgid  "Macros"
-msgstr "Макрои"
-
-#: doc/doc.src#STR_CONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configuration"
-msgstr "Подешавање"
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr "Категорија није празна.\nИпак обрисати?"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 #, fuzzy
 msgid  "Styles in "
 msgstr "Стилови у "
 
-#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Printing Styles"
-msgstr "Стилови за штампу"
-
-#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The print job could not be started."
-msgstr "Штампање се не може покренути."
-
-#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
-#, fuzzy
-msgid  "Copy"
-msgstr "Копирај"
-
-#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "The template could not be opened."
-msgstr "Шаблон се није могао отворити."
-
-#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document already open for editing."
-msgstr "Документ је већ отворен за уређивање."
-
-#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "Error recording document "
-msgstr "Грешка при снимању документа "
-
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Шаблони"
-
-#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "Грешка при копирању шаблона „$1“. \nШаблон истог имена већ постоји."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "The template \"$1\" can not be deleted."
 msgstr "Шаблон „$1“ се не може да обрисати."
 
-#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error moving template \"$1\"."
-msgstr "Грешка при премештању шаблона „$1“."
-
-#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The update could not be saved."
-msgstr "Измена се није могла сачувати."
-
-#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "Грешка при чувању шаблона "
-
-#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Error renaming template."
-msgstr "Грешка при преименовању шаблона."
-
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "Error renaming template category."
 msgstr "Грешка при преименовању категорије шаблона."
 
-#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Please specify a name."
-msgstr "Наведите име."
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr "Наведите јединствено име.\nУноси не смеју да разликују мала и велика слова."
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "Поставити шаблон „$(TEXT)“ као подразумевани?"
 
-#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Do you want to reset the default template?"
-msgstr "Желите ли да поништите подразумевани шаблон?"
-
-#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document info cannot be read."
-msgstr "Не могу да прочитам податке о документу."
-
-#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
-#, fuzzy
-msgid  "The selected file has an incorrect format."
-msgstr "Изабрана датотека није исправног формата."
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr "Фасцикла шаблона\n$(DIR)\nне постоји."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 #, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 msgstr "Документ се не може сачувати у формату $(FORMAT). Желите ли\nда сачувате измене у формату $(OWNFORMAT)?"
 
-#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "~Сачувај"
-
-#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Update"
-msgstr "~Освежи"
-
-#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save ~As..."
-msgstr "Сачувај ~као..."
-
-#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save Copy ~as..."
-msgstr "Сачувај копију ~као..."
-
-#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Затвори"
-
-#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-#, fuzzy
-msgid  "~Close & Return to "
-msgstr "~Затвори и врати се на "
-
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 #, fuzzy
 msgid  " AutoPilot"
 msgstr " Аутопилот"
-
-#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configurations"
-msgstr "Подешавања"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 #, fuzzy
@@ -351,260 +141,43 @@ msgstr "%PRODUCTNAME бејзик библиотеке"
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "Заменити стил „$(ARG1)“?"
 
-#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
-#, fuzzy
-msgid  "Loading Document"
-msgstr "Учитавам документ"
-
-#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
-#, fuzzy
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "Повезивање на: $(HOST). Чекам одговор..."
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
-#, fuzzy
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "Отварам $(TARGET) са $(HOST)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
-#, fuzzy
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "Учитавам: $(TARGET) са $(HOST). Учитано: $(BYTE)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
-#, fuzzy
-msgid  "Disconnected"
-msgstr "Прекинута веза"
-
-#: doc/doc.src#STR_EDIT.STRING.TEXT
-#, fuzzy
-msgid  "Edit"
-msgstr "Уреди"
-
-#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Documents"
-msgstr "Документи програма %PRODUCTNAME"
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr "Документ се није могао отворити за уређивање.\nЖелите ли да га отворите само за читање?"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 #, fuzzy
 msgid  "Propert~ies..."
 msgstr "Сво~јства..."
 
-#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
-#, fuzzy
-msgid  "HTML (FrameSet)"
-msgstr "ХТМЛ (фрејмови)"
-
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 #, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "Документ са оквиром програма %PRODUCTNAME"
-
-#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
-#, fuzzy
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "Шаблон „$(TEMPLATE)“ није пронађен на оригиналној локацији. Шаблон истог имена постоји у „$(FOUND)“. Користити овај шаблон за будућа поређења?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 #, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "Шаблон „$(TEMPLATE)“ није пронађен. Тражити шаблон следећи пут када се документ отвара?"
 
-#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Automatically saved version"
-msgstr "Аутоматски сачувана верзија"
-
-#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
-#, fuzzy
-msgid  "Text Document"
-msgstr "Текст"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
-#, fuzzy
-msgid  "HTML Document"
-msgstr "ХТМЛ документ"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
-#, fuzzy
-msgid  "Master Document"
-msgstr "Главни документ"
-
-#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "Таблица"
-
-#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
-#, fuzzy
-msgid  "Presentation"
-msgstr "Презентација"
-
-#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
-#, fuzzy
-msgid  "Drawing"
-msgstr "Цртеж"
-
-#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "Message"
-msgstr "Порука"
-
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 #, fuzzy
 msgid  "~Discard"
 msgstr "~Одбаци измене"
-
-#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
-#, fuzzy
-msgid  "Access to the current data medium not possible."
-msgstr "Приступ тренутном медијуму за чување података није могућ."
-
-#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
-#, fuzzy
-msgid  "Insert the next data carrier and click OK."
-msgstr "Убаците следећи носач података и кликните „У реду“."
-
-#: doc/doc.src#STR_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "Објекат"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
-#, fuzzy
-msgid  "Run Macro"
-msgstr "Покрени макро"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "This document contains macros. $(TEXT)"
-msgstr "Овај документ садржи макрое. $(TEXT)"
-
-#: doc/doc.src#BTN_OK.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "Покрени"
-
-#: doc/doc.src#BTN_CANCEL.STRING.TEXT
-#, fuzzy
-msgid  "Do Not Run"
-msgstr "Не покрећи"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 #, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "С обзиром на безбедносна подешавања, макрои не би требало да се покрећу. Желите ли ипак да их покренете?"
 
-#: doc/doc.src#FT_OK.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to allow these macros to be run?"
-msgstr "Желите ли да дозволите покретање ових макроа?"
-
-#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Export as PDF"
-msgstr "Извези као ПДФ"
-
-#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export..."
-msgstr "Извези..."
-
-#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Извези"
-
-#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
-#, fuzzy
-msgid  "Add this directory to the list of secure paths: "
-msgstr "Додај овај директоријум у листу безбедних путања: "
-
-#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
-#, fuzzy
-msgid  "File format:"
-msgstr "Формат датотеке:"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-#, fuzzy
-msgid  "This document contains:\n\n"
-msgstr "Овај документ садржи:\n\n"
-
-#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
-#, fuzzy
-msgid  "Recorded changes"
-msgstr "Снимљене измене"
-
-#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
-#, fuzzy
-msgid  "Notes"
-msgstr "Белешке"
-
-#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
-#, fuzzy
-msgid  "Document versions"
-msgstr "Верзије документа"
-
-#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
-#, fuzzy
-msgid  "Fields"
-msgstr "Поља"
-
-#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
-#, fuzzy
-msgid  "Linked data..."
-msgstr "Повезани подаци..."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue saving the document?"
-msgstr "Желите ли да наставите са чувањем документа?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue printing the document?"
-msgstr "Желите ли да наставите са штампањем документа?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue signing the document?"
-msgstr "Желите ли да наставите са потписивањем документа?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "Желите ли да наставите са израдом ПДФ датотеке?"
-
-#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "Уколико не желите да препишете оригинални документ, сачувајте рад под новим именом."
-
-#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Some template files are protected and can not be deleted."
-msgstr "Неке датотеке са шаблонима су заштићене и не могу бити обрисане."
-
-#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Info %1"
-msgstr "Податак %1"
-
 #: doc/doc.src#STR_SHARED.STRING.TEXT
 #, fuzzy
 msgid  " (shared)"
 msgstr "(дељено)"
 
-#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-#, fuzzy
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "Верзија формата за овај документ је постављена на ОДФ 1.1 (OpenOffice.org 2.x) у „Алатке - Подешавања - Учитај и сачувај - Опште“. Потписивање захтева ОДФ 1.2 (OpenOffice.org 3.x)."
-
-#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "Шаблон „$(ARG1)“ по коме је овај документ направљен је измењен. Да ли желите да ажурирате форматирање у стиловима по новом шаблону?"
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr "Потребно је сачувати документ пре потписивања. Чување документа уклања све постојеће потписе.\nЖелите ли да сачувате документ?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 #, fuzzy
@@ -616,21 +189,6 @@ msgstr "~Ажурирај стилове"
 msgid  "~Keep Old Styles"
 msgstr "~Задржи старе стилове"
 
-#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Template Management"
-msgstr "Управљање шаблонима"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Затвори"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~File..."
-msgstr "~Датотека..."
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Address Book..."
@@ -641,30 +199,10 @@ msgstr "~Адресар..."
 msgid  "Templates"
 msgstr "Шаблони"
 
-#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Documents"
-msgstr "Документи"
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 #, fuzzy
 msgid  "Commands"
 msgstr "Наредбе"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New"
-msgstr "~Ново"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Обриши"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Уреди"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 #, fuzzy
@@ -675,11 +213,6 @@ msgstr "Увези шаблон..."
 #, fuzzy
 msgid  "Export Template..."
 msgstr "Извези шаблон..."
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Print"
-msgstr "~Штампај"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 #, fuzzy
@@ -701,188 +234,35 @@ msgstr "Постави као подразумевани шаблон"
 msgid  "Reset Default Template"
 msgstr "Поништи подразумевани шаблон"
 
-#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "Ново"
-
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "~Категорије"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "T~emplates"
-msgstr "Ш~аблони"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 #, fuzzy
 msgid  "~More"
 msgstr "~Још"
 
-#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Pre~view"
-msgstr "П~реглед"
-
-#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Опис"
-
-#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Te~xt"
-msgstr "~Текст"
-
-#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Frame"
-msgstr "~Оквир"
-
-#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Pages"
-msgstr "~Странице"
-
-#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "N~umbering"
-msgstr "Н~умерисање"
-
-#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Overwrite"
-msgstr "~Препиши"
-
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "From File..."
 msgstr "Из датотеке..."
-
-#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Load Styles"
-msgstr "Учитај стилове"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Наслов"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Subject"
 msgstr "Тема"
 
-#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Key words"
-msgstr "~Кључне речи"
-
-#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Description"
-msgstr "~Опис"
-
-#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "Изабрани филтер $(FILTER) није инсталиран.\nЖелите ли то сада да урадите?"
-
-#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "Изабрани филтер $(FILTER) није укључен у вашем издању.\nНа нашој матичној страници можете пронаћи податке о наручивању."
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Reduce print data"
-msgstr "Умањи податке за штампу"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Settings for"
-msgstr "Подешавања за"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Printer"
-msgstr "~Штампач"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Print to ~file"
-msgstr "Штампај у ~датотеку"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Reduce transparency"
-msgstr "~Смањи провидност"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Auto~matically"
-msgstr "Ауто~матско"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~No transparency"
-msgstr "~Без провидности"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~gradients"
-msgstr "Смањи ~преливе"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Gradient ~stripes"
 msgstr "Пруге ~прелива"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Intermediate ~color"
-msgstr "Прелазна ~боја"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~bitmaps"
-msgstr "Умањи ~битмапе"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~High print quality"
-msgstr "~Високи квалитет штампе"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~ormal print quality"
-msgstr "~Обичан квалитет штампе"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Reso~lution"
 msgstr "Рез~олуција"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "72 DPI"
-msgstr "72 ТПИ"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "96 DPI"
-msgstr "96 ТПИ"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (факс)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "200 DPI (default)"
-msgstr "200 ТПИ (подразумевано)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
@@ -894,85 +274,20 @@ msgstr "300 ТПИ"
 msgid  "600 DPI"
 msgstr "600 ТПИ"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Include transparent ob~jects"
-msgstr "Укључи провидне об~јекте"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Con~vert colors to grayscale"
 msgstr "Прет~вори боје у нијансе сиве"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Printer warnings"
-msgstr "Упозорења штампача"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "P~aper size"
-msgstr "Величина п~апира"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pap~er orientation"
 msgstr "Ори~јентација папира"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Transparency"
-msgstr "~Провидност"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Warning"
-msgstr "Упозорење"
-
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr "Документ садржи провидне објекте.\nТо на неким штампачима може довести\nдо дужег штампања. Умањити однос\nпровидности?"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
-#, fuzzy
-msgid  "~Yes"
-msgstr "~Да"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~No"
-msgstr "~Не"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Cancel"
-msgstr "~Одустани"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Do not show warning again"
-msgstr "~Не приказуј поново упозорење"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Style Catalog"
-msgstr "Каталог стилова"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "~Планер..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete..."
-msgstr "~Обриши..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Modify..."
-msgstr "~Промени..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 #, fuzzy
@@ -980,33 +295,14 @@ msgid  "~New..."
 msgstr "~Ново..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
+#, fuzzy
 msgid  "Style List"
 msgstr ""
-
-#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
-#, fuzzy
-msgid  "Hierarchical"
-msgstr "Хијерархијско"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 #, fuzzy
 msgid  "Styles and Formatting"
 msgstr "Стилови и форматирање"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Fill Format Mode"
-msgstr "Режим форматирања попуњавањем"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "New Style from Selection"
-msgstr "Нови стил из избора"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Update Style"
-msgstr "Ажурирај стил"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 #, fuzzy
@@ -1083,110 +379,15 @@ msgstr "Скини заштиту са записа"
 msgid  "Incorrect password"
 msgstr "Погрешна лозинка"
 
-#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New versions"
-msgstr "Нове верзије"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Save ~New Version"
-msgstr "Сачувај ~нову верзију"
-
-#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Always save a version on closing"
-msgstr "~Увек чувај верзију при затварању"
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Existing versions"
-msgstr "Постојеће верзије"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time"
-msgstr "Датум и време"
-
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Saved by"
 msgstr "Сачувао је"
 
-#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "Коментари"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Затвори"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Open"
-msgstr "Отвори"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Show..."
-msgstr "~Прикажи..."
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Обриши"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Compare"
-msgstr "Упореди"
-
-#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Versions of"
-msgstr "Верзије"
-
-#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time : "
-msgstr "Датум и време: "
-
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Saved by "
 msgstr "Сачувао је "
-
-#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Затвори"
-
-#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Insert Version Comment"
-msgstr "Уметни коментар верзије"
-
-#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
-#, fuzzy
-msgid  "Version comment"
-msgstr "Коментар верзије"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Name"
-msgstr "~Име"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~AutoUpdate"
-msgstr "~Аутоматско ажурирање"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ne~xt Style"
-msgstr "Сле~дећи стил"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1198,165 +399,25 @@ msgstr "Повезано са"
 msgid  "~Category"
 msgstr "~Категорија"
 
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contains"
-msgstr "Садржи"
-
-#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Current version"
-msgstr "Тренутна верзија"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Извези"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
-#, fuzzy
-msgid  "Insert"
-msgstr "Уметни"
-
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 #, fuzzy
 msgid  "~Insert"
 msgstr "~Уметни"
-
-#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
-#, fuzzy
-msgid  "<All formats>"
-msgstr "<Сви формати>"
-
-#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
-#, fuzzy
-msgid  "~Automatic file name extension"
-msgstr "~Аутоматски наставак имена датотеке"
-
-#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
-#, fuzzy
-msgid  "~Selection"
-msgstr "~Избор"
-
-#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
-#, fuzzy
-msgid  "~Link"
-msgstr "~Веза"
-
-#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
-#, fuzzy
-msgid  "Pr~eview"
-msgstr "П~реглед"
-
-#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "~Само за читање"
-
-#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
-#, fuzzy
-msgid  "Save with ~password"
-msgstr "Сачувај са ~лозинком"
-
-#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Edit ~filter settings"
-msgstr "Уреди подешавања ~филтера"
-
-#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
-#, fuzzy
-msgid  "~Play"
-msgstr "~Репродукуј"
-
-#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
-#, fuzzy
-msgid  "Sto~p"
-msgstr "Зауста~ви"
-
-#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
-#, fuzzy
-msgid  "~Open"
-msgstr "~Отвори"
-
-#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "~Сачувај"
-
-#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Style:"
-msgstr "Стил:"
-
-#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "~Templates:"
-msgstr "~Шаблони:"
-
-#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
-#, fuzzy
-msgid  "~Version:"
-msgstr "~Верзија:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 #, fuzzy
 msgid  "Find on this Page"
 msgstr "Пронађи на овој страници"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Search for"
-msgstr "~Претрага за"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Whole words only"
-msgstr "~Само целе речи"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Match case"
-msgstr "~Разликуј велика и мала слова"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Wrap ~around"
 msgstr "Врти у ~круг"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Backwards"
-msgstr "~Уназад"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Find"
 msgstr "~Пронађи"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Затвори"
-
-#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Enter Password"
-msgstr "Унеси лозинку"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~User"
-msgstr "~Корисник"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Password"
-msgstr "~Лозинка"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Confirm"
-msgstr "~Потврди"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 #, fuzzy
@@ -1378,56 +439,6 @@ msgstr "~Потврди"
 msgid  "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME документ"
 
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Наслов"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Subject"
-msgstr "~Тема"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Keywords"
-msgstr "~Кључне речи"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Comments"
-msgstr "~Коментари"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Type:"
-msgstr "Врста:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "~Само за читање"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "Локација:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Size:"
-msgstr "Величина:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Created:"
-msgstr "Направљено:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "Измењено:"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Digitally signed:"
@@ -1437,26 +448,6 @@ msgstr "Ел. потписано:"
 #, fuzzy
 msgid  "Digital Signature..."
 msgstr "Електронски потпис..."
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
-#, fuzzy
-msgid  "Multiply signed document"
-msgstr "Вишеструко потписани документ"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Last printed:"
-msgstr "Одштампано:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Total editing time:"
-msgstr "Време уређивања:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Revision number:"
-msgstr "Број ревизије:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1468,39 +459,15 @@ msgstr "Ресетуј"
 msgid  "~Apply user data"
 msgstr "~Укључи податке о кориснику"
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template:"
-msgstr "Шаблон:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
-#, fuzzy
-msgid  "unknown"
-msgstr "непознато"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "File Name"
 msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Info fields..."
-msgstr "~Поља са подацима..."
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Do not refresh automatically"
-msgstr "Не освежавај аутоматски"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Refresh this document"
 msgstr "Освежи овај документ"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "every"
-msgstr "сваких"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1511,16 +478,6 @@ msgstr "сек."
 #, fuzzy
 msgid  "Redirect from this document"
 msgstr "Преусмери из овог документа"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "after"
-msgstr "након"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "to URL"
-msgstr "на УРЛ"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1537,205 +494,20 @@ msgstr "Ако изаберете опцију „%PLACEHOLDER%“, онда м�
 msgid  "~Properties"
 msgstr "~Својства"
 
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Име"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Тип"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "Вредност"
-
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Add"
 msgstr "~Додај"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-#, fuzzy
-msgid  "Property Name"
-msgstr "Име својства"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Checked by"
-msgstr "Прегледано"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Client"
-msgstr "Клијент"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date completed"
-msgstr "Датум завршетка"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Department"
-msgstr "Служба"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Destinations"
-msgstr "Одредиште"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Disposition"
-msgstr "Депоновано"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Division"
-msgstr "Одељење"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Document number"
-msgstr "Број документа"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Editor"
-msgstr "Уредник"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "E-Mail"
-msgstr "Е-пошта"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Forward to"
-msgstr "Прослеђено"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Group"
-msgstr "Група"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Info"
-msgstr "Подаци"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Language"
-msgstr "Језик"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Mailstop"
-msgstr "Адресни код"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Matter"
-msgstr "Питање"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Office"
-msgstr "Канцеларија"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Owner"
-msgstr "Власник"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Project"
-msgstr "Пројекат"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Publisher"
-msgstr "Издавач"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Purpose"
-msgstr "Сврха"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Received from"
-msgstr "Пошиљаоц"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded by"
-msgstr "Аутор снимка"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded date"
-msgstr "Датум снимања"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Reference"
-msgstr "Референца"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Source"
-msgstr "Извор"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Status"
-msgstr "Статус"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Telephone number"
-msgstr "Број телефона"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Typist"
-msgstr "Дактилограф"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-#, fuzzy
-msgid  "URL"
-msgstr "УРЛ"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "Текст"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 #, fuzzy
 msgid  "DateTime"
 msgstr "Датум и време"
 
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "Датум"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Duration"
 msgstr "Трајање"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "Број"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 #, fuzzy
@@ -1747,45 +519,9 @@ msgstr "Да или не"
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " Г: %1 М: %2 Д: %3 сати: %4 мин: %5 сек: %6"
 
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "Да"
-
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "Не"
-
-#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Remove Property"
-msgstr "Уклони својство"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Properties of "
-msgstr "Својства документа "
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Опште"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Опис"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Custom Properties"
-msgstr "Посебна својства"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Internet"
-msgstr "Интернет"
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr "Унесена вредност не одговара датом типу.\nВредност ће бити сачувана као текст."
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 #, fuzzy
@@ -1827,11 +563,6 @@ msgstr "~Сати"
 msgid  "Min~utes"
 msgstr "Ми~нути"
 
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Seconds"
-msgstr "~Секунде"
-
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Millise~conds"
@@ -1841,26 +572,6 @@ msgstr "Ми~лисекунде"
 #, fuzzy
 msgid  "Edit Field Names"
 msgstr "Уреди имена поља"
-
-#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Names"
-msgstr "Имена"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Create Style"
-msgstr "Направи стил"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Style name"
-msgstr "Име стила"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Style already exists. Overwrite?"
-msgstr "Стил већ постоји. Заменити?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 #, fuzzy
@@ -1882,75 +593,32 @@ msgstr "Откажи снимање"
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 msgstr "%PRODUCTNAME није успео да пронађе употребљива подешавања е-поште. Сачувајте локално документ, па га затим приложите у програму за е-пошту."
 
-#: dialog/dialog.src#STR_RESET.STRING.TEXT
-#, fuzzy
-msgid  "~Reset"
-msgstr "~Ресетуј"
-
-#: dialog/dialog.src#STR_APPLY.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Примени"
-
-#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
-#, fuzzy
-msgid  "Organizer"
-msgstr "Планер"
-
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "This name is already in use."
 msgstr "Име се већ користи."
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "This Style does not exist."
-msgstr "Овај стил не постоји."
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr "Овај стил се не може користити као основни стил\nзато што би се јавила повратна референца."
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr "Име већ постоји као основни стил.\nИзаберите друго име."
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "Желите ли да обришете стил $1?"
 
-#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-#, fuzzy
-msgid  "You are deleting an applied Style!\n"
-msgstr "Бришете примењени стил!\n"
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "Ново..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Modify..."
-msgstr "Промени..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete..."
-msgstr "Обриши..."
-
-#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
-#, fuzzy
-msgid  "Navigator"
-msgstr "Навигатор"
-
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 #, fuzzy
 msgid  "Task Pane"
 msgstr "Пано задатака"
 
-#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Faulty password confirmation"
-msgstr "Потврда погрешне лозинке"
-
-#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-#, fuzzy
-msgid  "Send"
-msgstr "Пошаљи"
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 #, fuzzy
@@ -1982,70 +650,10 @@ msgstr "Овај документ може садржати форматирањ
 msgid  "~Keep Current Format"
 msgstr "~Задржи изабрани формат"
 
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Save in ODF Format"
-msgstr "~Сачувај као ОДФ"
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "~More Information..."
-msgstr "~Више информација..."
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Ask when not saving in ODF format"
-msgstr "~Постави питање када се не чува као ОДФ"
-
-#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Нема подразумеваног штампача.\nИзаберите штампач и покушајте поново."
-
-#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Не могу да покренем штампач.\nПроверите подешавања штампача."
-
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 #, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr "Документ је припремљен за штампач $1. Тај штампач није доступан. \nЖелите ли да користите стандардни штампач $2 ?"
-
-#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Options..."
-msgstr "Подешавања..."
-
-#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Printer Options"
-msgstr "Опције штампе"
-
-#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
-#, fuzzy
-msgid  "Printer busy"
-msgstr "Штампач је заузет"
-
-#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Error while printing"
-msgstr "Грешка при штампи"
-
-#: view/view.src#STR_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Printing"
-msgstr "Штампање"
-
-#: view/view.src#STR_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Page "
-msgstr "Страница "
-
-#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "Грешка при чувању шаблона "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 #, fuzzy
@@ -2067,483 +675,294 @@ msgstr "Величина странице је промењена.\nДа ли д
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Наслов:</b><dd>$(TITEL)<dt><b>Тема:</b><dd>$(THEME)<dt><b>Кључне речи:</b><dd>$(KEYWORDS)<dt><b>Опис:</b><dd>$(TEXT)</dl></font></body></html>"
 
-#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
-#, fuzzy
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Својства документа не могу бити нађена.</B></FONT></P></BODY></HTML>"
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr "Документ се не може затворити зато што је\n посао штампањау току."
 
-#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Print Monitor"
-msgstr "Надзорник штампача"
-
-#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "is being printed on"
-msgstr "се штампа на"
-
-#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-#, fuzzy
-msgid  "is being prepared for printing"
-msgstr "се припрема за штампу"
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr "Грешка при слању писма. Узрок може бити недостатак корисничког налога или неисправне поставке.\nПроверите подешавања пакета %PRODUCTNAME или подешавања програма за е-пошту."
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "Овај документ не може да се уређује, вероватно због недостатка права приступа. Желите ли да уређујете копију документа?"
 
-#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  " (repaired document)"
-msgstr " (поправљени документ)"
-
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME није пронашао веб прегледник на систему. Проверите поставке радног окружења или инсталирајте веб прегледник (Мозилу, на пример) на подразумевано место које инсталација затражи."
 
-#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
-msgid  "Modify Link"
-msgstr "Измени везу"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr ""
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
-msgid  "~Application:"
-msgstr "~Програм:"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr ""
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
-msgid  "~File:"
-msgstr "~Датотека:"
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr ""
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category:"
 msgstr "~Категорија:"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
-msgid  "Modify link"
-msgstr "Промени везу"
-
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
+#, fuzzy
 msgid  "Untitled"
 msgstr ""
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "Затвори"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
 msgstr ""
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
+#, fuzzy
 msgid  "Standard"
 msgstr ""
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
+#, fuzzy
 msgid  "Bytes"
 msgstr ""
 
 #: appl/app.src#STR_KB.STRING.TEXT
+#, fuzzy
 msgid  "KB"
 msgstr ""
 
 #: appl/app.src#STR_MB.STRING.TEXT
+#, fuzzy
 msgid  "MB"
 msgstr ""
 
 #: appl/app.src#STR_GB.STRING.TEXT
+#, fuzzy
 msgid  "GB"
 msgstr ""
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Cancel all changes?"
 msgstr ""
 
-#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
-msgid  "Document already open."
-msgstr "Документ је већ отворен."
-
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME није пронашао веб прегледник на систему. Проверите поставке радног окружења или инсталирајте веб прегледник (Мозилу, на пример) на подразумевано место које инсталација затражи."
 
-#: appl/app.src#GID_INTERN.STRING.TEXT
-msgid  "Internal"
-msgstr "Унутрашње"
-
-#: appl/app.src#GID_APPLICATION.STRING.TEXT
-msgid  "Application"
-msgstr "Програм"
-
-#: appl/app.src#GID_VIEW.STRING.TEXT
-msgid  "View"
-msgstr "Приказ"
-
-#: appl/app.src#GID_DOCUMENT.STRING.TEXT
-msgid  "Documents"
-msgstr "Документи"
-
-#: appl/app.src#GID_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "Уреди"
-
-#: appl/app.src#GID_MACRO.STRING.TEXT
-msgid  "BASIC"
-msgstr "Бејзик"
-
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
 msgstr "Подешавања"
 
 #: appl/app.src#GID_MATH.STRING.TEXT
+#, fuzzy
 msgid  "Math"
 msgstr "Математика"
 
-#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
-msgid  "Navigate"
-msgstr "Навигација"
-
-#: appl/app.src#GID_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Уметни"
-
-#: appl/app.src#GID_FORMAT.STRING.TEXT
-msgid  "Format"
-msgstr "Формат"
-
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
 msgstr "Шаблони"
 
-#: appl/app.src#GID_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "Текст"
-
-#: appl/app.src#GID_FRAME.STRING.TEXT
-msgid  "Frame"
-msgstr "Оквир"
-
-#: appl/app.src#GID_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Graphic"
-msgstr "Графика"
-
-#: appl/app.src#GID_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Табела"
-
-#: appl/app.src#GID_ENUMERATION.STRING.TEXT
-msgid  "Numbering"
-msgstr "Нумерисање"
-
-#: appl/app.src#GID_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "Подаци"
-
-#: appl/app.src#GID_SPECIAL.STRING.TEXT
-msgid  "Special Functions"
-msgstr "Посебне функције"
-
 #: appl/app.src#GID_IMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Image"
 msgstr "Слика"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
 msgstr "График"
 
-#: appl/app.src#GID_EXPLORER.STRING.TEXT
-msgid  "Explorer"
-msgstr "Претраживач"
-
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
+#, fuzzy
 msgid  "Connector"
 msgstr "Повезивач"
 
-#: appl/app.src#GID_MODIFY.STRING.TEXT
-msgid  "Modify"
-msgstr "Измени"
-
-#: appl/app.src#GID_DRAWING.STRING.TEXT
-msgid  "Drawing"
-msgstr "Цртеж"
-
-#: appl/app.src#GID_CONTROLS.STRING.TEXT
-msgid  "Controls"
-msgstr "Контроле"
-
-#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
-msgid  "Do you want to save the changes to %1?"
-msgstr "Желите ли да сачувате промене у %1?"
-
-#: appl/app.src#STR_QUITAPP.STRING.TEXT
-msgid  "E~xit"
-msgstr "Н~апусти"
-
-#: appl/app.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "Помоћ"
-
-#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
-msgid  "No automatic start at 'XX'"
-msgstr "Без аутоматског покретања на „XX“"
-
-#: appl/app.src#RID_HELPBAR.STRING.TEXT
-msgid  "Help Bar"
-msgstr "Панел помоћи"
-
-#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
-msgid  "The help file for this topic is not installed."
-msgstr "Датотека за помоћ на ову тему није инсталирана."
-
-#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
-msgid  "Function Bar"
-msgstr "Панел с функцијама"
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr "Програм не може бити сада затворен.\nСачекајте док се послови на штампи или\nакције из OLE-а не заврше и затворе сви прозорчићи."
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr "Јавила се грешка у посебним подешавањима.\nОбратите се администратору."
 
-#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
-msgid  "Exit Quickstarter"
-msgstr "Затвори брзи покретач"
-
-#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "Брзи покретач програма %PRODUCTNAME %PRODUCTVERSION"
-
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
+#, fuzzy
 msgid  "Open Document..."
 msgstr "Отвори документ..."
 
-#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
-msgid  "From Template..."
-msgstr "Из шаблона..."
-
-#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "Учитај %PRODUCTNAME при покретању система"
-
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 msgid  "Disable Quickstarter"
-msgstr "Онемогући брзо покретање"
-
-#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-msgid  "File"
-msgstr "Датотека"
-
-#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-msgid  "Startcenter"
-msgstr "Почетни екран"
+msgstr ""
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
+#, fuzzy
 msgid  "Recent Documents"
 msgstr "Скорашњи документи"
 
-#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
-msgid  "Update all links?"
-msgstr "Освежити све везе?"
-
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "DDE link to % for % area % are not available."
 msgstr "DDE веза ка % за % област % није доступна."
 
 #: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "Ова хипервеза ће отворити „%s“. Желите ли да наставите?"
 
-#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
-msgid  "Security Warning"
-msgstr "Безбедносно упозорење"
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr "Не могу да покренем везу из безбедносних разлога.\nПонуђена адреса неће бити отворена."
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr "Чување ће уклонити све постојеће потписе.\nЖелите ли да сачувате документ?"
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr "Пре потписивања документ се мора сачувати.\nЖелите ли да сачувате документ?"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
 msgstr "Пре електронског потписивања овај документ мора бити сачуван у отвореном документ-формату (ОДФ)."
 
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  " (Signed)"
 msgstr "(Потписан)"
 
-#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
-msgid  "Document"
-msgstr "Документ"
-
 #: appl/app.src#STR_NONE.STRING.TEXT
+#, fuzzy
 msgid  "- None -"
 msgstr ""
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
 msgstr ""
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
+#, fuzzy
 msgid  "Link graphics"
 msgstr "Веза графике"
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
+#, fuzzy
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
 msgstr ""
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be opened"
 msgstr "Не могу да отворим графичку датотеку"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be read"
 msgstr "Не могу да прочитам графичку датотеку"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.STRING.TEXT
+#, fuzzy
 msgid  "Unknown graphics format"
 msgstr "Непознат графички формат"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.STRING.TEXT
+#, fuzzy
 msgid  "This version of the graphics file is not supported"
 msgstr "Ова верзија графичке датотеке није подржана"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter not found"
 msgstr "Не могу да пронађем графички филтер"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.STRING.TEXT
+#, fuzzy
 msgid  "Not enough memory to insert graphic"
 msgstr "Нема довољно меморије да учитам графику"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
-msgid  "Contents"
-msgstr "Садржај"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
-msgid  "Index"
-msgstr "Индекс"
-
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Find"
 msgstr "Пронађи"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
-msgid  "Bookmarks"
-msgstr "Обележивачи"
-
-#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
-msgid  "~Search term"
-msgstr "~Тражи појам"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Display"
 msgstr "~Прикажи"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "S~earch term"
-msgstr "Т~ражи појам"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
 msgstr "~Пронађи"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
-msgid  "~Complete words only"
-msgstr "~Само целе речи"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Find in ~headings only"
 msgstr "Пронађи у ~заглављима"
 
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
-msgid  "~Bookmarks"
-msgstr "~Обележивачи"
-
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Help"
 msgstr "Помоћ за %PRODUCTNAME"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.STRING.TEXT
+#, fuzzy
 msgid  "Show Navigation Pane"
 msgstr "Прикажи навигациони пано"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.STRING.TEXT
+#, fuzzy
 msgid  "Hide Navigation Pane"
 msgstr "Сакриј навигациони пано"
 
-#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
-msgid  "First Page"
-msgstr "Прва страница"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
-msgid  "Previous Page"
-msgstr "Претходна страница"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
-msgid  "Next Page"
-msgstr "Следећа страница"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
-msgid  "Print..."
-msgstr "Штампај..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
-msgid  "Add to Bookmarks..."
-msgstr "Додај у обележиваче..."
-
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
+#, fuzzy
 msgid  "Find on this Page..."
 msgstr "Пронађи на овој страници..."
 
-#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
-msgid  "HTML Source"
-msgstr "ХТМЛ изворни код"
-
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "The Help is being started..."
 msgstr "Покреће се помоћ..."
 
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
-msgid  "Select Text"
-msgstr "Изабери текст"
-
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
-msgid  "~Copy"
-msgstr "~Копирај"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
-msgid  "Add to Bookmarks"
-msgstr "Додај у обележиваче"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
-msgid  "Bookmark:"
-msgstr "Обележивач:"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
-msgid  "Rename Bookmark"
-msgstr "Преименуј обележивач"
-
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Display"
 msgstr "Прикажи"
 
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
-msgid  "Rename..."
-msgstr "Преименуј..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
-msgid  "Delete"
-msgstr "Обриши"
-
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "No topics found."
 msgstr "Тема није пронађена."
 
-#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
-msgid  "The text you entered was not found."
-msgstr "Текст који сте унели није пронађен."
-
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr "~Прикажи помоћ при покретању за %PRODUCTNAME %MODULENAME"

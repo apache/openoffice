@@ -35,82 +35,10 @@ msgstr ""
 msgid  "Ok"
 msgstr "ОК"
 
-#: mac/macinstall.ulf#INSTALLLABEL
-msgid  "Install"
-msgstr "Установить"
-
-#: mac/macinstall.ulf#ABORTLABEL
-msgid  "Abort"
-msgstr "Прервать"
-
-#: mac/macinstall.ulf#INTROTEXT1
-msgid  "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
-msgstr "Добро пожаловать в Мастер установки [FULLPRODUCTNAME]"
-
-#: mac/macinstall.ulf#INTROTEXT2
-msgid  "This installation will update your installed versions of [PRODUCTNAME]"
-msgstr "Будет выполнено обновление установленной версии [PRODUCTNAME]"
-
-#: mac/macinstall.ulf#INTROTEXT3
-msgid  "This might take a moment."
-msgstr "Это может занять некоторое время."
-
-#: mac/macinstall.ulf#CHOOSEMYOWNTEXT
-msgid  "Not listed (choose location in an extra step)"
-msgstr "Не выбрано (указать местонахождение на специальном шаге)"
-
-#: mac/macinstall.ulf#LISTPROMPTTEXT
-msgid  "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
-msgstr "Выберите установку [PRODUCTNAME] [PRODUCTVERSION], для которой вы хотите установить [FULLPRODUCTNAME]"
-
-#: mac/macinstall.ulf#CHOOSEMANUALTEXT
-msgid  "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr "Укажите диалог установки [PRODUCTNAME] [PRODUCTVERSION]."
-
-#: mac/macinstall.ulf#APPINVALIDTEXT1
-msgid  "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr "Это неправильная установка [PRODUCTNAME] [PRODUCTVERSION]."
-
-#: mac/macinstall.ulf#APPINVALIDTEXT2
-msgid  "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
-msgstr "Запустить установщик повторно и выбрать правильную установку [PRODUCTNAME] [PRODUCTVERSION]"
-
-#: mac/macinstall.ulf#STARTINSTALLTEXT1
-msgid  "Click Install to start the installation"
-msgstr "Нажмите Установить для начала процесса установки"
-
-#: mac/macinstall.ulf#STARTINSTALLTEXT2
-msgid  "Installation might take a minute..."
-msgstr "Процесс установки может занять некоторое время..."
-
 #: mac/macinstall.ulf#IDENTIFYQTEXT
 msgid  "Installation failed, most likely your account does not have the necessary privileges."
 msgstr "Установка не удалась, скорее всего, учётная запись не обладает необходимыми правами."
 
-#: mac/macinstall.ulf#IDENTIFYQTEXT2
-msgid  "Do you want to identify as administrator and try again?"
-msgstr "Хотите идентифицироваться как администратор и попробовать снова?"
-
-#: mac/macinstall.ulf#IDENTIFYYES
-msgid  "Yes, identify"
-msgstr "Да, идентифицироваться"
-
-#: mac/macinstall.ulf#IDENTIFYNO
-msgid  "No, abort installation"
-msgstr "Нет, прервать установку"
-
-#: mac/macinstall.ulf#INSTALLFAILEDTEXT
-msgid  "Installation failed."
-msgstr "Установка не удалась."
-
-#: mac/macinstall.ulf#INSTALLCOMPLETETEXT
-msgid  "Installation of [PRODUCTNAME] language pack completed."
-msgstr "Установка языкового пакета [PRODUCTNAME] выполнена успешно."
-
 #: mac/macinstall.ulf#INSTALLCOMPLETETEXT2
 msgid  "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
 msgstr "Используйте «[PRODUCTNAME]-Настройки-Язык Настройки-Языки» для смены языка интерфейса."
-
-#: mac/macinstall.ulf#INSTALLCOMPLETETEXTPATCH
-msgid  "Installation of [FULLPRODUCTNAME] completed"
-msgstr "Установка [FULLPRODUCTNAME] выполнена успешно"

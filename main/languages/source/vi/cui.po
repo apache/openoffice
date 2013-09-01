@@ -71,11 +71,6 @@ msgstr "Chủng loại"
 msgid  "Function"
 msgstr "Chức năng"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-#, fuzzy
-msgid  "Functions"
-msgstr "Chức năng"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Shortcut keys"
@@ -97,9 +92,8 @@ msgid  "Save Keyboard Configuration"
 msgstr "Lưu cấu hình bàn phím"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.STRING.TEXT
-#, fuzzy
 msgid  "Configuration (*.cfg)"
-msgstr "Cấu hình"
+msgstr "Tập tin cấu hình (*.cfg)"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.STRING.TEXT
 #, fuzzy
@@ -107,9 +101,8 @@ msgid  "My Macros"
 msgstr "Vĩ lệnh của tôi"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_PRODMACROS.STRING.TEXT
-#, fuzzy
 msgid  "%PRODUCTNAME Macros"
-msgstr "Vĩ lệnh của %PRODUCTNAME"
+msgstr "Lệnh thực thi kịch bản marco từ %PRODUCTNAME"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_BASICMACROS.STRING.TEXT
 #, fuzzy
@@ -131,16 +124,6 @@ msgstr "Tùy biến"
 msgid  "Menus"
 msgstr "Trình đơn"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Keyboard"
-msgstr "Bàn phím"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Toolbars"
-msgstr "Thanh công cụ"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Events"
@@ -150,16 +133,6 @@ msgstr "Sự kiện"
 #, fuzzy
 msgid  "Menu"
 msgstr "Trình đơn"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-#, fuzzy
-msgid  "Begin a Group"
-msgstr "Tạo nhóm"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-#, fuzzy
-msgid  "Rename..."
-msgstr "Thay tên..."
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 #, fuzzy
@@ -171,11 +144,6 @@ msgstr "Xoá..."
 msgid  "Delete"
 msgstr "Xoá"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-#, fuzzy
-msgid  "Move..."
-msgstr "Chuyển..."
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 #, fuzzy
 msgid  "Restore Default Settings"
@@ -185,16 +153,6 @@ msgstr "Khôi phục các thiết lập ngầm định"
 #, fuzzy
 msgid  "Restore Default Command"
 msgstr "Khôi phục lệnh ngầm định"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-#, fuzzy
-msgid  "Text only"
-msgstr "Chỉ có văn bản"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-#, fuzzy
-msgid  "Toolbar Name"
-msgstr "Tên thanh công cụ"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 #, fuzzy
@@ -206,55 +164,15 @@ msgstr "Lưu vào"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "Trình đơn của %PRODUCTNAME %MODULENAME"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "Mới..."
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Menu Content"
 msgstr "Nội dung trình đơn"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Entries"
-msgstr "Mục"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Add..."
-msgstr "Thêm..."
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "Sửa"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Mô tả"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 #, fuzzy
 msgid  "Add Submenu..."
 msgstr "Thêm trình đơn phụ..."
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-#, fuzzy
-msgid  "Icons Only"
-msgstr "Chỉ biểu tượng"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Icons & Text"
-msgstr "Nhãn và biểu tượng"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-#, fuzzy
-msgid  "Change Icon..."
-msgstr "Đổi biểu tượng..."
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 #, fuzzy
@@ -265,11 +183,6 @@ msgstr "Lập lại biểu tượng"
 #, fuzzy
 msgid  "New Menu %n"
 msgstr "Trình đơn mới %n"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-#, fuzzy
-msgid  "New Toolbar %n"
-msgstr "Thanh công cụ mới %n"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 #, fuzzy
@@ -305,26 +218,6 @@ msgstr "Tên trình đơn"
 #, fuzzy
 msgid  "Menu position"
 msgstr "Vị trí của trình đơn"
-
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Tên"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Change Icon"
-msgstr "Đổi biểu tượng"
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Icons"
-msgstr "Biểu tượng"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Import..."
-msgstr "Nhập..."
 
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -370,16 +263,6 @@ msgstr "Đồng ý cho tất cả"
 #, fuzzy
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "Các thanh công cụ của %PRODUCTNAME %MODULENAME"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-#, fuzzy
-msgid  "Toolbar"
-msgstr "Thanh công cụ"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-#, fuzzy
-msgid  "Toolbar Content"
-msgstr "Nội dung thanh công cụ"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 #, fuzzy
@@ -431,23 +314,13 @@ msgstr "Tên mới"
 msgid  "Rename Menu"
 msgstr "Đổi tên trình đơn"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-#, fuzzy
-msgid  "Rename Toolbar"
-msgstr "Đổi tên công cụ"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
-msgstr ""
+msgstr "Lên"
 
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
-msgstr ""
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-#, fuzzy
-msgid  "Event"
-msgstr "Sự kiện"
+msgstr "Xuống"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 #, fuzzy
@@ -478,11 +351,6 @@ msgstr "~Bỏ"
 #, fuzzy
 msgid  "Assign action"
 msgstr "Gán hành động"
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-#, fuzzy
-msgid  "Event"
-msgstr "Sự kiện"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 #, fuzzy
@@ -518,11 +386,6 @@ msgstr "Gán thành phần"
 #, fuzzy
 msgid  "Component method name"
 msgstr "Tên phương pháp của thành phần"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-#, fuzzy
-msgid  "Start Application"
-msgstr "Khởi chạy ứng dụng"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 #, fuzzy
@@ -609,11 +472,6 @@ msgstr "Đã bắt đầu trộn các trường của mẫu"
 msgid  "Merging of form fields finished"
 msgstr "Trộn xong các trường của mẫu"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Changing the page count"
-msgstr "Thay đổi số trang"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 #, fuzzy
 msgid  "Loaded a sub component"
@@ -634,40 +492,15 @@ msgstr "Tham số lấp đầy"
 msgid  "Execute action"
 msgstr "Thự hiện hành động"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-#, fuzzy
-msgid  "After updating"
-msgstr "Sau khi cập nhật"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 #, fuzzy
 msgid  "Before updating"
 msgstr "Trước khi cập nhật"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Before record action"
-msgstr "Trước khi ghi hành động"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-#, fuzzy
-msgid  "After record action"
-msgstr "Trước khj ghi hành động"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 #, fuzzy
 msgid  "Confirm deletion"
 msgstr "Khẳng định việc xóa"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-#, fuzzy
-msgid  "Error occurred"
-msgstr "Có lỗi"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-#, fuzzy
-msgid  "While adjusting"
-msgstr "Trong khi điều chỉnh"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 #, fuzzy
@@ -683,16 +516,6 @@ msgstr "Khi mất tiêu điểm"
 #, fuzzy
 msgid  "Item status changed"
 msgstr "Trạng thái của mục bị thay đổi"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-#, fuzzy
-msgid  "Key pressed"
-msgstr "Nhấn phím"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-#, fuzzy
-msgid  "Key released"
-msgstr "Nhả phím"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 #, fuzzy
@@ -739,16 +562,6 @@ msgstr "Nhấn phím chuột"
 msgid  "Mouse button released"
 msgstr "Nhả phím chuột"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-#, fuzzy
-msgid  "Before record change"
-msgstr "Trước khi thay đổi bản ghi"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-#, fuzzy
-msgid  "After record change"
-msgstr "Sau khi thay đổi bản ghi"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 #, fuzzy
 msgid  "After resetting"
@@ -764,16 +577,6 @@ msgstr "Trước khi khôi phục"
 msgid  "Approve action"
 msgstr "Xác nhận hành động"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-#, fuzzy
-msgid  "Before submitting"
-msgstr "Trước khi đệ trình"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-#, fuzzy
-msgid  "Text modified"
-msgstr "Sửa đổi văn bản"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 #, fuzzy
 msgid  "Before unloading"
@@ -783,11 +586,6 @@ msgstr "Trước khi hủy nạp"
 #, fuzzy
 msgid  "When unloading"
 msgstr "Khi hủy nạp"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-#, fuzzy
-msgid  "Changed"
-msgstr "Thay đổi"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 #, fuzzy
@@ -900,7 +698,6 @@ msgid  "Add Commands"
 msgstr "Thêm lệnh"
 
 #: customize/selector.src#STR_SELECTOR_MACROS.STRING.TEXT
-#, fuzzy
 msgid  "%PRODUCTNAME Macros"
 msgstr "Vĩ lệnh %PRODUCTNAME"
 
@@ -913,21 +710,6 @@ msgstr "Chủng loại"
 #, fuzzy
 msgid  "Commands"
 msgstr "Các lệnh"
-
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Thêm"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "Chạy"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Đóng"
 
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 #, fuzzy
@@ -954,19 +736,45 @@ msgstr "Thư viện"
 msgid  "My Macros"
 msgstr "Vĩ lệnh của tôi"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Macro name"
-msgstr "Tên vĩ lệnh"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Mô tả"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
-msgstr ""
+msgstr "Thông tin về %FULLPRODUCTNAME"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr "Bản quyền..."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr "%OOOVENDOR"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr "Sản phẩm này được tạo và phát hành bởi cộng đồng OpenOffice."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr "Sản phẩm này đã được tạo bởi %OOOVENDOR, dựa trên Apache OpenOffice."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr "Cộng đồng phát triển Open Office luôn ghi nhận mọi sự đóng góp đến từ các thành viên tham gia vào dự án phát triển, đặc biệt, được đề cập tại"
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+msgid  "Readme, License and Notice"
+msgstr "Thôngtincầnđọc, Bản quyền và Chú ý"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+msgid  "Readme"
+msgstr "Thôngtincầnđọc"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+msgid  "License"
+msgstr "Bản quyền"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+msgid  "Notice"
+msgstr "Chú ý"
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
 #, fuzzy
@@ -974,9 +782,8 @@ msgid  "Special Characters"
 msgstr "Ký tự đặc biệt"
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Font"
-msgstr "~Phông"
+msgstr "Thôngtincầnđọc, Bản quyền và Chú ý"
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FIXEDTEXT.TEXT
 #, fuzzy
@@ -995,67 +802,67 @@ msgstr "~Xoá"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.MODALDIALOG.TEXT
 msgid  "Color Picker"
-msgstr ""
+msgstr "Phần chọn màu"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.PB_PICKER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Pick a color from the document"
-msgstr ""
+msgstr "Chọn một màu từ phần tài liệu"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_RGB.FIXEDLINE.TEXT
 msgid  "RGB"
-msgstr ""
+msgstr "RGB"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_RED.FIXEDTEXT.TEXT
 msgid  "~Red"
-msgstr ""
+msgstr "~Đỏ"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_GREEN.FIXEDTEXT.TEXT
 msgid  "~Green"
-msgstr ""
+msgstr "~Xanh lá"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BLUE.FIXEDTEXT.TEXT
 msgid  "~Blue"
-msgstr ""
+msgstr "~Xanh da trời"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HEX.FIXEDTEXT.TEXT
 msgid  "Hex ~#"
-msgstr ""
+msgstr "Hex ~#"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_HSB.FIXEDLINE.TEXT
 msgid  "HSB"
-msgstr ""
+msgstr "HSB"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HUE.FIXEDTEXT.TEXT
 msgid  "H~ue"
-msgstr ""
+msgstr "T~ông màu"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_SATURATION.FIXEDTEXT.TEXT
 msgid  "~Saturation"
-msgstr ""
+msgstr "~Độ bão hòa màu"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BRIGHTNESS.FIXEDTEXT.TEXT
 msgid  "Bright~ness"
-msgstr ""
+msgstr "Độ s~áng"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_CMYK.FIXEDLINE.TEXT
 msgid  "CMYK"
-msgstr ""
+msgstr "Mô hình màu CMYK"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_CYAN.FIXEDTEXT.TEXT
 msgid  "~Cyan"
-msgstr ""
+msgstr "~Màu xanh lá mạ"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_MAGENTA.FIXEDTEXT.TEXT
 msgid  "~Magenta"
-msgstr ""
+msgstr "~Màu hồng sẫm"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_YELLOW.FIXEDTEXT.TEXT
 msgid  "~Yellow"
-msgstr ""
+msgstr "~Màu vàng"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_KEY.FIXEDTEXT.TEXT
 msgid  "~Key"
-msgstr ""
+msgstr "~Khóa"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1132,11 +939,6 @@ msgstr "Chuỗi ~xen kẽ"
 msgid  "~Description"
 msgstr "Mô tả"
 
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Tên"
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Name"
@@ -1156,11 +958,6 @@ msgstr "~Tựa đề"
 #, fuzzy
 msgid  "~Description"
 msgstr "Mô tả"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Search"
-msgstr "Tìm bản ghi"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 #, fuzzy
@@ -1242,11 +1039,6 @@ msgstr "Biểu thức đại diện"
 msgid  "Regular expression"
 msgstr "Biểu thức chính quy"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "Tìm kiếm sự giống nhau"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "..."
@@ -1266,11 +1058,6 @@ msgstr "Nghe như (tiếng Nhật)"
 #, fuzzy
 msgid  "State"
 msgstr "Tình trạng"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Record :"
-msgstr "Bản ghi :"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1353,29 +1140,13 @@ msgid  "General"
 msgstr "Chung"
 
 #: dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERYTHEME_FILES.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Files"
-msgstr "Tập tin"
+msgstr "Kiểu :"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Type:"
 msgstr "Kiểu :"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "Vị trí:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Contents:"
-msgstr "Nội dung:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "Sửa đổi:"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1402,16 +1173,6 @@ msgstr "Thêm tất ~cả"
 msgid  "Pr~eview"
 msgstr "X~em thử"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Enter Title"
@@ -1422,25 +1183,10 @@ msgstr "Nhập tựa"
 msgid  "Title"
 msgstr "Tựa đề"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Find"
-msgstr "Tìm"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Directory"
-msgstr "Thư mục"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "File type"
 msgstr "Kiểu tập tin"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Áp dụng"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 #, fuzzy
@@ -1542,16 +1288,6 @@ msgstr "Hóa cũ"
 msgid  "Aging degree"
 msgstr "Độ hoá cũ"
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Posterize"
-msgstr "Bích chương hoá"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Poster colors"
-msgstr "Màu sắc bích chương"
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Relief"
@@ -1612,11 +1348,6 @@ msgstr "Han~ja"
 msgid  "Ha~nja"
 msgstr "Ha~nja"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Conversion"
-msgstr "Chuyển đổi"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Hangul ~only"
@@ -1631,11 +1362,6 @@ msgstr "C~hỉ Hanja"
 #, fuzzy
 msgid  "Replace b~y character"
 msgstr "Tha~y thế theo ký tự"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-#, fuzzy
-msgid  "Hangul"
-msgstr "Han-gul"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 #, fuzzy
@@ -1672,11 +1398,6 @@ msgstr "Hiện các mục vừa dùng trước tiên"
 msgid  "Replace all unique entries automatically"
 msgstr "Tự thay thế các mục duy nhất"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "Mới..."
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Edit..."
@@ -1687,65 +1408,25 @@ msgstr "Sửa..."
 msgid  "Delete"
 msgstr "Xoá"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "Từ điển mới"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "Từ điển"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Name"
 msgstr "Tê~n"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "Sửa từ điển riêng"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 #, fuzzy
 msgid  "[Enter text here]"
 msgstr "[Nhập vào đây]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Book"
-msgstr "Sổ"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Original"
 msgstr "Gốc"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Suggestions (max. 8)"
-msgstr "Góp ý (tối đa 8)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "Mới"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
 msgid  "Close"
 msgstr "Đóng"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Target in Document"
-msgstr "Mục tiêu trong văn bản"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Áp dụng"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1764,7 +1445,7 @@ msgstr "Không thể mở tài liệu"
 
 #: dialogs/hlmarkwn.src#STR_MARK_TREE.STRING.TEXT
 msgid  "Mark Tree"
-msgstr ""
+msgstr "Cây đánh dấu"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.TABPAGE.TEXT
 #, fuzzy
@@ -1817,7 +1498,6 @@ msgid  "WWW Browser"
 msgstr "Bộ duyệt WWW"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.IMAGEBUTTON.TEXT
-#, fuzzy
 msgid  "Target in Document"
 msgstr "Mục tiêu trong văn bản"
 
@@ -1841,11 +1521,6 @@ msgstr "~Biểu mẫu"
 msgid  "Text"
 msgstr "Văn bản"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Button"
-msgstr "Nút"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Te~xt"
@@ -1860,11 +1535,6 @@ msgstr "~Tên"
 #, fuzzy
 msgid  "Events"
 msgstr "Dữ kiện"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mail & news"
-msgstr "Thư tín/Tin tức"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1891,11 +1561,6 @@ msgstr "~Chủ đề"
 msgid  "Data Sources..."
 msgstr "Nguồn dữ liệu..."
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "Tài liệu"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Path"
@@ -1906,30 +1571,15 @@ msgstr "Đường ~dẫn"
 msgid  "Open File"
 msgstr "Mở tập tin"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Target in document"
-msgstr "Đích trong tài liệu"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Targ~et"
 msgstr "Đíc~h"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "URL"
-msgstr "URL"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Test text"
 msgstr "Văn bản thử tra"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New document"
-msgstr "Tài liệu mới"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1955,11 +1605,6 @@ msgstr "~Kiểu tập tin"
 #, fuzzy
 msgid  "Select Path"
 msgstr "Chọn đường dẫn"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Áp dụng"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 #, fuzzy
@@ -1996,11 +1641,6 @@ msgstr "Internet"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "Đây là nơi bạn tạo một siêu liên kết tới trang Web, máy phục vụ FTP hoặc kết nối Telnet."
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-#, fuzzy
-msgid  "Mail & News"
-msgstr "Thư tín/Tin tức"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 #, fuzzy
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
@@ -2010,11 +1650,6 @@ msgstr "Đây là nơi bạn tạo một siêu liên kết tới địa chỉ th
 #, fuzzy
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr "Đây là nơi bạn tạo một siêu liên kết tới tài liệu tồn tại hay đích bên trong tài liệu."
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-#, fuzzy
-msgid  "New Document"
-msgstr "Tài liệu mới"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 #, fuzzy
@@ -2086,11 +1721,6 @@ msgstr "Trước"
 msgid  "A~fter"
 msgstr "~Sau"
 
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Vị trí"
-
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Number"
@@ -2155,11 +1785,6 @@ msgstr "Tập tin"
 #, fuzzy
 msgid  "Select Archives"
 msgstr "Chọn kho"
-
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-#, fuzzy
-msgid  "Archives"
-msgstr "Kho"
 
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 #, fuzzy
@@ -2266,11 +1891,6 @@ msgstr "Tác giả"
 msgid  "~Text"
 msgstr "Văn bản"
 
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "Nội dung"
-
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Insert"
@@ -2346,20 +1966,10 @@ msgstr "Tạo thư viện"
 msgid  "Enter the name for the new library."
 msgstr "Nhập tên cho thư viện mới."
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-#, fuzzy
-msgid  "Create Macro"
-msgstr "Tạo vĩ lệnh"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 #, fuzzy
 msgid  "Enter the name for the new macro."
 msgstr "Nhập tên cho vĩ lệnh mới."
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "Thay tên"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 #, fuzzy
@@ -2406,11 +2016,6 @@ msgstr " Một đối tượng cùng tên đã có."
 msgid  " You do not have permission to create this object."
 msgstr " Bạn không có quyền tạo đối tượng này."
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Creating Object"
-msgstr "Gặp lỗi khi tạo đối tượng"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 #, fuzzy
 msgid  "The object could not be renamed."
@@ -2420,11 +2025,6 @@ msgstr "Không thể thay đổi tên của đối tượng."
 #, fuzzy
 msgid  " You do not have permission to rename this object."
 msgstr " Bạn không có quyền thay đổi tên của đối tượng này."
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Renaming Object"
-msgstr "Gặp lỗi khi thay đổi tên của đối tượng"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 #, fuzzy
@@ -2471,11 +2071,6 @@ msgstr "Gặp lỗi kiểu Scripting Framework (khuôn khổ ghi văn lệnh) kh
 msgid  "Type:"
 msgstr "Dạng:"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Message:"
-msgstr "Thông điệp:"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 #, fuzzy
 msgid  "Format Cells"
@@ -2490,16 +2085,6 @@ msgstr "Phông"
 #, fuzzy
 msgid  "Font Effects"
 msgstr "Các hiệu ứng phông"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Viền"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Nền"
 
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2601,11 +2186,6 @@ msgstr "Đón~g"
 msgid  "Resu~me"
 msgstr "Tiế~p tục"
 
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-#, fuzzy
-msgid  "(no suggestions)"
-msgstr "(không có góp ý)"
-
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 #, fuzzy
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
@@ -2671,11 +2251,6 @@ msgstr "Phông"
 msgid  "Font Effects"
 msgstr "Các hiệu ứng phông"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Vị trí"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Asian Layout"
@@ -2701,25 +2276,10 @@ msgstr "Dòng văn bản"
 msgid  "Asian Typography"
 msgstr "Kiểu in Á châu"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Nền"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Attributes"
-msgstr "Thuộc tính"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Options"
 msgstr "Tùy chọn"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "Tìm kiếm sự giống nhau"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2751,20 +2311,10 @@ msgstr "Thiết lập"
 msgid  "Paste Special"
 msgstr "Dán đặc biệt"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Source:"
-msgstr "Nguồn"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Insert as"
 msgstr "Chèn vào như là"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Link to"
-msgstr "Liên kết"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 #, fuzzy
@@ -2780,11 +2330,6 @@ msgstr "Biểu tượng khác..."
 #, fuzzy
 msgid  "Selection"
 msgstr "Phần được chọn"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "Đối tượng"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 #, fuzzy
@@ -2806,13 +2351,7 @@ msgstr "Phần tử :"
 msgid  "Type"
 msgstr "Kiểu"
 
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Status"
-msgstr "Trạng thái"
-
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
-#, fuzzy
 msgid  "~Close"
 msgstr "Đóng"
 
@@ -3001,11 +2540,6 @@ msgstr "Tắt"
 msgid  "Au~tomatic"
 msgstr "Tự động"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scroll bar"
-msgstr "Thanh cuộn"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "On"
@@ -3015,11 +2549,6 @@ msgstr "Bật"
 #, fuzzy
 msgid  "Off"
 msgstr "Tắt"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Border"
-msgstr "Viền"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3051,25 +2580,10 @@ msgstr "Khoảng cách đến nội dung"
 msgid  "Select File for Floating Frame"
 msgstr "Chọn tậ tin cho khung trôi"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-#, fuzzy
-msgid  "Edit Applet"
-msgstr "Sửa tiểu dụng"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Number"
-msgstr "Số thứ tự bản ghi"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "go to record"
 msgstr "tới bản ghi"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "Từ điển gần nghĩa"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3090,11 +2604,6 @@ msgstr "~Thay thế"
 #, fuzzy
 msgid  "~Replace with"
 msgstr "~Thay thế bằng"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "Tha~y thế"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
 #, fuzzy
@@ -3171,11 +2680,6 @@ msgstr "Gộp lại kết nối đã bật"
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "Trình điều khiển được %PRODUCTNAME nhận ra"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Current driver:"
-msgstr "Trình điều khiển hiện thời:"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Enable pooling for this driver"
@@ -3186,11 +2690,6 @@ msgstr "Bật khả năng gộp lại kết nối cho trình điều khiển nà
 msgid  "Timeout (seconds)"
 msgstr "Quá hạn (giây)"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Driver name"
-msgstr "Tên trình điều khiển"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 #, fuzzy
 msgid  "Pool"
@@ -3200,16 +2699,6 @@ msgstr "Gộp"
 #, fuzzy
 msgid  "Timeout"
 msgstr "Quá hạn"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "Có"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "Không"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 #, fuzzy
@@ -3301,11 +2790,6 @@ msgstr "~Phông"
 msgid  "Re~place with"
 msgstr "Thay thế ~bằng"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Áp dụng"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Delete"
@@ -3331,11 +2815,6 @@ msgstr "Chỉ phông khác tỷ lệ"
 msgid  "~Size"
 msgstr "~Kích cỡ"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "Always"
-msgstr "Luôn luôn"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
 #, fuzzy
 msgid  "Screen only"
@@ -3346,20 +2825,10 @@ msgstr "Chỉ màn hình"
 msgid  "Font"
 msgstr "Phông"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-#, fuzzy
-msgid  "Replace with"
-msgstr "Thay thế bằng"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 #, fuzzy
 msgid  "Automatic"
 msgstr "Tự động"
-
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Default text direction"
-msgstr "Chiều văn bản mặc định"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
 #, fuzzy
@@ -3415,11 +2884,6 @@ msgstr "Cho phép văn bản hoạ~t họa"
 #, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "~Gợi ý trợ giúp biến mất sau "
-
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "seconds"
-msgstr "giây"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
@@ -3511,11 +2975,6 @@ msgstr "Không dùng ký tự ngắt tự xác định"
 msgid  "Proxy"
 msgstr "Ủy nhiệm"
 
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Default Colors"
-msgstr "Màu sắc Mặc định"
-
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Chart colors"
@@ -3536,16 +2995,6 @@ msgstr "~Mặc định"
 msgid  "Data Series $(ROW)"
 msgstr "Chuỗi dữ liệu $(ROW)"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color scheme"
-msgstr "Lược đồ màu"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Scheme"
-msgstr "Lược đồ"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Save..."
@@ -3555,11 +3004,6 @@ msgstr "Lưu..."
 #, fuzzy
 msgid  "Delete"
 msgstr "Xoá"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Custom colors"
-msgstr "Màu sắc riêng"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
 #, fuzzy
@@ -3581,31 +3025,6 @@ msgstr "Thiết lập màu"
 msgid  "Preview"
 msgstr "Xem thử"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Chung"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Document background"
-msgstr "Nền tài liệu"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Text boundaries"
-msgstr "Biên văn bản"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Application background"
-msgstr "Nền ứng dụng"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Object boundaries"
-msgstr "Biên đối tượng"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Table boundaries"
@@ -3615,16 +3034,6 @@ msgstr "Biên bảng"
 #, fuzzy
 msgid  "Font color"
 msgstr "Màu phông"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Unvisited links"
-msgstr "Liên kết chưa thăm"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Visited links"
-msgstr "Liên kết đã thăm"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3666,11 +3075,6 @@ msgstr "Chỉ báo văn lệnh"
 msgid  "Section boundaries"
 msgstr "Biên phần"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Page and column breaks"
-msgstr "Ngắt cột và trang"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Direct cursor"
@@ -3696,21 +3100,6 @@ msgstr "Tô sáng chú thích"
 msgid  "Keyword highlighting"
 msgstr "Tô sáng từ khoá"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Văn bản"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "Bảng tính"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Grid lines"
-msgstr "Đường lưới"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Page breaks"
@@ -3726,25 +3115,10 @@ msgstr "Ngắt trang bằng tay"
 msgid  "Automatic page breaks"
 msgstr "Tự động ngắt trang"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Detective"
-msgstr "Phát hiện"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Detective error"
 msgstr "Lỗi phát hiện"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "References"
-msgstr "Tham chiếu"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Notes background"
-msgstr "Nền chú thích"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3786,16 +3160,6 @@ msgstr "Toán tử"
 msgid  "Reserved expression"
 msgstr "Biểu thức dành riêng"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Error"
-msgstr "Lỗi"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "SQL Syntax Highlighting"
-msgstr "Tô sáng cú pháp SQL"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Keyword"
@@ -3836,11 +3200,6 @@ msgstr "Xoá lược đồ màu"
 msgid  "Save scheme"
 msgstr "Lưu lược đồ"
 
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-#, fuzzy
-msgid  "Name of color scheme"
-msgstr "Tên lược đồ màu"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
 #, fuzzy
 msgid  "Complex Text Layout"
@@ -3871,11 +3230,6 @@ msgstr "Gõ và ~thay thế"
 msgid  "Cursor control"
 msgstr "Điều khiển con trỏ"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Movement"
-msgstr "Di chuyển"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Lo~gical"
@@ -3896,30 +3250,10 @@ msgstr "Tùy chọn chung"
 msgid  "~Numerals"
 msgstr "Chữ ~số"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Arabic"
-msgstr "Ả Rập"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Hindi"
-msgstr "Hin-đi"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "Hệ thống"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Context"
 msgstr "Bối cảnh"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "Từ điển mới"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3935,16 +3269,6 @@ msgstr "~Ngôn ngữ"
 #, fuzzy
 msgid  "~Exception (-)"
 msgstr "Ng~oại lệ (-)"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "Từ điển"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "Sửa từ điển riêng"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4081,11 +3405,6 @@ msgstr "Excel tới %PRODUCTNAME Calc hoặc ngược lại"
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr "PowerPoint tới %PRODUCTNAME Impress hoặc ngược lại"
 
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Trợ giúp"
-
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Tips"
@@ -4110,11 +3429,6 @@ msgstr "Thiết lập lại trợ thủ"
 #, fuzzy
 msgid  "Help ~formatting"
 msgstr "Định dạng trợ giúp"
-
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "Mặc định"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -4181,11 +3495,6 @@ msgstr "Hộp thoại In"
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "~Dùng hộp thoại %PRODUCTNAME"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User Interface"
-msgstr "Giao diện người dùng"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Sc~aling"
@@ -4206,16 +3515,6 @@ msgstr "Cỡ biểu tượng"
 msgid  "Automatic"
 msgstr "Tự động"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small"
-msgstr "Nhỏ"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Large"
-msgstr "Lớn"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Galaxy (default)"
@@ -4225,11 +3524,6 @@ msgstr "Ngân hà (ngầm định)"
 #, fuzzy
 msgid  "High Contrast"
 msgstr "Tương phản cao"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Industrial"
-msgstr "Công nghiệp"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -4250,11 +3544,6 @@ msgstr "Làm trơn phông màn hình"
 #, fuzzy
 msgid  "from"
 msgstr "từ"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Pixels"
-msgstr "Điểm ảnh"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 #, fuzzy
@@ -4306,20 +3595,10 @@ msgstr "Bật tăng tốc phần cứng"
 msgid  "Use Anti-Aliasing"
 msgstr "Dùng Anti-Alias"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mouse"
-msgstr "Chuột"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Mouse positioning"
 msgstr "Định vị chuột"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default button"
-msgstr "Nút ngầm định"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -4340,11 +3619,6 @@ msgstr "Nút giữa của chuột"
 #, fuzzy
 msgid  "No function"
 msgstr "Không có hàm"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Automatic scrolling"
-msgstr "Tự động cuộn"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -4428,21 +3702,16 @@ msgstr "Hỗ trợ ngôn ngữ tăng cường"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_ASIANSUPPORT.CHECKBOX.TEXT
 msgid  "Show UI elements for East Asia~n writings"
-msgstr ""
+msgstr "Hiển thị các yếu tố giao diện cho phần soạn thảo tiếng các nước thuộc vùng Đông Á~n"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_CTLSUPPORT.CHECKBOX.TEXT
 msgid  "Show UI elements for B~i-Directional writing"
-msgstr ""
+msgstr "Hiển thị các yếu tố giao diện cho phần soạn thạo Hướng B~i"
 
 #: options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Thiết lập ngôn ngữ của giao diện người dùng đã được cập nhật và sẽ có hiệu lực lúc khởi động %PRODUCTNAME %PRODUCTVERSION lần sau."
-
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-#, fuzzy
-msgid  "User Data"
-msgstr "Dữ liệu người dùng"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4518,6 +3787,10 @@ msgstr "T.phố/Tỉnh/Mã bưu điện"
 #, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "Lưu ý rằng mã bưu điện và thành phố được dùng để tạo ra khoá đăng ký. Bạn sẽ không thể thay đổi được dữ liệu người dùng cho đến khi đăng ký được thực hiện. Bạn vẫn muốn sửa đổi dữ liệu người dùng không?"
+
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr "Dữ liệu người dùng đã được thay đổi.\nBạn có thực sự muốn thay đổi phần dữ liệu người dùng của mình?"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4679,16 +3952,6 @@ msgstr "Máy ~chủ ủy nhiệm"
 msgid  "None"
 msgstr "Không có"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "Hệ thống"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Manual"
-msgstr "Bằng tay"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
 #, fuzzy
 msgid  "Use browser settings"
@@ -4734,16 +3997,6 @@ msgstr "Cổ~ng"
 msgid  "~No proxy for:"
 msgstr "Khô~ng có ủy nhiệm cho:"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Separator ;"
-msgstr "Dấu tách ;"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "DNS server"
-msgstr "Máy chủ DNS"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Automatic"
@@ -4764,11 +4017,6 @@ msgstr "không phải là giá trị hợp lệ cho trường này. Nhập giá 
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "không phải là giá trị hợp lệ cho trường này. Nhập giá trị từ 1 đến 255."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Search"
-msgstr "Tìm kiếm"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Search in"
@@ -4785,9 +4033,8 @@ msgid  "Type"
 msgstr "Kiểu"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~And"
-msgstr "Và"
+msgstr "~Và"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RADIOBUTTON.TEXT
 #, fuzzy
@@ -4819,16 +4066,6 @@ msgstr "Dấu ~tách"
 msgid  "~Case match"
 msgstr "~So sánh chữ hoa/thường"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Upper"
-msgstr "Chữ hoa"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Lower"
-msgstr "Chữ thường"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "N~ew"
@@ -4853,11 +4090,6 @@ msgstr "~Xoá"
 #, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "Bạn có muốn chấp nhận việc sửa đổi này không?"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-#, fuzzy
-msgid  "Security"
-msgstr "Bảo mật"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 #, fuzzy
@@ -4904,11 +4136,6 @@ msgstr "Các mật khẩu được bảo vệ bởi một mật khẩu chủ. B�
 msgid  "Master Password..."
 msgstr "Mật khẩu chủ..."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Macro security"
-msgstr "Bảo mật vĩ lệnh"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
@@ -4923,6 +4150,10 @@ msgstr "Bảo mật Vĩ lệnh..."
 #, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 msgstr "Tắt chức năng hẳn cất giữ mật khẩu thì xoá danh sách các mật khẩu đã cất giữ, và đặt lại mật khẩu chủ.\n\nBạn có muốn xoá danh sách mật khẩu và đặt lại mật khẩu chủ không?"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "Giá trị không hợp lệ.\n\nGiá trị tối đa cho số hiệu cổng là 65535."
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4948,11 +4179,6 @@ msgstr "Chương trình ~thư điện tử"
 #, fuzzy
 msgid  "All files (*.*)"
 msgstr "Mọi tập tin (*.*)"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-#, fuzzy
-msgid  "Java"
-msgstr "Java"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
 #, fuzzy
@@ -4983,11 +4209,6 @@ msgstr "Tham số..."
 #, fuzzy
 msgid  "~Class Path..."
 msgstr "Đường dẫn lớp Java"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-#, fuzzy
-msgid  "Location: "
-msgstr "Vị trí:"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 #, fuzzy
@@ -5034,20 +4255,10 @@ msgstr "Gán"
 msgid  "Assig~ned start parameters"
 msgstr "Các tham số khởi chạy đã được gán"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "Ví dụ: -Dmyprop=c:\\program files\\java"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Remove"
 msgstr "Gỡ bỏ"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Class Path"
-msgstr "Đường dẫn đến lớp Java"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5064,10 +4275,21 @@ msgstr "Thêm nơi lưu trữ"
 msgid  "Add ~Folder"
 msgstr "Thêm thư mục"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Treat as equal"
-msgstr "Xem như trùng nhau"
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "Thư mục đã chọn không có môi trường chạy Java.\n Hãy chọn một thư mục khác."
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "Môi trường chạy Java đã chọn không phải là cái được yêu cầu.\n Hãy chọn một thư mục khác."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "Để môi trường chạy Java hoạt động tốt, cần khỏi động lại %PRODUCTNAME.\n Hãy khởi động lại %PRODUCTNAME ngay lập tức."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "Bạn cần phải khoeir động lại %PRODUCTNAME để cho các giá trị mới hoặc đã sửa đổi có thể có tác dụng.\n Hạy khởi động lại %PRODUCTNAME ngay lập tức."
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
 #, fuzzy
@@ -5149,11 +4371,6 @@ msgstr "~ki/ku (tekisuto/tekusuto)"
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "N~guyên âm kéo dài (ka-/kaa)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Ignore"
-msgstr "Bỏ qua"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pu~nctuation characters"
@@ -5168,11 +4385,6 @@ msgstr "Ký tự khoảng t~rắng"
 #, fuzzy
 msgid  "Midd~le dots"
 msgstr "Các chấ~m ở giữa"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "Tìm bằng tiếng Nhật"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 #, fuzzy
@@ -5223,11 +4435,6 @@ msgstr "Chính tả"
 #, fuzzy
 msgid  "Hyphenation"
 msgstr "Gạch nối từ"
-
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "Từ điển gần nghĩa"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 #, fuzzy
@@ -5294,25 +4501,10 @@ msgstr "Tù~y chọn"
 msgid  "Edi~t..."
 msgstr "~Sửa..."
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-#, fuzzy
-msgid  "Check uppercase words"
-msgstr "Kiểm tra các từ chữ hoa"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
 #, fuzzy
 msgid  "Check words with numbers "
 msgstr "Kiểm tra các từ có chữ số "
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-#, fuzzy
-msgid  "Check capitalization"
-msgstr "Kiểm tra chữ nên viết hoa"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-#, fuzzy
-msgid  "Check special regions"
-msgstr "Kiểm tra vùng đặc biệt"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 #, fuzzy
@@ -5350,28 +4542,21 @@ msgid  "Hyphenate special regions"
 msgstr "Nối từ trong vùng đặc biệt"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_MODULES_EDIT.STRING.TEXT
-#, fuzzy
 msgid  "Edit Available language modules"
-msgstr "Mô-đun ngôn ngữ có sẵn"
+msgstr "Chỉnh sửa các Mô-đun ngôn ngữ hiện có"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_DICS_EDIT_DIC.STRING.TEXT
-#, fuzzy
 msgid  "Edit User-defined dictionaries"
-msgstr "Từ điển tự xác định"
+msgstr "Từ điển được tạo bởi người dùng"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.STRING.TEXT
 msgid  "Edit Options"
-msgstr ""
+msgstr "Chỉnh sửa phần Tùy Chọn"
 
 #: options/optlingu.src#RID_SFXQB_DELDICT.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "Do you want to delete the dictionary?"
 msgstr "Bạn có muốn xoá từ điển này không?"
-
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Undo"
-msgstr "Hoàn tác"
 
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5388,11 +4573,6 @@ msgstr "Bộ lưu trữ đồ họa"
 msgid  "Use for %PRODUCTNAME"
 msgstr "Dùng cho %PRODUCTNAME"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "MB"
-msgstr "MB"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Memory per object"
@@ -5402,11 +4582,6 @@ msgstr "Bộ nhớ cho mỗi đối tượng"
 #, fuzzy
 msgid  "Remove from memory after"
 msgstr "Gỡ bỏ khỏi bội nhớ sau"
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "hh:mm"
-msgstr "hh:mm"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 #, fuzzy
@@ -5468,6 +4643,10 @@ msgstr "Đường dẫn được %PRODUCTNAME dùng"
 msgid  "Edit Paths: %1"
 msgstr "Sửa đường dẫn: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "Bạn cần phải xác định riêng thư mục cấu hình và thư tín.\nHãy chọn một đường dẫn mới."
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Configuration"
@@ -5477,26 +4656,6 @@ msgstr "Cấu hình"
 #, fuzzy
 msgid  "My Documents"
 msgstr "Tài liệu của tôi"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Đồ họa"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Icons"
-msgstr "Biểu tượng"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Palettes"
-msgstr "Bảng chọn"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Backups"
-msgstr "Bản sao lưu"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 #, fuzzy
@@ -5513,40 +4672,15 @@ msgstr "Mẫu"
 msgid  "AutoText"
 msgstr "Văn bản mẫu"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "Từ điển"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Trợ giúp"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Gallery"
 msgstr "Bộ sưu tập"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Message Storage"
-msgstr "Lưu trữ thư"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 #, fuzzy
 msgid  "Temporary files"
 msgstr "Tập tin tạm"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Plug-ins"
-msgstr "Phần bổ sung"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Folder Bookmarks"
-msgstr "Liên kết lưu thư mục"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 #, fuzzy
@@ -5612,11 +4746,6 @@ msgstr "~Lúc nào cũng tạo bản sao lưu"
 #, fuzzy
 msgid  "Save ~AutoRecovery information every"
 msgstr "Lưu thông tin tự động ~phục hồi mỗi"
-
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minutes"
-msgstr "Phút"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 #, fuzzy
@@ -5688,11 +4817,6 @@ msgstr "Tài liệu HTML"
 msgid  "Master document"
 msgstr "Tài liệu chủ"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "Bảng tính"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Presentation"
@@ -5728,11 +4852,6 @@ msgstr "Kiểm tra chính tả"
 msgid  "~Edit..."
 msgstr "~Sửa..."
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "Từ điển"
-
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Capital words"
@@ -5747,11 +4866,6 @@ msgstr "Từ có chữ ~số "
 #, fuzzy
 msgid  "~Case sensitive "
 msgstr "Phân biệt ~chữ hoa/thường "
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Check"
-msgstr "Kiểm tra"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 #, fuzzy
@@ -5948,16 +5062,6 @@ msgstr "Đây là nơi bạn xác định các thiết lập chung để truy c�
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "Đây là nơi bạn xác định các thiết lập chung cho việc mở và lưu các tài liệu ở các định dạng bên ngoài. Bạn có thể điều khiển cách xử lý các vĩ lệnh và đối tượng OLE trong các tài liệu Microsoft Office hoặc các thiết lập cho tài liệu HTML."
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "User Data"
-msgstr "Dữ liệu người dùng"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
 #, fuzzy
 msgid  "General"
@@ -5983,20 +5087,10 @@ msgstr "In"
 msgid  "Paths"
 msgstr "Đường dẫn"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Colors"
-msgstr "Màu sắc"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Fonts"
 msgstr "Phông"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Security"
-msgstr "Bảo mật"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 #, fuzzy
@@ -6008,11 +5102,6 @@ msgstr "Diện mạo"
 msgid  "Accessibility"
 msgstr "Khả năng truy cập"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Java"
-msgstr "Java"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Network Identity"
@@ -6023,11 +5112,6 @@ msgstr "Cá tính mạng"
 msgid  "Online Update"
 msgstr "Cập nhật trực tuyến"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Language Settings"
-msgstr "Thiết lập ngôn ngữ"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Languages"
@@ -6037,11 +5121,6 @@ msgstr "Ngôn ngữ"
 #, fuzzy
 msgid  "Writing Aids"
 msgstr "Hỗ trợ soạn thảo"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "Tìm bằng tiếng Nhật"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 #, fuzzy
@@ -6062,16 +5141,6 @@ msgstr "Internet"
 #, fuzzy
 msgid  "Proxy"
 msgstr "Ủy nhiệm"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Search"
-msgstr "Tìm kiếm"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "E-mail"
-msgstr "Thư điện tử"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
@@ -6133,11 +5202,6 @@ msgstr "Trộn thư điện tử"
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Background"
-msgstr "Nền"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "%PRODUCTNAME Math"
@@ -6147,16 +5211,6 @@ msgstr "%PRODUCTNAME Math"
 #, fuzzy
 msgid  "Settings"
 msgstr "Thiết lập"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "International"
-msgstr "Quốc tế"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 #, fuzzy
@@ -6178,30 +5232,10 @@ msgstr "%PRODUCTNAME Impress"
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Charts"
-msgstr "Đồ thị"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Default Colors"
-msgstr "Màu sắc Mặc định"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Load/Save"
 msgstr "Nạp/Lưu"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-#, fuzzy
-msgid  "VBA Properties"
-msgstr "Thuộc tính VBA"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Microsoft Office"
-msgstr "MS Office"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 #, fuzzy
@@ -6227,11 +5261,6 @@ msgstr "Cơ sơ dữ liệu"
 #, fuzzy
 msgid  "Site certificates"
 msgstr "Chứng nhận chỗ Web"
-
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-#, fuzzy
-msgid  "Personal certificates"
-msgstr "Chứng nhận cá nhân"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 #, fuzzy
@@ -6278,11 +5307,6 @@ msgstr "Tên người dùng"
 msgid  "Alignment"
 msgstr "Canh lề"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text alignment"
-msgstr "Canh lề văn bản"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Hori~zontal"
@@ -6293,30 +5317,10 @@ msgstr "Nằm ng~ang"
 msgid  "Default"
 msgstr "Mặc định"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Trái"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "Giữa"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "Phải"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Justified"
 msgstr "Canh đều 2 bên"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Filled"
-msgstr "Điền đầy"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6327,16 +5331,6 @@ msgstr "Thụt ~lề"
 #, fuzzy
 msgid  "~Vertical"
 msgstr "~Nằm dọc"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "Trên"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "Giữa"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
 #, fuzzy
@@ -6367,11 +5361,6 @@ msgstr "Cạnh gia~o"
 #, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "Chế độ ~bố trí Châu Á"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Thuộc tính"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
 #, fuzzy
@@ -6418,11 +5407,6 @@ msgstr "Tự động sửa lỗi"
 msgid  "Replace"
 msgstr "Thay thế"
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Exceptions"
-msgstr "Ngoại lệ"
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Options"
@@ -6458,11 +5442,6 @@ msgstr "Dùng bảng thay thế"
 msgid  "Correct TWo INitial CApitals"
 msgstr "Sửa HAi CHữ HOa ĐÂu TIên"
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-#, fuzzy
-msgid  "Capitalize first letter of every sentence"
-msgstr "Viết hoa chữ đầu của mỗi câu"
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 #, fuzzy
 msgid  "Automatic *bold* and _underline_"
@@ -6472,11 +5451,6 @@ msgstr "Tự động in *đậm* và _gạch dưới_"
 #, fuzzy
 msgid  "Ignore double spaces"
 msgstr "Bỏ qua dấu cách đôi"
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-#, fuzzy
-msgid  "URL Recognition"
-msgstr "Nhận ra URL"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
 #, fuzzy
@@ -6493,16 +5467,6 @@ msgstr "Thiết lập"
 msgid  "~Edit..."
 msgstr "~Sửa..."
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "[M]"
-msgstr "[M]"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-#, fuzzy
-msgid  "[T]"
-msgstr "[T]"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "[M]: Replace while modifying existing text"
@@ -6517,11 +5481,6 @@ msgstr "[T]: Tự động Định dạng/Tự Sửa Lỗi khi gõ"
 #, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "Bỏ đoạn văn trống"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-#, fuzzy
-msgid  "Replace Custom Styles"
-msgstr "Thay kiểu dáng riêng"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
 #, fuzzy
@@ -6547,11 +5506,6 @@ msgstr "Dùng viền"
 #, fuzzy
 msgid  "Create table"
 msgstr "Tạo bảng"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "Apply Styles"
-msgstr "Áp dụng kiểu dáng"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
 #, fuzzy
@@ -6613,11 +5567,6 @@ msgstr "Từ viết tắt (không có chữ hoa sau)"
 msgid  "~AutoInclude"
 msgstr "~Tự động gồm"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Words with TWo INitial CApitals"
-msgstr "Từ có HAi CHữ CÁi HOa"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Ne~w"
@@ -6635,19 +5584,19 @@ msgstr "Tự động ~gồm"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWABBREV.STRING.TEXT
 msgid  "New abbreviations"
-msgstr ""
+msgstr "Tạo từ viết tắt mới"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELABBREV.STRING.TEXT
 msgid  "Delete abbreviations"
-msgstr ""
+msgstr "Xóa các từ viết tắt"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWDOUBLECAPS.STRING.TEXT
 msgid  "New words with two initial capitals"
-msgstr ""
+msgstr "Tạo từ mới gồm hai chữ ban đầu"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELDOUBLECAPS.STRING.TEXT
 msgid  "Delete words with two initial capitals"
-msgstr ""
+msgstr "Xóa các từ có hai chữ lúc ban đầu"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.STRING.TEXT
 #, fuzzy
@@ -6714,34 +5663,29 @@ msgstr "Nháy mở"
 msgid  "End quote"
 msgstr "Nháy đóng"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "Mặc định"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
 msgid  "Single quotes default"
-msgstr ""
+msgstr "Mặc định tạo phần trính dẫn đơn lẻ"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
 msgid  "Double quotes default"
-msgstr ""
+msgstr "Mặc định tạo phần trích dẫn kép"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
 msgid  "Start quote of single quotes"
-msgstr ""
+msgstr "Bắt đầu phần trích dẫn của các trích dẫn đơn lẻ"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
 msgid  "Start quote of double quotes"
-msgstr ""
+msgstr "Bắt đầu phần trích dẫn của các trích dẫn kép"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
 msgid  "End quote of single quotes"
-msgstr ""
+msgstr "Kết thúc phần trích dẫn của các trích dẫn đơn lẻ"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
 msgid  "End quote of double quotes"
-msgstr ""
+msgstr "Kết thúc phần trích dẫn của các trích dẫn kép"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -6798,30 +5742,15 @@ msgstr "Gán nhãn văn bản bằng Smart Tag"
 msgid  "Currently installed smart tags"
 msgstr "Các Smart Tag hiện đã được cài đặt"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "Thuộc tính..."
-
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 #, fuzzy
 msgid  "Unlinked graphic"
 msgstr "Ảnh không liên kết"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Nền"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "A~s"
 msgstr "~Dạng"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "Màu"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -6833,35 +5762,10 @@ msgstr "Đồ họa"
 msgid  "F~or"
 msgstr "Ch~o"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cell"
-msgstr "Ô"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Row"
-msgstr "Hàng"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Table"
-msgstr "Bảng"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Paragraph"
-msgstr "Đoạn văn"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Character"
 msgstr "Ký tự"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Background color"
-msgstr "Màu nền"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6918,26 +5822,6 @@ msgstr "~Xem thử"
 msgid  "Find graphics"
 msgstr "Tìm đồ họa"
 
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Border / Background"
-msgstr "Viền/Nền"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Viền"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Nền"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Viền"
-
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Line arrangement"
@@ -6952,11 +5836,6 @@ msgstr "~Mặc định"
 #, fuzzy
 msgid  "~User-defined"
 msgstr "Tự ~xác định"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Đường"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7012,16 +5891,6 @@ msgstr "Khoảng ~cách"
 #, fuzzy
 msgid  "C~olor"
 msgstr "Mà~u"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Shadow style"
-msgstr "Kiểu bóng"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Thuộc tính"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
 #, fuzzy
@@ -7093,31 +5962,6 @@ msgstr "Chỉ đặt viền bên trên và bên dưới, và mọi đường bê
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "Chỉ đặt viền bên trái và bên phải, và mọi đường bên trong"
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Shadow"
-msgstr "Không bóng"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Right"
-msgstr "Thả bóng tới góc dưới bên phải"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Right"
-msgstr "Thả bóng tới góc trên bên phải"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Left"
-msgstr "Thả bóng tới góc dưới bên trái"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Left"
-msgstr "Thả bóng tới góc trên bên trái"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Western text font"
@@ -7134,19 +5978,12 @@ msgid  "~Font"
 msgstr "~Phông"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Typeface"
 msgstr "Kiễu chữ"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM1.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Normal"
 msgstr "Chuẩn"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Italic"
-msgstr "Nghiêng"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -7154,7 +5991,6 @@ msgid  "Bold"
 msgstr "Đậm"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM4.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Bold italic"
 msgstr "Nghiêng đậm"
 
@@ -7194,17 +6030,10 @@ msgid  "Ty~peface"
 msgstr "Kiểu chữ"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.WIN_CHAR_PREVIEW.WINDOW.TEXT
-#, fuzzy
 msgid  "Example"
 msgstr "Ví dụ"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "Màu"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Font ~color"
 msgstr "~Màu phông"
 
@@ -7229,39 +6058,21 @@ msgid  "(Without)"
 msgstr "(Không có)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Capitals"
 msgstr "Chữ hoa"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Lowercase"
 msgstr "Chữ thường"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Title"
 msgstr "Tựa đề"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small capitals"
-msgstr "Viết hoa nhỏ"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Relief"
 msgstr "Đắ~p"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Embossed"
-msgstr "Chạm nổi"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Engraved"
-msgstr "Chạm chìm"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
 #, fuzzy
@@ -7298,11 +6109,6 @@ msgstr "Đơn"
 msgid  "Double"
 msgstr "Đôi"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Dotted"
-msgstr "Chấm chấm"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Dotted (Bold)"
@@ -7329,37 +6135,30 @@ msgid  "Long Dash (Bold)"
 msgstr "Gạch dài (đậm)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Dot Dash"
 msgstr "Chấm và gạch"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Dot Dash (Bold)"
 msgstr "Chấm và gạch (đậm)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Dot Dot Dash"
 msgstr "Chấm, chấm, gạch"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
 msgstr "Chấm, chấm, gạch (đậm)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Wave"
 msgstr "Dợn sóng"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Wave (Bold)"
 msgstr "Dợn sóng (đậm)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Double Wave"
 msgstr "Dợn sóng đúp"
 
@@ -7372,16 +6171,6 @@ msgstr "Màu ~gạch đầu"
 #, fuzzy
 msgid  "~Strikethrough"
 msgstr "Gạch bỏ"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With /"
-msgstr "Với /"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With X"
-msgstr "Với X"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7405,63 +6194,18 @@ msgstr "Dấu nhấn mạnh"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Dot"
-msgstr "Chấm"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Circle"
-msgstr "Vòng tròn"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Disc"
 msgstr "Hình tròn"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Accent"
-msgstr "Trọng âm"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Position"
 msgstr "~Vị trí"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above text"
-msgstr "Phía trên văn bản"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below text"
-msgstr "Phía dưới văn bản"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Small Capitals"
-msgstr "Viết hoa nhỏ"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Outline"
 msgstr "Đường viền"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Bóng"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-#, fuzzy
-msgid  "Blinking"
-msgstr "Nhấp nháy"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Vị trí"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7492,11 +6236,6 @@ msgstr "Cỡ phông tương đối"
 #, fuzzy
 msgid  "Rotation / scaling"
 msgstr "Quay / co giãn"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scaling"
-msgstr "Co giãn"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7530,16 +6269,6 @@ msgstr "Giãn cách"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Default"
-msgstr "Mặc định"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Expanded"
-msgstr "Giãn ra"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Condensed"
 msgstr "Nén lại"
 
@@ -7552,11 +6281,6 @@ msgstr " bở~i"
 #, fuzzy
 msgid  "~Pair kerning"
 msgstr "Định chỗ cặ~p"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Double-lined"
-msgstr "Đường đôi"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
 #, fuzzy
@@ -7574,32 +6298,10 @@ msgid  "I~nitial character"
 msgstr "Ký tự đầu tiên"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_NONE.STRINGLIST.ITEM
-#, fuzzy
 msgid  "(None)"
 msgstr "(Không có)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  "("
-msgstr "("
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "["
-msgstr "["
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<"
-msgstr "<"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "{"
-msgstr "{"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Other Characters..."
 msgstr "Ký tự khác..."
 
@@ -7607,26 +6309,6 @@ msgstr "Ký tự khác..."
 #, fuzzy
 msgid  "Final charact~er"
 msgstr "Ký tự cuối cùng"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  ")"
-msgstr ")"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "]"
-msgstr "]"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  ">"
-msgstr ">"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "}"
-msgstr "}"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 #, fuzzy
@@ -7637,11 +6319,6 @@ msgstr "Dấu kết nối"
 #, fuzzy
 msgid  "~Type"
 msgstr "~Kiểu"
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line skew"
-msgstr "Độ nghiêng dòng"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7728,11 +6405,6 @@ msgstr "~Phải"
 msgid  "Vertical"
 msgstr "Nằm dọc"
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "~Không có"
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Top"
@@ -7752,16 +6424,6 @@ msgstr "Giãn ~cách"
 #, fuzzy
 msgid  "~Bottom"
 msgstr "~Dưới"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "Trái qua phải"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "Phải qua trái"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
 #, fuzzy
@@ -7863,11 +6525,6 @@ msgstr "~Giãn cách"
 msgid  "~Angle"
 msgstr "~Góc"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Free"
-msgstr "Tự do"
-
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
 #, fuzzy
 msgid  "30 Degrees"
@@ -7897,16 +6554,6 @@ msgstr "Mở ~rộng"
 #, fuzzy
 msgid  "Optimal"
 msgstr "Tối ưu"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "Từ bên trên"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From left"
-msgstr "Từ bên trái"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
 #, fuzzy
@@ -7943,36 +6590,6 @@ msgstr "Tối ư~u"
 msgid  "Straight Line"
 msgstr "Đường thẳng"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-#, fuzzy
-msgid  "Angled Line"
-msgstr "Đường chéo góc"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-#, fuzzy
-msgid  "Angled Connector Line"
-msgstr "Đường nối góc"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-#, fuzzy
-msgid  "Double-angled line"
-msgstr "Đường góc đôi"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Top;Middle;Bottom"
-msgstr "Trên;Giữa;Dưới"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Left;Middle;Right"
-msgstr "Trái;Giữa;Phải"
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Vị trí và Kích cỡ"
-
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Callout"
@@ -7994,9 +6611,8 @@ msgid  "Assigned macro"
 msgstr "Vĩ lệnh đã gán"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Existing macros\n"
-msgstr "Vĩ lệnh tồn tại trong:\n"
+msgstr "~Đã tồn tại marco trong\n"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PUSHBUTTON.TEXT
 #, fuzzy
@@ -8017,11 +6633,6 @@ msgstr "Vĩ lệnh"
 #, fuzzy
 msgid  "Dimensioning"
 msgstr "Đo kích thước"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Đường"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8057,11 +6668,6 @@ msgstr "Đo ~dưới đối tượng"
 #, fuzzy
 msgid  "Decimal places"
 msgstr "Chữ số thập phân"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "Chú giải"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8105,58 +6711,13 @@ msgstr "~Loại"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "All"
-msgstr "Tất cả"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "User-defined"
-msgstr "Người dụng định nghĩa"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "Số"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Percent"
-msgstr "Phần trăm"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Currency"
-msgstr "Tiền tệ"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "Ngày tháng"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Time"
-msgstr "Giờ"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Scientific"
 msgstr "Dạng khoa học"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Fraction"
-msgstr "Phân số"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Boolean Value"
 msgstr "Giá trị luận lý"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "Văn bản"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8208,11 +6769,6 @@ msgstr "Ngôn ngữ"
 msgid  "So~urce format"
 msgstr "Định dạng nguồn"
 
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Thêm"
-
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Remove"
@@ -8263,16 +6819,6 @@ msgstr "Đánh ~số"
 msgid  "1, 2, 3, ... "
 msgstr "1, 2, 3, ... "
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ... "
-msgstr "A, B, C, ... "
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "I, II, III, ... "
@@ -8288,16 +6834,6 @@ msgstr "i, ii, iii, ... "
 msgid  "A, .., AA, .., AAA, ... "
 msgstr "A, .., AA, .., AAA, ... "
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, .., aa, .., aaa, ..."
-msgstr "a, .., aa, .., aaa, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bullet"
-msgstr "Chấm điểm"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Graphics"
@@ -8307,11 +6843,6 @@ msgstr "Đồ họa"
 #, fuzzy
 msgid  "Linked graphics"
 msgstr "Đồ hoạ đã liên kết"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "Không có"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
 #, fuzzy
@@ -8503,11 +7034,6 @@ msgstr "Tâm ký tự"
 msgid  "Bottom of character"
 msgstr "Dưới ký tự"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "Trên dòng"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -8517,11 +7043,6 @@ msgstr "Tâm dòng"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "Dưới dòng"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "All levels"
-msgstr "Mọi cấp"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
 #, fuzzy
@@ -8603,11 +7124,6 @@ msgstr "Thụt ở"
 msgid  "Default"
 msgstr "Mặc định"
 
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Link"
-msgstr "Liên kết"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Paper format"
@@ -8653,11 +7169,6 @@ msgstr "Hướng ~văn bản"
 msgid  "Paper ~tray"
 msgstr "~Khay đựng giấy"
 
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Margins"
-msgstr "Lề"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Left"
@@ -8690,58 +7201,13 @@ msgstr "Bố trí trang"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right and left"
-msgstr "Phải và trái"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Mirrored"
 msgstr "Đối xứng"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only right"
-msgstr "Chỉ phải"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only left"
-msgstr "Chỉ trái"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "For~mat"
 msgstr "Định ~dạng"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "Không có"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8789,89 +7255,72 @@ msgid  "The margin settings are out of print range.\n\nDo you still want to appl
 msgstr "Thiết lập lề ở ngoại phạm vi in.\n\nBạn vẫn muốn áp dụng thiết lập này không?"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A6"
-msgstr ""
+msgstr "Khổ giấy A6"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A5.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A5"
-msgstr "A5"
+msgstr "Khổ giấy A5"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A4.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A4"
-msgstr "A4"
+msgstr "Khổ giấy A4"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A3.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A3"
-msgstr "A3"
+msgstr "Khổ giấy A3"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_ISO.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B6 (ISO)"
-msgstr "B6 (ISO)"
+msgstr "Khổ giấy B6 (ISO)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_ISO.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B5 (ISO)"
-msgstr "B5 (ISO)"
+msgstr "Khổ giấy B5 (ISO)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_ISO.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B4 (ISO)"
-msgstr "B4 (ISO)"
+msgstr "Khổ giấy B4 (ISO)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LETTER.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Letter"
-msgstr "Thư tín"
+msgstr "Khổ giấy dạng thư viết tay"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Legal"
-msgstr "Legal"
+msgstr "Vấn đề pháp lý"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL2.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Long Bond"
-msgstr "Khế ước dài"
+msgstr "Thỏa thuận bản quyền"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_TABLOID.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Tabloid"
-msgstr "Tabloid"
+msgstr "Khổ báo nhỏ"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_JIS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B6 (JIS)"
-msgstr "B6 (JIS)"
+msgstr "Khổ giấy B6 (JIS)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_JIS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B5 (JIS)"
-msgstr "B5 (JIS)"
+msgstr "Khổ giấy B5 (JIS)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_JIS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B4 (JIS)"
-msgstr "B4 (JIS)"
+msgstr "Khổ giấy B4 (JIS)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI16.ITEMLIST.ITEM
-#, fuzzy
 msgid  "16 Kai"
-msgstr "16 Kai"
+msgstr "Khổ giấy 16 Kai"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32.ITEMLIST.ITEM
-#, fuzzy
 msgid  "32 Kai"
-msgstr "32 Kai"
+msgstr "Khổ giấy 32 Kai"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32BIG.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Big 32 Kai"
-msgstr "32 Kai lớn"
+msgstr "Khổ giấy 32 Kai loại lớn"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_USER.ITEMLIST.ITEM
 #, fuzzy
@@ -8879,29 +7328,24 @@ msgid  "User"
 msgstr "Người dùng"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_DL.ITEMLIST.ITEM
-#, fuzzy
 msgid  "DL Envelope"
-msgstr "Phong bì DL"
+msgstr "Dạng bao thư loại DL"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C6.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C6 Envelope"
-msgstr "Phong bì C6"
+msgstr "Dạng phong bì loại C6"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C65.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C6/5 Envelope"
-msgstr "Phong bì C6/5"
+msgstr "Dạng phong bì loại C6/5"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C5.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C5 Envelope"
-msgstr "Phong bì C5"
+msgstr "Dạng phong bì loại C5"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C4.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C4 Envelope"
-msgstr "Phong bì C4"
+msgstr "Dạng phong bì loại C4"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM675.ITEMLIST.ITEM
 #, fuzzy
@@ -8983,11 +7427,6 @@ msgstr "~Dòng đầu"
 msgid  "~Automatic"
 msgstr "~Tự động"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Indent"
-msgstr "Thụt lề"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Ab~ove paragraph"
@@ -9005,28 +7444,8 @@ msgstr "GIãn cách"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Single"
-msgstr "Đơn"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "1.5 lines"
 msgstr "1,5 dòng"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Double"
-msgstr "Đôi"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Proportional"
-msgstr "Tỷ lệ"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At least"
-msgstr "Ít nhất"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -9103,21 +7522,6 @@ msgstr "~Phải/Dưới"
 msgid  "~Last line"
 msgstr "Dòng ~cuối"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "Mặc định"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Trái"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "Giữa"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Expand single word"
@@ -9148,35 +7552,15 @@ msgstr "Tự động"
 msgid  "Base line"
 msgstr "Đường cơ bản"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "Trên"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "Giữa"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bottom"
 msgstr "Dưới"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Thuộc tính"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Text ~direction"
 msgstr "~Chiều văn bản"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Text Flow"
-msgstr "Luồng văn bản"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9203,11 +7587,6 @@ msgstr "Số tối đa ~dấu nối liên tiếp"
 msgid  "Hyphenation"
 msgstr "Gạch nối từ"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Breaks"
-msgstr "Chỗ ngắt"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Insert"
@@ -9218,30 +7597,10 @@ msgstr "Chèn"
 msgid  "~Type"
 msgstr "~Kiểu"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Page"
-msgstr "Trang"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Column"
-msgstr "Cột"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Position"
 msgstr "Vị trí"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Before"
-msgstr "Phía trước"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After"
-msgstr "Phía sau"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9279,9 +7638,8 @@ msgid  "~Widow control"
 msgstr "Điều khiển dòng th~iếu"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.TABPAGE.TEXT
-#, fuzzy
 msgid  "Asian Typography"
-msgstr "Kiểu in Châu Á"
+msgstr "Ví dụ"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.FL_AS_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
@@ -9304,18 +7662,12 @@ msgid  "Apply spacing between Asian, Latin and Complex text"
 msgstr "Áp dụng khoảng cách giữa văn bản ngôn ngữ Châu Á, La-tinh và văn bản phức"
 
 #: tabpages/paragrph.src#STR_EXAMPLE.STRING.TEXT
-#, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: tabpages/paragrph.src#STR_PAGE_STYLE.STRING.TEXT
 msgid  "Page Style"
-msgstr ""
-
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the gradient:"
-msgstr "Nhập tên cho dải màu:"
+msgstr "Kiểu trình bày trong trang"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 #, fuzzy
@@ -9347,11 +7699,6 @@ msgstr "Bạn có chắc muốn xoá ảnh bitmap không?"
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 msgstr "Ảnh bitmap đã được sửa đổi mà không lưu. \nHãy sửa đổi ảnh bitmap đã chọn, hoặc thêm một ảnh bitmap mới."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the line style:"
-msgstr "Nhập tên cho kiểu dòng:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the line style?"
@@ -9362,11 +7709,6 @@ msgstr "Bạn có muốn xoá kiểu dòng không?"
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
 msgstr "Kiểu dáng dòng đã được sửa đổi mà không lưu. \nHãy sửa đổi kiểu dòng đã chọn, hoặc thêm một kiểu dòng mới."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the hatching:"
-msgstr "Nhập tên cho lưới đan:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the hatching?"
@@ -9376,16 +7718,6 @@ msgstr "Bạn có muốn xoá lưới đan không?"
 #, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 msgstr "Kiểu lưới đan đã được sửa đổi mà không lưu. \nHãy sửa đổi kiểu lưới đan đã chọn, hoặc thêm một kiểu lưới đan mới."
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "Sửa"
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Thêm"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
 #, fuzzy
@@ -9442,16 +7774,6 @@ msgstr "Bạn có muốn xoá mũi tên đầu không?"
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr "Mũi tên đầu đã được sửa đổi mà không lưu.\nBạn có muốn lưu đầu mũi tên này ngay bây giờ không?"
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Vị trí và Kích cỡ"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Kích cỡ"
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Width"
@@ -9466,11 +7788,6 @@ msgstr "Độ ~cao"
 #, fuzzy
 msgid  "~Keep ratio"
 msgstr "~Giữ tỷ lệ"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "Thả neo"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9496,11 +7813,6 @@ msgstr "~Dạng ký tự"
 #, fuzzy
 msgid  "To ~frame"
 msgstr "Vào kh~ung"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "Bảo vệ"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9568,39 +7880,28 @@ msgid  "~Transparency"
 msgstr "~Trong suốt"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.RBT_TRANS_GRADIENT.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Gradient"
 msgstr "Chạy màu"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_TYPE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Ty~pe"
 msgstr "Kiể~u"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Linear"
 msgstr "Tuyến"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Axial"
 msgstr "Qua trục"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Radial"
 msgstr "Xuyên tâm"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Ellipsoid"
 msgstr "Hình bầu dục"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Quadratic"
-msgstr "Bình phương"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -9608,12 +7909,10 @@ msgid  "Square"
 msgstr "Vuông"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_X.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Center ~X"
 msgstr "Tâm ~X"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_Y.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Center ~Y"
 msgstr "Tâm ~Y"
 
@@ -9628,7 +7927,6 @@ msgid  " degrees"
 msgstr " độ"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_BORDER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Border"
 msgstr "~Viền"
 
@@ -9643,7 +7941,6 @@ msgid  "~End value"
 msgstr "Giá trị cuối"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.CONTROL.TEXT
-#, fuzzy
 msgid  "Transparency"
 msgstr "Trong suốt"
 
@@ -9658,22 +7955,10 @@ msgid  "Fill"
 msgstr "Tô đầy"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "(không có)"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "Màu"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Hatching"
 msgstr "Lưới đan"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Bitmap"
 msgstr "Ảnh mảng"
 
@@ -9688,14 +7973,8 @@ msgid  "A~utomatic"
 msgstr "Tự động"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.CB_HATCHBCKGRD.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Background color"
 msgstr "Màu nền"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Kích cỡ"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9717,11 +7996,6 @@ msgstr "Độ ~rộng"
 msgid  "H~eight"
 msgstr "Độ ~cao"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Vị trí"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~X Offset"
@@ -9741,11 +8015,6 @@ msgstr "Xếp lớp"
 #, fuzzy
 msgid  "Auto~Fit"
 msgstr "Tự động chỉnh vừa"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Offset"
-msgstr "Khoảng lệch"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9793,7 +8062,6 @@ msgid  "~Spacing"
 msgstr "~Giãn cách"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_ANGLE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "A~ngle"
 msgstr "Gó~c"
 
@@ -9878,14 +8146,8 @@ msgid  "Save Bitmap List"
 msgstr "Lưu danh sách Bitmap"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.TABPAGE.TEXT
-#, fuzzy
 msgid  "Gradients"
 msgstr "Dải màu"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Rectangular"
-msgstr "Chữ nhật"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9969,11 +8231,11 @@ msgstr "Bitmaps"
 
 #: tabpages/tabarea.src#STR_LB_HATCHINGSTYLE.STRING.TEXT
 msgid  "Hatching Style"
-msgstr ""
+msgstr "Kiểu lưới đan"
 
 #: tabpages/tabarea.src#STR_CUI_COLORMODEL.STRING.TEXT
 msgid  "Color Mode"
-msgstr ""
+msgstr "Chế độ màu sắc"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.TABPAGE.TEXT
 #, fuzzy
@@ -10005,11 +8267,6 @@ msgstr "Bề rộng"
 msgid  "~Transparency"
 msgstr "Trong suốt"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Arrow styles"
-msgstr "Kiểu mũi tên"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "St~yle"
@@ -10037,22 +8294,16 @@ msgstr "Đồng bộ hóa các đầu cuối"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_EDGE_STYLE.FIXEDLINE.TEXT
 msgid  "Corner and cap styles"
-msgstr ""
+msgstr "Kiểu góc và độ rộng nét"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_EDGE_STYLE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Corner style"
-msgstr "Kiểu góc"
+msgstr "~Kiểu góc"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Rounded"
 msgstr "Góc tròn"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "- none -"
-msgstr "- không có -"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -10066,15 +8317,15 @@ msgstr "Góc xiên"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_CAP_STYLE.FIXEDTEXT.TEXT
 msgid  "Ca~p style"
-msgstr ""
+msgstr "Ki~ểu độ rộng nét"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.DEFAULT.STRINGLIST.ITEM
 msgid  "Flat"
-msgstr ""
+msgstr "Phẳng"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Round"
-msgstr ""
+msgstr "Tròn"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -10085,11 +8336,6 @@ msgstr "Vuông"
 #, fuzzy
 msgid  "Icon"
 msgstr "Biểu tượng"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "No Symbol"
-msgstr "Không có ký hiệu"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
 #, fuzzy
@@ -10132,43 +8378,32 @@ msgid  "Keep ratio"
 msgstr "Giữ nguyên tỉ lệ"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_STYLE.STRING.TEXT
-#, fuzzy
 msgid  "Style"
-msgstr "Kiểu dáng"
+msgstr "Kiểu hiển thị"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_START_STYLE.STRING.TEXT
 msgid  "Start style"
-msgstr ""
+msgstr "Kiểu ban đầu"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_END_STYLE.STRING.TEXT
 msgid  "End style"
-msgstr ""
+msgstr "Kiểu kết thúc"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_START_WIDTH.STRING.TEXT
 msgid  "Start width"
-msgstr ""
+msgstr "Độ rộng ban đầu"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_END_WIDTH.STRING.TEXT
 msgid  "End width"
-msgstr ""
+msgstr "Độ rộng phần kết thúc"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_START.STRING.TEXT
 msgid  "Start with center"
-msgstr ""
+msgstr "Bắt đầu ở chính giữa"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_END.STRING.TEXT
 msgid  "End with center"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-#, fuzzy
-msgid  "Define line styles"
-msgstr "Định nghĩa kiểu đường"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Thuộc tính"
+msgstr "Kết thúc ở chính giữa"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -10176,7 +8411,6 @@ msgid  "~Type"
 msgstr "Kiểu"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Dot"
 msgstr "Chấm chấm"
 
@@ -10211,24 +8445,16 @@ msgid  "Line style"
 msgstr "Kiểu đường"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_ADD.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Add..."
 msgstr "Thê~m..."
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_MODIFY.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Modify..."
 msgstr "~Sửa..."
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Delete..."
 msgstr "~Xoá..."
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Load Line Styles"
-msgstr "Nạp kiểu đường"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
@@ -10237,27 +8463,27 @@ msgstr "Lưu kiểu đường"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_TYPE.STRING.TEXT
 msgid  "Start type"
-msgstr ""
+msgstr "Kiểu ban đầu"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_TYPE.STRING.TEXT
 msgid  "End type"
-msgstr ""
+msgstr "Kiểu kết thúc"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_NUM.STRING.TEXT
 msgid  "Start number"
-msgstr ""
+msgstr "Số ban đầu"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_NUM.STRING.TEXT
 msgid  "End number"
-msgstr ""
+msgstr "Số kết thúc"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_LENGTH.STRING.TEXT
 msgid  "Start length"
-msgstr ""
+msgstr "Độ dài ban đầu"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_LENGTH.STRING.TEXT
 msgid  "End length"
-msgstr ""
+msgstr "Độ dài lúc kết thúc"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.TABPAGE.TEXT
 #, fuzzy
@@ -10293,26 +8519,6 @@ msgstr "Nạp kiểu mũi tên"
 #, fuzzy
 msgid  "Save Arrow Styles"
 msgstr "Lưu kiểu mũi tên"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Đường"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Bóng"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line Styles"
-msgstr "Kiểu đường"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Arrow Styles"
-msgstr "Kiểu mũi tên"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 #, fuzzy
@@ -10358,11 +8564,6 @@ msgstr "~Ký tự"
 #, fuzzy
 msgid  "Fill character"
 msgstr "Điền ký tự"
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "~Không có"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
 #, fuzzy
@@ -10429,41 +8630,6 @@ msgstr "Cuộn qua"
 msgid  "Scroll Back and Forth"
 msgstr "Cuộn tới cuộn lui"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Scroll In"
-msgstr "Cuộn vào"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Direction"
-msgstr "Hướng"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Top"
-msgstr "Lên trên"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Left"
-msgstr "Qua trái"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Right"
-msgstr "Qua phải"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Bottom"
-msgstr "Xuống dưới"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Thuộc tính"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "S~tart inside"
@@ -10494,20 +8660,10 @@ msgstr "Tăng/giảm dần"
 msgid  "~Pixels"
 msgstr "Điể~m ảnh"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "Khoảng đợi"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "~Tự động"
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Văn bản"
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 #, fuzzy
@@ -10515,7 +8671,6 @@ msgid  "Text Animation"
 msgstr "Hoạt họa văn bản"
 
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TABPAGE.TEXT
-#, fuzzy
 msgid  "Text"
 msgstr "Chữ"
 
@@ -10574,18 +8729,12 @@ msgstr "ĐỈnh"
 msgid  "~Bottom"
 msgstr "Đáy"
 
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text anchor"
-msgstr "Neo văn bản"
-
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Full ~width"
 msgstr "Hết bề rộng"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TABPAGE.TEXT
-#, fuzzy
 msgid  "Position and Size"
 msgstr "Vị trí và Kích cỡ"
 
@@ -10595,24 +8744,16 @@ msgid  "Position"
 msgstr "Vị trí"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Position ~X"
 msgstr "Vị trí ~X"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Position ~Y"
 msgstr "Vị trí ~Y"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Base point"
 msgstr "Base point"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Cỡ"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -10629,20 +8770,10 @@ msgstr "Bề cao"
 msgid  "~Keep ratio"
 msgstr "Giữ nguyên tỉ lệ"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "Bảo vệ"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Size"
 msgstr "Cỡ"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Adapt"
-msgstr "Thích ứng"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
@@ -10654,60 +8785,20 @@ msgstr "Chỉnh vừa bề rộng văn bản"
 msgid  "Fit ~height to text"
 msgstr "Chỉnh vừa bề cao văn bản"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "Neo"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Anchor"
 msgstr "Neo"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To paragraph"
-msgstr "Thành đoạn văn"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "As character"
 msgstr "Như là ký tự"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To page"
-msgstr "Thành trang"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To frame"
-msgstr "Thành khung"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~osition"
 msgstr "Vị trí"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "Từ phía trên"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "Phía trên"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "Giữa"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "Phía dưới"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -10724,11 +8815,6 @@ msgstr "Giữa ký tự"
 msgid  "Bottom of character"
 msgstr "Chân ký tự"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "Đỉnh dòng"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -10739,18 +8825,12 @@ msgstr "Giữa dòng"
 msgid  "Bottom of line"
 msgstr "Đáy dòng"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Angle"
-msgstr "Góc"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Pivot point"
 msgstr "Điểm quay"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_POSPRESETS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Default settings"
 msgstr "Thiết lập mặc định"
 
@@ -10780,14 +8860,8 @@ msgid  "Rotation Angle"
 msgstr "Góc quay"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.TABPAGE.TEXT
-#, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "Làm xiên và Bán kính góc"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Corner radius"
-msgstr "Bán kính góc"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
 #, fuzzy

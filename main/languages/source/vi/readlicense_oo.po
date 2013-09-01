@@ -39,10 +39,6 @@ msgstr "Tài liệu Đọc Đi ${PRODUCTNAME} ${PRODUCTVERSION}"
 msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
 msgstr ""
 
-#: readme.xrm#A6
-msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
-msgstr "Tập tin này chứa thông tin quan trọng về chương trình này. Vui lòng đọc kĩ các thông tin này trước khi bắt đầu làm việc."
-
 #: readme.xrm#A7
 msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
 msgstr ""
@@ -66,31 +62,21 @@ msgstr "Tại sao ${PRODUCTNAME} là miễn phí cho mọi người?"
 #: readme.xrm#A13
 #, fuzzy
 msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
+msgstr "Hiện tại, bạn có quyền sử dụng bản sao ${PRODUCTNAME} miễn phí và không hạn chế, vì những người đóng góp và công ty tài trợ đã thiết kế, phát triển, thử, dịch, viết tài liệu, hỗ trợ, quảng cáo và giúp đỡ bằng nhiều cách khác, để làm  ${PRODUCTNAME} thành như hiện nay - phần mềm văn phòng nguồn mở hàng đầu thế giới."
+
+#: readme.xrm#A13B
+msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
 msgstr ""
 
-#: readme.xrm#RR3FGF42R
-msgid  "Notes on Installation"
-msgstr "Lưu ý khi cài đặt"
-
 #: readme.xrm#JAVANEEDED
+#, fuzzy
 msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
 msgstr ""
 
 #: readme.xrm#SDFSDFGF42R
+#, fuzzy
 msgid  "System Requirements"
 msgstr "Yêu cầu hệ thống"
-
-#: readme.xrm#MACXIOSX
-msgid  "MacOSX 10.4 (Tiger) or higher"
-msgstr "Mac OSX 10.4 (Tiger) hay sau"
-
-#: readme.xrm#MACXICPU
-msgid  "Intel processor"
-msgstr "Bộ xử lý Intel"
-
-#: readme.xrm#MACXIRAM
-msgid  "512 MB RAM"
-msgstr "512 MB RAM"
 
 #: readme.xrm#MACXHARDDIKSSPACE
 #, fuzzy
@@ -98,18 +84,19 @@ msgid  "Up to 1.5 GB available hard disk space"
 msgstr ""
 
 #: readme.xrm#MACXIVIDEO
+#, fuzzy
 msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
 msgstr "Thiết bị đồ họa 1024×768 với 256 màu sắc (Khuyến nghị độ phân giải cao hơn)"
 
 #: readme.xrm#S2S3SDF2
 #, fuzzy
 msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
-msgstr "Microsoft Windows 2000 (Service Pack 4 hoặc mới hơn), XP hay Vista, hoặc Windows 7"
+msgstr ""
 
 #: readme.xrm#UTZU6
 #, fuzzy
 msgid  "Pentium III or later processor"
-msgstr "Máy PC tương thích với Pentium (Khuyến nghị Pentium III hay Athlon)"
+msgstr ""
 
 #: readme.xrm#GHUJ67
 #, fuzzy
@@ -117,6 +104,7 @@ msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 MB RAM (Khuyến nghị 512 MB RAM)"
 
 #: readme.xrm#JTZU56
+#, fuzzy
 msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr "Độ phân giải 1024×768 (khuyên khích độ phân giải cao hơn) với ít nhất 256 màu sắc"
 
@@ -126,24 +114,24 @@ msgid  "Please be aware that administrator rights are needed for the installatio
 msgstr "Lưu ý rằng cần phải có quyền quản trị để chạy tiến trình cài đặt."
 
 #: readme.xrm#MSOREG1
+#, fuzzy
 msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
 msgstr "Chức năng đăng ký ${PRODUCTNAME} như là ứng dụng mặc định cho các định dạng MS Office cũng có thể được ép buộc hoặc thu hồi dùng những cái chuyển dòng lệnh theo đây với trình cài đặt:"
 
 #: readme.xrm#MSOREG2
+#, fuzzy
 msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr "<tt>/msoreg=1</tt> sẽ ép buộc đăng ký ${PRODUCTNAME} như là ứng dụng mặc định cho các định dạng MS Office."
 
 #: readme.xrm#MSOREG3
+#, fuzzy
 msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr "<tt>/msoreg=0</tt> sẽ thu hồi đăng ký ${PRODUCTNAME} như là ứng dụng mặc định cho các định dạng MS Office."
 
 #: readme.xrm#DLLA1
+#, fuzzy
 msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
 msgstr ""
-
-#: readme.xrm#S2335
-msgid  "Solaris 10 operating system (SPARC platform) or higher"
-msgstr "Hệ điều hành Solaris 10 (nền tảng SPARC) hay cao hơn"
 
 #: readme.xrm#S23SEG
 #, fuzzy
@@ -166,137 +154,136 @@ msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, re
 msgstr "GNOME 2.6 hay cao hơn, với hai gói phần mềm gail 1.8.6 và at-spi 1.7, cần thiết để hỗ trợ các công cụ công nghệ giúp đỡ (công cụ AT)"
 
 #: readme.xrm#S23H
+#, fuzzy
 msgid  "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Hệ điều hành Solaris 10 (nền tảng x86) hay cao hơn"
 
 #: readme.xrm#S2WE35
+#, fuzzy
 msgid  "Linux Kernel version 2.6.18 or higher"
 msgstr "Nhân Linux phiên bản 2.6.18 hay cao hơn"
 
-#: readme.xrm#S253WE
-msgid  "glibc2 version 2.5 or higher"
-msgstr "glibc2 phiên bản 2.5 hay sau"
-
-#: readme.xrm#S256WE
-msgid  "gtk version 2.10.4 or higher"
-msgstr "gtk phiên bản 2.10.4 hay sau"
-
-#: readme.xrm#S2ETFSEG
-#, fuzzy
-msgid  "Pentium III or later processor"
-msgstr "Máy PC tương thích với Pentium (khuyến nghị Pentium III hay Athlon)"
-
 #: readme.xrm#WD2DFF
+#, fuzzy
 msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
 msgstr "GNOME 2.6 hay cao hơn, với hai gói phần mềm gail 1.8.6 và at-spi 1.7, cần thiết để hỗ trợ các công cụ công nghệ giúp đỡ (AT)"
 
 #: readme.xrm#LINUXI3A
+#, fuzzy
 msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
 msgstr "Có rất nhiều bản phân phối Linux khác nhau, và ngay với một bản phân phối có thể có nhiều lựa chọn khác nhau (như KDE hay GNOME, v.v.). Một số bản phân phối có sẵn một phiên bản ${PRODUCTNAME} riêng, và thường cũ hơn ${PRODUCTNAME} của Công đồng này không có các tính năng và cải tiến mới. Đôi khi bạn có thể cài đặt ${PRODUCTNAME} của Công đồng này vào cùng một máy với phiên bản riêng của bản phân phối. Tuy nhiên, sẽ an toàn hơn nếu bạn gỡ bỏ phiên bản riêng của bản phân phối trước khi cài đặt phiên bản của Công đồng này. Xem tài liệu hướng dẫn của bản phân phối để tìm biết nên làm việc này như thế nào."
 
-#: readme.xrm#LINUXI4A
-msgid  "It is recommended that you always backup your system before you remove or install software."
-msgstr "Khuyên bạn lúc nào cũng sao lưu hệ thống trước khi gỡ bỏ hoặc cài đặt phần mềm."
-
-#: readme.xrm#PRECAUTIONS
-msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
-msgstr "Vui lòng chắc chắn rằng bạn có đủ bộ nhớ còn rảnh trong thư mục tạm thời nằm trên hệ thống, cùng với các quyền đọc, ghi và chạy tập tin. Đóng tất cả các chương trình khác trước khi khởi chạy tiến trình cài đặt."
-
-#: readme.xrm#NASO01
-msgid  "Problems During Program Startup"
-msgstr "Vấn đề trong khi khởi chạy chương trình"
-
 #: readme.xrm#NASO02
+#, fuzzy
 msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
 msgstr "Nếu bạn gặp khó khăn trong tiến trình khởi chạy ${PRODUCTNAME} (thường khi dùng GNOME), hãy « hủy đặt » biến môi trường \"<tt>unset SESSION_MANAGER</tt>\" (bộ quản lý phiên chạy) trong trình bao bạn dùng để khởi chạy ${PRODUCTNAME}. Có thể làm việc này bằng cách thêm dòng \"<tt>unset SESSION_MANAGER</tt>\" vào đầu của văn lệnh trình bao soffice nằm trong thư mục  \"<tt>[office folder]/program</tt>\"."
 
 #: readme.xrm#ABCDEF
+#, fuzzy
 msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
 msgstr "Khó khăn trong tiến trình khởi chạy ${PRODUCTNAME} (v.d. ứng dụng bị treo), cũng như vấn đề đối với cách hiển thị trên màn hình, thường do trình điều khiển bo mạch đồ họa gây ra. Gặp khó khăn kiểu này thì bạn hãy cập nhật trình điều khiển bo mạch đồ họa, hoặc thử dùng trình điều khiển đồ họa có sẵn trong hệ điều hành. Khó khăn trong tiến trình hiển thị đối tượng ba chiều (3D) thường có thể được giải quyết bằng cách tắt tùy chọn « Dùng OpenGL » trong Tùy thích « Công cụ > Tùy chọn > ${PRODUCTNAME} > Xem > Xem 3D »."
 
-#: readme.xrm#NASO
-msgid  "ALPS/Synaptics notebook touchpads in Windows"
-msgstr "Chuột lăn của máy tính xách tay ALPS/Synaptics cho Windows"
-
 #: readme.xrm#NASO2
+#, fuzzy
 msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
 msgstr "Do một vấn đề trình điều khiển Windows, bạn không thể cuộn qua tài liệu ${PRODUCTNAME} khi bạn trượt ngón tay qua một vùng sờ kiểu ALPS/Synaptics."
 
 #: readme.xrm#NASO6
+#, fuzzy
 msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
 msgstr "Để bật khả năng cuộn bằng chuột lăn, hãy thêm các dòng sau vào tập tin cấu hình \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\", sau đó khởi động lại máy tính:"
 
 #: readme.xrm#NASO8
+#, fuzzy
 msgid  "The location of the configuration file might vary on different versions of Windows."
 msgstr "Lưu ý: vaị trí của tập tin cấu hình có thể thay đổi tùy theo phiên bản của Windows."
 
-#: readme.xrm#SDFSD32ASRC
-msgid  "Mozilla Address Book Driver"
-msgstr "Trình điều khiển sổ địa chỉ Mozilla"
-
 #: readme.xrm#SDCC32ASRC
+#, fuzzy
 msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
 msgstr "Trình điều khiển sổ địa chỉ Mozilla yêu cầu gói SUNWzlib. Gói này không nằm trong bản cài đặt hệ điều hành Solaris tối thiểu. Nếu bạn yêu cầu truy cập đến sổ địa chỉ Mozilla, hãy thêm gói này vào hệ điều hành Solaris bằng cách sử dụng lệnh \"<tt>pkgadd</tt>\" từ đĩa CD cài đặt."
 
 #: readme.xrm#AWE1
+#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "Phím tắt"
 
 #: readme.xrm#W32E1
+#, fuzzy
 msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
 msgstr "Chỉ những phím tắt (tổ hợp phím) không phải được dùng bởi hệ điều hành sẽ hoạt động được trong ${PRODUCTNAME}. Tổ hợp phím trong ${PRODUCTNAME} không hoạt động như được diễn tả trong Trợ giúp của ${PRODUCTNAME} thì kiểm tra phím tắt đó được dùng bởi hệ điều hành chưa. Để giải quyết trường hợp xung đột như vậy, bạn có thể thay đổi phím tắt dùng bởi hệ điều hành hay bởi ${PRODUCTNAME}. Để tìm thêm thông tin về chủ đề này, xem Trợ giúp của ${PRODUCTNAME} hay tài liệu hướng dẫn Trợ giúp của hệ điều hành."
 
 #: readme.xrm#MACKEYS1
+#, fuzzy
 msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
 msgstr "Trợ giúp ứng dụng của ${PRODUCTNAME} có thể sử dụng phím tắt chỉ hoạt động trên bàn phím PC."
 
 #: readme.xrm#GFH6W
+#, fuzzy
 msgid  "File Locking"
 msgstr "Khóa tập tin"
 
 #: readme.xrm#PJI76W
+#, fuzzy
 msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
 msgstr ""
 
 #: readme.xrm#PJI76WSDF
+#, fuzzy
 msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
 msgstr "Cảnh báo : tính năng khoá tập tin đã bật có thể gây ra vấn đề trong trường hợp Solaris 2.5.1/2.7 dùng cùng với Linux NFS 2.0. Môi trường hệ thống của bạn có các tham số này thì rất khuyên bạn tránh dùng tính năng khoá tập tin. Nếu dùng, ${PRODUCTNAME} sẽ treo khi bạn mở tập tin từ thư mục đã lắp NFS trên máy tính Linux."
 
 #: readme.xrm#GFH6W1
+#, fuzzy
 msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
 msgstr "Vấn đề khi gửi tài liệu dạng thư từ ${PRODUCTNAME}"
 
 #: readme.xrm#PJI76W1
+#, fuzzy
 msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
 msgstr "Khi gửi một tài liệu thông qua « Tập tin > Gửi > Tài liệu dạng thư điện tử » hoặc « Tài liệu dạng đính kèm PDF », lỗi có thể xảy ra (chương trình sụp đổ hoặc treo). Điều này do tập tin hệ thống Windows « Mapi » (Messaging Application Programming Interface) gây ra vấn đề trong một số phiên bản tập tin. Không may, lỗi này không thể giới hạn trong một số thứ tự phiên bản nhất định. Để có thêm thông tin, hãy ghé thăm địa chỉ  <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a>để tìm kiếm Microsoft Knowledge Base với từ khóa \"mapi dll\"."
 
 #: readme.xrm#AW22
+#, fuzzy
 msgid  "Important Accessibility Notes"
 msgstr "Ghi chú Khả năng Truy cập Quan trọng"
 
 #: readme.xrm#ACCESS7
+#, fuzzy
 msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 msgstr ""
 
 #: readme.xrm#SUPPORT
 #, fuzzy
 msgid  "User Support"
+msgstr "Hỗ trợ người dùng"
+
+#: readme.xrm#SUPPORT1
+msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
 msgstr ""
 
 #: readme.xrm#FAQ
+#, fuzzy
 msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
 msgstr ""
 
 #: readme.xrm#REPORTBUGS
 #, fuzzy
 msgid  "Reporting Bugs &amp; Issues"
+msgstr ""
+
+#: readme.xrm#REPORTBUGS1
+#, fuzzy
+msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
 msgstr "Chỗ Web của ${PRODUCTNAME} hỗ trợ IssueZilla, phương thức thông báo, theo dõi, và giải quyết lỗi và các vấn đề của chúng tôi. Chúng tôi Khuyến nghị tất cả người dùng thông báo các vấn đề có thể xảy ra trên nền hệ thống của họ. Tích cực thông báo lỗi là một trong những đóng góp quan trọng mà cộng đồng người dùng có thể đem tới trong việc phát triển và hoàn thiện bộ công cụ. "
 
 #: readme.xrm#GETTINGINVOLVED1
+#, fuzzy
 msgid  "Getting Involved"
 msgstr "Tham gia "
 
 #: readme.xrm#GETTINGINVOLVED2
+#, fuzzy
 msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
 msgstr "Cộng đồng ${PRODUCTNAME} sẽ rất biết ơn sự chủ động tham gia của bạn để việc phát triển dự án mã nguồn mở quan trọng này."
 
@@ -310,9 +297,33 @@ msgstr "Là người dùng, bạn đã là một phần quan trọng trong tiế
 msgid  "How to Start"
 msgstr ""
 
+#: readme.xrm#HOWTOSTART1
+msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
+msgstr ""
+
 #: readme.xrm#SUBSCRIBE
 #, fuzzy
 msgid  "Subscribe"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBE1
+msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST1
+msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST2
+msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST4
+msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
+msgstr ""
+
+#: readme.xrm#MISSING_ID
+msgid  "Joining the Project"
 msgstr ""
 
 #: readme.xrm#JOINING
@@ -320,14 +331,25 @@ msgstr ""
 msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
 msgstr ""
 
+#: readme.xrm#JOINING1
+msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr ""
+
+#: readme.xrm#JOINING3
+msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
+msgstr ""
+
 #: readme.xrm#CREDITS
+#, fuzzy
 msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
 msgstr ""
 
 #: readme.xrm#CREDITS2
+#, fuzzy
 msgid  "The Apache OpenOffice Community"
 msgstr ""
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
+#, fuzzy
 msgid  "Used / Modified Source Code"
 msgstr ""

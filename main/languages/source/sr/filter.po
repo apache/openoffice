@@ -39,10 +39,6 @@ msgstr "ОДФ шаблон таблице"
 msgid  "ODF Spreadsheet"
 msgstr "ОДФ таблица"
 
-#: config/fragments/filters/calc_HTML_WebQuery_ui.xcu#CALC_HTML_WEBQUERY.UINAME
-msgid  "Web Page Query (%productname% Calc)"
-msgstr "Упит веб странице (%productname% Рачун)"
-
 #: config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu#CALC_MS_EXCEL_2007_BINARY.UINAME
 msgid  "Microsoft Excel 2007 Binary"
 msgstr "Microsoft Excel 2007 Бинарно"
@@ -57,7 +53,7 @@ msgstr "Microsoft Excel 2007 XML"
 
 #: config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#CALC_STAROFFICE_XML_CALC_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr "%productname% %formatversion% шаблон таблице"
+msgstr "%oooxmlformatname% %oooxmlformatversion% шаблон таблице"
 
 #: config/fragments/filters/chart8_ui.xcu#CHART8.UINAME
 msgid  "ODF Chart"
@@ -77,7 +73,7 @@ msgstr "ХТМЛ документ (%productname% Цртеж)"
 
 #: config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#DRAW_STAROFFICE_XML_DRAW_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr "%productname% %formatversion% шаблон цртежа"
+msgstr "%oooxmlformatname% %oooxmlformatversion% шаблон цртежа"
 
 #: config/fragments/filters/HTML_MasterDoc_ui.xcu#HTML_MASTERDOC.UINAME
 msgid  "HTML Document (%productname% Master Document)"
@@ -121,11 +117,11 @@ msgstr "Microsoft PowerPoint 2007 XML"
 
 #: config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#IMPRESS_STAROFFICE_XML_DRAW.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr "%productname% %formatversion% цртеж (%productname% Презентација)"
+msgstr "%oooxmlformatname% %oooxmlformatversion% цртеж (%productname% Impress)"
 
 #: config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#IMPRESS_STAROFFICE_XML_IMPRESS_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr "%productname% %formatversion% Презентација шаблон"
+msgstr "%oooxmlformatname% %oooxmlformatversion% шаблон презентације"
 
 #: config/fragments/filters/math8_ui.xcu#MATH8.UINAME
 msgid  "ODF Formula"
@@ -159,10 +155,6 @@ msgstr "Microsoft PowerPoint 97/2000/XP шаблон"
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
-#: config/fragments/filters/MS_Word_2007_XML_Template_ui.xcu#MS_WORD_2007_XML_TEMPLATE.UINAME
-msgid  "Microsoft Word 2007 XML Template"
-msgstr "Microsoft Word 2007 XML шаблон"
-
 #: config/fragments/filters/MS_Word_2007_XML_ui.xcu#MS_WORD_2007_XML.UINAME
 msgid  "Microsoft Word 2007 XML"
 msgstr "Microsoft Word 2007 XML"
@@ -174,6 +166,21 @@ msgstr "Microsoft Word 95 шаблон"
 #: config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS_WORD_97_VORLAGE.UINAME
 msgid  "Microsoft Word 97/2000/XP Template"
 msgstr "Microsoft Word 97/2000/XP шаблон"
+
+#: config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO_CALC_UOF2.UINAME
+#, fuzzy
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "УОФ 2 таблица"
+
+#: config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO_IMPRESS_UOF2.UINAME
+#, fuzzy
+msgid  "Uniform Office Format 2 presentation"
+msgstr "УОФ 2 презентација"
+
+#: config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO_WRITER_UOF2.UINAME
+#, fuzzy
+msgid  "Uniform Office Format 2 Text"
+msgstr "УОФ 2 текст"
 
 #: config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#STARCALC_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarCalc 3.0 Template"
@@ -219,6 +226,36 @@ msgstr "StarImpress 5.0 шаблон"
 msgid  "ODF Database"
 msgstr "ОДФ База"
 
+#: config/fragments/filters/StarOffice_XML__Calc__ui.xcu#STAROFFICE_XML_(CALC).UINAME
+#, fuzzy
+msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
+msgstr "%oooxmlformatname% %oooxmlformatversion% таблица"
+
+#: config/fragments/filters/StarOffice_XML__Chart__ui.xcu#STAROFFICE_XML_(CHART).UINAME
+#, fuzzy
+msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
+msgstr "%oooxmlformatname% %oooxmlformatversion% график"
+
+#: config/fragments/filters/StarOffice_XML__Draw__ui.xcu#STAROFFICE_XML_(DRAW).UINAME
+#, fuzzy
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
+msgstr "%oooxmlformatname% %oooxmlformatversion% цртеж"
+
+#: config/fragments/filters/StarOffice_XML__Impress__ui.xcu#STAROFFICE_XML_(IMPRESS).UINAME
+#, fuzzy
+msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
+msgstr "%oooxmlformatname% %oooxmlformatversion% презентација"
+
+#: config/fragments/filters/StarOffice_XML__Math__ui.xcu#STAROFFICE_XML_(MATH).UINAME
+#, fuzzy
+msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
+msgstr "%oooxmlformatname% %oooxmlformatversion% формула"
+
+#: config/fragments/filters/StarOffice_XML__Writer__ui.xcu#STAROFFICE_XML_(WRITER).UINAME
+#, fuzzy
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgstr "%oooxmlformatname% %oooxmlformatversion% текстуални документ"
+
 #: config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#STARWRITER_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarWriter 3.0 Template"
 msgstr "StarWriter 3.0 шаблон"
@@ -259,17 +296,9 @@ msgstr "Кодирани текст (%productname% Писац за Веб)"
 msgid  "Text Encoded"
 msgstr "Кодирани текст"
 
-#: config/fragments/filters/Text__StarWriter_Web__ui.xcu#TEXT_(STARWRITER/WEB).UINAME
-msgid  "Text (%productname% Writer/Web)"
-msgstr "Teкст (%productname% Писац за Веб)"
-
 #: config/fragments/filters/Text___txt___csv__StarCalc__ui.xcu#TEXT_-_TXT_-_CSV_(STARCALC).UINAME
 msgid  "Text CSV"
 msgstr "CSV текст"
-
-#: config/fragments/filters/Text_ui.xcu#TEXT.UINAME
-msgid  "Text"
-msgstr "Текст"
 
 #: config/fragments/filters/UOF_presentation_ui.xcu#UOF_PRESENTATION.UINAME
 msgid  "Unified Office Format presentation"
@@ -300,16 +329,19 @@ msgid  "ODF Text Document"
 msgstr "ОДФ текстуални документ"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER_GLOBALDOCUMENT.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr "%productname% %formatversion% главни документ"
+msgstr "%oooxmlformatname% %oooxmlformatversion% главни документ"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr "%productname% %formatversion% текстуални документ"
+msgstr "%oooxmlformatname% %oooxmlformatversion% текстуални документ"
 
 #: config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#WRITER_STAROFFICE_XML_WRITER_TEMPLATE.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr "%productname% %formatversion% шаблон текстуалног документа"
+msgstr "%oooxmlformatname% %oooxmlformatversion% шаблон текстуалног документа"
 
 #: config/fragments/filters/writerweb8_writer_template_ui.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "HTML Document Template"
@@ -320,12 +352,14 @@ msgid  "%productname% Text (%productname% Writer/Web)"
 msgstr "%productname% текст (%productname% Писац за Веб)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr "%productname% %formatversion% текст (%productname% Писац за Веб)"
+msgstr "%oooxmlformatname% %oooxmlformatversion% текстуални документ (%productname% Writer за Веб)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER_WEB_TEMPLATE.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr "%productname% %formatversion% ХТМЛ шаблон"
+msgstr "%oooxmlformatname% %oooxmlformatversion% ХТМЛ шаблон"
 
 #: config/fragments/internalgraphicfilters/bmp_Export.xcu#BMP_EXPORT.UINAME
 #, fuzzy
@@ -398,6 +432,7 @@ msgid  "PBM - Portable Bitmap"
 msgstr "PBM - преносива битмапа"
 
 #: config/fragments/internalgraphicfilters/pbm_Import.xcu#PBM_IMPORT.UINAME
+#, fuzzy
 msgid  "PBM - Portable Bitmap"
 msgstr "PBM - преносива битмапа"
 
@@ -452,6 +487,7 @@ msgid  "PNG - Portable Network Graphic"
 msgstr "PNG - Portable Network Graphic"
 
 #: config/fragments/internalgraphicfilters/ppm_Export.xcu#PPM_EXPORT.UINAME
+#, fuzzy
 msgid  "PPM - Portable Pixelmap"
 msgstr "PPM - Portable Pixelmap"
 
@@ -476,6 +512,7 @@ msgid  "RAS - Sun Raster Image"
 msgstr "RAS - Sun Raster Image"
 
 #: config/fragments/internalgraphicfilters/sgf_Import.xcu#SGF_IMPORT.UINAME
+#, fuzzy
 msgid  "SGF - StarWriter Graphics Format"
 msgstr "SGF - StarWriter Graphics Format"
 
@@ -485,6 +522,7 @@ msgid  "SGV - StarDraw 2.0"
 msgstr "SGV - StarDraw 2.0"
 
 #: config/fragments/internalgraphicfilters/svg_Export.xcu#SVG_EXPORT.UINAME
+#, fuzzy
 msgid  "SVG - Scalable Vector Graphics"
 msgstr "SVG - скалабилна векторска графика"
 
@@ -558,6 +596,10 @@ msgstr "Рачун 8"
 msgid  "Microsoft Excel 2003 XML"
 msgstr "Microsoft Excel 2003 XML"
 
+#: config/fragments/types/calc_NSO_UOF2.xcu#CALC_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr ""
+
 #: config/fragments/types/chart8.xcu#CHART8.UINAME
 #, fuzzy
 msgid  "Chart 8"
@@ -582,6 +624,10 @@ msgstr "Презентација 8 шаблон"
 #, fuzzy
 msgid  "Impress 8"
 msgstr "Презентација 8"
+
+#: config/fragments/types/impress_NSO_UOF2.xcu#IMPRESS_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr ""
 
 #: config/fragments/types/math8.xcu#MATH8.UINAME
 #, fuzzy
@@ -613,6 +659,10 @@ msgstr "Писац 8 главни документ"
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
+#: config/fragments/types/writer_NSO_UOF2.xcu#WRITER_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 text"
+msgstr ""
+
 #: config/fragments/types/writerweb8_writer_template.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 #, fuzzy
 msgid  "Writer/Web 8 Template"
@@ -632,11 +682,6 @@ msgstr "1: најмањи квалитет\n100: највећи квалитет
 #, fuzzy
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
 msgstr "Упозорење: делови увезене EPS графике се не могу сачувати у нивоу 1\nпошто су неки вишег нивоа!"
-
-#: pdf/impdialog.src#STR_PDF_EXPORT.STRING.TEXT
-#, fuzzy
-msgid  "E~xport"
-msgstr "И~звези"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_UDPWD.STRING.TEXT
 #, fuzzy
@@ -663,21 +708,6 @@ msgstr "Опсег"
 msgid  "~All"
 msgstr "С~ве"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Pages"
-msgstr "~Странице"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Selection"
-msgstr "~Избор"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Images"
-msgstr "Слике"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Lossless compression"
@@ -687,16 +717,6 @@ msgstr "Компресија ~без губитка"
 #, fuzzy
 msgid  "~JPEG compression"
 msgstr "~JPEG компресија"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Quality"
-msgstr "~Квалитет"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Reduce image resolution"
-msgstr "Смањи резолуцију слике"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CHECKBOX.TEXT
 #, fuzzy
@@ -712,11 +732,6 @@ msgstr "~Означени ПДФ"
 #, fuzzy
 msgid  "~Create PDF form"
 msgstr "~Направи ПДФ формулар"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_FORMSFORMAT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Submit ~format"
-msgstr "Начин ~слања:"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ALLOWDUPLICATEFIELDNAMES.CHECKBOX.TEXT
 #, fuzzy
@@ -749,17 +764,16 @@ msgid  "E~mbed standard fonts"
 msgstr "~Угради стандардне фонтове"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ADDSTREAM.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Embed this document ~inside the PDF"
-msgstr "Направи ~хибридну датотеку"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.TITLE
 msgid  "PDF/A Export"
-msgstr ""
+msgstr "Извоз ПДФ/А"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.MESSAGE
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
-msgstr ""
+msgstr "ПДФ/А не омогућава шифровање. Извезена ПДФ датотека неће бити заштићена лозинком."
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TABPAGE.TEXT
 #, fuzzy
@@ -791,11 +805,6 @@ msgstr "~Сличице и страница"
 msgid  "Open on page"
 msgstr "Отвори на страници"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Magnification"
-msgstr "Увећање"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Default"
@@ -820,11 +829,6 @@ msgstr "Прилагоди ~видљиво"
 #, fuzzy
 msgid  "~Zoom factor"
 msgstr "~Фактор увећања"
-
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Page layout"
-msgstr "Распоред странице"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
@@ -856,11 +860,6 @@ msgstr "Прва страница је ~лево"
 msgid  "User Interface"
 msgstr "Сучеље"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Window options"
-msgstr "Опције прозора"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Resize window to initial page"
@@ -881,11 +880,6 @@ msgstr "~Отвори преко целог екрана"
 msgid  "~Display document title"
 msgstr "~Прикажи наслов документа"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User interface options"
-msgstr "Опције корисничког сучеља"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Hide ~menubar"
@@ -901,47 +895,29 @@ msgstr "Сакриj ала~тке"
 msgid  "Hide ~window controls"
 msgstr "Сакриј "
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Transitions"
-msgstr "Прелази"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Use transition effects"
 msgstr "Користи ~ефекте претапања"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Bookmarks"
-msgstr "Обележивачи"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "All bookmark levels"
-msgstr "Сви нивои обележивача"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Visible bookmark levels"
 msgstr "Видљиви нивои обележивача"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.TABPAGE.TEXT
-#, fuzzy
-msgid  "Security"
-msgstr "Сигурност"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.FIXEDLINE.TEXT
 msgid  "File encryption and permission"
-msgstr ""
+msgstr "Шифровање и дозволе над датотеком"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.BTN_SET_PWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set ~passwords..."
-msgstr ""
+msgstr "Постави~лозинкe..."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_SET_PWD.STRING.TEXT
+#, fuzzy
 msgid  "Set passwords"
-msgstr ""
+msgstr "Постави лозинке"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_SET.STRING.TEXT
 #, fuzzy
@@ -964,8 +940,9 @@ msgid  "PDF document will not be encrypted"
 msgstr "ПДФ документ неће бити шифрован"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be encrypted due to PDF/A export."
-msgstr ""
+msgstr "Шифровање документа није могуће при извозу у ПДФ/А формат."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.STRING.TEXT
 #, fuzzy
@@ -988,38 +965,19 @@ msgid  "PDF document will be unrestricted"
 msgstr "ПДФ документ неће имати ограничења"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be restricted due to PDF/A export."
-msgstr ""
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Printing"
-msgstr "Штампање"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Not permitted"
-msgstr "~Није дозвољено"
+msgstr "Ограничења документа нису могућа при извозу у ПДФ/А формат."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Low resolution (150 dpi)"
 msgstr "~Нижа резолуција (150 dpi)"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~High resolution"
-msgstr "~Висока резолуција"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Changes"
 msgstr "Измене"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "No~t permitted"
-msgstr "Н~ије дозвољено"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1045,11 +1003,6 @@ msgstr "~Све сем вађења страница"
 #, fuzzy
 msgid  "Ena~ble copying of content"
 msgstr "Укључи копирање садржаја"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Enable text access for acce~ssibility tools"
-msgstr "Омогући алаткама за испомоћ приступ тексту"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.TABPAGE.TEXT
 #, fuzzy
@@ -1216,25 +1169,10 @@ msgstr "У реду"
 msgid  "XML Filter output"
 msgstr "Излаз XML филтера"
 
-#: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Validate"
-msgstr "~Провери исправност"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Име"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.STRING.TEXT
 #, fuzzy
 msgid  "Type"
 msgstr "Врста"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.STRING.TEXT
-#, fuzzy
-msgid  "Unknown"
-msgstr "Непознат програм"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.STRING.TEXT
 #, fuzzy
@@ -1286,21 +1224,6 @@ msgstr "XSLT за увоз није пронађен. Упишите испра�
 msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "Дати шаблон за увоз није пронађен. Унесите исправну путању."
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.STRING.TEXT
-#, fuzzy
-msgid  "Not specified"
-msgstr "Није назначено"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "New Filter"
-msgstr "Нови филтер"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Untitled"
-msgstr "Несачуван документ"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.STRING.TEXT
 #, fuzzy
 msgid  "undefined filter"
@@ -1351,89 +1274,24 @@ msgstr "~Нов..."
 msgid  "~Edit..."
 msgstr "~Уреди..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Test XSLTs..."
-msgstr "~Тестирај XSLT-ове..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete..."
-msgstr "~Обриши..."
-
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Save as Package..."
 msgstr "Сачувај ~као пакет..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Open Package..."
-msgstr "Отвори ~пакет..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Затвори"
-
 #: xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.STRING.TEXT
 msgid  "XML Filter List"
-msgstr ""
+msgstr "Списак XML филтера"
 
 #: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TABDIALOG.TEXT
 #, fuzzy
 msgid  "XML Filter: %s"
 msgstr "XML филтер: %s"
 
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Опште"
-
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Transformation"
-msgstr "Преиначење"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TABPAGE.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Опште"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Filter name"
-msgstr "Име филтера"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Application"
-msgstr "Програм"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Name of\nfile type"
-msgstr "Име\nтип датотеке"
-
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "File extension"
 msgstr "Проширење датотеке"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "Коментари"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TABPAGE.TEXT
-#, fuzzy
-msgid  "Transformation"
-msgstr "Преиначење"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "DocType"
-msgstr "DocType"
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1444,41 +1302,6 @@ msgstr "DTD"
 #, fuzzy
 msgid  "Browse..."
 msgstr "Избор..."
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for export"
-msgstr "XSLT за извоз"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for import"
-msgstr "XSLT за увоз"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template for import"
-msgstr "Шаблон за увоз"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Test XML Filter: %s"
-msgstr "Тестирај XML филтер: %s"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Извези"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for export"
-msgstr "XSLT за извоз"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Transform document"
-msgstr "Преиначи документ"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1495,21 +1318,6 @@ msgstr "~Тренутни документ"
 msgid  "Import"
 msgstr "Увези"
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for import"
-msgstr "XSLT за увоз"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template for import"
-msgstr "Шаблон за увоз"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Transform file"
-msgstr "Преиначи датотеку"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Display source"
@@ -1519,11 +1327,6 @@ msgstr "~Прикажи извор"
 #, fuzzy
 msgid  "B~rowse..."
 msgstr "~Избор..."
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Recent File"
-msgstr "~Скорашња датотека"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy

@@ -39,10 +39,6 @@ msgstr "Mẫu bảng tính ODF"
 msgid  "ODF Spreadsheet"
 msgstr "Bảng tính ODF"
 
-#: config/fragments/filters/calc_HTML_WebQuery_ui.xcu#CALC_HTML_WEBQUERY.UINAME
-msgid  "Web Page Query (%productname% Calc)"
-msgstr "Truy vấn trang mạng (%productname% Calc)"
-
 #: config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu#CALC_MS_EXCEL_2007_BINARY.UINAME
 msgid  "Microsoft Excel 2007 Binary"
 msgstr "Tập tin nhị phân Microsoft Excel 2007"
@@ -57,7 +53,7 @@ msgstr "Microsoft Excel 2007 XML"
 
 #: config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#CALC_STAROFFICE_XML_CALC_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr "Mẫu bảng tính %productname% %formatversion%"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Bảng Tính Mẫu"
 
 #: config/fragments/filters/chart8_ui.xcu#CHART8.UINAME
 msgid  "ODF Chart"
@@ -77,7 +73,7 @@ msgstr "Tài liệu HTML (%productname% Draw)"
 
 #: config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#DRAW_STAROFFICE_XML_DRAW_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr "Mẫu bản vẽ %productname% %formatversion%"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Bảng Vẽ Mẫu"
 
 #: config/fragments/filters/HTML_MasterDoc_ui.xcu#HTML_MASTERDOC.UINAME
 msgid  "HTML Document (%productname% Master Document)"
@@ -125,7 +121,7 @@ msgstr "Bản vẽ %productname% %formatversion% (%productname% Impress)"
 
 #: config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#IMPRESS_STAROFFICE_XML_IMPRESS_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr "Mẫu trình chiếu %productname% %formatversion%"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Trình Chiếu Mẫu"
 
 #: config/fragments/filters/math8_ui.xcu#MATH8.UINAME
 msgid  "ODF Formula"
@@ -159,10 +155,6 @@ msgstr "Mẫu MS PowerPoint 97/2000/XP"
 msgid  "Microsoft Word 2003 XML"
 msgstr "MS Word 2003 XML"
 
-#: config/fragments/filters/MS_Word_2007_XML_Template_ui.xcu#MS_WORD_2007_XML_TEMPLATE.UINAME
-msgid  "Microsoft Word 2007 XML Template"
-msgstr "Mẫu XML MS Word 2007"
-
 #: config/fragments/filters/MS_Word_2007_XML_ui.xcu#MS_WORD_2007_XML.UINAME
 msgid  "Microsoft Word 2007 XML"
 msgstr "MS Word 2007 XML"
@@ -174,6 +166,18 @@ msgstr "Mẫu MS Word 95"
 #: config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS_WORD_97_VORLAGE.UINAME
 msgid  "Microsoft Word 97/2000/XP Template"
 msgstr "Mẫu MS Word 97/2000/XP"
+
+#: config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO_CALC_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "Bảng Tính Định Dạng Văn Phòng Thống Nhất 2"
+
+#: config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO_IMPRESS_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr "Trình Chiếu Định Dạng Văn Phòng Thống Nhất 2"
+
+#: config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO_WRITER_UOF2.UINAME
+msgid  "Uniform Office Format 2 Text"
+msgstr "Văn Bản Định Dạng Văn Phòng Thống Nhất 2"
 
 #: config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#STARCALC_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarCalc 3.0 Template"
@@ -219,6 +223,30 @@ msgstr "Mẫu StarImpress 5.0"
 msgid  "ODF Database"
 msgstr "Cơ sở dữ liệu ODF"
 
+#: config/fragments/filters/StarOffice_XML__Calc__ui.xcu#STAROFFICE_XML_(CALC).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Bảng Tính"
+
+#: config/fragments/filters/StarOffice_XML__Chart__ui.xcu#STAROFFICE_XML_(CHART).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Biểu Đồ"
+
+#: config/fragments/filters/StarOffice_XML__Draw__ui.xcu#STAROFFICE_XML_(DRAW).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Bản Vẽ"
+
+#: config/fragments/filters/StarOffice_XML__Impress__ui.xcu#STAROFFICE_XML_(IMPRESS).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Trình Chiếu"
+
+#: config/fragments/filters/StarOffice_XML__Math__ui.xcu#STAROFFICE_XML_(MATH).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Công Thức"
+
+#: config/fragments/filters/StarOffice_XML__Writer__ui.xcu#STAROFFICE_XML_(WRITER).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Tài Liệu Dạng Văn Bản"
+
 #: config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#STARWRITER_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarWriter 3.0 Template"
 msgstr "Mẫu StarWriter 3.0"
@@ -259,17 +287,9 @@ msgstr "Văn bản đã mã hoá (%productname% Writer/Web)"
 msgid  "Text Encoded"
 msgstr "Văn bản đã mã hoá"
 
-#: config/fragments/filters/Text__StarWriter_Web__ui.xcu#TEXT_(STARWRITER/WEB).UINAME
-msgid  "Text (%productname% Writer/Web)"
-msgstr "Văn bản (%productname% Writer/Web)"
-
 #: config/fragments/filters/Text___txt___csv__StarCalc__ui.xcu#TEXT_-_TXT_-_CSV_(STARCALC).UINAME
 msgid  "Text CSV"
 msgstr "Văn bản CSV"
-
-#: config/fragments/filters/Text_ui.xcu#TEXT.UINAME
-msgid  "Text"
-msgstr "Văn bản"
 
 #: config/fragments/filters/UOF_presentation_ui.xcu#UOF_PRESENTATION.UINAME
 msgid  "Unified Office Format presentation"
@@ -301,15 +321,15 @@ msgstr "Tài liệu văn bản ODF"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER_GLOBALDOCUMENT.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr "Tài liệu chủ %productname% %formatversion%"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Tài Liệu Chính"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr "Tài liệu văn bản %productname% %formatversion%"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Tài Liệu Dạng Văn Bản"
 
 #: config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#WRITER_STAROFFICE_XML_WRITER_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr "Mẫu tài liệu văn bản %productname% %formatversion%"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Mẫu Tài Liệu Dạng Văn Bản"
 
 #: config/fragments/filters/writerweb8_writer_template_ui.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "HTML Document Template"
@@ -321,11 +341,11 @@ msgstr "Văn bản %productname% (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr "Tài liệu văn bản %productname% %formatversion% (%productname% Writer/Web)"
+msgstr "Tài Liệu Dạng Văn Bản %productname% %formatversion% (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER_WEB_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr "Mẫu HTML %productname% %formatversion%"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Mẫu HTML"
 
 #: config/fragments/internalgraphicfilters/bmp_Export.xcu#BMP_EXPORT.UINAME
 #, fuzzy
@@ -398,6 +418,7 @@ msgid  "PBM - Portable Bitmap"
 msgstr "PBM - Ảnh bitmap di động"
 
 #: config/fragments/internalgraphicfilters/pbm_Import.xcu#PBM_IMPORT.UINAME
+#, fuzzy
 msgid  "PBM - Portable Bitmap"
 msgstr "PBM - Ảnh bitmap di động"
 
@@ -452,6 +473,7 @@ msgid  "PNG - Portable Network Graphic"
 msgstr "PNG - Đồ họa mạng di động"
 
 #: config/fragments/internalgraphicfilters/ppm_Export.xcu#PPM_EXPORT.UINAME
+#, fuzzy
 msgid  "PPM - Portable Pixelmap"
 msgstr "PPM - Đồ thị điểm ảnh di động"
 
@@ -476,6 +498,7 @@ msgid  "RAS - Sun Raster Image"
 msgstr "RAS - Ảnh mành Sun"
 
 #: config/fragments/internalgraphicfilters/sgf_Import.xcu#SGF_IMPORT.UINAME
+#, fuzzy
 msgid  "SGF - StarWriter Graphics Format"
 msgstr "SGF - Định dạng đồ họa StarWriter"
 
@@ -485,14 +508,12 @@ msgid  "SGV - StarDraw 2.0"
 msgstr "SGV - StarDraw 2.0"
 
 #: config/fragments/internalgraphicfilters/svg_Export.xcu#SVG_EXPORT.UINAME
-#, fuzzy
 msgid  "SVG - Scalable Vector Graphics"
-msgstr "SVG - Đồ họa véc-tơ có khả năng co giãn"
+msgstr "SVG - Đồ Họa Véctơ Tùy Chỉnh Hiển Thị"
 
 #: config/fragments/internalgraphicfilters/svg_Import.xcu#SVG_IMPORT.UINAME
-#, fuzzy
 msgid  "SVG - Scalable Vector Graphics"
-msgstr "SVG - Đồ họa véc-tơ có khả năng co giãn"
+msgstr "SVG - Đồ Họa Véctơ Tùy Chỉnh Hiển Thị"
 
 #: config/fragments/internalgraphicfilters/svm_Export.xcu#SVM_EXPORT.UINAME
 #, fuzzy
@@ -559,6 +580,10 @@ msgstr "Calc 8"
 msgid  "Microsoft Excel 2003 XML"
 msgstr "Microsoft Excel 2003 XML"
 
+#: config/fragments/types/calc_NSO_UOF2.xcu#CALC_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "Bảng Tính Định Dạng Văn Phòng Thống Nhất 2"
+
 #: config/fragments/types/chart8.xcu#CHART8.UINAME
 #, fuzzy
 msgid  "Chart 8"
@@ -583,6 +608,10 @@ msgstr "Mẫu Impress 8"
 #, fuzzy
 msgid  "Impress 8"
 msgstr "Impress 8"
+
+#: config/fragments/types/impress_NSO_UOF2.xcu#IMPRESS_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr "Trình Chiếu Định Dạng Văn Phòng Thống Nhất 2"
 
 #: config/fragments/types/math8.xcu#MATH8.UINAME
 #, fuzzy
@@ -614,6 +643,10 @@ msgstr "Tài liệu chủ Writer 8"
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
+#: config/fragments/types/writer_NSO_UOF2.xcu#WRITER_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 text"
+msgstr "Văn Bản Định Dạng Văn Phòng Thống Nhất 2"
+
 #: config/fragments/types/writerweb8_writer_template.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 #, fuzzy
 msgid  "Writer/Web 8 Template"
@@ -631,22 +664,15 @@ msgstr "1: chất lượng tiểu\n100: chất lượng đại"
 
 #: graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.STRING.TEXT
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
-msgstr ""
-
-#: pdf/impdialog.src#STR_PDF_EXPORT.STRING.TEXT
-#, fuzzy
-msgid  "E~xport"
-msgstr "~Xuất"
+msgstr "Cảnh báo: Không phải tất cả các phần đồ họa định dạng EPS được nhập vào có thể được lưu lại ở cấp độ 1\nvì một số phần các đối tượng đó ở dạng cấp độ cao hơn!"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_UDPWD.STRING.TEXT
-#, fuzzy
 msgid  "Set open password"
-msgstr "Đặt mật khẩu mở"
+msgstr "Thêm vào mật khẩu dạng mở"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_ODPWD.STRING.TEXT
-#, fuzzy
 msgid  "Set permission password"
-msgstr "Đặt mật khẩu quyền hạn"
+msgstr "Thêm vào mật khẩu quy định quyền tác động"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.TABPAGE.TEXT
 #, fuzzy
@@ -663,21 +689,6 @@ msgstr "Phạm vi"
 msgid  "~All"
 msgstr "Tất ~cả"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Pages"
-msgstr "Tr~ang"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Selection"
-msgstr "Tù~y chọn"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Images"
-msgstr "Ảnh"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Lossless compression"
@@ -687,16 +698,6 @@ msgstr "Nén không ~mất gì"
 #, fuzzy
 msgid  "~JPEG compression"
 msgstr "Nén ~JPEG"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Quality"
-msgstr "C~hất lượng"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Reduce image resolution"
-msgstr "Giảm độ ~phân giải ảnh"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CHECKBOX.TEXT
 #, fuzzy
@@ -713,14 +714,9 @@ msgstr "PDF có ~thẻ"
 msgid  "~Create PDF form"
 msgstr "Tạ~o biểu mẫu PDF"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_FORMSFORMAT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Submit ~format"
-msgstr "Đệ trình định ~dạng"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ALLOWDUPLICATEFIELDNAMES.CHECKBOX.TEXT
 msgid  "Allow duplicate field ~names"
-msgstr ""
+msgstr "Cho ~phép các khung thông tin về tên được trùng nhau"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTBOOKMARKS.CHECKBOX.TEXT
 #, fuzzy
@@ -729,11 +725,11 @@ msgstr "Xuất Đánh ~dấu"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTNOTES.CHECKBOX.TEXT
 msgid  "~Export comments"
-msgstr ""
+msgstr "~Xuất dữ liệu từ các bình luận"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTNOTESPAGES.CHECKBOX.TEXT
 msgid  "Export ~notes pages"
-msgstr ""
+msgstr "Xuất ~dữ liệu từ các trang ghi chú"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTEMPTYPAGES.CHECKBOX.TEXT
 #, fuzzy
@@ -742,20 +738,19 @@ msgstr "Xuất t~rang trắng đã chèn tự động "
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EMBEDSTANDARDFONTS.CHECKBOX.TEXT
 msgid  "E~mbed standard fonts"
-msgstr ""
+msgstr "Kiểu chữ được n~én tiêu chuẩn"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ADDSTREAM.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Embed this document ~inside the PDF"
-msgstr "Tạo tập tin ~hỗn hợp"
+msgstr "Nén tài liệu này ~bên trong PDF"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.TITLE
 msgid  "PDF/A Export"
-msgstr ""
+msgstr "Xuất dữ liệu từ PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.MESSAGE
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
-msgstr ""
+msgstr "PDF/A không cho phép mã hóa. Tập tin PDF được xuất ra sẽ không có phần mật khẩu bảo vệ."
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TABPAGE.TEXT
 #, fuzzy
@@ -787,11 +782,6 @@ msgstr "Ảnh mẫu và ~trang"
 msgid  "Open on page"
 msgstr "Mở ở trang"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Magnification"
-msgstr "Phóng to"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Default"
@@ -816,11 +806,6 @@ msgstr "~Vừa vùng hiện rõ"
 #, fuzzy
 msgid  "~Zoom factor"
 msgstr "Hệ số Thu ~Phóng"
-
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Page layout"
-msgstr "Bố trí trang"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
@@ -852,11 +837,6 @@ msgstr "Trang đầu bên t~rái"
 msgid  "User Interface"
 msgstr "Giao diện người dùng"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Window options"
-msgstr "Tùy chọn cửa sổ"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Resize window to initial page"
@@ -877,11 +857,6 @@ msgstr "Mở ở chế độ t~oàn màn hình"
 msgid  "~Display document title"
 msgstr "~Hiển thị tựa đề tài liệu"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User interface options"
-msgstr "Tùy chọn giao diện người dùng"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Hide ~menubar"
@@ -897,47 +872,27 @@ msgstr "Ẩn ~thanh công cụ"
 msgid  "Hide ~window controls"
 msgstr "Ẩn ~các điều khiển cửa sổ"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Transitions"
-msgstr "Chuyển tiếp"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Use transition effects"
 msgstr "Dùng hiệ~u ứng chuyển tiếp"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Bookmarks"
-msgstr "Liên kết lưu"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "All bookmark levels"
-msgstr "Mọi cấp Liên kết lưu"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Visible bookmark levels"
 msgstr "Các cấp Đạnh dấu hiện rõ"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.TABPAGE.TEXT
-#, fuzzy
-msgid  "Security"
-msgstr "Bảo mật"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.FIXEDLINE.TEXT
 msgid  "File encryption and permission"
-msgstr ""
+msgstr "Mã hóa tập tin và gán quyền truy cập"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.BTN_SET_PWD.PUSHBUTTON.TEXT
 msgid  "Set ~passwords..."
-msgstr ""
+msgstr "Đặt ~mật khẩu..."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_SET_PWD.STRING.TEXT
 msgid  "Set passwords"
-msgstr ""
+msgstr "Đặt mật khẩu"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_SET.STRING.TEXT
 #, fuzzy
@@ -961,7 +916,7 @@ msgstr "Tài liệu PDF sẽ không được mã hoá"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.STRING.TEXT
 msgid  "PDF document will not be encrypted due to PDF/A export."
-msgstr ""
+msgstr "Tài liệu PDF sẽ không được mã hóa vì xuất dữ liệu dạng PDF/A."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.STRING.TEXT
 #, fuzzy
@@ -985,37 +940,17 @@ msgstr "Tài liệu PDF sẽ không bị hạn chế"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.STRING.TEXT
 msgid  "PDF document will not be restricted due to PDF/A export."
-msgstr ""
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Printing"
-msgstr "In ấn"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Not permitted"
-msgstr "Khô~ng cho phép"
+msgstr "Tài liệu PDF sẽ không bị hạn chế truy cập vì việc xuất dữ liệu dạng PDF/A."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Low resolution (150 dpi)"
 msgstr "~Phân giải thấp (150 điểm/insơ)"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~High resolution"
-msgstr "P~hân giải cao"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Changes"
 msgstr "Các thay đổi"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "No~t permitted"
-msgstr "~Không cho phép"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1041,11 +976,6 @@ msgstr "Bất kỳ trừ rút tr~ang"
 #, fuzzy
 msgid  "Ena~ble copying of content"
 msgstr "~Bật sao chép nội dung"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Enable text access for acce~ssibility tools"
-msgstr "Bật t~ruy cập văn bản cho công cụ khả năng truy cập"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.TABPAGE.TEXT
 #, fuzzy
@@ -1212,25 +1142,10 @@ msgstr "OK"
 msgid  "XML Filter output"
 msgstr "Đầu ra bộ lọc XML"
 
-#: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Validate"
-msgstr "~Hợp lệ hóa"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Tên"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.STRING.TEXT
 #, fuzzy
 msgid  "Type"
 msgstr "Kiểu"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.STRING.TEXT
-#, fuzzy
-msgid  "Unknown"
-msgstr "Không rỗ"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.STRING.TEXT
 #, fuzzy
@@ -1282,21 +1197,6 @@ msgstr "Không tìm thấy XSLT để nhập. Hãy nhập một đường dẫn 
 msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "Không tìm thấy biểu mẫu nhập đã cho. Hãy nhập một đường dẫn hợp lệ."
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.STRING.TEXT
-#, fuzzy
-msgid  "Not specified"
-msgstr "Chưa xác định"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "New Filter"
-msgstr "Bộ lọc mới"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Untitled"
-msgstr "Không tên"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.STRING.TEXT
 #, fuzzy
 msgid  "undefined filter"
@@ -1347,89 +1247,24 @@ msgstr "~Mới..."
 msgid  "~Edit..."
 msgstr "~Sửa..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Test XSLTs..."
-msgstr "~Thử XSLT..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete..."
-msgstr "~Xoá..."
-
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Save as Package..."
 msgstr "~Lưu dạng gói..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Open Package..."
-msgstr "~Mớ gói..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "Đón~g"
-
 #: xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.STRING.TEXT
 msgid  "XML Filter List"
-msgstr ""
+msgstr "Danh sách lọc dữ liệu dạng XML"
 
 #: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TABDIALOG.TEXT
 #, fuzzy
 msgid  "XML Filter: %s"
 msgstr "Bộ lọc XML: %s"
 
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Chung"
-
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Transformation"
-msgstr "Chuyển dạng"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TABPAGE.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Chung"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Filter name"
-msgstr "Tên bộ lọc"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Application"
-msgstr "Ứng dụng"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Name of\nfile type"
-msgstr "Kiểu tập tin"
-
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "File extension"
 msgstr "Phần mở rộng tập tin"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "Chú thích"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TABPAGE.TEXT
-#, fuzzy
-msgid  "Transformation"
-msgstr "Chuyển dạng"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "DocType"
-msgstr "DocType (kiểu tài liệu)"
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1440,41 +1275,6 @@ msgstr "DTD (mô tả kiểu tập tin)"
 #, fuzzy
 msgid  "Browse..."
 msgstr "Duyệt..."
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for export"
-msgstr "XSLT để xuất"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for import"
-msgstr "XSLT để nhập"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template for import"
-msgstr "Mẫu để nhập"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Test XML Filter: %s"
-msgstr "Thử bộ lọc XML: %s"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Xuất"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for export"
-msgstr "XSLT để xuất"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Transform document"
-msgstr "Chuyển dạng tài liệu"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1491,21 +1291,6 @@ msgstr "Tài liệu hiện ~có"
 msgid  "Import"
 msgstr "Nhập"
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for import"
-msgstr "XSLT để nhập"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template for import"
-msgstr "Mẫu để nhập"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Transform file"
-msgstr "Chuyển dạng tập tin"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Display source"
@@ -1515,11 +1300,6 @@ msgstr "~Hiển thị nguồn"
 #, fuzzy
 msgid  "B~rowse..."
 msgstr "D~uyệt..."
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Recent File"
-msgstr "Tập tin ~vừa mở"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy

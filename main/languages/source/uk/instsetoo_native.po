@@ -31,99 +31,20 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: Property.ulf#OOO_ARPCOMMENTSTEMPLATE
-#, fuzzy
-msgid  "Comment in the Add-Remove-Programs Applet"
-msgstr "Коментар у аплеті «Установка-Удаление программ»"
-
-#: Property.ulf#OOO_ARPCONTACTTEMPLATE
-#, fuzzy
-msgid  "Department for technical support"
-msgstr "Відділ технічної підтримки"
-
 #: Property.ulf#OOO_ARPHELPLINKTEMPLATE
 #, fuzzy
 msgid  "http://www.openoffice.org"
 msgstr "http://www.openoffice.org"
-
-#: Property.ulf#OOO_ARPHELPTELEPHONETEMPLATE
-#, fuzzy
-msgid  "x-xxx-xxx-xxx"
-msgstr "x-xxx-xxx-xxx"
-
-#: Property.ulf#OOO_STR_NEW_DISPLAY_NAME
-#, fuzzy
-msgid  "~New"
-msgstr "~Створити"
-
-#: Property.ulf#OOO_STR_EDIT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Редагування"
-
-#: Property.ulf#OOO_STR_MS_WORD_DOCUMENT
-#, fuzzy
-msgid  "Microsoft Word Document"
-msgstr "Документ Microsoft Word"
-
-#: Property.ulf#OOO_STR_MS_WORD_TEMPLATE
-#, fuzzy
-msgid  "Microsoft Word Template"
-msgstr "Шаблон Microsoft Word"
 
 #: Property.ulf#OOO_STR_MS_EXCEL_WORKSHEET
 #, fuzzy
 msgid  "Microsoft Excel Worksheet"
 msgstr "Електронна таблиця Microsoft Excel"
 
-#: Property.ulf#OOO_STR_MS_EXCEL_TEMPLATE
-#, fuzzy
-msgid  "Microsoft Excel Template"
-msgstr "Шаблон Microsoft Excel"
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_PRESENTATION
-#, fuzzy
-msgid  "Microsoft PowerPoint Presentation"
-msgstr "Презентація Microsoft PowerPoint"
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_TEMPLATE
-#, fuzzy
-msgid  "Microsoft PowerPoint Template"
-msgstr "Шаблон Microsoft PowerPoint"
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_SHOW
-#, fuzzy
-msgid  "Microsoft PowerPoint Show"
-msgstr "Слайди Microsoft PowerPoint"
-
-#: Property.ulf#OOO_STR_INSTALLATION_WIZARD
-#, fuzzy
-msgid  "Installation Wizard"
-msgstr "Помічник встановлення"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_1
-#, fuzzy
-msgid  "{&MSSansBold8}&Modify"
-msgstr "{&MSSansBold8}&Змінити"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_2
-#, fuzzy
-msgid  "{&MSSansBold8}Re&pair"
-msgstr "{&MSSansBold8}В&ідновити"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_3
-#, fuzzy
-msgid  "{&MSSansBold8}&Remove"
-msgstr "{&MSSansBold8}В&идалити"
-
 #: RadioBut.ulf#OOO_RADIOBUTTON_4
+#, fuzzy
 msgid  "{&MSSansBold8}&Typical"
 msgstr ""
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_5
-#, fuzzy
-msgid  "{&MSSansBold8}Cu&stom"
-msgstr "{&MSSansBold8}Ви&біркова"
 
 #: RadioBut.ulf#OOO_RADIOBUTTON_6
 #, fuzzy
@@ -135,65 +56,10 @@ msgstr "Я ~не приймаю умов ліцензійної угоди"
 msgid  "I &accept the terms in the license agreement"
 msgstr "Я ~приймаю умови ліцензійної угоди"
 
-#: RadioBut.ulf#OOO_RADIOBUTTON_8
-#, fuzzy
-msgid  "&Anyone who uses this computer (all users)"
-msgstr "Для &усіх користувачів комп'ютера (all users)"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_9
-#, fuzzy
-msgid  "Only for &me ([USERNAME])"
-msgstr "Лише для &мене ([USERNAME])"
-
-#: Error.ulf#OOO_ERROR_1
-#, fuzzy
-msgid  "{{Fatal error: }}"
-msgstr "{{Критична помилка: }}"
-
-#: Error.ulf#OOO_ERROR_2
-#, fuzzy
-msgid  "Error [1]."
-msgstr "Помилка [1]."
-
-#: Error.ulf#OOO_ERROR_3
-#, fuzzy
-msgid  "Warning [1]."
-msgstr "Попередження [1]."
-
-#: Error.ulf#OOO_ERROR_4
-#, fuzzy
-msgid  "Info [1]."
-msgstr "Інформація [1]."
-
-#: Error.ulf#OOO_ERROR_5
-#, fuzzy
-msgid  "Internal Error [1]. [2]{, [3]}{, [4]}"
-msgstr "Внутрішня помилка [1]. [2]{, [3]}{, [4]}"
-
-#: Error.ulf#OOO_ERROR_6
-#, fuzzy
-msgid  "{{Disk full: }}"
-msgstr "{{Диск переповнений: }}"
-
 #: Error.ulf#OOO_ERROR_7
 #, fuzzy
 msgid  "Action [Time]: [1]. [2]"
 msgstr "Action [Time]: [1]. [2]"
-
-#: Error.ulf#OOO_ERROR_8
-#, fuzzy
-msgid  "[ProductName]"
-msgstr "[ProductName]"
-
-#: Error.ulf#OOO_ERROR_9
-#, fuzzy
-msgid  "{[2]}{, [3]}{, [4]}"
-msgstr "{[2]}{, [3]}{, [4]}"
-
-#: Error.ulf#OOO_ERROR_10
-#, fuzzy
-msgid  "Message type: [1], Argument: [2]"
-msgstr "Тип повідомлення: [1], Призначення: [2]"
 
 #: Error.ulf#OOO_ERROR_11
 #, fuzzy
@@ -210,50 +76,10 @@ msgstr "=== Logging stopped: [Date]  [Time] ==="
 msgid  "Action start [Time]: [1]."
 msgstr "Дію розпочато о [Time]: [1]."
 
-#: Error.ulf#OOO_ERROR_14
-#, fuzzy
-msgid  "Action ended [Time]: [1]. Return value [2]."
-msgstr "Дію закінчено о [Time]: [1]. Отримано значення [2]."
-
-#: Error.ulf#OOO_ERROR_15
-#, fuzzy
-msgid  "Time remaining: {[1] minutes }{[2] seconds}"
-msgstr "Залишилось часу: {[1] хв. }{[2] сек.}"
-
 #: Error.ulf#OOO_ERROR_16
 #, fuzzy
 msgid  "Out of memory. Shut down other applications before retrying."
 msgstr "Бракує оперативної пам'яті. Вивантажте інші програми перед повтором."
-
-#: Error.ulf#OOO_ERROR_17
-#, fuzzy
-msgid  "Installer is no longer responding."
-msgstr "Програма встановлення не реагує на запити."
-
-#: Error.ulf#OOO_ERROR_18
-#, fuzzy
-msgid  "Installer terminated prematurely."
-msgstr "Програма встановлення передчасно завершила роботу."
-
-#: Error.ulf#OOO_ERROR_19
-#, fuzzy
-msgid  "Please wait while Windows configures [ProductName]"
-msgstr "Зачекайте доки Windows налаштовує [ProductName]"
-
-#: Error.ulf#OOO_ERROR_20
-#, fuzzy
-msgid  "Gathering required information..."
-msgstr "Збір інформації, що потрібна для встановлення..."
-
-#: Error.ulf#OOO_ERROR_21
-#, fuzzy
-msgid  "Removing older versions of this application"
-msgstr "Видалення попередніх версій програми"
-
-#: Error.ulf#OOO_ERROR_22
-#, fuzzy
-msgid  "Preparing to remove older versions of this application"
-msgstr "Підготовка до видалення попередніх версій програми"
 
 #: Error.ulf#OOO_ERROR_23
 #, fuzzy
@@ -274,11 +100,6 @@ msgstr "Помилка при читанні файла: [2]. {{ System error [3
 #, fuzzy
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
 msgstr "Неможливо створити файл [3]. Каталог з цим файлом вже існує. Перевірте встановлення та виберіть інший шлях путь призначення."
-
-#: Error.ulf#OOO_ERROR_27
-#, fuzzy
-msgid  "Please insert the disk: [2]"
-msgstr "Вставте диск: [2]"
 
 #: Error.ulf#OOO_ERROR_28
 #, fuzzy
@@ -335,45 +156,10 @@ msgstr "Неможливо створити теку [2]. Файл з такою
 msgid  "The volume [2] is currently unavailable.  Please select another."
 msgstr "Том [2] недоступний. Виберіть інший том."
 
-#: Error.ulf#OOO_ERROR_39
-#, fuzzy
-msgid  "The specified path [2] is unavailable."
-msgstr "Вказаний шлях [2] недоступний."
-
-#: Error.ulf#OOO_ERROR_40
-#, fuzzy
-msgid  "Unable to write to the specified folder [2]."
-msgstr "Запис до вказаної теки [2] неможливий."
-
-#: Error.ulf#OOO_ERROR_41
-#, fuzzy
-msgid  "A network error occurred while attempting to read from the file [2]"
-msgstr "Помилка мережі при читанні файлу [2]"
-
-#: Error.ulf#OOO_ERROR_42
-#, fuzzy
-msgid  "An error occurred while attempting to create the directory [2]"
-msgstr "Помилка створення каталогу [2]"
-
 #: Error.ulf#OOO_ERROR_43
 #, fuzzy
 msgid  "A network error occurred while attempting to create the directory [2]"
 msgstr "Помилка мережі при створенні каталогу [2]"
-
-#: Error.ulf#OOO_ERROR_44
-#, fuzzy
-msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr "Мережна помилка при спробі відкриття первинного файлу [2]."
-
-#: Error.ulf#OOO_ERROR_45
-#, fuzzy
-msgid  "The specified path is too long [2]."
-msgstr "Вказаний шлях [2] надто довгий."
-
-#: Error.ulf#OOO_ERROR_46
-#, fuzzy
-msgid  "The Installer has insufficient privileges to modify the file [2]."
-msgstr "Програма встановлення не має достатньо прав для зміни файлу [2]."
 
 #: Error.ulf#OOO_ERROR_47
 #, fuzzy
@@ -390,55 +176,10 @@ msgstr "Шлях [2] містить слова, які не є коректни�
 msgid  "The path [2] contains an invalid character."
 msgstr "Шлях [2] містить некоректні символи."
 
-#: Error.ulf#OOO_ERROR_50
-#, fuzzy
-msgid  "[2] is not a valid short file name."
-msgstr "Некоректна коротка назва файла [2]"
-
-#: Error.ulf#OOO_ERROR_51
-#, fuzzy
-msgid  "Error getting file security: [3] GetLastError: [2]"
-msgstr "Помилка при отриманні інформації про безпеку файлу [3]. GetLastError: [2]"
-
-#: Error.ulf#OOO_ERROR_52
-#, fuzzy
-msgid  "Invalid Drive: [2]"
-msgstr "Некоректна назва диску: [2]"
-
-#: Error.ulf#OOO_ERROR_53
-#, fuzzy
-msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr "Помилка при застосуванні виправлень до файлу [2]. Можливо це пов'язано з тим, що цей файл вже був певним чином оновлений та не може бути змінений цим виправленням. Для з'ясування подробиць, зверніться до розробників виправлення. {{System Error: [3]}}"
-
-#: Error.ulf#OOO_ERROR_54
-#, fuzzy
-msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Неможливо створити ключ [2]. {{System Error: [3]}} Перевірте, що у вас є права доступу до цього ключа або зв'яжіться з системним адміністратором."
-
-#: Error.ulf#OOO_ERROR_55
-#, fuzzy
-msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Неможливо відкрити ключ [2]. {{System Error: [3]}} Перевірте, що у вас є права доступу до цього ключа або зв'яжіться з системним адміністратором."
-
-#: Error.ulf#OOO_ERROR_56
-#, fuzzy
-msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Неможливо видалити значення [2] з ключа [3]. {{System Error: [4]}} Перевірте, що у вас є права доступу до цього ключа або зв'яжіться з системним адміністратором."
-
-#: Error.ulf#OOO_ERROR_57
-#, fuzzy
-msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Неможливо видалити ключ [2]. {{System Error: [3]}} Перевірте, що у вас є права доступу до цього ключа або зв'яжіться з системним адміністратором."
-
 #: Error.ulf#OOO_ERROR_58
 #, fuzzy
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
 msgstr "Неможливо прочитати значення [2] з ключа [3]. {{System Error: [4]}} Перевірте, що у вас є права доступу до цього ключа або зв'яжіться з системним адміністратором."
-
-#: Error.ulf#OOO_ERROR_59
-#, fuzzy
-msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Неможливо записати значення [2] з ключа [3]. {{System Error: [4]}} Перевірте, що у вас є права доступу до цього ключа або зв'яжіться з системним адміністратором."
 
 #: Error.ulf#OOO_ERROR_60
 #, fuzzy
@@ -460,75 +201,10 @@ msgstr "Неможливо прочитати інформацію про без
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
 msgstr "Неможливо збільшити розмір реєстру на[2]Кбайт."
 
-#: Error.ulf#OOO_ERROR_64
-#, fuzzy
-msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr "Виконується інша копія програми встановлення. Ви маєте завершити встановлення перш ніж продовжити це."
-
-#: Error.ulf#OOO_ERROR_65
-#, fuzzy
-msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr "Помилка доступу. Будь ласка, перевірте що Windows Installer налаштований правильно та спробуйте виконати встановлення знову."
-
-#: Error.ulf#OOO_ERROR_66
-#, fuzzy
-msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr "Користувач [2] вже виконав встановлення продукту [3]. Користувачу [2] треба запустити встановлення ще раз перед використанням продукту. Ваше встановлення буде продовжено."
-
-#: Error.ulf#OOO_ERROR_67
-#, fuzzy
-msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr "Користувач [2] вже виконав встановлення продукту [3]. Користувачу [2] треба запустити встановлення ще раз перед використанням продукту."
-
-#: Error.ulf#OOO_ERROR_68
-#, fuzzy
-msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr "Немає місця на диску -- том: '[2]'; потрібно [3] Кбайт; доступно: [4] Кбайт. Звільніть місце на диску та натисніть «Продовжити»."
-
-#: Error.ulf#OOO_ERROR_69
-#, fuzzy
-msgid  "Are you sure you want to cancel?"
-msgstr "Ви дійсно хочете скасувати?"
-
-#: Error.ulf#OOO_ERROR_70
-#, fuzzy
-msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr "Файл [2][3] використовується{ наступним процесом: Назва: [4], Ід: [5], Заголовок: [6]}. Закрийте вказану програму та спробуйте знову."
-
-#: Error.ulf#OOO_ERROR_71
-#, fuzzy
-msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr "Продукт [2] вже встановлено. Спільне використання цих продуктів неможливе."
-
-#: Error.ulf#OOO_ERROR_72
-#, fuzzy
-msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr "Немає місця на диску: [2]; потрібно: [3] Kбайт; доступно: [4] Kбайт. Якщо вимкнути відкат, то місця вистачить. Натисніть «Скасувати» для виходу, «Повтор» для повторної інспекції вільного місця на диску, «Ігнорувати» для продовження без відкату назад."
-
-#: Error.ulf#OOO_ERROR_73
-#, fuzzy
-msgid  "Could not access network location [2]."
-msgstr "Неможливо отримати доступ до мережного ресурсу [2]."
-
-#: Error.ulf#OOO_ERROR_74
-#, fuzzy
-msgid  "The following applications should be closed before continuing the installation:"
-msgstr "Вказані програми треба закрити перед встановленням:"
-
-#: Error.ulf#OOO_ERROR_75
-#, fuzzy
-msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr "Неможливо знайти жодного потрібного встановленого продукту на цьому комп'ютері для встановлення цього продукту."
-
 #: Error.ulf#OOO_ERROR_76
 #, fuzzy
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
 msgstr "Ключ [2] некоректний. Перевірте, що введено коректний ключ."
-
-#: Error.ulf#OOO_ERROR_77
-#, fuzzy
-msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr "Програма встановлення має перезапустити Вашу систему для налаштовування [2]. Натисніть Так для перезавантаження та Ні, якщо ви перезавантажите систему самостійно."
 
 #: Error.ulf#OOO_ERROR_78
 #, fuzzy
@@ -545,31 +221,6 @@ msgstr "Встановлення [2] призупинено. Слід відко
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
 msgstr "Зараз проводиться попереднє встановлення цього. Слід відкотити всі зроблені програмою встановлення зімни. Відкотити зміни?"
 
-#: Error.ulf#OOO_ERROR_81
-#, fuzzy
-msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr "Не знайдено коректний первинний файл для продукту [2]. Windows Installer не може продовжувати."
-
-#: Error.ulf#OOO_ERROR_82
-#, fuzzy
-msgid  "Installation operation completed successfully."
-msgstr "Встановлення успішно завершено."
-
-#: Error.ulf#OOO_ERROR_83
-#, fuzzy
-msgid  "Installation operation failed."
-msgstr "Встановлення завершена з помилкою."
-
-#: Error.ulf#OOO_ERROR_84
-#, fuzzy
-msgid  "Product: [2] -- [3]"
-msgstr "Продукт: [2] -- [3]"
-
-#: Error.ulf#OOO_ERROR_85
-#, fuzzy
-msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr "Ви можете або відновити комп'ютер до попереднього стану, або продовжити встановлення пізніше. Відновити зараз?"
-
 #: Error.ulf#OOO_ERROR_86
 #, fuzzy
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
@@ -579,11 +230,6 @@ msgstr "Виникла помилка під час запису інформа�
 #, fuzzy
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
 msgstr "Не знайдено один або декілька файлів, що потрібні для відновлення. Відновлення неможливе."
-
-#: Error.ulf#OOO_ERROR_88
-#, fuzzy
-msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr "[2] Неможливо встановити один з необхідних продуктів. Зв'яжіться з системним адміністратором. {{System Error: [3].}}"
 
 #: Error.ulf#OOO_ERROR_89
 #, fuzzy
@@ -609,26 +255,6 @@ msgstr "Відсутній диск у дисководі [2]. Вставте д
 #, fuzzy
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
 msgstr "Каталог [2] не існує. Введіть шлях до існуючого каталогу."
-
-#: Error.ulf#OOO_ERROR_95
-#, fuzzy
-msgid  "You have insufficient privileges to read this folder."
-msgstr "У вас немає прав для читання вказаної теки."
-
-#: Error.ulf#OOO_ERROR_96
-#, fuzzy
-msgid  "A valid destination folder for the installation could not be determined."
-msgstr "Коректний шлях призначення для встановлення не виявлено."
-
-#: Error.ulf#OOO_ERROR_97
-#, fuzzy
-msgid  "Error attempting to read from the source installation database: [2]."
-msgstr "Виникла помилка при читанні первинної інсталяційної бази даних: [2]."
-
-#: Error.ulf#OOO_ERROR_98
-#, fuzzy
-msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr "Планове перезавантаження системи: Перейменування файлу [2] на [3]. Для завершення операції необхідно перезавантажити систему."
 
 #: Error.ulf#OOO_ERROR_99
 #, fuzzy
@@ -660,16 +286,6 @@ msgstr "Неможливо зареєструвати шрифт [2]. HRESULT [3
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
 msgstr "Неможливо видалити реєстрацію шрифтів [2]. Перевірте, що ви маєте потрібні права доступу."
 
-#: Error.ulf#OOO_ERROR_105
-#, fuzzy
-msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr "Неможливо створити ярлик [2]. Перевірте, що цільова тека існує та ви маєте до не доступ."
-
-#: Error.ulf#OOO_ERROR_106
-#, fuzzy
-msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr "Неможливо видалити ярлик [2]. Перевірте, що файл ярлика існує та ви маєте потрібні права доступу."
-
 #: Error.ulf#OOO_ERROR_107
 #, fuzzy
 msgid  "Could not register type library for file [2].  Contact your support personnel."
@@ -699,21 +315,6 @@ msgstr "Помилка при видалення менеджера драйве
 #, fuzzy
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
 msgstr "Помилка при встановленні менеджера драйвера ODBC. Помилка ODBC [2]: [3]. Зв'яжіться з системним адміністратором."
-
-#: Error.ulf#OOO_ERROR_113
-#, fuzzy
-msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr "Помилка при видаленні драйвера ODBC [4], помилка ODBC [2]: [3]. Перевірте наявність прав для видалення драйверів ODBC."
-
-#: Error.ulf#OOO_ERROR_114
-#, fuzzy
-msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr "Помилка при встановленні драйвера ODBC [4], помилка ODBC [2]: [3]. Перевірте що файл існує [4] та у вас є доступ до нього."
-
-#: Error.ulf#OOO_ERROR_115
-#, fuzzy
-msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr "Помилка при налаштуванні джерела даних ODBC. Помилка ODBC [2]: [3]. Перевірте наявність файлу [4] та доступ до нього."
 
 #: Error.ulf#OOO_ERROR_116
 #, fuzzy
@@ -785,204 +386,30 @@ msgstr "Служба Windows Installer не може оновити захище
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
 msgstr "Програма встановлення вимагає Internet Information Server 4.0 чи старшої версії для налаштовування Віртуальних Сайтів (Virtual Roots). Перевірте, що у вас IIS 4.0 або старша версія."
 
-#: Error.ulf#OOO_ERROR_130
-#, fuzzy
-msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr "Програма встановлення вимагає прав Адміністратора для налаштовування Віртуальних Сайтів (Virtual Roots)."
-
 #: CustomAc.ulf#OOO_CUSTOMACTION_1
 #, fuzzy
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
 msgstr "Встановлено більш старшу версію [ProductName]. Видаліть цю версію для установки попередніх версій."
-
-#: CustomAc.ulf#OOO_CUSTOMACTION_2
-#, fuzzy
-msgid  "The same version of this product is already installed."
-msgstr "Ця версія програми вже встановлена."
 
 #: CustomAc.ulf#OOO_CUSTOMACTION_3
 #, fuzzy
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
 msgstr "Встановлено більш старшу версію [ProductName]. Видаліть цю версію для установки попередніх версій."
 
-#: CustomAc.ulf#OOO_CUSTOMACTION_4
-msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
-
-#: UIText.ulf#OOO_UITEXT_1
-#, fuzzy
-msgid  "bytes"
-msgstr "байт"
-
-#: UIText.ulf#OOO_UITEXT_2
-#, fuzzy
-msgid  "GB"
-msgstr "ГБ"
-
-#: UIText.ulf#OOO_UITEXT_3
-#, fuzzy
-msgid  "KB"
-msgstr "КБ"
-
-#: UIText.ulf#OOO_UITEXT_4
-#, fuzzy
-msgid  "MB"
-msgstr "МБ"
-
-#: UIText.ulf#OOO_UITEXT_5
-#, fuzzy
-msgid  "This feature will not be available."
-msgstr "Компонент буде недоступний."
-
-#: UIText.ulf#OOO_UITEXT_6
-#, fuzzy
-msgid  "This feature will be installed when required."
-msgstr "Компонент буде встановлено за першою вимогою."
-
-#: UIText.ulf#OOO_UITEXT_7
-#, fuzzy
-msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr "Компонент та всі вкладені субкомпоненти будуть встановлені для запуску з CD."
-
-#: UIText.ulf#OOO_UITEXT_8
-#, fuzzy
-msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr "Компонент та всі вкладені субкомпоненти будуть встановлені для запуску з локального жорсткого диска."
-
-#: UIText.ulf#OOO_UITEXT_9
-#, fuzzy
-msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr "Компонент та всі вкладені субкомпоненти будуть встановлені для запуску з мережі."
-
 #: UIText.ulf#OOO_UITEXT_10
 #, fuzzy
 msgid  "This feature will be installed to run from CD."
 msgstr "Компонент буде встановлено для запуску з CD."
-
-#: UIText.ulf#OOO_UITEXT_11
-#, fuzzy
-msgid  "This feature will be installed on local hard drive."
-msgstr "Компонент буде встановлено для запуску з локального жорсткого диску."
-
-#: UIText.ulf#OOO_UITEXT_12
-#, fuzzy
-msgid  "This feature will be installed to run from network."
-msgstr "Компонент буде встановлено для запуску з мережі."
-
-#: UIText.ulf#OOO_UITEXT_13
-#, fuzzy
-msgid  "Fldr|New Folder"
-msgstr "Тека|Нова тека"
-
-#: UIText.ulf#OOO_UITEXT_14
-#, fuzzy
-msgid  "This feature will remain uninstalled."
-msgstr "Компонент буде позначений для видалення."
 
 #: UIText.ulf#OOO_UITEXT_15
 #, fuzzy
 msgid  "This feature will be set to be installed when required."
 msgstr "Компонент буде встановлено за першою вимогою."
 
-#: UIText.ulf#OOO_UITEXT_17
-#, fuzzy
-msgid  "This feature will be installed on the local hard drive."
-msgstr "Компонент буде встановлено для запуску з локального жорсткого диску."
-
-#: UIText.ulf#OOO_UITEXT_18
-#, fuzzy
-msgid  "This feature will be installed to run from the network."
-msgstr "Компонент буде встановлено для запуску з мережі."
-
-#: UIText.ulf#OOO_UITEXT_19
-#, fuzzy
-msgid  "This feature will become unavailable."
-msgstr "Компонент стане недоступним."
-
-#: UIText.ulf#OOO_UITEXT_20
-#, fuzzy
-msgid  "Will be installed when required."
-msgstr "Буде встановлено за першою вимогою."
-
-#: UIText.ulf#OOO_UITEXT_21
-#, fuzzy
-msgid  "This feature will be available to run from CD."
-msgstr "Компонент буде доступний для запуску з CD."
-
-#: UIText.ulf#OOO_UITEXT_22
-#, fuzzy
-msgid  "This feature will be installed on your local hard drive."
-msgstr "Компонент буде встановлено для запуску з локального жорсткого диску."
-
-#: UIText.ulf#OOO_UITEXT_23
-#, fuzzy
-msgid  "This feature will be available to run from the network."
-msgstr "Компонент буде доступний для запуску з мережі."
-
-#: UIText.ulf#OOO_UITEXT_24
-#, fuzzy
-msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr "Компонент буде видалений повністю та ви не зможете запускати його з CD."
-
 #: UIText.ulf#OOO_UITEXT_25
 #, fuzzy
 msgid  "This feature was run from the CD but will be set to be installed when required."
 msgstr "Компонент був запущений з CD, але буде позначений для встановлення за першою вимогою."
-
-#: UIText.ulf#OOO_UITEXT_26
-#, fuzzy
-msgid  "This feature will continue to be run from the CD"
-msgstr "Компонент буде й надалі запускатися з CD."
-
-#: UIText.ulf#OOO_UITEXT_27
-#, fuzzy
-msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr "Компонент запускався з CD, але буде встановлений на локальний жорсткий диск."
-
-#: UIText.ulf#OOO_UITEXT_28
-#, fuzzy
-msgid  "This feature frees up [1] on your hard drive."
-msgstr "Компонент звільнить [1] на Вашому жорсткому диску."
-
-#: UIText.ulf#OOO_UITEXT_29
-#, fuzzy
-msgid  "This feature requires [1] on your hard drive."
-msgstr "Компоненту потрібно [1] дискового простору."
-
-#: UIText.ulf#OOO_UITEXT_30
-#, fuzzy
-msgid  "Compiling cost for this feature..."
-msgstr "Обчислення вартості компонента..."
-
-#: UIText.ulf#OOO_UITEXT_31
-#, fuzzy
-msgid  "This feature will be completely removed."
-msgstr "Компонент буде повністю видалено."
-
-#: UIText.ulf#OOO_UITEXT_32
-#, fuzzy
-msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr "Компонент буде видалено з локального жорсткого диску, але буде встановлено знову за першою вимогою."
-
-#: UIText.ulf#OOO_UITEXT_33
-#, fuzzy
-msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr "Компонент буде видалено локального жорсткого диску, але буде доступний для запуску з CD."
-
-#: UIText.ulf#OOO_UITEXT_34
-#, fuzzy
-msgid  "This feature will remain on your local hard drive."
-msgstr "Компонент залишиться на локальному жорсткому диску."
-
-#: UIText.ulf#OOO_UITEXT_35
-#, fuzzy
-msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr "Компонент буде видалено з локального жорсткого диска, але буде доступний для запуску з мережі."
-
-#: UIText.ulf#OOO_UITEXT_36
-#, fuzzy
-msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr "Компонент буде видалено повністю та не буде доступний для запуску з мережі."
 
 #: UIText.ulf#OOO_UITEXT_37
 #, fuzzy
@@ -999,100 +426,10 @@ msgstr "Компонент запускався з мережі, але буде
 msgid  "This feature will continue to be run from the network"
 msgstr "Компонент буде й надалі запускатися з мережі."
 
-#: UIText.ulf#OOO_UITEXT_40
-#, fuzzy
-msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr "Компонент звільняє [1] на жорсткому диску. Вибрано [2] з [3] вкладених субкомпонентів. Вкладені субкомпоненти звільняються [4] на жорсткому диску."
-
-#: UIText.ulf#OOO_UITEXT_41
-#, fuzzy
-msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr "Компонент звільняє [1] на жорсткому диску. Вибрано [2] з [3] вкладених субкомпонентів. Вкладені субкомпоненти займають [4] жорсткого диска."
-
-#: UIText.ulf#OOO_UITEXT_42
-#, fuzzy
-msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr "Компоненту потрібно [1] дискового простору. Вибрано [2] з [3] елементів. Звільниться [4] дискового простору."
-
-#: UIText.ulf#OOO_UITEXT_43
-#, fuzzy
-msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr "Компоненту потрібно [1] дискового простору. Вибрано [2] з [3] елементів. Для елементів потрібно [4] дискового простору."
-
-#: UIText.ulf#OOO_UITEXT_44
-#, fuzzy
-msgid  "Time remaining: {[1] min }[2] sec"
-msgstr "Залишилось часу: {[1] хв. } [2] сек."
-
-#: UIText.ulf#OOO_UITEXT_45
-#, fuzzy
-msgid  "Available"
-msgstr "Доступно"
-
-#: UIText.ulf#OOO_UITEXT_46
-#, fuzzy
-msgid  "Differences"
-msgstr "Відмінності"
-
-#: UIText.ulf#OOO_UITEXT_47
-#, fuzzy
-msgid  "Required"
-msgstr "Необхідно"
-
-#: UIText.ulf#OOO_UITEXT_48
-#, fuzzy
-msgid  "Disk Size"
-msgstr "Розмір диску"
-
-#: UIText.ulf#OOO_UITEXT_49
-#, fuzzy
-msgid  "Volume"
-msgstr "Том"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_1
-#, fuzzy
-msgid  "Advertising application"
-msgstr "Рекламна програма"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_2
-#, fuzzy
-msgid  "Allocating registry space"
-msgstr "Резервування простору для реєстру"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_3
-#, fuzzy
-msgid  "Free space: [1]"
-msgstr "Вільного простору: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_4
-#, fuzzy
-msgid  "Searching for installed applications"
-msgstr "Пошук встановлених програм"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_5
-#, fuzzy
-msgid  "Property: [1], Signature: [2]"
-msgstr "Властивість: [1], Підпис: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_6
-#, fuzzy
-msgid  "Binding executables"
-msgstr "Прив'язка виконуваних файлів"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_7
 #, fuzzy
 msgid  "File: [1]"
 msgstr "Файл: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_8
-#, fuzzy
-msgid  "Creating IIS Virtual Roots..."
-msgstr "Створення віртуальних каталогів IIS..."
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_9
-#, fuzzy
-msgid  "Removing IIS Virtual Roots..."
-msgstr "Видалення віртуальних каталогів IIS..."
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_10
 #, fuzzy
@@ -1104,145 +441,24 @@ msgstr "Пошук потрібних продуктів"
 msgid  "Computing space requirements"
 msgstr "Обчислення необхідного вільного простору"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_13
-#, fuzzy
-msgid  "Creating folders"
-msgstr "Створити теку"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_14
-#, fuzzy
-msgid  "Folder: [1]"
-msgstr "Тека: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_15
-#, fuzzy
-msgid  "Creating shortcuts"
-msgstr "Створення ярликів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_16
-#, fuzzy
-msgid  "Shortcut: [1]"
-msgstr "Ярлик: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_17
-#, fuzzy
-msgid  "Deleting services"
-msgstr "Видалення служб"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_18
 #, fuzzy
 msgid  "Service: [1]"
 msgstr "Служба: [1]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_19
-#, fuzzy
-msgid  "Creating duplicate files"
-msgstr "Створення повторюваних файлів"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_20
-#, fuzzy
 msgid  "File: [1],  Directory: [9],  Size: [6]"
 msgstr "Файл: [1], Тека: [9], Розмір: [6]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_22
-#, fuzzy
-msgid  "Searching for related applications"
-msgstr "Пошук зв'язаних об'єктів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_23
-#, fuzzy
-msgid  "Found application"
-msgstr "Знайдена програма"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_24
-#, fuzzy
-msgid  "Generating script operations for action:"
-msgstr "Створення сценарію для цієї дії:"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_25
-#, fuzzy
-msgid  "[1]"
-msgstr "[1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_26
-#, fuzzy
-msgid  "Copying files to the network"
-msgstr "Копіювання файлів на мережний диск"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_27
-#, fuzzy
-msgid  "File: [1], Directory: [9], Size: [6]"
-msgstr "Файл:[1], Тека: [9], розмір [6]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_28
-#, fuzzy
-msgid  "Copying new files"
-msgstr "Копіювання нових файлів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_30
-#, fuzzy
-msgid  "Installing ODBC components"
-msgstr "Встановлення компонентів ODBC"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_31
-#, fuzzy
-msgid  "Installing new services"
-msgstr "Встановлення нових служб"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_32
-#, fuzzy
-msgid  "Service: [2]"
-msgstr "Служба: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_33
-#, fuzzy
-msgid  "Installing system catalog"
-msgstr "Встановлення системного каталогу"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_34
 #, fuzzy
 msgid  "File: [1],  Dependencies: [2]"
 msgstr "Файл: [1], Залежності: [2]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_35
-#, fuzzy
-msgid  "Validating install"
-msgstr "Перевірка встановлення"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_36
-#, fuzzy
-msgid  "Evaluating launch conditions"
-msgstr "Обчислення умов запуску"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_37
-#, fuzzy
-msgid  "Migrating feature states from related applications"
-msgstr "Міграція станів компонентів із зв'язаних програм"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_38
-#, fuzzy
-msgid  "Application: [1]"
-msgstr "Програма: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_39
-#, fuzzy
-msgid  "Moving files"
-msgstr "Переміщення файлів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_41
-#, fuzzy
-msgid  "Patching files"
-msgstr "Накладання латки"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_42
 #, fuzzy
 msgid  "File: [1],  Directory: [2],  Size: [3]"
 msgstr "Файл: [1], Тека: [2], Розмір: [3]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_43
-#, fuzzy
-msgid  "Updating component registration"
-msgstr "Оновлення реєстрації компоненту"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_44
 #, fuzzy
@@ -1250,49 +466,13 @@ msgid  "Publishing qualified components"
 msgstr "Встановлення додаткових компонентів"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_45
-#, fuzzy
 msgid  "Component ID: [1], Qualifier: [2]"
 msgstr "Компонент ID: [1], Qualifier: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_46
-#, fuzzy
-msgid  "Publishing product features"
-msgstr "Встановлення основних компонентів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_47
-#, fuzzy
-msgid  "Feature: [1]"
-msgstr "Компонент: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_48
-#, fuzzy
-msgid  "Publishing product information"
-msgstr "Встановлення інформації про продукт"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_49
-#, fuzzy
-msgid  "Registering class servers"
-msgstr "Реєстрація класу"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_50
 #, fuzzy
 msgid  "Class ID: [1]"
 msgstr "Ід. класу: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_51
-#, fuzzy
-msgid  "Registering COM+ Applications and Components"
-msgstr "Реєстрація програм та компонентів COM+"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_52
-#, fuzzy
-msgid  "AppId: [1]{{, AppType: [2], Users: [3], RSN: [4]}}"
-msgstr "AppId: [1]{{, AppType: [2], Користувачів: [3], RSN: [4]}}"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_53
-#, fuzzy
-msgid  "Registering extension servers"
-msgstr "Реєстрація розширень"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_54
 #, fuzzy
@@ -1315,47 +495,20 @@ msgid  "Registering MIME info"
 msgstr "Реєстрація інформації MIME"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_58
-#, fuzzy
 msgid  "MIME Content Type: [1], Extension: [2]"
 msgstr "Тип контенту MIME: [1], Розширення: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_59
-#, fuzzy
-msgid  "Registering product"
-msgstr "Реєстрація продукту"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_61
-#, fuzzy
-msgid  "Registering program identifiers"
-msgstr "Реєстрація ідентифікаторів програми"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_62
 #, fuzzy
 msgid  "ProgID: [1]"
 msgstr "Ідентифікатор: [1]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_63
-#, fuzzy
-msgid  "Registering type libraries"
-msgstr "Реєстрація бібліотеки типів"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_64
 #, fuzzy
 msgid  "LibID: [1]"
 msgstr "Бібліотека: [1]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_65
-#, fuzzy
-msgid  "Registering user"
-msgstr "Реєстрація користувача"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_67
-#, fuzzy
-msgid  "Removing duplicated files"
-msgstr "Видалення резервних копій файлів"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_68
-#, fuzzy
 msgid  "File: [1], Directory: [9]"
 msgstr "Файл: [1], Каталог: [9]"
 
@@ -1369,26 +522,6 @@ msgstr "Зміна рядків оточення"
 msgid  "Name: [1], Value: [2], Action [3]"
 msgstr "Назва: [1], Значення: [2], Дія [3]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_71
-#, fuzzy
-msgid  "Removing applications"
-msgstr "Видалення програм"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_72
-#, fuzzy
-msgid  "Application: [1], Command line: [2]"
-msgstr "Програма: [1], Командний рядок: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_73
-#, fuzzy
-msgid  "Removing files"
-msgstr "Видалення файлів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_75
-#, fuzzy
-msgid  "Removing folders"
-msgstr "Видалення тек"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_77
 #, fuzzy
 msgid  "Removing INI file entries"
@@ -1398,81 +531,6 @@ msgstr "Видалення рядків з INI-файлу"
 #, fuzzy
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
 msgstr "Файл: [1],  Розділ: [2],  Ключ: [3], Значення: [4]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_79
-#, fuzzy
-msgid  "Removing ODBC components"
-msgstr "Видалення компонентів ODBC"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_80
-#, fuzzy
-msgid  "Removing system registry values"
-msgstr "Видалення ключів системного реєстру"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_81
-#, fuzzy
-msgid  "Key: [1], Name: [2]"
-msgstr "Ключ: [1], Назва: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_82
-#, fuzzy
-msgid  "Removing shortcuts"
-msgstr "Видалення ярликів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_85
-#, fuzzy
-msgid  "Rolling back action:"
-msgstr "Відкат дії:"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_87
-#, fuzzy
-msgid  "Removing backup files"
-msgstr "Видалення резервних копій файлів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_89
-#, fuzzy
-msgid  "Registering modules"
-msgstr "Реєстрація модулів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_90
-#, fuzzy
-msgid  "File: [1], Folder: [2]"
-msgstr "Файл: [1], Тека: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_91
-#, fuzzy
-msgid  "Unregistering modules"
-msgstr "Видалення реєстрації модулів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_93
-#, fuzzy
-msgid  "Initializing ODBC directories"
-msgstr "Ініціалізація каталогів ODBC"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_94
-#, fuzzy
-msgid  "Starting services"
-msgstr "Запуск служб"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_96
-#, fuzzy
-msgid  "Stopping services"
-msgstr "Зупинка служб"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_98
-#, fuzzy
-msgid  "Removing moved files"
-msgstr "Видалення переміщених файлів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_100
-#, fuzzy
-msgid  "Unpublishing Qualified Components"
-msgstr "Видалення додаткових компонентів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_102
-#, fuzzy
-msgid  "Unpublishing product features"
-msgstr "Видалення основних компонентів"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_104
 #, fuzzy
@@ -1484,84 +542,25 @@ msgstr "Видалення публікації інформації про пр
 msgid  "Unregister class servers"
 msgstr "Видалення реєстрації класів"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_107
-#, fuzzy
-msgid  "Unregistering COM+ Applications and Components"
-msgstr "Видалення реєстрації COM+ програм та компонентів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_108
-#, fuzzy
-msgid  "AppId: [1]{{, AppType: [2]}}"
-msgstr "AppId: [1]{{, AppType: [2]}}"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_109
-#, fuzzy
-msgid  "Unregistering extension servers"
-msgstr "Видалення реєстрації розширень"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_111
 #, fuzzy
 msgid  "Unregistering fonts"
 msgstr "Видалення реєстрації шрифтів"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_113
-#, fuzzy
-msgid  "Unregistering MIME info"
-msgstr "Видалення реєстрації інформації MIME"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_115
-#, fuzzy
-msgid  "Unregistering program identifiers"
-msgstr "Видалення реєстрації ідентифікаторів програми"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_117
-#, fuzzy
-msgid  "Unregistering type libraries"
-msgstr "Видалення реєстрації бібліотек типів"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_121
 #, fuzzy
 msgid  "Writing INI file values"
 msgstr "Запис значення у INI файл"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_123
-#, fuzzy
-msgid  "Writing system registry values"
-msgstr "Запис ключів системного реєстру"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_124
-#, fuzzy
-msgid  "Key: [1], Name: [2], Value: [3]"
-msgstr "Ключ: [1], Назва: [2], Значення: [3]"
-
-#: LaunchCo.ulf#OOO_LAUNCH_1
-#, fuzzy
-msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr "Помічник встановлення не може продовжувати коректне встановлення, оскільки ви є користувачем без прав адміністратора у цій системі."
-
 #: LaunchCo.ulf#OOO_LAUNCH_2
+#, fuzzy
 msgid  "Please use the file setup.exe to start the installation."
 msgstr ""
-
-#: Nsis.ulf#SETUPCAPTION
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr "Підготовка до встановлення %PRODUCTNAME %PRODUCTVERSION"
-
-#: Nsis.ulf#MUI_TEXT_WELCOME_INFO_TITLE
-#, fuzzy
-msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
-msgstr "Дякуємо за вибір %PRODUCTNAME %PRODUCTVERSION."
 
 #: Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
 #, fuzzy
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\n\\r\nClick \\'Next\\' to continue."
 msgstr "Для подальшого встановлення необхідні файли будуть скопійовані на жорсткий диск. Після цього встановлення %PRODUCTNAME почнеться автоматично.\r\n\r\nНатисніть «Далі» для продовження."
-
-#: Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
-#, fuzzy
-msgid  "Select Folder"
-msgstr "Оберіть теку"
 
 #: Nsis.ulf#MUI_TEXT_DIRECTORY_SUBTITLE
 #, fuzzy
@@ -1577,11 +576,6 @@ msgstr "&Розпакувати"
 #, fuzzy
 msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
 msgstr "Файли встановлення %PRODUCTNAME %PRODUCTVERSION будуть розпаковані та збережені у вказаній нижче теці. Якщо хочете зберегти файли %PRODUCTNAME у іншій теці, натисніть на «Огляд»."
-
-#: Nsis.ulf#DIRSUBTEXT
-#, fuzzy
-msgid  "Destination Folder"
-msgstr "Каталог призначення"
 
 #: Nsis.ulf#SPACEREQUIRED
 #, fuzzy
@@ -1603,50 +597,15 @@ msgstr "Розпакування"
 msgid  "Please wait while the installation files are being unpacked."
 msgstr "Зачекайте доки файли встановлення будуть розпаковані."
 
-#: Nsis.ulf#EXTRACT
-#, fuzzy
-msgid  "Extract: "
-msgstr "Розпаковування: "
-
-#: Nsis.ulf#MUI_TEXT_ABORTWARNING
-#, fuzzy
-msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr "Ви дійсно хочете перервати встановлення %PRODUCTNAME %PRODUCTVERSION?"
-
 #: SIS.ulf#OOO_SIS_TITLE
 #, fuzzy
 msgid  "Installation database"
 msgstr "Інсталяційна база даних"
 
-#: SIS.ulf#OOO_SIS_AUTHOR
-#, fuzzy
-msgid  "Author"
-msgstr "Автор"
-
-#: SIS.ulf#OOO_SIS_SUBJECT
-#, fuzzy
-msgid  "Subject"
-msgstr "Тема"
-
-#: SIS.ulf#OOO_SIS_COMMENT
-#, fuzzy
-msgid  "Comment"
-msgstr "Коментар"
-
-#: SIS.ulf#OOO_SIS_KEYWORDS
-#, fuzzy
-msgid  "Install,MSI"
-msgstr "Install,MSI"
-
-#: SIS.ulf#OOO_SIS_APPNAME
-#, fuzzy
-msgid  "Windows Installer"
-msgstr "Windows Installer"
-
 #: Control.ulf#OOO_CONTROL_3
 #, fuzzy
 msgid  "Cancel"
-msgstr "Скасувати"
+msgstr "Щоб вибрати іншу теку, кликніть"
 
 #: Control.ulf#OOO_CONTROL_5
 #, fuzzy
@@ -1659,14 +618,8 @@ msgid  "Browse to the destination folder."
 msgstr "Вкажіть теку призначення."
 
 #: Control.ulf#OOO_CONTROL_7
-#, fuzzy
 msgid  "{&MSSansBold8}Change Current Destination Folder"
 msgstr "{&MSSansBold8}Зміна поточної теки призначення"
-
-#: Control.ulf#OOO_CONTROL_9
-#, fuzzy
-msgid  "Create new folder|"
-msgstr "Створити нову теку|"
 
 #: Control.ulf#OOO_CONTROL_10
 #, fuzzy
@@ -1678,11 +631,6 @@ msgstr "Гаразд"
 msgid  "&Folder name:"
 msgstr "&Назва теки:"
 
-#: Control.ulf#OOO_CONTROL_13
-#, fuzzy
-msgid  "Up one level|"
-msgstr "Рівнем вище|"
-
 #: Control.ulf#OOO_CONTROL_14
 #, fuzzy
 msgid  "< &Back"
@@ -1693,30 +641,15 @@ msgstr "< Н&азад"
 msgid  "&Change..."
 msgstr "&Змінити..."
 
-#: Control.ulf#OOO_CONTROL_19
-#, fuzzy
-msgid  "Specify a network location for the server image of the product."
-msgstr "Вкажіть мережний ресурс для розміщення серверного образу."
-
 #: Control.ulf#OOO_CONTROL_20
 #, fuzzy
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
 msgstr "Вкажіть мережний шлях чи натисніть «Змінити» для перегляду чи вибору шляху. Натисніть «Встановити» для створення серверного образу [ProductName] на вказаному мережному ресурсі чи натисніть «Скасувати» для виходу з помічника."
 
-#: Control.ulf#OOO_CONTROL_21
-#, fuzzy
-msgid  "{&MSSansBold8}Network Location"
-msgstr "{&MSSansBold8}Мережний ресурс"
-
 #: Control.ulf#OOO_CONTROL_22
 #, fuzzy
 msgid  "&Install"
 msgstr "&Встановити"
-
-#: Control.ulf#OOO_CONTROL_23
-#, fuzzy
-msgid  "&Network location:"
-msgstr "&Мережний ресурс:"
 
 #: Control.ulf#OOO_CONTROL_26
 #, fuzzy
@@ -1728,190 +661,35 @@ msgstr "Да&лі >"
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
 msgstr "{&TahomaBold10}Ласкаво просимо до помічника встановлення [ProductName]"
 
-#: Control.ulf#OOO_CONTROL_28
-#, fuzzy
-msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr "Помічник встановлення створить серверний образ [ProductName] на вказаному мережному ресурсі. Для продовження натисніть «Далі»."
-
 #: Control.ulf#OOO_CONTROL_29
 #, fuzzy
 msgid  "&No"
 msgstr "&Ні"
-
-#: Control.ulf#OOO_CONTROL_30
-#, fuzzy
-msgid  "Are you sure you want to cancel [ProductName] installation?"
-msgstr "Ви дійсно хочете скасувати встановлення [ProductName]?"
-
-#: Control.ulf#OOO_CONTROL_31
-#, fuzzy
-msgid  "&Yes"
-msgstr "&Так"
 
 #: Control.ulf#OOO_CONTROL_36
 #, fuzzy
 msgid  "{\\Tahoma8}{80}"
 msgstr "{\\Tahoma8}{80}"
 
-#: Control.ulf#OOO_CONTROL_37
-#, fuzzy
-msgid  "&Organization:"
-msgstr "&Організація:"
-
-#: Control.ulf#OOO_CONTROL_38
-#, fuzzy
-msgid  "Please enter your information."
-msgstr "Введіть інформацію."
-
-#: Control.ulf#OOO_CONTROL_39
-#, fuzzy
-msgid  "Install this application for:"
-msgstr "Встановити цю програму:"
-
-#: Control.ulf#OOO_CONTROL_40
-#, fuzzy
-msgid  "{&MSSansBold8}Customer Information"
-msgstr "{&MSSansBold8}Інформація про користувача"
-
 #: Control.ulf#OOO_CONTROL_41
 #, fuzzy
 msgid  "{\\Tahoma8}{50}"
 msgstr "{\\Tahoma8}{50}"
-
-#: Control.ulf#OOO_CONTROL_42
-#, fuzzy
-msgid  "&User Name:"
-msgstr "&Ім'я користувача:"
-
-#: Control.ulf#OOO_CONTROL_45
-#, fuzzy
-msgid  "&Serial Number:"
-msgstr "&Серійний номер:"
-
-#: Control.ulf#OOO_CONTROL_51
-#, fuzzy
-msgid  "&Space"
-msgstr "&Простір"
-
-#: Control.ulf#OOO_CONTROL_52
-#, fuzzy
-msgid  "Select the program features you want installed."
-msgstr "Виберіть компоненти програми, які треба встановити."
-
-#: Control.ulf#OOO_CONTROL_53
-#, fuzzy
-msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr "Для зміни варіанту встановлення компоненту натисніть на відповідний значок."
-
-#: Control.ulf#OOO_CONTROL_54
-#, fuzzy
-msgid  "{&MSSansBold8}Custom Setup"
-msgstr "{&MSSansBold8}Вибіркове встановлення"
-
-#: Control.ulf#OOO_CONTROL_55
-#, fuzzy
-msgid  "Feature Description:"
-msgstr "Опис компоненту:"
-
-#: Control.ulf#OOO_CONTROL_56
-#, fuzzy
-msgid  "&Help"
-msgstr "&Довідка"
-
-#: Control.ulf#OOO_CONTROL_57
-#, fuzzy
-msgid  "Install to:"
-msgstr "Встановити у теку:"
-
-#: Control.ulf#OOO_CONTROL_58
-#, fuzzy
-msgid  "Multiline description of the currently selected item"
-msgstr "Багаторядковий опис обраних пунктів"
 
 #: Control.ulf#OOO_CONTROL_59
 #, fuzzy
 msgid  "<selected feature path>"
 msgstr "<шлях обраного компоненту>"
 
-#: Control.ulf#OOO_CONTROL_61
-#, fuzzy
-msgid  "Feature size"
-msgstr "Розмір компоненту"
-
 #: Control.ulf#OOO_CONTROL_64
 #, fuzzy
 msgid  "Custom Setup allows you to selectively install program features."
 msgstr "Вибіркове встановлення дозволяє вибірково встановити компоненти програми."
 
-#: Control.ulf#OOO_CONTROL_65
-#, fuzzy
-msgid  "{&MSSansBold8}Custom Setup Tips"
-msgstr "{&MSSansBold8}Підказки щодо встановлення"
-
-#: Control.ulf#OOO_CONTROL_66
-#, fuzzy
-msgid  "Will not be installed."
-msgstr "Не буде встановлено."
-
-#: Control.ulf#OOO_CONTROL_67
-#, fuzzy
-msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr "Буде встановлено при першому запуску. (Доступно лише якщо компонент підтримує такий варіант встановлення.)"
-
-#: Control.ulf#OOO_CONTROL_68
-#, fuzzy
-msgid  "This install state means the feature..."
-msgstr "Вказує стан встановлення компоненту..."
-
-#: Control.ulf#OOO_CONTROL_69
-#, fuzzy
-msgid  "Will be completely installed to the local hard drive."
-msgstr "Встановлення на локальний диск."
-
-#: Control.ulf#OOO_CONTROL_70
-#, fuzzy
-msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr "Значок, що йде за назвою компоненту, вказує як буде встановлено компонент. Натисніть на значок, щоб розгорнути меню вибору способу встановлення кожного компоненту."
-
-#: Control.ulf#OOO_CONTROL_71
-#, fuzzy
-msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr "Встановлення для запуску з мережі. (Доступно, якщо компонент підтримує такий варіант встановлення.)"
-
-#: Control.ulf#OOO_CONTROL_73
-#, fuzzy
-msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr "Будуть встановлені субкомпоненти на локальний жорсткий диск. (Доступно, якщо компонент має вкладені субкомпоненти)."
-
 #: Control.ulf#OOO_CONTROL_79
 #, fuzzy
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
 msgstr "Натисніть «Далі», щоб встановити у цю теку чи натисніть «Змінити» для встановлення у іншу теку."
-
-#: Control.ulf#OOO_CONTROL_80
-#, fuzzy
-msgid  "{&MSSansBold8}Database Folder"
-msgstr "{&MSSansBold8}Каталог бази даних"
-
-#: Control.ulf#OOO_CONTROL_81
-#, fuzzy
-msgid  "[DATABASEDIR]"
-msgstr "[DATABASEDIR]"
-
-#: Control.ulf#OOO_CONTROL_82
-#, fuzzy
-msgid  "Install [ProductName] database to:"
-msgstr "Встановити базу даних [ProductName] на:"
-
-#: Control.ulf#OOO_CONTROL_90
-#, fuzzy
-msgid  "{&MSSansBold8}Destination Folder"
-msgstr "{&MSSansBold8}Каталог призначення"
-
-#: Control.ulf#OOO_CONTROL_91
-#, fuzzy
-msgid  "[INSTALLDIR]"
-msgstr "[INSTALLDIR]"
 
 #: Control.ulf#OOO_CONTROL_92
 #, fuzzy
@@ -1924,34 +702,8 @@ msgid  "The disk space required for the installation of the selected features."
 msgstr "Вимоги до простору для встановлення обраних компонентів."
 
 #: Control.ulf#OOO_CONTROL_97
-#, fuzzy
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
 msgstr "На виділених дисках бракує місця для встановлення обраних компонентів. Можна видалити файли з виділених дисків, зменшити кількість компонентів, що встановлюються, чи виконати встановлення на інший диск."
-
-#: Control.ulf#OOO_CONTROL_98
-#, fuzzy
-msgid  "{&MSSansBold8}Disk Space Requirements"
-msgstr "{&MSSansBold8}Необхідний дисковий простір"
-
-#: Control.ulf#OOO_CONTROL_103
-#, fuzzy
-msgid  "Some files that need to be updated are currently in use."
-msgstr "Деякі файли, які наразі потрібно оновити, задіяні."
-
-#: Control.ulf#OOO_CONTROL_104
-#, fuzzy
-msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr "Вказані програми використовують (займають) файли, які необхідно оновити. Закрийте вказані програми та натисніть «Повторити» для продовження."
-
-#: Control.ulf#OOO_CONTROL_105
-#, fuzzy
-msgid  "{&MSSansBold8}Files in Use"
-msgstr "{&MSSansBold8}Зайняті файли"
-
-#: Control.ulf#OOO_CONTROL_106
-#, fuzzy
-msgid  "&Exit"
-msgstr "Ви&йт"
 
 #: Control.ulf#OOO_CONTROL_107
 #, fuzzy
@@ -1963,54 +715,10 @@ msgstr "&Ігнорувати"
 msgid  "&Retry"
 msgstr "&Повторити"
 
-#: Control.ulf#OOO_CONTROL_117
-#, fuzzy
-msgid  "Create New Folder|"
-msgstr "Створити нову теку|"
-
-#: Control.ulf#OOO_CONTROL_121
-#, fuzzy
-msgid  "Up One Level|"
-msgstr "Рівнем вище|"
-
 #: Control.ulf#OOO_CONTROL_124
+#, fuzzy
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
 msgstr ""
-
-#: Control.ulf#OOO_CONTROL_127
-#, fuzzy
-msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr "Цей помічник встановить [ProductName] на ваш комп'ютер. Щоб продовжити, натисніть «Далі»."
-
-#: Control.ulf#OOO_CONTROL_132
-#, fuzzy
-msgid  "Please read the following license agreement carefully."
-msgstr "Будь ласка, уважно прочитайте наступну ліцензійну угоду."
-
-#: Control.ulf#OOO_CONTROL_133
-#, fuzzy
-msgid  "{&MSSansBold8}License Agreement"
-msgstr "{&MSSansBold8}Ліцензійна угода"
-
-#: Control.ulf#OOO_CONTROL_139
-#, fuzzy
-msgid  "Modify, repair, or remove the program."
-msgstr "Встановлення, зміна та видалення програми."
-
-#: Control.ulf#OOO_CONTROL_140
-#, fuzzy
-msgid  "{&MSSansBold8}Program Maintenance"
-msgstr "{&MSSansBold8}Керування програмою"
-
-#: Control.ulf#OOO_CONTROL_143
-#, fuzzy
-msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr "Зміна набору компонент. Також, тут можна обрати спосіб встановлення компонентів."
-
-#: Control.ulf#OOO_CONTROL_144
-#, fuzzy
-msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr "Відновлення встановленої програми. Тут можна змінити пошкоджені чи видалені файли, ярлики та записи у реєстрі."
 
 #: Control.ulf#OOO_CONTROL_145
 #, fuzzy
@@ -2022,100 +730,25 @@ msgstr "Видалити [ProductName] з комп'ютера."
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
 msgstr "Помічник встановлення допоможе змінити, відновити чи видалити [ProductName]. Для продовження натисніть «Далі»."
 
-#: Control.ulf#OOO_CONTROL_153
-#, fuzzy
-msgid  "Disk space required for the installation exceeds available disk space."
-msgstr "Дисковий простір, потрібний для встановлення, перевищує вільне місце на диску."
-
 #: Control.ulf#OOO_CONTROL_155
 #, fuzzy
 msgid  "{&MSSansBold8}Out of Disk Space"
 msgstr "{&MSSansBold8}Немає дискового простору"
-
-#: Control.ulf#OOO_CONTROL_156
-#, fuzzy
-msgid  "{120}{70}{70}{70}{70}"
-msgstr "{120}{70}{70}{70}{70}"
-
-#: Control.ulf#OOO_CONTROL_160
-#, fuzzy
-msgid  "&Update >"
-msgstr "&Оновити >"
-
-#: Control.ulf#OOO_CONTROL_161
-#, fuzzy
-msgid  "{&TahomaBold10}Welcome to the Patch for [ProductName]"
-msgstr "{&TahomaBold10}Ласкаво просимо до програми оновлення [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_162
 #, fuzzy
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
 msgstr "Помічник встановлення виконає оновлення [ProductName] на комп'ютері. Натисніть «Оновити» для продовження."
 
-#: Control.ulf#OOO_CONTROL_167
-#, fuzzy
-msgid  "The wizard is ready to begin installation."
-msgstr "Помічник готовий розпочати встановлення."
-
-#: Control.ulf#OOO_CONTROL_168
-#, fuzzy
-msgid  "Click Install to begin the installation."
-msgstr "Щоб почати встановлення, натисніть «Встановити»."
-
 #: Control.ulf#OOO_CONTROL_169
 #, fuzzy
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
 msgstr "Щоб переглянути чи змінити параметри встановлення, натисніть «Назад». Для завершення роботи помічника натисніть «Скасувати»."
 
-#: Control.ulf#OOO_CONTROL_170
-#, fuzzy
-msgid  "{&MSSansBold8}Ready to Modify the Program"
-msgstr "{&MSSansBold8}Все готове до зміни програми"
-
-#: Control.ulf#OOO_CONTROL_171
-#, fuzzy
-msgid  "{&MSSansBold8}Ready to Repair the Program"
-msgstr "{&MSSansBold8}Все готове до відновлення програми"
-
-#: Control.ulf#OOO_CONTROL_172
-#, fuzzy
-msgid  "{&MSSansBold8}Ready to Install the Program"
-msgstr "{&MSSansBold8}Все готове до встановлення"
-
-#: Control.ulf#OOO_CONTROL_178
-#, fuzzy
-msgid  "You have chosen to remove the program from your system."
-msgstr "Ви обрали видалити програму з вашого комп'ютера."
-
-#: Control.ulf#OOO_CONTROL_179
-#, fuzzy
-msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr "Натисніть «Видалити» для видалення [ProductName] з комп'ютера. Після видалення буде неможливо запустити цю програму."
-
-#: Control.ulf#OOO_CONTROL_180
-#, fuzzy
-msgid  "If you want to review or change any settings, click Back."
-msgstr "Щоб переглянути чи змінити параметри, натисніть «Назад»."
-
-#: Control.ulf#OOO_CONTROL_181
-#, fuzzy
-msgid  "{&MSSansBold8}Remove the Program"
-msgstr "{&MSSansBold8}Видалити програму"
-
-#: Control.ulf#OOO_CONTROL_182
-#, fuzzy
-msgid  "&Remove"
-msgstr "В&идалити"
-
 #: Control.ulf#OOO_CONTROL_185
 #, fuzzy
 msgid  "&Finish"
 msgstr "&Завершити"
-
-#: Control.ulf#OOO_CONTROL_186
-#, fuzzy
-msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr "Конфігурація системи не змінилась. Для завершення встановлення наступного разу запустіть програму встановлення знову."
 
 #: Control.ulf#OOO_CONTROL_187
 #, fuzzy
@@ -2142,55 +775,10 @@ msgstr "{&TahomaBold10}Роботу помічника встановлення 
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
 msgstr "Роботу помічника встановлення [ProductName] перервано."
 
-#: Control.ulf#OOO_CONTROL_194
-#, fuzzy
-msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr "&Так, перевірити наявність оновлень після встановлення (рекомендується)."
-
-#: Control.ulf#OOO_CONTROL_195
-#, fuzzy
-msgid  "Launch the program"
-msgstr "Запустити програму"
-
-#: Control.ulf#OOO_CONTROL_196
-#, fuzzy
-msgid  "Show the readme file"
-msgstr "Показати файл readme"
-
-#: Control.ulf#OOO_CONTROL_199
-#, fuzzy
-msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr "Помічник встановлення успішно встановив [ProductName]. Натисніть «Завершити» для виходу з помічника."
-
-#: Control.ulf#OOO_CONTROL_200
-#, fuzzy
-msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr "Помічник встановлення успішно видалив [ProductName]. Натисніть «Завершити» для виходу з помічника."
-
 #: Control.ulf#OOO_CONTROL_201
 #, fuzzy
 msgid  "Setup has finished installing [ProductName]."
 msgstr "Встановлення [ProductName] завершено."
-
-#: Control.ulf#OOO_CONTROL_202
-#, fuzzy
-msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr "Деякі файли програми можуть бути оновлені після придбання Вами копії [ProductName]."
-
-#: Control.ulf#OOO_CONTROL_203
-#, fuzzy
-msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr "Може бути задіяний ваш доступ до мережі Інтернет для перевірки оновлень."
-
-#: Control.ulf#OOO_CONTROL_204
-#, fuzzy
-msgid  "&Abort"
-msgstr "&Перервати"
-
-#: Control.ulf#OOO_CONTROL_205
-#, fuzzy
-msgid  "&Cancel"
-msgstr "&Скасувати"
 
 #: Control.ulf#OOO_CONTROL_206
 #, fuzzy
@@ -2207,134 +795,25 @@ msgstr "&Гаразд"
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
 msgstr "Готується помічник встановлення [ProductName], який допоможе Вам у процесі встановлення. Зачекайте."
 
-#: Control.ulf#OOO_CONTROL_222
-#, fuzzy
-msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr "Конфігурацію системи не змінено. Для встановлення наступного разу запустіть програму встановлення знову."
-
-#: Control.ulf#OOO_CONTROL_228
-#, fuzzy
-msgid  "Progress done"
-msgstr "Завершено"
-
-#: Control.ulf#OOO_CONTROL_234
-#, fuzzy
-msgid  "The program features you selected are being installed."
-msgstr "Встановлюються обрані програмні компоненти."
-
-#: Control.ulf#OOO_CONTROL_235
-#, fuzzy
-msgid  "The program features you selected are being uninstalled."
-msgstr "Видаляються обрані програмні компоненти."
-
-#: Control.ulf#OOO_CONTROL_236
-#, fuzzy
-msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr "Зачекайте, доки  помічник встановить [ProductName]. Це може зайняти декілька хвилин."
-
-#: Control.ulf#OOO_CONTROL_237
-#, fuzzy
-msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr "Зачекайте, доки  помічник видалить [ProductName]. Це може зайняти декілька хвилин."
-
-#: Control.ulf#OOO_CONTROL_238
-#, fuzzy
-msgid  "{&MSSansBold8}Installing [ProductName]"
-msgstr "{&MSSansBold8}Встановлення [ProductName]"
-
 #: Control.ulf#OOO_CONTROL_239
 #, fuzzy
 msgid  "{&MSSansBold8}Uninstalling [ProductName]"
 msgstr "{&MSSansBold8}Видалення [ProductName]"
 
-#: Control.ulf#OOO_CONTROL_240
-#, fuzzy
-msgid  "Sec."
-msgstr "сек."
-
-#: Control.ulf#OOO_CONTROL_241
-#, fuzzy
-msgid  "Status:"
-msgstr "Статус:"
-
-#: Control.ulf#OOO_CONTROL_244
-#, fuzzy
-msgid  "Estimated time remaining:"
-msgstr "Приблизний час, що залишився:"
-
-#: Control.ulf#OOO_CONTROL_248
-#, fuzzy
-msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr "Помічник встановлення завершить встановлення [ProductName] на комп'ютер. Щоб продовжити натисніть «Далі»."
-
-#: Control.ulf#OOO_CONTROL_249
-#, fuzzy
-msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr "Помічник встановлення завершить призупинене встановлення [ProductName] на комп'ютер. Щоб продовжити натисніть «Далі»."
-
-#: Control.ulf#OOO_CONTROL_250
-#, fuzzy
-msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Продовження роботи помічника встановлення [ProductName]"
-
 #: Control.ulf#OOO_CONTROL_255
+#, fuzzy
 msgid  "The main components will be installed. Recommended for most users."
 msgstr ""
-
-#: Control.ulf#OOO_CONTROL_256
-#, fuzzy
-msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr "Обрати потрібні компоненти програми, та вказати місце для встановлення. Рекомендується для досвідчених користувачів."
-
-#: Control.ulf#OOO_CONTROL_257
-#, fuzzy
-msgid  "Choose the setup type that best suits your needs."
-msgstr "Виберіть відповідний тип встановлення."
-
-#: Control.ulf#OOO_CONTROL_258
-#, fuzzy
-msgid  "Please select a setup type."
-msgstr "Виберіть тип встановлення."
-
-#: Control.ulf#OOO_CONTROL_259
-#, fuzzy
-msgid  "{&MSSansBold8}Setup Type"
-msgstr "{&MSSansBold8}Тип встановлення"
 
 #: Control.ulf#OOO_CONTROL_267
 #, fuzzy
 msgid  "Please select the product language for [ProductName]."
 msgstr "Виберіть мову для [ProductName]."
 
-#: Control.ulf#OOO_CONTROL_268
-#, fuzzy
-msgid  "{&MSSansBold8}Language Selection"
-msgstr "{&MSSansBold8}Вибір мови"
-
-#: Control.ulf#OOO_CONTROL_269
-#, fuzzy
-msgid  "Repair or remove the program."
-msgstr "Відновити чи видалити програму."
-
-#: Control.ulf#OOO_CONTROL_270
-#, fuzzy
-msgid  "&Microsoft Word Documents"
-msgstr "Документ &Microsoft Word"
-
-#: Control.ulf#OOO_CONTROL_271
-#, fuzzy
-msgid  "Microsoft &Excel Spreadsheets"
-msgstr "Електрона таблиця Microsoft Excel"
-
 #: Control.ulf#OOO_CONTROL_272
 #, fuzzy
 msgid  "Microsoft Po&werPoint Presentations"
 msgstr "Презентація Microsoft Po&werPoint"
-
-#: Control.ulf#OOO_CONTROL_273
-#, fuzzy
-msgid  "&[ProductName] Writer/Web"
-msgstr "&[ProductName] Writer/Web"
 
 #: Control.ulf#OOO_CONTROL_274
 #, fuzzy
@@ -2346,96 +825,27 @@ msgstr "Використовувати [DEFINEDPRODUCT] типовою прог�
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
 msgstr "[ProductName] буде автоматично відкривати файли наступних типів:"
 
-#: Control.ulf#OOO_CONTROL_276
-#, fuzzy
-msgid  "File types"
-msgstr "Типи документів"
-
-#: Control.ulf#OOO_CONTROL_277
-#, fuzzy
-msgid  "Default HTML editor"
-msgstr "Типовий HTML-редактор"
-
-#: Control.ulf#OOO_CONTROL_278
-#, fuzzy
-msgid  "{&MSSansBold8}File Type"
-msgstr "{&MSSansBold8}Типи файлів"
-
 #: Control.ulf#OOO_CONTROL_300
 #, fuzzy
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
 msgstr "Була знайдена версія [DEFINEDPRODUCT] [DEFINEDVERSION], яка буде оновлена."
-
-#: Control.ulf#OOO_CONTROL_301
-#, fuzzy
-msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr "Вказана директорія не містить [DEFINEDPRODUCT] [DEFINEDVERSION]."
 
 #: Control.ulf#OOO_CONTROL_302
 #, fuzzy
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
 msgstr "Була знайдена більш нова версія [DEFINEDPRODUCT] [DEFINEDVERSION]."
 
-#: Control.ulf#OOO_CONTROL_303
-#, fuzzy
-msgid  "The version specified in the folder below cannot be updated."
-msgstr "Вказана версія не може бути оновлена."
-
 #: Control.ulf#OOO_CONTROL_304
 #, fuzzy
 msgid  "Check the destination folder."
 msgstr "Перевірте вибраний каталог."
-
-#: Control.ulf#OOO_CONTROL_305
-#, fuzzy
-msgid  "To continue, click \"Next\"."
-msgstr "Натисніть для продовження."
-
-#: Control.ulf#OOO_CONTROL_306
-#, fuzzy
-msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr "Щоб вибрати іншу версію, кликніть"
-
-#: Control.ulf#OOO_CONTROL_307
-#, fuzzy
-msgid  "To select a different folder, click \"Change\"."
-msgstr "Щоб вибрати іншу теку, кликніть"
 
 #: Control.ulf#OOO_CONTROL_309
 #, fuzzy
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
 msgstr "Якщо ви тільки пробуєте працювати в [ProductName], то, ймовірно, вам це не потрібно. Тому залиште прапорці знятими."
 
-#: Control.ulf#OOO_CONTROL_317
-#, fuzzy
-msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr "Не вказано мову для встановлення. Натисніть Гаразд, щоб вибрати одну або більше мов для встановлення."
-
-#: Control.ulf#OOO_CONTROL_318
-#, fuzzy
-msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr "Не вказано програми для встановлення. Натисніть Гаразд, щоб вибрати одну або більше програм для встановлення."
-
 #: Control.ulf#OOO_CONTROL_319
 #, fuzzy
 msgid  "Create a start link on desktop"
 msgstr "Створити посилання на робочому столі"
-
-#: Control.ulf#OOO_CONTROL_320
-msgid  "Remove all older product versions"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_LANG_1033
-#, fuzzy
-msgid  "English"
-msgstr "Англійська"
-
-#: Control.ulf#OOO_CONTROL_LANG_1031
-#, fuzzy
-msgid  "German"
-msgstr "Німецька"
-
-#: Control.ulf#OOO_CONTROL_LANG_1034
-#, fuzzy
-msgid  "Spanish"
-msgstr "Іспанська"

@@ -527,17 +527,13 @@ msgstr "Expression ซับซ้อนเกินไป"
 msgid  "Can't perform requested operation."
 msgstr "ไม่สามารถดำเนินการร้องขอ"
 
-#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many DLL application clients."
-msgstr "โปรแกรมลูกข่าย DLL มากเกินไป"
-
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "For loop not initialized."
 msgstr "For loop ไม่ได้เริ่มขั้นแรก"
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1)"
-msgstr ""
+msgstr "$(อาร์กิวเมนต์1)"
 
 #: classes/sb.src#IDS_SBERR_TERMINATED.STRING.TEXT
 msgid  "The macro running has been interrupted"

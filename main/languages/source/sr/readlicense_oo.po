@@ -39,59 +39,45 @@ msgstr "Прочитај о ${PRODUCTNAME} ${PRODUCTVERSION}"
 msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
 msgstr "За најновије допуне текста погледајте <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
 
-#: readme.xrm#A6
-msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
-msgstr "Ова датотека садржи важне информације о програму. Прочитајте ове информације врло пажљиво пре него што кренете даље."
-
 #: readme.xrm#A7
-#, fuzzy
 msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
-msgstr "Openoffice.org заједница, која стоји иза развоја овог производа, позива вас да постанете њен члан. Новом кориснику биће од користи странице на вебу о програму ${PRODUCTNAME} на адреси <a href=\"http://www.openoffice.org/about_us/introduction.html\">http://www.openoffice.org/about_us/introduction.html</a>. Сајт пројекта у Србији, на српском језику, је на адреси <a href=\"http://sr.openoffice.org/\">http://sr.openoffice.org</a>."
+msgstr "Apache OpenOffice заједница, одговорна за развој овог производа, жели да вас позове да учествујете као члан заједнице. Као нови корисник, можете да погледате сајт ${PRODUCTNAME} заједнице са корисним информацијама на <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
 
 #: readme.xrm#A9
 msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
-msgstr "Прочитајте и текст испод о томе како се све може учествовати у пројекту OpenOffice.org."
+msgstr "Прочитајте и текст испод о томе како се све може учествовати у пројекту Apache OpenOffice."
 
 #: readme.xrm#A10
+#, fuzzy
 msgid  "Is ${PRODUCTNAME} really free for any user? "
 msgstr "Да ли је ${PRODUCTNAME} заиста бесплатан за све кориснике? "
 
 #: readme.xrm#A11
+#, fuzzy
 msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
 msgstr "Сви могу бесплатно да користе ${PRODUCTNAME}. Можете узети ову копију ${PRODUCTNAME} и инсталирати на колико год рачунара желите и користити је за било коју намену (укључујући комерцијалну, употребу у јавном сектору и образовању). За детаље погледајте текст лиценце испоручен заједно са пакетом ${PRODUCTNAME} или страницу <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
 
 #: readme.xrm#A12
+#, fuzzy
 msgid  "Why is ${PRODUCTNAME} free for any user?"
 msgstr "Зашто је ${PRODUCTNAME} слободан за све кориснике?"
 
 #: readme.xrm#A13
-#, fuzzy
 msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
-msgstr "Ако цените њихов допринос и желите да OpenOffice.org настави тако у будућности, размислите о томе да допринесете овом пројекту - погледајте <a href=\"http://contributing.openoffice.org\">http://contributing.openoffice.org</a> за више информација. Свако може да пружи свој допринос."
+msgstr "Данас можете бесплатно користити ову копију ${PRODUCTNAME} зато што су индувидуални корисници и корпоративни спонзори планирали, развили, тестирали, превели, документовали, подржали, рекламирали и помогли на много начина да ${PRODUCTNAME} данас буде водећи канцеларијски програм отвореног кода у свету."
 
-#: readme.xrm#RR3FGF42R
-msgid  "Notes on Installation"
-msgstr "Напомене о инсталацији"
+#: readme.xrm#A13B
+msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
+msgstr "Уколико цените њихове напоре и желели би да обезбедите да се настави континуитет Apache OpenOffice и у будућности, размислите да доприносите пројекту - погледајте <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> за детаље о доприносима и <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> за детаље о донацијама. Свако може да направи допринос."
 
 #: readme.xrm#JAVANEEDED
 msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
-msgstr ""
+msgstr "${PRODUCTNAME} захтева најновију верзију JAVA за потпуну функционалност; JAVA може да се преузме са <a href=\"http://java.com\">http://java.com</a>."
 
 #: readme.xrm#SDFSDFGF42R
+#, fuzzy
 msgid  "System Requirements"
 msgstr "Системски захтеви"
-
-#: readme.xrm#MACXIOSX
-msgid  "MacOSX 10.4 (Tiger) or higher"
-msgstr "MacOSX 10.4 (Тигар) или виши"
-
-#: readme.xrm#MACXICPU
-msgid  "Intel processor"
-msgstr "Интел процесор"
-
-#: readme.xrm#MACXIRAM
-msgid  "512 MB RAM"
-msgstr "512 МБ РАМ"
 
 #: readme.xrm#MACXHARDDIKSSPACE
 #, fuzzy
@@ -99,18 +85,17 @@ msgid  "Up to 1.5 GB available hard disk space"
 msgstr "До 1.5 ГБ слободног простора на диску"
 
 #: readme.xrm#MACXIVIDEO
+#, fuzzy
 msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
 msgstr "1024 x 768 графички уређај са 256 боја (препоручује се већа резолуција)"
 
 #: readme.xrm#S2S3SDF2
-#, fuzzy
 msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
-msgstr "Microsoft Windows 2000 (сервисни пакет 4 или новији), XP, Vista или Windows 7"
+msgstr "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
 
 #: readme.xrm#UTZU6
-#, fuzzy
 msgid  "Pentium III or later processor"
-msgstr "Pentium компатибилни PC (Pentium III или Athlon препоручен)"
+msgstr "Pentium III или новији процесор"
 
 #: readme.xrm#GHUJ67
 #, fuzzy
@@ -118,6 +103,7 @@ msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 МБ РАМ (512 МБ РАМ препоручено)"
 
 #: readme.xrm#JTZU56
+#, fuzzy
 msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr "резолуција 1024x768 (препоручује се већа резолуција), најмање 256 боја"
 
@@ -127,25 +113,23 @@ msgid  "Please be aware that administrator rights are needed for the installatio
 msgstr "Белешка: Имајте у виду да су за инсталирање потребна администраторска права."
 
 #: readme.xrm#MSOREG1
+#, fuzzy
 msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
 msgstr "Постављање пакета ${PRODUCTNAME} као подразумеваног програма за Microsoft Office формате може бити наметнуто или онемогућено користећи следеће аргументе линије наредби у позиву инсталатера:"
 
 #: readme.xrm#MSOREG2
+#, fuzzy
 msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr "<tt>/msoreg=1</tt> ће наметнути ${PRODUCTNAME} као подразумевани програм за Microsoft Office формате."
 
 #: readme.xrm#MSOREG3
+#, fuzzy
 msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr "<tt>/msoreg=0</tt> ће онемогућити да ${PRODUCTNAME} буде подразумевани програм за Microsoft Office формате."
 
 #: readme.xrm#DLLA1
-#, fuzzy
 msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
-msgstr "Ако обављате администраторско инсталирање користећи <tt>setup /a</tt>проверите да ли је датотека „msvc90.dll“ инсталирана на систему. Ова датотека је неопходна да би ${PRODUCTNAME} отпочео администраторско инсталирање. Датотеку можете преузети са <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
-
-#: readme.xrm#S2335
-msgid  "Solaris 10 operating system (SPARC platform) or higher"
-msgstr "Solaris 10 оперативни систем (SPARC платформа) или већа"
+msgstr "Ако обављате администраторско инсталирање користећи поставку /a, проверите да ли је датотека „msvcr100.dll“ инсталирана на систему. Ова датотека је неопходна да би ${PRODUCTNAME} отпочео администраторско инсталирање. Датотеку можете преузети са <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
 
 #: readme.xrm#S23SEG
 #, fuzzy
@@ -168,168 +152,193 @@ msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, re
 msgstr "За алатке помоћних технологија потребан је Гном 2.6 или новији, са gail 1.8.6 и at-spi 1.7 пакетима"
 
 #: readme.xrm#S23H
+#, fuzzy
 msgid  "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Solaris 10 оперативни систем (x86 платформа) или више"
 
 #: readme.xrm#S2WE35
+#, fuzzy
 msgid  "Linux Kernel version 2.6.18 or higher"
 msgstr "Линукс кернел издање 2.4 или новије"
 
-#: readme.xrm#S253WE
-msgid  "glibc2 version 2.5 or higher"
-msgstr "glibc2 издање 2.3.2 или новије"
-
-#: readme.xrm#S256WE
-msgid  "gtk version 2.10.4 or higher"
-msgstr "gtk издање 2.10.4 или новије"
-
-#: readme.xrm#S2ETFSEG
-#, fuzzy
-msgid  "Pentium III or later processor"
-msgstr "Pentium компатибилни PC (Pentium III или Athlon препоручен)"
-
 #: readme.xrm#WD2DFF
+#, fuzzy
 msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
 msgstr "За алатке помоћних технологија потребан је Гном 2.6 или новији, са gail 1.8.6 и at-spi 1.7 пакетима"
 
 #: readme.xrm#LINUXI3A
+#, fuzzy
 msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
 msgstr "Постоји пуно раличитих Линукс дистрибуција и некад са истом дистрибуцијом може бити различитих инсталационих опција (КДЕ или Гном и сл.). Неке дистрибуције испоручују њихову „изворну“ верзију ${PRODUCTNAME}, која може имати различите могућности од верзије ${PRODUCTNAME} из заједнице. Понекад можете инсталирати верзију ${PRODUCTNAME} из заједнице упоредо са „изворном“ верзијом произвођача дистрибуције. Међутим, обично је безбедније да уклоните „изворну“ верзију пре него што инсталирате верзију из заједнице. Погледајте документацију дистрибуције за детаље како то можете да учините."
 
-#: readme.xrm#LINUXI4A
-msgid  "It is recommended that you always backup your system before you remove or install software."
-msgstr "Препорујемо да увек направите резервну копију система пре него што уклоните или инсталирате програм."
-
-#: readme.xrm#PRECAUTIONS
-msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
-msgstr "Водите рачуна да имате довољно слободне меморије у привременом директоријуму на систему и да су омогућена права за читање, упис и покретање. Затворите све остале програме пре него што започнете инсталирање."
-
-#: readme.xrm#NASO01
-msgid  "Problems During Program Startup"
-msgstr "Проблеми при покретању програма"
-
 #: readme.xrm#NASO02
+#, fuzzy
 msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
 msgstr "Ако се појаве проблеми при покретању програма ${PRODUCTNAME} (нарочито ако се користи Гном), уклоните променљиву окружења <tt>SESSION_MANAGER</tt> унутар љуске под којом покрећете ${PRODUCTNAME}. То можете учинити тако што ћете додати наредбу <tt>unset SESSION_MANAGER</tt> на почетку главне soffice скрипте која се налази у директоријуму <tt>[office folder]/program</tt>."
 
 #: readme.xrm#ABCDEF
+#, fuzzy
 msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
 msgstr "Невоље при покретању програма ${PRODUCTNAME} (недостатак одзива и сл.), као и проблеми са приказом на екрану, често су изазвани грешком у драјверу графичке картице. Ако се јављају слични проблеми ажурирајте драјвер графичке картице или пробајте да користите драјвер који долази уз оперативни систем. Проблеми у приказу 3Д објеката могу бити решени искључивањем подешавања „Користи ОпенГЛ“ које се налази у прозорчету „Алатке - Подешавања... -  ${PRODUCTNAME} - Приказ - 3Д приказ“."
 
-#: readme.xrm#NASO
-msgid  "ALPS/Synaptics notebook touchpads in Windows"
-msgstr "ALPS/Synaptics notebook прстоподлога за Windows"
-
 #: readme.xrm#NASO2
+#, fuzzy
 msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
 msgstr "Због познатог проблема са Windows драјвером, није могуће кретати се кроз ${PRODUCTNAME} документе док се прст налази на ALPS/Synaptics прстоподлози."
 
 #: readme.xrm#NASO6
+#, fuzzy
 msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
 msgstr "Да бисте омогућили прстоподлогу, додајте следеће линије у конфигурациону датотеку <tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt> и поново покрените рачунар:"
 
 #: readme.xrm#NASO8
+#, fuzzy
 msgid  "The location of the configuration file might vary on different versions of Windows."
 msgstr "Примедба: Путања датотеке са подешавањима може да се разликује под различитим верзијама Windows система."
 
-#: readme.xrm#SDFSD32ASRC
-msgid  "Mozilla Address Book Driver"
-msgstr "Драјвер Мозилиног адресара"
-
 #: readme.xrm#SDCC32ASRC
+#, fuzzy
 msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
 msgstr "Драјвер Мозилиног адресара захтева пакет <tt>SUNWzlib</tt>. Тај пакет није део минималне инсталације оперативног система Соларис. Ако је потребно приступити Мозилином адресару, онда додајте овај пакет у оперативни систем Solaris користећи наредбу <tt>pkgadd</tt> са инсталационог ЦД-а."
 
 #: readme.xrm#AWE1
+#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "Пречице са тастатуре"
 
 #: readme.xrm#W32E1
+#, fuzzy
 msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
 msgstr "Само пречице са тастатуре (комбинације тастера) које се не користе у оперативном систему могу да буду употребљене у пакету ${PRODUCTNAME}. Ако комбинација тастера у ${PRODUCTNAME} не ради као што је описано у помоћи за ${PRODUCTNAME}, проверите да ли се пречица се већ користи у оперативном систему. Да бисте избегли такве сукобе можете променити тастере који су додељени у вашем оперативном систему. Такође можете променити скоро сваку доделу тастера у ${PRODUCTNAME}. За више информација о овоме, погледајте помоћ за ${PRODUCTNAME} или оперативни систем."
 
 #: readme.xrm#MACKEYS1
+#, fuzzy
 msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
 msgstr "Помоћ за програме из пакета ${PRODUCTNAME} може да користи једино комбинације пречица на ПЦ тастатури."
 
 #: readme.xrm#GFH6W
+#, fuzzy
 msgid  "File Locking"
 msgstr "Закључавање датотеке"
 
 #: readme.xrm#PJI76W
+#, fuzzy
 msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
 msgstr "Закључавање датотека је подразумевано омогућено у програму ${PRODUCTNAME}. Ако се користи NFS мрежни диск серверски програм за закључавање датотека за NFS клијенте мора да буде покренут. Да онемогућите закључавање датотека измените главну <tt>soffice</tt> скрипту и промените ред \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" у \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\" (ознака за коментар на почетку). Ако онемогућите закључавање сви корисници, а не само корисник који први отвори документ ће имати могућност уписа (и преписивања туђих измена)."
 
 #: readme.xrm#PJI76WSDF
+#, fuzzy
 msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
 msgstr "Упозорење: Активирано је закључавање датотека које може направити проблеме са Solaris 2.5.1 и 2.7 користећи га у комбинацији са Linux NFS 2.0. Ако ваше системско окружење има ове параметре, топло препоручујемо да избегавате опцију закључавања датотека, иначе ће ${PRODUCTNAME} заблокирати када покушате да отворите датотеку из монтираног NFS директоријума са Linux компјутера."
 
 #: readme.xrm#GFH6W1
+#, fuzzy
 msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
 msgstr "Проблеми при слању докумената е-поштом кроз пакет ${PRODUCTNAME}"
 
 #: readme.xrm#PJI76W1
+#, fuzzy
 msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
 msgstr "Када се документ шаље преко „Датотека - Пошаљи - Документ као е-пошту“ или „Документ као ПДФ прилог“ могу се јавити проблеми (пад или замрзавање програма). Томе је узрок Windows системска датотека „Mapi“ (Messaging Application Programming Interface) која изазива проблеме у неким верзијама датотеке. Нажалост, проблем се не може сузити на одређену верзију. За више информација посетите http://www.microsoft.com и претражите  Microsoft Knowledge Base за „mapi dll“."
 
 #: readme.xrm#AW22
+#, fuzzy
 msgid  "Important Accessibility Notes"
 msgstr "Важне напомене о приступачности"
 
 #: readme.xrm#ACCESS7
+#, fuzzy
 msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 msgstr "За више информација о приступачности у пакету ${PRODUCTNAME}, погледајте <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 
 #: readme.xrm#SUPPORT
-#, fuzzy
 msgid  "User Support"
-msgstr "Главни међународни сајт за подршку <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> нуди различите опције подршке за ${PRODUCTNAME}. Могуће да је на питање већ одговорено - погледајте Веб форум заједнице на сајту <a href=\"http://user.services.openoffice.org\">http://user.services.openoffice.org</a> или претражите архиву дописне листе „users@openoffice.org“ на страници <a href=\"http://www.openoffice.org/mail_list.html\">http://www.openoffice.org/mail_list.html</a>. Ако претрага не помогне, пошаљите питања на енглеском на јавну листу <a href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. Сазнајте како да се пријавите на листу (како бисте примили одговоре корисника) је објашњено на страници <a href=\"http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists\">http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists</a>.<br/><br/>За подршку унутар заједнице OpenOffice.org корисника у Србији посетите <a href=\"http://sr.openoffice.org/podrska.html\">http://sr.openoffice.org/podrska.html</a> . Дописна листа на српском језику је доступна на е-адреси <a href=\"mailto:users@sr.openoffice.org\">users@sr.openoffice.org</a>. Посетите претходну страницу да сазнате о претплати на листу и претражите јавно доступну архиву."
+msgstr "Подршка корисницима"
+
+#: readme.xrm#SUPPORT1
+msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
+msgstr "Главни међународни сајт за подршку <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> нуди различите опције подршке за ${PRODUCTNAME}. Могуће да је на питање већ одговорено - погледајте Веб форум заједнице на сајту <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> или претражите архиву дописне листе „users@openoffice.apache.org“ на страници <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Ако претрага не помогне, пошаљите питања на енглеском на јавну листу <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. Како да се пријавите на листу (како бисте примили одговоре корисника) је објашњено на страници <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
 
 #: readme.xrm#FAQ
-#, fuzzy
 msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
-msgstr "Посетите одговоре на често постављана питања на  <a href=\"http://wiki.services.openoffice.org/wiki/Documentation/FAQ\">http://wiki.services.openoffice.org/wiki/Documentation/FAQ (енгл.)</a>."
+msgstr "Погледајте одговоре на често постављана питања на <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
 
 #: readme.xrm#REPORTBUGS
-#, fuzzy
 msgid  "Reporting Bugs &amp; Issues"
-msgstr "На ${PRODUCTNAME} веб локацији налази се IssueZilla, наш механизам за извештаје, праћење и решавање проблема бубица и проблема. Подстичемо све кориснике да се осећају позваним и добродошлим да пријаве проблем који се може догодити на вашој платформи. Конструктивно извештавање о проблема је један од најважнијих доприноса којим корисничка заједница може помоћи побољашању и развоју пакета."
+msgstr "Пријава грешака и проблема"
+
+#: readme.xrm#REPORTBUGS1
+msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
+msgstr "На ${PRODUCTNAME} веб локацији <a href=\"https://issues.apache.org/ooo/\">BugZilla</a> налази се BugZilla, наш механизам за извештаје, праћење и решавање проблема бубица и проблема. Подстичемо све кориснике да се осећају позваним и добродошлим да пријаве проблем који се може догодити на вашој платформи. Конструктивно извештавање о проблема је један од најважнијих доприноса којим корисничка заједница може помоћи побољашању и развоју пакета."
 
 #: readme.xrm#GETTINGINVOLVED1
+#, fuzzy
 msgid  "Getting Involved"
 msgstr "Придруживање "
 
 #: readme.xrm#GETTINGINVOLVED2
+#, fuzzy
 msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
 msgstr "${PRODUCTNAME} заједница може много добити од вашег активног учествовања у развоју овог важног пројекта отвореног кода."
 
 #: readme.xrm#GETTINGIMVOLVED3
 msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
-msgstr "Као корисник, ви сте већ вредан део развојног процеса, а ми бисмо волели да вас подстакнемо да прихватите много активнију улогу са изгледом за дугогодишњи допринос друштву. Придружите се на <a href=\"http://www.openoffice.org\">http://www.openoffice.org</a>. Пројекат OpenOffice.org у Србији поред сајта <a href=\"http://sr.openoffice.org\">http://sr.openoffice.org</a> има и званичну страницу на мрежи Фејсбук, на адреси <a href=\"http://www.facebook.com/sropenoffice\">http://www.facebook.com/sropenoffice</a>."
+msgstr "Као корисник, ви сте већ вредан део развојног процеса овог пакета, а ми бисмо волели да вас подстакнемо да прихватите много активнију улогу са изгледом за дугогодишњи допринос заједници. Придружите се и погледајте корисничку страну на <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
 
 #: readme.xrm#HOWTOSTART
-#, fuzzy
 msgid  "How to Start"
-msgstr "Најбољи начин да помогнете јесте да се пријавите на једну или више дописну листу, истражујете и читате поруке из архиве листе како бисте се упознали са многим темама које су покривене од када је ${PRODUCTNAME} изворни код постао јавно доступан у октобру 2000 године. Када се будете осећали комфорно, све што треба да урадите јесте да пошаљете е-поруку са малим уводом о себи и ускочите у заједницу. Ако нисте упознати са пројектима отвореног кода, погледајте нашу листу задатака и проверите да ли постоји нешто у чему бисте могли да нам помогнете на <a href=\"http://development.openoffice.org/todo.html\">http://development.openoffice.org/todo.html</a>."
+msgstr "Како почети"
+
+#: readme.xrm#HOWTOSTART1
+msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
+msgstr "Најбољи начин да започнете да доприносите јесте да се пријавите на једну или више дописне листе, да боравите ту неко време, и да постепено користите архиве дописне листе да се упознате са многим темама одкад је ${PRODUCTNAME} изворни код објављен још од октобра 2000. Када вам буде одговарало, све што треба да урадите јесте да пошаљете један е-мејл у ком ћете се представити и ускочити право унутра."
 
 #: readme.xrm#SUBSCRIBE
-#, fuzzy
 msgid  "Subscribe"
-msgstr "Програмерска дописна листа: dev@openoffice.org (модерисана, јак саобраћај)"
+msgstr "Претплати се"
+
+#: readme.xrm#SUBSCRIBE1
+msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
+msgstr "Овде су неколико ${PRODUCTNAME} дописних листа на које се можете пријавити на <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a> "
+
+#: readme.xrm#SUBSCRIBELIST1
+msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
+msgstr "Вести и саопштења: announce@openoffice.apache.org *препорука за све кориснике* (слаб саобраћај)"
+
+#: readme.xrm#SUBSCRIBELIST2
+msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr "Корисничка дописна листа: users@openoffice.apache.org *лак начин да се борави на дискусијама* (велики саобраћај)"
+
+#: readme.xrm#SUBSCRIBELIST4
+msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
+msgstr "Генерални развој пројекта и дискусиона листа: dev@openoffice.apache.org (јак саобраћај)"
+
+#: readme.xrm#MISSING_ID
+msgid  "Joining the Project"
+msgstr "Придружите се једном или више пројеката"
 
 #: readme.xrm#JOINING
-#, fuzzy
 msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
-msgstr "Можете и да се придружите Маркетинг мрежи пројекта на <a href=\"http://marketing.openoffice.org/contacts.html\">http://marketing.openoffice.org/contacts.html</a> где можете постати тачка за комуникацију са штампом, медијима, владиним агенцијама, консултантима, школама, групама корисника Линукса и програмерима у својој земљи и локалној заједници."
+msgstr "Можете доста допринети овом важном пројекту отвореног кода чак и ако немате искуства у програмирању. Не верујете?"
+
+#: readme.xrm#JOINING1
+msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr "На <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> можете пронаћи основни увид где, и са чим можете почети, од локализације, портовања на нове платформе и подршке за групни рад до основних програмерских пројеката. Ако нисте програмер, можете помоћи у области документације или маркетинга. ${PRODUCTNAME} пројекат маркетинга примењује како герилске, тако и традиционалне технике да рекламира програме отвореног кода, и то радимо преко језичких и културних баријера, тако да можете помоћи и само ширећи вести и говорећи пријатељима о овом канцеларијском пакету."
+
+#: readme.xrm#JOINING3
+msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
+msgstr "Можете помоћи са приступањем дописној листи за маркетинг marketing@openoffice.apache.org где можете обезбедити контакт са штампом, медијима, државним агенцијама, консултантима, школама, корисничким групама Linux-а и програмерима у вашој земљи и локалном заједницом."
 
 #: readme.xrm#CREDITS
+#, fuzzy
 msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
 msgstr "Надамо се да ћете уживати у раду са новим ${PRODUCTNAME} ${PRODUCTVERSION} и да ћете нам се придружити на Интернету."
 
 #: readme.xrm#CREDITS2
 msgid  "The Apache OpenOffice Community"
-msgstr "OpenOffice.org заједница"
+msgstr "Apache OpenOffice заједница"
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
+#, fuzzy
 msgid  "Used / Modified Source Code"
 msgstr "Коришћен/ измењен изворни код"

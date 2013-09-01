@@ -35,82 +35,11 @@ msgstr ""
 msgid  "Ok"
 msgstr "Tamam"
 
-#: mac/macinstall.ulf#INSTALLLABEL
-msgid  "Install"
-msgstr "Kur"
-
-#: mac/macinstall.ulf#ABORTLABEL
-msgid  "Abort"
-msgstr "Durdur"
-
-#: mac/macinstall.ulf#INTROTEXT1
-msgid  "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
-msgstr "[FULLPRODUCTNAME] Kurulum Sihirbazına Hoşgeldiniz"
-
-#: mac/macinstall.ulf#INTROTEXT2
-msgid  "This installation will update your installed versions of [PRODUCTNAME]"
-msgstr "Bu kurulum yüklü olan [PRODUCTNAME] sürümünü güncelleyecektir"
-
-#: mac/macinstall.ulf#INTROTEXT3
-msgid  "This might take a moment."
-msgstr "Bu biraz zaman alabilir."
-
-#: mac/macinstall.ulf#CHOOSEMYOWNTEXT
-msgid  "Not listed (choose location in an extra step)"
-msgstr "Listelenmiş değil (diğer bir adımda yer seçeniz)"
-
-#: mac/macinstall.ulf#LISTPROMPTTEXT
-msgid  "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
-msgstr "[FULLPRODUCTNAME]'de kurmak istediğiniz [PRODUCTNAME] [PRODUCTVERSION]'u seçiniz"
-
-#: mac/macinstall.ulf#CHOOSEMANUALTEXT
-msgid  "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr "İletişim öğesine [PRODUCTNAME] [PRODUCTVERSION] kurulumunu gösterin"
-
-#: mac/macinstall.ulf#APPINVALIDTEXT1
-msgid  "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr "Geçersiz [PRODUCTNAME] [PRODUCTVERSION] kurulumu."
-
-#: mac/macinstall.ulf#APPINVALIDTEXT2
-msgid  "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
-msgstr "Kurulumu tekrar başlatın ve geçerli bir [PRODUCTNAME] [PRODUCTVERSION] kurulumu seçin."
-
-#: mac/macinstall.ulf#STARTINSTALLTEXT1
-msgid  "Click Install to start the installation"
-msgstr "Kurulumu başlatmak için Kur'u tıklayınız"
-
-#: mac/macinstall.ulf#STARTINSTALLTEXT2
-msgid  "Installation might take a minute..."
-msgstr "Kurulum bir dakika sürebilir..."
-
 #: mac/macinstall.ulf#IDENTIFYQTEXT
 msgid  "Installation failed, most likely your account does not have the necessary privileges."
 msgstr "Kurulum başarısız oldu, büyük ihtimalle hesabınız gerekli haklara sahip değil."
 
-#: mac/macinstall.ulf#IDENTIFYQTEXT2
-msgid  "Do you want to identify as administrator and try again?"
-msgstr "Yönetici olarak tanımlayıp tekrar denemek ister misiniz?"
-
-#: mac/macinstall.ulf#IDENTIFYYES
-msgid  "Yes, identify"
-msgstr "Evet, tanımla"
-
-#: mac/macinstall.ulf#IDENTIFYNO
-msgid  "No, abort installation"
-msgstr "Hayır, kurulumu durdur"
-
-#: mac/macinstall.ulf#INSTALLFAILEDTEXT
-msgid  "Installation failed."
-msgstr "Kurulum başarısız oldu."
-
-#: mac/macinstall.ulf#INSTALLCOMPLETETEXT
-msgid  "Installation of [PRODUCTNAME] language pack completed."
-msgstr "[PRODUCTNAME] dil paketi kurulumu tamamlandı."
-
 #: mac/macinstall.ulf#INSTALLCOMPLETETEXT2
+#, fuzzy
 msgid  "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
-msgstr ""
-
-#: mac/macinstall.ulf#INSTALLCOMPLETETEXTPATCH
-msgid  "Installation of [FULLPRODUCTNAME] completed"
-msgstr "[FULLPRODUCTNAME]  kurulumu tamamlandı"
+msgstr "Kullanıcı arayüzü dilini değiştirmek için '[PRODUCTNAME]-Tercihler-Dil Seçenekleri-Diller'e tıklayın."

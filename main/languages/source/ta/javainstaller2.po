@@ -31,405 +31,45 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: ../src/Localization/setupstrings.ulf#STRING_PREVIOUS
-msgid  "Back"
-msgstr "பின்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEXT
-msgid  "Next"
-msgstr "அடுத்து"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL
-msgid  "Cancel"
-msgstr "நீக்கு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_FINISH
-msgid  "Finish"
-msgstr "முடிவடைந்தது"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DECLINE
-msgid  "Decline"
-msgstr "மறுக்கவும்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALL
-msgid  "Install now"
-msgstr "இப்போது நிறுவு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALL
-msgid  "Remove Now"
-msgstr "இப்போது நீக்கு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_HELP
-msgid  "Help"
-msgstr "உதவி"
-
 #: ../src/Localization/setupstrings.ulf#STRING_OK
 msgid  "OK"
 msgstr "சரி"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ERROR
-msgid  "Error"
-msgstr "பிழை"
-
-#: ../src/Localization/setupstrings.ulf#STRING_FILE_NOT_FOUND
-msgid  "Error: File not found"
-msgstr "பிழை: கோப்பைக் காணப்படவில்லை"
-
-#: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLE
-msgid  "${PRODUCT_FULLNAME} Installation Wizard"
-msgstr "${PRODUCT_FULLNAME} நிறுவல் வழிகாட்டி"
-
-#: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION
-msgid  "${PRODUCT_FULLNAME} Uninstallation Wizard"
-msgstr "${PRODUCT_FULLNAME} நிறுவல் நீக்கும் வழிகாட்டி"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE
-msgid  "Exit"
-msgstr "வெளியேறு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG
-msgid  "Do you really want to exit the Installation Wizard?"
-msgstr "நிறுவல் வழிகாட்டியிலிருந்து உண்மையாகவே வெளியேற விரும்புகிறீர்களா?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION
-msgid  "Do you really want to exit the Uninstallation Wizard?"
-msgstr "நிறுவல் நீக்கு வழிகாட்டியிலிருந்து நீங்கள் வெளியேற விரும்புகிறீர்களா?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG
-msgid  "Do you really want to abort the installation process?"
-msgstr "நிறுவலை செயற்படுத்தி ஒதுக்க நீங்கள் விரும்புகிறீர்களா?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE
-msgid  "Abort installation?"
-msgstr "நிறுவலை ஒதுக்கவா?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION
-msgid  "Do you really want to abort the uninstallation process?"
-msgstr "நிறுவல் நீக்கலை உறுதியாகவே ஒதுக்க விரும்புகிறீர்களா?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION
-msgid  "Abort uninstallation?"
-msgstr "நிறுவல் நீக்கலை ஒதுக்கவா?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE
-msgid  "Accept License"
-msgstr "உரிமத்தை ஏற்றுக்கொள்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE1
-msgid  "Software License Agreement"
-msgstr "மென்பொருள் உரிம ஒப்பந்தம்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE2
-msgid  "Please read the following license agreement carefully."
-msgstr "பின்வரும் உரிம ஒப்பந்தத்தை சரியாக வாசிக்கவும்."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
 msgstr "மென்பொருள் உரிம ஒப்பந்தத்தின் அனைத்து விதிமுறைகளையும் நீங்கள் வாசித்து ஏற்றுக் கொண்டிருந்தால், நிறுவிலுட்ன தொடர  'உரிம ஏற்றுக்கொள்' ஐ க்ளிக் செய்யவும்."
 
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
-msgid  "Select Installation Directory"
-msgstr "நிறுவல்  அடைவை தேர்ந்தெடு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE
-msgid  "Update the Installed Version"
-msgstr "நிறுவப்பட்ட பதிப்பை மேம்படுத்து"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN
-msgid  "Adding Components to the Installed Version"
-msgstr "நிறுவப்பட்ட பதிப்பில் உட்பொருளை சேர்க்கவும்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY2
-msgid  "Install ${PRODUCT_FULLNAME} in this directory"
-msgstr "${PRODUCT_FULLNAME}ஐ இந்த அடைவில் நிறுவவும்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY3
-msgid  "Browse..."
-msgstr "உலாவு..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE
-msgid  "Create New Directory"
-msgstr "புதிய அடைவை உருவாக்கு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "அடைவு '${DIR}' இல் உள்ளது.\nஇப்போது இதை உருவாக்க விரும்புகிறீர்களா?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "இந்த அடைவு '${DIR}' உள்ளது.\nஇப்போது இதை உருவாக்கவில்லை அல்லது மற்றொரு அடைவை தேர்ந்தெடுக்க விரும்புகிறீர்களா?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
-msgid  "Select root directory"
-msgstr "ரூட் அடைவை தேர்ந்தெடு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS
-msgid  "You do not have write access in the directory"
-msgstr "இந்த அடைவில் அணுகலை எழுத முடியாது"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED
-msgid  "You are not allowed to create the directory"
-msgstr "அடைவை உருவாக்க உங்களுக்கு அனுமதி இல்லை"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS
-msgid  "Failed to create the directory"
-msgstr "அடைவை உருவாக்க முடியவில்லை"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1
-msgid  "Select Components"
-msgstr "கூறுகளை தேர்ந்தெடு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN
-msgid  "Select Additional Components"
-msgstr "கூடுதல் கூறுகளை தேர்ந்தெடு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
-msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr "குறிப்பிட்ட கூறுகள் நிறுவப்பட்டது. குறிப்பாக அதை குறிப்பிடவும்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
-msgid  "Feature Description"
-msgstr "வசதி விளக்கம்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS4
-msgid  "Size (kB):"
-msgstr "அளவு (kB):"
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
 msgid  "Select the Type of Installation"
 msgstr "நிறுவல் வகையை தேர்ந்தெடு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
-msgid  "Select the type of installation that best suits your needs:"
-msgstr "உங்கள் தேவைகளை ஏற்கும் வகை நிறுவலைத் தேர்ந்தெடுக்கவும்:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
-msgid  "The main components will be installed. Recommended for most users."
-msgstr "முக்கிய கூறுகள் நிறுவப்பட்டும். அதிக பயனர்களால் பரிந்துரைக்கப்படுகிறது."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
-msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr "நீங்கள் நிறுவ விரும்பும் கூறுகளை எங்கே சேகரிக்க வேண்டுமென தேர்ந்தெடுக்கவும். மேம்படுத்தப்பட்ட பயனர்களால் பரிந்துரைக்கப்படுகிறது."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
-msgid  "Typical"
-msgstr "பொதுவானது"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7
-msgid  "Custom"
-msgstr "தனிபயன்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1
-msgid  "Ready to Install"
-msgstr "நிறுவ தயாராக உள்ளது"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE
-msgid  "Ready to Update"
-msgstr "மேம்படுத்த தயாராக உள்ளது"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT2
 msgid  "The following ${PRODUCT_FULLNAME} components will be installed:"
 msgstr "பின்வரும் ${PRODUCT_FULLNAME} கூறுகள் நிறுவப்படும்:"
 
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING1
-msgid  "Installing..."
-msgstr "நிறுவுகிறது..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING3
-msgid  "Stop"
-msgstr "நிறுத்து"
-
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND
 msgid  "ERROR: Path with installation packages not found!"
 msgstr "ERROR:நிறுவல் தொகுப்புகளுடன் பாதை காணப்படவில்லை!"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE1
-msgid  "Welcome"
-msgstr "நல்வரவு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE2
-msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr "இந்நிறுவல் வழிகாட்டி ${PRODUCT_FULLNAME} ஐ உங்கள் கணியில் நிறுவும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE3
-msgid  "To continue, click 'Next'."
-msgstr "தொடர, 'அடுத்து' சொடுக்கவும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
-msgid  "Installation Completed"
-msgstr "நிறுவல் முடிந்தது"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT
-msgid  "Installation Aborted"
-msgstr "நிறுவல் நிறுத்தப்பட்டது"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR
-msgid  "Installation Failed"
-msgstr "நிறுவ முடியவில்லை"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
-msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr "உங்கள் கணினியில் நிறுவல் வழிகாட்டி ${PRODUCT_FULLNAME} வெற்றிகரமாக நிறுவப்பட்டது."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
-msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr "நிறுவல் வழிகாட்டி ஒதுக்கப்பட்டது. ${PRODUCT_NAME} உங்கள் கணினியில் நிறுவப்பட்டது."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr "ஒரு பிழை ஏற்பட்டது. உங்கள் கணினியில் வெற்றிகரமாக${PRODUCT_NAME} நிறுவல் வழிகாட்டி நிறுவப்படவில்லை எனில். மேலும் தகவலுக்கு 'விவரங்கள்...' என க்ளிக் செய்யவும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
-msgid  "Click 'Finish' to exit the Wizard."
-msgstr "முடிவு என்பைத சொடுக்கி வழிகாட்டியை விட்டு வெளியேறு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON
-msgid  "Details..."
-msgstr "விவரங்கள்..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
 msgstr "${PRODUCT_FULLNAME} நிறுவல் நீக்கு வழிகாட்டி ${PRODUCT_FULLNAME} உங்கள் கணினியிலிருந்து நீக்கப்படும்."
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
-msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr "மன்னிக்கவும், தவறான முன்னுரிமைகள். பயனர் முன்னுரிமைகளுடன்  நிறுவல் முடிவடைந்தது, ஆனால் நீங்கள் ரூட் முன்னுரிமைகளை பெற்றுள்ளீர்கள்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
-msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr "மன்னிக்கவும், தவறான முன்னுரிமைகள். பயனர் முன்னுரிமைகளுடன்  நிறுவல் முடிவடைந்தது, ஆனால் நீங்கள் பயனர் முன்னுரிமைகளை பெற்றுள்ளீர்கள்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
-msgid  "Select the Type of Uninstallation"
-msgstr "நிறுவல் வகையை தேர்ந்தெடு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2
-msgid  "Select the type of uninstallation that best suits your needs:"
-msgstr "உங்கள் தேவைகளை ஏற்கும் நிறுவல்நீக்கு வகையை தேர்ந்தெடு:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3
-msgid  "Partial"
-msgstr "பகுதி"
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
 msgstr "${PRODUCT_FULLNAME} மற்றும் இதனுடைய அனைத்து கூறுகளையும் முழுவதுமாக உங்கள் கணினியிலிருந்து நீக்குகிறது."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
-msgid  "You choose the program features you want to remove."
-msgstr "நீங்கள் நீக்க விரும்பும் நிரல் அம்சங்களை தேர்ந்தெடுக்கவும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6
-msgid  "Complete"
-msgstr "முடிவு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
-msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr "கூறுகள் குறிப்பிட்ட ஒரு X உடன் நீக்கப்படும். நீங்கள் நீக்க விரும்பும் கூறுகளை நீக்கவும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
-msgid  "Ready to Remove"
-msgstr "நீக்க தயாராக உள்ளது"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2
 msgid  "The following ${PRODUCT_FULLNAME} components will be removed: "
 msgstr "பின்வரும் ${PRODUCT_FULLNAME} கூறுகள் நீக்கப்படும்: "
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING1
-msgid  "Uninstalling..."
-msgstr "நிறுவல் நீக்குகிறது..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1
-msgid  "Uninstallation Completed"
-msgstr "நிறுவல் நீக்கல் முடிந்தது"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT
-msgid  "Uninstallation Aborted"
-msgstr "நிறுவல் நீக்கல் நிறுத்தப்பட்டது"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR
-msgid  "Uninstallation Failed"
-msgstr "நிறுவல் நீக்க முடியவில்லை"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
-msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr "உங்கள் கணினியிலிருந்து ${PRODUCT_FULLNAME} நிறுவல் நீக்கல் வழிகாட்டி வெற்றிகரமாக நீக்கப்படும்."
-
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
 msgstr "உங்கள் கணினியிலிருந்து ${PRODUCT_NAME} நிறுவல் நீக்கல் வழிகாட்டி வெற்றிகரமாக தேர்ந்தெடுக்கப்பட்ட கூறுகள் நீக்கப்படும்."
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
-msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr "நிறுவல் நீக்க வழிகாட்டி ஒதுக்கப்படுவதற்கு முன் முழுவதுமாக உங்கள் கணினியிலிருந்து${PRODUCT_NAME} நீக்கப்படும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr "ஒரு பிழை ஏற்பட்டது. உங்கள் கணினியில் வெற்றிகரமாக${PRODUCT_NAME} நிறுவல் வழிகாட்டி நீக்கப்படவில்லை எனில். மேலும் தகவலுக்கு 'விவரங்கள்...' என க்ளிக் செய்யவும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
-msgid  "Sorry, this Operating System is not supported yet."
-msgstr "இயக்கத்தளம் துணைபுரியவில்லை"
-
-#: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
-msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
-msgstr "உங்கள் கணினியில் ${PRODUCT_NAME} ஒரு பழைய பதிப்பு காணப்படுகிறது:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr "நீங்கள் புதிய ஒன்றை நிறுவுவதற்கு முன் ${PRODUCT_NAME} பழைய பதிப்பை நீங்கள் நீக்க வேண்டும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
-msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
-msgstr "உங்கள் கணினியில் ${PRODUCT_NAME} ஒரு புதிய பதிப்பு காணப்படும்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr "நீங்கள் பழைய நிறுவலை நிறுவுவதற்கு முன் ${PRODUCT_NAME} நீங்கள் புதிய பதிப்பை நீக்க வேண்டும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
-msgid  "Database"
-msgstr "தரவுத்தளம்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_TIP
-msgid  "Please choose another installation directory."
-msgstr "மற்றொரு நிறுவல் அடைவை தேர்ந்தெடுக்கவும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
-msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr "பயனர் உட்புகுவினை நிறுவல் வழிகாட்டியாக இயக்க முடியாது."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
-msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr "கணினி நிர்வாக உரிமைகளில் ஒரு பயனராக வெளியேறி உட்புகவும்."
-
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
 msgstr "நிறுவலுக்குப் போதுமான இடம் வட்டிலில்லை."
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_REQUIRED
-msgid  "Required disc space"
-msgstr "தேவையான வட்டு இடம்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_AVAILABLE
-msgid  "Available disc space"
-msgstr "இருக்கும் வட்டு இடம்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
-msgid  "Please use another directory for installation or change your module selection."
-msgstr "மற்றொரு அடைவு நிறுவலுக்காக பயன்படுத்தவும் அல்லது உங்களுடைய தொகுதி தேர்ந்தெடுப்பை மாற்றவும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
-msgid  "Analyzing ..."
-msgstr "அராயப்படுகின்றது ..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "தரவுத்தளம் ஆராயப்படுகின்றது\nசற்றே பொறுக்கவும் ..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
@@ -467,118 +107,30 @@ msgstr "'ரத்து' நிறுவல்நீக்க வழிகா�
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
 msgstr "'சரி' என்பது உதவி பக்கம் உங்களை நிறுவல்நீக்க வழிகாட்டிக்கு திருப்புகிறது."
 
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
-msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr "இந்த தயாரிப்பை நிறுவுவதற்கு முன், நீங்கள் மென்பொருள் உரிம ஒப்பந்தத்தின் முழுவதையும் வாசித்து இந்த மென்பொருள் உங்களுக்காக பயன்படுத்தபடுவதை ஏற்க வேண்டும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
-msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr "மென்பொருள் உரிம ஒப்பந்தத்தின் அனைத்து விதிமுறைகளையும் நீங்கள் ஏற்றுக் கொண்டிருந்தால், இந்த தயாரிப்பில் நிறுவல் காட்டி இல்லாமல் நிறுவி முடிக்க 'மறுத்தல்'ஐ க்ளிக் செய்யவும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
-msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
 msgstr "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
-msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
-msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr "Complete: இது உங்கள் பதிப்பிலுள்ள அனைத்து நிறுவப்பட்ட கூற்றுகளையும் நீக்கும்.<p>Partial: இது கூற்றுகள் பட்டியலில் உள்ள நீங்கள் தேர்ந்தெடுத்த கூற்றை மட்டும் நீக்கும்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
-msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr "கூறு ஒரு  X குறிப்பிட்டதுடன் நீக்கப்படும். அடுத்த கூற்றை குறிப்பிடு அல்லது அதை ஒரு X என குறிப்பிடலாமும் க்ளிக் செய்யலாம்."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
-msgid  "This package format is currently not supported for your operating system!"
-msgstr "இந்த தொகுப்பு வடிவம் தற்போது உங்கள் செயல்பாட்டு முறைமைக்கு துணைபுரியவில்லை|!"
-
-#: ../src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
-msgid  "Operating system"
-msgstr "இயங்கு தளம்"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT
-msgid  "Package format"
-msgstr "பொட்டலத்தின் வடிவமைப்பு"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_INSTALL
-msgid  "Nothing to install"
-msgstr "நிறுவ ஏதுமில்லை"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1
-msgid  "No components have been selected for installation."
-msgstr "நிறுவ எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
 msgstr "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
 
-#: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
-msgid  "No languages have been selected for installation."
-msgstr "நிறுவலுக்கு எம்மொழியும் தெரிவுசெய்யப்படவில்லை."
-
 #: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
 msgstr "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
-msgid  "No applications have been selected for installation."
-msgstr "நிறுவ எந்த பயன்பாடுகளும் தேர்ந்தெடுக்கப்படவில்லை"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
 msgstr "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
 
-#: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
-msgid  "Nothing to uninstall"
-msgstr "நிறுவல் நீக்க ஒன்றுமில்லை"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1
-msgid  "No components have been selected for uninstallation."
-msgstr "செயல்நீக்குவதற்காக எந்த கூற்றுகளையும் தேர்ந்தெடுக்கவில்லை."
-
 #: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
 msgstr "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
-msgid  "All language components have been selected for uninstallation."
-msgstr "All language components have been selected for uninstallation."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
 
-#: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
-msgid  "All application components have been selected for uninstallation."
-msgstr "All application components have been selected for uninstallation."
-
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
-msgid  "Please change selection"
-msgstr "தெரிவை மாற்றுக"

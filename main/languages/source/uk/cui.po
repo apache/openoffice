@@ -63,10 +63,6 @@ msgstr "~Категорія"
 msgid  "Function"
 msgstr "Функція"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-msgid  "Functions"
-msgstr "Функції"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 msgid  "Shortcut keys"
 msgstr ""
@@ -111,14 +107,6 @@ msgstr "Налаштувати"
 msgid  "Menus"
 msgstr "Меню"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-msgid  "Keyboard"
-msgstr "Клавіатура"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-msgid  "Toolbars"
-msgstr "Панелі інструментів"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 msgid  "Events"
 msgstr "Події"
@@ -126,14 +114,6 @@ msgstr "Події"
 #: customize/cfg.src#TEXT_MENU.#DEFINE.TEXT
 msgid  "Menu"
 msgstr "Меню"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-msgid  "Begin a Group"
-msgstr "Почати групу"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-msgid  "Rename..."
-msgstr "Перейменувати..."
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 msgid  "Delete..."
@@ -143,10 +123,6 @@ msgstr "Видалити..."
 msgid  "Delete"
 msgstr "Видалити"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-msgid  "Move..."
-msgstr "Перемістити..."
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 msgid  "Restore Default Settings"
 msgstr "Відновити типові параметри"
@@ -154,14 +130,6 @@ msgstr "Відновити типові параметри"
 #: customize/cfg.src#TEXT_DEFAULT_COMMAND.#DEFINE.TEXT
 msgid  "Restore Default Command"
 msgstr "Відновити типове значення"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-msgid  "Text only"
-msgstr "Текст"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-msgid  "Toolbar Name"
-msgstr "Назва панелі інструментів"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 msgid  "Save In"
@@ -171,45 +139,13 @@ msgstr "Зберегти у"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "Меню %PRODUCTNAME %MODULENAME"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "Створити..."
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Menu Content"
 msgstr "Зміст меню"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-msgid  "Entries"
-msgstr "Елементи"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "Додати..."
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-msgid  "Modify"
-msgstr "Змінити"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr "Опис"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 msgid  "Add Submenu..."
 msgstr "Додати підменю..."
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-msgid  "Icons Only"
-msgstr "Значки"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-msgid  "Icons & Text"
-msgstr "Значки та текст"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-msgid  "Change Icon..."
-msgstr "Вибрати значок..."
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 msgid  "Reset Icon"
@@ -218,10 +154,6 @@ msgstr "Зняти значок"
 #: customize/cfg.src#RID_SVXSTR_NEW_MENU.STRING.TEXT
 msgid  "New Menu %n"
 msgstr "Нове меню %n"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-msgid  "New Toolbar %n"
-msgstr "Нова панель інструментів %n"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 msgid  "Move Menu"
@@ -250,22 +182,6 @@ msgstr "Назва меню"
 #: customize/cfg.src#MD_MENU_ORGANISER.TXT_MENU.FIXEDTEXT.TEXT
 msgid  "Menu position"
 msgstr "Розташування меню"
-
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "Назва"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-msgid  "Change Icon"
-msgstr "Змінити значок"
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-msgid  "Icons"
-msgstr "Значки"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "Import..."
-msgstr "Додати..."
 
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
@@ -302,14 +218,6 @@ msgstr "Так для усіх"
 #: customize/cfg.src#RID_SVXSTR_PRODUCTNAME_TOOLBARS.STRING.TEXT
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "Панелі інструментів %PRODUCTNAME %MODULENAME"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-msgid  "Toolbar"
-msgstr "Панель інструментів"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-msgid  "Toolbar Content"
-msgstr "Зміст панелі керування"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 msgid  "Commands"
@@ -351,10 +259,6 @@ msgstr "~Нова назва"
 msgid  "Rename Menu"
 msgstr "Перейменувати меню"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-msgid  "Rename Toolbar"
-msgstr "Перейменувати панель"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
 msgstr ""
@@ -362,10 +266,6 @@ msgstr ""
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
 msgstr ""
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "Подія"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -390,10 +290,6 @@ msgstr "В~идалити"
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.TABPAGE.TEXT
 msgid  "Assign action"
 msgstr "Призначити дію"
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "Подія"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -422,10 +318,6 @@ msgstr "Призначити компонент"
 #: customize/macropg.src#RID_SVXDLG_ASSIGNCOMPONENT.FT_METHOD.FIXEDTEXT.TEXT
 msgid  "Component method name"
 msgstr "Назва методу компонента"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-msgid  "Start Application"
-msgstr "Запустити програму"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 msgid  "Close Application"
@@ -495,10 +387,6 @@ msgstr ""
 msgid  "Merging of form fields finished"
 msgstr ""
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-msgid  "Changing the page count"
-msgstr "Зміна кількості сторінок"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 msgid  "Loaded a sub component"
 msgstr ""
@@ -515,33 +403,13 @@ msgstr "При заповненні параметрів"
 msgid  "Execute action"
 msgstr ""
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "Після оновлення"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
 msgstr "Перед оновленням"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "Перед збереженням"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "Після збереження"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
 msgstr "Підтвердження видалення"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "При виникненні помилки"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "При вирівнюванні"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
@@ -554,14 +422,6 @@ msgstr "При втраті фокусу"
 #: customize/macropg.src#RID_SVXSTR_EVENT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
 msgstr "Зміна стану елемента"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "Натиск клавіші"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "Відпускання клавіші"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 msgid  "When loading"
@@ -599,14 +459,6 @@ msgstr "Натискання кнопки миші"
 msgid  "Mouse button released"
 msgstr "Відпускання кнопки миші"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "Перед зміною запису"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "Після зміни запису"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 msgid  "After resetting"
 msgstr "Після відновлення"
@@ -619,14 +471,6 @@ msgstr "Перед відновлення"
 msgid  "Approve action"
 msgstr ""
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
-msgstr "Перед підтвердженням"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "Зміна тексту"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
 msgstr "Перед вивантаженням"
@@ -634,10 +478,6 @@ msgstr "Перед вивантаженням"
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
 msgstr "При вивантаженні"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "Зміна стану"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 msgid  "Document created"
@@ -739,18 +579,6 @@ msgstr "~Категорія"
 msgid  "Commands"
 msgstr "Команди"
 
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "Додати"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "Виконати"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr "Закрити"
-
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
 msgstr "Щоб додати команду до панелі інструментів, виберіть категорію, а потім команду. Після чого перетягніть команду на потрібне місце на відповідній панелі інструментів."
@@ -771,16 +599,44 @@ msgstr "Бібліотека"
 msgid  "My Macros"
 msgstr "Мої макроси"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-msgid  "Macro name"
-msgstr "Назва макросу"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "Опис"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+msgid  "Readme, License and Notice"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+msgid  "Readme"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+msgid  "License"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+msgid  "Notice"
 msgstr ""
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
@@ -809,102 +665,127 @@ msgid  "~Delete"
 msgstr "В~идалити"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Color Picker"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.PB_PICKER.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Pick a color from the document"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_RGB.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "RGB"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_RED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Red"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_GREEN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Green"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BLUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Blue"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HEX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Hex ~#"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_HSB.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "HSB"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "H~ue"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_SATURATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Saturation"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BRIGHTNESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bright~ness"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_CMYK.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "CMYK"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_CYAN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Cyan"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_MAGENTA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Magenta"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_YELLOW.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Yellow"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_KEY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Key"
 msgstr ""
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Origi~nal"
 msgstr "~Оригінал"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_NEWWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Word"
 msgstr "~Слово"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_SUGGESTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Suggestions"
 msgstr "~Варіанти"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNORE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Ignore"
 msgstr "~Пропустити"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNOREALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Always I~gnore"
 msgstr "П~ропускати завжди"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Replace"
 msgstr "~Замінити"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGEALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Always R~eplace"
 msgstr "З~амінювати завжди"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_OPTIONS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Options..."
 msgstr "Параметри..."
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_SPL_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
 msgstr "~Закрити"
 
@@ -938,11 +819,6 @@ msgstr "~Текст"
 msgid  "~Description"
 msgstr "~Опис"
 
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Назва"
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Name"
@@ -962,11 +838,6 @@ msgstr "~Заголовок"
 #, fuzzy
 msgid  "~Description"
 msgstr "~Опис"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Search"
-msgstr "Пошук запису"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 #, fuzzy
@@ -1048,11 +919,6 @@ msgstr "Вираз символу шаблону"
 msgid  "Regular expression"
 msgstr "Регулярний вираз"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "Пошук подібних"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "..."
@@ -1072,11 +938,6 @@ msgstr "Фонетичний (японський)"
 #, fuzzy
 msgid  "State"
 msgstr "Стан"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Record :"
-msgstr "Запис :"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1168,21 +1029,6 @@ msgstr "Файли"
 msgid  "Type:"
 msgstr "Тип:"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "Розташування:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Contents:"
-msgstr "Вміст:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "Змінено:"
-
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~File type"
@@ -1208,16 +1054,6 @@ msgstr "Додати вс~е"
 msgid  "Pr~eview"
 msgstr "~Попередній перегляд"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Enter Title"
@@ -1228,25 +1064,10 @@ msgstr "Введіть заголовок"
 msgid  "Title"
 msgstr "Заголовок"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Find"
-msgstr "Знайти"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Directory"
-msgstr "Каталог"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "File type"
 msgstr "Тип файлу"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Застосувати"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 #, fuzzy
@@ -1348,16 +1169,6 @@ msgstr "Старіння"
 msgid  "Aging degree"
 msgstr "Ступінь старіння"
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Posterize"
-msgstr "Плакат"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Poster colors"
-msgstr "Кіль-ть кольорів плакату"
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Relief"
@@ -1418,11 +1229,6 @@ msgstr "Ханд~жа"
 msgid  "Ha~nja"
 msgstr "Хан~джа"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Conversion"
-msgstr "Перетворення"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Hangul ~only"
@@ -1437,11 +1243,6 @@ msgstr "Ли~ше Ханджа"
 #, fuzzy
 msgid  "Replace b~y character"
 msgstr "Замінити ~символом"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-#, fuzzy
-msgid  "Hangul"
-msgstr "Хангиль"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 #, fuzzy
@@ -1478,11 +1279,6 @@ msgstr "Показувати недавно використані записи 
 msgid  "Replace all unique entries automatically"
 msgstr "Замінити всі унікальні записи автоматично"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "Створити..."
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Edit..."
@@ -1493,65 +1289,25 @@ msgstr "Редагування..."
 msgid  "Delete"
 msgstr "Видалити"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "Новий словник"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "Словник"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Name"
 msgstr "~Назва"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "Редагування словника користувача"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 #, fuzzy
 msgid  "[Enter text here]"
 msgstr "[Введіть тут текст]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Book"
-msgstr "Книжка"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Original"
 msgstr "Оригінал"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Suggestions (max. 8)"
-msgstr "Пропозиції (до 8)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "Створити"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
 msgid  "Close"
 msgstr "Закрити"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Target in Document"
-msgstr "Посилання на елемент у документі"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Застосувати"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1569,6 +1325,7 @@ msgid  "Couldn't open the document."
 msgstr "Неможливо відкрити документ."
 
 #: dialogs/hlmarkwn.src#STR_MARK_TREE.STRING.TEXT
+#, fuzzy
 msgid  "Mark Tree"
 msgstr ""
 
@@ -1647,11 +1404,6 @@ msgstr "~Елемент"
 msgid  "Text"
 msgstr "Текст"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Button"
-msgstr "Кнопка"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Te~xt"
@@ -1666,11 +1418,6 @@ msgstr "~Назва"
 #, fuzzy
 msgid  "Events"
 msgstr "Події"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mail & news"
-msgstr "Пошта та новини"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1697,11 +1444,6 @@ msgstr "~Тема"
 msgid  "Data Sources..."
 msgstr "Джерела даних..."
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "Документ"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Path"
@@ -1712,30 +1454,15 @@ msgstr "~Шлях"
 msgid  "Open File"
 msgstr "Відкрити файл"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Target in document"
-msgstr "Посилання на елемент у документі"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Targ~et"
 msgstr "~Ціль"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "URL"
-msgstr "URL"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Test text"
 msgstr "Тестовий текст"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New document"
-msgstr "Створити документ"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1761,11 +1488,6 @@ msgstr "~Тип файлу"
 #, fuzzy
 msgid  "Select Path"
 msgstr "Вибрати шлях"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Застосувати"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 #, fuzzy
@@ -1802,11 +1524,6 @@ msgstr "Інтернет"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "Тут ви створюєте гіперпосилання до веб-сторінки, FTP сервер або підключення через Telnet."
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-#, fuzzy
-msgid  "Mail & News"
-msgstr "Пошта та новини"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 #, fuzzy
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
@@ -1816,11 +1533,6 @@ msgstr "Тут ви створюєте гіперпосилання на адр�
 #, fuzzy
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr "Місце для створення гіперпосилання на існуючий документ або певне місце у документі."
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-#, fuzzy
-msgid  "New Document"
-msgstr "Створити документ"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 #, fuzzy
@@ -1848,10 +1560,12 @@ msgid  "~Word"
 msgstr "~Слово"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CUT.OKBUTTON.TEXT
+#, fuzzy
 msgid  "H~yphenate"
 msgstr ""
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CONTINUE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Skip"
 msgstr ""
 
@@ -1861,6 +1575,7 @@ msgid  "~Remove"
 msgstr "В~идалити"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_ALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Hyphenate ~All"
 msgstr ""
 
@@ -1888,11 +1603,6 @@ msgstr "~до"
 #, fuzzy
 msgid  "A~fter"
 msgstr "~після"
-
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Позиція"
 
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1959,11 +1669,6 @@ msgstr "Файли"
 msgid  "Select Archives"
 msgstr "Вибір архівів"
 
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-#, fuzzy
-msgid  "Archives"
-msgstr "Архіви"
-
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 #, fuzzy
 msgid  "The file %1 already exists."
@@ -1985,14 +1690,17 @@ msgid  "Number of rows:"
 msgstr "Кількість рядків:"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Set Password"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_ENCRYPTION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File encryption password"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_TO_OPEN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Enter password to open"
 msgstr ""
 
@@ -2002,42 +1710,52 @@ msgid  "Confirm password"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_SHARING_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File sharing password"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.CB_OPEN_READONLY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Open file read-only"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_TO_MODIFY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Enter password to allow editing"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_PASSWD_MUST_BE_CONFIRMED.STRING.TEXT
+#, fuzzy
 msgid  "Password must be confirmed"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_MORE_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "More ~Options"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_FEWER_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Fewer ~Options"
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_ONE_PASSWORD_MISMATCH.STRING.TEXT
+#, fuzzy
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_TWO_PASSWORDS_MISMATCH.STRING.TEXT
+#, fuzzy
 msgid  "The confirmation passwords did not match the original passwords. Set the passwords again."
 msgstr ""
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_INVALID_STATE_FOR_OK_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Please enter a password to open or to modify, or check the open read-only option to continue."
 msgstr ""
 
@@ -2055,11 +1773,6 @@ msgstr "Автор"
 #, fuzzy
 msgid  "~Text"
 msgstr "~Текст"
-
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "Зміст"
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2136,20 +1849,10 @@ msgstr "Створити бібліотеку"
 msgid  "Enter the name for the new library."
 msgstr "Введіть назву нової бібліотеки."
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-#, fuzzy
-msgid  "Create Macro"
-msgstr "Створити макрос"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 #, fuzzy
 msgid  "Enter the name for the new macro."
 msgstr "Введіть назву нового макросу."
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "Перейменувати"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 #, fuzzy
@@ -2196,11 +1899,6 @@ msgstr " Об'єкт з такою назвою вже існує."
 msgid  " You do not have permission to create this object."
 msgstr " Вам бракує прав для створення цього об'єкту."
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Creating Object"
-msgstr "Помилка при створенні об'єкту"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 #, fuzzy
 msgid  "The object could not be renamed."
@@ -2210,11 +1908,6 @@ msgstr "Не вдається перейменувати об'єкт."
 #, fuzzy
 msgid  " You do not have permission to rename this object."
 msgstr " Вам бракує прав для перейменування цього об'єкту."
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Renaming Object"
-msgstr "Помилка при перейменуванні об'єкту"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 #, fuzzy
@@ -2261,11 +1954,6 @@ msgstr "Помилка сценарію при виконанні сценарі
 msgid  "Type:"
 msgstr "Тип:"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Message:"
-msgstr "Повідомлення:"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 #, fuzzy
 msgid  "Format Cells"
@@ -2280,16 +1968,6 @@ msgstr "Шрифт"
 #, fuzzy
 msgid  "Font Effects"
 msgstr "Шрифтові ефекти"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Обрамлення"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Тло"
 
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2312,6 +1990,7 @@ msgid  "Spellcheck: "
 msgstr "Перевірка орфографії: "
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Text languag~e"
 msgstr ""
 
@@ -2361,6 +2040,7 @@ msgid  "Change A~ll"
 msgstr "Замінити вс~е"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_EXPLAIN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Explain..."
 msgstr ""
 
@@ -2388,11 +2068,6 @@ msgstr "~Закрити"
 #, fuzzy
 msgid  "Resu~me"
 msgstr "~Продовжити"
-
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-#, fuzzy
-msgid  "(no suggestions)"
-msgstr "(немає варіантів)"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 #, fuzzy
@@ -2459,11 +2134,6 @@ msgstr "Шрифт"
 msgid  "Font Effects"
 msgstr "Ефекти шрифту"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Позиція"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Asian Layout"
@@ -2489,25 +2159,10 @@ msgstr "На сторінці"
 msgid  "Asian Typography"
 msgstr "Азіатські правила набору"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Тло"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Attributes"
-msgstr "Атрибути"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Options"
 msgstr "~Вибір"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "Пошук подібних"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2539,20 +2194,10 @@ msgstr "Параметри"
 msgid  "Paste Special"
 msgstr "Спеціальна вставка"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Source:"
-msgstr "Джерело:"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Insert as"
 msgstr "Вставити ~як"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Link to"
-msgstr "Посилання на"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 #, fuzzy
@@ -2568,11 +2213,6 @@ msgstr "~Інший значок..."
 #, fuzzy
 msgid  "Selection"
 msgstr "Вибір"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "Об'єкт"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 #, fuzzy
@@ -2593,11 +2233,6 @@ msgstr "Елемент:"
 #, fuzzy
 msgid  "Type"
 msgstr "Тип"
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Status"
-msgstr "Стан"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
 #, fuzzy
@@ -2789,11 +2424,6 @@ msgstr "~Ні"
 msgid  "Au~tomatic"
 msgstr "~Автоматично"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scroll bar"
-msgstr "Панель прокрутки"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "On"
@@ -2803,11 +2433,6 @@ msgstr "Так"
 #, fuzzy
 msgid  "Off"
 msgstr "Ні"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Border"
-msgstr "Рамка"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2839,27 +2464,13 @@ msgstr "Відступи від змісту"
 msgid  "Select File for Floating Frame"
 msgstr "Вибрати файл для кадру"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-#, fuzzy
-msgid  "Edit Applet"
-msgstr "Змінити аплет"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Number"
-msgstr "Номер запису"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "go to record"
 msgstr "перейти до запису"
 
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "Тезаурус"
-
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Current word"
 msgstr ""
 
@@ -2869,19 +2480,17 @@ msgid  "~Language"
 msgstr "~Мова..."
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_THES_ALTERNATIVES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Alternatives"
 msgstr ""
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_REPL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Replace with"
 msgstr ""
 
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "~Замінити"
-
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
+#, fuzzy
 msgid  "No alternatives found."
 msgstr ""
 
@@ -2955,11 +2564,6 @@ msgstr "Увімкнено пул з'єднань"
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "Драйвери, відомі %PRODUCTNAME"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Current driver:"
-msgstr "Поточний драйвер:"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Enable pooling for this driver"
@@ -2970,11 +2574,6 @@ msgstr "Створення пулу підключень для цього др�
 msgid  "Timeout (seconds)"
 msgstr "Час очікування (секунд)"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Driver name"
-msgstr "Назва драйвера"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 #, fuzzy
 msgid  "Pool"
@@ -2984,16 +2583,6 @@ msgstr "Пул"
 #, fuzzy
 msgid  "Timeout"
 msgstr "Час очікування"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "Так"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "Ні"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 #, fuzzy
@@ -3056,6 +2645,7 @@ msgid  "The file\n$file$\ndoes not exist."
 msgstr "Файл\n$file$\nне знайдено"
 
 #: options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file\n$file$\ndoes not exist in the local file system."
 msgstr ""
 
@@ -3084,17 +2674,13 @@ msgstr "~Шрифт"
 msgid  "Re~place with"
 msgstr "Замінити н~а"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Застосувати"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Delete"
 msgstr "Видалити"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FL_SOURCEVIEW.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Font settings for HTML, Basic and SQL sources"
 msgstr ""
 
@@ -3113,11 +2699,6 @@ msgstr "Лише моноширинні шрифти"
 msgid  "~Size"
 msgstr "~Розмір"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "Always"
-msgstr "Завжди"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
 #, fuzzy
 msgid  "Screen only"
@@ -3128,20 +2709,10 @@ msgstr "Екран"
 msgid  "Font"
 msgstr "~Шрифт"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-#, fuzzy
-msgid  "Replace with"
-msgstr "Замінити на"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 #, fuzzy
 msgid  "Automatic"
 msgstr "Автоматично"
-
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Default text direction"
-msgstr "Типовий напрямок тексту"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
 #, fuzzy
@@ -3197,11 +2768,6 @@ msgstr "Дозволити анімацію ~тексту"
 #, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "~Підказки довідки зникають після"
-
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "seconds"
-msgstr "секунд(и)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
@@ -3293,11 +2859,6 @@ msgstr "Без визначених користувачем символів п
 msgid  "Proxy"
 msgstr "Проксі"
 
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Default Colors"
-msgstr "Типові кольори"
-
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Chart colors"
@@ -3318,16 +2879,6 @@ msgstr "~Стандарт"
 msgid  "Data Series $(ROW)"
 msgstr "Ряд даних $(ROW)"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color scheme"
-msgstr "Схема кольорів"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Scheme"
-msgstr "~Назва"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Save..."
@@ -3337,11 +2888,6 @@ msgstr "З~берегти..."
 #, fuzzy
 msgid  "Delete"
 msgstr "В~идалити"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Custom colors"
-msgstr "Налаштовування кольорів"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
 #, fuzzy
@@ -3363,31 +2909,6 @@ msgstr "Колір"
 msgid  "Preview"
 msgstr "Вигляд"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Загальні"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Document background"
-msgstr "Тло документу"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Text boundaries"
-msgstr "Межі документу"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Application background"
-msgstr "Тло програми"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Object boundaries"
-msgstr "Межі об'єктів"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Table boundaries"
@@ -3397,16 +2918,6 @@ msgstr "Межі таблиць"
 #, fuzzy
 msgid  "Font color"
 msgstr "Колір шрифту"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Unvisited links"
-msgstr "Невідвідані посилання"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Visited links"
-msgstr "Відвідані посилання"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3448,11 +2959,6 @@ msgstr "Індикатор сценаріїв"
 msgid  "Section boundaries"
 msgstr "Межі розділів"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Page and column breaks"
-msgstr "Розриви сторінок та колонок"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Direct cursor"
@@ -3478,21 +2984,6 @@ msgstr "Виділення коментарів"
 msgid  "Keyword highlighting"
 msgstr "Виділення ключових слів"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Текст"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "Електронна таблиця"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Grid lines"
-msgstr "Лінії сітки"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Page breaks"
@@ -3508,25 +2999,10 @@ msgstr "Жорсткі розриви сторінок"
 msgid  "Automatic page breaks"
 msgstr "Автоматичні розриви сторінок"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Detective"
-msgstr "Агент"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Detective error"
 msgstr "Помилки агента"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "References"
-msgstr "Посилання"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Notes background"
-msgstr "Тло приміток"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3568,21 +3044,13 @@ msgstr "Оператори"
 msgid  "Reserved expression"
 msgstr "Вирази"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Error"
-msgstr "Помилки"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "SQL Syntax Highlighting"
-msgstr "Виділення кольором синтаксису SGML"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Keyword"
 msgstr ""
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLPARAMETER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Parameter"
 msgstr ""
 
@@ -3616,11 +3084,6 @@ msgstr "Видалення схеми кольорів"
 msgid  "Save scheme"
 msgstr "Зберегти схему"
 
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-#, fuzzy
-msgid  "Name of color scheme"
-msgstr "Назва схеми кольорів"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
 #, fuzzy
 msgid  "Complex Text Layout"
@@ -3651,11 +3114,6 @@ msgstr "~Заміна при друкуванні"
 msgid  "Cursor control"
 msgstr "Текстовий курсор"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Movement"
-msgstr "Напрямок руху"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Lo~gical"
@@ -3676,29 +3134,10 @@ msgstr "Загальні параметри"
 msgid  "~Numerals"
 msgstr "~Цифри (лише для тексту)"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Arabic"
-msgstr "Арабські"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Hindi"
-msgstr "Хінді"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "Системний"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Context"
 msgstr ""
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "Новий словник"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3714,16 +3153,6 @@ msgstr "~Мова"
 #, fuzzy
 msgid  "~Exception (-)"
 msgstr "~Виняток (-)"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "Словник"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "Редагування словника користувача"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3841,25 +3270,24 @@ msgid  "[S]: Convert and save the object"
 msgstr "[б]: Перетворити та зберегти вбудований об'єкт"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_MATH.STRING.TEXT
+#, fuzzy
 msgid  "MathType to %PRODUCTNAME Math or reverse"
 msgstr ""
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_WRITER.STRING.TEXT
+#, fuzzy
 msgid  "WinWord to %PRODUCTNAME Writer or reverse"
 msgstr ""
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_CALC.STRING.TEXT
+#, fuzzy
 msgid  "Excel to %PRODUCTNAME Calc or reverse"
 msgstr ""
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_IMPRESS.STRING.TEXT
+#, fuzzy
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr ""
-
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Довідка"
 
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 #, fuzzy
@@ -3885,11 +3313,6 @@ msgstr "~Скинути"
 #, fuzzy
 msgid  "Help ~formatting"
 msgstr "Відображення ~довідки"
-
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "Типово"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -3956,11 +3379,6 @@ msgstr "Діалоги друку"
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "Використовувати ~діалоги %PRODUCTNAME"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User Interface"
-msgstr "Інтерфейс користувача"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Sc~aling"
@@ -3981,17 +3399,8 @@ msgstr "Розмір значків"
 msgid  "Automatic"
 msgstr "Автоматично"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small"
-msgstr "Маленькі"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Large"
-msgstr "Великі"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Galaxy (default)"
 msgstr ""
 
@@ -4000,12 +3409,8 @@ msgstr ""
 msgid  "High Contrast"
 msgstr "Контрастний стиль №1"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Industrial"
-msgstr "Індустріальний"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Classic"
 msgstr ""
 
@@ -4024,25 +3429,23 @@ msgstr "Згладжування екранних шрифтів"
 msgid  "from"
 msgstr "з"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Pixels"
-msgstr "точок"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Menu"
 msgstr "Меню"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MENU_ICONS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Icons in menus"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Hide"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Show"
 msgstr ""
 
@@ -4072,23 +3475,14 @@ msgid  "Use hardware acceleration"
 msgstr "Використовувати апаратне прискорення"
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_USE_ANTIALIASE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use Anti-Aliasing"
 msgstr ""
-
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mouse"
-msgstr "Миша"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Mouse positioning"
 msgstr "Позиціювання миші"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default button"
-msgstr "Стандартна кнопка"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -4110,25 +3504,23 @@ msgstr "Середня кнопка миші"
 msgid  "No function"
 msgstr "Без функції"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Automatic scrolling"
-msgstr "Автоматична прокрутка"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Paste clipboard"
 msgstr "Вставити з буферу обміну"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_SELECTION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Selection"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_SELECTION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Transparency"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_VIEW.MF_SELECTION.METRICFIELD.CUSTOMUNITTEXT
+#, fuzzy
 msgid  "%"
 msgstr ""
 
@@ -4193,10 +3585,12 @@ msgid  "Enhanced language support"
 msgstr "Розширена підтримка мов"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_ASIANSUPPORT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show UI elements for East Asia~n writings"
 msgstr ""
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_CTLSUPPORT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show UI elements for B~i-Directional writing"
 msgstr ""
 
@@ -4204,11 +3598,6 @@ msgstr ""
 #, fuzzy
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Параметри мов інтерфейсу користувача оновлені та будуть застосовані при наступному запуску %PRODUCTNAME %PRODUCTVERSION"
-
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-#, fuzzy
-msgid  "User Data"
-msgstr "Відомості про користувача"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4284,6 +3673,10 @@ msgstr "Місто/Область/Поштовий індекс"
 #, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "Майте на увазі що вулиця, поштовий код і місто будуть використані для створення ключа реєстрації. Не можна змінювати ці дані до завершення реєстрації. Змінити відомості про користувача зараз?"
+
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr ""
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4401,6 +3794,7 @@ msgid  "Tracked Data"
 msgstr "Зібр даних"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_REPORTS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Number of reports sent:"
 msgstr ""
 
@@ -4444,16 +3838,6 @@ msgstr "~Проксі-сервера"
 msgid  "None"
 msgstr "Немає"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "Системний"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Manual"
-msgstr "Вручну"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
 #, fuzzy
 msgid  "Use browser settings"
@@ -4475,7 +3859,6 @@ msgid  "HTTP~S proxy"
 msgstr "HTTP~S проксі"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "P~ort"
 msgstr "П~орт"
 
@@ -4499,16 +3882,6 @@ msgstr "Пор~т"
 msgid  "~No proxy for:"
 msgstr "~Без проксі для:"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Separator ;"
-msgstr "Розділювач ;"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "DNS server"
-msgstr "Сервер DNS"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Automatic"
@@ -4528,11 +3901,6 @@ msgstr "неправильний запис для цього поля. Вкаж
 #, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "неправильний запис для цього поля. Вкажіть значення між 1 та 255."
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Search"
-msgstr "Знайти"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
 #, fuzzy
@@ -4584,16 +3952,6 @@ msgstr "~Розділювач"
 msgid  "~Case match"
 msgstr "~Враховувати регістр"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Upper"
-msgstr "Верхній"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Lower"
-msgstr "Нижній"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "N~ew"
@@ -4619,11 +3977,6 @@ msgstr "В~идалити"
 msgid  "Do you want to accept the current modification?"
 msgstr "Прийняти поточні зміни?"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-#, fuzzy
-msgid  "Security"
-msgstr "Безпека"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Security options and warnings"
@@ -4645,6 +3998,7 @@ msgid  "Passwords for web connections"
 msgstr "Паролі для веб-підключень"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_SAVEPASSWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Persistently save passwords for web connections"
 msgstr ""
 
@@ -4654,6 +4008,7 @@ msgid  "Connections..."
 msgstr "З'єднання"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_MASTERPASSWORD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Protected by a master password (recommended)"
 msgstr ""
 
@@ -4666,11 +4021,6 @@ msgstr "Паролі захищені головним паролем. У вип
 #, fuzzy
 msgid  "Master Password..."
 msgstr "Головний пароль..."
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Macro security"
-msgstr "Безпека макросів"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4686,6 +4036,11 @@ msgstr "Безпека макросів..."
 #, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 msgstr "Вимикання функції збереження паролів видалить список збережених паролів та відновить головний пароль.\n\nВидалити паролі та відновити головний-пароль?"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "Неправильне значення!\n\nМаксимальне значення для номеру порту - 65535."
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4711,11 +4066,6 @@ msgstr "~Поштовий клієнт"
 #, fuzzy
 msgid  "All files (*.*)"
 msgstr "Усі файли (*.*)"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-#, fuzzy
-msgid  "Java"
-msgstr "Java"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
 #, fuzzy
@@ -4746,11 +4096,6 @@ msgstr "~Параметри..."
 #, fuzzy
 msgid  "~Class Path..."
 msgstr "~Шлях класу..."
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-#, fuzzy
-msgid  "Location: "
-msgstr "Розташування: "
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 #, fuzzy
@@ -4797,20 +4142,10 @@ msgstr "П~ризначити"
 msgid  "Assig~ned start parameters"
 msgstr "При~значені параметри запуску"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "Наприклад: -Dmyprop=c:\\program files\\java"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Remove"
 msgstr "В~идалити"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Class Path"
-msgstr "Шлях до класів"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4827,10 +4162,25 @@ msgstr "~Додати архів..."
 msgid  "Add ~Folder"
 msgstr "Додати ~теку"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Treat as equal"
-msgstr "Вважати рівнозначними"
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "Вибраний каталог не містить JRE.\nВкажіть інший каталог."
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "Вибране середовище виконання Java має непотрібну версію.\nВиберіть іншу теку."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "Для правильної роботи вибраного середовища виконання Java потрібно перезапустити %PRODUCTNAME.\nПерезапустіть %PRODUCTNAME зараз."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "Для застосування змін потрібно перезапустити %PRODUCTNAME."
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
 #, fuzzy
@@ -4912,11 +4262,6 @@ msgstr "~ki/ku (tekisuto/tekusuto)"
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "~Довгі голосні (ka-/kaa)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Ignore"
-msgstr "Пропускати"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pu~nctuation characters"
@@ -4931,11 +4276,6 @@ msgstr "~Символи пробілів"
 #, fuzzy
 msgid  "Midd~le dots"
 msgstr "Точка у ~центрі"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "Пошук в японській мові"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 #, fuzzy
@@ -4986,11 +4326,6 @@ msgstr "Перевірка орфографії"
 #, fuzzy
 msgid  "Hyphenation"
 msgstr "Розстановка переносів"
-
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "Тезаурус"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 #, fuzzy
@@ -5057,25 +4392,10 @@ msgstr "П~араметри"
 msgid  "Edi~t..."
 msgstr "~Редагування..."
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-#, fuzzy
-msgid  "Check uppercase words"
-msgstr "Перевіряти слова написані великими літерами"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
 #, fuzzy
 msgid  "Check words with numbers "
 msgstr "Перевіряти слова з цифрами "
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-#, fuzzy
-msgid  "Check capitalization"
-msgstr "Перевіряти регістр"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-#, fuzzy
-msgid  "Check special regions"
-msgstr "Перевіряти спеціальні області"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 #, fuzzy
@@ -5123,6 +4443,7 @@ msgid  "Edit User-defined dictionaries"
 msgstr "Словники користувачів"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit Options"
 msgstr ""
 
@@ -5130,11 +4451,6 @@ msgstr ""
 #, fuzzy
 msgid  "Do you want to delete the dictionary?"
 msgstr "Видалити словник?"
-
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Undo"
-msgstr "Вернути"
 
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5151,11 +4467,6 @@ msgstr "Кеш графічного об'єкту"
 msgid  "Use for %PRODUCTNAME"
 msgstr "Використовувати для %PRODUCTNAME"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "MB"
-msgstr "Мб"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Memory per object"
@@ -5165,11 +4476,6 @@ msgstr "Пам'яті на об'єкт"
 #, fuzzy
 msgid  "Remove from memory after"
 msgstr "Видалити з пам'яті через"
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "hh:mm"
-msgstr "гг:хв"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 #, fuzzy
@@ -5231,6 +4537,11 @@ msgstr "Шляхи, що використовуються %PRODUCTNAME"
 msgid  "Edit Paths: %1"
 msgstr "Змінити шляхи: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "Конфігурація та поштові каталоги мають знаходитися у різних каталогах.\nВиберіть новий шлях."
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Configuration"
@@ -5240,26 +4551,6 @@ msgstr "Налаштовування"
 #, fuzzy
 msgid  "My Documents"
 msgstr "Мої документи"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Зображення"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Icons"
-msgstr "Значки"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Palettes"
-msgstr "Палітра"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Backups"
-msgstr "Резервні копії"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 #, fuzzy
@@ -5276,40 +4567,15 @@ msgstr "Шаблони"
 msgid  "AutoText"
 msgstr "Автотекст"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "Словники"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Довідка"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Gallery"
 msgstr "Галерея"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Message Storage"
-msgstr "Сховище повідомлень"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 #, fuzzy
 msgid  "Temporary files"
 msgstr "Тимчасові файли"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Plug-ins"
-msgstr "Додаткові модулі"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Folder Bookmarks"
-msgstr "Закладки теки"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 #, fuzzy
@@ -5376,11 +4642,6 @@ msgstr "Зав~жди створювати резервну копію"
 msgid  "Save ~AutoRecovery information every"
 msgstr "~Автозбереження кожні"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minutes"
-msgstr "Хвилини"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Save URLs relative to file system"
@@ -5402,14 +4663,17 @@ msgid  "ODF format version"
 msgstr "Версія формату ODF"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "1.0/1.1"
 msgstr ""
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "1.2"
 msgstr ""
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.0X7FFFFFFF.STRINGLIST.ITEM
+#, fuzzy
 msgid  "1.2 Extended (recommended)"
 msgstr ""
 
@@ -5448,11 +4712,6 @@ msgstr "Документ HTML"
 msgid  "Master document"
 msgstr "Головний документ"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "Електронна таблиця"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Presentation"
@@ -5469,6 +4728,7 @@ msgid  "Formula"
 msgstr "Формула"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_WARN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr ""
 
@@ -5487,11 +4747,6 @@ msgstr "Перевірка орфографії"
 msgid  "~Edit..."
 msgstr "~Редагування..."
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "Словники"
-
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Capital words"
@@ -5506,11 +4761,6 @@ msgstr "Слова з ~цифрами"
 #, fuzzy
 msgid  "~Case sensitive "
 msgstr "~Враховувати регістр"
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Check"
-msgstr "Перевіряти"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 #, fuzzy
@@ -5707,16 +4957,6 @@ msgstr "Тут можна вказати загальні параметри д�
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "Тут можна вказати загальні параметри відкривання та збереження документів у зовнішніх форматах, наприклад, у форматі HTML, а також керувати властивостями макросів та об'єктів OLE документів MS Office."
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "User Data"
-msgstr "Відомості про користувача"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
 #, fuzzy
 msgid  "General"
@@ -5742,20 +4982,10 @@ msgstr "Друк"
 msgid  "Paths"
 msgstr "Шляхи"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Colors"
-msgstr "Кольори"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Fonts"
 msgstr "Шрифти"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Security"
-msgstr "Безпека"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 #, fuzzy
@@ -5767,11 +4997,6 @@ msgstr "Зовнішній вигляд"
 msgid  "Accessibility"
 msgstr "Допоміжні можливості"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Java"
-msgstr "Java"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Network Identity"
@@ -5782,11 +5007,6 @@ msgstr "Ідентифікація у мережі"
 msgid  "Online Update"
 msgstr "Перевірка оновлень"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Language Settings"
-msgstr "Параметри мови"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Languages"
@@ -5796,11 +5016,6 @@ msgstr "Мови"
 #, fuzzy
 msgid  "Writing Aids"
 msgstr "Лінгвістика"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "Пошук японською мовою"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 #, fuzzy
@@ -5821,16 +5036,6 @@ msgstr "Інтернет"
 #, fuzzy
 msgid  "Proxy"
 msgstr "Проксі"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Search"
-msgstr "Пошук"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "E-mail"
-msgstr "Ел.пошта"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
@@ -5892,11 +5097,6 @@ msgstr "Розсилання листів"
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Background"
-msgstr "Тло"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "%PRODUCTNAME Math"
@@ -5906,16 +5106,6 @@ msgstr "%PRODUCTNAME Math"
 #, fuzzy
 msgid  "Settings"
 msgstr "Параметри"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Сalc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "International"
-msgstr "Міжнародний"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 #, fuzzy
@@ -5937,30 +5127,10 @@ msgstr "%PRODUCTNAME Impress"
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Charts"
-msgstr "Діаграми"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Default Colors"
-msgstr "Типові кольори"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Load/Save"
 msgstr "Завантаження/збереження"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-#, fuzzy
-msgid  "VBA Properties"
-msgstr "Властивості VBA"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Microsoft Office"
-msgstr "Microsoft Office"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 #, fuzzy
@@ -5986,11 +5156,6 @@ msgstr "Бази даних"
 #, fuzzy
 msgid  "Site certificates"
 msgstr "Сертифікати вузла"
-
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-#, fuzzy
-msgid  "Personal certificates"
-msgstr "Особисті сертифікати"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 #, fuzzy
@@ -6037,11 +5202,6 @@ msgstr "Ім'я користувача"
 msgid  "Alignment"
 msgstr "Вирівнювання"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text alignment"
-msgstr "Вирівнювання тексту"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Hori~zontal"
@@ -6052,30 +5212,10 @@ msgstr "~Горизонтально"
 msgid  "Default"
 msgstr "Типово"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Ліворуч"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "У центрі"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "Праворуч"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Justified"
 msgstr "У ~ширину"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Filled"
-msgstr "Заповнення"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6086,16 +5226,6 @@ msgstr "~Відступ"
 #, fuzzy
 msgid  "~Vertical"
 msgstr "~Вертикально"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "Згори"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "Посередині"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
 #, fuzzy
@@ -6126,11 +5256,6 @@ msgstr "~Межа посилання"
 #, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "Використовувати азіатський ~режим вертикального розміщення тексту"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Властивості"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
 #, fuzzy
@@ -6177,11 +5302,6 @@ msgstr "Автозаміна"
 msgid  "Replace"
 msgstr "Замінити"
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Exceptions"
-msgstr "Винятки"
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Options"
@@ -6217,11 +5337,6 @@ msgstr "Застосувати таблицю замін"
 msgid  "Correct TWo INitial CApitals"
 msgstr "Виправляти ДВі ВЕликі літери на початку слова"
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-#, fuzzy
-msgid  "Capitalize first letter of every sentence"
-msgstr "Починати кожну пропозицію з великої літери"
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 #, fuzzy
 msgid  "Automatic *bold* and _underline_"
@@ -6231,11 +5346,6 @@ msgstr "Автоматично виділяти *жирним* та _підкр�
 #, fuzzy
 msgid  "Ignore double spaces"
 msgstr "Пропускати подвійні пробіли"
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-#, fuzzy
-msgid  "URL Recognition"
-msgstr "Розпізнавати URL"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
 #, fuzzy
@@ -6252,16 +5362,6 @@ msgstr "Параметри"
 msgid  "~Edit..."
 msgstr "~Редагування..."
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "[M]"
-msgstr "[І]"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-#, fuzzy
-msgid  "[T]"
-msgstr "[В]"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "[M]: Replace while modifying existing text"
@@ -6276,11 +5376,6 @@ msgstr "[T]: Автоформат/автозаміна при наборі но�
 #, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "Видаляти порожні абзаци"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-#, fuzzy
-msgid  "Replace Custom Styles"
-msgstr "Замінювати стилі користувача"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
 #, fuzzy
@@ -6306,11 +5401,6 @@ msgstr "Застосувати обрамлення"
 #, fuzzy
 msgid  "Create table"
 msgstr "Створити таблицю"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "Apply Styles"
-msgstr "Застосувати стилі"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
 #, fuzzy
@@ -6372,11 +5462,6 @@ msgstr "Скорочення, після яких не слідують вели
 msgid  "~AutoInclude"
 msgstr "~Включати автоматично"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Words with TWo INitial CApitals"
-msgstr "Слова, що починаються ДВома ВЕликими літерами"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Ne~w"
@@ -6393,26 +5478,32 @@ msgid  "A~utoInclude"
 msgstr "Включати ~автоматично"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWABBREV.STRING.TEXT
+#, fuzzy
 msgid  "New abbreviations"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELABBREV.STRING.TEXT
+#, fuzzy
 msgid  "Delete abbreviations"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWDOUBLECAPS.STRING.TEXT
+#, fuzzy
 msgid  "New words with two initial capitals"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELDOUBLECAPS.STRING.TEXT
+#, fuzzy
 msgid  "Delete words with two initial capitals"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.STRING.TEXT
+#, fuzzy
 msgid  "Add non breaking space before specific punctuation marks in french text"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_ORDINAL.STRING.TEXT
+#, fuzzy
 msgid  "Format ordinal numbers suffixes (1st -> 1^st)"
 msgstr ""
 
@@ -6471,32 +5562,33 @@ msgstr "Початкові лапки"
 msgid  "End quote"
 msgstr "Кінцеві лапки"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "Типово"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
+#, fuzzy
 msgid  "Single quotes default"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
+#, fuzzy
 msgid  "Double quotes default"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
+#, fuzzy
 msgid  "Start quote of single quotes"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
+#, fuzzy
 msgid  "Start quote of double quotes"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
+#, fuzzy
 msgid  "End quote of single quotes"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
+#, fuzzy
 msgid  "End quote of double quotes"
 msgstr ""
 
@@ -6521,6 +5613,7 @@ msgid  "C~ollect words"
 msgstr "~Збирати слова"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~When closing a document, remove the words collected from it from the list"
 msgstr ""
 
@@ -6554,30 +5647,15 @@ msgstr "Позначити текст смарт-тегами"
 msgid  "Currently installed smart tags"
 msgstr "Встановлені смарт-теги"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "Властивості..."
-
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 #, fuzzy
 msgid  "Unlinked graphic"
 msgstr "Незв'язаний графічний об'єкт"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Тло"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "A~s"
 msgstr "~Тип"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "Колір"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -6589,35 +5667,10 @@ msgstr "Графічний об'єкт"
 msgid  "F~or"
 msgstr "~Для"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cell"
-msgstr "Комірка"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Row"
-msgstr "Рядок"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Table"
-msgstr "Таблиця"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Paragraph"
-msgstr "Абзац"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Character"
 msgstr "Символ"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Background color"
-msgstr "Колір тла"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6674,26 +5727,6 @@ msgstr "~Попередній перегляд"
 msgid  "Find graphics"
 msgstr "Знайти графічні об'єкти"
 
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Border / Background"
-msgstr "Рамка / Тло"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Обрамлення"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Тло"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Обрамлення"
-
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Line arrangement"
@@ -6708,11 +5741,6 @@ msgstr "~Типово"
 #, fuzzy
 msgid  "~User-defined"
 msgstr "~Особливе"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Лінія"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6768,16 +5796,6 @@ msgstr "~Ширина"
 #, fuzzy
 msgid  "C~olor"
 msgstr "К~олір"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Shadow style"
-msgstr "Стиль тіні"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Властивості"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
 #, fuzzy
@@ -6849,31 +5867,6 @@ msgstr "Верхня та нижня рамка, а також всі внутр
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "Ліве та праве обрамлення, а також всі внутрішні лінії"
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Shadow"
-msgstr "Без тіні"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Right"
-msgstr "Тінь відкидається направо вниз"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Right"
-msgstr "Тінь відкидається праворуч вгору"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Left"
-msgstr "Тінь відкидається ліворуч вгору"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Left"
-msgstr "Тінь відкидається ліворуч вгору"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Western text font"
@@ -6898,11 +5891,6 @@ msgstr "~Гарнітура"
 #, fuzzy
 msgid  "Normal"
 msgstr "Звичайний"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Italic"
-msgstr "Курсив"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -6954,11 +5942,6 @@ msgstr "Га~рнітура"
 msgid  "Example"
 msgstr "Приклад"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "Колір"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Font ~color"
@@ -6975,6 +5958,7 @@ msgid  "Transparent"
 msgstr "Прозорий"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EFFECTS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Effects"
 msgstr ""
 
@@ -6998,25 +5982,10 @@ msgstr "Малі літери"
 msgid  "Title"
 msgstr "Капіталізація"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small capitals"
-msgstr "Маленькі у верхньому регістрі"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Relief"
 msgstr "~Рельєф"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Embossed"
-msgstr "Піднесений"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Engraved"
-msgstr "Утоплений"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
 #, fuzzy
@@ -7039,6 +6008,7 @@ msgid  "H~idden"
 msgstr "С~хований"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Overlining"
 msgstr ""
 
@@ -7051,11 +6021,6 @@ msgstr "Звичайне"
 #, fuzzy
 msgid  "Double"
 msgstr "Подвійне"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Dotted"
-msgstr "Пунктир"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
 #, fuzzy
@@ -7118,28 +6083,22 @@ msgid  "Double Wave"
 msgstr "Подвійна хвиля"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE_COLOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "O~verline color"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_STRIKEOUT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Strikethrough"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With /"
-msgstr "Символом: /"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With X"
-msgstr "Символом: X"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Underlining"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE_COLOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "U~nderline color"
 msgstr ""
 
@@ -7155,63 +6114,18 @@ msgstr "~Діакритичний знак"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Dot"
-msgstr "Точка"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Circle"
-msgstr "Коло"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Disc"
 msgstr "Диск"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Accent"
-msgstr "Акцент"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Position"
 msgstr "~Позиція"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above text"
-msgstr "Над текстом"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below text"
-msgstr "Під текстом"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Small Capitals"
-msgstr "Капітель"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Outline"
 msgstr "~Контур"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Тінь"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-#, fuzzy
-msgid  "Blinking"
-msgstr "Блимання"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "~Положення"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7242,11 +6156,6 @@ msgstr "Мас~штаб шрифту"
 #, fuzzy
 msgid  "Rotation / scaling"
 msgstr "Обертання / масштаб"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scaling"
-msgstr "Зміна масштабу"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7280,16 +6189,6 @@ msgstr "Міжсимвольний інтервал"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Default"
-msgstr "Типово"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Expanded"
-msgstr "Розріджений"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Condensed"
 msgstr "Ущільнений"
 
@@ -7302,11 +6201,6 @@ msgstr "~на"
 #, fuzzy
 msgid  "~Pair kerning"
 msgstr "~Парний кернінг"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Double-lined"
-msgstr "Набір у два рядки"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
 #, fuzzy
@@ -7328,26 +6222,6 @@ msgstr "По~чатковий символ"
 msgid  "(None)"
 msgstr "(немає)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  "("
-msgstr "("
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "["
-msgstr "["
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<"
-msgstr "<"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "{"
-msgstr "{"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Other Characters..."
@@ -7358,26 +6232,6 @@ msgstr "Інші символи..."
 msgid  "Final charact~er"
 msgstr "~Кінцевий символ"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  ")"
-msgstr ")"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "]"
-msgstr "]"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  ">"
-msgstr ">"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "}"
-msgstr "}"
-
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 #, fuzzy
 msgid  "Connector"
@@ -7387,11 +6241,6 @@ msgstr "З'єднувальна лінія"
 #, fuzzy
 msgid  "~Type"
 msgstr "~Тип"
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line skew"
-msgstr "Нахил лінії"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7478,11 +6327,6 @@ msgstr "~Праворуч"
 msgid  "Vertical"
 msgstr "Вертикально"
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "Н~емає"
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Top"
@@ -7502,16 +6346,6 @@ msgstr "~Інтервал"
 #, fuzzy
 msgid  "~Bottom"
 msgstr "З~низу"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "Зліва направо"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "Справа наліво"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
 #, fuzzy
@@ -7613,11 +6447,6 @@ msgstr "~Інтервал"
 msgid  "~Angle"
 msgstr "~Кут"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Free"
-msgstr "За бажанням"
-
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
 #, fuzzy
 msgid  "30 Degrees"
@@ -7647,16 +6476,6 @@ msgstr "~Розширення"
 #, fuzzy
 msgid  "Optimal"
 msgstr "Оптимально"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "Згори"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From left"
-msgstr "Ліворуч"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
 #, fuzzy
@@ -7693,58 +6512,33 @@ msgstr "~Оптимально"
 msgid  "Straight Line"
 msgstr "Пряма лінія"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-#, fuzzy
-msgid  "Angled Line"
-msgstr "Ламана лінія"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-#, fuzzy
-msgid  "Angled Connector Line"
-msgstr "Ламана лінія з одним згином"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-#, fuzzy
-msgid  "Double-angled line"
-msgstr "Ламана лінія з подвійним згином"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Top;Middle;Bottom"
-msgstr "Зверху;Посередині;Знизу"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Left;Middle;Right"
-msgstr "Зліва;Посередині;Справа"
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Положення та розмір"
-
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Callout"
 msgstr "Виноска"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.TABPAGE.TEXT
+#, fuzzy
 msgid  "Assign Macro"
 msgstr ""
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_EVENT.STRING.TEXT
+#, fuzzy
 msgid  "Event"
 msgstr ""
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_ASSMACRO.STRING.TEXT
+#, fuzzy
 msgid  "Assigned macro"
 msgstr ""
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Existing macros\n"
 msgstr ""
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Assign"
 msgstr ""
 
@@ -7754,6 +6548,7 @@ msgid  "~Remove"
 msgstr "Видалити"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_MACROS.STRING.TEXT
+#, fuzzy
 msgid  "Macros"
 msgstr ""
 
@@ -7761,11 +6556,6 @@ msgstr ""
 #, fuzzy
 msgid  "Dimensioning"
 msgstr "Розмірна лінія"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Лінія"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7801,11 +6591,6 @@ msgstr "Розмір ~під об'єктом"
 #, fuzzy
 msgid  "Decimal places"
 msgstr "Кількість знаків після коми"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "Легенда"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7849,58 +6634,13 @@ msgstr "~Категорія"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "All"
-msgstr "Усі"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "User-defined"
-msgstr "Особливий"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "Число"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Percent"
-msgstr "Відсотковий"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Currency"
-msgstr "Грошовий"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "Дата"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Time"
-msgstr "Час"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Scientific"
 msgstr "Науковий"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Fraction"
-msgstr "Дробовий"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Boolean Value"
 msgstr "Логічне значення"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "Текст"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7952,11 +6692,6 @@ msgstr "~Мова"
 msgid  "So~urce format"
 msgstr "~Первинний формат"
 
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Додати"
-
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Remove"
@@ -8007,16 +6742,6 @@ msgstr "~Нумерація"
 msgid  "1, 2, 3, ... "
 msgstr "1, 2, 3,..."
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ... "
-msgstr "A, В, C, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "I, II, III, ... "
@@ -8032,16 +6757,6 @@ msgstr "і, іі, ііі, ..."
 msgid  "A, .., AA, .., AAA, ... "
 msgstr "A, .., AA, .., AAA, ..."
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, .., aa, .., aaa, ..."
-msgstr "a, .., aa, .., aaa, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bullet"
-msgstr "Рисунок"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Graphics"
@@ -8051,11 +6766,6 @@ msgstr "Зображення"
 #, fuzzy
 msgid  "Linked graphics"
 msgstr "Зв'язаний графічний об'єкт"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "Немає"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
 #, fuzzy
@@ -8247,11 +6957,6 @@ msgstr "Символ у центрі"
 msgid  "Bottom of character"
 msgstr "Символ знизу"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "Рядок зверху"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -8261,11 +6966,6 @@ msgstr "Рядок у центрі"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "Рядок знизу"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "All levels"
-msgstr "Усі рівні"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
 #, fuzzy
@@ -8347,11 +7047,6 @@ msgstr "Початок відступу"
 msgid  "Default"
 msgstr "Типово"
 
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Link"
-msgstr "Посилання"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Paper format"
@@ -8397,11 +7092,6 @@ msgstr "Напрямок ~тексту"
 msgid  "Paper ~tray"
 msgstr "~Подача паперу"
 
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Margins"
-msgstr "Поля"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Left"
@@ -8434,58 +7124,13 @@ msgstr "Розмітка сторінки"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right and left"
-msgstr "Справа та зліва"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Mirrored"
 msgstr "Дзеркально"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only right"
-msgstr "Лише праворуч"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only left"
-msgstr "Лише ліворуч"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "For~mat"
 msgstr "Фор~мат"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, В, C, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, "
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, "
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "Немає"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8648,46 +7293,57 @@ msgid  "C4 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM675.ITEMLIST.ITEM
+#, fuzzy
 msgid  "#6 3/4 (Personal) Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_MONARCH.ITEMLIST.ITEM
+#, fuzzy
 msgid  "#8 (Monarch) Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM9.ITEMLIST.ITEM
+#, fuzzy
 msgid  "#9 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM10.ITEMLIST.ITEM
+#, fuzzy
 msgid  "#10 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM11.ITEMLIST.ITEM
+#, fuzzy
 msgid  "#11 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM12.ITEMLIST.ITEM
+#, fuzzy
 msgid  "#12 Envelope"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "A2"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "A1"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A0.ITEMLIST.ITEM
+#, fuzzy
 msgid  "A0"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DIA.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Dia Slide"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_SCREEN.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Screen"
 msgstr ""
 
@@ -8716,11 +7372,6 @@ msgstr "Перший ~рядок"
 msgid  "~Automatic"
 msgstr "~Автоматично"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Indent"
-msgstr "Відступ"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Ab~ove paragraph"
@@ -8738,28 +7389,8 @@ msgstr "Міжсимвольний інтервал"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Single"
-msgstr "Звичайний"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "1.5 lines"
 msgstr "Полуторний"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Double"
-msgstr "Подвійний"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Proportional"
-msgstr "Пропорційно"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At least"
-msgstr "Принаймні"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -8836,21 +7467,6 @@ msgstr "~Праворуч/знизу"
 msgid  "~Last line"
 msgstr "~Останній рядок"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "Типово"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Ліворуч"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "У центрі"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Expand single word"
@@ -8881,35 +7497,15 @@ msgstr "Автоматично"
 msgid  "Base line"
 msgstr "За базовою лінією"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "Згори"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "Посередині"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bottom"
 msgstr "Знизу"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Властивості"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Text ~direction"
 msgstr "~Напрямок тексту"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Text Flow"
-msgstr "На сторінці"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8936,11 +7532,6 @@ msgstr "~Максимальна кількість послідовних деф
 msgid  "Hyphenation"
 msgstr "Розстановка переносів"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Breaks"
-msgstr "Розриви"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Insert"
@@ -8951,30 +7542,10 @@ msgstr "Додавати ~розрив"
 msgid  "~Type"
 msgstr "~Тип"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Page"
-msgstr "Сторінка"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Column"
-msgstr "Стовпчик"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Position"
 msgstr "Позиція"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Before"
-msgstr "Перед"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After"
-msgstr "Після"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9042,13 +7613,9 @@ msgid  "Example"
 msgstr "Приклад"
 
 #: tabpages/paragrph.src#STR_PAGE_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "Page Style"
 msgstr ""
-
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the gradient:"
-msgstr "Введіть назву градієнту:"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 #, fuzzy
@@ -9080,11 +7647,6 @@ msgstr "Ви справді хочете видалити це растрове 
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 msgstr "Растрове зображення змінено, але не збережено. \nЗмініть вибране зображення або додайте нове."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the line style:"
-msgstr "Введіть назву стилю лінії:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the line style?"
@@ -9095,11 +7657,6 @@ msgstr "Видалити стиль лінії?"
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
 msgstr "Тип лінії був змінений без збереження. \nЗмініть вибраний тип або додайте новий стиль лінії."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the hatching:"
-msgstr "Введіть назву нового штрихування:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the hatching?"
@@ -9109,16 +7666,6 @@ msgstr "Видалити штрихування?"
 #, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 msgstr "Тип штрихування був змінений без збереження. \nЗмініть тип штрихування або додайте новий тип штрихування."
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "Змінити"
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Додати"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
 #, fuzzy
@@ -9175,16 +7722,6 @@ msgstr "Видалити розмірну стрілку?"
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr "Розмірна стрілку змінено без збереження.\nЗберегти розмірну стрілку?"
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Положення та розмір"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Розмір"
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Width"
@@ -9199,11 +7736,6 @@ msgstr "~Висота"
 #, fuzzy
 msgid  "~Keep ratio"
 msgstr "~Пропорційно"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "Прив'язка"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9229,11 +7761,6 @@ msgstr "~Як символ"
 #, fuzzy
 msgid  "To ~frame"
 msgstr "У ~кадр"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "Захист"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9332,11 +7859,6 @@ msgstr "Еліпсоїдна"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Quadratic"
-msgstr "Квадратна"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Square"
 msgstr "Квадрат"
 
@@ -9392,16 +7914,6 @@ msgstr "Заповнення"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "None"
-msgstr "Немає"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "Колір"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Hatching"
 msgstr "Штрихування"
 
@@ -9425,11 +7937,6 @@ msgstr "~Автоматично"
 msgid  "~Background color"
 msgstr "Колір ~тла"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Розмір"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Original"
@@ -9450,11 +7957,6 @@ msgstr "~Ширина"
 msgid  "H~eight"
 msgstr "~Висота"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Позиція"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~X Offset"
@@ -9474,11 +7976,6 @@ msgstr "~Плитка"
 #, fuzzy
 msgid  "Auto~Fit"
 msgstr "~Автопідбирання"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Offset"
-msgstr "Зсув"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9615,11 +8112,6 @@ msgstr "Зберегти набір Bitmap"
 msgid  "Gradients"
 msgstr "Градієнти"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Rectangular"
-msgstr "Прямокутний"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~From"
@@ -9701,10 +8193,12 @@ msgid  "Bitmaps"
 msgstr "Текстура"
 
 #: tabpages/tabarea.src#STR_LB_HATCHINGSTYLE.STRING.TEXT
+#, fuzzy
 msgid  "Hatching Style"
 msgstr ""
 
 #: tabpages/tabarea.src#STR_CUI_COLORMODEL.STRING.TEXT
+#, fuzzy
 msgid  "Color Mode"
 msgstr ""
 
@@ -9738,11 +8232,6 @@ msgstr "~Ширина"
 msgid  "~Transparency"
 msgstr "~Прозорість"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Arrow styles"
-msgstr "Стилі стрілок"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "St~yle"
@@ -9769,6 +8258,7 @@ msgid  "Synchroni~ze ends"
 msgstr "~Синхронізувати кінці"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_EDGE_STYLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Corner and cap styles"
 msgstr ""
 
@@ -9782,11 +8272,6 @@ msgstr "Стиль кута"
 msgid  "Rounded"
 msgstr "Закруглений"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "- none -"
-msgstr "- нічого -"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Mitered"
@@ -9798,14 +8283,17 @@ msgid  "Beveled"
 msgstr "Випуклий"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_CAP_STYLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ca~p style"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Flat"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Round"
 msgstr ""
 
@@ -9818,11 +8306,6 @@ msgstr "Квадрат"
 #, fuzzy
 msgid  "Icon"
 msgstr "Значок"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "No Symbol"
-msgstr "Без символу"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
 #, fuzzy
@@ -9870,38 +8353,34 @@ msgid  "Style"
 msgstr "~Стиль"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_START_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "Start style"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_END_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "End style"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_START_WIDTH.STRING.TEXT
+#, fuzzy
 msgid  "Start width"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_END_WIDTH.STRING.TEXT
+#, fuzzy
 msgid  "End width"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_START.STRING.TEXT
+#, fuzzy
 msgid  "Start with center"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_END.STRING.TEXT
+#, fuzzy
 msgid  "End with center"
 msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-#, fuzzy
-msgid  "Define line styles"
-msgstr "Вказати стилі ліній"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Властивості"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9958,37 +8437,38 @@ msgstr "~Змінити..."
 msgid  "~Delete..."
 msgstr "В~идалити..."
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Load Line Styles"
-msgstr "Завантажити набір стилів ліній"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Save Line Styles"
 msgstr "Зберегти набір стилів ліній"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Start type"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "End type"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_NUM.STRING.TEXT
+#, fuzzy
 msgid  "Start number"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_NUM.STRING.TEXT
+#, fuzzy
 msgid  "End number"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Start length"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "End length"
 msgstr ""
 
@@ -10026,26 +8506,6 @@ msgstr "Завантажити набір кінців ліній"
 #, fuzzy
 msgid  "Save Arrow Styles"
 msgstr "Зберегти набір кінців ліній"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Лінія"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Тінь"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line Styles"
-msgstr "Стилі лінії"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Arrow Styles"
-msgstr "Стилі стрілок"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 #, fuzzy
@@ -10091,11 +8551,6 @@ msgstr "Си~мвол"
 #, fuzzy
 msgid  "Fill character"
 msgstr "Заповнювач"
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "Н~емає"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
 #, fuzzy
@@ -10162,41 +8617,6 @@ msgstr "Безперервно біжить"
 msgid  "Scroll Back and Forth"
 msgstr "Біжить вперед-назад"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Scroll In"
-msgstr "Рядок виїздить"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Direction"
-msgstr "Напрямок"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Top"
-msgstr "Вгору"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Left"
-msgstr "Ліворуч"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Right"
-msgstr "Праворуч"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Bottom"
-msgstr "Вниз"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Властивості"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "S~tart inside"
@@ -10227,20 +8647,10 @@ msgstr "Крок"
 msgid  "~Pixels"
 msgstr "~Точок"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "Затримка"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "~Автоматично"
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Текст"
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 #, fuzzy
@@ -10307,11 +8717,6 @@ msgstr "З~гори"
 msgid  "~Bottom"
 msgstr "З~низу"
 
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text anchor"
-msgstr "Прив'язка тексту"
-
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Full ~width"
@@ -10342,11 +8747,6 @@ msgstr "Позиція ~Y"
 msgid  "Base point"
 msgstr "Базова точка"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Розмір"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Wi~dth"
@@ -10362,20 +8762,10 @@ msgstr "~Висота"
 msgid  "~Keep ratio"
 msgstr "~Пропорційно"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "Захист"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Size"
 msgstr "~Розмір"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Adapt"
-msgstr "Узгодити"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
@@ -10387,60 +8777,20 @@ msgstr "~Підігнати текст у ширину"
 msgid  "Fit ~height to text"
 msgstr "Підігнати текст у ~висоту"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "Прив'язка"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Anchor"
 msgstr "~Прив'язка"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To paragraph"
-msgstr "До абзацу"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "As character"
 msgstr "Як символ"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To page"
-msgstr "До сторінки"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To frame"
-msgstr "До кадру"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~osition"
 msgstr "~Позиція"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "Згори"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "Згори"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "У центрі"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "Знизу"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -10457,11 +8807,6 @@ msgstr "Символ у центрі"
 msgid  "Bottom of character"
 msgstr "Символ знизу"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "Рядок згори"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -10471,11 +8816,6 @@ msgstr "Рядок у центрі"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "Рядок знизу"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Angle"
-msgstr "Кут"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
@@ -10516,11 +8856,6 @@ msgstr "Кут оберту"
 #, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "Нахил та радіус закруглення куту"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Corner radius"
-msgstr "Радіус закругленого кута"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
 #, fuzzy

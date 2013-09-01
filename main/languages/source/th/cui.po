@@ -63,29 +63,25 @@ msgstr "~หมวดหมู่"
 msgid  "Function"
 msgstr "ฟังก์ชัน"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-msgid  "Functions"
-msgstr "ฟังก์ชัน"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 msgid  "Shortcut keys"
-msgstr ""
+msgstr "คีย์ลัด"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.TXT_ACC_KEY.FIXEDTEXT.TEXT
 msgid  "~Keys"
-msgstr ""
+msgstr "คีย์"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_LOADACCELCONFIG.STRING.TEXT
 msgid  "Load Keyboard Configuration"
-msgstr ""
+msgstr "โหลดโครงแบบของคีย์บอร์ด"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_SAVEACCELCONFIG.STRING.TEXT
 msgid  "Save Keyboard Configuration"
-msgstr ""
+msgstr "บันทึกโครงแบบของคีย์บอร์ด"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.STRING.TEXT
 msgid  "Configuration (*.cfg)"
-msgstr ""
+msgstr "แฟ้มโครงแบบ  (*.cfg)"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.STRING.TEXT
 msgid  "My Macros"
@@ -101,7 +97,7 @@ msgstr "BASIC Macros"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_GROUP_STYLES.STRING.TEXT
 msgid  "Styles"
-msgstr ""
+msgstr "สไตล์"
 
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.TABDIALOG.TEXT
 msgid  "Customize"
@@ -111,14 +107,6 @@ msgstr "ปรับแต่ง"
 msgid  "Menus"
 msgstr "เมนู"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-msgid  "Keyboard"
-msgstr "แป้นพิมพ์"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-msgid  "Toolbars"
-msgstr "แถบเครื่องมือ"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 msgid  "Events"
 msgstr "เหตุการณ์"
@@ -126,14 +114,6 @@ msgstr "เหตุการณ์"
 #: customize/cfg.src#TEXT_MENU.#DEFINE.TEXT
 msgid  "Menu"
 msgstr "เมนู"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-msgid  "Begin a Group"
-msgstr "Begin a Group"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-msgid  "Rename..."
-msgstr "เปลี่ยนชื่อ..."
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 msgid  "Delete..."
@@ -143,10 +123,6 @@ msgstr "ลบ..."
 msgid  "Delete"
 msgstr "ลบ"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-msgid  "Move..."
-msgstr "ย้าย..."
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 msgid  "Restore Default Settings"
 msgstr "เรียกคืนการตั้งค่าปริยาย"
@@ -154,14 +130,6 @@ msgstr "เรียกคืนการตั้งค่าปริยาย
 #: customize/cfg.src#TEXT_DEFAULT_COMMAND.#DEFINE.TEXT
 msgid  "Restore Default Command"
 msgstr "เรียกคืนคำสั่งปริยาย"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-msgid  "Text only"
-msgstr "ข้อความเท่านั้น"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-msgid  "Toolbar Name"
-msgstr "ชื่อแถบเครื่องมือ"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 msgid  "Save In"
@@ -171,45 +139,13 @@ msgstr "บันทึกใน"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "%PRODUCTNAME %MODULENAME Menus"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "ใหม่..."
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Menu Content"
 msgstr "เนื้อหาเมนู"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-msgid  "Entries"
-msgstr "รายการ"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "เพิ่ม..."
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-msgid  "Modify"
-msgstr "เปลี่ยนแปลง"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr "Description"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 msgid  "Add Submenu..."
 msgstr "เพิ่มเมนูย่อย..."
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-msgid  "Icons Only"
-msgstr "ไอคอนเท่านั้น"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-msgid  "Icons & Text"
-msgstr "ไอคอนและข้อความ"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-msgid  "Change Icon..."
-msgstr "เปลี่ยนไอคอน..."
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 msgid  "Reset Icon"
@@ -218,10 +154,6 @@ msgstr "กำหนดไอคอนใหม่"
 #: customize/cfg.src#RID_SVXSTR_NEW_MENU.STRING.TEXT
 msgid  "New Menu %n"
 msgstr "เมนูใหม่ %n"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-msgid  "New Toolbar %n"
-msgstr "แถบเครื่องมือใหม่ %n"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 msgid  "Move Menu"
@@ -241,7 +173,7 @@ msgstr "To add a command to a menu, select the category and then the command. Yo
 
 #: customize/cfg.src#MD_MENU_ORGANISER.MODALDIALOG.TEXT
 msgid  "New Menu"
-msgstr ""
+msgstr "เมนูใหม่"
 
 #: customize/cfg.src#MD_MENU_ORGANISER.TXT_MENU_NAME.FIXEDTEXT.TEXT
 msgid  "Menu name"
@@ -251,65 +183,41 @@ msgstr "ชื่อเมนู"
 msgid  "Menu position"
 msgstr "ตำแหน่งเมนู"
 
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "ชื่อ"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-msgid  "Change Icon"
-msgstr "เปลี่ยนไอคอน..."
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-msgid  "Icons"
-msgstr "ไอคอน"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "Import..."
-msgstr "นำเข้า..."
-
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "หมายเหตุ:\nสัญรูป (icon) ควรมีขนาด 16x16 จุดภาพเพื่อให้ได้คุณภาพที่ดีที่สุด สัญรูปขนาดอื่นจะถูกย่อหรือขยายโดยอัตโนมัติ"
 
 #: customize/cfg.src#MD_ICONCHANGE.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr ""
+msgstr "ไม่สามารถนำเข้าไฟล์ที่แสดงรายการข้างล่าง\nไม่สามารถเข้าใจรูปแบบไฟล์"
 
 #: customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.STRING.TEXT
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
-msgstr ""
+msgstr "ไม่สามารถนำเข้าไฟล์ที่แสดงรายการข้างล่าง ไม่สามารถเข้าใจรูปแบบไฟล์"
 
 #: customize/cfg.src#RID_SVXSTR_DELETE_ICON_CONFIRM.STRING.TEXT
 msgid  "Are you sure to delete the image?"
-msgstr ""
+msgstr "แน่ใจว่าต้องการลบภาพ?"
 
 #: customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.STRING.TEXT
 msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "สัญรูป %ICONNAME มีอยู่แล้วในรายการภาพ\nต้องการแทนที่สัญรูปที่มีอยู่?"
 
 #: customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.STRING.TEXT
 msgid  "Confirm Icon Replacement"
-msgstr ""
+msgstr "ยืนยันการแทนที่สัญรูป"
 
 #: customize/cfg.src#RID_SVXSTR_YESTOALL.STRING.TEXT
 msgid  "Yes to All"
-msgstr ""
+msgstr "ตอบใช่ทั้งหมด"
 
 #: customize/cfg.src#RID_SVXSTR_PRODUCTNAME_TOOLBARS.STRING.TEXT
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "%PRODUCTNAME %MODULENAME Toolbars"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-msgid  "Toolbar"
-msgstr "แถบเครื่องมือ"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-msgid  "Toolbar Content"
-msgstr "เนื้อหาในแถบเครื่องมือ"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 msgid  "Commands"
@@ -351,25 +259,17 @@ msgstr "~New name"
 msgid  "Rename Menu"
 msgstr "Rename Menu"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-msgid  "Rename Toolbar"
-msgstr "Rename Toolbar"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
-msgstr ""
+msgstr "ขึ้น"
 
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
-msgstr ""
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "เหตุการณ์"
+msgstr "ลง"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
-msgstr ""
+msgstr "การกระทำที่มอบหมายไว้"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.TXT_SAVEIN.FIXEDTEXT.TEXT
 msgid  "Save In"
@@ -377,11 +277,11 @@ msgstr "บันทึกใน"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.FT_ASSIGN.FIXEDTEXT.TEXT
 msgid  "Assign:"
-msgstr ""
+msgstr "มอบหมาย:"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.PB_ASSIGN.PUSHBUTTON.TEXT
 msgid  "M~acro..."
-msgstr ""
+msgstr "แมโคร..."
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.PB_DELETE.PUSHBUTTON.TEXT
 msgid  "~Remove"
@@ -389,27 +289,23 @@ msgstr "เ~อาออก"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.TABPAGE.TEXT
 msgid  "Assign action"
-msgstr ""
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "เหตุการณ์"
+msgstr "มอบหมายการกระทำ"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
-msgstr ""
+msgstr "การกระทำที่มอบหมายไว้"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.FT_ASSIGN.FIXEDTEXT.TEXT
 msgid  "Assign:"
-msgstr ""
+msgstr "มอบหมาย:"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.PB_ASSIGN.PUSHBUTTON.TEXT
 msgid  "M~acro..."
-msgstr ""
+msgstr "แมโคร..."
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.PB_ASSIGN_COMPONENT.PUSHBUTTON.TEXT
 msgid  "Com~ponent..."
-msgstr ""
+msgstr "ส่วนประกอบ..."
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.PB_DELETE.PUSHBUTTON.TEXT
 msgid  "~Remove"
@@ -417,15 +313,11 @@ msgstr "เ~อาออก"
 
 #: customize/macropg.src#RID_SVXDLG_ASSIGNCOMPONENT.MODALDIALOG.TEXT
 msgid  "Assign Component"
-msgstr ""
+msgstr "กำหนดองค์ประกอบ"
 
 #: customize/macropg.src#RID_SVXDLG_ASSIGNCOMPONENT.FT_METHOD.FIXEDTEXT.TEXT
 msgid  "Component method name"
-msgstr ""
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-msgid  "Start Application"
-msgstr "เริ่มแอพพลิเคชัน "
+msgstr "ชื่อของเมท็อดองค์ประกอบ"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 msgid  "Close Application"
@@ -437,11 +329,11 @@ msgstr "เปิดเอกสาร"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEDOC.STRING.TEXT
 msgid  "Document closed"
-msgstr ""
+msgstr "ปิดเอกสารแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_PREPARECLOSEDOC.STRING.TEXT
 msgid  "Document is going to be closed"
-msgstr ""
+msgstr "กำลังจะปิดเอกสาร"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_OPENDOC.STRING.TEXT
 msgid  "Open Document"
@@ -481,31 +373,27 @@ msgstr "สถานะ'เปลี่ยนแปลง' ถูกเปลี
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_MAILMERGE.STRING.TEXT
 msgid  "Printing of form letters started"
-msgstr ""
+msgstr "การพิมพ์จดหมายฟอร์มเริ่มขึ้น"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_MAILMERGE_END.STRING.TEXT
 msgid  "Printing of form letters finished"
-msgstr ""
+msgstr "การพิมพ์จดหมายฟอร์มเสร็จสิ้น"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FIELDMERGE.STRING.TEXT
 msgid  "Merging of form fields started"
-msgstr ""
+msgstr "เริ่มการควบรวมฟิลด์ของฟอร์ม"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FIELDMERGE_FINISHED.STRING.TEXT
 msgid  "Merging of form fields finished"
-msgstr ""
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-msgid  "Changing the page count"
-msgstr "Changing the page count"
+msgstr "การควบรวมฟิลด์ของฟอร์มเสร็จสิ้น"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 msgid  "Loaded a sub component"
-msgstr ""
+msgstr "บรรจุองค์ประกอบย่อยแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_CLOSED.STRING.TEXT
 msgid  "Closed a sub component"
-msgstr ""
+msgstr "ปิดองค์ประกอบย่อยแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEPARAMETER.STRING.TEXT
 msgid  "Fill parameters"
@@ -513,35 +401,15 @@ msgstr "เติมพารามิเตอร์"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_ACTIONPERFORMED.STRING.TEXT
 msgid  "Execute action"
-msgstr ""
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "หลังจากการอัพเดต"
+msgstr "ดำเนินการระทำ"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
 msgstr "ก่อนการอัพเดต"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "ก่อนบันทึกการกระทำ"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "หลังบันทึกการกระทำ"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
 msgstr "ยืนยันการลบ"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "เกิดข้อผิดพลาด"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "ขณะที่ปรับเปลี่ยน"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
@@ -554,14 +422,6 @@ msgstr "When losing focus"
 #: customize/macropg.src#RID_SVXSTR_EVENT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
 msgstr "สถานะรายการเปลี่ยน"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "กดคีย์"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "ปล่อยคีย์"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 msgid  "When loading"
@@ -599,14 +459,6 @@ msgstr "กดปุ่มเมาส์"
 msgid  "Mouse button released"
 msgstr "ปล่อยปุ่มเมาส์"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "ก่อนเปลี่ยนระเบียน"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "หลังจากเปลี่ยนระเบียน"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 msgid  "After resetting"
 msgstr "หลังการตั้งค่าใหม่"
@@ -617,15 +469,7 @@ msgstr "Prior to reset"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEACTIONPERFORMED.STRING.TEXT
 msgid  "Approve action"
-msgstr ""
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
-msgstr "ก่อนการเสนอ"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "ข้อความมีการเปลี่ยนแปลง"
+msgstr "อนุมัติการกระทำ"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
@@ -635,89 +479,85 @@ msgstr "ก่อนยกเลิกการโหลด"
 msgid  "When unloading"
 msgstr "ขณะยกเลิกการโหลด"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "เปลี่ยน"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 msgid  "Document created"
-msgstr ""
+msgstr "สร้างเอกสารแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADDOCFINISHED.STRING.TEXT
 msgid  "Document loading finished"
-msgstr ""
+msgstr "บรรจุเอกสารเสร็จสิ้น"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEDOCFAILED.STRING.TEXT
 msgid  "Saving of document failed"
-msgstr ""
+msgstr "การบันทึกเอกสารล้มเหลว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEASDOCFAILED.STRING.TEXT
 msgid  "'Save as' has failed"
-msgstr ""
+msgstr "'บันทึกเป็น' ล้มเหลว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOC.STRING.TEXT
 msgid  "Storing or exporting copy of document"
-msgstr ""
+msgstr "กำลังเก็บหรือส่งออกสำเนาของเอกสาร"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOCDONE.STRING.TEXT
 msgid  "Document copy has been created"
-msgstr ""
+msgstr "สร้างสำเนาของเอกสารแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOCFAILED.STRING.TEXT
 msgid  "Creating of document copy failed"
-msgstr ""
+msgstr "การสร้างสำเนาเอกสารไม่สำเร็จ"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_VIEWCREATED.STRING.TEXT
 msgid  "View created"
-msgstr ""
+msgstr "สร้างทรรศนะแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_PREPARECLOSEVIEW.STRING.TEXT
 msgid  "View is going to be closed"
-msgstr ""
+msgstr "กำลังจะปิดทรรศนะ (View)"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEVIEW.STRING.TEXT
 msgid  "View closed"
-msgstr ""
+msgstr "ปิดทรรศนะแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_TITLECHANGED.STRING.TEXT
 msgid  "Document title changed"
-msgstr ""
+msgstr "ชื่อเอกสารเปลี่ยนแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_MODECHANGED.STRING.TEXT
 msgid  "Document mode changed"
-msgstr ""
+msgstr "แบบวิธี (mode) ของเอกสารเปลี่ยนแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_VISAREACHANGED.STRING.TEXT
 msgid  "Visible area changed"
-msgstr ""
+msgstr "พื้นที่มองเห็นเปลี่ยนแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_STORAGECHANGED.STRING.TEXT
 msgid  "Document has got a new storage"
-msgstr ""
+msgstr "เอกสารมีที่จัดเก็บใหม่"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LAYOUT_FINISHED.STRING.TEXT
 msgid  "Document layout finished"
-msgstr ""
+msgstr "การวางผัง (layout) เอกสารเสร็จสิ้น"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SELECTIONCHANGED.STRING.TEXT
 msgid  "Selection changed"
-msgstr ""
+msgstr "การเลือกเปลี่ยนแปลงแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_DOUBLECLICK.STRING.TEXT
 msgid  "Double click"
-msgstr ""
+msgstr "ดับเบิ้ลคลิ๊ก"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_RIGHTCLICK.STRING.TEXT
 msgid  "Right click"
-msgstr ""
+msgstr "คลิ๊กขวา"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CALCULATE.STRING.TEXT
 msgid  "Formulas calculated"
-msgstr ""
+msgstr "คำนวณสูตรแล้ว"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONTENTCHANGED.STRING.TEXT
 msgid  "Content changed"
-msgstr ""
+msgstr "เนื้อหาเปลี่ยนแล้ว"
 
 #: customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#DEFINE.TEXT
 msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
@@ -739,18 +579,6 @@ msgstr "~หมวดหมู่"
 msgid  "Commands"
 msgstr "คำสั่ง"
 
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "เพิ่ม"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "Run"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr "ปิด"
-
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
 msgstr "To add a command to a menu, select the category and then the command. You can also drag the command to the Commands list of the Menus tab page in the Customize dialog."
@@ -761,7 +589,7 @@ msgstr "BASIC Macros"
 
 #: customize/selector.src#RID_DLG_SCRIPTSELECTOR.MODELESSDIALOG.TEXT
 msgid  "Macro Selector"
-msgstr ""
+msgstr "ตัวเลือกแมโคร"
 
 #: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_CATEGORIES.FIXEDTEXT.TEXT
 msgid  "Library"
@@ -771,17 +599,45 @@ msgstr "ไลบรารี"
 msgid  "My Macros"
 msgstr "แมโครของฉัน"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-msgid  "Macro name"
-msgstr "ชื่อแมโคร"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "คำอธิบาย"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
-msgstr ""
+msgstr "เกี่ยวกับ %FULLPRODUCTNAME"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr "ใบอนุญาต"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr "%OOOVENDOR"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr "ประชาคมโอเพนออฟฟิศเป็นผู้สร้างสรรค์ผลิตภัณฑ์นี้"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr "%OOOVENDOR เป็นผู้สร้างสรรค์ผลิตภัณฑ์นี้โดยมีพื้นฐานจาก Apache OpenOffice"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr "ประชาคมโอเพนออฟฟิศขอบคุณสมาชิกที่มีส่วนช่วยทุกคน โดยเฉพาะผู้ที่ได้รับการกล่าวถึงที่"
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+msgid  "Readme, License and Notice"
+msgstr "โปรดอ่าน (Readme), ใบอนุญาตและคำบอกกล่าว"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+msgid  "Readme"
+msgstr "โปรดอ่าน (Readme)"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+msgid  "License"
+msgstr "ใบอนุญาต"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+msgid  "Notice"
+msgstr "คำบอกกล่าว"
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
 #, fuzzy
@@ -810,107 +666,116 @@ msgstr "~ลบ"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.MODALDIALOG.TEXT
 msgid  "Color Picker"
-msgstr ""
+msgstr "ตัวเลือกสี"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.PB_PICKER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Pick a color from the document"
-msgstr ""
+msgstr "เลือกสีหนึ่งจากเอกสาร"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_RGB.FIXEDLINE.TEXT
 msgid  "RGB"
-msgstr ""
+msgstr "RGB"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_RED.FIXEDTEXT.TEXT
 msgid  "~Red"
-msgstr ""
+msgstr "แดง"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_GREEN.FIXEDTEXT.TEXT
 msgid  "~Green"
-msgstr ""
+msgstr "เขียว"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BLUE.FIXEDTEXT.TEXT
 msgid  "~Blue"
-msgstr ""
+msgstr "น้ำเงิน"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HEX.FIXEDTEXT.TEXT
 msgid  "Hex ~#"
-msgstr ""
+msgstr "ฐานสิบหก #"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_HSB.FIXEDLINE.TEXT
 msgid  "HSB"
-msgstr ""
+msgstr "HSB"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HUE.FIXEDTEXT.TEXT
 msgid  "H~ue"
-msgstr ""
+msgstr "สีสัน"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_SATURATION.FIXEDTEXT.TEXT
 msgid  "~Saturation"
-msgstr ""
+msgstr "ความอิ่มตัวสี"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BRIGHTNESS.FIXEDTEXT.TEXT
 msgid  "Bright~ness"
-msgstr ""
+msgstr "ความสว่าง"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_CMYK.FIXEDLINE.TEXT
 msgid  "CMYK"
-msgstr ""
+msgstr "CMYK"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_CYAN.FIXEDTEXT.TEXT
 msgid  "~Cyan"
-msgstr ""
+msgstr "สีฟ้าอมเขียว (Cyan)"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_MAGENTA.FIXEDTEXT.TEXT
 msgid  "~Magenta"
-msgstr ""
+msgstr "สีแดงอมม่วง (Magenta)"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_YELLOW.FIXEDTEXT.TEXT
 msgid  "~Yellow"
-msgstr ""
+msgstr "สีเหลือง"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_KEY.FIXEDTEXT.TEXT
 msgid  "~Key"
-msgstr ""
+msgstr "คีย์"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Origi~nal"
 msgstr "ต้น~ฉบับ"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_NEWWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Word"
 msgstr "~คำ"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_SUGGESTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Suggestions"
 msgstr "~คำแนะนำ"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNORE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Ignore"
 msgstr "เ~พิกเฉย"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNOREALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Always I~gnore"
 msgstr "เพิ~กเฉยทั้งหมด"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Replace"
 msgstr "แ~ทนที่"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGEALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Always R~eplace"
 msgstr "แท~นที่ทุกครั้ง"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_OPTIONS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Options..."
 msgstr "ตัวเลือก..."
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_SPL_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
 msgstr "~ปิด"
 
 #: dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.MODALDIALOG.TEXT
 msgid  "Properties"
-msgstr ""
+msgstr "คุณสมบัติ"
 
 #: dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -934,12 +799,7 @@ msgstr "Alternative ~text!!!!"
 
 #: dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "~Description"
-msgstr ""
-
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "ชื่อ"
+msgstr "คำบรรยาย"
 
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -948,7 +808,7 @@ msgstr "~ชื่อ"
 
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.MODALDIALOG.TEXT
 msgid  "Description"
-msgstr ""
+msgstr "คำบรรยาย"
 
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -957,12 +817,7 @@ msgstr "ชื่อเรื่อง"
 
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FIXEDTEXT.TEXT
 msgid  "~Description"
-msgstr ""
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Search"
-msgstr "การค้นหาระเบียน"
+msgstr "คำบรรยาย"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 #, fuzzy
@@ -1044,11 +899,6 @@ msgstr "Wildcard expression"
 msgid  "Regular expression"
 msgstr "Regular expression"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "การค้นหาสิ่งที่คล้ายกัน"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "..."
@@ -1069,11 +919,6 @@ msgstr "เสียงคล้าย (ภาษาญี่ปุ่น)"
 msgid  "State"
 msgstr "State"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Record :"
-msgstr "ระเบียน:"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Search"
@@ -1091,27 +936,27 @@ msgstr "~วิธีใช้"
 
 #: dialogs/fmsearch.src#RID_STR_SEARCH_ANYWHERE.STRING.TEXT
 msgid  "anywhere in the field"
-msgstr ""
+msgstr "ที่ใดก็ได้ในเขตข้อมูล"
 
 #: dialogs/fmsearch.src#RID_STR_SEARCH_BEGINNING.STRING.TEXT
 msgid  "beginning of field"
-msgstr ""
+msgstr "จุดเริ่มต้นของเขตข้อมูล"
 
 #: dialogs/fmsearch.src#RID_STR_SEARCH_END.STRING.TEXT
 msgid  "end of field"
-msgstr ""
+msgstr "จุดสุดท้ายของเขตข้อมูล"
 
 #: dialogs/fmsearch.src#RID_STR_SEARCH_WHOLE.STRING.TEXT
 msgid  "entire field"
-msgstr ""
+msgstr "เขตข้อมูลทั้งหมด"
 
 #: dialogs/fmsearch.src#RID_STR_FROM_TOP.STRING.TEXT
 msgid  "From top"
-msgstr ""
+msgstr "จากบนสุด"
 
 #: dialogs/fmsearch.src#RID_STR_FROM_BOTTOM.STRING.TEXT
 msgid  "From bottom"
-msgstr ""
+msgstr "จากล่างสุด"
 
 #: dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ERRORBOX.MESSAGE
 #, fuzzy
@@ -1125,11 +970,11 @@ msgstr "เกิดข้อผิดพลาดที่ไม่รู้จ
 
 #: dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.STRING.TEXT
 msgid  "Overflow, search continued at the beginning"
-msgstr ""
+msgstr "เกิดการล้น ค้นหาต่อที่จุดเริ่มต้น"
 
 #: dialogs/fmsearch.src#RID_STR_OVERFLOW_BACKWARD.STRING.TEXT
 msgid  "Overflow, search continued at the end"
-msgstr ""
+msgstr "เกิดการล้น ค้นหาต่อที่ปลาย"
 
 #: dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.STRING.TEXT
 #, fuzzy
@@ -1137,7 +982,6 @@ msgid  "counting records"
 msgstr "กำลังนับระเบียน"
 
 #: dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TABDIALOG.TEXT
-#, fuzzy
 msgid  "Properties of "
 msgstr "คุณสมบัติของ "
 
@@ -1155,21 +999,6 @@ msgstr "แฟ้ม"
 #, fuzzy
 msgid  "Type:"
 msgstr "ชนิด:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "ตำแหน่ง:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Contents:"
-msgstr "เนื้อหา:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "เปลี่ยนแปลง:"
 
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1196,16 +1025,6 @@ msgstr "เพิ่~มทั้งหมด"
 msgid  "Pr~eview"
 msgstr "แสด~งตัวอย่าง"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Enter Title"
@@ -1216,25 +1035,10 @@ msgstr "ใส่ชื่อ"
 msgid  "Title"
 msgstr "ชื่อเรื่อง"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Find"
-msgstr "หา"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Directory"
-msgstr "ไดเรกทอรี"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "File type"
 msgstr "ชนิดแฟ้ม"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "เริ่มใช้"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 #, fuzzy
@@ -1336,16 +1140,6 @@ msgstr "Aging!!!!"
 msgid  "Aging degree"
 msgstr "Aging degree"
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Posterize"
-msgstr "ทำเป็นโปสเตอร์!!!!"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Poster colors"
-msgstr "สีโปสเตอร์"
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Relief"
@@ -1406,11 +1200,6 @@ msgstr "Han~ja"
 msgid  "Ha~nja"
 msgstr "Ha~nja"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Conversion"
-msgstr "การแปลง"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Hangul ~only"
@@ -1425,11 +1214,6 @@ msgstr "Hanja onl~y"
 #, fuzzy
 msgid  "Replace b~y character"
 msgstr "แทนที่~ด้วยอักขระ"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-#, fuzzy
-msgid  "Hangul"
-msgstr "Hangul"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 #, fuzzy
@@ -1466,11 +1250,6 @@ msgstr "แสดงรายการที่ใช้ล่าสุดเป
 msgid  "Replace all unique entries automatically"
 msgstr "แทนที่ทุกรายการที่เหมือนกันโดยอัตโนมัติ"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "ใหม่"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Edit..."
@@ -1481,65 +1260,25 @@ msgstr "แก้ไข..."
 msgid  "Delete"
 msgstr "ลบ"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "พจนานุกรมใหม่"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "พจนานุกรม"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Name"
 msgstr "~ชื่อ"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "Edit Custom Dictionary"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 #, fuzzy
 msgid  "[Enter text here]"
 msgstr "[ใส่ข้อความที่นี่]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Book"
-msgstr "หนังสือ"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Original"
 msgstr "ต้นฉบับ"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Suggestions (max. 8)"
-msgstr "คำแนะนำ (มากสุด 8)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "ใหม่"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
 msgid  "Close"
 msgstr "ปิด"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Target in Document"
-msgstr "เป้าหมายในเอกสาร"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "เริ่มใช้!!!!"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1558,7 +1297,7 @@ msgstr "ไม่สามารถเปิดเอกสารได้!!!!"
 
 #: dialogs/hlmarkwn.src#STR_MARK_TREE.STRING.TEXT
 msgid  "Mark Tree"
-msgstr ""
+msgstr "ทำเครื่องหมายที่ผังต้นไม้"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.TABPAGE.TEXT
 #, fuzzy
@@ -1635,11 +1374,6 @@ msgstr "แ~บบฟอร์ม"
 msgid  "Text"
 msgstr "ข้อความ"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Button"
-msgstr "ปุ่ม"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Te~xt"
@@ -1654,11 +1388,6 @@ msgstr "ชื่~อ"
 #, fuzzy
 msgid  "Events"
 msgstr "เหตุการณ์"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mail & news"
-msgstr "เมลและข่าวสาร"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1685,11 +1414,6 @@ msgstr "~ชื่อเรื่อง"
 msgid  "Data Sources..."
 msgstr "แหล่งข้อมูล..."
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "เอกสาร"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Path"
@@ -1700,30 +1424,15 @@ msgstr "~พาธ"
 msgid  "Open File"
 msgstr "เปิดแฟ้ม"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Target in document"
-msgstr "เป้าหมายในเอกสาร"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Targ~et"
 msgstr "เป้า~หมาย"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "URL"
-msgstr "URL"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Test text"
 msgstr "ข้อความทดสอบ"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New document"
-msgstr "เอกสารใหม่"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1749,11 +1458,6 @@ msgstr "~ชนิดแฟ้ม"
 #, fuzzy
 msgid  "Select Path"
 msgstr "เลือกพาธ"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "เริ่มใช้"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 #, fuzzy
@@ -1790,11 +1494,6 @@ msgstr "อินเทอร์เน็ต"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "นี้คือที่ที่คุณสร้างการเชื่อมโยงกับเว็บเพจ, การเชื่อมต่อเซิร์ฟเวอร์ FTP หรือ Telnet "
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-#, fuzzy
-msgid  "Mail & News"
-msgstr "เมลและข่าวสาร"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 #, fuzzy
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
@@ -1802,12 +1501,7 @@ msgstr "คุณสามารถสร้างไฮเพอร์ลิง
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
-msgstr ""
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-#, fuzzy
-msgid  "New Document"
-msgstr "เอกสารใหม่"
+msgstr "นี่เป็นที่ซึ่งคุณสร้างการเชื่อมโยงหลายมิติ (hyperlink) ไปยังเอกสารที่มีอยู่หรือไปยังเป้าหมายภายในเอกสาร"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 #, fuzzy
@@ -1836,11 +1530,11 @@ msgstr "~คำ"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CUT.OKBUTTON.TEXT
 msgid  "H~yphenate"
-msgstr ""
+msgstr "แบ่งบรรทัดด้วยการใส่ยติภังค์ (Hyphenate)"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CONTINUE.PUSHBUTTON.TEXT
 msgid  "~Skip"
-msgstr ""
+msgstr "ข้าม"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1849,7 +1543,7 @@ msgstr "เ~อาออก"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_ALL.PUSHBUTTON.TEXT
 msgid  "Hyphenate ~All"
-msgstr ""
+msgstr "แบ่งบรรทัดด้วยการใส่ยติภังค์ (Hyphenate) ทั้งหมด"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CANCEL.CANCELBUTTON.TEXT
 #, fuzzy
@@ -1876,14 +1570,9 @@ msgstr "~ก่อน"
 msgid  "A~fter"
 msgstr "~หลังจาก"
 
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "ตำแหน่ง"
-
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 msgid  "~Number"
-msgstr ""
+msgstr "ตัวเลข"
 
 #: dialogs/insrc.src#DLG_INS_ROW_COL.STR_ROW.STRING.TEXT
 #, fuzzy
@@ -1945,11 +1634,6 @@ msgstr "แฟ้ม"
 msgid  "Select Archives"
 msgstr "เลือกแฟ้มจัดเก็บ"
 
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-#, fuzzy
-msgid  "Archives"
-msgstr "แฟ้มจัดเก็บ"
-
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 #, fuzzy
 msgid  "The file %1 already exists."
@@ -1957,72 +1641,72 @@ msgstr "แฟ้ม %1 มีอยู่แล้ว"
 
 #: dialogs/newtabledlg.src#RID_SVX_NEWTABLE_DLG.MODALDIALOG.TEXT
 msgid  "Insert Table"
-msgstr ""
+msgstr "แทรกตาราง"
 
 #: dialogs/newtabledlg.src#RID_SVX_NEWTABLE_DLG.FT_COLUMNS.FIXEDTEXT.TEXT
 msgid  "Number of columns:"
-msgstr ""
+msgstr "จำนวนสดมภ์:"
 
 #: dialogs/newtabledlg.src#RID_SVX_NEWTABLE_DLG.FT_ROWS.FIXEDTEXT.TEXT
 msgid  "Number of rows:"
-msgstr ""
+msgstr "จำนวนแถว:"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.MODALDIALOG.TEXT
 msgid  "Set Password"
-msgstr ""
+msgstr "ตั้งรหัสผ่าน"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_ENCRYPTION.FIXEDLINE.TEXT
 msgid  "File encryption password"
-msgstr ""
+msgstr "รหัสผ่านในการเข้ารหัสไฟล์"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_TO_OPEN.FIXEDTEXT.TEXT
 msgid  "~Enter password to open"
-msgstr ""
+msgstr "ป้อนรหัสผ่านเพื่อเปิด"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_REENTER_PASSWD_TO_OPEN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Confirm password"
-msgstr ""
+msgstr "ยืนยันรหัสผ่าน"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
-msgstr ""
+msgstr "ข้อสังเกตุ: หลังจากที่ตั้งรหัสผ่านแล้ว เอกสารจะเปิดได้เฉพาะด้วย "
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FL_FILE_SHARING_OPTIONS.FIXEDLINE.TEXT
 msgid  "File sharing password"
-msgstr ""
+msgstr "รหัสผ่านสำหรับไฟล์ที่ใช้ร่วมกัน (File sharing)"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.CB_OPEN_READONLY.CHECKBOX.TEXT
 msgid  "Open file read-only"
-msgstr ""
+msgstr "เปิดไฟล์อ่านอย่างเดียว"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_TO_MODIFY.FIXEDTEXT.TEXT
 msgid  "Enter password to allow editing"
-msgstr ""
+msgstr "ป้อนรหัสผ่านเพื่อให้สามารถแก้ไขได้"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_PASSWD_MUST_BE_CONFIRMED.STRING.TEXT
 msgid  "Password must be confirmed"
-msgstr ""
+msgstr "รหัสผ่านต้องได้รับการยืนยัน"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_MORE_OPTIONS.STRING.TEXT
 msgid  "More ~Options"
-msgstr ""
+msgstr "ตัวเลือกมากขึ้น"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_FEWER_OPTIONS.STRING.TEXT
 msgid  "Fewer ~Options"
-msgstr ""
+msgstr "ตัวเลือกน้อยลง"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_ONE_PASSWORD_MISMATCH.STRING.TEXT
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "การรหัสผ่านที่ยืนยันไม่ตรงกับรหัสผ่านครั้งแรก ตั้งรหัสผ่านใหม่โดยป้อนรหัสผ่านเดียวกันในกล่องข้อความทั้งคู่"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_TWO_PASSWORDS_MISMATCH.STRING.TEXT
 msgid  "The confirmation passwords did not match the original passwords. Set the passwords again."
-msgstr ""
+msgstr "การรหัสผ่านที่ยืนยันไม่ตรงกับรหัสผ่านครั้งแรก ตั้งรหัสผ่านใหม่"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_INVALID_STATE_FOR_OK_BUTTON.STRING.TEXT
 msgid  "Please enter a password to open or to modify, or check the open read-only option to continue."
-msgstr ""
+msgstr "โปรดป้อนรหัสผ่านเพื่อเปิดหรือแก้ไข หรือทำเครื่องหมายที่ตัวเลือกอ่านอย่างเดียวเพื่อทำต่อ"
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.MODALDIALOG.TEXT
 #, fuzzy
@@ -2030,7 +1714,6 @@ msgid  "Note"
 msgstr "บันทึกย่อ"
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_LASTEDITLABEL.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Author"
 msgstr "~ผู้เขียน"
 
@@ -2038,11 +1721,6 @@ msgstr "~ผู้เขียน"
 #, fuzzy
 msgid  "~Text"
 msgstr "~ข้อความ"
-
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "เนื้อหา"
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2061,7 +1739,7 @@ msgstr "แทรกบันทึกย่อ"
 
 #: dialogs/scriptdlg.src#RID_DLG_SCRIPTORGANIZER.MODALDIALOG.TEXT
 msgid  "%MACROLANG Macros"
-msgstr ""
+msgstr "แมคโคร %MACROLANG"
 
 #: dialogs/scriptdlg.src#RID_DLG_SCRIPTORGANIZER.SF_TXT_SCRIPTS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2118,20 +1796,10 @@ msgstr "สร้างไลบรารี"
 msgid  "Enter the name for the new library."
 msgstr "ใส่ชื่อใหม่สำหรับไลบรารีใหม่"
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-#, fuzzy
-msgid  "Create Macro"
-msgstr "สร้างแมโคร"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 #, fuzzy
 msgid  "Enter the name for the new macro."
 msgstr "ใส่ชื่อสำหรับแมโครใหม่"
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "เปลี่ยนชื่อ"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 #, fuzzy
@@ -2178,11 +1846,6 @@ msgstr "มีชื่อวัตถุที่เหมือนกันน
 msgid  " You do not have permission to create this object."
 msgstr "คุณไม่มีสิทธิ์ในการสร้างวัตถุนี้"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Creating Object"
-msgstr "ผิดพลาดในการสร้างวัตถุ"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 #, fuzzy
 msgid  "The object could not be renamed."
@@ -2192,11 +1855,6 @@ msgstr "ไม่สามารถเปลี่ยนชื่อวัตถ
 #, fuzzy
 msgid  " You do not have permission to rename this object."
 msgstr "คุณไม่มีสิทธิ์ในการเปลี่ยนชื่อวัตถุนี้"
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Renaming Object"
-msgstr "ผิดพลาดในการเปลี่ยนชื่อวัตถุ"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 #, fuzzy
@@ -2243,14 +1901,9 @@ msgstr "A Scripting Framework error occurred while running the %LANGUAGENAME scr
 msgid  "Type:"
 msgstr "ชนิด:"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Message:"
-msgstr "ข้อความ:"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 msgid  "Format Cells"
-msgstr ""
+msgstr "จัดรูปแบบช่อง"
 
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
 #, fuzzy
@@ -2262,19 +1915,9 @@ msgstr "แบบอักษร"
 msgid  "Font Effects"
 msgstr "อักษรศิลป์!!!!"
 
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "ขอบ"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "พื้นหลัง"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 msgid  "Return"
-msgstr ""
+msgstr "ย้อนกลับ"
 
 #: dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2293,7 +1936,7 @@ msgstr "สะกดคำ: "
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_LANGUAGE.FIXEDTEXT.TEXT
 msgid  "Text languag~e"
-msgstr ""
+msgstr "ภาษาของข้อความ"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_NOTINDICT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2307,7 +1950,7 @@ msgstr "คำแ~นะนำ"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.CB_CHECK_GRAMMAR.CHECKBOX.TEXT
 msgid  "Check ~grammar"
-msgstr ""
+msgstr "ตรวจสอบไวยากรณ์"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2341,7 +1984,7 @@ msgstr "เปลี่ยนทั้งห~มด"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_EXPLAIN.PUSHBUTTON.TEXT
 msgid  "~Explain..."
-msgstr ""
+msgstr "อธิบาย..."
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_AUTOCORR.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2368,50 +2011,45 @@ msgstr "~ปิด"
 msgid  "Resu~me"
 msgstr "ทำ~ต่อไป"
 
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-#, fuzzy
-msgid  "(no suggestions)"
-msgstr "(ไม่มีคำแนะนำ)"
-
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
-msgstr ""
+msgstr "การสะกดคำ: $LANGUAGE ($LOCATION)"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR.STRING.TEXT
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION)"
-msgstr ""
+msgstr "การสะกดคำและไวยากรณ์: $LANGUAGE ($LOCATION)"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR_VENDORNAME.STRING.TEXT
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION) [$VendorName]"
-msgstr ""
+msgstr "การสะกดคำและไวยากรณ์: $LANGUAGE ($LOCATION) [$VendorName]"
 
 #: dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.MODALDIALOG.TEXT
 msgid  "Split Cells"
-msgstr ""
+msgstr "แยกเซลล์"
 
 #: dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FT_COUNT.FIXEDTEXT.TEXT
 msgid  "~Split cell into"
-msgstr ""
+msgstr "แยกเซลล์ออกเป็น"
 
 #: dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_COUNT.FIXEDLINE.TEXT
 msgid  "Split"
-msgstr ""
+msgstr "แยก"
 
 #: dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_HORZ.IMAGERADIOBUTTON.TEXT
 msgid  "H~orizontally"
-msgstr ""
+msgstr "ในแนวนอน"
 
 #: dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.CB_PROP.CHECKBOX.TEXT
 msgid  "~Into equal proportions"
-msgstr ""
+msgstr "ออกเป็นส่วนละเท่าๆ กัน"
 
 #: dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_VERT.IMAGERADIOBUTTON.TEXT
 msgid  "~Vertically"
-msgstr ""
+msgstr "ในแนวตั้ง"
 
 #: dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_DIR.FIXEDLINE.TEXT
 msgid  "Direction"
-msgstr ""
+msgstr "ทิศทาง"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.TABDIALOG.TEXT
 #, fuzzy
@@ -2428,20 +2066,14 @@ msgstr "แบบอักษร"
 msgid  "Font Effects"
 msgstr "อักษรศิลป์!!!!"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "ตำแหน่ง"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Asian Layout"
 msgstr "การจัดเรียงแบบเอเชียตะวันออก"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Indents & Spacing"
-msgstr "ระยะเยื้องและระยะห่าง!!!!"
+msgstr "ระยะเยื้องและระยะห่าง"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
@@ -2458,25 +2090,10 @@ msgstr "การไหลของข้อความ"
 msgid  "Asian Typography"
 msgstr "การเรียงพิมพ์แบบเอเชียตะวันออก"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "พื้นหลัง"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Attributes"
-msgstr "คุณลักษณะ!!!!"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Options"
 msgstr "ตัวเลื~อก!!!!"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "ค้นหาสิ่งที่คล้ายกัน"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2508,20 +2125,10 @@ msgstr "การตั้งค่า"
 msgid  "Paste Special"
 msgstr "วางแบบพิเศษ"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Source:"
-msgstr "ที่มา:"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Insert as"
 msgstr "แ~ทรกเป็น"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Link to"
-msgstr "เชื่อมโยงไปยัง"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 #, fuzzy
@@ -2537,11 +2144,6 @@ msgstr "ไ~อคอนอื่น..."
 #, fuzzy
 msgid  "Selection"
 msgstr "การเลือก"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "วัตถุ"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 #, fuzzy
@@ -2562,11 +2164,6 @@ msgstr "Element:"
 #, fuzzy
 msgid  "Type"
 msgstr "ชนิด"
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Status"
-msgstr "สถานะ"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
 #, fuzzy
@@ -2758,11 +2355,6 @@ msgstr "~ปิด"
 msgid  "Au~tomatic"
 msgstr "~อัตโนมัติ"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scroll bar"
-msgstr "แถบเลื่อนจอภาพ"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "On"
@@ -2772,11 +2364,6 @@ msgstr "เปิด"
 #, fuzzy
 msgid  "Off"
 msgstr "ปิด"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Border"
-msgstr "ขอบ"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2808,29 +2395,14 @@ msgstr "ระยะห่างไปยังข้อความ"
 msgid  "Select File for Floating Frame"
 msgstr "เลือกแฟ้มสำหรับกรอบลอย"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-#, fuzzy
-msgid  "Edit Applet"
-msgstr "แก้ไขแอ็ปเพล็ต"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Number"
-msgstr "เลขระเบียน"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "go to record"
 msgstr "ไปยังระเบียน"
 
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "อรรถาภิธาน"
-
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
 msgid  "~Current word"
-msgstr ""
+msgstr "คำปัจจุบัน"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MB_LANGUAGE.MENUBUTTON.TEXT
 #, fuzzy
@@ -2839,24 +2411,19 @@ msgstr "~ภาษา..."
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_THES_ALTERNATIVES.FIXEDTEXT.TEXT
 msgid  "~Alternatives"
-msgstr ""
+msgstr "ทางเลือกอื่น"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_REPL.FIXEDTEXT.TEXT
 msgid  "~Replace with"
-msgstr ""
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "แ~ทนที่"
+msgstr "แทนด้วย"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
 msgid  "No alternatives found."
-msgstr ""
+msgstr "ไม่พบทางเลือกอื่น"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.MODALDIALOG.TEXT
 msgid  "Zoom & View Layout"
-msgstr ""
+msgstr "ซูมและดูการวางผัง"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_ZOOM.FIXEDLINE.TEXT
 #, fuzzy
@@ -2870,11 +2437,11 @@ msgstr "เ~หมาะที่สุด"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_WHOLE_PAGE.RADIOBUTTON.TEXT
 msgid  "~Fit width and height"
-msgstr ""
+msgstr "พอดีกับความกว้างและความสูง"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_PAGE_WIDTH.RADIOBUTTON.TEXT
 msgid  "Fit ~width"
-msgstr ""
+msgstr "พอดีกับความกว้าง"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_USER.RADIOBUTTON.TEXT
 #, fuzzy
@@ -2883,7 +2450,7 @@ msgstr "~ตัวแปร!!!!"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_VIEWLAYOUT.FIXEDLINE.TEXT
 msgid  "View layout"
-msgstr ""
+msgstr "ดูการวางผัง"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_AUTOMATIC.RADIOBUTTON.TEXT
 #, fuzzy
@@ -2892,7 +2459,7 @@ msgstr "~อัตโนมัติ"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_SINGLE.RADIOBUTTON.TEXT
 msgid  "~Single page"
-msgstr ""
+msgstr "หน้าเดียว"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_COLUMNS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -2901,7 +2468,7 @@ msgstr " คอลัมน์"
 
 #: dialogs/zoom.src#RID_SVXDLG_ZOOM.CHK_BOOK.CHECKBOX.TEXT
 msgid  "~Book mode"
-msgstr ""
+msgstr "แบบ (mode) หนังสือ"
 
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FIXEDLINE.TEXT
 #, fuzzy
@@ -2918,11 +2485,6 @@ msgstr "เปิดใช้งานการรวมการเชื่อ
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "ไดรเวอร์ที่รู้จักใน %PRODUCTNAME"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Current driver:"
-msgstr "ไดรเวอร์ปัจจุบัน:"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Enable pooling for this driver"
@@ -2933,11 +2495,6 @@ msgstr "เปิดใช้งานการรวมสำหรับได
 msgid  "Timeout (seconds)"
 msgstr "หมดเวลา (วินาที)"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Driver name"
-msgstr "ชื่อไดรเวอร์"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 #, fuzzy
 msgid  "Pool"
@@ -2947,16 +2504,6 @@ msgstr "รวม!!!!"
 #, fuzzy
 msgid  "Timeout"
 msgstr "หมดเวลา"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "ใช่!!!!"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "ไม่ใช่!!!!"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 #, fuzzy
@@ -2974,9 +2521,8 @@ msgid  "Database file"
 msgstr "แฟ้มฐานข้อมูล"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~New..."
-msgstr "ให~ม่..."
+msgstr "ใหม่..."
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
@@ -3020,7 +2566,7 @@ msgstr "ไม่มีแฟ้ม\n$file$\nอยู่"
 
 #: options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.STRING.TEXT
 msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr ""
+msgstr "ไฟล์\n$file$\nไม่มีอยู่ในระบบไฟล์ท้องถิ่น"
 
 #: options/doclinkdialog.src#STR_NAME_CONFLICT.STRING.TEXT
 #, fuzzy
@@ -3047,11 +2593,6 @@ msgstr "แ~บบอักษร"
 msgid  "Re~place with"
 msgstr "แท~นที่ด้วย"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "ใช้งานทันที"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Delete"
@@ -3059,7 +2600,7 @@ msgstr "ลบ"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FL_SOURCEVIEW.FIXEDLINE.TEXT
 msgid  "Font settings for HTML, Basic and SQL sources"
-msgstr ""
+msgstr "การตั้งชุดอักษรสำหรับรหัสต้นทางของ HTML, เบสิก และ SQL"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTNAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3076,34 +2617,19 @@ msgstr "แบบตัวอักษรไม่ได้สัดส่วน
 msgid  "~Size"
 msgstr "~ขนาด"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "Always"
-msgstr "เสมอ!!!!"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
 msgid  "Screen only"
-msgstr ""
+msgstr "จอภาพเท่านั้น"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER3.STRING.TEXT
 #, fuzzy
 msgid  "Font"
 msgstr "แบบอักษร"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-#, fuzzy
-msgid  "Replace with"
-msgstr "แทนที่ด้วย"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 #, fuzzy
 msgid  "Automatic"
 msgstr "อัตโนมัติ"
-
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Default text direction"
-msgstr "ทิศทางข้อความโดยปริยาย!!!!"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
 #, fuzzy
@@ -3160,11 +2686,6 @@ msgstr "อนุญาตให้มี~ข้อความที่เค�
 msgid  "~Help tips disappear after "
 msgstr "~คำแนะนำช่วยเหลือหายไปหลังจาก "
 
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "seconds"
-msgstr "วินาที"
-
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Options for high contrast appearance"
@@ -3176,9 +2697,8 @@ msgid  "Automatically ~detect high contrast mode of operating system"
 msgstr "~ป้องกันโหมดความเปรียบต่างสูงของระบบปฏิบัติการอัตโนมัติ"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Use automatic font ~color for screen display"
-msgstr "ใช้~สีแบบอักษรอัตโนมัติสำหรับการแสดงหน้าจอ"
+msgstr "ใช้สีแบบอักษรอัตโนมัติสำหรับการแสดงหน้าจอ"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_PAGE_PREVIEWS.CHECKBOX.TEXT
 #, fuzzy
@@ -3255,18 +2775,13 @@ msgstr "ไม่มีสัญลักษณ์แบ่งบรรทัด
 msgid  "Proxy"
 msgstr "พร็อกซี"
 
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Default Colors"
-msgstr "สีปริยาย!!!!"
-
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 msgid  "Chart colors"
-msgstr ""
+msgstr "สีของแผนภูมิ"
 
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_COLOR_BOX.FIXEDLINE.TEXT
 msgid  "Color table"
-msgstr ""
+msgstr "ตารางสี"
 
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.PB_RESET_TO_DEFAULT.PUSHBUTTON.TEXT
 #, fuzzy
@@ -3275,17 +2790,7 @@ msgstr "~ค่าปริยาย"
 
 #: options/optchart.src#RID_SVXSTR_DIAGRAM_ROW.STRING.TEXT
 msgid  "Data Series $(ROW)"
-msgstr ""
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color scheme"
-msgstr "Color scheme"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Scheme"
-msgstr "Scheme"
+msgstr "ชุดข้อมูล $(ROW)"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
 #, fuzzy
@@ -3296,11 +2801,6 @@ msgstr "บันทึก..."
 #, fuzzy
 msgid  "Delete"
 msgstr "ลบ"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Custom colors"
-msgstr "สีกำหนดเอง"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
 #, fuzzy
@@ -3322,31 +2822,6 @@ msgstr "การตั้งค่าสี"
 msgid  "Preview"
 msgstr "แสดงตัวอย่าง"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "ทั่วไป"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Document background"
-msgstr "พื้นหลังเอกสาร"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Text boundaries"
-msgstr "ขอบเขตข้อความ"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Application background"
-msgstr "พื้นหลังโปรแกรม"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Object boundaries"
-msgstr "ขอบเขตวัตถุ"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Table boundaries"
@@ -3357,16 +2832,6 @@ msgstr "ขอบเขตตาราง"
 msgid  "Font color"
 msgstr "สีตัวอักษร"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Unvisited links"
-msgstr "ลิงก์ที่ไม่เคยเข้าดู"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Visited links"
-msgstr "ลิงก์ที่เคยเข้าดูแล้ว"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "AutoSpellcheck"
@@ -3374,7 +2839,7 @@ msgstr "ตรวจตัวสะกดอัตโนมัติ"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SMARTTAGS.FIXEDTEXT.TEXT
 msgid  "Smart Tags"
-msgstr ""
+msgstr "สมาร์ทแท็ก (Smart Tags)"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3406,11 +2871,6 @@ msgstr "ตัวบ่งชีสคริปต์"
 msgid  "Section boundaries"
 msgstr "ขอบเขตตอน"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Page and column breaks"
-msgstr "ตัวแบ่งหน้าและคอลัมน์"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Direct cursor"
@@ -3436,21 +2896,6 @@ msgstr "เน้นข้อคิดเห็น"
 msgid  "Keyword highlighting"
 msgstr "เน้นคำสำคัญ"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "ข้อความ"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "ตารางคำนวณ"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Grid lines"
-msgstr "เส้นแนว"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Page breaks"
@@ -3466,25 +2911,10 @@ msgstr "แบ่งหน้าเอง"
 msgid  "Automatic page breaks"
 msgstr "แบ่งหน้าอัตโนมัติ"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Detective"
-msgstr "Detective"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Detective error"
 msgstr "Detective error"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "References"
-msgstr "อ้างอิง"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Notes background"
-msgstr "พื้นหลังการบันทึก"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3526,35 +2956,25 @@ msgstr "ตัวปฏิบัติการ"
 msgid  "Reserved expression"
 msgstr "Reserved expression"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Error"
-msgstr "ข้อผิดพลาด"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "SQL Syntax Highlighting"
-msgstr "เน้นไวยากรณ์ SGML"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 msgid  "Keyword"
-msgstr ""
+msgstr "คำหลัก"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLPARAMETER.FIXEDTEXT.TEXT
 msgid  "Parameter"
-msgstr ""
+msgstr "พารามิเตอร์"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_EXTENSION.STRING.TEXT
 msgid  "Colorsettings of the Extensions"
-msgstr ""
+msgstr "การตั้งค่าสีของส่วนขยาย"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_SPELL_CHECK_HIGHLIGHTING.STRING.TEXT
 msgid  "Spell check highlighting"
-msgstr ""
+msgstr "การเน้นคำในการตรวจการสะกด"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_GRAMMAR_CHECK_HIGHLIGHTING.STRING.TEXT
 msgid  "Grammar check highlighting"
-msgstr ""
+msgstr "การเน้นคำในการตรวจไวยากรณ์"
 
 #: options/optcolor.src#RID_SVXQB_DELETE_COLOR_CONFIG.QUERYBOX.MESSAGE
 #, fuzzy
@@ -3570,11 +2990,6 @@ msgstr "การลบธีมสี"
 #, fuzzy
 msgid  "Save scheme"
 msgstr "บันทึกรายการ"
-
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-#, fuzzy
-msgid  "Name of color scheme"
-msgstr "ชื่อรายการสี"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
 #, fuzzy
@@ -3606,11 +3021,6 @@ msgstr "~พิมพ์และแทนที่"
 msgid  "Cursor control"
 msgstr "การควบคุมเคอร์เซอร์"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Movement"
-msgstr "การเคลื่อนที่"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Lo~gical"
@@ -3631,29 +3041,9 @@ msgstr "ตัวเลือกทั่วไป"
 msgid  "~Numerals"
 msgstr "~ตัวเลข"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Arabic"
-msgstr "อารบิก"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Hindi"
-msgstr "ฮินดี"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "ระบบ"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
 msgid  "Context"
-msgstr ""
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "พจนานุกรมใหม่"
+msgstr "บริบท"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3669,16 +3059,6 @@ msgstr "~ภาษา"
 #, fuzzy
 msgid  "~Exception (-)"
 msgstr "~ข้อยกเว้น (-)"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "พจนานุกรม"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "แก้ไขพจนานุกรมแบบกำหนดเอง"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3701,9 +3081,8 @@ msgid  "~New"
 msgstr "ใ~หม่"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.PB_DELETE_REPLACE.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Delete"
-msgstr "~ลบ"
+msgstr "ลบ"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.STR_MODIFY.STRING.TEXT
 #, fuzzy
@@ -3727,43 +3106,43 @@ msgstr "คุณต้องการเปลี่ยน ภาษาขอ�
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_WORD.FIXEDLINE.TEXT
 msgid  "Microsoft Word 97/2000/XP"
-msgstr ""
+msgstr "ไมโครซอฟท์เวิร์ด 97/2000/XP"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_CODE.CHECKBOX.TEXT
 msgid  "Load Basic ~code"
-msgstr ""
+msgstr "โหลดโปรแกรมภาษาเบสิก"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_STG.CHECKBOX.TEXT
 msgid  "Save ~original Basic code"
-msgstr ""
+msgstr "บันทึกโปรแกรมเบสิกต้นฉบับ"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_EXCEL.FIXEDLINE.TEXT
 msgid  "Microsoft Excel 97/2000/XP"
-msgstr ""
+msgstr "ไมโครซอฟท์เอ็กเซล 97/2000/XP"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_CODE.CHECKBOX.TEXT
 msgid  "Lo~ad Basic code"
-msgstr ""
+msgstr "โหลดโปรแกรมภาษาเบสิก"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_EXECTBL.CHECKBOX.TEXT
 msgid  "E~xecutable code"
-msgstr ""
+msgstr "รหัสคำสั่งที่แปลแล้ว"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_STG.CHECKBOX.TEXT
 msgid  "Sa~ve original Basic code"
-msgstr ""
+msgstr "บันทึกโปรแกรมภาษาเบสิกต้นฉบับ"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_PPOINT.FIXEDLINE.TEXT
 msgid  "Microsoft PowerPoint 97/2000/XP"
-msgstr ""
+msgstr "Microsoft PowerPoint 97/2000/XP"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_CODE.CHECKBOX.TEXT
 msgid  "Load Ba~sic code"
-msgstr ""
+msgstr "โหลดโปรแกรมภาษาเบสิก"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_STG.CHECKBOX.TEXT
 msgid  "Sav~e original Basic code"
-msgstr ""
+msgstr "บันทึกโปรแกรมภาษาเบสิกต้นฉบับ"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_HEADER1.STRING.TEXT
 #, fuzzy
@@ -3787,24 +3166,19 @@ msgstr "[S]: แปลงและบันทึกวัตถุ"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_MATH.STRING.TEXT
 msgid  "MathType to %PRODUCTNAME Math or reverse"
-msgstr ""
+msgstr "MathType เป็น %PRODUCTNAME Math หรือกลับกัน"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_WRITER.STRING.TEXT
 msgid  "WinWord to %PRODUCTNAME Writer or reverse"
-msgstr ""
+msgstr "WinWord เป็น %PRODUCTNAME Writer หรือกลับกัน"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_CALC.STRING.TEXT
 msgid  "Excel to %PRODUCTNAME Calc or reverse"
-msgstr ""
+msgstr "Excel เป็น %PRODUCTNAME Calc หรือกลับกัน"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_IMPRESS.STRING.TEXT
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
-msgstr ""
-
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "ช่วยเหลือ"
+msgstr "PowerPoint เป็น %PRODUCTNAME Impress หรือกลับกัน"
 
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 #, fuzzy
@@ -3830,11 +3204,6 @@ msgstr "~ตั้งค่าตัวช่วยเหลือใหม่"
 #, fuzzy
 msgid  "Help ~formatting"
 msgstr "~รูปแบบการช่วยเหลือ"
-
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "ค่าปริยาย"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -3893,17 +3262,12 @@ msgstr "และ"
 
 #: options/optgdlg.src#OFA_TP_MISC.FL_PRINTDLG.FIXEDLINE.TEXT
 msgid  "Print dialogs"
-msgstr ""
+msgstr "กล่องโต้ตอบสำหรับพิมพ์"
 
 #: options/optgdlg.src#OFA_TP_MISC.CB_PRINTDLG.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "ใช้ไดอะล็อก %PRODUCTNAME !!!!"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User Interface"
-msgstr "ส่วนติดต่อผู้ใช้"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3921,37 +3285,21 @@ msgid  "Icon size"
 msgstr "ขนาดไอคอน"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM1.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Automatic"
 msgstr "อัตโนมัติ"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small"
-msgstr "เล็ก"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Large"
-msgstr "ใหญ่"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Galaxy (default)"
-msgstr ""
+msgstr "กาแล็กซี (ค่าปริยาย)"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "High Contrast"
 msgstr "ความต่างสูง #1"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Industrial"
-msgstr "Industrial"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
 msgid  "Classic"
-msgstr ""
+msgstr "คลาสสิก"
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_SYSTEM_FONT.CHECKBOX.TEXT
 #, fuzzy
@@ -3968,11 +3316,6 @@ msgstr "Screen font antialiasing"
 msgid  "from"
 msgstr "จาก!!!!"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Pixels"
-msgstr "พิกเซล!!!!"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Menu"
@@ -3980,15 +3323,15 @@ msgstr "เมนู"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MENU_ICONS.FIXEDTEXT.TEXT
 msgid  "Icons in menus"
-msgstr ""
+msgstr "สัญรูป (Icon) ในเมนู"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM2.STRINGLIST.ITEM
 msgid  "Hide"
-msgstr ""
+msgstr "ซ่อน"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.ITEM3.STRINGLIST.ITEM
 msgid  "Show"
-msgstr ""
+msgstr "แสดง"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_FONTLISTS.FIXEDLINE.TEXT
 #, fuzzy
@@ -4017,22 +3360,12 @@ msgstr "Use hardware acceleration"
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_USE_ANTIALIASE.CHECKBOX.TEXT
 msgid  "Use Anti-Aliasing"
-msgstr ""
-
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mouse"
-msgstr "เมาส์!!!!"
+msgstr "ใช้การลดรอยหยัก (Anti-Aliasing)"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Mouse positioning"
 msgstr "ตำแหน่งเมาส์!!!!"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default button"
-msgstr "ปุ่มค่าเริ่มต้น!!!!"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -4054,11 +3387,6 @@ msgstr "ปุ่มเมาส์ตรงกลาง!!!!"
 msgid  "No function"
 msgstr "ไม่มีฟังก์ชัน"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Automatic scrolling"
-msgstr "เลื่อนอัตโนมัติ!!!!"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Paste clipboard"
@@ -4066,15 +3394,15 @@ msgstr "วางคลิปบอร์ด!!!!"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_SELECTION.FIXEDLINE.TEXT
 msgid  "Selection"
-msgstr ""
+msgstr "สิ่งที่เลือก"
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_SELECTION.CHECKBOX.TEXT
 msgid  "Transparency"
-msgstr ""
+msgstr "ความโปร่งใส"
 
 #: options/optgdlg.src#OFA_TP_VIEW.MF_SELECTION.METRICFIELD.CUSTOMUNITTEXT
 msgid  "%"
-msgstr ""
+msgstr "%"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.FL_UI_LANG.FIXEDLINE.TEXT
 #, fuzzy
@@ -4138,21 +3466,16 @@ msgstr "เพิ่มการสนับสนุนภาษาให้ด
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_ASIANSUPPORT.CHECKBOX.TEXT
 msgid  "Show UI elements for East Asia~n writings"
-msgstr ""
+msgstr "แสดงองค์ประกอบติดต่อผู้ใช้ (UI) สำหรับการเขียนภาษาเอเชียตะวันออก"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_CTLSUPPORT.CHECKBOX.TEXT
 msgid  "Show UI elements for B~i-Directional writing"
-msgstr ""
+msgstr "แสดงองค์ประกอบติดต่อผู้ใช้ (UI) สำหรับการเขียนภาษาสองทิศทาง"
 
 #: options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "การตั้งภาษาสำหรับส่วนติดต่อผู้ใช้จะมีผลเมื่อคุณเริ่มต้นการทำงานของ %PRODUCTNAME %PRODUCTVERSION ในครั้งต่อไป"
-
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-#, fuzzy
-msgid  "User Data"
-msgstr "ข้อมูลผู้ใช้"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4229,6 +3552,10 @@ msgstr "เมือง/รัฐ/รหัสไปรษณีย์"
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "สังเกตว่าถนน รหัสไปรษณีย์ และเมือง จะถูกใช้เพื่อสร้างเป็นคีย์การลงทะเบียน  คุณจะเปลี่ยนข้อมูลเหล่านี้ไม่ได้อีก จนกว่าจะลงทะเบียนสำเร็จ  คุณต้องการเปลี่ยนแปลงข้อมูลผู้ใช้ขณะนี้หรือไม่ ?"
 
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr "ข้อมูลผู้ใช้มีการเปลี่ยนแปลง\nต้องการยืนยันเปลี่ยนข้อมูลผู้ใช้?"
+
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Size ~1"
@@ -4276,7 +3603,7 @@ msgstr "นำเข้า!!!!"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_NUMBERS_ENGLISH_US.CHECKBOX.TEXT
 msgid  "~Use '%ENGLISHUSLOCALE' locale for numbers"
-msgstr ""
+msgstr "ใช้รูปแบบท้องถิ่น (locale) '%ENGLISHUSLOCALE' สำหรับตัวเลข"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_UNKNOWN_TAGS.CHECKBOX.TEXT
 #, fuzzy
@@ -4315,47 +3642,47 @@ msgstr "ชุดอักขระ"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TABPAGE.TEXT
 msgid  "%PRODUCTNAME Improvement Program"
-msgstr ""
+msgstr "โครงการปรับปรุง %PRODUCTNAME"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_IMPROVE.FIXEDLINE.TEXT
 msgid  "Improvement Program"
-msgstr ""
+msgstr "โปรแกรมปรับปรุง"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FIXEDTEXT.TEXT
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "ขอเชิญมาร่วมโครงการปรับปรุง %PRODUCTNAME เพื่อช่วยปรับปรุงคุณภาพของ %PRODUCTNAME \nถ้าคุณเต็มใจร่วม เราจะเก็บสถิตินิรนามเกี่ยวกับการใช้งาน %PRODUCTNAME ของคุณ ข้อมูลดังกล่าวใช้ในการระบุรูปแบบการใช้งานของผู้ใช้\n\nโครงการปรับปรุง %PRODUCTNAME จะไม่เก็บข้อมูลส่วนบุคคลหรือเนื้อหาของเอกสารใดๆ"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
-msgstr ""
+msgstr "ตกลง ฉันเต็มใจเข้าร่วมโครงการปรับปรุง %PRODUCTNAME"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RADIOBUTTON.TEXT
 msgid  "~No, I do not wish to participate"
-msgstr ""
+msgstr "ไม่ ฉันไม่ต้องการมีส่วนร่วม"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_DATA.FIXEDLINE.TEXT
 msgid  "Tracked Data"
-msgstr ""
+msgstr "ข้อมูลที่ตามรอย"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_REPORTS.FIXEDTEXT.TEXT
 msgid  "Number of reports sent:"
-msgstr ""
+msgstr "จำนวนของรายงานที่ส่ง:"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_ACTIONS.FIXEDTEXT.TEXT
 msgid  "Number of tracked actions:"
-msgstr ""
+msgstr "จำนวนของกิจกรรมที่ตามรอย:"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.PB_SHOWDATA.PUSHBUTTON.TEXT
 msgid  "~Show Data"
-msgstr ""
+msgstr "แสดงข้อมูล"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_INFO.STRING.TEXT
 msgid  "Help Optimize the Quality of %PRODUCTNAME"
-msgstr ""
+msgstr "ช่วยปรับปรุงคุณภาพของ %PRODUCTNAME ให้ดีที่สุด"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_MOREINFO.STRING.TEXT
 msgid  "More Information"
-msgstr ""
+msgstr "ข้อมูลเพิ่มเติม"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.TABPAGE.TEXT
 #, fuzzy
@@ -4376,16 +3703,6 @@ msgstr "เซิร์ฟเวอร์พร็อกซี"
 #, fuzzy
 msgid  "None"
 msgstr "ไม่มี"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "ระบบ"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Manual"
-msgstr "กำหนดเอง"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
 #, fuzzy
@@ -4432,16 +3749,6 @@ msgstr "พอ~ร์ต"
 msgid  "~No proxy for:"
 msgstr "ไ~ม่มีพร็อกซีสำหรับ:"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Separator ;"
-msgstr "ตัวแยก;"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "DNS server"
-msgstr "DNS เซิร์ฟเวอร์"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Automatic"
@@ -4461,11 +3768,6 @@ msgstr "ไม่ใช่รายการที่ถูกต้องสำ
 #, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "ไม่ใช่รายการที่ถูกต้องสำหรับเขตข้อมูลนี้ กรุณาระบุค่าระหว่าง 1 ถึง 255"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Search"
-msgstr "ค้นหา"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
 #, fuzzy
@@ -4517,16 +3819,6 @@ msgstr "ตัวแ~ยก"
 msgid  "~Case match"
 msgstr "ตัวพิมพ์เ~ล็ก/ใหญ่ ตรงกัน"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Upper"
-msgstr "ด้านบน"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Lower"
-msgstr "ด้านล่าง"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "N~ew"
@@ -4543,39 +3835,33 @@ msgid  "~Modify"
 msgstr "~แก้ไข"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Delete"
-msgstr "~ลบ"
+msgstr "ลบ"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "คุณต้องการยอมรับการแก้ไขปัจจุบันหรือไม่ ?"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-#, fuzzy
-msgid  "Security"
-msgstr "ความ~ปลอดภัย"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 msgid  "Security options and warnings"
-msgstr ""
+msgstr "ตัวเลือกและคำเตือนเกี่ยวกับความมั่นคง"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_SECURITYOPTIONS.FIXEDTEXT.TEXT
 msgid  "Adjust security related options and define warnings for hidden information in documents."
-msgstr ""
+msgstr "ปรับตัวเลือกที่เกี่ยวกับความมั่นคงและกำหนดคำเตือนสำหรับข้อมูลข่าวสารที่ซ่อนอยู่ในเอกสาร"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PUSHBUTTON.TEXT
 msgid  "Options..."
-msgstr ""
+msgstr "ตัวเลือก..."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_PASSWORDS.FIXEDLINE.TEXT
 msgid  "Passwords for web connections"
-msgstr ""
+msgstr "รหัสผ่านสำหรับการเชื่อมต่อกับเว็บ"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_SAVEPASSWORDS.CHECKBOX.TEXT
 msgid  "Persistently save passwords for web connections"
-msgstr ""
+msgstr "บันทึกรหัสผ่านอย่างถาวรสำหรับการเชื่อมต่อกับเว็บ"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_CONNECTIONS.PUSHBUTTON.TEXT
 #, fuzzy
@@ -4584,20 +3870,15 @@ msgstr "การเชื่อมต่อ!!!!"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_MASTERPASSWORD.CHECKBOX.TEXT
 msgid  "Protected by a master password (recommended)"
-msgstr ""
+msgstr "คุ้มกันด้วยรหัสผ่านหลัก (แนะนำ)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MASTERPASSWORD.FIXEDTEXT.TEXT
 msgid  "Passwords are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "รหัสผ่านถูกคุ้มกันด้วยรหัสผ่านหลักอีกชั้นหนึ่ง ซึ่งจะถามให้ป้อนรหัสผ่านหลักทุกๆ ครั้งที่เชื่อมต่อ (session) ถ้าหากว่า %PRODUCTNAME ต้องค้นคืนรหัสผ่านจากรายการรหัสผ่านที่ถูกคุ้มกัน"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PUSHBUTTON.TEXT
 msgid  "Master Password..."
-msgstr ""
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Macro security"
-msgstr "ความปลอดภัยของแมโคร"
+msgstr "รหัสผ่านหลัก..."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4611,7 +3892,11 @@ msgstr "ความปลอดภัยของแมโคร..."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.STRING.TEXT
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "การไม่เก็บรหัสผ่านอย่างถาวรจะลบรายการรหัสผ่านที่บันทึกไว้และรีเซ็ตรหัสผ่านหลัก\n\nโปรดยืนยันการลบรายการรหัสผ่านและรีเซ็ตรหัสผ่านหลัก"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "ค่าไม่ถูกต้อง!\n\nค่าที่มากที่สุดสำหรับหมายเลขพอร์ตคือ 65535"
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4637,11 +3922,6 @@ msgstr "โปรแกรม~อีเมล"
 #, fuzzy
 msgid  "All files (*.*)"
 msgstr "ทุกแฟ้ม (*.*)"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-#, fuzzy
-msgid  "Java"
-msgstr "Java"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
 #, fuzzy
@@ -4672,11 +3952,6 @@ msgstr "~พารามิเตอร์..."
 #, fuzzy
 msgid  "~Class Path..."
 msgstr "~Class Path..."
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-#, fuzzy
-msgid  "Location: "
-msgstr "Location: "
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 #, fuzzy
@@ -4723,20 +3998,10 @@ msgstr "~กำหนด"
 msgid  "Assig~ned start parameters"
 msgstr "~กำหนดเริ่มพารามิเตอร์"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "ตัวอย่าง: -Dmyprop=c:\\program files\\java"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Remove"
 msgstr "เ~อาออก"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Class Path"
-msgstr "Class Path"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4753,10 +4018,21 @@ msgstr "เ~พิ่มแฟ้มจัดเก็บ..."
 msgid  "Add ~Folder"
 msgstr "เพิ่มโ~ฟลเดอร์"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Treat as equal"
-msgstr "ปฏิบัติอย่างเท่าเทียมกัน"
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "โฟลเดอร์ที่คุณเลือกไม่มีสภาวะแวดล้อมแบบ Java runtime.\nกรุณาเลือกโฟลเดอร์อื่น"
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "สภาวะแวดล้อมแบบ Java runtime ที่คุณเลือกไม่ต้องการรุ่น \nกรุณาเลือกโฟลเดอร์อื่น"
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "เพื่อให้การเลือกสภาวะแวดล้อมแบบ Java runtime environment ทำงานโดยสมบูรณ์ %PRODUCTNAME จะต้องเริ่มต้นทำงานใหม่ \nกรุณาเริ่มต้นทำงาน %PRODUCTNAME ใหม่ตอนนี้"
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "คุณจะต้องเริ่มทำงาน %PRODUCTNAME ใหม่เพื่อให้ค่าเปลี่ยนแปลงมีผล \nกรุณาเริ่มทำงาน %PRODUCTNAME ใหม่"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
 #, fuzzy
@@ -4838,11 +4114,6 @@ msgstr "~ki/ku (tekisuto/tekusuto)"
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "Prolon~ged vowels (ka-/kaa)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Ignore"
-msgstr "เพิกเฉย"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pu~nctuation characters"
@@ -4857,11 +4128,6 @@ msgstr "อักขระช่อง~ว่าง "
 #, fuzzy
 msgid  "Midd~le dots"
 msgstr "จุดกลา~ง"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "กำลังค้นหาในภาษาญี่ปุ่น"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 #, fuzzy
@@ -4894,9 +4160,8 @@ msgid  "~Back"
 msgstr "~ย้อนกลับ"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_NEWDICTSLINK.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Get more dictionaries online..."
-msgstr ""
+msgstr "รับพจนานุกรมเพิ่มเติมจากออนไลน์..."
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKBUTTON.TEXT
 #, fuzzy
@@ -4909,18 +4174,12 @@ msgid  "Spelling"
 msgstr "การสะกด"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.STRING.TEXT
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "ยัติภังค์"
 
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "อรรถาภิธาน"
-
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 msgid  "Grammar"
-msgstr ""
+msgstr "ไวยากรณ์"
 
 #: options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_PRE_BREAK_DLG.STRING.TEXT
 #, fuzzy
@@ -4958,9 +4217,8 @@ msgid  "User-defined dictionaries"
 msgstr "พจนานุกรมที่ผู้ใช้กำหนดเอง"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_NEW_DIC.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~New..."
-msgstr "ใ~หม่..."
+msgstr "ใหม่..."
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_EDIT_DIC.PUSHBUTTON.TEXT
 #, fuzzy
@@ -4982,25 +4240,10 @@ msgstr "~ตัวเลือก:"
 msgid  "Edi~t..."
 msgstr "แก้ไ~ข...!!!!"
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-#, fuzzy
-msgid  "Check uppercase words"
-msgstr "ตรวจคำที่ใช้ตัวพิมพ์ใหญ่ทั้งหมด"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
 #, fuzzy
 msgid  "Check words with numbers "
 msgstr "ตรวจคำที่มีตัวเลข "
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-#, fuzzy
-msgid  "Check capitalization"
-msgstr "ตรวจการขึ้นต้นคำด้วยตัวพิมพ์ใหญ่"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-#, fuzzy
-msgid  "Check special regions"
-msgstr "ตรวจบริเวณพิเศษ"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 #, fuzzy
@@ -5009,7 +4252,7 @@ msgstr "ตรวจการสะกดที่คุณพิมพ์"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_GRAMMAR_AUTO.STRING.TEXT
 msgid  "Check grammar as you type"
-msgstr ""
+msgstr "ตรวจสอบไวยากรณ์ในขณะที่พิมพ์"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_MIN_WORDLEN.STRING.TEXT
 #, fuzzy
@@ -5037,28 +4280,21 @@ msgid  "Hyphenate special regions"
 msgstr "แทรกยัติภังค์บริเวณพิเศษ"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_MODULES_EDIT.STRING.TEXT
-#, fuzzy
 msgid  "Edit Available language modules"
-msgstr "มอดูลของภาษาที่ใช้ได้:"
+msgstr "แก้ไขรายการมอดูลของภาษาที่ใช้ได้:"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_DICS_EDIT_DIC.STRING.TEXT
-#, fuzzy
 msgid  "Edit User-defined dictionaries"
-msgstr "พจนานุกรมที่กำหนดโดยผู้ใช้"
+msgstr "แก้ไขพจนานุกรมที่กำหนดโดยผู้ใช้"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.STRING.TEXT
 msgid  "Edit Options"
-msgstr ""
+msgstr "แก้ไขตัวเลือก"
 
 #: options/optlingu.src#RID_SFXQB_DELDICT.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "Do you want to delete the dictionary?"
 msgstr "คุณต้องการลบพจนานุกรมหรือไม่ ?"
-
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Undo"
-msgstr "แก้ไขกลับคืน"
 
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5075,11 +4311,6 @@ msgstr "หน่วยความจำสำหรับกราฟิกส
 msgid  "Use for %PRODUCTNAME"
 msgstr "ใช้สำหรับ %PRODUCTNAME!!!!"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "MB"
-msgstr "MB"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Memory per object"
@@ -5089,11 +4320,6 @@ msgstr "หน่วยความจำต่อวัตถุ!!!!"
 #, fuzzy
 msgid  "Remove from memory after"
 msgstr "ลบจากหน่วยความจำหลังจาก"
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "hh:mm"
-msgstr "hh:mm!!!!"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 #, fuzzy
@@ -5117,7 +4343,7 @@ msgstr "Load %PRODUCTNAME during system start-up!!!!"
 
 #: options/optmemory.src#OFA_TP_MEMORY.STR_QUICKLAUNCH_UNX.STRING.TEXT
 msgid  "Enable systray Quickstarter"
-msgstr ""
+msgstr "เปิดใช้งานตัวเรียกโปรแกรมด่วน (Quickstarter) ในถาดระบบ (System Tray)"
 
 #: options/optpath.src#RID_SFXPAGE_PATH.TABPAGE.TEXT
 #, fuzzy
@@ -5154,6 +4380,10 @@ msgstr "ค่าปริยาย"
 msgid  "Edit Paths: %1"
 msgstr "Edit Paths: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "การกำหนดค่าและไดเรกทอรีเมล ต้องกำหนดเป็นไดเรกทอรีที่แยกออกมา\nกรุณาเลือกพาธใหม่"
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Configuration"
@@ -5163,26 +4393,6 @@ msgstr "การกำหนดค่า"
 #, fuzzy
 msgid  "My Documents"
 msgstr "เอกสารของฉัน"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "กราฟิกส์"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Icons"
-msgstr "ไอคอน"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Palettes"
-msgstr "จานสี"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Backups"
-msgstr "สำรอง"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 #, fuzzy
@@ -5199,40 +4409,15 @@ msgstr "ต้นแบบ"
 msgid  "AutoText"
 msgstr "ข้อความอัตโนมัติ"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "พจนานุกรม"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "วิธีใช้"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Gallery"
 msgstr "คลังภาพ"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Message Storage"
-msgstr "ที่เก็บข้อความ"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 #, fuzzy
 msgid  "Temporary files"
 msgstr "แฟ้มชั่วคราว"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Plug-ins"
-msgstr "ปลั๊กอิน"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Folder Bookmarks"
-msgstr "คั่นหน้าโฟลเดอร์"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 #, fuzzy
@@ -5299,46 +4484,41 @@ msgstr "สร้างสำเนาสำรองทุก~ครั้ง"
 msgid  "Save ~AutoRecovery information every"
 msgstr "บันทึกข้อมูล~อัตโนมัติทุกๆ "
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minutes"
-msgstr "นาที"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 msgid  "Save URLs relative to file system"
-msgstr ""
+msgstr "บันทึก URL โดยให้อ้างอิงสัมพัทธ์กับระบบไฟล์"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_INET.CHECKBOX.TEXT
 msgid  "Save URLs relative to internet"
-msgstr ""
+msgstr "บันทึก URL โดยให้อ้างอิงสัมพัทธ์กับอินเตอร์เน็ต"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FL_FILTER.FIXEDLINE.TEXT
 msgid  "Default file format and ODF settings"
-msgstr ""
+msgstr "รูปแบบไฟล์โดยปริยายและการตั้งค่า ODF"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_ODF_VERSION.FIXEDTEXT.TEXT
 msgid  "ODF format version"
-msgstr ""
+msgstr "รุ่นของรูปแบบ ODF"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.2.STRINGLIST.ITEM
 msgid  "1.0/1.1"
-msgstr ""
+msgstr "1.0/1.1"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.4.STRINGLIST.ITEM
 msgid  "1.2"
-msgstr ""
+msgstr "1.2"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.0X7FFFFFFF.STRINGLIST.ITEM
 msgid  "1.2 Extended (recommended)"
-msgstr ""
+msgstr "1.2 ขยาย (แนะนำ)"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_NOPRETTYPRINTING.CHECKBOX.TEXT
 msgid  "Size optimization for ODF format"
-msgstr ""
+msgstr "ปรับขนาดให้เหมาะสมกับรูปแบบ ODF"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_WARNALIENFORMAT.CHECKBOX.TEXT
 msgid  "Warn when not saving in ODF or default format"
-msgstr ""
+msgstr "เตือนเมื่อไม่ได้บันทึกในรูปแบบ ODF หรือรูปแบบโดยปริยาย"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_APP.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5365,11 +4545,6 @@ msgstr "เอกสาร HTML"
 msgid  "Master document"
 msgstr "เอกสารแม่แบบ"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "ตารางคำนวณ"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Presentation"
@@ -5387,7 +4562,7 @@ msgstr "สูตร"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_WARN.FIXEDTEXT.TEXT
 msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
-msgstr ""
+msgstr "การไม่ใช้รูปแบบ ODF 1.2 ขยาย อาจทำให้มีข้อมูลสูญหาย"
 
 #: options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5404,11 +4579,6 @@ msgstr "ตรวจตัวสะกด"
 msgid  "~Edit..."
 msgstr "แ~ก้ไข..."
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "พจนานุกรม"
-
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Capital words"
@@ -5424,58 +4594,53 @@ msgstr "~คำที่มีตัวเลข "
 msgid  "~Case sensitive "
 msgstr "~ตรงตามตัวพิมพ์ใหญ่-เล็ก "
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Check"
-msgstr "ตรวจสอบ"
-
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 msgid  "OnlineUpdate"
-msgstr ""
+msgstr "ออนไลน์อัพเดต"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Online Update Options"
-msgstr ""
+msgstr "ตัวเลือกในการปรับโปรแกรมให้เป็นปัจจุบันทางออนไลน์"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.CB_AUTOCHECK.CHECKBOX.TEXT
 msgid  "~Check for updates automatically"
-msgstr ""
+msgstr "ตรวจสอบว่ามีอัพเดตโปรแกรมใหม่โดยอัตโมัติ"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYDAY.RADIOBUTTON.TEXT
 msgid  "Every Da~y"
-msgstr ""
+msgstr "ทุกวัน"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYWEEK.RADIOBUTTON.TEXT
 msgid  "Every ~Week"
-msgstr ""
+msgstr "ทุกสัปดาห์"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYMONTH.RADIOBUTTON.TEXT
 msgid  "Every ~Month"
-msgstr ""
+msgstr "ทุกเดือน"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FT_LASTCHECKED.FIXEDTEXT.TEXT
 msgid  "Last checked: %DATE%, %TIME%"
-msgstr ""
+msgstr "ตรวจสอบครั้งล่าสุด: %DATE%, %TIME%"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.PB_CHECKNOW.PUSHBUTTON.TEXT
 msgid  "Check ~now"
-msgstr ""
+msgstr "ตรวจสอบตอนนี้"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.CB_AUTODOWNLOAD.CHECKBOX.TEXT
 msgid  "~Download updates automatically"
-msgstr ""
+msgstr "ดาวน์โหลดอัพเดตโปรแกรมโดยอัตโนมัติ"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FT_DESTPATHLABEL.FIXEDTEXT.TEXT
 msgid  "Download destination:"
-msgstr ""
+msgstr "ดาวน์โหลดไปที่:"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.PB_CHANGEPATH.PUSHBUTTON.TEXT
 msgid  "Ch~ange..."
-msgstr ""
+msgstr "เปลี่ยนแปลง..."
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.STR_NEVERCHECKED.STRING.TEXT
 msgid  "Last checked: Not yet"
-msgstr ""
+msgstr "ตรวจสอบครั้งล่าสุด: ยังไม่เคย"
 
 #: options/readonlyimage.src#RID_SVXSTR_READONLY_CONFIG_TIP.STRING.TEXT
 #, fuzzy
@@ -5484,47 +4649,47 @@ msgstr "การตั้งค่านี้ถูกป้องกันโ
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.MODALDIALOG.TEXT
 msgid  "Security options and warnings"
-msgstr ""
+msgstr "ตัวเลือกและคำเตือนด้านความมั่นคง"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FL_WARNINGS.FIXEDLINE.TEXT
 msgid  "Security warnings"
-msgstr ""
+msgstr "คำเตือนด้านความมั่นคง"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FI_WARNINGS.FIXEDTEXT.TEXT
 msgid  "Warn if document contains recorded changes, versions, hidden information or notes:"
-msgstr ""
+msgstr "เตือนถ้าเอกสารมีการบันทึกการเปลี่ยนแปลง เวอร์ชัน ข้อมูลที่ซ่อนไว้ หรือหมายเหตุ"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CHECKBOX.TEXT
 msgid  "When saving or sending"
-msgstr ""
+msgstr "เมื่อบันทึกหรือส่ง"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SIGNDOCS.CHECKBOX.TEXT
 msgid  "When signing"
-msgstr ""
+msgstr "เมื่อลงนาม"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_PRINTDOCS.CHECKBOX.TEXT
 msgid  "When printing"
-msgstr ""
+msgstr "เมื่อพิมพ์"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CREATEPDF.CHECKBOX.TEXT
 msgid  "When creating PDF files"
-msgstr ""
+msgstr "เมื่อสร้างไฟล์ PDF"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Security options"
-msgstr ""
+msgstr "ตัวเลือกด้านความมั่นคง"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_REMOVEINFO.CHECKBOX.TEXT
 msgid  "Remove personal information on saving"
-msgstr ""
+msgstr "ลบข้อมูลส่วนบุคคลขณะบันทึก"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_RECOMMENDPWD.CHECKBOX.TEXT
 msgid  "Recommend password protection on saving"
-msgstr ""
+msgstr "แนะนำให้ใช้การป้องกันด้วยรหัสผ่านเมื่อบันทึก"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CTRLHYPERLINK.CHECKBOX.TEXT
 msgid  "Ctrl-click required to follow hyperlinks"
-msgstr ""
+msgstr "ต้องกดปุ่มคอนโทรล (Ctrl) พร้อมกับคลิ๊กเพื่อไปตามการเชื่อมโยงหลายมิติ (hyperlink)"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE.MODALDIALOG.TEXT
 #, fuzzy
@@ -5601,18 +4766,7 @@ msgstr "นี้คือที่ที่คุณกำหนดการต
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "นี้คือที่ที่คุณกำหนดการตั้งค่าทั่วไปสำหรับการเปิดและการบันทึกเอกสารในรูปแบบภายนอก  คุณสามารถควบคุมพฤติกรรมของแมโครหรือวัตถุ OLE ในเอกสาร MS Office หรือระบุการตั้งค่าสำหรับเอกสาร HTML"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME!!!!"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "User Data"
-msgstr "ข้อมูลผู้ใช้!!!!"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
-#, fuzzy
 msgid  "General"
 msgstr "ทั่วไป"
 
@@ -5622,7 +4776,6 @@ msgid  "Memory"
 msgstr "หน่วยความจำ!!!!"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_VIEW.ITEMLIST.ITEM
-#, fuzzy
 msgid  "View"
 msgstr "มุมมอง"
 
@@ -5636,20 +4789,10 @@ msgstr "พิมพ์"
 msgid  "Paths"
 msgstr "พาธ!!!!"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Colors"
-msgstr "สี!!!!"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Fonts"
 msgstr "ตัวอักษร!!!!"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Security"
-msgstr "ความปลอดภัย!!!!"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 #, fuzzy
@@ -5661,11 +4804,6 @@ msgstr "การตกแต่ง!!!!"
 msgid  "Accessibility"
 msgstr "ความสามารถในการเข้าถึง!!!!"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Java"
-msgstr "Java!!!!"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Network Identity"
@@ -5673,12 +4811,7 @@ msgstr "Network Identity!!!!"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_ONLINEUPDATE.ITEMLIST.ITEM
 msgid  "Online Update"
-msgstr ""
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Language Settings"
-msgstr "การกำหนดภาษา!!!!"
+msgstr "ออนไลน์อัพเดต"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 #, fuzzy
@@ -5689,11 +4822,6 @@ msgstr "ภาษา!!!!"
 #, fuzzy
 msgid  "Writing Aids"
 msgstr "เครื่องมือช่วยการเขียน!!!!"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "ค้นหาในภาษาญี่ปุ่น"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 #, fuzzy
@@ -5715,23 +4843,12 @@ msgstr "อินเทอร์เน็ต"
 msgid  "Proxy"
 msgstr "พร็อกซี"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Search"
-msgstr "ค้นหา"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "E-mail"
-msgstr "อีเมล"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer!!!!"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Formatting Aids"
 msgstr "ตัวช่วยการจัดรูปแบบ"
 
@@ -5785,11 +4902,6 @@ msgstr "อีเมลจดหมายเวียน"
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Background"
-msgstr "พื้นหลัง"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "%PRODUCTNAME Math"
@@ -5799,16 +4911,6 @@ msgstr "%PRODUCTNAME Math!!!!"
 #, fuzzy
 msgid  "Settings"
 msgstr "การตั้งค่า"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "International"
-msgstr "นานาชาติ!!!!"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 #, fuzzy
@@ -5830,30 +4932,10 @@ msgstr "%PRODUCTNAME Impress!!!!"
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME วาดรูป"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Charts"
-msgstr "แผนภูมิ!!!!"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Default Colors"
-msgstr "สีปริยาย!!!!"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Load/Save"
 msgstr "โหลด/บันทึก!!!!"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-#, fuzzy
-msgid  "VBA Properties"
-msgstr "คุณสมบัติ VBA !!!!"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Microsoft Office"
-msgstr "Microsoft Office!!!!"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 #, fuzzy
@@ -5880,18 +4962,13 @@ msgstr "ฐานข้อมูล"
 msgid  "Site certificates"
 msgstr "Site certificates"
 
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-#, fuzzy
-msgid  "Personal certificates"
-msgstr "ใบรับรองส่วนตัว"
-
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 msgid  "Stored Web Connection Information"
-msgstr ""
+msgstr "ข้อมูลการเชื่อมต่อเว็บที่เก็บไว้"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.FI_NEVERSHOWN.FIXEDTEXT.TEXT
 msgid  "Web login information (passwords are never shown)"
-msgstr ""
+msgstr "ข้อมูลในการลงบันทึกเข้าเว็บ (ไม่แสดงรหัสผ่าน)"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -5900,11 +4977,11 @@ msgstr "เ~อาออก"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_REMOVEALL.PUSHBUTTON.TEXT
 msgid  "Remove All"
-msgstr ""
+msgstr "ลบทั้งหมด"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CHANGE.PUSHBUTTON.TEXT
 msgid  "Change Password..."
-msgstr ""
+msgstr "เปลี่ยนรหัสผ่าน..."
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
@@ -5913,56 +4990,28 @@ msgstr "ปิด"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.STR_WEBSITE.STRING.TEXT
 msgid  "Website"
-msgstr ""
+msgstr "เว็บไซต์"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.STR_USERNAME.STRING.TEXT
 msgid  "User name"
-msgstr ""
+msgstr "ชื่อผู้ใช้"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.TABPAGE.TEXT
 #, fuzzy
 msgid  "Alignment"
 msgstr "การจัดตำแหน่ง"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text alignment"
-msgstr "การจัดตำแหน่งข้อความ"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Hori~zontal"
-msgstr "แนว~นอน"
+msgstr "แนวนอน"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Default"
 msgstr "ค่าเริ่มต้น"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "ซ้าย"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "ตรงกลาง"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "ขวา"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Justified"
-msgstr "จัดชิดขอบ"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Filled"
-msgstr "เติม"
+msgstr "จัดชิดขอบทั้งสองด้าน"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5973,16 +5022,6 @@ msgstr "ระยะเ~ยื้อง"
 #, fuzzy
 msgid  "~Vertical"
 msgstr "แนว~ตั้ง"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "ด้านบน"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "ตรงกลาง"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
 #, fuzzy
@@ -6013,11 +5052,6 @@ msgstr "ขอบการ~อ้างอิง"
 #, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "โ~หมดโครงร่างแถบเอเซีย"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "คุณสมบัติ"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
 #, fuzzy
@@ -6064,30 +5098,22 @@ msgstr "ตรวจความถูกต้องอัตโนมัติ
 msgid  "Replace"
 msgstr "แทนที่"
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Exceptions"
-msgstr "ข้อยกเว้น!!!!"
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Options"
 msgstr "ตัวเลือก"
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_QUOTE.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Localized Options"
-msgstr ""
+msgstr "ตัวเลือกตามท้องถิ่น"
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Word Completion"
 msgstr "Word Completion"
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Smart Tags"
-msgstr ""
+msgstr "สมาร์ทแท็ก (Smart Tags)"
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.FT_LANG.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6104,11 +5130,6 @@ msgstr "ใช้ตารางแทนที่!!!!"
 msgid  "Correct TWo INitial CApitals"
 msgstr "ตัวพิมพ์ใหญ่เริ่มต้นสองตัว!!!!"
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-#, fuzzy
-msgid  "Capitalize first letter of every sentence"
-msgstr "เปลี่ยนตัวอักษรแรกของประโยคให้เป็นตัวพิมพ์ใหญ่!!!!"
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 #, fuzzy
 msgid  "Automatic *bold* and _underline_"
@@ -6118,11 +5139,6 @@ msgstr " *ตัวหนา*  และขีดเส้นใต้_ อั�
 #, fuzzy
 msgid  "Ignore double spaces"
 msgstr "ไม่สนใจช่องว่างสองช่อง!!!!"
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-#, fuzzy
-msgid  "URL Recognition"
-msgstr "จดจำ URL !!!!"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
 #, fuzzy
@@ -6139,16 +5155,6 @@ msgstr "การตั้งค่า"
 msgid  "~Edit..."
 msgstr "แ~ก้ไข...!!!!"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "[M]"
-msgstr "[M]"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-#, fuzzy
-msgid  "[T]"
-msgstr "[T]"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "[M]: Replace while modifying existing text"
@@ -6163,11 +5169,6 @@ msgstr "[T]: รูปแบบอัตโนมัติ/แก้ไขให
 #, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "เอาย่อหน้าที่ว่างออก!!!!"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-#, fuzzy
-msgid  "Replace Custom Styles"
-msgstr "แทนที่แบบที่กำหนดเอง!!!!"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
 #, fuzzy
@@ -6193,11 +5194,6 @@ msgstr "ใช้เส้นขอบ!!!!"
 #, fuzzy
 msgid  "Create table"
 msgstr "สร้างตาราง!!!!"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "Apply Styles"
-msgstr "เริ่มใช้รูปแบบ!!!!"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
 #, fuzzy
@@ -6235,14 +5231,12 @@ msgid  "~Text only"
 msgstr "~ข้อความเท่านั้น!!!!"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_NEW_REPLACE.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~New"
-msgstr "ใ~หม่!!!!"
+msgstr "ใหม่"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_DELETE_REPLACE.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Delete"
-msgstr "~ลบ!!!!"
+msgstr "ลบ"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.STR_MODIFY.STRING.TEXT
 #, fuzzy
@@ -6258,11 +5252,6 @@ msgstr "คำย่อ (ไม่มีตัวพิมพ์ใหญ่ต�
 #, fuzzy
 msgid  "~AutoInclude"
 msgstr "รวม~อัตโนมัติ!!!!"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Words with TWo INitial CApitals"
-msgstr "คำที่มีตัวพิมพ์ใหญ่สองตัวแรก"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
 #, fuzzy
@@ -6281,27 +5270,27 @@ msgstr "รวมอั~ตโนมัติ"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWABBREV.STRING.TEXT
 msgid  "New abbreviations"
-msgstr ""
+msgstr "ตัวย่อใหม่"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELABBREV.STRING.TEXT
 msgid  "Delete abbreviations"
-msgstr ""
+msgstr "ลบตัวย่อ"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWDOUBLECAPS.STRING.TEXT
 msgid  "New words with two initial capitals"
-msgstr ""
+msgstr "คำใหม่ที่มีตัวอักษรใหญ่ขึ้นต้นคำสองตัวอักษร"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELDOUBLECAPS.STRING.TEXT
 msgid  "Delete words with two initial capitals"
-msgstr ""
+msgstr "ลบคำที่มีตัวอักษรใหญ่ขึ้นต้นคำสองตัวอักษร"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.STRING.TEXT
 msgid  "Add non breaking space before specific punctuation marks in french text"
-msgstr ""
+msgstr "เติมวรรคที่ไม่แบ่งบรรทัด (non breaking space) ก่อนเครื่องหมายวรรคตอนจำเพาะในข้อความภาษาฝรั่งเศส"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_ORDINAL.STRING.TEXT
 msgid  "Format ordinal numbers suffixes (1st -> 1^st)"
-msgstr ""
+msgstr "จัดรูปแบบตัวต่อท้ายเลขแสดงลำดับ (1st -> 1^st)"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_SINGLE.FIXEDLINE.TEXT
 #, fuzzy
@@ -6358,34 +5347,29 @@ msgstr "อัญประกาศเปิด"
 msgid  "End quote"
 msgstr "อัญประกาศปิด"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "ค่าปริยาย"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
 msgid  "Single quotes default"
-msgstr ""
+msgstr "ใช้เครื่องหมายอัญประกาศเดี่ยวโดยปริยาย"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
 msgid  "Double quotes default"
-msgstr ""
+msgstr "ใช้เครื่องหมายอัญประกาศคู่โดยปริยาย"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
 msgid  "Start quote of single quotes"
-msgstr ""
+msgstr "เริ่มอัญประกาศเดี่ยว"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
 msgid  "Start quote of double quotes"
-msgstr ""
+msgstr "เริ่มอัญประกาศคู่"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
 msgid  "End quote of single quotes"
-msgstr ""
+msgstr "จบอัญประกาศเดี่ยว"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
 msgid  "End quote of double quotes"
-msgstr ""
+msgstr "จบอัญประกาศคู่"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -6409,7 +5393,7 @@ msgstr "~รวบรวมคำ"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CHECKBOX.TEXT
 msgid  "~When closing a document, remove the words collected from it from the list"
-msgstr ""
+msgstr "เมื่อปิดเอกสารให้ลบคำที่เก็บมาจากเอกสารออกจากรายการ"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6433,36 +5417,21 @@ msgstr "~ลบรายการ!!!!"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.CB_SMARTTAGS.CHECKBOX.TEXT
 msgid  "Label text with smart tags"
-msgstr ""
+msgstr "ติดป้ายข้อความด้วยสมาร์ทแท็ก"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.FT_SMARTTAGS.FIXEDTEXT.TEXT
 msgid  "Currently installed smart tags"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "คุณสมบัติ"
+msgstr "สมาร์ทแท็กที่ติดตั้งอยู่ในปัจจุบัน"
 
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 #, fuzzy
 msgid  "Unlinked graphic"
 msgstr "กราฟิกที่ไม่เชื่อมโยง"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "พื้นหลัง"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "A~s"
 msgstr "เป็~น"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "สี"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -6474,35 +5443,10 @@ msgstr "กราฟิก"
 msgid  "F~or"
 msgstr "สำ~หรับ"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cell"
-msgstr "เซลล์"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Row"
-msgstr "แถว"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Table"
-msgstr "ตาราง"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Paragraph"
-msgstr "ย่อหน้า"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Character"
 msgstr "อักขระ"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Background color"
-msgstr "สีพื้นหลัง"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6559,26 +5503,6 @@ msgstr "แสดงตั~วอย่าง"
 msgid  "Find graphics"
 msgstr "หากราฟิกส์"
 
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Border / Background"
-msgstr "เส้นขอบ / พื้นหลัง"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "เส้นขอบ"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "พื้นหลัง"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "เส้นขอบ"
-
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Line arrangement"
@@ -6593,11 +5517,6 @@ msgstr "~ค่าปริยาย"
 #, fuzzy
 msgid  "~User-defined"
 msgstr "ระบุ~ผู้ใช้"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "บรรทัด"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6653,16 +5572,6 @@ msgstr "ระ~ยะ"
 #, fuzzy
 msgid  "C~olor"
 msgstr "~สี"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Shadow style"
-msgstr "รูปแบบการแรเงา"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "คุณสมบัติ"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
 #, fuzzy
@@ -6734,31 +5643,6 @@ msgstr "กำหนดให้มีกรอบด้านบน ด้า�
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "กำหนดให้มีกรอบด้านซ้าย ด้านขวา และด้านในทั้งหมด"
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Shadow"
-msgstr "ไม่มีเงา"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Right"
-msgstr "แสดงเงาที่ด้านล่างขวา"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Right"
-msgstr "แสดงเงาที่ด้านบนขวา"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Left"
-msgstr "แสดงเงาที่ด้านล่างซ้าย"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Left"
-msgstr "แสดงเงาที่ด้านบนขวา"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Western text font"
@@ -6783,11 +5667,6 @@ msgstr "~รูปร่างตัวพิมพ์"
 #, fuzzy
 msgid  "Normal"
 msgstr "ปกติ"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Italic"
-msgstr "เอียง"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -6839,19 +5718,13 @@ msgstr "รู~ปร่างของตัวพิมพ์"
 msgid  "Example"
 msgstr "ตัวอย่าง"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "สี"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Font ~color"
-msgstr "สีตัว~อักษร"
+msgstr "สีตัวอักษร"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.STRING.TEXT
 msgid  "No %1"
-msgstr ""
+msgstr "หมายเลข %1"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_TRANSPARENT.STRING.TEXT
 #, fuzzy
@@ -6860,7 +5733,7 @@ msgstr "โปร่งแสง"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EFFECTS.FIXEDTEXT.TEXT
 msgid  "~Effects"
-msgstr ""
+msgstr "จัดรูปแบบอักษร"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -6882,25 +5755,10 @@ msgstr "ตัวพิมพ์เล็ก"
 msgid  "Title"
 msgstr "ชื่อเรื่อง"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small capitals"
-msgstr "ตัวพิมพ์ใหญ่ขนาดเล็ก"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Relief"
 msgstr "~นูน"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Embossed"
-msgstr "นูนขึ้น"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Engraved"
-msgstr "รอยสลัก"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
 #, fuzzy
@@ -6924,7 +5782,7 @@ msgstr "~ซ่อน"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE.FIXEDTEXT.TEXT
 msgid  "~Overlining"
-msgstr ""
+msgstr "ขีดเส้นเหนือ"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_SINGLE.STRINGLIST.ITEM
 #, fuzzy
@@ -6935,11 +5793,6 @@ msgstr "เดี่ยว"
 #, fuzzy
 msgid  "Double"
 msgstr "คู่"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Dotted"
-msgstr "จุด"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
 #, fuzzy
@@ -7003,29 +5856,19 @@ msgstr "ลอนคู่"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE_COLOR.FIXEDTEXT.TEXT
 msgid  "O~verline color"
-msgstr ""
+msgstr "สีของเส้นเหนือ"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_STRIKEOUT.FIXEDTEXT.TEXT
 msgid  "~Strikethrough"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With /"
-msgstr "ด้วย /"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With X"
-msgstr "ด้วย X"
+msgstr "ขีดเส้นทับ"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
 msgid  "~Underlining"
-msgstr ""
+msgstr "ขีดเส้นใต้"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE_COLOR.FIXEDTEXT.TEXT
 msgid  "U~nderline color"
-msgstr ""
+msgstr "สีของเส้นใต้"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_INDIVIDUALWORDS.CHECKBOX.TEXT
 #, fuzzy
@@ -7039,63 +5882,18 @@ msgstr "เครื่องหมายเ~น้น"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Dot"
-msgstr "จุด"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Circle"
-msgstr "วงกลม"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Disc"
 msgstr "ดิสก์"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Accent"
-msgstr "เน้น"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Position"
 msgstr "~ตำแหน่ง"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above text"
-msgstr "เหนือข้อความ"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below text"
-msgstr "ใต้ข้อความ"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Small Capitals"
-msgstr "ตัวพิมพ์เล็ก"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Outline"
 msgstr "เค้าร่าง"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "เงา"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-#, fuzzy
-msgid  "Blinking"
-msgstr "กระพริบ"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "ตำแหน่ง"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7126,11 +5924,6 @@ msgstr "ขนาดตัวอักษรสัมพัทธ์"
 #, fuzzy
 msgid  "Rotation / scaling"
 msgstr "Rotation / scaling"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scaling"
-msgstr "Scaling"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7164,16 +5957,6 @@ msgstr "ระยะห่าง"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Default"
-msgstr "ค่าปริยาย"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Expanded"
-msgstr "ขยาย"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Condensed"
 msgstr "ย่อ"
 
@@ -7186,11 +5969,6 @@ msgstr "โด~ย"
 #, fuzzy
 msgid  "~Pair kerning"
 msgstr "~Pair kerning"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Double-lined"
-msgstr "บรรทัดคู่"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
 #, fuzzy
@@ -7212,26 +5990,6 @@ msgstr "อักขระแ~รก"
 msgid  "(None)"
 msgstr "(ไม่มี)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  "("
-msgstr "("
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "["
-msgstr "["
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<"
-msgstr "<"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "{"
-msgstr "{"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Other Characters..."
@@ -7242,26 +6000,6 @@ msgstr "อักขระอื่น ๆ..."
 msgid  "Final charact~er"
 msgstr "อัก~ขระสุดท้าย"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  ")"
-msgstr ")"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "]"
-msgstr "]"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  ">"
-msgstr ">"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "}"
-msgstr "}"
-
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 #, fuzzy
 msgid  "Connector"
@@ -7271,11 +6009,6 @@ msgstr "ตัวเชื่อมต่อ"
 #, fuzzy
 msgid  "~Type"
 msgstr "~ชนิด"
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line skew"
-msgstr "บรรทัดเฉ"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7362,11 +6095,6 @@ msgstr "~ขวา"
 msgid  "Vertical"
 msgstr "แนวตั้ง"
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "ไม่~มี"
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Top"
@@ -7386,16 +6114,6 @@ msgstr "ระ~ยะห่าง!!!!"
 #, fuzzy
 msgid  "~Bottom"
 msgstr "~ล่าง"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "ซ้าย-ไป-ขวา"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "ขวา-ไป-ซ้าย"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
 #, fuzzy
@@ -7483,9 +6201,8 @@ msgid  "~Original Size"
 msgstr "ขนาด~ต้นฉบับ!!!!"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.TABPAGE.TEXT
-#, fuzzy
 msgid  "Callouts"
-msgstr "คำบรรยายภาพ"
+msgstr "กรอบคำพูด"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ABSTAND.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7496,11 +6213,6 @@ msgstr "~ระยะห่าง"
 #, fuzzy
 msgid  "~Angle"
 msgstr "~มุม"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Free"
-msgstr "อิสระ!!!!"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
 #, fuzzy
@@ -7531,16 +6243,6 @@ msgstr "~ส่วนขยาย"
 #, fuzzy
 msgid  "Optimal"
 msgstr "เหมาะที่สุด!!!!"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "จากด้านบน"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From left"
-msgstr "จากด้านล่าง"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
 #, fuzzy
@@ -7577,36 +6279,6 @@ msgstr "เ~หมาะที่สุด"
 msgid  "Straight Line"
 msgstr "เส้นตรง"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-#, fuzzy
-msgid  "Angled Line"
-msgstr "เส้นเป็นเหลี่ยมเป็นมุม"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-#, fuzzy
-msgid  "Angled Connector Line"
-msgstr "เส้นเชื่อมต่อเป็นเหลี่ยมเป็นมุม"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-#, fuzzy
-msgid  "Double-angled line"
-msgstr "เส้นเป็นเหลี่ยมเป็นมุมคู่"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Top;Middle;Bottom"
-msgstr "บน;กลาง;ล่าง!!!!"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Left;Middle;Right"
-msgstr "ซ้าย;กลาง;ขวา!!!!"
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "ตำแหน่งและขนาด"
-
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Callout"
@@ -7614,23 +6286,23 @@ msgstr "คำบรรยายภาพ!!!!"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.TABPAGE.TEXT
 msgid  "Assign Macro"
-msgstr ""
+msgstr "กำหนดแมคโคร"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_EVENT.STRING.TEXT
 msgid  "Event"
-msgstr ""
+msgstr "เหตุการณ์ (Event)"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned macro"
-msgstr ""
+msgstr "แมคโครที่กำหนดไว้"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FIXEDTEXT.TEXT
 msgid  "~Existing macros\n"
-msgstr ""
+msgstr "แมคโครที่มีอยู่\n"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PUSHBUTTON.TEXT
 msgid  "~Assign"
-msgstr ""
+msgstr "กำหนด"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -7639,17 +6311,12 @@ msgstr "Remove"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.STR_MACROS.STRING.TEXT
 msgid  "Macros"
-msgstr ""
+msgstr "แมคโีคร"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.TABPAGE.TEXT
 #, fuzzy
 msgid  "Dimensioning"
 msgstr "มีมิติ!!!!"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "บรรทัด"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7685,11 +6352,6 @@ msgstr "มาตรวัดใ~ต้วัตถุ"
 #, fuzzy
 msgid  "Decimal places"
 msgstr "ตำแหน่งทศนิยม"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "คำอธิบาย!!!!"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7733,58 +6395,13 @@ msgstr "~หมวดหมู่"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "All"
-msgstr "ทั้งหมด!!!!"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "User-defined"
-msgstr "กำหนดโดยผู้ใช้!!!!"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "ตัวเลข!!!!"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Percent"
-msgstr "ร้อยละ!!!!"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Currency"
-msgstr "สกุลเงิน"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "วันที่"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Time"
-msgstr "เวลา!!!!"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Scientific"
 msgstr "วิทยาศาสตร์!!!!"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Fraction"
-msgstr "เศษส่วน"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Boolean Value"
 msgstr "ค่าบูลีน"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "ข้อความ"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7836,11 +6453,6 @@ msgstr "~ภาษา!!!!"
 msgid  "So~urce format"
 msgstr "แห~ล่งรูปแบบ!!!!"
 
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Add"
-
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Remove"
@@ -7891,16 +6503,6 @@ msgstr "~รายการลำดับ!!!!"
 msgid  "1, 2, 3, ... "
 msgstr "1, 2, 3, ...!!!!"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ... "
-msgstr "A, B, C, ...!!!!"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "I, II, III, ... "
@@ -7916,16 +6518,6 @@ msgstr "i, ii, iii, ...!!!!"
 msgid  "A, .., AA, .., AAA, ... "
 msgstr "A, .., AA, .., AAA, ...!!!!"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, .., aa, .., aaa, ..."
-msgstr "a, .., aa, .., aaa, ...!!!!"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bullet"
-msgstr "รายการ!!!!"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Graphics"
@@ -7936,62 +6528,57 @@ msgstr "กราฟิก"
 msgid  "Linked graphics"
 msgstr "เชื่อมโยงกราฟิก!!!!"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "ไม่มี"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
 msgid  "Native Numbering"
-msgstr ""
+msgstr "การแสดงตัวเลขตามแบบพื้นเดิม"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.38.STRINGLIST.ITEM
 msgid  "А, Б, .., Аа, Аб, ... (Bulgarian)"
-msgstr ""
+msgstr "А, Б, .., Аа, Аб, ... (บัลแกเรียน)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.39.STRINGLIST.ITEM
 msgid  "а, б, .., аа, аб, ... (Bulgarian)"
-msgstr ""
+msgstr "а, б, .., аа, аб, ... (บัลแกเรียน)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.40.STRINGLIST.ITEM
 msgid  "А, Б, .., Аа, Бб, ... (Bulgarian)"
-msgstr ""
+msgstr "А, Б, .., Аа, Бб, ... (บัลแกเรียน)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.41.STRINGLIST.ITEM
 msgid  "а, б, .., аа, бб, ... (Bulgarian)"
-msgstr ""
+msgstr "а, б, .., аа, бб, ... (บัลแกเรียน)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.42.STRINGLIST.ITEM
 msgid  "А, Б, .., Аа, Аб, ... (Russian)"
-msgstr ""
+msgstr "А, Б, .., Аа, Аб, ... (รัสเซีย)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.43.STRINGLIST.ITEM
 msgid  "а, б, .., аа, аб, ... (Russian)"
-msgstr ""
+msgstr "а, б, .., аа, аб, ... (รัสเซีย)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.44.STRINGLIST.ITEM
 msgid  "А, Б, .., Аа, Бб, ... (Russian)"
-msgstr ""
+msgstr "А, Б, .., Аа, Бб, ... (รัสเซีย)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.45.STRINGLIST.ITEM
 msgid  "а, б, .., аа, бб, ... (Russian)"
-msgstr ""
+msgstr "а, б, .., аа, бб, ... (รัสเซีย)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.48.STRINGLIST.ITEM
 msgid  "А, Б, .., Аа, Аб, ... (Serbian)"
-msgstr ""
+msgstr "А, Б, .., Аа, Аб, ... (เซอร์เบีย)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.49.STRINGLIST.ITEM
 msgid  "а, б, .., аа, аб, ... (Serbian)"
-msgstr ""
+msgstr "а, б, .., аа, аб, ... (เซอร์เบีย)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.50.STRINGLIST.ITEM
 msgid  "А, Б, .., Аа, Бб, ... (Serbian)"
-msgstr ""
+msgstr "А, Б, .., Аа, Бб, ... (เซอร์เบีย)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.51.STRINGLIST.ITEM
 msgid  "а, б, .., аа, бб, ... (Serbian)"
-msgstr ""
+msgstr "а, б, .., аа, бб, ... (เซอร์เบีย)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_PREFIX.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8118,11 +6705,6 @@ msgstr "ตรงกลางของตัวอักขระ"
 msgid  "Bottom of character"
 msgstr "ด้านล่างของตัวอักขระ"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "ด้านบนของบรรทัด"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -8132,11 +6714,6 @@ msgstr "ตรงกลางของบรรทัด"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "ด้านล่างของบรรทัด"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "All levels"
-msgstr "ระดับทั้งหมด!!!!"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
 #, fuzzy
@@ -8165,7 +6742,7 @@ msgstr "สัมพั~นธ์!!!!"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_INDENT.FIXEDTEXT.TEXT
 msgid  "Width of numbering"
-msgstr ""
+msgstr "ความกว้างของการแสดงตัวเลข"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_NUMDIST.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8179,41 +6756,36 @@ msgstr "การจัดวาง~รายการลำดับ!!!!"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LABEL_FOLLOWED_BY.FIXEDTEXT.TEXT
 msgid  "Numbering followed by"
-msgstr ""
+msgstr "แสดงตัวเลขตามด้วย"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.ITEM1.STRINGLIST.ITEM
 msgid  "Tab stop"
-msgstr ""
+msgstr "จุดตั้งระยะ"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.ITEM2.STRINGLIST.ITEM
 msgid  "Space"
-msgstr ""
+msgstr "วรรค"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.ITEM3.STRINGLIST.ITEM
 msgid  "Nothing"
-msgstr ""
+msgstr "ไม่มีอะไร"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_LISTTAB.FIXEDTEXT.TEXT
 msgid  "at"
-msgstr ""
+msgstr "ที่"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_ALIGNED_AT.FIXEDTEXT.TEXT
 msgid  "Aligned at"
-msgstr ""
+msgstr "จัดตรงแนวที่"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_INDENT_AT.FIXEDTEXT.TEXT
 msgid  "Indent at"
-msgstr ""
+msgstr "ร่นย่อหน้าที่"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.PB_STANDARD.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Default"
 msgstr "ค่าปริยาย"
-
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Link"
-msgstr "เชื่อมโยง"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 #, fuzzy
@@ -8241,9 +6813,8 @@ msgid  "Orientation"
 msgstr "การวางแนว"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.RB_PORTRAIT.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Portrait"
-msgstr "แนว~ตั้ง"
+msgstr "แนวตั้ง"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.RB_LANDSCAPE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -8256,14 +6827,8 @@ msgid  "~Text direction"
 msgstr "~ทิศทางข้อความ!!!!"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_PAPER_TRAY.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Paper ~tray"
-msgstr "~ถาดกระดาษ"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Margins"
-msgstr "ระยะขอบ!!!!"
+msgstr "ถาดกระดาษ"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8297,58 +6862,13 @@ msgstr "การจัดวางหน้า"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right and left"
-msgstr "ขวาและซ้าย!!!!"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Mirrored"
 msgstr "สลับด้าน"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only right"
-msgstr "ขวาเท่านั้น!!!!"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only left"
-msgstr "ซ้ายเท่านั้น"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "For~mat"
 msgstr "รูปแ~บบ!!!!"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ...!!!!"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "ไม่มี"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8396,14 +6916,12 @@ msgid  "The margin settings are out of print range.\n\nDo you still want to appl
 msgstr "กำหนดระยะขอบออกมาจากช่วงการพิมพ์\n\nคุณยังต้องการใช้การกำหนดเหล่านี้อยู่หรือไม่?"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A6"
-msgstr ""
+msgstr "A6"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A5.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A5"
-msgstr ""
+msgstr "A5"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A4.ITEMLIST.ITEM
 #, fuzzy
@@ -8411,14 +6929,12 @@ msgid  "A4"
 msgstr "A4"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A3.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A3"
-msgstr ""
+msgstr "A3"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_ISO.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B6 (ISO)"
-msgstr "B5 (ISO)"
+msgstr "B6 (ISO)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_ISO.ITEMLIST.ITEM
 #, fuzzy
@@ -8426,133 +6942,116 @@ msgid  "B5 (ISO)"
 msgstr "B5 (ISO)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_ISO.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B4 (ISO)"
-msgstr "B5 (ISO)"
+msgstr "B4 (ISO)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LETTER.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Letter"
-msgstr ""
+msgstr "จดหมาย (Letter)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Legal"
-msgstr ""
+msgstr "นิติ (Legal)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL2.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Long Bond"
-msgstr ""
+msgstr "ลองบอนด์ (Long Bond)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_TABLOID.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Tabloid"
-msgstr ""
+msgstr "จุลสาร (Tabloid)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_JIS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B6 (JIS)"
-msgstr "B5 (ISO)"
+msgstr "B6 (JIS)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_JIS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B5 (JIS)"
-msgstr "B5 (ISO)"
+msgstr "B5 (JIS)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_JIS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B4 (JIS)"
-msgstr "B5 (ISO)"
+msgstr "B4 (JIS)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI16.ITEMLIST.ITEM
-#, fuzzy
 msgid  "16 Kai"
-msgstr ""
+msgstr "16 Kai"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32.ITEMLIST.ITEM
-#, fuzzy
 msgid  "32 Kai"
-msgstr ""
+msgstr "32 Kai"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32BIG.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Big 32 Kai"
-msgstr ""
+msgstr "Big 32 Kai"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_USER.ITEMLIST.ITEM
-#, fuzzy
 msgid  "User"
-msgstr ""
+msgstr "ผู้ใช้"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_DL.ITEMLIST.ITEM
-#, fuzzy
 msgid  "DL Envelope"
-msgstr ""
+msgstr "ซอง DL"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C6.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C6 Envelope"
-msgstr ""
+msgstr "ซอง C6"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C65.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C6/5 Envelope"
-msgstr ""
+msgstr "ซอง C6/5"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C5.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C5 Envelope"
-msgstr ""
+msgstr "ซอง C5"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C4.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C4 Envelope"
-msgstr ""
+msgstr "ซอง C4"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM675.ITEMLIST.ITEM
 msgid  "#6 3/4 (Personal) Envelope"
-msgstr ""
+msgstr "ซอง #6 3/4 (Personal)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_MONARCH.ITEMLIST.ITEM
 msgid  "#8 (Monarch) Envelope"
-msgstr ""
+msgstr "ซอง #8 (Monarch)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM9.ITEMLIST.ITEM
 msgid  "#9 Envelope"
-msgstr ""
+msgstr "ซอง #9"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM10.ITEMLIST.ITEM
 msgid  "#10 Envelope"
-msgstr ""
+msgstr "ซอง #10"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM11.ITEMLIST.ITEM
 msgid  "#11 Envelope"
-msgstr ""
+msgstr "ซอง #11"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM12.ITEMLIST.ITEM
 msgid  "#12 Envelope"
-msgstr ""
+msgstr "ซอง #12"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A2.ITEMLIST.ITEM
 msgid  "A2"
-msgstr ""
+msgstr "A2"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A1.ITEMLIST.ITEM
 msgid  "A1"
-msgstr ""
+msgstr "A1"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A0.ITEMLIST.ITEM
 msgid  "A0"
-msgstr ""
+msgstr "A0"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DIA.ITEMLIST.ITEM
 msgid  "Dia Slide"
-msgstr ""
+msgstr "Dia Slide"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_SCREEN.ITEMLIST.ITEM
 msgid  "Screen"
-msgstr ""
+msgstr "สกรีน"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TABPAGE.TEXT
 #, fuzzy
@@ -8579,11 +7078,6 @@ msgstr "บรรทัดแ~รก"
 msgid  "~Automatic"
 msgstr "~อัตโนมัติ"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Indent"
-msgstr "ระยะเยื้อง"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Ab~ove paragraph"
@@ -8601,28 +7095,8 @@ msgstr "ระยะห่าง"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Single"
-msgstr "บรรทัดเดี่ยว"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "1.5 lines"
 msgstr "1.5 บรรทัด!!!!"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Double"
-msgstr "บรรทัดคู่"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Proportional"
-msgstr "ตามสัดส่วน"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At least"
-msgstr "น้อยที่สุด!!!!"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -8660,7 +7134,6 @@ msgid  "Alignment"
 msgstr "การจัดตำแหน่ง"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_ALIGN.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Options"
 msgstr "ตัวเลือก"
 
@@ -8699,21 +7172,6 @@ msgstr "~ขวา/ล่าง"
 msgid  "~Last line"
 msgstr "บรรทัด~สุดท้าย"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "ค่าปริยาย"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "ซ้าย"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "ตรงกลาง"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Expand single word"
@@ -8744,35 +7202,15 @@ msgstr "อัตโนมัติ"
 msgid  "Base line"
 msgstr "บรรทัดหลัก"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "ด้านบน"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "ตรงกลาง"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bottom"
 msgstr "ด้านล่าง"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "คุณสมบัติ"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Text ~direction"
 msgstr "ทิศ~ทางข้อความ"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Text Flow"
-msgstr "การไหลของข้อความ"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8799,11 +7237,6 @@ msgstr "จำนวน~มากที่สุดของยัติภั�
 msgid  "Hyphenation"
 msgstr "การใส่ยัติภังค์"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Breaks"
-msgstr "Breaks"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Insert"
@@ -8814,30 +7247,10 @@ msgstr "ตัวแ~บ่ง"
 msgid  "~Type"
 msgstr "~ชนิด"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Page"
-msgstr "หน้า"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Column"
-msgstr "คอลัมน์"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Position"
 msgstr "~ตำแหน่ง"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Before"
-msgstr "ก่อน"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After"
-msgstr "หลังจาก"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8906,12 +7319,7 @@ msgstr "ตัวอย่าง"
 
 #: tabpages/paragrph.src#STR_PAGE_STYLE.STRING.TEXT
 msgid  "Page Style"
-msgstr ""
-
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the gradient:"
-msgstr "กรุณาใส่ชื่อเพื่อไล่ระดับสี:"
+msgstr "กระบวนแบบหน้า"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 #, fuzzy
@@ -8943,11 +7351,6 @@ msgstr "คุณแน่ใจหรือไม่ที่ต้องกา
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 msgstr "ดัดแปลงแก้ไขบิตแมปโดยไม่มีการบันทึก \nดัดแปลงแก้ไขบิตแมปที่เลือกหรือเพิ่มบิตแมปใหม่"
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the line style:"
-msgstr "กรุณาใส่ชื่อรูปแบบเส้น:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the line style?"
@@ -8958,11 +7361,6 @@ msgstr "คุณต้องการลบรูปแบบเส้นหร
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
 msgstr "ดัดแปลงแก้ไขรูปแบบเส้นโดยไม่มีการบันทึก \nดัดแปลงแก้ไขลักษณะเส้นที่เลือกหรือเพิ่มรูปแบบเส้นใหม่"
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the hatching:"
-msgstr "กรุณาใส่ชื่อเส้นลาย:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the hatching?"
@@ -8972,16 +7370,6 @@ msgstr "คุณต้องลบการใส่เส้นลายกา
 #, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 msgstr "มีการเปลี่ยนแปลงชนิดการใส่เส้นลายแต่ไม่บันทึก \nเปลี่ยนแปลงชนิดการใส่เส้นลายที่เลือกหรือเพิ่มชนิดการใส่เส้นลายใหม่"
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "เปลี่ยนแปลง"
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "เพิ่ม"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
 #, fuzzy
@@ -9038,16 +7426,6 @@ msgstr "คุณต้องการลบหัวลูกศรหรือ
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr "หัวลูกศรมีการเปลี่ยนแปลงโดยไม่มีการบันทึก\nคุณต้องการบันทึกหัวลูกศรตอนนี้หรือไม่?"
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "ตำแหน่งและขนาด"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "ขนาด"
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Width"
@@ -9062,11 +7440,6 @@ msgstr "ความ~สูง"
 #, fuzzy
 msgid  "~Keep ratio"
 msgstr "รักษาอัต~ราส่วน"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "ตัวยึด"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9092,11 +7465,6 @@ msgstr "เป็น~อักขระ"
 #, fuzzy
 msgid  "To ~frame"
 msgstr "ไปที่~กรอบ"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "ป้องกัน"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9184,22 +7552,14 @@ msgid  "Axial"
 msgstr "ตามแกน"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Radial"
 msgstr "รัศมีวงกลม"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Ellipsoid"
 msgstr "กลมรี"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Quadratic"
-msgstr "Quadratic"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Square"
 msgstr "สี่เหลี่ยมจตุรัส"
 
@@ -9224,7 +7584,6 @@ msgid  " degrees"
 msgstr " องศา"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_BORDER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Border"
 msgstr "เ~ส้นขอบ"
 
@@ -9255,16 +7614,6 @@ msgstr "เติม!!!!"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "None"
-msgstr "ไม่มี"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "สี"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Hatching"
 msgstr "การลงลายเส้น"
 
@@ -9288,11 +7637,6 @@ msgstr "อั~ตโนมัติ"
 msgid  "~Background color"
 msgstr "สี~พื้นหลัง"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "ขนาด"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Original"
@@ -9304,19 +7648,13 @@ msgid  "Re~lative"
 msgstr "สัม~พันธ์!!!!"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_SIZE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Wi~dth"
-msgstr "ความก~ว้าง"
+msgstr "ความกว้าง"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_Y_SIZE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "H~eight"
 msgstr "ความสู~ง"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "ตำแหน่ง"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9337,11 +7675,6 @@ msgstr "~ปูเรียง"
 #, fuzzy
 msgid  "Auto~Fit"
 msgstr "~พอดีอัตโนมัติ"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Offset"
-msgstr "ออฟเซ็ต"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9478,11 +7811,6 @@ msgstr "บันทึกรายการบิทแมป"
 msgid  "Gradients"
 msgstr "ไล่ระดับสี"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Rectangular"
-msgstr "สี่เหลี่ยมผืนผ้า"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~From"
@@ -9565,11 +7893,11 @@ msgstr "ภาพบิตแมป"
 
 #: tabpages/tabarea.src#STR_LB_HATCHINGSTYLE.STRING.TEXT
 msgid  "Hatching Style"
-msgstr ""
+msgstr "กระบวนแบบการแรเงา"
 
 #: tabpages/tabarea.src#STR_CUI_COLORMODEL.STRING.TEXT
 msgid  "Color Mode"
-msgstr ""
+msgstr "แบบวิธี (Mode) ของสี"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.TABPAGE.TEXT
 #, fuzzy
@@ -9601,11 +7929,6 @@ msgstr "ความ~กว้าง"
 msgid  "~Transparency"
 msgstr "โ~ปร่งแสง"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Arrow styles"
-msgstr "ลักษณะลูกศร"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "St~yle"
@@ -9633,22 +7956,16 @@ msgstr "ปรับค่าปลายลูกศรให้ตรง~ก�
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_EDGE_STYLE.FIXEDLINE.TEXT
 msgid  "Corner and cap styles"
-msgstr ""
+msgstr "กระบวนแบบของมุมและปลายเส้น"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_EDGE_STYLE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Corner style"
-msgstr "ลักษณะมุม"
+msgstr "กระบวนแบบของมุม"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Rounded"
 msgstr "กลม"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "- none -"
-msgstr "- ไม่มี -"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -9662,15 +7979,15 @@ msgstr "Beveled"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_CAP_STYLE.FIXEDTEXT.TEXT
 msgid  "Ca~p style"
-msgstr ""
+msgstr "กระบวนแบบของปลายเส้น"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.DEFAULT.STRINGLIST.ITEM
 msgid  "Flat"
-msgstr ""
+msgstr "ราบ"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Round"
-msgstr ""
+msgstr "มน"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -9681,11 +7998,6 @@ msgstr "สี่เหลี่ยม"
 #, fuzzy
 msgid  "Icon"
 msgstr "ไอคอน!!!!"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "No Symbol"
-msgstr "ไม่มีสัญลักษณ์"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
 #, fuzzy
@@ -9728,43 +8040,32 @@ msgid  "Keep ratio"
 msgstr "รักษาอัตราส่วน"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_STYLE.STRING.TEXT
-#, fuzzy
 msgid  "Style"
-msgstr "~ลักษณะ!!!!"
+msgstr "กระบวนแบบ"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_START_STYLE.STRING.TEXT
 msgid  "Start style"
-msgstr ""
+msgstr "กระบวนแบบ"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_END_STYLE.STRING.TEXT
 msgid  "End style"
-msgstr ""
+msgstr "กระบวนแบบจบ"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_START_WIDTH.STRING.TEXT
 msgid  "Start width"
-msgstr ""
+msgstr "ความกว้างเริ่มต้น"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_END_WIDTH.STRING.TEXT
 msgid  "End width"
-msgstr ""
+msgstr "ความกว้างเริ่มต้น"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_START.STRING.TEXT
 msgid  "Start with center"
-msgstr ""
+msgstr "เริ่มตรงกลาง"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_END.STRING.TEXT
 msgid  "End with center"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-#, fuzzy
-msgid  "Define line styles"
-msgstr "กำหนดลักษณะเส้น!!!!"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "คุณสมบัติ"
+msgstr "จบตรงกลาง"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9821,11 +8122,6 @@ msgstr "เ~ปลี่ยนแปลง..."
 msgid  "~Delete..."
 msgstr "~ลบ..."
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Load Line Styles"
-msgstr "Load Line Styles"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Save Line Styles"
@@ -9833,27 +8129,27 @@ msgstr "Save Line Styles"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_TYPE.STRING.TEXT
 msgid  "Start type"
-msgstr ""
+msgstr "ชนิดการเริ่ม"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_TYPE.STRING.TEXT
 msgid  "End type"
-msgstr ""
+msgstr "ชนิดการจบ"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_NUM.STRING.TEXT
 msgid  "Start number"
-msgstr ""
+msgstr "ตัวเลขเริ่มต้น"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_NUM.STRING.TEXT
 msgid  "End number"
-msgstr ""
+msgstr "ตัวเลขจบ"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_LENGTH.STRING.TEXT
 msgid  "Start length"
-msgstr ""
+msgstr "ความยาวเริ่มต้น"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_LENGTH.STRING.TEXT
 msgid  "End length"
-msgstr ""
+msgstr "ความยาวจบ"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.TABPAGE.TEXT
 #, fuzzy
@@ -9889,26 +8185,6 @@ msgstr "เรียกลักษณะลูกศร"
 #, fuzzy
 msgid  "Save Arrow Styles"
 msgstr "บันทึกลักษณะลูกศร"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "เส้น"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "เงา"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line Styles"
-msgstr "ลักษณะเส้น!!!!"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Arrow Styles"
-msgstr "ลักษณะลูกศร!!!!"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 #, fuzzy
@@ -9955,11 +8231,6 @@ msgstr "~ตัวอักขระ!!!!"
 msgid  "Fill character"
 msgstr "เติมตัวอักขระ!!!!"
 
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "ไ~ม่มี"
-
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Character"
@@ -9971,14 +8242,12 @@ msgid  "~New"
 msgstr "ใ~หม่!!!!"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_DELALL.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "Delete ~All"
-msgstr "ลบ~ทั้งหมด!!!!"
+msgstr "ลบ~ทั้งหมด"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_DEL.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Delete"
-msgstr "~ลบ!!!!"
+msgstr "~ลบ"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.ST_LEFTTAB_ASIAN.STRING.TEXT
 #, fuzzy
@@ -10025,41 +8294,6 @@ msgstr "เลื่อนผ่าน"
 msgid  "Scroll Back and Forth"
 msgstr "เลื่อนไปข้างหลังและข้างหน้า"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Scroll In"
-msgstr "เลื่อนเข้า"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Direction"
-msgstr "ทิศทาง!!!!"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Top"
-msgstr "ไปด้านบน"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Left"
-msgstr "To Left"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Right"
-msgstr "ไปด้านขวา"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Bottom"
-msgstr "ไปด้านล่าง"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "คุณสมบัติ!!!!"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "S~tart inside"
@@ -10090,20 +8324,10 @@ msgstr "ส่วนเพิ่ม!!!!"
 msgid  "~Pixels"
 msgstr "~พิกเซล!!!!"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "หน่วงเวลา!!!!"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "~อัตโนมัติ"
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "ข้อความ"
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 #, fuzzy
@@ -10170,23 +8394,16 @@ msgstr "~บน"
 msgid  "~Bottom"
 msgstr "~ล่าง"
 
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text anchor"
-msgstr "สมอข้อความ"
-
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Full ~width"
 msgstr "เต็มความ~กว้าง"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TABPAGE.TEXT
-#, fuzzy
 msgid  "Position and Size"
 msgstr "ตำแหน่งและขนาด"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Position"
 msgstr "~ตำแหน่ง"
 
@@ -10201,14 +8418,8 @@ msgid  "Position ~Y"
 msgstr "ตำแหน่ง ~Y"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Base point"
 msgstr "จุดฐาน"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "ขนาด"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -10225,20 +8436,10 @@ msgstr "ความ~สูง"
 msgid  "~Keep ratio"
 msgstr "Protect"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "Protect"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Size"
 msgstr "~ขนาด"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Adapt"
-msgstr "ดัดแปลงแก้ไข"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
@@ -10250,60 +8451,20 @@ msgstr "~จัดความกว้างพอดีข้อความ"
 msgid  "Fit ~height to text"
 msgstr "จัดความ~สูงพอดีข้อความ"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "สมอ"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Anchor"
 msgstr "~สมอ"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To paragraph"
-msgstr "ไปที่ย่อหน้า"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "As character"
 msgstr "เป็นตัวอักขระไปที่หน้า"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To page"
-msgstr "เป็นตัวอักขระไปที่หน้า"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To frame"
-msgstr "ไปที่กรอบ"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~osition"
 msgstr "~ตำแหน่ง!!!!"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "จากด้านบน"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "บน"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "ตรงกลาง"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "ด้านล่าง"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -10320,11 +8481,6 @@ msgstr "ตรงกลางของตัวอักขระ"
 msgid  "Bottom of character"
 msgstr "ด้านล่างของตัวอักขระบนสุดของบรรทัด"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "ด้านล่างของตัวอักขระบนสุดของบรรทัด"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -10335,18 +8491,12 @@ msgstr "ตรงกลางของบรรทัด"
 msgid  "Bottom of line"
 msgstr "ด้านล่างของตำแหน่งเส้นและขนาด"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Angle"
-msgstr "มุม"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Pivot point"
 msgstr "จุดนำร่อง"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_POSPRESETS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Default settings"
 msgstr "การตั้งค่าปริยาย"
 
@@ -10376,14 +8526,8 @@ msgid  "Rotation Angle"
 msgstr "มุมหมุน"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.TABPAGE.TEXT
-#, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "เอียงและรัศมีมุม"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Corner radius"
-msgstr "รัศมีมุม"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
 #, fuzzy

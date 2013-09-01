@@ -31,405 +31,45 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: ../src/Localization/setupstrings.ulf#STRING_PREVIOUS
-msgid  "Back"
-msgstr "Späť"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEXT
-msgid  "Next"
-msgstr "Ďalej"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL
-msgid  "Cancel"
-msgstr "Zrušiť"
-
-#: ../src/Localization/setupstrings.ulf#STRING_FINISH
-msgid  "Finish"
-msgstr "Dokončiť"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DECLINE
-msgid  "Decline"
-msgstr "Odmietnuť"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALL
-msgid  "Install now"
-msgstr "Inštalovať teraz"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALL
-msgid  "Remove Now"
-msgstr "Odstrániť teraz"
-
-#: ../src/Localization/setupstrings.ulf#STRING_HELP
-msgid  "Help"
-msgstr "Pomocník"
-
 #: ../src/Localization/setupstrings.ulf#STRING_OK
 msgid  "OK"
 msgstr "OK"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ERROR
-msgid  "Error"
-msgstr "Chyba"
-
-#: ../src/Localization/setupstrings.ulf#STRING_FILE_NOT_FOUND
-msgid  "Error: File not found"
-msgstr "Chyba: Súbor nenájdený"
-
-#: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLE
-msgid  "${PRODUCT_FULLNAME} Installation Wizard"
-msgstr "${PRODUCT_FULLNAME} Sprievodca inštaláciou"
-
-#: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION
-msgid  "${PRODUCT_FULLNAME} Uninstallation Wizard"
-msgstr "${PRODUCT_FULLNAME} Sprievodca odinštaláciou"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE
-msgid  "Exit"
-msgstr "Ukončiť"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG
-msgid  "Do you really want to exit the Installation Wizard?"
-msgstr "Určite chcete ukončiť Sprievodcu inštaláciou?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION
-msgid  "Do you really want to exit the Uninstallation Wizard?"
-msgstr "Určite chcete ukončiť Sprievodcu odinštaláciou?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG
-msgid  "Do you really want to abort the installation process?"
-msgstr "Určite chcete prerušiť inštalačný proces?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE
-msgid  "Abort installation?"
-msgstr "Prerušiť inštaláciu?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION
-msgid  "Do you really want to abort the uninstallation process?"
-msgstr "Určite chcete prerušiť odinštalačný proces?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION
-msgid  "Abort uninstallation?"
-msgstr "Prerušiť odinštaláciu?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE
-msgid  "Accept License"
-msgstr "Prijať zmluvu"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE1
-msgid  "Software License Agreement"
-msgstr "Licenčná zmluva softvéru"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE2
-msgid  "Please read the following license agreement carefully."
-msgstr "Prosím pozorne si prečítajte nasledujúcu licenčnú zmluvu."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
 msgstr "Ak ste si prečítali celú licenčnú zmluvu a prijímate jej podmienky, kliknite na 'Prijať zmluvu' pre pokračovanie inštalácie."
 
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
-msgid  "Select Installation Directory"
-msgstr "Vybrať adresár pre inštaláciu"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE
-msgid  "Update the Installed Version"
-msgstr "Aktualizovať nainštalovanú verziu"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN
-msgid  "Adding Components to the Installed Version"
-msgstr "Pridať komponenty do nainštalovanej verzie"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY2
-msgid  "Install ${PRODUCT_FULLNAME} in this directory"
-msgstr "Inštalovať ${PRODUCT_FULLNAME} do tohto adresára"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY3
-msgid  "Browse..."
-msgstr "Prehľadávať..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE
-msgid  "Create New Directory"
-msgstr "Vytvoriť nový adresár"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "Adresár '${DIR}' neexistuje.\nChcete ho vytvoriť teraz?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "Adresár '${DIR}' neexistuje.\nChcete ho vytvoriť teraz alebo chcete zmeniť adresár?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
-msgid  "Select root directory"
-msgstr "Vybrať root adresár"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS
-msgid  "You do not have write access in the directory"
-msgstr "Nemáte práva na zápis do adresára"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED
-msgid  "You are not allowed to create the directory"
-msgstr "Nemáte povolené vytvoriť adresár"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS
-msgid  "Failed to create the directory"
-msgstr "Zlyhalo vytvorenie adresára"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1
-msgid  "Select Components"
-msgstr "Vybrať komponenty"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN
-msgid  "Select Additional Components"
-msgstr "Vybrať ďalšie komponenty"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
-msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr "Označnené komponenty budú inštalované. Prosím označte ich podľa toho"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
-msgid  "Feature Description"
-msgstr "Popis vlastností"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS4
-msgid  "Size (kB):"
-msgstr "Veľkosť (kB):"
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
 msgid  "Select the Type of Installation"
 msgstr "Vyberte typ inštalácie"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
-msgid  "Select the type of installation that best suits your needs:"
-msgstr "Vyberte typ inštalácie najlepšie vyhovujúci vašim potrebám:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
-msgid  "The main components will be installed. Recommended for most users."
-msgstr "Inštalované budú hlavné komponenty. Odporúčané pre väčšinu používateľov."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
-msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr "Vyberiete si komponenty, ktoré chcete inštalovať a kde budú uložené. Odporúčané pre pokročilých používateľov."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
-msgid  "Typical"
-msgstr "Typické"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7
-msgid  "Custom"
-msgstr "Vlastné"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1
-msgid  "Ready to Install"
-msgstr "Pripravený inštalovať"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE
-msgid  "Ready to Update"
-msgstr "Pripravený aktualizovať"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT2
 msgid  "The following ${PRODUCT_FULLNAME} components will be installed:"
 msgstr "Nasledujúce komponenty ${PRODUCT_FULLNAME} budú inštalované:"
 
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING1
-msgid  "Installing..."
-msgstr "Inštalujem..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING3
-msgid  "Stop"
-msgstr "Zastaviť"
-
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND
 msgid  "ERROR: Path with installation packages not found!"
 msgstr "CHYBA: Cesta s inštalačnými balíčkami nenájdená!"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE1
-msgid  "Welcome"
-msgstr "Vitajte"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE2
-msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr "Tento Sprievodca inštaláciou nainštaluje ${PRODUCT_FULLNAME} na váš počítač."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE3
-msgid  "To continue, click 'Next'."
-msgstr "Pre pokračovanie kliknite na 'Ďalej'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "Poznámka: Táto inštalácia bude uskutočnená bez administrátorských práv. Preto budete mať obmedzenú funkcionalitu (neinšalovateľné Java Runtime Environment (JRE), nemožná systémová integrácia).\nKliknite na 'Zrušiť' zmeňte svoje práva na práva administrátora v prípade, že chcete používať kompletnú funkcionalitu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
-msgid  "Installation Completed"
-msgstr "Inštalácia ukončená"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT
-msgid  "Installation Aborted"
-msgstr "Inštalácia prerušená"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR
-msgid  "Installation Failed"
-msgstr "Inštalácia zlyhala"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
-msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr "Sprievodca inštaláciou úspešne nainštaloval ${PRODUCT_FULLNAME} na váš počítač."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
-msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr "Sprievodca inštaláciou bol prerušený. ${PRODUCT_NAME} nie je nainštalovaný na vašom počítači."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr "Objavila sa chyba. A preto Sprievodca inštaláciou nemohol úspešne nainštalovať ${PRODUCT_NAME} na váš počítač. Kliknite na 'Podrobnosti...' pre viac informácií."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
-msgid  "Click 'Finish' to exit the Wizard."
-msgstr "Kliknite na 'Dokončiť' pre ukončenie Sprievodcu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON
-msgid  "Details..."
-msgstr "Podrobnosti..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
 msgstr "${PRODUCT_FULLNAME} Sprievodca odinštaláciou odstráni ${PRODUCT_FULLNAME} z vášho počítača."
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
-msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr "Prepáčte, nesprávne práva. Inštalácia bola uskutočnená s právami používateľa, ale vy máte práva administrátora."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
-msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr "Prepáčte, nesprávne práva. Inštalácia bola uskutočnená s právami administrátora, ale vy máte práva používateľa."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
-msgid  "Select the Type of Uninstallation"
-msgstr "Vyberte typ odinštalácie"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2
-msgid  "Select the type of uninstallation that best suits your needs:"
-msgstr "Vyberte typ odinštalácie najlepšie vyhovujúci vašim potrebám:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3
-msgid  "Partial"
-msgstr "Čiastočný"
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
 msgstr "Kompletne odstráni ${PRODUCT_FULLNAME} a všetky jeho komponenty z vášho systému."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
-msgid  "You choose the program features you want to remove."
-msgstr "Vy vyberiete súčasti programu, ktoré chcete odstrániť."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6
-msgid  "Complete"
-msgstr "Celková"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
-msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr "Komponenty označené X budú odstránené. Označte komponenty, ktoré chcete odstrániť."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
-msgid  "Ready to Remove"
-msgstr "Pripravený odstrániť"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2
 msgid  "The following ${PRODUCT_FULLNAME} components will be removed: "
 msgstr "Následujúce komponenty ${PRODUCT_FULLNAME} budú odstránené: "
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING1
-msgid  "Uninstalling..."
-msgstr "Odinštalovávam..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1
-msgid  "Uninstallation Completed"
-msgstr "Odinštalácia ukončená"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT
-msgid  "Uninstallation Aborted"
-msgstr "Odinštalácia prerušená"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR
-msgid  "Uninstallation Failed"
-msgstr "Odinštalácia zlyhala"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
-msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr "Sprievodca odinštaláciou úspešne odstránil ${PRODUCT_FULLNAME} z vášho počítača."
-
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
 msgstr "Sprievodca odinštaláciou úspešne odstránil vybrané komponenty ${PRODUCT_NAME} z vášho počítača."
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
-msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr "Sprievodca odinštaláciou bol prerušený pred celkovým odstránením ${PRODUCT_NAME} z vášho počítača."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr "Vyskytla sa chyba. Preto Sprievodca odinštaláciou nemohol úspešne odstrániť ${PRODUCT_NAME} z vášho počítača. Kliknite na 'Podrobnosti...' pre viac informácií."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
-msgid  "Sorry, this Operating System is not supported yet."
-msgstr "Prepáčte, tento operačný systém ešte nie je podporovaný."
-
-#: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
-msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
-msgstr "Staršia verzia ${PRODUCT_NAME} bola nájdená na vašom systéme v:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr "Musíte odstrániť staršiu verziu ${PRODUCT_NAME} pred inštaláciou novšej verzie."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
-msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
-msgstr "Novšia verzia ${PRODUCT_NAME} bola nájdená vo vašom systéme v:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr "Musíte odstrániť novšiu verziu ${PRODUCT_NAME} pred tým ako budete môcť inštalovať staršiu verziu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
-msgid  "Database"
-msgstr "Databáza"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_TIP
-msgid  "Please choose another installation directory."
-msgstr "Prosím zvoľte iný inštalačný adresár."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
-msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr "Používateľ, ktorý je prihlásený, nemôže spustiť Sprievodcu inštaláciou."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
-msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr "Prosím odhláste sa a prihláste sa znova ako používateľ s právami administrátora."
-
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
 msgstr "Pre inštaláciu nie je dostatok miesta na disku."
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_REQUIRED
-msgid  "Required disc space"
-msgstr "Požadované miesto na disku"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_AVAILABLE
-msgid  "Available disc space"
-msgstr "Dostupné miesto na disku"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
-msgid  "Please use another directory for installation or change your module selection."
-msgstr "Prosím použite na inštaláciu iný adresár, alebo zmeňte váš výber modulov."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
-msgid  "Analyzing ..."
-msgstr "Analyzujem ..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "Analyzujem databázu\nProsím čakajte ..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
@@ -467,118 +107,30 @@ msgstr "'Zrušiť' ukončí Sprievodcu odinštaláciou bez nainštalovania softv
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
 msgstr "'OK' ukončí Pomocníka a vráti vás do Sprievodcu odinštaláciou."
 
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
-msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr "Pred inštaláciou tohto produktu, si musíte prečítať a prijať celú Licenčnú zmluva softvéru pod ktorou je tento softvér licencovaný pre vaše použitie."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
-msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr "V prípade, že neprijímate všetky podmienky Licenčnej zmluvy softvéru, kliknite na 'Odmietnuť' pre ukončenie Sprievodcu inštaláciou bez inštalovania tohto produktu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
-msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr "Vyberte typ inštalácie produktu pre vykonanie nasledovných možností. Toto určí koľko informácií budete musieť poskytnúť pre konfiguráciu produktu."
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
 msgstr "Odporúčame inštalovať tento produkt do adresára navrhnutom týmto Sprievodcom inštaláciou. <p>Pre zvolenie iného umiestnenia, kliknite na 'Prehľadávať...' alebo zadajte plnú cestu k adresáru, ktorý má byť použitý, v textovom okne nižšie. <p>V prípade, že tento produkt je už nainštalovaný nie je možné zmeniť cieľový adresár."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
-msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr "Farebne označené komponenty budú nainštalované. Kliknite na ikonu komponentu pre jeho označenie alebo odznačenie.<p>Všetky už nainštalované komponenty nemôžu byť vybrané pre inštaláciu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "Uvedené komponenty sú pripravené pre inštaláciu na základe vašich konfiguračných nastavení. <p>V prípade, že ste spokojní so svojím výberom, kliknite na 'Inštalovať teraz' pre začatie inštalácie. <p>Pre kontrolu alebo úpravu vašich nastavení na predchádzajúcich stranách kliknite na 'Späť'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "Uvedené komponenty sú pripravené pre odinštaláciu na základe vašich konfiguračných nastavení. <p>V prípade, že ste spokojní so svojím výberom, kliknite na 'Odstrániť teraz' pre začatie odinštalácie. <p>Pre kontrolu alebo úpravu vašich nastavení na predchádzajúcich stranách kliknite na 'Späť'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr "Táto strana ukazuje priebeh inštalácie pomocou panelu priebehu. Pre prerušenie procesu inštalácie kliknite na 'Zastaviť'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr "Táto strana ukazuje priebeh odinštalácie pomocou panelu priebehu. Pre prerušenie procesu odinštalácie kliknite na 'Zastaviť'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
-msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr "Celková: Toto odstráni všetky nainštalované komponenty vašej verzie.<p>Čiastočná: Toto odstráni len vami vybrané komponenty zo zoznamu komponentov."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
-msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr "Komponenty označené X budú odstránené. Kliknite vedľa komponentu pre jeho označenie ale odznačenie s X."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
-msgid  "This package format is currently not supported for your operating system!"
-msgstr "Tento formát balíkov nie je v súčasnosti podporovaný pre váš operačný systém!"
-
-#: ../src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
-msgid  "Operating system"
-msgstr "Operačný systém"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT
-msgid  "Package format"
-msgstr "Formát balíka"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_INSTALL
-msgid  "Nothing to install"
-msgstr "Nič na inštaláciu"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1
-msgid  "No components have been selected for installation."
-msgstr "Pre inštaláciu neboli vybrané žiadne komponenty."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
 msgstr "Kliknite na 'OK' pre výber jedného alebo viacerých komponentov na inštaláciu alebo pre ukončenie Sprievodcu inštalácie."
 
-#: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
-msgid  "No languages have been selected for installation."
-msgstr "Pre inštaláciu neboli vybrané žiadne jazyky."
-
 #: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
 msgstr "Kliknite na 'OK' pre výber jedného alebo viacerých jazykov na inštaláciu alebo pre ukončenie sprievodcu inštaláciou."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
-msgid  "No applications have been selected for installation."
-msgstr "Pre inštaláciu neboli vybrané žiadne aplikácie."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
 msgstr "Kliknite na 'OK' pre výber jedného alebo viacerých aplikácií na inštaláciu alebo pre ukončenie sprievodcu inštaláciou."
 
-#: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
-msgid  "Nothing to uninstall"
-msgstr "Nič na odinštaláciu"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1
-msgid  "No components have been selected for uninstallation."
-msgstr "Pre odinštaláciu neboli vybrané žiadne komponenty."
-
 #: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
 msgstr "Kliknite na 'OK' pre výber jedného alebo viacerých komponentov na odinštaláciu alebo pre ukončenie Sprievodcu odinštalácie."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
-msgid  "All language components have been selected for uninstallation."
-msgstr "Všetky jazykové komponenty boli vybrané pre odinštaláciu."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr "Kliknite na 'OK' pre výber jedného alebo viacerých jazykových komponentov, ktoré nebudú odinštalované alebo pre ukončenie sprievodcu."
 
-#: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
-msgid  "All application components have been selected for uninstallation."
-msgstr "Všetky aplikačné komponenty boli vybrané pre odinštaláciu."
-
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr "Kliknite na 'OK' pre výber jedného alebo viacerých aplikačných komponentov, ktoré nebudú odinštalované alebo pre ukončenie sprievodcu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
-msgid  "Please change selection"
-msgstr "Prosím zmeňte výber"

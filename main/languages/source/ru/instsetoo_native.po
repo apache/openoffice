@@ -31,81 +31,17 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: Property.ulf#OOO_ARPCOMMENTSTEMPLATE
-msgid  "Comment in the Add-Remove-Programs Applet"
-msgstr "Комментарий в Установка-Удаление программ"
-
-#: Property.ulf#OOO_ARPCONTACTTEMPLATE
-msgid  "Department for technical support"
-msgstr "Отдел технической поддержки"
-
 #: Property.ulf#OOO_ARPHELPLINKTEMPLATE
 msgid  "http://www.openoffice.org"
 msgstr "http://www.openoffice.org"
-
-#: Property.ulf#OOO_ARPHELPTELEPHONETEMPLATE
-msgid  "x-xxx-xxx-xxx"
-msgstr "x-xxx-xxx-xxx"
-
-#: Property.ulf#OOO_STR_NEW_DISPLAY_NAME
-msgid  "~New"
-msgstr "Создать"
-
-#: Property.ulf#OOO_STR_EDIT
-msgid  "~Edit"
-msgstr "Правка"
-
-#: Property.ulf#OOO_STR_MS_WORD_DOCUMENT
-msgid  "Microsoft Word Document"
-msgstr "Документ Microsoft Word"
-
-#: Property.ulf#OOO_STR_MS_WORD_TEMPLATE
-msgid  "Microsoft Word Template"
-msgstr "Шаблон Microsoft Word"
 
 #: Property.ulf#OOO_STR_MS_EXCEL_WORKSHEET
 msgid  "Microsoft Excel Worksheet"
 msgstr "Электронная таблица Microsoft Excel"
 
-#: Property.ulf#OOO_STR_MS_EXCEL_TEMPLATE
-msgid  "Microsoft Excel Template"
-msgstr "Шаблон Microsoft Excel"
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_PRESENTATION
-msgid  "Microsoft PowerPoint Presentation"
-msgstr "Презентация Microsoft PowerPoint"
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_TEMPLATE
-msgid  "Microsoft PowerPoint Template"
-msgstr "Шаблон Microsoft PowerPoint"
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_SHOW
-msgid  "Microsoft PowerPoint Show"
-msgstr "Презентация Microsoft PowerPoint"
-
-#: Property.ulf#OOO_STR_INSTALLATION_WIZARD
-msgid  "Installation Wizard"
-msgstr "Мастер установки"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_1
-msgid  "{&MSSansBold8}&Modify"
-msgstr "{&MSSansBold8}&Модифицировать"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_2
-msgid  "{&MSSansBold8}Re&pair"
-msgstr "{&MSSansBold8}Восстановить"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_3
-msgid  "{&MSSansBold8}&Remove"
-msgstr "{&MSSansBold8}&Удалить"
-
 #: RadioBut.ulf#OOO_RADIOBUTTON_4
 msgid  "{&MSSansBold8}&Typical"
 msgstr "{&MSSansBold8}&Обычная"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_5
-msgid  "{&MSSansBold8}Cu&stom"
-msgstr "{&MSSansBold8}&Выборочная"
 
 #: RadioBut.ulf#OOO_RADIOBUTTON_6
 msgid  "I &do not accept the terms in the license agreement"
@@ -115,53 +51,9 @@ msgstr "Я не принимаю условия лицензионного со�
 msgid  "I &accept the terms in the license agreement"
 msgstr "Я принимаю условия лицензионного соглашения"
 
-#: RadioBut.ulf#OOO_RADIOBUTTON_8
-msgid  "&Anyone who uses this computer (all users)"
-msgstr "для &всех пользователей компьютера (all users)"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_9
-msgid  "Only for &me ([USERNAME])"
-msgstr "только для &меня ([USERNAME])"
-
-#: Error.ulf#OOO_ERROR_1
-msgid  "{{Fatal error: }}"
-msgstr "{{Неустранимая ошибка: }}"
-
-#: Error.ulf#OOO_ERROR_2
-msgid  "Error [1]."
-msgstr "Ошибка [1]."
-
-#: Error.ulf#OOO_ERROR_3
-msgid  "Warning [1]."
-msgstr "Предупреждение [1]."
-
-#: Error.ulf#OOO_ERROR_4
-msgid  "Info [1]."
-msgstr "Информация [1]."
-
-#: Error.ulf#OOO_ERROR_5
-msgid  "Internal Error [1]. [2]{, [3]}{, [4]}"
-msgstr "Внутренняя ошибка [1]. [2]{, [3]}{, [4]}"
-
-#: Error.ulf#OOO_ERROR_6
-msgid  "{{Disk full: }}"
-msgstr "{{Диск переполнен: }}"
-
 #: Error.ulf#OOO_ERROR_7
 msgid  "Action [Time]: [1]. [2]"
 msgstr "Action [Time]: [1]. [2]"
-
-#: Error.ulf#OOO_ERROR_8
-msgid  "[ProductName]"
-msgstr "[ProductName]"
-
-#: Error.ulf#OOO_ERROR_9
-msgid  "{[2]}{, [3]}{, [4]}"
-msgstr "{[2]}{, [3]}{, [4]}"
-
-#: Error.ulf#OOO_ERROR_10
-msgid  "Message type: [1], Argument: [2]"
-msgstr "Message type: [1], Argument: [2]"
 
 #: Error.ulf#OOO_ERROR_11
 msgid  "=== Logging started: [Date]  [Time] ==="
@@ -175,41 +67,9 @@ msgstr "=== Logging stopped: [Date]  [Time] ==="
 msgid  "Action start [Time]: [1]."
 msgstr "Действие начато [Time]: [1]."
 
-#: Error.ulf#OOO_ERROR_14
-msgid  "Action ended [Time]: [1]. Return value [2]."
-msgstr "Действие закончено [Time]: [1]. Получено значение [2]."
-
-#: Error.ulf#OOO_ERROR_15
-msgid  "Time remaining: {[1] minutes }{[2] seconds}"
-msgstr "Оставшееся время: {[1] мин }{[2] сек}"
-
 #: Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
 msgstr "Нехватка оперативной памяти. Выгрузите другие приложения перед повтором."
-
-#: Error.ulf#OOO_ERROR_17
-msgid  "Installer is no longer responding."
-msgstr "Программа установки не реагирует на запросы."
-
-#: Error.ulf#OOO_ERROR_18
-msgid  "Installer terminated prematurely."
-msgstr "Программа установки преждевременно завершила свою работу."
-
-#: Error.ulf#OOO_ERROR_19
-msgid  "Please wait while Windows configures [ProductName]"
-msgstr "Подождите пока Windows настраивает [ProductName]"
-
-#: Error.ulf#OOO_ERROR_20
-msgid  "Gathering required information..."
-msgstr "Сбор информации требуемой для установки..."
-
-#: Error.ulf#OOO_ERROR_21
-msgid  "Removing older versions of this application"
-msgstr "Удаление предыдущих версий приложения"
-
-#: Error.ulf#OOO_ERROR_22
-msgid  "Preparing to remove older versions of this application"
-msgstr "Подготовка к удалению предыдущих версий приложения"
 
 #: Error.ulf#OOO_ERROR_23
 msgid  "{[ProductName] }Setup completed successfully."
@@ -226,10 +86,6 @@ msgstr "Ошибка чтения файла: [2]. {{ System error [3].}} Про
 #: Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
 msgstr "Не могу создать файл [3]. Каталог с этим именем уже существует. Прервите установку и выберите другой путь назначения."
-
-#: Error.ulf#OOO_ERROR_27
-msgid  "Please insert the disk: [2]"
-msgstr "Вставьте диск: [2]"
 
 #: Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
@@ -275,37 +131,9 @@ msgstr "Не могу создать папку [2]. Файл с таким им
 msgid  "The volume [2] is currently unavailable.  Please select another."
 msgstr "Том [2] недоступен. Пожалуйста, выберите другой."
 
-#: Error.ulf#OOO_ERROR_39
-msgid  "The specified path [2] is unavailable."
-msgstr "Указанный путь [2] недоступен."
-
-#: Error.ulf#OOO_ERROR_40
-msgid  "Unable to write to the specified folder [2]."
-msgstr "Запись в заданную папку [2] невозможна."
-
-#: Error.ulf#OOO_ERROR_41
-msgid  "A network error occurred while attempting to read from the file [2]"
-msgstr "Ошибка сети во время чтения файла [2]"
-
-#: Error.ulf#OOO_ERROR_42
-msgid  "An error occurred while attempting to create the directory [2]"
-msgstr "Ошибка создания каталога [2]"
-
 #: Error.ulf#OOO_ERROR_43
 msgid  "A network error occurred while attempting to create the directory [2]"
 msgstr "Ошибка сети во время создания каталога [2]"
-
-#: Error.ulf#OOO_ERROR_44
-msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr "Произошла сетевая ошибка при попытке открытия исходного файла [2]."
-
-#: Error.ulf#OOO_ERROR_45
-msgid  "The specified path is too long [2]."
-msgstr "Указанный путь [2] слишком длинный."
-
-#: Error.ulf#OOO_ERROR_46
-msgid  "The Installer has insufficient privileges to modify the file [2]."
-msgstr "Программа установки не имеет достаточно прав для изменения файла [2]."
 
 #: Error.ulf#OOO_ERROR_47
 msgid  "A portion of the path [2] exceeds the length allowed by the system."
@@ -319,45 +147,9 @@ msgstr "Путь [2] содержит слова, которые недопус�
 msgid  "The path [2] contains an invalid character."
 msgstr "Путь [2] содержит недопустимые символы."
 
-#: Error.ulf#OOO_ERROR_50
-msgid  "[2] is not a valid short file name."
-msgstr "Неверное короткое имя файла [2]"
-
-#: Error.ulf#OOO_ERROR_51
-msgid  "Error getting file security: [3] GetLastError: [2]"
-msgstr "Ошибка получения информации о безопасности файла [3]. GetLastError: [2]"
-
-#: Error.ulf#OOO_ERROR_52
-msgid  "Invalid Drive: [2]"
-msgstr "Неверное имя диска: [2]"
-
-#: Error.ulf#OOO_ERROR_53
-msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr "Ошибка применения исправления к файлу [2]. Возможно это связано с тем что данный файл уже был каким-то образом обновлен и не может быть измёнен данным исправлением. Для выяснения подробностей, свяжитесь с разработчиком исправления. {{System Error: [3]}}"
-
-#: Error.ulf#OOO_ERROR_54
-msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Не могу создать ключ [2]. {{System Error: [3]}} Проверьте что у вас есть достаточно прав на доступ к данному ключу или свяжитесь с Вашим системным администратором."
-
-#: Error.ulf#OOO_ERROR_55
-msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Не могу открыть ключ [2]. {{System Error: [3]}} Проверьте что у вас есть достаточно прав на доступ к данному ключу или свяжитесь с Вашим системным администратором."
-
-#: Error.ulf#OOO_ERROR_56
-msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Не могу удалить значение [2] из ключа [3]. {{System Error: [4]}} Проверьте что у вас есть достаточно прав на доступ к данному ключу или свяжитесь с Вашим системным администратором."
-
-#: Error.ulf#OOO_ERROR_57
-msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Не могу удалить ключ [2]. {{System Error: [3]}} Проверьте что у вас есть достаточно прав на доступ к данному ключу или свяжитесь с Вашим системным администратором."
-
 #: Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
 msgstr "Не могу прочитать значение [2] из ключа [3]. {{System Error: [4]}} Проверьте что у вас есть достаточно прав на доступ к данному ключу или свяжитесь с Вашим системным администратором."
-
-#: Error.ulf#OOO_ERROR_59
-msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "Не могу записать значение [2] из ключа [3]. {{System Error: [4]}} Проверьте что у вас есть достаточно прав на доступ к данному ключу или свяжитесь с Вашим системным администратором."
 
 #: Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
@@ -375,61 +167,9 @@ msgstr "Не могу прочитать информацию о безопас�
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
 msgstr "Не могу увеличить размер реестра на [2]Кбайт."
 
-#: Error.ulf#OOO_ERROR_64
-msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr "Выполняется другая копия программы установки. Вы должны завершить установку прежде чем продолжите эту."
-
-#: Error.ulf#OOO_ERROR_65
-msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr "Ошибка доступа. Пожалуйста, убедитесь что Windows Installer сконфигурирован правильно и попытайтесь произвести инсталляцию снова."
-
-#: Error.ulf#OOO_ERROR_66
-msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr "Пользователь [2] уже произвел установку продукта [3].Этому пользователю необходимо запустить установку ещё раз перед использованием продукта. Ваша инсталляция будет продолжена."
-
-#: Error.ulf#OOO_ERROR_67
-msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr "Пользователь [2] уже произвел установку продукта [3]. Этому пользователю необходимо запустить установку ещё раз перед использованием продукта."
-
-#: Error.ulf#OOO_ERROR_68
-msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr "Нет места на диске -- том: «[2]»; требуется места [3] Кбайт; доступно: [4] Кбайт. Освободите место на диске и повторите снова."
-
-#: Error.ulf#OOO_ERROR_69
-msgid  "Are you sure you want to cancel?"
-msgstr "Вы уверены, что хотите отменить?"
-
-#: Error.ulf#OOO_ERROR_70
-msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr "Файл [2][3] используется {следующим процессом: Имя: [4], ID: [5], Заголовок: [6]}. Закройте указанное приложение и повторите снова."
-
-#: Error.ulf#OOO_ERROR_71
-msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr "Продукт [2] уже установлен. Совместное использование этих продуктов невозможно."
-
-#: Error.ulf#OOO_ERROR_72
-msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr "Нет места на диске: [2]; требуется: [3] Kбайт; доступно: [4] Kбайт. Если откат выключить, то места будет достаточно. Нажмите Отмена для выхода, Повтор для повторной инспекции свободного места на диске, Игнорировать для продолжения без отката назад."
-
-#: Error.ulf#OOO_ERROR_73
-msgid  "Could not access network location [2]."
-msgstr "Не могу получить доступ к сетевому ресурсу [2]."
-
-#: Error.ulf#OOO_ERROR_74
-msgid  "The following applications should be closed before continuing the installation:"
-msgstr "Указанные приложения необходимо закрыть перед установкой:"
-
-#: Error.ulf#OOO_ERROR_75
-msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr "Не могу найти ни одного установленного необходимого продукта на данном компьютере для инсталляции этого продукта."
-
 #: Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
 msgstr "Ключ [2] не верен. Проверьте что Вы ввели верный ключ."
-
-#: Error.ulf#OOO_ERROR_77
-msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr "Программа установки должна перезагрузить Вашу систему для конфигурирования [2]. Нажмите Да для перезагрузки или Нет, если Вы произведёте перезагрузку самостоятельно."
 
 #: Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
@@ -443,26 +183,6 @@ msgstr "Установка [2] приостановлена. Вы должны �
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
 msgstr "Предыдущая установка этого продукта сейчас производится. Вы должны откатить изменения сделанные инсталлятором. Вы хотите откатить изменения?"
 
-#: Error.ulf#OOO_ERROR_81
-msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr "Не найден корректный исходный файл для продукта [2]. Windows Installer не может продолжать."
-
-#: Error.ulf#OOO_ERROR_82
-msgid  "Installation operation completed successfully."
-msgstr "Установка успешно завершена."
-
-#: Error.ulf#OOO_ERROR_83
-msgid  "Installation operation failed."
-msgstr "Установка завершена неудачно."
-
-#: Error.ulf#OOO_ERROR_84
-msgid  "Product: [2] -- [3]"
-msgstr "Продукт: [2] -- [3]"
-
-#: Error.ulf#OOO_ERROR_85
-msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr "Вы можете или восстановить компьютер в его предыдущее состояние, или продолжить установку позже. Восстановить сейчас?"
-
 #: Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
 msgstr "Возникла ошибка во время записи информации об установки на диск. Проверьте что у вас достаточно свободного пространства доступно и нажмите Повторить или Отмена для завершения установки."
@@ -470,10 +190,6 @@ msgstr "Возникла ошибка во время записи информ�
 #: Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
 msgstr "Одного или нескольких файлов необходимых для восстановления системы не найдено. Восстановление не возможно."
-
-#: Error.ulf#OOO_ERROR_88
-msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr "[2] Не могу установить один из необходимых продуктов. Свяжитесь с Вашим системным администратором. {{System Error: [3].}}"
 
 #: Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
@@ -494,22 +210,6 @@ msgstr "Отсутствует диск в дисководе [2]. Вставь�
 #: Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
 msgstr "Каталог [2] не существует. Введите путь к существующей папке."
-
-#: Error.ulf#OOO_ERROR_95
-msgid  "You have insufficient privileges to read this folder."
-msgstr "У Вас не хватает полномочий для чтения указанной папки."
-
-#: Error.ulf#OOO_ERROR_96
-msgid  "A valid destination folder for the installation could not be determined."
-msgstr "Корректный путь назначения для установки не обнаружен."
-
-#: Error.ulf#OOO_ERROR_97
-msgid  "Error attempting to read from the source installation database: [2]."
-msgstr "Возникла ошибка при чтении исходной инсталляционной базы данных: [2]."
-
-#: Error.ulf#OOO_ERROR_98
-msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr "Плановая перезагрузка системы: Переименование файла [2] в [3]. Необходимо перезагрузить для завершения операции."
 
 #: Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
@@ -535,14 +235,6 @@ msgstr "Невозможно зарегистрировать шрифт [2]. П
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
 msgstr "Невозможно удалить регистрацию шрифта [2]. Проверьте что у Вас есть необходимые права."
 
-#: Error.ulf#OOO_ERROR_105
-msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr "Не могу создать ярлык [2]. Проверьте, что папка назначения существует и что вы можете получить к ней доступ."
-
-#: Error.ulf#OOO_ERROR_106
-msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr "Не могу удалить ярлык [2]. Проверьте, что ярлык существует и что вы можете получить к нему доступ."
-
 #: Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
 msgstr "Невозможно зарегистрировать библиотеку типов для файла [2]. Свяжитесь с Вашим системным администратором."
@@ -566,18 +258,6 @@ msgstr "Ошибка удаления менеджера ODBC драйвера. 
 #: Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
 msgstr "Ошибка установки менеджера ODBC драйвера. ODBC ошибка [2]: [3]. Свяжитесь с Вашим системным администратором."
-
-#: Error.ulf#OOO_ERROR_113
-msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr "Ошибка при удалении драйвера ODBC [4], ошибка ODBC [2]: [3]. Проверьте наличие необходимых прав для удаления драйвера ODBC."
-
-#: Error.ulf#OOO_ERROR_114
-msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr "Ошибка установки ODBC драйвера [4]. ODBC ошибка [2]: [3]. Проверьте что файл [4] существует и у Вас есть к нему доступ."
-
-#: Error.ulf#OOO_ERROR_115
-msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr "Ошибка конфигурирования источника данных ODBC [4]. ODBC ошибка [2]: [3]. Проверьте наличие файла [4] и доступа к нему."
 
 #: Error.ulf#OOO_ERROR_116
 msgid  "Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services."
@@ -635,165 +315,25 @@ msgstr "Служба Windows Installer не может обновить защи
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
 msgstr "Программа установки требует Internet Information Server 4.0 или выше для конфигурирования Виртуальных Сайтов (Virtual Roots). Убедитесь что у вас IIS 4.0 или выше."
 
-#: Error.ulf#OOO_ERROR_130
-msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr "Программа установки требует прав Администратора для конфигурирования Виртуальных Сайтов (Virtual Roots)."
-
 #: CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
 msgstr "Более поздняя версия [ProductName] уже установлена. Удалите эту версию для установки предыдущих версий."
-
-#: CustomAc.ulf#OOO_CUSTOMACTION_2
-msgid  "The same version of this product is already installed."
-msgstr "Эта версия программы уже установлена."
 
 #: CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
 msgstr "Найдена предыдущая версия [ProductName]. Удалите эту версию перед установкой более новых версий."
 
-#: CustomAc.ulf#OOO_CUSTOMACTION_4
-msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr "Прежде чем продолжать, необходимо завершнить работу [DEFINEDPRODUCT] [DEFINEDVERSION] и выгрузить быстрый запуск. В случае многопользовательской системы необходимо также убедиться в том, что ни один из пользователей не использует  [DEFINEDPRODUCT] [DEFINEDVERSION]."
-
-#: UIText.ulf#OOO_UITEXT_1
-msgid  "bytes"
-msgstr "байт"
-
-#: UIText.ulf#OOO_UITEXT_2
-msgid  "GB"
-msgstr "ГБ"
-
-#: UIText.ulf#OOO_UITEXT_3
-msgid  "KB"
-msgstr "КБ"
-
-#: UIText.ulf#OOO_UITEXT_4
-msgid  "MB"
-msgstr "МБ"
-
-#: UIText.ulf#OOO_UITEXT_5
-msgid  "This feature will not be available."
-msgstr "Компонент будет недоступен."
-
-#: UIText.ulf#OOO_UITEXT_6
-msgid  "This feature will be installed when required."
-msgstr "Компонент будет установлен по первому требованию."
-
-#: UIText.ulf#OOO_UITEXT_7
-msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr "Компонент и все вложенные субкомпоненты будут установлены для запуска с CD."
-
-#: UIText.ulf#OOO_UITEXT_8
-msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr "Компонент и все вложенные субкомпоненты будут установлены для запуска с локального жесткого диска."
-
-#: UIText.ulf#OOO_UITEXT_9
-msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr "Компонент и все вложенные субкомпоненты будут установлены для запуска по сети."
-
 #: UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
 msgstr "Компонент будет установлен для запуска с CD."
-
-#: UIText.ulf#OOO_UITEXT_11
-msgid  "This feature will be installed on local hard drive."
-msgstr "Компонент будет установлен для запуска с локального жесткого диска."
-
-#: UIText.ulf#OOO_UITEXT_12
-msgid  "This feature will be installed to run from network."
-msgstr "Компонент будет установлен для запуска по сети."
-
-#: UIText.ulf#OOO_UITEXT_13
-msgid  "Fldr|New Folder"
-msgstr "Папка|Новая папка"
-
-#: UIText.ulf#OOO_UITEXT_14
-msgid  "This feature will remain uninstalled."
-msgstr "Компонент будет помечен для удаления."
 
 #: UIText.ulf#OOO_UITEXT_15
 msgid  "This feature will be set to be installed when required."
 msgstr "Компонент будет установлен при первом требовании."
 
-#: UIText.ulf#OOO_UITEXT_17
-msgid  "This feature will be installed on the local hard drive."
-msgstr "Компонент будет установлен для запуска с локального жесткого диска."
-
-#: UIText.ulf#OOO_UITEXT_18
-msgid  "This feature will be installed to run from the network."
-msgstr "Компонент будет установлен для запуска по сети."
-
-#: UIText.ulf#OOO_UITEXT_19
-msgid  "This feature will become unavailable."
-msgstr "Компонент станет недоступным."
-
-#: UIText.ulf#OOO_UITEXT_20
-msgid  "Will be installed when required."
-msgstr "Будет установлен при первом требовании."
-
-#: UIText.ulf#OOO_UITEXT_21
-msgid  "This feature will be available to run from CD."
-msgstr "Компонент будет доступен для запуска с CD."
-
-#: UIText.ulf#OOO_UITEXT_22
-msgid  "This feature will be installed on your local hard drive."
-msgstr "Компонент будет установлен для запуска с локального жесткого диска."
-
-#: UIText.ulf#OOO_UITEXT_23
-msgid  "This feature will be available to run from the network."
-msgstr "Компонент будет доступен для запуска по сети."
-
-#: UIText.ulf#OOO_UITEXT_24
-msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr "Компонент будет удалён полностью и Вы не сможете запускать его с CD."
-
 #: UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
 msgstr "Компонент был запущен с CD, но будет помечен для установки по первому требованию."
-
-#: UIText.ulf#OOO_UITEXT_26
-msgid  "This feature will continue to be run from the CD"
-msgstr "Компонент будет продолжать запускаться с CD."
-
-#: UIText.ulf#OOO_UITEXT_27
-msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr "Компонент запускался с CD, но будет установлен на локальный жесткий диск."
-
-#: UIText.ulf#OOO_UITEXT_28
-msgid  "This feature frees up [1] on your hard drive."
-msgstr "Компонент освободит [1] на Вашем жестком диске."
-
-#: UIText.ulf#OOO_UITEXT_29
-msgid  "This feature requires [1] on your hard drive."
-msgstr "Компоненту требуется [1] дискового пространства."
-
-#: UIText.ulf#OOO_UITEXT_30
-msgid  "Compiling cost for this feature..."
-msgstr "Вычисление стоимости компонента..."
-
-#: UIText.ulf#OOO_UITEXT_31
-msgid  "This feature will be completely removed."
-msgstr "Компонент будет полностью удалён."
-
-#: UIText.ulf#OOO_UITEXT_32
-msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr "Компонент будет удалён с Вашего локального жесткого диска, но будет установлен снова по первому требованию."
-
-#: UIText.ulf#OOO_UITEXT_33
-msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr "Компонент будет удалён с Вашего локального жесткого диска, но будет доступен для запуска с CD."
-
-#: UIText.ulf#OOO_UITEXT_34
-msgid  "This feature will remain on your local hard drive."
-msgstr "Компонент останется на Вашем локальном жестком диске."
-
-#: UIText.ulf#OOO_UITEXT_35
-msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr "Компонент будет удалён с Вашего локального жесткого диска, но будет доступен для запуска по сети."
-
-#: UIText.ulf#OOO_UITEXT_36
-msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr "Компонент будет удалён полностью и не будет доступен для запуска по сети."
 
 #: UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
@@ -807,81 +347,9 @@ msgstr "Компонент запускался по сети, но будет �
 msgid  "This feature will continue to be run from the network"
 msgstr "Компонент будет продолжать запускаться по сети."
 
-#: UIText.ulf#OOO_UITEXT_40
-msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr "Компонент освобождает [1] на Вашем жестком диске. Выбрано [2] из [3] вложенных субкомпонент. Вложенные субкомпоненты освобождают [4] на Вашем жестком диске."
-
-#: UIText.ulf#OOO_UITEXT_41
-msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr "Компонент освобождает [1] на Вашем жестком диске. Выбрано [2] из [3] вложенных субкомпонент. Вложенные субкомпоненты требуют [4] на Вашем жестком диске."
-
-#: UIText.ulf#OOO_UITEXT_42
-msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr "Компоненту требуется [1] дискового пространства. Выбрано [2] из [3] элементов. Освободится [4] дискового пространства."
-
-#: UIText.ulf#OOO_UITEXT_43
-msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr "Компоненту требуется [1] дискового пространства. Выбрано [2] из [3] элементов. Для элементов требуется [4] дискового пространства."
-
-#: UIText.ulf#OOO_UITEXT_44
-msgid  "Time remaining: {[1] min }[2] sec"
-msgstr "Оставшееся время: {[1] мин }[2] сек"
-
-#: UIText.ulf#OOO_UITEXT_45
-msgid  "Available"
-msgstr "Доступно"
-
-#: UIText.ulf#OOO_UITEXT_46
-msgid  "Differences"
-msgstr "Отличия"
-
-#: UIText.ulf#OOO_UITEXT_47
-msgid  "Required"
-msgstr "Необходимо"
-
-#: UIText.ulf#OOO_UITEXT_48
-msgid  "Disk Size"
-msgstr "Размер диска"
-
-#: UIText.ulf#OOO_UITEXT_49
-msgid  "Volume"
-msgstr "Том"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_1
-msgid  "Advertising application"
-msgstr "Рекламное приложение"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_2
-msgid  "Allocating registry space"
-msgstr "Резервирование пространства для реестра"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_3
-msgid  "Free space: [1]"
-msgstr "Свободно пространства: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_4
-msgid  "Searching for installed applications"
-msgstr "Поиск установленных приложений"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_5
-msgid  "Property: [1], Signature: [2]"
-msgstr "Свойство: [1], Подпись: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_6
-msgid  "Binding executables"
-msgstr "Совмещение выполняемых файлов"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_7
 msgid  "File: [1]"
 msgstr "Файл: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_8
-msgid  "Creating IIS Virtual Roots..."
-msgstr "Создание виртуальных каталогов IIS..."
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_9
-msgid  "Removing IIS Virtual Roots..."
-msgstr "Удаление виртуальных каталогов IIS..."
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
@@ -891,117 +359,21 @@ msgstr "Поиск требуемых продуктов"
 msgid  "Computing space requirements"
 msgstr "Вычисление необходимого свободного пространства"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_13
-msgid  "Creating folders"
-msgstr "Создание папок"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_14
-msgid  "Folder: [1]"
-msgstr "Папка: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_15
-msgid  "Creating shortcuts"
-msgstr "Создание ярлыков"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_16
-msgid  "Shortcut: [1]"
-msgstr "Ярлык: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_17
-msgid  "Deleting services"
-msgstr "Удаление служб"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_18
 msgid  "Service: [1]"
 msgstr "Служба: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_19
-msgid  "Creating duplicate files"
-msgstr "Создание повторяющихся файлов"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_20
 msgid  "File: [1],  Directory: [9],  Size: [6]"
 msgstr "Файл: [1], Папка: [9], Размер: [6]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_22
-msgid  "Searching for related applications"
-msgstr "Поиск связанных приложений"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_23
-msgid  "Found application"
-msgstr "Найденное приложение"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_24
-msgid  "Generating script operations for action:"
-msgstr "Создание скрипта для данного действия:"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_25
-msgid  "[1]"
-msgstr "[1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_26
-msgid  "Copying files to the network"
-msgstr "Копирование файлов на сетевой диск"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_27
-msgid  "File: [1], Directory: [9], Size: [6]"
-msgstr "Файл: [1], Папка: [9], Размер: [6]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_28
-msgid  "Copying new files"
-msgstr "Копирование новых файлов"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_30
-msgid  "Installing ODBC components"
-msgstr "Установка компонентов ODBC"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_31
-msgid  "Installing new services"
-msgstr "Установка новых служб"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_32
-msgid  "Service: [2]"
-msgstr "Служба: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_33
-msgid  "Installing system catalog"
-msgstr "Установка системного каталога"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_34
 msgid  "File: [1],  Dependencies: [2]"
 msgstr "Файл: [1], Зависимости: [2]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_35
-msgid  "Validating install"
-msgstr "Проверка установки"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_36
-msgid  "Evaluating launch conditions"
-msgstr "Вычисление условий запуска"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_37
-msgid  "Migrating feature states from related applications"
-msgstr "Мигрирование состояний компонентов из связанных приложений"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_38
-msgid  "Application: [1]"
-msgstr "Приложение: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_39
-msgid  "Moving files"
-msgstr "Перемещение файлов"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_41
-msgid  "Patching files"
-msgstr "Применение заплатки"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_42
 msgid  "File: [1],  Directory: [2],  Size: [3]"
 msgstr "Файл: [1], Папка: [2], Размер: [3]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_43
-msgid  "Updating component registration"
-msgstr "Обновление регистрации компонентов"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_44
 msgid  "Publishing qualified components"
@@ -1011,37 +383,9 @@ msgstr "Установка дополнительных компонентов"
 msgid  "Component ID: [1], Qualifier: [2]"
 msgstr "Компонент: [1], Qualifier: [2]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_46
-msgid  "Publishing product features"
-msgstr "Установка основных компонентов"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_47
-msgid  "Feature: [1]"
-msgstr "Компонент: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_48
-msgid  "Publishing product information"
-msgstr "Установка информации о продукте"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_49
-msgid  "Registering class servers"
-msgstr "Регистрация класса"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_50
 msgid  "Class ID: [1]"
 msgstr "Ид. класса: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_51
-msgid  "Registering COM+ Applications and Components"
-msgstr "Регистрация приложений и компонентов COM+"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_52
-msgid  "AppId: [1]{{, AppType: [2], Users: [3], RSN: [4]}}"
-msgstr "AppId: [1]{{, AppType: [2], Users: [3], RSN: [4]}}"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_53
-msgid  "Registering extension servers"
-msgstr "Регистрация расширений"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_54
 msgid  "Extension: [1]"
@@ -1063,33 +407,13 @@ msgstr "Регистрация информацию MIME"
 msgid  "MIME Content Type: [1], Extension: [2]"
 msgstr "Тип контента MIME: [1], Расширение: [2]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_59
-msgid  "Registering product"
-msgstr "Регистрация продукта"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_61
-msgid  "Registering program identifiers"
-msgstr "Регистрация идентификаторов программы"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_62
 msgid  "ProgID: [1]"
 msgstr "Идентификатор: [1]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_63
-msgid  "Registering type libraries"
-msgstr "Регистрация библиотеки типов"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_64
 msgid  "LibID: [1]"
 msgstr "Библиотека: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_65
-msgid  "Registering user"
-msgstr "Регистрация пользователя"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_67
-msgid  "Removing duplicated files"
-msgstr "Удаление резервных копий файлов"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_68
 msgid  "File: [1], Directory: [9]"
@@ -1103,22 +427,6 @@ msgstr "Изменение строк окружения"
 msgid  "Name: [1], Value: [2], Action [3]"
 msgstr "Имя: [1], Значение: [2], Действие: [3]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_71
-msgid  "Removing applications"
-msgstr "Удаление приложений"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_72
-msgid  "Application: [1], Command line: [2]"
-msgstr "Приложение: [1], Командная строка: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_73
-msgid  "Removing files"
-msgstr "Удаление файлов"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_75
-msgid  "Removing folders"
-msgstr "Удаление папок"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_77
 msgid  "Removing INI file entries"
 msgstr "Удаление строк из INI файла"
@@ -1126,66 +434,6 @@ msgstr "Удаление строк из INI файла"
 #: ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
 msgstr "Файл: [1], Секция: [2], Ключ: [3], Значение: [4]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_79
-msgid  "Removing ODBC components"
-msgstr "Удаление источников ODBC"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_80
-msgid  "Removing system registry values"
-msgstr "Удаление ключей системного реестра"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_81
-msgid  "Key: [1], Name: [2]"
-msgstr "Ключ: [1], Имя: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_82
-msgid  "Removing shortcuts"
-msgstr "Удаление ярлыков"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_85
-msgid  "Rolling back action:"
-msgstr "Откат действия:"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_87
-msgid  "Removing backup files"
-msgstr "Удаление резервных копий файлов"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_89
-msgid  "Registering modules"
-msgstr "Регистрация модулей"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_90
-msgid  "File: [1], Folder: [2]"
-msgstr "Файл: [1], Папка: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_91
-msgid  "Unregistering modules"
-msgstr "Удаление регистрации модулей"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_93
-msgid  "Initializing ODBC directories"
-msgstr "Инициализация каталогов ODBC"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_94
-msgid  "Starting services"
-msgstr "Запуск служб"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_96
-msgid  "Stopping services"
-msgstr "Остановка служб"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_98
-msgid  "Removing moved files"
-msgstr "Удаление перемещённых файлов"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_100
-msgid  "Unpublishing Qualified Components"
-msgstr "Удаление дополнительных компонентов"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_102
-msgid  "Unpublishing product features"
-msgstr "Удаление основных компонентов"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_104
 msgid  "Unpublishing product information"
@@ -1195,69 +443,21 @@ msgstr "Удаление публикации информации о проду
 msgid  "Unregister class servers"
 msgstr "Удаление регистрации классов"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_107
-msgid  "Unregistering COM+ Applications and Components"
-msgstr "Удаление регистрации COM+ приложений и компонентов"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_108
-msgid  "AppId: [1]{{, AppType: [2]}}"
-msgstr "AppId: [1]{{, AppType: [2]}}"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_109
-msgid  "Unregistering extension servers"
-msgstr "Удаление регистрации расширений"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_111
 msgid  "Unregistering fonts"
 msgstr "Удаление регистрации шрифтов"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_113
-msgid  "Unregistering MIME info"
-msgstr "Удаление регистрации информации MIME"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_115
-msgid  "Unregistering program identifiers"
-msgstr "Удаление регистрации идентификаторов программы"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_117
-msgid  "Unregistering type libraries"
-msgstr "Удаление регистрации библиотек типов"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_121
 msgid  "Writing INI file values"
 msgstr "Запись значения в INI файл"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_123
-msgid  "Writing system registry values"
-msgstr "Запись ключей системного реестра"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_124
-msgid  "Key: [1], Name: [2], Value: [3]"
-msgstr "Ключ: [1], Имя: [2], Значение: [3]"
-
-#: LaunchCo.ulf#OOO_LAUNCH_1
-msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr "Мастер установки не может продолжить корректную установку, потому что Вы являетесь пользователем без прав администратора в данной системе."
-
 #: LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
 msgstr "Запустите setup.exe для начала установки."
 
-#: Nsis.ulf#SETUPCAPTION
-msgid  "%PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr "Подготовка к установке %PRODUCTNAME %PRODUCTVERSION"
-
-#: Nsis.ulf#MUI_TEXT_WELCOME_INFO_TITLE
-msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
-msgstr "Благодарим за выбор %PRODUCTNAME %PRODUCTVERSION."
-
 #: Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\n\\r\nClick \\'Next\\' to continue."
 msgstr "Для дальнейшей установки необходимые файлы будут скопированы на жесткий диск. После этого установка %PRODUCTNAME начнется автоматически.\r\n\r\nНажмите «Далее» для продолжения."
-
-#: Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
-msgid  "Select Folder"
-msgstr "Выберите папку"
 
 #: Nsis.ulf#MUI_TEXT_DIRECTORY_SUBTITLE
 msgid  "Select the folder in which to save the unpacked files."
@@ -1270,10 +470,6 @@ msgstr "&Распаковать"
 #: Nsis.ulf#DIRTEXT
 msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
 msgstr "Файлы установки %PRODUCTNAME %PRODUCTVERSION будут распакованы и сохранены в указанной ниже папке. Если Вы хотите сохранить файлы %PRODUCTNAME в другой папке, нажмите на «Обзор»."
-
-#: Nsis.ulf#DIRSUBTEXT
-msgid  "Destination Folder"
-msgstr "Каталог назначения"
 
 #: Nsis.ulf#SPACEREQUIRED
 msgid  "Space required: "
@@ -1291,41 +487,14 @@ msgstr "Распаковка"
 msgid  "Please wait while the installation files are being unpacked."
 msgstr "Подождите пока файлы установки будут распакованы."
 
-#: Nsis.ulf#EXTRACT
-msgid  "Extract: "
-msgstr "Извлечение: "
-
-#: Nsis.ulf#MUI_TEXT_ABORTWARNING
-msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr "Вы действительно хотите прервать установку %PRODUCTNAME %PRODUCTVERSION?"
-
 #: SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
 msgstr "Инсталляционная база данных"
 
-#: SIS.ulf#OOO_SIS_AUTHOR
-msgid  "Author"
-msgstr "Автор"
-
-#: SIS.ulf#OOO_SIS_SUBJECT
-msgid  "Subject"
-msgstr "Тема"
-
-#: SIS.ulf#OOO_SIS_COMMENT
-msgid  "Comment"
-msgstr "Примечание"
-
-#: SIS.ulf#OOO_SIS_KEYWORDS
-msgid  "Install,MSI"
-msgstr "Install,MSI"
-
-#: SIS.ulf#OOO_SIS_APPNAME
-msgid  "Windows Installer"
-msgstr "Windows Installer"
-
 #: Control.ulf#OOO_CONTROL_3
+#, fuzzy
 msgid  "Cancel"
-msgstr "Отмена"
+msgstr "Чтобы выбрать другую папку, кликните "
 
 #: Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
@@ -1339,10 +508,6 @@ msgstr "Укажите папку назначения."
 msgid  "{&MSSansBold8}Change Current Destination Folder"
 msgstr "{&MSSansBold8}Изменение текущей папки назначения"
 
-#: Control.ulf#OOO_CONTROL_9
-msgid  "Create new folder|"
-msgstr "Создать новую папку|"
-
 #: Control.ulf#OOO_CONTROL_10
 msgid  "OK"
 msgstr "ОК"
@@ -1350,10 +515,6 @@ msgstr "ОК"
 #: Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
 msgstr "&Имя папки:"
-
-#: Control.ulf#OOO_CONTROL_13
-msgid  "Up one level|"
-msgstr "На уровень выше|"
 
 #: Control.ulf#OOO_CONTROL_14
 msgid  "< &Back"
@@ -1363,25 +524,13 @@ msgstr "< Назад"
 msgid  "&Change..."
 msgstr "Изменить..."
 
-#: Control.ulf#OOO_CONTROL_19
-msgid  "Specify a network location for the server image of the product."
-msgstr "Укажите сетевой ресурс для размещения серверного образа."
-
 #: Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
 msgstr "Введите сетевой путь или нажмите Изменить для просмотра и выбора пути. Нажмите Установить для создания серверного образа [ProductName] на указанном сетевом ресурсе или нажмите Отмена для выхода из Мастера."
 
-#: Control.ulf#OOO_CONTROL_21
-msgid  "{&MSSansBold8}Network Location"
-msgstr "{&MSSansBold8}Сетевой ресурс"
-
 #: Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
 msgstr "Установить"
-
-#: Control.ulf#OOO_CONTROL_23
-msgid  "&Network location:"
-msgstr "Сетевой ресурс:"
 
 #: Control.ulf#OOO_CONTROL_26
 msgid  "&Next >"
@@ -1391,153 +540,29 @@ msgstr "Далее >"
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
 msgstr "{&TahomaBold10}Добро пожаловать в мастер установки [ProductName]"
 
-#: Control.ulf#OOO_CONTROL_28
-msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr "Мастер установки создаст серверный образ [ProductName] на указанном сетевом ресурсе. Для продолжения нажмите Далее."
-
 #: Control.ulf#OOO_CONTROL_29
 msgid  "&No"
 msgstr "Нет"
-
-#: Control.ulf#OOO_CONTROL_30
-msgid  "Are you sure you want to cancel [ProductName] installation?"
-msgstr "Вы действительно хотите отменить установку [ProductName]?"
-
-#: Control.ulf#OOO_CONTROL_31
-msgid  "&Yes"
-msgstr "Да"
 
 #: Control.ulf#OOO_CONTROL_36
 msgid  "{\\Tahoma8}{80}"
 msgstr "{\\Tahoma8}{80}"
 
-#: Control.ulf#OOO_CONTROL_37
-msgid  "&Organization:"
-msgstr "Организация:"
-
-#: Control.ulf#OOO_CONTROL_38
-msgid  "Please enter your information."
-msgstr "Введите информацию."
-
-#: Control.ulf#OOO_CONTROL_39
-msgid  "Install this application for:"
-msgstr "Установить данную программу:"
-
-#: Control.ulf#OOO_CONTROL_40
-msgid  "{&MSSansBold8}Customer Information"
-msgstr "{&MSSansBold8}Информация о пользователе"
-
 #: Control.ulf#OOO_CONTROL_41
 msgid  "{\\Tahoma8}{50}"
 msgstr "{\\Tahoma8}{50}"
-
-#: Control.ulf#OOO_CONTROL_42
-msgid  "&User Name:"
-msgstr "Имя пользователя:"
-
-#: Control.ulf#OOO_CONTROL_45
-msgid  "&Serial Number:"
-msgstr "Серийный номер:"
-
-#: Control.ulf#OOO_CONTROL_51
-msgid  "&Space"
-msgstr "Пространство"
-
-#: Control.ulf#OOO_CONTROL_52
-msgid  "Select the program features you want installed."
-msgstr "Выберите компоненты программы, которые необходимо установить."
-
-#: Control.ulf#OOO_CONTROL_53
-msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr "Для изменения варианта установки компонента нажмите на соответствующий значок."
-
-#: Control.ulf#OOO_CONTROL_54
-msgid  "{&MSSansBold8}Custom Setup"
-msgstr "{&MSSansBold8}Выборочная установка"
-
-#: Control.ulf#OOO_CONTROL_55
-msgid  "Feature Description:"
-msgstr "Описание компонента:"
-
-#: Control.ulf#OOO_CONTROL_56
-msgid  "&Help"
-msgstr "Справка"
-
-#: Control.ulf#OOO_CONTROL_57
-msgid  "Install to:"
-msgstr "Установить в папку:"
-
-#: Control.ulf#OOO_CONTROL_58
-msgid  "Multiline description of the currently selected item"
-msgstr "Многострочное описание выбранных пунктов"
 
 #: Control.ulf#OOO_CONTROL_59
 msgid  "<selected feature path>"
 msgstr "<путь выбранного компонента>"
 
-#: Control.ulf#OOO_CONTROL_61
-msgid  "Feature size"
-msgstr "Размер компонента"
-
 #: Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
 msgstr "Выборочная установка позволяет установить компоненты программы выборочно."
 
-#: Control.ulf#OOO_CONTROL_65
-msgid  "{&MSSansBold8}Custom Setup Tips"
-msgstr "{&MSSansBold8}Подсказки для установки"
-
-#: Control.ulf#OOO_CONTROL_66
-msgid  "Will not be installed."
-msgstr "Не будет установлено."
-
-#: Control.ulf#OOO_CONTROL_67
-msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr "Будет установлено при первом запуске. (Доступно только если компонент поддерживается такой вариант установки.)"
-
-#: Control.ulf#OOO_CONTROL_68
-msgid  "This install state means the feature..."
-msgstr "Указывает состояние установки компонента..."
-
-#: Control.ulf#OOO_CONTROL_69
-msgid  "Will be completely installed to the local hard drive."
-msgstr "Установка на локальный диск."
-
-#: Control.ulf#OOO_CONTROL_70
-msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr "Пиктограмма, следующая за названием компонента, показывает как будет установлен компонент. Нажмите на пиктограмму, чтобы развернуть меню указания способа установки каждого компонента."
-
-#: Control.ulf#OOO_CONTROL_71
-msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr "Установка для запуска по сети. (Доступно если компонент поддерживает такой вариант установки.)"
-
-#: Control.ulf#OOO_CONTROL_73
-msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr "Будут установлены субкомпоненты на локальный жесткий диск (доступно, если компонент имеет вложенные субкомпоненты)."
-
 #: Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
 msgstr "Нажмите Далее чтобы установить в эту папку или нажмите Изменить для установки в другую папку."
-
-#: Control.ulf#OOO_CONTROL_80
-msgid  "{&MSSansBold8}Database Folder"
-msgstr "{&MSSansBold8}Каталог базы данных"
-
-#: Control.ulf#OOO_CONTROL_81
-msgid  "[DATABASEDIR]"
-msgstr "[DATABASEDIR]"
-
-#: Control.ulf#OOO_CONTROL_82
-msgid  "Install [ProductName] database to:"
-msgstr "Установить базу данных [ProductName] на:"
-
-#: Control.ulf#OOO_CONTROL_90
-msgid  "{&MSSansBold8}Destination Folder"
-msgstr "{&MSSansBold8}Каталог назначения"
-
-#: Control.ulf#OOO_CONTROL_91
-msgid  "[INSTALLDIR]"
-msgstr "[INSTALLDIR]"
 
 #: Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
@@ -1551,26 +576,6 @@ msgstr "Требования к пространству для установк
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
 msgstr "На выделенных дисках недостаточно места для установки выбранных компонентов. Можно удалить файлы с выделенных дисков, сократить количество устанавливаемых компонентов, или выполнить установку на другой диск."
 
-#: Control.ulf#OOO_CONTROL_98
-msgid  "{&MSSansBold8}Disk Space Requirements"
-msgstr "{&MSSansBold8}Необходимое дисковое пространство"
-
-#: Control.ulf#OOO_CONTROL_103
-msgid  "Some files that need to be updated are currently in use."
-msgstr "Некоторые файлы, которые сейчас необходимо обновить, задействованы."
-
-#: Control.ulf#OOO_CONTROL_104
-msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr "Указанные приложения используют (занимают) файлы которые необходимо обновить. Закройте указанные приложения и нажмите Повторить для продолжения."
-
-#: Control.ulf#OOO_CONTROL_105
-msgid  "{&MSSansBold8}Files in Use"
-msgstr "Используемые (занятые) файлы"
-
-#: Control.ulf#OOO_CONTROL_106
-msgid  "&Exit"
-msgstr "Выход"
-
 #: Control.ulf#OOO_CONTROL_107
 msgid  "&Ignore"
 msgstr "Игнорировать"
@@ -1579,45 +584,9 @@ msgstr "Игнорировать"
 msgid  "&Retry"
 msgstr "Повторить"
 
-#: Control.ulf#OOO_CONTROL_117
-msgid  "Create New Folder|"
-msgstr "Создать новую папку|"
-
-#: Control.ulf#OOO_CONTROL_121
-msgid  "Up One Level|"
-msgstr "На уровень выше|"
-
 #: Control.ulf#OOO_CONTROL_124
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
-msgstr "Эта программа основана на проекте 'Apache OpenOffice (incubating)', который поддерживается членами сообщества Apache. Список смотрите http://www.openoffice.org/welcome/credits.html"
-
-#: Control.ulf#OOO_CONTROL_127
-msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr "Этот мастер установит [ProductName] на ваш компьютер. Чтобы продолжить, нажмите Далее."
-
-#: Control.ulf#OOO_CONTROL_132
-msgid  "Please read the following license agreement carefully."
-msgstr "Пожалуйста, внимательно прочитайте следующее лицензионное соглашение."
-
-#: Control.ulf#OOO_CONTROL_133
-msgid  "{&MSSansBold8}License Agreement"
-msgstr "{&MSSansBold8}Лицензионное соглашение"
-
-#: Control.ulf#OOO_CONTROL_139
-msgid  "Modify, repair, or remove the program."
-msgstr "Установка, модификация или удаление программы."
-
-#: Control.ulf#OOO_CONTROL_140
-msgid  "{&MSSansBold8}Program Maintenance"
-msgstr "{&MSSansBold8}Управление программой"
-
-#: Control.ulf#OOO_CONTROL_143
-msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr "Изменение набора компонент. Также, здесь Вы можете выбрать способ установки компонент."
-
-#: Control.ulf#OOO_CONTROL_144
-msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr "Ремонт установленной программы. Здесь Вы сможете восстановить повреждённые или удалённые файлы, ярлыки и записи в реестр."
+msgstr "Эта программа основана на проекте 'Apache OpenOffice', который поддерживается членами сообщества Apache. Список смотрите http://www.openoffice.org/welcome/credits.html"
 
 #: Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1627,81 +596,21 @@ msgstr "Удалить [ProductName] с вашего компьютера."
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
 msgstr "Мастер установки поможет вам модифицировать, восстановить или удалить [ProductName]. Для продолжение нажмите Далее."
 
-#: Control.ulf#OOO_CONTROL_153
-msgid  "Disk space required for the installation exceeds available disk space."
-msgstr "Дисковое пространство, требуемое для установки, превышает свободное место на диске."
-
 #: Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
 msgstr "{&MSSansBold8}Нет места на диске"
-
-#: Control.ulf#OOO_CONTROL_156
-msgid  "{120}{70}{70}{70}{70}"
-msgstr "{120}{70}{70}{70}{70}"
-
-#: Control.ulf#OOO_CONTROL_160
-msgid  "&Update >"
-msgstr "Обновить >"
-
-#: Control.ulf#OOO_CONTROL_161
-msgid  "{&TahomaBold10}Welcome to the Patch for [ProductName]"
-msgstr "Добро пожаловать в программу обновления [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
 msgstr "Мастер установки произведёт обновление [ProductName] на вашем компьютере. Нажмите Обновить для продолжения."
 
-#: Control.ulf#OOO_CONTROL_167
-msgid  "The wizard is ready to begin installation."
-msgstr "Мастер готов к началу установки."
-
-#: Control.ulf#OOO_CONTROL_168
-msgid  "Click Install to begin the installation."
-msgstr "Чтобы начать установку, нажмите «Установить»."
-
 #: Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
 msgstr "Чтобы просмотреть или изменить параметры установки, нажмите «Назад». Для завершения работы мастера нажмите «Отмена»."
 
-#: Control.ulf#OOO_CONTROL_170
-msgid  "{&MSSansBold8}Ready to Modify the Program"
-msgstr "{&MSSansBold8}Готов к модификации программы"
-
-#: Control.ulf#OOO_CONTROL_171
-msgid  "{&MSSansBold8}Ready to Repair the Program"
-msgstr "{&MSSansBold8}Готов к восстановлению программы"
-
-#: Control.ulf#OOO_CONTROL_172
-msgid  "{&MSSansBold8}Ready to Install the Program"
-msgstr "{&MSSansBold8}Готов к установке"
-
-#: Control.ulf#OOO_CONTROL_178
-msgid  "You have chosen to remove the program from your system."
-msgstr "Вы выбрали удалить программу с вашего компьютера."
-
-#: Control.ulf#OOO_CONTROL_179
-msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr "Нажмите Удалить для удаления [ProductName] с вашего компьютера. После удаления невозможно будет запустить эту программу."
-
-#: Control.ulf#OOO_CONTROL_180
-msgid  "If you want to review or change any settings, click Back."
-msgstr "Чтобы просмотреть или изменить параметры, нажмите «Назад»."
-
-#: Control.ulf#OOO_CONTROL_181
-msgid  "{&MSSansBold8}Remove the Program"
-msgstr "{&MSSansBold8}Удалить программу"
-
-#: Control.ulf#OOO_CONTROL_182
-msgid  "&Remove"
-msgstr "Удалить"
-
 #: Control.ulf#OOO_CONTROL_185
 msgid  "&Finish"
 msgstr "Готово"
-
-#: Control.ulf#OOO_CONTROL_186
-msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr "Конфигурация вашей системы не изменилась. Для завершения установки в другой раз запустите программу установки снова."
 
 #: Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -1723,45 +632,9 @@ msgstr "{&TahomaBold10}Работа мастера установки завер
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
 msgstr "Работа мастера установки [ProductName] была прервана."
 
-#: Control.ulf#OOO_CONTROL_194
-msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr "Да, проверить наличие обновлений после установки (рекомендуется)."
-
-#: Control.ulf#OOO_CONTROL_195
-msgid  "Launch the program"
-msgstr "Запустить программу"
-
-#: Control.ulf#OOO_CONTROL_196
-msgid  "Show the readme file"
-msgstr "Показать файл readme"
-
-#: Control.ulf#OOO_CONTROL_199
-msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr "Мастер установки успешно установил [ProductName]. Нажмите Готово для выхода из мастера."
-
-#: Control.ulf#OOO_CONTROL_200
-msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr "Мастер установки успешно удалил [ProductName]. Нажмите Готово для выхода из мастера."
-
 #: Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
 msgstr "Установка  [ProductName] завершена."
-
-#: Control.ulf#OOO_CONTROL_202
-msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr "Некоторые файлы программы могут быть обновлены после приобретения Вами копии [ProductName]."
-
-#: Control.ulf#OOO_CONTROL_203
-msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr "Может быть задействован ваш доступ в сеть Интернет для проверки обновлений."
-
-#: Control.ulf#OOO_CONTROL_204
-msgid  "&Abort"
-msgstr "Прервать"
-
-#: Control.ulf#OOO_CONTROL_205
-msgid  "&Cancel"
-msgstr "Отмена"
 
 #: Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
@@ -1775,109 +648,21 @@ msgstr "ОК"
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
 msgstr "Подготавливается мастер установки [ProductName], который поможет Вам в процессе установки. Подождите."
 
-#: Control.ulf#OOO_CONTROL_222
-msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr "Конфигурация вашей системы не изменилась. Для установки в другой раз запустите программу установки снова."
-
-#: Control.ulf#OOO_CONTROL_228
-msgid  "Progress done"
-msgstr "Завершено"
-
-#: Control.ulf#OOO_CONTROL_234
-msgid  "The program features you selected are being installed."
-msgstr "Устанавливаются выбранные программные компоненты."
-
-#: Control.ulf#OOO_CONTROL_235
-msgid  "The program features you selected are being uninstalled."
-msgstr "Удаляются выбранные программные компоненты."
-
-#: Control.ulf#OOO_CONTROL_236
-msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr "Подождите пока Мастер установит [ProductName]. Это может занять несколько минут."
-
-#: Control.ulf#OOO_CONTROL_237
-msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr "Подождите пока Мастер удалит [ProductName]. Это может занять несколько минут."
-
-#: Control.ulf#OOO_CONTROL_238
-msgid  "{&MSSansBold8}Installing [ProductName]"
-msgstr "{&MSSansBold8}Установка [ProductName]"
-
 #: Control.ulf#OOO_CONTROL_239
 msgid  "{&MSSansBold8}Uninstalling [ProductName]"
 msgstr "{&MSSansBold8}Удаление [ProductName]"
-
-#: Control.ulf#OOO_CONTROL_240
-msgid  "Sec."
-msgstr "сек."
-
-#: Control.ulf#OOO_CONTROL_241
-msgid  "Status:"
-msgstr "Состояние:"
-
-#: Control.ulf#OOO_CONTROL_244
-msgid  "Estimated time remaining:"
-msgstr "Приблизительное оставшееся время:"
-
-#: Control.ulf#OOO_CONTROL_248
-msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr "Мастер установки завершит установку [ProductName] на ваш компьютер. Чтобы продолжить нажмите Далее."
-
-#: Control.ulf#OOO_CONTROL_249
-msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr "Мастер установки завершит приостановившуюся установку [ProductName] на ваш компьютер. Чтобы продолжить нажмите Далее."
-
-#: Control.ulf#OOO_CONTROL_250
-msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Продолжение работы мастера установки [ProductName]"
 
 #: Control.ulf#OOO_CONTROL_255
 msgid  "The main components will be installed. Recommended for most users."
 msgstr "Установить основные компоненты. Рекомендуется для большинства пользователей."
 
-#: Control.ulf#OOO_CONTROL_256
-msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr "Выбрать необходимые компоненты программы, и указать место для установки. Рекомендуется для опытных пользователей."
-
-#: Control.ulf#OOO_CONTROL_257
-msgid  "Choose the setup type that best suits your needs."
-msgstr "Выберите наиболее подходящий тип установки."
-
-#: Control.ulf#OOO_CONTROL_258
-msgid  "Please select a setup type."
-msgstr "Выберите тип установки."
-
-#: Control.ulf#OOO_CONTROL_259
-msgid  "{&MSSansBold8}Setup Type"
-msgstr "{&MSSansBold8}Тип установки"
-
 #: Control.ulf#OOO_CONTROL_267
 msgid  "Please select the product language for [ProductName]."
 msgstr "Выберите язык для [ProductName]."
 
-#: Control.ulf#OOO_CONTROL_268
-msgid  "{&MSSansBold8}Language Selection"
-msgstr "{&MSSansBold8}Выбор языка"
-
-#: Control.ulf#OOO_CONTROL_269
-msgid  "Repair or remove the program."
-msgstr "Восстановить или удалить программу."
-
-#: Control.ulf#OOO_CONTROL_270
-msgid  "&Microsoft Word Documents"
-msgstr "Документы &Microsoft Word"
-
-#: Control.ulf#OOO_CONTROL_271
-msgid  "Microsoft &Excel Spreadsheets"
-msgstr "Электронные таблицы Microsoft Excel"
-
 #: Control.ulf#OOO_CONTROL_272
 msgid  "Microsoft Po&werPoint Presentations"
 msgstr "Презентации Microsoft Po&werPoint"
-
-#: Control.ulf#OOO_CONTROL_273
-msgid  "&[ProductName] Writer/Web"
-msgstr "&[ProductName] Writer/Web"
 
 #: Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
@@ -1887,78 +672,22 @@ msgstr "Установить [DEFINEDPRODUCT] в качестве приложе
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
 msgstr "[ProductName] будет установлен в качестве приложения по умолчанию для открытия файлов Microsoft Office. Это означает, что при двойном щелчке на этих файлах, они будут открыты в [ProductName], а не в той программе, в которой открываются сейчас."
 
-#: Control.ulf#OOO_CONTROL_276
-msgid  "File types"
-msgstr "Типы документов"
-
-#: Control.ulf#OOO_CONTROL_277
-msgid  "Default HTML editor"
-msgstr "Редактор веб-страниц по умолчанию"
-
-#: Control.ulf#OOO_CONTROL_278
-msgid  "{&MSSansBold8}File Type"
-msgstr "{&MSSansBold8}Типы файлов"
-
 #: Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
 msgstr "Была обнаружена версия [DEFINEDPRODUCT] [DEFINEDVERSION], которая будет обновлена."
-
-#: Control.ulf#OOO_CONTROL_301
-msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr "Указанный каталог не содержит [DEFINEDPRODUCT] [DEFINEDVERSION]."
 
 #: Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
 msgstr "Была найдена более новая версия [DEFINEDPRODUCT] [DEFINEDVERSION]."
 
-#: Control.ulf#OOO_CONTROL_303
-msgid  "The version specified in the folder below cannot be updated."
-msgstr "Указанная версия не может быть обновлена."
-
 #: Control.ulf#OOO_CONTROL_304
 msgid  "Check the destination folder."
 msgstr "Проверьте выбранный каталог."
-
-#: Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click \"Next\"."
-msgstr "Нажмите для продолжения "
-
-#: Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr "Чтобы выбрать другую версию, кликните "
-
-#: Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click \"Change\"."
-msgstr "Чтобы выбрать другую папку, кликните "
 
 #: Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
 msgstr "Если вы только пробуете работать в [ProductName], то, вероятно, вам это не нужно. Поэтому оставьте флажки снятыми."
 
-#: Control.ulf#OOO_CONTROL_317
-msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr "Для установки не выбраны языки. Нажмите кнопку OK для выбора одного или более языков для установки."
-
-#: Control.ulf#OOO_CONTROL_318
-msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr "Для установки не выбраны приложения. Нажмите кнопку OK для выбора одного или более приложений для установки."
-
 #: Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"
 msgstr "Создать ярлык на рабочем столе"
-
-#: Control.ulf#OOO_CONTROL_320
-msgid  "Remove all older product versions"
-msgstr "Удалить все предыдущие версии"
-
-#: Control.ulf#OOO_CONTROL_LANG_1033
-msgid  "English"
-msgstr "Английский"
-
-#: Control.ulf#OOO_CONTROL_LANG_1031
-msgid  "German"
-msgstr "Немецкий"
-
-#: Control.ulf#OOO_CONTROL_LANG_1034
-msgid  "Spanish"
-msgstr "Испанский"

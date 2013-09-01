@@ -47,10 +47,6 @@ msgstr "மாற்றப்பட்டது"
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
 msgstr "கட்டுப்பாட்டை ஏற்றும் போது பிழை ஏற்பட்டது. ஆகையால் வெற்றிட நிரப்பியால் நிரப்பப்பட்டது."
 
-#: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
-msgstr "தரவுதளத்திலிருந்து தரவை வாசித்தலில் பிழை"
-
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
 msgstr "இணைப்பு தோல்வியடைந்தது"
@@ -63,22 +59,6 @@ msgstr "தரவு உள்ளடக்கத்தை ஏற்றவிய�
 msgid  "The data content could not be updated"
 msgstr "தரவு உள்ளடக்கத்தை உடன் புதுப்பித்தலாகாது"
 
-#: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
-msgstr "புதிய பதிவைச் சேர்த்தலில் பிழை"
-
-#: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
-msgstr "தற்போதைய பதிவை மேம்படுத்தலில் பிழை"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
-msgstr "தற்போதைய பதிவை அழித்தலில் பிழை"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
-msgstr "குறிப்பிட்ட பதிவுகளை அழித்தலில் பிழை"
-
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
 msgstr "பொருள் சுழியாக இருக்க இயலாது."
@@ -87,17 +67,9 @@ msgstr "பொருள் சுழியாக இருக்க இயல
 msgid  "Insert graphics from..."
 msgstr "வரைவியிலிருந்து சேர்க்கவும்..."
 
-#: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
-msgstr "வரைவியலை நீக்கவும்"
-
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
 msgstr "கொடுக்கப்பட்ட ஸ்டீரிம் தவறானது."
-
-#: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
-msgstr "கேள்வியில் இலக்கணப்பிழை உள்ளது"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
@@ -207,29 +179,9 @@ msgstr "சரம் $2 எழுத்துக்கள் எண்ணிக�
 msgid  "String"
 msgstr "சரம்"
 
-#: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
-msgstr "மீஇணைப்பு"
-
-#: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
-msgstr "சரி/தவறு (பூலியன்)"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
-msgstr "தசம"
-
-#: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
-msgstr "தசம பின்னம்"
-
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
 msgstr "இரட்டை"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "தேதி"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
@@ -247,26 +199,6 @@ msgstr "மாதம் மற்றும் வருடம்"
 msgid  "Year"
 msgstr "வருடம்"
 
-#: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
-msgstr "மாதம் மற்றும் நாள்"
-
-#: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
-msgstr "மாதம்"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
-msgstr "தினம்"
-
-#: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
-msgstr "மதிப்பிடும் போது பிழை"
-
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
 msgstr "சரம் '$1' த்திற்கு சரியாக பொருந்தி எதிர்பார்ப்பு '$2'க்கு தேவைப்படுகிறது."
-
-#: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "பிணைத்தல்"

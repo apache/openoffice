@@ -31,36 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
-#, fuzzy
-msgid  "Configuration Menu"
-msgstr "Trình đơn cấu hình"
-
-#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
-#, fuzzy
-msgid  "~Add-Ons"
-msgstr "~Bổ sung"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Cu~t"
-msgstr "Cắ~t"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Copy"
-msgstr "~Chép"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Paste"
-msgstr "~Dán"
-
-#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
-#, fuzzy
-msgid  "Leave Full-Screen Mode"
-msgstr "Rời khỏi chế độ toàn màn hình"
-
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 #, fuzzy
 msgid  "Add-~On Help"
@@ -68,100 +38,38 @@ msgstr "Trợ giúp ~bổ trợ"
 
 #: menu/menu.src#STR_MENU_SYNONYMS.STRING.TEXT
 msgid  "Synonyms"
-msgstr ""
+msgstr "Các Từ Đồng Nghĩa"
 
 #: menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.STRING.TEXT
 msgid  "(none)"
-msgstr ""
+msgstr "(hiện không có)"
 
 #: menu/menu.src#STR_MENU_THESAURUS.STRING.TEXT
 msgid  "~Thesaurus..."
-msgstr ""
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "My Templates"
-msgstr "Mẫu của tôi"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Business Correspondence"
-msgstr "Thư từ kinh doanh"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Other Business Documents"
-msgstr "Tài liệu kinh doanh khác"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Personal Correspondence and Documents"
-msgstr "Tài liệu và thư từ cá nhân"
+msgstr "~Đại Từ Điển..."
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Forms and Contracts"
 msgstr "Mẫu biểu và hợp đồng"
 
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Finances"
-msgstr "Tài chính"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Education"
-msgstr "Giáo dục"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentation Backgrounds"
-msgstr "Nền trình chiếu"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentations"
-msgstr "Trình chiếu"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Miscellaneous"
-msgstr "Lặt vặt"
-
-#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
-#, fuzzy
-msgid  "The templates are being initialized for first-time usage."
-msgstr "Mẫu đang được khởi tạo cho lần sử dụng đầu tiên."
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Mẫu"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New template"
-msgstr "Mẫu mới"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "~Loại"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Templates"
-msgstr "~Mẫu"
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr "Việc lưu định dạng ngoài có thể gây ra\ndữ liệu bị mất. Bạn vẫn muốn đóng không?"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Sửa"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "~Tổ chức..."
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr "Tên đang sử dụng.\nBạn có muốn ghi đè lên mẫu tài liệu không?"
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 #, fuzzy
@@ -173,170 +81,52 @@ msgstr "Bạn có thực sự muốn xoá vùng « $1 » không?"
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Bạn có thực sự muốn xoá mục nhập « $1 » không?"
 
-#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "Tài liệu « $(DOC) » đã được sửa đổi.\nBạn có muốn lưu các thay đổi này không?"
-
-#: doc/doc.src#STR_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Styles"
-msgstr "Kiểu dáng"
-
-#: doc/doc.src#STR_MACROS.STRING.TEXT
-#, fuzzy
-msgid  "Macros"
-msgstr "Vĩ lệnh"
-
-#: doc/doc.src#STR_CONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configuration"
-msgstr "Cấu hình"
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr "Phân loại không rỗng.\nVẫn xoá không?"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 #, fuzzy
 msgid  "Styles in "
 msgstr "Kiểu dáng ở "
 
-#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Printing Styles"
-msgstr "Kiểu dáng in"
-
-#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The print job could not be started."
-msgstr "Công việc in không khởi chạy được."
-
-#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
-#, fuzzy
-msgid  "Copy"
-msgstr "Bản sao"
-
-#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "The template could not be opened."
-msgstr "Không thể mở mẫu đó."
-
-#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document already open for editing."
-msgstr "Tài liệu đã được mở để chỉnh sửa."
-
-#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "Error recording document "
-msgstr "Gặp lỗi khi thu tài liệu "
-
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Mẫu"
-
-#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "Gặp lỗi khi sao chép mẫu « $1 ».\nCó thể đã có mẫu tên này."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "The template \"$1\" can not be deleted."
 msgstr "Không thể xoá mẫu « $1 »."
 
-#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error moving template \"$1\"."
-msgstr "Gặp lỗi khi di chuyển mẫu « $1 »."
-
-#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The update could not be saved."
-msgstr "Không thể lưu bản cập nhật đó."
-
-#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "Gặp lỗi khi lưu mẫu "
-
-#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Error renaming template."
-msgstr "Gặp lỗi khi thay đổi tên của mẫu."
-
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "Error renaming template category."
 msgstr "Gặp lỗi khi thay đổi tên của loại mẫu."
 
-#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Please specify a name."
-msgstr "Hãy xác định một tên."
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr "Hãy xác định một tên duy nhất.\nKhông thể phân biệt chữ hoa/thường."
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "Mẫu « $(TEXT) » nên là mẫu mặc định không?"
 
-#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Do you want to reset the default template?"
-msgstr "Bạn có muốn đặt lại mẫu mặc định không?"
-
-#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document info cannot be read."
-msgstr "Không thể đọc thông tin về tài liệu này."
-
-#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
-#, fuzzy
-msgid  "The selected file has an incorrect format."
-msgstr "Tập tin đã chọn không có định dạng đúng."
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr "Thư mục mẫu\n$(DIR)\nkhông tồn tại."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 #, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 msgstr "Không thể lưu tài liệu dưới định dạng $(FORMAT).\nBạn có muốn lưu các thay đổi của mình dưới định dạng $(OWNFORMAT) không?"
 
-#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "~Lưu"
-
-#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Update"
-msgstr "Cậ~p nhật"
-
-#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save ~As..."
-msgstr "Lưu ~mới..."
-
-#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save Copy ~as..."
-msgstr "Lưu bản s~ao dưới dạng..."
-
-#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "Đón~g"
-
-#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-#, fuzzy
-msgid  "~Close & Return to "
-msgstr "Đón~g và trở về "
-
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 #, fuzzy
 msgid  " AutoPilot"
 msgstr " Lái tự động"
-
-#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configurations"
-msgstr "Cấu hình"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 #, fuzzy
@@ -348,260 +138,43 @@ msgstr "Thư viện BASIC %PRODUCTNAME"
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "Có nên thay thế kiểu dáng « $(ARG1) » không?"
 
-#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
-#, fuzzy
-msgid  "Loading Document"
-msgstr "Đang nạp tài liệu"
-
-#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
-#, fuzzy
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "Đã kết nối tới: $(HOST). Đang chờ phản hồi..."
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
-#, fuzzy
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "Đang mở $(TARGET) trên $(HOST)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
-#, fuzzy
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "Đang tải: $(TARGET) từ $(HOST). Đã tải được: $(BYTE)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
-#, fuzzy
-msgid  "Disconnected"
-msgstr "Bị ngắt kết nối"
-
-#: doc/doc.src#STR_EDIT.STRING.TEXT
-#, fuzzy
-msgid  "Edit"
-msgstr "Sửa"
-
-#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Documents"
-msgstr "Tài liệu %PRODUCTNAME"
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr "Không thể mở tài liệu này để chỉnh sửa.\nBạn có muốn mở nó chỉ để đọc không?"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 #, fuzzy
 msgid  "Propert~ies..."
 msgstr "~Thuộc tính..."
 
-#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
-#, fuzzy
-msgid  "HTML (FrameSet)"
-msgstr "HTML (tập khung)"
-
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 #, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "Tài liệu khung %PRODUCTNAME"
-
-#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
-#, fuzzy
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "Mẫu « $(TEMPLATE) » không tìm thấy ở vị trí gốc. Một mẫu cùng tên nằm ở « $(FOUND) ». Có nên dùng mẫu này để so sánh sau này không?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 #, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "Mẫu « $(TEMPLATE) » không tìm thấy. Có nên tìm mẫu này lần kế tiếp mở tài liệu này không?"
 
-#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Automatically saved version"
-msgstr "Phiên bản đã lưu tự động"
-
-#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
-#, fuzzy
-msgid  "Text Document"
-msgstr "Tài liệu văn bản"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
-#, fuzzy
-msgid  "HTML Document"
-msgstr "Tài liệu HTML"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
-#, fuzzy
-msgid  "Master Document"
-msgstr "Tài liệu chủ"
-
-#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "Bảng tính"
-
-#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
-#, fuzzy
-msgid  "Presentation"
-msgstr "Trình chiếu"
-
-#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
-#, fuzzy
-msgid  "Drawing"
-msgstr "Bản vẽ"
-
-#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "Message"
-msgstr "Thư"
-
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 #, fuzzy
 msgid  "~Discard"
 msgstr "~Bỏ qua"
-
-#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
-#, fuzzy
-msgid  "Access to the current data medium not possible."
-msgstr "Không thể truy cập đến thiết bị lưu trữ dữ liệu hiện thời."
-
-#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
-#, fuzzy
-msgid  "Insert the next data carrier and click OK."
-msgstr "Chèn thiết bị lưu trữ dữ liệu kế tiếp rồi nhắp vào OK."
-
-#: doc/doc.src#STR_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "Đối tượng"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
-#, fuzzy
-msgid  "Run Macro"
-msgstr "Chạy vĩ lệnh"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "This document contains macros. $(TEXT)"
-msgstr "Tài liệu này chứa vĩ lệnh. $(TEXT)"
-
-#: doc/doc.src#BTN_OK.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "Chạy"
-
-#: doc/doc.src#BTN_CANCEL.STRING.TEXT
-#, fuzzy
-msgid  "Do Not Run"
-msgstr "Không chạy"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 #, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "Tuỳ thuộc vào các thiết lập bảo mật, các vĩ lệnh trong tài liệu này không nên chạy. Bạn vẫn muốn chạy chúng không?"
 
-#: doc/doc.src#FT_OK.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to allow these macros to be run?"
-msgstr "Bạn có muốn cho phép những vĩ lệnh này chạy không?"
-
-#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Export as PDF"
-msgstr "Xuất dạng PDF"
-
-#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export..."
-msgstr "Xuất..."
-
-#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Xuất"
-
-#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
-#, fuzzy
-msgid  "Add this directory to the list of secure paths: "
-msgstr "Thêm thư mục này vào danh sách các đường dẫn bảo mật: "
-
-#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
-#, fuzzy
-msgid  "File format:"
-msgstr "Định dạng tập tin:"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-#, fuzzy
-msgid  "This document contains:\n\n"
-msgstr "Tài liệu này chứa:\n\n"
-
-#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
-#, fuzzy
-msgid  "Recorded changes"
-msgstr "Các thay đổi được ghi lại"
-
-#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
-#, fuzzy
-msgid  "Notes"
-msgstr "Ghi chú"
-
-#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
-#, fuzzy
-msgid  "Document versions"
-msgstr "Phiên bản tài liệu"
-
-#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
-#, fuzzy
-msgid  "Fields"
-msgstr "Các trường"
-
-#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
-#, fuzzy
-msgid  "Linked data..."
-msgstr "Dũ liệu đã liên kết..."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue saving the document?"
-msgstr "Bạn có muốn tiếp tục lưu tài liệu này không?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue printing the document?"
-msgstr "Bạn có muốn tiếp tục in tài liệu này không?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue signing the document?"
-msgstr "Bạn có muốn tiếp tục ký tài liệu này không?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "Bạn có muốn tiếp tục tạo tập tin PDF không?"
-
-#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "Nếu bạn không muốn ghi đè lên tài liệu gốc, bạn nên lưu sự cố gắng của mình dưới tên tập tin mới."
-
-#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Some template files are protected and can not be deleted."
-msgstr "Một vài tập tin mẫu bị bảo vệ nên không thể được xoá."
-
-#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Info %1"
-msgstr "Thông tin %1"
-
 #: doc/doc.src#STR_SHARED.STRING.TEXT
 #, fuzzy
 msgid  " (shared)"
 msgstr " (chia sẻ)"
 
-#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-#, fuzzy
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "Phiên bản định dạng tài liệu được đặt thành ODF 1.1 (OpenOffice.org 2.x) dưới mục trình đơn Công cụ > Tùy chọn > Nạp/Lưu > Chung. Chức năng thêm chữ ký vào tài liệu thì đòi hỏi ODF 1.2 (OpenOffice.org 3.x)."
-
-#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "Tài liệu này được tạo từ mẫu '$(ARG1)' . Mẫu này đã bị sửa đổi. Bạn có muốn cập nhật kiểu định dạng mới theo mẫu đã được sửa?"
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr "Tài liệu cần phải được lưu trước khi có thể thêm chữ ký. Chức năng lưu tài liệu cũng gỡ bỏ bất cứ chữ ký nào đã có.\nBạn có muốn lưu tài liệu không?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 #, fuzzy
@@ -613,21 +186,6 @@ msgstr "~Cập nhật kiểu"
 msgid  "~Keep Old Styles"
 msgstr "~Giữ kiểu cũ"
 
-#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Template Management"
-msgstr "Quản lý mẫu"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Đóng"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~File..."
-msgstr "~Tập tin..."
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Address Book..."
@@ -638,30 +196,10 @@ msgstr "Sổ đị~a chỉ..."
 msgid  "Templates"
 msgstr "Mẫu"
 
-#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Documents"
-msgstr "Tài liệu"
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 #, fuzzy
 msgid  "Commands"
 msgstr "Lệnh"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New"
-msgstr "~Mới"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Xoá"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Sửa"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 #, fuzzy
@@ -672,11 +210,6 @@ msgstr "Nhập mẫu..."
 #, fuzzy
 msgid  "Export Template..."
 msgstr "Xuất khẩu mẫu..."
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Print"
-msgstr "~In"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 #, fuzzy
@@ -698,190 +231,35 @@ msgstr "Đặt làm mẫu mặc định"
 msgid  "Reset Default Template"
 msgstr "Đặt lại mẫu mặc định"
 
-#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "Mới"
-
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "~Loại"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "T~emplates"
-msgstr "Mẫ~u"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 #, fuzzy
 msgid  "~More"
 msgstr "~Nhiều"
 
-#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Pre~view"
-msgstr "~Xem thử"
-
-#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Mô tả"
-
-#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Te~xt"
-msgstr "~Văn bản"
-
-#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Frame"
-msgstr "~Khung"
-
-#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Pages"
-msgstr "~Trang"
-
-#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "N~umbering"
-msgstr "Đánh ~số"
-
-#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Overwrite"
-msgstr "~Ghi đè"
-
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "From File..."
 msgstr "Từ tập tin..."
-
-#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Load Styles"
-msgstr "Nạp các kiểu dáng"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Tựa đề"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Subject"
 msgstr "Chủ đề"
 
-#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Key words"
-msgstr "Từ ~khoá"
-
-#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Description"
-msgstr "~Mô tả"
-
-#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-#, fuzzy
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "Bộ lọc đã chọn $(FILTER) chưa được cài đặt.\nBạn có muốn cài đặt nó ngay không?"
-
-#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-#, fuzzy
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "Bộ lọc đã chọn $(FILTER) không nằm trong bản in này.\nBạn có thể xem thông tin về đơn đặt hàng trên chỗ Web của chúng tôi."
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Reduce print data"
-msgstr "Giảm dữ liệu in"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Settings for"
-msgstr "Thiết lập cho"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Printer"
-msgstr "~Máy in"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Print to ~file"
-msgstr "In ~vào tập tin"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Reduce transparency"
-msgstr "~Giảm tính trong suốt"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Auto~matically"
-msgstr "~Tự động"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~No transparency"
-msgstr "Khô~ng trong suốt"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~gradients"
-msgstr "~Giảm chuyển màu"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Gradient ~stripes"
 msgstr "~Sọc chuyển màu"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Intermediate ~color"
-msgstr "~Màu trung gian"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~bitmaps"
-msgstr "Giảm ~mảng"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~High print quality"
-msgstr "C~hất lượng in cao"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~ormal print quality"
-msgstr "~Chất lượng in chuẩn"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Reso~lution"
 msgstr "Độ ~phân giải"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (điện thư)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "200 DPI (default)"
-msgstr "200 DPI (mặc định)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
@@ -893,85 +271,20 @@ msgstr "300 DPI"
 msgid  "600 DPI"
 msgstr "600 DPI"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Include transparent ob~jects"
-msgstr "Gồm đối tượng tr~ong suốt"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Con~vert colors to grayscale"
 msgstr "Chuyển đổi màu thành g~am xám"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Printer warnings"
-msgstr "Cảnh báo in"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "P~aper size"
-msgstr "Kích cỡ giấ~y"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pap~er orientation"
 msgstr "~Hướng giấy"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Transparency"
-msgstr "~Trong suốt"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Warning"
-msgstr "Cảnh báo"
-
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr "Tài liệu này chứa các đối tượng trong suốt.\nTrường hợp này có thể gây ra thời gian in lâu hơn\ntrên một số máy in nào đó. Có nên giảm\nđộ trong suốt không?"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
-#, fuzzy
-msgid  "~Yes"
-msgstr "~Có"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~No"
-msgstr "~Không"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Cancel"
-msgstr "Thô~i"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Do not show warning again"
-msgstr "~Không hiển thị lại cảnh báo này"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Style Catalog"
-msgstr "Phân loại Kiểu dáng"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "~Tổ chức..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete..."
-msgstr "~Xoá..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Modify..."
-msgstr "Sử~a..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 #, fuzzy
@@ -980,197 +293,82 @@ msgstr "~Mới..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
 msgid  "Style List"
-msgstr ""
-
-#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
-#, fuzzy
-msgid  "Hierarchical"
-msgstr "Phân cấp"
+msgstr "Danh sách Kiểu Trang Trí"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 #, fuzzy
 msgid  "Styles and Formatting"
 msgstr "Kiểu dáng và Định dạng"
 
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Fill Format Mode"
-msgstr "Chế độ Định dạng Tô đầy"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "New Style from Selection"
-msgstr "Kiểu dáng Mới từ Vùng chọn"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Update Style"
-msgstr "Cập nhật Kiểu dáng"
-
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
-msgstr ""
+msgstr "Mật khẩu để mã hóa tập tin"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
 msgid  "~Enter password to open"
-msgstr ""
+msgstr "~Vui lòng điền vào mật khẩu để mở"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FIXEDTEXT.TEXT
 msgid  "~Reenter password to open"
-msgstr ""
+msgstr "~Vui lòng điền lại mật khẩu một lần nữa để mở"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FIXEDLINE.TEXT
 msgid  "File sharing password"
-msgstr ""
+msgstr "Mật khẩu dành cho việc chia sẻ tập tin"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
 msgid  "Enter password to modify"
-msgstr ""
+msgstr "Điền vào mật khẩu để chỉnh sửa"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FIXEDTEXT.TEXT
 msgid  "Reenter password to modify"
-msgstr ""
+msgstr "Xin điền lại mật khẩu một lần nữa để chỉnh sửa"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FIXEDLINE.TEXT
 msgid  "File sharing options"
-msgstr ""
+msgstr "Tùy chọn về chia sẻ tập tin"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CHECKBOX.TEXT
 msgid  "~Open file read-only"
-msgstr ""
+msgstr "M~ở tập tin ở chế độ chỉ-được-đọc"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CHECKBOX.TEXT
 msgid  "Record ~changes"
-msgstr ""
+msgstr "C~ác thay đổi được ghi nhận"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.STRING.TEXT
 msgid  "~Protect..."
-msgstr ""
+msgstr "B~ảo vệ..."
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.STRING.TEXT
 msgid  "~Unprotect..."
-msgstr ""
+msgstr "G~ỡ bỏ chế độ bảo vệ..."
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.STRING.TEXT
 msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
-msgstr ""
+msgstr "Thao tác này sẽ thoát khỏi chế độ ghi nhận các thay đổi.\nBất kỳ thông tin nào về các thay đổi sẽ bị mất.\n\nBạn vẫn muốn thoát khỏi chế độ ghi nhận thay đổi chứ?\n\n"
 
 #: dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.STRING.TEXT
 msgid  "Protect Records"
-msgstr ""
+msgstr "Bảo vệ các bản ghi nhận"
 
 #: dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.STRING.TEXT
 msgid  "Unprotect Records"
-msgstr ""
+msgstr "Gỡ bỏ chế độ bảo vệ các bản ghi nhận"
 
 #: dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.STRING.TEXT
 msgid  "Incorrect password"
-msgstr ""
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New versions"
-msgstr "Phiên bản mới"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Save ~New Version"
-msgstr "Lưu phiê~n bản mới"
-
-#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Always save a version on closing"
-msgstr "~Lúc nào cũng lưu phiên bản khi đóng"
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Existing versions"
-msgstr "Phiên bản đã có"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time"
-msgstr "Ngày và giờ"
+msgstr "Mật khẩu đã điền vào không hợp lệ"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Saved by"
 msgstr "Lưu bởi"
 
-#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "Chú thích"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Đóng"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Open"
-msgstr "Mở"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Show..."
-msgstr "~Hiện..."
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Xoá"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Compare"
-msgstr "So sánh"
-
-#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Versions of"
-msgstr "Phiên bản của"
-
-#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time : "
-msgstr "Ngày và giờ : "
-
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Saved by "
 msgstr "Lưu bởi "
-
-#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "Đón~g"
-
-#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Insert Version Comment"
-msgstr "Chèn ghi chú phiên bản"
-
-#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
-#, fuzzy
-msgid  "Version comment"
-msgstr "Ghi chú phiên bản"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Name"
-msgstr "Tê~n"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~AutoUpdate"
-msgstr "Tự cậ~p nhật"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ne~xt Style"
-msgstr "Kiểu dáng ~sau"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1182,165 +380,25 @@ msgstr "Liên kết với"
 msgid  "~Category"
 msgstr "~Loại"
 
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contains"
-msgstr "Chứa"
-
-#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Current version"
-msgstr "Phiên bản hiện thời"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Xuất"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
-#, fuzzy
-msgid  "Insert"
-msgstr "Chèn"
-
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 #, fuzzy
 msgid  "~Insert"
 msgstr "C~hèn"
-
-#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
-#, fuzzy
-msgid  "<All formats>"
-msgstr "<Mọi định dạng>"
-
-#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
-#, fuzzy
-msgid  "~Automatic file name extension"
-msgstr "Tự gõ ~phần mở rộng tên tập tin"
-
-#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
-#, fuzzy
-msgid  "~Selection"
-msgstr "Lựa ~chọn"
-
-#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
-#, fuzzy
-msgid  "~Link"
-msgstr "~Liên kết"
-
-#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
-#, fuzzy
-msgid  "Pr~eview"
-msgstr "X~em thử"
-
-#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "~Chỉ đọc"
-
-#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
-#, fuzzy
-msgid  "Save with ~password"
-msgstr "Lưu bằng ~mật khẩu"
-
-#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Edit ~filter settings"
-msgstr "Sửa thiết lập ~lọc"
-
-#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
-#, fuzzy
-msgid  "~Play"
-msgstr "~Chạy"
-
-#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
-#, fuzzy
-msgid  "Sto~p"
-msgstr "~Dừng"
-
-#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
-#, fuzzy
-msgid  "~Open"
-msgstr "~Mở"
-
-#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "~Lưu"
-
-#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Style:"
-msgstr "Kiểu dáng:"
-
-#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "~Templates:"
-msgstr "~Mẫu :"
-
-#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
-#, fuzzy
-msgid  "~Version:"
-msgstr "Phiên ~bản:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 #, fuzzy
 msgid  "Find on this Page"
 msgstr "Tìm trên trang này"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Search for"
-msgstr "~Tìm kiếm"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Whole words only"
-msgstr "Chỉ ngu~yên từ"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Match case"
-msgstr "~Khớp chữ hoa/thường"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Wrap ~around"
 msgstr "Cuộn ~qua"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Backwards"
-msgstr "~Ngược"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Find"
 msgstr "~Tìm"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "Đón~g"
-
-#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Enter Password"
-msgstr "Nhập mật khẩu"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~User"
-msgstr "~Người dùng"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Password"
-msgstr "~Mật khẩu"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Confirm"
-msgstr "~Xác nhận"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 #, fuzzy
@@ -1348,69 +406,17 @@ msgid  "Password"
 msgstr "Mật khẩu"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "P~assword"
-msgstr "Mật khẩu"
+msgstr "M~ật khẩu"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Confir~m"
-msgstr "~Xác nhận"
+msgstr "Xác n~hận"
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
 #, fuzzy
 msgid  "%PRODUCTNAME document"
 msgstr "Tài liệu %PRODUCTNAME"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Tựa"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Subject"
-msgstr "~Chủ đề"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Keywords"
-msgstr "Từ ~khoá"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Comments"
-msgstr "C~hú thích"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Type:"
-msgstr "Kiểu :"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "~Chỉ đọc"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "Vị trí:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Size:"
-msgstr "Kích cỡ :"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Created:"
-msgstr "Tạo :"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "Sửa đổi:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1422,26 +428,6 @@ msgstr "Có chữ ký số :"
 msgid  "Digital Signature..."
 msgstr "Chữ ký số..."
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
-#, fuzzy
-msgid  "Multiply signed document"
-msgstr "Tài liệu đa chữ ký"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Last printed:"
-msgstr "In cuối:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Total editing time:"
-msgstr "Tổng thời gian sửa:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Revision number:"
-msgstr "Số bản sửa đổi:"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Reset"
@@ -1452,39 +438,14 @@ msgstr "Đặt lại"
 msgid  "~Apply user data"
 msgstr "Á~p dụng dữ liệu người dùng"
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template:"
-msgstr "Mẫu :"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
-#, fuzzy
-msgid  "unknown"
-msgstr "không rõ"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
-msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Info fields..."
-msgstr "Trường thông t~in..."
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Do not refresh automatically"
-msgstr "Không cập nhật tự động"
+msgstr "Tên Tập Tin"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Refresh this document"
 msgstr "Cập nhật tài liệu này"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "every"
-msgstr "mỗi"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1495,16 +456,6 @@ msgstr "giây"
 #, fuzzy
 msgid  "Redirect from this document"
 msgstr "Chuyển hướng từ tài liệu này"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "after"
-msgstr "sau"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "to URL"
-msgstr "tới URL"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1521,204 +472,18 @@ msgstr "Nếu bạn bật tùy chọn « %PLACEHOLDER% », bạn phải nhập v
 msgid  "~Properties"
 msgstr "~Thuộc tính"
 
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Tên"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Kiểu"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "Giá trị"
-
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Add"
 msgstr "~Thêm"
 
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-#, fuzzy
-msgid  "Property Name"
-msgstr "Tên thuộc tính"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Checked by"
-msgstr "Kiểm tra bởi"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Client"
-msgstr "Client"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date completed"
-msgstr "Ngày hoàn thành"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Department"
-msgstr "Phòng ban"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Destinations"
-msgstr "Đích"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Disposition"
-msgstr "Bố trí"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Division"
-msgstr "Bộ phận"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Document number"
-msgstr "Số của dữ liệu"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Editor"
-msgstr "Trình soạn thảo"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "E-Mail"
-msgstr "E-Mail"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Forward to"
-msgstr "Chuyển tới"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Group"
-msgstr "Nhóm"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Info"
-msgstr "Thông tin"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Language"
-msgstr "Ngôn ngữ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Mailstop"
-msgstr "Mã hòm thư"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Matter"
-msgstr "Sự vụ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Office"
-msgstr "Văn phòng"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Owner"
-msgstr "Chủ sở hữu"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Project"
-msgstr "Dự án"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Publisher"
-msgstr "Người xuất bản"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Purpose"
-msgstr "Mục đích"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Received from"
-msgstr "Nhận từ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded by"
-msgstr "Ghi bởi"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded date"
-msgstr "Ngày ghi"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Reference"
-msgstr "Tham khảo"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Source"
-msgstr "Nguồn"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Status"
-msgstr "Trạng thái"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Telephone number"
-msgstr "Số điện thoại"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Typist"
-msgstr "Người đánh máy"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-#, fuzzy
-msgid  "URL"
-msgstr "URL"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "Văn bản"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 msgid  "DateTime"
-msgstr ""
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "Ngày"
+msgstr "Ngày Tháng"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Duration"
-msgstr ""
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "Số"
+msgstr "Thời Lượng"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 #, fuzzy
@@ -1727,113 +492,52 @@ msgstr "Có hay không"
 
 #: dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.STRING.TEXT
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
-msgstr ""
+msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "Có"
-
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "Không"
-
-#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Remove Property"
-msgstr "Gỡ bỏ thuộc tính"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Properties of "
-msgstr "Các thuộc tính về "
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Chung"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Mô tả"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Custom Properties"
-msgstr "Tính chất tùy chỉnh"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Internet"
-msgstr "Internet"
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr "Giá trị đã nhập không hợp kiểu chỉ định.\nGiá trị này sẽ bị khôi khục dưới dạng văn bản."
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
-msgstr ""
+msgstr "Bảo Mật"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
 msgid  "Edit Duration"
-msgstr ""
+msgstr "Hiệu chỉnh thời lượng"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
 msgid  "~Negative"
-msgstr ""
+msgstr "~Phủ nhận"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FIXEDTEXT.TEXT
 msgid  "~Years"
-msgstr ""
+msgstr "~Năm"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FIXEDTEXT.TEXT
 msgid  "~Months"
-msgstr ""
+msgstr "~Tháng"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FIXEDTEXT.TEXT
 msgid  "~Days"
-msgstr ""
+msgstr "~Ngày"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FIXEDTEXT.TEXT
 msgid  "H~ours"
-msgstr ""
+msgstr "G~iờ"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FIXEDTEXT.TEXT
 msgid  "Min~utes"
-msgstr ""
-
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Seconds"
-msgstr "giây"
+msgstr "P~hút"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
-msgstr ""
+msgstr "Ph~ần nghìn giây"
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Edit Field Names"
 msgstr "Sửa tên trường"
-
-#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Names"
-msgstr "Tên"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Create Style"
-msgstr "Tạo kiểu dáng"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Style name"
-msgstr "Tên kiểu dáng"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Style already exists. Overwrite?"
-msgstr "Kiểu dáng đã có. Ghi đẻ không?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 #, fuzzy
@@ -1855,90 +559,47 @@ msgstr "Thôi thu"
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 msgstr "%PRODUCTNAME đã không thể tìm cấu hình thư điện tử hoạt động được. Hãy lưu tài liệu này trên máy tính cục bộ và đính nó kèm thư bên trong ứng dụng thư điện tử."
 
-#: dialog/dialog.src#STR_RESET.STRING.TEXT
-#, fuzzy
-msgid  "~Reset"
-msgstr "Đặt ~lại"
-
-#: dialog/dialog.src#STR_APPLY.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Áp dụng"
-
-#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
-#, fuzzy
-msgid  "Organizer"
-msgstr "Tổ chức"
-
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "This name is already in use."
 msgstr "Tên đang sử dụng."
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "This Style does not exist."
-msgstr "Kiểu dáng này không tồn tại."
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr "Kiểu dáng này không thể được dùng như là\nkiểu dáng cơ bản, do tạo một tham chiếu đệ qui."
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr "Tên này đã tồn tại như là kiểu dáng mặc định.\nHãy chọn tên khác."
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "Bạn có thực sự muốn xoá kiểu dáng « $1 » không?"
 
-#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-#, fuzzy
-msgid  "You are deleting an applied Style!\n"
-msgstr "Bạn đang xoá một kiểu dáng đã được áp dụng.\n"
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "Mới..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Modify..."
-msgstr "Sửa..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete..."
-msgstr "Xoá..."
-
-#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
-#, fuzzy
-msgid  "Navigator"
-msgstr "Bộ điều hướng"
-
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
-msgstr ""
+msgstr "Khung Tác Vụ"
 
-#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Faulty password confirmation"
-msgstr "Lỗi xác nhận mật khẩu"
-
-#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-#, fuzzy
-msgid  "Send"
-msgstr "Gửi"
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr "Thanh Trượt"
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
-msgstr ""
+msgstr "Thanh Gắn Kết"
 
 #: dialog/taskpane.src#STR_SFX_UNDOCK.STRING.TEXT
 msgid  "Undock"
-msgstr ""
+msgstr "Bỏ khỏi Thanh Gắn Kết"
 
 #: dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.STRING.TEXT
 msgid  "View"
-msgstr ""
+msgstr "Chế độ xem"
 
 #: dialog/taskpane.src#STR_SFX_TASKS.STRING.TEXT
 msgid  "Tasks"
-msgstr ""
+msgstr "Các tác vụ"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1950,70 +611,10 @@ msgstr "Tài liệu này có thể chứa mã định dạng hoặc nội dung k
 msgid  "~Keep Current Format"
 msgstr "~Giữ định dạng hiện thời"
 
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Save in ODF Format"
-msgstr "~Lưu dạng định dạng ODF"
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "~More Information..."
-msgstr "Thông tin thê~m..."
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Ask when not saving in ODF format"
-msgstr "~Nhắc khi không lưu dạng ODF"
-
-#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Không tìm thấy máy in mặc định.\nHãy chọn một máy in và thử lại."
-
-#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Không thể khởi chạy máy in.\nHãy kiểm tra lại cấu hình máy in đó."
-
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 #, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr "Tài liệu này đã được định dạng cho máy in $1.\nMáy in đã chỉ định không sẵn sàng.\nBạn có muốn sử dụng máy in chuẩn $2 không?"
-
-#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Options..."
-msgstr "Tùy chọn..."
-
-#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Printer Options"
-msgstr "Tùy chọn máy in"
-
-#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
-#, fuzzy
-msgid  "Printer busy"
-msgstr "Máy in bận"
-
-#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Error while printing"
-msgstr "Lỗi khi in"
-
-#: view/view.src#STR_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Printing"
-msgstr "Đang in"
-
-#: view/view.src#STR_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Page "
-msgstr "Trang "
-
-#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "Gặp lỗi khi lưu mẫu "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 #, fuzzy
@@ -2035,69 +636,52 @@ msgstr "Kích cỡ của trang đã bị sửa đổi.\nCó nên lưu thiết l�
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Tiêu đề:</b><dd>$(TITEL)<dt><b>Chủ đề:</b><dd>$(THEME)<dt><b>Từ khoá:</b><dd>$(KEYWORDS)<dt><b>Mô tả:</b><dd>$(TEXT)</dl></font></body></html>"
 
-#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
-#, fuzzy
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Không tìm thấy thuộc tính tài liệu.</B></FONT></P></BODY></HTML>"
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr "Không thể đóng tài liệu này\nvì một công việc in đang chạy."
 
-#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Print Monitor"
-msgstr "Bộ theo dõi in"
-
-#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "is being printed on"
-msgstr "đang được in trên"
-
-#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-#, fuzzy
-msgid  "is being prepared for printing"
-msgstr "đang được chuẩn bị để in"
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr "Gặp lỗi khi gửi thư, có thể vì thiếu tài khoản người dùng, hoặc thiết lập sai.\nHãy kiểm tra lại thiết lập của %PRODUCTNAME hoặc ứng dụng thư điện tử."
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "Tài liệu này không thể chỉnh sửa được, có thể là do thiếu các quyền truy cập. Bạn có muốn hiệu chỉnh một bản sao của tài liệu này không?"
 
-#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  " (repaired document)"
-msgstr " (tài liệu được sửa chữa)"
-
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME không tìm thấy trình duyệt Web trên hệ thống này. Hãy kiểm tra lại Tùy thích Môi trường, hoặc cài đặt trình duyệt Web (v.d. Firefox) vào vị trí mặc định được yêu cầu trong tiến trình cài đặt trình duyệt."
 
-#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Modify Link"
-msgstr "Sửa liên kết"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr "Tùy chọn cá nhân hóa"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Application:"
-msgstr "Ứng ~dụng:"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr "Khôi phục về mặc định"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~File:"
-msgstr "~Tập tin:"
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr "Hiển thị các tùy chọn khác"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr "Đóng lại Thanh Gắn Kết của Thanh Trượt"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr "Khung điều khiển:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Category:"
 msgstr "~Loại:"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Modify link"
-msgstr "Sửa liên kết"
-
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME"
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
 #, fuzzy
@@ -2115,9 +699,8 @@ msgid  "Automatic"
 msgstr "Tự động"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
-#, fuzzy
 msgid  "Standard"
-msgstr "Chuẩn"
+msgstr "Tiêu Chuẩn"
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
 #, fuzzy
@@ -2144,45 +727,10 @@ msgstr "GB"
 msgid  "Cancel all changes?"
 msgstr "Thôi mọi thay đổi không?"
 
-#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document already open."
-msgstr "Tài liệu đã được mở."
-
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME không tìm thấy trình duyệt Web trên hệ thống. Hãy kiểm tra lại tùy thích môi trường hoặc cài đặt một trình duyệt Web (ví dụ Mozilla) vào vị trí mặc định được yêu cầu trong tiến trình cài đặt trình duyệt."
-
-#: appl/app.src#GID_INTERN.STRING.TEXT
-#, fuzzy
-msgid  "Internal"
-msgstr "Nội bộ"
-
-#: appl/app.src#GID_APPLICATION.STRING.TEXT
-#, fuzzy
-msgid  "Application"
-msgstr "Ứng dụng"
-
-#: appl/app.src#GID_VIEW.STRING.TEXT
-#, fuzzy
-msgid  "View"
-msgstr "Xem"
-
-#: appl/app.src#GID_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "Documents"
-msgstr "Tài liệu"
-
-#: appl/app.src#GID_EDIT.STRING.TEXT
-#, fuzzy
-msgid  "Edit"
-msgstr "Sửa"
-
-#: appl/app.src#GID_MACRO.STRING.TEXT
-#, fuzzy
-msgid  "BASIC"
-msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
 #, fuzzy
@@ -2194,60 +742,10 @@ msgstr "Tùy chọn"
 msgid  "Math"
 msgstr "Math"
 
-#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
-#, fuzzy
-msgid  "Navigate"
-msgstr "Điều hướng"
-
-#: appl/app.src#GID_INSERT.STRING.TEXT
-#, fuzzy
-msgid  "Insert"
-msgstr "Chèn"
-
-#: appl/app.src#GID_FORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Format"
-msgstr "Định dạng"
-
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Mẫu"
-
-#: appl/app.src#GID_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Văn bản"
-
-#: appl/app.src#GID_FRAME.STRING.TEXT
-#, fuzzy
-msgid  "Frame"
-msgstr "Khung"
-
-#: appl/app.src#GID_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Graphic"
-msgstr "Đồ họa"
-
-#: appl/app.src#GID_TABLE.STRING.TEXT
-#, fuzzy
-msgid  "Table"
-msgstr "Bảng"
-
-#: appl/app.src#GID_ENUMERATION.STRING.TEXT
-#, fuzzy
-msgid  "Numbering"
-msgstr "Đánh số"
-
-#: appl/app.src#GID_DATA.STRING.TEXT
-#, fuzzy
-msgid  "Data"
-msgstr "Dữ liệu"
-
-#: appl/app.src#GID_SPECIAL.STRING.TEXT
-#, fuzzy
-msgid  "Special Functions"
-msgstr "Hàm đặc biệt"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
 #, fuzzy
@@ -2259,124 +757,32 @@ msgstr "Ảnh"
 msgid  "Chart"
 msgstr "Đồ thị"
 
-#: appl/app.src#GID_EXPLORER.STRING.TEXT
-#, fuzzy
-msgid  "Explorer"
-msgstr "Bộ thăm dò"
-
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
 #, fuzzy
 msgid  "Connector"
 msgstr "Đường nối"
 
-#: appl/app.src#GID_MODIFY.STRING.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "Sửa"
-
-#: appl/app.src#GID_DRAWING.STRING.TEXT
-#, fuzzy
-msgid  "Drawing"
-msgstr "Bản vẽ"
-
-#: appl/app.src#GID_CONTROLS.STRING.TEXT
-#, fuzzy
-msgid  "Controls"
-msgstr "Điều khiển"
-
-#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to save the changes to %1?"
-msgstr "Bạn có muốn lưu các thay đổi trong %1 không?"
-
-#: appl/app.src#STR_QUITAPP.STRING.TEXT
-#, fuzzy
-msgid  "E~xit"
-msgstr "T~hoát"
-
-#: appl/app.src#RID_STR_HELP.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Trợ giúp"
-
-#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
-#, fuzzy
-msgid  "No automatic start at 'XX'"
-msgstr "Không khởi chạy tự động tại « XX »"
-
-#: appl/app.src#RID_HELPBAR.STRING.TEXT
-#, fuzzy
-msgid  "Help Bar"
-msgstr "Thanh trợ giúp"
-
-#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
-#, fuzzy
-msgid  "The help file for this topic is not installed."
-msgstr "Chưa cài đặt tập tin trợ giúp cho chủ đề này."
-
-#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Function Bar"
-msgstr "Thanh Chức năng"
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr "Không thể kết thúc ứng dụng vào lúc này.\nHãy đợi cho đến khi tất cả các công việc in\nvà/hay hành động OLE đã kết thúc,\nvà đóng mọi hộp thoại."
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
 #, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr "Gặp lỗi trong cấu hình đặc biệt.\nHãy liên lạc với quản trị hệ thống."
 
-#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
-#, fuzzy
-msgid  "Exit Quickstarter"
-msgstr "Thoát bộ khởi chạy nhanh"
-
-#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "Bộ khởi chạy nhanh %PRODUCTNAME %PRODUCTVERSION"
-
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
 #, fuzzy
 msgid  "Open Document..."
 msgstr "Mở tài liệu..."
 
-#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "From Template..."
-msgstr "Từ mẫu..."
-
-#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
-#, fuzzy
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "Nạp %PRODUCTNAME trong khi khởi động hệ thống"
-
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
-#, fuzzy
 msgid  "Disable Quickstarter"
-msgstr "Tắt bộ khởi chạy nhanh trên khay hệ thống"
-
-#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-#, fuzzy
-msgid  "File"
-msgstr "Tập tin"
-
-#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-#, fuzzy
-msgid  "Startcenter"
-msgstr "Trung tâm khởi động"
+msgstr "Vô hiệu hóa tính năng khởi động nhanh"
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
 msgid  "Recent Documents"
-msgstr ""
-
-#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
-#, fuzzy
-msgid  "Update all links?"
-msgstr "Cập nhật mọi liên kết?"
+msgstr "Tài Liệu Được Thao Tác Gần Đây"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
 #, fuzzy
@@ -2388,10 +794,17 @@ msgstr "Không có sẵn liên kết DDE tới % cho % vùng %."
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "Siêu liên kết này sắp mở « %s ». Bạn vẫn muốn tiếp tục không?"
 
-#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Security Warning"
-msgstr "Cảnh giác bảo mật"
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr "Vì lý do bảo mật, không thể thực hiện siêu liên kết này.\nNhư thế thì địa chỉ đã hiển thị sẽ không được mở."
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr "Việc lưu sẽ gỡ bỏ tất cả các chữ ký đã có.\nBạn có muốn tiếp tục lưu tài liệu này không?"
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr "Cần phải lưu tài liệu để ký nó.\nBạn có muốn lưu tài liệu này không?"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
 #, fuzzy
@@ -2402,11 +815,6 @@ msgstr "Tài liệu này phải được lưu ở định dạng OpenDocument tr
 #, fuzzy
 msgid  " (Signed)"
 msgstr "( Đã ký )"
-
-#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "Tài liệu"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 #, fuzzy
@@ -2420,7 +828,7 @@ msgstr "Mọi tập tin (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
 msgid  "Link graphics"
-msgstr ""
+msgstr "Liên kết đến phần đồ họa"
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
 #, fuzzy
@@ -2429,82 +837,47 @@ msgstr "Không tìm thấy phương pháp thành phần\nthích hợp %1.\n\nHã
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
 msgid  "Graphics file cannot be opened"
-msgstr ""
+msgstr "Không thể mở được tập tin đồ họa"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.STRING.TEXT
 msgid  "Graphics file cannot be read"
-msgstr ""
+msgstr "Không thể đọc được tập tin đồ họa"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.STRING.TEXT
 msgid  "Unknown graphics format"
-msgstr ""
+msgstr "Định dạng đồ họa chưa tường minh"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.STRING.TEXT
 msgid  "This version of the graphics file is not supported"
-msgstr ""
+msgstr "Hiện không hỗ trợ phiên bản tập tin đồ họa này"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.STRING.TEXT
 msgid  "Graphics filter not found"
-msgstr ""
+msgstr "Không tìm thấy bộ lọc đồ họa"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.STRING.TEXT
 msgid  "Not enough memory to insert graphic"
-msgstr ""
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "Mục lục"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Index"
-msgstr "Chỉ mục"
+msgstr "Không đủ bộ nhớ để chèn vào hình ảnh đồ họa"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Find"
 msgstr "Tìm"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Bookmarks"
-msgstr "Liên kết lưu"
-
-#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Search term"
-msgstr "Chuỗi ~tìm"
-
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Display"
 msgstr "~Hiển thị"
-
-#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "S~earch term"
-msgstr "Ch~uỗi tìm"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Find"
 msgstr "~Tìm"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Complete words only"
-msgstr "~Chỉ nguyên từ"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Find in ~headings only"
 msgstr "Chỉ tìm trên dòng ~tiêu đề"
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Bookmarks"
-msgstr "~Liên kết lưu"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 #, fuzzy
@@ -2521,95 +894,25 @@ msgstr "Hiện bảng điều hướng"
 msgid  "Hide Navigation Pane"
 msgstr "Ẩn ô điều hướng"
 
-#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
-#, fuzzy
-msgid  "First Page"
-msgstr "Trang đầu"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
-#, fuzzy
-msgid  "Previous Page"
-msgstr "Trang trước"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
-#, fuzzy
-msgid  "Next Page"
-msgstr "Trang sau"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Print..."
-msgstr "In..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
-#, fuzzy
-msgid  "Add to Bookmarks..."
-msgstr "Thêm vào Liên kết lưu..."
-
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
 #, fuzzy
 msgid  "Find on this Page..."
 msgstr "Tìm trên trang này..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
-#, fuzzy
-msgid  "HTML Source"
-msgstr "Mã nguồn HTML"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
 #, fuzzy
 msgid  "The Help is being started..."
 msgstr "Trợ giúp đang khởi chạy..."
 
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
-#, fuzzy
-msgid  "Select Text"
-msgstr "Chọn văn bản"
-
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
-#, fuzzy
-msgid  "~Copy"
-msgstr "~Chép"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Add to Bookmarks"
-msgstr "Thêm vào Liên kết lưu"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Bookmark:"
-msgstr "Liên kết lưu :"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename Bookmark"
-msgstr "Thay tên liên kết lưu"
-
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
 #, fuzzy
 msgid  "Display"
 msgstr "Hiển thị"
 
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rename..."
-msgstr "Thay tên..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete"
-msgstr "Xoá"
-
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "No topics found."
 msgstr "Không tìm thấy chủ đề."
-
-#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "The text you entered was not found."
-msgstr "Không tìm thấy chuỗi bạn nhập vào."
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
 #, fuzzy

@@ -39,10 +39,6 @@ msgstr "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
 msgstr ""
 
-#: readme.xrm#A6
-msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
-msgstr "Цей файл містить важливу інформацію про цю програму. Будь-ласка, перед початком роботи прочитайте цю інформацію дуже уважно."
-
 #: readme.xrm#A7
 msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
 msgstr ""
@@ -66,31 +62,21 @@ msgstr "Чому ${PRODUCTNAME} безкоштовний для усіх кор�
 #: readme.xrm#A13
 #, fuzzy
 msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
+msgstr "Ви можете використовувати зараз цю копію ${PRODUCTNAME} безкоштовно, оскільки окремі помічники та корпоративні спонсори розробляли, тестували, перекладали, документували, підтримували та усіляко допомагали у створенні ${PRODUCTNAME} таким, яким він є сьогодні - лідером офісного ПЗ з відкритим кодом."
+
+#: readme.xrm#A13B
+msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
 msgstr ""
 
-#: readme.xrm#RR3FGF42R
-msgid  "Notes on Installation"
-msgstr "Примітки до встановлення"
-
 #: readme.xrm#JAVANEEDED
+#, fuzzy
 msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
 msgstr ""
 
 #: readme.xrm#SDFSDFGF42R
+#, fuzzy
 msgid  "System Requirements"
 msgstr "Системні вимоги:"
-
-#: readme.xrm#MACXIOSX
-msgid  "MacOSX 10.4 (Tiger) or higher"
-msgstr "MacOSX 10.4 (Tiger) або старша версія"
-
-#: readme.xrm#MACXICPU
-msgid  "Intel processor"
-msgstr "Процесор Intel"
-
-#: readme.xrm#MACXIRAM
-msgid  "512 MB RAM"
-msgstr "512 МБ пам'яті"
 
 #: readme.xrm#MACXHARDDIKSSPACE
 #, fuzzy
@@ -98,18 +84,19 @@ msgid  "Up to 1.5 GB available hard disk space"
 msgstr ""
 
 #: readme.xrm#MACXIVIDEO
+#, fuzzy
 msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
 msgstr "1024 x 768 графічний пристрій з 256 кольорами (рекомендується вища роздільна здатність)"
 
 #: readme.xrm#S2S3SDF2
 #, fuzzy
 msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
-msgstr "Microsoft Windows 2000 (Service Pack 2 або старша), XP, або Vista"
+msgstr ""
 
 #: readme.xrm#UTZU6
 #, fuzzy
 msgid  "Pentium III or later processor"
-msgstr "Сумісний з Pentium ПК (рекомендовано Pentium III чи Athlon)"
+msgstr ""
 
 #: readme.xrm#GHUJ67
 #, fuzzy
@@ -117,6 +104,7 @@ msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 МБ пам'яті (рекомендовано 512 МБ)"
 
 #: readme.xrm#JTZU56
+#, fuzzy
 msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr "1024 x 768 графічний пристрій з 256 кольорами (рекомендується вища роздільна здатність)"
 
@@ -126,24 +114,24 @@ msgid  "Please be aware that administrator rights are needed for the installatio
 msgstr "Нотатка: майте на увазі що для процесу встановлення необхідні права адміністратора."
 
 #: readme.xrm#MSOREG1
+#, fuzzy
 msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
 msgstr ""
 
 #: readme.xrm#MSOREG2
+#, fuzzy
 msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr ""
 
 #: readme.xrm#MSOREG3
+#, fuzzy
 msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr ""
 
 #: readme.xrm#DLLA1
+#, fuzzy
 msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
 msgstr ""
-
-#: readme.xrm#S2335
-msgid  "Solaris 10 operating system (SPARC platform) or higher"
-msgstr "Операційна система Solaris 10 (платформа SPARC) або вища"
 
 #: readme.xrm#S23SEG
 #, fuzzy
@@ -166,137 +154,136 @@ msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, re
 msgstr "Gnome 2.6 або більше, з пакетами gail 1.8.6 та at-spi 1.7, для підтримки допоміжних технологій (AT)"
 
 #: readme.xrm#S23H
+#, fuzzy
 msgid  "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Операційна система Solaris 10 (платформа x86) або вища"
 
 #: readme.xrm#S2WE35
+#, fuzzy
 msgid  "Linux Kernel version 2.6.18 or higher"
 msgstr "Linux ядро версії 2.4 або вище"
 
-#: readme.xrm#S253WE
-msgid  "glibc2 version 2.5 or higher"
-msgstr "glibc2 версії 2.3.2 або старшої"
-
-#: readme.xrm#S256WE
-msgid  "gtk version 2.10.4 or higher"
-msgstr "gtk версії 2.2.0 або старшої"
-
-#: readme.xrm#S2ETFSEG
-#, fuzzy
-msgid  "Pentium III or later processor"
-msgstr "Сумісний з Pentium ПК (рекомендовано Pentium III чи Athlon)"
-
 #: readme.xrm#WD2DFF
+#, fuzzy
 msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
 msgstr "Gnome 2.6 або більше, з пакетами gail 1.8.6 та at-spi 1.7, для підтримки допоміжних технологій (AT)"
 
 #: readme.xrm#LINUXI3A
+#, fuzzy
 msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
 msgstr "Існує багато дистрибутивів Linux, та навіть у рамках одного дистрибутиву є кілька варіантів встановлення (KDE та Gnome, тощо.). З деякими дистрибутивами постачається ‘власна’ версія ${PRODUCTNAME}, яка може відрізнятися функціональністю від цієї загальної версії ${PRODUCTNAME}. І.ноді ви можете встановити загальну версію  ${PRODUCTNAME} поруч з ‘власною’ версією. Проте, зазвичай безпечніше видалити ‘власну’ версію перед встановленням загальної версії. Щодо опису як це зробити зверніться до документації дистрибутиву. "
 
-#: readme.xrm#LINUXI4A
-msgid  "It is recommended that you always backup your system before you remove or install software."
-msgstr "Рекомендується завжди створювати резервну копію системи перед встановленням чи видаленням програм."
-
-#: readme.xrm#PRECAUTIONS
-msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
-msgstr "Будь-ласка переконайтеся що ви маєте достатньо вільної пам'яті в тимчасовому каталозі у вашій системі і що є права на зчитування, запис і виконання. Закрийте всі інші програми перед запуском програми встановлення."
-
-#: readme.xrm#NASO01
-msgid  "Problems During Program Startup"
-msgstr "Помилка при запуску програми"
-
 #: readme.xrm#NASO02
+#, fuzzy
 msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
 msgstr "Якщо під час запуску ${PRODUCTNAME} випикають проблеми (найчастіше при використанні Gnome) виконайте 'unset' для змінної оточення SESSION_MANAGER у оболонці, з якої запускаєте  ${PRODUCTNAME}. Це можна зробити додавши рядок \"unset SESSION_MANAGER\" на початку сценарію оболонки soffice, що знаходиться у каталозі \"[office folder]/program\"."
 
 #: readme.xrm#ABCDEF
+#, fuzzy
 msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
 msgstr "Проблеми під час запуску ${PRODUCTNAME} (наприклад, зависання програми) а також проблеми з відображенням екрану часто спричиняється драйвером графічного адаптера. Якщо виникає подібна проблема, оновіть драйвер графічного адаптера або спробуйте графічний драйвер, що постачається з операційною. системою. Проблеми при відображенні 3D-об'єктів часто можна вирішити вимиканням параметра \"Використовувати OpenGL\" у меню 'Сервіс - Параметри - ${PRODUCTNAME} - Вигляд - 3D вигляд'."
 
-#: readme.xrm#NASO
-msgid  "ALPS/Synaptics notebook touchpads in Windows"
-msgstr "ALPS/Synaptics notebook touchpad у Windows"
-
 #: readme.xrm#NASO2
+#, fuzzy
 msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
 msgstr "Через проблему з драйвером Windows, ви не можете прокручувати документи у ${PRODUCTNAME} проводячи пальцем вздовж ALPS/Synaptics touchpad."
 
 #: readme.xrm#NASO6
+#, fuzzy
 msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
 msgstr "Для вмикання прокручування додайте наступні рядки до файлу \"C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini\", та перезапустіть комп'ютер:"
 
 #: readme.xrm#NASO8
+#, fuzzy
 msgid  "The location of the configuration file might vary on different versions of Windows."
 msgstr "Примітка: розташування конфігураційного файлу може відрізнятися залежно від версіїї Windows."
 
-#: readme.xrm#SDFSD32ASRC
-msgid  "Mozilla Address Book Driver"
-msgstr "Модуль адресної книжки Mozilla"
-
 #: readme.xrm#SDCC32ASRC
+#, fuzzy
 msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
 msgstr "Модуль адресної книжки Mozilla вимагає встановлення пакету SUNWzlib. Цей пакет не є частиною мінімального встановлення операційної системи Solaris. Якщо вам необхідний доступ до адресної книжки Mozilla, тоді додайте цей пакет до вашої операційної системи Solaris за допомогою команди \"pkgadd\" з КД встановлення."
 
 #: readme.xrm#AWE1
+#, fuzzy
 msgid  "Shortcut Keys"
 msgstr "Клавіатурні скорочення"
 
 #: readme.xrm#W32E1
+#, fuzzy
 msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
 msgstr "Тільки клавіатурні скорочення (комбінації скорочень) що не використовуються операційною системою можуть бути використані в ${PRODUCTNAME}. Якщо скорочення в ${PRODUCTNAME} не працює як описано в довідці ${PRODUCTNAME}, перевірте чи це скорочення вже використовується операційною системою. Щоб розв'язати такі конфлікти, ви можете змінити скорочення визначені у вашій операційній системі. Альтернативно, ви можете змінити майже будь-яке скорочення в ${PRODUCTNAME}. Для додаткової інформація на цю тему, зверніться до довідки ${PRODUCTNAME} або до документації вашої операційної системи."
 
 #: readme.xrm#MACKEYS1
+#, fuzzy
 msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
 msgstr "Можливо, комбінації клавіш, що використовуються у довідці до програми  ${PRODUCTNAME}, будуть відноситися лише до клавиатур PC."
 
 #: readme.xrm#GFH6W
+#, fuzzy
 msgid  "File Locking"
 msgstr "Блокування файлу"
 
 #: readme.xrm#PJI76W
+#, fuzzy
 msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
 msgstr ""
 
 #: readme.xrm#PJI76WSDF
+#, fuzzy
 msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
 msgstr "Попередження: Активізована функція блокування файлу можете призвести до проблем з Solaris 2.5.1 і 2.7 при використані з Linux NFS 2.0. Якщо ваше системне середовище має ці параметри, строго рекомендується вам уникати вживання функції блокування файлу. Інакше, ${PRODUCTNAME} буде зависати коли ви спробуєте відкрити файл зі змонтованого каталогу NFS з Linux ОС."
 
 #: readme.xrm#GFH6W1
+#, fuzzy
 msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
 msgstr "Проблеми при відсиланні документів е-поштою з ${PRODUCTNAME}"
 
 #: readme.xrm#PJI76W1
+#, fuzzy
 msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
 msgstr "Під час відсилання документу через 'Файл - Надіслати - Документ як лист' або 'Документ як долучення PDF' можуть статися проблеми (збої та зависання програми). Причиною тому є системний файл Windows \"Mapi\" (Інтерфейс розробки програм обміну повідомленнями) який призводить до проблеми в деяких версіях. На жаль, проблема не може бути сфокусована лише на певній версії. Для додаткової інформації відвідайте http://www.microsoft.com щоб знайти зауваження щодо \"mapi dll\"."
 
 #: readme.xrm#AW22
+#, fuzzy
 msgid  "Important Accessibility Notes"
 msgstr "Важливі примітки щодо спеціальних можливостей"
 
 #: readme.xrm#ACCESS7
+#, fuzzy
 msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 msgstr ""
 
 #: readme.xrm#SUPPORT
 #, fuzzy
 msgid  "User Support"
+msgstr "Підтримка користувачів"
+
+#: readme.xrm#SUPPORT1
+msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
 msgstr ""
 
 #: readme.xrm#FAQ
+#, fuzzy
 msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/Documentation/FAQ\">http://wiki.openoffice.org/wiki/Documentation/FAQ</a>."
 msgstr ""
 
 #: readme.xrm#REPORTBUGS
 #, fuzzy
 msgid  "Reporting Bugs &amp; Issues"
+msgstr ""
+
+#: readme.xrm#REPORTBUGS1
+#, fuzzy
+msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
 msgstr "На веб-вузлі ${PRODUCTNAME} є програма IssueZilla, універсальний механізм для звітування, трасування і розв'язання помилок та проблем. Ми заохочуємо всіх користувачів звітувати проблеми, що можуть виникати на вашій платформі. Звітування про помилки є одним з найбільш важливих внесків, який кожен може зробити для подальшої розробки і покращення програми."
 
 #: readme.xrm#GETTINGINVOLVED1
+#, fuzzy
 msgid  "Getting Involved"
 msgstr "Приєднання до спільноти"
 
 #: readme.xrm#GETTINGINVOLVED2
+#, fuzzy
 msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
 msgstr "Спільнота ${PRODUCTNAME} отримає великий зиск від вашої активної участі в розробці цього важливого проекту з відкритим кодом."
 
@@ -308,16 +295,51 @@ msgstr "Як користувач, ви вже є цінною часткою п
 #: readme.xrm#HOWTOSTART
 #, fuzzy
 msgid  "How to Start"
-msgstr "Найкращий шлях для встановлення - підписатися на один чи декілька списків розсилок, на певний час причаїтися, поступово вивчаючи архіві списку для ознайомлення з багатьма темами, як піднімалися з моменту виходу коду програми ${PRODUCTNAME} у жовтні 2000. Коли ви освоїтеся, можете надіслати поштове повідомлення, у якому представите себе.Якщо ви знайомі з проектами Open Source, перегляньте список розсилки To-Dos та пошукайте область, у якій ви можете допомогти "
+msgstr "Шлях до кооперації"
+
+#: readme.xrm#HOWTOSTART1
+msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
+msgstr ""
 
 #: readme.xrm#SUBSCRIBE
 #, fuzzy
 msgid  "Subscribe"
-msgstr "Конференція розробників загального коду: dev@openoffice.org (контрольований/великий потік)"
+msgstr "Поштові розсилки"
+
+#: readme.xrm#SUBSCRIBE1
+msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
+msgstr ""
+
+#: readme.xrm#SUBSCRIBELIST1
+#, fuzzy
+msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
+msgstr "Новини: announce@openoffice.org *рекомендовано усім користувачам* (невеликий трафік) "
+
+#: readme.xrm#SUBSCRIBELIST2
+#, fuzzy
+msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr "Головний користувацький форум: user@openoffice.org *Легкий шлях до дискусій* (великий трафік)"
+
+#: readme.xrm#SUBSCRIBELIST4
+msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
+msgstr ""
+
+#: readme.xrm#MISSING_ID
+msgid  "Joining the Project"
+msgstr ""
 
 #: readme.xrm#JOINING
 #, fuzzy
 msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
+msgstr "Ви може зробити головні внески до цього важливого проекту з відкритим кодом навіть якщо ви маєте обмежений досвід у програмуванні чи дизайні!"
+
+#: readme.xrm#JOINING1
+#, fuzzy
+msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr " ви знайдете широкий спектр проектів від локалізації, портування і групової роботи до деяких специфічних проектів розробки коду. Якщо ви не є розробником, спробуйте проект \"Документація\" або \"Маркетинг\". Маркетинговий проект OpenOffice.org є застосуванням технології guerrilla і традиційних комерційних заходів для маркетингу програм з відкритим кодом, і це робиться через мовні і культурні бар'єри, таким чином ви може просто допомогти розповсюджувати текст або розповісти знайомим про цей офісний комплекс."
+
+#: readme.xrm#JOINING3
+msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
 msgstr ""
 
 #: readme.xrm#CREDITS
@@ -328,7 +350,7 @@ msgstr "Ми сподіваємося вам сподобається робот
 #: readme.xrm#CREDITS2
 #, fuzzy
 msgid  "The Apache OpenOffice Community"
-msgstr "Спільнота OpenOffice.org"
+msgstr ""
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
 #, fuzzy
