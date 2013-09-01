@@ -33,7 +33,7 @@ msgstr ""
 
 #: readme.xrm#WELCOME
 msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
-msgstr ""
+msgstr "${PRODUCTNAME} ${PRODUCTVERSION} මෙයකියවන්න"
 
 #: readme.xrm#LATESTUPDATES
 msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: readme.xrm#A6
 msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
-msgstr ""
+msgstr "මෙම ගොනුවේ මෙම වැඩසටහන ගැන වැදගත් තොරතුරු අඩංගු වේ. වැඩ පටන් ගැනීමට ප්‍රථම කරුණාකර මෙම තොරතුරු කියවන්න."
 
 #: readme.xrm#A7
 msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
@@ -49,31 +49,28 @@ msgstr ""
 
 #: readme.xrm#A9
 msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
-msgstr ""
+msgstr "OpenOffice.org ව්‍යාපෘතියට සම්බන්ධවීම පිළිබඳව පහත අංශයද කියවන්න."
 
 #: readme.xrm#A10
 msgid  "Is ${PRODUCTNAME} really free for any user? "
-msgstr ""
+msgstr "${PRODUCTNAME} ඇත්තෙන්ම ඕනෑම පරිශීලකයෙකුට නිදහස් ? "
 
 #: readme.xrm#A11
 msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
-msgstr ""
+msgstr "${PRODUCTNAME} සෑම කෙනෙකුටම භාවිතා කිරීමට නිදහස ඇත. ඔබට ${PRODUCTNAME}හි මෙම පිටපත ලබාගෙන ඔබ කැමති ඕනෑම පරිගණක සංඛ්‍යාවක ස්ථානය කර ඔබ කැමති ඕනෑම කාර්යයක් (වාණිජ, රාජ්‍ය, රාජ්‍ය පරිපාලනය සහ අධ්‍යාපනික භාවිත ඇතුළුව) සඳහා එය භාවිතා කළ හැක. වැඩි විස්තර සඳහා ${PRODUCTNAME} සමඟ බෙදා දෙන බලපත්‍ර පෙළ බලන්න හෝ"
 
 #: readme.xrm#A12
 msgid  "Why is ${PRODUCTNAME} free for any user?"
-msgstr ""
+msgstr "{PRODUCTNAME} ඕනෑම පරිශීලකයෙකුට නිදහස් වන්නේ ඇයි?"
 
 #: readme.xrm#A13
+#, fuzzy
 msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
-msgstr ""
-
-#: readme.xrm#A13B
-msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
 msgstr ""
 
 #: readme.xrm#RR3FGF42R
 msgid  "Notes on Installation"
-msgstr ""
+msgstr "ස්ථාපන සටහන්"
 
 #: readme.xrm#JAVANEEDED
 msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
@@ -81,219 +78,181 @@ msgstr ""
 
 #: readme.xrm#SDFSDFGF42R
 msgid  "System Requirements"
-msgstr ""
+msgstr "පද්ධති අවශ්‍යතා"
 
 #: readme.xrm#MACXIOSX
 msgid  "MacOSX 10.4 (Tiger) or higher"
-msgstr ""
+msgstr "MacOSX 10.4 (Tiger) හෝ ඉහළ"
 
 #: readme.xrm#MACXICPU
 msgid  "Intel processor"
-msgstr ""
+msgstr "Intel සකසනයක්"
 
 #: readme.xrm#MACXIRAM
 msgid  "512 MB RAM"
-msgstr ""
+msgstr "512 MB RAM"
 
 #: readme.xrm#MACXHARDDIKSSPACE
+#, fuzzy
 msgid  "Up to 1.5 GB available hard disk space"
 msgstr ""
 
 #: readme.xrm#MACXIVIDEO
 msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
-msgstr ""
+msgstr "වර්ණ 256 සමඟ 1024 x 768 විත්‍රක උපාංගය (උසස් විභේදන නිර්දේශිතයි)"
 
 #: readme.xrm#S2S3SDF2
+#, fuzzy
 msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
-msgstr ""
+msgstr "Microsoft Windows 2000 (Service Pack 4 හෝ ඉහළ), XP, or Vista"
 
 #: readme.xrm#UTZU6
+#, fuzzy
 msgid  "Pentium III or later processor"
-msgstr ""
+msgstr "පෙන්ටියම් අනුකාරක පරිගණකයක් (පෙන්ටියම් III හෝ ඇත්ලන් නිර්දේශිතයි)"
 
 #: readme.xrm#GHUJ67
+#, fuzzy
 msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#JZJTZU6
-msgid  "Up to 1.5 GB available hard disk space"
-msgstr ""
+msgstr "256 MB RAM (512 MB RAM නිර්දේශිතයි)"
 
 #: readme.xrm#JTZU56
 msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
-msgstr ""
+msgstr "1024x768 (ඉහල නිර්දේශිතයි) X සර්වරයක්. අවම වශයෙන් වර්ණ 256ක් සමග"
 
 #: readme.xrm#EDSSC3D
+#, fuzzy
 msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr ""
+msgstr "සටහන: ස්ථාපනය කිරීමේ ක්‍රියාවලියට පරිපාලක අයිතීන් අවශ්‍යබව කරුණාකර සිහිතබා ගන්න."
 
 #: readme.xrm#MSOREG1
 msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
-msgstr ""
+msgstr "${PRODUCTNAME} Microsoft Office ආකෘති සඳහා පෙරනිමි යෙදුම ලෙස ලියාපදිංචි කිරීමට බල කිරීම හෝ මර්ධනය කිරීම ස්ථාපකය සමඟ පහත විධාන රේඛා මං මාරු භාවිතා කිරීමෙන් කළ හැක."
 
 #: readme.xrm#MSOREG2
 msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr ""
+msgstr "/msoreg=1 ${PRODUCTNAME} Microsoft Office ආකෘති සඳහා පෙරනිමි යෙදුම ලෙස ලියාපදිංවි කිරීමට බල කරනු ඇත."
 
 #: readme.xrm#MSOREG3
 msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr ""
+msgstr "/msoreg=1 ${PRODUCTNAME} Microsoft Office ආකෘති සඳහා පෙරනිමි යෙදුම ලෙස ලියාපදිංවි කිරීමට මර්ධනය කරනු ඇත."
 
 #: readme.xrm#DLLA1
 msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
 msgstr ""
 
-#: readme.xrm#ADMINNEEDED
-msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr ""
-
 #: readme.xrm#S2335
 msgid  "Solaris 10 operating system (SPARC platform) or higher"
-msgstr ""
-
-#: readme.xrm#S253
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
+msgstr "Solaris 10 මෙහෙයුම් පද්ධතිය (SPARC platform) හෝ ඉහළ"
 
 #: readme.xrm#S23SEG
+#, fuzzy
 msgid  "Up to 1.55 GB available hard disk space"
 msgstr ""
 
 #: readme.xrm#S2S43GFE
+#, fuzzy
 msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
+msgstr "1024x768 (ඉහල නිර්දේශිතයි) X සර්වරයක්. අවම වශයෙන් වර්ණ 256ක් සමග"
 
 #: readme.xrm#N4234RW
+#, fuzzy
 msgid  "Window Manager"
-msgstr ""
+msgstr "කවුළු කළමනාකරු"
 
 #: readme.xrm#WD2DFF2
+#, fuzzy
 msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "උපකාර තාක්ෂණ මෙවලම් (AT මෙවලම්)හි සහය සඳහා gail 1.8.6 සහ at-spi 1.7 පැකේජ සමඟ Gnome 2.6 හෝ උසස් පැකේජය අවශ්‍ය වේ"
 
 #: readme.xrm#S23H
 msgid  "Solaris 10 operating system (x86 platform) or higher"
-msgstr ""
-
-#: readme.xrm#S24F
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#FGHEG
-msgid  "Up to 1.55 GB available hard disk space"
-msgstr ""
-
-#: readme.xrm#FGHFGH
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
-
-#: readme.xrm#MGJFG
-msgid  "Window Manager"
-msgstr ""
-
-#: readme.xrm#WD2DFF1
-msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "Solaris 10 මෙහෙයුම් පද්ධතිය (SPARC platform) හෝ ඉහළ"
 
 #: readme.xrm#S2WE35
 msgid  "Linux Kernel version 2.6.18 or higher"
-msgstr ""
+msgstr "Linux කර්නල් සංස්කරණය 2.4 හෝ ඉහළ"
 
 #: readme.xrm#S253WE
 msgid  "glibc2 version 2.5 or higher"
-msgstr ""
+msgstr "glibc2 සංස්කරණය 2.3.2 හෝ ඉහළ"
 
 #: readme.xrm#S256WE
 msgid  "gtk version 2.10.4 or higher"
-msgstr ""
+msgstr "gtk සංස්කරණය 2.2.0 හෝ ඉහළ"
 
 #: readme.xrm#S2ETFSEG
+#, fuzzy
 msgid  "Pentium III or later processor"
-msgstr ""
-
-#: readme.xrm#S2SSDFE
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#N42DFGF
-msgid  "Up to 1.55 GB available hard disk space"
-msgstr ""
-
-#: readme.xrm#GHJHHR
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
-
-#: readme.xrm#FHRTZ5
-msgid  "Window Manager"
-msgstr ""
+msgstr "පෙන්ටියම් අනුකාරක පරිගණකයක් (පෙන්ටියම් III හෝ ඇත්ලන් නිර්දේශිතයි)"
 
 #: readme.xrm#WD2DFF
 msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "උපකාර තාක්ෂණ මෙවලම් (AT මෙවලම්)හි සහය සඳහා gail 1.8.6 සහ at-spi 1.7 පැකේජ සමඟ Gnome 2.6 හෝ උසස් පැකේජය අවශ්‍ය වේ"
 
 #: readme.xrm#LINUXI3A
 msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
-msgstr ""
+msgstr "Linux බෙදාහැරීම් වල පුළුල් විවිධත්වයක් තිබෙන අතර එකම බෙදාහැරීමේ පවා වෙනස් ස්ථාපන විකල්ප තිබිය හැක (KDE එදිරිව Gnome ආදී ලෙස). සමහර බෙදාහැරීම් මෙම ප්‍රජා ${PRODUCTNAME} වඩා වෙනස් විශේෂාංග ඇති ඔවුන්ටම ආජන්ම ${PRODUCTNAME}හි වෙළුමක් සමඟ පැමිණෙයි. සමහරවිට ඔබට ආජන්ම වෙළුමට පැත්තකින් ජ්‍රජා ${PRODUCTNAME} ස්ථාපනය කළ හැක. කෙසේ වෙතත් මෙම ප්‍රජා ${PRODUCTNAME} ස්ථාපනය කිරීමට පෙර ආජන්ම වෙළුම ඉවත් කිරීම වඩා ආරක්ෂාකාරී වේ.මෙය කරන්නේ කෙසේද යන්නට තොරතුරු සඳහා ඔබගේ බෙදාහැරීමේ ලේඛණය බලන්න."
 
 #: readme.xrm#LINUXI4A
 msgid  "It is recommended that you always backup your system before you remove or install software."
-msgstr ""
+msgstr "ඔබ මෘදුකාංග ස්ථාපනය කිරීමට හෝ ඉවත් කිරීමට ප්‍රථම සෑම විම ඔබ ඔබගේ පද්ධතිය උපස්ථ කිරීම නිර්දේශ කරයි."
 
 #: readme.xrm#PRECAUTIONS
 msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
-msgstr ""
+msgstr "ඔබගේ පද්ධතියේ තාවකාලික නාමාවලියේ ප්‍රමාණවත් හිස් මතකය ඇති බවට සහ කියවීමේ, ලිවීමේ සහ ධාවනය කිරීමේ අයිතීන් ලබා දී ඇති බවට කරුණාකර සහතික කර ගන්න. ස්ථාපනය ආරම්භ කිරීමට ප්‍රථම අනෙක් සියළු වැඩසටහන් මකන්න."
 
 #: readme.xrm#NASO01
 msgid  "Problems During Program Startup"
-msgstr ""
+msgstr "වැඩසටහන ආරම්භ කිරීමේ වරදක්"
 
 #: readme.xrm#NASO02
 msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
-msgstr ""
+msgstr "ඔබ ${PRODUCTNAME} ආරම්භක ප්‍රශ්න අත්දකී නම් (බොහෝ විට Gnome භාවිතා කිරීමේදී) කරුණාකර ඔබ ${PRODUCTNAME} ආරම්භ කිරීමට භාවිතා කරන කවචය තුළදී SESSION_MANAGER පාරිසරික විචල්‍ය ඉවත් කරන්න. \"[office folder]/program\" නාමාවලියේ හමුවන soffice ස්ක්‍රිප්ට් එකේ ආරම්භයට \"unset SESSION_MANAGER\" යෙදීමෙන් මෙය සිදු කළ හැක."
 
 #: readme.xrm#ABCDEF
 msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
-msgstr ""
+msgstr "තිර ප්‍රදර්ශනයේ ප්‍රශ්න සේම ${PRODUCTNAME} ආරම්භ කිරීමේ අපහසුතා (වැඩසටහන ක්‍රියා නොකිරීම), බොහෝ විට චිත්‍රකපත් ධාවකය මඟින් ඇති කරනු ලබයි. මෙම ප්‍රශ්න පැන නැගුනොත් කරුණාකර ඔබගේ චිත්‍රකපත් ධාවකය යාවත්කාල කරන්න හෝ ඔබගේ මෙහෙයුමෙ පද්ධතිය සමඟ ලැබුණු චිත්‍රක භාවිතා කරන්න. 3D වස්තු දර්ශනය වීමේ අපහසුතා 'මෙවලම් - විකල්ප - ${PRODUCTNAME} - දසුන - 3D පෙනුම' යටතේ ඇති \"OpenGL භාවිතා කරන්න\" අක්‍රිය කිරීමෙන් බොහෝදුරට විසඳාගත හැක."
 
 #: readme.xrm#NASO
 msgid  "ALPS/Synaptics notebook touchpads in Windows"
-msgstr ""
+msgstr "Windows හි ALPS/Synaptics notebook ස්පර්ශ උපධානය"
 
 #: readme.xrm#NASO2
 msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
-msgstr ""
+msgstr "Windows ධාවක දෝෂ නිසා, ඔබ ALPS/Synaptic ස්පර්ශ උපධානයක් හරහා ඇඟිල්ල අදගෙන යාමෙන් ${PRODUCTNAME} ලිපි හරහා අනුචලනය කළ නොහැක."
 
 #: readme.xrm#NASO6
 msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+msgstr "ස්පර්ශ උපධාන අනුචලනය කිරීම සක්‍රිය කිරීමට, පහත පේළි \"C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini\" වින්‍යාසගත කිරීමේ ගොනුවට ඇතුල් කර ඔබගේ පරිගණකය නැවත පණ ගන්වන්න:"
 
 #: readme.xrm#NASO8
 msgid  "The location of the configuration file might vary on different versions of Windows."
-msgstr ""
+msgstr "සටහන: Windowsහි වෙනස් වෙළුම් අනුව වින්‍යාසගත කිරීමේ ගොනුවේ පිහිටීම වෙනස් විය හැක."
 
 #: readme.xrm#SDFSD32ASRC
 msgid  "Mozilla Address Book Driver"
-msgstr ""
+msgstr "Mozilla ලිපිනපොත් ධාවකය"
 
 #: readme.xrm#SDCC32ASRC
 msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
-msgstr ""
+msgstr "Mozilla ලිපින පොත් ධාවකයට SUNWzlib පැකේජය අවශ්‍ය වෙයි. මෙම පැකේජය අවම Solaris මෙහෙයුම් පද්ධති ස්ථාපනයේ කොටසක් නොවේ. ඔබට Mozilla ලිපින පොතට ප්‍රවේශ වීමට අවශ්‍ය නම් ස්ථාපන CD එකෙන් \"pkgadd\" විධානය ලබා දීමෙන් ඔබගේ Solaris මෙහෙයුම් පද්ධතියට මෙම පැකේජය එක් කරන්න."
 
 #: readme.xrm#AWE1
 msgid  "Shortcut Keys"
-msgstr ""
+msgstr "යතුරුපුවරු කෙටිමං"
 
 #: readme.xrm#W32E1
 msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
-msgstr ""
+msgstr "${PRODUCTNAME}හි භාවිතා කළ හැක්කේ මෙහෙයුමෙ පද්ධතිය මඟින් භාවිතා නොකරන කෙටි මං යතුරු (යතුරු සංයෝග) පමණි. ${PRODUCTNAME} හි යතුරු සංයෝගයක් ${PRODUCTNAME} උදව් හි විස්තර කර ඇති ලෙස වැඩ නොකරයිනම්, එම කෙටි මඟ දැනටමත් මෙහෙයුම් පද්ධතිය මඟින් භාවිතා කර ඇත්දැයි පරීක්ෂා කරන්න. එවැනි ගැටීම් නිවැරදි කිරීමට ඔබට ඔබගේ මෙහෙයුමෙ පද්ධතියෙන් ආදේශ කළ යතුරු වෙනස් කළ හැක. විකල්ප ලෙස ඔබට ${PRODUCTNAME} හි සෑම යතුරු ආදේශ කිරීමක්ම වාගේ වෙනස් කළ හැක. මෙම මාතෘකාව යටතේ වැඩි විස්තර සඳහා ${PRODUCTNAME} උදව් හෝ ඔබගේ මෙහෙයුම් පද්ධතියේ ලේඛණයට යොමු වෙන්න."
 
 #: readme.xrm#MACKEYS1
 msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
-msgstr ""
+msgstr "${PRODUCTNAME} හි උදව් යෙදුම PC යතුරු පුවරුව සඳහා කෙටි මං සංයෝග පමණක් භාවිතා කරනු ඇත."
 
 #: readme.xrm#GFH6W
 msgid  "File Locking"
-msgstr ""
+msgstr "ගොනුව අගුලු දැමීම"
 
 #: readme.xrm#PJI76W
 msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
@@ -301,30 +260,27 @@ msgstr ""
 
 #: readme.xrm#PJI76WSDF
 msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
-msgstr ""
+msgstr "අනතුරු ඇඟවීම: සක්‍රිය කළ ගොනු ඇඟුලු ලෑමේ විශේෂාංගය Solaris 2.5.1 සමඟ සම්බන්ධව Linux NFS 2.0 භාවිතා කිරීමේදී ප්‍රශ්න ඇති කළ හැක. ඔබගේ පද්ධති පාරිසරිකයේ මෙම පරාමිතීන් තිබේනම්, ඔබ ගොනු අඟුලු ලෑමේ විශේෂාංගය භාවිතා කිරීමෙන් වැළකෙන බවට අපි ඔබට තරයේ නිර්දේශ කරමු. එසේ නොමැති වුවොත්, ඔබ Linux පරිගණකයකින් NFS ලෙස සවි කළ නාමාවලියක ගොනුවක් විවෘත කිරීමට උත්සහ කිරීමේදී ${PRODUCTNAME} වැඩ නොකරනු ඇත."
 
 #: readme.xrm#GFH6W1
 msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
-msgstr ""
+msgstr "${PRODUCTNAME} සිට ලිපි විද්‍යුත් තැපැල් ලිපි ලෙස යැවීමේදී ප්‍රශ්න"
 
 #: readme.xrm#PJI76W1
 msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
-msgstr ""
+msgstr "'ගොනුව - යවන්න - ලිපිය විද්‍යුත් තැපැලක් ලෙස' හෝ 'ලිපිය PDF ඈඳුමක් ලෙස'  හරහා ලිපියක් යැවීමේදී ප්‍රශ්න (වැඩසටහන බිඳ වැටීම හෝ ක්‍රියා නොකිරීම) ඇති විය හැක. මෙය සමහර ගොනු වෙළුම් වල දෝෂ ඇති කරන \"Mapi\" (Messaging Application Programming Interface) Windows පද්ධති ගොනුව නිසා ඇතිවේ. අවාසනාවට ප්‍රශ්නය ඒකාන්ත වෙළුම් අංකයකට පටු කළ නොහැක. \"mapi dll\" සඳහා Microsoft Knowledge Base හි සෙවීමට වැඩි විස්තර සඳහා http://www.microsoft.com වෙත පිවිසෙන්න. "
 
 #: readme.xrm#AW22
 msgid  "Important Accessibility Notes"
-msgstr ""
+msgstr "වැදගත් ප්‍රවේශ්‍යතා සටහන්"
 
 #: readme.xrm#ACCESS7
 msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 msgstr ""
 
 #: readme.xrm#SUPPORT
+#, fuzzy
 msgid  "User Support"
-msgstr ""
-
-#: readme.xrm#SUPPORT1
-msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
 msgstr ""
 
 #: readme.xrm#FAQ
@@ -332,77 +288,49 @@ msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/
 msgstr ""
 
 #: readme.xrm#REPORTBUGS
+#, fuzzy
 msgid  "Reporting Bugs &amp; Issues"
-msgstr ""
-
-#: readme.xrm#REPORTBUGS1
-msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
-msgstr ""
+msgstr "${PRODUCTNAME} වියුණු අඩවිය දෝෂ සහ ප්‍රශ්න වාර්තා කිරීම, ලුහුබැඳීම සහ නිරාකරණය කිරීම සඳහා අපගේ උපක්‍රමය වන IssueZilla පවත්වාගෙන යයි. අපි ඔබගේ වේදිකාවේ පැන නඟින දෝෂ වාර්තා කිරීමට සියළු භාවිතා කරන්නන්ට අනුබල දෙයි. කාර්යක්ෂම දෝෂ වාර්තා කිරීම පෙලේ අඛණ්ඩ සංවර්ධනයට සහ අභිවෘද්ධියට භාවිතා කරන්නන්ගේ ප්‍රජාවට සිදු කළ හැකි වැදගත් දායකවීම් වලින් එකකි."
 
 #: readme.xrm#GETTINGINVOLVED1
 msgid  "Getting Involved"
-msgstr ""
+msgstr "දායකවන අයුර "
 
 #: readme.xrm#GETTINGINVOLVED2
 msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
-msgstr ""
+msgstr "මෙම වැදගත් විවෘත කේත ව්‍යාපෘතියේ සංවර්ධනයට ඔබගේ සක්‍රිය සහභාගීත්වය ${PRODUCTNAME} ප්‍රජාට බොහෝ සේ උපකාර වනු ඇත."
 
 #: readme.xrm#GETTINGIMVOLVED3
+#, fuzzy
 msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
-msgstr ""
+msgstr "භාවිතා කරන්නෙක් ලෙස ඔබ දැනටමත් මෙම පෙලේ සංවර්ධන ක්‍රියාවලියේ වටිනා කොටසක් වන අතර  අපි ඔබට දිගු කාලීන දායකයෙක් වීමේ දැක්ම ඇතිව වඩා සක්‍රීය භූමිකාවක් ලබා ගැනීමට අනුබල දෙමු. කරුණාකර සම්බන්ධ වී භාවිත කරන්නන්ගේ පිටුව පරීක්ෂා කරන්න:"
 
 #: readme.xrm#HOWTOSTART
+#, fuzzy
 msgid  "How to Start"
-msgstr ""
-
-#: readme.xrm#HOWTOSTART1
-msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
-msgstr ""
+msgstr "දාකය වීමට හොදම ආකාරය තැපැල් ලැයිස්තු එකකට හෝ කීපයකට දායක වීම, සුළු කාලයක් රැක සිටීම සහ ${PRODUCTNAME} හි මූල කේතය නිකුත් කළ 2000 ඔක්තෝබර් මාසයේ සිට ආවරණය කළ බොහෝ මාතෘකා පිළිබඳ දැනුම ලබා ගැනීමට ක්‍රම ක්‍රමයෙන් තැපැල් ලේඛනාගාරය භාවිතා කිරීමයි. ඔබ සූදානම් වූ පසු ඔබට කිරීමට ඇත්තේ ඔබව හදුන්වා දෙමින් විද්‍යුත් තැපැල් ලිපියක් එවීම සහ කෙලින්ම ඇතුල් වීමයි. ඔබට විවෘත කේත ව්‍යාපෘති පිළිබඳ දැනීමක් ඇත්නම් අපගේ කිරීමට ඇති වැඩ ලැයිස්තුවේ අපට උදව් කල හැකි ඔබ කැමති කිසිවක් තිබේදැයි බලන්න"
 
 #: readme.xrm#SUBSCRIBE
+#, fuzzy
 msgid  "Subscribe"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBE1
-msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST1
-msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST2
-msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST4
-msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
-msgstr ""
-
-#: readme.xrm#MISSING_ID
-msgid  "Joining the Project"
-msgstr ""
+msgstr "සාමාන්‍ය කේත දායකයන්ගේ ලැයිස්තුව: dev@openoffice.org (මධ්‍යම/බරපතළ) "
 
 #: readme.xrm#JOINING
+#, fuzzy
 msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
 msgstr ""
 
-#: readme.xrm#JOINING1
-msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
-msgstr ""
-
-#: readme.xrm#JOINING3
-msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
-msgstr ""
-
 #: readme.xrm#CREDITS
+#, fuzzy
 msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
-msgstr ""
+msgstr "ඔබ නව ${PRODUCTNAME} ${PRODUCTVERSION} සමඟ වැඩ කිරීමෙන් ප්‍රයෝජනයක් ලබනු ඇති බවට සහ ඔබ අප සමඟ මාර්ගගතව සම්බන්ධවනු ඇතැයි අපි බලාපොරොත්තු වෙමු."
 
 #: readme.xrm#CREDITS2
+#, fuzzy
 msgid  "The Apache OpenOffice Community"
-msgstr ""
+msgstr "OpenOffice.org ප්‍රජාව"
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
+#, fuzzy
 msgid  "Used / Modified Source Code"
-msgstr ""
+msgstr "භාවිතා කල / වෙනස්කල මූල කේත"

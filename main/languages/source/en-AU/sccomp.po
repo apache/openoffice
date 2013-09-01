@@ -32,45 +32,56 @@ msgstr ""
 
 
 #: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr ""
+msgstr "%PRODUCTNAME Linear Solver"
 
 #: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
+#, fuzzy
 msgid  "Assume variables as non-negative"
-msgstr ""
+msgstr "Assume variables as non-negative"
 
 #: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
+#, fuzzy
 msgid  "Assume variables as integer"
-msgstr ""
+msgstr "Assume variables as integer"
 
 #: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
+#, fuzzy
 msgid  "Solving time limit (seconds)"
-msgstr ""
+msgstr "Solving time limit (seconds)"
 
 #: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
+#, fuzzy
 msgid  "Epsilon level (0-3)"
-msgstr ""
+msgstr "Epsilon level (0-3)"
 
 #: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
+#, fuzzy
 msgid  "Limit branch-and-bound depth"
-msgstr ""
+msgstr "Limit branch-and-bound depth"
 
 #: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
+#, fuzzy
 msgid  "The model is not linear."
-msgstr ""
+msgstr "The model is not linear."
 
 #: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
+#, fuzzy
 msgid  "The epsilon level is invalid."
-msgstr ""
+msgstr "The epsilon level is invalid."
 
 #: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
+#, fuzzy
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr ""
+msgstr "The model is infeasible. Check limiting conditions."
 
 #: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
+#, fuzzy
 msgid  "The model is unbounded."
-msgstr ""
+msgstr "The model is unbounded."
 
 #: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
+#, fuzzy
 msgid  "The time limit was reached."
-msgstr ""
+msgstr "The time limit was reached."

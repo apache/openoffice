@@ -33,44 +33,44 @@ msgstr ""
 
 #: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr ""
+msgstr "%PRODUCTNAME lineārais risinātājs"
 
 #: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
-msgstr ""
+msgstr "Pieņemt vērtības kā nenegatīvas."
 
 #: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr ""
+msgstr "Pieņemt mainīgos kā veselus skaitļus"
 
 #: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr ""
+msgstr "Risināšanas laika limits (sekundēs)"
 
 #: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr ""
+msgstr "Epsilona līmenis (0-3)"
 
 #: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
-msgstr ""
+msgstr "Ierobežot 'zaru un robežu' dziļumu"
 
 #: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr ""
+msgstr "Modelis nav lineārs."
 
 #: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr ""
+msgstr "Epsilona līmenis nav derīgs."
 
 #: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr ""
+msgstr "Modelis ir neizpildāms. Pārbaudiet ierobežojošos nosacījumus."
 
 #: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr ""
+msgstr "Modelis nav ierobežots."
 
 #: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
-msgstr ""
+msgstr "Laika limits netika sasniegts."

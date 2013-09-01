@@ -33,44 +33,44 @@ msgstr ""
 
 #: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr ""
+msgstr "Resolvedor lineal %PRODUCTNAME"
 
 #: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
-msgstr ""
+msgstr "Supoñer variábeis non negativas"
 
 #: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr ""
+msgstr "Supoñer variábeis de tipo enteiro"
 
 #: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr ""
+msgstr "Tempo límite para resolver (segundos)"
 
 #: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr ""
+msgstr "Nivel épsilon (0-3)"
 
 #: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
-msgstr ""
+msgstr "Limitar a profundidade do algoritmo ramificación e acotación"
 
 #: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr ""
+msgstr "O modelo non é lineal."
 
 #: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr ""
+msgstr "O nivel de épsilon é invalido."
 
 #: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr ""
+msgstr "O modelo non é factíbel. Comprobe as condicións de restrición."
 
 #: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr ""
+msgstr "O modelo é inacotábel."
 
 #: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
-msgstr ""
+msgstr "Chegouse ao tempo límite."

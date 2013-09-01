@@ -33,47 +33,45 @@ msgstr ""
 
 #: readme.xrm#WELCOME
 msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
-msgstr ""
+msgstr "הקרא אותי של ${PRODUCTNAME} ${PRODUCTVERSION}"
 
 #: readme.xrm#LATESTUPDATES
 msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
-msgstr ""
+msgstr "לעדכונים אחרונים לקובץ \"קרא אותי\", ראה <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
 
 #: readme.xrm#A6
 msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
-msgstr ""
+msgstr "קובץ זה מכיל מידע חשוב אודות התוכנה. נא לקרוא את כל הקובץ לפני תחילת השימוש בתוכנה."
 
 #: readme.xrm#A7
+#, fuzzy
 msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
-msgstr ""
+msgstr "קהילת אופן אופיס, אחראית לפיתוח המוצר, אנו מעוניינים להזמין אותך להשתתף בתור חבר בקהילה, בתור משתמש חדש, תוכל לעיין באתר -${PRODUCTNAME} לעזרה עם מידע למשתמש ב- <a href=\"http://www.openoffice.org/about_us/introduction.html\">http://www.openoffice.org/about_us/introduction.html</a>"
 
 #: readme.xrm#A9
 msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
-msgstr ""
+msgstr "קרא גם את הפסקאות למטה, אודות מעורבות בפרוייקט OpenOffice.org."
 
 #: readme.xrm#A10
 msgid  "Is ${PRODUCTNAME} really free for any user? "
-msgstr ""
+msgstr "האם ${PRODUCTNAME} באמת חינם?"
 
 #: readme.xrm#A11
 msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
-msgstr ""
+msgstr "תוכנת ${PRODUCTNAME} הינה חופשית לשימוש לכל אחד. מותר לקחת את עותק זה של ${PRODUCTNAME} והלתקין אותו בכמה מחשבים שתרצה ולהשתמש בו לכל מטרה שתרצה (כולל שימוש מסחרי, ממשלתי, שלטון ציבורי וחינוכי). לפרטים נוספים ראה את טקסט הרישיון המסופק ביחד עם ${PRODUCTNAME} או <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
 
 #: readme.xrm#A12
 msgid  "Why is ${PRODUCTNAME} free for any user?"
-msgstr ""
+msgstr "למה ${PRODUCTNAME} חופשי לכל משתמש?"
 
 #: readme.xrm#A13
+#, fuzzy
 msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
-msgstr ""
-
-#: readme.xrm#A13B
-msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
-msgstr ""
+msgstr "אם אתה מעריך את המאמצים שלהם, ואתה רוצה להבטיח את העתיד של OpenOffice.org, אנא שקול לעזור בפיתוח הפרויקט - ראה <a href=\"http://contributing.openoffice.org\">http://contributing.openoffice.org</a> לקבלת פרטים. כל אחד יכול לתרום."
 
 #: readme.xrm#RR3FGF42R
 msgid  "Notes on Installation"
-msgstr ""
+msgstr "הערות על התקנה"
 
 #: readme.xrm#JAVANEEDED
 msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
@@ -81,171 +79,133 @@ msgstr ""
 
 #: readme.xrm#SDFSDFGF42R
 msgid  "System Requirements"
-msgstr ""
+msgstr "דרישות מערכת"
 
 #: readme.xrm#MACXIOSX
 msgid  "MacOSX 10.4 (Tiger) or higher"
-msgstr ""
+msgstr "MacOSX 10.4 (Tiger) או עדכני יותר"
 
 #: readme.xrm#MACXICPU
 msgid  "Intel processor"
-msgstr ""
+msgstr "מעבד אינטל"
 
 #: readme.xrm#MACXIRAM
 msgid  "512 MB RAM"
-msgstr ""
+msgstr "512 MB זכרון RAM"
 
 #: readme.xrm#MACXHARDDIKSSPACE
 msgid  "Up to 1.5 GB available hard disk space"
-msgstr ""
+msgstr "עד 1.5 ג'יגה בייט שטח פנוי בדיסק קשיח."
 
 #: readme.xrm#MACXIVIDEO
 msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
-msgstr ""
+msgstr "כרטיס גרפי עם תמיכה ל 256 צבעים, מסך ברזולוציה של לפחות 1024 על 768 פיקסלים (מומלץ רזולוציה גבוהה יותר)"
 
 #: readme.xrm#S2S3SDF2
+#, fuzzy
 msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
-msgstr ""
+msgstr "Microsoft Windows 2000 ‏(Service Pack 4 ומעלה), XP, ‏Vista או Windows 7"
 
 #: readme.xrm#UTZU6
+#, fuzzy
 msgid  "Pentium III or later processor"
-msgstr ""
+msgstr "מחשב PC תואם Pentium (מומלץ Pentium 3 או Athlon)"
 
 #: readme.xrm#GHUJ67
 msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#JZJTZU6
-msgid  "Up to 1.5 GB available hard disk space"
-msgstr ""
+msgstr "256 MB RAM (מומלץ 512 MB)"
 
 #: readme.xrm#JTZU56
 msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
-msgstr ""
+msgstr "רזולוצית מסך של 1024x768‬‏, (מומלץ רזולוציה גבוהה יותר), לפחות 256 צבעים"
 
 #: readme.xrm#EDSSC3D
 msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr ""
+msgstr "לידיעתך, להתקנה דרושות הרשאות מנהל."
 
 #: readme.xrm#MSOREG1
 msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
-msgstr ""
+msgstr "רישום ${PRODUCTNAME} כתוכנית ברירת המחדל לפתיחת קבצים בפורמט של 'מיקרוסופט אופיס', אפשר לכפות על ידי הפעלת תוכנית ההתקנה משורת הפקודה עם תוספת הפאראמטר הבא: "
 
 #: readme.xrm#MSOREG2
 msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr ""
+msgstr "<tt>/msoreg=1</tt> יכפה רישום של ${PRODUCTNAME} כתוכנת ברירת המחדל לקבצי Microsoft Office."
 
 #: readme.xrm#MSOREG3
 msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr ""
+msgstr "<tt>/msoreg=0</tt> ימנע רישום של ${PRODUCTNAME} כתוכנת ברירת המחדל לקבצי Microsoft Office."
 
 #: readme.xrm#DLLA1
+#, fuzzy
 msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
-msgstr ""
-
-#: readme.xrm#ADMINNEEDED
-msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr ""
+msgstr "אם אתה מבצע התקנה ניהולית תוך שימוש ב־setup /a, יש לוודא כי הקובץ msvc90.dll מותקן במערכת. הקובץ נדרש להפעלת ${PRODUCTNAME} לאחר התקנה ניהולית. ניתן להוריד את הקובץ מ־<a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
 
 #: readme.xrm#S2335
 msgid  "Solaris 10 operating system (SPARC platform) or higher"
-msgstr ""
-
-#: readme.xrm#S253
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
+msgstr "מערכת הפעלה סולריס 10 (עבור מעבדי 'ספארק') או גירסה חדשה יותר"
 
 #: readme.xrm#S23SEG
 msgid  "Up to 1.55 GB available hard disk space"
-msgstr ""
+msgstr "שטח זמין בדיסק קשיח של 1.55 ג'יגה-בייט"
 
 #: readme.xrm#S2S43GFE
+#, fuzzy
 msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
+msgstr "רזולוצית מסך של 1024x768‬‏, (מומלץ רזולוציה גבוהה יותר), לפחות 256 צבעים"
 
 #: readme.xrm#N4234RW
+#, fuzzy
 msgid  "Window Manager"
-msgstr ""
+msgstr "מנהל החלונות"
 
 #: readme.xrm#WD2DFF2
+#, fuzzy
 msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "Gnome 2.6 או גרסה חדשה יותר, עם החבילות gail 1.8.6 ו־at-spi 1.7, נצרכות לתמיכה בטכנולוגיה מסייעת (AT tools)"
 
 #: readme.xrm#S23H
 msgid  "Solaris 10 operating system (x86 platform) or higher"
-msgstr ""
-
-#: readme.xrm#S24F
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#FGHEG
-msgid  "Up to 1.55 GB available hard disk space"
-msgstr ""
-
-#: readme.xrm#FGHFGH
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
-
-#: readme.xrm#MGJFG
-msgid  "Window Manager"
-msgstr ""
-
-#: readme.xrm#WD2DFF1
-msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "מערכת הפעלה סולריס 10 (עבור מעבדי 'אינטל') או יותר"
 
 #: readme.xrm#S2WE35
 msgid  "Linux Kernel version 2.6.18 or higher"
-msgstr ""
+msgstr "לינוקס עם קרנל (ליבה) גרסא 2.6.18 או חדש יותר"
 
 #: readme.xrm#S253WE
 msgid  "glibc2 version 2.5 or higher"
-msgstr ""
+msgstr "glibc2 גרסה 2.5 או חדשה יותר"
 
 #: readme.xrm#S256WE
 msgid  "gtk version 2.10.4 or higher"
-msgstr ""
+msgstr "גרסת gtk 2.10.4 או חדשה יותר"
 
 #: readme.xrm#S2ETFSEG
+#, fuzzy
 msgid  "Pentium III or later processor"
-msgstr ""
-
-#: readme.xrm#S2SSDFE
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#N42DFGF
-msgid  "Up to 1.55 GB available hard disk space"
-msgstr ""
-
-#: readme.xrm#GHJHHR
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
-
-#: readme.xrm#FHRTZ5
-msgid  "Window Manager"
-msgstr ""
+msgstr "מחשב PC תואם Pentium (מומלץ Pentium 3 או Athlon)"
 
 #: readme.xrm#WD2DFF
+#, fuzzy
 msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "Gnome 2.6 או גרסה חדשה יותר, עם החבילות gail 1.8.6 ו־at-spi 1.7, נצרכות לתמיכה בטכנולוגיה מסייעת (AT tools)"
 
 #: readme.xrm#LINUXI3A
 msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
 msgstr ""
 
 #: readme.xrm#LINUXI4A
+#, fuzzy
 msgid  "It is recommended that you always backup your system before you remove or install software."
-msgstr ""
+msgstr "מומלץ לגבות את המחשב לפני כל התקנה או הסרה של תוכנה."
 
 #: readme.xrm#PRECAUTIONS
 msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
 msgstr ""
 
 #: readme.xrm#NASO01
+#, fuzzy
 msgid  "Problems During Program Startup"
-msgstr ""
+msgstr "בעיות במהלך הפעלת התוכנה"
 
 #: readme.xrm#NASO02
 msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
@@ -256,75 +216,82 @@ msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as
 msgstr ""
 
 #: readme.xrm#NASO
+#, fuzzy
 msgid  "ALPS/Synaptics notebook touchpads in Windows"
-msgstr ""
+msgstr "ALPS/Synaptics notebook touchpads בחלונות של מיקרוסופט"
 
 #: readme.xrm#NASO2
+#, fuzzy
 msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
-msgstr ""
+msgstr "עקב בעיה במנהל התקן, לא ניתן לגלל מסמכי אופן אופיס באמצעות ALPS/Synaptics touchpad."
 
 #: readme.xrm#NASO6
 msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
 msgstr ""
 
 #: readme.xrm#NASO8
+#, fuzzy
 msgid  "The location of the configuration file might vary on different versions of Windows."
-msgstr ""
+msgstr "מיקום קובץ ההגדרות עשוי להשתנות לפי גרסאות שונות של Windows."
 
 #: readme.xrm#SDFSD32ASRC
+#, fuzzy
 msgid  "Mozilla Address Book Driver"
-msgstr ""
+msgstr "מנהל התקן לפנקס כתובות של מוזילה"
 
 #: readme.xrm#SDCC32ASRC
 msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
 msgstr ""
 
 #: readme.xrm#AWE1
+#, fuzzy
 msgid  "Shortcut Keys"
-msgstr ""
+msgstr "מקשי קיצור"
 
 #: readme.xrm#W32E1
 msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
 msgstr ""
 
 #: readme.xrm#MACKEYS1
+#, fuzzy
 msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
-msgstr ""
+msgstr "ניתן להשתמש במקשי קיצור ביישום העזרה של ${PRODUCTNAME} אבל רק במקלדות PC רגילות."
 
 #: readme.xrm#GFH6W
+#, fuzzy
 msgid  "File Locking"
-msgstr ""
+msgstr "נעילת קבצים"
 
 #: readme.xrm#PJI76W
 msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
 msgstr ""
 
 #: readme.xrm#PJI76WSDF
+#, fuzzy
 msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
-msgstr ""
+msgstr "שימו לב: הפעלת התכונה של נעילת קבצים על מערכות קבצים NFS יכול לגרום לצרות באופן אופיס על 'סולריס', גרסאות 2.5.1 ו 2.7, כאשר הגישה לקבצים היא באמצעות NFS 2.0 משרתי לינוקס. בסביבה הזאת אנחנו ממליצים לא להשתמש בנעילת קבצים. אחרת, הגישה באופן אופיס למסמכים בתיקיות NFS עלולה לתקוע את אופן אופיס.‏"
 
 #: readme.xrm#GFH6W1
+#, fuzzy
 msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
-msgstr ""
+msgstr "בעיות בעת שליחת מסמכים כדוא\"ל מאופן אופיס"
 
 #: readme.xrm#PJI76W1
 msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
 msgstr ""
 
 #: readme.xrm#AW22
+#, fuzzy
 msgid  "Important Accessibility Notes"
-msgstr ""
+msgstr "מידע חשוב למוגבלי יכולת"
 
 #: readme.xrm#ACCESS7
 msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 msgstr ""
 
 #: readme.xrm#SUPPORT
+#, fuzzy
 msgid  "User Support"
-msgstr ""
-
-#: readme.xrm#SUPPORT1
-msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
 msgstr ""
 
 #: readme.xrm#FAQ
@@ -332,77 +299,50 @@ msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/
 msgstr ""
 
 #: readme.xrm#REPORTBUGS
+#, fuzzy
 msgid  "Reporting Bugs &amp; Issues"
 msgstr ""
 
-#: readme.xrm#REPORTBUGS1
-msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
-msgstr ""
-
 #: readme.xrm#GETTINGINVOLVED1
+#, fuzzy
 msgid  "Getting Involved"
-msgstr ""
+msgstr "היה שותף"
 
 #: readme.xrm#GETTINGINVOLVED2
+#, fuzzy
 msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
-msgstr ""
+msgstr "השתתפותך הפעילה עשוייה לתרום רבות לקהילת האופן אופיס בפיתוח מוצר קוד פתוח חשוב זה.‏"
 
 #: readme.xrm#GETTINGIMVOLVED3
 msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
 msgstr ""
 
 #: readme.xrm#HOWTOSTART
+#, fuzzy
 msgid  "How to Start"
 msgstr ""
 
-#: readme.xrm#HOWTOSTART1
-msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
-msgstr ""
-
 #: readme.xrm#SUBSCRIBE
+#, fuzzy
 msgid  "Subscribe"
 msgstr ""
 
-#: readme.xrm#SUBSCRIBE1
-msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST1
-msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST2
-msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST4
-msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
-msgstr ""
-
-#: readme.xrm#MISSING_ID
-msgid  "Joining the Project"
-msgstr ""
-
 #: readme.xrm#JOINING
+#, fuzzy
 msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
 msgstr ""
 
-#: readme.xrm#JOINING1
-msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
-msgstr ""
-
-#: readme.xrm#JOINING3
-msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
-msgstr ""
-
 #: readme.xrm#CREDITS
+#, fuzzy
 msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
-msgstr ""
+msgstr "אנו מקווים שתהנו לעבוד ב-${PRODUCTNAME} ${PRODUCTVERSION} החדש ושתצטרפו אלינו באופן מקוון."
 
 #: readme.xrm#CREDITS2
+#, fuzzy
 msgid  "The Apache OpenOffice Community"
-msgstr ""
+msgstr "קהילת OpenOffice.org"
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
+#, fuzzy
 msgid  "Used / Modified Source Code"
-msgstr ""
+msgstr "השתמש בו או שנה את קוד המקור"

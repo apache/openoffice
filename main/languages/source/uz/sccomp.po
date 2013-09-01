@@ -33,23 +33,23 @@ msgstr ""
 
 #: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr ""
+msgstr "%PRODUCTNAME liniyali yechim izlovchi"
 
 #: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
-msgstr ""
+msgstr "Oʻzgaruvchilarni nomanfiy deb qabul qilish"
 
 #: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr ""
+msgstr "Oʻzgaruvchilarni butun son sifatida qabul qilish"
 
 #: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr ""
+msgstr "Yechimni izlash vaqti chegarasi (soniyada)"
 
 #: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr ""
+msgstr "Epsilon darajasi (0-3)"
 
 #: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
@@ -57,20 +57,20 @@ msgstr ""
 
 #: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr ""
+msgstr "Model liniyali emas."
 
 #: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr ""
+msgstr "Epsilon darajasi xato."
 
 #: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr ""
+msgstr "Modelni bajarib boʻlmaydi. Cheklash shartlarini tekshirib koʻring."
 
 #: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr ""
+msgstr "Model chegarasiz."
 
 #: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
-msgstr ""
+msgstr "Vaqt tugadi."

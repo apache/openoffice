@@ -67,13 +67,9 @@ msgstr ""
 msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
 msgstr ""
 
-#: readme.xrm#A13B
-msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
-msgstr ""
-
 #: readme.xrm#RR3FGF42R
 msgid  "Notes on Installation"
-msgstr ""
+msgstr "സ്ഥാപിക്കുന്നതിനുള്ള കുറിപ്പുകള്"
 
 #: readme.xrm#JAVANEEDED
 msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
@@ -81,7 +77,7 @@ msgstr ""
 
 #: readme.xrm#SDFSDFGF42R
 msgid  "System Requirements"
-msgstr ""
+msgstr "സിസ്റ്റത്തിന‌് ആവശ്യമായത്:"
 
 #: readme.xrm#MACXIOSX
 msgid  "MacOSX 10.4 (Tiger) or higher"
@@ -108,22 +104,21 @@ msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
 msgstr ""
 
 #: readme.xrm#UTZU6
+#, fuzzy
 msgid  "Pentium III or later processor"
-msgstr ""
+msgstr "പെന്ടിയം കോംപാറ്റബിള്  PC"
 
 #: readme.xrm#GHUJ67
+#, fuzzy
 msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#JZJTZU6
-msgid  "Up to 1.5 GB available hard disk space"
-msgstr ""
+msgstr "128 MB RAM (256 MB RAM ഉത്തമം)"
 
 #: readme.xrm#JTZU56
 msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
-msgstr ""
+msgstr "800x600 വിശ്ലേഷണം അഥവാ ഉയര്ന്നത്, കുറഞ്ഞത്  256 നിറങ്ങള്"
 
 #: readme.xrm#EDSSC3D
+#, fuzzy
 msgid  "Please be aware that administrator rights are needed for the installation process."
 msgstr ""
 
@@ -143,93 +138,54 @@ msgstr ""
 msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
 msgstr ""
 
-#: readme.xrm#ADMINNEEDED
-msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr ""
-
 #: readme.xrm#S2335
 msgid  "Solaris 10 operating system (SPARC platform) or higher"
-msgstr ""
-
-#: readme.xrm#S253
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
+msgstr "Solaris 8 ഓപ്പറേറ്റിങ് സിസ്റ്റം (SPARC platform) അല്ലെങ്കില്‍ കൂടിയതു് (Solaris 10 ഉത്തമം)"
 
 #: readme.xrm#S23SEG
+#, fuzzy
 msgid  "Up to 1.55 GB available hard disk space"
 msgstr ""
 
 #: readme.xrm#S2S43GFE
+#, fuzzy
 msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
+msgstr "800x600 അല്ലെങ്കില്‍ കൂടുതലായ റിസല്യൂഷന്‍ ഉള്ള X സര്‍വര്‍, കുറഞ്ഞതു് 256 നിറങ്ങള്‍ ലഭ്യമാണു്."
 
 #: readme.xrm#N4234RW
+#, fuzzy
 msgid  "Window Manager"
-msgstr ""
+msgstr "വിന്ഡോ കാര്യകര്ത്താവ്"
 
 #: readme.xrm#WD2DFF2
+#, fuzzy
 msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "ജാവാ ആക്സസിബിളിറ്റി പിന്തുണ വഴിയുള്ള അസ്സിസ്സ്റ്റീവ് ടെക്നോളജി ഉപകരണങ്ങള്‍ക്കുള്ള (AT ഉപകരണങ്ങള്‍) Gnome 2.6 അല്ലെങ്കില്‍ കൂടിയതു്"
 
 #: readme.xrm#S23H
 msgid  "Solaris 10 operating system (x86 platform) or higher"
-msgstr ""
-
-#: readme.xrm#S24F
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#FGHEG
-msgid  "Up to 1.55 GB available hard disk space"
-msgstr ""
-
-#: readme.xrm#FGHFGH
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
-
-#: readme.xrm#MGJFG
-msgid  "Window Manager"
-msgstr ""
-
-#: readme.xrm#WD2DFF1
-msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "Solaris 8 ഓപ്പറേറ്റിങ് സിസ്റ്റം (Intel പ്ലാറ്റ്ഫോം) അല്ലെങ്കില്‍ കൂടിയതു് (Solaris 10 ഉത്തമം)"
 
 #: readme.xrm#S2WE35
 msgid  "Linux Kernel version 2.6.18 or higher"
-msgstr ""
+msgstr "ലിനക്സ് കേര്‍ണല്‍ പതിപ്പ് 2.4 അല്ലെങ്കില്‍ കൂടിയതു്"
 
 #: readme.xrm#S253WE
 msgid  "glibc2 version 2.5 or higher"
-msgstr ""
+msgstr "glibc2 version 2.2.4  അഥവാ വലുത്"
 
 #: readme.xrm#S256WE
 msgid  "gtk version 2.10.4 or higher"
-msgstr ""
+msgstr "glibc2 version 2.2.4  അഥവാ വലുത്"
 
 #: readme.xrm#S2ETFSEG
+#, fuzzy
 msgid  "Pentium III or later processor"
-msgstr ""
-
-#: readme.xrm#S2SSDFE
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#N42DFGF
-msgid  "Up to 1.55 GB available hard disk space"
-msgstr ""
-
-#: readme.xrm#GHJHHR
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
-
-#: readme.xrm#FHRTZ5
-msgid  "Window Manager"
-msgstr ""
+msgstr "പെന്ടിയം കോംപാറ്റബിള്  PC"
 
 #: readme.xrm#WD2DFF
 msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "ജാവാ ആക്സസിബിളിറ്റി പിന്തുണ വഴിയുള്ള അസ്സിസ്സ്റ്റീവ് ടെക്നോളജി ഉപകരണങ്ങള്‍ക്കുള്ള (AT ഉപകരണങ്ങള്‍) Gnome 2.6 അല്ലെങ്കില്‍ കൂടിയതു്"
 
 #: readme.xrm#LINUXI3A
 msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
@@ -257,19 +213,19 @@ msgstr ""
 
 #: readme.xrm#NASO
 msgid  "ALPS/Synaptics notebook touchpads in Windows"
-msgstr ""
+msgstr "ALPS/ സിനാപ്ടിക് നോട്ട്ബുക്ക് ടച്ച്പാഡ് വിന്ഡോയില്."
 
 #: readme.xrm#NASO2
 msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
-msgstr ""
+msgstr "വിന്ഡോ ഡ്രൈവറിന്റെ പ്രശ്നം കാരണം,  താങ്കളുടെ വിരലുകള് ALPS/ സിനാപ്ടിക്  ടച്ച്പാഡില് ഇരിക്കുന്പോള്  താങ്കള്ക്ക് OpenOffice.org  ഡോക്കുമെന്റുകളിലൂടം സ്ക്രോള് ചെയ്യാന് കഴിയില്ല."
 
 #: readme.xrm#NASO6
 msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+msgstr "ടച്ച്പാഡ് സ്ക്രോലിങ്ങ്  പ്രവര്ത്തന സജ്ജമാക്കുക, താഴെ തന്നിരിക്കുന്ന വരികള് ചേര്ക്കുക \"C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini\" രൂപരേഖ ഫയല്. അതിനുശേഷം കന്പ്യൂട്ടര് വീണ്ടും പ്രവര്ത്തിപ്പിക്കുക."
 
 #: readme.xrm#NASO8
 msgid  "The location of the configuration file might vary on different versions of Windows."
-msgstr ""
+msgstr "കുറിപ്പ് - രൂപരേഖ ചെയ്ത് ഫയലിന്റെ ലൊക്കേഷന്  വിന്ഡോകളുടെ പരിഭാഷ അനുസരിച്ച് മാറും."
 
 #: readme.xrm#SDFSD32ASRC
 msgid  "Mozilla Address Book Driver"
@@ -281,11 +237,11 @@ msgstr ""
 
 #: readme.xrm#AWE1
 msgid  "Shortcut Keys"
-msgstr ""
+msgstr "എളുപ്പ പ്രയോഗ കീകള്"
 
 #: readme.xrm#W32E1
 msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
-msgstr ""
+msgstr "OpenOffice.org ഓപ്പറേറ്റിംഗ് സിസ്റ്റത്തില് ഉപയോഗിക്കാത്ത എളുപ്പ പ്രയോഗ കീകള് (കീ കോന്പിനേഷന്) മാത്രമേ  ഉപയോഗിക്കാവൂ. penOffice.org  കീ കോന്പിനേഷന് ശരിക്കും പ്രവര്ത്തിക്കുന്നില്ലെങ്കില്  ഓപ്പറേറ്റിംഗ് സിസ്റ്റത്തില് പ്രവര്ത്തിക്കുന്നുണോ എന്ന് പരിശോധിക്കുക. ഇത് ഒഴിവാക്കാന് ഓപ്പറേറ്റിംഗ് സിസ്റ്റത്തിന്റെ കീയില് മാറ്റം വരുത്തുക.  അതുപോലെ OpenOffice.orgയിലെ കീ യില് മാറ്റം വരുത്താം."
 
 #: readme.xrm#MACKEYS1
 msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
@@ -293,7 +249,7 @@ msgstr ""
 
 #: readme.xrm#GFH6W
 msgid  "File Locking"
-msgstr ""
+msgstr "ഫയല് പൂട്ടുക"
 
 #: readme.xrm#PJI76W
 msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
@@ -301,15 +257,15 @@ msgstr ""
 
 #: readme.xrm#PJI76WSDF
 msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
-msgstr ""
+msgstr "താക്കീത്: പ്രവര്ത്തനസജ്ജമായ ഫയല് ലോക്കു ചെയ്യുന്ന സവിശേഷത  സോളാരിസ്  2.5.1 ലും  2.7ലും  ലിനക്സ് NFS2.0യില് പ്രശ്നമുണ്ടാകും.  താങ്കളുടെ സിസ്റ്റം പരിസ്ഥിതിയില്  ഈ പരാമീറ്ററുകള് ഉണ്ടെങ്കില് താങ്കള് ഫയല് ലോക്ക് ചെയ്യുന്ന  അവഗണിക്കാന് ഞങ്ങള് റെക്കമെന്റ് ചെയ്യും. അല്ലങ്കില് താങ്കള് തുറക്കാന് ശ്രമിക്കുന്ന  ലിനക്സ് കന്പ്യൂട്ടറിലെ NFS മൌണ്ട് ചെയ്ത് ഡയറക്ട്രിയിലെ ഫയലില് OpenOffice.org   വൈമാനസ്യം കാണിക്കും."
 
 #: readme.xrm#GFH6W1
 msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
-msgstr ""
+msgstr "OpenOffice.org യില് നിന്നും ഡോക്കുമെന്റ് അയ്ക്കുന്നതിലുള്ള പ്രശ്നം."
 
 #: readme.xrm#PJI76W1
 msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
-msgstr ""
+msgstr "ഡോക്കുമെന്റ്  'ഫയല് -അയ്ക്കുക- ഇ-മെയിലായി ഡോക്കുമെന്റ് '  വഴി  അഥവാ  ' ഡോക്കുമെന്റ് PDF അറ്റാച്ച്മെന്റായി'  അയ്ക്കുന്പോള് പ്രശ്നങ്ങളുണ്ടാവാം (പ്രോഗ്രാം ക്രാഷുകള് അഥവാ ഹാങ്ങുകള്). ഇതിന‌് കാരണം  വിന്ഡോ ഫയല് സിസ്റ്റം  \"Mapi\" (സന്ദേശ പ്രയോഗ പ്രോഗ്രാമിങ്ങ് ഇന്റര്ഫേസ്) ചില ഫയല് പരിഭാഷകള്ക്ക് കാരണമാവുന്നതുകൊണ്ടാണ‌്. ചില പരിഭാഷ സംഖ്യയില്  പ്രശ്നം  ചെറുതാക്കാന് സാധിക്കുകയില്ല. കൂടുതല് വിവരങ്ങള്ക്ക്  http://www.microsoft.com സന്ദര്ശിച്ച്  \"mapi dll\"യ്ക്കുവേണ്ടിയുള്ള മൈക്രോസോഫ്റ്റ് വിജ്ഞാന അടിസ്ഥാനം അന്വേഷിക്കുക."
 
 #: readme.xrm#AW22
 msgid  "Important Accessibility Notes"
@@ -320,11 +276,8 @@ msgid  "For more information on the accessibility features in ${PRODUCTNAME}, se
 msgstr ""
 
 #: readme.xrm#SUPPORT
+#, fuzzy
 msgid  "User Support"
-msgstr ""
-
-#: readme.xrm#SUPPORT1
-msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
 msgstr ""
 
 #: readme.xrm#FAQ
@@ -332,77 +285,49 @@ msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/
 msgstr ""
 
 #: readme.xrm#REPORTBUGS
+#, fuzzy
 msgid  "Reporting Bugs &amp; Issues"
-msgstr ""
-
-#: readme.xrm#REPORTBUGS1
-msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
-msgstr ""
+msgstr "ഇഷ്യു സിലായെ ഹോസ്റ്റ് ചെയ്യുന്ന  OpenOffice.org , റിപ്പോര്ട്ട് ചെയ്യുന്നതിനും ട്രാക്ക് ചെയ്യുന്നതിനും ബഗ്ഗുകളും പ്രശ്നങ്ങളും പരിഹരിക്കുന്നതിനുമുള്ള ഞങ്ങളുടെ വിദ്യ.താങ്കളുടെ പ്രത്യേക പ്ലാറ്റ്ഫോമില് ഉണ്ടാകുന്ന  പ്രശ്നങ്ങള് റിപ്പോര്ട്ട് ചെയ്യുന്നതില് സ്വാഗതം ചെയ്യുന്നു.  പ്രശ്നങ്ങള്  ആരോഗ്യപരമായ റിപ്പോര്ട്ട് ചെയ്യുന്നത്  ഏറ്റവും പ്രധാനമാണ‌്. ഇത് ഉപഭോക്താക്കള്ക്ക് നടന്നുകൊണ്ടിരിക്കുന്ന പുരോഗമനത്തിനോട് യോജിക്കാന് സാഹിക്കും. "
 
 #: readme.xrm#GETTINGINVOLVED1
 msgid  "Getting Involved"
-msgstr ""
+msgstr "ഉള്പ്പെടുക"
 
 #: readme.xrm#GETTINGINVOLVED2
 msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
-msgstr ""
+msgstr "OpenOffice.org വിഭാഗത്തിലെ ഈ പ്രധാനപ്പെട്ട തുറന്ന ഉറവിട പ്രോജക്ട്  വികസനത്തിന‌്  താങ്കളുടെ സജീവമായി പങ്കെടുക്കുന്നത് വളരെയധികം ഗുണകരമാണ‌്. "
 
 #: readme.xrm#GETTINGIMVOLVED3
+#, fuzzy
 msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
-msgstr ""
+msgstr "വികസന പ്രവര്ത്തനത്തില് ഉപഭോക്താവെന്ന നിലയില് താങ്കള്ക്ക് ഒഴിച്ചു കൂടാനാകാത്ത ഒരു ഭാഗമുണ്ട് മാത്രമല്ല താങ്കള് ഒരു ദീര്ഘകാല  വീക്ഷണത്തോടെ കര്ത്തവ്യനിരതനായി പ്രവര്ത്തിക്കാന്  ഞങ്ങള് പ്രോത്സാഹിപ്പിക്കും. ദയവായി ഞങ്ങളോടേപ്പം ചേരുകയും ഉപഭോക്തൃപേഡ് പരിശോധിക്കുകയും ചെയ്യുക."
 
 #: readme.xrm#HOWTOSTART
+#, fuzzy
 msgid  "How to Start"
 msgstr ""
 
-#: readme.xrm#HOWTOSTART1
-msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
-msgstr ""
-
 #: readme.xrm#SUBSCRIBE
+#, fuzzy
 msgid  "Subscribe"
 msgstr ""
 
-#: readme.xrm#SUBSCRIBE1
-msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST1
-msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST2
-msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST4
-msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
-msgstr ""
-
-#: readme.xrm#MISSING_ID
-msgid  "Joining the Project"
-msgstr ""
-
 #: readme.xrm#JOINING
+#, fuzzy
 msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
 msgstr ""
 
-#: readme.xrm#JOINING1
-msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
-msgstr ""
-
-#: readme.xrm#JOINING3
-msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
-msgstr ""
-
 #: readme.xrm#CREDITS
+#, fuzzy
 msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
-msgstr ""
+msgstr " താങ്കള് പുതിയ OpenOffice.org 2.0  ജോലി ചെയ്യുന്നത് ആസ്വദിക്കുന്നുവെന്നും പിന്നെ ഞങ്ങളുടെ കൂടെ ഓണ്‍ലൈനില് ചേരുമെന്നും ഞങ്ങള് കരുതുന്നു."
 
 #: readme.xrm#CREDITS2
+#, fuzzy
 msgid  "The Apache OpenOffice Community"
-msgstr ""
+msgstr "OpenOffice.org  വിഭാഗം"
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
+#, fuzzy
 msgid  "Used / Modified Source Code"
-msgstr ""
+msgstr "ഉപയോഗിച്ച/ പരിഷ്കരിച്ച ഉറവിട കോഡ്"

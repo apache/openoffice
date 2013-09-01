@@ -33,44 +33,44 @@ msgstr ""
 
 #: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr ""
+msgstr "%PRODUCTNAME රේඛීය විසඳනය"
 
 #: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
-msgstr ""
+msgstr "විචල්‍යයන් ඍන නොවන ලෙස සලකන්න"
 
 #: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr ""
+msgstr "විචල්‍යයන් පූර්ණ සංඛ්‍යාලෙස සලකන්න"
 
 #: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr ""
+msgstr "කාල සීමාව විසඳමින් (තත්පර)"
 
 #: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr ""
+msgstr "එප්සිලෝන් මට්ටම (0-3)"
 
 #: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
-msgstr ""
+msgstr "ශාඛා-හා-බැඳීම් ගැඹුර සීමා කරන්න"
 
 #: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr ""
+msgstr "ආකෘතිය රේඛීය නොවේ."
 
 #: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr ""
+msgstr "එප්සයිලෝන් මට්ටම වලංගු නොවේ."
 
 #: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr ""
+msgstr "ආකෘතිය සැකසිය නොහැක. සීමාකිරීමේ නීති බලන්න."
 
 #: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr ""
+msgstr "ආකෘතිය නිදහස් කරන ලදී."
 
 #: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
-msgstr ""
+msgstr "කාලසීමාවේ අවසානයට පැමිණ ඇත"

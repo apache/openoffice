@@ -33,1279 +33,903 @@ msgstr ""
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
 msgid  "Calculates the number of weeks in a specific period"
-msgstr ""
+msgstr "מחשבת את מספר השבועות בתקופה נתונה"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
 msgid  "Start date"
-msgstr ""
+msgstr "תאריך התחלתי"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
 msgid  "First day of the period"
-msgstr ""
+msgstr "היום הראשון בתקופה.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
 msgid  "End date"
-msgstr ""
+msgstr "תאריך סיום"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
 msgid  "Last day of the period"
-msgstr ""
+msgstr "היום האחרון בתקופה"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.6.STRING.TEXT
 msgid  "Type"
-msgstr ""
+msgstr "סוג"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "שיטת חישוב: 0 = חישוב תקופה מדוייק, 1 = חישוב מספר השבועות בתקופה"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
 msgid  "Determines the number of months in a specific period."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
+msgstr "מחשבת את מספר החודשים בתקופה נתונה.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
 msgid  "First day of the period."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.4.STRING.TEXT
-msgid  "End date"
-msgstr ""
+msgstr "היום הראשון בתקופה.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
 msgid  "Last day of the period."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.6.STRING.TEXT
-msgid  "Type"
-msgstr ""
+msgstr "היום האחרון בתקופה.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "שיטת חישוב: 0 = חישוב תקופה מדוייק, 1 = חישוב מספר החודשים בתקופה"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
 msgid  "Calculates the number of years in a specific period."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.3.STRING.TEXT
-msgid  "First day of the period"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.4.STRING.TEXT
-msgid  "End date"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.5.STRING.TEXT
-msgid  "Last day of the period"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.6.STRING.TEXT
-msgid  "Type"
-msgstr ""
+msgstr "מחשבת את מספר השנים בתקופה נתונה.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "שיטת חישוב: 0 = חישוב תקופה מדוייק, 1 = חישוב מספר השנים בתקופה"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "מחזירה 1 (אמת) אם התאריך הנתון חל בשנה גרגוריאנית מעוברת, 0 (שקר) אחרת.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.2.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "תאריך"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.3.STRING.TEXT
 msgid  "Any day in the desired year"
-msgstr ""
+msgstr "כל יום בשנה המבוקשת.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.1.STRING.TEXT
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.2.STRING.TEXT
-msgid  "Date"
-msgstr ""
+msgstr "מחזירה את מספר הימים בחודש הגרגוריאני שבו חל התאריך הנתון.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
 msgid  "Any day in the desired month"
-msgstr ""
+msgstr "כל יום בחודש המבוקש.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.2.STRING.TEXT
-msgid  "Date"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.3.STRING.TEXT
-msgid  "Any day in the desired year"
-msgstr ""
+msgstr "מחזירה את מספר הימים בשנה שבה חל התאריך הנתון.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.2.STRING.TEXT
-msgid  "Date"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.3.STRING.TEXT
-msgid  "Any day in the desired year"
-msgstr ""
+msgstr "מחזירה את מספר השבועות בשנה שבה חל התאריך הנתון"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr ""
+msgstr "מצפין או מפענח טקסט באמצעות אלגוריתם ROT13‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
 msgid  "Text"
-msgstr ""
+msgstr "טקסט"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
 msgid  "Text to be encrypted or text already encrypted"
-msgstr ""
+msgstr "טקסט שיש להצפינו או טקסט שכבר הוצפן.‏"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
 msgid  "WEEKS"
-msgstr ""
+msgstr "WEEKS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
 msgid  "MONTHS"
-msgstr ""
+msgstr "MONTHS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
 msgid  "YEARS"
-msgstr ""
+msgstr "YEARS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
 msgid  "ISLEAPYEAR"
-msgstr ""
+msgstr "ISLEAPYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
 msgid  "DAYSINMONTH"
-msgstr ""
+msgstr "DAYSINMONTH"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINYEAR.STRING.TEXT
 msgid  "DAYSINYEAR"
-msgstr ""
+msgstr "DAYSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
 msgid  "WEEKSINYEAR"
-msgstr ""
+msgstr "WEEKSINYEAR"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
 msgid  "ROT13"
-msgstr ""
+msgstr "ROT13"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
 msgid  "WORKDAY"
-msgstr ""
+msgstr "WORKDAY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
 msgid  "YEARFRAC"
-msgstr ""
+msgstr "YEARFRAC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
 msgid  "EDATE"
-msgstr ""
+msgstr "EDATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
 msgid  "WEEKNUM"
-msgstr ""
+msgstr "WEEKNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
 msgid  "EOMONTH"
-msgstr ""
+msgstr "EOMONTH"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
 msgid  "NETWORKDAYS"
-msgstr ""
+msgstr "NETWORKDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
 msgid  "AMORDEGRC"
-msgstr ""
+msgstr "AMORDEGRC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
 msgid  "AMORLINC"
-msgstr ""
+msgstr "AMORLINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
 msgid  "ACCRINT"
-msgstr ""
+msgstr "ACCRINT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
 msgid  "ACCRINTM"
-msgstr ""
+msgstr "ACCRINTM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
 msgid  "RECEIVED"
-msgstr ""
+msgstr "RECEIVED"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
 msgid  "DISC"
-msgstr ""
+msgstr "DISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
 msgid  "DURATION"
-msgstr ""
+msgstr "DURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
 msgid  "EFFECT"
-msgstr ""
+msgstr "EFFECT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
 msgid  "CUMPRINC"
-msgstr ""
+msgstr "CUMPRINC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
 msgid  "CUMIPMT"
-msgstr ""
+msgstr "CUMIPMT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
 msgid  "PRICE"
-msgstr ""
+msgstr "PRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
 msgid  "PRICEDISC"
-msgstr ""
+msgstr "PRICEDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
 msgid  "PRICEMAT"
-msgstr ""
+msgstr "PRICEMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
 msgid  "MDURATION"
-msgstr ""
+msgstr "MDURATION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
 msgid  "NOMINAL"
-msgstr ""
+msgstr "NOMINAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
 msgid  "DOLLARFR"
-msgstr ""
+msgstr "DOLLARFR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
 msgid  "DOLLARDE"
-msgstr ""
+msgstr "DOLLARDE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
 msgid  "YIELD"
-msgstr ""
+msgstr "YIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
 msgid  "YIELDDISC"
-msgstr ""
+msgstr "YIELDDISC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
 msgid  "YIELDMAT"
-msgstr ""
+msgstr "YIELDMAT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
 msgid  "TBILLEQ"
-msgstr ""
+msgstr "TBILLEQ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
 msgid  "TBILLPRICE"
-msgstr ""
+msgstr "TBILLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
 msgid  "TBILLYIELD"
-msgstr ""
+msgstr "TBILLYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
 msgid  "ODDFPRICE"
-msgstr ""
+msgstr "ODDFPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
 msgid  "ODDFYIELD"
-msgstr ""
+msgstr "ODDFYIELD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
 msgid  "ODDLPRICE"
-msgstr ""
+msgstr "ODDLPRICE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
 msgid  "ODDLYIELD"
-msgstr ""
+msgstr "ODDLYIELDU"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
 msgid  "XIRR"
-msgstr ""
+msgstr "XIRR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
 msgid  "XNPV"
-msgstr ""
+msgstr "XNPV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
 msgid  "INTRATE"
-msgstr ""
+msgstr "INTRATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
 msgid  "COUPNCD"
-msgstr ""
+msgstr "COUPNCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
 msgid  "COUPDAYS"
-msgstr ""
+msgstr "COUPDAYS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
 msgid  "COUPDAYSNC"
-msgstr ""
+msgstr "COUPDAYSNC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
 msgid  "COUPDAYBS"
-msgstr ""
+msgstr "COUPDAYBS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
 msgid  "COUPPCD"
-msgstr ""
+msgstr "COUPPCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
 msgid  "COUPNUM"
-msgstr ""
+msgstr "COUPNUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
 msgid  "FVSCHEDULE"
-msgstr ""
+msgstr "FVSCHEDULE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
 msgid  "ISEVEN"
-msgstr ""
+msgstr "ISEVEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
 msgid  "ISODD"
-msgstr ""
+msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
 msgid  "GCD"
-msgstr ""
+msgstr "GCD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_LCM.STRING.TEXT
 msgid  "LCM"
-msgstr ""
+msgstr "LCM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
 msgid  "MULTINOMIAL"
-msgstr ""
+msgstr "MULTINOMIAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
 msgid  "SERIESSUM"
-msgstr ""
+msgstr "SERIESSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
 msgid  "QUOTIENT"
-msgstr ""
+msgstr "QUOTIENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
 msgid  "MROUND"
-msgstr ""
+msgstr "MROUND"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
 msgid  "SQRTPI"
-msgstr ""
+msgstr "SQRTPI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
 msgid  "RANDBETWEEN"
-msgstr ""
+msgstr "RANDBETWEEN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
 msgid  "BESSELI"
-msgstr ""
+msgstr "BESSELI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
 msgid  "BESSELJ"
-msgstr ""
+msgstr "BESSELJ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
 msgid  "BESSELK"
-msgstr ""
+msgstr "BESSELK"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
 msgid  "BESSELY"
-msgstr ""
+msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
 msgid  "BIN2DEC"
-msgstr ""
+msgstr "BIN2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2HEX.STRING.TEXT
 msgid  "BIN2HEX"
-msgstr ""
+msgstr "BIN2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2OCT.STRING.TEXT
 msgid  "BIN2OCT"
-msgstr ""
+msgstr "BIN2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
 msgid  "DELTA"
-msgstr ""
+msgstr "DELTA"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
 msgid  "DEC2BIN"
-msgstr ""
+msgstr "DEC2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2HEX.STRING.TEXT
 msgid  "DEC2HEX"
-msgstr ""
+msgstr "DEC2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2OCT.STRING.TEXT
 msgid  "DEC2OCT"
-msgstr ""
+msgstr "DEC2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
 msgid  "ERF"
-msgstr ""
+msgstr "ERF"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
 msgid  "ERFC"
-msgstr ""
+msgstr "ERFC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
 msgid  "GESTEP"
-msgstr ""
+msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
 msgid  "HEX2BIN"
-msgstr ""
+msgstr "HEX2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2DEC.STRING.TEXT
 msgid  "HEX2DEC"
-msgstr ""
+msgstr "HEX2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2OCT.STRING.TEXT
 msgid  "HEX2OCT"
-msgstr ""
+msgstr "HEX2OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMABS.STRING.TEXT
 msgid  "IMABS"
-msgstr ""
+msgstr "IMABS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
 msgid  "IMAGINARY"
-msgstr ""
+msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
 msgid  "IMPOWER"
-msgstr ""
+msgstr "IMPOWER"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMARGUMENT.STRING.TEXT
 msgid  "IMARGUMENT"
-msgstr ""
+msgstr "IMARGUMENT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOS.STRING.TEXT
 msgid  "IMCOS"
-msgstr ""
+msgstr "IMCOS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMDIV.STRING.TEXT
 msgid  "IMDIV"
-msgstr ""
+msgstr "IMDIV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMEXP.STRING.TEXT
 msgid  "IMEXP"
-msgstr ""
+msgstr "IMEXP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCONJUGATE.STRING.TEXT
 msgid  "IMCONJUGATE"
-msgstr ""
+msgstr "IMCONJUGATE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLN.STRING.TEXT
 msgid  "IMLN"
-msgstr ""
+msgstr "IMLN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG10.STRING.TEXT
 msgid  "IMLOG10"
-msgstr ""
+msgstr "IMLOG10"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG2.STRING.TEXT
 msgid  "IMLOG2"
-msgstr ""
+msgstr "IMLOG2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPRODUCT.STRING.TEXT
 msgid  "IMPRODUCT"
-msgstr ""
+msgstr "IMPRODUCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMREAL.STRING.TEXT
 msgid  "IMREAL"
-msgstr ""
+msgstr "IMREAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSIN.STRING.TEXT
 msgid  "IMSIN"
-msgstr ""
+msgstr "IMSIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUB.STRING.TEXT
 msgid  "IMSUB"
-msgstr ""
+msgstr "IMSUB"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUM.STRING.TEXT
 msgid  "IMSUM"
-msgstr ""
+msgstr "IMSUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSQRT.STRING.TEXT
 msgid  "IMSQRT"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
-msgid  "IMTAN"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
-msgid  "IMSEC"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
-msgid  "IMCSC"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
-msgid  "IMCOT"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
-msgid  "IMSINH"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
-msgid  "IMCOSH"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
-msgid  "IMSECH"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
-msgid  "IMCSCH"
-msgstr ""
+msgstr "IMSQRT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
 msgid  "COMPLEX"
-msgstr ""
+msgstr "COMPLEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
 msgid  "OCT2BIN"
-msgstr ""
+msgstr "OCT2BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2DEC.STRING.TEXT
 msgid  "OCT2DEC"
-msgstr ""
+msgstr "OCT2DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2HEX.STRING.TEXT
 msgid  "OCT2HEX"
-msgstr ""
+msgstr "OCT2HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
 msgid  "CONVERT"
-msgstr ""
+msgstr "CONVERT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
 msgid  "FACTDOUBLE"
-msgstr ""
+msgstr "FACTDOUBLE"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "מחזירה את המספר הסידורי של התאריך אחרי מספר נתון של ימי עבודה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
 msgid  "Start date"
-msgstr ""
+msgstr "תאריך התחלה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
 msgid  "The start date"
-msgstr ""
+msgstr "תאריך ההתחלה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
 msgid  "Days"
-msgstr ""
+msgstr "ימים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
 msgid  "The number of workdays before or after the start date"
-msgstr ""
+msgstr "מספר ימי העבודה לפני או אחרי תאריך ההתחלה.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
 msgid  "Holidays"
-msgstr ""
+msgstr "חגים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
 msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "רשימה של ערכי התאריך של ימי חופשה (חופשות, חגים, וכו').‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.3.STRING.TEXT
-msgid  "The start date"
-msgstr ""
+msgstr "מחזירה את מספר הימים השלמים בין 'תאריך התחלה' ו'תאריך סיום' כשבר של שנה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.4.STRING.TEXT
 msgid  "End date"
-msgstr ""
+msgstr "תאריך סיום"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
 msgid  "The end date"
-msgstr ""
+msgstr "תאריך הסיום"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
 msgid  "Basis"
-msgstr ""
+msgstr "בסיס"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
 msgid  "Basis for determining the interest days"
-msgstr ""
+msgstr "בסיס לקביעת ימי הריבית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.3.STRING.TEXT
-msgid  "The start date"
-msgstr ""
+msgstr "מחזירה את המספר הסידורי של התאריך שחל מספר נתון של חודשים לפני או אחרי התאריך ההתחלתי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
 msgid  "Months"
-msgstr ""
+msgstr "חודשים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
 msgid  "Number of months before or after the start date"
-msgstr ""
+msgstr "מספר החודשים לפני או אחרי תאריך ההתחלה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "מחזירה את מספר השבוע בשנה, שבו חל תאריך נתון.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "תאריך"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
 msgid  "The date"
-msgstr ""
+msgstr "התאריך"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
 msgid  "Return type"
-msgstr ""
+msgstr "טיפוס הערך המוחזר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr ""
+msgstr "מספר מ 1 עד 3 המציין את היום בו מתחיל השבוע"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.3.STRING.TEXT
-msgid  "The start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.4.STRING.TEXT
-msgid  "Months"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.5.STRING.TEXT
-msgid  "Number of months before or after the start date"
-msgstr ""
+msgstr "מחזירה את המספר הסידורי של היום האחרון של החודש שחל מספר נתון של חודשים לפני או אחרי התאריך ההתחלתי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
 msgid  "Returns the number of workdays between two dates"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.3.STRING.TEXT
-msgid  "The start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.4.STRING.TEXT
-msgid  "End date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.5.STRING.TEXT
-msgid  "The end date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.6.STRING.TEXT
-msgid  "Holidays"
-msgstr ""
+msgstr "מחזירה את מספר ימי העבודה בין שני תאריכים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "רשימה של ערכי תאריכים המייצגים ימי חופשה (חופשות, חגים, וכו').‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
 msgid  "Returns the value 'true' if the number is even"
-msgstr ""
+msgstr "מחזירה ערך 'אמת' אם המספר זוגי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.2.STRING.TEXT
 msgid  "Number"
-msgstr ""
+msgstr "מספר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.3.STRING.TEXT
 msgid  "The number"
-msgstr ""
+msgstr "המספר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.1.STRING.TEXT
 msgid  "Returns the value 'true' if the number is odd"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.3.STRING.TEXT
-msgid  "The number"
-msgstr ""
+msgstr "מחזירה את הערך 'אמת' אם המספר אי-זוגי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
 msgid  "Returns the multinomial coefficient of a set of numbers"
-msgstr ""
+msgstr "מחזירה את המקדם הרב‫ מספרי (multinomial coefficient) של קבוצת מספרים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
 msgid  "Number(s)"
-msgstr ""
+msgstr "מספר(ים)‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "מספר או רשימת מספרים שמהם יחושב המקדם הרב‫ מספרי (multinomial coefficient)‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
 msgid  "Returns the sum of a power series"
-msgstr ""
+msgstr "מחזירה את הסכום של סידרת חזקות"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
 msgid  "X"
-msgstr ""
+msgstr "X"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
 msgid  "The independent variable of the power series"
-msgstr ""
+msgstr "המשתנה הבלתי תלוי של טור חזקות"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
 msgid  "N"
-msgstr ""
+msgstr "N"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
 msgid  "The initial power to which x is to be raised"
-msgstr ""
+msgstr "החזקה הראשונית בה יש להעלות את‫ x.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
 msgid  "M"
-msgstr ""
+msgstr "M"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
 msgid  "The increment by which to increase n for each term in the series"
-msgstr ""
+msgstr "התוספת בה יש להגדיל את‫ n עבור כל איבר בסדרה.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
 msgid  "Coefficients"
-msgstr ""
+msgstr "מקדמים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "קבוצת המקדמים שמכפילה כל חזקה של המשתנה‫ x לפי הסדר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
 msgid  "Returns the integer portion of a division"
-msgstr ""
+msgstr "מחזירה את החלק השלם של תוצאה של חילוק"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
 msgid  "Numerator"
-msgstr ""
+msgstr "מונה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.3.STRING.TEXT
 msgid  "The dividend"
-msgstr ""
+msgstr "המחולק"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
 msgid  "Denominator"
-msgstr ""
+msgstr "מכנה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
 msgid  "The divisor"
-msgstr ""
+msgstr "המחלק"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
 msgid  "Returns a number rounded to a specified multiple"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "מחזירה מספר מעוגל ממכפיל נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
 msgid  "The number to round off"
-msgstr ""
+msgstr "המספר שיש לעגל"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.4.STRING.TEXT
 msgid  "Multiple"
-msgstr ""
+msgstr "מכפיל"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
 msgid  "The multiple to which you want to round number"
-msgstr ""
+msgstr "ערך המכפלה אליה רוצים לעגל את המספר.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
 msgid  "Returns the square root of a number which has been multiplied by pi"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "מחזירה את השורש של מספר שמוכפל בפי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
 msgid  "The number by which pi is multiplied"
-msgstr ""
+msgstr "המספר בו כופלים את פי.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
 msgid  "Returns a random integer between the numbers you specify"
-msgstr ""
+msgstr "מחזירה מספר אקראי שלם בין שני מספרים נתונים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
 msgid  "Bottom"
-msgstr ""
+msgstr "למטה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
 msgid  "The smallest integer returned"
-msgstr ""
+msgstr "המספר השלם הקטן ביותר שהוחזר.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
 msgid  "Top"
-msgstr ""
+msgstr "עליון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
 msgid  "The largest integer returned"
-msgstr ""
+msgstr "השלם הגדול ביותר שהוחזר.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
 msgid  "Returns the greatest common divisor"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.2.STRING.TEXT
-msgid  "Number(s)"
-msgstr ""
+msgstr "מחזירה את המכנה המשותף הגדול ביותר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
 msgid  "Number or list of numbers"
-msgstr ""
+msgstr "מספר או רשימה של מספרים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
 msgid  "Returns the least common multiple"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.2.STRING.TEXT
-msgid  "Number(s)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.3.STRING.TEXT
-msgid  "Number or list of numbers"
-msgstr ""
+msgstr "מחזירה את המכפלה המשותפת הקטנה ביותר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
 msgid  "Returns the modified Bessel function In(x)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.2.STRING.TEXT
-msgid  "X"
-msgstr ""
+msgstr "מחזירה את פונקציית הבסל המותאמת ‏‪‏‪In(x)‬‏‬‏‎"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
 msgid  "The value at which the function is to be evaluated"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.4.STRING.TEXT
-msgid  "N"
-msgstr ""
+msgstr "הערך בו יש להעריך את הפונקציה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
 msgid  "The order of the Bessel function"
-msgstr ""
+msgstr "סדר פונקציית הבזל"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
 msgid  "Returns the Bessel function Jn(x)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.2.STRING.TEXT
-msgid  "X"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.3.STRING.TEXT
-msgid  "The value at which the function is to be evaluated"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.4.STRING.TEXT
-msgid  "N"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.5.STRING.TEXT
-msgid  "The order of the Bessel function"
-msgstr ""
+msgstr "מחזירה את פונקציית הבסל ‏‪Jn(x)‬‏‎"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
 msgid  "Returns the Bessel function Kn(x)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.2.STRING.TEXT
-msgid  "X"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.3.STRING.TEXT
-msgid  "The value at which the function is to be evaluated"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.4.STRING.TEXT
-msgid  "N"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.5.STRING.TEXT
-msgid  "The order of the Bessel function"
-msgstr ""
+msgstr "מחזירה את פונקציית הבסל ‏‪Kn(x)‬‏‎"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
 msgid  "Returns the Bessel function Yn(x)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.2.STRING.TEXT
-msgid  "X"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.3.STRING.TEXT
-msgid  "The value at which the function is to be evaluated"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.4.STRING.TEXT
-msgid  "N"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.5.STRING.TEXT
-msgid  "The order of the Bessel function"
-msgstr ""
+msgstr "מחזירה את פונקציית הבסל ‏‪Yn(x)‬‏‎"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
 msgid  "Converts a binary number to an octal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "מסבה מספר בינארי למספר אוקטלי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.3.STRING.TEXT
 msgid  "The binary number to be converted (as text)"
-msgstr ""
+msgstr "המספר הבינארי המיועד להמרה (ככיתוב)‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.4.STRING.TEXT
 msgid  "Places"
-msgstr ""
+msgstr "ספרות"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.5.STRING.TEXT
 msgid  "Number of places used"
-msgstr ""
+msgstr "מספר הספרות בהם נעשה שימוש.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.1.STRING.TEXT
 msgid  "Converts a binary number to a decimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.3.STRING.TEXT
-msgid  "The binary number to be converted (as text)"
-msgstr ""
+msgstr "מסבה מספר בינארי למספר עשרוני"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
 msgid  "Converts a binary number to a hexadecimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.3.STRING.TEXT
-msgid  "The binary number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
+msgstr "מסבה מספר בינארי למספר הקסאדסימלי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
 msgid  "Number of places used."
-msgstr ""
+msgstr "מספר המקומות בהם נעשה שימוש"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
 msgid  "Converts an octal number to a binary number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "מסבה מספר אוקטלי למספר בינארי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
 msgid  "The octal number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "המספר האוקטאלי המיועד להסבה (ככיתוב)‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
 msgid  "Converts an octal number to a decimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.3.STRING.TEXT
-msgid  "The octal number to be converted (as text)"
-msgstr ""
+msgstr "מסבה מספר אוקטלי למספר עשרוני"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
 msgid  "Converts an octal number to a hexadecimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.3.STRING.TEXT
-msgid  "The octal number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "מסבה מספר אוקטלי למספר הקסאדסימלי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
 msgid  "Converts a decimal number to a binary number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "מסבה מספר עשרוני למספר בינארי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
 msgid  "The decimal integer to be converted"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "השלם העשרוני המיועד להסבה.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
 msgid  "Converts a decimal number to a hexadecimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.3.STRING.TEXT
-msgid  "The decimal integer to be converted"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "מסבה מספר עשרוני למספר הקסאדסימלי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
 msgid  "Converts a decimal number into an octal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "מסבה מספר עשרוני למספר אוקטלי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
 msgid  "The decimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "המספר העשרוני"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
 msgid  "Converts a hexadecimal number to a binary number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "מסבה מספר הקסאדסימלי למספר בינארי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "המספר ההקסדצימלי המיועד להסבה (ככיתוב)‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
 msgid  "Converts a hexadecimal number to a decimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.3.STRING.TEXT
-msgid  "The hexadecimal number to be converted (as text)"
-msgstr ""
+msgstr "מסבה מספר הקסאדסימלי למספר עשרוני"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
 msgid  "Converts a hexadecimal number to an octal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.3.STRING.TEXT
-msgid  "The hexadecimal number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "מסבה מספר הקסאדסימלי למספר אוקטלי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
 msgid  "Tests whether two values are equal"
-msgstr ""
+msgstr "בוחנת שוויון בין שני ערכים נתונים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
 msgid  "Number 1"
-msgstr ""
+msgstr "מספר 1‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
 msgid  "The first number"
-msgstr ""
+msgstr "המספר הראשון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
 msgid  "Number 2"
-msgstr ""
+msgstr "מספר 2‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
 msgid  "The second number"
-msgstr ""
+msgstr "המספר השני"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
 msgid  "Returns the error function"
-msgstr ""
+msgstr "מחזירה את שגרת השגיאה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
 msgid  "Lower limit"
-msgstr ""
+msgstr "גבול תחתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.3.STRING.TEXT
 msgid  "The lower limit for integration"
-msgstr ""
+msgstr "הגבול התחתון לאינטגרציה.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
 msgid  "Upper limit"
-msgstr ""
+msgstr "גבול עליון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
 msgid  "The upper limit for integration"
-msgstr ""
+msgstr "הגבול העליון לאינטגרציה.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
 msgid  "Returns the complementary error function"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.2.STRING.TEXT
-msgid  "Lower limit"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.3.STRING.TEXT
-msgid  "The lower limit for integration"
-msgstr ""
+msgstr "מחזירה את שגרת השגיאה המשלימה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
 msgid  "Tests whether a number is greater than a threshold value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "בוחנת אם מספר נתון גדול מערך סף"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
 msgid  "The value to test against step"
-msgstr ""
+msgstr "הערך שיש לבדוק כנגד הצעד"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
 msgid  "Step"
-msgstr ""
+msgstr "צעד"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
 msgid  "The threshhold value"
-msgstr ""
+msgstr "ערך הסף"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
 msgid  "Returns the double factorial of Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.3.STRING.TEXT
-msgid  "The number"
-msgstr ""
+msgstr "מחזירה את העצרת הכפולה של מספר נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
 msgid  "Returns the absolute value (modulus) of a complex number"
-msgstr ""
+msgstr "מחזירה את הערך המוחלט (המודולוס) של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
 msgid  "Complex number"
@@ -1313,47 +937,23 @@ msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
 msgid  "The complex number"
-msgstr ""
+msgstr "המספר המורכב"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
 msgid  "Returns the imaginary coefficient of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "מחזירה את המקדם הדמיוני של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
 msgid  "Returns a complex number raised to an integer power"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.4.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "מחזירה מספר מורכב נתון בחזקת מספר שלם נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
 msgid  "Power to which the complex number is raised"
-msgstr ""
+msgstr "החזקה בו המספר המורכב מעולה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
 msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
+msgstr "מחזירה אל הגורם 'תאטא', זווית במידות של רדיאנים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
 msgid  "A complex number"
@@ -1361,1952 +961,568 @@ msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
 msgid  "Returns the cosine of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
+msgstr "מחזירה קוסינוס של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
 msgid  "Returns the quotient of two complex numbers"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.2.STRING.TEXT
-msgid  "Numerator"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.3.STRING.TEXT
-msgid  "The dividend"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.4.STRING.TEXT
-msgid  "Denominator"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.5.STRING.TEXT
-msgid  "The divisor"
-msgstr ""
+msgstr "מחזירה את תוצאת החלוקה של שני מספרים מורכבים נתונים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
 msgid  "Returns the algebraic form of the exponential of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "מחזירה את הצורה האלגבראית של חזקה של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
 msgid  "Returns the complex conjugate of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "מחזירה את הקונג'וגט המורכב של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
 msgid  "Returns the natural logarithm of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "מחזירה את הלוגריתם הטבעי של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
 msgid  "Returns the base-10 logarithm of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "מחזירה את הלוגרותם בסיס 10 של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.1.STRING.TEXT
 msgid  "Returns the base-2 logarithm of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "מחזירה את הלוגרותם בסיס 2 של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
 msgid  "Returns the product of several complex numbers"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
+msgstr "מחזירה תוצאת הכפל של קבוצה נתונה של מספרים מורכבים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
 msgid  "The first complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.4.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
+msgstr "המספר המורכב הראשון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
 msgid  "Another complex number"
-msgstr ""
+msgstr "מספר מורכב נוסף"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
 msgid  "Returns the real coefficient of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "מחזירה את המקדם האמיתי של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
 msgid  "Returns the sine of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "מחזירה את הסינוס של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
 msgid  "Returns the difference of two complex numbers"
-msgstr ""
+msgstr "מחזירה את ההפרש בין שני מספרים מורכבים נתונים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
 msgid  "Complex number 1"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.3.STRING.TEXT
-msgid  "Complex number 1"
-msgstr ""
+msgstr "מספר מורכב 1‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.4.STRING.TEXT
 msgid  "Complex number 2"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.5.STRING.TEXT
-msgid  "Complex number 2"
-msgstr ""
+msgstr "מספר מורכב 2‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
 msgid  "Returns the square root of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "מחזירה את השורש של מספר מורכב נתון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
 msgid  "Returns the sum of complex numbers"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
-msgid  "Returns the tangent of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
-msgid  "Returns the secant of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
-msgid  "Returns the cosecant of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
-msgid  "Returns the cotangent of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
-msgid  "Returns the hyperbolic sine of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
-msgid  "Returns the hyperbolic cosine of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
-msgid  "Returns the hyperbolic secant of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
-msgid  "Returns the hyperbolic cosecant of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
+msgstr "מחזירה את הסכום של קבוצה של מספרים מורכבים נתונה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
 msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr ""
+msgstr "מחזירה מספר מורכב ממקדמים אמיתיים ודמיונים נתונים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
 msgid  "Real num"
-msgstr ""
+msgstr "מספר אמיתי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
 msgid  "The real coefficient"
-msgstr ""
+msgstr "המקדם האמיתי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
 msgid  "I num"
-msgstr ""
+msgstr "מספר דמיוני"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
 msgid  "The imaginary coefficient"
-msgstr ""
+msgstr "המקדם הדמיוני"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
 msgid  "Suffix"
-msgstr ""
+msgstr "סיומת"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
 msgid  "The suffix"
-msgstr ""
+msgstr "הסיומת"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
 msgid  "Converts a number from one measurement system to another"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.3.STRING.TEXT
-msgid  "The number"
-msgstr ""
+msgstr "מסבה מספר נתון ממערכת יחדות אחת לאחרת"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
 msgid  "From unit"
-msgstr ""
+msgstr "מיחידות של"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
 msgid  "Unit of measure for number"
-msgstr ""
+msgstr "יחידת המדידה עבור המספר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
 msgid  "To unit"
-msgstr ""
+msgstr "ליחידות של"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
 msgid  "Unit of measure for the result"
-msgstr ""
+msgstr "יחידת המדידה עבור התוצאה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "מחזירה את הפחת הלניארי של נכס נתון לכל תקופה חשבונאית ‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.2.STRING.TEXT
 msgid  "Cost"
-msgstr ""
+msgstr "עלות"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.3.STRING.TEXT
 msgid  "Cost of the asset"
-msgstr ""
+msgstr "עלות הנכס"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.4.STRING.TEXT
 msgid  "Date purchased"
-msgstr ""
+msgstr "תאריך רכישה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.5.STRING.TEXT
 msgid  "Purchase date of the asset"
-msgstr ""
+msgstr "תאריך רכישת הנכס"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.6.STRING.TEXT
 msgid  "First period"
-msgstr ""
+msgstr "תקופה הראשונה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
 msgid  "Date the first period ends"
-msgstr ""
+msgstr "תאריך סיום התקופה הראשונה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
 msgid  "Salvage"
-msgstr ""
+msgstr "ערך שיורי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
 msgid  "Salvage value of an asset at the end of its life"
-msgstr ""
+msgstr "ערכו השיורי של נכס בסוף חייו.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
 msgid  "Period"
-msgstr ""
+msgstr "תקופה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
 msgid  "The period"
-msgstr ""
+msgstr "התקופה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.12.STRING.TEXT
 msgid  "Rate"
-msgstr ""
+msgstr "שיעור"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.13.STRING.TEXT
 msgid  "The rate of depreciation"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
+msgstr "שיעור הפחת"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.15.STRING.TEXT
 msgid  "The year basis to be used"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.1.STRING.TEXT
-msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.2.STRING.TEXT
-msgid  "Cost"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.3.STRING.TEXT
-msgid  "Cost of the asset"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.4.STRING.TEXT
-msgid  "Date purchased"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.5.STRING.TEXT
-msgid  "Purchase date of the asset"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.6.STRING.TEXT
-msgid  "First period"
-msgstr ""
+msgstr "בסיס השנה בו יש להשתמש"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
 msgid  "The date the first period ends"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.8.STRING.TEXT
-msgid  "Salvage"
-msgstr ""
+msgstr "תאריך סיום התקופה הראשונה.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
 msgid  "The salvage value of an asset at the end of its life"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.10.STRING.TEXT
-msgid  "Period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.11.STRING.TEXT
-msgid  "The period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.12.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.13.STRING.TEXT
-msgid  "The rate of depreciation"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.15.STRING.TEXT
-msgid  "The year basis to be used"
-msgstr ""
+msgstr "הערך השיורי של נכס בסוף חייו.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "מחזירה את הריבית המצטברת עבור אג\"ח שמניבה ריבית תקופתית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
 msgid  "Issue"
-msgstr ""
+msgstr "הנפקה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
 msgid  "Issue date of the security"
-msgstr ""
+msgstr "תאריך הנפקת האג\"ח"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
 msgid  "First interest"
-msgstr ""
+msgstr "תשלום ריבית ראשון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
 msgid  "First interest date of the security"
-msgstr ""
+msgstr "תאריך הריבית הראשונה של האג\"ח"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
 msgid  "Settlement"
-msgstr ""
+msgstr "מחיר אג\"ח"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.7.STRING.TEXT
 msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
+msgstr "מחיר האג\"ח"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.9.STRING.TEXT
 msgid  "The rate"
-msgstr ""
+msgstr "הריבית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.10.STRING.TEXT
 msgid  "Par"
-msgstr ""
+msgstr "ערך נקוב"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.11.STRING.TEXT
 msgid  "The par value"
-msgstr ""
+msgstr "הערך הנקוב"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
 msgid  "Frequency"
-msgstr ""
+msgstr "תדירות"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
 msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
+msgstr "התדירות"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.15.STRING.TEXT
 msgid  "The basis"
-msgstr ""
+msgstr "הבסיס"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.1.STRING.TEXT
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.2.STRING.TEXT
-msgid  "Issue"
-msgstr ""
+msgstr "מחזירה את הריבית המצטברת של אג\"ח שמשלמת ריבית רק בפדיון הסופי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
 msgid  "The issue date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.4.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.5.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.6.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.7.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.8.STRING.TEXT
-msgid  "Par"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.9.STRING.TEXT
-msgid  "The par value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "תאריך הנפקה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
+msgstr "מחזירה את ערך הפדיון הסופי של אג\"ח"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
 msgid  "Maturity"
-msgstr ""
+msgstr "תאריך פדיון סופי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
 msgid  "The maturity"
-msgstr ""
+msgstr "תקופת האג\"ח"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.6.STRING.TEXT
 msgid  "Investment"
-msgstr ""
+msgstr "השקעה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.7.STRING.TEXT
 msgid  "The investment"
-msgstr ""
+msgstr "ההשקעה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.8.STRING.TEXT
 msgid  "Discount"
-msgstr ""
+msgstr "ניכיון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.9.STRING.TEXT
 msgid  "The discount"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "הניכיון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
 msgid  "Returns the discount rate for a security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
+msgstr "מחזירה את המחיר בניכיון של אג\"ח"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
 msgid  "Price"
-msgstr ""
+msgstr "מחיר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.7.STRING.TEXT
 msgid  "The price"
-msgstr ""
+msgstr "המחיר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.8.STRING.TEXT
 msgid  "Redemption"
-msgstr ""
+msgstr "פדיון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.9.STRING.TEXT
 msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "ערך הפדיון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
+msgstr "מחזירה את המשך המקאליי השנתית עבור אג\"ח עם תשלומי ריבית תקופתיים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
 msgid  "Coupon"
-msgstr ""
+msgstr "קופון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
 msgid  "The coupon rate"
-msgstr ""
+msgstr "שיעור הקופון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.8.STRING.TEXT
 msgid  "Yield"
-msgstr ""
+msgstr "תשואה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.9.STRING.TEXT
 msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.10.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.11.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.12.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.13.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "התשואה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
 msgid  "Returns the effective annual interest rate"
-msgstr ""
+msgstr "מחזירה את שיעור הריבית השנתית בפועל ‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
 msgid  "Nominal rate"
-msgstr ""
+msgstr "ריבית בסיסית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
 msgid  "The nominal rate"
-msgstr ""
+msgstr "השיעור הבסיסית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
 msgid  "Npery"
-msgstr ""
+msgstr "Npery"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.5.STRING.TEXT
 msgid  "The periods"
-msgstr ""
+msgstr "התקופות"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.2.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.3.STRING.TEXT
-msgid  "The rate"
-msgstr ""
+msgstr "מחזירה את הסה\"כ של תשלומי קרן של הלוואה שמשולמת בתקופה נתונה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
 msgid  "Nper"
-msgstr ""
+msgstr "Nper"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
 msgid  "Number of payment periods"
-msgstr ""
+msgstr "מספר תקופות התשלום"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.6.STRING.TEXT
 msgid  "Pv"
-msgstr ""
+msgstr "Pv"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
 msgid  "The present value"
-msgstr ""
+msgstr "הערך הנוכחי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
 msgid  "Start period"
-msgstr ""
+msgstr "תקופה ההתחלתית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
 msgid  "The start period"
-msgstr ""
+msgstr "התקופה ההתחלתית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.10.STRING.TEXT
 msgid  "End period"
-msgstr ""
+msgstr "התקופה הסופית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.11.STRING.TEXT
 msgid  "The end period"
-msgstr ""
+msgstr "התקופה הסופית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.12.STRING.TEXT
 msgid  "Type"
-msgstr ""
+msgstr "סוג"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.13.STRING.TEXT
 msgid  "The type of maturity"
-msgstr ""
+msgstr "סוג החלות"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
 msgid  "Returns the cumulative interest to be paid between two periods"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.2.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.3.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.4.STRING.TEXT
-msgid  "Nper"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.5.STRING.TEXT
-msgid  "Number of payment periods"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.6.STRING.TEXT
-msgid  "Pv"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.7.STRING.TEXT
-msgid  "The present value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.8.STRING.TEXT
-msgid  "Start period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.9.STRING.TEXT
-msgid  "The start period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.10.STRING.TEXT
-msgid  "End period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.11.STRING.TEXT
-msgid  "The end period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.12.STRING.TEXT
-msgid  "Type"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.13.STRING.TEXT
-msgid  "The type of maturity"
-msgstr ""
+msgstr "מחזירה את סה\"כ תשלומי ריבית ששולמו בתקופה נתונה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.6.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.7.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.8.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.9.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.10.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.11.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.12.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.13.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.15.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את המחיר ל 100 יחידות ערך נקוב של אג\"ח שמשלמת ריבית תקופתית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.6.STRING.TEXT
-msgid  "Discount"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.7.STRING.TEXT
-msgid  "The discount"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.8.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.9.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את המחיר ל 100 יחידות ערך נקוב של אג\"ח בניכיון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.1.STRING.TEXT
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.6.STRING.TEXT
-msgid  "Issue"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.7.STRING.TEXT
-msgid  "The issue date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.9.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.10.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.11.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.12.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.13.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את המחיר ל 100 יחידות ערך נקוב של אג\"ח שמשלמת ריבית רק בפדיון הסופי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.1.STRING.TEXT
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.6.STRING.TEXT
-msgid  "Coupon"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.7.STRING.TEXT
-msgid  "The coupon rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.8.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.9.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.10.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.11.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.12.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.13.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את המשך המקאליי המותאמת של אג‏\"ח עם ערך נקוב משוער של 100 יחידות מטבע"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
 msgid  "Returns the annual nominal interest rate"
-msgstr ""
+msgstr "מחזירה את שיעור הריבית הבסיסית שנתית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
 msgid  "Effective rate"
-msgstr ""
+msgstr "שיעור הריבית בפועל"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
 msgid  "The effective interest rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.4.STRING.TEXT
-msgid  "Npery"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.5.STRING.TEXT
-msgid  "The periods"
-msgstr ""
+msgstr "שיעור הריבית האפקטיבית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "מסבת מחיר נקוב עשרונית למחיר נקוב בשבר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
 msgid  "Decimal dollar"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.3.STRING.TEXT
-msgid  "The decimal number"
-msgstr ""
+msgstr "דולרים עשרוניים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
 msgid  "Fraction"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.5.STRING.TEXT
-msgid  "The divisor"
-msgstr ""
+msgstr "שבר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "מסבה מחיר נקוב בשבר למחיר נקוב עשרונית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
 msgid  "Fractional dollar"
-msgstr ""
+msgstr "שבר דולר"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
 msgid  "The number as a fraction"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.4.STRING.TEXT
-msgid  "Fraction"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.5.STRING.TEXT
-msgid  "The divisor"
-msgstr ""
+msgstr "המספר כשבר רגיל"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
 msgid  "Returns the yield on a security that pays periodic interest"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.6.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.7.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.8.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.9.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.10.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.11.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.12.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.13.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.15.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את התשואה של אג‏\"ח שמשלמת ריבית תקופתית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
 msgid  "Returns the annual yield for a discounted security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.6.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.7.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.8.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.9.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את התשואה השנתית של אג\"ח בניכיון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
 msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.6.STRING.TEXT
-msgid  "Issue"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.7.STRING.TEXT
-msgid  "The issue date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.9.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.10.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.11.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.12.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.13.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את התשואה השנתית של אג\"ח שמשלמת ריבית רק בפדיון הסופי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
 msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.6.STRING.TEXT
-msgid  "Discount"
-msgstr ""
+msgstr "מחזירה את תשואת האג\"ח השווה לתשואת מק\"מ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
 msgid  "The discount rate"
-msgstr ""
+msgstr "שיעור הניכיון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.1.STRING.TEXT
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.6.STRING.TEXT
-msgid  "Discount"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.7.STRING.TEXT
-msgid  "The discount rate"
-msgstr ""
+msgstr "מחזירה את המחיר של 100 יחידות נקובות של מק\"מ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
 msgid  "Returns the yield for a treasury bill"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.6.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.7.STRING.TEXT
-msgid  "The price"
-msgstr ""
+msgstr "מחזירה את התשואה של מק\"מ"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.6.STRING.TEXT
-msgid  "Issue"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.7.STRING.TEXT
-msgid  "The issue date"
-msgstr ""
+msgstr "מחזירה את המחיר ל $100 ערך נקוב של אג‏\"ח בעלת תקופה ראשונה אי זוגית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.8.STRING.TEXT
 msgid  "First coupon"
-msgstr ""
+msgstr "הקופון הראשון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.9.STRING.TEXT
 msgid  "The first coupon date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.10.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.11.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.12.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.13.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.14.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.15.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.16.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.17.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.18.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.19.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "תאריך תשלום הריבית הראשון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
 msgid  "Returns the yield of a security with an odd first period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.6.STRING.TEXT
-msgid  "Issue"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.7.STRING.TEXT
-msgid  "The issue date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.8.STRING.TEXT
-msgid  "First coupon"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.9.STRING.TEXT
-msgid  "The first coupon date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.10.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.11.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.12.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.13.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.14.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.15.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.16.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.17.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.18.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.19.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את התשואה של אג\"ח בעלת תקופה ראשונה אי זוגית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
+msgstr "מחזירה את המחיר ל $100 ערך נקוב של אג\"ח בעלת תקופה אחרונה אי זוגית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
 msgid  "Last interest"
-msgstr ""
+msgstr "ריבית אחרונה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
 msgid  "The last interest date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.9.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.10.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.11.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.12.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.13.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.14.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.15.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.16.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.17.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "תאריך תשלום הריבית האחרון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
 msgid  "Returns the yield of a security with an odd last period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.6.STRING.TEXT
-msgid  "Last interest"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.7.STRING.TEXT
-msgid  "The last interest date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.9.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.10.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.11.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.12.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.13.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.14.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.15.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.16.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.17.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את התשואה של אג\"ח בעלת תקופה אחרונה אי זוגית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "מחזירה את התשואה הפנימית של לו\"ז תשלומים בלתי תקופתי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
 msgid  "Values"
-msgstr ""
+msgstr "ערכים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.3.STRING.TEXT
 msgid  "The values"
-msgstr ""
+msgstr "הערכים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.4.STRING.TEXT
 msgid  "Dates"
-msgstr ""
+msgstr "תאריכים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.5.STRING.TEXT
 msgid  "The dates"
-msgstr ""
+msgstr "התאריכים"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
 msgid  "Guess"
-msgstr ""
+msgstr "ניחוש"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
 msgid  "The guess"
-msgstr ""
+msgstr "הניחוש"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
 msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.2.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.3.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.4.STRING.TEXT
-msgid  "Values"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.5.STRING.TEXT
-msgid  "The values"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.6.STRING.TEXT
-msgid  "Dates"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.7.STRING.TEXT
-msgid  "The dates"
-msgstr ""
+msgstr "מחזירה את הערך הנוכחי נטו של לו\"ז תשלומים בלתי תקופתי"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
 msgid  "Returns the interest rate for a fully invested security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.6.STRING.TEXT
-msgid  "Investment"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.7.STRING.TEXT
-msgid  "The investment"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.8.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.9.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את שיעור הריבית של אג\"ח"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
 msgid  "Returns the first coupon date after the settlement date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את תאריך הקופון הראשון אחרי תאריך הרכישה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את מספר הימים בתקופת הקופון הכוללת את תאריך הרכישה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את מספר הימים מתאריך הרכישה לתאריך הקופון הבא"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את מספר הימים מתחילת תקופת הקופון עד לתאריך הרכישה"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
 msgid  "Returns the last coupon date preceding the settlement date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את תאריך הקופון האחרון לפני תאריך הרכישה.‏"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "מחזירה את מספר הקופונים שיושלמו מתאריך הקניה לתאריך הפדיון"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "מחזירה את הערך העתידי של הקרן המקורי אחרי חישוב סידרה של תשלומי ריבית דריבית"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
 msgid  "Principal"
-msgstr ""
+msgstr "קרן"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
 msgid  "The principal"
-msgstr ""
+msgstr "הקרן"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
 msgid  "Schedule"
-msgstr ""
+msgstr "לו\"ז"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
 msgid  "The schedule"
-msgstr ""
+msgstr "לוח התשלומים"

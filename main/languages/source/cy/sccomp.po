@@ -33,44 +33,44 @@ msgstr ""
 
 #: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr ""
+msgstr "Datrysydd Llinellol %PRODUCTNAME"
 
 #: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
-msgstr ""
+msgstr "Tybio fod yr amrywiolion yn annegyddol"
 
 #: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr ""
+msgstr "Tybio amrywiolion fel cyfanrif."
 
 #: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr ""
+msgstr "Datrys terfyn amser (eiliad)"
 
 #: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr ""
+msgstr "Lefel epsilon (0-3)"
 
 #: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
-msgstr ""
+msgstr "Cyfyngu ar derfyn rannu a rhwymo"
 
 #: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr ""
+msgstr "Nid yw'r model yn llinellol"
 
 #: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr ""
+msgstr "Mae'r lefel epsilon yn annilys."
 
 #: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr ""
+msgstr "Mae'r model yn annichonadwy. Gwirio cyflyrau cyfyngu."
 
 #: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr ""
+msgstr "Mae'r model yn ddiderfyn."
 
 #: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
-msgstr ""
+msgstr "Wedi cyrraedd terfyn amser."

@@ -87,14 +87,6 @@ msgstr ""
 msgid  "Group Footer"
 msgstr ""
 
-#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Present"
-msgstr ""
-
-#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Not present"
-msgstr ""
-
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
 msgid  "Group On"
 msgstr ""
@@ -279,24 +271,8 @@ msgstr ""
 msgid  "Return"
 msgstr ""
 
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
-msgid  "Page"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
-msgid  "Background"
-msgstr ""
-
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
 msgid  "Section Setup"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
-msgid  "Background"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
@@ -319,16 +295,8 @@ msgstr ""
 msgid  "Asian Layout"
 msgstr ""
 
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
-msgstr ""
-
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
 msgid  "Alignment"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
-msgid  "Return"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
@@ -339,24 +307,12 @@ msgstr ""
 msgid  "Line"
 msgstr ""
 
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-msgid  "Line"
-msgstr ""
-
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
 msgid  "Line Styles"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
 msgid  "Arrow Styles"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
-msgid  "Line"
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
@@ -507,21 +463,17 @@ msgstr ""
 msgid  "Include Time"
 msgstr ""
 
-#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
-msgid  "Format"
-msgstr ""
-
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
 msgid  "~Help"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
 msgid  "General"
-msgstr ""
+msgstr "Jumla"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
 msgid  "Data"
-msgstr ""
+msgstr "Data"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
 msgid  "No"
@@ -557,10 +509,6 @@ msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
 msgid  "Keep Together"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
-msgid  "No"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
@@ -627,10 +575,6 @@ msgstr ""
 msgid  "Per Column"
 msgstr ""
 
-#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
 msgid  "Section"
 msgstr ""
@@ -681,11 +625,11 @@ msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
 msgid  "Width"
-msgstr ""
+msgstr "Upana"
 
 #: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
 msgid  "Height"
-msgstr ""
+msgstr "Height"
 
 #: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
 msgid  "Initial value"
@@ -705,17 +649,13 @@ msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
 msgid  "Font"
-msgstr ""
+msgstr "Fonti"
 
 #: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
 msgid  "Background color"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
-msgid  "Background Transparent"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
 msgid  "Background Transparent"
 msgstr ""
 
@@ -747,10 +687,6 @@ msgstr ""
 msgid  "Field or Formula"
 msgstr ""
 
-#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
-msgid  "Function"
-msgstr ""
-
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
 msgid  "Counter"
 msgstr ""
@@ -761,7 +697,7 @@ msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
 msgid  "Link master fields"
-msgstr ""
+msgstr "Unga nyuga kuu"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
 msgid  "Link slave fields"
@@ -827,10 +763,6 @@ msgstr ""
 msgid  "Center"
 msgstr ""
 
-#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
-msgid  "Counter"
-msgstr ""
-
 #: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
 msgid  "Accumulation"
 msgstr ""
@@ -845,23 +777,23 @@ msgstr ""
 
 #: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 msgid  "Properties: "
-msgstr ""
+msgstr "Sifa: "
 
 #: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 msgid  "No Control marked"
-msgstr ""
+msgstr "Hakuna Kidhibiti iliowekwa alama"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
 msgid  "Multiselection"
-msgstr ""
+msgstr "Multiselection"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
 msgid  "Image Control"
-msgstr ""
+msgstr "Image Control"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
 msgid  "Label field"
-msgstr ""
+msgstr "Label Field"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
 msgid  "Line"
@@ -869,7 +801,7 @@ msgstr ""
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
 msgid  "Formatted Field"
-msgstr ""
+msgstr "Uga Uliofomatiwa"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
 msgid  "Shape"
@@ -969,7 +901,7 @@ msgstr ""
 
 #: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
 msgid  "~Report name"
-msgstr ""
+msgstr "Jina la repoti"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
 msgid  "Delete Group"
@@ -1005,10 +937,6 @@ msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
 msgid  "Insert Group"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
-msgid  "Delete Group"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
@@ -1067,10 +995,6 @@ msgstr ""
 msgid  "~Fit to greatest height"
 msgstr ""
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
-msgid  "Section"
-msgstr ""
-
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
 msgid  "Shrink"
 msgstr ""
@@ -1097,7 +1021,7 @@ msgstr ""
 
 #: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
 msgid  "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base Report"
@@ -1121,14 +1045,10 @@ msgstr ""
 
 #: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
 msgid  "Insert graphics"
-msgstr ""
+msgstr "Chomeka michoro"
 
 #: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
 msgid  "Delete"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
-msgid  "Function"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
@@ -1261,7 +1181,7 @@ msgstr ""
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Repoti"
 
 #: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
 msgid  "Shape"

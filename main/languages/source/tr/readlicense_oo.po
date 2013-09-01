@@ -33,7 +33,7 @@ msgstr ""
 
 #: readme.xrm#WELCOME
 msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
-msgstr ""
+msgstr "${PRODUCTNAME} ${PRODUCTVERSION} OkuBeni"
 
 #: readme.xrm#LATESTUPDATES
 msgid  "For latest updates to this readme file, see <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: readme.xrm#A6
 msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
-msgstr ""
+msgstr "Bu dosya, program hakkında önemli bilgiler içermektedir. Lütfen bu bilgileri çalışmaya başlamadan önce dikkatle okuyunuz."
 
 #: readme.xrm#A7
 msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href=\"http://openoffice.apache.org\">http://openoffice.apache.org</a>"
@@ -49,31 +49,28 @@ msgstr ""
 
 #: readme.xrm#A9
 msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
-msgstr ""
+msgstr "Aynı zamanda aşağıda bulunan ve OpenOffice.org projesine dahil olmaya yönelik bölümleri de okuyabilirsiniz."
 
 #: readme.xrm#A10
 msgid  "Is ${PRODUCTNAME} really free for any user? "
-msgstr ""
+msgstr "${PRODUCTNAME} kullanıcılar için gerçekten özgür mü?"
 
 #: readme.xrm#A11
 msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
-msgstr ""
+msgstr "${PRODUCTNAME}'u herkes özgür olarak kullanabilir. ${PRODUCTNAME}'u istediğiniz kadar kopyalabilir, birden fazla bilgisayara kurabilirsiniz ve istediğiniz amaçla kullanabilirsiniz (ticari, devlet kurumları, belediyeker ve eğitim için). Daha fazla ayrıntı isteyenler ${PRODUCTNAME} ile beraber lisans metninide verebilir ya da "
 
 #: readme.xrm#A12
 msgid  "Why is ${PRODUCTNAME} free for any user?"
-msgstr ""
+msgstr "${PRODUCTNAME} kullanıcıyı niçin özgür bırakır?"
 
 #: readme.xrm#A13
+#, fuzzy
 msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
-msgstr ""
-
-#: readme.xrm#A13B
-msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> for details on contributing time and <a href=\"http://www.apache.org/foundation/contributing.html\">http://www.apache.org/foundation/contributing.html</a> for details on donations. Everyone has a contribution to make."
 msgstr ""
 
 #: readme.xrm#RR3FGF42R
 msgid  "Notes on Installation"
-msgstr ""
+msgstr "Kurulum Notları"
 
 #: readme.xrm#JAVANEEDED
 msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href=\"http://java.com\">http://java.com</a>."
@@ -81,219 +78,181 @@ msgstr ""
 
 #: readme.xrm#SDFSDFGF42R
 msgid  "System Requirements"
-msgstr ""
+msgstr "Sistem Gereksinimleri:"
 
 #: readme.xrm#MACXIOSX
 msgid  "MacOSX 10.4 (Tiger) or higher"
-msgstr ""
+msgstr "MacOSX 10.4 (Tiger) ya da üstü"
 
 #: readme.xrm#MACXICPU
 msgid  "Intel processor"
-msgstr ""
+msgstr "Intel işlemci"
 
 #: readme.xrm#MACXIRAM
 msgid  "512 MB RAM"
-msgstr ""
+msgstr "512 MB BELLEK"
 
 #: readme.xrm#MACXHARDDIKSSPACE
+#, fuzzy
 msgid  "Up to 1.5 GB available hard disk space"
 msgstr ""
 
 #: readme.xrm#MACXIVIDEO
 msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
-msgstr ""
+msgstr "1024 x 768 grafik aygıtla 256 renk (yüksek çözünürlük önerilir)"
 
 #: readme.xrm#S2S3SDF2
+#, fuzzy
 msgid  "Microsoft Windows XP, Vista, Windows 7 or Windows 8"
-msgstr ""
+msgstr "Microsoft Windows 2000 (Service Pack 4 yada üstü), XP ya da Vista"
 
 #: readme.xrm#UTZU6
+#, fuzzy
 msgid  "Pentium III or later processor"
-msgstr ""
+msgstr "Pentium uyumlu PC (Pentium III ya da Athlon önerilir)"
 
 #: readme.xrm#GHUJ67
+#, fuzzy
 msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#JZJTZU6
-msgid  "Up to 1.5 GB available hard disk space"
-msgstr ""
+msgstr "256 MB BELLEK (512 MB BELLEK önerilir)"
 
 #: readme.xrm#JTZU56
 msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
-msgstr ""
+msgstr "1024x768 çözünürlük (yüksek çözünürlük önerilir), en az 256 renk"
 
 #: readme.xrm#EDSSC3D
+#, fuzzy
 msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr ""
+msgstr "Not: Lütfen kurulum için yönetici haklarınınızın olduğunda emin olun."
 
 #: readme.xrm#MSOREG1
 msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
-msgstr ""
+msgstr "Microsoft Office dosya biçimleri için  ${PRODUCTNAME}'u varsayılan program olarak kayıt ettirmek istiyorsanız, kurulum programında aşağıdaki komutları kullanabilirsiniz:"
 
 #: readme.xrm#MSOREG2
 msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr ""
+msgstr "/msoreg=1 parametresi Microsoft Office dosya biçimleri için ${PRODUCTNAME}'un varsayılan program olması için zorlayıcı olacaktır."
 
 #: readme.xrm#MSOREG3
 msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr ""
+msgstr "/msoreg=0 parametresi Microsoft Office dosya biçimleri için ${PRODUCTNAME}'un varsayılan program olması için baskıcı olacaktır."
 
 #: readme.xrm#DLLA1
 msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvcr100.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5555\">http://www.microsoft.com/en-us/download/details.aspx?id=5555</a>"
 msgstr ""
 
-#: readme.xrm#ADMINNEEDED
-msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr ""
-
 #: readme.xrm#S2335
 msgid  "Solaris 10 operating system (SPARC platform) or higher"
-msgstr ""
-
-#: readme.xrm#S253
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
+msgstr "Solaris 10 işletim sistemi (SPARC platformu) ya da üstü"
 
 #: readme.xrm#S23SEG
+#, fuzzy
 msgid  "Up to 1.55 GB available hard disk space"
 msgstr ""
 
 #: readme.xrm#S2S43GFE
+#, fuzzy
 msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
+msgstr "1024x768 çözünürlükle X Sunucu (yüksek çözünürlük önerilir), en az 256 renk"
 
 #: readme.xrm#N4234RW
+#, fuzzy
 msgid  "Window Manager"
-msgstr ""
+msgstr "Pencere Yöneticisi"
 
 #: readme.xrm#WD2DFF2
+#, fuzzy
 msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "Gnome 2.6 ya da üstü, beraberinde gail 1.8.6 ve at-spi 1.7 paketleri, yardımcı teknoloji araçları desteği için gereklidir (AT araçları)"
 
 #: readme.xrm#S23H
 msgid  "Solaris 10 operating system (x86 platform) or higher"
-msgstr ""
-
-#: readme.xrm#S24F
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#FGHEG
-msgid  "Up to 1.55 GB available hard disk space"
-msgstr ""
-
-#: readme.xrm#FGHFGH
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
-
-#: readme.xrm#MGJFG
-msgid  "Window Manager"
-msgstr ""
-
-#: readme.xrm#WD2DFF1
-msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "Solaris 10 işletim sistemi (x86 platformu) ya da üstü"
 
 #: readme.xrm#S2WE35
 msgid  "Linux Kernel version 2.6.18 or higher"
-msgstr ""
+msgstr "2.4 ya da üzeri Linux Çekirde sürümü"
 
 #: readme.xrm#S253WE
 msgid  "glibc2 version 2.5 or higher"
-msgstr ""
+msgstr "glibc2 sürüm 2.3.2 ya da üstü"
 
 #: readme.xrm#S256WE
 msgid  "gtk version 2.10.4 or higher"
-msgstr ""
+msgstr "gtk sürüm 2.2.0 ya da üstü"
 
 #: readme.xrm#S2ETFSEG
+#, fuzzy
 msgid  "Pentium III or later processor"
-msgstr ""
-
-#: readme.xrm#S2SSDFE
-msgid  "256 MB RAM (512 MB RAM recommended)"
-msgstr ""
-
-#: readme.xrm#N42DFGF
-msgid  "Up to 1.55 GB available hard disk space"
-msgstr ""
-
-#: readme.xrm#GHJHHR
-msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr ""
-
-#: readme.xrm#FHRTZ5
-msgid  "Window Manager"
-msgstr ""
+msgstr "Pentium uyumlu PC (Pentium III ya da Athlon önerilir)"
 
 #: readme.xrm#WD2DFF
 msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
-msgstr ""
+msgstr "Gnome 2.6 ya da üstü, beraberinde gail 1.8.6 ve at-spi 1.7 paketleri, yardımcı teknoloji araçları desteği için gereklidir (AT araçları)"
 
 #: readme.xrm#LINUXI3A
 msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
-msgstr ""
+msgstr "Linux dağıtımlarının geniş bir çeşitliliği vardır ve hatta aynı dağıtım içinde birden çok kurulum seçeneği sunulmaktadır (KDE, Gnome vb). Bazı dağıtımlar ${PRODUCTNAME}'un 'yerel' sürümüne farklı özellikler ekleyerek kendilerine has ${PRODUCTNAME} sürümlerini dağıtabilmektedirler. Bazen ${PRODUCTNAME}'un özelleştirilmiş bu sürümünlerini yüklemek isteyebilirsiniz. Böyle bir durumda özelleştirilmiş sürümü yüklemek için 'yerel' sürümü kaldırmak kullanım açısından daha güvenlidir. Bununla ilgili daha ayrıntılı bilgilere dağıtıcının belgelerinde bulabilirsiniz."
 
 #: readme.xrm#LINUXI4A
 msgid  "It is recommended that you always backup your system before you remove or install software."
-msgstr ""
+msgstr "Sisteminizde kaldırma ve yükleme işlemi yapmadan önce yedekleme yapmanızı öneririz."
 
 #: readme.xrm#PRECAUTIONS
 msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
-msgstr ""
+msgstr "Lütfen sisteminizin geçici dizininde yeterli boş alan oluduğundan ve bu alana okuma-yazma-çalıştırma hakkınızın olduğundan emin olunuz.  Kurulumu başlatmadan önce, çalışan tüm programlarınızı kapatınız."
 
 #: readme.xrm#NASO01
 msgid  "Problems During Program Startup"
-msgstr ""
+msgstr "Program Başlatma Sırasında Problemler"
 
 #: readme.xrm#NASO02
 msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice shell script found in the \"<tt>[office folder]/program</tt>\" directory."
-msgstr ""
+msgstr "Eğer ${PRODUCTNAME}'u başlatma sorunları yaşaryorsanız (Özellikle Gnome kullanıyorsanız), lütfen 'unset' SESSION_MANAGER ortam değişkenleriyle beraber ${PRODUCTNAME}'u komut satırından başlatmayı deneyiniz. Eğer bu şekilde çalıştırma başarılı olursa \"[office folder]/program\" dizini altında bulunan soffice başlatma betiğine \"unset SESSION_MANAGER\" satırını ekleyiniz."
 
 #: readme.xrm#ABCDEF
 msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
-msgstr ""
+msgstr "${PRODUCTNAME} başlatmada yaşanan zorluklar (ör. uygulamanın takılması) gibi ekran görüntülemede grafik kart sürücüsünden kaynaklanan problemler. Eğer bu problemler oluşursa, ekran kartı sürücünüzü güncelleyin ya da isletim sisteminizce sağlanan ekran kartı sürücüsünü kullanın. 3B nesnelerin görüntülenmesinde yaşanan zorluklar \"Araçlar - Seçenekler - ${PRODUCTNAME} - Görünüm - 3B görünüm' seçeneğindeki \"OpenGL Kullan\" seçeneğinin işaretini kaldırarak çözülebilir."
 
 #: readme.xrm#NASO
 msgid  "ALPS/Synaptics notebook touchpads in Windows"
-msgstr ""
+msgstr "Windows altında ALPS/Synaptics dizüstü touchpad"
 
 #: readme.xrm#NASO2
 msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
-msgstr ""
+msgstr "Windows'da bir sürücü sorunu yüzünden ${PRODUCTNAME} belgelerinde kaydırma özelliğini kullanamadığınızda, ALPS/Synaptics touchpad ile kaydırma özelliğini kullanabilirsiniz."
 
 #: readme.xrm#NASO6
 msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+msgstr "Touchpad kaydırmayı etkinleştirmek için \"C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini\" yapılandırma dosyasına takip eden satırı ekleyin ve bilgisayarınızı yeniden başlatın:"
 
 #: readme.xrm#NASO8
 msgid  "The location of the configuration file might vary on different versions of Windows."
-msgstr ""
+msgstr "Not: Yapılandırma dosyasının yeri Windows'un farklı sürümlerinde değişebilir."
 
 #: readme.xrm#SDFSD32ASRC
 msgid  "Mozilla Address Book Driver"
-msgstr ""
+msgstr "Mozilla Adres Defteri Sürücüsü"
 
 #: readme.xrm#SDCC32ASRC
 msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the installation CD."
-msgstr ""
+msgstr "Mozilla adres defteri sürücüsü SUNWzlib paketini gerektirir. Bu paket, minimum Solaris işletim sistemi kurulumunun bir parçası değildir. Eğer Mozilla adres defterine girmeniz gerekiyorsa, bu paketi kurulum CD'sinden \"pkgadd\" komutu kullanarak yükleyebilirsiniz."
 
 #: readme.xrm#AWE1
 msgid  "Shortcut Keys"
-msgstr ""
+msgstr "Kısayol tuşları"
 
 #: readme.xrm#W32E1
 msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
-msgstr ""
+msgstr "${PRODUCTNAME} kısayollarının (kısayol birleşimleri) bir kısmı bazı işletimlerinde kullanılamayabilir. Eğer ${PRODUCTNAME} içinde bazı kısayol birleşimleri çalışmıyorsa, işletiminin kullandığı kısayolları kontrol edip çalışma olup olmadığını kontrol ediniz. Eğer böyle bir durum var ise çakışan kısayol atamalarını değiştirebilirsiniz. Bu konu da daha fazla bilgi almak için ${PRODUCTNAME} Yardım'a ya da işletim sisteminizin yardım belgelerine göz atınız. "
 
 #: readme.xrm#MACKEYS1
 msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
-msgstr ""
+msgstr "${PRODUCTNAME} yardım uygulamasındaki kısayollar sadece PC klavyesiyle kullanılabilir."
 
 #: readme.xrm#GFH6W
 msgid  "File Locking"
-msgstr ""
+msgstr "Dosya Kilitleme"
 
 #: readme.xrm#PJI76W
 msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
@@ -301,30 +260,27 @@ msgstr ""
 
 #: readme.xrm#PJI76WSDF
 msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
-msgstr ""
+msgstr "Uyarı: Dosya kilitleme özelliği Solaris 2.5.1 ve 2.7 sürümleriyle Linux NFS 2.0'da kullandığında sorunlara yol açabilir. Eğer böyle bir sorunla karşılaşıyorsanız dosya kilitleme parametresini kullanmanızı tavsiye ederiz. Diğer taraftan bir Linux bilgisayardan NFS bağlantısıyla bir dosya açmak istediğinizde dosya askıya alınacaktır."
 
 #: readme.xrm#GFH6W1
 msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
-msgstr ""
+msgstr "${PRODUCTNAME} 'dan E-posta eki olarak gönderilen belgelerin gönderimi sırasında sorunlar oluştu."
 
 #: readme.xrm#PJI76W1
 msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file \"Mapi\" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for \"mapi dll\"."
-msgstr ""
+msgstr "Bir dökümanı \"Dosya - Gönder - E-posta olarak\" veya \"PDF eklenti olarak\" menüsü ile gönderirken program çökmeleri ya da kilitlenmeleri olabilir. Bu durum, \"Mapi\" Microsoft sistem dosyasının bazı sürümlerinde meydana gelmektedir. Daha geniş bilgi için http://www.microsoft.com adresinde bulabileceğiniz Microsoft Knowledge Base'de \"mapi dll\" araması yapılabilir."
 
 #: readme.xrm#AW22
 msgid  "Important Accessibility Notes"
-msgstr ""
+msgstr "Önemli Erişebilirlik Notları"
 
 #: readme.xrm#ACCESS7
 msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a>"
 msgstr ""
 
 #: readme.xrm#SUPPORT
+#, fuzzy
 msgid  "User Support"
-msgstr ""
-
-#: readme.xrm#SUPPORT1
-msgid  "The main support page <a href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href=\"http://forum.openoffice.org\">http://forum.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>. Alternatively, you can send in your questions to <a href=\"mailto:users@openoffice.apache.org\">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>."
 msgstr ""
 
 #: readme.xrm#FAQ
@@ -332,77 +288,49 @@ msgid  "Also check the FAQ section at <a href=\"http://wiki.openoffice.org/wiki/
 msgstr ""
 
 #: readme.xrm#REPORTBUGS
+#, fuzzy
 msgid  "Reporting Bugs &amp; Issues"
-msgstr ""
-
-#: readme.xrm#REPORTBUGS1
-msgid  "The ${PRODUCTNAME} Web site hosts <a href=\"https://issues.apache.org/ooo/\">BugZilla</a>, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
-msgstr ""
+msgstr "${PRODUCTNAME} web sayfasında hataları raporlamak, izlemek ve çözmek için kullanılan IssueZilla adında bir yazılımımız bulunmaktadır. Tüm kullanıcılarımızın gördükleri hataları rapor etmelerini bekliyoruz."
 
 #: readme.xrm#GETTINGINVOLVED1
 msgid  "Getting Involved"
-msgstr ""
+msgstr "Projeye Dahil Olmak"
 
 #: readme.xrm#GETTINGINVOLVED2
 msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
-msgstr ""
+msgstr "${PRODUCTNAME} Topluluğu, bu açık kaynak kodlu ve önemli projenin geliştirilmesindeki aktif katılımınızdan çok yararlanacaktır."
 
 #: readme.xrm#GETTINGIMVOLVED3
+#, fuzzy
 msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a>"
-msgstr ""
+msgstr "Bir kullanıcı olarak siz, halihazırda bu programın geliştirilme süreci içinde çok değerlisiniz ve biz sizi, bu toplulukta uzun süreli bir katılımcı olarak, daha etkin bir rol oynamanız için cesaretlendirmek isteriz. Lütfen bu topluluğa katılın ve kullanıcı sayfasına bir göz atın:"
 
 #: readme.xrm#HOWTOSTART
+#, fuzzy
 msgid  "How to Start"
-msgstr ""
-
-#: readme.xrm#HOWTOSTART1
-msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in."
-msgstr ""
+msgstr "${PRODUCTNAME} kaynak kodu Ekim 2000 yılında açılmış ve o zamandan beri e-posta arşivlerinde ve diğer belgeleme projelerinde birçok konu açılmıştır. Bunlardan yararlanabilirsiniz. Eğer sorununuzu bu belgelerden çözemezseniz, e-posta listelerimize mesaj gönderebilirsiniz."
 
 #: readme.xrm#SUBSCRIBE
+#, fuzzy
 msgid  "Subscribe"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBE1
-msgid  "Here are a few of the ${PRODUCTNAME} mailing lists to which you can subscribe at <a href=\"http://openoffice.apache.org/mailing-lists.html\">http://openoffice.apache.org/mailing-lists.html</a>"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST1
-msgid  "News: announce@openoffice.apache.org *recommended to all users* (light traffic)"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST2
-msgid  "Main user forum: users@openoffice.apache.org *easy way to lurk on discussions* (heavy traffic)"
-msgstr ""
-
-#: readme.xrm#SUBSCRIBELIST4
-msgid  "General project development and discussion list: dev@openoffice.apache.org (heavy traffic)"
-msgstr ""
-
-#: readme.xrm#MISSING_ID
-msgid  "Joining the Project"
-msgstr ""
+msgstr "Genel kod tartışmaları: dev@openoffice.org (orta/yoğun)"
 
 #: readme.xrm#JOINING
+#, fuzzy
 msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
 msgstr ""
 
-#: readme.xrm#JOINING1
-msgid  "At <a href=\"http://openoffice.apache.org/get-involved.html\">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, you can help with Documentation or Marketing, for example. The ${PRODUCTNAME} marketing is applying both guerrilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
-msgstr ""
-
-#: readme.xrm#JOINING3
-msgid  "You can help by joining the marketing mailing list marketing@openoffice.apache.org where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
-msgstr ""
-
 #: readme.xrm#CREDITS
+#, fuzzy
 msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
-msgstr ""
+msgstr "Biz, yeni ${PRODUCTNAME} ${PRODUCTVERSION}'la ile çalışmaktan hoşlanacağınızı ümit ediyoruz ve bize çevirimiçi olarak katılabilirsiniz."
 
 #: readme.xrm#CREDITS2
+#, fuzzy
 msgid  "The Apache OpenOffice Community"
-msgstr ""
+msgstr "OpenOffice.org Topluluğu"
 
 #: readme.xrm#SDFFD23R3CEFWEFEW
+#, fuzzy
 msgid  "Used / Modified Source Code"
-msgstr ""
+msgstr "Kullanılmış /Değiştirilmiş Kaynak Kodu"

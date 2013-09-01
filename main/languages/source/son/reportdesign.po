@@ -56,8 +56,9 @@ msgid  "~Delete"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Properties"
-msgstr ""
+msgstr " Moobandawey"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
 msgid  "Sorting"
@@ -76,23 +77,17 @@ msgid  "Group Header"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Present"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Not present"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
 msgid  "Group Footer"
-msgstr ""
-
-#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Present"
-msgstr ""
-
-#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Not present"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
@@ -112,8 +107,9 @@ msgid  "Keep Together"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Kala"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
 msgid  "Whole Group"
@@ -124,8 +120,9 @@ msgid  "With First Detail"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Faaba"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
 msgid  "Field/Expression"
@@ -140,20 +137,23 @@ msgid  "Prefix Characters"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
+#, fuzzy
 msgid  "Year"
-msgstr ""
+msgstr " Jiiri"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
 msgid  "Quarter"
 msgstr ""
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
+#, fuzzy
 msgid  "Month"
-msgstr ""
+msgstr " Handu"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
+#, fuzzy
 msgid  "Week"
-msgstr ""
+msgstr " Hebu"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
 msgid  "Day"
@@ -204,8 +204,9 @@ msgid  "Page Numbers"
 msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "Kaddasu fasalyan"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
 msgid  "Page N"
@@ -216,8 +217,9 @@ msgid  "Page N of M"
 msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr " Kayandi doo"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
 msgid  "Top of Page (Header)"
@@ -228,32 +230,37 @@ msgid  "Bottom of Page (Footer)"
 msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr " Dumi kul"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
 msgid  "Alignment:"
 msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr " Wowa"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Center"
-msgstr ""
+msgstr " Game"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr " Guma"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
 msgid  "Show Number on First Page"
 msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "Faaba"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
 msgid  "\"Page \" & #PAGENUMBER#"
@@ -268,35 +275,22 @@ msgid  "Page Setup"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Page"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Background"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Return"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
-msgid  "Page"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
-msgid  "Background"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
 msgid  "Section Setup"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
-msgid  "Background"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
@@ -304,42 +298,34 @@ msgid  "Character Settings"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr " Sigirawey"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr " Kayandi doo"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
 msgid  "Asian Layout"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
 msgid  "Alignment"
 msgstr ""
 
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr ""
-
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
+#, fuzzy
 msgid  "Character"
-msgstr ""
+msgstr "Harfu"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
-msgid  "Line"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Line"
 msgstr ""
 
@@ -349,14 +335,6 @@ msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
 msgid  "Arrow Styles"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
-msgid  "Line"
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
@@ -388,8 +366,9 @@ msgid  "New Function"
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr " Moobandawey"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Field Value Is"
@@ -444,8 +423,9 @@ msgid  "Conditional Formatting"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "Faaba"
 
 #: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
 msgid  "Condition $number$"
@@ -480,12 +460,14 @@ msgid  "Remove sorting"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr " Daŋ"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Faaba"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
@@ -500,44 +482,47 @@ msgid  "Include Date"
 msgstr ""
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "Kaddasu fasalyan"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
 msgid  "Include Time"
 msgstr ""
 
-#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
-msgid  "Format"
-msgstr ""
-
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "Faaba"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr " Dumi kul"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "Tiira alhabar / Bayhayey"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Kala"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr " Ayyo"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
 msgid  "Force New Page"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "Baa affoo"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
 msgid  "Before Section"
@@ -557,10 +542,6 @@ msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
 msgid  "Keep Together"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
-msgid  "No"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
@@ -627,17 +608,14 @@ msgstr ""
 msgid  "Per Column"
 msgstr ""
 
-#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
-msgid  "None"
-msgstr ""
-
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
 msgid  "Section"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "Boŋdirandi"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
 msgid  "Page header"
@@ -704,18 +682,17 @@ msgid  "Data field"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr " Sigirawey"
 
 #: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Background color"
-msgstr ""
+msgstr " Bandafaaroo noonaa"
 
 #: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
-msgid  "Background Transparent"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
+#, fuzzy
 msgid  "Background Transparent"
 msgstr ""
 
@@ -732,6 +709,7 @@ msgid  "Group: %1"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
+#, fuzzy
 msgid  "Function"
 msgstr ""
 
@@ -745,10 +723,6 @@ msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
 msgid  "Field or Formula"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
-msgid  "Function"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
@@ -827,10 +801,6 @@ msgstr ""
 msgid  "Center"
 msgstr ""
 
-#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
-msgid  "Counter"
-msgstr ""
-
 #: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
 msgid  "Accumulation"
 msgstr ""
@@ -844,8 +814,9 @@ msgid  "Maximum"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Properties: "
-msgstr ""
+msgstr " Moobandawey"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 msgid  "No Control marked"
@@ -880,16 +851,19 @@ msgid  "Report"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
+#, fuzzy
 msgid  "Section"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
+#, fuzzy
 msgid  "Function"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Group"
-msgstr ""
+msgstr " Kuray"
 
 #: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
 msgid  "Show ruler"
@@ -960,8 +934,9 @@ msgid  "Design"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr " Alhaaloo guna"
 
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 msgid  "Report #"
@@ -972,6 +947,7 @@ msgid  "~Report name"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Delete Group"
 msgstr ""
 
@@ -992,8 +968,9 @@ msgid  "Change Size"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
+#, fuzzy
 msgid  "Paste"
-msgstr ""
+msgstr "Bobu"
 
 #: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
 msgid  "Insert Control"
@@ -1005,10 +982,6 @@ msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
 msgid  "Insert Group"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
-msgid  "Delete Group"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
@@ -1067,10 +1040,6 @@ msgstr ""
 msgid  "~Fit to greatest height"
 msgstr ""
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
-msgid  "Section"
-msgstr ""
-
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
 msgid  "Shrink"
 msgstr ""
@@ -1088,8 +1057,9 @@ msgid  "Distribution..."
 msgstr ""
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr " Moobandawey"
 
 #: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
 msgid  "Add field:"
@@ -1124,12 +1094,9 @@ msgid  "Insert graphics"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
-msgid  "Function"
-msgstr ""
+msgstr "Tuusu"
 
 #: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
 msgid  "An error occurred while creating the report."
@@ -1204,8 +1171,9 @@ msgid  "Report Footer"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr " Daŋ"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"

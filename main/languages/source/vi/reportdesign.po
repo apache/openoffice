@@ -32,1241 +32,1435 @@ msgstr ""
 
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Sorting and Grouping"
-msgstr ""
+msgstr "Sắp xếp và Nhóm lại"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Groups"
-msgstr ""
+msgstr "Nhóm"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Group actions"
-msgstr ""
+msgstr "Nhóm hành động"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Move up"
-msgstr ""
+msgstr "Chuyển lên "
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Move down"
-msgstr ""
+msgstr "Chuyển xuống"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "~Xóa"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Properties"
-msgstr ""
+msgstr "Thuộc tính"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sorting"
-msgstr ""
+msgstr "Sắp xếp"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Ascending"
-msgstr ""
+msgstr "Tăng dần"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Descending"
-msgstr ""
+msgstr "Giảm dần"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Group Header"
-msgstr ""
+msgstr "Đầu nhóm"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Present"
-msgstr ""
+msgstr "Có"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Not present"
-msgstr ""
+msgstr "Không có"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Group Footer"
-msgstr ""
-
-#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Present"
-msgstr ""
-
-#: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.DEFAULT.STRINGLIST.ITEM
-msgid  "Not present"
-msgstr ""
+msgstr "Chân nhóm"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Group On"
-msgstr ""
+msgstr "Nhóm đã bật"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Each Value"
-msgstr ""
+msgstr "Mỗi giá trị"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Group Interval"
-msgstr ""
+msgstr "Khoảng nhóm"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Keep Together"
-msgstr ""
+msgstr "Giữ với nhau"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Không"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Whole Group"
-msgstr ""
+msgstr "Toàn nhóm"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "With First Detail"
-msgstr ""
+msgstr "Với chi tiết thứ nhất"
 
 #: ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Trợ giúp"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.STRING.TEXT
+#, fuzzy
 msgid  "Field/Expression"
-msgstr ""
+msgstr "Trường/Biểu thức"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_SORTING.STRING.TEXT
+#, fuzzy
 msgid  "Sort Order"
-msgstr ""
+msgstr "Thứ tự Sắp xếp"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.STRING.TEXT
+#, fuzzy
 msgid  "Prefix Characters"
-msgstr ""
+msgstr "Ký tự tiền tố"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_YEAR.STRING.TEXT
+#, fuzzy
 msgid  "Year"
-msgstr ""
+msgstr "Năm"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.STRING.TEXT
+#, fuzzy
 msgid  "Quarter"
-msgstr ""
+msgstr "Quý"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MONTH.STRING.TEXT
+#, fuzzy
 msgid  "Month"
-msgstr ""
+msgstr "Tháng"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_WEEK.STRING.TEXT
+#, fuzzy
 msgid  "Week"
-msgstr ""
+msgstr "Tuần"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_DAY.STRING.TEXT
+#, fuzzy
 msgid  "Day"
-msgstr ""
+msgstr "Ngày"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HOUR.STRING.TEXT
+#, fuzzy
 msgid  "Hour"
-msgstr ""
+msgstr "Giờ"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.STRING.TEXT
+#, fuzzy
 msgid  "Minute"
-msgstr ""
+msgstr "Phút"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.STRING.TEXT
+#, fuzzy
 msgid  "Interval"
-msgstr ""
+msgstr "Khoảng"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
+#, fuzzy
 msgid  "Select a field or type an expression to sort or group on."
-msgstr ""
+msgstr "Chọn một trường hoặc gõ một biểu thức theo đó cần sắp xếp hoặc nhóm lại."
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Display a header for this group?"
-msgstr ""
+msgstr "Hiển thị phần đầu cho nhóm này không?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Display a footer for this group?"
-msgstr ""
+msgstr "Hiển thị phần đầu cho nhóm này không?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.STRING.TEXT
+#, fuzzy
 msgid  "Select the value or range of values that starts a new group."
-msgstr ""
+msgstr "Chọn giá trị hoặc phạm vi các giá trị mà bắt đầu một nhóm mới."
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.STRING.TEXT
+#, fuzzy
 msgid  "Interval or number of characters to group on."
-msgstr ""
+msgstr "Khoảng hoặc số ký tự theo đó cần nhóm lại."
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.STRING.TEXT
+#, fuzzy
 msgid  "Keep group together on one page?"
-msgstr ""
+msgstr "Giữ nhóm với nhau trên cùng một trang không?"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.STRING.TEXT
+#, fuzzy
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
+msgstr "Chọn thứ tự tăng dần (A-Z, 0-9) hoặc giảm dần (Z-A, 9-0)."
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Page Numbers"
-msgstr ""
+msgstr "Số thứ tự trang"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "Định dạng"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Page N"
-msgstr ""
+msgstr "Trang N"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Page N of M"
-msgstr ""
+msgstr "Trang N trên M"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "Vị trí"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Top of Page (Header)"
-msgstr ""
+msgstr "Đầu trang"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Bottom of Page (Footer)"
-msgstr ""
+msgstr "Chân trang"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "Chung"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Alignment:"
-msgstr ""
+msgstr "Sắp hàng:"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr "Trái"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Center"
-msgstr ""
+msgstr "Giữa"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr "Phải"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show Number on First Page"
-msgstr ""
+msgstr "Hiển thị số trên trang đầu"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "Trợ g~iúp"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "\"Page \" & #PAGENUMBER#"
-msgstr ""
+msgstr "\"Trang \" & #PAGENUMBER#"
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
+#, fuzzy
 msgid  " & \" of \" & #PAGECOUNT#"
-msgstr ""
+msgstr " & \" trên \" & #PAGECOUNT#"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Page Setup"
-msgstr ""
+msgstr "Thiết lập Trang"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Page"
-msgstr ""
+msgstr "Trang"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Background"
-msgstr ""
+msgstr "Nền"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Return"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.STRING.TEXT
-msgid  "Page"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.STRING.TEXT
-msgid  "Background"
-msgstr ""
+msgstr "Lùi"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Section Setup"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.STRING.TEXT
-msgid  "Background"
-msgstr ""
+msgstr "Thiết lập phần"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Character Settings"
-msgstr ""
+msgstr "Thiết lập Ký tự"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "Phông"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effects"
-msgstr ""
+msgstr "Hiệu ứng Phông"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "Vị trí"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Asian Layout"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
-msgstr ""
+msgstr "Bố trí Châu Á"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr ""
+msgstr "Sắp hàng"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.STRING.TEXT
+#, fuzzy
 msgid  "Character"
-msgstr ""
+msgstr "Ký tự"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Line"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-msgid  "Line"
-msgstr ""
+msgstr "Đường"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Line Styles"
-msgstr ""
+msgstr "Kiểu dáng Đường"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Arrow Styles"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr ""
-
-#: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.STRING.TEXT
-msgid  "Line"
-msgstr ""
+msgstr "Kiểu dáng Mũi tên"
 
 #: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Report navigator"
-msgstr ""
+msgstr "Bộ điều hướng biểu mẫu"
 
 #: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Functions"
-msgstr ""
+msgstr "Chức năng"
 
 #: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
+#, fuzzy
 msgid  "Groups"
-msgstr ""
+msgstr "Nhóm"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sorting and Grouping..."
-msgstr ""
+msgstr "Sắp xếp và Nhóm lại..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Page Header/Footer..."
-msgstr ""
+msgstr "Đầu/Chân trang..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Report Header/Footer..."
-msgstr ""
+msgstr "Đầu/Chân báo cáo..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
+#, fuzzy
 msgid  "New Function"
-msgstr ""
+msgstr "Chức năng mới"
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr "Thuộc tính..."
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Field Value Is"
-msgstr ""
+msgstr "Giá trị trường"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Expression Is"
-msgstr ""
+msgstr "Biểu thức"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "between"
-msgstr ""
+msgstr "nằm giữa"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "not between"
-msgstr ""
+msgstr "không nằm giữa"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "equal to"
-msgstr ""
+msgstr "bằng với"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "not equal to"
-msgstr ""
+msgstr "không bằng với"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "greater than"
-msgstr ""
+msgstr "lớn hơn"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "less than"
-msgstr ""
+msgstr "nhỏ hơn"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
+#, fuzzy
 msgid  "greater than or equal to"
-msgstr ""
+msgstr "lớn hơn hoặc bằng với"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
+#, fuzzy
 msgid  "less than or equal to"
-msgstr ""
+msgstr "nhỏ hơn hoặc bằng với"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "and"
-msgstr ""
+msgstr "và"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
+#, fuzzy
 msgid  "Example"
-msgstr ""
+msgstr "Ví dụ"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Conditional Formatting"
-msgstr ""
+msgstr "Định dạng Điều kiện"
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "Trợ g~iúp"
 
 #: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
+#, fuzzy
 msgid  "Condition $number$"
-msgstr ""
+msgstr "Điều kiện $number$"
 
 #: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
+#, fuzzy
 msgid  "White"
-msgstr ""
+msgstr "Trắng"
 
 #: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Font color"
-msgstr ""
+msgstr "Màu phông"
 
 #: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
+#, fuzzy
 msgid  "Background"
-msgstr ""
+msgstr "Nền"
 
 #: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
+#, fuzzy
 msgid  "No Fill"
-msgstr ""
+msgstr "Không điền"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Sort Ascending"
-msgstr ""
+msgstr "Sắp xếp theo thứ tự tăng dần"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Sort Descending"
-msgstr ""
+msgstr "Sắp xếp theo thứ tự giảm dần"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Remove sorting"
-msgstr ""
+msgstr "Gỡ bỏ sắp xếp"
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "Chèn"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Trợ giúp"
 
 #: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
+msgstr "Bôi đậm các trường cần chèn vào khoảng đã chọn của template, sau đó nhấn Chèn hoặc Enter"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Date and Time"
-msgstr ""
+msgstr "Ngày và Giờ"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include Date"
-msgstr ""
+msgstr "Kèm thêm Ngày"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "Định dạng"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include Time"
-msgstr ""
-
-#: ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FIXEDTEXT.TEXT
-msgid  "Format"
-msgstr ""
+msgstr "Kèm thêm Giờ"
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
-msgstr ""
+msgstr "Trợ g~iúp"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "Chung"
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "Dữ liệu"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Không"
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "Có"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Force New Page"
-msgstr ""
+msgstr "Buộc trang mới"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "Không"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Before Section"
-msgstr ""
+msgstr "Trước đoạn"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "After Section"
-msgstr ""
+msgstr "Sau đoạn"
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
+#, fuzzy
 msgid  "Before & After Section"
-msgstr ""
+msgstr "Trước và sau đoạn"
 
 #: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
+#, fuzzy
 msgid  "New Row Or Column"
-msgstr ""
+msgstr "Hàng/cột mới"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
+#, fuzzy
 msgid  "Keep Together"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.STRING.TEXT
-msgid  "No"
-msgstr ""
+msgstr "Giữ với nhau"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Whole Group"
-msgstr ""
+msgstr "Cả nhóm"
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "With First Detail"
-msgstr ""
+msgstr "Cụ thể đầu tiên"
 
 #: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
+#, fuzzy
 msgid  "Can Grow"
-msgstr ""
+msgstr "Phóng to được"
 
 #: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
+#, fuzzy
 msgid  "Can Shrink"
-msgstr ""
+msgstr "Thu nhỏ được"
 
 #: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
+#, fuzzy
 msgid  "Repeat Section"
-msgstr ""
+msgstr "Lặp lại phần"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
+#, fuzzy
 msgid  "Print repeated values"
-msgstr ""
+msgstr "In các giá trị đã lặp lại"
 
 #: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
+#, fuzzy
 msgid  "Conditional Print Expression"
-msgstr ""
+msgstr "Biểu thức in có điều kiện"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Start new column"
-msgstr ""
+msgstr "Bắt đầu cột mới"
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Start new page"
-msgstr ""
+msgstr "Bắt đầu trang mới"
 
 #: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Reset page number"
-msgstr ""
+msgstr "Đặt lại số thứ tự trang"
 
 #: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Chart type"
-msgstr ""
+msgstr "Kiểu đồ thị"
 
 #: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
+#, fuzzy
 msgid  "Print When Group Change"
-msgstr ""
+msgstr "In khi nhóm thay đổi"
 
 #: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
+#, fuzzy
 msgid  "Visible"
-msgstr ""
+msgstr "Hiện rõ"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
+#, fuzzy
 msgid  "Group keep together"
-msgstr ""
+msgstr "Nhóm giữ với nhau"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "Per Page"
-msgstr ""
+msgstr "trên một trang"
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Per Column"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.STRING.TEXT
-msgid  "None"
-msgstr ""
+msgstr "trên một cột"
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Section"
-msgstr ""
+msgstr "Đoạn"
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "Tự động"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
+#, fuzzy
 msgid  "Page header"
-msgstr ""
+msgstr "Đầu trang"
 
 #: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
+#, fuzzy
 msgid  "Page footer"
-msgstr ""
+msgstr "Chân trang"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "All Pages"
-msgstr ""
+msgstr "Mọi trang"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Not With Report Header"
-msgstr ""
+msgstr "Không kèm theo phần đầu trang của báo cáo"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Not With Report Footer"
-msgstr ""
+msgstr "Không kèm theo phần chân trang của báo cáo"
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
+#, fuzzy
 msgid  "Not With Report Header/Footer"
-msgstr ""
+msgstr "Không kèm theo phần đầu trang/chân trang của báo cáo"
 
 #: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
+#, fuzzy
 msgid  "Deep traversing"
-msgstr ""
+msgstr "Duyệt sâu"
 
 #: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
+#, fuzzy
 msgid  "Pre evaluation"
-msgstr ""
+msgstr "Ước lượng sẵn"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
+#, fuzzy
 msgid  "Position X"
-msgstr ""
+msgstr "Vị trí X"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
+#, fuzzy
 msgid  "Position Y"
-msgstr ""
+msgstr "Vị trí Y"
 
 #: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
+#, fuzzy
 msgid  "Width"
-msgstr ""
+msgstr "Bề rộng"
 
 #: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Height"
-msgstr ""
+msgstr "Bề cao"
 
 #: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
+#, fuzzy
 msgid  "Initial value"
-msgstr ""
+msgstr "Giá trị đầu tiên"
 
 #: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
+#, fuzzy
 msgid  "Preserve as Link"
-msgstr ""
+msgstr "Bảo tồn dạng liên kết"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
+#, fuzzy
 msgid  "Formula"
-msgstr ""
+msgstr "Công thức"
 
 #: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Data field"
-msgstr ""
+msgstr "Trường dữ liệu"
 
 #: ui/inspection/inspection.src#RID_STR_FONT.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "Phông"
 
 #: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Background color"
-msgstr ""
+msgstr "Màu nền"
 
 #: ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.STRING.TEXT
+#, fuzzy
 msgid  "Background Transparent"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.STRING.TEXT
-msgid  "Background Transparent"
-msgstr ""
+msgstr "Nền trong suốt"
 
 #: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
+#, fuzzy
 msgid  "This operation is not allowed. The control overlaps with another one."
-msgstr ""
+msgstr "Không cho phép thao tác này. Điều khiển này chồng chéo với cái khác."
 
 #: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "This position can not be set. It is invalid."
-msgstr ""
+msgstr "Không thể đặt vị trí này, vì nó không hợp lệ."
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Group: %1"
-msgstr ""
+msgstr "Nhóm: %1"
 
 #: ui/inspection/inspection.src#RID_STR_FORMULALIST.STRING.TEXT
+#, fuzzy
 msgid  "Function"
-msgstr ""
+msgstr "Hàm"
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
+#, fuzzy
 msgid  "Scope"
-msgstr ""
+msgstr "Phạm vi"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Data Field Type"
-msgstr ""
+msgstr "Kiểu trường dữ liệu"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "Field or Formula"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.STRING.TEXT
-msgid  "Function"
-msgstr ""
+msgstr "Trường hoặc công thức"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Counter"
-msgstr ""
+msgstr "Biến đếm"
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
+#, fuzzy
 msgid  "User defined Function"
-msgstr ""
+msgstr "Hàm người dùng định nghĩa"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Link master fields"
-msgstr ""
+msgstr "Liên kết trường chủ"
 
 #: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Link slave fields"
-msgstr ""
+msgstr "Liên kết trường phụ"
 
 #: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
+#, fuzzy
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Có thể dùng đồ thị để hiển thị dữ liệu chi tiết về mục ghi hiện thời của báo cáo. Để làm như thế, bạn có thể ghi rõ những cột nào trong đồ thị tương ứng với những cột nào trong báo cáo."
 
 #: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
-msgstr ""
+msgstr "Đồ thị"
 
 #: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
+#, fuzzy
 msgid  "Report"
-msgstr ""
+msgstr "Báo cáo"
 
 #: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "Preview Row(s)"
-msgstr ""
+msgstr "Xem thử hàng"
 
 #: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
+#, fuzzy
 msgid  "Area"
-msgstr ""
+msgstr "Khu vực"
 
 #: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
+#, fuzzy
 msgid  "Report Output Format"
-msgstr ""
+msgstr "Định dạng đầu ra báo cáo"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Vert. Alignment"
-msgstr ""
+msgstr "Chỉnh hàng dọc"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "Top"
-msgstr ""
+msgstr "Đỉnh"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Middle"
-msgstr ""
+msgstr "Giữa"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Bottom"
-msgstr ""
+msgstr "Đáy"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
+#, fuzzy
 msgid  "Horz. Alignment"
-msgstr ""
+msgstr "Dành hàng ngang"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr "Trái"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr "Phải"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Block"
-msgstr ""
+msgstr "Khối"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
+#, fuzzy
 msgid  "Center"
-msgstr ""
-
-#: ui/inspection/inspection.src#RID_STR_F_COUNTER.STRING.TEXT
-msgid  "Counter"
-msgstr ""
+msgstr "Giữa"
 
 #: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
+#, fuzzy
 msgid  "Accumulation"
-msgstr ""
+msgstr "Lũy tích"
 
 #: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
+#, fuzzy
 msgid  "Minimum"
-msgstr ""
+msgstr "Tối thiểu"
 
 #: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
+#, fuzzy
 msgid  "Maximum"
-msgstr ""
+msgstr "Tối đa"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Properties: "
-msgstr ""
+msgstr "Thuộc tính: "
 
 #: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "No Control marked"
-msgstr ""
+msgstr "Chưa nhãn điều khiển"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
+#, fuzzy
 msgid  "Multiselection"
-msgstr ""
+msgstr "Đa chọn"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Image Control"
-msgstr ""
+msgstr "Điều khiển ảnh"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Label field"
-msgstr ""
+msgstr "Nhãn trường"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
+#, fuzzy
 msgid  "Line"
-msgstr ""
+msgstr "Đường"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
+#, fuzzy
 msgid  "Formatted Field"
-msgstr ""
+msgstr "Trường đã định dạng"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
+#, fuzzy
 msgid  "Shape"
-msgstr ""
+msgstr "Hình"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Report"
-msgstr ""
+msgstr "Báo cáo"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
+#, fuzzy
 msgid  "Section"
-msgstr ""
+msgstr "Phần"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
+#, fuzzy
 msgid  "Function"
-msgstr ""
+msgstr "Chức năng"
 
 #: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Group"
-msgstr ""
+msgstr "Nhóm"
 
 #: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
+#, fuzzy
 msgid  "Show ruler"
-msgstr ""
+msgstr "Hiện thước"
 
 #: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
+#, fuzzy
 msgid  "Show grid"
-msgstr ""
+msgstr "Hiện/ẩn lưới"
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
+#, fuzzy
 msgid  "Change Object"
-msgstr ""
+msgstr "Đổi đối tượng"
 
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Move Group(s)"
-msgstr ""
+msgstr "Chuyển nhóm"
 
 #: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
+#, fuzzy
 msgid  "Conditional Formatting"
-msgstr ""
+msgstr "Định dạng có điều kiện"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Remove report header / report footer"
-msgstr ""
+msgstr "Bỏ phần đầu/chân báo cáo"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Add report header / report footer"
-msgstr ""
+msgstr "Thêm phần đầu/chân báo cáo"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Remove page header / page footer"
-msgstr ""
+msgstr "Bỏ đầu/chân trang"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Add page header / page footer"
-msgstr ""
+msgstr "Thêm đầu/chân trang"
 
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Change property '#'"
-msgstr ""
+msgstr "Đổi thuộc tính « # »"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Add group header "
-msgstr ""
+msgstr "Thêm phần đầu nhóm "
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Remove group header "
-msgstr ""
+msgstr "Bỏ phần đầu nhóm "
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Add group footer "
-msgstr ""
+msgstr "Thêm phần chân nhóm "
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Remove group footer "
-msgstr ""
+msgstr "Bỏ phần chân nhóm "
 
 #: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
+#, fuzzy
 msgid  "Add function"
-msgstr ""
+msgstr "Thêm hàm"
 
 #: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
+#, fuzzy
 msgid  "Delete function"
-msgstr ""
+msgstr "Xoá hàm"
 
 #: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "Design"
-msgstr ""
+msgstr "Thiết kế"
 
 #: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "Xem thử"
 
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Report #"
-msgstr ""
+msgstr "Số thứ tự báo cáo"
 
 #: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "~Report name"
-msgstr ""
+msgstr "Tên ~báo cáo"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Delete Group"
-msgstr ""
+msgstr "Xoá nhóm"
 
 #: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Add Group"
-msgstr ""
+msgstr "Thêm nhóm"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
+#, fuzzy
 msgid  "Delete Selection"
-msgstr ""
+msgstr "Xoá vùng chọn"
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
+#, fuzzy
 msgid  "Delete Function"
-msgstr ""
+msgstr "Xoá hàm"
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
+#, fuzzy
 msgid  "Change Size"
-msgstr ""
+msgstr "Đổi kích cỡ"
 
 #: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
+#, fuzzy
 msgid  "Paste"
-msgstr ""
+msgstr "Dán"
 
 #: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Insert Control"
-msgstr ""
+msgstr "Chèn điều khiển"
 
 #: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Delete Control"
-msgstr ""
+msgstr "Xoá điều khiển"
 
 #: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Insert Group"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_UNGROUP.STRING.TEXT
-msgid  "Delete Group"
-msgstr ""
+msgstr "Chèn nhóm"
 
 #: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
+#, fuzzy
 msgid  "GroupHeader"
-msgstr ""
+msgstr "Đầu nhóm"
 
 #: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
+#, fuzzy
 msgid  "GroupFooter"
-msgstr ""
+msgstr "Chân nhóm"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sorting and Grouping..."
-msgstr ""
+msgstr "Sắp xếp và Nhóm lại..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
+#, fuzzy
 msgid  "Background Color..."
-msgstr ""
+msgstr "Màu nền..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Ruler..."
-msgstr ""
+msgstr "Thước..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Grid..."
-msgstr ""
+msgstr "Lưới..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Arrange"
-msgstr ""
+msgstr "Sắ~p đặt"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Bring ~Forward"
-msgstr ""
+msgstr "Nâng ~lên"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Send Back~ward"
-msgstr ""
+msgstr "Hạ ~xuống"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Object Resizing"
-msgstr ""
+msgstr "Đổi cỡ đố~i tượng"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Fit to smallest width"
-msgstr ""
+msgstr "~Vừa với bề rộng nhỏ nhất"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Fit to greatest width"
-msgstr ""
+msgstr "~Vừa với bề rộng lớn nhất"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Fit to smallest height"
-msgstr ""
+msgstr "~Vừa với bề cao nhỏ nhất"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Fit to greatest height"
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MENUITEM.TEXT
-msgid  "Section"
-msgstr ""
+msgstr "~Vừa với bề cao lớn nhất"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
+#, fuzzy
 msgid  "Shrink"
-msgstr ""
+msgstr "Xóa"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Shrink from top"
-msgstr ""
+msgstr "Xóa từ đỉnh"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Shrink from bottom"
-msgstr ""
+msgstr "Xóa từ đấy"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
+#, fuzzy
 msgid  "Distribution..."
-msgstr ""
+msgstr "Phân phối..."
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Properties..."
-msgstr ""
+msgstr "Thuộc tính..."
 
 #: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
+#, fuzzy
 msgid  "Add field:"
-msgstr ""
+msgstr "Thêm trường:"
 
 #: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Filter"
-msgstr ""
+msgstr "Lọc"
 
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base Report"
-msgstr ""
+msgstr " — Báo cáo %PRODUCTNAME Base"
 
 #: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Untitled"
-msgstr ""
+msgstr "Không tên"
 
 #: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
+#, fuzzy
 msgid  "Change Alignment"
-msgstr ""
+msgstr "Chỉnh canh"
 
 #: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "# Header"
-msgstr ""
+msgstr "# Đầu trang"
 
 #: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "# Footer"
-msgstr ""
+msgstr "# Chân trang"
 
 #: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Insert graphics"
-msgstr ""
+msgstr "Chèn đồ họa"
 
 #: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_FUNCTION.STRING.TEXT
-msgid  "Function"
-msgstr ""
+msgstr "Xoá"
 
 #: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred while creating the report."
-msgstr ""
+msgstr "Gặp lỗi khi tạo báo cáo. "
 
 #: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
+#, fuzzy
 msgid  "An exception of type $type$ was caught."
-msgstr ""
+msgstr "Bắt ngoại lệ kiểu $type$."
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
+#, fuzzy
 msgid  "Change font"
-msgstr ""
+msgstr "Đổi phông"
 
 #: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Change page attributes"
-msgstr ""
+msgstr "Đổi thuộc tính trang"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert Page Header/Footer"
-msgstr ""
+msgstr "Chèn đầu/chân trang"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Page Header/Footer"
-msgstr ""
+msgstr "Xoá đầu/chân trang"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert Column Header/Footer"
-msgstr ""
+msgstr "Chèn phần đầu/chân cột"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Column Header/Footer"
-msgstr ""
+msgstr "Xoá phần đầu/chân cột"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert Report Header/Footer"
-msgstr ""
+msgstr "Chèn phần đầu/chân báo cáo"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Report Header/Footer"
-msgstr ""
+msgstr "Xoá phần đầu/chân báo cáo"
 
 #: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
+#, fuzzy
 msgid  "The report can not be executed unless it is bound to content."
-msgstr ""
+msgstr "Không thể thực hiện báo cáo nếu nó không bị chặn với nội dung."
 
 #: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
+#, fuzzy
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "Không thể thực hiện báo cáo nếu chưa chèn ít nhất một đối tượng."
 
 #: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
+#, fuzzy
 msgid  "Shrink Section"
-msgstr ""
+msgstr "Xóa phần"
 
 #: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
+#, fuzzy
 msgid  "Detail"
-msgstr ""
+msgstr "Cụ thể"
 
 #: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Page Header"
-msgstr ""
+msgstr "Đầu trang"
 
 #: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Page Footer"
-msgstr ""
+msgstr "Chân trang"
 
 #: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Report Header"
-msgstr ""
+msgstr "Đầu trang của báo cáo"
 
 #: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Report Footer"
-msgstr ""
+msgstr "Chân trang của báo cáo"
 
 #: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "Chèn"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"
-msgstr ""
+msgstr "Chi tiết"
 
 #: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
 msgid  "Page Header"
-msgstr ""
+msgstr "Đầu trang"
 
 #: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
 msgid  "Page Footer"
-msgstr ""
+msgstr "Chân trang"
 
 #: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
 msgid  "Group Header"
-msgstr ""
+msgstr "Đầu nhóm"
 
 #: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
 msgid  "Group Footer"
-msgstr ""
+msgstr "Chân nhóm"
 
 #: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
 msgid  "Report Header"
-msgstr ""
+msgstr "Đầu báo cáo"
 
 #: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
 msgid  "Report Footer"
-msgstr ""
+msgstr "Chân báo cáo"
 
 #: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
 msgid  "The name '#1' already exists and can not be asssigned again."
-msgstr ""
+msgstr "Tên « #1 » đã tồn tại nên không thể được gán lần nữa."
 
 #: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "Bạn đã thử đặt một đối số cấm. Hãy xem « #1 » để thấy đối số hợp lệ."
 
 #: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
 msgid  "The element is invalid."
-msgstr ""
+msgstr "Phần tử này không hợp lệ."
 
 #: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
 msgid  "Label field"
-msgstr ""
+msgstr "Trường nhãn"
 
 #: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
 msgid  "Formatted field"
-msgstr ""
+msgstr "Trường đã định dạng"
 
 #: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
 msgid  "Image control"
-msgstr ""
+msgstr "Điều khiển ảnh"
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
-msgstr ""
+msgstr "Báo cáo"
 
 #: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
 msgid  "Shape"
-msgstr ""
+msgstr "Hình"
 
 #: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
 msgid  "Fixed line"
-msgstr ""
+msgstr "Đường cố định"

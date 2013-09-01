@@ -33,44 +33,44 @@ msgstr ""
 
 #: solver/solver.src#RID_SOLVER_COMPONENT.STRING.TEXT
 msgid  "%PRODUCTNAME Linear Solver"
-msgstr ""
+msgstr "កញ្ចប់​ដោះស្រាយ​លីនេអ៊ែរ %PRODUCTNAME"
 
 #: solver/solver.src#RID_PROPERTY_NONNEGATIVE.STRING.TEXT
 msgid  "Assume variables as non-negative"
-msgstr ""
+msgstr "សន្មត​អថេរ​ថា​វិជ្ជមាន"
 
 #: solver/solver.src#RID_PROPERTY_INTEGER.STRING.TEXT
 msgid  "Assume variables as integer"
-msgstr ""
+msgstr "សន្មត​អថេរ​ជា​ចំនួន​គត់"
 
 #: solver/solver.src#RID_PROPERTY_TIMEOUT.STRING.TEXT
 msgid  "Solving time limit (seconds)"
-msgstr ""
+msgstr "ពេល​កំណត់​ដោះស្រាយ (ជា​វិនាទី)"
 
 #: solver/solver.src#RID_PROPERTY_EPSILONLEVEL.STRING.TEXT
 msgid  "Epsilon level (0-3)"
-msgstr ""
+msgstr "Epsilon (០-៣)"
 
 #: solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.STRING.TEXT
 msgid  "Limit branch-and-bound depth"
-msgstr ""
+msgstr "ជម្រៅ​ព្រំដែន និង​មែកធាង​កំណត់"
 
 #: solver/solver.src#RID_ERROR_NONLINEAR.STRING.TEXT
 msgid  "The model is not linear."
-msgstr ""
+msgstr "ម៉ូដែល​គឺ​មិនមែន​ជា​លីនេអ៊ែរ​ទេ ។"
 
 #: solver/solver.src#RID_ERROR_EPSILONLEVEL.STRING.TEXT
 msgid  "The epsilon level is invalid."
-msgstr ""
+msgstr "កម្រិត​ epsilon មិនត្រឹមត្រូវ ។"
 
 #: solver/solver.src#RID_ERROR_INFEASIBLE.STRING.TEXT
 msgid  "The model is infeasible. Check limiting conditions."
-msgstr ""
+msgstr "ម៉ូដែល​គឺ​មិនអាច​ធ្វើបាន​ទេ ។ ពិនិត្យ​មើល​លក្ខខណ្ឌ​ដែន​កំណត់ ។"
 
 #: solver/solver.src#RID_ERROR_UNBOUNDED.STRING.TEXT
 msgid  "The model is unbounded."
-msgstr ""
+msgstr "ម៉ូដែល​គឺ​មិនត្រូវបាន​ចងភ្ជាប់​ទេ ។"
 
 #: solver/solver.src#RID_ERROR_TIMEOUT.STRING.TEXT
 msgid  "The time limit was reached."
-msgstr ""
+msgstr "ដល់​ពេល​កំណត់ ។"

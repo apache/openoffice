@@ -33,1279 +33,903 @@ msgstr ""
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
 msgid  "Calculates the number of weeks in a specific period"
-msgstr ""
+msgstr "Calcula el número de semanas en un periodo determinado."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
 msgid  "Start date"
-msgstr ""
+msgstr "Fecha inicial"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
 msgid  "First day of the period"
-msgstr ""
+msgstr "Primer día del periodo."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
 msgid  "End date"
-msgstr ""
+msgstr "Fecha final"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
 msgid  "Last day of the period"
-msgstr ""
+msgstr "Último día del periodo."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.6.STRING.TEXT
 msgid  "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "Tipo de calculación: Tipo=0 significa el número de semanas y Tipo=1 el número de semanas del calendario."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
 msgid  "Determines the number of months in a specific period."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
+msgstr "Calcula el número de meses en un periodo determinado."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
 msgid  "First day of the period."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.4.STRING.TEXT
-msgid  "End date"
-msgstr ""
+msgstr "Primer día del periodo."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
 msgid  "Last day of the period."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.6.STRING.TEXT
-msgid  "Type"
-msgstr ""
+msgstr "Último día del periodo."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "Tipo de cálculo: Tipo=0 significa el intervalo de tiempo, Tipo=1 el número de meses."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
 msgid  "Calculates the number of years in a specific period."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.3.STRING.TEXT
-msgid  "First day of the period"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.4.STRING.TEXT
-msgid  "End date"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.5.STRING.TEXT
-msgid  "Last day of the period"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.6.STRING.TEXT
-msgid  "Type"
-msgstr ""
+msgstr "Calcula el número de años en un determinado periodo."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "Tipo de cálculo: Tipo=0 significa el intervalo de tiempo, Tipo=1 el número de años."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "Devuelve 1 (VERDADERO) si la fecha indicada es año bisiesto, de lo contrario 0 (FALSO)."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.2.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "Fecha"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.3.STRING.TEXT
 msgid  "Any day in the desired year"
-msgstr ""
+msgstr "Cualquier día en un año deseado."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.1.STRING.TEXT
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.2.STRING.TEXT
-msgid  "Date"
-msgstr ""
+msgstr "Devuelve la cantidad de días del mes en el que figure la fecha indicada."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
 msgid  "Any day in the desired month"
-msgstr ""
+msgstr "Cualquier día en un mes deseado."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.2.STRING.TEXT
-msgid  "Date"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.3.STRING.TEXT
-msgid  "Any day in the desired year"
-msgstr ""
+msgstr "Devuelve la cantidad de días del año en el que figure la fecha indicada."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.2.STRING.TEXT
-msgid  "Date"
-msgstr ""
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.3.STRING.TEXT
-msgid  "Any day in the desired year"
-msgstr ""
+msgstr "Devuelve el número de semanas del año en el que figure la fecha indicada."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr ""
+msgstr "Codifica y descodifica un texto con la ayuda del algoritmo ROT13."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
 msgid  "Text"
-msgstr ""
+msgstr "Texto"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
 msgid  "Text to be encrypted or text already encrypted"
-msgstr ""
+msgstr "Texto codificado o a codificar."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
 msgid  "WEEKS"
-msgstr ""
+msgstr "SEMANAS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
 msgid  "MONTHS"
-msgstr ""
+msgstr "MESES"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
 msgid  "YEARS"
-msgstr ""
+msgstr "AÑOS"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
 msgid  "ISLEAPYEAR"
-msgstr ""
+msgstr "ESAÑOBISIESTO"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
 msgid  "DAYSINMONTH"
-msgstr ""
+msgstr "DÍASENMES"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINYEAR.STRING.TEXT
 msgid  "DAYSINYEAR"
-msgstr ""
+msgstr "DÍASENAÑO"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
 msgid  "WEEKSINYEAR"
-msgstr ""
+msgstr "SEMANASENAÑO"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
 msgid  "ROT13"
-msgstr ""
+msgstr "ROT13"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
 msgid  "WORKDAY"
-msgstr ""
+msgstr "DIA.LAB"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
 msgid  "YEARFRAC"
-msgstr ""
+msgstr "FRAC.AÑO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
 msgid  "EDATE"
-msgstr ""
+msgstr "FECHA.MES"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
 msgid  "WEEKNUM"
-msgstr ""
+msgstr "NUM.DE.SEMANA"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
 msgid  "EOMONTH"
-msgstr ""
+msgstr "FIN.MES"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
 msgid  "NETWORKDAYS"
-msgstr ""
+msgstr "DIAS.LAB"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
 msgid  "AMORDEGRC"
-msgstr ""
+msgstr "AMORTIZ.PROGRE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
 msgid  "AMORLINC"
-msgstr ""
+msgstr "AMORTIZ.LIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
 msgid  "ACCRINT"
-msgstr ""
+msgstr "INT.ACUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
 msgid  "ACCRINTM"
-msgstr ""
+msgstr "INT.ACUM.V"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
 msgid  "RECEIVED"
-msgstr ""
+msgstr "CANTIDAD.RECIBIDA"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
 msgid  "DISC"
-msgstr ""
+msgstr "TASA.DESC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
 msgid  "DURATION"
-msgstr ""
+msgstr "DURACION"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
 msgid  "EFFECT"
-msgstr ""
+msgstr "INT.EFECTIVO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
 msgid  "CUMPRINC"
-msgstr ""
+msgstr "PAGO.PRINC.ENTRE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
 msgid  "CUMIPMT"
-msgstr ""
+msgstr "PAGO.INT.ENTRE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
 msgid  "PRICE"
-msgstr ""
+msgstr "PRECIO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
 msgid  "PRICEDISC"
-msgstr ""
+msgstr "PRECIO.DESCUENTO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
 msgid  "PRICEMAT"
-msgstr ""
+msgstr "PRECIO.VENCIMIENTO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
 msgid  "MDURATION"
-msgstr ""
+msgstr "DURACION.MODIF"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
 msgid  "NOMINAL"
-msgstr ""
+msgstr "TASA.NOMINAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
 msgid  "DOLLARFR"
-msgstr ""
+msgstr "MONEDA.FRAC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
 msgid  "DOLLARDE"
-msgstr ""
+msgstr "MONEDA.DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
 msgid  "YIELD"
-msgstr ""
+msgstr "RENDTO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
 msgid  "YIELDDISC"
-msgstr ""
+msgstr "RENDTO.DESC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
 msgid  "YIELDMAT"
-msgstr ""
+msgstr "RENDTO.VENCTO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
 msgid  "TBILLEQ"
-msgstr ""
+msgstr "LETRA.DE.TES.EQV.A.BONO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
 msgid  "TBILLPRICE"
-msgstr ""
+msgstr "LETRA.DE.TES.PRECIO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
 msgid  "TBILLYIELD"
-msgstr ""
+msgstr "LETRA.DE.TES.RENDTO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
 msgid  "ODDFPRICE"
-msgstr ""
+msgstr "PRECIO.PER.IRREGULAR.1"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
 msgid  "ODDFYIELD"
-msgstr ""
+msgstr "RENDTO.PER.IRREGULAR.1"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
 msgid  "ODDLPRICE"
-msgstr ""
+msgstr "PRECIO.PER.IRREGULAR.2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
 msgid  "ODDLYIELD"
-msgstr ""
+msgstr "RENDTO.PER.IRREGULAR.2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
 msgid  "XIRR"
-msgstr ""
+msgstr "TIR.NO.PER"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
 msgid  "XNPV"
-msgstr ""
+msgstr "VNA.NO.PER"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
 msgid  "INTRATE"
-msgstr ""
+msgstr "TASA.INT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
 msgid  "COUPNCD"
-msgstr ""
+msgstr "CUPON.FECHA.L2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
 msgid  "COUPDAYS"
-msgstr ""
+msgstr "CUPON.DIAS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
 msgid  "COUPDAYSNC"
-msgstr ""
+msgstr "CUPON.DIAS.L2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
 msgid  "COUPDAYBS"
-msgstr ""
+msgstr "CUPON.DIAS.L1"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
 msgid  "COUPPCD"
-msgstr ""
+msgstr "CUPON.FECHA.L1"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
 msgid  "COUPNUM"
-msgstr ""
+msgstr "CUPON.NUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
 msgid  "FVSCHEDULE"
-msgstr ""
+msgstr "VF.PLAN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
 msgid  "ISEVEN"
-msgstr ""
+msgstr "ESPAR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
 msgid  "ISODD"
-msgstr ""
+msgstr "ES.IMPAR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
 msgid  "GCD"
-msgstr ""
+msgstr "M.C.D"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_LCM.STRING.TEXT
 msgid  "LCM"
-msgstr ""
+msgstr "M.C.M"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
 msgid  "MULTINOMIAL"
-msgstr ""
+msgstr "MULTINOMIAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
 msgid  "SERIESSUM"
-msgstr ""
+msgstr "SUMA.SERIES"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
 msgid  "QUOTIENT"
-msgstr ""
+msgstr "COCIENTE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
 msgid  "MROUND"
-msgstr ""
+msgstr "REDOND.MULT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
 msgid  "SQRTPI"
-msgstr ""
+msgstr "RAIZ2PI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
 msgid  "RANDBETWEEN"
-msgstr ""
+msgstr "ALEATORIO.ENTRE"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
 msgid  "BESSELI"
-msgstr ""
+msgstr "BESSELI"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
 msgid  "BESSELJ"
-msgstr ""
+msgstr "BESSELJ"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
 msgid  "BESSELK"
-msgstr ""
+msgstr "BESSELK"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
 msgid  "BESSELY"
-msgstr ""
+msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
 msgid  "BIN2DEC"
-msgstr ""
+msgstr "BIN.A.DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2HEX.STRING.TEXT
 msgid  "BIN2HEX"
-msgstr ""
+msgstr "BIN.A.HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2OCT.STRING.TEXT
 msgid  "BIN2OCT"
-msgstr ""
+msgstr "BIN.A.OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
 msgid  "DELTA"
-msgstr ""
+msgstr "DELTA"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
 msgid  "DEC2BIN"
-msgstr ""
+msgstr "DEC.A.BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2HEX.STRING.TEXT
 msgid  "DEC2HEX"
-msgstr ""
+msgstr "DEC.A.HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2OCT.STRING.TEXT
 msgid  "DEC2OCT"
-msgstr ""
+msgstr "DEC.A.OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
 msgid  "ERF"
-msgstr ""
+msgstr "FUN.ERROR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
 msgid  "ERFC"
-msgstr ""
+msgstr "FUN.ERROR.COMPL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
 msgid  "GESTEP"
-msgstr ""
+msgstr "MAYOR.O.IGUAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
 msgid  "HEX2BIN"
-msgstr ""
+msgstr "HEX.A.BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2DEC.STRING.TEXT
 msgid  "HEX2DEC"
-msgstr ""
+msgstr "HEX.A.DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2OCT.STRING.TEXT
 msgid  "HEX2OCT"
-msgstr ""
+msgstr "HEX.A.OCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMABS.STRING.TEXT
 msgid  "IMABS"
-msgstr ""
+msgstr "IM.ABS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
 msgid  "IMAGINARY"
-msgstr ""
+msgstr "IMAGINARIO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
 msgid  "IMPOWER"
-msgstr ""
+msgstr "IM.POT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMARGUMENT.STRING.TEXT
 msgid  "IMARGUMENT"
-msgstr ""
+msgstr "IM.ANGULO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOS.STRING.TEXT
 msgid  "IMCOS"
-msgstr ""
+msgstr "IM.COS"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMDIV.STRING.TEXT
 msgid  "IMDIV"
-msgstr ""
+msgstr "IM.DIV"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMEXP.STRING.TEXT
 msgid  "IMEXP"
-msgstr ""
+msgstr "IM.EXP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCONJUGATE.STRING.TEXT
 msgid  "IMCONJUGATE"
-msgstr ""
+msgstr "IM.CONJUGADA"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLN.STRING.TEXT
 msgid  "IMLN"
-msgstr ""
+msgstr "IM.LN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG10.STRING.TEXT
 msgid  "IMLOG10"
-msgstr ""
+msgstr "IM.LOG10"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMLOG2.STRING.TEXT
 msgid  "IMLOG2"
-msgstr ""
+msgstr "IM.LOG2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPRODUCT.STRING.TEXT
 msgid  "IMPRODUCT"
-msgstr ""
+msgstr "IM.PRODUCT"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMREAL.STRING.TEXT
 msgid  "IMREAL"
-msgstr ""
+msgstr "IM.REAL"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSIN.STRING.TEXT
 msgid  "IMSIN"
-msgstr ""
+msgstr "IM.SENO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUB.STRING.TEXT
 msgid  "IMSUB"
-msgstr ""
+msgstr "IM.SUSTR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSUM.STRING.TEXT
 msgid  "IMSUM"
-msgstr ""
+msgstr "IM.SUM"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSQRT.STRING.TEXT
 msgid  "IMSQRT"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
-msgid  "IMTAN"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
-msgid  "IMSEC"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
-msgid  "IMCSC"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
-msgid  "IMCOT"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
-msgid  "IMSINH"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
-msgid  "IMCOSH"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
-msgid  "IMSECH"
-msgstr ""
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
-msgid  "IMCSCH"
-msgstr ""
+msgstr "IM.RAIZ2"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
 msgid  "COMPLEX"
-msgstr ""
+msgstr "COMPLEJO"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
 msgid  "OCT2BIN"
-msgstr ""
+msgstr "OCT.A.BIN"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2DEC.STRING.TEXT
 msgid  "OCT2DEC"
-msgstr ""
+msgstr "OCT.A.DEC"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2HEX.STRING.TEXT
 msgid  "OCT2HEX"
-msgstr ""
+msgstr "OCT.A.HEX"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
 msgid  "CONVERT"
-msgstr ""
+msgstr "CONVERTIR"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
 msgid  "FACTDOUBLE"
-msgstr ""
+msgstr "FACT.DOBLE"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "Devuelve el número de serie de la fecha anterior o posterior a un número determinado de días laborales."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
 msgid  "Start date"
-msgstr ""
+msgstr "Fecha inicial"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
 msgid  "The start date"
-msgstr ""
+msgstr "Fecha inicial"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
 msgid  "Days"
-msgstr ""
+msgstr "Días"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
 msgid  "The number of workdays before or after the start date"
-msgstr ""
+msgstr "Número de días laborales anteriores o posteriores a la fecha inicial."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
 msgid  "Holidays"
-msgstr ""
+msgstr "Días libres"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
 msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "Lista con valores de días festivos (vacaciones, festivos, etc.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.3.STRING.TEXT
-msgid  "The start date"
-msgstr ""
+msgstr "Calcula la diferencia entre la fecha inicial y final como fracción de años."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.4.STRING.TEXT
 msgid  "End date"
-msgstr ""
+msgstr "Fecha final"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
 msgid  "The end date"
-msgstr ""
+msgstr "Fecha final"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
 msgid  "Basis"
-msgstr ""
+msgstr "Base"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
 msgid  "Basis for determining the interest days"
-msgstr ""
+msgstr "Base para determinar los días de intereses"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.3.STRING.TEXT
-msgid  "The start date"
-msgstr ""
+msgstr "Devuelve el número de serie de la fecha anterior o posterior, en un número determinado de meses, a la fecha inicial."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
 msgid  "Months"
-msgstr ""
+msgstr "Meses"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
 msgid  "Number of months before or after the start date"
-msgstr ""
+msgstr "Cantidad de meses anterior o posterior a la fecha inicial"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "Devuelve un número que muestra la semana del año correspondiente a la fecha indicada."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
 msgid  "Date"
-msgstr ""
+msgstr "Fecha"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
 msgid  "The date"
-msgstr ""
+msgstr "Fecha"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
 msgid  "Return type"
-msgstr ""
+msgstr "Tipo de devolución"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr ""
+msgstr "Un número del 1 al 3 que indica el día con el que comienza una semana."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.3.STRING.TEXT
-msgid  "The start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.4.STRING.TEXT
-msgid  "Months"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.5.STRING.TEXT
-msgid  "Number of months before or after the start date"
-msgstr ""
+msgstr "Devuelve el número de serie de la fecha que representa el último día del mes anterior o posterior a un número determinado de meses."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
 msgid  "Returns the number of workdays between two dates"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.2.STRING.TEXT
-msgid  "Start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.3.STRING.TEXT
-msgid  "The start date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.4.STRING.TEXT
-msgid  "End date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.5.STRING.TEXT
-msgid  "The end date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.6.STRING.TEXT
-msgid  "Holidays"
-msgstr ""
+msgstr "Devuelve el número de días en un intervalo de tiempo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "Lista von los valores de fecha que representan los días festivos (vacaciones, festivos, etc.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
 msgid  "Returns the value 'true' if the number is even"
-msgstr ""
+msgstr "Devuelve el valor VERDADERO si el número es par."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.2.STRING.TEXT
 msgid  "Number"
-msgstr ""
+msgstr "Número"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.3.STRING.TEXT
 msgid  "The number"
-msgstr ""
+msgstr "Número"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.1.STRING.TEXT
 msgid  "Returns the value 'true' if the number is odd"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISODD.3.STRING.TEXT
-msgid  "The number"
-msgstr ""
+msgstr "Devuelve el valor VERDADERO si el número es impar."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
 msgid  "Returns the multinomial coefficient of a set of numbers"
-msgstr ""
+msgstr "Devuelve el coeficiente multinomial de un grupo de números."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
 msgid  "Number(s)"
-msgstr ""
+msgstr "Número(s)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "Número o lista de números cuyo coeficiente multinomial debe determinarse."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
 msgid  "Returns the sum of a power series"
-msgstr ""
+msgstr "Calcula la suma de potencias"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
 msgid  "X"
-msgstr ""
+msgstr "X"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
 msgid  "The independent variable of the power series"
-msgstr ""
+msgstr "Variable independiente de la serie de potencias."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
 msgid  "N"
-msgstr ""
+msgstr "N"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
 msgid  "The initial power to which x is to be raised"
-msgstr ""
+msgstr "Potencia inicial a la que debe elevarse x"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
 msgid  "M"
-msgstr ""
+msgstr "M"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
 msgid  "The increment by which to increase n for each term in the series"
-msgstr ""
+msgstr "Incremento en el cual debe aumentar n en cada miembro de la serie."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
 msgid  "Coefficients"
-msgstr ""
+msgstr "Coeficientes"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "Grupo de coeficientes con los que se multiplicarán potencias sucesivas de la variable x."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
 msgid  "Returns the integer portion of a division"
-msgstr ""
+msgstr "Devuelve la parte entera de una división."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
 msgid  "Numerator"
-msgstr ""
+msgstr "Numerador"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.3.STRING.TEXT
 msgid  "The dividend"
-msgstr ""
+msgstr "El dividendo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
 msgid  "Denominator"
-msgstr ""
+msgstr "Denominador"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
 msgid  "The divisor"
-msgstr ""
+msgstr "El divisor"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
 msgid  "Returns a number rounded to a specified multiple"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "Devuelve un número redondeado al múltiplo deseado."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
 msgid  "The number to round off"
-msgstr ""
+msgstr "El número que desea redondear."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.4.STRING.TEXT
 msgid  "Multiple"
-msgstr ""
+msgstr "Múltiplo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
 msgid  "The multiple to which you want to round number"
-msgstr ""
+msgstr "El valor al cual se desea redondear."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
 msgid  "Returns the square root of a number which has been multiplied by pi"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "Calcula la raíz de un número multiplicado por Pi."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
 msgid  "The number by which pi is multiplied"
-msgstr ""
+msgstr "Número"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
 msgid  "Returns a random integer between the numbers you specify"
-msgstr ""
+msgstr "Devuelve el número aleatorio del área indicada."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
 msgid  "Bottom"
-msgstr ""
+msgstr "Menor"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
 msgid  "The smallest integer returned"
-msgstr ""
+msgstr "El número menor que debe devolverse."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
 msgid  "Top"
-msgstr ""
+msgstr "Mayor"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
 msgid  "The largest integer returned"
-msgstr ""
+msgstr "El número mayor que se debe devolver."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
 msgid  "Returns the greatest common divisor"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.2.STRING.TEXT
-msgid  "Number(s)"
-msgstr ""
+msgstr "Devuelve el máximo común divisor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
 msgid  "Number or list of numbers"
-msgstr ""
+msgstr "Número o lista de números"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
 msgid  "Returns the least common multiple"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.2.STRING.TEXT
-msgid  "Number(s)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.3.STRING.TEXT
-msgid  "Number or list of numbers"
-msgstr ""
+msgstr "Devuelve el mínimo común múltiplo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
 msgid  "Returns the modified Bessel function In(x)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.2.STRING.TEXT
-msgid  "X"
-msgstr ""
+msgstr "Calcula la función Bessel modificada In(x)."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
 msgid  "The value at which the function is to be evaluated"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.4.STRING.TEXT
-msgid  "N"
-msgstr ""
+msgstr "El valor para el que se evalúa la función."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
 msgid  "The order of the Bessel function"
-msgstr ""
+msgstr "Orden de la función Bessel."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
 msgid  "Returns the Bessel function Jn(x)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.2.STRING.TEXT
-msgid  "X"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.3.STRING.TEXT
-msgid  "The value at which the function is to be evaluated"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.4.STRING.TEXT
-msgid  "N"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.5.STRING.TEXT
-msgid  "The order of the Bessel function"
-msgstr ""
+msgstr "Calcula la función Bessel Jn(x)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
 msgid  "Returns the Bessel function Kn(x)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.2.STRING.TEXT
-msgid  "X"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.3.STRING.TEXT
-msgid  "The value at which the function is to be evaluated"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.4.STRING.TEXT
-msgid  "N"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.5.STRING.TEXT
-msgid  "The order of the Bessel function"
-msgstr ""
+msgstr "Calcula la función de Bessel modificada Kn(x)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
 msgid  "Returns the Bessel function Yn(x)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.2.STRING.TEXT
-msgid  "X"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.3.STRING.TEXT
-msgid  "The value at which the function is to be evaluated"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.4.STRING.TEXT
-msgid  "N"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.5.STRING.TEXT
-msgid  "The order of the Bessel function"
-msgstr ""
+msgstr "Devuelve la función Bessel Yn(x)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
 msgid  "Converts a binary number to an octal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "Convierte un número binario en uno octal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.3.STRING.TEXT
 msgid  "The binary number to be converted (as text)"
-msgstr ""
+msgstr "Número binario (como texto)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.4.STRING.TEXT
 msgid  "Places"
-msgstr ""
+msgstr "Cifras"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.5.STRING.TEXT
 msgid  "Number of places used"
-msgstr ""
+msgstr "Cantidad de cifras usadas."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.1.STRING.TEXT
 msgid  "Converts a binary number to a decimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2DEC.3.STRING.TEXT
-msgid  "The binary number to be converted (as text)"
-msgstr ""
+msgstr "Convierte und número binario en uno decimal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
 msgid  "Converts a binary number to a hexadecimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.3.STRING.TEXT
-msgid  "The binary number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
+msgstr "Convierte un número binario en hexadecimal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
 msgid  "Number of places used."
-msgstr ""
+msgstr "Cantidad de cifras usadas."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
 msgid  "Converts an octal number to a binary number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "Convierte un número octal en binario."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
 msgid  "The octal number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "Número octal (como texto)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
 msgid  "Converts an octal number to a decimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.3.STRING.TEXT
-msgid  "The octal number to be converted (as text)"
-msgstr ""
+msgstr "Convierte un número octal en uno decimal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
 msgid  "Converts an octal number to a hexadecimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.3.STRING.TEXT
-msgid  "The octal number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "Convierte un número octal en uno hexadecimal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
 msgid  "Converts a decimal number to a binary number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "Convierte un número decimal en uno binario."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
 msgid  "The decimal integer to be converted"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "Número decimal"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
 msgid  "Converts a decimal number to a hexadecimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.3.STRING.TEXT
-msgid  "The decimal integer to be converted"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "Convierte un número decimal en uno hexadecimal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
 msgid  "Converts a decimal number into an octal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "Convierte un número decimal en un octal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
 msgid  "The decimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "Es el número decimal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
 msgid  "Converts a hexadecimal number to a binary number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "Convierte un número hexadecimal en uno binario."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "Número hexadecimal (como texto)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
 msgid  "Converts a hexadecimal number to a decimal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.3.STRING.TEXT
-msgid  "The hexadecimal number to be converted (as text)"
-msgstr ""
+msgstr "Convierte un número hexadecimal en uno decimal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
 msgid  "Converts a hexadecimal number to an octal number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.3.STRING.TEXT
-msgid  "The hexadecimal number to be converted (as text)"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.4.STRING.TEXT
-msgid  "Places"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.5.STRING.TEXT
-msgid  "Number of places used"
-msgstr ""
+msgstr "Convierte un número hexadecimal en uno octal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
 msgid  "Tests whether two values are equal"
-msgstr ""
+msgstr "Comprueba si dos valores son iguales."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
 msgid  "Number 1"
-msgstr ""
+msgstr "Número 1"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
 msgid  "The first number"
-msgstr ""
+msgstr "Primer número"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
 msgid  "Number 2"
-msgstr ""
+msgstr "Número 2"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
 msgid  "The second number"
-msgstr ""
+msgstr "Segundo número"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
 msgid  "Returns the error function"
-msgstr ""
+msgstr "Devuelve el resultado de la función de error de Gauss."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
 msgid  "Lower limit"
-msgstr ""
+msgstr "Límite inferior"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.3.STRING.TEXT
 msgid  "The lower limit for integration"
-msgstr ""
+msgstr "Límite inferior de la integral."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
 msgid  "Upper limit"
-msgstr ""
+msgstr "Límite superior"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
 msgid  "The upper limit for integration"
-msgstr ""
+msgstr "Límite superior de la integración."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
 msgid  "Returns the complementary error function"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.2.STRING.TEXT
-msgid  "Lower limit"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.3.STRING.TEXT
-msgid  "The lower limit for integration"
-msgstr ""
+msgstr "Devuelve el resultado complementario de la función FUN.ERROR."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
 msgid  "Tests whether a number is greater than a threshold value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "Comprueba sin un número es mayor que el valor umbral."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
 msgid  "The value to test against step"
-msgstr ""
+msgstr "Valor a comprobar con el valor umbral."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
 msgid  "Step"
-msgstr ""
+msgstr "Valor umbral"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
 msgid  "The threshhold value"
-msgstr ""
+msgstr "Valor umbral"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
 msgid  "Returns the double factorial of Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.3.STRING.TEXT
-msgid  "The number"
-msgstr ""
+msgstr "Devuelve el doble factorial de un número."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
 msgid  "Returns the absolute value (modulus) of a complex number"
-msgstr ""
+msgstr "Devuelve el valor absoluto (módulo) de un número complejo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
 msgid  "Complex number"
@@ -1313,47 +937,23 @@ msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
 msgid  "The complex number"
-msgstr ""
+msgstr "Número complejo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
 msgid  "Returns the imaginary coefficient of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "Devuelve el coeficiente de la parte imaginaria de un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
 msgid  "Returns a complex number raised to an integer power"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.4.STRING.TEXT
-msgid  "Number"
-msgstr ""
+msgstr "Resultado de un número complejo elevado a una potencia."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
 msgid  "Power to which the complex number is raised"
-msgstr ""
+msgstr "Exponente con el que se potenciará el número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
 msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
+msgstr "Devuelve el ángulo en radianes para la representación trigonométrica de un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
 msgid  "A complex number"
@@ -1361,1952 +961,568 @@ msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
 msgid  "Returns the cosine of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
+msgstr "Devuelve el coseno de un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
 msgid  "Returns the quotient of two complex numbers"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.2.STRING.TEXT
-msgid  "Numerator"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.3.STRING.TEXT
-msgid  "The dividend"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.4.STRING.TEXT
-msgid  "Denominator"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.5.STRING.TEXT
-msgid  "The divisor"
-msgstr ""
+msgstr "Devuelve el cociente de dos números complejos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
 msgid  "Returns the algebraic form of the exponential of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "Devuelve la forma algebraica de un número complejo representado exponencialmente."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
 msgid  "Returns the complex conjugate of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "Devuelve la compleja conjugada de un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
 msgid  "Returns the natural logarithm of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "Devuelve el logaritmo natural de un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
 msgid  "Returns the base-10 logarithm of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "Devuelve el logaritmo en base diez perteneciente a un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.1.STRING.TEXT
 msgid  "Returns the base-2 logarithm of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG2.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "Logaritmo en base 2 de un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
 msgid  "Returns the product of several complex numbers"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
+msgstr "Devuelve el producto de varios números complejos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
 msgid  "The first complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.4.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
+msgstr "Primer número complejo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
 msgid  "Another complex number"
-msgstr ""
+msgstr "Otros números complejos"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
 msgid  "Returns the real coefficient of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "Devuelve el coeficiente de la parte real de un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
 msgid  "Returns the sine of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "Devuelve el seno perteneciente a un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
 msgid  "Returns the difference of two complex numbers"
-msgstr ""
+msgstr "Devuelve la diferencia existente entre dos números complejos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
 msgid  "Complex number 1"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.3.STRING.TEXT
-msgid  "Complex number 1"
-msgstr ""
+msgstr "Número complejo 1"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.4.STRING.TEXT
 msgid  "Complex number 2"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.5.STRING.TEXT
-msgid  "Complex number 2"
-msgstr ""
+msgstr "Número complejo 2"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
 msgid  "Returns the square root of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
+msgstr "Devuelve la raíz cuadrada de un número complejo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
 msgid  "Returns the sum of complex numbers"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.3.STRING.TEXT
-msgid  "The complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
-msgid  "Returns the tangent of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
-msgid  "Returns the secant of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
-msgid  "Returns the cosecant of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
-msgid  "Returns the cotangent of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
-msgid  "Returns the hyperbolic sine of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
-msgid  "Returns the hyperbolic cosine of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
-msgid  "Returns the hyperbolic secant of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
-msgid  "Returns the hyperbolic cosecant of a complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.2.STRING.TEXT
-msgid  "Complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.3.STRING.TEXT
-msgid  "A complex number"
-msgstr ""
+msgstr "Devuelve la suma de números complejos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
 msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr ""
+msgstr "Convierte los coeficientes reales e imaginarios en números complejos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
 msgid  "Real num"
-msgstr ""
+msgstr "Parte real"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
 msgid  "The real coefficient"
-msgstr ""
+msgstr "Parte real"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
 msgid  "I num"
-msgstr ""
+msgstr "Parte imaginaria"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
 msgid  "The imaginary coefficient"
-msgstr ""
+msgstr "Parte imaginaria"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
 msgid  "Suffix"
-msgstr ""
+msgstr "Sufijo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
 msgid  "The suffix"
-msgstr ""
+msgstr "Sufijo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
 msgid  "Converts a number from one measurement system to another"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.2.STRING.TEXT
-msgid  "Number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.3.STRING.TEXT
-msgid  "The number"
-msgstr ""
+msgstr "Convierte un número de un sistema métrico a otro."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
 msgid  "From unit"
-msgstr ""
+msgstr "De unidad de medida"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
 msgid  "Unit of measure for number"
-msgstr ""
+msgstr "Unidad de medida de número"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
 msgid  "To unit"
-msgstr ""
+msgstr "En unidad de medida"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
 msgid  "Unit of measure for the result"
-msgstr ""
+msgstr "Unidad de medida del resultado."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Devuelve la depreciación de un bien en un determinado período en base al sistema contable francés."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.2.STRING.TEXT
 msgid  "Cost"
-msgstr ""
+msgstr "Costo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.3.STRING.TEXT
 msgid  "Cost of the asset"
-msgstr ""
+msgstr "Coste de la adquisición del bien."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.4.STRING.TEXT
 msgid  "Date purchased"
-msgstr ""
+msgstr "Fecha"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.5.STRING.TEXT
 msgid  "Purchase date of the asset"
-msgstr ""
+msgstr "Fecha de la adquisición del bien."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.6.STRING.TEXT
 msgid  "First period"
-msgstr ""
+msgstr "Primer período"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
 msgid  "Date the first period ends"
-msgstr ""
+msgstr "Fecha del final del primer periodo."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
 msgid  "Salvage"
-msgstr ""
+msgstr "Valor residual"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
 msgid  "Salvage value of an asset at the end of its life"
-msgstr ""
+msgstr "Valor residual del bien al final de la depreciación."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
 msgid  "Period"
-msgstr ""
+msgstr "Período"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
 msgid  "The period"
-msgstr ""
+msgstr "Período"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.12.STRING.TEXT
 msgid  "Rate"
-msgstr ""
+msgstr "Interés"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.13.STRING.TEXT
 msgid  "The rate of depreciation"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
+msgstr "Tasa de depreciación"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.15.STRING.TEXT
 msgid  "The year basis to be used"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.1.STRING.TEXT
-msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.2.STRING.TEXT
-msgid  "Cost"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.3.STRING.TEXT
-msgid  "Cost of the asset"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.4.STRING.TEXT
-msgid  "Date purchased"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.5.STRING.TEXT
-msgid  "Purchase date of the asset"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.6.STRING.TEXT
-msgid  "First period"
-msgstr ""
+msgstr "Tipo de base anual a usar."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
 msgid  "The date the first period ends"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.8.STRING.TEXT
-msgid  "Salvage"
-msgstr ""
+msgstr "Fecha del final del primer período."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
 msgid  "The salvage value of an asset at the end of its life"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.10.STRING.TEXT
-msgid  "Period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.11.STRING.TEXT
-msgid  "The period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.12.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.13.STRING.TEXT
-msgid  "The rate of depreciation"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.15.STRING.TEXT
-msgid  "The year basis to be used"
-msgstr ""
+msgstr "Valor residual del bien al final de la depreciación."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "Devuelve el interés acumulado para un valor con pagos periódicos de intereses."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
 msgid  "Issue"
-msgstr ""
+msgstr "Emisión"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
 msgid  "Issue date of the security"
-msgstr ""
+msgstr "Fecha de la emisión del valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
 msgid  "First interest"
-msgstr ""
+msgstr "Primer plazo de interés"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
 msgid  "First interest date of the security"
-msgstr ""
+msgstr "Fecha del primer pago de interés del valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
 msgid  "Settlement"
-msgstr ""
+msgstr "Liquidación"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.7.STRING.TEXT
 msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
+msgstr "Es la fecha de liquidación del valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.9.STRING.TEXT
 msgid  "The rate"
-msgstr ""
+msgstr "Es la tasa de interés en la fecha de emisión."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.10.STRING.TEXT
 msgid  "Par"
-msgstr ""
+msgstr "Valor nominal"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.11.STRING.TEXT
 msgid  "The par value"
-msgstr ""
+msgstr "Valor nominal"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
 msgid  "Frequency"
-msgstr ""
+msgstr "Frecuencia"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
 msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
+msgstr "Frecuencia"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.15.STRING.TEXT
 msgid  "The basis"
-msgstr ""
+msgstr "El tipo de base según el cual se contarán los días."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.1.STRING.TEXT
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.2.STRING.TEXT
-msgid  "Issue"
-msgstr ""
+msgstr "Devuelve el interés acumulado de un valor que se pagará al vencimiento."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
 msgid  "The issue date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.4.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.5.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.6.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.7.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.8.STRING.TEXT
-msgid  "Par"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.9.STRING.TEXT
-msgid  "The par value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Fecha de la emisión del valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
+msgstr "Devuelve la cantidad recibida al vencimiento de un valor totalmente invertido."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
 msgid  "Maturity"
-msgstr ""
+msgstr "Vencimiento"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
 msgid  "The maturity"
-msgstr ""
+msgstr "La fecha de vencimiento del valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.6.STRING.TEXT
 msgid  "Investment"
-msgstr ""
+msgstr "Inversión"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.7.STRING.TEXT
 msgid  "The investment"
-msgstr ""
+msgstr "Inversión"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.8.STRING.TEXT
 msgid  "Discount"
-msgstr ""
+msgstr "Descuento"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.9.STRING.TEXT
 msgid  "The discount"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Es la tasa de descuento de un valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
 msgid  "Returns the discount rate for a security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
+msgstr "Es la tasa de descuento de un valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
 msgid  "Price"
-msgstr ""
+msgstr "Cotización"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.7.STRING.TEXT
 msgid  "The price"
-msgstr ""
+msgstr "Es el precio del valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.8.STRING.TEXT
 msgid  "Redemption"
-msgstr ""
+msgstr "Devolución"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.9.STRING.TEXT
 msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Es el rendimiento del valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
+msgstr "Devuelve la duración anual Macaulay de un valor con pagos periódicos de intereses."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
 msgid  "Coupon"
-msgstr ""
+msgstr "Interés nominal"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
 msgid  "The coupon rate"
-msgstr ""
+msgstr "Tasa de interés nominal anual."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.8.STRING.TEXT
 msgid  "Yield"
-msgstr ""
+msgstr "Rédito"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.9.STRING.TEXT
 msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.10.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.11.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.12.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.13.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "El rendimiento anual del valor."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
 msgid  "Returns the effective annual interest rate"
-msgstr ""
+msgstr "Devuelve el interés efectivo anual."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
 msgid  "Nominal rate"
-msgstr ""
+msgstr "Interés nominal"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
 msgid  "The nominal rate"
-msgstr ""
+msgstr "Interés nominal"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
 msgid  "Npery"
-msgstr ""
+msgstr "Periodos"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.5.STRING.TEXT
 msgid  "The periods"
-msgstr ""
+msgstr "Periodos"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.2.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.3.STRING.TEXT
-msgid  "The rate"
-msgstr ""
+msgstr "Devuelve la amortización acumulada de un préstamo que debe ser pagada entre dos periodos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
 msgid  "Nper"
-msgstr ""
+msgstr "NPER"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
 msgid  "Number of payment periods"
-msgstr ""
+msgstr "Cantidad de periodos de pago."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.6.STRING.TEXT
 msgid  "Pv"
-msgstr ""
+msgstr "VA"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
 msgid  "The present value"
-msgstr ""
+msgstr "Valor del objeto"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
 msgid  "Start period"
-msgstr ""
+msgstr "Periodo inicial"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
 msgid  "The start period"
-msgstr ""
+msgstr "Periodo inicial"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.10.STRING.TEXT
 msgid  "End period"
-msgstr ""
+msgstr "Periodo final"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.11.STRING.TEXT
 msgid  "The end period"
-msgstr ""
+msgstr "Periodo final"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.12.STRING.TEXT
 msgid  "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.13.STRING.TEXT
 msgid  "The type of maturity"
-msgstr ""
+msgstr "Tipo de vencimiento"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
 msgid  "Returns the cumulative interest to be paid between two periods"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.2.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.3.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.4.STRING.TEXT
-msgid  "Nper"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.5.STRING.TEXT
-msgid  "Number of payment periods"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.6.STRING.TEXT
-msgid  "Pv"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.7.STRING.TEXT
-msgid  "The present value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.8.STRING.TEXT
-msgid  "Start period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.9.STRING.TEXT
-msgid  "The start period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.10.STRING.TEXT
-msgid  "End period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.11.STRING.TEXT
-msgid  "The end period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.12.STRING.TEXT
-msgid  "Type"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.13.STRING.TEXT
-msgid  "The type of maturity"
-msgstr ""
+msgstr "Devuelve los intereses acumulados a pagar entre dos periodos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.6.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.7.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.8.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.9.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.10.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.11.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.12.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.13.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.15.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve el precio, por un valor nominal de 100 unidades monetarias, de un título que paga intereses periódicos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.6.STRING.TEXT
-msgid  "Discount"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.7.STRING.TEXT
-msgid  "The discount"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.8.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.9.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve la cotización de un título sin intereses de un valor nominal de 100 unidades monetarias."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.1.STRING.TEXT
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.6.STRING.TEXT
-msgid  "Issue"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.7.STRING.TEXT
-msgid  "The issue date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.9.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.10.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.11.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.12.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEMAT.13.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve la cotización, por un valor nominal de 100 unidades monetarias, de un título que paga intereses al vencer."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.1.STRING.TEXT
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.6.STRING.TEXT
-msgid  "Coupon"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.7.STRING.TEXT
-msgid  "The coupon rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.8.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.9.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.10.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.11.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.12.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MDURATION.13.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve la duración modificada de Macaulay de un título de un valor de 100 unidades monetarias."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
 msgid  "Returns the annual nominal interest rate"
-msgstr ""
+msgstr "Devuelve el interés nominal anual."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
 msgid  "Effective rate"
-msgstr ""
+msgstr "Interés efectivo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
 msgid  "The effective interest rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.4.STRING.TEXT
-msgid  "Npery"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.5.STRING.TEXT
-msgid  "The periods"
-msgstr ""
+msgstr "Interés efectivo"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "Convierte la cotización decimal de un valor en una fraccionaria."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
 msgid  "Decimal dollar"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.3.STRING.TEXT
-msgid  "The decimal number"
-msgstr ""
+msgstr "Número"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
 msgid  "Fraction"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.5.STRING.TEXT
-msgid  "The divisor"
-msgstr ""
+msgstr "Separador"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "Convierte la cotización fraccionaria de un valor en decimal."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
 msgid  "Fractional dollar"
-msgstr ""
+msgstr "Número"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
 msgid  "The number as a fraction"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.4.STRING.TEXT
-msgid  "Fraction"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.5.STRING.TEXT
-msgid  "The divisor"
-msgstr ""
+msgstr "Número"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
 msgid  "Returns the yield on a security that pays periodic interest"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.6.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.7.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.8.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.9.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.10.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.11.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.12.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.13.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.14.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.15.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve los réditos de un valor que da intereses periódicos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
 msgid  "Returns the annual yield for a discounted security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.6.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.7.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.8.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.9.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve el rendimiento anual de un valor con descuento."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
 msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.6.STRING.TEXT
-msgid  "Issue"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.7.STRING.TEXT
-msgid  "The issue date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.9.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.10.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.11.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.12.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.13.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Rendimiento anual de un valor que paga intereses al vencimiento."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
 msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.6.STRING.TEXT
-msgid  "Discount"
-msgstr ""
+msgstr "Fecha de liquidación de la letra de tesorería."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
 msgid  "The discount rate"
-msgstr ""
+msgstr "Es la tasa de descuento de la letra."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.1.STRING.TEXT
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.6.STRING.TEXT
-msgid  "Discount"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.7.STRING.TEXT
-msgid  "The discount rate"
-msgstr ""
+msgstr "Devuelve la cotización de una letra del tesoro del valor nominal de 100 unidades monetarias."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
 msgid  "Returns the yield for a treasury bill"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.6.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.7.STRING.TEXT
-msgid  "The price"
-msgstr ""
+msgstr "Devuelve el rendimiento de una letra de tesorería."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.6.STRING.TEXT
-msgid  "Issue"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.7.STRING.TEXT
-msgid  "The issue date"
-msgstr ""
+msgstr "Devuelve el precio de $100 de valor nominal de un título con un primer período irregular."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.8.STRING.TEXT
 msgid  "First coupon"
-msgstr ""
+msgstr "Primer plazo de interés"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.9.STRING.TEXT
 msgid  "The first coupon date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.10.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.11.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.12.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.13.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.14.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.15.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.16.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.17.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.18.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.19.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Primer plazo de interés"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
 msgid  "Returns the yield of a security with an odd first period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.6.STRING.TEXT
-msgid  "Issue"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.7.STRING.TEXT
-msgid  "The issue date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.8.STRING.TEXT
-msgid  "First coupon"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.9.STRING.TEXT
-msgid  "The first coupon date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.10.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.11.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.12.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.13.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.14.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.15.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.16.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.17.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.18.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.19.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve el rendimiento de un valor con el primer período irregular."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
+msgstr "Devuelve el precio de $100 de valor nominal de un título con un último período irregular."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
 msgid  "Last interest"
-msgstr ""
+msgstr "Último plazo de interés"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
 msgid  "The last interest date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.9.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.10.STRING.TEXT
-msgid  "Yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.11.STRING.TEXT
-msgid  "The yield"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.12.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.13.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.14.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.15.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.16.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.17.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Último plazo de interés"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
 msgid  "Returns the yield of a security with an odd last period"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.6.STRING.TEXT
-msgid  "Last interest"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.7.STRING.TEXT
-msgid  "The last interest date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.8.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.9.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.10.STRING.TEXT
-msgid  "Price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.11.STRING.TEXT
-msgid  "The price"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.12.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.13.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.14.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.15.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.16.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.17.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve el rendimiento de un valor con un último período irregular."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Devuelve el interés interno de una serie de pagos no periódicos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
 msgid  "Values"
-msgstr ""
+msgstr "Valores"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.3.STRING.TEXT
 msgid  "The values"
-msgstr ""
+msgstr "Valores"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.4.STRING.TEXT
 msgid  "Dates"
-msgstr ""
+msgstr "Fechas"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.5.STRING.TEXT
 msgid  "The dates"
-msgstr ""
+msgstr "Fechas"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
 msgid  "Guess"
-msgstr ""
+msgstr "Valor estimado"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
 msgid  "The guess"
-msgstr ""
+msgstr "Valor estimado"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
 msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.2.STRING.TEXT
-msgid  "Rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.3.STRING.TEXT
-msgid  "The rate"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.4.STRING.TEXT
-msgid  "Values"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.5.STRING.TEXT
-msgid  "The values"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.6.STRING.TEXT
-msgid  "Dates"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.7.STRING.TEXT
-msgid  "The dates"
-msgstr ""
+msgstr "Devuelve el valor actual neto de una serie de pagos no periódicos"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
 msgid  "Returns the interest rate for a fully invested security"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.6.STRING.TEXT
-msgid  "Investment"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.7.STRING.TEXT
-msgid  "The investment"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.8.STRING.TEXT
-msgid  "Redemption"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.9.STRING.TEXT
-msgid  "The redemption value"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.10.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.11.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve el tipo de interés de un efecto invertido totalmente."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
 msgid  "Returns the first coupon date after the settlement date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve la fecha del primer plazo de intereses tras la liquidación."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve la cantidad de días del período de interés que incluye la fecha de liquidación."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve la cantidad de días desde la fecha de liquidación hasta la fecha del próximo cupón."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve la cantidad de días desde el principio de un cupón hasta la fecha de liquidación."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
 msgid  "Returns the last coupon date preceding the settlement date"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve la fecha del cupón anterior a la fecha de liquidación."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.2.STRING.TEXT
-msgid  "Settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.3.STRING.TEXT
-msgid  "The settlement"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.4.STRING.TEXT
-msgid  "Maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.5.STRING.TEXT
-msgid  "The maturity"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.6.STRING.TEXT
-msgid  "Frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.7.STRING.TEXT
-msgid  "The frequency"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.8.STRING.TEXT
-msgid  "Basis"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.9.STRING.TEXT
-msgid  "The basis"
-msgstr ""
+msgstr "Devuelve los plazos de los intereses entre la fecha de liquidación y vencimiento."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "Devuelve el valor del capital inicial tras la aplicación de una serie de diversos tipos de intereses periódicos."
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
 msgid  "Principal"
-msgstr ""
+msgstr "Capital"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
 msgid  "The principal"
-msgstr ""
+msgstr "Capital"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
 msgid  "Schedule"
-msgstr ""
+msgstr "Intereses"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
 msgid  "The schedule"
-msgstr ""
+msgstr "Intereses"
